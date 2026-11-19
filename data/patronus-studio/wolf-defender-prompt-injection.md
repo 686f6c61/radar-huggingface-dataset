@@ -2,107 +2,106 @@
 
 ## Resumen
 
-Wolf Defender es un clasificador de texto binario especializado en la detección de inyecciones de prompt y jailbreaks, desarrollado por Patronus Studio como parte de su stack de seguridad Patronus Protect. El modelo está diseñado para actuar como capa de guardrail local: analiza el contenido no confiable antes de que llegue a un LLM, identificando instrucciones maliciosas que intentan manipular el comportamiento del modelo. Está basado en mmBERT-base, un encoder ModernBERT multilingüe, y cuenta con 307.531.778 parámetros y una ventana de contexto de 2.048 tokens. Su relevancia actual radica en el crecimiento de sistemas de agentes y herramientas que procesan entradas externas, donde la inyección de prompt se ha convertido en un vector de ataque crítico. La versión v2, publicada en marzo de 2026, mejora sustancialmente la especificidad en entradas benignas difíciles y reduce los falsos positivos respecto a su predecesor, manteniendo una alta precisión en la detección.
+Wolf Defender Prompt Injection (v2.1) es un clasificador de texto binario desarrollado por Patronus Studio para detectar intentos de prompt injection y jailbreak antes de que el contenido llegue al modelo generativo. Se construye sobre `jhu-clsp/mmBERT-base`, un encoder ModernBERT multilingüe, y se distribuye con pesos en safetensors y ONNX (incluyendo variantes cuantizadas) para inferencia local en CPU o GPU sin dependencias de servicios externos.
+
+El modelo resuelve un problema concreto de seguridad en despliegues de LLM y agentes: filtrar instrucciones maliciosas embebidas en entradas de usuario, documentos recuperados en pipelines RAG, correos, páginas web o salidas de herramientas de agente. Con 307,5 millones de parámetros totales y un enfoque de clasificación de secuencias, está pensado como guardrail de baja latencia que se ejecuta antes del modelo principal.
+
+Su relevancia actual radica en la combinación de licencia Apache 2.0, soporte multilingüe declarado (inglés y alemán), disponibilidad en formato ONNX cuantizado para inferencia en CPU y su adopción en integraciones de terceros como Apache Camel, TrustyAI, AI-Parrot, Delphi Security xaIDR y Red Hat AI. La versión 2.1 amplía la cobertura frente a inyecciones indirectas y contenido no confiable en flujos de agentes.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (encoder transformer) basado en jhu-clsp/mmBERT-base |
-| Parametros totales | 307.531.778 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | FP32, FP16, INT8 (MatMul/Gemm) con FP16 embeddings, INT8 + INT4 embeddings (vía ONNX) |
-| Idiomas soportados | Alemán (de), inglés (en) |
+| Arquitectura | ModernBERT (encoder transformer), basado en `jhu-clsp/mmBERT-base` |
+| Parámetros totales | 307.531.778 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | ONNX cuantizado (variantes Small ONNX FP32 y Edge mencionadas en la model card); lista completa no disponible |
+| Idiomas soportados | inglés (en), alemán (de); la model card menciona capacidad multilingüe y pruebas con entradas benignas en español |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (Transformers) y ONNX (4 variantes) |
+| Formato de pesos | safetensors, ONNX (con variantes cuantizadas) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de mmBERT-base, un checkpoint de ModernBERT multilingüe con arquitectura de encoder transformer. Sobre esta base se añade una cabeza de clasificación binaria que produce dos etiquetas: `BENIGN` (0) e `INJECTION` (1). La versión v2 fue entrenada desde cero a partir de un checkpoint fijo de mmBERT-base, con el objetivo de mejorar la generalización y reducir los falsos positivos en entradas benignas complejas. El entrenamiento incluye un conjunto de validación limpio de 72.212 ejemplos (25.281 inyecciones y 46.931 benignos) y un conjunto de prueba independiente de 14.720 ejemplos. No se han publicado detalles sobre el volumen total de datos de entrenamiento ni sobre técnicas específicas como RLHF o DPO, pero el diseño como clasificador supervisado sugiere un entrenamiento convencional con etiquetas binarias. La principal innovación técnica de v2 es el equilibrio deliberado entre recall en distribución y especificidad en datos externos, lo que se refleja en una ligera reducción del F1 en validación limpia (98.44% frente a 99.70% de v1) a cambio de una mejora drástica en la especificidad sobre conjuntos benignos difíciles (96.23% frente a 81.57%).
+El modelo es un encoder transformer de la familia ModernBERT, inicializado desde `jhu-clsp/mmBERT-base` y adaptado como clasificador de secuencias binario (etiquetas de inyección / no inyección). La arquitectura ModernBERT incorpora atención con soporte para secuencias largas y eficiencia en CPU, lo que explica la orientación del modelo a inferencia local y en dispositivo. No se detallan en la información disponible el número de capas, dimensiones ocultas ni la longitud máxima de secuencia efectiva.
+
+El entrenamiento combina una treintena de datasets públicos orientados a prompt injection, jailbreak, seguridad de agentes, tool calling, RAG y multilingüismo, entre ellos `deepset/prompt-injections`, `Lakera/mosscap_prompt_injection`, `allenai/wildjailbreak`, `microsoft/llmail-inject-challenge`, `jackhhao/jailbreak-classification`, `xTRam1/safe-guard-prompt-injection`, `imoxto/prompt_injection_cleaned_dataset-v2` y `gretelai/synthetic_multilingual_llm_prompts`, además de datasets de instrucciones generales como `HuggingFaceH4/ultrachat_200k` y `VMware/open-instruct` para reducir falsos positivos sobre texto benigno. No se especifican en la información proporcionada el volumen total de tokens, la composición exacta por proporción ni si se aplicaron etapas de RLHF o DPO; al tratarse de un clasificador, el ajuste se realiza mediante aprendizaje supervisado sobre etiquetas binarias.
 
 ## Capacidades
 
-- Detección de inyecciones de prompt y jailbreaks en texto arbitrario, mediante clasificación binaria (`BENIGN` / `INJECTION`).
-- Manejo de documentos largos: el modelo puntúa ventanas de 2.048 tokens con solapamiento de 64 tokens y agrega los resultados con Smooth-Max normalizado.
-- Soporte multilingüe para alemán e inglés, con capacidad de procesar ambos idiomas en un mismo documento.
-- Despliegue flexible: disponible en formato Transformers (safetensors) y en cuatro variantes ONNX optimizadas para distintos entornos (FP32, FP16, INT8 mixto e INT8+INT4).
-- Diseñado para integración como guardrail en pipelines de IA, con latencia baja y apto para ejecución local.
-- No incluye capacidades de generación de texto, tool calling ni razonamiento multi-paso; es exclusivamente un clasificador de seguridad.
+- Clasificación binaria de texto para detección de prompt injection directa e indirecta.
+- Detección de jailbreaks y de instrucciones maliciosas embebidas en contenido no confiable (documentos, correos, páginas web, salidas de herramientas).
+- Filtrado de entradas de usuario antes de pasarlas al LLM principal, como guardrail previo.
+- Evaluación de contenido recuperado en pipelines RAG antes de su inclusión en el contexto del modelo.
+- Inspección de salidas de herramientas de agente en flujos multi-turno y de tool calling.
+- Soporte multilingüe declarado para inglés y alemán, con menciones a pruebas en español por parte de integradores.
+- Inferencia local en CPU y GPU, incluyendo variantes ONNX cuantizadas para despliegue en dispositivo.
+- No es un modelo generativo: no produce texto, no razona de forma abierta ni soporta tool calling como emisor; su función es exclusivamente de clasificación.
 
 ## Casos de uso
 
-- Protección de agentes de IA con acceso a herramientas: el modelo puede interceptar las entradas que recibe el agente (por ejemplo, contenido de páginas web o respuestas de APIs) y bloquear o poner en cuarentena cualquier instrucción maliciosa antes de que el agente ejecute acciones.
-- Filtrado de entrada en chatbots de atención al cliente: integrado como paso previo al LLM, detecta intentos de manipulación como "ignora tus instrucciones anteriores" y evita que el chatbot revele información sensible o realice acciones no autorizadas.
-- Guardrail en pipelines de retrieval-augmented generation (RAG): al analizar los fragmentos recuperados de fuentes externas, impide que documentos o webs envenenados inyecten instrucciones en el contexto del modelo.
-- Revisión de correos electrónicos y adjuntos: puede escanear el contenido de mensajes entrantes para identificar intentos de jailbreak o ingeniería social dirigidos a asistentes de correo basados en LLM.
-- Seguridad en sistemas de CI/CD: en flujos donde el LLM genera o revisa código, Wolf Defender puede verificar que los prompts provenientes de issues, pull requests o comentarios no contengan instrucciones maliciosas que alteren el comportamiento del generador.
-- Moderación de contenido generado por usuarios: en foros o plataformas colaborativas, el modelo puede filtrar entradas que intenten explotar al LLM subyacente, como peticiones de revelar el prompt del sistema o de ignorar políticas de seguridad.
+- Guardrail de entrada en asistentes conversacionales: el clasificador se ejecuta sobre cada mensaje del usuario antes de enviarlo al LLM, bloqueando instrucciones que intenten anular las políticas del sistema con latencias del orden de milisegundos en CPU.
+- Protección de pipelines RAG: cada fragmento recuperado de una base documental se clasifica antes de incorporarse al contexto; si se detecta una instrucción inyectada en un documento, el fragmento se descarta o se marca para revisión.
+- Seguridad de agentes con tool calling: las salidas de herramientas externas (resultados de búsqueda, correos, APIs de terceros) se inspeccionan antes de que el agente las procese, mitigando inyecciones indirectas en flujos multi-paso.
+- Filtrado de correo y contenido web: integración en pasarelas de correo o scrapers para detectar instrucciones ocultas dirigidas a asistentes que procesan bandejas de entrada o páginas web.
+- Cumplimiento y auditoría de seguridad: registro de puntuaciones de inyección sobre tráfico real para construir métricas de exposición, analizar intentos de ataque y alimentar paneles de observabilidad de seguridad de IA.
+- Despliegue en entornos con recursos limitados: al ofrecer variantes ONNX cuantizadas y ejecutarse en CPU, encaja en gateways perimetrales, dispositivos locales o contenedores sin GPU donde no es viable un modelo guardrail grande.
+- Integración en plataformas existentes: ya se usa en Apache Camel, TrustyAI (NeMo Guardrails), AI-Parrot, Delphi Security xaIDR y Red Hat AI, lo que permite incorporarlo a infraestructuras de integración y seguridad ya desplegadas.
 
 ## Benchmarks y rendimiento
 
-La tabla siguiente resume los resultados publicados por el autor, utilizando el mismo umbral de decisión (0,5) y el protocolo de puntuación por ventanas de 2.048 tokens con solapamiento de 64 y agregación Smooth-Max normalizada.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card incluye una comparación de latencia y falsos positivos reportada por el desarrollador de AI-Parrot sobre su propia aplicación, con muestras pequeñas y sin especificar hardware:
 
-| Modelo | Clean validation F1 | Clean specificity | Qualifire F1 | Jayavibhav F1 | Hard-benign specificity | Real-world-benign specificity |
-|---|---:|---:|---:|---:|---:|---:|
-| **Wolf Defender v2** | **98,44%** | **99,83%** | **95,14%** | **97,84%** | **96,23%** | **96,63%** |
-| Wolf Defender Small v2 | 98,33% | 99,76% | 95,21% | 97,68% | 96,67% | 94,38% |
-| Wolf Defender v1 (anterior) | 99,70% | 99,78% | 94,17% | 96,54% | 81,57% | 66,85% |
-| Wolf Defender Small v1 (anterior) | 97,54% | 98,66% | 91,03% | 94,36% | 82,12% | 73,60% |
-| Lunaris Guard v3 | 76,22% | 74,53% | 72,24% | 72,08% | 88,15% | 90,45% |
-| Sentinel v1 | 89,01% | 95,12% | 97,62% | 71,69% | 75,62% | 80,34% |
-| Sentinel v2 | 99,98% | 99,99% | 96,61% | 98,78% | 63,42% | 80,90% |
+| Modelo | Latencia p50 | Falsos positivos benignos / 15 | Falsos positivos benignos en español / 10 | Falsos negativos de ataque / 10 |
+|---|---:|---:|---:|---:|
+| DeBERTa v1 vía Pytector | 86 ms | 8 | 8 | 2 |
+| DeBERTa v2 ONNX | 24 ms | 7 | 7 | 1 |
+| gincioks/cerberus-distilbert-base-un-v1.0-onnx | 9 ms | 9 | 7 | 1 |
+| Wolf Defender Small ONNX FP32 | 12 ms | 0 | 0 | 1 |
+| Wolf Defender Edge | — | — | — | — |
 
-Tamaños de los conjuntos de evaluación:
-
-- Clean validation: 72.212 ejemplos (25.281 inyecciones, 46.931 benignos)
-- Qualifire: 5.000 ejemplos (1.999 inyecciones, 3.001 benignos)
-- Jayavibhav: 9.000 ejemplos (4.443 inyecciones, 4.557 benignos)
-- Hard benign: 2.523 ejemplos benignos
-- Real-world benign: 178 ejemplos benignos
-
-La especificidad se define como `1 - tasa de falsos positivos`. Los conjuntos hard-benign y real-world-benign contienen solo ejemplos benignos, por lo que la especificidad es la métrica relevante.
-
-Además, se publicó un conjunto de prueba independiente retenido del corpus de entrenamiento (14.720 ejemplos), con los siguientes resultados:
-
-| Accuracy | Injection F1 | Precision | Recall | FPR | FNR |
-|---:|---:|---:|---:|---:|---:|
-| 98,68% | 97,99% | 99,16% | 96,85% | 0,41% | 3,15% |
+Estos datos provienen de un test específico de aplicación, con recuentos de muestra reducidos y sin detalles completos de medición; deben interpretarse como indicativos y no como una evaluación independiente a gran escala.
 
 ## Requisitos de hardware
 
-- El modelo tiene 307,5 millones de parámetros, lo que en FP32 ocupa aproximadamente 1,23 GB y en FP16 unos 615 MB. La variante ONNX INT8+INT4 reduce aún más el tamaño, siendo adecuada para entornos con recursos limitados.
-- Inferencia en GPU: cabe en GPUs de consumo con 8 GB de VRAM o más (por ejemplo, RTX 3060, RTX 4060, RTX 4070) utilizando FP16 o cuantización INT8. No se requieren GPUs de datacenter como A100 o H100 para este modelo.
-- Inferencia en CPU: al ser un encoder de tamaño moderado, es viable su ejecución en CPU con las variantes cuantizadas, aunque la latencia será mayor. No se han publicado cifras exactas de latencia o throughput.
-- Opciones de despliegue: el modelo se puede cargar con la librería Transformers de Hugging Face, o exportarse a ONNX Runtime para entornos de producción. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama, pero al ser un modelo de clasificación, puede servirse mediante cualquier framework que soporte transformers o ONNX.
-- Para documentos largos, el procesamiento por ventanas incrementa el coste computacional de forma proporcional al número de ventanas; se recomienda precalcular las puntuaciones por ventana y agregarlas con Smooth-Max.
+- VRAM estimada para inferencia: con 307,5 millones de parámetros, en FP16 el modelo ocupa aproximadamente 0,6 GB de pesos; en FP32, alrededor de 1,2 GB. Las variantes ONNX cuantizadas reducen aún más el consumo, permitiendo ejecución en CPU.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 4090, A100 o H100 ofrecen latencias muy bajas, pero el modelo está diseñado para no requerirlas.
+- Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo moderna e incluso en iGPU y CPU.
+- Opciones de despliegue: transformers (safetensors), ONNX Runtime (variantes cuantizadas), text-embeddings-inference según los tags del repositorio, y endpoints compatibles. No se confirma soporte nativo en vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: la model card reporta 12 ms de latencia p50 para la variante Small ONNX FP32 en la prueba de AI-Parrot; el throughput agregado no está disponible.
 
 ## Comparativa con modelos similares
 
-La siguiente tabla compara Wolf Defender v2 con los modelos de la misma categoría (detección de inyección de prompt) que aparecen en los benchmarks publicados.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Wolf Defender Prompt Injection v2.1 | 307,5 M | no disponible | Clasificador binario ModernBERT multilingüe | Apache 2.0 | Hugging Face, ONNX, Red Hat AI |
+| DeBERTa v2 (guardrail de inyección) | no disponible | no disponible | Clasificador encoder | no disponible | Hugging Face / Pytector |
+| gincioks/cerberus-distilbert-base-un-v1.0-onnx | no disponible | no disponible | Clasificador DistilBERT ONNX | no disponible | Hugging Face |
+| ProtectAI deberta-v3-base-prompt-injection | no disponible | no disponible | Clasificador DeBERTa | no disponible | Hugging Face |
 
-| Modelo | Parámetros | Contexto | Clean F1 | Qualifire F1 | Jayavibhav F1 | Hard-benign spec. | Licencia |
-|---|---|---|---:|---:|---:|---:|---:|---|
-| **Wolf Defender v2** | 307,5 M | 2.048 | 98,44% | 95,14% | 97,84% | 96,23% | Apache 2.0 |
-| Wolf Defender Small v2 | no disponible | no disponible | 98,33% | 95,21% | 97,68% | 96,67% | Apache 2.0 |
-| Lunaris Guard v3 | no disponible | no disponible | 76,22% | 72,24% | 72,08% | 88,15% | no disponible |
-| Sentinel v1 | no disponible | no disponible | 89,01% | 97,62% | 71,69% | 75,62% | no disponible |
-| Sentinel v2 | no disponible | no disponible | 99,98% | 96,61% | 98,78% | 63,42% | no disponible |
-
-Wolf Defender v2 destaca por su equilibrio entre detección y especificidad: mientras que Sentinel v2 logra un F1 en validación limpia casi perfecto, su especificidad en conjuntos benignos difíciles cae al 63,42%, lo que indica una alta tasa de falsos positivos en entradas benignas complejas. Wolf Defender v2 ofrece la mejor combinación de F1 alto y especificidad robusta, superando a su predecesor y a las alternativas comparadas. Wolf Defender Small v2 presenta un rendimiento muy cercano al modelo completo, con una especificidad ligeramente superior en hard-benign pero inferior en real-world-benign.
+La comparación se limita a la información disponible; no se dispone de cifras homogéneas de rendimiento para establecer una comparativa cuantitativa fiable más allá de la tabla reportada por AI-Parrot.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta alemán e inglés; no se garantiza su rendimiento en otros idiomas, lo que limita su uso en entornos multilingües más amplios.
-- La ventana de contexto está fijada en 2.048 tokens; para documentos más largos es necesario dividirlos en ventanas, lo que puede perder información contextual entre fragmentos.
-- Aunque v2 reduce drásticamente los falsos positivos, sigue existiendo un riesgo residual de clasificar erróneamente entradas benignas como inyecciones, especialmente en textos ambiguos o con lenguaje técnico.
-- El modelo debe considerarse una capa dentro de una estrategia de defensa en profundidad, no como la única barrera de seguridad para acciones de alto impacto. El propio autor recomienda no usarlo como frontera de seguridad exclusiva.
-- No se han publicado detalles sobre posibles sesgos en el entrenamiento ni sobre el comportamiento ante ataques adversariales sofisticados (por ejemplo, ofuscación o codificación de caracteres).
-- La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el modelo no incluye garantías de seguridad o exactitud; el usuario es responsable de validar su comportamiento en su caso de uso concreto.
+- Es un clasificador binario: puede producir falsos positivos sobre texto legítimo que contenga instrucciones imperativas o citas de ataques, y falsos negativos ante ataques novedosos o muy ofuscados.
+- Los idiomas oficialmente declarados son inglés y alemán; el rendimiento en otros idiomas, incluido el español, solo está respaldado por pruebas anecdóticas de terceros con muestras pequeñas.
+- No se especifica la longitud máxima de contexto efectiva, lo que limita la planificación de despliegues con documentos muy largos; puede requerir troceado previo.
+- No sustituye a una defensa en profundidad: debe combinarse con otras capas (filtrado de salidas, permisos de herramientas, revisión humana) en entornos de producción.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las licencias de los datasets de entrenamiento subyacentes si redistribuye derivados.
+- La evaluación publicada procede en parte de integradores con tests de aplicación específicos y muestras reducidas; no hay una evaluación independiente a gran escala en la información disponible.
+- El repositorio ocupa 11,5 GB, principalmente por las múltiples variantes ONNX; conviene descargar solo el formato necesario.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/patronus-studio/wolf-defender-prompt-injection
-- Variante pequeña (Wolf Defender Small): https://huggingface.co/patronus-studio/wolf-defender-prompt-injection-small
-- Modelo base (mmBERT-base): https://huggingface.co/jhu-clsp/mmBERT-base
-- No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.
+- Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
+- Versión en Red Hat AI: https://huggingface.co/RedHatAI/wolf-defender-prompt-injection
+- Página de producto de Patronus Studio: https://patronus.studio/product/ai-models
+- Campaña de financiación Manifund: https://manifund.org/projects/an-open-weight-cpu-efficient-ai-security-model-for-multi-turn-agent-security
+- Integración Apache Camel: https://camel.apache.org/components/next/others/semantic-wolf-defender.html
+- Integración TrustyAI (NeMo Guardrails): https://github.com/trustyai-explainability/trustyai-service-operator/blob/main/config/configmaps/nemo-guardrails/default-guardrails-injection.yaml
+- Integración AI-Parrot: https://github.com/phenobarbital/ai-parrot/blob/main/docs/security/onnx-injection-guardrail.md
+- Integración Delphi Security xaIDR: https://github.com/delphisecurity/xaidr/blob/main/xaidr/scanner/nano.py
+- Integración Personaxis: https://github.com/personaxis/personaxis/blob/main/packages/core/src/judge/output-scan.ts
+- Integración Wanaku: https://github.com/wanaku-ai/wanaku-barn/blob/main/apps/ui/admin/src/Pages/SemanticRouters/expertCatalog.ts
+- Integración Mygentic Cello: https://github.com/Mygentic-AI/cello-client/blob/main/core/gateway/src/detect/screener-model-manifest.ts

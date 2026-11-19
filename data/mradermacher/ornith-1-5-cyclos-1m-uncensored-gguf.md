@@ -2,44 +2,51 @@
 
 ## Resumen
 
-Ornith-1.5-Cyclos-1M-Uncensored es un modelo de lenguaje multimodal de tipo mixture of experts (MoE) basado en la arquitectura Qwen3, desarrollado por abhaymin y posteriormente cuantizado a formato GGUF por mradermacher. El modelo combina procesamiento de texto y visión (gracias a un módulo de proyección multimodal incluido en la cuantización), y está pensado para tareas conversacionales con soporte de contexto largo mediante la técnica YARN. Su característica más distintiva es que se distribuye como versión "uncensored", es decir, sin los filtros de alineación de seguridad habituales, lo que puede resultar útil para investigación o aplicaciones que requieran respuestas sin restricciones editoriales, pero también implica riesgos de contenido dañino.
+Ornith-1.5-Cyclos-1M-Uncensored-GGUF es la versión cuantizada en formato GGUF del modelo abhaymin/Ornith-1.5-Cyclos-1M-Uncensored, un modelo de lenguaje de arquitectura Mixture of Experts (MoE) basado en la familia Qwen3 y con capacidades multimodales (visión). Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que genera versiones estáticas de pesos para su uso con llama.cpp y otros motores compatibles con GGUF. El modelo original tiene 35.505.251.456 parámetros totales y está pensado para contextos largos (la nomenclatura "1M" sugiere contexto de hasta un millón de tokens, con extensión mediante YaRN).
 
-La versión GGUF incluye cuantizaciones estáticas desde Q2_K hasta Q8_0, con tamaños de archivo entre 13,3 y 37,9 GB, además de los proyectores de visión en f16 y Q8_0. El modelo totaliza 35.505.251.456 parámetros (35,5 mil millones), aunque al ser un MoE no se especifica el número de parámetros activos. Está licenciado bajo Apache 2.0 y su idioma declarado es el inglés. Al estar etiquetado como compatible con vLLM y SGLang, puede desplegarse en entornos de producción con estos motores de inferencia.
+El modelo se presenta como "uncensored", es decir, sin el alineamiento restrictivo habitual en modelos comerciales, lo que lo hace relevante para investigación sobre seguridad, estudios de sesgos y aplicaciones donde la moderación automática resulta contraproducente. Su combinación de MoE, visión y contexto largo lo sitúa en la categoría de modelos abiertos de gran tamaño orientados a despliegue local.
+
+La relevancia actual del repositorio radica en que ofrece los pesos en múltiples niveles de cuantización (desde Q2_K hasta Q8_0, más los ficheros mmproj para la torre visual), lo que permite ejecutar un modelo de 35.500 millones de parámetros en hardware de consumo con pérdidas de calidad controladas. La licencia Apache 2.0 facilita su uso comercial, aunque con las cautelas propias de un modelo sin alineamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) basada en Qwen3, con módulo de visión (multimodal) |
-| Parametros totales | 35.505.251.456 (35,5 B) |
-| Parametros activos | no disponible (modelo MoE) |
-| Longitud de contexto | no disponible (usa YARN para contexto largo) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | inglés |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Mixture of Experts (MoE) basada en Qwen3, con torre de visión |
+| Parametros totales | 35.505.251.456 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (la nomenclatura "1M" sugiere hasta 1.000.000 de tokens; extensión YaRN) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo original es Ornith-1.5-Cyclos-1M-Uncensored, un modelo MoE basado en Qwen3 con capacidades de visión. Esta versión de Hugging Face es una cuantización estática realizada por mradermacher, que convierte los pesos al formato GGUF para su uso con llama.cpp, Ollama y otros motores compatibles. No se proporciona información sobre el proceso de entrenamiento: no se detallan los datos utilizados, el número de tokens ni si se aplicaron técnicas como RLHF o DPO. La única innovación técnica destacable en la información disponible es el uso de YARN para extender la longitud de contexto, aunque no se especifica el valor exacto en tokens. El soporte multimodal se añade mediante un archivo mmproj separado que contiene el proyector de visión.
+La información disponible no detalla la composición del dataset de entrenamiento ni si hubo fases de RLHF o DPO. Los metadatos del repositorio indican que se trata de un modelo MoE basado en Qwen3, con soporte de visión (torre multimodal separada en los ficheros mmproj) y extensión de contexto mediante YaRN, técnica que permite escalar la ventana de atención más allá de la longitud nativa de entrenamiento. La etiqueta "uncensored" indica que el autor del modelo base eliminó o redujo el alineamiento de seguridad, aunque no se especifica la metodología exacta (fine-tuning, abliteration u otra).
+
+El repositorio de mradermacher es una cuantización estática del modelo original: no modifica la arquitectura, sino que convierte los pesos a formatos de menor precisión para su uso con llama.cpp. Se ofrecen además cuantizaciones ponderadas con imatrix en un repositorio separado (Ornith-1.5-Cyclos-1M-Uncensored-i1-GGUF), que suelen preservar mejor la calidad en niveles bajos. No se dispone de información sobre el número de tokens de entrenamiento, la composición del corpus ni innovaciones técnicas adicionales más allá de las mencionadas.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, orientada a tareas de chat.
-- Entrada de imágenes gracias al módulo de visión (mmproj), lo que permite razonamiento multimodal básico.
-- Contexto largo mediante YARN, aunque la longitud exacta no se ha publicado.
-- Ausencia de filtros de seguridad o alineación ("uncensored"), lo que ofrece respuestas sin restricciones editoriales.
-- Compatibilidad con motores de inferencia vLLM y SGLang, según las etiquetas del repositorio.
-- No se confirma explícitamente el soporte de tool calling o function calling en la información disponible.
+- Generación de texto conversacional en inglés, con soporte de diálogo multi-turno.
+- Razonamiento y matemáticas: el modelo base Qwen3 incluye modos de razonamiento, aunque no se confirma en la información disponible si esta variante los conserva.
+- Capacidades de visión: los ficheros mmproj permiten procesar imágenes junto con texto (descripción, VQA, OCR).
+- Contexto largo: etiqueta long-context y extensión YaRN, orientado a tareas con documentos extensos.
+- Tool calling / function calling: no confirmado explícitamente en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explícitamente.
+- Multilingüe: limitado a inglés según los metadatos de idioma.
+- Modo "uncensored": sin rechazos de seguridad preconfigurados, útil para investigación.
 
 ## Casos de uso
 
-- Análisis de documentos extensos con imágenes: el modelo puede procesar textos largos y figuras en un mismo prompt, lo que resulta útil para revisar informes con gráficos, capturas o diagramas.
-- Asistente de investigación sin restricciones: al ser uncensored, permite explorar temas sensibles o generar contenido que otros modelos filtran, siempre que se use de forma responsable y en entornos controlados.
-- Despliegue en entornos de producción con vLLM o SGLang: su compatibilidad con estos motores permite integrarlo en APIs de inferencia de alto rendimiento.
-- Experimentación con cuantización y modelos MoE: la disponibilidad de múltiples cuantizaciones facilita probar el equilibrio entre calidad, velocidad y uso de VRAM en hardware variado.
-- Automatización de tareas de documentación multimodal: puede generar descripciones o resúmenes a partir de imágenes y texto en inglés, útil en sistemas de gestión documental.
-- Uso en pipelines de RAG con contexto largo: aunque no se especifica la longitud exacta, el uso de YARN sugiere que puede manejar contextos amplios para recuperación aumentada.
+- Investigación sobre seguridad y alineamiento: al carecer de moderación integrada, permite estudiar respuestas del modelo ante prompts sensibles y comparar con variantes alineadas, sin que los rechazos automáticos oculten el comportamiento subyacente.
+- Procesamiento de documentos largos: la ventana extendida mediante YaRN y el soporte de contexto largo facilitan el análisis de contratos, informes o expedientes completos en una sola pasada, resumiendo y extrayendo entidades.
+- Análisis de imágenes en local: gracias a la torre de visión y los ficheros mmproj, puede describir capturas, extraer texto de imágenes o responder preguntas sobre diagramas en entornos sin conexión.
+- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M (21,8 GB) permiten ejecutar el modelo en una GPU de 24 GB o en configuraciones CPU+GPU con llama.cpp, útil para prototipado y demos privadas.
+- Generación creativa sin restricciones: escritura de ficción, guiones o contenido donde los filtros de seguridad de modelos comerciales interrumpen el flujo creativo, con la cautela de revisión humana posterior.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece once niveles de cuantización, lo que permite medir el impacto de la compresión en perplejidad y calidad para un modelo MoE de 35.500 millones de parámetros.
+- Experimentación con arquitecturas MoE: sirve como banco de pruebas para estudiar el comportamiento de expertos y el enrutamiento en tareas de razonamiento, aunque los parámetros activos no estén documentados.
 
 ## Benchmarks y rendimiento
 
@@ -47,30 +54,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Para la cuantización Q2_K (13,3 GB) se necesita una GPU con al menos 16 GB de VRAM, aunque el rendimiento será limitado por la baja precisión.
-- Para Q4_K_S (20,5 GB), la opción recomendada según el autor, se requiere una GPU con 24 GB de VRAM, como una RTX 3090 o RTX 4090.
-- Para Q6_K (29,3 GB) o Q8_0 (37,9 GB) se necesitan GPUs de 48 GB o más, como una A6000 o una A100 de 80 GB.
-- También es posible ejecutar el modelo en CPU mediante llama.cpp, utilizando memoria RAM en lugar de VRAM; en ese caso, los requisitos de memoria son superiores al tamaño del archivo.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, SGLang y cualquier otro motor compatible con GGUF.
-- No se dispone de datos publicados sobre latencia o throughput.
+- VRAM estimada según cuantización: Q2_K ~13,3 GB; Q3_K_M ~17,3 GB; IQ4_XS ~19,5 GB; Q4_K_M ~21,8 GB; Q5_K_M ~25,4 GB; Q6_K ~29,3 GB; Q8_0 ~37,9 GB.
+- Ficheros mmproj adicionales: 0,7 GB (Q8_0) o 1,0 GB (f16) de VRAM extra para visión.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M con contexto moderado; A100 40 GB o H100 para Q6_K/Q8_0 y contextos largos; RTX 3090 (24 GB) válida para Q4.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q4_K_M; en GPUs de 16 GB solo con Q2_K/Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF; las etiquetas vllm y sglang del modelo base apuntan a que la versión original en safetensors puede servirse con esos motores.
+- Latencia y throughput: no disponibles. Como referencia cualitativa, un MoE de este tamaño con pocos parámetros activos suele ser más rápido que un denso equivalente, pero no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos de otros modelos comparables en la informacion disponible. El modelo puede considerarse una variante cuantizada de Ornith-1.5-Cyclos-1M-Uncensored, pero no se aportan métricas de rendimiento frente a alternativas.
+| Modelo | Parámetros | Contexto | Visión | Licencia | Formato |
+|---|---|---|---|---|---|
+| Ornith-1.5-Cyclos-1M-Uncensored (este) | 35.505 M (MoE) | no disponible (~1M por nombre) | Sí | Apache 2.0 | GGUF, safetensors |
+| Qwen3 MoE de referencia | no disponible | no disponible | no disponible | Apache 2.0 | safetensors, GGUF |
+| Gemma 3 27B | 27.000 M (denso) | 128K | Sí | Gemma Terms | safetensors, GGUF |
+| Mistral Small 3.1 24B | 24.000 M (denso) | 128K | Sí | Apache 2.0 | safetensors, GGUF |
+
+La comparación con Qwen3 MoE no puede completarse con datos concretos porque la información proporcionada no especifica la variante exacta ni sus parámetros activos. Frente a modelos densos de tamaño similar, la principal diferencia es la arquitectura MoE, que reduce el coste de inferencia por token a cambio de mayor uso de memoria, y el contexto potencialmente mucho mayor.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo "uncensored", no tiene filtros de seguridad, por lo que puede generar contenido dañino, ofensivo o ilegal si se le solicita.
-- Solo está disponible en inglés, lo que limita su uso en entornos multilingües.
-- No se ha publicado información sobre sesgos, datos de entrenamiento ni alineación, por lo que el riesgo de respuestas sesgadas o alucinaciones es elevado.
-- La longitud de contexto exacta no se especifica, lo que dificulta planificar su uso en tareas que requieren ventanas de contexto muy amplias.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe asumir la responsabilidad sobre el contenido generado.
-- Al ser una cuantización estática, la calidad de las respuestas puede degradarse en los niveles de precisión más bajos (Q2_K, Q3_K_S).
-- No se confirma el soporte de tool calling, por lo que no se recomienda su uso en agentes que dependan de llamadas a funciones.
+- Modelo "uncensored": no aplica filtros de seguridad, por lo que puede generar contenido dañino, ofensivo o ilegal; requiere moderación externa en producción.
+- Riesgo de alucinación: como todo modelo generativo, puede inventar hechos, citas o código; no se han publicado evaluaciones de fiabilidad.
+- Idioma: solo inglés según los metadatos; el rendimiento en castellano no está garantizado.
+- Contexto: la longitud real de contexto no está documentada; la extensión YaRN puede degradar la calidad en ventanas muy largas.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad legal del contenido generado.
+- Cuantizaciones bajas (Q2_K, Q3_K) degradan notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- El repositorio ocupa 244,4 GB; la descarga selectiva de un solo fichero es imprescindible.
+- No se documentan parámetros activos ni benchmarks, lo que dificulta estimar coste y rendimiento antes del despliegue.
 
 ## Enlaces
 
-- Repositorio del modelo GGUF: https://huggingface.co/mradermacher/Ornith-1.5-Cyclos-1M-Uncensored-GGUF
-- Modelo base original: https://huggingface.co/abhaymin/Ornith-1.5-Cyclos-1M-Uncensored
-- Página de descarga y overview: https://hf.tst.eu/model#Ornith-1.5-Cyclos-1M-Uncensored-GGUF
-- Solicitudes de modelos y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Repositorio GGUF: https://huggingface.co/mradermacher/Ornith-1.5-Cyclos-1M-Uncensored-GGUF
+- Modelo base: https://huggingface.co/abhaymin/Ornith-1.5-Cyclos-1M-Uncensored
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Ornith-1.5-Cyclos-1M-Uncensored-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Ornith-1.5-Cyclos-1M-Uncensored-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

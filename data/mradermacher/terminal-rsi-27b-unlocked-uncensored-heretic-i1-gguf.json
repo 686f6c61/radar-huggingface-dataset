@@ -58,16 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Terminal-RSI-27B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Terminal-RSI-27B-GGUF",
-      "snippet": "mradermacher / Terminal-RSI-27B-GGUF Like 0 Reinforcement Learning Transformers GGUF English Chinese terminal-rsi terminal-agent recursive-self-improvement code long-context qwen3_5 arxiv:2610.22192 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/Terminal-RSI-27B-i1-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Terminal-RSI-27B-i1-GGUF/tree/main",
-      "snippet": "mradermacher / Terminal-RSI-27B-i1-GGUF Like 1 Reinforcement Learning Transformers GGUF English Chinese terminal-rsi terminal-agent recursive-self-improvement code long-context qwen3_5 arxiv:2610.22192 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

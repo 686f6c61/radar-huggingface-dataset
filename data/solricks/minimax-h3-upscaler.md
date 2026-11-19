@@ -2,101 +2,87 @@
 
 ## Resumen
 
-MiniMax-H3-Upscaler es un paquete de pesos auxiliares y flujos de trabajo para ComfyUI orientado al reescalado de vídeo con el modelo de difusión MiniMax H3. Lo publica el usuario SOLRICKS y no constituye un modelo generativo completo, sino un conjunto de dos componentes: un refiner LoRA cuantizado a INT8 (derivado de un checkpoint BF16 de terceros) y un upscaler latente aprendido en FP16. El objetivo es aumentar la resolución de clips ya generados con MiniMax H3 sin regenerarlos desde cero, preservando la tasa de fotogramas y el audio original.
+MiniMax H3 Upscaler es un conjunto de pesos y flujos de trabajo para ComfyUI que permite reescalar y refinar vídeos generados por el modelo de difusión MiniMax-H3. Lo publica el usuario SOLRICKS bajo el identificador SOLRICKS/MiniMax-H3-Upscaler y consta de dos piezas complementarias: un upscaler latente 3D basado en convoluciones (en FP16) y un refiner en formato LoRA cuantizado a INT8 que se aplica sobre el modelo base MiniMax-H3. No es un modelo de lenguaje ni un modelo fundacional independiente, sino un adaptador y un módulo auxiliar que dependen de los pesos de MiniMaxAI/MiniMax-H3 y de su VAE de vídeo.
 
-El repositorio es de tamano reducido (2,6 GB) y su relevancia es practica: permite a quienes ya trabajan con MiniMax H3 en ComfyUI elevar la resolucion de sus salidas (el ejemplo de la model card pasa de 1376x768 a 1952x1088) manteniendo 24 FPS y 243 fotogramas. No aporta un modelo base nuevo ni capacidades de lenguaje, vision o razonamiento; es una herramienta de postproceso dentro de un pipeline de video-to-video.
+El problema que resuelve es concreto: los vídeos que produce H3 a resoluciones como 1376×768 pierden detalle fino al ampliarlos con interpolación clásica. Este paquete aplica un upscaler aprendido en el espacio latente y después un refiner LoRA que reconstruye textura y nitidez, con un ejemplo documentado que pasa de 1376×768 a 1952×1088 conservando el audio y los FPS de origen. El nodo se integra en ComfyUI mediante un nodo propio ("MiniMax H3 Upscaler") y devuelve imágenes y audio.
 
-La publicacion es experimental y muy reciente (noviembre de 2026), sin descargas ni valoraciones registradas. La licencia es heterogenea: el refiner INT8 hereda la MiniMax H3 Community License y el upscaler latente es Apache-2.0, por lo que su uso comercial exige revisar ambos terminos por separado.
+Su relevancia actual es práctica: cubre el hueco de postprocesado de vídeo generativo dentro del ecosistema ComfyUI, con un repositorio ligero (2,7 GB) y flujos de trabajo listos para cargar. Es un proyecto experimental, con licencias mixtas (Apache-2.0 para el upscaler latente y MiniMax H3 Community License para el refiner INT8) y sin datos publicados de benchmarks objetivos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA refiner (INT8) sobre difusion MiniMax H3 + upscaler latente 3D conv (FP16) |
-| Parametros totales | no disponible (el repo contiene adaptadores, no un modelo completo) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de video, no de texto) |
-| Tipos de cuantizacion | INT8 simetrica por matriz (refiner); FP16 (upscaler latente) |
-| Idiomas soportados | no disponible |
-| Licencia | file-specific-model-licenses: MiniMax H3 Community License (refiner INT8) y Apache-2.0 (upscaler latente FP16) |
-| Formato de pesos | safetensors |
-| Tamano del repo | 2,6 GB |
-| Pipeline | video-to-video |
-| Modelo base | MiniMaxAI/MiniMax-H3 |
-| Libreria | minimax-h3 |
+| Arquitectura | Upscaler latente 3D con convoluciones (3d_conv) + refiner en formato LoRA sobre el modelo de difusión MiniMax-H3 |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de vídeo, no de texto) |
+| Tipos de cuantizacion | FP16 (upscaler latente) e INT8 (refiner LoRA) |
+| Idiomas soportados | no disponible (no procesa texto en el flujo de ejemplo; las entradas de condicionamiento de texto/audio quedan sin conectar) |
+| Licencia | Mixta: upscaler latente Apache-2.0; refiner INT8 bajo MiniMax H3 Community License; código del nodo con licencia propia (file-specific-model-licenses) |
+| Formato de pesos | safetensors (`minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors`, `h3_upscale_refiner_int8.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El paquete no entrena ningun modelo. El componente principal, `h3_upscale_refiner_int8.safetensors` (aprox. 1,88 GB), es una conversion de almacenamiento a INT8 de `open_h3_regenerate_2k_r256pp_bf16.safetensors`, procedente de `sandpies/ComfyUI-H3-Video-Upsampler` y cuyo metadato upstream apunta a `Efficient-Large-Model/Open-H3-Regenerate-2K` (LoRA, sha 8e36a091). La cuantizacion es simetrica por matriz: cada matriz LoRA ordinaria recibe su propia escala, y las dos escalas de cada par se pliegan en el alpha FLOAT32 para que ComfyUI aplique el parche LoRA con su calculo de alta precision. Se conservan los rangos por capa y las formas de matriz originales.
+El paquete se compone de dos módulos que actúan en secuencia sobre el pipeline de MiniMax-H3. El primero es un upscaler latente 3D con convoluciones, en FP16, que opera directamente sobre los latentes del VAE de vídeo de H3 y aumenta la resolución espacial manteniendo la coherencia temporal entre fotogramas. El segundo es un refiner en formato LoRA cuantizado a INT8 que se carga como adaptador del modelo de difusión H3 FL2VA y se encarga de recuperar detalle fino tras el reescalado. El nodo utiliza las implementaciones de modelo integradas en ComfyUI, de modo que no requiere código de inferencia propio más allá del nodo.
 
-El segundo componente, `minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors` (aprox. 691 MB), es un upscaler latente aprendido con convolucion 3D, publicado por LBH-123-AI y subido sin conversion adicional. La conversion a INT8 es lossy: el autor reporta un error relativo de Frobenius por matriz con mediana del 8,24 %, percentil 95 del 14,32 % y maximo del 28,41 %; son diferencias numericas de matriz, no una perdida porcentual de calidad de video. El payload BF16 original ronda los 3,51 GiB frente a los 1,75 GiB del INT8.
+No se han publicado en la información disponible datos sobre el volumen de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones como decodificación especulativa. El flujo de ejemplo trabaja a 2,0 megapíxeles con chunking temporal y tiling espacial activados, y las dimensiones se ajustan a la rejilla de 32 píxeles de H3. El target debe ser al menos tan grande como la entrada. Se recomienda usar un modelo de difusión sin LoRAs de generación, Turbo o estilo, porque el nodo añade el refiner por su cuenta.
 
 ## Capacidades
 
-- Reescalado de video generado con MiniMax H3, con resolucion objetivo configurable (el ejemplo usa 2,0 megapixeles).
-- Preservacion de la tasa de fotogramas de origen (24 FPS en el ejemplo) y paso directo del audio fuente.
-- Dimensiones ajustadas a la rejilla de 32 pixeles de H3.
-- Procesamiento con chunking temporal y tiling espacial para gestionar clips largos.
-- Integracion como nodo en ComfyUI mediante la extension `comfyui-solricks`.
-- Exportacion a MP4 a traves de VideoHelperSuite.
-- Puertos opcionales de condicionamiento de texto y audio (no conectados en el flujo de ejemplo, por lo que no requiere text encoder ni audio VAE).
-- No ofrece generacion de texto, razonamiento, codigo ni tool calling: es exclusivamente video-to-video.
+- Reescalado de vídeo generado por MiniMax-H3 en el espacio latente, con upscaler 3D convolucional en FP16.
+- Refinado de detalle tras el upscaling mediante LoRA INT8 sobre el modelo de difusión H3.
+- Procesamiento de vídeo con audio: el flujo conserva los FPS de origen y pasa el audio de entrada sin modificarlo.
+- Chunking temporal y tiling espacial para gestionar vídeos de mayor duración o resolución sin agotar memoria.
+- Ajuste automático de dimensiones a la rejilla de 32 píxeles de H3.
+- Integración nativa en ComfyUI mediante nodo propio y flujos de trabajo JSON (interfaz y cliente API).
+- Exportación a MP4 a través de VideoHelperSuite.
+- No incluye capacidades de texto, razonamiento, código, tool calling ni agentes: es una herramienta de postprocesado de vídeo.
 
 ## Casos de uso
 
-- Postproduccion de clips generados con MiniMax H3: se toma una salida a 1376x768 y se eleva a 1952x1088 con el refiner y el upscaler latente, manteniendo el audio y los FPS originales.
-- Flujos de trabajo en ComfyUI para equipos de contenido: el JSON `MiniMax_H3_Upscaler.json` se arrastra directamente y se conectan los modelos de difusion y VAE ya instalados, reduciendo el tiempo de montaje.
-- Integracion via API: el archivo `MiniMax_H3_Upscaler_API.json` permite lanzar el pipeline desde un cliente programatico en procesos automatizados de reescalado por lotes.
-- Prototipado de restauracion de detalle en video: el refiner anade detalle fino sobre latentes ya generados, util para pruebas de calidad antes de comprometer una regeneracion completa.
-- Evaluacion comparativa de cuantizacion: el autor propone contrastar el mismo clip con el refiner BF16 y el INT8 para medir diferencias visuales reales frente al error numerico reportado.
-- Investigacion sobre upscalers latentes 3D: el componente FP16 de LBH-123-AI puede estudiarse de forma aislada dentro de pipelines de difusion de video.
+- Postproducción de vídeo generativo: tomar clips I2V producidos por H3 a 1376×768 y llevarlos a 1952×1088 con detalle reconstruido, como demuestra el ejemplo del repositorio.
+- Mejora de material de archivo generado: reescalar lotes de vídeos ya renderizados sin volver a muestrear desde cero, ahorrando cómputo de difusión completo.
+- Pipelines de creación de contenido en ComfyUI: encadenar generación H3, upscaling y exportación MP4 con VideoHelperSuite dentro de un mismo grafo reproducible.
+- Restauración de detalle en planos con movimiento: el upscaler 3D convolucional mantiene coherencia temporal, adecuado para secuencias con cámara en movimiento donde la interpolación clásica produce parpadeo.
+- Integración vía API: el flujo `MiniMax_H3_Upscaler_API.json` permite automatizar el reescalado desde un cliente externo en servicios de render por lotes.
+- Prototipado e investigación en vídeo generativo: permite comparar antes/después con los vídeos de ejemplo del repositorio y evaluar el efecto del refiner sobre el modelo base.
+- Ajuste de resolución para distribución: adaptar clips a formatos que exigen mayor resolución manteniendo el audio original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo aporta metricas de error de cuantizacion (mediana 8,24 %, p95 14,32 %, maximo 28,41 % de error relativo de Frobenius por matriz) y un ejemplo cualitativo de resolucion (1376x768 a 1952x1088 a 24 FPS y 243 fotogramas). No hay datos de latencia, throughput ni comparaciones con otros upscalers.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; depende del modelo de difusion MiniMax H3 y del VAE de video, que son descargas separadas y no estan incluidos.
-- Los pesos del repo suman unos 2,6 GB en disco, pero el consumo en ejecucion lo determina el modelo base H3, no estos adaptadores.
-- GPU recomendadas: no disponible. El autor no especifica minimos ni modelos concretos.
-- Compatibilidad con GPU de consumo: no confirmada; requiere evaluar el modelo H3 completo, no solo el upscaler.
-- Despliegue: ComfyUI con la extension `comfyui-solricks`; exportacion MP4 con VideoHelperSuite. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este pipeline.
-- Se recomienda empezar en 2,0 megapixeles con chunking temporal y tiling espacial activados para controlar el uso de memoria.
+- VRAM estimada: no disponible de forma explícita. El repositorio pesa 2,7 GB, pero la inferencia requiere además el modelo de difusión MiniMax-H3 FL2VA y el VAE de vídeo (descargas separadas, por ejemplo desde Kijai/MiniMax-H3-experimental), que dominan el consumo de memoria.
+- El flujo de ejemplo arranca a 2,0 megapíxeles con chunking temporal y tiling espacial activados, lo que sugiere que sin esas técnicas el consumo de memoria sería elevado para vídeo de alta resolución.
+- GPU recomendadas: no disponible. Por el tamaño del modelo base H3 y el procesamiento de vídeo, se espera que requiera GPUs de gama alta con VRAM amplia; no se confirma que quepa en GPUs de consumo.
+- Despliegue: ComfyUI con el nodo "MiniMax H3 Upscaler", más VideoHelperSuite para exportación MP4. No se documentan opciones para vLLM, llama.cpp, Ollama o TGI (no aplicables a un pipeline de vídeo de este tipo).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| SOLRICKS MiniMax-H3-Upscaler | LoRA refiner INT8 + upscaler latente FP16 para H3 | no disponible (adaptadores) | no aplica | Mixta: MiniMax H3 Community License y Apache-2.0 | Hugging Face, 0 descargas |
-| sandpies/ComfyUI-H3-Video-Upsampler (BF16) | Refiner LoRA BF16, origen del INT8 | no disponible | no aplica | no disponible | Hugging Face |
-| LBH-123-AI/Minimax_h3_latent_Upscaler | Upscaler latente FP16, origen del componente FP16 | no disponible | no aplica | Apache-2.0 | Hugging Face |
-
-No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
+No disponible. La información proporcionada no incluye modelos comparables de upscaling latente de vídeo para H3 ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental, sin descargas ni validacion comunitaria; no hay evidencia de robustez en produccion.
-- La conversion a INT8 es lossy y puede degradar el detalle frente al refiner BF16 de referencia; el autor recomienda comparar el mismo clip con ambas versiones.
-- Menor tamano en disco no garantiza igual calidad visual, mayor velocidad ni menor VRAM en ejecucion.
-- No es un modelo autonomo: requiere el modelo de difusion MiniMax H3 FL2VA y el VAE de video H3, que son descargas separadas.
-- Debe usarse un modelo de difusion sin LoRAs de generacion, Turbo o estilo, porque el nodo anade el refiner por su cuenta.
-- La resolucion objetivo debe ser al menos igual a la de entrada y se ajusta a la rejilla de 32 pixeles, lo que puede alterar dimensiones no multiplos de 32.
-- Licencia heterogenea: el refiner INT8 sigue la MiniMax H3 Community License y el upscaler FP16 es Apache-2.0; el uso comercial exige revisar `LICENSES.md` y `NOTICE` por separado.
-- La licencia del codigo de los nodos de SOLRICKS no sustituye las licencias de los modelos.
-- No hay informacion sobre sesgos, idiomas ni alucinacion, ya que no es un modelo de lenguaje.
-- Fecha de publicacion muy reciente (noviembre de 2026); posible inestabilidad de la API y del formato de flujo de trabajo.
+- Proyecto marcado como experimental por el propio autor; no hay garantías de estabilidad en producción.
+- Depende de descargas externas no incluidas: el modelo de difusión MiniMax-H3 FL2VA y el VAE de vídeo deben obtenerse por separado.
+- El flujo de ejemplo no conecta las entradas de condicionamiento de texto ni de audio, por lo que no requiere text encoder ni audio VAE; usarlo con condicionamiento adicional queda fuera de lo documentado.
+- No debe combinarse con LoRAs de generación, Turbo o estilo: el nodo añade el refiner y la mezcla puede degradar el resultado.
+- El target debe ser al menos tan grande como la entrada y las dimensiones se ajustan a la rejilla de 32 píxeles, lo que limita resoluciones arbitrarias.
+- Licencias mixtas: el refiner INT8 está bajo MiniMax H3 Community License, con posibles restricciones para uso comercial; el upscaler latente es Apache-2.0. Es imprescindible revisar LICENSES.md y NOTICE antes de un uso comercial.
+- No se documentan sesgos, tasas de alucinación ni cobertura idiomática; al ser un modelo de vídeo sin componente de texto en el flujo de ejemplo, estas categorías no aplican directamente.
+- Sin benchmarks publicados: el rendimiento cualitativo solo puede evaluarse con los vídeos de ejemplo del repositorio.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler
-- Repositorio del nodo ComfyUI: https://github.com/SOLRICKS/comfyui-solricks
-- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Modelos H3 experimentales para ComfyUI: https://huggingface.co/Kijai/MiniMax-H3-experimental
-- Origen del refiner BF16: https://huggingface.co/sandpies/ComfyUI-H3-Video-Upsampler
-- Origen del upscaler latente FP16: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler
-- VideoHelperSuite: https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
+- Repositorio Hugging Face: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler
 - Licencias: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler/blob/main/LICENSES.md
-- Aviso legal: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler/blob/main/NOTICE
-- Coleccion Visual AI Models & Tools: https://huggingface.co/collections/SOLRICKS/visual-ai-models-and-tools
+- NOTICE: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler/blob/main/NOTICE
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Pesos experimentales de referencia (Kijai): https://huggingface.co/Kijai/MiniMax-H3-experimental
+- VideoHelperSuite: https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
+- Colección Visual AI Models & Tools: https://huggingface.co/collections/SOLRICKS/visual-ai-models-and-tools
+- Vídeo original de ejemplo: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler/resolve/main/Minimax_H3_I2V.mp4
+- Vídeo reescalado de ejemplo: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler/resolve/main/Minimax_H3_I2V_Upscaler.mp4

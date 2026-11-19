@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Réserver des vols avec SWISS - votre voyage commence ici",
-      "url": "https://www.swiss.com/fr/fr/homepage",
-      "snippet": "Envolez-vous avec SWISS vers des destinations passionnantes dans le monde entier ️. Réservez votre vol et profitez d'un service …Read more"
-    },
-    {
-      "title": "Book flights with SWISS - your journey starts here",
-      "url": "https://www.swiss.com/",
-      "snippet": "Fly with SWISS to exciting destinations worldwide ️. Book your flight and enjoy first-class service and comfort.Read more"
-    },
-    {
-      "title": "SwissTransfer - Envoi sécurisé et gratuit de gros fichiers",
-      "url": "https://www.swisstransfer.com/fr",
-      "snippet": "Envoyez jusqu'à 50 Go - Gratuit et sans inscription - Conservez vos transferts pendant 30 joursRead more"
-    },
-    {
-      "title": "Vols SWISS - Achetez vos billets SWISS à bas prix dès maintenant.",
-      "url": "https://www.swissair.com/fr/fr/",
-      "snippet": "En tant que compagnie aérienne nationale helvétique, SWISS incarne des valeurs traditionnelles et s’astreint à une qualité de …Read more"
-    },
-    {
-      "title": "Particuliers | Swiss Life France",
-      "url": "https://www.swisslife.fr/",
-      "snippet": "Swiss Life est un acteur référent en assurance et gestion de patrimoine, avec un positionnement reconnu d’assureur gestion privée. …Read more"
-    }
-  ]
+  "sources": []
 }

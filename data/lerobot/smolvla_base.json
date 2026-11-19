@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Top 13 Cryptocurrency Data Aggregators | Cryptopolitan",
-      "url": "https://www.cryptopolitan.com/top-15-cryptocurrency-data-aggregators/",
-      "snippet": "Mar 18, 2023 · Check out these top 15 cryptocurrency data aggregators that help you make informed cryptocurrency trading and …"
-    },
-    {
-      "title": "lerobot/smolvla_base · Hugging Face",
-      "url": "https://huggingface.co/lerobot/smolvla_base",
-      "snippet": "Deploy Copy to bucket new Use this model Instructions to use lerobot/smolvla_base with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lerobot/smolvla_base with LeRobot:"
-    },
-    {
-      "title": "how to link bridging aggregator with hardware wallets_Blockchain ...",
-      "url": "https://en.gtokentool.com/how-to-link-bridging-aggregator-with-hardware-wallets/",
-      "snippet": "Linking a bridging aggregator with a hardware wallet (like Ledger, Trezor, or Keystone) involves connecting your secure cold storage …"
-    },
-    {
-      "title": "lerobot/models/smolvla_base/README.md at main - GitHub",
-      "url": "https://github.com/hata8210/lerobot/blob/main/models/smolvla_base/README.md",
-      "snippet": "SmolVLA (LeRobot) SmolVLA is a compact, efficient Vision-Language-Action (VLA) model designed for affordable robotics, trainable on a single GPU and deployable on consumer hardware, while matching the performance of much larger VLAs through community-driven data."
-    },
-    {
-      "title": "10 Best Bitcoin and Crypto Wallets in September 2026",
-      "url": "https://www.benzinga.com/money/best-crypto-wallets",
-      "snippet": "Sep 8, 2025 · Looking for the best crypto wallets? Explore our top picks for security, ease of use and reliability to protect and manage …"
-    }
-  ]
+  "sources": []
 }

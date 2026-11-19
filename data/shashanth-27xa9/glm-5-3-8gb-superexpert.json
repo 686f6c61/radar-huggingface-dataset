@@ -73,16 +73,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "shashanth-27xA9/GLM-5.3-8GB-SuperExpert · Hugging Face",
-      "url": "https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert",
-      "snippet": "GLM-5.3-8GB-SuperExpert is an authentic, sub-10GB reasoning engine engineered for high-performance reasoning, mathematics, and bilingual code synthesis on consumer hardware (16 GB RAM laptops and free Google Colab T4 GPUs ..."
-    },
-    {
-      "title": "shashanth-27xA9/GLM-5.3-8GB-SuperExpert at main - Hugging Face",
-      "url": "https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert/tree/main",
-      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.3-8GB-SuperExpert 8.66 GB Ctrl+K Ctrl+K 1 contributor History:11 commits shashanth-27xA9 Update README: Document native 8.07GB architecture with zero C++ compiler requirements 162410a verified3 days ago .gitattributes Safe 1.52 kBinitial commit4 ..."
-    }
-  ]
+  "sources": []
 }

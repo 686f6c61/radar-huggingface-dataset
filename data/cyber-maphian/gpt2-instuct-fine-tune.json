@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Cyber-Maphian/gpt2-instruct-fine-tune",
+  "renamed_at": "2026-11-19T02:44:34.638Z",
   "benchmarks": [],
   "sources": []
 }

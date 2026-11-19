@@ -84,7 +84,7 @@
     "region:us"
   ],
   "likes": 110,
-  "downloads_30d": 35506,
+  "downloads_30d": 35157,
   "trending_score": 10,
   "parameters": 627057286,
   "parameters_human": "627.1M",
@@ -105,32 +105,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Compare cheap car insurance quotes | 40+ UK brands - finder.com",
-      "url": "https://www.finder.com/uk/car-insurance",
-      "snippet": "May 22, 2024 · Compare benefits and ratings for dozens of policies in seconds and get a cheaper deal. Comparing policies can save …"
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (25 languages, pooled)",
+      "metric": "Pooled test WER, 20,146 recordings",
+      "value": 9.85
     },
     {
-      "title": "Best car insurance companies in the UK 2026 - Which?",
-      "url": "https://www.which.co.uk/money/insurance/car-insurance/car-insurance/best-and-worst-car-insurance-a3PuA5f3sB6q",
-      "snippet": "Jul 30, 2026 · Looking for the best car insurance in the UK? Read our car insurance reviews and choose the Which? Recommended …"
-    },
-    {
-      "title": "Best car insurance companies in the UK 2026 | See top 10 - finder.com",
-      "url": "https://www.finder.com/uk/car-insurance/best-car-insurance",
-      "snippet": "Apr 2, 2026 · Shop around and compare car insurance quotes with as many providers as you can to make sure you’re getting the …"
-    },
-    {
-      "title": "Compare cheap car insurance quotes - Compare the Market",
-      "url": "https://www.comparethemarket.com/car-insurance/",
-      "snippet": "Aug 28, 2026 · Compare car insurance from 187 provider products with the UK’s preferred price comparison site. Explore cover …"
-    },
-    {
-      "title": "Compare Car Insurance UK | Cheap Quotes 2026 — SaveCompare",
-      "url": "https://savecompare.co.uk/insurance/car/",
-      "snippet": "Compare car insurance quotes from leading UK insurers. Find cheap car insurance, young driver policies and multi-car discounts. …"
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS English",
+      "metric": "Test WER, 647 recordings",
+      "value": 3.82
     }
-  ]
+  ],
+  "sources": []
 }

@@ -49,32 +49,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "TurinTech AI · Get more from systems you already run",
-      "url": "https://turintech.org/",
-      "snippet": "Artemis improves the performance of models, agents and code you already run by testing multiple optimization strategies and delivering measurable gains."
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Same answer (%)",
+      "value": 93
     },
     {
-      "title": "Kev-4B-Q4_K_M.gguf · ggml-org/Kev-4B-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/ggml-org/Kev-4B-GGUF/blob/main/Kev-4B-Q4_K_M.gguf",
-      "snippet": "Instructions to use ggml-org/Kev-4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Confident changes",
+      "value": 0
     },
     {
-      "title": "Artemis: optimize code, models and AI agents · TurinTech",
-      "url": "https://www.turintech.ai/product/overview",
-      "snippet": "Artemis by TurinTech optimizes the models, agents and code you already run. Discovery tests multiple approaches against real metrics and keeps the best."
-    },
-    {
-      "title": "Kev 4B: Specifications & Sources - gradually.ai",
-      "url": "https://www.gradually.ai/en/ai-models/kev-4b/",
-      "snippet": "Kev 4B by Jared Palmer. Technical specifications, availability, and official sources."
-    },
-    {
-      "title": "Documentation | Artemis Docs",
-      "url": "https://docs.artemis.turintech.ai/",
-      "snippet": "Artemis documentation — AI code intelligence for engineering teams"
+      "task": "Typed decisions",
+      "dataset": "Test decisions",
+      "metric": "Accuracy (%)",
+      "value": 66.8
     }
-  ]
+  ],
+  "sources": []
 }

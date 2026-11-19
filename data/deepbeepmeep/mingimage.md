@@ -2,58 +2,58 @@
 
 ## Resumen
 
-MingImage es un reempaquetado de pesos publicado por el usuario DeepBeepMeep para el proyecto WanGP, construido a partir del modelo upstream inclusionAI/Ming-Image-0.1-Design (revision `208087ada1486931692c1896f38d4cd16ff3df82`). No se trata de un modelo entrenado desde cero, sino de una distribucion preparada para inferencia: el autor ha fusionado los shards originales con verificacion tensorial, ha convertido a BF16 los pesos FP32 del conector y ha generado una variante cuantizada INT8 ConvRot.
+MingImage es un repositorio de checkpoints en formato de fichero unico para diffusion que empaqueta los modelos Ming-Image-0.1-Design y Ming-Image-0.1-Design-Layer, desarrollados originalmente por inclusionAI y redistribuidos por DeepBeepMeep para su uso con WanGP (Wan2GP), la interfaz web de generacion de imagen y video orientada a GPUs de gama baja. El modelo resuelve dos tareas complementarias: generacion y edicion de imagenes a partir de texto (Design) y descomposicion de una imagen de referencia en capas RGBA (Design-Layer).
 
-El repositorio contiene un transformer de difusion (DiT) en BF16 y su version INT8 en la raiz, un codificador de texto especifico del proyecto llamado BailingMM2 (con tokenizer adjunto) y su version INT8 ConvRot en `BailingMM2-Ming-Image/`, ademas del VAE y la configuracion de runtime en `ming_image/`. El tamano total del repositorio es de 76,3 GB. La tarea soportada por WanGP con estos ficheros es generacion de imagen a partir de texto (text-to-image) y edicion de imagen con una unica referencia. El modelo Design-Layer, distribuido por separado en el proyecto original, no esta incluido.
+Tecnicamente no se trata de un unico modelo denso, sino de un pipeline multimodal compuesto por un nucleo de lenguaje Bailing (BailingMM2-Ming-Image) con su tokenizer, una torre de vision con proyeccion de imagen, un transformer de difusion en formato single-file y un VAE compartido entre ambas variantes. Los conectores, FFN y proyecciones de condicionamiento son especificos de cada variante (conditioning_* para Design y conditioning_* en ming_image_layer para Design-Layer), y deben combinarse en la misma precision (BF16 o INT8 ConvRot).
 
-Su relevancia es practica mas que cientifica: permite ejecutar Ming-Image 0.1 Design dentro del ecosistema WanGP con soporte de cuantizacion INT8 mediante el cargador MMGP ConvRot, en lugar de las herramientas estandar de Diffusers. La licencia declarada es MIT, tanto para el checkpoint e inferencia originales como para este reempaquetado. El modelo no cuenta con descargas ni likes registrados en el momento de la consulta.
+Su relevancia actual radica en que reduce la barrera de hardware: WanGP declara requisitos de VRAM de hasta 6 GB en determinados modelos, soporte para GPUs antiguas (RTX 10XX, 20XX) y descarga automatica de los pesos adaptados a la arquitectura del usuario. La licencia MIT del codigo y de los assets publicados facilita su integracion comercial, aunque el repositorio ocupa 100,5 GB por incluir todas las variantes y precisiones.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (DiT) en BF16, con variante cuantizada INT8 ConvRot; codificador de texto BailingMM2 y VAE |
+| Arquitectura | Transformer de difusion (single-file) con nucleo de lenguaje Bailing (BailingMM2-Ming-Image), torre de vision y VAE compartido |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 e INT8 (ConvRot) |
+| Tipos de cuantizacion | BF16 e INT8 ConvRot (seleccion de piezas coincidentes obligatoria) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible (checkpoints de fichero unico en BF16 e INT8 ConvRot; el contenedor no se especifica en la model card) |
-| Tarea soportada | text-to-image y edicion de imagen con una referencia |
-| Canal alfa (RGBA) | etiquetado en el repositorio, sin documentacion adicional |
-| Tamano del repositorio | 76,3 GB |
-| Cargador requerido | WanGP (MMGP ConvRot para los ficheros INT8); no compatible con Diffusers estandar |
-| Revision upstream | `208087ada1486931692c1896f38d4cd16ff3df82` |
+| Formato de pesos | diffusion-single-file (checkpoints en la raiz del repo), tokenizer, pesos de torre de vision y VAE en subcarpetas |
+| Tarea | text-to-image (pipeline declarado); incluye edicion y descomposicion en capas RGBA |
+| Modelo base | inclusionAI/Ming-Image-0.1-Design |
+| Tamano del repositorio | 100,5 GB |
+| Descargas | 2.377 |
+| Fecha de creacion | 2026-09-23 |
+| Ultima actualizacion | 2026-10-11 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de difusion (DiT) para generacion de imagenes, acompanado de un codificador de texto denominado BailingMM2, que en el repositorio aparece como componente especifico del proyecto con su propio tokenizer, y de un VAE. El autor indica que los ficheros BF16 se obtuvieron fusionando los shards upstream con verificacion de tensores, y que los pesos FP32 del conector se convirtieron a BF16 para la variante de inferencia BF16. Ademas, se genero una version cuantizada en INT8 mediante ConvRot, que debe cargarse con el cargador MMGP ConvRot de WanGP en lugar de con Diffusers estandar.
+La arquitectura es un pipeline de difusion condicionada por texto e imagen. El componente de lenguaje es BailingMM2-Ming-Image, ubicado en `BailingMM2-Ming-Image/` junto con su tokenizer; la torre de vision y la proyeccion de imagen residen en `ming_image_shared/`. Cada variante aporta su propio conector, FFN y proyecciones de condicionamiento en `ming_image/conditioning_*` (Design) o `ming_image_layer/conditioning_*` (Design-Layer), y ambas comparten el VAE en `ming_image/`. El transformer de difusion se distribuye como checkpoint single-file en la raiz del repositorio.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas concretas mas alla de la propia cuantizacion ConvRot incluida en el reempaquetado. Las notas de conversion y las fuentes originales del modelo se encuentran, segun la model card, en el directorio `models/ming_image/` de WanGP.
+Un detalle operativo relevante es que la torre de vision es un modelo MMGP separado: en generacion puramente texto-a-imagen no es necesario cargarla en la GPU, lo que reduce el consumo de VRAM. WanGP descarga y carga automaticamente las piezas requeridas segun la arquitectura del equipo. No se dispone de informacion sobre volumen de tokens de entrenamiento, composicion del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (text-to-image).
-- Edicion de imagen con una unica imagen de referencia (one-reference image editing).
-- Soporte declarado de salida con canal alfa (RGBA), segun las etiquetas del repositorio.
-- Orientacion a diseno grafico, segun las etiquetas `graphic-design` y `image-generation`.
-- Ejecucion en dos precisiones: BF16 e INT8 ConvRot.
-- No se documenta soporte de tool calling ni function calling (no aplica a un modelo de difusion de imagen).
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No se documenta capacidad multilingue del codificador de texto.
-- No se documenta modo de razonamiento (thinking), audio ni video.
-- El modelo Design-Layer del proyecto original no esta incluido en este repositorio.
+- Generacion de imagenes a partir de descripciones textuales (variante Design).
+- Edicion de imagenes guiada por instrucciones, usando el mismo nucleo Bailing y la torre de vision.
+- Descomposicion de una imagen de referencia en capas RGBA independientes (variante Design-Layer), util para flujos de postproduccion y composicion.
+- Condicionamiento multimodal: combinacion de texto e imagen de referencia en el mismo pipeline.
+- Soporte de LoRAs para personalizar el estilo de cada modelo dentro de WanGP.
+- Herramientas integradas en la interfaz: editor de mascaras, potenciador de prompts y generacion temporal y espacial.
+- Sistema de colas para lanzar lotes de generaciones y recuperarlas posteriormente.
+- Compatibilidad con GPUs antiguas (RTX 10XX, 20XX) y requisitos bajos de VRAM.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso agentico.
 
 ## Casos de uso
 
-- Generacion de recursos graficos con transparencia: el soporte de RGBA permite producir iconos, logotipos y elementos de interfaz con canal alfa directamente, sin recorte posterior en herramientas de edicion.
-- Edicion de imagen con referencia unica: a partir de una imagen de producto se pueden generar variaciones manteniendo la identidad visual del original, util para catalogos y fichas de producto.
-- Prototipado de diseno grafico: generacion rapida de bocetos y variaciones de composicion antes de la produccion final, aprovechando el etiquetado `graphic-design`.
-- Assets para interfaces de usuario: creacion de sprites, fondos y elementos graficos que requieren transparencia en pipelines de desarrollo front-end.
-- Ilustracion editorial y conceptual: generacion de imagenes de apoyo para articulos, presentaciones o material divulgativo a partir de descripciones textuales.
-- Automatizacion de pipelines de diseno en lote: integracion del modelo en flujos que produzcan variantes graficas de forma repetida, dado que admite ejecucion local con pesos BF16 o INT8.
-- Despliegue en entornos con VRAM limitada mediante cuantizacion INT8: la variante ConvRot reduce el espacio de pesos respecto a BF16, lo que facilita su uso en equipos con menos memoria, siempre que se use el cargador de WanGP.
+- Generacion de ilustraciones para prototipado de producto: la variante Design produce imagenes a partir de prompts textuales, integrable en la interfaz web de WanGP para iterar rapidamente sobre conceptos visuales sin escribir codigo.
+- Edicion de imagenes en flujos de marketing: partiendo de una imagen base, se aplican instrucciones de modificacion para adaptar creatividades a distintos formatos y campanas.
+- Descomposicion en capas para postproduccion: Design-Layer separa una referencia en RGBA, lo que permite reutilizar fondos, sujetos y elementos en herramientas de composicion como Photoshop o After Effects.
+- Generacion en equipos con hardware limitado: con requisitos de hasta 6 GB de VRAM en ciertos modelos y soporte de RTX 10XX/20XX, el pipeline es viable en estaciones de trabajo sin GPUs de datacenter.
+- Automatizacion de catalogos de e-commerce: generacion por lotes mediante el sistema de colas de WanGP, con variaciones de producto sobre prompts predefinidos.
+- Creacion de assets para videojuegos: generacion de sprites, texturas y capas separadas que se integran directamente en motores con pipelines RGBA.
+- Experimentacion en investigacion: al distribuirse en BF16 e INT8 con pesos separados por componente, permite estudiar el efecto de la cuantizacion sobre la calidad de generacion.
 
 ## Benchmarks y rendimiento
 
@@ -61,43 +61,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio completo ocupa 76,3 GB, pero incluye varias variantes (BF16 e INT8) y componentes auxiliares, por lo que ese tamano no equivale a la VRAM necesaria en ejecucion.
-- La variante INT8 ConvRot reduce aproximadamente a la mitad el espacio de pesos del transformer y del codificador de texto respecto a BF16, aunque no se detallan los tamanos individuales de cada componente.
-- GPU recomendadas: no disponible. No se documentan GPUs objetivo ni pruebas de compatibilidad.
-- Compatibilidad con GPU de consumo: no confirmada. Depende del tamano real del DiT, que no se especifica.
-- Opciones de despliegue: WanGP con el cargador MMGP ConvRot para los ficheros INT8. Los ficheros INT8 no son compatibles con Diffusers estandar. vLLM, llama.cpp, Ollama y TGI no son aplicables, ya que se trata de un modelo de difusion de imagen y no de un modelo de lenguaje.
-- Latencia y throughput: no disponible. No se publican tiempos de generacion, numero de pasos de muestreo ni resoluciones de salida recomendadas.
+- VRAM estimada: no disponible de forma especifica para MingImage; WanGP declara que determinados modelos del ecosistema funcionan con tan solo 6 GB de VRAM.
+- GPUs recomendadas: no disponible para este modelo concreto. WanGP soporta GPUs antiguas (RTX 10XX, 20XX) y es "muy rapido en las GPUs mas recientes", sin cifras publicadas.
+- Compatibilidad con GPU de consumo: si, segun el rango declarado por WanGP (desde 6 GB en ciertos modelos); no se detalla el minimo exacto para MingImage.
+- Opciones de despliegue: WanGP (Wan2GP) con interfaz web; descarga automatica de pesos adaptados a la arquitectura. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de pipeline de difusion.
+- Latencia y throughput: no disponibles.
+- Almacenamiento: el repositorio completo ocupa 100,5 GB, aunque WanGP descarga solo las piezas necesarias.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Formato |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepBeepMeep/MingImage (esta ficha) | no disponible | no disponible | MIT | Hugging Face, 76,3 GB, 0 descargas | Checkpoints de fichero unico BF16 e INT8 ConvRot para WanGP |
-| inclusionAI/Ming-Image-0.1-Design (upstream) | no disponible | no disponible | MIT | Hugging Face (revision fijada por este reempaquetado) | Shards upstream en FP32/BF16 |
-| Otros modelos de difusion comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MingImage (este repo) | no disponible | no disponible | Texto a imagen, edicion, capas RGBA | MIT | Hugging Face (DeepBeepMeep/MingImage) |
+| inclusionAI/Ming-Image-0.1-Design | no disponible | no disponible | Texto a imagen y edicion | MIT (assets publicados) | Hugging Face (upstream) |
+| inclusionAI/Ming-Image-0.1-Design-Layer | no disponible | no disponible | Descomposicion en capas RGBA | MIT (assets publicados) | Hugging Face (upstream) |
+| Qwen Image 1/2.1 (soportado por WanGP) | no disponible | no disponible | Texto a imagen | no disponible en esta ficha | Soportado por WanGP |
+| Flux 1 y 2 (soportado por WanGP) | no disponible | no disponible | Texto a imagen | no disponible en esta ficha | Soportado por WanGP |
 
-No se dispone de datos de rendimiento ni de parametros del modelo upstream en la informacion proporcionada, por lo que la comparativa se limita a licencia, formato y via de distribucion. No se han identificado otras alternativas comparables en las fuentes consultadas.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Este repositorio es un reempaquetado de pesos ajenos, no un modelo entrenado por el autor del repositorio; cualquier problema de calidad subyacente proviene del modelo upstream.
-- No se publican resultados de benchmarks, por lo que no es posible verificar la calidad de generacion ni compararla con alternativas.
-- El repositorio registra 0 descargas y 0 likes, lo que implica ausencia de validacion por parte de la comunidad.
-- Los ficheros INT8 requieren el cargador MMGP ConvRot de WanGP y no funcionan con Diffusers estandar; esto limita la portabilidad del modelo.
-- No se especifica el formato contenedor de los pesos ni los parametros de inferencia recomendados (resolucion, pasos, escala de guia).
-- No se documentan los idiomas soportados por el codificador de texto BailingMM2, ni su comportamiento en castellano.
-- No se documentan sesgos conocidos, pero al ser un modelo de generacion de imagen es esperable que reproduzca sesgos presentes en sus datos de entrenamiento, sin que se describan mitigaciones.
-- Riesgo de artefactos, incoherencias visuales y contenido no deseado inherente a los modelos de difusion; no se documentan filtros ni salvaguardas.
-- El modelo Design-Layer distribuido por separado en el proyecto original no esta incluido, por lo que ciertas capacidades de diseno pueden no estar disponibles con estos ficheros.
-- El tamano del repositorio (76,3 GB) exige planificacion de almacenamiento y ancho de banda de descarga considerables.
-- La licencia MIT se declara para el checkpoint y el codigo de inferencia originales; conviene revisar el fichero LICENSE del repositorio antes de un uso comercial.
-- Las fechas de los metadatos (creacion y actualizacion el 2026-09-23) son posteriores a la fecha habitual de consulta, lo que sugiere un posible error de metadatos que conviene verificar.
-- La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre el modelo; toda la informacion procede de los metadatos y la model card de Hugging Face.
+- No se documentan sesgos conocidos del modelo; al ser un generador de imagenes condicionado por texto, hereda los sesgos presentes en sus datos de entrenamiento, no publicados.
+- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar detalles plausibles pero incorrectos respecto al prompt, especialmente en texto dentro de la imagen y estructuras complejas.
+- El repositorio mezcla variantes y precisiones; es obligatorio emparejar piezas BF16 o INT8 ConvRot de los tres componentes del encoder, lo que aumenta el riesgo de errores de configuracion.
+- La torre de vision es un modelo MMGP separado: si se usa edicion o Design-Layer, debe cargarse, incrementando los requisitos de VRAM respecto a la generacion solo texto.
+- No hay informacion sobre cobertura linguistica ni sobre calidad en idiomas distintos del ingles.
+- La licencia MIT del codigo y los assets publicados permite uso comercial, pero conviene verificar las condiciones de los checkpoints upstream de inclusionAI antes de desplegar en produccion.
+- El tamano del repositorio (100,5 GB) implica costes de almacenamiento y ancho de banda considerables si se descarga completo en lugar de piezas individuales.
+- No se publican benchmarks, por lo que la evaluacion de calidad debe hacerse mediante pruebas propias.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/DeepBeepMeep/MingImage
-- Modelo upstream: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
-- Revision upstream fijada: `208087ada1486931692c1896f38d4cd16ff3df82`
-- Directorio de fuentes y notas de conversion en WanGP: `models/ming_image/` (mencionado en la model card; no se proporciona URL)
-- La busqueda web no devolvio resultados relevantes (unicamente paginas genericas de LinkedIn, sin relacion con el modelo).
+- Repositorio Hugging Face: https://huggingface.co/DeepBeepMeep/MingImage
+- Modelo upstream Design: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
+- Modelo upstream Design-Layer: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
+- Repositorio WanGP (Wan2GP): https://github.com/deepbeepmeep/Wan2GP
+- Servidor de Discord: https://discord.gg/g7efUW9jGV
+- Twitter/X de DeepBeepMeep: https://x.com/deepbeepmeep

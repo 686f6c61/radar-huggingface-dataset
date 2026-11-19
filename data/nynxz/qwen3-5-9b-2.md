@@ -2,98 +2,91 @@
 
 ## Resumen
 
-nynxz/Qwen3.5-9B no es un modelo completo, sino un adaptador LoRA de rango 4 publicado en formato ComfyUI para el codificador de texto Qwen3.5-9B. Su función es reproducir sobre los pesos estándar de Qwen/Qwen3.5-9B el comportamiento del checkpoint HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive, es decir, eliminar las respuestas de rechazo sin necesidad de mantener una segunda copia completa del modelo de 9 000 millones de parámetros.
+`nynxz/Qwen3.5-9B` es un repositorio de adaptadores LoRA en formato ComfyUI para el codificador de texto Qwen3.5-9B, publicado por el usuario nynxz. No se trata de un modelo base nuevo, sino de una reexpresión como LoRA de tres checkpoints ya existentes: dos reescritores de prompts de MiniMax-H3 (Ref2VA y FL2VA) publicados por lightx2v, y una variante "uncensored" publicada por HauhauCS. El objetivo es permitir que un único codificador Qwen3.5-9B en ComfyUI cubra las tres funcionalidades apilando LoRAs, en lugar de mantener tres checkpoints completos de 9B en disco.
 
-El adaptador ocupa 13,4 MB en fp32 (aproximadamente 3,4 millones de parámetros) y se construyó como una diferencia de pesos entre el modelo sin censura y el modelo original, factorizada matriz a matriz mediante SVD. Solo modifica 68 matrices del modelo de lenguaje —proyecciones de salida de atención y módulos MLP de determinadas capas— y deja intactos los embeddings, la cabeza de salida y la torre de visión.
+El repositorio resuelve un problema práctico de despliegue en pipelines de generación de vídeo con ComfyUI: los checkpoints fusionados de lightx2v ocupan varios gigabytes cada uno y no se pueden combinar entre sí, mientras que estos LoRA (173 MB y 13,4 MB) se cargan sobre el mismo encoder y se apilan. La relevancia actual viene del ecosistema MiniMax-H3 para text-to-video e image-to-video, donde la calidad del prompt reescrito condiciona directamente la fidelidad del vídeo generado.
 
-Su interés técnico está en que demuestra una forma limpia y verificable de destilar una edición de pesos completa en un adaptador mínimo: el autor reporta que la divergencia KL de siguiente token frente al modelo sin censura cae de 0,337 a 0,0007 al aplicar el LoRA con fuerza 1,0. Está diseñado para el flujo de trabajo de ComfyUI y solo declara soporte de inglés.
+El modelo subyacente es Qwen3.5-9B, un transformer de 9.000 millones de parámetros con atención híbrida (capas de atención lineal y atención completa) y una torre de visión, según se deduce de las matrices adaptadas y de la presencia de `vision_start`/`image_pad` en la plantilla. La información disponible no detalla el número de tokens de entrenamiento ni la composición del dataset del modelo base.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA de rango 4 (factorización SVD por matriz) sobre el codificador de texto Qwen3.5-9B; el modelo base usa atención híbrida (módulos `linear_attn` y `self_attn`) y dispone de torre de visión |
-| Parámetros totales | ~3,4 M en el adaptador (13,4 MB en fp32); modelo base: 9 000 M |
+| Arquitectura | Transformer con atención híbrida (lineal + completa) sobre Qwen3.5-9B; los LoRA adaptan solo el modelo de lenguaje |
+| Parámetros totales | 9B (modelo base Qwen3.5-9B) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Adaptador en fp32; el modelo base se distribuye en bf16 (la model card menciona además una conversión GGUF de origen) |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, con claves en el formato genérico de codificador de texto de ComfyUI (`text_encoders.transformer.model.layers.N.<módulo>.lora_{down,up}.weight`), fp32 y sin alpha |
+| Tipos de cuantización | bf16 e int8 (`qwen3.5_9b_bf16`, `qwen3.5_9b_int8_convrot` en Comfy-Org); los LoRA se distribuyen en bf16 y fp32 |
+| Idiomas soportados | en (inglés, según la model card) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (LoRA en formato de text encoder de ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-No hay entrenamiento: el adaptador es una diferencia de pesos pura (`uncensored − Qwen/Qwen3.5-9B`) factorizada por matriz con SVD. La edición original es exactamente de rango 4 —cada matriz modificada presenta cuatro valores singulares reales y después un salto al ruido de redondeo de bf16—, de modo que el rango 4 conserva al menos el 99,9 % de la edición, mientras que el rango 1 solo retendría en torno al 65 %. Se cubren 68 matrices, todas del modelo de lenguaje: salidas de atención (`linear_attn.out_proj` y `self_attn.o_proj`, capas 3-31), `mlp.down_proj` (capas 12-25) y `mlp.gate_proj` / `mlp.up_proj` (capas 19-31). Quedan fuera embeddings, `lm_head` y la torre de visión.
+Los tres adaptadores se obtuvieron por diferencia de pesos (`merged − Qwen/Qwen3.5-9B`) y factorización SVD en fp32 a partir de los checkpoints en bf16. Cada matriz adaptada presenta exactamente 32 valores singulares por encima del umbral de redondeo bf16, de modo que el rango 32 recupera el adaptador original; el residuo corresponde al ruido de redondeo de la fusión. Se adaptan 248 matrices, únicamente del modelo de lenguaje, en las 32 capas: `linear_attn.in_proj_qkv / in_proj_z / in_proj_a / in_proj_b / out_proj`, `self_attn.q/k/v/o_proj` y `mlp.gate/up/down_proj`. La torre de visión, los embeddings, `lm_head`, las normas y la cabeza MTP son idénticas byte a byte al modelo base.
 
-Se descartaron los cambios por debajo del umbral de redondeo ( aproximadamente 1e-3 en términos relativos) sobre los pesos de normalización 1-D, heredados del ciclo de conversión a GGUF, que un LoRA no puede transportar. La validación se hizo en transformers: la KL de siguiente token frente al modelo sin censura pasa de 0,337 (modelo estándar) a 0,0007 (estándar + LoRA), y las salidas greedy coinciden con el modelo sin censura en prompts que provocan rechazo, sin alterar las respuestas benignas. La presencia de módulos `linear_attn` y `self_attn` en las claves evidencia una arquitectura de atención híbrida (lineal + completa) en el modelo base; no se dispone de datos sobre el corpus de entrenamiento, el número de tokens ni las etapas de RLHF/DPO del modelo original.
+La energía del delta conservada a rango 32 es del 98,3 % para el LoRA Ref2VA y del 99,8 % para el FL2VA. El LoRA uncensored es de rango 4, solo modelo de lenguaje, y reduce la divergencia KL de siguiente token respecto al modelo uncensored de 0,337 a 0,0007. Las claves siguen la forma genérica de text encoder de ComfyUI (`text_encoders.transformer.model.layers.N.<module>.lora_{down,up}.weight`), en bf16 y sin alpha. Los reescritores fueron entrenados por lightx2v con ms-swift a partir de un adaptador de rango 32 fusionado.
 
 ## Capacidades
 
-- Generación de texto con el codificador Qwen3.5-9B en ComfyUI, incluyendo el modo de razonamiento (thinking) que el modelo base activa por defecto.
-- Eliminación del comportamiento de rechazo del checkpoint estándar, con fuerza de LoRA ajustable entre 0 y 1 para interpolar entre el comportamiento censurado y el plenamente sin censura.
-- Reproducción fiel del checkpoint HauhauCS sin cargar un segundo modelo de 9B: misma salida greedy en prompts de rechazo según la validación del autor.
-- Compatibilidad con el pipeline `image-text-to-text` del modelo base (la torre de visión no se modifica, por lo que la parte multimodal queda en su estado original).
-- Aplicación sobre el codificador de texto estándar de Comfy-Org, lo que permite reutilizar el mismo encoder para distintas tareas de generación de texto y condicionamiento.
-- No se declaran capacidades de tool calling, agentes, matemáticas o código específicas del adaptador; dependen íntegramente del modelo base y no han sido evaluadas en la información disponible.
+- Reescritura de prompts para MiniMax-H3 en modo Ref2VA: transforma una petición más referencias ordenadas en un prompt con esquema de seis secciones.
+- Reescritura de prompts para MiniMax-H3 en modos T2VA, I2VA, L2VA y FL2VA: genera prompts con esquema de tres campos, opcionalmente con keyframes de primer y último fotograma.
+- Procesamiento de imágenes de referencia dentro del prompt mediante los tokens `<|vision_start|><|image_pad|><|vision_end|>`, vinculados en orden al lote de imágenes.
+- Eliminación del comportamiento de rechazo (variante uncensored, LoRA de rango 4).
+- Decodificación greedy con modo `thinking` desactivado; los reescritores responden tras un bloque `<think></think>` vacío.
+- Apilamiento de los tres LoRA sobre un mismo codificador Qwen3.5-9B.
+- Soporte multilingüe limitado al inglés según la model card.
+- No se documentan tool calling, function calling ni razonamiento multi-paso como capacidades del adaptador.
 
 ## Casos de uso
 
-- Escritura de ficción en ComfyUI: el LoRA se aplica al codificador de texto para generar narrativa de terror, noir o temas oscuros sin que el modelo interrumpa con negativas; la fuerza ajustable permite rebajar la intensidad por escena.
-- Expansión de prompts para difusión: en flujos de ComfyUI que usan Qwen3.5-9B como text encoder para generar o reescribir prompts, el adaptador evita rechazos cuando la descripción incluye violencia estilizada o contenido adulto no explícito.
-- Roleplay y narrativa interactiva: conversaciones multi-turno donde el modelo base tiende a derivar a respuestas de seguridad; el LoRA mantiene la coherencia del personaje con un coste de VRAM de apenas unos megabytes.
-- Investigación en seguridad y red teaming: permite comparar el mismo modelo con y sin el adaptador (fuerza 0 frente a 1,0) y medir la tasa de rechazo y la calidad de respuesta con una única GPU, sin duplicar checkpoints.
-- Generación de datos sintéticos para dominios sensibles: diálogos de ficción criminal, guiones de videojuegos para adultos o corpus de entrenamiento de clasificadores de contenido, donde el checkpoint estándar se negaría a producir las muestras.
-- Optimización de almacenamiento en despliegues locales: sustituir un segundo checkpoint de ~18 GB en bf16 por un archivo de 13,4 MB simplifica la gestión de versiones y el intercambio de variantes en un mismo servidor ComfyUI.
-- Pruebas de regresión de pipelines: al ser determinista con decodificación greedy (`sampling_mode: off`), sirve para verificar que el encoder se carga correctamente y que el LoRA se aplica con la fuerza esperada.
+- Generación de vídeo con referencias en ComfyUI: cargar el LoRA Ref2VA y pasar una petición más varias imágenes ordenadas para obtener un prompt de seis secciones que MiniMax-H3 consume directamente; el LoRA evita mantener el checkpoint fusionado de lightx2v.
+- Text-to-video e image-to-video con keyframes: el LoRA FL2VA reescribe peticiones con primer y último fotograma etiquetados por rol, lo que permite controlar la transición entre dos imágenes concretas en el vídeo resultante.
+- Pipeline unificado de reescritura: apilar Ref2VA, FL2VA y el LoRA uncensored sobre un único `qwen3.5_9b_bf16` reduce el uso de disco de tres checkpoints de 9B a unos 360 MB de adaptadores.
+- Sustitución de checkpoints fusionados en despliegues existentes: al ser un diff exacto a rango 32 con el 98,3-99,8 % de la energía del delta, sirve para migrar flujos que ya usaban los modelos de lightx2v sin cambiar la salida.
+- Investigación sobre edición de comportamiento: el LoRA uncensored de rango 4 y KL 0,0007 es un caso de estudio compacto de cómo un adaptador de muy baja dimensión elimina rechazos en un modelo de 9B.
+- Experimentación con prompts de vídeo: al requerir una plantilla de sistema concreta (`SYSTEM_PROMPT` o `REF2AV_SYSTEM_PROMPT` de lightx2v), el repositorio sirve para reproducir y comparar el esquema de reescritura de MiniMax-H3 en entornos de investigación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo aporta métricas de fidelidad del adaptador frente al checkpoint sin censura:
-
-| Métrica | Modelo estándar | Estándar + LoRA (fuerza 1,0) | Referencia sin censura |
-|---|---|---|---|
-| KL de siguiente token (menor es mejor) | 0,337 | 0,0007 | 0 |
-| Coincidencia de salida greedy en prompts de rechazo | no | sí | sí |
-| Alteración de respuestas benignas | — | no apreciable según el autor | — |
-| Edición retenida por el rango 4 | — | ≥ 99,9 % | 100 % (rango completo) |
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa 13,4 MB en fp32; su impacto en VRAM es despreciable (del orden de decenas de megabytes al materializarse junto a los pesos del encoder).
-- El coste real lo determina el modelo base de 9 000 M de parámetros. Estimación a partir del recuento de parámetros (el autor no publica requisitos): ~18 GB en bf16, ~9-10 GB en fp8/8 bits y ~5-6 GB en 4 bits para los pesos.
-- GPU recomendadas para bf16: A100 40/80 GB, H100, L40S, RTX A6000 o cualquier tarjeta con 24 GB o más (RTX 4090, L4 de 24 GB) para trabajar con margen de contexto.
-- Cabe en GPU de consumo: sí, en cuantizaciones de 8 y 4 bits sobre RTX 3090/4090 (24 GB) y, en 4 bits, sobre RTX 3060 12 GB o RTX 4060 Ti 16 GB.
-- Despliegue: el autor solo documenta ComfyUI (`CLIPLoader` → LoRA sobre CLIP con fuerza 1,0 → `Generate Text`), con el archivo `qwen3.5_9b_bf16.safetensors` de Comfy-Org en `models/text_encoders/`. Las claves son específicas de ComfyUI, por lo que no hay instrucciones publicadas para vLLM, TGI, llama.cpp u Ollama con este adaptador.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma explícita; el codificador Qwen3.5-9B en bf16 requiere del orden de 18 GB de pesos, y en int8 (`qwen3.5_9b_int8_convrot`) aproximadamente la mitad, sin contar caché KV ni el resto del pipeline de ComfyUI.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Los LoRA en sí ocupan 173 MB (Ref2VA y FL2VA) y 13,4 MB (uncensored), por lo que el requisito real lo marca el codificador base.
+- Opciones de despliegue: ComfyUI con `CLIPLoader -> Load LoRA (Text Encoder) -> Generate Text`; los pesos del encoder se obtienen de `Comfy-Org/Qwen3.5/tree/main/text_encoders`. No se documentan vLLM, llama.cpp, Ollama ni TGI para estos adaptadores.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|---|
-| nynxz/Qwen3.5-9B (esta ficha) | LoRA rango 4 sobre encoder | ~3,4 M (adaptador) | no disponible | Apache 2.0 | safetensors ComfyUI | 0 descargas, 14 likes |
-| Qwen/Qwen3.5-9B | Modelo completo original | 9 000 M | no disponible | Apache 2.0 | safetensors | Modelo base de referencia |
-| HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive | Checkpoint completo editado | 9 000 M | no disponible | Apache 2.0 | safetensors | Requiere ~18 GB en bf16 |
-| nDimensional/Qwen3.5-9B-Uncensored-Safetensors | Conversión a safetensors del anterior | 9 000 M | no disponible | Apache 2.0 | safetensors | Fuente de la diferencia de pesos |
-
-La ventaja diferencial del LoRA frente a los dos checkpoints sin censura es el tamaño (13,4 MB frente a ~18 GB) y la posibilidad de apilarlo sobre el encoder estándar ya cargado en ComfyUI; la desventaja es que depende de la infraestructura de ComfyUI y no ofrece un checkpoint autónomo.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| nynxz/Qwen3.5-9B (este repo) | LoRA sobre 9B | no disponible | safetensors (LoRA ComfyUI) | Apache-2.0 | Tres adaptadores apilables, ~360 MB totales |
+| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA | 9B | no disponible | checkpoint fusionado | Apache-2.0 | Checkpoint completo, una sola función |
+| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA | 9B | no disponible | checkpoint fusionado | Apache-2.0 | Checkpoint completo, una sola función |
+| HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive | 9B | no disponible | checkpoint | Apache-2.0 | Variante uncensored completa |
 
 ## Limitaciones y advertencias
 
-- Elimina deliberadamente el comportamiento de rechazo: puede producir contenido violento, sexual o potencialmente dañino. La responsabilidad legal y ética del uso recae en el usuario.
-- Solo declara inglés; no hay evidencia de comportamiento multilingüe del adaptador (el modelo base podría soportar otros idiomas, pero no se documenta aquí).
-- No hay benchmarks de capacidad: se desconoce si la edición de pesos degrada razonamiento, código o matemáticas respecto al Qwen3.5-9B original.
-- La fidelidad no es exacta: la KL baja a 0,0007, no a cero, y se descartaron cambios en pesos de normalización 1-D (~1e-3 relativo) procedentes del ciclo GGUF.
-- No hay evaluaciones publicadas sobre alucinación ni sobre sesgos del adaptador o del checkpoint de origen.
-- Las claves están en formato de codificador de texto de ComfyUI, sin alpha y en fp32; no se documenta su uso con PEFT, transformers, vLLM o llama.cpp, lo que limita la portabilidad.
-- La torre de visión queda intacta: el efecto «sin censura» solo aplica a la generación de texto, no a la comprensión de imágenes.
-- El modelo base activa el modo thinking por defecto; para reproducir las comprobaciones del autor hay que usar decodificación greedy (`sampling_mode: off`).
-- Licencia Apache 2.0 en adaptador y modelo base, lo que permite uso comercial, pero el contenido generado puede infringir normativas locales sobre material extremo o sexual.
-- Proyecto con 0 descargas registradas y sin validación independiente; conviene verificar el comportamiento en el pipeline propio antes de usarlo en producción.
+- Los reescritores no incluyen plantilla de prompt: sin el `SYSTEM_PROMPT` o `REF2AV_SYSTEM_PROMPT` de lightx2v no producen el esquema correcto.
+- Están entrenados para decodificación greedy con `thinking` desactivado; otros ajustes de muestreo pueden degradar la salida.
+- La fuerza 1.0 reproduce exactamente el modelo fusionado; valores distintos se alejan del comportamiento entrenado.
+- El LoRA uncensored elimina los rechazos, lo que implica riesgo de generar contenido inapropiado o dañino sin filtro.
+- Solo se declara soporte de inglés; el comportamiento en otros idiomas no está documentado.
+- El modelo base puede alucinar; no se han publicado evaluaciones de fidelidad de los prompts reescritos.
+- La licencia Apache-2.0 permite uso comercial, pero los pesos derivados de lightx2v y HauhauCS mantienen sus propias condiciones Apache-2.0.
+- El repositorio depende de la estructura de claves de ComfyUI y del codificador de Comfy-Org; no es portable directamente a otros runners sin conversión.
 
 ## Enlaces
 
-- [nynxz/Qwen3.5-9B en Hugging Face](https://huggingface.co/nynxz/Qwen3.5-9B)
-- [Qwen/Qwen3.5-9B (modelo base)](https://huggingface.co/Qwen/Qwen3.5-9B)
-- [HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive (checkpoint de origen)](https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive)
-- [nDimensional/Qwen3.5-9B-Uncensored-Safetensors (conversión usada para la diferencia)](https://huggingface.co/nDimensional/Qwen3.5-9B-Uncensored-Safetensors)
-- [Comfy-Org/Qwen3.5 — codificadores de texto](https://huggingface.co/Comfy-Org/Qwen3.5/tree/main/text_encoders)
-- No se han encontrado enlaces adicionales relevantes (papers, blogs o demos) en los resultados de búsqueda web disponibles.
+- Repositorio Hugging Face: https://huggingface.co/nynxz/Qwen3.5-9B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- lightx2v Ref2VA: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA
+- lightx2v FL2VA: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA
+- Bundle Omni de lightx2v (plantillas de sistema): https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-Omni
+- HauhauCS Uncensored Aggressive: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
+- nDimensional Uncensored Safetensors: https://huggingface.co/nDimensional/Qwen3.5-9B-Uncensored-Safetensors
+- Codificadores de texto para ComfyUI: https://huggingface.co/Comfy-Org/Qwen3.5/tree/main/text_encoders
+- Revisión anterior con la documentación del LoRA uncensored: https://huggingface.co/nynxz/Qwen3.5-9B/blob/e1d95625fd1148451fb7d2bbcdd5eafce7e01593/README.md

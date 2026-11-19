@@ -2,99 +2,108 @@
 
 ## Resumen
 
-MiniCPM-OCR Jev es un modelo multimodal de evaluación de calidad OCR desarrollado por OpenBMB, publicado en su variante cuantizada AWQ W4A16 en el repositorio `openbmb/MiniCPM-OCR-Jev-AWQ`. A diferencia de los modelos OCR tradicionales, no extrae texto de imágenes: dado el recorte de una región de documento (texto, fórmula o tabla) y un resultado OCR candidato, devuelve una puntuación de 0 a 1 que indica la probabilidad de que el candidato sea correcto. Resuelve así el problema de la verificación automática de resultados OCR, permitiendo aceptar automáticamente las regiones fiables, derivar a revisión humana solo las dudosas, o seleccionar el mejor candidato entre varios motores OCR.
+MiniCPM-OCR-Jev-AWQ es la version cuantizada a 4 bits (AWQ W4A16) del modelo MiniCPM-OCR Jev, desarrollado por OpenBMB. Se trata de un modelo multimodal de 2B parametros especializado en la evaluacion de calidad de resultados OCR: dada una imagen de region de documento (texto, formula o tabla) y un resultado OCR candidato, devuelve una puntuacion entre 0 y 1 que indica la probabilidad de que dicho candidato sea correcto. No genera texto libre, sino que actua como clasificador binario de calidad.
 
-Su relevancia radica en su eficiencia: con solo 2.213 millones de parámetros (entrenado a partir de Qwen3.5-2B), supera en AUROC de decisión (93,6 sobre JevOCRBench) a modelos mucho mayores como JEV-35B-A3B (90,1) y se acerca a Qwen3.5-397B-A17B (93,8). La variante AWQ de 4 bits reduce el tamaño del repositorio a 2,4 GB, haciéndolo desplegable en hardware modesto. Está publicado bajo licencia Apache 2.0 y soporta inglés y chino.
+El modelo se entrena a partir de Qwen3.5-2B, conservando el codificador visual y el backbone de lenguaje, pero sustituyendo la cabeza de salida `lm_head` por una cabeza de clasificacion binaria. Esta version AWQ reduce el peso del repositorio a 2,4 GB, lo que facilita su despliegue en hardware modesto manteniendo el pipeline `image-text-to-text` de transformers.
 
-## Especificaciones técnicas
+Su relevancia actual radica en que permite automatizar el filtrado de resultados OCR en pipelines de digitalizacion documental: los candidatos con puntuacion alta se aceptan automaticamente y el resto se derivan a revision humana, o bien se usa para seleccionar el mejor resultado entre varios motores OCR (best-of-N). Con solo 2B parametros, alcanza un AUROC de decision de 93,6 en JevOCRBench, superando a modelos mucho mayores como JEV-35B-A3B (90,1).
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Multimodal basado en Qwen3.5-2B (encoder de visión + backbone de lenguaje) con `lm_head` sustituida por una cabeza de clasificación binaria |
-| Parámetros totales | 2.213.245.760 (≈2,21 B) |
-| Parametros activos | no disponible (no se indica arquitectura MoE) |
+| Arquitectura | Transformer multimodal (Qwen3.5-2B con cabeza de clasificacion binaria) |
+| Parametros totales | 2.213.245.760 (aproximadamente 2,2B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | AWQ W4A16 (4 bits de pesos, activaciones en FP16), formato compressed-tensors |
-| Idiomas soportados | Inglés, chino |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (cuantizados, compressed-tensors) |
+| Tipos de cuantizacion | AWQ W4A16 (4 bits, compressed-tensors) |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (compressed-tensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se entrena desde Qwen3.5-2B, conservando el encoder de visión y el backbone de lenguaje, y sustituyendo la cabeza de salida del modelo de lenguaje (`lm_head`) por una cabeza de clasificación binaria que aprende si un candidato OCR es correcto. La unidad de evaluación es una región individual (texto, fórmula o tabla) junto con su candidato: la entrada incluye la imagen original recortada del documento y el contenido candidato, que consiste en el texto OCR y una imagen renderizada a partir de ese texto. Esta comparación visual entre original y renderizado permite al modelo detectar discrepancias que un análisis puramente textual pasaría por alto.
+El modelo parte de Qwen3.5-2B y conserva tanto el codificador visual como el backbone de lenguaje. La innovacion principal es la sustitucion de la cabeza de generacion de tokens (`lm_head`) por una cabeza de clasificacion binaria que aprende a discriminar si un candidato OCR es correcto o incorrecto. La unidad de evaluacion es una region de documento (texto, formula o tabla) junto con su resultado OCR candidato; la entrada combina la imagen original del recorte y el contenido candidato (texto OCR y una imagen renderizada a partir de ese texto).
 
-No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO en la información disponible. Como innovación destacable, el modelo puede operar con un servicio con renderizador integrado (API en la nube, imagen Docker o SDK local): en ese caso solo hay que suministrar la imagen original de la región, el texto candidato y la categoría (`text` / `formula` / `table`); sin renderizador, hay que aportar también la imagen renderizada.
+No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El modelo se evalua sobre JevOCRBench, un benchmark propio de OpenBMB para evaluacion de calidad OCR. La version AWQ aplica cuantizacion post-entrenamiento de activaciones y pesos (W4A16) mediante compressed-tensors, sin cambios en la arquitectura.
 
 ## Capacidades
 
-- Evaluación de calidad de resultados OCR sobre regiones de tipo texto, fórmula y tabla, devolviendo una puntuación continua de 0 a 1.
-- Discriminación entre candidatos correctos e incorrectos con AUROC (×100) de 93,6 en JevOCRBench.
-- Cribado automático para reducir revisión humana: las regiones con puntuación superior a un umbral se aceptan automáticamente y el resto pasa a revisión.
-- Selección best-of-N: puntuación de candidatos de varios motores OCR (MiniCPM-OCR 1.0, GLM-OCR, PaddleOCR-VL-1.6, Xiaomi-OCR-0) para elegir el mejor resultado por región.
-- Procesamiento multimodal imagen-texto (pipeline image-text-to-text) con soporte de inglés y chino.
-- No es un modelo de generación de texto general: su salida es una puntuación, no texto libre, por lo que no se anuncian capacidades de código, matemáticas, tool calling ni agentes.
+- Evaluacion de calidad OCR: devuelve una puntuacion de 0 a 1 para un candidato OCR dado, indicando la probabilidad de que sea correcto.
+- Soporte de tres categorias de region: texto, formula y tabla.
+- Entrada multimodal: imagen del recorte original mas texto candidato (y opcionalmente imagen renderizada del candidato).
+- Seleccion best-of-N: permite puntuar multiples candidatos para una misma region y escoger el de mayor puntuacion.
+- Filtrado automatico: umbral configurable para aceptar resultados de forma automatica y derivar el resto a revision humana.
+- Capacidades multilingues limitadas a ingles y chino.
+- No es un modelo generativo: no produce texto libre ni soporta tool calling ni razonamiento multi-paso.
+- No dispone de modo thinking, vision general, audio ni capacidades de agente.
 
 ## Casos de uso
 
-- Cribado automático de resultados OCR en digitalización masiva de documentos: se puntúa cada región parseada y se fija un umbral con muestras de la aplicación propia; los resultados por encima del umbral avanzan sin intervención y el resto va a revisión humana, reduciendo el volumen de revisión manual manteniendo la precisión.
-- Procesamiento de documentos legales: el cribado automático permite aceptar automáticamente un porcentaje alto de regiones en documentos jurídicos, donde los errores de OCR son críticos y la revisión humana es costosa.
-- Verificación de recibos financieros: las regiones de texto y tabla de recibos se puntúan para detectar errores de transcripción antes de alimentar sistemas de contabilidad o auditoría.
-- Ensamblado multi-motor (best-of-N): varios modelos OCR (MiniCPM-OCR 1.0, Xiaomi OCR, PaddleOCR-VL 1.6) parsean las mismas regiones con la misma segmentación de layout; Jev selecciona el candidato de mayor puntuación por región y los resultados se combinan en orden de lectura, mejorando la calidad global del parseo.
-- Documentos complejos con fórmulas y tablas: al evaluar por separado categorías `text`, `formula` y `table`, es adecuado para artículos científicos e informes técnicos donde las fórmulas mal reconocidas son frecuentes.
-- Control de calidad en pipelines de OCR en producción: integrado tras cualquier motor OCR como filtro de confianza barato (2B parámetros, 2,4 GB en AWQ), con métricas medibles (AUROC ≈ 92–93) para calibrar el umbral según el compromiso entre precisión aceptada y tasa de revisión.
+- Digitalizacion masiva de documentos legales: puntuar cada region parseada y aceptar automaticamente las que superen un umbral, reduciendo la carga de revision humana en funcion del nivel de precision exigido.
+- Procesamiento de recibos y facturas financieras: evaluar la calidad de la extraccion de campos en recibos complejos y derivar a revision solo los casos dudosos, mejorando el ratio de aceptacion sin supervision.
+- Seleccion del mejor motor OCR en produccion: ejecutar varios motores (MiniCPM-OCR 1.0, GLM-OCR, PaddleOCR-VL, Xiaomi-OCR) sobre la misma segmentacion y usar Jev para escoger el candidato con mayor puntuacion por region.
+- Control de calidad en pipelines de extraccion de formulas cientificas: puntuar la transcripcion de formulas matematicas y detectar errores de renderizado o simbolos mal reconocidos antes de publicar.
+- Extraccion de tablas en informes financieros: evaluar la fidelidad de la reconstruccion de tablas y marcar para revision humana las celdas o regiones con baja confianza.
+- Enrutamiento inteligente en plataformas de gestion documental: integrar el modelo como paso de triaje que decide entre aceptacion automatica, reintento con otro motor o escalado a un operador humano.
+- Monitorizacion de deriva en sistemas OCR existentes: puntuar periodicamente muestras de produccion para detectar degradacion en la calidad de extraccion y disparar alertas.
 
 ## Benchmarks y rendimiento
 
-AUROC (×100) en JevOCRBench (valores más altos = mejor discriminación entre parseos correctos e incorrectos):
+Resultados publicados en la model card sobre JevOCRBench (AUROC x100, mayor es mejor):
 
-| Modelo | AUROC (×100) |
-|---|---|
-| Qwen3.5-397B-A17B | 93,8 |
+| Modelo | AUROC (x100) |
+|---|---:|
 | MiniCPM-OCR Jev (2B) | 93,6 |
 | JEV-35B-A3B | 90,1 |
+| Qwen3.5-397B-A17B | 93,8 |
 
-Discriminación sobre parseos de distintos modelos OCR (200 muestras aleatorias de JevOCRBench, candidatos etiquetados a mano):
+Discriminacion por motor OCR evaluado (misma muestra de 200 ejemplos, AUROC x100):
 
-| OCR model | MiniCPM-OCR 1.0 | GLM-OCR | PaddleOCR-VL-1.6 | Xiaomi-OCR-0 |
-|---|---|---|---|---|
-| AUROC (×100) | 92,7 | 91,9 | 93,4 | 93,1 |
+| Motor OCR | AUROC (x100) |
+|---|---:|
+| MiniCPM-OCR 1.0 | 92,7 |
+| GLM-OCR | 91,9 |
+| PaddleOCR-VL-1.6 | 93,4 |
+| Xiaomi-OCR-0 | 93,1 |
 
-La brecha máxima entre los cuatro motores es de 1,5 puntos, lo que indica una generalización estable fuera del motor OCR de la misma familia.
+La diferencia maxima entre motores es de 1,5 puntos, lo que indica una generalizacion estable. No se han publicado en la informacion disponible resultados de benchmarks estandar como MMLU, HumanEval o GSM8K, ya que el modelo no es generativo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con pesos AWQ W4A16 el repositorio ocupa 2,4 GB, por lo que la inferencia debería ser viable con menos de 6 GB de VRAM considerando activaciones y el encoder de visión (estimación orientativa, no dato oficial).
-- GPU recomendadas: no disponible oficialmente; dada la huella de memoria, cualquier GPU moderna de consumo (RTX 3060, RTX 4060 o superior) debería ser suficiente.
-- Cabe en GPU de consumo: sí, con alta probabilidad, dado el tamaño de 2,4 GB en 4 bits; no hay lista oficial de GPUs compatibles.
-- Opciones de despliegue: API en la nube de OpenBMB, imagen Docker, SDK de servicio local (con renderizador integrado o externo). El formato compressed-tensors indica compatibilidad con vLLM; se documentan guías de despliegue en el repositorio GitHub de MiniCPM-OCR.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 1,5-2,5 GB con pesos AWQ de 4 bits (el repositorio pesa 2,4 GB), mas overhead de activaciones y del codificador visual.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (RTX 3050, RTX 4060, RTX 4090); tambien A100 y H100 para despliegues de alto throughput.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU moderna con al menos 4 GB de VRAM.
+- Opciones de despliegue: transformers con soporte de compressed-tensors, vLLM (si soporta la arquitectura qwen3_5 y AWQ), servicio Docker/SDK de OpenBMB y API en la nube.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tarea | AUROC JevOCRBench (×100) | Licencia |
-|---|---|---|---|---|
-| MiniCPM-OCR Jev (este modelo, AWQ) | 2,21 B | Evaluación de calidad OCR | 93,6 | Apache 2.0 |
-| JEV-35B-A3B | 35 B (A3B) | Evaluación de calidad OCR | 90,1 | no disponible |
-| Qwen3.5-397B-A17B | 397 B (A17B) | Evaluación de calidad OCR | 93,8 | no disponible |
+| Modelo | Parametros | Tipo | AUROC (x100) | Licencia | Disponibilidad |
+|---|---|---:|---|---|---|
+| MiniCPM-OCR-Jev-AWQ | 2,2B | Evaluador OCR (clasificacion) | 93,6 | Apache 2.0 | Hugging Face |
+| JEV-35B-A3B | 35B (3B activos, MoE) | Evaluador OCR | 90,1 | no disponible | no disponible |
+| Qwen3.5-397B-A17B | 397B (17B activos, MoE) | Modelo generalista | 93,8 | no disponible | no disponible |
 
-MiniCPM-OCR Jev ofrece un rendimiento cercano al modelo de 397B con menos del 0,6 % de sus parámetros, y supera a la variante de 35B, lo que lo posiciona como la opción más eficiente de su categoría. No hay datos comparativos de latencia o coste por inferencia en la información disponible.
+La comparativa se limita a los datos publicados en la model card. MiniCPM-OCR-Jev-AWQ ofrece un rendimiento casi identico al modelo generalista mas grande (93,6 frente a 93,8) con dos ordenes de magnitud menos de parametros, y supera al evaluador especializado JEV-35B-A3B.
 
 ## Limitaciones y advertencias
 
-- No genera texto ni corrige errores: se limita a puntuar candidatos existentes, por lo que la calidad final está acotada por la cobertura y corrección de los candidatos que reciba.
-- Los candidatos de la misma región deben compartir el recorte y los límites de contenido para que la selección best-of-N sea válida.
-- El umbral de aceptación automática debe calibrarse con muestras de la aplicación propia: un umbral más alto reduce la tasa de aprobación automática, y hay que monitorizar simultáneamente la precisión de lo aceptado y el volumen de revisión humana.
-- Soporte lingüístico limitado a inglés y chino; el rendimiento sobre documentos en otros idiomas no está documentado.
-- No se dispone de información sobre sesgos conocidos, tasas de alucinación (aplicable en parte al no generar texto) ni longitud de contexto.
-- La variante AWQ requiere un runtime compatible con cuantización compressed-tensors (por ejemplo vLLM); no es directamente ejecutable con llama.cpp o GGUF.
-- La licencia Apache 2.0 no impone restricciones al uso comercial.
+- Solo soporta ingles y chino; otros idiomas no estan cubiertos oficialmente.
+- No es un modelo generativo: no puede transcribir texto, solo puntuar candidatos existentes.
+- La calidad de la seleccion best-of-N esta acotada por la cobertura y correccion de los candidatos disponibles; no puede mejorar un resultado que ningun motor haya producido correctamente.
+- Los candidatos para una misma region deben compartir el recorte y los limites de contenido para que la comparacion sea valida.
+- La eleccion del umbral afecta al equilibrio entre aceptacion automatica y volumen de revision humana; requiere calibracion con muestras de la aplicacion concreta.
+- Riesgo de alucinacion no aplica en el sentido generativo, pero puede haber falsos positivos en la clasificacion de candidatos correctos.
+- No se dispone de informacion sobre sesgos especificos del modelo.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-2B.
+- La version AWQ puede presentar pequenas diferencias de precision frente a los pesos BF16 originales.
 
 ## Enlaces
 
-- Modelo cuantizado (esta ficha): https://huggingface.co/openbmb/MiniCPM-OCR-Jev-AWQ
-- Modelo original BF16: https://huggingface.co/openbmb/MiniCPM-OCR-Jev
-- Dataset de evaluación JevOCRBench: https://huggingface.co/datasets/openbmb/JevOCRBench
-- GitHub MiniCPM-OCR: https://github.com/OpenBMB/MiniCPM-OCR
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-Jev-AWQ
+- Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-OCR-Jev
+- Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-OCR
 - Tutorial de uso: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_tutorial_en.md
-- Guía de API en la nube: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_api_en.md
-- Organización OpenBMB en Hugging Face: https://huggingface.co/openbmb
+- Documentacion de API: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_api_en.md
+- Dataset de evaluacion JevOCRBench: https://huggingface.co/datasets/openbmb/JevOCRBench

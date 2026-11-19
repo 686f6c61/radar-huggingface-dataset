@@ -2,85 +2,94 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-27B-Uncensored-FP8` es una variante modificada y cuantizada del modelo base Qwen/Qwen3.8-27B, desarrollado por el usuario de Hugging Face `orcarouter`. Se trata de un modelo de visión-lenguaje (image-text-to-text) de arquitectura densa que incorpora capacidades de razonamiento, function calling y control de pensamiento flexible. La versión "uncensored" implica un proceso de abliteration, es decir, la eliminación de los mecanismos de rechazo del modelo original, lo que lo hace especialmente interesante para tareas de red-teaming y evaluación de seguridad.
+Qwen3.8-27B-Uncensored-FP8 es una compilación abliterada (dirección de rechazo eliminada) y cuantizada a block-FP8 del modelo denso Qwen3.8-27B de Qwen (Alibaba), publicada por orcarouter. Se trata de un modelo nativo visión-lenguaje de 27.781.427.952 parámetros (aproximadamente 27,8 B) con atención híbrida (Gated DeltaNet lineal combinada con atención completa), control flexible de razonamiento, soporte de tool calling y una cabeza de decodificación especulativa MTP. El contexto declarado alcanza los 262K tokens.
 
-La cuantización en FP8 (block-FP8) reduce el tamaño del modelo a 30,9 GB, manteniendo un contexto de 256K tokens según la documentación de Unsloth. El modelo está pensado para despliegue eficiente en GPUs modernas como H200, RTX PRO 6000 o RTX 5090, y es compatible con motores de inferencia como vLLM y SGLang. Su licencia Apache 2.0 permite uso comercial, aunque el acceso está restringido en Hugging Face y requiere aceptación de condiciones.
+El interés técnico de esta build es doble. Por un lado, elimina la dirección de rechazo del flujo residual mediante abliteración, de modo que el modelo deja de negarse a peticiones que el original rechazaría. Por otro, se recuantiza siguiendo el esquema FP8 exacto del checkpoint oficial Qwen/Qwen3.8-27B-FP8, lo que permite servirlo con la misma ruta de kernels de vLLM y conservar contexto, herramientas, razonamiento y MTP. El repositorio ocupa 30,9 GB y acumula más de 54.000 descargas y 1.900 likes.
 
-La relevancia de este modelo radica en su doble vertiente: por un lado, ofrece las capacidades multimodales y de razonamiento del Qwen3.8-27B en un formato FP8 optimizado; por otro, al eliminar las restricciones de contenido, se convierte en una herramienta valiosa para investigadores que estudian los límites de los modelos de lenguaje y desarrollan técnicas de alineación más robustas.
+Es relevante ahora porque combina tres tendencias del ecosistema abierto: builds de investigación sin alineación de seguridad para interpretabilidad y red teaming, cuantización FP8 con bloques para despliegue eficiente en vLLM, y modelos densos multimodales de tamaño medio con contexto muy largo. El acceso está restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Dense hybrid GDN vision-language model (según documentación de SGLang) |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 256K tokens (según Unsloth) |
-| Tipos de cuantizacion | FP8 (block-FP8) |
-| Idiomas soportados | Inglés, chino |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (FP8) |
+| Arquitectura | Transformer denso con atención híbrida: Gated DeltaNet (atención lineal) + atención completa; cabeza MTP de decodificación especulativa |
+| Parámetros totales | 27.781.427.952 (≈27,8 B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 262K tokens |
+| Tipos de cuantización | Block-FP8 E4M3 (esquema idéntico al de Qwen/Qwen3.8-27B-FP8); no se documentan otras variantes en esta build |
+| Idiomas soportados | Inglés (en) y chino (zh) |
+| Licencia | Apache 2.0 (heredada del modelo base) |
+| Formato de pesos | safetensors (librería transformers; compatible con vLLM) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un modelo denso híbrido que combina atención estándar con mecanismos de visión, diseñado para procesar tanto texto como imágenes y vídeos. Según la documentación de SGLang, se describe como "dense hybrid GDN vision-language model", aunque no se especifican los detalles exactos de la arquitectura interna (número de capas, dimensiones, etc.). La variante FP8 ha sido cuantizada con block-FP8, un esquema que agrupa los pesos en bloques para reducir la pérdida de precisión.
+El modelo base es un transformer denso de aproximadamente 27,8 B de parámetros que sustituye parte de las capas de atención por Gated DeltaNet, un mecanismo de atención lineal con estado recurrente con compuertas, manteniendo capas de atención completa. Esta hibridación reduce el coste de memoria y cómputo en contextos largos (hasta 262K tokens) frente a un transformer de atención completa puro. Incluye además una cabeza MTP (multi-token prediction) que actúa como decodificador especulativo, acelerando la generación al proponer varios tokens por paso y verificarlos en paralelo. El pipeline declarado es image-text-to-text, es decir, el modelo procesa imágenes y texto de forma nativa.
 
-El proceso de abliteration aplicado sobre el modelo base elimina los "refusals" (negativas a responder) mediante la modificación de los pesos, de modo que el modelo responde a cualquier consulta sin filtros de seguridad. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens procesados ni si se utilizaron técnicas como RLHF o DPO en el modelo base. La cuantización FP8 y la abliteration son modificaciones posteriores que no requieren reentrenamiento, sino ajuste de pesos.
+Sobre el entrenamiento del modelo base no se proporciona información en la documentación disponible: no se detallan el volumen de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. Respecto a esta build concreta, la innovación documentada es el proceso de abliteración (ortogonalización de la dirección de rechazo en el flujo residual) seguido de una recuantización a block-FP8 E4M3 que replica el esquema del checkpoint FP8 oficial, con el objetivo de mantener la misma ruta de kernels en vLLM y preservar las capacidades de herramientas, razonamiento y decodificación especulativa.
 
 ## Capacidades
 
-- Procesamiento multimodal: entiende imágenes y vídeos además de texto, lo que permite tareas de visión-lenguaje como descripción de imágenes, respuesta a preguntas visuales o razonamiento sobre contenido multimedia.
-- Razonamiento multi-paso: el modelo está diseñado para llevar a cabo tareas complejas que requieren varios pasos de razonamiento, con control flexible sobre el "modo pensamiento" (thinking mode).
-- Function calling: soporta invocación de herramientas externas, lo que lo hace apto para integraciones en agentes y pipelines automatizados.
-- Conversacional: capacidad de mantener diálogos multi-turno con contexto largo gracias a su ventana de 256K tokens.
-- Multilingüe: soporte para inglés y chino, con posible degradación en otros idiomas.
-- Sin restricciones de contenido: debido a la abliteration, no rechaza peticiones sobre temas sensibles, violencia, contenido ilegal, etc. Esto es una capacidad técnica, no una recomendación de uso.
+- Generación de texto y razonamiento con modo de pensamiento (thinking) controlable de forma flexible.
+- Comprensión de imágenes y texto (image-text-to-text): descripción, extracción de información y razonamiento sobre contenido visual.
+- Generación de código y matemáticas, con soporte de razonamiento multi-paso.
+- Tool calling / function calling para integración en pipelines y agentes.
+- Decodificación especulativa MTP, que acelera la inferencia en despliegues compatibles con vLLM.
+- Multilingüe limitado a inglés y chino según la model card.
+- Capacidad de cumplir peticiones que el modelo base rechazaría, como consecuencia directa de la abliteración.
+- Contexto largo de 262K tokens para conversaciones y documentos extensos.
 
 ## Casos de uso
 
-- Red-teaming y auditoría de seguridad: el modelo puede usarse para generar respuestas sin filtros que permitan identificar vulnerabilidades en sistemas de moderación o en otros modelos. Los equipos de seguridad pueden emplearlo para probar la robustez de sus propios filtros de contenido.
-- Investigación en alineación de IA: al eliminar los rechazos, los investigadores pueden estudiar qué comportamientos emergen cuando un modelo no tiene restricciones, y así diseñar mejores técnicas de alineación y control.
-- Evaluación de sesgos y toxicidad: útil para generar contenido extremo o controvertido de forma controlada, con el fin de medir métricas de toxicidad o sesgo en datasets de prueba.
-- Prototipado de agentes multimodales: gracias a su capacidad de visión y function calling, puede integrarse en prototipos de asistentes que necesiten interpretar capturas de pantalla, imágenes o vídeos y ejecutar acciones mediante herramientas.
-- Despliegue en entornos con recursos limitados: la cuantización FP8 reduce el uso de VRAM a unos 30 GB, lo que permite ejecutarlo en GPUs de gama alta consumer (RTX 5090) o profesionales (RTX PRO 6000) sin necesidad de hardware de centro de datos.
-- Generación de contenido creativo sin restricciones: para proyectos artísticos o de ficción que requieran explorar temas tabú o controvertidos, siempre que se cumplan las leyes locales y las condiciones de uso.
+- Investigación en interpretabilidad y mecanismos de rechazo: comparar las activaciones y respuestas del modelo abliterado frente al Qwen3.8-27B original para localizar y caracterizar la dirección de rechazo en el flujo residual.
+- Red teaming y evaluación de robustez: generar intentos de jailbreak, prompts adversarios y contenido dañino controlado para entrenar y validar clasificadores de moderación y filtros de seguridad propios.
+- Análisis de documentos largos con imágenes: informes, contratos o expedientes de hasta 262K tokens combinando OCR implícito y razonamiento sobre tablas y figuras, gracias a la ventana de contexto y a la entrada multimodal.
+- Agentes con tool calling en entornos aislados: prototipos de automatización que encadenan llamadas a funciones y razonamiento multi-paso, servidos con vLLM aprovechando la ruta de kernels FP8 y la cabeza MTP.
+- Evaluación de cuantización FP8: medir la degradación de calidad y el throughput de block-FP8 E4M3 frente al checkpoint en BF16 en tareas de razonamiento, código y visión.
+- Generación de datos sintéticos para investigación: producir corpus de texto e imagen-texto sin las restricciones de rechazo del modelo original, siempre en entornos controlados y con revisión posterior.
+- Estudio comparativo de decodificación especulativa: cuantificar la ganancia de latencia de la cabeza MTP con distintos tamaños de lote y longitudes de contexto en vLLM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para la variante `orcarouter/Qwen3.8-27B-Uncensored-FP8` en la información disponible. Los datos de rendimiento del modelo base Qwen3.8-27B (como MMLU, HumanEval o GSM8K) no se han facilitado en las fuentes consultadas, por lo que no es posible ofrecer una tabla comparativa fiable. Se recomienda consultar la documentación oficial de Qwen para obtener métricas del modelo original y asumir que la cuantización FP8 puede introducir una degradación mínima (típicamente inferior al 1% en la mayoría de tareas).
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el tamaño del repositorio es de 30,9 GB, por lo que se necesitan al menos 32 GB de VRAM para cargar el modelo en FP8 sin offloading. Con cuantizaciones adicionales (por ejemplo, GGUF Q4) el requisito baja a unos 17 GB, según Unsloth.
-- GPUs recomendadas: H200 (141 GB), RTX PRO 6000 (48 GB), RTX 5090 (32 GB) y DGX Spark (según documentación de SGLang). También es compatible con GPUs AMD Ryzen AI Max y Radeon según el blog de AMD.
-- Consumo en consumer GPU: cabe en RTX 4090 (24 GB) solo si se aplica una cuantización más agresiva (por ejemplo, 4 bits), pero no en FP8 completo. En RTX 5090 (32 GB) sí es posible cargar el modelo FP8 completo.
-- Opciones de despliegue: vLLM (indicado en los tags), SGLang, Unsloth (con soporte para GGUF y NVFP4), LM Studio (para hardware AMD) y TGI.
-- Latencia y throughput: no disponibles en las fuentes consultadas. Dependerá de la GPU, el batch size y el motor de inferencia utilizado.
+- VRAM estimada para inferencia: con pesos block-FP8 E4M3, el peso del modelo ronda los 28 GB; el repositorio completo ocupa 30,9 GB. Añadiendo caché KV para contexto largo, un despliegue práctico requiere del orden de 40-48 GB de VRAM en configuraciones conservadoras, y más si se busca el contexto máximo de 262K tokens.
+- GPU recomendadas: H100 (80 GB) y A100 (80 GB) para contexto largo y lotes grandes; L40S (48 GB) o A6000 Ada (48 GB) para despliegues con contexto moderado.
+- GPU de consumo: una RTX 4090 (24 GB) no permite cargar los pesos FP8 completos en una sola tarjeta; sería necesario repartir el modelo entre varias GPU o recurrir a cuantizaciones adicionales no documentadas en esta build.
+- Opciones de despliegue: vLLM es la vía prevista, al replicar el esquema FP8 del checkpoint oficial y conservar la ruta de kernels; la librería declarada es transformers. No se documentan integraciones con llama.cpp, Ollama ni TGI para esta build.
+- Latencia y throughput: no disponibles en la información proporcionada. La cabeza MTP está pensada para reducir la latencia de decodificación, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Cuantización | Notas |
-|---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | 27,8B | 256K | Apache 2.0 | BF16, FP8, NVFP4 | Modelo original con filtros de seguridad |
-| orcarouter/Qwen3.8-27B-Uncensored-FP8 | 27,8B | 256K | Apache 2.0 | FP8 | Versión abliterada y cuantizada |
-| Qwen3.8-2.4T-A95B (MoE) | 2,4T total, 95B activos | 256K | Apache 2.0 | BF16, FP8 | Versión MoE de mayor tamaño, no comparable en recursos |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Acceso | Notas |
+|---|---|---|---|---|---|---|
+| orcarouter/Qwen3.8-27B-Uncensored-FP8 | ≈27,8 B (denso) | 262K | Imagen-texto | Apache 2.0 | Gated | Abliterado, block-FP8 E4M3, MTP |
+| Qwen/Qwen3.8-27B | ≈27,8 B (denso) | 262K | Imagen-texto | Apache 2.0 | No disponible en la información | Modelo base con alineación de seguridad intacta |
+| Qwen/Qwen3.8-27B-FP8 | ≈27,8 B (denso) | 262K | Imagen-texto | Apache 2.0 | No disponible en la información | Cuantización FP8 oficial; mismo esquema de kernels |
 
-La comparativa directa con otros modelos abliterados (por ejemplo, versiones de Llama-3) no está disponible en la información proporcionada. La principal diferencia frente al modelo base es la eliminación de los rechazos y la cuantización FP8, que reduce el tamaño de 55 GB (BF16) a 30,9 GB.
+No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contenido sin filtrar: al ser "uncensored", el modelo puede generar texto dañino, ilegal, violento, sexualmente explícito o que promueva actividades peligrosas. No debe utilizarse en aplicaciones orientadas al público general sin un sistema de moderación externo robusto.
-- Acceso restringido: el repositorio está marcado como "gated", lo que significa que los usuarios deben solicitar acceso y aceptar condiciones adicionales antes de descargar los pesos.
-- Idiomas limitados: solo se garantiza soporte para inglés y chino. Otros idiomas pueden producir respuestas de menor calidad o alucinaciones.
-- Riesgo de alucinaciones: como todos los modelos de lenguaje, puede inventar información, especialmente en tareas de razonamiento complejo o cuando se le pide generar contenido sobre temas poco representados en sus datos de entrenamiento.
-- Sesgos desconocidos: no se han publicado estudios de sesgo para esta variante concreta. El proceso de abliteration puede amplificar ciertos sesgos presentes en el modelo base.
-- Sin garantías de producción: al ser una modificación comunitaria sin respaldo oficial de Qwen, no hay garantías de estabilidad, corrección o soporte a largo plazo. Se recomienda validar exhaustivamente antes de cualquier uso en producción.
-- Compatibilidad de cuantización: aunque FP8 es ampliamente soportado por vLLM y SGLang, algunos kernels pueden no estar optimizados para todas las GPUs, lo que podría afectar al rendimiento.
+- La alineación de seguridad ha sido sustancialmente eliminada: el modelo cumplirá peticiones dañinas, ilegales u ofensivas que el original rechazaría, y no tiene salvaguardas integradas significativas.
+- Riesgo elevado de usos indebidos: la propia model card restringe su uso a investigación legítima (interpretabilidad, seguridad de IA, red teaming, evaluación de robustez) y desaconseja explícitamente el despliegue a usuarios finales o en producción sin capas propias de moderación.
+- Riesgo de alucinación: no se documentan evaluaciones de fidelidad; como todo modelo generativo, puede producir afirmaciones incorrectas con aparente seguridad, especialmente en contexto largo.
+- Idiomas: solo inglés y chino declarados; el rendimiento en castellano no está garantizado ni evaluado.
+- Licencia: Apache 2.0 permite uso comercial, pero esa permisividad no exime de responsabilidad legal ni de las obligaciones de moderación aplicables al despliegue.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que añade fricción a pipelines automatizados.
+- Sesgos: no se documentan análisis de sesgo; la abliteración puede alterar también comportamientos no relacionados con el rechazo, y no se aportan evaluaciones de regresión de capacidades.
+- Compatibilidad: al fijarse al esquema FP8 del checkpoint oficial, el rendimiento óptimo depende de vLLM; otras rutas de inferencia no están documentadas y podrían no soportar la arquitectura híbrida o la cabeza MTP.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
-- Documentación de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
-- Guía de despliegue con SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B
-- Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
-- Dataset de referencia en Kaggle: https://www.kaggle.com/datasets/saltb0x/qwen3-8-27b-fp8
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Cuantización FP8 oficial del base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Sitio web de OrcaRouter: https://www.orcarouter.ai
+- Catálogo de modelos: https://www.orcarouter.ai/models
+- Ficha del modelo en OrcaRouter: https://www.orcarouter.ai/models/qwen/qwen3.8-27b
+- GitHub de la organización: https://github.com/Continuum-AI-Corp
+- Discord: https://discord.gg/yAh6Tex6kx
+- X (Twitter): https://x.com/OrcaRouter
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -23,9 +23,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 22,
+  "likes": 21,
   "downloads_30d": 5951,
-  "trending_score": 21,
+  "trending_score": 20,
   "parameters": 593722994688,
   "parameters_human": "593.72B",
   "storage_bytes": 4725700499661,
@@ -66,9 +66,9 @@
       "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Unsloth Dynamic 2.0 Quants - a unsloth Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/unsloth/unsloth-dynamic-20-quants",
-      "snippet": "unsloth/Muse-Glimmer-30B-GGUF ... unsloth/MiniMax-H3-GGUF ... unsloth/DeepSeek-V4-Flash-0731-GGUF ... unsloth/Qwen3.8 …"
+      "title": "Unsloth Docs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs",
+      "snippet": "🦥 Unsloth Docs Unsloth is an open-source framework for running and training LLMs. Unsloth lets you run and train AI models on your …"
     }
   ]
 }

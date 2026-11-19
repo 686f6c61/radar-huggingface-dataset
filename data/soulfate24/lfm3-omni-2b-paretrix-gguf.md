@@ -2,61 +2,62 @@
 
 ## Resumen
 
-LFM3-Omni-2B-Paretrix-GGUF es una cuantización GGUF del modelo multimodal LiquidAI/LFM3-Omni-2B, publicada por el usuario Soulfate24 bajo el paraguas de su suite Paretrix. El modelo base es un transformer "any-to-any" de Liquid AI que procesa texto, audio e imagen, orientado a despliegue en el borde (edge) y a conversación speech-to-speech. Esta variante no altera la arquitectura: su valor está en el esquema de cuantización híbrida, que asigna tipos distintos a cada clase de tensor según mediciones empíricas de perplejidad y divergencia KL frente a los logits en BF16.
+LFM3-Omni-2B-Paretrix-GGUF es una cuantización GGUF del modelo multimodal LiquidAI/LFM3-Omni-2B, publicada por el usuario Soulfate24 bajo el paraguas de su suite de cuantización Paretrix. El modelo base es un modelo "any-to-any" de Liquid AI que procesa y genera texto, audio e imagen (visión y speech-to-speech), orientado a despliegue en el edge y conversación en tiempo real. Esta versión concreta no es un modelo nuevo: es un conjunto de pesos cuantizados en formato GGUF para su uso con llama.cpp y herramientas compatibles, con múltiples niveles de compromiso entre tamaño y fidelidad.
 
-El modelo base declara 1.728.801.600 parámetros reales en safetensors y un pipeline `any-to-any` con soporte para 23 idiomas. La ficha del repositorio cuantizado no documenta la longitud de contexto ni los detalles del entrenamiento original, por lo que esos datos se marcan como no disponibles. El interés actual de esta publicación es práctico: ofrece doce "escalones" de cuantización con métricas de degradación publicadas, lo que permite elegir un compromiso tamaño/calidad con evidencia medida en lugar de estimaciones.
+El interés de esta ficha está en la cuantización: Paretrix aplica una estrategia de asignación de bits por clase de tensor guiada por mediciones empíricas (perplejidad, divergencia KL, RMS de diferencia de probabilidad) en lugar de una cuantización uniforme. El resultado es un conjunto de variantes ("rungs") que van desde 1.594 MiB (Fidelity-48pc) hasta 738 MiB (Femto-21pc), con el objetivo de preservar la calidad del modelo original con menos memoria.
 
-La relevancia para desarrolladores es doble. Por un lado, permite ejecutar un modelo omni de ~1,7B parámetros en hardware modesto mediante llama.cpp. Por otro, el enfoque Paretrix documenta explícitamente el coste de cada recorte (ΔPPL, KLD, RMS Δp, top-p), algo poco habitual en cuantizaciones comunitarias.
+El modelo base declara 1.728.801.600 parámetros (aproximadamente 1,73 mil millones) y soporta 23 idiomas, incluido el castellano. La licencia es lfm1.0 (marcada como "other" en Hugging Face), lo que impone restricciones que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal any-to-any (texto, audio, vision); detalles internos no disponibles |
-| Parametros totales | 1.728.801.600 (dato real en safetensors del modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q8_0, Q6_K, Q5_K_M, IQ4_XS, IQ3_M y variantes híbridas Paretrix (Fidelity-48pc, Precision-42pc, Quality-36pc, Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc, Femto-21pc) |
+| Arquitectura | No disponible (modelo base LiquidAI/LFM3-Omni-2B; arquitectura "liquid" según tags; transformer multimodal no confirmado) |
+| Parametros totales | 1.728.801.600 (~1,73 B) |
+| Parametros activos | No disponible (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF con múltiples variantes: Fidelity-48pc, Precision-42pc (Q6_K-imx), Quality-36pc, Q5_K_M-imx, Compact-33pc, Mini-30pc, IQ4_XS-imx, Nano-27pc, Pico-24pc, IQ3_M-imx, Femto-21pc |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (23 idiomas) |
-| Licencia | lfm1.0 (license: other) |
-| Formato de pesos | GGUF (repo de 9,6 GB); el modelo base en safetensors |
+| Licencia | lfm1.0 (etiquetada como "other") |
+| Formato de pesos | GGUF (repositorio de 9,6 GB; el modelo base se distribuye en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-Omni-2B es un transformer de Liquid AI con pipeline `any-to-any`, lo que implica entradas y salidas multimodales (texto, audio e imagen) y capacidades de speech-to-speech. La información disponible no detalla la composición del dataset, el número de tokens de entrenamiento ni si hubo fases de RLHF o DPO. Tampoco se especifica si emplea atención lineal u otras variantes propias de la familia LFM; el tag `custom_code` sugiere implementaciones no estándar en transformers.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la información proporcionada. Los tags indican "liquid", "lfm3", "lfm3-omni", "omni", "audio", "vision" y "speech-to-speech", lo que sugiere un modelo multimodal de la familia LFM3 de Liquid AI con capacidades de entrada y salida en múltiples modalidades. El pipeline declarado es "any-to-any". No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-La innovación de esta publicación concreta es el esquema Paretrix: una cuantización que, en lugar de aplicar un único bitwidth a toda la red, mueve cada clase de tensor de forma aislada a cada tipo disponible y mide el efecto frente a los logits en BF16. A partir de esas celdas, un problema de knapsack exacto planifica cada escalón, y un "duelo" en el régimen de veredicto (contexto 4096×8) decide si el plan sustituye al campeón previo. Se usan tres bases de referencia (Q8_0, Q6_K-imx e IQ4_XS-imx) y matrices de importancia (imatrix). Las mediciones se realizaron con llama.cpp build 12283.
+La innovación técnica relevante en esta ficha es la cuantización Paretrix. Según la model card, el proceso parte de tres bases "stock" (Q8_0, Q6_K-imx, IQ4_XS-imx), mueve cada clase de tensor individualmente a cada tipo de cuantización y mide el efecto frente a los logits en BF16. Con esas mediciones, un problema de mochila exacto planifica cada variante y un "duel" al régimen de veredicto decide si el plan sustituye al campeón. La card afirma que lo medido en un modelo se hereda al siguiente de la misma familia. Los datos de calidad reportados incluyen perplejidad (PPL), divergencia KL, RMS de la diferencia de probabilidad y top-p coincidente.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno.
-- Procesamiento de audio: entrada y salida de voz (speech-to-speech).
-- Procesamiento de imagen (vision), según el pipeline `any-to-any` y los tags del modelo base.
-- Capacidades multilingües en 23 idiomas, incluido el español.
-- Orientación a despliegue en el borde (edge) por su tamaño de ~1,7B parámetros.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la información disponible.
-- Modo "thinking", audio nativo adicional o cualquier capacidad especial: no disponible.
+- Procesamiento any-to-any: el modelo base acepta y genera texto, audio e imagen según los tags (audio, vision, speech-to-speech).
+- Conversación multimodal: orientado a diálogo en tiempo real con entrada de voz y salida de voz.
+- Generación de texto y razonamiento conversacional (capacidad inferida del pipeline any-to-any; no se detallan benchmarks).
+- Capacidades multilingües en 23 idiomas, incluidos castellano, inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, vietnamita, tailandés, indonesio, hindi, ruso, polaco, danés, griego, finés, hebreo, neerlandés, sueco y turco.
+- Despliegue en edge: el tamaño del modelo base (~1,73 B parámetros) y las variantes GGUF de 738–1.594 MiB apuntan a inferencia en dispositivos con recursos limitados.
+- Compatibilidad con llama.cpp y el ecosistema GGUF (según tags y formato).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Modo "thinking", audio o visión especial: no disponible en detalle; los tags confirman audio y visión.
 
 ## Casos de uso
 
-- Asistentes de voz en el dispositivo: el modelo puede gestionar speech-to-speech sin depender de la nube, lo que resulta adecuado para aplicaciones de asistente personal en móvil o hardware embebido con recursos limitados.
-- Transcripción y respuesta hablada en atención al cliente: con entrada de audio y salida de voz, permite construir agentes telefónicos o de mostrador que responden en el idioma del usuario entre los 23 soportados.
-- Descripción de imágenes para accesibilidad: el pipeline any-to-any con visión permite generar descripciones textuales de imágenes en aplicaciones de lectura asistida.
-- Traducción multimodal: al combinar texto, audio e imagen y 23 idiomas, se puede usar para subtitulado o interpretación en escenarios con contenido mixto.
-- Prototipado e investigación en multimodalidad: los doce escalones GGUF con métricas publicadas permiten estudiar el impacto de la cuantización en tareas omni sin entrenar desde cero.
-- Despliegue en hardware de consumo: las variantes Compact-33pc (1120 MiB) y Mini-30pc (1021 MiB) caben en GPUs de gama media y en CPU con llama.cpp, lo que facilita demos y pruebas locales.
-- Filtrado y moderación de contenido multimedia: la combinación de audio, imagen y texto permite clasificar contenido en pipelines de moderación, siempre que se valide el comportamiento en producción.
+- Asistentes de voz en el edge: el modelo base está etiquetado como speech-to-speech y orientado a edge, por lo que puede integrarse en dispositivos locales para conversación por voz sin depender de la nube; las variantes Compact-33pc (1.120 MiB) o Mini-30pc (1.021 MiB) reducen el requisito de memoria.
+- Transcripción y respuesta hablada en atención al cliente: con entrada de audio y salida de texto o voz, permite construir un agente conversacional multilingüe (23 idiomas) para soporte telefónico o por voz.
+- Descripción de imágenes en accesibilidad: la capacidad de visión del modelo base permite generar descripciones textuales de imágenes; las variantes Q8_0 o Fidelity-48pc preservan mejor la fidelidad para tareas sensibles a la precisión.
+- Traducción y asistencia multilingüe: con 23 idiomas declarados, puede emplearse para traducción conversacional o asistencia en idiomas minoritarios europeos (danés, finés, griego, neerlandés, sueco) y no europeos.
+- Prototipado e investigación en cuantización: las variantes Paretrix permiten estudiar el compromiso tamaño-calidad (PPL, KLD, top-p) en un modelo multimodal pequeño; la tabla de la model card ofrece puntos de comparación medidos.
+- Inferencia en dispositivos consumer: con 738–1.594 MiB de pesos, el modelo cabe en GPUs de gama baja y en CPU con llama.cpp, lo que habilita demos locales de modelos multimodales sin GPU de datacenter.
+- Análisis de audio y vídeo en local: combinando audio y visión, puede usarse para resumir o etiquetar contenido multimedia en entornos con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
-La model card publica métricas de cuantización (perplejidad, divergencia KL, RMS Δp y top-p) frente a BF16, no benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.).
+La model card proporciona métricas de calidad de cuantización (no benchmarks de tareas) medidas frente a los logits en BF16:
 
-| Modelo | MiB | PPL | ΔPPL | KLD | RMS Δp | top-p |
+| Variante | MiB | PPL | ΔPPL | KLD | RMS Δp | top-p |
 |---|---:|---:|---:|---:|---:|---:|
 | Q8_0 (stock) | 1761 | 12,8832 | +0,0242 | 0,0011 | 0,85% | 98,2% |
 | Fidelity-48pc | 1594 | 12,8958 | +0,0368 | 0,0016 | 1,02% | 98,0% |
-| Precision-42pc = Q6_K-imx (stock) | 1362 | 12,8545 | −0,0045 | 0,0035 | 1,55% | 96,9% |
+| Precision-42pc (Q6_K-imx) | 1362 | 12,8545† | −0,0045 | 0,0035 | 1,55% | 96,9% |
 | Quality-36pc | 1220 | 12,9202 | +0,0612 | 0,0068 | 2,17% | 95,6% |
 | Q5_K_M-imx (stock) | 1200 | 12,8725 | +0,0135 | 0,0086 | 2,40% | 95,1% |
 | Compact-33pc | 1120 | 12,9212 | +0,0622 | 0,0133 | 3,05% | 94,0% |
@@ -67,40 +68,40 @@ La model card publica métricas de cuantización (perplejidad, divergencia KL, R
 | IQ3_M-imx (stock) | 829 | 13,2256 | +0,3667 | 0,1004 | 8,40% | 84,5% |
 | Femto-21pc | 738 | 14,1806 | +1,3216 | 0,1432 | 10,30% | 81,4% |
 
-No se han publicado resultados de benchmarks de tareas en la información disponible.
+† El valor de PPL de Precision-42pc aparece con un signo negativo en ΔPPL en la model card original; se reproduce tal cual. No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre ~0,75 GB (Femto-21pc, 738 MiB) y ~1,8 GB (Q8_0, 1761 MiB) solo para los pesos; hay que sumar el espacio de contexto y el estado de KV.
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM puede alojar las variantes pequeñas; para Q8_0 o Fidelity-48pc se recomienda 6-8 GB. En el extremo alto, A100/H100 no son necesarias por tamaño, pero sí útiles para servir muchas peticiones concurrentes.
-- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti, RTX 4090 y similares; también en iGPU y CPU para las variantes Compact-33pc e inferiores.
-- Opciones de despliegue: llama.cpp (build 12283 es la referencia de las mediciones) y cualquier runtime compatible con GGUF; el modelo base declara compatibilidad con transformers y `endpoints_compatible`.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 0,8–1,8 GB para los pesos según la variante (de Femto-21pc a Q8_0), más overhead de contexto y del runtime (kv cache, buffers de audio/visión).
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cualquier GPU con ≥2–3 GB de VRAM libre debería ser suficiente para las variantes pequeñas, y ≥3–4 GB para Q8_0.
+- Cabe en GPU consumer: sí, con alta probabilidad, dado el tamaño de los pesos; modelos como GTX 1660, RTX 3050/3060 o superiores deberían acomodar las variantes de mayor tamaño con contexto moderado.
+- Opciones de despliegue: llama.cpp y ecosistema GGUF (según tags); también se etiqueta como compatible con endpoints y transformers en Hugging Face, aunque el formato principal es GGUF.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Formato |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-Paretrix-GGUF (esta ficha) | ~1,73B | no disponible | texto, audio, vision | lfm1.0 | GGUF |
-| LiquidAI/LFM3-Omni-2B (base) | ~1,73B | no disponible | texto, audio, vision | lfm1.0 | safetensors |
-| Alternativas omni de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LFM3-Omni-2B-Paretrix-GGUF (esta ficha) | ~1,73 B | No disponible | Texto, audio, visión | lfm1.0 | GGUF |
+| LiquidAI/LFM3-Omni-2B (base) | ~1,73 B | No disponible | Texto, audio, visión | lfm1.0 | Safetensors |
+| Otras cuantizaciones GGUF del mismo base | ~1,73 B | No disponible | Texto, audio, visión | lfm1.0 | GGUF |
 
-No se dispone de datos de benchmarks comparativos con otros modelos omni de tamaño similar en la información proporcionada, por lo que no se puede establecer una comparación de rendimiento fiable.
+No se dispone en la información proporcionada de modelos comparables de otros autores con especificaciones verificables (parámetros, contexto, benchmarks) para establecer una comparación cuantitativa. Los datos de PPL y KLD de la tabla de benchmarks permiten comparar únicamente entre variantes del propio modelo.
 
 ## Limitaciones y advertencias
 
-- La licencia lfm1.0 (`license: other`) impone condiciones específicas; es obligatorio revisar el archivo LICENSE antes de cualquier uso comercial.
-- La model card no documenta sesgos conocidos del modelo base; al ser un modelo multilingüe y multimodal, es esperable un rendimiento desigual entre los 23 idiomas declarados.
-- Riesgo de alucinación: no cuantificado en la información disponible; como en todo modelo generativo, debe validarse en dominios sensibles.
-- Las métricas publicadas (PPL, KLD) miden fidelidad respecto a BF16, no calidad en tareas; un ΔPPL bajo no garantiza buen rendimiento en audio o visión.
-- Las variantes por debajo de ~1000 MiB (Nano-27pc, Pico-24pc, Femto-21pc) muestran degradaciones notables (ΔPPL de +0,31 a +1,32 y top-p del 88,9% al 81,4%), por lo que no se recomiendan para producción sin validación específica.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día; no hay evidencia de uso comunitario ni de validación independiente.
-- El modelo base requiere `custom_code` en transformers; la integración con pipelines estándar puede necesitar pasos adicionales.
-- No se documentan requisitos de memoria para audio o visión, que pueden superar la estimación basada solo en pesos de texto.
+- Sesgos conocidos: no documentados en la información proporcionada; al ser un modelo entrenado con datos web, es probable que herede sesgos, pero no hay evidencia concreta en la ficha.
+- Riesgo de alucinación: no cuantificado; las variantes de menor tamaño (Pico-24pc, Femto-21pc, IQ3_M) muestran un aumento notable de PPL y KLD, lo que puede degradar la fidelidad de las respuestas.
+- Limitaciones de contexto o idioma: la longitud de contexto no está disponible; los 23 idiomas declarados no implican calidad uniforme entre ellos.
+- Restricciones de licencia: la licencia lfm1.0 (etiquetada como "other") puede imponer condiciones al uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de desplegar en producción.
+- Caveat de producción: esta es una cuantización de terceros (Soulfate24), no una publicación oficial de Liquid AI; la calidad y la integridad de los pesos deben validarse en el caso de uso concreto.
+- Las variantes por debajo de ~927 MiB (Nano-27pc, Pico-24pc, IQ3_M, Femto-21pc) presentan incrementos de KLD superiores a 0,04 y top-p por debajo del 90%, lo que supone una pérdida de fidelidad apreciable.
+- No se documentan capacidades de tool calling ni de agentes; no deben asumirse sin validación.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Soulfate24/LFM3-Omni-2B-Paretrix-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Soulfate24/LFM3-Omni-2B-Paretrix-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Suite de cuantización Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Licencia lfm1.0: enlace LICENSE dentro del repositorio (no se proporciona URL absoluta en la información disponible)
+- Papers, blogs o demos adicionales: no disponible en la información proporcionada.

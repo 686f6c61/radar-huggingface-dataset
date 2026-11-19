@@ -2,80 +2,93 @@
 
 ## Resumen
 
-Nova-1.1-0.8B es un modelo de lenguaje de pequeño tamaño desarrollado por HyperAiCorp, orientado a tareas de asistente, uso de herramientas y agentes. El repositorio que nos ocupa contiene la versión cuantizada en formato GGUF con datos de importancia (imatrix) realizada por mradermacher, con una colección amplia de tipos de cuantización. Según los metadatos, el modelo está ajustado para instrucciones (instruction-tuning), soporta tool calling y function calling, y los idiomas declarados son inglés y ruso. A pesar de denominarse 0.8B, el conteo de parámetros totales en safetensors es de 1.006.672.704 (~1.0B). La model card de la cuantización indica que es un modelo de visión, aunque los archivos de proyección multimodal se alojan en un repositorio estático separado. Se distribuye bajo licencia Apache 2.0. No se han publicado detalles técnicos de la arquitectura ni resultados de benchmarks en la información proporcionada.
+Nova-1.1-0.8B-i1-GGUF es la distribucion en formato GGUF, con cuantizaciones ponderadas mediante imatrix, del modelo Nova-1.1-0.8B desarrollado por HardcoreAI. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de versiones GGUF de modelos abiertos. El modelo base es un transformer denso de aproximadamente 1.006 millones de parametros (1,0 B), orientado a tareas de asistente, uso de herramientas (tool-use) y function calling, con instrucciones afinadas y etiquetas que lo vinculan a la familia Qwen3.5.
 
-## Especificaciones técnicas
+La relevancia de esta ficha radica en que ofrece un modelo de menos de 1 B de parametros con licencia Apache 2.0, lo que permite desplegarlo en hardware muy modesto (incluso CPU o GPUs de gama baja) para flujos de agentes y llamadas a funciones. El repositorio incluye un abanico amplio de cuantizaciones que van desde IQ1_S (0,5 GB) hasta Q6_K (0,9 GB), lo que facilita ajustar el equilibrio entre calidad y huella de memoria.
 
-| Parámetro | Valor |
+No obstante, la model card del cuantizador es escasa en detalles tecnicos: no documenta longitud de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja unicamente los datos disponibles y marca explicitamente como "no disponible" todo aquello que no consta en la informacion proporcionada.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (los metadatos sugieren relación con la familia Qwen3.5, sin confirmación oficial) |
-| Parámetros totales | 1.006.672.704 |
-| Parámetros activos | No aplicable (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
-| Idiomas soportados | Inglés, ruso |
+| Arquitectura | Transformer denso (etiquetado como qwen3.5 en los tags; detalles no disponibles) |
+| Parametros totales | 1.006.672.704 (~1,0 B) |
+| Parametros activos | no disponible (no es un modelo MoE segun los datos) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
+| Idiomas soportados | ingles (en), ruso (ru) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con matriz de importancia); el modelo base también está disponible en safetensors |
+| Formato de pesos | GGUF (cuantizaciones i1); el modelo base en safetensors esta en HardcoreAI/Nova-1.1-0.8B |
+| Tamano del repositorio | 13,9 GB (conjunto de todas las cuantizaciones) |
+| Vision | La model card menciona que es un modelo de vision y que los ficheros mmproj, si existen, estarian en el repositorio estatico; no se confirma su presencia |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura ni el proceso de entrenamiento de Nova-1.1-0.8B. Los metadatos de Hugging Face incluyen la etiqueta `qwen3.5`, lo que sugiere una posible derivación de la arquitectura de la serie Qwen, pero no existe confirmación oficial ni documentación técnica que lo respalde. Tampoco se dispone de datos sobre el conjunto de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF, DPO u otros algoritmos de alineación. La única información disponible es que se trata de un modelo ajustado para instrucciones, con capacidades de agente y tool use según sus etiquetas.
+El modelo base es un transformer denso de aproximadamente 1,0 B de parametros. Los tags del repositorio lo asocian a la familia qwen3.5 y a HyperAI, lo que sugiere una arquitectura derivada de la linea Qwen, aunque la model card no detalla el numero de capas, dimensiones ocultas ni el mecanismo de atencion empleado. Tampoco se especifica si incorpora innovaciones como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
+
+En cuanto al entrenamiento, la informacion disponible solo indica instruction-tuning y un enfoque orientado a asistente, tool-use y function calling. No consta el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. El proceso de cuantizacion realizado por mradermacher emplea pesos ponderados con imatrix (importancia de matriz) para mejorar la calidad de las cuantizaciones de baja precision, y ofrece tanto cuantizaciones estaticas (en el repositorio Nova-1.1-0.8B-GGUF) como dinamicas i1 en este repositorio.
 
 ## Capacidades
 
-- Generación de texto como asistente conversacional: el modelo está afinado para seguir instrucciones y mantener diálogos.
-- Tool use y function calling: los metadatos indican soporte explícito para llamadas a funciones, lo que permite integrarlo en flujos de agente.
-- Capacidades de agente: diseñado para tareas de razonamiento multi-paso y uso de herramientas en entornos locales.
-- Visión: la model card de la cuantización señala que es un modelo de visión; para utilizarlo en ese modo es necesario cargar los archivos mmproj disponibles en el repositorio estático.
-- Idiomas: inglés y ruso declarados como lenguajes soportados.
-- No se especifican capacidades destacadas para generación de código, matemáticas avanzadas ni otras tareas especializadas.
+- Generacion de texto conversacional en ingles y ruso.
+- Uso de herramientas y function calling: el modelo esta etiquetado explicitamente para tool-use y function-calling, lo que permite invocar APIs externas mediante esquemas estructurados.
+- Orientacion a agentes: los tags incluyen "agent", lo que sugiere soporte para flujos multi-paso, aunque no se documenta el formato exacto de llamada ni el protocolo de herramientas.
+- Instruccion-tuning: responde a instrucciones en formato de asistente.
+- Posible capacidad de vision: la model card del cuantizador indica que es un modelo de vision y remite a los ficheros mmproj del repositorio estatico, pero no se confirma que dichos ficheros existan ni su contenido.
+- Capacidades multilingues limitadas a ingles y ruso; no se declara soporte de castellano.
+- No se documentan capacidades de razonamiento extendido (thinking mode), audio ni matemáticas avanzadas.
 
 ## Casos de uso
 
-- Asistentes conversacionales ligeros: ideal para chatbots de propósito general en inglés o ruso que deban ejecutarse en CPUs o GPUs de baja potencia. Su tamaño de ~1.0B permite una ejecución fluida en equipos de consumo.
-- Agentes con llamada a funciones: al incorporar tool calling, puede utilizarse como núcleo de un agente que consulte APIs, bases de datos o ejecute acciones simples en un entorno de pruebas, por ejemplo mediante llama.cpp u Ollama.
-- Prototipado de vision ligera: si se cargan los proyectores multimodales (mmproj) del repositorio estático, el modelo puede procesar imágenes. Aunque su tamaño limita la calidad, es útil para prototipos de clasificación o descripción de imágenes en local.
-- Automatización de flujos de trabajo con herramientas externas: mediante function calling se puede integrar en scripts que parseen entradas y ejecuten comandos o llamadas REST, por ejemplo en pipelines de datos ligeros.
-- Procesamiento de texto bilingüe: para aplicaciones que manejen documentación o soporte en inglés y ruso, el modelo cubre ambos idiomas sin necesidad de cambiar de modelo.
-- Educación y experimentación: su licencia Apache 2.0 y su tamaño reducido lo hacen adecuado para investigar técnicas de cuantización, comparar métodos de matriz de importancia o probar conceptos de agentes sin requerir GPUs grandes.
+- Agentes de automatizacion de tareas: el modelo puede emplearse como planificador ligero que decide que funcion invocar en cada paso de un flujo multi-paso, gracias a su soporte de function calling y a su reducida huella de memoria, que permite ejecutarlo en el mismo host que el orquestador.
+- Enrutamiento de intenciones en asistentes conversacionales: con 1,0 B de parametros y cuantizaciones de 0,5-0,9 GB, puede clasificar la intencion del usuario y derivar la peticion a un modelo mayor o a una API, reduciendo costes en produccion.
+- Extraccion estructurada de datos: el modelo puede convertir texto libre en JSON con campos definidos mediante tool calling, util para pipelines de ingestion de documentos en ingles o ruso.
+- Chatbot de soporte en ruso e ingles: al ser bilingue declarado, es adecuado para atencion al cliente en mercados de habla rusa o inglesa, siempre que el contexto requerido quepa en la ventana no documentada del modelo.
+- Prototipado en hardware de consumo: al caber en cuantizaciones Q4_K_M de 0,8 GB, permite validar flujos de agente en portatiles o mini-PC sin GPU dedicada antes de escalar a modelos mayores.
+- Ejecucion en el borde (edge) o en entornos con memoria limitada: su tamano permite desplegarlo en contenedores con poca RAM o en dispositivos con aceleracion NPU, para tareas de clasificacion, resumen corto o generacion de respuestas breves.
+- Generacion de borradores en pipelines de CI/CD: puede redactar mensajes de commit, descripciones de pull requests o resumentes de errores en ingles, integrándose como paso previo a la revision humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos verificados de MMLU, HumanEval, GSM8K ni de otras evaluaciones que permitan comparar objetivamente su rendimiento con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para FP16, el modelo ocupa aproximadamente 2.0 GB solo en pesos; sumando activaciones y caché KV, se recomienda al menos 4 GB de VRAM para una inferencia cómoda.
-- Con cuantización Q4_K_M (archivo de 0.8 GB), la VRAM necesaria ronda los 1.5-2 GB para contextos cortos, pudiendo ejecutarse en GPUs con 2 GB de VRAM.
-- Con cuantizaciones más agresivas (IQ1, IQ2), el modelo cabe en menos de 1 GB de VRAM, aunque con mayor pérdida de calidad.
-- GPUs recomendadas: cualquier tarjeta con 4 GB de VRAM (GTX 1650, RTX 3050) para FP16, o 2 GB para quants Q4/Q5. También puede ejecutarse en CPU con 8-12 GB de RAM usando llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp (por ser formato GGUF). El modelo base en safetensors se puede utilizar con Transformers, pero el repositorio actual está orientado a GGUF.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 0,5-0,9 GB para las cuantizaciones IQ1_S a Q6_K, mas el overhead del runtime (KV cache y contexto). Con contexto corto, cabe en menos de 1,5 GB de memoria total.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tarjetas como RTX 3050, RTX 4060, GTX 1660 o superiores son suficientes. En entornos de servidor, A100 o H100 no son necesarias y estarian infrautilizadas.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna, e incluso en iGPU con memoria unificada.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI requieren los pesos en safetensors del modelo base, no las cuantizaciones GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano, se espera una latencia baja en GPU de consumo, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Contexto | Licencia | Idiomas |
-|---|---|---|---|---|
-| Nova-1.1-0.8B (GGUF) | 1.006.672.704 | No disponible | Apache 2.0 | Inglés, ruso |
-| Qwen2.5-0.5B | ~0.49B | 32K | Apache 2.0 | Multilingüe (inglés, chino, etc.) |
-| Llama-3.2-1B | ~1.24B | 128K | Llama 3.2 Community License | Inglés, español, francés, alemán, etc. |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Nova-1.1-0.8B (este) | ~1,0 B | no disponible | en, ru | Apache 2.0 | GGUF, safetensors |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens (segun documentacion publica de Qwen) | multilingue | Apache 2.0 | safetensors, GGUF |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica de Qwen) | multilingue | Apache 2.0 | safetensors, GGUF |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (segun documentacion publica de Meta) | multilingue | Llama 3.2 Community License | safetensors, GGUF |
 
-Los datos de los modelos comparados proceden de información pública y deben verificarse en sus fichas oficiales para confirmar los valores exactos. No se dispone de resultados de benchmarks de Nova-1.1-0.8B para establecer una comparación numérica fiable.
+La comparativa se limita a parametros, contexto, idiomas y licencia; no se dispone de resultados de benchmarks del modelo Nova que permitan una comparacion de rendimiento. Los datos de contexto de los modelos alternativos provienen de su documentacion publica y no de la informacion proporcionada en esta ficha.
 
 ## Limitaciones y advertencias
 
-- La documentación técnica del modelo original es muy escasa; no se han publicado papers, fichas técnicas ni detalles sobre los datos de entrenamiento.
-- Al ser un modelo de ~1.0B, su capacidad de razonamiento y su coherencia en tareas complejas son limitadas en comparación con modelos mayores.
-- Riesgo de alucinación: como en la mayoría de modelos pequeños, puede generar respuestas plausibles pero incorrectas, especialmente en dominios especializados.
-- Longitud de contexto desconocida: al no estar disponible este dato, no es posible planificar su uso en conversaciones largas o documentos extensos con seguridad.
-- Idiomas limitados: solo inglés y ruso están declarados; no se garantiza un rendimiento aceptable en otros idiomas.
-- Para usar la capacidad de visión es necesario descargar los archivos mmproj desde el repositorio estático y cargarlos explícitamente, lo que añade complejidad al despliegue.
-- La cuantización con imatrix puede introducir pérdida de calidad, especialmente en los tipos más agresivos (IQ1, IQ2). Se recomienda probar los quants Q4_K_M o Q5_K_M como opción equilibrada.
-- Al no existir benchmarks publicados, cualquier afirmación sobre su calidad debe tratarse con precaución y validarse en el caso de uso concreto.
+- Sesgos conocidos: no documentados en la informacion disponible; al ser un modelo bilingue en ingles y ruso, es probable que herede sesgos de sus datos de entrenamiento, pero no se aportan analisis.
+- Riesgo de alucinacion: inherente a los modelos de 1 B de parametros; la capacidad de razonamiento y factualidad es limitada y no se han publicado evaluaciones que la cuantifiquen.
+- Limitaciones de contexto e idioma: la longitud de contexto no esta documentada, lo que impide garantizar conversaciones multi-turno largas. El soporte de castellano no esta declarado; solo ingles y ruso.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion, pero conviene verificar la licencia del modelo base HardcoreAI/Nova-1.1-0.8B, ya que la model card del cuantizador la declara como Apache 2.0 sin mas detalle.
+- Caveat de vision: la model card menciona que es un modelo de vision, pero no confirma la presencia de ficheros mmproj en el repositorio estatico; no debe asumirse capacidad multimodal sin verificacion.
+- Caveat de produccion: las cuantizaciones IQ1 e IQ2 degradan notablemente la calidad; para uso en produccion se recomienda Q4_K_M o superior. Ademas, el formato GGUF no es compatible con vLLM o TGI sin conversion previa.
+- Fecha de creacion y actualizacion del repositorio: 9 de septiembre de 2026 y 20 de octubre de 2026, respectivamente; la informacion tecnica puede haber cambiado desde entonces.
 
 ## Enlaces
 
-- Repositorio actual de cuantizaciones: https://huggingface.co/mradermacher/Nova-1.1-0.8B-i1-GGUF
-- Repositorio con cuantizaciones estáticas (incluye mmproj para visión): https://huggingface.co/mradermacher/Nova-1.1-0.8B-GGUF
-- Modelo base original: https://huggingface.co/HyperAiCorp/Nova-1.1-0.8B
-- Página conveniente para descarga y listado: https://hf.tst.eu/model#Nova-1.1-0.8B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Nova-1.1-0.8B-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Nova-1.1-0.8B-GGUF
+- Modelo base: https://huggingface.co/HardcoreAI/Nova-1.1-0.8B
+- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Nova-1.1-0.8B-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Ejemplo de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

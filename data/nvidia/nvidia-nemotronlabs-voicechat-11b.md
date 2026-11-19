@@ -2,74 +2,110 @@
 
 ## Resumen
 
-NVIDIA NemotronLabs VoiceChat 11B es un modelo de voz de extremo a extremo (speech-to-speech) desarrollado por NVIDIA, diseñado para conversaciones en tiempo real con duplex completo (full-duplex). A diferencia de los sistemas tradicionales en cascada (ASR → LLM → TTS), este modelo integra la comprensión y generación de voz en una única arquitectura unificada, lo que permite interacciones fluidas y de baja latencia sin necesidad de orquestar varios componentes. Está basado en el modelo de lenguaje NVIDIA Nemotron-Nano-9B-v2, del que hereda su capacidad de razonamiento y comprensión, y añade módulos de audio para procesar y generar voz directamente.
+NVIDIA NemotronLabs VoiceChat 11B es un modelo de voz *full duplex* (FD) de extremo a extremo, desarrollado por NVIDIA, que unifica en una sola arquitectura la comprensión del habla en streaming y la generación de habla. Frente a los *pipelines* en cascada tradicionales (ASR → LLM → TTS), que encadenan varios modelos y añaden latencia por los traspasos entre APIs, este modelo procesa audio de entrada y produce audio de salida de forma simultánea, lo que permite conversación natural con solapamiento de turnos e interrupciones del usuario (*barge-in*).
 
-El modelo se publicó en julio de 2026 y ha recibido atención por su capacidad de turn-taking de aproximadamente 450 ms y por soportar tool calling en vivo, lo que lo hace adecuado para asistentes conversacionales que necesitan ejecutar acciones mientras mantienen una conversación natural. Con 11 000 millones de parámetros, se posiciona como una alternativa abierta a modelos propietarios de voz, con licencia openmdw-1.1 que permite uso comercial bajo ciertas condiciones. Su relevancia actual radica en la creciente demanda de interfaces de voz naturales y en tiempo real para aplicaciones de atención al cliente, agentes personales y dispositivos inteligentes.
+El modelo tiene 11.095.371.252 parámetros y combina tres componentes: un codificador de voz Fast Conformer (procedente de Nemotron-Speech-Streaming-En-0.6b), un *backbone* LLM Nemotron Nano v2 de 9B con arquitectura híbrida Mamba/Transformer, y un decodificador TTS con su códec. Además, incorpora un canal de salida separado para la predicción de scripts de *tool calling*, lo que lo convierte, según NVIDIA, en el primer modelo FD abierto que soporta llamadas a herramientas manteniendo el flujo conversacional.
+
+Su relevancia actual reside en dos factores: la latencia de cambio de turno, en torno a 450 ms, y la ausencia de dependencia de APIs externas para ASR o TTS. Está orientado a investigadores y desarrolladores de tecnología del habla, con licencia OpenMDW 1.1 y despliegue previsto sobre vLLM en hardware NVIDIA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en NVIDIA Nemotron-Nano-9B-v2 con módulos de audio (no se especifica el tipo exacto) |
-| Parametros totales | 11 000 millones (11B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Híbrida Mamba/Transformer (Fast Conformer + LLM Nemotron Nano v2 + decodificador TTS) |
+| Parametros totales | 11.095.371.252 (11B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato safetensors, se pueden aplicar cuantizaciones estándar) |
-| Idiomas soportados | inglés (según etiqueta "en"; no se confirman otros idiomas) |
-| Licencia | openmdw-1.1 (Open Model Data Warehouse, permite uso comercial con restricciones) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (inglés) |
+| Licencia | OpenMDW License Agreement, versión 1.1 |
 | Formato de pesos | safetensors |
+| Modelo base | nvidia/NVIDIA-Nemotron-Nano-9B-v2 |
+| Entrada | Texto (prompt) y audio (voz del usuario), WAV/WebAudio, 16 kHz |
+| Salida | Texto (agente), audio (voz del agente), texto (transcripción del usuario), WAV/WebAudio, 22,05 kHz |
+| Motor de inferencia | vLLM |
+| Hardware soportado | A100, H100, H200, B100, B200, RTX-6000 |
+| Sistema operativo | Linux |
+| Versión | v1.0 |
+| Fecha de publicación | 3 de agosto de 2026 |
+| Tamaño del repositorio | 44,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre el LLM NVIDIA Nemotron-Nano-9B-v2, al que se añaden componentes de procesamiento de audio para entrada y salida de voz. La arquitectura es unificada: el mismo modelo recibe audio de entrada y genera audio de salida en streaming, sin depender de un pipeline externo de ASR/TTS. Esto permite un funcionamiento full-duplex, es decir, el modelo puede escuchar y hablar simultáneamente, gestionando turnos de conversación de forma natural.
+La arquitectura es un sistema único de voz a voz compuesto por etapas diferenciadas pero entrenadas de forma conjunta. La señal de audio de entrada se codifica mediante un módulo Fast Conformer, tomado de Nemotron-Speech-Streaming-En-0.6b, que produce *tokens* de audio. Estos se introducen en el *backbone* LLM Nemotron Nano v2 de 9B, de tipo híbrido Mamba/Transformer, que predice *tokens* de texto. Esos *tokens* de texto alimentan un decodificador TTS que genera los códigos de audio correspondientes al habla del agente. Un canal de salida independiente se encarga de predecir los scripts de llamada a herramientas, de modo que la ejecución de una herramienta no bloquea ni interrumpe el flujo de audio de la conversación.
 
-No se han publicado detalles específicos sobre el dataset de entrenamiento ni el número de tokens utilizados. Los papers asociados (arXiv:2410.17196, 2503.04721, 2604.04847, 2505.15670, 2507.08128) sugieren que el entrenamiento incluye técnicas de alineación y ajuste fino para voz, pero no se dispone de información concreta sobre el uso de RLHF o DPO. La innovación principal es la integración de tool calling en tiempo real dentro de un modelo de voz, lo que permite que el asistente ejecute funciones externas mientras mantiene la conversación.
+El entrenamiento se realizó sobre aproximadamente 550.000 horas de audio, combinando conjuntos de audio real y datos de habla sintética generados con diversos sistemas TTS sobre corpus de texto (la model card cita Nemotron entre las fuentes, aunque el listado completo no está disponible en la información proporcionada). No se especifican en la información disponible el número de *tokens* de texto, la composición detallada del dataset ni si se aplicaron fases de RLHF o DPO. La innovación técnica principal es la operación *full duplex*: comprensión y generación simultáneas en un solo modelo, con capacidad de ceder el turno de inmediato ante una interrupción y de emitir mensajes de espera (*on-hold*) definidos por herramienta mientras se ejecuta una llamada.
 
 ## Capacidades
 
-- Conversación de voz full-duplex en tiempo real: el modelo puede escuchar y hablar simultáneamente, con un tiempo de turn-taking de aproximadamente 450 ms.
-- Comprensión y generación de voz en streaming: procesa audio de entrada y genera audio de salida de forma continua, sin esperar a que el usuario termine de hablar.
-- Tool calling en vivo: puede invocar funciones externas (por ejemplo, consultar APIs, controlar dispositivos) durante la conversación, lo que lo hace apto para agentes que necesitan ejecutar acciones.
-- Razonamiento y comprensión del lenguaje: al estar basado en Nemotron-Nano-9B-v2, conserva capacidades de razonamiento, generación de texto y comprensión semántica.
-- Soporte multilingüe: no confirmado; la etiqueta indica solo inglés, aunque podría funcionar con otros idiomas si el modelo base los soporta.
+- Comprensión del habla en streaming (ASR) integrada en el mismo modelo que la generación.
+- Generación de habla de extremo a extremo (TTS) a 22,05 kHz sin módulos externos.
+- Conversación *full duplex*: entrada y salida de audio simultáneas.
+- Gestión natural del cambio de turno, con latencia en torno a 450 ms.
+- Soporte de *barge-in*: el modelo cede el turno de forma inmediata cuando el usuario interrumpe.
+- *Tool calling* / *function calling* en tiempo real mediante un canal de salida dedicado, con posibilidad de definir un mensaje de espera específico por herramienta que el agente pronuncia mientras se ejecuta la llamada.
+- Transcripción de la voz del usuario como salida adicional de texto.
+- Conversación multi-turno con historial gestionado por el LLM de 9B subyacente.
+- Capacidades de razonamiento y conocimiento heredadas del *backbone* Nemotron Nano v2.
+- Capacidades multilingües: limitadas al inglés según los metadatos de idioma disponibles.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar llamadas telefónicas o chats de voz con clientes, resolviendo consultas frecuentes y derivando a un agente humano cuando sea necesario. Su full-duplex permite interrupciones naturales y respuestas rápidas, mejorando la experiencia del usuario.
-- Asistentes personales de voz: integrado en altavoces inteligentes o aplicaciones móviles, puede mantener conversaciones fluidas, gestionar calendarios, enviar mensajes o controlar dispositivos del hogar mediante tool calling.
-- Agentes de voz para reservas y compras: el modelo puede interactuar con sistemas de reservas (hoteles, restaurantes) o tiendas en línea, ejecutando transacciones a través de llamadas a APIs mientras conversa con el usuario.
-- Soporte técnico en tiempo real: en entornos de helpdesk, el modelo puede diagnosticar problemas, guiar al usuario paso a paso y ejecutar comandos de diagnóstico si se le proporcionan las herramientas adecuadas.
-- Traducción e interpretación simultánea: aunque no se confirma el soporte multilingüe, si se entrena con datos multilingües podría usarse para interpretación en tiempo real, aprovechando su baja latencia.
-- Juegos y entretenimiento interactivo: personajes no jugadores (NPC) que conversan de forma natural con los jugadores, reaccionando a sus comandos de voz y ejecutando acciones dentro del juego.
+- **Atención al cliente por voz**: el modelo puede mantener conversaciones telefónicas multi-turno, aceptar interrupciones del cliente y responder en unos 450 ms, lo que evita la sensación de latencia típica de los *pipelines* ASR → LLM → TTS encadenados.
+- **Agentes de voz con acceso a sistemas internos**: gracias al canal de *tool calling*, el agente puede consultar el estado de un pedido, reservar una cita o abrir un ticket mientras reproduce un mensaje de espera pregrabado o sintetizado, sin cortar el audio de la conversación.
+- **Asistentes embebidos en aplicaciones web**: la entrada y salida en formato WebAudio y 16/22,05 kHz facilita la integración en frontends mediante WebSocket con el contenedor de inferencia de NVIDIA.
+- **Investigación en interacción conversacional**: el modelo sirve como base abierta para estudiar *turn-taking*, solapamiento de habla y dinámica de interrupciones en sistemas de diálogo hablado.
+- **Sistemas de transcripción y síntesis unificados**: al emitir la transcripción del usuario y la voz del agente desde el mismo modelo, se simplifica la arquitectura de aplicaciones que antes requerían tres servicios distintos.
+- **Pruebas de concepto de agentes telefónicos**: con un único checkpoint de 11B y despliegue sobre vLLM en una GPU A100 o H100, un equipo puede montar un prototipo funcional de agente de voz sin contratar APIs de ASR ni de TTS.
+- **Evaluación comparativa de modelos de voz**: su condición de modelo FD abierto con *tool calling* lo hace útil como referencia en *benchmarks* de agentes de voz, como VoiceBench.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como MMLU, HumanEval o GSM8K para este modelo, ni comparativas con otros sistemas de voz. Se recomienda consultar la documentación oficial de NVIDIA para futuras actualizaciones.
+| Métrica | Resultado |
+|---|---|
+| VoiceBench (modelos FD abiertos) | Posición n.º 2 |
+| *Tool calling* en modelos FD abiertos | Primero (primer modelo FD abierto con soporte) |
+| Latencia de cambio de turno | ~450 ms |
+| Parámetros | 11B |
+
+No se han publicado en la información disponible resultados numéricos de MMLU, HumanEval, GSM8K ni de métricas ASR (WER) o TTS (MOS) para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible oficialmente. Para un modelo de 11B en FP16 se necesitarían aproximadamente 22 GB de VRAM; con cuantización INT8 se reduciría a unos 11 GB, y con INT4 a unos 5,5 GB. Estas cifras son estimaciones genéricas y no han sido confirmadas por NVIDIA.
-- GPU recomendadas: no se especifican. Para ejecutar el modelo en FP16 se necesitaría una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 4090, A100 40GB, H100). Con cuantización, podría caber en GPUs de 16 GB o incluso 8 GB.
-- Opciones de despliegue: no se mencionan herramientas específicas, pero al ser un modelo safetensors, se puede servir con frameworks como vLLM, llama.cpp o TGI si se adapta a sus formatos. Para uso de voz, NVIDIA ofrece un contenedor NIM en NGC.
-- Latencia y throughput: no disponibles. El turn-taking de 450 ms sugiere una latencia baja, pero no se han publicado mediciones de throughput.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 11B parámetros en safetensors, los pesos en precisión de entrenamiento ocupan del orden de 22 GB; el repositorio completo son 44,4 GB, lo que sugiere pesos en FP16/BF16 más componentes adicionales.
+- GPU recomendadas por NVIDIA: A100, H100, H200, B100, B200 y RTX-6000.
+- Encaje en GPU de consumo: no confirmado en la información disponible; el modelo está validado únicamente sobre las microarquitecturas NVIDIA citadas, y el decodificador TTS y el codificador de audio añaden requisitos más allá de los pesos del LLM.
+- Opciones de despliegue: vLLM como motor de inferencia; contenedor optimizado de NVIDIA para streaming interactivo por WebSocket; *checkpoint* de Hugging Face para inferencia *offline* por lotes. No se mencionan llama.cpp, Ollama ni TGI.
+- Sistema operativo: Linux.
+- Latencia y *throughput*: latencia de cambio de turno en torno a 450 ms; no se publican cifras de *throughput* (tokens/s o *frames* de audio por segundo).
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría (modelos de voz full-duplex). Existen otros sistemas como Qwen2-Audio o modelos de voz de Google, pero no se han encontrado datos comparables en la información proporcionada. Se recomienda consultar benchmarks independientes.
+| Modelo | Parámetros | Modalidad | Full duplex | Tool calling | Licencia |
+|---|---|---|---|---|---|
+| NVIDIA NemotronLabs VoiceChat 11B | 11B | Voz a voz extremo a extremo | Sí | Sí (primero en FD abierto) | OpenMDW 1.1 |
+| Cascada ASR + LLM + TTS (p. ej., Whisper + LLM + TTS) | Variable, suma de varios modelos | Voz a voz por etapas | No | Depende del LLM | Según componentes |
+| nvidia/NVIDIA-Nemotron-Nano-9B-v2 (modelo base) | 9B | Texto | No | No disponible en la información | No disponible en la información |
+
+No se dispone en la información proporcionada de datos de otros modelos FD abiertos comparables en parámetros, contexto o rendimiento, por lo que la comparación cuantitativa con alternativas directas no está disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al estar basado en un LLM, puede heredar sesgos presentes en los datos de entrenamiento del modelo base. No se han publicado evaluaciones específicas de sesgo para este modelo.
-- Riesgo de alucinación: como cualquier modelo generativo, puede producir respuestas incorrectas o inventadas, especialmente en contextos de voz donde la información es ambigua.
-- Limitaciones de idioma: la etiqueta indica solo inglés; el rendimiento en otros idiomas no está garantizado.
-- Restricciones de licencia: la licencia openmdw-1.1 permite uso comercial, pero puede imponer condiciones sobre la redistribución o el uso en ciertos sectores. Es necesario revisar el texto completo de la licencia antes de desplegar en producción.
-- Requisitos de hardware: al ser un modelo de 11B, requiere recursos considerables para inferencia en tiempo real, lo que puede limitar su uso en dispositivos de bajo consumo.
-- Dependencia de la calidad del audio: el rendimiento puede degradarse con ruido de fondo o acentos no representados en los datos de entrenamiento.
+- Idiomas: los metadatos solo declaran inglés; no hay soporte multilingüe documentado.
+- Sesgos: no se documentan en la información disponible análisis de sesgos por acento, género, edad o origen; un modelo entrenado mayoritariamente con datos en inglés puede degradarse con hablantes no nativos o acentos no representados.
+- Alucinación: al integrar un LLM generativo, existe riesgo de respuestas incorrectas o de invención de datos, especialmente en *tool calling* (argumentos erróneos en la llamada) y en la transcripción.
+- Contexto: la longitud de contexto no está publicada, lo que impide planificar conversaciones de larga duración con garantías.
+- Licencia: el uso se rige por OpenMDW 1.1; es necesario revisar sus términos antes de un despliegue comercial, ya que la model card no detalla restricciones adicionales.
+- Hardware: validado solo en Linux y en GPUs NVIDIA de gama profesional o de centro de datos; no hay confirmación de funcionamiento en GPU de consumo ni en CPU.
+- Integración: requiere el contenedor o el *stack* de NVIDIA NeMo Speech para streaming; no se documentan alternativas de despliegue fuera de vLLM.
+- Producción: NVIDIA recomienda pruebas iterativas con datos específicos del caso de uso siguiendo la metodología en V antes de desplegar, dado el riesgo de fallos en sistemas de voz en tiempo real.
 
 ## Enlaces
 
-- [Hugging Face - NVIDIA-NemotronLabs-VoiceChat-11B](https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B)
-- [NVIDIA NGC - NemotronLabs VoiceChat](https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/nemotron-labs-voicechat/)
-- [NVIDIA NIM - Model Card](https://build.nvidia.com/nvidia/nemotron-voicechat/modelcard)
-- [NVIDIA NIM - Demo](https://build.nvidia.com/nvidia/nemotron-voicechat)
-- [Artículo de MarkTechPost sobre el lanzamiento](https://www.marktechpost.com/2026/08/09/nvidia-releases-nemotronlabs-voicechat-11b-an-open-full-duplex-speech-to-speech-model-with-450-ms-turn-taking-and-live-tool-calling/)
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B
+- Repositorio de código (rama nemotron-labs-voicechat): https://github.com/NVIDIA-NeMo/Speech/tree/nemotron-labs-voicechat
+- Modelo base LLM: https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2
+- Codificador de voz: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
+- Licencia OpenMDW 1.1: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1
+- Muestras de audio: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B/resolve/main/turn_taking.wav, https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B/resolve/main/interruptions.wav, https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B/resolve/main/tool_call.wav
+- Referencias arXiv citadas en los metadatos: arxiv:2410.17196, arxiv:2503.04721, arxiv:2604.04847, arxiv:2609.21967, arxiv:2505.15670, arxiv:2507.08128

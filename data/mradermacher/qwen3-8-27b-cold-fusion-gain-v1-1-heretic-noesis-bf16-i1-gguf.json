@@ -167,31 +167,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF ...",
-      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF",
-      "snippet": "mradermacher / Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF like 0 Transformers GGUF English Chinese abliterated uncensored heretic qwen qwen3 qwen3.8 cold-fusion vision-language mtp bf16 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF at main",
-      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF/tree/main",
-      "snippet": "mradermacher / Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF like 1 Transformers GGUF English unsloth GAIN Training COLD-FUSION finetune imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1: Text-to-Text model — overview, use ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau",
-      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 is a 27-billion parameter instruction-tuned language model built by DavidAU that applies the COLD FUSION training methodology—combining GAIN (an internally developed technique) with Unsloth&#x27;s training infrastructure—to reduce thinking tokens to 1/10 to 1/2 of standard Qwen models while maintaining 99% of full-precision performance at both 8-bit ..."
-    },
-    {
-      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF: Text-to-Text ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-nm-dau-neo-max-mtp-gguf-davidau",
-      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF is a fine-tuned 27 billion parameter variant of Qwen 3.8 created by DavidAU that reduces thinking token overhead by 50-90% compared to the base model while maintaining or exceeding benchmark performance. The model uses the COLD FUSION training methodology, which combines the GAIN technique (dynamic per-sample training ..."
-    },
-    {
-      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
-      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
-    }
-  ]
+  "sources": []
 }

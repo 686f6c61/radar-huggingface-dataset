@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "SceneWorks/minimax-h3-image-pe",
+  "slug": "sceneworks-minimax-h3-image-pe",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/minimax-h3-image-pe",
+  "created_at": "2026-11-14T20:32:14.000Z",
+  "updated_at": "2026-11-19T02:58:59.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "minimax-h3-image",
+    "prompt-expansion",
+    "qwen3_5",
+    "candle",
+    "quantized",
+    "sceneworks",
+    "text-generation",
+    "base_model:MiniMaxAI/MiniMax-H3-Image-PE",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image-PE",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251712804325,
+  "storage_human": "251.7 GB",
+  "context_length": null,
+  "base_model": "MiniMaxAI/MiniMax-H3-Image-PE",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SceneWorks - GitHub",
+      "url": "https://github.com/SceneWorks/SceneWorks",
+      "snippet": "Contribute to SceneWorks/SceneWorks development by creating an account on GitHub."
+    },
+    {
+      "title": "SceneWorks.io – Motion graphics and video templates",
+      "url": "https://sceneworks.io/",
+      "snippet": "Cookies help us improve your experience, deliver personalized content, and analyze traffic. You can choose which cookies to allow …"
+    },
+    {
+      "title": "SceneWorks - GitHub",
+      "url": "https://github.com/SceneWorks",
+      "snippet": "SceneWorks Public Rust 255 AGPL-3.0 61 0 3 Updated 36 minutes ago mlx-rs Public Forked from nicholasjpaterno/mlx-rs Unofficial …"
+    },
+    {
+      "title": "Music Studio | Sceneworks Studios",
+      "url": "https://sceneworks.com/",
+      "snippet": "Discover Sceneworks Studios for music studio experiences. Connect with industry experts and unleash your creativity."
+    },
+    {
+      "title": "Sceneworks.org",
+      "url": "https://sceneworks.org/",
+      "snippet": "Sceneworks is a group of Writers & Actors coming together to practice their craft in the San Fernando Valley."
+    }
+  ]
+}

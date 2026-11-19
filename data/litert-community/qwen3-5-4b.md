@@ -2,97 +2,92 @@
 
 ## Resumen
 
-Qwen3.5-4B en formato LiteRT-LM es la conversión del checkpoint oficial Qwen/Qwen3.5-4B de Alibaba al formato `.litertlm`, realizada por la comunidad `litert-community` para su uso con el runtime on-device LiteRT-LM de Google (el nuevo nombre de TensorFlow Lite). El objetivo es claro: llevar un modelo de 4B parámetros a inferencia local en dispositivos edge (móviles Android, portátiles, equipos sin GPU dedicada) manteniendo la arquitectura original del modelo base sin modificaciones estructurales, solo con cuantización.
+Qwen3.5-4B en formato LiteRT-LM es la conversión del modelo Qwen/Qwen3.5-4B de Alibaba al runtime on-device de Google, LiteRT (el nuevo nombre de TensorFlow Lite), empaquetado en el contenedor `.litertlm` para inferencia local en dispositivos edge. El modelo base emplea una arquitectura híbrida propietaria de Qwen3.5 que combina bloques de atención lineal GatedDeltaNet (regla delta con compuertas) intercalados con un número reducido de bloques de atención completa con compuertas; en esta variante de 4B hay 24 capas de atención lineal y 8 de atención completa. Los bloques lineales mantienen un estado recurrente de tamaño constante por capa en lugar de una caché KV que crece con el contexto, de modo que el consumo de memoria permanece prácticamente plano respecto a la longitud de la secuencia.
 
-La relevancia de esta ficha está en dos frentes. Por un lado, Qwen3.5 introduce una arquitectura híbrida poco habitual: bloques de atención lineal GatedDeltaNet (regla delta con compuerta) intercalados con un número reducido de bloques de atención completa con compuerta. En este 4B concreto hay 24 capas de atención lineal y 8 de atención completa, lo que mantiene el estado recurrente de tamano constante y solo conserva KV cache en las 8 capas de atención clásica (presupuesto de 4096 tokens en este paquete). Por otro lado, la conversión demuestra que ese híbrido es delegable a GPU en LiteRT mediante un kernel gated-delta de rango ≤4, algo que hasta hace poco quedaba fuera del alcance de los runtimes móviles.
+El paquete lo publica el colectivo litert-community y deriva del checkpoint multimodal original de Alibaba, aunque aquí se distribuye únicamente el decodificador de texto: la torre de visión y las cabezas MTP se han eliminado siguiendo el contrato de carga text-only de `Qwen3_5ForCausalLM`. La licencia es Apache 2.0 y el repositorio ocupa 61,6 GB, con varios ficheros cuantizados de entre 2,71 GB y 4,42 GB según receta y backend.
 
-El paquete es **solo el decodificador de texto**: la torre de visión y las cabezas MTP del checkpoint original se descartan, replicando el contrato de carga text-only de `Qwen3_5ForCausalLM`. Se ofrece en dos recetas de cuantización (int8 dinámico y mixed INT4) con tamanos de 4,42 GB y 2,75 GB respectivamente. Requiere litert-lm ≥ 0.15.
+Su relevancia actual radica en que permite ejecutar un modelo de 4B con ventana de contexto efectiva de 4096 tokens en GPU y CPU de dispositivos móviles y equipos de sobremesa, con versiones específicas para el backend GPU de LiteRT-LM 0.19.x y para CPU. No obstante, la model card documenta incidencias de corrección en el fichero int8 sobre CPU (respuestas que se alargan hasta el límite de tokens en aritmética multi-paso) y repeticiones en GPU pasados los 400 tokens, corregidas parcialmente en la recuantización del 13 de octubre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: GatedDeltaNet (atención lineal con regla delta y compuerta) + atención completa con compuerta; 24 capas lineales + 8 capas de atención |
-| Parametros totales | 4B (aproximado, según nombre del modelo; no se detalla cifra exacta) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens de KV cache en las 8 capas de atención; las capas lineales usan estado recurrente de tamano constante |
-| Tipos de cuantizacion | int8 dinámico en lineales + embedding (convs, delta rule y 48 proyecciones `in_proj_a`/`in_proj_b` en float); mixed INT4 blockwise-32 en lineales con int8 en embedding y lm_head |
-| Idiomas soportados | No disponible en la información proporcionada (el tokenizer cubre inglés, chino, japonés, coreano, árabe, hindi, tailandés, tamil y emoji según las pruebas de tokenización) |
+| Arquitectura | Híbrida: 24 capas de atención lineal GatedDeltaNet + 8 capas de atención completa con compuertas |
+| Parametros totales | 4B (aproximado, según denominación del modelo) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens de presupuesto KV en las 8 capas de atención; estado recurrente constante en las 24 lineales |
+| Tipos de cuantizacion | int4 blockwise-32, int8 dinámico, mixed int4 (int4 en lineales + int8 en embedding y lm_head), proyecciones decay/gate en float |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); dos ficheros: `Qwen3.5-4B_int8.litertlm` (4.418.793.712 B) y `Qwen3.5-4B_mixed_int4.litertlm` (2.754.070.624 B) |
+| Formato de pesos | `.litertlm` (LiteRT-LM) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base Qwen3.5 combina bloques GatedDeltaNet con bloques de atención completa con compuerta. Los bloques lineales aplican una regla delta con compuerta que mantiene un estado recurrente de tamano constante por capa (más convoluciones locales), de modo que la memoria no crece con la longitud de contexto; solo las 8 capas de atención clásica mantienen KV cache, con un presupuesto fijado en 4096 tokens en esta conversión. Esta mezcla busca el coste asintótico de un SSM o atención lineal con la calidad de recuperación de la atención completa en una fracción de las capas.
+La arquitectura es un transformer híbrido en el que la mayoría de capas (24 de 32) usan atención lineal basada en la regla delta con compuertas (GatedDeltaNet), y solo 8 capas emplean atención completa con compuertas. Las capas lineales sustituyen la caché KV por un estado convolucional y recurrente de tamaño fijo por capa, lo que reduce drásticamente el crecimiento de memoria con la longitud de contexto; únicamente las 8 capas de atención retienen KV, con un presupuesto de 4096 tokens. Esta combinación busca el equilibrio entre eficiencia en dispositivos y calidad de recuperación de información a larga distancia.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF, DPO o similar; esos datos corresponden a la model card del checkpoint original Qwen/Qwen3.5-4B y no se incluyen en la información proporcionada. La innovación técnica destacable de esta conversión concreta es el kernel gated-delta de rango ≤4 delegable a GPU en LiteRT, más dos correcciones específicas para el 4B documentadas en las notas de conversión. El checkpoint upstream es multimodal, pero este paquete elimina la torre de visión y las cabezas MTP, conservando únicamente el decodificador de texto.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base. La conversión a LiteRT-LM se realizó con `litert-torch` (antiguo ai-edge-torch) y sigue la misma ruta que la variante Qwen3.5-0.8B del mismo colectivo, con dos correcciones específicas para el 4B documentadas en las notas de conversión. Los ficheros del 14 de noviembre de 2026 son exportaciones del grafo Qwen3.5 propio de litert-torch e incluyen composites GPU con activaciones declaradas en fp32. La conversión preserva el tokenizador y los metadatos del ejecutor, y la model card reporta que una conversión sin modificar con `litert_torch.convert` coincidió con el original hasta 4e-7 en un Galaxy S26 con LiteRT 2.2.0.
 
 ## Capacidades
 
-- Generación de texto en modo chat, con plantilla de chat actualizada para aceptar la forma de content-parts de litert-lm 0.18 y con interruptor de thinking.
-- Modo de razonamiento (thinking) con canal de razonamiento separado y metadato `supports_thinking`; admite presupuesto de tokens de pensamiento.
-- Razonamiento aritmético multi-paso (verificado con seis preguntas de multiplicación en las pruebas del autor).
-- Tokenización multilingüe con cobertura de marcas combinantes: hindi, tailandés, tamil y árabe con harakat se tokenizan correctamente con el `tokenizer.json` del repositorio (36, 12, 16 y 29 tokens respectivamente en las frases de prueba), además de inglés, chino, japonés, coreano y emoji.
-- Inferencia on-device en CPU y GPU (delegación GPU del kernel gated-delta).
-- No incluye visión ni audio: la torre de visión fue descartada y los siete marcadores de audio/TTS del `tokenizer_config.json` no están en el `tokenizer.json` usado, por lo que se leen como texto plano.
+- Generación de texto conversacional multi-turno con plantilla de chat compatible con la forma de content-parts de LiteRT-LM 0.18.
+- Modo de razonamiento (thinking) con canal de razonamiento separado y conmutador en la plantilla de chat, según los metadatos actualizados el 9 de octubre de 2026.
+- Aritmética multi-paso: la model card documenta pruebas con multiplicaciones encadenadas (por ejemplo, 36 × 25) y evalúa la corrección de las respuestas.
+- Razonamiento y respuesta a instrucciones heredados del modelo base Qwen3.5-4B.
+- Inferencia on-device en CPU y GPU mediante LiteRT-LM, con ficheros optimizados por backend.
+- No incluye capacidades de visión: la torre multimodal del checkpoint original se ha eliminado en este paquete.
 - No se documenta soporte de tool calling ni de function calling en la información disponible.
+- No se documenta soporte de agentes ni de razonamiento multi-paso con herramientas.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales offline en Android: el fichero mixed INT4 de 2,75 GB cabe en el almacenamiento de un móvil de gama alta y permite conversaciones multi-turno sin conexión, con el estado recurrente de las capas lineales manteniendo el consumo de memoria casi plano.
-- Razonamiento aritmético y de sentido común en el dispositivo: útil para calculadoras conversacionales, asistentes de compras o herramientas educativas donde no se puede enviar la consulta a la nube; el modo thinking con presupuesto acotado permite controlar la latencia.
-- Procesamiento de texto multilingüe en campo: la tokenización correcta de hindi, tamil, tailandés y árabe con harakat habilita aplicaciones de traducción o resumen en dispositivos sin conectividad en mercados con esos idiomas.
-- Prototipado de agentes locales con presupuesto de contexto moderado: los 4096 tokens de KV en las capas de atención son suficientes para instrucciones de sistema, historial corto y una o dos herramientas, aunque no para documentos largos.
-- Evaluación de arquitecturas híbridas en investigación: el paquete permite medir en hardware real la diferencia de memoria y latencia entre atención lineal y atención completa con la misma pila de pesos, algo difícil de aislar en entornos de servidor.
-- Despliegue en portátiles sin GPU dedicada: la receta int8 de 4,42 GB corre en CPU con litert-lm y sirve para tareas de generación de texto por lotes de baja concurrencia, como clasificación o extracción de entidades.
-- Integración en aplicaciones de escritorio o CLI: el runtime litert-lm permite embeber el modelo en herramientas nativas sin depender de Python ni de CUDA.
+- Asistentes conversacionales locales en Android: el modelo puede gestionarse con LiteRT-LM ≥ 0.15 en el runtime `com.google.ai.edge.litert:litert`, manteniendo conversaciones multi-turno sin conexión y con un consumo de memoria casi constante gracias a las 24 capas de atención lineal.
+- Aplicaciones de privacidad estricta en dispositivos: al ejecutarse íntegramente on-device, permite procesar texto sensible (notas, correos, historiales) sin enviar datos a servidores externos, usando el fichero int8 de 4,42 GB en CPU.
+- Prototipado en equipos de sobremesa con GPU: los ficheros `mixed_int4_gpu_composite_v0190` (2,71 GB) y `int8_gpu_composite_v0190` (4,37 GB) permiten probar el modelo en Mac y estaciones con GPU bajo LiteRT-LM 0.19.x.
+- Razonamiento aritmético y de sentido común en asistentes de productividad: el modo thinking con canal de razonamiento permite separar el proceso interno de la respuesta final, útil en calculadoras conversacionales o tutores educativos, siempre con presupuesto de tokens controlado.
+- Evaluación comparativa de runtimes edge: sirve como banco de pruebas para medir latencia y corrección entre backends CPU y GPU de LiteRT-LM, dado que la model card documenta diferencias de comportamiento entre ellos.
+- Integración en apps Android mediante el runtime LiteRT: el formato `.litertlm` y las dependencias de Gradle permiten embeber el modelo en aplicaciones nativas sin infraestructura de servidor.
+- Investigación sobre arquitecturas híbridas de atención: al conservar la estructura GatedDeltaNet, es útil para estudiar el comportamiento de la atención lineal frente a la completa en tareas de contexto medio (hasta 4096 tokens).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card reporta únicamente pruebas de correctitud cualitativas:
-
-| Prueba | Resultado |
-|---|---|
-| Seis preguntas de multiplicación multi-paso, backend CPU, int8 (receta corregida 2026-10-13) | Corregido el fallo previo que agotaba el límite de tokens en 7 de 18 ejecuciones |
-| Seis preguntas de multiplicación multi-paso, backend GPU Mac, ambos ficheros | 6 de 6 ejecuciones correctas y con parada propia |
-| Puerta de sanidad de 8 preguntas | 8/8 en ambos ficheros |
-| Thinking sin presupuesto, backend CPU, int8 (receta corregida) | Corregido el fallo previo de pensamiento que no cerraba (0 de 3 ejecuciones cerraban antes) |
-| Fidelidad de conversión `litert_torch.convert` (referencia general del runtime) | Diferencia de 4e-7 frente al original en un Galaxy S26 |
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye únicamente mediciones de corrección cualitativa (por ejemplo, repeticiones en GPU pasados los 400 tokens en el fichero int8, y respuestas que alcanzan el límite de tokens en 7 de 18 ejecuciones de aritmética multi-paso en CPU antes de la recuantización del 13 de octubre de 2026) y una medición de fidelidad de conversión de 4e-7 frente al modelo original en un Galaxy S26.
 
 ## Requisitos de hardware
 
-- VRAM/RAM para inferencia: aproximadamente 4,42 GB para el fichero int8 y 2,75 GB para el mixed INT4, más el estado recurrente de las capas lineales (constante) y la KV cache de las 8 capas de atención (presupuesto de 4096 tokens).
-- GPU recomendadas: no se especifican modelos de GPU de servidor; el runtime está orientado a GPU móviles e integradas. La delegación GPU del kernel gated-delta se ha verificado en Mac (GPU de Apple Silicon) y en Android (Galaxy S26).
-- ¿Cabe en GPU consumer? El fichero mixed INT4 de 2,75 GB cabe en GPUs consumer con 6-8 GB de VRAM si el runtime lo soporta; el int8 de 4,42 GB requiere al menos 6 GB. No se documentan pruebas en RTX 4090, A100 o H100.
-- Opciones de despliegue: litert-lm ≥ 0.15 (versiones verificadas: 0.15.0, 0.16.0 y 0.18.0), con CLI para Android y build para macOS. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. La model card no reporta tokens por segundo.
+- VRAM/RAM estimada para inferencia: 2,71 GB con `mixed_int4_gpu_composite_v0190`; 2,75 GB con `mixed_int4`; 4,37 GB con `int8_gpu_composite_v0190`; 4,42 GB con `int8` para CPU.
+- GPU recomendadas: no se especifican modelos concretos; los ficheros GPU están pensados para LiteRT-LM 0.19.x con composites GPU. La model card menciona pruebas en Galaxy S26 (Android 16) y en Mac.
+- Compatibilidad con GPU de consumo: no se detalla; el tamaño de 2,71 GB en int4 mixto sugiere que puede caber en GPUs integradas y de gama media, pero no hay confirmación explícita.
+- Opciones de despliegue: LiteRT-LM ≥ 0.15 (probado en 0.15.0, 0.16.0, 0.18.0 y 0.19.x), con backend CPU y GPU; runtime Android `com.google.ai.edge.litert:litert`; CLI de Android (build del 18 de septiembre de 2026).
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Nota de compatibilidad: el fichero `mixed_int4` (no composite) no funciona en un Pixel 11 Pro según las incidencias conocidas del runtime.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia | Formato |
-|---|---|---|---|---|---|
-| Qwen3.5-4B (LiteRT-LM, este paquete) | 4B | 4096 tokens KV (capas lineales sin KV) | Híbrido GatedDeltaNet + atención | Apache 2.0 | `.litertlm` |
-| Qwen3.5-0.8B (LiteRT-LM, mismo autor) | 0,8B | No disponible | Híbrido GatedDeltaNet + atención | Apache 2.0 | `.litertlm` |
-| Qwen/Qwen3.5-4B (upstream) | 4B | No disponible | Híbrido GatedDeltaNet + atención, multimodal | Apache 2.0 | safetensors (presumiblemente) |
+| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
+|---|---|---|---|---|
+| Qwen3.5-4B (LiteRT-LM, este) | 4B | 4096 tokens KV + estado recurrente constante | Apache 2.0 | `.litertlm`, on-device |
+| Qwen3.5-0.8B (LiteRT-LM) | 0,8B | no disponible | Apache 2.0 | `.litertlm`, on-device |
+| Qwen/Qwen3.5-4B (original) | 4B | no disponible | Apache 2.0 | safetensors, multimodal con torre de visión y cabezas MTP |
 
-La comparación con alternativas de otros fabricantes (Gemma, Llama, Phi en rango 3-4B) no está disponible en la información proporcionada; no se aportan datos de rendimiento que permitan establecer una comparación rigurosa.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El paquete es solo texto: no hay visión ni audio, pese a que el checkpoint upstream sea multimodal. Los marcadores de audio se leen como texto plano.
-- El contexto efectivo está limitado a 4096 tokens de KV en las 8 capas de atención; las tareas que requieran recuperación sobre documentos largos no son adecuadas.
-- Historial de defectos documentado por el propio autor: entre el 14 de agosto y el 13 de octubre de 2026, el fichero int8 en backend CPU podía agotar el límite de tokens en aritmética multi-paso (7 de 18 ejecuciones) y no cerrar el bloque de pensamiento sin presupuesto (0 de 3). Corregido en la receta del 2026-10-13, pero conviene verificar la versión del fichero por sha256 antes de desplegar.
-- El autor advierte de que se debe usar un Engine por conversación; esta nota llegó a la model card el 2026-10-12 aunque el informe original era del 2026-08-06.
-- La tokenización anterior a 2026-10-16 dividía mal texto con marcas combinantes (49 tokens en vez de 36 en hindi, 24 en vez de 12 en tailandés, 29 en vez de 16 en tamil, 30 en vez de 29 en árabe con harakat); verificar que se usa el fichero con el `tokenizer.json` del repositorio.
-- No hay datos publicados de sesgos, tasas de alucinación ni evaluaciones de seguridad en la información disponible.
-- Licencia Apache 2.0 permite uso comercial, pero las condiciones del runtime litert-lm y de las dependencias de Google deben revisarse por separado.
-- El repo pesa 40,3 GB, muy por encima de los ficheros de pesos, por lo que la descarga completa no es necesaria si solo se quiere un fichero.
-- No se documenta soporte de tool calling, lo que limita su uso en pipelines de agentes con herramientas.
+- El paquete es solo el decodificador de texto: no incluye visión ni cabezas MTP, por lo que no puede usarse para tareas multimodales.
+- Presupuesto de contexto limitado a 4096 tokens en las capas de atención; las capas lineales no amplían la ventana efectiva más allá de ese límite.
+- Incidencia documentada en CPU con el fichero int8 anterior al 13 de octubre de 2026: respuestas que no se detenían antes del límite de tokens en aritmética multi-paso (7 de 18 ejecuciones, una sin respuesta) y pensamientos que no se cerraban con thinking activado sin presupuesto. Corregido en la recuantización, pero conviene verificar la versión del fichero.
+- En GPU, el fichero int8 repite dos líneas tras la respuesta cuando supera los 400 tokens, tanto en la variante int8 como en la int8_gpu_composite; comportamiento no observado en el fichero mixed_int4_gpu_composite.
+- El fichero `mixed_int4` (no composite) no funciona en Pixel 11 Pro según las incidencias del runtime.
+- Requiere LiteRT-LM ≥ 0.15; los ficheros GPU composite requieren 0.19.x, lo que limita la compatibilidad con versiones anteriores.
+- No se documentan sesgos conocidos, riesgos de alucinación específicos ni restricciones adicionales de la licencia Apache 2.0 más allá de las habituales (atribución y aviso de cambios).
+- Idiomas soportados no documentados: no se puede garantizar calidad multilingüe sin evaluación propia.
+- El repositorio de 61,6 GB incluye múltiples variantes; la descarga completa no es necesaria, pero conviene seleccionar el fichero adecuado al backend para evitar fallos de ejecución.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Variante 0.8B del mismo autor: https://huggingface.co/litert-community/Qwen3.5-0.8B
+- Variante 0.8B del mismo colectivo: https://huggingface.co/litert-community/Qwen3.5-0.8B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Medición de fidelidad de conversión en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md
+- Medición de fidelidad de conversión (LiteRT 2.2.0, Galaxy S26): https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

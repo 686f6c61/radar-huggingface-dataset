@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "MohammadJRanjbar/persian-sentence-completion",
+  "slug": "mohammadjranjbar-persian-sentence-completion",
+  "author": "MohammadJRanjbar",
+  "url": "https://huggingface.co/MohammadJRanjbar/persian-sentence-completion",
+  "created_at": "2026-05-10T17:48:20.000Z",
+  "updated_at": "2026-11-18T21:46:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "persian",
+    "sentence-completion",
+    "text-classification",
+    "fa",
+    "dataset:MohammadJRanjbar/PersianPunc",
+    "base_model:HooshvareLab/bert-base-parsbert-uncased",
+    "base_model:finetune:HooshvareLab/bert-base-parsbert-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162842882,
+  "parameters_human": "162.8M",
+  "storage_bytes": 651395048,
+  "storage_human": "651 MB",
+  "context_length": null,
+  "base_model": "HooshvareLab/bert-base-parsbert-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

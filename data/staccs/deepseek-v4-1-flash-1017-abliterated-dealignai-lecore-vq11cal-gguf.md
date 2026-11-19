@@ -2,113 +2,107 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF de un solo archivo (106,8 GB) del modelo `dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8`, que a su vez es una versión «abliterated» (sin alineamiento de seguridad) del `deepseek-ai/DeepSeek-V4.1-Flash-1017` publicado por DeepSeek el 17 de octubre de 2026. El autor de este build, `staccs`, no modifica los pesos más allá del proceso de cuantización: todo el trabajo de abliteración es de `dealignai` y el modelo original es de DeepSeek.
+DeepSeek-V4.1-Flash-1017-abliterated-dealignai-lecore-vq11cal-GGUF es una cuantizacion GGUF de un solo archivo del modelo dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8, que a su vez es una version "abliterated" (sin alineamiento de rechazo) del DeepSeek-V4.1-Flash-1017 de DeepSeek. El trabajo de abliteracion corresponde a dealignai; el repositorio de staccs unicamente recuantiza esos pesos a formato GGUF mediante cuantizacion vectorial de 11 bits calibrada por activaciones sobre los expertos enrutados. El modelo tiene 106.804.403.562 parametros totales (aproximadamente 106,8 mil millones) y una arquitectura MoE con expertos enrutados y expertos compartidos.
 
-Se trata de un transformer de tipo mezcla de expertos (MoE) con expertos enrutados, expertos compartidos y unas tablas de n-gramas denominadas «engram» que se distribuyen por separado. La cuantización emplea codificación vectorial (VQ) de 11 bits con codebooks de 2048 entradas para los expertos enrutados (1,39 bpw), `q4_K` para el esqueleto de atención y FP8 para la cabeza de salida, con calibración por activaciones sobre 65.536 tokens.
+El interes de esta ficha radica en que combina tres elementos poco habituales: una arquitectura MoE de gran tamano, una variante sin censura (abliterated/uncensored) y una tecnica de cuantizacion agresiva (1,39 bits por peso en los expertos enrutados) que reduce el modelo a un unico archivo de 103,43 GB. Esto lo hace desplegable en entornos con memoria unificada amplia (por ejemplo, APU con 128 GB) o en servidores con multiples GPU, algo imposible con los pesos FP8 originales.
 
-Su relevancia es doble: por un lado, permite ejecutar un modelo de más de 100.000 millones de parámetros en hardware de consumidor con memoria unificada grande (el autor lo ha medido en una Radeon 8060S con 128 GB); por otro, al estar basado en un modelo abliterated, elimina deliberadamente los mecanismos de rechazo del modelo original, lo que lo hace inadecuado para despliegues comerciales sin control humano.
+La relevancia actual es doble: por un lado, demuestra que la cuantizacion vectorial calibrada permite conservar una fidelidad alta respecto al modelo fuente (perplejidad 2,817 frente al original, con un 80,2% de acuerdo top-1 a 2k de contexto); por otro, documenta un caso real de despliegue en hardware AMD (Radeon 8060S, HIP) con decodificacion especulativa DSpark y tablas Engram, lo que amplia el ecosistema mas alla de CUDA.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (expertos enrutados + expertos compartidos + tablas de n-gramas «engram»); detalles completos de la arquitectura base no disponibles |
-| Parametros totales | 106.804.403.562 (≈106,8 B, dato de safetensors); la model card menciona además «557B params» en expertos enrutados, cifra no reconciliada con el total |
-| Parametros activos | No disponible |
-| Longitud de contexto | No disponible (evaluado a 2k y 16k; se documentan prompts de 19,3k tokens) |
-| Tipos de cuantizacion | GGUF con VQ de 11 bits (codebooks de 2048 entradas, 1,39 bpw) en expertos enrutados y compartidos; `q4_K` en atención; FP8 con bloques 32x32 en la cabeza de salida; caché KV en FP4 (valores E4M3 para escalas) |
-| Idiomas soportados | No disponible |
+| Arquitectura | MoE (mixture of experts) con expertos enrutados y expertos compartidos; incluye torre de vision, decodificador especulativo DSpark y tablas Engram |
+| Parametros totales | 106.804.403.562 (aprox. 106,8 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (se han evaluado contextos de 2k y 16k; el maximo no se especifica) |
+| Tipos de cuantizacion | VQ 11 bits (2048 entradas) en expertos enrutados y compartidos; q4_K en esqueleto denso y embeddings; fp8 en engram_wkv |
+| Idiomas soportados | en (segun la model card) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (archivo único de 106,8 GB); tablas engram en shards separados (~203 GB) |
+| Formato de pesos | GGUF (un unico archivo de 103,43 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE de DeepSeek con tres componentes diferenciados: expertos enrutados (los que concentran la mayor parte de los parámetros), expertos compartidos que se activan siempre, y tablas «engram» de n-gramas que en este build se mantienen en los shards originales sin recuantizar y deben descargarse aparte (~203 GB). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
+La arquitectura subyacente es un transformer MoE de DeepSeek (DeepSeek-V4.1-Flash-1017), del que no se detallan en la informacion disponible el numero de capas, dimension oculta ni numero de expertos por capa. Lo que si se documenta es la composicion del build cuantizado: los expertos enrutados (557B parametros segun la model card) usan cuantizacion vectorial de 11 bits con codebooks de 2048 entradas, calibrada por activaciones mediante k-means ponderado sobre 65.536 tokens de calibracion, alcanzando 1,39 bits por peso y un coseno ponderado de 0,909. Los expertos compartidos usan lecore VQ11 con coseno 0,910. El esqueleto denso (atencion q_a/q_b/kv/output_a/output_b, FFN de expertos compartidos, indexer.attn_q_b en capas con gating, MTP main_proj y cabeza de salida) se reemite en q4_K, al igual que el embedding de tokens. El archivo engram_wkv se mantiene en fp8 y las tablas n-gram Engram se usan sin modificar desde los shards originales de DeepSeek.
 
-La innovación técnica de este repositorio es puramente de compresión: cuantización vectorial con k-means ponderado por activaciones (calibrado) sobre 65.536 tokens, con codebooks de 11 bits y 2048 entradas. Los cosenos ponderados reportados son 0,909 para expertos enrutados, 0,910 para expertos compartidos y 0,997 para el esqueleto de atención en `q4_K`. El autor declara que el escaneo de tipos de archivo y la comprobación de paridad de decodificación frente a los pesos fuente se han superado. La abliteración del modelo intermedio es responsabilidad de `dealignai`; no se documenta la metodología exacta empleada.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo base. La innovacion tecnica destacable de este build es la cuantizacion vectorial calibrada por activaciones, que segun la model card supera a la version no calibrada anterior (lecore-vq10sh12: perplejidad 3,615, KL 0,797 media, top-1 74,5% a 2k) y mantiene un acuerdo top-1 del 80,2% con el modelo fuente. Ademas, el despliegue incorpora decodificacion especulativa mediante el drafter DSpark y tablas Engram para n-gramas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo soporta modo de pensamiento (`reasoning_effort: "none"` o `thinking: {"type":"disabled"}` permiten desactivarlo), lo que implica que el modo razonado existe y es configurable.
-- Codificación y tareas de agente: la documentación de DeepSeek para V4.1-Flash-1017 menciona mejoras en finalización de tareas de código y trabajo con agentes.
-- Tool calling / function calling: el autor documenta su uso con Hermes Agent, que inyecta esquemas de herramientas (system prompt + esquemas ≈14k tokens), por lo que el soporte de herramientas es funcional.
-- Razonamiento multi-paso y agentes: soportado a través de la API compatible con OpenAI que expone el servidor `ds4-server` en `http://127.0.0.1:8008/v1`.
-- Comprensión visual nativa: anunciada para el modelo base DeepSeek-V4.1-Flash; este build GGUF no documenta soporte de visión ni incluye codificador visual en la descripción.
-- Multilingüismo: no disponible; no se declaran idiomas en la model card.
-- Capacidades deliberadamente no restringidas: al ser una variante abliterated, no aplica los filtros de rechazo del modelo original.
+- Generacion de texto y razonamiento: el modelo base es un MoE de gran escala orientado a generacion y razonamiento; la model card recomienda desactivar thinking/reasoning para uso con agentes.
+- Procesamiento de vision: incluye una torre de vision separada (DeepSeek-V4.1-Flash.vision.gguf, 0,90 GiB) que habilita entrada de imagenes.
+- Codigo y matematicas: no se documentan evaluaciones especificas en la informacion disponible, pero son capacidades esperables del modelo base DeepSeek-V4.1-Flash.
+- Tool calling / function calling: no se documenta explicitamente en la model card; el uso con agentes se menciona en las recomendaciones de sampling.
+- Agentes y razonamiento multi-paso: la model card menciona uso con agentes y advierte de bucles de repeticion en turnos largos de herramientas si no se fija max_tokens.
+- Multilingue: la model card declara unicamente ingles (en); no se detallan otros idiomas.
+- Modo sin censura: variante abliterated/uncensored que elimina el comportamiento de rechazo del modelo original.
+- Decodificacion especulativa: soporte de drafter DSpark para acelerar la generacion.
+- Capacidad Engram: uso de tablas n-gram externas para mejorar la generacion.
 
 ## Casos de uso
 
-- Investigación sobre alineamiento y seguridad: el modelo permite estudiar el comportamiento de un MoE de gran tamaño tras eliminar el alineamiento, comparando respuestas frente al modelo original en tareas de rechazo, sesgo y toxicidad.
-- Evaluación de técnicas de cuantización extrema: con métricas de perplejidad, KL y acuerdo top-1 frente al modelo profesor, sirve como banco de pruebas para medir el impacto de VQ de 11 bits en un MoE de más de 100 B.
-- Despliegue local en estación de trabajo con memoria unificada: el autor lo ejecuta en una Radeon 8060S con 128 GB de memoria y API compatible con OpenAI, lo que permite tener un modelo grande en local sin depender de la nube.
-- Agentes autónomos de larga duración en local: con reutilización de prefijo KV y checkpoints en disco (~30 MB por checkpoint de 14k tokens), es viable mantener sesiones de agente con prompts de sistema grandes (14k tokens) sin reprefijar cada turno.
-- Generación de código en entornos aislados: al ejecutarse sobre `127.0.0.1` con clave local, encaja en pipelines internos donde no se permite enviar código a APIs externas.
-- Reproducción y auditoría de modelos derivados: al incluir comprobación de paridad de decodificación y métricas de fidelidad frente al profesor, facilita auditar qué se pierde en cada paso de cuantización.
-- Experimentación con prompts sin restricciones en entornos controlados: útil para estudiar jailbreaks y robustez de filtros, siempre con supervisión y sin exposición a usuarios finales.
+- Investigacion sobre desalineamiento y seguridad: el modelo permite estudiar el comportamiento de un MoE de gran escala tras eliminar los mecanismos de rechazo, comparando respuestas con el modelo original para analizar sesgos y riesgos.
+- Despliegue en hardware con memoria unificada: gracias al unico archivo GGUF de 103,43 GB, puede servirse en equipos como la Radeon 8060S con 128 GB de memoria unificada mediante el servidor ds4-server con HIP, sin necesidad de un cluster de GPU.
+- Generacion de texto a gran escala con contexto medio: con perplejidad de 2,817 y 80,2% de acuerdo top-1 a 2k de contexto, es adecuado para tareas de generacion y resumen donde se prioriza la fidelidad al modelo fuente.
+- Procesamiento de imagenes: la torre de vision permite construir pipelines multimodales (descripcion de imagenes, extraccion de informacion visual) apuntando `--vision-gguf` al directorio del archivo de vision.
+- Evaluacion de tecnicas de cuantizacion: el repositorio documenta metricas detalladas (KL, Jaccard top-p, masa residual en ids reservados) que lo convierten en un caso de referencia para medir el impacto de la cuantizacion vectorial calibrada.
+- Agentes automatizados con control de sampling: la model card recomienda temperature 0.6, top_p 0.95, min_p 0.05 y max_tokens 4096 para evitar bucles de repeticion en turnos largos de herramientas, lo que permite integrarlo en frameworks de agentes con limites explicitos.
+- Servicio de API compatible con OpenAI: el servidor ds4-server expone un endpoint `/v1` en `http://127.0.0.1:8008/v1`, lo que facilita integrarlo en aplicaciones existentes que usan la API de OpenAI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas de fidelidad de cuantización frente al modelo profesor (WikiText-2, test), sobre los 1.233 ids reservados del tokenizador:
+Los datos publicados en la model card son metricas de fidelidad respecto al modelo fuente (teacher = dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8) sobre el conjunto de test de WikiText-2:
 
-| Metrica | 2k contexto | 16k contexto |
+| Metrica | Contexto 2k | Contexto 16k |
 |---|---:|---:|
 | Perplejidad | 2,817 | 2,936 |
-| KL media vs. fuente | 0,587 | 0,584 |
-| KL mediana vs. fuente | 0,047 | 0,093 |
-| Acuerdo top-1 con la fuente | 80,2% | 78,6% |
-| Masa basura en ids reservados (media) | 2,10e-07 | 2,44e-07 |
-| Masa basura en ids reservados (máx.) | 7,66e-05 | 8,23e-05 |
+| KL media vs fuente | 0,587 | 0,584 |
+| KL mediana vs fuente | 0,047 | 0,093 |
+| Acuerdo top-1 con fuente | 80,2% | 78,6% |
+| Masa residual en ids reservados (media) | 2,10e-07 | 2,44e-07 |
+| Masa residual en ids reservados (max) | 7,66e-05 | 8,23e-05 |
 | Masa de escape fuera del top-50 de la fuente | 0,0359 | 0,0316 |
-| Jaccard del conjunto top-p 0,95 vs. fuente | 0,681 | 0,627 |
+| Jaccard del conjunto top-p 0.95 vs fuente | 0,681 | 0,627 |
 
-Comparación con el build anterior sin calibrar del mismo autor (`lecore-vq10sh12`, a 2k): perplejidad 3,615, KL 0,797 media / 0,195 mediana, acuerdo top-1 74,5%. La mejora del calibrado es sustancial en perplejidad y en acuerdo top-1.
-
-Rendimiento medido en Radeon 8060S (gfx1151, HIP SDK 7.2, 128 GB de memoria unificada), sobre el build vq10sh12: prefill de 135-190 tok/s y decodificación de 14-17 tok/s. El autor indica que ambos están limitados por kernels, no por el formato.
+Como referencia, el build anterior no calibrado (lecore-vq10sh12) del modelo original obtuvo perplejidad 3,615, KL media 0,797, KL mediana 0,195 y top-1 74,5% a 2k de contexto. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: ~106,8 GB solo para los pesos; hay que sumar la caché KV (FP4) y, si se usan, las tablas engram (~203 GB adicionales en disco, no necesariamente en memoria).
-- GPU profesionales: no hay mediciones publicadas en A100/H100 en la información disponible; por tamaño, un H100 de 80 GB no basta para el archivo completo en una sola unidad.
-- GPU de consumo: no cabe en ninguna GPU de consumo con VRAM dedicada (RTX 4090 = 24 GB, RTX 5090 = 32 GB). Requiere memoria unificada grande (el autor usa 128 GB en una Radeon 8060S con memoria unificada).
-- Opción medida: Windows + HIP nativo con el servidor `ds4-server` parcheado del repositorio compañero (`ds4-winhip`), arrancado con `run_ds41.ps1`. Expone API compatible con OpenAI.
-- Variables relevantes: `DS4_CUDA_COPY_MODEL=1` copia los pesos a memoria de GPU (requiere límite de commit por encima de ~100 GB); `-NoCopy` mapea en host (sin commit, más lento).
-- Otras opciones de despliegue (llama.cpp, vLLM, TGI, Ollama): no documentadas en la información disponible para este build.
-- Latencia de arranque: ~6 minutos hasta la primera respuesta, más ~110 s de calentamiento de kernels y grafos en la primera petición. No se debe medir rendimiento en la primera petición.
-- Concurrencia: una petición a la vez; la segunda se encola. Cualquier petición intermedia invalida los dos checkpoints KV vivos y fuerza un reprefijado completo (medido: 19,3k tokens, 138 s).
-- Almacén KV en disco: `--kv-disk-dir` y `--kv-disk-space-mb`; presente pero no validado en el build de Windows según el autor.
+- VRAM/memoria estimada: el archivo de pesos ocupa 103,43 GB (96,3 GiB). A ello hay que sumar la torre de vision (0,90 GiB), el drafter DSpark (5,05 MiB), el esqueleto denso GGUF (605,8 MiB) y las tablas Engram (dos shards de 101,5 GB cada uno, aproximadamente 203 GB adicionales).
+- Memoria unificada: se ha medido en una Radeon 8060S (gfx1151, HIP SDK 7.2) con 128 GB de memoria unificada. La variable `DS4_CUDA_COPY_MODEL=1` copia los pesos a memoria de GPU y requiere un limite de commit de Windows superior a unos 100 GB; `-NoCopy` mapea desde host (sin commit, mas lento).
+- GPU recomendadas: no se especifican en la informacion disponible. El unico hardware documentado es la Radeon 8060S con HIP. Para el modelo completo harian falta GPUs con memoria agregada superior a 100 GB (por ejemplo, multiples A100/H100), aunque no se confirma en la model card.
+- Cabe en GPU consumer: no de forma directa; el modelo completo excede la VRAM de cualquier GPU consumer actual. Requiere memoria unificada amplia o multiples GPU.
+- Opciones de despliegue: servidor `ds4-server` del repositorio staccs/ds4-winhip con HIP nativo en Windows; endpoint compatible con OpenAI. No se documentan vLLM, llama.cpp estandar, Ollama ni TGI para este build.
+- Latencia y throughput: no disponibles. La model card menciona que sin max_tokens un bucle de repeticion puede alcanzar 19,5k tokens en 22 minutos, pero no ofrece cifras de throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este build (`staccs/...lecore-vq11cal-GGUF`) | 106,8 B | No disponible | GGUF, VQ 11 bits | MIT | Calibrado por activaciones; PPL 2,817 a 2k |
-| `staccs/DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF` | 106,8 B (mismo origen) | No disponible | GGUF, VQ sin calibrar | MIT (heredada) | PPL 3,615 a 2k; top-1 74,5% |
-| `dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8` | No disponible (FP8 del mismo modelo) | No disponible | FP8 | No disponible | Modelo profesor de esta cuantización; sin pérdida de cuantización VQ |
-| `deepseek-ai/DeepSeek-V4.1-Flash-1017` | No disponible | No disponible | Pesos originales | MIT | Modelo oficial con alineamiento intacto |
+| DeepSeek-V4.1-Flash-1017-abliterated-lecore-vq11cal (este) | 106,8B | no disponible | GGUF VQ11 + q4_K | MIT | Cuantizacion calibrada; PPL 2,817 a 2k |
+| DeepSeek-V4.1-Flash-1017-lecore-vq10sh12 | no disponible | no disponible | GGUF VQ10 | no disponible | Build anterior no calibrado; PPL 3,615 a 2k |
+| dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 | no disponible | no disponible | FP8 | no disponible | Modelo fuente de la abliteracion |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | no disponible | no disponible | Modelo base original de DeepSeek |
 
-No se dispone de datos de benchmarks estándar ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a formato, licencia y métricas de fidelidad.
+No se dispone de datos de parametros, contexto ni licencia de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a lo documentado.
 
 ## Limitaciones y advertencias
 
-- Alineamiento eliminado: es una variante abliterated, es decir, se ha suprimido deliberadamente la capacidad de rechazo. Puede producir contenido tóxico, ilegal o dañino sin filtros; no debe exponerse a usuarios finales sin una capa de moderación propia.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no hay evaluación específica de veracidad en la información disponible.
-- Emisión de tokens reservados: el build anterior sin calibrar generaba «ensalada de palabras» con tokens reservados (por ejemplo `place_holder_no_362`) a temperatura 1,0 sin truncación en prompts de más de 14k tokens. Este build mejora las métricas de cola (masa basura media 2,10e-07, escape 0,0359), pero el riesgo no es nulo; se recomienda temperatura 0 o 0,6-0,7 con `top_p` 0,95 y `min_p` 0,05.
-- Discrepancia en el recuento de parámetros: la model card cita 557 B en expertos enrutados frente a 106,8 B totales en safetensors; conviene verificar antes de dimensionar hardware.
-- Longitud de contexto no declarada: solo se documentan evaluaciones a 2k y 16k y prompts de 19,3k tokens; no se garantiza un máximo oficial.
-- Dependencia de componentes externos: las tablas engram (~203 GB) se descargan por separado y no se han recuantizado.
-- Madurez del ecosistema: el despliegue documentado es específico de Windows + HIP en una Radeon 8060S con un servidor parcheado; no hay soporte documentado en llama.cpp, vLLM, TGI ni Ollama.
-- Rendimiento limitado: 14-17 tok/s de decodificación y una sola petición concurrente lo hacen poco adecuado para producción de alta concurrencia.
-- Gestión de caché KV frágil: cualquier petición intermedia invalida los checkpoints y provoca reprefijados de más de dos minutos.
-- Licencia: MIT permite uso comercial, pero al derivar de un modelo abliterated la responsabilidad legal y de contenido recae íntegramente en el desplegador; verificar también los términos del modelo base de DeepSeek.
-- Idiomas no declarados: no hay garantía de calidad fuera de los idiomas con los que se entrenó el modelo original, dato no disponible.
+- Modelo abliterated/uncensored: se ha eliminado el comportamiento de rechazo, por lo que puede generar contenido danino, ofensivo o ilegal. No es apto para aplicaciones de cara al publico sin filtros adicionales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad; como todo modelo generativo, puede producir informacion falsa con apariencia de rigor.
+- Bucles de repeticion: la model card advierte que sin max_tokens un bucle de repeticion puede consumir todo el contexto (caso observado de 19,5k tokens en 22 minutos). Con temperature 1.0 sin truncar el modelo produce "word salad" en prompts de 14k o mas; greedy es coherente pero entra en bucles deterministas en turnos largos de herramientas.
+- Sampling obligatorio en la practica: se recomienda temperature 0.6, top_p 0.95, min_p 0.05 y max_tokens 4096, ya que muchos frameworks de agentes no envian estos parametros.
+- Idiomas: la model card solo declara ingles; el rendimiento en castellano no esta documentado.
+- Dependencia de archivos auxiliares: el GGUF de 103 GB no es autosuficiente; requiere la torre de vision, el drafter DSpark, el esqueleto denso y los dos shards Engram (aproximadamente 203 GB adicionales) para servir el modelo completo.
+- Compatibilidad del drafter: el drafter DSpark es del build pqhaz; otras abliteraciones pueden usar la torre de vision y las tablas Engram, pero con una tasa de aceptacion menor.
+- Hardware: el despliegue medido usa HIP en Windows con una APU concreta; no hay garantias de funcionamiento en otras plataformas ni se documentan rutas CUDA, vLLM u Ollama.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantias y la responsabilidad del contenido generado recae en el desplegador.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-abliterated-dealignai-lecore-vq11cal-GGUF
-- Modelo base (abliterated, FP8): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
-- Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Build anterior sin calibrar: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF
-- Anuncio oficial de DeepSeek-V4.1-Flash: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
-- Artículo sobre la licencia MIT y el lanzamiento: https://tech-insider.org/deepseek-v4-1-flash-1017-mit-license-update-2026/
-- Lista de ejemplos y demos: https://github.com/sandbase-lab/awesome-deepseek-v4.1-flash
+- Modelo fuente (abliteracion de dealignai): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
+- Modelo base original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Sidecars (vision, drafter DSpark, esqueleto denso): https://huggingface.co/staccs/ds41-sidecars
+- Servidor HIP para Windows: https://huggingface.co/staccs/ds4-winhip
+- Build anterior no calibrado: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF

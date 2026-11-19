@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Fermicode-1B-Instruct-GGUF",
+  "slug": "mradermacher-fermicode-1b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Fermicode-1B-Instruct-GGUF",
+  "created_at": "2026-11-18T21:22:13.000Z",
+  "updated_at": "2026-11-18T21:27:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "trl",
+    "sft",
+    "en",
+    "dataset:nex-agi/agent-sft",
+    "base_model:pranavupadhyaya52/Fermicode-1B-Instruct",
+    "base_model:quantized:pranavupadhyaya52/Fermicode-1B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 11604174080,
+  "storage_human": "11.6 GB",
+  "context_length": 131072,
+  "base_model": "pranavupadhyaya52/Fermicode-1B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

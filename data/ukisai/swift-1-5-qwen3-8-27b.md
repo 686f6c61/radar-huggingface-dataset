@@ -2,111 +2,101 @@
 
 ## Resumen
 
-Swift 1.5 Qwen3.8-27B es un derivado de Qwen3.8-27B desarrollado por UkisAI (ukisai) y publicado en Hugging Face bajo el identificador ukisai/Swift-1.5-Qwen3.8-27b. Se trata de un ajuste fino orientado a la eficiencia de razonamiento: según la model card, reduce un 58,5 % los tokens de pensamiento (thinking tokens) respecto al modelo base manteniendo —e incluso mejorando ligeramente— la puntuación agregada, lo que se traduce en una aceleración de 1,95× en varias tareas. El modelo declara 27.781.427.952 parámetros (~27,78 B) en safetensors y un repositorio de 55,6 GB, coherente con pesos en BF16.
+Swift 1.5 Qwen3.8-27B es un modelo derivado por ajuste fino (post-entrenamiento) del Qwen3.8-27B de Alibaba Qwen, desarrollado por UkisAI. Su propuesta central es la eficiencia en el razonamiento: según la model card, reduce el consumo de tokens de "thinking" en un 58,5 % manteniendo una puntuación un 0,35 % superior a la del modelo base, lo que se traduce en una aceleración de hasta 1,95× en varias tareas. Es la evolución de Swift 1.0, que acumuló más de 350 000 descargas, y amplía el post-entrenamiento (RL y OPD) con foco en tareas de horizonte largo, agentes y código.
 
-El problema que aborda es el "sobrepensamiento patológico" (overthinking) de los modelos de razonamiento: cadenas de pensamiento largas que consumen presupuesto de inferencia sin aportar precisión. La estrategia de UkisAI consiste en identificar y penalizar los tokens asociados a ese sobrepensamiento, sin atacar directamente la longitud del razonamiento, y recuperar después la exactitud mediante RL y OPD (post-entrenamiento adicional). Swift 1.5 es una actualización directa de Swift 1.0 (~58,3 % menos tokens de pensamiento, <1 % de pérdida), con el foco puesto en tareas de código, agentes y horizonte largo.
+El modelo conserva la arquitectura y el tamaño del base: 27 781 427 952 parámetros (27,8 B) almacenados en safetensors, con un repositorio de 55,6 GB. La pipeline declarada es `image-text-to-text`, lo que indica capacidades multimodales de entrada imagen-texto, y la familia `qwen3_5`/`qwen3_8` sugiere una arquitectura transformer de la serie Qwen3.5 con módulo de razonamiento explícito.
 
-Es relevante ahora porque compite en la franja de ~27 B, donde el coste por token y la latencia importan tanto como la precisión en despliegues de agentes y terminal-bench. Su pipeline declarado es image-text-to-text, por lo que acepta entradas multimodales de imagen y texto, y el repositorio es gated con licencia propietaria swift-open-license-1.0, orientada a licenciamiento empresarial.
+Su relevancia actual radica en el coste de inferencia: en despliegues agénticos de múltiples pasos, el gasto en tokens de razonamiento domina la factura, y un modelo que mantiene precisión con casi un 60 % menos de tokens de pensamiento cambia el cálculo económico de pipelines de código, terminal y agentes autónomos. La licencia es propietaria (`swift-open-license-1.0`) y el repositorio está restringido (gated), lo que condiciona su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (pipeline image-text-to-text), derivada por ajuste fino de Qwen/Qwen3.8-27B; detalles internos de capas y atención no disponibles |
-| Parametros totales | 27.781.427.952 (~27,78 B) |
-| Longitud de contexto | 262.144 tokens (valor de --max-model-len en el ejemplo de despliegue con vLLM publicado por el autor para la familia Swift) |
-| Tipos de cuantizacion | BF16 en safetensors; GGUF (repositorio ukisai/Swift-1.5-Qwen3.8-27B-GGUF) y variante GSQ-RCO GGUF (ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF); otros formatos no disponibles |
-| Idiomas soportados | no disponible (heredados del modelo base Qwen3.8-27B; no se detallan en la información proporcionada) |
-| Licencia | swift-open-license-1.0 (license: other); repositorio con acceso restringido (gated) |
-| Formato de pesos | safetensors (librería transformers) y GGUF |
+| Arquitectura | Transformer de la familia Qwen3.5/Qwen3.8 (tag `qwen3_5`), con modo de razonamiento; detalles de capas y atención no disponibles |
+| Parametros totales | 27 781 427 952 (27,8 B) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | GGUF disponible en repositorio separado (`Swift-1.5-Qwen3.8-27B-GGUF`) y variante GSQ-RCO GGUF; niveles concretos (Q4_K_M, Q8_0, etc.) no disponibles |
+| Idiomas soportados | no disponible (la model card no declara lista de idiomas; se heredan presumiblemente los del base) |
+| Licencia | swift-open-license-1.0 (propietaria, `license: other`, repositorio gated) |
+| Formato de pesos | safetensors (transformers); GGUF en repositorios derivados |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de que se trata de un transformer multimodal con pipeline image-text-to-text y de que deriva por ajuste fino (base_model_relation: finetune) de Qwen/Qwen3.8-27B. No se especifica número de capas, tipo de atención, ni si incorpora componentes híbridos o MoE; tampoco se confirma que existan parámetros activos diferenciados, por lo que la ficha no incluye esa fila. El tamaño real de pesos (27,78 B) y el repositorio de 55,6 GB son consistentes con un checkpoint denso en BF16.
+El modelo parte del Qwen3.8-27B y no modifica la arquitectura: se trata de un ajuste fino sobre un transformer denso de 27,8 B parámetros con capacidad de entrada imagen-texto y un modo de razonamiento explícito (tokens de "thinking"). La innovación declarada no está en la topología sino en el post-entrenamiento: UkisAI identifica los tokens asociados a "sobrepensamiento patológico" y los penaliza sin atacar directamente la longitud del razonamiento, recuperando después la precisión mediante RL y OPD (on-policy distillation). El resultado es un uso comprimido de tokens con precisión mantenida o ligeramente superior.
 
-En cuanto al entrenamiento, la model card describe un proceso en dos fases. Primero se identifican los tokens vinculados al sobrepensamiento patológico y se penalizan sin recortar directamente la longitud del razonamiento; después se recupera la exactitud mediante RL y OPD, lo que produce un uso "comprimido" de tokens con precisión mantenida. Swift 1.5 parte de Swift 1.0 y escala esos métodos de post-entrenamiento con foco en tareas de horizonte largo, agénticas y de código, tal y como reflejan las mejoras citadas en LiveCodeBench y Terminal Bench 2.1. El autor publica los datos de entrenamiento en el dataset ukisai/Qwen3.8-27B-multi-turn-agent-sft, aunque aclara que no se usan tal cual: se remuestrean y se convierten en entornos de RL. No se indica el volumen total de tokens de entrenamiento ni la composición del dataset.
+Swift 1.5 se construye sobre Swift 1.0 escalando los métodos de post-entrenamiento que ya funcionaron en esa versión, esta vez con foco en tareas de horizonte largo, agentes y código, como reflejan las mejoras en LiveCodeBench y Terminal Bench 2.1. Los datos de entrenamiento son públicos en el dataset `ukisai/Qwen3.8-27B-multi-turn-agent-sft`, aunque la model card aclara que no se usan tal cual: se remuestrean y se convierten en entornos de RL adecuados. No se especifican el número total de tokens de entrenamiento ni la composición exacta del corpus.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de pensamiento explícito (el despliegue recomendado incluye --reasoning-parser qwen3).
-- Razonamiento token-eficiente: 58,5 % menos tokens de pensamiento que el modelo base según el autor.
-- Generación de código y tareas de programación de horizonte largo (mejoras reportadas en LiveCodeBench y Terminal Bench 2.1).
-- Uso de terminal y flujos agénticos (etiqueta terminal-bench en el repositorio).
-- Tool calling / function calling: el ejemplo de despliegue de la familia Swift activa --enable-auto-tool-choice con --tool-call-parser qwen3_coder.
-- Capacidades multimodales de entrada: pipeline image-text-to-text, admite imágenes junto con texto.
-- Conversación multi-turno (etiqueta conversational), con contexto declarado de hasta 262.144 tokens en la configuración de vLLM.
+- Generación de texto y razonamiento con modo de pensamiento explícito, optimizado para consumir menos tokens de razonamiento que el base.
+- Generación de código en escenarios de un solo turno y de horizonte largo; la model card cita mejoras en LiveCodeBench.
+- Uso de terminal y tareas agénticas de línea de comandos; se reportan resultados en Terminal Bench 2.1.
+- Entrada multimodal imagen-texto (pipeline `image-text-to-text`), lo que permite prompts con imágenes junto a texto.
+- Capacidades conversacionales multi-turno (tag `conversational`).
+- Orientación a entornos agénticos de múltiples pasos, con datos de SFT multi-turno específicos para agentes.
+- Soporte de tool calling / function calling: no se detalla explícitamente en la información disponible, aunque el enfoque agéntico del post-entrenamiento lo hace previsible; confirmar en la documentación del autor.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Agentes de terminal y automatización de DevOps: el modelo está post-entrenado específicamente para tareas de terminal y horizonte largo (etiqueta terminal-bench y mejoras en Terminal Bench 2.1), por lo que encaja en bucles de ejecución de comandos, diagnóstico de fallos y reparación de pipelines.
-- Generación de código en producción: con tool calling activable mediante --tool-call-parser qwen3_coder, puede integrarse en pipelines de CI/CD para proponer parches, invocar herramientas de build y validar resultados dentro de un bucle agéntico.
-- Desarrollo de videojuegos y prototipado rápido: el autor demuestra la generación de un globo terráqueo 3D explorable; la tarea pasó de 104,6 minutos con el modelo base a 11,39 minutos con Swift 1.5, lo que lo hace útil para prototipos jugables generados por prompt.
-- Asistentes conversacionales de contexto largo: con hasta 262.144 tokens de ventana en la configuración recomendada, permite mantener conversaciones multi-turno sobre documentación extensa o historiales largos sin truncar.
-- Análisis de documentos con imagen y texto: al aceptar entradas image-text-to-text, sirve para extraer y razonar sobre información de capturas, diagramas o documentos escaneados combinados con instrucciones textuales.
-- Razonamiento matemático y analítico con coste controlado: el objetivo declarado del ajuste es reducir el gasto de tokens de pensamiento manteniendo la precisión, lo que reduce el coste por consulta en cargas de razonamiento masivo por lotes.
-- Evaluación comparativa de eficiencia de razonamiento: sirve como referencia para estudiar técnicas de compresión de cadenas de pensamiento frente a Qwen3.8-27B y Swift 1.0.
+- Agentes de terminal y automatización de sistemas: el modelo está entrenado específicamente para Terminal Bench 2.1, por lo que encaja en agentes que ejecutan comandos, interpretan salidas y corrigen errores en bucles de varios pasos, donde la reducción de tokens de pensamiento abarata cada iteración.
+- Generación de código en producción: con mejoras declaradas en LiveCodeBench, puede integrarse en pipelines de CI/CD para generar parches, tests o refactorizaciones, y la eficiencia de tokens reduce la latencia en revisiones automáticas.
+- Desarrollo de prototipos y juegos en una sola sesión: la demo de la model card muestra la generación de un globo 3D explorable en 11,39 minutos frente a 104,6 minutos del base, un caso realista de generación de código largo con verificación iterativa.
+- Asistentes de razonamiento con presupuesto de tokens ajustado: en productos donde el coste por consulta es crítico, el 58,5 % menos de tokens de pensamiento permite servir más peticiones con la misma infraestructura sin degradar la precisión.
+- Análisis de capturas y documentos con imágenes: al aceptar entrada imagen-texto, sirve para extraer información de pantallas, diagramas o documentación escaneada y razonar sobre ella en conversaciones multi-turno.
+- Agentes de investigación y flujos multi-paso: los datos de SFT multi-turno orientados a agentes lo hacen adecuado para orquestar herramientas encadenadas (búsqueda, ejecución, verificación) con contexto conversacional persistente.
+- Evaluación comparativa de eficiencia: útil como referencia en experimentos de destilación o compresión de razonamiento, ya que su enfoque de penalización de tokens patológicos está documentado y sus datos de entrenamiento son públicos.
 
 ## Benchmarks y rendimiento
 
-La model card anuncia una tabla comparativa externa entre Qwen3.8-27B y Swift 1.5, pero los valores numéricos de esa tabla no están disponibles en la información proporcionada (solo se ha recuperado el marcado de estilo). Por tanto, no se reproducen cifras concretas de MMLU, HumanEval, GSM8K, LiveCodeBench o Terminal Bench 2.1.
+La model card incluye una tabla de evaluación externa que compara Qwen3.8-27B (base) con Swift 1.5, con métricas de puntuación, tokens de pensamiento, mediana y cambio relativo. Los valores numéricos concretos de esa tabla no están disponibles en la información proporcionada (el HTML fue truncado), por lo que no se reproducen cifras. Los benchmarks citados explícitamente son:
 
-Datos agregados que sí se declaran explícitamente:
+| Benchmark | Base | Swift 1.5 | Nota |
+|---|---|---|---|
+| LiveCodeBench | no disponible | mejora declarada frente al base | foco en código |
+| Terminal Bench 2.1 | no disponible | mejora declarada frente al base | foco agéntico/terminal |
+| Agregado de tareas (model card) | referencia | +0,35 % | con 58,5 % menos tokens de pensamiento y hasta 1,95× de aceleración |
 
-| Metrica | Valor declarado |
-|---|---|
-| Reduccion de tokens de pensamiento frente al base | 58,5 % |
-| Diferencia de puntuacion agregada frente al base | +0,35 % |
-| Aceleracion en varias tareas | 1,95× (la pagina del repositorio GGUF de Swift 1.5 cita 9,18×, en contradiccion con la model card) |
-| Comparacion de demo (generacion de juego 3D) | 104,6 minutos (base) frente a 11,39 minutos (Swift 1.5) |
-| Swift 1.0 (version anterior) | 58,3 % menos tokens de pensamiento, <1 % de perdida, 1,95× de aceleracion |
-
-No se han publicado resultados de benchmarks completos y verificables en la información disponible.
+No se han publicado en la información disponible los valores absolutos de MMLU, HumanEval, GSM8K ni del resto de benchmarks de la tabla del autor.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: ~55,6 GB solo para pesos (27,78 B × 2 bytes), más caché KV; requiere GPUs de 80 GB (A100 80 GB, H100 80 GB) o tensor parallelism sobre varias GPUs.
-- VRAM estimada en cuantización de 4 bits: ~14-16 GB de pesos, lo que permite ejecución en GPUs de consumo de 24 GB.
-- Cabe en GPU de consumo: sí, en RTX 4090 / RTX 3090 (24 GB) con cuantización GGUF de 4-5 bits y contextos moderados; para ventanas cercanas a 262.144 tokens la caché KV exigirá offload a CPU o VRAM adicional.
-- GPU recomendadas: A100 80 GB o H100 80 GB para BF16 con contexto amplio; A6000 48 GB para cuantizaciones de 8 bits; RTX 4090/3090 para GGUF de 4 bits.
-- Opciones de despliegue: vLLM o SGLang con una build que soporte Qwen3.8 (el autor publica un ejemplo con vllm serve, --dtype bfloat16, --tensor-parallel-size 1, --max-model-len 262144, --reasoning-parser qwen3, --enable-auto-tool-choice y --tool-call-parser qwen3_coder), transformers, así como llama.cpp / Ollama / LM Studio mediante los repositorios GGUF.
-- Latencia y throughput absolutos: no disponibles. La única referencia cuantitativa es la aceleración relativa de 1,95× (o 9,18× en la página GGUF) frente al modelo base en determinadas tareas.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 56 GB solo para pesos, más overhead de KV cache; requiere GPUs de 80 GB (A100 80GB, H100 80GB) o multi-GPU.
+- Cuantización GGUF: los repositorios `Swift-1.5-Qwen3.8-27B-GGUF` y `Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF` permiten reducir la huella; con cuantizaciones de 4 bits el modelo rondaría los 15-16 GB de pesos, lo que lo hace viable en GPUs consumer de 24 GB (RTX 3090, RTX 4090) y en configuraciones de 16 GB con cuantizaciones más agresivas y offload parcial.
+- GPU recomendadas: H100/A100 80GB para FP16 con contexto largo; RTX 4090 o RTX 3090 para cuantización 4-bit; para el modo multimodal con imágenes conviene margen adicional de VRAM.
+- Despliegue: transformers (librería declarada), llama.cpp/Ollama vía GGUF, y servidores compatibles con endpoints (`endpoints_compatible` en los tags). vLLM y TGI no se confirman en la información disponible.
+- Latencia y throughput: no disponibles como cifras absolutas; la model card reporta una aceleración de hasta 1,95× frente al base en varias tareas gracias a la reducción de tokens de pensamiento, y el ejemplo de generación de juego pasa de 104,6 a 11,39 minutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Swift 1.5 Qwen3.8-27B | 27,78 B | 262.144 tokens (config. vLLM) | -58,5 % tokens de pensamiento, +0,35 % puntuación agregada, 1,95× de aceleración frente al base | swift-open-license-1.0, acceso restringido (gated) | safetensors y GGUF en Hugging Face; 33 descargas y 14 likes en el momento de la consulta |
-| Qwen3.8-27B (modelo base) | no disponible | no disponible | Referencia de comparación: mayor gasto de tokens de pensamiento, menor velocidad en las tareas medidas | no disponible | Hugging Face (Qwen/Qwen3.8-27B) |
-| Swift 1.0 Qwen3.8-27B | no disponible (mismo base, ~27 B) | no disponible | -58,3 % tokens de pensamiento, <1 % de pérdida, 1,95× de aceleración | no disponible | Hugging Face; el autor reporta más de 350.000 descargas; GGUF disponible |
-
-No se dispone de datos verificables de otros modelos de la misma franja (~27 B) en la información proporcionada, por lo que no se incluye una comparación adicional.
+| Swift 1.5 Qwen3.8-27B | 27,8 B | no disponible | swift-open-license-1.0 (propietaria, gated) | Hugging Face, GGUF | Menos tokens de pensamiento, foco agéntico y código |
+| Qwen3.8-27B (base) | 27,8 B | no disponible | la del base (consultar) | Hugging Face | Referencia de precisión; más tokens de pensamiento y más lento según el autor |
+| Swift 1.0 Qwen3.8-27B | 27,8 B | no disponible | swift-open-license-1.0 | Hugging Face | Versión anterior, 350k+ descargas; superada por 1.5 en código y agentes |
+| Otros modelos de ~27-32 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles; la model card no documenta evaluación de sesgos ni de seguridad.
-- Riesgo de alucinación: no cuantificado en la información proporcionada; como modelo de razonamiento y uso agéntico, la propagación de errores en cadenas largas o en bucles de herramientas es un riesgo operativo a mitigar con verificación externa.
-- La longitud de contexto de 262.144 tokens procede del ejemplo de despliegue con vLLM de la familia Swift, no de una especificación formal del repositorio de Swift 1.5; conviene validarla contra el config.json antes de dimensionar infraestructura.
-- Idiomas soportados: no disponibles. No se puede garantizar calidad fuera de los idiomas principales del modelo base sin evaluación propia.
-- Licencia: swift-open-license-1.0 con license: other y repositorio gated. El uso comercial requiere revisar los términos del archivo LICENSE y, según la model card, pasar por el licenciamiento empresarial de UkisAI.
-- Discrepancia de datos: la aceleración declarada es 1,95× en la model card y 9,18× en la página del repositorio GGUF de Swift 1.5. No hay información que permita reconciliar ambas cifras.
-- Los resultados de evaluación publicados no incluyen la tabla numérica completa en la información recuperada; no deben citarse cifras concretas de benchmarks sin consultar la fuente original.
-- Todos los datos de rendimiento son comparaciones relativas frente a Qwen3.8-27B, no medidas absolutas de latencia o throughput.
-- El acrónimo OPD no se desglosa en la model card, por lo que no se puede confirmar la técnica exacta empleada.
-- Repositorio con pocas descargas (33) en el momento de la consulta: menor validación comunitaria que modelos establecidos.
+- Licencia propietaria `swift-open-license-1.0`: es necesario revisar el texto completo antes de cualquier uso comercial; no es una licencia open source estándar.
+- Repositorio gated: el acceso requiere aceptar condiciones en Hugging Face, lo que puede bloquear descargas automatizadas en CI.
+- La reducción de tokens de pensamiento puede degradar el rendimiento en tareas que requieren cadenas de razonamiento muy largas; el propio autor indica que la compresión se hizo sin atacar directamente la longitud, pero conviene validar en el dominio propio.
+- Riesgo de alucinación inherente a los modelos de 27 B, especialmente en tareas factuales y en generación de código sin verificación; la demo de juego no equivale a corrección funcional garantizada.
+- Idiomas soportados no declarados: no hay garantía explícita de calidad en castellano ni en otros idiomas distintos del inglés.
+- Longitud de contexto no disponible: planificar el despliegue sin asumir una ventana concreta hasta confirmarla en la documentación del base.
+- Los benchmarks publicados son del autor y con protocolos propios; la tabla completa no está disponible en la información proporcionada, por lo que las cifras deben tratarse con cautela hasta verificarlas.
+- El modelo base Qwen3.8-27B tiene sus propias condiciones de uso que pueden aplicar en cascada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
-- Repositorio GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
-- Repositorio GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión anterior Swift 1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
-- GGUF de Swift 1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
+- GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
+- GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/ukisai/Qwen3.8-27B-multi-turn-agent-sft
 - Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
-- Dataset de SFT multi-turno agéntico: https://huggingface.co/datasets/ukisai/Qwen3.8-27B-multi-turn-agent-sft
-- Anuncio de la familia Swift: https://ukisai.com/news/introducing-swift
 - Web del autor: https://ukisai.com
 - Página de producto: https://ukisai.com/products/swift
-- Demo jugable del ejemplo 3D: https://ukisai.com/swift-games/27b
-- Vídeo de la demo: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/resolve/main/swift-1.5-planet-demo.mp4
+- Demo del juego generado: https://ukisai.com/swift-games/27b

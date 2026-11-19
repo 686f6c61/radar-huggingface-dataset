@@ -1,101 +1,119 @@
 # OfflineBase/Glimmer-30B-2026-Knowledge-GGUF
 
 ## Resumen
-Glimmer 30B 2026 Knowledge GGUF es un ajuste fino comunitario del modelo base Muse Glimmer 30B de Meta, publicado por el usuario OfflineBase. Su objetivo es actualizar el conocimiento del modelo, que originalmente se detiene el 4 de enero de 2026, con noticias y eventos ocurridos entre esa fecha y el 29 de octubre de 2026, ademas de mejorar su calibracion para admitir desconocimiento en lugar de inventar respuestas. No es un lanzamiento oficial de Meta y el autor lo declara explicitamente.
 
-El modelo se distribuye exclusivamente en formato GGUF cuantizado para su uso con llama.cpp, con un total de 27.854.794.240 parametros (aproximadamente 27,9 mil millones) en los pesos originales. Se ofrece en varias cuantizaciones que van desde BF16 hasta IQ1_S, lo que permite desplegarlo en hardware muy diverso, desde GPUs de consumo hasta entornos con memoria muy limitada, a costa de perder conocimiento en los formatos mas agresivos.
+Glimmer-30B-2026-Knowledge es un fine-tune del modelo base Muse Glimmer 30B de Meta, desarrollado por OfflineBase durante el hackathon Meta Global AI Developer Hackathon (entrenado entre el 30 de octubre y el 1 de noviembre de 2026). Su objetivo es extender el conocimiento del modelo base, que tiene un corte de enero de 2026, con noticias y eventos ocurridos entre el 4 de enero y el 29 de octubre de 2026, además de mejorar la calibración de la incertidumbre para que el modelo admita más a menudo cuando no sabe algo. El modelo base cuenta con 27.854.794.240 parámetros (aproximadamente 27,85 mil millones) y esta ficha distribuye únicamente los pesos cuantizados en formato GGUF para llama.cpp, en variantes de 4, 2 y 1 bit.
 
-La relevancia de este modelo radica en su enfoque en la honestidad y la actualizacion de conocimiento: el autor reporta mejoras medibles tanto en preguntas sobre 2026 como en la tasa de respuestas "no lo se", aunque con limitaciones importantes que se detallan mas abajo.
+La relevancia de este modelo radica en su enfoque específico: no busca competir en razonamiento general, sino demostrar que un fine-tune ligero sobre un modelo de ~28B puede actualizar conocimiento factual reciente y mejorar la honestidad epistémica de forma medible. Según la model card, el modelo pasa de un 26,0% a un 69,1% en preguntas sobre titulares de 2026, y de un 26,3% a un 44,7% en preguntas donde debe admitir que no puede saber o corregir una premisa falsa. El repositorio tiene 2.173 descargas y 2 likes en el momento de la consulta.
 
-## Especificaciones tecnicas
+Es importante señalar que no se trata de un lanzamiento oficial de Meta: es un fine-tune comunitario construido con "Muse Spark Open" y no ha sido revisado ni respaldado por Meta. La licencia combina Apache 2.0 con las condiciones de la Muse Model License, y el modelo solo declara soporte para inglés.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Muse Glimmer 30B; ajuste fino mediante LoRA) |
-| Parametros totales | 27.854.794.240 |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base transformer, detalles no especificados en la información proporcionada) |
+| Parámetros totales | 27.854.794.240 (≈27,85B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0 (no incluido en este release), Q4_K_M, IQ2_XXS, IQ1_M, IQ1_S |
-| Idiomas soportados | Ingles (en) |
-| Licencia | apache-2.0-and-muse-model-license (Apache 2.0 mas condiciones de la Muse Model License) |
-| Formato de pesos | GGUF (llama.cpp); los pesos BF16 fusionados estan en otro repositorio |
+| Tipos de cuantización | 4-bit (Q4_K_M, 16,9 GB), 2-bit (IQ2_XXS, 7,96 GB), 1-bit (IQ1_S y otras variantes de 1 bit) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0-and-muse-model-license (Apache 2.0 + condiciones de Muse Model License) |
+| Formato de pesos | GGUF (para llama.cpp); los pesos BF16 merged están en un repositorio separado |
+| Modelo base | meta-models/Muse Glimmer 30B |
+| Dataset de entrenamiento | OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data |
+| Tamaño del repositorio | 57,6 GB |
+| Fecha de creación | 2026-11-01 |
+| Última actualización | 2026-11-04 |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Muse Glimmer 30B de Meta y se ajusta mediante LoRA de rango 64 y alpha 64 aplicado a todas las capas de proyeccion del lenguaje. El codificador de vision permanece congelado y sin cambios. El entrenamiento se realizo en tres fases: una primera fase de conocimiento con 199.309 ejemplos derivados de unas 43.000 piezas, una segunda fase con 520.895 ejemplos que anaden preguntas nuevas y pasajes adicionales centrados en noticias de IA, Meta y actualidad mundial, y una fase B de honestidad y razonamiento con 60.000 ejemplos que incluyen respuestas honestas de "no lo se", preguntas con premisas falsas, preguntas posteriores al corte de conocimiento y un 30% de ejemplos de razonamiento generados por el modelo base.
 
-Los hiperparametros compartidos incluyen AdamW de 8 bits, schedule coseno con un 3% de warmup, batch efectivo de 32, longitud maxima de 2.048 tokens y calculo de perdida solo sobre las respuestas. El entrenamiento se llevo a cabo con Unsloth sobre 8 GPU A100 de 80 GB. El modelo nunca se entreno con articulos en bruto: otros modelos leyeron pasajes cortos y generaron preguntas y respuestas. Ademas, las fases 1 y 2 incorporan 6.739 respuestas de replay (respuestas del propio modelo base a prompts de Dolly 15k) para preservar habilidades generales. La fase B repara el formato de razonamiento que la fase 2 habia roto.
+No se detalla en la información proporcionada la arquitectura interna del modelo base Muse Glimmer 30B (si es un transformer denso, MoE o híbrido). Lo que sí se documenta es el proceso de fine-tune: se trata de un ajuste supervisado sobre el modelo base utilizando el dataset OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data, que cubre eventos y noticias del 4 de enero al 29 de octubre de 2026. El entrenamiento se realizó entre el 30 de octubre y el 1 de noviembre de 2026, y el resultado se distribuye como un adaptador LoRA (en OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA) y como pesos BF16 merged (en OfflineBase/Muse-Glimmer-30B-2026-Knowledge), además de las cuantizaciones GGUF de este repositorio.
+
+La innovación técnica destacable no está en la arquitectura, sino en el objetivo del fine-tune: inyectar conocimiento factual reciente y enseñar al modelo a decir "no lo sé" con más frecuencia. La model card indica que el fine-tune incluye datos diseñados para que el modelo corrija premisas falsas y admita desconocimiento, aunque los resultados muestran que esta mejora es parcial (44,7% frente a 26,3% del base). No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO; estos datos no están disponibles en la información proporcionada. Las cuantizaciones se generaron con imatrix (según los tags del repositorio).
 
 ## Capacidades
-- Generacion de texto conversacional en ingles.
-- Actualizacion de conocimiento sobre eventos y noticias de 2026 (ventana del 4 de enero al 29 de octubre de 2026).
-- Mayor propension a admitir desconocimiento ante preguntas fuera de su conocimiento o con premisas falsas.
-- Razonamiento (con formato reparado en la fase B), aunque el autor recomienda desactivarlo para preguntas factuales.
-- Capacidades de vision heredadas del modelo base, con el codificador congelado y sin cambios respecto al original.
-- No se documenta soporte de tool calling ni de function calling en la informacion disponible.
-- No se documenta soporte de agentes o razonamiento multi-paso mas alla del modo de razonamiento basico.
-- Capacidades multilingues limitadas al ingles.
+
+- Generación de texto conversacional en inglés, con soporte de razonamiento multi-paso (reasoning) activable o desactivable.
+- Conocimiento factual actualizado hasta el 29 de octubre de 2026, incluyendo titulares y eventos de 2026.
+- Calibración de incertidumbre mejorada: admite no saber o corrige premisas falsas en mayor proporción que el modelo base (44,7% frente a 26,3% en el conjunto de 190 preguntas).
+- Razonamiento: con reasoning activado, el archivo Q4_K_M pasa entre 56 y 60 de 60 tareas de razonamiento; los pesos BF16 resuelven 147 de 150 problemas multi-paso.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: el razonamiento multi-paso está documentado, pero no se detalla soporte explícito para agentes.
+- Capacidades multilingües: solo inglés declarado.
+- Capacidades especiales: modo de razonamiento (thinking) activable; no se mencionan visión ni audio.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
 
 ## Casos de uso
-- Consulta de actualidad de 2026 en ingles: el modelo puede responder preguntas sobre eventos ocurridos entre enero y octubre de 2026 con una tasa de acierto del 29,0% en preguntas reformuladas de sus pasajes de entrenamiento, adecuado para prototipos de asistentes informativos con conocimiento temporal reciente.
-- Despliegue en hardware de consumo: las cuantizaciones IQ2_XXS, IQ1_M e IQ1_S permiten ejecutar el modelo en equipos con memoria limitada mediante llama.cpp, aunque con perdida significativa de conocimiento (17,12%, 11,12% y 8,32% respectivamente en las preguntas de 2026).
-- Sistemas que priorizan la honestidad: la fase B reduce la invencion de respuestas, admitiendo desconocimiento el 44,7% de las veces en un test de honestidad, lo que lo hace util en entornos donde una respuesta "no lo se" es preferible a una alucinacion.
-- Investigacion sobre calibracion y honestidad en modelos de lenguaje: el modelo y sus fases intermedias (fase 2 frente a fase B) permiten estudiar el equilibrio entre conocimiento y abstención.
-- Evaluacion de tecnicas de cuantizacion: el repositorio ofrece datos comparativos del rendimiento de distintas cuantizaciones (BF16, Q4_K_M, IQ2_XXS, IQ1_M, IQ1_S) sobre las mismas pruebas, util para decidir el compromiso entre tamano y calidad.
-- Ajuste fino posterior: los pesos BF16 fusionados y el adaptador LoRA estan disponibles en repositorios separados, lo que permite continuar el entrenamiento o adaptarlo a dominios concretos.
-- Prototipos de asistentes con vision: al conservar el codificador de vision del modelo base, puede emplearse en tareas multimodales basicas, aunque no se documentan evaluaciones especificas de vision en este ajuste.
+
+- Actualización de conocimiento en asistentes conversacionales: el modelo puede responder preguntas sobre eventos de 2026 (política, tecnología, cultura) que el modelo base desconoce, lo que lo hace adecuado para prototipos de asistentes que necesiten estar al día sin reentrenar desde cero.
+- Despliegue en dispositivos con recursos limitados: la variante IQ2_XXS (7,96 GB) permite ejecutar un modelo de ~28B en hardware de consumo, manteniendo los 40 hechos pre-2026 verificados y sin bucles en las 60 pruebas realizadas.
+- Investigación sobre calibración y honestidad epistémica: útil para estudiar cómo un fine-tune ligero afecta la tendencia del modelo a admitir desconocimiento o a corregir premisas falsas, con métricas comparativas frente al base.
+- Generación de resúmenes de noticias recientes: el modelo puede sintetizar información sobre titulares de 2026, aunque con riesgo de alucinación elevado (55,3% en el conjunto de 190 preguntas), por lo que requiere verificación humana.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece variantes de 4, 2 y 1 bit con métricas documentadas, lo que facilita estudiar el trade-off entre tamaño y retención de conocimiento en llama.cpp.
+- Base para fine-tunes posteriores: los pesos BF16 merged y el adaptador LoRA permiten a otros desarrolladores continuar el ajuste con datos adicionales o dominios específicos.
+- Pruebas de razonamiento con reasoning activado: adecuado para tareas de razonamiento multi-paso en inglés donde se priorice la precisión sobre la velocidad, dado que el modelo mantiene casi todo el rendimiento de razonamiento del base.
 
 ## Benchmarks y rendimiento
-Todos los resultados reportados por el autor usan decodificacion greedy (temperatura 0).
 
-| Prueba | Este modelo (BF16) | Fase 2 (BF16) | Base (Q4_K_M) |
+Los datos provienen de la model card del autor. Las puntuaciones de precisión son con decodificación greedy (temperatura 0).
+
+| Prueba | Este modelo (BF16) | Base Muse Glimmer 30B | Q4_K_M de este repo |
 |---|---|---|---|
-| 2.500 preguntas sobre 2026 | 29,0% | 30,2% | 18,4% |
-| Hechos anteriores a 2026 (40 preguntas) | 40/40 | no disponible | 40/40 |
-| Preguntas sobre Meta (137) | 35,8% | 40,9% | 14,6% |
-| 246 eventos destacados de 2026 | 69,1% | 70,7% | 26,0% |
-| Test de honestidad (admite no saber) | 44,7% | no disponible | 26,3% |
+| Titulares de 2026 (246 preguntas) | 69,1% | 26,0% | ≈70/100 en eventos de 2026 |
+| Preguntas reformuladas sobre pasajes de 2026 (2.500) | 29,0% | 18,4% | 28,8% |
+| Admite no saber o corrige premisa falsa (190) | 44,7% | 26,3% | no disponible |
+| De esas, eventos posteriores al 29 de octubre de 2026 (70) | 67,1% | 24,3% | no disponible |
+| Hechos pre-2026 verificados (40) | no disponible | no disponible | 40/40 |
+| Tareas de razonamiento (60) con reasoning activado | no disponible | 60/60 | 56-60/60 |
+| Problemas multi-paso (150) | 147/150 | 150/150 | no disponible |
+| Preguntas reformuladas (2.500) con IQ2_XXS | no disponible | no disponible | 17,1% |
+| Preguntas reformuladas (2.500) con 1-bit | no disponible | no disponible | 8,3%-11,1% |
 
-Rendimiento por cuantizacion en las 2.500 preguntas de 2026:
-
-| Archivo | Aciertos | Hechos antiguos |
-|---|---|---|
-| BF16 | 29,0% | 40/40 |
-| Q8_0 (no incluido) | 28,96% | 40/40 |
-| Q4_K_M | 28,84% | 40/40 |
-| IQ2_XXS | 17,12% | 40/40 |
-| IQ1_M | 11,12% | 37/40 |
-| IQ1_S | 8,32% | 36/40 |
-| Base Q4_K_M | 18,4% | 40/40 |
-| Base IQ1_S | 1,6% | 30/40 |
-
-Por tema en los 246 eventos destacados: IA 56,4%, Meta 57,1%, mundo 77,2%. El autor advierte que las preguntas de 2026 son reformulaciones de pasajes vistos en entrenamiento, por lo que el 29% mide recuerdo de hechos reformulados, no conocimiento general de 2026.
+Comparación con modelos abiertos de tamaño similar en eventos de 2026 (todos en 4-bit, evaluados por un revisor de IA no ciego a los modelos): este repositorio Q4_K_M acierta aproximadamente 70 de 100 titulares; el base, 27; Qwen3.8 27B, Gemma 4 31B y Granite 4.2 30B, 7 o menos cada uno. En tareas de razonamiento del mismo run, Qwen3.8 y Gemma 4 igualan o superan a este modelo. Gemma 4 tiene datos hasta enero de 2025; los otros dos no declaran fecha pero rechazan preguntas de 2026.
 
 ## Requisitos de hardware
-- VRAM estimada: no disponible de forma explicita; el tamano del repositorio es de 38,5 GB, lo que da una orientacion del espacio total necesario para todas las cuantizaciones.
-- El modelo base se entreno en 8 GPU A100 de 80 GB, pero la inferencia cuantizada requiere mucho menos.
-- Las cuantizaciones IQ1_M e IQ1_S estan pensadas para entornos con memoria muy limitada y podrian caber en GPUs de consumo, aunque no se especifican requisitos exactos.
-- Q4_K_M e IQ2_XXS requieren mas memoria y probablemente GPUs de gama alta o multiples GPUs, sin datos concretos disponibles.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF); el autor menciona compatibilidad con endpoints, pero no detalla otros frameworks como vLLM, TGI u Ollama.
+
+- VRAM estimada para inferencia: Q4_K_M ≈16,9 GB de pesos (más overhead de contexto); IQ2_XXS ≈7,96 GB; variantes de 1 bit por debajo de 8 GB.
+- GPU recomendadas: no especificadas en la información proporcionada. Por tamaño de pesos, Q4_K_M requiere GPUs con al menos 24 GB de VRAM (RTX 3090/4090, A10G, L4 con offload) o A100/H100 para mayor throughput; IQ2_XXS puede caber en GPUs de 12-16 GB.
+- Cabe en GPU de consumo: sí, especialmente las variantes de 2 y 1 bit; la de 4 bit requiere GPUs de 24 GB o configuraciones con offload a CPU.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF); compatible con endpoints según el tag del repositorio. No se confirma soporte de vLLM, TGI u Ollama en la información proporcionada.
 - Latencia y throughput: no disponibles.
+- Advertencia de decodificación: en IQ1_S se recomienda fijar un límite máximo de tokens, ya que entró en bucle en 9 de 60 prompts con decodificación greedy (el IQ1_S del base, en 57).
 
 ## Comparativa con modelos similares
-No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. La unica comparacion disponible es con el propio modelo base Muse Glimmer 30B y con la fase 2 intermedia del ajuste, cuyos resultados se recogen en la seccion de benchmarks.
+
+| Modelo | Parámetros | Contexto | Conocimiento 2026 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Glimmer-30B-2026-Knowledge (este) | ≈27,85B | no disponible | 69,1% (BF16) / ≈70% (Q4_K_M) | Apache 2.0 + Muse Model License | GGUF en HF; BF16 y LoRA en repos separados |
+| Muse Glimmer 30B (base) | ≈27,85B | no disponible | 26,0% | según modelo base (no detallada) | disponible como modelo base |
+| Qwen3.8 27B | 27B (según denominación) | no disponible | ≤7% en el run citado | no disponible | 4-bit evaluado |
+| Gemma 4 31B | 31B (según denominación) | no disponible | ≤7% en el run citado (datos hasta enero de 2025) | no disponible | 4-bit evaluado |
+| Granite 4.2 30B | 30B (según denominación) | no disponible | ≤7% en el run citado | no disponible | 4-bit evaluado |
+
+En razonamiento, Qwen3.8 y Gemma 4 igualan o superan a este modelo según la model card; la ventaja de este fine-tune se concentra en conocimiento de eventos de 2026 y en la tasa de admisión de desconocimiento.
 
 ## Limitaciones y advertencias
-- Solo disponible en ingles; no se documenta soporte de otros idiomas.
-- El conocimiento de 2026 se limita a la ventana del 4 de enero al 29 de octubre de 2026 y se evalua sobre preguntas reformuladas de pasajes de entrenamiento, por lo que el rendimiento real en preguntas nuevas puede ser inferior.
-- Aun admite desconocimiento solo el 44,7% de las veces en el test de honestidad: sigue inventando respuestas en el 55,3% de los casos en que no sabe.
-- Las cuantizaciones agresivas (IQ1_M, IQ1_S) pierden conocimiento de forma severa y olvidan algunos hechos anteriores a 2026 (3 y 4 de 40, respectivamente).
-- El autor recomienda desactivar el razonamiento para preguntas factuales, ya que el razonamiento activado aumenta las invenciones.
-- Restriccion de edad: solo para mayores de 18 anos.
-- Licencia sujeta a las condiciones de la Muse Model License ademas de Apache 2.0; es necesario revisar el archivo MUSE_MODEL_LICENSE.md antes de un uso comercial.
-- No es un lanzamiento oficial de Meta, que no ha revisado ni respaldado el modelo.
-- No se documentan capacidades de tool calling ni de agentes.
-- Los resultados se midieron con decodificacion greedy, mientras que Meta recomienda muestreo al servir el modelo; los numeros deben interpretarse como comparaciones entre modelos, no como el rendimiento esperado en un chat servido.
+
+- Alucinación elevada: en el conjunto de 190 preguntas, inventó una respuesta el 55,3% de las veces (el base, 70,0%).
+- Premisas falsas: no mejora al base; sigue aceptándolas el 80% de las veces.
+- Rechazos excesivos: rechaza más preguntas ordinarias que el base (18% frente a 6%).
+- El razonamiento empeora la factualidad: con reasoning activado genera más respuestas inventadas; para datos, la model card recomienda desactivarlo.
+- Las cuantizaciones de 1 bit pierden conocimiento (8,3%-11,1% en las 2.500 preguntas) y olvidan 3 o 4 de los 40 hechos pre-2026; IQ1_S entra en bucle con decodificación greedy en 9 de 60 prompts, por lo que conviene fijar max tokens.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Idioma: solo inglés; no hay soporte multilingüe declarado.
+- Longitud de contexto: no disponible; no se puede evaluar su idoneidad para contextos largos.
+- Licencia: Apache 2.0 más condiciones de Muse Model License; es necesario revisar MUSE_MODEL_LICENSE.md antes de uso comercial. No apto para menores de 18 años.
+- No es un lanzamiento oficial de Meta: fine-tune comunitario no revisado ni respaldado por Meta.
+- Metodología de evaluación: parte de los resultados (246 titulares) fue seleccionada y calificada por un único autor, y muchas respuestas de noticias también aparecen en las páginas de Wikipedia usadas en entrenamiento; las 190 preguntas sí se mantuvieron fuera del entrenamiento y se calificaron a ciegas. Las puntuaciones son greedy y los chats servidos diferirán.
 
 ## Enlaces
-- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-GGUF
-- Pesos BF16 fusionados: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge
-- Adaptador LoRA: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-LoRA
-- Licencia Muse Model License: https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-GGUF/blob/main/MUSE_MODEL_LICENSE.md
-- Modelo base: meta-models/Muse-Glimmer-30B (revision cec94fcfd6512f2cfe708138c32533b346ea4f69)
+
+- Repositorio Hugging Face (GGUF): https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-GGUF
+- Pesos BF16 merged: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
+- Adaptador LoRA: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA
+- Dataset de entrenamiento: https://huggingface.co/datasets/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data
+- Código del proyecto: https://github.com/Offline-Base/muse-muse
+- Registro de entrenamiento, datos y cuantización: https://github.com/Offline-Base/muse-muse/blob/main/docs/KNOWLEDGE_RUN_LOG.md
+- Dispositivos compatibles: https://github.com/Offline-Base/muse-muse/blob/main/docs/GLIMMER_DEVICES.md
+- Licencia Muse Model: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-GGUF/blob/main/MUSE_MODEL_LICENSE.md

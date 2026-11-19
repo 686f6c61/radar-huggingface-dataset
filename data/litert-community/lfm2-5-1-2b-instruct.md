@@ -2,97 +2,117 @@
 
 ## Resumen
 
-LFM2.5-1.2B-Instruct es el modelo insignia de Liquid AI para despliegue en dispositivos, diseñado específicamente para inferencia on-device con un equilibrio entre rendimiento y eficiencia. Este repositorio de la comunidad LiteRT (anteriormente TFLite) proporciona una conversión del modelo original al formato `.litertlm`, optimizado para el runtime LiteRT-LM de Google, lo que permite ejecutarlo en CPU y GPU de dispositivos móviles y ordenadores de sobremesa.
+LFM2.5-1.2B-Instruct es un modelo de lenguaje de 1.200 millones de parámetros desarrollado por Liquid AI, diseñado específicamente para inferencia en dispositivo (on-device) y entornos edge. Su arquitectura es híbrida: combina bloques de convolución corta con compuertas (gated short-convolution) y atención con consultas agrupadas (grouped-query attention), una combinación poco habitual que busca reducir el coste computacional y de memoria frente a los transformers densos convencionales manteniendo la calidad de un modelo de su tamaño.
 
-El modelo emplea una arquitectura híbrida que combina bloques de convolución corta con gating y atención grouped-query, una combinación poco habitual que le permite alcanzar velocidades de decodificación muy superiores a las de modelos puramente atencionales del mismo tamaño. Con 1.2 mil millones de parámetros y una ventana de contexto máxima de 4096 tokens, está pensado para tareas de chat, seguimiento de instrucciones y tool calling en entornos con recursos limitados.
+La entrada que nos ocupa, `litert-community/LFM2.5-1.2B-Instruct`, no es el modelo original sino su conversión al formato LiteRT-LM (`.litertlm`) realizada por la comunidad litert-community, para ejecutarse con el runtime LiteRT-LM de Google (el sucesor de TensorFlow Lite). Se distribuye en tres variantes cuantizadas: int8 dinámica (1,25 GB), int4 blockwise-32 con lineales OCTAV (736 MB) y una reexportación int4 compatible con GPU. La ventana de contexto del bundle está limitada a 4096 tokens de caché KV.
 
-La relevancia actual de este modelo radica en su capacidad para ejecutarse en hardware de consumo —como un Pixel 8a o un Mac con chip M4— manteniendo un rendimiento competitivo en tareas de razonamiento matemático, superando según sus creadores a modelos de mayor tamaño como Qwen3-1.7B y Gemma 3 1B. La versión int8 del repositorio alcanza un 81% en GSM8K, ligeramente por encima de la referencia bf16 en PyTorch (79%), lo que demuestra que la cuantización no degrada significativamente la calidad.
+El interés actual reside en su perfil de despliegue: según la model card, supera a Qwen3-1.7B y Gemma 3 1B en benchmarks de conocimiento y seguimiento de instrucciones con una huella menor, y las mediciones en dispositivo publicadas muestran 41 tok/s de decodificación en un Galaxy S26 (int8, CPU) y 20,4 tok/s en un Pixel 8a. Es, por tanto, una opción relevante para aplicaciones móviles y embebidas que necesiten un LLM local con soporte de tool calling y modo de razonamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: bloques de convolución corta con gating + grouped-query attention |
-| Parametros totales | 1.2 mil millones |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 4096 tokens (máximo, configurable vía `--max-num-tokens`) |
-| Tipos de cuantizacion | int8 dinámico (lineales + convoluciones + embedding), int4 blockwise-32 + OCTAV (lineales), int8 embedding, convoluciones en float32 |
-| Idiomas soportados | no disponible (no se especifica en la documentación) |
-| Licencia | lfm-open-license-v1.0 (Liquid AI) |
-| Formato de pesos | `.litertlm` (LiteRT-LM), también disponible el modelo base en safetensors |
+| Arquitectura | Híbrida: bloques de convolución corta con compuertas + atención con consultas agrupadas (GQA) |
+| Parametros totales | 1.200 millones (1.2B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 4096 tokens máximo de caché KV en este bundle (recomendado 1024 para chat) |
+| Tipos de cuantizacion | int8 dinámica (lineales, convoluciones y embedding); int4 blockwise-32 con lineales OCTAV, embedding int8 y convoluciones en float; variante int4 reexportada para GPU |
+| Idiomas soportados | No disponible |
+| Licencia | LFM Open License v1.0 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base original en safetensors |
+| Tamano del repo | 10,1 GB |
+| Tamano de los ficheros | int8: 1,25 GB; int4: 736 MB; int4_gpu: 736 MB |
+| Backend | CPU para todos los ficheros; `_int4_gpu` también en GPU (OpenCL en Android, Metal en macOS e iOS) con litert-lm ≥ 0.16.0 |
+| Runtime requerido | litert-lm ≥ 0.15 (los ficheros reempaquetados el 2026-10-13 con tipo de modelo `lfm2` requieren 0.15) |
+| Plantilla de chat | ChatML (`<|im_start|>…<|im_end|>`) con soporte de lista de herramientas y canal `<think>`, incluida en el bundle |
 
 ## Arquitectura y entrenamiento
 
-LFM2.5-1.2B-Instruct utiliza una arquitectura híbrida que integra bloques de convolución corta con mecanismos de gating junto con atención grouped-query. Esta combinación permite que el modelo procese secuencias largas de forma eficiente, ya que las convoluciones capturan dependencias locales de manera más rápida que la atención, mientras que la atención grouped-query maneja las dependencias globales con un coste computacional reducido. Según la documentación de Liquid AI, el modelo fue preentrenado con 28 billones de tokens y posteriormente afinado mediante aprendizaje por refuerzo en múltiples etapas, lo que le confiere habilidades sólidas en seguimiento de instrucciones y tool calling.
+El modelo base es un transformer híbrido en el que los bloques de atención con consultas agrupadas se intercalan con bloques de convolución corta con compuertas. Este diseño reduce el estado recurrente y el coste de atención en secuencias largas, lo que explica que el bundle pueda operar con una caché KV de solo 4096 tokens y que el runtime necesite metadatos específicos (`ExecutorMetadata`) para enlazar los buffers de estado híbridos conv/attention. La model card de esta conversión no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; esos datos corresponden a la model card del modelo base de Liquid AI y no se incluyen en la información disponible.
 
-El proceso de entrenamiento incluye una fase de instrucción con plantilla ChatML que soporta listas de herramientas y un canal de "thinking" declarado, lo que permite al modelo razonar de forma explícita antes de responder. La conversión a LiteRT-LM mantiene byte-idénticos los pesos y el grafo respecto al modelo original, añadiendo únicamente metadatos de ejecución para el runtime. La cuantización int8 dinámica cubre todas las capas lineales, convoluciones y embedding, mientras que la variante int4 utiliza cuantización blockwise de 32 elementos con el esquema OCTAV para las capas lineales, manteniendo las convoluciones en float32.
+La innovación técnica destacable de esta entrada no está en el entrenamiento sino en el proceso de conversión y cuantización. La receta int8 aplica cuantización dinámica a lineales, convoluciones y embedding; la receta int4 usa cuantización por bloques de 32 con lineales OCTAV, embedding int8 y convoluciones en float. Según las mediciones publicadas, la conversión int8 alcanza paridad con la referencia en PyTorch bf16 (81 % frente a 79 % en GSM8K, dentro del ruido estadístico), mientras que int4 cede 7 puntos (72 %) a cambio de un 41 % menos de tamaño de descarga. El bundle incorpora tokenizador, plantilla de chat completa y parada limpia en `<|im_end|>`.
 
 ## Capacidades
 
-- Generación de texto conversacional y seguimiento de instrucciones en formato ChatML.
-- Tool calling / function calling: la plantilla incluida soporta listas de herramientas y el modelo puede invocar funciones externas.
-- Razonamiento multi-paso con canal de "thinking" explícito, útil para tareas de razonamiento matemático y lógico.
-- Razonamiento matemático: alcanza un 81% en GSM8K (int8) con 0-shot chain-of-thought.
-- Capacidades multilingües: no especificadas, aunque el modelo base de Liquid AI suele soportar múltiples idiomas; no hay datos confirmados en este repositorio.
-- Inferencia on-device: optimizado para CPU y GPU en dispositivos móviles (Android, macOS) y ordenadores de sobremesa.
-- Integración con el ecosistema LiteRT-LM: compatible con Google AI Edge Gallery y el runtime `litert-lm`.
+- Generación de texto y seguimiento de instrucciones en conversaciones multi-turno.
+- Razonamiento matemático con cadena de pensamiento: la evaluación GSM8K se realizó en modo 0-shot chain-of-thought, y el bundle declara un canal `<think>` en la plantilla.
+- Razonamiento general y conocimiento factual: según la model card del modelo base, supera a Qwen3-1.7B y Gemma 3 1B en benchmarks de conocimiento y seguimiento de instrucciones.
+- Tool calling / function calling: la plantilla de chat incluida soporta listas de herramientas.
+- Modo de razonamiento explícito mediante el canal `<think>`.
+- Ejecución en CPU y GPU en dispositivo: Android (OpenCL), macOS e iOS (Metal) para el fichero `_int4_gpu`; CPU para todos los ficheros.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- No se declaran capacidades de visión ni audio.
 
 ## Casos de uso
 
-- Asistentes conversacionales en dispositivos móviles: el modelo puede gestionar diálogos multi-turno con contexto de hasta 4096 tokens, suficiente para mantener conversaciones coherentes sin depender de la nube. Su velocidad de decodificación en CPU (93 tok/s en un M4 Max) permite una experiencia fluida en hardware de gama media.
-- Automatización de atención al cliente en edge: gracias a su soporte de tool calling, puede integrarse en sistemas de ticketing o CRM para consultar bases de datos, enviar respuestas o escalar incidencias, ejecutándose localmente en el dispositivo del agente o en un servidor de bajo coste.
-- Razonamiento matemático y lógico en entornos sin GPU: su buen resultado en GSM8K (81% int8) lo hace adecuado para aplicaciones educativas, resolución de problemas aritméticos o asistentes de estudio que funcionen en portátiles sin tarjeta gráfica dedicada.
-- Chatbots de documentación técnica con RAG: el modelo puede combinarse con un pipeline de recuperación aumentada para responder preguntas sobre manuales o bases de conocimiento internas, aprovechando su capacidad de seguir instrucciones y su ventana de contexto de 4096 tokens para procesar fragmentos relevantes.
-- Prototipado rápido de agentes conversacionales: al ser un modelo pequeño y rápido, permite iterar sobre lógica de agentes, prompts y flujos de tool calling en entornos de desarrollo locales sin necesidad de infraestructura cloud.
-- Inferencia en dispositivos Android de gama media: con la variante int4 (736 MB) se puede desplegar en teléfonos como el Pixel 8a, alcanzando ~31 tok/s en CPU, suficiente para aplicaciones de chat offline o asistentes personales que respeten la privacidad del usuario.
+- Asistentes conversacionales en aplicaciones móviles: el modelo cabe en 736 MB en int4 y decodifica a 41 tok/s en un Galaxy S26 con CPU, lo que permite respuestas interactivas sin conexión a un servidor y sin coste de API.
+- Respuesta a preguntas sobre documentos cortos en el dispositivo: con 4096 tokens de caché KV puede procesar correos, notas o fragmentos de manuales y responder sin enviar datos personales a la nube, algo relevante por privacidad y cumplimiento del RGPD.
+- Automatización de tareas con herramientas en apps Android: la plantilla ChatML con soporte de lista de herramientas permite definir funciones (calendario, clima, contactos) y dejar que el modelo emita llamadas estructuradas que la aplicación ejecute.
+- Razonamiento matemático asistido en entornos educativos o de campo: con un 81 % en GSM8K (int8) puede resolver problemas aritméticos de varios pasos en un Raspberry Pi 5 a 9,3 tok/s (int4) o 7,0 tok/s (int8), suficiente para un tutor offline.
+- Prototipado y evaluación de pipelines edge: el formato `.litertlm` y el runtime litert-lm permiten validar latencias reales (TTFT de 440 ms en Galaxy S26 int8) antes de comprometerse con un modelo mayor o con infraestructura cloud.
+- Procesamiento por lotes de bajo volumen en dispositivos sin GPU: en un Raspberry Pi 5 con 4 hilos, el prefill de 54 tok/s (int4) y 75 tok/s (int8) hace viable clasificar o resumir textos cortos en un dispositivo de 8 GB.
+- Filtrado y moderación local de contenido: la baja latencia de prefill (491 tok/s en Galaxy S26 int8) permite clasificar entradas de usuario en tiempo real antes de enviarlas a un servicio remoto.
 
 ## Benchmarks y rendimiento
 
-La model card del repositorio proporciona resultados de GSM8K (greedy, 0-shot chain-of-thought, max-tokens 1024, n=100) comparando la conversión LiteRT con la referencia PyTorch:
+GSM8K, greedy, 0-shot chain-of-thought, máximo 1024 tokens, n=100, mismo arnés para todas las filas:
 
-| Configuracion | GSM8K |
+| Configuración | GSM8K |
 |---|---|
-| PyTorch bf16 (referencia) | 79% |
-| LiteRT int8 (este repositorio) | 81% |
-| LiteRT int4-b32 OCTAV (este repositorio) | 72% |
+| PyTorch bf16 (referencia) | 79 % |
+| LiteRT int8 (este repositorio) | 81 % |
+| LiteRT int4-b32 OCTAV (este repositorio) | 72 % |
 
-Además, la model card afirma que el modelo base supera a Qwen3-1.7B y Gemma 3 1B en benchmarks de conocimiento y seguimiento de instrucciones, aunque no se proporcionan cifras concretas en la información disponible. No se han publicado resultados adicionales de benchmarks (MMLU, HumanEval, etc.) en la documentación de este repositorio.
+Mediciones en dispositivo publicadas en la model card:
+
+| Dispositivo | Fichero | Backend | Decode | Prefill | TTFT |
+|---|---|---|---|---|---|
+| Galaxy S26 | int8 | CPU | 41,0 tok/s | 491 tok/s | 440 ms |
+| Pixel 8a | int8 | CPU | 20,4 tok/s | 143 tok/s | 1,48 s |
+| Raspberry Pi 5 (4 hilos) | int8 | CPU | 7,0 tok/s | 75 tok/s | 3,56 s |
+| Raspberry Pi 5 (4 hilos) | int4 | CPU | 9,3 tok/s | 54 tok/s | 4,84 s |
+| Galaxy S26 | int4 | GPU | No ejecutó: `engine_create_failed` (2026-08-23) | — | — |
+| Apple M4 Max | int8 | CPU | 101 tok/s (presupuesto 1024) / 77 tok/s (presupuesto 4096) | — | — |
+
+No se han publicado en la información disponible resultados de MMLU, HumanEval ni otras comparativas numéricas frente a modelos de la competencia; la afirmación de superioridad frente a Qwen3-1.7B y Gemma 3 1B procede de la model card del modelo base y no incluye cifras en esta entrada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la variante int8 ocupa 1.25 GB y la int4 736 MB, por lo que caben en GPUs de consumo con 2 GB o más de memoria.
-- GPUs recomendadas: cualquier GPU moderna con soporte OpenCL (Android, macOS) o CUDA (a través del runtime LiteRT-LM). En Apple M4 Max se alcanzan 318 tok/s de decodificación en GPU.
-- Compatibilidad con consumer GPU: sí, tanto en CPU como en GPU de portátiles y sobremesa. En un Pixel 8a (Tensor G3) se obtienen ~19-31 tok/s en CPU y ~21 tok/s en GPU.
-- Opciones de despliegue: runtime `litert-lm` (CLI), Google AI Edge Gallery (aplicación Android), o integración mediante SDKs. El modelo base también es compatible con Transformers, vLLM y llama.cpp, aunque este repositorio está orientado a LiteRT-LM.
-- Latencia y throughput: en M4 Max con CPU, prefill de 1592 tok/s y decodificación de 93.1 tok/s (int8, max-tokens 1024); en GPU, prefill de 3765 tok/s y decodificación de 318.3 tok/s. En Pixel 8a con GPU, prefill de 188-193 tok/s y decodificación de 21 tok/s.
+- VRAM/RAM estimada: 1,25 GB para int8 y 736 MB para int4 (pesos); añadir la caché KV, que crece con el presupuesto de tokens hasta 4096. En la práctica, un dispositivo con 3-4 GB de RAM libre es suficiente para int8 con contexto moderado.
+- GPU recomendadas: no se especifican modelos de datacenter; el objetivo son GPU integradas y móviles. El fichero `_int4_gpu` funciona con OpenCL en Android y Metal en macOS e iOS. En un Galaxy S26 con GPU falló la creación del motor con litert-lm 0.16.0, aunque la verificación posterior en un Pixel 8a con litert-lm 0.16.1 completó turnos de texto tanto en GPU como en CPU.
+- Cabe en GPU de consumo: no hay datos de RTX 4090, A100 o H100 en la información disponible; el modelo está pensado para SoC móviles y placas como Raspberry Pi 5.
+- Opciones de despliegue: runtime LiteRT-LM (`litert-lm run`), AI Edge Gallery en Android; el modelo base puede desplegarse con otros runtimes, pero esta conversión es específica de LiteRT-LM.
+- Latencia y throughput: ver tabla de benchmarks. En iOS es obligatorio fijar `maxNumTokens` a 1024; un valor distinto rompe la creación del motor. En Apple M4 Max, la decodificación int8 cae de 101 a 77 tok/s al pasar el presupuesto de 1024 a 4096 tokens, por lo que conviene ajustar `--max-num-tokens` al mínimo necesario.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GSM8K | Licencia | Formato |
+| Modelo | Parámetros | Contexto | GSM8K | Licencia | Formato edge |
 |---|---|---|---|---|---|
-| LFM2.5-1.2B-Instruct (LiteRT) | 1.2B | 4096 | 81% (int8) | lfm-open-license-v1.0 | .litertlm |
-| Qwen3-1.7B | 1.7B | no disponible | no disponible | Apache 2.0 | safetensors, GGUF |
-| Gemma 3 1B | 1B | no disponible | no disponible | Gemma Terms of Use | safetensors, GGUF |
+| LFM2.5-1.2B-Instruct (esta conversión) | 1,2B | 4096 (caché KV) | 81 % int8 / 72 % int4 | LFM Open License v1.0 | `.litertlm` |
+| Qwen3-1.7B | 1,7B | No disponible | No disponible | No disponible | No disponible en esta entrada |
+| Gemma 3 1B | 1B | No disponible | No disponible | No disponible | No disponible en esta entrada |
 
-Según la model card, LFM2.5-1.2B-Instruct supera a Qwen3-1.7B y Gemma 3 1B en benchmarks de conocimiento y seguimiento de instrucciones, aunque no se aportan cifras concretas. La principal ventaja de este modelo es su arquitectura híbrida, que le permite decodificar más rápido que modelos puramente atencionales del mismo tamaño, y su disponibilidad en formato LiteRT-LM para despliegue on-device.
+La model card del modelo base afirma que LFM2.5-1.2B-Instruct supera a Qwen3-1.7B y Gemma 3 1B en conocimiento y seguimiento de instrucciones con menor huella, pero no se aportan cifras de esos benchmarks en la información disponible, por lo que la comparación cuantitativa no puede verificarse aquí.
 
 ## Limitaciones y advertencias
 
-- Contexto limitado a 4096 tokens, lo que puede ser insuficiente para tareas que requieran procesar documentos largos o conversaciones muy extensas.
-- No está orientado a generación de código intensiva ni a tareas que requieran conocimiento enciclopédico profundo, según la documentación de Overmind.
-- La licencia lfm-open-license-v1.0 es una licencia específica de Liquid AI; es necesario revisar sus términos para uso comercial, aunque es de tipo open source.
-- La variante int4 sacrifica 7 puntos de GSM8K (72% vs 79% bf16) a cambio de un 41% menos de tamaño; hay que evaluar si esa pérdida es aceptable para el caso de uso.
-- En iOS, la ejecución en GPU falla actualmente (issue #3129 de LiteRT-LM), por lo que solo está disponible la vía CPU en dispositivos Apple móviles.
-- La velocidad de decodificación depende fuertemente del presupuesto de tokens configurado (`--max-num-tokens`); aumentar el límite reduce el throughput (de 101 a 77 tok/s en int8 al pasar de 1024 a 4096).
-- No se han publicado datos sobre sesgos o alucinaciones específicos de este modelo; se recomienda validar las respuestas en aplicaciones críticas.
+- Contexto limitado: la caché KV de este bundle está limitada a 4096 tokens; no es adecuado para documentos largos ni conversaciones extensas sin truncado o resumen intermedio.
+- Idiomas: no se especifica la cobertura lingüística; no hay garantía documentada de rendimiento en castellano.
+- Alucinación: como todo LLM de 1,2B, la tasa de error factual es mayor que en modelos de mayor tamaño; el 81 % en GSM8K no implica precisión equivalente en conocimiento abierto.
+- Pérdida por cuantización: int4 baja 7 puntos en GSM8K respecto a int8 y a la referencia bf16; para tareas sensibles a la precisión conviene usar int8 a costa del doble de tamaño.
+- Bug conocido de conversación: en litert-lm 0.18.0, al iniciar una nueva conversación sobre un motor que ya ejecutó otra, el runtime reutiliza el estado de convolución corta de la conversación anterior y no lo reinicia (informe abierto en el repositorio de LiteRT-LM). La recomendación es usar un motor por conversación; las pruebas publicadas solo cubren tres preguntas cortas y no permiten extrapolar a conversaciones largas.
+- Compatibilidad de runtime: los ficheros reempaquetados el 2026-10-13 necesitan litert-lm ≥ 0.15; versiones anteriores fallan con `missing some output TensorBuffers`.
+- iOS: es obligatorio fijar `maxNumTokens` a 1024; otro valor impide crear el motor.
+- GPU Android: hay al menos un fallo documentado de creación de motor en Galaxy S26 con litert-lm 0.16.0; verificar en el dispositivo objetivo antes de producción.
+- Licencia: LFM Open License v1.0, no es una licencia de código abierto estándar; deben revisarse sus condiciones antes de uso comercial. La conversión mantiene la licencia del modelo base.
+- Este repositorio es una conversión comunitaria, no oficial de Liquid AI; los pesos y el grafo son idénticos al modelo base, pero el soporte depende del proyecto litert-community y del runtime de Google.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/litert-community/LFM2.5-1.2B-Instruct
-- Modelo base (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
-- Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
-- Página en Overmind: https://www.overmindlab.ai/models/lfm-2-5-1-2b-instruct
-- ModelScope: https://www.modelscope.cn/models/LiquidAI/LFM2.5-1.2B-Instruct
-- Repositorio LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
-- Issue de iOS Metal: https://github.com/google-ai-edge/LiteRT-LM/issues/3129
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/litert-community/LFM2.5-1.2B-Instruct
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Informe del bug de reutilización de estado entre conversaciones: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
+- Ficha de compatibilidad edge (int4): https://github.com/john-rocky/edge-compat/blob/main/cards/lfm2.5-1.2b-instruct-int4/CARD.md
+- Ficha de compatibilidad edge (int8): https://github.com/john-rocky/edge-compat/blob/main/cards/lfm2.5-1.2b-instruct-int8/CARD.md
+- Benchmark de runtimes en Apple Silicon y Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

@@ -1,76 +1,80 @@
 # lerobot/smolvla_base
 
 ## Resumen
+SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto desarrollado por Hugging Face dentro del ecosistema LeRobot. Su objetivo es ofrecer robótica asequible: un modelo entrenable en una sola GPU y desplegable en hardware de consumo, con un rendimiento que, según los autores, iguala a VLAs mucho más grandes gracias a datos aportados por la comunidad. Está pensado como modelo base para ajuste fino en casos de uso robóticos concretos.
 
-SmolVLA es un modelo Vision-Language-Action (VLA) compacto y eficiente desarrollado por el equipo de LeRobot de Hugging Face para robotica asequible. Resuelve el problema de entrenar politicas de control de robots a partir de demostraciones humanas, combinando percepcion visual, estado del robot e instrucciones de lenguaje para generar acciones motoras continuas. Con 450 millones de parametros y un tamano de 1.8 GB, esta disenado para entrenarse en una sola GPU y desplegarse en hardware de consumo, igualando el rendimiento de VLA mucho mas grandes gracias a datos comunitarios. Su relevancia actual radica en democratizar el acceso a la robotica de bajo coste y permitir la adaptacion de politicas de manipulacion a tareas concretas mediante fine-tuning. El modelo usa un objetivo de entrenamiento de flow matching y esta pensado como base para casos de uso especificos.
+El modelo parte de SmolVLM2-500M-Video-Instruct y se especializa en mapear observaciones multimodales (imágenes de varias cámaras y estado propioceptivo del robot, con instrucción de lenguaje opcional) a acciones continuas. Con 450 millones de parámetros y un repositorio de 1,8 GB, es un modelo ligero orientado a inferencia en tiempo real en brazos robóticos de bajo coste.
+
+Se publica bajo licencia Apache 2.0, lo que facilita su uso comercial e integración en productos. La relevancia actual radica en la combinación de tamaño reducido, licencia permisiva y un pipeline de entrenamiento e inferencia ya integrado en LeRobot, lo que reduce la barrera de entrada para laboratorios y desarrolladores que quieran aplicar VLA en robótica real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-Language-Action (VLA) |
+| Arquitectura | Vision-Language-Action (VLA) basada en SmolVLM2-500M-Video-Instruct; política de imitación con flow matching |
 | Parametros totales | 450.046.176 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (instrucciones de lenguaje) |
-| Licencia | No disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (entrenamiento indicado en bfloat16) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+SmolVLA es una política VLA construida sobre el modelo visión-lenguaje SmolVLM2-500M-Video-Instruct. Recibe como entrada imágenes de múltiples vistas, el estado propioceptivo del robot y, opcionalmente, una instrucción en lenguaje natural; produce como salida acciones continuas. El objetivo de entrenamiento es flow matching, una formulación generativa para modelar distribuciones continuas de acciones, y la representación de acciones es continua.
 
-SmolVLA es un modelo Vision-Language-Action (VLA) que integra procesamiento de imagenes multi-vista, estado propioceptivo del robot e instrucciones de lenguaje para predecir acciones motoras continuas. La arquitectura interna completa no se detalla en la informacion disponible, pero el modelo utiliza un objetivo de entrenamiento de flow matching, que modela la distribucion de acciones como un campo vectorial para generar trazadas de movimiento suaves y estables. El entrenamiento se basa en datos de demostracion de la comunidad (imitation learning) y el modelo se publica como base para ser ajustado a tareas especificas mediante fine-tuning con datasets de LeRobot. No se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset.
+El modelo se entrena mediante imitación (imitation learning) sobre datasets en formato LeRobot. La model card indica que está diseñado para ser entrenado en una sola GPU con configuraciones modestas (por ejemplo, batch_size de 4 y 100.000 pasos en el comando de ejemplo), e incluye opciones específicas de política como chunk_size, n_action_steps, max_action_tokens y gradient_checkpointing. No se detalla en la información disponible el número exacto de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO.
 
 ## Capacidades
-
-- Generacion de acciones motoras continuas a partir de observaciones visuales multimodales (multi-vista), estado del robot y, opcionalmente, instrucciones en lenguaje natural.
-- Soporte para imitacion de demostraciones humanas mediante entrenamiento con datos de LeRobot.
-- Objetivo de flow matching para producir acciones suaves, ideal para control de manipuladores en tiempo real.
-- Fine-tuning: el modelo esta disenado como base para adaptarse a tareas de robotica especificas, como pick-and-place, ensamblaje o manipulacion de objetos.
-- Capacidades de transferencia: puede ajustarse con datasets de distintos entornos y robots.
-- Integracion con el ecosistema LeRobot, incluyendo scripts de entrenamiento e inferencia real en robots.
-- Procesa instrucciones de lenguaje en ingles.
+- Generación de acciones continuas para control robótico a partir de observaciones visuales y estado del robot.
+- Procesamiento de imágenes de múltiples vistas (por ejemplo, cámara superior y cámara lateral).
+- Condicionamiento por instrucción en lenguaje natural opcional (en inglés).
+- Aprendizaje por imitación: ajuste fino sobre demostraciones grabadas en formato LeRobot.
+- Integración con el ecosistema LeRobot para entrenamiento (`lerobot-train`), inferencia (`select_action`) y evaluación en robot real (`lerobot-record`).
+- Soporte de estado propioceptivo del robot como entrada adicional.
+- No se documentan en la información disponible capacidades de tool calling, agentes multi-paso, visión general, audio o modo de razonamiento explícito.
 
 ## Casos de uso
-
-- Control de brazos roboticos en manipulacion: el modelo genera acciones continuas a partir de imagenes de camaras de bajo coste y el estado articular. Es adecuado porque su tamano reducido permite ejecutarlo en un PC con GPU de consumo conectado directamente al robot.
-- Imitacion de tareas de ensamblaje: se puede entrenar el modelo con demostraciones humanas del ensamblaje de piezas, usando las imagenes de varias vistas para capturar el contexto. Su entrenamiento flow matching facilita movimientos precisos y repetibles.
-- Robotica domestica de bajo coste: SmolVLA se ejecuta en hardware asequible, lo que permite montar un robot casero con brazos SO100 y controlarlo con un portatil. El modelo base se ajusta con datos propios de la casa.
-- Investigacion en aprendizaje por imitacion: los laboratorios pueden usar el modelo como base para experimentar con nuevas tecnicas de imitation learning, gracias a su codigo abierto y entrenabilidad en una sola GPU.
-- Evaluacion de politicas en entornos simulados y reales: con el script `lerobot-record`, se puede desplegar la politica en un robot fisico o simulador para medir su rendimiento en tareas concretas, grabando episodios para analisis.
-- Ajuste fino para manipulacion de objetos flexibles o en tareas de alta precision: el modelo base se puede especializar en tareas como doblar tela o manipular cables, proporcionando un punto de partida eficiente en lugar de entrenar desde cero.
-- Educacion y divulgacion en robotica: el modelo es util para cursos o talleres donde los estudiantes aprenden a entrenar politicas de robotica sin necesidad de infraestructura costosa.
+- Manipulación de objetos con brazos de bajo coste: el modelo puede controlar robots tipo SO-100/SO-101 en tareas como colocar un ladrillo de Lego en una caja, usando imágenes de varias cámaras y estado del robot como entrada.
+- Investigación académica en VLA: al ser entrenable en una sola GPU, permite a laboratorios con recursos limitados experimentar con políticas de imitación y comparar variantes sin grandes clústeres.
+- Prototipado rápido de tareas robóticas: el flujo `lerobot-train` con un checkpoint base y un dataset propio permite pasar de demostraciones a una política funcional en pocos pasos.
+- Evaluación en robot real: el script `lerobot-record` permite ejecutar la política y grabar episodios de evaluación, útil para medir tasas de éxito antes de desplegar.
+- Automatización de tareas repetitivas de pick-and-place: con instrucciones de lenguaje y varias vistas, el modelo puede adaptarse a variaciones de posición y orientación de objetos.
+- Educación y divulgación en robótica: el tamaño reducido y la licencia Apache 2.0 facilitan su uso en cursos y talleres con hardware asequible.
+- Integración en pipelines de datos LeRobot: sirve como base para experimentos de recogida de datos, aumento de datasets y comparación de políticas.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. El README menciona que el modelo iguala el rendimiento de VLA mas grandes, pero no se proporcionan datos cuantitativos concretos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: con bfloat16, el checkpoint de 450M pesa aproximadamente 0.9 GB; considerando activaciones, imagenes y batch, se necesitan alrededor de 2-4 GB de VRAM.
-- Entrenamiento: el README afirma que es entrenable en una sola GPU. Para fine-tuning con batch size 4 y bfloat16, se recomienda una GPU con al menos 16 GB de VRAM (RTX 4080, A10, etc.).
-- GPU recomendadas: RTX 3060 12 GB o superior para inferencia; RTX 4090 o A100 para entrenamiento/ajuste fino.
-- Despliegue en hardware de consumo: si, cabe en GPUs de gama media (RTX 3060, RTX 4070) y en Macs con Apple Silicon. Tambien puede ejecutarse en CPU, aunque con mayor latencia.
-- Opciones de despliegue: LeRobot (libreria), scripts de inferencia como `lerobot-record`, y utilidades de preprocesamiento/postprocesamiento incluidas en la libreria.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 450 millones de parámetros en bfloat16, el peso de los parámetros ronda los 0,9 GB, por lo que cabe holgadamente en GPUs de consumo, aunque el consumo real depende de las imágenes de entrada y del tamaño de lote.
+- GPU recomendadas: no se especifican en la información disponible; el modelo está diseñado para hardware de consumo y para entrenamiento en una sola GPU.
+- Cabe en GPU de consumo: sí, según la model card ("deployable on consumer hardware").
+- Opciones de despliegue: LeRobot (`SmolVLAPolicy.from_pretrained`, `select_action`), scripts `lerobot-train` y `lerobot-record`; no se documentan en la información disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
+No se dispone de datos de benchmarks ni de comparativas publicadas en la información proporcionada. Como referencia estructural, el modelo se apoya en SmolVLM2-500M-Video-Instruct, del que hereda la torre visión-lenguaje, pero no se aportan métricas comparativas frente a otras políticas VLA.
 
-No se han encontrado datos de comparacion directa en la informacion proporcionada. Cabe destacar que SmolVLA es un modelo de 450M parametros, lo que lo hace significativamente mas pequeno que otros VLA populares como OpenVLA (7B), pero no se disponen de resultados de benchmarks que permitan comparar su rendimiento.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| SmolVLA (lerobot/smolvla_base) | 450.046.176 | no disponible | apache-2.0 | Hugging Face, LeRobot |
+| SmolVLM2-500M-Video-Instruct (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Otras políticas VLA | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-
-- Licencia no especificada: la informacion de Hugging Face indica "no disponible". Esto implica incertidumbre sobre los permisos de uso comercial, por lo que se recomienda verificar antes de usar en produccion.
-- El modelo es un modelo base: requiere fine-tuning con datos de demostracion de la tarea especifica. No funciona directamente como una politica general lista para usar.
-- Solo se indica soporte de lenguaje para ingles; no se ha validado soporte multilingue.
-- Al ser un modelo de control de robot, las acciones incorrectas pueden causar movimientos inseguros si se despliega sin comprobaciones de seguridad.
-- No se han publicado benchmarks: el rendimiento en tareas generales de manipulacion no esta cuantificado.
-- Dependencia de datos: el rendimiento del modelo tras el ajuste fino depende en gran medida de la calidad y cantidad de las demostraciones usadas, lo que puede introducir sesgos de las demos.
-- Longitud de contexto no disponible: no se sabe como maneja secuencias largas de observaciones.
+- Entrenado principalmente para inglés; el soporte multilingüe no está documentado.
+- Modelo base pensado para ajuste fino: su uso directo en tareas específicas puede dar resultados pobres sin entrenamiento sobre el caso de uso.
+- Riesgo de alucinación y de acciones erróneas en entornos no vistos durante el entrenamiento; requiere evaluación en robot real antes de producción.
+- No se documentan sesgos específicos en la información disponible, pero al derivar de un modelo visión-lenguaje puede heredar sesgos de sus datos de preentrenamiento.
+- La ventana de contexto no está especificada, lo que limita la planificación de tareas de largo horizonte.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los datasets y del modelo base utilizados en el ajuste fino.
+- El despliegue en robot real exige hardware compatible (por ejemplo, SO-100/SO-101) y configuración de cámaras y puertos; no es un modelo de propósito general fuera del dominio robótico.
 
 ## Enlaces
-
-- Hugging Face: https://huggingface.co/lerobot/smolvla_base
-- Paper (arXiv): https://arxiv.org/abs/2506.01844
-- Implementacion de referencia: https://github.com/huggingface/lerobot
-- Documentacion de instalacion: https://huggingface.co/docs/lerobot/installation
+- Modelo en Hugging Face: https://huggingface.co/lerobot/smolvla_base
+- Paper: https://arxiv.org/abs/2506.01844
+- Implementación de referencia (LeRobot): https://github.com/huggingface/lerobot
+- Documentación de instalación de LeRobot: https://huggingface.co/docs/lerobot/installation
+- Script de evaluación en robot real: https://github.com/huggingface/lerobot/blob/main/src/lerobot/scripts/lerobot_record.py
+- Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct

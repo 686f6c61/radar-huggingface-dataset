@@ -2,85 +2,108 @@
 
 ## Resumen
 
-El repositorio `infosave/Ornith-1.5-cmf` contiene dos modelos de la familia Ornith-1.5, desarrollada por DeepReinforce (ornith-ai), convertidos al formato CMF (Container for Memory-mapped Files). Se trata de un contenedor de un solo archivo que se lee mediante `cortiq`, un binario escrito en Rust que no depende de ningún framework de aprendizaje automático, con soporte de GPU vía Vulkan/Metal/DX12 y fallback a CPU. Los dos modelos incluidos son el Ornith-1.5-9B, un modelo denso híbrido, y el Ornith-1.5-35B-A3B, un modelo de mezcla de expertos (MoE) con 3 mil millones de parámetros activos por token. Ambos están cuantizados a 4 bits con el esquema `q4tp` (tiled con escalas de escalera) y conservan la cabeza de decodificación especulativa (MTP draft head). La relevancia de este repositorio radica en ofrecer una alternativa de despliegue ligera y sin dependencias de Python para estos modelos, con velocidades de decodificación notables en hardware de gama alta.
+Ornith-1.5-cmf es una conversión al contenedor CMF de la familia Ornith 1.5, publicada por el usuario infosave. No se trata de un modelo nuevo entrenado desde cero, sino de una cuantización a 4 bits (formato `q4tp`, con escalas en escalera) de los pesos en bf16 de dos modelos de la familia Qwen3.5: un denso de 9B parámetros y un MoE de 35B totales con 3B activos por token. El objetivo es empaquetar cada variante en un único fichero mapeado en memoria, legible por `cortiq`, un binario escrito en Rust que no depende de ningún framework de machine learning (sin PyTorch, sin Python).
 
-La familia Ornith-1.5 se presenta como un avance en el auto-mejoramiento de modelos: el propio modelo propone tareas, genera andamiajes específicos y produce rollouts de soluciones para aprendizaje por refuerzo, cerrando el bucle de auto-mejora. Según la información publicada, estos modelos rinden a la par de Claude Opus 4.8 en razonamiento, código y tareas agénticas, aunque no se proporcionan cifras concretas de benchmarks en la documentación disponible. El repositorio actual solo incluye la torre de texto; la entrada de imágenes no forma parte del contenedor CMF.
+La relevancia de esta ficha es doble. Por un lado, documenta una alternativa de despliegue de inferencia muy ligera en dependencias: `cargo install cortiq-cli`, descarga del `.cmf` y ejecución, con backend GPU vía Vulkan, Metal o DX12 y fallback a CPU. Por otro, ilustra una tendencia de empaquetado (contenedor único, mmap, decodificación especulativa con cabeza MTP incluida) que reduce la fricción operativa frente a stacks tipo vLLM o llama.cpp.
+
+Ambos modelos son híbridos de atención: la mayoría de capas usan atención lineal y cada cuarta capa usa atención completa. El 9B tiene 32 capas (8 de atención, 24 lineales) y ocupa 4,37 GB en el contenedor; el 35B-A3B tiene 40 capas (10 de atención, 30 lineales), 256 expertos con 8 activos por token más uno compartido, y ocupa 17,4 GB. Los repositorios originales son visión-lenguaje, pero estos ficheros contienen únicamente la torre de texto: no aceptan imagen.
 
 ## Especificaciones tecnicas
 
-| Parametro | Valor (9B) | Valor (35B-A3B) |
-|---|---|---|
-| Arquitectura | Híbrida: atención lineal + atención completa cada 4 capas | Híbrida: atención lineal + atención completa cada 4 capas, MoE con 256 expertos, 8 activos por token + experto compartido |
-| Parametros totales | 9 mil millones | 35 mil millones |
-| Parametros activos | 9 mil millones (denso) | 3 mil millones |
-| Longitud de contexto | no disponible | no disponible |
-| Tipos de cuantizacion | q4tp (4-bit tiled con ladder scales) | q4tp (4-bit tiled con ladder scales) |
-| Idiomas soportados | en, ru | en, ru |
-| Licencia | apache-2.0 | apache-2.0 |
-| Formato de pesos | CMF (memory-mapped file) | CMF (memory-mapped file) |
+| Parametro | Valor |
+|---|---|
+| Arquitectura | Transformer híbrido (atención lineal mayoritaria, atención completa cada cuarta capa); variante MoE en el 35B-A3B |
+| Parametros totales | 9B (variante densa) / 35B (variante MoE) |
+| Parametros activos | 3B por token en la variante MoE; no aplica en la densa |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits con escalas en escalera (`q4tp`), cuantizado directamente desde los checkpoints bf16 |
+| Idiomas soportados | en, ru |
+| Licencia | apache-2.0 |
+| Formato de pesos | CMF (contenedor de fichero único mapeado en memoria), leído por `cortiq`; no es safetensors ni GGUF |
+| Capas | 32 en el 9B (8 atención / 24 lineales); 40 en el 35B-A3B (10 atención / 30 lineales) |
+| Expertos (MoE) | 256 expertos, 8 activos por token más uno compartido |
+| Tamano en disco | 4,37 GB (9B q4tp) / 17,4 GB (35B-A3B q4tp) |
+| Modelo base | ornith-ai/Ornith-1.5-9B y ornith-ai/Ornith-1.5-35B-A3B |
+| Libreria | cortiq |
+| Tamano del repositorio | 264,4 GB |
 
 ## Arquitectura y entrenamiento
 
-Los modelos Ornith-1.5 pertenecen a la familia Qwen3.5 y combinan capas de atención lineal con capas de atención completa intercaladas cada cuatro capas. El modelo de 9B es denso, mientras que el de 35B utiliza una arquitectura de mezcla de expertos (MoE) con 256 expertos, de los cuales 8 se activan por token junto con un experto compartido. Ambos incluyen una cabeza de decodificación especulativa (MTP draft head) que acelera la generación. El proceso de entrenamiento, según la documentación de ornith.ai, se basa en un bucle de auto-mejora: el modelo propone nuevas tareas, genera andamiajes específicos para cada tarea y produce rollouts de soluciones que se utilizan para aprendizaje por refuerzo. No se especifican el número de tokens de entrenamiento ni la composición exacta del dataset en la información disponible.
+La arquitectura subyacente es la de la familia Qwen3.5 en su variante híbrida: bloques transformer en los que la mayor parte de las capas emplea atención lineal y solo una de cada cuatro utiliza atención completa. En el modelo denso de 9B esto se traduce en 32 capas, de las cuales 8 son de atención completa y 24 lineales. En el MoE de 35B hay 40 capas (10 de atención, 30 lineales) y una capa de mezcla de expertos con 256 expertos, de los que 8 se activan por token más un experto compartido, lo que deja 3B parámetros activos por token.
+
+Sobre el entrenamiento no hay información en la documentación disponible: no se detallan el número de tokens, la composición del dataset ni si hubo RLHF, DPO u otras fases de alineamiento. Lo que sí documenta el autor de la conversión es el proceso de cuantización: los dos checkpoints bf16 se cuantizaron directamente a 4 bits con el esquema `q4tp` (tiled con escalas en escalera) y se incluyó la cabeza de borrador MTP (multi-token prediction) para decodificación especulativa. El contenedor CMF es un único fichero mapeado en memoria; `cortiq` ejecuta el token completo como un solo grafo enviado a la GPU, incluyendo el estado de atención lineal, el enrutamiento de expertos y la cabeza de borrador.
 
 ## Capacidades
 
-- Generación de texto en inglés y ruso.
-- Razonamiento complejo y resolución de problemas, con rendimiento comparable a Claude Opus 4.8 según las afirmaciones del desarrollador (sin cifras publicadas).
-- Generación de código y soporte para tareas de programación.
-- Capacidades agénticas: el modelo puede proponer tareas, generar andamiajes y producir soluciones, lo que lo hace adecuado para flujos de trabajo de auto-mejora y agentes autónomos.
-- Decodificación especulativa integrada (MTP draft head) que mejora la velocidad de generación.
-- Compatibilidad con la API OpenAI a través del servidor `cortiq serve`, lo que permite integrarse con herramientas existentes que hablan ese protocolo.
-- Solo texto: la entrada de imágenes no está soportada en el contenedor CMF.
+- Generación de texto en inglés y ruso, los dos únicos idiomas declarados en la model card.
+- Razonamiento y respuesta a instrucciones heredados del modelo base Ornith 1.5 (no se detallan capacidades específicas en la información disponible).
+- Decodificación especulativa mediante la cabeza MTP incluida en el contenedor.
+- Ejecución acelerada por GPU con backends Vulkan, Metal y DX12, con fallback a CPU.
+- Servidor compatible con la API de OpenAI mediante `cortiq serve`, lo que permite conectar cualquier cliente que hable ese protocolo.
+- No incluye entrada de imagen: los repositorios originales son visión-lenguaje, pero el contenedor solo lleva la torre de texto.
+- Soporte de tool calling, function calling y flujos de agente: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de programación en entornos de desarrollo: el modelo puede generar código, explicar algoritmos y depurar fragmentos, integrándose en editores o pipelines de CI/CD mediante la API OpenAI.
-- Automatización de tareas agénticas: gracias a su capacidad de proponer tareas y generar andamiajes, puede usarse en sistemas que requieren planificación y ejecución de subtareas de forma autónoma.
-- Chatbot multilingüe para atención al cliente en inglés y ruso: el modelo gestiona conversaciones multi-turno y puede desplegarse como un servicio ligero con `cortiq serve`.
-- Generación de documentación técnica: a partir de código o especificaciones, el modelo puede redactar explicaciones, tutoriales o comentarios en lenguaje natural.
-- Análisis de código y revisión de seguridad: el modelo puede identificar patrones problemáticos o sugerir mejoras en repositorios, ejecutándose localmente sin dependencias de Python.
-- Prototipado rápido de aplicaciones de procesamiento de lenguaje natural: al ser un único archivo ejecutable con Rust, es adecuado para entornos embebidos o con restricciones de recursos donde no se desea instalar un framework completo.
+- Despliegue en entornos sin Python ni frameworks de ML: el binario `cortiq` se instala con `cargo install cortiq-cli` y ejecuta el `.cmf` directamente, lo que simplifica imágenes de contenedor y reduce la superficie de dependencias en producción.
+- Inferencia en estaciones de trabajo con GPU de consumo: el 9B en 4,37 GB cabe con holgura en tarjetas de 8-12 GB y el 35B-A3B en 17,4 GB entra en tarjetas de 24 GB como la RTX A5000, donde el autor reporta 143,7-145,8 tok/s con backend CUDA.
+- Servicio de chat compatible con OpenAI: `cortiq serve` expone la API en un puerto, de modo que aplicaciones ya integradas con el SDK de OpenAI pueden apuntar al endpoint local sin cambios de código.
+- Procesamiento por lotes de prompts largos: con `cortiq 0.8.92` en una RTX A5000, un prompt de 4096 tokens se lee a 3058 tok/s con primer token en 1,3 s (backend CUDA), adecuado para tareas de resumen o extracción sobre documentos de varios miles de tokens.
+- Prototipado en portátiles Apple Silicon: el 9B se ejecuta en un M4 vía Metal a 20 tok/s, suficiente para pruebas interactivas y desarrollo sin acceso a servidor.
+- Evaluación comparativa de cuantizaciones: al ser una conversión reproducible desde bf16 con checksums `.sha256` publicados, sirve para medir la pérdida de calidad de `q4tp` frente al checkpoint original en tareas concretas.
+- Experimentación con arquitecturas híbridas de atención lineal: permite probar el comportamiento de un modelo con mayoría de capas lineales sin montar un stack de entrenamiento completo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La documentación del desarrollador afirma que Ornith-1.5 rinde a la par de Claude Opus 4.8 en razonamiento, código y tareas agénticas, pero no se proporcionan cifras concretas (MMLU, HumanEval, GSM8K, etc.). En cuanto a velocidad de inferencia, la model card del repositorio reporta los siguientes valores medidos con `cortiq bench --core` en una A100 80GB con Vulkan:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos numéricos son de velocidad de decodificación en estado estacionario, un solo stream, con `cortiq bench --core`:
 
-| Modelo | Velocidad de decodificación |
-|---|---|
-| 9B | 73 tok/s |
-| 35B-A3B | 65 tok/s (el primer token incurre en una carga de expertos de ~10 s) |
+| Modelo | Hardware / backend | Decodificación |
+|---|---|---|
+| 9B q4tp | A100 80GB, Vulkan, cortiq 0.5.99 | 73 tok/s |
+| 9B q4tp | Apple M4, Metal | 20 tok/s |
+| 35B-A3B q4tp | A100 80GB, Vulkan, cortiq 0.5.99 | 65 tok/s (el primer token paga una subida de expertos de ~10 s) |
+| 35B-A3B q4tp | RTX A5000 24GB, CUDA, cortiq 0.8.88 | 143,7-145,8 tok/s |
+| 35B-A3B q4tp | RTX A5000 24GB, Vulkan, cortiq 0.8.88 | 102,7-102,9 tok/s |
 
-Se indica además que en una RTX 5090 las velocidades serían mayores, aunque no se dan cifras exactas.
+Lectura de prompt en RTX A5000 con cortiq 0.8.92: 3058 tok/s y primer token en 1,3 s con CUDA; 1101 tok/s y 3,7 s con Vulkan. El autor indica que este stack decodifica al 55-65 % de la tasa de una RTX 5090 en la misma clase de ficheros.
 
 ## Requisitos de hardware
 
-- Tamaño de archivo: 4.37 GB para el modelo de 9B y 17.4 GB para el de 35B-A3B, por lo que caben en GPUs de consumo con 8 GB y 24 GB de VRAM respectivamente (por ejemplo, RTX 3060 para el 9B y RTX 4090 para el 35B).
-- GPU recomendadas: A100 80GB para el rendimiento máximo reportado; también funciona en GPUs consumer con Vulkan/Metal/DX12 (RTX 5090, RTX 4090, etc.).
-- Opciones de despliegue: `cortiq` (binario Rust) con soporte de GPU vía Vulkan/Metal/DX12 y fallback a CPU. También se puede usar `cortiq serve` para exponer una API compatible con OpenAI.
-- Latencia: el primer token del modelo 35B tarda ~10 s en cargar los expertos; la decodificación en estado estacionario es de 65-73 tok/s en A100.
-- No requiere Python ni frameworks de ML; el binario `cortiq` se instala con `cargo install cortiq-cli`.
+- VRAM estimada: 4,37 GB de pesos para el 9B q4tp y 17,4 GB para el 35B-A3B q4tp, más el estado de atención lineal, la caché KV de las capas de atención completa y buffers de trabajo; el total exacto no está disponible.
+- GPU recomendadas: A100 80GB (referencia del autor), RTX A5000 24GB para el 35B-A3B con CUDA, RTX 5090 como referencia de mayor throughput.
+- GPU de consumo: el 9B cabe en tarjetas de 8-12 GB; el 35B-A3B requiere al menos 24 GB para evitar offload.
+- Apple Silicon: el 9B funciona en un M4 vía Metal a 20 tok/s; no hay datos del 35B-A3B en Metal.
+- Backends: Vulkan, Metal y DX12, con fallback a CPU; CUDA es una feature de compilación (`cargo install cortiq-cli --features cuda`) que requiere driver NVIDIA y bibliotecas CUDA 12.x.
+- Opciones de despliegue: `cortiq run` para CLI y `cortiq serve` para endpoint compatible con OpenAI. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, ya que el formato CMF es específico de cortiq.
+- Latencia y throughput: ver tabla de la sección anterior; el primer token del 35B-A3B en A100 con Vulkan incluye una subida de expertos de aproximadamente 10 s.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa cuantitativa con otros modelos de la misma categoría. La familia Ornith-1.5 incluye además un modelo de 397B parámetros (no incluido en este repositorio) que, según el desarrollador, también rinde a la par de Claude Opus 4.8. Dentro de este repositorio, la comparación entre el 9B y el 35B-A3B muestra una diferencia de velocidad pequeña (73 vs 65 tok/s) a pesar de la gran diferencia de parámetros totales, gracias a la arquitectura MoE con solo 3B activos. No se dispone de datos de otros modelos comparables (por ejemplo, Qwen3 o Llama 3.1) en la información proporcionada.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Ornith-1.5-9B (q4tp, CMF) | 9B denso | no disponible | CMF | apache-2.0 | 4,37 GB; 73 tok/s en A100 Vulkan |
+| Ornith-1.5-35B-A3B (q4tp, CMF) | 35B totales, 3B activos | no disponible | CMF | apache-2.0 | 17,4 GB; 143,7-145,8 tok/s en RTX A5000 CUDA |
+| Ornith-1.5-9B / 35B-A3B originales (bf16) | 9B / 35B-A3B | no disponible | safetensors (presumible, no confirmado) | apache-2.0 | Repos visión-lenguaje; incluyen torre de visión que el CMF no lleva |
+
+No se dispone de datos de benchmarks que permitan comparar la calidad de estas cuantizaciones con alternativas de otros autores, ni de información sobre otros modelos de la misma categoría en formato CMF.
 
 ## Limitaciones y advertencias
 
-- El contenedor CMF solo incluye la torre de texto; la entrada de imágenes no está soportada, a pesar de que los modelos originales son vision-language.
-- El primer token del modelo 35B-A3B tarda aproximadamente 10 segundos en cargar los expertos, lo que puede ser inaceptable en aplicaciones de baja latencia.
-- No se han publicado resultados de benchmarks independientes; las afirmaciones de rendimiento provienen del desarrollador y deben verificarse.
-- La licencia es Apache-2.0, que permite uso comercial, pero se recomienda revisar los términos de la licencia de los modelos base (ornith-ai) por si hubiera restricciones adicionales.
-- Los idiomas soportados son solo inglés y ruso; no se garantiza un rendimiento adecuado en otros idiomas.
-- Al ser un formato propietario (CMF) y un runtime específico (cortiq), la portabilidad a otros ecosistemas (por ejemplo, vLLM o llama.cpp) no está disponible; solo se puede ejecutar con `cortiq`.
-- No se dispone de información sobre sesgos o riesgos de alucinación específicos de este modelo; se recomienda evaluar en el dominio de uso.
+- Solo inglés y ruso: no hay soporte declarado de castellano ni de otros idiomas, por lo que su uso en producción en español no está respaldado por la model card.
+- Sin visión: aunque los modelos base son visión-lenguaje, el contenedor contiene únicamente la torre de texto; no se puede enviar imagen.
+- Cuantización de 4 bits: `q4tp` introduce pérdida de precisión respecto al bf16 original; no se publican evaluaciones de esa degradación.
+- Longitud de contexto no documentada: no se puede planificar el dimensionado de caché KV ni el coste de prompts largos sin medirlo empíricamente.
+- Ecosistema cerrado: el formato CMF solo lo lee `cortiq`, un proyecto de un único autor; no hay integración con vLLM, llama.cpp, Ollama ni TGI, lo que limita la portabilidad y añade riesgo de mantenimiento.
+- Dependencia de la versión de cortiq: los datos de rendimiento mezclan versiones (0.5.99, 0.8.88, 0.8.92) y backends distintos; los números no son directamente comparables entre filas.
+- Primer token lento en el MoE sobre A100 con Vulkan: la subida inicial de expertos de aproximadamente 10 s penaliza cargas de trabajo con muchas peticiones cortas y arranques frecuentes.
+- Riesgo de alucinación y sesgos: no hay información disponible sobre evaluación de sesgos ni sobre tasas de alucinación del modelo base.
+- Licencia apache-2.0: permite uso comercial, pero conviene verificar las condiciones de los repositorios originales de Ornith 1.5, ya que la ficha solo cubre la conversión.
+- Repositorio de 264,4 GB: la descarga completa es costosa; conviene usar `hf download` con el nombre de fichero concreto en lugar de clonar el repositorio entero.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/infosave/Ornith-1.5-cmf
-- Colección Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
-- Sitio oficial de Ornith AI: https://ornith.ai/
-- Página de Ornith-1.5: https://ornith.ai/ornith_1_5.html
-- Repositorio CMF en GitHub: https://github.com/infosave2007/cmf
-- Artículo de OfficeChai sobre el lanzamiento: https://officechai.com/ai/deepreinforce-releases-open-source-orinth-1-5-family-of-models-with-solid-benchmarks-and-mit-license/
-- Artículo de ByteIota: https://byteiota.com/ornith-15-self-improving-open-source-agentic-model/
+- Modelo en Hugging Face: https://huggingface.co/infosave/Ornith-1.5-cmf
+- Repositorio del contenedor CMF: https://github.com/infosave2007/cmf
+- Organización del modelo base: https://huggingface.co/ornith-ai
+- Modelo base denso: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Modelo base MoE: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

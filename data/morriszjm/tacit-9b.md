@@ -2,113 +2,99 @@
 
 ## Resumen
 
-Tacit-9B es un modelo de 9.409.813.744 parámetros publicado por el usuario morriszjm sobre el modelo base Qwen/Qwen3.5-9B. Su particularidad es que no está pensado para generar texto libre, sino para tomar decisiones tipadas: elegir una opción entre varias, responder sí/no o asignar un nivel dentro de una escala ordenada. La salida del modelo es una distribución de probabilidad sobre las opciones, obtenida en una única pasada forward, sin generar cadena de razonamiento en el momento de la inferencia.
+Tacit-9B es un modelo de decisión tipada construido por el desarrollador independiente morriszjm sobre Qwen/Qwen3.5-9B. Su particularidad es que no genera texto libre para responder: recibe un estado (por ejemplo, el mensaje de un cliente), una pregunta y un conjunto de opciones, y devuelve en un único forward pass una distribución de probabilidad sobre esas opciones. Resuelve el problema de latencia y coste que supone invocar razonamiento extendido para tareas de clasificación o enrutamiento, manteniendo la capacidad de escalar a razonamiento cuando la confianza es baja.
 
-El entrenamiento se basa en una técnica que el autor denomina AnyJev (etiquetada también como anyjev y self-distillation): el propio modelo base generó sus propios problemas de decisión, los respondió con el razonamiento activado y después aprendió a dar esas mismas respuestas en una sola pasada. Según la model card, no se utilizaron etiquetas humanas, conjuntos de datos externos ni otros modelos. La licencia es Apache 2.0, la misma que la del modelo base.
+El modelo se entrena mediante AnyJev, una técnica de auto-destilación en la que el propio Qwen3.5-9B genera problemas de decisión, los resuelve con el razonamiento activado y aprende después a dar esas respuestas en un solo paso. No se emplean etiquetas humanas, datasets externos ni otros modelos. Con 9.409.813.744 parámetros (9,4 mil millones) y licencia Apache-2.0, se presenta como una alternativa práctica para pipelines de agentes y sistemas de enrutamiento donde cada milisegundo y cada token cuentan.
 
-El modelo se publica con la etiqueta "preview", acumula 0 descargas y 0 me gusta en el momento de la consulta, y el repositorio ocupa 18,8 GB. Es relevante como ejemplo de especialización por autodestilación sobre un modelo multimodal de última generación, orientada a reducir el coste y la latencia de tareas de clasificación y enrutado que hoy suelen resolverse generando razonamiento explícito.
+Es relevante ahora porque propone un patrón híbrido: decisión rápida por defecto y escalado selectivo a chain-of-thought solo cuando la separación entre las dos opciones más probables cae por debajo de un umbral configurable. El checkpoint también carga como un modelo causal estándar, lo que facilita su integración en infraestructuras existentes basadas en transformers o vLLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle. Derivada de Qwen/Qwen3.5-9B; la model card no describe la arquitectura interna |
-| Parametros totales | 9.409.813.744 (9,41 mil millones) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible. El repositorio solo publica pesos en safetensors (18,8 GB) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
-| Modelo base | Qwen/Qwen3.5-9B |
-| Pipeline declarado | image-text-to-text |
-| Tamano del repositorio | 18,8 GB |
-| Fecha de publicacion | 5 de octubre de 2026 (ultima actualizacion: 5 de octubre de 2026) |
-| Descargas / me gusta | 0 / 0 |
-
-No se incluye la fila de parametros activos porque no hay indicios de que el modelo sea de tipo MoE: el recuento total coincide con el tamano nominal del modelo base denso.
+| Arquitectura | Transformer decoder-only (base Qwen3.5-9B), con cabecera de decisión tipada sobre distribución de etiquetas |
+| Parametros totales | 9.409.813.744 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de vLLM usa `max_model_len=32768`) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (repo de 18,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna de Tacit-9B más allá de indicar que se construye sobre Qwen/Qwen3.5-9B. Los metadatos del repositorio incluyen las etiquetas qwen3_5 e image-text-to-text, lo que sugiere que hereda la pila del modelo base y su capacidad de procesar entradas de imagen y texto, aunque el autor no documenta ninguna tarea de visión específica para este modelo.
+Tacit-9B parte de Qwen/Qwen3.5-9B, un transformer decoder-only de 9,4 mil millones de parámetros, y añade una capa de lectura de decisiones: dado un prompt con estado, pregunta y opciones, el modelo calcula la log-probabilidad de cada etiqueta y normaliza para obtener una distribución. El modo `choice` selecciona entre opciones arbitrarias, `yes_no` responde binariamente y `score` interpreta las opciones como niveles ordenados de menor a mayor. Todo ello se resuelve en un único forward pass sin generación de tokens.
 
-El procedimiento de entrenamiento es el elemento diferencial. Bajo el nombre AnyJev, el autor aplica autodestilación: el modelo base formuló sus propios problemas de decisión, los resolvió con el razonamiento activado y posteriormente aprendió a emitir esas respuestas en una única pasada forward. La model card afirma explícitamente que no se emplearon etiquetas humanas, conjuntos de datos externos ni otros modelos en el proceso. El resultado es un modelo que devuelve una probabilidad sobre un conjunto de opciones (elección múltiple, sí/no o nivel ordenado) en lugar de texto generado. No hay información publicada sobre el número de tokens de entrenamiento, la composición del corpus, ni sobre si se aplicaron fases de RLHF o DPO.
+El entrenamiento usa AnyJev, un esquema de auto-destilación: el modelo base genera sus propios problemas de decisión, los contesta con el razonamiento activado y se le entrena para reproducir esas respuestas en un solo paso. No hay anotación humana ni datasets externos. La innovación operativa es el modo `adaptive`, que envía las decisiones de baja confianza (cuando la diferencia de log-probabilidad entre las dos mejores opciones es inferior a `tau`, por defecto 0,5) al razonamiento del propio modelo, con un presupuesto de tokens (`cot_max_tokens`, 8192 por defecto) y un límite de proporción de decisiones escaladas (`max_cot_share`, 0,2 por defecto sobre una ventana de 1000 decisiones). La respuesta escalada también se lee como distribución sobre etiquetas, de modo que siempre se obtienen probabilidades.
 
 ## Capacidades
 
-- Decisión tipada en una sola pasada forward: elección entre opciones, respuesta binaria sí/no y selección de un nivel dentro de una escala ordenada.
-- Salida probabilística: el modelo devuelve una distribución de probabilidad sobre las opciones, no solo la etiqueta ganadora, lo que permite umbrales de confianza y abstención.
-- Ausencia de cadena de razonamiento en inferencia: el razonamiento se usó durante la generación de datos de entrenamiento, no en el momento de la predicción.
-- Entrada multimodal: la etiqueta de pipeline image-text-to-text apunta a soporte de entradas de imagen y texto, si bien la model card no documenta tareas de visión concretas.
-- Conversación: el repositorio incluye la etiqueta conversational, aunque el caso de uso descrito es de decisión, no de diálogo abierto.
-- Tool calling / function calling: no documentado.
-- Uso como componente de agentes multi-paso: no documentado explícitamente; el modelo puede actuar como módulo de decisión dentro de un pipeline mayor, pero no hay datos publicados al respecto.
-- Capacidades multilingües: no disponibles.
-- Modo thinking: no aplicable en inferencia; el "reasoning on" corresponde únicamente a la fase de generación de datos.
+- Toma de decisiones tipada en un solo forward pass: elección entre opciones, respuesta sí/no y puntuación sobre niveles ordenados.
+- Devolución de distribución de probabilidad completa sobre las opciones, no solo la etiqueta ganadora.
+- Modo adaptativo con escalado selectivo a chain-of-thought para decisiones de baja confianza.
+- Lectura de etiquetas desde las 20 log-probabilidades principales del vocabulario en vLLM (etiquetas fuera de ese top se consideran 0).
+- Procesamiento por lotes mediante `decide_batch`.
+- Carga como modelo causal estándar (`AutoModelForCausalLM`), lo que permite uso generativo convencional además del modo decisión.
+- Compatibilidad con transformers y vLLM, incluyendo un gateway HTTP incluido en el repo para compartir el límite de escalado entre varios clientes.
+- Capacidad multimodal heredada del pipeline declarado (`image-text-to-text`), si bien la model card no detalla su uso en el flujo de decisión.
 
 ## Casos de uso
 
-- Enrutado de consultas entre modelos o herramientas: el modelo puede decidir, en una sola pasada, qué modelo especializado o qué API debe atender una petición (por ejemplo, elegir entre un modelo de código, uno de matemáticas y un buscador). Es adecuado porque evita el coste de generar razonamiento solo para seleccionar una rama.
-- Moderación de contenido por niveles: asignar cada pieza de contenido a un nivel ordenado (permitido, revisar, bloqueado). La salida probabilística permite fijar umbrales distintos según el coste de los falsos positivos y negativos.
-- Filtrado binario a gran escala: clasificación de correo no deseado, detección de phishing o verificación de requisitos en formularios. El conjunto de evaluación bev-decision, con 46.320 ejemplos en el split de test, indica que el modelo está pensado para volúmenes altos.
-- Reordenación de documentos en pipelines RAG: puntuar la relevancia de cada fragmento recuperado con una escala ordenada y reordenar antes de pasarlos al modelo generador, reduciendo el contexto enviado y el coste por consulta.
-- Control de agentes multi-paso: actuar como puerta de decisión entre iteraciones (continuar, pedir más información o abortar) sin generar texto intermedio, lo que abarata los bucles de agente con muchas decisiones encadenadas.
-- Preetiquetado para anotación humana: usar las probabilidades del modelo para preetiquetar grandes corpus y priorizar la revisión por incertidumbre, reduciendo el esfuerzo de anotación en proyectos de clasificación.
-- Triaje de tickets de soporte: asignar un nivel de urgencia o de categoría a cada incidencia entrante antes de encaminarla a un equipo humano, con un coste por inferencia inferior al de un modelo generativo.
-- Evaluación automática de respuestas (LLM-as-a-judge restringido): emitir un juicio binario o en escala ordenada sobre la calidad de una respuesta, aprovechando que la decisión se resuelve sin tokens de razonamiento.
+- Enrutamiento de tickets de soporte: clasificar el mensaje del cliente en acciones como `track_order`, `refund` o `cancel_order` en un solo paso, con probabilidades para umbralizar derivaciones a agentes humanos cuando la confianza es baja.
+- Triaje en pipelines de agentes: decidir la siguiente herramienta o acción a partir del estado de la conversación, reduciendo el coste frente a generar razonamiento completo en cada turno.
+- Moderación y clasificación binaria: usar `kind="yes_no"` para decidir si un contenido cumple una política, con la probabilidad como señal de severidad.
+- Evaluación de riesgo o satisfacción en escalas ordenadas: emplear `kind="score"` para asignar niveles (por ejemplo, 1 a 5) manteniendo la estructura ordinal.
+- Enrutamiento de consultas en sistemas RAG: elegir entre recuperar, responder directamente o pedir aclaración, con escalado a razonamiento solo en los casos ambiguos.
+- Automatización de back-office: decidir la categoría contable o el flujo de aprobación de un documento a partir de su descripción, con lotes grandes gracias a `decide_batch`.
+- Control de calidad en producción: usar el modo `adaptive` como mecanismo de escalado progresivo, limitando la proporción de decisiones que consumen presupuesto de razonamiento mediante `max_cot_share`.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la informacion disponible son los de la model card, medidos como exactitud en una sola pasada forward, con el mismo prompt y el mismo procedimiento de lectura para ambos modelos:
+Resultados publicados por el autor, en un solo forward pass sobre los conjuntos de test completos, con el mismo prompt y lectura para ambos modelos:
 
 | Benchmark | Qwen3.5-9B | Tacit-9B | Diferencia |
 |---|---|---|---|
-| JevBench (conjunto publico, 231) | 0,805 | 0,823 | +1,7 puntos |
-| bev-decision (split de test, 46.320) | 0,680 | 0,725 | +4,5 puntos |
+| JevBench (conjunto público, 231) | 0,805 | 0,823 | +1,7 pts |
+| bev-decision (split de test, 46.320) | 0,680 | 0,725 | +4,5 pts |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estandar en la informacion disponible. Tampoco se aportan intervalos de confianza; el conjunto publico de JevBench, con 231 ejemplos, es reducido y una diferencia de 1,7 puntos queda dentro del margen razonable de variación muestral.
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones a partir del recuento real de parámetros (9,41 mil millones) y del tamano del repositorio (18,8 GB); el autor no publica requisitos oficiales.
-
-- VRAM en bf16/fp16: en torno a 19 GB solo para pesos, con 21-23 GB recomendados contando activaciones y caché KV.
-- VRAM en int8: aproximadamente 9,5-10 GB de pesos, con 11-12 GB recomendados.
-- VRAM en int4 (NF4, GPTQ o AWQ): en torno a 5-6 GB de pesos, con 7-8 GB recomendados para contextos moderados.
-- GPU de centro de datos: A100 40 GB, A100 80 GB, H100 80 GB o L40S 48 GB en bf16 sin problemas.
-- GPU de gama alta para consumidor: RTX 4090 o RTX 3090 con 24 GB pueden ejecutar bf16, pero ajustando la longitud de contexto; alternativamente, int8 resulta más cómodo.
-- GPU de gama media: RTX 4080 o RTX 4070 Ti (16 GB) no admiten bf16 con holgura; requieren cuantización int8 o int4.
-- GPU de entrada: RTX 3060 de 12 GB o similar solo con cuantización int4.
-- Despliegue: transformers de forma nativa (pesos safetensors); vLLM y TGI son opciones previsibles, aunque la compatibilidad con la arquitectura Qwen3.5 debería verificarse porque no hay confirmación del autor. llama.cpp y Ollama exigirían convertir los pesos a GGUF, formato que no se distribuye en el repositorio.
-- Latencia y throughput: no se publican mediciones. Al resolver la decisión en una única pasada forward, sin tokens de razonamiento, la latencia debería ser sustancialmente inferior a la de un modelo generativo equivalente, pero se trata de una expectativa derivada del diseno, no de un dato medido.
+- VRAM estimada para inferencia en precisión completa (BF16): aproximadamente 19 GB solo para pesos, más overhead de activaciones y caché KV.
+- VRAM estimada en cuantización de 8 bits: alrededor de 10 GB; en 4 bits: alrededor de 5-6 GB (estimaciones orientativas, no confirmadas por el autor).
+- GPU recomendadas para producción: A100 40/80 GB, H100, L40S o similares con al menos 24 GB para BF16.
+- En GPU de consumo: cabe en RTX 4090 (24 GB) en BF16 ajustando `gpu_memory_utilization`; en GPUs de 8-12 GB requeriría cuantización, no documentada por el autor.
+- Despliegue soportado: transformers (modo nativo), vLLM (`engine="vllm"` en proceso o `engine="server"` contra `vllm serve`), y gateway HTTP incluido en el repo (`tacit_decision.py serve`).
+- Nota de despliegue: en GPUs Hopper, vLLM compila el kernel gated-delta-rule con `nvcc` en el primer uso, por lo que la máquina servidora necesita el CUDA toolkit; el modo `engine="vllm"` en Python cambia automáticamente a un kernel Triton.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros modelos especializados en decisión tipada de tamano comparable, por lo que la comparación se limita al modelo base y a una categoria de referencia generica:
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Tacit-9B | 9,4 B | no disponible | Decisión tipada en un forward + escalado adaptativo | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | 9,4 B | no disponible | LLM causal generalista | Apache-2.0 | Hugging Face |
+| Modelos de clasificación dedicados (p. ej. BERT/RoBERTa fine-tuned) | 0,1-0,4 B | 512 típicamente | Clasificación supervisada con etiquetas fijas | variable | Hugging Face |
 
-| Modelo | Parametros | Contexto | Rendimiento en decision tipada | Licencia |
-|---|---|---|---|---|
-| Tacit-9B | 9,41 mil millones | No disponible | JevBench 0,823; bev-decision 0,725 | Apache 2.0 |
-| Qwen/Qwen3.5-9B | 9 mil millones (segun denominacion) | No disponible | JevBench 0,805; bev-decision 0,680 | Apache 2.0 |
-| Otros modelos de decision tipada de ~9B | No disponible | No disponible | No disponible | No disponible |
-
-Frente a modelos generativos de ~8-9B (por ejemplo, la familia Llama 3.1 8B o Mistral 7B), la diferencia relevante no esta en la exactitud en tareas de decision, que no ha sido medida de forma comparable, sino en el modo de salida: Tacit-9B devuelve una probabilidad sobre opciones en una sola pasada, mientras que un modelo generativo necesita producir texto y, si se busca calidad, razonamiento explicito.
+Frente a Qwen3.5-9B, Tacit-9B mejora la precisión en decisión a igual prompt y evita generar razonamiento en la mayoría de casos. Frente a clasificadores pequeños, ofrece mayor capacidad semántica y opciones dinámicas por consulta, a cambio de un coste de inferencia mucho mayor. No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado de vista previa: el modelo acumula 0 descargas y 0 me gusta, y el propio autor lo etiqueta como "preview". No hay validación independiente ni reproducciones externas de los resultados.
-- Cobertura de evaluacion muy estrecha: solo se publican dos benchmarks, ambos de decisión. No hay datos de MMLU, HumanEval, GSM8K, evaluaciones de seguridad ni pruebas multilingües.
-- Tamano muestral reducido en JevBench: 231 ejemplos en el conjunto publico, insuficiente para sostener con confianza la mejora de 1,7 puntos.
-- Riesgos propios de la autodestilacion: el modelo aprende de problemas y respuestas generados por el propio modelo base, sin etiquetas humanas ni datos externos. Esto puede heredar y amplificar los sesgos y errores sistematicos del base, sin que exista una referencia humana que los corrija.
-- Ausencia de trazabilidad: al resolver la decision en una sola pasada, no hay cadena de razonamiento auditable. En dominios regulados, como decisiones crediticias, sanitarias o de empleo, esto dificulta la explicabilidad y el cumplimiento normativo.
-- Calibracion de probabilidades no verificada: la salida es una distribucion de probabilidad, pero no se publican curvas de calibracion. Los umbrales deben validarse por dominio antes de usarse en produccion.
-- Riesgo de alta confianza en respuestas incorrectas: aunque el modelo no genere texto libre, puede asignar probabilidad elevada a la opcion equivocada, especialmente en dominios alejados de los datos de entrenamiento.
-- Sensibilidad al formato: la propia comparativa del autor se hizo con el mismo prompt y el mismo procedimiento de lectura, lo que sugiere que cambios en el formato pueden alterar los resultados.
-- Idiomas, contexto y cuantizaciones sin documentar: no hay informacion sobre que idiomas cubre, cual es su ventana de contexto real ni que cuantizaciones mantienen el rendimiento.
-- Uso comercial: la licencia Apache 2.0 permite el uso comercial sin restricciones adicionales y el modelo base declara la misma licencia, pero conviene revisar los terminos vigentes del repositorio del modelo base antes de desplegarlo.
-- Dominios de alto riesgo: no deberia emplearse en decisiones medicas, legales o financieras sin una validacion especifica y supervision humana.
+- Modelo en estado "preview": el autor lo etiqueta como tal, por lo que la API y el comportamiento pueden cambiar.
+- Solo se han publicado dos benchmarks; no hay evaluación en MMLU, código, matemáticas ni tareas generativas.
+- En vLLM, las etiquetas se leen del top 20 de log-probabilidades del vocabulario; una etiqueta fuera de ese conjunto se contabiliza como 0, lo que puede sesgar decisiones con opciones poco frecuentes.
+- El modo `adaptive` consume presupuesto de razonamiento (hasta 8192 tokens por decisión); sin `max_cot_share` bien configurado, el coste puede dispararse.
+- El límite `max_cot_share` se cuenta por proceso/cliente; para varios clientes hay que usar el gateway HTTP incluido, lo que añade complejidad operativa.
+- Riesgo de alucinación inherente al modelo base en el modo generativo; en modo decisión el riesgo se traslada a una elección incorrecta con alta confianza.
+- Sesgos del modelo base Qwen3.5-9B no evaluados ni documentados por el autor.
+- Idiomas soportados no declarados; el rendimiento fuera del inglés no está verificado.
+- Licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte.
+- Requiere el CUDA toolkit en GPUs Hopper para el kernel de vLLM, lo que puede romper despliegues en contenedores sin toolchain de compilación.
 
 ## Enlaces
 
-- Pagina del modelo en Hugging Face: https://huggingface.co/morriszjm/Tacit-9B
+- Modelo en Hugging Face: https://huggingface.co/morriszjm/Tacit-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo, al procedimiento AnyJev ni a los benchmarks JevBench y bev-decision. Los resultados devueltos correspondian a contenidos sin relacion (poesia francesa y ofertas de empleo).
+- Script de decisión y gateway: `tacit_decision.py` dentro del repositorio del modelo
+- No se han encontrado papers, blogs o demos adicionales en la informacion proporcionada.

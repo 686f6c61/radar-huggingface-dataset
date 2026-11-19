@@ -2,82 +2,96 @@
 
 ## Resumen
 
-Ling-3.0-flash-Fin es el primer modelo especializado en finanzas de la familia Ling, desarrollado por Ant Group en colaboración con instituciones financieras y expertos de dominio. Se basa en el modelo generalista Ling-3.0-flash y se ha sometido a un entrenamiento continuado con datos financieros de alta calidad, lo que le permite abordar tareas de investigación financiera de extremo a extremo: recuperación de información, revisión de evidencias, cálculo, modelado y preparación de informes.
+Ling-3.0-flash-Fin es un modelo de lenguaje especializado en finanzas desarrollado por Ant Group (familia Ant Ling, publicada bajo la organización inclusionAI). Se construye a partir de Ling-3.0-flash mediante entrenamiento continuado sobre datos financieros de alta calidad, elaborados con instituciones financieras y expertos de dominio. Es el primer modelo de la familia Ling orientado específicamente al sector financiero.
 
-Con 127.486.405.600 parámetros totales (la model card indica 124B), 5.1B parámetros activos y una ventana de contexto de 256K tokens, combina conocimiento financiero con inferencia eficiente para flujos de trabajo de agente de larga duración. Su arquitectura es un MoE híbrido (etiquetado como `bailing_hybrid`) y se distribuye bajo licencia MIT, lo que facilita su adopción comercial y académica.
+El modelo emplea una arquitectura de mezcla de expertos (MoE) con 124.000 millones de parámetros totales y 5.100 millones de parámetros activos por token, lo que permite una inferencia eficiente pese al tamaño del checkpoint. Dispone de una ventana de contexto de 256.000 tokens, pensada para flujos de trabajo agénticos de largo horizonte sobre documentación financiera extensa (informes anuales, presentaciones de resultados, registros regulatorios).
 
-La relevancia de este modelo radica en su enfoque en tareas financieras complejas: razonamiento multi-documento, valoración de empresas, operaciones con hojas de cálculo y búsqueda financiera con fuentes verificables. Se publica junto con el dataset FinFIRST para permitir una evaluación transparente de sus capacidades.
+Su relevancia actual reside en que aborda el ciclo completo de investigación financiera (recuperación de información, revisión de evidencia, cálculo, modelado y redacción de informes) en lugar de tratar estas tareas de forma aislada, con énfasis en respuestas trazables y ancladas en fuentes autoritativas. El modelo se distribuye con licencia MIT y en formato BF16.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE híbrido (bailing_hybrid), basado en Ling-3.0-flash |
-| Parametros totales | 127.486.405.600 (según safetensors; la model card indica 124B) |
-| Parametros activos | 5.1B (según model card) |
+| Arquitectura | Mezcla de expertos (MoE), tag `bailing_hybrid`, código personalizado (`custom_code`) |
+| Parámetros totales | 127.486.405.600 (≈124B según model card) |
+| Parámetros activos | 5.100 millones (5,1B) |
 | Longitud de contexto | 256K tokens |
-| Tipos de cuantizacion | BF16 (checkpoint oficial); otras cuantizaciones no disponibles |
+| Tipos de cuantización | no disponible (checkpoint publicado en BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-Ling-3.0-flash-Fin comparte la arquitectura de Ling-3.0-flash, un modelo de mezcla de expertos (MoE) con diseño híbrido (etiqueta `bailing_hybrid`). No se han publicado detalles específicos sobre el número de expertos, la disposición de capas o el mecanismo de atención, más allá de que es compatible con los runtimes SGLang y vLLM utilizados para el modelo base.
+Ling-3.0-flash-Fin hereda la arquitectura de Ling-3.0-flash, identificada en los metadatos como `bailing_hybrid` y con requisito de código personalizado. Se trata de un transformer con mezcla de expertos: 124.000 millones de parámetros totales con 5.100 millones activos por token, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamaño. El checkpoint se publica en BF16 y es compatible con los mismos runtimes SGLang y vLLM que el modelo base.
 
-El entrenamiento consistió en una continuación del preentrenamiento de Ling-3.0-flash con datos financieros de alta calidad, seleccionados con la colaboración de instituciones financieras y expertos de dominio. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo incorpora un modo de pensamiento ("thinking mode") activado por defecto, lo que sugiere un entrenamiento orientado a razonamiento explícito.
+El entrenamiento parte de Ling-3.0-flash y aplica entrenamiento continuado sobre datos financieros de alta calidad, desarrollados conjuntamente con instituciones financieras y expertos de dominio. La model card no detalla el volumen de tokens, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO; sí se publica un resumen de contenidos de entrenamiento en PDF. El modo de razonamiento (*thinking mode*) está activado por defecto, con parámetros de muestreo recomendados de `temperature=1.0`, `top_p=0.95` y `top_k=20`.
 
 ## Capacidades
 
-- Investigación financiera de extremo a extremo: integra recuperación de información, revisión de evidencias, cálculo, modelado y preparación de informes en un solo flujo.
-- Búsqueda financiera con fuentes verificables: prioriza fuentes autorizadas y proporciona respuestas trazables; se acompaña del dataset FinFIRST para evaluación.
-- Razonamiento multi-documento: reconcilia periodos de reporte, definiciones, supuestos y cifras contradictorias entre informes anuales, comunicados de resultados, presentaciones regulatorias y materiales de investigación.
-- Valoración y flujos de trabajo con hojas de cálculo: comprende fórmulas, actualizaciones real-versus-estimado, dependencias entre hojas, comprobaciones de balance, análisis de escenarios y entrega de modelos financieros editables.
-- Generación de materiales listos para revisión: organiza hechos, análisis, juicios y gráficos en documentos claros y editables.
-- Soporte de agentes y tool-use: diseñado para flujos de trabajo de agente de larga duración, con uso de herramientas y ejecución de tareas multi-paso.
-- Modo de pensamiento activado por defecto: genera razonamiento interno antes de responder, con recomendación de `temperature=1.0`, `top_p=0.95` y `top_k=20`.
+- Generación de texto y razonamiento financiero sobre documentación multi-fuente.
+- Investigación financiera de extremo a extremo: recuperación de información, revisión de evidencia, cálculo, modelado y preparación de informes.
+- Búsqueda financiera anclada en fuentes: prioriza fuentes autoritativas y produce respuestas trazables.
+- Razonamiento multi-documento: concilia periodos contables, definiciones, supuestos y cifras en conflicto entre informes anuales, presentaciones de resultados, registros regulatorios y material de investigación.
+- Flujos de valoración y hojas de cálculo: comprensión de fórmulas, actualizaciones de estimaciones frente a datos reales, dependencias entre hojas, comprobaciones de balance y análisis de escenarios.
+- Soporte de *tool calling* / *function calling* (etiqueta `tool-use`).
+- Capacidades agénticas y razonamiento multi-paso (etiquetas `agents`, `long-context`).
+- Modo de razonamiento (*thinking mode*) activado por defecto.
+- Salidas listas para revisión: organiza hechos, análisis, juicios y gráficos en materiales editables.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Análisis de informes anuales y comunicados de resultados: el modelo puede procesar múltiples documentos financieros de una misma empresa, reconciliar cifras de distintos periodos y detectar inconsistencias entre fuentes, gracias a su ventana de 256K tokens y su entrenamiento específico en razonamiento multi-documento.
-- Valoración de empresas y modelado financiero: soporta la creación y edición de modelos de valoración en hojas de cálculo, incluyendo fórmulas, dependencias entre hojas y análisis de escenarios, lo que permite a analistas generar modelos editables directamente desde el modelo.
-- Búsqueda financiera con fuentes verificables: para consultas sobre datos de mercado, regulaciones o métricas de empresas, el modelo prioriza fuentes autorizadas y devuelve respuestas con trazabilidad, útil en entornos donde la verificación es crítica.
-- Automatización de informes de inversión: puede redactar borradores de informes de investigación que incluyan hechos, análisis, juicios y gráficos, listos para revisión por parte de analistas senior.
-- Agentes financieros autónomos: gracias a su soporte de tool-use y su capacidad de ejecución de tareas de larga duración, puede integrarse en pipelines de agentes que consultan APIs, actualizan modelos y generan alertas de forma autónoma.
-- Análisis de carteras y riesgo: con su contexto largo y razonamiento multi-documento, puede comparar estados financieros de distintas empresas, evaluar supuestos de escenarios y generar informes de riesgo preliminares.
+- Investigación de inversiones automatizada: el modelo encadena recuperación de fuentes, contraste de evidencia y redacción de informes con 256K tokens de contexto, suficiente para procesar varios informes anuales y presentaciones de resultados en una sola sesión.
+- Análisis comparativo multi-documento: concilia cifras y definiciones entre registros regulatorios y material de research de distintos periodos, señalando discrepancias de supuestos y periodos contables.
+- Modelado de valoración en hojas de cálculo: interpreta fórmulas, dependencias entre hojas y comprobaciones de balance, y entrega modelos financieros editables con escenarios de sensibilidad.
+- Agentes financieros de largo horizonte: integrado en pipelines agénticos con *tool calling* para ejecutar secuencias multi-paso de consulta, cálculo y verificación sobre APIs internas de datos de mercado.
+- Automatización de banca y back office: evaluación en τ³-Banking sugiere uso en flujos de atención y operaciones bancarias con llamadas a herramientas.
+- Asistencia a analistas en búsqueda documental: respuestas con trazabilidad de fuentes para reducir el tiempo de localización de evidencia en archivadores regulatorios.
+- Generación de material de revisión profesional: producción de resúmenes con hechos, juicios y gráficos separados, listos para edición y revisión por un analista humano.
 
 ## Benchmarks y rendimiento
 
-La model card indica que el modelo fue evaluado en los siguientes benchmarks: FinFIRST, FinSearchComp Verified, FinCRAFT, Finance Agent, APEX-Agents, SpreadsheetBench y τ³-Banking. Estos cubren recuperación con fuentes, investigación de inversiones, ejecución de larga duración, modelado de valoración, operaciones con hojas de cálculo y flujos bancarios.
+La model card indica evaluación en FinFIRST, FinSearchComp Verified, FinCRAFT, Finance Agent, APEX-Agents, SpreadsheetBench y τ³-Banking, y afirma competitividad con modelos de tamaño similar y con modelos generales sustancialmente mayores, con especial solidez en selección de fuentes y tareas financieras intensivas en herramientas. Los resultados numéricos se presentan únicamente en una imagen (`ling-3.0-flash-fin-evaluation.png`) no incluida en la información proporcionada.
 
-No se han publicado resultados numéricos concretos en la información disponible. La card afirma que el modelo es competitivo con modelos de tamaño similar y con modelos generalistas sustancialmente mayores, con especial fortaleza en selección de fuentes y tareas financieras intensivas en uso de herramientas, pero no se proporcionan cifras comparativas.
+No se han publicado resultados de benchmarks numéricos en la información disponible.
 
 ## Requisitos de hardware
 
-- El checkpoint oficial se distribuye en BF16 y el repositorio ocupa 255.0 GB, por lo que la inferencia en BF16 requiere aproximadamente 255 GB de VRAM, lo que implica múltiples GPUs de alta gama (por ejemplo, 4× A100 80GB o 2× H100 80GB) o soluciones de memoria compartida.
-- No se han publicado requisitos de VRAM para cuantizaciones inferiores (GGUF, INT8, etc.). Con cuantización a 4 bits, el modelo podría caber en GPUs de 48 GB o 80 GB, pero no hay datos oficiales al respecto.
-- No cabe en GPUs de consumo (RTX 4090, 3090, etc.) en BF16; se necesitaría cuantización agresiva y aun así superaría los 24 GB de VRAM típicos.
-- Opciones de despliegue: compatible con SGLang y vLLM, según la guía de despliegue de Ling-3.0-flash. También podría ejecutarse con llama.cpp si se generan pesos GGUF, aunque no se proporcionan oficialmente.
-- No se han publicado datos de latencia ni throughput.
+- VRAM estimada para inferencia: el checkpoint BF16 de 127.486 millones de parámetros ocupa aproximadamente 255 GB en disco; en BF16 requiere del orden de 250 GB de memoria, por lo que se necesitan múltiples GPU. Con cuantización a 8 bits se reduciría a unos 128 GB y a 4 bits a unos 64 GB, aunque no se confirman cuantizaciones publicadas.
+- GPU recomendadas: múltiples A100/H100 de 80 GB para BF16; un nodo con 4×H100 80 GB o 8×A100 80 GB es un punto de partida razonable, sin cifras oficiales.
+- GPU de consumo: no cabe en una GPU consumer individual en BF16; una cuantización de 4 bits podría situarse en el límite de configuraciones multi-GPU de consumo, sin datos confirmados.
+- Despliegue: SGLang y vLLM (compatibles con la guía de despliegue de Ling-3.0-flash). No se indica soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. Los 5,1B parámetros activos por token reducen el coste de cómputo frente a un denso de 124B, pero no se publican métricas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos financieros específicos (como FinGPT, BloombergGPT o modelos generalistas de tamaño similar) en la documentación proporcionada. La model card menciona que el modelo es competitivo con modelos de tamaño similar y con modelos generalistas mayores, pero no se ofrecen nombres concretos ni cifras. Por tanto, la comparativa detallada no está disponible.
+| Modelo | Parámetros | Activos | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| Ling-3.0-flash-Fin | ≈124B | 5,1B | 256K | MIT | Finanzas, agentes |
+| Ling-3.0-flash (base) | ≈124B | 5,1B | 256K | MIT | Generalista |
+| Otros modelos financieros | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La información proporcionada no incluye datos de rendimiento de terceros que permitan una comparación cuantitativa. El modelo base Ling-3.0-flash es la referencia directa: misma arquitectura, mismo contexto y misma licencia, sin el entrenamiento continuado en finanzas.
 
 ## Limitaciones y advertencias
 
-- El modelo requiere validación adicional en flujos de trabajo complejos y de larga duración; sus supuestos, resultados de valoración y conclusiones de inversión deben ser revisados por profesionales.
-- No constituye asesoramiento de inversión; las salidas deben tratarse como borradores o apoyo al análisis, no como recomendaciones finales.
-- Al ser la primera versión especializada en finanzas, puede presentar errores en tareas muy especializadas o en contextos regulatorios específicos no cubiertos por los datos de entrenamiento.
-- No se han publicado detalles sobre sesgos potenciales, riesgos de alucinación específicos o limitaciones idiomáticas. Se recomienda verificar siempre las cifras y fuentes generadas.
-- Aunque la licencia MIT permite uso comercial, el modelo se distribuye sin garantías; el usuario es responsable de la validación de sus salidas en entornos de producción.
-- El modo de pensamiento activado por defecto puede aumentar la latencia y el coste computacional en comparación con modelos sin este modo.
+- Modelo de primera generación financiera de la familia: requiere validación adicional en flujos de trabajo complejos de largo horizonte.
+- Los supuestos clave, resultados de valoración y conclusiones de inversión requieren revisión profesional y no constituyen asesoramiento financiero.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente crítico en cifras, fechas y definiciones contables; la trazabilidad de fuentes mitiga pero no elimina el riesgo.
+- Idiomas soportados no documentados; el rendimiento fuera del ámbito financiero no se ha evaluado en la información disponible.
+- El modo de razonamiento está activado por defecto, lo que incrementa la latencia y el consumo de tokens de salida si no se ajusta.
+- Licencia MIT: permite uso comercial, pero conviene revisar los términos de los datos de entrenamiento y la documentación de transparencia publicada por el autor.
+- Requiere `custom_code` y `trust_remote_code` en la carga, con la implicación de seguridad que ello conlleva.
+- Sesgos conocidos: no documentados en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
-- OpenRouter (versión gratuita): https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free
-- Anuncio en X: https://x.com/AntLingAGI/status/2093022087069958492
+- Guía de despliegue del modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash#quickstart
 - Dataset FinFIRST: https://huggingface.co/datasets/inclusionAI/FinFIRST
-- Guía de despliegue de Ling-3.0-flash: https://huggingface.co/inclusionAI/Ling-3.0-flash#quickstart
+- OpenRouter: https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free
+- Anuncio: https://x.com/AntLingAGI/status/2093022087069958492
+- Resumen de contenidos de entrenamiento (PDF): https://huggingface.co/inclusionAI/AI-Transparency/resolve/main/Ling-3.0-LLM_TDS-Summary.pdf
+- Índice de documentación de transparencia: https://huggingface.co/inclusionAI/AI-Transparency

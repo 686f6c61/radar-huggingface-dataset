@@ -2,114 +2,104 @@
 
 ## Resumen
 
-kokoro-inno-clone-tuner es un adaptador de ajuste de voz (voice tuner) zero-shot desarrollado por el usuario remsky para el modelo de sintesis de voz Kokoro-82M de hexgrad. No es un modelo TTS autonomo: es un componente de 9.653.396 parametros que, a partir de un clip de audio de referencia de entre 3 y 30 segundos, genera un "pack de voz" compatible con Kokoro con forma de tensor `[510, 1, 256]`. Su proposito es permitir la exploracion y personalizacion rapida de voces dentro del ecosistema Kokoro sin reentrenar el modelo base.
+`kokoro-inno-clone-tuner` es un adaptador de clonación de voz zero-shot para el modelo de síntesis de voz Kokoro-82M, desarrollado por el usuario remsky. No se trata de un modelo generativo de texto ni de un TTS completo, sino de un módulo de *enrollment* (registro de hablante) que transforma una muestra de audio de referencia de entre 5 y 30 segundos en un *voice pack* compatible con la arquitectura estándar de Kokoro, con forma `[510, 1, 256]`. El problema que resuelve es concreto: Kokoro-82M es un TTS extremadamente ligero y rápido, pero no incorpora clonación de voz nativa; este adaptador añade esa capacidad sin modificar el modelo base ni requerir reentrenamiento.
 
-El adaptador se apoya en una arquitectura tipo StyleTTS2 con un encoder de hablante WeSpeaker ResNet34 de 6,6 millones de parametros, destilado para producir embeddings de UniSpeech-SAT-sv, junto con una style head que mapea el embedding de hablante (512) al espacio de estilo de Kokoro (256) y un mecanismo de mezcla de prosodia sobre los packs stock del modelo base. Todo el proceso de enrollment es muy ligero: aproximadamente 0,05 segundos por segundo de referencia en CPU y entre 0,1 y 0,3 segundos en GPU.
+El modelo suma 9.653.396 parámetros en safetensors y ocupa 0,2 GB en el repositorio, lo que lo sitúa en la categoría de componentes auxiliares ultraligeros. Se distribuye con pesos en safetensors y una exportación ONNX (`model.onnx`, fp32, 31,5 MB) para inferencia sin PyTorch. La licencia es Apache 2.0 y el único idioma declarado es inglés, coherente con el modelo base Kokoro-82M.
 
-Es relevante ahora porque reduce el coste de crear voces personalizadas en Kokoro a un clip corto y un par de decimas de segundo de computo, con un coste de entrenamiento declarado inferior a 20 dolares en GPU (HF Jobs `a10g-small`). Se distribuye bajo licencia Apache 2.0, con 35.731 descargas en Hugging Face, y ya esta integrado en Kokoro-FastAPI a partir de la version 0.9.0. El propio autor lo describe como herramienta de exploracion y personalizacion, no como un clonador de identidad robusto.
+Su relevancia actual radica en que permite integrar clonación de voz en pipelines de TTS de baja latencia sobre CPU, con una paridad numérica entre backends PyTorch y ONNX de 5,4e-7 en 540 clips, y una velocidad aproximadamente 2x superior en ONNX respecto a PyTorch en CPU. Está integrado en Kokoro-FastAPI a partir de la versión 0.9.0.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Adaptador sobre Kokoro-82M (familia StyleTTS2): speaker encoder WeSpeaker ResNet34 (6,6 M de parametros) destilado a embeddings UniSpeech-SAT-sv, style head de timbre y prosody head lineal |
-| Parametros totales | 9.653.396 |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica; la entrada es un clip de audio de referencia de 3 a 30 segundos |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`); los packs de voz generados se serializan como tensores PyTorch `.pt` con forma `[510, 1, 256]` |
-| Modelo base | hexgrad/Kokoro-82M (relacion: adapter) |
-| Tamano del repositorio | 0,1 GB |
-| Pipeline | text-to-speech |
-| Fecha de creacion | 2026-08-31 |
-| Ultima actualizacion | 2026-09-10 |
+| Arquitectura | Adaptador de enrollment: speaker encoder (WeSpeaker ResNet34, 6,6M params, destilado de UniSpeech-SAT-sv) + style head; produce voice packs Kokoro `[510, 1, 256]` |
+| Parámetros totales | 9.653.396 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (audio de referencia de 5 a 30 s; ventana de 30 s a 16 kHz para el fbank) |
+| Tipos de cuantización | no disponible (pesos fp32; export ONNX fp32; el speaker encoder se destila de fp32 a fp16 en el modelo base según la model card) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, ONNX (`model.onnx`), voice packs en `.pt` (PyTorch) y `.npy` (NumPy float32) |
 
 ## Arquitectura y entrenamiento
 
-El enrollment combina cuatro piezas que cargan integramente desde `model.safetensors`, sin descargas adicionales. El speaker encoder es un WeSpeaker ResNet34 de 6,6 millones de parametros destilado para emitir embeddings de UniSpeech-SAT-sv; durante el entrenamiento se uso un teacher de 380 MB que no es necesario en inferencia, y el encoder iguala al teacher con una desviacion de 0,002 en similitud coseno de hablante sobre el split de hold-out dev-clean. La style head (mitad de timbre del pack) parte del embedding de hablante de dimension 512 y lo proyecta al estilo de Kokoro de dimension 256, desplazandose a lo largo de una direccion de inclinacion espectral aprendida segun la inclinacion medida en la referencia.
+El adaptador implementa un pipeline de enrollment en dos mitades. La primera es un speaker encoder de 6,6M parámetros basado en WeSpeaker ResNet34, destilado a partir de embeddings de UniSpeech-SAT-sv (Microsoft). Este encoder consume un log-mel kaldi de 80 bandas sobre los primeros 30 segundos a 16 kHz y produce un embedding de 512 dimensiones en el espacio de UniSpeech-SAT-sv, normalizado (unitario). La segunda mitad es un style head que genera el componente de timbre del voice pack. La salida completa es un tensor `[510, 1, 256]` con la misma forma que los voice packs nativos de Kokoro, de modo que el modelo base lo consume sin modificaciones.
 
-La mitad de prosodia se construye mezclando los packs de voz stock de Kokoro mediante minimos cuadrados no negativos, ajustando a la media de F0, la dispersion de F0 y la tasa de silabas de la referencia. Los packs que distan mas de 4 semitonos del tono de la referencia se excluyen y los mejor valorados reciben mayor peso. La prosody head de la version 0.2 aplica un ajuste lineal sobre esa mezcla a partir de la media y dispersion de F0 de la referencia, ajustado a deltas optimizados a traves del predictor congelado; se puede desactivar con `enroll(..., head=False)`. El techo de seguimiento de tono se fija automaticamente a partir del espaciado armonico de la referencia y se puede sobrescribir con `enroll(..., fmax=180)` cuando la voz resultante queda en un registro incorrecto.
-
-En cuanto al entrenamiento, todas las etapas mantienen Kokoro congelado y usan LibriTTS-R train-clean-100 salvo que se indique lo contrario. Los datasets declarados en la model card son parler-tts/libritts_r_filtered, facebook/voxpopuli y amphion/Emilia-Dataset. El entrenamiento se ejecuto en HF Jobs con instancias `a10g-small` y un coste declarado por debajo de 20 dolares de tiempo de GPU. La informacion disponible sobre el proceso de entrenamiento esta truncada en el apartado v0.1.0 de la model card.
+Los datos de entrenamiento declarados son LibriTTS-R filtrado (parler-tts/libritts_r_filtered), VoxPopuli y Emilia. Los hablantes de LibriTTS-R de `dev-clean` se mantienen fuera del entrenamiento como conjunto de validación. La model card indica que el speaker encoder destilado mantiene una similitud de coseno de hablante dentro de 0,002 en dev-clean respecto al profesor, con una reducción de 380 MB en fp32 a 14 MB en fp16. No se especifican en la información disponible el número de tokens de audio, la composición exacta del dataset ni si hubo etapas de RLHF o DPO (no aplicables a este tipo de componente). La exportación ONNX usa opset 20 con operadores estándar, sin DFT ni operadores personalizados, y se verificó paridad numérica de 5,4e-7 frente a PyTorch en 540 clips.
 
 ## Capacidades
 
-- Enrollment de voz zero-shot: genera un pack de voz compatible con Kokoro a partir de un unico clip de referencia de 3 a 30 segundos, sin reentrenamiento.
-- Ajuste de timbre: la style head traslada la inclinacion espectral de la referencia al estilo de Kokoro mediante una direccion aprendida.
-- Ajuste de prosodia: la mezcla por minimos cuadrados no negativos y la prosody head alinean la media de F0, la dispersion de F0 y la tasa de silabas con la referencia.
-- Control de registro tonal: el techo de pitch tracking se calcula automaticamente del espaciado armonico de la referencia, con anulacion manual mediante `fmax`.
-- Compatibilidad directa con Kokoro: los packs resultantes son tensores planos que funcionan como cualquier pack stock, con prefijo de acento y genero (`am_`, `af_`, `bm_`, `bf_`).
-- Integracion con `KPipeline` de Kokoro: `pipe("texto", voice=pack)` devuelve audio directamente.
-- Integracion con Kokoro-FastAPI desde la version 0.9.0.
-- Idioma: solo ingles en la version actual (entrenado sobre LibriTTS-R).
-- No dispone de tool calling, capacidades de agente, vision ni audio de entrada mas alla del clip de referencia.
+- Clonación de voz zero-shot a partir de una única muestra de referencia de 5 a 30 segundos.
+- Generación de voice packs con la forma exacta de Kokoro (`[510, 1, 256]`), compatibles con el modelo base sin cambios.
+- Inferencia en dos backends: PyTorch (vía `kokoro`) y ONNX Runtime (vía `kokoro-onnx`), con salidas equivalentes.
+- Detección automática del techo de tono (pitch ceiling), con posibilidad de sobrescribirlo mediante `fmax` (por ejemplo, 180) para fuentes de archivo.
+- Extracción de embedding de hablante de 512 dimensiones en el espacio UniSpeech-SAT-sv.
+- Prefijado de nombres con códigos de acento y género estándar de Kokoro (`af_`, `am_`, `bf_`, `bm_`) para interoperabilidad con otras librerías.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un componente de voz.
+- Capacidad multilingüe limitada al inglés, heredada del modelo base.
 
 ## Casos de uso
 
-- Personalizacion de voces en asistentes de accesibilidad: una persona puede enrolar su propia voz en 1,4 segundos de CPU a partir de una grabacion de 30 segundos y usar esa voz en un lector de pantalla o comunicador, manteniendo la latencia del TTS de Kokoro.
-- Doblaje y localizaciones de bajo presupuesto: el adaptador permite generar packs de voz a partir de locuciones existentes y reutilizarlos en pipelines de TTS para producir versiones preliminares de una narracion antes de contratar una locucion final.
-- Prototipado de personajes en videojuegos: los equipos pueden crear voces de personaje con un clip de prueba, iterar sobre prosodia y timbre con `fmax` y distintos packs stock de partida, y validar la direccion artistica antes de invertir en grabacion.
-- Servicio multiusuario de TTS por API: integrado en Kokoro-FastAPI v0.9.0+, cada usuario puede enrolar su pack y servirlo con la misma infraestructura que las voces stock, anadiendo el pack como un fichero `.pt` mas en el directorio de voces.
-- Generacion de datos sinteticos para ASR: la creacion rapida de packs de voz diversos permite sintetizar corpus de audio con caracteristicas de prosodia controladas, utiles para aumentar datos de entrenamiento o pruebas de robustez de sistemas de reconocimiento de voz.
-- Investigacion en prosodia y timbre: la separacion explicita entre style head (timbre) y prosody head (F0 y ritmo), con posibilidad de desactivar la segunda, permite experimentos controlados sobre que componentes de la identidad vocal se preservan.
-- Analisis forense o de registro vocal: la deteccion automatica del espaciado armonico y el ajuste de `fmax` permiten estudiar como se comporta el modelo con fuentes de banda limitada o material de archivo historico.
-- Creacion de audiolibros internos: narracion de documentos largos con una voz consistente enrolada una sola vez, reutilizando el pack en todas las sintesis posteriores.
+- Clonación de voz para narración de audiolibros: se registra la voz del narrador con una muestra de 30 segundos y se generan voice packs que Kokoro reproduce sobre textos largos, manteniendo el timbre sin reentrenar el TTS.
+- Integración en Kokoro-FastAPI: a partir de la versión 0.9.0 el adaptador está integrado, de modo que un servicio HTTP de TTS puede exponer endpoints de enrollment y servir voces personalizadas a múltiples clientes.
+- Despliegue en CPU sin GPU: la exportación ONNX procesa una referencia de 8 s en 100 ms y una de 30 s en 410 ms en CPU (mejor de 5 ejecuciones), lo que permite registrar voces en entornos sin acelerador hardware.
+- Localización de contenido multimedia: sustitución de la voz de un presentador por una voz clonada en inglés para doblajes o versiones de un mismo vídeo, usando la referencia original como fuente.
+- Prototipado de asistentes de voz personalizados: creación rápida de una voz de marca a partir de una grabación de estudio y uso del pack resultante en pipelines de TTS de baja latencia.
+- Investigación en evaluación de sistemas TTS: el conjunto de validación dev-clean de LibriTTS-R permite medir similitud de hablante y calidad de clonación de forma reproducible.
+- Generación de voces sintéticas para pruebas de accesibilidad: se clona una voz de referencia controlada para validar lectores de pantalla y sistemas de subtitulado sin depender de locutores.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica una metrica cuantitativa del speaker encoder: una coincidencia de 0,002 en similitud coseno de hablante frente al teacher sobre el split de hold-out dev-clean de LibriTTS-R. No se han publicado resultados de benchmarks comparativos (tipo MOS, similitud de hablante sobre otros conjuntos, WER de ASR sobre audio generado) en la informacion disponible.
+No se han publicado resultados de benchmarks de calidad de voz (MOS, similitud de hablante, WER) en la información disponible. Los únicos datos cuantitativos publicados son de latencia y paridad numérica:
 
-| Metrica | Valor | Condiciones |
+| Métrica | ONNX Runtime | PyTorch |
 |---|---|---|
-| Similitud coseno de hablante frente al teacher | desviacion de 0,002 | Hold-out dev-clean de LibriTTS-R, speaker encoder |
-| Tiempo de enrollment en CPU | 0,05 s por segundo de referencia | 30 s de referencia en 1,4 s |
-| Tiempo de enrollment en GPU | 0,1-0,3 s totales | Tras la carga inicial del modelo |
-| Coste de entrenamiento | menos de 20 USD de GPU | HF Jobs `a10g-small` |
+| Referencia de 8 s (CPU, mejor de 5) | 100 ms | 165 ms |
+| Referencia de 30 s (CPU, mejor de 5) | 410 ms | 890 ms |
+| Paridad numérica vs. PyTorch | 5,4e-7 en 540 clips | referencia |
+| Similitud de coseno de hablante en dev-clean | dentro de 0,002 del profesor | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de 9.653.396 parametros, el adaptador ocupa aproximadamente 38,6 MB en fp32 y 19,3 MB en fp16 (estimacion propia a partir del recuento de parametros); se suma a la huella del modelo base Kokoro-82M.
-- El adaptador cabe holgadamente en cualquier GPU consumer, incluidas RTX 3060, RTX 4060, RTX 4090, y tambien se puede ejecutar integramente en CPU.
-- GPU de referencia empleada en entrenamiento: `a10g-small` a traves de HF Jobs. No se especifican GPU recomendadas para produccion.
-- El teacher de destilacion de 380 MB solo se uso durante el entrenamiento y no es necesario para el enrollment.
-- Opciones de despliegue: paquete Python `inno-kokoro` (`pip install inno-kokoro`), pipeline `KPipeline` de Kokoro y Kokoro-FastAPI desde la version 0.9.0.
-- Soporte en vLLM, llama.cpp, Ollama y TGI: no disponible, no aplica a este tipo de modelo.
-- Latencia: el enrollment tarda aproximadamente 0,05 s por segundo de referencia en CPU (1,4 s para una referencia de 30 s) y entre 0,1 y 0,3 s en GPU una vez cargado el modelo. No se publican datos de throughput de sintesis, que depende del modelo base Kokoro.
+- VRAM para inferencia: no disponible de forma explícita; con 9,65M parámetros en fp32 el peso ronda los 38 MB, por lo que cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con soporte CUDA es suficiente; no se requiere A100 ni H100. El caso de uso principal declarado es CPU.
+- Cabe en GPU consumer: sí, en cualquier RTX o equivalente, e incluso en CPU sin acelerador.
+- Opciones de despliegue: `inno-kokoro` con backend PyTorch (`pip install "inno-kokoro[torch]"`), backend ONNX (`pip install inno-kokoro kokoro-onnx`), Kokoro-FastAPI (v0.9.0+) y kokoro-onnx para servir los voice packs.
+- Latencia medida en CPU: 100 ms (referencia de 8 s) y 410 ms (referencia de 30 s) con ONNX Runtime; 165 ms y 890 ms con PyTorch.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Enfoque | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto / entrada | Idiomas | Licencia | Clonación zero-shot |
 |---|---|---|---|---|---|---|
-| remsky/kokoro-inno-clone-tuner | 9.653.396 (adaptador) | Clip de referencia de 3-30 s | Ingles | Apache 2.0 | Tuner zero-shot sobre Kokoro-82M | Hugging Face, integrado en Kokoro-FastAPI 0.9.0+ |
-| hexgrad/Kokoro-82M | 82 M | No aplica (packs stock predefinidos) | Multiples idiomas segun el modelo base | Apache 2.0 | TTS con voces fijas | Hugging Face |
-| Otras alternativas de clonacion zero-shot (XTTS-v2, OpenVoice, F5-TTS) | no disponible | no disponible | no disponible | no disponible | Clonacion de identidad | no disponible en la informacion proporcionada |
+| kokoro-inno-clone-tuner | Adaptador de enrollment para Kokoro-82M | 9,65M | 5-30 s de audio | en | apache-2.0 | Sí |
+| Kokoro-82M (hexgrad) | TTS completo | 82M | texto | en (y otros según variante) | apache-2.0 | No nativa |
+| StyleTTS2 | TTS con clonación por estilo | no disponible en la información | audio de referencia | en | no disponible en la información | Sí |
+| XTTS v2 (Coqui) | TTS multilingüe con clonación | no disponible en la información | audio de referencia | multilingüe | no disponible en la información | Sí |
 
-La comparativa con alternativas de clonacion zero-shot no puede completarse con datos verificados: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre modelos comparables (los resultados obtenidos corresponden a servicios meteorologicos y no guardan relacion con la consulta).
+La comparación con StyleTTS2 y XTTS v2 se incluye por categoría funcional (clonación de voz), pero no se dispone de datos de parámetros, contexto ni licencia en la información proporcionada para esos modelos, por lo que la comparación cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Entrenado unicamente en ingles (LibriTTS-R) en la version actual; no hay soporte multilingue declarado.
-- El propio autor lo describe como herramienta de exploracion y personalizacion, no como un clonador de identidad robusto: parte de la textura y de la identidad se sacrifica para mantener la calidad y estabilidad del audio dentro del rango de Kokoro.
-- El ritmo es una aproximacion de mejor esfuerzo: la prosodia es una mezcla convexa de los packs stock por tono, dispersion y cadencia, de modo que fuera de ese rango solo se fija al borde mas cercano.
-- La referencia debe cumplir requisitos estrictos: minimo 3 segundos, maximo 30 segundos, ausencia razonable de artefactos de audio y un unico hablante.
-- El control de registro tonal depende del calculo automatico del espaciado armonico; con fuentes de banda limitada o material de archivo puede requerir el ajuste manual de `fmax`.
-- Riesgo de alucinacion en el sentido de artefactos de sintesis y de prosodia incorrecta cuando la referencia esta fuera del rango cubierto por los packs stock; no hay benchmarks publicados de MOS, similitud de hablante ni WER que permitan cuantificar la calidad final.
-- Restricciones de licencia: el adaptador y el modelo base son Apache 2.0, lo que permite uso comercial, pero la clonacion de voces de personas reales plantea requisitos legales y eticos de consentimiento independientes de la licencia. Los ejemplos publicados en la model card incluyen voces de figuras publicas (David Attenborough, Amelia Earhart, Jane Goodall, Vincent Price), lo que ilustra el riesgo de uso indebido para suplantacion o deepfakes.
-- No se han publicado tipos de cuantizacion ni versiones optimizadas del adaptador; el rendimiento final de sintesis queda ligado a Kokoro-82M.
-- Dependencia fuerte del modelo base: cualquier cambio en el formato de packs de Kokoro o en su pipeline afecta directamente a la compatibilidad de los packs generados.
-- El apartado de entrenamiento y metricas de la model card esta truncado en la informacion disponible, por lo que no se pueden verificar detalles de las etapas de entrenamiento ni de los conjuntos de evaluacion.
+- Solo admite inglés; no hay soporte multilingüe declarado.
+- El adaptador no genera audio por sí mismo: requiere el modelo base Kokoro-82M y un runtime compatible (`kokoro` o `kokoro-onnx`) para producir voz.
+- La calidad de clonación depende de la referencia: la ventana útil es de 5 a 30 segundos y el encoder solo procesa los primeros 30 s a 16 kHz.
+- El techo de tono se fija automáticamente; fuentes con registros atípicos (archivos históricos, locuciones muy agudas) pueden requerir ajuste manual de `fmax`.
+- Riesgo de uso indebido: la clonación de voz sin consentimiento puede vulnerar derechos de imagen y voz; la licencia Apache 2.0 no exime de las obligaciones legales aplicables.
+- No se han publicado métricas de calidad subjetiva (MOS) ni de robustez ante ruido, acentos no nativos o audio de baja calidad.
+- La model card no detalla sesgos demográficos del speaker encoder; al estar destilado de UniSpeech-SAT-sv, puede heredar los sesgos de ese modelo.
+- Uso comercial permitido por Apache 2.0, pero conviene verificar las licencias de los datasets de entrenamiento (LibriTTS-R, VoxPopuli, Emilia) para el caso concreto de despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/remsky/kokoro-inno-clone-tuner
-- Repositorio de codigo: https://github.com/remsky/inno-kokoro
-- Kokoro-FastAPI (integracion desde v0.9.0): https://github.com/remsky/Kokoro-FastAPI
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
-- Embeddings UniSpeech-SAT-sv: https://huggingface.co/microsoft/unispeech-sat-base-plus-sv
+- Repositorio del código: https://github.com/remsky/inno-kokoro
+- Kokoro-FastAPI: https://github.com/remsky/Kokoro-FastAPI
+- Write-up del autor: https://remsky.art/writeups/kokoro-fastapi/inno-clone/
+- Kokoro (implementación de referencia): https://github.com/hexgrad/kokoro
+- kokoro-onnx: https://github.com/thewh1teagle/kokoro-onnx
+- UniSpeech-SAT-sv (profesor del speaker encoder): https://huggingface.co/microsoft/unispeech-sat-base-plus-sv
 - Dataset LibriTTS-R filtrado: https://huggingface.co/datasets/parler-tts/libritts_r_filtered
 - Dataset VoxPopuli: https://huggingface.co/datasets/facebook/voxpopuli
 - Dataset Emilia: https://huggingface.co/datasets/amphion/Emilia-Dataset
-- Paquete de instalacion: `pip install inno-kokoro`
-- Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relevantes (papers, blogs o demos) sobre este modelo; los unicos resultados obtenidos fueron paginas de servicios meteorologicos sin relacion con la consulta.

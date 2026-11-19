@@ -2,114 +2,115 @@
 
 ## Resumen
 
-Nemotron 3.5 ASR Streaming 0.6B — LiteRT es una conversion comunitaria del modelo de reconocimiento automatico del habla (ASR) en streaming de NVIDIA, publicada por el usuario spybyscript. El modelo base, `nvidia/nemotron-3.5-asr-streaming-0.6b`, es un sistema ASR de aproximadamente 600 millones de parametros con arquitectura FastConformer (encoder) mas decodificador RNN-T, disenado para transcripcion incremental con baja latencia. Esta conversion no anade entrenamiento ni ajuste fino: su proposito es portar los pesos originales al formato LiteRT/TFLite para ejecucion en dispositivos moviles y entornos edge.
+Nemotron 3.5 ASR Streaming 0.6B — LiteRT es una conversion del modelo de reconocimiento automatico del habla `nvidia/nemotron-3.5-asr-streaming-0.6b` de NVIDIA al formato LiteRT (`.tflite`), publicada por el usuario spybyscript. No se trata de un modelo reentrenado ni de una publicacion oficial de NVIDIA o Google: es un trabajo de conversion y empaquetado que trocea el modelo original en 31 grafos componentes (frontend, subsampling, 24 bloques de encoder, proyeccion, predictor y joint) para permitir inferencia con estado en dispositivos moviles Android.
 
-La relevancia de esta ficha reside en que el paquete no es un modelo unico listo para usar, sino un conjunto de grafos por componentes para una integracion stateful. Cada variante contiene 31 archivos `.tflite` mas un manifiesto de tensores y estado, vocabulario, procedencia del codigo fuente y evidencia de paridad. La aplicacion anfitriona debe implementar el troceado de audio, la gestion de caches y la decodificacion greedy de RNN-T. Se distribuyen tres variantes: FP32 (referencia), FP16 (referencia reducida) e INT8 (cuantizacion parcial para CPU).
+El modelo base es un sistema ASR en streaming de arquitectura FastConformer con decodificacion RNN-T y aproximadamente 0,6 mil millones de parametros, orientado a transcripcion en tiempo real de audio en ingles (en-US). La relevancia de esta conversion radica en que ofrece cuatro variantes de precision (fp32, fp16, int8 y npu) con grafos precompilados para cinco SoC Snapdragon de Qualcomm, lo que permite ejecutar el encoder en la NPU del telefono con un RTF de 0,103 en un Galaxy Z Fold 8 (SM8850) y 0,113 en un Galaxy S23 Ultra (SM8550).
 
-La revision actual incorpora la correccion de puntuacion `nemotron35-hf560-v2`, que restaura la puntuacion terminal de frase enmascarando el ultimo chunk rellenado a traves de subsampling y atencion del encoder. Esta version esta validada unicamente para ingles estadounidense (en-US), prompt ID 0 y perfil de chunk de 560 ms; el resto de idiomas y tamanos de chunk del checkpoint original no se han validado en esta conversion.
+El paquete no es un transcriptor listo para usar: la aplicacion anfitriona debe gestionar el troceado del audio en ventanas de 560 ms, las caches de estado y la decodificacion greedy. El repositorio incluye un script de referencia en CPU (`reference_inference.py`) y documentacion de integracion (`INTEGRATION.md`, `PUNCTUATION_FIX.md`).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer (encoder) + RNN-T (decoder), ASR en streaming con estado |
-| Parametros totales | ~0,6 mil millones (modelo base) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica en el sentido de LLM; perfil de chunk de 560 ms con caches de estado de encoder y decoder |
-| Tipos de cuantizacion | FP32, FP16 (almacenamiento de pesos) e INT8 (cuantizacion parcial, dinamica por canal en pesos FC del encoder) |
-| Idiomas soportados | en (solo en-US validado en esta conversion); el checkpoint upstream es multilingue pero no validado aqui |
-| Licencia | openmdw-1.1 (OpenMDW-1.1) |
-| Formato de pesos | TFLite / LiteRT (`.tflite`), 31 grafos por variante mas manifiesto de tensores y estado |
-| Tamano del repositorio | 9,0 GB |
-| Descargas | 1504 |
-| Likes | 0 |
-| Modelo base | nvidia/nemotron-3.5-asr-streaming-0.6b |
-| Revision del codigo fuente base | 1c8deaecc64b91f034d73e08dd8b64625eb3395d |
-| SHA-256 de los pesos originales | 9eebdd6590289cb3030f310858f3df93256600a800a3e8200c5993d5f967e174 |
+| Arquitectura | FastConformer (encoder) + RNN-T (predictor y joint), convertida a grafos LiteRT |
+| Parametros totales | no disponible (el modelo base se denomina 0.6B) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (procesa chunks de 560 ms de audio en streaming) |
+| Tipos de cuantizacion | fp32, fp16, int8 (pesos FC del encoder en INT8 dinamico por canal, parcial), grafos precompilados para NPU |
+| Idiomas soportados | en (perfil probado: en-US) |
+| Licencia | openmdw-1.1 |
+| Formato de pesos | LiteRT / TFLite (`.tflite`), con manifiestos JSON y SHA-256 |
+| Tamano de los grafos | fp32: 2.486.978.032 bytes; fp16: 1.269.724.508 bytes; int8: 981.122.704 bytes; npu: 1.184.359.152 bytes + 1,19 GB por chip |
+| Tamano del repositorio | 16,1 GB |
+| Contrato de bundle | `nemotron35-hf560-v2` |
+| Runtime requerido | LiteRT 2.2.0 (referencia CPU) / 2.3.2 (Android y NPU) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema ASR encoder-decoder de tipo RNN-T sobre un encoder FastConformer. El encoder procesa mel-espectrogramas por chunks y mantiene estado entre fragmentos, lo que permite transcripcion incremental en streaming. El decodificador RNN-T consume las salidas del encoder y genera tokens de forma greedy, con prediccion conjunta. No se ha realizado entrenamiento ni ajuste fino adicional en esta conversion: los pesos se derivan directamente del checkpoint oficial de NVIDIA.
+El modelo base es un sistema ASR en streaming compuesto por un encoder FastConformer de 24 bloques y un decodificador RNN-T formado por predictor y joint. La conversion a LiteRT preserva esta estructura pero la descompone en grafos independientes y con estado: un frontend de caracteristicas, un modulo de subsampling, 24 grafos de bloque del encoder, una proyeccion, el predictor y el joint. En la variante `npu`, los 24 bloques se fusionan en tres grafos de 8 bloques cada uno (con la proyeccion integrada en el ultimo), y esos grafos se precompilan para cinco NPU Snapdragon mediante QAIRT 2.50.0 sobre Linux x86-64.
 
-La innovacion tecnica de esta publicacion es la conversion a LiteRT en grafos por componentes y la correccion de puntuacion introducida en `nemotron35-hf560-v2`. La correccion enmascara el ultimo chunk rellenado mediante subsampling y atencion del encoder para recuperar la puntuacion terminal, preservando todos los payloads constantes y parametros de cuantizacion originales. El grafo anadido ocupa aproximadamente entre 39 y 57 KB por variante. Los grafos de subsampling anaden un `args_4` Int32 (frames mel validos), cada bloque del encoder anade un `args_5` Int32 (frames validos del encoder) y el decodificador debe consumir solo los frames finales validos; esto exige actualizar el host. En la variante INT8, 192 buffers de pesos de capas totalmente conectadas distribuidas en 24 bloques del encoder son INT8, mientras que 72 buffers de convolucion/depthwise permanecen en FP32 y los grafos fuera de los bloques del encoder siguen siendo byte-identicos a la linea base FP32. Las activaciones, interfaces y caches de streaming son en coma flotante, y no se uso calibracion estatica de activaciones con dataset representativo.
+No se ha reentrenado nada: los pesos proceden de la revision `1c8deaecc64b91f034d73e08dd8b64625eb3395d` del modelo de NVIDIA. La model card de esta conversion no detalla el dataset de entrenamiento, el numero de tokens ni si hubo RLHF o DPO; esos datos corresponden a la model card original de NVIDIA, que se copia como `MODEL_CARD.md` en cada carpeta. La innovacion tecnica del paquete es el particionado en grafos con estado persistente, la restauracion de puntuacion terminal mediante mascaras de validez en el chunk final (`args_4` / `args_5`) y la precompilacion para NPU Qualcomm con un grafo por particion NPU.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla en streaming con perfil de chunk de 560 ms y baja latencia (validado en en-US, prompt ID 0).
-- Transcripcion incremental con gestion de estado entre chunks (caches de encoder y decoder).
-- Generacion de puntuacion terminal de frase mediante el mecanismo de enmascaramiento del chunk final (variante v2), sin postprocesado que inserte puntuacion.
-- Decodificacion RNN-T greedy implementable por la aplicacion anfitriona.
-- Ejecucion en dispositivos moviles y edge mediante LiteRT/TFLite, con variantes FP32, FP16 e INT8.
-- No soporta tool calling, function calling ni comportamiento de agente: es un modelo exclusivamente de ASR.
-- No dispone de modo de razonamiento, vision ni audio generativo; no genera texto libre, solo transcripciones.
+- Reconocimiento automatico del habla en streaming con chunks de 560 ms y decodificacion greedy RNN-T.
+- Transcripcion en ingles (perfil probado en-US, prompt 0).
+- Restauracion de puntuacion terminal en el ultimo chunk mediante mascaras de validez.
+- Ejecucion en CPU (fp32, fp16, int8) y en GPU (fp32) en Android mediante LiteRT `CompiledModel`.
+- Ejecucion del encoder en NPU Qualcomm (Snapdragon SM8850, SM8550 y otros tres SoC) con grafos fusionados.
+- Estado de sesion persistente entre chunks (caches del encoder y del predictor).
+- No soporta tool calling, function calling, agentes, vision, audio de entrada mas alla del propio ASR ni modo thinking.
 
 ## Casos de uso
 
-- Transcripcion en vivo en aplicaciones Android: el modelo se ejecuta con LiteRT sobre CPU y produce texto incremental con chunks de 560 ms, adecuado para subtitulado en tiempo real sin conexion.
-- Dictado por voz en editores de texto y apps de notas: la decodificacion RNN-T greedy con caches de estado permite insertar texto conforme se habla, manteniendo el contexto entre fragmentos.
-- Accesibilidad para personas con discapacidad auditiva: transcripcion en dispositivo de conversaciones cercanas, sin enviar audio a la nube, lo que reduce latencia y preserva la privacidad.
-- Asistentes de voz integrados en aplicaciones moviles: el resultado del ASR puede alimentar un modulo de NLU separado, ya que el modelo no realiza comprension ni ejecucion de acciones por si mismo.
-- Transcripcion de reuniones o notas de voz: con audio de calidad razonable y hablantes claros, el paquete FP16 puede ejecutarse en hardware movil moderno para generar borradores de transcripcion que luego se revisan.
-- Procesamiento por lotes en servidores con CPU: la variante INT8 (aproximadamente 981 MB de grafos) reduce el uso de memoria frente a FP32 y sirve para transcribir clips cortos en pipelines sin GPU.
-- Prototipado y verificacion de integraciones LiteRT: la variante FP32 sirve como referencia de precision para comparar el resto de cuantizaciones en pruebas de paridad.
+- Dictado por voz en aplicaciones Android: el modelo procesa audio en chunks de 560 ms con un RTF de 0,103 en NPU, lo que permite transcripcion practicamente en tiempo real sin salir del dispositivo y sin enviar audio a la nube.
+- Subtitulado en directo de reuniones o clases: la integracion por chunks con estado mantiene el contexto acustico entre ventanas, y la restauracion de puntuacion en el chunk final produce subtitulos legibles al cerrar cada frase.
+- Asistentes de voz embebidos: al ejecutarse en la NPU con 1,46 GB de PSS y 0,09-0,12 GB de memoria dirty, deja recursos libres para el resto de la aplicacion en telefonos de gama alta.
+- Transcripcion offline en entornos sin conectividad: el bundle fp16 en CPU (RTF 0,191-0,329 en los dispositivos probados) permite operar sin red en un Galaxy S23 Ultra o similar.
+- Procesamiento por lotes en servidor con CPU: la variante fp32 como referencia y la int8 como alternativa mas ligera (981 MB de grafos) para pipelines de transcripcion donde la fidelidad exacta no es critica, aceptando explicitamente el bundle por su hash de manifiesto.
+- Investigacion en ASR embebido: los grafos separados por componente y el script `reference_inference.py` permiten medir el coste de cada etapa (frontend, encoder, predictor, joint) y experimentar con estrategias de particion CPU/NPU.
+- Evaluacion de precision en movil: las variantes fp32, fp16 e int8 permiten comparar el impacto de la cuantizacion en la tasa de error de palabra sobre el mismo conjunto de audio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (WER, MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente documenta pruebas de validacion internas centradas en puntuacion y paridad de transcripcion, no un benchmark completo.
+Precision sobre 20 clips de LibriSpeech test-clean (485 palabras), segun la model card:
 
-| Prueba (v2, correccion de puntuacion) | Resultado |
-|---|---|
-| Clips evaluados | 80 clips de 40 hablantes |
-| Transcripciones con puntuacion terminal (antes) | 0 |
-| Transcripciones con puntuacion terminal (despues) | 73 |
-| Cambios en palabras reconocidas respecto al bundle anterior de la misma precision | 0 |
-| Paridad FP32 frente al modelo original en safetensors | 80/80 transcripciones |
-| Paridad FP16 frente al modelo original | 79/80 transcripciones |
-| Paridad INT8 frente al modelo original | 68/80 transcripciones |
-| Entorno de prueba multihablante | Python LiteRT 2.1.2 en CPU |
-| Casos diagnosticos adicionales | 24 por variante, superados en LiteRT 2.2.0 |
-| Grafos actualizados probados en Android o GPU/NPU | No |
+| Variante | Errores de palabra | WER |
+|---|---:|---:|
+| fp32 o fp16, CPU | 14 | 2,89% |
+| npu en SM8850 y SM8550 | 17 | 3,51% |
 
-Se mencionan mediciones historicas de precision y rendimiento en Android correspondientes a la revision v1 (Samsung S23 Ultra, Snapdragon 8 Gen 2, Android 16, LiteRT 2.2.0, cuatro hilos de CPU, 23 clips de audiolibro en ingles de 10 hablantes con 569 palabras de referencia), pero los valores numericos completos no estan disponibles en la informacion proporcionada.
+Coincidencia de transcripciones con el modelo original sobre 80 clips de 40 hablantes: fp32 80/80, fp16 79/80, int8 68/80.
+
+Rendimiento en dispositivos (LiteRT 2.3.2, qnn-runtime 2.50.0, 20 clips, 171,6 s, estado termico 0; frontend, subsampling, predictor y joint siempre en CPU):
+
+| Telefono | Encoder en | RTF | Chunk p50 | Chunk final | Encoder por chunk | Memoria dirty / PSS |
+|---|---|---:|---:|---:|---:|---|
+| Galaxy Z Fold 8 (SM8850) | NPU | 0,103 | 56 ms | 53 ms | 39 ms | 0,12 / 1,47 GB |
+| Galaxy Z Fold 8 (SM8850) | GPU, FP32 | 0,168 | 90 ms | 90 ms | 72 ms | 3,25 / 4,27 GB |
+| Galaxy Z Fold 8 (SM8850) | CPU, 4 hilos (fp16) | 0,191 | 97 ms | 94 ms | 82 ms | 0,66 / 3,04 GB |
+| Galaxy S23 Ultra (SM8550) | NPU | 0,113 | 60 ms | 55 ms | 37 ms | 0,09 / 1,46 GB |
+| Galaxy S23 Ultra (SM8550) | GPU, FP32 | 0,274 | 146 ms | 150 ms | 121 ms | 3,24 / 5,05 GB |
+| Galaxy S23 Ultra (SM8550) | CPU, 4 hilos (fp16) | 0,329 | 148 ms | 141 ms | 137 ms | 0,14 / 2,55 GB |
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada segun variante: FP32 aproximadamente 2,49 GB de grafos; FP16 aproximadamente 1,27 GB; INT8 aproximadamente 981 MB. A esto hay que sumar el espacio de trabajo en tiempo de ejecucion para caches de streaming y activaciones.
-- Cabe en GPU de consumo: el modelo base de 0,6 B es pequeno, pero la model card no documenta requisitos oficiales de VRAM ni una lista de GPU recomendadas. Las pruebas de GPU/NPU actuales no se han ejecutado.
-- GPU profesionales: no disponible (no se especifican en la informacion proporcionada).
-- Despliegue movil y edge: validado en Samsung S23 Ultra con Snapdragon 8 Gen 2, Android 16, LiteRT 2.2.0 y cuatro hilos de CPU (mediciones de la revision v1).
-- Opciones de despliegue: LiteRT/TFLite (Python LiteRT en CPU; experimental mixto en GPU), integracion en Android mediante grafos por componentes. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un LLM sino un paquete ASR en TFLite. Se incluye un runner de referencia en CPU (`reference_inference.py`).
-- Latencia y throughput: no disponible; no se facilitan cifras completas de latencia ni de throughput en la informacion proporcionada.
+- Memoria: el bundle fp32 ocupa 2,49 GB de grafos, el fp16 1,27 GB, el int8 981 MB y el npu 1,18 GB mas 1,19 GB por chip. En movil, el PSS medido va de 1,46 a 5,05 GB segun la ruta de ejecucion.
+- NPU Qualcomm: requiere grafos fusionados en tres bloques de 8; cada fichero solo funciona en su chip (`Build.SOC_MODEL`) y con las versiones de runtime indicadas. Carga en 1-2 s.
+- GPU movil: ejecutar en FP32; en FP16 los grafos desbordan y producen salida incorrecta o no finita. La carga tarda 11-16 s.
+- CPU: 4 hilos con el bundle fp16 es la configuracion probada en Android; `reference_inference.py` es la referencia completa en CPU.
+- No se proporcionan requisitos para GPU de servidor (A100, H100, RTX 4090); el paquete esta orientado a LiteRT en Android y a la referencia CPU.
+- Despliegue: LiteRT 2.2.0 (referencia CPU) o LiteRT 2.3.2 con `litert-npu-runtime-qualcomm` 2.3.2 y `qnn-runtime` 2.50.0 (NPU). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye comparaciones con otros modelos ASR de tamano o categoria similares, ni datos de rendimiento comparables (WER) que permitan una tabla rigurosa.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / despliegue |
+|---|---|---|---|---|---|
+| Nemotron 3.5 ASR Streaming 0.6B — LiteRT (esta ficha) | ~0,6B (no disponible exacto) | chunks de 560 ms | en | openmdw-1.1 | LiteRT/TFLite, movil y NPU |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | ~0,6B | no disponible | no disponible | openmdw-1.1 | pesos originales de NVIDIA (no disponible el detalle) |
+| Alternativas de ASR en streaming de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks de terceros en la informacion proporcionada para establecer una comparacion cuantitativa con otros sistemas ASR.
 
 ## Limitaciones y advertencias
 
-- No es un modelo listo para usar: son grafos por componentes que requieren implementar troceado de audio, gestion de caches y decodificacion RNN-T greedy en la aplicacion anfitriona.
-- Conversion no oficial: no es una publicacion de NVIDIA ni de Google; no se ha realizado entrenamiento ni ajuste fino adicional.
-- Idioma: solo se ha validado en-US con prompt ID 0 y chunk de 560 ms; no se deben inferir otros idiomas, deteccion automatica de idioma ni otros tamanos de chunk a partir del checkpoint upstream.
-- Actualizacion obligatoria del host: la revision v2 cambia el contrato de finalizacion (nuevos `args_4` y `args_5`); los hosts antiguos deben fijar la revision `153a7dbd809a255e5999130397bcd60a66f81a54`.
-- Paridad imperfecta en cuantizaciones bajas: INT8 coincide con el modelo original en 68 de 80 transcripciones y FP16 en 79 de 80; FP32 en 80 de 80.
-- INT8 es cuantizacion parcial, no un modelo enteramente entero; no es un modelo precompilado para NPU de Qualcomm.
-- En FP16, el almacenamiento en FP16 no garantiza que toda operacion en CPU se ejecute con aritmetica FP16.
-- Los grafos actualizados (v2) no se han vuelto a ejecutar en Android ni en hardware GPU/NPU; las pruebas de la v2 se hicieron con Python LiteRT en CPU.
-- La integracion original completa es privada: no se distribuye APK ni el codigo fuente de la integracion; solo se ofrece el contrato publico y un runner de referencia.
-- Sesgos y alucinacion: no disponibles; la informacion proporcionada no documenta evaluaciones de sesgo ni tasas de error por acento o ruido.
-- Licencia: OpenMDW-1.1; al redistribuir deben conservarse la licencia y los avisos de procedencia aplicables.
+- No es un transcriptor listo para usar: requiere que la aplicacion gestione troceado, caches y decodificacion; los grafos son componentes de una integracion con estado.
+- Solo probado en ingles (en-US, prompt 0); no hay evidencia de soporte multilingue.
+- La evaluacion de precision se limita a 20 clips de LibriSpeech test-clean y 80 clips de validacion; no es un benchmark representativo de condiciones reales (ruido, acentos, dominio).
+- La variante int8 altera algunas salidas y esta marcada como `evaluation_only: true`; debe aceptarse explicitamente por su hash de manifiesto y no debe editarse el manifiesto.
+- En NPU, 5 de 20 transcripciones difieren de la CPU por homofonos cercanos, grafia de nombres raros y una coma.
+- Los grafos en FP16 sobre GPU desbordan; en GPU hay que usar FP32.
+- La NPU exige los grafos fusionados: con los 24 bloques separados el coste fijo por llamada supera el trabajo util, y un unico grafo de 24 bloques (1,19 GB) provoca falta de memoria en el S23.
+- Los ficheros NPU solo funcionan en su SoC concreto y con las versiones de runtime especificadas.
+- Cambios de contrato: los hosts escritos para v1 deben fijar la revision `153a7dbd809a255e5999130397bcd60a66f81a54`.
+- Riesgo de alucinacion en pasajes con ruido o audio fuera de dominio, inherente a los sistemas ASR; no se documentan sesgos especificos.
+- La licencia OpenMDW-1.1 debe revisarse antes de uso comercial; la model card no detalla condiciones adicionales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert
-- Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
-- Revision exacta del codigo fuente base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/tree/1c8deaecc64b91f034d73e08dd8b64625eb3395d
-- Pagina oficial de la licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Contrato de integracion: `INTEGRATION.md`
-- Documento de correccion de puntuacion: `PUNCTUATION_FIX.md`
-- Resumen de validacion: `validation-summary.json`
-- Avisos de procedencia: `NOTICE.md`
-- Runner de referencia en CPU: `reference_inference.py`
-- Variante FP32: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert/tree/main/fp32
-- Variante FP16: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert/tree/main/fp16
-- Variante INT8: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert/tree/main/int8
+- Repositorio Hugging Face: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Documentacion de integracion: `INTEGRATION.md` (en el repositorio)
+- Correccion de puntuacion: `PUNCTUATION_FIX.md` (en el repositorio)
+- Script de referencia: `reference_inference.py` (en el repositorio)
+- Manifiestos y sumas SHA-256: `SHA256SUMS` y manifiestos por variante (en el repositorio)

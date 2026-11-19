@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "chatgpt-api · GitHub Topics · GitHub",
-      "url": "https://github.com/topics/chatgpt-api",
-      "snippet": "May 9, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
-    },
-    {
-      "title": "如果你把论文全文发给ChatGPT进行润色 会有泄漏等问题的可能吗？",
-      "url": "https://www.zhihu.com/question/613509264?write",
-      "snippet": "Jul 22, 2023 · 从 OpenAI 官方隐私政策来看： 你在 ChatGPT 中输入的内容默认不会用于训练模型 （适用于 ChatGPT 企业版和开启“ …"
-    },
-    {
-      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
-      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
-      "snippet": "Sep 13, 2026 · 1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
-    },
-    {
-      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
-      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
-      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
-    },
-    {
-      "title": "Hướng dẫn phân tích kiểu tóc trên ChatGPT phù hợp khuôn mặt",
-      "url": "https://cellphones.com.vn/sforum/huong-dan-phan-tich-kieu-toc-tren-chatgpt",
-      "snippet": "Apr 26, 2026 · Hướng dẫn phân tích kiểu tóc trên ChatGPT chi tiết nhất. Khám phá bộ prompt bá đạo dùng ChatGPT Image 2 để tư …"
-    }
-  ]
+  "sources": []
 }

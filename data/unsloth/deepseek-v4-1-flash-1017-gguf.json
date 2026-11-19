@@ -48,29 +48,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Compte Instagram verrouillé et irrécupérable",
-      "url": "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
-      "snippet": "Aug 20, 2021 · La seule solution est donc d'attendre qu'Instagram vous restitue votre compte et ne tombez pas dans le piège des …"
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
     },
     {
-      "title": "Instagram - 知乎",
-      "url": "https://www.zhihu.com/topic/19550793/intro",
-      "snippet": "Apr 24, 2020 · Instagram 是一款最初运行在 iOS平台上的移动应用，以一种快速、美妙和有趣的方式将你随时抓拍下的 图片分享彼 …"
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Problème bouton shopping Instagram [Résolu] - Instagram",
-      "url": "https://forums.commentcamarche.net/forum/affich-35360771-probleme-bouton-shopping-instagram",
-      "snippet": "May 12, 2018 · Résumé de la discussion Plusieurs utilisateurs rencontrent le problème d'affichage du bouton shopping sur Instagram …"
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …"
     },
     {
-      "title": "Come riattivare un account Instagram disabilitato - CCM",
-      "url": "https://it.ccm.net/faq/27293-come-riattivare-un-account-instagram-disabilitato",
-      "snippet": "Jun 22, 2021 · Riattivare un account Instagram temporaneamente disabilitato Se hai disabilitato temporaneamente il tuo account …"
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Come ripostare una storia su Instagram: senza tag, da PC",
-      "url": "https://it.ccm.net/faq/22335-come-ripostare-una-storia-su-instagram-senza-tag-da-pc",
-      "snippet": "Mar 23, 2023 · Pubblicare sul tuo profilo Instagram una storia di un altro utente pu&ograve; essere un modo per condividere …"
+      "title": "Unsloth Docs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs",
+      "snippet": "🦥 Unsloth Docs Unsloth is an open-source framework for running and training LLMs. Unsloth lets you run and train AI models on your …"
     }
   ]
 }

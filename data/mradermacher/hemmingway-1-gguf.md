@@ -2,115 +2,91 @@
 
 ## Resumen
 
-Hemmingway-1-GGUF es la version cuantizada en formato GGUF del modelo Altworld/Hemmingway-1, publicada por el usuario mradermacher. Se trata de una conversion a GGUF de un modelo de alrededor de 27.320 millones de parametros (27,3B), orientado a chat y escritura creativa, con licencia Apache 2.0 y soporte declarado unicamente para ingles. El repositorio incluye once variantes de cuantizacion estatica, desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), lo que permite desplegarlo en hardware muy distinto, desde equipos de consumo hasta GPUs de datacenter.
+Hemmingway-1 es un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) orientado a chat y escritura creativa, desarrollado por HemmingwayAI. La versión aquí descrita es una cuantización estática en formato GGUF publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face, a partir de los pesos originales del modelo base. El modelo se etiqueta con la arquitectura qwen3.8, lo que sugiere que deriva de la familia Qwen, y declara soporte exclusivo para inglés.
 
-El valor practico de esta publicacion es precisamente ese: el modelo original solo se distribuye en pesos de transformers (safetensors), mientras que esta version ofrece pesos listos para llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF. Al ser cuantizaciones estaticas (no ponderadas con imatrix), el autor advierte de que las versiones de mayor compresion (Q2_K, Q3_K_S) pierden calidad de forma mas acusada que sus equivalentes IQ.
+Su relevancia actual radica en dos factores. Por un lado, ofrece una ventana de pesos de 27B en un rango de tamaños que cabe en GPUs de consumo con cuantizaciones agresivas (Q2_K a 11 GB, Q4_K_M a 16,9 GB). Por otro, está especializado en escritura creativa y narrativa (tags creative-writing y altworld), un nicho donde los modelos generalistas suelen rendir por debajo de lo esperado. La licencia cc-by-nc-4.0 restringe el uso comercial, lo que condiciona su adopción en producción.
 
-La relevancia es limitada por su adopcion: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no hay model card detallada del modelo base ni resultados de benchmarks publicados. El tag "qwen3.8" en la model card sugiere una base de la familia Qwen, pero no se confirma en la informacion disponible.
+El repositorio GGUF acumula 234.309 descargas y 10 likes, lo que indica un interés considerable de la comunidad pese a la escasez de documentación técnica publicada por el autor original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag "qwen3.8" sugiere una base tipo Qwen, sin confirmar) |
-| Parametros totales | 27.320.697.856 (~27,3B) |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (etiquetada como qwen3.8 en los tags del repo) |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (todas estaticas, sin imatrix) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base usa safetensors |
-| Modelo base | Altworld/Hemmingway-1 |
-| Tamano del repositorio | 189,2 GB (suma de todas las cuantizaciones) |
-| Libreria declarada | transformers |
-| Fecha de publicacion | 20 de septiembre de 2026 |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; también existen quants con imatrix en mradermacher/Hemmingway-1-i1-GGUF |
+| Idiomas soportados | inglés (en) |
+| Licencia | cc-by-nc-4.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales en el repo HemmingwayAI/Hemmingway-1 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineamiento (RLHF, DPO u otras) empleadas en Altworld/Hemmingway-1. La model card de esta publicacion es exclusivamente una ficha de cuantizacion: describe los ficheros generados, el metodo (cuantizacion estatica, `output_tensor_quantised: 1`, `convert_type: hf`) y las recomendaciones de uso, pero no incluye detalles del entrenamiento del modelo original.
+La información disponible no detalla la arquitectura interna más allá de la etiqueta qwen3.8 asociada al modelo base, que apunta a un transformer decoder-only de la familia Qwen con 27,3B parámetros. No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención ni si emplea atención lineal o decodificación especulativa. Tampoco se documentan los datos de entrenamiento: no hay cifras de tokens, composición del dataset ni indicación de si se aplicaron fases de RLHF, DPO o ajuste supervisado.
 
-El unico indicio tecnico es el tag "qwen3.8" incluido en la model card, que apuntaria a una arquitectura transformer de la familia Qwen en su version 3.8, sin que exista confirmacion adicional. Los parametros totales (27,3B) son coherentes con un modelo denso de esa escala. Las innovaciones tecnicas destacables, si existen, no estan documentadas en la informacion proporcionada.
+Las cuantizaciones publicadas por mradermacher se generan con un pipeline estático (quantize_version 2, output_tensor_quantised 1, convert_type hf) e incluyen tanto variantes K-quant como IQ. El autor indica que los quants ponderados con imatrix están en un repositorio separado (Hemmingway-1-i1-GGUF), lo que sugiere que la versión aquí descrita prioriza la simplicidad de generación sobre la calidad máxima por bit.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como `chat` y `conversational`, por lo que esta orientado a dialogos multi-turno.
-- Escritura creativa: el tag `creative-writing` indica especializacion o al menos orientacion hacia prosa, ficcion y contenido narrativo.
-- Generacion de codigo: no disponible (no se documenta ninguna capacidad de programacion).
-- Razonamiento matematico: no disponible (no se documenta).
-- Capacidades de vision o audio: no disponibles (no se declaran y no hay fichero mmproj en el repositorio).
-- Tool calling / function calling: no disponible (no se documenta soporte de herramientas ni de agentes).
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Capacidades multilingues: limitadas al ingles segun el campo `language: en`; no se declara soporte de otros idiomas.
-- Agentes y razonamiento multi-paso: no disponible.
+- Generación de texto conversacional multi-turno, con foco declarado en chat.
+- Escritura creativa y narrativa: ficción, diálogo, descripción de escenas y construcción de mundos (tag altworld).
+- Razonamiento general y respuesta a instrucciones, heredado del modelo base Qwen subyacente.
+- Capacidades multilingües limitadas al inglés según la model card; no se declaran otros idiomas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking explícito, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Escritura de ficcion asistida: el modelo esta etiquetado como `creative-writing`, por lo que puede emplearse para generar borradores de relatos, desarrollar dialogos o superar bloqueos creativos, siempre trabajando en ingles y con supervision humana del resultado.
-- Generacion de contenido editorial en ingles: redaccion de articulos, newsletters o posts para audiencias angloparlantes, aprovechando la orientacion conversacional del modelo para iterar sobre el texto mediante instrucciones sucesivas.
-- Asistente conversacional local sin conexion: desplegado con llama.cpp u Ollama en una estacion de trabajo, permite mantener conversaciones completamente offline, algo relevante en entornos con requisitos de confidencialidad o sin acceso a internet.
-- Prototipado y evaluacion de modelos: al existir cuantizaciones desde 11,0 GB, es util para probar rapidamente si la calidad de un modelo de 27B ajustado para escritura encaja en un flujo de trabajo, antes de comprometerse con el modelo base completo en safetensors.
-- Banco de pruebas de cuantizacion: las once variantes publicadas permiten comparar de forma controlada como degrada la calidad entre Q2_K y Q8_0 en tareas de generacion de prosa, aunque no se hayan publicado curvas de perplejidad propias del modelo.
-- Aplicaciones de escritura en cliente de sobremesa: integrable en LM Studio, koboldcpp o text-generation-webui para herramientas de asistencia a la escritura que corren en el propio equipo del usuario y no envian datos a servicios externos.
-- Base para ajuste fino posterior: la licencia Apache 2.0 permite usar el modelo (o el original en safetensors) como punto de partida para fine-tuning o LoRA, sujeto a las condiciones de la licencia del modelo base, que deben verificarse en su repositorio.
+- Generación de ficción asistida: el modelo puede redactar capítulos, diálogos y descripciones de escena manteniendo coherencia de personajes a lo largo de una conversación, gracias a su especialización declarada en creative-writing. Adecuado para autores que trabajan con borradores iterativos.
+- Construcción de mundos (worldbuilding): útil para generar trasfondo de ambientaciones, cronologías, sistemas de magia o facciones políticas, un caso alineado con el tag altworld del repositorio.
+- Chat narrativo y juegos de rol por texto: su orientación conversacional y su tamaño de 27B permiten mantener personajes con voz consistente en sesiones largas, siempre que el contexto configurado lo permita.
+- Asistencia a guionistas y copy creativo: generación de variantes de titulares, eslóganes y textos de marca con tono controlado mediante prompting, desplegable en local con llama.cpp u Ollama.
+- Prototipado de asistentes de escritura en local: al caber en GPUs de consumo en Q4_K_M (16,9 GB), permite montar un entorno de pruebas sin depender de APIs externas ni enviar textos confidenciales a terceros.
+- Investigación sobre cuantización: el repositorio ofrece once variantes de cuantización del mismo modelo, lo que lo convierte en un banco de pruebas útil para medir la degradación de calidad (perplejidad) entre Q2_K y Q8_0 en tareas creativas.
+- Fine-tuning y experimentación académica: la licencia cc-by-nc-4.0 permite su uso en investigación no comercial, y el formato GGUF facilita la evaluación con harnesses estándar sin infraestructura de datacenter.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card de esta cuantizacion ni los datos recogidos de la busqueda web incluyen cifras de MMLU, HumanEval, GSM8K, perplejidad u otras metricas, ni para el modelo base ni para las cuantizaciones.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos + overhead de contexto, orientativo):
-  - Q2_K (11,0 GB): ~13-15 GB de VRAM.
-  - Q3_K_S (12,4 GB): ~15-16 GB.
-  - Q3_K_M (13,6 GB): ~16-18 GB.
-  - Q3_K_L (14,7 GB): ~17-19 GB.
-  - IQ4_XS (15,5 GB): ~18-20 GB.
-  - Q4_K_S (15,9 GB): ~19-21 GB.
-  - Q4_K_M (16,9 GB): ~20-22 GB.
-  - Q5_K_S (19,1 GB): ~22-24 GB.
-  - Q5_K_M (19,6 GB): ~23-25 GB.
-  - Q6_K (22,5 GB): ~26-28 GB.
-  - Q8_0 (29,1 GB): ~32-34 GB.
-- GPU de datacenter: A100 40/80 GB, H100 80 GB o L40S 48 GB ejecutan las cuantizaciones altas (Q6_K, Q8_0) sin problemas; una A100 40 GB admite Q5_K_M y Q6_K completas.
-- GPU de consumo: una RTX 4090 o RTX 3090 (24 GB) ejecuta Q4_K_M o IQ4_XS con contexto corto y offload parcial; Q3_K_M y Q3_K_S caben completas con margen. Para Q5_K_M o superior se recomienda repartir entre dos GPU de 24 GB.
-- Memoria unificada: un Mac con 32 GB puede ejecutar Q4_K_S o Q4_K_M con contexto moderado; 64 GB permiten Q8_0.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui. vLLM y TGI soportan GGUF de forma experimental o no nativa; para esos servidores es preferible servir el modelo base en safetensors.
-- Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo para ninguna de las cuantizaciones.
-- Nota sobre ficheros: ninguna de las cuantizaciones individuales supera los 29,1 GB, por lo que no se requiere concatenar ficheros multiparte en la mayoria de configuraciones.
+- VRAM estimada para inferencia (según tamaño de los ficheros GGUF): Q2_K ~11,0 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. Hay que añadir el espacio de la caché KV, que depende del contexto configurado.
+- GPU recomendadas: para Q8_0 y Q6_K, una RTX 4090 (24 GB) o A100/H100 de 40-80 GB; para Q4_K_M, una RTX 4090 o RTX 3090 (24 GB) con margen; para Q2_K y Q3, tarjetas de 12-16 GB como RTX 4070 Ti o RTX 4080.
+- ¿Cabe en GPU de consumo? Sí. Q4_K_M (16,9 GB) entra en RTX 4090, RTX 3090 y RTX 4080 Super; Q2_K (11,0 GB) entra en RTX 4070 y RTX 3080 de 12 GB. En tarjetas de 8 GB habría que recurrir a offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El tag endpoints_compatible del repositorio sugiere compatibilidad con endpoints de inferencia tipo TGI/vLLM, aunque no se detalla la configuración.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos publicados de Hemmingway-1 (benchmarks, contexto, arquitectura confirmada) que permitan una comparacion rigurosa. La tabla siguiente recoge unicamente los campos verificables de esta publicacion frente a alternativas conocidas de escala similar; los datos de los modelos comparables proceden de sus fichas publicas y no de la informacion proporcionada en esta busqueda.
-
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmarks |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Hemmingway-1-GGUF (mradermacher) | 27,3B | no disponible | Apache 2.0 | en | no disponibles |
-| Qwen3 (familia, tamano equivalente) | no disponible en esta busqueda | no disponible | Apache 2.0 en la mayoria de tamanos | multilingue | no disponibles en esta busqueda |
-| Mistral Small 3 (24B) | ~24B | 32k (32.000 tokens) | Apache 2.0 | multilingue | publicados por el autor |
-| Gemma 3 27B | ~27B | 128k (128.000 tokens) | licencia Gemma (con condiciones de uso) | multilingue | publicados por el autor |
+| Hemmingway-1 (este) | 27,3B | no disponible | cc-by-nc-4.0 | GGUF | Especializado en escritura creativa, solo inglés |
+| Qwen2.5-32B-Instruct | 32,5B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF | Modelo generalista de referencia de la familia Qwen, multilingüe y con uso comercial permitido |
+| Gemma-2-27B-it | 27B | 8.192 tokens | Gemma license (uso comercial con restricciones) | safetensors, GGUF | Tamaño casi idéntico, generalista, buen rendimiento en razonamiento |
+| Mistral-Small-24B-Instruct | 23,6B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Alternativa de tamaño similar con licencia permisiva |
 
-La diferencia mas relevante frente a estas alternativas no esta en el rendimiento, que se desconoce, sino en la especializacion declarada (`creative-writing`), en el soporte exclusivo de ingles y en su adopcion practicamente nula (0 descargas), lo que implica menor soporte comunitario y menos casos de uso verificados.
+La comparación con Qwen2.5-32B-Instruct y Gemma-2-27B-it es pertinente por tamaño y por la etiqueta qwen3.8 del modelo base. No obstante, no hay datos de benchmarks que permitan afirmar qué modelo rinde mejor en escritura creativa; la comparativa se limita a especificaciones y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados, pero al no existir informacion sobre los datos de entrenamiento no es posible descartar sesgos de genero, cultura o ideologia en la generacion de texto.
-- Riesgo de alucinacion: alto y no cuantificado; no hay evaluaciones de fidelidad factual ni de tasas de alucinacion para este modelo.
-- Idioma: el modelo declara unicamente ingles. No debe asumirse un rendimiento aceptable en castellano u otros idiomas, ni siquiera para tareas de comprension.
-- Perdida de calidad por cuantizacion: las variantes Q2_K, Q3_K_S y Q3_K_M son las mas agresivas. El propio autor advierte de que Q3_K_M es de "lower quality". Las cuantizaciones son estaticas, no ponderadas con imatrix (no hay versiones ponderadas disponibles), lo que penaliza especialmente en los niveles bajos.
-- Licencia: Apache 2.0 en esta publicacion, lo que permite uso comercial de estas cuantizaciones. No obstante, la licencia y las condiciones del modelo base Altworld/Hemmingway-1 deben verificarse por separado antes de un uso en produccion.
-- Adopcion y soporte: 0 descargas y 0 likes en el momento de la consulta, sin comunidad activa, sin issues resueltos y sin mantenimiento demostrado. No hay garantia de actualizaciones.
-- Falta de documentacion: no hay model card del modelo base, ni ficha de modelo, ni pipeline declarado en la informacion disponible. Cualquier evaluacion de idoneidad exige pruebas propias.
-- Ausencia de contexto conocido: al no publicarse la longitud de contexto, no se puede planificar el uso en conversaciones largas, analisis de documentos extensos o tareas de recuperacion aumentada con contexto amplio.
-- Idoneidad para produccion: sin benchmarks, sin evaluaciones de seguridad y sin historial de uso, este modelo no deberia desplegarse en entornos productivos orientados al usuario sin una bateria de pruebas previa.
+- Licencia cc-by-nc-4.0: prohíbe el uso comercial. Cualquier despliegue en producto, SaaS o servicio de pago requiere una licencia aparte del titular de los derechos.
+- Idiomas: solo se declara inglés. No hay evidencia de competencia en castellano ni en otros idiomas, por lo que no es adecuado para aplicaciones multilingües.
+- Sesgos: no se documentan evaluaciones de sesgo, toxicidad o alineación. Al ser un modelo entrenado para escritura creativa, puede reproducir estereotipos presentes en la ficción de su corpus.
+- Riesgo de alucinación: no se han publicado métricas de fidelidad factual. En tareas de recuperación de hechos o citas, conviene verificar las salidas.
+- Contexto: se desconoce la longitud de contexto soportada; planificar aplicaciones con documentos largos sin confirmarla previamente es arriesgado.
+- Cuantizaciones de baja calidad: el propio autor marca Q3_K_M como lower quality. Para producción se recomienda Q4_K_M o superior, y evaluar la variante imatrix si la calidad es crítica.
+- Trazabilidad: la model card del GGUF es una plantilla de mradermacher; no incluye información del autor original sobre datos de entrenamiento, evaluación o limitaciones, lo que dificulta una auditoría técnica.
+- Formato: los pesos solo están en GGUF en este repositorio; para fine-tuning hay que acudir al repo original HemmingwayAI/Hemmingway-1.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Hemmingway-1-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/Altworld/Hemmingway-1
-- Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Hemmingway-1-GGUF
-- Solicitudes de cuantizacion y FAQ del autor: https://huggingface.co/mradermacher/model_requests
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis comparativo de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Grafica de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Empresa patrocinadora del trabajo de cuantizacion: https://www.nethype.de/
+- Repositorio GGUF: https://huggingface.co/mradermacher/Hemmingway-1-GGUF
+- Modelo base original: https://huggingface.co/HemmingwayAI/Hemmingway-1
+- Quants con imatrix: https://huggingface.co/mradermacher/Hemmingway-1-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Hemmingway-1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

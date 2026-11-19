@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.de/index.html",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google Übersetzer",
-      "url": "https://translate.google.de/",
-      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
-    },
-    {
-      "title": "Google Earth",
-      "url": "https://www.google.de/intl/de/earth/index.html",
-      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
-    },
-    {
-      "title": "Google Bilder",
-      "url": "https://images.google.de/?hl=de",
-      "snippet": "Google Bilder, die umfassendste Bildersuche im Web"
-    },
-    {
-      "title": "Google Trends",
-      "url": "https://trends.google.de/trends/",
-      "snippet": "Bei Google Trends können Sie sich das Suchinteresse für Begriffe und Themen nach Zeit, Ort und Beliebtheit ansehen"
-    }
-  ]
+  "sources": []
 }

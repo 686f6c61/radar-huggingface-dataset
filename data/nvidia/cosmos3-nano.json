@@ -53,29 +53,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "cosmos3-nano Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/cosmos3-nano",
-      "snippet": "Model Outputs. AI models generate responses and outputs that may be inaccurate, harmful, biased or indecent. NVIDIA hosts third-party models that could ..."
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
     },
     {
-      "title": "cosmos3-nano Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/cosmos3-nano/systemcard",
-      "snippet": "Cosmos3 Nano is hosted by NVIDIA in the API Catalog as a managed Preview API endpoint. NVIDIA manages infrastructure, model deployment, and service-level ..."
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
     },
     {
-      "title": "cosmos3-nano Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/cosmos3-nano/modelcard",
-      "snippet": "Model developer: NVIDIA. Architecture: Transformer, using the Cosmos3 Mixture-of-Transformers architecture. Visual and action generation use iterative denoising ..."
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …"
     },
     {
-      "title": "nvidia/Cosmos3-Nano - Hugging Face",
-      "url": "https://huggingface.co/nvidia/Cosmos3-Nano",
-      "snippet": "01.06.2026 ... NVIDIA Cosmos™ is a world foundation model platform designed to accelerate the development of Physical AI by enabling machines to understand, ..."
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
     },
     {
-      "title": "Wie Cosmos 3 physischer KI hilft, vor dem Handeln zu denken",
-      "url": "https://blogs.nvidia.de/cosmos-3-physical-ai-open-world-foundation-model/",
-      "snippet": "31.05.2026 ... Das neue, offene NVIDIA World Foundation Model vereint visuelles Reasoning, multimodale Generierung und Aktionsvorhersage in einem Modell, ..."
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
     }
   ]
 }

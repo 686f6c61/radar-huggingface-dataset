@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "CompiwerAI/YUBA-XV",
+  "slug": "compiwerai-yuba-xv",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/YUBA-XV",
+  "created_at": "2026-11-18T21:42:36.000Z",
+  "updated_at": "2026-11-18T21:42:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "stealth",
+    "compiwer-ai",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "ar",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711731,
+  "storage_human": "18.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -63,31 +63,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Solitaire game - Modopo Handy-Forum",
-      "url": "https://forum.modopo.com/english-discussion/t-13355-solitaire-game.html",
-      "snippet": "Oct 24, 2005 · M55, SXG75 Beiträge: 20 Solitaire game Anyone knows any free solitare for sxg75? Heute 15.08.2006, 01:57 adfree"
-    },
-    {
-      "title": "openbmb/MiniCPM5-1B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-1B-GGUF",
-      "snippet": "Desktop Pet We also ship OpenBMB/MiniCPM-Desk-Pet, a desktop pet driven locally by MiniCPM5-1B. It supports Apple Silicon / NVIDIA GPU / CPU paths, can work with coding agents such as Cursor, Claude Code, and Codex, and supports LoRA persona switching. Limitations and Responsible Use MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data ..."
-    },
-    {
-      "title": "Solitaire Turnier - hier kostenlos online spielen",
-      "url": "https://forum.modopo.com/arcade/tournament/246.html",
-      "snippet": "Feb 11, 2010 · Spielhallen-Turnier Solitaire Turnier gestartet am 11.02.2010 das niedrigere Ergebnis gewinnt Spieler wird nach 3 …"
-    },
-    {
-      "title": "MiniCPM5 - a openbmb Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/openbmb/minicpm5",
-      "snippet": "A SOTA 1B on-device LLM, small yet powerful."
-    },
-    {
-      "title": "Focal Bathys MG Wireless Headphone Review | AVForums",
-      "url": "https://www.avforums.com/reviews/focal-bathys-mg-wireless-headphone-review.22679/",
-      "snippet": "Jun 9, 2025 · Review of the Focal Bathys MG wireless headphone which improves on the original Bathys model with a design touch …"
-    }
-  ]
+  "sources": []
 }

@@ -56,8 +56,13 @@
   "sources": [
     {
       "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/?msockid=20c2688ae3626b181d887f65e2f46ad9",
+      "url": "https://www.microsoft.com/?msockid=17ea3e488f356c313d9f265e8e776dc8",
       "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
+      "url": "https://www.microsoft.com/fr-fr?msockid=17ea3e488f356c313d9f265e8e776dc8",
+      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
     },
     {
       "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
@@ -65,19 +70,14 @@
       "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
     },
     {
-      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
-      "url": "https://www.microsoft.com/fr-fr?msockid=20c2688ae3626b181d887f65e2f46ad9",
-      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
-    },
-    {
       "title": "Sign in to your account",
       "url": "https://myaccount.microsoft.com/",
       "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
     },
     {
-      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
-      "url": "https://apps.microsoft.com/home",
-      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/login",
+      "snippet": "Sign in to manage your Microsoft account and access free online services like Outlook, Word, Excel, and PowerPoint securely from …"
     }
   ]
 }

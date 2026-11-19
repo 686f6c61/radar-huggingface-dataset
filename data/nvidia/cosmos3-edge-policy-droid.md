@@ -2,87 +2,88 @@
 
 ## Resumen
 
-Cosmos3-Edge-Policy-DROID es un modelo de política (world action model) desarrollado por NVIDIA dentro de la plataforma Cosmos 3, un conjunto de modelos fundacionales de mundo diseñados para acelerar la IA física (robótica, vehículos autónomos y espacios inteligentes). Este modelo concreto está especializado en generar trayectorias de acciones para el control de robots de manipulación, tomando como entrada instrucciones en lenguaje natural y observaciones visuales del robot.
+Cosmos3-Edge-Policy-DROID es un modelo de política robótica (policy model) desarrollado por NVIDIA, derivado mediante post-entrenamiento del modelo base Cosmos3-Edge. Forma parte de la familia Cosmos3, una colección de modelos del mundo ("world models") omniomodales orientados a Physical AI: robótica, conducción autónoma y entornos industriales. El modelo recibe instrucciones en lenguaje natural y observaciones visuales de la plataforma robótica DROID y genera trayectorias de acción para tareas de manipulación y control.
 
-Se trata de la variante Edge de la familia de políticas DROID, con aproximadamente 3,86 mil millones de parámetros, lo que lo sitúa como la opción ligera frente a las variantes Nano (16B) y Super (64B). Su objetivo es ejecutar control en tiempo real en hardware de borde, razonando sobre lo que ve el robot y generando acciones coherentes con la tarea solicitada. Fue liberado el 20 de julio de 2026 bajo la licencia OpenMDW1.1, tanto para uso comercial como no comercial.
+Arquitectónicamente se apoya en el diseño Mixture-of-Transformers (MoT) de Cosmos3, que combina una torre transformer autorregresiva para generación de tokens discretos con una torre transformer de difusión para generación multimodal continua. El checkpoint cuenta con aproximadamente 3.859 millones de parámetros (4B según la model card) y se distribuye en formato safetensors con un tamaño de repositorio de 9,2 GB. La ventana de contexto de texto es de 4096 tokens y el modelo acepta entradas de imagen y vídeo en resoluciones de 256p y 480p.
 
-El modelo forma parte de la plataforma Cosmos de NVIDIA, que combina generación de vídeo, imagen, audio y acciones. En el caso de Cosmos3-Edge-Policy-DROID, la salida es exclusivamente la trayectoria de acciones del robot, lo que lo convierte en un componente de control, no en un generador de contenido multimodal. Está específicamente entrenado con datos del dataset DROID, una plataforma robótica de manipulación de NVIDIA.
+Su relevancia actual radica en que es un modelo de política listo para uso comercial liberado bajo licencia OpenMDW 1.1, lo que permite integrar políticas de control robótico en investigación y producción sin las restricciones de licencias más cerradas. Está especializado en el embodiment DROID (8 dimensiones de acción), lo que lo hace directamente aplicable a pipelines de aprendizaje por imitación y evaluación de políticas en brazos manipuladores.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Transformers (MoT): transformer autorregresivo para texto + diffusion transformer para acciones |
-| Parametros totales | 3.859.003.312 (~3,86B) |
-| Parametros activos | no disponible (no es MoE, es MoT) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors FP32/FP16) |
+| Arquitectura | Transformer con Mixture-of-Transformers (MoT): torre autorregresiva + torre de difusión |
+| Parámetros totales | 3.859.003.312 (4B según model card) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 4096 tokens (texto); vídeo: máximo 5 frames; acción: 16–400 frames |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW 1.1 (permite uso comercial y no comercial) |
-| Formato de pesos | safetensors (model.safetensors.index.json + 7 shards del transformer, VAE, vision encoder, tokenizadores) |
+| Licencia | OpenMDW 1.1 (openmdw1.1-license) |
+| Formato de pesos | safetensors (7 shards en transformer/ + vae, vision_encoder, sound_tokenizer) |
 
 ## Arquitectura y entrenamiento
 
-Cosmos3-Edge-Policy-DROID se basa en la arquitectura Mixture-of-Transformers (MoT) de la familia Cosmos3, que combina dos torres transformer complementarias: un transformer autorregresivo encargado de la generación de tokens discretos (texto) y un diffusion transformer para la síntesis de modalidades continuas (imagen, vídeo, audio y, en este caso, acciones). En inferencia, el texto se genera mediante decodificación autorregresiva estándar de siguiente token, mientras que las trayectorias de acción se sintetizan mediante un proceso iterativo de denoising. Esta arquitectura unificada permite modelar modalidades heterogéneas sin necesidad de redes separadas.
+Cosmos3 emplea una arquitectura Mixture-of-Transformers (MoT) con dos torres complementarias: una torre autorregresiva que genera tokens discretos mediante decodificación next-token estándar (texto) y una torre de difusión que sintetiza modalidades continuas (imagen, vídeo, audio y acciones) mediante denoising iterativo. Esta separación permite modelar modalidades heterogéneas en un único framework preservando el mecanismo de generación más adecuado para cada una. El repositorio incluye componentes separados de VAE, vision encoder, text tokenizer y sound tokenizer, coherentes con un pipeline multimodal de difusión.
 
-El entrenamiento específico para política se realiza sobre el dataset DROID, una plataforma de recolección de datos de manipulación robótica de NVIDIA. El modelo aprende a mapear observaciones visuales del robot (a través de un vision encoder) y la instrucción en lenguaje natural a una secuencia de acciones de control. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO en esta variante. La información disponible tampoco detalla innovaciones adicionales como decodificación especulativa o attention lineal.
+El checkpoint Cosmos3-Edge-Policy-DROID es una variante post-entrenada del modelo base Cosmos3-Edge, especializada en generar trayectorias de acción a partir de instrucciones de lenguaje y observaciones visuales de la plataforma DROID. No se han proporcionado en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card tampoco especifica innovaciones adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de trayectorias de acción para robots de manipulación: dado un texto de instrucción y observaciones visuales, produce una secuencia de acciones de control coherentes con la tarea.
-- Razonamiento sobre el estado observado del entorno: el modelo interpreta la escena visual actual para decidir la siguiente acción, no solo reproduce patrones estáticos.
-- Integración con la plataforma Cosmos 3: funciona como componente de control dentro de un ecosistema más amplio de modelos de mundo (world models) para IA física.
-- Ejecución en tiempo real en hardware de borde: es la variante Edge de la familia, pensada para correr en módulos compactos y control en tiempo real.
-- Soporte de entrada multimodal: combina texto (instrucción) y visión (observaciones) en un único pipeline de inferencia.
-- No soporta generación de vídeo, imagen ni audio: este modelo concreto está especializado únicamente en la salida de acciones.
+- Generación de trayectorias de acción robótica para el embodiment DROID (8 dimensiones: posiciones articulares, estado del gripper, pose de cámara).
+- Comprensión de instrucciones en lenguaje natural como condicionamiento de la política.
+- Procesamiento de observaciones visuales en imagen (jpg, png, jpeg, webp) y vídeo (mp4) a 256p y 480p.
+- Generación multimodal: el modelo base Cosmos3 produce imagen, vídeo, audio, acción y texto; este checkpoint está especializado en acción.
+- Entrada de trayectorias de acción previas como contexto (secuencias 2D de forma (T, D)).
+- Soporte de ratios de aspecto 16:9, 4:3, 1:1, 3:4 y 9:16.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Control de brazos robóticos en laboratorio: el modelo puede sustituir a controladores clásicos en tareas de manipulación sobre la plataforma DROID, generando trayectorias a partir de una instrucción textual como "coge el objeto rojo" y la imagen de la cámara del robot.
-- Automatización de fabricación en fábrica: en entornos industriales, se puede integrar para tareas de pick-and-place y ensamblaje repetitivo, donde la observación visual y la instrucción textual se combinan para generar acciones en tiempo real.
-- Teleoperación asistida: un operador humano describe la tarea en lenguaje natural y el modelo completa la trayectoria de acción, reduciendo la carga cognitiva del control manual en entornos de trabajo remoto.
-- Simulación de políticas (sim-to-real): el modelo puede usarse en entornos simulados para generar datos de acción sintéticos que luego se transfieren a robots reales, acelerando el ciclo de desarrollo de políticas de control.
-- Investigación en aprendizaje robótico: sirve como punto de partida para experimentos de aprendizaje por refuerzo y comportamiento emergente, ya que ofrece una política base entrenada en un dataset real y diverso.
-- Prototipado de sistemas de control de borde: dado su tamaño reducido, es adecuado para validar despliegues en hardware de bajo consumo (NVIDIA Jetson u otros módulos de borde) antes de escalar a las variantes Nano o Super.
+- Manipulación robótica con DROID: el modelo genera trayectorias de acción a partir de instrucciones y observaciones visuales, adecuado para control de brazos manipuladores en tareas de pick-and-place, ensamblaje o manipulación de objetos.
+- Aprendizaje por imitación y evaluación de políticas: sirve como política de referencia o baseline para comparar estrategias de control en entornos simulados y reales sobre la plataforma DROID.
+- Investigación en Physical AI: permite experimentar con políticas fundacionales preentrenadas sin partir de cero, acelerando la iteración en laboratorios de robótica.
+- Generación de datos sintéticos de acción: combinado con las capacidades generativas de la familia Cosmos3, puede emplearse para aumentar datasets de demostraciones robóticas.
+- Prototipado de pipelines de control condicionados por lenguaje: integración en stacks de robótica que traducen comandos en lenguaje natural a secuencias de control de 8 dimensiones.
+- Evaluación de robustez visual: al aceptar imagen y vídeo a 256p y 480p con distintos ratios de aspecto, permite probar la política bajo variaciones de resolución y encuadre.
+- Docencia y divulgación: modelo de 4B parámetros con licencia permisiva para uso comercial, útil en cursos de robótica y aprendizaje profundo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para Cosmos3-Edge-Policy-DROID en la información disponible. El sitio oficial de Cosmos 3 menciona que la familia Cosmos 3 lidera entre los modelos abiertos en los benchmarks de robótica R-Bench, RoboLab y RoboArena, pero no se incluyen cifras concretas ni una desglose por variante de modelo. No hay datos de MMLU, HumanEval ni otras métricas de lenguaje, ya que este modelo no está diseñado para tareas de lenguaje general.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la documentación oficial. Con ~3,86B parámetros, una estimación razonable sería unos 8 GB en FP16 y menos de 4 GB en cuantización de 8 bits, pero no se confirma en la información proporcionada.
-- GPU recomendadas: la familia Edge está diseñada para hardware de borde; se espera compatibilidad con GPUs de consumo (RTX 3090, RTX 4090) y plataformas embebidas de NVIDIA como Jetson, aunque no hay una lista oficial de requisitos publicada.
-- Capacidad en consumer GPU: por tamaño, cabe en GPUs de consumo actuales (16 GB o más), especialmente con cuantización.
-- Opciones de despliegue: la librería `cosmos` de NVIDIA es la vía principal; no se mencionan soporte explícito para vLLM, llama.cpp u Ollama en la información.
-- Latencia y throughput: no disponible. El diseño Edge sugiere optimización para tiempo real, pero no se han publicado cifras concretas.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 3.859 millones de parámetros en safetensors (probablemente fp16/bf16), el peso completo ronda los 8 GB; a fp16 se estiman en torno a 8 GB de VRAM solo para pesos, más overhead de activaciones y componentes auxiliares (VAE, vision encoder, sound tokenizer).
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, GPUs de datacenter como A100 o H100 son adecuadas; GPUs consumer de gama alta con 16–24 GB de VRAM podrían alojar el modelo en precisión reducida, aunque no se confirma.
+- ¿Cabe en GPU consumer? No confirmado oficialmente; por el tamaño del checkpoint (9,2 GB de repositorio) es plausible en GPUs con 16 GB o más, sujeto a validación.
+- Opciones de despliegue: la librería indicada es `cosmos`; el código de referencia está en el repositorio de GitHub de NVIDIA Cosmos. Soporte para vLLM, llama.cpp, Ollama o TGI: no disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Cosmos3-Edge-Policy-DROID | 3,86B | no disponible | Política de robot (DROID) | OpenMDW 1.1 | Hugging Face, código abierto |
-| Cosmos3-Nano-Policy-DROID | 16B | no disponible | Política de robot (DROID) | OpenMDW 1.1 | Hugging Face, código abierto |
-| Cosmos3-Super-Policy-DROID | 64B | no disponible | Política de robot (DROID) | OpenMDW 1.1 | Hugging Face, código abierto |
-
-No se han identificado en la información proporcionada alternativas de terceros con la misma especialización en políticas de robot sobre el dataset DROID. La comparativa se limita a las variantes internas de la familia Cosmos 3, donde Edge es la opción más ligera y Super la más pesada. No se dispone de datos de rendimiento comparativo entre ellas en la información revisada.
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos comparables de política robótica (por ejemplo, otras variantes de la familia Cosmos3 o políticas de otros fabricantes) que permitan una comparación rigurosa. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- Especialización restringida: el modelo está entrenado exclusivamente para la plataforma DROID y tareas de manipulación; no sirve para control de robots de otras plataformas sin reentrenamiento o fine-tuning.
-- Riesgo de alucinación de acciones: al ser un modelo generativo, puede producir trayectorias de acción incoherentes o inseguras si la entrada visual o textual no se ajusta a los datos de entrenamiento; requiere supervisión humana en entornos reales.
-- Sin datos de robustez publicados: no se ha documentado el comportamiento en condiciones de iluminación variable, oclusiones o fallos de sensores, lo que limita la confianza para despliegues de producción sin validación previa.
-- Licencia OpenMDW 1.1: aunque permite uso comercial, es una licencia propia de NVIDIA con condiciones específicas que deben revisarse antes de su integración en productos; el enlace a los términos está disponible en la página del modelo.
-- Sin soporte de idiomas documentado: no se indica qué idiomas soporta la entrada de instrucciones; el dataset DROID está mayoritariamente en inglés, por lo que las instrucciones en otros idiomas pueden degradar el rendimiento.
-- Dependencia del ecosistema Cosmos: para usar el modelo es necesario utilizar la librería `cosmos` de NVIDIA, lo que limita la portabilidad a otros frameworks de inferencia estándar.
+- Especialización limitada al embodiment DROID (8 dimensiones de acción); no es directamente transferible a otros robots sin adaptación.
+- La entrada de acción solo está soportada para la plataforma DROID según la model card.
+- Límite de 5 frames de vídeo de entrada y de 4096 tokens de texto, lo que restringe el contexto temporal y lingüístico.
+- No se soportan entradas en escala de grises; solo RGB de 8 bits por canal en sRGB.
+- Riesgo de alucinación y de generar trayectorias no seguras en entornos reales: requiere validación y salvaguardas antes de desplegar en producción física.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles; no se confirma cobertura multilingüe.
+- Licencia OpenMDW 1.1: permite uso comercial y no comercial según la model card, pero conviene revisar los términos completos en el enlace de licencia antes de su integración.
+- No se han publicado benchmarks que permitan estimar el rendimiento real de la política.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
-- Colección de modelos Cosmos 3: https://huggingface.co/collections/nvidia/cosmos3
-- Repositorio de código: https://github.com/nvidia/cosmos
-- White paper (informe técnico): https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
-- Página web de Cosmos 3: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
-- Documentación de referencia de modelos: https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html
+- Colección Cosmos3: https://huggingface.co/collections/nvidia/cosmos3
+- Ejemplos Cosmos3: https://huggingface.co/collections/nvidia/cosmos3-examples
+- Código: https://github.com/nvidia/cosmos
+- White paper: https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
+- Web oficial: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
+- Framework Cosmos: https://github.com/nvidia/cosmos-framework
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Paper DMD2 (distillation, referencia de la familia): https://arxiv.org/abs/2405.14867

@@ -2,73 +2,90 @@
 
 ## Resumen
 
-Qwen3.5-0.8-Cyber-GGUF es un repositorio que distribuye el modelo Qwen/Qwen3.5-0.8B en formato GGUF, con una escalera de cuantizaciones pensada para inferencia local en dispositivos con recursos limitados. El autor, reaperdoesntknow, lo publica como parte de una colección orientada a ciberseguridad (CIx), aunque la etiqueta "Cyber" se describe como una variante del repositorio, no como una capacidad verificada. El modelo base tiene 752 millones de parámetros y licencia Apache-2.0.
+Qwen3.5-0.8-Cyber-GGUF es una distribucion en formato GGUF del modelo Qwen/Qwen3.5-0.8B, publicada por el usuario reaperdoesntknow dentro de su coleccion "CIx cybersecurity models". No se trata de un modelo entrenado desde cero, sino de una conversion y cuantizacion del modelo base de Qwen en una escalera de niveles de compresion (BF16, Q8_0, Q6_K, Q4_K_M, Q2_K_L) pensada para inferencia local en llama.cpp y Ollama. El repositorio ocupa 4,4 GB e incluye tambien un artefacto `mmproj` BF16 de 207 MB asociado a componentes de vision.
 
-La relevancia de esta ficha radica en que ofrece un punto de partida práctico para experimentar con un modelo pequeño de la familia Qwen3.5 en CPU o GPU de baja gama, permitiendo comparar el impacto de distintas cuantizaciones (desde BF16 hasta Q2_K_L) en calidad y memoria. No se publican resultados de benchmarks ni documentación del ajuste fino, por lo que las capacidades reales deben evaluarse de forma independiente.
+La relevancia practica del repositorio es la de ofrecer una via sencilla para ejecutar un modelo de menos de mil millones de parametros en hardware muy limitado (CPU, portatiles, dispositivos edge) con distintas relaciones tamano/calidad. El modelo base tiene 752.393.024 parametros segun los datos de safetensors, lo que lo situa en la categoria de modelos ultraligeros para prototipado, comparacion de cuantizaciones y experimentacion local.
+
+Conviene subrayar que la etiqueta "Cyber" del nombre no esta respaldada por documentacion publica: la propia model card indica que no se documenta el dataset de fine-tuning ni se publican resultados de evaluacion, por lo que debe interpretarse como nombre de variante del repositorio y no como una afirmacion verificada de capacidades en ciberseguridad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (basada en Qwen/Qwen3.5-0.8B) |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3.5-0.8B; el repositorio no detalla la arquitectura interna) |
 | Parametros totales | 752.393.024 |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M, Q2_K_L |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M, Q2_K_L (mas un `mmproj` BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con archivo mmproj BF16 adicional) |
+| Formato de pesos | GGUF (safetensors como origen del modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla la arquitectura interna del modelo base Qwen3.5-0.8B. Se sabe que el repositorio contiene una conversión a GGUF realizada con Unsloth y llama.cpp, y que el modelo original es Qwen/Qwen3.5-0.8B. No se documenta el dataset de fine-tuning ni la receta de entrenamiento, por lo que no es posible confirmar si hubo fases de RLHF, DPO u otras técnicas. El archivo `BF16-mmproj` sugiere la presencia de un proyector multimodal, pero la model card advierte explícitamente que la ruta multimodal no ha sido validada de extremo a extremo para esta versión.
+El repositorio no documenta la arquitectura interna del modelo base mas alla de su identificacion como Qwen3.5-0.8B. Al tratarse de una conversion a GGUF mediante herramientas de Unsloth y llama.cpp, no hay informacion publica en esta ficha sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento. Tampoco se detalla ninguna innovacion tecnica especifica (atencion lineal, decodificacion especulativa, etc.).
+
+Lo unico verificable respecto al proceso es la cadena de herramientas de conversion (Unsloth / llama.cpp) y la existencia de una escalera de cuantizaciones que va desde BF16 (1,52 GB) hasta Q2_K_L (484 MB). La presencia de un archivo `mmproj` BF16 y de componentes de vision en la configuracion indica que el modelo base incorpora una ruta multimodal, pero la model card advierte explicitamente que la ruta extremo a extremo no ha sido validada en esta release.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo puede mantener diálogos multi-turno, aunque su tamaño reducido limita la complejidad de las respuestas.
-- Experimentación local: permite probar distintas cuantizaciones y medir su efecto en la calidad de salida.
-- Inferencia en CPU y dispositivos con poca memoria: los archivos GGUF están optimizados para ejecución con llama.cpp y Ollama.
-- Comparación reproducible de cuantizaciones: el repositorio ofrece una escalera completa (BF16, Q8_0, Q6_K, Q4_K_M, Q2_K_L) para evaluar trade-offs entre tamaño y fidelidad.
-- No se documentan capacidades específicas como tool calling, function calling, razonamiento multi-paso o soporte de agentes. Tampoco hay evidencia de capacidades multimodales funcionales.
+- Generacion de texto conversacional (pipeline declarado: text-generation).
+- Ruta multimodal potencial via `mmproj` BF16, sin validacion documentada extremo a extremo.
+- Ejecucion local en llama.cpp y Ollama mediante archivos GGUF.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte de plantillas de chat via `--jinja` en llama.cpp.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible (idiomas no declarados).
+- Thinking mode, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Prototipado rápido en entornos sin GPU: un desarrollador puede cargar el modelo con `llama-cli` o Ollama en un portátil con CPU y probar ideas de chatbot o generación de texto antes de escalar a modelos mayores.
-- Comparación de cuantizaciones para despliegue edge: usando los distintos archivos GGUF, se puede medir la degradación de calidad entre Q4_K_M y Q2_K_L para decidir qué versión usar en un dispositivo con 512 MB de RAM.
-- Clasificación de texto simple: tareas como análisis de sentimiento o categorización de mensajes pueden ejecutarse localmente con un prompt adecuado, sin depender de APIs externas.
-- Generación de respuestas en asistentes de baja latencia: al ser un modelo de 0.8B, la inferencia es rápida incluso en CPU, adecuada para aplicaciones donde la latencia importa más que la profundidad del razonamiento.
-- Educación y experimentación: estudiantes e investigadores pueden usar el modelo para entender cómo funcionan las cuantizaciones GGUF y cómo afectan al rendimiento sin necesidad de hardware caro.
-- Pruebas de integración con llama.cpp y Ollama: el repositorio sirve como banco de pruebas para verificar que el pipeline de inferencia local funciona correctamente antes de adoptar modelos más grandes.
+- Prototipado en CPU y equipos con poca memoria: con Q4_K_M (529 MB) o Q2_K_L (484 MB) el modelo puede ejecutarse en portatiles sin GPU dedicada usando llama.cpp u Ollama, lo que permite iterar sobre prompts e integraciones sin infraestructura cloud.
+- Comparacion reproducible de cuantizaciones: la escalera BF16, Q8_0, Q6_K, Q4_K_M y Q2_K_L permite medir la degradacion de calidad frente al coste de memoria en un mismo modelo y mismo prompt, util para decidir el nivel adecuado en un despliegue.
+- Experimentacion en entornos edge y embebidos: el tamano reducido de las variantes Q4_K_M y Q2_K_L (por debajo de 550 MB) facilita su inclusion en imagenes de contenedor o dispositivos con almacenamiento limitado.
+- Pruebas de integracion con llama.cpp y Ollama: sirve como banco de pruebas para validar pipelines de inferencia local, plantillas Jinja y compatibilidad con endpoints antes de escalar a modelos mayores.
+- Filtrado y clasificacion de texto a pequena escala: para tareas simples de etiquetado o resumen en local donde no se requiere maxima precision y se prioriza coste cero de inferencia.
+- Evaluacion de la ruta multimodal: el `mmproj` incluido permite verificar localmente si la entrada de imagen funciona en esta release, como paso previo a decidir si se usa en un prototipo visual.
+- Educacion y demostraciones: util para explicar cuantizacion, formatos GGUF y despliegue local en talleres o cursos sin requerir GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no hay resultados de evaluación ni líneas base de comparación en el repositorio. No se deben asumir cifras de MMLU, HumanEval u otros tests.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no hay resultados de evaluacion ni baselines de comparacion en el repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para el archivo Q4_K_M (529 MB) se necesitan aproximadamente 600 MB de VRAM o RAM; Q8_0 (812 MB) requiere alrededor de 1 GB; BF16 (1.52 GB) necesita unos 2 GB. El archivo mmproj BF16 (207 MB) añade un pequeño overhead si se usa.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (por ejemplo, GTX 1050, RTX 2050, o iGPUs modernas) puede ejecutar las versiones cuantizadas. Para BF16 se recomienda una GPU con 2 GB o más. En CPU también es viable gracias a llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama (comando `ollama run hf.co/reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF:Q4_K_M`), y cualquier runtime compatible con GGUF (por ejemplo, LM Studio).
-- Latencia y throughput: no se proporcionan datos medidos. En una CPU moderna, un modelo de 0.8B cuantizado a Q4_K_M puede generar decenas de tokens por segundo, pero esto depende del hardware y del backend.
+- VRAM estimada para inferencia: aproximadamente 1,6-1,8 GB para BF16; en torno a 0,9-1,0 GB para Q8_0; cerca de 0,7-0,8 GB para Q6_K; alrededor de 0,6-0,7 GB para Q4_K_M; y en torno a 0,55-0,65 GB para Q2_K_L (estimaciones a partir del tamano de archivo; no publicadas por el autor).
+- GPU recomendadas: cualquier GPU consumer con 2 GB o mas de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060) es suficiente para las variantes cuantizadas; A100 y H100 no son necesarias para este tamano.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer modernas, e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf ...`), Ollama (`ollama run hf.co/...`), y cualquier runtime compatible con GGUF; vLLM y TGI no estan documentados para este repositorio.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativos. Existe un repositorio hermano del mismo autor, `reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF`, que ofrece un modelo de 2B con cuantizaciones similares, pero no se publican benchmarks en ninguna de las dos fichas. Tampoco se encontraron comparaciones con otros modelos GGUF de tamaño similar en la información recopilada. Por tanto, la comparativa queda pendiente de evaluación independiente.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF | 752.393.024 | no disponible | GGUF | Apache-2.0 | Cuantizaciones multiples; sin benchmarks publicados |
+| Qwen/Qwen3.5-0.8B (modelo base) | 752.393.024 | no disponible | safetensors | Apache-2.0 | Referencia de maxima fidelidad; sin datos de evaluacion en esta ficha |
+| Otros modelos ultraligeros de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- No hay resultados de benchmarks publicados; el rendimiento real es desconocido y debe medirse en cada caso de uso.
-- El dataset de fine-tuning y la receta de entrenamiento no están documentados, por lo que no se puede verificar qué datos influyeron en el comportamiento del modelo.
-- La etiqueta "Cyber" es solo un nombre de variante; no implica capacidades de ciberseguridad verificadas.
-- El archivo mmproj está presente pero la ruta multimodal no ha sido validada; no se debe depender de ella sin pruebas locales.
-- Las cuantizaciones más agresivas (Q2_K_L) pueden degradar notablemente la calidad de las respuestas.
-- El modelo puede producir salidas incorrectas, incompletas, sesgadas o inseguras; no debe usarse como fuente autoritativa en ámbitos legales, médicos, de seguridad u operativos.
-- Al ser un modelo de 0.8B, su capacidad de razonamiento complejo y de seguir instrucciones largas es limitada en comparación con modelos mayores.
+- La etiqueta "Cyber" no esta respaldada por documentacion: no se publica dataset de fine-tuning ni evaluacion, por lo que no debe asumirse ninguna capacidad especifica en ciberseguridad.
+- No hay benchmarks publicados; el rendimiento real frente a otros modelos de tamano similar es desconocido.
+- La cuantizacion reduce el uso de memoria pero puede alterar la calidad de las salidas; Q2_K_L es la variante con mayor perdida esperada.
+- La ruta multimodal no ha sido validada extremo a extremo segun la propia model card; debe comprobarse localmente antes de depender de ella.
+- Riesgo de alucinacion, sesgos y salidas incorrectas, incompletas o inseguras, inherente a un modelo de este tamano.
+- No debe usarse como fuente autoritativa para decisiones de seguridad, legales, medicas u operativas (advertencia explicita del autor).
+- Idiomas soportados no declarados; el comportamiento multilingue no esta garantizado.
+- Longitud de contexto no documentada, lo que limita la planificacion de casos de uso con ventanas largas.
+- Licencia Apache-2.0 permite uso comercial, pero al derivar de un modelo base conviene revisar tambien las condiciones del modelo original Qwen/Qwen3.5-0.8B.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Colección CIx cybersecurity models: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models
-- Repositorio hermano (2B): https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF
-- Paper técnico de Qwen3 (referencia general, no específica de Qwen3.5): https://arxiv.org/abs/2505.09388
+- Coleccion CIx cybersecurity models: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models
+- llama.cpp (runtime de inferencia): https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- Unsloth: https://github.com/unslothai/unsloth

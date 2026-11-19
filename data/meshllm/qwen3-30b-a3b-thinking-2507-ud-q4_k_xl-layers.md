@@ -2,83 +2,89 @@
 
 ## Resumen
 
-El paquete meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers es un artefacto de distribución para inferencia distribuida, desarrollado por Mesh LLM. Contiene el modelo Qwen3-30B-A3B-Thinking-2507, en su versión cuantizada UD-Q4_K_XL, dividido por capas para ejecutarse en un clúster local de máquinas. El modelo original es un Mixture of Experts de 30B parámetros con 3B activos, perteneciente a la familia Qwen3. El paquete no es un checkpoint estándar; requiere la infraestructura de Mesh LLM para servir el modelo a través de una API compatible con OpenAI. La relevancia de este paquete radica en permitir inferencia local y privada de un modelo de gran tamaño sin necesidad de un único host con suficiente memoria.
+`meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers` no es un modelo entrenado desde cero, sino un paquete de distribucion en formato GGUF por capas del modelo Qwen3-30B-A3B-Thinking-2507, en su cuantizacion `UD-Q4_K_XL` generada por Unsloth. Lo publica el proyecto Mesh LLM, que trocea el fichero GGUF original en artefactos por capa y los empaqueta con un manifiesto (`model-package.json`) y checksums SHA-256 para poder ejecutar inferencia distribuida entre varias maquinas de un cluster local.
 
-El modelo Qwen3-30B-A3B-Thinking-2507 es un modelo de lenguaje con arquitectura MoE que incorpora capacidades de razonamiento ("Thinking"). La versión UD-Q4_K_XL es una cuantización GGUF que reduce el footprint de memoria. El paquete divide el archivo GGUF en 48 capas, de modo que cada máquina del clúster puede alojar una parte de los pesos. Esto es útil cuando el tamaño total del modelo excede la memoria de un solo dispositivo.
+El modelo subyacente pertenece a la familia Qwen3 y sigue el esquema 30B-A3B: 30 mil millones de parametros totales con aproximadamente 3 mil millones activos por token, es decir, una arquitectura Mixture-of-Experts (MoE) dispersa. La variante `Thinking-2507` corresponde al modo de razonamiento extendido de Qwen3, actualizada en julio de 2025 por el equipo de Qwen (Alibaba). El paquete declara 48 capas y una licencia Apache 2.0 heredada del modelo fuente.
 
-El repositorio incluye un manifiesto (model-package.json) con checksums y la identidad del modelo fuente unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF. La licencia es Apache 2.0. En el momento de la consulta, el repositorio no registra descargas ni likes.
+La relevancia de este repositorio es operativa: permite servir un modelo MoE de 30B en hardware modesto repartiendo capas entre varios hosts mediante el runtime `mesh-llm`, que expone una API compatible con OpenAI (`/v1/chat/completions`). Es util para equipos que quieren inferencia privada sin depender de la nube y sin una GPU unica con memoria suficiente para el GGUF completo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) de la familia Qwen3, con modo de pensamiento |
-| Parametros totales | 623.120.640 (según el repo; el modelo base se anuncia como 30B-A3B) |
-| Parametros activos | 3B (A3B, según el nombre del modelo) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | UD-Q4_K_XL (GGUF) |
+| Arquitectura | Transformer MoE (Qwen3), 48 capas segun el paquete |
+| Parametros totales | 30B (escala 30B-A3B); el campo safetensors del repo indica 623.120.640, cifra que no corresponde al modelo completo y debe interpretarse como metadato del empaquetado |
+| Parametros activos | Aproximadamente 3B por token (esquema A3B) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | `UD-Q4_K_XL` (Unsloth Dynamic, ~4 bits); el paquete solo distribuye esta variante |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF, empaquetado en capas para Mesh LLM |
+| Licencia | Apache 2.0 (heredada del modelo fuente) |
+| Formato de pesos | GGUF troceado por capas (layer package) con manifiesto `model-package.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, Qwen3-30B-A3B-Thinking-2507, es un transformer de tipo Mixture of Experts con 30B parámetros totales y aproximadamente 3B parámetros activos por token. La arquitectura MoE permite activar solo una fracción de los expertos en cada paso, lo que reduce el coste computacional manteniendo una capacidad de conocimiento elevada. El nombre "Thinking" indica que el modelo está diseñado para generar razonamientos internos antes de la respuesta final, una característica habitual en la serie Qwen3. Los detalles de entrenamiento, como el número de tokens, la composición del dataset o el uso de RLHF/DPO, no están disponibles en la información proporcionada.
+El modelo subyacente es un transformer con capas de mezcla de expertos (MoE) de la familia Qwen3, con 30B de parametros totales y unos 3B activos por token, lo que reduce el coste computacional por token frente a un denso equivalente. La variante `Thinking-2507` esta orientada a razonamiento extendido: el modelo genera una traza de pensamiento antes de la respuesta final. Los detalles de composicion del dataset, numero de tokens de entrenamiento y etapas de RLHF/DPO no se recogen en la informacion proporcionada y deben consultarse en la model card del modelo fuente.
 
-El paquete en sí no es un archivo de pesos estándar. Se deriva del repositorio unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF, del que toma el archivo GGUF cuantizado UD-Q4_K_XL y lo divide en artefactos por capas. El número de capas registrado en el manifiesto es 48. Cada artefacto se somete a un cálculo de SHA-256 antes de subirse al repositorio, garantizando la integridad del paquete. La innovación técnica principal es la distribución de las capas entre múltiples máquinas mediante Mesh LLM, lo que permite ejecutar el modelo completo en un clúster local cuando el GGUF entero no cabe en un solo host. El README indica que el modelo sirve una API compatible con OpenAI en el puerto 3131, bajo el identificador `unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF:UD-Q4_K_XL`.
+Este repositorio no contiene pesos entrenados nuevos: es un artefacto de empaquetado. El splitter de Mesh LLM toma el GGUF `Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL.gguf` de Unsloth (revision `a9b37aaac12b2bd0098783a443429543dd76a14d`, SHA-256 `51a6e1bd...6199b`), lo divide en artefactos por capa, calcula checksums durante la escritura y publica un manifiesto con la identidad de la fuente. La innovacion tecnica es el reparto de capas entre peers de un cluster local con un runtime propio (`skippy`) y una API compatible con OpenAI.
 
 ## Capacidades
 
-- Generación de texto: clasificado como pipeline `text-generation`, apto para completar instrucciones y mantener conversaciones.
-- Conversación: el modelo está etiquetado como `conversational`, lo que lo hace adecuado para diálogos multi-turno.
-- Razonamiento: el nombre "Thinking" sugiere un modo de pensamiento, aunque no se ofrecen detalles específicos en la documentación del paquete.
-- Compatibilidad con API OpenAI: el paquete expone el endpoint `/v1/chat/completions` a través de Mesh LLM, lo que permite usar clientes estándar de OpenAI.
-- Inferencia distribuida: diseñado para repartir sus 48 capas entre varios equipos, posibilitando el servicio del modelo en entornos sin un único dispositivo de gran memoria.
-- Integridad de artefactos: el manifiesto incluye checksums SHA-256 de los archivos, lo que facilita la verificación de integridad en despliegues distribuidos.
+- Generacion de texto conversacional y modo de razonamiento (`thinking`) con traza intermedia antes de la respuesta.
+- Razonamiento multi-paso y resolucion de problemas complejos gracias al modo Thinking de Qwen3.
+- Generacion de codigo y matematicas, capacidad esperable en la familia Qwen3 (sin datos de benchmark especificos en este repo).
+- Inferencia distribuida: reparto de capas entre varias maquinas mediante `mesh-llm serve --split`.
+- Servicio local con API compatible con OpenAI (`/v1/chat/completions`, `/v1/models`, `/api/status`).
+- Ejecucion privada en hardware propio, sin llamadas a servicios externos.
+- Soporte de tool calling y capacidades multilingues: no confirmado en la informacion proporcionada para esta variante.
 
 ## Casos de uso
 
-- Inferencia privada en un clúster local: con Mesh LLM, el modelo se puede ejecutar íntegramente en hardware propio, manteniendo los datos en local y sin depender de servicios cloud.
-- Servicio multi-máquina: cuando el GGUF completo (18.0 GB) excede la memoria de un solo host, se pueden distribuir las 48 capas entre varios equipos para servir el modelo colaborativamente.
-- Sustitución de APIs de OpenAI en entornos locales: al ser compatible con `/v1/chat/completions`, se puede integrar en aplicaciones que ya usan el SDK de OpenAI apuntando al endpoint local (localhost:3131).
-- Prototipado de agentes conversacionales: el modelo es conversacional y soporta la API de chat, por lo que se puede usar para construir asistentes en entornos de desarrollo sin conexión.
-- Investigación en sistemas distribuidos: el paquete es un ejemplo de capas per-layer con checksums, útil para estudiar el reparto de modelos MoE en clusters heterogéneos.
-- Migración de cargas de trabajo cloud a local: para organizaciones con requisitos de privacidad, este paquete permite trasladar la inferencia del modelo a infraestructura propia, manteniendo la compatibilidad con la API OpenAI.
+- Inferencia privada en cluster domestico: repartir las 48 capas del GGUF entre dos o tres equipos con GPU consumer y servir el modelo desde un unico endpoint compatible con OpenAI, evitando enviar datos a terceros.
+- Sustitucion local de una API en la nube: apuntar clientes que ya usan el esquema OpenAI (`base_url` a `http://localhost:3131/v1`) al mesh y mantener el mismo codigo de integracion sin cambios.
+- Asistente de codigo en red interna: el modo Thinking del modelo resulta adecuado para tareas de refactorizacion y depuracion multi-paso, y el despliegue local evita exponer el codigo fuente.
+- Laboratorio de investigacion con recursos limitados: experimentar con un MoE de 30B sin necesidad de una GPU con 80 GB de VRAM, agregando memoria de varias maquinas.
+- Prototipado de agentes con razonamiento: usar el modo Thinking para pipelines de varios pasos donde se necesita una traza intermedia auditable, siempre que se valide el soporte de tool calling en el runtime.
+- Evaluacion de infraestructura distribuida: banco de pruebas para medir latencia y throughput de un mesh frente a un servidor unico con llama.cpp o vLLM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El README remite al modelo fuente unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF para notas de benchmark, pero no se proporcionan cifras en este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a la del modelo fuente (`unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF`) para notas de rendimiento, pero no se incluyen cifras en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la información proporcionada.
-- GPU recomendadas: no disponible.
-- Idoneidad para GPU de consumo: no disponible. El diseño distribuido permite dividir la carga entre varias máquinas, por lo que no es imprescindible una GPU de gran memoria para el conjunto completo.
-- Opciones de despliegue: Mesh LLM, mediante `mesh-llm serve --model "meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers" --split`; también se puede interrogar la API local en `http://localhost:3131`.
-- Latencia y throughput: no disponible.
-
-El repositorio tiene un tamaño de 18.0 GB, lo que sugiere que el archivo GGUF completo ocupa aproximadamente ese espacio. Para ejecutar el modelo completo en una sola máquina se necesitaría memoria suficiente para cargarlo, pero el paquete está específicamente diseñado para dividirlo entre varios hosts.
+- VRAM estimada: el repo ocupa 18,0 GB, coherente con una cuantizacion de ~4 bits de un modelo de 30B; se necesita esa memoria agregada entre todos los peers mas overhead de KV cache.
+- Reparto tipico: dos maquinas con 12 GB de VRAM cada una o tres con 8 GB pueden alojar el paquete completo repartiendo capas.
+- GPU recomendadas: RTX 3090/4090 (24 GB) como nodos individuales; A100/H100 no son necesarias para esta cuantizacion, aunque mejoran el throughput.
+- Cabe en GPU consumer: si, siempre que se distribuya entre varios equipos; en una sola GPU consumer de 24 GB el margen es ajustado y depende del contexto.
+- Despliegue: runtime `mesh-llm` (comando `mesh-llm serve --model ... --split`); no se documenta compatibilidad con vLLM, llama.cpp u Ollama en este paquete.
+- Latencia y throughput: no disponibles; dependen del numero de peers, la red local y el contexto utilizado.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye comparativas con otros modelos de la misma categoría.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Este paquete (Qwen3-30B-A3B-Thinking-2507 UD-Q4_K_XL) | 30B totales / ~3B activos | no disponible | GGUF por capas | Apache 2.0 | Requiere runtime mesh-llm |
+| unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF | 30B totales / ~3B activos | no disponible | GGUF monolitico | Apache 2.0 | Mismo modelo, un solo fichero; requiere un host con memoria suficiente |
+| Qwen3-30B-A3B (variante base, sin Thinking) | 30B totales / ~3B activos | no disponible | safetensors/GGUF | Apache 2.0 | Sin modo de razonamiento extendido |
+| Qwen3-32B (denso) | 32B | no disponible | safetensors/GGUF | Apache 2.0 | Denso: mas coste por token, sin dispersion MoE |
 
 ## Limitaciones y advertencias
 
-- El paquete no es un modelo compatible con cargadores estándar; requiere la infraestructura de Mesh LLM para ejecutarse.
-- El número de parámetros reportado en el repositorio (623.120.640) difiere del nombre del modelo (30B-A3B), lo que puede indicar que el repo contiene solo una parte de los pesos o un artefacto de empaquetado.
-- No se dispone de datos de entrenamiento, benchmarks ni métricas de calidad en la información proporcionada.
-- Los idiomas soportados no están documentados.
-- El riesgo de alucinación no ha sido evaluado en este paquete, por lo que se recomienda validar las salidas antes de usar en producción.
-- El repositorio registra 0 descargas y 0 likes, y fue creado recientemente (2026-09-09), lo que indica que no ha sido validado por la comunidad.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar la licencia del modelo fuente unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF para asegurar compatibilidad.
+- No es un modelo nuevo: cualquier limitacion del Qwen3-30B-A3B-Thinking-2507 subyacente aplica integramente (sesgos, alucinaciones, idiomas).
+- El modo Thinking genera tokens de razonamiento que aumentan la latencia y el consumo de contexto; hay que presupuestar `max_tokens` en consecuencia.
+- El campo de parametros del repo (623.120.640) no refleja el tamano real del modelo y puede confundir en inventarios automaticos.
+- El paquete solo incluye la cuantizacion `UD-Q4_K_XL`; no hay variantes de 8 bits ni de mayor precision en este repositorio.
+- Dependencia de un runtime especifico (`mesh-llm`) y de su ABI `skippy` (no registrada en la ficha), lo que limita la portabilidad frente a llama.cpp o vLLM.
+- El rendimiento depende de la red local entre peers; un enlace lento entre nodos degrada la latencia de forma significativa.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar los terminos del modelo fuente y las obligaciones de atribucion.
+- Idiomas soportados no documentados en este repositorio; validar el comportamiento multilingue antes de produccion.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers
-- Modelo fuente: https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF
-- Sitio web de Mesh LLM: https://www.meshllm.cloud
-- GitHub de Mesh LLM: https://github.com/Mesh-LLM/mesh-llm
-- Discord de Mesh LLM: https://discord.gg/rs6fmc63eN
-- Catálogo de paquetes: https://huggingface.co/datasets/meshllm/catalog
-- Especificación del formato de paquete: https://github.com/Mesh-LLM/mesh-llm/blob/main/docs/specs/layer-package-repos.md
+- Repositorio Hugging Face: https://huggingface.co/meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers
+- Modelo fuente (GGUF): https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF
+- Web de Mesh LLM: https://www.meshllm.cloud
+- Repositorio GitHub de Mesh LLM: https://github.com/Mesh-LLM/mesh-llm
+- Discord: https://discord.gg/rs6fmc63eN
+- Catalogo de paquetes: https://huggingface.co/datasets/meshllm/catalog
+- Especificacion del formato layer-package: https://github.com/Mesh-LLM/mesh-llm/blob/main/docs/specs/layer-package-repos.md

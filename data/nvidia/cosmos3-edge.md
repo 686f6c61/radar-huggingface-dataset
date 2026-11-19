@@ -2,89 +2,104 @@
 
 ## Resumen
 
-Cosmos3-Edge es un modelo de mundo omnimodal desarrollado por NVIDIA, presentado el 20 de julio de 2026 en SIGGRAPH como parte de la familia Cosmos 3. Está diseñado para Physical AI: permite a máquinas comprender, simular e interactuar con el mundo físico a través de la generación conjunta de texto, imágenes, vídeo, audio y trayectorias de acción. Con aproximadamente 3,86 mil millones de parámetros (según los pesos reales en safetensors), es el modelo más pequeño de la gama Cosmos3 y el primero de la serie pensado para ejecutarse en tiempo real en hardware de borde (edge), como módulos del tamaño de un libro de bolsillo.
+Cosmos3-Edge es un modelo fundacional "world model" omnimodal desarrollado por NVIDIA dentro de la familia Cosmos 3, orientada a aplicaciones de Physical AI (robotica, conduccion autonoma y entornos industriales). A diferencia de un LLM convencional, el modelo recibe combinaciones de texto, imagen y trayectorias de accion, y genera como salida texto, imagenes, video y comandos de accion, lo que lo convierte en una pieza de infraestructura para simulacion, prediccion de futuros y aprendizaje de politicas encarnadas.
 
-Su arquitectura, denominada Mixture-of-Transformers (MoT), combina dos torres transformer: una autoregresiva para generación de tokens discretos (texto) y otra de difusión para la síntesis de modalidades continuas (imagen, vídeo, audio y acciones). Esta unificación permite modelar todas las modalidades en un único marco sin sacrificar el mecanismo de generación más adecuado para cada una. El modelo acepta entradas de texto, imagen, vídeo y trayectorias de acción, y produce salidas coherentes en cualquiera de esas modalidades, lo que lo convierte en una pieza fundamental para robótica, conducción autónoma y entornos industriales inteligentes.
+La variante Edge es la mas pequena de la familia, con aproximadamente 3.860 millones de parametros (3,86 B) almacenados en safetensors y un repositorio de 36,3 GB. Su arquitectura es un Mixture-of-Transformers (MoT) que combina una torre autoregresiva para generacion de tokens discretos (texto) con una torre de difusion para generacion continua de imagen, video, audio y acciones. La longitud de contexto de texto esta limitada a 4096 tokens, y la generacion de video se restringe a resoluciones de 256p y 480p con 12-30 fps y 50-150 fotogramas.
 
-La relevancia de Cosmos3-Edge radica en su capacidad para llevar la generación de mundos físicos a dispositivos con recursos limitados, algo que hasta ahora solo era viable con modelos mucho más grandes (16B o 64B). Su licencia OpenMDW1.1 permite uso comercial y no comercial, y está disponible de forma abierta en Hugging Face con más de 237.000 descargas, lo que refleja un interés temprano considerable por parte de la comunidad.
+Su relevancia actual radica en que es uno de los pocos modelos abiertos que unifica comprension y generacion multimodal con salidas de accion para una docena de "embodiments" roboticos (brazos Franka Panda, Agibot, UR, WidowX 250, UMI, vehiculos autonomos, movimiento egocentrico), lo que permite prototipar pipelines completos de robotica y simulacion sin depender de varios modelos especializados. Se distribuye bajo licencia OpenMDW 1.1 y NVIDIA lo declara apto para uso comercial y no comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Transformers (MoT): torre autoregresiva + torre de difusión |
-| Parametros totales | 3.858.999.728 (según safetensors; la model card indica 4B) |
-| Parametros activos | no disponible (no se especifica que sea MoE) |
-| Longitud de contexto | no disponible |
+| Arquitectura | Transformer con Mixture-of-Transformers (MoT): torre autoregresiva + torre de difusion |
+| Parametros totales | 3.858.999.728 (~3,86 B) |
+| Parametros activos | no disponible (no es un MoE clasico; el MoT separa torres por modalidad) |
+| Longitud de contexto | 4096 tokens (texto); accion con longitud de secuencia 16-400 |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW1.1 (openmdw1.1-license) |
-| Formato de pesos | safetensors (tamaño del repo: 29,5 GB) |
+| Licencia | OpenMDW 1.1 (openmdw1.1-license) |
+| Formato de pesos | safetensors (libreria `cosmos`, integracion con `diffusers`) |
+| Modalidades de entrada | texto, imagen (jpg, png, jpeg, webp; RGB 8 bits sRGB), trayectoria de accion (JSON, matriz T x D) |
+| Modalidades de salida | texto (string), imagen (JPG), video (MP4), accion (JSON) |
+| Resolucion de imagen/video | 256p y 480p; aspect ratios 16:9, 4:3, 1:1, 3:4, 9:16 |
+| Video | 12-30 fps, 50-150 fotogramas |
+| Embodiments de accion soportados | camara general (9D), vehiculo autonomo (9D), movimiento egocentrico (57D), Franka Panda simple (10D), Franka Panda dual (20D), Agibot (29D), UR (10D), Google robot (10D), WidowX 250 (10D), UMI (10D) |
+| Tamano del repositorio | 36,3 GB |
+| Fecha de publicacion | 20/07/2026 (actualizacion del checkpoint el 25/08/2026) |
 
 ## Arquitectura y entrenamiento
 
-Cosmos3-Edge se basa en una arquitectura Mixture-of-Transformers (MoT), un diseño propio de NVIDIA que combina dos torres transformer complementarias. La primera es un transformer autoregresivo que genera tokens discretos, utilizado para la producción de texto mediante decodificación estándar de siguiente token. La segunda es un transformer de difusión que sintetiza modalidades continuas (imagen, vídeo, audio y acciones) mediante un proceso iterativo de denoising. Esta separación permite que cada modalidad utilice el mecanismo de generación más natural, mientras se mantiene una representación unificada en un solo modelo.
+Cosmos3-Edge se construye sobre el framework Cosmos de NVIDIA y emplea una arquitectura Mixture-of-Transformers con dos torres complementarias: una torre transformer autoregresiva que genera tokens discretos mediante decodificacion next-token estandar (empleada para texto) y una torre de difusion que sintetiza modalidades continuas (imagen, video, audio y acciones) mediante denoising iterativo. Esta separacion permite modelar modalidades heterogeneas en un unico marco sin forzar un mismo mecanismo generativo para todas ellas: el texto se produce de forma secuencial y el resto de modalidades se genera por difusion, lo que es coherente con las caracteristicas de cada dominio.
 
-El modelo se desarrolló sobre el Cosmos Framework (github.com/nvidia/cosmos-framework) y forma parte de una colección más amplia que incluye variantes de 16B (Cosmos3-Nano) y 64B (Cosmos3-Super). No se han publicado detalles específicos sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO en la información disponible. Tampoco se documentan innovaciones adicionales más allá de la propia arquitectura MoT y la capacidad de ejecución en edge.
+El modelo se presenta como "omnimodal world model" y se entrena para comprender, simular e interactuar con el mundo fisico. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO; esa informacion no esta disponible en el material consultado. La entrada de acciones se define como una matriz (T, D) por fotograma con la dimensionalidad propia de cada embodiment, y la salida de video se parametriza por peticion mediante los campos `size`, `fps` y `num_frames`, lo que sugiere un pipeline de inferencia configurable por solicitud mas que un unico modo fijo.
 
 ## Capacidades
 
-- Generación omnimodal: produce texto, imágenes, vídeo, audio y trayectorias de acción a partir de combinaciones de entradas multimodales.
-- Comprensión multimodal: interpreta texto, imágenes, vídeo y trayectorias de acción como entrada, lo que permite tareas de razonamiento sobre el mundo físico.
-- Simulación de mundo: genera predicciones de futuros estados del entorno (vídeo y acciones) a partir de observaciones actuales.
-- Razonamiento de acciones: dado un estado visual y una instrucción, puede generar trayectorias de acción para control de robots y sistemas autónomos.
-- Ejecución en tiempo real: diseñado para correr en hardware de borde, con latencias compatibles con control en bucle cerrado.
-- Soporte de policy learning: la variante Cosmos3-Edge-Policy-DROID (también de 4B) está especializada en generar acciones de manipulación a partir de instrucciones y observaciones de la plataforma DROID.
+- Generacion de video a partir de texto, imagen o trayectorias de accion, con control de resolucion (256p/480p), fps (12-30) y numero de fotogramas (50-150).
+- Generacion de imagen en formato JPG a partir de entradas multimodales.
+- Generacion de texto autoregresiva (comprension y descripcion de escenas, razonamiento sobre entradas multimodales).
+- Prediccion y generacion de trayectorias de accion para robots y agentes en multiples embodiments (brazos, vehiculos, movimiento egocentrico).
+- Simulacion de futuros fisicos ("world simulation") y prediccion de evolucion de escenas.
+- Razonamiento sobre acciones ("action reasoning") para planificacion encarnada.
+- Soporte de entrada de imagen RGB de 8 bits por canal en espacio sRGB; no admite escala de grises.
+- Capacidades multimodales de audio mencionadas a nivel de familia (generacion de audio), aunque la model card de esta variante solo detalla E/S de texto, imagen, video y accion.
+- No se documenta soporte explicito de tool calling, function calling ni modo "thinking"; no disponible.
 
 ## Casos de uso
 
-- Control de robots de manipulación: el modelo puede recibir una instrucción en lenguaje natural y una imagen de la escena, y generar una trayectoria de acción para el brazo robótico, lo que permite programación por demostración o por comandos de alto nivel sin necesidad de ingeniería de control manual.
-- Conducción autónoma: a partir de secuencias de vídeo del entorno y datos de telemetría, Cosmos3-Edge puede predecir los próximos fotogramas y generar comandos de dirección y aceleración, facilitando la planificación de maniobras en tiempo real.
-- Simulación de entornos industriales: en fábricas inteligentes, el modelo puede simular el movimiento de maquinaria y el flujo de materiales, permitiendo probar configuraciones de planta sin coste físico.
-- Entrenamiento de políticas con datos sintéticos: genera trayectorias de acción y vídeos sintéticos para aumentar conjuntos de datos de aprendizaje por refuerzo, reduciendo la necesidad de recopilación de datos en el mundo real.
-- Asistentes de realidad aumentada: al comprender la escena visual y las instrucciones del usuario, puede generar instrucciones de guiado o superposiciones de vídeo que muestren los siguientes pasos en una tarea de ensamblaje o mantenimiento.
-- Predicción de futuros estados en logística: dado el estado actual de un almacén (imágenes de estanterías, posiciones de vehículos), el modelo puede anticipar movimientos y optimizar rutas de picking.
+- Simulacion de entornos roboticos: dado un estado inicial en imagen y una trayectoria de accion (por ejemplo, 10D de un Franka Panda con pinza RobotiQ), el modelo genera video del resultado esperado, lo que permite validar politicas antes de ejecutarlas en hardware real.
+- Generacion de datos sinteticos para entrenamiento de politicas: producir pares video-accion sinteticos para aumentar datasets de robotica y reducir el coste de teleoperacion, aprovechando los 10 embodiments soportados.
+- Conduccion autonoma: usar la modalidad de accion de vehiculo autonomo (9D) para predecir escenarios de trafico y generar video contrafactual de maniobras, util para validacion de planificadores.
+- Prototipado de interfaces de mundo para robótica de almacen: simular escenas industriales a 480p y 12-30 fps para evaluar percepcion y planificacion en entornos de fabrica.
+- Investigacion en world models: banco de pruebas para estudiar la coherencia fisica de videos generados y la consistencia entre accion y resultado visual, con un modelo de ~3,86 B parametros manejable en laboratorio.
+- Previsualizacion de escenas para diseno de producto o cinematografia tecnica: generar clips cortos (50-150 fotogramas) a partir de una imagen de referencia y una camara parametrizada (9D de movimiento de camara).
+- Aumento de datasets de vision por computador: sintetizar imagenes y videos con condiciones controladas para tareas de deteccion o segmentacion en dominios con pocos datos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tablas de evaluación comparativa (MMLU, HumanEval, GSM8K, etc.) ni métricas específicas de calidad de vídeo o acción. Tampoco se han encontrado referencias externas con cifras verificables en los resultados de búsqueda. Se recomienda consultar el white paper técnico de Cosmos 3 (enlace en la sección de enlaces) para posibles datos adicionales, aunque no se ha confirmado su disponibilidad.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que los resultados de benchmark se actualizaron el 25 de agosto de 2026, pero no incluye cifras concretas en el material consultado.
 
 ## Requisitos de hardware
 
-- Tamaño del modelo: ~3,86B parámetros en safetensors, lo que implica un peso bruto de aproximadamente 7,7 GB en FP16 (cálculo estimado, no oficial).
-- El blog de NVIDIA indica que es capaz de ejecutarse en hardware de borde, con un módulo del tamaño de un libro de bolsillo, lo que sugiere que es viable en dispositivos embebidos con aceleradores dedicados.
-- No se especifican requisitos exactos de VRAM ni GPUs recomendadas en la documentación proporcionada.
-- Dado su tamaño, es plausible que pueda ejecutarse en GPUs de consumo como RTX 4090 (24 GB) con cuantización, pero no hay datos oficiales al respecto.
-- Opciones de despliegue: no se mencionan frameworks de inferencia específicos (vLLM, llama.cpp, Ollama, TGI). La librería asociada es `cosmos`, disponible en el repositorio de GitHub de NVIDIA.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de ~3,86 B parametros en precision de 16 bits requiere del orden de 8 GB solo para pesos, a lo que hay que sumar el coste del decodificador de difusion y de la generacion de video, que es sensiblemente mayor.
+- GPU recomendadas: no especificadas en la model card. Por el perfil del modelo y su orientacion a video, se espera que NVIDIA recomiende GPUs de datacenter (A100, H100) o RTX de gama alta para generacion de video; no disponible de forma oficial.
+- Encaje en GPU de consumo: probable en cuantizaciones agresivas para tareas de texto o imagen a baja resolucion; para video a 480p y 150 fotogramas se recomienda VRAM holgada. Sin datos oficiales.
+- Opciones de despliegue: la libreria declarada es `cosmos` con integracion en `diffusers`; los tags incluyen `deploy:azure` y `deploy:sagemaker`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI (orientados a LLM puros y no a un MoT con difusion).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La familia Cosmos 3 incluye tres tamaños: Edge (4B), Nano (16B) y Super (64B). La siguiente tabla compara las variantes de la misma familia, ya que no se dispone de información sobre modelos externos comparables en la misma categoría de world models de borde.
-
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Notas |
 |---|---|---|---|---|---|
-| Cosmos3-Edge | 3,86B | no disponible | texto, imagen, vídeo, audio, acciones | OpenMDW1.1 | safetensors |
-| Cosmos3-Nano | 16B | no disponible | texto, imagen, vídeo, audio, acciones | OpenMDW1.1 | safetensors |
-| Cosmos3-Super | 64B | no disponible | texto, imagen, vídeo, audio, acciones | OpenMDW1.1 | safetensors |
+| Cosmos3-Edge (NVIDIA) | ~3,86 B | 4096 tokens (texto) | Texto, imagen, video, audio, accion | OpenMDW 1.1 | Variante Edge de Cosmos 3; salidas de accion para 10 embodiments |
+| Cosmos 3 (familia, NVIDIA) | no disponible (variantes mayores) | no disponible | Texto, imagen, video, audio, accion | OpenMDW 1.1 | Misma arquitectura MoT; mayor capacidad a costa de mas computo |
+| Generadores video texto-a-video abiertos (p. ej. familia open-source de difusion) | variable | no aplica | Texto, imagen, video | variable | No generan acciones ni soportan embodiments roboticos |
+| LLM multimodales abiertos de ~3-8 B | 3-8 B | 32k-128k tokens | Texto, imagen | variable | Mucho mayor contexto de texto, pero sin generacion de video ni acciones |
 
-No se han encontrado modelos de otras organizaciones con especificaciones directamente comparables (world models omnimodales de ~4B con ejecución en edge) en la información proporcionada.
+La comparativa con alternativas directas es limitada: no se dispone de datos de rendimiento de Cosmos 3 ni de terceros en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas declaradas.
 
 ## Limitaciones y advertencias
 
-- No se documentan sesgos conocidos ni riesgos de alucinación específicos para este modelo en la información disponible.
-- La longitud de contexto no está especificada, lo que dificulta estimar su capacidad para manejar secuencias largas de vídeo o múltiples imágenes.
-- Los idiomas soportados no se indican; se desconoce si el modelo funciona correctamente en español u otros idiomas distintos del inglés.
-- La licencia OpenMDW1.1 debe revisarse en detalle (openmdw.ai/license/1-1/) para comprender las obligaciones de atribución, restricciones de uso comercial y cláusulas de responsabilidad.
-- No hay información sobre cuantizaciones oficiales ni sobre el comportamiento del modelo con pesos reducidos, lo que puede afectar a su despliegue en hardware con memoria limitada.
-- El modelo está orientado a Physical AI; su uso fuera de este dominio (por ejemplo, generación de texto general) no está validado y podría producir resultados inconsistentes.
-- Al ser un modelo relativamente nuevo (lanzado en julio de 2026), la documentación y los casos de uso en producción aún son limitados.
+- Contexto de texto limitado a 4096 tokens, muy inferior al de LLM multimodales contemporaneos, lo que restringe conversaciones largas o documentos extensos.
+- Generacion de video acotada a 256p/480p, 12-30 fps y 50-150 fotogramas; no apta para produccion de video de alta resolucion o larga duracion.
+- Entrada de imagen solo en RGB de 8 bits sRGB; no admite escala de grises.
+- La salida de accion solo es valida para la lista cerrada de embodiments documentada; cualquier robot fuera de esa lista no esta soportado.
+- Idiomas soportados no documentados; el comportamiento multilingue no esta garantizado.
+- Riesgo de alucinacion y de incoherencia fisica inherente a los modelos generativos de video: las simulaciones no deben tratarse como ground truth sin validacion.
+- Sesgos desconocidos: la model card no documenta evaluaciones de sesgo ni de seguridad.
+- Licencia OpenMDW 1.1: aunque NVIDIA declara uso comercial permitido, es una licencia propia ("other") y debe revisarse el texto completo en openmdw.ai antes de desplegar en produccion.
+- El checkpoint se actualizo el 25/08/2026; quienes usen `main` deben refrescar la copia local para garantizar reproducibilidad.
+- No se documentan mecanismos de tool calling ni de agentes multi-paso.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/Cosmos3-Edge
-- Blog de NVIDIA en Hugging Face: https://huggingface.co/blog/nvidia/cosmos3edge
-- Página de Cosmos 3 en NVIDIA Research: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
-- White paper técnico: https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
-- Repositorio de código: https://github.com/nvidia/cosmos
-- Colección de modelos Cosmos3: https://huggingface.co/collections/nvidia/cosmos3
-- Guía completa en buildfastwithai.com: https://www.buildfastwithai.com/blogs/nvidia-cosmos-3-edge-complete-guide-2026
+- Coleccion Cosmos3: https://huggingface.co/collections/nvidia/cosmos3
+- Ejemplos Cosmos3: https://huggingface.co/collections/nvidia/cosmos3-examples
+- Codigo: https://github.com/nvidia/cosmos
+- Framework Cosmos: https://github.com/nvidia/cosmos-framework
+- White paper / informe tecnico: https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
+- Web oficial: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- Anuncio de actualizacion del checkpoint: https://huggingface.co/nvidia/Cosmos3-Edge/discussions/62

@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "vLLM",
-      "url": "https://vllm.ai/",
-      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models …"
-    },
-    {
-      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
-      "url": "https://github.com/vllm-project/vllm",
-      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, …"
-    },
-    {
-      "title": "vLLM",
-      "url": "https://docs.vllm.ai/en/latest/",
-      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, …"
-    },
-    {
-      "title": "vLLM - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/VLLM",
-      "snippet": "vLLM is an open-source software framework for inference and serving of large language models and related multimodal models. …"
-    },
-    {
-      "title": "vLLM: The Modern Inference Guide",
-      "url": "https://learnvllm.com/",
-      "snippet": "An interactive guide to modern LLM inference with vLLM: PagedAttention, continuous batching, disaggregated prefill, scheduling, …"
-    }
-  ]
+  "sources": []
 }

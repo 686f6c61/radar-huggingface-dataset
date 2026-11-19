@@ -2,119 +2,105 @@
 
 ## Resumen
 
-Apex-35B-V1.0 es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por Apex Intelligence, un laboratorio que lo presenta como su primer modelo publicado. Se trata de un ajuste fino (finetune) del modelo abierto Qwen3.6-35B-A3B de Alibaba, sobre el que se ha continuado el entrenamiento con datos propietarios y «trayectorias de investigación» generadas por un sistema automatizado denominado Apex Research. El modelo declara 35.951.822.704 parámetros totales (35,95B) con aproximadamente 3B activados por token, lo que sitúa su coste de cómputo por token en el rango de un modelo denso de 3B pese a almacenar pesos de 36B.
+Apex-35B-V1.0 es el primer modelo publicado por Apex Intelligence, un fine-tune del modelo base Qwen3.6-35B-A3B de Alibaba. Se trata de un modelo de mezcla de expertos (MoE) con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones activados por token, disenado tanto para uso general (codigo, respuesta a preguntas, busqueda, tareas agénticas) como para flujos de investigacion en IA, ciencia computacional y simulacion robótica. Su ventana de contexto alcanza los 262.144 tokens compartidos entre entrada y salida.
 
-El objetivo declarado es doble: uso generalista (programación, preguntas y respuestas, búsqueda, tareas agénticas) e investigación científica e ingeniería, con énfasis en planificación de cómputo, escritura y ejecución de programas, dinámica de fluidos y simulación robótica. La ventana de contexto es de 262.144 tokens compartidos entre entrada y salida, pensada para repositorios de código grandes e interacciones multi-turno con herramientas.
+El modelo se presenta como un asistente de investigacion con capacidad de planificar computos, escribir y ejecutar programas, y revisar su enfoque a partir de la retroalimentacion de ejecucion. Segun la model card, el desarrollo incorpora un proceso de auto-mejora recursiva (RSI) mediante un sistema denominado Apex Research, que contribuyo a la construccion de datos de entrenamiento, la exploracion de recetas de entrenamiento y la optimizacion de kernels de GPU e inferencia.
 
-Su relevancia actual radica en dos factores: por un lado, la licencia Apache 2.0 y el formato safetensors lo hacen directamente desplegable en infraestructura propia; por otro, el autor documenta un proceso de auto-mejora recursiva (RSI) en el que un sistema automático construye datos de entrenamiento, ejecuta experimentos y optimiza kernels de GPU, un enfoque que conviene evaluar con escepticismo porque los detalles metodológicos no están publicados en la información disponible.
+Es relevante ahora porque combina una arquitectura dispersa de gran contexto con pesos abiertos bajo licencia Apache 2.0 y un ecosistema de cuantizaciones GGUF ya publicado (BF16 y 28 variantes, desde Q8_0 de 37,8 GB hasta IQ1_S de 9,0 GB), lo que facilita su despliegue tanto en entornos de servidor como en hardware de consumo. No obstante, la informacion publica disponible sobre datos de entrenamiento, idiomas y benchmarks es limitada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts (MoE), arquitectura declarada en transformers como `qwen3_5_moe`; deriva de Qwen3.6-35B-A3B |
-| Parámetros totales | 35.951.822.704 (35,95B) |
-| Parámetros activos | Aproximadamente 3B por token |
-| Longitud de contexto | 262.144 tokens (ventana compartida entre entrada y salida) |
-| Tipos de cuantización | No disponible en la información proporcionada (el repositorio publica safetensors; no se documentan GGUF ni cuantizaciones oficiales) |
+| Arquitectura | Mezcla de expertos (MoE) sobre transformer, tipo `qwen3_5_moe` |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | Aproximadamente 3.000 millones por token |
+| Longitud de contexto | 262.144 tokens (compartidos entre entrada y salida) |
+| Tipos de cuantizacion | GGUF: BF16 y 28 cuantizaciones, desde Q8_0 (37,8 GB) hasta IQ1_S (9,0 GB) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería `transformers`) |
-
-Otros datos: tamaño del repositorio 71,9 GB, pipeline `text-generation`, 17 likes y 0 descargas en el momento de la consulta, creado y actualizado el 28 de octubre de 2026. El tag `image-text-to-text` sugiere capacidad de entrada de imagen, aunque la model card no detalla ningún modo de visión.
+| Formato de pesos | Safetensors (transformers); GGUF disponible en repositorio aparte |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer disperso de tipo MoE con 35,95B de parámetros totales y unos 3B activos por token, heredada del modelo base Qwen3.6-35B-A3B. El autor no publica el número de expertos, la dimensión oculta, el número de capas ni la estrategia de enrutamiento en la información disponible. La ventana de 262.144 tokens se declara compartida entre entrada y salida, lo que implica que el presupuesto de contexto se consume tanto al leer como al generar.
+El modelo emplea una arquitectura de mezcla de expertos con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones activados por token, heredada del modelo base Qwen3.6-35B-A3B. Esta dispersion permite un coste de inferencia por token mucho menor que el de un modelo denso del mismo tamano, manteniendo la capacidad total del modelo. La ventana de contexto de 262.144 tokens, compartida entre entrada y salida, esta pensada para repositorios de codigo grandes e interacciones multi-turno con herramientas.
 
-El entrenamiento parte del modelo Qwen3.6-35B-A3B y continúa con «datos propietarios y trayectorias de investigación». Según la model card, el sistema Apex Research contribuyó a construir datos para las áreas débiles del modelo, refinar la receta de entrenamiento a partir de retroalimentación experimental y optimizar la infraestructura de entrenamiento e inferencia; los resultados validados de ese proceso se incorporan a iteraciones posteriores. No se especifican el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o RL con verificadores de ejecución. Tampoco se detalla la innovación de «pensamiento dinámico», más allá de que el modelo decide por sí mismo si razona y durante cuánto tiempo en cada turno, sin conmutación manual de modo. El autor indica que el desarrollo se apoya en el arnés Claude Code (versión 2.1.280 preferida), lo que sugiere un ajuste orientado a flujos de trabajo agénticos con esa herramienta.
+Segun la model card, el entrenamiento parte de Qwen3.6-35B-A3B y se realiza un fine-tune sobre conjuntos de datos propietarios y trayectorias de investigacion. El proceso de desarrollo incorpora auto-mejora recursiva (RSI) a traves de Apex Research, un sistema automatizado que genera datos de entrenamiento para las areas debiles del modelo, realiza experimentos automatizados, explora recetas de entrenamiento y optimiza kernels de GPU e inferencia. Los resultados validados de este proceso se incorporan a iteraciones posteriores. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. El modelo incorpora un modo de razonamiento dinamico que decide por si mismo si razonar y durante cuanto tiempo en cada turno, sin conmutacion manual de modos.
 
 ## Capacidades
 
-- Generación de texto conversacional y respuesta a preguntas en dominios generales.
-- Programación: escritura de código, uso de herramientas y tareas de agente sobre repositorios, favorecidas por la ventana de 262.144 tokens.
-- Razonamiento con «pensamiento dinámico»: el modelo decide en cada turno si razona y con qué profundidad, sin cambiar de modo manualmente.
-- Uso de herramientas y ejecución de código: planifica cálculos, escribe y ejecuta programas y revisa su enfoque a partir de los resultados o del feedback de ejecución.
-- Investigación computacional: flujos de dinámica de fluidos y simulación robótica citados explícitamente por el autor.
-- Búsqueda profunda («deep search») y tareas agénticas multi-paso.
-- Capacidad multimodal de entrada potencial según el tag `image-text-to-text` del repositorio; no confirmada ni descrita en la model card.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`) y despliegue vía `transformers`.
-- Idiomas: no se documenta cobertura multilingüe específica.
+- Generacion de texto conversacional y respuesta a preguntas.
+- Codigo: escritura, revision y depuracion en tareas cotidianas y de investigacion.
+- Razonamiento dinamico: decide si razonar y cuanto razonar en cada turno, sin cambio manual de modo.
+- Uso de herramientas (tool calling / function calling) y tareas agénticas multi-paso.
+- Investigacion computacional: planifica computos, escribe y ejecuta programas, y revisa su enfoque con la retroalimentacion de ejecucion.
+- Simulacion cientifica y de ingenieria, incluyendo dinamica de fluidos computacional (CFD) y simulacion robotica.
+- Busqueda profunda (deep search) integrada en flujos de investigacion.
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`), segun los tags del repositorio.
+- Compatibilidad con el arnes Claude Code (v2.1.280 recomendada) para flujos de trabajo agénticos.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Asistencia de programación sobre repositorios grandes: con 262.144 tokens de contexto compartido, el modelo puede recibir varios ficheros, el histórico de diffs y las trazas de error en una sola pasada, lo que reduce la necesidad de resumir el código antes de consultarlo.
-- Agente de CI/CD con ejecución de código: el modelo está entrenado para escribir programas, ejecutarlos y corregir el enfoque con el feedback de ejecución, un bucle adecuado para tareas de reparación de tests o generación de parches verificados automáticamente.
-- Integración en el arnés Claude Code: el autor declara soporte explícito para este entorno, por lo que encaja en flujos de trabajo de terminal con llamadas a herramientas y edición de ficheros locales.
-- Prototipado de simulación científica: para dinámica de fluidos o simulación robótica, el modelo puede generar scripts de simulación, lanzarlos y ajustar parámetros a partir de las salidas, aunque la validación física debe hacerla un especialista.
-- Búsqueda y síntesis documental multi-turno: la ventana larga permite acumular resultados de búsqueda, fuentes y notas intermedias sin truncar, útil en asistentes de investigación internos.
-- Automatización de atención al cliente técnica: conversaciones multi-turno con contexto largo y uso de herramientas para consultar estado de sistemas o bases de conocimiento; requiere evaluar antes el comportamiento en el idioma objetivo, ya que no se documentan idiomas soportados.
-- Despliegue on-premise con requisitos de licencia laxa: al ser Apache 2.0 y safetensors, encaja en entornos con restricciones de licencia para uso comercial, sujeto a verificación legal del modelo base.
-- Exploración de investigación sobre auto-mejora: como objeto de estudio de técnicas RSI y de ajuste sobre modelos Qwen, para equipos que quieran reproducir o auditar el enfoque.
+- Asistencia de codigo en repositorios grandes: con 262.144 tokens de contexto puede cargar fragmentos extensos de un monorepositorio, mantener el hilo entre multiples archivos y proponer cambios coherentes con el resto del codigo.
+- Agentes de ingenieria de software: integrado en el arnes Claude Code, puede planificar una tarea, invocar herramientas de edicion y ejecucion, leer la salida y corregir su enfoque en varios pasos.
+- Investigacion cientifica asistida: el modelo puede formular un plan de computo, escribir el programa correspondiente, ejecutarlo y usar los resultados para iterar, lo que encaja en flujos de simulacion de fluidos o validacion de hipotesis.
+- Simulacion robotica y real2sim: segun la model card, se evalua en benchmarks internos de simulacion robotica (RoboRSI, Real2Sim), por lo que es adecuado para generar y ajustar escenarios de simulacion.
+- Busqueda y sintesis documental: combinando deep search con contexto largo, puede recopilar informacion de multiples fuentes y sintetizarla en un informe con trazabilidad de las fuentes.
+- Despliegue local en hardware de consumo: las cuantizaciones GGUF de menor tamano (hasta IQ1_S de 9,0 GB) permiten ejecutar el modelo en GPUs consumer mediante llama.cpp u Ollama, util para prototipado y entornos con requisitos de privacidad.
+- Atencion al cliente tecnica multi-turno: la ventana de contexto larga y el soporte de tool calling permiten gestionar conversaciones prolongadas con acceso a sistemas internos mediante funciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numéricos en la información disponible: la model card referencia una imagen (`evaluation-overview.png`) y una tabla detallada cuyo contenido aparece truncado en la extracción. Los benchmarks mencionados, sin valores asociados, son los siguientes.
+La model card menciona resultados de evaluacion agrupados en cuatro categorias (Research, Agentic Tasks, Coding y Reasoning) y tres benchmarks internos (RoboRSI, Real2Sim y CFD-Bench), pero los valores numericos se presentan en una imagen y en una tabla que no esta completa en la informacion proporcionada. Los unicos datos concretos disponibles son:
 
-| Benchmark | Categoría | Métrica declarada | Resultado |
-|---|---|---|---|
-| Investigación (media de categoría) | Research | Media ponderada de la categoría | No disponible |
-| Tareas agénticas (media de categoría) | Agentic Tasks | Media ponderada de la categoría | No disponible |
-| Programación (media de categoría) | Coding | Media ponderada de la categoría | No disponible |
-| Razonamiento (media de categoría) | Reasoning | Media ponderada de la categoría | No disponible |
-| SciCode | Research | Problema principal / subproblema | No disponible |
-| CFD-Bench | Research | Victorias / empates / derrotas frente a Qwen3.6-35B-A3B | No disponible |
-| RoboRSI | Research | Puntuación individual | No disponible |
-| Real2Sim | Research | Puntuación individual | No disponible |
+| Benchmark | Resultado |
+|---|---|
+| CFD-Bench | Comparacion en victorias/empates/derrotas frente a Qwen3.6-35B-A3B; valores numericos no disponibles |
+| RoboRSI | Puntuacion individual; valor no disponible |
+| Real2Sim | Puntuacion individual; valor no disponible |
+| Research, Agentic Tasks, Coding, Reasoning | Medias ponderadas por categoria; valores no disponibles |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar en la información disponible, y los valores de la comparación directa con Qwen3.6-35B-A3B no son legibles en la extracción. Cualquier cifra que circule sin consultar la tabla original de la model card debe considerarse no verificada.
+No se han publicado en la informacion disponible resultados numericos de benchmarks estandar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM para pesos en BF16/FP16: en torno a 72 GB solo para pesos (35,95B × 2 bytes), sin contar caché KV ni overhead del runtime.
-- VRAM para pesos en INT8: aproximadamente 36 GB.
-- VRAM para pesos en INT4: aproximadamente 18-20 GB. Al ser MoE, todos los expertos deben residir en memoria, por lo que el ahorro frente a un denso equivalente en cómputo no se traduce en ahorro de VRAM.
-- Caché KV: con 262.144 tokens de contexto, la caché puede superar ampliamente el tamaño de los pesos en BF16; para contextos largos conviene cuantizar la caché o limitar la longitud efectiva. No se dispone de cifras oficiales de configuración de cabezas KV.
-- GPU recomendadas: H100 80 GB para BF16 en una sola tarjeta; A100 80 GB equivalente; dos A100 40 GB o dos RTX 4090 24 GB con tensor parallelism para BF16; RTX 4090, RTX 3090 o L40S para cuantización INT4 con contextos moderados.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 (24 GB) con cuantización de 4 bits y contexto recortado; en 16 GB (RTX 4080, 4060 Ti) solo con cuantizaciones muy agresivas y probablemente con degradación.
-- Opciones de despliegue: `transformers` (formato nativo del repositorio); el tag `endpoints_compatible` apunta a despliegue gestionado compatible con endpoints. vLLM, TGI, llama.cpp u Ollama no están confirmados en la información disponible; para vLLM y TGI habría que verificar el soporte de la arquitectura `qwen3_5_moe` y la existencia de pesos en formato adecuado.
-- Latencia y throughput: no disponibles. Al activar unos 3B parámetros por token, el cómputo por token es bajo, pero el ancho de banda de memoria necesario para recorrer los pesos de 36B condiciona la latencia en hardware de consumo.
+- VRAM estimada para inferencia en BF16: aproximadamente 72 GB para los pesos completos (el repositorio ocupa 71,9 GB), lo que exige multiples GPUs o una GPU de 80 GB con margen limitado para el contexto.
+- Cuantizaciones GGUF: desde Q8_0 (37,8 GB) hasta IQ1_S (9,0 GB); las variantes de 4 bits (Q4_K_M y similares) quedarian en el rango intermedio, aptas para GPUs consumer de 24 GB.
+- GPU recomendadas: A100 80 GB o H100 para BF16; RTX 4090 (24 GB) o RTX 3090 para cuantizaciones de 4 bits; GPUs con 8-12 GB solo para las cuantizaciones mas agresivas (IQ1_S, IQ2).
+- Cabe en GPU consumer: si, mediante GGUF en llama.cpp u Ollama con cuantizaciones de 4 bits o inferiores.
+- Opciones de despliegue: transformers, llama.cpp, Ollama, Unsloth y otros runtimes locales compatibles con GGUF; vLLM y TGI no se mencionan explicitamente en la informacion disponible.
+- Latencia y throughput: no disponibles. La activacion de aproximadamente 3.000 millones de parametros por token reduce el coste computacional frente a un modelo denso de 35B.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Apex-35B-V1.0 | 35,95B | ~3B | 262.144 | Apache 2.0 | Hugging Face, safetensors |
-| Qwen3.6-35B-A3B (base) | 35B | ~3B | No disponible en la información | No disponible en la información | Hugging Face, abierto |
-| Qwen3-30B-A3B | ~30,5B | ~3,3B | 32.768 nativo, ampliable con YaRN (dato de referencia pública, conviene verificarlo) | Apache 2.0 | Hugging Face |
-| Mixtral 8x7B | 46,7B | 12,9B | 32.768 | Apache 2.0 | Hugging Face |
+| Apex-35B-V1.0 | 35,95B | ~3B | 262.144 | Apache 2.0 | Hugging Face, GGUF |
+| Qwen3.6-35B-A3B (base) | 35B (aprox.) | ~3B | No disponible en la informacion | No disponible en la informacion | Hugging Face |
+| Alternativas de misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-Frente a su modelo base, Apex-35B-V1.0 aporta un ajuste orientado a agentes e investigación y una ventana declarada de 262.144 tokens; la comparación de rendimiento directa está publicada en la model card (CFD-Bench como victorias/empates/derrotas) pero los valores no son legibles en la información disponible, por lo que no puede afirmarse una mejora cuantificada. Frente a Mixtral 8x7B, el modelo de Apex activa cuatro veces menos parámetros por token y declara una ventana ocho veces mayor, aunque no hay benchmarks públicos que permitan comparar calidad. La comparación con modelos densos de ~30B no está cubierta por los datos disponibles.
+La unica comparacion directa documentada es con el modelo base Qwen3.6-35B-A3B, frente al cual la model card reporta resultados en CFD-Bench en formato victorias/empates/derrotas, sin cifras concretas disponibles. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia de benchmarks verificables: la tabla de resultados está publicada como imagen y tabla truncada; no hay cifras contrastables de MMLU, HumanEval o GSM8K en la información disponible.
-- Idiomas no documentados: no se especifica cobertura multilingüe ni calidad en castellano; es un riesgo directo para despliegues en español.
-- Riesgo de alucinación: no se documentan evaluaciones de factualidad ni tasas de error. En tareas de investigación y científicas, las salidas deben validarse con ejecución real y revisión experta.
-- Sesgos: no se publica ninguna evaluación de sesgos, toxicidad o robustez frente a prompts adversarios.
-- Procedencia de los datos: el autor menciona «datos propietarios» y trayectorias generadas por un sistema automático sin detallar composición, filtrado ni procedencia, lo que dificulta auditorías de licencia y de contaminación de benchmarks.
-- Modelo con 0 descargas y publicado el mismo día de su creación: no existe evidencia de uso en producción ni validación independiente.
-- Licencia: Apache 2.0 en este repositorio, pero conviene verificar la licencia y las condiciones del modelo base Qwen3.6-35B-A3B antes de uso comercial, ya que un finetune hereda obligaciones del modelo original.
-- Contexto compartido: los 262.144 tokens se reparten entre entrada y salida, por lo que el contexto efectivo para generar se reduce a medida que crece el prompt.
-- Soporte de tooling: la arquitectura `qwen3_5_moe` puede no estar soportada aún por todos los motores de inferencia habituales; hay que comprobar compatibilidad antes de planificar el despliegue.
-- Dependencia del arnés Claude Code: parte del ajuste está orientado a ese entorno concreto; el rendimiento fuera de él puede diferir y no está medido.
+- Sesgos conocidos: no se documentan en la informacion disponible; al ser un fine-tune de Qwen3.6-35B-A3B, hereda los sesgos del modelo base, que no se detallan.
+- Riesgo de alucinacion: no cuantificado; como modelo generativo de gran escala, es susceptible de producir contenido plausible pero incorrecto, especialmente en tareas de investigacion sin verificacion.
+- Idiomas soportados: no disponibles; no se puede confirmar el rendimiento en castellano ni en otros idiomas distintos del ingles.
+- Datos de entrenamiento: no se especifican el volumen de tokens, la composicion del dataset ni el uso de RLHF/DPO, lo que dificulta evaluar la cobertura y los sesgos del fine-tune.
+- Benchmarks: los resultados publicados son mayoritariamente internos (RoboRSI, Real2Sim, CFD-Bench) y no se acompanan de cifras verificables en benchmarks estandar, lo que limita la comparacion independiente.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.6-35B-A3B, ya que el fine-tune hereda sus obligaciones.
+- Dependencia de arnes: parte del rendimiento reportado se obtuvo con el arnes Claude Code (v2.1.280 recomendada); fuera de ese entorno el comportamiento agéntico puede diferir.
+- Contexto largo: aunque la ventana es de 262.144 tokens, no se documenta el rendimiento real en tareas de recuperacion en contextos muy extensos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0
-- Licencia: https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0/blob/main/LICENSE
-- Blog de presentación: https://www.apexin.com/apex-35b/
-- Página principal de Apex Intelligence: https://www.apexin.com/
-- Sección de investigación: https://www.apexin.com/research/
-- Repositorio GitHub: https://github.com/apexin-ai/Apex-35B-V1.0
-- Cuenta en X: https://x.com/apexin_ai
+- Cuantizaciones GGUF: https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Blog del modelo base: https://qwen.ai/blog?id=qwen3.6-35b-a3b
-- Arnés Claude Code: https://github.com/anthropics/claude-code
-- Gráfico de evaluación: https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0/resolve/main/assets/evaluation-overview.png
-- Cobertura externa: https://finance.biggo.com/news/fda45b48-9783-442d-b76f-4af290cb1e97
+- Pagina principal de Apex Intelligence: https://www.apexin.com/
+- Blog del modelo: https://www.apexin.com/apex-35b/
+- Repositorio GitHub: https://github.com/apexin-ai/Apex-35B-V1.0
+- Licencia: https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0/blob/main/LICENSE
+- Claude Code (arnes recomendado): https://github.com/anthropics/claude-code
+- Twitter/X: https://x.com/apexin_ai

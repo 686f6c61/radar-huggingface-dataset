@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Meteo",
-      "url": "https://www.meteo.pl/",
-      "snippet": "Aktualnie przeważająca część obszaru naszego kraju w przyziemnym polu barycznym znajduje się pod wpływem …"
-    },
-    {
-      "title": "Meteorogramy dla gmin",
-      "url": "https://www.meteo.pl/um/php/gpp/search.php",
-      "snippet": "Numeryczna prognoza pogody ICM Zaznacz województwo i pierwszą literę z nazwy miejscowości (aktualnie w bazie znajdują się …"
-    },
-    {
-      "title": "ICM Meteo",
-      "url": "https://mapy.meteo.pl/",
-      "snippet": "i GFS (14 dni) i Temperatura na 2 m i Temperatura powierzchni i Ciśnienie zredukowane i Zachmurzenie i opady"
-    },
-    {
-      "title": "METEO-ICM OLD",
-      "url": "https://old.meteo.pl/",
-      "snippet": "Aktualnie przeważająca część obszaru naszego kraju w przyziemnym polu barycznym znajduje się pod wpływem …"
-    },
-    {
-      "title": "METEO-ICM",
-      "url": "https://bardzotest.meteo.pl/",
-      "snippet": "1 day ago · Treści zawarte w komentarzu synoptycznym mogą zawierać prywatne, niezależne opinie synoptyków, w związku z czym …"
-    }
-  ]
+  "sources": []
 }

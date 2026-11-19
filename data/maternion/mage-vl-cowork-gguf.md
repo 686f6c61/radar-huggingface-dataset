@@ -2,102 +2,97 @@
 
 ## Resumen
 
-Mage-VL-Cowork es un modelo de lenguaje y visión de 4.400 millones de parámetros desarrollado por el equipo Mage de Microsoft, diseñado específicamente como agente de uso de ordenador (*computer-use*). Combina un canal de control de interfaz gráfica (`computer_use`, con 11 primitivas GUI y coordenadas en el rango `[0,999]`) con un canal persistente de shell y Python (`bash`) dentro de una única política visión-lenguaje. Su torre de texto es Qwen3-4B y su torre de visión es Mage-ViT, integradas mediante una arquitectura personalizada `llava_onevision2` que requiere `trust_remote_code=True` en transformers.
+Mage-VL-Cowork es un modelo vision-language de 4.400 millones de parámetros desarrollado por el equipo Mage de Microsoft, especializado en computer use: control de interfaces gráficas a partir de capturas de pantalla y ejecución de comandos en un canal de shell/Python persistente dentro de una única política multimodal. Combina una torre de texto Qwen3-4B con una torre de visión propietaria (Mage-ViT) bajo una arquitectura personalizada `llava_onevision2`. El repositorio aquí descrito, `maternion/Mage-VL-Cowork-GGUF`, es una conversión a formato GGUF del modelo original en BF16, con cuantizaciones de 1 a 8 bits para su uso con llama.cpp.
 
-El modelo destaca por su rendimiento en tareas de automatización de escritorio: alcanza un 66,0 % en OSWorld-Verified con solo 4B de parámetros, con un 87,5 % en tareas de sistema operativo y un 62,7 % en flujos multi-aplicación, según los datos publicados por el autor de la conversión. Está entrenado con una ventana de 32K tokens, aunque la arquitectura soporta hasta 262K.
+La relevancia del modelo radica en su rendimiento en OSWorld-Verified: 66,0 % con solo 4B de parámetros, la mejor marca entre modelos de ese tamaño en el momento de su publicación, con un 87,5 % en tareas de sistema operativo y un 62,7 % en flujos multi-aplicación. Esto lo sitúa como una opción viable para agentes de automatización de escritorio que deben ejecutarse en hardware modesto.
 
-Esta ficha describe la conversión a GGUF realizada por el usuario `maternion`, que permite ejecutar el modelo en llama.cpp con soporte de visión mediante un archivo mmproj separado en BF16. La licencia Apache-2.0 se mantiene sin cambios respecto al modelo original.
+La conversión GGUF, realizada por el usuario maternion, mantiene la licencia Apache-2.0 del original y añade una matriz de importancia (imatrix) para las cuantizaciones IQ. El modelo está entrenado con una ventana de contexto de 32K tokens, aunque la arquitectura soporta hasta 262K.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
 | Arquitectura | `llava_onevision2` personalizada (torre de texto Qwen3-4B + torre de visión Mage-ViT) |
-| Parámetros totales | 4.411.424.256 (torre de texto; visión en mmproj separado) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32K en entrenamiento; arquitectura soporta hasta 262K |
-| Tipos de cuantización | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ4_NL, Q3_K_M, Q3_K_S, IQ3_M, IQ2_M, IQ1_M |
+| Parametros totales | 4.411.424.256 (4,4B, torre de texto; visión en mmproj separado) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32K entrenado; arquitectura soporta hasta 262K |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ4_NL, Q3_K_M, Q3_K_S, IQ3_M, IQ2_M, IQ1_M; mmproj en BF16 o Q8_0 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); mmproj de visión en BF16 |
+| Formato de pesos | GGUF (llama.cpp v0.9.0+) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina una torre de texto Qwen3-4B con una torre de visión Mage-ViT, unidas mediante un diseño `llava_onevision2` que en transformers exige `trust_remote_code=True`. El modelo integra dos canales de acción en una sola política: `computer_use`, que emite 11 primitivas de control GUI con coordenadas normalizadas en `[0,999]`, y `bash`, que permite ejecutar comandos de shell y Python de forma persistente. La plantilla de chat es de estilo Qwen2 e incluye el contrato de herramientas `computer_use`/`bash` embebido en el GGUF.
+El modelo sigue una arquitectura multimodal de tipo LLaVA-OneVision adaptada, denominada `llava_onevision2` en transformers (requiere `trust_remote_code=True`). La torre de texto es Qwen3-4B y la torre de visión es Mage-ViT, empaquetada en un archivo mmproj independiente. La política resultante integra dos canales de acción: `computer_use`, con 11 primitivas de interfaz gráfica y coordenadas en el rango `[0,999]`, y `bash`, para ejecución de comandos de shell y Python. El modelo fue entrenado con una ventana de 32K tokens.
 
-Los detalles concretos de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) no están disponibles en la información proporcionada; la model card remite al informe técnico y a la model card original de Microsoft para esos datos. La conversión a GGUF se realizó en dos pasos: primero `convert_hf_to_gguf.py` para generar el BF16 de la torre de texto (8,83 GB) y el mmproj BF16 separado, y después `llama-quantize` con una importance matrix recogida sobre 800 fragmentos de 512 tokens (~410k tokens) de prosa técnica mixta. Se cubren 252/252 tensores matmul esperados, con los fallbacks estándar de llama.cpp para `output.weight` (q6_K) y `token_embd.weight` (IQ4_XS).
+La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. La conversión GGUF se realizó en dos pasos: primero `convert_hf_to_gguf.py` para generar el BF16 y el mmproj, y después `llama-quantize` con una imatrix recogida sobre 800 fragmentos de 512 tokens (aproximadamente 410.000 tokens) de prosa técnica mixta. Las cuantizaciones IQ aprovechan la imatrix, mientras que las K-quants apenas la utilizan. El template de chat (estilo Qwen2 con contrato de herramientas `computer_use`/`bash`) está embebido en el GGUF.
 
 ## Capacidades
 
-- Control de interfaz gráfica mediante el canal `computer_use` con 11 primitivas GUI y coordenadas en `[0,999]`.
-- Ejecución persistente de comandos de shell y Python mediante el canal `bash`.
-- Enrutamiento híbrido entre acciones GUI y bash dentro de una misma política.
-- Comprensión de imágenes (pipeline `image-text-to-text`) con torre de visión Mage-ViT.
-- Razonamiento multi-paso orientado a agentes de escritorio.
-- Ventana de trabajo de 3 capturas de pantalla con historial de acciones plegado (según el harness MAGEHybridAgent).
-- Soporte de tool calling mediante el contrato `computer_use`/`bash` embebido en la plantilla de chat.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generación de texto y razonamiento multimodal: procesa imágenes (capturas de pantalla) y texto para producir respuestas y acciones.
+- Control de interfaz gráfica: 11 primitivas GUI con coordenadas normalizadas en `[0,999]`, incluyendo clics, escritura y desplazamiento.
+- Ejecución de comandos: canal `bash` persistente para shell y Python dentro de la misma política.
+- Enrutamiento híbrido GUI/bash: el modelo decide qué canal usar según la tarea.
+- Soporte de tool calling mediante el contrato de herramientas embebido en el template de chat.
+- Comportamiento de agente multi-paso: ventana de trabajo de 3 capturas de pantalla y historial de acciones plegado.
+- Capacidades multilingües: no disponible.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- Automatización de tareas de escritorio: el modelo puede controlar ratón y teclado mediante las 11 primitivas GUI para completar flujos como rellenar formularios, gestionar archivos o configurar aplicaciones, con un 87,5 % de éxito en tareas de sistema operativo según los datos del autor.
-- Agente híbrido GUI + shell: combinando los canales `computer_use` y `bash`, puede resolver tareas que requieren tanto interacción visual como ejecución de scripts, con un 62,7 % en flujos multi-aplicación.
-- Pruebas de regresión de interfaces: integrado en pipelines de CI/CD para validar que una aplicación de escritorio sigue funcionando tras cambios, ejecutando secuencias de acciones GUI y verificando resultados visualmente.
-- Asistencia remota automatizada: desplegado en un entorno sandboxizado, puede ejecutar tareas de soporte técnico guiadas por lenguaje natural (abrir paneles de configuración, revisar logs vía bash, etc.).
-- Extracción de datos de aplicaciones legacy: el modelo puede navegar por interfaces sin API y extraer información combinando capturas de pantalla con comandos de shell para volcar resultados.
-- Formación y evaluación de agentes: sirve como política base de 4B parámetros para experimentar con harness de agentes (MAGEHybridAgent) en entornos controlados, con un coste de VRAM reducido (2,72 GB en Q4_K_M más 0,66 GB de mmproj).
-- Automatización de tareas ofimáticas: gestión de hojas de cálculo, documentos y correo mediante interacción GUI, adecuada para flujos repetitivos que no disponen de API.
+- Automatización de tareas de escritorio: el modelo puede operar aplicaciones nativas mediante clics y teclado sobre capturas de pantalla, adecuado para flujos repetitivos de oficina como rellenar formularios o gestionar correo.
+- Agente de soporte técnico remoto: combinando GUI y bash, puede diagnosticar y resolver incidencias en un entorno de escritorio, ejecutando comandos y verificando el estado visual del sistema.
+- Pruebas de regresión de interfaces: actúa como agente que navega una aplicación y valida visualmente el resultado, útil en pipelines de QA con hardware de gama media gracias a su tamaño de 4B.
+- Automatización de flujos multi-aplicación: con un 62,7 % en OSWorld-Verified para flujos que cruzan varias aplicaciones, sirve para orquestar transferencia de datos entre programas (por ejemplo, exportar de una hoja de cálculo e importar en un CRM).
+- Despliegue en estaciones de trabajo con GPU consumer: la cuantización Q4_K_M (2,72 GB) más el mmproj BF16 (0,66 GB) cabe en GPUs de 8 GB, lo que permite ejecutar el agente localmente sin depender de la nube.
+- Investigación en agentes computer-use: el formato GGUF y la compatibilidad con llama-server facilitan experimentar con cuantizaciones y medir su impacto en la precisión de las coordenadas, un aspecto crítico para este tipo de modelos.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Mage-VL-Cowork (4B) |
+| Benchmark | Resultado |
 |---|---|
 | OSWorld-Verified | 66,0 % |
-| Tareas de sistema operativo (OS tasks) | 87,5 % |
-| Flujos multi-aplicación | 62,7 % |
+| OSWorld (tareas de sistema operativo) | 87,5 % |
+| OSWorld (flujos multi-aplicación) | 62,7 % |
 
-Los datos corresponden al modelo original en BF16 según la model card del autor de la conversión; la calidad tras cuantización depende de los ajustes empleados. No se han publicado en la información disponible resultados comparativos con otros modelos en MMLU, HumanEval, GSM8K u otros benchmarks estándar.
+Estos datos corresponden al modelo original en BF16 según la model card; el rendimiento de las cuantizaciones depende de los ajustes. No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otras pruebas estándar de texto.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (torre de texto + mmproj BF16 de 0,66 GB):
-  - BF16: ~8,83 GB + 0,66 GB ≈ 9,5 GB.
-  - Q8_0: ~4,69 GB + 0,66 GB ≈ 5,4 GB.
-  - Q6_K: ~3,63 GB + 0,66 GB ≈ 4,3 GB.
-  - Q4_K_M: ~2,72 GB + 0,66 GB ≈ 3,4 GB.
-  - IQ3_M: ~2,13 GB + 0,66 GB ≈ 2,8 GB.
-  - IQ2_M: ~1,68 GB + 0,66 GB ≈ 2,3 GB.
-  - IQ1_M: ~1,25 GB + 0,66 GB ≈ 1,9 GB (experimental, degradado).
-- GPU recomendadas: cualquier GPU con 8 GB o más para Q4_K_M; A100/H100 no son necesarias por el tamaño del modelo, pero aportan margen para contextos largos y concurrencia.
-- Cabe en GPU de consumo: sí, desde 8 GB (Q4_K_M) hasta 4 GB (Q6_K) o menos con cuantizaciones IQ.
-- Opciones de despliegue: `llama-server` de llama.cpp (API compatible con OpenAI y soporte de visión), con builds recientes (probado con `0.9.0-dev`, commit `7c2653acc`, b12277). El harness MAGEHybridAgent es necesario para el comportamiento de agente completo.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: desde 1,25 GB (IQ1_M, experimental y degradado) hasta 8,83 GB (BF16). El mmproj añade 0,66 GB en BF16 o 0,33 GB en Q8_0 independientemente de la cuantización del texto.
+- Cuantización recomendada: Q4_K_M (2,72 GB) más mmproj BF16 (0,66 GB) cabe con holgura en cualquier GPU de 8 GB o más.
+- GPU recomendadas: RTX 3060/4060 (8 GB) para Q4_K_M; RTX 4090 o A100/H100 para BF16 o Q8_0 con contextos largos.
+- Cabe en GPU consumer: sí, desde 8 GB con Q4_K_M; IQ3_M/IQ2_M para VRAM ajustada.
+- Opciones de despliegue: llama.cpp v0.9.0+ mediante `llama-server` (API compatible con OpenAI y soporte de visión); `llama-server -hf maternion/Mage-VL-Cowork-GGUF:Q4_K_M` descarga automáticamente el mmproj.
+- Latencia y throughput: no disponible.
+- Nota operativa: el harness MAGEHybridAgent es necesario para reproducir el comportamiento de agente completo (enrutamiento híbrido, historial plegado, ventana de 3 capturas).
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con modelos alternativos en la información proporcionada. Como referencia estructural, el modelo se sitúa en la categoría de agentes de uso de ordenador de ~4B parámetros con soporte de visión, pero no se han publicado comparaciones directas con otras alternativas en la documentación disponible.
+| Modelo | Parámetros | Contexto | OSWorld-Verified | Licencia | Formato |
+|---|---|---|---|---|---|
+| Mage-VL-Cowork (este) | 4,4B | 32K (hasta 262K) | 66,0 % | Apache-2.0 | GGUF, BF16 original |
+| Alternativas de 4B para computer use | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativas de mayor tamaño para computer use | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | OSWorld-Verified | Licencia |
-|---|---|---|---|---|
-| Mage-VL-Cowork | 4,4B | 32K (hasta 262K) | 66,0 % | Apache-2.0 |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
+No se dispone en la información proporcionada de datos concretos de modelos comparables de la misma categoría (agentes computer-use de 4B) para establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Las cuantizaciones de clase Q2 e inferiores degradan notablemente la precisión de *grounding* GUI: pequeños errores de coordenadas afectan mucho a un modelo de computer-use, por lo que deben evaluarse con clics-por-tarea reales en el harness.
-- IQ1_M está marcada como experimental y "notablemente degradada" por el autor.
-- El modelo ejecuta comandos de shell y acciones GUI por diseño; requiere aislamiento en sandbox, autorización acotada y exposición cero de credenciales, tal como advierte la model card original.
-- Riesgo de alucinación y sesgos: no se han documentado sesgos específicos en la información proporcionada.
-- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingüe.
-- La calidad de las cuantizaciones depende de los ajustes; los benchmarks publicados corresponden al modelo BF16 original.
-- El uso del comportamiento de agente completo requiere el harness MAGEHybridAgent, no basta con chat completion simple.
-- Licencia Apache-2.0 permite uso comercial, pero las consideraciones de uso responsable del modelo original siguen aplicando.
+- Las cuantizaciones de clase Q2 e inferiores degradan la precisión de las coordenadas GUI; los pequeños errores de posicionamiento afectan mucho a un modelo de computer use. IQ1_M es experimental y notablemente degradado.
+- Los benchmarks publicados corresponden al modelo BF16; las cuantizaciones pueden reducir el rendimiento y deben evaluarse con clics-por-tarea reales en el harness propio.
+- El modelo ejecuta comandos de shell y acciones GUI por diseño; requiere aislamiento en sandbox, autorización acotada y ausencia total de exposición de credenciales.
+- Riesgo de alucinación y de acciones incorrectas en entornos reales: no se han publicado tasas de error específicas en la información disponible.
+- Sesgos conocidos: no disponible.
+- Idiomas soportados: no disponible; no se puede confirmar el rendimiento multilingüe.
+- Licencia Apache-2.0: permite uso comercial, pero las consideraciones de uso responsable del modelo original siguen aplicándose.
+- El modelo requiere llama.cpp v0.9.0 o superior y, para el comportamiento de agente completo, el harness MAGEHybridAgent en lugar de chat completion simple.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/maternion/Mage-VL-Cowork-GGUF
-- Modelo base: https://huggingface.co/microsoft/Mage-VL-Cowork
+- Modelo original: https://huggingface.co/microsoft/Mage-VL-Cowork
 - Página del proyecto: https://microsoft.github.io/Mage/cowork/
 - Informe técnico: https://github.com/microsoft/Mage/blob/main/assets/mage_vl_cowork_tech_report.pdf
-- Harness MAGEHybridAgent: https://github.com/microsoft/Mage/tree/main/mage_vl_cowork
+- Harness del agente: https://github.com/microsoft/Mage/tree/main/mage_vl_cowork
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

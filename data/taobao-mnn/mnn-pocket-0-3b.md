@@ -2,102 +2,103 @@
 
 ## Resumen
 
-MNN-Pocket-0.3B es un modelo de lenguaje compacto de tipo instruccional desarrollado por el equipo taobao-mnn (Alibaba), disenado conjuntamente con el runtime de inferencia MNN para despliegue en dispositivos de borde (on-device). Con aproximadamente 300 millones de parametros (361.551.232 reales segun los pesos en safetensors), resuelve el problema de ejecutar un asistente conversacional bilingue en ingles y chino dentro de moviles, tablets y otros dispositivos con recursos limitados, sin depender de la nube.
+MNN-Pocket-0.3B es un modelo de lenguaje compacto de aproximadamente 300 millones de parámetros desarrollado por el equipo taobao-mnn (Alibaba), diseñado conjuntamente con la pila de inferencia MNN para despliegue en dispositivo (on-device). Se trata de la variante de propósito general afinada por instrucciones de la familia MNN-Pocket, construida sobre una arquitectura tipo Qwen3 con 28 capas, tamaño oculto 896, atención GQA con 14 cabezas de consulta y 2 cabezas KV (head_dim 64), y FFN de 2560 con activación SiLU.
 
-El modelo emplea una arquitectura transformer de tipo Qwen3 con 28 capas, hidden size de 896, atencion GQA (14 cabezas de consulta y 2 de clave/valor) y FFN con 2560 unidades intermedias. Soporta hasta 32K tokens de contexto en despliegue (40.960 posiciones en configuracion) y se distribuye con pesos en bfloat16, ademas de variantes INT4 W4A16 entrenadas con QAT que ocupan solo 173 MB. Su relevancia actual radica en que demuestra que un modelo sub-millar puede alcanzar un rendimiento equilibrado en 11 benchmarks zh/en, superando a algunas lineas base de ~500M, y mantener velocidades de decodificacion superiores a 200 tok/s en hardware de consumo como el iPad Pro M5.
+El modelo resuelve el problema de ejecutar asistentes conversacionales y extracción de datos en hardware de borde con recursos muy limitados: su build INT4 (W4A16) cuantizado con QAT ocupa solo 173 MB y alcanza hasta 466 tokens/s en decodificación sobre un iPad Pro M5 con Metal, por encima del objetivo de 200 tok/s para tiempo real. Soporta hasta 32K tokens de contexto en despliegue (40.960 posiciones en la arquitectura) y un vocabulario de 65.536 entradas con embeddings atados.
 
-La familia incluye variantes base, SFT, GGUF para llama.cpp y un modelo de decision no autorregresivo (Dec) con adaptador LoRA y cabeza pointer. La licencia Apache 2.0 facilita su adopcion comercial y su integracion en pipelines de agentes ligeros, extraccion de datos y asistentes embebidos.
+Es relevante ahora porque demuestra que un modelo bilingüe (chino e inglés) de menos de 500M de parámetros puede superar en promedio a varios baseline de ~500M en 11 benchmarks zh/en (media de 50,00), manteniendo un footprint apto para móviles, tabletas y dispositivos integrados. La licencia Apache 2.0 y la disponibilidad de pesos en safetensors, GGUF y MNN facilitan su integración en productos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3), GQA, embeddings atados |
-| Parametros totales | 361.551.232 (~300M nominales) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 40.960 posiciones en configuracion; 32K soportados en despliegue |
-| Tipos de cuantizacion | BF16 nativo; INT4 W4A16 (QAT, block 64) para MNN; GGUF F16, Q8_0 y Q4_1 |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Arquitectura | Transformer tipo Qwen3, GQA (14 cabezas de consulta, 2 KV), FFN SiLU, embeddings atados |
+| Parametros totales | 361.551.232 (≈300M según model card) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 40.960 posiciones en arquitectura; 32K soportados en despliegue |
+| Tipos de cuantizacion | BF16 nativo; INT4 W4A16 (bloque 64, QAT) en build MNN; GGUF F16, Q8_0 y Q4_1 |
+| Idiomas soportados | Chino (zh), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16), MNN (INT4 W4A16), GGUF |
+| Formato de pesos | safetensors (Transformers), GGUF (llama.cpp), MNN (runtime on-device) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer decoder-only con 28 capas, hidden size de 896, 14 cabezas de atencion con GQA (2 cabezas KV, head_dim 64) y FFN con 2560 unidades intermedias y activacion SiLU. El vocabulario es de 65.536 tokens con embeddings de entrada y salida atados, lo que reduce el numero de parametros. La precision nativa es bfloat16 y existe una variante INT4 W4A16 (block 64) obtenida mediante Quantization-Aware Training (QAT), optimizada para el runtime MNN.
+El modelo sigue una arquitectura transformer decoder-only de 28 capas con tamaño oculto 896, 14 cabezas de atención y GQA con solo 2 cabezas KV (head_dim 64), lo que reduce drásticamente el coste de caché KV en inferencia. La FFN intermedia es de 2560 con activación SiLU, el vocabulario es de 65.536 tokens y los embeddings de entrada y salida están atados. La precisión nativa es bfloat16 y existe una variante INT4 W4A16 con cuantización consciente del entrenamiento (QAT) y bloques de 64, empaquetada para el runtime MNN.
 
-El modelo parte de una base preentrenada (MNN-Pocket-0.3B-Base) y se afina con Supervised Fine-Tuning (SFT) para obtener la version instruccional. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. La innovacion principal es la co-disenacion con el stack MNN: el build INT4 QAT ocupa 173 MB y alcanza hasta 466 tok/s de decodificacion en iPad Pro M5 (Metal), por encima del objetivo de 200 tok/s para tiempo real. Tambien se publica un modelo de decision no autorregresivo (Dec) con adaptador LoRA y cabeza pointer que responde en un unico forward pass.
+El proceso de entrenamiento parte de un modelo base preentrenado (MNN-Pocket-0.3B-Base), seguido de una etapa de SFT (MNN-Pocket-0.3B-SFT, publicada como checkpoint intermedio para investigación y ablación) y una etapa final de ajuste por instrucciones que da lugar al modelo aquí descrito. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO; esa información no está disponible en la documentación proporcionada. Como innovación destacable, la familia incluye una variante no autorregresiva (MNN-Pocket-0.3B-Dec) con adaptador LoRA y cabeza pointer que responde en un único forward pass, y el diseño está co-optimizado con el runtime MNN para decodificación de baja latencia en Metal y otras plataformas de borde.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles y chino.
-- Instrucciones generales y tareas de extraccion de datos estructurados.
-- Razonamiento ligero y respuesta a preguntas de dominio general.
-- Soporte de plantilla de chat estilo ChatML con tokens de control im_start/im_end.
-- Capacidad bilingue equilibrada, con mejor media (50,00) en 11 benchmarks zh/en entre modelos de ~300M.
-- Inferencia en dispositivo mediante MNN, Transformers y llama.cpp (GGUF).
-- Variante Dec para decision no autorregresiva en un solo paso.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision ni audio en la informacion disponible.
+- Generación de texto conversacional multi-turno con formato ChatML (tokens im_start/im_end) y plantilla disponible en `chat_template.jinja`.
+- Razonamiento ligero y respuesta a instrucciones en chino e inglés.
+- Extracción de datos estructurados y tareas de clasificación o etiquetado de texto.
+- Soporte de pipelines agénticos ligeros (la model card menciona "lightweight agentic pipelines").
+- Capacidad bilingüe equilibrada: mejor media (50,00) en 11 benchmarks zh/en entre modelos de ~300M.
+- Inferencia on-device de alta velocidad: hasta 466 tok/s en decodificación sobre iPad Pro M5 con Metal.
+- Contexto largo de hasta 32K tokens en despliegue.
+- No se documenta soporte explícito de tool calling/function calling, visión, audio ni modo de razonamiento extendido (thinking mode); no disponible.
 
 ## Casos de uso
 
-- Asistentes embebidos en moviles: el build INT4 de 173 MB cabe en memoria de un smartphone y decodifica a mas de 200 tok/s, permitiendo respuestas conversacionales en tiempo real sin conexion.
-- Extraccion de datos en el dispositivo: con 32K de contexto puede procesar documentos o formularios largos y devolver campos estructurados localmente, evitando enviar datos sensibles a la nube.
-- Traduccion y atencion al cliente bilingue en/cn: su entrenamiento equilibrado en ambos idiomas lo hace adecuado para chats de soporte multi-turno en mercados chinos e internacionales.
-- Pipelines de agentes ligeros: puede actuar como clasificador o enrutador de intenciones en un sistema multi-agente, donde la latencia baja y el tamano reducido importan mas que el razonamiento profundo.
-- Procesamiento por lotes en CPU: la variante GGUF Q4_1 permite ejecutar resumenes o etiquetado de texto en servidores sin GPU mediante llama.cpp.
-- Prototipado e investigacion: la variante Base y el checkpoint SFT permiten experimentar con fine-tuning y ablaciones en hardware de consumo.
-- Decodificacion especulativa o de decision: la variante Dec responde en un unico forward pass, util para tareas de seleccion rapida entre opciones.
+- Asistentes on-device en móviles y tabletas: el build INT4 de 173 MB y los 466 tok/s permiten conversaciones fluidas en tiempo real sin conexión, con contexto de hasta 32K tokens para mantener historial de sesión.
+- Extracción de datos en el dispositivo: convertir texto libre (correos, notas, formularios) en campos estructurados localmente, evitando enviar datos sensibles a la nube y aprovechando el bajo coste de memoria.
+- Autocompletado y corrección de texto en teclados inteligentes: la latencia inferior a 5 ms por token en hardware de gama alta permite sugerencias predictivas en escritura bilingüe zh/en.
+- Pipelines agénticos ligeros en el borde: orquestación de pasos simples (resumir, clasificar, decidir siguiente acción) en dispositivos con recursos limitados, donde modelos mayores no caben.
+- Atención al cliente embebida en aplicaciones: respuestas multi-turno con contexto largo para FAQ y enrutamiento básico, ejecutándose localmente para reducir costes de API y latencia de red.
+- Procesamiento por lotes en CPU/GPU de gama baja: con GGUF Q4_1 o Q8_0 en llama.cpp puede desplegarse en servidores modestos para tareas de etiquetado o generación masiva de texto corto.
+- Prototipado e investigación de modelos pequeños: la publicación del base, SFT y variante Dec facilita experimentos de ablación y ajuste fino con recursos mínimos.
 
 ## Benchmarks y rendimiento
 
-La model card indica que MNN-Pocket-0.3B obtiene la mejor media (50,00) en 11 benchmarks zh/en entre modelos de ~300M, superando a varias lineas base de ~500M. Sin embargo, no se proporcionan los resultados desglosados por benchmark (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+La model card indica que MNN-Pocket-0.3B obtiene la mejor media (50,00) en 11 benchmarks zh/en entre modelos de ~300M, superando varios baseline de ~500M, pero no se incluye la tabla desglosada por benchmark (MMLU, HumanEval, GSM8K, etc.) en la información proporcionada.
 
-| Metrica | Valor |
-|---|---|
-| Media en 11 benchmarks zh/en | 50,00 |
-| Benchmarks individuales | No disponibles |
-| Decodificacion en iPad Pro M5 (Metal) | Hasta 466 tok/s |
-| Objetivo de tiempo real | >200 tok/s |
+| Benchmark | MNN-Pocket-0.3B | Baseline ~500M |
+|---|---|---|
+| Media en 11 benchmarks zh/en | 50,00 | inferior según model card (sin cifras) |
+| Decodificación en iPad Pro M5 (Metal) | hasta 466 tok/s | no disponible |
+
+No se han publicado resultados de benchmarks desglosados en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: ~0,7 GB para los pesos (361M parametros x 2 bytes), mas overhead de activaciones y cache KV.
-- VRAM estimada en INT4 W4A16: ~173 MB para los pesos, apto para dispositivos de borde.
-- GPU recomendadas: no se especifican modelos de datacenter; el enfoque es on-device (iPad Pro M5 con Metal, iPhone 18 Pro en la demo).
-- Cabe en GPU de consumo: si, en cualquier GPU con al menos 1-2 GB de memoria; tambien en CPU y moviles.
-- Opciones de despliegue: runtime MNN (llm_demo), Transformers, llama.cpp con GGUF.
-- Latencia y throughput: hasta 466 tok/s de decodificacion en iPad Pro M5; no se publican datos para otras plataformas.
+- VRAM estimada para inferencia: ~0,7 GB en BF16 (361M parámetros × 2 bytes), ~0,2 GB en INT4 W4A16 (build MNN de 173 MB).
+- GPU recomendadas: no requiere GPU dedicada; funciona en CPU y en GPUs integradas. En entornos de servidor puede ejecutarse en cualquier GPU con al menos 1 GB de memoria libre (RTX 4090, A100, H100 sobran para este tamaño).
+- Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en iGPUs y NPUs móviles; el build INT4 está pensado para tabletas y smartphones (demo en iPhone 18 Pro e iPad Pro M5).
+- Opciones de despliegue: runtime MNN (build oficial INT4), llama.cpp con los GGUF publicados, Transformers con safetensors en BF16, y exportación propia con `llmexport` a otras precisiones.
+- Latencia y throughput: hasta 466 tok/s de decodificación en iPad Pro M5 (Metal), por encima del objetivo de 200 tok/s en tiempo real. No se proporcionan cifras de throughput en otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| MNN-Pocket-0.3B | ~300M (361M reales) | 32K en despliegue | en, zh | Apache 2.0 | Optimizado para MNN on-device; INT4 QAT de 173 MB |
-| Qwen3-0.6B | ~600M | No disponible en la informacion | Multilingue | Apache 2.0 | Linea base de mayor tamano citada en la model card |
-| Modelos ~500M citados | ~500M | No disponible | No disponible | No disponible | Superados por MNN-Pocket en media de benchmarks segun el autor |
+| MNN-Pocket-0.3B | ~300M (361M reales) | 32K en despliegue | zh, en | Apache 2.0 | Media 50,00 en 11 benchmarks zh/en; 466 tok/s en iPad Pro M5 |
+| Baseline ~500M (sin especificar) | ~500M | no disponible | no disponible | no disponible | Superado por MNN-Pocket-0.3B en media según model card |
+| MNN-Pocket-0.3B-Base | ~300M | 32K | zh, en | Apache 2.0 | Modelo base para ajuste fino |
+| MNN-Pocket-0.3B-Dec | ~300M | no disponible | zh, en | Apache 2.0 | Variante no autorregresiva con LoRA y pointer head |
 
-No se dispone de datos detallados de benchmarks ni de especificaciones completas de los modelos comparables en la informacion proporcionada.
+No se dispone de datos detallados de modelos comparables de otros fabricantes en la información proporcionada; la comparativa se limita a las variantes de la propia familia y a los baseline genéricos de ~500M citados en la model card.
 
 ## Limitaciones y advertencias
 
-- No recomendado para cargas con razonamiento intensivo, como matematicas avanzadas o generacion de codigo de largo alcance, segun el propio autor.
-- Riesgo de alucinacion inherente a modelos sub-millar; no apto para tareas de alta precision sin verificacion.
-- Cobertura linguistica limitada a ingles y chino; el rendimiento en otros idiomas no esta garantizado.
-- Ventana de contexto efectiva de 32K en despliegue, inferior a la configuracion de 40.960 posiciones.
-- No se documentan sesgos especificos ni evaluaciones de seguridad en la informacion disponible.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del runtime MNN y de los pesos derivados.
-- El rendimiento optimo depende del stack MNN; en otros runtimes la latencia puede ser mayor.
+- No recomendado para cargas con razonamiento intensivo: matemáticas avanzadas o generación de código de horizonte largo quedan fuera de su alcance según el propio autor.
+- Riesgo de alucinación elevado por su tamaño reducido; conviene validar salidas en aplicaciones críticas.
+- Cobertura lingüística limitada a chino e inglés; el rendimiento en otros idiomas no está garantizado.
+- Contexto efectivo de 32K en despliegue, aunque la arquitectura soporte 40.960 posiciones; la calidad en contextos muy largos no está documentada.
+- No se documentan sesgos específicos ni evaluaciones de seguridad; se desconoce el filtrado del dataset de entrenamiento.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías; verificar cumplimiento en productos regulados.
+- El rendimiento óptimo depende del runtime MNN y del build INT4 QAT; otras rutas (Transformers en BF16, llama.cpp) pueden ofrecer menor throughput.
+- No se documenta soporte de tool calling ni de agentes complejos; los pipelines agénticos deben ser simples y supervisados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B
-- Coleccion MNN-Pocket-0.3B: https://huggingface.co/collections/taobao-mnn/mnn-pocket-03b
-- Repositorio MNN en GitHub: https://github.com/alibaba/MNN
-- Informe tecnico (PDF): https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B/resolve/main/MNN-Pocket-0.3B-Technical-Report.pdf
-- README en chino: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B/blob/main/README-cn.md
 - Modelo base: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-Base
 - Checkpoint SFT: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-SFT
-- Variante GGUF: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-GGUF
-- Variante MNN INT4: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-MNN
-- Variante Dec: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-Dec
-- Documentacion MNN-LLM: https://github.com/alibaba/MNN/blob/master/transformers/README.md
+- Build GGUF: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-GGUF
+- Build MNN INT4: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-MNN
+- Variante Dec (no autorregresiva): https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-Dec
+- Colección MNN-Pocket: https://huggingface.co/collections/taobao-mnn/mnn-pocket-03b
+- Repositorio MNN en GitHub: https://github.com/alibaba/MNN
+- Documentación MNN-LLM: https://github.com/alibaba/MNN/blob/master/transformers/README.md
+- Informe técnico (arXiv): https://arxiv.org/pdf/2611.12311
+- Demo en vídeo: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B/resolve/main/assets/demo.mp4

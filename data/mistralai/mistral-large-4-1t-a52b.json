@@ -106,7 +106,7 @@
   ],
   "likes": 1670,
   "downloads_30d": 18730,
-  "trending_score": 18,
+  "trending_score": 17,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1060619283859,
@@ -140,14 +140,14 @@
       "snippet": "Login or signup below Email Forgot password?"
     },
     {
+      "title": "Login - Mistral AI",
+      "url": "https://console.mistral.ai/home",
+      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
+    },
+    {
       "title": "Mistral AI — Wikipédia",
       "url": "https://fr.wikipedia.org/wiki/Mistral_AI",
       "snippet": "Mistral AI est une entreprise française fondée en avril 2023, spécialisée dans l' intelligence artificielle générative. Elle développe de …"
-    },
-    {
-      "title": "Mistral - Vibe Chat",
-      "url": "https://chat.mistral.ai/",
-      "snippet": "Vibe (formerly Le Chat) is your AI agent for work and code."
     }
   ]
 }

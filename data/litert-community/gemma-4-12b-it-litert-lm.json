@@ -37,16 +37,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/gemma-4-12B-it-litert-lm - Hugging Face",
-      "url": "https://huggingface.co/litert-community/gemma-4-12B-it-litert-lm",
-      "snippet": "vor 6 Tagen ... This model card provides the Gemma 4 12B model in LiteRT-LM format ready for deployment on macOS, Linux and Windows, as well as web in a more ..."
-    },
-    {
-      "title": "Building a Local AI Agent with Gemma 4 and LiteRT - C# Corner",
-      "url": "https://www.c-sharpcorner.com/article/building-a-local-ai-agent-with-gemma-4-and-litert",
-      "snippet": "25.09.2026 ... LiteRT-LM is part of Google's AI Edge stack for running generative AI models locally. It provides optimized execution for Gemma models and ..."
-    }
-  ]
+  "sources": []
 }

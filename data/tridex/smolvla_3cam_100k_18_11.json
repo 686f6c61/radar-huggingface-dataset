@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "Tridex/smolvla_3cam_100K_18_11",
+  "slug": "tridex-smolvla_3cam_100k_18_11",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/smolvla_3cam_100K_18_11",
+  "created_at": "2026-11-18T23:35:25.000Z",
+  "updated_at": "2026-11-18T23:35:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Tridex/79_fluo-gazeuse_vs_briquet_final",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729776,
+  "storage_human": "907 MB",
+  "context_length": null,
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tridex EPDM Membrane | VM Building Solutions Belgique",
+      "url": "https://www.vmbuildingsolutions.com/fr-be/epdm/tridex-epdm",
+      "snippet": "Le Tridex-EPDM est une étanchéité de haute qualité et durable pour votre toit. Cette membrane élastique est légère et résistante …"
+    },
+    {
+      "title": "TRIDEX – Novovet",
+      "url": "https://www.laboratoiresnovovet.com/produit/tridex/",
+      "snippet": "Description Diurétique et anti-inflammatoire – 50 et 100ml Télécharger la fiche produit : TRIDEX"
+    },
+    {
+      "title": "Membrane EPDM Tridex | VM Building Solutions France",
+      "url": "https://www.vmbuildingsolutions.com/fr-fr/epdm/membrane-epdm-tridex",
+      "snippet": "Climat de montagne (alt. > 900 m), mise en oeuvre particulière (voir CCT Tridex), nous consulter. Pour une végétalisation extensive …"
+    },
+    {
+      "title": "RCP Tridex - medvet.ma",
+      "url": "https://medvet.ma/medicaments/rcps/996",
+      "snippet": "TRIDEX Composition: Trichlormethiazide ........................................................10,00 mg Dexamethasone sodium …"
+    },
+    {
+      "title": "Membrane Epdm Tridex - materiaux-naturels.fr",
+      "url": "https://www.materiaux-naturels.fr/produit/1925-membrane-epdm-tridex",
+      "snippet": "Le rouleau de caoutchouc epdm Tridex est destiné à l'étanchéité à l'eau pour les toitures, les balcons, les gouttières ou les …"
+    }
+  ]
+}

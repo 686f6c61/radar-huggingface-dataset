@@ -2,111 +2,104 @@
 
 ## Resumen
 
-kpfcnn-base.s3dis-area5.hugues-thomas es un modelo de segmentacion semantica de nubes de puntos 3D publicado por la organizacion torch-pointcloud. Implementa una KPConv (Kernel Point Convolution) deformable dentro de una red totalmente convolucional (KP-FCNN) y resuelve la asignacion de una clase semantica a cada punto individual de una escena, no la generacion de texto: no es un modelo de lenguaje y no procesa tokens ni secuencias de texto.
+`kpfcnn-base.s3dis-area5.hugues-thomas` es un modelo de segmentación semántica de nubes de puntos 3D basado en KPConv (Kernel Point Convolution), la arquitectura de convolución deformable sobre puntos presentada por Hugues Thomas et al. en ICCV 2019. El modelo ha sido convertido y empaquetado por el proyecto `torch-pointcloud` (Arthur Dujardin) a partir de la implementación de referencia `HuguesTHOMAS/KPConv-PyTorch`, y se distribuye con pesos en formato safetensors y licencia MIT.
 
-El modelo se distribuye como un checkpoint de 24.419.651 parametros (24,4 M) convertido desde la implementacion de referencia HuguesTHOMAS/KPConv-PyTorch, con licencia MIT. Trabaja sobre 5 canales de entrada (coordenadas y atributos por punto) y produce 13 clases semanticas, con una capa de caracteristicas de 128 dimensiones. Esta entrenado especificamente sobre el Area 5 del dataset S3DIS (semantic parsing de interiores a gran escala).
+No es un modelo de lenguaje: es un modelo de visión 3D que asigna una etiqueta semántica a cada punto de una escena, con 13 clases de interior (suelo, pared, silla, mesa, etc.). Con 24,4 millones de parámetros, 5 canales de entrada (coordenadas XYZ más color RGB) y 128 características internas, está entrenado sobre el dataset S3DIS con validación en el Area 5, el protocolo estándar de evaluación de segmentación semántica de interiores.
 
-Su relevancia practica es doble: por un lado reproduce una referencia consolidada de la literatura de vision 3D (ICCV 2019) dentro de una libreria moderna de PyTorch (torch-pointcloud), con API de segmentacion y de extraccion de caracteristicas; por otro, es un punto de partida para transfer learning en segmentacion de interiores. El autor declara 66,6 de mIoU y 89,63 de OA en S3DIS Area 5, aunque las metricas figuran como no verificadas y el repositorio no tiene descargas ni valoraciones en el momento de la consulta.
+Su relevancia práctica está en que ofrece un checkpoint listo para usar vía `pip install torch-pointcloud`, sin necesidad de reproducir el pipeline de entrenamiento original, y con una API homogénea para inferencia y extracción de características. Es útil como línea base reproducible para tareas de comprensión de escenas interiores y como extractor de descriptores por punto para modelos posteriores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | KPConv deformable (kernel point convolution) en red totalmente convolucional KP-FCNN |
+| Arquitectura | KPConv / KP-FCNN (Kernel Point Convolution, convolución deformable sobre nubes de puntos) |
 | Parametros totales | 24.419.651 (24,4 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica; la entrada es una nube de puntos de cardinalidad variable (el ejemplo de la model card usa 8192 puntos) |
-| Tipos de cuantizacion | no disponible (solo se distribuyen pesos en safetensors; no se documentan versiones cuantizadas) |
-| Idiomas soportados | no aplica (modelo de vision 3D; no procesa texto) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de nubes de puntos; en el ejemplo de la model card se usan 8192 puntos por muestra) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, presumiblemente FP32; no se documentan variantes cuantizadas) |
+| Idiomas soportados | no aplica (modelo de visión 3D, sin capacidades lingüísticas) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Canales de entrada | 5 |
-| Clases de salida | 13 |
+| Canales de entrada | 5 (XYZ + RGB) |
+| Clases de salida | 13 (S3DIS) |
 | Dimension de caracteristicas | 128 |
-| Dataset de entrenamiento | S3DIS (Area 5) |
+| Dataset de entrenamiento/evaluacion | S3DIS, validación en Area 5 |
 | Libreria | torch-pointcloud |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion | 2026-08-28 |
-| Ultima actualizacion | 2026-09-23 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una KPConv deformable: en lugar de convolucionar sobre una rejilla regular, define kernels compuestos por un conjunto de puntos de kernel en el espacio 3D y agrega las contribuciones de los vecinos ponderadas por la distancia a cada punto de kernel. En la variante deformable, cada punto de kernel aprende un desplazamiento, lo que permite adaptar la geometria del kernel a la forma local de la superficie. El modelo sigue el esquema KP-FCNN de la publicacion original, con una torre de codificacion que submuestrea la nube mediante grid subsampling y una torre de decodificacion con conexiones de salto que recupera la resolucion por punto. La model card indica 5 canales de entrada, 24,4 M de parametros y 128 caracteristicas internas. La salida es un logit por punto para cada una de las 13 clases.
+KPConv sustituye las convoluciones sobre rejilla por convoluciones definidas directamente en el espacio euclídeo de la nube de puntos: un conjunto de "kernel points" con pesos aprendidos se dispersa alrededor de cada punto y la respuesta se agrega ponderando por la distancia a dichos kernel points. La variante deformable aprende además desplazamientos por kernel point, lo que permite adaptar la geometría del filtro a la densidad y forma local de la superficie. El modelo empaquetado es un KP-FCNN (fully convolutional network sobre KPConv) con 128 características por capa y una cabeza de clasificación por punto sobre 13 clases.
 
-Los pesos se han convertido desde el repositorio HuguesTHOMAS/KPConv-PyTorch (tambien MIT) y se cargan a traves de la libreria torch-pointcloud. El modelo esta entrenado sobre el Area 5 de S3DIS, que se usa habitualmente como particion de test del dataset, por lo que el checkpoint esta especializado en escenas de interior de ese dominio. La informacion disponible no detalla el numero de tokens de entrenamiento (no aplica), la composicion exacta del dataset, el numero de epocas ni si hubo etapas de refinamiento posteriores; la model card solo referencia el articulo de KPConv (ICCV 2019) y el articulo de S3DIS (CVPR 2016). No se documentan tecnicas de decodificacion especulativa, atencion lineal ni mecanismos equivalentes, que no tienen sentido en este tipo de arquitectura.
+El checkpoint corresponde al entrenamiento estándar sobre S3DIS con partición por áreas y evaluación en el Area 5, con entrada de 5 canales (posición y color). La model card no documenta el número exacto de tokens/puntos vistos, la composición detallada del dataset, ni si hubo aumentos de datos o estrategias de regularización específicas más allá de lo descrito en el paper original. Tampoco se indica ningún proceso de ajuste por preferencias (RLHF/DPO), algo que no aplica a esta familia de modelos. La conversión desde la implementación de referencia a `torch-pointcloud` es el principal trabajo de ingeniería asociado a esta publicación.
 
 ## Capacidades
 
-- Segmentacion semantica por punto: asigna una de 13 clases a cada punto de una nube 3D.
-- Procesamiento de nubes de puntos de cardinalidad variable, con atributos por punto (5 canales de entrada).
-- Extraccion de caracteristicas: el metodo forward_features y la llamada con reset_classifier(num_classes=0) devuelven un vector de 128 dimensiones por punto, reutilizable como embedding para clasificacion, agrupamiento o busqueda.
-- Uso como backbone para transfer learning: la cabeza de clasificacion se puede sustituir por una con otro numero de clases.
-- Inferencia en PyTorch con procesamiento por lotes mediante la funcion collate de la libreria.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, generacion de texto, codigo, matematicas, vision 2D, audio ni modo de pensamiento. No tiene capacidades multilingues porque no procesa lenguaje.
+- Segmentación semántica por punto en escenas interiores: asigna una de 13 clases S3DIS a cada punto de la nube.
+- Consumo de nubes de puntos con atributos de color (5 canales de entrada: XYZ + RGB).
+- Extracción de características por punto mediante `forward_features`, devolviendo descriptores de dimensión 128.
+- Posibilidad de reutilizar el backbone como extractor congelado (`reset_classifier(num_classes=0)`) para tareas posteriores.
+- Procesamiento por lotes con gestión de índices de batch (`data["batch"]`), lo que permite agrupar varias nubes en una sola pasada.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
+- No tiene capacidades multilingües, de audio ni de visión 2D.
+- No dispone de modo "thinking" ni de decodificación especulativa.
 
 ## Casos de uso
 
-- Reconstruccion de interiores y gemelos digitales: segmentar escaneos de edificios en clases semanticas (suelo, pared, techo, mobiliario) para generar modelos 3D etiquetados a partir de nubes de puntos de escaneres terrestres o fotogrametria.
-- Preetiquetado en anotacion de datos: usar el modelo como anotador automatico de primer paso y reducir el tiempo de etiquetado manual por punto antes de una revision humana.
-- Modelado BIM y gestion de activos: clasificar elementos de una planta de oficina escaneada para inventariar mobiliario y elementos estructurales en herramientas de facility management.
-- Robotica de interior y navegacion: dotar a un robot movil de una capa de comprension semantica del entorno a partir de su LiDAR o camara de profundidad, distinguiendo superficies transitables de obstaculos y mobiliario.
-- Realidad aumentada y virtual: anclar contenido digital sobre superficies identificadas semanticamente (mesas, paredes, suelos) en aplicaciones de interior.
-- Asistencia a la accesibilidad y analisis de espacios: extraer metricas de superficie y distribucion de elementos en estancias escaneadas para estudios de ocupacion o cumplimiento normativo.
-- Recuperacion de activos 3D por similitud: usar los embeddings de 128 dimensiones por punto o por region como firma para busquedas de similitud entre escaneos.
-- Base para investigacion en vision 3D: servir de referencia reproducible de KPConv dentro de una libreria de PyTorch y como punto de partida para comparaciones con PointNet++, RandLA-Net o Point Transformer en S3DIS.
+- Digitalización de interiores y BIM: el modelo etiqueta suelo, paredes, techos, mobiliario y elementos estructurales punto a punto, lo que permite generar inventarios semánticos de espacios escaneados con LiDAR o fotogrametría antes de alimentar un modelo BIM.
+- Robótica móvil en interiores: un robot puede usar las etiquetas por punto para distinguir superficies transitables (suelo) de obstáculos (mesas, sillas, paredes) y planificar navegación, aprovechando que el modelo procesa la nube completa sin rasterizar.
+- Realidad aumentada y gemelos digitales: segmentar la escena para anclar objetos virtuales sobre superficies identificadas (mesas, paredes) y para ocluir geometría real con etiquetas semánticas.
+- Análisis de accesibilidad y cumplimiento normativo: detectar y cuantificar elementos como puertas, ventanas, escaleras o sillas en un escaneo para auditorías de espacios, usando la salida por punto como base de conteo y medición.
+- Preprocesado para pipelines de reconstrucción: emplear los descriptores de 128 dimensiones de `forward_features` como entrada para clasificadores de escena, clustering de objetos o modelos de detección 3D posteriores.
+- Etiquetado asistido y control de calidad de datasets: usar las predicciones del modelo como preanotación en herramientas de anotación 3D, reduciendo el coste manual en la creación de nuevos conjuntos de datos de interiores.
+- Investigación en visión 3D: línea base reproducible para comparar variantes de convolución sobre puntos (PointNet++, RandLA-Net, MinkowskiNet) bajo el mismo protocolo S3DIS Area 5.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card, sobre S3DIS Area 5, tarea de segmentacion de nubes de puntos. Las metricas figuran como no verificadas.
+Resultados declarados por el autor en el model-index de la model card (no verificados de forma independiente, `verified: false`):
 
-| Dataset | Tarea | Metrica | Valor | Verificado |
-|---|---|---|---|---|
-| S3DIS (Area 5) | point-cloud-segmentation | mIoU | 66,6 | No |
-| S3DIS (Area 5) | point-cloud-segmentation | OA | 89,63 | No |
+| Dataset | Tarea | Metrica | Valor |
+|---|---|---|---|
+| S3DIS (Area 5) | Segmentacion semantica de nubes de puntos | mIoU | 66,6 |
+| S3DIS (Area 5) | Segmentacion semantica de nubes de puntos | OA (accuracy global) | 89,64 |
 
-La propia model card indica como referencia 66,4 de mIoU para la implementacion original, de modo que la conversion declara una diferencia de +0,2 puntos de mIoU respecto a esa referencia. No se han publicado en la informacion disponible resultados de latencia, throughput ni comparaciones con otros modelos en formato de tabla.
+No se han publicado en la informacion disponible resultados adicionales (por clase, por área, latencia o throughput) ni comparaciones numéricas con otros modelos en la model card.
 
 ## Requisitos de hardware
 
-- Memoria de pesos (calculo aritmetico a partir de los parametros, no dato publicado): en fp32, 24.419.651 x 4 bytes = 97,7 MB (93,1 MiB); en fp16 o bf16, 48,8 MB (46,6 MiB).
-- La VRAM total de inferencia no depende de los parametros, sino de las activaciones de la KPConv, que escalan con el numero de puntos por muestra, el radio de vecindad, la resolucion de la rejilla de submuestreo y el tamano del lote. No hay cifras publicadas para este checkpoint.
-- GPU recomendadas: cualquier GPU con soporte CUDA reciente es suficiente para los pesos; para lotes grandes de puntos o escenas densas conviene una GPU con 16 GB o mas (RTX 4090, A100 40 GB, H100). En GPUs de consumo con 6-8 GB (RTX 3060, RTX 4060) el modelo cabe en memoria de pesos, pero puede requerir reducir el numero de puntos por muestra o el lote.
-- CPU: es viable para inferencia puntual sobre nubes pequenas, con latencia mucho mayor; no hay datos de latencia publicados.
-- Opciones de despliegue: PyTorch mediante la libreria torch-pointcloud (pip install torch-pointcloud), que ofrece create_model, forward_features y reset_classifier. No se documentan exportaciones a ONNX, TensorRT, TorchScript ni integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 24,4 M de parámetros en FP32, los pesos ocupan aproximadamente 98 MB; el consumo real está dominado por las activaciones de la nube de puntos (en el ejemplo, 8192 puntos por muestra) y por el tamaño del batch.
+- GPU recomendadas: cualquier GPU con soporte CUDA y al menos unos pocos GB de VRAM es suficiente para inferencia en FP32; no se documentan requisitos mínimos oficiales.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas tipo RTX 3060/4060 en adelante para lotes moderados; no hay cifras oficiales de consumo por configuración.
+- Opciones de despliegue: la vía soportada es la librería `torch-pointcloud` (`pip install torch-pointcloud`) sobre PyTorch; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Categoria | Parametros | Contexto de entrada | Licencia | Disponibilidad | Rendimiento en S3DIS Area 5 |
+| Modelo | Parametros | Entrada | Dataset / protocolo | mIoU (S3DIS Area 5) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kpfcnn-base.s3dis-area5.hugues-thomas | KPConv deformable (segmentacion de nubes de puntos) | 24,4 M | nube de puntos de cardinalidad variable | MIT | Hugging Face, libreria torch-pointcloud | mIoU 66,6 / OA 89,63 (no verificado) |
-| KPConv-PyTorch (HuguesTHOMAS) | Implementacion de referencia de KPConv | no disponible en la informacion proporcionada | no disponible | MIT | GitHub | 66,4 de mIoU citado como referencia en la model card |
-| PointNet++ | Segmentacion de nubes de puntos | no disponible | no disponible | no disponible | no disponible | no disponible |
-| RandLA-Net | Segmentacion de nubes de puntos a gran escala | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Point Transformer | Transformer para nubes de puntos | no disponible | no disponible | no disponible | no disponible | no disponible |
+| kpfcnn-base.s3dis-area5 (este modelo) | 24,4 M | XYZ + RGB (5 canales) | S3DIS Area 5 | 66,6 (declarado, no verificado) | MIT | Hugging Face, via torch-pointcloud |
+| KPConv original (HuguesTHOMAS/KPConv-PyTorch) | no disponible en la informacion | XYZ + RGB | S3DIS Area 5 | no disponible en la informacion | MIT | GitHub |
+| PointNet++ | no disponible en la informacion | XYZ (+ normales/color) | S3DIS Area 5 | no disponible en la informacion | no disponible | Implementaciones multiples |
+| RandLA-Net | no disponible en la informacion | XYZ + RGB | S3DIS Area 5 | no disponible en la informacion | no disponible | GitHub |
 
-Solo se dispone de datos concretos para este checkpoint y para la referencia de la que se convirtio. Para el resto de alternativas no hay informacion en los materiales proporcionados, por lo que no se ofrece comparacion cuantitativa.
+No se dispone en la informacion proporcionada de cifras de parámetros, contexto ni rendimiento de los modelos alternativos, por lo que la comparación cuantitativa queda limitada al dato declarado de este checkpoint.
 
 ## Limitaciones y advertencias
 
-- Metricas no verificadas: mIoU 66,6 y OA 89,63 estan declaradas por el autor con verified: false; no hay evaluacion independiente ni reproduccion publica.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin issues ni validacion de la comunidad documentada.
-- Especializacion de dominio: el checkpoint esta entrenado sobre el Area 5 de S3DIS, un conjunto de interiores de oficina capturados con escaneres 3D. El rendimiento fuera de ese dominio (LiDAR exterior, vehiculos, interiores domesticos o sensores distintos) no esta documentado y presumiblemente se degrada.
-- Salida fija de 13 clases: el modelo solo predice las clases definidas por S3DIS; cualquier taxonomia distinta requiere reentrenamiento o sustitucion de la cabeza de clasificacion.
-- Sin capacidades de lenguaje: no genera texto, no responde a instrucciones ni admite tool calling; no debe evaluarse con criterios de modelos generativos.
-- Sensibilidad al preprocesado: KPConv depende del submuestreo por rejilla, de la normalizacion de la nube y de los radios de vecindad; el uso de transformaciones distintas a las de la libreria puede alterar los resultados.
-- Coste de memoria variable: el consumo de VRAM crece con el numero de puntos y con la densidad de la nube, con riesgo de OOM en escenas densas o lotes grandes.
-- Riesgo de error por punto: en zonas ambiguas (bordes, objetos finos, mobiliario poco representado) la segmentacion puede confundir clases; conviene una revision humana en aplicaciones criticas.
-- Sesgos: no se documenta ningun analisis de sesgo por tipo de escena, sensor, iluminacion o geografia; el dataset de origen condiciona la distribucion de clases.
-- Licencia: MIT, permite uso comercial, modificacion y redistribucion, manteniendo el aviso de copyright y la atribucion a los autores originales de KPConv-PyTorch y al dataset S3DIS.
-- Sin cuantizaciones documentadas: no hay versiones GGUF, int8 ni int4 publicadas para este checkpoint.
-- Fechas de publicacion y actualizacion (2026) posteriores a este analisis: conviene comprobar si el repositorio ha cambiado desde entonces.
+- Dominio restringido: entrenado exclusivamente en S3DIS (escenas de interior de oficinas y aulas); el rendimiento fuera de ese dominio (exteriores, industria, escaneos con sensores distintos) no está caracterizado.
+- Dependencia del color: la entrada incluye RGB; sin color fiable (por ejemplo, LiDAR sin cámara) el modelo puede degradarse, ya que no se documenta una variante solo-geométrica.
+- Métricas no verificadas: los valores de mIoU y OA provienen del model-index del autor con `verified: false`; no hay validación independiente publicada en la información disponible.
+- Sin datos de sesgo ni de calibración: no se documentan análisis de sesgo por clase, por densidad de nube ni por tipo de sensor.
+- Riesgo de error en clases minoritarias: la mIoU agregada no informa del comportamiento por clase; clases poco representadas pueden tener IoU muy bajo.
+- Restricciones de licencia: licencia MIT, que permite uso comercial y modificación con atribución; deben respetarse además las condiciones de los datos S3DIS y citar los trabajos originales (KPConv y S3DIS) según indica la model card.
+- Sin soporte documentado de cuantización ni de exportación a formatos de inferencia optimizados (ONNX, TensorRT), lo que limita despliegues de baja latencia sin trabajo adicional.
+- Ausencia de garantías de producción: no se publican latencias, curvas de rendimiento ni pruebas de robustez frente a ruido, oclusiones o densidades variables.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/kpfcnn-base.s3dis-area5.hugues-thomas
-- Paper de KPConv (ICCV 2019): https://arxiv.org/abs/1904.08889
-- Repositorio de referencia KPConv-PyTorch: https://github.com/HuguesTHOMAS/KPConv-PyTorch
-- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- DOI de la libreria (Zenodo): https://doi.org/10.5281/zenodo.22159632
-- Dataset S3DIS: referenciado en la model card como Armeni et al., CVPR 2016; no se proporciona enlace directo en la informacion disponible.
+- Paper KPConv (arXiv): https://arxiv.org/abs/1904.08889
+- Implementación de referencia KPConv: https://github.com/HuguesTHOMAS/KPConv-PyTorch
+- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- DOI de PyTorch PointCloud: https://doi.org/10.5281/zenodo.22159632
+- Dataset S3DIS (referencia en la model card): Armeni et al., "3D Semantic Parsing of Large-Scale Indoor Spaces", CVPR 2016

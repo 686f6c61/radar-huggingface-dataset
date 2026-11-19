@@ -2,113 +2,106 @@
 
 ## Resumen
 
-Dory1.0-4B es un modelo de lenguaje de 3.975 millones de parámetros (aproximadamente 4B) desarrollado por NVIDIA Labs dentro de la familia Nemotron. Su particularidad es que no es un transformer convencional, sino un modelo "looped" (recurrente en espacio latente) construido sobre una arquitectura normalized-GPT (nGPT) con capas de atención de ventana deslizante y atención completa intercaladas. En lugar de apilar más capas, aplica repetidamente un bloque compartido de 20 capas entre un bloque de entrada y otro de salida, de forma que un mismo checkpoint puede gastar más o menos cómputo por token según la necesidad de la tarea.
+NVIDIA-Nemotron-Labs-Dory1.0-4B es un modelo de lenguaje de aproximadamente 4.000 millones de parametros (3.975.229.440 exactos) desarrollado por NVIDIA dentro de su linea Nemotron Labs. Su rasgo diferencial es la arquitectura *looped* (latente-recurrente): en lugar de apilar capas distintas, divide la red en tres bloques (entrada, recurrente y salida) y aplica repetidamente el bloque recurrente compartido, de modo que un mismo checkpoint puede ejecutarse con distinto numero de bucles para intercambiar computo de inferencia por precision sin reentrenar ni cambiar de modelo.
 
-La ficha que nos ocupa, `somenetworktrouble/NVIDIA-Nemotron-Labs-Dory1.0-4B-heretic-GGUF`, es una republicación comunitaria en formato GGUF (Q5_K_M) del modelo original de NVIDIA. El sufijo "heretic" suele asociarse en el ecosistema a variantes con el alineamiento de seguridad modificado, pero el autor de esta republicación no documenta ninguna intervención, por lo que el alcance real de los cambios no está disponible. El modelo original se distribuye en BF16, MXFP8, NVFP4 y GGUF, con licencia OpenMDW 1.1 y soporte únicamente de inglés.
+El modelo parte de un backbone normalized-GPT (nGPT) con atencion hibrida que intercala capas de ventana deslizante (SWA) y capas de atencion completa, soporta contextos de hasta 256K tokens y se preentreno nativamente en NVFP4 antes de continuar en BF16. Esta pensado para razonamiento de proposito general en una huella pequena, con enfasis en eficiencia de tokens: el computo adicional por token se dedica a "pensar" en espacio latente en lugar de generar salidas mas largas.
 
-La relevancia de la arquitectura está en su "cómputo de inferencia elástico": variando el número de bucles (1, 2 o 4) en el mismo checkpoint se obtienen curvas de precisión distintas sin reentrenar ni cambiar de modelo, y con caché KV del último bucle el coste de memoria no crece con el número de loops. Con hasta 256K tokens de contexto y unas 4B de parámetros, es un candidato interesante para despliegues donde el presupuesto de VRAM es limitado pero se requiere razonamiento sobre contextos largos.
+La ficha corresponde a la variante GGUF publicada por el usuario `somenetworktrouble`, que ha pasado el modelo base por la herramienta `heretic-gguf` para producir una version "abliterada" (con reduccion de rechazos) en cuantizacion Q5_K_M. Es relevante ahora porque combina tres tendencias recientes: inferencia elastica en computo, preentrenamiento en formatos de 4 bits y publicacion de pesos abiertos bajo licencia OpenMDW-1.1.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Looped (latent-recurrent) normalized-GPT (nGPT) con capas intercaladas de sliding-window attention (SWA) y atención completa; bloques de entrada (8 capas), recurrente compartido (20 capas) y salida (8 capas) |
-| Parámetros totales | 3.975.229.440 (≈4B) |
-| Parámetros activos | No aplica (no es MoE); el cómputo activo varía según el número de bucles del bloque recurrente |
-| Longitud de contexto | Hasta 256K tokens |
-| Tipos de cuantización | Esta republicación: GGUF Q5_K_M. Original: BF16, MXFP8, NVFP4 y Q5_K_M |
-| Idiomas soportados | Inglés |
-| Licencia | OpenMDW License Agreement, versión 1.1 (el modelo original se declara apto para uso comercial y no comercial) |
-| Formato de pesos | GGUF (este repositorio); safetensors en BF16 y formatos MXFP8/NVFP4 en el repositorio oficial |
+| Arquitectura | Looped (latent-recurrent) normalized-GPT con atencion hibrida intercalada (SWA + atencion completa); bloques de entrada (8 capas), recurrente (20 capas) y salida (8 capas) |
+| Parametros totales | 3.975.229.440 (~4B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 256K tokens |
+| Tipos de cuantizacion | Q5_K_M en esta variante GGUF; el modelo base ofrece BF16, MXFP8, NVFP4 y Q5_K_M |
+| Idiomas soportados | ingles |
+| Licencia | OpenMDW License Agreement, version 1.1 (`openmdw-1.1`) |
+| Formato de pesos | GGUF (variante heretic); safetensors en el modelo base |
+| Precision de referencia | Q5_K_M |
+| Fecha de publicacion | 16 de octubre de 2026 (modelo base) |
+| Fecha de corte de datos | preentrenamiento: septiembre de 2025; postentrenamiento: mayo de 2026 |
+| Uso comercial | permitido (licencia OpenMDW-1.1) |
 
 ## Arquitectura y entrenamiento
 
-Dory1.0-4B abandona el apilamiento convencional de capas y divide su pila en tres grupos: un bloque de entrada de 8 capas, un bloque recurrente compartido de 20 capas y un bloque de salida de 8 capas. El bloque recurrente se aplica varias veces entre la entrada y la salida, y la entrada se reinyecta en cada iteración, de modo que el modelo puede "pensar" en espacio latente en lugar de alargar la salida. El backbone es un normalized-GPT (nGPT) con atención híbrida: capas de sliding-window attention intercaladas con capas de atención completa. Según NVIDIA, el modelo fue preentrenado de forma nativa en NVFP4 (el formato de coma flotante de 4 bits de la compañía) y posteriormente continuó el entrenamiento en BF16.
+Dory1.0-4B emplea una arquitectura *looped* o latente-recurrente sobre un backbone normalized-GPT (nGPT). La pila de capas se divide en tres grupos: un bloque de entrada (I) de 8 capas, un bloque recurrente (R) compartido de 20 capas que se aplica varias veces entre la entrada y la salida, y un bloque de salida (O) de 8 capas. La entrada se reinyecta en cada bucle. Esta comparticion de parametros permite aumentar el computo por token sin incrementar el numero de pesos, y el checkpoint unico admite distintos presupuestos de inferencia (1, 2 o 4 bucles en los resultados publicados) sin reentrenamiento.
 
-En cuanto a datos, la model card referencia los conjuntos `nvidia/nemotron-pre-training-datasets` y `nvidia/nemotron-post-training-v3`, con fecha de corte de septiembre de 2025 para el preentrenamiento y mayo de 2026 para el postentrenamiento. No se especifica el número de tokens, la composición del dataset ni los detalles del proceso de alineamiento (RLHF/DPO) en la información disponible. La innovación destacable es la caché KV del último bucle ("last-loop KV caching"): un looped LM estándar guarda una caché por cada bucle, mientras que Dory mantiene una sola caché por capa de atención recurrente, de forma que el consumo de memoria no crece con el número de loops y equivale al de un modelo no looped equivalente.
+La atencion es hibrida: intercala capas de ventana deslizante (SWA) con capas de atencion completa, lo que reduce coste de memoria en contextos largos. Una innovacion destacable es el *last-loop KV caching*: aunque el bucle estandar almacena una cache KV por cada pasada, Dory mantiene una sola cache por capa de atencion recurrente, de modo que no anade sobrecoste de memoria frente a un modelo no bucleado. El modelo se preentreno nativamente en NVFP4 (formato de coma flotante de 4 bits de NVIDIA) y continuo el entrenamiento en BF16. Los datos de preentrenamiento proceden de `nvidia/nemotron-pre-training-datasets` (corte en septiembre de 2025) y el postentrenamiento de `nvidia/nemotron-post-training-v3` (corte en mayo de 2026). No se detalla en la informacion disponible el numero exacto de tokens ni la composicion del dataset, ni si se empleo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general en inglés, con presupuesto de cómputo ajustable por número de bucles (1, 2 o 4) en el mismo checkpoint.
-- Razonamiento en espacio latente: mayor cómputo por token en lugar de salidas más largas, lo que reduce el número de tokens generados necesarios para resolver una tarea.
-- Capacidades de código y trabajo agéntico: la model card reporta resultados en SciCode, SWE-bench Verified y Terminal-Bench 2.1.
-- Uso en escenarios de agentes con herramientas y ejecución en terminal, a tenor de las evaluaciones publicadas (Terminal-Bench 2.1, τ³-bench).
-- Contexto largo de hasta 256K tokens.
-- Cómputo de inferencia elástico: permite degradar o escalar precisión cambiando el número de bucles sin cambiar de modelo.
-- Capacidades multimodales: no disponibles. Soporte de audio o visión: no disponible.
-- Modo "thinking" explícito: no disponible como funcionalidad documentada; el razonamiento ocurre en espacio latente mediante los bucles.
-- Capacidades multilingües: limitadas al inglés según la model card.
+- Generacion de texto y razonamiento de proposito general en ingles.
+- Razonamiento con presupuesto de computo elastico: 1, 2 o 4 bucles del bloque recurrente permiten ajustar precision frente a coste de inferencia.
+- Eficiencia de tokens: el computo extra se invierte en razonamiento latente en lugar de cadenas de salida mas largas.
+- Capacidades de codigo y agenticas reflejadas en los benchmarks publicados (SciCode, SWE-bench Verified, Terminal-Bench 2.1).
+- Contexto largo de hasta 256K tokens, adecuado para documentos extensos y conversaciones multi-turno largas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: evaluado en benchmarks agenticos, aunque sin detalle de implementacion.
+- Capacidades multilingues limitadas al ingles.
+- Capacidades de vision o audio: no disponibles.
+- Variante "heretic": reduccion deliberada de comportamientos de rechazo mediante la herramienta `heretic-gguf`.
 
 ## Casos de uso
 
-- Razonamiento general en hardware de gama media: con Q5_K_M los pesos ocupan del orden de 2,8 GB, por lo que el modelo cabe en GPUs de 8-12 GB y permite desplegar un asistente de razonamiento en inglés en equipos de sobremesa o estaciones de trabajo sin GPU de datacenter.
-- Automatización de tareas de ingeniería de software: con 4 bucles el modelo reporta 61,8 en SWE-bench Verified, lo que lo hace utilizable como agente de resolución de issues y generación de parches dentro de un pipeline de CI/CD, revisando el diff antes de proponer el commit.
-- Agentes de terminal y operaciones: los 22,2 puntos en Terminal-Bench 2.1 con 4 bucles permiten usarlo en tareas de shell acotadas (inspección de logs, ejecución de comandos de diagnóstico) con validación humana de las acciones.
-- Procesamiento de documentación extensa: la ventana de 256K tokens permite resumir o extraer información de contratos, informes o bases de código completas en una sola pasada, sin troceado ni recuperación previa.
-- Extracción y clasificación por lotes en pipelines offline: al ser un modelo pequeño y cuantizado, se puede ejecutar en paralelo sobre muchos documentos en inglés (etiquetado, normalización de entidades, generación de metadatos) con un coste por token bajo.
-- Despliegue en entornos air-gapped o con requisitos de soberanía del dato: al poder ejecutarse con llama.cpp u Ollama de forma local y con formato GGUF, encaja en instalaciones sin salida a internet.
-- Investigación sobre modelos looped y cómputo elástico: sirve como banco de pruebas para medir la relación entre número de bucles, precisión y latencia, y para estudiar la caché KV del último bucle en comparación con arquitecturas no recurrentes.
+- Razonamiento general en produccion con presupuesto variable: desplegar el mismo checkpoint con 1 bucle para tareas de baja latencia y con 4 bucles para tareas que requieran mayor precision, sin cambiar de modelo ni reentrenar.
+- Analisis de documentos largos: gracias a sus 256K tokens de contexto, puede procesar contratos, informes o bases de codigo extensas en una sola pasada, con las capas SWA reduciendo el coste de memoria.
+- Asistencia de codigo y tareas de ingenieria de software: sus resultados en SWE-bench Verified y SciCode lo hacen util para generacion y depuracion de codigo dentro de pipelines, siempre que se valide la salida.
+- Automatizacion de terminal y agentes de linea de comandos: los resultados en Terminal-Bench 2.1 indican uso en tareas de shell y flujos agenticos multi-paso.
+- Despliegue en hardware limitado: al ser un modelo de ~4B en Q5_K_M, cabe en GPUs de consumo y en entornos de borde, lo que facilita prototipado y servicios de bajo coste.
+- Investigacion sobre arquitecturas recurrentes y computo elastico: sirve como banco de pruebas para estudiar el equilibrio entre numero de bucles, precision y latencia.
+- Experimentacion con modelos sin rechazos: la variante heretic es util para estudiar comportamiento de rechazo y alineacion, con las cautelas eticas correspondientes.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por NVIDIA para el modelo original, no para esta republicación "heretic". La información recibida está truncada a partir de τ³-bench, por lo que las filas posteriores no están disponibles.
+Resultados publicados en la model card del modelo base (Dory1.0-4B), comparados con alternativas. La columna Dory1.0-4B varia segun el numero de bucles; la marca † indica puntuacion reportada por terceros.
 
-| Tarea | Dory1.0-4B (1 loop) | Dory1.0-4B (2 loops) | Dory1.0-4B (4 loops) | Qwen3.5-4B | Qwen3.5-9B | Gemma 4 26B A4B | Qwen3.6-35B-A3B |
+| Tarea | Dory 1 loop | Dory 2 loops | Dory 4 loops | Qwen3.5-4B | Qwen3.5-9B | Gemma 4 26B A4B | Qwen3.6-35B-A3B |
 |---|---|---|---|---|---|---|---|
 | SciCode | 27,3 | 34,94 | 35,11 | 25,82 | 28,21 | 40,32 | 37,24 |
 | SWE-bench Verified | 50,3 | 59,5 | 61,8 | 54,7 | 61,0 | 57,40 | 73,4† |
 | Terminal-Bench 2.1 | 12,5 | 18,1 | 22,2 | 15 | 24 | 35 | 43 |
-| τ³-bench (Banking) | 11,6 | 12,89 | 14,69 | 5,03 | 7,22 | no disponible | no disponible |
 
-† Puntuación reportada por el tercero, no medida en la misma evaluación.
-
-El resto de resultados (razonamiento general tipo MMLU, matemáticas tipo GSM8K, conocimiento multilingüe) no están disponibles en la información proporcionada.
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval o GSM8K para este modelo.
 
 ## Requisitos de hardware
 
-- Pesos en Q5_K_M: aproximadamente 2,8 GB (estimación a partir de 3.975 M de parámetros a ~5,5 bits por peso). El repositorio completo ocupa 10,8 GB, lo que sugiere que incluye más de un fichero GGUF o artefactos adicionales; el desglose no está disponible.
-- Pesos en BF16: aproximadamente 8 GB. En NVFP4: aproximadamente 2 GB.
-- VRAM total para inferencia: depende del tamaño de la caché KV, que no está disponible (depende del número de capas, cabezas y GQA, datos no publicados). Con 256K de contexto la caché puede ser el factor dominante; para uso con contextos de 8K-32K, una GPU de 8-12 GB debería ser suficiente con Q5_K_M.
-- GPU consumer compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090 24 GB, así como GPUs integradas o Apple Silicon con memoria unificada suficiente para el fichero Q5_K_M.
-- GPU de datacenter: A100, H100 y H200 para despliegues con contexto largo o muchas peticiones concurrentes; el modelo es lo bastante pequeño como para ejecutar varias instancias por GPU.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio para el GGUF; vLLM o TGI para el BF16 oficial, aunque el soporte de la arquitectura looped en estos motores no está confirmado en la información disponible.
-- Latencia y throughput: no disponibles. Cualitativamente, el coste por token escala con el número de bucles (1, 2 o 4), por lo que el modo de 4 bucles debe presupuestarse como varias pasadas del bloque recurrente por token generado.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, un modelo de ~4B en Q5_K_M ocupa aproximadamente 3 GB de pesos; el consumo real depende del contexto (hasta 256K tokens) y del numero de bucles.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, es plausible su ejecucion en GPUs de consumo, aunque no se confirma oficialmente.
+- Cabe en GPU de consumo: previsiblemente si, en cuantizacion Q5_K_M, aunque no se especifica en la documentacion.
+- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp y Ollama; la model card indica compatibilidad con `transformers` y `endpoints_compatible`. Para el modelo base en BF16/MXFP8/NVFP4 se esperaria soporte de stacks de NVIDIA, aunque no se detalla.
+- Latencia y throughput: no disponibles. El coste escala con el numero de bucles configurado (1, 2 o 4).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Resultado destacado |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Dory1.0-4B | ≈4B (20 capas recurrentes × N bucles) | 256K | OpenMDW 1.1 | SWE-bench Verified 61,8 (4 loops); SciCode 35,11 |
-| Qwen3.5-4B | ≈4B | No disponible | No disponible | SWE-bench Verified 54,7; Terminal-Bench 15 |
-| Qwen3.5-9B | ≈9B | No disponible | No disponible | SWE-bench Verified 61,0; Terminal-Bench 24 |
-| Gemma 4 26B A4B | 26B totales / 4B activos (MoE) | No disponible | No disponible | SWE-bench Verified 57,40; SciCode 40,32 |
-| Qwen3.6-35B-A3B | 35B totales / 3B activos (MoE) | No disponible | No disponible | SWE-bench Verified 73,4†; Terminal-Bench 43 |
-
-La comparación relevante es que Dory1.0-4B en modo de 4 bucles iguala o supera a Qwen3.5-9B en SWE-bench Verified y SciCode con menos de la mitad de parámetros almacenados, a costa de más cómputo por token. Frente a los MoE de mayor tamaño (Gemma 4 26B A4B, Qwen3.6-35B-A3B) queda por debajo en tareas de terminal y en SciCode, pero con una huella de memoria mucho menor.
+| Dory1.0-4B (este) | ~4B | 256K | OpenMDW-1.1 | Arquitectura looped, computo elastico, solo ingles |
+| Qwen3.5-4B | ~4B | no disponible | no disponible | Comparable en tamano; mejor en Terminal-Bench a 1 bucle de Dory |
+| Qwen3.5-9B | ~9B | no disponible | no disponible | Mayor tamano; supera a Dory 4 loops en SWE-bench y Terminal-Bench |
+| Gemma 4 26B A4B | 26B (MoE, ~4B activos) | no disponible | no disponible | Mayor capacidad en SciCode y Terminal-Bench |
+| Qwen3.6-35B-A3B | 35B (MoE, ~3B activos) | no disponible | no disponible | El mas fuerte de la comparativa en SWE-bench y Terminal-Bench |
 
 ## Limitaciones y advertencias
 
-- El sufijo "heretic" del repositorio sugiere una modificación del alineamiento o de las negativas de seguridad, pero no hay documentación del autor sobre qué se ha alterado, qué método se ha usado ni qué datos se han empleado. No debe asumirse paridad de comportamiento con el modelo original de NVIDIA.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha y está publicado por un tercero, no por NVIDIA: no hay validación comunitaria de la integridad de los pesos ni de la calidad de la cuantización.
-- Los benchmarks publicados corresponden al modelo original de NVIDIA, no a esta variante "heretic"; no hay garantía de que se mantengan.
-- Riesgo de alucinación: es un modelo de 4B parámetros; en tareas de recuperación factual y razonamiento de varios pasos la tasa de error será mayor que en modelos de mayor tamaño.
-- Idiomas: solo inglés. El rendimiento en castellano no está evaluado y previsiblemente será deficiente.
-- Contexto: aunque se anuncian 256K tokens, no se han publicado resultados de evaluaciones de contexto largo (tipo RULER o needle-in-a-haystack) en la información disponible.
-- Licencia: la OpenMDW 1.1 permite uso comercial según la model card, pero las obligaciones concretas de atribución y las condiciones para modelos derivados deben revisarse en el texto de la licencia antes de su uso en producción.
-- La cuantización Q5_K_M introduce una pérdida de precisión respecto a BF16 cuyo impacto real en tareas agénticas no está cuantificado.
-- Al tratarse de una arquitectura looped, el soporte en motores de inferencia es limitado: conviene verificar que la implementación concreta respeta el número de bucles y la caché KV del último bucle antes de asumir los resultados de la model card.
+- Solo soporta ingles; no se garantiza calidad en castellano ni en otros idiomas.
+- La variante heretic reduce los rechazos de forma deliberada, lo que puede aumentar el riesgo de generar contenido inapropiado o danino y complica el cumplimiento de politicas de seguridad en produccion.
+- Riesgo de alucinacion inherente a los modelos de ~4B; conviene validar salidas en tareas criticas.
+- El rendimiento depende fuertemente del numero de bucles configurado: con 1 bucle los resultados caen de forma notable frente a 2 o 4.
+- La licencia OpenMDW-1.1 permite uso comercial, pero debe revisarse el texto completo para obligaciones de atribucion y condiciones.
+- El contexto de 256K no implica calidad uniforme en toda la ventana; no hay datos publicados sobre degradacion con la longitud.
+- No se dispone de informacion sobre sesgos evaluados, datos de alineacion (RLHF/DPO) ni evaluaciones de seguridad.
+- La cuantizacion Q5_K_M introduce perdida de precision respecto al modelo base en BF16.
 
 ## Enlaces
 
-- Repositorio de esta variante en Hugging Face: https://huggingface.co/somenetworktrouble/NVIDIA-Nemotron-Labs-Dory1.0-4B-heretic-GGUF
-- Modelo GGUF oficial de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF
-- Árbol de ficheros del GGUF oficial: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/tree/main
-- Discusión del repositorio oficial: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/discussions/1
-- Modelo en BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
-- Colección Nemotron Labs Dory: https://huggingface.co/collections/nvidia/nemotron-labs-dory
-- Página para desarrolladores de Nemotron: https://developer.nvidia.com/nemotron
-- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Texto de la licencia OpenMDW 1.1: https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
+- Modelo en Hugging Face: https://huggingface.co/somenetworktrouble/NVIDIA-Nemotron-Labs-Dory1.0-4B-heretic-GGUF
+- Pagina de desarrollador de NVIDIA Nemotron: https://developer.nvidia.com/nemotron
+- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- Texto de la licencia OpenMDW-1.1: https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
+- Herramienta heretic-gguf: https://github.com/MoriNoNushi/heretic-gguf
+- Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
 - Dataset de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
 - Dataset de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
-- Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk

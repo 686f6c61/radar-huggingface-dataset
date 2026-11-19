@@ -1,119 +1,128 @@
 # saidutta69/LFM2.5-VL-3B-heretic
 
 ## Resumen
+LFM2.5-VL-3B-heretic es una variante "descensurada" (abliterada) del modelo vision-lenguaje LiquidAI/LFM2.5-VL-3B, publicada por el usuario saidutta69 en Hugging Face. Emplea la tecnica de ablacion direccional implementada en Heretic v1.4.0 para suprimir el comportamiento de rechazo mediante ediciones quirurgicas de pesos en las proyecciones de salida de atencion y en las down-projections del MLP del torre de lenguaje, sin reentrenar ni hacer fine-tuning. El resultado conserva intactas las capacidades del modelo base: grounding visual, OCR de pagina completa con anotacion de layout, entrada multi-imagen y tool calling.
 
-LFM2.5-VL-3B-heretic es una variante "decensored" (abliterated) del modelo multimodal LiquidAI/LFM2.5-VL-3B, publicada por el usuario saidutta69 mediante la herramienta Heretic v1.4.0. El modelo original, desarrollado por Liquid AI, combina un backbone de lenguaje LFM2.5-2.6B con un encoder visual SigLIP2 NaFlex de 400M de parametros, y esta disenado especificamente para despliegue en dispositivo (edge), con procesamiento nativo de imagenes a resolucion y una ventana de contexto de 32.768 tokens. El checkpoint aqui descrito conserva la arquitectura y el entrenamiento multimodal del original, pero aplica una ablacion direccional de pesos para eliminar los comportamientos de rechazo.
+El modelo mantiene la arquitectura hibrida del backbone de texto de Liquid (convoluciones y atencion combinadas) junto con el torre de vision SigLIP2 NaFlex. Con 3.123.483.888 parametros totales (2,70B de texto, 0,41B de vision SigLIP2 y 0,01B de proyector), esta disenado para despliegue en el borde y en dispositivos locales con requisitos modestos de VRAM. La ventana de contexto es de 32.768 tokens y soporta 16 idiomas.
 
-La relevancia de esta variante es doble: por un lado demuestra el flujo de "abliteracion reproducible" con parametros documentados por capa; por otro, ofrece un modelo de vision-lenguaje de ~3,12 B de parametros que cabe en menos de 3,3 GB de memoria en configuraciones cuantizadas y alcanza 228 tok/s en un Apple M5 Max o 116 tok/s en un AMD Ryzen AI Max+ 395. Frente al original, que rechaza el 100% de las solicitudes de prueba, esta version rechaza solo 6 de cada 100, con una divergencia KL de 0,0645 respecto al modelo base.
-
-Es importante senalar que se trata de un checkpoint con cero descargas y cero "likes" en el momento de la ficha, sin resultados de benchmarks estandar publicados (MMLU, HumanEval, GSM8K, etc.) y heredando la licencia LFM1.0 del modelo original, lo que condiciona su uso comercial.
+Es relevante ahora porque demuestra que es posible reducir drasticamente los rechazos (de 100/100 a 6/100 en el conjunto de evaluacion del autor) con una divergencia KL moderada (0,0645) sin degradar el resto de capacidades del modelo, y porque distribuye pesos en safetensors y GGUF multimodal completamente funcional (texto y vision), lo que facilita su uso en llama.cpp y entornos locales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal hibrido: backbone LFM2.5-2.6B + encoder visual SigLIP2 NaFlex shape-optimized 400M |
-| Parametros totales | 3.123.483.888 (~3,12 B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | Hibrida conv+attention (LFM2.5 text backbone) con torre de vision SigLIP2 NaFlex |
+| Parametros totales | 3.123.483.888 (2,70B texto + 0,41B vision + 0,01B proyector) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | GGUF, ONNX cuantizado y MLX 8-bit disponibles en los repos derivados del modelo original; este checkpoint concreto solo publica safetensors en precision nativa |
-| Idiomas soportados | 16 idiomas: arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita |
-| Licencia | lfm1.0 (etiquetada como "other") |
-| Formato de pesos | safetensors (transformers, custom_code lfm2_vl) |
-| Vocabulario | 128.000 tokens |
-| Resolucion de imagen nativa | SigLIP2 NaFlex: division en parches no solapados de 512x512 mas una miniatura global reescalada |
-| Parametros de generacion recomendados (texto) | temperature=0,2; top_k=50; repetition_penalty=1,0 |
-| Tamano del repositorio | 6,3 GB |
+| Tipos de cuantizacion | GGUF: Q4_K_M, Q5_K_M, Q6_K, Q8_0; F16 para mmproj |
+| Idiomas soportados | EN, AR, ZH, FR, DE, IT, JA, KO, PT, ES, VI, TH, ID, HI, RU, PL (16) |
+| Licencia | lfm1.0 (other) |
+| Formato de pesos | safetensors, GGUF (texto + `LFM2.5-VL-3B-heretic-mmproj-F16.gguf` separado) |
 
 ## Arquitectura y entrenamiento
+El modelo conserva la arquitectura del base LiquidAI/LFM2.5-VL-3B: un backbone de texto hibrido que combina capas convolucionales con atencion, junto con un torre de vision SigLIP2 NaFlex de 426.285.296 elementos y un proyector que fusiona ambas modalidades. El tower de vision no esta cuantizado y se distribuye como mmproj F16 independiente (0,85 GB). El GGUF de texto contiene el torre de lenguaje completo (266 tensores, 30 bloques) y el GGUF del proyector incluye los metadatos de tiling que llama.cpp necesita para reproducir el preprocesado de imagen original (min_tiles 2, max_tiles 10, tile_size 512, max_pixels_tolerance 2.0).
 
-El modelo hereda la arquitectura de la familia LFM2.5, descrita por Liquid AI como una familia de modelos hibridos orientados a despliegue en dispositivo. El componente de lenguaje es el backbone LFM2.5-2.6B, acoplado a un encoder visual SigLIP2 NaFlex de 400M de parametros. El procesamiento de imagenes es nativo: las imagenes grandes se fragmentan en parches no solapados de 512x512 junto con una miniatura reescalada de la imagen completa, lo que evita reescalados agresivos y mejora tareas de grounding, deteccion de objetos y OCR de pagina completa con anotacion de layout. La plantilla de chat sigue un formato tipo ChatML.
-
-El checkpoint original parte de LFM2-VL-3B y anade fases adicionales de mid-training y post-training. La informacion disponible no detalla el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO. Sobre esa base, esta variante aplica una abliteracion con Heretic v1.4.0 mediante direccion por capa y pesos especificos sobre `attn.o_proj` (max_weight 1,08; max_weight_position 17,48; min_weight 0,70; min_weight_distance 8,41) y `mlp.down_proj` (max_weight 1,33; max_weight_position 21,90; min_weight 0,75; min_weight_distance 14,05). El proceso es reproducible segun el directorio `reproduce` del repositorio.
+No se realizo fine-tuning. La modificacion se aplica mediante abliteracion direccional: se identifican las direcciones de pesos responsables del comportamiento de rechazo y se editan las proyecciones `attn.o_proj` y `mlp.down_proj` del torre de lenguaje con los parametros documentados (trial 67 de 200, seed 3853387823, direction_index por capa). Los coeficientes aplicados incluyen max_weight 1,078 y min_weight 0,698 para atencion, y max_weight 1,332 y min_weight 0,750 para MLP, con distancias de 8,406 y 14,053 respectivamente. Este enfoque preserva el formato de tool-call, el comportamiento OCR y el torre de vision, evitando la degradacion de coherencia tipica de un fine-tuning sobre un modelo alineado con RLHF.
 
 ## Capacidades
-
-- Generacion de texto y comprension de imagenes en un unico pipeline image-text-to-text.
-- Grounding y deteccion de objetos mediante consultas en lenguaje natural, con salida de bounding boxes.
-- OCR de pagina completa con anotacion de layout, orientado a convertir PDFs escaneados en texto indexable.
-- Tool calling / function calling segun la documentacion de la familia LFM2.5.
-- Soporte de conversaciones multi-turno con contexto de 32.768 tokens (aunque el fabricante recomienda uso de un solo turno).
-- Capacidades multilingues en 16 idiomas, incluyendo espanol, ingles, arabe, chino, japones y coreano.
-- Inferencia eficiente en hardware de consumo y edge (Apple Silicon, AMD Ryzen AI, CPU).
-- Comportamiento "uncensored": la abliteracion reduce drasticamente los rechazos (de 100/100 a 6/100 en el conjunto de prueba del autor).
-- No incorpora modo "thinking" explicito ni capacidades de audio segun la informacion disponible.
+- Generacion de texto y conversacion multi-turno.
+- Razonamiento visual y respuesta a preguntas sobre imagenes (VQA).
+- Grounding visual: localizacion de objetos mediante consultas en lenguaje natural con bounding boxes.
+- OCR de pagina completa con anotacion de regiones de layout.
+- Comprension de capturas de pantalla e interfaces de usuario.
+- Lectura e interpretacion de graficos y tablas (ChartQA).
+- Entrada multi-imagen en una misma peticion.
+- Tool calling y function calling (ToolSandBox, BFCLv4).
+- Capacidades multilingues en 16 idiomas.
+- Supresion de rechazos mediante abliteracion: responde a prompts que el base declinaba (6/100 rechazos frente a 100/100 del original).
+- No incluye modo thinking explicito ni capacidades de audio segun la informacion disponible.
 
 ## Casos de uso
-
-- OCR masivo de documentos escaneados: el modelo procesa paginas completas con anotacion de layout y las convierte en texto buscable, adecuado para pipelines de digitalizacion de archivos y facturas.
-- Deteccion de objetos casi en tiempo real: con grounding por lenguaje natural y 228 tok/s en Apple M5 Max, sirve para aplicaciones de automocion o inspeccion visual en las que la latencia es critica.
-- Traduccion en dispositivo de menus, senales o carteles: el soporte de 16 idiomas y el bajo consumo de memoria (menos de 3,3 GB) permiten ejecutarlo en moviles o portatiles sin conexion.
-- Asistencia visual en el navegador: integrable en demos WebGPU o aplicaciones de chat que permiten subir imagenes o capturar desde webcam y mostrar bounding boxes generados.
-- Procesamiento por lotes de imagenes en servidor: con vLLM o SGLang sobre el checkpoint nativo se pueden gestionar colas de clasificacion, descripcion o extraccion de datos de imagenes.
-- Filtrado y moderacion de contenido sin rechazos: al reducir los comportamientos de rechazo, resulta util en tareas donde el modelo original bloquea peticiones legitimas (analisis de imagenes sensibles en contextos de investigacion o forense).
-- Automatizacion con function calling: integrable en agentes que combinan vision y llamadas a herramientas (por ejemplo, extraer datos de una imagen y ejecutar una accion en un backend).
+- Digitalizacion de documentos con OCR y layout: el modelo puede procesar paginas completas, extraer texto y devolver regiones anotadas con coordenadas, adecuado para pipelines de facturacion, contratos o formularios donde se necesita estructura ademas de texto plano.
+- Automatizacion de soporte sobre capturas de pantalla: con ScreenSpot-v2 de 80,7 en el base, puede interpretar pantallas de aplicaciones y responder preguntas del usuario sobre elementos de la interfaz, util para asistentes de helpdesk que reciben imagenes.
+- Grounding en imagenes para anotacion semiautomatica: dado un dataset de imagenes y consultas en lenguaje natural, genera bounding boxes (RefCOCO Macro Prec@1 de 87,9) para preetiquetar datos de entrenamiento de detectores.
+- Analisis de graficos en informes: con ChartQA de 81,3 en el base, puede extraer valores y tendencias de graficos de barras o lineas en documentos financieros o cientificos.
+- Agentes locales con tool calling: con ToolSandBox de 59,5 y BFCLv4 de 32,5 en el base, puede integrarse en flujos de agente que consultan APIs o ejecutan funciones, siempre en escenarios de un solo turno o alta throughput segun la recomendacion de Liquid.
+- Despliegue en dispositivo con recursos limitados: el par Q4_K_M (1,67 GB texto) mas mmproj (0,85 GB) ocupa 2,53 GB, por lo que cabe en GPU de 6 GB o sistemas con 8 GB de memoria unificada, habilitando asistentes visuales offline en portatiles o equipos de borde.
+- Moderacion y generacion de contenido sin rechazos: al suprimir el comportamiento de rechazo, puede emplearse en entornos donde el base declinaba sistematicamente, aunque esto exige controles de seguridad propios por parte del operador.
 
 ## Benchmarks y rendimiento
 
-La informacion disponible no incluye resultados de benchmarks estandar como MMLU, HumanEval o GSM8K. El autor solo publica metricas comparativas frente al modelo original:
+| Benchmark | LFM2.5-VL-3B (base) |
+|---|---|
+| ScreenSpot-v2 | 80,7 |
+| RefCOCO (Macro Prec@1) | 87,9 |
+| BLINK | 61,5 |
+| MuirBench | 58,3 |
+| ToolSandBox | 59,5 |
+| BFCLv4 | 32,5 |
+| MME | 73,1 |
+| MMStar | 63,3 |
+| RealWorldQA | 73,1 |
+| CountBenchQA | 87,3 |
+| MMMB | 83,0 |
+| MM-IF Eval | 60,6 |
+| MathVista | 68,5 |
+| MMMU Pro | 30,5 |
+| ChartQA | 81,3 |
+| OCRBenchv2 (English subset) | 47,5 |
+| POPE | 88,7 |
 
-| Metrica | Este modelo | Modelo original (LiquidAI/LFM2.5-VL-3B) |
+Metricas de la abliteracion:
+
+| Metrica | Este modelo | Modelo original |
 |---|---|---|
 | Divergencia KL | 0,0645 | 0 (por definicion) |
 | Rechazos | 6/100 | 100/100 |
-| Throughput en Apple M5 Max | 228 tok/s | no disponible en esta ficha |
-| Throughput en AMD Ryzen AI Max+ 395 | 116 tok/s | no disponible en esta ficha |
-| Memoria de inferencia | menos de 3,3 GB | no disponible en esta ficha |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, MMMU, DocVQA) en la informacion disponible.
+Las puntuaciones de benchmarks corresponden al modelo base publicado por Liquid; la abliteracion solo elimina direcciones de rechazo segun el autor, por lo que describen la capacidad subyacente y no una nueva evaluacion de este checkpoint. No se han publicado resultados de benchmarks especificos del checkpoint abliterado en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision nativa (FP16/BF16): aproximadamente 6,2-7 GB, derivada de los 3,12 B de parametros y el tamano del repositorio de 6,3 GB.
-- VRAM estimada en INT8: aproximadamente 3,2 GB (estimacion a partir del numero de parametros).
-- VRAM estimada en 4-bit: aproximadamente 1,7-2 GB (estimacion).
-- El fabricante reporta inferencia en menos de 3,3 GB de memoria en configuraciones optimizadas (MLX/ONNX), lo que confirma que cabe en GPUs de consumo.
-- GPUs de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y superiores; tambien Apple Silicon (M-series) via MLX.
-- GPUs de centro de datos: A100, H100 y similares para despliegues de alto throughput con vLLM o SGLang.
-- Opciones de despliegue: Transformers (formato nativo), vLLM, SGLang, llama.cpp (GGUF), MLX (mlx-vlm), ONNX Runtime y WebGPU.
-- Latencia y throughput reportados: 228 tok/s en Apple M5 Max y 116 tok/s en AMD Ryzen AI Max+ 395; no se publican cifras para GPU discreta.
+| Hardware | Cuantizacion recomendada | Pesos texto | Texto + vision |
+|---|---|---|---|
+| GPU 6 GB / 8 GB unificada | Q4_K_M | 1,67 GB | 2,53 GB |
+| GPU 8 GB | Q5_K_M | 1,94 GB | 2,79 GB |
+| GPU 12 GB | Q6_K | 2,22 GB | 3,08 GB |
+| GPU 16 GB+ / solo CPU | Q8_0 | 2,87 GB | 3,73 GB |
+
+- Anadir aproximadamente 1-2 GB de overhead de KV y activaciones.
+- Liquid reporta unos 3,3 GB residentes para el modelo sin cuantizar.
+- El par Q4_K_M cabe comodamente en una GPU de 6 GB.
+- El tower de vision se distribuye como mmproj F16 de 0,85 GB separado y debe cargarse junto al GGUF de texto para entrada de imagen.
+- Opciones de despliegue: llama.cpp (GGUF con mmproj), Ollama (si se empaqueta), transformers con safetensors, vLLM y TGI segun compatibilidad del modelo base (no confirmado en la informacion disponible para esta variante).
+- Throughput y latencia estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rechazos | KL | Licencia |
 |---|---|---|---|---|---|
-| LFM2.5-VL-3B-heretic (este) | ~3,12 B | 32.768 | Si (SigLIP2 NaFlex 400M) | lfm1.0 | Hugging Face, 0 descargas |
-| LiquidAI/LFM2.5-VL-3B (original) | ~3,12 B | 32.768 | Si (SigLIP2 NaFlex 400M) | lfm1.0 | Hugging Face, repos GGUF/ONNX/MLX |
-| LFM2-VL-3B (predecesor) | no disponible | no disponible | Si | lfm1.0 | Hugging Face |
-| Otros VLM de ~3 B (Qwen2.5-VL-3B, etc.) | ~3 B | variable | Si | variable | Hugging Face |
+| LFM2.5-VL-3B-heretic (este) | 3,12B | 32.768 | 6/100 | 0,0645 | lfm1.0 |
+| LiquidAI/LFM2.5-VL-3B (base) | 3,12B | 32.768 | 100/100 | 0 (por definicion) | lfm1.0 |
+| LFM2.5-VL-450M-heretic (hermano) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Granite-4.2-3B (referencia de KL en la model card) | no disponible | no disponible | no disponible | 0,0095 | no disponible |
+| Qwen3-4B-Thinking-heretic (referencia de KL) | no disponible | no disponible | no disponible | 0,0011 | no disponible |
 
-La comparacion cuantitativa con alternativas de otros fabricantes no esta disponible en la informacion proporcionada; no se aportan cifras de rendimiento relativo.
+La comparativa de KL sirve como referencia de agresividad de la edicion: 0,0645 es mas laxa que granite-4.2-3b (0,0095) y Qwen3-4B-Thinking (0,0011), y mas ajustada que granite-4.1-3b (0,0852) y gemma-4-E2B (0,1841), segun los datos del autor.
 
 ## Limitaciones y advertencias
-
-- La abliteracion elimina los rechazos pero puede degradar la seguridad del modelo: aumenta la probabilidad de generar contenido danino, ofensivo o no filtrado. No es apto para aplicaciones de cara al publico sin moderacion adicional.
-- La divergencia KL de 0,0645 respecto al original indica un cambio medible en la distribucion de salida; pueden aparecer degradaciones en tareas que dependian del comportamiento original.
-- El fabricante del modelo base no recomienda su uso para tareas de contexto largo o de razonamiento intensivo (por ejemplo, diseno web visual o preguntas tecnicas sobre planos).
-- El modelo esta optimizado para un solo turno y alto throughput; el rendimiento en dialogos multi-turno complejos puede ser inferior.
-- Aunque declara 16 idiomas, no se especifica el nivel de calidad por idioma; el soporte puede ser desigual.
-- Licencia lfm1.0: incluye restricciones para uso comercial (en la familia LFM, las grandes organizaciones suelen requerir licencia comercial especifica); es necesario revisar los terminos antes de un despliegue en produccion.
-- Checkpoint sin descargas ni validacion de la comunidad: no hay evidencia independiente de su calidad ni de su estabilidad.
-- Riesgo de alucinacion inherente a los modelos de ~3 B, especialmente en OCR de documentos con layouts complejos o en preguntas tecnicas.
-- El repositorio depende de `custom_code` (`lfm2_vl`), por lo que requiere versiones compatibles de Transformers y confiar en el codigo remoto del autor.
+- La abliteracion suprime rechazos pero no elimina sesgos ni conocimiento danino del modelo base; el operador debe implementar sus propios filtros de seguridad.
+- No es adecuada para tareas de contexto largo o razonamiento intensivo; Liquid recomienda esta familia para tareas de un solo turno, alto throughput y baja latencia.
+- Liquid advierte contra su uso en diseno web visual o preguntas tecnicas sobre planos de alta complejidad.
+- Contexto limitado a 32.768 tokens, inferior al de modelos de contexto largo.
+- MMMU Pro de 30,5 y BFCLv4 de 32,5 en el base indican capacidad limitada en razonamiento multimodales complejos y function calling avanzado.
+- El OCRBenchv2 (English subset) de 47,5 sugiere margen de mejora en OCR fuera de condiciones controladas.
+- Licencia lfm1.0: revisar los terminos del enlace de licencia antes de uso comercial; el autor etiqueta como "other".
+- La evaluacion de rechazos (6/100) es la reportada por el autor con su propio conjunto de prompts; no es una garantia de comportamiento en produccion.
+- El GGUF de vision requiere cargar dos archivos (texto y mmproj); un uso incorrecto puede deshabilitar la entrada de imagen.
+- Divergencia KL de 0,0645 implica cambios medibles en la distribucion de salida respecto al base, con posible degradacion en tareas especificas no evaluadas.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM2.5-VL-3B-heretic
-- Modelo original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
-- Version GGUF del original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF
-- Version ONNX del original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX
-- Version MLX 8-bit del original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-8bit
-- Proyecto Heretic: https://heretic-project.org
-- Blog de lanzamiento de LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
-- Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Documentacion de plantilla de chat: https://docs.liquid.ai/lfm/key-concepts/chat-template#vision-models
-- Playground de Liquid AI: https://playground.liquid.ai/chat?model=lfm2.5-vl-3b
-- Demo WebGPU: https://huggingface.co/spaces/LiquidAI/LFM2.5-VL-3B-WebGPU
-- Plataforma LEAP: https://leap.liquid.ai/
-- Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
-- Paper de SigLIP (arxiv:2305.03393): https://arxiv.org/abs/2305.03393
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
+- Licencia: https://huggingface.co/LiquidAI/LFM2.5-VL-3B/blob/main/LICENSE
+- Heretic (repo): https://github.com/p-e-w/heretic
+- Modelo hermano 450M: https://huggingface.co/saidutta69/LFM2.5-VL-450M-heretic
+- Modelo texto 1.2B: https://huggingface.co/saidutta69/LFM2.5-1.2B-Instruct-heretic
+- Modelo Qwen3-4B-Thinking-heretic: https://huggingface.co/saidutta69/Qwen3-4B-Thinking-heretic

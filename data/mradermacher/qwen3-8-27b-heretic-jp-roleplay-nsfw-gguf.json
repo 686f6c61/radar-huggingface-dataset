@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Facebook-Hilfebereich",
-      "url": "https://de-de.facebook.com/help/search/?query=how+to+change+the+name+of+my+page",
-      "snippet": "Du kannst deinen Namen ändern oder zusätzliche Namen zu deinem Konto hinzufügen, z. B. Spitznamen."
-    },
-    {
-      "title": "Namen auf Facebook | Facebook-Hilfebereich",
-      "url": "https://de-de.facebook.com/help/mobile-touch/1090831264320592/?helpref=hc_fnav",
-      "snippet": "Deinen Namen bestätigen # Wenn du beim Login eine Meldung siehst, in der wir dich bitten, deinen Namen zu bestätigen, kannst du …"
-    },
-    {
-      "title": "Den Namen deiner Facebook-Veranstaltung ändern",
-      "url": "https://de-de.facebook.com/help/iphone-app/222025827810442/?helpref=faq_content",
-      "snippet": "Hinweis: Wenn zu deiner Veranstaltung mehr als 2.500 Personen eingeladen sind, kannst du den Standort und das Datum drei Mal …"
-    },
-    {
-      "title": "Deinen Namen auf Facebook ändern | Facebook-Hilfebereich",
-      "url": "https://de-de.facebook.com/help/173909489329079/?helpref=search&query=w%C3%A4rs%20den%20namen&search_session_id=88717e265552a9967b372a60fbd62b3d&sr=0",
-      "snippet": "Solltest du Probleme bei der Namensänderung haben, teile uns das bitte mit. Beachte, dass du deinen Namen nur einmal alle 60 …"
-    },
-    {
-      "title": "Mögliche Ursachen, warum du deinen Namen auf Facebook nicht …",
-      "url": "https://de-de.facebook.com/help/448505685205813/?ec=1605026",
-      "snippet": "Beachte bitte Folgendes: Dein Name muss unserer Richtlinie für Namen entsprechen. Du kannst deinen Namen nicht beliebig oft …"
-    }
-  ]
+  "sources": []
 }

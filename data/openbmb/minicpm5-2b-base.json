@@ -64,31 +64,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Salesforce, Inc. (CRM) Stock Price, News, Quote & History - Yahoo Finance",
-      "url": "https://finance.yahoo.com/quote/CRM/",
-      "snippet": "Find the latest Salesforce, Inc. (CRM) stock quote, history, news and other vital information to help you with your stock trading and …"
-    },
-    {
-      "title": "Salesforce Inc (CRM) Stock Price & News - Google Finance",
-      "url": "https://www.google.com/finance/quote/CRM:NYSE",
-      "snippet": "Get real-time stock quotes, news, financial details, and analytics for Salesforce Inc from Google Finance."
-    },
-    {
-      "title": "Salesforce.com, Inc. - Salesforce (CRM) Stock Information",
-      "url": "https://investor.salesforce.com/stock-info/default.aspx",
-      "snippet": "3 days ago · Investor FAQs Investor Email Alerts Investor Contacts Salesforce (CRM) Stock Information Overview Financials …"
-    },
-    {
-      "title": "Salesforce (CRM) Stock Price & Overview",
-      "url": "https://stockanalysis.com/stocks/crm/",
-      "snippet": "3 days ago · A detailed overview of Salesforce, Inc. (CRM) stock, including real-time price, chart, key statistics, news, and more."
-    },
-    {
-      "title": "Salesforce (CRM) Stock Price, News & Analysis - MarketBeat",
-      "url": "https://www.marketbeat.com/stocks/NYSE/CRM/",
-      "snippet": "4 days ago · Salesforce, founded in 1999 and headquartered in San Francisco, is a global provider of cloud-based software focused …"
-    }
-  ]
+  "sources": []
 }

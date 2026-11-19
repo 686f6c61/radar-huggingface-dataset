@@ -2,66 +2,56 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B es una variante de razonamiento eficiente del modelo Qwen3.8-27B desarrollada por UkisAI. Su propuesta central es reducir de forma agresiva el numero de tokens de "pensamiento" generados durante la fase de razonamiento (hasta un 58,3% menos en la mediana de varios benchmarks) manteniendo una perdida de precision declarada inferior al 1% respecto al modelo base, lo que se traduce en una aceleracion de hasta x1,95 en varias tareas. La ficha que nos ocupa es la version cuantizada en GGUF del modelo, pensada para inferencia local con llama.cpp y herramientas compatibles.
+Swift-Qwen3.8-27B-GGUF es la versión cuantizada en formato GGUF del modelo Swift-Qwen3.8-27b, un derivado de Qwen3.8-27B desarrollado por UkisAI que introduce un adaptador orientado a la eficiencia de razonamiento. El modelo base cuenta con 27.320.697.856 parámetros y una pipeline declarada de image-text-to-text, lo que indica capacidades multimodales de entrada. La propuesta central es reducir drásticamente el número de tokens de pensamiento generados sin degradar de forma apreciable la calidad de las respuestas.
 
-El modelo parte de Qwen3.8-27B y se obtiene aplicando un adaptador ("Swift adapter") sobre la base en BF16, segun la comparativa de evaluacion publicada por el autor. Conserva el pipeline `image-text-to-text`, por lo que se trata de un modelo multimodal de entrada imagen y texto, no solo de texto. El repositorio GGUF ocupa 145,6 GB y contiene 27.320.697.856 parametros totales (aproximadamente 27,3 mil millones).
+Según la model card, el adaptador Swift consigue una reducción del 58,3% en tokens de pensamiento en mediana y mantiene una pérdida de rendimiento inferior al 1% en varios benchmarks, lo que se traduce en una aceleración de hasta 1,95x en tareas concretas. Esta versión GGUF está pensada para inferencia con llama.cpp y entornos compatibles con endpoints, con cuantizaciones generadas mediante imatrix.
 
-Es relevante ahora porque ataca un cuello de botella muy concreto en produccion: el coste de inferencia de los modelos con modo de razonamiento extendido. Un modelo que mantiene puntuaciones casi identicas en GPQA-Diamond, MMLU-Pro o C-Eval generando menos de la mitad de tokens de pensamiento reduce directamente latencia y coste por peticion, algo critico en despliegues con volumen alto. La contrapartida es que se distribuye bajo una licencia propia (`swift-open-license-1.0`) con via de licenciamiento empresarial, no bajo una licencia open source estandar.
+El modelo resulta relevante para despliegues de razonamiento en producción donde el coste por token y la latencia son críticos: mantiene puntuaciones cercanas al base en GPQA-Diamond, MMLU-Pro, C-Eval y pruebas de matemáticas, pero con volúmenes de tokens notablemente menores. La licencia es propietaria (swift-open-license-1.0), lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no especificada en la informacion proporcionada; el pipeline `image-text-to-text` y los tags `qwen3_8` / `qwen3_5` indican una derivacion multimodal de Qwen3.8-27B) |
-| Parametros totales | 27.320.697.856 (aprox. 27,3B) |
-| Parametros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | Transformer (derivado de Qwen3.8-27B; detalles internos no disponibles) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF para llama.cpp con uso de `imatrix`; niveles concretos (Q4_K_M, Q5_K_M, Q6_K, Q8_0, etc.) no disponibles |
-| Idiomas soportados | no disponible (la evaluacion incluye C-Eval, benchmark en chino, lo que sugiere soporte de chino, pero la lista oficial no se publica) |
-| Licencia | `swift-open-license-1.0` (etiquetada como `license: other`), con enlace a licenciamiento empresarial |
-| Formato de pesos | GGUF (`library_name: gguf`); existe un modelo base en BF16 en `ukisai/Swift-Qwen3.8-27b` |
-| Modelo base | `ukisai/Swift-Qwen3.8-27b` (relacion: `quantized`) |
-| Pipeline | `image-text-to-text` |
-| Autor | `ukisai` |
-| Tamano del repositorio | 145,6 GB |
-| Descargas / likes | 0 descargas / 10 likes |
-| Fecha de creacion / actualizacion | 2026-09-11 / 2026-09-11 |
-| Tags relevantes | `gguf`, `llama.cpp`, `qwen3_8`, `qwen3_5`, `efficient-thinking`, `reasoning`, `token-efficient`, `imatrix`, `conversational`, `endpoints_compatible` |
+| Tipos de cuantizacion | GGUF con cuantizaciones generadas mediante imatrix (niveles concretos no disponibles) |
+| Idiomas soportados | no disponible |
+| Licencia | swift-open-license-1.0 (other) |
+| Formato de pesos | GGUF (repo de 509,7 GB con múltiples cuantizaciones); modelo base BF16 en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo. Lo que si se explicita es el metodo de derivacion: la evaluacion publicada compara el modelo base Qwen3.8-27B en BF16 con "el mismo modelo base mas el adaptador Swift", lo que indica que el modelo se obtiene mediante un adaptador (previsiblemente del tipo LoRA o similar) aplicado sobre la base, orientado a comprimir la traza de razonamiento. Dado el pipeline `image-text-to-text`, la base es multimodal, capaz de procesar entradas de imagen y texto.
+El modelo es un derivado del Qwen3.8-27B, sobre el que UkisAI aplica un adaptador denominado Swift orientado a la eficiencia de razonamiento. La model card no detalla la arquitectura interna más allá de la etiqueta qwen3_8/qwen3_5 y la pipeline image-text-to-text, por lo que se desconoce si emplea atención lineal, decodificación especulativa u otras innovaciones. El pipeline declarado sugiere que el modelo acepta entradas de imagen y texto, aunque no se especifican los detalles del codificador visual.
 
-No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. Tampoco se detalla la innovacion tecnica exacta del adaptador mas alla de su objetivo declarado: reducir tokens de pensamiento manteniendo la precision. Los resultados cuantitativos indican que el efecto es sistematico en razonamiento general, matematicas e instrucciones: reducciones de tokens medios de entre el 26,7% y el 46,2% segun el benchmark, con una mediana que llega a bajar hasta un 58,3% (GPQA-Diamond).
+En cuanto al entrenamiento, la información disponible se limita a los resultados de evaluación: el adaptador se entrena para reducir la longitud de las cadenas de pensamiento manteniendo la precisión. No se indican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La evaluación comparativa se realiza entre el base Qwen3.8-27B en BF16 y el mismo base con el adaptador Swift, sin datos adicionales sobre el proceso de alineamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con tag explicito `conversational`.
-- Razonamiento con modo de pensamiento eficiente (`efficient-thinking`): genera trazas de razonamiento mas cortas que el modelo base.
-- Razonamiento cientifico de nivel experto: evaluado en GPQA-Diamond (88,28% en la variante Swift).
-- Matematicas competitivas: evaluado en AIME 2026 (94,00%) y HMMT Noviembre 2025 (96,00%).
-- Conocimiento general y multidisciplinar: MMLU-Pro (84,95%), C-Eval (90,62%).
-- Seguimiento de instrucciones complejas: IFBench (71,80%).
-- Generacion y razonamiento sobre codigo: la demo del autor usa un prompt de muestra de LiveCodeBench v6, benchmark de generacion de codigo competitivo.
-- Entrada multimodal de imagen y texto (`image-text-to-text`), lo que habilita tareas de comprension visual combinadas con razonamiento.
-- Capacidades multilingues: la inclusion de C-Eval implica evaluacion en chino; la lista completa de idiomas no esta disponible.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso explicito: no disponible en la informacion proporcionada (el modo de razonamiento interno si esta documentado).
+- Generación de texto y razonamiento general, con modo de pensamiento eficiente que reduce el número de tokens de razonamiento.
+- Razonamiento matemático de competición: evaluado en AIME 2026 y HMMT (noviembre de 2025) con puntuaciones superiores al 94%.
+- Razonamiento científico y de conocimiento general: evaluado en GPQA-Diamond, MMLU-Pro y C-Eval.
+- Seguimiento de instrucciones: evaluado en IFBench.
+- Procesamiento image-text-to-text según la pipeline declarada, aunque no se detallan las capacidades visuales concretas.
+- Compatibilidad con llama.cpp y endpoints compatibles, lo que facilita el despliegue en infraestructuras estándar.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Cobertura multilingüe: no disponible; la evaluación incluye C-Eval (chino), lo que sugiere competencia en ese idioma, pero no se confirma el conjunto de idiomas.
 
 ## Casos de uso
 
-- Razonamiento cientifico asistido: el modelo alcanza un 88,28% en GPQA-Diamond generando un 41,0% menos de tokens medios que la base, por lo que es adecuado para asistentes de investigacion donde el coste por consulta importa mas que la traza de razonamiento completa.
-- Resolucion de problemas matematicos en produccion: con un 94,00% en AIME 2026 y un 96,00% en HMMT, encaja en plataformas de tutoria o verificacion de calculos, y la reduccion de tokens (26,7% y 31,1% respectivamente) abarata el coste por problema resuelto.
-- Asistente de codigo integrado en IDE o pipeline de revision: la demo oficial usa un prompt de LiveCodeBench v6, de modo que el modelo esta orientado a tareas de programacion con razonamiento previo a la respuesta.
-- Atencion al cliente automatizada y conversacion multi-turno: el tag `conversational` y el pipeline multimodal permiten gestionar dialogos donde el usuario adjunta capturas de pantalla o imagenes junto al texto.
-- Procesamiento de documentos con imagen y texto: analisis de capturas, formularios escaneados o diagramas combinados con preguntas en lenguaje natural, aprovechando la entrada `image-text-to-text`.
-- Despliegue en local o en el borde: al publicarse en GGUF, es viable ejecutarlo con llama.cpp en estaciones de trabajo o servidores con GPU de gama alta sin depender de una API externa, algo relevante para datos sensibles.
-- Extraccion de respuestas estructuradas bajo instrucciones estrictas: el rendimiento en IFBench (71,80%) lo hace utilizable en pipelines que exigen formato rigido de salida, aunque con una perdida de 1,73 puntos frente a la base.
-- Evaluacion comparativa de eficiencia de razonamiento: util como referencia interna para medir el impacto de tecnicas de compresion de tokens de pensamiento frente a un baseline BF16.
+- Razonamiento matemático en producción: el modelo mantiene un 94% en AIME 2026 y un 96% en HMMT con una reducción de tokens del 26,7% y 31,1% respectivamente, lo que permite resolver problemas complejos con menor coste por consulta en plataformas educativas o de tutoría automatizada.
+- Asistentes de razonamiento científico: con un 88,28% en GPQA-Diamond y una reducción del 41% en tokens medios, es adecuado para herramientas de apoyo a investigación que requieran respuestas fundamentadas sin cadenas de pensamiento excesivamente largas.
+- Evaluación de conocimiento general a escala: MMLU-Pro con 84,95% y 1.603 tokens medios (frente a 2.980 del base) lo hace viable para sistemas de QA masivos donde el throughput es determinante.
+- Cumplimiento de instrucciones en pipelines de agentes: IFBench con 71,80% y una reducción del 42,2% en tokens medios permite integrar el modelo en flujos de trabajo que encadenan instrucciones complejas con menor latencia.
+- Procesamiento de documentos con imagen y texto: la pipeline image-text-to-text habilita tareas de extracción y descripción de contenido visual, aunque la ausencia de detalles sobre el codificador visual exige validación previa.
+- Despliegue local con llama.cpp: el formato GGUF y las cuantizaciones con imatrix permiten ejecutar el modelo en estaciones de trabajo sin infraestructura de GPU dedicada de gran escala, útil para prototipado y entornos con requisitos de privacidad.
+- Razonamiento en chino: C-Eval con 90,62% y 804 tokens medios (frente a 1.492 del base) lo posiciona para aplicaciones de QA y asistencia en ese idioma con alta eficiencia.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles comparan el modelo base Qwen3.8-27B BF16 con la misma base mas el adaptador Swift. La informacion proporcionada esta truncada; las filas que faltan se indican como no disponibles.
+Resultados comparativos entre Qwen3.8-27B BF16 base y el mismo base con el adaptador Swift, según la model card:
 
 | Benchmark | Score base | Score Swift | Tokens medios base | Tokens medios Swift | Reduccion media | Reduccion mediana |
 |---|---|---|---|---|---|---|
@@ -70,69 +60,44 @@ Los unicos datos disponibles comparan el modelo base Qwen3.8-27B BF16 con la mis
 | C-Eval | 90,00% | 90,62% | 1.492 | 804 | 46,1% | 19,3% |
 | IFBench | 73,53% | 71,80% | 8.052 | 4.657 | 42,2% | 50,5% |
 | AIME 2026 | 98,67% | 94,00% | 22.014 | 16.143 | 26,7% | 50,2% |
-| HMMT (noviembre 2025) | 99,33% | 96,00% | 22.032 | 15.189 | 31,1% | no disponible (informacion truncada) |
+| HMMT (nov 2025) | 99,33% | 96,00% | 22.032 | 15.189 | 31,1% | 45% (dato truncado en la fuente) |
 
-Resumen agregado declarado por el autor: 58,3% menos de tokens de pensamiento, perdida de rendimiento inferior al 1% y aceleracion de x1,95 en varias tareas. No se han publicado en la informacion disponible resultados de benchmarks comparativos con modelos de terceros.
+No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-Estimaciones derivadas del recuento de parametros (27.320.697.856), sin margen para cache KV ni overhead del runtime, que debe sumarse aparte:
-
-| Cuantizacion | Peso aproximado de pesos | VRAM recomendada con contexto |
-|---|---|---|
-| F16 / BF16 | ~54,6 GB | ~64 GB o mas |
-| Q8_0 | ~29 GB | ~36 GB o mas |
-| Q6_K | ~22 GB | ~28 GB o mas |
-| Q5_K_M | ~19 GB | ~24 GB o mas |
-| Q4_K_M | ~16-17 GB | ~22 GB o mas |
-
-- Cabe en GPU de consumo: si, en configuraciones Q4_K_M y Q5_K_M sobre RTX 3090 o RTX 4090 (24 GB), con contexto moderado. Para contextos largos conviene bajar a Q4 o usar offload parcial a CPU.
-- GPU profesionales: A100 40 GB, A100 80 GB y H100 para Q8_0 y F16 con contexto amplio; configuraciones multi-GPU (2x24 GB) para Q6_K o Q8_0.
-- Modelo multimodal: al ser `image-text-to-text`, es probable que requiera un proyector multimodal adicional (`mmproj`) para la parte de vision; no se confirma en la informacion disponible.
-- Opciones de despliegue: llama.cpp y `llama-server` de forma nativa (el repositorio esta etiquetado con `llama.cpp` y `imatrix`); Ollama, LM Studio o Jan mediante importacion del GGUF; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. vLLM y TGI tienen soporte limitado o experimental de GGUF, por lo que no son la via recomendada.
-- Latencia y throughput: no disponibles en cifras absolutas. El unico dato de rendimiento publicado es la aceleracion relativa de x1,95 en varias tareas, atribuible principalmente a la reduccion de tokens generados.
+- VRAM estimada para inferencia: no disponible de forma oficial; para 27.320 millones de parámetros, una cuantización de 4 bits requiere aproximadamente 14-16 GB de VRAM, una de 8 bits unos 28-30 GB, y BF16 alrededor de 55 GB, como estimaciones orientativas no confirmadas por el autor.
+- GPU recomendadas: no especificadas por el autor; por tamaño, una RTX 4090 (24 GB) podría ejecutar cuantizaciones de 4 bits, mientras que cuantizaciones superiores requerirían A100 (40/80 GB) o H100.
+- Compatibilidad con GPU de consumo: probable en cuantizaciones bajas (4 bits) en GPUs con 16-24 GB de VRAM, sujeto a validación práctica.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo) y endpoints compatibles según los tags del repositorio; vLLM, TGI u Ollama no se mencionan explícitamente.
+- Latencia y throughput: la model card reporta una aceleración de 1,95x en varias tareas derivada de la reducción de tokens de pensamiento, pero no se publican cifras absolutas de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye comparativas con modelos de terceros, por lo que la unica comparacion posible es dentro de la propia familia.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Formato |
 |---|---|---|---|---|---|
-| Swift-Qwen3.8-27B-GGUF | 27,32B | no disponible | GGUF | `swift-open-license-1.0` | Hugging Face (`ukisai`), 0 descargas, 10 likes |
-| Swift-Qwen3.8-27b (BF16) | no disponible | no disponible | no disponible (referenciado como BF16) | `swift-open-license-1.0` | Hugging Face (`ukisai`) |
-| Qwen3.8-27B (base) | no disponible | no disponible | BF16 | no disponible | referenciado en la evaluacion del autor |
+| Swift-Qwen3.8-27B-GGUF | 27,3B | no disponible | GPQA-Diamond 88,28%; AIME 2026 94,00% | swift-open-license-1.0 (propietaria) | GGUF |
+| Qwen3.8-27B (base) | 27,3B | no disponible | GPQA-Diamond 88,38%; AIME 2026 98,67% | no disponible | safetensors BF16 |
+| Alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Comparativa de rendimiento dentro de la familia, con los datos disponibles:
-
-| Aspecto | Qwen3.8-27B base | Swift-Qwen3.8-27B |
-|---|---|---|
-| GPQA-Diamond | 88,38% | 88,28% |
-| AIME 2026 | 98,67% | 94,00% |
-| HMMT (nov. 2025) | 99,33% | 96,00% |
-| Tokens de pensamiento | linea base | hasta 58,3% menos en mediana |
-| Velocidad relativa | x1 | hasta x1,95 |
-
-Frente a alternativas de terceros de tamano similar (por ejemplo, otros modelos de ~27B con modo de razonamiento), no hay datos de benchmarks en la informacion disponible.
+La información proporcionada solo permite comparar con el modelo base del que deriva. No se dispone de datos sobre otros modelos comparables de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Perdida de precision no despreciable en matematicas: AIME 2026 cae del 98,67% al 94,00% (-4,67 puntos) y HMMT de 99,33% a 96,00% (-3,33 puntos), muy por encima del "<1% de perdida" declarado de forma agregada. Conviene verificar el rendimiento en el dominio concreto antes de desplegar.
-- Caida en seguimiento de instrucciones: IFBench baja 1,73 puntos (73,53% -> 71,80%). En pipelines que dependen de formato estricto esto puede traducirse en fallos de parseo.
-- Riesgo de alucinacion: no se documentan tasas de alucinacion ni evaluaciones de fidelidad factual. Es un riesgo inherente a los modelos de razonamiento y no hay datos que lo acoten.
-- Sesgos: no se publica ninguna evaluacion de sesgos, toxicidad o comportamientos diferenciales por idioma o demografia.
-- Limitaciones de contexto e idioma: la longitud de contexto no esta documentada en la informacion disponible y la lista oficial de idiomas tampoco. La evaluacion incluye C-Eval (chino) y benchmarks en ingles, pero no se puede confirmar cobertura de otras lenguas.
-- Restricciones de licencia: la licencia es `swift-open-license-1.0`, etiquetada como `other` y no reconocida por la OSI. La model card enlaza a una seccion de licenciamiento empresarial, por lo que el uso comercial puede requerir un acuerdo adicional con UkisAI. Verificar los terminos antes de cualquier despliegue en produccion.
-- Madurez y soporte: el repositorio acumula 0 descargas y 10 likes, con fecha de publicacion 2026-09-11. Es un artefacto muy reciente y sin validacion independiente por parte de la comunidad.
-- Opacidad de la informacion: no se detallan datos de entrenamiento, composicion del dataset, tecnicas de alineamiento ni arquitectura. La informacion de la model card esta truncada, incluyendo parte de la tabla de benchmarks.
-- Compatibilidad de cuantizaciones: no se publica la lista concreta de niveles GGUF incluidos en los 145,6 GB del repositorio, por lo que hay que inspeccionar los archivos antes de planificar el despliegue.
-- Despliegue: el ecosistema de servidores de alto rendimiento (vLLM, TGI) no soporta GGUF de forma nativa y madura, lo que limita el throughput en comparacion con una version en safetensors servida con vLLM.
+- Licencia propietaria swift-open-license-1.0: el uso comercial está sujeto a los términos de UkisAI, que deben revisarse antes de cualquier despliegue en producción.
+- Pérdida de rendimiento medible: aunque inferior al 1% en varios benchmarks, en AIME 2026 la caída es de 4,67 puntos (98,67% a 94,00%) y en HMMT de 3,33 puntos, lo que puede ser relevante en aplicaciones de matemáticas de alta precisión.
+- Riesgo de alucinación: no cuantificado en la información disponible; como modelo de razonamiento generativo, es esperable, pero no se aportan datos específicos.
+- Idiomas soportados no declarados: la evaluación incluye C-Eval (chino) pero no se confirma la cobertura multilingüe ni el rendimiento fuera de inglés y chino.
+- Longitud de contexto no disponible: impide evaluar su idoneidad para tareas de contexto largo.
+- Detalles de cuantización no especificados: se desconoce qué niveles GGUF están disponibles y su impacto en la calidad.
+- Capacidades multimodales poco documentadas: la pipeline image-text-to-text se declara, pero no se detallan el codificador visual ni los benchmarks de visión.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Repositorio de gran tamaño (509,7 GB): requiere planificación de almacenamiento y ancho de banda para su descarga.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
-- Modelo base en BF16 (Swift-Qwen3.8-27b): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
-- Licencia y acceso empresarial: https://huggingface.co/ukisai/Swift-Qwen3.8-27b#license-and-access
-- Sitio web del autor: https://ukisai.com
-- Pagina de producto Swift: https://ukisai.com/products/swift
-- Demo en video de velocidad (alojada en el repositorio): https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF/resolve/main/swift-speed-demo.mp4
-- La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos resultados obtenidos fueron paginas de restaurantes sin relacion con el contenido de esta ficha.
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
+- Modelo base BF16: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
+- Web de UkisAI: https://ukisai.com
+- Página de producto Swift: https://ukisai.com/products/swift
+- Licencia y acceso: https://huggingface.co/ukisai/Swift-Qwen3.8-27b#license-and-access

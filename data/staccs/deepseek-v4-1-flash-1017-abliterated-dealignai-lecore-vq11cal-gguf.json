@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF - Hugging Face",
-      "url": "https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "DeepSeek V4.1-Flash-1017: Free, MIT-Licensed Update [2026]",
-      "url": "https://tech-insider.org/deepseek-v4-1-flash-1017-mit-license-update-2026/",
-      "snippet": "DeepSeek shipped V4.1-Flash-1017 on Oct. 17, 2026, with open, MIT-licensed weights and claims of faster task completion across coding and agent work."
-    },
-    {
-      "title": "Awesome DeepSeek V4.1 Flash 1017 - GitHub",
-      "url": "https://github.com/sandbase-lab/awesome-deepseek-v4.1-flash",
-      "snippet": "A curated list of DeepSeek V4.1 Flash 1017 examples: videos, prompts and demos made with DeepSeek-V4.1-Flash-1017, the October 17, 2026 update of DeepSeek&#x27;s V4.1 Flash model. Three.js and WebGL 3D scenes, SVG and canvas animation, motion graphics and playable browser games, most of them written as ..."
-    },
-    {
-      "title": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.",
-      "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
-      "snippet": "Introducing the smallest model in our new architecture family, with native visual understanding. Designed for greater capability, faster inference, and higher throughput."
-    }
-  ]
+  "sources": []
 }

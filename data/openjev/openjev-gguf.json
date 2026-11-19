@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "openjev - Hugging Face",
-      "url": "https://huggingface.co/openjev/openjev",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "OpenJEV — Intelligence layer",
-      "url": "https://openjev.sh/",
-      "snippet": "1 day ago · OpenJEV channels creator fees from $JEV trading into a treasury that pays for Jev inference, turning onchain activity into …"
-    },
-    {
-      "title": "GitHub - zhangcy122/OpenJev: OpenJev: Open-source alternative to ...",
-      "url": "https://github.com/zhangcy122/OpenJev/tree/main",
-      "snippet": "4 days ago · OpenJev: Open-source alternative to TypeSafe Jev. Typed probabilistic decision API (Choice, Noul, Score) powered by …"
-    },
-    {
-      "title": "OpenJev / SemIf - Semantic If On-Device",
-      "url": "https://openjev.com/",
-      "snippet": "Sep 16, 2026 · Independent research project. Formerly called OpenJev. Not affiliated with or endorsed by TypeSafe. No infringement …"
-    },
-    {
-      "title": "AlexWortega/openjev · Hugging Face",
-      "url": "https://huggingface.co/AlexWortega/openjev",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

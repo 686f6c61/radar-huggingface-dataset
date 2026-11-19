@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Société Générale - Banque et Assurance",
-      "url": "https://particuliers.societegenerale.fr/com/accueil.html",
-      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
-    },
-    {
-      "title": "Vous connecter - societegenerale.fr",
-      "url": "https://devenirclient.particuliers.societegenerale.fr/icd/eprpri/index-authsec.html",
-      "snippet": "Connectez-vous à votre espace client Société Générale pour accéder à vos comptes et gérer vos services bancaires en ligne."
-    },
-    {
-      "title": "Connexion à votre Espace Client Particuliers",
-      "url": "https://api.moncompagnonretraite.particuliers.societegenerale.fr/",
-      "snippet": "La réglementation européenne*, applicable à toutes les banques, a évolué afin de renforcer la sécurité de vos données bancaires. …"
-    },
-    {
-      "title": "Renouveler votre mot de passe - societegenerale.fr",
-      "url": "https://devenirclient.particuliers.societegenerale.fr/swm/swm-reattribution.html",
-      "snippet": "Renouveler votre mot de passe Veuillez saisir votre adresse de messagerie afin de vous envoyer le lien permettant de créer un …"
-    },
-    {
-      "title": "Société Générale - Banque et Assurance",
-      "url": "https://particuliers.societegenerale.fr/static/Particuliers/assets/fonts/montserrat/Montserrat-ExtraBold.woff",
-      "snippet": "wOFF ¸d DSIG ¸\\ GDEF ” ¨ –ÔöÖcGPOS >”§ø\\¾âÿ.»8—Ó Æ¢® 6p °‰[ Ý Üå®ãMw ïúøâ|B_ Ëú*XÝ÷À^~ Žöûñ ˆ ü3ñþU”C\\”+* …"
-    }
-  ]
+  "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "Rebine",
   "url": "https://huggingface.co/Rebine/Etsu-Embedding-0.8B-Memory",
   "created_at": "2026-10-03T17:15:46.000Z",
-  "updated_at": "2026-11-15T13:28:09.000Z",
+  "updated_at": "2026-11-18T08:21:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 119,
+  "downloads_30d": 124,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

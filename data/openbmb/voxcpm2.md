@@ -2,91 +2,112 @@
 
 ## Resumen
 
-VoxCPM2 es un modelo de síntesis de voz (text-to-speech) de última generación desarrollado por OpenBMB, el equipo detrás de MiniCPM. Se trata de un sistema tokenizer-free que genera representaciones de audio continuas mediante una arquitectura autoregresiva con difusión, eliminando la necesidad de tokenización discreta y logrando una síntesis más natural y expresiva. Con 2.290 millones de parámetros (2B), soporta 30 idiomas y produce audio a 48 kHz con calidad de estudio.
+VoxCPM2 es un modelo de texto a voz (TTS) desarrollado por OpenBMB, el equipo detrás de la familia MiniCPM. Se trata de un sistema de síntesis de voz multilingüe de 2.290 millones de parámetros que emplea una arquitectura de difusión autorregresiva sin tokenizador, construida sobre un backbone derivado de MiniCPM-4. El modelo resuelve tres problemas clásicos del TTS neuronal —la dependencia de tokenizadores discretos, la limitación de idiomas y la falta de control expresivo— combinando generación continua por difusión con un códec de audio asimétrico propio.
 
-El modelo destaca por tres capacidades principales: clonación de voz controlable a partir de un clip corto, diseño de voz mediante descripción en lenguaje natural (sin audio de referencia) y clonación de alta fidelidad con transcripción de referencia. Entrenado con más de 2 millones de horas de habla multilingüe, VoxCPM2 es completamente open source bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones. Su relevancia actual radica en combinar un rendimiento de vanguardia en benchmarks de TTS con una arquitectura abierta y desplegable en tiempo real (RTF ~0.3 en RTX 4090).
+Su relevancia actual radica en tres factores: cobertura de 30 idiomas sin etiqueta de idioma explícita (más diez dialectos del chino), salida a 48 kHz con superresolución integrada en el propio VAE de audio, y licencia Apache-2.0 sin restricciones comerciales. A esto se suma un RTF de aproximadamente 0,30 en una RTX 4090 y de aproximadamente 0,13 con aceleración mediante Nano-vLLM, lo que lo sitúa en el terreno de la síntesis en tiempo real sobre hardware de consumo.
 
-## Especificaciones tecnicas
+El modelo se distribuye con más de 976.000 descargas y 1.803 likes en Hugging Face, con pesos en safetensors y un repositorio de 9,5 GB. Está entrenado sobre más de 2 millones de horas de audio multilingüe y admite clonación de voz, diseño de voz por descripción en lenguaje natural y streaming.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Tokenizer-free Diffusion Autoregressive (LocEnc → TSLM → RALM → LocDiT) |
-| Parametros totales | 2.290.004.544 (~2,29 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 8192 tokens (tasa de 6,25 Hz, ~21,8 minutos de audio) |
-| Tipos de cuantizacion | No disponible (dtype nativo: bfloat16) |
-| Idiomas soportados | 30 idiomas: árabe, birmano, chino, danés, neerlandés, inglés, finés, francés, alemán, griego, hebreo, hindi, indonesio, italiano, japonés, jemer, coreano, lao, malayo, noruego, polaco, portugués, ruso, español, suajili, sueco, tagalo, tailandés, turco, vietnamita. Además 9 dialectos del chino (sichuanés, cantonés, wu, etc.) |
+| Arquitectura | Difusión autorregresiva sin tokenizador (LocEnc → TSLM → RALM → LocDiT), backbone basado en MiniCPM-4 |
+| Parámetros totales | 2.290.004.544 (aproximadamente 2B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8.192 tokens de secuencia del modelo de lenguaje |
+| Tipos de cuantización | no disponible (pesos publicados en bfloat16) |
+| Idiomas soportados | 30: árabe, birmano, chino, danés, neerlandés, inglés, finlandés, francés, alemán, griego, hebreo, hindi, indonesio, italiano, japonés, jemer, coreano, lao, malayo, noruego, polaco, portugués, ruso, español, suajili, sueco, tagalo, tailandés, turco, vietnamita; más diez dialectos del chino (sichuanés, cantonés, wu, dongbei, henanés, shaanxi, shandong, tianjin, minnan) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería `voxcpm`) |
+| Frecuencia de muestreo de salida | 48 kHz (entrada de referencia a 16 kHz) |
+| Códec de audio | AudioVAE V2 (codificación/decodificación asimétrica) |
+| Tasa de tokens del LM | 6,25 Hz |
+| Precisión de pesos | bfloat16 |
+| VRAM estimada | aproximadamente 8 GB |
+| RTF (RTX 4090) | aproximadamente 0,30 estándar; aproximadamente 0,13 con Nano-vLLM |
+| Datos de entrenamiento | más de 2 millones de horas de voz multilingüe |
 
 ## Arquitectura y entrenamiento
 
-VoxCPM2 emplea una arquitectura tokenizer-free basada en difusión autoregresiva. El sistema se compone de cuatro módulos principales: LocEnc (codificador de localización), TSLM (modelo de lenguaje de texto a voz), RALM (modelo de lenguaje autoregresivo) y LocDiT (transformador de difusión). Esta combinación permite generar directamente representaciones continuas de audio sin pasar por tokens discretos, lo que reduce la pérdida de información y mejora la naturalidad prosódica.
+VoxCPM2 abandona el esquema habitual de TTS en dos etapas con tokenizador discreto. En su lugar emplea un pipeline de cuatro componentes: un codificador local (LocEnc), un modelo de lenguaje de secuencia temporal (TSLM), un modelo autorregresivo local (RALM) y un decodificador de difusión local (LocDiT). El backbone del modelo de lenguaje deriva de MiniCPM-4, con 2B parámetros totales y una tasa de emisión de 6,25 tokens por segundo, lo que se traduce en una secuencia latente compacta que el decodificador de difusión convierte en audio continuo.
 
-El backbone está basado en MiniCPM-4 con 2B parámetros. El audio se procesa mediante AudioVAE V2, un codificador-decodificador asimétrico que acepta audio de referencia a 16 kHz y produce salida a 48 kHz mediante super-resolución integrada, eliminando la necesidad de un upsampler externo. El entrenamiento se realizó con más de 2 millones de horas de habla multilingüe, con una tasa de tokens de 6,25 Hz y una longitud máxima de secuencia de 8192 tokens. No se especifica el uso de RLHF o DPO en la información disponible, pero el modelo incorpora inferencia contextual automática de prosodia y expresividad a partir del texto.
+El componente diferencial es AudioVAE V2, un VAE de audio con codificación y decodificación asimétricas: acepta audio de referencia a 16 kHz y genera salida a 48 kHz mediante superresolución integrada, sin necesidad de un upsampler externo. Esto permite clonar voces a partir de grabaciones de baja calidad y producir audio de calidad de estudio. El entrenamiento se realizó sobre más de 2 millones de horas de voz multilingüe; la model card no detalla la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO. El modelo soporta ajuste fino supervisado completo (SFT), según indica la documentación del autor.
 
 ## Capacidades
 
-- Síntesis de voz multilingüe en 30 idiomas sin necesidad de etiqueta de idioma: basta introducir el texto directamente.
-- Voice design: generación de una voz nueva a partir de una descripción en lenguaje natural (género, edad, tono, emoción, ritmo) sin requerir audio de referencia.
-- Clonación de voz controlable: clonación desde un clip corto con control opcional de estilo (emoción, velocidad, expresión) manteniendo el timbre.
-- Clonación de alta fidelidad (ultimate cloning): usando audio de referencia y su transcripción exacta, reproduce todas las matices vocales.
-- Salida de audio a 48 kHz con calidad de estudio mediante super-resolución integrada en AudioVAE V2.
-- Generación en streaming en tiempo real con RTF ~0.3 en RTX 4090 y ~0.13 con aceleración Nano-vLLM.
-- Síntesis consciente del contexto: infiere automáticamente prosodia y expresividad apropiadas según el contenido del texto.
-- Soporte de fine-tuning completo (SFT) y LoRA con tan solo 5-10 minutos de audio.
+- Síntesis de voz multilingüe en 30 idiomas sin necesidad de etiqueta de idioma: el texto de entrada se procesa directamente en el idioma detectado.
+- Soporte de diez dialectos del chino (sichuanés, cantonés, wu, dongbei, henanés, shaanxi, shandong, tianjin, minnan).
+- Diseño de voz (voice design): generación de una voz nueva a partir de una descripción en lenguaje natural entre paréntesis al inicio del texto (género, edad, tono, emoción, velocidad), sin audio de referencia.
+- Clonación de voz básica a partir de un clip corto de referencia.
+- Clonación controlable: la clonación admite guía de estilo opcional (emoción, ritmo, expresión) preservando el timbre original.
+- Clonación de máxima fidelidad (ultimate cloning): requiere audio de referencia y su transcripción exacta, con reproducción fiel de matices vocales.
+- Síntesis consciente del contexto: infiere prosodia y expresividad a partir del contenido del texto.
+- Streaming en tiempo real mediante `generate_streaming`, con concatenación de fragmentos de audio.
+- Salida a 48 kHz con superresolución integrada desde referencias de 16 kHz.
+- Ajuste fino supervisado completo sobre datos propios.
+- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso ni procesamiento de visión o audio de entrada más allá de la referencia de voz.
 
 ## Casos de uso
 
-- Audiolibros y narración multilingüe: VoxCPM2 puede generar narración natural en 30 idiomas sin etiquetas de idioma, ideal para plataformas de audiolibros que necesitan producir contenido en múltiples mercados con una sola infraestructura.
-- Asistentes de voz y chatbots con voz personalizada: el voice design permite crear voces de marca coherentes describiendo características (por ejemplo, "mujer joven, voz dulce y cercana") sin necesidad de grabar a un locutor.
-- Doblaje y localización de contenidos: la clonación controlable permite replicar la voz de un actor a partir de un clip corto y ajustar el estilo emocional para adaptarse a la escena, acelerando el proceso de doblaje.
-- Accesibilidad para personas con discapacidad del habla: la clonación de voz a partir de grabaciones previas permite preservar la voz de una persona para sistemas de comunicación aumentativa.
-- Generación de contenido educativo y e-learning: la síntesis de voz con control de ritmo y emoción es adecuada para crear lecciones interactivas en varios idiomas con una voz consistente.
-- Producción de podcasts y contenido audiovisual: el streaming en tiempo real y la calidad de 48 kHz permiten integrar el modelo en pipelines de producción donde se necesita generar locuciones de forma rápida y con alta fidelidad.
-- Testing de IVR y sistemas telefónicos: la clonación de voz y el control de estilo permiten generar muestras de voz para probar sistemas de respuesta interactiva en múltiples idiomas.
+- Audiolibros y narración automatizada: el modelo infiere prosodia y expresividad del propio texto y permite dirigir el estilo mediante descripciones entre paréntesis, lo que facilita generar capítulos completos con voces consistentes y cambios de tono según el contenido narrativo.
+- Doblaje y localización de vídeo a 30 idiomas: con salida a 48 kHz y clonación controlable, se puede preservar el timbre del actor original mientras se cambia el idioma, manteniendo emoción y ritmo mediante guía de estilo.
+- Asistentes de voz en tiempo real: el RTF de aproximadamente 0,30 en RTX 4090 y de aproximadamente 0,13 con Nano-vLLM, junto con la API de streaming, permiten alimentar pipelines de conversación por voz con latencia compatible con interacción natural.
+- Atención al cliente telefónica automatizada: la ventana de 8.192 tokens del modelo de lenguaje y la síntesis multilingüe sin etiqueta permiten gestionar conversaciones multi-turno en varios idiomas con una única instancia.
+- Accesibilidad y lectura de pantalla: la salida a 48 kHz y la clonación de voz permiten generar lectores personalizados que reproducen la voz del propio usuario o de un familiar a partir de un clip corto.
+- Creación de contenido y podcasting: el diseño de voz por descripción permite generar voces nuevas sin material de referencia, útil para prototipado rápido de personajes o locuciones publicitarias.
+- Preservación de patrimonio lingüístico: la cobertura de idiomas de bajos recursos como birmano, jemer, lao, suajili o tagalo, junto con la licencia Apache-2.0, facilita la creación de corpus y herramientas de síntesis para comunidades con poca representación tecnológica.
+- Integración en pipelines de CI/CD para generación de avisos y resúmenes hablados: el modelo se puede invocar desde Python con `voxcpm` y desplegarse en SageMaker, lo que permite automatizar la producción de audio en flujos de integración.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona que VoxCPM2 alcanza resultados de vanguardia o competitivos en benchmarks de TTS zero-shot y controlable (Seed-TTS-eval, CV3-eval, InstructTTSEval, MiniMax Multilingual Test), pero remite al repositorio de GitHub para las tablas completas. No se proporcionan cifras concretas en el README ni en los resultados de búsqueda web.
+La model card indica que VoxCPM2 alcanza resultados de estado del arte o competitivos en las principales evaluaciones de TTS zero-shot y controlable, y remite a las tablas completas del repositorio de GitHub (Seed-TTS-eval, CV3-eval, InstructTTSEval, MiniMax Multilingual Test). Los valores numéricos concretos no están incluidos en la información proporcionada.
+
+| Benchmark | Resultado |
+|---|---|
+| Seed-TTS-eval | no disponible en la información proporcionada |
+| CV3-eval | no disponible en la información proporcionada |
+| InstructTTSEval | no disponible en la información proporcionada |
+| MiniMax Multilingual Test | no disponible en la información proporcionada |
+| RTF en RTX 4090 | aproximadamente 0,30 (estándar) / aproximadamente 0,13 (Nano-vLLM) |
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~8 GB según la model card, lo que permite inferencia en GPUs de gama media.
-- GPU recomendada: NVIDIA RTX 4090 para tiempo real (RTF ~0.3); con aceleración Nano-vLLM se logra RTF ~0.13 en la misma GPU.
-- Compatibilidad con GPUs de consumo: sí, cualquier GPU con al menos 8 GB de VRAM y soporte CUDA ≥ 12.0 (por ejemplo, RTX 3060, RTX 4060, RTX 3090).
-- Opciones de despliegue: librería `voxcpm` (pip install voxcpm), integración con Nano-vLLM para aceleración, y demo en Hugging Face Spaces.
-- Requisitos de software: Python ≥ 3.10, PyTorch ≥ 2.5.0, CUDA ≥ 12.0.
-- Latencia y throughput: RTF ~0.30 en RTX 4090 sin aceleración; ~0.13 con Nano-vLLM.
+- VRAM estimada para inferencia: aproximadamente 8 GB según la model card, en bfloat16.
+- GPU recomendadas: NVIDIA RTX 4090 para el RTF de referencia (aproximadamente 0,30); A100 o H100 para despliegues de mayor concurrencia; CUDA 12.0 o superior y PyTorch 2.5.0 o superior.
+- Cabe en GPU de consumo: sí, con aproximadamente 8 GB de VRAM, lo que incluye tarjetas de gama alta de consumo como la RTX 4090 y modelos con 12 GB o más.
+- Opciones de despliegue: librería `voxcpm` (instalación mediante `pip install voxcpm`), despliegue en Amazon SageMaker (etiqueta `deploy:sagemaker`), aceleración con Nano-VLLM (repositorio `a710128/nanovllm-voxcpm`), y la demo alojada en Hugging Face Spaces.
+- Latencia y throughput: RTF de aproximadamente 0,30 en RTX 4090 con el runtime estándar y de aproximadamente 0,13 con Nano-VLLM, es decir, entre 3x y 7,7x más rápido que tiempo real en esa GPU.
+- Requisitos de software: Python 3.10 o superior.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de comparativa directa en la información proporcionada. Sin embargo, VoxCPM2 compite con otros modelos TTS multilingües open source como:
-
-| Modelo | Parametros | Idiomas | Salida | Licencia | Contexto |
+| Modelo | Parámetros | Idiomas | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxCPM2 | 2,29 B | 30 | 48 kHz | Apache-2.0 | 8192 tokens |
-| XTTS v2 (Coqui) | ~500 M | 17 | 24 kHz | CPML (no comercial) | no disponible |
-| Bark (Suno) | ~1,2 B | 13 | 24 kHz | MIT (con restricciones de uso) | no disponible |
-| CosyVoice 2 (Alibaba) | ~1,5 B | 4 | 24 kHz | Apache-2.0 | no disponible |
+| VoxCPM2 | 2,29B | 30 (+10 dialectos del chino) | 48 kHz | Apache-2.0 | Hugging Face, GitHub, SageMaker |
+| Alternativas de la misma categoría (TTS multilingüe zero-shot) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-VoxCPM2 destaca por su mayor número de idiomas, salida a 48 kHz y licencia Apache-2.0 sin restricciones comerciales, mientras que alternativas como XTTS v2 tienen licencias más restrictivas.
+No se dispone en la información proporcionada de datos verificables sobre modelos comparables de la misma categoría (parámetros, contexto, rendimiento, licencia y disponibilidad) que permitan establecer una comparación rigurosa. Se recomienda consultar las tablas comparativas del repositorio de GitHub del autor, que incluyen evaluaciones frente a otros sistemas en Seed-TTS-eval, CV3-eval, InstructTTSEval y MiniMax Multilingual Test.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos sobre sesgos o comportamientos indeseados en la información disponible; se recomienda auditar el modelo antes de desplegarlo en producción.
-- La clonación de voz puede utilizarse para suplantación de identidad; es necesario implementar medidas de control y consentimiento en aplicaciones públicas.
-- El modelo requiere GPU con al menos 8 GB de VRAM para inferencia local; no se especifica soporte para CPU.
-- La longitud máxima de contexto es de 8192 tokens (~21,8 minutos de audio), por lo que textos muy largos necesitan segmentación.
-- Aunque la licencia Apache-2.0 permite uso comercial, el modelo se distribuye tal cual sin garantías; los usuarios deben verificar el cumplimiento de normativas locales sobre voces sintéticas (por ejemplo, la IA Act europea).
-- No se han publicado resultados de benchmarks detallados en la documentación accesible, lo que dificulta la comparación objetiva con alternativas.
+- La model card no documenta sesgos conocidos del modelo; al estar entrenado sobre más de 2 millones de horas de voz multilingüe, es probable que herede sesgos de acento, género y registro presentes en esos datos, pero no se cuantifican.
+- Riesgo de alucinación en el sentido de prosodia o contenido no solicitado: no se documenta en la información disponible; en TTS el riesgo principal es la generación de artefactos o pronunciaciones incorrectas en textos ambiguos o fuera de distribución.
+- La clonación de voz plantea riesgos de suplantación de identidad y uso fraudulento; aunque la licencia Apache-2.0 permite uso comercial, el despliegue en producción debería incorporar consentimiento explícito y mecanismos de verificación.
+- Cobertura de idiomas limitada a los 30 listados; no se documenta el rendimiento por idioma ni la calidad relativa en idiomas de bajos recursos como birmano, jemer, lao o suajili.
+- El contexto del modelo de lenguaje es de 8.192 tokens, lo que limita la longitud de texto sintetizable en una sola pasada; para textos largos será necesario segmentar.
+- No se documentan en la información disponible los tipos de cuantización soportados; los pesos se publican en bfloat16, lo que condiciona el despliegue en hardware sin soporte nativo de esa precisión.
+- La licencia Apache-2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene revisar los términos de los datasets de entrenamiento, no detallados en la model card.
+- El repositorio ocupa 9,5 GB, lo que exige espacio en disco y ancho de banda considerables para la descarga inicial.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openbmb/VoxCPM2
 - Repositorio GitHub: https://github.com/OpenBMB/VoxCPM
-- Documentación (ReadTheDocs): https://voxcpm.readthedocs.io/en/latest/
+- Documentación: https://voxcpm.readthedocs.io/en/latest/
 - Demo interactiva (Hugging Face Spaces): https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Página de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
+- Discord: https://discord.gg/KZUx7tVNwz
+- Wiki de MiniCPM: https://openbmb.cn/docs/
 - Paper (arXiv): https://arxiv.org/abs/2509.24650
-- Aceleración Nano-vLLM: https://github.com/a710128/nanovllm-voxcpm
+- Aceleración Nano-VLLM para VoxCPM: https://github.com/a710128/nanovllm-voxcpm

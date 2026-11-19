@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`huggingface-mic/mbart-large-50-mic` es un artefacto de prueba (fixture) derivado de `facebook/mbart-large-50`, el modelo de traducción multilingüe de Meta AI basado en la arquitectura mBART-50. Lo publica la organización `huggingface-mic` con el propósito explícito de servir como banco de pruebas para integraciones de frameworks, no como modelo utilizable en producción. La model card lo etiqueta como `test-artifact` precisamente para excluirlo de búsquedas de modelos candidatos.
+`huggingface-mic/mbart-large-50-mic` es un artefacto de prueba (fixture) publicado por el equipo `huggingface-mic` para validar su infraestructura de contratos y expectativas de integración con Transformers. No es un modelo entrenado ni utilizable para traducción: se trata de una versión reducida artificialmente del checkpoint `facebook/mbart-large-50`, con solo 16,55 millones de parámetros frente a los aproximadamente 610 millones del modelo original. Sus pesos son aleatorios (semilla 17) y su propósito es servir como objetivo de pruebas reproducible.
 
-El repositorio contiene una versión "slim" del checkpoint original: mantiene la misma arquitectura (`MBartForConditionalGeneration`) y los mismos nombres de tensores, pero reduce el número de capas del encoder y del decoder a 2 cada una, lo que deja el total en 16.552.774 parámetros (frente a los aproximadamente 610 millones del modelo base). Los pesos son aleatorios (semilla 17) y los ficheros del procesador (tokenizer SentencePiece, `generation_config.json`, `special_tokens_map.json`, `tokenizer_config.json`) se copian byte a byte del modelo original.
+El repositorio empaqueta pesos reducidos, uso ejecutable y expectativas de framework en un único lugar, con un manifiesto de contrato (`integration.json`), un registro de procedencia (`build.json`) y documentación de uso para Transformers. La arquitectura es idéntica a la del modelo base (`MBartForConditionalGeneration`), pero con solo 2 capas de encoder y 2 de decoder, lo que lo convierte en un sustituto ligero para tests de CI sin necesidad de descargar ni ejecutar el modelo completo.
 
-Su relevancia es puramente técnica e instrumental: permite validar contratos de integración (carga, forward, loss, gradientes, sensibilidad a entradas) en float32, bfloat16 y float16 sin descargar ni ejecutar el modelo completo. No debe confundirse con un modelo entrenado ni usarse para inferencia real de traducción.
+Es relevante únicamente en el contexto de ingeniería de software: permite a los mantenedores de Transformers y de frameworks derivados verificar que su código carga, ejecuta y valida modelos mBART sin consumir recursos significativos. La etiqueta `test-artifact` está pensada explícitamente para excluirlo de búsquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
@@ -16,77 +16,82 @@ Su relevancia es puramente técnica e instrumental: permite validar contratos de
 | Parametros totales | 16.552.774 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en float32; verificado finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | no disponible; pesos guardados en float32 |
+| Idiomas soportados | no disponible (el modelo base mBART-50 soporta 50 idiomas, pero el fixture no se ha entrenado) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo base | facebook/mbart-large-50 |
+| Dtype de carga por defecto | float32 |
+| Semilla de pesos | 17 (pesos aleatorios) |
+| Tamano del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `facebook/mbart-large-50` es un transformer encoder-decoder preentrenado para traducción multilingüe. Esta fixture conserva esa arquitectura y los nombres de tensores originales, pero reduce el config a 2 capas de encoder y 2 de decoder mediante la regla genérica de `sweep.py` del proyecto `transformers-mic`. No hay entrenamiento: los pesos se inicializan aleatoriamente con semilla 17 y se validan con una puerta de sensibilidad a la entrada, según la cual cada perturbación de las entradas del contrato desplaza los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, alcanza 0,00499).
+La arquitectura replica la del modelo `facebook/mbart-large-50` (`MBartForConditionalGeneration`), pero con la configuración reducida mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`: 2 capas de encoder y 2 capas de decoder. Los archivos del procesador (`generation_config.json`, `sentencepiece.bpe.model`, `special_tokens_map.json`, `tokenizer_config.json`) se copian byte a byte del checkpoint original, de modo que el tokenizador y la configuración de generación son idénticos a los del modelo real.
 
-Los ficheros del procesador se copian literalmente del checkpoint original, de modo que el pipeline de tokenización es idéntico al del modelo real. La fixture se guarda en float32, el dtype por defecto de `facebook/mbart-large-50`, y se verifica que forward, loss y gradientes son finitos en float32, bfloat16 y float16. El repositorio incluye además un manifiesto de contrato (`integration.json`), documentación de uso para Transformers (`integrations/transformers/usage.md`), expectativas del framework (`integrations/transformers/expectations`) y procedencia de la fixture (`build.json`).
+No hubo entrenamiento. Los pesos se inicializan aleatoriamente con semilla 17 y se validan mediante una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato mueve los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, mueve 0,00499). Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture `2a8018f58464` agrupa todos los checkpoints cuyos archivos de procesador son idénticos byte a byte y cuya configuración coincide tras el reducido.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no producen traducciones ni texto coherente.
-- Sirve como fixture de integración para validar la carga de `MBartForConditionalGeneration` en Transformers.
-- Permite comprobar el contrato de entradas y salidas (input_ids, attention_mask, logits) con sensibilidad mínima garantizada.
-- Verifica estabilidad numérica en float32, bfloat16 y float16 (forward, loss, gradientes).
-- Reutiliza el tokenizer SentencePiece y los ficheros de configuración del modelo base sin modificaciones.
-- No soporta tool calling, agentes, visión, audio ni modo de razonamiento.
+- Carga y ejecución con `MBartForConditionalGeneration` de Transformers, con los mismos nombres de tensor que el modelo base.
+- Tokenización idéntica a `facebook/mbart-large-50` mediante el `sentencepiece.bpe.model` copiado.
+- Ejecución en float32, bfloat16 y float16 (forward, loss y gradientes finitos).
+- Sirve como objetivo de pruebas para validar contratos de integración y expectativas de framework.
+- No traduce, no genera texto coherente ni razona: los pesos son aleatorios.
+- No soporta tool calling, agentes, visión ni audio.
+- No tiene capacidades multilingües reales a pesar de heredar el tokenizador del modelo base.
 
 ## Casos de uso
 
-- Pruebas de integración en CI: cargar la fixture en un job ligero (0,1 GB de repo) para comprobar que la versión de Transformers en uso sigue aceptando `MBartForConditionalGeneration` sin descargar los ~2,4 GB del checkpoint real.
-- Validación de contratos de framework: ejecutar `integrations/transformers/expectations` para verificar que las entradas declaradas producen cambios de logits por encima del umbral definido.
-- Pruebas de precisión mixta: comprobar que forward, loss y gradientes permanecen finitos en bfloat16 y float16 antes de aplicar esas rutas al modelo completo.
-- Desarrollo de pipelines de tokenización: al copiar byte a byte el `sentencepiece.bpe.model` y el `tokenizer_config.json`, permite probar la tokenización multilingüe de mBART-50 sin cargar los pesos grandes.
-- Regresión de serialización: validar que el guardado y recarga en safetensors float32 conserva los nombres de tensores del checkpoint original.
-- Docencia y demos de arquitectura: inspeccionar la estructura encoder-decoder de mBART con un modelo de 16,5 M de parámetros que cabe en cualquier entorno, incluido CPU.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture mbart-large-50-mic` y comparar hashes registrados en `build.json`.
+- Pruebas de integración en CI de Transformers: el fixture permite ejecutar el pipeline de carga y forward de mBART en segundos y con 0,1 GB de descarga, sin necesidad del checkpoint completo de 610 M de parámetros.
+- Validación de contratos de framework: `integration.json` y el directorio `integrations/transformers/expectations` definen las salidas esperadas; el fixture actúa como oráculo reproducible para detectar regresiones en la API.
+- Verificación de compatibilidad de dtypes: permite comprobar que el código de carga y ejecución funciona en float32, bfloat16 y float16 sin errores numéricos.
+- Pruebas de tokenizador y procesador: al copiar byte a byte los archivos del procesador del modelo real, sirve para validar la integración del tokenizador SentencePiece de mBART-50.
+- Desarrollo de herramientas de reducción de modelos: el repositorio documenta el proceso de `sweep.py` y `build_fixtures.py`, útil para quien quiera replicar la técnica en otros checkpoints.
+- Reproducibilidad de artefactos: `build.json` registra fuentes fijadas, resultados de la puerta de sensibilidad y hashes de archivos, lo que permite reconstruir el fixture de forma determinista.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (BLEU, MMLU, etc.) carecería de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios y no está pensado para evaluación de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (16,5 M de parámetros, ~66 MB de pesos) más el overhead de activaciones, despreciable.
-- GPU recomendadas: ninguna en particular; funciona en CPU sin problema.
-- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU con memoria compartida.
-- Opciones de despliegue: Transformers (ruta principal documentada en `integrations/transformers/usage.md`); otras rutas (vLLM, llama.cpp, Ollama, TGI) no están documentadas para esta fixture.
-- Latencia y throughput: no disponibles; al ser una fixture de 2+2 capas, la latencia sería muy inferior a la del modelo real, pero no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (16,55 M de parámetros, aproximadamente 66 MB de pesos) y aún menos en float16 o bfloat16.
+- GPU recomendadas: cualquier GPU consumer moderna; también funciona en CPU sin problema.
+- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU con suficiente memoria compartida.
+- Opciones de despliegue: Transformers (vía `MBartForConditionalGeneration`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un modelo de 2+2 capas, la latencia es del orden de milisegundos en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Capas enc/dec | Contexto | Pesos | Proposito | Licencia |
-|---|---|---|---|---|---|---|
-| huggingface-mic/mbart-large-50-mic | 16,5 M | 2 / 2 | no disponible | Aleatorios (seed 17) | Fixture de integración | no disponible |
-| facebook/mbart-large-50 | ~610 M | 12 / 12 | 1024 tokens (mBART-50) | Entrenados | Traducción multilingüe | MIT (según el modelo base) |
-| facebook/mbart-large-50-many-to-many-mmt | ~610 M | 12 / 12 | 1024 tokens | Entrenados (fine-tune MMT) | Traducción multilingüe many-to-many | MIT (según el modelo base) |
+| Modelo | Parametros | Contexto | Uso previsto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| huggingface-mic/mbart-large-50-mic | 16,55 M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| facebook/mbart-large-50 | ~610 M | 1024 tokens (estándar mBART) | Traducción multilingüe | MIT | Hugging Face |
+| facebook/mbart-large-50-many-to-many-mmt | ~610 M | 1024 tokens (estándar mBART) | Traducción multilingüe fine-tuneada | MIT | Hugging Face |
+| facebook/mbart-large-50-one-to-many-mmt | ~610 M | 1024 tokens (estándar mBART) | Traducción multilingüe fine-tuneada | MIT | Hugging Face |
 
-La comparación solo tiene sentido a nivel estructural: la fixture replica la interfaz del modelo base con un tamaño reducido. No es una alternativa funcional a mBART-50 ni a ningún modelo de traducción.
+La comparación con los checkpoints originales de mBART-50 es solo estructural: el fixture comparte arquitectura y procesador, pero no pesos entrenados ni capacidad de traducción. No se dispone de datos de benchmarks para comparar rendimiento.
 
 ## Limitaciones y advertencias
 
-- Los pesos son aleatorios: la salida no es texto ni traducción válida. No usar en producción ni en demos de calidad.
-- Etiquetada como `test-artifact` para excluirla de búsquedas de modelos candidatos; ignorar esa etiqueta puede llevar a integrarla por error.
-- La licencia no está declarada en la información disponible; hay que remitirse a la del modelo base (`facebook/mbart-large-50`) antes de cualquier uso.
-- El número de capas reducido (2/2) implica que no reproduce el comportamiento numérico del checkpoint completo, solo la interfaz y la estabilidad básica.
-- La longitud de contexto, los idiomas soportados y las cuantizaciones no están documentados para esta fixture.
-- Los ficheros del procesador son idénticos a los del modelo base, pero el vocabulario y los tokens especiales no se han validado contra una tarea de traducción real.
-- Riesgo de alucinación: irrelevante en sentido estricto, pero cualquier texto generado será ruido aleatorio.
+- Los pesos son aleatorios (semilla 17): el modelo no produce traducciones ni texto coherente.
+- Es un artefacto de prueba etiquetado `test-artifact`; no debe usarse en producción ni como modelo candidato.
+- La licencia no está especificada en la información disponible; conviene consultar el repositorio antes de cualquier uso.
+- No se declaran idiomas soportados ni pipeline; hereda el tokenizador de mBART-50 pero no su capacidad multilingüe.
+- El tamaño reducido (2+2 capas) implica que su comportamiento numérico no representa al modelo completo.
+- Riesgo de confusión: el nombre `mbart-large-50-mic` puede llevar a pensar que es un fine-tune utilizable; la model card aclara explícitamente lo contrario.
+- Para reconstruir archivos no incluidos hay que ejecutar `python example/build_fixtures.py --fixture mbart-large-50-mic`.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/mbart-large-50-mic
 - Modelo base: https://huggingface.co/facebook/mbart-large-50
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/mbart-large-50-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/mbart-large-50-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/mbart-large-50-mic/tree/main/integrations/transformers/expectations
-- Procedencia de la fixture: https://huggingface.co/huggingface-mic/mbart-large-50-mic/blob/main/build.json
+- Documentación de uso en Transformers: `integrations/transformers/usage.md` (dentro del repositorio)
+- Expectativas de Transformers: `integrations/transformers/expectations` (dentro del repositorio)
+- Manifiesto de contrato: `integration.json` (dentro del repositorio)
+- Procedencia del fixture: `build.json` (dentro del repositorio)
 - Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/mbart-large-50-mic.html
-- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

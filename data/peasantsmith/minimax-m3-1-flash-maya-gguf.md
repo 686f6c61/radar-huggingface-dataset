@@ -2,56 +2,58 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash · Maya GGUF es una colección de cuantizaciones GGUF del modelo MiniMax-M3.1-Flash de MiniMaxAI, creadas por el usuario peasantsmith y diseñadas para funcionar con Project Maya, un motor de inferencia que mantiene en GPU los expertos más utilizados y calcula el resto desde la RAM. El modelo base es un MoE multimodal (imagen-texto a texto) de 426.174.572.928 parámetros totales, con unos 23.000 millones de parámetros activos por token, atención dispersa en todas las capas y una ventana de contexto de hasta 1 millón de tokens.
+MiniMax-M3.1-Flash es un modelo multimodal de tipo mixture-of-experts (MoE) desarrollado por MiniMax, con 428.000 millones de parametros totales y 23.000 millones activos por token. Esta ficha cubre la version cuantizada publicada por peasantsmith bajo el nombre Maya GGUF, una conversion a formato GGUF realizada con cuantizadores de llama.cpp y calibracion propia (imatrix por experto) pensada para ejecutar el modelo en equipos de sobremesa mediante el motor Project Maya, que mantiene los expertos mas usados en GPU y calcula el resto desde RAM.
 
-El problema que resuelve esta ficha de cuantización es la barrera de hardware: el modelo original pesa más de 400 GB, mientras que las variantes Maya-S y Maya-XS reducen la huella en memoria a 122,4 GB y 93,0 GB respectivamente, manteniendo una fidelidad medida frente al original (incremento de NLL de +0,8% y +5,0%). Las cuantizaciones se elaboraron a partir de los pesos publicados por MiniMax (expertos en FP4, pesos densos en FP8), no de un fichero re-cuantizado, y conservan todos los expertos.
+La relevancia de esta publicacion es practica: permite ejecutar un modelo de 428B parametros con contexto de hasta 1M tokens en una maquina con 128 GB de memoria, algo inviable con los pesos originales (FP4 en expertos, FP8 en capas densas). Se ofrecen dos variantes, Maya-S (122,4 GB en memoria, perdida de entropia cruzada de +0,8% respecto al original) y Maya-XS (93,0 GB, +5,0%).
 
-Es relevante ahora porque permite ejecutar en un PC de gama alta (128 GB de RAM) un modelo frontera orientado a agentes, código y razonamiento, con API compatible con OpenAI y Anthropic, tool calling y soporte de imágenes, algo habitualmente reservado a clústeres de GPUs de centro de datos.
+El repositorio acumula 69.620 descargas y 15 likes desde su creacion el 26 de octubre de 2026, con ultima actualizacion el 11 de noviembre de 2026. La licencia es la MiniMax Community License, que permite uso no comercial y condiciona el comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) multimodal, transformer con atención dispersa en todas las capas |
-| Parametros totales | 426.174.572.928 (según safetensors; la model card cita 428B) |
-| Parametros activos | ~23B por token (128 expertos enrutados por capa, 4 activos, más un experto compartido) |
+| Arquitectura | Transformer MoE multimodal con atencion dispersa en todas las capas (128 expertos enrutados por capa, 4 activos, mas un experto compartido) |
+| Parametros totales | 428B (pesos originales); el dato de safetensors del repo indica 6144, inconsistente con la model card |
+| Parametros activos | 23B por token |
 | Longitud de contexto | Hasta 1M tokens |
-| Tipos de cuantizacion | Maya-S: IQ2_XXS (con IQ2_XS/IQ2_S/IQ3_XXS en capas sensibles), atención Q8_0, expertos compartidos/densos/embeddings/salida Q6_K. Maya-XS: IQ1_S (con IQ2_XXS en capas sensibles), atención Q5_K/Q6_K, resto Q5_K/Q4_K/Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | MiniMax Community License (license_name: minimax-community, tipo "other") |
-| Formato de pesos | GGUF (shards divididos) + safetensors en el modelo base; incluye DSpark drafter (2,3 GB) y vision tower (1,7 GB) |
+| Tipos de cuantizacion | Maya-S: IQ2_XXS en expertos enrutados (IQ2_XS/IQ2_S/IQ3_XXS en capas sensibles), Q8_0 en atencion e indexador, Q6_K en expertos compartidos, capas densas, embeddings y salida. Maya-XS: IQ1_S en expertos (IQ2_XXS en capas sensibles), Q5_K/Q6_K en atencion, Q8_0 en indexador, Q5_K/Q4_K/Q6_K en el resto |
+| Idiomas soportados | No disponible (la model card menciona evaluacion de chat multilingue sin listar idiomas) |
+| Licencia | MiniMax Community License (uso no comercial libre; uso comercial con condiciones, incluida la atribucion "Built with MiniMax M3.1-Flash") |
+| Formato de pesos | GGUF (layout `minimax-m3` de llama.cpp); el repo tambien contiene safetensors como tag |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, MiniMax-M3.1-Flash, es un transformer con arquitectura mixture-of-experts: cada capa contiene 128 expertos enrutados de los cuales 4 se activan por token, además de un experto compartido siempre activo. Todas las capas emplean atención dispersa, con un indexador de atención dispersa que se ejecuta en cada capa (los indexadores de las capas 0-2 se distribuyen en un fichero GGUF adicional `*-maya-indexers.gguf`). Es un modelo multimodal con vision tower, clasificado como image-text-to-text. Sobre el entrenamiento del modelo base (tokens, composición del dataset, RLHF/DPO) no hay datos disponibles en la información proporcionada.
+El modelo base es un transformer MoE multimodal con 128 expertos enrutados por capa, de los cuales se activan 4 por token, mas un experto compartido, lo que resulta en 23B parametros activos sobre 428B totales. Emplea atencion dispersa en todas las capas, con un indexador de atencion dispersa por capa, y admite entradas de imagen y texto (pipeline `image-text-to-text`). Los pesos originales de MiniMax usan FP4 en los expertos y FP8 en las capas densas.
 
-En cuanto a la cuantización, el proceso de peasantsmith fue el siguiente: calibración con 384 secuencias de 2.048 tokens en el formato de chat de MiniMax (incluyendo thinking, trazas de agentes y tool calling, código con three.js/canvas/WebGL, razonamiento, chat y chat multilingüe); cálculo de una matriz de importancia (imatrix) por experto a partir de las estadísticas del propio modelo; asignación de bits a las capas más sensibles midiendo cada matriz gate/up/down en cada tipo candidato; redondeo con retroalimentación de error a nivel de bloques de 256 pesos, calibrando cada capa sobre la salida de las capas ya cuantizadas; y uso de los cuantizadores nativos de llama.cpp (ggml), de modo que los ficheros son GGUF ordinarios en el layout `minimax-m3`. Los resultados de calidad se midieron sobre conversaciones held-out no usadas en la calibración, contra las predicciones del modelo original decodificado exactamente, con los mismos resultados en NVIDIA y AMD.
+Las cuantizaciones de esta ficha se generaron desde la publicacion original de MiniMax, no desde un archivo ya recuantizado, y conservan todos los expertos. El proceso incluye calibracion con texto en el formato de chat propio de MiniMax (incluido el modo thinking): tool calls y trazas de agente, codigo (three.js, canvas, WebGL, front-end), razonamiento, respuestas largas, chat y chat multilingue, con 384 secuencias de 2.048 tokens y un conjunto de validacion separado. Se calculo una matriz de importancia por experto, se asignaron bits extra a las capas mas sensibles y se aplico redondeo con retroalimentacion de error en bloques de 256 pesos, calibrando cada capa sobre la salida de las capas ya cuantizadas. Los cuantizadores empleados son los de llama.cpp (ggml).
+
+El paquete incluye ademas el drafter DSpark de MiniMax (2,3 GB) para decodificacion especulativa y la torre de vision original (1,7 GB). Los indexadores de las capas 0-2 se distribuyen en un GGUF aparte (`*-maya-indexers.gguf`); Project Maya los carga para replicar el comportamiento definido por MiniMax, mientras que llama.cpp estandar ejecuta esas tres capas con atencion completa.
 
 ## Capacidades
 
-- Generación de texto conversacional, con niveles de thinking de MiniMax soportados en el motor de Project Maya.
-- Tool calling / function calling: categoría con 92,1% de coincidencia de top token en Maya-S y 88,8% en Maya-XS frente al original; el motor expone API compatible con OpenAI y Anthropic con tool calls en streaming.
-- Agentes y razonamiento multi-paso: la calibración incluyó trazas de agentes y el tag del repo lo recoge explícitamente.
-- Generación de código: 93,7% (Maya-S) / 90,9% (Maya-XS), con énfasis en front-end web (three.js, WebGL, canvas: 92,0% / 88,5%) y desarrollo web general (94,6% / 91,7%).
-- Razonamiento: 85,9% (Maya-S) / 80,4% (Maya-XS).
-- Multimodalidad: entrada de imagen gracias al vision tower incluido (1,7 GB, tal como lo publicó MiniMax).
-- Chat multilingüe: 78,5% (Maya-S) / 71,6% (Maya-XS).
-- Contexto muy largo: hasta 1M tokens, con atención dispersa en todas las capas.
-- Decodificación especulativa: se incluye el drafter DSpark de MiniMax (2,3 GB).
+- Generacion de texto y razonamiento multi-paso, con niveles de thinking configurables segun la model card.
+- Generacion de codigo, con enfasis declarado en front-end, three.js, WebGL y canvas.
+- Tool calling y function calling, con evaluacion especifica de tool calls y agentes.
+- Uso como agente: trazas de agente incluidas en el conjunto de calibracion y compatibilidad con API estilo OpenAI y Anthropic.
+- Capacidades multimodales de imagen a texto (torre de vision incluida en el repo).
+- Chat multilingue (evaluado en la tabla de calidad, sin listado de idiomas).
+- Contexto largo de hasta 1M tokens gracias a la atencion dispersa.
+- Decodificacion especulativa mediante el drafter DSpark.
+- Servicio con streaming a traves del motor Project Maya (dashboard en `http://127.0.0.1:8080` y API compatible).
 
 ## Casos de uso
 
-- Ejecución local de un modelo frontera en un PC de 128 GB de RAM: Maya-XS cabe íntegramente en la memoria de un equipo doméstico de gama alta gracias a Project Maya, que mantiene en GPU los expertos más usados y calcula el resto desde RAM.
-- Agentes con tool calling en local: la API compatible con OpenAI y Anthropic permite conectar el modelo a frameworks de agentes existentes (LangChain, Claude SDK, clientes OpenAI) sin cambios de código, con soporte de streaming.
-- Generación de front-end web: el modelo está calibrado específicamente para three.js, WebGL y canvas, lo que lo hace adecuado para asistentes que generan visualizaciones 3D y gráficos interactivos en el navegador.
-- Asistentes de código en IDEs locales: su alta fidelidad en código (90-94%) y el drafter DSpark para decodificación especulativa lo orientan a autocompletado y refactorización con baja latencia.
-- Análisis de documentos extensos: la ventana de 1M tokens permite procesar bases de código completas, expedientes o corpus documentales en una sola sesión.
-- Chatbots multilingües: la categoría de chat multilingüe calibrada indica buen comportamiento en conversación en varios idiomas, aunque la lista concreta de idiomas no está disponible.
-- Interfaces multimodales: combinando el vision tower con el motor, se pueden construir aplicaciones que describen imágenes o razonan sobre capturas de pantalla.
+- Asistencia de codigo front-end en local: el modelo rinde especialmente en tareas de three.js, WebGL, canvas y front-end (92,0% y 94,6% de coincidencia con el token superior del original en Maya-S), por lo que encaja en un asistente de IDE o en la generacion de prototipos visuales sin enviar codigo a la nube.
+- Agentes autonomos con tool calling: la evaluacion de tool calls y agentes alcanza el 92,1% en Maya-S, y la API es compatible con OpenAI y Anthropic, lo que permite conectarlo a frameworks de agentes existentes sin adaptadores.
+- Analisis de documentos extensos: con hasta 1M tokens de contexto y atencion dispersa, es adecuado para resumir o consultar repositorios completos, expedientes o bases de conocimiento en una sola pasada.
+- Procesamiento de imagenes con texto (image-text-to-text): la torre de vision incluida permite describir capturas, extraer datos de diagramas o responder preguntas sobre imagenes en un flujo local.
+- Chat multilingue de atencion al cliente: el modelo mantiene un 78,5% de coincidencia en chat multilingue en Maya-S, suficiente para conversaciones multi-turno con contexto largo, aunque la calidad en chat general es la categoria mas debil (76,4%).
+- Despliegue en estacion de trabajo con 128 GB de RAM: Maya-XS (93,0 GB) esta disenado para caber en la memoria de un PC de 128 GB, lo que permite ofrecer inferencia privada de un modelo de 428B sin servidores dedicados.
+- Generacion de codigo en pipelines de CI/CD: la compatibilidad con llama.cpp y con la API local permite integrarlo en revisiones automatizadas o generacion de pruebas, con la salvedad de la latencia derivada del calculo de expertos en RAM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí ofrece una métrica propia de fidelidad: porcentaje de coincidencia del top token frente al modelo original (pesos de MiniMax decodificados exactamente), medida en conversaciones held-out.
+La model card no incluye benchmarks academicos (MMLU, HumanEval, GSM8K). Publica una evaluacion de fidelidad frente al modelo original: porcentaje de coincidencia con el token superior predicho por los pesos originales de MiniMax, sobre conversaciones no usadas en calibracion.
 
 | Categoria | Maya-S | Maya-XS |
 |---|---:|---:|
@@ -62,44 +64,46 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Razonamiento | 85,9% | 80,4% |
 | Chat | 76,4% | 66,5% |
 | Chat multilingue | 78,5% | 71,6% |
-| **Media de las categorias** | **87,6%** | **82,6%** |
+| Media de categorias | 87,6% | 82,6% |
 
-Adicionalmente, el incremento de next-token loss (NLL) frente al original es de +0,8% para Maya-S y +5,0% para Maya-XS.
+Perdida de entropia cruzada (NLL) frente al original: +0,8% en Maya-S y +5,0% en Maya-XS. Tamanos en memoria: 122,4 GB y 93,0 GB respectivamente.
 
 ## Requisitos de hardware
 
-- Memoria del modelo: Maya-S ocupa 122,4 GB; Maya-XS, 93,0 GB (diseñada para caber en la memoria de un PC con 128 GB de RAM). A esto se suman el drafter DSpark (2,3 GB) y el vision tower (1,7 GB).
-- GPUs: NVIDIA desde V100 en adelante, o AMD; Project Maya compila el motor para las GPU(s) disponibles. No se especifica una VRAM mínima concreta, ya que el motor descarga expertos a RAM.
-- Consumer GPUs: el enfoque de Project Maya (expertos frecuentes en GPU, resto en RAM) permite ejecutar el modelo en estaciones de trabajo con 128 GB de RAM y GPUs de consumo compatibles; el repo indica explícitamente que Maya-XS está pensada para "todo el modelo en la memoria de un PC de 128 GB".
-- Despliegue: Project Maya (v1.1.30 o posterior) con instalación automatizada (`./setup.sh --setup --model minimax-maya-s` o `minimax-maya-xs`, o `START-MAYA.bat` en Windows), dashboard en `http://127.0.0.1:8080` y API compatible con OpenAI y Anthropic (streaming, tool calls, imágenes, niveles de thinking). Los shards también cargan en llama.cpp estándar (layout `minimax-m3`), aunque este ejecuta las capas 0-2 con atención completa en lugar de los indexadores dedicados. No se menciona soporte de vLLM, Ollama o TGI.
-- Latencia y throughput: no disponibles. Se incluye el drafter DSpark para acelerar la generación mediante decodificación especulativa.
-- Descargas: los ficheros se verifican por sha256 y las descargas se pueden reanudar.
+- Memoria: Maya-S requiere 122,4 GB en memoria; Maya-XS, 93,0 GB. El diseno de Project Maya combina VRAM y RAM del sistema, por lo que el total de memoria del equipo debe superar esas cifras.
+- GPU: Project Maya soporta NVIDIA desde V100 en adelante, y AMD (la model card indica los mismos resultados en ambas plataformas).
+- GPU de consumo: la model card no confirma ejecucion en GPU de consumo aisladas; el requisito real es el total de memoria del sistema (un PC de 128 GB para Maya-XS), no una GPU concreta.
+- Almacenamiento: el repo completo ocupa 219,5 GB.
+- Despliegue: Project Maya v1.1.30 o superior (recomendado, con dashboard y API compatible con OpenAI y Anthropic); los shards tambien cargan en llama.cpp con el layout `minimax-m3`.
+- Latencia y throughput: no disponibles. La decodificacion especulativa con DSpark y el calculo de expertos desde RAM condicionan el rendimiento, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. Como referencia de posicionamiento dentro de la categoría de MoE grandes cuantizados para hardware de consumo:
+No se dispone de datos de rendimiento de modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros y disponibilidad.
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Formato | Licencia |
+| Modelo | Parametros | Activos | Contexto | Formato | Licencia |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash (Maya GGUF) | 426B | ~23B | 1M | GGUF (IQ1_S/IQ2_XXS mixtos) | MiniMax Community License (uso comercial con condiciones) |
-| DeepSeek-V3 / R1 (cuantizado) | 671B | 37B | no disponible en esta ficha | GGUF comunitario | MIT (modelo base) |
-| Qwen3-235B-A22B | 235B | 22B | no disponible en esta ficha | GGUF comunitario | Apache 2.0 |
+| MiniMax-M3.1-Flash (original) | 428B | 23B | 1M | safetensors (FP4/FP8) | MiniMax Community |
+| Maya-S (esta ficha) | 428B | 23B | 1M | GGUF IQ2_XXS | MiniMax Community |
+| Maya-XS (esta ficha) | 428B | 23B | 1M | GGUF IQ1_S | MiniMax Community |
 
-Nota: los datos de DeepSeek y Qwen se ofrecen como contexto general; para cifras exactas de contexto y rendimiento conviene consultar sus fichas oficiales. La ventaja diferencial de Maya es el motor Project Maya, que permite ejecutar un MoE de 426B íntegro en un PC de 128 GB, algo que con GGUF estándar requeriría más memoria o sacrificaría expertos.
+No disponible la comparacion con alternativas de otros desarrolladores por falta de datos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia con condiciones comerciales: la MiniMax Community License es gratuita para uso no comercial; el uso comercial tiene requisitos, incluido mostrar el texto "Built with MiniMax M3.1-Flash". Hay que revisar el fichero LICENSE antes de cualquier despliegue comercial.
-- Pérdida de calidad por cuantización: aunque la coincidencia de top token es alta (87,6% de media en Maya-S), Maya-XS degrada notablemente en chat (66,5%) y chat multilingüe (71,6%); las respuestas no serán idénticas al modelo original.
-- Cuantización extrema: IQ1_S e IQ2_XXS son formatos de muy baja precisión; existe riesgo de alucinaciones o errores de razonamiento mayores que en el modelo original, especialmente en Maya-XS.
-- Compatibilidad parcial con llama.cpp: con llama.cpp estándar, las capas 0-2 se ejecutan con atención completa en lugar de los indexadores dedicados, lo que puede alterar el comportamiento respecto a la ejecución definida por MiniMax; para fidelidad total hay que usar Project Maya.
-- Idiomas: la lista de idiomas soportados no está disponible; el chat multilingüe es la categoría con menor fidelidad tras chat.
-- Datos de entrenamiento, sesgos conocidos y cifras de latencia/throughput: no disponibles en la información proporcionada.
-- Requisitos de memoria elevados: se necesita un equipo con 128 GB de RAM (o más) y GPU NVIDIA (V100 o superior) o AMD; no es viable en portátiles o equipos estándar.
-- El proyecto de cuantización es comunitario (peasantsmith), no oficial de MiniMax: los resultados de fidelidad son mediciones del propio autor sobre conversaciones held-out, no benchmarks independientes.
+- La cuantizacion introduce degradacion medible: +5,0% de NLL en Maya-XS y un descenso de calidad especialmente marcado en chat (66,5% frente a 76,4% de Maya-S). Para tareas conversacionales, Maya-S es claramente preferible.
+- El chat general y el chat multilingue son las categorias con menor fidelidad incluso en Maya-S (76,4% y 78,5%), por lo que no es la opcion ideal para atencion al cliente de alta exigencia.
+- Riesgo de alucinacion inherente a los modelos generativos; no se documentan evaluaciones de veracidad.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Idiomas soportados: no se listan; la evaluacion multilingue no especifica que lenguas cubre.
+- Licencia: uso no comercial libre; el uso comercial esta condicionado, incluida la obligacion de mostrar "Built with MiniMax M3.1-Flash". Las cuantizaciones heredan la misma licencia.
+- Dependencia de Project Maya para el comportamiento completo: llama.cpp estandar ejecuta las capas 0-2 con atencion completa al cargar solo los shards, lo que altera el comportamiento definido por MiniMax.
+- El dato de parametros del campo safetensors del repo (6144) es inconsistente con los 428B de la model card; debe tratarse como un error de metadatos.
+- Requiere hardware con al menos 93 GB de memoria total y un proceso de descarga y compilacion no trivial (setup de Project Maya).
 
 ## Enlaces
 
-- Ficha del modelo cuantizado: https://huggingface.co/peasantsmith/MiniMax-M3.1-Flash-Maya-GGUF
+- Repositorio Hugging Face: https://huggingface.co/peasantsmith/MiniMax-M3.1-Flash-Maya-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
-- Project Maya (motor de inferencia): https://github.com/mw00/project-maya
+- Project Maya (motor): https://github.com/mw00/project-maya
+- Licencia: LICENSE dentro del repositorio (MiniMax Community License)

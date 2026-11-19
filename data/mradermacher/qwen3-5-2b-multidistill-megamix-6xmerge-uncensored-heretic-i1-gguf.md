@@ -2,85 +2,90 @@
 
 ## Resumen
 
-Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF es una colección de cuantizaciones GGUF con matriz de importancia (imatrix) publicada por el usuario mradermacher, un cuantizador muy conocido en la comunidad de Hugging Face. El modelo cuantizado es un merge de seis modelos basado en la familia Qwen3.5 de 2B parámetros, creado por el usuario xtools-at mediante destilación multi-profesor (multi-distill) sobre datasets de razonamiento, código y conversación, y posteriormente procesado con la técnica "heretic" (abliteración/decensurado) para eliminar los rechazos de seguridad del modelo original.
+Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF es una cuantización GGUF del modelo merge xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic, publicada por mradermacher. Se trata de un modelo multimodal de tipo image-text-to-text construido sobre la familia Qwen3.5, con 1.942.653.248 parámetros totales (aproximadamente 2B), pensado para tareas de razonamiento, conversación, código y matemáticas.
 
-El modelo base combina capacidades de razonamiento con cadena de pensamiento (chain-of-thought), generación de código, matemáticas y comprensión multimodal de imagen-texto, todo ello en un tamaño muy reducido (1,88 mil millones de parámetros) que lo hace especialmente atractivo para ejecución local en hardware modesto. Su relevancia reside en ofrecer un modelo pequeño, sin filtros de alineación y con capacidades de razonamiento destiladas de modelos mucho mayores, disponible en más de veinte formatos de cuantización que cubren desde 0,8 GB hasta aproximadamente 2 GB.
+El modelo base combina varias técnicas de destilación y merging sobre datasets de razonamiento (polaris-alpha, KIMI-K2.5, tulu-3-sft-mixture, Opus-4.6-Reasoning y Qwen3.5-reasoning), y ha sido sometido a un proceso de "abliteration" o decensurado (etiquetas heretic, uncensored, decensored, abliterated) que elimina las capas de rechazo del modelo original. Esta versión i1-GGUF aplica cuantización con imatrix, ofreciendo un abanico de cuantizaciones desde Q2_K (1,1 GB) hasta Q6_K (1,7 GB).
 
-## Especificaciones técnicas
+Su relevancia radica en que permite ejecutar un modelo de razonamiento y visión de ~2B parámetros en hardware de consumo, con licencia Apache 2.0 y sin las restricciones de contenido del modelo original. No obstante, el proceso de decensurado conlleva riesgos importantes de seguridad y calidad que se detallan en las limitaciones.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5), pipeline image-text-to-text |
-| Parametros totales | 1.881.825.088 (~1,88 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer multimodal (image-text-to-text), derivada de Qwen3.5 |
+| Parametros totales | 1.942.653.248 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q2_K_S, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L (y más en el repo completo, hasta Q8_0) |
-| Idiomas soportados | Inglés (declarado en la model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones imatrix/i1); modelo base en safetensors |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, más imatrix |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (con fichero imatrix e mmproj para visión en el repo estático) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un merge de seis modelos (6xMerge) construido sobre la arquitectura Qwen3.5 de 2B parámetros, un transformer decoder estándar de la familia Qwen de Alibaba. La novedad principal del modelo original no está en la arquitectura sino en el proceso de destilación: se han utilizado múltiples modelos profesores para generar los datasets de entrenamiento, entre ellos salidas destiladas de Kimi K2.5, Claude Opus 4.6 (dataset de razonamiento filtrado), y mezclas establecidas como Tulu 3 SFT de AllenAI. Esto explica las etiquetas de reasoning, chain-of-thought, código y matemáticas.
+El modelo es un merge de múltiples destilaciones sobre la base Qwen3.5-2B, orientado a razonamiento con chain-of-thought. La model card no detalla la arquitectura interna concreta (número de capas, dimensiones, mecanismo de atención), por lo que no se puede confirmar si emplea atención lineal, decodificación especulativa u otras innovaciones. La etiqueta `qwen3_5` y la pipeline `image-text-to-text` indican que hereda la arquitectura multimodal de la familia Qwen3.5, con capacidad de procesar imágenes y texto.
 
-Tras la destilación y el merge, el modelo pasó por un proceso "heretic", una técnica de abliteración (decensurado) que modifica los pesos para eliminar los comportamientos de rechazo entrenados mediante alineación, sin necesidad de fine-tuning adicional. El resultado es un modelo "uncensored" que responde a prácticamente cualquier petición. No hay información publicada sobre el número de tokens de entrenamiento, la composición exacta del dataset final ni el uso de RLHF/DPO en el modelo base. La versión de mradermacher no altera los pesos: solo aplica cuantización con matriz de importancia (imatrix) calculada sobre el modelo completo.
+El entrenamiento se apoya en varios datasets: TeichAI/polaris-alpha-1000x, Ali-Yaser/KIMI-K2.5-450000x-ShareGPT, allenai/tulu-3-sft-mixture, nohurry/Opus-4.6-Reasoning-3000x-filtered y Jackrong/Qwen3.5-reasoning-700x. No se especifica el número de tokens de entrenamiento ni si hubo RLHF o DPO. El proceso de "abliteration" (heretic) elimina los mecanismos de rechazo, lo que constituye la modificación técnica más destacable respecto al modelo original. La cuantización i1 emplea un fichero imatrix para ponderar la importancia de los tensores durante la compresión.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con estilo destilado de modelos profesores grandes
-- Razonamiento con cadena de pensamiento (chain-of-thought) explícita, destilada de datasets como Opus-4.6-Reasoning y Qwen3.5-reasoning
-- Generación y comprensión de código, con datasets de entrenamiento orientados a programación
-- Resolución de problemas matemáticos paso a paso
-- Comprensión multimodal imagen-texto (pipeline image-text-to-text); los archivos mmproj para visión están en el repositorio de cuantizaciones estáticas
-- Sin filtros de seguridad (uncensored/abliterated): responde sin rechazos de alineación
-- Cuantizaciones desde IQ1_S (0,8 GB) hasta formatos de alta fidelidad, aptas para hardware muy variado
+- Generación de texto conversacional multi-turno.
+- Razonamiento con chain-of-thought (etiquetas reasoning y distillation).
+- Generación de código.
+- Resolución de problemas matemáticos.
+- Procesamiento de imágenes junto con texto (image-text-to-text).
+- Capacidad multimodal heredada de Qwen3.5 (visión).
+- Comportamiento decensurado: no aplica rechazos de contenido del modelo original.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card (idioma declarado: en).
 
 ## Casos de uso
 
-- Asistente local sin censura para investigación: permite estudiar el comportamiento de modelos sin alineación en entornos controlados, útil para investigadores de seguridad de IA que analizan qué capacidades emergen sin RLHF.
-- Razonamiento paso a paso en hardware de gama baja: con cuantizaciones IQ2/IQ3 (0,9-1,2 GB) cabe en portátiles sin GPU dedicada, manteniendo capacidades de chain-of-thought destiladas de modelos mucho mayores.
-- Generación de código offline: su entrenamiento con datasets de código y su tamaño reducido lo hacen adecuado para autocompletado y generación de snippets en editores locales tipo Continue o llama-coder.
-- Resolución de problemas matemáticos educativos: la destilación de razonamiento permite explicaciones paso a paso de ejercicios de álgebra y cálculo sin conexión a internet.
-- Prototipado de agentes ligeros: su tamaño permite ejecutar varios agentes en paralelo en una sola GPU de consumo, útil para experimentos de multi-agente y bucles de razonamiento iterativo.
-- Análisis de imágenes local: gracias al pipeline image-text-to-text y los archivos mmproj, se puede usar para describir imágenes y responder preguntas visuales sin enviar datos a la nube, relevante para escenarios con requisitos de privacidad.
-- Chatbot embebido en aplicaciones: el formato GGUF es compatible con llama.cpp y Ollama, lo que facilita integrarlo en aplicaciones de escritorio o móviles con recursos limitados.
+- Asistente conversacional local en inglés: el modelo puede mantener diálogos multi-turno en un equipo de consumo gracias a sus ~2B parámetros y cuantizaciones de 1,1-1,7 GB, adecuado para prototipos y uso personal.
+- Razonamiento matemático asistido: útil para resolver problemas paso a paso con chain-of-thought en entornos educativos o de investigación, siempre que se valide la exactitud de las respuestas.
+- Generación de código en local: puede emplearse en editores o scripts para autocompletar y explicar fragmentos de código, integrándose con llama.cpp u Ollama en estaciones de trabajo sin GPU dedicada.
+- Análisis de imágenes en pipelines ligeros: al ser un modelo image-text-to-text, permite describir o extraer información de imágenes en aplicaciones de accesibilidad o catalogación, usando los ficheros mmproj del repo estático.
+- Investigación sobre decensurado y seguridad: sirve como objeto de estudio para analizar cómo la abliteration afecta a la calidad, los sesgos y la tasa de rechazo en modelos pequeños.
+- Experimentación con merges y destilación: útil para investigadores que quieran reproducir o comparar estrategias de merging y destilación sobre Qwen3.5-2B sin depender de infraestructura grande.
+- Despliegue en entornos con recursos limitados: al caber en CPU y GPU de gama baja, puede ejecutarse en dispositivos edge para tareas de clasificación o generación de texto breve.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Al ser un merge destilado y abliterado, el rendimiento real puede desviarse significativamente del modelo Qwen3.5 base; se recomienda evaluarlo con benchmarks propios antes de uso serio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: desde ~0,8 GB (IQ1_S) hasta ~1,2 GB (IQ3_M) para las cuantizaciones listadas; las cuantizaciones de mayor fidelidad (Q4-Q8) ocupan entre ~1,2 y ~2 GB. Añadir margen para el KV cache según la longitud de contexto.
-- GPU recomendadas: cualquier GPU moderna con 2-4 GB de VRAM es más que suficiente; también funciona por CPU puro dada la cuantización agresiva.
-- Consumer GPUs: cabe sobradamente en RTX 3060, RTX 4060, RTX 4090 e incluso GPUs integradas (iGPU) con memoria compartida.
-- Despliegue: llama.cpp (recomendado para GGUF con imatrix y soporte mmproj), Ollama, LM Studio, KoboldCpp, text-generation-webui. Para el modelo base en safetensors: vLLM, TGI o transformers.
-- Latencia y throughput: no disponibles; por su tamaño (~2B) se espera generación rápida incluso en CPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 1,1 GB con i1-Q2_K, 1,3-1,4 GB con i1-Q4_K_S/i1-Q4_K_M, y 1,7 GB con i1-Q6_K (sin contar el overhead del runtime ni el proyector de visión).
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; tarjetas como RTX 3060, RTX 4060, RTX 4090 o superiores pueden ejecutarlo con holgura. También es viable en CPU.
+- Cabe en GPU de consumo: sí, en prácticamente todas las GPU consumer modernas e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama, y otros runtimes compatibles con GGUF; el ecosistema transformers se menciona como librería del modelo base.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Diferenciador |
-|---|---|---|---|---|
-| Qwen3.5-2B-MultiDistill-Megamix (este) | 1,88 B | GGUF imatrix | Apache 2.0 | Merge destilado multi-profesor, abliterado, multimodal |
-| Qwen3.5-2B (base oficial) | ~2 B | safetensors/GGUF | Apache 2.0 | Modelo original con alineación estándar, sin censura eliminada |
-| Qwen3-1.7B (oficial) | 1,7 B | safetensors/GGUF | Apache 2.0 | Modelo oficial más pequeño, con modos thinking/no-thinking |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF (este) | 1,94B | no disponible | Apache 2.0 | GGUF | Merge destilado, decensurado, multimodal |
+| xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic | 1,94B | no disponible | Apache 2.0 | safetensors (base) | Modelo base sin cuantizar del que deriva este |
+| Qwen3.5-2B (modelo original de la familia) | ~2B | no disponible | Apache 2.0 (según familia) | safetensors | Modelo de referencia con rechazos de seguridad |
 
-Nota: la comparación con la base oficial y la familia Qwen3 es orientativa; no hay benchmarks publicados que permitan comparar rendimiento cuantitativo.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento real frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado (uncensored): carece de salvaguardas de seguridad y puede generar contenido ofensivo, peligroso o ilegal si se le solicita. Su uso conlleva responsabilidad legal y ética total para el operador.
-- Al ser un merge de seis modelos con destilación y abliteración, la coherencia a largo plazo y la fiabilidad factual pueden degradarse respecto al modelo base; riesgo de alucinación elevado y no cuantificado.
-- Idioma declarado: únicamente inglés; el rendimiento en castellano no está documentado y puede ser inferior al esperable en modelos Qwen oficiales.
-- Longitud de contexto no publicada en la model card; verificar la configuración del tokenizador antes de asumir ventanas largas.
-- Las cuantizaciones IQ1/IQ2 (0,8-1,0 GB) implican pérdida de calidad sustancial; mradermacher las marca explícitamente como "for the desperate".
-- Los archivos mmproj (visión) están en el repositorio de cuantizaciones estáticas, no en este; hay que descargarlos de allí para usar capacidades de imagen.
-- Proyecto comunitario sin soporte oficial de Alibaba ni del equipo Qwen; sin garantías de mantenimiento o reproducibilidad a largo plazo.
+- Modelo decensurado (abliterated/heretic): no aplica los mecanismos de rechazo del modelo original, por lo que puede generar contenido dañino, ofensivo o ilegal. No es adecuado para producción orientada al usuario final sin filtros adicionales.
+- Riesgo elevado de alucinación: al ser un modelo de ~2B parámetros con merging y destilación, la fiabilidad factual es limitada.
+- Idiomas: declarado únicamente en inglés; el rendimiento en castellano no está garantizado.
+- Longitud de contexto: no documentada; no debe asumirse una ventana amplia.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo decensurado; el cumplimiento legal y ético recae en el desplegador.
+- Calidad variable según cuantización: las versiones Q2_K y Q3 pueden degradar notablemente el razonamiento; se recomienda Q4_K_M o superior para uso serio.
+- La model card no documenta sesgos específicos, datos de entrenamiento detallados ni evaluaciones de seguridad.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF
-- Repositorio de cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-GGUF
-- Modelo base: https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic
-- Página de descargas resumida: https://hf.tst.eu/model#Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF
-- Guía de uso de GGUF referenciada: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- [Hugging Face: mradermacher/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF](https://huggingface.co/mradermacher/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF)
+- [Modelo base: xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic](https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic)
+- [Cuantizaciones estáticas: mradermacher/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-GGUF](https://huggingface.co/mradermacher/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-GGUF)
+- [Página de descargas del autor](https://hf.tst.eu/model#Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic-i1-GGUF)
+- [README de referencia para uso de GGUF (TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

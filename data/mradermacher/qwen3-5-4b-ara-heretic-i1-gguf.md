@@ -2,51 +2,50 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen3.5-4B-ARA-heretic-i1-GGUF` es una cuantizacion GGUF con imatrix generada por mradermacher a partir del modelo `richardyoung/Qwen3.5-4B-ARA-heretic`, que a su vez deriva de la familia Qwen3.5-4B de Alibaba. Se trata de una variante "heretic" (tambien etiquetada como uncensored, decensored y abliterated), es decir, un ajuste que elimina o reduce los mecanismos de rechazo del modelo original mediante tecnicas de abliteration. El resultado es un modelo de 4B parametros orientado a generacion de texto sin las restricciones de seguridad tipicas del modelo base.
+Qwen3.5-4B-ARA-heretic-i1-GGUF es una cuantizacion GGUF del modelo richardyoung/Qwen3.5-4B-ARA-heretic, una variante "abliterated" (decensored) del Qwen3.5-4B de Alibaba. El trabajo de cuantizacion lo firma mradermacher, un autor conocido en el ecosistema por publicar versiones GGUF con imatrix de modelos populares. El modelo base parte de la familia Qwen3.5, con 4.205.751.296 parametros totales segun los safetensors del repositorio, lo que lo situa en la gama de modelos pequenos ejecutables en hardware de consumo.
 
-La relevancia de esta ficha reside en que combina tres capas de transformacion: el modelo base Qwen3.5-4B, el ajuste heretic de richardyoung y la cuantizacion con imatrix de mradermacher. La model card indica que se trata de un modelo de vision (los ficheros mmproj, si existen, se alojan en el repositorio estatico). Sin embargo, el repositorio i1-GGUF solo contiene por ahora el fichero imatrix (0,1 GB), lo que sugiere que los cuants finales pueden no estar publicados o estar en proceso.
+La particularidad de esta variante es el proceso "heretic" aplicado sobre el modelo original: se eliminan o atenuan los mecanismos de rechazo y alineacion para obtener un modelo sin censura, orientado a generacion de contenido sin restricciones tematicas. El autor del modelo base lo etiqueta como "abliterated", "uncensored" y "decensored". La model card menciona ademas que se trata de un modelo de vision, con ficheros mmproj disponibles en el repositorio estatico.
 
-El modelo esta pensado para desarrolladores que necesitan un modelo pequeno (4B) ejecutable en hardware de consumo, sin filtros de contenido, y con la calidad de cuantizacion que aporta el uso de matrices de importancia (imatrix). La licencia es Apache 2.0, lo que facilita su uso comercial, aunque con las advertencias propias de un modelo abliterated.
+El repositorio ofrece una bateria amplia de cuantizaciones con imatrix, desde IQ1_S (1,5 GB) hasta Q6_K (3,6 GB), lo que permite desplegarlo en escenarios muy distintos, desde GPUs integradas hasta estaciones de trabajo. La licencia declarada es Apache 2.0, aunque el modelo base incluye la etiqueta openrail++ en los tags, lo que conviene verificar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de Qwen3.5-4B; presumiblemente transformer, no confirmado en la informacion) |
-| Parametros totales | 4B (nominal, segun nombre del modelo); el campo safetensors del repo indica 1.797.272, dato no coherente con el nombre y probablemente erroneo o parcial |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (familia Qwen3.5, segun modelo base); detalles especificos no disponibles |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | imatrix (fichero .imatrix.gguf); la model card lista Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (planificados; no todos presentes en el repo i1) |
+| Tipos de cuantizacion | i1-IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (con imatrix) |
 | Idiomas soportados | en |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (imatrix); safetensors en el modelo base |
+| Licencia | apache-2.0 (el modelo base incluye tag openrail++) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. El modelo deriva de Qwen3.5-4B, por lo que se presume una arquitectura transformer decoder-only con aproximadamente 4.000 millones de parametros, pero este dato no se confirma explicitamente en la model card. La transformacion "heretic" implica un proceso de abliteration: identificacion de direcciones en el espacio de activaciones asociadas a comportamientos de rechazo y sustraccion de esas direcciones de los pesos, de modo que el modelo deja de activar respuestas de negativa ante ciertas peticiones.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de su pertenencia a la familia Qwen3.5 y su naturaleza transformer. El repositorio no documenta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original. Lo que si se explicita es el proceso de "abliteration" aplicado sobre el modelo Qwen3.5-4B para producir la variante heretic, que consiste en modificar los pesos para eliminar direcciones de activacion asociadas a rechazos y respuestas alineadas.
 
-El proceso de cuantizacion de mradermacher utiliza matrices de importancia (imatrix) calculadas sobre un corpus de calibracion, lo que mejora la fidelidad de los cuants de baja precision respecto a cuantizaciones estaticas. La model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, y menciona que los cuants estaticos estan en un repositorio separado (`mradermacher/Qwen3.5-4B-ARA-heretic-GGUF`). No se detallan volumen de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO en el ajuste heretic.
+Las cuantizaciones de este repositorio se generan con imatrix (importance matrix), un metodo que calcula la importancia de cada tensor a partir de un corpus de calibracion y permite obtener cuantizaciones de menor perdida de calidad a igual tamano. El autor documenta el proceso como reproducible y etiqueta los quants con el prefijo "i1", indicando que se trata de la primera generacion de cuantizaciones con imatrix para este modelo. La model card indica que se trata de un modelo de vision, con ficheros mmproj en el repositorio estatico, aunque no se detalla la arquitectura del encoder visual.
 
 ## Capacidades
 
-- Generacion de texto en ingles (unico idioma declarado).
-- Capacidades de vision segun la model card ("This is a vision model"), aunque los ficheros mmproj no estan en este repositorio i1, sino en el estatico.
-- Comportamiento "uncensored"/"abliterated": menor tendencia a rechazar peticiones que el modelo base.
-- Razonamiento y generacion de codigo: presumibles por herencia de Qwen3.5-4B, pero no confirmados en la informacion disponible.
-- Tool calling / function calling: no disponible en la informacion.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
-- Capacidades multilingues: limitadas a ingles segun la model card.
-- Modo thinking: no disponible en la informacion.
+- Generacion de texto conversacional sin restricciones tematicas derivadas de la alineacion original.
+- Capacidad multimodal (vision) segun la model card; los ficheros mmproj estan en el repositorio estatico asociado.
+- Razonamiento y generacion de codigo heredados del modelo base Qwen3.5-4B, aunque no se documentan evaluaciones especificas.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues limitadas al ingles segun el campo `language` del repositorio.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Prototipado local sin filtros de contenido: el modelo puede ejecutarse en un portatil con GPU de consumo gracias a su tamano de 4B y a los cuants GGUF de baja precision, lo que permite experimentar con generacion de texto sin depender de APIs externas.
-- Investigacion sobre abliteration y seguridad: util para estudiar como la eliminacion de direcciones de rechazo afecta al comportamiento del modelo, comparando respuestas con el Qwen3.5-4B original.
-- Generacion de texto creativo sin restricciones: escritura de ficcion, guiones o narrativa donde el modelo base podria rechazar tematicas sensibles.
-- Evaluacion de cuantizaciones imatrix: el fichero imatrix permite generar cuants propios y comparar la degradacion de perplejidad entre tipos de cuantizacion.
-- Despliegue en entornos con recursos limitados: integracion en llama.cpp u Ollama para asistentes de texto en ingles en hardware modesto.
-- Vision por computador en el borde (edge): si se descargan los ficheros mmproj del repositorio estatico, el modelo podria procesar imagenes en dispositivos con poca VRAM, aunque esta capacidad no esta confirmada en el repo i1.
-- Base para ajuste fino posterior: al estar en formato GGUF y con licencia Apache 2.0, sirve como punto de partida para tareas especificas en ingles.
+- Roleplay y narrativa sin filtros: el proceso heretic elimina los rechazos del modelo base, lo que permite generar ficcion con tematicas adultas o controvertidas sin bloqueos, siempre que el usuario asuma la responsabilidad legal del contenido.
+- Investigacion sobre alineacion y seguridad: util para estudiar como varian las respuestas de un modelo tras el proceso de abliteration frente al modelo original, comparando comportamiento en conjuntos de prompts sensibles.
+- Despliegue en hardware modesto: las cuantizaciones IQ2/IQ3 (1,6-2,5 GB) permiten ejecutar el modelo en GPUs de 4-6 GB o incluso en CPU, gracias a llama.cpp.
+- Prototipado rapido de asistentes conversacionales: el formato GGUF con Q4_K_M (2,8 GB) ofrece un equilibrio razonable entre calidad y velocidad para entornos de desarrollo.
+- Generacion de contenido creativo en ingles: el modelo esta orientado a ingles y puede usarse para redaccion creativa, guiones o dialogos donde se requiera baja interferencia de filtros.
+- Experimentacion con modelos de vision en local: si se descargan los ficheros mmproj del repositorio estatico, puede emplearse para tareas de descripcion de imagenes en entornos sin conexion.
+- Fine-tuning ligero o destilacion: el modelo base en safetensors (no este GGUF) sirve como punto de partida para ajustes especificos, aunque el proceso heretic puede afectar a la calidad en tareas estandar.
 
 ## Benchmarks y rendimiento
 
@@ -54,44 +53,48 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Para un modelo de 4B en GGUF, los cuants de 4 bits suelen ocupar en torno a 2,5-3 GB, y los de 8 bits en torno a 4,5-5 GB, pero estos valores son estimaciones generales y no datos confirmados para este modelo concreto.
-- GPU recomendadas: no disponible en la informacion. Por tamano, cabria esperar ejecucion en RTX 3060/4060, RTX 4090, A100 y H100, pero no se confirma.
-- Cabe en GPU de consumo: probablemente si, en funcion del cuant elegido, aunque no se aportan datos oficiales.
-- Opciones de despliegue: llama.cpp (formato GGUF), Ollama, y potencialmente otros runners compatibles con GGUF. vLLM y TGI no se mencionan en la informacion.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - IQ1_S / IQ1_M: ~1,5 GB
+  - IQ2_XXS a IQ2_M: ~1,6-1,8 GB
+  - Q2_K / IQ3_XXS: ~2,0 GB
+  - IQ3_S / IQ3_M / Q3_K_M: ~2,2-2,4 GB
+  - IQ4_XS / Q4_K_S / Q4_K_M: ~2,6-2,8 GB
+  - Q5_K_M: ~3,2 GB
+  - Q6_K: ~3,6 GB
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones IQ3/IQ4; RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o A100/H100 para mayor margen de contexto y velocidad.
+- Cabe en GPUs de consumo: si, en la mayoria de tarjetas modernas desde 4 GB (GTX 1650, RTX 3050, RTX 4060, etc.) usando cuantizaciones IQ3 o superiores. Las cuantizaciones IQ1/IQ2 permiten incluso ejecucion en CPU o iGPU.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, text-generation-webui, koboldcpp. vLLM y TGI no soportan GGUF de forma nativa sin conversion previa.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia cualitativa, un modelo de 4B en Q4_K_M sobre una RTX 4090 suele generar decenas de tokens por segundo, pero no se aportan cifras verificadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.5-4B-ARA-heretic-i1-GGUF | 4B (nominal) | no disponible | Apache 2.0 | GGUF imatrix | Variante abliterated, solo ingles, vision segun model card |
-| richardyoung/Qwen3.5-4B-ARA-heretic | 4B (nominal) | no disponible | Apache 2.0 (heredada) | safetensors | Modelo base del que deriva esta cuantizacion |
-| mradermacher/Qwen3.5-4B-heretic-GGUF | 4B (nominal) | no disponible | Apache 2.0 | GGUF | Variante heretic cuantizada, sin el sufijo ARA |
-| mradermacher/Qwen3.5-4B-ARA-heresy-v2-GGUF | 4B (nominal) | no disponible | Apache 2.0 | GGUF | Variante heresy v2, presumiblemente otro ajuste abliterated |
+| Qwen3.5-4B-ARA-heretic-i1-GGUF (este) | 4,2 B | no disponible | apache-2.0 | GGUF (multiples quants) | Variante abliterated con vision |
+| richardyoung/Qwen3.5-4B-ARA-heretic | 4,2 B | no disponible | apache-2.0 | safetensors | Modelo base sin cuantizar |
+| Qwen/Qwen3.5-4B | 4,2 B | no disponible | apache-2.0 | safetensors | Modelo original alineado, sin proceso heretic |
+| mradermacher/Qwen3.5-4B-ARA-heretic-GGUF | 4,2 B | no disponible | apache-2.0 | GGUF (quants estaticos) | Version estatica sin imatrix del mismo modelo |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
+La comparativa con otras familias (Llama, Mistral, Gemma) no esta disponible en la informacion proporcionada, ya que no se aportan datos de rendimiento que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated/uncensored: la eliminacion de direcciones de rechazo puede degradar la coherencia en tareas que requieren matices eticos o de seguridad, y facilita la generacion de contenido danino si se usa sin supervision.
-- Riesgo de alucinacion: inherente a modelos de 4B; no se han publicado evaluaciones de factualidad para esta variante.
-- Idioma: solo se declara ingles, por lo que el rendimiento en castellano u otros idiomas no esta garantizado.
-- Contexto: no se especifica la longitud de contexto soportada, lo que impide planificar su uso en tareas de contexto largo.
-- Datos incoherentes: el campo de parametros safetensors del repositorio (1.797.272) no concuerda con el nombre del modelo (4B); conviene verificar los pesos antes de usarlo en produccion.
-- Disponibilidad de cuants: el repositorio i1 solo contiene por ahora el fichero imatrix; los cuants finales pueden no estar publicados, lo que limita su uso inmediato.
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-4B puede tener terminos adicionales; se enlaza a la licencia de Qwen en la model card.
-- Vision no verificada: la model card afirma que es un modelo de vision, pero los ficheros mmproj no estan en este repositorio, por lo que la capacidad visual no esta disponible directamente aqui.
+- El proceso heretic elimina los rechazos del modelo original, lo que implica que el modelo puede generar contenido ofensivo, ilegal o danino sin filtros. El usuario es responsable del uso.
+- Riesgo elevado de alucinacion: los modelos pequenos (4B) y las variantes abliterated tienden a inventar hechos con mayor frecuencia que modelos mayores o alineados.
+- La abliteration puede degradar capacidades generales (razonamiento, codigo, matemticas) respecto al Qwen3.5-4B original; no se aportan benchmarks que cuantifiquen esta perdida.
+- Idioma limitado al ingles segun el campo `language`; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Longitud de contexto no documentada; conviene no asumir ventanas largas sin verificacion empirica.
+- La licencia apache-2.0 convive con el tag openrail++ en el modelo base; es recomendable revisar las condiciones del modelo original antes de un uso comercial.
+- El repositorio tiene 0 likes y 3141 descargas en el momento de la consulta; es un artefacto reciente (creado en noviembre de 2026) sin validacion comunitaria extensa.
+- Las cuantizaciones IQ1 e IQ2 (etiquetadas por el autor como "for the desperate" o "very low quality") degradan notablemente la coherencia; no son recomendables para produccion.
+- No se documentan resultados de evaluacion de sesgos; se desconoce el comportamiento del modelo en colectivos protegidos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-ARA-heretic-i1-GGUF
-- Modelo base: https://huggingface.co/richardyoung/Qwen3.5-4B-ARA-heretic
-- Repositorio de cuants estaticos: https://huggingface.co/mradermacher/Qwen3.5-4B-ARA-heretic-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-4B-ARA-heretic-i1-GGUF
-- Variante heretic cuantizada: https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-GGUF
-- Variante heresy v2: https://huggingface.co/mradermacher/Qwen3.5-4B-ARA-heresy-v2-GGUF
-- Licencia Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuants (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Modelo base (sin cuantizar): https://huggingface.co/richardyoung/Qwen3.5-4B-ARA-heretic
+- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.5-4B-ARA-heretic-GGUF
+- Modelo original Qwen3.5-4B (referencia de licencia): https://huggingface.co/Qwen/Qwen3.5-4B
+- Pagina de conveniencia del autor para este modelo: https://hf.tst.eu/model#Qwen3.5-4B-ARA-heretic-i1-GGUF
+- Guia de uso de GGUF (TheBloke, referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -45,16 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/Qwen2-VL-2B · Hugging Face",
-      "url": "https://huggingface.co/litert-community/Qwen2-VL-2B",
-      "snippet": "Qwen2-VL is Alibaba's widely-used general-purpose vision-language model: a dynamic-resolution ViT vision encoder feeds the Qwen2-1.5B language decoder, giving strong general VQA, description, and document/OCR reading in a phone-sized package. This bundle runs the whole thing through LiteRT-LM's fast_vlm multimodal path — give it an image and a question, get a grounded answer, fully on-device."
-    },
-    {
-      "title": "litert-community/Qwen2-VL-2B at main - Hugging Face",
-      "url": "https://huggingface.co/litert-community/Qwen2-VL-2B/tree/main",
-      "snippet": "like 0 Follow LiteRT Community (FKA TFLite) 7.95k Image-Text-to-Text LiteRT-LM LiteRT litertlm on-device edge vlm multimodal vision-language License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

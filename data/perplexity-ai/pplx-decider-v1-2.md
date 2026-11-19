@@ -2,66 +2,56 @@
 
 ## Resumen
 
-pplx-decider-v1.2 es un modelo de decisión y clasificación desarrollado por Perplexity AI, afinado sobre el backbone Qwen3.8-27B (26.085.330.160 parámetros reales según los pesos en safetensors). No es un modelo generativo de texto: su función es recibir un «estado» (texto, JSON serializado o imagen) y un conjunto de preguntas tipadas, y devolver respuestas estructuradas con distribuciones de probabilidad y puntuaciones de confianza. Es la versión sucesora de pplx-decider-v1.1-27b y su relevancia inmediata está en dos cambios: un formato de petición conjunta que responde varias preguntas sobre el mismo estado en una sola pasada, y una reingeniería sustancial de los datos de entrenamiento.
+pplx-decider-v1.2 es un modelo de decisión (decision model) desarrollado por Perplexity AI, afinado a partir del backbone Qwen/Qwen3.8-27B. No es un modelo generativo de propósito general, sino un clasificador especializado que, dado un estado (state) —texto o imágenes— y una o varias preguntas estructuradas, devuelve respuestas tipadas: elección entre opciones (`choice`), probabilidad de un booleano (`noul`) o puntuación ordinal (`score`). Se distribuye con `pipeline_tag: text-classification` y licencia Apache 2.0.
 
-El cambio de formato es el más consecuente a nivel de coste: el modelo lee el estado y todas las preguntas en una única secuencia y coloca un token marcador tras las opciones de cada pregunta para obtener una lectura independiente por pregunta. En la práctica, responder cinco preguntas sobre el mismo contexto cuesta aproximadamente lo mismo que responder una, y las preguntas pueden influirse entre sí cuando son facetas de una misma decisión. El checkpoint es multimodal (texto e imágenes de hasta 1,6 MP) y se ha construido mediante model souping, promediando pesos de varias ejecuciones de entrenamiento.
+La innovación principal de la versión 1.2 respecto a v1.1 es el formato de petición conjunta: en lugar de responder una pregunta por forward pass leyendo el último token, el modelo procesa el estado seguido de todas las preguntas en una única secuencia, con un token marcador tras las opciones de cada pregunta que sirve de punto de lectura. Esto reduce el coste de responder N preguntas al de responder una y permite que las preguntas se informen mutuamente. El checkpoint también incorpora capacidad multimodal (texto e imágenes de hasta 1,6 MP) y se ha construido mediante model souping (promediado de pesos) de varias ejecuciones de entrenamiento.
 
-La evaluación publicada sitúa el modelo en 68,09 en el Decision Index 0.3 público (frente a 62,30 de v1.1) y en 77,43 en el Vision Decision Index 0.3 (frente a 73,22). La licencia es Apache-2.0, aunque el repositorio es privado y requiere un token de Hugging Face con acceso, lo que condiciona su adopción en producción.
+Con 26.085.330.160 parámetros (~26,1 B) y pesos en BF16 que ocupan aproximadamente 52 GiB, está pensado para despliegue en GPU de centro de datos, no para hardware de consumo. Su relevancia actual radica en que formaliza el enrutamiento y la clasificación de decisiones como una tarea nativa del modelo, con salidas calibradas (probabilidades y confianza por respuesta) en lugar de generación de texto libre.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No detallada en la informacion disponible; fine-tune sobre el backbone Qwen3.8-27B (tag `qwen3_5`, `custom-code`) con cabecera de clasificacion y marcadores de lectura por pregunta |
-| Parametros totales | 26.085.330.160 (~26,09 B) |
-| Parametros activos | No aplica (no se indica que el modelo sea MoE) |
-| Longitud de contexto | No disponible; la model card remite a una seccion «Limits» con un limite de longitud de secuencia que no se incluye en la informacion disponible |
-| Tipos de cuantizacion | No disponible; el checkpoint se distribuye en BF16 (no se documentan GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | No disponible (no se declara lista de idiomas) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (BF16), con codigo propio en `source/src` |
-| Modalidades | Texto e imagenes de hasta 1,6 MP |
-| Tipos de pregunta | `choice` (1-255 opciones), `noul` (probabilidad de verdadero), `score` (ordinal, 2-255 niveles) |
-| Entrada del modelo | `state` (str, dict o list; los no-str se serializan como JSON), `questions`, `images` opcional |
-| Salida | `answers` (opcion, probabilidades, confianza), `usage` (input_tokens, output_tokens) |
-| Tamano del repositorio | 52,2 GB |
-| Descargas / likes | 129 / 19 |
-| Fecha de creacion / actualizacion | 2026-10-15 / 2026-10-16 |
+| Arquitectura | Transformer multimodal (backbone Qwen3.8-27B), con cabecera de lectura por token marcador para clasificación |
+| Parametros totales | 26.085.330.160 (~26,1 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (la model card menciona un límite de longitud que obliga a dividir peticiones, sin cifra publicada) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería pytorch, código custom en `source/src`) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe en detalle la arquitectura interna: se sabe que el modelo parte de Qwen3.8-27B, que emplea codigo propio (tag `custom-code`, modulo `pplx_decider.Decider`) y que anade un mecanismo de lectura por marcador. El formato de peticion conjunta coloca el estado seguido de cada pregunta y, tras las opciones de cada una, un token marcador cuya representacion se proyecta a la cabeza de clasificacion correspondiente. Esto sustituye el esquema de v1.1, que respondia una sola pregunta por forward pass leyendo el ultimo token. Las opciones se presentan al modelo en el orden proporcionado, codificadas como `A`, `B`, etc., y el modelo devuelve probabilidades por opcion ademas de la respuesta discreta.
+El modelo parte del backbone Qwen/Qwen3.8-27B y se afina como clasificador de decisiones. La arquitectura de inferencia es la clave: el estado y todas las preguntas de una petición se concatenan en una sola secuencia; tras las opciones de cada pregunta se inserta un token marcador, y la lectura se realiza en ese marcador (no en el último token de la secuencia). Cada pregunta obtiene así su propia distribución de probabilidad sobre opciones, con soporte para entre 1 y 255 opciones en `choice`, entre 2 y 255 niveles en `score`, y una probabilidad escalar en `noul`. El modelo acepta además imágenes (hasta 1,6 MP) junto al estado textual.
 
-El entrenamiento combina varias ejecuciones independientes mediante model souping (promediado de pesos), seleccionado como mejor compromiso agregado en el conjunto de evaluaciones y no sobre un unico benchmark. En datos, Perplexity rehizo el corpus de forma sustancial: incorpora los splits oficiales de entrenamiento de varias tareas del Decision Index (decontaminados contra los conjuntos de test) para que las comparativas del board sean justas, y anade una gran cantidad de datos de decision adicionales. Durante el proceso se monitorizaron regresiones en todos los benchmarks y se midio la mejora fuera del Decision Index, tanto en tareas de decision retenidas como en benchmarks independientes, donde el modelo supera a v1.1. No se documentan volumen de tokens, composicion del dataset ni si hubo RLHF o DPO.
+En cuanto a datos, la model card indica una reconfiguración sustancial del conjunto de entrenamiento respecto a v1.1: se incorporan los splits oficiales de entrenamiento de varios benchmarks del Decision Index (decontaminados contra los conjuntos de test) para que las comparaciones en el board sean justas, junto con una gran cantidad de datos de decisión adicionales. El seguimiento se hizo midiendo regresiones en cada benchmark y evaluando también en tareas de decisión retenidas y en benchmarks independientes. El checkpoint final combina varias ejecuciones mediante model souping (promediado de pesos), seleccionado como mejor compromiso global y no por un único benchmark. No se detallan el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Clasificacion por eleccion entre 1 y 255 opciones, con nombre y descripcion opcional por opcion, devolviendo `choice`, `probabilities` y `confidence`.
-- Preguntas binarias tipo `noul`, que devuelven P(verdadero) en lugar de una etiqueta dura.
-- Puntuacion ordinal tipo `score` sobre 2 a 255 niveles ordenados de menor a mayor, con `score` como indice esperado del nivel y leyenda asociada.
-- Respuesta conjunta de varias preguntas heterogeneas sobre un mismo estado en una sola secuencia, con lecturas independientes por pregunta.
-- Entrada multimodal: imagenes hasta 1,6 MP via ruta de fichero, data URI base64 u objeto PIL.
-- Aceptacion de estados no textuales (diccionarios, listas) serializados automaticamente como JSON.
-- Procesamiento por lotes: `decide` acepta una lista de peticiones y devuelve una lista de respuestas en el mismo orden.
-- Salida calibrada con distribuciones completas, apta para umbralizar o para combinar con reglas de negocio.
-- No es un modelo de generacion libre: `output_tokens` es 0 en las respuestas; no genera explicaciones ni texto abierto.
+- Clasificación de decisiones con salida tipada: `choice` (selección entre opciones con probabilidades y confianza), `noul` (probabilidad de verdadero/falso) y `score` (puntuación ordinal con índice esperado, probabilidades y leyenda).
+- Procesamiento de múltiples preguntas sobre un mismo estado en una sola secuencia, con coste cercano al de una sola pregunta y posible influencia mutua entre preguntas.
+- Entrada multimodal: texto e imágenes de hasta 1,6 MP.
+- Aceptación de estados no textuales (diccionarios, listas) serializados como JSON.
+- Salidas calibradas con `probabilities` y `confidence` por pregunta, aptas para umbrales y enrutamiento automático.
+- Procesamiento por lotes: `decide` acepta una lista de peticiones y devuelve las respuestas en el mismo orden.
+- No se documentan tool calling, function calling, modo agente ni modo thinking; el modelo es un clasificador, no un generador.
 
 ## Casos de uso
 
-- Triage de tickets de soporte: una sola peticion con el texto del ticket como `state` y preguntas encadenadas (`choice` para equipo responsable entre billing, support y sales, `noul` para cliente bloqueado, `score` para nivel de frustracion). El coste conjunto es practicamente el de una pregunta, lo que lo hace viable por ticket en tiempo real.
-- Enrutado de solicitudes internas: clasificacion de correos o formularios hacia departamentos con hasta 255 categorias y descripciones por categoria, usando `probabilities` para derivar a revision humana cuando la confianza es baja.
-- Moderacion y politica de contenido: preguntas binarias multiples (`noul`) sobre el mismo texto para distintas reglas de politica, aprovechando que todas comparten una unica pasada.
-- Analitica de sentimiento ordinal: uso de `score` sobre escalas de 4 a 7 niveles para obtener un indice esperado continuo en lugar de una etiqueta discreta, util para series temporales y dashboards.
-- Clasificacion de documentos escaneados y capturas: la entrada multimodal de hasta 1,6 MP permite clasificar facturas, capturas de error o pantallazos de consola directamente, sin OCR intermedio.
-- Filtrado y reranking en pipelines RAG: evaluacion de relevancia de fragmentos recuperados frente a una consulta con `noul` o `score`, con la probabilidad como señal de ordenacion.
-- Evaluacion de agentes y benchmarks de decision: sustituto estandarizado del juicio humano en tareas del Decision Index, con la advertencia de que parte de esos splits se usaron en entrenamiento.
-- Control de calidad de anotacion: comparacion de etiquetas humanas contra la distribucion del modelo para detectar desacuerdos y priorizar revision.
+- Enrutamiento de tickets de soporte: con una pregunta `choice` sobre equipos (billing, support, sales) y preguntas auxiliares `noul`/`score` (urgencia, frustración) en la misma petición, el modelo clasifica el ticket en una sola pasada y devuelve probabilidades para aplicar umbrales de escalado.
+- Moderación y triaje de contenido: preguntas `noul` encadenadas (¿es spam?, ¿es abusivo?, ¿requiere revisión humana?) sobre el mismo estado, aprovechando que agrupar preguntas que son facetas de una misma decisión reduce coste frente a peticiones separadas.
+- Clasificación de documentos con imágenes: al soportar hasta 1,6 MP, puede decidir sobre capturas, formularios escaneados o gráficos junto al texto que los acompaña.
+- Puntuación de calidad o severidad: con preguntas `score` de 2 a 255 niveles se obtienen índices esperados y distribuciones completas, útiles para priorización y para analítica agregada.
+- Extracción de señales estructuradas de conversaciones: dado el historial como `state`, responder varias preguntas de negocio (intención, sentimiento, riesgo de churn) en una única llamada con salidas calibradas.
+- Evaluación automática de respuestas de otros modelos: usar `choice` o `score` para puntuar salidas generadas por LLM en pipelines de evaluación, con la ventaja de que varias rúbricas comparten una sola pasada.
+- Enrutamiento en pipelines de agentes: decidir qué herramienta o subagente debe atender una petición, usando `choice` con descripciones por opción y el campo `confidence` para derivar a revisión humana cuando la confianza es baja.
 
 ## Benchmarks y rendimiento
 
-Decision Index 0.3 (publico). La columna «conjunta» agrupa todas las preguntas de una peticion en una secuencia; «una por peticion» replica el esquema de v1.1.
+Resultados publicados en la model card sobre Decision Index 0.3 (público):
 
-| Categoria | pplx-decider-v1.1-27b | v1.2 (peticion conjunta) | v1.2 (una pregunta por peticion) |
+| Decision Index 0.3 (public) | pplx-decider-v1.1-27b | v1.2, peticiones conjuntas | v1.2, una pregunta por petición |
 |---|---:|---:|---:|
 | Knowledge | 51,8 | **56,3** | 55,3 |
 | Language | 67,5 | **72,8** | 71,9 |
@@ -70,53 +60,43 @@ Decision Index 0.3 (publico). La columna «conjunta» agrupa todas las preguntas
 | Arts | 47,3 | **56,2** | **56,2** |
 | **Overall Decision Index** | 62,30 | **68,09** | 67,75 |
 
-El overall emplea la ponderacion de la suite, no la media simple de categorias. Las dos modalidades de envio solo difieren en los 9 benchmarks cuyas peticiones llevan varias preguntas; en los otros 28 los resultados son identicos.
-
-| Vision Decision Index 0.3 (publico, imagenes hasta 1,6 MP) | pplx-decider-v1.1-27b | pplx-decider-v1.2 |
+| Vision Decision Index 0.3 (public, imágenes hasta 1,6 MP) | pplx-decider-v1.1-27b | pplx-decider-v1.2 |
 |---|---:|---:|
-| Overall | 73,22 | **77,43** |
+| **Overall** | 73,22 | **77,43** |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de generacion, ya que el modelo no es generativo.
+La puntuación global usa la ponderación de la suite, no la media simple de categorías. Las dos columnas de v1.2 solo difieren en los 9 benchmarks cuyas peticiones llevan varias preguntas; en los otros 28 los resultados son idénticos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: aproximadamente 52 GiB solo para pesos en BF16, mas memoria de trabajo para activaciones y procesamiento de imagenes; en la practica se recomienda una GPU de 80 GB.
-- GPU validas para una sola tarjeta: A100 80 GB, H100 80 GB, H200. En GPUs de 48 GB es necesario reparto entre varias tarjetas o sharding.
-- No cabe en GPU de consumo: una RTX 4090 (24 GB) o una RTX 5090 (32 GB) no pueden alojar los pesos en BF16. No se documentan cuantizaciones que lo permitan.
-- Despliegue: el unico camino soportado es el codigo propio del repositorio (`Decider.from_pretrained(checkpoint, device="cuda")`), instalable con `pip install ./source` o con el extra `[fast]` (`pip install "./source[fast]"`). No se documenta soporte de vLLM, TGI, llama.cpp ni Ollama, coherente con el tag `custom-code`.
-- Requisitos de software: Python 3.12 o superior; `requirements.txt` fija torch, transformers, safetensors, pillow, torchvision y huggingface-hub. El repositorio es privado y requiere autenticacion con un token de Hugging Face con acceso.
-- Latencia y throughput: no se publican cifras. La model card solo indica que responder N preguntas sobre un mismo estado en formato conjunto cuesta aproximadamente lo mismo que responder una.
+- VRAM estimada: aproximadamente 52 GiB solo para pesos en BF16, más memoria de trabajo; se recomienda una GPU con margen holgado sobre esa cifra.
+- GPU recomendadas: A100 80 GB, H100 80 GB o equivalentes con al menos ~64 GB de memoria para operar con comodidad.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en tarjetas de 48 GB en BF16; no se documentan cuantizaciones que lo reduzcan.
+- Despliegue: la model card indica Python 3.12+, CUDA y el paquete propio instalable con `pip install ./source` (o `pip install "./source[fast]"` con `requirements-fast.txt`); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Decision Index 0.3 | Vision DI 0.3 | Licencia | Disponibilidad |
-|---|---:|---|---:|---:|---|---|
-| pplx-decider-v1.2 | 26,09 B | no disponible | 68,09 (conjunta) / 67,75 (individual) | 77,43 | Apache-2.0 | Repo privado en HF, acceso con token |
-| pplx-decider-v1.1-27b | 27 B (segun denominacion; no confirmado) | no disponible | 62,30 | 73,22 | no disponible | Repo publico en HF segun la model card |
-| Qwen/Qwen3.8-27B (base) | ~27 B (no confirmado) | no disponible | No aplica: es un LLM generativo, no un modelo de decision | No aplica | no disponible | HF |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pplx-decider-v1.2 | ~26,1 B | no disponible | Clasificador de decisiones multimodal con salidas tipadas | Apache 2.0 | Hugging Face (repo privado con acceso por token) |
+| pplx-decider-v1.1-27b | ~27 B (según nombre) | no disponible | Versión anterior, una pregunta por forward pass | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | ~27 B (según nombre) | no disponible | LLM generativo base | no disponible | Hugging Face |
 
-La comparacion relevante es interna a la familia: v1.2 mejora a v1.1 en todas las categorias del Decision Index salvo Tools en la modalidad conjunta (84,4 frente a 85,4), y gana 5,79 puntos en el overall con peticion conjunta. Frente al backbone Qwen3.8-27B no existe comparacion posible en tareas de decision, porque el modelo base no expone la interfaz de preguntas tipadas ni probabilidades calibradas. No se dispone de datos de otros modelos de decision comparables en la informacion proporcionada.
+No se dispone de datos de benchmarks de terceros para establecer comparaciones cuantitativas más allá de las publicadas frente a v1.1.
 
 ## Limitaciones y advertencias
 
-- El repositorio es privado: sin un token de Hugging Face con acceso concedido, el modelo no se puede descargar, lo que limita la reproducibilidad y la auditoria externa pese a la licencia Apache-2.0.
-- Requiere ejecutar codigo propio del autor (`custom-code`, `pip install ./source`), lo que implica confiar en el codigo del repositorio y fijar versiones antes de usarlo en produccion.
-- Coste de hardware elevado: ~52 GiB en BF16 mas memoria de trabajo; no hay cuantizaciones documentadas para reducir requisitos.
-- La agrupacion de preguntas no es neutral: segun la model card, ayuda cuando las preguntas son facetas de una misma decision y perjudica cuando son candidatos en competencia (los 9 benchmarks con multiples preguntas difieren entre las dos modalidades de envio).
-- Parte de los datos de entrenamiento proviene de splits oficiales de benchmarks del Decision Index, decontaminados contra test pero procedentes del mismo dominio; las puntuaciones del board pueden sobreestimar el rendimiento en decisiones fuera de esa distribucion.
-- No es un modelo conversacional ni generativo: no produce justificaciones, texto libre ni cadenas de razonamiento, y `output_tokens` es siempre 0. No sirve para tool calling ni para agentes multi-paso por si mismo.
-- No se declara cobertura de idiomas; el rendimiento en castellano u otras lenguas distintas del ingles no esta documentado.
-- No se publican analisis de sesgos, tasas de alucinacion ni calibracion fuera de los indices citados; la `confidence` devuelta deberia validarse contra datos propios antes de usarla como umbral automatico.
-- Limite de resolucion visual de 1,6 MP: documentos densos o capturas de alta resolucion pueden requerir preprocesado.
-- La model card no documenta el limite de longitud de secuencia (seccion «Limits» no incluida); es un parametro critico para estados largos que debe verificarse antes de disenar el pipeline.
+- El repositorio es privado: requiere autenticación con un token de Hugging Face con acceso; no es descargable de forma anónima pese a la licencia Apache 2.0.
+- El modelo es un clasificador, no un generador: no produce texto libre, código ni razonamiento encadenado; usarlo fuera de su esquema de peticiones no es viable.
+- Las peticiones que superan el límite de longitud se dividen, lo que puede alterar la coherencia entre preguntas; la cifra exacta del límite no está publicada.
+- Agrupar preguntas ayuda cuando son facetas de una misma decisión y perjudica cuando son candidatos competidores; la model card advierte explícitamente sobre este efecto y los benchmarks lo reflejan (Tools baja de 85,4 a 84,4 con peticiones conjuntas).
+- Parte del entrenamiento incluye splits oficiales de benchmarks del Decision Index (decontaminados contra test), lo que puede favorecer el rendimiento en ese board frente a tareas fuera de él.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación; al ser clasificación con probabilidades, el riesgo principal es la mala calibración en dominios alejados del entrenamiento.
+- No se publican requisitos de cuantización ni soporte para frameworks de serving estándar, lo que limita opciones de despliegue eficiente.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
-- Version anterior: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
+- Versión anterior: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Perplexity AI: https://www.perplexity.ai/
-- Pagina general de Perplexity (resultado de busqueda, sin documentacion tecnica del modelo): https://www.perplexity.ai/fr/hub/getting-started
-- Entrada de Wikipedia sobre Perplexity AI (contexto de la empresa, sin datos del modelo): https://fr.wikipedia.org/wiki/Perplexity_AI
-
-Nota: la busqueda web no devolvio papers, blogs tecnicos ni repositorios especificos de pplx-decider-v1.2; los resultados se limitan a paginas generales de Perplexity. No se dispone de enlace a paper, demo o documentacion adicional.

@@ -2,135 +2,117 @@
 
 ## Resumen
 
-Comfy-Org/Wan-2.2 no es un modelo entrenado desde cero, sino un repositorio de redistribución (repackaging) de la familia Wan 2.2 en formato de fichero único para ComfyUI. Lo publica Comfy-Org, el equipo detrás del ecosistema ComfyUI, y agrupa los pesos convertidos de trece repositorios originales de Wan-AI, alibaba-pai, lightx2v y nvidia. Su función es práctica: ofrecer los safetensors ya preparados, con nombres y estructura de carpetas normalizados, para que los nodos de ComfyUI los carguen sin conversiones manuales.
+Wan 2.2 es una familia de modelos de difusión para generación y edición de vídeo desarrollada originalmente por Wan-AI (Alibaba) y redistribuida por Comfy-Org como un repositorio único de pesos en formato `safetensors` listos para usar en ComfyUI. No se trata de un modelo único, sino de un paquete que agrupa variantes de texto a vídeo (T2V), imagen a vídeo (I2V), vídeo a vídeo con control, animación, locución a vídeo (S2V), inpainting, control de cámara y edición de imagen (ChronoEdit), junto con codificadores de texto UMT5-XXL, VAE y LoRAs de destilación.
 
-El modelo subyacente es un sistema de difusión para generación y edición de vídeo, no un modelo de lenguaje. Cubre texto-a-vídeo (T2V), imagen-a-vídeo (I2V), primer y último fotograma a vídeo (FLF2V), vídeo controlado por audio (S2V), animación de personajes, control de cámara, inpainting de vídeo y edición de imagen con ChronoEdit. Se distribuye en variantes de 14B (etiquetadas A14B) y de 5B, y los ficheros de 14B aparecen partidos en expertos *high_noise* y *low_noise*.
+La relevancia de esta redistribución es práctica: Comfy-Org empaqueta los pesos en cuantizaciones (`bf16`, `fp16`, `fp8_scaled`, `int8_convrot`) y los organiza por carpetas para que el usuario pueda cargarlos directamente en los nodos de ComfyUI sin tener que convertir ni renombrar archivos. El repositorio ocupa 737,3 GB e incluye variantes de 14B y 5B parámetros, con versiones de "ruido alto" y "ruido bajo" para los modelos de 14B, un esquema de dos etapas habitual en los pipelines de difusión de vídeo de gran tamaño.
 
-Su relevancia ahora es de adopción: acumula más de 8,2 millones de descargas y 965 likes, con licencia Apache 2.0, y se ha convertido en la vía de entrada habitual a Wan 2.2 dentro de ComfyUI. El repositorio pesa 731,6 GB porque incluye todas las variantes en varias precisiones (fp16, bf16, fp8_scaled, int8), no porque un único modelo ocupe ese espacio.
+La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las obligaciones de atribución de dicha licencia. El modelo está pensado para investigadores y desarrolladores que construyen pipelines de generación de vídeo, no para inferencia de texto: es un modelo de difusión, no un LLM, y su consumo se realiza a través de ComfyUI o de librerías de difusión compatibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion para video (no es un LLM). Variantes de 14B con ficheros separados en expertos high_noise y low_noise; variantes de 5B en fichero unico. El detalle interno (tipo de transformer, mecanismo de atencion) no se documenta en la model card |
-| Parametros totales | 14B en las variantes A14B (T2V, I2V, S2V, Animate, Fun Control, Fun Inpaint, VACE, ChronoEdit); 5B en TI2V-5B, Fun-5B-Control y Fun-5B-InP |
-| Parametros activos | No disponible. El repositorio no documenta un esquema MoE con recuento de parametros activos; la separacion high_noise/low_noise es una division en dos etapas de ruido, no un router de expertos documentado |
-| Longitud de contexto | No disponible. La model card no especifica resolucion maxima, numero de fotogramas ni duracion de clip |
-| Tipos de cuantizacion | fp16, bf16, fp8_scaled (e4m3fn escalado) e int8 (convrot, solo en Animate 14B). LoRAs de destilacion a 4 pasos (lightx2v) y LoRA de relight para Animate |
-| Idiomas soportados | No disponible. El encoder de texto es umt5-xxl (se distribuye en fp16 y fp8_e4m3fn_scaled), pero la model card no declara idiomas admitidos en los prompts |
+| Arquitectura | Modelo de difusión para vídeo (variantes T2V, I2V, TI2V, S2V, control, inpainting, animación y edición de imagen); pipeline de dos etapas con modelos de ruido alto y ruido bajo en las variantes de 14B |
+| Parámetros totales | 14B (variantes principales) y 5B (variantes TI2V, Fun Control e Inpaint); no se detalla el desglose por componente |
+| Parámetros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (no aplica; la condición de entrada es texto, imagen o vídeo, no una ventana de tokens de contexto) |
+| Tipos de cuantización | `bf16`, `fp16`, `fp8_scaled` (e4m3fn escalado), `int8_convrot`; codificador de texto UMT5-XXL en `fp16`, `fp8_e4m3fn_scaled` e `int8_convrot` |
+| Idiomas soportados | no disponible (el codificador de texto es UMT5-XXL, multilingüe, pero la model card no declara idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, fichero unico (diffusion-single-file) para ComfyUI |
-| Tarea declarada (pipeline) | image-to-video |
-| Encoder de texto | umt5_xxl (fp16 y fp8_e4m3fn_scaled) |
-| VAE incluidos | wan2.2_vae.safetensors y wan_2.1_vae.safetensors |
-| Encoder de audio | wav2vec2_large_english_fp16 (necesario para el flujo S2V) |
-| Tamano del repositorio | 731,6 GB |
-| Descargas | 8.230.488 |
-| Fecha de creacion / actualizacion | 2025-07-27 / 2026-09-23 |
+| Formato de pesos | `safetensors` (single-file para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-La model card de este repositorio no aporta informacion sobre arquitectura interna ni sobre el proceso de entrenamiento: es un repackaging y remite a los repositorios originales. Lo que si se deduce de la estructura de ficheros es un esquema de generacion en dos etapas para las variantes de 14B, con un experto *high_noise* y otro *low_noise* que se cargan y encadenan en el mismo grafo de muestreo; las variantes de 5B (TI2V-5B, Fun-5B-Control, Fun-5B-InP) se sirven como un unico safetensors sin esa particion.
+El repositorio no documenta la arquitectura interna de los modelos subyacentes; se limita a indicar que son pesos reempaquetados de los repositorios originales de Wan-AI, alibaba-pai, nvidia (ChronoEdit) y lightx2v (LoRAs de destilación). Por los nombres de archivo se deduce una estructura de difusión de vídeo con dos etapas: los modelos de 14B se dividen en `high_noise` y `low_noise`, un esquema en el que la primera etapa genera la estructura gruesa y la segunda refina el detalle. Las variantes de 5B (`ti2v_5B`, `fun_control_5B`, `fun_inpaint_5B`) se distribuyen en un único archivo, sin esa división.
 
-El pipeline completo combina tres componentes: el modelo de difusion, el encoder de texto umt5-xxl para los prompts y un VAE (wan2.2_vae o wan_2.1_vae) para codificar y decodificar video. En el flujo S2V se anade un encoder de audio wav2vec2 en fp16 que condiciona la generacion del movimiento labial. Sobre el modelo base se aplican LoRAs especificos: destilacion de 4 pasos de lightx2v para T2V e I2V (reduce el numero de pasos de muestreo), una LoRA de relight para Animate y una LoRA de destilacion para ChronoEdit. No se dispone de datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni sobre si hubo RLHF o DPO.
+El pipeline incluye un codificador de texto UMT5-XXL (disponible en tres precisiones), un VAE específico de Wan 2.2 y otro heredado de Wan 2.1, un codificador de audio `wav2vec2_large_english_fp16` para la variante S2V (locución a vídeo) y LoRAs de destilación de lightx2v que permiten reducir el número de pasos de muestreo a 4. No se proporcionan en la información disponible datos sobre número de tokens de entrenamiento, composición del dataset ni si hubo ajuste por refuerzo o preferencias; los modelos de difusión no emplean RLHF en el sentido de los LLM.
 
 ## Capacidades
 
-- Generacion de video texto-a-video (T2V) con las variantes de 14B y el flujo de 5B TI2V.
-- Generacion de video imagen-a-video (I2V), la tarea declarada del repositorio.
-- Generacion condicionada por primer y ultimo fotograma (FLF2V), con workflow propio.
-- Animacion de personajes (Animate 14B), incluyendo LoRA de relight para reiluminacion.
-- Generacion de video guiada por audio (S2V), con encoder wav2vec2 para sincronizacion labial.
-- Control de camara (Fun Camera): trayectorias de camara definidas como condicionamiento.
-- Inpainting de video (Fun Inp) en variantes de 14B y de 5B.
-- Control estructural adicional mediante la variante VACE (Fun VACE 14B).
-- Edicion de imagen con ChronoEdit 14B, con LoRA de destilacion.
-- Aceleracion por destilacion: LoRAs de 4 pasos para T2V e I2V.
-- No soporta tool calling ni function calling: no es un modelo de lenguaje.
-- No soporta razonamiento multi-paso ni uso como agente.
-- Capacidades multilingues en generacion de texto: no disponibles (el modelo no genera texto; los prompts se procesan con umt5-xxl, idiomas no declarados).
+- Generación de vídeo a partir de texto (T2V) con las variantes de 14B.
+- Generación de vídeo a partir de una imagen (I2V) y a partir de primer y último fotograma (FLF2V).
+- Generación de vídeo a partir de texto e imagen combinados (TI2V) con la variante de 5B.
+- Control de cámara en la generación (Fun Camera Control, 14B).
+- Control estructural y de movimiento (Fun Control, 14B y 5B).
+- Inpainting y outpainting de vídeo (Fun Inpaint, 14B y 5B).
+- Animación de personajes a partir de una imagen de referencia (Animate 14B), con LoRA de relighting.
+- Locución a vídeo: generación de vídeo sincronizado con audio de entrada (S2V 14B) usando `wav2vec2` como codificador de audio.
+- Edición de imagen (ChronoEdit 14B) con LoRA de destilación.
+- Aceleración por destilación: LoRAs de lightx2v para muestreo en 4 pasos en T2V e I2V.
+- No soporta tool calling, function calling ni razonamiento multi-paso: no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Storyboards y prevision de anuncios: T2V de 14B para convertir un guion en un clip de referencia antes del rodaje, con la ventaja de poder iterar prompts sobre el mismo grafo de ComfyUI.
-- Animacion de fotografia de producto: I2V toma una imagen fija de catalogo y genera un plano en movimiento, util para e-commerce que no puede costear produccion audiovisual por referencia.
-- Transiciones controladas en montaje: el flujo FLF2V fija el fotograma inicial y el final, lo que permite generar el intermedio de un corte concreto y encajarlo en una timeline existente.
-- Doblaje y avatares parlantes: S2V con el encoder wav2vec2 sincroniza el movimiento labial de un personaje a una pista de audio, aplicable a localizacion de contenido o a presentadores virtuales.
-- Planos con movimiento de camara definido: Fun Camera permite describir la trayectoria (travelling, orbita, aproximacion) como condicionamiento en lugar de confiar en que el prompt de texto la reproduzca.
-- Limpieza de material rodado: Fun Inpaint elimina objetos no deseados, marcas o elementos de continuidad en un clip ya grabado, sin repasar fotograma a fotograma.
-- Retoque fotografico consistente: ChronoEdit 14B se usa para ediciones de imagen que deben preservar identidad y estructura, con la LoRA de destilacion para reducir pasos.
-- Prototipado rapido en produccion: las LoRAs lightx2v de 4 pasos bajan el coste por iteracion, lo que hace viable generar decenas de variantes de un plano antes de elegir una y rehacerla con el modelo completo.
+- Previsualización de vídeo publicitario: a partir de un guion breve y una imagen de referencia, la variante I2V 14B genera un clip con coherencia temporal suficiente para presentar un concepto a un cliente antes de producir el vídeo final.
+- Prototipado de secuencias en producción audiovisual: la variante FLF2V permite fijar el primer y el último fotograma de un plano y generar la transición intermedia, útil para storyboards animados.
+- Doblaje y avatares parlantes: la variante S2V 14B sincroniza el movimiento labial de un personaje con una pista de audio, lo que sirve para locuciones corporativas o contenidos formativos multilingües (previa traducción del audio).
+- Edición y retoque de material rodado: las variantes Fun Inpaint de 14B y 5B permiten eliminar objetos o rellenar zonas de un clip sin regrabar, integrándose en un flujo de postproducción dentro de ComfyUI.
+- Control de cámara virtual: Fun Camera Control 14B permite especificar movimientos de cámara (travelling, órbita, zoom) sobre una escena generada, útil para animáticas y previsualización de planos.
+- Generación de material para investigación en difusión de vídeo: el repositorio ofrece pesos en varias precisiones (`bf16`, `fp8_scaled`, `int8_convrot`) que permiten estudiar el impacto de la cuantización en la calidad del vídeo generado con un mismo pipeline.
+- Creación de contenido para redes sociales a bajo coste: la variante TI2V de 5B, más ligera, permite generar clips cortos en hardware de gama alta de consumo, con la LoRA de 4 pasos para reducir el tiempo de muestreo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye metricas cuantitativas (FVD, VBench, similitud de prompt, consistencia temporal) ni comparaciones numericas con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para 14B (calculo aritmetico a partir del numero de parametros, no dato publicado): unos 28 GB en bf16/fp16 por experto y unos 14 GB en fp8_scaled. Como el flujo de 14B encadena experto high_noise y low_noise, en la practica hay que sumar la carga del segundo experto o descargar el primero entre etapas.
-- VRAM adicional para el resto del grafo: umt5-xxl en fp16 ronda los 11 GB y en fp8_e4m3fn_scaled unos 5,5 GB; a eso se suman el VAE y, en S2V, el wav2vec2 en fp16. Estas cifras son estimaciones por aritmetica de precision, no datos de la model card.
-- Variante 5B: unos 10 GB en fp16, la opcion realista para GPU de consumo con 12-16 GB.
-- GPU de consumo: el flujo de 5B cabe en RTX 4070 Ti / 4080 / 4090. El flujo de 14B en fp8_scaled es ajustado en una RTX 4090 de 24 GB y depende de la gestion de memoria del sampler; en bf16 requiere GPU de 40-80 GB.
-- GPU profesionales: A100 40/80 GB y H100 para 14B en bf16 sin cuantizar; L40S o A6000 para fp8.
-- Despliegue: ComfyUI es el entorno de referencia (los safetensors estan nombrados y estructurados para sus carpetas models/diffusion_models, text_encoders, vae, loras, audio_encoders). Tambien existen Comfy Desktop (ejecucion local) y Comfy Cloud (GPU bajo demanda).
-- No aplica vLLM, llama.cpp, Ollama ni TGI: son runtimes de modelos de lenguaje, no de difusion de video.
-- Latencia y throughput: no disponibles. No se publican tiempos por clip ni numero de pasos recomendado fuera de las LoRAs de 4 pasos.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa por tamaño de pesos, un modelo de 14B en `bf16` ocupa aproximadamente 28 GB solo en pesos, a lo que hay que sumar el VAE, el codificador de texto UMT5-XXL y las activaciones; en `fp8_scaled` el peso baja a unos 14 GB, pero el pico de memoria durante el muestreo de vídeo sigue siendo elevado.
+- Las variantes de 5B en `fp16` ocupan del orden de 10 GB en pesos, lo que las hace más viables en GPU de consumo, siempre que la resolución y el número de fotogramas sean moderados.
+- GPU recomendadas: no hay recomendaciones oficiales en la información disponible. Por tamaño, las variantes de 14B en `bf16` requieren GPU de centro de datos (A100 80 GB, H100) o configuraciones multi-GPU; las variantes en `fp8_scaled` pueden caber en una RTX 4090 de 24 GB con offloading, y las de 5B son las únicas realistas en GPU de consumo de gama alta.
+- Despliegue: el repositorio está empaquetado específicamente para ComfyUI (carpetas `diffusion_models`, `text_encoders`, `vae`, `loras`, `audio_encoders`). No se documentan otros runners en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea principal | Contexto / duracion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Tipo | Contexto / condición | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan 2.2 A14B (este repo) | 14B, dos expertos high/low noise | T2V, I2V, S2V, Animate, control de camara, inpaint, VACE | No disponible | Apache 2.0 | Safetensors para ComfyUI, 8,2 M de descargas |
-| Wan 2.2 5B (TI2V-5B, Fun-5B) | 5B, fichero unico | T2V/I2V, control e inpaint en 5B | No disponible | Apache 2.0 | Incluido en este mismo repositorio |
-| Wan 2.1 | 14B y 1.3B (variantes T2V/I2V) | T2V, I2V | No disponible | No verificada en esta ficha | Repositorios Wan-AI en Hugging Face; VAE 2.1 incluido aqui por compatibilidad |
-| ChronoEdit 14B (nvidia) | 14B | Edicion de imagen | No disponible | No disponible en la informacion proporcionada | Incluido aqui como chrono_edit_14B_fp16 |
-| HunyuanVideo | 13B (dato publico, no verificado en esta ficha) | T2V, I2V | No disponible | No disponible en la informacion consultada | Fuera del alcance de esta busqueda |
-| CogVideoX | 5B y 2B (dato publico, no verificado en esta ficha) | T2V, I2V | No disponible | No disponible en la informacion consultada | Fuera del alcance de esta busqueda |
+| Wan 2.2 (este repo) | 14B y 5B | Difusión de vídeo (T2V, I2V, S2V, control, inpainting) | Texto, imagen, vídeo, audio | Apache 2.0 | Pesos `safetensors` para ComfyUI |
+| Wan-AI/Wan2.2-T2V-A14B | 14B | Difusión texto a vídeo | Texto | Apache 2.0 (según repo original) | Pesos originales en Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B | 14B | Difusión imagen a vídeo | Imagen y texto | Apache 2.0 (según repo original) | Pesos originales en Hugging Face |
+| Wan-AI/Wan2.2-TI2V-5B | 5B | Difusión texto e imagen a vídeo | Texto e imagen | Apache 2.0 (según repo original) | Pesos originales en Hugging Face |
 
-La comparacion relevante para un desarrollador es interna a la familia: 14B ofrece las variantes con control (camara, VACE, animate, audio) y 5B ofrece la misma licencia con una huella de VRAM tres veces menor, a costa de las capacidades de control avanzado.
+No se dispone en la información proporcionada de datos de benchmarks que permitan comparar el rendimiento cualitativo con modelos de otros autores.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no hay tool calling, ni agentes, ni razonamiento multi-paso, ni generacion de codigo. Cualquier evaluacion de esas capacidades no aplica.
-- Ausencia total de datos de evaluacion: sin benchmarks, sin tasas de exito por tarea y sin comparativas numericas publicadas por el autor del repackaging.
-- Sin informacion sobre sesgos: la model card no documenta sesgos demograficos, culturales ni de representacion, un riesgo relevante en generacion de video con personas.
-- Artefactos propios de difusion de video: incoherencia temporal entre fotogramas, deformacion de manos y rostros, texto mal renderizado dentro de la imagen y deriva de identidad en clips largos. No cuantificado en la informacion disponible.
-- Limites de duracion y resolucion sin documentar: no se declara numero maximo de fotogramas ni resolucion nativa, por lo que la viabilidad de un plano largo hay que verificarla empiricamente.
-- Idiomas no declarados: aunque el encoder umt5-xxl es multilingue, no hay confirmacion de calidad con prompts en castellano; conviene validar antes de disenar un flujo de produccion en espanol.
-- Licencia: el repositorio es Apache 2.0, pero agrupa pesos de origen diverso. ChronoEdit proviene de nvidia/ChronoEdit-14B-Diffusers y su licencia no se detalla en esta ficha; antes de un uso comercial hay que revisar la licencia de cada modelo base por separado.
-- Riesgo operativo del repositorio: 731,6 GB de tamano total. Descargar el repositorio completo es inviable en la mayoria de entornos; hay que bajar solo los ficheros concretos que requiera el workflow.
-- Encoder de audio en ingles: el wav2vec2 incluido es la variante english, lo que condiciona la calidad del flujo S2V con audio en otros idiomas.
-- Dependencia de ComfyUI: los pesos estan empaquetados y nombrados para ese ecosistema; usarlos fuera implica adaptar la carga y el grafo de muestreo.
+- No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling; cualquier expectativa en ese sentido es un error de categoría.
+- El repositorio es una redistribución de pesos, no una model card técnica: no documenta arquitectura interna, datos de entrenamiento ni evaluación, por lo que la trazabilidad técnica es limitada.
+- El tamaño del repositorio (737,3 GB) exige planificación de almacenamiento; descargar el paquete completo no es viable en la mayoría de entornos, y conviene descargar solo los archivos de la variante necesaria.
+- Riesgo de artefactos y alucinaciones visuales: como todo modelo de difusión de vídeo, puede generar incoherencias temporales, deformaciones anatómicas y texto ilegible; no se han publicado métricas de calidad en la información disponible.
+- Sesgos: no documentados en la información proporcionada; los modelos de difusión entrenados con datos web suelen reproducir sesgos demográficos y estéticos, pero no hay confirmación oficial para esta familia.
+- Idiomas: la model card no declara idiomas soportados; el codificador UMT5-XXL es multilingüe, pero el rendimiento por idioma no está documentado.
+- Licencia Apache 2.0: permite uso comercial con atribución y sin restricciones de campo de uso, pero conviene verificar la licencia de cada repositorio original (Wan-AI, alibaba-pai, nvidia, lightx2v) por si alguna variante tuviera condiciones adicionales no reflejadas aquí.
+- Las versiones `int8_convrot` y `fp8_scaled` pueden degradar la calidad respecto a `bf16`; no hay evaluación publicada del impacto de la cuantización en esta familia.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Wan-2.2
-- Ejemplos de Wan 2.2 en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan22/
-- Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI
-- Plantillas de workflow: https://github.com/Comfy-Org/workflow_templates
-- Workflow Wan 2.2 14B Image to Video: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_i2v.json
-- Workflow Wan 2.2 14B First-Last Frame to Video: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_flf2v.json
-- Workflow Wan 2.2 14B Text to Video: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_t2v.json
-- Workflow Wan 2.2 5B Video Generation: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_5B_ti2v.json
-- Workflow Wan 2.2 14B Fun Control: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_fun_control.json
-- Workflow Wan 2.2 5B Fun Control: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_5B_fun_control.json
-- Workflow Wan 2.2 14B Fun Camera Control: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_fun_camera.json
-- Workflow Wan 2.2 14B Fun Inpaint: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_fun_inpaint.json
-- Workflow Wan 2.2 5B Fun Inpaint: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_5B_fun_inpaint.json
-- Workflow Wan 2.2 S2V Audio-Driven Video Generation: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_s2v.json
-- Workflow ChronoEdit 14B Image Edit: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_chrono_edit_14B.json
-- Modelo base Wan2.2-T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
-- Modelo base Wan2.2-I2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
-- Modelo base Wan2.2-S2V-14B: https://huggingface.co/Wan-AI/Wan2.2-S2V-14B
-- Modelo base Wan2.2-Animate-14B: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
-- Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
-- Modelo base alibaba-pai/Wan2.2-Fun-A14B-Control: https://huggingface.co/alibaba-pai/Wan2.2-Fun-A14B-Control
-- Modelo base alibaba-pai/Wan2.2-Fun-A14B-Control-Camera: https://huggingface.co/alibaba-pai/Wan2.2-Fun-A14B-Control-Camera
-- Modelo base alibaba-pai/Wan2.2-Fun-A14B-InP: https://huggingface.co/alibaba-pai/Wan2.2-Fun-A14B-InP
-- Modelo base alibaba-pai/Wan2.2-Fun-5B-Control: https://huggingface.co/alibaba-pai/Wan2.2-Fun-5B-Control
-- Modelo base alibaba-pai/Wan2.2-Fun-5B-InP: https://huggingface.co/alibaba-pai/Wan2.2-Fun-5B-InP
-- Modelo base alibaba-pai/Wan2.2-VACE-Fun-A14B: https://huggingface.co/alibaba-pai/Wan2.2-VACE-Fun-A14B
-- Modelo base nvidia/ChronoEdit-14B-Diffusers: https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers
-- LoRAs de destilacion lightx2v: https://huggingface.co/lightx2v/Wan2.2-Distill-Loras
-- Sitio de Comfy: https://comfy.org/
-- Descarga de Comfy Desktop: https://comfy.org/download
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Wan-2.2
+- Repositorios originales:
+  - https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
+  - https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
+  - https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+  - https://huggingface.co/Wan-AI/Wan2.2-S2V-14B
+  - https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
+  - https://huggingface.co/alibaba-pai/Wan2.2-Fun-A14B-Control
+  - https://huggingface.co/alibaba-pai/Wan2.2-Fun-A14B-Control-Camera
+  - https://huggingface.co/alibaba-pai/Wan2.2-Fun-5B-Control
+  - https://huggingface.co/alibaba-pai/Wan2.2-Fun-A14B-InP
+  - https://huggingface.co/alibaba-pai/Wan2.2-Fun-5B-InP
+  - https://huggingface.co/alibaba-pai/Wan2.2-VACE-Fun-A14B
+  - https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers
+  - https://huggingface.co/lightx2v/Wan2.2-Distill-Loras
+- Ejemplos y documentación de ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan22/
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Plantillas de flujos de trabajo:
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_i2v.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_flf2v.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_t2v.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_5B_ti2v.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_fun_control.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_s2v.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_chrono_edit_14B.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_fun_camera.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_5B_fun_control.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_fun_inpaint.json
+  - https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_5B_fun_inpaint.json

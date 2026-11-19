@@ -53,14 +53,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/?msockid=0dce4316f20b6fe911cf54edf3af6eb7",
-      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
+      "url": "https://www.microsoft.com/fr-fr?msockid=10f73aefe2a36324038322f9e3c96279",
+      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
     },
     {
-      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
-      "url": "https://www.microsoft.com/fr-fr?msockid=0dce4316f20b6fe911cf54edf3af6eb7",
-      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/?msockid=10f73aefe2a36324038322f9e3c96279",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
     },
     {
       "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
@@ -68,9 +68,9 @@
       "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
     },
     {
-      "title": "My Account",
-      "url": "https://myaccount.microsoft.com/login",
-      "snippet": "Sign in to manage your Microsoft account and access free online services like Outlook, Word, Excel, and PowerPoint securely from …"
+      "title": "Microsoft Learn : Développez avec des réponses à portée de main",
+      "url": "https://learn.microsoft.com/fr-fr/",
+      "snippet": "Recherchez une documentation officielle, un savoir-faire pratique et des conseils d’experts pour les constructeurs travaillant et la …"
     },
     {
       "title": "Support Microsoft",

@@ -2,89 +2,92 @@
 
 ## Resumen
 
-Huihui-GLM-4.6V-Flash-abliterated-GGUF es una cuantizacion en formato GGUF del modelo multimodal GLM-4.6V-Flash, realizada por mradermacher. El modelo base, desarrollado por huihui-ai, es una version "abliterated" (desprovista de alineacion y censura) del modelo original de Zhipu AI, que combina comprension de texto e imagenes en una sola arquitectura. Esta version cuantizada permite ejecutar el modelo en hardware de consumo con un consumo de memoria reducido, manteniendo las capacidades multimodales del original.
+Huihui-GLM-4.6V-Flash-abliterated-GGUF es una distribucion en formato GGUF del modelo multimodal Huihui-GLM-4.6V-Flash-abliterated, publicada por el usuario mradermacher. El modelo subyacente es una variante "abliterated" (con las direcciones de rechazo eliminadas mediante edicion de pesos) del GLM-4.6V-Flash, un modelo vision-lenguaje de la familia GLM desarrollada por Zhipu AI. Esta version GGUF esta pensada para inferencia local y en CPU/GPU de consumo mediante llama.cpp y herramientas compatibles.
 
-La relevancia de este modelo reside en que ofrece una alternativa multimodal de tamano medio (9.400 millones de parametros) con licencia MIT, lo que facilita su uso comercial sin restricciones. El proceso de abliteration elimina los mecanismos de rechazo y censura del modelo original, lo que lo hace util para aplicaciones que requieren generacion de contenido sin filtros, aunque esto conlleva riesgos importantes que se detallan en la seccion de limitaciones.
+El modelo cuenta con 9.400 millones de parametros (dato real obtenido de los safetensors del modelo base) y esta orientado a conversacion multimodal, con soporte de imagenes a traves de un proyector multimodal (mmproj) que se distribuye como fichero separado. Los idiomas declarados son chino (zh) e ingles (en). La licencia es MIT, lo que permite uso comercial sin restricciones significativas.
 
-El repositorio incluye multiples niveles de cuantizacion (desde Q2_K hasta f16) junto con los ficheros mmproj necesarios para el procesamiento de imagenes, lo que permite adaptar el modelo a diferentes capacidades de hardware. La cuantizacion esta realizada de forma estatica, sin usar imatrix, y el autor indica que las versiones ponderadas podrian publicarse posteriormente si se solicitan.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo vision-lenguaje de ~9.4B, una variante sin censura (abliterated) y cuantizaciones GGUF listas para ejecucion local. Esto lo hace util para investigadores que estudian comportamiento de modelos sin rechazo, para tareas de generacion creativa sin filtros y para despliegues en hardware modesto donde un modelo multimodal de este tamano cabe en GPUs de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (GLM-4.6V-Flash) |
-| Parametros totales | 9.400.279.040 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer multimodal (vision-lenguaje); detalles internos no disponibles |
+| Parametros totales | 9.400.279.040 (~9.4B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS (mencionado en comentarios, no listado en tabla), mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | chino (zh), ingles (en) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | zh, en |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors para el modelo base original) |
+| Formato de pesos | GGUF (con fichero mmproj separado para el componente multimodal) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a GLM-4.6V-Flash de Zhipu AI, un modelo multimodal basado en transformer que procesa entradas de texto e imagen de forma conjunta. El modelo base de huihui-ai aplica una tecnica de abliteration, que consiste en modificar los pesos del modelo para eliminar las direcciones de activacion asociadas a comportamientos de rechazo o censura, obteniendo asi un modelo "uncensored" que responde sin las restricciones de seguridad del original.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. Se trata de un modelo de la familia GLM-4.6V-Flash, que por su denominacion y por la presencia de un fichero mmproj se confirma como un modelo vision-lenguaje: un transformer de lenguaje acoplado a un codificador visual mediante un proyector multimodal. El modelo base procede de huihui-ai/Huihui-GLM-4.6V-Flash-abliterated, que a su vez deriva del GLM-4.6V-Flash de Zhipu AI.
 
-El proceso de entrenamiento original de GLM-4.6V-Flash incluye datos multimodales que combinan documentos, imagenes y texto, con capacidad para generar contenido intercalado de imagen y texto. El modelo puede invocar herramientas de busqueda y recuperacion durante la generacion para enriquecer sus respuestas. No se dispone de informacion detallada sobre el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO, ya que esta informacion no se incluye en la documentacion proporcionada.
-
-La cuantizacion realizada por mradermacher es estatica, sin usar imatrix, y mantiene los ficheros de proyeccion multimodal (mmproj) en dos precisiones (f16 y Q8_0) para permitir el procesamiento de imagenes junto con el modelo de lenguaje.
+La variante "abliterated" implica que se han aplicado tecnicas de edicion de pesos (tipicamente ablacion de direcciones en el espacio de activaciones) para eliminar el comportamiento de rechazo del modelo original, produciendo un modelo "uncensored". No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. La cuantizacion ha sido realizada por mradermacher con su pipeline habitual (quantize_version 2, output_tensor_quantised 1, convert_type hf), e incluye variantes estaticas en este repositorio y variantes con imatrix en un repositorio separado (sufijo -i1-GGUF).
 
 ## Capacidades
 
-- Comprension multimodal: procesa simultaneamente texto e imagenes, pudiendo responder preguntas sobre el contenido visual de las mismas.
-- Generacion de contenido intercalado: puede producir respuestas que combinan texto e imagenes de forma coherente con la entrada proporcionada.
-- Invocacion de herramientas: durante la generacion puede llamar a herramientas de busqueda y recuperacion para obtener informacion adicional y enriquecer sus respuestas.
-- Generacion sin censura: al estar abliterated, no aplica los filtros de contenido del modelo original, respondiendo a peticiones que otros modelos rechazarian.
-- Multilingue: soporta chino e ingles, con capacidad para manejar documentos y consultas en ambos idiomas.
-- Razonamiento contextual: puede trabajar con documentos extensos y multiples imagenes para sintetizar respuestas coherentes.
+- Generacion de texto conversacional multi-turno en chino e ingles.
+- Comprension de imagenes (vision) mediante el proyector multimodal mmproj, que debe cargarse junto al modelo.
+- Generacion sin filtros de rechazo gracias a la ablacion aplicada sobre el modelo base (comportamiento "uncensored").
+- Razonamiento y respuesta a instrucciones de caracter general, heredadas del modelo GLM-4.6V-Flash.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues limitadas a los idiomas declarados (zh, en); no se declara soporte para castellano.
+- Modo thinking explicito, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Generacion de contenido creativo sin restricciones: el modelo puede utilizarse para escribir ficcion, guiones o material creativo con tematicas adultas o controvertidas que otros modelos rechazarian, aprovechando la ausencia de alineacion.
-- Analisis de documentos mixtos: procesamiento de informes o manuales que combinan texto e imagenes, extrayendo informacion relevante de ambos formatos y generando resumenes integrados.
-- Asistencia en investigacion academica: el modelo puede analizar figuras, graficos y tablas de articulos cientificos, explicando su contenido y relacionandolo con el texto circundante.
-- Creacion de contenido educativo personalizado: generacion de materiales de aprendizaje que incluyen explicaciones textuales acompanadas de imagenes relevantes, adaptadas al nivel del estudiante.
-- Desarrollo de chatbots de rol: la naturaleza abliterated permite crear personajes conversacionales sin las restricciones tipicas de los modelos alineados, utiles en juegos de rol o simulaciones sociales.
-- Procesamiento de imagenes medicas o tecnicas: el modelo puede describir y analizar imagenes de equipos, diagramas o fotografias tecnicas, generando informes detallados sobre su contenido.
+- Investigacion sobre comportamiento de modelos sin rechazo: el modelo permite estudiar como la ablacion afecta la distribucion de respuestas, la coherencia y la utilidad en tareas sensibles, comparandolo con el modelo base no abliterated.
+- Generacion creativa sin restricciones de contenido: escritura de ficcion, guiones o narrativa que requiera tematica adulta o exploracion de temas que el modelo original rechazaria; el modelo cabe en una GPU de consumo en Q4_K_M (6.3 GB).
+- Descripcion de imagenes y analisis visual local: carga del modelo junto al mmproj Q8_0 (1.1 GB) en llama.cpp permite captioning, extraccion de informacion de capturas o analisis de documentos escaneados sin enviar datos a servicios externos.
+- Asistente conversacional en chino e ingles sobre hardware modesto: con cuantizacion Q4_K_S (5.9 GB) puede ejecutarse en una RTX 3060 de 12 GB o en Apple Silicon con memoria unificada, ofreciendo conversacion multi-turno con contexto local.
+- Prototipado de pipelines multimodales en investigacion: el par modelo + mmproj en GGUF simplifica la integracion en experimentos con llama.cpp o bindings Python, sin necesidad de infraestructura de GPU de datacenter.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes de cuantizacion mas dos de mmproj, lo que permite medir el impacto de la cuantizacion en calidad y velocidad sobre un mismo modelo multimodal de 9.4B.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia MIT facilita el uso en productos comerciales internos sin obligaciones de atribucion mas alla de conservar el aviso de copyright.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye datos de evaluacion comparativa con otros modelos, ni resultados en pruebas estandar como MMLU, HumanEval o GSM8K. La unica referencia de calidad es la proporcionada por el propio autor de la cuantizacion, que recomienda las versiones Q4_K_M y Q4_K_S como equilibrio entre velocidad y calidad, y Q8_0 como la opcion de mayor fidelidad.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los ficheros GGUF varian entre 4,1 GB (Q2_K) y 18,9 GB (f16). Para la cuantizacion recomendada Q4_K_M (6,3 GB), se necesita al menos 8 GB de VRAM para inferencia con contexto moderado.
-- GPU recomendadas: el modelo Q4_K_M puede ejecutarse en GPUs consumer como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o RTX 4090 (24 GB). Para cuantizaciones mayores (Q6_K, Q8_0) se recomiendan GPUs con 12 GB o mas.
-- Compatibilidad con hardware consumer: si, las cuantizaciones Q2_K a Q5_K_M caben en GPUs de gama media con 8-12 GB de VRAM.
-- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros ejecutores que soporten este formato. Tambien puede usarse con vLLM si se convierte a otro formato.
-- Latencia y throughput: no se dispone de datos medidos. Como referencia, un modelo de 9,4B en Q4_K_M en una RTX 4090 suele generar entre 40 y 80 tokens por segundo, aunque esto depende de la implementacion y la longitud del contexto.
+- VRAM estimada para inferencia (solo pesos del modelo de lenguaje): Q2_K ~4.1 GB, Q3_K_S ~4.7 GB, Q3_K_M ~5.1 GB, Q3_K_L ~5.3 GB, IQ4_XS ~5.4 GB, Q4_K_S ~5.9 GB, Q4_K_M ~6.3 GB, Q5_K_S ~6.8 GB, Q5_K_M ~7.2 GB, Q6_K ~8.4 GB, Q8_0 ~10.1 GB, f16 ~18.9 GB.
+- Componente multimodal adicional: mmproj Q8_0 ~1.1 GB o mmproj f16 ~1.9 GB, que se suma al presupuesto de memoria.
+- GPU recomendadas: para f16 o Q8_0, GPU con 24 GB o mas (RTX 3090, RTX 4090, A100, H100); para Q6_K o Q5_K_M, GPU de 12-16 GB (RTX 4070 Ti Super, RTX 4080); para Q4_K_M con mmproj Q8_0, aproximadamente 8 GB de VRAM efectiva mas overhead de contexto.
+- Cabe en GPU de consumo: si. Q4_K_S o Q4_K_M caben en RTX 3060 12 GB, RTX 4060 Ti 16 GB y en Apple Silicon con 16 GB de memoria unificada. Las cuantizaciones Q2_K y Q3_K_S pueden caber en GPUs de 6-8 GB, con perdida de calidad apreciable.
+- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama (mediante importacion de Modelfile), bindings Python (llama-cpp-python), y cualquier runtime compatible con GGUF. El repositorio declara el tag endpoints_compatible, lo que sugiere compatibilidad con endpoints de inferencia tipo OpenAI. vLLM y TGI no soportan GGUF de forma nativa para este modelo segun la informacion disponible.
+- Latencia y throughput estimados: no disponibles. Como referencia general para un modelo de 9.4B en Q4_K_M sobre una RTX 4090, cabe esperar decenas de tokens por segundo, pero no se aportan mediciones en la documentacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
-|---|---|---|---|---|---|
-| Huihui-GLM-4.6V-Flash-abliterated-GGUF | 9,4B | no disponible | Si | MIT | GGUF |
-| Qwen2-VL-7B-Instruct | 7,6B | 32K | Si | Apache 2.0 | safetensors, GGUF |
-| LLaVA-1.6-7B | 7B | 4K | Si | Apache 2.0 | safetensors, GGUF |
-| MiniCPM-V 2.6 | 8B | 8K | Si | Apache 2.0 | safetensors, GGUF |
-
-La comparativa se basa en modelos multimodales de tamano similar. La principal diferencia de este modelo es su naturaleza abliterated (sin censura) y su licencia MIT, que permite uso comercial sin restricciones. Qwen2-VL y MiniCPM-V ofrecen mejor documentacion y benchmarks publicados, pero mantienen alineacion de seguridad. La informacion sobre contexto del modelo no esta disponible, lo que limita la comparacion directa.
+| Modelo | Parametros | Contexto | Vision | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Huihui-GLM-4.6V-Flash-abliterated-GGUF (este) | ~9.4B | no disponible | si (mmproj) | MIT | GGUF | Variante sin censura, cuantizada por mradermacher |
+| Huihui-GLM-4.6V-Flash-abliterated (base) | ~9.4B | no disponible | si | MIT | safetensors | Pesos originales sin cuantizar, requiere transformers |
+| GLM-4.6V-Flash (original Zhipu) | no disponible | no disponible | si | no disponible | no disponible | Modelo de referencia con filtros de rechazo activos |
+| Variantes GGUF con imatrix (mradermacher -i1-GGUF) | ~9.4B | no disponible | si | MIT | GGUF | Misma base con cuantizaciones ponderadas de mayor calidad |
 
 ## Limitaciones y advertencias
 
-- Ausencia de alineacion de seguridad: al ser abliterated, el modelo no tiene mecanismos de rechazo ante peticiones peligrosas, ilegales o daninas. Su uso en produccion requiere control externo de las entradas y salidas.
-- Riesgo de alucinacion: como todos los modelos de lenguaje, puede generar informacion falsa o inventada, especialmente en tareas que requieren precision factual. No se dispone de datos sobre su tasa de alucinacion.
-- Idiomas limitados: solo soporta chino e ingles. No es adecuado para aplicaciones que requieran otros idiomas.
-- Cuantizacion estatica: al no usar imatrix, las cuantizaciones de baja precision (Q2_K, Q3_K) pueden tener una degradacion de calidad mas acusada que las versiones ponderadas de otros modelos.
-- Contexto no documentado: se desconoce la longitud maxima de contexto soportada, lo que dificulta planificar aplicaciones que requieran ventanas largas.
-- Modelo base no verificado: no se dispone de informacion sobre el proceso de entrenamiento del modelo original, su dataset o sus benchmarks, lo que impide evaluar su calidad de forma objetiva.
-- Riesgo de uso indebido: la combinacion de licencia MIT, ausencia de censura y capacidades multimodales facilita su uso para generar contenido danino o desinformacion, con las consiguientes responsabilidades legales para el desplegador.
+- El modelo ha sido sometido a ablacion para eliminar el rechazo; esto puede degradar la coherencia, la utilidad general y la capacidad de seguir instrucciones de seguridad, y no garantiza la ausencia total de respuestas problematicas.
+- Riesgo elevado de generar contenido danino, sesgado o inexacto sin advertencia; no es adecuado para despliegues orientados al publico sin moderacion externa.
+- Riesgo de alucinacion inherente a los modelos de lenguaje de esta escala; la ablacion puede incrementarlo al eliminar parte de las respuestas de cautela.
+- Soporte limitado a chino e ingles; no se declara ni garantiza calidad en castellano.
+- La longitud de contexto no esta documentada, por lo que no puede planificarse su uso en tareas de contexto largo sin verificacion empirica.
+- La licencia MIT del repositorio GGUF cubre la distribucion, pero el modelo base y el original de Zhipu pueden tener terminos adicionales no reflejados en la model card; conviene verificar la licencia del modelo GLM original antes de uso comercial.
+- El repositorio ocupa 89.7 GB por incluir todas las cuantizaciones; la descarga debe limitarse a los ficheros necesarios.
+- No hay resultados de benchmarks publicados, por lo que la calidad relativa frente a alternativas no puede evaluarse con datos objetivos.
+- El componente visual requiere cargar el fichero mmproj por separado; olvidarlo desactiva la capacidad multimodal de forma silenciosa.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-GGUF
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-GLM-4.6V-Flash-abliterated
-- Perfil de huihui-ai: https://huggingface.co/huihui-ai
-- Pagina del modelo en Socket: https://socket.dev/huggingface/package/huihui-ai/huihui-glm-4.6v-flash-abliterated
-- Modelo original GLM-4.6V-Flash en ModelScope: https://www.modelscope.cn/models/ZhipuAI/GLM-4.6V-Flash
-- Busqueda de modelos abliterated en Ollama: https://ollama.com/search?q=abliterated
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Huihui-GLM-4.6V-Flash-abliterated-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

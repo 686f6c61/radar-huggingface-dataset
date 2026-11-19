@@ -2,130 +2,109 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash es un modelo de mezcla de expertos (MoE) nativamente multimodal desarrollado por MiniMax, orientado a programación, flujos agénticos, uso de ordenador (computer use) y ciberseguridad. Acepta entradas de texto, imagen y vídeo, y genera texto, con una ventana de contexto de hasta 1.000.000 de tokens. La ficha que nos ocupa es la cuantización GGUF publicada por Unsloth sobre el modelo base `MiniMaxAI/MiniMax-M3.1-Flash`.
+MiniMax-M3.1-Flash es un modelo de lenguaje multimodal nativo de tipo mixture-of-experts (MoE) desarrollado por MiniMax AI, orientado a tareas de programación, flujos de trabajo agénticos, uso de ordenador (computer use) y ciberseguridad. Acepta entradas de texto, imagen y vídeo, y produce salida de texto, con una ventana de contexto de hasta 1.000.000 de tokens. La versión aquí documentada, `unsloth/MiniMax-M3.1-Flash-GGUF`, es una cuantización comunitaria publicada por Unsloth sobre el modelo base `MiniMaxAI/MiniMax-M3.1-Flash`.
 
-El modelo declara 426.186.392.064 parámetros totales en safetensors (el model card redondea a ~428B) y 23B parámetros activos por token, lo que lo sitúa en la categoría de MoE de gran escala con coste de cómputo por token relativamente bajo frente a un denso del mismo tamaño. Incorpora atención dispersa MiniMax Sparse Attention (MSA) en todas las capas, entrenamiento consciente de cuantización y decodificación especulativa DSpark con cabecera draft incluida.
+El modelo declara aproximadamente 428.000 millones de parámetros totales con 23.000 millones activados por token, lo que lo sitúa en la categoría de MoE de gran escala con activación dispersa. Incorpora atención dispersa (MiniMax Sparse Attention, MSA) en todas las capas, entrenamiento con conciencia de cuantización y decodificación especulativa mediante la cabeza DSpark incluida en el modelo. Estas tres innovaciones apuntan a mejorar la eficiencia de inferencia frente a su predecesor, MiniMax-M3.
 
-Es relevante ahora porque la versión GGUF de Unsloth permite ejecutar el modelo con llama.cpp fuera del stack propietario de MiniMax, algo crítico para equipos que necesitan despliegue on-premise o auditoría del modelo. Conviene señalar que el repositorio está marcado explícitamente como "Work in progress" por el autor y que, a fecha de la información disponible, acumula 0 descargas y 15 likes, por lo que se trata de una publicación muy reciente y aún poco validada por la comunidad. El tamaño del repositorio es de 312,8 GB.
+La relevancia actual del modelo reside en su posicionamiento como modelo abierto (licencia `minimax-community`) con capacidades agénticas y multimodales de gama alta, distribuido en formato GGUF por Unsloth para facilitar su ejecución local y su integración en pipelines compatibles con endpoints. El repositorio GGUF acumula más de 35.000 descargas y 61 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) nativamente multimodal, transformer con MiniMax Sparse Attention (MSA) en todas las capas |
-| Parametros totales | 426.186.392.064 (~426,2B; el model card indica ~428B) |
-| Parametros activos | 23B por token |
+| Arquitectura | Mixture-of-experts (MoE) multimodal nativo con MiniMax Sparse Attention (MSA) en todas las capas; cabeza de decodificación especulativa DSpark |
+| Parametros totales | 426.186.370.176 (aprox. 428B segun model card) |
+| Parametros activos | Aprox. 23B por token |
 | Longitud de contexto | Hasta 1.000.000 tokens |
-| Tipos de cuantizacion | GGUF; los tipos concretos (Q4_K_M, Q8_0, etc.) no se detallan en la informacion proporcionada |
-| Idiomas soportados | no disponible |
-| Licencia | `minimax-community` (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | GGUF en este repositorio; safetensors en el modelo base |
-
-Otros datos: pipeline `image-text-to-text`, entrada de texto, imagen y vídeo, salida de texto. Repositorio de 312,8 GB, creado el 23 de octubre de 2026 y actualizado el mismo día. Compatible con endpoints según los tags del repositorio.
+| Tipos de cuantizacion | GGUF (Unsloth Dynamic 3.0); niveles concretos no disponibles en la informacion proporcionada |
+| Idiomas soportados | No disponible |
+| Licencia | `minimax-community` (license: other) |
+| Formato de pesos | GGUF (repo de 1.627,6 GB); pesos originales del modelo base en formato no especificado en la informacion disponible |
 
 ## Arquitectura y entrenamiento
 
-MiniMax-M3.1-Flash es un MoE multimodal con ~426B parámetros totales y 23B activos por token. Frente a MiniMax-M3, la versión 3.1-Flash introduce tres cambios técnicos declarados por el autor: atención dispersa (MSA) en la totalidad del modelo en lugar de solo en parte de las capas, entrenamiento consciente de cuantización (quantization-aware training) y decodificación especulativa DSpark, cuya cabecera draft se distribuye junto con los pesos. La atención dispersa y el QAT son los responsables directos de la mejora de eficiencia en inferencia que declara el model card.
+MiniMax-M3.1-Flash emplea una arquitectura transformer de mezcla de expertos (MoE) con atención dispersa MiniMax Sparse Attention aplicada en todas las capas del modelo. Frente a MiniMax-M3, la versión M3.1-Flash introduce atención dispersa de forma integral, entrenamiento con conciencia de cuantización (quantization-aware training) y decodificación especulativa mediante la cabeza DSpark, que se distribuye incluida en el propio modelo. El modelo es multimodal nativo: procesa texto, imagen y vídeo como entradas y genera texto.
 
-El detalle del corpus de entrenamiento (número de tokens, composición del dataset, mezcla de datos de imagen y vídeo) no está disponible en la información proporcionada, así como tampoco si se aplicaron fases de RLHF, DPO u otro ajuste por preferencias. La arquitectura concreta de MSA está descrita en el paper arXiv:2606.13392, referenciado desde el model card; los detalles de su formulación (patrón de sparsity, mecanismo de selección de bloques, coste asintótico) deben consultarse allí, ya que no se reproducen en la información disponible.
+La model card no detalla el número exacto de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. Sí se referencia el artículo arXiv:2606.13392, que presumiblemente contiene los detalles técnicos de la arquitectura y el entrenamiento, pero su contenido no está disponible en la información proporcionada. La cuantización publicada por Unsloth corresponde a su esquema Dynamic 3.0 GGUF, con benchmarks de cuantización propios publicados en su documentación.
 
 ## Capacidades
 
-- Generación de texto con razonamiento multi-paso y contexto de hasta 1M tokens.
-- Comprensión de imágenes y de vídeo como entrada, con salida en texto (pipeline `image-text-to-text`).
-- Programación: el autor reporta 73,7% en DeepSWE v1.1, prueba orientada a resolución de tareas de ingeniería de software.
-- Flujos agénticos y tool calling: 76,2 en BankerToolBench y 29,6 en Agents' Last Exam según el model card.
-- Uso de ordenador (computer use / automatización de interfaz gráfica): 61,7 en OSWorld V2.
-- Ciberseguridad: 82,2 en CyberGym, según datos del autor.
-- Automatización de extremo a extremo: 62,8 en Automation-Bench v1.0.6.
-- Decodificación especulativa integrada mediante cabecera draft DSpark, orientada a reducir latencia.
-- Capacidades multilingües: no disponibles en la información proporcionada (no se publica listado de idiomas).
+- Generación de texto con razonamiento de contexto largo, hasta 1.000.000 de tokens.
+- Comprensión de imágenes y vídeo como entradas multimodales (pipeline `image-text-to-text`).
+- Programación y generación de código, con resultados destacados en DeepSWE v1.1 (73,7%).
+- Flujos de trabajo agénticos y multi-step reasoning, con resultados en BankerToolBench (76,2) y Agents' Last Exam (29,6).
+- Uso de ordenador (computer use) y automatización de interfaces, con 61,7 en OSWorld V2.
+- Ciberseguridad, con 82,2 en CyberGym.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repositorio).
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Agentes de automatización de escritorio: con 61,7 en OSWorld V2, el modelo está pensado para interpretar capturas de pantalla y emitir acciones sobre interfaces gráficas; se usaría como política de un agente computer-use con bucle percepción-acción y contexto de 1M tokens para retener el historial completo de la sesión.
-- Refactorización y migración de repositorios grandes: la ventana de 1M tokens permite cargar varios módulos y sus tests en una sola pasada; el 73,7% en DeepSWE v1.1 lo hace adecuado para tareas de resolución de issues con verificación en CI.
-- Revisión de código con tool calling en pipelines de CI/CD: integrar el modelo como paso previo al merge, dándole acceso a herramientas (linter, ejecutor de tests, diff) mediante function calling y dejando que itere hasta que las comprobaciones pasen.
-- Triaje de vulnerabilidades y análisis de seguridad ofensiva/defensiva: el 82,2 en CyberGym indica entrenamiento específico; uso realista en clasificación de hallazgos de SAST, generación de PoCs en entorno controlado y redacción de informes de impacto.
-- Análisis de vídeo para documentación técnica: ingesta de grabaciones de demos, tutoriales o sesiones de soporte para extraer transcripciones estructuradas, pasos reproducibles y capturas de referencia, aprovechando la entrada de vídeo y el contexto largo.
-- Asistencia técnica multi-turno con historial extenso: atención al cliente o soporte interno donde el contexto de 1M tokens permite mantener conversaciones largas con documentación adjunta (manuales, imágenes de errores) sin truncar.
-- Procesamiento de documentación técnica escaneada: extracción de tablas y figuras de especificaciones, planos o datasheets en imagen, combinando OCR implícito multimodal con razonamiento sobre el texto resultante.
-- Investigación asistida: lectura de papers con figuras y vídeos de conferencias en una misma ventana de contexto, útil para revisiones bibliográficas con comparación de resultados experimentales.
+- Automatización de atención al cliente con contexto largo: la ventana de 1M tokens permite mantener historiales de conversación extensos y documentación de producto en el mismo contexto, reduciendo la necesidad de resumen intermedio.
+- Generación de código en producción: el rendimiento en DeepSWE v1.1 (73,7%) y su orientación a programación lo hacen adecuado para asistentes de código integrados en IDE o pipelines de CI/CD que requieran razonamiento sobre repositorios completos.
+- Agentes autónomos de navegación y uso de ordenador: con 61,7 en OSWorld V2, puede emplearse en tareas de automatización de escritorio, rellenado de formularios y operación de aplicaciones.
+- Análisis de vídeo e imagen: al aceptar entradas de vídeo, sirve para moderación de contenido, descripción automática de material audiovisual o extracción de información de grabaciones.
+- Auditoría de seguridad y ciberseguridad: con 82,2 en CyberGym, es aplicable a análisis de vulnerabilidades, revisión de configuraciones y respuesta a incidentes asistida.
+- Evaluación de agentes y benchmarking interno: su combinación de contexto largo y capacidades agénticas permite construir entornos de evaluación multi-paso con trazas extensas.
+- Procesamiento de documentos extensos con imágenes: contratos, informes o expedientes que combinen texto largo y figuras pueden procesarse en una sola pasada gracias a la ventana de 1M tokens.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo (no verificados de forma independiente en la información disponible):
+Resultados publicados en la model card del modelo base:
 
-| Benchmark | MiniMax M3.1 Flash |
-|---|---|
-| BankerToolBench | 76,2 |
-| DeepSWE v1.1 | 73,7% |
-| OSWorld V2 | 61,7 |
-| Agents' Last Exam | 29,6 |
-| CyberGym | 82,2 |
+| Benchmark | MiniMax M3.1 Flash | DeepSeek V4.1 Flash-1017 | DeepSeek V4.1 Flash | Kimi K3 | GLM-5.3 | GPT-5.6 Sol | Opus 5 |
+|---|---|---|---|---|---|---|---|
+| BankerToolBench | 76,2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| DeepSWE v1.1 | 73,7% | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| OSWorld V2 | 61,7 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Agents' Last Exam | 29,6 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| CyberGym | 82,2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Comparativa publicada en el model card para Automation-Bench v1.0.6:
-
-| Modelo | Automation-Bench v1.0.6 |
-|---|---|
-| MiniMax M3.1 Flash | 62,8 |
-| DeepSeek V4.1 Flash-1017 | 60,5 |
-| DeepSeek V4.1 Flash | 54,8 |
-| Opus 5 | 50,3 |
-| GLM-5.3 | 48,8 |
-| Kimi K3 | 46,7 |
-| GPT-5.6 Sol | 45,8 |
-
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de benchmarks multimodales estándar (MMMU, VideoMME u otros), por lo que no se pueden presentar cifras para esas pruebas.
+La model card incluye además una tabla comparativa con Automation-Bench v1.0.6 y otros benchmarks, pero los valores correspondientes a los modelos comparativos no están completos en la información proporcionada. No se han publicado resultados de MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- El modelo completo ronda los 426B parámetros: incluso con 23B activos por token, la inferencia estándar de un MoE requiere residentes en memoria todos los expertos, no solo los activados.
-- VRAM estimada (cálculo aritmético a partir del número de parámetros, sin contar caché KV ni overhead del runtime): ~852 GB en BF16/FP16, ~426 GB en FP8/INT8, ~213 GB en 4 bits. El repositorio GGUF ocupa 312,8 GB, lo que sugiere que las cuantizaciones publicadas se sitúan en el rango de 4-8 bits.
-- No cabe en ninguna GPU de consumo. Queda fuera incluso de configuraciones multi-GPU de gama alta con 24-48 GB por tarjeta.
-- GPU recomendadas: clústeres multi-nodo con H100/H200/B200 o MI300X. Para 4 bits se necesitan del orden de 3-4 nodos de 8xH100 80GB solo para pesos; en FP8, aproximadamente el doble.
-- La caché KV para 1M tokens es un factor limitante adicional; la atención dispersa MSA y la decodificación especulativa DSpark están diseñadas precisamente para mitigar este coste, pero no se dispone de cifras medidas de ahorro.
-- Opciones de despliegue: llama.cpp es el runtime de referencia para estos GGUF; Ollama puede cargar GGUF pero el tamaño hace impracticable su uso en un único equipo. vLLM y TGI no garantizan soporte completo de las particularidades del modelo (MSA, cabecera DSpark) en el momento de la información disponible.
+- El repositorio GGUF ocupa 1.627,6 GB, lo que refleja el conjunto completo de cuantizaciones publicadas; una cuantización individual será sustancialmente menor, pero el tamaño exacto por nivel no está disponible en la información proporcionada.
+- Con 426.000 millones de parámetros totales y 23.000 millones activos, la inferencia requiere almacenar todos los pesos (o descargarlos por capas desde disco), por lo que no cabe en GPUs de consumo individuales en ningún nivel de cuantización razonable.
+- Despliegue esperado en nodos multi-GPU de clase servidor (A100, H100, H200 o equivalentes); el número concreto de GPUs por configuración no está disponible.
+- Opciones de despliegue: llama.cpp y derivados para GGUF; Unsloth documenta una guía específica para ejecutar MiniMax-M3.1-Flash (ver enlaces). vLLM, TGI u Ollama no se confirman en la información proporcionada.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Automation-Bench v1.0.6 | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash | ~428B totales / 23B activos | 1M | 62,8 | minimax-community | Pesos abiertos + GGUF de Unsloth |
-| DeepSeek V4.1 Flash-1017 | no disponible | no disponible | 60,5 | no disponible | no disponible |
-| DeepSeek V4.1 Flash | no disponible | no disponible | 54,8 | no disponible | no disponible |
-| Kimi K3 | no disponible | no disponible | 46,7 | no disponible | no disponible |
-| GLM-5.3 | no disponible | no disponible | 48,8 | no disponible | no disponible |
+| MiniMax-M3.1-Flash | ~428B totales / 23B activos | 1M tokens | `minimax-community` | GGUF (Unsloth) y pesos originales | Multimodal, MSA, DSpark |
+| DeepSeek V4.1 Flash | no disponible | no disponible | no disponible | no disponible | Comparado en benchmarks de la model card |
+| Kimi K3 | no disponible | no disponible | no disponible | no disponible | Comparado en benchmarks de la model card |
+| GLM-5.3 | no disponible | no disponible | no disponible | no disponible | Comparado en benchmarks de la model card |
 
-La comparación con Opus 5 y GPT-5.6 Sol solo es posible en la métrica Automation-Bench v1.0.6 (50,3 y 45,8 respectivamente), al ser modelos propietarios sin pesos publicados ni especificaciones verificables en la información disponible.
+Los datos de parámetros, contexto y licencia de los modelos comparativos no están disponibles en la información proporcionada; solo se confirma su presencia en la tabla comparativa de la model card.
 
 ## Limitaciones y advertencias
 
-- Repositorio marcado como "Work in progress" por el propio publicador; la cuantización GGUF puede no estar completa ni validada.
-- 0 descargas y 15 likes en el momento de la consulta: ausencia de validación comunitaria sobre la calidad de la cuantización.
-- Todos los benchmarks proceden del model card del autor; no hay verificación independiente en la información disponible.
-- Licencia `minimax-community`: es una licencia propia, no OSI. Antes de uso comercial es obligatorio revisar el archivo LICENSE del repositorio, ya que las condiciones (límites de usuarios, atribución, restricciones de uso) no se detallan en la información proporcionada.
-- No se publica listado de idiomas soportados; el rendimiento en castellano no está documentado.
-- Riesgo de alucinación inherente a modelos de esta familia, agravado en tareas de ciberseguridad y agentes autónomos donde una acción errónea tiene consecuencias reales sobre sistemas.
-- La cuantización GGUF puede degradar de forma desproporcionada las capacidades multimodales (visión y vídeo) y el tool calling, que dependen de formatos de prompt específicos; no se documenta el chat template ni el formato de llamadas a herramientas en la información disponible.
-- Los 1M tokens de contexto no implican recuperación fiable de información en posiciones intermedias; no hay datos publicados de pruebas tipo needle-in-a-haystack.
-- Despliegue económicamente muy exigente: la huella de memoria convierte cualquier uso en producción en una inversión de clúster multi-GPU.
-- No se documenta el soporte de la cabecera especulativa DSpark en runtimes de terceros; sin ella se pierde parte de la mejora de latencia declarada.
+- La licencia `minimax-community` es una licencia propia (license: other); deben revisarse sus términos antes de cualquier uso comercial, ya que las restricciones concretas no están detalladas en la información proporcionada.
+- No se dispone de información sobre sesgos conocidos del modelo.
+- Riesgo de alucinación no cuantificado en la información disponible; como modelo generativo de gran escala, es esperable en tareas de conocimiento factual.
+- Idiomas soportados no declarados; el rendimiento fuera de inglés y chino no está documentado.
+- El tamaño del repositorio (1.627,6 GB) y del modelo (~428B parámetros) implican costes de almacenamiento y despliegue muy elevados; no es viable en hardware de consumo.
+- La información sobre tool calling, function calling y modo thinking no está confirmada explícitamente.
+- Los benchmarks proceden de la model card del autor del modelo base y no han sido verificados de forma independiente en la información disponible.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/unsloth/MiniMax-M3.1-Flash-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
-- Paper (MiniMax Sparse Attention): https://arxiv.org/abs/2606.13392
+- Guía de ejecución de Unsloth: https://unsloth.ai/docs/models/minimax-m3.1-flash
+- Benchmarks de cuantización Unsloth Dynamic 3.0: https://unsloth.ai/docs/basics/unsloth-dynamic-v3.0-gguf
+- Artículo arXiv: https://arxiv.org/abs/2606.13392
 - Organización MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI
-- Web de MiniMax: https://www.minimax.io
-- Documentación de la API: https://platform.minimax.io/docs/guides/text-generation
-- MiniMax Agent: https://agent.minimax.io/
-- Organización en ModelScope: https://modelscope.cn/organization/minimax
 - GitHub de MiniMax: https://github.com/MiniMax-AI
-- Discord: https://discord.com/invite/DPC4AHFCBw
-- Unsloth (web): https://unsloth.ai/
-- Unsloth (documentación): https://unsloth.ai/docs/fr
-- Unsloth (GitHub): https://github.com/unslothai/unsloth
-- Unsloth en Hugging Face: https://huggingface.co/unsloth
+- MiniMax Agent: https://agent.minimax.io/
+- Documentación de API: https://platform.minimax.io/docs/guides/text-generation
+- Web de MiniMax: https://www.minimax.io
+- ModelScope: https://modelscope.cn/organization/minimax
+- GitHub de Unsloth: https://github.com/unslothai/unsloth
+- Documentación de Unsloth: https://unsloth.ai/docs
+- Discord de Unsloth: https://discord.gg/unsloth

@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Accounts • Snapchat",
-      "url": "https://accounts.snapchat.com/v2/login",
-      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
-    },
-    {
-      "title": "Snapchat for Web.",
-      "url": "https://www.snapchat.com/web",
-      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
-    },
-    {
-      "title": "Snapchat - Dites-le dans un Snap",
-      "url": "https://www.snapchat.com/?locale=fr-FR",
-      "snippet": "Chattez, snappez, parcourez les Stories et essayez des Lenses sur votre ordinateur ou téléchargez l’application mobile ! écouvrez …"
-    },
-    {
-      "title": "Snapchat",
-      "url": "https://accounts.snapchat.com/v2/login?locale=fr-FR",
-      "snippet": "Connectez-vous à Snapchat pour gérer votre compte, discuter et appeler vos amis."
-    },
-    {
-      "title": "Snapchat Profile Manager",
-      "url": "https://profile.snapchat.com/",
-      "snippet": "Snapchat Profile Manager allows you to manage and create Public Profiles on Snapchat. Login or get started today to setup your …"
-    }
-  ]
+  "sources": []
 }

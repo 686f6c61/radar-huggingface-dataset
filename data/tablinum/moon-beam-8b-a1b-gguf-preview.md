@@ -1,133 +1,100 @@
 # tablinum/Moon-Beam-8B-A1B-GGUF-Preview
 
 ## Resumen
+Moon-Beam-8B-A1B es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por Tablinum, construido a partir de Ling-3.0-tiny de inclusionAI y aumentado con una biblioteca de conocimiento recuperable denominada *engram*. Cuenta con 8.000 millones de parametros totales, aproximadamente 1.000 millones activos por token y una ventana de contexto de 131.072 tokens. La version aqui descrita es un preview (candidato de release, ronda 1b) distribuida en formato GGUF para inferencia con llama.cpp.
 
-Moon-Beam-8B-A1B es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por tablinum, con 8.000 millones de parámetros totales y aproximadamente 1.000 millones activos por token, junto con una ventana de contexto de 131.072 tokens. Se construye a partir de Ling-3.0-tiny de inclusionAI, al que se le añade una biblioteca de conocimiento recuperable denominada *engram* (Tablinum-2). La versión aquí descrita es un GGUF de previsualización (release candidate, ronda 1b) del modelo base `tablinum/Moon-Beam-8B-A1B-Preview`.
+El modelo combina generacion de texto con un mecanismo de recuperacion de pasajes externos: en lugar de depender unicamente de sus pesos, consulta la biblioteca Tablinum-2 para inyectar contexto relevante en el formato exacto con el que fue entrenado. Segun la model card, esta recuperacion eleva de forma notable el rendimiento en tareas de conocimiento factual (SimpleQA pasa de 3,0% a 60,1% de respuestas correctas) y en su benchmark propio EngramBench (de 12,1% a 86,5%).
 
-El modelo resuelve el problema de la recuperación de conocimiento factual: en lugar de depender exclusivamente del conocimiento almacenado en los pesos, se combina con pasajes recuperados de la biblioteca engram en el mismo formato con el que fue entrenado. Según la model card, esta combinación eleva el rendimiento en tareas de conocimiento cerrado de forma sustancial (por ejemplo, SimpleQA de 28 a 593 respuestas correctas sobre 1.000 con thinking activado).
-
-Es relevante ahora porque ofrece un MoE de contexto largo (131K), con modo de razonamiento (thinking), soporte de tool calling y cuantizaciones GGUF listas para llama.cpp, con licencia MIT y un ecosistema de despliegue (terrabeam) que integra la recuperación automática de pasajes. La etiqueta `-Preview` indica que los pesos son un candidato de publicación y que la biblioteca Tablinum-3 (aproximadamente el doble de tamaño) aún está en construcción.
+Es relevante ahora porque ofrece un modelo compacto (apto para GPU de consumo en cuantizaciones Q4), con contexto muy largo, modo de razonamiento (*thinking*) activado por defecto, soporte de tool calling y licencia MIT, lo que facilita su adopcion tanto en prototipos como en despliegues locales.
 
 ## Especificaciones tecnicas
-
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) basada en Ling-3.0-tiny (familia Ling v3 / `bailingmoe3` en llama.cpp) |
-| Parametros totales | 7.893.392.800 (aproximadamente 8B) |
-| Parametros activos | Aproximadamente 1B por token |
+| Arquitectura | Mezcla de expertos (MoE) basada en Ling-3.0-tiny (arquitectura `bailingmoe3` en llama.cpp) |
+| Parametros totales | 7.893.392.800 |
+| Parametros activos | Aproximadamente 1.000 millones por token |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ3_XXS, IQ2_M, IQ2_XXS, IQ1_M; además cabecera MTP en Q4_K_M |
-| Idiomas soportados | Inglés (`en`) |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ3_XXS, IQ2_M, IQ2_XXS, IQ1_M; cabeza MTP en Q4_K_M |
+| Idiomas soportados | Ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
-| Tamano del repositorio | 59,0 GB |
-| Modelo base | tablinum/Moon-Beam-8B-A1B-Preview |
-| Version minima de llama.cpp | b12078 o superior |
+| Formato de pesos | GGUF (repo de 59,0 GB con multiples ficheros) |
 
 ## Arquitectura y entrenamiento
+Moon-Beam emplea una arquitectura transformer con mezcla de expertos, heredada de Ling-3.0-tiny (etiquetada `bailingmoe3` en llama.cpp), con 8.000 millones de parametros totales y unos 1.000 millones activos por token, lo que reduce el coste computacional por token frente a un modelo denso del mismo tamano. La ventana de contexto alcanza los 131.072 tokens.
 
-Moon-Beam es un transformer de mezcla de expertos construido sobre Ling-3.0-tiny de inclusionAI, con 8B parámetros totales y aproximadamente 1B activos por token. Incorpora una ventana de contexto de 131.072 tokens y una cabecera de decodificación especulativa MTP (multi-token prediction) distribuida como archivo aparte (`Moon-Beam-8B-A1B-MTP-Q4_K_M.gguf`), que según la model card aporta aproximadamente un 13 % más de velocidad de decodificación en GPU.
-
-El ajuste fino de la ronda 1b se realizó con QLoRA sobre pasajes recuperados, problemas matemáticos, llamadas a herramientas y conversaciones multi-turno. La innovación central es la integración con la biblioteca *engram* (Tablinum-2): cada pregunta recibe los mejores pasajes de la biblioteca en el mismo formato con el que el modelo fue entrenado, de modo que el modelo aprende a apoyarse en conocimiento recuperable además de en sus pesos. La model card señala que el modelo base Ling sin entrenar también alcanzó un 59,2 % en SimpleQA con los mismos pasajes y thinking activado, frente al 59,3 % de la ronda 1b, lo que sugiere que la mayor parte de la ganancia procede de la recuperación de pasajes. No se detalla el número exacto de tokens de entrenamiento ni la composición completa del dataset.
+La ronda 1b se afino con QLoRA sobre pasajes recuperados, problemas matematicos, llamadas a herramientas y conversaciones multi-turno. El modelo integra la biblioteca de conocimiento *engram* de Tablinum (version Tablinum-2 en este preview), que inyecta pasajes relevantes en el prompt con el mismo formato visto durante el entrenamiento. Incluye una cabeza de decodificacion especulativa MTP (Multi-Token Prediction) distribuida como fichero aparte, que aporta aproximadamente un 13% mas de velocidad de decodificacion en GPU. El modo *thinking* esta activado por defecto y puede desactivarse por peticion.
 
 ## Capacidades
-
-- Generación de texto conversacional en inglés, con modo de razonamiento (thinking) activado por defecto y desactivable por petición mediante `chat_template_kwargs`.
-- Razonamiento matemático: 96,2 % en 400 preguntas de GSM8K con thinking activado (evaluación preliminar del 4 de noviembre).
-- Soporte de tool calling / function calling (etiqueta `tool-calling` en la model card).
-- Respuesta a preguntas de conocimiento cerrado apoyada en recuperación de pasajes de la biblioteca engram (EngramBench, SimpleQA, AA-Omniscience).
-- Conversaciones multi-turno con seguimiento de contexto: 94,0 % de aciertos en primeras preguntas y 93,3 % en segundas preguntas sobre 150 pares.
-- Ventana de contexto larga de 131.072 tokens, útil para documentos extensos y diálogos prolongados.
-- Integración con memoria a largo plazo persistente entre conversaciones mediante la opción `--memory long-term` de terrabeam.
-- Compatibilidad con clientes OpenAI (Open WebUI, LM Studio, Ollama, Claude Code, Cursor, Continue, Cline, opencode).
-- Capacidades multilingües limitadas al inglés según la model card.
-- No se mencionan capacidades de visión ni de audio.
+- Generacion de texto conversacional y multi-turno con contexto largo (hasta 131.072 tokens).
+- Razonamiento con modo *thinking* activable o desactivable por peticion (`enable_thinking`).
+- Razonamiento matematico (evaluado en GSM8K).
+- Soporte de tool calling / function calling (etiqueta `tool-calling`, evaluado como agente en tau2-bench).
+- Recuperacion aumentada mediante la biblioteca *engram* (Tablinum-2).
+- Memoria persistente entre conversaciones mediante la opcion `--memory long-term` de terrabeam.
+- Decodificacion especulativa mediante cabeza MTP para acelerar la inferencia en GPU.
+- Compatibilidad con API estilo OpenAI (`/v1`) y con clientes como Open WebUI, LM Studio, Ollama, Claude Code, Cursor, Continue, Cline y opencode.
+- Capacidades multilingues limitadas al ingles segun los metadatos del modelo.
 
 ## Casos de uso
-
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a sus 131.072 tokens de ventana y a la memoria a largo plazo opcional de terrabeam, manteniendo el hilo entre sesiones.
-- Respuesta a preguntas sobre documentación interna: desplegando la biblioteca engram con los manuales de la organización, el modelo recupera pasajes relevantes y responde con el formato con el que fue entrenado; la model card reporta mejoras de 12,9 % a 85,7 % en EngramBench al pasar de conocimiento cerrado a recuperado.
-- Asistente de código en IDE: al soportar tool calling y ser compatible con Cursor, Continue y Cline, puede integrarse en flujos de autocompletado y edición asistida dentro del editor.
-- Automatización de agentes multi-paso: la combinación de thinking mode, tool calling y contexto de 131K permite encadenar pasos de razonamiento y llamadas a herramientas en pipelines de agentes.
-- Razonamiento matemático y resolución de problemas: con 96,2 % en GSM8K, es adecuado para tutores automáticos o verificación de cálculos en entornos educativos.
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M (4,94 GB) e IQ4_XS (4,83 GB) permiten ejecutar el modelo en GPU de consumo y en CPU mediante llama.cpp, con una pérdida de acuerdo con BF16 del 97,65 % y 97,32 % respectivamente.
-- Servicio de API compatible con OpenAI: terrabeam expone un endpoint en `http://127.0.0.1:8080/v1`, lo que facilita sustituir proveedores externos en aplicaciones existentes.
-- Generación aumentada por recuperación (RAG) de conocimiento factual: con SimpleQA pasando de 2,8 % a 59,3 % de aciertos al añadir pasajes, es adecuado para asistentes de investigación que necesiten citar fuentes recuperadas.
+- Atencion al cliente automatizada: el modelo fue evaluado como agente de soporte en tau2-bench (reward medio de 0,71 en airline y 0,80 en retail) y puede gestionar conversaciones multi-turno con contexto largo, lo que lo hace adecuado para flujos de soporte con historial extenso.
+- Asistente con conocimiento corporativo: usando la biblioteca *engram* o pasajes recuperados propios, el modelo responde sobre documentacion interna; la model card muestra mejoras de 3,0% a 60,1% en SimpleQA al aportar pasajes, lo que indica que el rendimiento depende criticamente de la recuperacion.
+- Agente con herramientas en produccion: gracias al soporte de tool calling y a la API compatible con OpenAI, puede integrarse en pipelines que invocan funciones externas (consultas a bases de datos, APIs) y orquestarse con frameworks de agentes.
+- Despliegue local en estaciones de trabajo: en cuantizacion Q4_K_M (4,94 GB) cabe en GPU de consumo, permitiendo prototipado y uso personal sin infraestructura cloud.
+- Razonamiento matematico asistido: evaluado en GSM8K con modo *thinking*, util para resolver problemas paso a paso en entornos educativos o de analisis.
+- Sustitucion de modelos en clientes existentes: al exponer una API compatible con OpenAI y funcionar con LM Studio, Ollama o Open WebUI, puede reemplazar a otros modelos en herramientas ya instaladas sin reescribir integraciones.
+- Procesamiento de documentos largos: con 131.072 tokens de contexto puede analizar documentos extensos o conversaciones largas en una sola ventana.
 
 ## Benchmarks y rendimiento
+Resultados publicados en la model card (protocolo de model card: temperatura 1,0, top_p 0,95, top_k 20, hasta 32K tokens nuevos, ventana completa de 131K):
 
-Resultados preliminares publicados en la model card (evaluación del 4 de noviembre; el protocolo de model card usa temperatura 1,0, top_p 0,95, top_k 20, hasta 32K tokens nuevos y ventana completa de 131K):
+| Benchmark | Configuracion | Resultado |
+|---|---|---|
+| GSM8K (400 preguntas) | Thinking on | 95,5% correctas |
+| EngramBench (503 preguntas) | Thinking on, con pasajes | 86,5% correctas (436/503) |
+| EngramBench (503 preguntas) | Thinking on, sin pasajes | 12,1% |
+| EngramBench (503 preguntas) | Thinking off, con pasajes | 87,9% |
+| EngramBench (503 preguntas) | Thinking off, sin pasajes | 8,5% |
+| SimpleQA (1000 preguntas) | Thinking on, con pasajes | 60,1% (601/1000) |
+| SimpleQA (1000 preguntas) | Thinking on, sin pasajes | 3,0% |
+| SimpleQA (1000 preguntas) | Thinking off, con pasajes | 58,1% |
+| SimpleQA (1000 preguntas) | Thinking off, sin pasajes | 3,0% |
+| AA-Omniscience dev (200 preguntas) | Thinking on, con pasajes | 28,0% |
+| AA-Omniscience dev (200 preguntas) | Thinking on, sin pasajes | 10,5% |
+| tau2-bench airline | Agente de soporte | reward medio 0,71 |
+| tau2-bench retail | Agente de soporte | reward medio 0,80 |
 
-| Benchmark | Thinking on · cerrado | Thinking on · recuperado | Thinking off · cerrado | Thinking off · recuperado |
-|---|---:|---:|---:|---:|
-| EngramBench (503) | 12,9 % | 85,7 % | 10,1 % | 87,5 % |
-| SimpleQA (1000) | 2,8 % | 59,3 % | 2,6 % | 57,5 % |
-| AA-Omniscience (200) | 10,0 % | 26,5 % | 5,0 % | 26,5 % |
-
-Otros resultados citados:
-
-| Benchmark | Resultado |
-|---|---|
-| GSM8K (400 preguntas, thinking on) | 96,2 % |
-| EngramBench (503, thinking off, pasajes de la propia tabla) | 87,5 % (440/503) |
-| Pares de preguntas multi-turno (150 pares, thinking on) | 94,0 % primera / 93,3 % segunda |
-| SimpleQA con modelo base Ling sin entrenar y mismos pasajes | 59,2 % |
-
-Calidad de las cuantizaciones frente a BF16 (acuerdo top-1 en mixto / WikiText y KLD en mixto):
-
-| Archivo | Tamano | Acuerdo top-1 (mixto / WikiText) | KLD (mixto) |
-|---|---:|---:|---:|
-| Q8_0 | 8,41 GB | 99,18 % / 97,20 % | 0,0009 |
-| Q6_K | 7,23 GB | 98,92 % / 96,74 % | 0,0012 |
-| Q5_K_M | 5,86 GB | 98,45 % / 94,86 % | 0,0031 |
-| Q4_K_M | 4,94 GB | 97,65 % / 92,74 % | 0,0075 |
-| IQ4_XS | 4,83 GB | 97,32 % / 92,76 % | 0,0074 |
-| IQ3_XXS | 3,69 GB | 94,97 % / 85,40 % | 0,0285 |
-| IQ2_M | 3,07 GB | 92,98 % / 80,26 % | 0,0622 |
-| IQ2_XXS | 2,46 GB | 88,44 % / 73,88 % | 0,1456 |
-| IQ1_M | 2,14 GB | 85,09 % / 66,51 % | 0,2577 |
-| BF16 | 15,80 GB | referencia | 0 |
-
-Las mediciones de acuerdo y KLD se realizaron sobre 8.393 posiciones mixtas de chat, código y matemáticas, y sobre WikiText. La model card advierte que los números marcados como *preliminary* se están volviendo a medir con el protocolo de model card.
+Nota: la model card indica que algunas cifras estan marcadas como *preliminary* y se estan re-midiendo. El modelo base Ling sin afinar alcanzo 59,2% en SimpleQA con los mismos pasajes y thinking on (frente a 60,1% de la ronda 1b), lo que sugiere que la mayor parte de la mejora proviene de la recuperacion de pasajes.
 
 ## Requisitos de hardware
-
-- VRAM estimada según cuantización: BF16 15,80 GB; Q8_0 8,41 GB; Q6_K 7,23 GB; Q5_K_M 5,86 GB; Q4_K_M 4,94 GB; IQ4_XS 4,83 GB; IQ3_XXS 3,69 GB; IQ2_M 3,07 GB; IQ2_XXS 2,46 GB; IQ1_M 2,14 GB. Añadir aproximadamente 0,55 GB si se usa la cabecera MTP.
-- GPU recomendadas: no se especifican modelos concretos en la información disponible. Por tamaño, las cuantizaciones Q4_K_M e IQ4_XS caben en GPU de consumo con 8 GB de VRAM o más; las cuantizaciones de 2-3 GB permiten ejecución en GPU con 4 GB o en CPU.
-- Cabe en GPU de consumo: sí, con las cuantizaciones Q4_K_M, IQ4_XS, IQ3_XXS, IQ2_M, IQ2_XXS e IQ1_M. La cabecera MTP aporta aproximadamente un 13 % más de velocidad de decodificación en GPU.
-- Opciones de despliegue: llama.cpp (versión b12078 o superior, con soporte de `bailingmoe3` y `draft-mtp`), terrabeam (instalador que descarga el archivo adecuado, la build de llama.cpp y la biblioteca Tablinum), y clientes compatibles con OpenAI como Open WebUI, LM Studio, Ollama, Claude Code, Cursor, Continue, Cline y opencode. No se menciona soporte de vLLM ni TGI en la información disponible.
-- Latencia y throughput: no se publican cifras absolutas de latencia o throughput; solo se indica la mejora relativa de aproximadamente un 13 % en decodificación con la cabecera MTP en GPU.
+- VRAM estimada segun cuantizacion: IQ1_M 2,14 GB; IQ2_XXS 2,46 GB; IQ2_M 3,07 GB; IQ3_XXS 3,69 GB; IQ4_XS 4,83 GB; Q4_K_M 4,94 GB; Q5_K_M 5,86 GB; Q6_K 7,23 GB; Q8_0 8,41 GB; BF16 15,80 GB.
+- Cabe en GPU de consumo: Q4_K_M (4,94 GB) e IQ4_XS (4,83 GB) caben en tarjetas de 8 GB; Q5_K_M y Q6_K requieren 8-12 GB; Q8_0 requiere 12 GB o mas; BF16 requiere 16 GB o mas.
+- GPU recomendadas: no especificadas en la informacion disponible; por tamano, una RTX 4090 (24 GB) permite Q8_0 o BF16 con holgura, y una RTX 4060 Ti de 16 GB admite BF16 ajustado o Q8_0.
+- Opciones de despliegue: llama.cpp (version b12078 o superior, necesaria para `bailingmoe3` y `draft-mtp`), terrabeam (script de instalacion con descarga automatica y API OpenAI en `http://127.0.0.1:8080/v1`), y compatibilidad con Open WebUI, LM Studio, Ollama, Claude Code, Cursor, Continue, Cline y opencode.
+- Aceleracion: la cabeza MTP en Q4_K_M (0,55 GB) aporta aproximadamente un 13% mas de velocidad de decodificacion en GPU.
+- Latencia y throughput: no disponibles mas alla del dato de la cabeza MTP.
 
 ## Comparativa con modelos similares
-
-| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---:|---:|---|---|---|
-| Moon-Beam-8B-A1B (este) | 8B | ~1B | 131.072 | MIT | GGUF, safetensors | MoE con biblioteca engram y thinking mode |
-| Ling-3.0-tiny (inclusionAI) | no disponible | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva Moon-Beam |
-| Modelos MoE de ~8B con ~1B activos | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks comparables en la información proporcionada |
-
-La información disponible solo permite comparar con el modelo base Ling-3.0-tiny, del que no se detallan especificaciones ni resultados de benchmarks más allá del 59,2 % en SimpleQA con los mismos pasajes. No se han publicado en la información disponible comparativas con otros modelos MoE de tamaño similar.
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Moon-Beam-8B-A1B (este) | 7,9B / ~1B | 131.072 | MIT | GGUF | MoE con recuperacion engram, thinking, tool calling |
+| Ling-3.0-tiny (modelo base) | no disponible | no disponible | no disponible | no disponible | Base de inclusionAI sobre la que se afino; alcanzo 59,2% en SimpleQA con los mismos pasajes |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de otros modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
-
-- Modelo en previsualización (release candidate, ronda 1b): los pesos y las tarjetas pueden cambiar cuando se publique Tablinum-3 y se elimine el sufijo `-Preview`.
-- Los resultados marcados como preliminares están pendientes de re-medición con el protocolo de model card; no deben tratarse como definitivos.
-- Idioma limitado al inglés según la model card; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- El rendimiento en conocimiento factual depende en gran medida de la recuperación de pasajes: sin la biblioteca engram, SimpleQA cae al 2,8 % y EngramBench al 12,9 % con thinking activado.
-- La model card señala que el modelo base sin entrenar alcanza un rendimiento similar al ajustado en SimpleQA con los mismos pasajes (59,2 % frente a 59,3 %), lo que sugiere que parte de la ganancia atribuida al ajuste fino podría deberse a la recuperación.
-- Riesgo de alucinación inherente a los modelos de lenguaje; la evaluación usa un juez automático (Claude Haiku) que separa respuestas parciales y abstenciones de las correctas, pero no se detallan métricas de calibración.
-- No se documentan sesgos conocidos en la información disponible.
-- Requiere llama.cpp b12078 o superior; versiones anteriores no soportan la arquitectura `bailingmoe3` ni la decodificación `draft-mtp`.
-- Licencia MIT: permite uso comercial, pero al ser un modelo de previsualización conviene validar el comportamiento en producción antes de desplegarlo.
-- No se mencionan capacidades de visión, audio ni otros modalidades; el uso queda restringido a texto.
-- La biblioteca engram (Tablinum-2) debe descargarse y configurarse correctamente para obtener el rendimiento reportado; el uso con llama.cpp "puro" responde solo desde sus pesos.
+- Es un preview (candidato de release, ronda 1b): los pesos pueden cambiar y la model card indica que se actualizaran al publicarse Tablinum-3.
+- El rendimiento depende en gran medida de la recuperacion de pasajes: sin pasajes, SimpleQA cae a 3,0% y EngramBench a 12,1%, lo que indica un riesgo alto de respuestas incorrectas o alucinaciones en conocimiento factual si no se aporta contexto.
+- Solo soporta ingles segun los metadatos del modelo; no se declaran capacidades multilingues.
+- Algunas cifras de benchmarks estan marcadas como preliminares y sujetas a re-medicion.
+- Requiere llama.cpp b12078 o superior; versiones anteriores no soportan la arquitectura `bailingmoe3` ni la cabeza `draft-mtp`.
+- El uso optimo presupone la biblioteca Tablinum-2 y el formato exacto de inyeccion de pasajes con el que fue entrenado; usarlo con otro formato puede degradar el rendimiento.
+- Licencia MIT: permite uso comercial, pero se recomienda verificar las condiciones del modelo base Ling-3.0-tiny de inclusionAI, no detalladas en la informacion disponible.
+- No se han publicado datos sobre sesgos conocidos en la informacion proporcionada.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview
 - Modelo base: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
-- Notas de modelo y evaluación: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/README.md
+- Notas de modelo y evaluacion: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/README.md
 - Resultados de benchmarks preliminares: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/benchmarks_preliminary_1104.json
 - Repositorio terrabeam: https://github.com/chadstthomas-svg/terrabeam
-- Guía de integración con clientes: https://github.com/chadstthomas-svg/terrabeam/blob/master/docs/harnesses.md
+- Guia de configuracion por aplicacion: https://github.com/chadstthomas-svg/terrabeam/blob/master/docs/harnesses.md
 - Instrucciones para agentes: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/AGENTS.md

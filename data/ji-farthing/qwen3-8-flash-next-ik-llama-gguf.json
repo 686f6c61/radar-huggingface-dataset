@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
-    },
-    {
-      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF - Hugging Face",
-      "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - blazux/qwen3.8-Flash-DGX: recipe for running Qwen3.8-Flash ...",
-      "url": "https://github.com/blazux/qwen3.8-Flash-DGX",
-      "snippet": "Run Qwen3.8-Flash-Next — a ~176B-parameter model (125B main + 51B n-gram, 6B active) — on one NVIDIA DGX Spark / ASUS GX10 with vLLM, at full prefill speed, with MTP speculative decoding, working prefix caching, deterministic greedy decoding, and up to 500k tokens of context."
-    },
-    {
-      "title": "qwen3.8-flash-next - ollama.com",
-      "url": "https://ollama.com/library/qwen3.8-flash-next",
-      "snippet": "Qwen3.8-Flash-Next is the first open-weight model built on the architecture that will underpin Qwen4. It is a multimodal mixture-of-experts model with 125B total parameters and only 6B active per token, designed for cost-efficient inference across agentic coding, tool use, and vision tasks, with a native 256K context window."
-    }
-  ]
+  "sources": []
 }

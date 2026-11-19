@@ -2,95 +2,93 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr es un checkpoint de decodificacion especulativa (drafter) publicado por NVIDIA para acompanar al modelo objetivo NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB, un modelo hibrido LatentMoE de vision y lenguaje con 74.000 millones de parametros totales y 9.000 millones activos. No es un modelo de lenguaje autonomo: propone tokens candidatos que el modelo objetivo verifica, y es el objetivo quien produce el texto visible al usuario. Su relevancia es practica: permite acelerar la inferencia del objetivo sin cambiar su distribucion de salida, gracias al algoritmo LiLiCorr descrito en el paper arXiv:2608.20530.
+NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr es un checkpoint de decodificacion especulativa publicado por NVIDIA para el modelo objetivo NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB, un modelo vision-lenguaje de arquitectura LatentMoE con 74B parametros totales y 9B activos. No es un modelo autonomo: es un drafter (borrador) que propone candidatos de tokens que el modelo objetivo verifica. El texto visible para el usuario lo produce siempre el objetivo, nunca el drafter.
 
-El drafter es una red densa de cinco capas con atencion GQA, atencion bidireccional dentro del bloque de draft, ventana deslizante de 1024 tokens por cabeza con attention sinks y una convolucion dinamica agrupada alrededor de cada subcapa de atencion y MLP. Sobre esa base se anade una cabeza LiLiCorr de dos capas y 37 millones de parametros que correlaciona los 8 candidatos principales del drafter en cada posicion de draft.
+El drafter emplea una arquitectura densa de cinco capas con atencion GQA, ventana deslizante de 1024 tokens por cabeza con attention sinks, convolucion dinamica agrupada alrededor de cada subcapa y una cabeza LiLiCorr de dos capas que correlaciona los ocho candidatos principales en cada posicion de borrador. El checkpoint esta cuantizado con NVIDIA Model Optimizer (NVFP4) y suma 1.113B parametros de borrador, de los cuales 37M corresponden a la cabeza LiLiCorr.
 
-El checkpoint esta cuantizado con NVIDIA Model Optimizer en pesos NVFP4 y esta pensado para servirse con vLLM sobre hardware NVIDIA Blackwell (SM 120), incluido DGX Spark (GB10). La licencia OpenMDW-1.1 permite uso comercial y no comercial. El modelo objetivo soporta hasta 256K tokens de contexto y diez idiomas, incluyendo el espanol.
+Su relevancia es practica: acelera la generacion del objetivo mediante decodificacion especulativa manteniendo el mismo resultado verificado, y esta disenado para ejecutarse exclusivamente sobre hardware NVIDIA Blackwell (SM 120), incluido DGX Spark (GB10), con vLLM como unico motor soportado. La licencia OpenMDW-1.1 permite uso comercial y no comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Densa GQA (5 capas feed-forward densas + atencion GQA, atencion bidireccional en el bloque de draft, ventana deslizante de 1024 tokens por cabeza con attention sinks, convolucion dinamica agrupada; cabeza LiLiCorr de 2 capas) |
-| Parametros totales | 673.450.538 segun safetensors del repo; la model card declara 1,113B de parametros del draft (1,076B sin la cabeza LiLiCorr de 37M), excluyendo embeddings y LM head compartidos con el objetivo. Discrepancia no explicada en la informacion disponible |
-| Parametros activos | No aplica al draft (red densa). El modelo objetivo es LatentMoE con 9B activos de 74B totales |
-| Longitud de contexto | 256K tokens en el modelo objetivo; ventana de atencion del draft de 1024 tokens por cabeza |
-| Tipos de cuantizacion | Pesos NVFP4 cuantizados con NVIDIA Model Optimizer (commit b5f10f8); el repo aparece etiquetado tambien como "8-bit", dato ambiguo |
-| Idiomas soportados | Ingles, frances, espanol, italiano, aleman, japones, hindi, coreano, portugues de Brasil y chino (heredados del modelo objetivo) |
-| Licencia | OpenMDW-1.1 (etiqueta `license: other` con `license_name: openmdw-1.1`); uso comercial y no comercial permitido segun la model card |
+| Arquitectura | Densa GQA (MLP denso + atencion GQA), 5 capas, con cabeza LiLiCorr de 2 capas |
+| Parametros totales | 1.113B en el drafter (excluyendo embeddings compartidos del objetivo y LM head); modelo objetivo: 74B |
+| Parametros activos | 9B en el modelo objetivo (LatentMoE); el drafter es denso |
+| Longitud de contexto | Hasta 256K tokens en el objetivo; ventana deslizante de 1024 tokens por cabeza en el drafter |
+| Tipos de cuantizacion | NVFP4 (pesos) via NVIDIA Model Optimizer @ b5f10f8; tag de 8-bit en el repositorio |
+| Idiomas soportados | Ingles, frances, espanol, italiano, aleman, japones, hindi, coreano, portugues de Brasil y chino (heredados del objetivo) |
+| Licencia | OpenMDW-1.1 (uso comercial y no comercial) |
 | Formato de pesos | safetensors (libreria Model Optimizer) |
 
 ## Arquitectura y entrenamiento
 
-El draft es una red densa de cinco capas feed-forward con atencion de consultas agrupadas (GQA). La atencion dentro del bloque de draft es bidireccional, lo que permite que los candidatos de una misma posicion se condicionen entre si en lugar de generarse estrictamente de izquierda a derecha. Cada una de las cinco capas usa una ventana deslizante de 1024 tokens por cabeza con attention sinks, y cada subcapa de atencion y MLP va rodeada de una convolucion dinamica agrupada. La pieza diferencial es la cabeza LiLiCorr, una red de dos capas y 37 millones de parametros que correlaciona los 8 mejores candidatos del drafter en cada posicion de draft; el paper la describe como una correlacion de verosimilitud ligera sobre borradores paralelos.
+El drafter consta de cinco capas densas de feed-forward con atencion de consultas agrupadas (GQA). La atencion del bloque de borrador es bidireccional, emplea una ventana deslizante de 1024 tokens por cabeza con attention sinks y aplica una convolucion dinamica agrupada en torno a cada subcapa de atencion y MLP. Sobre esta base se anade una cabeza LiLiCorr independiente de dos capas que correlaciona los ocho candidatos principales del drafter en cada posicion, segun el articulo "LiLiCorr: Lightweight Likelihood Correlation of Parallel Drafts for Speculative Decoding" (arXiv:2608.20530). El drafter consume representaciones internas del modelo objetivo en lugar de mantener embeddings y LM head propios.
 
-El checkpoint deriva del modelo objetivo, y sus representaciones se obtienen de el: la model card indica que LiLiCorr genera borradores usando representaciones del modelo objetivo, y que embeddings y LM head son compartidos (de ahi que no se cuenten en los 1,113B). Sobre los datos de entrenamiento del draft, la informacion disponible solo detalla los del objetivo: Nemotron-Post-Training-Dataset-v2, Nemotron-RL-Super-Training-Blends, Nemotron-Post-Training-v3, Nemotron-Instruction-Following-Chat-v1 y Nemotron-Science-v1. En la sintesis de datos se usaron unicamente prompts y contexto de conversacion, no las respuestas originales, y todas las respuestas de entrenamiento fueron generadas por Nemotron-3.5-Bolt con temperatura 1,0. No se detalla el numero de tokens de entrenamiento del drafter ni si hubo RLHF o DPO especificos para el.
+Los datos de entrenamiento del objetivo se documentan en su model card e incluyen Nemotron-Post-Training-Dataset-v2, Nemotron-RL-Super-Training-Blends, Nemotron-Post-Training-v3, Nemotron-Instruction-Following-Chat-v1 y Nemotron-Science-v1; de estos conjuntos solo se usaron prompts y contexto de conversacion para sintesis de datos, y cada respuesta de entrenamiento fue generada por Nemotron-3.5-Bolt a temperatura 1.0. La informacion proporcionada no detalla el volumen de tokens ni la composicion exacta del entrenamiento del drafter, ni si hubo RLHF o DPO especificos para el.
 
 ## Capacidades
 
-- Decodificacion especulativa: propone tokens candidatos que el modelo objetivo de 24 GB verifica, acelerando la generacion sin alterar el texto final.
-- Correlacion de candidatos: la cabeza LiLiCorr puntua y correlaciona los 8 candidatos principales por posicion, lo que mejora la tasa de aceptacion frente a un draft no correlacionado (el valor concreto de aceptacion no esta publicado).
-- Generacion de texto delegada: razonamiento, chat, RAG y flujos de agentes son capacidades del objetivo, no del draft; el draft solo las acelera.
-- Salida estructurada: el objetivo soporta formato JSON, trazas de razonamiento con chain-of-thought y tool calling.
-- Multilinguismo: el objetivo cubre diez idiomas, incluido el espanol, por lo que el draft acelera tambien generacion en esos idiomas.
-- Vision y lenguaje: el objetivo es un modelo LatentMoE de vision y lenguaje, de modo que el pipeline acelerado puede procesar entrada visual.
-- Contexto largo: el objetivo admite hasta 256K tokens, adecuado para documentos extensos y conversaciones multi-turno largas.
-- No soporta: uso autonomo como modelo de chat, generacion sin el objetivo, ni despliegue en GPUs que no sean Blackwell SM 120.
+- Decodificacion especulativa: propone tokens candidatos que el objetivo de 24GB verifica, acelerando la generacion sin alterar la salida final verificada.
+- Generacion de texto delegada: el objetivo soporta razonamiento, chat, generacion aumentada por recuperacion (RAG), comprension visual y flujos de agentes.
+- Salida estructurada: el objetivo admite formato JSON y trazas de razonamiento con cadena de pensamiento.
+- Tool calling y function calling en el objetivo.
+- Flujos de agente y razonamiento multi-paso en el objetivo.
+- Capacidades multilingues en diez idiomas: ingles, frances, espanol, italiano, aleman, japones, hindi, coreano, portugues de Brasil y chino.
+- Vision: el objetivo es un modelo vision-lenguaje; el drafter trabaja sobre representaciones del objetivo.
+- Contexto largo: hasta 256K tokens en el objetivo.
 
 ## Casos de uso
 
-- Servicio de razonamiento de baja latencia en DGX Spark: emparejar el draft con el objetivo de 24 GB en un GB10 permite servir un modelo de razonamiento de 74B totales en un equipo compacto, con la decodificacion especulativa reduciendo el coste por token generado.
-- Asistentes de codigo en produccion: el objetivo acepta tool calling y salida JSON, y el draft acelera las respuestas en editores y pipelines de CI/CD donde la latencia por sugerencia es critica.
-- RAG sobre documentacion extensa: con hasta 256K tokens de contexto en el objetivo, se pueden inyectar manuales o expedientes completos; el draft mantiene la generacion fluida al aumentar la longitud del prompt.
-- Agentes multi-paso con llamadas a herramientas: en bucles de razonamiento con varias iteraciones, cada paso implica una generacion completa; la aceleracion del draft se acumula y reduce el tiempo total de la tarea.
-- Atencion al cliente multilingue: el objetivo cubre espanol, ingles, frances, aleman, italiano, portugues, japones, coreano, hindi y chino, y el draft acelera las respuestas en cualquiera de ellos.
-- Procesamiento de documentos con vision: el objetivo es vision-lenguaje, por lo que el pipeline acelerado sirve para extraer datos de facturas, formularios o capturas manteniendo el formato JSON de salida.
-- Despliegue con requisitos de soberania de datos: al ejecutarse en hardware local Blackwell con licencia OpenMDW-1.1, es viable en entornos con restricciones de salida a la nube.
+- Servicio de chat de baja latencia: emparejar el drafter con el objetivo en vLLM para reducir el tiempo por token en conversaciones multi-turno, manteniendo la verificacion del objetivo y, por tanto, la calidad de la respuesta.
+- Razonamiento con cadena de pensamiento en produccion: las trazas de razonamiento son largas y secuenciales, un escenario donde la decodificacion especulativa aporta ganancias de throughput sostenidas gracias al contexto de 256K tokens del objetivo.
+- RAG sobre documentacion extensa: el objetivo maneja contextos de hasta 256K tokens, y el drafter acelera la generacion de respuestas fundamentadas sin cambiar el contenido verificado.
+- Agentes con tool calling: en bucles de agente con multiples llamadas a herramientas y pasos intermedios, la aceleracion por token reduce la latencia acumulada de la sesion.
+- Comprension visual asistida: al ser el objetivo un modelo vision-lenguaje, el par drafter-objetivo sirve para describir imagenes y responder preguntas visuales con menor latencia de generacion.
+- Despliegue en estaciones DGX Spark (GB10): el objetivo cuantizado a 24GB y el drafter de 1.113B encajan en el hardware Blackwell SM 120 para el que estan optimizados, habilitando inferencia local acelerada.
+- Atencion al cliente multilingue: el objetivo cubre diez idiomas, y el drafter acelera las respuestas en esos mismos idiomas sin anadir un modelo adicional de traduccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasa de aceptacion de tokens del draft, factor de aceleracion (speedup) frente al objetivo sin decodificacion especulativa, ni resultados de MMLU, HumanEval, GSM8K u otras pruebas para el objetivo o para el drafter.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM del draft: el repo ocupa 1,0 GB; el peso en VRAM no se declara explicitamente en la informacion disponible (los 673M parametros en NVFP4 del repo implican una huella muy inferior a 1 GB, pero es una estimacion, no un dato publicado).
-- Modelo objetivo: requiere 24 GB segun el propio nombre del checkpoint y la referencia al "compatible 24GB target"; debe caber junto al draft en el mismo dispositivo.
-- GPU compatibles: exclusivamente NVIDIA Blackwell con SM 120, incluido DGX Spark (GB10). No hay soporte declarado para arquitecturas anteriores (Hopper, Ada, Ampere) ni para CPU.
-- GPU de consumo: las Blackwell de consumo (misma microarquitectura SM 120) son las unicas candidatas; no se especifican modelos ni capacidades de memoria concretas.
-- Motor de despliegue: unicamente vLLM segun la model card. No se mencionan llama.cpp, Ollama, TGI ni TensorRT-LLM.
+- VRAM estimada para inferencia: el objetivo cuantizado ocupa 24GB (segun el nombre del checkpoint); el drafter suma 1.113B parametros en NVFP4 y un repositorio de 1.0 GB.
+- GPU recomendadas: exclusivamente NVIDIA Blackwell con SM 120, incluido DGX Spark (GB10). No se declara compatibilidad con arquitecturas anteriores (A100, H100, RTX 4090) ni con GPU de consumo de generaciones previas.
+- Cabe en GPU de consumo: no disponible; la unica microarquitectura soportada es Blackwell SM 120.
+- Opciones de despliegue: vLLM es el unico motor declarado. No se mencionan llama.cpp, Ollama ni TGI.
 - Sistema operativo: Linux.
-- Latencia y throughput: no disponibles. La model card no publica factor de aceleracion ni tokens por segundo.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Funcion | Licencia | Hardware |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr (draft) | 673M segun safetensors / 1,113B segun model card | Depende del objetivo (256K) | No publicado | OpenMDW-1.1 | Hugging Face, vLLM, SM 120 |
-| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB servido sin draft | 74B totales, 9B activos | 256K | No publicado; seria la linea base frente a la que se mide la aceleracion | OpenMDW-1.1 | Hugging Face, vLLM, Blackwell |
-| Otros drafters de decodificacion especulativa (EAGLE-3, Medusa, cabezas n-gram) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
+| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr | 1.113B (drafter); objetivo 74B/9B activos | 256K (objetivo) | Decodificacion especulativa para el objetivo Nemotron-3.5-Bolt | OpenMDW-1.1 | Blackwell SM 120, vLLM |
+| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB | 74B totales / 9B activos | 256K | Modelo vision-lenguaje LatentMoE (objetivo) | OpenMDW-1.1 | No disponible en la informacion |
+| Drafters especulativos de otros fabricantes | no disponible | no disponible | Decodificacion especulativa | no disponible | no disponible |
 
-No se dispone de datos publicados de tasa de aceptacion ni de speedup que permitan una comparacion cuantitativa con otros metodos de decodificacion especulativa. La comparacion relevante y verificable es contra el objetivo sin draft, para la cual tampoco hay cifras en la informacion disponible.
+No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: sin el objetivo NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB no genera texto utilizable; no puede desplegarse como chatbot por si solo.
-- Dependencia de hardware muy restrictiva: solo NVIDIA Blackwell SM 120, lo que excluye A100, H100 y RTX 30/40 series, y limita el despliegue en infraestructura existente.
-- Dependencia de motor: unicamente vLLM; no hay rutas de despliegue alternativas documentadas.
-- Discrepancia de parametros: los safetensors suman 673.450.538 parametros mientras la model card declara 1,113B; conviene verificar la cifra real antes de dimensionar el despliegue.
-- Ambiguedad de cuantizacion: el repo lleva la etiqueta "8-bit" junto a `modelopt_fp4` (NVFP4), lo que puede inducir a error al planificar memoria.
-- Riesgo de alucinacion: heredado del objetivo de 74B; la decodificacion especulativa preserva la distribucion del objetivo, pero no elimina sus errores factuales.
-- Sesgos: no se documentan evaluaciones de sesgo, toxicidad ni seguridad en la informacion disponible, ni para el draft ni para el objetivo.
-- Idiomas: la lista de diez idiomas corresponde al objetivo; no hay evaluacion publicada del rendimiento del draft por idioma, y el espanol no tiene metricas especificas.
-- Licencia: OpenMDW-1.1 permite uso comercial, pero es una licencia propia de NVIDIA/Mistral con terminos especificos; conviene revisar el texto completo antes de un despliegue en produccion.
-- Reproducibilidad: el checkpoint se cuantizo con un commit concreto de Model Optimizer (b5f10f8); cambios de version pueden alterar el comportamiento numerico.
+- No es un modelo autonomo: no puede generar texto por si mismo; requiere el objetivo NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB para verificar y producir la salida.
+- Compatibilidad de hardware muy restringida: solo NVIDIA Blackwell SM 120 (incluido DGX Spark GB10); no funciona en A100, H100 ni en GPU de consumo anteriores.
+- Unico motor soportado: vLLM; no hay soporte declarado para llama.cpp, Ollama o TGI.
+- Cuantizacion NVFP4: puede introducir diferencias numericas respecto a los pesos en precision completa del drafter, aunque la verificacion del objetivo acota el impacto en la salida final.
+- Sesgos y alucinaciones: no se documentan sesgos especificos en la informacion disponible; el riesgo de alucinacion del sistema recae en el modelo objetivo y debe evaluarse en su model card.
+- Idiomas: el drafter hereda la cobertura del objetivo (diez idiomas); no se detalla el rendimiento del drafter por idioma.
+- Restricciones de licencia: OpenMDW-1.1 permite uso comercial y no comercial, pero conviene revisar los terminos completos antes de desplegar en produccion.
+- Entrenamiento: la informacion no detalla el volumen de tokens ni la composicion del dataset del drafter, lo que limita la evaluacion de su robustez fuera de los dominios del objetivo.
+- Fecha de publicacion: el checkpoint se publico el 15/10/2026 en Hugging Face, con ultima actualizacion del repositorio el 19/10/2026.
 
 ## Enlaces
 
-- Hugging Face del draft: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
 - Modelo objetivo: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
-- Paper LiLiCorr: https://arxiv.org/abs/2608.20530
-- Repositorio NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
+- Articulo LiLiCorr: https://arxiv.org/abs/2608.20530
+- NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Dataset Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
 - Dataset Nemotron-RL-Super-Training-Blends: https://huggingface.co/datasets/nvidia/Nemotron-RL-Super-Training-Blends

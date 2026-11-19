@@ -50,22 +50,28 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "Held-out tasks",
+      "task": "Text generation",
       "dataset": "BFCL live",
       "metric": "Tool calls (of 258)",
       "value": 163
     },
     {
-      "task": "Held-out tasks",
-      "dataset": "IFEval",
-      "metric": "Followed (of 541)",
-      "value": 308
-    },
-    {
-      "task": "Held-out tasks",
+      "task": "Text generation",
       "dataset": "GSM8K, last 250",
       "metric": "Correct (of 250)",
       "value": 124
+    },
+    {
+      "task": "Text generation",
+      "dataset": "MMLU-Pro sample",
+      "metric": "Correct (of 280)",
+      "value": 33
+    },
+    {
+      "task": "Text generation",
+      "dataset": "IFEval",
+      "metric": "Followed (of 539)",
+      "value": 308
     }
   ],
   "sources": []

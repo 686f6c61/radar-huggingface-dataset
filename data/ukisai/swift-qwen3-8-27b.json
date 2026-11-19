@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LA Clippers Roster 2025–26 | Players, Stats & Bios - NBA.com",
-      "url": "https://www.nba.com/clippers/roster",
-      "snippet": "Explore the LA Clippers roster for the 2025–26 season. View player stats, positions, bios, and the latest team lineup."
-    },
-    {
-      "title": "Swift-Qwen3.8-27B: less overthinking - UkisAI",
-      "url": "https://ukisai.com/news/introducing-swift",
-      "snippet": "Swift-Qwen3.8-27B is UkisAI's reasoning-efficient derivative of Qwen3.8-27B, using up to 58% fewer thinking tokens while maintaining near-identical performance ..."
-    },
-    {
-      "title": "LA Clippers NBA Roster - ESPN",
-      "url": "https://www.espn.com/nba/team/roster/_/name/lac/la-clippers",
-      "snippet": "Explore the LA Clippers NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards …"
-    },
-    {
-      "title": "2025-26 Los Angeles Clippers Roster and Stats | Basketball-Reference.com",
-      "url": "https://www.basketball-reference.com/teams/LAC/2026.html",
-      "snippet": "Checkout the latest Los Angeles Clippers Roster and Stats for 2025-26 on Basketball-Reference.com"
-    },
-    {
-      "title": "LA Clippers | Tickets, Schedule, Roster & News - NBA.com",
-      "url": "https://www.nba.com/clippers/",
-      "snippet": "The official site of the LA Clippers. Find the latest schedule, buy tickets, view the roster, and get team news, stats, and updates."
-    }
-  ]
+  "sources": []
 }

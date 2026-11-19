@@ -2,125 +2,100 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario t8star, no es un modelo entrenado por su autor, sino un espejo de conveniencia que reúne cuatro ficheros ya existentes: tres modelos GGUF con cuantización Q4_K_M y un proyector de visión BF16. En conjunto forman una colección de modelos de reescritura de prompts (prompt rewriting) pensada para funcionar dentro del nodo de ComfyUI Comfyui-Qwen-Image-Prompt-Rewrite-T8. El modelo base declarado es la familia Qwen-Image-2.1-PE, cuyos checkpoints originales son Qwen/Qwen-Image-2.1-PE-T2I y Qwen/Qwen-Image-2.1-PE-I2I, ambos construidos por Qwen.
+Este repositorio no contiene un modelo generativo de imagenes, sino una coleccion de espejo (mirror) de cuatro modelos GGUF Q4_K_M de reescritura de prompts y dos proyectores visuales BF16, empaquetados para el nodo de ComfyUI [ComfyUI-Qwen-Image-Prompt-Rewrite-T8](https://github.com/T8mars/Comfyui-Qwen-Image-Prompt-Rewrite-T8). Los pesos originales proceden de los checkpoints Qwen/Qwen-Image-2.1-PE-T2I y Qwen/Qwen-Image-2.1-PE-I2I, y de sus variantes "Heretic" publicadas por pottokao; el autor del repo, t8star, no ha entrenado ni cuantizado ninguno de los ficheros, y conserva nombres y checksums SHA256 originales.
 
-El problema que resuelve es acotado pero útil en flujos de generación de imagen: transformar una instrucción breve del usuario en un prompt enriquecido para un pipeline de difusión, tanto en modo texto a imagen (T2I) como en modo edición con imágenes de referencia (I2I). La variante I2I incorpora un proyector de visión que permite condicionar la reescritura sobre un conjunto de 1 a 10 imágenes de entrada. Es importante subrayar que estos pesos solo reescriben prompts: no generan imágenes por sí mismos y requieren un pipeline de difusión Qwen Image 2.1 aparte.
+El modelo base es un transformer de ~8.950 millones de parametros (8,95 B) que actua como "prompt enhancer": recibe una instruccion breve del usuario y devuelve un prompt expandido y estructurado para alimentar un pipeline de difusion Qwen Image 2.1. La variante I2I incorpora un proyector visual BF16 (`mmproj`) que permite condicionar la reescritura con entre 1 y 10 imagenes de referencia, lo que habilita flujos de edicion de imagen guiada por lenguaje natural.
 
-La relevancia de este mirror es práctica: evita tener que localizar y descargar por separado los GGUF de prithivMLmods y de pottokao, conserva los nombres de fichero y los checksums SHA256 originales, y está disponible en el registro de ComfyUI. Los metadatos de Hugging Face indican 8.953.803.264 parámetros y un tamaño de repositorio de 18,1 GB. La licencia Qwen Research limita el uso a investigación y evaluación no comerciales.
+Su relevancia practica es acotada pero clara: permite ejecutar la fase de reescritura de prompts en local con llama.cpp y ComfyUI, sin depender de APIs externas, y con un peso de ~5 GB por fichero Q4_K_M. Es importante subrayar que estos pesos no generan imagenes por si solos: requieren un pipeline de difusion Qwen Image 2.1 separado, y su licencia Qwen Research restringe el uso a investigacion y evaluacion no comerciales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No especificada en la model card; la presencia de un proyector de visión BF16 (mmproj) y las etiquetas llama.cpp/gguf indican una arquitectura multimodal de tipo vision-language con decodificador transformer |
-| Parametros totales | 8.953.803.264 (8,95 B), segun los metadatos de Hugging Face |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (tres ficheros GGUF de reescritura) y BF16 para el proyector de visión (mmproj-bf16.gguf) |
-| Idiomas soportados | Ingles (en) y chino (zh) |
-| Licencia | Qwen Research License Agreement (uso y redistribucion solo para investigacion o evaluacion no comercial; el uso comercial exige licencia aparte del titular de derechos de Qwen) |
-| Formato de pesos | GGUF (Q4_K_M); GGUF BF16 para el proyector de visión |
-| Tamano del repositorio | 18,1 GB (cuatro ficheros) |
-| Autor del repositorio | t8star (espejo; no es el autor del entrenamiento ni de la cuantizacion) |
-| Fecha de creacion / actualizacion | 21 de septiembre de 2026 / 21 de septiembre de 2026 |
-
-### Ficheros incluidos
-
-| Fichero | Proposito | Repositorio original | SHA256 |
-|---|---|---|---|
-| `Qwen-Image-2.1-PE-T2I.Q4_K_M.gguf` | Reescritura estandar texto a imagen | prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF | `340feb42c784e35b704a0f0d8d1c679a3fe60437bd9ea44a7a6fd2d730470506` |
-| `Qwen-Image-2.1-PE-I2I.Q4_K_M.gguf` | Reescritura de edicion con conocimiento de imagen | prithivMLmods/Qwen-Image-2.1-PE-I2I-GGUF | `a5c6cb28cbaf838834d1335c8392619af5809d9fe95d0ebd321e15751866dfe9` |
-| `Qwen-Image-2.1-PE-I2I.mmproj-bf16.gguf` | Proyector de visión para la variante I2I | prithivMLmods/Qwen-Image-2.1-PE-I2I-GGUF | `8dedb71dbc3092dc47de9108ad373d68a12854e2527d59bd9399601738f3bce1` |
-| `pe_t2i_heretic-Q4_K_M.gguf` | Reescritura T2I alternativa (variante Heretic) | pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF | `fe176ded062942ac8858290a33c9303a6e9c09c31405020a22ad0d47fa7b9b69` |
+| Arquitectura | Transformer decoder-only (modelo base Qwen de reescritura de prompts); no disponible el detalle exacto de capas y dimensiones |
+| Parametros totales | 8.953.803.264 (~8,95 B) segun safetensors del repo |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (GGUF) para los modelos de lenguaje; BF16 para los proyectores visuales (`mmproj-bf16.gguf`) |
+| Idiomas soportados | en, zh |
+| Licencia | qwen-research (Qwen Research License Agreement); solo investigacion y evaluacion no comercial |
+| Formato de pesos | GGUF (llama.cpp) + proyectores BF16 GGUF; tamano del repo 24,9 GB |
 
 ## Arquitectura y entrenamiento
 
-La model card de este espejo no describe la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. Esa información corresponde a los checkpoints originales de Qwen (Qwen/Qwen-Image-2.1-PE-T2I y Qwen/Qwen-Image-2.1-PE-I2I) y a los repositorios de cuantización de prithivMLmods y pottokao, que no se incluyen en la información proporcionada. Tampoco se documenta qué variante concreta de la familia Qwen sirve de base a los pesos de 8,95 B parámetros.
+La informacion disponible no detalla la arquitectura interna del checkpoint Qwen-Image-2.1-PE (numero de capas, cabezas, dimension oculta ni funcion de activacion). Por el recuento de parametros (~8,95 B) y el ecosistema en el que se distribuye, se trata de un transformer decoder-only de la familia Qwen adaptado a la tarea de reescritura de prompts, ejecutable mediante llama.cpp. La variante I2I anade un proyector visual multimodal en BF16 que inyecta representaciones de imagen en el modelo de lenguaje, siguiendo el patron habitual de los proyectores tipo LLaVA.
 
-Lo que sí se puede afirmar a partir de los ficheros distribuidos es que se trata de una pila multimodal: la variante I2I requiere obligatoriamente el fichero `Qwen-Image-2.1-PE-I2I.mmproj-bf16.gguf`, un proyector de visión en BF16, lo que implica un codificador visual conectado a un decodificador de lenguaje. La variante T2I funciona sin proyector y procesa únicamente texto. El autor advierte de forma explícita que el proyector no debe emparejarse con ninguno de los pesos T2I. Los repositorios de origen no ofrecen un proyector de visión en Q4, por lo que la ruta multimodal obliga a cargar el mmproj en BF16.
-
-En cuanto al proceso de cuantización, el mirror tampoco lo detalla: solo indica que los ficheros conservan nombre y checksum originales y que no fueron entrenados ni cuantizados por t8star. La variante Heretic es una alternativa opcional al T2I estándar y, según la propia model card, no ha demostrado una ventaja de calidad fiable en la comparación reducida realizada dentro de este proyecto.
+No se han publicado en esta ficha datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni si hubo fases de RLHF o DPO. Las variantes "Heretic" son derivados comunitarios de pottokao sobre los checkpoints originales de Qwen; la model card indica explicitamente que no se ha establecido una ventaja de calidad frente a los modelos estandar. El proceso de cuantizacion a Q4_K_M tampoco lo ha realizado t8star: los ficheros se redistribuyen con sus checksums originales.
 
 ## Capacidades
 
-- Reescritura de prompts de texto a imagen: convierte instrucciones breves en descripciones detalladas y estructuradas para un pipeline de difusión.
-- Reescritura de prompts de edición con imagen: la variante I2I acepta de 1 a 10 imágenes de referencia y adapta la instrucción al contenido visual observado.
-- Procesamiento multimodal en la variante I2I gracias al proyector de visión BF16 que la acompaña.
-- Soporte bilingüe limitado a inglés y chino, según los metadatos de idioma del repositorio.
-- Inferencia mediante llama.cpp, ya que los pesos se distribuyen en formato GGUF.
-- Integración como nodo de ComfyUI para reescritura de prompts dentro de un grafo de generación de imagen.
-- Perfil de nodo por defecto: modelo T2I estándar para peticiones solo de texto y modelo I2I más su proyector de visión cuando la petición incluye imágenes de referencia.
-- Uso como endpoint conversacional, según la etiqueta endpoints_compatible del repositorio.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, matemáticas, generación de código, audio ni modos de razonamiento explícito.
+- Reescritura y expansion de prompts texto-a-imagen (T2I): transforma instrucciones breves en descripciones detalladas y estructuradas para el pipeline de difusion.
+- Reescritura consciente de imagen (I2I): con el proyector `mmproj-bf16.gguf` correspondiente, procesa entre 1 y 10 imagenes de referencia para generar instrucciones de edicion.
+- Conversacion multi-turno: el tag `conversational` del repo indica soporte de dialogo, aunque la funcion principal es la reescritura de prompts.
+- Multilingue limitado a ingles y chino.
+- Integracion nativa con ComfyUI mediante el nodo Qwen Image Prompt Rewrite T8, con seleccion automatica de proyector (`Auto`).
+- Variantes "Heretic" opcionales para T2I e I2I, orientadas a reducir restricciones de contenido en la reescritura (sin ventaja de calidad demostrada).
+- No soporta, segun la informacion disponible, tool calling, function calling ni generacion de imagenes: es exclusivamente un componente de preprocesado de prompts.
 
 ## Casos de uso
 
-- Enriquecimiento automático de prompts en ComfyUI: el nodo carga el GGUF T2I y reescribe la instrucción del usuario antes de pasarla al pipeline de difusión Qwen Image 2.1, de modo que el usuario puede escribir una frase corta y obtener un prompt detallado sin redactarlo a mano.
-- Edición guiada por imagen de referencia: con el GGUF I2I y su proyector BF16, el modelo analiza hasta 10 imágenes de entrada y reformula la orden de edición teniendo en cuenta lo que aparece en ellas, útil para flujos de retoque o variación de producto.
-- Preprocesado por lotes de datasets de prompts: se puede recorrer un fichero de instrucciones breves y generar una versión ampliada de cada una mediante llama.cpp, para después usar ese corpus en tareas de evaluación o de ajuste de pipelines de imagen.
-- Despliegue local sin conexión: al ser GGUF Q4_K_M, el modelo se ejecuta en una estación de trabajo con GPU de gama media sin enviar prompts ni imágenes a servicios externos, algo relevante cuando el material de entrada es sensible.
-- Integración en servicios con API: la etiqueta endpoints_compatible permite exponer el modelo como servicio conversacional y llamarlo desde un backend que construya prompts para un generador de imágenes remoto.
-- Comparación de variantes de reescritura: disponer del T2I estándar y del T2I Heretic en el mismo repositorio permite evaluar A/B qué variante produce prompts más útiles para un dominio concreto, aunque el autor no haya observado diferencias de calidad concluyentes.
-- Evaluación académica del comportamiento de reescritura: en el marco de la licencia Qwen Research, el modelo se puede usar para estudiar cómo los reescritores de prompts afectan a la fidelidad y al sesgo de las imágenes generadas resultantes.
-- Cadena completa de generación: combinando este reescritor con un pipeline de difusión Qwen Image 2.1 separado se obtiene un flujo texto a imagen de dos etapas, donde la primera etapa se puede sustituir o versionar de forma independiente.
+- Reescritura local de prompts en ComfyUI: el nodo carga el GGUF Q4_K_M y expande la instruccion del usuario antes de pasarla al pipeline de difusion Qwen Image 2.1, eliminando la dependencia de APIs de terceros para esta fase.
+- Edicion de imagen guiada por lenguaje natural: con `Qwen-Image-2.1-PE-I2I.Q4_K_M.gguf` y su `mmproj-bf16.gguf`, el modelo analiza hasta 10 imagenes de referencia y produce instrucciones de edicion coherentes con el contenido visual.
+- Estandarizacion de prompts en equipos de diseno: permite fijar una plantilla de reescritura para que distintos operadores obtengan prompts homogeneos y reproducibles a partir de descripciones dispares.
+- Prototipado de pipelines generativos en investigacion: al ser un modelo de ~8,95 B cuantizado a Q4_K_M, se puede desplegar en estaciones de trabajo con GPU de consumo para experimentar con variantes de reescritura sin coste de API.
+- Evaluacion comparativa de estrategias de prompting: las variantes estandar y Heretic permiten contrastar como afecta la reescritura (y sus restricciones) a la calidad final de la imagen generada.
+- Traduccion y adaptacion bilingue de prompts: con soporte en/zh, un equipo puede redactar la instruccion en chino y obtener el prompt expandido en ingles (o viceversa) para el pipeline de difusion.
+- Despliegue en entornos aislados (air-gapped): al ser pesos GGUF ejecutables con llama.cpp, el flujo completo de reescritura funciona sin conectividad externa, util en laboratorios con requisitos de confidencialidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del espejo no incluye métricas de MMLU, HumanEval, GSM8K ni de calidad de reescritura, y la comparación con la variante Heretic se describe únicamente como una prueba reducida sin ventaja de calidad fiable.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: cada fichero Q4_K_M de 8,95 B parámetros ocupa del orden de 5,4-5,5 GB, calculado a partir de una media de 4,85 bits por peso (estimacion derivada; el repositorio no publica el tamano individual de cada fichero).
-- Proyector de vision: por diferencia entre el tamano total del repositorio (18,1 GB) y tres ficheros Q4_K_M de aproximadamente 5,4 GB, el mmproj BF16 rondaria los 1,8 GB (estimacion derivada).
-- VRAM total necesaria en modo I2I: aproximadamente 7,5-8 GB sumando pesos Q4_K_M y proyector, mas el espacio de trabajo de la ventana de contexto.
-- GPU de consumo: el modo T2I cabe holgadamente en tarjetas de 8 GB, como RTX 3060 Ti, RTX 4060 Ti o RTX 3070; el modo I2I con proyector BF16 encaja mejor en 12 GB o mas, como RTX 3060 de 12 GB, RTX 4070 Ti o RTX 4080.
-- GPU de centro de datos: A100, H100 o L40S permiten cargar varias instancias en paralelo y operar con lotes grandes.
-- Opciones de despliegue: llama.cpp como motor principal, el nodo Comfyui-Qwen-Image-Prompt-Rewrite-T8 dentro de ComfyUI, y cualquier envoltorio compatible con GGUF y endpoints conversacionales.
-- Latencia y throughput: no disponibles. Dependeran del hardware, de la longitud del prompt y, en modo I2I, del numero de imagenes de referencia (hasta 10).
-- Almacenamiento: 18,1 GB para el conjunto completo de los cuatro ficheros; 5,4 GB si solo se descarga un unico GGUF T2I.
+- VRAM estimada: los ficheros Q4_K_M ocupan aproximadamente 5 GB cada uno; con overhead de contexto de llama.cpp, se recomienda un minimo de 6-8 GB de VRAM para el modelo de lenguaje. Los proyectores BF16 anaden memoria adicional, no cuantificada en la informacion disponible.
+- GPU recomendadas: no disponibles de forma explicita. Por tamano, una RTX 3060 de 12 GB, RTX 4070, RTX 4090 o superiores deberian poder alojar el modelo Q4_K_M; para mayor comodidad y para el pipeline de difusion completo se recomienda 16-24 GB.
+- Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas para el modelo de reescritura aislado; el pipeline de difusion Qwen Image 2.1 tiene requisitos propios no cubiertos aqui.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), nodo ComfyUI-Qwen-Image-Prompt-Rewrite-T8, ComfyUI Registry. No se mencionan vLLM ni TGI para estos ficheros.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Contenido | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| t8star/qwen-image-2.1-comfy | Espejo con 3 GGUF Q4_K_M y 1 mmproj BF16 | 8,95 B (metadatos HF) | No disponible | Qwen Research (solo investigacion/evaluacion) | Hugging Face; 0 descargas, 0 likes |
-| prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF | GGUF de reescritura T2I (origen de uno de los ficheros) | No disponible | No disponible | Qwen Research | Hugging Face |
-| prithivMLmods/Qwen-Image-2.1-PE-I2I-GGUF | GGUF de reescritura I2I y su proyector BF16 (origen de dos ficheros) | No disponible | No disponible | Qwen Research | Hugging Face |
-| pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF | GGUF de reescritura T2I alternativo | No disponible | No disponible | Qwen Research | Hugging Face |
-| Qwen/Qwen-Image-2.1-PE-T2I y Qwen/Qwen-Image-2.1-PE-I2I | Checkpoints originales de Qwen | No disponible | No disponible | Qwen Research | Hugging Face |
+| Este repo (Qwen-Image-2.1-PE Q4_K_M) | ~8,95 B | no disponible | GGUF Q4_K_M + mmproj BF16 | qwen-research (no comercial) | Reescritura de prompts T2I/I2I para ComfyUI |
+| Qwen/Qwen-Image-2.1-PE-T2I (original) | no disponible | no disponible | safetensors (original) | qwen-research | Checkpoint fuente sin cuantizar |
+| pottokao/Qwen-Image-2.1-PE-T2I-Heretic | no disponible | no disponible | GGUF | no disponible | Variante derivada con restricciones reducidas; sin ventaja de calidad establecida |
+| Modelos genericos de reescritura de prompts (p. ej. variantes pequenas de instruct) | variable | variable | safetensors/GGUF | variable | No se dispone de datos comparativos de rendimiento en la informacion proporcionada |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros reescritores de prompts de terceros, por lo que la comparacion se limita a procedencia, formato y licencia.
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo de imagen: los pesos solo reescriben prompts y necesitan un pipeline de difusion Qwen Image 2.1 independiente para producir imagenes.
-- Licencia restrictiva: la Qwen Research License Agreement autoriza unicamente investigacion y evaluacion no comerciales; cualquier uso comercial requiere una licencia adicional del titular de derechos de Qwen. El espejo no suministra esa licencia.
-- Obligacion de conservar la licencia y el fichero NOTICE al redistribuir los pesos.
-- Idiomas limitados a ingles y chino; no hay soporte declarado de castellano, lo que puede degradar la reescritura de prompts escritos en espanol.
-- El proyector de vision no debe combinarse con los pesos T2I; el emparejamiento incorrecto rompe la inferencia multimodal.
-- No existe proyector de vision en Q4, por lo que el modo I2I obliga a cargar el mmproj en BF16 y consume mas memoria de la que sugiere la cuantizacion del modelo principal.
-- La variante Heretic no ha mostrado una ventaja de calidad fiable segun el propio autor.
-- Riesgo de alucinacion: no se documenta ningun mecanismo de mitigacion ni evaluacion de fidelidad de los prompts reescritos.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Longitud de contexto no especificada, por lo que no se puede garantizar el comportamiento con prompts muy largos o con muchas imagenes de referencia.
-- Repositorio con 0 descargas y 0 likes, sin senales de adopcion ni de mantenimiento continuado; la ultima actualizacion registrada es del 21 de septiembre de 2026.
-- Trazabilidad: el autor del espejo no es el entrenador ni el cuantizador, de modo que los detalles tecnicos dependen de los repositorios de origen.
-- La busqueda web realizada no devolvio resultados utiles sobre este modelo; las coincidencias obtenidas correspondian a servicios de correo no relacionados.
+- Licencia restrictiva: la Qwen Research License Agreement solo autoriza uso y redistribucion para investigacion o evaluacion no comercial; cualquier uso comercial requiere licencia separada del titular de derechos Qwen.
+- No es un modelo de generacion de imagenes: requiere un pipeline de difusion Qwen Image 2.1 independiente; usarlo aislado solo produce texto.
+- Dependencia estricta del proyector: cada modelo I2I necesita su `mmproj-bf16.gguf` correspondiente; emparejar un proyector con un peso T2I o mezclar variantes estandar y Heretic produce resultados incorrectos.
+- Cobertura linguistica limitada a ingles y chino; el rendimiento en castellano no esta documentado.
+- Riesgo de alucinacion y de deriva semantica: al expandir prompts, el modelo puede introducir elementos no solicitados que alteren la imagen final.
+- Las variantes Heretic no han demostrado ventaja de calidad; su uso responde a criterios de contenido, no de rendimiento.
+- Repo espejo: t8star no mantiene los pesos originales; la responsabilidad tecnica y de licencia recae en los autores fuente (Qwen y pottokao).
+- Sin datos publicados de benchmarks, contexto maximo ni latencia, lo que dificulta el dimensionamiento en produccion.
+- El tamano del repo (24,9 GB) incluye todas las variantes; descargar solo los ficheros necesarios para evitar consumo innecesario de almacenamiento.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/t8star/qwen-image-2.1-comfy
-- Nodo de ComfyUI: https://github.com/T8mars/Comfyui-Qwen-Image-Prompt-Rewrite-T8
-- Registro de ComfyUI: https://registry.comfy.org/zh/publishers/t8star/nodes/qwen-image-prompt-rewrite-t8
-- GGUF T2I de origen: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF
-- GGUF I2I de origen y proyector de vision: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-I2I-GGUF
-- GGUF Heretic de origen: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF
-- Checkpoint original T2I de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
-- Checkpoint original I2I de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
-- Variante Heretic sin cuantizar: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic
-- Perfil del autor en Hugging Face: https://huggingface.co/t8star
-- Canal de Bilibili: https://space.bilibili.com/385085361
-- Canal de YouTube: https://www.youtube.com/@T8star-Aix/
-- API del autor: https://api.seedance.nz/sign-up?aff=5f4w
+- Repositorio Hugging Face: https://huggingface.co/t8star/qwen-image-2.1-comfy
+- Nodo ComfyUI: https://github.com/T8mars/Comfyui-Qwen-Image-Prompt-Rewrite-T8
+- ComfyUI Registry: https://registry.comfy.org/zh/publishers/t8star/nodes/qwen-image-prompt-rewrite-t8
+- Checkpoint original T2I: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
+- Checkpoint original I2I: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
+- GGUF T2I (prithivMLmods): https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF
+- GGUF I2I (prithivMLmods): https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-I2I-GGUF
+- Heretic T2I: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic
+- Heretic I2I: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-I2I-Heretic
+- Heretic T2I GGUF: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF
+- Heretic I2I GGUF: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-I2I-Heretic-GGUF
+- Perfil del autor: https://huggingface.co/t8star
+- Bilibili: https://space.bilibili.com/385085361
+- YouTube: https://www.youtube.com/@T8star-Aix/
 - Galeria gratuita: https://www.openzhenzhen.com
-- Aplicaciones en linea: https://www.runninghub.ai/zh-cn/user-center/1907375370302308353/userPost?inviteCode=rh-v1121
-- Paquete de ComfyUI: https://pan.quark.cn/s/264edb7e36bd

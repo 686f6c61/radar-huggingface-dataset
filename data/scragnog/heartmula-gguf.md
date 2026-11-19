@@ -2,86 +2,89 @@
 
 ## Resumen
 
-HeartMuLa-GGUF es una conversión a formato GGUF de los componentes del sistema de generación musical HeartMuLa, publicada por el usuario scragnog para su uso en el proyecto HOT-Step, que implementa inferencia nativa en C++/GGML sin dependencia de Python en tiempo de ejecución. El modelo original fue desarrollado por el HeartMuLa Team y se compone de un par de modelos de lenguaje de 3B parámetros (global y local) junto con el códec de audio HeartCodec, que convierte texto con etiquetas musicales y letras en audio de hasta 240 segundos.
+HeartMuLa-GGUF es un repositorio de conversiones a formato GGUF de la familia de modelos HeartMuLa, desarrollada por el equipo HeartMuLa y publicada por el usuario scragnog. Se trata de un sistema de generación de audio musical a partir de texto (text-to-audio) que combina un modelo de lenguaje de aproximadamente 1.487 millones de parámetros con un códec de audio neuronal (HeartCodec) para producir piezas musicales de hasta 240 segundos de duración.
 
-El repositorio no contiene un modelo nuevo, sino conversiones cuantizadas divididas por componentes: dos variantes de LM (global y local), el códec de flujo, el decodificador de forma de onda, el módulo RVQ y el tokenizador. Ofrece F16 y 18 niveles de cuantización por componente, incluyendo formatos modernos como MXFP4 y NVFP4. Con 1.487 millones de parámetros declarados en safetensors para los componentes convertidos y un tamaño de repo de 150,3 GB, es relevante para desarrolladores que quieren generar música localmente en hardware de consumo sin despliegues en la nube.
+El repositorio no es un modelo único, sino un conjunto de componentes empaquetados para inferencia nativa en C++/GGML mediante el runtime HOT-Step: un LM global, un LM local, el flujo del códec, el decodificador de forma de onda, el módulo RVQ, el tokenizador y un paquete opcional de codificadores de audio. La conversión a GGUF reduce la precisión de almacenamiento y divide los componentes, lo que permite ejecutar el modelo sin depender de Python en tiempo de inferencia.
 
-## Especificaciones técnicas
+Su relevancia radica en que ofrece 18 niveles de cuantización por componente del LM (desde F16 hasta IQ1_S, incluyendo MXFP4 y NVFP4), lo que facilita el despliegue en hardware con memoria limitada y democratiza el acceso a un sistema de generación musical que, en su formato original, requiere más recursos. El repositorio incluye además dos archivos de MuLaCover, un modelo de generación de versiones musicales, con licencia distinta (CC BY-NC 4.0).
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LM global + LM local (par de modelos de lenguaje) con códec de audio HeartCodec (flow + decodificador escalar + RVQ); detalles del transformer no disponibles |
-| Parámetros totales | 1.487.183.360 (dato de safetensors del repo); el modelo base se denomina HeartMuLa-oss-3B |
-| Parámetros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible (duración de audio soportada: hasta 240 segundos) |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS, IQ3_XXS, IQ2_XS, IQ2_XXS, IQ1_M, IQ1_S, MXFP4, NVFP4 (LM global y local); F16/Q8_0 (codec flow); F16 (decodificador escalar); F32 (RVQ) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (conversión desde safetensors originales) |
+| Arquitectura | Sistema compuesto: LM global + LM local + codec neuronal (HeartCodec) con flujo y decodificador escalar; inferencia nativa C++/GGML |
+| Parametros totales | 1.487.183.360 (dato safetensors del repo) |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS, IQ3_XXS, IQ2_XS, IQ2_XXS, IQ1_M, IQ1_S, MXFP4, NVFP4 (LM global y local); codec: F16/Q8_0 en flujo, F16 en decodificador escalar, F32 en RVQ |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 (salvo los archivos MuLaCover, bajo CC BY-NC 4.0) |
+| Formato de pesos | GGUF (split en componentes global/local); safetensors en los modelos base originales |
 
 ## Arquitectura y entrenamiento
 
-El sistema HeartMuLa sigue una arquitectura de dos etapas típica de generación musical neuronal: un tokenizador de audio (HeartCodec) que comprime la señal en tokens discretos mediante un módulo de flujo (flow), un decodificador escalar para la reconstrucción de forma de onda y un módulo RVQ (residual vector quantization) que se comparte entre generación y codificación; y un par de modelos de lenguaje (global y local) que generan esos tokens a partir de etiquetas musicales y letras. Los pesos LM se publican en variantes base (HeartMuLa-oss-3B), una variante "happy-new-year" y una variante ajustada con aprendizaje por refuerzo (HeartMuLa-RL-oss-3B-20260123). La cuantización de los pesos LM en formatos K/IQ/FP4 utiliza una matriz de importancia específica por variante, lo que mejora la calidad en niveles bajos de precisión.
+El sistema HeartMuLa se articula en torno a dos modelos de lenguaje (global y local) que trabajan conjuntamente con HeartCodec, un códec neuronal de audio que incluye un flujo de generación, un decodificador escalar de forma de onda y un módulo RVQ (residual vector quantization) compartido entre generación y codificación. El repositorio GGUF convierte y divide estos componentes para su ejecución nativa en HOT-Step, un runtime C++/GGML que no requiere Python en inferencia. Las variantes del LM incluyen la base de 3B, una versión "happy-new-year" y una versión entrenada con RL (HeartMuLa-RL-oss-3B-20260123), lo que sugiere un proceso de ajuste por refuerzo sobre el modelo base, aunque no se detallan en la información disponible los datos de entrenamiento, el número de tokens ni la composición del dataset.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni los procedimientos exactos de RLHF/DPO empleados en la variante RL; el repositorio original remite a heartlib (GitHub) y a la configuración de generación en HeartMuLaGen para más detalles técnicos.
+La conversión a GGUF modifica la disposición de los tensores, divide los componentes y reduce la precisión de almacenamiento; para las cuantizaciones K/IQ/FP4 del LM se utiliza una matriz de importancia separada por variante. El decodificador escalar no dispone de matrices 2D cuantizables, por lo que se mantiene en F16, y el módulo RVQ permanece en F32. La inferencia nativa no necesita el paquete opcional de codificadores (muencoder, wavlm, whisper, query) para la generación de texto a audio; ese paquete solo se emplea para codificación de audio.
 
 ## Capacidades
 
-- Generación de música a partir de etiquetas musicales concisas y letras de canciones (text-to-audio), con duraciones de hasta 240 segundos.
-- Tres variantes de pesos LM: base, "happy-new-year" y una variante RL, seleccionables en la inferencia.
-- Inferencia nativa en C++/GGML (proyecto HOT-Step) sin necesidad de Python en tiempo de ejecución; Python solo se usa para la conversión.
-- Cuantización independiente de las partes global y local del LM (pueden diferir en precisión, siempre que la variante coincida).
-- Codificación de audio a tokens mediante el pack opcional de codificadores (muencoder, wavlm, whisper, query), no necesario para generación de texto a música.
-- Soporte de tool calling, agentes o capacidades de razonamiento: no disponible (no aplica, es un modelo de generación de audio).
+- Generación de audio musical a partir de texto: acepta etiquetas musicales concisas y letras para producir piezas de hasta 240 segundos.
+- Tres variantes de modelo de lenguaje: base, "happy-new-year" y RL, con pesos globales y locales emparejados por variante.
+- Múltiples niveles de cuantización para ajustar precisión y memoria: desde F16 de referencia hasta IQ1_S experimental, pasando por Q8_0, Q4_K_M, IQ4_XS, MXFP4 y NVFP4.
+- Inferencia nativa en C++/GGML mediante HOT-Step, sin dependencia de Python en tiempo de ejecución.
+- Codificación de audio opcional mediante el paquete de codificadores (muencoder, wavlm, whisper, query), no cargado en generación de texto.
+- Generación de versiones musicales (cover) mediante los archivos MuLaCover, con licencia CC BY-NC 4.0.
+- Soporte de duración configurable hasta 240 segundos.
+- No se documentan capacidades de tool calling, agentes, visión ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Generación local de música con letras: el usuario introduce etiquetas musicales concisas (género, tempo, instrumentación) y una letra, y el modelo produce una pista de hasta 240 segundos sin depender de servicios en la nube.
-- Despliegue en hardware de consumo: gracias a los niveles IQ1_S–Q4_K_M, los LM de 3B pueden ejecutarse en GPUs de consumo con VRAM limitada, algo inviable con los pesos F16 completos del repo original.
-- Integración en aplicaciones C++ nativas: el formato GGUF y la inferencia GGML permiten embeber la generación musical en aplicaciones de escritorio o plugins de audio sin runtime de Python.
-- Experimentación con cuantización extrema: los 18 niveles de cuantización con matrices de importancia por variante son útiles para investigar el impacto de la precisión en la calidad del audio generado.
-- Producción de variantes estilísticas: la variante "happy-new-year" permite generar contenido musical temático festivo sin reentrenamiento.
-- Prototipado rápido de música para videojuegos o contenido multimedia: la generación por etiquetas permite iterar bocetos musicales de hasta 4 minutos de forma automatizada.
+- Producción musical asistida: un compositor introduce etiquetas de género, instrumentación y estado de ánimo junto con una letra, y el modelo genera una maqueta de hasta 240 segundos que sirve como punto de partida para arreglos posteriores.
+- Creación de bandas sonoras para vídeo y juegos: integración del runtime HOT-Step en herramientas de edición para generar fragmentos musicales ajustados a la duración de una escena, con la ventaja de no requerir Python en el pipeline.
+- Prototipado rápido de ideas musicales: el uso de cuantizaciones Q8_0 o Q4_K_M permite iterar en estaciones de trabajo con GPU de consumo, generando múltiples variantes a partir de las mismas etiquetas y letras.
+- Despliegue en entornos con memoria limitada: las cuantizaciones IQ2/IQ1 y MXFP4/NVFP4 posibilitan ejecutar el LM en hardware con VRAM reducida, a costa de precisión, para aplicaciones de demostración o educativas.
+- Generación de versiones musicales (covers): los archivos MuLaCover permiten crear adaptaciones de una pieza existente, siempre que el uso sea no comercial salvo licencia expresa de MuLa Labs.
+- Investigación en generación musical: el repositorio ofrece componentes separados y cuantizados que facilitan experimentos de ablación sobre precisión, variantes del LM y configuración del códec.
+- Integración en aplicaciones de audio interactivas: gracias a la inferencia nativa C++/GGML, el sistema puede embeberse en aplicaciones de escritorio o servidores ligeros que generen música bajo demanda.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que no se afirma ningún ranking de calidad de audio entre variantes, y que la validación se limitó a renderizados de prueba con semilla fija (con recorte de audio detectado en IQ1_S).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma exacta. El repo completo pesa 150,3 GB (incluye todos los componentes, variantes y cuantizaciones), pero una instalación de generación típica (un par global+local Q8_0, codec flow Q8_0, decodificador escalar F16, RVQ F32 y tokenizador) ocupa sustancialmente menos; con cuantizaciones IQ1_S/IQ2 los LM de 3B caben con holgura en GPUs de 8-12 GB, aunque esto es una estimación no confirmada por el autor.
-- GPUs recomendadas: no disponible. Al ser inferencia GGML, cualquier GPU compatible con CUDA, Metal o Vulkan debería funcionar; no se citan modelos concretos.
-- Consumer GPUs: los niveles de cuantización bajos (Q2_K, IQ2_XS, IQ1_S/M) están diseñados explícitamente para reducir memoria, lo que sugiere compatibilidad con GPUs de consumo, aunque el autor advierte que IQ1_S produjo recorte de audio en una validación.
-- Despliegue: el objetivo declarado es la inferencia nativa C++/GGML en HOT-Step (descarga de componentes vía el Model Manager de HOT-Step, pestaña HeartMuLa). No se menciona soporte para llama.cpp genérico, Ollama, vLLM o TGI.
+- VRAM estimada: no disponible de forma explícita. El repositorio completo ocupa 159,0 GB, pero esa cifra incluye todas las variantes y niveles de cuantización; la carga en memoria depende del pack elegido (global + local + códec + tokenizador).
+- GPU recomendadas: no disponible. La model card sugiere empezar con el pack Q8_0 de generación o usar F16 como referencia si la memoria lo permite.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible. Las cuantizaciones bajas (Q4_K_M, IQ2_XS, IQ1_S) están pensadas para reducir memoria, pero no se especifican requisitos mínimos.
+- Opciones de despliegue: runtime nativo HOT-Step (C++/GGML) mediante el Model Manager; los componentes se instalan en `models/heartmula/` dentro de la carpeta de datos de HOT-Step.
 - Latencia y throughput: no disponibles.
+- Nota: IQ1_S produjo clipping en una validación con semilla fija, por lo que se considera una opción experimental de memoria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tarea | Formato | Licencia | Contexto de audio |
-|---|---|---|---|---|---|
-| HeartMuLa-GGUF (este repo) | ~1,5B (componentes convertidos; LM base 3B) | Texto a música | GGUF (19 precisiones) | Apache 2.0 | 240 s |
-| YuE (generación de música con letras) | no disponible en esta ficha | Texto a música con letras | safetensors | no disponible | no disponible |
-| MusicGen (Meta) | 300M-3,4B según variante | Texto a música | safetensors | CC-BY-NC (pesos) | ~30 s |
-
-Nota: la comparativa es orientativa; los datos de YuE y MusicGen provienen de conocimiento general y no de la información proporcionada en este repositorio. La ventaja diferencial de HeartMuLa-GGUF es la inferencia nativa GGUF/GGML y las duraciones de hasta 240 segundos.
+No disponible. La información proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos de generación musical texto-a-audio que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- La cuantización extrema degrada la calidad: IQ1_S produjo recorte (clipping) en un renderizado de validación con semilla fija; el autor lo marca como opción experimental de memoria.
-- No se afirma ninguna jerarquía de calidad de audio entre las variantes (base, happy-new-year, RL); el usuario debe evaluarlas por sí mismo.
-- La prosa larga en el campo de etiquetas musicales produce salidas pobres incluso en el modelo original; se recomiendan etiquetas concisas.
-- El decodificador escalar solo existe en F16 (una copia Q8_0 no reduciría tamaño) y el RVQ solo en F32, lo que fija una base de memoria no reducible.
-- El pack de codificadores opcional (para codificar audio) no incluye versiones Q8_0 ni un codificador escalar; están pendientes de conversión y verificación.
-- Idiomas soportados, sesgos del modelo y riesgo de alucinación (en este caso, artefactos de audio): no disponibles o no documentados en la model card.
-- La licencia Apache 2.0 de los repos originales debe mantenerse junto con la atribución al redistribuir los archivos convertidos.
-- Las conversiones GGUF cambian la disposición de tensores y reducen la precisión de almacenamiento, por lo que los resultados pueden diferir de la implementación original en Python.
+- El texto largo o en prosa en el campo de etiquetas puede producir resultados pobres, incluso en el modelo original; se recomiendan etiquetas musicales concisas.
+- IQ1_S es una opción experimental: produjo clipping en una validación con semilla fija.
+- No se declara una clasificación de calidad de audio entre variantes del modelo; la elección de variante y cuantización queda a criterio del usuario.
+- Los archivos MuLaCover no están cubiertos por Apache 2.0: usan CC BY-NC 4.0 y restringen las salidas generadas a uso no comercial; el uso comercial requiere licencia de MuLa Labs.
+- La conversión a GGUF altera la disposición de tensores y reduce la precisión, por lo que los resultados pueden diferir de los modelos originales en safetensors.
+- El paquete de codificadores de audio es opcional y solo se usa para codificación; los archivos Q8_0 de codificadores y el codificador escalar separado no están incluidos en el inventario de staging.
+- No se documentan idiomas soportados, sesgos conocidos ni riesgos específicos de alucinación en la información disponible.
+- Es necesario conservar la licencia y atribución originales al redistribuir los archivos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/scragnog/HeartMuLa-GGUF
-- HeartMuLa-oss-3B (base): https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
-- HeartMuLa-oss-3B-happy-new-year: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B-happy-new-year
-- HeartMuLa-RL-oss-3B-20260123: https://huggingface.co/HeartMuLa/HeartMuLa-RL-oss-3B-20260123
-- HeartCodec-oss-20260123: https://huggingface.co/HeartMuLa/HeartCodec-oss-20260123
-- Tokenizador y configuración de generación (HeartMuLaGen): https://huggingface.co/HeartMuLa/HeartMuLaGen
-- Implementación original (heartlib, GitHub): https://github.com/HeartMuLa/heartlib
+- Modelo base 3B: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
+- Variante happy-new-year 3B: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B-happy-new-year
+- Variante RL 3B: https://huggingface.co/HeartMuLa/HeartMuLa-RL-oss-3B-20260123
+- HeartCodec: https://huggingface.co/HeartMuLa/HeartCodec-oss-20260123
+- Tokenizador y configuración de generación: https://huggingface.co/HeartMuLa/HeartMuLaGen
+- Implementación original: https://github.com/HeartMuLa/heartlib
+- MuLaCover (modelo): https://huggingface.co/HeartMuLa/MuLaCover
+- MuLaCover (repositorio): https://github.com/HeartMuLa/MuLaCover
+- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/legalcode

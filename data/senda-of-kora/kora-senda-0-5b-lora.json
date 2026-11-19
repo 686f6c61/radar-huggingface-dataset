@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "senda-of-kora/kora-senda-0.5b-lora",
+  "slug": "senda-of-kora-kora-senda-0-5b-lora",
+  "author": "senda-of-kora",
+  "url": "https://huggingface.co/senda-of-kora/kora-senda-0.5b-lora",
+  "created_at": "2026-11-18T22:05:09.000Z",
+  "updated_at": "2026-11-18T22:05:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "storytelling",
+    "spanish",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807808,
+  "storage_human": "398 MB",
+  "context_length": 32768,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "derbi senda 50cc d'occasion - Motos - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/motos/derbi-senda-50cc",
+      "snippet": "Consultez nos annonces de derbi senda 50cc d'occasion. Trouvez toutes nos annonces de Motos sur leboncoin"
+    },
+    {
+      "title": "Fiche technique DERBI SENDA SM X-TREME 50 EURO 4",
+      "url": "https://www.50factory.com/content/1580-fiche-technique-derbi-senda-sm-50-x-treme-euro-4",
+      "snippet": "Retrouvez ici les informations concernant la Derbi Senda SM 50 X-treme Euro 4. Découvrez également les pièces détachées …"
+    },
+    {
+      "title": "Prénom Senda : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/senda-54480",
+      "snippet": "Niveau caractère, Senda tend à se montrer de nature persévérante, et est aussi généralement assez inventive. La peur de se lancer …"
+    },
+    {
+      "title": "Senda r d'occasion - Motos - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/motos/senda-r",
+      "snippet": "Consultez nos annonces de senda r d'occasion. Trouvez toutes nos annonces de Motos sur leboncoin"
+    },
+    {
+      "title": "Essai Derbi Senda Racing 50 SM Euro4 - Motoservices",
+      "url": "https://www.motoservices.com/essai-moto/derbi-new-senda-racing-50-euro4-2018-elle-tient-le-cap.htm",
+      "snippet": "Apr 6, 2018 · Derbi New Senda Racing 2018 Euro4 : essai complet, vidéo, fiche technique et tarif de la nouvelle mécabolite au …"
+    }
+  ]
+}

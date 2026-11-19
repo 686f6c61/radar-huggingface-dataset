@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Signal-3.8-27B-Terse-Coder-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-GGUF",
-      "snippet": "mradermacher / Signal-3.8-27B-Terse-Coder-GGUF Like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new"
-    },
-    {
-      "title": "mradermacher/Signal-3.8-27B-Terse-Coder-GGUF at main",
-      "url": "https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-GGUF/tree/main",
-      "snippet": "mradermacher / Signal-3.8-27B-Terse-Coder-GGUF Like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Qwen/Qwen3.8-27B | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
-      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
-    },
-    {
-      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
-      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
-      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
-    },
-    {
-      "title": "LocalAI models",
-      "url": "https://localai.io/docs/gallery.html",
-      "snippet": "mixture-of-experts model with 30B total parameters and 3B active parameters. It targets reasoning, coding, tool use, multilingual chat, and long-context This entry uses the official Q4_K_M GGUF."
-    }
-  ]
+  "sources": []
 }

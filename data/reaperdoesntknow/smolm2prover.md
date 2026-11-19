@@ -2,86 +2,93 @@
 
 ## Resumen
 
-SMOLM2Prover es un modelo de lenguaje especializado en razonamiento matemático, generación de demostraciones y pensamiento lógico paso a paso (Chain-of-Thought). Desarrollado por el usuario reaperdoesntknow como parte de la cartera de Convergent Intelligence LLC, este modelo parte de la base prithivMLmods/SmolLM2-CoT-360M y ha sido refinado mediante varias rondas de Supervised Fine-Tuning (SFT) con el framework TRL. Su objetivo principal es proporcionar capacidades de razonamiento profundo en un paquete compacto de aproximadamente 362 millones de parámetros, lo que lo hace ejecutable en hardware de consumo.
+SmolLM2Prover es un ajuste fino supervisado (SFT) de prithivMLmods/SmolLM2-CoT-360M, un modelo de lenguaje de 361,8 millones de parámetros basado en la arquitectura SmolLM2 de Hugging Face. Lo desarrolla el usuario reaperdoesntknow bajo el paraguas de Convergent Intelligence LLC y está especializado en razonamiento matemático, generación de demostraciones paso a paso y chain-of-thought (CoT). Su propósito es servir como componente de razonamiento en aplicaciones educativas y de resolución de problemas lógicos, manteniendo a la vez capacidades conversacionales generales heredadas del modelo base.
 
-El modelo destaca por su enfoque en la generación de pruebas matemáticas y la resolución de problemas complejos, manteniendo a la vez las capacidades conversacionales del modelo base. Está entrenado sobre el dataset AI-MO/NuminaMath-1.5, complementado con aproximadamente un millón de tokens adicionales de datos de razonamiento con formato personalizado. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas, y su tamaño reducido lo convierte en una opción atractiva para despliegues locales y aplicaciones educativas. La relevancia actual del modelo radica en la tendencia hacia modelos pequeños y especializados que pueden ejecutarse en dispositivos con recursos limitados sin sacrificar capacidades de razonamiento avanzado.
+El modelo se entrenó con múltiples rondas de SFT usando la librería TRL sobre el dataset AI-MO/NuminaMath-1.5, complementado con aproximadamente un millón de tokens adicionales de datos de razonamiento con formato personalizado. Con 361,8 millones de parámetros y un repositorio de 1,4 GB en safetensors, es lo bastante pequeño para ejecutarse en hardware de consumo, lo que lo hace atractivo para prototipado rápido y despliegue en entornos con recursos limitados.
+
+Su relevancia actual radica en la tendencia hacia modelos pequeños especializados: en lugar de recurrir a un modelo de gran tamaño para tareas de razonamiento matemático, SmolLM2Prover ofrece una alternativa ligera y de licencia Apache 2.0 que puede integrarse en pipelines locales, entornos educativos o como subcomponente de sistemas mayores. No obstante, al tratarse de un modelo de 360M, sus capacidades están acotadas y requieren verificación humana en contextos críticos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Llama-style) |
+| Arquitectura | Transformer decoder-only (SmolLM2) |
 | Parametros totales | 361.821.120 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (se infiere 2048 tokens del modelo base SmolLM2) |
-| Tipos de cuantizacion | GGUF (Q4_K_M, Q5_0, Q6_K, Q8_0) |
-| Idiomas soportados | Ingles |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; se puede cuantizar a GGUF/otros formatos con herramientas externas) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-SMOLM2Prover se basa en la arquitectura SmolLM2, un transformer de tipo Llama con 360 millones de parámetros, optimizado para generación de texto eficiente en dispositivos con recursos limitados. El modelo base, prithivMLmods/SmolLM2-CoT-360M, ya incorporaba capacidades de razonamiento Chain-of-Thought, y SMOLM2Prover refuerza estas habilidades mediante un proceso de fine-tuning iterativo con SFT.
+SmolLM2Prover hereda la arquitectura transformer decoder-only de SmolLM2, un modelo denso de 361,8 millones de parámetros. El ajuste fino se realizó mediante múltiples rondas de Supervised Fine-Tuning (SFT) con el SFTTrainer de TRL (versión 0.22.2), partiendo del checkpoint prithivMLmods/SmolLM2-CoT-360M, que a su vez es un ajuste del SmolLM2 base orientado a chain-of-thought. El entrenamiento utilizó como dataset principal AI-MO/NuminaMath-1.5, un corpus de problemas matemáticos con soluciones paso a paso, complementado con aproximadamente un millón de tokens adicionales de datos de razonamiento con formato personalizado diseñado para elicitar cadenas de pensamiento explícitas.
 
-El entrenamiento se realizó con el framework TRL (Transformer Reinforcement Learning), utilizando el dataset AI-MO/NuminaMath-1.5 como fuente principal, aumentado con aproximadamente un millón de tokens adicionales de datos de razonamiento con formato específico. Este formato está diseñado para elicitar respuestas paso a paso y razonamiento explícito. El proceso de SFT iterativo permitió un refinamiento progresivo de las capacidades de razonamiento del modelo. El modelo también se enmarca en el framework Discrepancy Calculus (DISC), un enfoque teórico-medible para entender y controlar la brecha entre lo que el modelo debería producir y lo que realmente produce, tratando las singularidades del entrenamiento como señales estructurales.
+El proceso iterativo de SFT buscó refinar progresivamente la capacidad del modelo para seguir instrucciones complejas y descomponer problemas matemáticos en pasos verificables. No se menciona el uso de RLHF, DPO ni técnicas de alineación adicionales; el entrenamiento es exclusivamente supervisado. El modelo se entrenó con Transformers 4.56.0, PyTorch 2.8.0+cu126, Datasets 4.0.0 y Tokenizers 0.22.0. La model card menciona que el modelo forma parte del marco "Discrepancy Calculus" (DISC) de Convergent Intelligence LLC, una aproximación teórica de la medida al estudio de las brechas entre la salida esperada y la real, aunque no se detallan innovaciones arquitectónicas concretas derivadas de dicho marco.
 
 ## Capacidades
 
-- Generación de demostraciones matemáticas paso a paso, incluyendo pruebas de cálculo diferencial, álgebra y lógica.
-- Razonamiento Chain-of-Thought explícito para problemas complejos de matemáticas y lógica.
-- Resolución de problemas de matemáticas de nivel universitario, como derivadas, integrales y demostraciones formales.
-- Conversación general y seguimiento de instrucciones complejas, heredado del modelo base SmolLM2-CoT-360M.
-- Generación de contenido con consistencia lógica, útil para explicaciones técnicas y educativas.
-- Capacidad de actuar como componente de "pensamiento" en aplicaciones que requieren razonamiento profundo antes de responder.
-- Soporte de chat multi-turno mediante plantillas de chat estándar de transformers.
+- Generación de texto conversacional en inglés, heredada del modelo base SmolLM2-CoT-360M.
+- Razonamiento matemático paso a paso con énfasis en chain-of-thought (CoT).
+- Generación de demostraciones y explicaciones de matemáticas de nivel superior (cálculo, lógica, álgebra).
+- Seguimiento de instrucciones complejas con formato de chat (chat template aplicable vía tokenizer).
+- Resolución de problemas que requieren consistencia lógica y descomposición en pasos.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte explícito de agentes o multi-step reasoning más allá del CoT interno.
+- Capacidades multilingües limitadas al inglés según la etiqueta de idioma del repositorio.
+- No se documentan capacidades de visión, audio ni modo "thinking" separado.
 
 ## Casos de uso
 
-- Herramientas educativas para matemáticas avanzadas: el modelo puede guiar a estudiantes universitarios a través de demostraciones paso a paso, explicando cada paso del razonamiento, gracias a su entrenamiento en NuminaMath-1.5 y su formato de CoT.
-- Asistente de verificación de pruebas: los investigadores pueden usar el modelo para generar borradores de demostraciones que luego revisan y verifican, acelerando el proceso de escritura matemática formal.
-- Tutor automático de cálculo y álgebra: su tamaño compacto permite ejecutarlo en portátiles, ofreciendo explicaciones interactivas de problemas de derivadas, integrales y límites a estudiantes.
-- Componente de razonamiento en agentes conversacionales: puede integrarse como módulo de "pensamiento" que procesa problemas lógicos antes de que un modelo más grande genere la respuesta final.
-- Generación de ejercicios matemáticos con soluciones detalladas: los creadores de contenido educativo pueden generar problemas con soluciones paso a paso para plataformas de aprendizaje.
-- Chatbot de soporte técnico con capacidad de razonamiento: su naturaleza conversacional permite desplegarlo como asistente que no solo responde, sino que explica el razonamiento detrás de sus respuestas, útil en dominios técnicos.
-- Prototipado de aplicaciones de razonamiento en edge devices: al ser un modelo de 360M parámetros, puede desplegarse en dispositivos con poca VRAM, como Raspberry Pi o smartphones, para aplicaciones offline de ayuda matemática.
+- Asistente educativo de matemáticas: el modelo puede recibir un problema de cálculo o lógica y generar una demostración paso a paso en inglés, útil en plataformas de aprendizaje que necesitan explicaciones detalladas y no solo la respuesta final. Su tamaño reducido permite desplegarlo en servidores modestos o incluso en local.
+- Generación automatizada de demostraciones para revisión humana: en flujos de trabajo de investigación o docencia, el modelo puede producir borradores de demostraciones que un experto revisa y corrige, acelerando la creación de material didáctico o la verificación de ejercicios.
+- Componente de razonamiento en pipelines mayores: dado su bajo coste computacional, puede actuar como submódulo "thinking" que genera cadenas de razonamiento para un sistema posterior de mayor tamaño o para un verificador simbólico.
+- Prototipado rápido de aplicaciones de razonamiento matemático: con 361,8M de parámetros y pesos en safetensors de 1,4 GB, se puede cargar en una GPU de consumo para experimentar con prompts, formatos de chat y estrategias de CoT antes de escalar a modelos mayores.
+- Chatbot especializado en lógica y matemáticas: integrado mediante la pipeline de transformers, puede gestionar conversaciones multi-turno en inglés sobre temas matemáticos, manteniendo el formato de chat y generando respuestas con pasos intermedios.
+- Generación de contenido educativo con consistencia lógica: el modelo puede redactar explicaciones y ejercicios resueltos para cursos introductorios de cálculo o lógica, siempre que un humano valide la corrección de los pasos generados.
+- Filtrado y clasificación de soluciones matemáticas: puede utilizarse para generar razonamientos que ayuden a etiquetar o comparar soluciones candidatas en un corpus, aunque su fiabilidad en dominios novedosos debe evaluarse empíricamente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no reporta métricas como MMLU, HumanEval o GSM8K en su model card.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 700 MB en FP16 (361M parámetros × 2 bytes). Con cuantización GGUF Q4_K_M, el tamaño se reduce a unos 258 MB, permitiendo ejecución en CPU con ~2-3 GB de RAM.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 3050, o incluso integradas con suficiente memoria compartida.
-- Cabe en GPUs de consumo: sí, es uno de los puntos fuertes del modelo. Puede ejecutarse en GPUs de gama baja y en CPU pura con llama.cpp.
-- Opciones de despliegue: transformers con device_map="auto", llama.cpp para CPU, Ollama (si se convierte a GGUF), vLLM para inferencia de alto rendimiento en servidores, y FriendliAI para endpoints gestionados.
-- Latencia estimada: en CPU moderna, generación de ~10-20 tokens/segundo con cuantización Q4_K_M. En GPU de gama media, ~50-100 tokens/segundo.
+- VRAM estimada para inferencia en bfloat16/float16: aproximadamente 0,7-0,8 GB solo para los pesos (361,8M de parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, menos de 2 GB para contextos moderados.
+- En cuantización de 8 bits: alrededor de 0,4 GB para los pesos; en 4 bits: alrededor de 0,2 GB, aunque el autor no documenta cuantizaciones oficiales.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; cabe en RTX 3060, RTX 4060, RTX 4090, A100, H100 y prácticamente cualquier GPU moderna de consumo.
+- También puede ejecutarse en CPU para inferencia, aunque con mayor latencia; el tamaño del repositorio (1,4 GB) es manejable en memoria RAM.
+- Opciones de despliegue: transformers (pipeline y AutoModelForCausalLM), text-generation-inference (etiqueta endpoints_compatible), y potencialmente llama.cpp/Ollama si se generan pesos GGUF con herramientas externas (no documentado por el autor).
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera un throughput alto en GPU de consumo, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia |
-|---|---|---|---|---|
-| SMOLM2Prover | 361M | 2048 (inferido) | Razonamiento matematico, pruebas, CoT | Apache 2.0 |
-| SmolLM2-360M (base) | 360M | 2048 | Generacion de texto general | Apache 2.0 |
-| Qwen2.5-0.5B-Instruct | 494M | 32768 | Instrucciones generales, chat | Apache 2.0 |
-| TinyLlama-1.1B | 1.1B | 2048 | Generacion general, instrucciones | Apache 2.0 |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| SmolLM2Prover | 361,8M | no disponible | apache-2.0 | Hugging Face | Ajuste SFT especializado en CoT matemático |
+| prithivMLmods/SmolLM2-CoT-360M (base) | ~360M | no disponible | no disponible en la información | Hugging Face | Modelo base del que deriva; orientado a CoT |
+| SmolLM2-360M (Hugging Face) | 362M | 8.192 tokens (según documentación pública de SmolLM2) | apache-2.0 | Hugging Face | Modelo generalista de la familia SmolLM2 |
+| Qwen2.5-Math-1.5B | 1.500M | 32.768 tokens (según documentación pública) | apache-2.0 | Hugging Face | Especializado en matemáticas, mayor tamaño y contexto |
 
-SMOLM2Prover se diferencia de alternativas como Qwen2.5-0.5B por su especialización explícita en matemáticas y demostraciones, mientras que Qwen ofrece mayor contexto y versatilidad general. TinyLlama, aunque más grande, no tiene la misma especialización en razonamiento matemático formal. La ventaja principal de SMOLM2Prover es su tamaño reducido combinado con capacidades de razonamiento avanzado.
+Nota: los datos de contexto de SmolLM2 y Qwen2.5-Math-1.5B provienen de documentación pública general y no de la información proporcionada en esta ficha; se incluyen solo como referencia comparativa. Para SmolLM2Prover y su modelo base, la longitud de contexto no está disponible en la información suministrada.
 
 ## Limitaciones y advertencias
 
-- Precisión matemática: el modelo puede cometer errores o "alucinar" pasos incorrectos en demostraciones complejas. Todo output debe ser verificado por un experto humano antes de su uso en aplicaciones críticas.
-- Rendimiento limitado a dominios similares al entrenamiento: su precisión es más fiable en problemas parecidos a los de NuminaMath-1.5; en dominios novedosos o esotéricos, su rendimiento debe evaluarse con cuidado.
-- Sesgos heredados: el modelo hereda los sesgos presentes en el modelo base (SmolLM2-CoT-360M) y en los datasets de entrenamiento, lo que puede manifestarse en respuestas con estereotipos o perspectivas limitadas.
-- Idioma limitado: solo soporta inglés, lo que restringe su uso en aplicaciones multilingües.
-- Contexto corto: la ventana de contexto probable de 2048 tokens limita la capacidad de manejar documentos largos o conversaciones extensas.
-- Sin soporte de tool calling ni funciones externas: el modelo no está entrenado para interactuar con APIs o herramientas, lo que limita su uso en pipelines de agentes complejos.
+- Precisión matemática limitada: el propio autor advierte que el modelo puede cometer errores o "alucinar" pasos incorrectos en demostraciones complejas; toda salida debe ser verificada por un experto humano en aplicaciones críticas.
+- Rendimiento dependiente del dominio: la fiabilidad es mayor en problemas similares a los del dataset de entrenamiento (NuminaMath-1.5); en dominios novedosos o esotéricos la precisión debe evaluarse cuidadosamente.
+- Sesgos heredados: el modelo hereda los sesgos del modelo base SmolLM2-CoT-360M y de los datasets de entrenamiento.
+- Idioma: solo se declara soporte de inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Tamaño reducido: con 361,8M de parámetros, la capacidad de razonamiento profundo y de generalización es inherentemente menor que la de modelos de varios miles de millones de parámetros; no es adecuado para tareas que exijan razonamiento matemático de alto nivel sin supervisión.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías y recomienda verificación humana; conviene revisar las condiciones de los datasets de entrenamiento (AI-MO/NuminaMath-1.5) por si imponen restricciones adicionales.
+- Sin benchmarks publicados: no hay métricas objetivas de rendimiento (MMLU, GSM8K, HumanEval, etc.) en la información disponible, lo que dificulta la comparación rigurosa con alternativas.
+- Contexto no documentado: se desconoce la longitud máxima de contexto soportada, lo que limita la planificación de despliegues con entradas largas.
+- Formato de chat requerido: el modelo espera el chat template de SmolLM2; usarlo sin el formato adecuado puede degradar la calidad de las respuestas.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/reaperdoesntknow/SMOLM2Prover)
-- [Versión GGUF cuantizada](https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF)
-- [Modelo base: prithivMLmods/SmolLM2-CoT-360M](https://huggingface.co/prithivMLmods/SmolLM2-CoT-360M)
-- [Dataset de entrenamiento: AI-MO/NuminaMath-1.5](https://huggingface.co/datasets/AI-MO/NuminaMath-1.5)
-- [Endpoint de inferencia en FriendliAI](https://friendli.ai/models/reaperdoesntknow/SMOLM2Prover)
-- [Perfil del autor en Hugging Face](https://huggingface.co/reaperdoesntknow)
+- Hugging Face: https://huggingface.co/reaperdoesntknow/SMOLM2Prover
+- Modelo base: https://huggingface.co/prithivMLmods/SmolLM2-CoT-360M
+- Dataset de entrenamiento: https://huggingface.co/datasets/AI-MO/NuminaMath-1.5
+- Librería TRL: https://github.com/huggingface/trl
+- Perfil del autor (Convergent Intelligence LLC): https://huggingface.co/reaperdoesntknow

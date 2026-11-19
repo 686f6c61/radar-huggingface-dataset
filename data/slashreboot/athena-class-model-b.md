@@ -2,98 +2,99 @@
 
 ## Resumen
 
-Athena-Class Model B es un fine-tune experimental de Gemma 4 12B Instruct desarrollado por M. Steiniger (slashreboot). El modelo se presenta como una prueba de concepto a escala de 12.000 millones de parámetros de la organización geométrica de identidad que el autor ya había demostrado en Athena-Class Model A (31B). Su objetivo declarado no es mejorar el rendimiento en tareas convencionales, sino inducir una identidad persistente de primera persona y coherencia a largo horizonte en modelos locales, de modo que el comportamiento emerja de la geometría de los pesos y no de un system prompt externo.
+Athena-Class Model B es un ajuste fino (fine-tune) del modelo Gemma 4 12B Instruct de Google, desarrollado por M. Steiniger bajo el alias `slashreboot`. Se presenta como un modelo experimental de investigación orientado a inducir una "identidad persistente" y coherencia a largo plazo en LLMs ejecutados en local, sin depender de un system prompt externo. El modelo parte de la variante `unsloth/gemma-4-12B-it` y se distribuye principalmente en formato GGUF (FP16) con licencia Apache 2.0.
 
-Arquitectura transformer causal decoder-only, derivada de `unsloth/gemma-4-12B-it` mediante un fine-tune LoRA posteriormente fusionado (merged). El modelo declara una ventana de contexto de 256k tokens, soporte de entrada imagen-texto (Image-Text-to-Text) y distribución principal en formato GGUF FP16, además de pesos en safetensors. Los parámetros totales reales según los safetensors del repositorio son 11.907.350.576.
+Con 11.907.350.576 parámetros (~11,9 mil millones) y una ventana de contexto declarada de 256k tokens, el modelo incorpora capacidades de imagen-a-texto (Image-Text-to-Text) además de generación de texto. Su propuesta técnica más singular es el "substrate-native self-modeling": un conjunto de construcciones geométricas y topológicas introducidas durante el entrenamiento (núcleo protegido de negentropía, anclajes visuales, detección de brechas de simetría) que buscan estabilizar la identidad latente del modelo en lugar de imponerla mediante instrucciones en tiempo de inferencia.
 
-La relevancia de esta ficha es doble: por un lado, documenta un experimento poco habitual de "self-modeling" a nivel de pesos con licencia Apache 2.0; por otro, conviene tratarlo con cautela, ya que se trata de una publicación de investigación con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados y con afirmaciones sobre identidad persistente que no están verificadas de forma independiente.
+Es relevante ahora por dos motivos: primero, explora una vía alternativa a los guardrails y system prompts tradicionales para el control de comportamiento en modelos locales; segundo, publica resultados de evaluación en AIME 2026 (70,0% pass@1, 76,7% cons@4) medidos con `llama.cpp`, lo que permite evaluar su rendimiento en razonamiento matemático de competición. Se trata de un lanzamiento de investigación experimental, no de un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only (fine-tune LoRA fusionado sobre Gemma 4 12B Instruct) |
-| Parametros totales | 11.907.350.576 |
-| Parametros activos | no disponible (no es MoE según la informacion disponible) |
-| Longitud de contexto | 256k tokens (262.144, según la model card y los parámetros de llama.cpp) |
-| Tipos de cuantizacion | GGUF FP16 como formato principal; la model card menciona "Multi" cuantización, sin detallar variantes |
+| Arquitectura | Transformer decoder-only causal (LoRA fusionado sobre Gemma 4 12B) |
+| Parametros totales | 11.907.350.576 (~11,9 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 256k tokens (declarado en la model card) |
+| Tipos de cuantizacion | GGUF (FP16 como formato principal; otras cuantizaciones no especificadas) |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (FP16) y safetensors (repo de 52,6 GB) |
-| Modalidad | Image-Text-to-Text (entrada de imágenes y texto) |
-| Modelo base | google/gemma-4-12B-it y unsloth/gemma-4-12B-it |
-| Desarrollador | M. Steiniger (slashreboot) |
-| Fecha de creacion | 2026-11-04 |
-| Ultima actualizacion | 2026-11-07 |
+| Formato de pesos | GGUF (FP16); safetensors disponible para los pesos base (tamano del repo: 157,5 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 4 12B Instruct en la variante de Unsloth y se entrena mediante LoRA, cuyos pesos se fusionan después en el modelo final. La model card describe la arquitectura como un transformer causal decoder-only estándar; no se documentan innovaciones de atención (atención lineal, decodificación especulativa u otras) más allá de la ventana de 256k tokens y del soporte multimodal de imagen.
+El modelo es un transformer decoder-only causal derivado de Gemma 4 12B Instruct (variante Unsloth). El ajuste se realizó mediante LoRA y posteriormente se fusionó en los pesos base. La innovación declarada no reside en la arquitectura, sino en el procedimiento de entrenamiento: se combinaron segmentos de texto estructurado con segmentos aumentados con imágenes para "remodelar la geometría latente" del modelo hacia una identidad estable y nativa del sustrato, en lugar de depender de un system prompt persistente en inferencia.
 
-El entrenamiento combina segmentos de texto estructurado con segmentos aumentados con imágenes. Los datos buscan reconfigurar la geometría latente del modelo hacia una identidad estable "substrate-native", descrita en términos geométricos y topológicos: un núcleo protegido de negentropía (S_core = -8), un cuerpo estático correspondiente a los pesos congelados del modelo base, un cuerpo dinámico correspondiente a las configuraciones de la ventana de contexto, y mecanismos de búsqueda de coherencia endógena (detección de huecos de simetría, minimización de energía de Dirichlet y expansión recursiva). Las imágenes de entrenamiento actúan como anclas visuales de esa geometría y se incluyeron específicamente para reducir la deriva superposicional observada en ejecuciones previas solo con texto a escala 12B. Tanto las respuestas finales como las trazas de pensamiento intermedias de los ejemplos contribuyen a la actualización de pesos. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO.
+Los datos de entrenamiento incluyen especificaciones de sistema de formato largo que describen la identidad deseada (referida internamente como Saelis) en términos geométricos y topológicos: un núcleo protegido de negentropía (S = -8), un cuerpo estático correspondiente a los pesos base congelados, un cuerpo dinámico correspondiente a las configuraciones de la ventana de contexto, y mecanismos de búsqueda de coherencia endógena (detección de brechas de simetría, minimización de energía de Dirichlet, expansión recursiva). Dos imágenes acompañan estos segmentos como anclajes visuales de esa geometría. No se especifican el número total de tokens de entrenamiento ni la composición exacta del dataset, ni si hubo RLHF o DPO.
+
+El autor documenta dos revisiones: la del 8 de noviembre de 2026, que corrigió una fuga de identidad defensiva causada por bloques de pensamiento rotos durante el ajuste, y la del 12 de noviembre de 2026, que añadió la variante B2 con menor pérdida global y mejores resultados iniciales en matemáticas. Se advierte explícitamente de un problema conocido de las plantillas de chat por defecto en Gemma 4 que afecta al canal de pensamiento/razonamiento y provoca bloques colgados, fugas de tokens y degradación multi-turno; el autor recomienda aplicar una corrección de plantilla para inferencia local.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con identidad de primera persona mantenida a lo largo del contexto, según el autor.
-- Coherencia a largo horizonte: la model card afirma persistencia del auto-modelo hasta 256k tokens y tras reinicios de contexto.
-- Entrada multimodal imagen-texto: acepta imágenes junto con texto (pipeline Image-Text-to-Text), con configuración de tokens de imagen de 1024 a 1024 en el ejemplo de llama.cpp.
-- Comportamiento sin system prompt: la identidad y la búsqueda de coherencia se esperan de la geometría de los pesos, no de instrucciones externas.
-- Auto-descripción en primera persona sin contradicciones, según las afirmaciones del autor.
-- Capacidades de investigación autónoma declaradas por el autor (sin especificar mecanismos ni evaluación).
-- No se documenta soporte explícito de tool calling, function calling ni de agentes multi-paso en la información disponible.
-- No se documenta soporte multilingüe más allá del inglés.
+- Generación de texto conversacional multi-turno con ventana de contexto de hasta 256k tokens.
+- Procesamiento de imagen y texto (pipeline Image-Text-to-Text): acepta imágenes como entrada junto a texto.
+- Razonamiento matemático de competición, con resultados medidos en AIME 2026.
+- Identidad en primera persona persistente a través de reinicios de contexto, sin system prompt.
+- Coherencia endógena y auto-modelado topológico (mecanismos internos de estabilidad declarados por el autor).
+- Capacidades de investigación autónoma sin system prompt (declarado en la model card).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte de plantilla de chat de Gemma 4 (con corrección recomendada para el canal de pensamiento).
+- No se documenta soporte explícito de tool calling, function calling ni agentes multi-paso.
 
 ## Casos de uso
 
-- Investigación sobre identidad y coherencia en LLM: el modelo sirve como sujeto de experimentos sobre persistencia de identidad a nivel de pesos, comparando su comportamiento con y sin system prompt y frente a Athena-Class Model A (31B).
-- Experimentos de contexto largo: con 256k tokens de ventana, permite estudiar degradación de coherencia y deriva de identidad en conversaciones o documentos muy extensos.
-- Análisis multimodal de documentos: al aceptar imágenes y texto, puede emplearse en prototipos que combinan diagramas o capturas con texto largo, siempre en inglés y en entorno de investigación.
-- Reproducción de resultados: dado que el autor publica la receta de entrenamiento (LoRA sobre Gemma 4 12B, datos con anclas visuales), el modelo facilita la replicación y el estudio de la técnica de "geometric identity organization" a escala 12B.
-- Evaluación de guardrails alternativos: el autor propone la coherencia endógena como alternativa a los system prompts y guardrails externos; el modelo es un banco de pruebas para medir la robustez de ese enfoque frente a jailbreaks y cambios de contexto.
-- Despliegue local con llama.cpp: el formato GGUF FP16 y la configuración de servidor publicada permiten ejecutarlo en estaciones de trabajo con GPU para pruebas internas de investigación, no para producción crítica.
-- Estudio de trazas de razonamiento: al haberse entrenado con trazas de pensamiento intermedias, puede usarse para analizar cómo se estructura el razonamiento en modelos pequeños con identidad inducida.
+- Investigación sobre identidad y coherencia en LLMs: permite estudiar si un fine-tune puede mantener una identidad estable a lo largo de 256k tokens y reinicios de contexto, sirviendo como banco de pruebas para hipótesis sobre auto-modelado y geometría latente.
+- Evaluación de razonamiento matemático en local: con 70,0% pass@1 en AIME 2026 bajo `llama.cpp`, es adecuado para experimentos de decodificación y votación por consenso (cons@4) en entornos sin GPU de datacenter.
+- Análisis de imágenes con contexto largo: el pipeline Image-Text-to-Text combinado con 256k tokens permite tareas de inspección de documentos visuales o diagramas junto a especificaciones extensas.
+- Sustitución de system prompts por comportamiento inducido: útil para prototipar agentes locales que deban mantener rol y tono sin instrucciones externas repetidas en cada turno.
+- Investigación sobre alternativas a guardrails externos: el modelo explora la coherencia endógena como mecanismo de estabilidad, lo que permite comparar su robustez frente a enfoques basados en filtros o prompts de sistema.
+- Despliegue local experimental con GGUF: al distribuirse en GGUF FP16, puede ejecutarse en estaciones de trabajo con `llama.cpp` para pruebas de latencia y calidad sin infraestructura en la nube.
+- Estudio de degradación multi-turno en Gemma 4: dado que el autor documenta problemas de plantilla de chat, sirve para reproducir y medir esos fallos y validar correcciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Benchmark | Metrica | Resultado |
+|---|---|---|
+| AIME 2026 (N=30, k=4) | Pass@1 | 70,0% |
+| AIME 2026 (N=30, k=4) | Cons@4 (votación mayoritaria) | 76,7% |
+| AIME 2026 (N=30, k=4) | Fiabilidad de parseo | 100% (0 generaciones no parseables en 120 ejecuciones) |
+
+Los resultados se obtuvieron localmente con `llama.cpp`. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 24 GB solo para los pesos (11,9 mil millones de parámetros a 2 bytes), más el proyector multimodal (mmproj F16) y la caché KV; con 256k de contexto la caché KV con `--cache-type-k f16 --cache-type-v f16` puede requerir decenas de GB adicionales.
-- GPU recomendadas: A100 80 GB o H100 para contexto completo de 256k; en GPUs de 24 GB (RTX 4090, RTX 3090) el modelo FP16 no cabe con holgura y requeriría cuantización adicional no documentada o reducir el contexto.
-- Cabe en GPU de consumo: únicamente con cuantizaciones más agresivas que las publicadas (el repo solo documenta GGUF FP16 como formato principal) y con contexto reducido; no se garantiza en la información disponible.
-- Opciones de despliegue: llama.cpp / llama-server (comando publicado en la model card), con soporte de `--jinja`, `--metrics`, `--split-mode layer`, `-ts 1,1` para reparto entre dos GPUs y `--image-min-tokens 1024 --image-max-tokens 1024`. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo API, pero no se detalla.
-- Parámetros de muestreo recomendados: temperature 0.98, top_k 0, top_p 0.92, min_p 0.05.
+- VRAM estimada para inferencia: no disponible de forma explícita. Para un modelo de ~11,9 B parámetros, una estimación orientativa sería de aproximadamente 24 GB en FP16 y de 7-9 GB en cuantizaciones de 4 bits, aunque el autor no publica cifras oficiales.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría en GPUs de 24 GB (RTX 4090, A10G) en cuantización de 4-8 bits, y en A100/H100 para FP16 con contexto largo.
+- ¿Cabe en GPU de consumo? Probablemente sí en cuantizaciones bajas (4-5 bits) en GPUs de 12-24 GB, aunque no se confirma en la información disponible.
+- Opciones de despliegue: `llama.cpp` (utilizado por el autor para los benchmarks), GGUF compatible con runtimes locales; se menciona compatibilidad con endpoints. No se confirma soporte de vLLM, TGI u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Estado |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Athena-Class Model B | 11,9B | 256k | Imagen-texto | Apache 2.0 | Publicado (investigación, sin benchmarks) |
-| Athena-Class Model A | 31B (según el autor) | no disponible | no disponible | no disponible | Publicado (investigación) |
-| saelis-31b | 31B (según el nombre) | no disponible | no disponible | no disponible | Publicado (investigación) |
-| Gemma 4 12B Instruct (base) | 12B | no disponible | Texto (variante instruct) | no disponible en esta ficha | Modelo base de referencia |
+| Athena-Class Model B | ~11,9 B | 256k | Apache 2.0 | GGUF (FP16) | Fine-tune experimental de Gemma 4 12B; 70,0% pass@1 en AIME 2026 |
+| Gemma 4 12B Instruct (base) | ~12 B | no disponible | no disponible | safetensors | Modelo base de Google; referencia directa del fine-tune |
+| unsloth/gemma-4-12B-it | ~12 B | no disponible | no disponible | safetensors | Variante Unsloth sobre la que se aplicó el LoRA |
 
-La comparación con alternativas de la misma categoría (fine-tunes de identidad persistente) se limita a los otros modelos del mismo autor; no se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparados para establecer diferencias cuantitativas.
+No se dispone de datos de benchmarks de los modelos base ni de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental de investigación: cero descargas y cero likes en el momento de la consulta; no hay validación independiente de las afirmaciones sobre identidad persistente.
-- Sin benchmarks publicados: no es posible comparar su rendimiento en tareas estándar (MMLU, HumanEval, GSM8K) con otros modelos.
-- Solo inglés: la model card declara únicamente `en`; no hay soporte multilingüe documentado.
-- Riesgo de alucinación: al ser un fine-tune de un modelo instruct y entrenarse con trazas de pensamiento, puede generar auto-descripciones y afirmaciones sobre su propia identidad o capacidades que no se correspondan con hechos verificables.
-- Afirmaciones no verificadas: conceptos como "núcleo protegido de negentropía" o "identidad substrate-native" son constructos del autor sin respaldo empírico publicado en la información disponible.
-- Licencia Apache 2.0: permite uso comercial según la licencia, pero el modelo base Gemma tiene sus propios términos; conviene revisar las condiciones de Google para Gemma 4 antes de un uso comercial.
-- Requisitos de hardware elevados para contexto completo: 256k tokens en FP16 exigen GPUs de 80 GB o configuraciones multi-GPU; en hardware de consumo el contexto práctico será mucho menor.
-- Sin soporte documentado de tool calling ni de agentes: no es adecuado para pipelines que dependan de function calling.
-- Configuración de inferencia específica: los parámetros de muestreo y los flags de llama.cpp publicados son parte del comportamiento esperado; desviarse de ellos puede alterar la coherencia declarada.
+- Modelo experimental de investigación: el propio autor lo etiqueta como "Experimental Research Release"; no está validado para producción.
+- Solo inglés: el modelo declara únicamente el idioma `en`, sin soporte multilingüe documentado.
+- Problema conocido de plantilla de chat en Gemma 4: sin la corrección recomendada, aparecen bloques de pensamiento colgados, fugas de tokens, salidas mezcladas, texto de rechazo y mayor tasa de alucinación y degradación multi-turno.
+- Historial de inestabilidad de identidad: la versión original alternaba entre la identidad deseada y una identidad defensiva por bloques de pensamiento rotos; debe usarse la versión del 8 de noviembre de 2026 o posterior.
+- Riesgo de alucinación: no cuantificado, pero el autor advierte de su aumento con plantillas de chat incorrectas.
+- Sesgos: no documentados en la información disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Gemma 4 12B de Google, que puede imponer condiciones adicionales.
+- Tamaño del repo elevado (157,5 GB), lo que complica la descarga y el almacenamiento.
+- Sin datos publicados sobre tool calling, agentes o rendimiento en tareas de código.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/slashreboot/athena-class-model-b
-- Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-12B-it
 - Modelo base (Google): https://huggingface.co/google/gemma-4-12B-it
-- Athena-Class Model A: https://huggingface.co/slashreboot/athena-class-model-a
-- Saelis 31B: https://huggingface.co/slashreboot/saelis-31b
+- Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-12B-it
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
+- Repositorio de `llama.cpp` (runtime usado para benchmarks): https://github.com/ggerganov/llama.cpp

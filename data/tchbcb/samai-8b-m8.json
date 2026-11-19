@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "What is PikPak | PikPak - Private Cloud, Video Saver",
-      "url": "https://mypikpak.com/en-US",
-      "snippet": "PikPak is a private and safe cloud drive that can save links from Torrent / Magnet / Social Media with 20X faster download and …"
-    },
-    {
-      "title": "pikpakcli/README.md at master · 52funny/pikpakcli · GitHub",
-      "url": "https://github.com/52funny/pikpakcli/blob/master/README.md",
-      "snippet": "pikpak command line tool. Including download, upload, share and so on. - pikpakcli/README.md at master · 52funny/pikpakcli"
-    },
-    {
-      "title": "Ls Island Shared by 1f5u**oi86 | PikPak",
-      "url": "https://mypikpak.com/s/VNmE_3uBKqGdm1RGlV79zpEoo1/VNjPhsEs6Jw___DY9259tm3oo1",
-      "snippet": "Ls Island 03_Midsummer 02_In The Middle 01_My Childhood available for high-speed download on PikPak and streaming across …"
-    },
-    {
-      "title": "Shared by ab**23 - PikPak",
-      "url": "https://mypikpak.com/s/VNpipE5sZZIW0G4LS_-P4eyuo1",
-      "snippet": "Access a shared file from PikPak, a private cloud and video saver service."
-    },
-    {
-      "title": "IPZZ-257-C Shared by My**ak | PikPak",
-      "url": "https://mypikpak.com/s/VO22p-Ls1CgEElGwV7_1JIv9o1/VO22owK_gb1WRvkTc-qCgabSo1",
-      "snippet": "IPZZ-257-C IPZZ-257-C.mp4 available for high-speed download on PikPak and streaming across multiple devices."
-    }
-  ]
+  "sources": []
 }

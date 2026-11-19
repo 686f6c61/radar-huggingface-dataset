@@ -2,107 +2,108 @@
 
 ## Resumen
 
-MiniCPM-V 4.6 es un modelo multimodal (vision-lenguaje) desarrollado por OpenBMB, un laboratorio con sede en China fundado en 2022 por el laboratorio de PLN de la Universidad de Tsinghua y ModelBest Inc. Este repositorio concreto aloja la versión cuantizada AWQ (W4A16, AutoAWQ) del modelo original MiniCPM-V 4.6, que reduce los pesos BF16 originales a 4 bits para facilitar el despliegue en dispositivos con recursos limitados.
+MiniCPM-V 4.6 AWQ es la variante cuantizada en 4 bits (W4A16, AutoAWQ) del modelo multimodal MiniCPM-V 4.6, desarrollado por OpenBMB. Se trata de un modelo de imagen-a-texto orientado a despliegue en el borde ("edge"), disenado especificamente para inferencia en dispositivos moviles (iOS, Android y HarmonyOS) y en GPUs de consumo. El modelo combina un codificador visual SigLIP2-400M con un LLM Qwen3.5-0.8B, lo que da un total de aproximadamente 1.300 millones de parametros segun los pesos en safetensors del repositorio.
 
-El modelo combina el encoder visual SigLIP2-400M con el LLM Qwen3.5-0.8B, sumando 1.300 millones de parámetros en total. Está diseñado específicamente para despliegue en el borde (edge deployment), con soporte para iOS, Android y HarmonyOS, y es capaz de procesar imágenes individuales, múltiples imágenes y vídeo. Su arquitectura, basada en técnicas de LLaVA-UHD v4, reduce los FLOPs de codificación visual en más de un 50% e introduce compresión mixta de tokens visuales con ratios 4x y 16x.
+La relevancia de esta version AWQ radica en que reduce el peso del repositorio a 1,9 GB, facilitando su ejecucion en hardware con recursos limitados sin renunciar a las capacidades de comprension de imagen unica, multiples imagenes y video que hereda de la familia MiniCPM-V. Incorpora compresion mixta de tokens visuales 4x/16x, lo que permite intercambiar precision por velocidad de forma flexible.
 
-La relevancia de este modelo radica en su equilibrio entre capacidad y eficiencia: consigue una puntuación de 13 en el índice Artificial Analysis Intelligence, superando a modelos más grandes como Ministral 3 3B (11) y a Qwen3.5-0.8B (10), con un coste de tokens hasta 43 veces menor que Qwen3.5-0.8B-Thinking. Su licencia Apache 2.0 permite uso comercial sin restricciones.
+Frente a alternativas de mayor tamano, el modelo declara una puntuacion de 13 en el Artificial Analysis Intelligence Index, superando a Qwen3.5-0.8B (10) y a Ministral 3 3B (11), con un coste de tokens notablemente inferior. La licencia Apache 2.0 y la disponibilidad de variantes GGUF, BNB, AWQ y GPTQ lo convierten en una opcion practica para prototipado y despliegue en produccion ligera.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SigLIP2-400M (encoder visual) + Qwen3.5-0.8B (LLM) |
-| Parametros totales | 1.300.428.016 (1,3B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | AWQ W4A16 (4 bits); el modelo base BF16 tambien ofrece variantes GGUF, BNB y GPTQ |
-| Idiomas soportados | no disponible |
+| Arquitectura | Multimodal: codificador visual SigLIP2-400M + LLM Qwen3.5-0.8B (basada en LLaVA-UHD v4) |
+| Parametros totales | 1.300.428.016 (~1,3 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | AWQ 4 bits (W4A16, AutoAWQ); el modelo base ofrece GGUF, BNB, AWQ y GPTQ |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (AWQ) |
+| Formato de pesos | safetensors (repo de 1,9 GB); variantes GGUF disponibles en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM-V 4.6 combina el encoder visual SigLIP2-400M con el LLM Qwen3.5-0.8B, alcanzando un total de 1.300 millones de parámetros. La arquitectura se basa en técnicas de LLaVA-UHD v4, que reducen los FLOPs de codificación visual en más de un 50% y permiten un throughput de tokens aproximadamente 1,5 veces superior al de Qwen3.5-0.8B. El modelo incorpora compresión mixta de tokens visuales con ratios 4x y 16x, lo que permite alternar entre precisión y velocidad según las necesidades de la tarea.
+MiniCPM-V 4.6 sigue un diseno multimodal tipo LLaVA: un codificador visual SigLIP2-400M proyecta las representaciones de imagen hacia un LLM Qwen3.5-0.8B que genera la respuesta textual. La innovacion principal es la tecnica de LLaVA-UHD v4, que reduce los FLOPs de codificacion visual en mas del 50 % y habilita una compresion mixta de tokens visuales con tasas 4x y 16x, permitiendo ajustar el equilibrio entre precision y velocidad en tiempo de inferencia. El modelo declara un throughput de tokens aproximadamente 1,5x superior al de Qwen3.5-0.8B.
 
-Esta versión AWQ (W4A16) es una cuantización del modelo original BF16 realizada con AutoAWQ. La cuantización AWQ preserva las activaciones en 16 bits mientras cuantiza los pesos a 4 bits, lo que mantiene la calidad del modelo con una reducción significativa del tamaño (1,9 GB en el repositorio) y un menor consumo de memoria en inferencia. El modelo base soporta fine-tuning con los ecosistemas SWIFT y LLaMA-Factory en GPUs de consumo. Los datos de entrenamiento (composición del dataset, número de tokens, técnicas de alineación) no están detallados en la información proporcionada.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card menciona variantes "Instruct" y "Thinking", lo que sugiere un modo de razonamiento extendido, pero no se especifican los procedimientos de alineacion empleados. Esta version AWQ es una cuantizacion post-entrenamiento del modelo base en BF16, por lo que hereda sus caracteristicas de entrenamiento sin reentrenamiento adicional.
 
 ## Capacidades
 
-- Comprensión de imágenes individuales y múltiples, incluyendo descripción, respuesta a preguntas visuales y razonamiento sobre contenido visual.
-- Comprensión de vídeo, con decodificación integrada a través de torchcodec para entrada de vídeo directa.
-- Generación de texto con razonamiento multimodal integrado.
-- Compresión visual adaptativa con ratios 4x y 16x configurables para equilibrar precisión y velocidad.
-- Despliegue en dispositivos móviles (iOS, Android y HarmonyOS) con código de adaptación open-source.
-- Compatible con frameworks de inferencia estándar: vLLM, SGLang, llama.cpp y Ollama.
-- Fine-tuning en GPUs de consumo mediante SWIFT y LLaMA-Factory.
+- Comprension de imagen unica, multiples imagenes y video (image-text-to-text).
+- Generacion de texto y respuestas conversacionales multi-turno.
+- Razonamiento visual: la model card reporta resultados en OpenCompass, RefCOCO, HallusionBench, MUIRBench y OCRBench a nivel de Qwen3.5 2B.
+- OCR y comprension de documentos, con ejemplos de demostracion sobre manuscritos y tickets.
+- Modo "Thinking" (razonamiento extendido) disponible en la variante correspondiente del modelo base.
+- Compresion configurable de tokens visuales (4x/16x) para ajustar latencia y precision.
+- Despliegue en dispositivos moviles iOS, Android y HarmonyOS con codigo de adaptacion abierto.
+- Soporte de ecosistemas de inferencia (vLLM, SGLang, llama.cpp, Ollama) y de fine-tuning (SWIFT, LLaMA-Factory).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente visual en dispositivos móviles: el modelo puede desplegarse directamente en iOS, Android o HarmonyOS para proporcionar asistencia en tiempo real sobre el entorno del usuario, como lectura de tickets, reconocimiento de objetos o descripción de escenas, sin necesidad de conexión a servidores externos.
-- Análisis de documentos y capturas de pantalla: gracias a su capacidad de comprensión de imágenes, puede extraer información de documentos escaneados, facturas, tickets y capturas de pantalla de aplicaciones en pipelines automatizados.
-- Moderación de contenido visual: el modelo puede clasificar y describir imágenes en pipelines de moderación, identificando contenido inapropiado o sensible en plataformas de contenido generado por usuarios.
-- Accesibilidad para personas con discapacidad visual: su tamaño reducido permite integrarlo en aplicaciones de asistencia que describen el entorno, leen textos o identifican objetos en tiempo real desde el dispositivo del usuario.
-- Automatización de soporte técnico con evidencia visual: el modelo puede analizar capturas de pantalla o fotos enviadas por usuarios en sistemas de tickets para diagnosticar problemas técnicos y generar respuestas contextualizadas.
-- Análisis de vídeo en tiempo real para seguridad o retail: su capacidad de comprensión de vídeo permite procesar secuencias para contar personas, detectar eventos o analizar comportamiento en entornos comerciales, con despliegue en hardware de bajo coste.
-- Generación de descripciones accesibles (alt text) a escala: el modelo puede generar automáticamente descripciones alternativas para imágenes en sitios web o aplicaciones, mejorando la accesibilidad con un coste computacional mínimo.
+- Asistencia visual en el movil: el modelo puede ejecutarse en iOS, Android y HarmonyOS para describir imagenes capturadas por la camara, leer manuscritos o interpretar tickets, gracias a su tamano de ~1,3 B y al peso de 1,9 GB en AWQ.
+- Digitalizacion de documentos y OCR en el dispositivo: con resultados declarados en OCRBench a nivel de Qwen3.5 2B, es adecuado para extraer texto de facturas, formularios o apuntes sin enviar datos a la nube.
+- Accesibilidad para personas con discapacidad visual: descripcion de escenas en tiempo real desde la camara del telefono, con la ventaja de que la inferencia local evita latencia de red y preserva la privacidad.
+- Analisis de video ligero: la capacidad de comprension de video permite resumir clips cortos o identificar eventos en grabaciones, con la compresion 16x para reducir el coste de tokens visuales.
+- Prototipado rapido de aplicaciones multimodales: la licencia Apache 2.0 y la compatibilidad con vLLM, SGLang, llama.cpp y Ollama permiten montar un servicio de imagen-a-texto en una GPU de consumo en pocos pasos.
+- Fine-tuning de dominio en GPU de consumo: el modelo base es adaptable con SWIFT y LLaMA-Factory, de modo que se puede especializar en sectores como retail, salud o industria con recursos modestos.
+- Asistencia en entornos sin conectividad: al caber en dispositivos de borde, resulta util en escenarios de campo, inspeccion industrial o zonas con red limitada.
 
 ## Benchmarks y rendimiento
 
-Los datos de benchmarks disponibles en la información proporcionada son los siguientes:
+La model card proporciona resultados agregados pero no una tabla numerica detallada por benchmark en el texto disponible. Los datos declarados son:
 
-| Benchmark | MiniCPM-V 4.6 | Qwen3.5-0.8B | Qwen3.5-0.8B-Thinking | Ministral 3 3B |
+| Metrica | MiniCPM-V 4.6 | Qwen3.5-0.8B | Qwen3.5-0.8B-Thinking | Ministral 3 3B |
 |---|---|---|---|---|
 | Artificial Analysis Intelligence Index | 13 | 10 | 11 | 11 |
+| Coste relativo de tokens | 1x (referencia) | 19x mas | 43x mas | No disponible |
+| Throughput de tokens | ~1,5x vs Qwen3.5-0.8B | Referencia | No disponible | No disponible |
 
-Además, según la model card:
-
-- Supera a Qwen3.5-0.8B en la mayoría de tareas de comprensión visión-lenguaje.
-- Alcanza el nivel de Qwen3.5-2B en benchmarks como OpenCompass, RefCOCO, HallusionBench, MUIRBench y OCRBench.
-- Supera a Gemma4-E2B-it en rendimiento general con menos parámetros.
-- Consigue un throughput de tokens aproximadamente 1,5 veces superior al de Qwen3.5-0.8B.
-- Reduce el coste de tokens en 19x frente a Qwen3.5-0.8B y 43x frente a Qwen3.5-0.8B-Thinking para la misma puntuación en el índice Artificial Analysis.
-
-Los valores numéricos detallados de los benchmarks individuales (MMLU, HumanEval, GSM8K, etc.) se presentan en gráficos dentro de la model card y no están disponibles en formato textual.
+La model card indica que MiniCPM-V 4.6 supera a Qwen3.5-0.8B en la mayoria de tareas de comprension vision-lenguaje y alcanza el nivel de Qwen3.5 2B en OpenCompass, RefCOCO, HallusionBench, MUIRBench y OCRBench. No se han publicado en la informacion disponible los valores numericos concretos de MMLU, HumanEval, GSM8K ni de cada benchmark visual; las graficas completas estan enlazadas en el repositorio de GitHub.
 
 ## Requisitos de hardware
 
-- Tamaño del repositorio: 1,9 GB en cuantización AWQ 4 bits.
-- VRAM estimada: el dato exacto no está disponible en la información proporcionada; al tratarse de un modelo de 1,3B parámetros en AWQ 4 bits, el requisito es reducido y compatible con GPUs de consumo.
-- GPU recomendadas: al estar diseñado para despliegue en el borde, puede ejecutarse en GPUs de consumo de gama media y en dispositivos móviles sin GPU dedicada.
-- Compatible con dispositivos móviles: iOS, Android y HarmonyOS, con código de adaptación open-source.
-- Frameworks de despliegue soportados: vLLM, SGLang, llama.cpp, Ollama y Transformers (version >= 5.7.0).
-- Fine-tuning posible en GPUs de consumo mediante SWIFT y LLaMA-Factory.
-- El modelo base requiere torchcodec para decodificación de vídeo, con posibles incompatibilidades con entornos CUDA 12.x.
+- VRAM estimada para inferencia: el repositorio AWQ ocupa 1,9 GB, por lo que la inferencia en 4 bits requiere aproximadamente 2-3 GB de VRAM, incluyendo overhead de activaciones y cache KV (estimacion, no confirmada en la model card).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para la variante AWQ; el modelo base en BF16 requiere del orden de 3-4 GB. Para alto rendimiento, A100 o H100 con vLLM o SGLang.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares; tambien en GPUs integradas de moviles mediante las adaptaciones oficiales para iOS, Android y HarmonyOS.
+- Opciones de despliegue: Transformers (>=5.7.0 con torchvision y torchcodec), vLLM, SGLang, llama.cpp, Ollama; fine-tuning con SWIFT y LLaMA-Factory.
+- Latencia y throughput: la model card declara ~1,5x mas throughput de tokens que Qwen3.5-0.8B y una reduccion de mas del 50 % en FLOPs de codificacion visual; los valores absolutos de TTFT y throughput en alta concurrencia estan en las graficas del repositorio, no en el texto disponible.
+- Nota de compatibilidad: torchcodec puede fallar con CUDA 12.x; se recomienda sustituirlo por PyAV.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Indice Artificial Analysis | Licencia | Cuantizacion disponible | Despliegue movil |
+| Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.6 (AWQ) | 1,3B | 13 | Apache 2.0 | AWQ, GGUF, BNB, GPTQ | Si (iOS, Android, HarmonyOS) |
-| Qwen3.5-0.8B | 0,8B | 10 | no disponible | no disponible | no disponible |
-| Ministral 3 3B | 3B | 11 | no disponible | no disponible | no disponible |
-| Gemma4-E2B-it | ~2B | no disponible | no disponible | no disponible | no disponible |
+| MiniCPM-V 4.6 AWQ | ~1,3 B | No disponible | AA Intelligence Index 13 | Apache 2.0 | Hugging Face, formatos AWQ/GGUF/BNB/GPTQ |
+| Qwen3.5-0.8B | 0,8 B | No disponible | AA Intelligence Index 10 | No disponible en la informacion | No disponible en la informacion |
+| Qwen3.5-0.8B-Thinking | 0,8 B | No disponible | AA Intelligence Index 11 | No disponible en la informacion | No disponible en la informacion |
+| Ministral 3 3B | 3 B | No disponible | AA Intelligence Index 11 | No disponible en la informacion | No disponible en la informacion |
 
-Nota: los datos de licencia, cuantización y despliegue móvil de los modelos comparados no están disponibles en la información proporcionada.
+MiniCPM-V 4.6 AWQ ofrece la mejor relacion entre capacidad declarada y coste de tokens de la comparativa, con la ventaja adicional de ser multimodal y de tener licencia Apache 2.0. Los datos de contexto y licencia de los modelos comparados no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los idiomas soportados no están especificados en la información proporcionada; se recomienda verificar la cobertura lingüística antes de desplegar en producción.
-- La longitud de contexto no está documentada en la información disponible.
-- Los datos de entrenamiento (composición del dataset, número de tokens, técnicas de alineación como RLHF o DPO) no están detallados en la información proporcionada.
-- La cuantización AWQ puede introducir una ligera degradación de calidad frente a los pesos BF16 originales, especialmente en tareas de razonamiento complejo.
-- El modelo requiere torchcodec para entrada de vídeo, que puede presentar problemas de compatibilidad con entornos CUDA 12.x.
-- No se han documentado sesgos específicos en la información proporcionada, pero al ser un modelo entrenado sobre datos web, es recomendable evaluar sesgos potenciales antes de usarlo en aplicaciones sensibles.
-- Al ser un modelo de 1,3B parámetros, puede tener limitaciones en tareas de razonamiento complejo o conocimiento factual profundo en comparación con modelos mucho más grandes.
+- La cuantizacion AWQ de 4 bits puede degradar ligeramente la precision respecto al modelo base en BF16; conviene validar en la tarea concreta antes de produccion.
+- Riesgo de alucinacion inherente a los modelos de lenguaje y vision-lenguaje, especialmente en OCR de documentos de baja calidad o imagenes ambiguas.
+- No se dispone de informacion sobre sesgos demograficos, culturales o linguisticos del modelo.
+- Los idiomas soportados no estan documentados en la informacion disponible; el rendimiento fuera del ingles y el chino no esta verificado.
+- La longitud de contexto no esta especificada, lo que dificulta planificar cargas de video largo o conversaciones extensas.
+- Aunque la licencia es Apache 2.0, conviene revisar las licencias de los componentes subyacentes (SigLIP2 y Qwen3.5) antes de un uso comercial.
+- El modelo esta optimizado para eficiencia y despliegue en el borde; para tareas de razonamiento complejo puede quedar por debajo de modelos de mayor tamano.
+- La dependencia de torchcodec para decodificacion de video puede generar problemas en entornos con CUDA 12.x.
 
 ## Enlaces
 
-- Repositorio Hugging Face (AWQ): https://huggingface.co/openbmb/MiniCPM-V-4.6-AWQ
-- Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.6
-- Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-V
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-AWQ-Demo
-- Documentacion API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
+- Hugging Face (AWQ): https://huggingface.co/openbmb/MiniCPM-V-4.6-AWQ
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6
+- GitHub: https://github.com/OpenBMB/MiniCPM-o
+- Wiki (chino): https://openbmb.cn/docs/
 - CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Articulo sobre el lanzamiento: https://artificialanalysis.ai/articles/openbmb-launches-minicpm-v-4-6-1-3b-instruct
-- Papers asociados (arXiv): 2604.27393, 2509.18154, 2408.01800, 2605.08985
+- Demo: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-AWQ-Demo
+- Documentacion de API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
+- LLaVA-UHD v4: https://github.com/THUMAI-Lab/LLaVA-UHD-v4
+- Paper (arxiv:2604.27393): https://arxiv.org/abs/2604.27393
+- Paper (arxiv:2509.18154): https://arxiv.org/abs/2509.18154
+- Paper (arxiv:2408.01800): https://arxiv.org/abs/2408.01800
+- Paper (arxiv:2605.08985): https://arxiv.org/abs/2605.08985

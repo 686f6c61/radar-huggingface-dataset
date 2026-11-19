@@ -2,98 +2,99 @@
 
 ## Resumen
 
-Swift-1.5-Ornith-9B-GGUF es la distribucion en formato GGUF del modelo ukisai/Swift-1.5-Ornith-9B, un modelo de ~9.197 millones de parametros (9.197.093.888 exactamente, segun los pesos en safetensors del modelo base) publicado por el usuario ukisai. Se distribuye bajo licencia Apache 2.0 y esta etiquetado como experimental, con pipeline declarado image-text-to-text, lo que indica soporte de entrada de imagen ademas de texto.
+Swift 1.5 Ornith 9B GGUF es la versión cuantizada en formato GGUF del modelo Swift 1.5 Ornith 9B, desarrollado por UkisAI como derivado de razonamiento eficiente del modelo base Ornith-1.5-9B. El objetivo del modelo es reducir la verbosidad en las trazas de razonamiento (thinking tokens) sin sacrificar precisión: según la model card, utiliza un 33,1% menos de tokens de pensamiento (mediana) y obtiene 1,52 puntos porcentuales más que el modelo base en GPQA-Diamond. Está pensado para ejecutarse con llama.cpp y runtimes compatibles como `llama-server`.
 
-El modelo se presenta como un ajuste orientado a razonamiento y eficiencia de tokens: las etiquetas oficiales incluyen reasoning, efficient-thinking y token-efficient, ademas de post-training. Esto sugiere un modelo base preentrenado al que se le ha aplicado una fase de ajuste posterior enfocada en reducir la verbosidad del razonamiento sin perder calidad. La etiqueta qwen3_5 apunta a una posible ascendencia de la familia Qwen, aunque la informacion disponible no confirma la arquitectura subyacente.
+El repositorio contiene únicamente las cuantizaciones GGUF derivadas del modelo original en safetensors, con un tamaño total de 49,1 GB y 9.197.093.888 parámetros (aproximadamente 9B). La arquitectura subyacente se etiqueta como `qwen3_5` en los tags del repositorio, aunque la model card no detalla la arquitectura interna. El pipeline declarado es `image-text-to-text`, lo que sugiere capacidades multimodales de entrada imagen y texto, si bien la documentación disponible no especifica los detalles del componente visual.
 
-Su relevancia practica esta en el formato: al ser GGUF, es ejecutable directamente con llama.cpp y con los runners compatibles (Ollama, LM Studio, KoboldCpp, entre otros), lo que permite desplegarlo en hardware de consumo sin necesidad de GPUs de datacenter. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
+El modelo está orientado a cargas de trabajo de razonamiento y agentes multi-turno, con entrenamiento de post-entrenamiento sobre un dataset de SFT para agentes multi-turno (`ukisai/Qwen3.8-27B-multi-turn-agent-sft`). La licencia Apache 2.0 permite uso comercial, y el modelo se presenta como experimental dentro del catálogo de UkisAI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta qwen3_5 sugiere familia Qwen, sin confirmar) |
-| Parametros totales | 9.197.093.888 (~9,2 B) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio ocupa 49,1 GB, lo que sugiere varias variantes, pero no se detallan) |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base usa safetensors |
-| Pipeline declarado | image-text-to-text |
-| Acceso | restringido (gated), requiere aceptar condiciones |
-| Modelo base | ukisai/Swift-1.5-Ornith-9B |
-| Fecha de creacion | 2026-10-09 |
+| Arquitectura | Transformer (etiquetado como `qwen3_5` en los tags; detalles internos no disponibles) |
+| Parametros totales | 9.197.093.888 (~9B) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF (varios niveles; la model card enlaza a la sección "GGUF quantizations" sin detallar los niveles exactos) |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (derivados del original en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en los datos proporcionados. El pipeline image-text-to-text implica un componente de vision acoplado a un decodificador de lenguaje, pero se desconoce si se trata de un transformer denso, un MoE o una arquitectura hibrida, asi como el numero de capas, dimensiones ocultas o mecanismo de atencion. La etiqueta qwen3_5 sugiere que la base podria derivar de la familia Qwen, aunque esto no esta confirmado por el autor.
+La información disponible no detalla la arquitectura interna más allá de la etiqueta `qwen3_5` y la designación como transformer. El pipeline declarado `image-text-to-text` indica que el modelo acepta entradas multimodales de imagen y texto, aunque no se especifica el tipo de encoder visual ni cómo se integra con el decoder de lenguaje.
 
-En cuanto al entrenamiento, las etiquetas indican explicitamente post-training, reasoning, efficient-thinking y token-efficient. Esto apunta a un pipeline de ajuste posterior (posiblemente SFT y optimizacion preferencial tipo DPO o RLHF, aunque no se especifica) cuyo objetivo declarado es reducir el consumo de tokens en cadenas de razonamiento manteniendo la calidad de las respuestas. No se han proporcionado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset ni los idiomas cubiertos.
+El entrenamiento de Swift 1.5 se describe como un post-entrenamiento orientado a eficiencia de razonamiento: en lugar de penalizar directamente la longitud de las trazas, el equipo identificó tokens asociados a "sobrepensamiento patológico" y los penalizó, produciendo trazas de razonamiento comprimidas. Los datos de entrenamiento provienen del dataset `ukisai/Qwen3.8-27B-multi-turn-agent-sft`, que según la model card no se usa tal cual, sino re-muestreado y convertido en entornos de RL. No se especifica el número total de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO más allá de la mención a entornos de RL.
 
 ## Capacidades
 
-- Generacion de texto conversacional: etiquetado como conversational, orientado a dialogos multi-turno.
-- Razonamiento explicito: la etiqueta reasoning indica la presencia de un modo de pensamiento o cadena de razonamiento antes de la respuesta final.
-- Razonamiento eficiente en tokens: efficient-thinking y token-efficient sugieren que el modelo esta optimizado para producir cadenas de pensamiento mas cortas que modelos comparables.
-- Procesamiento de imagen y texto: el pipeline image-text-to-text implica capacidad de recibir imagenes como entrada junto a texto.
-- Compatibilidad con tool calling y function calling: no confirmada explicitamente en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente, aunque el modo de razonamiento es un requisito habitual para estos flujos.
-- Capacidades multilingues: no disponibles.
-- Capacidad especial destacada: modo de pensamiento eficiente (efficient-thinking) como diferenciador declarado.
+- Generación de texto y razonamiento general, con modo de razonamiento explícito ("thinking") optimizado para producir trazas más cortas.
+- Razonamiento matemático de competición (evaluado en AIME 2026).
+- Razonamiento científico de nivel avanzado (evaluado en GPQA-Diamond).
+- Seguimiento de instrucciones (evaluado en IFBench).
+- Procesamiento de entradas imagen-texto según el pipeline declarado (`image-text-to-text`).
+- Capacidades de agente multi-turno, derivadas del dataset de SFT de agentes multi-turno empleado en el post-entrenamiento.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Razonamiento con restriccion de coste por token: en pipelines de produccion donde cada token de salida tiene coste, el modo efficient-thinking reduce la longitud de las cadenas de razonamiento, lo que abarata la inferencia sin renunciar al razonamiento explicito.
-- Despliegue local en estaciones de trabajo: al distribuirse en GGUF sobre un modelo de ~9,2 B, puede ejecutarse con llama.cpp en equipos sin GPU dedicada o con GPU de gama media, util para entornos con requisitos de privacidad que impiden enviar datos a APIs externas.
-- Asistente conversacional multi-turno: la etiqueta conversational y el pipeline de dialogo permiten integrarlo en interfaces de chat con historial persistente, siempre que se respete la longitud de contexto real del modelo (no disponible).
-- Analisis de documentos con imagenes: el pipeline image-text-to-text lo habilita para tareas como extraccion de informacion de capturas, diagramas o formularios escaneados combinados con instrucciones textuales.
-- Generacion de explicaciones paso a paso en entornos educativos: el modo de razonamiento explicito permite mostrar el desarrollo de la solucion, y la eficiencia de tokens mantiene las respuestas dentro de limites razonables de longitud.
-- Evaluacion comparativa de tecnicas de post-training: al estar etiquetado como experimental y ser un ajuste sobre un base identificable, sirve como sujeto de prueba en experimentos sobre eficiencia de razonamiento.
-- Prototipado rapido en Ollama o LM Studio: al ser GGUF y estar disponible para llama.cpp, se puede integrar en un flujo de pruebas local en minutos, sin servir infraestructura de inferencia dedicada.
+- Razonamiento científico asistido: el modelo obtiene 84,51% en GPQA-Diamond con menos tokens de pensamiento que su base, por lo que es adecuado para pipelines de preguntas-respuesta de nivel graduado donde el coste por consulta importa.
+- Resolución de problemas matemáticos: con 90,67% en AIME 2026, puede integrarse en tutores automáticos o verificadores de soluciones que requieran cadenas de razonamiento matemático.
+- Agentes multi-turno: el post-entrenamiento sobre un dataset de agentes multi-turno lo hace apto para flujos conversacionales con herramientas y múltiples pasos, aunque el soporte explícito de tool calling no está confirmado.
+- Despliegue en hardware de consumo: al estar en GGUF y tener ~9B parámetros, puede ejecutarse con llama.cpp en GPUs de gama alta para consumo, reduciendo el coste de infraestructura frente a modelos mayores.
+- Generación de documentación técnica con razonamiento: la reducción de tokens de pensamiento (hasta 33,1% en mediana en GPQA-Diamond) disminuye la latencia y el coste de salida en tareas de análisis y explicación.
+- Evaluación comparativa de eficiencia de razonamiento: útil en investigación para estudiar el compromiso entre precisión y verbosidad de las trazas, dado que la model card publica métricas de tokens medios y medianos.
+- Procesamiento de entradas imagen-texto: según el pipeline declarado, podría emplearse en tareas de descripción o respuesta a preguntas sobre imágenes, aunque los detalles de rendimiento multimodal no están disponibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni metricas equivalentes, y la busqueda web realizada no devolvio ningun resultado relacionado con el modelo.
+Los datos siguientes provienen de la model card y comparan Ornith-1.5-9B (base) con Swift 1.5. Las puntuaciones son porcentajes agregados finales.
+
+| Benchmark | Base | Swift 1.5 | Tokens medios (base) | Tokens medios (Swift 1.5) | Reducción media | Reducción mediana |
+|---|---|---|---|---|---|---|
+| GPQA-Diamond | 83,00% | 84,51% | 15.760 | 11.782 | 25,2% | 33,1% |
+| IFBench | 42,60% | 40,47% | 13.409 | 10.790 | 19,5% | 24,7% |
+| AIME 2026 | 92,67% | 90,67% | 37.872 | 35.460 | 6,4% | 29,2% |
+
+No se han publicado en la información disponible resultados de otros benchmarks (MMLU, HumanEval, GSM8K) ni comparaciones con modelos de terceros.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones orientativas calculadas a partir del numero de parametros (9,2 B) y del overhead habitual de llama.cpp; no proceden de documentacion oficial del modelo.
-
-- Cuantizacion Q4_K_M: aproximadamente 5,5-6 GB de VRAM, con margen adicional para el contexto. Cabe en GPUs de consumo con 8 GB (RTX 3060 Ti, RTX 4060) y en Apple Silicon a partir de 16 GB de memoria unificada.
-- Cuantizacion Q5_K_M: aproximadamente 6,5-7 GB. Ajustada en GPUs de 8 GB, comoda en 12 GB (RTX 3060 12 GB, RTX 4070).
-- Cuantizacion Q8_0: aproximadamente 9,8-10,5 GB. Requiere 12-16 GB de VRAM (RTX 4070 Ti Super, RTX 4080, RTX 4090).
-- Precision FP16 (si estuviera incluida en el repo de 49,1 GB): aproximadamente 18,5-19 GB de pesos. Requiere 24 GB de VRAM (RTX 3090, RTX 4090) o GPUs de datacenter como A100 40 GB o H100.
-- Despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runner compatible con GGUF. Para servidores con vLLM o TGI seria necesario partir del modelo base en safetensors, ya que estas herramientas no consumen GGUF de forma nativa.
-- Latencia y throughput: no disponibles. Dependeran del hardware, de la cuantizacion y de la longitud de las cadenas de razonamiento generadas.
+- VRAM estimada: no disponible con detalle por cuantización. Como referencia orientativa para ~9B parámetros, las cuantizaciones GGUF de 4-5 bits suelen ocupar entre 5 y 7 GB, pero la model card no publica cifras por nivel.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Viabilidad en GPU de consumo: el formato GGUF y el tamaño de ~9B permiten, en principio, ejecución en GPUs de consumo con suficiente VRAM, pero no se confirman modelos concretos.
+- Opciones de despliegue: llama.cpp y runtimes compatibles, en particular `llama-server`, según la model card.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo, por lo que la comparacion se limita a caracteristicas verificables. El contexto, los idiomas y la arquitectura del modelo evaluado no estan publicados, lo que impide una comparacion completa.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Rendimiento destacado | Licencia | Formato |
 |---|---|---|---|---|---|
-| ukisai/Swift-1.5-Ornith-9B-GGUF | 9,2 B | no disponible | Apache 2.0 | GGUF | Multimodal declarado (image-text-to-text), gated, experimental |
-| Qwen3-8B | 8,2 B | 32.768 tokens nativos (ampliable) | Apache 2.0 | safetensors, GGUF | Referencia de la posible familia base; contexto e idiomas publicados |
-| Llama 3.1 8B Instruct | 8,0 B | 131.072 tokens | Llama 3.1 Community License | safetensors, GGUF | Licencia con clausulas de uso comercial condicionadas |
-| Gemma 3 12B | 12 B | 131.072 tokens | Gemma Terms of Use | safetensors, GGUF | Multimodal (texto e imagen), licencia propia de Google |
+| Swift 1.5 Ornith 9B GGUF | ~9B | No disponible | GPQA-Diamond 84,51%; AIME 2026 90,67% | Apache 2.0 | GGUF |
+| Ornith-1.5-9B (base) | ~9B (no confirmado) | No disponible | GPQA-Diamond 83,00%; AIME 2026 92,67% | No disponible | Safetensors (original) |
+| Otros modelos de ~9B | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+La comparativa con modelos de terceros no está disponible en la información proporcionada; la única comparación documentada es con el modelo base Ornith-1.5-9B.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. Esto limita la automatizacion de pipelines de descarga.
-- Modelo experimental: la etiqueta experimental indica que no debe considerarse un modelo estable ni validado para produccion sin evaluacion previa propia.
-- Ausencia total de benchmarks: no hay ninguna metrica publicada que respalde las capacidades declaradas. Cualquier decision de adopcion deberia basarse en una evaluacion interna.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible. Como en cualquier modelo generativo, existe riesgo en tareas factuales.
-- Idiomas no documentados: se desconoce la cobertura linguistica real, incluido el rendimiento en castellano.
-- Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones largas ni en documentos extensos.
-- Sesgos: no documentados por el autor. Al ser un modelo ajustado sin ficha de evaluacion, no hay analisis de sesgo disponible.
-- Licencia Apache 2.0: permite uso comercial y modificacion sin restricciones de atribucion mas alla de las habituales, pero se aplica a los pesos distribuidos por ukisai; conviene verificar la licencia del modelo base original si deriva de una familia con terminos propios.
-- Trazabilidad limitada: el autor (ukisai) no proporciona informacion sobre el dataset de ajuste ni sobre el proceso de post-training, lo que dificulta la reproducibilidad.
-- Fecha de publicacion futura en los metadatos (2026-10-09), con cero descargas y cero likes: el modelo no cuenta con validacion por parte de la comunidad.
+- El modelo se presenta como experimental; no se garantiza estabilidad en producción.
+- El rendimiento en IFBench (40,47%) y AIME 2026 (90,67%) es inferior al del modelo base, por lo que la eficiencia de tokens conlleva una pérdida de precisión en algunas tareas.
+- No se dispone de información sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas.
+- La longitud de contexto no está documentada, lo que impide planificar cargas con ventanas largas.
+- El soporte de tool calling y las capacidades multimodales no están confirmados más allá del pipeline declarado.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio para confirmar condiciones.
+- Al ser una cuantización GGUF, puede haber degradación adicional de precisión respecto al modelo original en safetensors, dependiendo del nivel de cuantización elegido.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B-GGUF
-- Modelo base: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B
-
-No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los unicos resultados devueltos corresponden a sitios de ajedrez sin relacion con el modelo.
+- Modelo original en safetensors: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B
+- Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Dataset de entrenamiento: https://huggingface.co/datasets/ukisai/Qwen3.8-27B-multi-turn-agent-sft
+- Web de UkisAI: https://ukisai.com
+- Página de producto Swift: https://ukisai.com/products/swift
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Licencia: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B-GGUF/blob/main/LICENSE

@@ -2,89 +2,99 @@
 
 ## Resumen
 
-Kimi-K3.1-Pro-MLXse es una redistribución del modelo Kimi-K3.1-Pro de Moonshot AI, publicada por el usuario inferencerlabs en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un reempaquetado de los pesos cuantizados existentes del modelo original, adaptado para su ejecución con MLX, el framework de Apple para aceleración en silicio propio (M-series). El sufijo "MLXse" y la descripción de la model card indican que los expertos del modelo se descargan a almacenamiento ("offloads the experts to storage") para poder ejecutarse a plena precisión en dispositivos con memoria limitada.
+Kimi-K3.1-Pro-MLXse es una redistribución del modelo multimodal Kimi-K3.1-Pro de Moonshot AI, publicada por el usuario inferencerlabs. No se trata de un modelo nuevo ni de un reentrenamiento, sino de un reempaquetado de los pesos cuantizados ya existentes del modelo original, modificado para funcionar con una versión parcheada de MLX y con descarga de los expertos a almacenamiento, de modo que pueda ejecutarse en equipos con memoria unificada limitada. El repositorio ocupa 1.561,2 GB, lo que da una idea de la escala del modelo base.
 
-El modelo base es un modelo multimodal de tipo image-text-to-text, lo que implica capacidad de procesar imágenes y texto conjuntamente. La model card menciona únicamente pruebas en un M3 Ultra con 512 GB de memoria unificada, lo que sitúa el objetivo de despliegue en estaciones de trabajo Apple de gama alta más que en GPUs convencionales. No se especifican parámetros totales, longitud de contexto ni detalles de arquitectura en la información disponible.
+El pipeline declarado es image-text-to-text, es decir, el modelo acepta entradas de imagen y texto y genera texto. La etiqueta `kimi_k31` y la presencia de `custom_code` indican que la arquitectura requiere código específico del autor para cargarse, y que no es un transformer estándar servible con transformers sin más. El modelo base es moonshotai/Kimi-K3.1-Pro, del que no se aportan en esta información ni el número de parámetros, ni la longitud de contexto, ni detalles de entrenamiento.
 
-La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamaño de repo de 0.0 GB (lo que sugiere que los pesos no están efectivamente alojados o que la metadata no se ha actualizado) y una licencia no declarada. Debe tratarse como un artefacto experimental de terceros, no como una distribución oficial del modelo.
+La relevancia de esta ficha es doble: por un lado, documenta una vía poco habitual de despliegue de modelos de gran escala en Apple Silicon mediante MLX y offloading de expertos; por otro, advierte de sus limitaciones prácticas, ya que el propio autor reporta una velocidad de aproximadamente 0,37 tokens por segundo en un M3 Ultra de 512 GB con 10.000 tokens de contexto. Es, por tanto, un artefacto experimental orientado a pruebas y demostraciones, no a producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base multimodal image-text-to-text; se infiere transformer, sin confirmar) |
+| Arquitectura | no disponible (etiqueta `kimi_k31`; requiere `custom_code`) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se confirma que sea MoE, aunque la model card menciona "experts") |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit (según tag del repositorio) |
-| Idiomas soportados | en (inglés) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (el autor reporta pruebas a 10.000 tokens) |
+| Tipos de cuantizacion | 4-bit (etiqueta del repo); pesos ya cuantizados del modelo base |
+| Idiomas soportados | en |
 | Licencia | no disponible |
-| Formato de pesos | MLX (repositorio con `library_name: mlx`); no se confirma safetensors ni GGUF |
+| Formato de pesos | MLX (repo de 1.561,2 GB); no se indica safetensors ni GGUF |
+| Modalidad | image-text-to-text (entrada de imagen y texto, salida de texto) |
+| Libreria | mlx |
 | Modelo base | moonshotai/Kimi-K3.1-Pro |
-| Pipeline | image-text-to-text |
-| Tamano del repo | 0.0 GB (según metadata de Hugging Face) |
+| Descargas | 3.561 |
+| Likes | 5 |
+| Fecha de creacion | 2026-11-05 |
+| Fecha de actualizacion | 2026-11-05 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Kimi-K3.1-Pro en la documentación proporcionada. La model card del reempaquetado menciona explícitamente que "offloads the experts to storage", lo que sugiere una arquitectura con componentes tipo mezcla de expertos (MoE), pero no se confirma el número de expertos, los parámetros activos por token ni la proporción de activación. Tampoco se detallan los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información sobre la arquitectura interna del modelo base Kimi-K3.1-Pro en los datos proporcionados. La etiqueta `kimi_k31` sugiere una familia propia de Moonshot AI, y la mención explícita en la model card a "offloads the experts to storage" implica que el modelo emplea una arquitectura de mezcla de expertos (MoE): los expertos se descargan desde disco a demanda en lugar de residir íntegramente en memoria. Esta técnica es la que permite, según el autor, ejecutar el modelo "a plena precisión" en dispositivos con memoria restringida, a costa de latencia.
 
-La innovación técnica documentada de esta distribución concreta es el reempaquetado de pesos cuantizados a 4-bit para MLX, con descarga dinámica de expertos desde almacenamiento. Esto permite, según el autor, ejecutar el modelo "a plena precisión" (entendido como la precisión de los pesos cuantizados originales) en dispositivos con memoria unificada limitada, a costa de latencia adicional por acceso a disco. El autor indica que se ha usado una versión modificada de MLX, lo que implica que la build estándar del framework podría no ser suficiente para cargar el modelo.
+El repositorio no documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otras fases de alineación. Tampoco se detalla el proceso de cuantización original más allá de la etiqueta 4-bit. La única innovación técnica descrita es el reempaquetado con una versión modificada de MLX y el offloading de expertos a almacenamiento, probado con la aplicación Inferencer 2.5.2.
 
 ## Capacidades
 
-- Procesamiento conjunto de imagen y texto (pipeline image-text-to-text), según la metadata del repositorio.
-- Generación de texto condicionada por entrada visual, presumiblemente con capacidad de razonamiento multimodal, aunque no se detallan tareas concretas.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: limitadas al inglés según el tag `en`; no se declaran otros idiomas.
-- Modo thinking, audio u otras capacidades especiales: no documentadas.
+- Generación de texto a partir de entradas multimodales (imagen y texto), según el pipeline image-text-to-text declarado.
+- Procesamiento de imágenes: el modelo acepta entradas visuales junto con texto, aunque no se detallan tareas concretas (VQA, OCR, captioning) en la información disponible.
+- Conversación multi-turno: no confirmado explícitamente en la model card, pero coherente con el pipeline declarado.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma (`en`).
+- Modo de razonamiento extendido (thinking mode): no disponible en la información proporcionada.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Evaluación experimental de modelos multimodales en hardware Apple: el modelo está pensado para ejecutarse en un M3 Ultra con 512 GB de memoria unificada, por lo que su uso realista es la experimentación en estaciones de trabajo Mac de gama alta, no en servidores GPU convencionales.
-- Pruebas de concepto de offloading de expertos a disco: sirve para validar técnicas de carga dinámica de pesos en MLX y medir el impacto en latencia frente a mantener los expertos en memoria.
-- Investigación sobre cuantización 4-bit en modelos multimodales: permite comparar la calidad de salida de los pesos cuantizados frente al modelo base completo, si se dispone de ambos.
-- Prototipado de asistentes que describen imágenes en inglés: dado el pipeline image-text-to-text, podría emplearse para captioning o respuesta a preguntas visuales en entornos de desarrollo controlados.
-- Benchmarking de throughput en Apple Silicon: el autor cita pruebas en M3 Ultra 512 GB, por lo que el modelo puede usarse como referencia para medir tokens/s en esa plataforma.
-- Validación de pipelines de inferencia con MLX modificado: útil para equipos que desarrollan tooling propio sobre MLX y necesitan un modelo grande con requisitos de memoria extremos como caso de prueba.
+- Evaluación de modelos de gran escala en Apple Silicon: el repositorio permite probar un modelo multimodal de gran tamaño en un Mac Studio o Mac Pro con memoria unificada alta, usando MLX y offloading de expertos, sin necesidad de GPUs de centro de datos. Es adecuado para laboratorios que quieran estudiar el comportamiento del modelo base en hardware de escritorio.
+- Investigación sobre offloading de expertos: sirve como banco de pruebas para medir el impacto del trasvase de expertos desde disco a memoria en latencia y throughput, con una referencia publicada de 0,37 tokens/s en M3 Ultra 512 GB a 10.000 tokens de contexto.
+- Prototipado de aplicaciones imagen-texto en local: para desarrolladores que necesiten validar pipelines de visión-lenguaje con datos sensibles que no pueden salir de su infraestructura, siempre que acepten velocidades de generación muy bajas.
+- Reproducción de resultados del modelo base: al conservar los pesos cuantizados originales, permite comparar salidas frente a otras implementaciones de Kimi-K3.1-Pro y verificar la fidelidad del reempaquetado.
+- Docencia y demostraciones: la disponibilidad de vídeos de demostración y de una aplicación concreta (Inferencer 2.5.2) facilita mostrar en clase cómo se ejecuta un modelo multimodal de gran escala en hardware de consumo profesional.
+- Generación de descripciones de imágenes por lotes en entornos offline: para tareas de etiquetado o catalogación de imágenes donde la latencia no sea crítica y se priorice mantener los datos en local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente menciona una prueba en M3 Ultra 512GB con el campo de tokens/s vacío ("~ tokens/s"), sin cifra concreta.
+No se han publicado resultados de benchmarks en la información disponible.
+
+El único dato de rendimiento aportado por el autor es una velocidad de inferencia de aproximadamente 0,37 tokens/s en un M3 Ultra de 512 GB con 10.000 tokens de contexto, medida con Inferencer 2.5.2.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: no disponible con precisión; el autor solo cita un M3 Ultra con 512 GB de memoria unificada como configuración probada.
-- GPU recomendadas: no se documentan GPUs NVIDIA; el modelo está empaquetado para MLX, es decir, Apple Silicon.
-- Cabe en GPU de consumo: no confirmado; por el perfil de memoria citado (512 GB), no es esperable que quepa en GPUs de consumo convencionales (RTX 4090, 24 GB) sin un offloading agresivo no documentado.
-- Opciones de despliegue: MLX (versión modificada según el autor) e Inferencer 2.5.2. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; el campo de tokens/s en la model card está vacío.
+- VRAM/memoria unificada: el repositorio ocupa 1.561,2 GB en disco; el autor indica que el modelo se ejecuta con offloading de expertos a almacenamiento, por lo que la memoria necesaria es inferior al tamaño total, pero no se especifica la cifra exacta.
+- GPU/equipo recomendado: Apple M3 Ultra con 512 GB de memoria unificada es el único hardware mencionado explícitamente en la model card.
+- ¿Cabe en GPU de consumo? No hay información que lo confirme; el tamaño del repo y la necesidad de offloading sugieren que no cabe en GPUs de consumo convencionales (RTX 4090, 24 GB) sin cuantizaciones mucho más agresivas no documentadas.
+- Opciones de despliegue: MLX con la versión modificada indicada por el autor, a través de la aplicación Inferencer 2.5.2. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Almacenamiento: se requiere espacio en disco rápido (NVMe) para el offloading de expertos; el repo completo son 1.561,2 GB.
+- Latencia y throughput: ~0,37 tokens/s a 10.000 tokens de contexto en M3 Ultra 512 GB; no hay datos para otras configuraciones.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparación rigurosa con alternativas de la misma categoría. Como referencia estructural, el único punto de comparación documentado es el propio modelo original `moonshotai/Kimi-K3.1-Pro`, del que esta distribución es un reempaquetado cuantizado a 4-bit para MLX.
+No disponible. La información proporcionada no incluye datos de parámetros, contexto ni benchmarks del modelo base Kimi-K3.1-Pro, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-MLXse (este) | no disponible | no disponible | no disponible | MLX 4-bit | Hugging Face, 0 descargas |
-| moonshotai/Kimi-K3.1-Pro | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
-| Alternativas de misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Kimi-K3.1-Pro-MLXse | no disponible | no disponible | no disponible | MLX (4-bit) | Reempaquetado con offloading de expertos |
+| moonshotai/Kimi-K3.1-Pro | no disponible | no disponible | no disponible | no disponible | Modelo base original |
+| Alternativas | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede asumir uso comercial permitido; la ausencia de licencia es un riesgo legal relevante para producción.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que los fallos estén detectados y corregidos por la comunidad.
-- Tamaño de repo de 0.0 GB: la metadata sugiere que los pesos podrían no estar efectivamente alojados o que la carga es parcial; conviene verificar antes de intentar su descarga.
-- Dependencia de una versión modificada de MLX: el autor indica que el reempaquetado se hizo con una build modificada del framework, lo que puede romper la compatibilidad con versiones estándar y complicar el mantenimiento.
-- Offloading de expertos a disco: implica latencia dependiente del almacenamiento y no apto para cargas de producción con requisitos de tiempo real.
-- Idioma: solo se declara inglés; no hay evidencia de soporte multilingüe.
-- Riesgo de alucinación y sesgos: no documentados por el autor; al ser un reempaquetado de terceros, no hay garantías sobre la fidelidad del comportamiento respecto al modelo base.
-- Descargo de responsabilidad del autor: la model card indica explícitamente que no son los creadores del modelo y que no se responsabilizan de daños o inexactitudes derivados de su uso.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible consultar la licencia del modelo base moonshotai/Kimi-K3.1-Pro antes de cualquier despliegue.
+- El autor declara explícitamente que no es el creador ni propietario del modelo, y que no se responsabiliza de daños, pérdidas o inexactitudes derivadas de su uso.
+- Rendimiento muy bajo: 0,37 tokens/s hace inviable el uso interactivo o en producción; es un artefacto para pruebas y demostraciones.
+- Dependencia de código personalizado (`custom_code`) y de una versión modificada de MLX, lo que complica la reproducibilidad y el mantenimiento.
+- Idioma limitado al inglés según la etiqueta del repositorio; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; no se aportan evaluaciones de fidelidad ni de tasas de error.
+- Sesgos: no se documenta ninguna evaluación de sesgos en la información disponible.
+- Requiere hardware específico (Apple Silicon con memoria unificada alta) y almacenamiento NVMe de gran capacidad; no se documentan alternativas para otras plataformas.
+- El offloading de expertos a disco puede degradar la latencia de forma no lineal con la longitud de contexto; solo se aporta una medición puntual.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/inferencerlabs/Kimi-K3.1-Pro-MLXse
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- Vídeos de demostración (según model card): https://youtube.com/xcreate
-- Inferencer: https://inferencer.com
-- MLX (framework): https://github.com/ml-explore/mlx
+- Vídeos de demostración: https://youtube.com/xcreate
+- Aplicación Inferencer: https://inferencer.com
+- MLX (repositorio oficial): https://github.com/ml-explore/mlx

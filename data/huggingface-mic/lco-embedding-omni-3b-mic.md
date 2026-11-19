@@ -2,48 +2,48 @@
 
 ## Resumen
 
-LCO-Embedding-Omni-3B-mic es un artefacto de prueba publicado por la cuenta `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado ni utilizable en produccion, sino de un "fixture" reducido que replica la arquitectura y los ficheros de procesador del modelo real `LCO-Embedding/LCO-Embedding-Omni-3B` para validar integraciones con Transformers. La propia model card lo etiqueta explicitamente como `test-artifact` y advierte de que "no es un modelo usable".
+LCO-Embedding-Omni-3B-mic es un artefacto de prueba (fixture) publicado por la organizacion huggingface-mic, no un modelo utilizable. Se trata de una version reducida del checkpoint LCO-Embedding/LCO-Embedding-Omni-3B, un modelo de embeddings omnicanal basado en la arquitectura Qwen2_5OmniThinker. El repositorio empaqueta pesos recortados, ejemplos de uso ejecutables y expectativas de framework en un unico lugar, con el objetivo de servir como fixture de integracion continua para validar el pipeline de Transformers.
 
-El fixture conserva la clase de arquitectura `Qwen2_5OmniThinkerForConditionalGeneration`, pero con una configuracion drasticamente reducida: 2 capas en el encoder de audio y 2 capas en el transformer de texto. Los pesos son aleatorios (semilla 17) y no han pasado por ningun proceso de entrenamiento; solo superaron un test de sensibilidad a la entrada que exigia que cada perturbacion de los inputs moviera los logits al menos 0,001.
+El fixture conserva la misma arquitectura que el modelo original (Qwen2_5OmniThinkerForConditionalGeneration) pero con una configuracion drasticamente reducida: 2 capas en el encoder de audio y 2 capas en el transformer de texto. Los pesos son aleatorios (semilla 17) y no han sido entrenados. El unico criterio que cumplen es la puerta de sensibilidad a la entrada: cualquier perturbacion de las entradas del contrato mueve los logits al menos 0,001.
 
-Su relevancia es puramente de ingenieria: sirve como caso de prueba reproducible para frameworks (Transformers, Sentence Transformers) y para verificar que una integracion concreta carga, ejecuta y propaga gradientes correctamente sobre la arquitectura del modelo omni real, sin necesidad de descargar los pesos completos de 3B.
+Por tanto, esta ficha documenta un artefacto de ingenieria, no un modelo de produccion. Su relevancia es para desarrolladores que mantienen integraciones de Transformers y necesitan un objetivo ligero y determinista para tests de contrato. Cualquier uso como modelo real de embeddings, generacion o razonamiento seria incorrecto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2_5OmniThinkerForConditionalGeneration (config reducida: audio encoder_layers=2, text num_hidden_layers=2) |
+| Arquitectura | Qwen2_5OmniThinkerForConditionalGeneration (transformer multimodal recortado) |
 | Parametros totales | 21.121.152 (21,1 M) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
+| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture reproduce la topologia de `Qwen2_5OmniThinkerForConditionalGeneration`, el componente "thinker" del modelo omni de Qwen 2.5, con un encoder de audio y un transformer de texto. La configuracion se ha reducido mediante la regla generica de `sweep.py` del repositorio `transformers-mic`, dejando 2 capas en cada bloque. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que cualquier codigo que cargue el modelo original deberia cargar el fixture sin cambios de API.
+El fixture reproduce la topologia de Qwen2_5OmniThinkerForConditionalGeneration con una configuracion encogida mediante la regla generica de sweep.py: audio encoder_layers = 2 y text num_hidden_layers = 2. Los nombres de tensores coinciden con los del checkpoint real LCO-Embedding/LCO-Embedding-Omni-3B, y los ficheros de procesador (tokenizer.json, tokenizer_config.json, preprocessor_config.json, chat_template.jinja, merges.txt, vocab.json, added_tokens.json, special_tokens_map.json, generation_config.json, config_sentence_transformers.json, sentence_bert_config.json, modules.json) se copian byte a byte desde el modelo base.
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se validaron con un "input-sensitivity gate": cada perturbacion de las entradas del contrato debia mover los logits al menos 0,001; el caso mas debil (`attention_mask:all_ones`) produjo un desplazamiento de 0,893. Los ficheros de procesador (`tokenizer.json`, `tokenizer_config.json`, `chat_template.jinja`, `preprocessor_config.json`, `merges.txt`, `vocab.json`, entre otros) se copiaron byte a byte desde `LCO-Embedding/LCO-Embedding-Omni-3B`. Los pesos se guardaron en bfloat16 y se verifico que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y solo pasaron una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplaza los logits al menos 0,001 (la mas debil, attention_mask:all_ones, con 0,893). El modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture 8fd60af1aa99 agrupa todos los checkpoints con ficheros de procesador identicos y config coincidente tras el recorte.
 
 ## Capacidades
 
-- Carga y ejecucion de la arquitectura `Qwen2_5OmniThinkerForConditionalGeneration` en Transformers.
-- Verificacion de contratos de integracion (manifiesto `integration.json`, expectativas en `integrations/transformers/expectations`).
-- Pruebas de forward pass, calculo de loss y retropropagacion de gradientes.
-- Validacion de ficheros de procesador (tokenizer, chat template, preprocessor) copiados del modelo real.
-- Comprobacion de compatibilidad con Sentence Transformers (se incluyen `config_sentence_transformers.json`, `modules.json`, `sentence_bert_config.json`).
-- No genera texto, no razona, no hace tool calling ni soporta agentes: los pesos son aleatorios.
+- No es un modelo funcional: no genera texto, no produce embeddings utiles ni razona.
+- Sirve como fixture de contrato para validar la carga, el forward, el calculo de perdida y los gradientes en Transformers.
+- Expone la misma interfaz de procesador que el modelo base (tokenizer, preprocessor de audio, chat template), lo que permite testear pipelines de preprocesado.
+- Compatible con ejecucion en float32, bfloat16 y float16 sin valores no finitos.
+- No soporta tool calling, agentes, vision ni audio reales de forma significativa, porque los pesos son aleatorios.
+- Multilingue: no disponible; hereda el tokenizer del modelo base, pero sin capacidad linguistica real.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI: cargar el fixture en un pipeline de GitHub Actions para verificar que una nueva version de Transformers sigue soportando la arquitectura omni sin descargar los 3B parametros reales.
-- Desarrollo de wrappers y librerias: validar la API de carga, tokenizacion y forward contra un checkpoint ligero antes de apuntar al modelo real `LCO-Embedding-Omni-3B`.
-- Test de regresion de tokenizer y chat template: al copiarse byte a byte del modelo original, permite comprobar que los cambios en el procesador no rompen el contrato.
-- Validacion de mixed precision: el fixture es finito en float32, bfloat16 y float16, por lo que sirve para probar rutas de autocast y gradientes en distintas precisiones.
-- Verificacion de nombres de tensores: util para herramientas que inspeccionan `state_dict` o convierten pesos entre frameworks sin cargar el checkpoint completo.
-- Reproducibilidad de fixtures: el repo documenta `build_fixtures.py` y `build.json` con hashes, permitiendo regenerar el artefacto y auditar su procedencia.
+- Tests de integracion en CI para Transformers: cargar el fixture con AutoModel y AutoProcessor y verificar que el forward devuelve logits con la forma esperada, sin descargar el checkpoint de 3B.
+- Validacion de contratos de API interna: comprobar que los nombres de tensores y las firmas de procesador coinciden con el modelo base antes de un despliegue.
+- Pruebas de regresion de tokenizer y chat template: al copiarse byte a byte, cualquier cambio en el pipeline de preprocesado se detecta comparando salidas.
+- Verificacion de dtypes: ejecutar forward, loss y backward en float32, bfloat16 y float16 para asegurar que el codigo de entrenamiento no produce NaN ni infinitos.
+- Desarrollo de utilidades de serializacion: probar cargas y guardados de safetensors con un repositorio de 0,1 GB en lugar de varios GB.
+- Formacion y demos de tooling: mostrar el flujo de build_fixtures.py y el manifiesto integration.json sin consumir recursos de GPU.
 
 ## Benchmarks y rendimiento
 
@@ -51,37 +51,37 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (21,1 M parametros, ~42 MB de pesos); el repo ocupa 0,1 GB.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 o superior) e incluso CPU es suficiente.
-- Cabe holgadamente en cualquier GPU consumer; tambien en entornos sin GPU.
-- Opciones de despliegue: Transformers (via `AutoModel`/`Qwen2_5OmniThinkerForConditionalGeneration`), Sentence Transformers. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; irrelevantes para un fixture de test.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (21,1 M de parametros, unos 42 MB de pesos) mas overhead de activaciones y procesador.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU; no requiere A100 ni H100.
+- Cabe en GPU consumer y en CPU sin problema; tamano del repo 0,1 GB.
+- Opciones de despliegue: Transformers con PyTorch es el camino documentado (integrations/transformers/usage.md); vLLM, llama.cpp, Ollama o TGI no estan soportados de forma oficial para este fixture.
+- Latencia y throughput: no disponibles de forma publicada; por tamano, el forward es del orden de milisegundos en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia |
-|---|---|---|---|---|
-| LCO-Embedding-Omni-3B-mic (este) | 21,1 M | no disponible | Fixture de test | no disponible |
-| LCO-Embedding/LCO-Embedding-Omni-3B | ~3B (nominal) | no disponible | Embedding omni real | no disponible |
-| Qwen2.5-Omni-3B (familia base) | ~3B | no disponible | Modelo omni multimodal | no disponible |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LCO-Embedding-Omni-3B-mic | 21,1 M | no disponible | Fixture de test | no disponible | Hugging Face (huggingface-mic) |
+| LCO-Embedding/LCO-Embedding-Omni-3B | no disponible (nombre sugiere 3B) | no disponible | Embeddings omnicanal reales | no disponible | Hugging Face (LCO-Embedding) |
+| Qwen2.5-Omni-3B (arquitectura base) | no disponible en la informacion | no disponible | Modelo multimodal generativo | no disponible | Hugging Face (Qwen) |
 
-La comparativa directa con alternativas de la misma categoria no aplica: el fixture no compite con modelos de embedding reales, sino que replica su contrato para pruebas. Cualquier comparacion de rendimiento con `LCO-Embedding-Omni-3B` u otros modelos omni resultaria enganosa.
+La comparativa directa con alternativas funcionales no es significativa: el fixture no compite en calidad ni rendimiento, solo en ligereza para tests.
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable: los pesos son aleatorios y las salidas no tienen significado.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
-- La model card advierte explicitamente de que "no es un modelo usable".
-- Sin licencia declarada: no se puede asumir permiso de uso comercial ni redistribucion.
-- Sin informacion sobre sesgos, idiomas o alucinacion: no aplica al no haber entrenamiento.
-- La configuracion reducida (2 capas) no representa el comportamiento del modelo real de 3B; no extrapolar resultados.
-- El nombre del repo sugiere "3B" pero el artefacto real tiene 21,1 M parametros; conviene no confundirlos.
+- No es un modelo utilizable: los pesos son aleatorios y las salidas no tienen significado semantico.
+- Etiquetado como test-artifact para excluirlo de busquedas de modelos candidatos; no debe aparecer en catalogos de produccion.
+- Sin licencia declarada: no se puede asumir permiso de uso comercial ni redistribucion mas alla de lo que permita el modelo base.
+- Idiomas y contexto no disponibles; no inferir capacidades del nombre "Omni-3B".
+- Riesgo de confusion: el nombre incluye "3B" pero el fixture tiene 21,1 M de parametros; verificar siempre el tamano real en safetensors.
+- No apto para evaluaciones de sesgo, alucinacion o calidad: cualquier metrica seria enganosa.
+- Depende de la regla de recorte de sweep.py; cambios en esa regla pueden invalidar la clave de fixture 8fd60af1aa99.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/huggingface-mic/LCO-Embedding-Omni-3B-mic
-- Modelo base real: https://huggingface.co/LCO-Embedding/LCO-Embedding-Omni-3B
-- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/LCO-Embedding-Omni-3B-mic.html
-- Repositorio de herramientas: https://github.com/huggingface/transformers-mic
-- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Modelo base: https://huggingface.co/LCO-Embedding/LCO-Embedding-Omni-3B
+- Como se recorto el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/LCO-Embedding-Omni-3B-mic.html
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de recorte: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

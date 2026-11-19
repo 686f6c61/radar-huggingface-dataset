@@ -50,32 +50,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Porno izle - Sikiş Video - HD Sex Porn | Porno Anne",
-      "url": "https://pornoanne.com/",
-      "snippet": "Porno Anne ile en kaliteli HD porno filmleri burada! Sex videoları ve sikiş sahneleri ile dolu anlara ücretsiz porno izle yazarak ulaş ve …"
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Same answer (%)",
+      "value": 95.6
     },
     {
-      "title": "Türk Porno - Sikiş izle - HD Sex Video - Porna Film Seyret",
-      "url": "https://pornoanne.com/kategori/turk-porn-1/",
-      "snippet": "Türk porno severlerin kaçırmak istemediği en iyi amatör konuşmalı türk sex videoları sizler için hazırlandı. Sende hemen tıkla ve bu …"
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Confident changes",
+      "value": 0
     },
     {
-      "title": "Anne - XXX Porno videolar @ TheXXX.TV",
-      "url": "https://thexxx.tv/tr/videos/anne",
-      "snippet": "536,865 videolar: Toplu Tecavuz, Içine Boşalmak, Olive Glass, Sabah Sex, Üze Boşalma, Yaşlı Genç, Sofie Marie ve daha fazlası."
-    },
-    {
-      "title": "Anne Pornolar | HD Altyazılı Porno, Türkçe Altyazılı Porno İzle",
-      "url": "https://www.pornorina.com/kanal/anne/",
-      "snippet": "Anne porno kategorisine hoş geldiniz. Kendinizi burada özel hissedecek ve daima gelmeyi arzulayacaksınız. Çok güzel anne rolü …"
-    },
-    {
-      "title": "Ücretsiz Porno ve XXX videolar - Porncado.com",
-      "url": "https://porncado.com/tr/",
-      "snippet": "Burası Porncado.com, en iyi XXX videolar unutulmaz seks sahnelerinde dünyanın en ateşli porno yıldızlarına yer veriyor. Bu erotik …"
+      "task": "Typed decisions",
+      "dataset": "Test decisions",
+      "metric": "Accuracy (%)",
+      "value": 72
     }
-  ]
+  ],
+  "sources": []
 }

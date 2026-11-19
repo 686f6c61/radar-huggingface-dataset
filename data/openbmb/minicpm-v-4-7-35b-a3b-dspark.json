@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
-    },
-    {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/features",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
-    },
-    {
-      "title": "Introducing ChatGPT - OpenAI",
-      "url": "https://openai.com/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
-    },
-    {
-      "title": "Nouveau : ChatGPT - OpenAI",
-      "url": "https://openai.com/fr-FR/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · ChatGPT est un modèle dérivé d’InstructGPT ⁠, qui a lui-même été entraîné pour suivre l’instruction d’un prompt et …"
-    },
-    {
-      "title": "ChatGPT - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/ChatGPT",
-      "snippet": "ChatGPT is a generative AI chatbot developed by OpenAI. Originally released on November 30, 2022, the product uses large …"
-    }
-  ]
+  "sources": []
 }

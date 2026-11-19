@@ -2,103 +2,90 @@
 
 ## Resumen
 
-`nile-academy/nemotron-dory1.0-4b-gguf` es una distribucion en formato GGUF del modelo `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16` de NVIDIA, publicada por Nile Academy como espejo de artefacto o conversion de formato registrada, sin entrenamiento adicional. El repositorio contiene un unico fichero en cuantizacion Q5_K_M (3,673 GB) exportado por el publicador original, sobre un modelo base de 3.975.229.440 parametros totales. La licencia del modelo original es OpenMDW 1.1.
+Dory1.0-4B es un modelo de lenguaje de NVIDIA Corporation, publicado originalmente el 16 de octubre de 2026 bajo la referencia `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16`. Esta ficha describe la réplica en formato GGUF publicada por nile-academy, que distribuye una cuantización Q5_K_M oficial de NVIDIA (3,673 GB) junto con el checkpoint BF16 original completo (7.950.515.472 bytes, 507 tensores). No se ha realizado entrenamiento adicional: se trata de un espejo de artefactos con conversión de formato registrada.
 
-El interes practico del artefacto es que reduce un modelo de ~4B parametros a menos de 4 GB en disco, lo que lo situa en el rango de GPU de consumo y de inferencia en CPU. La model card del espejo advierte explicitamente de que la inferencia en bucle ("looped inference") requiere soporte de motor compilado compatible, y de que la cuantizacion no ha sido cualificada por el distribuidor: las puntuaciones publicadas corresponden al modelo fuente, no a este fichero GGUF.
+El modelo tiene 3.975.229.440 parámetros totales, incluyendo embeddings y las modalidades de origen del checkpoint, y se distribuye con licencia OpenMDW 1.1. Su rasgo técnico más distintivo es una arquitectura recurrente con bucles: el checkpoint original emplea dos bucles recurrentes, mientras que el GGUF Q5 publicado por NVIDIA codifica cuatro. Esta discrepancia obliga a usar un motor de inferencia compilado compatible con el perfil concreto de bucles, algo que la model card subraya explícitamente.
 
-La informacion disponible es limitada: no se documentan longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni detalles de arquitectura mas alla de la referencia a inferencia en bucle. Esta ficha recoge unicamente los datos verificables en la informacion proporcionada y marca como "no disponible" todo lo demas.
+La relevancia de esta réplica es doble: por un lado, ofrece un artefacto GGUF listo para llama.cpp con un tamaño que puede caber en GPU de consumo; por otro, preserva el checkpoint BF16 íntegro con paridad tensor a tensor verificada, lo que permite reproducir la inferencia en precisión original. La model card advierte de que la cuantización no ha sido cualificada por Wekala y que los benchmarks publicados corresponden al modelo fuente, no a estos ficheros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card menciona "looped inference" y evaluaciones con "2 loops", lo que apunta a reutilizacion de capas; no se detalla) |
-| Parametros totales | 3.975.229.440 (incluye embeddings y, segun la model card, las modalidades de origen) |
-| Parametros activos | no disponible (no se documenta una arquitectura MoE) |
+| Arquitectura | Transformer recurrente con bucles (2 bucles en el checkpoint original, 4 en el GGUF Q5 de NVIDIA) |
+| Parametros totales | 3.975.229.440 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q5_K_M (unico fichero publicado, exportacion oficial de NVIDIA) |
-| Idiomas soportados | no disponible (la model card menciona tareas multilingues y de arabe en la evaluacion pendiente, sin listar idiomas) |
-| Licencia | OpenMDW 1.1 (`other` en metadatos de Hugging Face, con `license_name: openmdw-1.1`) |
-| Formato de pesos | GGUF (fichero `NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf`, 3,673 GB) |
+| Tipos de cuantizacion | Q5_K_M (GGUF oficial de NVIDIA); BF16 (checkpoint original) |
+| Idiomas soportados | no disponible |
+| Licencia | OpenMDW 1.1 |
+| Formato de pesos | GGUF y safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles de arquitectura en la informacion proporcionada. La model card del espejo menciona que la "inferencia en bucle" necesita soporte de un motor compilado compatible, y las puntuaciones publicadas se obtuvieron con "2 loops" como ajuste de evaluacion. Esto sugiere un esquema de computo recurrente o de reutilizacion de bloques, pero no se especifica numero de capas, tipo de atencion, dimension oculta ni si se trata de un transformer denso convencional. Tampoco se documenta si el modelo base es multimodal, aunque el recuento de parametros se describe como "incluye embeddings y modalidades de origen", lo que deja abierta la posibilidad de entradas distintas del texto.
+La información disponible confirma que Dory1.0-4B emplea una arquitectura recurrente con bucles, no un transformer convencional de profundidad fija. El checkpoint original ejecuta dos bucles recurrentes sobre el mismo bloque de parámetros, mientras que la exportación Q5_K_M publicada por NVIDIA codifica cuatro bucles; esta diferencia implica que el número de bucles forma parte del perfil de ejecución y debe coincidir con el soporte del motor compilado. La conversión a GGUF de la réplica BF16 se realizó con la revisión de desarrollo de llama.cpp documentada por NVIDIA (`98a74c97ea09ac72f6ceda1559808fc0a2f447ce`), adaptando únicamente un config declarativo derivado a los nombres de campo heredados de ese port. La paridad de nombres, formas y valores de bytes se verificó para los 507 tensores con almacenamiento BF16.
 
-Respecto al entrenamiento, no hay informacion sobre volumen de tokens, composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por instrucciones. La model card indica unicamente que Nile Academy actua como espejo oficial del artefacto o como conversion de formato explicitamente registrada, sin entrenamiento adicional, y que las tarjetas y avisos del publicador original se conservan en `provenance/`. El modelo base fue publicado el 2026-10-16 segun la evidencia de fecha del publicador, con revision fijada `b366b87f762ea334ba3eb55912031baba1515810`.
+No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. La model card tampoco detalla innovaciones adicionales como decodificación especulativa o atención lineal. El dato relevante para producción es que el modelo requiere un motor con soporte de inferencia recurrente: los resultados publicados no cualifican la cuantización y la réplica no incluye un perfil compilado del motor Dory.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline declarado es `text-generation` y el repositorio incluye la etiqueta `conversational`.
-- Razonamiento de nivel experto segun el publicador: 72,41 % en GPQA Diamond con 2 loops (medido sobre el modelo fuente, no sobre esta cuantizacion).
-- Ingenieria de software y resolucion de issues: 59,5 % en SWE-bench Verified con 2 loops, segun el harness del publicador.
-- Ejecucion de tareas en terminal: 18,1 % en Terminal-Bench 2.1 con 2 loops, un resultado bajo que acota su uso en automatizacion de shell.
-- Soporte de tool calling / function calling: la model card del espejo menciona plantilla nativa de chat, herramientas y plantillas en la plataforma Wekala, pero indica que la cualificacion de chat, tool y plantilla esta pendiente.
-- Uso como agente multi-paso: los benchmarks publicados (SWE-bench, Terminal-Bench) se evaluaron en modo agente, aunque el rendimiento real en esta cuantizacion no esta medido.
-- Capacidades multilingues: no disponibles; la model card incluye tareas multilingues y de arabe en el plan de evaluacion pendiente, sin especificar idiomas cubiertos.
-- Modo "thinking" o bucles de razonamiento: el ajuste "2 loops" sugiere un mecanismo de computo iterativo, pero no se describe como modo de pensamiento explicito.
+- Generación de texto conversacional, con pipeline declarado `text-generation` y etiqueta `conversational`.
+- Razonamiento de nivel científico: la model card reporta GPQA Diamond con 72,41 % en el protocolo del publicador.
+- Ingeniería de software: SWE-bench Verified con 59,5 % y Terminal-Bench 2.1 con 18,1 %, ambos con 2 bucles y arnés del publicador.
+- Soporte de tool calling y plantillas de chat: la model card menciona chat, tool y template como componentes pendientes de cualificación en el runtime Wekala, lo que confirma que el modelo fuente los contempla.
+- Capacidades multilingües y de árabe: la model card cita tareas multilingües y en árabe entre las evaluaciones previstas, aunque no publica resultados.
+- Modo de razonamiento con bucles: el número de bucles recurrentes actúa como parámetro de cómputo en inferencia (2 o 4 según el fichero).
 
 ## Casos de uso
 
-- Asistente local en puesto de trabajo: el fichero Q5_K_M ocupa 3,673 GB, por lo que cabe en GPUs de consumo de 8 GB o mas y permite un asistente de texto que no sale de la maquina del usuario, con llama.cpp u Ollama como motor.
-- Revisión de codigo en pipelines de integracion continua: el 59,5 % declarado en SWE-bench Verified lo hace plausible para tareas de parcheo acotado y generacion de diffs, siempre que se valide el resultado con tests y se asuma que la cifra corresponde al modelo fuente sin cuantizar.
-- Prototipado de agentes con herramientas: la etiqueta `conversational` y la referencia a plantillas de chat y herramientas permiten montar un bucle de agente basico; conviene instrumentar permisos y validacion porque la propia tarjeta advierte de que las llamadas a herramientas son propuestas sujetas a la admision de la aplicacion consumidora.
-- RAG sobre documentacion interna: con contexto limitado o desconocido, el uso realista es recuperacion de pocos fragmentos y respuestas cortas; requiere medir la ventana efectiva antes de disenar el troceado, ya que la longitud de contexto no esta publicada.
-- Evaluacion comparativa de cuantizaciones: util como variante Q5_K_M frente al BF16 de NVIDIA en un banco de pruebas pareado de instrucciones, conocimiento, matematicas, multilinguismo y herramientas, tal como recomienda la propia model card antes de recomendar el artefacto.
-- Despliegue en entornos aislados o sin conectividad: al ser un unico fichero GGUF con licencia OpenMDW 1.1, encaja en escenarios de laboratorio o industrial con red restringida, donde un modelo de ~4B en CPU es suficiente para tareas de extraccion y resumen.
-- Docencia y experimentacion: el tamano reducido y el formato GGUF permiten reproducir experimentos de inferencia en bucle y comparar comportamiento con y sin compatibilidad de motor, un detalle relevante dado el aviso sobre "looped inference".
+- Razonamiento científico asistido: con un 72,41 % en GPQA Diamond, el modelo es adecuado para responder preguntas de nivel posgrado en física, química y biología dentro de un asistente de investigación, siempre que se ejecute con el perfil de bucles correcto.
+- Reparación de incidencias en repositorios: el 59,5 % en SWE-bench Verified lo sitúa como candidato para agentes que leen un issue, localizan el fichero afectado y proponen un parche, integrándolo en un pipeline de CI que valide el diff antes de abrir el pull request.
+- Automatización de terminal y tareas de sistema: el 18,1 % en Terminal-Bench 2.1 permite usarlo en agentes que ejecutan comandos de shell encadenados, con la advertencia de que las llamadas a herramientas son propuestas sujetas a la admisión y permisos de la aplicación consumidora.
+- Despliegue en estación de trabajo con GPU de consumo: la cuantización Q5_K_M de 3,673 GB permite cargar el modelo en llama.cpp sobre una GPU con 8 GB de VRAM, dejando margen para el estado de contexto y los buffers, aunque la model card exige un perfil medido de operación sostenida en 8 GB.
+- Evaluación comparativa de cuantizaciones: al incluir tanto el BF16 original como el Q5_K_M en el mismo repositorio, sirve para campañas de evaluación emparejada referencia/variante en tareas de instrucción, conocimiento, matemáticas, multilingüe y herramientas.
+- Investigación sobre arquitecturas recurrentes: el checkpoint BF16 con paridad tensor a tensor verificada permite reproducir experimentos sobre bucles recurrentes y comparar el efecto de 2 frente a 4 bucles en la calidad de salida.
+- Asistente conversacional multi-turno autoalojado: la licencia OpenMDW 1.1 y el formato GGUF facilitan su integración en servicios internos sin dependencia de API externa, con la salvedad de que la longitud de contexto no está documentada.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Puntuacion (%) | Modo y ajustes |
-|---|---:|---|
-| GPQA Diamond | 72,41 | 2 loops; protocolo del publicador; no normalizado entre modelos; no medido sobre esta cuantizacion |
-| SWE-bench Verified | 59,5 | 2 loops; harness del publicador; no normalizado entre modelos; no medido sobre esta cuantizacion |
-| Terminal-Bench 2.1 | 18,1 | 2 loops; harness del publicador; no normalizado entre modelos; no medido sobre esta cuantizacion |
+Resultados reportados por el publicador sobre el modelo fuente. No son mediciones de Wekala sobre estos ficheros cuantizados, no están normalizados entre modelos y corresponden a 2 bucles.
 
-No se han publicado resultados de benchmarks sobre el fichero Q5_K_M en la informacion disponible. Las cifras anteriores corresponden al modelo fuente segun el publicador, con harness, precision y versiones de tarea potencialmente distintas; la model card indica explicitamente que no deben tratarse como una clasificacion normalizada entre modelos.
+| Benchmark | Resultado (%) | Modo |
+|---|---:|---|
+| GPQA Diamond | 72,41 | 2 bucles, protocolo del publicador |
+| SWE-bench Verified | 59,5 | 2 bucles, arnés del publicador |
+| Terminal-Bench 2.1 | 18,1 | 2 bucles, arnés del publicador |
+
+No se han publicado resultados de latencia ni throughput en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero de pesos ocupa 3,673 GB; hay que sumar estado de contexto, buffers de trabajo y margen del driver. Como referencia practica, entre 5 y 8 GB para contextos moderados, cifra no medida por el publicador.
-- GPU recomendadas: no hay recomendaciones oficiales en la informacion disponible. Por tamano, una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4090, L4, A10G o A100/H100 pueden alojarlo con holgura creciente; la model card advierte de que el ajuste sostenido en 8 GB de VRAM requiere perfiles medidos propios.
-- Cabe en GPU de consumo: si, en cualquier tarjeta con 8 GB o mas de VRAM, siempre que el motor soporte la inferencia en bucle del modelo.
-- Opciones de despliegue: llama.cpp y derivados (llama-cpp-python, Ollama si la arquitectura esta soportada) son la via natural para GGUF; vLLM o TGI solo si admiten esta arquitectura y el formato. La model card subraya que la inferencia en bucle necesita soporte de motor compilado compatible y que no se instala ningun backend automaticamente.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por peticion para este fichero.
-- Cualificacion movil y navegador: pendiente segun la model card; no se debe asumir funcionamiento en esos entornos sin un perfil medido.
+- VRAM estimada: aproximadamente 3,7 GB para los pesos Q5_K_M, más el estado de contexto, buffers de scratch y margen del driver, que la model card excluye explícitamente del tamaño del fichero.
+- VRAM para BF16: el checkpoint original ocupa 7.950.515.472 bytes en disco; el uso real en memoria es superior y no equivale al tamaño del fichero.
+- GPU de consumo: la model card indica que la operación sostenida en 8 GB de VRAM requiere un perfil medido propio; no se confirma compatibilidad con GPU de gama baja ni con móvil o navegador.
+- GPU de centro de datos: no se especifican modelos recomendados (A100, H100, RTX 4090) en la información disponible.
+- Despliegue: llama.cpp con soporte de inferencia recurrente; la conversión cita la revisión `98a74c97ea09ac72f6ceda1559808fc0a2f447ce`. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye datos de modelos comparables. La siguiente tabla recoge la comparacion con alternativas de la misma clase de tamano (3-4B parametros, licencia permisiva) usando exclusivamente caracteristicas publicas conocidas de esas familias; los datos de rendimiento de las alternativas no forman parte de la informacion suministrada y se marcan como no disponibles.
-
-| Modelo | Parametros | Contexto | Licencia | Datos de benchmarks en la informacion disponible |
-|---|---|---|---|---|
-| Nemotron Dory 1.0 4B (este, Q5_K_M) | 3,975 mil millones | no disponible | OpenMDW 1.1 | GPQA Diamond 72,41; SWE-bench Verified 59,5; Terminal-Bench 2.1 18,1 (modelo fuente) |
-| Qwen3-4B | 4 mil millones aprox. | no disponible en esta ficha | Apache 2.0 | no disponible |
-| Llama 3.2 3B Instruct | 3,2 mil millones | no disponible en esta ficha | Llama 3.2 Community License | no disponible |
-| Gemma 3 4B | 4 mil millones aprox. | no disponible en esta ficha | Gemma Terms of Use | no disponible |
-
-Elementos diferenciales verificables de este artefacto: licencia OpenMDW 1.1 (distinta de Apache 2.0 y de las licencias comunitarias de Meta y Google, con terminos que deben revisarse antes de uso comercial), publicacion exclusiva en GGUF Q5_K_M, y dependencia de un motor compatible con inferencia en bucle, lo que reduce la portabilidad frente a transformers estandar.
+No disponible. La información proporcionada no incluye modelos alternativos de la misma categoría ni datos comparables de parámetros, contexto o licencia.
 
 ## Limitaciones y advertencias
 
-- Cuantizacion no cualificada: la model card declara "not qualified" la cualificacion amplia de calidad de cuantizacion y no se hace ninguna afirmacion general de "sin perdida significativa de calidad". Las puntuaciones publicadas no se midieron sobre este fichero.
-- Dependencia de motor: la inferencia en bucle requiere soporte compilado compatible; sin el, el modelo puede no ejecutarse o hacerlo de forma incorrecta.
-- Sesgos: no disponibles. No se documenta ninguna evaluacion de sesgo, toxicidad o fairness.
-- Alucinacion: riesgo inherente a un modelo de ~4B; la model card advierte de que puede producir salidas incorrectas o inseguras. No hay datos de tasa de alucinacion.
-- Idiomas: no se listan idiomas soportados y la evaluacion multilingue, incluido arabe, esta pendiente segun la propia tarjeta.
-- Tool calling: las llamadas a herramientas son propuestas sujetas a los permisos de la aplicacion consumidora y a la admision del controlador; no deben ejecutarse sin validacion.
-- Licencia: OpenMDW 1.1 impone terminos que hay que revisar para uso comercial y para redistribucion; el repositorio no concede derechos sobre el SDK de Wekala.
-- Madurez del artefacto: repositorio con 0 descargas y 0 "likes", creado y actualizado el 2026-10-19, sin cualificacion de chat, herramientas, plantilla, ajuste sostenido en GPU ni movil/navegador. No hay historial de uso que respalde su fiabilidad en produccion.
-- Contexto desconocido: al no publicarse la longitud de contexto, cualquier diseno de prompt, RAG o agente debe validarse empiricamente antes de desplegar.
-- Rendimiento en terminal bajo: 18,1 % en Terminal-Bench 2.1 desaconseja su uso para automatizacion autonoma de shell o tareas de sistema sin supervision.
+- La cuantización Q5_K_M no ha sido cualificada por Wekala; no se hace ninguna afirmación de "sin pérdida significativa de calidad" y se exige evaluación emparejada referencia/variante antes de recomendarla.
+- Los benchmarks publicados corresponden al modelo fuente con 2 bucles; el GGUF Q5 de NVIDIA codifica 4 bucles, por lo que los resultados no son directamente trasladables a ese fichero.
+- El modelo requiere un motor compilado compatible con el perfil de bucles; sin él, la inferencia recurrente no funciona correctamente.
+- Riesgo de alucinación y de salidas incorrectas o inseguras, reconocido explícitamente en la model card.
+- Las llamadas a herramientas son propuestas que la aplicación consumidora debe admitir y limitar según sus permisos.
+- Idiomas soportados y longitud de contexto no documentados, lo que impide garantizar cobertura multilingüe o conversaciones largas.
+- La licencia OpenMDW 1.1 rige los pesos; el repositorio no concede derechos sobre el SDK de Wekala. Conviene revisar los términos de OpenMDW 1.1 antes de un uso comercial.
+- La model card no ofrece datos sobre sesgos conocidos ni sobre el proceso de alineación del modelo fuente.
 
 ## Enlaces
 
-- Repositorio Hugging Face del GGUF: https://huggingface.co/nile-academy/nemotron-dory1.0-4b-gguf
-- Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
-- Revision fijada del modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/tree/b366b87f762ea334ba3eb55912031baba1515810
-- Model card exacta del publicador: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/blob/b366b87f762ea334ba3eb55912031baba1515810/README.md
-- Texto de la licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-
-La busqueda web no devolvio resultados relevantes sobre este modelo: los enlaces encontrados corresponden a una consultora de asuntos publicos, a la enciclopedia del rio Nilo y a una marca de ropa, ninguno relacionado con el artefacto. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos adicionales en la informacion proporcionada.
+- Repositorio Hugging Face de la réplica: https://huggingface.co/nile-academy/nemotron-dory1.0-4b-gguf
+- Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
+- Revisión fijada del modelo original: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/blob/b366b87f762ea334ba3eb55912031baba1515810/README.md
+- Checkpoint BF16 preservado: https://huggingface.co/nile-academy/nemotron-dory1.0-4b-gguf/tree/main/original/b366b87f762ea334ba3eb55912031baba1515810
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

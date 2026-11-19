@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-i1-GGUF es una colección de cuantizaciones GGUF con imatrix (matriz de importancia) del modelo DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source, publicada por el cuantizador mradermacher. El modelo base es un fine-tune de 27.320.697.856 parámetros (aproximadamente 27B) construido sobre la familia Qwen, orientado a escritura creativa, ficción de terror, roleplaying y simulaciones de personajes, con un enfoque deliberadamente "uncensored" y "abliterated" (sin restricciones de alineación). Según las etiquetas del autor, incorpora 13 modos de razonamiento, 13 modos instruct y 10 "constructos de IA maligna" como personalidades preconfiguradas.
+Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-i1-GGUF es una colección de cuantizaciones GGUF (formato i1, con matriz de importancia) del modelo DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source, un fine-tune de 27.320.697.856 parámetros etiquetado como "abliterated", "uncensored" y "heretic", orientado a escritura creativa de terror, rol y simulación. El autor de las cuantizaciones es mradermacher, que publica versiones optimizadas para inferencia local en CPU y GPU de gama media mediante llama.cpp y derivados.
 
-La relevancia de esta ficha no está tanto en el modelo base como en el trabajo de cuantización: mradermacher ofrece 17 variantes cuantizadas que van desde 11 GB (i1-Q2_K) hasta 22,5 GB (i1-Q6_K), lo que permite ejecutar un modelo de 27B en hardware de consumo. La cuantización con imatrix (IQ) suele preservar mejor la calidad que las cuantizaciones estáticas de tamaño equivalente. El repositorio de cuantizaciones estáticas complementarias también está disponible, y se indica que el modelo base sería un modelo de visión, con los ficheros mmproj en el repositorio estático.
+El modelo base parte de la familia Qwen3.8 (27B) y ha sido modificado para eliminar las capas de rechazo y alineación de seguridad, de ahí las etiquetas "abliterated" y "heretic". La model card declara 13 modos de razonamiento, 13 modos de instrucción y 10 "EVIL AI Constructs" (incluido "Turbo-Brilliance Evil Ed"), además de un "Halloween O/S" como envoltorio temático. El repositorio pesa 218,6 GB e incluye cuantizaciones desde Q2_K (11,0 GB) hasta Q6_K (22,5 GB).
 
-Cabe destacar que se trata de un modelo temático de terror/Halloween con contenido potencialmente perturbador (etiquetado "not-for-all-audiences"), pensado para usos creativos y de entretenimiento, no para tareas productivas generales. La licencia heredada es Apache 2.0.
+Su relevancia actual es acotada: no es un modelo de propósito general ni compite en benchmarks estándar, sino una variante de nicho para generación creativa sin filtros en inglés. La licencia declarada es Apache 2.0, aunque el contenido generado puede ser inapropiado para producción sin moderación adicional.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen), no disponible el detalle exacto |
-| Parametros totales | 27.320.697.856 (≈27B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B); detalles de atención no disponibles |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (todas con imatrix) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones imatrix); el modelo base está en safetensors |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de imatrix) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un fine-tune de un modelo Qwen de 27B parámetros realizado por DavidAU (con herramientas de Unsloth, según las etiquetas). No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO; de hecho, las etiquetas "abliterated" y "uncensored" indican que se han eliminado o mitigado las capas de rechazo del modelo original, lo contrario de un proceso de alineación por preferencias humanas. Las etiquetas del autor mencionan "13 reasoning modes", "13 instruct modes" y "10 EVIL AI Constructs", lo que sugiere plantillas de prompt o personalidades específicas incluidas en la model card del modelo fuente, aunque los detalles técnicos no están disponibles en esta ficha.
+La información disponible no detalla la arquitectura interna más allá de que se trata de un transformer derivado de Qwen3.8-27B. El modelo base ha sido sometido a un proceso de "abliteration" (eliminación de direcciones de rechazo en el espacio de activaciones) y etiquetado como "heretic", lo que sugiere un fine-tune adicional para reducir la adherencia a políticas de seguridad. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
-La aportación de mradermacher es la cuantización GGUF con matriz de importancia (imatrix), una técnica que calcula estadísticas de activación sobre un corpus de calibración para asignar con mayor precisión los niveles de cuantización de cada tensor. Las cuantizaciones IQ (IQ3_S, IQ4_XS, etc.) suelen superar en calidad a las cuantizaciones K de tamaño similar. La model card también indica que el modelo base sería un modelo de visión, con los ficheros mmproj disponibles en el repositorio de cuantizaciones estáticas.
+Las cuantizaciones publicadas por mradermacher emplean el método i1 (imatrix) de llama.cpp, que calcula una matriz de importancia a partir de datos de calibración para preservar mejor la perplejidad en tamaños bajos. El autor incluye una tabla de tamaños por cuantización y recomienda IQ3_XXS sobre Q2_K y IQ3_S sobre Q3_K*, así como Q4_K_M como opción "rápida y recomendada". No se documentan innovaciones arquitectónicas propias (decodificación especulativa, atención lineal, etc.).
 
 ## Capacidades
 
-- Generación de texto creativo: escritura de ficción de terror, historias y "todos los géneros" según las etiquetas del autor.
-- Roleplaying y simulación de personajes: incluye 10 personalidades preconfiguradas ("EVIL AI Constructs") y un "Halloween O/S".
-- Razonamiento: el autor anuncia 13 modos de razonamiento y soporte de "thinking" (pensamiento extendido estilo Qwen3), aunque el funcionamiento exacto no está documentado aquí.
-- Instrucciones: 13 modos instruct anunciados por el autor.
-- Contenido sin restricciones: al estar "abliterated" y "uncensored", no rechaza peticiones que los modelos alineados sí rechazarían; esto es una capacidad buscada en este nicho, pero también un riesgo.
-- Visión: la model card del cuantizador indica que el modelo base es un modelo de visión; los ficheros mmproj están en el repositorio estático. No disponible más detalle.
-- Multilingüe: solo se declara soporte de inglés; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Generación de texto creativo en inglés: ficción, terror, relatos y escritura de todos los géneros según las etiquetas del autor.
+- Roleplaying y simulación de personajes, incluidos los "10 EVIL AI Constructs" declarados en la model card.
+- Modo "thinking"/razonamiento: la model card menciona 13 modos de razonamiento y 13 modos de instrucción, aunque no se detalla su funcionamiento.
+- Modo "Halloween O/S": envoltorio temático de sistema declarado por el autor.
+- Conversación multi-turno (etiqueta "conversational").
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni capacidades multilingües más allá del inglés.
+- Contenido sin censura: el modelo está diseñado explícitamente para no rechazar peticiones, incluidas las de contenido sensible (etiqueta "not-for-all-audiences").
 
 ## Casos de uso
 
-- Escritura de ficción de terror: generación de relatos largos, novelas por capítulos y prosa oscura; el modelo está fine-tuned específicamente para el género de horror y la escritura creativa de todos los géneros.
-- Roleplaying interactivo: creación de personajes para juegos de rol narrativos o plataformas tipo SillyTavern, aprovechando las personalidades preconfiguradas ("EVIL AI Constructs") y los modos instruct/reasoning.
-- Diseño de NPCs para videojuegos: generación de diálogos y personalidades de personajes siniestros o villanos para juegos de terror, donde la falta de filtros permite diálogos más crudos.
-- Generación de guiones y contenido para Halloween: ideas de historias, atmósferas y diálogos para podcasts, creepypastas o contenido de entretenimiento temático.
-- Experimentación con modelos abliterated: investigación sobre cómo la eliminación de capas de alineación afecta al comportamiento y la calidad de generación de un modelo Qwen de 27B.
-- Prueba de cuantizaciones imatrix en hardware de consumo: el abanico de 17 cuantizaciones (de 11 a 22,5 GB) lo hace útil como banco de pruebas para comparar la degradación de calidad entre niveles IQ/K en modelos de 27B.
-- Escritura asistida sin filtros para autores adultos: autores que necesitan explorar temas oscuros, violencia ficticia o contenido maduro que los modelos comerciales rechazan.
+- Escritura de ficción de terror y relatos cortos: el fine-tune está orientado a narrativa de género y mantiene coherencia en textos largos dentro de su ventana de contexto (longitud no especificada); adecuado para autores que buscan borradores sin filtros editoriales automáticos.
+- Roleplaying y juegos de mesa narrativos: los modos de personaje y los "EVIL AI Constructs" permiten encarnar antagonistas y simulaciones de villanos en partidas o prototipos de videojuegos.
+- Generación de contenido para campañas temáticas de Halloween: el "Halloween O/S" y las etiquetas de horror lo hacen idóneo para material estacional de marketing o eventos, siempre con revisión humana.
+- Prototipado de narrativa interactiva: su naturaleza conversacional permite construir árboles de diálogo ramificados para novelas visuales o aventuras conversacionales en local.
+- Investigación sobre alineación y abliteration: útil como caso de estudio de modelos "uncensored" para medir qué se pierde y qué se gana al eliminar capas de rechazo, comparándolo con el Qwen3.8-27B original.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M (16,9 GB) y Q5_K_M (19,6 GB) permiten ejecutarlo en GPUs de 24 GB (RTX 3090/4090) con llama.cpp u Ollama, sin depender de la nube.
+- Generación de guiones para podcasts de terror o audiodramas: el tono y la ausencia de filtros facilitan borradores rápidos que luego se editan manualmente.
 
 ## Benchmarks y rendimiento
 
@@ -53,39 +53,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (GGUF, sin contexto extra): i1-Q2_K (11 GB) cabe en una RTX 3060 de 12 GB; i1-Q4_K_M (16,9 GB) requiere una GPU de 24 GB como RTX 3090/4090 o se puede repartir con offload a CPU; i1-Q5_K_M (19,6 GB) y i1-Q6_K (22,5 GB) necesitan 24 GB de VRAM o descarga parcial a RAM.
-- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para las cuantizaciones Q4-Q6 completas; RTX 3060 12 GB o RTX 4060 Ti 16 GB para las cuantizaciones Q2/Q3. En servidor, cualquier GPU con 24 GB o más (A100, L40S) ejecuta todas las variantes con holgura.
-- Consumer GPU: sí, cabe en GPUs de consumo; con una RTX 4090 se puede ejecutar hasta i1-Q6_K íntegramente en VRAM; con 12-16 GB hay que usar las cuantizaciones bajas o hacer offload de capas a CPU/RAM.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, koboldcpp (habitual para roleplaying), y cualquier runtime compatible con GGUF. No está indicado soporte para vLLM o TGI con estos ficheros cuantizados.
-- Latencia y throughput: no disponible. En general, las cuantizaciones Q4 sobre un modelo de 27B alcanzan velocidades cómodas en una RTX 4090, mientras que las variantes con offload a CPU sufren una caída notable de tokens/segundo.
+- VRAM estimada para inferencia: ~11 GB (i1-Q2_K), ~16,9 GB (i1-Q4_K_M), ~19,6 GB (i1-Q5_K_M), ~22,5 GB (i1-Q6_K). Hay que sumar el espacio para el contexto KV, que crece con la longitud de secuencia.
+- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40/80 GB o H100 para Q6_K con contextos largos; GPUs de 16 GB (RTX 4080, A4000) solo para cuantizaciones Q3 o IQ3.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con Q4_K_M o Q5_K_M; en GPUs de 12-16 GB solo con Q2_K o IQ3_S y contextos reducidos, o mediante offload parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El modelo base en safetensors requiere transformers con aceleración de GPU.
+- Latencia y throughput: no disponibles. Como referencia cualitativa, las cuantizaciones Q4_0 y Q4_K_M están marcadas por el autor como "fast", y Q4_K_S como "óptima en tamaño/velocidad/calidad".
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Enfoque |
-|---|---|---|---|---|
-| Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored (esta ficha) | 27B | GGUF (imatrix), safetensors en base | Apache 2.0 | Terror, escritura creativa, uncensored, roleplaying |
-| Qwen3-30B-A3B (oficial, no disponible comparativa de rendimiento) | 30B (MoE, 3B activos) | safetensors, GGUF comunitario | Apache 2.0 | Uso general, razonamiento, multilingüe |
-| Dolphin 3.0 (basado en Qwen/Llama, no disponible detalle exacto) | variable (8B-24B según versión) | safetensors, GGUF comunitario | Apache 2.0 / otras | Fine-tune uncensored de uso general |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored (este) | 27,3 B | no disponible | Apache 2.0 | GGUF (i1) y safetensors | Fine-tune sin censura para terror y rol, solo inglés |
+| Qwen3.8-27B (base, sin fine-tune) | ~27 B | no disponible | Apache 2.0 (según familia Qwen) | safetensors, GGUF | Alineado y con rechazos; uso general |
+| DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source | 27,3 B | no disponible | Apache 2.0 | safetensors | Modelo base del que derivan estas cuantizaciones |
+| Otras variantes "abliterated" de la familia Qwen | ~27 B | no disponible | Apache 2.0 | safetensors, GGUF | Misma técnica de eliminación de rechazos; rendimiento no comparable sin benchmarks |
 
-Nota: no hay benchmarks que permitan comparar rendimiento numérico; la comparativa se limita a categoría, tamaño y licencia. Dentro del nicho de modelos "uncensored" de escritura creativa, las alternativas más habituales son los fine-tunes Dolphin (Cognitive Computations) y otros modelos de DavidAU, aunque de tamaños y enfoques distintos.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Contenido sensible: el modelo está etiquetado "not-for-all-audiences"; al estar abliterated y uncensored, puede generar contenido violento, perturbador o inapropiado sin rechazarlo. No es apto para entornos de producción orientados a usuarios finales sin filtros adicionales.
-- Riesgo de alucinación: no disponible dato específico, pero como todo LLM puede inventar hechos; al carecer de alineación, no advierte de sus propios errores.
-- Idioma: solo se declara soporte de inglés. El rendimiento en castellano no está documentado y puede ser significativamente peor.
-- Contexto: la longitud de contexto no está documentada en esta ficha; consultar la model card del modelo base o la configuración del tokenizador antes de planificar cargas con documentos largos.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el contenido generado recae en el usuario; los términos del modelo base de DavidAU heredan Apache 2.0 según la model card.
-- Calidad de las cuantizaciones bajas: las variantes i1-Q2_K e i1-Q4_0 están marcadas por el propio cuantizador como de calidad reducida; se recomienda i1-Q4_K_S/M o IQ4_XS como equilibrio.
-- Visión: se declara que el modelo base es un modelo de visión, pero los ficheros mmproj están en el repositorio estático, no en este; verificar compatibilidad antes de asumir capacidades multimodales.
-- Benchmarks: al no existir evaluaciones publicadas, no hay garantías de rendimiento en tareas de razonamiento, código o matemáticas frente al modelo Qwen del que procede.
+- Contenido sin censura: el modelo está diseñado para no rechazar peticiones y puede generar material violento, sexual o perturbador; requiere moderación obligatoria en cualquier despliegue público.
+- Riesgo de alucinación elevado en un fine-tune creativo de nicho, especialmente en tareas factuales o técnicas para las que no fue entrenado.
+- Solo inglés: no se declara soporte de castellano ni de otros idiomas; el rendimiento multilingüe será probablemente deficiente.
+- Longitud de contexto no documentada: no se puede garantizar el manejo de conversaciones o documentos largos sin pruebas empíricas.
+- La licencia Apache 2.0 se declara en la model card, pero el contenido generado puede infringir políticas de plataformas o normativa sobre contenido dañino; la responsabilidad recae en el desplegador.
+- Etiqueta "not-for-all-audiences": no apto para productos dirigidos a menores ni para entornos corporativos sin revisión legal.
+- El proceso de abliteration puede degradar capacidades de razonamiento e instrucción respecto al modelo base; no hay benchmarks que lo cuantifiquen.
+- Repositorio de 218,6 GB: la descarga completa es costosa; conviene bajar solo la cuantización necesaria.
+- Fecha de creación futura (2026-10-30) en los metadatos: verificar la procedencia y el estado real del repositorio antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio GGUF (imatrix): https://huggingface.co/mradermacher/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-i1-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-GGUF
-- Página de descargas resumida: https://hf.tst.eu/model#Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-i1-GGUF
-- FAQ / solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas sobre cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- nethype GmbH: https://www.nethype.de/
+- Perfil de nicoboss: https://huggingface.co/nicoboss

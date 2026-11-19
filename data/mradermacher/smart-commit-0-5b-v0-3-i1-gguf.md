@@ -2,97 +2,94 @@
 
 ## Resumen
 
-`mradermacher/smart-commit-0.5b-v0.3-i1-GGUF` es una coleccion de cuantizaciones GGUF generadas con imatrix a partir del modelo `LucasBRT/smart-commit-0.5b-v0.3`, un modelo de lenguaje de 494.032.768 parametros (~494 M, es decir, 0,5 B) especializado en la generacion automatica de mensajes de commit a partir de diffs de Git. El autor de la cuantizacion es mradermacher, un conocido publicador de versiones GGUF de modelos open source; el modelo original lo desarrolla LucasBRT y se distribuye con licencia Apache 2.0.
+smart-commit-0.5b-v0.3-i1-GGUF es una cuantizacion en formato GGUF del modelo LucasBRT/pionus-0.5b-v0.3, publicada por el usuario mradermacher. Se trata de un modelo especializado en la generacion automatica de mensajes de commit a partir de diffs de Git, afinado para seguir la convencion Conventional Commits. Con 494.032.768 parametros (aproximadamente 0,5 mil millones), esta disenado para ejecutarse en hardware modesto y para integrarse en flujos de trabajo de desarrollo como hooks de Git, extensiones de IDE o pipelines de CI/CD.
 
-El modelo resuelve un problema muy concreto del flujo de trabajo diario de desarrollo: transformar un cambio de codigo en un mensaje de commit descriptivo, idealmente siguiendo la convencion Conventional Commits. Se ha afinado sobre el dataset `JetBrains-Research/commit-chronicle` y emplea DPO (Direct Preference Optimization), segun las etiquetas de la model card. Esta version concreta del repositorio no aporta pesos en safetensors, sino unicamente ficheros GGUF cuantizados en una amplia gama de precisiones (desde IQ1_S hasta Q6_K), pensados para inferencia local en CPU o GPU de gama baja.
+El modelo base fue entrenado sobre el dataset JetBrains-Research/commit-chronicle y emplea tecnicas de DPO (Direct Preference Optimization) para alinear las respuestas con mensajes de commit de alta calidad. Esta version concreta es una cuantizacion con imatrix (i1), que ofrece un catalogo amplio de niveles de compresion desde IQ1_S hasta Q6_K, permitiendo ajustar el equilibrio entre tamano, velocidad y calidad.
 
-Su relevancia actual radica en que permite integrar generacion de mensajes de commit completamente offline y con un coste de hardware minimo (menos de 1 GB de VRAM en las cuantizaciones habituales), lo que facilita su inclusion en hooks de Git, plugins de IDE o pipelines de CI sin depender de APIs externas ni enviar codigo propiedad de la empresa a terceros. La informacion publica no detalla la longitud de contexto, la familia arquitectonica exacta ni resultados de benchmarks.
+Su relevancia actual radica en la demanda de herramientas locales y ligeras para tareas de desarrollo asistido: un modelo de 0,5B en cuantizacion Q4_K_M ocupa alrededor de 0,5 GB y puede ejecutarse en CPU o en GPUs de consumo, lo que facilita su despliegue sin dependencia de APIs externas ni costes por token.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia concreta no especificada en la informacion disponible) |
-| Parametros totales | 494.032.768 (~494 M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | imatrix; i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_S, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_1, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer (derivada de Pionus 0.5B); detalles especificos no disponibles |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q3_K_S, IQ3_S, IQ3_XS, Q2_K, IQ3_M, IQ4_XS, IQ4_NL, Q4_0, Q3_K_M, Q3_K_L, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (este repositorio); safetensors en el modelo base |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un modelo de ~494 M de parametros con pipeline de texto y que el autor clasifica con la etiqueta `transformers`. Por el tamano y el caso de uso, se trata de un transformer decoder-only de propósito general adaptado a una tarea muy especifica, pero la model card no confirma la familia base (Qwen, Llama, SmolLM u otra) ni el numero de capas, dimensiones ocultas o cabezas de atencion. Tampoco se especifica la longitud de contexto durante el entrenamiento ni en inferencia.
+El modelo base, LucasBRT/pionus-0.5b-v0.3, es un transformer de aproximadamente 0,5 mil millones de parametros. Segun las etiquetas de la model card, fue afinado mediante DPO (Direct Preference Optimization) sobre el dataset JetBrains-Research/commit-chronicle, un corpus de commits reales de repositorios Git. El objetivo del entrenamiento es generar mensajes de commit que sigan el formato Conventional Commits (por ejemplo, `feat:`, `fix:`, `docs:`) a partir del diff de cambios.
 
-El ajuste se ha realizado sobre el dataset `JetBrains-Research/commit-chronicle`, un corpus de commits reales publicado por JetBrains Research, y la model card incluye la etiqueta `dpo`, lo que indica que se aplico Direct Preference Optimization para alinear las respuestas hacia mensajes de commit preferidos (probablemente en formato Conventional Commits). No se han publicado el numero de tokens de entrenamiento, la composicion exacta del dataset, la receta de RLHF/DPO ni detalles sobre posibles tecnicas de decodificacion especulativa o atencion lineal. La version aqui descrita es una cuantizacion con imatrix (importancia matricial) que busca preservar mejor la perplejidad que las cuantizaciones estaticas equivalentes en tamano.
+La cuantizacion publicada por mradermacher emplea el metodo i1 con fichero imatrix, que calibra los pesos de cuantizacion usando estadisticas de activacion sobre datos representativos, mejorando la calidad respecto a cuantizaciones estaticas del mismo tamano. El repositorio incluye tambien el fichero imatrix para que otros usuarios puedan generar sus propias cuantizaciones. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni innovaciones arquitectonicas adicionales.
 
 ## Capacidades
 
-- Generacion de mensajes de commit en ingles a partir de un diff de Git, con enfasis en el formato Conventional Commits (feat, fix, chore, docs, etc.).
-- Resumen de cambios de codigo en una sola linea o en formato titulo + cuerpo, segun se le solicite en el prompt.
-- Ajuste por preferencias (DPO) orientado a mensajes concisos y descriptivos.
-- Uso conversacional basico: la etiqueta `conversational` sugiere que acepta plantillas de chat, aunque no se detalla el formato exacto.
-- Inferencia local en CPU o GPU de gama baja gracias a su tamano (~0,5 B de parametros).
-- No se documenta soporte de tool calling / function calling.
-- No se documenta soporte de agentes, multi-step reasoning ni modo thinking.
-- No se documenta vision, audio ni otras modalidades.
-- Multilingue: no; la model card restringe el idioma a ingles (`en`).
+- Generacion de mensajes de commit en formato Conventional Commits a partir de diffs de Git.
+- Comprension de cambios de codigo en ingles (unico idioma declarado).
+- Generacion de texto conversacional segun la etiqueta `conversational`.
+- Especializacion en una tarea unica: no se documentan capacidades generales de razonamiento, matematicas, codigo generativo ni vision.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Hook de pre-commit local: integrar el modelo en un script `pre-commit` o `commit-msg` que reciba el diff preparado y proponga un mensaje de commit, evitando enviar codigo a APIs externas y funcionando incluso sin conexion.
-- Plugin de IDE o extension de VS Code/JetBrains: generar un borrador de mensaje al abrir el panel de commit, con inferencia en el propio portatil del desarrollador (menos de 1 GB de VRAM o incluso en CPU).
-- Normalizacion de historiales de repositorios: procesar por lotes commits antiguos o mal descritos y proponer mensajes conformes a Conventional Commits para reescribir el historial antes de publicar un repositorio.
-- Generacion de changelogs: usar los mensajes generados como base para agrupar cambios por tipo (feat, fix, refactor) y alimentar herramientas como `semantic-release` o `standard-version`.
-- Entornos con requisitos estrictos de privacidad: equipos con codigo propietario o regulado que no pueden usar servicios en la nube pueden desplegar el modelo en una maquina interna o en un contenedor sin salida a Internet.
-- Educacion y onboarding: explicar a desarrolladores junior que hace un diff y como redactar un buen mensaje de commit, mostrando la salida del modelo como ejemplo en talleres o documentacion interna.
-- CI/CD de bajo coste: job que valida que los mensajes de commit siguen el formato y, en caso contrario, sugiere una alternativa generada por el modelo sin necesidad de GPU dedicada.
+- Hooks de Git para commits automaticos: el modelo puede invocarse desde un hook `prepare-commit-msg` para generar un mensaje a partir del diff staged, reduciendo el tiempo dedicado a redactar descripciones y manteniendo consistencia en el historial.
+- Extension de IDE o plugin de editor: integracion en VS Code o JetBrains para sugerir mensajes de commit mientras el desarrollador prepara los cambios, aprovechando el bajo coste de inferencia de un modelo de 0,5B.
+- Estandarizacion de Conventional Commits en equipos: uso en pipelines de CI para validar o reescribir mensajes que no sigan la convencion, mejorando la generacion automatica de changelogs y el versionado semantico.
+- Despliegue local sin conexion: al caber en cuantizaciones de 0,4-0,6 GB, puede ejecutarse en portatiles de desarrollo con CPU o GPU integrada, sin enviar codigo propietario a servicios externos.
+- Servicio interno de revision de commits: exposicion como endpoint HTTP ligero (por ejemplo, con llama.cpp server) para que herramientas internas generen descripciones de cambios en repositorios corporativos.
+- Prototipado y evaluacion de modelos especializados: util como referencia para investigar el rendimiento de modelos pequenos afinados con DPO en tareas de generacion de texto estructurado.
+- Automatizacion de changelogs: combinado con un parser de Conventional Commits, permite construir notas de version a partir de los mensajes generados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye metricas de MMLU, HumanEval, GSM8K ni evaluaciones especificas de calidad de mensajes de commit, y tampoco se ofrecen comparaciones numericas con el modelo base sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre 0,4 y 0,6 GB para las cuantizaciones i1 publicadas (IQ1_S a Q6_K); menos de 1 GB en todos los casos, incluyendo overhead de contexto.
-- GPU recomendadas: cualquier GPU consumer con 2 GB o mas de VRAM es suficiente; tambien funciona en GPUs integradas y en CPU. No requiere A100, H100 ni RTX 4090.
-- Cabe en cualquier GPU consumer (GTX 1050, RTX 3050, RTX 4060, Apple Silicon, etc.) y en la mayoria de telefonos modernos con 1-2 GB de RAM libre.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python; vLLM soporta GGUF de forma parcial; tambien es posible cargar los pesos en `transformers` si se dispone de safetensors del modelo base.
-- Latencia y throughput: no se han publicado mediciones. Por el tamano, se espera una latencia de decenas de milisegundos por commit en GPU consumer y de unos pocos cientos de milisegundos en CPU, pero son estimaciones no verificadas.
-- Recomendacion de cuantizacion: para uso en produccion se sugiere i1-IQ4_XS o i1-Q4_K_M por su equilibrio tamano/calidad; por debajo de Q3 se espera degradacion notable en coherencia.
+- VRAM estimada: entre 0,4 GB (IQ1_S) y 0,6 GB (Q6_K) para los pesos; el contexto y los buffers de inferencia anaden una cantidad adicional no especificada.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre; no requiere A100 ni H100. Una RTX 4090 o similar queda sobredimensionada para este modelo.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1050 en adelante) e incluso en GPUs integradas con suficiente memoria compartida.
+- Tambien puede ejecutarse en CPU: el tamano de 0,5 GB en Q4_K_M permite inferencia en CPU con latencia aceptable para una tarea de generacion corta.
+- Opciones de despliegue: llama.cpp, Ollama (mediante importacion del GGUF), servidores compatibles con endpoints (la etiqueta `endpoints_compatible` sugiere compatibilidad con APIs tipo OpenAI), y librerias que soporten GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/smart-commit-0.5b-v0.3-i1-GGUF | 494 M | no disponible | GGUF (multiples quants imatrix) | Apache 2.0 | Objeto de esta ficha; cuantizaciones con imatrix |
-| LucasBRT/smart-commit-0.5b-v0.3 | 494 M | no disponible | safetensors | Apache 2.0 | Modelo base original sin cuantizar |
-| mradermacher/smart-commit-0.5b-v0.3-GGUF | 494 M | no disponible | GGUF (quants estaticos) | Apache 2.0 | Alternativa con cuantizaciones estaticas |
-| Otros modelos especializados en generacion de mensajes de commit | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+| smart-commit-0.5b-v0.3-i1-GGUF | 494 M | no disponible | Apache 2.0 | GGUF | Especializado en mensajes de commit; cuantizaciones i1 con imatrix |
+| LucasBRT/pionus-0.5b-v0.3 | ~0,5 B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva esta ficha |
+| Modelos generalistas de ~0,5B (p. ej. Qwen2.5-0.5B) | ~0,5 B | variable | variable | safetensors/GGUF | Uso general; no especializados en Conventional Commits |
 
-No se dispone de benchmarks que permitan comparar el rendimiento cualitativo frente a alternativas genericas como modelos de 0,5 B de proposito general (por ejemplo, Qwen2.5-0.5B-Instruct o SmolLM2-360M-Instruct), por lo que la eleccion deberia basarse en pruebas propias sobre el historial de commits del equipo.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo admite ingles; los mensajes generados en castellano u otros idiomas no estan soportados oficialmente y probablemente seran de baja calidad.
-- Modelo altamente especializado: fuera de la generacion de mensajes de commit o resumenes de diffs su rendimiento en tareas generales sera muy limitado.
-- Riesgo de alucinacion: puede describir cambios que no aparecen en el diff o inventar referencias a issues inexistentes; conviene revisar la salida antes de aceptarla.
-- Longitud de contexto desconocida: los diffs grandes pueden truncarse y producir mensajes incompletos o incorrectos.
-- Las cuantizaciones de baja precision (IQ1, IQ2, Q2_K) degradan notablemente la calidad; la propia model card advierte de que algunas estan pensadas para casos "desesperados".
-- Licencia Apache 2.0: permite uso comercial y modificacion con atribucion; aun asi, el dataset de origen (`JetBrains-Research/commit-chronicle`) puede tener sus propias condiciones que conviene revisar.
-- No hay garantias de mantenimiento: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se han publicado evaluaciones independientes.
-- No dispone de pipeline declarado, por lo que algunas herramientas de Hugging Face pueden no reconocerlo automaticamente como tarea de generacion de texto.
-- El repo ocupa 8,6 GB por acumulacion de cuantizaciones; descargar solo el fichero GGUF necesario en lugar de clonar el repositorio completo.
+- El modelo solo declara soporte de ingles; los mensajes de commit en castellano u otros idiomas pueden degradarse.
+- Es un modelo de 0,5B parametros: la calidad de los mensajes generados sera inferior a la de modelos mayores, especialmente en diffs complejos o extensos.
+- Riesgo de alucinacion: puede inventar tipos de commit, alcances o descripciones que no reflejen fielmente los cambios del diff.
+- La longitud de contexto no esta documentada; diffs muy grandes podrian truncarse o degradar la salida.
+- Las cuantizaciones de baja calidad (IQ1_S, IQ1_M, Q2_K_S) pueden producir salidas notablemente peores; se recomienda Q4_K_M o superior para uso en produccion.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base y del dataset de entrenamiento (JetBrains-Research/commit-chronicle) antes de un despliegue comercial.
+- No se documentan capacidades de tool calling, agentes ni vision; no debe emplearse para tareas fuera de la generacion de mensajes de commit.
+- El repositorio tiene 0 likes y la model card es una plantilla generada por la herramienta de cuantizacion; la documentacion sobre el modelo base es escasa.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-i1-GGUF
-- Modelo base: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.3
-- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-GGUF
-- Pagina de descarga del autor para este modelo: https://hf.tst.eu/model#smart-commit-0.5b-v0.3-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-i1-GGUF
+- Modelo base: https://huggingface.co/LucasBRT/pionus-0.5b-v0.3
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#smart-commit-0.5b-v0.3-i1-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/JetBrains-Research/commit-chronicle
-- FAQ y peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests

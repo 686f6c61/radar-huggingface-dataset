@@ -2,51 +2,49 @@
 
 ## Resumen
 
-MOSS-Image-depth-controlnet es un adaptador LoRA de tipo ControlNet para el modelo de generación y edición de imágenes MOSS-Image-SFT, desarrollado por el usuario thedeoxen sobre el modelo base de OpenMOSS-Team. Su función es condicionar la generación de imágenes a un mapa de profundidad en escala de grises (con las superficies cercanas en blanco y el fondo en negro), de modo que el modelo respete la disposición espacial de cerca a lejos mientras el prompt de texto define la identidad, los materiales, la ropa y el estilo visual.
+MOSS-Image-depth-controlnet es un adaptador LoRA de control por profundidad para el modelo generativo de imágenes MOSS-Image-SFT, desarrollado por el usuario thedeoxen y publicado bajo licencia Apache 2.0. Se trata de un LoRA tipo ControlNet que permite condicionar la generación de imágenes a un mapa de profundidad en escala de grises (cerca en blanco, lejos en negro), de modo que el modelo respeta la disposición espacial y la distancia de cámara del mapa de control mientras el prompt de texto define el sujeto, los materiales y el estilo.
 
-El adaptador se entrenó como un "edit LoRA" al estilo ControlNet, no como el adaptador oficial de concatenación de color/profundidad de MOSS. Se carga con un cargador de LoRA estándar y se le pasa una única imagen de control a través del nodo Text Encode MOSS-Image Edit. Tiene rango 64 en las capas lineales y rango 16 en las convolucionales, y el checkpoint seleccionado corresponde al paso de entrenamiento 5000.
+El adaptador se construye sobre OpenMOSS-Team/MOSS-Image-SFT y se distribuye en formato safetensors para la librería diffusers, con un flujo de trabajo de ComfyUI incluido. El checkpoint seleccionado corresponde al paso de entrenamiento 5000. El repositorio ocupa aproximadamente 0,3 GB, lo que refleja que se trata de un adaptador ligero y no de un modelo completo.
 
-Es relevante porque permite reutilizar el modelo base MOSS-Image-SFT para tareas de control estructural por profundidad sin necesidad de reentrenar el modelo completo, y porque incluye un flujo de trabajo listo para ComfyUI que integra Depth Anything V2 para construir el mapa de control. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
+Su relevancia radica en que aporta control estructural preciso a un modelo de edición de imágenes sin necesidad de reentrenar el modelo base: basta con cargar el LoRA sobre el UNet y pasar un único mapa de control a través del nodo de codificación de texto de MOSS-Image Edit. Es una pieza práctica para flujos de trabajo de image-to-image donde la composición de cámara importa más que el detalle de cada borde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA de tipo ControlNet sobre el modelo de difusion MOSS-Image-SFT (adaptador de edicion) |
-| Parametros totales | no disponible (pesos del adaptador en un unico safetensors; el modelo base no declara cifra en la informacion) |
+| Arquitectura | LoRA tipo ControlNet sobre MOSS-Image-SFT (adaptador de edición); rank 64 en capas lineales y rank 16 en convoluciones |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible para el LoRA; el modelo base se distribuye con UNet int8 (`moss_image_sft_int8_convrot.safetensors`) y text encoder `qwen3.5_9b_w4a8_gptq.safetensors` |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | no disponible para el LoRA; el modelo base se usa con UNet int8 (`moss_image_sft_int8_convrot.safetensors`) y text encoder w4a8 GPTQ |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (`moss_image_sft_depth_control_lora.safetensors`) |
+| Formato de pesos | safetensors (diffusers); incluye workflow de ComfyUI en JSON |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de tipo ControlNet que se aplica sobre el UNet del modelo de difusion MOSS-Image-SFT. Segun la model card, el LoRA tiene rango 64 en las capas lineales y rango 16 en las convolucionales, y se entreno como adaptador de edicion: la imagen de control (el mapa de profundidad) actua como referencia y el prompt describe la imagen a generar. El checkpoint publicado corresponde al paso de entrenamiento 5000, con la cache KV activada durante el entrenamiento.
+El adaptador es un LoRA de control por profundidad con rank 64 en las capas lineales y rank 16 en las convoluciones. Se entrenó como adaptador de edición: la imagen de control actúa como referencia y el prompt describe la imagen a generar. El checkpoint publicado corresponde al paso 5000 de entrenamiento. No se especifica en la información disponible el número total de tokens de entrenamiento ni la composición exacta del dataset.
 
-El control se construye a partir de un mapa de profundidad en escala de grises con la convencion de que lo cercano es blanco y el fondo cae a negro, igual que en los controles de entrenamiento. El flujo de trabajo incluido genera ese mapa con Depth Anything V2 (`depth_anything_v2_vitl`). El modelo base recomendado es OpenMOSS-Team/MOSS-Image-SFT, que utiliza un UNet int8, un text encoder basado en Qwen 3.5 de 9B cuantizado w4a8 GPTQ y el VAE `flux2-vae_small.safetensors`. No se detalla en la informacion disponible el numero de tokens, la composicion del dataset ni si hubo RLHF o DPO.
+El LoRA se entrena con la caché KV activada y requiere que el formato de edición se configure como `ai-toolkit` tanto en la codificación positiva como en la negativa. Los mapas de control de entrenamiento se generan con Depth Anything V2 (`depth_anything_v2_vitl`), con las superficies cercanas en blanco y el fondo degradándose a negro. El prompt negativo usado en las muestras de entrenamiento es `nsfw, worst quality, bad anatomy, watermark, jpeg artifact`.
 
 ## Capacidades
 
-- Generacion y edicion de imagenes condicionada por un mapa de profundidad en escala de grises (image-to-image).
-- Control de la disposicion espacial de cerca a lejos: el adaptador sigue la estructura de profundidad mientras el prompt define identidad, materiales, ropa y mundo.
-- Definicion de estilo y apariencia mediante prompt de texto, sin palabra de activacion (no trigger word).
-- Funciona como adaptador de control de una sola imagen para MOSS-Image-SFT.
-- Integracion con ComfyUI mediante el nodo Text Encode MOSS-Image Edit y el cargador de LoRA.
-- Ajuste de la rigidez del control bajando la fuerza del LoRA hacia 0,7 (1,0 es el valor entrenado).
-- Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
-- No se documentan en la informacion disponible capacidades de tool calling, agentes, vision, audio ni modo de razonamiento (thinking).
+- Control de composición por profundidad: sigue la disposición de cerca a lejos a partir de un mapa de profundidad en escala de grises.
+- Generación condicionada por prompt: la identidad, los materiales, la ropa y el estilo se definen mediante el texto.
+- Adaptador de control de imagen única para MOSS-Image-SFT.
+- Integración con ComfyUI mediante el nodo Text Encode MOSS-Image Edit y un flujo de trabajo incluido.
+- Compatible con la librería diffusers.
+- Sin palabra de activación (trigger word): la imagen de control fija la estructura.
+- Ajuste de intensidad del LoRA (1.0 como valor entrenado; se puede bajar hacia 0.7 si el control resulta demasiado rígido).
 
 ## Casos de uso
 
-- Reconstruccion de escenas con la misma profundidad de camara en un estilo nuevo: se aporta el mapa de profundidad de la escena original y un prompt que describa el nuevo estilo, y el LoRA mantiene la composicion espacial mientras cambia la apariencia.
-- Separacion de primer plano y fondo al cambiar materiales: util para sustituir texturas o materiales de un objeto cercano sin alterar la relacion de profundidad con el fondo.
-- Diseno de producto e interiores con un sujeto cercano claro: el mapa de profundidad define la colocacion del producto o del mobiliario y el prompt fija materiales y acabados.
-- Generacion de variaciones controladas de una imagen de referencia: a partir de un unico mapa de profundidad se pueden producir multiples resultados cambiando solo el prompt.
-- Previsualizacion de composiciones para fotografia o cine: se valida la estructura de profundidad de una toma antes de generar la imagen final con el estilo deseado.
-- Prototipado en ComfyUI: el flujo incluido (Depth Anything V2 mas Text Encode MOSS-Image Edit) permite montar un pipeline de image-to-image con control de profundidad sin desarrollo adicional.
-- Exploracion de estilos sobre una misma estructura: con regiones de profundidad amplias y planas, el prompt dispone de mas margen para definir textura y detalle.
+- Reconstrucción de escenas con la misma profundidad de cámara en un estilo nuevo: se aporta el mapa de profundidad de la escena original y un prompt que describe el nuevo estilo, y el LoRA mantiene la disposición espacial mientras cambia la apariencia.
+- Separación de primer plano y fondo al cambiar materiales: útil para sustituir materiales de un producto o de un interior manteniendo la relación de distancia entre el sujeto cercano y el entorno.
+- Disposición de productos e interiores con un sujeto cercano claro: el mapa de profundidad define la colocación del objeto principal y el prompt define su aspecto y el entorno.
+- Flujos de image-to-image en ComfyUI: el workflow incluido carga una foto, construye el mapa con Depth Anything V2, lo codifica con el prompt y muestrea, lo que permite integrarlo en pipelines de generación por lotes.
+- Previsualización conceptual de escenas 3D: a partir de un render de profundidad se generan variantes fotorrealistas o estilizadas con la misma composición de cámara.
+- Control de layout en ilustración y diseño: cuando la posición y el tamaño relativo de los elementos importan más que los contornos exactos, el mapa de profundidad guía la composición con libertad para la textura.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +52,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. El adaptador LoRA ocupa 0,3 GB en disco y se suma al modelo base MOSS-Image-SFT, que carga un UNet int8 y un text encoder de 9B cuantizado w4a8 GPTQ; el consumo total depende principalmente del modelo base.
-- GPU recomendadas: no disponibles en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: no disponible. La viabilidad dependera del modelo base y de la cuantizacion empleada.
-- Opciones de despliegue: ComfyUI (flujo incluido) con el nodo Text Encode MOSS-Image Edit y cargador de LoRA; la libreria declarada es diffusers.
-- Parametros de muestreo recomendados: 30 pasos, CFG 4, sampler `euler` con scheduler `simple`, fuerza de LoRA 1,0, formato de edicion `ai-toolkit` en las codificaciones positiva y negativa.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; depende del modelo base MOSS-Image-SFT y de su cuantización (UNet int8 y text encoder w4a8 GPTQ).
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: ComfyUI (workflow incluido) y diffusers.
+- Latencia y throughput estimados: no disponible.
+- Configuración de muestreo del workflow: 30 pasos, CFG 4, sampler `euler` con scheduler `simple`, fuerza del LoRA 1.0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Control | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thedeoxen/MOSS-Image-depth-controlnet | LoRA ControlNet de profundidad sobre MOSS-Image-SFT | no disponible | no disponible | apache-2.0 | Hugging Face, ComfyUI |
-| Adaptador oficial de concatenacion color/profundidad de MOSS | Adaptador nativo del modelo base | no disponible | no disponible | no disponible | no disponible |
-| ControlNet estandar para modelos de difusion (p. ej. Stable Diffusion) | ControlNet de profundidad | no disponible | no disponible | no disponible | no disponible |
+| thedeoxen/MOSS-Image-depth-controlnet | LoRA tipo ControlNet sobre MOSS-Image-SFT | Profundidad (mapa en escala de grises) | Imagen de control única + prompt | apache-2.0 | Hugging Face, ComfyUI |
+| ControlNet para Stable Diffusion | ControlNet completo | Profundidad, Canny, Pose, etc. | Imagen de control + prompt | según variante | Amplia |
+| Adaptador oficial color/depth de MOSS | Adaptador de concatenación | Color y profundidad | Imagen de control + prompt | según modelo base | Hugging Face |
 
-No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos comparables que permitan una comparacion cuantitativa.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El adaptador esta entrenado y recomendado exclusivamente con OpenMOSS-Team/MOSS-Image-SFT; su uso con otros modelos base no esta soportado.
-- Requiere respetar la convencion de profundidad del entrenamiento (cercano en blanco); un mapa invertido "lucha contra el LoRA" y degrada el resultado.
-- El campo de idioma declara solo ingles, por lo que los prompts en otros idiomas pueden no funcionar correctamente.
-- Es un adaptador de edicion, no el adaptador oficial de concatenacion de color/profundidad de MOSS; no debe confundirse con el.
-- Es necesario configurar el formato de edicion `ai-toolkit` en las codificaciones positiva y negativa, ya que el LoRA se entreno con la cache KV activada.
-- El control puede resultar demasiado rigido a fuerza 1,0; se recomienda bajarla hacia 0,7 si es necesario.
-- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al depender del modelo base, hereda los sesgos y limitaciones de este.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base MOSS-Image-SFT antes de desplegarlo en produccion.
+- El LoRA está entrenado exclusivamente para mapas de profundidad con cerca en blanco; un mapa invertido contradice el entrenamiento del adaptador.
+- Requiere el modelo base OpenMOSS-Team/MOSS-Image-SFT y una configuración concreta (formato de edición `ai-toolkit`, caché KV activada); una configuración incorrecta degrada los resultados.
+- Solo soporta inglés según la metadata del repositorio.
+- Las regiones de profundidad planas y extensas dejan más libertad al prompt para la textura, lo que puede reducir el control estructural en esas zonas.
+- Es un adaptador ligero, no un modelo completo: su calidad depende del modelo base.
+- No se han publicado datos de sesgos, tasas de alucinación visual ni evaluaciones cuantitativas en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base MOSS-Image-SFT antes de desplegarlo en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/thedeoxen/MOSS-Image-depth-controlnet
+- Repositorio Hugging Face: https://huggingface.co/thedeoxen/MOSS-Image-depth-controlnet
 - Pesos del LoRA: https://huggingface.co/thedeoxen/MOSS-Image-depth-controlnet/blob/main/moss_image_sft_depth_control_lora.safetensors
-- Flujo de trabajo para ComfyUI: https://huggingface.co/thedeoxen/MOSS-Image-depth-controlnet/blob/main/moss_image_depth_control.json
+- Workflow de ComfyUI: https://huggingface.co/thedeoxen/MOSS-Image-depth-controlnet/blob/main/moss_image_depth_control.json
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "openbmb/MiniCPM-V-4.6-Thinking · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking",
-      "snippet": "MiniCPM-V-4.6-Thinking ... Deploy Copy to bucket new Use this model Libraries Notebooks Local Apps Settings Browse Quantizations to use this model in llama.cpp, Ollama, LM Studio, or any compatible app."
-    },
-    {
-      "title": "openbmb/MiniCPM-V-4.6-Thinking-gguf · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-gguf",
-      "snippet": "This repository hosts the GGUF (llama.cpp) quantized version of MiniCPM-V 4.6 Thinking. For the original BF16 weights and the full model card, please refer to openbmb/MiniCPM-V-4.6-Thinking."
-    },
-    {
-      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
-      "url": "https://github.com/OpenBMB/MiniCPM-V",
-      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
-    },
-    {
-      "title": "MiniCPM-V-4.6-Thinking-gguf · Models",
-      "url": "https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4.6-Thinking-gguf/summary",
-      "snippet": "This repository hosts the GGUF (llama.cpp) quantized version of MiniCPM-V 4.6 Thinking. For the original BF16 weights and the full model card, please refer to openbmb/MiniCPM-V-4.6-Thinking."
-    },
-    {
-      "title": "OpenBMB · GitHub",
-      "url": "https://github.com/OpenBMB",
-      "snippet": "OpenBMB (Open Lab for Big Model Base) aims to build foundation models and systems towards AGI. - OpenBMB"
-    }
-  ]
+  "sources": []
 }

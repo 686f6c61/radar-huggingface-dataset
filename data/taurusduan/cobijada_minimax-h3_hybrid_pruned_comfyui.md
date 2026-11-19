@@ -2,104 +2,87 @@
 
 ## Resumen
 
-Cobijada MiniMax-H3 Hybrid (Pruned, Uncensored) es un checkpoint derivado de MiniMax H3, un diffusion transformer (DiT) conjunto de audio y vídeo pensado para ejecutarse en ComfyUI. No es un modelo entrenado desde cero ni un fine-tune: es un merge por selección de tensores, sin ningún paso de entrenamiento ni optimización basada en gradientes. El autor del merge y de las cuantizaciones es Winnougan, mientras que el repositorio consultado está publicado bajo la cuenta taurusduan, un detalle de procedencia relevante para producción.
+Cobijada MiniMax-H3 Hybrid (Pruned, Uncensored) es un checkpoint fusionado del modelo de difusion MiniMax H3, un diffusion transformer (DiT) conjunto de audio y video desarrollado originalmente por MiniMax y adaptado para su uso en ComfyUI. La fusion la firma el usuario Winnougan (publicada bajo el identificador taurusduan) y su objetivo es combinar en un unico checkpoint las dos modalidades de condicionamiento que MiniMax H3 distribuye por separado: FL (first/last-keyframe) y REF (reference-driven).
 
-El problema que aborda es concreto: MiniMax H3 se distribuye en dos regímenes de condicionamiento con arquitectura y layout de tensores idénticos. El checkpoint FL (condicionamiento por primer y último fotograma) ofrece mayor calidad visual y de audio pero no admite generación guiada por referencia; el checkpoint REF añade referencias de imagen, vídeo y audio a costa de una pérdida real de calidad, incluso en tareas sin referencia. La comparación tensor a tensor muestra que la gran mayoría de pesos (proyecciones de atención, MLP, normas, patch projections, rotary embeddings y el token refiner) son prácticamente idénticos, y que las diferencias se concentran en las proyecciones `adaln_proj` por bloque.
+El problema que resuelve es concreto: el checkpoint FL ofrece mayor calidad visual y de audio pero no admite generacion guiada por referencias, mientras que el checkpoint REF anade esa capacidad a costa de degradar la calidad incluso en tareas sin referencia. El autor realizo una comparacion tensor a tensor de ambos checkpoints y determino que la mayoria de los pesos (proyecciones de atencion, MLPs, normas, proyecciones de parches, embeddings rotatorios y el refiner de tokens) son practicamente identicos, y que las diferencias relevantes se concentran en las proyecciones `adaln_proj` de cada bloque.
 
-La propuesta del híbrido es tomar el checkpoint FL como base de toda la red y sustituir únicamente los pesos `adaln_proj` de los bloques 25 a 49 (la mitad posterior) por los del checkpoint REF. La intención es conservar la ruta de condicionamiento por referencia, que se expresa sobre todo en esas AdaLN tardías, manteniendo la fidelidad de FL en el resto de la red. Se distribuye en tres variantes (BF16, INT8 y W4A8) en un repositorio de 73,7 GB.
+La solucion es una fusion por seleccion de pesos sin entrenamiento: se parte del checkpoint FL como base y se sustituyen unicamente los pesos `adaln_proj` de los bloques 25-49 (la mitad posterior de la red) por los del checkpoint REF. El resultado es un unico checkpoint que conserva la via de condicionamiento por referencia de REF manteniendo la fidelidad de FL en el resto de la red. Se distribuye en tres formatos (BF16, INT8 y W4A8) y en variantes pruned (podadas) y sin censura.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion transformer (DiT) conjunto de audio y vídeo, derivado de MiniMax H3 |
-| Parametros totales | no disponible (variantes pruned; el autor no publica recuento) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible; no es una ventana de contexto de LLM: condicionamiento por texto, imagen, vídeo y audio |
-| Tipos de cuantizacion | BF16, INT8 (ConvRot) y W4A8 (ConvRot) |
+| Arquitectura | Diffusion transformer (DiT) conjunto de audio y video, derivado de MiniMax H3 |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16, INT8 (ConvRot), W4A8 (ConvRot) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 para el merge, las cuantizaciones y el repositorio; los pesos originales de MiniMax H3 siguen sujetos a la licencia de MiniMax |
-| Formato de pesos | safetensors (tres ficheros: BF16, INT8 y W4A8) |
-| Modalidades de entrada | texto, imagen, vídeo y audio (text/image/video/audio-to-video) |
-| Regímenes de condicionamiento | primer/último fotograma (FL) y guiado por referencia (REF) en un único checkpoint |
-| Pipeline declarado en Hugging Face | image-to-video |
-| Tamaño del repositorio | 73,7 GB |
-| Descargas / likes | 0 / 0 |
+| Licencia | Apache 2.0 (los pesos originales de MiniMax H3 quedan sujetos a la licencia de MiniMax) |
+| Formato de pesos | safetensors (BF16, INT8, W4A8) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un diffusion transformer que modela audio y vídeo de forma conjunta, con atención, MLPs, normas, patch projections, rotary embeddings, un token refiner y proyecciones AdaLN de modulación por bloque (`adaln_proj`) que inyectan la señal de condicionamiento en el residual stream de cada bloque. Los dos checkpoints de origen (FL y REF) comparten arquitectura y layout de tensores, lo que hace posible el intercambio directo de pesos sin adaptadores ni capas nuevas.
+El modelo es un diffusion transformer (DiT) que genera video y audio de forma conjunta. La arquitectura y el layout de tensores son identicos a los de los checkpoints originales de MiniMax H3, por lo que el checkpoint hibrido se carga con el loader estandar de MiniMax H3 en ComfyUI sin necesidad de nodos personalizados. La red incluye proyecciones de atencion, MLPs, normas, proyecciones de parches, embeddings rotatorios, un token refiner y proyecciones AdaLN (`adaln_proj`) por bloque que inyectan la senal de condicionamiento en el flujo residual.
 
-El proceso de construcción es un merge por selección de tensores a nivel de peso: base FL en toda la red, con los `adaln_proj` de los bloques 25 a 49 tomados de REF; el resto (AdaLN de bloques tempranos, proyección AdaLN final, atención, MLPs, normas y cabezas de salida) permanece en FL. No hubo entrenamiento, fine-tune ni optimización por gradientes. Ambos checkpoints de partida eran ya las variantes "uncensored" y pruned, de modo que el híbrido acumula el recorte de poda y la eliminación de filtrado de los originales. No se documentan en la información disponible el número de tokens, la composición del dataset, ni si MiniMax H3 usó RLHF o DPO.
+No se realizo entrenamiento, fine-tuning ni optimizacion basada en gradientes. La fusion es una seleccion de pesos a nivel de tensor: se toma el checkpoint FL como base completa y se reemplazan solo los pesos `adaln_proj` de los bloques 25-49 por los del checkpoint REF. Ambos checkpoints de origen eran ya variantes pruned y sin censura antes de la fusion. Las variantes INT8 y W4A8 se cuantizaron a partir del hibrido BF16.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto, imagen, vídeo y audio (text/image/video/audio-to-video).
-- Generación conjunta de audio y vídeo en un mismo DiT, no como pipeline de dos etapas separadas.
-- Condicionamiento por primer y último fotograma (FL) para control temporal de planos.
-- Condicionamiento guiado por referencia (REF) con entradas de imagen, vídeo y audio, disponible en el mismo checkpoint que los flujos FL.
-- Carga directa en ComfyUI con el loader estándar de MiniMax H3: la arquitectura y el layout de tensores no cambian, no requiere nodos personalizados.
-- Tres niveles de precisión intercambiables (BF16, INT8, W4A8) para ajustar VRAM y calidad.
-- Capacidades multilingües: no disponible (no se documenta el soporte de idiomas en los prompts).
-- Tool calling, function calling, modo thinking o razonamiento multi-paso: no aplica, es un modelo generativo de vídeo, no un LLM.
+- Generacion de video a partir de texto (text-to-video) e imagen (image-to-video).
+- Generacion conjunta de audio y video en una sola pasada del DiT.
+- Condicionamiento por primer y ultimo fotograma (first/last-keyframe, modalidad FL).
+- Generacion guiada por referencias de imagen, video y audio (modalidad REF), gracias a los pesos `adaln_proj` de los bloques 25-49 heredados de REF.
+- Compatibilidad con flujos de trabajo de ComfyUI para carga de checkpoints MiniMax H3 sin nodos personalizados.
+- Variantes cuantizadas INT8 y W4A8 para reducir requisitos de memoria.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multilingue explicito, al tratarse de un modelo generativo de video y audio y no de un modelo de lenguaje.
 
 ## Casos de uso
 
-- Postproducción con control de fotogramas clave: usar el régimen FL para fijar el primer y el último fotograma de una toma y generar la transición intermedia, útil para insertar planos de continuidad entre dos imágenes ya aprobadas por el cliente.
-- Consistencia de personaje o producto mediante referencia: alimentar el modelo con una imagen o un vídeo de referencia y generar nuevas tomas del mismo sujeto, aprovechando la ruta REF heredada de los bloques 25 a 49.
-- Sustitución directa del checkpoint REF en workflows existentes de ComfyUI: para usuarios que ya tienen montado un pipeline con referencias y encontraban insuficiente la calidad cruda de REF, el híbrido se carga sin cambiar de nodo ni de arquitectura.
-- Generación de vídeo con audio sincronizado: al ser un DiT conjunto de audio y vídeo, permite producir clips con banda sonora o ambiente en una sola pasada, adecuado para prototipos de anuncios, doblaje preliminar o contenido para redes.
-- Previz y storyboards animados: iterar rápidamente sobre guiones gráficos a partir de bocetos y prompts de texto, con la opción de referencia visual para mantener el estilo entre planos.
-- Investigación sobre merging de pesos: el repositorio documenta explícitamente qué tensores se intercambian y por qué, lo que lo convierte en un caso reproducible para estudiar el efecto de las proyecciones AdaLN por bloque en el condicionamiento.
-- Evaluación de cuantización agresiva en modelos de vídeo: las variantes INT8 ConvRot y W4A8 ConvRot sobre el mismo checkpoint BF16 permiten medir la degradación de calidad frente al ahorro de VRAM en un modelo de difusión de gran tamaño.
-- Red teaming y análisis de contenido sin filtrado: las variantes de origen son "uncensored", por lo que sirven para estudiar comportamientos de modelos sin alineación de seguridad, siempre en un entorno controlado y con revisión legal previa.
+- Generacion de video con condicionamiento por referencia: el checkpoint permite usar imagenes, videos o audio de referencia para guiar la generacion, algo que el checkpoint FL no admite, manteniendo una calidad mas cercana a FL que a REF.
+- Sustitucion directa del checkpoint REF en flujos existentes: al conservar arquitectura y layout de tensores, se puede reemplazar REF por este hibrido en pipelines ya montados en ComfyUI para obtener mejor calidad sin cambiar el grafo.
+- Animacion de primer y ultimo fotograma: los flujos clasicos de FL siguen funcionando con este unico checkpoint, util para interpolar movimiento entre dos imagenes clave con audio sincronizado.
+- Produccion de video con audio generado: al ser un DiT conjunto de audio y video, sirve para crear clips con banda sonora coherente sin un pipeline de audio separado.
+- Prototipado en estaciones con GPU de gama alta: la variante BF16 permite evaluar calidad maxima, mientras que INT8 y W4A8 reducen el consumo de memoria para iteraciones mas rapidas.
+- Despliegue en entornos con memoria limitada: las variantes cuantizadas W4A8 e INT8 facilitan ejecutar el modelo en GPUs con menos VRAM que las necesarias para el checkpoint BF16 completo.
+- Experimentacion con merges de pesos: sirve como referencia practica de fusion por seleccion de tensores en modelos de difusion, util para investigadores que estudien tecnicas de model merging sin entrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas cuantitativas (FVD, CLIP similarity, calidad de audio, etc.) ni comparaciones numéricas entre el híbrido y los checkpoints FL y REF de origen; únicamente afirma de forma cualitativa que el híbrido no debe superar a FL en generación sin referencia, dado que la mayor parte de sus pesos son compartidos con FL.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El recuento de parámetros no se publica y el repositorio solo indica un tamaño total de 73,7 GB repartido entre tres ficheros (BF16, INT8, W4A8), por lo que no es posible derivar una cifra fiable de VRAM sin medir los ficheros.
-- GPU recomendadas: no disponible en la información proporcionada; el modelo se distribuye en BF16 y en dos cuantizaciones (INT8 y W4A8) precisamente para ampliar el rango de hardware soportado.
-- ¿Cabe en GPU de consumo? No confirmado. La existencia de las variantes INT8 y W4A8 apunta a que el BF16 completo está pensado para GPUs de mayor capacidad, pero no se aportan requisitos mínimos.
-- Opciones de despliegue: ComfyUI es la vía documentada. Los ficheros se colocan en `ComfyUI/models/diffusion_models/` y se cargan con el loader estándar de MiniMax H3, sin nodos personalizados. No se documentan vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un modelo de difusión de vídeo.
-- Latencia y throughput: no disponible. No se publican tiempos por clip, resolución, duración de vídeo soportada ni número de pasos de muestreo.
-- Almacenamiento: hay que prever espacio para ficheros de gran tamaño; el repositorio completo ocupa 73,7 GB, aunque basta con descargar la variante de precisión elegida.
+- El repositorio ocupa 73,7 GB e incluye tres variantes (BF16, INT8 y W4A8); el peso en VRAM depende de la variante cargada.
+- VRAM estimada para inferencia: no disponible de forma explicita; la variante BF16 requiere la mayor cantidad de memoria y las variantes INT8 y W4A8 estan pensadas para reducirla.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; el tamano del repositorio y el caracter de modelo de difusion de video sugieren requisitos elevados, pero no se aportan datos concretos.
+- Opciones de despliegue: ComfyUI, colocando el checkpoint en `ComfyUI/models/diffusion_models/` y cargandolo con el loader estandar de MiniMax H3.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Los únicos puntos de comparación documentados son los dos checkpoints de origen de MiniMax H3, que comparten arquitectura y layout de tensores con el híbrido:
+| Modelo | Tipo | Condicionamiento por referencia | Formatos | Licencia |
+|---|---|---|---|---|
+| Cobijada MiniMax-H3 Hybrid (este modelo) | DiT audio+video fusionado | Si (via adaln_proj de bloques 25-49 de REF) | BF16, INT8, W4A8 | Apache 2.0 (pesos base sujetos a licencia de MiniMax) |
+| MiniMax H3 FL | DiT audio+video | No | no disponible | Licencia de MiniMax |
+| MiniMax H3 REF | DiT audio+video | Si | no disponible | Licencia de MiniMax |
 
-| Modelo | Condicionamiento por referencia | Calidad en tareas sin referencia | Entrenamiento adicional | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Cobijada H3 Hybrid | Sí (AdaLN de bloques 25-49 tomadas de REF) | Similar a FL según el autor, no superior | Ninguno (merge por selección de tensores) | Apache 2.0 (merge); pesos base con licencia de MiniMax | Repositorio de 73,7 GB, 0 descargas |
-| MiniMax H3 FL | No | La más alta de las dos variantes de origen, según la model card | Entrenamiento oficial | Licencia de MiniMax | Checkpoint oficial |
-| MiniMax H3 REF | Sí (imagen, vídeo y audio de referencia) | Inferior a FL de forma explícita, incluso sin referencia | Entrenamiento oficial | Licencia de MiniMax | Checkpoint oficial |
-
-No se dispone de datos en la información proporcionada para comparar con otras familias de modelos abiertos de generación de vídeo (parámetros, contexto, benchmarks o licencia), por lo que esa comparación queda como no disponible.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de los checkpoints originales FL y REF en la informacion proporcionada, por lo que la comparacion se limita a las capacidades de condicionamiento y a los formatos distribuidos.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": los checkpoints de partida tenían eliminado el filtrado, de modo que no hay moderación de contenido integrada. Riesgo de generar material NSFW, violento o ilegal; requiere filtrado y revisión propios si se expone a usuarios finales.
-- Merge sin evaluación: no se ha entrenado ni validado con métricas. El comportamiento del híbrido en tareas de referencia es una hipótesis de diseño del autor (las AdaLN tardías portan la ruta REF) y no está cuantificado.
-- Calidad acotada por el diseño: el propio autor advierte que el modelo no debe superar a FL en generación sin condicionamiento por referencia, porque la mayoría de sus pesos son de FL.
-- Poda de origen: las tres variantes son pruned y se desconoce qué se eliminó exactamente y con qué pérdida de calidad asociada.
-- Cuantizaciones no evaluadas: INT8 ConvRot y W4A8 ConvRot se obtuvieron del BF16 sin publicación de métricas de degradación; conviene validar contra el BF16 antes de usarlas en producción.
-- Licencia en dos capas: el merge y las conversiones son Apache 2.0, pero los pesos subyacentes de MiniMax H3 siguen bajo los términos de MiniMax. Hay que revisar esa licencia por separado antes de cualquier uso comercial; Apache 2.0 en el repositorio no equivale a licencia libre sobre el modelo base.
-- Procedencia: la model card acredita el merge y las cuantizaciones a Winnougan, mientras que el repositorio consultado pertenece a taurusduan. Verificar la réplica frente al repositorio original antes de integrarlo en un pipeline.
-- Señales de validación nulas: 0 descargas y 0 likes en el momento de la consulta; es un artefacto de comunidad sin uso contrastado.
-- Idiomas y prompts: no se documenta qué idiomas acepta el codificador de texto ni si hay degradación en prompts en castellano.
-- Especificaciones ausentes: sin recuento de parámetros, sin duración ni resolución de vídeo soportada, sin requisitos de VRAM y sin latencias publicadas. La planificación de infraestructura exige medirlas in situ.
-- Dependencia de ComfyUI: el flujo documentado es exclusivamente ComfyUI con el loader de MiniMax H3; integrarlo en otros frameworks requiere trabajo adicional no soportado por el autor.
-- Riesgo de alucinación visual: como todo modelo generativo de difusión, puede producir artefactos, incoherencias temporales y desincronización audio-vídeo, sin garantía de fidelidad a la referencia.
+- El propio autor indica que el modelo no supera la calidad del checkpoint FL en generacion sin condicionamiento por referencia, ya que la mayoria de sus pesos son compartidos con FL.
+- La fusion se limita a los pesos `adaln_proj` de los bloques 25-49; no hay garantia de que la via de condicionamiento por referencia de REF se reproduzca con la misma fidelidad que en el checkpoint REF original.
+- Es una variante sin censura (uncensored), lo que implica ausencia de filtros de seguridad y riesgo de generar contenido inapropiado; requiere supervision en produccion.
+- Riesgo de sesgos y alucinacion visual o sonora inherente a los modelos de difusion; no se documentan evaluaciones al respecto.
+- La licencia Apache 2.0 cubre la fusion y las conversiones cuantizadas, pero los pesos subyacentes de MiniMax H3 siguen sujetos a la licencia original de MiniMax, que debe revisarse antes de un uso comercial.
+- No se documentan idiomas soportados ni limitaciones de contexto.
+- El modelo tiene un unico like y fue publicado el 2026-11-02, por lo que su validacion por la comunidad es limitada pese a las 6742 descargas.
+- No se aportan datos de benchmarks, latencia ni requisitos de VRAM concretos, lo que dificulta planificar su despliegue en produccion.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
-- Imagen de cabecera referenciada en la model card: https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI/resolve/main/H3_Hybrid.png
-- Perfil del autor del merge y las cuantizaciones: https://huggingface.co/Winnougan
-- Repositorio original del merge (según los créditos de la model card): https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
-- Checkpoints oficiales de MiniMax H3 (FL y REF): no disponible en la información proporcionada
-- Paper, blog técnico o demo de MiniMax H3: no disponible en la información proporcionada
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores son los únicos verificables a partir de la información disponible.
+- Hugging Face: https://huggingface.co/taurusduan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
+- Perfil del autor de la fusion: https://huggingface.co/Winnougan
+- Imagen de portada del modelo: https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI/resolve/main/H3_Hybrid.png

@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "saidutta69/Qwen2.5-0.5B-Instruct-heretic · Hugging Face",
-      "url": "https://huggingface.co/saidutta69/Qwen2.5-0.5B-Instruct-heretic",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "saidutta69/Qwen2.5-Coder-0.5B-Instruct-heretic · Hugging Face",
-      "url": "https://huggingface.co/saidutta69/Qwen2.5-Coder-0.5B-Instruct-heretic",
-      "snippet": "A decensored variant of Qwen/Qwen2.5-Coder-.5B-Instruct, produced with Heretic v1.4.0 (directional ablation / \"abliteration\"). Refusal behavior is suppressed via targeted weight edits to the attention output and MLP down-projections rather than fine-tuning, so the base model&#x27;s knowledge and instruction-following are left largely intact."
-    },
-    {
-      "title": "Qwen2.5-Coder-0.5B-Instruct-heretic - FriendliAI",
-      "url": "https://friendli.ai/models/saidutta69/Qwen2.5-Coder-0.5B-Instruct-heretic",
-      "snippet": "config.toml — exact Heretic configuration used for this run reproduce.json — full parameter and metric dump Qwen--Qwen2--5-Coder---5B-Instruct.jsonl — evaluation transcripts against the base model SHA256SUMS — checksums for integrity verification requirements.txt — pinned environment for re-running the ablation"
-    },
-    {
-      "title": "Qwen2.5 0.5B Instruct Heretic — AI Model | Antbase",
-      "url": "https://antbase.ai/models/qwen2-5-0-5b-instruct-heretic",
-      "snippet": "Overview Qwen2.5 0.5B Instruct Heretic is a efficient model from Featherless with a 33K context window, supporting function calling. Available through ANT&#x27;s unified API."
-    },
-    {
-      "title": "megabytes/Qwen2.5-0.5B-Instruct-heretic: Model synced from source ...",
-      "url": "https://dev.modelhub.org.cn/megabytes/Qwen2.5-0.5B-Instruct-heretic",
-      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
-    }
-  ]
+  "sources": []
 }

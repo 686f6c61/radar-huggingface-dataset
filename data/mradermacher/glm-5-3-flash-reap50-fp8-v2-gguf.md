@@ -2,50 +2,50 @@
 
 ## Resumen
 
-GLM-5.3-Flash-REAP50-FP8-v2-GGUF es una cuantizacion en formato GGUF del modelo patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2, un derivado de la familia GLM-5.3-Flash de Zhipu AI (Z.ai) al que se le ha aplicado una poda de expertos (REAP, *Router-weighted Expert Activation Pruning*) al 50 % y una cuantizacion posterior a FP8. El modelo resultante conserva 164.907.253.550 parametros totales segun los safetensors del repositorio, mantiene la arquitectura MoE del original y se distribuye en 12 variantes de cuantizacion GGUF (desde Q2_K hasta Q8_0) generadas por mradermacher.
+GLM-5.3-Flash-REAP50-FP8-v2-GGUF es una distribucion en formato GGUF del modelo patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2, publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. El modelo subyacente pertenece a la familia GLM-5.3-Flash (arquitectura `glm5_next`) y ha sido sometido a un proceso de poda de expertos mediante la tecnica REAP (expert pruning) al 50 %, seguido de una conversion a FP8. El resultado es un modelo Mixture-of-Experts con 164.907.253.550 parametros totales segun los safetensors del repositorio base.
 
-El interes practico de esta publicacion es doble. Por un lado, REAP elimina la mitad de los expertos del MoE original, lo que reduce el peso en disco y la VRAM necesaria para servir el modelo sin reentrenar desde cero. Por otro lado, la conversion a GGUF permite ejecutar el modelo en llama.cpp y Ollama, algo imposible con el checkpoint original en FP8 pensado para vLLM y SGLang. El repositorio ocupa 1130 GB y los ficheros de cuantizacion van desde 61,5 GB (Q2_K) hasta 176 GB (Q8_0), por lo que sigue siendo un modelo de gran escala que requiere infraestructura multi-GPU para la mayoria de los casos de uso.
+La relevancia de esta publicacion radica en que ofrece el modelo en cuantizaciones estaticas GGUF (desde Q2_K hasta Q8_0), lo que permite ejecutarlo en infraestructura local con llama.cpp u Ollama, algo inviable con los pesos FP8 originales. El repositorio incluye ademas suplementos multimodales (`mmproj`) en Q8_0 y f16, lo que indica que el modelo base conserva capacidad de vision.
 
-La licencia es MIT, lo que facilita el uso comercial, y los idiomas declarados son ingles y chino. La model card del cuantizador es minima y no aporta informacion sobre contexto, datos de entrenamiento ni benchmarks; esta ficha se limita a documentar lo que consta en los metadatos y en la card del repositorio.
+La licencia es MIT, lo que facilita su uso comercial sin restricciones adicionales. Los idiomas declarados son ingles y chino. No se dispone de informacion sobre contexto maximo, composicion del dataset ni resultados de benchmarks en la documentacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con poda de expertos (REAP al 50 %) y decodificacion especulativa MTP |
-| Parametros totales | 164.907.253.550 |
+| Arquitectura | Mixture-of-Experts (MoE), variante `glm5_next`; pesos en FP8 en el modelo base |
+| Parametros totales | 164.907.253.550 (segun safetensors del repo) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16 (referencia), Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en Q8_0 y f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
 | Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | GGUF (multi-parte para Q4_K_M, Q5_K_S, Q5_K_M, Q6_K y Q8_0) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en FP8 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Mixture of Experts de la familia GLM-5.3-Flash. Sobre ese checkpoint se aplico REAP (*Router-weighted Expert Activation Pruning*), una tecnica que poda expertos en funcion de la activacion ponderada por el router: se eliminan los expertos con menor contribucion agregada y se conserva el resto, reduciendo el numero de expertos del MoE aproximadamente a la mitad. El checkpoint intermedio se guarda en FP8 y despues mradermacher lo convierte a GGUF con `convert_type: hf` y `quantize_version: 2`, generando cuantizaciones estaticas (no hay versiones ponderadas/imatrix en el momento de la publicacion).
+El modelo base sigue una arquitectura transformer con mezcla de expertos (MoE), identificada en los tags como `glm5_next`. Sobre esa base se aplico REAP (expert pruning), un metodo de poda de expertos que reduce el numero de expertos del MoE al 50 % conservando los mas relevantes segun su contribucion a la salida. Posteriormente los pesos se convirtieron a FP8, lo que reduce el espacio en disco y acelera la inferencia en hardware con soporte nativo de FP8 (H100, H200, B200).
 
-Los tags del repositorio indican soporte de decodificacion especulativa mediante MTP (*Multi-Token Prediction*), lo que sugiere que el modelo incorpora cabezas auxiliares para predecir varios tokens por paso y acelerar la inferencia en vLLM y SGLang. Tambien hay un submodelo multimodal (`mmproj`) en Q8_0 y f16, lo que implica capacidades de vision en el modelo original. No consta en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
+La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Tampoco se especifica el numero de expertos originales ni cuantos quedan tras la poda, ni el numero de parametros activos por token. La presencia de ficheros `mmproj` confirma que el modelo conserva un codificador multimodal, presumiblemente para entrada de imagen.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles y chino.
-- Razonamiento multi-paso y tareas de codigo y matematicas, segun la categoria del modelo base GLM-5.3-Flash (no verificable con datos de esta ficha).
-- Capacidades multimodales: el repositorio incluye ficheros `mmproj` (Q8_0 y f16) que actuan como suplemento de vision para llama.cpp.
-- Decodificacion especulativa mediante MTP para acelerar la generacion.
-- Compatible con endpoints (`endpoints_compatible` en los tags), lo que facilita su despliegue detras de APIs compatibles con OpenAI.
-- Soporte de tool calling y function calling: no confirmado explicitamente en la informacion disponible, aunque es habitual en la familia GLM.
-- Capacidad de agente y multi-step reasoning: no confirmado en la informacion disponible.
+- Capacidad multimodal: los ficheros `mmproj` (Q8_0 y f16) permiten procesar imagenes junto con texto en llama.cpp.
+- Razonamiento y generacion de codigo: no confirmado explicitamente en la model card, pero coherente con la familia GLM.
+- Tool calling y function calling: no documentado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingues limitadas a los idiomas declarados (en, zh); el castellano no figura entre los soportados.
+- Modo thinking: no disponible en la informacion.
 
 ## Casos de uso
 
-- Servicio de chat bilingue ingles-chino en produccion: el modelo cubre los dos idiomas declarados y puede desplegarse en vLLM o SGLang con el checkpoint FP8 original, o en llama.cpp con las cuantizaciones GGUF para entornos sin GPUs de datacenter.
-- Procesamiento de documentos con componente visual: gracias a los ficheros `mmproj`, se puede usar en llama.cpp para tareas de OCR, descripcion de imagenes o extraccion de informacion de capturas y PDFs renderizados.
-- Generacion de codigo asistida en IDE: el modelo base GLM-5.3-Flash esta orientado a tareas de codigo; la version GGUF Q4_K_M (100,3 GB) permite integrarlo en un servidor interno de autocompletado si se dispone de varias GPUs.
-- Razonamiento sobre contextos largos en analisis financiero o legal: adecuado si el contexto del modelo base es amplio (dato no disponible en esta ficha), con la ventaja de que la poda REAP reduce el coste por token frente al MoE completo.
-- Despliegue en infraestructura propia con requisitos de licencia permisiva: la licencia MIT permite uso comercial sin restricciones de atribucion mas alla de la propia MIT, lo que encaja en productos cerrados.
-- Evaluacion e investigacion sobre poda de expertos: el par de repositorios (FP8 original y GGUF) permite comparar la calidad del MoE completo frente al podado al 50 % en las mismas tareas.
-- Fine-tuning ligero o destilacion sobre el modelo podado: al ser un MoE con la mitad de expertos, el coste de adaptacion (LoRA, por ejemplo) es menor que sobre el original, aunque sigue requiriendo hardware de gama alta.
+- Despliegue local de un MoE de gran tamano en estaciones de trabajo con multiples GPU: la cuantizacion Q4_K_S (94,5 GB) permite ejecutar el modelo en 2-4 GPU de 48 GB, algo imposible con los pesos FP8 originales.
+- Analisis de documentos con imagenes: gracias a los ficheros `mmproj`, se puede usar en pipelines de extraccion de informacion de PDFs escaneados o capturas, combinando vision y texto en una sola pasada.
+- Asistentes conversacionales en ingles y chino: adecuado para productos dirigidos a esos mercados, con la ventaja de la licencia MIT para uso comercial.
+- Prototipado e investigacion sobre poda de expertos: util para estudiar el impacto de REAP al 50 % comparando el modelo podado con el original, gracias a la disponibilidad de cuantizaciones de distinta precision.
+- Generacion de codigo en entornos con requisitos de soberania del dato: al poder ejecutarse on-premise con llama.cpp, evita enviar codigo propietario a APIs externas.
+- Fine-tuning ligero sobre cuantizaciones Q8_0: la version Q8_0 (176 GB) preserva practicamente la calidad del modelo original y sirve como base para adaptaciones con LoRA en dominios verticales.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece once niveles distintos, lo que permite medir la degradacion de perplejidad y calidad entre Q2_K y Q8_0 en un mismo modelo.
 
 ## Benchmarks y rendimiento
 
@@ -53,41 +53,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas el *KV cache*. Para Q4_K_M (100,3 GB) se necesitan al menos 2 GPUs de 80 GB (A100/H100) o 3-4 RTX 4090 de 24 GB con *offload* parcial a CPU.
-- Q2_K (61,5 GB) es la unica variante que podria caber en una sola GPU de 80 GB, con perdida de calidad notable.
-- Q8_0 (176 GB) requiere al menos 3 GPUs de 80 GB o un nodo con 4x H100.
-- No cabe en ninguna GPU de consumo individual (RTX 4090, 5090, etc.); solo es viable en consumer con *offloading* a RAM del sistema, lo que degrada mucho el throughput.
-- Opciones de despliegue: llama.cpp y Ollama para los GGUF; vLLM y SGLang para el checkpoint FP8 original (patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2), que es el formato recomendado para servidores de alto rendimiento.
-- Latencia y throughput: no disponibles. La decodificacion especulativa MTP deberia mejorar el throughput en vLLM/SGLang, pero no hay cifras publicadas en la informacion proporcionada.
+- VRAM estimada para inferencia (incluye pesos y overhead de contexto, orientativo): Q2_K ~65-70 GB; Q4_K_S ~100-105 GB; Q6_K ~140-145 GB; Q8_0 ~180-185 GB.
+- GPU recomendadas: para Q4_K_M en adelante, 2x A100 80 GB o 2x H100 80 GB; para Q8_0, 4x A100 80 GB o 3x H100 80 GB. En FP8 nativo (modelo base) se puede aprovechar la aceleracion de H100/H200.
+- No cabe en GPU de consumo individual: incluso Q2_K (61,5 GB) supera los 24 GB de una RTX 4090. Seria necesario repartir entre varias GPU o usar CPU con RAM abundante.
+- Opciones de despliegue: llama.cpp y Ollama para los GGUF; el modelo base FP8 puede servirse con vLLM o TGI si el hardware soporta FP8.
+- Latencia y throughput: no disponibles. Al ser un MoE podado, el coste por token depende del numero de expertos activos, dato no publicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-REAP50-FP8-v2-GGUF (este) | 164,9 B (MoE podado 50 %) | no disponible | MIT | GGUF | Cuantizaciones de 61,5 a 176 GB |
-| patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2 | 164,9 B (MoE podado 50 %) | no disponible | MIT | safetensors FP8 | Checkpoint base, pensado para vLLM/SGLang |
-| GLM-5.3-Flash (original, sin podar) | no disponible | no disponible | no disponible | no disponible | Referencia de la familia; no consta en la informacion disponible |
-
-No se dispone de datos de benchmarks ni de especificaciones del GLM-5.3-Flash original en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
+| GLM-5.3-Flash-REAP50-FP8-v2-GGUF (este) | 164,9 B | no disponible | MIT | GGUF | MoE podado al 50 %, multimodal via mmproj |
+| patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2 | 164,9 B | no disponible | MIT | safetensors FP8 | Modelo base sin cuantizar |
+| GLM-5.3-Flash original | no disponible | no disponible | no disponible | no disponible | Sin poda de expertos; referencia de calidad |
+| Otros MoE abiertos de ~160 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion |
 
 ## Limitaciones y advertencias
 
-- La poda REAP al 50 % elimina expertos del MoE; es esperable una perdida de calidad frente al modelo sin podar, especialmente en tareas de nicho o idiomas poco representados. No hay evaluacion publicada que cuantifique esa perdida.
+- La poda REAP al 50 % elimina la mitad de los expertos; es esperable una perdida de calidad respecto al GLM-5.3-Flash original, especialmente en tareas de nicho o idiomas poco representados.
 - Solo se declaran ingles y chino; el rendimiento en castellano no esta garantizado y probablemente sea inferior.
-- Riesgo de alucinacion inherente a los modelos generativos de gran escala; no hay datos de mitigacion especificos en la card.
-- La model card del cuantizador no documenta sesgos conocidos, datos de entrenamiento ni evaluaciones de seguridad.
-- El repositorio ocupa 1130 GB; descargar la variante adecuada requiere planificar el almacenamiento y comprobar la integridad de los ficheros multi-parte.
-- No hay cuantizaciones ponderadas/imatrix disponibles en el momento de la publicacion, lo que puede afectar a la calidad de las cuantizaciones bajas (Q2_K, Q3_K_S) frente a alternativas con imatrix.
-- Aunque la licencia es MIT, conviene verificar la licencia del modelo base GLM-5.3-Flash original de Zhipu AI, ya que las condiciones de uso pueden heredarse parcialmente.
-- Para produccion con latencia estricta, el checkpoint FP8 original en vLLM/SGLang es preferible a los GGUF; estos ultimos estan pensados para entornos con menos recursos o para experimentacion.
+- No hay datos publicados de benchmarks, por lo que no se puede cuantificar la degradacion introducida por la poda ni por cada nivel de cuantizacion.
+- Riesgo de alucinacion inherente a los modelos generativos; sin evaluaciones publicadas no es posible acotarlo.
+- Las cuantizaciones Q2_K y Q3_K_S, aunque pequenas, degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
+- El modelo base esta en FP8 y los GGUF son cuantizaciones estaticas: no hay versiones con imatrix/weighted, segun indica el autor, lo que puede reducir la calidad frente a cuantizaciones ponderadas.
+- El repositorio ocupa 1130 GB; descargar la version completa requiere espacio en disco considerable, aunque cada cuantizacion se descarga por separado.
+- Aunque la licencia es MIT, conviene verificar las condiciones del modelo GLM-5.3-Flash original del que deriva, ya que la informacion disponible no detalla la cadena completa de licencias.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/GLM-5.3-Flash-REAP50-FP8-v2-GGUF
-- Modelo base (FP8): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2
+- Repositorio GGUF: https://huggingface.co/mradermacher/GLM-5.3-Flash-REAP50-FP8-v2-GGUF
+- Modelo base: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#GLM-5.3-Flash-REAP50-FP8-v2-GGUF
-- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- nethype GmbH: https://www.nethype.de/
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

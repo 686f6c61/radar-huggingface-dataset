@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "ducbachsong/nanochat-d24",
+  "slug": "ducbachsong-nanochat-d24",
+  "author": "ducbachsong",
+  "url": "https://huggingface.co/ducbachsong/nanochat-d24",
+  "created_at": "2026-11-19T03:22:32.000Z",
+  "updated_at": "2026-11-19T03:41:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "llm.c",
+    "fp8",
+    "nanochat",
+    "base-model",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 733105152,
+  "parameters_human": "733.1M",
+  "storage_bytes": 1466640622,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

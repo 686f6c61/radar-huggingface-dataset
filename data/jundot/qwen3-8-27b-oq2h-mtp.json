@@ -5,7 +5,7 @@
   "author": "Jundot",
   "url": "https://huggingface.co/Jundot/Qwen3.8-27B-oQ2h-mtp",
   "created_at": "2026-11-17T11:05:18.000Z",
-  "updated_at": "2026-11-17T17:15:31.000Z",
+  "updated_at": "2026-11-18T09:30:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 5724930800,
   "parameters_human": "5.72B",

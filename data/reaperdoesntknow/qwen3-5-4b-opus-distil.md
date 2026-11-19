@@ -2,80 +2,87 @@
 
 ## Resumen
 
-Qwen3.5-4B-Opus-Distil es un modelo de lenguaje de 4.200 millones de parámetros publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de una destilación del estilo de razonamiento y conversación de un modelo "Opus" (probablemente Claude Opus, aunque no se especifica la versión) sobre la base de Qwen3.5-4B, seguida de una conversión a formato GGUF mediante la herramienta Unsloth. El modelo está etiquetado como vision-language-model, lo que indica que incluye un componente multimodal capaz de procesar imágenes además de texto.
+Qwen3.5-4B-Opus-Distil es un modelo de lenguaje y vision (vision-language model) de 4.205.751.296 parametros publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de un ajuste fino del modelo base Qwen3.5-4B, destilado a partir de un modelo de referencia denominado "project-opus-distil" segun la nomenclatura de los ficheros. El autor ha empaquetado los pesos en formato GGUF mediante Unsloth, orientando el artefacto al ecosistema llama.cpp.
 
-La relevancia de este modelo radica en su tamaño compacto (4B parámetros) y su formato GGUF, que permite ejecutarlo localmente en hardware de consumo mediante llama.cpp o llama-mtmd-cli. Al ser una destilación de un modelo mucho mayor, pretende ofrecer capacidades de razonamiento y estilo conversacional avanzados en un paquete ligero y desplegable en entornos con recursos limitados. Sin embargo, la documentación publicada es mínima y no se proporcionan detalles sobre el proceso de entrenamiento, licencia, idiomas soportados ni benchmarks.
+La relevancia del modelo radica en su combinacion de tamano reducido (4B) con capacidades multimodales (proyector mmproj incluido) y su disponibilidad directa en GGUF cuantizado Q4_K_M, lo que permite ejecucion en hardware de consumo. Con 3.126 descargas acumuladas, es un artefacto de nicho pero con traccion dentro de la comunidad de inferencia local.
 
-## Especificaciones técnicas
+No obstante, la informacion publicada es muy escasa: la model card no documenta licencia, idiomas, datos de entrenamiento, benchmarks ni composicion del dataset de destilacion. Cualquier evaluacion de produccion debe tratar estos extremos como no verificados.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen3.5), con proyector multimodal (archivo mmproj) |
-| Parametros totales | 4.205.751.296 (4,2B) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (vision-language model); detalles no disponibles |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (GGUF), BF16 (proyector multimodal) |
+| Tipos de cuantizacion | Q4_K_M (publicada); BF16 para el proyector mmproj |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (Q4_K_M), safetensors (BF16-mmproj) |
+| Formato de pesos | GGUF (llama.cpp); proyector multimodal en GGUF BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3.5-4B, un transformer de 4.200 millones de parámetros que, según la familia Qwen3.5, integra capacidades multimodales nativas (visión y lenguaje). El archivo `BF16-mmproj.gguf` confirma la presencia de un proyector multimodal que permite procesar entradas de imagen. El proceso de destilación, denominado "Opus-Distil", transfiere patrones de razonamiento y estilo conversacional de un modelo Opus (no se especifica si se trata de Claude Opus 4.6 u otro) al modelo base Qwen3.5-4B. El entrenamiento y la conversión a GGUF se realizaron con Unsloth, que acelera el fine-tuning y genera archivos optimizados para llama.cpp. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO.
+El modelo deriva de Qwen3.5-4B, un transformer de 4.205 millones de parametros, y conserva el componente de vision mediante un proyector multimodal separado (fichero `BF16-mmproj.gguf`). El ajuste fino se realizo con Unsloth, segun indica el autor, y el pipeline de conversion produjo directamente artefactos GGUF. El nombre del proyecto ("project-opus-distil") sugiere una destilacion desde un modelo mayor, aunque no se especifica el modelo profesor, el volumen de tokens de destilacion, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+
+No hay informacion publicada sobre innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, modos de razonamiento explicito) mas alla de las inherentes al modelo base Qwen3.5. Tampoco se documenta el proceso de alineacion ni las fases de entrenamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como "conversational" y su destilación busca replicar el estilo de respuesta de un modelo Opus.
-- Comprensión de imágenes: al ser un vision-language-model con archivo mmproj, puede procesar entradas visuales y responder sobre ellas.
-- Ejecución local multimodal: compatible con `llama-mtmd-cli` para modelos multimodales y `llama-cli` para texto puro, ambos de llama.cpp.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse como servidor de inferencia compatible con APIs estándar.
-- Formato GGUF optimizado: cuantización Q4_K_M que reduce el uso de memoria sin degradación excesiva.
-- No se han documentado capacidades específicas de tool calling, agentes o razonamiento multi-paso en la información disponible.
+- Generacion de texto conversacional en formato chat, invocable mediante `llama-cli` con plantilla Jinja (`--jinja`).
+- Procesamiento de imagenes: el proyector mmproj permite inferencia multimodal con `llama-mtmd-cli`.
+- Razonamiento y respuesta a instrucciones heredados del modelo base Qwen3.5-4B (no verificados de forma independiente).
+- Soporte de tool calling: no documentado en la model card; no disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; no disponible.
+- Capacidades multilingues: no documentadas; no disponible.
+- Modo thinking explicito: no documentado; no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local: al ser un modelo de 4B en formato GGUF, puede ejecutarse en una GPU de consumo o incluso en CPU para ofrecer un chatbot privado sin conexión a internet, útil en entornos con requisitos de privacidad.
-- Análisis de imágenes en dispositivos edge: gracias a su componente multimodal, puede describir imágenes o responder preguntas sobre fotografías en aplicaciones de visión por computador con recursos limitados.
-- Prototipado rápido de aplicaciones de IA: su tamaño compacto y formato GGUF permiten integrarlo en pipelines de desarrollo para validar ideas antes de escalar a modelos mayores.
-- Automatización de tareas de documentación: puede resumir textos, extraer información clave o redactar borradores a partir de entradas de usuario, aprovechando su estilo conversacional destilado.
-- Educación y experimentación: investigadores y estudiantes pueden estudiar el comportamiento de una destilación de un modelo Opus en un tamaño manejable, comparando sus respuestas con el modelo original.
-- Despliegue en servidores de baja capacidad: con la cuantización Q4_K_M, cabe en instancias con 4-6 GB de VRAM, lo que lo hace viable para entornos cloud económicos o hardware embebido.
+- Inferencia local en estaciones de trabajo sin GPU dedicada: el fichero Q4_K_M ocupa aproximadamente 2,5-2,7 GB, por lo que puede cargarse en equipos con 8 GB de RAM y CPU moderna mediante llama.cpp, con velocidades de decodificacion de un solo digito en tokens por segundo.
+- Prototipado de asistentes multimodales: el par Q4_K_M + mmproj permite experimentar con descripcion de imagenes y preguntas visuales sin depender de APIs externas, usando `llama-mtmd-cli`.
+- Evaluacion de destilaciones: util como referencia para comparar la calidad de un modelo 4B destilado frente al modelo profesor en tareas de razonamiento y codigo, siempre que se realice una evaluacion propia dado que no hay benchmarks publicados.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse completamente en local, es apto para procesar texto e imagenes sensibles sin salida de datos a terceros.
+- Integracion en pipelines de llama.cpp: el formato GGUF permite incorporarlo a servidores `llama-server` compatibles con la API de OpenAI para pruebas de integracion.
+- Educacion e investigacion: sirve como caso de estudio de ajuste fino con Unsloth y conversion a GGUF, y como ejemplo de publicacion de artefactos multimodales sin documentacion completa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo concreto. Se recomienda realizar pruebas propias antes de utilizarlo en producción.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_M, el modelo ocupa aproximadamente 2,5-3 GB de memoria, por lo que cabe en GPUs con 4 GB o más. El proyector multimodal en BF16 añade unos pocos cientos de MB adicionales.
-- GPU recomendadas: NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090, o cualquier GPU con al menos 6 GB de VRAM para margen de contexto. También puede ejecutarse en CPU con 8-16 GB de RAM, aunque con mayor latencia.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-mtmd-cli), Ollama (si se importa el GGUF), vLLM (si se convierte a safetensors), y servidores compatibles con endpoints estándar.
-- Latencia y throughput: no se han publicado mediciones. Para un modelo de 4B en Q4, se puede esperar una generación de 20-40 tokens/s en una RTX 4090, y 5-15 tokens/s en CPU moderna, dependiendo de la longitud de contexto.
+- VRAM/RAM estimada: el fichero Q4_K_M requiere aproximadamente 2,5-2,7 GB de memoria; el proyector mmproj BF16 anade unos cientos de MB. Para contexto largo, reservar 4-6 GB adicionales segun la ventana configurada.
+- GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4090) puede ejecutar el modelo con offload completo; en A100/H100 el modelo queda limitado por ancho de banda y no aprovecha la capacidad de computo.
+- GPU de consumo: si, cabe en RTX 3060 6 GB, RTX 4060 8 GB, RTX 4070 y superiores. Tambien es viable en CPU con 8 GB de RAM.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`, `llama-server`). No se han publicado artefactos para vLLM, TGI ni Ollama, aunque la conversion a Ollama es posible a partir del GGUF.
+- Latencia y throughput: no disponibles de forma oficial. Como referencia orientativa para un 4B en Q4_K_M, se esperan decenas de tokens por segundo en GPU de consumo y un solo digito en CPU, sin datos medidos publicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Opus-Distil (este) | 4,2B | no disponible | no disponible | GGUF | Destilación de Opus sobre Qwen3.5, multimodal |
-| TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill | 4,2B (estimado) | no disponible | no disponible | no disponible | Destilación de Claude Opus 4.6 sobre Qwen3.5-4B, con enfoque en razonamiento |
-| Qwen3.5-397B-A17B (modelo oficial Qwen) | 397B (17B activos) | no disponible | Apache 2.0 (presumible) | safetensors | Modelo nativo de visión-lenguaje de gran escala, primer lanzamiento de Qwen3.5 |
+| Qwen3.5-4B-Opus-Distil | 4,2B | no disponible | Si (mmproj) | no disponible | GGUF |
+| Qwen3.5-4B (base) | ~4B | no disponible | Segun variante | no disponible | safetensors/GGUF |
+| Qwen2.5-VL-3B | ~3,75B | 32K (segun documentacion publica de la familia) | Si | Apache 2.0 (familia Qwen2.5) | safetensors/GGUF |
+| Llama 3.2 3B Instruct | 3,2B | 128K | No (vision solo en 11B/90B) | Llama 3.2 Community License | safetensors/GGUF |
 
-No se dispone de datos de rendimiento comparativos entre estos modelos. La comparativa se basa únicamente en características públicas.
+La comparativa es aproximada: los datos del modelo evaluado no estan documentados y los de las alternativas corresponden a sus fichas publicas. La principal diferencia es la ausencia de licencia explicita en este ajuste, frente a licencias conocidas en las alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia desconocida: no se especifica la licencia del modelo, lo que impide conocer si es de uso comercial, modificable o redistribuible. Se debe contactar con el autor antes de cualquier uso en producción.
-- Documentación insuficiente: no hay información sobre el dataset de entrenamiento, el proceso de destilación exacto, ni las técnicas de alineación utilizadas, lo que dificulta evaluar su robustez.
-- Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en dominios especializados.
-- Sesgos potenciales: al ser una destilación de un modelo mayor, puede heredar sesgos del modelo original y del dataset de destilación, que no han sido auditados públicamente.
-- Limitaciones de contexto: se desconoce la longitud máxima de contexto soportada, lo que puede afectar a tareas que requieran ventanas largas.
-- Soporte de idiomas no documentado: no se indica qué idiomas maneja correctamente, aunque al estar basado en Qwen3.5 probablemente tenga buen soporte multilingüe, pero no es seguro.
-- Formato GGUF específico: la cuantización Q4_K_M puede degradar ligeramente la calidad en tareas de razonamiento complejo comparado con el modelo en BF16.
+- Licencia no declarada: no se especifica si se permite uso comercial; tratar como no apto para produccion hasta confirmacion del autor.
+- Ausencia total de benchmarks: no hay evidencia publicada de calidad, y el nombre "Opus-Distil" no garantiza el rendimiento del modelo profesor.
+- Riesgo de alucinacion: inherente a modelos de 4B; sin evaluacion publicada no puede acotarse.
+- Idiomas no documentados: no puede asumirse soporte de castellano ni de otros idiomas mas alla del ingles.
+- Sesgos no evaluados: no hay model card con analisis de sesgos ni de seguridad.
+- Contexto desconocido: no se indica la longitud de ventana soportada, lo que impide planificar cargas de contexto largo.
+- Procedencia del ajuste: el autor es un particular; no hay garantia de mantenimiento, soporte ni reproducibilidad del pipeline de destilacion.
+- Vision limitada: el proyector mmproj esta en BF16 y su calidad no ha sido evaluada; el rendimiento multimodal puede degradarse respecto al modelo base.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Opus-Distil
-- Repositorio de archivos: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Opus-Distil/tree/main
-- Modelo similar en ModelScope: https://www.modelscope.cn/models/TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill
-- Página de Ollama para qwen3.5:4b: https://ollama.com/library/qwen3.5:4b
-- Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
+- Unsloth (herramienta de ajuste fino y conversion): https://github.com/unslothai/unsloth
+- llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp
+- Documentacion de llama.cpp para modelos multimodales (`llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp/tree/master/tools/mtmd

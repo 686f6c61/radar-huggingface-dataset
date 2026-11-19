@@ -2,48 +2,48 @@
 
 ## Resumen
 
-`huggingface-mic/dinov2-small-mic` es un artefacto de prueba (test artifact) publicado por la organización `huggingface-mic`, no un modelo utilizable. Se trata de una versión reducida (slim) del checkpoint `facebook/dinov2-small`, generada automáticamente para servir como fixture en pruebas de integración de la librería `transformers-mic`. El repositorio incluye pesos reducidos, uso ejecutable y expectativas de framework (directorio `integrations/transformers/expectations`) en un único paquete.
+`dinov2-small-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` en Hugging Face. No es un modelo utilizable: se trata de una versión "adelgazada" del checkpoint `facebook/dinov2-small` de Meta, reducida a 225.856 parámetros mediante la regla genérica de reducción de `sweep.py` del repositorio `transformers-mic`. Su propósito es servir como fixture de integración continua para validar el soporte de la arquitectura DINOv2 en Transformers y en el ecosistema MIC (Model Integration Contract), no para realizar inferencia real.
 
-El modelo conserva la arquitectura `Dinov2Model` (transformer de visión para extracción de características de imagen), pero con la configuración encogida: `num_hidden_layers` reducido a 2, lo que deja el total en aproximadamente 225.856 parámetros según los safetensors publicados. Los pesos son aleatorios (semilla 17), no entrenados, y se guardan en float32. El autor lo etiqueta explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
+El modelo conserva la arquitectura `Dinov2Model` (un transformer de visión), pero con `num_hidden_layers` reducido a 2 y pesos inicializados aleatoriamente con semilla 17. Los ficheros de procesador (`preprocessor_config.json`) se copian byte a byte del checkpoint original, de modo que el pipeline de preprocesado es idéntico al real. El fixture está etiquetado explícitamente como `test-artifact` para excluirlo de las búsquedas de modelos candidatos.
 
-Su relevancia es puramente de ingeniería: permite validar contratos de integración (nombres de tensores, ficheros de procesador copiados byte a byte desde el modelo original, comportamiento finito en float32, bfloat16 y float16) sin descargar ni ejecutar el checkpoint real de DINOv2. No debe emplearse para inferencia real, investigación ni producción.
+La relevancia de esta ficha es limitada desde el punto de vista de uso productivo: cualquier desarrollador que llegue a este repositorio buscando un extractor de características de imagen debe dirigirse al modelo base `facebook/dinov2-small`. El interés técnico reside en que documenta un patrón de empaquetado de fixtures (contrato, expectativas de framework, procedencia de build y pesos reducidos) que puede servir de referencia para equipos que mantengan suites de integración de modelos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Dinov2Model (transformer de visión), configuración encogida a 2 capas ocultas |
-| Parametros totales | 225.856 (según safetensors publicados) |
+| Arquitectura | Dinov2Model (transformer de vision, 2 capas) |
+| Parametros totales | 225.856 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de visión; no aplica ventana de texto) |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; verificado finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (modelo de visión, sin capacidades lingüísticas) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en float32) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (float32) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es DINOv2 (ViT auto-supervisado para características visuales), instanciada como `Dinov2Model`. El fixture aplica la regla genérica de reducción de `sweep.py` del repositorio `transformers-mic`, fijando `num_hidden_layers` a 2 y manteniendo los mismos nombres de tensores que el checkpoint real `facebook/dinov2-small`. Los ficheros de procesador (`preprocessor_config.json`) se copiaron byte a byte desde el modelo original.
+El modelo es una instancia reducida de `Dinov2Model`, la arquitectura de visión auto-supervisada de Meta presentada en el paper DINOv2. La reducción se aplica con la regla genérica de `experiments/sweep.py` del repositorio `transformers-mic`, que en este caso fija `num_hidden_layers = 2` frente a las 12 capas del `dinov2-small` original. Los nombres de tensores coinciden con los del checkpoint real, de modo que el fixture es intercambiable a nivel de carga sin cambios en el código de integración.
 
-No hubo entrenamiento: los pesos son aleatorios con semilla 17. Se validaron mediante una "input-sensitivity gate" que exige que toda perturbación de las entradas del contrato mueva los logits al menos 0,001; la perturbación más débil (`pixel_values:halve`) produjo un desplazamiento de 0,331. El artefacto se guardó en float32 (el dtype por defecto de `facebook/dinov2-small`) y se comprobó que forward, pérdida y gradientes son finitos en float32, bfloat16 y float16. La clave de fixture es `c18a1be82d3e`.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se validaron con una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplaza los logits al menos 0,001 (la más débil, `pixel_values:halve`, produce un desplazamiento de 0,331). Los pesos se guardan en float32, el dtype por defecto de `facebook/dinov2-small`, y se verificó que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16. El fichero de preprocesado se copia byte a byte del modelo base.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no han sido entrenados, por lo que no produce características visuales útiles.
-- Sirve como fixture de pruebas para validar la integración de `Dinov2Model` en `transformers-mic`: nombres de tensores, carga de pesos, ficheros de procesador y expectativas de framework.
-- Verificado numéricamente estable (sin NaN/Inf en forward, loss y gradientes) en float32, bfloat16 y float16.
-- Sensibilidad a entradas confirmada: perturbaciones sobre `pixel_values` alteran los logits por encima del umbral del contrato.
-- No soporta tool calling, agentes, razonamiento multi-paso, generación de texto ni capacidades multilingües.
-- No dispone de modo thinking, visión funcional, audio ni ninguna capacidad de inferencia real.
+- No es un modelo funcional: no genera texto, no razona, no produce código ni resuelve matemáticas.
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- No tiene capacidades multilingües (no procesa lenguaje).
+- Su única función es ejercitar la ruta de carga, preprocesado y forward de `Dinov2Model` en Transformers y en el contrato MIC.
+- Sirve como fixture de regresión para validar que los cambios en el framework no rompen la integración de la arquitectura DINOv2.
 
 ## Casos de uso
 
-- Pruebas de integración en CI: usar el fixture para ejecutar la suite de tests de `transformers-mic` sin descargar `facebook/dinov2-small`, verificando que la carga de pesos y el forward pass funcionan con los nombres de tensores esperados.
-- Validación de contratos de framework: comprobar que el directorio `integrations/transformers/expectations` coincide con la salida real del modelo reducido antes de actualizar la librería.
-- Desarrollo de nuevas reglas de reducción: servir como caso de referencia para `sweep.py`, comparando la configuración encogida con el checkpoint original.
-- Verificación de dtypes: testear rutas de ejecución en float32, bfloat16 y float16 comprobando finitud de gradientes en pipelines de entrenamiento simulados.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture dinov2-small-mic` y comparar hashes registrados en `build.json`.
-- Pruebas de regresión de procesadores: validar que `preprocessor_config.json` copiado byte a byte se carga correctamente en el pipeline de Transformers sin depender del modelo completo.
+- Integración continua de Transformers: el fixture se carga en la suite de tests para verificar que `Dinov2Model` sigue aceptando los mismos nombres de tensores y el mismo `preprocessor_config.json` tras refactorizaciones del código.
+- Validación de contratos MIC: el repositorio incluye `integration.json` con el manifiesto del contrato y `integrations/transformers/expectations`, que permiten comprobar que un framework cumple las expectativas de entrada y salida definidas.
+- Pruebas de compatibilidad de dtype: al ser finito en float32, bfloat16 y float16, permite testear rutas de carga y forward en distintas precisiones sin necesidad de descargar el checkpoint completo.
+- Desarrollo de pipelines de preprocesado: al copiar byte a byte el `preprocessor_config.json` real, se puede validar el preprocesado de imágenes de DINOv2 sin pesos reales.
+- Reproducción de builds: `build.json` registra fuentes fijadas, resultados de las puertas y hashes de ficheros, lo que permite reconstruir el fixture con `python example/build_fixtures.py --fixture dinov2-small-mic`.
+- Referencia para equipos que diseñen sus propios fixtures: el patrón de empaquetar pesos reducidos, uso ejecutable y expectativas de framework en un único repositorio es reutilizable para otras arquitecturas.
 
 ## Benchmarks y rendimiento
 
@@ -51,36 +51,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en float32 (225.856 parámetros, ~0,9 MB de pesos); cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: no requiere GPU dedicada; puede ejecutarse en CPU sin problema.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (carga estándar de `Dinov2Model`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; al tratarse de un fixture de 2 capas con pesos aleatorios, las mediciones no serían representativas de DINOv2 real.
+- VRAM estimada para inferencia: inferior a 10 MB en float32 (225.856 parámetros × 4 bytes), despreciable en cualquier GPU.
+- GPU recomendadas: ninguna en particular; cabe en CPU y en cualquier GPU consumer, incluida una GTX 1050 o una iGPU.
+- Cabe en consumer GPU: sí, con margen amplísimo.
+- Opciones de despliegue: carga directa con `transformers` (ruta principal documentada en `integrations/transformers/usage.md`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un artefacto de prueba sin valor semántico, las métricas de rendimiento no son significativas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tipo | Licencia | Uso previsto |
-|---|---|---|---|---|
-| huggingface-mic/dinov2-small-mic | 225.856 | Fixture de pruebas (pesos aleatorios) | no disponible | Validación de integración |
-| facebook/dinov2-small | no disponible en la información | Modelo de visión DINOv2 real | no disponible en la información | Extracción de características de imagen |
-| Otros fixtures de transformers-mic | no disponible | Fixtures de pruebas | no disponible | Validación de integración |
+| Modelo | Parámetros | Capas | Propósito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `dinov2-small-mic` | 225.856 | 2 | Fixture de test | no disponible | Hugging Face |
+| `facebook/dinov2-small` | ~22 M | 12 | Extractor de features de imagen | no disponible | Hugging Face |
+| `facebook/dinov2-base` | ~86 M | 12 | Extractor de features de imagen | no disponible | Hugging Face |
+| `facebook/dinov2-large` | ~300 M | 24 | Extractor de features de imagen | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparables, ya que el artefacto no es un modelo funcional.
+La comparación con las variantes reales de DINOv2 es solo estructural: el fixture comparte arquitectura y nombres de tensores con `facebook/dinov2-small`, pero carece de pesos entrenados y de cualquier capacidad de extracción de features útil. Para uso real debe emplearse el checkpoint de Meta.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y no producen características visuales significativas.
-- Etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos; no debe desplegarse en producción.
-- Licencia no especificada en la información disponible; verificar antes de cualquier uso, aunque el uso previsto es únicamente de pruebas.
-- Sin datos de sesgos, alucinación o cobertura idiomática: no aplica al no ser un modelo entrenado.
-- La configuración encogida (2 capas) no representa el comportamiento del checkpoint real `facebook/dinov2-small`.
-- Cualquier métrica de rendimiento obtenida con este fixture no es extrapolable al modelo original.
+- No es un modelo utilizable: los pesos son aleatorios y no codifican ninguna representación aprendida.
+- Etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; no debe desplegarse en producción bajo ningún concepto.
+- Sesgos conocidos: no aplica, al no haber entrenamiento; no se puede evaluar sesgo en un modelo con pesos aleatorios.
+- Riesgo de alucinación: no aplica en el sentido habitual, pero cualquier salida que produzca es ruido sin significado.
+- Limitaciones de contexto o idioma: no aplica; el modelo no procesa lenguaje.
+- Restricciones de licencia: la licencia no está declarada en la información disponible, lo que impide confirmar condiciones de uso comercial. El modelo base `facebook/dinov2-small` tiene sus propias condiciones, que deben consultarse por separado.
+- Caveat para producción: el repo ocupa 0,0 GB y contiene solo pesos reducidos, uso y expectativas; otros ficheros deben regenerarse con `build_fixtures.py`.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/dinov2-small-mic
-- Modelo base: https://huggingface.co/facebook/dinov2-small
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de reducción (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/dinov2-small-mic.html
+- [Modelo en Hugging Face](https://huggingface.co/huggingface-mic/dinov2-small-mic)
+- [Modelo base facebook/dinov2-small](https://huggingface.co/facebook/dinov2-small)
+- [Repositorio transformers-mic](https://github.com/huggingface/transformers-mic)
+- [Script sweep.py](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
+- [Script build_fixtures.py](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)
+- [Cómo se redujo el fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/dinov2-small-mic.html)

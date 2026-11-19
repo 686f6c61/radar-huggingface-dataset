@@ -59,31 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/Shepherd-Alpha · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/Shepherd-Alpha",
-      "snippet": "reaperdoesntknow / Shepherd-Alpha like 0 Text Generation Transformers Safetensors ZennyKenny/tactical-military-reasoning-v.1. English qwen3 tactical-reasoning military defense-ai bicell-dispersal sft dual-perspective shepherd convergentintel qwen ai conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model Shepherd-Alpha ..."
-    },
-    {
-      "title": "Shepherd - a reaperdoesntknow Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/reaperdoesntknow/shepherd",
-      "snippet": "The first defense AI reasoning model&#x27;s on Hugging Face."
-    },
-    {
-      "title": "reaperdoesntknow/Shepherd-Alpha: Model synced from source ...",
-      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Shepherd-Alpha",
-      "snippet": "Shepherd-Alpha is the first public model in the Shepherd family — an ongoing research program developing AI systems for autonomous defense applications. The program spans:"
-    },
-    {
-      "title": "Latest AI Model Releases — August 2026",
-      "url": "https://aireleasetracker.com/latest",
-      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?search=reaperdoesntknow%2FShepherd-Alpha",
-      "snippet": "Explore machine learning models."
-    }
-  ]
+  "sources": []
 }

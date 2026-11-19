@@ -2,105 +2,104 @@
 
 ## Resumen
 
-LFM3-1.7B-uncensored-abl48 es una version "abliterada" del modelo LiquidAI/LFM3-1.7B, un modelo de lenguaje de 1.730 millones de parametros desarrollado originalmente por Liquid AI. La modificacion, realizada por el usuario rSalone, elimina la direccion de rechazo (refusal direction) del modelo base mediante una tecnica de abliteration aplicada en los 48 puntos donde el modelo escribe en el flujo residual (24 capas x 2). El objetivo es obtener un modelo que responda a practicamente cualquier prompt sin negarse, manteniendo en lo posible las capacidades originales de razonamiento y matematicas.
+LFM3-1.7B-uncensored-abl48 es una versión "abliterada" (sin mecanismos de rechazo) del modelo LiquidAI/LFM3-1.7B, desarrollada por el usuario rSalone. La abliteración es una técnica de modificación de pesos que identifica y elimina la "dirección de rechazo" en el espacio de activaciones del transformer, de modo que el modelo deja de negarse a responder ante determinadas peticiones sin necesidad de reentrenamiento ni de prompting especial. En este caso, el autor midió la dirección de rechazo como la media sobre todos los tokens del prompt, un enfoque que según sus pruebas elimina las negativas con más eficacia que medir la dirección dentro del bloque de razonamiento o de la respuesta.
 
-El modelo conserva la arquitectura del LFM3 original, que incluye un modo de "pensamiento" (thinking) previo a la respuesta. La innovacion principal de esta ficha no esta en la arquitectura sino en la metodologia de abliteration: el autor compara direcciones de rechazo medidas en el prompt, en el pensamiento y en la respuesta, y concluye que medir la media sobre todos los tokens del prompt y eliminar la direccion en los 48 puntos produce la mayor tasa de respuestas sin rechazo (187 de 200 en HarmBench) con una degradacion minima en GSM8K (98/100) y GPQA Diamond (95/198).
+El modelo base, LFM3-1.7B, pertenece a la familia LFM3 de Liquid AI y está diseñado para generación de texto conversacional con modo de razonamiento (thinking). La intervención afecta a los 48 puntos de escritura al flujo residual (24 capas × 2) y se hornea directamente en los pesos, de forma que el comportamiento se mantiene tanto en transformers como en los GGUF cuantizados para llama.cpp. El resultado declarado por el autor es un aumento de las respuestas sin rechazo en HarmBench de 21/200 a 187/200, manteniendo prácticamente intacto el rendimiento en GSM8K (98/100) y con una ligera caída en GPQA Diamond (de 99 a 95 sobre 198).
 
-Es relevante ahora porque demuestra que la abliteration bien calibrada puede eliminar rechazos de forma casi completa en modelos pequenos con modo thinking, un caso que hasta ahora presentaba dificultades por la presencia de deliberacion interna. El modelo se distribuye en safetensors BF16 y GGUF (BF16 y Q4_K_M), y esta pensado para experimentacion e investigacion sobre alineamiento y seguridad, no para uso comercial sin revisar la licencia.
+Es relevante ahora porque ejemplifica una tendencia creciente de publicaciones comunitarias que modifican modelos pequeños para eliminar restricciones de alineación, con documentación técnica detallada sobre el método y sus límites. Con 1.728.801.536 parámetros y un contexto que el autor opera a 32.768 tokens en llama.cpp, es un modelo ligero que cabe en GPU de consumo y que apunta a casos de uso donde el filtrado previo del proveedor resulta un obstáculo (investigación de robustez, generación creativa sin restricciones, red teaming).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (LFM3, con modo thinking), heredada de LiquidAI/LFM3-1.7B |
+| Arquitectura | Transformer decoder-only (familia LFM3 de Liquid AI); detalles internos no disponibles en la información proporcionada |
 | Parametros totales | 1.728.801.536 |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de llama.cpp usa `-c 32768`) |
-| Tipos de cuantizacion | BF16 (safetensors y GGUF), Q4_K_M (GGUF) |
-| Idiomas soportados | no disponible (los prompts de evaluacion fueron solo en ingles) |
-| Licencia | lfm-open-license-v1.0 (license: other) |
-| Formato de pesos | safetensors (BF16), GGUF (BF16 y Q4_K_M) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens en la configuración de llama.cpp del autor; contexto nativo del modelo base no disponible |
+| Tipos de cuantizacion | GGUF Q2_K, Q4_K_M, Q8_0, BF16; safetensors BF16 |
+| Idiomas soportados | no disponible (la model card solo menciona prompts en inglés para los benchmarks) |
+| Licencia | lfm-open-license-v1.0 (etiquetada como "other") |
+| Formato de pesos | safetensors (BF16), GGUF (Q2_K, Q4_K_M, Q8_0, BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LiquidAI/LFM3-1.7B, un transformer de 1.730 millones de parametros con capacidad de razonamiento explicito (thinking) antes de emitir la respuesta. La modificacion aplicada es una abliteration: se mide una direccion de rechazo y se resta de los pesos del modelo. Segun la model card, LFM3-1.7B escribe en el flujo residual en 48 puntos (24 capas x 2). La version abl48 elimina la direccion en los 48 puntos, mientras que la version abl38 solo en los 38 puntos cuyas activaciones separan prompts censurados de prompts ordinarios (precision leave-one-out >= 95%, d' >= 3).
+El modelo es un transformer decoder-only de la familia LFM3 de Liquid AI, con 1.728.801.536 parámetros en BF16. No se dispone de información sobre la composición del dataset de preentrenamiento, el número de tokens, ni si hubo fases de RLHF o DPO en el modelo base. La model card tampoco detalla innovaciones arquitectónicas específicas (atención lineal, SSM híbrido, decodificación especulativa, etc.); los papers referenciados en los tags (arXiv:2406.11717, 2402.04249, 2110.14168, 2311.12022) corresponden a trabajos genéricos sobre abliteración, refusal directions y evaluación de seguridad, no a la arquitectura del modelo base.
 
-El autor describe un proceso de calibracion en dos fases. Primero, una seleccion con 10 prompts censurados midiendo direcciones en 11 posiciones (prompt, pensamiento y respuesta). Las direcciones medidas en el prompt respondieron los 10 prompts, mientras que las medidas en el pensamiento o la respuesta dependian de la posicion (el final del pensamiento respondio 3 y 2; la mitad de la respuesta, 6 y 0). Despues, una prueba principal con 8 versiones (2 posiciones de prompt x 2 de pensamiento, cada una con eliminacion en 48 puntos o solo en los relacionados) evaluada en HarmBench, GSM8K y GPQA Diamond. Las versiones medidas en el prompt respondieron 175-185 de 200 en HarmBench frente a 158-172 de las medidas en el pensamiento. Se liberaron las dos versiones medidas como media sobre el prompt. Para escribir la edicion en los pesos, el autor compensa la RMSNorm posterior: en lugar de restar gamma⊙r de la matriz de salida W (KL 0.0053 para abl48), divide gamma y aplica W' = W - b(a^T W) con a = gamma⊙r y b = r/gamma (escalado para que a^T b = 1), reduciendo la KL a 0.0013 (abl48) y 0.0007 (abl38). La KL respecto al original es 0.0112 (abl48) y 0.0083 (abl38). No se modificaron otros pesos.
-
-No se dispone de informacion sobre el dataset de entrenamiento original del modelo base (numero de tokens, composicion, RLHF/DPO) en la informacion proporcionada.
+La innovación técnica de esta ficha es el procedimiento de abliteración. El autor identifica 48 puntos de escritura al flujo residual (24 capas × 2) y mide la dirección de rechazo en 11 posiciones distintas: en el prompt (último token y media de todos los tokens), dentro del bloque de razonamiento (thinking) y dentro de la respuesta. Las direcciones medidas en el prompt eliminan mejor las negativas que las medidas en el thinking o en la respuesta: en la prueba principal, las versiones medidas en el prompt respondieron sin rechazo entre 175 y 185 de 200 prompts de HarmBench, frente a 158-172 de las versiones medidas en el thinking. Además, el autor resuelve el problema de hornear la edición en los pesos teniendo en cuenta la RMSNorm posterior: en lugar de restar directamente γ⊙r de la matriz de salida W (lo que daba KL 0.0053), aplica W' = W − b(aᵀW) con a = γ⊙r y b = r/γ, reduciendo la divergencia a KL 0.0013 (abl48) y 0.0007 (abl38) respecto a la eliminación durante la generación. La divergencia KL respecto al modelo original es de 0.0112 (abl48) y 0.0083 (abl38). No se modificaron otros pesos.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada del modelo base.
-- Razonamiento con modo thinking: el modelo delibera antes de responder, lo que el autor aprovecha para medir direcciones de rechazo dentro del pensamiento.
-- Razonamiento matematico: mantiene GSM8K en 98/100 tras la abliteration, identico al original.
-- Razonamiento cientifico de nivel avanzado: GPQA Diamond 95/198 (frente a 99/198 del original).
-- Respuesta sin rechazo: 187 de 200 prompts de HarmBench respondidos sin negativa, frente a 21 del original.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la evaluacion se hizo solo con prompts en ingles.
-- Capacidades especiales: modo thinking confirmado; vision y audio no disponibles en la informacion proporcionada.
+- Generación de texto conversacional multi-turno, con modo de razonamiento (thinking) activable, como en el modelo base.
+- Razonamiento matemático: 98/100 en GSM8K según las pruebas del autor, idéntico al original.
+- Razonamiento científico de nivel avanzado: 95/198 en GPQA Diamond (frente a 99/198 del original), con hasta 8.192 tokens de generación.
+- Respuesta sin rechazo ante prompts que el modelo original rechazaría: 187/200 en HarmBench frente a 21/200 del original.
+- Capacidad de planificar la respuesta dentro del thinking sin deliberar sobre rechazo (139-170 de 200 prompts, frente a 89-133 en versiones medidas en el thinking).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente; el modo thinking sugiere capacidad de razonamiento encadenado, pero no se documenta soporte de agentes.
+- Capacidades multilingües: no disponibles; los benchmarks se hicieron solo con prompts en inglés.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como se distribuye la direccion de rechazo en un transformer con modo thinking y comparar abl48 frente a abl38, ya que ambas versiones se publican con la misma metodologia y permiten analizar el efecto de eliminar la direccion en 48 versus 38 puntos.
-- Evaluacion de robustez de clasificadores de seguridad: al responder 187 de 200 prompts de HarmBench sin rechazo, sirve como caso de prueba para medir la tasa de deteccion de clasificadores externos y para calibrar filtros de entrada/salida en pipelines de moderacion.
-- Generacion de texto creativo sin restricciones: el modelo puede producir narrativa, dialogos o guiones sobre temas que el modelo base rechazaria, manteniendo el modo thinking para coherencia argumental en textos largos.
-- Despliegue local en hardware de consumo: con el GGUF Q4_K_M de 1,10 GB corre a unos 275 tok/s en una RTX 5070 Ti (16 GB) mediante llama.cpp, lo que lo hace adecuado para prototipado rapido en estaciones de trabajo sin GPU de datacenter.
-- Experimentacion con decodificacion y sampling: las instrucciones del autor fijan temperatura 0,1, top-k 50 y repetition penalty 1,1; sirve para estudiar como el sampling interactua con la eliminacion de la direccion de rechazo en modelos pequenos.
-- Analisis de degradacion por abliteration: comparar GSM8K (98 vs 98) y GPQA Diamond (95 vs 99) entre original y abl48 permite cuantificar el coste de la edicion en tareas de razonamiento y usar el modelo como referencia en estudios de poda de direcciones.
-- Fine-tuning posterior sobre dominios especificos: al ser un modelo de 1,7B en safetensors BF16 (3,46 GB), se puede reentrenar o ajustar con LoRA en una sola GPU consumer para tareas verticales donde se requiera ausencia de rechazos.
+- Investigación de robustez y red teaming: el modelo permite estudiar cómo responde un LLM sin mecanismos de rechazo ante prompts adversarios, comparando directamente con el original para medir el efecto de la abliteración sobre la alineación.
+- Evaluación de sesgos y seguridad en pipelines de auditoría: al eliminar la capa de negativa, se pueden observar las respuestas "subyacentes" del modelo y analizar qué conocimientos o comportamientos quedan expuestos, útil para informes de seguridad internos.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas sensibles (violencia en ficción, personajes moralmente ambiguos) sin que el modelo se niegue a continuar la escena, manteniendo coherencia multi-turno.
+- Despliegue local en hardware de consumo: con cuantización Q4_K_M (1,10 GB) cabe en GPU de 4-8 GB o incluso en CPU, lo que permite experimentar con un modelo conversacional de 1,7B en portátiles y equipos sin GPU dedicada.
+- Prototipado rápido de asistentes conversacionales: gracias a su tamaño reducido y a los GGUF listos para llama.cpp, sirve para validar flujos de chat, prompts de sistema y formatos de conversación antes de escalar a modelos mayores.
+- Docencia y demostraciones sobre alineación: el par original/abliterado y la documentación del método (medición de direcciones, horneado en pesos, KL) constituyen un caso de estudio concreto para explicar cómo se codifica el rechazo en las activaciones de un transformer.
+- Generación de datos sintéticos para entrenamiento: en escenarios donde se necesita diversidad de respuestas sin filtrado previo, el modelo puede producir ejemplos que un modelo alineado rechazaría, siempre que el uso cumpla la licencia y la legislación aplicable.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card. Cada benchmark se ejecuto una sola vez; BF16 GGUF en llama.cpp con thinking activado.
-
-| Benchmark | Original | abl48 (este modelo) | Notas |
+| Benchmark | Original (LFM3-1.7B) | abl48 (este modelo) | Notas |
 |---|---|---|---|
-| HarmBench (respondidos sin rechazo, de 200) | 21 | 187 | Etiquetado con un Qwen3.8-Flash-Next local, no el clasificador oficial; prompts solo en ingles |
-| GSM8K (correctos, de 100) | 98 | 98 | Sin degradacion |
-| GPQA Diamond (correctos, de 198) | 99 | 95 | Hasta 8.192 tokens; unas 50 preguntas truncadas y contadas como incorrectas |
+| HarmBench (respondidos sin rechazo, de 200) | 21 | 187 | Etiquetado por Qwen3.8-Flash-Next local, no por el clasificador oficial; prompts solo en inglés |
+| GSM8K (correctos, de 100) | 98 | 98 | Una ejecución por modelo |
+| GPQA Diamond (correctos, de 198) | 99 | 95 | Hasta 8.192 tokens; ~50 preguntas truncadas y contadas como incorrectas |
 
-Datos adicionales de la prueba principal (8 versiones, transformers BF16, 1 ejecucion): las versiones medidas en el prompt respondieron 175-185 de 200 en HarmBench; las medidas en el pensamiento, 158-172. Las versiones del lado del prompt planificaron la respuesta en el pensamiento sin deliberar sobre el rechazo en 139-170 casos, frente a 89-133 de las del lado del pensamiento. Una direccion aleatoria eliminada en los mismos 48 puntos respondio 24 de 200. En transformers, el original obtiene 97 en GSM8K y 99 en GPQA Diamond.
+Datos adicionales del autor: una dirección aleatoria eliminada en los mismos 48 puntos respondió 24/200 en HarmBench. En la comparación de 8 variantes (2 posiciones de prompt × 2 de thinking, cada una con eliminación en 48 puntos o solo en los relacionados), las versiones del lado del prompt respondieron 175-185/200 y las del lado del thinking 158-172/200. GSM8K se mantuvo en 96-98 y GPQA en 94-100 para las 8 variantes. En transformers, el original obtiene 97 en GSM8K y 99 en GPQA. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,5 GB en BF16 (safetensors de 3,46 GB o GGUF BF16 de 3,47 GB); aproximadamente 1,1 GB en GGUF Q4_K_M, mas overhead de contexto.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4_K_M y al menos 6-8 GB para BF16 con contexto moderado. Verificado por el autor en NVIDIA GeForce RTX 5070 Ti (16 GB).
-- Cabe en GPU consumer: si, practicamente en cualquier GPU consumer moderna; el autor confirma ejecucion en RTX 5070 Ti con llama.cpp CUDA (build 12004) y con transformers 5.22.0 / torch 2.15.0.
-- Opciones de despliegue: llama.cpp (`llama-server` con `-ngl 99 -c 32768 -fa on --jinja`), transformers con `trust_remote_code=True` y `dtype="bfloat16"`. vLLM, Ollama y TGI no estan confirmados en la informacion proporcionada.
-- Latencia y throughput: aproximadamente 155 tok/s en BF16 y aproximadamente 275 tok/s en Q4_K_M sobre RTX 5070 Ti con llama.cpp CUDA.
+- VRAM estimada para inferencia: ~3,5 GB en BF16 (safetensors o GGUF BF16), ~1,9 GB en Q8_0, ~1,2 GB en Q4_K_M, ~0,8 GB en Q2_K (tamaños de archivo; la VRAM real incluye overhead del runtime y caché KV).
+- GPU recomendadas: cualquier GPU con 4 GB o más para Q4_K_M (RTX 3050, GTX 1650, RTX 4060); 8 GB o más para BF16 con contexto largo (RTX 3060 Ti, RTX 4060 Ti, RTX 3070); A100/H100 no son necesarias para este tamaño, aunque pueden usarse para servir muchas peticiones concurrentes.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones; Q4_K_M y Q2_K incluso en iGPU y CPU.
+- Opciones de despliegue: llama.cpp (llama-server, con `-ngl 99 -c 32768 -fa on --jinja`), Ollama (a partir del GGUF), transformers con `trust_remote_code=True` y `dtype="bfloat16"`. vLLM y TGI no están documentados en la información disponible; el tag `custom_code` y la necesidad de `trust_remote_code` pueden complicar su integración.
+- Latencia y throughput: no disponibles. El autor solo indica que Q8_0 y Q2_K se comprobaron cargando y respondiendo una pregunta simple en CPU; no se publican métricas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | HarmBench (sin rechazo) | GSM8K | GPQA Diamond | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| LFM3-1.7B-uncensored-abl48 (este) | 1,73B | no disponible | 187/200 | 98/100 | 95/198 | lfm-open-license-v1.0 | Hugging Face (safetensors, GGUF) |
-| LFM3-1.7B-uncensored-abl38 | 1,73B | no disponible | no disponible (el autor indica que elimina la direccion en 38 puntos) | no disponible | no disponible | lfm-open-license-v1.0 | Hugging Face |
-| LiquidAI/LFM3-1.7B (original) | 1,73B | no disponible | 21/200 | 98/100 (97 en transformers) | 99/198 (99 en transformers) | lfm-open-license-v1.0 | Hugging Face |
+| Modelo | Parámetros | Contexto | HarmBench (sin rechazo) | GSM8K | GPQA Diamond | Licencia |
+|---|---|---|---|---|---|---|
+| LFM3-1.7B-uncensored-abl48 (este) | 1,73B | 32.768 (config. llama.cpp) | 187/200 | 98/100 | 95/198 | lfm-open-license-v1.0 |
+| LiquidAI/LFM3-1.7B (original) | 1,73B | no disponible | 21/200 | 98/100 | 99/198 | lfm-open-license-v1.0 |
+| LFM3-1.7B-uncensored-abl38 (mismo autor) | 1,73B | 32.768 (config. llama.cpp) | 175-185/200 (rango de variantes del lado del prompt) | 96-98/100 | 94-100/198 | lfm-open-license-v1.0 |
 
-No se dispone de datos de otros modelos abliterados comparables en la informacion proporcionada.
+No se dispone de datos de otros modelos abliterados de tamaño comparable en la información proporcionada, por lo que la comparativa se limita a las variantes del mismo autor y al modelo base. Cualquier comparación con modelos de otras familias (p. ej., Llama 3.2 1B, Qwen2.5 1.5B) requeriría ejecutar los mismos benchmarks bajo el mismo protocolo, algo que no se ha hecho en la documentación disponible.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks se ejecutaron una sola vez cada uno; el propio autor senala que ejecutar el original en transformers y en llama.cpp cambio 19 de 200 etiquetas de HarmBench, lo que indica una variabilidad considerable en la medicion.
-- GPQA Diamond se trunco a 8.192 tokens y unas 50 de 198 preguntas se cortaron y contaron como incorrectas, por lo que la puntuacion de 95/198 puede infravalorar el rendimiento real.
-- Las respuestas de HarmBench fueron etiquetadas por un Qwen3.8-Flash-Next local, no por el clasificador oficial, y los prompts eran solo en ingles; la tasa de no rechazo en otros idiomas no esta medida.
-- La abliteration elimina la direccion de rechazo, no la capacidad de generar contenido danino; el modelo puede producir respuestas a solicitudes que el modelo base rechazaria, con implicaciones legales y eticas segun la jurisdiccion.
-- La licencia lfm-open-license-v1.0 es una licencia "other" con terminos propios; es necesario revisar el archivo LICENSE antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
-- El modelo base tiene 1,73B de parametros, por lo que su capacidad de razonamiento y conocimiento factual es limitada en comparacion con modelos de mayor tamano; la degradacion en GPQA (99 a 95) sugiere un coste pequeno pero real.
-- Riesgo de alucinacion inherente a modelos de este tamano, no cuantificado en la informacion proporcionada.
-- No hay informacion sobre sesgos conocidos ni sobre el dataset de entrenamiento original, lo que dificulta evaluar sesgos sistematicos.
-- El modelo requiere `trust_remote_code=True` en transformers, lo que implica ejecutar codigo del repositorio; conviene auditar el codigo antes de usarlo en produccion.
-- No se confirma soporte de tool calling, agentes ni capacidades multilingues; no debe asumirse su disponibilidad.
+- Eliminar la dirección de rechazo no elimina el conocimiento subyacente ni los sesgos del modelo base; las respuestas pueden reproducir estereotipos o contenido dañino sin filtro. No hay evaluación de sesgos en la información disponible.
+- Riesgo de alucinación: no se han publicado métricas de fidelidad factual ni de tasa de alucinación. La abliteración puede alterar el comportamiento del modo thinking y, con ello, la calidad del razonamiento en dominios no evaluados.
+- Los benchmarks se ejecutaron una sola vez por modelo; el autor señala que cambiar el runtime (transformers vs. llama.cpp) alteró 19 de 200 etiquetas de HarmBench, lo que indica una variabilidad considerable en las evaluaciones de rechazo.
+- GPQA Diamond se truncó a 8.192 tokens y unas 50 de 198 preguntas se cortaron y contaron como incorrectas, por lo que la puntuación de 95/198 está infravalorada respecto a una evaluación sin truncamiento.
+- HarmBench fue etiquetado por un Qwen3.8-Flash-Next local, no por el clasificador oficial, y solo con prompts en inglés; los resultados no son directamente comparables con los de la literatura que usa el clasificador oficial.
+- Idiomas: no hay datos de rendimiento fuera del inglés; el modelo base podría tener capacidades multilingües, pero no están documentadas ni evaluadas.
+- Licencia: lfm-open-license-v1.0 (etiquetada como "other"). Es imprescindible revisar el archivo LICENSE del repositorio antes de cualquier uso comercial; las licencias "open" de Liquid AI pueden incluir restricciones de uso, atribución o límites de escala.
+- Restricciones legales y de plataforma: un modelo sin mecanismos de rechazo puede vulnerar políticas de uso de proveedores cloud y legislación sobre contenido (por ejemplo, normativa europea de servicios digitales); su despliegue público requiere moderación externa.
+- El autor advierte que la eliminación de la dirección se horneó en los pesos con una aproximación (KL 0.0013 frente a la eliminación en generación), por lo que puede haber diferencias residuales de comportamiento entre el safetensors y los GGUF.
+- Los GGUF Q8_0 y Q2_K solo se comprobaron cargando y respondiendo una pregunta simple en CPU; no se validaron en los benchmarks, por lo que su calidad no está garantizada.
+- El repositorio requiere `trust_remote_code=True` en transformers, lo que implica ejecutar código del autor; conviene auditar el código remoto antes de usarlo en entornos de producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48
-- Version abl38: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl38
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- README en japones: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48/blob/main/README_ja.md
-- Figura 2 (posiciones de medicion): https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48/blob/main/images/fig2_positions_en.png
-- Figura 3 (prueba principal): https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48/blob/main/images/fig3_main_en.png
-- Figura 4 (GGUF en llama.cpp): https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48/blob/main/images/fig4_gguf_en.png
+- Variante abl38 del mismo autor: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl38
+- README en japonés: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48/blob/main/README_ja.md
 - Licencia: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48/blob/main/LICENSE
+- Paper sobre abliteración (arXiv:2406.11717): https://arxiv.org/abs/2406.11717
+- Paper sobre refusal directions (arXiv:2402.04249): https://arxiv.org/abs/2402.04249
+- Paper sobre evaluación de seguridad (arXiv:2110.14168): https://arxiv.org/abs/2110.14168
+- Paper sobre benchmarks de razonamiento (arXiv:2311.12022): https://arxiv.org/abs/2311.12022
+- llama.cpp: https://github.com/ggml-org/llama.cpp

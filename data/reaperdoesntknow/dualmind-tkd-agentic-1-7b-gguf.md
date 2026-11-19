@@ -2,84 +2,87 @@
 
 ## Resumen
 
-DualMind-TKD-Agentic-1.7B-GGUF es un modelo de lenguaje de 1.720 millones de parámetros publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de un fine-tuning del modelo base Qwen3, convertido al formato GGUF mediante la librería Unsloth para su ejecución eficiente con llama.cpp y herramientas compatibles como Ollama. El nombre sugiere un enfoque orientado a agentes conversacionales, y las etiquetas de la ficha lo clasifican como "conversational" y compatible con endpoints de inferencia.
+DualMind-TKD-Agentic-1.7B-GGUF es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones) publicado por el usuario reaperdoesntknow en Hugging Face. Se distribuye exclusivamente en formato GGUF, cuantizado para su uso con llama.cpp, y está construido sobre la familia Qwen3, según indican las etiquetas del repositorio. El nombre sugiere un ajuste fino orientado a tareas agénticas ("Agentic") y a un entrenamiento de destilación de conocimiento ("TKD"), aunque la model card no documenta el proceso de entrenamiento ni los datos utilizados.
 
-El modelo se distribuye exclusivamente en formato GGUF con tres niveles de cuantización (Q4_K_M, Q6_K y Q8_0), lo que permite su despliegue en hardware de consumo con requisitos de memoria reducidos. Según los datos recogidos en llm-explorer, la ventana de contexto alcanza los 40.000 tokens, aunque esta cifra no está confirmada en la documentación oficial del autor. Su relevancia radica en ser una opción compacta y ligera para experimentar con agentes conversacionales en entornos locales, sin necesidad de infraestructura de servidor.
+El modelo ha sido ajustado y convertido a GGUF mediante Unsloth, una herramienta que acelera el fine-tuning y la exportación de modelos. El repositorio incluye tres cuantizaciones (Q4_K_M, Q6_K y Q8_0) y ocupa 8,7 GB en total. Con 2.588 descargas y una antigüedad de pocos meses (creado en julio de 2026 y actualizado en noviembre de 2026), se trata de un modelo de nicho, probablemente experimental, sin documentación técnica publicada por el autor.
 
-La ficha de Hugging Face no incluye información sobre la licencia, los idiomas soportados, el dataset de entrenamiento ni los benchmarks, por lo que buena parte de las especificaciones técnicas deben considerarse no disponibles. El repositorio contiene únicamente los archivos GGUF y una breve instrucción de uso con llama-cli.
+La relevancia de este modelo radica en su tamaño reducido y su formato GGUF, que lo hacen apto para inferencia en hardware de consumo y para flujos de trabajo con llama.cpp. Sin embargo, la ausencia de información sobre licencia, idiomas, arquitectura detallada y benchmarks limita seriamente su evaluación rigurosa y su uso en producción sin una validación empírica previa.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Qwen3 (transformer decoder-only) |
-| Parametros totales | 1.720.574.976 (1,7B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 40.000 tokens (según llm-explorer, no confirmado por el autor) |
-| Tipos de cuantizacion | Q4_K_M, Q6_K, Q8_0 |
+| Arquitectura | Transformer (familia Qwen3, según etiquetas del repositorio); detalles no disponibles |
+| Parámetros totales | 1.720.574.976 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q4_K_M, Q6_K, Q8_0 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (safetensors no incluidos en el repositorio) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3, un transformer decoder-only con atención de múltiples cabezas y normalización RMSNorm. No se han publicado detalles sobre el número de capas, dimensiones ocultas ni el mecanismo de atención específico, más allá de que corresponde a la familia Qwen3. El autor indica en la model card que el fine-tuning se realizó con Unsloth, una librería que acelera el entrenamiento y la conversión a GGUF, logrando un entrenamiento "2x más rápido" según su descripción.
+La información disponible indica que el modelo pertenece a la familia Qwen3 y que fue ajustado y convertido a GGUF con Unsloth. No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención ni si emplea atención con ventana deslizante, atención lineal u otras variantes. Tampoco se documenta si el modelo base es un Qwen3 denso de 1,7B o una variante derivada.
 
-No se dispone de información sobre el dataset de fine-tuning, el número de tokens de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se especifican innovaciones técnicas particulares más allá de la conversión a GGUF. La ausencia de una ficha técnica detallada impide conocer la composición exacta de los datos o el procedimiento de ajuste.
+Respecto al entrenamiento, el nombre "DualMind-TKD-Agentic" sugiere un ajuste fino orientado a comportamiento agéntico y posiblemente a destilación de conocimiento, pero la model card no aporta detalles sobre el volumen de tokens, la composición del dataset, el uso de RLHF/DPO ni las técnicas de alineación aplicadas. No hay información sobre decodificación especulativa, modos de razonamiento explícito ni otras innovaciones técnicas. Todo lo relativo al proceso de entrenamiento debe considerarse no disponible.
 
 ## Capacidades
 
-Dado que la documentación es mínima, las capacidades listadas a continuación se infieren de las etiquetas del modelo y del nombre del repositorio, no de pruebas documentadas:
-
-- Conversación multi-turno: el modelo está etiquetado como "conversational", lo que sugiere que puede mantener diálogos, aunque no hay ejemplos ni métricas que lo confirmen.
-- Orientación a agentes: el nombre "Agentic" indica un diseño pensado para tareas de agente, pero no se documenta soporte explícito de tool calling o function calling.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse mediante APIs de inferencia estándar.
-- Ejecución local: al estar en formato GGUF, es compatible con llama.cpp, llama-cli y Ollama, lo que permite uso offline en CPU o GPU.
-
-No hay evidencia de capacidades multimodales, razonamiento matemático avanzado, generación de código o soporte multilingüe más allá del que pueda heredar del modelo base Qwen3.
+- Generación de texto conversacional: el repositorio está etiquetado como "conversational" y la model card menciona su uso con `llama-cli` para LLM de solo texto.
+- Orientación a tareas agénticas: el sufijo "Agentic" del nombre indica un ajuste fino destinado a flujos con agentes, aunque no se detallan las capacidades concretas.
+- Compatibilidad con llama.cpp: se puede ejecutar con `llama-cli -hf reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF --jinja`.
+- Compatibilidad multimodal declarada por la plantilla de la model card: se menciona `llama-mtmd-cli` para modelos multimodales, pero no se confirma que este modelo concreto tenga capacidades de visión.
+- Soporte de tool calling / function calling: no disponible.
+- Capacidades multilingües: no disponible.
+- Modo de razonamiento explícito (thinking mode): no disponible.
+- Capacidades de audio o visión: no confirmadas.
 
 ## Casos de uso
 
-Dado que no hay documentación oficial de casos de uso, los siguientes escenarios son propuestas razonables basadas en las características del modelo (tamaño compacto, formato GGUF, orientación conversacional) y deben validarse con pruebas propias:
-
-- Prototipado rápido de chatbots locales: por su tamaño reducido y formato GGUF, puede ejecutarse en portátiles con 4-8 GB de RAM, permitiendo iterar sobre flujos conversacionales sin depender de APIs externas.
-- Asistentes personales en dispositivos de baja potencia: con cuantización Q4_K_M (1,11 GB), el modelo cabe en Raspberry Pi 5 o mini-PCs, aunque la latencia dependerá del hardware.
-- Experimentación académica con agentes conversacionales: estudiantes e investigadores pueden usarlo para estudiar comportamientos de diálogo multi-turno y patrones de generación sin coste de inferencia.
-- Pruebas de integración con llama.cpp y Ollama: al ser GGUF nativo, sirve para validar pipelines de inferencia local, gestión de contexto y plantillas de chat (jinja).
-- Despliegue en entornos con restricciones de privacidad: al ejecutarse en local, evita enviar datos a servicios externos, útil para aplicaciones que manejan información sensible.
-- Generación de contenido creativo de baja exigencia: cuentos cortos, ideas de nombres, borradores de correos, siempre que el usuario acepte una calidad variable al no haber benchmarks publicados.
+- Asistente conversacional local: el modelo puede desplegarse con llama.cpp en un equipo de sobremesa y gestionar conversaciones multi-turno sin conexión a internet, gracias a su tamaño de 1,7B parámetros y a las cuantizaciones Q4_K_M y Q6_K, que reducen los requisitos de memoria.
+- Prototipado de agentes en local: su orientación "Agentic" permite experimentar con bucles de razonamiento y llamadas a herramientas en entornos de desarrollo, usando Ollama o llama.cpp como backend ligero antes de escalar a modelos mayores.
+- Automatización de tareas de texto en el borde (edge computing): al caber en GPUs de consumo e incluso en CPU con cuantización Q4_K_M, puede integrarse en dispositivos con recursos limitados para clasificación, resumen o generación de respuestas breves.
+- Generación de código asistida en entornos con restricciones de privacidad: si el modelo hereda capacidades de código de Qwen3, podría emplearse en autocompletado o explicación de fragmentos dentro de un IDE local, sin enviar datos a servicios externos; requiere validación empírica previa.
+- Educación y experimentación: útil en cursos y talleres sobre fine-tuning, cuantización GGUF y despliegue con llama.cpp, dado su tamaño manejable y su disponibilidad en tres cuantizaciones.
+- Chatbot de soporte interno de bajo coste: para preguntas frecuentes y guiones acotados, un modelo de 1,7B cuantizado puede ofrecer latencia baja en hardware modesto, siempre que se valide su calidad y se controle el riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras pruebas estandarizadas para este modelo. La ausencia de métricas impide comparar su rendimiento con otros modelos de forma objetiva.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaños de archivo GGUF según cuantización: Q4_K_M (1,11 GB), Q6_K (1,42 GB), Q8_0 (1,83 GB).
-- VRAM estimada: según llm-explorer, aproximadamente 3,4 GB para la cuantización Q4_K_M, incluyendo el contexto. Esto permite ejecución en GPUs de consumo como GTX 1660 Super (6 GB), RTX 2060 (6 GB) o superiores.
-- CPU: puede ejecutarse únicamente con CPU mediante llama.cpp, con velocidades de generación de unos pocos tokens por segundo en procesadores modernos de 8 núcleos.
-- GPU recomendadas: RTX 3060 (12 GB) o superiores para una experiencia fluida con contexto largo (40K tokens).
-- Opciones de despliegue: llama.cpp, llama-cli, Ollama, servidores compatibles con GGUF (llama-server, text-generation-webui). También es compatible con plataformas de endpoints como FriendliAI según los resultados de búsqueda.
-- Latencia y throughput: no se han publicado mediciones oficiales. En una RTX 4090 se podría esperar una generación de 50-100 tokens/s con Q4_K_M, pero es una estimación no verificada.
+- VRAM estimada para inferencia: aproximadamente 1,2-1,5 GB para Q4_K_M, 1,6-1,9 GB para Q6_K y 2,0-2,4 GB para Q8_0, considerando pesos más overhead de contexto y caché KV (estimación orientativa; el autor no publica cifras).
+- GPU recomendadas: cualquier GPU con al menos 3-4 GB de VRAM, como RTX 3050, RTX 4060, RTX 3060, así como GPUs de datacenter (A100, H100) para despliegues con mayor concurrencia.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs consumer modernas, e incluso en CPU con cuantización Q4_K_M.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama (mediante importación del GGUF), y cualquier runtime compatible con GGUF; no se confirma soporte nativo en vLLM o TGI.
+- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. El modelo es un fine-tuning de Qwen3 de 1,7B, pero no se conocen los detalles del ajuste ni sus resultados. Como referencia general, se podría comparar con otros modelos GGUF de tamaño similar como Qwen2.5-1.5B-Instruct o Llama-3.2-1B, pero al carecer de benchmarks de DualMind-TKD-Agentic-1.7B, cualquier comparación numérica sería especulativa. Por tanto, la comparativa se considera no disponible.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| DualMind-TKD-Agentic-1.7B | 1,72B | no disponible | no disponible | GGUF | Hugging Face (reaperdoesntknow) |
+| Qwen3-1.7B (modelo base probable) | 1,7B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | Hugging Face (Qwen) |
+| Llama 3.2 1B | 1,2B | no disponible en esta ficha | Llama 3.2 Community License | safetensors, GGUF | Hugging Face (Meta) |
+| Gemma 3 1B | 1B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | Hugging Face (Google) |
+
+La comparativa se limita a datos de tamaño y formato; no se dispone de información sobre rendimiento comparado ni de benchmarks del modelo evaluado. Los datos de los modelos alternativos deben verificarse en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se indica bajo qué términos se distribuye el modelo. Esto impide conocer si se permite uso comercial, modificación o redistribución. Antes de usarlo en producción, es imprescindible contactar con el autor o revisar el repositorio original.
-- Sin documentación técnica: no hay información sobre el dataset de entrenamiento, el proceso de alineación ni las capacidades reales. El modelo debe tratarse como experimental.
-- Riesgo de alucinación: al ser un modelo pequeño (1,7B) sin benchmarks conocidos, la probabilidad de generar información falsa o incoherente es mayor que en modelos de mayor tamaño.
-- Sesgos potenciales: al derivar de Qwen3, puede heredar sesgos presentes en los datos de entrenamiento del modelo base, pero no hay análisis específicos disponibles.
-- Contexto largo no verificado: la cifra de 40K tokens proviene de una fuente externa (llm-explorer) y no está confirmada por el autor. El rendimiento real con contextos largos puede degradarse.
-- Idiomas no documentados: no se especifica qué idiomas soporta. Si se necesita un idioma distinto del inglés o chino, es recomendable probar primero.
-- Sin garantías de calidad: al no haber benchmarks, el rendimiento en tareas específicas (razonamiento, código, matemáticas) es desconocido y puede ser deficiente.
+- Ausencia de licencia declarada: no se especifica la licencia, lo que impide determinar si el uso comercial está permitido; es imprescindible contactar con el autor antes de cualquier despliegue productivo.
+- Falta de documentación técnica: no se detallan arquitectura, datos de entrenamiento, idiomas ni proceso de alineación, lo que dificulta evaluar sesgos y robustez.
+- Riesgo de alucinación: como todo modelo de 1,7B, la tasa de alucinación puede ser elevada, especialmente en tareas de conocimiento factual o razonamiento complejo; requiere verificación humana.
+- Idiomas no confirmados: se desconoce si el modelo mantiene el multilingüismo de Qwen3 o si el ajuste fino lo ha reducido a un subconjunto de idiomas.
+- Contexto desconocido: al no publicarse la longitud de contexto, no se puede garantizar el comportamiento en conversaciones largas o documentos extensos.
+- Modelo de nicho con pocas descargas y un solo "like": la validación comunitaria es mínima, por lo que la calidad y estabilidad no están contrastadas.
+- Posible deriva del modelo base: al ser un fine-tuning no documentado, puede haber degradado capacidades generales del Qwen3 original.
+- Uso en producción no recomendado sin evaluación previa: conviene realizar pruebas de calidad, seguridad y sesgo en el dominio concreto de aplicación.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF
-- Modelo base (sin cuantizar) en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
-- Página en FriendliAI para despliegue como endpoint: https://friendli.ai/models/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
-- Ficha en LLM Explorer con datos de contexto y VRAM: https://llm-explorer.com/model/reaperdoesntknow%2FDualMind-TKD-Agentic-1.7B,60uiu1cSuPHByFDHBqFewz
-- Repositorio de Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF
+- Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth
+- llama.cpp (runtime de inferencia GGUF): no se proporciona enlace en la información disponible, pero es el runtime referenciado por la model card.

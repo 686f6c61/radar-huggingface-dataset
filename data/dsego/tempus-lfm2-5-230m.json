@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "dsego/tempus-lfm2.5-230m",
+  "slug": "dsego-tempus-lfm2-5-230m",
+  "author": "dsego",
+  "url": "https://huggingface.co/dsego/tempus-lfm2.5-230m",
+  "created_at": "2026-11-19T01:41:09.000Z",
+  "updated_at": "2026-11-19T01:44:27.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "time-extraction",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:quantized:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 400003968,
+  "storage_human": "400 MB",
+  "context_length": 128000,
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

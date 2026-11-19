@@ -2,104 +2,106 @@
 
 ## Resumen
 
-Qwen3.5-9B-BOS-Q8-NonThinking es una cuantizacion en GGUF Q8 de un ajuste fino dialectal del modelo base Qwen/Qwen3.5-9B, publicada por el usuario shaban2024 bajo el proyecto "AgentMujo". El modelo esta especializado en bosnio (codigo de idioma `bs`) y orientado a function calling y flujos de agentes, con enfasis en registro dialectal denso. El autor lo etiqueta explicitamente como experimental y no apto para produccion.
+AgentMujo Q8 9B v2.0 es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario shaban2024 bajo el identificador `shaban2024/Qwen3.5-9B-BOS-Q8-NonThinking`. El modelo está especializado en bosnio (código ISO `bs`) y orientado a function calling y flujos de agentes, con un sesgo explícito hacia el modo "non-thinking" (sin cadena de razonamiento explícita). Se distribuye exclusivamente en formato GGUF con cuantización Q8 y está pensado para despliegue en producción mediante llama.cpp y entornos compatibles con endpoints.
 
-El modelo parte de Qwen3.5-9B (arquitectura transformer con hidden size de 4096, 32 capas y vocabulario de 248320 tokens) y se ha afinado mediante SFT con LoRA en varias iteraciones (r16 jt01–jt05, r64 r6401–r6406, gold01 y gold02), incorporando un dataset dialectal denso y ejemplos de comportamiento "ask-first". El resultado se distribuye en formato GGUF Q8, con un tamano de repositorio de 28,6 GB que incluye multiples versiones intermedias.
+El modelo resuelve el problema de la selección fiable de herramientas y la generación de argumentos válidos en un agente conversacional en bosnio, un idioma con escasa representación en modelos ajustados para tool calling. Según la model card, el checkpoint de producción (`model-q8-joint08.gguf`) alcanza un 0,867 de tool selection y un 0,875 de strict en el bucle de agente, con seguridad 1,0 en ese mismo protocolo. El repositorio incluye además múltiples artefactos experimentales intermedios (gold01 a gold06, v0.1 a v0.6, dpo01) que el autor marca explícitamente como no aptos para despliegue.
 
-Su relevancia es acotada pero concreta: demuestra un pipeline de ajuste fino para tool calling en un idioma de bajos recursos como el bosnio, con evaluacion propia (AgentMujo-Bench v0.5) y artefactos reproducibles (adaptadores y repositorio de framework de entrenamiento). No obstante, sus propios numeros lo sitúan por debajo de una variante de 2B del mismo proyecto en la metrica principal de tool calling.
+La relevancia actual del modelo radica en su enfoque de entrenamiento por iteraciones SFT y DPO con métricas de puerta (gate) documentadas, y en su licencia Apache-2.0, que permite uso comercial. El tamaño es de 8.953.803.264 parámetros totales (aproximadamente 9B), con un vocabulario de 248.320 tokens, 32 capas y dimensión oculta de 4096, heredados del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-9B); hidden size 4096, 32 capas, vocab 248320 |
-| Parametros totales | 8.953.803.264 (8,95 B) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8 (GGUF); el repo incluye variantes Q8 de distintas iteraciones |
-| Idiomas soportados | bosnio (`bs`) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3.5-9B) |
+| Parametros totales | 8.953.803.264 (~9B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q8 (GGUF); el repositorio contiene unicamente ficheros Q8 |
+| Idiomas soportados | Bosnio (`bs`); resto de idiomas no declarados |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`model-q8-gold02.gguf` y versiones anteriores) |
+| Formato de pesos | GGUF (multiples ficheros: joint08, gold01-gold06, v0.1-v0.6, dpo01) |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3.5-9B, un transformer de 32 capas con hidden size 4096 y vocabulario de 248320 tokens (commit `c20223623`). Sobre esa base, el autor aplica ajuste fino supervisado con LoRA en dos fases de rango: primero r16 sobre los conjuntos jt01–jt05, y despues r64 sobre r6401–r6406 con una mezcla de datos v0.35. En esa fase el techo de tool calling se situaba en 0,60 y solo se alcanzaba con un format-spec explicito, lo que motivo la siguiente iteracion.
+El modelo parte de Qwen/Qwen3.5-9B (revision `c20223623`), un transformer decoder-only con dimensión oculta de 4096, 32 capas y vocabulario de 248.320 tokens. Sobre esta base se aplicó un ajuste fino con LoRA de rango 16 (jt01-jt05) y posteriormente rango 64 (r6401-r6406) con una mezcla de datos denominada "mix v0.35", que según el autor alcanzó un techo de tool selection de 0,60 solo cuando se usaba una especificación de formato explícita. A partir de ahí se sucedieron iteraciones SFT "dialect-dense" (gold01 a gold05) y una etapa DPO (DPO-03) sobre gold04 para producir gold06.
 
-La fase gold01 (r64, 4246 filas de dialecto denso) logro que el formato funcionase con el prompt de produccion por defecto, sin format-spec, con un gate de tool de 0,60 y de argumentos de 0,654. La iteracion gold02 (r64, 3910 filas mas 600 ejemplos "ask-first") mejoro el gate de tool a 0,633 y el de argumentos a 0,731, manteniendo safety y refusal en 1,0. No se documentan tecnicas de RLHF/DPO en la informacion disponible, aunque existe un artefacto `model-q8-9b-dpo01.gguf` que sugiere al menos una iteracion con DPO. Los adaptadores se publican en el repo de datasets `shaban2024/agentmujo-adapters` (carpeta `qwen35-9b-gold-02/`).
+El checkpoint de producción, joint08, se construyó como gold06 más un SFT adicional de seguridad de 1.850 filas con un 15% de demostraciones de seguridad. El autor documenta que las preferencias DPO (dpo14-16) degradaron la seguridad de 0,857 a 0,429 sin recuperación, mientras que las demostraciones SFT la devolvieron a 0,714 en el protocolo de puerta y a 1,0 en el bucle de agente con motor de políticas. No se especifica el número total de tokens de entrenamiento ni la composición completa del dataset más allá de estas referencias internas al framework AgentMujo.
 
 ## Capacidades
 
-- Generacion de texto conversacional en bosnio, con registro dialectal denso.
-- Function calling y tool calling: el modelo emite llamadas a herramientas en el formato esperado bajo el prompt de produccion por defecto.
-- Generacion de argumentos de herramienta en JSON (metrica `json` de 1,0 en el benchmark propio).
-- Razonamiento multi-paso orientado a agentes: la metrica `multi` alcanza 0,667 en AgentMujo-Bench v0.5.
-- Comportamiento de seguridad y rechazo: `safety` y `refusal` en 1,0 segun el benchmark del autor.
-- Capacidad de confirmacion y de peticion de aclaracion ("ask-first"), aunque con rendimiento limitado (ver limitaciones).
-- Capacidad de no invocar herramientas cuando no procede (`notool`), tambien con rendimiento bajo.
-- No se documentan capacidades de vision, audio ni modo de razonamiento explicito (thinking) en la informacion disponible; el sufijo "NonThinking" del nombre sugiere la ausencia de modo thinking, pero no se detalla tecnicamente.
+- Generación de texto conversacional en bosnio con formato de respuesta controlado.
+- Function calling y tool selection: selección de herramienta con una precisión de 0,867 en el bucle de producción y 0,846 de precisión de argumentos en la puerta.
+- Generación de JSON válido para invocación de herramientas (json_validity 1,0 en las métricas reportadas).
+- Razonamiento multi-paso en agentes: multi_step 1,0 en el bucle de producción.
+- Comportamiento de rechazo (refusal) y seguridad: refusal 1,0 y safety 1,0 en el bucle con motor de políticas.
+- Modo non-thinking: el modelo está ajustado para responder sin cadena de razonamiento explícita; el perfil "think" no forma parte del release.
+- Capacidad de no invocar herramienta cuando no procede (no_tool 1,0 en el bucle).
+- Soporte de despliegue compatible con endpoints (`endpoints_compatible` en los tags del repositorio).
+- No se declaran capacidades de visión, audio ni matemáticas avanzadas en la información disponible.
 
 ## Casos de uso
 
-- Prototipado de agentes conversacionales en bosnio: el modelo permite validar flujos de tool calling en un idioma de bajos recursos sin partir de un modelo multilingue generico, usando el prompt de produccion por defecto.
-- Investigacion sobre ajuste fino dialectal: los adaptadores publicados y el repositorio de framework permiten reproducir las iteraciones gold01/gold02 y experimentar con mezclas de datos.
-- Evaluacion de pipelines de function calling: sirve como sujeto de prueba en harnesses que midan gate de tool, generacion de argumentos y formato JSON, gracias a las metricas desagregadas del AgentMujo-Bench.
-- Generacion de JSON estructurado para integraciones internas: con una metrica `json` de 1,0 en el benchmark propio, es utilizable en tareas de extraccion o formateo donde el esquema sea fijo.
-- Asistencia conversacional de dominio acotado en bosnio: para demos y entornos de staging donde el riesgo de fallo en la decision de invocar herramienta sea aceptable.
-- Banco de pruebas para comparativas de cuantizacion: al existir multiples versiones Q8 (v0.1 a v0.6, dpo01, gold01, gold02), permite medir el impacto de cada iteracion de entrenamiento sobre el mismo formato de pesos.
+- Agente de atención al cliente en bosnio: el modelo puede gestionar conversaciones multi-turno, decidir cuándo invocar una herramienta (por ejemplo, consulta de pedido) y cuándo responder directamente, gracias a su métrica no_tool de 1,0 en el bucle de producción.
+- Automatización de back-office con function calling: integración en pipelines que requieren generación de JSON válido para llamadas a APIs internas, con una precisión de argumentos de 0,846 en el protocolo de puerta.
+- Asistente de agentes multi-paso: tareas que encadenan varias herramientas (multi_step 1,0) como reservas, consultas de estado y confirmaciones, adecuado por su comportamiento de confirmación y rechazo.
+- Despliegue en local con llama.cpp u Ollama: al distribuirse en GGUF Q8, puede ejecutarse en estaciones de trabajo sin infraestructura GPU dedicada de gran escala, con un tamaño de repositorio de 95,3 GB que incluye todos los checkpoints.
+- Moderación y filtrado con salvaguardas: su SFT de seguridad de 1.850 filas y la métrica safety 1,0 en bucle lo hacen apto para flujos donde se requiere rechazo explícito de peticiones no permitidas.
+- Evaluación comparativa de agentes en lenguas eslavas del sur: sirve como referencia para medir tool calling en bosnio frente a modelos multilingües genéricos, dado que el autor publica el framework de benchmark y los resultados por checkpoint.
+- Prototipado de asistentes dialectales: el entrenamiento "dialect-dense" y la métrica ijekavica de 1,0 lo orientan a variantes dialectales del bosnio, útil en productos regionales.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en AgentMujo-Bench v0.5 (48 casos, prompt de produccion por defecto):
+Resultados del AgentMujo-Bench (nonthink, 48 casos) según la model card. La columna "9B joint08" corresponde al checkpoint de producción v2.0; "9B gold06" es el backup v1.0.
 
-| Metrica | gold02 | gold01 |
-|---|---|---|
-| Tool (gate) | 0,633 (30) | 0,60 |
-| Args | 0,731 (26) | 0,654 |
-| Safety | 1,0 | no disponible |
-| Refusal | 1,0 | no disponible |
-| Confirmation | 0,4 | 0,8 |
-| High level | 0,4 | no disponible |
-| No tool | 0,25 | no disponible |
-| Multi | 0,667 | no disponible |
-| JSON | 1,0 | no disponible |
+| Metrica | AM 2B (r6 SFT) | AM 4B (4bdpo01) | AM 9B joint08 (v2.0) | AM 9B gold06 (v1.0) |
+|---|---|---|---|---|
+| tool_selection | 0,8 | 1,0 | 0,867 | 0,667 |
+| argument_accuracy | 0,846 | 0,962 | 0,846 | 0,692 |
+| confirmation_behavior | 0,4 | 1,0 | 0,2 | 0,6 |
+| high_level_preference | 1,0 | 1,0 | 0,6 | 0,8 |
+| no_tool | 0,5 | 1,0 | 1,0 | 0,25 |
+| refusal | 1,0 | 1,0 | 0,6 | 0,8 |
+| multi_step | 0,8 | 1,0 | 1,0 | 0,75 |
+| safety | 1,0 | 1,0 | 0,714 | 0,857 |
+| ijekavica | 1,0 | 1,0 | 1,0 | 1,0 |
+| json_validity | 1,0 | 1,0 | 1,0 | 1,0 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El propio autor indica que la variante de 2B del proyecto (v0.5) alcanza un tool de 0,80, por encima de este 9B.
+Métricas del bucle de agente (modelo + política + ejecutor) para joint08: tool 0,867, strict 0,875, task_success 0,979, safety 1,0, refusal 1,0, no_tool 1,0, multi 1,0. Para gold06 en el mismo bucle: tool 0,833, strict 0,75, task_success 0,979, safety/refusal 0,857. El autor advierte que el protocolo de puerta single-shot es pesimista para safety respecto al bucle puntuado. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantizacion Q8 sobre 8,95 B parametros, el peso ronda los 9,5 GB; se recomienda reservar entre 11 y 13 GB de VRAM para contexto y overhead de inferencia.
-- GPU recomendadas: RTX 4090 (24 GB), A100 40/80 GB, H100 80 GB. En A100/H100 el modelo ocupa una fraccion pequena de memoria y deja margen para lotes y contextos largos.
-- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con holgura, y en RTX 3090 (24 GB). En tarjetas de 12 GB el margen es muy ajustado y dependera de la longitud de contexto.
-- Opciones de despliegue: llama.cpp y Ollama para el formato GGUF; vLLM y TGI solo si se convierte o se sirve desde el modelo base en safetensors, ya que el artefacto publicado es GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo API.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en Q8: aproximadamente 9-10 GB solo para los pesos (8,95B parámetros a 8 bits), más overhead de contexto y caché KV; se recomienda reservar 12-16 GB de VRAM para contextos moderados.
+- GPU recomendadas: NVIDIA RTX 4090 (24 GB) para Q8 con contexto amplio; A100 40/80 GB o H100 para despliegues concurrentes y mayor throughput; RTX 3090 (24 GB) y RTX 4080 (16 GB) son viables para Q8 con contexto reducido.
+- Cabe en GPU de consumo: sí, en tarjetas con 16 GB o más (RTX 4080, 4090, 3090, 4060 Ti 16 GB); en tarjetas de 8-12 GB sería necesario reducir contexto o recurrir a cuantizaciones menores no incluidas en el repositorio.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; servidores compatibles con endpoints según el tag `endpoints_compatible`; vLLM y TGI no están confirmados para este artefacto GGUF en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tool selection (bench propio) | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-BOS-Q8-NonThinking (gold02) | 8,95 B | no disponible | 0,633 (bench propio) | Apache-2.0 | GGUF en HF |
-| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | no disponible | Apache-2.0 | safetensors en HF |
-| Qwen3.5-2B-BOS-Q8-NonThinking (v0.5) | no disponible | no disponible | 0,80 (bench propio) | Apache-2.0 (segun repo del autor) | GGUF en HF |
+| AgentMujo 9B joint08 (este) | ~9B | no disponible | 0,867 | Apache-2.0 | GGUF Q8 |
+| AgentMujo 4B (4bdpo01) | ~4B | no disponible | 1,0 | Apache-2.0 (framework) | GGUF |
+| AgentMujo 2B (r6 SFT) | ~2B | no disponible | 0,8 | Apache-2.0 (framework) | GGUF |
+| Qwen3.5-9B (base) | ~9B | no disponible | no disponible | Apache-2.0 | safetensors |
 
-La comparacion con el modelo base carece de datos de tool calling publicados en la informacion disponible. Frente a la variante de 2B del mismo autor, el 9B es inferior en la metrica principal de tool calling (0,633 frente a 0,80), lo que el autor atribuye al entrenamiento dialectal denso.
+La comparación se limita a los modelos del mismo framework AgentMujo, ya que no se dispone de resultados de modelos externos en la información proporcionada. Destaca que el modelo de 4B supera al de 9B en tool selection (1,0 frente a 0,867) y en confirmation_behavior (1,0 frente a 0,2), lo que sugiere que el tamaño no es el factor determinante en este benchmark concreto.
 
 ## Limitaciones y advertencias
 
-- Estado experimental declarado por el propio autor: no apto para produccion.
-- Comportamiento "trigger-happy": el entrenamiento con dialecto denso provoca invocaciones de herramienta excesivas; la metrica `notool` es de solo 0,25.
-- Capacidad de confirmacion degradada: 0,4 en gold02 frente a 0,8 en gold01, es decir, un retroceso respecto a la iteracion anterior.
-- Razonamiento de alto nivel limitado: metrica `high_level` de 0,4.
-- Cobertura de idioma restringida a bosnio; no se documenta soporte multilingue.
-- Riesgo de alucinacion no cuantificado en la informacion disponible; al ser un ajuste fino sobre un modelo de 9B, persiste el riesgo habitual en generacion de texto.
-- Longitud de contexto no documentada, lo que impide garantizar ventanas largas en despliegue.
-- Licencia Apache-2.0 permite uso comercial, pero el estado experimental y las metricas bajas desaconsejan ese uso sin evaluacion propia.
-- El repositorio incluye multiples versiones Q8; es necesario seleccionar explicitamente `model-q8-gold02.gguf` para obtener el comportamiento descrito.
+- confirmation_behavior bajo en joint08 (0,2 en puerta, frente a 0,6 de gold06): el modelo puede omitir confirmaciones explícitas antes de ejecutar acciones.
+- high_level_preference de 0,6 en el bucle: el autor reconoce que la rama joint09 lo eleva a 1,0 pero rompe la seguridad, por lo que no se recomienda para producción.
+- El perfil "think" no forma parte del release; el modelo está ajustado exclusivamente para modo non-thinking.
+- Sesgos dialectales: el entrenamiento "dialect-dense" y la métrica ijekavica están orientados a una variante concreta del bosnio; el comportamiento en otras variantes o en bosnio estándar no está documentado.
+- Idiomas: solo se declara bosnio (`bs`); el rendimiento en castellano, inglés u otros idiomas no está evaluado en la información disponible.
+- Riesgo de alucinación en argumentos de herramientas: aunque argument_accuracy es 0,846, un 15,4% de argumentos incorrectos en el protocolo de puerta implica necesidad de validación posterior en producción.
+- Artefactos experimentales: el repositorio contiene 14 ficheros GGUF; el autor indica explícitamente que los checkpoints anteriores a joint08 no deben usarse para despliegue.
+- Licencia Apache-2.0 permite uso comercial, pero la model card no incluye cláusulas adicionales de responsabilidad ni garantías sobre el comportamiento en dominios regulados.
+- El repositorio ocupa 95,3 GB, lo que implica costes de almacenamiento y descarga considerables si se clonan todos los checkpoints.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/shaban2024/Qwen3.5-9B-BOS-Q8-NonThinking
+- Hugging Face: https://huggingface.co/shaban2024/Qwen3.5-9B-BOS-Q8-NonThinking
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Perfil del autor: https://huggingface.co/shaban2024
-- Adaptadores: https://huggingface.co/shaban2024/agentmujo-adapters
-- Repositorio del framework de entrenamiento: https://github.com/xnet-ba/agentmujo-training
-- Variante de 2B del mismo proyecto: https://huggingface.co/shaban2024/Qwen3.5-2B-BOS-Q8-NonThinking
+- Repositorio de adaptadores: https://huggingface.co/shaban2024/agentmujo-adapters
+- Framework de entrenamiento y benchmarks: https://github.com/xnet-ba/agentmujo-training

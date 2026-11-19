@@ -2,110 +2,99 @@
 
 ## Resumen
 
-RandLA-Net es una red neuronal para segmentación semántica de nubes de puntos a gran escala. Esta ficha corresponde a la versión concreta publicada en Hugging Face bajo el identificador `torch-pointcloud/randlanet.semantickitti.tsung-han-wu`, una conversión al formato safetensors del repositorio `tsunghan-wu/RandLA-Net-pytorch`, empaquetada para la librería `torch-pointcloud`. El modelo resuelve la asignación de una clase semántica a cada punto individual de un escaneo LiDAR, con 19 clases de salida (carretera, acera, vehículo, peatón, vegetación, edificio, etc.).
+RandLA-Net es un modelo de segmentación semántica de nubes de puntos 3D, diseñado para etiquetar cada punto de un barrido LiDAR con una de 19 clases (carretera, vehículo, peatón, vegetación, etc.). Este checkpoint concreto, `torch-pointcloud/randlanet.semantickitti.tsung-han-wu`, es una conversión a safetensors del entrenamiento original en PyTorch de Tsung-Han Wu, empaquetada para la librería `torch-pointcloud`. El modelo resuelve el problema clásico de la segmentación de nubes de puntos a gran escala: cómo procesar decenas de miles de puntos por fotograma sin recurrir a voxelización costosa ni a operaciones de vecindad lentas.
 
-El problema que aborda es el coste cuadrático de los mecanismos de atención y del muestreo tipo *farthest point sampling* en nubes de puntos de decenas de miles de puntos. RandLA-Net sustituye ambos por muestreo aleatorio y agregación local de características, lo que reduce el coste computacional y de memoria de forma drástica. Con 1.245.691 parámetros (1,2 M), es un modelo extremadamente compacto, diseñado para operar sobre escaneos completos de LiDAR rotacional en un solo paso.
+La arquitectura RandLA-Net, presentada en CVPR 2020 por Hu et al., se apoya en dos ideas: muestreo aleatorio (random sampling) en lugar de muestreo FPS (farthest point sampling) para reducir el número de puntos de forma eficiente, y un módulo de agregación de características locales (Local Feature Aggregation) que combina atención espacial y pooling para preservar la geometría. El resultado es un modelo muy ligero, con apenas 1,2 millones de parámetros, que puede procesar nubes de puntos de gran tamaño en una sola pasada.
 
-Es relevante ahora por su tamaño reducido, su licencia MIT y su disponibilidad en un formato de pesos único (safetensors) integrado en una librería de PyTorch, lo que facilita integrarlo en pipelines de percepción 3D, robótica y etiquetado automático. Los resultados declarados por el autor son mIoU 55,39 y OA 90,05 sobre SemanticKITTI, no verificados de forma independiente.
+Su relevancia actual es práctica: sirve como línea base ligera y reproducible para tareas de percepción LiDAR en conducción autónoma, robótica móvil y cartografía, y como componente de extracción de características para pipelines posteriores. La licencia MIT y el formato safetensors facilitan su integración en producción sin fricción legal ni de serialización.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | RandLA-Net (muestreo aleatorio + agregación local de características, red encoder-decoder sobre nube de puntos) |
-| Parametros totales | 1.245.691 (1,2 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica; entrada de nube de puntos (el ejemplo de la model card usa 8192 puntos por muestra) |
-| Tipos de cuantizacion | no disponible (el repositorio solo publica pesos en safetensors; no se han publicado variantes GGUF, ONNX ni cuantizadas) |
-| Idiomas soportados | no aplica (modelo de visión 3D, no procesa lenguaje) |
+| Arquitectura | RandLA-Net (random sampling + local feature aggregation) |
+| Parámetros totales | 1.245.691 (≈1,2 M) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de nubes de puntos, no de texto) |
+| Tipos de cuantización | no disponible (pesos en safetensors en precisión original) |
+| Idiomas soportados | no disponible (modelo no lingüístico) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
-| Canales de entrada | 3 |
-| Clases de salida | 19 (conjunto de clases de SemanticKITTI) |
-| Dimension de caracteristicas | 32 |
-| Dataset de entrenamiento | SemanticKITTI |
-| Libreria | torch-pointcloud |
-| Tamano del repositorio | 0.0 GB (pesos de ~1,2 M de parametros) |
+| Formato de pesos | safetensors (librería `torch-pointcloud`) |
+
+Otros datos técnicos declarados en la model card: canales de entrada 3, 19 clases de salida, 32 características por punto, dataset de entrenamiento SemanticKITTI.
 
 ## Arquitectura y entrenamiento
 
-RandLA-Net es una red puramente de nube de puntos, sin vóxeles ni proyecciones 2D. Su bloque distintivo es la agregación local de características (*local feature aggregation*), que combina distancias relativas de posición, características locales y atención espacial sobre vecinos, aplicada tras un muestreo aleatorio de puntos en cada etapa de bajada del encoder. El decoder recupera la resolución mediante interpolación de características y conexiones de salto, hasta producir un logit por clase y por punto. En esta implementación los hiperparámetros registrados son 3 canales de entrada, 32 dimensiones de característica y 19 clases de salida.
+RandLA-Net es una red neuronal de segmentación por punto basada en codificador-decodificador con muestreo aleatorio jerárquico. En cada nivel de codificación se aplica random sampling para diezmar la nube de puntos, seguido de un módulo de agregación de características locales que combina una unidad de atención espacial (que pondera la importancia relativa de cada vecino) con un pooling por atención (que agrega la información de los vecinos). Este diseño evita el coste cuadrático del muestreo FPS y de las búsquedas de vecindad densas, manteniendo la capacidad de capturar estructura local. El decodificador interpola las características mediante k-NN y las concatena con las del codificador para refinar la predicción por punto.
 
-No se detalla en la información disponible el número de tokens ni la composición exacta del dataset de entrenamiento más allá de SemanticKITTI (escaneos LiDAR de secuencias de conducción urbana y de carretera, con 19 clases evaluables). Tampoco se documenta si hubo entrenamiento adicional, ajuste fino o estrategias de aumento de datos en esta conversión concreta. La model card indica únicamente la procedencia de los pesos (`tsunghan-wu/RandLA-Net-pytorch`, MIT) y la integración en `torch-pointcloud`; no se describen innovaciones adicionales como decodificación especulativa, atención lineal o módulos híbridos, que no aplican a este tipo de modelo.
+El entrenamiento se realizó sobre SemanticKITTI, el benchmark de segmentación semántica de secuencias LiDAR (Behley et al., ICCV 2019), con 19 clases evaluables. La model card no detalla el número de tokens/puntos vistos, la composición exacta del dataset ni si hubo aumento de datos específico; esos datos no están disponibles en la información proporcionada. El checkpoint procede de la implementación de Tsung-Han Wu (`tsunghan-wu/RandLA-Net-pytorch`, MIT) y ha sido convertido al formato de la librería `torch-pointcloud` de Arthur Dujardin.
 
 ## Capacidades
 
-- Segmentación semántica por punto de nubes de puntos LiDAR en 19 clases (vehículo, peatón, carretera, acera, edificio, vegetación, tronco, terreno, poste, señal de tráfico, entre otras).
-- Procesamiento de escaneos completos de gran tamaño gracias al muestreo aleatorio, sin necesidad de particionar la nube en vóxeles.
-- Extracción de características: `forward_features` devuelve un descriptor de 32 dimensiones por punto, reutilizable para clustering, recuperación o modelos posteriores.
-- Clasificador reconfigurable: `reset_classifier(num_classes=0)` permite usar el backbone como extractor puro.
-- Procesamiento por lotes con índices de batch (`data["batch"]`), lo que permite concatenar varias nubes en una sola pasada.
-- Integración nativa con PyTorch y con utilidades de datos de `torch-pointcloud` (transformaciones y `collate`).
-- No soporta generación de texto, tool calling, razonamiento multi-paso, agentes ni capacidades multilingües: no es un modelo de lenguaje.
-- No dispone de modo *thinking*, entrada de audio, imagen 2D ni vídeo.
+- Segmentación semántica por punto de nubes de puntos 3D: asigna una de 19 clases a cada punto de entrada.
+- Procesamiento de nubes de puntos de gran escala mediante muestreo aleatorio, sin necesidad de voxelización.
+- Extracción de características por punto: `forward_features` devuelve un vector de 32 dimensiones por punto.
+- Reutilización como backbone: `reset_classifier(num_classes=0)` permite usar el modelo como extractor de características para tareas posteriores (detección, clasificación de escenas, clustering).
+- Entrada con canales posicionales (3) más intensidad opcional, según el pipeline de datos de la librería.
+- Inferencia por lotes con gestión de índices de batch (`data["batch"]`).
+- No dispone de tool calling, agentes, capacidades multilingües ni modos de razonamiento; no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Percepción para conducción autónoma: segmentar escaneos LiDAR completos para separar carretera, vehículos, peatones y vegetación antes de pasos de detección y seguimiento. Su coste de 1,2 M de parámetros permite ejecutarlo a bordo o en un equipo embebido.
-- Etiquetado automático de datos (*pre-labeling*): generar máscaras semánticas iniciales sobre nuevas secuencias LiDAR para que anotadores humanos solo corrijan, reduciendo el coste de construir datasets 3D.
-- Robótica móvil y navegación: clasificar el terreno circundante en tiempo real para distinguir superficies transitables (carretera, acera, terreno) de obstáculos (edificio, poste, tronco).
-- Mantenimiento de mapas e inventario urbano: extraer clases estáticas como edificios, vallas, postes y señales de tráfico de barridos LiDAR para auditoría de infraestructura.
-- Extracción de descriptores para búsqueda y clustering: usar los vectores de 32 dimensiones por punto (`forward_features`) como entrada a modelos de segmentación de instancias, agrupamiento o recuperación de escenas similares.
-- Inspección de corredores de carretera y ferrocarril: segmentar vegetación y elementos verticales junto a la vía para priorizar tareas de desbroce y mantenimiento.
-- Prototipado e investigación en percepción 3D: al ser un modelo pequeño con licencia MIT y pesos en safetensors, sirve como línea base reproducible para comparar arquitecturas o estrategias de muestreo.
-- Control de calidad de sensores: comparar la distribución de clases predichas frente a la esperada en un tramo conocido para detectar degradación o descalibración del LiDAR.
+- Percepción LiDAR en conducción autónoma: el modelo etiqueta cada punto de un barrido LiDAR con clases de carretera, vehículos, peatones y vegetación, alimentando módulos de planificación y fusión sensorial. Su tamaño de 1,2 M de parámetros permite inferencia en tiempo real en GPUs modestas.
+- Robótica móvil y navegación: un robot equipado con LiDAR puede usar el modelo para construir mapas semánticos del entorno y distinguir superficies transitables de obstáculos, con un coste computacional bajo que deja margen para otros módulos de percepción.
+- Cartografía y modelado urbano: procesamiento por lotes de nubes de puntos de escaneos urbanos para generar mapas etiquetados (edificios, vegetación, suelo) que alimentan sistemas GIS.
+- Anotación asistida de datos: el modelo preetiqueta nubes de puntos nuevas y los anotadores humanos solo corrigen errores, reduciendo el coste de crear datasets de segmentación semántica.
+- Extracción de características para downstream: usando `forward_features` se obtienen embeddings de 32 dimensiones por punto que pueden alimentar clasificadores de escena, detección de anomalías o clustering no supervisado.
+- Vehículos aéreos no tripulados y fotogrametría: segmentación semántica de nubes de puntos derivadas de reconstrucción fotogramétrica para separar suelo, vegetación y estructuras en levantamientos topográficos.
+- Investigación y benchmarking: línea base ligera y reproducible para comparar nuevas arquitecturas de segmentación de nubes de puntos sobre SemanticKITTI con licencia MIT.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente; campo `verified: false`).
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Benchmark | Tarea | Metrica | Valor |
+| Dataset | Tarea | Métrica | Valor |
 |---|---|---|---|
-| SemanticKITTI | Segmentación semántica de nube de puntos | mIoU | 55,39 |
-| SemanticKITTI | Segmentación semántica de nube de puntos | OA (accuracy global) | 90,05 |
+| SemanticKITTI | Segmentación de nubes de puntos | mIoU | 55,33 |
+| SemanticKITTI | Segmentación de nubes de puntos | OA (accuracy) | 90,06 |
 
-No se han publicado en la información disponible resultados por clase, ablation studies ni comparaciones directas con otras arquitecturas sobre el mismo split.
+No se han publicado otros resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para pesos: aproximadamente 5 MB en fp32 (~2,5 MB en fp16) para 1.245.691 parámetros. Cifra estimada a partir del número de parámetros; no publicada por el autor.
-- La memoria real en inferencia la dominan las activaciones y la búsqueda de vecinos (KNN) sobre la nube, no los pesos. Con 8192 puntos por muestra y lotes pequeños, un presupuesto de 2-4 GB de VRAM es suficiente en la mayoría de configuraciones; cifra estimada, no medida por el autor.
-- GPU recomendadas: cualquier GPU moderna con soporte CUDA es sobradamente suficiente. Por tamaño, el modelo está pensado para GPU de consumo (RTX 3060, RTX 4060, RTX 4090) e incluso para inferencia en CPU en escenarios de baja frecuencia.
-- Cabe en GPU de consumo: sí, con margen amplio; también es viable en CPU y en dispositivos embebidos con PyTorch.
-- Opciones de despliegue: PyTorch nativo con la librería `torch-pointcloud` (vía `pip install torch-pointcloud`); exportación a TorchScript u ONNX no documentada en la información disponible. No hay soporte publicado para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de latencia por escaneo ni de puntos por segundo.
+- VRAM estimada para inferencia: muy baja. Con 1,2 M de parámetros, los pesos ocupan aproximadamente 5 MB en FP32 (≈2,5 MB en FP16). La mayor parte del consumo de memoria proviene de las activaciones y del número de puntos procesados por lote, no de los pesos.
+- GPU recomendadas: cualquier GPU moderna con al menos 4-8 GB de VRAM es suficiente. Se puede ejecutar en RTX 3060, RTX 4090, A100 o H100; estas últimas solo aportan ventaja en throughput por lotes grandes.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer con suficiente VRAM para el tamaño de lote de puntos; también es viable en CPU para inferencia por lotes pequeños.
+- Opciones de despliegue: la vía oficial es la librería `torch-pointcloud` (`pip install torch-pointcloud`), con carga vía `tp.create_model(...)`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo. La exportación a ONNX o TensorRT no está documentada en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada. Dependen del número de puntos por muestra, del tamaño de lote y del hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto / entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| randlanet.semantickitti.tsung-han-wu (esta ficha) | 1,2 M | Nube de puntos, 3 canales, 19 clases | 55,39 (declarado, no verificado) | MIT | Pesos safetensors en Hugging Face |
-| RandLA-Net original (implementación de referencia, CVPR 2020) | no disponible | Nube de puntos | no disponible en la informacion proporcionada | no disponible | Codigo en repositorios de los autores del paper |
-| RandLA-Net-pytorch (tsunghan-wu) | no disponible | Nube de puntos | no disponible en la informacion proporcionada | MIT | Repositorio GitHub; origen de esta conversión |
-| PointNet++ / KPConv / Cylinder3D (familia de segmentación 3D) | no disponible | Nube de puntos o vóxeles | no disponible en la informacion proporcionada | no disponible | Implementaciones públicas, no evaluadas aquí |
+| RandLA-Net (este checkpoint) | ≈1,2 M | nubes de puntos de gran escala | 55,33 (declarado) | MIT | Hugging Face, `torch-pointcloud` |
+| PointNet++ | no disponible en esta ficha | nubes de puntos | no disponible en esta ficha | no disponible | múltiples implementaciones |
+| KPConv | no disponible en esta ficha | nubes de puntos | no disponible en esta ficha | no disponible | múltiples implementaciones |
+| Cylinder3D | no disponible en esta ficha | vóxeles cilíndricos | no disponible en esta ficha | no disponible | múltiples implementaciones |
 
-No se dispone de datos de benchmarks de las alternativas en la información proporcionada, por lo que la comparación cuantitativa de rendimiento queda pendiente. La ventaja diferencial de esta ficha es la disponibilidad inmediata de pesos en safetensors, licencia MIT y una API de carga de una sola línea frente a la necesidad de reproducir el entrenamiento en los repositorios originales.
+Los datos de los modelos alternativos no están disponibles en la información proporcionada; la comparativa numérica completa requeriría consultar las publicaciones originales de cada método. La ventaja diferencial de RandLA-Net es su relación entre precisión y coste computacional: con 1,2 M de parámetros ofrece un mIoU competitivo frente a arquitecturas más pesadas, a cambio de una menor precisión en clases minoritarias.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio muy específico: entrenado sobre SemanticKITTI (escenas de conducción con LiDAR rotacional, entorno alemán). El rendimiento en interiores, entornos industriales, otros sensores o densidades de punto distintas puede degradarse notablemente; no se documenta ninguna evaluación de transferencia.
-- Métricas no verificadas: mIoU 55,39 y OA 90,05 figuran como declaradas por el autor (`verified: false`). No deben tratarse como resultados reproducidos de forma independiente.
-- Sin métricas por clase: la media de IoU oculta clases minoritarias (por ejemplo, motorista o ciclista) que suelen tener IoU bajo. No se puede estimar el rendimiento en clases raras con los datos disponibles.
-- Muestreo aleatorio no determinista: el muestreo de puntos introduce variabilidad entre ejecuciones si no se fija la semilla, lo que puede producir predicciones ligeramente distintas para la misma nube. Conviene fijar semilla en producción.
-- Dependencia de la librería: la carga requiere `torch-pointcloud`; no se han publicado pesos en GGUF, ONNX ni TorchScript, por lo que la portabilidad a otros runtimes exige exportación manual.
-- Sesgos y alucinación: al no ser un modelo generativo, no hay riesgo de alucinación textual; el riesgo equivalente es la asignación errónea de clase con alta confianza en puntos ambiguos (por ejemplo, estructuras verticales finas o superficies mojadas).
-- Idiomas y texto: sin capacidades lingüísticas; no puede usarse para tareas de NLP.
-- Licencia: MIT permite uso comercial y modificación, pero no se especifica en la información disponible la licencia de la propia librería `torch-pointcloud` ni la de las dependencias; conviene verificarla antes de un despliegue comercial.
-- Sin datos de robustez: no se documenta comportamiento frente a oclusiones, lluvia, sensores con distinta calibración o nubes submuestreadas.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validación externa.
+- Sesgos de dominio: entrenado exclusivamente en SemanticKITTI (escenas urbanas y de carretera alemanas); el rendimiento puede degradarse en entornos industriales, interiores, agrícolas o con sensores LiDAR de características distintas.
+- Riesgo de error en clases minoritarias: el mIoU de 55,33 refleja un desequilibrio típico del dataset; clases poco representadas (motocicletas, bicicletas, personas) suelen tener IoU bajo.
+- Sensibilidad al muestreo aleatorio: el muestreo aleatorio introduce variabilidad; los resultados pueden fluctuar según la semilla y el orden de los puntos.
+- Sin verificación independiente: las métricas declaradas (mIoU 55,33, OA 90,06) están marcadas como no verificadas en el model-index; conviene reproducirlas antes de usarlas como referencia en producción.
+- Limitaciones de idioma: no aplica, es un modelo no lingüístico. No soporta texto, visión 2D, audio ni tool calling.
+- Restricciones de licencia: licencia MIT, permisiva para uso comercial, pero conviene revisar las licencias del dataset SemanticKITTI y de la implementación original de Tsung-Han Wu, que pueden tener condiciones adicionales.
+- Caveats de producción: la librería `torch-pointcloud` es joven y la integración con ecosistemas de despliegue (ONNX, TensorRT) no está documentada; es necesario validar el pipeline de preprocesado (`info["transform"]` y `collate`) para que coincida con el usado en entrenamiento.
+- Tamaño del repo: 0,0 GB reportado, lo que sugiere que el peso real del checkpoint es mínimo; no hay garantía documentada sobre versiones futuras del checkpoint.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/randlanet.semantickitti.tsung-han-wu
-- Paper RandLA-Net (CVPR 2020): https://arxiv.org/abs/1911.11236
-- Repositorio de origen de los pesos (tsunghan-wu/RandLA-Net-pytorch): https://github.com/tsunghan-wu/RandLA-Net-pytorch
-- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- DOI de la libreria (Zenodo): https://doi.org/10.5281/zenodo.22159632
-- Dataset SemanticKITTI: http://semantic-kitti.org/
-- Documentacion de PyTorch: https://pytorch.org/
-- Instalacion de PyTorch: https://pytorch.org/get-started/locally/
+- Hugging Face: https://huggingface.co/torch-pointcloud/randlanet.semantickitti.tsung-han-wu
+- Paper RandLA-Net: https://arxiv.org/abs/1911.11236
+- Implementación original (Tsung-Han Wu): https://github.com/tsunghan-wu/RandLA-Net-pytorch
+- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Dataset SemanticKITTI: http://www.semantic-kitti.org/
+- Paper SemanticKITTI: https://arxiv.org/abs/1904.01416

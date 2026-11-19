@@ -2,85 +2,91 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo `qwen2.5-coder-32b-instruct-heretic-sft`, un fine-tuning del modelo base Qwen2.5-Coder-32B-Instruct desarrollado por Alibaba. El modelo base es un LLM especializado en generación y razonamiento de código, con 32.500 millones de parámetros y una ventana de contexto nativa de 32K tokens, ampliable a 128K. El fine-tune denominado "heretic-sft" ha sido creado por el usuario PeetPedro y posteriormente cuantizado por mradermacher para su despliegue local eficiente.
+`mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-i1-GGUF` es una colección de cuantizaciones GGUF, generadas con imatrix (i1), del modelo `PeetPedro/qwen2.5-coder-32b-instruct-heretic-sft`. El modelo subyacente parte de Qwen2.5-Coder-32B-Instruct, un transformer denso de 32 763 876 352 parámetros, y ha sido sometido a un ajuste fino ("heretic" + SFT) por parte de PeetPedro. El trabajo de mradermacher se limita a la conversión y cuantización a formato GGUF para su uso con llama.cpp y derivados.
 
-La relevancia de este modelo radica en que ofrece capacidades de generación de código comparables a GPT-4o en tareas de programación, pero con la ventaja de poder ejecutarse en hardware local gracias a las cuantizaciones GGUF. Está orientado a desarrolladores que necesitan asistencia de código sin depender de APIs externas, manteniendo el control sobre los datos y los costes de infraestructura. La arquitectura es un transformer denso (no MoE), con atención completa y soporte para tool calling y razonamiento multi-paso.
+La relevancia de esta ficha es doble. Por un lado, documenta una vía práctica para ejecutar un modelo de código de 32B en hardware de consumo mediante cuantizaciones que van desde 7,4 GB (i1-IQ1_S) hasta más de 20 GB (i1-Q4_K_M y superiores). Por otro, advierte de que el ajuste "heretic" modifica el comportamiento de alineamiento del modelo original, lo que tiene implicaciones directas sobre su idoneidad en producción.
+
+La licencia declarada es Apache 2.0, el repo ocupa 351,5 GB (incluye todas las variantes de cuantización) y el idioma declarado en la model card es inglés. No se han publicado datos de benchmarks ni especificaciones de contexto en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (similar a Qwen2.5) |
-| Parametros totales | 32.500 millones (modelo base) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 32K tokens nativo, hasta 128K con scaling externo |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, IQ3_S, IQ3_XS, IQ3_M, IQ3_XXS, IQ4_XS, small-IQ4_NL |
-| Idiomas soportados | Principalmente ingles y chino (modelo base); no se especifican idiomas adicionales para el fine-tune |
-| Licencia | Apache-2.0 (modelo base); licencia del fine-tune no disponible |
-| Formato de pesos | GGUF (cuantizaciones), safetensors (modelo original) |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-Coder-32B-Instruct) |
+| Parametros totales | 32 763 876 352 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (i1/imatrix) |
+| Idiomas soportados | inglés (declarado en la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen2.5-Coder-32B-Instruct emplea una arquitectura transformer densa con normalización RMSNorm, activación SwiGLU y atención con RoPE. El entrenamiento del modelo base incluyó una fase de pre-entrenamiento con más de 5.5 billones de tokens de código y texto, seguida de un ajuste fino supervisado (SFT) y una etapa de optimización por preferencias (RLHF/DPO) para mejorar la adherencia a instrucciones y la calidad de la generación. El fine-tune "heretic-sft" parte de este modelo base y aplica un ajuste adicional con datos de instrucciones específicas, aunque los detalles exactos del dataset de fine-tune no se han publicado.
+El modelo base es un transformer denso de la familia Qwen2.5-Coder, con 32 763 876 352 parámetros. Sobre él, PeetPedro aplicó un ajuste fino supervisado (SFT) con un componente etiquetado como "heretic", término que en la comunidad se asocia a técnicas de ablación o reentrenamiento orientadas a reducir los rechazos del modelo alineado original. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset de SFT ni si se emplearon técnicas de RLHF o DPO en esta variante.
 
-Las cuantizaciones GGUF se han generado con el método i-matrix (importance matrix) para optimizar la pérdida de calidad en los pesos cuantizados, usando el software de Nicoboss. Se ofrecen múltiples niveles de cuantización para adaptarse a diferentes capacidades de hardware, desde modelos de baja precisión (IQ1, IQ2) hasta cuantizaciones de alta calidad (Q6_K).
+La contribución de mradermacher es exclusivamente de cuantización: conversión a GGUF con `convert_type: hf`, generación de un fichero imatrix propio y producción de cuantizaciones ponderadas i1 (IQ y Q_K) en el rango de 7,4 GB a más de 20 GB. También existe una colección de cuantizaciones estáticas en un repositorio separado. No se documentan innovaciones arquitectónicas adicionales respecto al modelo base.
 
 ## Capacidades
 
-- Generación de código en múltiples lenguajes (Python, Java, C++, JavaScript, TypeScript, Go, Rust, entre otros) con autocompletado y generación completa de funciones.
-- Razonamiento y depuración de código: explica errores, sugiere correcciones y optimiza algoritmos.
-- Soporte de tool calling y function calling para integrarse en pipelines de agentes y automatización.
-- Capacidades de razonamiento multi-paso para tareas complejas de programación.
-- Comprensión de contexto largo (32K tokens) para trabajar con repositorios completos o documentación extensa.
-- Generación de documentación técnica, comentarios y explicaciones de código.
-- Capacidad multilingüe limitada: el modelo base fue entrenado principalmente en inglés, aunque puede procesar código con identificadores en otros idiomas.
+- Generación de texto conversacional e instructivo, heredada de Qwen2.5-Coder-32B-Instruct.
+- Generación y razonamiento sobre código en múltiples lenguajes de programación (capacidad del modelo base; no verificada en esta variante).
+- Relleno de código y tareas de completado en contexto (capacidad del modelo base).
+- Razonamiento matemático y resolución de problemas paso a paso (capacidad del modelo base).
+- Soporte de conversaciones multi-turno con plantilla de chat instructiva.
+- Capacidad declarada únicamente en inglés según la model card.
+- Tool calling y function calling: no disponible en la información proporcionada para esta variante.
+- Modo thinking explícito, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Asistente de programación en IDE: el modelo puede ejecutarse localmente con Ollama o llama.cpp y conectarse a extensiones como Continue o Cline para ofrecer autocompletado y sugerencias en tiempo real sin enviar datos a la nube.
-- Revisión de código automatizada: con una ventana de 32K tokens, puede analizar pull requests completas, identificar posibles bugs, problemas de estilo y proponer mejoras de rendimiento.
-- Generación de tests unitarios: dado un fragmento de código, el modelo puede generar casos de prueba en frameworks como JUnit, pytest o Jest, reduciendo el esfuerzo manual de cobertura.
-- Documentación técnica automatizada: a partir de código fuente, genera docstrings, README y guías de API, manteniendo la coherencia con la implementación real.
-- Chatbot de soporte técnico interno: con el contexto largo, puede responder preguntas sobre una base de código propietaria, ayudando a los equipos a resolver dudas sin exponer información sensible.
-- Educación y formación en programación: el modelo puede explicar conceptos de programación, resolver ejercicios y proporcionar ejemplos adaptados al nivel del estudiante, todo en un entorno local.
-- Automatización de pipelines CI/CD: mediante tool calling, puede integrarse en flujos de integración continua para generar mensajes de commit, validar cambios y sugerir correcciones en tiempo real.
+- Asistente de código en local para desarrolladores individuales: con la cuantización i1-Q4_K_M (20,0 GB) el modelo puede ejecutarse en una GPU de 24 GB o en configuraciones CPU+GPU, ofreciendo asistencia de programación sin enviar código a servicios externos.
+- Revisión de código en pipelines de CI: integrado mediante llama.cpp o servidores compatibles con la API de OpenAI, el modelo puede analizar diffs y generar comentarios de revisión, aunque la ausencia de datos de tool calling en esta variante obliga a validar esa integración antes de usarla.
+- Generación de tests unitarios: el modelo puede producir casos de prueba a partir de funciones existentes, aprovechando su base Qwen2.5-Coder; útil en equipos que necesitan aumentar cobertura sin depender de APIs externas.
+- Documentación técnica automatizada: generación de docstrings y documentación de módulos a partir del código fuente, en un flujo por lotes con llama.cpp.
+- Entornos con requisitos de privacidad estrictos: al ser un modelo Apache 2.0 ejecutable en local, encaja en organizaciones que no pueden enviar código propietario a servicios en la nube.
+- Experimentación en investigación sobre alineamiento: la variante "heretic" permite estudiar el efecto de la reducción de rechazos sobre el comportamiento del modelo, comparándola con el Qwen2.5-Coder-32B-Instruct original.
+- Despliegue en hardware de gama alta para prototipado: con cuantizaciones i1-Q5_K_M o i1-Q6_K (23,4 GB y superiores) en una A100 o H100 se obtiene mayor fidelidad respecto al modelo en precisión completa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para el fine-tune "heretic-sft" en la información disponible. El modelo base Qwen2.5-Coder-32B-Instruct reporta un rendimiento en HumanEval de 92.7 y en MBPP de 90.2, comparable a GPT-4o en tareas de código, pero estos datos no son directamente aplicables al fine-tune sin verificación. Se recomienda evaluar el modelo en los casos de uso específicos antes de desplegarlo en producción.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio de cuantización no incluye métricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, y tampoco se aportan datos del modelo base ajustado por PeetPedro.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para cuantización Q4_K_M se necesitan aproximadamente 8 GB de VRAM; Q5_K_M requiere 10 GB; Q6_K alrededor de 12 GB; Q8 cerca de 15 GB. Las cuantizaciones IQ2/IQ3 pueden caber en 6 GB de VRAM con menor calidad.
-- GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para cuantizaciones Q4-Q5 con espacio para contexto largo; A100 40 GB o H100 para ejecución sin cuantizar o con contexto de 128K.
-- En consumer GPU: sí, el modelo cabe en RTX 3060 12 GB con cuantización Q4_K_M y contexto reducido, pero la velocidad será limitada.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (para GGUF), LM Studio, text-generation-webui, etc.
-- Latencia y throughput: en una RTX 4090 con Q4_K_M, se esperan entre 20 y 40 tokens por segundo; en CPU con llama.cpp, entre 2 y 5 tokens/s dependiendo de la cuantización y el número de hilos.
+- VRAM estimada para inferencia (pesos, sin contar KV cache): desde ~7,4 GB (i1-IQ1_S) hasta más de 23,4 GB (i1-Q5_K_M); las variantes Q6_K superan los 25 GB.
+- Cuantizaciones recomendadas por el autor: i1-Q4_K_M (20,0 GB, "fast, recommended") e i1-Q4_K_S (18,9 GB, "optimal size/speed/quality").
+- GPU de consumo: una RTX 4090 (24 GB) puede alojar i1-Q4_K_M, i1-Q4_K_S o i1-Q5_K_S (22,7 GB) con margen limitado para la KV cache; las cuantizaciones IQ2 e IQ3 (9-15 GB) caben en GPUs de 12-16 GB con offload parcial.
+- GPU profesionales: A100 40/80 GB y H100 permiten ejecutar las cuantizaciones de mayor calidad con contexto amplio y mayor throughput.
+- Despliegue: llama.cpp, Ollama y servidores compatibles con GGUF; los tags del repositorio indican `endpoints_compatible`. vLLM y TGI no son la vía natural para GGUF, aunque vLLM soporta algunos formatos GGUF con limitaciones.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Especialidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-32B-Instruct (base) | 32.5B | 32K | Apache-2.0 | Safetensors, GGUF | Codigo y razonamiento |
-| qwen2.5-coder-32b-instruct-heretic-sft (este modelo) | 32.5B | 32K | No disponible | GGUF | Fine-tune de codigo |
-| DeepSeek-Coder-33B-Instruct | 33B | 16K | MIT | Safetensors, GGUF | Codigo y razonamiento |
-| CodeLlama-34B-Instruct | 34B | 16K | Llama 2 license | Safetensors, GGUF | Codigo y razonamiento |
+| Este modelo (i1-GGUF) | 32,8B | no disponible | Apache 2.0 | GGUF i1 | Cuantizaciones con imatrix; ajuste "heretic" |
+| Qwen2.5-Coder-32B-Instruct | 32,8B | no disponible en esta ficha | Apache 2.0 | safetensors | Modelo original alineado; referencia de comportamiento |
+| PeetPedro/qwen2.5-coder-32b-instruct-heretic-sft | 32,8B | no disponible | Apache 2.0 | safetensors | Modelo base de estas cuantizaciones |
+| mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-GGUF | 32,8B | no disponible | Apache 2.0 | GGUF estático | Misma base, cuantizaciones sin imatrix |
 
-El modelo base Qwen2.5-Coder-32B-Instruct supera en benchmarks de código a CodeLlama-34B y es comparable a DeepSeek-Coder-33B, aunque el fine-tune heretic-sft no tiene datos de rendimiento publicados. La principal ventaja de este modelo es su disponibilidad en cuantizaciones GGUF optimizadas con imatrix, lo que facilita el despliegue en hardware de consumo.
+No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de otros autores.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre el dataset de fine-tune, por lo que el modelo puede presentar sesgos o comportamientos no deseados derivados de los datos de entrenamiento del ajuste.
-- Riesgo de alucinación en código: puede generar funciones que no compilan o con errores lógicos sutiles, especialmente en lenguajes menos comunes.
-- La licencia del fine-tune no está especificada; aunque el modelo base es Apache-2.0, el uso comercial del fine-tune puede estar restringido. Se recomienda contactar con el autor.
-- El modelo está entrenado principalmente en inglés; en español u otros idiomas, la calidad de generación puede degradarse.
-- Las cuantizaciones de baja precisión (IQ1, IQ2) pueden degradar significativamente la calidad del código generado, especialmente en tareas de razonamiento complejo.
-- La ventana de contexto de 32K puede ser insuficiente para repositorios muy grandes; para contextos de 128K se requiere activar el scaling externo, que no está implementado en todos los runtimes.
+- El ajuste "heretic" implica una reducción deliberada de los rechazos del modelo; esto puede aumentar la probabilidad de respuestas dañinas, sesgadas o inapropiadas en comparación con el Qwen2.5-Coder-32B-Instruct original.
+- Riesgo de alucinación inherente a los modelos de lenguaje; en tareas de código puede generar APIs inexistentes o dependencias ficticias.
+- Idioma declarado únicamente inglés; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Longitud de contexto no especificada en la información disponible; no debe asumirse la del modelo base sin verificación.
+- Las cuantizaciones de baja precisión (IQ1_S, IQ1_M, Q2_K_S) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- Aunque la licencia es Apache 2.0, el ajuste fino introduce un comportamiento distinto del original; conviene evaluar el modelo en el dominio concreto antes de usarlo en producción.
+- No hay datos publicados de benchmarks, tool calling ni evaluación de seguridad para esta variante.
+- El repositorio ocupa 351,5 GB; la descarga selectiva de una sola cuantización es imprescindible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-i1-GGUF
-- Modelo base original (PeetPedro): https://huggingface.co/PeetPedro/qwen2.5-coder-32b-instruct-heretic-sft
-- Modelo base Qwen2.5-Coder-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
-- Repositorio GGUF del modelo base: https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-GGUF
-- Documentación de GGUF y uso: https://github.com/ggerganov/llama.cpp
+- Modelo base: https://huggingface.co/PeetPedro/qwen2.5-coder-32b-instruct-heretic-sft
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#qwen2.5-coder-32b-instruct-heretic-sft-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

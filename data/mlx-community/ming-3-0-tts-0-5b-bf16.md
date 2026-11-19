@@ -2,109 +2,99 @@
 
 ## Resumen
 
-Ming-3.0-tts-0.5B es un modelo de síntesis de voz (text-to-speech) denso desarrollado por inclusionAI, construido sobre la arquitectura Qwen2.5-0.5B. Esta ficha describe la conversión a formato MLX publicada por mlx-community, que mantiene los pesos en bfloat16 sin modificaciones respecto al checkpoint original y los adapta para su ejecución con la librería mlx-audio sobre Apple Silicon. El modelo resuelve la generación de voz multilingüe con clonación zero-shot, voces integradas y control fino de la locución mediante instrucciones en lenguaje natural.
+Ming-3.0-tts-0.5B es un modelo de síntesis de voz (text-to-speech) desarrollado por inclusionAI, construido sobre una base densa Qwen2.5-0.5B. Esta ficha describe la conversión a formato MLX en bfloat16 realizada por la comunidad mlx-community, pensada para ejecutarse de forma nativa en hardware Apple Silicon mediante la librería mlx-audio. El modelo original está diseñado para generación de voz multilingüe con clonación zero-shot, voces integradas y control fino de prosodia.
 
-A pesar del sufijo "0.5B" del nombre, el recuento real de parámetros en los ficheros safetensors es de 1.479.454.868 (~1,48 mil millones), un dato relevante para planificar memoria y tiempos de inferencia. El modelo cubre chino, inglés, alemán, español, francés, coreano y japonés, y según la model card del autor también sichuanés y cantonés, con salida de audio a 44,1 kHz y soporte de 14 etiquetas paralingüísticas en línea.
+La relevancia de esta variante MLX radica en que permite ejecutar un sistema TTS completo en un Mac sin depender de CUDA ni de servicios en la nube. Según la model card, el modelo ocupa 3,0 GB en disco, consume un pico de 4,4 GB de memoria y alcanza un factor de tiempo real de aproximadamente 1,0 en un chip M4 Pro, lo que lo sitúa en el rango de la síntesis en tiempo real sobre hardware de consumo.
 
-Su relevancia ahora es doble: por un lado, es una alternativa de licencia MIT para clonación de voz y TTS expresivo en siete idiomas; por otro, esta conversión concreta permite ejecutar el modelo de forma local en equipos Apple Silicon con un factor de tiempo real cercano a 1,0 y un pico de memoria de 4,4 GB. La contrapartida es que depende de un parche aún no publicado en mlx-audio, por lo que requiere instalar desde una rama específica.
+El modelo soporta siete idiomas declarados (chino, inglés, alemán, español, francés, coreano y japonés), además de sichuanés y cantonés según la model card original, y produce audio a 44,1 kHz. Incluye control de emoción, velocidad, tono y volumen, 14 etiquetas paralingüísticas en línea y modos de instrucción libre y diseño de voz.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Densa, basada en Qwen2.5-0.5B, orientada a síntesis de voz (pipeline text-to-speech) |
-| Parámetros totales | 1.479.454.868 (~1,48 B; el nombre comercial indica 0.5B) |
-| Parámetros activos | No aplica: modelo denso |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Pesos en bfloat16 (bf16) sin modificar respecto al checkpoint original; el repositorio no publica variantes cuantizadas |
-| Idiomas soportados | Chino (zh), inglés (en), alemán (de), español (es), francés (fr), coreano (ko), japonés (ja); la model card del autor añade sichuanés y cantonés |
+| Arquitectura | Transformer denso basado en Qwen2.5-0.5B (modelo de voz) |
+| Parametros totales | 1.479.454.868 (1,48 mil millones) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bfloat16 (esta variante); otras cuantizaciones no disponibles |
+| Idiomas soportados | zh, en, de, es, fr, ko, ja; además sichuanés y cantonés según la model card original |
 | Licencia | MIT |
-| Formato de pesos | safetensors (bfloat16) con código custom (`custom_code`), librería mlx-audio |
+| Formato de pesos | safetensors (bfloat16) |
 | Frecuencia de muestreo de salida | 44,1 kHz |
-| Tamaño en disco | 3,0 GB |
-| Memoria pico en inferencia | 4,4 GB (medido en M4 Pro) |
-| Factor de tiempo real (RTF) | ~1,0 en M4 Pro |
+| Tamano en disco | 3,0 GB |
+| Memoria pico | 4,4 GB |
+| Libreria | mlx-audio (>= 0.6.1) |
+| Modelo base | inclusionAI/Ming-3.0-tts-0.5B |
 
 ## Arquitectura y entrenamiento
 
-El modelo es de tipo denso y se apoya en el backbone de Qwen2.5-0.5B, adaptado por inclusionAI para la tarea de texto a voz. La model card del autor no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO; esa información no está disponible en los materiales consultados. La conversión de mlx-community no altera los pesos: únicamente los empaqueta para mlx-audio mediante `mlx_audio.convert`, manteniendo la precisión bfloat16.
+El modelo es un sistema TTS denso construido sobre Qwen2.5-0.5B, según indica la model card. La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron fases de RLHF o DPO. Tampoco se especifica el vocoder ni el mecanismo exacto de generación de audio más allá de la arquitectura base declarada.
 
-Las capacidades técnicas destacadas que sí documenta el autor incluyen clonación de voz zero-shot a partir de un clip de referencia y su transcripción exacta, voces integradas identificadas por nombre (por ejemplo, `UK_Charlotte`), instrucciones libres de diseño de voz y control de emoción, velocidad, tono y volumen. Además incorpora 14 etiquetas paralingüísticas en línea que se insertan en el propio texto, como `[Sigh]` o `[Cough]`, y una función auxiliar `ming3_instruction` para construir instrucciones de control desde Python.
-
-Un detalle operativo importante: esta conversión necesita la corrección del contrato de prompts incluida en el PR #1047 de mlx-audio. Con una versión anterior de la librería el modelo carga, pero pronuncia texto incorrecto. Hasta que se publique esa corrección, la instalación debe hacerse desde la rama `ming3-dense` del repositorio de cguldogan.
+La model card menciona varias capacidades de control que implican un diseño condicionado por instrucciones: clonación zero-shot a partir de audio de referencia y su transcripción exacta, voces integradas identificadas por nombre (por ejemplo `UK_Charlotte`), instrucciones libres de diseño de voz y control de emoción, velocidad, tono y volumen. También incorpora 14 etiquetas paralingüísticas en línea que se insertan en el texto de entrada (por ejemplo `[Sigh]`, `[Cough]`). La variante MLX conserva los pesos en bfloat16 sin modificar respecto al checkpoint original y requiere mlx-audio 0.6.1 o superior, que incluye la corrección del contrato de prompt de mlx-audio #1047; versiones anteriores cargan el modelo pero generan palabras incorrectas.
 
 ## Capacidades
 
-- Síntesis de voz multilingüe en chino, inglés, alemán, español, francés, coreano y japonés, con salida a 44,1 kHz.
-- Clonación de voz zero-shot utilizando un audio de referencia y su transcripción exacta (`--ref_audio` y `--ref_text`).
-- Voces integradas seleccionables por identificador, como `UK_Charlotte`.
-- Instrucciones de diseño de voz en lenguaje libre mediante `--instruct`, por ejemplo describiendo tono, ritmo y carácter de la narración.
-- Control explícito de emoción, velocidad, tono y volumen a través de la función `ming3_instruction`.
-- Soporte de 14 etiquetas paralingüísticas en línea insertadas en el texto, como `[Sigh]` y `[Cough]`.
-- Generación de párrafos de hasta 30 segundos con varios fragmentos en una sola llamada.
-- Interfaz de línea de comandos (`mlx_audio.tts.generate`) y API de Python (`load_model` y `model.generate`).
-- No se documentan en la información disponible capacidades de tool calling, agentes, visión ni audio de entrada más allá del clip de referencia para clonación.
+- Síntesis de voz multilingüe en chino, inglés, alemán, español, francés, coreano y japonés, con soporte adicional de sichuanés y cantonés según la model card original.
+- Clonación de voz zero-shot a partir de un clip de referencia y su transcripción exacta.
+- Voces integradas seleccionables por identificador.
+- Instrucciones libres de diseño de voz (tono, estilo, ritmo, carácter).
+- Control explícito de emoción, velocidad, tono y volumen.
+- 14 etiquetas paralingüísticas en línea para insertar suspiros, toses y otros sonidos no verbales.
+- Salida de audio a 44,1 kHz.
+- Ejecución nativa en Apple Silicon mediante MLX y la librería mlx-audio.
+- Interfaz de línea de comandos (`mlx_audio.tts.generate`) y API de Python (`load_model`, `model.generate`).
 
 ## Casos de uso
 
-- Clonación de voz para audiolibros y narración: el modelo permite crear una voz consistente a partir de un clip de referencia y su transcripción, y aplicar después instrucciones de estilo como ritmo pausado o tono íntimo, adecuado para narración larga con identidad de voz estable.
-- Doblaje y localización de contenido: al cubrir siete idiomas con un mismo modelo, se puede generar la misma pieza en español, francés, alemán, coreano y japonés sin cambiar de infraestructura, manteniendo el control de velocidad para ajustar la duración al vídeo original.
-- Asistentes de voz locales en macOS: con 4,4 GB de pico de memoria y un RTF de ~1,0 en M4 Pro, es viable integrar la síntesis en una aplicación de escritorio que funcione sin conexión y sin enviar texto a servicios externos.
-- Accesibilidad y lectura de pantalla: la salida a 44,1 kHz y el control de velocidad y tono permiten generar locuciones inteligibles y ajustables para usuarios con dificultades de lectura, incluyendo contenido técnico con siglas en varios idiomas.
-- Prototipado de personajes y videojuegos: las etiquetas paralingüísticas (`[Sigh]`, `[Cough]`) y el control de emoción permiten producir variaciones expresivas de un mismo personaje sin grabar actor de voz, útil en fases de preproducción.
-- Generación de avisos y locuciones para sistemas de megafonía o atención telefónica: las voces integradas y las instrucciones de estilo evitan depender de una muestra de referencia, lo que simplifica la creación de mensajes cortos y repetibles.
-- Investigación en TTS y evaluación de modelos: la licencia MIT y la disponibilidad de los pesos en safetensors facilitan experiments de comparación de clonación zero-shot y de control prosódico sobre una base reproducible.
+- Audiolibros y narración: el modo de instrucción libre permite solicitar un estilo narrativo cálido y pausado, adecuado para lectura prolongada, con control de velocidad para ajustar la duración de cada capítulo.
+- Doblaje y localización de contenido: al cubrir siete idiomas y permitir clonación de voz, se puede generar una pista de voz en español o alemán manteniendo el timbre del locutor original a partir de un clip de referencia.
+- Asistentes de voz en aplicaciones macOS: la variante MLX se ejecuta en local con 4,4 GB de memoria pico, lo que permite integrar TTS en apps de escritorio sin enviar texto a servicios externos.
+- Accesibilidad: conversión de texto a voz para lectores de pantalla y herramientas de asistencia, con control de velocidad y tono para adaptarse a las preferencias del usuario.
+- Prototipado de personajes y videojuegos: el uso de etiquetas paralingüísticas y control de emoción permite generar líneas de diálogo con matices expresivos sin grabar actores.
+- Generación de voces para contenido educativo: creación de material audio en varios idiomas a partir de un mismo guion, usando voces integradas para mantener consistencia entre lecciones.
+- Pruebas de integración continua de audio: la API de Python permite generar clips de forma programática y verificar la transcripción con whisper-large-v3-turbo, como describe la model card en su sección de comprobaciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible (MMLU, WER u otras métricas estándar de TTS no aparecen en la model card ni en los materiales consultados). El único dato de validación disponible es una prueba de inteligibilidad interna del autor de la conversión:
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-| Prueba | Condiciones | Resultado |
-|---|---|---|
-| Inteligibilidad por transcripción automática | Clips transcritos con whisper-large-v3-turbo; inglés, chino, etiquetas paralingüísticas, clonación en chino e inglés, instrucciones libres, alemán y un párrafo de 30 s con tres fragmentos; 3 semillas por caso | 24 de 24 clips correctos |
-| Factor de tiempo real (RTF) | Apple M4 Pro | ~1,0 |
-| Memoria pico | Apple M4 Pro | 4,4 GB |
-| Frecuencia de muestreo de salida | — | 44,1 kHz |
+La model card incluye únicamente una comprobación cualitativa: 24 de 24 clips transcritos correctamente con whisper-large-v3-turbo, cubriendo inglés, chino, etiquetas paralingüísticas, clonación en chino e inglés, instrucción libre, alemán y un párrafo de 30 segundos con tres fragmentos, con tres semillas cada uno. También se indica un factor de tiempo real de aproximadamente 1,0 y un pico de memoria de 4,4 GB en un M4 Pro.
 
 ## Requisitos de hardware
 
-- Inferencia exclusivamente sobre Apple Silicon mediante MLX; no hay soporte documentado para CUDA ni ROCm en esta conversión.
-- Memoria unificada: pico medido de 4,4 GB, por lo que un equipo con 16 GB de memoria unificada es suficiente para ejecutar el modelo junto al sistema operativo.
-- Almacenamiento: 3,0 GB de pesos en disco.
-- GPU recomendadas: Apple M4 Pro (medición de referencia del autor con RTF ~1,0); no se han publicado mediciones para M1, M2, M3, M4 base, Max o Ultra.
-- Cabe en GPU de consumo de forma indirecta: sí en Apple Silicon de gama media y alta; no está previsto para tarjetas NVIDIA/AMD en este formato.
-- Despliegue: CLI `mlx_audio.tts.generate` y API de Python de mlx-audio. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este formato MLX.
-- Latencia y throughput: RTF de aproximadamente 1,0 en M4 Pro, es decir, generación en tiempo real para la longitud de audio producida.
-- Requisito de versión: es imprescindible la corrección del contrato de prompts del PR #1047 de mlx-audio; hasta su publicación, instalar con `pip install "git+https://github.com/cguldogan/mlx-audio.git@ming3-dense"`.
+- VRAM/memoria unificada: aproximadamente 4,4 GB de pico según la model card, en la variante bfloat16.
+- Hardware objetivo: Apple Silicon (MLX). La model card cita un M4 Pro con factor de tiempo real de aproximadamente 1,0.
+- GPU NVIDIA: no disponible; esta conversión está pensada para MLX y no para CUDA.
+- GPU de consumo: cabe en equipos Apple Silicon con al menos 8 GB de memoria unificada, aunque no se especifican modelos concretos más allá del M4 Pro.
+- Despliegue: mlx-audio 0.6.1 o superior, con CLI `mlx_audio.tts.generate` y API de Python. No se documentan opciones para vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: factor de tiempo real de aproximadamente 1,0 en M4 Pro; no se proporcionan cifras de throughput para otros equipos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Contexto | Licencia | Formato / despliegue |
+| Modelo | Parametros | Idiomas | Clonacion de voz | Licencia | Formato |
 |---|---|---|---|---|---|
-| mlx-community/Ming-3.0-tts-0.5B-bf16 (esta ficha) | ~1,48 B (denso) | 7 (zh, en, de, es, fr, ko, ja) + sichuanés y cantonés según el autor | No disponible | MIT | safetensors bf16, mlx-audio, solo Apple Silicon |
-| inclusionAI/Ming-3.0-tts-0.5B (modelo base) | ~1,48 B (denso) | 7 + sichuanés y cantonés | No disponible | MIT | Checkpoint original; requiere el stack del autor |
-| Otras familias de TTS open source (XTTS, Kokoro, Fish Speech, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Ming-3.0-tts-0.5B (esta variante MLX) | 1,48 mil millones | zh, en, de, es, fr, ko, ja (+ sichuanés, cantonés) | Si, zero-shot | MIT | safetensors bf16 (MLX) |
+| inclusionAI/Ming-3.0-tts-0.5B (original) | 1,48 mil millones | mismos | Si, zero-shot | MIT | safetensors |
+| Otras alternativas TTS | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la información proporcionada de datos verificables de parámetros, contexto, rendimiento o licencia de modelos alternativos de la misma categoría, por lo que no se incluye una comparación numérica que pudiera resultar inventada. La comparación más sólida disponible es frente al checkpoint original de inclusionAI, del que esta versión solo difiere en el empaquetado (MLX/bf16) y no en los pesos.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Los embeddings de hablante CAM++ que la referencia usa para clonación y para las tareas de emoción, atributos y dialecto no están extraídos en esta conversión; la clonación funciona únicamente a partir del audio de referencia y su transcripción.
-- La normalización de texto de la implementación de referencia no está portada: los números deben escribirse con letras para evitar lecturas incorrectas.
-- La cabeza de parada falla ocasionalmente y deja ruido de baja intensidad al final del audio; la solución indicada es regenerar con otra semilla.
-- Riesgo de alucinación acústica y de prosodia incorrecta en textos largos, siglas o dominios especializados; la validación publicada se limita a 24 clips con 3 semillas.
-- Sesgos de voz: al ser un modelo entrenado por un tercero, la distribución de acentos, géneros y edades de las voces integradas no está documentada, y la clonación reproduce las características del audio de referencia, incluidos sus posibles sesgos.
-- Uso comercial permitido por la licencia MIT, pero la clonación de voz exige consentimiento explícito de la persona cuya voz se replica y el cumplimiento de la normativa aplicable sobre datos biométricos y deepfakes; la licencia no cubre esos riesgos legales.
-- Dependencia de una rama no publicada de mlx-audio: con versiones anteriores el modelo carga pero pronuncia texto incorrecto, lo que puede pasar desapercibido en una integración automatizada.
-- Plataforma restringida a Apple Silicon; no hay ruta documentada para servidores con GPU NVIDIA, lo que limita su uso en producción a gran escala.
-- Longitud de contexto no documentada: no hay garantía publicada sobre la longitud máxima de texto por llamada, más allá del ejemplo de 30 segundos con tres fragmentos.
+- El embedding de hablante CAM++ que la referencia usa para clonación y para las tareas de emoción, atributos y dialecto no está extraído; la clonación funciona únicamente a partir del audio de referencia y su transcripción.
+- La normalización de texto de la referencia no está portada, por lo que los números deben escribirse con palabras.
+- La cabeza de parada ocasionalmente no se activa, dejando ruido de baja intensidad al final del audio; la model card recomienda repetir con otra semilla.
+- Requiere mlx-audio 0.6.1 o superior; versiones anteriores generan palabras incorrectas aunque carguen el modelo.
+- Riesgo de alucinación en la pronunciación y en la fidelidad al texto de entrada no cuantificado en la información disponible.
+- Sesgos de voz y de idioma no documentados en la información proporcionada.
+- Licencia MIT, que permite uso comercial, pero se recomienda revisar las condiciones del modelo base inclusionAI/Ming-3.0-tts-0.5B.
+- No se documentan restricciones de uso ético ni salvaguardas contra suplantación de identidad en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mlx-community/Ming-3.0-tts-0.5B-bf16
+- Hugging Face (esta variante): https://huggingface.co/mlx-community/Ming-3.0-tts-0.5B-bf16
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
-- Repositorio del autor: https://github.com/inclusionAI/Ming-3.0-tts
+- Repositorio Ming-3.0-tts: https://github.com/inclusionAI/Ming-3.0-tts
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio
-- Pull request con la corrección del contrato de prompts: https://github.com/Blaizzy/mlx-audio/pull/1047
-- Rama de instalación con el parche: https://github.com/cguldogan/mlx-audio/tree/ming3-dense
-- README de la variante densa en mlx-audio: https://github.com/cguldogan/mlx-audio/blob/ming3-dense/mlx_audio/tts/models/dense/README.md
+- README de modelos densos de mlx-audio: https://github.com/Blaizzy/mlx-audio/blob/main/mlx_audio/tts/models/dense/README.md
+- Pull request mlx-audio #1047: https://github.com/Blaizzy/mlx-audio/pull/1047

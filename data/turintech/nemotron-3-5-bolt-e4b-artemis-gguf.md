@@ -2,102 +2,103 @@
 
 ## Resumen
 
-Nemotron-3.5-Bolt-E4B-Artemis-GGUF es una cuantización GGUF, creada por TurinTech con su pipeline Artemis, del modelo de chat NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 de NVIDIA. El objetivo del proyecto es llevar las capacidades de chat, llamadas a herramientas (tool calling) y matemáticas del modelo original de NVIDIA a GPUs pequeñas e incluso CPU, mediante archivos GGUF compactos y optimizados que reducen la pérdida de calidad respecto a otras cuantizaciones del mismo tamaño (comparadas explícitamente con las de Unsloth).
+Nemotron-3.5-Bolt-E4B-Artemis-GGUF es una familia de cuantizaciones GGUF del modelo NVIDIA Nemotron-3.5-Bolt-E4B-BF16, publicada por TurinTech bajo el marco de compresión propietario Artemis. El modelo base es un transformer multimodal desarrollado por NVIDIA que combina generación de texto, soporte de tool calling y entrada de imagen (y audio experimental), con un total de 7.518.069.290 parámetros reales en safetensors. TurinTech distribuye nueve variantes GGUF con tamaños que van de 2,67 GB a 8,14 GB, pensadas para ejecución local con llama.cpp, Ollama y LM Studio.
 
-El modelo base es un modelo conversacional de la familia Nemotron de NVIDIA con 7.518 millones de parámetros (dato real de safetensors), y la cuantización por defecto (Q3_K_XL) ocupa solo 4,22 GB de descarga, funcionando con unos 3,2 GiB de memoria de GPU en una RTX 3060 con contexto de 8.192 tokens. Los archivos incluyen la plantilla de chat de NVIDIA byte a byte y son compatibles con llama.cpp, Ollama y LM Studio.
+La relevancia de esta ficha radica en que TurinTech publica métricas de divergencia KL frente al original BF16 (15,05 GB) para cada tamaño, lo que permite comparar la pérdida de calidad de forma cuantitativa. En la variante Q3_K_XL (4,22 GB), TurinTech reporta KL de 0,0569 en wiki, 0,0411 en chat y 0,0380 en código, frente a 0,0751, 0,0623 y 0,0506 de la cuantización equivalente de Unsloth (UD-Q3_K_XL), lo que sitúa a Artemis como una alternativa con menor degradación a igual tamaño de descarga.
 
-Su relevancia actual radica en la combinación de tres factores: un tamaño reducido que lo hace ejecutable en hardware de consumo, un buen rendimiento en function calling (372 de 400 en BFCL simple según el autor) y soporte de decodificación especulativa mediante el drafter DFlash de NVIDIA, que eleva la velocidad de generación de 80,0 a 114,1 tokens por segundo en una RTX 3060.
+El paquete está orientado a despliegue en hardware de consumo y a entornos con restricciones de memoria: la variante recomendada ocupa 3,76 GiB de VRAM en inferencia. La licencia es OpenMDW-1.1 (no es una licencia permisiva tipo Apache-2.0 ni MIT) y debe revisarse antes de uso comercial. El repositorio acumula 9017 descargas y 13 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de la familia Nemotron (detalle interno no disponible) |
-| Parametros totales | 7.518.069.290 (dato real de safetensors del modelo base) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | 8.192 tokens en los comandos y pruebas documentadas (maximo del modelo base: no disponible) |
-| Tipos de cuantizacion | Q3_K_XL (por defecto, 4,22 GB), Q4_K_XL, IQ3_XXS |
+| Arquitectura | Transformer multimodal (texto, imagen y audio experimental); detalles internos del modelo base no disponibles |
+| Parametros totales | 7.518.069.290 |
+| Parametros activos | no disponible |
+| Longitud de contexto | 8.192 tokens en la configuración de referencia de llama.cpp (`-c 8192`); máximo nativo no disponible |
+| Tipos de cuantizacion | GGUF en nueve tamaños (2,67 GB a 8,14 GB), entre ellos IQ2_XXS, Q3_K_XL, Q4_K_XL y Q6_K_XL; calibración con imatrix |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW-1.1 (licencia "other" en Hugging Face) |
-| Formato de pesos | GGUF (solo el modelo de texto) |
+| Licencia | OpenMDW-1.1 (`license: other`, `license_name: openmdw-1.1`) |
+| Formato de pesos | GGUF (llama.cpp); proyector multimodal `mmproj-Q8_0.gguf` separado; drafter especulativo `dflash-Nemotron-3.5-Bolt-E4B-Q8_0.gguf` en `MTP/` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, pertenece a la familia Nemotron de NVIDIA y es un modelo conversacional orientado a chat, tool calling y matematicas. La ficha original de NVIDIA con los detalles de arquitectura y entrenamiento no esta incluida en la informacion disponible, por lo que el numero exacto de capas, dimensiones ocultas y composicion del dataset de preentrenamiento no se pueden detallar. El sufijo "E4B" sugiere una variante de eficiencia de 4 mil millones de parametros activos, pero este dato no esta confirmado en la documentacion proporcionada.
+El modelo base es NVIDIA Nemotron-3.5-Bolt-E4B en precisión BF16, del que esta publicación es una cuantización (relación declarada `quantized` respecto a `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16`). La información disponible no detalla la arquitectura interna del base (número de capas, dimensiones ocultas, mecanismo de atención ni composición del dataset de entrenamiento). Los tags del repositorio indican capacidades de visión y conversación, y la model card menciona un proyector multimodal para imagen y audio, lo que confirma una arquitectura con encoder multimodal acoplado.
 
-Sobre esta base, TurinTech ha aplicado su pipeline de cuantizacion Artemis para producir archivos GGUF que minimizan la divergencia KL respecto al modelo original. Los datos publicados muestran KL held-out de 0,0574 (wiki), 0,0414 (chat) y 0,0376 (codigo) para la variante Q3_K_XL, frente a 0,0752, 0,0620 y 0,0504 de la cuantizacion UD-Q3_K_XL de Unsloth del mismo tamaño. En CPU, los valores son 0,0661 y 0,0416 frente a 0,0816 y 0,0609. Ademas, el modelo es compatible con la decodificacion especulativa mediante el drafter DFlash de NVIDIA (Nemotron-3.5-Bolt-E4B-DFlash-BF16.gguf, 737 MB), que propone tokens que el modelo principal verifica.
+La innovación técnica de esta publicación es el pipeline Artemis de TurinTech, que produce cuantizaciones calibradas con imatrix y evalúa la divergencia KL respecto al BF16 original en tres dominios (wiki, chat y código). La model card indica que los textos de evaluación también se usaron para seleccionar los ficheros en todos los tamaños excepto Q3_K_XL y Q4_K_XL, lo que conviene tener en cuenta al interpretar las métricas de esos dos tamaños. Adicionalmente, se publica un drafter de decodificación especulativa (`--spec-type draft-dflash`) que acelera la generación, con la advertencia de que la salida greedy puede no ser idéntica palabra por palabra. No se documentan detalles de RLHF, DPO ni número de tokens de entrenamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional: modelo de chat con la plantilla de chat oficial de NVIDIA embebida en el archivo GGUF.
-- Tool calling / function calling: rendimiento medido en el Berkeley Function Calling Leaderboard (372/400 en BFCL simple y 184/200 en BFCL 200-399, segun el autor).
-- Razonamiento matematico: 228 de 250 respuestas correctas en el test de GSM8K (segun el autor).
-- Modo thinking: la plantilla soporta razonamiento explicito (thinking), activado por defecto en llama.cpp y Ollama; puede desactivarse con `--reasoning off` o `--think=false`. Todas las metricas publicadas se midieron con thinking desactivado.
-- Decodificacion especulativa: compatible con el drafter DFlash de NVIDIA para acelerar la generacion.
-- Despliegue local: archivos GGUF ejecutables en GPU pequena o CPU mediante llama.cpp, Ollama y LM Studio.
-- Capacidades multilingues: no disponible.
-- Vision, audio u otras modalidades: no disponibles (los archivos contienen solo el modelo de texto).
+- Generación de texto conversacional multi-turno, con modo de razonamiento (thinking) activable o desactivable mediante `--reasoning off` o `"think": false`.
+- Tool calling / function calling: las llamadas se devuelven en `choices[0].message.tool_calls` a través del endpoint compatible con OpenAI `/v1/chat/completions`.
+- Entrada de imágenes mediante el proyector `mmproj-Q8_0.gguf`.
+- Entrada de audio en estado experimental en llama.cpp (requiere el proyector multimodal).
+- Decodificación especulativa con drafter dedicado (`dflash`), que incrementa el throughput a costa de variaciones menores en la salida greedy.
+- Compatibilidad con endpoints (`endpoints_compatible`) y con el formato de plantilla Jinja (`--jinja`).
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Chatbots locales en hardware de consumo: con 3,2 GiB de VRAM en una RTX 3060 a contexto de 8.192 tokens, es adecuado para asistentes conversacionales que se ejecutan integramente en un PC de escritorio sin depender de la nube.
-- Agentes con llamadas a herramientas: su puntuacion en BFCL (93% en BFCL simple segun el autor) lo hace viable para pipelines de agentes que invocan funciones definidas por el usuario, orquestadas desde llama-server con su API compatible con OpenAI.
-- Resolucion de problemas de matematicas: con 91,2% de acierto en GSM8K (228/250 segun el autor), sirve para asistentes de aritmetica y problemas de razonamiento numerico de nivel escolar.
-- Generacion aumentada en aplicaciones con presupuesto de VRAM limitado: la variante Q4_K_XL ofrece mayor fidelidad para quien pueda permitirse algo mas de memoria, manteniendo el modelo en el rango de GPUs de consumo.
-- Inferencia en CPU: los datos KL en CPU indican que funciona razonablemente sin GPU, util para servidores modestos o entornos edge sin acelerador.
-- Prototipado rapido de LLMs con Ollama o LM Studio: los tags de Ollama (`q3_k_xl`, `q4_k_xl`, `iq3_xxs`) permiten probar el modelo con un solo comando, ideal para evaluaciones previas a integracion.
-- Generacion de codigo ligera: los datos KL de codigo (0,0376) indican fidelidad razonable en dominio de codigo, aunque no se han publicado benchmarks especificos de programacion.
+- Asistente conversacional local en estación de trabajo: con la variante Q3_K_XL (3,76 GiB de VRAM) el modelo cabe en GPUs de consumo de 8 GB o más y permite chat multi-turno con 8.192 tokens de contexto sin depender de la nube.
+- Automatización de soporte con tool calling: el endpoint `/v1/chat/completions` acepta una lista `tools` y devuelve `tool_calls`, lo que permite conectar el modelo a APIs internas de tickets, consultas de pedidos o CRM en un flujo de agente.
+- Procesamiento de documentos con imagen: el proyector `mmproj-Q8_0.gguf` habilita entrada visual, útil para extraer información de capturas, formularios escaneados o gráficos en un pipeline local.
+- Generación de código asistida en IDE: la variante Q3_K_XL reporta KL de 0,0380 en el dominio de código, la menor de las tres métricas publicadas, lo que la hace adecuada para autocompletado y explicación de código en LM Studio o llama.cpp.
+- Despliegue en portátiles y equipos sin GPU dedicada: las variantes de 2,67 GB permiten inferencia en CPU con llama.cpp u Ollama, útil para prototipado y demos offline.
+- Aceleración de servicios de inferencia: el drafter `dflash` en `MTP/` permite activar decodificación especulativa en llama-server para reducir la latencia por token en cargas interactivas.
+- Evaluación comparativa de cuantizaciones: los valores de KL publicados por dominio permiten seleccionar el tamaño en función del presupuesto de memoria y de la tolerancia a la degradación en chat, wiki o código.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (TurinTech), no verificados por terceros. Todas las mediciones se realizaron con thinking desactivado.
+La model card no publica resultados en benchmarks estándar (MMLU, HumanEval, GSM8K). Publica métricas de divergencia KL frente al BF16 original, que miden fidelidad de la cuantización, no calidad absoluta del modelo.
 
-| Benchmark | Metrica | Resultado |
-|---|---|---|
-| BFCL simple (Berkeley Function Calling Leaderboard) | Tool calls correctos | 372 de 400 (93,0%) |
-| BFCL 200-399 | Tool calls correctos | 184 de 200 (92,0%) |
-| GSM8K test | Respuestas correctas | 228 de 250 (91,2%) |
-| Held-out chat (OASST1) | Coincidencia de siguiente token (same top-p) | 92,98% |
+| Fichero | Tamano | KL wiki (menor es mejor) | KL chat (menor es mejor) | KL codigo (menor es mejor) |
+|---|---|---|---|---|
+| TurinTech Q3_K_XL | 4,22 GB | 0,0569 | 0,0411 | 0,0380 |
+| Unsloth UD-Q3_K_XL | 4,22 GB | 0,0751 | 0,0623 | 0,0506 |
+| BF16 original | 15,05 GB | referencia | referencia | referencia |
 
-Metricas adicionales de fidelidad de cuantizacion (KL held-out frente al modelo original, RTX 3060): wiki 0,0574, chat 0,0414, codigo 0,0376, frente a 0,0752, 0,0620 y 0,0504 de la cuantizacion UD-Q3_K_XL de Unsloth del mismo tamaño. En CPU: 0,0661 y 0,0416 frente a 0,0816 y 0,0609. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estandarizados en la informacion disponible.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 3,2 GiB de GPU y 4,3 GiB de memoria del host con todas las capas en GPU (RTX 3060 12 GB, archivo Q3_K_XL, contexto de 8.192 tokens). Con el drafter DFlash activo, unos 1,8 GiB adicionales de VRAM.
-- GPUs recomendadas: cualquier GPU de consumo con 6 GB o mas de VRAM es suficiente para el archivo por defecto; documentado especificamente sobre NVIDIA RTX 3060 12 GB.
-- Consumer GPUs: si cabe con holgura en una RTX 3060 12 GB; por extension, compatible con GPUs de 6-8 GB (RTX 4060, RTX 3070) para el archivo Q3_K_XL. Tambien funciona en CPU puro.
-- Opciones de despliegue: llama.cpp (llama-server, probado con b11869), Ollama (`ollama run turintech/nemotron-3.5-bolt-e4b-artemis:q3_k_xl --think=false`) y LM Studio. No se menciona soporte para vLLM ni TGI (GGUF no es su formato nativo).
-- Throughput: 80,0 tokens por segundo con Q3_K_XL en RTX 3060, elevados a 114,1 tokens por segundo con decodificacion especulativa DFlash. Latencia no disponible.
+- VRAM estimada: 3,76 GiB para la variante Q3_K_XL (4,22 GB de descarga), según la tabla de la model card.
+- Rango de tamaños de fichero: de 2,67 GB (variantes pequeñas tipo IQ2_XXS) a 8,14 GB (variantes grandes tipo Q6_K_XL), lo que permite ajustar el consumo de memoria al hardware disponible.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, las variantes de 2,67 a 4,22 GB caben en GPUs de consumo de 8 GB o más; las variantes de 8,14 GB requieren aproximadamente 8-10 GB de VRAM para pesos más overhead de contexto.
+- Cabe en GPU de consumo: sí, al menos las variantes pequeñas y medias; el autor no publica una lista de GPUs validadas.
+- Opciones de despliegue: llama.cpp (llama-server, requiere build b11960 o superior), Ollama (`turintech/nemotron-3.5-bolt-e4b-artemis`, solo texto, tag `latest` = Q3_K_XL), LM Studio (`turintech/nemotron-3.5-bolt-e4b-artemis`, contexto inicial de 8.192 tokens y thinking desactivado).
+- Latencia y throughput: no disponibles de forma numérica. El autor indica que el drafter `dflash` acelera la generación y que el modo thinking añade aproximadamente 1.000 tokens extra por respuesta.
 
 ## Comparativa con modelos similares
 
-| Caracteristica | Nemotron-3.5-Bolt-E4B-Artemis-GGUF | UD-Q3_K_XL de Unsloth (mismo modelo base) | NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 (modelo base) |
-|---|---|---|---|
-| Parametros | 7.518 M (total) | 7.518 M (total) | 7.518 M (total) |
-| Tamaño del archivo | 4,22 GB (Q3_K_XL) | similar (mismo tamaño nominal) | no disponible |
-| KL held-out (wiki/chat/codigo) | 0,0574 / 0,0414 / 0,0376 | 0,0752 / 0,0620 / 0,0504 | referencia (0) |
-| Formato | GGUF | GGUF | BF16 (safetensors) |
-| Licencia | OpenMDW-1.1 | no disponible | OpenMDW-1.1 |
-| VRAM (contexto 8k) | ~3,2 GiB | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Nemotron-3.5-Bolt-E4B-Artemis (este) | 7.518.069.290 | 8.192 en config. de referencia | GGUF (9 tamanos) | OpenMDW-1.1 | KL chat 0,0411 en Q3_K_XL; vision y audio experimental |
+| Unsloth UD-Q3_K_XL (mismo base) | 7.518.069.290 | no disponible | GGUF | OpenMDW-1.1 (heredada) | KL chat 0,0623 en Q3_K_XL; peor fidelidad que Artemis a igual tamano |
+| NVIDIA Nemotron-3.5-Bolt-E4B-BF16 (base) | 7.518.069.290 | no disponible | BF16 safetensors | OpenMDW-1.1 | Referencia de calidad; 15,05 GB, no apto para GPU de consumo |
 
-Alternativas de otra familia con rol similar (chat pequeno local con tool calling), como Qwen3-4B o Gemma 3 4B, no disponen de datos comparables publicados en la informacion proporcionada, por lo que no se pueden comparar numericamente aqui.
+No se dispone de datos para comparar con modelos de otros desarrolladores de tamaño y categoría similares en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible; no se documentan auditorias de sesgo para este modelo ni para su cuantizacion.
-- Alucinacion: no se han publicado evaluaciones de alucinacion; al ser un modelo de 7,5 mil millones de parametros cuantizado a Q3, debe esperarse mayor tasa de alucinacion que en modelos mayores, especialmente en conocimiento factual.
-- Contexto: las pruebas documentadas usan 8.192 tokens; el maximo real del modelo base no esta indicado en la informacion disponible. Los archivos contienen solo el modelo de texto.
-- Thinking: llama.cpp y Ollama activan el modo thinking por defecto para esta plantilla, lo que genera bloques de razonamiento iniciales y requiere un `max_tokens` mucho mayor; hay que desactivarlo explicitamente (`--reasoning off` / `--think=false`) para reproducir los resultados publicados.
-- Decodificacion especulativa: con DFlash activo, las respuestas greedy no siempre coinciden palabra por palabra (solo 11 de 30 coincidieron en las pruebas del autor).
-- Metricas no verificadas: todos los benchmarks provienen del autor del modelo y no estan verificados por terceros; las cifras de BFCL y GSM8K se midieron sobre subconjuntos (400, 200 y 250 ejemplos), no sobre los sets completos.
-- Licencia: OpenMDW-1.1 es una licencia abierta, pero conviene revisar sus terminos exactos (https://openmdw.ai/license/1-1/) antes de un uso comercial concreto; la ficha lo marca como "other" en Hugging Face.
-- Produccion: sin thinking-on medido, sin benchmarks estandarizados independientes y con un numero reducido de descargas (398 en el momento de la ficha), se recomienda evaluacion propia antes de despliegue en produccion.
+- Sesgos conocidos: no documentados en la información disponible; al ser una cuantización del base NVIDIA, hereda los sesgos de sus datos de entrenamiento, no descritos en la model card.
+- Riesgo de alucinación: no cuantificado por el autor; el modo thinking añade aproximadamente 1.000 tokens por respuesta, lo que incrementa coste y latencia.
+- Limitaciones de contexto: la configuración de referencia usa 8.192 tokens; el máximo nativo del modelo base no está documentado en la información disponible.
+- Idiomas: no se declara la lista de idiomas soportados, por lo que el rendimiento multilingüe no puede evaluarse a priori.
+- Licencia: OpenMDW-1.1 no es una licencia permisiva estándar; es obligatorio revisar sus términos antes de uso comercial o redistribución.
+- Métricas de selección: los textos de evaluación se usaron para elegir los ficheros en todos los tamaños excepto Q3_K_XL y Q4_K_XL, lo que puede introducir un sesgo favorable en las métricas KL de los demás tamaños.
+- Decodificación especulativa: con el drafter `dflash`, la salida greedy no siempre es idéntica palabra por palabra a la del modelo sin drafter.
+- Audio: el soporte de audio es experimental en llama.cpp y puede cambiar entre builds.
+- Dependencia de versión: requiere llama.cpp b11960 o superior; builds anteriores pueden producir resultados distintos a los reportados.
+- Paquetes Ollama y LM Studio: son solo texto; la entrada de imagen requiere descargar el `mmproj` y usar llama.cpp directamente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF
-- Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
-- Drafter DFlash de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
+- Repositorio Hugging Face: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Ollama: https://ollama.com/turintech/nemotron-3.5-bolt-e4b-artemis
+- LM Studio: https://lmstudio.ai/turintech/nemotron-3.5-bolt-e4b-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Hilo de feedback de TurinTech: https://huggingface.co/spaces/turintech/README/discussions/1
-- Web de TurinTech: https://turintech.ai

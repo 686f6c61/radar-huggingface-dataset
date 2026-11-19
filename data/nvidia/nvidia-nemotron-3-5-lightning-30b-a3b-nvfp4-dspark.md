@@ -2,80 +2,83 @@
 
 ## Resumen
 
-El modelo NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark es un checkpoint de decodificacion especulativa (speculative decoding) desarrollado por NVIDIA para acelerar la inferencia de la familia Nemotron-3.5-Lightning-30B-A3B, un modelo de lenguaje hibrido LatentMoE de 30 000 millones de parametros con 3 000 millones activos, disenado para razonamiento, chat y flujos agénticos. Este checkpoint actua como "drafter" (modelo auxiliar) que genera candidatos de tokens que el modelo principal valida, reduciendo la latencia en entornos de baja concurrencia como DGX Spark y centros de datos.
+NVIDIA Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark es un checkpoint de decodificacion especulativa (draft model) publicado por NVIDIA para su familia Nemotron-3.5-Lightning-30B-A3B, un modelo de lenguaje hibrido LatentMoE orientado a razonamiento, chat y flujos agenticos. No es un modelo objetivo autonomo: se usa junto al modelo principal para acelerar la generacion mediante el esquema DSpark (decodificacion especulativa con planificacion de confianza y generacion semiautoregresiva), reduciendo la latencia en despliegues de baja concurrencia y en hardware DGX Spark.
 
-El drafter DSpark es un modelo denso relativamente pequeno (967 millones de parametros totales, 615 millones no-embedding) con atencion GQA de ventana deslizante de 1024 tokens y un sesgo de attention sink. Se distribuye cuantizado en NVFP4 mediante NVIDIA Model Optimizer 0.45.0, y esta pensado para ser usado junto con el checkpoint principal NVFP4, no como modelo independiente. Su relevancia actual radica en que permite desplegar agentes de IA de larga duracion con menor latencia y mayor rendimiento en hardware Blackwell y Hopper.
+El checkpoint esta cuantizado en NVFP4 con NVIDIA Model Optimizer 0.45.0 y contiene 967 millones de parametros totales (615 millones no pertenecientes a embeddings), segun la model card. La arquitectura del draft es densa, con MLP denso y atencion GQA causal con ventana deslizante de 1024 tokens en todas las capas y sesgo de attention sink por cabeza. El modelo base al que asiste soporta hasta 1 millon de tokens de contexto y esta disponible en variantes BF16 y NVFP4.
+
+Su relevancia practica esta en el coste de inferencia: al actuar como modelo borrador sobre el objetivo Nemotron-3.5-Lightning-30B-A3B, permite servir cargas de razonamiento, RAG y agentes con menor latencia por token en GPUs Blackwell (incluida DGX Spark con GB10) y Hopper, siempre a traves de vLLM. La licencia es OpenMDW-1.1 y el autor declara uso comercial permitido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Dense GQA (Dense MLP + GQA Attention) con ventana deslizante de 1024 y attention sink bias |
+| Arquitectura | Densa: MLP denso + atencion GQA causal con sliding window de 1024 y attention sink por cabeza (modulo DSpark de decodificacion especulativa) |
 | Parametros totales | 967 M (615 M no-embedding) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | Hasta 1 M tokens (heredada del modelo base) |
-| Tipos de cuantizacion | NVFP4 |
-| Idiomas soportados | Ingles, espanol, frances, aleman, italiano y japones |
-| Licencia | OpenMDW-1.1 |
-| Formato de pesos | safetensors |
+| Parametros activos | no disponible (no es MoE; el modelo objetivo al que asiste si es LatentMoE) |
+| Longitud de contexto | hasta 1 M tokens (modelo base); el draft usa ventana deslizante de 1024 por capa |
+| Tipos de cuantizacion | NVFP4 (cuantizado con NVIDIA Model Optimizer 0.45.0); el modelo base existe tambien en BF16 |
+| Idiomas soportados | ingles, espanol, frances, aleman, italiano y japones |
+| Licencia | OpenMDW-1.1 (openmdw.ai/license/1-1/) |
+| Formato de pesos | safetensors (repo de 2,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint DSpark es un modelo denso con capas de MLP densas y atencion GQA (grouped-query attention). A diferencia del modelo base, que es un LatentMoE hibrido, el drafter utiliza una ventana deslizante de atencion de 1024 tokens en todas las capas y un sesgo de attention sink por cabeza, lo que le permite generar secuencias candidatas de forma semi-autoregresiva con un coste computacional reducido. Esta arquitectura esta especificamente optimizada para el algoritmo DSpark, que programa la confianza de la decodificacion especulativa para maximizar el ratio de aceptacion de tokens.
+El checkpoint DSpark es un modelo denso de 967 M de parametros con MLP denso y capas de atencion GQA causal. Cada capa aplica una ventana deslizante de 1024 tokens y un sesgo de attention sink por cabeza, un diseno pensado para generar borradores de tokens rapidos y baratos que el modelo objetivo verifica. El modelo objetivo de la familia, Nemotron-3.5-Lightning-30B-A3B, es un transformer hibrido LatentMoE con capacidades de razonamiento y llamada a herramientas; el draft no replica esa arquitectura, sino que se acopla a ella en el pipeline de decodificacion especulativa.
 
-El entrenamiento del drafter se realizo con 66 000 millones de tokens, repetidos durante 2 epocas, utilizando unicamente los prompts de los datasets Nemotron-Post-Training-Dataset-v2 y v3 (sin usar las respuestas originales de GPT). Los datos son una mezcla de contenido automatico, manual y sintetico. El modelo base, por su parte, fue pre-entrenado con mas de 20 billones de tokens y posteriormente ajustado con datos de alta calidad curados y sinteticos, incluyendo una pequena proporcion de datos de question-answering y alineacion.
+El entrenamiento del modulo DSpark se realizo sobre prompts sintetizados a partir de Nemotron-Post-Training-Dataset-v2 y v3 (solo se usaron los prompts, no las respuestas originales de GPT), con 66 mil millones de tokens de texto repetidos durante 2 epocas. La recoleccion y el etiquetado de datos combinan metodos automatizados, manuales y sinteticos. El esquema DSpark combina planificacion de confianza con generacion semiautoregresiva, lo que permite proponer varios tokens por paso y validarlos contra el modelo objetivo.
 
 ## Capacidades
 
-- Decodificacion especulativa DSpark: genera multiples tokens candidatos en paralelo que el modelo principal valida, acelerando la inferencia hasta 4 veces en flujos de baja latencia.
-- Generacion de texto y razonamiento: al ser un drafter del modelo Nemotron-3.5-Lightning-30B-A3B, hereda las capacidades de razonamiento, chat y ejecucion de tareas agénticas del modelo base.
-- Soporte de tool calling y function calling: el modelo base incluye soporte para herramientas, y el drafter esta disenado para mantener ese comportamiento en produccion.
-- Capacidades multilingues: soporta seis idiomas principales (ingles, espanol, frances, aleman, italiano y japones) gracias al modelo base.
-- Compatibilidad con contexto largo: el modelo base admite hasta 1 M tokens de contexto, y el drafter esta pensado para trabajar dentro de esa ventana.
-- Integracion con vLLM: el checkpoint esta optimizado para el runtime vLLM, lo que facilita su despliegue en infraestructuras existentes.
+- Generacion de borradores de tokens para decodificacion especulativa sobre Nemotron-3.5-Lightning-30B-A3B (no debe usarse como modelo objetivo independiente).
+- Soporte de los flujos del modelo base: razonamiento, chat, RAG y cargas agenticas.
+- Salidas que pueden incluir respuestas en lenguaje natural, trazas de razonamiento, contenido de uso de herramientas y salidas estructuradas, segun la plantilla de chat y el tooling de la aplicacion.
+- Cobertura multilingue heredada del objetivo: ingles, espanol, frances, aleman, italiano y japones.
+- Integracion con vLLM como unico runtime declarado por el autor.
+- Compatibilidad con GPUs NVIDIA Blackwell (incluida DGX Spark, GB10) y Hopper, sobre Linux.
 
 ## Casos de uso
 
-- Agentes de IA siempre activos en produccion: el drafter DSpark reduce la latencia de respuesta en agentes que ejecutan razonamiento multi-paso y tool calling de forma continua, lo que permite mantener conversaciones fluidas en entornos de atencion al cliente o asistentes virtuales.
-- Despliegue en DGX Spark (GB10): el checkpoint esta especificamente ajustado para este hardware de NVIDIA, ofreciendo baja latencia en inferencia local para equipos de desarrollo y edge computing.
-- RAG (Retrieval-Augmented Generation) de baja latencia: al acelerar la generacion de tokens, es adecuado para sistemas de pregunta-respuesta sobre grandes volumenes de documentos donde el tiempo de respuesta es critico.
-- Razonamiento multi-step en centros de datos: en entornos Hopper con baja concurrencia, el drafter permite ejecutar cadenas de razonamiento complejas con menor coste por token generado.
-- Generacion de codigo asistida: el modelo base tiene capacidades de generacion de codigo, y la decodificacion especulativa acelera la autocompletacion en IDEs y pipelines de CI/CD.
-- Chat multilingue en tiempo real: el soporte de seis idiomas y la baja latencia hacen viable su uso en aplicaciones de mensajeria o soporte tecnico internacional.
+- Servicio de razonamiento de baja latencia: desplegar el par objetivo + DSpark en vLLM para reducir el tiempo por token en cargas interactivas de razonamiento, donde la decodificacion especulativa amortiza el coste del borrador.
+- Inferencia en DGX Spark (GB10): el checkpoint esta ajustado explicitamente para este hardware y para escenarios de baja concurrencia, lo que permite servir Nemotron-3.5-Lightning-30B-A3B en un equipo de escritorio con aceleracion.
+- Chat con contexto largo: el modelo objetivo admite hasta 1 M tokens, y el draft acelera la generacion de respuestas sobre documentos extensos en flujos de resumen y preguntas y respuestas.
+- RAG en produccion: combinar recuperacion con el par objetivo + DSpark para reducir la latencia de las respuestas generadas en pipelines de atencion documental.
+- Flujos agenticos con tool calling: el modelo base emite contenido de uso de herramientas y salidas estructuradas; el draft acelera los turnos intermedios de planificacion y llamada a funciones.
+- Despliegue multilingue en Europa: atender consultas en espanol, frances, aleman, italiano e ingles con un unico par de modelos y latencia reducida.
+- Evaluacion comparativa de tecnicas de decodificacion especulativa: usar el checkpoint como referencia para medir la ganancia de throughput frente a la generacion autoregresiva pura en Blackwell y Hopper.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para el checkpoint DSpark en la informacion disponible. La model card del modelo base (Nemotron-3.5-Lightning-30B-A3B) menciona mejoras de rendimiento de hasta 4x en latencia gracias a la decodificacion especulativa, pero no se proporcionan cifras concretas de MMLU, HumanEval u otros benchmarks para este drafter.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el drafter DSpark ocupa aproximadamente 1.3 GB en NVFP4 (según el tamano del repositorio). Sin embargo, al desplegarse junto con el modelo base NVFP4 de 30B, la VRAM total necesaria dependera del modelo principal; para el modelo base se estiman entre 20 y 30 GB segun la cuantizacion y la longitud de contexto.
-- GPU recomendadas: NVIDIA Blackwell (incluido DGX Spark GB10) y NVIDIA Hopper. No se recomienda su uso en GPUs de generaciones anteriores.
-- Compatibilidad con GPU de consumo: no se indica soporte explicito para GPUs consumer (como RTX 4090), aunque el tamano reducido del drafter podria permitir su ejecucion en ellas; sin embargo, el modelo base requiere mas VRAM de la que suele haber disponible en GPUs consumer.
-- Opciones de despliegue: vLLM es el runtime soportado. No se mencionan otras opciones como llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la informacion proporcionada; se espera una mejora de hasta 4x en latencia frente a la inferencia sin decodificacion especulativa, segun NVIDIA.
+- VRAM estimada para el draft: el repo ocupa 2,7 GB en safetensors NVFP4; el modelo objetivo Nemotron-3.5-Lightning-30B-A3B en NVFP4 requiere su propio presupuesto de memoria, que no se detalla en la informacion disponible.
+- GPUs recomendadas: NVIDIA Blackwell, incluida DGX Spark (GB10), y NVIDIA Hopper.
+- GPU de consumo: no disponible; el autor solo declara compatibilidad con Blackwell y Hopper.
+- Despliegue: vLLM es el unico runtime declarado. No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; el autor indica que el checkpoint esta pensado para despliegues de baja concurrencia y DGX Spark, sin cifras publicadas.
+- Sistema operativo: Linux.
 
 ## Comparativa con modelos similares
 
-El DSpark es un drafter especifico para decodificacion especulativa, por lo que no tiene comparables directos en el mercado abierto. Se puede comparar con la alternativa de usar el modelo base sin drafter:
+| Modelo | Parametros | Contexto | Funcion | Licencia | Runtime |
+|---|---|---|---|---|---|
+| Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark (este) | 967 M (draft) | 1 M en el objetivo; ventana de 1024 en el draft | Draft de decodificacion especulativa | OpenMDW-1.1 | vLLM |
+| Nemotron-3.5-Lightning-30B-A3B-NVFP4 | no disponible | 1 M | Modelo objetivo cuantizado NVFP4 | OpenMDW-1.1 | vLLM |
+| Nemotron-3.5-Lightning-30B-A3B-BF16 | no disponible | 1 M | Modelo objetivo en BF16 | OpenMDW-1.1 | vLLM |
 
-| Modelo | Parametros | Contexto | Licencia | Uso |
-|---|---|---|---|---|
-| Nemotron-3.5-Lightning-30B-A3B (BF16) | 30B totales (3B activos) | 1M | OpenMDW-1.1 | Modelo base standalone |
-| Nemotron-3.5-Lightning-30B-A3B (NVFP4) | 30B totales (3B activos) | 1M | OpenMDW-1.1 | Modelo base cuantizado |
-| Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark | 967M (drafter) | 1M (heredado) | OpenMDW-1.1 | Drafter para decodificacion especulativa |
-
-Otras alternativas de decodificacion especulativa como Medusa o EAGLE no son directamente comparables porque se aplican a modelos distintos y no se han publicado datos de rendimiento relativos en la informacion disponible.
+No se dispone de datos de benchmarks ni de otros modelos borrador comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo independiente: el checkpoint DSpark requiere el modelo base Nemotron-3.5-Lightning-30B-A3B (en version BF16 o NVFP4) para funcionar; no puede generar texto por si solo.
-- Dependencia de hardware especifico: esta optimizado para Blackwell y Hopper; su rendimiento en otras arquitecturas puede verse degradado o no ser compatible.
-- Licencia OpenMDW-1.1: aunque permite uso comercial, es necesario revisar los terminos completos de la licencia en openmdw.ai/license/1-1 antes de su despliegue en produccion.
-- Riesgo de alucinacion: al ser un modelo de lenguaje, puede generar contenido incorrecto o inventado, especialmente en tareas de razonamiento complejo o con contexto largo.
-- Sesgos y limitaciones de idioma: aunque soporta seis idiomas, el rendimiento puede variar entre ellos; los datos de entrenamiento del drafter provienen principalmente de prompts en ingles, lo que podria afectar a la calidad en otros idiomas.
-- Sin benchmarks publicados: no hay datos de rendimiento verificables de forma independiente para este checkpoint, lo que dificulta la evaluacion objetiva antes de su adopcion.
-- Restricciones de despliegue: el runtime soportado es exclusivamente vLLM; otros frameworks de inferencia pueden no ser compatibles.
+- No es un modelo autonomo: la model card indica que esta pensado para servir con asistencia DSpark sobre Nemotron-3.5-Lightning-30B-A3B, no como checkpoint objetivo independiente.
+- Dependencia de hardware: solo se declara compatibilidad con NVIDIA Blackwell (GB10, DGX Spark) y Hopper; no hay soporte documentado para otras arquitecturas.
+- Dependencia de software: vLLM es el unico runtime soportado; no se documentan alternativas.
+- Riesgo de alucinacion: las salidas pueden incluir trazas de razonamiento y contenido de herramientas; la calidad final depende del modelo objetivo y de la verificacion en el pipeline especulativo.
+- Idiomas: cobertura declarada de seis idiomas; el rendimiento fuera de ellos no esta documentado.
+- Licencia: OpenMDW-1.1 permite uso comercial segun la model card, pero conviene revisar los terminos completos antes de un despliegue en produccion.
+- Validacion: el autor recomienda pruebas especificas del caso de uso antes de integrar el modelo en sistemas en produccion.
+- Datos de rendimiento: no hay cifras publicadas de latencia, throughput ni benchmarks, lo que impide estimar la ganancia real sin medirla en el entorno objetivo.
 
 ## Enlaces
 
@@ -85,5 +88,5 @@ Otras alternativas de decodificacion especulativa como Medusa o EAGLE no son dir
 - Paper DSpark: https://huggingface.co/papers/2607.05147
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Blog de NVIDIA sobre Nemotron 3.5 Lightning: https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/
-- Pagina de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b
+- Dataset Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
+- Coleccion Nemotron-Post-Training-v3: https://huggingface.co/collections/nvidia/nemotron-post-training-v3

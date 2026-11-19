@@ -2,84 +2,100 @@
 
 ## Resumen
 
-`mradermacher/xyntrai-Sarah-mistral-2501-36B-nsfw-i1-GGUF` es un conjunto de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `xyntraistudios/xyntrai-Sarah-mistral-2501-36B-nsfw`. El prefijo `i1` indica que se han empleado cuantizaciones con matriz de importancia (imatrix), una tecnica que ajusta los pesos cuantizados segun su relevancia para reducir la perdida de calidad frente a la cuantizacion uniforme.
+xyntrai-Sarah-mistral-2501-36B-nsfw-i1-GGUF es una colección de cuantizaciones GGUF, generadas con imatrix, del modelo base xyntraistudios/xyntrai-sarah-mistral-2501-36B-NSFW. El trabajo de cuantización lo firma mradermacher, un autor habitual en el ecosistema de pesos comprimidos para llama.cpp, y el modelo subyacente se presenta como un fine-tune de la familia Mistral con 36 910 535 680 parámetros totales (unos 36,9 mil millones). La orientación explícita del modelo base es conversacional y "NSFW", es decir, está ajustado para contenido para adultos, y se distribuye bajo licencia Apache 2.0.
 
-El modelo base se presenta como un fine-tuning de la familia Mistral con un tamano nominal de 36B en el nombre, aunque los datos reales de safetensors del repositorio reportan 8.001.216 parametros. Esta discrepancia es relevante y debe tratarse con cautela: el repositorio indica un tamano de 0.0 GB, lo que sugiere que la publicacion esta incompleta o que los metadatos no reflejan el contenido real. El modelo esta etiquetado como `not-for-all-audiences` y `nsfw`, lo que indica contenido para adultos.
+El interés práctico de este repositorio no está en la arquitectura (es un transformer denso derivado de Mistral, sin innovaciones declaradas) sino en la disponibilidad de pesos cuantizados en múltiples niveles, desde IQ1_S de 8,1 GB hasta Q6_K de 30,4 GB, lo que permite ejecutar un modelo de casi 37B en hardware de consumo mediante llama.cpp u Ollama. Al tratarse de un fine-tune sin model card técnica detallada, la información sobre datos de entrenamiento, contexto nativo y evaluación es prácticamente inexistente en la documentación proporcionada.
 
-La relevancia de esta ficha es limitada desde el punto de vista tecnico: se trata de una republicacion de cuantizaciones, no de un modelo original, y no se dispone de model card detallada, benchmarks ni especificaciones de entrenamiento. Se documenta aqui lo que puede verificarse y se marcan explicitamente los datos no disponibles.
+Es relevante ahora porque demuestra el patrón habitual de la comunidad: un fine-tune temático (en este caso, rol conversacional para adultos) se cuantiza con imatrix para hacerlo desplegable en GPU de gama media y alta, con la advertencia de que el contenido generado puede ser inapropiado para entornos productivos generales.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere base Mistral, sin confirmar) |
-| Parametros totales | 8.001.216 segun safetensors del repo (el nombre indica 36B; discrepancia no resuelta) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de pesos en formato HF) |
+| Arquitectura | Transformer denso derivado de Mistral (según tags del autor; detalles no disponibles) |
+| Parámetros totales | 36 910 535 680 (~36,9B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (más fichero imatrix) |
+| Idiomas soportados | Inglés (declarado en la model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); repo de 394 GB con todos los niveles |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre `mistral-2501` sugiere una base de la familia Mistral con fecha de enero de 2025, pero no se confirma ni la variante concreta ni si se trata de un transformer denso o de una mezcla de expertos. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
+La información disponible indica únicamente que el modelo base es xyntraistudios/xyntrai-sarah-mistral-2501-36B-NSFW, etiquetado como "mistral" y "unsloth" en los tags. Esto sugiere un fine-tune realizado sobre una base Mistral (probablemente Mistral Small o una variante de ~36B) mediante las herramientas de Unsloth, orientado a conversación y contenido para adultos. No se especifican en la documentación proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO o SFT.
 
-Lo unico verificable es el proceso de cuantizacion: las etiquetas de la model card (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) indican que se partio de pesos en formato Hugging Face y se aplico una conversion con cuantizacion por tensor y matrices de importancia ponderadas. El conjunto de cuantizaciones cubre desde IQ1_S (extremadamente agresiva) hasta Q6_K (alta fidelidad), lo que permite desplegar el modelo en un rango amplio de hardware a costa de distinta perdida de calidad.
+Las cuantizaciones de este repositorio son de tipo i1 (imatrix), generadas con un fichero imatrix propio que el autor incluye en el repo (0,1 GB) para que otros puedan crear sus propias cuantizaciones. No hay innovaciones arquitectónicas destacables declaradas: es un transformer denso estándar cuantizado para inferencia en CPU/GPU con llama.cpp. La única particularidad técnica es el uso de cuantizaciones IQ (importancia) en lugar de las K-quant clásicas, lo que según las notas del autor mejora la relación calidad/tamaño en niveles bajos.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva (heredada del modelo base, sin detalle publicado).
-- Contenido para adultos y roleplay, segun la etiqueta `nsfw` y el nombre del modelo.
-- No se documenta soporte de tool calling, function calling ni capacidades de agente.
-- No se documenta soporte multimodal (vision, audio) ni modo de razonamiento explicito.
-- Capacidades multilingues: no disponibles.
+- Generación de texto conversacional multi-turno en inglés, con orientación explícita a contenido para adultos (rol, narrativa y diálogo NSFW).
+- Razonamiento general y respuesta a instrucciones, heredado del modelo base Mistral (sin evaluación publicada).
+- Capacidades multilingües: no disponibles; la model card solo declara inglés.
+- Tool calling / function calling: no declarado ni documentado.
+- Soporte de agentes y razonamiento multi-paso: no declarado.
+- Capacidades de visión o audio: no disponibles.
+- Modo "thinking" explícito: no disponible.
+- Ejecución local mediante llama.cpp, Ollama y otros runners compatibles con GGUF.
 
 ## Casos de uso
 
-- Roleplay conversacional para adultos: el modelo esta etiquetado como `nsfw` y parece orientado a personajes (nombre "Sarah"), por lo que su uso previsto es la generacion de dialogos de ficcion para adultos en entornos controlados.
-- Despliegue local en hardware consumer: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar el modelo en GPU de gama media mediante llama.cpp u Ollama, siempre que el tamano real de pesos coincida con el nominal.
-- Experimentacion con cuantizacion imatrix: util para investigadores que quieran comparar la degradacion de calidad entre variantes IQ y K en un mismo modelo base.
-- Prototipado de chatbots de personaje: integrable en frameworks como SillyTavern o text-generation-webui mediante el formato GGUF.
-- Evaluacion de sesgos y seguridad: sirve como caso de estudio para medir como las cuantizaciones agresivas (IQ1, IQ2) afectan a la coherencia y a la filtracion de contenido sensible.
-- Pruebas de inferencia en CPU: las variantes de baja precision permiten ejecucion en CPU con llama.cpp, aunque con latencia alta y calidad reducida.
+- Roleplay y narrativa interactiva para adultos: el fine-tune está ajustado específicamente para este dominio, y las cuantizaciones Q4_K_M (22,5 GB) o Q5_K_M (26,3 GB) permiten ejecutarlo en una RTX 4090 o A6000 con contexto moderado, manteniendo coherencia conversacional en sesiones largas.
+- Generación creativa de ficción: útil para escribir relatos o diálogos con tono consistente, aprovechando el ajuste conversacional; conviene revisar el contenido por las restricciones de uso.
+- Prototipado de chatbots temáticos en local: con la cuantización IQ3_M (16,6 GB) se puede desplegar en una GPU de 24 GB (RTX 3090/4090) para pruebas de UX sin depender de APIs externas.
+- Investigación sobre cuantización: el repo incluye el fichero imatrix y 23 niveles de cuantización, lo que lo convierte en un banco de pruebas útil para medir la degradación de calidad entre IQ1_S (8,1 GB) y Q6_K (30,4 GB) en un modelo de ~37B.
+- Despliegue en hardware modesto: la variante IQ2_M (12,6 GB) permite ejecutar el modelo en una GPU de 16 GB o en CPU con RAM suficiente, a costa de una pérdida de calidad notable.
+- Evaluación de fine-tunes NSFW: investigadores que estudien alineación, seguridad y comportamiento de modelos ajustados pueden usar estas cuantizaciones para reproducir experimentos en local sin infraestructura de datacenter.
+- Integración en pipelines de generación de contenido editorial para adultos: con la debida moderación y cumplimiento legal, el modelo puede asistir en la redacción de material de ficción para plataformas especializadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio de cuantizaciones no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y el modelo base tampoco aporta datos de evaluación en la documentación proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision, porque el numero real de parametros (8 millones segun safetensors) no concuerda con el nominal (36B). Si el modelo real fuese de 36B, una cuantizacion Q4_K_M requeriria aproximadamente 20-22 GB de VRAM; una Q2_K, unos 12-14 GB. Si el dato de safetensors fuese el correcto, el modelo cabria en cualquier GPU consumer.
-- GPU recomendadas: no disponible. Para un hipotetico 36B en Q4, se necesitaria una RTX 4090 (24 GB) o superior; para Q6_K, una A100 40 GB o H100.
-- Cabe en GPU consumer: probablemente si en el escenario de 8M parametros; en el escenario de 36B, solo en configuraciones de 24 GB o mas con cuantizaciones Q4 o inferiores.
-- Opciones de despliegue: llama.cpp, Ollama, text-generation-webui, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (modelo completo en GPU, sin offload):
+  - i1-IQ1_S (8,1 GB): ~9-10 GB con contexto corto.
+  - i1-IQ2_M (12,6 GB): ~14 GB.
+  - i1-IQ3_M (16,6 GB): ~18 GB.
+  - i1-Q4_K_M (22,5 GB): ~24-26 GB.
+  - i1-Q5_K_M (26,3 GB): ~28-30 GB.
+  - i1-Q6_K (30,4 GB): ~32-34 GB.
+- GPU recomendadas:
+  - RTX 4090 (24 GB): IQ3_M y Q4_K_S/Q4_K_M con contexto moderado; Q4_K_M puede requerir offload parcial de capas a CPU.
+  - RTX 3090 (24 GB): mismas opciones que la 4090, con menor throughput.
+  - A6000 / RTX A6000 (48 GB): Q6_K completa con contexto amplio.
+  - A100 40/80 GB y H100: Q6_K sin restricciones y throughput alto con vLLM (si se convierte a safetensors) o llama.cpp.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones IQ1_S a IQ3_M caben en GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super 16 GB). Las Q4 en adelante requieren 24 GB o offload a CPU.
+- Opciones de despliegue: llama.cpp (nativo para GGUF), Ollama (importando el GGUF), LM Studio, text-generation-webui, KoboldCpp y servidores compatibles con la API de OpenAI (el tag endpoints_compatible sugiere compatibilidad con endpoints). Para vLLM o TGI sería necesario convertir a safetensors, no incluido en este repo.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware, del nivel de cuantización y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| xyntrai-Sarah-mistral-2501-36B-nsfw (i1-GGUF) | 36B nominal / 8M real (discrepancia) | no disponible | no disponible | GGUF | Cuantizaciones imatrix de un fine-tuning NSFW |
-| Mistral Small 24B | 24B | 32k (segun version) | Apache 2.0 | safetensors, GGUF | Base generalista, sin fine-tuning NSFW |
-| Mistral Nemo 12B | 12B | 128k | Apache 2.0 | safetensors, GGUF | Contexto largo, uso general |
-| Modelos NSFW de la comunidad (p. ej. variantes de Llama 3 fine-tuneadas) | 8B-70B | variable | variable (a menudo restrictiva) | GGUF | Ecosistema fragmentado, sin benchmarks estandar |
+| xyntrai-Sarah-mistral-2501-36B-nsfw-i1-GGUF (este) | ~36,9B | No disponible | Apache 2.0 | GGUF (i1) | Fine-tune NSFW, 23 cuantizaciones, sin benchmarks |
+| Mistral Small 24B (referencia de familia) | ~24B | No disponible en esta ficha | Apache 2.0 (versiones recientes) | Safetensors, GGUF de terceros | Modelo generalista oficial de Mistral AI; no ajustado a NSFW |
+| Modelos NSFW de ~30-40B cuantizados por mradermacher (p. ej. variantes de Yi/Llama) | 30-40B | Variable | Variable según base | GGUF | Mismo patrón de cuantización comunitaria; calidad dependiente del fine-tune |
+| Mistral 7B / fine-tunes 7B-8B | ~7-8B | Variable | Apache 2.0 | GGUF | Mucho más ligeros (4-5 GB en Q4), menor calidad conversacional y menor huella de VRAM |
 
-La comparativa es orientativa: no se dispone de datos de rendimiento del modelo evaluado para contrastar con alternativas.
+La comparación directa con modelos oficiales es limitada porque no hay benchmarks publicados para este fine-tune; la elección frente a alternativas debe basarse en el dominio (NSFW conversacional) y en la disponibilidad de cuantizaciones, no en métricas de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Contenido NSFW: el modelo esta etiquetado como `not-for-all-audiences`; no es apto para aplicaciones orientadas al publico general ni para menores.
-- Discrepancia de parametros: el nombre indica 36B pero safetensors reporta 8.001.216 parametros y el repo ocupa 0.0 GB. Verificar el contenido real antes de cualquier despliegue.
-- Licencia no disponible: no puede confirmarse el uso comercial; el modelo base podria tener restricciones que se heredan.
-- Sin model card detallada: no hay informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
-- Riesgo de alucinacion y degradacion: las cuantizaciones IQ1 e IQ2 son muy agresivas y pueden producir incoherencias notables.
-- Sin benchmarks: no hay evidencia publicada de calidad frente a alternativas.
-- Sin soporte documentado de tool calling ni agentes: no recomendable para pipelines automatizados que requieran esas capacidades.
-- Idiomas no especificados: el rendimiento fuera del ingles (o del idioma de entrenamiento) es desconocido.
+- Contenido NSFW: el modelo está ajustado explícitamente para contenido para adultos; no es adecuado para aplicaciones dirigidas a menores ni para entornos corporativos sin moderación.
+- Sesgos conocidos: no documentados; al ser un fine-tune sin evaluación publicada, se desconocen los sesgos de género, raza o ideología introducidos por el dataset de ajuste.
+- Riesgo de alucinación: no cuantificado; como todo modelo generativo de ~37B sin benchmarks, puede producir afirmaciones falsas con fluidez, especialmente en dominios factuales.
+- Limitaciones de idioma: la model card solo declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Limitaciones de contexto: la longitud de contexto nativa no está disponible; las cuantizaciones bajas (IQ1, IQ2) degradan la coherencia en contextos largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el contenido generado puede infringir políticas de plataformas o legislación sobre material para adultos; la responsabilidad recae en el desplegador.
+- Caveat de producción: el repo pesa 394 GB por incluir todos los niveles; conviene descargar solo la cuantización necesaria. La ausencia de model card técnica del modelo base impide verificar la procedencia exacta de los datos de entrenamiento.
+- Calidad en cuantizaciones extremas: el propio autor advierte que IQ1_S es "for the desperate" y Q2_K_S "very low quality"; no usar por debajo de IQ3 para aplicaciones reales.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/xyntrai-Sarah-mistral-2501-36B-nsfw-i1-GGUF
-- Modelo base: https://huggingface.co/xyntraistudios/xyntrai-Sarah-mistral-2501-36B-nsfw
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/xyntrai-Sarah-mistral-2501-36B-nsfw-i1-GGUF
+- Modelo base: https://huggingface.co/xyntraistudios/xyntrai-sarah-mistral-2501-36B-NSFW
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/xyntrai-Sarah-mistral-2501-36B-nsfw-GGUF
+- Página de overview del autor: https://hf.tst.eu/model#xyntrai-Sarah-mistral-2501-36B-nsfw-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -54,29 +54,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Banque Coopérative et Mutualiste | Crédit Mutuel du Sud-Ouest",
-      "url": "https://www.cmso.com/reseau-bancaire-cooperatif/web/accueil",
-      "snippet": "Crédit Mutuel du Sud-Ouest : une banque de proximité engagée pour les projets de ses clients et acteurs locaux. Une agence, un …Read more"
+      "title": "kyutai: open-science AI lab",
+      "url": "https://kyutai.org/",
+      "snippet": "Kyutai is funded by Iliad Group, CMA CGM Group and Schmidt Sciences. Many thanks to our generous donors."
     },
     {
-      "title": "Espace client | Crédit Mutuel du Sud-Ouest - cmso.com",
-      "url": "https://www.cmso.com/reseau-bancaire-cooperatif/web/comptes-et-cartes/piloter-vos-comptes/espace-client",
-      "snippet": "Accédez à votre espace client du Crédit Mutuel du Sud-Ouest. Gérez vos comptes, réalisez vos opérations bancaires, faites vos …"
+      "title": "Kyutai TTS",
+      "url": "https://kyutai.org/next/tts/",
+      "snippet": "Released in July 2025, Kyutai TTS 1.6B is a model based on our research on delayed streams modeling. This technique allows the …"
     },
     {
-      "title": "Tarification des services - Professionnels | Crédit Mutuel du Sud-Ouest",
-      "url": "https://pro.cmso.com/web/reglementaire/tarification-des-services-1",
-      "snippet": "Conditions tarifaires des différentes opérations bancaires applicables aux professionnels par le Crédit Mutuel du Sud-Ouest : \"Tout …"
+      "title": "Kyutai, l’innovation en IA à la française - info.gouv.fr",
+      "url": "https://www.info.gouv.fr/actualite/kyutai-linnovation-en-ia-a-la-francaise",
+      "snippet": "Feb 10, 2025 · Mille start-up en intelligence artificielle (IA) sont implantées en France. Parmi elles, le laboratoire français Kyutai, …"
     },
     {
-      "title": "Crédit Mutuel Arkéa - Site d'offres d'emploi - recrutement.cmso.com",
-      "url": "https://www.recrutement.cmso.com/accueil.aspx",
-      "snippet": "1 day ago · Bienvenue sur le site de recrutement du Crédit Mutuel Arkéa"
+      "title": "kyutai · GitHub",
+      "url": "https://github.com/kyutai-labs",
+      "snippet": "Kyutai - Open Science AI Lab. kyutai has 36 repositories available. Follow their code on GitHub."
     },
     {
-      "title": "Comment définir votre profil épargnant - pro.cmso.com",
-      "url": "https://pro.cmso.com/web/aide/tutoriels/espace-client-web-et-appli/site-web/tuto-comment-definir-votre-profil-epargnant",
-      "snippet": "Comment mettre à jour votre profil éparngant sur pro.site_web_court ? À partir de votre espace client sur pro.site_web_court, cliquez …"
+      "title": "kyutai (Kyutai) - Hugging Face",
+      "url": "https://huggingface.co/kyutai",
+      "snippet": "Jul 6, 2024 · MuScriptor/muscriptor-large ... Multiplayer Interactive World Models with Representation Autoencoders ... kyutai/rocket …"
     }
   ]
 }

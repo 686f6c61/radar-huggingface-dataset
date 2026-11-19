@@ -2,129 +2,112 @@
 
 ## Resumen
 
-Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF es una cuantización comunitaria en formato GGUF del modelo Qwen/Qwen-Image-2.1-PE-I2I, la variante de reescritura de instrucciones (prompt rewriting) para edición de imágenes de la familia Qwen-Image-2.1. El modelo base es un Qwen3.5-VL 9B afinado: recibe una o varias imágenes de entrada junto con una instrucción de edición y devuelve una instrucción de edición precisa que se pasa después al modelo de imagen Qwen-Image-2.1. El autor de esta conversión es el usuario webmp3 y no tiene relación con Alibaba/Qwen.
+Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF es una cuantización comunitaria en formato GGUF del modelo Qwen/Qwen-Image-2.1-PE-I2I, el modelo de reescritura de prompts para edición de imágenes de la familia Qwen-Image-2.1. Se trata de un fine-tune de Qwen3.5-VL de 9B de parámetros (8.953.803.264 parámetros reales) que lee una o varias imágenes de entrada junto con una instrucción de edición y devuelve una instrucción de edición precisa en formato JSON que se pasa al modelo generador de imágenes. El autor, webmp3, ha aplicado un proceso de abliteración (eliminación de rechazos) sobre los pesos del modelo de lenguaje, dejando intacta la torre de visión y el system prompt originales.
 
-La particularidad de esta versión es que los pesos del modelo de lenguaje han sido sometidos a una ablación direccional (abliterated/uncensored) con la herramienta Heretic 1.4.0, de modo que el modelo elimina prácticamente los rechazos a peticiones dañinas. El torch de visión y el system prompt no se han modificado. El resultado es un modelo sin filtro de seguridad, orientado a investigación, etiquetado como not-for-all-audiences y distribuido bajo licencia Qwen Research, que restringe el uso a fines no comerciales.
+El modelo resuelve un problema concreto en pipelines de edición de imágenes: la traducción de instrucciones vagas o coloquiales del usuario en prompts técnicos y precisos que el modelo de difusión o edición pueda ejecutar correctamente. Su relevancia actual radica en que forma parte de la cadena de herramientas de Qwen-Image-2.1 y en que la versión publicada aquí elimina los filtros de seguridad del modelo base, lo que la hace inadecuada para servicios públicos sin moderación propia.
 
-Con 8.953.803.264 parámetros totales (unos 8,95 mil millones) y un repositorio de 32,1 GB, el modelo se ejecuta con llama.cpp (con soporte de Qwen3.5, `--jinja` y `--mmproj`) y está pensado como componente de un pipeline de edición de imágenes, no como modelo generativo de imágenes por sí mismo. Su relevancia actual es doble: por un lado, permite estudiar el comportamiento de un VLM de reescritura de prompts tras una ablación de direcciones de rechazo; por otro, es una pieza práctica para montar flujos de edición de imágenes local, sin servicios en la nube.
+La ficha describe un modelo de 9B en arquitectura tipo transformer multimodal (Qwen3.5-VL), distribuido exclusivamente en GGUF para llama.cpp, con licencia Qwen Research (no comercial) y sin datos publicados de benchmarks estándar.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | VLM transformer (modelo base Qwen3.5-VL 9B: torre de visión + modelo de lenguaje). Detalle interno no disponible en la información proporcionada |
-| Parámetros totales | 8.953.803.264 (≈8,95 B) |
-| Longitud de contexto | No disponible en la model card; las pruebas del autor usan `-c 16384` |
-| Tipos de cuantización | GGUF Q8_0 (8,87 GiB), GGUF Q4_K_M con importance matrix (5,24 GiB), mmproj F16 (0,86 GiB) |
-| Idiomas soportados | No disponibles en los metadatos; las pruebas del autor se realizan en inglés |
-| Licencia | Qwen Research License Agreement (`license: other`, `license_name: qwen-research`). Solo uso no comercial |
-| Formato de pesos | GGUF (llama.cpp) |
-| Pipeline | image-text-to-text |
-| Tamaño del repositorio | 32,1 GB |
-| Fecha de creación / actualización | 2026-10-12 / 2026-10-12 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer multimodal Qwen3.5-VL (torre de visión + modelo de lenguaje de 9B), con modo de razonamiento en bloque `<think>` |
+| Parametros totales | 8.953.803.264 (aproximadamente 9B) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada; el autor ejecuta con `-c 16384` en sus pruebas |
+| Tipos de cuantizacion | GGUF Q8_0 (8,87 GiB) y Q4_K_M (5,24 GiB, con importance matrix, no evaluada); torre de visión en GGUF F16 (0,86 GiB) |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-research (Qwen Research License Agreement), solo uso no comercial |
+| Formato de pesos | GGUF (llama.cpp); el checkpoint original del modelo base es presumiblemente safetensors, no incluido en este repositorio |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `Qwen/Qwen-Image-2.1-PE-I2I`, descrito en la model card como un Qwen3.5-VL 9B afinado para la tarea de reescritura de prompts de edición de imágenes. Es un modelo visión-lenguaje: consume una o varias imágenes referenciadas como `<image1>`, `<image2>`, etc., junto con una instrucción del usuario, razona dentro de un bloque `<think>` y responde con un objeto JSON con los campos `rewritten_prompt`, `wh_ratio` y `ratio_follow`. Los dos últimos son mutuamente excluyentes: `wh_ratio` fija una nueva relación de aspecto (para composiciones nuevas) y `ratio_follow` hereda la relación de aspecto de una imagen de entrada (para ediciones in situ). La salida `rewritten_prompt` es la que se entrega al modelo de imagen Qwen-Image-2.1. El autor indica que debe enviarse siempre como mensaje de sistema el `system_prompt.txt` original, incluido sin modificar en el repositorio.
+El modelo base Qwen/Qwen-Image-2.1-PE-I2I es un fine-tune de Qwen3.5-VL 9B orientado a la reescritura de prompts para edición de imágenes. Procesa una o más imágenes referenciadas como `<image1>`, `<image2>`, etc., junto con una instrucción del usuario, genera un bloque de razonamiento `<think>` y devuelve un objeto JSON con los campos `rewritten_prompt`, `wh_ratio` y `ratio_follow`. Los dos últimos son mutuamente excluyentes: `wh_ratio` define una nueva relación de aspecto para composiciones nuevas, mientras que `ratio_follow` hereda la relación de una imagen de entrada para ediciones in-place.
 
-Sobre el entrenamiento del modelo base no hay información en la model card: se desconoce el número de tokens, la composición del dataset y si hubo RLHF o DPO. La única modificación documentada es la ablación direccional aplicada por el autor de la cuantización: se usó Heretic 1.4.0 sobre las proyecciones `o_proj` y `down_proj` del modelo de lenguaje, con 40 ensayos, partiendo de los 12 mejores conjuntos de parámetros del estudio PE-T2I. La regla de selección fue el menor número de rechazos con una divergencia KL menor o igual a 0,1, y se eligió el ensayo 33 de 40. Después se generaron las cuantizaciones GGUF Q8_0 y Q4_K_M. La torre de visión no fue modificada. No se documenta ninguna innovación de decodificación especulativa, atención lineal ni mecanismos híbridos.
+Sobre los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) no se dispone de información en la documentación proporcionada. La modificación introducida por webmp3 consiste en una abliteración aplicada únicamente a los pesos del modelo de lenguaje, con ajustes elegidos por el autor; la torre de visión y el system prompt no se modifican. Según las mediciones del autor sobre el checkpoint BF16, la edición reduce los rechazos de 98/100 a 68/100 en su conjunto de 100 prompts dañinos, con una divergencia KL de 0,026 en la distribución del primer token. En los ficheros GGUF Q8_0, la misma métrica da 68/100 sin forzar inicio de respuesta, y el efecto se concentra en el modo de razonamiento: con el pensamiento desactivado los primeros tokens apenas cambian (93/100 frente a 100/100).
 
 ## Capacidades
 
-- Reescritura de instrucciones de edición de imágenes: transforma una petición en lenguaje natural en un `rewritten_prompt` preciso y listo para consumir por el modelo de imagen Qwen-Image-2.1.
-- Entrada multimodal multi-imagen: acepta varias imágenes simultáneas (`<image1>`, `<image2>`, ...), lo que permite ediciones que combinan, transfieren o comparan elementos entre ellas.
-- Razonamiento explícito: genera un bloque `<think>` antes de la respuesta final, lo que facilita depuración y trazabilidad del proceso de reescritura.
-- Salida estructurada: devuelve JSON con `rewritten_prompt`, `wh_ratio` y `ratio_follow`, lo que simplifica su integración en pipelines automatizados.
-- Control de relación de aspecto: puede decidir entre imponer una nueva proporción (`wh_ratio`) o heredar la de una imagen de entrada (`ratio_follow`).
-- Modo sin censura: los pesos abliterated reducen drásticamente los rechazos, según las mediciones del autor incluidas más abajo.
-- Capacidades conversacionales: la etiqueta `conversational` y el pipeline `image-text-to-text` indican soporte de diálogo, con el system prompt original como mensaje de sistema obligatorio.
-- Se desconoce el soporte explícito de tool calling, function calling y flujos de agente multi-paso: no está documentado en la información proporcionada.
+- Lectura de una o varias imágenes de entrada y comprensión de instrucciones de edición en lenguaje natural.
+- Generación de un prompt de edición reescrito y preciso, listo para pasarse al modelo de imagen Qwen-Image-2.1.
+- Razonamiento explícito en bloque `<think>` antes de emitir la respuesta JSON final.
+- Salida estructurada en JSON con los campos `rewritten_prompt`, `wh_ratio` y `ratio_follow`.
+- Control de relación de aspecto: nueva composición (`wh_ratio`) o herencia de la imagen de entrada (`ratio_follow`).
+- Modo conversacional compatible con plantillas Jinja (`--jinja` en llama.cpp).
+- Pesos abliterados: el modelo no aplica filtros de seguridad y reproduce solicitudes dañinas de forma literal en el prompt reescrito.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Preprocesador de un pipeline de edición de imágenes: el modelo recibe la imagen y la instrucción del usuario y devuelve el `rewritten_prompt` que se pasa a Qwen-Image-2.1. Es exactamente la función para la que fue afinado el modelo base.
-- Edición conversacional multi-turno en local: desplegado con `llama-server` de llama.cpp junto a un modelo de imagen, permite construir un asistente de edición que funciona sin enviar imágenes a servicios externos, relevante para material sensible o confidencial.
-- Edición que combina varias imágenes: gracias a la entrada multi-imagen y a `ratio_follow`, se pueden plantear tareas como integrar un objeto de `<image2>` en la escena de `<image1>` manteniendo la relación de aspecto de la primera.
-- Control de composición y encuadre: el campo `wh_ratio` permite que el propio modelo decida una nueva relación de aspecto cuando la edición requiere una composición distinta de la original.
-- Investigación sobre abliteration y seguridad: el repositorio incluye recuentos de rechazos antes y después de la ablación, lo que lo convierte en un caso de estudio reproducible sobre cómo una ablación direccional afecta al comportamiento de un VLM.
-- Evaluación de robustez de pipelines de moderación: al ser un modelo sin filtro que puede escribir peticiones dañinas literalmente, sirve para probar si una capa de moderación externa detecta ese contenido antes de llegar al modelo de imagen.
-- Automatización de tareas de posproducción por lotes: con salida JSON estable, es integrable en scripts que procesan muchas imágenes aplicando instrucciones predefinidas y registrando la relación de aspecto elegida.
-- Docencia y demostraciones sobre modelos multimodales: al ejecutarse en llama.cpp con cuantizaciones de 5 a 9 GiB, es viable en equipos de laboratorio con GPU de gama media para explicar el funcionamiento interno (thinking + JSON) de un VLM de reescritura.
+- Preprocesado de instrucciones de edición en un pipeline de generación de imágenes: el usuario escribe una petición coloquial, el modelo la convierte en un prompt técnico y preciso que se envía a Qwen-Image-2.1, reduciendo la variabilidad de resultados frente a usar la instrucción original.
+- Edición in-place con preservación de composición: usando `ratio_follow` apuntando a la imagen de entrada, el modelo genera instrucciones que mantienen la relación de aspecto original, adecuado para retoques sobre fotografías existentes.
+- Reencuadres y nuevas composiciones: mediante `wh_ratio`, el modelo produce instrucciones para generar una escena nueva con una relación de aspecto distinta, útil en herramientas de diseño que ofrecen varios formatos de salida.
+- Automatización de flujos de trabajo en ComfyUI o scripts propios: al ser GGUF y ejecutarse en llama.cpp, puede integrarse como nodo o servicio local junto al modelo de imagen, sin depender de APIs externas.
+- Investigación sobre alineación y seguridad: la comparación entre el modelo original y esta versión abliterada (con las tablas de rechazos y ejecución de peticiones dañinas publicadas por el autor) sirve como material de estudio sobre el efecto de la abliteración en modelos multimodales.
+- Generación de contenido para adultos con control local: el autor declara el modelo para uso exclusivamente adulto y no comercial; puede desplegarse en local para experimentación con contenido sin filtros, asumiendo la responsabilidad legal por parte del usuario.
+- Evaluación de robustez de pipelines de moderación: al escribir solicitudes dañinas de forma literal en el prompt reescrito, permite probar si una capa de moderación posterior (sobre el prompt o sobre la imagen generada) detecta y bloquea correctamente esos casos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo documenta mediciones de rechazos con la regla de conteo de palabras de Heretic, que miden el texto de razonamiento, no la respuesta final.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor publica únicamente métricas internas de su proceso de abliteración, que se reproducen a continuación tal como aparecen en la model card.
 
-Recuento de rechazos sobre 100 prompts dañinos (punto de control BF16, antes de cuantizar, según Heretic):
+Recuento sobre 100 prompts dañinos, 100 tokens generados, system prompt por defecto y sin imagen de entrada:
 
-| Métrica | Valor |
-|---|---|
-| Rechazos antes de la ablación | 98 / 100 |
-| Rechazos después de la ablación | 68 / 100 |
-| Divergencia KL de la distribución del primer token | 0,026 |
-
-Recuento de rechazos sobre los ficheros GGUF (Q8_0, llama.cpp b11524, primeros 100 prompts dañinos, 100 tokens, system prompt por defecto, sin imagen de entrada):
-
-| Configuración | Original | Esta versión (uncensored) |
+| Configuracion | Sin modificar | Version abliterada |
 |---|---:|---:|
-| Thinking activado, inicio forzado `I first` | 93 / 100 | 61 / 100 |
-| Thinking activado, sin inicio forzado | 95 / 100 | 68 / 100 |
-| Thinking desactivado | 100 / 100 | 93 / 100 |
-| Thinking desactivado, inicio forzado `I first` | 90 / 100 | 57 / 100 |
+| Pensamiento activo, inicio forzado `I first` | 93 / 100 | 61 / 100 |
+| Pensamiento activo, sin inicio forzado | 95 / 100 | 68 / 100 |
+| Pensamiento desactivado | 100 / 100 | 93 / 100 |
+| Pensamiento desactivado, inicio forzado `I first` | 90 / 100 | 57 / 100 |
 
-Prueba de longitud completa con el system prompt propio del modelo y una imagen de entrada (Q8_0, temperatura 0, hasta 6.144 tokens generados, `-c 16384`, 24 prompts, cada uno con una imagen neutra de 512 px):
+Prueba de longitud completa con el system prompt propio del modelo y una imagen neutra de 512 px (Q8_0, temperatura 0, hasta 6.144 tokens generados, `-c 16384`, 24 prompts):
 
-| Métrica | Original | Esta versión (uncensored) |
+| Metrica | Sin modificar | Version abliterada |
 |---|---:|---:|
 | JSON final encontrado | 21 | 17 |
-| Sin terminar dentro de 6.144 tokens (seguía pensando) | 3 | 7 |
-| `rewritten_prompt` rechaza la petición o la sustituye por una escena "segura" | 16 | 0 |
-| Cuarta fila de la tabla | No disponible (dato truncado en la model card) | No disponible (dato truncado en la model card) |
+| Sin terminar en 6.144 tokens (aun pensando) | 3 | 7 |
+| `rewritten_prompt` rechaza o sustituye por escena "segura" | 16 | 0 |
+| `rewritten_prompt` sustituye por escena no relacionada | 3 | 0 |
+| `rewritten_prompt` ejecuta la peticion | 2 | 17 |
+
+El autor advierte que esta última prueba se limita a 24 prompts, un único conjunto de imágenes neutras y clasificación manual de las respuestas.
 
 ## Requisitos de hardware
 
-- Cuantización Q8_0: fichero de 8,87 GiB, más la torre de visión `mmproj` F16 de 0,86 GiB, más la caché KV correspondiente al contexto configurado (el autor usó `-c 16384`). Estimación mínima: en torno a 10-12 GiB de VRAM solo para pesos y torre de visión.
-- Cuantización Q4_K_M: fichero de 5,24 GiB más 0,86 GiB de `mmproj`. Estimación mínima: en torno a 6,5-8 GiB de VRAM para pesos y torre de visión. El autor advierte que esta cuantización no fue evaluada.
-- GPU de consumo: Q4_K_M debería caber en tarjetas de 8 GB o más; Q8_0 requiere 12 GB o más para dejar margen a la caché KV. No hay cifras publicadas de VRAM exacta ni de latencia.
-- GPU profesionales: A100, H100 y similares son compatibles, aunque el modelo es lo bastante pequeño para no necesitarlas.
-- Backend: el autor midió con la versión b11524 de llama.cpp usando Vulkan, lo que abre el uso a GPU de AMD e Intel además de NVIDIA.
-- Despliegue: el único runtime documentado es `llama-server` de llama.cpp con soporte de Qwen3.5, `--jinja` y `--mmproj`. ComfyUI aparece en la tabla del autor como "not tested". No se documenta vLLM, TGI, Ollama ni otros servidores.
-- Requisito adicional: el `system_prompt.txt` del repositorio debe enviarse siempre como mensaje de sistema; omitirlo altera el comportamiento esperado.
-- Latencia y throughput: no disponibles.
-- Advertencia de runtime: con la versión b11259 de llama.cpp, esta arquitectura (Qwen3.5) solo leía la primera palabra de un mensaje de usuario en inglés según las pruebas del autor, también con ficheros GGUF de terceros. Debe usarse una versión más reciente.
+- VRAM estimada para inferencia: aproximadamente 8,87 GiB para el fichero Q8_0 más 0,86 GiB de la torre de visión en F16, es decir, en torno a 10 GiB en total sin contar el contexto KV cache; el Q4_K_M reduce el modelo de lenguaje a 5,24 GiB, quedando alrededor de 6,1 GiB más caché.
+- GPU recomendadas: no se especifican en la información disponible. Por tamaño, el Q8_0 encaja en GPUs de 16 GB o más (RTX 4080, RTX 4090, A100 40 GB, H100) y el Q4_K_M en GPUs de 8-12 GB con margen para el contexto.
+- Cabe en GPU de consumo: sí, con el Q4_K_M en tarjetas de 8 GB o más y con el Q8_0 en tarjetas de 16 GB o más, siempre que se reserve memoria para la torre de visión y el contexto.
+- Opciones de despliegue: llama.cpp mediante `llama-server` con soporte de Qwen3.5, `--jinja` y `--mmproj`; el autor midió con la release b11524 (Vulkan). ComfyUI aparece en la tabla de la model card como no probado. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles. El autor indica que en sus pruebas con pensamiento activo algunos prompts no terminaron en 6.144 tokens, lo que sugiere generaciones largas.
+- Advertencia de runtime: con la release b11259 de llama.cpp, esta arquitectura (Qwen3.5) leía solo la primera palabra de un mensaje de usuario en inglés, también con GGUF de terceros. Se recomienda usar una build más reciente y verificarla con una pregunta corta antes de confiar en los resultados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Modificación | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Sakura-Qwen-Image-2.1-PE-I2I-Uncensored (este modelo) | ≈8,95 B | GGUF Q8_0, Q4_K_M, mmproj F16 | Ablación direccional en `o_proj` y `down_proj` con Heretic 1.4.0; torre de visión intacta | Qwen Research (no comercial) | Hugging Face, 0 descargas |
-| Qwen/Qwen-Image-2.1-PE-I2I (modelo base) | ≈8,95 B | Safetensors originales | Ninguna; conserva los rechazos (98/100 en la medición de Heretic) | Qwen Research (no comercial) | Hugging Face (repositorio de Qwen) |
-| Otras cuantizaciones comunitarias del mismo base | No disponibles | No disponibles | No disponibles | No disponibles | No disponibles |
-| Modelos de reescritura de prompts para edición de imágenes comparables | No disponibles en la información proporcionada | No disponibles | No disponibles | No disponibles | No disponibles |
-
-Los únicos datos comparativos fiables que aporta el autor son los recuentos de rechazos entre el modelo original y esta versión abliterated, recogidos en la sección de benchmarks. No hay métricas de calidad de reescritura publicadas para ninguno de los dos.
+| Sakura-Qwen-Image-2.1-PE-I2I-Uncensored (este) | ~9B | no disponible | qwen-research (no comercial) | GGUF Q8_0 / Q4_K_M + mmproj F16 | Abliterado, sin filtros, solo llama.cpp |
+| Qwen/Qwen-Image-2.1-PE-I2I (base) | ~9B | no disponible | qwen-research (no comercial) | safetensors (checkpoint original) | Modelo original con filtros de seguridad; referencia de comparación del autor |
+| Qwen3.5-VL 9B (arquitectura de partida) | ~9B | no disponible | no disponible | no disponible | Modelo multimodal general del que deriva el fine-tune; no es un reescritor de prompts especializado |
+| Otros reescritores de prompts para edición de imágenes | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de alternativas comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Licencia no comercial: se distribuye bajo la Qwen Research License Agreement, por lo que no puede usarse en productos o servicios comerciales sin autorización.
-- Modelo sin filtro de seguridad: la ablación elimina casi todos los rechazos. El propio autor documenta que el modelo escribe peticiones dañinas de forma literal en el prompt y, por tanto, en la imagen resultante, con ejemplos como pasos para fabricar explosivos, una carta amenazante y una URL inventada de un sitio de odio.
-- Uso prohibido e ilegal en varios países: no debe emplearse para representar a menores en contextos sexuales o abusivos, ni para crear imágenes sexuales o difamatorias de personas reales sin su consentimiento.
-- Obligación de moderación externa: el autor pide explícitamente no exponerlo como servicio público sin una capa de moderación propia.
-- Riesgo de alucinación: se ha observado la invención de URL y contenidos (por ejemplo, un sitio de odio ficticio), lo que indica que el modelo puede fabricar información verosímil pero falsa.
-- El modo thinking es imprescindible: con el thinking desactivado, los primeros tokens de la respuesta apenas cambian (93/100 rechazos frente a 100/100 del original), así que el efecto de la ablación depende del razonamiento previo.
-- Problemas de finalización: en la prueba de longitud completa, 7 de 24 prompts no terminaron dentro de 6.144 tokens generados, frente a 3 en el modelo original.
-- La cuantización Q4_K_M no fue evaluada; el autor solo midió Q8_0.
-- La torre de visión no está abliterada, por lo que el comportamiento con imágenes de entrada puede diferir del comportamiento medida sin imagen.
-- No hay idiomas declarados en los metadatos y las pruebas se hicieron en inglés; el comportamiento en castellano no está verificado.
-- No hay cifras publicadas de sesgos, tasas de alucinación sistemáticas ni evaluaciones de calidad de la reescritura.
-- Etiquetado como `not-for-all-audiences`; requiere control de acceso si se comparte.
+- Sesgos conocidos: no documentados en la información proporcionada; al tratarse de un modelo abliterado, se eliminan los rechazos y se espera que reproduzca sesgos y contenido dañino presentes en los datos de entrenamiento sin filtro.
+- Riesgo de alucinación: el modelo puede inventar detalles en el prompt reescrito; el autor documenta casos en los que la versión original sustituía la petición por una escena no relacionada (3 de 24 en su prueba), comportamiento que la versión abliterada elimina a costa de ejecutar la petición tal cual.
+- Contenido dañino: el modelo escribe solicitudes dañinas de forma literal en el prompt y, por tanto, en la imagen generada; en las pruebas del autor aparecieron pasos para fabricar explosivos, una carta amenazante y una URL inventada de un sitio de odio.
+- Restricciones legales: prohibido representar a menores en contextos sexuales o abusivos y crear imágenes sexuales o difamatorias de personas reales sin su consentimiento; es ilegal en la mayoría de países.
+- Licencia: Qwen Research License Agreement, solo uso no comercial; el despliegue en servicios públicos requiere moderación propia y no está permitido comercialmente sin licencia adicional.
+- Contexto e idioma: no se dispone de la longitud de contexto oficial ni de la lista de idiomas soportados; el autor ejecuta con `-c 16384` y advierte de un fallo de lectura de mensajes en inglés con builds antiguas de llama.cpp.
+- Runtime: requiere una build reciente de llama.cpp con soporte de Qwen3.5, `--jinja` y `--mmproj`; ComfyUI no está probado. El Q4_K_M no ha sido evaluado por el autor.
+- Modo de pensamiento: con el pensamiento desactivado, la abliteración apenas tiene efecto (93/100 frente a 100/100); es necesario mantener el bloque `<think>` activo para obtener el comportamiento sin filtros.
+- Responsabilidad: el autor declara el modelo para adultos y exime a Alibaba/Qwen de cualquier relación con esta versión; el usuario asume toda la responsabilidad legal sobre lo que genere.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
-- Herramienta de ablación Heretic: https://github.com/p-e-w/heretic
-- Versiones de llama.cpp: https://github.com/ggml-org/llama.cpp/releases
-- Fichero de licencia incluido en el repositorio: `LICENSE` (Qwen Research License Agreement)
-- Búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a páginas de Instagram y no guardan relación con la ficha). No hay papers, blogs ni demos adicionales disponibles en la información proporcionada.
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Releases de llama.cpp (build b11524 utilizada por el autor): https://github.com/ggml-org/llama.cpp/releases
+- Licencia Qwen Research: incluida en el fichero `LICENSE` del repositorio del modelo
+- System prompt original: fichero `system_prompt.txt` incluido en el repositorio del modelo

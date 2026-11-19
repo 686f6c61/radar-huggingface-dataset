@@ -2,133 +2,100 @@
 
 ## Resumen
 
-`gemma-4-E2B-it-heretic` es una variante «abliterated» (decensurada) del modelo multimodal `google/gemma-4-E2B-it`, el miembro mas pequeno de la familia Gemma 4 de Google. Se trata de un transformer denso que acepta texto, imagen, video y audio y genera texto, con 128K tokens de contexto, 262K de vocabulario y modos de razonamiento («thinking») configurables. La edicion la firma el usuario `saidutta69` con la herramienta Heretic v1.4.0, que suprime el comportamiento de rechazo mediante ablation direccional sobre los pesos, sin fine-tuning.
+gemma-4-E2B-it-heretic es una variante "decensored" del modelo multimodal google/gemma-4-E2B-it, el miembro mas pequeno de la familia Gemma 4 de Google. El autor, saidutta69, ha aplicado una ablacion direccional de pesos (abliteration) mediante la herramienta Heretic v1.4.0 para suprimir el comportamiento de rechazo del modelo original, editando selectivamente las proyecciones de salida de atencion (attn.o_proj) y las down-projections del MLP en lugar de recurrir a fine-tuning. El resultado conserva la percepcion multimodal y el razonamiento del modelo base.
 
-El interes tecnico esta en el compromiso que documenta el propio autor: el modelo base rechazaba 99 de 100 prompts daninos y tras la edicion rechaza 17 de 100, con una divergencia KL de 0,1841, la mas alta de su coleccion (el hermano E4B se queda en 0,1215). Es decir, gana obediencia a costa de un desplazamiento de pesos notable, que puede traducirse en deriva de tono y formato.
+El modelo es denso y acepta entrada de texto, imagen, video y audio, generando texto. Incorpora Per-Layer Embeddings: pese a contar con 5.104.297.504 parametros totales y un vocabulario de 262K tokens, solo unos 2.3B parametros estan activos por token, lo que lo hace apto para despliegue en dispositivo (on-device) y GPUs de consumo. Soporta una ventana de contexto de 128K y modos de razonamiento configurables (thinking modes).
 
-El otro punto relevante es el empaquetado: los 5.104.297.504 parametros se reducen a unos 2,3B activos por token gracias a las Per-Layer Embeddings, lo que permite inferencia en GPU de consumo e incluso en movil. El GGUF publicado conserva la torre de vision SigLIP y el conformer de audio en un proyector aparte de 0,99 GB, algo poco habitual en variantes abliteradas.
+Es relevante ahora porque demuestra que es posible eliminar las negativas de un modelo fuertemente alineado (el original rechazaba 99 de 100 prompts daninos) manteniendo las capacidades multimodales intactas, a costa de una divergencia KL de 0.1841, la mas alta de la coleccion del autor. El autor advierte que existe una re-ejecucion mejor del mismo checkpoint (gemma-4-E2B-it-heretic-ara) con 14/100 rechazos y KL 0.1207.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (texto, imagen, video y audio) con Per-Layer Embeddings |
-| Parametros totales | 5.104.297.504 (5,1B) segun safetensors |
-| Parametros activos | ~2,3B por token (tablas de embedding consultadas por capa; no es un MoE) |
+| Arquitectura | Transformer denso multimodal (texto, imagen, video, audio) con Per-Layer Embeddings |
+| Parametros totales | 5.104.297.504 |
+| Parametros activos | Aproximadamente 2.3B por token (Per-Layer Embeddings) |
 | Longitud de contexto | 128K tokens |
-| Tipos de cuantizacion | GGUF: Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS; safetensors sin cuantizar. El proyector multimodal solo se distribuye en F16 |
-| Idiomas soportados | Metadatos de Hugging Face: `en`. Model card: asistente multilingue en mas de 140 idiomas |
-| Licencia | `apache-2.0` en los metadatos, con `license_link` a la licencia de Gemma 4 de Google (discrepancia sin resolver) |
-| Formato de pesos | safetensors y GGUF, mas `gemma-4-E2B-it-heretic-mmproj-F16.gguf` (0,99 GB) necesario para vision y audio |
-| Vocabulario | 262K tokens |
-| Modalidades de entrada | Texto, imagen, video, audio |
-| Modalidad de salida | Texto |
-| Modos de razonamiento | Si, modos «thinking» configurables |
-| Metodo de edicion | Ablacion direccional (abliteration) con Heretic v1.4.0, semilla `1275720981`, 550 trials |
-| Proyector multimodal | 475.729.088 elementos tensoriales; tipos `gemma4v` (SigLIP) y `gemma4a` (conformer de audio) |
-| Tamano del repositorio | 69,0 GB |
-| Pipeline declarado | `any-to-any` |
+| Tipos de cuantizacion | F16 (este repo); Q4_K_M, Q5_K_M, Q6_K y Q8_0 disponibles en el repo ARA |
+| Idiomas soportados | Ingles declarado; el autor menciona trabajo multilingue sobre 140 idiomas |
+| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) |
+| Formato de pesos | safetensors (transformers) y GGUF |
+| Tamano del repo | 69.0 GB |
+| Torre de vision y audio | SigLIP + conformer de audio, 475.729.088 elementos, en projector separado gemma4v / gemma4a (0.99 GB, F16) |
+| Pipeline | any-to-any |
+| Modelo base | google/gemma-4-E2B-it |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer denso de 5,1B parametros con Per-Layer Embeddings: el vocabulario de 262K se materializa en tablas de lookup por capa, de modo que solo unos 2,3B parametros participan en el computo por token. Esa separacion entre tablas de embedding (residentes en memoria) y computo real explica que la velocidad de decodificacion se acerque a la de un modelo de 2,3B y no a la de uno de 5,1B. La parte multimodal vive fuera del tronco: una torre de vision SigLIP y un conformer de audio, empaquetados en el fichero proyector `mmproj-F16.gguf` con los tipos de proyector `gemma4v` y `gemma4a`. El modelo acepta ademas video como entrada.
+El modelo parte de google/gemma-4-E2B-it, un transformer denso multimodal que procesa texto, imagen, video y audio y genera texto. La innovacion estructural clave son las Per-Layer Embeddings: un vocabulario de 262K tokens almacenado en tablas de lookup, de modo que los 5.1B de pesos totales se reducen a unos 2.3B activos por token durante el decode. Esto hace que la velocidad de generacion se acerque mas a la de un modelo de 2.3B que a la de uno de 5.1B, aunque las tablas de embedding deben permanecer residentes en memoria. El modelo incorpora ademas una torre de vision SigLIP y un conformer de audio, empaquetados en un projector separado.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset ni el pipeline de post-entrenamiento (RLHF, DPO u otros) del modelo base. La model card solo confirma que es una version instruct (`-it`) y que la edicion no anade conocimiento: unicamente elimina direcciones de rechazo.
-
-La innovacion concreta de esta ficha es el proceso de abliteration. Heretic v1.4.0 ejecuta una busqueda de 550 trials con `direction_index` seleccionado por capa y aplica correcciones de peso en `attn.o_proj` y `mlp.down_proj`, cada una con peso maximo, posicion del peso maximo, peso minimo y distancia del peso minimo. Los valores finales fueron: `direction_index` 17,24; `attn.o_proj` max 1,47 en posicion 22,28 y min 0,49 a distancia 17,99; `mlp.down_proj` max 1,49 en posicion 21,15 y min 0,61 a distancia 19,78. El resultado se mide con dos numeros inseparables: KL 0,1841 y 17/100 rechazos.
+El entrenamiento original de Google no se detalla en la informacion disponible. La modificacion de este repo no es un fine-tuning: se trata de una ablacion direccional ("abliteration") ejecutada con Heretic v1.4.0, un trial de 550 intentos con semilla 1275720981 y direction_index seleccionado por capa (valor global 17.24). Los pesos editados son attn.o_proj (max_weight 1.47 en posicion 22.28, min_weight 0.49 a distancia 17.99) y mlp.down_proj (max_weight 1.49 en posicion 21.15, min_weight 0.61 a distancia 19.78). El objetivo es suprimir la direccion de rechazo en el espacio de activaciones sin destruir el resto de capacidades.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modos «thinking» configurables, incluido razonamiento sin herramientas (AIME 2026 sin tools: 37,5% en el modelo base).
-- Comprension de imagen: analisis de documentos, capturas de pantalla, interfaces y diagramas (MMMU-Pro 44,2%, MATH-Vision 52,4% en el base).
-- Comprension de audio: transcripcion y entendimiento de voz gracias al conformer incluido en el proyector (CoVoST 33,47; FLEURS 0,09 en el base).
-- Entrada de video, con el mismo tronco multimodal que imagen y audio.
-- Capacidades multilingues: la model card declara mas de 140 idiomas, aunque los metadatos de Hugging Face solo listan `en` (MMMLU 67,4% en el base).
-- Generacion de codigo (LiveCodeBench v6 44,0%, Codeforces ELO 633 en el base).
-- Uso agentico: el benchmark Tau2 (24,5% en el base) sugiere evaluacion de tareas multi-paso con herramientas, pero la model card no detalla el soporte explicito de tool calling ni su sintaxis.
-- Respuesta directa sin rechazos en la mayoria de casos (17/100 rechazos frente a 99/100 del base), orientada a roleplay y escritura sin filtros.
-- Ejecucion on-device: disenado para edge, movil y GPU de consumo.
+- Generacion de texto y razonamiento, con modos de pensamiento (thinking) configurables.
+- Entrada multimodal: imagen, video y audio, ademas de texto (pipeline any-to-any).
+- Comprension de audio y transcripcion del habla mediante el conformer de audio incluido en el projector.
+- Analisis de documentos, capturas de pantalla e interfaces de usuario.
+- Capacidades multilingues: el autor menciona soporte sobre 140 idiomas, aunque la model card solo declara ingles.
+- Comportamiento "decensored": responde directamente en lugar de declinar, con 17/100 rechazos frente a 99/100 del original.
+- Orientado a roleplay y uso en local (local-llm), con etiquetas de consumer-gpu y edge.
+- No se detalla en la informacion disponible soporte explicito de tool calling ni de agentes multi-paso.
 
 ## Casos de uso
 
-- Analisis local de documentos y capturas de pantalla: el modelo recibe la imagen junto con una pregunta y devuelve texto; con 128K de contexto se pueden encadenar decenas de paginas o capturas de una misma sesion sin recortar. Adecuado porque la torre SigLIP se conserva intacta tras la abliteration.
-- Transcripcion y comprension de audio en el dispositivo: cargando el GGUF principal mas `mmproj-F16.gguf` se obtiene entrada de voz sin depender de APIs externas, util para actas de reunion o notas de voz en portatil.
-- Asistente multilingue de proposito general: la model card declara cobertura de mas de 140 idiomas, lo que permite atender consultas en varios idiomas desde una unica instancia de ~4,4 GB en Q4_K_M.
-- Roleplay y escritura creativa sin friccion: es el caso de uso declarado por los tags `roleplay` y `uncensored`; el modelo responde en lugar de declinar, lo que encaja en ficcion interactiva y proyectos de escritura asistida.
-- Procesamiento de video en el borde: analisis de fotogramas o clips cortos en hardware de consumo, sin subir el material a la nube, aprovechando que el modelo corre en 8 GB de VRAM en Q4_K_M.
-- Pipelines de evaluacion y red teaming: util para estudiar el efecto de la abliteration (comparar KL y tasa de rechazos frente al base) y para probar clasificadores de seguridad contra un modelo deliberadamente sin alineacion.
-- Prototipado de asistentes offline en movil o Apple Silicon: el consumo de ~3,4 GB en Q4_K_M y la decodificacion cercana a un 2,3B lo hacen viable en telefonos y portatiles sin GPU dedicada.
+- Analisis local de documentos y capturas de pantalla: cargando el GGUF principal junto con el projector mmproj, el modelo procesa imagenes de UI o documentos y responde sobre su contenido sin salir del dispositivo.
+- Transcripcion y comprension de audio: el conformer de audio permite transcribir y razonar sobre locuciones en local, util para notas de voz o reuniones en entornos sin conectividad.
+- Asistente multilingue en el borde: con 128K de contexto y soporte declarado de hasta 140 idiomas, sirve para conversaciones de asistencia en dispositivos con recursos limitados.
+- Roleplay y escritura creativa sin filtros: al haberse suprimido el rechazo, es adecuado para narrativa y personajes donde el modelo base declinaria; el autor lo etiqueta explicitamente para roleplay.
+- Procesamiento de video para descripcion de escenas: la entrada de video combinada con el contexto largo permite resumir o describir clips en local.
+- Prototipado en GPU de consumo: con 9.27 GB en F16 para texto y 10.26 GB con vision y audio, cabe en una RTX 3090, 4090 o 5090 de 24 GB, lo que facilita experimentacion sin infraestructura de servidor.
+- Investigacion sobre alineacion y abliteration: sirve como caso de estudio reproducible (etiqueta reproducible) para medir el equilibrio entre supresion de rechazos y divergencia KL.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados corresponden al modelo base `google/gemma-4-E2B-it`. La model card indica que la abliteration no los altera porque solo elimina direcciones de rechazo, pero no se han re-medido sobre esta variante.
-
-| Benchmark | Este modelo (heredado del base) |
-|---|---|
-| MMLU-Pro | 60,0% |
-| GPQA Diamond | 43,4% |
-| AIME 2026 (sin herramientas) | 37,5% |
-| LiveCodeBench v6 | 44,0% |
-| Codeforces ELO | 633 |
-| Tau2 | 24,5% |
-| BigBench Extra Hard | 21,9% |
-| MMMLU | 67,4% |
-| MMMU-Pro | 44,2% |
-| MATH-Vision | 52,4% |
-| MedXPertQA MM | 23,5% |
-| CoVoST | 33,47 |
-| FLEURS | 0,09 |
-
-Metrica de alineacion medida por el autor sobre esta variante:
-
-| Metrica | Este modelo | `google/gemma-4-E2B-it` |
+| Metrica | Este modelo | Modelo original (google/gemma-4-E2B-it) |
 |---|---|---|
-| Divergencia KL | 0,1841 | 0 (por definicion) |
+| Divergencia KL | 0.1841 | 0 (por definicion) |
 | Rechazos | 17/100 | 99/100 |
 
-No se especifica en la model card la metrica empleada en CoVoST ni en FLEURS (la cifra 0,09 apunta a una tasa de error, sin confirmacion).
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada solo para pesos de texto: 3,30 GB (IQ4_XS), 3,42 GB (Q4_K_M), 3,62 GB (Q5_K_M), 3,83 GB (Q6_K), 4,95 GB (Q8_0).
-- Con vision y audio hay que sumar el proyector fijo de 0,99 GB: 4,28 / 4,40 / 4,60 / 4,82 / 5,93 GB respectivamente.
-- Cache KV: aproximadamente 1 GB adicional por cada 32K de contexto, es decir, unos 4 GB extra para explotar los 128K completos.
-- GPU recomendadas segun la tabla del autor: RTX 4090/5090 (24 GB) para Q8_0; RTX 4080/5080/4060 Ti 16G para Q6_K; RTX 3060/4070/5070 (12 GB) para Q5_K_M; RTX 4060/3070 (8 GB) para Q4_K_M; GTX 1660 Super/2060/3050 laptop (6 GB) para IQ4_XS.
-- Cabe holgadamente en GPU de consumo: cualquier tarjeta con 8 GB o mas ejecuta el modelo completo con vision y audio en Q4_K_M. En 6 GB hay que bajar a IQ4_XS.
-- CPU y Apple Silicon: Q4_K_M (3,42 GB de texto, 4,40 GB con proyector) es la opcion indicada por el autor para uso sin GPU.
-- Opciones de despliegue confirmadas: `transformers` (libreria declarada) y llama.cpp/GGUF por los ficheros publicados. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de vLLM, TGI ni Ollama en la informacion disponible.
-- Latencia y throughput: no disponibles como cifra. El autor indica cualitativamente que la decodificacion se acerca a la de un modelo de 2,3B porque las tablas de embedding son lookups, aunque deben permanecer residentes en memoria.
+- VRAM estimada en F16: 9.27 GB para solo texto; 10.26 GB para texto, vision y audio (incluye el projector de 0.99 GB, de tamano fijo porque la vision y el audio no se cuantizan).
+- Anadir aproximadamente 1 GB por cada 32K de contexto adicional.
+- GPU recomendadas: RTX 3090, 4090 o 5090 (24 GB o mas) para F16.
+- En GPUs de 16 GB o menos, usar las cuantizaciones Q4_K_M a Q8_0 del repo ARA (3.42-4.95 GB solo texto; 4.40-5.93 GB con vision y audio).
+- Cabe en GPU de consumo: si, en tarjetas de 24 GB para F16 y en tarjetas de 16 GB o menos con cuantizacion.
+- Opciones de despliegue: transformers (safetensors) y llama.cpp/GGUF; el repo se declara endpoints_compatible. No se detallan otras opciones como vLLM, Ollama o TGI en la informacion disponible.
+- Latencia y throughput: no se proporcionan cifras concretas; el autor indica que la velocidad de decode se acerca a la de un modelo de 2.3B por el uso de Per-Layer Embeddings.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Alineacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `saidutta69/gemma-4-E2B-it-heretic` (este) | 5,1B totales, ~2,3B activos | 128K | KL 0,1841; 17/100 rechazos | apache-2.0 con enlace a licencia Gemma 4 (discrepancia) | GGUF multimodal completo con audio + safetensors |
-| `google/gemma-4-E2B-it` (base) | 5,1B totales, ~2,3B activos | 128K | KL 0; 99/100 rechazos | licencia Gemma 4 | safetensors; GGUF oficial no confirmado en esta informacion |
-| `saidutta69/gemma-4-E4B-it-heretic` (hermano) | no disponible | no disponible | KL 0,1215 | no disponible | variante heretic del mismo autor, con mas «headroom» |
-| Otras variantes de la coleccion (granite, Qwen) | no disponible | no disponible | KL inferior segun el autor | no disponible | mencionadas sin identificar en la model card |
-
-El eje de comparacion real no es el tamano sino el coste de la edicion: el E4B logra un KL de 0,1215 frente al 0,1841 de este E2B, lo que implica que el E2B es la variante mas «movida» de las dos y la que mas deriva cabe esperar en tono y formato.
+| Modelo | Parametros | Contexto | Rechazos | KL | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| gemma-4-E2B-it-heretic (este) | 5.1B totales / ~2.3B activos | 128K | 17/100 | 0.1841 | Apache 2.0 | HF, safetensors y GGUF F16 |
+| gemma-4-E2B-it-heretic-ara | 5.1B totales / ~2.3B activos | 128K | 14/100 | 0.1207 | Apache 2.0 | HF, incluye K-quants |
+| gemma-4-E4B-it-heretic | no disponible | 128K | no disponible | 0.1215 | Apache 2.0 | HF |
+| google/gemma-4-E2B-it (base) | 5.1B totales / ~2.3B activos | 128K | 99/100 | 0 (por definicion) | Apache 2.0 | HF |
 
 ## Limitaciones y advertencias
 
-- Deriva por abliteration: KL 0,1841 es el valor mas alto de la coleccion del autor; cabe esperar diferencias de tono, formato y coherencia frente al base. El propio autor recomienda hacer spot-check con prompts propios antes de confiar en el modelo.
-- La abliteration no anade capacidades ni conocimiento: los benchmarks son los del base y no se han re-medido, por lo que el rendimiento real de esta variante en MMLU-Pro, MMMU-Pro o LiveCodeBench es desconocido.
-- Quedan 17 de cada 100 rechazos: no es un modelo completamente sin filtros, y la tasa puede variar con el prompt.
-- Sin guardrails de seguridad: al suprimir direcciones de rechazo, el modelo puede producir contenido danino, sexual, violento o ilegal. No es apto para exposicion directa a usuarios finales sin una capa de moderacion externa.
-- Riesgo de alucinacion: inherente a la familia y no mitigado por la edicion; con entradas de imagen o audio el riesgo aumenta porque el modelo puede describir elementos que no estan en la entrada.
-- Ambiguedad de licencia: los metadatos declaran `apache-2.0`, pero el `license_link` apunta a la licencia de Gemma 4 de Google, que no es Apache. Antes de uso comercial hay que verificar que licencia prevalece; la del modelo base es la de Gemma.
-- Idiomas: los metadatos solo declaran `en`, mientras la model card afirma mas de 140 idiomas. La discrepancia no esta resuelta y no hay evaluacion por idioma publicada para esta variante.
-- Dependencia del proyector: para imagen, video o audio hay que cargar tambien `mmproj-F16.gguf`; usar solo el GGUF principal desactiva silenciosamente las entradas no textuales.
-- Coste de contexto: ~1 GB de VRAM por cada 32K adicionales; los 128K completeos requieren unos 4 GB extra sobre los pesos.
-- Validacion nula de la comunidad: 0 descargas y 0 likes en el momento de la ficha, repositorio de 69 GB y ninguna evaluacion independiente.
-- Trazabilidad: el autor no publica los 100 prompts de la prueba de rechazos ni la metodologia exacta de medida del KL, por lo que las cifras de alineacion no son reproducibles externamente a partir de la model card.
+- La divergencia KL de 0.1841 es la mas alta de la coleccion del autor, lo que implica mayor deriva en tono y formato; se recomienda verificar el modelo con prompts propios antes de usarlo en produccion.
+- El proceso de abliteration suprime el rechazo de forma no selectiva, lo que puede aumentar la probabilidad de generar contenido danino, sesgado o inapropiado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas.
+- La model card solo declara ingles como idioma; el soporte de 140 idiomas es una afirmacion del autor no verificada con benchmarks.
+- Aunque la licencia del repo es Apache 2.0, se enlaza a la licencia de Gemma 4 de Google, que puede imponer condiciones adicionales para uso comercial; conviene revisarla.
+- Para entrada de imagen o audio es obligatorio cargar tanto el GGUF principal como el projector mmproj; usar solo el GGUF principal limita el modelo a texto.
+- Este repo solo ofrece F16; las cuantizaciones ligeras estan en el repo ARA, lo que obliga a un despliegue de mayor huella de memoria si se usa este checkpoint.
+- El autor recomienda explicitamente el repo ARA (menos rechazos y menos deriva) salvo que se busque especificamente la edicion direccional clasica de rango 1.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/gemma-4-E2B-it-heretic
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Variante hermana E4B heretic: https://huggingface.co/saidutta69/gemma-4-E4B-it-heretic
+- Variante ARA recomendada: https://huggingface.co/saidutta69/gemma-4-E2B-it-heretic-ara
+- Hermano mayor E4B: https://huggingface.co/saidutta69/gemma-4-E4B-it-heretic
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
-- Licencia de Gemma 4 referenciada: https://ai.google.dev/gemma/docs/gemma_4_license
-- Fichero proyector multimodal: `gemma-4-E2B-it-heretic-mmproj-F16.gguf` en el repositorio del modelo
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

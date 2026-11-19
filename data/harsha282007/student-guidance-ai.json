@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "Harsha282007/student-guidance-ai",
+  "slug": "harsha282007-student-guidance-ai",
+  "author": "Harsha282007",
+  "url": "https://huggingface.co/Harsha282007/student-guidance-ai",
+  "created_at": "2026-11-18T22:09:50.000Z",
+  "updated_at": "2026-11-18T22:25:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "student-guidance",
+    "education",
+    "qwen",
+    "lora",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807744,
+  "storage_human": "398 MB",
+  "context_length": 32768,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harsha282007/student-guidance-ai · Hugging Face",
+      "url": "https://huggingface.co/Harsha282007/student-guidance-ai",
+      "snippet": "Model Description Student Guidance AI is an educational AI project designed to provide students with academic guidance and personalized study recommendations based on student performance information."
+    },
+    {
+      "title": "(PDF) Artificial Intelligence for Career Guidance - Current ...",
+      "url": "https://www.researchgate.net/publication/354171816_Artificial_Intelligence_for_Career_Guidance_-_Current_Requirements_and_Prospects_for_the_Future",
+      "snippet": "This research work addresses the development and evaluation of a maturity model for artificial intelligence (AI) deployment capability of manufacturing companies."
+    }
+  ]
+}

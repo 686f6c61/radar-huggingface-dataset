@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 2207,
+  "downloads_30d": 2211,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Xvid Labs - Xvid Codec",
-      "url": "https://labs.xvid.com/project/",
-      "snippet": "The Xvid codec was created to promote the adoption of open standards, namely ISO MPEG-4 video, and in order to enable the …"
-    },
-    {
-      "title": "Xvid - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Xvid",
-      "snippet": "Xvid encoded files can be written to a CD or DVD and played in some (but not all) DivX compatible DVD players and media players. …"
-    },
-    {
-      "title": "Xvid - Download",
-      "url": "https://www.xvid.com/download/",
-      "snippet": "Download Section. Get the Xvid Software for your Platform here and be ready to start out in minutes. Easy installation. Xvid is …"
-    },
-    {
-      "title": "Decision 4B v1.1 vs MiMo-V2-Omni: Benchmarks & Cost - BenchLM.ai",
-      "url": "https://benchlm.ai/compare/decision-4b-v11-vs-mimo-v2-omni",
-      "snippet": "vor 3 Tagen ... The coding row is not comparable on the public lane: at least one model is not measured or not ranked there. Coding scores combine specific ..."
-    },
-    {
-      "title": "Xvid — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/XVID",
-      "snippet": "Xvid est une implémentation de la norme MPEG-4 Part 2 de codage vidéo et distribué sous GNU GPL. À l'origine basé sur …"
-    }
-  ]
+  "sources": []
 }

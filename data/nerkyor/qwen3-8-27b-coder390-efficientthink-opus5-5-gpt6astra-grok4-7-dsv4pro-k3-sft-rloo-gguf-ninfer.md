@@ -2,129 +2,111 @@
 
 ## Resumen
 
-Este repositorio contiene el modelo Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO en formato GGUF y NInfer, publicado por el usuario nerkyor. Se trata de un modelo de 27.320.697.856 parámetros derivado de Qwen3.8-27B, que ha pasado por varias rondas alternas de SFT y RLOO sobre una base ya post-entrenada con SFT y SimPO. La licencia es apache-2.0 y solo se declaran los idiomas inglés y chino.
+Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO es un modelo de lenguaje de 27.320 millones de parámetros desarrollado por el usuario nerkyor sobre la base oficial Qwen3.8-27B de Qwen. El modelo ha pasado por varias rondas de post-entrenamiento: SFT y SimPO sobre la base original, y posteriormente SFT y RLOO (REINFORCE Leave-One-Out) en esta iteración. Su objetivo declarado es corregir un fallo concreto del modelo original: la tendencia a seguir re-derivando una respuesta ya obtenida hasta agotar el límite de 94.000 tokens sin emitir una respuesta final.
 
-El problema que aborda es concreto: el modelo base, tras alcanzar una respuesta local correcta, seguía re-derivando con patrones del tipo Wait / Actually hasta agotar el contexto de 94K sin emitir respuesta final. El objetivo de entrenamiento, denominado EfficientThink, consiste en eliminar esas colas improductivas de razonamiento sin penalizar el razonamiento largo cuando es necesario. El resultado declarado por el autor es Coder390, con puntuaciones de 178/198 en GPQA, 445/500 en MMLU y 90/100 en LCB en su versión FP8 dinámica.
+Este repositorio concreto es la distribución GGUF independiente, con ocho paquetes bajo `GGUF/` (Q2, Q3 y Q4 LynnStyle con cabezas MTP Q4_0 integradas; las mismas tres en variante -Q8MTP; Q6_K; y Q8_0) y los paquetes NInfer correspondientes con visión integrada. El modelo es multimodal (pipeline `image-text-to-text`), soporta decodificación especulativa mediante cabezas MTP y se distribuye bajo licencia Apache 2.0. Los idiomas declarados son inglés y chino.
 
-El repositorio incluye tres cuantizaciones (Q2 LynnStyle, Q6_K y Q8_0) con cabezal MTP integrado para decodificación especulativa, lo que permite velocidades declaradas de entre 174,8 y 521,0 tokens por segundo según el motor y el ancho de contexto. Es relevante para quien necesite ejecutar un modelo de razonamiento y código en hardware de consumo, aunque el modelo tiene 0 descargas y 0 likes, y todos los resultados proceden del propio autor.
+La relevancia actual del modelo reside en su enfoque en la eficiencia del razonamiento: los datos publicados muestran reducciones drásticas en la longitud de cadena de pensamiento respecto al baseline (por ejemplo, en GPQA el P90 baja de 50.577 a 27.156 tokens en Q2 LynnStyle) manteniendo puntuaciones competitivas en GPQA, MMLU y LiveCodeBench.
 
 ## Especificaciones técnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no la detalla; el modelo deriva de Qwen3.8-27B) |
-| Parámetros totales | 27.320.697.856 (incluye el cabezal MTP, según el denominador de BPW usado por el autor) |
-| Parámetros activos | no aplica (no se indica que sea un modelo MoE) |
-| Longitud de contexto | aproximadamente 94.000 tokens (límite de "94K" citado en la model card) |
-| Tipos de cuantización | Q2 LynnStyle (BPW 3,89, con cabezal MTP Q4 integrado), Q6_K (BPW 6,79) y Q8_0 (BPW 8,51); el repositorio principal añade BF16, FP8 estático y dinámico, NVFP4, NInfer W4A4 e INT8 W8A8 |
-| Idiomas soportados | inglés (en) y chino (zh) |
+| Arquitectura | Transformer (base Qwen3.8-27B) con cabezas MTP para decodificación especulativa; torre de visión multimodal |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 100K en las evaluaciones publicadas; límite de razonamiento de 94.208 tokens (max_tokens) |
+| Tipos de cuantizacion | GGUF: Q2 LynnStyle, Q3 LynnStyle-16G (IQ3_XXS + corrección imatrix + GSQ-RCO), Q3 LynnStyle, Q4 LynnStyle, Q6_K, Q8_0, variantes -Q8MTP; NInfer; en el repo principal también BF16, FP8 estático, NVFP4, W4A4, INT8 W8A8, INT4 W4A16 |
+| Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (carpeta `GGUF/`) y NInfer (carpeta `GGUF-NInfer/`) |
+| Formato de pesos | GGUF (llama.cpp), paquetes NInfer (.ninfer), safetensors BF16 (torre de visión); repo de 540,3 GB |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo, solo su linaje. El punto de partida es Qwen3.8-27B oficial (177/198 en GPQA, 444/500 en MMLU y 83/100 en LCB), sobre el que se aplicó un SFT con SimPO110 que dio lugar a la base EfficientThink (171/442/89). Sobre esa base se encadenaron un SFT de continuación K3, un SFT de segunda semana (week2dose, update-225), una primera ronda de RLOO con 182 grupos, otra ronda de SFT (merge-sft-100) que produjo sft-base-rloo (177/448/90) y una segunda ronda de RLOO con 172 grupos, que da el resultado final Coder390 (178/445/90). Los conjuntos de datos de respuesta correcta y las trayectorias de profesor se atribuyen, según la nomenclatura del autor, a Opus5.5 y GPT6Astra, mientras que DSV4Pro y K3 aportaron trayectorias y K3 realizó además la revisión del valor en RLOO.
+El modelo parte de Qwen3.8-27B, un transformer denso de 27.320 millones de parámetros. Sobre esa base se aplicó primero SFT y SimPO (en la iteración anterior, Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2) y después, en esta versión, varias rondas adicionales de SFT y RLOO. El objetivo del post-entrenamiento es corregir el comportamiento de "no parar" del modelo original, que seguía re-derivando respuestas ya obtenidas hasta el tope de contexto sin concluir.
 
-El entrenamiento con RLOO muestreó 8 trayectorias por problema y conservó únicamente los grupos que contenían trayectorias correctas e incorrectas (los grupos con todas correctas se descartaron). Los grupos con 0 o 1 trayectoria correcta recibieron una trayectoria corta de profesor revisada, que sustituyó a la trayectoria incorrecta más corta (27 grupos). El conjunto final quedó en 172 grupos y 1.376 trayectorias: 859 correctas y 517 incorrectas, incluidas 68 respuestas vacías. La función de recompensa penaliza solo las trayectorias incorrectas, de modo que el razonamiento largo correcto sigue recibiendo recompensa positiva y no se suprime. En cuanto a inferencia, los paquetes GGUF y NInfer incorporan un cabezal MTP (multi-token prediction) para decodificación especulativa; el paquete Q2 LynnStyle usa MTP Q4 integrado, no Q8. La visión no está incluida en estos paquetes y requiere un mmproj externo.
+La arquitectura incorpora cabezas MTP (Multi-Token Prediction) integradas en los GGUF para decodificación especulativa, con aceptación medida entre 0,488 y 0,597 según configuración. La cuantización Q3 LynnStyle-16G emplea corrección con importance matrix y refinamientos GSQ-RCO limitados a mismo byte para no alterar el tamaño. Los paquetes NInfer incluyen la torre de visión Q8 integrada; para llama.cpp multimodal se usa un mmproj Q8_0 separado. No se dispone de datos sobre el número de tokens de entrenamiento ni la composición del dataset.
 
 ## Capacidades
 
-- Generación de texto conversacional, con pipeline declarado `text-generation` y etiqueta `conversational`.
-- Razonamiento prolongado con modo de pensamiento: la model card reporta percentiles de tokens de razonamiento (P50, P70 y P90) para GPQA, MMLU y LCB.
-- Codificación reforzada: la parte "Coder" del nombre indica entrenamiento específico para código, con 90-91/100 en LCB en todas las cuantizaciones publicadas.
-- Matemáticas y razonamiento científico: evaluado con MMLU y GPQA en conjuntos completos de 100K.
-- Decodificación especulativa mediante cabezal MTP integrado en cada paquete de cuantización.
-- Capacidades multilingües limitadas a inglés y chino según el campo `language` de la model card.
-- Modelo etiquetado como `uncensored`, lo que implica un filtrado de rechazos reducido respecto a un modelo alineado convencional.
-- Soporte de visión solo en el repositorio principal mediante mmproj externo, no en los paquetes GGUF/NInfer de este repositorio.
-- No se documenta en la información disponible soporte de tool calling, function calling ni orquestación de agentes.
+- Generación de texto y razonamiento con modo de pensamiento eficiente (efficient-thinking), con longitudes de razonamiento acortadas respecto al baseline.
+- Programación y resolución de problemas de código (evaluado en LiveCodeBench).
+- Matemáticas y razonamiento científico (evaluado en GPQA y MMLU).
+- Multimodal: entrada de imagen y texto (pipeline `image-text-to-text`), con torre de visión en paquetes NInfer o mmproj en llama.cpp.
+- Decodificación especulativa mediante cabezas MTP integradas en los GGUF.
+- Modelo "uncensored" según los tags del autor (sin filtrado declarado en el post-entrenamiento).
+- Capacidades multilingües limitadas a inglés y chino.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local: las cuantizaciones Q2 LynnStyle (13,28 GB) y Q6_K (23,18 GB) permiten ejecutar un modelo de 27B con 90/100 en LCB en una estación de trabajo con una sola GPU de 24-48 GB, integrándolo en el editor mediante llama.cpp.
-- Razonamiento científico de contexto largo: con 94.000 tokens de ventana, el modelo puede procesar artículos completos o documentación extensa y resolver preguntas tipo GPQA sin truncar el material de partida.
-- Sustitución de APIs en entornos con requisitos de privacidad: al ser pesos abiertos con licencia apache-2.0, puede desplegarse en infraestructura propia sin enviar código o datos a terceros.
-- Generación de código en pipelines de CI/CD: la cuantización Q8_0 con MTP alcanza 190,8 tok/s en llama.cpp con C4, lo que hace viable la generación automática de parches y tests en un runner con GPU.
-- Servicio de alto rendimiento en NInfer: con NInfer + C8 + MTP se declaran 486,3 tok/s en Q8 y 521,0 tok/s en Q2, cifras adecuadas para servir varios usuarios concurrentes en una sola GPU.
-- Investigación sobre control del razonamiento: el modelo es un caso de estudio del problema de no detenerse, con datos de RLOO (172 grupos, 1.376 trayectorias) y una comparativa explícita de percentiles de tokens de pensamiento frente al modelo original.
-- Evaluación comparativa de cuantizaciones: permite medir la degradación real de GPQA, MMLU y LCB entre Q2, Q6_K y Q8_0, con MMLU cayendo de 448 (Q6_K) a 433 (Q2 LynnStyle).
-- Aplicaciones en chino e inglés: la cobertura declarada se limita a estos dos idiomas, por lo que cualquier despliegue en otras lenguas requiere validación previa.
+- Razonamiento científico con presupuesto de tokens acotado: el modelo reduce la longitud de razonamiento en GPQA (P90 de 27.156 tokens en Q2 frente a 50.577 del baseline), lo que permite desplegarlo en pipelines con límites de latencia y coste donde el original agotaba el contexto.
+- Generación de código en producción: las puntuaciones de LiveCodeBench (89-92/100 en las variantes Q2-Q4) lo hacen adecuado para autocompletado, revisión y generación de tests en entornos de CI/CD con llama.cpp o NInfer.
+- Despliegue en GPU de consumo de 16 GB: la variante Q3 LynnStyle-16G (unos 12,4 GiB, BPW 3,89) está recomendada explícitamente para 16 GB de VRAM, permitiendo inferencia local de un modelo de 27B.
+- Servicio de alto throughput con decodificación especulativa: con MTP integrado y NInfer se alcanzan 521,0 tok/s agregados a C8 (Q2, límite de 512 tokens) y 191,8 tok/s a C4 en llama.cpp (Q3, límite de 4096 tokens), adecuado para endpoints concurrentes.
+- Procesamiento de documentos con imágenes: al ser image-text-to-text, puede extraer y razonar sobre contenido de capturas, diagramas o documentos escaneados usando el mmproj o los paquetes NInfer con visión integrada.
+- Asistente conversacional multirretorno en inglés o chino con contexto largo (hasta 100K tokens), útil para análisis de repositorios completos o conversaciones extensas.
+- Investigación sobre eficiencia de razonamiento: sirve como caso de estudio de cómo SFT + RLOO modifican la distribución de longitud de cadena de pensamiento manteniendo precisión.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor, con conjuntos completos bajo el mismo protocolo de 100K en llama.cpp con C4.
+| Modelo / variante | GPQA | MMLU | LCB | P50/P70/P90 GPQA (tokens) |
+|---|---|---|---|---|
+| Baseline Qwen3.8 27B (FP8) | 177/198 | 444/500 | 83/100 | 5.299 / 12.607 / 50.577 |
+| GGUF Q2 LynnStyle | 177/198 | 433/500 | 90/100 | 2.989,5 / 8.923,8 / 27.156,1 |
+| GGUF Q3 LynnStyle-16G | 172/198 | 427/500 | 90/100 | 3.811 / 11.404 / 31.418 |
+| GGUF Q3 LynnStyle | 173/198 | 449/500 | 92/100 | 3.125,5 / 7.265,2 / 24.343,1 |
+| GGUF Q4 LynnStyle | 175/198 | 448/500 | 89/100 | 2.951,0 / 8.159,3 / 25.649,0 |
 
-| Versión | GPQA (/198) | MMLU (/500) | LCB (/100) |
-|---|---:|---:|---:|
-| Qwen3.8-27B oficial (FP8) | 177 | 444 | 83 |
-| EfficientThink base (SFT + SimPO) | 171 | 442 | 89 |
-| sft-base-rloo | 177 | 448 | 90 |
-| Coder390 (FP8 dinámico) | 178 | 445 | 90 |
-| Coder390 Q6_K (este repositorio) | 174 | 448 | 91 |
-| Coder390 Q8_0 (este repositorio) | 171 | 443 | 90 |
-| Coder390 Q2 LynnStyle (este repositorio) | 177 | 433 | 90 |
+Velocidad publicada (protocolos no comparables entre sí):
 
-Tokens de razonamiento (P50 / P70 / P90):
-
-| Versión | GPQA | MMLU | LCB |
+| Variante | Runtime | Config | Throughput |
 |---|---|---|---|
-| Coder390 Q2 LynnStyle | 2.989,5 / 8.923,8 / 27.156,1 | 181 / 326,3 / 1.020,5 | 5.656,5 / 17.835,8 / 40.067,3 |
-| Coder390 Q8_0 | 3.102,5 / 7.971 / 28.891,6 | 164 / 291 / 741 | 4.098,5 / 16.087,8 / 39.135,5 |
-| Qwen3.8-27B oficial (FP8), GPQA | 5.299 / 12.607 / 50.577 | no disponible | no disponible |
+| Q2 LynnStyle | NInfer, MTP Q4 | C8, 512 tokens | 521,0 tok/s agregados |
+| Q2 LynnStyle | llama.cpp, MTP Q4 | C4, 4096 tokens | 174,8 tok/s agregados |
+| Q3 LynnStyle-16G | llama.cpp, MTP fusionado | C1/C2/C4, 4096 tokens | 31,9 / 46,6 / 78,1 tok/s (aceptación 0,597) |
+| Q3 LynnStyle-16G | NInfer | C1/C2/C4/C8, 512 tokens | 33,5 / 44,7 / 77,4 / 127,0 tok/s (aceptación 0,488) |
+| Q3 LynnStyle | NInfer, MTP Q4 | C8, 512 tokens | 512,3 tok/s agregados |
+| Q3 LynnStyle | llama.cpp, MTP Q4 | C4, 4096 tokens | 191,8 tok/s agregados |
+| Q4 LynnStyle | NInfer, MTP Q4 | C8, 512 tokens | 436,4 tok/s agregados |
+| Q4 LynnStyle | llama.cpp, MTP Q4 | C4, 4096 tokens | 81,1 tok/s agregados |
 
-Rendimiento de inferencia declarado:
-
-| Configuración | Tokens por segundo |
-|---|---:|
-| Q2 LynnStyle, NInfer + C8 + MTP (agregado) | 521,0 |
-| Q2 LynnStyle, llama.cpp MTP C4 | 174,8 |
-| Q8_0, NInfer + C8 + MTP (agregado) | 486,3 |
-| Q8_0, llama.cpp Q8 MTP C4 | 190,8 |
-
-No hay resultados de benchmarks independientes ni publicados por terceros en la información disponible.
+Tamaños: Q2 LynnStyle 13.276.009.792 bytes (BPW 3,89); Q3 LynnStyle-16G 13.276.009.920 bytes (~12,4 GiB, BPW 3,89); Q3 LynnStyle 17.303.770.432 bytes (BPW 5,07); NInfer con visión añade entre 0,3 y 0,5 GB según variante.
 
 ## Requisitos de hardware
 
-- Tamaño de pesos por cuantización (según el autor): Q2 LynnStyle 13.276.009.792 bytes (13,28 GB) en GGUF y 13.272.798.720 bytes (13,27 GB) en NInfer; Q6_K 23.177.516.640 bytes (23,18 GB) en GGUF; Q8_0 29.069.202.688 bytes (29,07 GB) en GGUF y 29.065.983.488 bytes (29,07 GB) en NInfer.
-- Las cifras anteriores son solo pesos. Hay que añadir el coste de la caché KV para los 94.000 tokens de contexto, que la model card no cuantifica, por lo que la VRAM total necesaria no está disponible.
-- Estimación orientativa a partir del tamaño de archivo: Q2 LynnStyle cabe en GPUs de 16-24 GB (RTX 4080, RTX 4090, RTX 5090) con contexto moderado; Q6_K encaja justo en 24 GB o con holgura en 32-48 GB (RTX 6000 Ada, L40S, A6000); Q8_0 requiere 32-48 GB o más (A100 40 GB, L40S 48 GB, H100).
-- Para contexto cercano a 94K habrá que reservar VRAM adicional para la caché KV y reducir el tamaño de lote; no se proporcionan medidas concretas.
-- Motores de despliegue: llama.cpp (referenciado explícitamente en las pruebas) y NInfer, el runtime asociado a la librería declarada en Hugging Face. Los pesos GGUF son compatibles con el ecosistema llama.cpp, pero vLLM y TGI no consumen GGUF, de modo que para esos motores habría que usar los pesos BF16, FP8, NVFP4, W4A4 o INT8 W8A8 del repositorio principal.
-- Decodificación especulativa: cada paquete incorpora su cabezal MTP (Q4 en Q2 LynnStyle, Q8 en Q6_K y Q8_0), lo que permite activar decodificación especulativa sin modelo borrador externo.
-- Rendimiento declarado: 521,0 tok/s (Q2, NInfer, C8, MTP), 486,3 tok/s (Q8_0, NInfer, C8, MTP), 190,8 tok/s (Q8_0, llama.cpp, MTP, C4) y 174,8 tok/s (Q2, llama.cpp, MTP, C4). No se especifican la GPU ni el hardware usados en estas mediciones.
-- El repositorio completo ocupa 117,7 GB, por lo que conviene descargar solo la carpeta de la cuantización necesaria.
+- VRAM estimada: Q2 LynnStyle ~13,3 GB; Q3 LynnStyle-16G ~12,4 GiB (pensada para 16 GB de VRAM); Q3 LynnStyle ~17,3 GB; Q4 LynnStyle y superiores, proporcionalmente mayores (Q6_K y Q8_0 no tienen cifras publicadas).
+- GPU recomendadas: RTX PRO 6000 Blackwell (usada en las mediciones del autor); para Q3-16G, cualquier GPU con 16 GB o más.
+- Cabe en GPU de consumo: sí, Q2 y Q3 LynnStyle-16G en tarjetas de 16 GB; el resto requiere más VRAM o descarga a CPU.
+- Opciones de despliegue: llama.cpp (con `--mmproj GGUF/mmproj-Qwen3.8-27B-Q8_0.gguf` para multimodal), NInfer (paquetes .ninfer con visión integrada), y otros runtimes compatibles con GGUF.
+- Latencia y throughput: ver tabla de benchmarks; mediciones en una sola RTX PRO 6000 Blackwell, con protocolos corto (512 tokens) y largo (4096 tokens) no comparables entre sí.
 
 ## Comparativa con modelos similares
 
-La información disponible solo permite comparar las distintas versiones del propio linaje y las cuantizaciones del mismo modelo. No se aportan datos de modelos externos de la misma categoría.
-
-| Modelo | Cuantización | Tamaño | Contexto | GPQA / MMLU / LCB | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | GPQA | MMLU | LCB | Licencia |
 |---|---|---|---|---|---|---|
-| Coder390 GGUF (este repositorio) | Q2 LynnStyle + MTP Q4 | 13,28 GB | ~94K | 177 / 433 / 90 | apache-2.0 | Hugging Face |
-| Coder390 GGUF (este repositorio) | Q6_K + MTP Q8 | 23,18 GB | ~94K | 174 / 448 / 91 | apache-2.0 | Hugging Face |
-| Coder390 GGUF (este repositorio) | Q8_0 + MTP Q8 | 29,07 GB | ~94K | 171 / 443 / 90 | apache-2.0 | Hugging Face |
-| Coder390 FP8 dinámico | FP8 | no disponible | ~94K | 178 / 445 / 90 | apache-2.0 | repositorio principal |
-| EfficientThink base (SFT + SimPO) | FP8, según el linaje | no disponible | no disponible | 171 / 442 / 89 | apache-2.0 | Hugging Face (modelo base) |
-| Qwen3.8-27B oficial | FP8 | no disponible | no disponible | 177 / 444 / 83 | no disponible | Hugging Face (Qwen/Qwen3.8-27B) |
+| Este modelo (Q4 LynnStyle) | 27,3B | 100K | 175/198 | 448/500 | 89/100 | Apache 2.0 |
+| Baseline Qwen3.8-27B (FP8) | 27,3B | 100K | 177/198 | 444/500 | 83/100 | no disponible en la información |
+| Qwen3.8-27B-EfficientThink base (SFT+SimPO) | 27,3B | 100K | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de otros modelos comparables de terceros en la información proporcionada; los únicos puntos de comparación publicados son las iteraciones previas del propio autor.
 
 ## Limitaciones y advertencias
 
-- Todos los benchmarks son autoinformados por el autor, sin verificación externa ni resultados de terceros en la información disponible.
-- El modelo tiene 0 descargas y 0 likes, y el repositorio se creó el 2026-10-06, fecha posterior a la actual, lo que dificulta la validación independiente de su calidad y de la reproducibilidad de las cifras.
-- La nomenclatura del modelo y de su linaje hace referencia a versiones que no constan como modelos publicados (Opus5.5, GPT6Astra, Grok4.7, DSV4Pro, K3), por lo que la procedencia real de los datos de profesor no es verificable con la información disponible.
-- Los datos de entrenamiento RLOO incluyen 517 trayectorias incorrectas y 68 respuestas vacías sobre un total de 1.376, lo que indica que el problema de respuestas vacías persiste parcialmente en el conjunto de entrenamiento.
-- La ventana de 94K es amplia, pero no se documenta cómo se comporta la caché KV ni la calidad de recuperación a esa longitud.
-- Idiomas declarados únicamente inglés y chino; el rendimiento en castellano u otras lenguas no está documentado y debe validarse antes de usarlo en producción.
-- La etiqueta `uncensored` implica un filtrado de contenido reducido: requiere moderación externa si se expone a usuarios finales.
-- La cuantización Q2 LynnStyle reduce MMLU de 444 (modelo original FP8) a 433, aunque mantiene GPQA en 177 y sube LCB a 90; no es un sustituto equivalente de la versión FP8.
-- La visión no está incluida en los paquetes de este repositorio (requiere mmproj externo), por lo que cualquier caso de uso multimodal necesita artefactos adicionales.
-- No se documenta explícitamente soporte de tool calling ni de function calling, lo que limita su uso directo en arquitecturas de agentes sin capas de orquestación propias.
-- La licencia apache-2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte, y la atribución de datos de entrenamiento a modelos de terceros puede plantear dudas sobre los términos de uso subyacentes.
+- El modelo es una modificación no oficial de Qwen3.8-27B realizada por un autor individual (nerkyor); no cuenta con validación independiente.
+- Los benchmarks publicados proceden del propio autor y emplean protocolos heterogéneos (corto vs. largo, con y sin MTP externo), por lo que no son directamente comparables entre filas.
+- Etiquetado como "uncensored": no se declaran filtros de seguridad, lo que implica riesgo de generar contenido inapropiado o dañino en producción.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado ni declarado.
+- Riesgo de alucinación no cuantificado; no se publican evaluaciones de veracidad.
+- El fallo original de "no parar" se mitiga pero persiste parcialmente: el P90 de razonamiento en LCB llega a 40.067 tokens en Q2, cerca del límite de 94.208.
+- La licencia Apache 2.0 permite uso comercial, pero las condiciones de los datos de entrenamiento del post-entrenamiento no se detallan.
+- El repositorio ocupa 540,3 GB; conviene descargar solo el paquete GGUF o NInfer necesario.
+- El nombre del modelo agrega referencias a terceros (Opus, GPT, Grok, DeepSeek) que no implican afiliación ni destilación verificada.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
-- Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
-- Repositorio principal (BF16, FP8, NVFP4, NInfer W4A4, INT8 W8A8, GGUF y otros niveles): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
-- Repositorio principal en ModelScope: https://modelscope.cn/models/Merkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
-- Modelo Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio principal (BF16, FP8, NVFP4, NInfer W4A4, INT8, INT4): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Modelo base del post-entrenamiento: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

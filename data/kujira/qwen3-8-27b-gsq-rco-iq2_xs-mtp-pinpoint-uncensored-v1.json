@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 2631,
+  "downloads_30d": 2654,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -49,5 +49,31 @@
   "renamed_to": "Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-CHiPS-Abliterated-v1",
   "renamed_at": "2026-11-11T03:09:42.298Z",
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Kujira - cave-boirebon.fr",
+      "url": "https://cave-boirebon.fr/fr/brand/133-kujira",
+      "snippet": "Kujira est une ôde au terroir unique des îles d'Okinawa, l'Archipel du Royaume Ryukyu. La distillerie Kumesen Syuzo, fondée en …"
+    },
+    {
+      "title": "Kujira Single Grain 5 ans, Le whisky japonais élaboré à partir de riz",
+      "url": "https://allspiritsandmore.fr/kujira-single-grain-5-ans-le-whisky-japonais-elabore-a-partir-de-riz/",
+      "snippet": "Oct 26, 2023 · Les whiskies japonais Kujira, originaires d’Okinawa, sont un trésor unique, étant les premiers whiskies élaborés à …"
+    },
+    {
+      "title": "Kujira — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kujira",
+      "snippet": "Wakako Matsumoto (松本 和香子, Matsumoto Wakako?, née le 1er avril 1960), plus connue sous le nom de Kujira (くじら, Kujira?), …"
+    },
+    {
+      "title": "KUJIRA 10 Ans Ryukyu Whisky 43% 70cl",
+      "url": "https://www.prestigewhisky.fr/whisky-japonais/4092-kujira-10-ans-ryukyu-4955066435067.html",
+      "snippet": "KUJIRA 10 Ans est un single grain japonais produit à base de riz de type indica fermenté à l'aide de levures et de koji noir. Ce …"
+    },
+    {
+      "title": "Kujira - 20 ans - La Cave de Bacchus",
+      "url": "https://www.moncaviste.fr/produit/kujira-20-ans/",
+      "snippet": "Nov 8, 2026 · La tradition du Whisky Japonais comme vous ne l’avez jamais goûté… On pensait avoir tout découvert en matière de …"
+    }
+  ]
 }

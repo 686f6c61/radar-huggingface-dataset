@@ -128,7 +128,7 @@
   ],
   "likes": 3399,
   "downloads_30d": 87673,
-  "trending_score": 22,
+  "trending_score": 20.5,
   "parameters": 33697781029,
   "parameters_human": "33.70B",
   "storage_bytes": 67532739306,
@@ -149,19 +149,19 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
-      "url": "https://www.nvidia.com/fr-fr/drivers/",
-      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
-    },
-    {
-      "title": "Leader mondial du calcul informatique et de l’intelligence ... - NVIDIA",
-      "url": "https://www.nvidia.com/fr-fr/",
-      "snippet": "NVIDIA est devenu le pionnier du calcul accéléré afin de relever des défis inédits que personne d'autre ne peut résoudre. Notre …"
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
     },
     {
       "title": "Nvidia - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Nvidia",
-      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
     },
     {
       "title": "Nvidia — Wikipédia",
@@ -169,9 +169,9 @@
       "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
     },
     {
-      "title": "Téléchargements de pilotes NVIDIA",
-      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
-      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
     }
   ]
 }

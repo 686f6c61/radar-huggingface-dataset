@@ -2,55 +2,60 @@
 
 ## Resumen
 
-NVIDIA Nemotron 3.5 Bolt 74B-A9B es un modelo de vision-lenguaje (VLM) de pesos abiertos desarrollado por NVIDIA, disenado para ejecutar tareas agenticas cotidianas en local. Se trata de la version en precision completa (BF16), pensada principalmente para personalizacion y post-entrenamiento en lugar de inferencia directa en produccion. Su arquitectura combina un backbone hibrido Mamba-2 y Transformer con un LatentMoE, al que se anade un codificador visual C-RADIO v4-H.
+NVIDIA Nemotron 3.5 Bolt 74B-A9B es un modelo de lenguaje y visión (VLM) desarrollado por NVIDIA, diseñado para ejecutar tareas agénticas cotidianas en local. Se trata de la versión en precisión completa (BF16) de la familia Bolt, pensada principalmente para personalización y post-entrenamiento más que para inferencia directa en producción. La versión de 24 GB del mismo modelo emplea cuantización nativa de 2 bits para caber en memoria junto a otras aplicaciones.
 
-El modelo cuenta con 74.885.081.096 parametros totales (aproximadamente 74B) de los cuales solo 9B estan activos por token, gracias a su diseno de mezcla de expertos. Soporta hasta 262.144 tokens de contexto (256K) y acepta como entrada texto, imagenes y video, devolviendo texto como salida. Esta disponible en seis idiomas: ingles, castellano, frances, aleman, italiano y japones.
+El modelo combina una arquitectura híbrida Mamba-2–Transformer con un LatentMoE (mezcla de expertos latente) y un codificador visual C-RADIO v4-H. Cuenta con 74 000 millones de parámetros totales y 9 000 millones activos, lo que lo sitúa en la categoría de MoE disperso de gran escala pero con coste de inferencia contenido. Soporta hasta 256 000 tokens de contexto y acepta entradas de texto, imagen y vídeo.
 
-Es relevante ahora porque NVIDIA ofrece junto al modelo un ecosistema completo: recetas de despliegue en vLLM, decodificacion especulativa mediante un drafter LiLiCorr sobre DFlash, datasets de pre-entrenamiento y post-entrenamiento publicados, y una variante cuantizada de 24GB con cuantizacion nativa de 2 bits para ejecucion local junto a otras aplicaciones. La licencia OpenMDW-1.1 permite uso comercial y no comercial.
+Su relevancia actual radica en la combinación de contexto largo, capacidades multimodales, modo de razonamiento conmutable mediante plantilla de chat y decodificación especulativa integrada (LiLiCorr drafter vía DFlash con 7 tokens especulativos en las recetas de vLLM). Todo ello bajo licencia OpenMDW-1.1, que permite uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mamba-2-Transformer hybrid LatentMoE con encoder de vision C-RADIO v4-H |
-| Parametros totales | 74.885.081.096 (aproximadamente 74B) |
+| Arquitectura | Mamba-2–Transformer híbrida con LatentMoE y codificador visual C-RADIO v4-H |
+| Parametros totales | 74 885 081 096 (74B) |
 | Parametros activos | 9B |
-| Longitud de contexto | Hasta 262.144 tokens (256K) |
-| Tipos de cuantizacion | BF16 (pesos completos); variante de 24GB con cuantizacion nativa de 2 bits (IQ2) |
+| Longitud de contexto | Hasta 256K tokens (262 144 en la receta de vLLM) |
+| Tipos de cuantizacion | BF16 (esta versión); existe variante nativa de 2 bits (IQ2) de 24 GB y GGUF de 24 GB |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | OpenMDW-1.1 |
-| Formato de pesos | safetensors (BF16); GGUF en la variante de 24GB |
+| Licencia | OpenMDW-1.1 (uso comercial y no comercial) |
+| Formato de pesos | safetensors (BF16), repo de 149,8 GB |
+| Entradas / salidas | Texto, imagen y vídeo / texto |
+| Modo de razonamiento | Conmutable vía plantilla de chat (`enable_thinking=True/False`) |
+| Decodificacion especulativa | LiLiCorr drafter vía DFlash, 7 tokens especulativos |
+| Muestreo recomendado | Texto: temperatura 1.0, top_p 0.95 |
+| Fecha de corte de datos | Mayo de 2026 |
+| Modelo base | nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un hibrido LatentMoE que combina capas Mamba-2 con capas Transformer, lo que permite un coste de atencion mas eficiente sobre contextos largos de hasta 256K tokens, manteniendo 9B parametros activos sobre un total de 74B. El componente de vision es un encoder C-RADIO v4-H, que habilita la entrada de imagenes y video ademas de texto. La decodificacion especulativa se implementa con un drafter LiLiCorr sobre DFlash, configurado con 7 tokens especulativos en las recetas de vLLM proporcionadas.
+La arquitectura es una híbrida Mamba-2–Transformer con capas de mezcla de expertos latente (LatentMoE). Esta combinación busca reducir el coste computacional del mecanismo de atención en contextos largos mediante el componente de espacio de estados (Mamba-2), mientras el Transformer aporta capacidad de modelado de dependencias globales. El LatentMoE activa 9B de los 74B parámetros totales, lo que permite un throughput alto con un coste de memoria y cómputo por token relativamente bajo. El codificador visual es C-RADIO v4-H, que procesa imágenes y vídeo.
 
-El modelo se construye sobre nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 y ha sido entrenado con los datasets nvidia/nemotron-pre-training-datasets y nvidia/nemotron-post-training-v3. La fecha de corte de los datos de post-entrenamiento es mayo de 2026, con un periodo de desarrollo del modelo entre diciembre de 2025 y mayo de 2026. El numero de tokens de entrenamiento y la composicion exacta del dataset no estan disponibles en la informacion proporcionada. El modo de razonamiento se controla desde la plantilla de chat mediante el parametro `enable_thinking=True/False`, heredado del cliente Super 3.5 VL.
+El modelo se ha entrenado sobre los conjuntos de datos publicados por NVIDIA (`nemotron-pre-training-datasets` y `nemotron-post-training-v3`), con fecha de corte de post-entrenamiento en mayo de 2026. La model card no detalla el número exacto de tokens de entrenamiento ni la composición pormenorizada del dataset, ni especifica si se emplearon RLHF o DPO. Sí se documenta la herencia del cliente Super 3.5 VL en cuanto a modo de razonamiento y parámetros de muestreo. La innovación técnica destacable es la decodificación especulativa integrada con el drafter LiLiCorr vía DFlash (7 tokens especulativos en las recetas de vLLM), además del soporte de backends FlashInfer para atención y Mamba, y chunked prefill para contextos largos.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multimodal, con soporte para entradas de texto, imagen y video.
-- Modo de razonamiento explicito activable o desactivable mediante la plantilla de chat (`enable_thinking`).
-- Soporte de tool calling y function calling, con parser de herramientas `qwen3_coder` y eleccion automatica de herramienta en vLLM.
-- Capacidades agenticas orientadas a tareas multi-paso, con benchmarks especificos de uso de herramientas (MCP-Atlas, PinchBench, Terminal-Bench).
-- Razonamiento sobre contextos muy largos de hasta 262.144 tokens.
-- Capacidades multilingues en ingles, castellano, frances, aleman, italiano y japones.
-- Procesamiento de video con parametros de muestreo configurables (fps y numero de fotogramas) y tasa de pruning de video.
+- Generación de texto y razonamiento con modo de pensamiento conmutable (`enable_thinking`).
+- Comprensión de imágenes y vídeo (pipeline image-text-to-text), con límite de 1 imagen y 1 vídeo por prompt en la receta de vLLM y poda de vídeo configurable (`--video-pruning-rate 0.5`, 2 fps, 256 frames).
+- Soporte de tool calling / function calling (`--enable-auto-tool-choice`, parser `qwen3_coder`).
+- Razonamiento multi-paso y flujos agénticos, con parser de razonamiento dedicado (`ultra_v3_reasoning_parser.py`).
+- Capacidades multilingües en inglés, español, francés, alemán, italiano y japonés.
+- Contexto largo de hasta 256K tokens, útil para documentos extensos y conversaciones multi-turno prolongadas.
+- Capacidad de código y matemáticas (avalada por resultados en SciCode y GPQA Diamond, ver benchmarks).
+- Base para post-entrenamiento y generación de variantes cuantizadas.
 
 ## Casos de uso
 
-- Agentes locales de automatizacion de escritorio y terminal: el modelo rinde en Terminal-Bench 2.1 (53,93 en BF16) y puede integrarse en flujos de ejecucion de comandos y edicion de ficheros con soporte de tool calling.
-- Atencion al cliente multimodal: gestiona conversaciones multi-turno con contexto de hasta 256K tokens e incorpora capturas o imagenes enviadas por el usuario como entrada.
-- Analisis de documentos extensos con imagenes: por ejemplo, revision de informes tecnicos o financieros con tablas escaneadas, aprovechando la ventana de contexto y la entrada visual.
-- Generacion y revision de codigo asistida por herramientas: con SciCode (44,49 en BF16) y soporte de function calling, encaja en pipelines de CI/CD y asistentes de repositorio.
-- Analisis de video para tareas de monitorizacion o resumen: acepta video como entrada con control de fps y numero de fotogramas, util para extraer descripciones o eventos.
-- Base para post-entrenamiento y fine-tuning especializado: al ser la version BF16 completa, esta pensada para personalizacion y para producir variantes cuantizadas (por ejemplo, GGUF destinadas a llama.cpp).
-- Despliegue de asistentes con memoria de proyecto larga: la ventana de 256K permite mantener documentacion o historiales extensos sin truncado agresivo.
-- Tareas de razonamiento cientifico y matematico: con GPQA Diamond (88,83) y HLE sin herramientas (28,73) como referencia de su rendimiento en dominios tecnicos.
+- Agentes locales de automatización: el modelo puede ejecutar tareas multi-paso con tool calling y contexto de 256K, adecuado para orquestar APIs y sistemas operativos en entornos de escritorio con la variante de 24 GB.
+- Atención al cliente multimodal: gestión de conversaciones multi-turno con imágenes adjuntas (capturas, documentos escaneados) gracias al codificador C-RADIO v4-H y a la ventana de contexto larga.
+- Análisis de documentos y vídeo: procesamiento de vídeo a 2 fps con 256 frames y poda al 50 %, útil para resúmenes de reuniones o inspección visual de material grabado.
+- Generación de código en producción: integrable en pipelines de CI/CD mediante tool calling y el parser `qwen3_coder`, con resultados destacados en Terminal-Bench 2.1 (53,93 en BF16).
+- Investigación y post-entrenamiento: al ser la versión BF16, sirve como base para fine-tuning, destilación o generación de cuantizaciones propias (GGUF, IQ2) orientadas a despliegue.
+- Asistencia financiera y de back-office: los resultados en Tau3 Banking (17,01) lo sitúan como candidato para agentes que operan sobre sistemas bancarios simulados.
+- Razonamiento científico y técnico: GPQA Diamond de 88,83 y SciCode de 44,49 lo hacen apto para asistencia en dominios de ciencia e ingeniería.
+- Despliegue en entornos con recursos limitados: la variante de 24 GB (IQ2) permite ejecutar el modelo junto a otras aplicaciones en una sola GPU consumer o workstation.
 
 ## Benchmarks y rendimiento
-
-Resultados publicados en la model card. La columna final corresponde a este modelo en BF16.
 
 | Benchmark | Qwen3.6-35B-A3B-BF16 | Gemma4 26B-A4B-BF16 | Nemotron 3.5 Lightning 30B-A3B-BF16 | Nemotron 3.5 Bolt 74B-A9B-24GB (IQ2) | Nemotron 3.5 Bolt 74B-A9B (BF16) |
 |---|---:|---:|---:|---:|---:|
@@ -64,51 +69,50 @@ Resultados publicados en la model card. La columna final corresponde a este mode
 | AA-LCR | 61,06 | 57,56 | 49,19 | 64,06 | 67,38 |
 | AA-Omniscience non-hallucination | 65,85 | 14,22 | 68,81 | 61,27 | 56,14 |
 | PinchBench | 88,07 | 74,70 | 83,43 | 87,82 | 90,35 |
-| MCP-Atlas | 51,20* | no disponible | no disponible (dato truncado en la fuente) | no disponible | no disponible |
+| MCP-Atlas | 51,20* | 48,4 | no disponible | no disponible | no disponible |
 
-El unico valor con asterisco (MCP-Atlas, 51,20) aparece marcado asi en la model card original.
+\* El valor de MCP-Atlas para Qwen3.6-35B-A3B aparece truncado en la model card; el resto de la fila no está disponible en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM para BF16: el repositorio ocupa 149,8 GB, por lo que los pesos en precision completa requieren del orden de 150 GB de memoria, lo que implica despliegue multi-GPU con tensor parallelism. La receta oficial de vLLM usa `--tensor-parallel-size 1` para el arranque base, aunque el dimensionado real dependera del numero de GPUs disponible.
-- Variante de 24GB: existe una version con cuantizacion nativa de 2 bits pensada para caber en 24GB de memoria y ejecutarse junto a otras aplicaciones. Es la recomendada por NVIDIA para inferencia optimizada en latencia y throughput.
-- GPUs recomendadas por el fabricante: vLLM sobre NVIDIA Ampere (A100), Hopper (H100-80GB) o Blackwell. No se detallan requisitos para GPUs de consumo en BF16.
-- Compatibilidad con GPU de consumo: la version BF16 no esta pensada para GPU de consumo por tamano; la variante de 24GB (IQ2 o GGUF) es la via para equipos con 24GB de VRAM.
-- Opciones de despliegue: vLLM (con `--trust-remote-code`, backend de atencion FLASHINFER, backend mamba flashinfer y parser de razonamiento `ultra_v3`), y llama.cpp mediante la variante GGUF de 24GB.
-- Ajustes de inferencia facilitados: decodificacion especulativa con 7 tokens especulativos, chunked prefill, `--max-num-seqs 1`, muestreo recomendado de temperatura 1,0 y top_p 0,95. No se publican cifras concretas de latencia ni throughput en la informacion disponible.
+- VRAM estimada para inferencia en BF16: el repo pesa 149,8 GB, por lo que se necesita al menos esa cantidad de memoria, repartida mediante tensor parallelism. No cabe en una sola GPU consumer.
+- GPU recomendadas para BF16: NVIDIA Ampere (A100), Hopper (H100-80GB) o Blackwell, según la model card. Con H100-80GB se requieren al menos 2 GPUs para alojar los pesos en BF16.
+- Variante de 24 GB: diseñada para caber en 24 GB de VRAM y ejecutarse junto a otras aplicaciones; apta para GPUs consumer de gama alta con 24 GB (por ejemplo, RTX 4090) o workstations.
+- Despliegue: vLLM (versión mínima indicada en la model card, con `--trust-remote-code`, backend FlashInfer para atención y Mamba, chunked prefill y `--max-model-len 262144`), llama.cpp y Ollama mediante la variante GGUF de 24 GB, y SageMaker como endpoint gestionado.
+- Latencia y throughput: no se han publicado cifras concretas de latencia o tokens por segundo en la información disponible. La decodificación especulativa con 7 tokens y el LatentMoE de 9B activos están orientados a mejorar throughput frente a modelos densos de tamaño comparable.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Datos destacados |
-|---|---|---|---|---|---|
-| Nemotron 3.5 Bolt 74B-A9B (BF16) | 74B | 9B | 256K | OpenMDW-1.1 | GPQA Diamond 88,83; Terminal-Bench 2.1 53,93 |
-| Qwen3.6-35B-A3B-BF16 | 35B | 3B | no disponible | no disponible | GPQA Diamond 83,40; Terminal-Bench 2.1 44,38 |
-| Gemma4 26B-A4B-BF16 | 26B | 4B | no disponible | no disponible | GPQA Diamond 79,61; SciCode 40,28 |
-| Nemotron 3.5 Lightning 30B-A3B-BF16 | 30B | 3B | no disponible | no disponible | GPQA Diamond 75,57; AA-Omniscience non-hallucination 68,81 |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Resultado destacado |
+|---|---|---|---|---|
+| Nemotron 3.5 Bolt 74B-A9B (BF16) | 74B / 9B | 256K | OpenMDW-1.1 | GPQA Diamond 88,83; Terminal-Bench 2.1 53,93 |
+| Qwen3.6-35B-A3B-BF16 | 35B / 3B | no disponible | no disponible | GPQA Diamond 83,40; PinchBench 88,07 |
+| Gemma4 26B-A4B-BF16 | 26B / 4B | no disponible | no disponible | SciCode 40,28; AA-Omniscience accuracy 22,17 |
+| Nemotron 3.5 Lightning 30B-A3B-BF16 | 30B / 3B | no disponible | no disponible | AA-Omniscience non-hallucination 68,81 |
 
-Los datos de parametros activos y contexto de los modelos de comparacion no estan disponibles en la informacion proporcionada; solo se dispone de sus resultados de benchmark. La licencia y el contexto de Qwen3.6 y Gemma4 no se detallan en la model card original.
+Los datos de contexto y licencia de los modelos comparables no están disponibles en la información proporcionada. El Bolt 74B-A9B supera a las alternativas en la mayoría de benchmarks de razonamiento y agentes, mientras que Gemma4 destaca en AA-Omniscience accuracy y Lightning en no-alucinación.
 
 ## Limitaciones y advertencias
 
-- Esta version BF16 esta destinada a personalizacion y post-entrenamiento, no a inferencia directa en produccion; NVIDIA recomienda la variante de 24GB para despliegues optimizados en latencia y throughput.
-- Riesgo de alucinacion: en AA-Omniscience non-hallucination el modelo BF16 obtiene 56,14, por debajo de Nemotron 3.5 Lightning 30B-A3B (68,81) y del propio Bolt en su variante IQ2 (61,27), lo que sugiere mayor propension a respuestas no sustentadas en la version de precision completa.
-- No se detallan sesgos conocidos en la informacion disponible.
-- El soporte de idiomas se limita a ingles, castellano, frances, aleman, italiano y japones; otros idiomas no estan cubiertos oficialmente.
-- La fecha de corte de los datos de post-entrenamiento es mayo de 2026, por lo que el conocimiento posterior a esa fecha no esta incluido.
-- La licencia es OpenMDW-1.1, gobernada por el acuerdo OpenMDW; el modelo esta declarado como apto para uso comercial y no comercial, pero deben revisarse los terminos completos del acuerdo para produccion.
-- El despliegue requiere `--trust-remote-code` y codigo personalizado del repositorio, lo que implica ejecutar codigo del autor del modelo.
-- La variante de 24GB emplea cuantizacion de 2 bits, con la perdida de precision que ello conlleva respecto a BF16.
+- Esta versión BF16 está pensada para personalización y post-entrenamiento; para inferencia en producción se recomienda la variante de 24 GB (IQ2/GGUF) optimizada para latencia y throughput.
+- Riesgo de alucinación: el resultado de AA-Omniscience non-hallucination en BF16 (56,14) es inferior al de la variante IQ2 (61,27) y al de Lightning (68,81), lo que indica una tendencia mayor a generar contenido no verificado en precisión completa.
+- Sesgos: la model card no documenta sesgos específicos ni evaluaciones de sesgo; no disponible.
+- Idiomas: solo se declaran seis idiomas (en, es, fr, de, it, ja); el rendimiento en el resto no está garantizado.
+- Contexto: aunque soporta 256K tokens, el uso de contexto muy largo incrementa el consumo de memoria KV/Mamba y puede degradar la latencia; la receta de vLLM limita a 1 secuencia (`--max-num-seqs 1`).
+- Multimodalidad limitada por prompt: la receta admite como máximo 1 imagen y 1 vídeo por prompt.
+- Licencia OpenMDW-1.1: permite uso comercial, pero conviene revisar los términos completos del acuerdo antes de desplegar en producción.
+- Fecha de corte de datos en mayo de 2026; la información posterior no está cubierta.
+- Requiere `--trust-remote-code` y un parser de razonamiento externo (`ultra_v3_reasoning_parser.py`) para el modo thinking en vLLM.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
+- Variante de 24 GB para vLLM: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
+- Variante GGUF de 24 GB para llama.cpp: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
-- Variante de 24GB: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
-- Variante de 24GB en GGUF: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
+- Página de desarrollador Nemotron: https://developer.nvidia.com/nemotron
+- Colección de datasets de pre-entrenamiento: https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Repositorio de la licencia: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1
-- Paper (arXiv:2605.07182): https://arxiv.org/abs/2605.07182
-- Pagina de desarrollador Nemotron: https://developer.nvidia.com/nemotron
-- Dataset de post-entrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
-- Coleccion de datasets de pre-entrenamiento: https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets
+- Texto de la licencia OpenMDW-1.1: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1
 - Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
+- Paper (arXiv:2605.07182): https://arxiv.org/abs/2605.07182

@@ -50,32 +50,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "pornhubというサイトで年齢確認 (18歳以上ですか？)と出て.",
-      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12232098012",
-      "snippet": "Sep 25, 2020 · pornhubというサイトで年齢確認(18歳以上ですか？)と出てきたので18歳以上を押したところ会員登録されました。 …Read more"
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Same answer (%)",
+      "value": 95
     },
     {
-      "title": "【緊急】我が家のPCがウイルスに感染した件 - 先日、私はPC …",
-      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13194880798",
-      "snippet": "Aug 20, 2018 · ①タップスネーク，②pornhubは問題ない。 ③アンインストールすれば良い ⑤ウイルスバスターの結果は信用でき …"
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Confident changes",
+      "value": 0
     },
     {
-      "title": "Problème absorbeur d'encre imprimante Canon Pixma MG 6150",
-      "url": "https://forums.commentcamarche.net/forum/affich-36144704-probleme-absorbeur-d-encre-imprimante-canon-pixma-mg-6150",
-      "snippet": "Jul 31, 2019 · Sur mon imprimante Canon Pixma MG 6150, j’ai eu le code d’erreur 5B00. J’ai pu me mettre en maintenance une fois …"
-    },
-    {
-      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
-      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
-      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
-    },
-    {
-      "title": "pornhubというサイトの投稿者アカウントの横に、青いチェックマー …",
-      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11217128646",
-      "snippet": "Dec 5, 2019 · pornhubというサイトの投稿者アカウントの横に、青いチェックマークがあるのは、ついていないアカウントと何が …"
+      "task": "Typed decisions",
+      "dataset": "Test decisions",
+      "metric": "Accuracy (%)",
+      "value": 70.4
     }
-  ]
+  ],
+  "sources": []
 }

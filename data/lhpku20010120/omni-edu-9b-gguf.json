@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "lhpku20010120/Omni-Edu-9B · Hugging Face",
-      "url": "https://huggingface.co/lhpku20010120/Omni-Edu-9B",
-      "snippet": "Image-Text-to-Text model with 9B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "OpenDCAI/Omni-Edu-9B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/OpenDCAI/Omni-Edu-9B-GGUF",
-      "snippet": "OpenDCAI / Omni-Edu-9B-GGUF Like 0 Follow OpenDCAI 62 Image-Text-to-Text GGUF llama.cpp omniedu education qwen3_5 conversational License:other Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket Use this model"
-    }
-  ]
+  "sources": []
 }

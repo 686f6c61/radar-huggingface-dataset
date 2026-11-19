@@ -1,102 +1,109 @@
 # openbmb/MiniCPM-V-4.6-GPTQ
 
-# MiniCPM-V 4.6 GPTQ
-
 ## Resumen
 
-MiniCPM-V 4.6 GPTQ es la versión cuantizada en 4 bits (W4A16, GPTQModel) del modelo multimodal MiniCPM-V 4.6 desarrollado por OpenBMB. Se trata de un modelo de lenguaje y visión (MLLM) de tamaño compacto, con 1.300.428.016 parámetros (aproximadamente 1,3B), diseñado específicamente para su despliegue en dispositivos de borde como teléfonos móviles, manteniendo capacidades avanzadas de comprensión de imagen única, múltiples imágenes y vídeo.
+MiniCPM-V 4.6 GPTQ es la versión cuantizada a 4 bits (W4A16, GPTQModel) de MiniCPM-V 4.6, un modelo multimodal de tipo image-text-to-text desarrollado por OpenBMB (Tsinghua University / ModelBest). El modelo combina un codificador visual SigLIP2-400M con el LLM Qwen3.5-0.8B, dando lugar a un MLLM de aproximadamente 1.300 millones de parámetros totales diseñado explícitamente para despliegue en el borde (móvil y dispositivos de consumo).
 
-El modelo combina un codificador visual SigLIP2-400M con un modelo de lenguaje Qwen3.5-0.8B de arquitectura híbrida (atención lineal y completa), lo que permite reducir los FLOPs de codificación visual en más del 50% respecto a generaciones anteriores. Según la model card, alcanza una puntuación de 13 en el Artificial Analysis Intelligence Index, superando a Qwen3.5-0.8B (10) y a Ministral 3 3B (11), con un coste de tokens entre 19 y 43 veces menor. Esta versión GPTQ facilita la inferencia en hardware con recursos limitados, manteniendo un equilibrio entre precisión y eficiencia.
+El problema que resuelve es la comprensión de imagen y vídeo de alta calidad en entornos con recursos muy limitados: según el autor, MiniCPM-V 4.6 alcanza una puntuación de 13 en el Artificial Analysis Intelligence Index, por encima de Qwen3.5-0.8B (10) y Qwen3.5-0.8B-Thinking (11), con un coste en tokens entre 19x y 43x menor, y supera también a Ministral 3 3B (11). Esta variante GPTQ reduce el peso del repositorio a 1,9 GB, lo que la hace viable en GPUs de consumo y en plataformas móviles iOS, Android y HarmonyOS.
 
-La relevancia actual de este modelo radica en su capacidad para llevar la comprensión multimodal de alto nivel a dispositivos móviles (iOS, Android y HarmonyOS), con todo el código de adaptación abierto, y su compatibilidad con frameworks de inferencia como vLLM, SGLang, llama.cpp y Ollama.
+La relevancia actual reside en su combinación de eficiencia arquitectónica (compresión de tokens visuales mixta 4x/16x, más de un 50% de reducción de FLOPs en el codificado visual respecto a la técnica LLaVA-UHD v4) y compatibilidad con el ecosistema estándar de inferencia y ajuste fino (vLLM, SGLang, llama.cpp, Ollama, SWIFT, LLaMA-Factory), todo bajo licencia Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SigLIP2-400M (vision encoder) + Qwen3.5-0.8B (LLM híbrido linear/full-attention) |
-| Parametros totales | 1.300.428.016 (1,3B) |
+| Arquitectura | MLLM: codificador visual SigLIP2-400M + LLM Qwen3.5-0.8B (transformer multimodal) |
+| Parametros totales | 1.300.428.016 (≈1,3 B) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GPTQ W4A16 (esta versión); el modelo base ofrece variantes GGUF, BNB, AWQ y GPTQ |
+| Tipos de cuantizacion | GPTQ 4-bit (W4A16, GPTQModel); el modelo base ofrece variantes GGUF, BNB, AWQ y GPTQ |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (GPTQ) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (GPTQ), librería transformers |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de MiniCPM-V 4.6 combina un codificador visual SigLIP2-400M con un modelo de lenguaje Qwen3.5-0.8B que emplea una atención híbrida entre lineal y completa. Esta combinación, basada en las técnicas de LLaVA-UHD v4, reduce los FLOPs de codificación visual en más del 50%, lo que permite un throughput de tokens aproximadamente 1,5 veces superior al de Qwen3.5-0.8B. Además, introduce una compresión mixta de tokens visuales con tasas de 4x y 16x, permitiendo ajustar dinámicamente el equilibrio entre precisión y velocidad según la tarea.
+MiniCPM-V 4.6 es un modelo multimodal que empareja un codificador visual SigLIP2-400M con el modelo de lenguaje Qwen3.5-0.8B. La innovación arquitectónica principal es la compresión mixta de tokens visuales con tasas 4x/16x, que permite alternar entre precisión y velocidad, y una reducción de más del 50% de los FLOPs de codificación visual gracias a las técnicas de LLaVA-UHD v4. Según el autor, esto se traduce en aproximadamente 1,5x más throughput de tokens que Qwen3.5-0.8B. La variante de este repositorio aplica cuantización GPTQ de 4 bits con activaciones de 16 bits (W4A16) mediante GPTQModel sobre los pesos BF16 originales.
 
-No se han proporcionado datos específicos sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO en la información disponible. El modelo se publica en su variante instruct, con pesos cuantizados mediante GPTQ (W4A16) para esta versión. La cuantización se realizó con GPTQModel, manteniendo la compatibilidad con el ecosistema Transformers.
+No se dispone en la información proporcionada del número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. El modelo se distribuye en dos variantes de comportamiento, Instruct y Thinking, cuyas evaluaciones publica el autor, pero los detalles del pipeline de alineamiento no están documentados en la información disponible.
 
 ## Capacidades
 
-- Comprensión de imágenes individuales y múltiples, así como de vídeo, con razonamiento visual avanzado.
-- Generación de texto y respuestas conversacionales basadas en entradas visuales.
-- Compresión de tokens visuales con tasas mixtas 4x/16x, permitiendo optimizar latencia o precisión según el caso.
-- Soporte para despliegue en dispositivos móviles (iOS, Android y HarmonyOS) con código de adaptación abierto.
-- Compatible con frameworks de inferencia como vLLM, SGLang, llama.cpp y Ollama, y con ecosistemas de fine-tuning como SWIFT y LLaMA-Factory.
-- Eficiencia computacional destacada: ~1,5x token throughput respecto a Qwen3.5-0.8B y reducción de FLOPs en codificación visual superior al 50%.
-- Capacidades de razonamiento y comprensión de escenas complejas, superando en rendimiento a modelos más grandes como Gemma4-E2B-it según la model card.
-- No se especifica soporte explícito para tool calling o function calling en la documentación disponible.
+- Comprensión de imagen individual, múltiples imágenes y vídeo (pipeline image-text-to-text).
+- Generación de texto conversacional multimodal en modo Instruct y modo Thinking (razonamiento explícito).
+- Comprensión de documentos, OCR y tareas de grounding visual (el autor cita OCRBench, RefCOCO y HallusionBench entre los benchmarks evaluados).
+- Compresión de tokens visuales configurable (4x/16x) para ajustar precisión frente a velocidad.
+- Despliegue en dispositivo: adaptaciones abiertas para iOS, Android y HarmonyOS.
+- Compatibilidad con frameworks de inferencia (vLLM, SGLang, llama.cpp, Ollama) y de ajuste fino (SWIFT, LLaMA-Factory).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-step: no disponible en la información proporcionada.
+- Cobertura multilingüe: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente visual en dispositivos móviles: el modelo puede reconocer objetos, leer texto en imágenes (OCR) y responder preguntas sobre el entorno mediante la cámara, gracias a su tamaño reducido y su compatibilidad con plataformas iOS, Android y HarmonyOS.
-- Análisis de vídeo en tiempo real: su capacidad para procesar vídeo permite resumir escenas, detectar eventos o extraer información de secuencias grabadas, con una latencia adecuada para aplicaciones de borde.
-- Accesibilidad para personas con discapacidad visual: descripción automática de imágenes y escenas capturadas con el teléfono, ayudando a interpretar el entorno sin necesidad de conexión a la nube.
-- Extracción de datos de documentos: lectura de facturas, tickets, tarjetas de visita o formularios a partir de fotografías, con alta precisión en tareas de OCR y comprensión de diseño.
-- Asistente educativo: resolución de problemas matemáticos o científicos a partir de imágenes de pizarras, libros o apuntes, combinando razonamiento visual y textual.
-- Moderación de contenido: análisis de imágenes y vídeos para detectar contenido inapropiado o clasificar material visual en aplicaciones de redes sociales o plataformas de contenido.
-- Automatización de tareas industriales: inspección visual de productos, lectura de códigos o verificación de etiquetas en entornos de fabricación con recursos de hardware limitados.
+- Asistencia visual en movilidad: integración del modelo cuantizado en aplicaciones iOS, Android o HarmonyOS para describir escenas, leer carteles o resolver ejercicios escritos a mano capturados con la cámara, aprovechando su tamaño de 1,9 GB y las adaptaciones de borde publicadas por el autor.
+- Digitalización y accesibilidad de documentos: extracción de texto y estructura de tickets, formularios o páginas escaneadas mediante las capacidades OCR evaluadas en OCRBench, con la tasa de compresión 16x para procesar documentos largos con menos cómputo.
+- Moderación y análisis de vídeo en el borde: procesamiento de clips cortos para detectar contenido relevante o generar resúmenes, usando la compresión 4x cuando se requiere mayor fidelidad visual y 16x para flujos de alto volumen.
+- Asistente de estudio con razonamiento visual: activación del modo Thinking para resolver problemas de matemáticas o ciencias a partir de fotografías de enunciados, con la ventaja de coste en tokens que el autor cifra en 19x-43x menor que Qwen3.5-0.8B.
+- Automatización de atención al cliente con imágenes: recepción de capturas de pantalla o fotos de productos enviadas por usuarios y generación de respuestas contextuales en un servicio desplegado con vLLM o SGLang sobre una única GPU de consumo.
+- Prototipado e investigación en visión-lenguaje: ajuste fino con SWIFT o LLaMA-Factory sobre GPUs de consumo para adaptar el modelo a dominios verticales (retail, inspección industrial, salud), partiendo de la variante GPTQ para iterar con requisitos de VRAM reducidos.
+- Grounding visual para robótica ligera o domótica: localización de objetos referidos por lenguaje natural (evaluado en RefCOCO) en dispositivos empotrados con presupuesto de memoria ajustado.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona los siguientes resultados comparativos, basados en el Artificial Analysis Intelligence Index (AAII):
+El autor publica resultados en forma de gráficas (no de tablas numéricas) en la model card, por lo que no se dispone de cifras exactas por benchmark en la información proporcionada. Los datos cualitativos disponibles son:
 
-| Modelo | Puntuación AAII | Coste de tokens relativo |
-|---|---|---|
-| MiniCPM-V 4.6 | 13 | 1x |
-| Ministral 3 3B | 11 | no disponible |
-| Qwen3.5-0.8B-Thinking | 11 | 43x |
-| Qwen3.5-0.8B | 10 | 19x |
+| Benchmark / métrica | Resultado |
+|---|---|
+| Artificial Analysis Intelligence Index | 13 (Qwen3.5-0.8B: 10; Qwen3.5-0.8B-Thinking: 11; Ministral 3 3B: 11) |
+| OpenCompass | nivel comparable a Qwen3.5 2B según el autor |
+| RefCOCO | nivel comparable a Qwen3.5 2B según el autor |
+| HallusionBench | nivel comparable a Qwen3.5 2B según el autor |
+| MUIRBench | nivel comparable a Qwen3.5 2B según el autor |
+| OCRBench | nivel comparable a Qwen3.5 2B según el autor |
+| Throughput de tokens | ~1,5x respecto a Qwen3.5-0.8B |
+| Coste en tokens | 19x menor que Qwen3.5-0.8B; 43x menor que Qwen3.5-0.8B-Thinking |
 
-Además, se indica que MiniCPM-V 4.6 supera a Gemma4-E2B-it en rendimiento general, aunque no se aporta una puntuación numérica. No se han publicado resultados detallados de benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible.
+No se han publicado en la información disponible valores numéricos desglosados de MMLU, HumanEval, GSM8K ni del resto de benchmarks citados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al ser un modelo de 1,3B parámetros en cuantización GPTQ de 4 bits, el peso del modelo ocupa aproximadamente 0,65 GB, y el repositorio completo tiene un tamaño de 1,9 GB. Se estima que la VRAM necesaria para inferencia se sitúa entre 1 y 2 GB, dependiendo del tamaño de lote y la longitud de la secuencia.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo tarjetas de consumo como NVIDIA RTX 3060, RTX 4060 o superiores. También puede ejecutarse en CPU con un rendimiento aceptable para tareas puntuales.
-- Compatibilidad con consumer GPU: sí, es plenamente compatible con GPUs de gama media y baja.
-- Opciones de despliegue: vLLM, SGLang, llama.cpp, Ollama, Transformers con torchcodec para decodificación de vídeo.
-- Latencia y throughput: según la model card, alcanza ~1,5x token throughput en comparación con Qwen3.5-0.8B, con tiempos de primer token (TTFT) optimizados para escenarios de alta concurrencia.
+- VRAM estimada para inferencia: el repositorio GPTQ ocupa 1,9 GB en disco; en FP16 el modelo base rondaría los 2,6 GB de pesos, por lo que la variante 4-bit debería operar con aproximadamente 3-4 GB de VRAM incluyendo caché KV y buffers, aunque el autor no publica una cifra exacta.
+- GPU recomendadas: no especificadas por el autor; por tamaño, cualquier GPU con al menos 6-8 GB de VRAM es candidata razonable.
+- GPU de consumo: cabe previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores; el despliegue móvil está validado por el autor en iPhone 17 Pro Max, Redmi K70 y HUAWEI nova 14.
+- Opciones de despliegue: transformers (>=5.7.0 con torchvision y torchcodec), vLLM, SGLang, llama.cpp, Ollama; ajuste fino con SWIFT y LLaMA-Factory.
+- Latencia y throughput: el autor reporta ~1,5x más throughput de tokens que Qwen3.5-0.8B y publica gráficas de TTFT en petición única y throughput en alta concurrencia, pero sin cifras numéricas en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento (AAII) | Licencia |
-|---|---|---|---|---|
-| MiniCPM-V 4.6 | 1,3B | no disponible | 13 | Apache-2.0 |
-| Qwen3.5-0.8B | 0,8B | no disponible | 10 | no disponible |
-| Ministral 3 3B | 3B | no disponible | 11 | no disponible |
-| Gemma4-E2B-it | ~2B | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Rendimiento (AA Intelligence Index) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniCPM-V 4.6 (GPTQ) | ~1,3 B | no disponible | 13 | Apache 2.0 | Hugging Face, pesos GPTQ/GGUF/AWQ/BNB |
+| Qwen3.5-0.8B | 0,8 B | no disponible | 10 | no disponible en la información | no disponible en la información |
+| Qwen3.5-0.8B-Thinking | 0,8 B | no disponible | 11 | no disponible en la información | no disponible en la información |
+| Ministral 3 3B | 3 B | no disponible | 11 | no disponible en la información | no disponible en la información |
 
-MiniCPM-V 4.6 destaca por ofrecer un rendimiento superior a modelos de mayor tamaño (Ministral 3 3B) y a modelos de tamaño similar (Qwen3.5-0.8B) con un coste de tokens significativamente menor, gracias a su arquitectura eficiente y su compresión de tokens visuales.
+Los datos de rendimiento de la comparativa provienen exclusivamente de las afirmaciones del autor en la model card. No se dispone de información sobre contexto, licencia ni disponibilidad de los modelos comparados en la documentación consultada.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos en la información disponible, pero como todo modelo entrenado con datos web, puede reflejar sesgos presentes en dichos datos.
-- Riesgo de alucinación en tareas de razonamiento visual complejo, especialmente en escenarios con imágenes ambiguas o de baja calidad.
-- La longitud de contexto no se ha especificado, por lo que puede haber limitaciones en tareas que requieran secuencias muy largas o múltiples imágenes simultáneas.
-- Los idiomas soportados no están documentados; aunque el modelo base probablemente sea multilingüe, no hay confirmación oficial.
-- La cuantización GPTQ en 4 bits puede introducir una ligera degradación de precisión respecto a los pesos BF16 originales, especialmente en tareas de razonamiento numérico o visual detallado.
-- La licencia Apache-2.0 permite uso comercial sin restricciones, pero es recomendable verificar la atribución correspondiente.
+- Sesgos conocidos: no documentados en la información proporcionada; al derivar de Qwen3.5-0.8B y SigLIP2, puede heredar sesgos de sus datos de preentrenamiento, no verificables con la documentación disponible.
+- Riesgo de alucinación: presente como en cualquier MLLM de este tamaño; el autor reporta resultados en HallusionBench, pero no se publican cifras que permitan cuantificar la tasa de alucinación visual.
+- Limitaciones de contexto e idioma: la longitud de contexto y la lista de idiomas soportados no están disponibles; conviene validar el comportamiento en castellano antes de producción.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero deben respetarse las licencias de los componentes base (SigLIP2 y Qwen3.5-0.8B), cuya información no se detalla en este repositorio.
+- Cuantización GPTQ: la pérdida de precisión frente a BF16 no está cuantificada por el autor; para tareas sensibles (OCR fino, grounding) conviene comparar contra el modelo base antes de desplegar.
+- Dependencias: requiere transformers >=5.7.0 y torchcodec para decodificación de vídeo, con posibles incompatibilidades de CUDA (el autor documenta errores con CUDA 12.x y sugiere PyAV como alternativa).
+- Escala: con ~1,3 B de parámetros, el modelo no es adecuado para razonamiento complejo de largo alcance ni para tareas que exijan conocimiento factual extenso; su ventaja es la eficiencia en el borde.
 
 ## Enlaces
 
-- Modelo cuantizado GPTQ: https://huggingface.co/openbmb/MiniCPM-V-4.6-GPTQ
-- Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.6
-- Repositorio GitHub oficial: https://github.com/OpenBMB/MiniCPM-V
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-GPTQ-Demo
-- Receta de despliegue con vLLM: https://recipes.vllm.ai/openbmb/MiniCPM-V-4.6
-- Documentación de la API pública: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
-- CookBook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook
+- Hugging Face (este repositorio): https://huggingface.co/openbmb/MiniCPM-V-4.6-GPTQ
+- Modelo base BF16: https://huggingface.co/openbmb/MiniCPM-V-4.6
+- GitHub: https://github.com/OpenBMB/MiniCPM-o
+- Wiki (chino): https://openbmb.cn/docs/
+- CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
+- Demo en Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-GPTQ-Demo
+- Documentación de la API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
+- Repositorio LLaVA-UHD v4: https://github.com/THUMAI-Lab/LLaVA-UHD-v4
+- Vídeo demostración: https://www.youtube.com/watch?v=Ch5UG1FoysM
+- Papers citados (arXiv): 2604.27393, 2509.18154, 2408.01800, 2605.08985

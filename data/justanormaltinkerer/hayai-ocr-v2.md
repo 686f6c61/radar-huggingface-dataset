@@ -2,102 +2,118 @@
 
 ## Resumen
 
-Hayai OCR v2 es un modelo ligero de visión-lenguaje (VLM) especializado en transcripción de texto a nivel de recorte (crop) para japonés, chino, coreano e inglés. Desarrollado por JustANormalTinkerer, combina el encoder de visión SigLIP2 NaFlex de Google con un decoder transformer causal de 12 capas, alcanzando unos 155 millones de parámetros. Su principal ventaja es que realiza OCR en una sola pasada sin necesidad de una etapa separada de detección de texto (como DBNet o YOLO), lo que lo hace extremadamente rápido y eficiente en memoria.
+Hayai OCR v2 (también referenciado como v2.1 en la model card) es un modelo visión-lenguaje compacto de aproximadamente 155 millones de parámetros, desarrollado por el usuario independiente JustANormalTinkerer, especializado en transcripción OCR a nivel de recorte (crop-level) para japonés, chino, coreano e inglés. El modelo combina el codificador visual SigLIP2 NaFlex de Google (~86M parámetros) con un decodificador transformer causal propio de 12 capas (~60M parámetros), lo que permite leer texto denso, estilizado, horizontal y vertical en una única pasada forward sin necesidad de una etapa separada de detección de texto (DBNet, YOLO, etc.).
 
-La versión v2.1 introduce un entrenamiento conjunto multimodal y lingüístico que inyecta prioridades estadísticas del lenguaje directamente en el decoder, mejorando la desambiguación de caracteres CJK visualmente similares (p. ej., `銀` vs. `高`). El modelo compite con sistemas de 0.9B de parámetros como PaddleOCR-VL, ofreciendo un rendimiento comparable en precisión pero con un throughput hasta 10 veces superior y un consumo de VRAM de aproximadamente 300 MB en FP16. Está disponible bajo licencia Apache 2.0 y se distribuye en formato safetensors.
+Su relevancia radica en la relación entre precisión y coste computacional: con un footprint de aproximadamente 300 MB en FP16 y un throughput declarado de hasta 54 FPS en una GPU L4, el modelo se posiciona como alternativa ligera a sistemas OCR de mayor tamaño como PaddleOCR-VL (0.9B) en tareas de manga y texto CJK. La versión 2.1 introduce entrenamiento conjunto multimodal y lingüístico, inyectando priors de lenguaje mediante pasadas solo de texto sobre corpus de Wikipedia y Aozora Bunko, lo que reduce errores en radicales CJK visualmente ambiguos y homóglifos.
 
-## Especificaciones técnicas
+El modelo está publicado con licencia Apache 2.0, en formato safetensors, con código personalizado (`trust_remote_code=True` requerido) y una librería Python asociada (`hayai-ocr`). La model card advierte explícitamente de que el modelo está desactualizado y recomienda migrar a Hayai Nova (hayai-ocr-v2.5-nova).
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder de visión SigLIP2 NaFlex (`google/siglip2-base-patch16-naflex`) + proyector MLP de 2 capas + decoder transformer causal de 12 capas con GQA y SwiGLU |
+| Arquitectura | Vision-language: SigLIP2 NaFlex (ViT) + proyector MLP de 2 capas + decodificador transformer causal de 12 capas |
 | Parametros totales | 155.614.464 (~150M) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No especificada; soporta hasta 512 parches visuales (`max_num_patches=512`) para imágenes densas |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés, japonés, chino y coreano |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (el procesador admite `max_num_patches` de 256 por defecto, 384 o 512 para paneles densos; no se especifica un límite de tokens de texto) |
+| Tipos de cuantizacion | No disponible (la model card menciona FP16; no se documentan GGUF, AWQ, GPTQ ni otras) |
+| Idiomas soportados | Inglés (en), japonés (ja), chino (zh), coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | Safetensors (librería transformers, requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura encoder-decoder. El encoder de visión es SigLIP2 NaFlex, que preserva la relación de aspecto nativa de la imagen mediante parcheado adaptativo, evitando deformaciones en caracteres densos. Los parches visuales se proyectan a la dimensión oculta del decoder mediante un MLP de 2 capas. El decoder es un transformer causal de 12 capas con atención por grupos (8 cabezas de consulta, 2 cabezas de clave/valor), normalización RMS sobre consultas y claves, y FFN SwiGLU con `d_model=512` y `d_ffn=2048`. Usa posiciones rotatorias 2D multimodales (2D mRoPE) para los tokens visuales y 1D RoPE para los tokens de texto, con una máscara de atención block-causal: bidireccional entre parches visuales y causal en la generación de texto.
+La arquitectura se compone de tres bloques. El codificador visual es `google/siglip2-base-patch16-naflex` (~86M parámetros), que preserva la relación de aspecto nativa mediante parcheado NaFlex, evitando el warping o aplastamiento de caracteres densos. Un proyector MLP de 2 capas mapea las características de los parches visuales a la dimensión oculta del decodificador. El decodificador es un transformer causal de 12 capas (~60M parámetros) con Grouped-Query Attention (8 cabezas de query, 2 de key/value), RMSNorm sobre queries y keys, capas FFN SwiGLU (`d_model = 512`, `d_ffn = 2048`), embeddings posicionales 2D mRoPE dinámicos sobre tokens visuales y 1D RoPE sobre tokens de texto, y máscara de atención block-causal (bidireccional entre parches visuales, causal sobre el texto de salida).
 
-El entrenamiento se realizó en dos fases coordinadas sobre 2 GPUs NVIDIA T4 de Kaggle. La primera fase consistió en un entrenamiento conjunto multi-tarea de aproximadamente 19.000 pasos, combinando un flujo de OCR con el dataset `hayai-dataset-merged` (~1M de imágenes) y un flujo lingüístico intercalado con pasajes de Wikipedia en JA/ZH/KO/EN y el corpus limpio de Aozora Bunko. La función de pérdida combinada fue `L_total = L_ocr + 0.30 * L_text`. Para la optimización se usó el optimizador Muon para las matrices 2D del decoder (momentos ortogonalizados) y AdamW para vectores 1D, embeddings, normas y el encoder SigLIP. Esta inyección de prior lingüístico sin overhead adicional es la innovación clave de v2.1, que reduce errores en radicales y contadores CJK.
+El entrenamiento de v2.1 se realizó en dos fases coordinadas sobre 2 GPU NVIDIA T4 de Kaggle. La primera fase (~19.000 pasos) es un entrenamiento base conjunto multi-tarea que combina un flujo OCR con el dataset `JustANormalTinkerer/hayai-dataset-merged` (~1M imágenes) y un flujo de prior lingüístico con streams empaquetados de tokens de Wikipedia en japonés, chino, coreano e inglés, además de Aozora Bunko. Las pasadas solo de texto entran directamente al decodificador con RoPE 1D, saltándose el backbone visual, lo que inyecta probabilidades de transición contextual CJK sin coste adicional en inferencia. La model card menciona también datos de Manga109-s y un dataset de fine-tuning con coreano. No se detalla si hubo RLHF, DPO o una segunda fase de alineamiento en la información disponible.
 
 ## Capacidades
 
-- OCR de nivel de recorte (crop) para japonés, chino, coreano e inglés, incluyendo texto vertical y horizontal con furigana.
-- Lectura directa de imágenes sin etapa separada de detección de texto, en una sola pasada hacia adelante.
-- Manejo de texto denso, estilizado y diseños complejos mediante `max_num_patches` configurable (256, 384 o 512).
-- Alta velocidad de inferencia: 54,22 FPS en GPU L4 (v2.1) frente a 2,22 FPS de PaddleOCR-VL-For-Manga.
-- Bajo consumo de memoria: aproximadamente 300 MB de VRAM en FP16.
-- Soporte multi-idioma simultáneo con desambiguación mejorada de homógrafos CJK.
-- No soporta páginas completas (pull pages); únicamente recortes de imagen.
+- Transcripción OCR de texto horizontal y vertical en japonés, chino, coreano e inglés a partir de recortes de imagen.
+- Lectura de texto denso y estilizado (manga, paneles, tipografías decorativas) en una sola pasada forward, sin etapa de detección de texto.
+- Manejo de múltiples scripts en una misma imagen (multi-script), con soporte de onomatopeyas japonesas y coreanas.
+- Desambiguación de radicales CJK y homóglifos (por ejemplo, `銀` frente a `高`, `校` frente a `枚`) gracias al prior lingüístico inyectado en el entrenamiento.
+- Preservación de relación de aspecto nativa mediante parcheado NaFlex, adecuada para caracteres alargados o verticales.
+- Salida image-to-text mediante `model.generate()` con búsqueda greedy recomendada para japonés.
+- No soporta tool calling, function calling ni razonamiento multi-paso: es un modelo especializado de extracción, no un asistente general.
+- No procesa páginas completas: la model card indica explícitamente que solo funciona con recortes (crops).
 
 ## Casos de uso
 
-- Transcripción de manga y cómics: el modelo puede procesar recortes de viñetas, globos de diálogo y onomatopeyas en japonés, chino o coreano, integrándose en pipelines de traducción automática de cómics.
-- Digitalización de literatura japonesa clásica: gracias a su entrenamiento con Aozora Bunko, es adecuado para transcribir textos históricos con furigana y estilos tipográficos variados.
-- OCR para aplicaciones de traducción en tiempo real: su baja latencia y alto throughput permiten usarlo en apps móviles o servicios web que traducen texto de imágenes al instante.
-- Automatización de entrada de datos en formularios con texto CJK: puede extraer campos de formularios escaneados, facturas o tarjetas de visita en entornos empresariales.
-- Preprocesamiento para pipelines de búsqueda semántica: al convertir imágenes de texto en texto plano, facilita la indexación y búsqueda en archivos de documentos escaneados.
-- Análisis de capturas de pantalla y memes en redes sociales: su soporte multilingüe permite extraer texto de imágenes compartidas en plataformas como Twitter o Reddit para moderación o análisis de tendencias.
+- Digitalización de manga y cómics: el modelo transcribe bocadillos y texto vertical japonés recortados de viñetas con un CER del 3,225% en JMangaBench_Mixed, adecuado para pipelines de traducción automática de manga donde se recorta cada globo antes de la inferencia.
+- Traducción asistida de obras CJK: integrado como etapa OCR previa a un modelo de traducción, permite extraer el texto original de recortes en japonés, chino o coreano y alimentar el traductor con texto limpio, reduciendo errores en cadena.
+- Procesamiento por lotes de alto rendimiento: con ~54 FPS en una L4 y ~300 MB de VRAM en FP16, es viable procesar decenas de miles de recortes por hora en una sola GPU de gama media para construir corpus o índices de búsqueda.
+- Extracción de texto en aplicaciones móviles o edge: el tamaño de ~150M parámetros y su bajo footprint permiten desplegarlo en entornos con recursos limitados, como apps de lectura o escaneo de documentos CJK.
+- Enriquecimiento de datasets de visión-lenguaje: al ser ligero y rápido, sirve para generar anotaciones OCR a gran escala sobre imágenes de manga o documentos antes de entrenar modelos mayores.
+- Investigación en OCR de bajo coste: su arquitectura documentada (SigLIP2 + decodificador causal con 2D mRoPE y atención block-causal) y su receta de entrenamiento multi-tarea sirven como base reproducible para experimentos académicos con GPUs T4.
+- Indexación y búsqueda de archivos escaneados: transcripción de recortes de documentos históricos o revistas para construir índices de texto completo sobre colecciones CJK.
 
 ## Benchmarks y rendimiento
 
-Resultados en JMangaBench_Mixed (CER: Character Error Rate, menor es mejor; EM: Exact Match, mayor es mejor):
+Resultados en JMangaBench_Mixed (CER más bajo es mejor; Exact Match más alto es mejor):
 
-| Modelo | CER ↓ | Exact Match ↑ | Text-only CER ↓ | Text-only EM ↑ |
-|---|---|---|---|---|
+| Modelo | CER ↓ | Exact Match ↑ | CER solo texto ↓ | Exact Match solo texto ↑ |
+|---|---:|---:|---:|---:|
 | MangaOCR | 4,683% | 73,524% | 2,700% | 82,867% |
-| HayaiOCR | 6,738% | 71,272% | 4,967% | 80,949% |
+| HayaiOCR (v1) | 6,738% | 71,272% | 4,967% | 80,949% |
 | HayaiOCR-v2 | 4,534% | 73,645% | 2,872% | 82,227% |
 | **HayaiOCR-v2.1** | **3,225%** | **79,671%** | **1,896%** | **87,461%** |
 | BaberuOCR | 4,589% | 72,246% | 2,603% | 81,649% |
 | PaddleOCR-VL-0.9B-For-Manga | 2,910% | 78,911% | 1,866% | 84,662% |
 
-Throughput en GPU L4 (FPS, mayor es mejor):
+Resultados en el split de entrenamiento del dataset de fine-tuning (ZH + onomatopeyas JA/KO + EN):
 
-| Modelo | Mean CER ↓ | Throughput (FPS) ↑ |
-|---|---|---|
+| Modelo | CER medio ↓ | Throughput en GPU L4 (FPS) ↑ |
+|---|---:|---:|
 | Hayai OCR v2 | 8,52% | 37,25 |
 | PaddleOCR-VL-For-Manga | 24,66% | 3,60 |
 
-En un dataset privado de preentrenamiento CJK, Hayai OCR v2.1 alcanzó 54,22 FPS frente a 2,22 FPS de PaddleOCR-VL-For-Manga, con un CER de 12,94% frente a 38,69%.
+Resultados en el split de entrenamiento del dataset privado de preentrenamiento CJK:
+
+| Modelo | CER medio ↓ | Throughput en GPU L4 (FPS) ↑ |
+|---|---:|---:|
+| Hayai OCR v2 | 10,56% | 31,95 |
+| Hayai OCR v2.1 | 12,94% | 54,22 |
+| PaddleOCR-VL-For-Manga | 38,69% | 2,22 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 300 MB en FP16 para inferencia.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; funciona en NVIDIA T4, L4 y GPUs de consumo como RTX 3060 o superiores.
-- Entrenamiento: se realizó en 2x NVIDIA T4 (Kaggle), por lo que es factible en entornos con recursos limitados.
-- Opciones de despliegue: mediante la librería `transformers` con `trust_remote_code=True`; no se documentan integraciones nativas con vLLM, llama.cpp u Ollama, pero al ser un modelo estándar de transformers podría adaptarse.
-- Latencia y throughput: 54,22 FPS en L4 (v2.1) según benchmarks del autor; la latencia por imagen depende del número de parches y del tamaño de la imagen.
+- VRAM estimada: aproximadamente 300 MB en FP16 para el modelo completo, según la model card. El uso real depende de `max_num_patches` (256 por defecto, 384 o 512 para paneles densos) y del tamaño de lote.
+- GPU recomendadas: NVIDIA L4 (referencia de throughput en la model card), T4 (usadas en entrenamiento), y cualquier GPU con al menos ~1-2 GB de VRAM libre para inferencia con lotes pequeños.
+- Cabe en GPU de consumo: sí, en RTX 3060, RTX 4060, RTX 4090 y similares; también es viable en iGPU o CPU para volúmenes moderados, aunque no se documentan cifras de latencia en CPU.
+- Opciones de despliegue: transformers con `AutoModel.from_pretrained(..., trust_remote_code=True)` y `PreTrainedTokenizerFast`; procesador `google/siglip2-base-patch16-naflex`; librería Python `hayai-ocr` recomendada para aplicaciones. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: hasta 54,22 FPS en una L4 para v2.1 en el dataset CJK privado, y 37,25 FPS para v2 en el dataset de fine-tuning; la model card atribuye la mejora de v2.1 al batching de decodificación optimizado.
+- Configuración de generación: `max_new_tokens=128`, `repetition_penalty=1.0` (desactivado) y búsqueda greedy para japonés; la model card descarta el uso de `num_beams=4` recomendado en versiones anteriores.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto/Parches | CER (JMangaBench) | Throughput (L4) | Licencia |
-|---|---|---|---|---|---|
-| Hayai OCR v2.1 | ~150M | Hasta 512 parches | 3,225% | 54,22 FPS | Apache 2.0 |
-| MangaOCR | ~80M (estimado) | No especificado | 4,683% | No disponible | Apache 2.0 |
-| PaddleOCR-VL-0.9B-For-Manga | 0,9B | No especificado | 2,910% | 2,22 FPS | Apache 2.0 |
-| BaberuOCR | No disponible | No disponible | 4,589% | No disponible | No disponible |
-
-Hayai OCR v2.1 ofrece un equilibrio entre precisión y velocidad muy superior a PaddleOCR-VL, con un CER ligeramente mayor pero un throughput 24 veces superior. Frente a MangaOCR, mejora la precisión y añade soporte multilingüe.
+| Modelo | Parámetros | Idiomas | CER JMangaBench_Mixed | Throughput L4 (FPS) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Hayai OCR v2.1 | ~150M | en, ja, zh, ko | 3,225% | 54,22 (dataset CJK privado) | Apache 2.0 | Hugging Face |
+| PaddleOCR-VL-0.9B-For-Manga | ~0,9B | no disponible | 2,910% | 2,22-3,60 | no disponible en la información | Hugging Face (variante fine-tuned) |
+| MangaOCR | no disponible | ja | 4,683% | no disponible | no disponible | Hugging Face |
+| BaberuOCR | no disponible | ja | 4,589% | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- No funciona con páginas completas (pull pages); únicamente procesa recortes de imagen, por lo que requiere un paso previo de recorte o detección de regiones de texto.
-- Puede presentar errores en caracteres CJK visualmente ambiguos, aunque v2.1 reduce significativamente este problema mediante el entrenamiento lingüístico conjunto.
-- El uso requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del autor; se recomienda auditar el código antes de usarlo en producción.
-- No se han publicado evaluaciones de sesgos o comportamientos adversos; al entrenarse con Wikipedia y Aozora Bunko, puede heredar sesgos de esos corpus.
-- La documentación no especifica la longitud máxima de secuencia de texto generada, aunque el ejemplo de uso emplea `max_new_tokens=128`.
-- No se proporcionan guías de cuantización oficiales, por lo que el despliegue en entornos con restricciones de memoria puede requerir experimentación adicional.
+- El modelo está marcado como desactualizado en su propia model card, que recomienda migrar a Hayai Nova (`hayai-ocr-v2.5-nova`).
+- Solo funciona con recortes de imagen; no procesa páginas completas ni realiza detección de texto, por lo que requiere un pipeline externo de segmentación.
+- El soporte lingüístico se limita a inglés, japonés, chino y coreano; otros idiomas no están cubiertos.
+- Riesgo de alucinación y errores en caracteres visualmente ambiguos, aunque v2.1 los reduce mediante prior lingüístico; persisten tasas de CER no nulas (3,225% en el mejor benchmark).
+- La configuración de generación afecta a la precisión: la model card advierte de mantener `repetition_penalty=1.0` y usar greedy search para japonés.
+- Requiere `trust_remote_code=True` por el uso de atención block-causal y 2D mRoPE personalizados (`configuration_hayai.py`, `modeling_hayai.py`), lo que implica ejecutar código del autor y revisarlo antes de usar en producción.
+- No se documentan sesgos específicos ni evaluaciones de robustez fuera de los benchmarks de manga y CJK.
+- Licencia Apache 2.0 permite uso comercial, pero no se ofrece garantía ni soporte por parte del autor.
+- No se documentan cuantizaciones oficiales (GGUF, AWQ, GPTQ), lo que limita el despliegue en entornos sin transformers.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/JustANormalTinkerer/hayai-ocr-v2
-- Paquete PyPI: https://pypi.org/project/hayai-ocr/
-- Repositorio GitHub (fork original): https://github.com/NopeNopeGuy/hayai-ocr
+- Versión recomendada (Hayai Nova): https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2.5-nova
+- Librería Python hayai-ocr: https://github.com/NopeNopeGuy/hayai-ocr
 - Benchmark JMangaBench_Mixed: https://github.com/muscgab/JMangaBench_Mixed/
+- Dataset de fine-tuning: https://huggingface.co/datasets/JustANormalTinkerer/hayai-finetuning-dataset
+- Dataset de fine-tuning con coreano: https://huggingface.co/datasets/JustANormalTinkerer/hayai-finetuning-dataset-with-korean
+- Dataset Aozora Bunko Clean: https://huggingface.co/datasets/globis-university/aozorabunko-clean
+- Dataset Manga109-s: https://huggingface.co/datasets/hal-utokyo/Manga109-s
+- Codificador visual SigLIP2 NaFlex: https://huggingface.co/google/siglip2-base-patch16-naflex

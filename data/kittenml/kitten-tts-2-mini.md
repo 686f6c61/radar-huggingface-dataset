@@ -2,53 +2,56 @@
 
 ## Resumen
 
-Kitten TTS 2 Mini es un modelo de síntesis de voz (text-to-speech) desarrollado por KittenML, diseñado para inferencia en CPU sin dependencias de PyTorch. Con 82 millones de parámetros, cubre 16 idiomas y ofrece 118 voces distintas, lo que lo posiciona como una alternativa ligera y multilingüe frente a modelos TTS de mayor tamaño que requieren GPU.
+Kitten TTS 2 Mini es un modelo de síntesis de voz (text-to-speech) desarrollado por KittenML, diseñado para inferencia en CPU con un tamaño reducido. Con 82 millones de parámetros, ofrece salida de audio a 24 kHz y soporta 16 idiomas con un total de 118 voces predefinidas. El modelo se distribuye en formato ONNX con pesos cuantizados a int8 (82,7 MB) e int4 (47,5 MB), además de los pesos originales en float32 para PyTorch, lo que permite su despliegue sin dependencia de GPU ni de PyTorch en el caso de las variantes ONNX.
 
-La arquitectura se distribuye en dos formatos: un grafo ONNX con pesos cuantizados a int8 de solo 82,7 MB, ejecutable mediante ONNX Runtime en CPU, y pesos PyTorch en float32 para ejecución opcional en GPU. La frecuencia de muestreo de salida es de 24 kHz, lo que proporciona calidad de audio adecuada para aplicaciones de producción sin el coste computacional de modelos más pesados.
+La relevancia del modelo radica en su relación entre calidad, tamaño y requisitos de hardware: es capaz de generar voz en múltiples idiomas y con voces diferenciadas por registro y estilo (desde una historiadora sombría hasta un locutor deportivo energético) ocupando menos de 100 MB en disco y ejecutándose en CPU mediante ONNX Runtime. Esto lo posiciona como una opción práctica para aplicaciones embebidas, asistentes locales y pipelines de generación de audio a escala sin infraestructura de GPU.
 
-El modelo resulta relevante en el contexto actual de despliegue en el borde (edge computing) y aplicaciones de bajo consumo: permite integrar síntesis de voz multilingüe en entornos sin GPU, contenedores ligeros y dispositivos con recursos limitados, con licencia Apache 2.0 que facilita su uso comercial. La selección de voz determina el idioma, y las voces inglesas pueden hablar también alemán, español, italiano, portugués y ruso mediante el parámetro `language`.
+El modelo se publica bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en productos derivados. La librería `kittenml` proporciona una API de alto nivel para seleccionar voces, idiomas, velocidad y backend de ejecución.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo TTS neuronal; pesos ONNX y PyTorch) |
-| Parametros totales | 82M |
+| Arquitectura | no disponible (modelo TTS; pesos en ONNX y PyTorch) |
+| Parametros totales | 82 M |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int8 (ONNX), float32 (PyTorch) |
-| Idiomas soportados | en, de, es, it, pt, ru, hi, da, fi, fr, ja, ko, nl, sv, sw, tr |
+| Tipos de cuantizacion | int8 (82,7 MB), int4 (47,5 MB), float32 (PyTorch) |
+| Idiomas soportados | en, de, es, it, pt, ru, hi, da, fi, fr, ja, ko, nl, sv, sw, tr (16 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (int8, 82,7 MB), safetensors/PyTorch (float32) |
+| Formato de pesos | ONNX (int8, int4) y safetensors/PyTorch (float32) |
+| Frecuencia de muestreo | 24 kHz |
+| Voces disponibles | 118 voces en total, organizadas por idioma |
+| Tamano del repositorio | 0,5 GB |
+| Libreria | onnx |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Se trata de un modelo de síntesis de voz neuronal con 82 millones de parámetros, distribuido en dos backends: un grafo ONNX con pesos cuantizados a int8 que se ejecuta mediante ONNX Runtime sin necesidad de PyTorch, y pesos PyTorch en float32 para ejecución en CPU o GPU (CUDA). La salida de audio se genera a 24 kHz.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Se trata de un modelo de síntesis de voz con 82 millones de parámetros que genera audio a 24 kHz a partir de texto. La model card no especifica si emplea un transformer, un modelo acústico basado en difusión, un vocoder neuronal o una arquitectura híbrida, ni detalla la composición del dataset de entrenamiento, el número de horas de audio utilizadas o si se aplicaron técnicas de RLHF o ajuste fino supervisado.
 
-El modelo emplea un sistema de "voice packs" almacenados en archivos `voices_<lang>.npz`, donde cada voz se identifica por un nombre en minúsculas. Las voces inglesas comparten nombre con personajes de KittenTTS 2 y pueden hablar también alemán, español, italiano, portugués y ruso bajo el mismo nombre, seleccionando el idioma mediante el parámetro `language`. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens utilizados ni si se emplearon técnicas de RLHF o DPO.
+La innovación técnica destacable es la disponibilidad de pesos cuantizados a int8 e int4 en formato ONNX, que permiten la inferencia en CPU con ONNX Runtime (versión 1.20 o superior para int4) sin necesidad de PyTorch. El modelo también ofrece pesos float32 para ejecución en PyTorch, con soporte opcional de GPU mediante `device="cuda"`. La selección de backend y formato de pesos determina qué archivos se descargan, optimizando el uso de disco y memoria.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) en 16 idiomas: inglés, alemán, español, italiano, portugués, ruso, hindi, danés, finés, francés, japonés, coreano, neerlandés, sueco, suajili y turco.
-- 118 voces distintas con nombres y descripciones de estilo (por ejemplo, "Eleanor: historiadora sombría", "Max: locutor deportivo energético").
+- Generación de voz a partir de texto en 16 idiomas: inglés, alemán, español, italiano, portugués, ruso, hindi, danés, finés, francés, japonés, coreano, neerlandés, sueco, suajili y turco.
+- 118 voces predefinidas con nombres y descripciones de estilo (por ejemplo, "Eleanor" como historiadora sombría, "Max" como locutor deportivo energético).
 - Control de velocidad de habla mediante el parámetro `speed` (por ejemplo, `speed=1.1`).
-- Selección de voz por nombre o por descripción, sin distinción de mayúsculas.
-- Selección de idioma explícita mediante `language=`, con la primera voz del idioma como predeterminada si no se especifica voz.
-- Ejecución en CPU mediante ONNX Runtime (backend por defecto) sin necesidad de PyTorch.
-- Ejecución opcional en GPU mediante backend PyTorch con `device="cuda"`.
-- Salida de audio a 24 kHz compatible con bibliotecas estándar como `soundfile`.
-- Voces multilingües compartidas: las voces inglesas (Eleanor, Martha, Serena, Iris, Grace, Edith, Diana, Otis, Vincent) pueden hablar alemán, español, italiano, portugués y ruso.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada.
+- Selección de voz por nombre (insensible a mayúsculas) o por descripción.
+- Selección de idioma explícita mediante el parámetro `language`, con voz predeterminada por idioma.
+- Las voces inglesas pueden hablar alemán, español, italiano, portugués y ruso bajo el mismo nombre, permitiendo consistencia de timbre entre idiomas.
+- Inferencia en CPU mediante ONNX Runtime con pesos int8 o int4.
+- Inferencia en GPU mediante PyTorch con pesos float32.
+- No se menciona soporte de tool calling, agentes, razonamiento multi-paso ni otras capacidades de texto más allá de la síntesis de voz.
 
 ## Casos de uso
 
-- **Atención al cliente automatizada en múltiples idiomas**: el modelo permite generar respuestas de voz en 16 idiomas con una sola instancia, seleccionando la voz adecuada por idioma o reutilizando voces inglesas para alemán, español, italiano, portugués y ruso, lo que simplifica el despliegue en centros de contacto internacionales.
-- **Lectura de artículos y accesibilidad**: integración en aplicaciones de lectura de pantalla o lectores de noticias que convierten texto en audio a 24 kHz, ejecutándose en CPU sin GPU y con un peso de solo 82,7 MB, adecuado para dispositivos de asistencia de bajo coste.
-- **Generación de audio para vídeos y pódcast**: producción de narraciones con voces con estilo definido (locutor deportivo, presentador de pódcast, historiadora) y control de velocidad, útil para creadores de contenido que necesitan múltiples voces sin infraestructura GPU.
-- **Sistemas de navegación y avisos por voz en el borde**: despliegue en dispositivos embebidos o vehículos donde no hay GPU disponible, aprovechando el backend ONNX int8 y la inferencia en CPU para generar instrucciones de voz en el idioma del usuario.
-- **Prototipado rápido de asistentes de voz**: uso de la librería `kittenml` con `pip install kittenml` para generar audio en pocas líneas de código, facilitando la validación de conceptos de asistentes conversacionales multilingües antes de invertir en modelos mayores.
-- **Localización de contenido educativo**: generación de material audioeducativo en hindi, suajili, turco, coreano o neerlandés, idiomas con menor cobertura en modelos TTS comerciales, con licencia Apache 2.0 que permite su uso en plataformas educativas.
-- **Integración en pipelines de CI/CD para pruebas de audio**: generación automatizada de muestras de voz en distintos idiomas y voces para validar sistemas de reconocimiento de voz o de diálogo, gracias a la ligereza del modelo y su ejecución sin GPU.
+- Asistentes de voz locales en dispositivos embebidos: el modelo puede ejecutarse en CPU con pesos int4 de 47,5 MB, lo que permite integrarlo en raspberry pi, routers o dispositivos IoT para respuestas habladas sin conexión a la nube.
+- Generación de audiolibros y contenido narrado: con 118 voces y control de velocidad, se pueden producir narraciones con distintos registros (historiador, periodista, instructor de yoga) para diferentes secciones o personajes.
+- Atención al cliente automatizada por voz: el modelo puede generar respuestas habladas en 16 idiomas, adecuado para sistemas de IVR o chatbots telefónicos que requieran síntesis en tiempo real en servidores sin GPU.
+- Localización de contenido multimedia: las voces inglesas que hablan también alemán, español, italiano, portugués y ruso permiten mantener el mismo timbre en versiones dobladas de un mismo contenido, facilitando la coherencia de marca.
+- Accesibilidad y lectores de pantalla: la inferencia en CPU y el reducido tamaño permiten integrar el modelo en aplicaciones de escritorio o móviles para leer texto en voz alta con voces variadas y en múltiples idiomas.
+- Generación de audio para pruebas y prototipado: los desarrolladores pueden generar clips de voz de forma rápida y local para probar interfaces de voz, videojuegos o aplicaciones de aprendizaje de idiomas sin depender de servicios externos.
+- Sistemas de anuncios públicos y megafonía: la voz "Max" (locutor deportivo energético) o "Diana" (oficial militar severa) pueden emplearse para mensajes de anuncio en estaciones, aeropuertos o eventos.
 
 ## Benchmarks y rendimiento
 
@@ -56,35 +59,28 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en el backend ONNX por defecto (ejecución en CPU); en backend PyTorch con `device="cuda"` se requiere VRAM no especificada, pero al tratarse de 82M parámetros en float32 (aproximadamente 328 MB de pesos) la huella es reducida.
-- GPU recomendadas: no se especifican; cualquier GPU compatible con CUDA y PyTorch puede ejecutar el backend `torch`. El backend ONNX no requiere GPU.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo con CUDA para el backend PyTorch; el backend ONNX está pensado para CPU.
-- Opciones de despliegue: ONNX Runtime (backend por defecto, int8), PyTorch (float32, CPU o CUDA), librería `kittenml` (`pip install kittenml`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no aplica en modo ONNX (CPU); en modo PyTorch con float32, el modelo de 82 M de parámetros ocupa aproximadamente 328 MB en memoria (más overhead), por lo que puede ejecutarse en GPU con al menos 1 GB de VRAM.
+- GPU recomendadas: cualquier GPU compatible con PyTorch (por ejemplo, RTX 3060, RTX 4090, A100, H100) para el backend `torch` con `device="cuda"`. Para el backend ONNX, no se requiere GPU.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer con al menos 1 GB de VRAM para la variante float32. Las variantes ONNX int8 e int4 están pensadas para CPU.
+- Opciones de despliegue: ONNX Runtime (backend por defecto, con int8 o int4) y PyTorch (float32, CPU o CUDA). La librería `kittenml` gestiona la descarga selectiva de archivos según backend y formato.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada. Se indica "no disponible" para los parámetros de rendimiento. A continuación se comparan únicamente los datos disponibles de alternativas conocidas del mismo segmento, marcando como "no disponible" lo que no se ha podido verificar:
-
-| Modelo | Parámetros | Idiomas | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Kitten TTS 2 Mini | 82M | 16 | no disponible | Apache 2.0 | ONNX int8, PyTorch float32 |
-| Alternativas TTS ligeras | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se han identificado en la información proporcionada modelos comparables concretos con especificaciones verificables.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos del modelo; como todo sistema TTS entrenado con datos de voz, puede reflejar sesgos de acento, género o registro presentes en el corpus de entrenamiento.
-- Riesgo de alucinación no aplica en el sentido de generación de texto, pero la síntesis puede producir pronunciaciones incorrectas en palabras poco frecuentes, nombres propios o idiomas con menor representación (por ejemplo, suajili o neerlandés).
-- La selección de voz determina el idioma: las voces inglesas hablan por defecto inglés, y para que hablen alemán, español, italiano, portugués o ruso es necesario pasar explícitamente `language=`. Sin este parámetro, la salida será en inglés.
-- No todas las voces están disponibles en todos los idiomas: hindi, danés, finés, francés, japonés, coreano, neerlandés, sueco, suajili y turco tienen conjuntos de voces propios y más reducidos, sin las voces inglesas compartidas.
-- El modelo no dispone de parámetros de control de emoción, prosodia avanzada ni clonación de voz más allá de las 118 voces predefinidas.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se indique si se han realizado cambios. No se han documentado restricciones adicionales.
-- Para producción, la calidad de la síntesis en idiomas con menos voces o datos puede ser inferior; se recomienda evaluar muestras por idioma antes del despliegue.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que el modelo es reciente y cuenta con poca validación comunitaria.
+- No se ha publicado información sobre sesgos en las voces o en los datos de entrenamiento; es probable que las voces reflejen sesgos de los corpus utilizados, pero no se detalla.
+- Riesgo de alucinación no aplica en el sentido de generación de texto falso, pero sí puede haber errores de pronunciación o entonación en textos complejos, idiomas menos representados o nombres propios.
+- La longitud de contexto no está especificada; textos muy largos pueden requerir segmentación manual, y no se garantiza coherencia prosódica en pasajes extensos.
+- La calidad de la síntesis en los 16 idiomas puede variar; la model card no proporciona métricas por idioma (MOS, WER, etc.).
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones de las voces (algunas descripciones podrían evocar personas reales, aunque son nombres genéricos).
+- El backend ONNX con int4 requiere `onnxruntime>=1.20`; versiones anteriores pueden no funcionar.
+- No se especifica el soporte para SSML, control de prosodia avanzado ni emoción más allá de la descripción de la voz.
+- El tamaño del repositorio es de 0,5 GB, pero la descarga selectiva mitiga el impacto en disco.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/KittenML/kitten-tts-2-mini
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.
+- [Hugging Face: KittenML/kitten-tts-2-mini](https://huggingface.co/KittenML/kitten-tts-2-mini)
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

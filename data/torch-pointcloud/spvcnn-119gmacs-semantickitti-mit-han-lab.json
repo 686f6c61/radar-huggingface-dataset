@@ -51,33 +51,13 @@
       "dataset": "SemanticKITTI",
       "metric": "mIoU",
       "value": 63.74
+    },
+    {
+      "task": null,
+      "dataset": "SemanticKITTI",
+      "metric": "OA",
+      "value": 92.46
     }
   ],
-  "sources": [
-    {
-      "title": "torch-pointcloud (PyTorch PointCloud) - Hugging Face",
-      "url": "https://huggingface.co/torch-pointcloud",
-      "snippet": "PyTorch PointCloud (torch-pointcloud) is a collection of point cloud models, layers, utilities, datasets, transforms, and reference training / benchmarking scripts that aim to reproduce SOTA models and help researchers and engineers reuse common layers."
-    },
-    {
-      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
-      "url": "https://benchlm.ai/model-updates/releases/august-2026",
-      "snippet": "24 confirmed AI model releases from 18 providers in August 2026, with primary evidence sources and BenchLM model links."
-    },
-    {
-      "title": "GitHub - mit-han-lab/spvnas: [ECCV 2020] Searching Efficient 3D ...",
-      "url": "https://github.com/mit-han-lab/spvnas",
-      "snippet": "[ECCV 2020] Searching Efficient 3D Architectures with Sparse Point-Voxel Convolution - mit-han-lab/spvnas"
-    },
-    {
-      "title": "spv-cnn/README.md at master · STU-Z/spv-cnn · GitHub",
-      "url": "https://github.com/STU-Z/spv-cnn/blob/master/README.md",
-      "snippet": "[ECCV 2020] Searching Efficient 3D Architectures with Sparse Point-Voxel Convolution - spv-cnn/README.md at master · STU-Z/spv-cnn"
-    },
-    {
-      "title": "‎Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
-    }
-  ]
+  "sources": []
 }

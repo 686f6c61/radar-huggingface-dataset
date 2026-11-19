@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "suraj-phanindra/microduck-roller-hc5b-aifund",
+  "slug": "suraj-phanindra-microduck-roller-hc5b-aifund",
+  "author": "suraj-phanindra",
+  "url": "https://huggingface.co/suraj-phanindra/microduck-roller-hc5b-aifund",
+  "created_at": "2026-11-18T22:46:31.000Z",
+  "updated_at": "2026-11-18T22:46:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:juicenv/microduck-roller-es21",
+    "base_model:finetune:juicenv/microduck-roller-es21",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793832,
+  "storage_human": "793832 B",
+  "context_length": null,
+  "base_model": "juicenv/microduck-roller-es21",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "suraj-phanindra/microduck-roller-hc5-aifund · Hugging Face",
+      "url": "https://huggingface.co/suraj-phanindra/microduck-roller-hc5-aifund",
+      "snippet": "roller-hc5-aifund juicenv/microduck-roller-es21 fine-tuned by elitist hill climb on the Arena score A perpetual policy for the microduck (61-D observation, 14 actions, 50 Hz, on rollers). Runs until told otherwise — a gait, loaded into a policy slot."
+    },
+    {
+      "title": "suraj-phanindra/microduck-roller-hc7-aifund · Hugging Face",
+      "url": "https://huggingface.co/suraj-phanindra/microduck-roller-hc7-aifund",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

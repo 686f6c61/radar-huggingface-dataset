@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "jamespetts/yue2-1980s-eurodisco-lora · Hugging Face",
-      "url": "https://huggingface.co/jamespetts/yue2-1980s-eurodisco-lora",
-      "snippet": "A NAR (texture/timbre) LoRA for YuE2 that supplies 1980s Eurodisco production character: dense wall-of-sound production, chorused synth bass, four-on-the-floor drums with gated toms, stacked synth pads, brass/strings stabs, 80s studio gloss. Released CC0 by James E. Petts. The two files are the same ..."
-    },
-    {
-      "title": "jamespetts (James E. Petts) - Hugging Face",
-      "url": "https://huggingface.co/jamespetts",
-      "snippet": "Cake Recent Activity updated a model2 days ago jamespetts/yue2-1980s-eurodisco-lora published a model2 days ago jamespetts/yue2-1980s-eurodisco-lora View all activity"
-    }
-  ]
+  "sources": []
 }

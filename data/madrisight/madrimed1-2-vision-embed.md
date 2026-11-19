@@ -2,91 +2,90 @@
 
 ## Resumen
 
-Madrimed 1.2 Vision Embed es un codificador visual aislado (vision encoder) desarrollado por madrisight, orientado a la extraccion de caracteristicas densas de imagenes medicas y radiologicas. El modelo proyecta imagenes de resolucion dinamica en un espacio de embeddings de 2048 dimensiones normalizados en L2, disenado para alineacion cross-modal y para la construccion de topologias de Graph Retrieval-Augmented Generation (Graph RAG). Se distribuye como un tower visual independiente, sin cabezal generativo, y se usa en conjuncion con el modelo de texto madrisight/madrimed1.2-text-embed para recuperacion semantica imagen-texto.
+Madrimed 1.2 Vision Embed es un codificador visual (vision encoder) aislado, desarrollado por madrisight, diseñado para extraer representaciones densas de imágenes médicas y radiológicas (TC, RM, rayos X y otras modalidades). Proyecta imágenes de resolución dinámica en un espacio de embeddings de 2048 dimensiones normalizado en L2, pensado para alineación multimodal y para la construcción de grafos de recuperación aumentada (Graph RAG). Con 406.957.056 parámetros, es un modelo compacto orientado exclusivamente a la extracción de características, no a la generación de texto.
 
-Arquitectonicamente es un Vision Transformer (ViT) basado en la familia Qwen3-VL (`qwen3_vl_vision`), con patch merging espacial mediante proyeccion lineal 2x2 y una dimension de caracteristica de 2048, pensada para coincidir con la dimension de entrada de modelos de lenguaje transformer. Cuenta con aproximadamente 407 millones de parametros (406.957.056 segun los pesos en safetensors) y un repositorio de 1,6 GB.
+El modelo se basa en una arquitectura de tipo Vision Transformer (ViT) con un módulo de fusión de parches (*patch merging*) que comprime la rejilla espacial mediante una proyección lineal 2×2, y se distribuye a través de la clase `Qwen3VLVisionModel` de transformers. Su función principal es servir como torre visual dentro de un pipeline multimodal: combinado con el modelo de texto `madrisight/madrimed1.2-text-embed`, permite la recuperación semántica de imágenes médicas mediante consultas en lenguaje natural.
 
-Su relevancia actual radica en el auge de los pipelines de recuperacion aumentada sobre imagenes clinicas: indexacion visual en PACS hospitalarios, recuperacion de casos radiologicos similares y construccion de grafos de conocimiento medico. Frente a modelos generativos multimodales, este encoder ofrece una salida puramente vectorial, mas ligera y adecuada para busqueda por similitud y clustering a escala de cohortes de pacientes.
+Su relevancia actual radica en el auge de los sistemas de Graph RAG aplicados a dominios clínicos, donde la recuperación de casos similares (CBIR) y la indexación visual en sistemas PACS requieren representaciones robustas y ligeras. Al publicarse bajo licencia Apache 2.0 y con un tamaño de repositorio de 1,6 GB, es desplegable en infraestructura moderada, aunque su alcance está estrictamente limitado a tareas de recuperación y agrupamiento, no a diagnóstico autónomo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (ViT) basado en Qwen3-VL (`qwen3_vl_vision`) con patch merging 2x2 por proyeccion lineal |
+| Arquitectura | Vision Transformer (ViT) con patch-merging projection (Qwen3-VL vision tower) |
 | Parametros totales | 406.957.056 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de extraccion de caracteristicas, no generativo) |
-| Tipos de cuantizacion | no disponible |
+| Longitud de contexto | no disponible (resolución de imagen dinámica; no aplica contexto textual) |
+| Tipos de cuantizacion | no disponible (pesos en float32 en los ejemplos; safetensors) |
 | Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un Vision Transformer con resolucion dinamica que procesa imagenes medicas de distintas modalidades (TC, RM, rayos X) y las proyecta a un espacio de embeddings de 2048 dimensiones normalizados en L2. Incorpora un patch merger espacial que comprime parches 2x2 mediante proyeccion lineal, lo que reduce la secuencia de tokens visuales antes de la proyeccion final. La geometria de caracteristicas resultante es de tipo "modality-dominant": los scans se agrupan principalmente por fisica de imagen y contraste tisular, lo que resulta util para separar cohortes por modalidad antes de refinar por similitud estructural.
+La arquitectura es un Vision Transformer aislado que actúa como torre de representación visual. Las imágenes de resolución dinámica se dividen en parches y se procesan mediante atención, tras lo cual un módulo de *patch merging* aplica una compresión espacial 2×2 mediante proyección lineal, reduciendo el número de tokens visuales. La salida se proyecta a una dimensión de características de 2048, coincidente con la dimensión de entrada de modelos de lenguaje transformer, y se normaliza en L2. La geometría de características resultante está dominada por la modalidad: el espacio agrupa principalmente los escaneos según la física de imagen y el contraste tisular.
 
-La model card no detalla el volumen de datos de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o ajuste contrastivo supervisado. Tampoco se especifican innovaciones como decodificacion especulativa o atencion lineal. La documentacion si incluye directrices operativas para el despliegue en pipelines de recuperacion: aplicar centrado de medias (mean-centering) o correccion de hubness antes de umbralizar por coseno estatico, para evitar la formacion de nodos hub de alto grado en el grafo.
+No se dispone de información detallada sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO (no aplicables a un codificador de características). Tampoco se documentan innovaciones como decodificación especulativa o atención lineal. La model card sí destaca una consideración técnica relevante: el espacio visual presenta anisotropía, por lo que recomienda aplicar centrado de media o corrección de hubness antes de umbralizar similitudes coseno estáticas, para evitar la formación de nodos *hub* de alto grado en los grafos.
 
 ## Capacidades
 
-- Extraccion de caracteristicas visuales densas de imagenes medicas: TC, RM, rayos X y otras modalidades radiologicas.
-- Proyeccion a embeddings de 2048 dimensiones normalizados en L2, listos para busqueda por similitud coseno.
-- Alineacion cross-modal con el modelo de texto madrisight/madrimed1.2-text-embed para recuperacion visual mediante consultas textuales.
-- Indexacion visual para Graph RAG: construccion de grafos de k-vecinos mas cercanos (k-NN) basados en similitud coseno.
-- Recuperacion de casos radiologicos visual y estructuralmente similares (Content-Based Image Retrieval, CBIR).
-- Soporte de resolucion dinamica de imagen.
-- No soporta generacion de texto, tool calling, razonamiento multi-paso ni agentes: es exclusivamente un encoder de caracteristicas.
-- Capacidades multilingues: no disponibles; el modelo esta etiquetado solo para ingles.
+- Extracción de características visuales densas de imágenes médicas en un espacio de 2048 dimensiones normalizado en L2.
+- Procesamiento de imágenes de resolución dinámica (rayos X, TC, RM y otras modalidades radiológicas).
+- Generación de embeddings para indexación visual y construcción de grafos de vecinos más cercanos (k-NN) por similitud coseno.
+- Recuperación multimodal imagen-texto cuando se combina con `madrisight/madrimed1.2-text-embed`, permitiendo consultas textuales sobre un corpus de imágenes.
+- Soporte de recuperación basada en contenido (CBIR) para razonamiento basado en casos.
+- Integración en pipelines de Graph RAG mediante la librería `metalliger`.
+- No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso: es exclusivamente un codificador de características.
+- Capacidad multilingüe limitada al inglés (`en`) en lo que respecta a la alineación con el modelo de texto asociado.
 
 ## Casos de uso
 
-- Recuperacion de casos radiologicos similares en PACS hospitalarios: el encoder indexa los estudios de una cohorte en un espacio de 2048 dimensiones y permite recuperar scans visual y estructuralmente parecidos mediante similitud coseno, apoyando el razonamiento basado en casos.
-- Construccion de grafos de conocimiento medico para Graph RAG: genera embeddings que alimentan grafos k-NN, sobre los que se ejecutan consultas de recuperacion de subgrafos de contexto para sistemas de soporte a la decision.
-- Busqueda visual mediante consultas de texto: combinado con madrimed1.2-text-embed, permite localizar imagenes medicas a partir de descripciones textuales, util en interfaces de exploracion de archivos clinicos.
-- Clustering y estratificacion de cohortes: agrupa estudios por modalidad y contraste tisular para organizar grandes volumenes de imagenes antes de analisis posteriores.
-- Deduplicacion y control de calidad de datasets medicos: detecta imagenes duplicadas o casi duplicadas en repositorios de entrenamiento mediante umbrales de similitud coseno corregidos por hubness.
-- Enriquecimiento de pipelines de investigacion clinica: genera representaciones vectoriales reutilizables para tareas posteriores de clasificacion, regresion o analisis topologico sin reentrenar el encoder.
-- Indexacion en sistemas de recuperacion de imagenes medicas a escala: con 407 millones de parametros y pesos en safetensors, puede desplegarse en infraestructura GPU moderada para servir busquedas por similitud.
+- Indexación visual en Graph RAG clínico: el modelo genera embeddings de 2048 dimensiones para cada estudio, que se conectan en un grafo k-NN por similitud coseno; esto permite recuperar subgrafos de contexto relevantes ante una consulta, tal como muestra el ejemplo de la model card con `query_graph_rag_pure`.
+- Recuperación de casos radiológicos similares: dado un estudio de un paciente, el codificador permite identificar escaneos visual y estructuralmente parecidos dentro de una cohorte, apoyando el razonamiento basado en casos en entornos clínicos.
+- CBIR en sistemas PACS hospitalarios: integrado en el archivo de imágenes, permite búsquedas por contenido visual para localizar estudios previos con patrones de imagen comparables, sin depender de metadatos textuales.
+- Búsqueda multimodal texto-a-imagen: combinado con el modelo de texto asociado, un radiólogo puede formular una consulta en lenguaje natural y recuperar las imágenes médicas semánticamente más próximas del archivo.
+- Agrupamiento y análisis de cohortes: los embeddings permiten agrupar estudios por modalidad y contraste tisular, facilitando la organización de grandes volúmenes de imágenes para estudios retrospectivos o control de calidad de datasets.
+- Construcción de bases de conocimiento médico estructuradas: los grafos de similitud generados sirven como base topológica para sistemas de recomendación de casos o para enriquecer ontologías clínicas con relaciones visuales.
+- Preprocesamiento para pipelines de visión-lenguaje: al coincidir la dimensión de salida (2048) con la entrada de modelos de lenguaje, puede actuar como torre visual en arquitecturas multimodales que requieran un codificador médico especializado y ligero.
 
 ## Benchmarks y rendimiento
 
-La model card incluye evaluaciones cualitativas mediante notebooks y graficos (Medical Image Graph RAG sobre sistemas corporales y un diagnostico del espacio visual), pero no presenta tablas con metricas numericas (MMLU, recall@k, mAP u otras) en la informacion disponible.
+La model card menciona una evaluación empírica mediante cohortes médicas multi-órgano estratificadas y enlaza un cuaderno de evaluación (`embedding_vision_graphrag.ipynb`), pero no se publican cifras numéricas de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible.
+No se han publicado resultados de benchmarks numéricos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 407 millones de parametros, en FP32 ocupa aproximadamente 1,6 GB de pesos; en FP16/BF16 alrededor de 0,8 GB. La VRAM total depende del tamano de lote y de la resolucion de las imagenes procesadas.
-- GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM para inferencia en precision media; A100 o H100 para indexacion masiva de cohortes y procesamiento por lotes de alta resolucion.
-- Cabe en GPU de consumo: si, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o RTX 4090, siempre ajustando el tamano de lote a la VRAM disponible.
-- Opciones de despliegue: transformers con `Qwen3VLVisionModel` y `trust_remote_code=True`; el ejemplo oficial usa el paquete `metalliger` (instalable desde GitHub) para la construccion del grafo y la recuperacion Graph RAG. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: con 406,9 M de parámetros en float32 (como en el ejemplo de la model card), los pesos ocupan aproximadamente 1,6 GB; el uso total de VRAM depende del tamaño de lote y de la resolución de las imágenes procesadas, que es dinámica.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para lotes pequeños en float32; GPU de datacenter (A100, H100) para indexación masiva por lotes.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y superiores, dado el reducido tamaño del modelo.
+- Opciones de despliegue: transformers (`Qwen3VLVisionModel` con `AutoProcessor`), con soporte de `trust_remote_code`; el ejemplo oficial usa CUDA, MPS o CPU. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada; el ejemplo de la model card registra latencias por imagen (`latencies`) durante la construcción del grafo, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| madrisight/madrimed1.2-vision-embed | 406.957.056 | no disponible | Vision encoder (ViT, Qwen3-VL) | apache-2.0 | Hugging Face |
-| madrisight/madrimed1.2-VL-2B | no disponible | no disponible | Modelo vision-lenguaje | no disponible | Hugging Face |
-| madrisight/madrimed1.2-text-embed | no disponible | no disponible | Encoder de texto | no disponible | Hugging Face |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo pertenece a la categoría de codificadores visuales médicos para recuperación, pero no se han facilitado datos de alternativas como BiomedCLIP u otros encoders radiológicos que permitan una comparación rigurosa de parámetros, contexto, rendimiento y licencia.
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa con encoders visuales medicos de otros autores no esta disponible.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| madrimed1.2-vision-embed | 406,9 M | no disponible | apache-2.0 | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- No es una herramienta de diagnostico: produce representaciones vectoriales para recuperacion y clustering; no sustituye la revision de un radiologo certificado.
-- Anisotropia visual: los embeddings pueden formar nodos hub de alto grado; la model card recomienda aplicar centrado de medias o correccion de hubness antes de umbralizar por coseno estatico.
-- Riesgo de similitudes enganosas: la geometria esta dominada por la modalidad de imagen y el contraste tisular, por lo que la recuperacion puede agrupar scans por fisica de imagen antes que por patologia.
-- Idioma: solo etiquetado para ingles; el rendimiento en consultas u otros idiomas no esta documentado.
-- Sesgos: no se documentan sesgos conocidos, pero al ser un modelo entrenado con datos radiologicos no especificados, puede heredar sesgos de representacion de la poblacion de entrenamiento.
-- Datos de entrenamiento no publicados: no se detalla el dataset, lo que dificulta evaluar la cobertura de modalidades y la generalizacion a equipos o protocolos distintos.
-- Licencia apache-2.0: permite uso comercial, pero el autor restringe explicitamente el uso como herramienta diagnostica primaria.
-- Dependencia de codigo externo: el ejemplo oficial requiere el paquete `metalliger` y `trust_remote_code=True`, lo que anade superficie de mantenimiento y riesgos de seguridad en produccion.
+- No es una herramienta de diagnóstico: produce representaciones vectoriales para recuperación y agrupamiento; no sustituye la revisión de un radiólogo certificado ni emite determinaciones diagnósticas autónomas.
+- Anisotropía del espacio visual: los embeddings requieren centrado de media o corrección de hubness antes de aplicar umbrales coseno estáticos, para evitar la formación de nodos hub de alto grado que distorsionen los grafos.
+- Idiomas: el modelo está etiquetado únicamente para inglés (`en`); la alineación con consultas en otros idiomas depende del modelo de texto asociado y no está garantizada.
+- Sesgos: no se documentan análisis de sesgo por subgrupos demográficos, modalidad o institución; los datasets médicos de entrenamiento pueden introducir sesgos de representación que afecten a la recuperación en poblaciones subrepresentadas.
+- Riesgo de alucinación: no aplica generación de texto, pero la recuperación puede devolver casos visualmente similares que no sean clínicamente equivalentes; la similitud de embedding no implica equivalencia diagnóstica.
+- Licencia Apache 2.0: permite uso comercial, pero el despliegue en entornos clínicos puede estar sujeto a regulaciones sanitarias (por ejemplo, marcado CE o aprobación FDA) que exceden la licencia del modelo.
+- Dependencia de la librería `metalliger` y de `trust_remote_code`: el ejemplo oficial requiere instalar desde GitHub y ejecutar con código remoto de confianza, lo que añade superficie de riesgo en producción.
+- Alcance limitado: no soporta generación, tool calling ni razonamiento; cualquier flujo que requiera estas capacidades debe combinarse con otros modelos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/madrisight/madrimed1.2-vision-embed
-- Modelo de texto complementario: https://huggingface.co/madrisight/madrimed1.2-text-embed
-- Modelo vision-lenguaje relacionado: https://huggingface.co/madrisight/madrimed1.2-VL-2B
-- Repositorio del paquete metalliger: https://github.com/krrish-v/metalliger
-- Notebook de evaluacion de embeddings: https://github.com/krrish-v/all_huggingface/blob/main/embedding_model_evaluation/embedding_vision_graphrag.ipynb
+- Modelo de texto asociado: https://huggingface.co/madrisight/madrimed1.2-text-embed
+- Repositorio de la librería metalliger: https://github.com/krrish-v/metalliger
+- Cuaderno de evaluación de embeddings: https://github.com/krrish-v/all_huggingface/blob/main/embedding_model_evaluation/embedding_vision_graphrag.ipynb
+- Repositorio de recursos e imágenes: https://github.com/krrish-v/all_huggingface

@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "淘宝",
-      "url": "https://www.taobao.com/",
-      "snippet": "Taobao | 淘宝 淘宝网是 阿里巴巴 集团旗下的国际化网络购物平台， 淘宝网 为消费者提供互动化、个性化的购物体验。消费者能够从 …"
-    },
-    {
-      "title": "Taobao | 淘寶",
-      "url": "https://world.taobao.com/",
-      "snippet": "淘寶（Taobao）是面向全球的綜合性電商平台，匯聚數億熱銷好貨，涵蓋流行服飾、家具家居、美妝洗護、3C數碼、大小家電、運動 …"
-    },
-    {
-      "title": "Taobao Global - 淘寶",
-      "url": "https://www.taobao.com/markets/gmall/",
-      "snippet": "Taobao Global can also help you by organizing live broadcasts to these retailers and buyers, offline events, and an online cross …"
-    },
-    {
-      "title": "Parcel Up: Acheter sur Taobao en français, Agent Taobao.com",
-      "url": "https://parcelup.com/fr/",
-      "snippet": "En tant qu'agent Taobao professionnel, nous vous aidons à acheter sur Taobao toute sorte de produits au prix très bas avec la …"
-    },
-    {
-      "title": "Sign in - Taobao Global Open Platform",
-      "url": "https://open.taobao.global/app/index.htm",
-      "snippet": "The platform requires that the password setting must be a strong password. Please modify it as soon as possible to avoid affecting …"
-    }
-  ]
+  "sources": []
 }

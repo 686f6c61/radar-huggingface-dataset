@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "gachimoto/tiny-voca-ja",
+  "slug": "gachimoto-tiny-voca-ja",
+  "author": "gachimoto",
+  "url": "https://huggingface.co/gachimoto/tiny-voca-ja",
+  "created_at": "2026-11-18T22:08:25.000Z",
+  "updated_at": "2026-11-18T22:08:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "ja",
+    "dataset:gachimoto/tiny-voca-ja",
+    "base_model:n4ze3m/tiny-voca",
+    "base_model:quantized:n4ze3m/tiny-voca",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53102803,
+  "storage_human": "53 MB",
+  "context_length": null,
+  "base_model": "n4ze3m/tiny-voca",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prise de participation des personnes publiques dans les sociétés de ...",
+      "url": "https://www.seban-associes.avocat.fr/prise-de-participation-des-personnes-publiques-dans-les-societes-de-production-denergies-renouvelables-le-conseil-detat-tranche/",
+      "snippet": "Jun 4, 2026 · Or, le Conseil d’Etat juge que la possibilité pour les communes et leurs groupements de prendre des participations …"
+    },
+    {
+      "title": "SEBAN AVOCATS et FNCCR – Arrêt du Conseil d’État du 26 mai 2026 …",
+      "url": "https://www.seban-associes.avocat.fr/129158-2/",
+      "snippet": "Jun 5, 2026 · La FNCCR et Seban Avocats publient une note d’analyse consacrée à la décision du Conseil d’État du 26 mai 2026 …"
+    },
+    {
+      "title": "Energies renouvelables : une commune dispose de compétences …",
+      "url": "https://www.gossement-avocats.com/blog/une-commune-dispose-de-competences-distinctes-pour-encourager-la-production-denergies-renouvelables-et-peut-continuer-dexercer-celle-quelle-na-pas-transferee-a-un-etablissement-public-de-coope/",
+      "snippet": "May 30, 2026 · Par une décision n°495221 rendue le 26 mai 2026, le Conseil d’Etat a apporté une réponse claire et bienvenue à …"
+    }
+  ]
+}

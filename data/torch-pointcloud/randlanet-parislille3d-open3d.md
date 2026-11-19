@@ -2,109 +2,101 @@
 
 ## Resumen
 
-RandLA-Net para Paris-Lille-3D es un modelo de segmentación semántica de nubes de puntos 3D publicado por el usuario `torch-pointcloud` en Hugging Face, empaquetado para la librería PyTorch PointCloud de Arthur Dujardin. Se trata de una conversión de los pesos de referencia de Open3D-ML (licencia MIT) al formato safetensors, con 5.010.825 parámetros (5,0 M), 3 canales de entrada, 32 características internas y 9 clases de salida. No es un modelo de lenguaje: no procesa texto ni mantiene contexto conversacional, sino que asigna una etiqueta semántica a cada punto de una nube LiDAR.
+RandLA-Net es una red neuronal para segmentación semántica de nubes de puntos a gran escala. Este checkpoint concreto, publicado por el autor `torch-pointcloud`, contiene los pesos del modelo entrenado sobre el dataset urbano Paris-Lille-3D y convertidos desde Open3D-ML a la librería PyTorch PointCloud. El modelo resuelve el problema de asignar una etiqueta semántica (por ejemplo, suelo, edificio, vehículo o vegetación) a cada punto de una nube de puntos LiDAR capturada en entorno urbano.
 
-El modelo implementa la arquitectura RandLA-Net presentada en CVPR 2020 (arXiv:1911.11236), cuyo objetivo es segmentar nubes de puntos de gran escala de forma eficiente sustituyendo el muestreo de puntos más lejano (farthest point sampling) por muestreo aleatorio, mucho más barato computacionalmente, y compensando la pérdida de información con módulos de agregación local de características. Está entrenado exclusivamente sobre el dataset urbano Paris-Lille-3D, capturado con sistemas de mapeo móvil en Lille y París.
+La arquitectura RandLA-Net, presentada en el paper CVPR 2020 de Hu et al., sustituye las operaciones costosas de búsqueda de vecinos y agrupación jerárquica por un muestreo aleatorio simple combinado con un módulo de agregación de características locales (Local Feature Aggregation). Esto permite procesar nubes de puntos de millones de puntos en una sola pasada, algo que arquitecturas previas basadas en vecinos más cercanos no podían hacer de forma eficiente.
 
-Su relevancia práctica es acotada pero clara: ofrece un checkpoint pequeño (5 M de parámetros), con licencia MIT permisiva, cargable en pocas líneas con `torch-pointcloud`, lo que lo hace útil como línea base reproducible para segmentación semántica urbana y para tareas de extracción de características (embeddings de 32 dimensiones por punto). Los resultados declarados por el autor son mIoU 48,1 y OA 96,08 sobre Paris-Lille-3D, marcados como no verificados en el model-index.
+El modelo es relevante para desarrolladores que trabajan en percepción 3D, cartografía, conducción autónoma o gemelos digitales urbanos, porque ofrece un checkpoint compacto (5 millones de parámetros, pesos en safetensors) con métricas publicadas sobre un benchmark público y una licencia MIT permisiva. No es un modelo de lenguaje: es un modelo puramente geométrico y visual 3D, sin capacidades de texto ni de visión 2D.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | RandLA-Net (encoder-decoder con muestreo aleatorio de puntos y agregación local de características) |
-| Parámetros totales | 5.010.825 (5,0 M) |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica: no procesa secuencias de texto; el ejemplo de la model card usa 8.192 puntos por muestra |
-| Tipos de cuantización | no disponible; solo se publican pesos en safetensors, sin variantes cuantizadas documentadas |
-| Idiomas soportados | no aplica (segmentación de nubes de puntos); el campo de idiomas no está informado en la metadata |
+| Arquitectura | RandLA-Net (muestreo aleatorio + agregación de características locales) |
+| Parametros totales | 5.010.825 (5,0 M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (procesa nubes de puntos, no secuencias de texto) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo 3D, sin procesamiento de lenguaje) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Canales de entrada | 3 (posición XYZ; el ejemplo añade intensidad como canal adicional) |
-| Clases de salida | 9 (la lista de clases no se detalla en la información disponible) |
-| Dimensión de características | 32 |
+| Canales de entrada | 3 (coordenadas XYZ) |
+| Clases de salida | 9 |
+| Dimensión de features | 32 |
 | Dataset de entrenamiento | Paris-Lille-3D |
-| Librería | torch-pointcloud |
-| Pipeline declarado en Hugging Face | no disponible |
-| Descargas / likes | 0 / 0 |
-| Tamaño del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
 
-RandLA-Net es una red encoder-decoder para segmentación semántica de nubes de puntos a gran escala. Su innovación principal es reemplazar el muestreo de puntos más lejano (FPS), que escala de forma cuadrática con el número de puntos, por muestreo aleatorio uniforme, que es O(1) por punto y permite procesar nubes de millones de puntos. Para contrarrestar la pérdida de puntos informativos que introduce el muestreo aleatorio, cada bloque del encoder aplica un módulo de agregación local de características (*local feature aggregation*) compuesto por codificación espacial relativa y *attentive pooling*, que preserva la geometría local en cada etapa de diezmado. El decoder recupera la resolución original mediante interpolación y conexiones de salto, y una cabeza lineal proyecta las características por punto a las 9 clases.
+RandLA-Net es una red encoder-decoder para segmentación de nubes de puntos. El encoder aplica una secuencia de capas de muestreo aleatorio (random sampling) que reducen progresivamente el número de puntos, intercaladas con bloques de agregación de características locales que combinan atención espacial, pooling y una MLP compartida para capturar el contexto geométrico de cada punto. El decoder recupera la resolución original mediante interpolación de características y conexiones de salto, hasta producir un logit por clase y por punto. La elección del muestreo aleatorio, en lugar de FPS (farthest point sampling) o búsquedas de vecinos, es la innovación clave: reduce el coste computacional de O(N log N) a O(N) y permite escalar a nubes de millones de puntos.
 
-La información disponible no detalla el número de tokens ni de puntos vistos durante el entrenamiento, la composición exacta del dataset, la configuración de aumentos de datos ni si se aplicaron etapas de ajuste fino adicionales. Tampoco se documenta el proceso de conversión desde Open3D-ML más allá de indicar el repositorio de origen y su licencia MIT. El modelo expone dos modos de uso: inferencia de logits por punto mediante `model(x, pos, batch)` y extracción de características de 32 dimensiones mediante `forward_features` o `reset_classifier(num_classes=0)`, lo que permite reutilizarlo como extractor congelado en pipelines posteriores.
+El checkpoint se ha entrenado sobre Paris-Lille-3D, un dataset LiDAR urbano con anotación semántica de 9 clases. La model card no detalla el número de épocas, la composición exacta del dataset, ni si se aplicaron técnicas de aumento de datos, regularización o ajuste fino adicional. Tampoco se documenta el uso de RLHF, DPO ni ningún otro esquema de alineación, algo esperable en un modelo de segmentación geométrica. Los pesos proceden de una conversión directa desde Open3D-ML (licencia MIT) al formato de PyTorch PointCloud, lo que facilita su uso con `torch-pointcloud` y su integración en pipelines PyTorch nativos.
 
 ## Capacidades
 
-- Segmentación semántica por punto de nubes LiDAR urbanas en 9 clases, con salida de logits por punto.
-- Extracción de características: `forward_features` devuelve un vector de 32 dimensiones por punto, reutilizable para clasificación, agrupación o *retrieval*.
-- Reconfiguración de la cabeza de clasificación mediante `reset_classifier(num_classes=N)` para adaptación a otros conjuntos de etiquetas.
-- Procesamiento por lotes mediante la función `collate` de `torch_pointcloud.utils.data`, con manejo de índices de lote (`batch`) para concatenar nubes de distinto tamaño.
-- Integración con el pipeline de transformaciones que devuelve `info["transform"]` al crear el modelo con `return_info=True`.
-- Ejecución en CPU y GPU indistintamente, al ser un modelo PyTorch de 5 M de parámetros.
-- No soporta *tool calling*, agentes, razonamiento multi-paso, visión 2D, audio ni generación de texto: esas capacidades no aplican a su modalidad.
+- Segmentación semántica por punto en nubes de puntos 3D con 9 clases de salida (entorno urbano).
+- Procesamiento de nubes de puntos de gran escala gracias al muestreo aleatorio eficiente.
+- Extracción de características por punto mediante `forward_features`, útil para tareas downstream (clustering, clasificación, recuperación).
+- Reducción de dimensionalidad del clasificador con `reset_classifier(num_classes=0)` para obtener embeddings de 32 dimensiones.
+- Entrada con coordenadas XYZ e intensidad opcional, según el pipeline de transformación de la librería.
+- No soporta tool calling, function calling, agentes, razonamiento multi-step ni capacidades multilingües: es un modelo puramente geométrico.
+- No soporta visión 2D, audio ni texto.
 
 ## Casos de uso
 
-- Segmentación de levantamientos LiDAR urbanos: el modelo etiqueta cada punto de una nube de mapeo móvil en 9 clases, lo que permite separar suelo, edificaciones, vehículos y mobiliario urbano para inventarios y modelos digitales de ciudad.
-- Línea base reproducible en investigación: al ser una conversión directa de Open3D-ML con métricas declaradas, sirve como referencia contra la que comparar arquitecturas nuevas sobre Paris-Lille-3D sin tener que reentrenar desde cero.
-- Etiquetado asistido (pre-anotación): generar máscaras semánticas iniciales sobre nubes nuevas y corregirlas manualmente, reduciendo el coste de anotación en proyectos de percepción.
-- Extracción de embeddings para búsqueda y agrupación: usar los vectores de 32 dimensiones por punto o por región para agrupar escenas similares, detectar anomalías geométricas o alimentar un clasificador ligero posterior.
-- Preprocesado en pipelines de robótica móvil: filtrar y clasificar retornos LiDAR antes de tareas de planificación o localización, aprovechando que el modelo es pequeño y ejecutable en CPU.
-- Prototipado rápido en docencia y pruebas de concepto: `pip install torch-pointcloud` y una llamada a `create_model` bastan para tener un segmentador 3D funcional, sin gestión de checkpoints manual.
-- Adaptación a dominios específicos: con `reset_classifier` y ajuste fino sobre un dataset propio (por ejemplo, escaneos de interior o TLS), reutilizar el encoder preentrenado como inicialización.
+- Segmentación de nubes LiDAR urbanas: el modelo etiqueta cada punto como suelo, edificio, vehículo, vegetación, etc., lo que permite generar mapas semánticos 3D de ciudades a partir de capturas móviles o aéreas.
+- Cartografía y gemelos digitales: integrado en pipelines de reconstrucción 3D, facilita la separación de elementos urbanos para alimentar visores GIS o simulaciones de planificación urbana.
+- Percepción para conducción autónoma y robótica móvil: al procesar nubes de puntos a gran escala con bajo coste, puede servir como módulo de segmentación en tiempo casi real sobre LiDAR de vehículos o robots.
+- Análisis de infraestructura viaria: permite aislar la clase suelo y detectar anomalías (baches, obstáculos) en levantamientos periódicos de carreteras.
+- Preprocesado para modelos downstream: los embeddings de 32 dimensiones por punto sirven como características de entrada para clasificadores, detectores o modelos de registro de nubes.
+- Investigación en percepción 3D: al ser un checkpoint MIT con métricas publicadas sobre Paris-Lille-3D, es una línea base reproducible para comparar nuevas arquitecturas de segmentación.
+- Inventario de vegetación urbana: la clase correspondiente a vegetación permite estimar cobertura arbórea y planificar mantenimiento en entornos municipales.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de la model card. Ninguno está marcado como verificado (`verified: false`).
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Dataset | Tarea | Métrica | Valor | Verificado |
-|---|---|---|---|---|
-| Paris-Lille-3D | Segmentación de nubes de puntos | mIoU | 48,1 | No |
-| Paris-Lille-3D | Segmentación de nubes de puntos | OA (exactitud global) | 96,08 | No |
+| Dataset | Tarea | Métrica | Valor |
+|---|---|---|---|
+| Paris-Lille-3D | Segmentación de nubes de puntos | mIoU | 83,05 |
+| Paris-Lille-3D | Segmentación de nubes de puntos | OA (accuracy global) | 98,67 |
 
-La información proporcionada no incluye resultados de benchmarks frente a otros modelos, ni desglose de IoU por clase, ni métricas sobre otros datasets (SemanticKITTI, S3DIS u otros). No se han publicado resultados comparativos en la información disponible.
+No se han publicado en la información disponible resultados comparativos con otros modelos sobre el mismo dataset ni desglose por clase.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: aproximadamente 20 MB en fp32 y 10 MB en fp16, calculados a partir de los 5.010.825 parámetros. El consumo real en inferencia está dominado por las activaciones, que escalan con el número de puntos por muestra, no por el tamaño del modelo.
-- GPU recomendadas: cualquier GPU con 4 GB o más es sobradamente suficiente (GTX 1650, RTX 3060, RTX 4090). Un A100 o H100 solo tiene sentido para procesar lotes muy grandes de nubes densas en paralelo.
-- Cabe en GPU de consumo y también en CPU: para nubes de 8.192 puntos, la inferencia en CPU es viable; para nubes de millones de puntos conviene GPU.
-- Opciones de despliegue: PyTorch con la librería `torch-pointcloud` (vía `pip install torch-pointcloud`). No se documentan exportaciones a ONNX, TensorRT, TorchScript ni integraciones con vLLM, llama.cpp, Ollama o TGI, que además no aplican a esta modalidad.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tiempo de inferencia en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 5,0 M de parámetros, los pesos en FP32 ocupan aproximadamente 20 MB, por lo que el modelo cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia; para entrenamiento o nubes de puntos muy grandes se recomienda una GPU con 8 GB o más (RTX 3060, RTX 4070, A100, H100).
+- Cabe en GPU consumer: sí, en cualquier GPU moderna (GTX 1650 en adelante) e incluso en CPU para nubes de tamaño moderado.
+- Opciones de despliegue: la librería oficial es `torch-pointcloud` (PyTorch); también puede ejecutarse a través de Open3D-ML, del que proceden los pesos originales. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de métricas de modelos alternativos en la información proporcionada. La tabla recoge únicamente la comparación cualitativa de alternativas de la misma familia disponibles en Open3D-ML y en el ecosistema de segmentación de nubes de puntos.
-
-| Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Dataset | mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RandLA-Net (este modelo) | 5,0 M | 3 canales, nube arbitraria | mIoU 48,1 / OA 96,08 en Paris-Lille-3D (no verificado) | MIT | Pesos en HF, librería torch-pointcloud |
-| KPConv (Open3D-ML) | no disponible | nube arbitraria con kernel puntual | no disponible | MIT (implementación Open3D-ML) | Pesos vía Open3D-ML |
-| SparseConvUNet (Open3D-ML) | no disponible | vóxeles dispersos | no disponible | MIT (implementación Open3D-ML) | Pesos vía Open3D-ML |
-| PointNet++ (implementaciones de terceros) | no disponible | nube arbitraria | no disponible | variable según implementación | Múltiples repositorios |
+| RandLA-Net (este checkpoint) | 5,0 M | Paris-Lille-3D | 83,05 | MIT | Hugging Face + Open3D-ML |
+| PointNet++ | no disponible en la información | Paris-Lille-3D | no disponible | MIT (implementación original) | Ampliamente disponible |
+| KPConv | no disponible en la información | Paris-Lille-3D | no disponible | MIT (implementación original) | Ampliamente disponible |
+| SparseConvNet / MinkowskiNet | no disponible en la información | Paris-Lille-3D | no disponible | MIT / BSD | Ampliamente disponible |
 
-Criterio diferencial: RandLA-Net prioriza eficiencia en nubes de gran escala mediante muestreo aleatorio, mientras que KPConv mantiene mayor fidelidad geométrica a costa de más cómputo. No hay datos en la información disponible para cuantificar esa diferencia.
+No se dispone de datos comparativos de rendimiento sobre Paris-Lille-3D para los modelos alternativos en la información proporcionada. La comparativa se limita a la categoría (segmentación semántica de nubes de puntos) y a la disponibilidad de implementaciones de referencia.
 
 ## Limitaciones y advertencias
 
-- Métricas no verificadas: mIoU 48,1 y OA 96,08 figuran con `verified: false`; conviene reproducirlas antes de usarlas como referencia en publicaciones.
-- Dominio restringido: entrenado solo con Paris-Lille-3D (mapeo móvil urbano, 9 clases). El rendimiento caerá con toda probabilidad en interiores, escaneos aéreos, TLS denso o entornos no urbanos.
-- mIoU moderado: un 48,1 de mIoU con un 96,08 de exactitud global indica un fuerte desequilibrio de clases; las clases minoritarias (peatones, bolardos, papeleras) probablemente se confundan con frecuencia. No hay desglose por clase para confirmarlo.
-- Ausencia de validación comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay reportes independientes de calidad ni incidencias conocidas.
-- El muestreo aleatorio de puntos puede introducir variabilidad entre ejecuciones. La información disponible no documenta si la inferencia es determinista ni cómo se fija la semilla.
-- Sin cuantizaciones oficiales ni formatos alternativos: solo safetensors; no se declara la precisión exacta de los pesos (se asume fp32, sin confirmación explícita).
-- Dependencia de una librería de nicho (`torch-pointcloud`, mantenida por un único autor) y de su función `transform`/`collate`; la API puede cambiar entre versiones.
-- Las transformaciones y la normalización aplicadas en `info["transform"]` no están documentadas en detalle; usarlas de forma distinta a la prevista altera los resultados.
-- Licencia MIT: permite uso comercial y modificación, pero no se especifican en la información disponible las licencias de las dependencias (PyTorch, Open3D-ML) más allá de MIT en el código de origen; conviene revisarlas antes de un despliegue comercial.
-- Sin garantías de soporte: no se documenta mantenimiento, versionado del checkpoint ni canal de soporte.
+- Modelo especializado exclusivamente en segmentación de nubes de puntos 3D; no procesa texto, imagen 2D ni audio.
+- Entrenado únicamente sobre Paris-Lille-3D (entorno urbano francés); el rendimiento puede degradarse en otros dominios (interiores, industria, agricultura, minería) sin reentrenamiento.
+- Solo 9 clases de salida; no cubre categorías fuera del esquema del dataset.
+- Entrada limitada a 3 canales (XYZ); la intensidad es opcional según el pipeline, pero no se documenta su uso en el entrenamiento.
+- Riesgo de confusión entre clases geométricamente similares (por ejemplo, vehículo frente a mobiliario urbano) en zonas densas u ocluidas.
+- No se documentan sesgos geográficos ni demográficos, pero al estar entrenado en una única ciudad, la generalización geográfica es una incógnita.
+- No se han verificado de forma independiente las métricas publicadas (mIoU 83,05 / OA 98,67); el autor las marca como no verificadas.
+- Licencia MIT: permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright.
+- No apto para producción crítica sin validación en el dominio objetivo: al no documentarse el proceso de entrenamiento (épocas, aumentos, splits), la reproducibilidad es limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/randlanet.parislille3d.open3d
-- Paper de RandLA-Net (arXiv:1911.11236, CVPR 2020): https://arxiv.org/abs/1911.11236
-- Repositorio de la librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Repositorio de origen de los pesos (Open3D-ML): https://github.com/isl-org/Open3D-ML
-- DOI de PyTorch PointCloud (Zenodo): https://doi.org/10.5281/zenodo.22159632
-- PyTorch (framework base): https://pytorch.org/
+- Paper RandLA-Net (arXiv): https://arxiv.org/abs/1911.11236
+- Repositorio PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Open3D-ML (origen de los pesos): https://github.com/isl-org/Open3D-ML
+- Dataset Paris-Lille-3D: https://github.com/Paris-Lille-3D/Paris-Lille-3D (referencia del dataset citado en el paper de Roynard et al., 2018)

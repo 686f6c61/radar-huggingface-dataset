@@ -51,5 +51,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Convert Nanomètres a Mètres (nm → m)",
+      "url": "https://convertlive.com/fr/u/convert/nanom%C3%A8tres/a/m%C3%A8tres",
+      "snippet": "Nanomètres a Mètres. Effectuer une conversion entre les unités (nm → m) ou consultez le tableau de conversion"
+    },
+    {
+      "title": "Convertisseur de distance aviation — NM km miles - Envole-Moi",
+      "url": "https://envole-moi.fr/convertisseur-distance-aviation/",
+      "snippet": "2 days ago · Convertissez instantanément des milles nautiques (NM) en kilomètres (km) ou en miles terrestres (mi), et inversement. …"
+    }
+  ]
 }

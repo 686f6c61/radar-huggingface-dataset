@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "anasbiswas/Qwen2.5-7B-Instruct-TwinDistillation",
+  "slug": "anasbiswas-qwen2-5-7b-instruct-twindistillation",
+  "author": "anasbiswas",
+  "url": "https://huggingface.co/anasbiswas/Qwen2.5-7B-Instruct-TwinDistillation",
+  "created_at": "2026-11-19T01:04:01.000Z",
+  "updated_at": "2026-11-19T01:04:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "llm-security",
+    "lora",
+    "twin-distillation",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533192,
+  "storage_human": "162 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

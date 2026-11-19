@@ -55,29 +55,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
-      "url": "https://zhidao.baidu.com/question/136956635.html",
-      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
     },
     {
-      "title": "《团结就是力量》的歌词 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/196417000.html",
-      "snippet": "歌曲《团结就是力量》 团结就是力量 团结就是力量 这力量是铁 这力量是钢 比铁还硬,比钢还强 向着法西斯蒂开火 让一切不民主的制 …"
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Win10任务计划程序在哪里 怎么打开任务计划程序-百度经验",
-      "url": "https://jingyan.baidu.com/article/b87fe19e53b2505218356896.html",
-      "snippet": "Jun 11, 2018 · 在Windows10系统中，我们可以通过任务计划程序来设置一些自动运行的应用，那么Windows10系统的任务计划程序在 …"
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …"
     },
     {
-      "title": "教你怎么输入“√ ”和“×” word怎么打钩/打叉-百度经验",
-      "url": "https://jingyan.baidu.com/article/48b37f8d0783821a646488fa.html",
-      "snippet": "Oct 25, 2017 · 第三种方法：利用输入法在Word中打钩。 无论你是“QQ输入法”还是“搜狗输入法”，都可以打钩和打叉。调出输入法， …"
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
-      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
-      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+      "title": "Unsloth Docs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs",
+      "snippet": "🦥 Unsloth Docs Unsloth is an open-source framework for running and training LLMs. Unsloth lets you run and train AI models on your …"
     }
   ]
 }

@@ -5,7 +5,7 @@
   "author": "Phase-Technologies",
   "url": "https://huggingface.co/Phase-Technologies/FORGE-500M-Chat",
   "created_at": "2026-10-22T17:05:07.000Z",
-  "updated_at": "2026-11-17T09:01:40.000Z",
+  "updated_at": "2026-11-18T06:41:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 0,
+  "downloads_30d": 124,
   "trending_score": 0,
   "parameters": 711080311,
   "parameters_human": "711.1M",

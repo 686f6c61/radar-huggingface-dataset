@@ -52,25 +52,14 @@
       "task": null,
       "dataset": "ScanObjectNN (PB_T50_RS)",
       "metric": "OA",
-      "value": 93.75
+      "value": 93.72
     },
     {
       "task": null,
       "dataset": "ScanObjectNN (PB_T50_RS)",
       "metric": "mAcc",
-      "value": 93.66
+      "value": 93.61
     }
   ],
-  "sources": [
-    {
-      "title": "PointGPT - a torch-pointcloud Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/torch-pointcloud/pointgpt",
-      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from torch-pointcloud"
-    },
-    {
-      "title": "torch-pointcloud/pointgpt-l.scanobjectnn-hardest.guangyan-chen ...",
-      "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.scanobjectnn-hardest.guangyan-chen",
-      "snippet": "Model card for pointgpt-l.scanobjectnn-hardest.guangyan-chen A PointGPT point cloud classification model (autoregressive generative pretraining transformer). Trained on ScanObjectNN (PB_T50_RS)."
-    }
-  ]
+  "sources": []
 }

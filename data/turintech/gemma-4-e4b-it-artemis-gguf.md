@@ -2,123 +2,104 @@
 
 ## Resumen
 
-`turintech/gemma-4-E4B-it-Artemis-GGUF` es una conversión a GGUF del checkpoint cuantización-consciente (QAT) `google/gemma-4-E4B-it-qat-q4_0-unquantized` de Google, publicada por TurinTech con su pipeline de compresión Artemis. El modelo resuelve un problema muy concreto: llevar un modelo de chat, razonamiento y uso de herramientas de la familia Gemma 4 a un único fichero de 4,22 GB que corre en CPU o en una GPU pequeña, manteniendo un comportamiento muy cercano al original (99 % de coincidencia en el siguiente token sobre OASST1 según el autor).
+gemma-4-E4B-it-Artemis-GGUF es una cuantización GGUF del modelo multimodal google/gemma-4-E4B-it, publicada por TurinTech dentro de su pipeline Artemis. El modelo base es la variante instruct de Gemma 4 con aproximadamente 7.463 millones de parámetros totales y capacidad de procesamiento de imagen y texto, orientada a conversación, razonamiento y llamadas a herramientas. TurinTech parte del checkpoint de cuantización consciente del entrenamiento (QAT) de Google y lo recomprime para reducir el peso en disco y la memoria de CPU necesaria en inferencia.
 
-El repositorio contiene tres cuantizaciones (Q4_0 por defecto, IQ3_M y Q3_K_M), un proyector multimodal separado (`mmproj`, en BF16 o F16) que habilita la entrada de imágenes, y un drafter MTP (`mtp-gemma-4-E4B-it-Artemis.gguf`) derivado del modelo assistant de Google para decodificación especulativa. El pipeline declarado es `image-text-to-text`, con soporte para servidor de llama.cpp y para Ollama.
+La propuesta de valor de esta distribución es ejecutar un modelo Gemma 4 multimodal en CPU: el fichero Q4_0 ocupa 4,22 GB y requiere unos 6,8 GiB de memoria de CPU en la configuración medida por el autor, frente a los 9,2 GiB del checkpoint original. Además, el autor reporta una mejora marginal en la precisión de llamadas a herramientas respecto al original (194 de 258 en BFCL live frente a 192), lo que sugiere que la recompresión no degrada —e incluso puede mejorar ligeramente— el comportamiento funcional en esa prueba.
 
-El dato de parámetros reales del checkpoint es de 7.463.013.674, muy por encima de los ~4B que sugiere el sufijo E4B del nombre; la model card no desglosa parámetros activos ni arquitectura interna, por lo que esa información queda como no disponible. La licencia declarada en Hugging Face es Apache 2.0, aunque el campo `license_link` remite a la licencia de Gemma 4 de Google.
+El modelo se distribuye en formato GGUF para llama.cpp y está disponible también mediante Ollama y LM Studio. Incorpora proyector de visión y un drafter MTP (multi-token prediction) para decodificación especulativa, ambos convertidos y verificados por el autor. Es relevante para despliegues en entornos sin GPU, prototipado local y aplicaciones de agentes con tool calling sobre hardware de consumo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder de la familia Gemma 4, con variante de activación selectiva (denominación E4B) y soporte multimodal mediante proyector separado; detalles internos no disponibles |
-| Parametros totales | 7.463.013.674 (7.463 millones) |
-| Parametros activos | no disponible (el autor no desglosa el cómputo activo del checkpoint E4B) |
-| Longitud de contexto | no disponible como máximo del modelo; los ejemplos del autor usan `-c 8192` (8.192 tokens) |
-| Tipos de cuantizacion | Q4_0 (por defecto, 4,22 GB), IQ3_M (~3,8 GB), Q3_K_M (~3,6 GB); proyectores en BF16 y F16; drafter MTP en Q4_0 |
+| Arquitectura | Transformer multimodal (texto + visión), basada en Gemma 4 E4B; incluye drafter MTP para decodificación especulativa |
+| Parámetros totales | 7.463.013.674 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 8.192 tokens en la configuración de ejemplo del autor (no se especifica el máximo del modelo base) |
+| Tipos de cuantización | Q4_0 (GGUF); el autor menciona otros dos ficheros además del Q4_0, sin detallar sus tipos |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 en los metadatos de Hugging Face; `license_link` apunta a la licencia de Gemma 4 (`https://ai.google.dev/gemma/docs/gemma_4_license`) |
-| Formato de pesos | GGUF (llama.cpp); proyector `mmproj-*.gguf` y drafter MTP en GGUF separados |
-| Modelo base | google/gemma-4-E4B-it-qat-q4_0-unquantized (relación: quantized) |
-| Modalidades de entrada | texto e imagen (proyector `mmproj`); el proyector incluye también el encoder de audio de Gemma, no probado por el autor |
-| Tamaño del repositorio | 13,7 GB |
-| Descargas / likes | 4.292 descargas, 9 likes (a fecha de actualización 2026-10-26) |
+| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta el entrenamiento: no indica número de tokens, composición del dataset ni si hubo RLHF o DPO. Lo que sí se sabe es que el punto de partida es el checkpoint QAT de Google `gemma-4-E4B-it-qat-q4_0-unquantized`, es decir, un modelo ya entrenado con cuantización consciente de Q4_0 y distribuido con los pesos sin cuantizar; TurinTech parte de ese material y aplica sus técnicas Artemis para producir los GGUF. El modelo resultante es una conversión y compresión independiente, no afiliada ni respaldada por Google.
+El modelo base es google/gemma-4-E4B-it-qat-q4_0-unquantized, un checkpoint de Gemma 4 en variante instruct que incorpora cuantización consciente del entrenamiento (QAT) a 4 bits. La distribución de TurinTech no reentrena el modelo: aplica su pipeline Artemis sobre ese checkpoint QAT para producir un GGUF Q4_0 más compacto. El repositorio incluye además el proyector de visión (990 MB) y un drafter MTP convertidos y verificados por el autor, lo que habilita tanto entrada de imágenes como decodificación especulativa con multi-token prediction.
 
-A nivel de ingeniería, el repositorio separa tres piezas: el fichero principal de pesos, el proyector multimodal (`mmproj-BF16.gguf` / `mmproj-F16.gguf`, 992 MB de descarga) que aporta visión y contiene además el encoder de audio, y el drafter MTP. Este último es la conversión a GGUF del modelo assistant de Google (`google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant`, revisión `27f8d20`), cuantizado a Q4_0, que actúa como borrador de tokens para decodificación especulativa con `--spec-type draft-mtp`. El drafter no funciona de forma autónoma y puede alterar ligeramente las respuestas greedy.
-
-La plantilla de chat va embebida en el fichero y se activa con `--jinja`; activa el modo thinking por defecto, lo que obliga a reservar suficientes tokens de salida (el autor recomienda unos 1.500). Se ha probado con llama.cpp b11617 y, para el proyector de visión y el drafter MTP, con b11889.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base empleó RLHF o DPO. Tampoco se detalla la arquitectura interna más allá de la etiqueta "Gemma 4" y la referencia a MTP. La innovación destacable de esta distribución es la recompresión desde un checkpoint QAT preservando (y según el autor, mejorando ligeramente) el rendimiento en tool calling, junto con la reducción de memoria de CPU de 9,2 GiB a 6,8 GiB.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con plantilla de chat embebida y modo thinking activable o desactivable por petición.
-- Razonamiento y matemáticas de varios pasos: 226 de 250 problemas de GSM8K resueltos en la evaluación del autor.
-- Uso de herramientas y function calling en formato compatible con la API de chat de OpenAI: 364 de 400 llamadas correctas en BFCL simple (91 %).
-- Comprensión de imágenes: preguntas sobre gráficos y tablas enviando la imagen como data URL en una parte `image_url` del mensaje; 9 de 20 preguntas de gráficos correctas con el proyector BF16.
-- Entrada de audio: el proyector incluye el encoder de audio de Gemma, pero el autor declara explícitamente que no ha probado audio.
-- Decodificación especulativa mediante drafter MTP, que elevó la generación de 278,9 a 490,1 tokens por segundo en una RTX 5090.
-- Despliegue compatible con endpoints: el tag `endpoints_compatible` y el ejemplo con `/v1/chat/completions` indican compatibilidad con la interfaz de chat completions de OpenAI.
-- Capacidades multilingües: no disponibles en la información proporcionada (la model card no detalla cobertura de idiomas).
+- Generación de texto conversacional multi-turno en modo instruct.
+- Razonamiento con modo "thinking" activado por defecto en la plantilla de chat; la respuesta se devuelve en `message.reasoning_content` y el contenido final en `message.content`.
+- Llamadas a herramientas y function calling: el autor reporta 194 de 258 llamadas correctas en BFCL live.
+- Procesamiento de imagen y texto (pipeline image-text-to-text) mediante el proyector de visión incluido.
+- Razonamiento matemático: 236 de 250 correctas en las últimas 250 preguntas de GSM8K.
+- Seguimiento de instrucciones: 449 de 539 cumplidas en IFEval.
+- Conocimiento general y razonamiento experto: 97 de 280 correctas en una muestra de MMLU-Pro.
+- Decodificación especulativa mediante drafter MTP para acelerar la generación.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes de atención al cliente en producción: el fichero Q4_0 ocupa 4,22 GB y necesita 3,3 GiB de VRAM con todas las capas en GPU o 6,8 GiB de RAM en CPU, de modo que se puede desplegar una instancia por núcleo de servicio sin depender de un clúster de GPUs.
-- Automatización con tool calling: con 364 de 400 llamadas correctas en BFCL simple, es adecuado para agentes que invocan APIs internas (consultas de estado, creación de tickets, lectura de bases de datos) a través de `/v1/chat/completions` con `tools` en la petición.
-- Extracción de datos de documentos escaneados y gráficos: enviando la imagen al proyector multimodal se pueden transcribir tablas y responder preguntas sobre figuras; el rendimiento medido (45 % en preguntas de gráficos) lo hace apto para flujos con revisión humana, no para extracción totalmente desatendida.
-- Asistente de código en local: el autor incluye respuestas de chat y código en su conjunto de 30 prompts; el modelo cabe en una GPU de consumo y se integra en editores mediante el servidor de llama.cpp en `localhost:8080`.
-- Razonamiento matemático con verificación: 226 de 250 aciertos en GSM8K permiten usarlo como primer paso de un pipeline de resolución de problemas aritméticos con comprobación posterior por una herramienta o un modelo mayor.
-- Servicio de bajo coste en CPU para desarrollo y CI: con 6,8 GiB de RAM en un Ryzen 9 5900X y `--cache-ram 0`, se puede levantar un servidor de pruebas en máquinas sin GPU para tests de integración de prompts y plantillas.
-- Inferencia de alta concurrencia con MTP: usando el drafter (`--spec-type draft-mtp`) se obtienen 490,1 tokens/s en una RTX 5090, útil para tareas de generación masiva por lotes donde el coste por token es el factor limitante.
-- Distribución en escritorio y móvil vía Ollama: la etiqueta `turintech/gemma-4-e4b-it-artemis:4.2gb` replica el mismo fichero con el mismo SHA-256, lo que simplifica el despliegue en entornos de usuario final.
+- Asistente conversacional local en CPU: con 6,8 GiB de memoria y un contexto de 8.192 tokens, puede desplegarse en portátiles y estaciones sin GPU para atención al cliente o asistentes internos con conversaciones multi-turno.
+- Agentes con tool calling: los 194 aciertos de 258 en BFCL live permiten integrarlo en flujos de agente que invocan APIs, consultan bases de datos o ejecutan acciones estructuradas mediante `tools` en el endpoint compatible con OpenAI.
+- Automatización de tareas matemáticas y de razonamiento: con 236 de 250 en GSM8K, es adecuado para resolución de problemas aritméticos en pipelines de validación, generación de presupuestos o cálculo de métricas.
+- Procesamiento de documentos con imagen: al cargar el proyector de visión de 990 MB, puede extraer información de capturas, formularios escaneados o gráficos en flujos de digitalización.
+- Despliegue en edge y entornos air-gapped: el formato GGUF y la licencia Apache 2.0 facilitan la ejecución en servidores sin conectividad ni aceleradores, con llama.cpp, Ollama o LM Studio.
+- Prototipado y evaluación de agentes: el modo thinking y el drafter MTP permiten experimentar con razonamiento multi-paso y decodificación especulativa antes de migrar a modelos mayores.
+- Cumplimiento de instrucciones en generación controlada: los 449 de 539 en IFEval lo hacen utilizable para tareas de formateo estricto, extracción estructurada y generación con restricciones de formato.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por TurinTech (no verificados de forma independiente en la información disponible):
+Resultados declarados por el autor del modelo (no verificados de forma independiente):
 
-| Evaluación | Métrica | Artemis Q4_0 | Google Q4_0 (5,15 GB) |
+| Benchmark | Métrica | Resultado | Referencia |
 |---|---|---|---|
-| BFCL simple | Llamadas de herramienta correctas | 364/400 (91,0 %) | 360/400 (90,0 %) |
-| GSM8K test | Respuestas correctas | 226/250 (90,4 %) | 231/250 (92,4 %) |
-| OASST1 chat | Mismo siguiente token que el original | 99 % | referencia |
+| BFCL live | Llamadas a herramientas correctas | 194 de 258 | Original: 192 de 258 |
+| GSM8K (últimas 250) | Correctas | 236 de 250 | no disponible |
+| MMLU-Pro (muestra) | Correctas | 97 de 280 | no disponible |
+| IFEval | Instrucciones cumplidas | 449 de 539 | no disponible |
 
-| Evaluación adicional | Métrica | Resultado |
-|---|---|---|
-| Preguntas sobre gráficos (20 ítems), proyector BF16 | Respuestas correctas | 9/20 (45 %) |
-| Preguntas sobre gráficos (20 ítems), proyector F16 | Respuestas correctas | 8/20 (40 %) |
-| Preguntas sobre gráficos (20 ítems), Unsloth UD-Q4_K_XL con su proyector | Respuestas correctas | 8/20 (40 %) |
-
-| Rendimiento de inferencia | Entorno | Resultado |
-|---|---|---|
-| Generación Q4_0 sin drafter | RTX 5090, 30 prompts | 278,9 tokens/s |
-| Generación Q4_0 con drafter MTP | RTX 5090, 30 prompts | 490,1 tokens/s |
-| Generación Q4_0 | Apple M3 Max 36 GB, Metal, llama.cpp b11617 | ~45 tokens/s |
+En Apple M3 Max (36 GB) con llama.cpp Metal (b11617), el fichero Q4_0 cargó y respondió a aproximadamente 45 tokens por segundo, según el autor.
 
 ## Requisitos de hardware
 
-- VRAM para Q4_0 (4,22 GB de fichero): 3,3 GiB con todas las capas en una NVIDIA A100 80 GB, según la medición del autor.
-- RAM en CPU para Q4_0: 6,8 GiB en un AMD Ryzen 9 5900X usando `--cache-ram 0`.
-- Cabe en GPU de consumo: se ha validado en RTX 5090 y en Apple M3 Max de 36 GB con backend Metal; por tamaño de fichero, Q4_0 (4,22 GB) y Q3_K_M (3,6 GB) entran en tarjetas de 8 GB o más.
-- Vision: añadir 992 MB de descarga del proyector (`mmproj-BF16.gguf` o `mmproj-F16.gguf`); se puede omitir con `--no-mmproj` para uso solo de texto.
-- Decodificación especulativa: fichero adicional `mtp-gemma-4-E4B-it-Artemis.gguf` (Q4_0), que se descarga automáticamente con `--spec-type draft-mtp` al usar `-hf`.
-- Opciones de despliegue documentadas: `llama-server` de llama.cpp (versiones b11617 y b11889) y Ollama con las etiquetas `4.2gb` (Q4_0), `3.8gb` (IQ3_M) y `3.6gb` (Q3_K_M).
-- Throughput de referencia: 45 tokens/s en M3 Max (Metal) y 490,1 tokens/s en RTX 5090 con drafter MTP; no se publican cifras de latencia por petición ni de concurrencia.
+- Memoria de CPU: 6,8 GiB para el Q4_0 en modo solo texto, medido con `-np 1` y `--cache-ram 0`; con la caché de prompt por defecto (8 GiB) la memoria creció hasta 15,1 GiB durante las pruebas.
+- Disco: 4,22 GB para el fichero Q4_0; el repositorio completo ocupa 13,7 GB.
+- Visión: el proyector añade 990 MB de descarga y carga adicional si no se usa `--no-mmproj`.
+- GPU: no se especifican requisitos de VRAM; el enfoque del autor es ejecución en CPU. En Apple M3 Max (36 GB) con Metal se midieron unos 45 tokens por segundo.
+- Cabe en hardware de consumo: sí, en CPU con al menos 8 GiB de RAM libre en la configuración medida; también en Apple Silicon con Metal.
+- Opciones de despliegue: llama.cpp (llama-server, requiere soporte de Gemma 4; el autor midió con b11617 y b11889), Ollama (`ollama run turintech/gemma-4-e4b-it-artemis`) y LM Studio.
+- Contexto de ejemplo: `-c 8192` con `--jinja` para usar la plantilla de chat embebida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| turintech/gemma-4-E4B-it-Artemis-GGUF (Q4_0) | 7.463 millones totales; activos no disponibles | no disponible (ejemplos a 8.192) | 364/400 BFCL, 226/250 GSM8K, 99 % mismo token | apache-2.0 (con enlace a licencia Gemma 4) | GGUF en HF, Ollama, 4,22 GB |
-| google/gemma-4-E4B-it-qat-q4_0 (Q4_0) | mismos pesos de origen | no disponible | 360/400 BFCL, 231/250 GSM8K | licencia de Gemma 4 | checkpoint original de Google, 5,15 GB en Q4_0 |
-| Unsloth UD-Q4_K_XL + proyector Unsloth | misma familia E4B | no disponible | 8/20 en preguntas de gráficos | según el publicador (no disponible en la información) | GGUF alternativo |
-| turintech/gemma-4-E2B-it-Artemis-GGUF | variante E2B | no disponible | 95,8 % mismo siguiente token; 3 de 16 fallos en matemáticas | apache-2.0 según el repositorio | GGUF de 2,3 GB y 2,1 GB |
+| gemma-4-E4B-it-Artemis-GGUF (este) | 7.463 M | 8.192 en configuración de ejemplo | GGUF Q4_0 | Apache 2.0 | 6,8 GiB de CPU; 194/258 en BFCL live |
+| google/gemma-4-E4B-it-qat-q4_0-unquantized (base) | 7.463 M | no disponible | safetensors | Apache 2.0 | 9,2 GiB de CPU; 192/258 en BFCL live |
+| Alternativas de otros fabricantes del mismo tamaño | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- La licencia declarada en los metadatos es Apache 2.0, pero `license_link` remite a la licencia de Gemma 4 de Google; conviene verificar los términos aplicables antes de un uso comercial.
-- Es una conversión independiente de TurinTech: no está afiliada ni respaldada por Google, según declara el propio autor.
-- El modo thinking está activado por defecto en la plantilla embebida; sin ajustar `max_tokens` (el autor sugiere ~1.500) las respuestas pueden quedar truncadas.
-- El drafter MTP altera la salida greedy: en las pruebas del autor coincidieron las 10 respuestas de tool calling, pero solo 1 de 20 respuestas de chat y código. No es apto si se requiere reproducibilidad exacta token a token.
-- La comprensión de imágenes es limitada: 9 de 20 aciertos en preguntas sobre gráficos, insuficiente para extracción desatendida.
-- La entrada de audio no ha sido probada, aunque el proyector incluya el encoder correspondiente.
-- El contexto máximo del modelo no está documentado; los ejemplos se limitan a 8.192 tokens, por lo que no se debe asumir una ventana mayor en producción.
-- No hay información sobre sesgos, composición del dataset de entrenamiento ni tasas de alucinación medidas; al ser un modelo de ~7,5B parámetros, el riesgo de alucinación en dominios factuales sigue siendo relevante.
-- No se detalla la cobertura de idiomas; no se debe asumir calidad multilingüe sin evaluarla.
-- Los benchmarks son declarados por el autor, no verificados de forma independiente, y proceden de muestras pequeñas (400 ítems BFCL, 250 GSM8K, 20 preguntas de imagen).
+- Los resultados de benchmarks son declarados por TurinTech y están marcados como no verificados; no deben tratarse como cifras oficiales de Google.
+- El rendimiento en MMLU-Pro es bajo en términos absolutos (97 de 280), lo que limita su uso en tareas de conocimiento experto.
+- El modo thinking está activado por defecto en la plantilla de chat; sin desactivarlo o sin asignar suficientes tokens de salida (unos 1.500), las respuestas pueden truncarse.
+- La memoria de CPU puede crecer significativamente (hasta 15,1 GiB) si no se desactiva la caché de prompt en RAM con `--cache-ram 0`.
+- Requiere una versión de llama.cpp con soporte de Gemma 4; versiones anteriores no cargarán el modelo.
+- No se dispone de información sobre sesgos, idiomas soportados ni riesgos de alucinación específicos de esta distribución.
+- La licencia Apache 2.0 se acompaña de un enlace a la licencia de Gemma 4 de Google; conviene revisar los términos de uso de Gemma antes de un despliegue comercial.
+- El contexto indicado (8.192 tokens) corresponde a la configuración de ejemplo del autor, no necesariamente al máximo del modelo base.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/turintech/gemma-4-E4B-it-Artemis-GGUF
-- Página del modelo en Ollama: https://ollama.com/turintech/gemma-4-e4b-it-artemis
-- Etiqueta Q4_0 en Ollama: https://ollama.com/turintech/gemma-4-e4b-it-artemis:4.2gb
-- Modelos Artemis de TurinTech: https://www.turintech.ai/models
-- Blog de TurinTech sobre la compresión de E4B y E2B: https://www.turintech.ai/blog/gemma-4-e4b-and-e2b-compressed-with-artemis
+- Modelo en Hugging Face: https://huggingface.co/turintech/gemma-4-E4B-it-Artemis-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
-- Drafter assistant de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant
-- Variante E2B de TurinTech: https://huggingface.co/turintech/gemma-4-E2B-it-Artemis-GGUF
-- Hilo de feedback del autor: https://huggingface.co/spaces/turintech/README/discussions/1
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Ollama: https://ollama.com/turintech/gemma-4-e4b-it-artemis
+- LM Studio: https://lmstudio.ai/turintech/gemma-4-e4b-it-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Web de TurinTech: https://turintech.ai
+- Resultados declarados: https://huggingface.co/turintech/gemma-4-E4B-it-Artemis-GGUF#results

@@ -2,103 +2,106 @@
 
 ## Resumen
 
-LFM3-Omni-2B (ANE Core ML) es una conversión a Core ML del modelo LiquidAI/LFM3-Omni-2B, publicada por el usuario vladimir94 en Hugging Face, diseñada para ejecutarse sobre el Apple Neural Engine (ANE) en hardware de Apple. No se trata de un modelo nuevo ni de un fine-tuning: el repositorio contiene únicamente los programas Core ML convertidos y cuantizados (palettization LUT de 6 bits) a partir de los pesos originales, sin reentrenamiento de ningún peso.
+LFM3-Omni-2B ANE CoreML es una conversión del modelo LiquidAI/LFM3-Omni-2B al formato Core ML, optimizada para ejecutarse íntegramente en la Apple Neural Engine (ANE) de los chips Apple Silicon. El autor de la conversión es vladimir94, mientras que el modelo original fue desarrollado por Liquid AI. El repositorio contiene únicamente los programas convertidos: el runtime, el código de conversión y las mediciones residen en el repositorio de GitHub vladimir-voinea/lfm3-omni-ane.
 
-El problema que resuelve es la ejecución local y eficiente de un modelo omni (texto, imagen, audio y salida de voz) en Mac, donde las GPU de consumo habituales no existen. El autor documenta todo el pipeline de conversión, el runtime y las mediciones de rendimiento en el repositorio de GitHub vladimir-voinea/lfm3-omni-ane, lo que convierte esta ficha en un ejemplo práctico de despliegue de un modelo Liquid AI en el ecosistema Apple Silicon.
+El modelo base es un transformer multimodal de 2.000 millones de parámetros con capacidades de texto, visión, audio y salida de voz. La conversión aplica palettización LUT8 (8 bits) a los programas de texto y mantiene los programas multimodales en fp16, sin reentrenar ningún peso. El objetivo es ofrecer inferencia local en hardware Apple con un contexto fijo de 28.672 tokens atendidos de forma exacta y un rendimiento medido de aproximadamente 30 tokens por segundo en decodificación.
 
-El modelo base es un transformer híbrido de 2B parámetros con capas de convolución corta, atención completa y atención deslizante, con un vocabulario de 128.000 tokens. La conversión palettizada ocupa unos 1,8 GB y consigue ~30 tok/s de decodificación en el ANE, con dos modos de contexto: 28.672 tokens exactos y 78.042 tokens con ventana deslizante.
+La relevancia de esta ficha radica en que demuestra la viabilidad de ejecutar un modelo omni (texto, imagen, audio y habla) completamente en la Neural Engine, con métricas de fidelidad respecto al modelo original y con limitaciones explícitas de hardware y de longitud de contexto. Es una pieza útil para desarrolladores que quieran desplegar IA generativa multimodal en Macs y iPads sin depender de GPU dedicadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (13 capas de convolución corta, 6 capas de atención completa, 5 capas de atención deslizante) |
-| Parametros totales | 2B (modelo base LiquidAI/LFM3-Omni-2B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 28.672 tokens (modo `28k`, atención exacta) o 78.042 tokens (modo `78k`, ventana deslizante de 28.672 tokens) |
-| Tipos de cuantizacion | Palettization LUT de 6 bits (~1,8 GB); build sin palettizar de ~3,7 GB disponible |
-| Idiomas soportados | no disponible |
-| Licencia | lfm-open-license-v1.0 (heredada del modelo base) |
-| Formato de pesos | Core ML (`.mlpackage`), con embeddings en `.npy` y tablas rotatorias en `.npz` |
+| Arquitectura | Transformer híbrido: 13 capas de convolución corta, 6 capas de atención completa y 5 capas de atención deslizante (sliding attention), más torres de visión y audio |
+| Parametros totales | 2.000 millones (modelo base LFM3-Omni-2B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 28.672 tokens, fijada en tiempo de compilación; las peticiones que la exceden se rechazan con `400 context_exceeded` |
+| Tipos de cuantizacion | Palettización LUT8 (8 bits) en los programas de texto; fp16 en los programas multimodales |
+| Idiomas soportados | no disponible en la información proporcionada; la prueba de fidelidad mezcla inglés, rumano, código y aritmética |
+| Licencia | lfm-open-license-v1.0 (Other) |
+| Formato de pesos | Core ML `.mlpackage`, más `embed_tokens.npy`, `rope.npz`, `speech_tables.npz` y `layer_types.json`; el repositorio incluye `towers.safetensors` (0,88 GB) para el fallback a PyTorch |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base sigue un patrón híbrido típico de los modelos recientes de Liquid AI: combina 13 capas de convolución corta (con el historial pasado como tensores de entrada/salida), 6 capas de atención completa con caché `MLState` de 28.672 filas y 5 capas de atención deslizante con caché de 256 filas. El lm_head tiene 128.000 salidas y, dado que Core ML no coloca una matriz de ese tamaño completa en el ANE, el repositorio incluye una versión dividida en dos bloques de 64.000 filas que reduce la latencia del head de 11,4 ms a 3,0 ms por token.
+El modelo base LFM3-Omni-2B emplea una arquitectura híbrida que combina 13 capas de convolución corta, 6 capas de atención completa y 5 capas de atención deslizante. En la conversión a Core ML, cada tipo de capa se empaqueta en programas separados: `layer{N}_conv.mlpackage` recibe el historial como tensores de entrada/salida, `layer{N}_full.mlpackage` mantiene una caché `MLState` de 28.672 filas y `layer{N}_slide.mlpackage` usa una caché de 256 filas. El cabezal de salida (`lm_head`) tiene 128.000 clases y se divide en dos mitades de 64.000 filas (`lm_head_a/b`) porque Core ML no coloca un matmul de ese tamaño en la Neural Engine de una sola pieza. La normalización final se encapsula en `final_norm.mlpackage`.
 
-En cuanto al entrenamiento, no se han reentrenado pesos: esta conversión aplica exclusivamente palettization LUT de 6 bits sobre los programas Core ML ya convertidos. Los datos de entrenamiento, el número de tokens y el uso de RLHF/DPO corresponden al modelo base LiquidAI/LFM3-Omni-2B y no están detallados en la información disponible. Las innovaciones técnicas destacables de esta conversión son: la división del lm_head para forzar su colocación en el ANE, el uso de cachés `MLState` de tamaño fijo (lo que obliga a fijar el contexto en tiempo de compilación) y la verificación numérica del decodificador de audio (sampler y codec comprobados contra la decodificación de referencia en 24 frames).
+La conversión no reentrena pesos: es una cuantización del modelo original. Los programas multimodales incluyen una torre de visión y proyector a 224×224 (`vision.mlpackage`), un codificador de audio y proyector de hasta 30 segundos (`audio_encoder.mlpackage`), y un decodificador de profundidad y códec para salida de voz de hasta 10,2 segundos (`depth_decoder.mlpackage`, `codec.mlpackage`). El autor documenta que la Neural Engine pierde precisión en proyecciones grandes con valores de entrada pequeños y en la función silu; los programas evitan ambas mediante formulaciones matemáticamente equivalentes a las originales, con las mediciones recogidas en `notes/STATE.md` del repositorio de código. No se dispone de información sobre el dataset de entrenamiento, el número de tokens ni el proceso de alineación (RLHF/DPO) del modelo base en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline text-generation), heredada del modelo base omni.
-- Procesamiento de imágenes como entrada (verificado en la prueba end-to-end del runtime).
-- Procesamiento de audio como entrada y salida de voz (speech out): el decodificador de profundidad, el sampler y el códec se ejecutan en el ANE y producen audio de nivel de voz.
-- Soporte de tool calling: la prueba de humo end-to-end incluye texto, llamada a herramienta, resultado de herramienta, imagen, audio y salida de voz.
-- Dos modos de contexto: atención exacta hasta 28.672 tokens o ventana deslizante hasta 78.042 tokens.
-- Servidor local con endpoint `/health` que informa del modo activo, la longitud de contexto y el techo de tokens por segundo.
-- Soporte multilingüe: no disponible en la información de esta conversión (corresponde al modelo base).
+- Generación de texto conversacional y razonamiento de propósito general.
+- Generación de código y aritmética, verificado en la prueba de fidelidad con prompts mixtos.
+- Comprensión de imágenes a través de la torre de visión de 224×224.
+- Comprensión de audio de hasta 30 segundos mediante el codificador de audio.
+- Salida de voz (speech out) de hasta 10,2 segundos a través del decodificador de profundidad y el códec.
+- Soporte de tool calling / function calling, validado en el smoke test end-to-end (llamada a herramienta y resultado de herramienta).
+- Capacidad multilingüe parcial: la prueba de fidelidad incluye inglés y rumano, aunque no se detalla la lista completa de idiomas.
+- Contexto largo exacto de 28.672 tokens, con recuperación de información situada al inicio del prompt (recordó un código declarado al principio en una prueba de 28.500 tokens).
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: ejecución completamente on-device sin GPU externa, con ~30 tok/s de decodificación, adecuado para chat privado sin envío de datos a la nube.
-- Asistente de voz on-device: el modelo acepta audio de entrada y genera salida de voz directamente en el ANE, lo que permite construir interfaces de voz privadas sin servicios en la nube.
-- Agentes con tool calling en local: la prueba end-to-end confirma el ciclo completo de llamada a herramienta y resultado, útil para asistentes que consultan APIs o ejecutan funciones en el dispositivo.
-- Análisis de documentos largos con contexto de 28k: el modo `28k` mantiene atención exacta sobre toda la conversación, adecuado para resumir o consultar documentos de longitud media.
-- Conversaciones muy largas con el modo `78k`: permite diálogos extensos asumiendo que solo se retiene la ventana de los últimos 28.672 tokens, útil cuando la continuidad reciente importa más que la memoria completa.
-- Prototipado e investigación en optimización para ANE: el repositorio incluye el código de conversión, las mediciones y las decisiones de diseño (split del lm_head, límites de FLOPS del ANE), valioso como referencia para convertir otros modelos al Neural Engine.
-- Integración en apps macOS/iOS: el formato Core ML y los programas por capas permiten integrar inferencia directamente en aplicaciones nativas de Apple.
+- Asistentes conversacionales locales en Mac: el modelo corre en la Neural Engine con ~30 tok/s y un contexto de 28.672 tokens, suficiente para mantener conversaciones multi-turno con historial extenso sin salir del dispositivo.
+- Análisis de documentos largos con recuperación de detalles: gracias a la atención exacta sobre 28.672 tokens, se puede pegar un informe o un código fuente completo y preguntar por elementos situados al principio, como demuestra la prueba de recuperación a 28.500 tokens.
+- Automatización de tareas con tool calling: el smoke test valida el ciclo llamada a herramienta, resultado y continuación, lo que permite integrar el modelo en flujos de agentes que consulten APIs o ejecuten acciones locales.
+- Procesamiento multimodal de imágenes: la torre de visión a 224×224 permite describir, clasificar o extraer información de capturas y fotos en aplicaciones de escritorio para macOS.
+- Transcripción y respuesta por voz: el codificador de audio (hasta 30 s) y la salida de voz (hasta 10,2 s) habilitan interfaces habladas locales, útiles en entornos sin conectividad o con requisitos de privacidad.
+- Generación de código en el editor: con soporte de código y aritmética y una fidelidad top-1 del 96,3 % frente al modelo oficial, puede usarse para autocompletado y explicación de fragmentos en IDE sobre Apple Silicon.
+- Prototipado de investigación en eficiencia energética: al ejecutarse en ANE, sirve para medir latencia y consumo en hardware Apple frente a implementaciones en GPU, con métricas reproducibles de decodificación y prefill.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Las mediciones incluidas son de rendimiento de inferencia en el ANE:
-
-| Medición | Valor |
+| Metrica | Resultado |
 |---|---|
-| Decodificación modo `28k` (contexto de 64 tokens) | 30,6 tok/s |
-| Decodificación modo `78k` (contexto de 64 tokens) | 30,9 tok/s |
-| Decodificación bajo carga | 24,4–24,5 tok/s |
-| Decodificación a contexto largo (modo `28k`) | ~11–15 tok/s (crece hasta llenar la caché) |
-| Decodificación a contexto largo (modo `78k`) | plana (~30,9 tok/s) |
-| Ganancia por palettization | 16,3 → 21,1 tok/s |
-| Ganancia por split del lm_head | 21,1 → 24,5 tok/s |
-| lm_head en CPU (sin split) | 11,4 ms/token |
+| Decodificacion (tok/s) a 1.000 tokens de contexto | 29,9 |
+| Decodificacion (tok/s) a 16.000 tokens de contexto | 29,7 |
+| Decodificacion (tok/s) a 28.000 tokens de contexto | 31,1 |
+| Prefill | misma tasa que decodificacion, token a token; un prompt de 28.500 tokens tarda ~14,5 minutos |
+| Recuperacion a 28.500 tokens | recordo un codigo declarado al inicio del prompt |
+| Fidelidad vs. modelo oficial (prompt de 241 tokens, ingles/rumano/codigo/aritmetica) | top-1 96,3 %; top-5 overlap 4,83 de 5; KL media 0,0036; coseno de logits 1,0000 |
+| Fidelidad de la build anterior de 6 bits | top-1 81,7 %; KL media 0,2034 |
+| Fidelidad por posicion (posiciones 4.000-4.039) | top-1 100 %; KL media 0,0046 |
+| Correlacion de forma de onda del codec de voz | 0,996 frente al codec de PyTorch con codigos aleatorios |
+| Smoke test end-to-end | superado: texto, tool call, resultado de herramienta, imagen, audio, salida de voz y guardia de contexto |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: Apple Silicon con Apple Neural Engine (Mac con chip M系列). No se especifica el chip exacto usado en las mediciones.
-- Almacenamiento: ~1,8 GB para la build palettizada LUT6; ~3,7 GB para la build sin palettizar.
-- No requiere GPU dedicada ni VRAM discreta: toda la inferencia se ejecuta en el ANE (con el lm_head parcialmente en CPU, 11,4 ms/token en la versión sin dividir).
-- Cabe holgadamente en cualquier Mac moderno con Apple Silicon; no aplica el concepto de GPU de consumo tipo RTX 4090.
-- Despliegue: mediante el runtime del repositorio vladimir-voinea/lfm3-omni-ane, con el servidor incluido (`lfm3_serve.py`) en modos `28k` y `78k`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI (el formato Core ML no es compatible con ellos).
-- Rendimiento esperado: 24–31 tok/s de decodificación según carga de la máquina; en modo `28k` la velocidad decae a ~11–15 tok/s cuando la caché de atención completa se llena.
+- Hardware objetivo: Apple Silicon con Neural Engine (ANE); el modelo está compilado para ejecutarse en la ANE, no en GPU ni CPU genéricas.
+- VRAM/unified memory: el repositorio ocupa 6,2 GB en disco; los programas de texto están palettizados a 8 bits y los multimodales en fp16, con un total de ~3,5 GB de programas según la model card.
+- GPU recomendadas: no aplica en el sentido tradicional; se requiere un chip Apple con ANE. No se especifica el modelo mínimo de chip en la información proporcionada.
+- Cabe en hardware consumer: sí, en equipos Apple Silicon con memoria unificada suficiente para cargar los programas y el estado de atención; no se detalla el mínimo de memoria unificada.
+- Opciones de despliegue: runtime propio `lfm3-omni-ane` (script `tools/lfm3_serve.py`), descarga mediante `huggingface-cli`; no se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato Core ML.
+- Latencia y throughput: ~30 tok/s de decodificación plana en todo el contexto; prefill a la misma tasa token a token, lo que implica ~14,5 minutos para 28.500 tokens.
+- Limitación de hardware documentada: la atención exacta a 78k no es alcanzable a velocidad en esta ANE; requiere ~109 GFLOPS solo para atención a 20 tok/s, mientras que el mejor tile medido entrega 92.
 
 ## Comparativa con modelos similares
 
-| Caracteristica | LFM3-Omni-2B ANE Core ML (esta conversión) | LiquidAI/LFM3-Omni-2B (base) | LFM2-1.2B (Liquid AI) |
-|---|---|---|---|
-| Parametros | 2B | 2B | 1,2B |
-| Formato | Core ML (.mlpackage), LUT6 | safetensors (PyTorch/Transformers) | safetensors, GGUF |
-| Contexto | 28.672 o 78.042 tokens | no disponible en la información de esta ficha | no disponible |
-| Modalidades | Texto, imagen, audio entrada; voz salida | Texto, imagen, audio entrada; voz salida | Texto |
-| Hardware objetivo | Apple Neural Engine | GPU/CPU estándar | CPU/GPU estándar, móvil |
-| Licencia | lfm-open-license-v1.0 | lfm-open-license-v1.0 | lfm-open-license-v1.0 |
-| Rendimiento documentado | ~30 tok/s en ANE | no disponible en la información de esta ficha | no disponible |
+| Modelo | Parametros | Contexto | Formato / hardware | Licencia | Notas |
+|---|---|---|---|---|---|
+| LFM3-Omni-2B ANE CoreML (esta ficha) | 2.000 M | 28.672 tokens fijos | Core ML, Apple Neural Engine | lfm-open-license-v1.0 | ~30 tok/s, multimodal completo, conversión palettizada LUT8 |
+| LiquidAI/LFM3-Omni-2B (modelo base) | 2.000 M | no disponible en la información | PyTorch / safetensors | lfm-open-license-v1.0 | Referencia de fidelidad; incluye `towers.safetensors` para fallback |
+| Alternativas de 2B en formato Core ML | no disponible | no disponible | Core ML | no disponible | No se dispone de datos comparables en la información proporcionada |
 
-Como referencia de categoría, compite con otras conversiones on-device para Apple (por ejemplo modelos convertidos con MLX o llama.cpp en Metal), pero no se dispone de datos comparativos directos en la información proporcionada.
+No se dispone de información suficiente para comparar con modelos de la misma categoría (omni de ~2B en formato Core ML) en parámetros, contexto y rendimiento.
 
 ## Limitaciones y advertencias
 
-- La atención exacta a 78k tokens no es alcanzable en este hardware: el modo `78k` usa ventana deslizante (solo los últimos 28.672 tokens), por lo que la información antigua de la conversación se sobrescribe y no es recuperable.
-- El contexto es fijo en tiempo de compilación: hay que elegir el modo (`28k` o `78k`) antes de ejecutar, y cada modo tiene su propio techo de rendimiento.
-- El lm_head completo (128.000 salidas) no se coloca en el ANE; la versión sin dividir se ejecuta en CPU a 11,4 ms/token. La versión dividida lo mitiga parcialmente.
-- No se han publicado benchmarks de calidad (MMLU, etc.) para esta conversión; la palettization de 6 bits puede degradar marginalmente la precisión respecto a la build sin palettizar de ~3,7 GB, según reconoce el propio autor.
-- Sesgos, riesgo de alucinación y capacidades multilingües: no documentados en esta conversión; deben evaluarse a partir del modelo base LiquidAI/LFM3-Omni-2B.
-- Licencia: lfm-open-license-v1.0, una licencia personalizada ("other"). Conviene revisar sus términos antes de cualquier uso comercial, ya que no es una licencia estándar tipo Apache o MIT.
-- Proyecto de un autor individual con 787 descargas y sin comunidad de mantenimiento documentada: para producción conviene validar el runtime por cuenta propia.
-- Los modelos Omni de 2B son pequeños: su rendimiento en razonamiento complejo y código será limitado frente a modelos de 7B o superiores.
+- Contexto fijo de 28.672 tokens: no es ampliable en tiempo de ejecución; las peticiones que lo exceden se rechazan con `400 context_exceeded`.
+- La atención exacta a 78k no es viable a velocidad en esta hardware: el cálculo aritmético no cierra (~109 GFLOPS necesarios frente a 92 medidos).
+- La fidelidad frente al modelo oficial solo se ha medido hasta la posición 4.039, no en todo el contexto.
+- La calidad de la voz solo se ha comparado numéricamente (correlación de forma de onda 0,996), no mediante evaluación perceptual.
+- El audio de entrada superior a 30 segundos y la voz superior a 10,2 segundos recurren a PyTorch, que requiere `towers.safetensors` (0,88 GB) y sigue importando PyTorch en el runtime.
+- El cabezal de 128.000 vías no se coloca entero en la ANE, por lo que se usa la versión dividida `lm_head_a/b`.
+- Riesgo de alucinación inherente al modelo base; no se han publicado evaluaciones específicas de sesgo en la información disponible.
+- Licencia `lfm-open-license-v1.0`: es necesario revisar sus términos para uso comercial, ya que se trata de una licencia "other" y no estándar.
+- El repositorio contiene solo los programas convertidos; el runtime y el código de conversión están en GitHub y deben obtenerse por separado.
+- No se dispone de la lista completa de idiomas soportados ni de evaluaciones multilingües formales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/vladimir94/lfm3-omni-2b-ane-coreml
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- Runtime, código de conversión y mediciones (GitHub): https://github.com/vladimir-voinea/lfm3-omni-ane
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
+- Repositorio de runtime y conversión: https://github.com/vladimir-voinea/lfm3-omni-ane
+- Notas de estado y mediciones: `notes/STATE.md` en el repositorio de GitHub

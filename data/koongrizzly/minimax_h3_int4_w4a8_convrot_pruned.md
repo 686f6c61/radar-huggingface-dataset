@@ -2,110 +2,93 @@
 
 ## Resumen
 
-MiniMax H3 int4 W4A8 ConvRot Pruned es un paquete de pesos cuantizados y componentes auxiliares derivados de MiniMax H3, un modelo omni-modal de generacion de video con audio estereo sincronizado publicado originalmente por MiniMaxAI. El repositorio lo mantiene el usuario koongrizzly y no es un modelo entrenado desde cero, sino una redistribucion optimizada para memoria: transformers de difusion podados y cuantizados en formato W4A8 (pesos INT4, activaciones INT8) con ConvRot, un text encoder tambien en W4A8, una VAE de video en precision mixta FP16/FP32 y una VAE de audio en FP32.
+MiniMax_H3_int4_W4A8_ConvRot_Pruned es un repositorio de componentes cuantizados del modelo MiniMax H3, un generador omnicomodal de vídeo y audio desarrollado originalmente por MiniMaxAI. El repositorio, mantenido por el usuario koongrizzly, no contiene un modelo entrenado desde cero, sino una recopilación de checkpoints derivados: los transformadores de difusión FL2VA y Ref2VA en formato W4A8 ConvRot, un codificador de texto también cuantizado en W4A8 y un VAE de vídeo en precisión mixta FP16/FP32.
 
-El objetivo declarado es hacer viable la inferencia local de MiniMax H3 en GPU de consumo, donde los componentes en precision completa requieren una cantidad muy elevada de VRAM y memoria de sistema. Las conversiones INT4/W4A8 proceden del trabajo de Winnougan, la version hibrida de berryber09 y el Turbo LoRA de larryvrh; koongrizzly aporta el empaquetado, la conversion de la VAE de video a precision mixta y la integracion con su aplicacion standalone.
+El objetivo declarado es hacer viable la inferencia local de MiniMax H3 en GPUs de consumo, donde los componentes en precisión completa requieren cantidades muy elevadas de VRAM y memoria de sistema. La cuantización a 4 bits en pesos y 8 bits en activaciones (W4A8) con la técnica ConvRot reduce sustancialmente el peso en memoria a cambio de cierta pérdida de precisión numérica.
 
-La relevancia actual del repositorio es practica mas que cientifica: agrupa en un unico paquete (60,5 GB) los componentes necesarios para ejecutar generacion text-to-audio-video, first/last-frame-to-audio-video y reference-to-audio-video con requisitos de memoria reducidos. No se dispone de informacion sobre numero de parametros, longitud de contexto ni resultados de benchmarks en la documentacion proporcionada.
+El repositorio tiene 81,5 GB y acumula 26.001 descargas, lo que refleja un interés práctico notable en la comunidad de generación de vídeo local. Está pensado principalmente para ComfyUI y para la aplicación independiente del propio autor, publicada en GitHub. La licencia declarada es Apache 2.0, aunque el propio autor advierte que los componentes derivan de proyectos de terceros cuyos términos deben revisarse.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (DiT) para generacion de video omni-modal, con text encoder y VAEs separadas de video y audio; no disponible el detalle de capas |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer de difusión (FL2VA y Ref2VA) más codificador de texto y VAE de vídeo/audio; arquitectura original de MiniMax H3 |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W4A8 / INT4 con ConvRot (transformers FL2VA y Ref2VA, y text encoder); VAE de video en precision mixta FP16/FP32; VAE de audio en FP32 |
+| Tipos de cuantización | W4A8 ConvRot (pesos 4 bits, activaciones 8 bits) en transformadores y codificador de texto; VAE de vídeo en FP16/FP32 mixto; VAE de audio en FP32 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 declarada por el autor del repositorio; los componentes derivados quedan sujetos a los terminos de MiniMax H3 original y de las conversiones de terceros |
+| Licencia | Apache 2.0 (con advertencia del autor sobre términos de terceros) |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 60,5 GB |
-| Pipeline declarado | no disponible |
-| Libreria | minimax-h3 |
-| Descargas / likes | 17.555 / 6 |
-| Fecha de creacion / actualizacion | 2026-08-09 / 2026-09-13 |
 
 ## Arquitectura y entrenamiento
 
-MiniMax H3 es un modelo generativo omni-modal que produce video y audio estereo sincronizados. La arquitectura no se detalla en la informacion disponible; por la composicion del repositorio se deduce un esquema de difusion con transformers independientes para cada variante de condicionamiento (FL2VA para first/last-frame, Ref2VA para referencias multimodales, y una version hibrida que unifica ambos), un text encoder para el prompt, una VAE de video/visual y una VAE de audio. El autor no publica numero de parametros, tokens de entrenamiento, composicion del dataset ni si hubo etapas de RLHF o DPO.
+El repositorio no entrena ningún modelo: redistribuye y reempaqueta componentes del MiniMax H3 oficial. Los dos transformadores principales (FL2VA, para generación desde primer/último fotograma, y Ref2VA, para generación con referencias multimodales) son checkpoints podados y cuantizados en W4A8 ConvRot, conversión original de Winnougan. El codificador de texto sigue el mismo esquema W4A8, mientras que su componente visual se mantiene en mayor precisión, igual que en la conversión de origen.
 
-Este repositorio no entrena ni hace fine-tuning del modelo base. Las modificaciones aplicadas son de compresion: poda de los checkpoints FL2VA y Ref2VA, cuantizacion W4A8 con ConvRot en los tres safetensors principales (`minimax_h3_fl2va_pruned-w4a8_convrot_pruned.safetensors`, `minimax_h3_ref2va_pruned-w4a8_convrot_pruned.safetensors` y `minimax_h3_te_w4a8_convrot.safetensors`), y conversion de la mayor parte de los tensores de la VAE de video de FP32 a FP16 conservando en FP32 bloques pequenos y sensibles a la precision. La actualizacion del 17 de agosto de 2026 incorpora la version hibrida, que sustituye a los modelos rf2va y ref2va y permite usar imagen inicial y referencia en un mismo trabajo. Se incluye ademas el Turbo LoRA step600, que habilita generacion en 4 pasos.
+La innovación técnica propia de este repositorio es el VAE de vídeo en precisión mixta: la mayoría de tensores se convierten de FP32 a FP16 para reducir memoria y almacenamiento, pero bloques pequeños y sensibles a la precisión se conservan intencionadamente en FP32 para preservar estabilidad numérica y calidad de reconstrucción. La arquitectura no se ha reentrenado ni ajustado; solo se ha modificado la representación numérica de los pesos. El repositorio incluye además LoRAs Turbo de 4 pasos (step600) procedentes de larryvrh, y desde septiembre de 2026 incorpora dos variantes híbridas de terceros (berryber09 y Aki7777777) que unifican los modos de referencia y primer/último fotograma en un solo checkpoint.
 
 ## Capacidades
 
-- Generacion de video con audio estereo sincronizado a partir de texto (text-to-audio-video).
-- Generacion condicionada por primer y ultimo fotograma (first/last-frame-to-audio-video).
-- Generacion condicionada por referencias multimodales (multimodal reference-to-audio-video), segun la variante seleccionada.
-- Version hibrida que permite combinar imagen inicial y referencia en una misma ejecucion.
-- Inferencia acelerada mediante Turbo LoRA (step600) con muestreo en 4 pasos.
-- Ejecucion local en memoria reducida gracias a la cuantizacion INT4/W4A8 y a la VAE de video en precision mixta.
-- Carga de algunos modelos en int8 a traves de la aplicacion standalone del autor.
-- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso ni soporte multilingue del prompt.
+- Generación de vídeo con audio estéreo sincronizado (audio-vídeo omnicomodal).
+- Texto a audio-vídeo (según la variante del modelo original).
+- Generación desde primer y último fotograma (FL2VA).
+- Generación con referencias multimodales (Ref2VA).
+- Modo híbrido que permite combinar imagen inicial y referencia en un mismo trabajo (variantes híbridas incluidas).
+- Generación acelerada en 4 pasos mediante LoRAs Turbo.
+- Inferencia en memoria reducida gracias a la cuantización W4A8 y al VAE de precisión mixta.
+- Integración con ComfyUI y con la aplicación independiente del autor; compatible con algunos modelos INT8 según la app.
 
 ## Casos de uso
 
-- Generacion de video musical o de clips cortos con audio sincronizado: el modelo produce pista de audio estereo y video en una sola pasada, por lo que evita el flujo habitual de generar video y audio por separado y alinearlos despues.
-- Prototipado de anuncios en equipos de una sola GPU: la cuantizacion W4A8 y la VAE en precision mixta reducen el consumo de memoria frente al modelo original en FP32, lo que permite iterar variaciones de un anuncio en hardware de consumo.
-- Animacion de imagenes fijas (image-to-video con audio): la variante FL2VA acepta primer y ultimo fotograma, util para convertir ilustraciones o fotografias en planos animados con sonido.
-- Transferencia de estilo o identidad mediante referencias: la variante Ref2VA y la version hibrida permiten condicionar el resultado con imagenes de referencia, adecuado para mantener coherencia visual entre planos de una misma pieza.
-- Creacion de contenido para redes sociales en local: con el Turbo LoRA de 4 pasos y pesos INT4, un estudio pequeno puede generar borradores sin depender de APIs en la nube ni de GPUs de datacenter.
-- Previsualizacion en pipelines de produccion de animacion: uso del modelo cuantizado como generador de animaticos y previsiones, reservando el modelo en precision completa para el render final.
-- Experimentacion academica en generacion audio-visual: el paquete permite reproducir y auditar un modelo omni-modal de gran tamano en laboratorios con presupuesto de hardware limitado.
-- Integracion en flujos ComfyUI: al estar pensado para ComfyUI y para una aplicacion standalone, se puede insertar como nodo dentro de pipelines de generacion ya existentes.
+- Generación de vídeo local en GPU de consumo: el conjunto cuantizado permite cargar los transformadores en VRAM mucho menor que la versión FP32, haciendo viable la creación de clips con audio en equipos de gama alta domésticos.
+- Prototipado rápido de vídeo publicitario: con las LoRAs Turbo de 4 pasos se pueden iterar conceptos de audio-vídeo en pocas etapas de muestreo, útil para agencias que necesitan variantes rápidas.
+- Animación de imágenes fijas: el modo FL2VA interpola entre primer y último fotograma, adecuado para crear transiciones o animaciones de storyboard.
+- Generación condicionada por referencias: el modo Ref2VA permite mantener consistencia de personaje o estilo a partir de imágenes de referencia, útil en series cortas o contenido de marca.
+- Flujos de trabajo en ComfyUI: al estar empaquetado para ese entorno, se integra en grafos nodales con control preciso de cada componente (text encoder, VAE, transformador).
+- Investigación en cuantización: el VAE mixto FP16/FP32 y los checkpoints W4A8 sirven como caso de estudio de compromisos precisión-memoria en modelos generativos de vídeo.
+- Despliegue en la app independiente: el autor mantiene una aplicación de escritorio que carga estos checkpoints, orientada a usuarios que no quieren montar un grafo de ComfyUI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye metricas de FVD, FAD, CLIP-score, calidad de reconstruccion de la VAE ni comparativas numericas frente al modelo original en FP32 o frente a las conversiones de Winnougan.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El autor no publica cifras minimas ni recomendadas.
-- Tamano del repositorio completo: 60,5 GB, aunque no todos los componentes se cargan simultaneamente (los transformers FL2VA y Ref2VA son alternativos).
-- No cabe esperar que el paquete completo resida en VRAM de una GPU de consumo; el objetivo declarado es ejecutarlo en GPU de consumo con carga selectiva de componentes y uso de memoria de sistema.
-- Perfil de computo: pesos en INT4 y activaciones en INT8 (W4A8) en los tres safetensors principales, lo que reduce el ancho de banda de memoria respecto a FP16.
-- El text encoder se entrega en W4A8, pero su componente visual permanece a mayor precision, tal como en la conversion de origen.
-- VAE de video en precision mixta FP16/FP32 y VAE de audio en FP32: ambos componentes mantienen requisitos de memoria no despreciables.
-- GPU recomendadas: no disponible como lista oficial. El repositorio esta orientado explicitamente a GPU de consumo.
-- Opciones de despliegue: ComfyUI (entorno para el que fue creado oficialmente) y aplicacion standalone del autor en https://github.com/Koongrizzly/MiniMax_H3_Standalone_app, que tambien permite cargar algunos modelos en int8. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un transformer de difusion de video con VAEs.
-- Latencia y throughput: no disponible. El Turbo LoRA step600 reduce el numero de pasos de muestreo a 4, lo que disminuye proporcionalmente el coste de inferencia.
+- VRAM estimada: no disponible de forma numérica; el repositorio (81,5 GB) incluye todos los componentes, pero la carga en inferencia es inferior al usar cuantización W4A8 y VAE mixto. El objetivo declarado es reducir la huella frente al modelo en precisión completa.
+- GPU recomendadas: no disponible en la información proporcionada; el propósito es habilitar GPUs de consumo, pero no se especifican modelos concretos.
+- Viabilidad en GPU de consumo: sí, es el objetivo principal del repositorio, aunque sin cifras de VRAM confirmadas.
+- Opciones de despliegue: ComfyUI (soporte oficial), aplicación independiente MiniMax_H3_Standalone_app del autor, y otros entornos con el loader adecuado.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en la informacion proporcionada. La comparacion viable es entre variantes del mismo ecosistema MiniMax H3:
+| Modelo | Tipo | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| koongrizzly/MiniMax_H3_int4_W4A8_ConvRot_Pruned | Pack de componentes MiniMax H3 | W4A8 ConvRot + VAE mixto | Apache 2.0 | Hugging Face, 81,5 GB |
+| Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI | Conversión INT4 original para ComfyUI | W4A8 ConvRot | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo oficial completo | Precisión completa | no disponible | Hugging Face |
+| berryber09/MiniMax-H3-ref2va-fl2va-hybrid-w4a8 | Checkpoint híbrido W4A8 | W4A8 | no disponible | Hugging Face |
 
-| Variante | Naturaleza | Precision | Estado |
-|---|---|---|---|
-| MiniMaxAI/MiniMax-H3 | Modelo oficial de referencia | Precision completa (FP32/FP16 no detallado) | Publicado por MiniMaxAI |
-| Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI | Cuantizacion INT4 ConvRot W4A8 | INT4 pesos / INT8 activaciones | Origen de los tres safetensors principales de este repositorio |
-| berryber09/MiniMax-H3-ref2va-fl2va-hybrid-w4a8 | Version hibrida que unifica Ref2VA y FL2VA | W4A8 | Integrada en este repositorio desde el 17 de agosto de 2026 |
-| larryvrh/MiniMax-H3-Turbo-Lora | LoRA de aceleracion (step600) | No aplica | Incluida en este repositorio |
-| koongrizzly/MiniMax_H3_int4_W4A8_ConvRot_Pruned | Paquete integrado con VAE de video en precision mixta y VAE de audio en FP32 | W4A8 + FP16/FP32 mixto | Este repositorio |
-
-No se dispone de comparativas de parametros, contexto, rendimiento ni licencia frente a otros modelos de generacion de video con audio de la competencia.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion W4A8 y la poda implican una perdida de precision numerica frente al modelo original; el autor la describe como un intercambio por menor consumo de memoria, sin cuantificar el impacto en calidad.
-- La conversion de la VAE de video a FP16 afecta a la mayor parte de sus tensores; aunque se conservan bloques sensibles en FP32, puede haber diferencias de reconstruccion respecto a la VAE original.
-- No hay datos publicos de evaluacion (FVD, FAD, similitud de audio, coherencia temporal) que permitan estimar la degradacion real.
-- No se especifican parametros, contexto, idiomas soportados ni pipeline, lo que dificulta planificar integraciones.
-- Licencia: el repositorio declara apache-2.0, pero el propio autor advierte de que contiene componentes derivados o redistribuidos de otros proyectos y que el usuario debe revisar y cumplir los terminos del modelo MiniMax H3 original y de los componentes convertidos. La ausencia de una licencia explicita y verificada del modelo base es un riesgo para uso comercial.
-- El repositorio no esta afiliado ni respaldado por MiniMaxAI.
-- El soporte oficial es para ComfyUI; el uso standalone requiere el loader adecuado y puede presentar incompatibilidades.
-- El uso de la funcion de carga de modelos int8 en la aplicacion standalone se menciona sin detallar limitaciones.
-- Riesgo de sesgos y alucinacion visual: no se documenta ninguna evaluacion de sesgos ni de fidelidad del contenido generado; se aplican los sesgos inherentes al dataset de entrenamiento del modelo original, que no se detalla.
-- Las fechas del repositorio (creacion en 2026) y el tamano de 60,5 GB implican requisitos de almacenamiento y de ancho de banda de descarga considerables.
-- No se documenta compatibilidad con aceleradores distintos de GPU NVIDIA ni con backends alternativos.
+- La cuantización W4A8 introduce pérdida de precisión numérica que puede degradar la calidad de generación frente al modelo oficial en precisión completa.
+- El VAE mixto FP16/FP32 reduce memoria, pero no se documenta cuantitativamente el impacto en calidad de reconstrucción.
+- No se especifican idiomas soportados ni longitud de contexto; no asumir cobertura multilingüe sin verificar en el repositorio oficial.
+- La licencia Apache 2.0 se declara sobre un repositorio que redistribuye componentes de terceros; el autor recomienda revisar los términos del modelo original y de las conversiones, por lo que el uso comercial requiere verificación adicional.
+- El repositorio no está afiliado ni respaldado por MiniMaxAI.
+- Los checkpoints híbridos y las LoRAs Turbo proceden de otros autores y pueden tener condiciones propias.
+- El soporte principal es ComfyUI; el uso en otros entornos requiere trabajo adicional de integración.
+- No hay benchmarks publicados que permitan cuantificar la degradación respecto al modelo original.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/koongrizzly/MiniMax_H3_int4_W4A8_ConvRot_Pruned
-- Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Aplicacion standalone: https://github.com/Koongrizzly/MiniMax_H3_Standalone_app
-- Discord de soporte del autor: https://discord.gg/kWxAJwjSY
-- Conversion INT4 ConvRot de Winnougan: https://huggingface.co/Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI
-- Version hibrida de berryber09: https://huggingface.co/berryber09/MiniMax-H3-ref2va-fl2va-hybrid-w4a8
-- Turbo LoRA de larryvrh: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card del repositorio.
+- Repositorio Hugging Face: https://huggingface.co/koongrizzly/MiniMax_H3_int4_W4A8_ConvRot_Pruned
+- Modelo original MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Conversión INT4 ConvRot original (Winnougan): https://huggingface.co/Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI
+- Aplicación independiente: https://github.com/Koongrizzly/MiniMax_H3_Standalone_app
+- Discord del autor: https://discord.gg/kWxAJwjSY
+- LoRAs Turbo: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
+- Modelo híbrido de berryber09: https://huggingface.co/berryber09/MiniMax-H3-ref2va-fl2va-hybrid-w4a8
+- Modelo híbrido de Aki7777777 (Civitai): https://civitai.com/models/2900456/minimax-h3sparseref15hybrid

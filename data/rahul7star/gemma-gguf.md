@@ -2,78 +2,92 @@
 
 ## Resumen
 
-El repositorio `rahul7star/gemma-gguf` contiene una colección de modelos cuantizados en formato GGUF, principalmente basados en el modelo `google/gemma-4-12B-it` de Google. El autor, rahul7star, ha publicado múltiples archivos con diferentes variantes (razonamiento, codificación, "uncensored", etc.) y los ha acompañado de demos interactivas en Hugging Face Spaces. El archivo principal identificado como `model-i-gemma-e4-12b-quality.gguf` corresponde a una cuantización Q6_K del Gemma 4 12B instruct, con una ventana de contexto de 262 144 tokens según la metadata GGUF.
+`rahul7star/gemma-gguf` es un repositorio agregado de pesos en formato GGUF publicado por el usuario rahul7star en Hugging Face. No se trata de un modelo único, sino de una colección de conversiones y variantes cuantizadas (mayoritariamente Q6_K) construidas a partir de varios modelos base: `google/gemma-4-E2B-it`, `google/gemma-4-12B-it` y `ornith-ai/Ornith-1.5-9B`, además de otras variantes derivadas de Qwen, Llama-Nemotron y Holo mencionadas en la model card. El repositorio está pensado como un catálogo de pesos listos para usar con llama.cpp y frontends compatibles, con demos en Hugging Face Spaces.
 
-La relevancia de este repositorio radica en ofrecer versiones cuantizadas de un modelo de 12B parámetros que pueden ejecutarse en hardware de consumo, con una calidad cercana a la precisión completa según la escala de cuantización Q6_K. El autor también ha incluido un dataset de razonamiento (`rahul7star/gemma4-opus-reasoning-12k`) que sugiere un ajuste adicional para tareas de razonamiento complejo, aunque no se proporcionan detalles sobre el proceso de entrenamiento.
+El modelo base más destacado es Gemma 4 12B (variante instruct), del que la model card describe 48 bloques transformer, 16 cabezas de atención por capa con `key_length` y `value_length` de 512, y una longitud de contexto declarada de 262.144 tokens. Los pesos se distribuyen principalmente en Q6_K (aproximadamente 6 bits por peso), lo que para un modelo de 12B supone unos 10 GB en disco, frente a los ~24 GB de F16. El repositorio completo ocupa 464 GB, lo que refleja la acumulación de múltiples variantes y modelos.
 
-A pesar de la popularidad (más de 147 000 descargas), la documentación es escasa y desorganizada, con múltiples archivos y nombres ambiguos. La información técnica disponible se limita a la metadata de los archivos GGUF y a las notas del autor, sin benchmarks oficiales ni especificaciones detalladas.
+La relevancia de este repositorio es práctica: ofrece pesos GGUF de variantes Gemma 4 y otros modelos afinados para tareas de código y agentes, con ajustes de muestreo recomendados y demos accesibles. No obstante, la documentación es escasa y desestructurada, la licencia no está declarada y el número de parámetros real registrado en safetensors (2.516.756.480) no coincide con el tamaño nominal de 12B, lo que obliga a tratar el contenido con cautela.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (Gemma 4, 48 capas, 16 cabezas de atención por capa) |
-| Parametros totales | 4 647 450 147 (según safetensors de un archivo; el modelo base declarado es de 12B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262 144 tokens (según metadata GGUF) |
-| Tipos de cuantizacion | Q6_K (principal), posiblemente otros (Q4_K, Q5_K, Q8_0) en el repositorio |
+| Arquitectura | Transformer decoder-only (Gemma 4), 48 bloques, 16 cabezas de atención por capa; `key_length` y `value_length` = 512 |
+| Parámetros totales | 2.516.756.480 según safetensors del repo; los modelos base referenciados incluyen variantes de 12B y 9B |
+| Parámetros activos | no disponible (no se declara arquitectura MoE) |
+| Longitud de contexto | 262.144 tokens (según metadatos GGUF citados en la model card) |
+| Tipos de cuantización | Q6_K principalmente; se mencionan también Q4_0, Q5_K, Q8_0 y F16 en la explicación de la model card |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repositorio de 464 GB con múltiples archivos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `google/gemma-4-12B-it`, un transformer denso de 12B parámetros con 48 capas y atención multi-cabeza (16 cabezas). La cuantización Q6_K reduce los pesos a aproximadamente 6 bits por peso, lo que para un modelo de 12B resulta en un tamaño de archivo de unos 10 GB. El autor menciona un dataset de razonamiento (`gemma4-opus-reasoning-12k`) que probablemente se utilizó para un ajuste fino adicional, pero no se especifica el método (RLHF, DPO, SFT) ni la composición exacta del dataset.
+Los pesos derivan de Gemma 4, un transformer decoder-only con 48 bloques y atención multi-cabeza de 16 cabezas por capa, con dimensiones de clave y valor de 512. La model card incluye una explicación divulgativa del flujo de inferencia: cada token atraviesa los 48 bloques y la temperatura solo afecta a la selección final del token, no a las capas utilizadas. Los metadatos GGUF citados incluyen ajustes de muestreo por defecto (`top_k = 64`, `top_p = 0.95`, `temp = 1.0`).
 
-No se dispone de información sobre el proceso de entrenamiento original de Gemma 4 ni sobre las modificaciones aplicadas por el autor. La metadata GGUF indica parámetros de muestreo recomendados (temperature=1.0, top_k=64, top_p=0.95), pero estos son solo valores por defecto y no reflejan el entrenamiento.
+No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO o alguna fase de alineación posterior. El repositorio incluye un dataset propio (`rahul7star/gemma4-opus-reasoning-12k`) y variantes etiquetadas como "heretic" y "uncensored", pero no se especifica qué proceso de ajuste se aplicó a cada archivo. Tampoco se detalla ninguna innovación técnica propia del autor más allá de la cuantización a Q6_K.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (modelo instruct).
-- Razonamiento y resolución de problemas, reforzado por el dataset de razonamiento incluido.
-- Soporte de código: el repositorio incluye variantes específicas para codificación (p. ej., `gemma-4-12B-coder-fable5-composer2.5-v1.gguf`).
-- Ventana de contexto muy larga (262K tokens), adecuada para documentos extensos o conversaciones largas.
-- Capacidades multilingües: no confirmadas, pero Gemma 4 soporta múltiples idiomas (dato no verificado en este repositorio).
-- Tool calling y agentes: algunas variantes del repositorio se describen como "coding agent" o "agentic", lo que sugiere soporte para llamadas a herramientas, aunque no hay documentación oficial.
+- Generación de texto conversacional, con etiqueta `conversational` en el repositorio.
+- Razonamiento y resolución de problemas, con variantes orientadas a "reasoning" según el dataset asociado.
+- Generación de código: se incluyen variantes como `gemma-4-12B-coder-fable5-composer2.5-v1.gguf`, descrita como agente programador en Python.
+- Uso agéntico y tool calling: la variante `gemma-4-12B-agentic-fable5-composer2.5-v2` se describe como agente de código con herramientas.
+- Variantes "uncensored" y "heretic" con filtros de seguridad reducidos o eliminados.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repositorio).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión, audio o modo thinking explícito: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de programación local: la variante `gemma-4-12B-coder-fable5-composer2.5-v1.gguf` está diseñada como agente de Python, pudiendo integrarse en entornos de desarrollo para autocompletado, generación de tests o refactorización de código.
-- Análisis de documentos largos: gracias a su contexto de 262K tokens, puede procesar libros técnicos, contratos o informes extensos en una sola pasada, resumiendo o extrayendo información relevante.
-- Chatbot de atención al cliente: el modelo instruct puede gestionar conversaciones multi-turno con memoria amplia, reduciendo la pérdida de contexto en interacciones prolongadas.
-- Razonamiento matemático y STEM: el dataset de razonamiento sugiere un buen desempeño en problemas de matemáticas, física o lógica, útil para tutorías o generación de ejercicios.
-- Prototipado rápido de aplicaciones de IA: al estar en formato GGUF, se puede desplegar con llama.cpp u Ollama en una GPU de consumo (10-12 GB VRAM) para pruebas sin necesidad de infraestructura cloud.
-- Investigación en cuantización: el repositorio sirve como referencia para comparar la calidad de diferentes niveles de cuantización en un modelo de 12B.
+- Asistencia de programación en local: la variante coder permite autocompletado y generación de funciones Python en entornos sin conexión, usando llama.cpp con pesos Q6_K de unos 10 GB.
+- Agente de código con herramientas: la variante agentic puede integrarse en flujos que requieran invocar funciones o comandos, con los parámetros de muestreo recomendados (`temperature=0.6`, `top_p=0.95`, `top_k=20`).
+- Despliegue en estación de trabajo con GPU de consumo: los pesos Q6_K de un modelo de 12B caben en GPUs con 12-16 GB de VRAM, lo que permite inferencia local sin infraestructura de servidor.
+- Experimentación con razonamiento de contexto largo: la ventana declarada de 262.144 tokens permite probar tareas de resumen o análisis de documentos extensos, siempre que el frontend y la memoria disponible lo permitan.
+- Evaluación comparativa de variantes: el repositorio reúne múltiples modelos y cuantizaciones que permiten comparar calidad y velocidad entre Q4_K, Q5_K, Q6_K y Q8_0 sobre el mismo hardware.
+- Pruebas de robustez y seguridad: las variantes "heretic" y "uncensored" permiten estudiar el comportamiento del modelo sin filtros, útil en investigación sobre alineación y evaluación de riesgos.
+- Demos interactivas: los Spaces enlazados (`Gguf-gradio`, `apex-gguf-1`, `apex-gguf`) permiten probar los pesos sin descargarlos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona métricas como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos. La única referencia de calidad es la afirmación de que Q6_K está "muy cerca de la calidad F16", pero sin datos numéricos que lo respalden.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~10 GB para Q6_K (según la tabla del autor: Q6_K ≈ 10 GB para un modelo de 12B).
-- GPU recomendadas: RTX 3090, RTX 4090, A100, o cualquier GPU con al menos 12 GB de VRAM. También puede ejecutarse en CPU con suficiente RAM (16-32 GB) usando llama.cpp.
-- Compatibilidad con GPU de consumo: sí, una RTX 3080/3090 o superior puede ejecutar el modelo con Q6_K.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o servidores compatibles con GGUF (como llama-cpp-python). vLLM no soporta GGUF nativamente, pero se puede convertir a otros formatos.
-- Latencia y throughput: no disponibles. Dependerá del hardware y del backend utilizado.
+- VRAM estimada para un modelo de 12B según la propia model card: F16 ≈ 24 GB, Q8 ≈ 13 GB, Q6_K ≈ 10 GB, Q5_K ≈ 8 GB, Q4_K ≈ 7 GB.
+- GPU recomendadas para Q6_K de 12B: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, H100 80 GB; también cabe en GPUs de 16 GB con Q4_K o Q5_K.
+- GPU de consumo: sí, un modelo de 12B en Q4_K o Q5_K cabe en RTX 4060 Ti 16 GB, RTX 4070 Ti Super 16 GB o RTX 4080 16 GB; en Q6_K requiere al menos 12 GB libres.
+- Opciones de despliegue: llama.cpp, Ollama, frontends compatibles con GGUF y endpoints compatibles; los Spaces usan Gradio.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos fiables. El modelo base (Gemma 4 12B) compite con otros modelos de 7-14B como Llama 3.1 8B, Qwen 2.5 7B o Mistral 7B, pero no hay benchmarks en este repositorio que permitan una comparación objetiva. La ventaja principal es su contexto de 262K tokens, superior a la mayoría de modelos de su tamaño. La licencia del modelo base (Gemma) permite uso comercial, pero la licencia de este repositorio no está especificada.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| rahul7star/gemma-gguf (Gemma 4 12B Q6_K) | 12B nominal (2,5B en safetensors del repo) | 262.144 | no disponible | GGUF | Hugging Face, 58.031 descargas |
+| google/gemma-4-12B-it (base) | 12B | no disponible en la información | no disponible | safetensors | Hugging Face |
+| ornith-ai/Ornith-1.5-9B (base incluido) | 9B | no disponible en la información | no disponible | no disponible | Hugging Face |
+| google/gemma-4-E2B-it (base incluido) | no disponible | no disponible en la información | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- La documentación es confusa y no oficial: el repositorio mezcla múltiples modelos y variantes sin una estructura clara, lo que dificulta saber qué archivo corresponde a qué modelo.
-- No hay garantía de calidad: al ser una cuantización realizada por un tercero, puede haber pérdida de precisión o artefactos no presentes en el modelo original.
-- Riesgo de alucinación: inherente a todos los modelos de lenguaje, especialmente en tareas de razonamiento complejo o con contexto muy largo.
-- Sesgos desconocidos: no se ha realizado una evaluación de sesgos ni se proporciona información sobre los datos de entrenamiento del ajuste fino.
-- Licencia no especificada: aunque el modelo base Gemma tiene una licencia permisiva, la licencia de este repositorio no está indicada, lo que impide conocer las restricciones de uso comercial o redistribución.
-- El autor menciona variantes "uncensored" o "heretic" que pueden generar contenido inapropiado; estas no son el modelo principal, pero su presencia en el repositorio puede ser problemática en entornos profesionales.
+- La licencia no está declarada, por lo que no se puede confirmar el uso comercial ni las obligaciones de atribución.
+- El repositorio mezcla múltiples modelos base y variantes sin una tabla clara de correspondencia entre archivo y modelo de origen.
+- El recuento de parámetros en safetensors (2.516.756.480) no coincide con el tamaño nominal de 12B, lo que sugiere que el dato corresponde a un archivo concreto y no al conjunto.
+- Las variantes "heretic" y "uncensored" han reducido o eliminado los filtros de seguridad; no son adecuadas para producción orientada a usuarios finales sin moderación adicional.
+- La model card incluye un prompt de sistema ("Flash") diseñado explícitamente para generar contenido dañino; debe tratarse como material de investigación, no como configuración recomendada.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de fidelidad.
+- No se especifican idiomas soportados ni calidad por idioma.
+- El contexto declarado de 262.144 tokens es teórico; en la práctica la memoria KV requerida puede exceder la VRAM disponible en GPUs de consumo.
+- La documentación es informal y contiene explicaciones divulgativas mezcladas con instrucciones operativas, lo que dificulta la verificación de los datos técnicos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/rahul7star/gemma-gguf
-- Demo 1: https://huggingface.co/spaces/rahul7star/Gguf-gradio
-- Demo 2: https://huggingface.co/spaces/rahul7star/apex-gguf-1
-- Demo 3: https://huggingface.co/spaces/rahul7star/apex-gguf
-- Dataset de razonamiento: https://huggingface.co/datasets/rahul7star/gemma4-opus-reasoning-12k
+- Dataset asociado: https://huggingface.co/datasets/rahul7star/gemma4-opus-reasoning-12k
+- Demo Gradio: https://huggingface.co/spaces/rahul7star/Gguf-gradio
+- Demo apex-gguf-1: https://huggingface.co/spaces/rahul7star/apex-gguf-1
+- Demo apex-gguf: https://huggingface.co/spaces/rahul7star/apex-gguf
+- Modelo base Gemma 4 12B: https://huggingface.co/google/gemma-4-12B-it
+- Modelo base Gemma 4 E2B: https://huggingface.co/google/gemma-4-E2B-it
+- Modelo base Ornith 1.5 9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B

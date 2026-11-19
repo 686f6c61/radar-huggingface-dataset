@@ -2,84 +2,91 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless es un repack sin perdida (lossless, bit-exact) del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicado por el usuario ddalcu en Hugging Face. El pack no re-cuantiza ningun peso: mantiene los expertos enrutados en FP4 (MXFP4), el tronco en FP8 y el cabezal MTP y la torre de vision tal cual salieron en el lanzamiento original. Su proposito es permitir la ejecucion del modelo en Macs con 512 GB de memoria unificada mediante los runtimes MLX (mlx-serve y oMLX).
+DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless es un reempaquetado bit a bit (lossless) del modelo deepseek-ai/DeepSeek-V4.1-Flash-1017 en el formato de safetensors de MLX, publicado por el usuario ddalcu. No se trata de un modelo nuevo ni de un fine-tune con datos adicionales: es una conversión de layout que preserva exactamente los pesos originales, manteniendo los expertos enrutados en FP4 (MXFP4), el tronco en FP8 y la cabeza MTP junto con la torre de visión. El objetivo es permitir la ejecución del modelo en Apple Silicon mediante las librerías mlx-serve y oMLX.
 
-El modelo base es un MoE de la familia DeepSeek con arquitectura `deepseek_v41`, que incorpora una novedad destacable: tablas "Engram" de unos 189 GB que se leen desde el SSD por token en lugar de residir en memoria. Con 92.195.449.554 parametros totales contados en los safetensors, se trata de un modelo de gran escala orientado a generacion de texto en ingles y chino.
+El modelo base es un transformer de tipo mixture-of-experts (MoE) con 92.195.449.554 parámetros totales, orientado a generación de texto y con soporte de inglés y chino. Este pack concreto está pensado para Macs con 512 GB de memoria unificada, ya que el conjunto residente ocupa unos 288 GB y las tablas Engram (leídas desde el SSD por token) suman unos 189 GB adicionales, con una descarga total de aproximadamente 477 GB. Es el pack de referencia contra el que se puntúan las versiones cuantizadas del mismo autor.
 
-Este pack funciona ademas como referencia de calidad: los packs cuantizados del mismo autor (por ejemplo, la version iQ-MLX a 3.0 bpw) se puntuan comparandolos contra esta version lossless. Es relevante para usuarios de hardware Apple Silicon de gama alta que quieren ejecutar modelos frontier en local sin perdida de precision respecto a la distribucion original.
+Su relevancia es práctica: ofrece una vía de ejecución local en hardware Apple para un modelo de gran escala que, de otro modo, requeriría GPUs de centro de datos. La licencia MIT facilita su uso comercial, aunque el requisito de hardware limita seriamente su adopción fuera de entornos con Macs de gama alta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer (model_type: deepseek_v41), con torre de vision y cabezal MTP |
-| Parametros totales | 92.195.449.554 (dato real de safetensors) |
+| Arquitectura | Transformer MoE (model_type: deepseek_v41), con cabeza MTP y torre de visión |
+| Parametros totales | 92.195.449.554 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Ninguna aplicada en este pack (lossless): FP4 (MXFP4) en expertos enrutados, FP8 en tronco, bf16 denso en `head` y `wo_a` |
-| Idiomas soportados | Ingles, chino |
+| Tipos de cuantizacion | Pesos originales sin recuantizar: expertos enrutados en FP4 (MXFP4), tronco en FP8, `head` y `wo_a` en bf16 denso |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | safetensors (layout MLX, compatible con mlx-serve y oMLX) |
+| Formato de pesos | safetensors (layout MLX) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es de tipo MoE (mixture of experts) con model_type `deepseek_v41`, la generacion actual de la familia DeepSeek. El pack conserva la distribucion de precision del lanzamiento original: los expertos enrutados en FP4 (formato MXFP4), el tronco principal en FP8, y los tensores `head` y `wo_a` almacenados en bf16 denso porque oMLX los lee en ese formato. Incluye tambien el cabezal MTP (multi-token prediction) y la torre de vision del modelo base.
+La arquitectura es un transformer de mezcla de expertos (MoE) identificado como `deepseek_v41`, con expertos enrutados (el autor menciona 384 expertos en la descripción del pack podado, de los que se conservan 192 en la variante reducida). El pack incluye además una cabeza MTP (multi-token prediction) y una torre de visión, lo que sugiere capacidades multimodales en el modelo base. Los pesos se distribuyen en precisión mixta: FP4 (MXFP4) para los expertos enrutados, FP8 para el tronco y bf16 denso para `head` y `wo_a`, que oMLX lee de esa forma.
 
-Un elemento tecnico distintivo son las tablas Engram (directorio `engram/`, unos 189 GB): a diferencia del resto del modelo, no residen en memoria, sino que se leen desde el SSD por token durante la inferencia. Esto reduce la huella residente a unos 288 GB, pero hace que el rendimiento dependa fuertemente de la velocidad del almacenamiento: segun el autor, usar Engram desde un disco externo cuesta aproximadamente un 27% en prefill.
-
-Sobre el entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO), no se ha publicado informacion en la model card de este repositorio. Al ser un repack bit-exact, no se ha realizado ningun entrenamiento adicional: la etiqueta de finetune remite al modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017.
+Un componente diferencial es Engram: unas tablas de aproximadamente 189 GB que no residen en memoria y se leen desde el SSD por token. Según las mediciones del autor, mantener Engram en un disco externo penaliza el prefill en torno a un 27 %, por lo que recomienda alojar el modelo en el SSD interno del Mac. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO, ya que esta ficha describe un reempaquetado y no el entrenamiento del modelo base. Tampoco se detallan innovaciones de decodificación más allá de la presencia de la cabeza MTP.
 
 ## Capacidades
 
-- Generacion de texto (pipeline text-generation) en ingles y chino.
-- Capacidades de vision: el pack incluye la torre de vision del modelo base, aunque la model card no detalla su uso.
-- Decodificacion multi-token (MTP head) incluida en el pack, lo que sugiere soporte de decodificacion especulativa en los runtimes compatibles.
-- Arquitectura MoE con expertos en FP4, orientada a inferencia eficiente en hardware con memoria unificada.
-- Compatibilidad con los runtimes MLX: mlx-serve y oMLX (los nombres de pesos siguen las convenciones de mlx-lm y oMLX).
-- No hay informacion en la model card sobre tool calling, agentes ni modo de razonamiento explicito.
+- Generación de texto en inglés y chino.
+- Razonamiento y codificación propios del modelo base (no documentados en detalle en esta ficha).
+- Procesamiento de visión gracias a la torre de visión incluida en el pack.
+- Predicción multi-token mediante la cabeza MTP.
+- Recuperación de conocimiento externo por token a través de las tablas Engram.
+- Ejecución local en Apple Silicon mediante mlx-serve y oMLX.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local sin perdida de precision en Mac Studio de 512 GB: el caso de uso principal del pack, para desarrolladores que necesitan la calidad exacta del lanzamiento original de DeepSeek en Apple Silicon.
-- Referencia de evaluacion de cuantizaciones: al ser el pack de referencia del autor, sirve como baseline para medir la degradacion de los packs cuantizados (como la version iQ-MLX a 3.0 bpw para Macs de 256 GB).
-- Servidor de inferencia local tipo OpenAI: mediante `mlx-serve --serve` se puede levantar un endpoint local para aplicaciones que consumen LLMs via API.
-- Procesamiento de entradas multimodales: al incluir la torre de vision, en principio puede integrarse en flujos que combinen imagen y texto, sujeto al soporte del runtime.
-- Experimentacion con arquitecturas MoE y tablas Engram: util para investigadores que quieran estudiar el comportamiento de la lectura de pesos desde SSD por token y su impacto en prefill.
-- Generacion de texto en chino e ingles en entornos sin GPU de datacenter: alternativa a despliegues en nube para cargas de trabajo sensibles a la privacidad.
+- Inferencia local en Mac de 512 GB: el pack está diseñado para ejecutarse íntegramente en memoria unificada con `mlx-serve --model ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless --serve`, lo que permite disponer de un modelo de 92 000 millones de parámetros sin GPU dedicada.
+- Referencia para evaluación de cuantizaciones: al ser bit a bit idéntico al modelo original, sirve como línea base contra la que medir la degradación de los packs iQ-MLX-3.0bpw y Pruned192-2.25bpw del mismo autor.
+- Desarrollo y depuración de pipelines MLX: útil para validar la integración de modelos DeepSeek-V4.1 en mlx-serve y oMLX antes de pasar a versiones cuantizadas en máquinas con menos memoria.
+- Procesamiento de documentos con componente visual: la torre de visión incluida permite tareas de comprensión de imágenes junto con texto, siempre que el hardware cumpla los requisitos de memoria.
+- Experimentación con recuperación por token: las tablas Engram leídas desde SSD permiten estudiar el comportamiento y el coste de este mecanismo en un entorno controlado.
+- Evaluación comparativa de precisión mixta: la combinación FP4/FP8/bf16 permite analizar el impacto de cada precisión en la calidad de salida frente al modelo original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El unico dato de rendimiento publicado es del propio pack: mantener las tablas Engram en el SSD interno frente a un disco externo supone aproximadamente un 27% menos de coste en prefill, segun mediciones del autor.
+No se han publicado resultados de benchmarks en la información disponible. El autor únicamente aporta una medición de rendimiento relativa: situar Engram en un disco externo cuesta aproximadamente un 27 % de prefill en sus pruebas.
 
 ## Requisitos de hardware
 
-- Memoria unificada residente: unos 288 GB (todo excepto las tablas Engram). Diseñado exclusivamente para Macs con 512 GB de memoria unificada; el autor indica que no han conseguido cargarlo en una maquina de 512 GB, y recomienda la version cuantizada iQ-MLX-3.0bpw (209 GB residentes) para Macs de 256 GB.
-- Almacenamiento: unos 477 GB de descarga y 512,2 GB de tamano de repositorio. Imprescindible SSD interno: las tablas Engram (unos 189 GB) se leen desde disco por token, y en un disco externo el prefill empeora alrededor de un 27%.
-- GPUs de datacenter: no aplicable; este pack es especifico para el ecosistema MLX en Apple Silicon. Para GPU NVIDIA habria que usar los pesos originales de deepseek-ai.
-- Runtimes de despliegue: mlx-serve (comando `mlx-serve --model ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless --serve`) y oMLX (apuntando a la carpeta descargada). La aplicacion asociada esta en MLXServe.com.
-- Latencia y throughput: no disponibles; el unico dato cuantitativo es la penalizacion del 27% en prefill con Engram en SSD externo.
+- Memoria: Mac con 512 GB de memoria unificada para el pack lossless. En Macs de 256 GB o 128 GB debe usarse un pack cuantizado.
+- Espacio en disco: descarga de aproximadamente 477 GB; conjunto residente de unos 288 GB y tablas Engram de unos 189 GB.
+- Almacenamiento: SSD interno recomendado; un disco externo para Engram penaliza el prefill alrededor de un 27 %.
+- GPU dedicadas (A100, H100, RTX 4090): no aplica, el pack es específico para MLX y Apple Silicon.
+- Opciones de despliegue: mlx-serve (comando `--serve`) y oMLX, apuntando a la carpeta descargada.
+- Latencia y throughput: no disponibles, salvo la penalización relativa de prefill mencionada.
+- Nota del autor: no han podido cargar el pack en una máquina de 512 GB por sí mismos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Precision | Residente | Licencia | Disponibilidad |
+| Modelo | Parametros | Formato | Memoria requerida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless | 92.195.449.554 | Lossless (MXFP4 expertos, FP8 tronco) | ~288 GB + 189 GB Engram en SSD | MIT | Publico en Hugging Face |
-| ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw | no disponible | Cuantizado iQ-MLX a 3,0 bpw | ~209 GB | MIT | Publico en Hugging Face |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | Lanzamiento original (FP4/FP8) | no disponible | MIT | Publico en Hugging Face |
+| Este pack (lossless) | 92,2 B | safetensors MLX (FP4/FP8/bf16) | ~288 GB residente + ~189 GB Engram | MIT | Hugging Face |
+| iQ-MLX-3.0bpw (mismo autor) | no disponible | MLX cuantizado | ~209 GB residente | MIT | Hugging Face |
+| iQ-MLX-Pruned192-2.25bpw (mismo autor) | no disponible (192 de 384 expertos) | MLX cuantizado y podado | ~92 GB residente | MIT | Hugging Face |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 92,2 B | safetensors original | no disponible | MIT | Hugging Face |
+
+La variante podada conserva 192 de los 384 expertos y, según el autor, es más débil, especialmente en texto no inglés. No se dispone de datos de benchmarks para comparar el rendimiento entre packs.
 
 ## Limitaciones y advertencias
 
-- Requisito de hardware muy restrictivo: solo es viable en Macs con 512 GB de memoria unificada, y el propio autor admite no haber podido cargarlo en una maquina de esas caracteristicas. Para 256 GB hay que usar el pack cuantizado.
-- Dependencia critica del SSD interno: con Engram en disco externo el prefill se degrada cerca de un 27%, lo que limita la portabilidad del despliegue.
-- Idiomas limitados a ingles y chino segun la model card; el rendimiento en otros idiomas no esta documentado.
-- No hay benchmarks publicados ni datos de parametros activos, longitud de contexto o rendimiento de inferencia, lo que dificulta evaluar el modelo antes de descargar casi 500 GB.
-- Riesgo de alucinacion y sesgos: heredados del modelo base; este repositorio no aporta informacion sobre mitigaciones ni evaluaciones de seguridad.
-- Licencia MIT: sin restricciones de uso comercial relevantes, pero las condiciones del modelo base (deepseek-ai/DeepSeek-V4.1-Flash-1017) deben revisarse en el repositorio original.
-- Repositorio con 0 descargas y 0 likes en el momento de la ficha, de un autor individual: conviene verificar la integridad de los pesos (el pack afirma ser bit-exact respecto al original) antes de uso serio.
+- El autor no ha conseguido cargar el pack en una máquina de 512 GB, por lo que la viabilidad de ejecución no está verificada de forma independiente.
+- Requiere hardware muy específico (Mac con 512 GB de memoria unificada) y cerca de 477 GB de descarga, lo que restringe su uso a entornos muy concretos.
+- Las tablas Engram se leen desde el SSD por token; el rendimiento depende de la velocidad del almacenamiento y se degrada con discos externos.
+- Solo se documentan los idiomas inglés y chino; el rendimiento en castellano no está garantizado.
+- Al ser un reempaquetado, hereda los sesgos y el riesgo de alucinación del modelo base, no documentados en esta información.
+- La licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo base y de los componentes incluidos (torre de visión, Engram).
+- No hay información sobre contexto máximo, tool calling ni comportamiento en agentes, lo que dificulta planificar su uso en producción.
+- El tamaño del repositorio (512,2 GB) y la memoria requerida implican costes de almacenamiento y despliegue elevados.
 
 ## Enlaces
 
-- Ficha del pack lossless: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless
+- Hugging Face (este pack): https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Pack cuantizado iQ-MLX-3.0bpw (para Macs de 256 GB): https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw
-- Aplicacion mlx-serve: https://mlxserve.com
+- Pack cuantizado iQ-MLX-3.0bpw: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw
+- Pack podado iQ-MLX-Pruned192-2.25bpw: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-Pruned192-2.25bpw
+- Aplicación MLXServe: https://mlxserve.com

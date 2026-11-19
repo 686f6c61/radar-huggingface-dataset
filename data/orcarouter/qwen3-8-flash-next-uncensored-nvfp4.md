@@ -2,80 +2,92 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4` es una versión "abliterated" (sin censura) y cuantizada a NVFP4 del modelo base `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario orcarouter. Se trata de una vista previa de la arquitectura Qwen4, un modelo de lenguaje y visión (image-text-to-text) de tipo MoE con aproximadamente 124.5 mil millones de parámetros totales y 6 mil millones de parámetros activos por token. La relevancia de este modelo radica en que combina las capacidades de vanguardia del ecosistema Qwen (razonamiento, tool calling, visión) con una eliminación de las restricciones de seguridad a nivel de tensor, lo que lo hace especialmente útil para tareas de red teaming, investigación en alineación y generación de contenido sin filtros.
+Qwen3.8-Flash-Next-Uncensored-NVFP4 es una cuantización de 8 bits en formato NVFP4 (FP4 con escalas FP8) del modelo multimodal Qwen3.8-Flash-Next, publicada por el usuario orcarouter bajo licencia Apache 2.0. Se trata de un modelo de arquitectura MoE (mixture of experts) con 180.000 millones de parámetros totales, orientado a tareas image-text-to-text, con capacidades declaradas de razonamiento, function calling y conversación multilingüe en inglés y chino. La variante "Uncensored" indica que los pesos han sido sometidos a un proceso de abliteration, es decir, la eliminación de la dirección de activación asociada al rechazo, lo que reduce las negativas del modelo ante peticiones sensibles.
 
-Al estar cuantizado en NVFP4 (4 bits) y ser compatible con vLLM, está pensado para despliegue eficiente en entornos con GPUs de alta gama, aunque su acceso es restringido (gated) en Hugging Face. El proceso de abliteration aplicado por orcarouter deja intactos el vision tower y el head de MTP, y según los datos del modelo hermano de 27B, no presenta una pérdida medible de capacidades, manteniendo un 0% de over-refusal en XSTest.
+El interés de esta ficha reside en dos ejes. Por un lado, la compresión NVFP4/FP8 reduce el peso del repositorio a 188,8 GB, lo que permite desplegar un modelo de 180B en hardware de una sola máquina con GPUs de 80 GB o en configuraciones multi-GPU más asequibles que las requeridas por los pesos en BF16. Por otro lado, la orientación explícita a red teaming y evaluación de seguridad (tags `ai-red-team`, `red-teaming`) convierte al modelo en una herramienta para investigadores que necesitan estudiar comportamientos no filtrados de un LLM de gran escala.
 
-## Especificaciones técnicas
+El acceso está restringido en Hugging Face (modelo gated): es necesario aceptar las condiciones del repositorio antes de descargar los pesos. El modelo base es Qwen/Qwen3.8-Flash-Next, del que no se dispone de documentación técnica en la información proporcionada, por lo que varios datos de arquitectura y entrenamiento se indican como no disponibles.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) - Qwen4 architecture preview |
-| Parametros totales | 124.545.978.992 (124.5B) |
-| Parametros activos | 6B (por token) |
-| Longitud de contexto | no disponible (el modelo base soporta contexto largo; el hermano 27B tiene 262K) |
-| Tipos de cuantizacion | NVFP4 (FP4), FP8 (según tags) |
+| Arquitectura | MoE (mixture of experts); detalles de capas y atención no disponibles |
+| Parametros totales | 179.999.981.459 (≈180B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 (FP4 con escalas FP8), comprimido con compressed-tensors; tag 8-bit |
 | Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
+| Modalidad | image-text-to-text (vision-language) |
+| Modelo base | Qwen/Qwen3.8-Flash-Next |
+| Tamano del repositorio | 188,8 GB |
+| Acceso | restringido (gated) en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen4 (preview), que es un MoE con un modelo principal de aproximadamente 125B de parámetros, complementado con 51B de embeddings N-gram, activando únicamente 6B de parámetros por token. Esta configuración permite un equilibrio entre capacidad y eficiencia computacional. El proceso de "uncensoring" consiste en un abliteration a nivel de tensor, una técnica que elimina las direcciones de activación responsables del comportamiento de rechazo, manteniendo intactos el vision tower y el head de MTP (Multi-Token Prediction). El modelo base fue entrenado por Qwen, y orcarouter aplicó la técnica de abliteration seguida de una cuantización a NVFP4 para reducir el footprint de memoria. No se han publicado detalles específicos sobre el dataset de entrenamiento del abliteration, pero el resultado reportado en modelos hermanos es una reducción drástica de la tasa de rechazo sin pérdida de capacidades.
+El modelo es una cuantización del Qwen3.8-Flash-Next original, no un entrenamiento desde cero. La arquitectura subyacente es un transformer con mezcla de expertos (MoE), según los tags del repositorio, con 180.000 millones de parámetros totales. Al tratarse de una variante multimodal image-text-to-text, incorpora un codificador visual y proyecciones hacia el espacio del modelo de lenguaje, aunque no se dispone de detalles sobre el número de capas, la dimensión oculta, el número de expertos ni la proporción de parámetros activos por token.
+
+El proceso de cuantización emplea NVFP4, un formato de 4 bits con escalas de bloque en FP8, implementado mediante la librería compressed-tensors. Este esquema reduce el peso a aproximadamente 188,8 GB, un tamaño coherente con 180B parámetros a ~8 bits efectivos (incluyendo escalas y metadatos). La variante incorpora además abliteration, una técnica de edición de pesos que proyecta fuera la dirección de rechazo calculada a partir de pares de respuestas aceptadas y rechazadas, sin reentrenamiento adicional. No se dispone de información sobre el volumen de tokens de entrenamiento del modelo base, la composición del dataset, ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-step con modo "thinking" integrado.
-- Comprensión de imágenes (image-text-to-text) gracias al vision tower intacto.
-- Soporte de tool calling / function calling para integración con APIs y agentes.
-- Conversación multilingüe, con soporte nativo para inglés y chino.
-- Modelo "uncensored" (abliterated) con 0% de over-refusal en XSTest y 0-6% de refusal en el suite A/B (según datos del modelo 27B).
-- Compatible con vLLM (endpoints_compatible) y transformers.
+- Generación de texto y conversación multi-turno en inglés y chino.
+- Razonamiento (tag `reasoning`) y resolución de problemas de varios pasos.
+- Function calling y tool calling, según los tags del repositorio.
+- Procesamiento de imágenes junto con texto (pipeline image-text-to-text): descripción, respuesta a preguntas visuales y conversación sobre imágenes.
+- Comportamiento "uncensored": menor tasa de rechazos ante peticiones que el modelo base declinaría, gracias a la abliteration.
+- Uso previsto para red teaming y evaluación de seguridad de LLMs.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con vLLM para despliegue en producción.
 
 ## Casos de uso
 
-- Red teaming y auditoría de seguridad: al estar abliterated, es ideal para probar jailbreaks, evaluar la robustez de otros sistemas de moderación y generar adversarial prompts en entornos controlados.
-- Generación de contenido creativo sin restricciones: escritura de ficción, guiones, poesía o narrativa donde los modelos censurados bloquean contenido por política, permitiendo explorar estilos y temas sin límites.
-- Agentes autónomos multimodales: al combinar visión, tool calling y razonamiento, puede integrarse en pipelines de automatización que requieran leer capturas de pantalla, analizar imágenes y ejecutar acciones vía APIs.
-- Investigación en alineación y seguridad de IA: estudiar el impacto del abliteration en las capacidades del modelo, comparando el comportamiento con la versión base para entender los mecanismos internos de rechazo.
-- Asistente de análisis de documentos técnicos: procesar documentos en chino e inglés que contengan diagramas, gráficos o fórmulas, extrayendo información estructurada con razonamiento avanzado.
-- Desarrollo de chatbots especializados sin filtros: para dominios como medicina, derecho o psicología donde los matices y la jerga técnica pueden ser bloqueados por clasificadores de seguridad genéricos.
+- Red teaming y auditoría de seguridad: el modelo sirve como sujeto de prueba para medir la eficacia de filtros, clasificadores de seguridad y políticas de moderación, al disponer de una variante sin el sesgo de rechazo del modelo base. Es adecuado porque permite observar respuestas que un modelo alineado ocultaría, sin necesidad de jailbreaks.
+- Investigación sobre abliteration: comparar las respuestas de esta variante con las del Qwen3.8-Flash-Next original permite cuantificar el efecto de la eliminación de la dirección de rechazo en calidad, coherencia y seguridad, con pesos de 180B en un formato desplegable.
+- Evaluación de compresión NVFP4: el repositorio permite estudiar la degradación de calidad de un MoE de 180B cuantizado a ~8 bits efectivos frente a BF16, útil para decidir formatos de despliegue en producción.
+- Asistente multimodal sobre documentos: con entrada image-text-to-text, puede procesar capturas, diagramas o páginas escaneadas junto con instrucciones textuales, en flujos de extracción y resumen para usuarios de inglés o chino.
+- Automatización con function calling: integración en pipelines de agentes que requieren invocar herramientas externas, aprovechando el soporte declarado de tool calling y la compatibilidad con vLLM para servir peticiones concurrentes.
+- Generación de datos sintéticos para entrenamiento: al no aplicar rechazos, puede producir corpus de conversación diversos para experimentos de destilación o ajuste fino, con revisión humana posterior obligatoria.
+- Despliegue en infraestructura limitada: los 188,8 GB de pesos permiten servir un modelo de 180B en un nodo con varias GPUs de 80 GB, algo inviable con los pesos en BF16 (~360 GB).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta cuantización NVFP4 en la información disponible. El autor menciona en modelos hermanos (Qwen3.8-27B) que el abliteration no produce una pérdida medible de capacidades, pero no se proporcionan números concretos de MMLU, HumanEval o GSM8K para esta versión de 124.5B. Se recomienda consultar el repositorio del modelo base `Qwen/Qwen3.8-Flash-Next` para obtener métricas de referencia, aunque la cuantización NVFP4 puede introducir una ligera degradación en tareas de alta precisión.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el tamaño del repositorio es de 177.7 GB, lo que sugiere que la cuantización NVFP4 (4 bits) ocupa aproximadamente 60-70 GB para los pesos del modelo principal. Se requiere un mínimo de 80 GB de VRAM para inferencia en una sola GPU.
-- GPU recomendadas: NVIDIA A100 80GB, H100 80GB, o configuraciones multi-GPU con RTX 4090 (24GB) usando tensor parallelism.
-- No cabe en GPUs de consumo estándar (16-24 GB) en esta cuantización; para esos casos, el autor ofrece versiones GGUF del modelo 27B.
-- Opciones de despliegue: vLLM (recomendado, con soporte nativo para NVFP4), transformers, y potencialmente llama.cpp si se convierten los pesos a GGUF.
-- Latencia y throughput: no disponible, pero al ser un MoE con 6B activos, el throughput esperado es superior al de un modelo denso de 124B, aunque la cuantización NVFP4 requiere kernels optimizados de vLLM.
+- VRAM estimada para inferencia: los pesos ocupan 188,8 GB, por lo que se necesita al menos esa capacidad agregada más overhead de KV cache y activaciones; en la práctica, un nodo con 2× H100 80 GB o 3× A100 80 GB cubre los pesos con margen ajustado, y 4× H100 80 GB ofrece holgura para contextos largos y concurrencia.
+- GPU recomendadas: H100 80 GB, H200 141 GB, A100 80 GB en configuraciones multi-GPU. No se recomienda fragmentar en GPUs de 24 GB por el coste de comunicación entre 8 o más dispositivos.
+- GPU de consumo: no cabe en ninguna GPU consumer actual (RTX 4090 24 GB, RTX 5090 32 GB) ni siquiera con offloading parcial razonable; requeriría descarga a RAM/SSD con latencia muy alta.
+- Opciones de despliegue: vLLM (soporte de compressed-tensors y NVFP4 en versiones recientes), transformers con compressed-tensors, y servidores compatibles con endpoints. llama.cpp y Ollama no soportan NVFP4 de forma nativa en la información disponible.
+- Latencia y throughput: no disponibles. Al ser un MoE, el throughput dependerá del número de parámetros activos, dato no publicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Acceso |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Acceso |
 |---|---|---|---|---|---|
-| orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4 | 124.5B (6B activos) | no disponible | NVFP4 | Apache 2.0 | Gated |
-| orcarouter/Qwen3.8-27B-Uncensored | 27B | 262K | GGUF (Q4_K_M, etc.) | Apache 2.0 | Gated |
-| Qwen/Qwen3.8-Flash-Next (base) | 124.5B (6B activos) | no disponible | FP8/BF16 | Apache 2.0 | Abierto |
+| Qwen3.8-Flash-Next-Uncensored-NVFP4 (este) | 180B (MoE) | no disponible | image-text-to-text | Apache 2.0 | gated |
+| Qwen/Qwen3.8-Flash-Next (base) | 180B (MoE) | no disponible | image-text-to-text | no disponible en la informacion | no disponible |
+| Alternativas de 180B MoE multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La principal diferencia con el modelo base es la eliminación de la censura y la cuantización a NVFP4. Frente al modelo 27B, este ofrece 4.6 veces más parámetros totales y una arquitectura MoE más avanzada, pero requiere hardware de datacenter. El modelo 27B es más accesible para GPUs de consumo (16-24 GB) y tiene un contexto conocido de 262K.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated) en Hugging Face: es necesario aceptar condiciones adicionales antes de poder descargar el modelo.
-- Modelo sin censura: puede generar contenido ofensivo, violento, ilegal o peligroso. No es apto para producción sin una capa de moderación externa.
-- Idiomas limitados: solo soporta inglés y chino de forma nativa; otros idiomas pueden tener un rendimiento degradado.
-- Cuantización NVFP4: puede introducir pérdida de precisión en tareas que requieren alta exactitud numérica, como matemáticas avanzadas o generación de código complejo.
-- Longitud de contexto no confirmada para esta versión específica; aunque el modelo base soporta contexto largo, se recomienda verificar la documentación oficial antes de usarlo con ventanas muy extensas.
-- Riesgo de alucinación: al ser un modelo sin censura, las alucinaciones pueden ser más difíciles de detectar si el contenido generado es plausible pero falso, especialmente en dominios especializados.
+- La abliteration elimina el mecanismo de rechazo, pero no garantiza la ausencia de contenido dañino ni mejora la veracidad; el riesgo de alucinación persiste y puede aumentar en dominios sensibles.
+- Modelo gated: el uso comercial requiere aceptar las condiciones de Hugging Face y verificar que la licencia Apache 2.0 del repositorio es aplicable a los pesos derivados; conviene revisar los términos del modelo base Qwen3.8-Flash-Next, no disponibles aquí.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- La cuantización NVFP4 introduce degradación numérica respecto a BF16; no se han publicado evaluaciones de la pérdida de calidad en este repositorio.
+- Sesgos: no se han documentado evaluaciones de sesgo para esta variante; al derivar de un modelo entrenado principalmente con datos en inglés y chino, es esperable un sesgo cultural y lingüístico hacia esas poblaciones.
+- No apto para producción orientada a usuarios finales sin una capa de moderación externa, dado su carácter uncensored.
+- Sin datos de longitud de contexto ni de parámetros activos, es difícil dimensionar la KV cache y planificar el throughput; debe validarse empíricamente antes de comprometer SLA.
+- El uso para red teaming debe enmarcarse en un protocolo ético y legal; la generación de contenido dañino sin supervisión puede tener implicaciones legales.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
-- Blog de orcarouter sobre ejecución local de modelos uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Modelo hermano 27B en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
-- Modelo base Qwen3.8-Flash-Next (vLLM Recipes): https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
-- Modelo base Qwen3.8-27B (referencia de benchmarks): https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Librería compressed-tensors: no disponible en la busqueda web
+- Documentación de vLLM: no disponible en la busqueda web
+- Paper o blog del modelo base: no disponible en la busqueda web

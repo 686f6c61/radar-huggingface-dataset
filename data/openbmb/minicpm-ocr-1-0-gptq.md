@@ -2,114 +2,113 @@
 
 ## Resumen
 
-MiniCPM-OCR 1.0 es el primer modelo especializado en OCR de la familia MiniCPM-V/o, desarrollado por OpenBMB (OpenBMB/ModelBest). Se trata de un modelo multimodal compacto de 1.300 millones de parametros centrado en la comprension de documentos con texto como elemento principal: reconoce texto, tablas, formulas, sellos y extrae informacion estructurada, tanto en ingles como en chino. Este repositorio concretamente aloja la version cuantizada GPTQ W4A16 del modelo original en BF16, lo que reduce drasticamente los requisitos de memoria para inferencia.
+MiniCPM-OCR 1.0 es un modelo multimodal especializado en reconocimiento óptico de caracteres (OCR) y comprensión de documentos, desarrollado por OpenBMB como primer miembro específico para OCR de la familia MiniCPM-V/o. Con 1.300 millones de parámetros, está diseñado para tareas centradas en texto: extracción de texto, tablas, fórmulas, gráficos, sellos y extracción de información estructurada (KIE), manteniendo un equilibrio entre calidad y velocidad en capturas del mundo real. El repositorio que nos ocupa es la versión cuantizada GPTQ W4A16 del modelo base en BF16.
 
-Su relevancia radica en que ofrece resultados de estado del arte en analisis documental con un tamano muy contenido: alcanza 93,68 en Real5-OmniDocBench y 54,7 en OCRBench v2, con un throughput de 1,2 paginas por segundo en una RTX 5090. Es un modelo pensado para despliegue eficiente: soporta vLLM, SGLang, llama.cpp y Ollama desde su lanzamiento, y dispone de variantes aceleradas con decodificacion DSpark. Para equipos que necesiten procesar documentos a escala sin infraestructura costosa, es una alternativa muy competitiva frente a sistemas OCR tradicionales como PaddleOCR-VL o MinerU.
+La relevancia del modelo radica en su eficiencia: según la model card, alcanza 93,68 en Real5-OmniDocBench y 1,2 páginas por segundo, con una mejora del 55% en eficiencia de extremo a extremo cuando se combina con la decodificación acelerada DSpark. Su throughput es aproximadamente 1,49× el de PaddleOCR-VL-1.6 y 3,62× el de MinerU2.5 Pro, lo que lo posiciona como una opción atractiva para pipelines de parseo documental a escala.
+
+La versión GPTQ reduce el peso del repositorio a 1,9 GB y facilita el despliegue en hardware modesto, manteniendo la licencia Apache 2.0 del modelo base. Está disponible en inglés y chino, con soporte para vLLM, SGLang, llama.cpp y Ollama desde el primer día.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Multimodal (image-text-to-text), familia MiniCPM-V/o, especializada en OCR |
-| Parametros totales | 1.300.434.160 (aprox. 1,3B) |
-| Parametros activos | no disponible (no se indica arquitectura MoE) |
+| Arquitectura | Multimodal image-text-to-text (familia MiniCPM-V/o); detalles internos no disponibles |
+| Parametros totales | 1.300.434.160 (1,3B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GPTQ W4A16 (4 bits de peso, activaciones en 16 bits); base en BF16 |
-| Idiomas soportados | Ingles y chino (en, zh) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (GPTQ); el modelo base tambien dispone de variantes DSpark BF16 y GGUF |
+| Tipos de cuantizacion | GPTQ W4A16 (4-bit); existen variantes GGUF y BF16 del modelo base |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (GPTQ); GGUF disponible en el modelo base y DSpark |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM-OCR 1.0 es un modelo multimodal de la familia MiniCPM-V/o cuya tarea principal es el analisis documental (document parsing): convierte imagenes de documentos —escaneos, paginas curvadas, fotografias, paginas inclinadas y documentos recapturados— en salidas estructuradas de texto, tablas, formulas y sellos. La model card no detalla el backbone concreto (vision encoder ni LLM base) ni el numero de tokens de entrenamiento, por lo que estos datos no estan disponibles en la informacion proporcionada.
+MiniCPM-OCR 1.0 es un modelo multimodal de tipo image-text-to-text perteneciente a la familia MiniCPM-V/o de OpenBMB. La información disponible no detalla la arquitectura interna (número de capas, tipo de atención, codificador visual, etc.), el número de tokens de entrenamiento ni la composición del dataset. Tampoco se especifica si se emplearon técnicas de RLHF o DPO.
 
-Como innovacion destacable, el equipo publica una variante acelerada con DSpark, una tecnica de decodificacion que mejora la eficiencia de procesamiento end-to-end en un 55% respecto al modelo base, disponible tanto en BF16 como en GGUF. Ademas del modelo en si, se ofrece un SDK de Python, una API completa y flujos de trabajo orientados a agentes. El modelo admite fine-tuning posterior.
+La innovación técnica destacada en la model card es la decodificación acelerada DSpark, disponible en variantes BF16 y GGUF, que mejora la eficiencia de extremo a extremo en un 55%. El modelo está optimizado para documentos del mundo real, incluyendo escaneos, páginas curvadas, fotografías, páginas inclinadas y documentos recapturados. La versión de este repositorio aplica cuantización GPTQ de 4 bits con activaciones de 16 bits (W4A16) sobre los pesos BF16 originales.
 
 ## Capacidades
 
-- Reconocimiento de texto (OCR) en documentos reales: escaneos, fotografias, paginas curvadas, inclinadas y recapturadas
-- Analisis documental completo (document parsing): texto, tablas, formulas y sellos
-- Extraccion de informacion clave (KIE, Key Information Extraction) para automatizacion de procesos
-- Comprension de documentos en chino e ingles, incluyendo PDFs
-- Entrada multimodal imagen-texto con salida conversacional (pipeline image-text-to-text)
-- Integracion en flujos de agentes, con SDK pip, API y soporte de skills
-- Despliegue flexible: vLLM, SGLang, llama.cpp y Ollama desde el primer dia
-- Soporte de fine-tuning para adaptacion a dominios especificos
+- Parseo de documentos con estado del arte: texto, tablas, fórmulas, gráficos y sellos en documentos e imágenes PDF.
+- Manejo de documentos del mundo real: escaneos, páginas curvadas, fotografías, páginas inclinadas y recapturas.
+- Extracción de información clave (KIE) para automatización posterior.
+- Reconocimiento general de texto (OCRBench v2: 54,7).
+- Procesamiento bilingüe inglés-chino.
+- Soporte de despliegue en vLLM, SGLang, llama.cpp y Ollama.
+- SDK de Python (pip), API completa y flujos de trabajo con agentes.
+- Aplicación móvil iOS con parseo documental en dispositivo y offline.
+- Posibilidad de fine-tuning adicional.
+- Soporte de decodificación acelerada DSpark (variantes BF16 y GGUF).
 
 ## Casos de uso
 
-- Digitalizacion masiva de archivos documentales: gracias a su throughput de 1,2 paginas/s en una RTX 5090 y a la variante cuantizada GPTQ de ~1,9 GB, es viable montar pipelines de digitalizacion en servidores de gama media o incluso estaciones de trabajo locales.
-- Automatizacion de facturas y formularios: la capacidad de extraccion de informacion clave (KIE) permite extraer campos estructurados (importes, fechas, datos fiscales) de documentos escaneados para integrarlos en sistemas ERP o contables.
-- Procesado de documentos academicos con formulas: reconoce formulas matematicas y tablas, util para indexar papers y convertirlos a formatos estructurados como Markdown o LaTeX.
-- OCR de documentos en chino: es uno de los pocos modelos compactos open source con rendimiento lider en benchmarks de documentos chinos (OmniDocBench, Wild-OmniDocBench), adecuado para empresas que operan con documentacion bilingue chino-ingles.
-- Agentes de analisis documental: su integracion con workflows de agentes y su API permiten construir asistentes que leen, interpretan y responden preguntas sobre documentos de forma automatica.
-- Despliegue en edge o entornos con recursos limitados: con la cuantizacion GPTQ W4A16 y la variante GGUF, puede ejecutarse en GPUs de consumo, reduciendo el coste por pagina procesado frente a modelos OCR de mayor tamano.
-- Sustitucion de OCR tradicionales: su rendimiento superior en OmniDocBench v1.6 frente a PaddleOCR-VL-1.6 y MinerU2.5 Pro (en throughput) lo hace candidato para reemplazar sistemas OCR clasicos en produccion.
+- Digitalización masiva de archivos: el modelo procesa escaneos, páginas curvadas y documentos recapturados con 93,68 en Real5-OmniDocBench, lo que permite convertir fondos documentales en texto estructurado con alta fidelidad.
+- Extracción de tablas y fórmulas en documentación técnica y científica: adecuado para pipelines que necesitan preservar la estructura de tablas y notación matemática en informes, artículos y manuales.
+- Automatización de facturas y formularios (KIE): la capacidad de extracción de información clave permite alimentar sistemas de contabilidad o ERP a partir de documentos escaneados en inglés y chino.
+- Procesamiento de PDF a escala con alto throughput: con 1,2 páginas/s y soporte para vLLM/SGLang, se puede desplegar en clústeres para ingesta documental masiva con latencia controlada.
+- Digitalización en dispositivo y offline: la demo iOS permite parsear documentos en el propio teléfono sin conexión, útil para trabajo de campo o entornos con requisitos de privacidad.
+- Pipelines de agentes documentales: el SDK de Python, la API y el soporte de agentes (SKILL.md) permiten integrar el modelo en flujos multi-paso que localizan, leen y estructuran documentos automáticamente.
+- Despliegue en hardware modesto: la versión GPTQ de 4 bits (1,9 GB) facilita la inferencia en GPUs de consumo y entornos con VRAM limitada, manteniendo la calidad del modelo base.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | MiniCPM-OCR 1.0 |
+| Benchmark | Resultado |
 |---|---|
 | Real5-OmniDocBench | 93,68 |
 | OCRBench v2 | 54,7 |
-| OmniDocBench v1.6 | Lider entre modelos open source comparados (puntuacion exacta no disponible) |
-| Wild-OmniDocBench | Lider entre modelos open source comparados (puntuacion exacta no disponible) |
-| olmOCR-Bench | Lider entre modelos open source comparados (puntuacion exacta no disponible) |
-| CHAOS-Bench | Evaluado (puntuacion exacta no disponible) |
+| OmniDocBench v1.6 | líder entre modelos open source (valor numérico no disponible) |
+| Wild-OmniDocBench | líder entre modelos open source (valor numérico no disponible) |
+| olmOCR-Bench | líder entre modelos open source (valor numérico no disponible) |
+| Throughput | 1,2 páginas/s |
+| Throughput relativo | 1,49× PaddleOCR-VL-1.6; 3,62× MinerU2.5 Pro |
+| Mejora con DSpark | 55% de eficiencia de extremo a extremo |
 
-Datos de throughput (RTX 5090, 1.651 imagenes de OmniDocBench v1.6, concurrencia 1 a nivel de imagen):
-
-| Sistema | Throughput relativo |
-|---|---|
-| MiniCPM-OCR 1.0 | 1,2 paginas/s (1,00x, referencia) |
-| vs. PaddleOCR-VL-1.6 | 1,49x mas rapido |
-| vs. MinerU2.5 Pro | 3,62x mas rapido |
-
-Con la variante DSpark, la eficiencia end-to-end mejora un 55% adicional. Las puntuaciones de distintos benchmarks no son directamente comparables entre si.
+No se han publicado en la información disponible los valores numéricos concretos de OmniDocBench v1.6, Wild-OmniDocBench ni olmOCR-Bench, solo la indicación de que el modelo lidera entre los modelos open source comparados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio GPTQ ocupa 1,9 GB; con overhead de runtime y el encoder de vision, se estima que puede funcionar en GPUs con 6-8 GB de VRAM (estimacion, no confirmada por la model card)
-- GPU de referencia en los tests oficiales: NVIDIA GeForce RTX 5090 (1,2 paginas/s)
-- Dado su tamano cuantizado (~1,3B parametros en 4 bits), cabe con holgura en GPUs de consumo como RTX 3060, RTX 4060 Ti o superiores; el modelo BF16 original tambien es viable en GPUs de 12-24 GB (estimacion)
-- Opciones de despliegue soportadas oficialmente: vLLM, SGLang, llama.cpp y Ollama
-- Alternativas de despliegue: variantes DSpark (BF16 y GGUF) para mayor velocidad, API gratuita de ModelBest para pruebas sin infraestructura propia, y demos online (China y global)
-- Latencia y throughput: 1,2 paginas/s en RTX 5090 con configuracion acelerada; el throughput real depende del contenido de la pagina, el backend, la concurrencia y el hardware
+- VRAM estimada para inferencia: al tratarse de un modelo de 1,3B en GPTQ W4A16, los pesos ocupan aproximadamente 0,7-0,9 GB; con overhead de activaciones y contexto, se estima un uso de VRAM de 2-4 GB (estimación, no confirmada en la información disponible).
+- GPU recomendadas: no especificadas en la información disponible; por tamaño, cabría en RTX 3060/4060/4090, A100 y H100.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 4 GB o más de VRAM (estimación).
+- Opciones de despliegue: vLLM, SGLang, llama.cpp, Ollama, imagen Docker oficial, SDK de Python y API.
+- Latencia y throughput: 1,2 páginas/s según la model card; 55% de mejora con DSpark; 1,49× PaddleOCR-VL-1.6 y 3,62× MinerU2.5 Pro.
 
 ## Comparativa con modelos similares
 
-| Caracteristica | MiniCPM-OCR 1.0 (GPTQ) | PaddleOCR-VL-1.6 | MinerU2.5 Pro |
-|---|---|---|---|
-| Parametros | ~1,3B | no disponible | no disponible |
-| Throughput relativo | 1,00x (referencia, 1,2 pag/s) | 0,67x (MiniCPM es 1,49x mas rapido) | 0,28x (MiniCPM es 3,62x mas rapido) |
-| Calidad de parsing | Lider en promedio de 4 benchmarks | Inferior en throughput; calidad exacta no disponible | Inferior en throughput; calidad exacta no disponible |
-| Idiomas | Ingles, chino | no disponible | no disponible |
-| Licencia | Apache 2.0 | no disponible | no disponible |
-| Cuantizacion | GPTQ W4A16, DSpark, GGUF | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniCPM-OCR 1.0 (GPTQ) | 1,3B | no disponible | 93,68 Real5-OmniDocBench; 54,7 OCRBench v2; 1,2 págs/s | apache-2.0 | Hugging Face, vLLM, SGLang, llama.cpp, Ollama |
+| PaddleOCR-VL-1.6 | no disponible | no disponible | throughput 1,49× inferior a MiniCPM-OCR | no disponible | no disponible |
+| MinerU2.5 Pro | no disponible | no disponible | throughput 3,62× inferior a MiniCPM-OCR | no disponible | no disponible |
+
+Los datos de parámetros, contexto y licencia de PaddleOCR-VL-1.6 y MinerU2.5 Pro no están disponibles en la información proporcionada; solo se conocen sus cifras relativas de throughput frente a MiniCPM-OCR 1.0.
 
 ## Limitaciones y advertencias
 
-- Soporte de idiomas limitado a ingles y chino; el rendimiento en otros idiomas no esta evaluado en la informacion disponible
-- Es un modelo especializado en OCR y comprension documental: no esta disenado como asistente generalista ni para razonamiento general
-- La version GPTQ W4A16 puede sufrir una ligera degradacion de precision respecto al modelo BF16 original; para maxima calidad conviene usar el modelo base
-- La longitud de contexto y los limites de resolucion de imagen no se detallan en la model card, lo que dificulta planificar documentos muy largos o de alta densidad
-- Las puntuaciones de benchmarks provienen del propio desarrollador (OpenBMB); conviene verificar con la guia de reproduccion publicada antes de tomar decisiones criticas
-- El throughput real depende fuertemente del contenido de la pagina, el backend y el hardware empleados
-- Licencia Apache 2.0: sin restricciones relevantes para uso comercial, aunque conviene revisar los terminos de la API gratuita de ModelBest si se usa el servicio en la nube
-- Riesgo de alucinacion tipico de modelos generativos: en documentos con texto degradado o ambiguo, el modelo puede generar contenido plausible en lugar de reconocer literalmente el texto; se recomienda validacion en flujos criticos
+- Solo soporta inglés y chino; no se ha confirmado soporte para otros idiomas.
+- La longitud de contexto no está especificada, lo que dificulta planificar el procesamiento de documentos muy extensos o de múltiples páginas en una sola pasada.
+- Al ser un modelo especializado en OCR, su rendimiento en tareas generales de razonamiento o generación de texto fuera del dominio documental no está documentado.
+- Riesgo de alucinación en la extracción de texto o información estructurada, especialmente en documentos de baja calidad, manuscritos o layouts complejos.
+- La cuantización GPTQ de 4 bits puede introducir una degradación de calidad respecto al modelo BF16; no se han publicado métricas comparativas de la versión cuantizada frente a la original.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, conviene verificar las condiciones de los componentes de terceros y del modelo base.
+- La demo móvil de parseo documental es solo para iOS por el momento.
+- No se dispone de información sobre sesgos específicos del modelo.
 
 ## Enlaces
 
-- Modelo cuantizado GPTQ: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-GPTQ
-- Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-OCR-1.0
-- Variante acelerada DSpark (BF16): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
-- Variante DSpark (GGUF): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
-- GitHub: https://github.com/OpenBMB/MiniCPM-OCR
-- Demo oficial (China): https://platform.modelbest.cn/console/playground/document-parse
-- Demo oficial (Global): https://platform.modelbest.ai/console/playground/document-parse
-- Demo basica en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
-- API gratuita: https://platform.modelbest.ai/console/docs/api/document-parse
-- Guia de uso: https://github.com/OpenBMB/MiniCPM-OCR#using-minicpm-ocr
-- Guia de reproduccion de benchmarks: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/benchmark_reproduction_en.md
-- Guia del modelo y throughput: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_1dot0_en.md
-- Familia MiniCPM-V: https://github.com/openbmb/MiniCPM-V
+- Hugging Face (GPTQ): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-GPTQ
+- Modelo base BF16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
+- Variante DSpark BF16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
+- Variante DSpark GGUF: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
+- GitHub del proyecto: https://github.com/OpenBMB/MiniCPM-OCR
+- Familia MiniCPM-V/o: https://github.com/openbmb/MiniCPM-V
+- Guía de despliegue: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_tutorial_en.md
+- Guía de reproducción de benchmarks: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/benchmark_reproduction_en.md
+- Guía del modelo: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_1dot0_en.md
+- SKILL.md para agentes: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/SKILL_en.md
+- Demo iOS: https://github.com/OpenBMB/MiniCPM-V-Apps/blob/main/README.md#11-ios-demo
+- Playground (China): https://platform.modelbest.cn/console/playground/document-parse
+- Playground (Global): https://platform.modelbest.ai/console/playground/document-parse
+- Documentación de API (China): https://platform.modelbest.cn/console/docs/api/document-parse
+- Documentación de API (Global): https://platform.modelbest.ai/console/docs/api/document-parse
+- Discord: https://discord.gg/JE8KQqtdn

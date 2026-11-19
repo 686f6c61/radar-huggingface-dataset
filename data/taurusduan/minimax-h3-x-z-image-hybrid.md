@@ -2,84 +2,90 @@
 
 ## Resumen
 
-MiniMax-H3-x-Z-Image-hybrid es un modelo experimental de generación de vídeo desarrollado por taurusduan, que combina dos ramas del modelo MiniMax-H3: FL2VA y REF2VA. Se trata de una construcción híbrida a nivel de tensores, donde los bloques de transformadores B00-B24 y B50+ provienen de la rama FL2VA, mientras que los bloques B25-B49 se copian byte a byte de la rama REF2VA. El objetivo es probar una arquitectura mixta que permita evaluar el comportamiento de la rama REF2VA solo en los bloques intermedios, sin necesidad de cargar dos modelos por separado.
+MiniMax-H3 x Z-Image Hybrid es una variante experimental del modelo de generacion de video MiniMax-H3, publicada por el usuario taurusduan en Hugging Face. No se trata de un lanzamiento oficial de MiniMax, sino de una reconstruccion a nivel de tensores que combina dos ramas del modelo original: FL2VA y REF2VA. La particularidad es que la mezcla no es uniforme, sino que se aplica por bloques del transformer: los bloques B00-B24 usan FL2VA, los bloques B25-B49 usan REF2VA y de B50 en adelante se vuelve a FL2VA.
 
-El modelo se basa en MiniMax-H3, un sistema generativo omni-modal de MiniMax que soporta comprensión de texto, imágenes, vídeo y audio, y genera vídeo con audio estéreo nativo hasta 2K y 15 segundos. Sin embargo, esta versión híbrida es una modificación no oficial, creada con fines de experimentación e investigación. El repositorio incluye pesos en BF16 (37.46 GiB) e INT8, y se proporciona una conversión GGUF para su uso en ComfyUI. No se dispone de información sobre el número total de parámetros, la longitud de contexto ni los idiomas soportados.
+El modelo se distribuye en dos formatos: un safetensors en BF16 de aproximadamente 37,46 GiB, construido copiando los tensores byte a byte desde los modelos fuente sin conversion alguna, y una version INT8 que sigue el mismo esquema conceptual de bloques. El autor verifico a nivel de tensor que los 532 tensores del BF16 coinciden con las fuentes esperadas, sin fallos de payload ni tensores de origen incorrecto.
 
-La relevancia de este modelo radica en su enfoque modular: permite a investigadores y desarrolladores explorar cómo afecta la distribución de bloques de diferentes ramas al rendimiento en tareas de generación de vídeo, sin necesidad de reentrenar. No obstante, al ser un experimento no verificado en producción, su uso debe limitarse a entornos de prueba y análisis.
+Su relevancia es acotada pero clara: permite experimentar con una arquitectura hibrida FL2VA/REF2VA en un unico fichero de pesos, sin necesidad de cargar dos modelos separados. Esta pensado para pruebas y experimentacion, no para produccion, y se apoya en el ecosistema diffusers. La licencia es Apache 2.0 y el modelo base declarado es MiniMaxAI/MiniMax-H3.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con bloques híbridos FL2VA/REF2VA (basado en MiniMax-H3) |
+| Arquitectura | Transformer hibrido por bloques: FL2VA (B00-B24), REF2VA (B25-B49), FL2VA (B50+) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, INT8 |
-| Idiomas soportados | no disponibles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (BF16 e INT8), GGUF (enlace externo) |
+| Tipos de cuantizacion | BF16 e INT8 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (BF16 e INT8); conversion GGUF disponible en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo es una modificación directa de MiniMax-H3, un sistema omni-modal que utiliza una pila de transformadores. En esta versión híbrida, los bloques B00-B24 y B50+ provienen de la rama FL2VA, mientras que los bloques B25-B49 se copian exactamente de la rama REF2VA. La construcción se realizó a nivel de payload de safetensors, sin conversión de tensores, y se verificó que los 532 tensores coinciden con sus fuentes esperadas (532/532 coincidencias, 0 fallos). No se realizó ningún entrenamiento adicional ni ajuste de pesos; es una fusión puramente estructural.
+La arquitectura es un transformer de difusion para generacion de video, derivado de MiniMax-H3, en el que se han empalmado dos ramas del modelo original (FL2VA y REF2VA) a nivel de bloques. La seleccion concreta es FL2VA para los bloques B00-B24, REF2VA para B25-B49 y FL2VA de nuevo para B50 en adelante. La construccion se realizo directamente sobre el payload de los safetensors, sin conversion de tensores: los pesos de B25-B49 se copiaron byte a byte desde el modelo REF2VA ZS05 en BF16, y el resto proviene del modelo FL2VA ZS05 en BF16.
 
-No se dispone de información sobre los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El modelo base MiniMax-H3 fue entrenado por MiniMax para comprensión y generación multimodal, pero el híbrido no ha sido sometido a un proceso de entrenamiento propio. La innovación técnica principal es la combinación de dos ramas en un solo archivo, lo que permite probar configuraciones de bloques sin duplicar la carga de memoria.
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, ni sobre si hubo etapas de ajuste fino, RLHF o DPO. Este modelo no ha sido entrenado: es una recombinacion de pesos existentes. La verificacion realizada por el autor confirma 532 tensores, 532/532 coincidencias con las fuentes esperadas, cero fallos de payload y cero tensores con origen incorrecto, con comprobaciones de conjunto de tensores, dtype, forma, tamanos de payload y hashes. No se documentan innovaciones de inferencia como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de vídeo a partir de imágenes (image-to-video) y de texto (text-to-video), según la pipeline declarada.
-- Comprensión multimodal heredada del modelo base MiniMax-H3, aunque no se ha verificado su funcionamiento en esta versión híbrida.
-- Soporte de audio estéreo nativo en el vídeo generado, según las especificaciones del modelo base (hasta 2K y 15 segundos).
-- Posibilidad de edición de vídeo mediante instrucciones en lenguaje natural, si se mantienen las capacidades del modelo base.
-- Compatibilidad con diffusers y con cargas GGUF en ComfyUI, lo que facilita su integración en flujos de trabajo existentes.
-- Flexibilidad arquitectónica: al ser un híbrido, permite experimentar con la distribución de bloques sin reentrenar.
+- Generacion de video a partir de imagen (image-to-video), segun el pipeline declarado en Hugging Face.
+- Generacion de video a partir de texto (text-to-video), segun las etiquetas del repositorio.
+- Combinacion de dos ramas del modelo base (FL2VA y REF2VA) en un unico fichero de pesos.
+- Ejecucion en BF16 de precision completa o en INT8 cuantizado.
+- Compatibilidad con flujos de trabajo basados en diffusers.
+- Disponibilidad de conversion GGUF para flujos de ComfyUI con loaders compatibles.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
+- Modo thinking, vision o audio: no disponible (el modelo es de generacion de video, no un LLM).
 
 ## Casos de uso
 
-- Experimentación en investigación: el modelo es ideal para estudiar cómo afecta la combinación de bloques FL2VA y REF2VA a la calidad del vídeo generado, permitiendo comparar configuraciones sin necesidad de entrenar modelos completos.
-- Prototipado de efectos visuales: los desarrolladores pueden usar el modelo para generar clips cortos con estilos específicos, aprovechando la rama REF2VA en los bloques intermedios para ajustar texturas y detalles.
-- Generación de storyboards animados: a partir de una imagen fija, el modelo puede crear una secuencia animada de hasta 15 segundos, útil para previsualizar escenas en producción audiovisual.
-- Creación de contenido para redes sociales: se pueden generar vídeos cortos con audio nativo a partir de imágenes o prompts de texto, adecuados para plataformas como TikTok o Instagram Reels.
-- Evaluación de modelos híbridos: sirve como banco de pruebas para comparar el rendimiento de arquitecturas mixtas frente a las versiones nativas, midiendo métricas como coherencia temporal o fidelidad visual.
-- Integración en pipelines de ComfyUI: gracias a la versión GGUF, el modelo puede usarse en flujos de trabajo de generación de vídeo sin necesidad de escribir código, facilitando la experimentación por parte de artistas y diseñadores.
+- Experimentacion con arquitecturas hibridas: investigadores pueden probar el comportamiento de una mezcla FL2VA/REF2VA por bloques sin gestionar dos modelos separados, comparando la salida con las ramas puras.
+- Evaluacion de la contribucion de los bloques intermedios: al aislar REF2VA en B25-B49, se puede estudiar que efecto tiene esa rama en la generacion frente a un modelo puramente FL2VA.
+- Pruebas de image-to-video en entornos de investigacion: el pipeline image-to-video permite generar clips a partir de una imagen de referencia usando el fichero hibrido.
+- Flujos de trabajo en ComfyUI: la version GGUF publicada aparte permite integrar el modelo en grafos de ComfyUI con loaders GGUF, util para prototipado visual.
+- Comparativas de cuantizacion: al ofrecer BF16 e INT8 del mismo esquema hibrido, permite medir la perdida de calidad y el ahorro de memoria entre ambas variantes.
+- Reproducibilidad de recombinaciones de pesos: el repositorio documenta la verificacion tensor a tensor, lo que sirve como referencia metodologica para otros experimentos de fusion de modelos.
+- Despliegue en pipelines diffusers: al declarar library_name diffusers, puede cargarse en scripts de Python basados en esa libreria para pruebas de generacion de video.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos sobre métricas como FVD, SSIM, o comparaciones con otros modelos de generación de vídeo. El autor no ha proporcionado ninguna evaluación cuantitativa del rendimiento del híbrido.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo BF16 ocupa 37.46 GiB, por lo que se necesitan al menos 40 GB de VRAM para cargar el modelo en precisión completa. Con cuantización INT8, el requisito podría reducirse a unos 20-25 GB, aunque no se especifica el tamaño exacto del archivo INT8.
-- GPU recomendadas: para BF16, se requieren GPUs profesionales como A100 (40/80 GB), H100 (80 GB) o RTX 6000 Ada (48 GB). Para INT8, una RTX 4090 (24 GB) podría ser suficiente, aunque no está confirmado.
-- En consumer GPU: el modelo BF16 no cabe en GPUs de consumo típicas (24 GB o menos). La versión INT8 podría ejecutarse en una RTX 4090, pero con limitaciones de contexto y velocidad.
-- Opciones de despliegue: el modelo está diseñado para diffusers, y la versión GGUF es compatible con ComfyUI. No se menciona soporte para vLLM, TGI u otros servidores de inferencia.
-- Latencia y throughput: no se dispone de datos. Al ser un modelo experimental, no se han realizado mediciones de rendimiento.
+- VRAM estimada para inferencia en BF16: el fichero de pesos ocupa aproximadamente 37,46 GiB, por lo que se necesita al menos esa cantidad de memoria para cargar los pesos, mas el overhead de activaciones y del pipeline de difusion.
+- VRAM estimada para inferencia en INT8: aproximadamente la mitad que la version BF16 para los pesos, aunque el repositorio no detalla el tamano exacto del fichero INT8.
+- GPU recomendadas: no disponible en la informacion proporcionada; por el volumen de pesos, se requiere hardware de gama alta con memoria amplia (A100/H100 de 80 GB o configuraciones multi-GPU).
+- Compatibilidad con GPU de consumo: no confirmada; 37,46 GiB en BF16 excede la VRAM de las GPU de consumo habituales, y la version INT8 requeriria verificacion empirica.
+- Opciones de despliegue: diffusers (libreria declarada), GGUF mediante el repositorio separado para ComfyUI con loaders GGUF.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Tamaño | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-x-Z-Image-hybrid (este) | Transformer híbrido FL2VA/REF2VA | 37.46 GiB (BF16) | no disponible | Apache-2.0 | Hugging Face |
-| MiniMax-H3 (base) | Transformer omni-modal | no disponible | no disponible | Apache-2.0 | Hugging Face, GitHub |
-| MiniMax-H3-x-Z-Image-native | Transformer con perfil de atención espacial de Z-Image | no disponible | no disponible | Apache-2.0 | Hugging Face |
-
-No se dispone de datos suficientes para comparar rendimiento, ya que no hay benchmarks publicados. La comparativa se limita a aspectos estructurales y de licencia. El modelo híbrido se diferencia del nativo en la distribución de bloques, pero no se ha demostrado que ofrezca ventajas cuantitativas.
+| MiniMax-H3 x Z-Image Hybrid (este) | Hibrido FL2VA/REF2VA por bloques | no disponible | no disponible | Apache 2.0 | Hugging Face, BF16 e INT8 |
+| MiniMax-H3 x Z-Image native (joeygambino) | Implementacion nativa Z-Image y REF2VA BF16 | no disponible | no disponible | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base original | no disponible | no disponible | no disponible | Hugging Face |
+| MiniMax-H3 x Z-Image hybrid GGUF (hoidhxd) | Conversion GGUF del hibrido | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Modelo experimental no oficial: no es un lanzamiento de MiniMax, y no ha sido validado para uso en producción.
-- Posible degradación del rendimiento: al combinar bloques de dos ramas sin entrenamiento adicional, es probable que la coherencia del vídeo generado sea inferior a la de los modelos originales.
-- Sin información sobre sesgos: no se han realizado auditorías de sesgos ni de alucinaciones. El modelo base puede heredar sesgos de sus datos de entrenamiento, pero no hay datos al respecto.
-- Limitaciones de contexto y idioma: se desconoce la longitud de contexto y los idiomas soportados, lo que dificulta su uso en aplicaciones multilingües o con entradas largas.
-- Restricciones de licencia: aunque la licencia es Apache-2.0, al ser un modelo derivado de MiniMax-H3, es necesario verificar los términos de uso del modelo base para uso comercial.
-- Riesgo de fallos técnicos: la construcción a nivel de tensores puede provocar incompatibilidades con ciertos frameworks o cargadores, especialmente en la versión INT8.
+- Modelo experimental: el propio autor lo describe como una creacion para experimentacion y pruebas, no como un lanzamiento oficial de MiniMax.
+- No es un modelo entrenado: es una recombinacion de pesos de dos ramas, por lo que su calidad no esta garantizada frente a los modelos fuente.
+- Sesgos conocidos: no disponible en la informacion proporcionada.
+- Riesgo de alucinacion: no disponible; al ser un modelo de generacion de video, el riesgo se traduce en artefactos visuales o incoherencias temporales no documentadas.
+- Limitaciones de contexto o idioma: no disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los modelos fuente (MiniMax-H3, FL2VA y REF2VA) de los que se copiaron los tensores.
+- Caveat para produccion: el esquema hibrido por bloques no ha sido validado mas alla de la comprobacion tensor a tensor; no hay evidencia publicada de su rendimiento cualitativo.
+- El tamano del repositorio (61,2 GB) y del fichero BF16 (37,46 GiB) implican requisitos de almacenamiento y memoria considerables.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-hybrid)
-- [Modelo nativo Z-Image (joeygambino)](https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-native)
-- [Conversión GGUF (hoidhxd)](https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-hybrid-GGUF)
-- [Repositorio de MiniMax-H3 en GitHub](https://github.com/MiniMax-AI/MiniMax-H3)
-- [Guía de MiniMax H3 en design.minimax.io](https://design.minimax.io/h3)
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-hybrid
+- Modelo relacionado (nativo Z-Image y REF2VA BF16): https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-native
+- Conversion GGUF del hibrido: https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-hybrid-GGUF
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3

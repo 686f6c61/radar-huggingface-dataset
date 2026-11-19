@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Réserver des vols avec SWISS - votre voyage commence ici",
-      "url": "https://www.swiss.com/fr/fr/homepage",
-      "snippet": "Envolez-vous avec SWISS vers des destinations passionnantes dans le monde entier ️. Réservez votre vol et profitez d'un service …"
-    },
-    {
-      "title": "swiss-ai/Apertus-v1.5-8B · Hugging Face",
-      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
-      "snippet": "Apertus 1.5 Table of Contents Table of Contents Model Summary Key Features How to Use Evaluation Training Limitations Legal Aspects Contact Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI."
-    },
-    {
-      "title": "Book flights with SWISS - your journey starts here",
-      "url": "https://www.swiss.com/",
-      "snippet": "Fly with SWISS to exciting destinations worldwide ️. Book your flight and enjoy first-class service and comfort."
-    },
-    {
-      "title": "swiss-ai/Apertus-v1.5-8B at main - Hugging Face",
-      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Vols SWISS - Achetez vos billets SWISS à bas prix dès maintenant.",
-      "url": "https://www.swissair.com/fr/fr/",
-      "snippet": "La société Swiss International Air Lines (SWISS) est la compagnie aérienne helvétique. Elle dessert depuis Zurich et Genève plus de …"
-    }
-  ]
+  "sources": []
 }

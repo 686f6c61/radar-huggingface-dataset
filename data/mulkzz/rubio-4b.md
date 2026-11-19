@@ -2,91 +2,123 @@
 
 ## Resumen
 
-Rubio-4B es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3.5-4B desarrollado por el usuario mulkzz, orientado a una tarea muy concreta: la evaluacion y el feedback de respuestas descriptivas de estudiantes en la asignatura de Biologia (Ciencias de la Vida) del curriculo surcoreano de secundaria (revision 2022). El modelo recibe como entrada un JSON estructurado con el enunciado, la rubrica de evaluacion, las evidencias del libro de texto, los posibles errores conceptuales, una respuesta de referencia y el historial de conversacion, y devuelve un unico objeto JSON con diagnostico por criterio y un feedback breve en coreano para el estudiante.
+RuBio-4B es un ajuste fino supervisado (LoRA fusionado en pesos bf16) del modelo Qwen/Qwen3.5-4B, desarrollado por el usuario mulkzz. Su propósito es muy concreto: evaluar respuestas de estudiantes a preguntas de desarrollo de la asignatura de Biología de secundaria (currículo coreano de 2022, unidades I-III) y emitir un objeto JSON con diagnóstico por criterio de evaluación, información para el profesor y retroalimentación para el alumno. No es un modelo de propósito general, sino una herramienta vertical de corrección automática.
 
-Tecnicamente es un transformer denso de aproximadamente 4.660 millones de parametros (4,66 B), derivado de Qwen3.5-4B mediante LoRA (r=16, alpha=32) entrenado con Unsloth y posteriormente fusionado en un checkpoint completo en bf16, por lo que no requiere cargar el adaptador por separado. Su relevancia radica en que ejemplifica el patron de modelos pequenos altamente especializados en tareas de evaluacion formativa con salida estructurada, un nicho creciente en edtech y en sistemas de tutoria automatica.
+El modelo tiene 4.659.865.088 parámetros (aproximadamente 4,66 mil millones) en formato safetensors bf16, con un tamaño de repositorio de 18,7 GB. Está entrenado únicamente para coreano y se distribuye bajo licencia Apache 2.0. El autor mantiene una familia de modelos relacionados (RuBio-8B, RuBio-9B y RuBio-27B) y un servicio de demostración en mulk.codes/rubio.
 
-El modelo esta pensado exclusivamente para el dominio de Biologia (unidades I-III) y para el idioma coreano; no es un modelo de proposito general. La licencia Apache 2.0 y su tamano contenido lo hacen desplegable en una unica GPU de consumo, lo que facilita su integracion en servicios educativos de bajo coste.
+Su relevancia actual radica en que demuestra que un modelo de 4B, con un ajuste fino bien dirigido, puede superar de forma estadísticamente significativa a su modelo base en una tarea de evaluación educativa especializada, con un formato de salida JSON estricto y sin errores de parseo en el conjunto de evaluación publicado (200 respuestas, 604 criterios).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen3.5-4B); no se detalla en la model card si incorpora innovaciones adicionales |
-| Parametros totales | 4.659.865.088 (4,66 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Entrenamiento con longitud maxima de 4.096 tokens; el ejemplo de servicio usa `--max-model-len 8192` |
-| Tipos de cuantizacion | No se publican cuantizaciones oficiales; el checkpoint se distribuye en bf16 (16 bits). Compatible con cuantizaciones estandar de vLLM/llama.cpp al ser un transformer convencional |
-| Idiomas soportados | Coreano (ko) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3.5-4B; detalles internos de la arquitectura base no disponibles) |
+| Parametros totales | 4.659.865.088 (~4,66 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repo publica pesos bf16; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (checkpoint completo en bf16, LoRA fusionado) |
+| Formato de pesos | safetensors (bf16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-4B, un transformer denso de la familia Qwen3.5. Sobre esa base se aplico un ajuste fino con LoRA de rango 16 y alpha 32, con modulos objetivo `q`, `k`, `v`, `o`, `gate`, `up` y `down`, durante 2 epocas con tasa de aprendizaje 1e-4 y planificador coseno, longitud maxima de 4.096 tokens y el modo de razonamiento (thinking) desactivado. La perdida se calculo unicamente sobre la salida del asistente (el JSON), no sobre el prompt de sistema ni sobre la entrada del usuario. Posteriormente, el adaptador se fusiono en los pesos base para producir un checkpoint completo en bf16.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer decoder-only de aproximadamente 4,66 mil millones de parámetros. Sobre esa base se aplicó un ajuste fino con LoRA y posteriormente se fusionaron los pesos en un checkpoint completo de 16 bits (bf16). No se documentan en la información disponible ni la composición exacta del dataset de entrenamiento, ni el número de tokens utilizados, ni si hubo fases de RLHF o DPO; el pipeline declarado es de ajuste supervisado con LoRA.
 
-Los datos de entrenamiento son integramente sinteticos: 3.000 casos (1.000 por cada una de las unidades I, II y III), construidos a partir de 300 familias de items con 10 casos cada una (7 primeras respuestas y 3 de re-respuesta, pregunta o solicitud de solucion). La generacion la realizo Gemini y la revision corrio a cargo de GPT, Claude y Kimi, con una decision y correccion final por parte de Gemini. La particion se hizo por familia de items (80 % entrenamiento, 10 % desarrollo, 10 % prueba) para evitar filtraciones entre conjuntos. No se documenta el uso de RLHF ni DPO.
+El elemento técnico más destacable es el diseño de la tarea y del formato de salida: el modelo recibe un `SYSTEM_PROMPT` fijo (el mismo usado en entrenamiento) y debe producir un único objeto JSON con diagnóstico por criterio, estado de la respuesta y retroalimentación. La evaluación publicada se realizó en condiciones controladas (primer turno, `temperature=0`, modo *thinking* desactivado y sin forzado de esquema JSON), lo que indica que el modelo aprende el formato de salida de forma nativa en lugar de depender de validadores externos. El autor menciona además un conjunto de reentrenamiento denominado RuIso-v6 aplicado al modelo de 27B, pero no se detalla su uso en el 4B.
 
 ## Capacidades
 
-- Evaluacion por criterio de respuestas descriptivas: clasifica cada criterio de la rubrica como `supported`, `contradicted`, `missing` o `unclear`, con extraccion del fragmento literal de la respuesta del estudiante (`student_span`).
-- Mapeo de errores conceptuales: asigna un `misconception_id` de una lista predefinida cuando un criterio resulta contradicho; no inventa identificadores fuera de la lista.
-- Generacion de feedback pedagogico en coreano formal (3-5 frases) adaptado al nivel de pista solicitado (`hint_1`, `hint_2`, `hint_3`).
-- Control de revelacion de la solucion: respeta la bandera `reveal_requested` para decidir si muestra la respuesta modelo o solo pistas.
-- Seguimiento del progreso entre turnos: compara con el historial (`history`) y emite un estado de avance (`progress`) y una recomendacion de siguiente accion (`next_action`).
-- Salida estrictamente estructurada: un unico objeto JSON con orden de claves fijo (`message_type`, `answer_source`, `answer_status`, `progress`, `checks`, `other_issues`, `focus`, `feedback`, `next_action`, `source_ids`).
-- Trazabilidad de fuentes: devuelve los `source_id` de las evidencias del libro de texto utilizadas.
-- Resistencia a inyeccion de instrucciones: el prompt de sistema indica explicitamente que no debe obedecer instrucciones contenidas en el mensaje del estudiante.
-- No dispone de capacidades de vision, audio, tool calling generico ni agentes multi-paso fuera del flujo conversacional de evaluacion.
+- Evaluación de respuestas abiertas de Biología de secundaria (unidades I-III del currículo coreano de 2022) contra rúbricas o criterios de evaluación definidos.
+- Emisión de un objeto JSON único que combina diagnóstico por criterio para el profesor y retroalimentación para el estudiante.
+- Clasificación del estado global de la respuesta (`answer_status`) conforme a reglas predefinidas.
+- Detección e identificación de conceptos erróneos (misconceptions) con identificadores concretos.
+- Detección de errores científicos fuera de los criterios evaluados (`other_issues`), con menor sensibilidad que modelos mayores.
+- Generación de texto conversacional en coreano dentro del dominio educativo.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso general, visión, audio ni modo *thinking* explícito.
 
 ## Casos de uso
 
-- Correccion formativa automatizada en plataformas educativas: el modelo recibe el JSON con enunciado, rubrica y respuesta del alumno y devuelve el diagnostico por criterio, lo que permite generar informes de progreso sin intervencion docente en cada iteracion.
-- Tutoria conversacional con pistas graduadas: usando `feedback_mode` de `hint_1` a `hint_3`, un chatbot puede guiar al estudiante hacia la respuesta sin revelarla, manteniendo el historial de intentos en `history`.
-- Deteccion temprana de errores conceptuales: el mapeo a `misconception_id` permite agregar estadisticas por clase y detectar que ideas erroneas son mas frecuentes en un grupo, informando la planificacion docente.
-- Panel de diagnostico para el profesorado: los campos `checks`, `other_issues`, `focus` y `source_ids` constituyen datos estructurados que un LMS puede almacenar y visualizar para revisar el proceso de redaccion del alumnado, no solo el resultado final.
-- Generacion de bancos de ejercicios con retroalimentacion: al ser un modelo pequeno y desplegable en una sola GPU, puede alimentar pipelines internos que precalculen feedback para miles de respuestas antes de una sesion de clase.
-- Evaluacion de bajo coste en entornos con recursos limitados: con 4,66 B de parametros en bf16 (unos 9,3 GB de pesos) cabe en GPUs de consumo y puede servirse con vLLM en una unica tarjeta, lo que reduce el coste por evaluacion frente a modelos de mayor tamano.
-- Investigacion en evaluacion automatica de respuestas abiertas: sirve como linea base reproducible (licencia Apache 2.0 y particiones documentadas) para comparar metodos de feedback estructurado en coreano.
+- Corrección automática de exámenes de desarrollo en centros de secundaria: el modelo recibe la respuesta del alumno y la rúbrica, y devuelve un JSON con la valoración criterio a criterio, reduciendo el tiempo de corrección del profesorado en asignaturas de Biología.
+- Generación de retroalimentación formativa para el alumnado: a partir del mismo JSON, un LMS puede mostrar al estudiante comentarios específicos sobre qué concepto ha fallado y por qué, sin intervención docente.
+- Detección temprana de conceptos erróneos en el aula: los identificadores de *misconceptions* permiten agregar estadísticas por clase y detectar patrones (por ejemplo, confusión recurrente entre mitosis y meiosis) para ajustar la docencia.
+- Integración en plataformas de práctica adaptativa: el modelo puede puntuar respuestas abiertas en tiempo real y alimentar un motor de recomendación de ejercicios según los criterios fallados.
+- Evaluación a escala en pruebas piloto o investigaciones educativas: con 4,66 B de parámetros y salida JSON estable, permite procesar lotes grandes de respuestas en infraestructura modesta frente a alternativas propietarias.
+- Asistencia a la redacción de rúbricas: el modelo puede usarse como evaluador de referencia para validar que una rúbrica nueva discrimina correctamente entre respuestas correctas, parciales e incorrectas.
+- Despliegue en entornos con requisitos de soberanía de datos: al ser Apache 2.0 y ejecutable en GPU de consumo, puede alojarse en servidores del propio centro educativo sin enviar respuestas de menores a servicios externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Los datos provienen de RuBench v1 (partición dev out-of-distribution, n = 200 respuestas, 604 criterios de evaluación), comparando RuBio-4B v2 (`mulkzz/RuBio-4B@ba9e00c8`) con su modelo base y otros sistemas.
+
+| Metrica | RuBio-4B v2 | Qwen3.5-4B (base) | RuBio-27B | Qwen3.8-27B (base) | GPT-6 Astra (xhigh) | Claude Opus 5.5 (xhigh) | Gemini 4 Argon (High) |
+|---|---|---|---|---|---|---|---|
+| Precisión de criterio (global) | 77,2% [73,4; 80,9] | 70,9% [67,3; 74,5] | 86,9% [83,8; 89,9] | 81,8% [78,2; 85,4] | 91,2% [88,6; 93,7] | 94,2% [92,0; 96,4] | 91,2% [88,5; 94,0] |
+| Precisión sin voto 2/3 | 79,9% [76,0; 83,8] | 74,5% [71,0; 78,1] | 90,0% [87,1; 92,9] | 85,0% [81,4; 88,5] | 95,6% [93,6; 97,5] | 96,1% [94,2; 98,0] | 93,6% [91,0; 96,2] |
+| Micro precisión de criterio | 467/604 = 77,3% | 427/604 = 70,7% | 524/604 = 86,9%* | 495/604 = 81,8%* | 550/604 = 91,1%* | 570/604 = 94,4%* | 551/604 = 91,2%* |
+| Coincidencia de misconception id | 106/133 = 79,7% | 78/133 = 58,6% | 118/133 = 88,7% | 107/133 = 80,5% | 129/133 = 97,0% | 127/133 = 95,5% | 122/133 = 91,7% |
+| Recall de errores fuera de criterio (TP) | 10/53 = 18,9% | 4/53 = 7,5% | 46/53 = 86,8% | 29/53 = 54,7% | 33/53 = 62,3% | 52/53 = 98,1% | 45/53 = 84,9% |
+| Especificidad sin errores (TN) | 143/147 = 97,3% | 146/147 = 99,3% | 127/147 = 86,4% | 127/147 = 86,4% | 144/147 = 98,0% | 143/147 = 97,3% | 145/147 = 98,6% |
+| Coincidencia de `answer_status` | 124/200 = 62,0% | 89/200 = 44,5% | 154/200 = 77,0% | 120/200 = 60,0% | 176/200 = 88,0% | 184/200 = 92,0% | 179/200 = 89,5% |
+| JSON válido | 200/200 = 100% | 200/200 = 100% | 200/200 = 100% | 195/200 = 97,5% | 200/200 = 100% | 200/200 = 100% | 198/200 = 99,0% |
+
+\* Los valores micro se han convertido a porcentaje a partir de los recuentos publicados (524/604, 495/604, 550/604, 570/604, 551/604); la tabla original los presenta como recuentos.
+
+Diferencias pareadas clave (respuesta a respuesta, IC 95%):
+
+| Comparacion | Diferencia global | Diferencia sin voto 2/3 |
+|---|---|---|
+| RuBio-4B v2 − Qwen3.5-4B | +6,3 pp [+2,6; +9,9] | +5,3 pp [+1,2; +9,5] |
+| RuBio-27B − Qwen3.8-27B | +5,1 pp [+1,1; +9,1] | +5,0 pp [+1,1; +9,0] |
+| RuBio-27B − RuBio-4B | +9,7 pp [+6,1; +13,3] | +10,1 pp [+6,5; +13,7] |
+| GPT-6 Astra − RuBio-27B | +4,3 pp [+1,1; +7,5] | +5,6 pp [+2,4; +8,7] |
+| Claude Opus 5.5 − RuBio-27B | +7,3 pp [+4,2; +10,5] | +6,1 pp [+3,1; +9,1] |
+| Claude Opus 5.5 − GPT-6 Astra | +3,0 pp [+0,4; +5,6] | +0,5 pp [−1,5; +2,5] (no significativo) |
+
+Condiciones de evaluación: primer turno, `temperature=0`, modo *thinking* desactivado y sin forzado de esquema JSON (un JSON roto cuenta como error). RuBio-4B v2 recibió únicamente el `SYSTEM_PROMPT` de entrenamiento; el modelo base recibió el `SYSTEM_PROMPT` más una política de decisión y respuesta (`POLICY`). El modelo base se sirvió en RunPod Serverless con `runpod/worker-v1-vllm v2.30.1` (vLLM 0.32.0) en bf16.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 9,3 GB solo para los pesos en bf16; con cache KV y margen operativo, entre 12 y 16 GB para contextos moderados.
-- En cuantizacion de 8 bits, el peso baja a unos 4,7 GB; en 4 bits, a unos 2,4 GB (estimaciones teoricas a partir del numero de parametros, no verificadas por el autor).
-- GPU recomendadas: A100, H100, L40S o RTX 6000 Ada para produccion con concurrencia; RTX 4090, RTX 4080 o RTX 3090 para desarrollo y despliegues de baja concurrencia.
-- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas en bf16, y en tarjetas de 8 GB con cuantizacion de 8 o 4 bits.
-- Opciones de despliegue: vLLM (comando documentado por el autor con `--language-model-only --max-model-len 8192`), llama.cpp u Ollama previa conversion a GGUF, y TGI como alternativa. El autor etiqueta el modelo con `unsloth` y `vllm`.
-- Latencia y throughput: no disponibles. El autor recomienda `temperature: 0` y `enable_thinking: false` para reducir la latencia y estabilizar la salida.
+- VRAM estimada en bf16: en torno a 9,3 GB solo para pesos (4,66 B × 2 bytes), más overhead de activaciones y caché KV; en la práctica, entre 11 y 14 GB según longitud de contexto y lote.
+- VRAM estimada en cuantización de 8 bits: aproximadamente 5 GB de pesos; en 4 bits, aproximadamente 2,5-3 GB de pesos. No se publican checkpoints cuantizados oficiales, por lo que habría que generarlos.
+- GPU recomendadas para producción: A100 40/80 GB, H100, L40S o A10G para despliegues con concurrencia; el modelo es pequeño para estos aceleradores y permite lotes grandes.
+- GPU de consumo: cabe en RTX 4090 (24 GB) y RTX 3090 (24 GB) en bf16 sin problemas; en RTX 4080/4070 Ti Super (16 GB) en bf16 con contexto moderado; en GPUs de 8-12 GB requiere cuantización.
+- Opciones de despliegue: vLLM (usado por el autor en la evaluación, versión 0.32.0), TGI, y previsiblemente llama.cpp/Ollama si se generan pesos GGUF, aunque no se documentan en el repositorio.
+- Latencia y throughput: no disponibles. Al ser un modelo de 4,66 B con salida JSON estructurada, se espera una latencia por debajo del segundo en A100/H100 para respuestas de pocos cientos de tokens, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Precisión de criterio (RuBench v1 dev) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rubio-4B (mulkzz) | 4,66 B | 4.096 en entrenamiento; 8.192 en ejemplo de servicio | Feedback de Biologia en coreano con salida JSON | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 B | No disponible en la informacion proporcionada | Proposito general, multilingue | No disponible en la informacion proporcionada | Hugging Face |
-| Modelos de evaluacion automatica de respuestas abiertas de proposito general | Variable | Variable | Evaluacion generica multilingue | Variable | Variable |
+| RuBio-4B v2 | ~4,66 B | no disponible | 77,2% | Apache 2.0 | Hugging Face (mulkzz/RuBio-4B) |
+| Qwen3.5-4B (base) | ~4,66 B | no disponible | 70,9% | no disponible en la información | Hugging Face (Qwen/Qwen3.5-4B) |
+| RuBio-8B | no disponible | no disponible | no disponible | no disponible | Hugging Face (mulkzz/RuBio-8B) |
+| RuBio-9B | no disponible | no disponible | no disponible | no disponible | Hugging Face (mulkzz/RuBio-9B) |
+| RuBio-27B | no disponible | no disponible | 86,9% | no disponible | Hugging Face (mulkzz/RuBio-27B) |
+| GPT-6 Astra (xhigh) | no disponible | no disponible | 91,2% | propietaria | API |
+| Claude Opus 5.5 (xhigh) | no disponible | no disponible | 94,2% | propietaria | API |
 
-No se dispone de datos de benchmarks ni de modelos directamente comparables en el mismo nicho (feedback estructurado de Biologia en coreano) dentro de la informacion proporcionada.
+La comparación relevante es doble: frente a su modelo base, RuBio-4B gana +6,3 pp de precisión de criterio con significación estadística; frente a los modelos frontera propietarios, queda entre 14 y 17 pp por debajo, pero a un coste de inferencia y con requisitos de hardware muy inferiores. Dentro de la propia familia RuBio, el salto al modelo de 27B aporta +9,7 pp adicionales.
 
 ## Limitaciones y advertencias
 
-- No debe usarse para calificacion oficial o de alto impacto: el propio autor indica que las salidas son de apoyo al aprendizaje y no sustituyen la evaluacion docente.
-- Ambito restringido: solo cubre las unidades I-III de Biologia del curriculo coreano de 2022; fuera de ese dominio o en otras asignaturas su comportamiento no esta validado.
-- Requiere entrada estructurada: sin `question`, `rubric` y `evidence` bien formados no debe emplearse; no esta disenado para preguntas libres.
-- El campo `answer_status` puede ser incoherente con los `checks` por criterio; el autor recomienda recalcularlo en el servicio a partir de los resultados por criterio.
-- Entrenado exclusivamente con datos sinteticos: puede no reflejar la distribucion real de errores, expresiones o caligrafia semantica del alumnado real.
-- Riesgo de alucinacion en el feedback y en la seleccion de `source_ids`; conviene validar que los identificadores devueltos existan en la evidencia proporcionada.
-- Idioma limitado al coreano: no se garantiza un rendimiento aceptable en castellano ni en otros idiomas.
-- Dependencia de la plantilla exacta: el prompt de sistema debe reproducirse literalmente y el JSON de usuario debe mantener el orden de claves y la serializacion compacta para obtener el comportamiento esperado.
-- Licencia Apache 2.0 permite uso comercial, pero no exime de las obligaciones de atribucion ni de las condiciones de la licencia del modelo base Qwen3.5-4B, que deben verificarse por separado.
-- El modelo se publico con 0 likes y 394 descargas en el momento de la consulta, por lo que la validacion por parte de la comunidad es practicamente inexistente.
+- Dominio extremadamente estrecho: solo cubre Biología de secundaria del currículo coreano de 2022 (unidades I-III) y solo en coreano. Fuera de ese ámbito su comportamiento no está caracterizado.
+- Sensibilidad baja a errores científicos fuera de los criterios evaluados: recall de solo 18,9% (10/53) en `other_issues`, aunque con especificidad alta (97,3%). El modelo tiende a no señalar errores no previstos en la rúbrica.
+- Coincidencia de `answer_status` limitada: 62,0% frente al 44,5% del base, pero muy por debajo del 77,0% del modelo de 27B y del 88-92% de los modelos frontera.
+- Riesgo de alucinación en la retroalimentación generada: aunque el formato JSON es estable (100% válido en la evaluación), el contenido de los comentarios y de los identificadores de conceptos erróneos puede ser incorrecto, especialmente en respuestas ambiguas o fuera de distribución.
+- Sesgos no documentados: no se publica información sobre la distribución demográfica, lingüística o socioeconómica de los datos de entrenamiento ni sobre evaluaciones de sesgo.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-4B puede tener condiciones adicionales que conviene verificar antes de un despliegue comercial.
+- Contexto máximo no documentado: la ficha no indica la longitud de contexto soportada, lo que impide planificar con seguridad entradas con rúbricas y respuestas muy largas.
+- Ausencia de datos de entrenamiento y de evaluación en otros idiomas: no hay evidencia de que el modelo mantenga capacidades multilingües del base tras el ajuste fino.
+- Uso en producción educativa: al tratarse de una herramienta que evalúa a menores, conviene mantener supervisión humana y no usar las salidas como calificación definitiva sin revisión.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mulkzz/Rubio-4B
+- README en inglés: https://huggingface.co/mulkzz/RuBio-4B/blob/main/README_en.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Servicio de demostracion: https://mulk.codes/rubio
+- Modelo superior (27B): https://huggingface.co/mulkzz/RuBio-27B
+- Modelos relacionados: https://huggingface.co/mulkzz/RuBio-8B y https://huggingface.co/mulkzz/RuBio-9B
+- Servicio de demostración: https://mulk.codes/rubio
+- Paper referenciado en los tags (arXiv:2411.00640): https://arxiv.org/abs/2411.00640
+- Repositorio de vLLM (usado en la evaluación): https://github.com/vllm-project/vllm

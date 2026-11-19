@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "AbaD3v/MoonAI8b-qwen3",
+  "slug": "abad3v-moonai8b-qwen3",
+  "author": "AbaD3v",
+  "url": "https://huggingface.co/AbaD3v/MoonAI8b-qwen3",
+  "created_at": "2026-11-18T21:58:18.000Z",
+  "updated_at": "2026-11-18T22:00:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168272120,
+  "storage_human": "168 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

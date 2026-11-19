@@ -29,13 +29,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 12,
+  "likes": 13,
   "downloads_30d": 272,
-  "trending_score": 12,
+  "trending_score": 13,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 626333266,
-  "storage_human": "626 MB",
+  "storage_bytes": 623964019,
+  "storage_human": "624 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

@@ -5,7 +5,7 @@
   "author": "RinKana",
   "url": "https://huggingface.co/RinKana/Nano-AMADEUS-RNN4LDFA-T1024H256-AV-1001",
   "created_at": "2026-11-17T10:21:23.000Z",
-  "updated_at": "2026-11-17T20:09:27.000Z",
+  "updated_at": "2026-11-18T07:46:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "tinystories",
     "pytorch",
     "en",
-    "dataset:tinystories",
+    "dataset:karpathy/tinystories-gpt4-clean",
     "license:mit",
     "region:us"
   ],

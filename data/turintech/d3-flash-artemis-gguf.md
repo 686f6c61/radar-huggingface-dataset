@@ -2,101 +2,106 @@
 
 ## Resumen
 
-d3-flash-Artemis-GGUF es la versión cuantizada en GGUF de d3-flash, un modelo de decisión desarrollado por TurinTech (en colaboración con el ecosistema SystemOne) que responde preguntas tipadas sobre un texto de entrada devolviendo, en una sola pasada, una probabilidad para cada respuesta posible. No es un modelo conversacional: se consume a través del endpoint `/v1/systemone` de `llama-server`, no de `/v1/chat/completions`, y su salida es una distribución de probabilidad sobre opciones definidas por el usuario (por ejemplo, preguntas de tipo `noul` con instrucciones como "¿este mensaje expresa urgencia?").
+d3-flash-Artemis-GGUF es una versión cuantizada en formato GGUF del modelo d3-flash de vllm-sr, publicada por TurinTech bajo el paraguas de su tecnología Artemis. No es un modelo conversacional al uso: es un modelo de decisión que responde preguntas tipadas (sí/no, elección única, puntuación) sobre texto o imágenes, devolviendo una probabilidad para cada respuesta en una sola pasada a través del endpoint `/v1/systemone` de llama-server. Con 8.953.803.264 parámetros totales, el autor lo orienta a tareas de enrutamiento, triaje y comprobaciones tipadas.
 
-El modelo base `vllm-sr/d3-flash` tiene 8.953.803.264 parámetros (unos 8,95 mil millones) y está publicado en safetensors; esta ficha distribuye los pesos convertidos a GGUF y cuantizados. El archivo por defecto, `d3-flash-Artemis-IQ4_XS.gguf`, ocupa 4,87 GB y consume un pico de 6,1 GiB de VRAM para texto (8,3 GiB si se añaden imágenes), frente a los 17,0 GiB que requiere el modelo original: eso lo sitúa en el rango de una GPU de consumo de 8 GB.
+El interés principal de esta publicación es la compresión: el autor declara que el archivo IQ4_XS ocupa 4,87 GB y requiere 6,1 GiB de VRAM, frente a los 17,0 GiB del modelo original, manteniendo un 94,5 % de respuestas idénticas al original según la model card. Eso permite ejecutar texto en una GPU de 8 GB y añadir visión cargando un proyector multimodal aparte en una GPU mayor.
 
-La relevancia práctica está en el coste y la estabilidad de la decisión: según el autor, coincide con la salida del modelo en BF16 en el 94,5 % de 2.000 decisiones de test, sin cambios en respuestas "confidentes", muy cerca del 95,0 % que obtiene el Q4_K_M de ggml-org (6,60 GB). Está pensado para enrutado, triaje y comprobaciones tipadas, y admite también entradas de imagen mediante un proyector vision separado.
+La licencia es Apache 2.0 y el modelo base es vllm-sr/d3-flash. La información pública disponible es limitada: no se detallan idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks estándar (MMLU, HumanEval, GSM8K); las únicas métricas publicadas son las de la model card sobre decisiones tipadas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el autor no detalla la arquitectura; el modelo base es `vllm-sr/d3-flash`, especializado en decisiones tipadas) |
-| Parámetros totales | 8.953.803.264 (≈8,95 mil millones), dato real de safetensors del modelo base |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 16.384 tokens en la configuración documentada (`-c 16384`); longitud de contexto de entrenamiento no disponible |
-| Tipos de cuantización | GGUF: `IQ4_XS` (4,87 GB, por defecto), `IQ3_M`; existe además un `Q4_K_M` (6,60 GB) publicado por ggml-org; el original en BF16 requiere 17,0 GiB |
+| Arquitectura | no disponible (modelo de decisión d3; soporte añadido en llama.cpp b11572) |
+| Parametros totales | 8.953.803.264 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 16.384 tokens (configuración recomendada con `-c 16384`; contexto de entrenamiento no disponible) |
+| Tipos de cuantizacion | GGUF cuantizado; se menciona IQ4_XS (4,87 GB) y comparación con ggml-org Q4_K_M |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (librería `gguf`); pesos originales del modelo base en safetensors |
+| Formato de pesos | GGUF (librería `gguf`, orientado a llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El autor no publica detalles de arquitectura ni del proceso de entrenamiento en la model card: se indica únicamente que es un "decision model" de la familia d3, con el modelo base `vllm-sr/d3-flash` y relación `quantized`. No hay información disponible sobre número de tokens de entrenamiento, composición del dataset, ni sobre si se aplicaron técnicas de RLHF o DPO. Lo que sí se describe es el contrato de inferencia: el modelo recibe un `state` (texto o imágenes) y un conjunto de `questions` con un tipo (`noul` en los ejemplos, además de preguntas de elección) e instrucciones, y devuelve una probabilidad por respuesta en una sola pasada.
+La model card no describe la arquitectura interna del modelo base vllm-sr/d3-flash más allá de identificarlo como un "decision model" de la familia d3. Lo que sí se documenta es el modo de operación: d3 lee el prompt completo en un único batch y produce, en una sola pasada, una distribución de probabilidad sobre las respuestas posibles de cada pregunta tipada. Los tipos de pregunta citados son `noul` (sí/no), elección entre opciones y puntuación. El modelo admite entrada multimodal (texto e imágenes) cuando se carga junto al proyector de visión `mmproj-vllm-d3-flash-BF16.gguf` de ggml-org.
 
-La innovación destacable no está en el entrenamiento sino en el formato de salida y en la conversión: el autor reporta que la cuantización IQ4_XS conserva la decisión del BF16 en el 94,5 % de los casos y que ninguna respuesta "confidente" cambió de valor. En el plano operativo, d3 exige leer el prompt completo en un solo lote (`-ub 4096 -b 4096`, o 8192 con imágenes), de modo que una entrada mayor que el tamaño de batch es rechazada; además, con varios slots en `llama-server` una petición corta que comparta batch puede alterar la respuesta (issue abierto ggml-org/llama.cpp#30402), por lo que se recomienda `-np 1`. El soporte de d3 en llama.cpp llegó con la release `b11572` (12 de octubre de 2026); las pruebas se hicieron en el commit `fcac190`.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. La innovación técnica destacable es la compresión Artemis aplicada sobre el modelo original: según el autor, reduce el peso de 17,0 GiB a 6,1 GiB de VRAM con un 94,5 % de coincidencia de respuesta respecto al original, y sin cambios en las respuestas confiadas (métrica "confident changes" = 0). El soporte de d3 en llama.cpp es reciente (build b11572, 12 de octubre de 2026) y el autor advierte de una limitación conocida: con varios slots paralelos, llama.cpp puede alterar la respuesta de d3 si una petición más corta comparte batch (issue ggml-org/llama.cpp#30402, abierto a 14 de octubre de 2026), por lo que recomienda `-np 1`.
 
 ## Capacidades
 
-- Decisión tipada sobre texto: responde preguntas definidas por el usuario devolviendo una probabilidad por respuesta (p. ej. urgencia, enfado, categoría) en una única pasada.
-- Tipos de pregunta: `noul` (sí/no/desconocido) y preguntas de elección entre opciones, según los ejemplos de la model card.
-- Entrada multimodal con imágenes: requiere el proyector `mmproj-vllm-d3-flash-BF16.gguf` de `ggml-org/vllm-d3-flash-GGUF` y enviar las imágenes como data URLs en un array `images` de nivel superior de la petición.
-- Procesamiento de contexto largo dentro del límite configurado: 16.384 tokens, con batch de 4.096 para texto y 8.192 cuando se envían varias imágenes grandes.
-- Integración con servidores: endpoint `/v1/systemone` en `llama-server` y en el servidor de LM Studio (puerto 1234 por defecto, indicando el nombre del modelo).
-- Ejecución en hardware de consumo: validado en NVIDIA RTX 5090 y en Apple M3 Max (36 GB) con llama.cpp Metal `b11617`.
-- No soporta: uso como modelo de chat, generación de texto libre, tool calling ni razonamiento multi-paso de agente (no documentado en la información disponible).
+- Clasificación y decisión tipada sobre texto: respuestas sí/no, elección única y puntuaciones con probabilidad asociada.
+- Decisión multimodal: acepta imágenes enviadas como data URLs en un array `images` de nivel superior en la petición a `/v1/systemone`, siempre que se cargue el proyector de visión.
+- Triaje y enrutamiento: pensado explícitamente para routing, triage y "typed checks" según el autor.
+- Salida probabilística en una sola pasada, sin generación autoregresiva de texto libre.
+- No soporta conversación: la ventana de chat y `/v1/chat/completions` no lo ejecutan como modelo de decisión.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no disponible; el modelo está diseñado para decisiones puntuales.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: enviar el texto del ticket como `state` y preguntas tipadas sobre urgencia, enfado o categoría; el modelo devuelve probabilidades que permiten priorizar la cola sin un LLM generativo, con 6,1 GiB de VRAM en una GPU de 8 GB.
-- Enrutado de peticiones a departamentos: definir una pregunta de elección con las áreas disponibles (facturación, técnico, comercial) y usar la opción de mayor probabilidad como destino del ticket, en una sola llamada.
-- Guardrails y filtros previos en pipelines de agentes: clasificar la intención o el riesgo de un mensaje antes de pasarlo a un modelo conversacional, aprovechando el endpoint dedicado y la latencia de una única pasada.
-- Clasificación de documentos escaneados o capturas: con el proyector vision, decidir sobre imágenes (por ejemplo, comprobantes de pago o capturas de error) en el mismo endpoint, subiendo el batch a 8.192 tokens.
-- Moderación y análisis de sentimiento a escala: procesar lotes de mensajes con preguntas tipo `noul` sobre tono o toxicidad, manteniendo `-np 1` para evitar que la composición del batch altere la decisión.
-- Enriquecimiento de datos en pipelines ETL: etiquetar registros de texto con decisiones tipadas y almacenar la probabilidad asociada como señal de confianza para revisión humana posterior.
-- Despliegue en estaciones de trabajo sin GPU de datacenter: servir el modelo con LM Studio o `llama-server` en una máquina de 8 GB de VRAM para validaciones internas y prototipos.
+- Triaje de tickets de soporte: enviar el texto del ticket como `state` y preguntar, por ejemplo, `"urgency": {"type": "noul", ...}` para obtener una probabilidad de urgencia; el ejemplo de la model card usa precisamente un mensaje sobre una integración de Stripe que falla. Adecuado por su bajo coste de VRAM (6,1 GiB) y su respuesta en una pasada.
+- Enrutamiento de peticiones en pipelines internos: clasificar cada entrada hacia el modelo o el equipo adecuado mediante preguntas de elección única, aprovechando que el modelo devuelve una distribución de probabilidad por opción en lugar de texto libre.
+- Moderación y comprobaciones binarias: aplicar preguntas sí/no sobre contenido de usuario para filtrar o marcar casos antes de un revisión humana, con umbrales ajustables sobre la probabilidad devuelta.
+- Verificación de documentos con imagen: cargar el proyector de visión y decidir sobre capturas, formularios o imágenes escaneadas, elevando el batch a 8.192 tokens porque varias imágenes grandes pueden superar los 4.096.
+- Despliegue en hardware modesto: ejecutar el modelo de texto en una GPU de 8 GB con llama-server y el archivo IQ4_XS, útil para entornos de borde o estaciones de trabajo sin aceleradores de gran capacidad.
+- Integración en LM Studio para prototipado: cargar `turintech/d3-flash-artemis@iq4_xs` y enviar peticiones de decisión a `/v1/systemone` en el puerto 1234, lo que facilita pruebas locales antes de pasar a producción con llama-server.
+- Clasificación por lotes con contexto largo: con 16.384 tokens de contexto configurados, procesar documentos o hilos de conversación extensos en una sola decisión, manteniendo `-ub 4096 -b 4096` para que el prompt quepa en un batch.
 
 ## Benchmarks y rendimiento
 
-| Tarea | Dataset | Métrica | Valor | Fuente |
-|---|---|---|---|---|
-| Agreement with the original | LocalLLaMA/typed-decisions (2.000 decisiones de test) | Same as BF16 (%) | 94,5 | TurinTech (no verificado) |
-| Agreement with the original | LocalLLaMA/typed-decisions (2.000 decisiones de test) | Confident changes | 0 | TurinTech (no verificado) |
+Datos declarados por el autor en la model card (no verificados de forma independiente):
 
-Referencia comparativa citada por el autor: el `Q4_K_M` de ggml-org (6,60 GB) coincide con el original en el 95,0 % de esas mismas decisiones. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras suites estándar en la información disponible; las métricas anteriores miden fidelidad respecto al BF16, no calidad absoluta.
+| Tarea | Dataset | Metrica | Valor |
+|---|---|---|---|
+| Agreement with the original | LocalLLaMA/typed-decisions (Test decisions) | Same answer (%) | 94,5 |
+| Agreement with the original | LocalLLaMA/typed-decisions (Test decisions) | Confident changes | 0 |
+| Typed decisions | LocalLLaMA/typed-decisions (Test decisions) | Accuracy (%) | 72,25 |
+
+El autor compara además la coincidencia con el original frente a la cuantización ggml-org Q4_K_M, que obtiene un 95,0 % de respuestas idénticas. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 6,1 GiB de pico para texto y 8,3 GiB con imágenes (medido en RTX 5090 con IQ4_XS); el modelo original en BF16 necesita 17,0 GiB.
-- GPU validadas: NVIDIA RTX 5090 (texto e imagen). Apple M3 Max de 36 GB con llama.cpp Metal `b11617` carga y responde con todos los archivos publicados.
-- GPU de consumo: sí, el archivo por defecto está pensado para una GPU de 8 GB; los 8,3 GiB con imágenes exceden ese margen y requieren una GPU mayor.
-- Despliegue: `llama-server` (llama.cpp `b11572` o superior; probado en `fcac190`) y LM Studio 0.4.26 con su motor CPU llama.cpp 2.64.0 en Linux x86-64 (solo texto). No hay paquete verificado para Ollama.
-- Comando de referencia: `llama-server -hf turintech/d3-flash-Artemis-GGUF:IQ4_XS --port 8080 -c 16384 -ub 4096 -b 4096 -np 1`; con visión, añadir `--mmproj mmproj-vllm-d3-flash-BF16.gguf` y subir batch a 8.192.
-- Latencia y throughput: no disponibles (la model card no publica métricas de velocidad).
-- Almacenamiento: 4,87 GB para el archivo por defecto; el repositorio completo ocupa 9,5 GB.
+- VRAM para texto: 6,1 GiB con el archivo IQ4_XS (4,87 GB en disco), frente a 17,0 GiB del modelo original.
+- VRAM para visión: requiere una GPU mayor que la de 8 GB, ya que hay que cargar además el proyector `mmproj-vllm-d3-flash-BF16.gguf`; el autor no especifica la cifra exacta.
+- GPU consumer: el texto cabe en GPU de 8 GB; el autor no detalla modelos concretos (RTX 4090, A100, H100) en la información disponible.
+- Despliegue: llama-server de llama.cpp build b11572 o superior (probado en `fcac190`), con `-c 16384 -ub 4096 -b 4096 -np 1`. También LM Studio 0.4.26 (motor CPU 2.64.0) mediante la entrada `turintech/d3-flash-artemis`.
+- Ollama: no soportado; Ollama 0.40.4 no carga este archivo (probado el 15 de octubre de 2026).
+- vLLM y TGI: no disponible en la información proporcionada.
+- Latencia y throughput: no disponibles; el autor solo indica que d3 procesa el prompt en un único batch y que un input mayor que el batch size es rechazado.
 
 ## Comparativa con modelos similares
 
-| Modelo / variante | Parámetros | Contexto | Memoria pico | Coincidencia con BF16 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| d3-flash-Artemis IQ4_XS (esta ficha) | 8,95 mil M | 16.384 tokens (config. documentada) | 6,1 GiB texto / 8,3 GiB imagen | 94,5 % | Apache 2.0 | GGUF en Hugging Face y LM Studio Hub |
-| ggml-org Q4_K_M de d3-flash | 8,95 mil M (mismo base) | no disponible | no disponible (archivo de 6,60 GB) | 95,0 % | Apache 2.0 (modelo base) | GGUF en `ggml-org/vllm-d3-flash-GGUF` |
-| d3-flash original (BF16) | 8,95 mil M | no disponible | 17,0 GiB | referencia | Apache 2.0 | safetensors (`vllm-sr/d3-flash`) |
+| Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| d3-flash-Artemis-GGUF (IQ4_XS) | 8.953.803.264 | 16.384 (config. recomendada) | 94,5 % misma respuesta que el original; 72,25 % accuracy en decisiones tipadas | Apache 2.0 | GGUF en Hugging Face, LM Studio |
+| d3-flash (original, vllm-sr) | no disponible | no disponible | Referencia de comparación | no disponible | Modelo base |
+| Cuantización ggml-org Q4_K_M de d3-flash | no disponible | no disponible | 95,0 % misma respuesta que el original | no disponible | GGUF en ggml-org |
 
-No se dispone de datos de otros modelos de decisión comparables en la información proporcionada; la comparativa se limita a las variantes del mismo modelo base.
+No se dispone de datos suficientes para comparar con modelos de clasificación o decisión de otros autores; la comparativa disponible se limita a las variantes del propio d3-flash.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de chat: el endpoint `/v1/chat/completions` y la ventana de chat de LM Studio no lo ejecutan como modelo de decisión; hay que usar `/v1/systemone`.
-- El prompt completo debe caber en el batch (`-ub`/`-b`); una entrada más larga que el tamaño de batch se rechaza, y con varias imágenes grandes conviene subir a 8.192.
-- Con más de un slot (`-np` > 1), una petición corta que comparta batch puede cambiar la respuesta (ggml-org/llama.cpp#30402, abierto a 14 de octubre de 2026); se recomienda `-np 1`, lo que limita el throughput por concurrencia.
-- Las métricas de la model card están marcadas como no verificadas (`verified: false`) y miden agreement con el BF16, no exactitud frente a una etiqueta de referencia.
-- Idiomas soportados no documentados: no hay garantía de comportamiento multilingüe ni de cobertura fuera del inglés de los ejemplos.
-- Sesgos conocidos: no documentados en la información disponible.
-- Riesgo de alucinación: al ser un modelo de clasificación con salida tipada, el riesgo se traslada a decisiones mal calibradas o a respuestas "desconocidas"; conviene usar la probabilidad como umbral y no solo la etiqueta argmax.
-- Dependencia de terceros: el proyector vision recomendado proviene de `ggml-org/vllm-d3-flash-GGUF`, no del repositorio de TurinTech.
-- Licencia Apache 2.0: permite uso comercial y modificación, con las obligaciones habituales de atribución y aviso de cambios; el modelo base es `vllm-sr/d3-flash`, cuyos términos conviene revisar por separado.
-- Compatibilidad: se exige llama.cpp `b11572` o superior; versiones anteriores no soportan d3.
+- No es un modelo conversacional: no funciona en la ventana de chat ni en `/v1/chat/completions`; solo responde en `/v1/systemone`.
+- Requiere llama.cpp b11572 o superior; versiones anteriores no cargan el formato d3.
+- Con varios slots paralelos (`-np` mayor que 1), llama.cpp puede alterar la respuesta si una petición corta comparte batch (issue abierto ggml-org/llama.cpp#30402); el autor recomienda `-np 1`.
+- El prompt completo debe caber en el batch size configurado (`-ub 4096 -b 4096`); entradas más largas son rechazadas.
+- Para visión hay que elevar el batch a 8.192 tokens, ya que varias imágenes grandes superan los 4.096.
+- Sin soporte en Ollama 0.40.4 según las pruebas del autor.
+- Precisión limitada: 72,25 % de accuracy en decisiones tipadas y 94,5 % de coincidencia con el original; un 5,5 % de respuestas puede diferir del modelo sin cuantizar.
+- Sesgos conocidos, riesgo de alucinación en texto libre e idiomas soportados: no disponibles en la información proporcionada; al no generar texto libre, el riesgo de alucinación se traslada a la calibración de las probabilidades.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base vllm-sr/d3-flash, cuya licencia no se detalla en la información disponible.
+- Las métricas de la model card están declaradas por el autor y marcadas como no verificadas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/turintech/d3-flash-Artemis-GGUF
-- Resultados declarados en la model card: https://huggingface.co/turintech/d3-flash-Artemis-GGUF#results
-- Sitio del autor: https://turintech.ai
-- Entrada en LM Studio Hub: https://lmstudio.ai/turintech/d3-flash-artemis
-- Hilo de feedback del autor: https://huggingface.co/spaces/turintech/README/discussions/1
-- Proyector vision (terceros): https://huggingface.co/ggml-org/vllm-d3-flash-GGUF
-- Issue de llama.cpp sobre batches y respuestas d3: https://github.com/ggml-org/llama.cpp/issues/30402
+- Hugging Face: https://huggingface.co/turintech/d3-flash-Artemis-GGUF
+- Página de resultados: https://huggingface.co/turintech/d3-flash-Artemis-GGUF/blob/main/RESULTS.md
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- LM Studio: https://lmstudio.ai/turintech/d3-flash-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
-- No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la búsqueda web disponible.
+- Proyector de visión: https://huggingface.co/ggml-org/vllm-d3-flash-GGUF
+- Issue de llama.cpp: https://github.com/ggml-org/llama.cpp/issues/30402

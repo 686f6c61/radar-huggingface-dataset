@@ -2,99 +2,92 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-REAP50 es una version podada del checkpoint XiaomiMiMo/MiMo-V2.6-Flash, un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado originalmente por Xiaomi. La poda se ha realizado combinando la tecnica REAP (CerebrasResearch) con HOPE (Higher-Order Pruning of Experts), un metodo de segundo orden que tiene en cuenta las interacciones entre expertos, no solo las frecuencias de activacion. El resultado conserva 128 de los 256 expertos enrutados por capa en las 47 capas MoE del modelo.
+MiMo-V2.6-Flash-REAP50-GGUF es una conversión a formato GGUF del checkpoint MiMo-V2.6-Flash-REAP50, que a su vez es una versión podada del modelo MiMo-V2.6-Flash-RL de XiaomiMiMo (licencia MIT). La poda, realizada con la técnica REAP, elimina 128 de los 256 expertos enrutados de cada capa MoE, dejando 128 expertos por capa con activación top-8. El resultado es un modelo de aproximadamente 157.000 millones de parámetros totales y unos 15.000 millones activos por token, pensado para ejecutarse en llama.cpp sobre máquinas con memoria unificada grande o configuraciones multi-GPU.
 
-Esta ficha corresponde concretamente a la cuantizacion GGUF de ese checkpoint podado, publicada por el usuario patrickbdevaney para su uso con llama.cpp. Incluye dos niveles de cuantizacion del tronco (MXFP4_MOE y Q2_K), los proyectores multimodales de vision y audio (mmproj) y las cabezas de prediccion multi-token (MTP) para decodificacion especulativa. El checkpoint base pesa 157.356.536.128 parametros y el repositorio ocupa 169,8 GB.
+La arquitectura `mimo2` consta de 48 capas: la capa 0 es densa y las capas 1 a 47 son MoE con gating sigmoide y sin experto compartido. Combina 9 capas de atención completa con 39 capas de ventana deslizante (ventana de 128 tokens), y declara una longitud de contexto de 1.048.576 tokens. El paquete incluye proyector multimodal (`mmproj`) con codificador de visión y codificador de audio, además de tres capas MTP (multi-token prediction) separadas para decodificación especulativa.
 
-Su relevancia practica radica en que permite ejecutar un modelo MoE multimodal de gran tamano en hardware de gama alta para consumo o en configuraciones multi-GPU economicas, manteniendo supuestamente la fidelidad numerica de los expertos MXFP4 originales. La licencia MIT facilita su adopcion tanto en investigacion como en productos comerciales.
+Es relevante ahora porque permite probar un modelo multimodal de escala grande en hardware de consumo o estaciones de trabajo, con un fichero principal de 86,06 GiB en MXFP4. No obstante, el autor advierte explícitamente de que los ficheros nunca se han cargado, servido ni evaluado: no hay benchmarks, ni pruebas de calidad, ni mediciones de velocidad o memoria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal (47 capas MoE + 1 capa densa, 48 capas en total) |
-| Parametros totales | 157.356.536.128 (checkpoint base) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4_MOE (86,06 GiB), Q2_K (61,64 GiB); proyectores mmproj en BF16 (2,56 GiB) y Q8_0 (1,46 GiB); cabezas MTP en BF16 (4,17 GiB) y Q8_0 (2,22 GiB) |
+| Arquitectura | `mimo2` (transformer MoE, 48 capas: 1 densa + 47 MoE; 9 capas de atención completa y 39 de ventana deslizante de 128 tokens) |
+| Parametros totales | ~157B (157.356.536.128 según safetensors del modelo base) |
+| Parametros activos | ~15B por token (top-8 de 128 expertos por capa) |
+| Longitud de contexto | 1.048.576 tokens (declarada, no probada; la calibración no superó los 4.095 tokens) |
+| Tipos de cuantizacion | MXFP4 (expertos, repack directo del origen), Q2_K mixto (3,36 BPW), BF16, F32, Q8_0, Q6_K |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (llama.cpp); safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE con 48 capas, de las cuales 47 son capas con expertos enrutados y una es densa. En cada capa MoE el checkpoint original dispone de 256 expertos; tras la poda REAP-50 se retienen 128 expertos por capa, lo que supone una reduccion del 50% en el numero de expertos. El modelo incorpora ademas dos torres multimodales: un codificador de vision basado en un ViT de 28 capas con representacion de parches de 560 px, y un tokenizador de audio con representaciones de habla RVQ. Asimismo incluye 3 capas de prediccion multi-token (MTP) entrenadas para decodificacion especulativa. La atencion y los embeddings se mantienen en BF16 sin cuantizar, mientras que el 92,9% de los pesos del modelo base se almacena como MXFP4 nativo empaquetado (tamano de bloque 32).
+El modelo es un transformer con mezcla de expertos: 48 capas, de las cuales la capa 0 es densa y las 47 restantes son MoE con 128 expertos enrutados por capa, activación top-8, gating sigmoide y sin experto compartido. La atención alterna 9 capas de atención completa con 39 capas de ventana deslizante de 128 tokens, lo que reduce el coste de atención en contextos largos. El checkpoint original es MiMo-V2.6-Flash-RL de XiaomiMiMo; la variante REAP50 aplica poda de expertos (128 de 256 conservados) y esta conversión GGUF la reempaqueta para llama.cpp.
 
-El proceso de poda emplea HOPE (Higher-Order Pruning of Experts) sobre un corpus de calibracion diverso que abarca codigo, matematicas, texto conversacional y tareas de razonamiento multimodal. A diferencia de los metodos de primer orden que solo consideran frecuencias de activacion, HOPE incorpora terminos de interaccion entre expertos mediante bloques de Hessiana cruzados, aproximando la perdida como la suma de un termino de gradiente mas un termino cuadratico de segundo orden. Con ello se seleccionan los 128 expertos por capa que minimizan la perdida de perplejidad bajo la reduccion del 50% de parametros. Este repositorio no reentrena el modelo: solo convierte y cuantiza el checkpoint podado, repaquetando los bloques MXFP4 directamente en `GGMLQuantizationType.MXFP4` para evitar ciclos de desquantizacion con perdida.
+En cuanto a los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO), la información disponible no los detalla: solo se indica que el modelo original es la variante "RL" de XiaomiMiMo. La innovación técnica destacable de este paquete es la inclusión de tres capas MTP (multi-token prediction) en ficheros separados, destinadas a decodificación especulativa, junto con un proyector multimodal que integra un codificador de visión (28 bloques, proyector `mimovl`) y un codificador de audio (24 bloques, proyector `mimo_audio`, RVQ de 20 codebooks). El fichero principal conserva los expertos como repack directo de los bloques MXFP4 del origen, sin recuantización, mientras que atención, FFN de la capa 0, embeddings y cabeza de salida van en BF16, y normas, routers y attention sinks en F32.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en formato chat.
-- Razonamiento multimodal: procesamiento de imagenes mediante el codificador de vision de 28 capas (parches de 560 px).
-- Procesamiento de audio: representaciones de habla mediante tokenizador RVQ.
-- Prediccion multi-token (MTP) con 3 capas dedicadas, que permiten decodificacion especulativa y aceleracion de la generacion.
-- Cuantizacion híbrida que preserva los expertos sensibles en MXFP4 nativo y comprime el tronco en Q8_0 (perfil Q2_K).
-- Compatibilidad con el pipeline multimodal de llama.cpp mediante proyectores mmproj independientes.
-- Servidor compatible con la API de OpenAI a traves de `llama-server`.
-- Soporte de decodificacion especulativa cargando las cabezas MTP con `--draft-model`.
-- Capacidad de tool calling / function calling: no confirmada en la informacion disponible.
-- Idiomas soportados: no disponible.
+- Generación de texto conversacional y razonamiento multi-turno, con pipeline declarado `image-text-to-text`.
+- Procesamiento de imagen mediante el proyector `mmproj` (codificador de visión de 28 bloques).
+- Procesamiento de audio mediante el codificador de audio incluido en el `mmproj` (RVQ de 20 codebooks).
+- Entrada de vídeo solo a través del checkpoint safetensors: la ruta GGUF no soporta vídeo de forma nativa en `libmtmd`; existe un helper opcional basado en ffmpeg que muestrea fotogramas como imágenes, no probado con este modelo.
+- Decodificación especulativa mediante las tres capas MTP incluidas en ficheros separados (integración con llama.cpp no verificada).
+- Capacidades multilingües: no disponible (no se declaran idiomas en la model card).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue multimodal en hardware de gama alta: cargando el checkpoint MXFP4_MOE en una GPU de 128 GB o en 2x48 GB, se puede ejecutar un asistente que procese simultaneamente imagenes y audio junto a texto.
-- Asistencia conversacional con contexto largo: el modelo base esta pensado para dialogos multi-turno; la cuantizacion Q2_K (61,64 GiB) permite desplegarlo en 3x24 GB o en un Mac de 64-96 GB sin renunciar a la multimodalidad.
-- Aceleracion de inferencia en produccion: las cabezas MTP permiten decodificacion especulativa, util para reducir latencia en servicios de generacion de texto de alto volumen.
-- Analisis de imagenes en pipelines internos: usando `--image` y el proyector mmproj Q8_0, se pueden generar descripciones detalladas de imagenes para catalogacion, accesibilidad o moderacion de contenido.
-- Transcripcion y enriquecimiento de audio: el tokenizador RVQ y la torre de audio permiten integrar el modelo en flujos de procesamiento de habla combinados con razonamiento textual.
-- Servicio de API compatible con OpenAI: mediante `llama-server` se puede exponer el modelo en el puerto 8080 con `-ngl 99` para integrarlo en aplicaciones existentes que ya consumen la API de OpenAI.
-- Investigacion sobre poda de MoE: sirve como referencia para estudiar el impacto de REAP + HOPE comparando el checkpoint podado con el modelo completo.
-- Experimentacion con cuantizacion MXFP4 nativa: util para evaluar la fidelidad bit a bit frente a cuantizaciones tradicionales en llama.cpp.
+- Despliegue local de un modelo multimodal de gran escala: el fichero MXFP4_MOE (86,06 GiB) permite servir texto, imagen y audio desde una sola máquina con memoria unificada amplia o varios GPUs, usando `llama-server` con el `mmproj` BF16.
+- Análisis de documentos con imágenes: el codificador de visión permite pasar capturas, diagramas o páginas escaneadas junto con texto; encaja en flujos de extracción de información donde se necesita un modelo grande sin depender de APIs externas.
+- Transcripción y comprensión de audio: el codificador de audio integrado en el `mmproj` habilita tareas de resumen o pregunta-respuesta sobre clips de audio dentro de llama.cpp.
+- Experimentación con contextos muy largos: la ventana declarada de 1.048.576 tokens y la mezcla de atención completa y deslizante hacen del modelo un candidato para pruebas de recuperación en documentos extensos, siempre que se valide empíricamente porque no hay test needle-in-a-haystack.
+- Investigación sobre poda de expertos: al ser una variante REAP50 con 128 de 256 expertos, sirve para estudiar la degradación de calidad frente al modelo sin podar, comparando el fichero MXFP4 (repack fiel) con el Q2_K mixto.
+- Evaluación de decodificación especulativa con MTP: las capas MTP separadas permiten a investigadores medir la aceleración de generación en llama.cpp una vez resuelta la carga de los ficheros `mtp-*.gguf`.
+- Prototipado de asistentes conversacionales en hardware propio: el fichero Q2_K (61,64 GiB) reduce el requisito de memoria en 24,4 GiB respecto al MXFP4, a costa de recuantizar los expertos gate/up de 4 a 2 bits, con coste de calidad no medido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que los ficheros no se han cargado, servido ni evaluado: no hay perplejidad, KL frente al modelo sin podar, benchmarks generativos o de tareas, pruebas multimodales, pruebas de contexto largo ni mediciones de velocidad o memoria. Cualquier cifra de "~5 tok/s" asociada a la publicación era aritmética de ancho de banda de memoria, no una medición.
 
 ## Requisitos de hardware
 
-- MXFP4_MOE (86,06 GiB): se recomienda 96 GiB o mas de VRAM/RAM; opciones indicadas de 1x 128 GB (por ejemplo NVIDIA Thor) o 2x 48 GB.
-- Q2_K (61,64 GiB): se recomienda 64 GiB o mas; opciones de 3x 24 GB (72 GB en total) o Mac con 64-96 GB de memoria unificada.
-- Proyector multimodal mmproj: 1,46 GiB adicionales en Q8_0 o 2,56 GiB en BF16.
-- Cabezas MTP para decodificacion especulativa: 2,22 GiB adicionales en Q8_0 o 4,17 GiB en BF16.
-- GPU profesionales: el perfil MXFP4_MOE apunta a configuraciones de gama muy alta (128 GB o 2x48 GB). No cabe en una unica RTX 4090 (24 GB) ni siquiera en Q2_K.
-- Consumer GPU: el modelo no cabe en una sola GPU de consumo; requiere configuraciones multi-GPU o equipos Apple Silicon con memoria unificada de 64-96 GB.
-- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server` con `-ngl 99`), con soporte de `--draft-model` para MTP y `--mmproj` para multimodalidad.
-- Latencia y throughput: no disponible.
+- VRAM/memoria para pesos: 86,06 GiB con MXFP4_MOE, 61,64 GiB con Q2_K, más la caché KV, que no se ha medido.
+- Proyector multimodal: 2,56 GiB en BF16 o 1,46 GiB en Q8_0, adicionales a los pesos del modelo.
+- Capas MTP: 4,17 GiB en BF16 o 2,22 GiB en Q8_0, adicionales si se usan para decodificación especulativa.
+- GPU recomendadas: no disponible; el autor apunta a máquinas con memoria unificada grande o configuraciones multi-GPU, sin especificar modelos concretos (A100, H100, RTX 4090, etc.).
+- Viabilidad en GPU de consumo: no confirmada; el tamaño de los pesos excede la VRAM de cualquier GPU de consumo individual, por lo que requiere memoria unificada (por ejemplo, estaciones con memoria compartida CPU-GPU) o varios GPUs.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-quantize`, `convert_hf_to_gguf.py`); el autor no ha probado la carga con ninguna build. Para vídeo o runtimes distintos de llama.cpp, se indica el checkpoint safetensors.
+- Latencia y throughput: no disponibles; no se han realizado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Expertos por capa MoE | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MiMo-V2.6-Flash-REAP50 (este) | 157.356.536.128 (checkpoint base) | 128 de 256 | no disponible | MIT | GGUF, llama.cpp (2 cuantizaciones) |
-| XiaomiMiMo/MiMo-V2.6-Flash (base) | no disponible | 256 de 256 | no disponible | MIT (segun el repo derivado) | checkpoint HF original |
-| patrickbdevaney/MiMo-V2.6-Flash-REAP50 | no disponible | 128 de 256 | no disponible | MIT | safetensors (checkpoint podado) |
-| Alternativas de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Evaluacion |
+|---|---|---|---|---|---|---|
+| MiMo-V2.6-Flash-REAP50-GGUF (este) | ~157B | ~15B | 1.048.576 | MIT | GGUF | No evaluado |
+| MiMo-V2.6-Flash-REAP50 (safetensors) | ~157B | ~15B | 1.048.576 | MIT | safetensors | No evaluado |
+| MiMo-V2.6-Flash-RL (original) | no disponible | no disponible | no disponible | MIT | safetensors | no disponible |
 
-No se dispone de datos de rendimiento ni de modelos alternativos comparables en la informacion proporcionada.
+No se dispone de datos de rendimiento para comparar con alternativas de la misma categoría; la información proporcionada no incluye benchmarks ni modelos comparables evaluados.
 
 ## Limitaciones y advertencias
 
-- La poda del 50% de expertos puede degradar la calidad respecto al modelo original; la model card afirma minimizar la perdida de perplejidad, pero no aporta metricas comparativas.
-- La cuantizacion Q2_K (~3,36 BPW) es agresiva y puede introducir perdida adicional de calidad frente al MXFP4_MOE, pese a que las down-projections se mantienen en MXFP4 nativo.
-- No se especifica la longitud de contexto soportada, lo que complica planificar despliegues con requisitos de contexto largo.
-- No se declaran los idiomas soportados; el soporte multilingue de Espana no puede confirmarse.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; inherente a modelos generativos de este tamano.
-- Sesgos: no documentados en la model card.
-- Los proyectores multimodales y las cabezas MTP se distribuyen en ficheros separados; es necesario cargarlos explicitamente para aprovechar vision, audio o decodificacion especulativa.
-- La licencia declarada es MIT, pero no se detalla si existen restricciones adicionales heredadas del modelo base de Xiaomi; conviene verificar la licencia del checkpoint original antes de uso comercial.
-- La ficha del repositorio indica 0 descargas y 1 like, por lo que el modelo carece de validacion comunitaria amplia.
-- Compatibilidad: al ser un GGUF basado en llama.cpp, requiere una version reciente que soporte `GGMLQuantizationType.MXFP4` y el pipeline multimodal.
-- Las cabezas MTP solo aportan aceleracion si el backend de inferencia soporta decodificacion especulativa con `--draft-model`.
+- Estado sin validar: los ficheros nunca se han cargado, servido ni evaluado; no hay pruebas de calidad, velocidad, memoria ni equivalencia extremo a extremo con el checkpoint safetensors.
+- Contexto no probado: la ventana de 1.048.576 tokens es declarada; la calibración nunca superó los 4.095 tokens.
+- Sin soporte de vídeo en GGUF: `libmtmd` no incluye modalidad de vídeo; el helper opcional con ffmpeg no se ha probado con este modelo.
+- Integración MTP no verificada: no se ha comprobado cómo debe cargar llama.cpp los ficheros `mtp-*.gguf` para decodificación especulativa.
+- Riesgo de calidad por poda: la eliminación de 128 de 256 expertos no tiene medición de degradación frente al modelo sin podar.
+- Q2_K mixto: recuantiza los expertos gate/up de 4 a 2 bits sin matriz de importancia; el coste de calidad no se ha medido.
+- Idiomas soportados no declarados: no hay información sobre cobertura multilingüe.
+- Sesgos y alucinación: no hay documentación específica en la información proporcionada; al ser un modelo conversacional de gran escala, deben aplicarse las precauciones habituales en producción.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías de funcionamiento ni de calidad al no haberse validado los ficheros.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/patrickbdevaney/MiMo-V2.6-Flash-REAP50-GGUF
-- Checkpoint podado base: https://huggingface.co/patrickbdevaney/MiMo-V2.6-Flash-REAP50
-- Modelo original de Xiaomi: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash
-- Metodo REAP (CerebrasResearch): https://github.com/CerebrasResearch/reap
-- Perfil del autor: https://huggingface.co/patrickbdevaney
+- Checkpoint base safetensors: https://huggingface.co/patrickbdevaney/MiMo-V2.6-Flash-REAP50
+- Modelo original: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Paper referenciado en los tags: arxiv:2510.13999 (https://arxiv.org/abs/2510.13999)
+- llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,109 +2,101 @@
 
 ## Resumen
 
-`francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455` es un modelo de generacion de texto de tipo decoder-only, con arquitectura etiquetada como `gpt2` en Hugging Face y 124.770.816 parametros reales verificados en los pesos safetensors. Es un ajuste fino (SFT) del modelo `francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455`, realizado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. Por tamano, se situa en la misma clase que GPT-2 small (124M), es decir, un modelo pequeno que cabe en cualquier GPU de consumo e incluso en CPU.
+El modelo `nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455` es un ajuste fino (SFT) de un modelo base de la familia GPT-2, desarrollado por el usuario de Hugging Face `francesca9805` (vinculado a la Universidad de Groningen segun la URL del proyecto en Weights & Biases). Con 124.770.816 parametros totales, se trata de un modelo pequeno orientado a generacion de texto, entrenado mediante la libreria TRL sobre el checkpoint del modelo base `francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455`. El identificador sugiere un trabajo experimental de tokenizacion y modelado de lenguaje sobre neerlandes (prefijo `nld`) en escritura latina, con un corpus de aproximadamente 100 MB y un checkpoint intermedio (paso 500).
 
-El identificador del modelo aporta pistas sobre su procedencia: `nld-latn` sugiere neerlandes en escritura latina, `100mb` apunta a un corpus de entrenamiento de unos 100 MB y el sufijo `ckpt500_seed455` indica que se trata de un checkpoint intermedio (posiblemente el paso 500) de una ejecucion con semilla 455. Se enmarca en un proyecto de investigacion sobre tokenizadores y modelos pequenos multilingues, como refleja el nombre del proyecto de Weights & Biases (`new-tokenizers`) del autor.
+El modelo resuelve el problema generico de generacion de texto autoregresiva y parece formar parte de una linea de investigacion sobre tokenizadores y preentrenamiento a pequena escala, mas que un modelo listo para produccion. Su relevancia actual es limitada fuera del contexto academico: no dispone de model card sustantiva, licencia declarada ni datos de evaluacion publicados, y su tamano lo situa en la categoria de modelos que caben holgadamente en GPU de consumo.
 
-Su relevancia es acotada: no es un modelo de proposito general ni compite con LLMs actuales. Es un artefacto de investigacion util para estudiar el efecto del preentrenamiento continuado y del SFT en modelos de 124M, para reproducir experimentos de TRL y para validar pipelines de inferencia con modelos minúsculos. No se han publicado resultados de evaluacion, la licencia no esta especificada y las capacidades reales del modelo no estan documentadas mas alla de la etiqueta `text-generation`.
+La informacion disponible es escasa y proviene casi exclusivamente de los metadatos de Hugging Face y de una model card minima generada automaticamente por TRL. Cualquier dato no confirmado en esas fuentes se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, etiquetada como `gpt2` en Hugging Face |
-| Parametros totales | 124.770.816 (dato real de safetensors) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; sin variantes GGUF, int8 ni int4 oficiales) |
-| Idiomas soportados | no disponible (el identificador `nld-latn` sugiere neerlandes en alfabeto latino, sin confirmar en la model card) |
+| Arquitectura | GPT-2 (transformer decoder-only), segun tag `gpt2` |
+| Parametros totales | 124.770.816 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (los modelos GPT-2 de este tamano suelen usar 1024 tokens, pero no se confirma en la informacion) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantizacion estandar via transformers/bitsandbytes, no confirmado por el autor) |
+| Idiomas soportados | no disponible (el prefijo `nld` sugiere neerlandes, sin confirmacion oficial) |
 | Licencia | no disponible (la model card incluye un campo `licence: license` sin contenido) |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 5,5 GB |
 | Libreria | transformers |
-| Pipeline | text-generation |
+| Framework de entrenamiento | TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1 |
+| Metodo de entrenamiento | SFT (supervised fine-tuning) |
 | Modelo base | francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455 |
-| Metodo de ajuste | SFT con TRL 0.23.0 |
+| Tamano del repositorio | 25.0 GB |
+| Descargas | 2516 |
+| Likes | 0 |
 | Fecha de creacion | 2026-10-20 |
+| Ultima actualizacion | 2026-11-03 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de tipo GPT-2, con 124.770.816 parametros. La etiqueta `gpt2` de Hugging Face indica compatibilidad con la clase `GPT2LMHeadModel` de Transformers, lo que implica atencion causal estandar y generacion autorregresiva. No hay informacion en la model card sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni sobre la longitud de contexto con la que fue entrenado; estos datos habria que extraerlos del `config.json` del repositorio.
+La arquitectura corresponde a un transformer decoder-only de tipo GPT-2, tal como indica el tag `gpt2` del repositorio. Con 124,77 millones de parametros, encaja en la configuracion clasica de GPT-2 small (124M). El modelo es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455`, realizado con TRL 0.23.0 sobre PyTorch 2.11.0 y Transformers 4.56.2. El identificador del modelo base sugiere un preentrenamiento sobre un corpus de aproximadamente 100 MB en neerlandes (`nld`) con escritura latina (`latn`), con variantes de tokenizacion (`ppt`, `mp`, `struct`, `bcc`) y una semilla concreta (`seed455`).
 
-El modelo es el resultado de un ajuste supervisado (SFT) con TRL sobre un checkpoint ya preentrenado del autor. El nombre del modelo base (`ppt-mp-struct-bcc-100mb`) sugiere una fase previa de preentrenamiento continuado sobre un corpus de 100 MB, posiblemente con objetivos de modelado enmascarado y estructurado, aunque la model card no lo documenta. La ejecucion de entrenamiento esta registrada en Weights & Biases (run `jzhmxn90`, proyecto `new-tokenizers`). No se especifican el numero de tokens de SFT, la composicion del dataset de ajuste, ni si se aplicaron tecnicas de RLHF o DPO; solo se confirma el uso de SFT.
+No se dispone de informacion sobre el numero de tokens de entrenamiento del ajuste fino, la composicion del dataset de SFT, ni si se aplicaron tecnicas adicionales como RLHF o DPO (la model card solo menciona SFT). Tampoco se documentan innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El entrenamiento esta registrado en un proyecto de Weights & Biases bajo el nombre `new-tokenizers`, lo que refuerza la hipotesis de que el modelo forma parte de un estudio sobre tokenizadores para lenguas de bajos recursos.
 
 ## Capacidades
 
-- Generacion de texto autorregresiva: es la unica capacidad declarada explicitamente en la model card (pipeline `text-generation`).
-- Formato conversacional basico: el ejemplo de la model card pasa una lista de mensajes con rol `user`, lo que indica que el tokenizador o la plantilla admiten ese formato de entrada, aunque no se detalla la plantilla exacta.
-- Compatibilidad con Text Generation Inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican que el modelo puede servirse con TGI y con Inference Endpoints de Hugging Face.
-- Idoneidad para fine-tuning adicional: al ser un modelo de 124M en safetensors, se puede reajustar en una sola GPU de consumo.
-- Capacidades multilingues: no documentadas; el identificador sugiere orientacion al neerlandes, pero no hay confirmacion.
-- Tool calling, function calling, agentes, razonamiento multi-paso, vision, audio o modo thinking: no disponibles; no hay evidencia de ninguna de estas capacidades en un modelo de este tamano y con esta model card.
+- Generacion de texto autoregresiva en el estilo de GPT-2, con soporte para prompts conversacionales en formato de chat (la model card muestra un ejemplo con `[{"role": "user", "content": ...}]`).
+- Ajuste fino supervisado (SFT) sobre el modelo base, orientado presumiblemente a seguir instrucciones o completar tareas de generacion.
+- Compatible con `transformers.pipeline("text-generation")` y con Text Generation Inference (tag `text-generation-inference`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
+- Capacidades multilingues: no confirmadas; el identificador apunta a neerlandes pero no hay declaracion oficial.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Modo thinking, vision o audio: no disponible (no se declara ninguna capacidad multimodal).
 
 ## Casos de uso
 
-- Reproduccion de experimentos de SFT con TRL: el modelo sirve como punto de partida y como referencia de resultado para validar la configuracion de TRL 0.23.0 y Transformers 4.56.2 en un entorno conocido.
-- Investigacion sobre preentrenamiento continuado en lenguas de bajos recursos: permite comparar el efecto del SFT sobre un checkpoint preentrenado con 100 MB de datos, util para estudiar rendimiento frente a tamano de corpus en modelos pequenos.
-- Pruebas de pipelines de inferencia: con 124M de parametros es un banco de pruebas barato para validar despliegues con TGI, vLLM, llama.cpp u Ollama antes de pasar a modelos mayores.
-- Generacion de texto en neerlandes para prototipos internos: si se confirma la orientacion `nld`, puede emplearse para generar borradores o completar frases en tareas no criticas, siempre con revision humana.
-- Generacion de datos sinteticos a pequena escala: util para aumentar datasets de entrenamiento o de evaluacion en experimentos academicos donde no se requiere alta calidad linguistica.
-- Docencia y formacion: modelo lo bastante pequeno para ejecutarse en portatiles y explicar en clase el ciclo completo de preentrenamiento, SFT y despliegue.
-- Evaluacion de tokenizadores: encaja en el proyecto `new-tokenizers` del autor para medir el impacto de distintas tokenizaciones en la calidad de generacion de modelos de 124M.
-- Servicio de bajo coste en CPU: para tareas de completado de texto muy simples con latencia tolerable, se puede desplegar sin GPU.
+- Experimentacion academica con tokenizadores: el modelo puede usarse como punto de comparacion en estudios sobre segmentacion subword para neerlandes, dado que su nombre codifica variantes de tokenizacion (`ppt`, `mp`, `struct`, `bcc`) y semilla.
+- Generacion de texto de dominio general en neerlandes: si se confirma el idioma, podria emplearse para completar frases o parrafos en tareas de demostracion, aunque sin garantias de calidad por falta de evaluacion.
+- Prototipado rapido de pipelines de generacion: su tamano (124M) permite cargarlo en CPU o GPU de gama baja para validar integraciones con `transformers` o TGI antes de migrar a modelos mayores.
+- Fine-tuning posterior como base: al ser un modelo pequeno y con pesos en safetensors, sirve como punto de partida para experimentos de SFT adicionales con TRL en entornos con recursos limitados.
+- Docencia y formacion: util para ilustrar el flujo completo de preentrenamiento, SFT y publicacion en Hugging Face con seguimiento en Weights & Biases.
+- Pruebas de infraestructura de despliegue: su reducido footprint permite validar configuraciones de TGI, endpoints compatibles y pipelines de inferencia sin consumir GPUs de alta gama.
+- Generacion de texto sintetico para aumento de datos en experimentos controlados, siempre que se valide la calidad de las muestras.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card no incluye metricas de MMLU, HumanEval, GSM8K, perplexity ni ninguna otra evaluacion, y el repositorio no referencia ningun paper ni informe tecnico con resultados.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos mas cache de activaciones y KV):
-  - fp32: aproximadamente 500 MB.
-  - fp16/bf16: aproximadamente 250 MB.
-  - int8: aproximadamente 125 MB.
-  - int4: aproximadamente 65-70 MB.
-- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; por ejemplo GTX 1650, RTX 3060, RTX 4060, RTX 4090, A100 o H100. Las GPU de datacenter no aportan ventaja practica por el reducido tamano del modelo.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU consumer modernas, y tambien en CPU (con latencias mayores).
-- Opciones de despliegue:
-  - `transformers` con `pipeline("text-generation")`, tal como muestra la model card.
-  - Text Generation Inference (TGI), segun la etiqueta `text-generation-inference`.
-  - Inference Endpoints de Hugging Face, segun la etiqueta `endpoints_compatible`.
-  - vLLM, llama.cpp u Ollama, previa conversion de los pesos (no hay GGUF publicado en el repositorio).
-- Latencia y throughput: no disponibles. No hay mediciones publicadas; por el tamano del modelo se espera un throughput alto en GPU, pero no se aportan cifras verificables.
+- VRAM estimada para inferencia en fp32: aproximadamente 500 MB solo para pesos (124,77M x 4 bytes), mas overhead de activaciones y cache KV.
+- VRAM estimada en fp16/bf16: aproximadamente 250 MB para pesos.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 125 MB; en 4 bits, aproximadamente 65 MB (estimaciones teoricas, no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobradamente suficiente; tambien cabe en CPU para inferencia por lotes pequenos.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 1-2 GB de VRAM libre, e incluso en CPU.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), Text Generation Inference (tag `text-generation-inference`), endpoints compatibles de Hugging Face. No se confirma soporte para llama.cpp, Ollama o vLLM en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas provienen de informacion publica de cada modelo, no de la model card analizada.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455 | 124,77M | no disponible | no disponible | Hugging Face | SFT sobre GPT-2 small, orientado a neerlandes |
+| GPT-2 small (OpenAI) | 124M | 1024 | MIT | Hugging Face, OpenAI | Referencia clasica de la misma arquitectura y tamano |
+| GPT-2 small ajustado (variantes comunitarias) | ~124M | 1024 | variable | Hugging Face | Multiples fine-tunes comunitarios; comparacion generica |
+| Modelos neerlandeses de mayor tamano (p. ej. variantes de GPT-2/GPT-Ne) | variable | variable | variable | Hugging Face | No se dispone de datos concretos en la informacion proporcionada |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible en Hugging Face |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible en Hugging Face |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Ampliamente disponible en Hugging Face |
-
-La comparacion relevante es con GPT-2 small: mismo orden de magnitud de parametros, pero el modelo analizado carece de evaluacion publica, de licencia declarada y de contexto documentado, lo que limita su uso fuera de experimentacion. DistilGPT-2 es una alternativa mas ligera y con licencia clara para prototipos; GPT-2 medium ofrece mas capacidad a costa de triplicar el tamano.
+La comparacion se limita a la arquitectura y el tamano, ya que no hay benchmarks publicados para el modelo evaluado. No se dispone de datos verificados de alternativas neerlandesas especificas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluacion: no hay benchmarks, ni perplexity, ni evaluacion cualitativa publicada; se desconoce la calidad real de las generaciones.
-- Licencia no especificada: el campo de licencia de la model card esta vacio, lo que impide determinar si el uso comercial esta permitido. No debe usarse en produccion sin aclarar este punto con el autor.
-- Idiomas no declarados: no se confirma que el modelo funcione correctamente en neerlandes ni en ningun otro idioma, pese a lo que sugiere el identificador.
-- Riesgo elevado de alucinacion y de texto incoherente: con 124M de parametros y un corpus de entrenamiento de 100 MB, la coherencia a partir de pocas decenas de tokens sera limitada.
-- Sesgos desconocidos: no se documenta la composicion del corpus de preentrenamiento ni del dataset de SFT, por lo que no se pueden evaluar sesgos de genero, etnicos o culturales.
-- Contexto no documentado: se desconoce la ventana efectiva; asumir 1024 tokens por la etiqueta `gpt2` es una suposicion no verificada.
-- Checkpoint intermedio: el sufijo `ckpt500` sugiere que no es el modelo final de la ejecucion, sino un punto de control intermedio, lo que puede implicar menor calidad que el checkpoint final.
-- Repositorio de 5,5 GB para 124M de parametros: el peso en fp32 seria de unos 500 MB, por lo que el repositorio probablemente incluye estados de optimizador u otros artefactos; conviene revisar el contenido antes de descargarlo.
-- Sin garantias de soporte: el autor no ofrece documentacion, demos ni issues resueltos; 0 descargas y 0 likes indican un artefacto de investigacion sin comunidad.
-- Fecha de creacion atipica (2026-10-20): conviene verificar la procedencia del repositorio antes de integrarlo en cualquier flujo.
+- Ausencia de model card sustantiva: no se documentan datos de entrenamiento, evaluacion ni limitaciones conocidas.
+- Licencia no declarada: el campo `licence: license` esta vacio, por lo que el uso comercial no esta autorizado de forma explicita y requiere contactar con el autor.
+- Riesgo de alucinacion: al ser un modelo GPT-2 de 124M con SFT, es probable que genere texto plausible pero factualmente incorrecto; no hay evaluacion que lo cuantifique.
+- Idiomas: no se confirma oficialmente el neerlandes ni ningun otro idioma; el rendimiento fuera del dominio de entrenamiento sera previsiblemente pobre.
+- Contexto limitado: aunque no se confirma, los modelos de esta familia suelen tener ventanas de 1024 tokens, insuficientes para tareas de contexto largo.
+- Sin datos de sesgos: no se ha publicado ningun analisis de sesgos, toxicidad o seguridad.
+- Repositorio de 25 GB: el peso del repositorio es desproporcionado para 124M de parametros, lo que sugiere la presencia de checkpoints intermedios u otros artefactos; conviene revisar los archivos antes de descargar.
+- Modelo experimental: el nombre codifica una semilla y un checkpoint concretos, lo que indica que no es una version final ni estable.
+- Sin soporte comunitario: 0 likes y ausencia de issues o discusiones documentadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455
+- Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/07px48yu
 - Repositorio de TRL: https://github.com/huggingface/trl
-- Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jzhmxn90
-- Paper de TRL (cita incluida en la model card): von Werra et al., "TRL: Transformer Reinforcement Learning", 2020.

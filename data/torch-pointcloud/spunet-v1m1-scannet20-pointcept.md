@@ -2,85 +2,99 @@
 
 ## Resumen
 
-SpUNet-v1m1.scannet20.pointcept es un modelo de segmentación semántica de nubes de puntos basado en una U-Net con convoluciones dispersas (sparse convolutional U-Net), publicado por el proyecto torch-pointcloud (PyTorch PointCloud). El modelo fue entrenado sobre el dataset ScanNet, restringido a 20 clases de objetos y superficies típicas de escenas interiores, y está diseñado para asignar una etiqueta semántica a cada punto de una nube 3D. Con aproximadamente 39,2 millones de parámetros y una entrada de 6 canales (posición, color y normales), ofrece un equilibrio razonable entre precisión y coste computacional para tareas de percepción 3D.
+SpUNet-v1m1.scannet20.pointcept es un modelo de segmentación semántica de nubes de puntos 3D basado en una U-Net con convoluciones dispersas (sparse convolutions), implementada sobre la librería Minkowski Engine. Lo publica el proyecto `torch-pointcloud` (Arthur Dujardin) como un checkpoint convertido desde el repositorio Pointcept, con el objetivo de ofrecer una implementación reproducible y empaquetada en PyTorch del clásico SpUNet para la comunidad de visión 3D.
 
-El modelo se distribuye bajo licencia MIT, lo que facilita su integración en proyectos comerciales y de investigación. Su relevancia actual radica en que proporciona un checkpoint preentrenado listo para usar dentro del ecosistema torch-pointcloud, que unifica la carga de modelos mediante una factoría `create_model` similar a la de timm. Esto permite a desarrolladores e investigadores obtener un segmentador de escenas interiores sin necesidad de entrenar desde cero, y también extraer características 3D para tareas posteriores.
+El modelo está entrenado sobre ScanNet con 20 clases semánticas de interiores (suelo, pared, silla, mesa, etc.) y cuenta con 39,2 millones de parámetros. Recibe nubes de puntos con 6 canales de entrada (coordenadas XYZ más color RGB) y predice una etiqueta por punto. Es relevante porque proporciona un baseline sólido y ligero para tareas de segmentación de escenas interiores, con métricas publicadas de mIoU 75,67 y exactitud global (OA) 91,28 sobre el conjunto de evaluación de ScanNet.
 
-La arquitectura SpUNet se apoya en convoluciones dispersas, una técnica que solo procesa las posiciones ocupadas de la nube de puntos, reduciendo drásticamente el coste de cómputo frente a las convoluciones densas. El modelo alcanza un mIoU de 71,81 en ScanNet (20 clases), ligeramente por debajo de la referencia de 75,67 reportada por el autor del checkpoint, aunque sigue siendo competitivo para aplicaciones prácticas.
+La arquitectura sigue el diseño de las 4D Spatio-Temporal ConvNets de Choy et al. (CVPR 2019), aplicando convoluciones sobre una rejilla dispersa para procesar eficientemente nubes de puntos de gran tamaño sin voxelizar densamente toda la escena. El checkpoint se distribuye en formato safetensors bajo licencia MIT, con un tamaño de repositorio de 0,2 GB.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SpUNet (U-Net con convoluciones dispersas) |
+| Arquitectura | SpUNet (U-Net con convoluciones dispersas sobre Minkowski Engine) |
 | Parametros totales | 39.174.996 (39,2 M) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de nubes de puntos, no de texto) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de nube de puntos, no secuencial) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica (datos 3D, sin procesamiento de lenguaje) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
+| Canales de entrada | 6 (XYZ + RGB) |
+| Clases de salida | 20 |
+| Caracteristicas internas | 96 |
+| Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
-SpUNet es una arquitectura de tipo U-Net adaptada a datos 3D dispersos. En lugar de operar sobre vóxeles densos, utiliza convoluciones dispersas (sparse convolutions) que solo computan sobre las posiciones ocupadas de la nube de puntos, lo que reduce el coste de memoria y tiempo de ejecución en comparación con métodos densos. El modelo se compone de un encoder que reduce la resolución espacial progresivamente y un decoder que la recupera, con conexiones de salto para preservar detalles de alta frecuencia. Este diseño es especialmente eficaz en escenas interiores donde la densidad de puntos varía significativamente.
+El modelo es una SpUNet, es decir, una U-Net compuesta por bloques de convolución dispersa 3D implementados con Minkowski Engine. En lugar de operar sobre una rejilla densa, las convoluciones se aplican únicamente sobre las posiciones ocupadas de la nube de puntos, lo que reduce drásticamente el coste computacional y de memoria en escenas grandes. La red recibe un tensor de características de 6 canales por punto (posición XYZ y color RGB) y produce un logit por clase y punto, con una representación interna de 96 características por punto.
 
-El entrenamiento se realizó sobre el dataset ScanNet, que contiene reconstrucciones 3D de escenas interiores con anotaciones semánticas por punto en 20 categorías (paredes, suelo, puertas, sillas, mesas, etc.). No se especifica el número exacto de tokens ni la composición del dataset, pero ScanNet es un estándar en la comunidad de visión 3D. El checkpoint se convirtió desde el repositorio Pointcept (MIT) y se integró en la librería torch-pointcloud, que proporciona la factoría de modelos, transforms y utilidades de carga. No se menciona el uso de RLHF, DPO ni otras técnicas de ajuste por refuerzo, ya que se trata de un modelo puramente supervisado para segmentación.
+El entrenamiento se realizó sobre ScanNet, un dataset de reconstrucciones 3D de interiores con anotaciones semánticas densas por punto, restringido a 20 clases. No se dispone de información detallada sobre el número de tokens, composición exacta del dataset, esquema de aumentación de datos ni si se aplicaron técnicas de refinamiento posteriores. El checkpoint es una conversión del modelo original de Pointcept al formato de la librería `torch-pointcloud`, que empaqueta los pesos y las transformaciones de preprocesado necesarias para la inferencia.
 
 ## Capacidades
 
-- Segmentación semántica de nubes de puntos: asigna una de 20 clases de ScanNet a cada punto de la entrada.
-- Extracción de características 3D: mediante `forward_features` se pueden obtener embeddings de 96 dimensiones por punto, útiles para tareas de clasificación o detección posteriores.
-- Soporte para entradas multimodales: acepta posición (x, y, z), color (RGB) y normales como canales de entrada (6 canales en total).
-- Entrenamiento previo en escenas interiores: el modelo está especializado en entornos domésticos y de oficina, con las 20 clases típicas de ScanNet.
-- Integración con el ecosistema torch-pointcloud: carga sencilla mediante `tp.create_model`, compatible con transforms y collate de la librería.
-- Reajuste del clasificador: permite resetear la cabeza de clasificación (`reset_classifier`) para adaptar el modelo a un número distinto de clases mediante fine-tuning.
+- Segmentación semántica por punto de nubes de puntos 3D de escenas interiores en 20 clases de ScanNet.
+- Procesamiento de nubes de puntos con información de color (6 canales de entrada).
+- Extracción de características por punto mediante `forward_features`, con salida de 96 dimensiones por punto.
+- Posibilidad de eliminar la cabeza de clasificación (`reset_classifier(num_classes=0)`) para usar el modelo como extractor de representaciones.
+- Inferencia por lotes con collate de múltiples nubes de puntos.
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades multilingües: es un modelo puramente perceptivo de visión 3D.
+- No dispone de modo thinking, visión 2D, audio ni generación de texto.
 
 ## Casos de uso
 
-- Navegación robótica en interiores: un robot móvil puede usar el modelo para segmentar en tiempo real las superficies y objetos de una habitación (suelo, paredes, sillas, mesas) y planificar rutas evitando obstáculos. Su tamaño moderado permite ejecutarlo en GPUs de gama media.
-- Reconstrucción 3D semántica: integrado en pipelines de fotogrametría o SLAM, el modelo etiqueta cada punto de la nube generada, produciendo un mapa semántico del entorno útil para aplicaciones de realidad aumentada o gestión de activos.
-- Análisis de espacios para arquitectura: los estudios de arquitectura pueden segmentar escaneos láser de edificios para identificar automáticamente elementos estructurales (muros, suelos, techos) y facilitar la documentación o el modelado BIM.
-- Preparación de datos para entrenamiento de otros modelos: las características extraídas mediante `forward_features` pueden servir como entrada para detectores de objetos 3D o clasificadores de escenas, reduciendo la cantidad de datos etiquetados necesarios.
-- Automatización de inventarios en almacenes: en entornos logísticos, el modelo puede distinguir estanterías, cajas y pasillos, ayudando a gestionar el espacio y a localizar mercancías mediante nubes de puntos capturadas con sensores de profundidad.
-- Inspección de obra y control de calidad: en construcción, se puede segmentar un escaneo 3D de una estancia para verificar que los elementos instalados coinciden con el diseño (puertas, ventanas, tabiques), comparando la segmentación con el modelo BIM.
+- Segmentación de escenas interiores para robótica móvil: el modelo etiqueta suelo, paredes, muebles y otros elementos de una nube de puntos capturada por LiDAR o RGB-D, permitiendo a un robot de interior construir mapas semánticos y planificar la navegación.
+- Anotación asistida de datos 3D: preetiquetar nubes de puntos de nuevos escaneos para que anotadores humanos solo revisen y corrijan, reduciendo el coste de crear datasets de segmentación semántica.
+- Reconstrucción y modelado BIM: clasificar elementos estructurales y mobiliario en escaneos de edificios para generar modelos semánticos de interiores.
+- Realidad aumentada y mixta: identificar superficies y objetos en la escena capturada por el dispositivo para anclar contenido virtual de forma coherente con el entorno.
+- Extracción de características para tareas downstream: usar la salida de 96 dimensiones por punto como entrada de clasificadores de escena, detección de objetos 3D o modelos de registro de nubes de puntos.
+- Automatización de inventario en interiores: segmentar objetos y mobiliario en escaneos de oficinas o almacenes para tareas de inventariado y análisis de ocupación.
+- Investigación en visión 3D: servir como baseline reproducible de SpUNet sobre ScanNet 20 para comparar nuevas arquitecturas de segmentación de nubes de puntos.
 
 ## Benchmarks y rendimiento
 
-El autor del checkpoint declara el siguiente resultado en el model-index de Hugging Face:
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Tarea | Dataset | Métrica | Valor |
-|---|---|---|---|
-| Segmentación de nubes de puntos | ScanNet (20 clases) | mIoU | 71,81 |
+| Metrica | Dataset | Valor |
+|---|---|---|
+| mIoU | ScanNet (20 clases) | 75,67 |
+| OA (exactitud global) | ScanNet (20 clases) | 91,28 |
 
-La model card indica que la referencia del propio autor es 75,67 de mIoU, por lo que el checkpoint publicado obtiene un valor ligeramente inferior. No se proporcionan comparaciones con otros modelos en la información disponible.
+No se han publicado en la información disponible resultados adicionales de benchmarks ni comparativas con otros modelos.
 
 ## Requisitos de hardware
 
-- No se especifica la VRAM mínima en la documentación, pero con 39,2 millones de parámetros y entrada de 8192 puntos, el consumo de memoria es modesto. En la práctica, una GPU con 8 GB de VRAM debería ser suficiente para inferencia, aunque depende del tamaño de la nube y del uso de spconv.
-- GPU recomendada: cualquier GPU NVIDIA con soporte CUDA y una versión de spconv compatible con la de PyTorch. Modelos como RTX 3060, RTX 4060 o superiores son adecuados. Para entrenamiento o fine-tuning se recomienda al menos 12 GB de VRAM.
-- El modelo cabe en GPUs de consumo general, siempre que se tenga instalada la extensión spconv, que requiere compilación específica para la versión de torch y CUDA.
-- Opciones de despliegue: la librería torch-pointcloud ofrece la factoría `create_model` y transforms integradas. No se mencionan herramientas como vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
-- Latencia y throughput: no se han publicado cifras oficiales. En una GPU moderna, la inferencia sobre 8192 puntos debería completarse en decenas de milisegundos, pero depende del hardware y de la optimización de spconv.
+- El modelo requiere GPU: los kernels de `spconv` / Minkowski Engine son exclusivos de CUDA, según indica la model card (`model.cuda().eval()  # GPU-only kernels`).
+- VRAM estimada: no disponible de forma oficial. Con 39,2 M de parámetros, el peso de los pesos en FP32 ronda los 157 MB; el consumo real depende del número de puntos de entrada y de la implementación de convoluciones dispersas.
+- GPU recomendadas: no disponible. Por tamaño del modelo, cualquier GPU NVIDIA con soporte CUDA moderno (por ejemplo, RTX 3090, RTX 4090, A100, H100) debería poder ejecutarlo; no se han publicado mediciones específicas.
+- Cabe en GPU de consumo: probablemente sí por tamaño de parámetros, aunque no hay datos oficiales de VRAM pico durante la inferencia.
+- Opciones de despliegue: librería `torch-pointcloud` con `spconv` compilado para la versión de PyTorch y CUDA correspondiente. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de segmentación de nubes de puntos en la información proporcionada. El checkpoint es una conversión de un modelo entrenado con Pointcept, y su arquitectura SpUNet es similar a otras basadas en convoluciones dispersas como MinkowskiNet. Sin embargo, no se han facilitado resultados comparativos en otros datasets ni frente a alternativas concretas, por lo que no es posible elaborar una tabla comparativa fiable.
+No se dispone en la información proporcionada de datos de rendimiento de modelos comparables (por ejemplo, otras variantes de SpUNet, PointNet++ o MinkowskiNet sobre ScanNet 20), por lo que no es posible establecer una comparativa cuantitativa fiable.
+
+| Modelo | Parametros | Dataset | mIoU | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| spunet-v1m1.scannet20.pointcept | 39,2 M | ScanNet 20 | 75,67 | MIT | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado exclusivamente en escenas interiores de ScanNet, por lo que su rendimiento en entornos exteriores o con clases no presentes en las 20 categorías será deficiente.
-- La mIoU de 71,81 es inferior a la referencia de 75,67 reportada por el autor original, lo que sugiere una ligera pérdida de precisión en la conversión o en el proceso de entrenamiento del checkpoint.
-- Depende de la librería spconv, que requiere una compilación específica según la versión de PyTorch y CUDA. Esto puede complicar la instalación en entornos con versiones no estándar.
-- Los kernels son exclusivos de GPU; no es posible ejecutar el modelo en CPU.
-- No se han documentado sesgos específicos, pero el dataset ScanNet está limitado a escenas interiores capturadas con RGB-D, lo que puede introducir sesgos hacia ciertos tipos de iluminación, mobiliario y disposiciones espaciales.
-- Aunque la licencia MIT permite uso comercial, es responsabilidad del usuario verificar que el uso de los datos de ScanNet cumple con su propia licencia (ScanNet tiene términos de uso específicos para investigación).
+- Modelo especializado exclusivamente en segmentación semántica de nubes de puntos de interiores; no es un modelo de lenguaje ni un modelo multimodal general.
+- Entrenado solo sobre ScanNet con 20 clases: el vocabulario semántico está cerrado y no generaliza a clases no vistas ni a dominios muy distintos (exteriores, industria, conducción autónoma).
+- Dependencia de `spconv` con una compilación que coincida con la versión de PyTorch y CUDA del entorno, lo que añade fricción en el despliegue y en la reproducibilidad.
+- Requiere GPU con CUDA; no hay soporte documentado de inferencia en CPU.
+- Las métricas publicadas (mIoU 75,67, OA 91,28) figuran como no verificadas en el model-index; conviene validarlas en el propio pipeline antes de usarlas como referencia.
+- No se documentan sesgos específicos, pero al entrenarse en interiores de ScanNet puede heredar sesgos de composición de escenas y de distribución geográfica del dataset.
+- Riesgo de predicciones erróneas en puntos con oclusión, ruido de sensor o geometría ambigua; no se aportan estimaciones de calibración ni de incertidumbre.
+- Licencia MIT, que permite uso comercial y modificación, pero se recomienda revisar las licencias de las dependencias (spconv, Minkowski Engine) y del dataset ScanNet para usos comerciales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/spunet-v1m1.scannet20.pointcept
-- Organización torch-pointcloud en Hugging Face: https://huggingface.co/torch-pointcloud
-- Repositorio PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Repositorio Pointcept: https://github.com/Pointcept/Pointcept
-- Paper de Minkowski Convolutional Neural Networks (arquitectura base): https://arxiv.org/abs/1904.08755
-- Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/installation/
+- Paper de referencia (4D Spatio-Temporal ConvNets: Minkowski Convolutional Neural Networks): https://arxiv.org/abs/1904.08755
+- Repositorio Pointcept (origen del checkpoint): https://github.com/Pointcept/Pointcept
+- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Guía de instalación de torch-pointcloud (incluye spconv): https://pytorch-pointcloud.org/latest/installation/

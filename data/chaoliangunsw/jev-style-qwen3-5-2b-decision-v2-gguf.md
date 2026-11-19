@@ -2,151 +2,113 @@
 
 ## Resumen
 
-Jev-Style-Qwen3.5-2B-Decision-v2-GGUF es la distribucion cuantizada en formato GGUF de un modelo de decision de 1.880 millones de parametros desarrollado por chaoliangUNSW. No es un modelo generativo de proposito general: su funcion es recibir un estado, una pregunta y una lista de opciones cerradas, y devolver en un unico prefill la opcion seleccionada junto con probabilidades calibradas. El repositorio contiene tres builds (Q4_K_M, Q8_0 y BF16) con calibracion ajustada de forma independiente para cada una.
+Jev-Style-Qwen3.5-2B-Decision-v2 es un modelo de decisión y clasificación de texto construido sobre un backbone Qwen3.5 de 2B parámetros (1.881.825.088 parámetros reales) y ajustado mediante LoRA de rango 32 por Chaoliang Yan (chaoliangUNSW). Su función no es la generación libre de texto, sino recibir un estado, una pregunta y una lista cerrada de opciones, y devolver una opción seleccionada junto con probabilidades calibradas en un único prefill. Está pensado para routing, clasificación y scoring de elección fija en entornos locales.
 
-El modelo parte de un backbone de texto de clase 2B de la familia Qwen3.5 y se ha adaptado mediante LoRA de rango 32 durante 36,9 minutos de entrenamiento principal en una unica H100 de 80 GB. El resultado declarado es un 81,20 % de exactitud macro en un panel de referencia en ingles con 3.277 decisiones y 11 grupos de tarea, frente al 76,68 % de su version v1 y al 75,09 % de English Laya. Ademas de la exactitud, la model card insiste en la calidad probabilistica: NLL de 0,5154, Brier de 0,2787 y una tasa de inversion por permutacion de opciones del 6,00 %.
+El repositorio que nos ocupa contiene los pesos en formato GGUF (Q4_K_M, Q8_0 y BF16), lo que permite ejecutarlo con llama.cpp en hardware modesto. Es una release archivada (v2, publicada el 23 de septiembre de 2026) que se mantiene por compatibilidad con integraciones existentes: el paquete `jev-style` actual no la carga, sino que sirve las versiones v3 y v4. La v2 no utilizó salidas de Jev en su entrenamiento, a diferencia de la v4, que incorpora etiquetas suaves destiladas de TypeSafe Jev 1.14.
 
-Su relevancia practica esta en el nicho de enrutado, clasificacion y eleccion tipada con confianza explotable: al emitir probabilidades calibradas, permite fijar umbrales de decision y derivar a un humano o a un modelo mayor cuando la confianza es baja. La contrapartida es que solo esta evaluado y declarado en ingles, no publica longitud de contexto y su licencia Apache 2.0 facilita el uso comercial.
+Su relevancia actual es doble: por un lado, documenta un caso de calibración de probabilidades en modelos pequeños con métricas explícitas (NLL, Brier, ECE) y comparación entre precisiones de cuantización; por otro, sirve como referencia de un patrón de despliegue de clasificadores locales de bajo coste frente a APIs hospedadas. El modelo declara licencia Apache 2.0 y soporte únicamente de inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder sobre backbone de texto de clase 2B de la familia Qwen3.5; detalles de capas y atencion no disponibles |
-| Parametros totales | 1.881.825.088 (1,88 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M, GGUF Q8_0 y GGUF BF16, cada uno con calibracion ajustada de forma independiente |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer decoder-only (backbone Qwen3.5 de clase 2B) con cabeza de decisión sobre opciones; ajuste LoRA rango 32 |
+| Parametros totales | 1.881.825.088 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible para esta release v2 (la v4 hospedada declara 8.192 tokens con entradas de hasta 8.000) |
+| Tipos de cuantizacion | Q4_K_M (1,27 GB), Q8_0 (2,01 GB), BF16 (3,78 GB); también existe BF16 en safetensors (3,76 GB) y MLX BF16 (3,76 GB) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (este repositorio); safetensors BF16 en el repositorio base y BF16 en la variante MLX |
-| Tamano de pesos | Q4_K_M 1,27 GB; Q8_0 2,01 GB; BF16 3,78 GB |
-| Tamano del repositorio | 7,1 GB |
-| Tarea declarada | Text-generation; uso como modelo de decision, clasificacion, enrutado y eleccion tipada |
-| Modelo base | chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2 |
-| Temperatura de inferencia | 1.0 (las tres builds incorporan calibracion propia) |
+| Formato de pesos | GGUF (este repo); safetensors BF16 y MLX BF16 en repos hermanos |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe un backbone de texto de clase 2B sobre el que se aplica una adaptacion LoRA de rango 32, con un coste de entrenamiento principal de 36,9 minutos en una H100 de 80 GB. No se detallan el numero de capas, la dimension oculta, el mecanismo de atencion ni la longitud de contexto soportada. El tag `single-prefill` de la model card indica que la decision completa se resuelve en un unico paso de prefill sobre la secuencia estado-pregunta-opciones, sin decodificacion autoregresiva multiple.
+El modelo parte de un backbone textual Qwen3.5 de 2B parámetros y se adapta mediante LoRA de rango 32 para una tarea de decisión tipada: dada una tupla de estado, pregunta y conjunto de opciones, el modelo puntúa cada opción y devuelve una elección con distribución de probabilidad asociada. El entrenamiento principal reportado es de 36,9 minutos en una H100 de 80 GB, lo que indica un ajuste muy contenido sobre el backbone preentrenado en lugar de un entrenamiento desde cero. No se detalla en la información disponible el volumen de tokens de entrenamiento ni la composición exacta del dataset.
 
-El aspecto diferencial es la calibracion. La temperatura se ajusta sobre un split de calibracion de 3.100 registros; los clientes de HF y MLX aplican esa calibracion automaticamente, mientras que en las builds GGUF la calibracion queda incorporada en el tensor de normalizacion final del fichero. El panel de evaluacion descrito usa 11 grupos de tarea con etiquetas reales y pesos de tarea iguales, mas un grupo separado de 2.000 decisiones tipadas de referencia de profesor sobre 400 estados, que se excluye del calculo macro. No se especifica la composicion del dataset de entrenamiento ni si hubo RLHF o DPO.
+El aspecto técnico diferencial es la calibración. Cada fichero GGUF incluye una calibración ajustada de forma independiente, y se debe usar temperatura de runtime 1.0. La evaluación se realizó sobre un panel inglés fijo de 11 grupos de tareas con etiquetas reales (3.277 decisiones, pesos de tarea iguales) y un split de calibración de 3.100 registros. La inferencia está diseñada para un único prefill por decisión, sin decodificación autoregresiva de texto libre, lo que reduce la latencia frente a esquemas de generación con parsing posterior.
 
 ## Capacidades
 
-- Clasificacion con opciones cerradas: dado un estado y una lista de opciones, devuelve la opcion elegida y su probabilidad.
-- Enrutado y eleccion tipada (typed decisions), incluidas decisiones con formato de tipo declarado.
-- Probabilidades calibradas por temperatura, aptas para umbrales de confianza y abstención.
-- Analisis de sentimiento binario y multietiqueta (evaluado en SST-2, SST-5, Emotion e IMDb).
-- Inferencia de lenguaje natural (MNLI, ANLI, RTE, HANS) y respuesta a preguntas booleanas (BoolQ).
-- Clasificacion de topicos de noticias (AG News) y deteccion de spam (Enron spam).
-- Politicas de umbral programaticas: evaluado en un test de 200 pares contrafactuales de reglas de umbral.
-- Estabilidad frente al orden de opciones: 6,00 % de tasa de inversion con permutacion de opciones.
-- No se declara soporte de tool calling, function calling, agentes multi-paso, vision, audio ni thinking mode explicito.
-- Capacidad multilingue: no disponible; el modelo solo declara ingles.
+- Clasificación de texto con etiquetas cerradas: devuelve la opción seleccionada y su probabilidad calibrada.
+- Routing de decisiones: selección entre un conjunto finito de rutas, herramientas o categorías a partir de un estado descriptivo.
+- Scoring de elección fija (typed decisions): puntuación comparable entre opciones de una misma lista.
+- Calibración de confianza utilizable para umbrales y escalado a revisión humana (NLL, Brier y ECE reportados).
+- Ejecución local con llama.cpp en formato GGUF, sin dependencia de API hospedada.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags) y uso conversacional según metadatos.
+- No soporta generación libre de texto de calidad, visión, audio ni tool calling genérico; su salida está restringida al espacio de opciones proporcionado.
 
 ## Casos de uso
 
-- Enrutado de consultas en un sistema multi-modelo: el modelo recibe la consulta del usuario y una lista de destinos posibles (modelo pequeno, modelo grande, recuperacion documental, atencion humana) y devuelve la ruta con probabilidad asociada, lo que permite fijar un umbral de escalado.
-- Moderacion con abstención: clasifica contenido en categorias cerradas y, gracias a las probabilidades calibradas, permite derivar a revision humana los casos con confianza por debajo del umbral en lugar de forzar una etiqueta.
-- Clasificacion de tickets de soporte: con 1,27 GB en Q4_K_M puede ejecutarse en CPU o en una GPU de gama de entrada y asignar categoria y prioridad a cada ticket sin coste de API externa.
-- Filtrado de spam y correo no deseado: el 97,67 % declarado en Enron spam lo hace util como clasificador de primera linea dentro de un pipeline de correo antes de aplicar reglas mas costosas.
-- Analisis de sentimiento en resenas de producto o de cine: cubre tanto polaridad binaria (SST-2, 96,33 % en IMDb) como cinco niveles (SST-5) y ocho emociones (Emotion, 85,33 %), con la salvedad de que SST-5 ronda el 60 %.
-- Control de calidad de anotaciones: el modelo se usa como preanotador sobre datasets de NLI y clasificacion y solo se revisan manualmente los ejemplos donde la confianza calibrada es baja, reduciendo el coste de anotacion.
-- Validacion de reglas de negocio: el test de politicas de umbral contrafactuales sugiere su uso para comprobar que un par de decisiones opuestas bajo un mismo criterio se resuelven de forma coherente (71,50 % de pares correctos en v2).
-- Inferencia determinista en produccion: al resolver la decision en un unico prefill, se puede integrar en servicios con requisitos de latencia estables y sin decodificacion autoregresiva.
+- Routing de tickets de soporte: el modelo recibe el texto del ticket como estado y una lista de colas o equipos como opciones, y devuelve la cola asignada con probabilidad; la calibración permite enviar a revisión manual los casos con confianza baja.
+- Clasificación de intención en asistentes conversacionales: con un conjunto fijo de intenciones, una sola pasada de prefill sustituye a la generación de texto más parsing, reduciendo latencia y coste por petición.
+- Moderación por categorías: clasificación de contenido en un conjunto cerrado de políticas, usando el score calibrado para definir umbrales de bloqueo, revisión o paso.
+- Enrutado de herramientas en agentes: dado el estado de la conversación y la lista de herramientas disponibles, seleccionar la herramienta adecuada; encaja en pipelines donde el modelo grande solo se invoca tras la decisión.
+- Triage documental: asignación de documentos entrantes a departamentos o tipos documentales con probabilidades auditables, útil en flujos con requisitos de trazabilidad.
+- Decisiones sí/no sobre recibos o capturas (variante de visión en releases posteriores): la v2 es solo texto, pero el patrón de decisión binaria calibrada es aplicable a validaciones automáticas con umbral de confianza.
+- Evaluación A/B de prompts de clasificación: al ser un modelo pequeño y determinista en formato de salida, sirve para comparar esquemas de prompting y calibración de forma reproducible en local.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el panel de referencia fijo en ingles (11 grupos de tarea con etiquetas reales, 3.277 decisiones, pesos de tarea iguales):
+Resultados publicados por el autor sobre el panel inglés fijo (estructura de referencia CUDA, 3.277 decisiones, 11 grupos de tareas con etiquetas reales):
 
 | Metrica | Jev-Style v1 | English Laya | Jev-Style v2 |
 |---|---:|---:|---:|
-| Exactitud | 76,68 % | 75,09 % | 81,20 % |
-| Macro-F1 | 75,42 % | 73,45 % | 79,78 % |
+| Accuracy | 76,68% | 75,09% | 81,20% |
+| Macro-F1 | 75,42% | 73,45% | 79,78% |
 | Negative log-likelihood (menor es mejor) | 0,5752 | 0,6318 | 0,5154 |
 | Brier score (menor es mejor) | 0,3290 | 0,3482 | 0,2787 |
 
-Resultados por precision de la build GGUF (acuerdo de eleccion frente a BF16 fusionado en CUDA sobre un subconjunto congelado de 500 decisiones, y exactitud macro sobre ejemplos con etiqueta real):
+Rendimiento por precisión de despliegue (subconjunto congelado de 500 decisiones; agreement frente a BF16 fusionado en CUDA):
 
-| Precision | Tamano | Acuerdo de eleccion | Exactitud macro |
+| Precision | Tamano | Agreement | Macro accuracy |
 |---|---:|---:|---:|
-| Q4_K_M | 1,27 GB | 91,4 % | 78,18 % |
-| Q8_0 | 2,01 GB | 99,2 % | 78,69 % |
-| BF16 | 3,78 GB | 99,6 % | 79,36 % |
+| Q4_K_M | 1,27 GB | 91,4% | 78,18% |
+| Q8_0 | 2,01 GB | 99,2% | 78,69% |
+| BF16 | 3,78 GB | 99,6% | 79,36% |
 
-Resultados por tarea (etiquetas reales):
-
-| Tarea | Ejemplos | Jev-Style v1 | English Laya | Jev-Style v2 |
-|---|---:|---:|---:|---:|
-| AG News | 300 | 87,67 % | 89,00 % | 88,00 % |
-| ANLI | 300 | 48,00 % | 49,67 % | 48,67 % |
-| BoolQ | 300 | 82,67 % | 75,67 % | 81,67 % |
-| Emotion | 300 | 58,33 % | 60,33 % | 85,33 % |
-| Enron spam | 300 | 77,33 % | 96,33 % | 97,67 % |
-| HANS | 300 | 68,00 % | 75,00 % | 68,00 % |
-| IMDb | 300 | 96,67 % | 93,67 % | 96,33 % |
-| MNLI | 300 | 86,67 % | 85,00 % | 88,00 % |
-| RTE | 277 | 84,48 % | 77,98 % | 85,92 % |
-| SST-2 | 300 | 92,67 % | 91,67 % | 93,00 % |
-| SST-5 | 300 | 61,00 % | 31,67 % | 60,67 % |
-
-Robustez frente a permutacion de opciones (400 decisiones Choice/Bool):
-
-| Prueba de permutacion | Jev-Style v1 | English Laya | Jev-Style v2 |
-|---|---:|---:|---:|
-| Tasa de inversion de decision (menor es mejor) | 9,25 % | 12,00 % | 6,00 % |
-| Exactitud tras permutacion | 66,75 % | 67,00 % | 80,00 % |
-
-Grupo separado de decisiones tipadas (2.000 decisiones de referencia de profesor sobre 400 estados, excluido del macro de etiquetas reales): acuerdo con el profesor del 53,35 % en v1, 37,55 % en English Laya y 73,45 % en v2. En el test de 200 pares de politica de umbral programatica, ambos miembros del par contrafactual son correctos en el 71,50 % de los pares en v2 frente al 63,00 % en v1. No se han publicado resultados de benchmarks estandar tipo MMLU, HumanEval o GSM8K en la informacion disponible.
+El autor reporta mejoras de +4,53 puntos sobre v1 y +6,12 sobre English Laya en accuracy, con intervalos pareados del 95% de [+3,58; +5,52] y [+4,64; +7,52] respectivamente, dentro de ese panel fijo. También declara ventaja en 9 de 12 grupos de tareas, y reducciones del 18,4% en NLL, 20,0% en Brier y 26,4% en ECE de macro de tarea frente a English Laya. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no publicada por el autor. Como referencia, los pesos ocupan 1,27 GB (Q4_K_M), 2,01 GB (Q8_0) y 3,78 GB (BF16); el consumo real anadira el overhead de contexto y del runtime, que no esta cuantificado en la documentacion.
-- GPU de datacenter: el entrenamiento principal se realizo en una H100 80GB; para inferencia el modelo es sobredimensionado para ese hardware y funcionaria en A100, H100, L40S o similares sin problema de memoria.
-- GPU de consumo: las tres builds caben en GPU de consumo. Q4_K_M (1,27 GB) entra en GPUs de 4-6 GB, Q8_0 (2,01 GB) en 6-8 GB y BF16 (3,78 GB) en 8 GB o mas; una RTX 4090 o 3090 sobra para las tres.
-- CPU y Apple Silicon: la build GGUF esta pensada para llama.cpp, por lo que la variante Q4_K_M es viable en CPU. Existe una build especifica MLX BF16 para Apple Silicon.
-- Opciones de despliegue: llama.cpp y sus envoltorios (llama-cpp-python, Ollama, LM Studio, servidores compatibles con endpoints); Transformers con el cliente de decision para el modelo base BF16; cliente nativo MLX para Apple Silicon.
-- Latencia y throughput: no disponibles. El diseno de un unico prefill por decision, sin decodificacion autoregresiva multiple, apunta a latencias mas bajas y mas estables que un modelo generativo equivalente, pero no se publican mediciones.
-- Nota de despliegue: hay que usar temperatura 1.0 en tiempo de ejecucion, ya que la calibracion va incorporada en los pesos y alterarla invalida las probabilidades.
+- VRAM estimada: aproximadamente 1,3 GB para Q4_K_M, 2,0 GB para Q8_0 y 3,8 GB para BF16, más overhead de contexto y del runtime de llama.cpp.
+- Cabe en GPU de consumo: cualquier GPU con 4 GB o más de VRAM puede ejecutar Q4_K_M con margen; 6-8 GB permiten Q8_0 con contexto amplio.
+- GPU recomendadas: RTX 3060/4060 y superiores para Q4_K_M y Q8_0; A100, H100 o RTX 4090 para BF16 con throughput alto y procesamiento por lotes.
+- Despliegue: llama.cpp para GGUF; Transformers con el cliente de decisión del repositorio para BF16 safetensors; MLX nativo en Apple Silicon con los pesos MLX BF16. El paquete `jev-style` actual no carga esta release v2, solo v3 y v4.
+- Latencia y throughput: no disponibles en la información proporcionada. El diseño de un único prefill por decisión y el tamaño de 2B sugieren latencias bajas en GPU de consumo, pero no hay cifras publicadas para esta release.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar con las dos alternativas usadas como referencia por el autor en el mismo panel de evaluacion, no con modelos publicos de proposito general.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Jev-Style-Qwen3.5-2B-Decision-v2 | 1,88B | No disponible | Clasificación y routing con probabilidades calibradas | Apache 2.0 | GGUF, BF16, MLX en HF |
+| Jev-Style v1 | Clase 2B | No disponible | Igual, versión anterior | Apache 2.0 (según repo base) | HF |
+| English Laya | No disponible | No disponible | Clasificación en inglés, comparador del autor | No disponible | No disponible |
+| Jev-Style-2B-Decision-v4 | Clase 2B | 8.192 tokens (API hospedada) | Decisión texto e imagen, con etiquetas destiladas de Jev 1.14 | Apache 2.0 (según repo) | GGUF y paquete `jev-style` |
 
-| Modelo | Parametros | Exactitud | Macro-F1 | NLL | Brier | Licencia | Disponibilidad |
-|---|---:|---:|---:|---:|---:|---|---|
-| Jev-Style-Qwen3.5-2B-Decision-v2 (GGUF) | 1,88 B | 81,20 % | 79,78 % | 0,5154 | 0,2787 | Apache 2.0 | GGUF, safetensors BF16 y MLX BF16 en Hugging Face |
-| Jev-Style v1 | No disponible | 76,68 % | 75,42 % | 0,5752 | 0,3290 | No disponible | No disponible |
-| English Laya | No disponible | 75,09 % | 73,45 % | 0,6318 | 0,3482 | No disponible | No disponible |
-
-Los intervalos de confianza pareados del 95 % declarados para la mejora en exactitud son [+3,58, +5,52] puntos frente a v1 y [+4,64, +7,52] puntos frente a English Laya, dentro del panel fijo. La comparacion de parametros, contexto y licencia de v1 y English Laya no esta disponible en la informacion proporcionada. El autor menciona tambien resultados de sensibilidad a checkpoints especialistas y a la representacion de opciones en `baseline_sensitivity.json`, sin detallar su contenido.
+La comparación con modelos de clasificación generalistas de la misma talla (por ejemplo, encoders tipo DeBERTa o clasificadores sobre Qwen de 1,5-3B) no está disponible en la información proporcionada, ya que no se aportan resultados de esos sistemas sobre el mismo panel.
 
 ## Limitaciones y advertencias
 
-- Solo ingles: el modelo declara exclusivamente el idioma `en` y no se ha evaluado su comportamiento en castellano ni en otros idiomas.
-- Longitud de contexto no documentada: no se especifica cuantos tokens admite, lo que impide planificar su uso con estados o listas de opciones largas.
-- Tareas debiles conocidas: ANLI queda en 48,67 % (cerca del azar en un problema de tres clases) y HANS en 68,00 %, por lo que no es fiable para inferencia de lenguaje natural adversarial.
-- Sentimiento fino limitado: SST-5 se queda en 60,67 % con cinco clases, muy por debajo de sus resultados binarios.
-- Degradacion por cuantizacion en las decisiones: Q4_K_M baja al 91,4 % de acuerdo de eleccion con BF16 y al 78,18 % de exactitud macro, frente al 99,6 % y 79,36 % de BF16. Enrutados sensibles deberian usar Q8_0 o BF16.
-- Sensibilidad al orden de opciones: aunque se reduce al 6,00 %, sigue existiendo inversion de decision al reordenar las alternativas.
-- Acuerdo con el profesor bajo: el 73,45 % en el grupo de decisiones tipadas implica que en mas de una de cada cuatro decisiones el modelo no coincide con la referencia de profesor.
-- Calibracion dependiente de la temperatura: fijar temperature distinta de 1.0 en tiempo de ejecucion invalida las probabilidades calibradas y, con ello, los umbrales de decision.
-- Riesgo de alucinacion: no se documenta ningun mecanismo de abstitucion nativa; el modelo siempre devuelve una opcion de la lista, por lo que la abstitucion debe implementarse externamente con el umbral de confianza.
-- Adopcion muy baja: 0 descargas y 1 like en el momento de la consulta, lo que implica poca validacion independiente por terceros.
-- Licencia: Apache 2.0, permisiva para uso comercial, pero el autor no documenta el origen ni la composicion de los datos de entrenamiento, lo que complica la auditoria de procedencia.
+- Solo inglés: el modelo declara `en` como único idioma; el rendimiento en castellano u otros idiomas no está evaluado y previsiblemente será deficiente.
+- Release archivada: es la v2; el autor recomienda v4 (texto e imagen) o 0.8B v3 para texto, y el paquete `jev-style` no carga esta versión.
+- Restringido a elección cerrada: no es un modelo generativo; fuera del espacio de opciones proporcionado no produce respuestas útiles.
+- Riesgo de calibración desplazada: las probabilidades están calibradas sobre un panel inglés concreto; en dominios distintos la confianza puede no reflejar la precisión real y conviene recalibrar o validar con datos propios.
+- Cuantización Q4_K_M: el agreement cae al 91,4% frente a BF16, con una pérdida de aproximadamente 1,2 puntos de macro accuracy; para decisiones sensibles se recomienda Q8_0 o BF16.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al derivar de un backbone preentrenado, hereda los sesgos de sus datos de entrenamiento, no detallados.
+- Licencia Apache 2.0 permite uso comercial, pero la procedencia de los datos de entrenamiento del backbone y del ajuste no está descrita en detalle, lo que limita la auditoría.
+- El servicio hospedado es una vía distinta de la inferencia local, con capacidad compartida y respuestas 429 con `Retry-After`; no debe confundirse con el comportamiento de estos pesos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF
 - Modelo base BF16: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2
-- Variante MLX BF16: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16
-- Descarga directa Q4_K_M: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF/resolve/main/Jev-Style-v2-Q4_K_M-Calibrated.gguf?download=true
-- Descarga directa Q8_0: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF/resolve/main/Jev-Style-v2-Q8_0-Calibrated.gguf?download=true
-- Descarga directa BF16: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF/resolve/main/Jev-Style-v2-BF16-Calibrated.gguf?download=true
-- Comparativa completa de precisiones: evaluation/quantization_summary.json (en el repositorio)
-- Sensibilidad a checkpoints y representacion: evaluation/baseline_sensitivity.json (en el repositorio)
-- Grafico de exactitud, Macro-F1, NLL y Brier: figures/benchmark.png (en el repositorio)
-- Diagrama de fiabilidad y ECE: figures/calibration.png (en el repositorio)
-- Estabilidad ante permutacion de opciones: figures/robustness.png (en el repositorio)
-- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.
+- Versión MLX BF16: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16
+- Versión recomendada v4: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4-GGUF
+- Sitio del proyecto y modelos: https://jevstyle.com/models/
+- Guía de instalación local: https://jevstyle.com/guides/run-locally/
+- Clasificación de texto en Python: https://jevstyle.com/guides/local-text-classification/
+- Routing local y Apple silicon: https://jevstyle.com/guides/local-decision-models/
+- Decisiones sí/no sobre recibos y capturas: https://jevstyle.com/use-cases/local-vision-decisions/
+- Benchmark de routing bancario: https://jevstyle.com/benchmarks/banking-routing/
+- Estado del servicio hospedado: https://jevstyle.com/api/#service-status
+- Health check de la API: https://api.jevstyle.com/healthz

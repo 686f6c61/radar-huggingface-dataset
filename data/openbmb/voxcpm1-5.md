@@ -2,100 +2,99 @@
 
 ## Resumen
 
-VoxCPM1.5 es un sistema de texto a voz (TTS) tokenizer-free desarrollado por OpenBMB y ModelBest, que modela el habla en un espacio continuo en lugar de discretizarla en tokens. Esta arquitectura permite dos capacidades principales: generación de habla expresiva sensible al contexto y clonación de voz zero-shot con alta fidelidad. El modelo está construido sobre el backbone MiniCPM4-0.5B y utiliza una arquitectura de difusión autorregresiva de extremo a extremo con restricciones FSQ para lograr un desacoplamiento semántico-acústico implícito.
+VoxCPM1.5 es un sistema de síntesis de voz (text-to-speech) desarrollado por OpenBMB que emplea un enfoque *tokenizer-free*: en lugar de convertir el audio a tokens discretos, modela el habla en un espacio continuo mediante una arquitectura de difusión autorregresiva. Está construido sobre el backbone de lenguaje MiniCPM4-0.5B y suma un módulo de difusión (LocDiT) que genera representaciones acústicas continuas, con un VAE de audio que opera a 44,1 kHz. El modelo tiene 801,7 millones de parámetros totales y se distribuye en safetensors bajo licencia Apache 2.0.
 
-La versión 1.5, publicada en diciembre de 2025, introduce mejoras significativas respecto a su predecesor: la frecuencia de muestreo del Audio VAE pasa de 16kHz a 44.1kHz, lo que preserva más detalles de alta frecuencia y mejora la calidad de la clonación de voz. Además, reduce el token rate de 12.5Hz a 6.25Hz, disminuyendo el coste computacional sin sacrificar rendimiento. El modelo soporta tanto fine-tuning completo (SFT) como fine-tuning eficiente con LoRA, y permite síntesis en streaming con un factor de tiempo real (RTF) de 0.17 en una GPU NVIDIA RTX 4090.
+La propuesta central es doble: generación de habla consciente del contexto (infiere prosodia y estilo a partir del texto) y clonación de voz zero-shot fiel a partir de una muestra corta de referencia, capturando timbre, acento, tono emocional y ritmo. Frente a la versión original VoxCPM, la 1.5 eleva la frecuencia de muestreo del VAE de 16 kHz a 44,1 kHz y reduce la tasa de tokens del LM de 12,5 Hz a 6,25 Hz (con patch size 4), lo que abarata el cómputo manteniendo la calidad.
 
-Con 801,7 millones de parámetros y licencia Apache-2.0, VoxCPM1.5 es totalmente de código abierto y está entrenado sobre un corpus bilingüe de 1,8 millones de horas. Está disponible en inglés y chino, y se distribuye a través de Hugging Face y ModelScope.
+Es relevante ahora porque ofrece una alternativa abierta y ligera (menos de 1.000 millones de parámetros) a sistemas TTS propietarios, con soporte de streaming (RTF de hasta 0,17 en una RTX 4090) y capacidad de ajuste fino mediante SFT y LoRA. Está entrenado sobre un corpus bilingüe de 1,8 millones de horas en inglés y chino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Difusion autorregresiva tokenizer-free con restricciones FSQ sobre backbone MiniCPM4-0.5B |
+| Arquitectura | Difusión autorregresiva end-to-end sobre backbone MiniCPM4-0.5B con módulo LocDiT y VAE de audio (tokenizer-free) |
 | Parametros totales | 801.729.856 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Ingles (en), Chino (zh) |
-| Licencia | Apache-2.0 |
+| Idiomas soportados | inglés (en), chino (zh) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
+| Frecuencia de muestreo de audio | 44,1 kHz (VAE de audio) |
+| Tasa de tokens del LM | 6,25 Hz (patch size 4) |
+| Modelo base | openbmb/MiniCPM4-0.5B |
+| Tamaño del repositorio | 1,9 GB |
+| Librería | voxcpm |
 
 ## Arquitectura y entrenamiento
 
-VoxCPM1.5 emplea una arquitectura de difusion autorregresiva de extremo a extremo que genera representaciones de habla continuas directamente desde texto, evitando por completo la discretizacion en tokens. El modelo se compone de un Audio VAE que opera a 44.1kHz con un token rate de 6.25Hz y un patch size de 4, acoplado a un modelo de lenguaje jerarquico basado en MiniCPM4-0.5B. Las restricciones FSQ (Finite Scalar Quantization) imponen una cuantizacion acotada en el espacio latente, lo que permite un desacoplamiento implicito entre las dimensiones semanticas y acusticas de la representacion, mejorando la estabilidad de la generacion y la expresividad.
+VoxCPM1.5 es un sistema TTS *tokenizer-free* que combina un modelo de lenguaje jerárquico (MiniCPM4-0.5B) con un módulo de difusión autorregresiva denominado LocDiT. En lugar de discretizar el habla en tokens, el modelo genera directamente representaciones continuas del audio, que un VAE de audio a 44,1 kHz convierte en forma de onda. El desacoplamiento semántico-acústico se logra de forma implícita mediante el modelado de lenguaje jerárquico y restricciones FSQ, lo que según el autor mejora la expresividad y la estabilidad de la generación.
 
-El entrenamiento se realizo sobre un corpus bilingue de 1,8 millones de horas (ingles y chino), lo que permite al modelo inferir la prosodia adecuada a partir del contenido textual. La arquitectura LocDiT (Local Diffusion Transformer) integra la guia LM (cfg_value) para ajustar la adherencia al prompt de referencia durante la inferencia, con un numero configurable de pasos de inferencia (inference_timesteps). El modelo soporta ademas un modo de reintento automatico para casos problematicos (retry_badcase) y es compatible con herramientas externas de normalizacion de texto y reduccion de ruido.
+El entrenamiento se realizó sobre un corpus bilingüe (inglés y chino) de 1,8 millones de horas. La model card menciona soporte de SFT y LoRA para ajuste fino, pero no detalla la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO. Entre las innovaciones técnicas destacan la reducción de la tasa de tokens del LM a 6,25 Hz (frente a 12,5 Hz en VoxCPM), el aumento del patch size a 4 y el VAE a 44,1 kHz, que preserva más detalle en frecuencias altas para la clonación de voz.
 
 ## Capacidades
 
-- Generacion de habla expresiva y sensible al contexto: el modelo comprende el texto y adapta automaticamente la prosodia, el ritmo y el tono al contenido.
-- Clonacion de voz zero-shot: con un unico clip de audio de referencia (y opcionalmente su transcripcion), reproduce timbre, acento, tono emocional, ritmo y velocidad del hablante.
-- Sintesis en streaming: genera audio por fragmentos, permitiendo aplicaciones en tiempo real con un RTF de 0.17 en RTX 4090.
-- Fine-tuning personalizado: soporta SFT (fine-tuning completo) y LoRA para entrenar voces personalizadas con datos propios.
-- Soporte multilingue: ingles y chino.
-- Compatibilidad con herramientas externas: normalizacion de texto (TN), reduccion de ruido (denoise) y mejora de prompts de audio mediante ZipEnhancer y SenseVoice-Small.
-- Modo de reintento automatico para casos problematicos de generacion.
+- Síntesis de voz a partir de texto con prosodia inferida del contenido (generación consciente del contexto).
+- Clonación de voz zero-shot a partir de una muestra corta de audio de referencia, capturando timbre, acento, emoción, ritmo y velocidad.
+- Síntesis en streaming con factor de tiempo real (RTF) de hasta 0,17 en una RTX 4090.
+- Soporte de ajuste fino mediante SFT y LoRA para voces personalizadas.
+- Capacidades bilingües: inglés y chino.
+- Control de generación mediante parámetros como `cfg_value` (guía del LM sobre LocDiT), `inference_timesteps` (pasos de difusión) y umbrales de reintento para casos problemáticos.
+- Integración opcional con herramientas externas de normalización de texto (TN) y reducción de ruido (denoise), así como con ZipEnhancer y SenseVoice-Small para el preprocesado de prompts de voz en la demo web.
+- No se documentan capacidades de tool calling, agentes, visión ni audio de entrada más allá del prompt de referencia para clonación.
 
 ## Casos de uso
 
-- Audiolibros y narracion automatizada: el modelo genera narraciones con prosodia natural y expresiva, adaptando el tono al contenido narrativo. Su capacidad de contexto largo permite mantener coherencia estilistica en capitulos completos.
-- Asistentes de voz y agentes conversacionales: la sintesis en streaming con RTF 0.17 permite respuestas vocales en tiempo real en asistentes virtuales, con clonacion de voz para personalizar la identidad del asistente.
-- Doblaje y localizacion de contenido audiovisual: la clonacion de voz zero-shot permite doblar videos o podcasts manteniendo la voz original del hablante en otro idioma, capturando matices emocionales y ritmo.
-- Atencion al cliente automatizada: integrado en sistemas IVR o chatbots vocales, genera respuestas con voz clonada de agentes reales, mejorando la experiencia del usuario con un tono natural y empatico.
-- Creacion de contenido para educacion y e-learning: genera locuciones para cursos, tutoriales o materiales didacticos con voces consistentes y expresivas, personalizables por materia o audiencia.
-- Desarrollo de videojuegos: permite generar dialogos para personajes con voces clonadas de actores, reduciendo costes de grabacion y facilitando iteraciones rapidas en el guion.
-- Productos de accesibilidad: sintetiza voz natural para sistemas de lectura de pantalla o comunicadores aumentativos, con la posibilidad de clonar la voz del propio usuario.
-- Produccion musical y podcasts: genera voces para jingles, intros o segmentos con estilos vocales especificos, clonando voces de referencia para mantener coherencia de marca.
+- Clonación de voz para doblaje y localización: con una muestra corta de referencia, el modelo replica el timbre y el estilo del hablante original, lo que permite generar versiones en inglés o chino de contenido audiovisual manteniendo la identidad vocal.
+- Asistentes de voz en tiempo real: gracias al streaming y a un RTF de 0,17 en RTX 4090, puede integrarse en pipelines de respuesta por voz con latencia baja para atención al cliente o interfaces conversacionales.
+- Audiolibros y narración automática: la generación consciente del contexto ajusta la prosodia al contenido del texto, produciendo una lectura natural sin necesidad de etiquetado manual de estilos.
+- Accesibilidad y lectura de pantalla: síntesis de alta calidad a 44,1 kHz para convertir texto en voz en aplicaciones de accesibilidad, con voces personalizables mediante LoRA.
+- Generación de contenido para medios y publicidad: creación rápida de locuciones en inglés y chino con control de estilo y emoción a partir del texto, útil para prototipado de anuncios o vídeos.
+- Investigación en TTS: al ser un modelo abierto con licencia Apache 2.0 y soporte de SFT/LoRA, sirve como base para experimentación académica en modelado continuo del habla y clonación de voz.
+- Preprocesado de datos de voz: combinado con ZipEnhancer y SenseVoice-Small, puede formar parte de pipelines de limpieza y transcripción de muestras de referencia antes de la clonación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (como MMLU, HumanEval o GSM8K) en la informacion disponible, ya que se trata de un modelo TTS y no de un modelo de lenguaje general. Los datos de rendimiento disponibles son:
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-| Metrica | Valor |
-|---|---|
-| Frecuencia de muestreo del Audio VAE | 44.1kHz |
-| Token rate del LM | 6.25Hz |
-| Factor de tiempo real (RTF) en RTX 4090 | 0.17 |
-| Corpus de entrenamiento | 1,8 millones de horas bilingue |
-| Patch size | 4 |
+La model card únicamente reporta métricas de eficiencia: un RTF de hasta 0,17 en una GPU de consumo NVIDIA RTX 4090 con síntesis en streaming, y una tasa de tokens del LM de 6,25 Hz con patch size 4.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo tiene 801,7 millones de parametros. En FP16, el peso ocupa aproximadamente 1,6 GB, por lo que cabe en GPUs consumer con 8 GB de VRAM o mas.
-- GPU recomendadas: NVIDIA RTX 4090 (verificada por los autores para streaming en tiempo real con RTF 0.17). GPUs con 8-16 GB de VRAM como RTX 3080, RTX 4070 o superiores son suficientes para inferencia no streaming.
-- Despliegue: la libreria `voxcpm` (instalable via PyPI) gestiona la descarga automatica del modelo y la generacion. No se menciona soporte explicito para vLLM, llama.cpp u Ollama, al tratarse de un modelo TTS con pipeline especifico.
-- Latencia: con RTF 0.17 en RTX 4090, un audio de 10 segundos se genera en aproximadamente 1,7 segundos. El numero de pasos de inferencia (inference_timesteps) es configurable para equilibrar calidad y velocidad.
-- Para fine-tuning (SFT o LoRA), se requiere una GPU con suficiente VRAM para el entrenamiento; no se especifican requisitos exactos, pero un modelo de 0.8B parametros es entrenable en GPUs de 24 GB con tecnicas de eficiencia.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 801,7 millones de parámetros en safetensors (repo de 1,9 GB), la inferencia en precisión nativa requiere del orden de 2-4 GB de VRAM, aunque el dato exacto no está publicado.
+- GPU recomendadas: NVIDIA RTX 4090 para streaming en tiempo real (RTF 0,17 según el autor); se espera que GPU de datacenter como A100 o H100 ofrezcan mayor throughput, aunque no se publican cifras.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más de VRAM, aunque el requisito exacto no está documentado.
+- Opciones de despliegue: paquete oficial `voxcpm` instalable desde PyPI (`pip install voxcpm`), con carga vía `VoxCPM.from_pretrained`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: RTF de hasta 0,17 en RTX 4090 con streaming; no se publican más cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Idiomas | Licencia | Clonacion de voz | Streaming |
-|---|---|---|---|---|---|---|
-| VoxCPM1.5 | 801,7M | Tokenizer-free, difusion autorregresiva | en, zh | Apache-2.0 | Si, zero-shot | Si (RTF 0.17) |
-| CosyVoice 2 | ~1,5B (estimado) | Autoregresivo con tokens discretos | zh, en, otros | Apache-2.0 | Si, zero-shot | Si |
-| XTTS v2 | ~467M | Autoregresivo + HiFi-GAN | 17 idiomas | Coqui Public Model License (no comercial) | Si, zero-shot | Si |
-| F5-TTS | ~335M | Flow matching, tokenizer-free | en, zh | MIT | Si, zero-shot | No (por lotes) |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| VoxCPM1.5 (OpenBMB) | 801,7 M | no disponible | en, zh | Apache 2.0 | TTS tokenizer-free con difusión autorregresiva y clonación zero-shot |
+| VoxCPM-0.5B (OpenBMB) | no disponible | no disponible | en, zh | Apache 2.0 | Versión anterior, VAE a 16 kHz y 12,5 Hz de tokens |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-VoxCPM1.5 se diferencia principalmente por su arquitectura tokenizer-free con difusion autorregresiva, que evita las perdidas de informacion de la discretizacion, y por su licencia Apache-2.0 totalmente permisiva, frente a restricciones de otros modelos como XTTS v2. Su frecuencia de muestreo de 44.1kHz supera a la mayoria de alternativas, que operan a 16-24kHz.
+No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en la información proporcionada que permitan una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- La calidad de la salida depende criticamente de la calidad del audio de prompt utilizado para la clonacion de voz. Prompts con ruido o baja calidad degradan el resultado.
-- El modelo solo soporta ingles y chino. No hay soporte para otros idiomas en esta version.
-- El modo de reduccion de ruido (denoise) restringe la frecuencia de muestreo a 16kHz, lo que reduce la calidad de salida.
-- La normalizacion de texto externa (normalize=True) desactiva el soporte nativo de texto crudo, lo que puede afectar a ciertos casos de uso.
-- El parametro retry_badcase_ratio_threshold puede necesitar ajuste para habla lenta, ya que el detector de casos problematicos se basa en la longitud de la generacion.
-- No se han publicado evaluaciones formales de sesgos o alucinaciones en el contenido generado. Como modelo TTS, el riesgo principal es la generacion de prosodia inapropiada o errores de pronunciacion en textos complejos.
-- La clonacion de voz plantea riesgos de uso indebido (suplantacion de identidad). Los usuarios deben asegurarse de contar con consentimiento explicito de los hablantes clonados.
-- No se dispone de informacion sobre cuantizaciones disponibles (GGUF, AWQ, etc.), por lo que el despliegue en entornos con recursos limitados puede requerir FP16 o conversion manual.
+- Sesgos conocidos: no documentados en la model card; al entrenarse en un corpus bilingüe inglés-chino, puede reflejar sesgos de esos datos.
+- Riesgo de alucinación: en TTS se traduce en prosodia inadecuada, artefactos o generaciones que no terminan; el modelo incluye un modo de reintento (`retry_badcase`) para casos problemáticos.
+- Limitaciones de idioma: solo inglés y chino; no se documenta soporte para castellano ni otras lenguas.
+- Calidad dependiente del prompt: el autor advierte que la calidad de salida depende de la calidad del audio de referencia para la clonación.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero la clonación de voz plantea riesgos éticos y legales (suplantación de identidad, consentimiento del hablante) que deben gestionarse en producción.
+- El modo `denoise` puede introducir distorsión y restringe la frecuencia de muestreo a 16 kHz, degradando la ventaja del VAE a 44,1 kHz.
+- El modo `normalize` desactiva el soporte nativo de texto en bruto, por lo que requiere herramientas externas de normalización de texto.
+- No se documentan requisitos de contexto, cuantizaciones ni benchmarks, lo que dificulta la planificación de despliegues a gran escala.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openbmb/VoxCPM1.5
-- Modelo en ModelScope: https://modelscope.cn/models/OpenBMB/VoxCPM1.5
 - Repositorio GitHub: https://github.com/OpenBMB/VoxCPM/
-- Reporte tecnico (arXiv): https://arxiv.org/abs/2509.24650
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
-- Pagina de muestras de audio: https://openbmb.github.io/VoxCPM-demopage
-- Guia de fine-tuning (via GitHub): https://github.com/OpenBMB/VoxCPM/
+- Informe técnico (arXiv): https://arxiv.org/abs/2509.24650
+- Demo en vivo: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Página de muestras de audio: https://openbmb.github.io/VoxCPM-demopage
+- Documentación OpenBMB: https://openbmb.cn/docs/
+- Modelo en ModelScope: https://modelscope.cn/models/OpenBMB/VoxCPM1.5
+- Modelo base MiniCPM4-0.5B: https://huggingface.co/openbmb/MiniCPM4-0.5B

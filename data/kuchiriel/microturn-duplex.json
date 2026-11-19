@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "Kuchiriel/microturn-duplex",
+  "slug": "kuchiriel-microturn-duplex",
+  "author": "Kuchiriel",
+  "url": "https://huggingface.co/Kuchiriel/microturn-duplex",
+  "created_at": "2026-11-18T22:46:12.000Z",
+  "updated_at": "2026-11-18T22:48:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gguf",
+    "voice",
+    "micro-turn",
+    "full-duplex",
+    "lora",
+    "turn-taking",
+    "real-time",
+    "text-generation",
+    "pt",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3833856,
+  "parameters_human": "3.8M",
+  "storage_bytes": 15339200,
+  "storage_human": "15 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kuchiriel/microturn-gate · Hugging Face",
+      "url": "https://huggingface.co/Kuchiriel/microturn-gate",
+      "snippet": "Kuchiriel / microturn-gate Like 0 Text Classification PEFT Safetensors GGUF Portuguese speech turn-taking full-duplex lora qwen portuguese jarvis License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Kuchiriel/microturn-gate at main - Hugging Face",
+      "url": "https://huggingface.co/Kuchiriel/microturn-gate/tree/main",
+      "snippet": "Kuchiriel / microturn-gate Like 0 Text Classification PEFT Safetensors GGUF Portuguese speech turn-taking full-duplex lora qwen portuguese jarvis License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

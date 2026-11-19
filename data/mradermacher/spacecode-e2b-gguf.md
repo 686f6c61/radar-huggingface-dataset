@@ -2,91 +2,94 @@
 
 ## Resumen
 
-SpaceCode-E2B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo SpaceGhost/SpaceCode-E2B, realizadas por mradermacher, un cuantizador muy activo en la comunidad de Hugging Face. El modelo base es un modelo de código de unos 4.647 millones de parámetros, orientado a ingeniería de software, con especial énfasis en desarrollo móvil con React Native, Android y Expo, así como en TypeScript y Python. Además, incluye un componente multimodal (mmproj), lo que sugiere capacidades de visión combinadas con generación de código.
+SpaceCode-E2B-GGUF es la versión cuantizada en formato GGUF del modelo SpaceCode-E2B, desarrollado originalmente por SpaceGhost y distribuido en cuantizaciones estáticas por mradermacher. Se trata de un modelo multimodal especializado en ingeniería de software, con capacidades de visión y código, construido sobre la arquitectura Gemma 4 (etiquetada como "gemma4" en la model card) y afinado con la librería Unsloth. El modelo está orientado a tareas de desarrollo de software en dominios concretos como React Native, Android, TypeScript y Python.
 
-La relevancia de esta ficha radica en la disponibilidad del modelo en formatos cuantizados que permiten ejecutarlo localmente en hardware de consumo mediante llama.cpp u Ollama, con cuantizaciones que van desde Q2_K (3,1 GB) hasta f16 (9,4 GB). Esto lo hace accesible para desarrolladores que desean un asistente de código especializado en desarrollo móvil sin depender de servicios en la nube.
+El modelo cuenta con 4.647.450.147 parámetros totales según los pesos en safetensors del modelo base, y se distribuye bajo los términos de uso de Gemma de Google. Los idiomas declarados en la model card son portugués e inglés, lo que limita su uso en castellano sin una evaluación previa. Esta ficha describe la variante GGUF, pensada para inferencia local con llama.cpp y herramientas compatibles.
 
-La información publicada sobre el modelo base (arquitectura detallada, datos de entrenamiento, benchmarks) es limitada, por lo que varios apartados de esta ficha indican datos no disponibles. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones relevantes.
+La relevancia de esta ficha radica en que permite ejecutar un modelo multimodal de código en hardware de consumo gracias a las cuantizaciones de 3 a 5 GB, aunque con las limitaciones propias de un modelo pequeño y de un conjunto de idiomas restringido. No se dispone de información sobre el contexto máximo ni sobre resultados de benchmarks en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer, base derivada de Llama según librería transformers) |
-| Parametros totales | 4.647.450.147 (≈4,65 B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer multimodal basada en Gemma 4 (etiqueta "gemma4" en la model card); detalles de atención no disponibles |
+| Parametros totales | 4.647.450.147 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | portugues (pt), ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estáticas; el modelo base está en safetensors) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; además mmproj-Q8_0 y mmproj-f16 para el componente multimodal |
+| Idiomas soportados | portugués (pt), inglés (en) |
+| Licencia | gemma-terms-of-use (license: other) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, SpaceGhost/SpaceCode-E2B, es un modelo de aproximadamente 4,65 mil millones de parámetros etiquetado como multimodal y de visión, con un suplemento mmproj (proyector multimodal) distribuido en las cuantizaciones Q8_0 (0,7 GB) y f16 (1,1 GB). Este tipo de proyector es característico de arquitecturas de visión-lenguaje compatibles con llama.cpp (estilo LLaVA), donde el mmproj codifica imágenes que el modelo de lenguaje procesa posteriormente. Los tags sugieren un entrenamiento o ajuste fino enfocado en ingeniería de software: React Native, Android, Expo, TypeScript y Python.
+La model card identifica el modelo como perteneciente a la familia Gemma 4 y lo etiqueta como multimodal con soporte de visión, código y conversación. El modelo base SpaceCode-E2B fue afinado con Unsloth, según las etiquetas del repositorio. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
 
-No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre el uso de técnicas como RLHF o DPO. Tampoco hay detalles sobre la arquitectura exacta (atención estándar, GQA, contexto extendido) ni sobre innovaciones técnicas específicas en el modelo base. La conversión a GGUF se realizó mediante el tipo de conversión "hf" con todos los tensores cuantizados.
+La innovación principal de esta variante es la disponibilidad de cuantizaciones estáticas generadas con un flujo de conversión HF a GGUF, junto con los ficheros mmproj necesarios para el procesamiento de imágenes. También existe una variante con cuantizaciones ponderadas/imatrix en el repositorio SpaceCode-E2B-i1-GGUF del mismo autor. No se dispone de detalles sobre mecanismos de atención, decodificación especulativa u otras optimizaciones internas.
 
 ## Capacidades
 
-- Generacion de codigo: especializado en software engineering, con foco aparente en TypeScript, Python, React Native, Android y Expo.
-- Capacidades multimodales/vision: incluye archivos mmproj (proyector multimodal), lo que habilita el procesamiento de imágenes junto con texto en llama.cpp.
-- Conversacion: etiquetado como conversational, apto para chat interactivo.
-- Soporte de tool calling / function calling: no disponible (sin información publicada).
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingues: portugues e ingles; no hay constancia de castellano, por lo que su rendimiento en espanol no está garantizado.
+- Generación de código en dominios específicos: React Native, Android, TypeScript y Python, según las etiquetas del modelo.
+- Comprensión de imágenes gracias al componente multimodal (ficheros mmproj), orientada a capturas de pantalla, diagramas de interfaz o referencias visuales de software.
+- Conversación multi-turno (etiqueta "conversational").
+- Razonamiento y asistencia en tareas de ingeniería de software.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües limitadas a portugués e inglés.
+- Modo de razonamiento explícito (thinking mode): no disponible en la información proporcionada.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Desarrollo de apps React Native y Expo: el modelo puede generar componentes, pantallas y lógica de negocio en TypeScript/React Native, aprovechando su ajuste específico en este ecosistema; útil como copiloto local en el editor.
-- Depuracion de codigo Android: analiza stack traces y codigo Kotlin/Java o TypeScript relacionado con Expo y propone correcciones, ejecutandose offline en la máquina del desarrollador.
-- Revision de codigo con capturas de pantalla: gracias al componente mmproj, puede recibir capturas de interfaz (mockups, errores visuales) y generar el codigo React Native correspondiente o detectar discrepancias entre diseño e implementacion.
-- Asistente de codigo en portugues: útil para equipos brasileños o portugueses que deseen un asistente que entienda consultas en portugues sobre codigo en ingles.
-- Ejecucion local en portatil de desarrollo: con la cuantizacion Q4_K_M (3,5 GB) cabe en GPUs de consumo o incluso en CPU con RAM suficiente, ideal para entornos sin acceso a nube por politicas de privacidad.
-- Prototipado rapido con Ollama: integracion en flujos de trabajo locales mediante Ollama para autocompletado, generación de tests unitarios en Python o TypeScript y refactorizaciones.
+- Asistente de código para React Native: el modelo puede generar y revisar componentes, hooks y estilos en TypeScript para aplicaciones móviles, aprovechando su especialización declarada en este framework y su tamaño reducido para ejecución local.
+- Revisión de código Python en entornos de desarrollo: útil para explicar fragmentos, sugerir refactorizaciones y detectar errores comunes en scripts y módulos, con la ventaja de poder desplegarse en la máquina del desarrollador sin enviar código a servicios externos.
+- Desarrollo de aplicaciones Android: generación de código Java/Kotlin y de configuraciones de proyecto, así como resolución de dudas sobre APIs del SDK, dentro del dominio declarado del modelo.
+- Análisis de capturas de pantalla de interfaces: gracias al componente multimodal, el modelo puede interpretar imágenes de pantallas de aplicaciones y proponer cambios de maquetación o identificar elementos de la UI.
+- Documentación técnica automatizada: generación de comentarios, docstrings y READMEs a partir de código fuente, en inglés o portugués, para proyectos de software.
+- Prototipado rápido en local: al caber en cuantizaciones de 3 a 5 GB, permite experimentar con un asistente de código multimodal en portátiles con GPU de consumo, sin depender de la nube.
+- Soporte a equipos lusófonos: atención a desarrolladores que trabajan en portugués, uno de los dos idiomas declarados del modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del modelo base ni la del repositorio de cuantizaciones incluyen metricas (MMLU, HumanEval, GSM8K u otras).
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin KV cache):
-  - Q2_K: ~3,1 GB; Q3_K_M: ~3,3 GB; Q4_K_M: ~3,5 GB; Q5_K_M: ~3,7 GB; Q6_K: ~3,9 GB; Q8_0: ~5,1 GB; f16: ~9,4 GB.
-  - Si se usa el componente de vision, anadir ~0,7 GB (mmproj-Q8_0) o ~1,1 GB (mmproj-f16).
-- GPU recomendadas: cualquier GPU moderna con 6 GB de VRAM o mas para cuantizaciones Q4/Q5 con contexto moderado; RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090 para contextos largos y cuantizaciones altas. En CPU, cualquier procesador con 8-16 GB de RAM libres ejecuta las cuantizaciones Q4.
-- Cabe en consumer GPU: si. La cuantizacion Q4_K_M (3,5 GB) cabe comodamente en GPUs de 6 GB; incluso Q8_0 (5,1 GB) cabe en GPUs de 8 GB con contexto ajustado.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (tag incluido en el repo), LM Studio y cualquier runtime compatible con GGUF. No consta soporte verificado en vLLM o TGI para esta version GGUF.
-- Latencia y throughput: no disponibles; al ser un modelo de ~4,6 B parámetros cuantizado a 4 bits, se espera inferencia fluida en GPUs de consumo, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 3,1 GB con Q2_K, 3,5 GB con Q4_K_M, 3,9 GB con Q6_K y 5,1 GB con Q8_0; el f16 requiere unos 9,4 GB. Añadir entre 0,7 y 1,1 GB si se usa el componente multimodal (mmproj).
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para cuantizaciones Q4/Q5 con margen para el contexto; RTX 3060, RTX 4060, RTX 4070 o superiores son suficientes. Para f16 se recomienda una GPU de 12 GB o más.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más usando Q4_K_M o Q5_K_M; las cuantizaciones Q2/Q3 caben en GPUs de 4-6 GB.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) por el formato GGUF; el modelo base es compatible con transformers. El repositorio incluye la etiqueta "endpoints_compatible".
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Licencia | Multimodal | Formato | Notas |
-|---|---|---|---|---|---|
-| SpaceCode-E2B | ~4,65 B | Apache 2.0 | Si (mmproj) | safetensors / GGUF | Especializado en React Native, Expo, TypeScript, Python |
-| Qwen2.5-Coder-7B-Instruct | ~7 B | Apache 2.0 (Qwen2.5-Coder es Apache 2.0 salvo indicacion) | No | safetensors / GGUF | Amplio soporte de lenguajes y benchmarks publicados de codigo |
-| CodeLlama-7B-Instruct | ~7 B | Llama 2 Community License | No | safetensors / GGUF | Modelo de codigo generalista de Meta, licencia mas restrictiva |
-| DeepSeek-Coder-V2-Lite-Instruct | 16 B (2,4 B activos, MoE) | DeepSeek License | No | safetensors / GGUF | Arquitectura MoE, rendimiento alto en codigo, uso comercial restringido |
+No se dispone de datos de rendimiento ni de especificaciones completas de modelos comparables en la información proporcionada. La comparación se limita a características estructurales conocidas.
 
-SpaceCode-E2B destaca por su especializacion en el ecosistema React Native/Expo y por su tamano reducido (~4,65 B), que facilita la ejecucion local, aunque carece de benchmarks publicados que permitan comparar su rendimiento con las alternativas anteriores.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| SpaceCode-E2B-GGUF | 4,65 B | no disponible | pt, en | gemma-terms-of-use | GGUF |
+| Modelos comparables de código de ~4-7 B | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se han identificado en la documentación alternativas concretas de la misma categoría con datos verificables, por lo que no se ofrece una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles; al ser un modelo derivado y ajustado sin documentacion publica, se desconoce el tratamiento de sesgos en el entrenamiento.
-- Riesgo de alucinacion: como todo modelo de codigo de tamano pequeno, puede generar APIs inexistentes o codigo plausible pero incorrecto, especialmente en frameworks con evolucion rapida como Expo; revisar siempre el codigo generado.
-- Limitaciones de idioma: entrenado/etiquetado para portugues e ingles; no hay garantia de rendimiento en castellano.
-- Longitud de contexto: no publicada; no es posible garantizar el manejo de bases de codigo grandes en una sola ventana.
-- Licencia: Apache 2.0, sin restricciones para uso comercial; no obstante, conviene verificar la procedencia de los datos de entrenamiento del modelo base, no documentados.
-- Las cuantizaciones Q2_K y Q3_K_M se senalan explicitamente como de calidad inferior; para produccion se recomiendan Q4_K_M o superiores.
-- Es una cuantizacion estatica de terceros (mradermacher); cualquier bug del modelo base se hereda, y las cuantizaciones imatrix (mradermacher/SpaceCode-E2B-i1-GGUF) pueden ofrecer mejor calidad percibida.
+- Idiomas limitados a portugués e inglés: el rendimiento en castellano no está garantizado y debería evaluarse antes de usarlo en producción.
+- Modelo pequeño (4,65 B de parámetros): mayor riesgo de alucinación en tareas de código complejas, APIs poco documentadas o razonamiento matemático avanzado.
+- La licencia gemma-terms-of-use impone restricciones específicas de uso comercial y de redistribución; es necesario revisar los términos de Google antes de desplegarlo en productos.
+- No se dispone de información sobre la longitud de contexto, lo que impide planificar tareas que requieran ventanas amplias (por ejemplo, análisis de repositorios completos).
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_M) degradan la calidad; se recomienda Q4_K_M o superior para uso real.
+- El componente multimodal requiere cargar los ficheros mmproj por separado; sin ellos, el modelo funciona solo como modelo de texto.
+- No hay datos publicados de benchmarks ni de evaluación de sesgos, por lo que la calidad en dominios concretos debe validarse empíricamente.
+- El repositorio tiene 0 likes y fue creado recientemente según los metadatos; la madurez y el mantenimiento del modelo no están contrastados.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones GGUF: https://huggingface.co/mradermacher/SpaceCode-E2B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/SpaceCode-E2B-GGUF
 - Modelo base: https://huggingface.co/SpaceGhost/SpaceCode-E2B
-- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/SpaceCode-E2B-i1-GGUF
-- Pagina de descarga resumida: https://hf.tst.eu/model#SpaceCode-E2B-GGUF
-- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del cuantizador: https://www.nethype.de/
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/SpaceCode-E2B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#SpaceCode-E2B-GGUF
+- Términos de licencia Gemma: https://ai.google.dev/gemma/terms
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

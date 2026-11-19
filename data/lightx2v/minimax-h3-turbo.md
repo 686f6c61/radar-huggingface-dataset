@@ -2,74 +2,96 @@
 
 ## Resumen
 
-Minimax-h3-Turbo es un modelo de generación de vídeo desarrollado por lightx2v, basado en el modelo MiniMax-H3 de MiniMaxAI. Se trata de una versión destilada que reduce el número de pasos de inferencia a 4, lo que permite una generación de vídeo más rápida manteniendo la calidad del modelo original. Está diseñado para tareas de texto a vídeo (T2V), imagen a vídeo (I2V) y referencia a vídeo (REF2V), y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en flujos de trabajo de producción.
+MiniMax-H3 Turbo es una destilación mediante LoRA del modelo generativo MiniMax-H3, publicada por el equipo de LightX2V (autor `lightx2v` en Hugging Face) bajo el identificador `lightx2v/Minimax-h3-Turbo`. No se trata de un modelo de lenguaje, sino de un modelo de generación de vídeo con audio (audio-video generation) que opera en el pipeline `image-to-video` y que reduce drásticamente el número de pasos de muestreo necesarios respecto al modelo base `MiniMaxAI/MiniMax-H3`, que requiere 29 pasos. La versión destacada, Turbo v1.2, genera vídeo a 768p en 8 pasos.
 
-El modelo se publicó en Hugging Face en agosto de 2026 y ha acumulado más de 91.000 descargas y 451 likes, lo que indica un interés significativo por parte de la comunidad. Su pipeline principal es image-to-video, aunque los flujos de trabajo comunitarios en Civitai muestran que también se utiliza para texto a vídeo y referencia a vídeo. Al ser una destilación del MiniMax-H3, hereda sus capacidades de generación de vídeo, pero con un coste computacional reducido, lo que lo hace atractivo para entornos con recursos limitados o para aplicaciones en tiempo real.
+El modelo resuelve un problema práctico de producción: la inferencia de modelos de difusión de vídeo de gran tamaño es computacionalmente muy costosa, y la destilación permite obtener resultados competitivos con una fracción del coste. Según la model card, la v1.2 se evaluó específicamente sobre casos en los que la v1.1 fallaba, comparándose contra el modelo base (29 pasos) y contra un LoRA de Pika (6 pasos). El repositorio ocupa 75,8 GB y acumula más de 1,8 millones de descargas y 1222 likes, lo que indica una adopción considerable en la comunidad.
+
+La relevancia actual del modelo radica en su naturaleza multimodal: genera vídeo y audio de forma conjunta a partir de texto, imagen o materiales de referencia (omni-reference), y se distribuye con pesos en formato `safetensors` (bf16) junto a una infraestructura de inferencia propia (LightX2V) y una plataforma online (LightX2V Studio) con API. La licencia es la MiniMax-H3 Community License Agreement, de tipo "other", lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Modelo de difusión para generación de vídeo con audio (destilación LoRA sobre MiniMax-H3); detalles internos no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Parametros activos | no aplica (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible (no aplica en el sentido de LLM; la ventana se refiere a duración de vídeo, no especificada) |
+| Tipos de cuantizacion | Pesos publicados en bf16 (safetensors); no se documentan otras cuantizaciones en la información disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Licencia | MiniMax-H3 Community License Agreement (`license: other`) |
+| Formato de pesos | safetensors (bf16) |
+| Resolucion de salida | 768p (versión v1.2, 8 pasos) |
+| Pasos de muestreo | 8 pasos (v1.1 y v1.2); modelo base: 29 pasos |
+| Tamaño del repositorio | 75,8 GB |
+| Pipeline | image-to-video |
+| Modelo base | MiniMaxAI/MiniMax-H3 |
+| Librería | minimax-h3 |
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla la arquitectura interna del modelo. Se sabe que es una destilación de MiniMax-H3, un modelo de generación de vídeo de MiniMaxAI, y que el proceso de destilación reduce el número de pasos de inferencia de los típicos 20-50 a solo 4, probablemente mediante técnicas de destilación progresiva o destilación de pasos (step distillation). El repositorio de GitHub asociado (ModelTC/Minimax-H3-Turbo) indica que el objetivo es "distilar MiniMax-H3 en 4 pasos", lo que sugiere que se ha utilizado un enfoque de destilación de conocimiento para comprimir el proceso de muestreo sin pérdida significativa de calidad.
+La información disponible indica que MiniMax-H3 Turbo es una destilación por LoRA del modelo MiniMax-H3, orientada a reducir los pasos de muestreo de 29 a 8 sin pérdida significativa de calidad. No se detalla en la model card la arquitectura interna del modelo base (tipo de backbone de difusión, mecanismo de atención, codificadores de texto/imagen/audio), por lo que estos datos deben considerarse no disponibles. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO, algo esperable en un modelo generativo de vídeo y no de lenguaje.
 
-No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas más allá de la reducción de pasos. La ausencia de estos datos limita la evaluación técnica profunda, pero la popularidad del modelo y su adopción en flujos de trabajo comunitarios indican que la destilación es efectiva en la práctica.
+La innovación técnica principal es la propia destilación: la v1.2 se entrenó y evaluó sobre casos en los que la v1.1 fallaba, lo que sugiere un proceso iterativo de refinamiento con foco en los modos de fallo. El modelo genera audio y vídeo de forma conjunta, y acepta prompts multimodales estructurados (con campos como `integrated_multimodal_description`, `overall_soundscape` y `non_diegetic_music`), lo que apunta a un codificador de texto capaz de interpretar descripciones ricas en sonido y puesta en escena. La infraestructura de inferencia es LightX2V, un framework propio del equipo.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (T2V): permite crear clips de vídeo a partir de descripciones textuales.
-- Generación de vídeo a partir de imágenes (I2V): toma una imagen de entrada y genera una secuencia de vídeo animada a partir de ella.
-- Referencia a vídeo (REF2V): permite usar un vídeo de referencia para guiar la generación de nuevos vídeos, manteniendo estilo, movimiento o composición.
-- Inferencia rápida: al requerir solo 4 pasos de muestreo, es significativamente más rápido que el modelo original, lo que facilita su uso en iteraciones de diseño y producción.
-- Integración con flujos de trabajo de ComfyUI: existen workflows comunitarios en Civitai que lo integran con herramientas de automatización de prompts y previsualización de vídeo.
-- Soporte multilingüe: aunque no se especifican idiomas, el modelo base MiniMax-H3 soporta inglés y chino, por lo que es probable que esta versión herede dicha capacidad.
+- Generación de vídeo con audio sincronizado a partir de texto (text-to-audio/video).
+- Generación de vídeo con audio a partir de una imagen de entrada (image-to-audio/video).
+- Generación guiada por materiales de referencia (omni-reference audio/video).
+- Interpretación de prompts multimodales estructurados con descripción visual, paisaje sonoro y música no diegética.
+- Salida a 768p en 8 pasos de muestreo (versión v1.2).
+- Soporte de integración vía API a través de LightX2V Studio.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-step ni soporte multilingüe explícito.
 
 ## Casos de uso
 
-- Creación de contenido para redes sociales: los creadores pueden generar clips cortos de vídeo a partir de prompts de texto o imágenes de referencia, acelerando la producción de contenido para plataformas como TikTok, Instagram o YouTube Shorts.
-- Previsualización de escenas en producción audiovisual: directores y editores pueden usar el modelo para generar storyboards animados o previsualizaciones rápidas de escenas antes de la producción final, reduciendo costes y tiempo.
-- Generación de vídeos de producto para e-commerce: a partir de una imagen estática de un producto, el modelo puede crear vídeos animados que muestren el producto desde diferentes ángulos o en movimiento, mejorando la experiencia de compra.
-- Prototipado de animaciones para videojuegos: los desarrolladores pueden generar secuencias de vídeo de prueba para personajes o entornos, validando conceptos visuales antes de invertir en animación completa.
-- Automatización de vídeos educativos: el modelo puede convertir diagramas o imágenes estáticas en vídeos explicativos animados, facilitando la creación de material didáctico.
-- Asistencia en diseño de moda: a partir de bocetos o fotografías de prendas, el modelo puede generar vídeos que muestren el movimiento de la tela o la prenda en uso, útil para diseñadores y marcas.
+- Producción de vídeo publicitario con audio: el modelo genera clips de 768p con sonido ambiente y música a partir de un prompt descriptivo, lo que permite iterar creatividades en 8 pasos en lugar de 29 y reducir el coste por variante.
+- Creación de avatares y contenido multimodal: LightX2V Studio está orientado a la creación de avatares con IA; el modelo encaja en flujos de imagen a vídeo con audio para presentadores virtuales.
+- Previsualización rápida de storyboards: partiendo de una imagen fija, se generan animaciones con audio para validar una secuencia antes de producirla con herramientas de mayor calidad.
+- Generación de material para redes sociales: clips cortos con sonido integrado a partir de una imagen de producto o una escena, sin necesidad de posproducción de audio.
+- Prototipado en investigación de difusión de vídeo: la reducción a 8 pasos facilita experimentos de ablación y comparaciones con el modelo base de 29 pasos en entornos con recursos limitados.
+- Integración en pipelines automatizados vía API: el servicio de LightX2V Studio permite incorporar la generación de vídeo con audio en aplicaciones y flujos de trabajo sin instalación local ni GPU propia.
+- Evaluación comparativa de técnicas de destilación: el repositorio publica comparaciones entre el modelo base, un LoRA de Pika y las versiones v1.1 y v1.2, útil como referencia para estudiar el compromiso entre pasos y calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos objetivos sobre calidad de vídeo, fidelidad temporal o comparación con otros modelos de generación de vídeo. La única métrica indirecta es la popularidad en la comunidad y la existencia de workflows que lo utilizan, pero no sustituyen a una evaluación cuantitativa.
+No se han publicado resultados de benchmarks cuantitativos (métricas tipo FVD, CLIP score, etc.) en la información disponible. La model card incluye únicamente comparaciones cualitativas mediante ejemplos en vídeo entre MiniMax-H3 (29 pasos), Pika LoRA (6 pasos), Turbo v1.1 (8 pasos) y Turbo v1.2 (8 pasos), sin cifras.
 
 ## Requisitos de hardware
 
-- No se dispone de información oficial sobre requisitos de VRAM, GPUs recomendadas o latencia.
-- Al ser un modelo de generación de vídeo, se espera que requiera una GPU con al menos 16-24 GB de VRAM para inferencia en FP16, aunque la destilación a 4 pasos reduce la carga computacional en comparación con el modelo original.
-- Es probable que sea ejecutable en GPUs de consumo como la RTX 4090 (24 GB) o la RTX 3090 (24 GB), pero no hay confirmación oficial.
-- Para despliegue, se puede usar ComfyUI (según los workflows comunitarios) o posiblemente vLLM o TGI si el modelo se exporta a formatos compatibles, aunque no se especifica.
-- Dado que es un modelo de vídeo, el throughput dependerá de la resolución y duración del clip generado; no hay datos numéricos disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio de 75,8 GB en bf16 sugiere requisitos de memoria elevados, propios de un modelo de difusión de vídeo de gran tamaño.
+- GPU recomendadas: no especificadas en la información disponible; por el tamaño y la naturaleza del modelo, se orienta a GPU de centro de datos (A100, H100) más que a GPU de consumo.
+- Viabilidad en GPU de consumo: no confirmada; no se documenta en la model card qué GPU consumer pueden ejecutarlo.
+- Opciones de despliegue: framework LightX2V (repositorio GitHub de MiniMax-H3 Turbo y ejemplos en LightX2V), además del servicio online LightX2V Studio y su API.
+- Latencia y throughput: no disponibles; la reducción de 29 a 8 pasos implica una aceleración aproximada de 3,6x en el número de evaluaciones del modelo, aunque no se publican tiempos absolutos.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos de generación de vídeo como Stable Video Diffusion, AnimateDiff o el propio MiniMax-H3 original. No hay datos de parámetros, rendimiento o calidad que permitan una comparación objetiva. Se recomienda consultar la documentación del modelo base MiniMax-H3 para obtener una referencia de capacidades.
+| Modelo | Pasos | Resolucion | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax-H3 Turbo v1.2 | 8 | 768p | Destilación LoRA de vídeo+audio | MiniMax-H3 Community License | Hugging Face + LightX2V Studio |
+| MiniMax-H3 (base) | 29 | no disponible | Vídeo+audio | MiniMax-H3 Community License | Hugging Face (MiniMaxAI) |
+| Pika LoRA | 6 | no disponible | LoRA de vídeo | no disponible | no disponible en la información |
+
+No se dispone de datos de rendimiento cuantitativos que permitan una comparación objetiva con alternativas de la misma categoría; la comparación de la model card es cualitativa y basada en ejemplos visuales.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos o alucinaciones específicas del modelo. Como cualquier modelo generativo, puede producir vídeos con inconsistencias visuales, artefactos o contenido no deseado.
-- La destilación a 4 pasos puede degradar ligeramente la calidad en comparación con el modelo original, especialmente en escenas complejas o con mucho movimiento.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base MiniMax-H3 también tenga una licencia compatible; en este caso, el tag de Hugging Face indica Apache 2.0, pero la ficha de la licencia dice "no disponible", por lo que se recomienda revisar los términos exactos.
-- No hay documentación oficial sobre límites de contexto, resolución máxima de vídeo o duración de los clips generados.
-- El modelo está orientado a vídeo, por lo que no es adecuado para tareas de texto, código o razonamiento general.
+- La información sobre arquitectura interna, parámetros y datos de entrenamiento no está publicada, lo que dificulta la auditoría técnica.
+- Al ser un modelo destilado, puede presentar degradación en casos complejos; la propia model card reconoce que la v1.1 fallaba en determinados escenarios, corregidos en la v1.2.
+- Riesgo de alucinación visual y sonora: como modelo generativo, puede producir contenido incoherente con el prompt, especialmente en escenas con física compleja o audio sincronizado.
+- La licencia MiniMax-H3 Community License Agreement es de tipo "other" y condiciona el uso comercial; es necesario revisar el archivo LICENSE antes de cualquier despliegue en producción.
+- No se documentan idiomas soportados ni sesgos conocidos; la ausencia de esta información impide evaluar su comportamiento multilingüe o su equidad.
+- El tamaño del repositorio (75,8 GB) y los requisitos de memoria asociados limitan su uso a infraestructuras con GPU de gama alta o al servicio online.
+- No se especifican limitaciones de duración de vídeo ni de resolución más allá de 768p en la versión destacada.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/lightx2v/Minimax-h3-Turbo)
-- [Repositorio de destilación en GitHub](https://github.com/ModelTC/Minimax-H3-Turbo)
-- [Workflow de filmación avanzada en Civitai](https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features)
-- [Workflows T2V/I2V con Turbo LoRA en Civitai](https://civitai.red/models/2850104/minimax-h3-t2v-i2v-workflows-turbo-lora-auto-prompting-and-video-preview)
+- Modelo en Hugging Face: https://huggingface.co/lightx2v/Minimax-h3-Turbo
+- Pesos v1.2 (8 pasos, 768p, bf16): https://huggingface.co/lightx2v/Minimax-h3-Turbo/blob/main/minimax_h3_fl2v_turbo_8step_v1.2_768p_bf16.safetensors
+- Repositorio GitHub de MiniMax-H3 Turbo: https://github.com/ModelTC/Minimax-H3-Turbo
+- Especificaciones del modelo: https://github.com/ModelTC/Minimax-H3-Turbo#model-specs
+- Ejemplos de LightX2V para MiniMax-H3: https://github.com/ModelTC/LightX2V/blob/main/scripts/minimax_h3/README.md
+- LightX2V Studio (app online): https://x2v.light-ai.top/
+- Documentación de la API: https://x2v.light-ai.top/api-docs
+- Precios del servicio online: https://x2v.light-ai.top/pricing

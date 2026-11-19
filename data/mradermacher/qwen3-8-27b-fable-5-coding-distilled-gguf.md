@@ -2,114 +2,105 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-GGUF` es un repositorio de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo `khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled`. No se trata de un modelo entrenado por el autor del repositorio, sino de una redistribución optimizada para inferencia local mediante llama.cpp y runtimes compatibles. El checkpoint original cuenta con 27.320.697.856 parámetros (unos 27,3 mil millones), lo que lo sitúa en la franja de modelos densos de gran tamano aptos para una o varias GPU de gama alta.
+Qwen3.8-27B-Fable-5-Coding-Distilled-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled, publicada por el usuario mradermacher, especializado en la conversión de pesos a formatos de inferencia local. El modelo subyacente es un transformer denso de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones), afinado específicamente para generación de código, depuración y flujos de trabajo agénticos, a partir de trazas de entrenamiento del dataset DSFFGFG456/fable-5-coding-and-debugging-traces y con un proceso de destilación sobre una base Qwen de la familia 3.8.
 
-El nombre del modelo sugiere una destilación orientada a código sobre una base de la familia Qwen, pero esta afirmación no está confirmada en la información disponible: la model card del repositorio se limita a una línea que referencia el modelo de origen, sin detallar arquitectura, datos de entrenamiento, licencia ni idiomas. El repositorio ocupa 28,2 GB e incluye un conjunto de cuantizaciones que abarca desde f16 hasta Q2_K, pasando por IQ4_XS y las familias Q3, Q4, Q5, Q6 y Q8.
+La relevancia de esta publicación es práctica: el repositorio original en safetensors requiere alrededor de 55 GB en FP16, mientras que estas cuantizaciones reducen el peso a entre 11 GB (Q2_K) y 29,1 GB (Q8_0), lo que permite ejecutar un modelo de 27B en GPUs de consumo con 16-24 GB de VRAM o incluso en configuraciones con memoria unificada. El repositorio acumula 878.529 descargas y 36 likes, lo que indica una adopción notable dentro del ecosistema de inferencia local con llama.cpp y derivados.
 
-La relevancia de esta ficha es doble. Por un lado, permite desplegar un modelo de ~27B en hardware de consumo o en una única GPU profesional de 24-48 GB según la cuantización elegida. Por otro, y de forma igualmente importante, documenta un caso habitual en el ecosistema open source: derivados con licencia e información opacas, publicados sin benchmarks ni model card sustantiva, cuyo uso en producción exige una verificación previa por parte del equipo que los adopte.
+La licencia es Apache 2.0, lo que facilita el uso comercial sin restricciones adicionales más allá de las obligaciones de atribución habituales. El autor de las cuantizaciones declara únicamente el idioma inglés en los metadatos, y no se han publicado especificaciones detalladas de contexto, arquitectura interna ni resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se documenta en el repositorio; compatible con llama.cpp) |
-| Parametros totales | 27.320.697.856 (~27,3 mil millones) |
-| Parametros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16 (etiquetada como x-f16), Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF |
-| Modelo de origen | khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled |
-| Tamano del repositorio | 28,2 GB |
-| Etiquetas declaradas | gguf, endpoints_compatible, region:us, conversational |
-| Fecha de creacion / actualizacion | 2026-09-16 / 2026-09-16 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer denso (detalles internos no disponibles) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | Inglés (según metadatos del autor) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en el material disponible. El repositorio es una conversión a GGUF (`convert_type: hf`, `quantize_version: 2`), lo que implica que la arquitectura subyacente está soportada por el conversor de llama.cpp, pero no permite deducir si se trata de un transformer denso, un modelo de mezcla de expertos o una arquitectura híbrida. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de ajuste por instrucciones, RLHF o DPO.
+El modelo base es un transformer denso de 27,3 mil millones de parámetros derivado de la familia Qwen 3.8, según se deduce del identificador del repositorio. El autor del modelo base (khazarai) lo describe como un modelo "distilled" orientado a coding y agentic-coding, entrenado sobre el dataset DSFFGFG456/fable-5-coding-and-debugging-traces, que contiene trazas de codificación y depuración. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset, la presencia de fases de RLHF o DPO, ni detalles sobre innovaciones arquitectónicas específicas más allá de la etiqueta "unsloth" en los tags, que sugiere el uso de técnicas de ajuste eficiente de Unsloth durante el entrenamiento o el afinado.
 
-El identificador del modelo incluye el término "Coding-Distilled", lo que sugiere un proceso de destilación sobre datos de código, y el prefijo "Qwen3.8-27B" apunta a una base de la familia Qwen. Ambos extremos son inferencias a partir del nombre y no están corroborados por ninguna fuente del repositorio. La model card del autor de la cuantización se limita a indicar que se trata de cuantizaciones estáticas del checkpoint `khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled`, sin aportar ninguna innovación técnica adicional ni detalles del proceso de destilación.
+La contribución técnica de esta publicación concreta es la cuantización estática mediante el pipeline de mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf), que genera variantes GGUF compatibles con llama.cpp. Se incluyen además dos ficheros mmproj (Q8_0 y f16), lo que indica que el modelo base incorpora capacidades multimodales (probablemente visión) que requieren un proyector separado para funcionar en llama.cpp. Existe una variante con cuantización ponderada e imatrix publicada en el repositorio hermano mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-i1-GGUF, que el autor recomienda para calidad superior en tamaños equivalentes.
 
 ## Capacidades
 
-Las siguientes capacidades se infieren exclusivamente de las etiquetas declaradas y del nombre del repositorio; no hay documentación que las confirme:
-
-- Generación de texto conversacional: la etiqueta `conversational` indica que el modelo está orientado a diálogo multi-turno.
-- Generación y asistencia en código: el sufijo "Coding-Distilled" del identificador apunta a un ajuste específico para tareas de programación, sin que se especifiquen lenguajes ni benchmarks.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse detrás de APIs compatibles con el formato de inferencia habitual.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declara ningún idioma).
-- Capacidades especiales (modo thinking, visión, audio, decodificación especulativa): no disponible.
+- Generación de código en múltiples lenguajes, con especial énfasis en tareas de codificación y depuración según la composición declarada del dataset de entrenamiento.
+- Razonamiento multi-paso y resolución de problemas de programación, incluyendo la etiqueta "reasoning" en los metadatos.
+- Flujos agénticos de codificación (agentic-coding): planificación de tareas, edición de ficheros y ejecución iterativa de comandos en entornos de desarrollo.
+- Depuración de código: análisis de errores, identificación de causas y propuesta de correcciones, a partir de las trazas de debugging del dataset.
+- Capacidades multimodales: la presencia de ficheros mmproj en el repositorio sugiere soporte de entrada de imágenes, aunque no se detalla la naturaleza exacta en la información disponible.
+- Conversación multi-turno (tag "conversational").
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita el despliegue como servicio.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
 
 ## Casos de uso
 
-Dado que no hay benchmarks ni model card sustantiva, los siguientes escenarios son aplicaciones plausibles del formato y tamano del modelo, no casos validados por el autor:
-
-- Asistencia de código en local: un modelo de ~27B cuantizado a Q4_K_M ocupa aproximadamente 16-17 GB, por lo que puede ejecutarse en una GPU de 24 GB y usarse como autocompletado o generación de funciones vía llama.cpp u Ollama, sin enviar código propietario a servicios externos.
-- Revisión de pull requests en CI/CD: integrado mediante la API de un servidor compatible con OpenAI (llama.cpp server, vLLM, Ollama), el modelo puede analizar diffs y generar comentarios automáticos, siempre que se valide previamente su calidad con un conjunto de pruebas propio.
-- Generación de documentación técnica: dado su supuesto origen orientado a código, resulta adecuado para producir docstrings y documentación de APIs a partir del código fuente en pipelines por lotes.
-- Chatbot interno de soporte a desarrolladores: la etiqueta `conversational` y el contexto de código permiten desplegarlo como asistente interno que responda preguntas sobre una base de código concreta, inyectando fragmentos relevantes vía RAG.
-- Procesamiento por lotes sin conexión: con la cuantización Q8_0 o f16 en una GPU de 40-80 GB, se puede usar para tareas de reescritura, resumen o traducción de fragmentos técnicos en modo batch.
-- Experimentación e investigación: sirve como punto de comparación frente a otros derivados GGUF de escala similar, dado que el formato permite intercambiar cuantizaciones sin cambiar el código de inferencia.
-- Despliegue en estaciones de trabajo sin GPU de datacenter: las cuantizaciones Q3_K_M y Q2_K, de aproximadamente 13 y 10 GB, permiten ejecución parcial o total en CPU con RAM suficiente, a costa de una degradación notable de calidad.
+- Asistente de codificación en el IDE: integrado mediante llama.cpp u Ollama, el modelo puede autocompletar funciones, explicar código existente y proponer refactorizaciones, con la ventaja de que la cuantización Q4_K_M (16,9 GB) cabe en GPUs de consumo de 24 GB y mantiene la privacidad del código al ejecutarse en local.
+- Depuración automatizada en pipelines de CI: dado su entrenamiento sobre trazas de codificación y depuración, puede analizar logs de fallos, identificar la línea culpable y generar parches candidatos que se validen en el propio pipeline antes de fusionar.
+- Agente de desarrollo autónomo: con capacidad de razonamiento multi-paso, puede descomponer una tarea (por ejemplo, añadir una funcionalidad a un repositorio), inspeccionar ficheros, aplicar cambios y verificar resultados en un bucle controlado por el orquestador.
+- Generación de tests unitarios: a partir de una firma de función o de un módulo, el modelo puede producir casos de prueba y datos de ejemplo, reduciendo el trabajo manual en proyectos con cobertura baja.
+- Migración y modernización de código legacy: el modelo puede traducir fragmentos entre lenguajes o entre versiones de un framework, y justificar los cambios, lo que resulta útil en tareas de mantenimiento a gran escala.
+- Asistencia en entornos con requisitos de soberanía del dato: al ser Apache 2.0 y ejecutable en hardware propio, encaja en organizaciones que no pueden enviar código a APIs externas, usando la cuantización Q8_0 (29,1 GB) en una A100 40 GB o Q4_K_M en una RTX 4090.
+- Chat técnico de soporte a desarrolladores: con la etiqueta "conversational" y compatibilidad con endpoints, puede desplegarse como servicio interno que responde dudas sobre una base de código concreta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizaciones no incluye ningún dato de MMLU, HumanEval, GSM8K, MBPP ni de ninguna otra evaluación, y la búsqueda web realizada no devolvió fuentes relacionadas con el modelo. Por tanto, no es posible comparar su rendimiento con el de alternativas de forma verificable.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM son estimaciones derivadas del recuento de parámetros (27,32 mil millones) y de los bits por peso típicos de cada cuantización, más un margen para la caché KV. No proceden de mediciones publicadas por el autor:
-
-| Cuantizacion | Tamano aproximado de pesos | VRAM recomendada (con cache KV) | GPU de ejemplo |
-|---|---|---|---|
-| f16 | ~54,6 GB | 60-70 GB | A100 80 GB, H100 80 GB |
-| Q8_0 | ~29 GB | 34-40 GB | A100 40 GB, 2x RTX 4090 |
-| Q6_K | ~22,4 GB | 27-32 GB | A100 40 GB, RTX 5090 32 GB |
-| Q5_K_M | ~19,4 GB | 24-28 GB | RTX 3090 / 4090 24 GB (ajustado) |
-| Q4_K_M | ~16,6 GB | 20-24 GB | RTX 4090 24 GB, RTX 4080 16 GB (ajustado) |
-| IQ4_XS | ~14,5 GB | 18-22 GB | RTX 4080, RTX 5080 |
-| Q3_K_M | ~13,4 GB | 16-20 GB | RTX 4080 16 GB, RTX 4070 Ti |
-| Q2_K | ~10,1 GB | 12-16 GB | RTX 4070 12 GB, RTX 3060 12 GB |
-
-- Cabe en GPU de consumo: sí, desde Q4_K_M hacia abajo en GPUs de 16-24 GB; Q2_K y Q3_K en GPUs de 12 GB, con pérdida de calidad apreciable.
-- Opciones de despliegue: llama.cpp (llama-server, llama-cli), Ollama, LM Studio, text-generation-webui y cualquier runtime que consuma GGUF. vLLM y TGI requieren normalmente pesos en safetensors, por lo que no sirven directamente para este repositorio; sería necesario recurrir al checkpoint original.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
-- Observación sobre el repositorio: el tamano total declarado (28,2 GB) es inferior a la suma teórica de todas las cuantizaciones listadas, incluida f16. Esto sugiere que el repositorio podría no contener todos los ficheros anunciados o que la cifra corresponde a un estado parcial de la subida.
+- VRAM estimada para inferencia (pesos + overhead de contexto, valores orientativos según el tamaño de los ficheros GGUF):
+  - Q2_K: ~11 GB de pesos; ~12-13 GB en total con contexto moderado.
+  - Q3_K_M: ~13,6 GB de pesos; ~15 GB en total.
+  - IQ4_XS: ~15,5 GB de pesos; ~17 GB en total.
+  - Q4_K_M: ~16,9 GB de pesos; ~18-19 GB en total.
+  - Q5_K_M: ~19,6 GB de pesos; ~21 GB en total.
+  - Q6_K: ~22,5 GB de pesos; ~24 GB en total.
+  - Q8_0: ~29,1 GB de pesos; ~31 GB en total.
+- GPU recomendadas:
+  - RTX 4090 (24 GB): Q4_K_M, IQ4_XS y Q5_K_M con contexto moderado; Q6_K al límite.
+  - RTX 3090 / 4080 (16-24 GB): Q4_K_S o Q3_K_L según el contexto requerido.
+  - A100 40 GB / H100: Q8_0 o Q6_K con contexto amplio.
+  - Configuraciones multi-GPU o con memoria unificada (Apple Silicon de 32 GB o más): Q5_K_M o Q6_K.
+- Cabe en GPU de consumo: sí, desde Q2_K (11 GB) en GPUs de 12 GB, hasta Q4_K_M (16,9 GB) en GPUs de 24 GB. Las cuantizaciones Q8_0 requieren GPU profesional o memoria unificada amplia.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI (el tag "endpoints_compatible" lo indica). Para los ficheros mmproj se requiere un runtime con soporte multimodal de llama.cpp.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No existe información verificable sobre el rendimiento, contexto o licencia de este modelo, por lo que la comparación solo puede establecerse a nivel de formato y disponibilidad. Las cifras de las alternativas proceden de la documentación pública de cada proyecto y deben verificarse antes de tomar decisiones:
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Fable-5-Coding-Distilled (GGUF, este) | 27,3 B | No disponible | Apache 2.0 | GGUF | Cuantizaciones estáticas; variante i1 con imatrix disponible |
+| Qwen3.8-27B-Fable-5-Coding-Distilled (base, safetensors) | 27,3 B | No disponible | Apache 2.0 | Safetensors | Pesos originales; ~55 GB en FP16 |
+| Modelos Qwen de ~27-32B de la familia 3.x | ~27-32 B | No disponible | Apache 2.0 (habitual en la familia) | Safetensors, GGUF | Alternativas de referencia de la misma familia; comparación de rendimiento no disponible |
+| Modelos de código de ~30B (por ejemplo, variantes Code de la familia Qwen) | ~30 B | No disponible | Variable | Safetensors, GGUF | Categoría equivalente en tamaño y tarea; sin datos de benchmark para comparar |
 
-| Modelo | Parametros | Contexto | Licencia | Formato GGUF |
-|---|---|---|---|---|
-| Qwen3.8-27B-Fable-5-Coding-Distilled (esta version) | ~27,3B | no disponible | no disponible | Sí, 12 cuantizaciones |
-| Qwen2.5-Coder-32B-Instruct | ~32,8B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Sí, comunidad |
-| DeepSeek-Coder-V2-Lite-Instruct | ~15,7B totales, ~2,4B activos (MoE) | 128.000 tokens | Licencia propia de DeepSeek | Sí, comunidad |
-| CodeLlama-34B-Instruct | ~33,7B | 16.384 tokens | Licencia de comunidad de Llama 2 | Sí, comunidad |
-
-La ventaja diferencial de este repositorio frente a las alternativas es únicamente la disponibilidad inmediata en GGUF con un espectro amplio de cuantizaciones, mientras que su desventaja es la ausencia total de datos de rendimiento, licencia e idiomas. Para una evaluación rigurosa sería necesario consultar el checkpoint original en `khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled` y ejecutar una batería propia de pruebas.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación se limita a parámetros, licencia y disponibilidad de formatos.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: sin una licencia declarada, no puede asumirse permiso para uso comercial. Cualquier despliegue en producción debería bloquearse hasta aclarar este punto con el autor del modelo original.
-- Ausencia total de benchmarks: no hay evidencia publicada de calidad en código, matemáticas o razonamiento. No debe asumirse que un modelo etiquetado como "Coding-Distilled" supera a alternativas consolidadas.
-- Model card inexistente en la práctica: se desconoce la composición del dataset de entrenamiento, si hubo filtrado de datos, y si existen sesgos conocidos o contaminación de benchmarks.
-- Riesgo de alucinación: no cuantificado. Al ser un modelo de ~27B sin evaluación publicada, la tasa de invención en tareas de código (APIs inexistentes, firmas incorrectas) es desconocida.
-- Idiomas no declarados: no hay garantía de un rendimiento aceptable en castellano ni en ningún otro idioma distinto del que se usara en el entrenamiento.
-- Contexto desconocido: no se especifica la ventana de contexto, lo que impide planificar tareas de análisis de repositorios completos o conversaciones largas.
-- Degradación por cuantización: las variantes Q2_K y Q3_K reducen la precisión de forma notable en modelos de este tamano; para uso serio en código se recomienda Q5_K_M o superior.
-- Repositorio sin validación social: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de retroalimentación de la comunidad sobre posibles defectos de conversión o ficheros corruptos.
-- Procedencia del modelo base: el prefijo "Qwen3.8-27B" no corresponde a ningún lanzamiento oficial conocido de la familia Qwen, por lo que conviene confirmar con el autor del checkpoint original qué base se utilizó realmente y bajo qué términos se distribuye.
-- Fechas del repositorio: la fecha de creación declarada (2026-09-16) es posterior al momento habitual de publicación de modelos de esta familia, un detalle que conviene verificar directamente en Hugging Face.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo afinado sobre trazas de código, puede heredar sesgos de estilo y de ecosistema (lenguajes y frameworks sobrerrepresentados en el dataset).
+- Riesgo de alucinación: presente como en cualquier LLM; en tareas de código puede generar APIs inexistentes o firmas incorrectas, por lo que se recomienda validar la salida con tests y compiladores antes de usarla en producción.
+- Limitaciones de contexto e idioma: el autor declara únicamente inglés; el rendimiento en castellano no está garantizado. La longitud de contexto no está documentada, lo que impide planificar casos de uso con ventanas largas sin verificación empírica.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; no se han identificado cláusulas adicionales en la información disponible. Conviene verificar la licencia del modelo base y del dataset de entrenamiento por si impusieran condiciones adicionales.
+- Caveats para producción: las cuantizaciones Q2_K y Q3_K_S degradan la calidad de forma notable; el autor recomienda Q4_K_S o Q4_K_M para uso general y Q6_K/Q8_0 cuando la calidad sea crítica. La variante i1 (imatrix) del repositorio hermano puede ofrecer mejor relación calidad/tamaño.
+- Los ficheros mmproj son necesarios para las capacidades multimodales; sin ellos, el modelo funciona solo con texto. La naturaleza exacta de la modalidad soportada no está documentada.
+- El repositorio ocupa 190,8 GB en total; la descarga selectiva de una sola cuantización es imprescindible para no consumir almacenamiento innecesario.
+- No se dispone de información sobre el proceso de alineación (RLHF/DPO) del modelo base, lo que limita la evaluación de su comportamiento en dominios sensibles.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-GGUF
-- Modelo de origen: https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp
-- Búsqueda web realizada: no se han encontrado papers, blogs, repositorios ni demos relacionados con este modelo. Los únicos resultados devueltos fueron páginas del servicio Google Translate (https://translate.google.com/), sin relación con el modelo.
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-GGUF
+- Modelo base: https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled
+- Variante con imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Fable-5-Coding-Distilled-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/DSFFGFG456/fable-5-coding-and-debugging-traces
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica comparativa de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png

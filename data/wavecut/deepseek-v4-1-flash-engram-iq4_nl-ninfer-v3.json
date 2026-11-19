@@ -44,11 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3",
-      "url": "https://huggingface.co/WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3",
-      "snippet": "07.05.2026 ... The Engram table is a separate download, shared by every NInfer conversion of DeepSeek-V4.1-Flash-1017: WaveCut/DeepSeek-V4.1-Flash-Engram- ..."
-    }
-  ]
+  "sources": []
 }

@@ -2,92 +2,91 @@
 
 ## Resumen
 
-`table_transformer-mic` es un artefacto de prueba publicado por el usuario `huggingface-mic` a partir del modelo `microsoft/table-transformer-detection`. No se trata de un modelo entrenado ni utilizable en producción: la propia model card lo etiqueta como `test-artifact` y lo describe como un *fixture* reducido de 11,4 millones de parámetros con pesos aleatorios (semilla 17). Su propósito es servir como banco de pruebas para validar contratos de integración, expectativas de frameworks y flujos de herramientas de la infraestructura de Hugging Face.
+`huggingface-mic/table_transformer-mic` es un artefacto de prueba (fixture) derivado de `microsoft/table-transformer-detection`, el modelo de deteccion de tablas en documentos de Microsoft. No se trata de un modelo entrenado ni de un modelo utilizable en produccion: es una version reducida artificialmente del checkpoint original, con pesos aleatorios y una configuracion de arquitectura mas pequena, publicada con la etiqueta `test-artifact` para validar contratos de integracion en el ecosistema Transformers.
 
-El modelo conserva la arquitectura `TableTransformerForObjectDetection` del checkpoint original, pero con una configuración reducida: 2 capas de encoder y 2 de decoder. Los ficheros de procesador (`preprocessor_config.json`) se copiaron byte a byte del modelo base, y los nombres de los tensores coinciden con los del checkpoint real, de modo que el fixture puede sustituir al modelo original en pruebas de carga e inferencia sin requerir los recursos computacionales del verdadero detector de tablas.
+El modelo base, Table Transformer Detection, es una variante de DETR especializada en localizar regiones de tabla dentro de imagenes de documentos (paginas escaneadas, PDF renderizados). La arquitectura es `TableTransformerForObjectDetection`, un transformer encoder-decoder con backbone convolucional que predice cajas delimitadoras mediante consultas de objeto. El fixture conserva esa arquitectura pero reduce el numero de capas del encoder y del decoder a 2 cada una, resultando en 11.396.359 parametros.
 
-Es relevante únicamente en el contexto de ingeniería de software: permite a desarrolladores de la infraestructura de Hugging Face y de librerías de integración verificar que sus pipelines manejan correctamente la arquitectura Table Transformer sin descargar ni ejecutar el modelo completo de Microsoft. No debe confundirse con un modelo funcional de detección de tablas.
+Su relevancia es exclusivamente de ingenieria: sirve como caso de prueba reproducible para verificar que los pipelines de carga, preprocesado e inferencia de Transformers se comportan de forma consistente frente a un checkpoint con la misma estructura tensorial que el modelo real. No debe emplearse para deteccion de tablas ni para ninguna tarea de vision real, ya que sus pesos son aleatorios (semilla 17) y no han sido entrenados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | TableTransformerForObjectDetection (DETR adaptado a detección de tablas) |
-| Parámetros totales | 11.396.359 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | TableTransformerForObjectDetection (transformer encoder-decoder para deteccion de objetos, base DETR) |
+| Parametros totales | 11.396.359 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de vision, no de lenguaje) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32; verificado tambien en bfloat16 y float16) |
+| Idiomas soportados | no disponible (modelo de vision, sin capacidades linguisticas) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (float32) |
+| Formato de pesos | safetensors |
+| Modelo base | microsoft/table-transformer-detection |
+| Capas encoder / decoder | 2 / 2 (reducidas respecto al modelo original) |
+| Preprocesado | `preprocessor_config.json` copiado byte a byte del modelo base |
+| Tipo de artefacto | test-artifact (fixture de pruebas, pesos aleatorios semilla 17) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura `TableTransformerForObjectDetection`, una adaptación de DETR para detección de tablas y sus componentes estructurales. En esta versión reducida, el encoder y el decoder cuentan con 2 capas cada uno, frente a la configuración completa del checkpoint original. Los ficheros de procesador son idénticos byte a byte a los de `microsoft/table-transformer-detection`, y los nombres de los tensores coinciden con los del checkpoint real.
+El modelo sigue la arquitectura DETR aplicada a deteccion de tablas: un backbone convolucional extrae caracteristicas de la imagen del documento, un encoder transformer las procesa y un decoder transformer con consultas de objeto predice las cajas delimitadoras de las tablas. La clase de implementacion es `TableTransformerForObjectDetection`, la misma que emplea el checkpoint original de Microsoft.
 
-No hubo entrenamiento. Los pesos son aleatorios, generados con semilla 17, y se validaron mediante una compuerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (el caso más débil, `pixel_values:reverse`, produjo 0,00502). El modelo se guardó en float32 y se verificó que es finito en float32, bfloat16 y float16 tanto en forward como en pérdida y gradientes. La clave del fixture es `39c20ea7dc73`.
+No ha habido entrenamiento. El fixture se genero mediante la regla generica de reduccion implementada en `sweep.py` del repositorio `huggingface/transformers-mic`, que reduce el numero de capas del encoder y del decoder a 2. Los pesos son aleatorios con semilla 17 y se validaron con una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (el caso mas debil, `pixel_values:reverse`, 0,00502), lo que se considero suficiente para no requerir entrenamiento. Los nombres de tensores coinciden exactamente con los del checkpoint real y los pesos se guardaron en float32, el dtype por defecto del modelo base, verificandose valores finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture es `39c20ea7dc73` y cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya configuracion coincide tras la reduccion.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no producen detecciones de tablas con sentido.
-- Sirve como fixture de prueba para validar la carga de la arquitectura Table Transformer en frameworks de integración.
-- Permite verificar contratos de entrada y salida definidos en `integration.json`.
-- Valida expectativas de frameworks documentadas en `integrations/transformers/expectations`.
-- Comprueba la compatibilidad de los ficheros de procesador copiados del modelo base.
-- Ejercita rutas de código de forward, pérdida y gradientes en float32, bfloat16 y float16.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
+- No dispone de capacidades funcionales reales: los pesos son aleatorios y no producen detecciones significativas.
+- Replica la interfaz de inferencia de `TableTransformerForObjectDetection` (entrada `pixel_values`, salida de logits y cajas), lo que permite validar pipelines de carga y preprocesado.
+- Sirve para comprobar la compatibilidad de procesadores: el `preprocessor_config.json` es identico al del modelo base.
+- Permite verificar la estabilidad numerica en float32, bfloat16 y float16 (forward, loss y gradientes finitos).
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues.
+- No incluye vision generativa ni modos de pensamiento: es un detector de objetos, no un modelo generativo.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: el fixture permite cargar `TableTransformerForObjectDetection` con un checkpoint ligero y verificar que la clase se instancia correctamente sin descargar el modelo completo de Microsoft.
-- Validación de contratos de API: `integration.json` define el contrato de entradas y salidas, y el fixture permite comprobar que una implementación lo respeta antes de pasar al modelo real.
-- CI/CD de librerías de inferencia: al ocupar un repositorio de tamaño mínimo (0,0 GB) y 11,4M de parámetros, se puede incluir en pipelines de integración continua sin penalizar tiempos ni almacenamiento.
-- Verificación de dtypes: comprobar que un pipeline maneja correctamente float32, bfloat16 y float16 en forward, pérdida y gradientes usando un modelo que es finito en los tres formatos.
-- Pruebas de sustitución de checkpoints: al conservar los nombres de tensores del modelo real, permite validar lógica de carga y mapeo de pesos que luego se aplicará a `microsoft/table-transformer-detection`.
-- Regresión de procesadores: verificar que los ficheros de preprocesado copiados byte a byte se cargan y aplican sin errores en distintas versiones de la librería.
-- Desarrollo de herramientas de inspección de modelos: usar el fixture para probar utilidades que analizan arquitecturas, configuraciones y pesos sin necesidad de modelos pesados.
+- Pruebas de integracion en Transformers: cargar el fixture con `TableTransformerForObjectDetection.from_pretrained` para verificar que el pipeline de carga de checkpoints de deteccion funciona sin descargar el modelo completo de Microsoft.
+- Validacion de contratos de preprocesado: comprobar que el `preprocessor_config.json` produce tensores de entrada con la forma y normalizacion esperadas antes de pasar al modelo.
+- Tests de regresion en CI: ejecutar forward passes sobre entradas sinteticas y comparar formas de salida y estabilidad numerica entre versiones de la libreria.
+- Verificacion de compatibilidad de dtypes: comprobar que el modelo produce valores finitos en float32, bfloat16 y float16, util para validar rutas de mixed precision.
+- Pruebas de gradientes: al ser finitos en loss y gradientes, sirve para validar bucles de entrenamiento y tecnicas de acumulacion de gradientes sin coste computacional.
+- Desarrollo de herramientas de inspeccion de checkpoints: validar que los nombres de tensores del fixture coinciden con los del checkpoint real antes de migrar pesos o escribir convertidores.
+- Documentacion y demos de API: ejemplos ejecutables de la API de deteccion de objetos sin necesidad de GPU ni de pesos de gran tamano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, no procede evaluar métricas de detección.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de deteccion (mAP, precision, recall) carece de significado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (11,4M de parámetros, aproximadamente 45 MB de pesos más activaciones reducidas).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; también es viable en CPU.
-- Cabe en cualquier GPU de consumo, incluidas GTX 1050, RTX 3050, RTX 4090, así como en iGPU y CPU.
-- Opciones de despliegue: Transformers con PyTorch; no se ha validado con vLLM, llama.cpp, Ollama ni TGI, y su naturaleza de fixture lo hace inadecuado para servidores de producción.
-- Latencia y throughput: no disponibles; al ser un modelo de prueba, no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 para los 11,4 M de parametros (los pesos ocupan aproximadamente 45 MB); en float16 o bfloat16, alrededor de 23 MB.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; tambien funciona en CPU sin problema.
+- Cabe en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) e incluso en entornos sin GPU.
+- Opciones de despliegue: Transformers con PyTorch es la via documentada (el repositorio incluye `integrations/transformers/usage.md` y `integrations/transformers/expectations`). No hay informacion sobre soporte en vLLM, llama.cpp, Ollama o TGI, y en cualquier caso no tendria sentido para un detector de objetos.
+- Latencia y throughput: no disponibles; al ser un modelo diminuto en CPU o GPU, la latencia sera del orden de milisegundos, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Propósito |
+| Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/table_transformer-mic` | 11,4M | no disponible | no disponible | Hugging Face | Fixture de prueba |
-| `microsoft/table-transformer-detection` | no disponible en la información | no disponible | no disponible | Hugging Face | Detección de tablas en producción |
-| `microsoft/table-transformer-structure-recognition` | no disponible en la información | no disponible | no disponible | Hugging Face | Reconocimiento de estructura de tablas |
+| huggingface-mic/table_transformer-mic | 11,4 M | Fixture de pruebas (deteccion de tablas) | no aplica | no disponible | Hugging Face |
+| microsoft/table-transformer-detection | no disponible en la informacion proporcionada | Deteccion de tablas | no aplica | no disponible | Hugging Face |
+| microsoft/table-transformer-structure-recognition | no disponible en la informacion proporcionada | Reconocimiento de estructura de tablas | no aplica | no disponible | Hugging Face |
 
-La comparación relevante es con el checkpoint base: el fixture replica su arquitectura y nombres de tensores con una configuración reducida y pesos aleatorios, por lo que no es un sustituto funcional sino una herramienta de validación de integraciones.
+La comparacion relevante es con el modelo base: el fixture reduce el numero de capas del encoder y del decoder a 2 y sustituye los pesos entrenados por pesos aleatorios, por lo que no es funcionalmente equivalente. No se dispone de datos de parametros ni de rendimiento de las alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los pesos son aleatorios: el modelo no detecta tablas ni produce salidas con significado.
-- Etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
-- No apto para uso en producción, investigación aplicada ni evaluación de calidad.
-- La licencia no está declarada, lo que impide determinar condiciones de uso comercial.
-- No se declaran idiomas soportados.
-- La configuración reducida (2 capas de encoder y 2 de decoder) no representa el comportamiento del modelo completo.
-- No se han publicado benchmarks ni métricas de rendimiento.
-- Su utilidad se limita a pruebas de infraestructura y compatibilidad de frameworks.
+- Los pesos son aleatorios (semilla 17): el modelo no detecta tablas ni produce salidas utiles. No debe usarse en produccion ni para evaluacion de calidad.
+- Es un artefacto de prueba etiquetado `test-artifact`, disenado para quedar fuera de las busquedas de modelos candidatos.
+- La licencia no esta indicada en la informacion disponible; no puede asumirse uso comercial sin consultar el repositorio del modelo base.
+- La configuracion reducida (2 capas de encoder y 2 de decoder) no reproduce el comportamiento numerico del checkpoint real, solo la estructura tensorial y el contrato de entrada.
+- No tiene capacidades linguisticas, de razonamiento ni de generacion; es exclusivamente un detector de objetos.
+- No se han publicado datos de sesgos, alucinacion o robustez, y al no haber entrenamiento no aplican en el sentido habitual, pero tampoco hay garantias de ningun tipo.
+- Para cualquier uso real de deteccion de tablas debe emplearse `microsoft/table-transformer-detection` o un modelo equivalente entrenado.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/huggingface-mic/table_transformer-mic)
-- [Modelo base: microsoft/table-transformer-detection](https://huggingface.co/microsoft/table-transformer-detection)
-- [Contract manifest (integration.json)](https://huggingface.co/huggingface-mic/table_transformer-mic/blob/main/integration.json)
-- [Transformers usage](https://huggingface.co/huggingface-mic/table_transformer-mic/blob/main/integrations/transformers/usage.md)
-- [Transformers expectations](https://huggingface.co/huggingface-mic/table_transformer-mic/tree/main/integrations/transformers/expectations)
-- [Fixture provenance (build.json)](https://huggingface.co/huggingface-mic/table_transformer-mic/blob/main/build.json)
-- [Cómo se redujo el fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/table_transformer-mic.html)
-- [Repositorio transformers-mic (sweep.py)](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
-- [Repositorio transformers-mic (build_fixtures.py)](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/table_transformer-mic
+- Modelo base: https://huggingface.co/microsoft/table-transformer-detection
+- Repositorio de codigo del proyecto: https://github.com/huggingface/transformers-mic
+- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/table_transformer-mic.html

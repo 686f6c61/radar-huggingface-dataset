@@ -2,66 +2,88 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones EXL3 del modelo Qwen3.8-27B, preparadas por el usuario turboderp. EXL3 es un formato de cuantización optimizado para la biblioteca de inferencia exllamav3, que permite ejecutar modelos de gran tamaño con un consumo de VRAM reducido. Se ofrecen ocho niveles de cuantización, desde 2.00 hasta 6.00 bits por peso, lo que da flexibilidad para ajustar el equilibrio entre calidad y requisitos de memoria.
+`turboderp/Qwen3.8-27B-exl3` es una colección de cuantizaciones EXL3 del modelo base `Qwen/Qwen3.8-27B`, publicada por turboderp (autor de ExLlamaV2/ExLlamaV3). No se trata de un modelo nuevo, sino de una distribución de pesos comprimidos en formato EXL3 diseñada para ejecutarse con el motor de inferencia ExLlamaV3 sobre GPUs de consumo. El objetivo es reducir el peso en VRAM del modelo original de 27B parámetros hasta niveles que permitan su despliegue en tarjetas de 24 GB o incluso menos, manteniendo la mayor fidelidad posible respecto al modelo en precisión completa.
 
-La relevancia de este proyecto radica en que facilita el despliegue de un modelo de 27 mil millones de parámetros en hardware de consumo o en entornos con GPUs limitadas, manteniendo una degradación controlada de la precisión. El modelo base Qwen3.8-27B pertenece a la familia Qwen3 de Alibaba, aunque no se proporcionan detalles adicionales sobre su arquitectura o entrenamiento en esta ficha.
+El repositorio incluye múltiples niveles de cuantización, desde 1,40 bits por peso (bpw) hasta 6,00 bpw, en varias generaciones de calibración: "plain quants", "self-calibrated" (SC) y la más reciente "self-calibrated fractional-K + YAQA" (SCP), esta última con torre de visión cuantizada a 6 bpw. La existencia de variantes tan agresivas (por debajo de 2 bpw) es relevante porque permite probar modelos de 27B en hardware muy limitado, a costa de una degradación que el autor documenta mediante trazas de calibración y evaluación (KLD, perplejidad) publicadas en el propio repositorio.
 
-La licencia Apache 2.0 permite uso comercial y modificación, lo que lo hace atractivo para integraciones en producción. Sin embargo, al ser una cuantización, se debe considerar la pérdida de fidelidad respecto al modelo original, especialmente en los niveles de bits más bajos.
+La licencia declarada es Apache 2.0, heredada del modelo base. El repo ocupa 450,5 GB en total (suma de todas las ramas de cuantización) y acumula más de 5.000 descargas y 212 likes en el momento de la consulta. No se dispone de información sobre arquitectura interna, contexto o idiomas del modelo base en la documentación proporcionada; esta ficha se limita a lo que consta en la model card del cuantizador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27B (segun el nombre del modelo) |
-| Parametros activos | no aplica (modelo denso) |
+| Arquitectura | no disponible (modelo base Qwen3.8-27B; el repo solo distribuye cuantizaciones EXL3) |
+| Parametros totales | 27B (según denominación del modelo base) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 2.00, 2.50, 3.00, 3.50, 4.00, 5.00 y 6.00 bits por peso |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantizacion | EXL3 en 1,40, 1,60, 1,75, 1,80, 2,00, 2,20, 2,50, 3,00, 3,50, 4,00, 5,00 y 6,00 bpw; variantes con torre de visión cuantizada (sufijo V) y sin ella |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors con cuantizacion EXL3 |
+| Formato de pesos | EXL3 (ramas Git independientes por nivel de cuantización) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base Qwen3.8-27B en la documentacion de este repositorio. Se trata de una cuantizacion posterior al entrenamiento, realizada por turboderp, que comprime los pesos del modelo original utilizando el formato EXL3. Este formato emplea una combinacion de cuantizacion por grupos y escalado por canales, optimizado para la inferencia con exllamav3 en GPUs NVIDIA. No se mencionan datos sobre el dataset de entrenamiento, el numero de tokens o el proceso de alineacion (RLHF, DPO, etc.) del modelo base.
+El repositorio no contiene un modelo entrenado por turboderp, sino pesos cuantizados del modelo base `Qwen/Qwen3.8-27B`. La técnica empleada es EXL3, el formato de cuantización de ExLlamaV3, que combina cuantización de bloques con un esquema de calibración para minimizar la divergencia respecto a los pesos originales. El autor distingue tres familias de cuantizaciones: las "plain" (sin calibración específica), las "self-calibrated" (SC) y las más recientes "self-calibrated fractional-K + YAQA" (SCP), que introducen mejoras en el esquema de cuantización y en la calibración.
+
+Para cada familia se publican trazas de calibración (`cal_trace.md`, `cal_trace.json`, `cal_trace.safetensors`) y trazas de evaluación (`qbench_prompts_gen.*` para las plain y `qbench_prompts_div.*` para las SCP), lo que permite reproducir y auditar el proceso. Las gráficas incluidas en la model card muestran KLD (divergencia KL) y perplejidad frente al consumo de VRAM para cada nivel de bpw. En las variantes SCP, la torre de visión se cuantiza a 6 bpw de forma fija, independientemente del bpw del resto del modelo, y las variantes con sufijo V incorporan torre de visión cuantizada, requiriendo ExLlamaV3 v1.4.4 o superior para funcionar correctamente. No se dispone de información sobre el dataset de entrenamiento del modelo base, el número de tokens, ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la informacion proporcionada.
-- Al ser una cuantizacion del modelo Qwen3.8-27B, se espera que herede las capacidades del modelo original (generacion de texto, razonamiento, codigo, etc.), pero no se confirma en esta ficha.
-- Se recomienda consultar la ficha del modelo base [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) para conocer sus capacidades detalladas.
+- Generación de texto y razonamiento conversacional, heredados del modelo base Qwen3.8-27B (no documentados en detalle en este repo).
+- Procesamiento de imágenes: las variantes con torre de visión (sufijo V y todas las SCP) incluyen el componente visual cuantizado, por lo que conservan capacidad multimodal si el modelo base la tiene.
+- Ejecución en GPUs de consumo gracias a los niveles de cuantización bajos (desde 1,40 bpw).
+- Compatibilidad con ExLlamaV3 como motor de inferencia; no se documenta soporte para otros runners (llama.cpp, vLLM, TGI) en la model card.
+- No se documentan en la información disponible capacidades específicas de tool calling, agentes, thinking mode ni multilingüismo del modelo base.
 
 ## Casos de uso
 
-- No se pueden enumerar casos de uso concretos sin conocer las capacidades reales del modelo base. La informacion disponible solo cubre el proceso de cuantizacion.
-- Como guia general, un modelo de 27B cuantizado a 4 bits podria emplearse en tareas de generacion de texto, asistencia conversacional o generacion de codigo en entornos con VRAM limitada (por ejemplo, una RTX 3090 o 4090).
-- La flexibilidad de elegir entre 2 y 6 bits por peso permite adaptar el despliegue a distintos presupuestos de memoria, priorizando velocidad o calidad segun las necesidades.
+- Despliegue local en GPUs de 24 GB: usar las ramas de 3,00 o 4,00 bpw permite cargar un modelo de 27B en una RTX 4090 o similar, dejando margen para el contexto y el KV cache.
+- Experimentación en GPUs de 12-16 GB: las ramas de 1,75-2,20 bpw SCP permiten probar el modelo en tarjetas de gama media, aceptando una degradación medible vía KLD.
+- Evaluación comparativa de cuantizaciones: las trazas de calibración y evaluación publicadas permiten reproducir los experimentos del autor y comparar KLD/perplejidad entre niveles de bpw antes de elegir uno para producción.
+- Prototipado multimodal en local: las variantes con torre de visión cuantizada (V o SCP) permiten probar tareas de imagen-texto sin necesidad de una GPU de datacenter.
+- Servicio de inferencia con ExLlamaV3: integrable en un servidor OpenAI-compatible de ExLlamaV3 para aplicaciones de chat o generación de texto con latencia baja en hardware de consumo.
+- Investigación sobre cuantización extrema: las ramas de 1,40-1,60 bpw sirven como caso de estudio del límite práctico de compresión de un modelo de 27B y de su impacto en la calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Las imagenes incluidas en la model card muestran graficas de divergencia KLD frente a VRAM para cada nivel de cuantizacion, pero no se proporcionan valores numericos ni comparaciones con otros modelos.
+La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). Lo que sí incluye son gráficas de KLD y perplejidad frente a VRAM para cada nivel de cuantización, generadas a partir de las trazas de evaluación `qbench_prompts_gen` (plain) y `qbench_prompts_div` (SCP). No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- EXL3 esta disenado para GPUs NVIDIA con soporte CUDA (exllamav3 no funciona en AMD o Apple Silicon).
-- El tamano total del repositorio es de 112 GB, que incluye todos los quants. El peso de cada cuantizacion individual no se especifica, pero se puede estimar a partir de los bits por peso y los 27B parametros: a 2.00 bpw serian ~6.75 GB, a 4.00 bpw ~13.5 GB y a 6.00 bpw ~20.25 GB (estimaciones teoricas, sin confirmar).
-- Para ejecutar el quant de 4.00 bpw se necesitaria una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090, A100 40GB).
-- El quant de 2.00 bpw podria caber en GPUs con 8-10 GB de VRAM, aunque con una perdida de calidad significativa.
-- Opciones de despliegue: exllamav3 (biblioteca nativa), o mediante servidores como text-generation-inference si soportan EXL3. No se menciona compatibilidad con llama.cpp u Ollama.
+- VRAM estimada: proporcional al bpw elegido; a 4,00 bpw el peso ronda los 13,5 GB, a 3,00 bpw unos 10 GB, a 2,00 bpw unos 7 GB y a 1,40 bpw unos 5 GB (cálculo teórico a partir de 27B parámetros; el consumo real incluye overhead de ExLlamaV3, KV cache y activaciones).
+- GPU recomendadas: RTX 4090/3090 (24 GB) para 4,00-6,00 bpw con contexto amplio; RTX 4080/4070 Ti (12-16 GB) para 2,00-3,00 bpw; GPUs de 8-12 GB para 1,40-1,75 bpw.
+- Cabe en GPU de consumo: sí, en todos los niveles salvo quizá los 6,00 bpw con contexto muy largo en tarjetas de 24 GB.
+- Opciones de despliegue: ExLlamaV3 (requerido; v1.4.4 o superior para variantes con torre de visión cuantizada). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se proporcionan datos de comparacion con otros modelos de tamano similar (por ejemplo, Llama 3 8B, Mistral 7B, etc.) en la informacion disponible.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| turboderp/Qwen3.8-27B-exl3 | 27B | no disponible | EXL3 (1,40-6,00 bpw) | Apache 2.0 | Cuantización de Qwen3.8-27B para ExLlamaV3 |
+| Qwen/Qwen3.8-27B | 27B | no disponible | safetensors (BF16/FP16) | Apache 2.0 | Modelo base original |
+| Otras cuantizaciones GGUF de Qwen3.8-27B | 27B | no disponible | GGUF | Apache 2.0 | Compatibles con llama.cpp/Ollama, no con ExLlamaV3 |
+
+No se dispone de información sobre otros cuantizadores EXL3 del mismo modelo base ni de benchmarks comparativos entre ellos en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion introduce perdida de precision, especialmente en niveles de 2.00 y 2.50 bits por peso. Esto puede manifestarse en alucinaciones, errores de razonamiento o degradacion de la calidad del texto generado.
-- No se dispone de informacion sobre sesgos del modelo base ni sobre su comportamiento en dominios especificos.
-- La longitud de contexto no se ha documentado; se recomienda verificar la ficha del modelo base.
-- El uso en produccion requiere validar la calidad del quant elegido con datos reales, ya que los resultados pueden variar segun la tarea.
-- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base Qwen3.8-27B puede tener restricciones adicionales; se debe revisar su licencia original.
+- Las cuantizaciones por debajo de 2 bpw implican una degradación de calidad medible; el autor la documenta vía KLD y perplejidad, pero no cuantifica el impacto en tareas concretas.
+- Las variantes con torre de visión cuantizada (sufijo V y todas las SCP) requieren ExLlamaV3 v1.4.4 o superior; versiones anteriores pueden producir resultados incorrectos.
+- El formato EXL3 solo es compatible con ExLlamaV3; no es portable a llama.cpp, Ollama, vLLM ni TGI.
+- La licencia Apache 2.0 se hereda del modelo base; conviene verificar los términos del modelo original para uso comercial.
+- No se documentan sesgos, idiomas soportados ni riesgos de alucinación específicos en la información disponible; aplican los del modelo base Qwen3.8-27B.
+- El repo ocupa 450,5 GB en total; clonar todas las ramas requiere espacio en disco considerable. Conviene descargar solo la rama del bpw deseado.
+- No se han publicado resultados de benchmarks estándar en la información disponible; la evaluación se limita a métricas de cuantización.
 
 ## Enlaces
 
-- [Repositorio Hugging Face: turboderp/Qwen3.8-27B-exl3](https://huggingface.co/turboderp/Qwen3.8-27B-exl3)
-- [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- Repositorio Hugging Face: https://huggingface.co/turboderp/Qwen3.8-27B-exl3
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Traza de calibración (md): https://huggingface.co/turboderp/Qwen3.8-27B-exl3/blob/main/cal_trace.md
+- Traza de calibración (JSON): https://huggingface.co/turboderp/Qwen3.8-27B-exl3/blob/main/cal_trace.json
+- Traza de calibración (safetensors): https://huggingface.co/turboderp/Qwen3.8-27B-exl3/blob/main/cal_trace.safetensors
+- Traza de evaluación SCP (md): https://huggingface.co/turboderp/Qwen3.8-27B-exl3/blob/main/qbench_prompts_div.md
+- Traza de evaluación SCP (JSON): https://huggingface.co/turboderp/Qwen3.8-27B-exl3/blob/main/qbench_prompts_div.json
+- Traza de evaluación plain (md): https://huggingface.co/turboderp/Qwen3.8-27B-exl3/blob/main/qbench_prompts_gen.md
+- Traza de evaluación plain (JSON): https://huggingface.co/turboderp/Qwen3.8-27B-exl3/blob/main/qbench_prompts_gen.json

@@ -2,92 +2,89 @@
 
 ## Resumen
 
-`mradermacher/gemma-4-31B-it-abliterated-Japanese-RP-i1-GGUF` es una cuantizacion GGUF con imatrix del modelo `anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP`, un derivado de Gemma 4 de 31B de parametros (30.697.345.596 parametros reales segun safetensors) afinado para role-play (RP) en japones y sometido a un proceso de "abliteration" que elimina total o parcialmente las capas de rechazo del modelo original. El trabajo de cuantizacion lo firma mradermacher, autor habitual de repositorios GGUF de terceros, mientras que el afinado y la abliteracion corresponden al usuario anaaaaaa13421312.
+`mradermacher/gemma-4-31B-it-abliterated-Japanese-RP-i1-GGUF` es una colección de cuantizaciones GGUF (formato para llama.cpp y derivados) de un modelo derivado de la familia Gemma 4 de Google, publicado por el usuario mradermacher. El modelo de origen es `anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP`, una adaptación mediante LoRA del Gemma 4 31B instruction-tuned, orientada a roleplay (RP) en japonés e inglés y sometida a un proceso de "abliteration" (eliminación o atenuación de los mecanismos de rechazo del modelo).
 
-El modelo resuelve un nicho muy concreto: disponer de un Gemma 4 de 31B desprovisto de las restricciones de rechazo del modelo instruct original, orientado a conversacion de rol y con enfasis en japones, en formatos GGUF cuantizados que permiten su ejecucion en hardware de consumo. La relevancia es limitada pero practica: el repositorio incluye cuantizaciones desde Q2_K hasta Q6_K generadas con imatrix, ademas de un archivo imatrix independiente para quien quiera producir sus propias cuantizaciones.
+El modelo cuenta con 30.697.345.596 parámetros totales según los pesos en safetensors, y el repositorio GGUF ocupa 334,8 GB al incluir todas las variantes de cuantización (desde i1-IQ1_S de 7,3 GB hasta i1-Q6_K y superiores). Se distribuye con licencia Apache 2.0 y está etiquetado como `not-for-all-an-ages` por su orientación a contenido sin filtros. La model card indica además que se trata de un modelo con capacidad de visión, con archivos mmproj en el repositorio estático.
 
-La informacion publicada por el autor es muy escasa: no hay model card descriptiva del afinado, no se documenta el dataset de RP ni el procedimiento de abliteracion, y no se publican resultados de benchmarks. Todo lo que se sabe del modelo procede de los metadatos del repositorio y del repositorio base. La licencia declarada es Apache 2.0, aunque el modelo hereda la arquitectura y probablemente los pesos de la familia Gemma, lo que introduce incertidumbres legales que se detallan en la seccion de limitaciones.
+La relevancia de esta ficha reside en que combina tres factores poco habituales: un modelo base de 31B con visión, una especialización en roleplay japonés y un proceso de abliteration que modifica el comportamiento de seguridad. Esto lo hace útil para experimentación en generación creativa y conversacional, pero problemático para despliegues de producción con requisitos de moderación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma 4; detalles no disponibles) |
+| Arquitectura | Transformer (familia Gemma 4), adaptado mediante LoRA y abliteration; no se detalla la arquitectura interna exacta |
 | Parametros totales | 30.697.345.596 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1 (imatrix): Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, IQ4_NL (small), Q5_K_S, Q5_K_M, Q6_K; cuantizaciones estaticas en repositorio separado |
-| Idiomas soportados | en (declarado); tag Japanese y RP en metadatos; el modelo base esta orientado a japones |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, ... (lista completa en la model card); también cuantizaciones estáticas en el repositorio hermano |
+| Idiomas soportados | inglés (en) y japonés (ja) según la model card; el campo de idiomas del Hub solo indica en |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Gemma 4 de 31B de parametros con arquitectura transformer, segun se deduce de la familia y del recuento de parametros. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni longitud de contexto nativa, ya que el autor no publica model card tecnica. El repositorio cuantizado no aporta metadatos adicionales sobre la arquitectura mas alla de la etiqueta `gemma-4`.
+El modelo parte de Gemma 4 31B instruction-tuned, un transformer de la familia Gemma de Google. Sobre esa base se aplicó un adaptador LoRA (etiqueta `lora` y referencia a `unsloth` en los tags) para especializarlo en conversación de roleplay en japonés e inglés. Posteriormente se aplicó un proceso de abliteration, que modifica los pesos para reducir la tendencia del modelo a rechazar peticiones, y se generaron cuantizaciones GGUF con imatrix (fichero `.imatrix.gguf` incluido) para preservar la calidad en tamaños reducidos.
 
-Respecto al entrenamiento, el modelo original de Google pasa por un pipeline de preentrenamiento y ajuste instructivo con RLHF, pero el autor del derivado no documenta que datos adicionales ha utilizado para el afinado de role-play en japones ni como ha realizado la abliteracion (tecnica que consiste en identificar y restar la direccion de rechazo en el espacio de activaciones). Tampoco se especifica si hubo DPO, SFT adicional o mezcla de datasets. El unico dato tecnico verificable del proceso de cuantizacion es el uso de matrices de importancia (imatrix) para las cuantizaciones i1, lo que mejora la perplejidad respecto a cuantizaciones estaticas del mismo tamano. El repositorio incluye ademas un archivo imatrix de 0,1 GB para generar cuantizaciones propias.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO adicionales. La model card no documenta innovaciones técnicas específicas más allá del pipeline estándar de cuantización de mradermacher (i1 = imatrix, tensor quantisation, conversión desde HF). El modelo base incluye capacidad de visión según la nota de la model card, con archivos mmproj en el repositorio estático.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, orientada a role-play y ficcion interactiva.
-- Capacidad de vision: el autor indica explicitamente que es un modelo de vision y que los archivos mmproj, si existen, estan en el repositorio estatico.
-- Capacidad multilingue heredada de Gemma 4, con enfasis declarado en japones e ingles.
-- Comportamiento sin rechazo (abliterated): el modelo no aplica las capas de negativa del instruct original, lo que permite generar contenido que el modelo base rechazaria.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generación de texto conversacional y de roleplay, con especialización declarada en japonés e inglés.
+- Capacidad de visión (el autor indica que es un modelo de visión; los mmproj están en el repositorio estático).
+- Conversación multi-turno orientada a personajes y escenarios de RP.
+- Comportamiento "abliterated": menor tendencia a rechazar peticiones, lo que amplía el rango de respuestas generadas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües limitadas a los idiomas declarados (ja, en); no se documentan otros idiomas.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Role-play conversacional en japones: el modelo esta afinado especificamente para RP y conserva el vocabulario y los registros del japones conversacional, por lo que es adecuado para personajes, ficcion interactiva y simulaciones de dialogo en ese idioma.
-- Investigacion sobre alineacion y abliteracion: permite estudiar como se comporta un modelo de 31B sin capas de rechazo, comparando respuestas con el Gemma 4 instruct original en tareas sensibles.
-- Generacion de ficcion y narrativa sin filtros: util para autores que necesitan dialogos o escenas que los modelos alineados rechazan, con la advertencia de que el contenido generado es responsabilidad del usuario.
-- Despliegue local en hardware de consumo: las cuantizaciones Q2_K a Q6_K permiten ejecutar un modelo de 31B en GPUs con 12-24 GB de VRAM mediante llama.cpp u Ollama, algo inviable con los pesos en safetensors.
-- Prototipado de asistentes de personaje en japones: integrable en aplicaciones de chat con personajes, juegos de rol o simuladores sociales donde se requiere consistencia de personalidad y contexto conversacional.
-- Evaluacion de cuantizaciones imatrix: el archivo imatrix y el rango completo de cuantizaciones permiten comparar calidad y perplejidad entre tipos de cuantizacion para un modelo de este tamano.
-- Generacion de datos sinteticos de dialogo en japones: para aumentar datasets de entrenamiento conversacional, con revision humana obligatoria.
+- Roleplay conversacional en japonés: el modelo está afinado específicamente para mantener personajes y registro coloquial japonés en conversaciones multi-turno, lo que lo hace adecuado para prototipos de chatbots de entretenimiento o ficción interactiva.
+- Roleplay en inglés: la model card declara soporte de inglés, por lo que puede usarse en escenarios de narrativa interactiva y juegos de texto en ese idioma.
+- Experimentación con modelos abliterated: útil para investigadores que estudian el efecto de la eliminación de rechazos en la distribución de respuestas, comparando con el Gemma 4 31B original.
+- Generación creativa sin restricciones de contenido para adultos: el tag `not-for-all-audiences` indica que está pensado para contenido para adultos, siempre que se despliegue en un entorno controlado y con las advertencias legales oportunas.
+- Evaluación de cuantizaciones GGUF: al ofrecer más de veinte variantes (de 7,3 GB a tamaños superiores), sirve para medir el impacto de la cuantización en calidad conversacional y coherencia en un modelo de 31B.
+- Despliegue local en hardware de consumo: las variantes i1-IQ2_M (11,0 GB) e i1-IQ3_S (13,9 GB) permiten ejecutar un modelo de 31B en GPUs con 12-16 GB de VRAM mediante llama.cpp, algo inviable con los pesos en fp16.
+- Integración en pipelines de generación de diálogo con visión: si se descargan los mmproj del repositorio estático, puede emplearse en escenarios que combinen imagen y conversación, aunque la documentación al respecto es mínima.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 12 GB para Q2_K, 13-14 GB para IQ3_XXS, 19-20 GB para Q4_K_M, 22-23 GB para Q5_K_M y 26-27 GB para Q6_K, segun los tamanos de archivo del repositorio.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) para las mismas cuantizaciones; A100 40/80 GB o H100 para Q6_K y para mayor velocidad; GPUs de 12 GB solo admiten Q2_K con contexto reducido.
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 (16 GB, hasta IQ3) y tarjetas de 24 GB en general; en 12 GB solo con cuantizaciones de 2 bits y contexto limitado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de endpoints (el repositorio incluye la etiqueta `endpoints_compatible`). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se requiere conversion o el uso de pesos safetensors del modelo base.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: depende de la cuantización. Las variantes más pequeñas (i1-IQ1_S, 7,3 GB; i1-IQ2_M, 11,0 GB) caben en GPUs de 12-16 GB. Las intermedias (i1-IQ3_S, 13,9 GB; i1-Q4_K_M, 18,8 GB) requieren 16-24 GB. Las de mayor calidad (i1-Q5_K_S, 21,4 GB y superiores) requieren 24 GB o más.
+- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4/Q5; A100 40/80 GB o H100 para fp16 y cuantizaciones altas; RTX 3060/4060 Ti de 16 GB para IQ2/IQ3.
+- Cabe en GPU de consumo: sí, en las cuantizaciones IQ1 a IQ3 en GPUs de 12-16 GB; Q4 en 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). No se documenta soporte de vLLM o TGI para estas cuantizaciones.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| gemma-4-31B-it-abliterated-Japanese-RP-i1-GGUF (este) | 30,7B | no disponible | apache-2.0 | GGUF i1 | Afinado RP japones, abliterated, cuantizaciones imatrix |
-| gemma-4-31B-it-abliterated-Japanese-RP (base) | 30,7B | no disponible | apache-2.0 | safetensors | Modelo original sin cuantizar |
-| gemma-4-31B-it-abliterated-Japanese-RP-GGUF (estatico) | 30,7B | no disponible | apache-2.0 | GGUF estatico | Mismas cuantizaciones sin imatrix, incluye mmproj |
-| Gemma 4 31B instruct (original) | 30,7B | no disponible | licencia Gemma | safetensors | Modelo alineado de referencia, con rechazos activos |
-
-No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
+| mradermacher/gemma-4-31B-it-abliterated-Japanese-RP-i1-GGUF | 30,7B | no disponible | Apache 2.0 | GGUF | Roleplay ja/en, abliterated, visión |
+| Gemma 4 31B it (original de Google) | ~31B | no disponible | Gemma license (no disponible en detalle) | safetensors | Base sin abliteration ni especialización RP |
+| anaaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP | 30,7B | no disponible | Apache 2.0 | safetensors | Modelo base del que derivan estas cuantizaciones |
+| mradermacher/gemma-4-31B-it-abliterated-Japanese-RP-GGUF | 30,7B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estáticas del mismo modelo |
 
 ## Limitaciones y advertencias
 
-- Contenido no apto para todas las audiencias: el repositorio esta etiquetado como `not-for-all-audiences` y el modelo ha sido abliterated, por lo que puede generar contenido sexual, violento u ofensivo sin filtros.
-- Riesgo de alucinacion: no hay evaluaciones publicadas; al ser un afinado de RP, la fidelidad factual puede degradarse respecto al instruct original.
-- Idiomas: la etiqueta de idioma declarada es solo `en`, aunque el modelo esta orientado a japones; el soporte real de otros idiomas no esta documentado.
-- Contexto: se desconoce la longitud de contexto nativa y como se degrada con las cuantizaciones de 2 y 3 bits.
-- Licencia: aunque se declara apache-2.0, el modelo deriva de la familia Gemma, cuyos terminos de uso pueden imponer restricciones adicionales; conviene verificar la compatibilidad antes de un uso comercial.
-- Procedencia y reproducibilidad: no se documenta el dataset de RP, el metodo de abliteracion ni las evaluaciones, lo que dificulta auditar el modelo.
-- Cuantizaciones de baja calidad: Q2_K e IQ2 estan por debajo del umbral recomendado para uso en produccion; el propio autor sugiere IQ3_XXS como alternativa a Q2_K.
-- Sin soporte ni mantenimiento garantizados: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- El proceso de abliteration elimina o atenúa los mecanismos de rechazo, por lo que el modelo puede generar contenido inapropiado, ofensivo o ilegal sin filtros; no es apto para aplicaciones dirigidas al público general.
+- Etiquetado explícitamente como `not-for-all-audiences`; su uso comercial requiere revisión legal adicional pese a la licencia Apache 2.0.
+- Riesgo elevado de alucinación en dominios factuales, ya que el ajuste está orientado a roleplay y no a precisión.
+- Idiomas limitados a japonés e inglés; el rendimiento en castellano no está documentado y probablemente sea deficiente.
+- La longitud de contexto no está documentada; no se debe asumir la del Gemma 4 original sin verificación.
+- La información sobre capacidades de visión es mínima y depende de los archivos mmproj del repositorio estático.
+- El repositorio ocupa 334,8 GB; descargar todas las cuantizaciones es inviable en la mayoría de entornos.
+- No hay benchmarks publicados que permitan comparar su calidad frente al modelo base o frente a otros modelos de roleplay.
+- El campo de idiomas del Hub solo declara `en`, en contradicción con la model card que declara `ja` y `en`; conviene validar el comportamiento real en japonés.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31B-it-abliterated-Japanese-RP-i1-GGUF
 - Modelo base: https://huggingface.co/anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/gemma-4-31B-it-abliterated-Japanese-RP-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-31B-it-abliterated-Japanese-RP-i1-GGUF
-- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/gemma-4-31B-it-abliterated-Japanese-RP-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#gemma-4-31B-it-abliterated-Japanese-RP-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

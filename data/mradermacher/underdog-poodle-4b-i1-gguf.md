@@ -2,95 +2,91 @@
 
 ## Resumen
 
-Underdog-Poodle-4B-i1-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por mradermacher a partir del modelo base ConwayResearch/Underdog-Poodle-4B. No contiene pesos en precisión completa ni safetensors, sino una colección de ficheros cuantizados con la técnica i1 (imatrix), destinados a su ejecución con llama.cpp y herramientas compatibles. El nombre sugiere un modelo de 4.000 millones de parámetros, aunque el recuento reportado en safetensors es de 1.797.272 parámetros, una cifra que no cuadra con la denominación "4B" y que requiere verificación en el repositorio original.
+Underdog-Poodle-4B-i1-GGUF es una coleccion de cuantizaciones GGUF, generadas por mradermacher con metodo imatrix, del modelo base ConwayResearch/Underdog-Poodle-4B. El modelo original es un transformer denso de 4.326.350.848 parametros (aproximadamente 4,3 mil millones) orientado a tool calling, function calling y flujos de agentes, segun las etiquetas declaradas por el autor. Esta publicacion no introduce pesos nuevos: su valor esta en ofrecer versiones comprimidas listas para inferencia local con llama.cpp y derivados.
 
-La model card es mínima: se limita a indicar que son cuantizaciones weighted/imatrix del modelo de ConwayResearch y lista los tipos de cuantización generados. No hay información publicada sobre arquitectura, datos de entrenamiento, idiomas o licencia en la información disponible. El repositorio registra cero descargas y cero likes en el momento de la consulta, y un tamaño de 0.0 GB, lo que puede indicar que el contenido no está completamente subido o que la métrica reportada no refleja el peso real de los ficheros.
+El repositorio incluye un rango amplio de cuantizaciones, desde i1-Q2_K (2,1 GB) hasta i1-Q6_K (3,7 GB), ademas del fichero imatrix empleado para generarlas. La model card indica que se trata de un modelo de vision y que los ficheros mmproj, si existen, se alojan en el repositorio estatico complementario (mradermacher/Underdog-Poodle-4B-GGUF), no en este. El repositorio completo ocupa 39,2 GB.
 
-Su relevancia práctica es limitada mientras no se publique la ficha del modelo base: la utilidad del repo es ofrecer variantes GGUF de distintos niveles de compresión para ejecución en CPU o GPU con recursos ajustados, pero sin conocer el modelo original no es posible evaluar capacidades, sesgos o idoneidad para producción.
+La relevancia practica es doble: por un lado, permite ejecutar un modelo de 4B especializado en llamadas a herramientas en hardware de consumo; por otro, la licencia cc-by-nc-4.0 limita el uso comercial, lo que condiciona su adopcion en produccion. La informacion publicada no detalla contexto, composicion del dataset ni resultados de benchmarks, por lo que la evaluacion cuantitativa queda pendiente de validacion externa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.797.272 (según safetensors); el nombre del modelo indica 4B |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | transformer denso (no se detalla en la informacion disponible) |
+| Parametros totales | 4.326.350.848 |
+| Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, Q2_K_S, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, IQ4_NL (small), Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); convert_type: hf |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | cc-by-nc-4.0 |
+| Formato de pesos | GGUF (cuantizado); pesos originales del modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no describe la arquitectura del modelo base ni aporta datos sobre número de tokens de entrenamiento, composición del dataset o si se aplicaron técnicas de alineación como RLHF o DPO. Se sabe únicamente que el repositorio es una conversión (`convert_type: hf`) de un modelo en formato Hugging Face a GGUF, con cuantización i1 basada en matriz de importancia (imatrix), un método que pondera los tensores según su relevancia para reducir la pérdida de calidad en niveles de compresión bajos.
+La informacion disponible no especifica la arquitectura interna del modelo base ConwayResearch/Underdog-Poodle-4B mas alla de su naturaleza transformer densa de 4,3 mil millones de parametros. No se documentan el numero de capas, la dimension oculta, el mecanismo de atencion ni si emplea tecnicas como atencion lineal o decodificacion especulativa. Tampoco se detalla el proceso de entrenamiento: no hay datos sobre volumen de tokens, composicion del corpus, uso de RLHF, DPO u otras fases de alineamiento.
 
-Los ficheros se distribuyen para su uso con llama.cpp y derivados. La etiqueta `nicoboss` aparece en la cabecera de la model card, pero no se aporta contexto adicional que permita confirmar su significado o vinculación con el ecosistema de finetunes de Nicoboss.
+Lo unico documentado en esta publicacion es el proceso de cuantizacion. mradermacher ha generado las versiones GGUF con cuantizacion por importancia (imatrix), un metodo que pondera los pesos segun su relevancia estadistica para reducir la perdida de calidad en tasas de compresion agresivas. La model card incluye la version de cuantizacion (quantize_version 2), el tipo de conversion (hf) y confirma que se han cuantizado los tensores de salida (output_tensor_quantised 1). Se ofrece tambien el fichero imatrix por separado para que terceros puedan generar sus propias cuantizaciones.
 
 ## Capacidades
 
-- Generación de texto: no confirmable sin la ficha del modelo base.
-- Razonamiento, código y matemáticas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (visión, audio, modo thinking): no disponible.
-- Ejecución cuantizada en CPU/GPU mediante llama.cpp: disponible por formato GGUF, aunque el rendimiento real depende del modelo base.
+- Generacion de texto conversacional en ingles, segun la etiqueta conversational y el idioma declarado.
+- Tool calling y function calling: el modelo esta etiquetado explicitamente para estas tareas, lo que sugiere entrenamiento o ajuste orientado a invocar funciones externas con esquemas estructurados.
+- Soporte para agentes: la etiqueta agents indica uso previsto en flujos multi-paso con toma de decisiones y llamadas a herramientas.
+- Vision: la model card afirma que es un modelo de vision y remite a los ficheros mmproj del repositorio estatico; no se detalla la resolucion de imagen ni el codificador visual.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere integracion con infraestructura de inferencia estandar.
+- Capacidades multilingues: no disponibles mas alla del ingles declarado.
+- Modo de razonamiento explicito (thinking mode): no disponible en la informacion.
 
 ## Casos de uso
 
-Los siguientes escenarios son aplicables a un LLM de propósito general de ~4B en formato GGUF, condicionados a que el modelo base confirme dichas capacidades:
-
-- Inferencia local en CPU para prototipado offline: las variantes Q4_K_M o Q5_K_M permiten ejecutar el modelo en un portátil sin GPU dedicada usando llama.cpp, útil para pruebas de concepto sin depender de servicios en la nube.
-- Despliegue en dispositivos de borde: las cuantizaciones IQ3_XXS o Q3_K_M reducen el peso del modelo y permiten su uso en entornos con poca memoria, como mini-PC o placas SBC con suficiente RAM.
-- Experimentación con el trade-off calidad/compresión: disponer de la escalera completa desde IQ1_S hasta Q6_K facilita medir la degradación de calidad frente al tamaño en tareas concretas.
-- Chat de bajo recurso en estaciones de trabajo sin GPU: las variantes Q4_0 y Q4_K_S son compatibles con llama.cpp en CPU y permiten conversaciones interactivas con memoria limitada.
-- Clasificación y filtrado de texto en pipelines ligeros: si el modelo base rinde aceptablemente en tareas de etiquetado, las variantes Q2_K o Q3_K_M son suficientes para procesos por lotes donde prima el throughput sobre la calidad fina.
-- Evaluación de robustez frente a cuantización agresiva: las variantes IQ1/IQ2 sirven para estudiar cuánto degrada la compresión extrema en el modelo base antes de fijar un nivel de cuantización para producción.
+- Agentes de automatizacion de tareas: el modelo puede actuar como planificador que decide que funcion invocar en cada paso, aprovechando su ajuste para tool calling. Su tamano de 4B permite desplegarlo en un servidor modesto o incluso en local para prototipos de agentes.
+- Integracion en pipelines de CI/CD con function calling: puede interpretar instrucciones en lenguaje natural y traducirlas a llamadas estructuradas a APIs internas, como consulta de estado de builds o lanzamiento de despliegues, siempre que el uso sea no comercial por licencia.
+- Asistentes de soporte tecnico con acceso a herramientas: en escenarios donde el bot debe consultar bases de conocimiento o sistemas de tickets mediante funciones, el ajuste especifico del modelo reduce la necesidad de ingenieria de prompts compleja.
+- Enrutamiento de consultas en sistemas multiagente: un modelo pequeno y rapido como este puede clasificar la intencion del usuario y derivar la peticion al agente o herramienta adecuada, actuando como capa de orquestacion barata.
+- Evaluacion y experimentacion en investigacion: al estar disponible en cuantizaciones desde 2,1 GB, es util para estudiar el comportamiento de modelos 4B en tareas de function calling con recursos limitados, comparando la degradacion entre niveles de cuantizacion.
+- Despliegue en estaciones de trabajo con GPU de consumo: las versiones i1-Q4_K_M (2,9 GB) o i1-Q5_K_M (3,3 GB) caben en GPUs con 8 GB de VRAM, lo que permite probar flujos de agentes completamente en local sin depender de servicios en la nube.
+- Procesamiento de documentos con componente visual: si se emplean los ficheros mmproj del repositorio estatico, el modelo podria abordar tareas de extraccion de informacion de imagenes combinadas con llamadas a herramientas, aunque la informacion disponible no detalla el alcance de esta capacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Estimaciones orientativas asumiendo que el modelo base tiene ~4B parámetros; deben verificarse contra el tamaño real de cada fichero en el repositorio, dado que el recuento de safetensors (1.797.272) contradice la denominación "4B".
-
-| Cuantizacion | Tamano aprox. (GB, estimado) | VRAM estimada para inferencia |
-|---|---|---|
-| IQ1_S / IQ1_M | ~1.0-1.2 | ~1.5 GB |
-| IQ2_XXS / IQ2_XS / IQ2_S | ~1.1-1.7 | ~2 GB |
-| Q2_K / Q2_K_S | ~1.6-1.8 | ~2.5 GB |
-| IQ3_XXS / IQ3_XS / IQ3_S | ~1.5-1.9 | ~2.5 GB |
-| Q3_K_S / Q3_K_M / Q3_K_L | ~1.9-2.2 | ~3 GB |
-| Q4_0 / Q4_1 | ~2.3-2.5 | ~3.5 GB |
-| IQ4_XS / IQ4_NL / Q4_K_S / Q4_K_M | ~2.2-2.6 | ~3.5 GB |
-| Q5_K_S / Q5_K_M | ~2.8-3.1 | ~4 GB |
-| Q6_K | ~3.3-3.6 | ~4.5 GB |
-
-- VRAM estimada para inferencia: entre ~1,5 GB (IQ1) y ~4,5 GB (Q6_K) en el escenario de 4B; en el escenario de 1,8M parámetros las cifras serían drásticamente menores.
-- GPU recomendadas: cualquier GPU consumer con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 4070) puede alojar las variantes Q4 y Q5 de un modelo de 4B; A100/H100 solo tendrían sentido para servir muchas instancias en paralelo.
-- Cabe en GPU consumer: sí, previsiblemente en la mayoría de tarjetas con 6 GB o más para cuantizaciones Q4/Q5; las variantes IQ1-IQ2 podrían ejecutarse incluso en iGPU con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, text-generation-webui y servidores compatibles con llama.cpp. No se indica compatibilidad con vLLM o TGI, que suelen requerir pesos sin cuantizar o AWQ/GPTQ.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas el overhead de contexto. Las cuantizaciones van de 2,1 GB (i1-Q2_K) a 3,7 GB (i1-Q6_K); con ventanas de contexto moderadas, el consumo total se situa en torno a 3-5 GB.
+- GPU recomendadas: para las cuantizaciones mayores (Q5_K_M, Q6_K), una RTX 3060 de 12 GB, RTX 4070 o superiores ofrecen margen holgado. Para Q4_K_M basta con 8 GB de VRAM (RTX 3060 Ti, RTX 4060 Ti, RTX 3070).
+- Cabe en GPU de consumo: si. Las versiones Q4 y Q5 son adecuadas para GPUs de 8 GB; las versiones Q2 y Q3 pueden ejecutarse incluso en GPUs de 4-6 GB o en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio y cualquier runtime compatible con GGUF. Para servidores con mayor concurrencia, vLLM y TGI requieren los pesos originales en safetensors, no el GGUF.
+- Latencia y throughput estimados: no disponibles; dependen del hardware y del nivel de cuantizacion. Como referencia cualitativa, la model card senala i1-Q4_K_M como "fast, recommended" y i1-Q4_0 como "fast, low quality".
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos del modelo base ni de alternativas comparables, y el recuento de parámetros reportado (1.797.272) impide establecer una comparación fiable con modelos de ~4B como Qwen, Llama o Phi. Se recomienda consultar el repositorio ConwayResearch/Underdog-Poodle-4B para obtener la ficha del modelo original antes de comparar.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Underdog-Poodle-4B (este, cuantizado) | 4,33B | no disponible | cc-by-nc-4.0 | GGUF | Especializado en tool calling y agentes; solo ingles declarado |
+| Qwen3.5-4B (referenciado en license_link) | no disponible en la informacion | no disponible | no disponible en la informacion | safetensors | La model card enlaza su licencia como referencia, lo que sugiere parentesco o inspiracion |
+| Alternativas de 4B para function calling | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
+
+La informacion disponible no permite establecer comparaciones cuantitativas con modelos alternativos: no hay benchmarks publicados ni datos de contexto de los modelos de referencia. La unica comparacion documentada es interna, entre los distintos niveles de cuantizacion del propio modelo.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no puede confirmarse el uso comercial, la redistribución ni la obligación de atribución; es un riesgo legal para producción.
-- Idiomas no disponibles: se desconoce el soporte multilingüe real del modelo base.
-- Sesgos y alucinaciones: no cuantificados en la información disponible; deben evaluarse con el modelo base antes de cualquier despliegue.
-- Cuantizaciones IQ1/IQ2 muy agresivas: la compresión extrema puede degradar notablemente la calidad, especialmente en razonamiento y matemáticas.
-- Discrepancia de parámetros: el dato de safetensors (1.797.272) no concuerda con la denominación "4B"; conviene verificar el tamaño real de los ficheros antes de planificar recursos.
-- Repositorio con 0 descargas y tamaño reportado de 0.0 GB: posible repo incompleto, recién creado o con métricas no actualizadas; verificar la subida de los ficheros.
-- Formato GGUF: no apto para fine-tuning directo ni para servir con frameworks que requieran safetensors (vLLM, TGI con pesos completos).
-- Fecha de creación del repositorio (2026-10-25) posterior a la de la mayoría de modelos disponibles; conviene comprobar la vigencia del modelo base.
+- Licencia cc-by-nc-4.0: prohibido el uso comercial. Cualquier despliegue en producto o servicio que genere ingresos requiere licencia adicional del titular de los derechos.
+- Idioma: solo se declara ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- Contexto desconocido: al no publicarse la longitud de contexto, no se puede garantizar el comportamiento en conversaciones largas o documentos extensos; conviene validarlo antes de usarlo en produccion.
+- Riesgo de alucinacion: inherente a los modelos de 4B, especialmente en tool calling, donde una llamada mal formada o con argumentos inventados puede provocar fallos en cadena en el agente.
+- Degradacion por cuantizacion: las versiones Q2 y Q3 pierden calidad de forma notable; la propia model card recomienda IQ3_XXS o IQ3_S frente a Q2_K y Q3_K_S. Para tareas de function calling, donde la precision del formato importa, se recomienda Q4_K_M o superior.
+- Vision condicionada: los ficheros mmproj no estan en este repositorio sino en el estatico; sin ellos, la capacidad multimodal no esta disponible.
+- Sin benchmarks: no hay evidencia publicada de rendimiento en MMLU, HumanEval, GSM8K ni en suites de tool calling como BFCL, lo que impide estimar su calidad relativa.
+- Modelo derivado: los meritos tecnicos corresponden al modelo base ConwayResearch/Underdog-Poodle-4B; esta publicacion solo aporta la cuantizacion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Underdog-Poodle-4B-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Underdog-Poodle-4B-i1-GGUF
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Poodle-4B
-- llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp
+- Cuantizaciones estaticas (incluye posibles mmproj): https://huggingface.co/mradermacher/Underdog-Poodle-4B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Underdog-Poodle-4B-i1-GGUF
+- Licencia de referencia (Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

@@ -2,98 +2,89 @@
 
 ## Resumen
 
-TerminalHorizon-122B-A10B-i1-GGUF es la version cuantizada en formato GGUF del modelo shunzou05/TerminalHorizon-122B-A10B, un modelo afinado especificamente para actuar como agente de terminal (terminal-agent) y de linea de comandos (CLI). La publica mradermacher, un autor conocido por generar cuantizaciones de alta calidad con calibracion imatrix a partir de modelos de terceros. El modelo base fue entrenado mediante ajuste supervisado (SFT) sobre los datasets shunzou05/TerminalHorizon-3K y shunzou05/TerminalHorizon-Environment, orientados a tareas de horizonte largo (long-horizon) en entornos de terminal.
+TerminalHorizon-122B-A10B-i1-GGUF es la versión cuantizada en formato GGUF del modelo TerminalHorizon-122B-A10B, desarrollado originalmente por shunzou05 y cuantizado por mradermacher. Se trata de un modelo de lenguaje de gran escala (122.111.526.912 parámetros totales según los safetensors del modelo base) especializado en tareas de agente de terminal, línea de comandos (CLI) y razonamiento agéntico de horizonte largo. El sufijo "A10B" en el nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 10.000 millones de parámetros activos, aunque este dato no se confirma explícitamente en la información disponible.
 
-El modelo maneja aproximadamente 122.000 millones de parametros totales, dato confirmado en el repositorio de safetensors, y la nomenclatura 122B-A10B indica que se trata de una arquitectura de mezcla de expertos (MoE) con unos 10.000 millones de parametros activos por token. Esa relacion entre parametros totales y activos es clave: permite almacenar el modelo completo en disco o RAM y activar solo una fraccion por token, lo que reduce el coste computacional de cada paso de generacion.
+El modelo ha sido afinado mediante supervisión (supervised fine-tuning) sobre dos conjuntos de datos propios: TerminalHorizon-3K y TerminalHorizon-Environment, orientados a la resolución de tareas en entornos de terminal y a la interacción con herramientas de línea de comandos. Su relevancia actual radica en la creciente demanda de modelos capaces de operar de forma autónoma en entornos de desarrollo, ejecutar comandos, interpretar su salida y encadenar múltiples pasos de razonamiento para completar tareas complejas de ingeniería de software.
 
-La relevancia actual del modelo esta en su enfoque: agentes autonomos que operan shell, ejecutan comandos, interpretan salidas de terminal y completan tareas de multiples pasos (agentes de codificacion, RSI o razonamiento iterativo). La licencia Apache 2.0 y la disponibilidad de cuantizaciones desde IQ2_M hasta Q6_K lo hacen desplegable en configuraciones muy distintas, desde servidores con multiples GPU hasta equipos con mucha RAM y GPU consumer mediante offload de expertos.
+Esta ficha se centra en la versión cuantizada i1-GGUF, que ofrece un amplio abanico de niveles de cuantización (desde IQ1_S hasta Q6_K) para facilitar el despliegue en hardware con recursos limitados. El repositorio tiene un tamaño total de 1293 GB, lo que refleja la inclusión de todas las variantes de cuantización. La licencia es Apache 2.0 y el modelo está etiquetado únicamente para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la nomenclatura 122B-A10B indica un modelo de mezcla de expertos, MoE) |
-| Parametros totales | 122.111.526.912 (122B) |
-| Parametros activos | 10B (deducido del sufijo A10B del nombre; no confirmado en la informacion disponible) |
+| Arquitectura | Transformer (probablemente MoE, no confirmado explícitamente) |
+| Parametros totales | 122.111.526.912 |
+| Parametros activos | aproximadamente 10.000 millones (inferido del sufijo A10B, no confirmado) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ2_M (40,4 GB), i1-Q2_K_S (42,2 GB), i1-Q2_K (45,0 GB), i1-IQ3_XXS (47,5 GB), i1-IQ3_M (53,9 GB), i1-Q3_K_M (58,7 GB), i1-IQ4_XS (65,6 GB), i1-Q4_K_S (69,8 GB), i1-Q4_K_M (74,3 GB), i1-Q6_K (100,4 GB, en 3 partes); tambien fichero imatrix (0,8 GB) para crear cuantizaciones propias |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base esta en safetensors |
-| Modelo base | shunzou05/TerminalHorizon-122B-A10B |
-| Datasets de entrenamiento | shunzou05/TerminalHorizon-3K, shunzou05/TerminalHorizon-Environment |
-| Tamano del repositorio | 678,4 GB |
-| Capacidad multimodal | si, segun la model card del cuantizador (los ficheros mmproj se distribuyen en el repositorio estatico) |
-| Libreria declarada | transformers |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones i1 con imatrix) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado), safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna del modelo base mas alla de lo que se deduce de su nombre. El sufijo 122B-A10B es la convencion habitual para modelos MoE en los que el numero total de parametros (122B) se reparte entre varios expertos y solo una fraccion (10B) se activa por token. Esta configuracion permite que el modelo tenga una capacidad de representacion cercana a la de un denso de 122B mientras mantiene un coste de computo por token mucho menor, similar al de un modelo de aproximadamente 10B activos. Esa propiedad es la que hace viable su despliegue en entornos con RAM abundante y GPU limitada, porque los pesos de expertos no activados pueden residir en memoria del sistema.
+La arquitectura exacta no se detalla en la información proporcionada. El nombre del modelo (122B-A10B) sigue la convención habitual para modelos de mezcla de expertos (MoE), donde 122B indica los parámetros totales y A10B los parámetros activos por token. Los parámetros totales confirmados por los safetensors del modelo base son 122.111.526.912. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-El entrenamiento del modelo base consistio en un ajuste supervisado (SFT) sobre dos datasets propios del autor original: TerminalHorizon-3K y TerminalHorizon-Environment. Las etiquetas del repositorio (terminal-agent, cli, agentic, long-horizon, RSI, Coding-agent) indican que el foco esta en tareas de terminal de horizonte largo, es decir, secuencias de muchos pasos con retroalimentacion del entorno, mas que en conversacion general. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni sobre tecnicas posteriores de alineacion como RLHF o DPO. Tampoco hay datos sobre tecnicas de atencion, decodificacion especulativa u otras innovaciones implementadas en el modelo base. El trabajo del cuantizador se limita a la conversion y cuantizacion con calibracion imatrix, que ajusta los pesos de cuantizacion usando estadisticas de activaciones para reducir la perdida de calidad, especialmente en cuantizaciones agresivas de 2 y 3 bits.
+El modelo base fue afinado mediante supervisión (supervised fine-tuning) sobre los datasets TerminalHorizon-3K y TerminalHorizon-Environment, ambos publicados por el autor original. Estos conjuntos de datos están orientados a tareas de terminal, CLI y razonamiento agéntico de horizonte largo. Las cuantizaciones i1-GGUF han sido generadas por mradermacher utilizando archivos imatrix (importance matrix), lo que generalmente mejora la calidad de las cuantizaciones de baja precisión en comparación con las cuantizaciones estáticas. La model card menciona además que se trata de un modelo de visión ("This is a vision model"), con posibles archivos mmproj en el repositorio estático, aunque las etiquetas del modelo no incluyen explícitamente capacidades de visión.
 
 ## Capacidades
 
-- Generacion de comandos de terminal y shell a partir de instrucciones en lenguaje natural.
-- Ejecucion de tareas agenticas de multiples pasos en entornos CLI, con interpretacion de la salida de cada comando para decidir el siguiente.
-- Razonamiento de horizonte largo (long-horizon): cadenas extensas de acciones dependientes con estado acumulado del entorno.
-- Agente de codificacion (Coding-agent): edicion de ficheros, ejecucion de pruebas y depuracion dentro de un flujo de terminal.
-- Soporte de tool calling y function calling, segun las etiquetas agentic y cli del repositorio.
-- Capacidad potencialmente multimodal (vision) segun la nota de la model card, con ficheros mmproj en el repositorio estatico de cuantizaciones.
-- Razonamiento iterativo y automejora (RSI, recursive self-improvement) como area de aplicacion declarada por las etiquetas.
-- Idiomas: solo ingles declarado; no se anuncia soporte multilingue.
-- No se documentan capacidades especificas de matematicas avanzadas, audio ni thinking mode explicito.
+- Generación de texto y razonamiento general en inglés.
+- Especialización en tareas de agente de terminal y línea de comandos (CLI).
+- Razonamiento agéntico de horizonte largo (long-horizon): capacidad de encadenar múltiples pasos para completar tareas complejas.
+- Soporte para tareas de codificación y agentes de código (etiqueta Coding-agent).
+- Capacidad conversacional (etiqueta conversational).
+- Posible soporte de visión según la model card del cuantizador, aunque no confirmado en las etiquetas.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
 
 ## Casos de uso
 
-- Automatizacion de operaciones en servidores: el modelo puede recibir una tarea en lenguaje natural ("reinicia el servicio, comprueba los logs y verifica que responde") y traducirla a una secuencia de comandos shell, leyendo la salida entre pasos para corregir el rumbo. Es adecuado porque esta entrenado especificamente sobre entornos de terminal.
-- Agente de codificacion en flujos de CI/CD: ejecucion de pruebas, lectura de errores del compilador y aplicacion de parches en el arbol de trabajo mediante comandos y edicion de ficheros, integr able como paso de un pipeline de integracion continua.
-- Asistente de depuracion interactiva: dado un fallo, el modelo propone comandos de diagnostico (grep, journalctl, strace, docker logs), interpreta la salida y encadena hipotesis hasta localizar la causa.
-- Generacion de scripts de aprovisionamiento: convertir requisitos de infraestructura en scripts de bash o de configuracion de herramientas CLI, con verificacion posterior de su ejecucion.
-- Soporte tecnico de nivel 2 sobre terminales de cliente: el agente guia la recogida de informacion de diagnostico en la maquina del usuario mediante comandos acotados, con la ventana de contexto suficiente para mantener el historial de la sesion.
-- Formacion y evaluacion de agentes: al ser un modelo abierto con licencia Apache 2.0 y varias cuantizaciones, sirve como referencia (baseline) para comparar politicas de agentes de terminal y para generar trazas de entrenamiento.
-- Investigacion en horizonte largo: las etiquetas long-horizon y RSI apuntan a su uso en experimentos donde el agente debe mantener coherencia durante decenas o cientos de pasos, un escenario donde los modelos generalistas suelen degradarse.
-- Despliegue en entornos con GPU limitada: gracias a la estructura MoE y a las cuantizaciones de 2 a 4 bits, es posible ejecutarlo con offload parcial de expertos a RAM en estaciones de trabajo sin cluster dedicado.
+- Automatización de tareas en terminal: el modelo puede interpretar instrucciones en lenguaje natural y traducirlas a comandos de shell, ejecutarlos y analizar la salida para continuar con el siguiente paso, gracias a su entrenamiento específico en entornos de terminal.
+- Agentes de codificación autónomos: puede integrarse en pipelines de desarrollo para resolver tareas de programación de múltiples pasos, como refactorizaciones, corrección de errores o generación de scripts, aprovechando su especialización en razonamiento de horizonte largo.
+- Asistente de administración de sistemas: el modelo puede guiar al usuario en la configuración de servidores, diagnóstico de problemas de red o gestión de servicios, interpretando la salida de comandos y proponiendo acciones correctivas.
+- Automatización de CI/CD: puede utilizarse para analizar fallos en pipelines, interpretar logs de error y sugerir o aplicar correcciones, integrándose en flujos de integración continua.
+- Generación de scripts de automatización: dado un objetivo en lenguaje natural, el modelo puede generar scripts de shell o Python que automaticen tareas repetitivas, con capacidad de iterar sobre errores.
+- Educación y formación en línea de comandos: puede actuar como tutor interactivo que explica comandos, propone ejercicios y evalúa las soluciones del usuario en un entorno controlado.
+- Depuración interactiva: el modelo puede analizar trazas de error y logs de terminal para identificar la causa raíz de un fallo y proponer pasos de resolución.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del cuantizador no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K, SWE-bench ni equivalentes para agentes de terminal) y tampoco se han encontrado datos de rendimiento en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Cuantizacion minima viable: i1-IQ2_M, 40,4 GB de pesos, mas overhead de contexto y cache KV; se recomienda prever al menos 48 GB de VRAM o repartir entre VRAM y RAM.
-- Cuantizacion recomendada por tamano, velocidad y calidad: i1-Q4_K_S (69,8 GB) e i1-Q4_K_M (74,3 GB); en la practica exigen del orden de 80 GB de VRAM para residir completamente en GPU.
-- Cuantizacion de mayor calidad: i1-Q6_K (100,4 GB, en tres partes), que requiere al menos 100-110 GB de memoria entre VRAM y RAM.
-- GPU recomendadas para carga completa: A100 80 GB, H100 80 GB o H200; tambien configuraciones multi-GPU con dos o mas aceleradores de 48-80 GB.
-- Viabilidad en GPU consumer: ninguna cuantizacion cabe en una sola GPU de 24 GB. Es posible con dos o mas RTX 4090/3090 si se combinan 48 GB de VRAM con offload parcial a RAM del sistema, aprovechando que solo se activan unos 10B de parametros por token.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) son la via natural al tratarse de GGUF con calibracion imatrix. Para el modelo base en safetensors, vLLM o TGI si se confirma compatibilidad con la arquitectura MoE concreta. El soporte de vision requiere los ficheros mmproj del repositorio estatico y el modulo multimodal de llama.cpp.
-- Memoria del sistema: con offload de expertos conviene disponer de 64-128 GB de RAM; el repositorio completo ocupa 678,4 GB, pero solo hay que descargar la cuantizacion elegida.
-- Latencia y throughput: no disponibles. El rendimiento dependera fuertemente de cuantos expertos residan en GPU frente a RAM, ya que el cuello de botella pasa a ser el ancho de banda de memoria del sistema.
+- VRAM estimada para inferencia: depende de la cuantización. Las variantes más pequeñas (i1-IQ1_S, 25,4 GB) pueden caber en GPUs con 24-32 GB de VRAM, aunque con calidad muy degradada. Las cuantizaciones recomendadas (i1-Q4_K_M, 74,3 GB) requieren al menos 80 GB de VRAM o el uso de CPU con RAM suficiente.
+- GPU recomendadas: para las cuantizaciones de mayor calidad (Q5_K_M, Q6_K) se recomiendan GPUs profesionales como A100 (80 GB) o H100 (80 GB). Las cuantizaciones intermedias (IQ3, Q4) pueden ejecutarse en configuraciones multi-GPU o en GPUs con 48 GB como la RTX A6000.
+- ¿Cabe en GPU de consumo? Las cuantizaciones más bajas (IQ1, IQ2, Q3) podrían caber en GPUs de consumo de gama alta con 24 GB (RTX 4090, RTX 3090), aunque con pérdida notable de calidad. Las cuantizaciones Q4 en adelante no caben en una única GPU de consumo.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI.
+- Latencia y throughput estimados: no disponibles. Al tratarse de un modelo MoE con aproximadamente 10.000 millones de parámetros activos (si se confirma), el throughput podría ser relativamente alto en comparación con un modelo denso de 122B, pero no se proporcionan cifras.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma categoria (agentes de terminal de gran tamano con arquitectura MoE) con datos de parametros, contexto, rendimiento y licencia que permitan una comparacion rigurosa. Como referencia interna, la unica alternativa verificable es el propio modelo base shunzou05/TerminalHorizon-122B-A10B en safetensors, que comparte arquitectura, licencia y capacidades, y se diferencia unicamente por el formato de pesos y por no incluir cuantizaciones.
+No se dispone de información suficiente sobre modelos comparables en la misma categoría (agentes de terminal de gran escala) en la documentación proporcionada. Se indica "no disponible".
+
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| TerminalHorizon-122B-A10B-i1-GGUF | 122B totales (aprox. 10B activos) | no disponible | Apache 2.0 | GGUF en Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Entrenamiento declarado solo en ingles: el rendimiento en castellano u otros idiomas no esta documentado y previsiblemente sera inferior.
-- Riesgo elevado en ejecucion de comandos: al ser un agente de terminal, un error de generacion puede borrar ficheros, modificar configuraciones o exponer datos. Es imprescindible ejecutar en entornos aislados (contenedores, maquinas virtuales, sandbox) y con confirmacion humana en operaciones destructivas.
-- Alucinacion de comandos y de opciones: el modelo puede inventar flags, rutas o utilidades inexistentes. La validacion en seco (dry run) y la revision de las ordenes antes de ejecutarlas son obligatorias en produccion.
-- Degradacion en cuantizaciones agresivas: las variantes IQ2_M, Q2_K_S y Q2_K conllevan perdida notable de calidad; el propio autor recomienda evitar Q2_K_S por su baja calidad. Para tareas de razonamiento largo, conviene usar IQ4_XS o superior.
-- Ausencia de datos de evaluacion: no hay benchmarks publicados que permitan estimar la tasa de exito en tareas de terminal, por lo que cualquier decision de adopcion deberia basarse en una evaluacion propia sobre el dominio objetivo.
-- Longitud de contexto desconocida: no se puede planificar el uso en sesiones largas sin confirmar la ventana real del modelo base.
-- Restricciones de licencia: la licencia Apache 2.0 del modelo permite uso comercial, modificacion y redistribucion, pero no exime de las obligaciones de atribucion ni de las licencias de terceros que pudieran afectar al modelo base o a los datasets.
-- Procedencia de los datos de entrenamiento: no se detalla la composicion de TerminalHorizon-3K ni de TerminalHorizon-Environment, por lo que no se pueden descartar sesgos, codigo con licencias incompatibles o informacion sensible en el corpus.
-- Estado del repositorio: registra 0 descargas y 1 like en el momento de la consulta, lo que indica adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
+- El modelo está entrenado y etiquetado únicamente para inglés, por lo que su rendimiento en castellano u otros idiomas no está garantizado.
+- No se dispone de información sobre sesgos conocidos, pero al ser un modelo entrenado sobre datos de terminal y código, puede heredar sesgos presentes en esos dominios.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar comandos o explicaciones incorrectas, especialmente en cuantizaciones de baja precisión (IQ1, IQ2), donde la calidad se degrada significativamente.
+- Las cuantizaciones de muy baja precisión (IQ1_S, IQ1_M, IQ2_XXS) pueden producir resultados poco fiables; se recomienda usar al menos IQ3 o Q4 para uso en producción.
+- La longitud de contexto no está documentada, lo que dificulta planificar su uso en tareas que requieran ventanas extensas.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, el modelo base podría tener restricciones adicionales no reflejadas en esta ficha; se recomienda consultar la licencia del modelo original.
+- La model card menciona que es un modelo de visión, pero las etiquetas no lo confirman y los archivos mmproj podrían no estar incluidos en esta versión cuantizada; verificar antes de usar en tareas multimodales.
+- El tamaño del repositorio (1293 GB) implica que la descarga completa es muy costosa; se recomienda descargar solo la cuantización necesaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-i1-GGUF
-- Repositorio de cuantizaciones estaticas (incluye ficheros mmproj para vision): https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-GGUF
-- Modelo base: https://huggingface.co/shunzou05/TerminalHorizon-122B-A10B
-- Dataset TerminalHorizon-3K: https://huggingface.co/datasets/shunzou05/TerminalHorizon-3K
-- Dataset TerminalHorizon-Environment: https://huggingface.co/datasets/shunzou05/TerminalHorizon-Environment
-- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#TerminalHorizon-122B-A10B-i1-GGUF
-- Preguntas frecuentes y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF y concatenacion de ficheros multiparte: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de calidad de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- [Hugging Face: mradermacher/TerminalHorizon-122B-A10B-i1-GGUF](https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-i1-GGUF)
+- [Modelo base: shunzou05/TerminalHorizon-122B-A10B](https://huggingface.co/shunzou05/TerminalHorizon-122B-A10B)
+- [Cuantizaciones estáticas: mradermacher/TerminalHorizon-122B-A10B-GGUF](https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-GGUF)
+- [Página de overview del cuantizador](https://hf.tst.eu/model#TerminalHorizon-122B-A10B-i1-GGUF)
+- [Dataset: shunzou05/TerminalHorizon-3K](https://huggingface.co/datasets/shunzou05/TerminalHorizon-3K)
+- [Dataset: shunzou05/TerminalHorizon-Environment](https://huggingface.co/datasets/shunzou05/TerminalHorizon-Environment)

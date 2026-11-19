@@ -2,87 +2,93 @@
 
 ## Resumen
 
-SAGI (Swarm AGI Language Model) es un modelo de lenguaje causal experimental que integra dinámicas de inteligencia de enjambre con una arquitectura transformer. Desarrollado por el usuario reaperdoesntknow, el modelo trata la cognición como un sistema adaptativo en el que múltiples «agentes» internos colaboran mediante enrutamiento diferenciable, mecanismos de confianza y memoria compartida. Con 52,72 millones de parámetros, 6 capas y una ventana de contexto de 2048 tokens, SAGI es un modelo pequeño orientado exclusivamente a la investigación.
+SAGI (Swarm AGI Language Model) es un modelo de lenguaje causal de tipo decoder-only desarrollado por el usuario reaperdoesntknow y publicado en Hugging Face bajo licencia Apache 2.0. Se presenta como una exploracion de investigacion que integra dinamicas de inteligencia de enjambre (swarm intelligence) con una arquitectura transformer convencional, tratando la cognicion como un sistema adaptativo en el que multiples "agentes" internos colaboran mediante enrutamiento diferenciable, mecanismos de confianza y memoria compartida.
 
-La relevancia de SAGI reside en su propuesta arquitectónica: combina un decoder transformer estándar con un módulo de enjambre que condiciona la atención y las capas feed-forward mediante proyecciones aprendidas. Esto crea un flujo bidireccional entre el procesamiento simbólico (tokens) y subsimbólico (dinámicas de enjambre). El modelo está entrenado únicamente sobre un subconjunto de TinyStories, por lo que su capacidad de generación es limitada y no está pensado para uso productivo. Su licencia Apache 2.0 permite uso libre, incluido comercial, aunque el propio autor desaconseja su empleo en sistemas reales.
+El modelo es deliberadamente pequeno: 52,7 millones de parametros, 512 dimensiones ocultas, 6 capas y 8 cabezas de atencion, con una longitud de contexto de 2048 tokens y tokenizador GPT-2 (50.257 entradas de vocabulario). Su proposito no es competir con modelos de gran escala, sino servir como banco de pruebas para arquitecturas cognitivas multi-agente aplicadas a la generacion de texto.
 
-## Especificaciones técnicas
+Es relevante ahora unicamente en el ambito de la investigacion experimental: el propio autor lo describe como un modelo infraentrenado, entrenado sobre un subconjunto de TinyStories, no apto para produccion ni para sistemas criticos. Su valor reside en la propuesta arquitectonica (enrutamiento diferenciable, control meta-cognitivo, memoria episodica y semantica, motor de curiosidad), no en su calidad de generacion.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Decoder + Swarm Dynamics |
-| Parametros totales | 52.729.731 (52,72 M) |
-| Parametros activos | no disponible (no es MoE declarado) |
+| Arquitectura | Transformer decoder + dinamicas de enjambre (Swarm-7 V2.2) |
+| Parametros totales | 52.729.731 |
+| Parametros activos | no aplica (no es MoE clasico; usa enrutamiento diferenciable con top-k=5 sobre 20 agentes internos) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan versiones GGUF ni cuantizadas) |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-SAGI combina un decoder transformer estándar (6 capas, 8 cabezas de atención, hidden size 512, embeddings RoPE) con un módulo de enjambre denominado Swarm-7 V2.2. Este módulo procesa observaciones derivadas de los embeddings de los tokens y actualiza un estado interno S, que condiciona los patrones de atención y las activaciones feed-forward mediante proyecciones aprendidas. El sistema incorpora varias innovaciones: enrutamiento diferenciable tipo mixture-of-experts continuo (DiffRouter), un MetaController que activa capacidad bajo restricciones de recursos, un sistema de memoria dual (episódica y semántica) con utilidad de recuperación entrenable, un motor de curiosidad que inyecta objetivos novedosos cuando la sorpresa es baja, un self-model que predice transiciones de estado y detecta anomalías para autocorrección, dinámicas de recursos con conservación suave (compute, memoria y energía) y un monitor de valores que congela la plasticidad ante desviaciones de los valores núcleo (verdad, seguridad, eficiencia).
+La arquitectura combina un transformer decoder de 6 capas y 512 dimensiones ocultas con un modulo de dinamicas cognitivas denominado Swarm-7 V2.2. Este modulo procesa observaciones derivadas de los embeddings de tokens y actualiza un estado interno S que condiciona, mediante proyecciones aprendidas, los patrones de atencion y las activaciones de las capas feed-forward del transformer, generando un flujo de informacion bidireccional entre el procesamiento simbolico (tokens) y el subsimbolico (dinamicas de enjambre). Emplea embeddings RoPE y un cabezal de lenguaje estandar.
 
-El entrenamiento se realizó sobre un subconjunto de TinyStories con optimizador AdamW (lr=3e-4, betas=(0.9, 0.999), weight_decay=0.01), scheduler de coseno y precisión FP32. El hardware declarado es CPU, aunque el modelo es compatible con CUDA. No se especifica el número de tokens de entrenamiento.
+Los componentes destacados incluyen un `DiffRouter` que implementa una mezcla de expertos continua mediante atencion (frente a seleccion dura de modulos), un `MetaController` con gating adaptativo y dinamicas de confianza, un sistema de memoria dual (episodica y semantica) con recuperacion entrenable, un motor de curiosidad que inyecta objetivos novedosos cuando la sorpresa es baja, un automodelo con rollback para detectar anomalias y autocorregirse, y un monitor de valores que congela la plasticidad ante desviaciones. La configuracion del enjambre fija `max_agents`=20, `dim_s`=64, `dim_t`=32, `dim_obs`=48, `topk_route`=5 y `K_thought_max`=5, con presupuestos de recursos de computo 60,0, memoria 20,0 y energia 25,0.
+
+El entrenamiento se realizo sobre un subconjunto de TinyStories, con optimizador AdamW (lr=3e-4, betas=(0,9; 0,999), weight_decay=0,01), scheduler de annealing coseno y precision FP32. El autor indica que el entrenamiento se ejecuto en CPU (compatible con CUDA). No se documenta el numero de tokens vistos, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto causal con condicionamiento por dinámicas de enjambre.
-- Enrutamiento diferenciable entre agentes internos (top-k de 5 sobre un máximo de 20 agentes).
-- Memoria dual episódica y semántica con recuperación entrenable.
-- Motor de curiosidad para exploración cuando la sorpresa es baja.
-- Autocorrección mediante predicción de transiciones de estado y detección de anomalías.
-- Gestión de recursos internos (cómputo, memoria y energía) con presupuestos fijos.
-- Monitoreo de valores con congelación de plasticidad ante deriva.
-- Capacidades multilingües: no disponible, solo inglés declarado.
-- Sin soporte de tool calling ni function calling.
-- Sin modo de razonamiento explícito más allá de las iteraciones internas de pensamiento (K_thought_max=5).
+- Generacion de texto causal en ingles con decodificacion por muestreo (temperature, top-k, top-p).
+- Razonamiento multi-paso interno mediante iteraciones de pensamiento acotadas (`K_thought_max`=5).
+- Enrutamiento diferenciable entre 20 agentes internos con seleccion top-k=5.
+- Mecanismos de confianza y gating adaptativo para priorizar componentes fiables.
+- Memoria episodica y semantica con recuperacion entrenable.
+- Motor de curiosidad para exploracion cuando la sorpresa es baja.
+- Automodelo con deteccion de anomalias y rollback para autocorreccion.
+- Monitorizacion de valores alineados con "truth", "safety" y "efficiency".
+- No se documenta soporte de tool calling, function calling, vision, audio ni capacidades multilingues mas alla del ingles.
 
 ## Casos de uso
 
-- Investigación en arquitecturas multi-agente: SAGI permite estudiar cómo el enrutamiento diferenciable y los mecanismos de confianza afectan a la generación de texto en comparación con transformers estándar del mismo tamaño.
-- Educación sobre inteligencia de enjambre aplicada a LLMs: su código y configuración documentada sirven como material didáctico para comprender la integración de dinámicas colectivas en modelos de lenguaje.
-- Experimentación con memoria episódica y semántica: los investigadores pueden analizar el impacto de la memoria dual en tareas de generación de historias cortas, dado su entrenamiento en TinyStories.
-- Evaluación de mecanismos de autocorrección: el self-model y el sistema de rollback permiten probar estrategias de detección de anomalías en secuencias generadas.
-- Estudio de la relación entre recursos computacionales y calidad de salida: los presupuestos de cómputo, memoria y energía son configurables, lo que facilita experimentos de escalado y eficiencia.
-- Benchmark de arquitecturas híbridas simbólico-subsimbólicas: SAGI sirve como punto de partida para comparar el rendimiento de modelos que combinan procesamiento simbólico y subsimbólico frente a arquitecturas puramente transformer.
+- Investigacion en arquitecturas cognitivas multi-agente: el modelo sirve como implementacion de referencia para estudiar enrutamiento diferenciable y dinamicas de confianza en transformers de pequena escala, con un coste computacional minimo.
+- Experimentacion educativa sobre inteligencia de enjambre aplicada a LLM: permite reproducir y modificar los componentes (DiffRouter, MetaController, memoria dual) en entornos academicos sin grandes recursos de GPU.
+- Pruebas de concepto de memoria episodica y semantica: util para evaluar mecanismos de recuperacion entrenable en tareas de generacion de historias cortas.
+- Estudio de mecanismos de autocorreccion: el automodelo con rollback permite investigar deteccion de anomalias y recuperacion de estado en modelos generativos pequenos.
+- Analisis de alineacion basica: el monitor de valores y el congelamiento de plasticidad ofrecen un caso de estudio para tecnicas de control de deriva en modelos de investigacion.
+- Generacion de texto simple en ingles para validacion de pipelines: dado su tamano (0,2 GB de repo) y entrenamiento sobre TinyStories, puede usarse para probar flujos de inferencia con transformers antes de escalar a modelos mayores.
+- Docencia y talleres: su huella reducida permite ejecutarlo en CPU o en GPU consumer para demostraciones practicas de arquitecturas hibridas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index del autor declara una lista vacía de resultados.
+El model-index oficial del autor declara una entrada para SAGI con la lista de resultados vacia. No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser un modelo de 52,72 M de parámetros en FP32, el peso ocupa aproximadamente 210 MB. Con overhead de inferencia, se estima un uso de VRAM inferior a 1 GB en GPU.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (p. ej., GTX 1050 Ti, RTX 2060) es suficiente. También es ejecutable en CPU con memoria RAM estándar.
-- Compatibilidad con consumer GPU: sí, ampliamente.
-- Opciones de despliegue: transformers (PyTorch), compatible con vLLM y TGI por ser un modelo causal estándar, aunque no hay integraciones probadas documentadas. También puede usarse con llama.cpp si se convierte a GGUF, pero no se proporcionan cuantizaciones oficiales.
-- Latencia y throughput: no disponible. El overhead de las dinámicas de enjambre añade coste computacional adicional frente a un transformer del mismo tamaño, pero al ser un modelo pequeño la latencia en CPU es aceptable para experimentación.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 (52,7 M de parametros, aproximadamente 211 MB de pesos) y en torno a 0,3-0,5 GB contando estados de activacion y cache KV para contexto de 2048 tokens.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el autor indica que el entrenamiento se realizo en CPU, por lo que la inferencia en CPU es viable.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna (GTX 1050, RTX 2060, RTX 3060, RTX 4090) e incluso en CPU.
+- Opciones de despliegue: transformers (AutoModelForCausalLM) es la via documentada; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y al no haber pesos GGUF publicados, llama.cpp y Ollama no son aplicables directamente sin conversion.
+- Latencia y throughput estimados: no disponibles. Las dinamicas de enjambre anaden sobrecarga computacional respecto a un transformer estandar del mismo tamano, segun el propio autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Uso principal |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SAGI | 52,72 M | 2048 | Transformer + Swarm Dynamics | Apache 2.0 | Investigación |
-| GPT-2 small | 124 M | 1024 | Transformer decoder | MIT | Generación general |
-| TinyStories-1M | 1 M | 512 | Transformer decoder | Apache 2.0 | Investigación educativa |
+| SAGI (reaperdoesntknow) | 52,7 M | 2048 | Apache 2.0 | Transformer + dinamicas de enjambre | Hugging Face, transformers |
+| GPT-2 small (OpenAI) | 124 M | 1024 | MIT | Transformer decoder estandar | Hugging Face, ampliamente soportado |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Transformer decoder con RoPE | Hugging Face, vLLM, llama.cpp |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 | Apache 2.0 | Transformer decoder | Hugging Face, transformers, GGUF |
 
-No se dispone de benchmarks comparativos entre estos modelos. SAGI se distingue por su arquitectura híbrida, pero su entrenamiento limitado en TinyStories lo sitúa muy por detrás de GPT-2 small en calidad de generación. TinyStories-1M es comparable en propósito educativo, aunque con menos parámetros.
+La comparativa es orientativa: SAGI es un modelo de investigacion con un objetivo arquitectonico distinto al de los modelos de proposito general. No se dispone de datos de rendimiento comparables para SAGI, por lo que la comparacion se limita a parametros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental y subentrenado: las salidas pueden ser repetitivas o incoherentes, tal como advierte el autor.
-- Entrenado exclusivamente en un subconjunto de TinyStories, lo que limita su vocabulario y temática a historias simples en inglés.
-- Sin soporte multilingüe: solo inglés.
-- Overhead computacional: las dinámicas de enjambre añaden coste de inferencia en comparación con transformers estándar del mismo tamaño.
-- No apto para producción, sistemas críticos de seguridad ni generación de contenido factual.
-- No se han publicado cuantizaciones oficiales ni resultados de benchmarks.
-- El autor indica que el entrenamiento se realizó en CPU, lo que sugiere una calidad de convergencia limitada.
+- Modelo de investigacion temprana: el autor lo califica explicitamente como experimental y no apto para produccion.
+- Entrenado sobre un subconjunto de TinyStories: las salidas tienden a ser simples, repetitivas o incoherentes, y de estilo narrativo infantil.
+- Infraentrenado: la calidad de generacion es baja y no debe usarse para contenido factual.
+- Solo ingles: no hay soporte multilingue documentado.
+- Riesgo elevado de alucinacion: al no estar entrenado para precision factual, cualquier afirmacion generada debe tratarse como no fiable.
+- Sesgos: no se documentan evaluaciones de sesgo; el dataset TinyStories puede introducir sesgos narrativos y de estilo.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor desaconseja explicitamente su uso en produccion y sistemas criticos.
+- No apto para sistemas de seguridad critica ni para generacion de contenido factual.
+- Sobrecarga computacional: las dinamicas de enjambre anaden coste frente a un transformer estandar del mismo tamano.
+- Sin pesos cuantizados ni integraciones documentadas con motores de inferencia de alto rendimiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/SAGI
-- Colección SAGI: https://huggingface.co/collections/reaperdoesntknow/sagi-swarm-agi-language-model
-- Modelo relacionado S-AGI: https://huggingface.co/reaperdoesntknow/S-AGI
-- Modelo relacionado SharperSwarm: https://huggingface.co/reaperdoesntknow/SharperSwarm
-- Colección DiscoverLM: https://huggingface.co/collections/reaperdoesntknow/discoverlm
+- Hugging Face: https://huggingface.co/reaperdoesntknow/SAGI
+- Model card (README): https://huggingface.co/reaperdoesntknow/SAGI/blob/main/README.md
+- No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.

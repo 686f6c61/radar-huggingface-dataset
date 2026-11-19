@@ -2,111 +2,104 @@
 
 ## Resumen
 
-Point-Mamba base es un modelo de clasificación de nubes de puntos 3D desarrollado por Dingkang Liang y colaboradores (publicado en NeurIPS 2024) y distribuido en Hugging Face por la organización `torch-pointcloud`. Se trata de un modelo de espacio de estados (SSM, familia Mamba) que opera sobre puntos serializados, en lugar de las arquitecturas basadas en transformers o en convoluciones típicas del análisis de nubes de puntos. Con 12.293.647 parámetros (12,3 M) y 384 características por punto, es un modelo compacto orientado a una tarea concreta: asignar una de 15 clases a una nube de puntos.
+Point-Mamba-base es un modelo de clasificación de nubes de puntos 3D construido sobre PointMamba, una arquitectura basada en modelos de espacio de estados (SSM) que procesa secuencias de puntos serializados en lugar de emplear mecanismos de atención. Lo desarrolla el grupo de Dingkang Liang (publicado en NeurIPS 2024) y esta version concreta ha sido convertida y empaquetada por el proyecto torch-pointcloud (Arthur Dujardin) para su uso directo con la libreria del mismo nombre. El checkpoint que nos ocupa es un fine-tuning sobre el split OBJ_ONLY del dataset ScanObjectNN, orientado a clasificacion de objetos 3D del mundo real.
 
-El checkpoint concreto de esta ficha es un ajuste fino (fine-tune) del modelo preentrenado `point-mamba-base.pretrain.dingkang-liang` sobre el subconjunto OBJ_ONLY del dataset ScanObjectNN, un benchmark de clasificación de objetos 3D escaneados en condiciones reales. Según los resultados declarados por el autor, alcanza un OA (overall accuracy) de 92,6 y un mAcc (mean accuracy) de 92,4 en dicho subconjunto.
+El modelo resuelve la tarea de clasificar una nube de puntos en una de 15 categorias de objetos, con un tamano muy reducido: 12,3 millones de parametros y 384 dimensiones de caracteristica. Su interes practico radica en que ofrece un rendimiento alto en ScanObjectNN (92,43 de overall accuracy) con un coste computacional y de memoria muy inferior al de los transformers de atencion global habituales en vision 3D, lo que facilita el despliegue en pipelines de robotica, conduccion autonoma o inventario 3D.
 
-Su relevancia actual es doble: por un lado, demuestra que los modelos de espacio de estados, que han ganado protagonismo en el procesamiento de secuencias, son competitivos en visión 3D con un coste computacional bajo; por otro, está empaquetado para la librería `torch-pointcloud`, lo que facilita su uso como extractor de características o como base para ajuste fino en otras tareas de nubes de puntos.
+La relevancia actual viene de la adopcion creciente de los SSM (familia Mamba) como alternativa eficiente a la atencion cuadratica, y de la existencia de un ecosistema de conversion a PyTorch que permite cargar el checkpoint con `torch_pointcloud.create_model` sin depender del codigo original de investigacion. El modelo esta publicado bajo licencia Apache-2.0 y los pesos se distribuyen en formato safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | PointMamba (modelo de espacio de estados, SSM, sobre puntos serializados) |
+| Arquitectura | PointMamba (state space model / SSM sobre puntos serializados) |
 | Parametros totales | 12.293.647 (12,3 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible; el ejemplo de uso de la model card emplea nubes de 8192 puntos |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes cuantizadas) |
-| Idiomas soportados | no aplica (modelo de vision 3D; no procesa texto) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (procesa nubes de hasta 8192 puntos en el ejemplo de uso) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo de vision 3D, sin entrada de texto) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (formato PyTorch, libreria torch-pointcloud) |
-| Numero de clases | 15 |
+| Formato de pesos | safetensors |
 | Dimension de caracteristicas | 384 |
-| Dataset de ajuste | ScanObjectNN (OBJ_ONLY) |
-| Modelo base | torch-pointcloud/point-mamba-base.pretrain.dingkang-liang |
+| Numero de clases | 15 |
+| Dataset de entrenamiento | ScanObjectNN (OBJ_ONLY) |
 | Tamano del repositorio | 0,1 GB |
+| Libreria | torch-pointcloud (requiere mamba-ssm) |
+| Modelo base | torch-pointcloud/point-mamba-base.pretrain.dingkang-liang |
 
 ## Arquitectura y entrenamiento
 
-PointMamba es un modelo de espacio de estados aplicado a nubes de puntos. La idea central, según el paper que lo respalda (arXiv:2402.10739), es serializar la nube de puntos en una secuencia y procesarla con un bloque SSM de tipo Mamba, evitando los mecanismos de atención cuadráticos propios de los transformers de visión 3D. El modelo base del que deriva este checkpoint fue preentrenado y después ajustado sobre la tarea de clasificación de ScanObjectNN en su variante OBJ_ONLY, es decir, empleando únicamente los objetos sin el fondo de la escena. Los detalles concretos del esquema de serialización, del número de tokens de entrenamiento, de la composición del dataset y de si se aplicaron técnicas de optimización posteriores (RLHF, DPO u otras) no están disponibles en la información proporcionada.
+PointMamba sustituye el mecanismo de auto-atencion por bloques de espacio de estados selectivos (SSM) aplicados sobre una secuencia de puntos serializada. La nube de puntos se ordena mediante una estrategia de serializacion (el paper propone un recorrido que preserva la estructura espacial) y se procesa como una secuencia unidimensional, lo que reduce la complejidad respecto a la atencion global y permite manejar miles de puntos con un coste lineal. El modelo resultante tiene 12,3 M de parametros y produce embeddings de 384 dimensiones, con una cabeza de clasificacion de 15 clases.
 
-Una innovación destacable es la propia elección de un SSM en lugar de un transformer: reduce el coste computacional y el número de parámetros necesarios para una tarea de clasificación de objetos 3D. El checkpoint ha sido convertido desde el repositorio original de referencia `LMD0311/PointMamba` (licencia Apache-2.0) para ser compatible con la librería `torch-pointcloud` de Arthur Dujardin. La model card advierte de que los kernels de `mamba-ssm` son exclusivos de GPU, por lo que la inferencia en CPU no está soportada tal cual.
+El checkpoint ha sido entrenado en dos fases: un preentrenamiento auto-supervisado (el modelo base `point-mamba-base.pretrain.dingkang-liang`) y un fine-tuning supervisado sobre ScanObjectNN en su variante OBJ_ONLY, que contiene objetos escaneados del mundo real sin fondo. La model card no detalla el numero de tokens, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables en este dominio). La implementacion requiere los kernels de `mamba-ssm` compilados para la version concreta de PyTorch y CUDA, y el codigo solo funciona en GPU.
 
 ## Capacidades
 
-- Clasificacion de nubes de puntos 3D: asigna una de 15 clases a una nube de puntos de entrada.
-- Extraccion de caracteristicas: expone `forward_features` y permite obtener embeddings de 384 dimensiones por nube mediante `reset_classifier(num_classes=0)`.
-- Procesamiento de nubes de gran tamano: el ejemplo oficial maneja 8192 puntos por muestra.
-- Reutilizacion como backbone: al ser un ajuste fino de un modelo preentrenado, puede servir de punto de partida para otras tareas de nubes de puntos.
-- Soporte de tool calling: no aplica (no es un modelo de lenguaje).
-- Soporte de agentes y razonamiento multi-paso: no aplica.
-- Capacidades multilingues: no aplica (modelo puramente geometrico, sin entrada ni salida de texto).
-- Capacidades especiales: no se documentan modos de vision adicionales, audio ni thinking mode.
+- Clasificacion de nubes de puntos 3D en 15 categorias de objetos (tarea principal).
+- Extraccion de caracteristicas: `forward_features` devuelve embeddings de 384 dimensiones utiles para tareas downstream (deteccion, segmentacion, recuperacion).
+- Funciona con nubes de puntos de hasta 8192 puntos en el ejemplo oficial, con transformaciones de datos incluidas en la informacion del modelo.
+- Inferencia por lotes mediante `collate` y el tensor de indices de batch.
+- No soporta tool calling, function calling ni agentes: es un modelo puramente perceptivo.
+- No tiene capacidades multilingues, de generacion de texto, vision 2D, audio ni modo de razonamiento explicito.
+- No dispone de cabeza de segmentacion ni de deteccion en este checkpoint.
 
 ## Casos de uso
 
-- Clasificacion de objetos en robotica movil: un robot equipado con LiDAR o camara de profundidad puede segmentar objetos de su entorno y usar el modelo para etiquetarlos antes de manipularlos, gracias a su bajo coste de inferencia (12,3 M de parametros).
-- Inventario y logistica en almacenes: escaneo de bultos o palets con sensores 3D para clasificarlos automaticamente por categoria, integrando el modelo en un pipeline de captura y clasificacion en tiempo casi real.
-- Preprocesado para conduccion autonoma: etiquetado de objetos escaneados (vehiculos, mobiliario urbano, peatones) como paso previo a modulos de deteccion o segmentacion de mayor complejidad.
-- Digitalizacion de patrimonio y escaneo 3D: clasificacion automatica de fragmentos u objetos escaneados en campanas de fotogrametria, reduciendo el trabajo manual de catalogacion.
-- Extraccion de embeddings para busqueda de similitud 3D: usando las caracteristicas de 384 dimensiones, construir un indice vectorial que permita recuperar objetos geometricamente similares en catalogos de modelos 3D.
-- Control de calidad en fabricacion: clasificacion de piezas escaneadas en linea de produccion para detectar piezas que no correspondan a la categoria esperada.
-- Inicializacion de modelos downstream: servir como backbone preentrenado y ajustarlo despues para tareas de segmentacion semantica o deteccion de partes en nubes de puntos.
-- Realidad aumentada e interiorismo: reconocimiento de la categoria de muebles y objetos presentes en una habitacion escaneada con un dispositivo movil, para anclajes virtuales o recomendacion de producto.
+- Clasificacion de objetos en robotica de manipulacion: el modelo recibe la nube de puntos de una camara de profundidad (por ejemplo, RealSense) y predice la categoria del objeto antes de que el brazo lo agarre; sus 12,3 M de parametros permiten ejecutarlo en la GPU integrada de un robot movil.
+- Inventario y conteo automatico en almacenes: integrado en un pipeline de captura 3D, clasifica cada objeto detectado en una de las 15 clases de ScanObjectNN para actualizar el stock sin intervencion manual.
+- Preprocesado para conduccion autonoma: como extractor de caracteristicas (embeddings de 384 dimensiones) de nubes LiDAR recortadas por un detector previo, alimentando un clasificador de segundo nivel para peatones, vehiculos y mobiliario urbano.
+- Etiquetado semiautomatico de datasets 3D: el modelo puede preanotar grandes colecciones de escaneos y reducir el coste de anotacion manual, revisando despues solo los casos de baja confianza.
+- Recuperacion de modelos 3D (retrieval): usando los embeddings de `forward_features` como descriptor, se pueden indexar objetos escaneados y buscar similitudes en una base de datos CAD.
+- Prototipado rapido en investigacion: al cargarse con una sola llamada a `create_model` y estar disponible en safetensors, sirve como baseline reproducible para comparar nuevas arquitecturas SSM en clasificacion 3D.
+- Control de calidad industrial: clasificar piezas escaneadas en linea de produccion para detectar categorias incorrectas o piezas fuera de catalogo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de la model card (no verificados de forma independiente):
+Resultados declarados por el autor del modelo en la model card (no verificados de forma independiente):
 
-| Tarea | Dataset | Metrica | Valor | Verificado |
-|---|---|---|---|---|
-| Clasificacion de nubes de puntos | ScanObjectNN (OBJ_ONLY) | OA (accuracy) | 92,6 | No |
-| Clasificacion de nubes de puntos | ScanObjectNN (OBJ_ONLY) | mAcc (accuracy) | 92,4 | No |
+| Dataset | Metrica | Valor |
+|---|---|---|
+| ScanObjectNN (OBJ_ONLY) | OA (overall accuracy) | 92,43 |
+| ScanObjectNN (OBJ_ONLY) | mAcc (mean accuracy) | 92,24 |
 
-La model card indica un valor de referencia de 92,60 para OA. No se han publicado en la informacion disponible resultados de otros benchmarks (por ejemplo ModelNet40) para este checkpoint concreto.
+No se han publicado en la informacion disponible resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) ni comparaciones numericas con modelos alternativos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: a partir de los 12,3 M de parametros, los pesos ocupan aproximadamente 49 MB en fp32 y unos 25 MB en fp16; el grueso del consumo proviene de las activaciones de la nube (8192 puntos por muestra), que se mantiene en el orden de cientos de MB segun el tamano de lote.
-- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA moderno; no se requiere una A100 o H100 para esta tarea. Una RTX 3060, RTX 4090 o una T4 son suficientes.
-- Cabe en GPU de consumo: si, con margen amplio, dado el reducido numero de parametros.
-- Restriccion importante: los kernels de `mamba-ssm` requieren compilacion especifica para la version de PyTorch y CUDA, y la model card indica que son exclusivos de GPU; la inferencia en CPU no esta soportada tal cual.
-- Opciones de despliegue: libreria `torch-pointcloud` (`pip install torch-pointcloud`) junto con `mamba-ssm`. No aplican vLLM, llama.cpp, Ollama ni TGI, al no tratarse de un modelo de lenguaje.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: muy baja, por debajo de 1 GB para el modelo en precision FP32 (12,3 M de parametros equivalen a unos 49 MB de pesos); el consumo real vendra dominado por los tensores intermedios de la secuencia de puntos y el batch.
+- GPU recomendadas: cualquier GPU NVIDIA compatible con `mamba-ssm` (requiere CUDA); una RTX 3090, RTX 4090, A100 o H100 son opciones holgadas. El codigo es GPU-only, no funciona en CPU.
+- Cabe en cualquier GPU consumer moderna con CUDA (GTX 16xx en adelante, siempre que la compilacion de `mamba-ssm` sea compatible), incluidas las integradas en plataformas embebidas tipo Jetson.
+- Opciones de despliegue: la via oficial es la libreria `torch-pointcloud` con `mamba-ssm`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de vision 3D).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a categoria y disponibilidad.
-
-| Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | Rendimiento ScanObjectNN (OBJ_ONLY) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Point-Mamba base (este checkpoint) | SSM sobre puntos serializados | 12,3 M | no disponible | Apache-2.0 | Hugging Face (torch-pointcloud) |
-| Point-Mamba base pretrain | SSM sobre puntos serializados | no disponible | no disponible | Apache-2.0 | Hugging Face (torch-pointcloud) |
-| PointMamba original (LMD0311/PointMamba) | SSM sobre puntos serializados | no disponible | no disponible | Apache-2.0 | GitHub |
-| Point-MAE | Transformer enmascarado para nubes de puntos | no disponible | no disponible | no disponible | repositorio publico |
-| Point-BERT | Transformer con tokenizacion de puntos | no disponible | no disponible | no disponible | repositorio publico |
-| DGCNN | Red convolucional sobre grafos dinamicos | no disponible | no disponible | no disponible | repositorio publico |
+| Point-Mamba-base (este) | 12,3 M | hasta 8192 puntos | OA 92,43 / mAcc 92,24 | Apache-2.0 | Hugging Face, safetensors |
+| PointNet++ | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Point Transformer | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Mamba3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Los valores de precision de las alternativas sobre ScanObjectNN (OBJ_ONLY) no estan disponibles en la informacion proporcionada y no se incluyen para no introducir datos no verificados.
+No se dispone de datos verificados de parametros, contexto ni rendimiento de los modelos alternativos en la informacion proporcionada, por lo que la comparativa cuantitativa queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo de tarea unica: solo clasifica nubes de puntos en 15 clases; no genera texto, no razona y no admite instrucciones en lenguaje natural.
-- Sesgos del dataset: entrenado sobre ScanObjectNN (OBJ_ONLY), un benchmark de escenas interiores escaneadas; el rendimiento fuera de esa distribucion (exteriores, objetos industriales, sensores distintos) no esta caracterizado.
-- Resultados no verificados: las metricas OA 92,6 y mAcc 92,4 proceden del model-index declarado por el autor y figuran como no verificadas.
-- Ausencia de variante OBJ_BG: este checkpoint se ajusta solo sobre objetos sin fondo, por lo que su robustez frente a ruido de escena no esta cubierta.
-- Riesgo de error en clases proximas: al operar sobre 15 clases, la confusion entre categorias geometricamente parecidas es un riesgo inherente; no se publican matrices de confusion en la informacion disponible.
-- Dependencia de `mamba-ssm`: la instalacion exige compilar kernels compatibles con la version de PyTorch y CUDA, lo que complica la reproducibilidad en entornos heterogeneos y bloquea la inferencia en CPU.
-- Limitaciones de idioma y contexto: no aplican idiomas; respecto al contexto, el numero maximo de puntos soportado no esta documentado, solo el ejemplo de 8192 puntos.
-- Licencia: Apache-2.0 permite uso comercial, pero conviene conservar los avisos de atribucion del proyecto original PointMamba y de la conversion a `torch-pointcloud`.
-- Adopcion muy baja: el repositorio registra 0 descargas y 0 likes, por lo que no existe una comunidad amplia que valide su comportamiento en produccion.
+- Entrenado exclusivamente en ScanObjectNN OBJ_ONLY (15 clases): no generaliza a categorias fuera de ese vocabulario sin reentrenar la cabeza de clasificacion.
+- Los resultados de accuracy son declarados por el autor y no han sido verificados de forma independiente (`verified: false` en la model-index).
+- Dependencia fragil de `mamba-ssm`: requiere compilacion especifica para la version de PyTorch y CUDA, lo que complica la reproducibilidad y el despliegue.
+- Solo funciona en GPU; no hay ruta de inferencia en CPU documentada.
+- Riesgo de confusion en objetos con oclusiones parciales, escaneos ruidosos o clases visualmente proximas, propio de los datasets de escaneo real.
+- No se documentan sesgos especificos, pero el dataset de origen condiciona la distribucion de clases y la apariencia de los objetos.
+- Licencia Apache-2.0: permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia y atribucion; conviene revisar tambien la licencia del codigo original de PointMamba y de `mamba-ssm`.
+- No es un modelo generativo ni conversacional: no debe emplearse para tareas de texto, dialogo o razonamiento simbolico.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-objonly.dingkang-liang
-- Modelo base preentrenado: https://huggingface.co/torch-pointcloud/point-mamba-base.pretrain.dingkang-liang
-- Paper PointMamba: https://arxiv.org/abs/2402.10739
+- Modelo base de preentrenamiento: https://huggingface.co/torch-pointcloud/point-mamba-base.pretrain.dingkang-liang
+- Paper PointMamba (arXiv 2402.10739): https://arxiv.org/abs/2402.10739
 - Repositorio original PointMamba: https://github.com/LMD0311/PointMamba
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Guia de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
-- Dataset ScanObjectNN (paper, ICCV 2019): https://arxiv.org/abs/1905.07441
+- Documentacion de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
+- Dataset ScanObjectNN (paper ICCV 2019): https://arxiv.org/abs/1908.00463

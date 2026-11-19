@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "KotaroKinoshita/yomitoku-dewarper-pagenet-v2",
+  "slug": "kotarokinoshita-yomitoku-dewarper-pagenet-v2",
+  "author": "KotaroKinoshita",
+  "url": "https://huggingface.co/KotaroKinoshita/yomitoku-dewarper-pagenet-v2",
+  "created_at": "2026-11-19T01:21:45.000Z",
+  "updated_at": "2026-11-19T01:22:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11148368,
+  "parameters_human": "11.1M",
+  "storage_bytes": 44636304,
+  "storage_human": "45 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,89 +2,104 @@
 
 ## Resumen
 
-El modelo `spvcnn-30gmacs.semantickitti.mit-han-lab` es un modelo de segmentación semántica de nubes de puntos 3D basado en la arquitectura SPVCNN (Sparse Point-Voxel Convolution), desarrollado por el equipo de MIT Han Lab y convertido a la librería `torch-pointcloud`. Está entrenado sobre el dataset SemanticKITTI, un referente para escenas urbanas capturadas con LiDAR, y alcanza un mIoU de 60.7 en la partición de evaluación. Con solo 5,4 millones de parámetros, el modelo está diseñado para ser eficiente en cómputo y memoria, lo que lo hace adecuado para aplicaciones de percepción en tiempo real sobre hardware embebido o GPUs de gama media.
+SPVCNN-30GMACs es un modelo de segmentación semántica de nubes de puntos LiDAR basado en convoluciones dispersas punto-vóxel (Sparse Point-Voxel Convolution, SPVCNN). Lo desarrolla el grupo MIT HAN Lab (Haotian Tang, Zhijian Liu, Song Han y colaboradores) y esta versión concreta ha sido convertida y publicada en Hugging Face por el proyecto `torch-pointcloud` de Arthur Dujardin, a partir del repositorio original `mit-han-lab/spvnas`. Resuelve la asignación de una clase semántica a cada punto de una escena 3D captada por LiDAR, con 19 clases de SemanticKITTI.
 
-La relevancia de este modelo radica en su origen: SPVCNN fue propuesto en el contexto de búsqueda de arquitecturas neuronales (NAS) para 3D, combinando convoluciones dispersas sobre vóxeles con operaciones directas sobre puntos. Esta hibridación permite capturar tanto la estructura geométrica regular de una rejilla como la densidad irregular de los datos LiDAR, logrando un equilibrio entre precisión y velocidad que supera a alternativas como MinkowskiNet. La versión publicada aquí es un checkpoint concreto de esa familia, listo para usar con la librería `torch-pointcloud`.
+El modelo es deliberadamente compacto: 5,46 millones de parámetros, 48 canales de características y 4 canales de entrada (coordenadas XYZ más intensidad). Su nombre hace referencia al presupuesto computacional de la variante arquitectónica: aproximadamente 30 GMACs por frame, lo que lo sitúa en la franja de modelos eficientes para percepción 3D en tiempo real. No es un modelo de lenguaje ni procesa texto: es un backbone convolucional 3D para segmentación de nubes de puntos.
 
-El modelo se distribuye bajo licencia MIT y los pesos están en formato safetensors. Aunque no es un modelo de lenguaje, su inclusión en un blog técnico orientado a desarrolladores e investigadores se justifica por su utilidad en sistemas de conducción autónoma, robótica y análisis de escenas 3D, donde la segmentación punto a punto es un paso fundamental.
+Su relevancia actual radica en que ofrece un checkpoint listo para usar con `torch-pointcloud` y `torchsparse`, con pesos en `safetensors`, licencia MIT y un rendimiento declarado de 60,7 mIoU y 91,94 % de exactitud global (OA) sobre el conjunto de validación de SemanticKITTI. Es una pieza útil como línea base reproducible para conducción autónoma, robótica móvil y evaluación de arquitecturas 3D eficientes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SPVCNN (Sparse Point-Voxel Convolution) |
-| Parametros totales | 5.455.891 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de nubes de puntos, no texto) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo de vision 3D, no procesa texto) |
+| Arquitectura | SPVCNN (Sparse Point-Voxel Convolution), red convolucional 3D dispersa |
+| Parametros totales | 5.455.891 (5,4 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (no es un modelo de secuencia de texto) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, sin variantes GGUF/INT8 publicadas) |
+| Idiomas soportados | no disponible (no procesa lenguaje natural) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
+| Canales de entrada | 4 (XYZ + intensidad) |
+| Clases de salida | 19 (SemanticKITTI) |
+| Canales de caracteristicas | 48 |
+| Presupuesto computacional | ~30 GMACs por frame |
+| Libreria | torch-pointcloud (requiere torchsparse) |
+| Dataset de entrenamiento | SemanticKITTI |
+| Descargas en Hugging Face | 2.587 |
 
 ## Arquitectura y entrenamiento
 
-SPVCNN combina dos representaciones complementarias: una malla voxelizada dispersa donde se aplican convoluciones 3D eficientes (usando la librería `torchsparse`) y una rama que opera directamente sobre los puntos originales para refinar las predicciones. Esta arquitectura híbrida permite explotar la regularidad de la rejilla para acelerar el cómputo y, al mismo tiempo, preservar la información geométrica de alta resolución de los puntos individuales. El modelo concreto aquí presentado es el resultado de un proceso de búsqueda de arquitectura (NAS) que optimiza el equilibrio entre precisión y coste computacional, identificando una configuración con 30 GMACs (giga operaciones de multiplicación-acumulación) de coste.
+SPVCNN combina dos representaciones complementarias de la nube de puntos. Por un lado, una rama de convolución dispersa sobre vóxeles, que explota la dispersión natural de los datos LiDAR para procesar solo las celdas ocupadas y reduce el coste computacional. Por otro, una rama punto-vóxel que preserva información geométrica fina mediante operaciones sobre los puntos originales. La fusión de ambas ramas permite capturar tanto contexto global como detalle local sin el coste de una convolución densa 3D.
 
-El entrenamiento se realizó sobre el dataset SemanticKITTI, que contiene secuencias de escaneo LiDAR en entornos urbanos, con anotaciones semánticas para 19 clases (vehículos, peatones, edificios, vegetación, etc.). Los datos de entrenamiento corresponden a las secuencias 00-07 y 09-10, evaluándose en la secuencia 08, siguiendo el protocolo estándar del dataset. No se menciona el uso de técnicas de RLHF o DPO, que son propias de modelos de lenguaje; el entrenamiento es supervisado con pérdida de entropía cruzada sobre las etiquetas punto a punto. El checkpoint ha sido convertido desde el repositorio original `mit-han-lab/spvnas` a la librería `torch-pointcloud`, que unifica la interfaz de carga y uso.
+El modelo forma parte del trabajo *Searching Efficient 3D Architectures with Sparse Point-Voxel Convolution* (ECCV 2020), en el que los autores aplican búsqueda de arquitecturas neuronales (NAS) para encontrar configuraciones eficientes de SPVCNN bajo distintos presupuestos de MACs. Esta variante corresponde al punto de la curva de compromiso con ~30 GMACs. Se entrena sobre SemanticKITTI, el benchmark de segmentación semántica de secuencias LiDAR del dataset KITTI, con 19 clases evaluables. La model card no detalla el número de tokens, la composición exacta del dataset, ni si se emplearon técnicas de ajuste fino adicionales; esos datos no están disponibles en la información proporcionada.
 
 ## Capacidades
 
-- Segmentación semántica de nubes de puntos LiDAR, asignando una clase a cada punto (19 clases predefinidas de SemanticKITTI).
-- Extracción de características densas por punto: el modelo produce una representación de 48 dimensiones por punto, útil para tareas posteriores como detección de objetos o agrupamiento.
-- Inferencia eficiente gracias a la arquitectura híbrida punto-vóxel, con un coste de 30 GMACs y 5,4 millones de parámetros.
-- Soporte para clasificación personalizada: la API de `torch-pointcloud` permite reinicializar el clasificador final para adaptar el modelo a nuevos conjuntos de clases.
-- Integración con el ecosistema PyTorch y con la librería `torch-pointcloud`, que facilita la carga de datos, transformaciones y collate.
-- No incluye capacidades de generación de texto, tool calling, agentes ni procesamiento de lenguaje; es exclusivamente un modelo de percepción 3D.
+- Segmentación semántica densa de nubes de puntos LiDAR: asigna una de 19 clases a cada punto de la escena.
+- Procesamiento de nubes de puntos 3D con coordenadas XYZ e intensidad de retorno como entrada.
+- Extracción de características: `forward_features` devuelve un vector de 48 dimensiones por punto, reutilizable como backbone para tareas posteriores.
+- Clasificación por punto mediante la cabeza de segmentación, con posibilidad de reinicializar el clasificador (`reset_classifier`) para adaptar el número de clases.
+- Ejecución en GPU con kernels dispersos (`torchsparse`), orientada a inferencia por frame.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: no es un modelo generativo de texto.
+- No dispone de modo de razonamiento (thinking), visión RGB ni audio.
 
 ## Casos de uso
 
-- Percepción en conducción autónoma: el modelo segmenta en tiempo real los objetos y estructuras del entorno (vehículos, peatones, carreteras, señalización) a partir de datos LiDAR, proporcionando la entrada para planificación de trayectorias y evitación de obstáculos.
-- Robótica móvil: robots de interior o exterior pueden utilizar la segmentación semántica para navegar en entornos no estructurados, distinguiendo superficies transitables de obstáculos o elementos dinámicos.
-- Mapeo y digitalización de escenas urbanas: la clasificación punto a punto permite generar mapas semánticos tridimensionales de ciudades, útiles para planificación urbana, simulación o gestión de infraestructuras.
-- Análisis de datos LiDAR en agricultura de precisión: la segmentación de vegetación, suelo y estructuras artificiales ayuda a monitorizar cultivos o inventariar masas forestales.
-- Sistemas de seguridad y vigilancia: la detección de personas, vehículos u objetos en escenas 3D capturadas por sensores LiDAR fijos o móviles puede alimentar sistemas de alerta o seguimiento.
-- Investigación en visión por computador 3D: sirve como modelo base para estudiar técnicas de compresión, cuantización o destilación de conocimiento en redes neuronales para nubes de puntos, gracias a su tamaño reducido y su arquitectura representativa.
+- Percepción LiDAR en conducción autónoma: el modelo segmenta cada frame de la nube de puntos en clases como coche, peatón, carretera o vegetación, proporcionando una capa semántica que alimenta módulos de planificación y evitación de obstáculos. Su presupuesto de ~30 GMACs lo hace compatible con pipelines en tiempo real.
+- Robótica móvil en interiores y exteriores: un robot equipado con LiDAR puede usar el modelo para distinguir suelo transitable, paredes y obstáculos dinámicos, con la ventaja de que los pesos son ligeros (5,4 M de parámetros) y caben en GPUs embebidas.
+- Etiquetado automático y preanotación de datos: el modelo genera etiquetas semánticas por punto que un equipo de anotación puede revisar y corregir, reduciendo el coste de construir nuevos datasets LiDAR.
+- Extracción de características para modelos posteriores: mediante `forward_features` se obtienen descriptores de 48 dimensiones por punto que pueden alimentar cabezas de detección 3D, segmentación de instancias o clasificación de escenas.
+- Evaluación comparativa de arquitecturas 3D eficientes: como línea base reproducible con métricas declaradas sobre SemanticKITTI, sirve para medir mejoras de nuevas arquitecturas con presupuestos computacionales similares.
+- Investigación en percepción 3D con recursos limitados: su tamaño reducido y licencia MIT permiten experimentar en una única GPU de consumo, algo relevante para grupos con infraestructura modesta.
+- Integración en sistemas de mapeo semántico: las etiquetas por punto pueden agregarse a lo largo de secuencias para construir mapas 3D con información semántica de la vía.
 
 ## Benchmarks y rendimiento
 
-El único resultado oficial publicado en la model card es el mIoU sobre SemanticKITTI, reportado como 60.7. Este valor se corresponde con la evaluación en la secuencia 08, siguiendo el protocolo del dataset. En el paper original (Tang et al., ECCV 2020) se indica que el modelo SPVNAS supera a MinkowskiNet en 3.3 puntos de mIoU, con una reducción de cómputo de 8 veces y una aceleración medida de 3 veces, aunque no se proporcionan los valores absolutos de MinkowskiNet en la información disponible.
+Resultados declarados por el autor del modelo en la model card (no verificados de forma independiente):
 
-| Dataset | Tarea | Metrica | Valor |
+| Benchmark | Tarea | Metrica | Valor |
 |---|---|---|---|
-| SemanticKITTI | Segmentacion semantica de nubes de puntos | mIoU | 60.7 |
+| SemanticKITTI | Segmentacion semantica de nubes de puntos | mIoU | 60,7 |
+| SemanticKITTI | Segmentacion semantica de nubes de puntos | OA (exactitud global) | 91,94 |
+
+No se han publicado en la información disponible resultados desglosados por clase (IoU por categoría), latencia, throughput ni comparaciones numéricas con otras arquitecturas.
 
 ## Requisitos de hardware
 
-- El modelo requiere GPU con soporte CUDA, ya que los kernels de `torchsparse` están implementados para GPU y no funcionan en CPU.
-- Dado el tamaño reducido (5,4 millones de parámetros), la VRAM necesaria para inferencia es baja: se estima que cabe en GPUs con 2-4 GB, como una GTX 1650 o RTX 3050, aunque se recomienda al menos 4 GB para manejar lotes de datos.
-- GPUs recomendadas: cualquier GPU NVIDIA moderna (serie 20, 30, 40 o superiores) con al menos 8 GB de VRAM para trabajar cómodamente con secuencias completas de LiDAR.
-- El despliegue se realiza mediante PyTorch y la librería `torch-pointcloud`, junto con `torchsparse`. No se mencionan soportes para vLLM, Ollama o TGI, que son específicos de modelos de lenguaje.
-- La latencia depende del número de puntos procesados; con 8192 puntos por muestra, la inferencia es prácticamente instantánea en una GPU moderna, aunque no se han publicado cifras concretas de throughput.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 5,4 M de parámetros, los pesos ocupan del orden de 22 MB en FP32 y unos 11 MB en FP16; el consumo dominante proviene de las estructuras dispersas intermedias, que dependen del número de puntos por frame.
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA compatible con la compilación de `torchsparse`. El modelo requiere kernels de GPU (la model card indica explícitamente "GPU-only kernels").
+- GPU de consumo: sí, cabe con holgura en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, siempre que se compile `torchsparse` para la versión de PyTorch y CUDA instaladas.
+- Opciones de despliegue: `torch-pointcloud` con `torchsparse` (vía oficial documentada). No se han publicado integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | mIoU (SemanticKITTI) | Coste computacional | Licencia |
-|---|---|---|---|---|
-| SPVCNN (este modelo) | 5,4 M | 60.7 | 30 GMACs | MIT |
-| MinkowskiNet (referencia del paper) | no disponible | inferior en 3.3 puntos al SPVNAS | 8 veces mayor que SPVNAS | no disponible |
-| PointNet++ (alternativa clásica) | no disponible | no disponible | mayor (procesa todos los puntos) | no disponible |
+No se dispone en la información proporcionada de datos numéricos de modelos comparables (por ejemplo, otras variantes de SPVCNN, MinkowskiNet o Cylinder3D) que permitan una comparación rigurosa de parámetros, contexto y rendimiento sobre SemanticKITTI.
 
-Los datos de MinkowskiNet provienen del paper original, donde se reporta que SPVNAS lo supera en 3.3 puntos de mIoU con una reducción de cómputo de 8x. No se dispone de valores absolutos de MinkowskiNet ni de otros modelos comparables en la información proporcionada.
+| Modelo | Parametros | Tarea | mIoU SemanticKITTI | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| spvcnn-30gmacs (este modelo) | 5,4 M | Segmentacion semantica 3D | 60,7 | MIT | Hugging Face, safetensors |
+| Otras variantes SPVCNN | no disponible | Segmentacion semantica 3D | no disponible | MIT (repo original) | Repo mit-han-lab/spvnas |
+| Alternativas de la misma categoria | no disponible | Segmentacion semantica 3D | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado exclusivamente en SemanticKITTI, un dataset de conducción urbana; su rendimiento puede degradarse significativamente en otros dominios (interiores, entornos rurales, datos de sensores diferentes).
-- La segmentación es a nivel de punto, por lo que no produce instancias separadas (no distingue entre dos coches contiguos), solo etiquetas semánticas.
-- Requiere kernels GPU específicos (`torchsparse`), lo que limita su portabilidad a entornos sin CUDA y complica la compilación en versiones de PyTorch/CUDA no soportadas.
-- No se han publicado análisis de sesgos ni estudios de robustez frente a condiciones adversas (lluvia, niebla, oclusión), por lo que su uso en producción debe validarse con datos propios.
-- Aunque la licencia MIT permite uso comercial, el modelo depende de librerías de terceros (`torchsparse`, `torch-pointcloud`) que pueden tener licencias o requisitos adicionales.
-- La mIoU de 60.7 es un valor moderado; para aplicaciones críticas de seguridad puede ser insuficiente sin postprocesado o fusión con otras modalidades.
+- Dominio restringido: entrenado exclusivamente sobre SemanticKITTI (escenas de conducción con LiDAR), por lo que el rendimiento puede degradarse en entornos de interior, sensores distintos o configuraciones LiDAR diferentes a las del dataset.
+- Sin datos de sesgo publicados: la model card no documenta análisis de sesgos por clase, condiciones meteorológicas, hora del día o densidad de puntos.
+- Riesgo de error en clases poco representadas: la métrica global (OA 91,94 %) puede enmascarar un rendimiento bajo en categorías minoritarias; no se han publicado IoU por clase.
+- Dependencia de compilación: requiere `torchsparse` compilado contra la versión exacta de PyTorch y CUDA, lo que complica el despliegue reproducible en producción y en entornos con CUDA antiguas.
+- Solo GPU: no hay ruta de inferencia en CPU documentada.
+- Sin cuantizaciones publicadas: no existen variantes GGUF, INT8 u ONNX en el repositorio, lo que limita el despliegue en hardware no NVIDIA.
+- Licencia MIT: permite uso comercial y modificación, pero el usuario debe verificar las obligaciones de atribución de los trabajos citados (SPVNAS y SemanticKITTI) y las condiciones del dataset original.
+- Métricas no verificadas: los valores de mIoU y OA figuran como `verified: false` en el model-index; conviene reproducirlos antes de usarlos como referencia en publicaciones.
+- No apto para tareas de lenguaje: no procesa texto, no responde a prompts y no soporta tool calling ni agentes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/spvcnn-30gmacs.semantickitti.mit-han-lab
-- Paper original (arXiv): https://arxiv.org/abs/2007.16100
-- Proyecto SPVNAS (MIT Han Lab): https://hanlab.mit.edu/projects/spvnas
-- Repositorio GitHub de SPVNAS: https://github.com/mit-han-lab/spvnas
-- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/installation/
+- Paper SPVNAS (arXiv 2007.16100): https://arxiv.org/abs/2007.16100
+- Repositorio original mit-han-lab/spvnas: https://github.com/mit-han-lab/spvnas
+- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Documentacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
+- Dataset SemanticKITTI: http://semantic-kitti.org/

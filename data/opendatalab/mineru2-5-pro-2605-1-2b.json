@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "opendatalab/MinerU2.5-Pro-2605-1.2B · Hugging Face",
-      "url": "https://huggingface.co/opendatalab/MinerU2.5-Pro-2605-1.2B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "opendatalab/MinerU2.5-Pro-2605-1.2B at main - Hugging Face",
-      "url": "https://huggingface.co/opendatalab/MinerU2.5-Pro-2605-1.2B/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "MinerU2.5-Pro-2605-1.2B · Models",
-      "url": "https://www.modelscope.cn/models/OpenDataLab/MinerU2.5-Pro-2605-1.2B",
-      "snippet": "🏆 Unmatched SOTA Performance MinerU2.5-Pro is our latest document parsing model (PDF-to-Markdown) that establishes a new industry standard. By focusing entirely on data engineering without altering the original 1.2B-parameter architecture, it delivers exceptional results across the board: 1. Defeating Leading Models on OmniDocBench v1.6 On the newly proposed, highly rigorous OmniDocBench v1 ..."
-    },
-    {
-      "title": "MinerU2.5-Pro-2605-1.2B: Image-to-Text model — overview, use cases ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/mineru2.5-pro-2605-1.2b-opendatalab",
-      "snippet": "Overview MinerU2.5-Pro-2605-1.2B is a document parsing model maintained by opendatalab that converts document images (PDFs and scans) into structured Markdown output. The model retains the 1.2B-parameter architecture of its predecessor but achieves state-of-the-art results through systematic data engineering rather than architectural changes. It was trained on 65.5M document pages expanded ..."
-    },
-    {
-      "title": "opendatalab/MinerU2.5-Pro-2605-1.2B: Model synced from source ...",
-      "url": "https://dev.modelhub.org.cn/opendatalab/MinerU2.5-Pro-2605-1.2B",
-      "snippet": "MinerU2.5-Pro is our latest document parsing model (PDF-to-Markdown) that establishes a new industry standard. By focusing entirely on data engineering without altering the original 1.2B-parameter architecture, it delivers exceptional results across the board:"
-    }
-  ]
+  "sources": []
 }

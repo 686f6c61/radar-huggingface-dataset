@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "lhpku20010120/Omni-Edu-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/lhpku20010120/Omni-Edu-4B-GGUF",
-      "snippet": "lhpku20010120 / Omni-Edu-4B-GGUF Like 0 Image-Text-to-Text GGUF llama.cpp omniedu education qwen3_5 conversational License:other Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "prithivMLmods/Omni-Edu-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/prithivMLmods/Omni-Edu-4B-GGUF",
-      "snippet": "lhpku20010120/Omni-Edu ... September 2026 ... OmniEdu: Open Foundation Models for Learning and Teaching"
-    }
-  ]
+  "sources": []
 }

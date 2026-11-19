@@ -2,87 +2,102 @@
 
 ## Resumen
 
-Software Mansion publica esta exportación del modelo de embeddings de texto all-MiniLM-L6-v2, originalmente desarrollado por sentence-transformers, en formato `.pte` para el runtime ExecuTorch de Meta. El modelo transforma frases y párrafos cortos en vectores de 384 dimensiones, lo que permite tareas de similitud semántica, búsqueda y clasificación. Esta versión se distribuye a través de la librería React Native ExecuTorch, que permite ejecutar modelos de IA on-device en aplicaciones React Native con privacidad y funcionamiento offline.
+`software-mansion/react-native-executorch-all-MiniLM-L6-v2` es una redistribución del modelo de embeddings de frases `all-MiniLM-L6-v2` de sentence-transformers, exportado a programas ExecuTorch (`.pte`) para su ejecución en dispositivo dentro de la librería React Native ExecuTorch. El autor es Software Mansion, el estudio responsable de React Native Reanimated y de la propia librería React Native ExecuTorch. El problema que resuelve es doble: por un lado ofrece un encoder de frases ligero y probado para tareas de similitud semántica; por otro, elimina la fricción de llevar ese modelo a móviles y dispositivos de borde con múltiples backends (Core ML, Vulkan, XNNPACK) y precisiones (fp32, fp16, int8).
 
-El modelo se exportó con ExecuTorch v0.6.0 y se distribuye con el tokenizador `tokenizer.json`. Está optimizado para el backend xnnpack, pensado para ejecución en CPU de dispositivos móviles. Con aproximadamente 22,7 millones de parámetros y una longitud de contexto de 256 tokens, es un modelo ligero diseñado para inferencia en tiempo real en dispositivos con recursos limitados. Su relevancia actual radica en la creciente demanda de IA on-device en aplicaciones móviles, donde la privacidad y la baja latencia son factores críticos.
+El modelo subyacente es un transformer encoder de 6 capas con dimensión oculta de 384, derivado de MiniLM y destilado a partir de modelos mayores; produce embeddings de 384 dimensiones. El repositorio incluye únicamente los artefactos de inferencia (pesos `.pte`, tokenizador y configuraciones), no los pesos en formato safetensors ni el código de entrenamiento. El tamaño total del repo es de 0,9 GB, aunque los ficheros `.pte` individuales oscilan entre 21,8 MB (int8) y 86,2 MB (fp32).
 
-## Especificaciones técnicas
+Su relevancia actual radica en que permite ejecutar búsqueda semántica, deduplicación o recuperación local en aplicaciones React Native sin enviar texto a un servidor, con variantes int8 que, según la model card, mantienen e incluso mejoran ligeramente la precisión del fp32 en la tarea de recuperación de pasajes de SQuAD v1.1.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MiniLM (transformer encoder, 6 capas, 384 dimensiones de embedding) |
-| Parametros totales | ~22,7 millones |
+| Arquitectura | Transformer encoder (MiniLM, 6 capas, dimensión oculta 384) |
+| Parametros totales | no disponible (el modelo upstream all-MiniLM-L6-v2 tiene ~22,7 M; no confirmado en la información proporcionada) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 256 tokens |
-| Tipos de cuantizacion | no disponible (exportación para backend xnnpack en formato `.pte`) |
-| Idiomas soportados | Inglés (idioma principal del modelo original) |
+| Longitud de contexto | no disponible (el modelo upstream se entrena con 256 tokens; no confirmado en la información proporcionada) |
+| Tipos de cuantizacion | fp32, fp16, int8 (dynamic activations int8, per-channel weights int8, embedding table int8) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.pte` (ExecuTorch) |
+| Formato de pesos | ExecuTorch `.pte` (Core ML, Vulkan, XNNPACK); tokenizer.json y config.json |
+| Dimension de embedding | 384 (modelo upstream) |
+| Runtime compatible | ExecuTorch v1.4.1 (sin garantía de compatibilidad hacia adelante) |
+| Variantes incluidas | coreml fp16 (43,4 MB), coreml int8 (21,8 MB), vulkan fp16 (43,1 MB), xnnpack fp32 (86,2 MB), xnnpack int8 (21,9 MB) |
+| Tarea | sentence-similarity |
 
 ## Arquitectura y entrenamiento
 
-El modelo base all-MiniLM-L6-v2 es un transformer encoder de 6 capas con arquitectura MiniLM, que genera embeddings de 384 dimensiones mediante mean pooling sobre los tokens de salida. El entrenamiento original utilizó un objetivo de contraste con pares de frases semánticamente equivalentes, combinando datos de múltiples datasets de similitud textual (STS). Esta exportación no modifica los pesos del modelo original: únicamente lo convierte al formato `.pte` de ExecuTorch mediante el backend xnnpack, lo que permite su ejecución en dispositivos móviles sin depender de un runtime de Python. El proceso de exportación se realizó con la versión v0.6.0 de ExecuTorch, y no se garantiza compatibilidad hacia delante con versiones posteriores del runtime.
+La arquitectura es la del modelo upstream `all-MiniLM-L6-v2`: un transformer encoder de 6 capas y 384 dimensiones ocultas, resultado de la destilación de MiniLM y entrenado con objetivos de similitud de frases (contrastivo y triplet) sobre pares de oraciones. Esta ficha no redistribuye pesos entrenables ni documentación del proceso de entrenamiento; solo los artefactos exportados. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO (en un modelo de embeddings no sería el mecanismo habitual).
+
+La innovación técnica relevante está en el pipeline de exportación a ExecuTorch, no en el modelo en sí. Se ofrecen cinco variantes compiladas para tres backends: Core ML (fp16 e int8, para Apple), Vulkan (fp16, para GPU en Android y escritorio) y XNNPACK (fp32 e int8, para CPU). La variante XNNPACK int8 aplica cuantización dinámica de activaciones a int8, pesos int8 per-channel en las capas Lineales y una tabla de embeddings de palabras en int8. Los ficheros están compilados para ExecuTorch v1.4.1 y el runtime no garantiza compatibilidad hacia adelante, por lo que versiones anteriores pueden fallar al cargarlos.
 
 ## Capacidades
 
-- Generación de embeddings de texto de 384 dimensiones para frases y párrafos cortos.
-- Similitud semántica entre pares de frases (cosine similarity sobre los embeddings).
-- Búsqueda semántica: indexado de documentos y consultas para retrieval por similitud.
-- Clasificación de texto mediante embeddings como entrada a clasificadores lineales.
-- Clustering de documentos por contenido temático.
-- Detección de duplicados y paráfrasis.
-- Ejecución on-device en dispositivos móviles sin conexión a red.
-- No es un modelo generativo: no produce texto nuevo, solo representaciones vectoriales.
+- Generación de embeddings de frases de 384 dimensiones para similitud semántica y recuperación densa.
+- Búsqueda semántica local: indexación y consulta de pasajes sin salida a red.
+- Deduplicación y agrupamiento de textos por cercanía vectorial.
+- Clasificación zero-shot mediante comparación de embeddings con etiquetas descriptivas.
+- Ejecución en dispositivo en iOS (Core ML), Android y escritorio (Vulkan, XNNPACK).
+- Cuantización int8 con pérdida de precisión despreciable según la medición del autor en SQuAD v1.1.
+- No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio: es un encoder de embeddings, no un modelo generativo.
+- Soporte multilingüe: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Búsqueda semántica en aplicaciones móviles: el modelo indexa documentos o mensajes del usuario y permite recuperar resultados por similitud semántica en lugar de coincidencia exacta, gracias a los embeddings de 384 dimensiones.
-- Moderación de contenido en tiempo real: clasificación de comentarios o mensajes en categorías como spam, abuso o contenido irrelevante mediante embeddings + clasificador lineal, ejecutándose localmente en el dispositivo.
-- Clasificación de tickets de soporte: asignación automática de consultas de usuarios a departamentos o categorías predefinidas, sin enviar datos a servidores externos.
-- Detección de duplicados en bases de conocimiento: comparación de pares de documentos para identificar contenido redundante, útil en gestores documentales móviles.
-- Recomendación de artículos o contenidos: cálculo de similitud entre el historial del usuario y un catálogo de documentos para sugerir elementos relacionados.
-- Análisis de sentimiento on-device: embeddings como entrada de un clasificador ligero para valorar la polaridad de reseñas o mensajes sin conexión.
-- Chatbots de retrieval aumentado (RAG): integración del modelo como componente de embeddings en pipelines de RAG que se ejecutan localmente en el dispositivo.
+- Búsqueda semántica en aplicaciones móviles: el modelo indexa documentos locales en el dispositivo y responde consultas en lenguaje natural calculando similitud coseno entre embeddings, sin enviar datos a servidores. Adecuado por su tamaño (21,9 MB en int8) y su ejecución vía XNNPACK o Core ML.
+- Deduplicación de notas o mensajes en apps de productividad: se generan embeddings de cada entrada y se agrupan por umbral de similitud para detectar duplicados o casi duplicados antes de sincronizar.
+- Clasificación de tickets de soporte en el cliente: se comparan los embeddings del ticket con embeddings de etiquetas predefinidas y se asigna la categoría más cercana, reduciendo la latencia y el coste de backend.
+- Filtrado de contenido o moderación asistida en el dispositivo: se calcula la similitud entre el texto del usuario y un conjunto de frases de referencia para marcar contenido sensible antes de enviarlo al servidor.
+- Recomendación de contenido offline: en apps de lectura o noticias, se indexan artículos con embeddings y se sugieren lecturas relacionadas al usuario sin conexión.
+- Recuperación aumentada en el cliente para asistentes ligeros: se recuperan pasajes relevantes de una base local y se pasan a un modelo generativo pequeño, todo en el dispositivo, usando este encoder como etapa de recuperación.
+- Agrupamiento de reseñas o feedback: se generan embeddings de las reseñas y se aplica clustering (k-means o similar) para descubrir temas recurrentes en el dispositivo o en un pipeline de backend ligero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo card no incluye métricas de evaluación ni comparaciones con alternativas. Para datos de rendimiento del modelo base all-MiniLM-L6-v2, es necesario consultar la documentación original de sentence-transformers.
+El autor publica una única medición: recuperación de pasajes de SQuAD v1.1 dev (2000 preguntas contra sus 315 párrafos), con producto escalar como métrica de similitud, para la variante XNNPACK int8 frente a fp32.
+
+| Variante | Top-1 | MRR |
+|---|---|---|
+| XNNPACK fp32 | 57,70 | 0,7012 |
+| XNNPACK int8 | 58,05 | 0,7024 |
+
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de benchmarks estándar de embeddings (MTEB, por ejemplo) para esta exportación concreta. La model card no incluye comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica, el modelo está diseñado para ejecución en CPU mediante el backend xnnpack.
-- GPU recomendadas: no se requieren GPU. La ejecución está pensada para CPU de dispositivos móviles (ARM).
-- Compatibilidad con consumer GPU: no es el objetivo del formato `.pte`; para uso en GPU es preferible el modelo original en formato safetensors.
-- Almacenamiento: el repositorio ocupa 0,6 GB, lo que cubre el modelo y el tokenizador.
-- Opciones de despliegue: React Native ExecuTorch (librería npm), o cualquier runtime ExecuTorch compatible con la versión v0.6.0. No se puede usar directamente con vLLM, llama.cpp, Ollama ni TGI, ya que no es un formato de pesos estándar para servidores.
-- Latencia y throughput: no se proporcionan datos en la información disponible. Al ser un modelo de 22,7 millones de parámetros, la latencia esperada en CPU móvil es de unos pocos milisegundos por frase, aunque no hay cifras oficiales.
+- VRAM/RAM: los ficheros `.pte` ocupan entre 21,8 MB (int8) y 86,2 MB (fp32); el consumo en ejecución es del orden de decenas de MB, apto para dispositivos móviles de gama media.
+- GPU recomendadas: no aplica en el sentido de servidor; en dispositivo se usan Core ML (Apple Neural Engine/GPU) o Vulkan (GPU Android). En escritorio, cualquier GPU con soporte Vulkan puede ejecutar la variante correspondiente.
+- Cabe en cualquier GPU de consumo y en móviles: el modelo está diseñado para ejecución en dispositivo, no para despliegue en servidor.
+- Opciones de despliegue: React Native ExecuTorch (librería principal), o cualquier runtime ExecuTorch v1.4.1 que cargue los `.pte`; no se distribuyen pesos GGUF, safetensors ni versiones para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Dimension embedding | Contexto | Formato | Licencia |
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| react-native-executorch-all-MiniLM-L6-v2 | ~22,7 M | 384 | 256 tokens | .pte (ExecuTorch) | Apache 2.0 |
-| all-MiniLM-L6-v2 (original, sentence-transformers) | ~22,7 M | 384 | 256 tokens | safetensors | Apache 2.0 |
-| all-mpnet-base-v2 (sentence-transformers) | ~109 M | 768 | 384 tokens | safetensors | Apache 2.0 |
-| multilingual-e5-small | ~118 M | 384 | 512 tokens | safetensors | MIT |
+| react-native-executorch-all-MiniLM-L6-v2 | no disponible (~22,7 M upstream) | no disponible | `.pte` (ExecuTorch) | Apache 2.0 | Embeddings en dispositivo |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens (upstream) | safetensors, PyTorch | Apache 2.0 | Embeddings en servidor/CPU |
+| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | safetensors, ONNX | MIT | Embeddings, mejor MTEB |
+| intfloat/e5-small-v2 | ~33 M | 512 tokens | safetensors, ONNX | MIT | Embeddings, instrucciones |
 
-La comparativa se centra en el mismo modelo en su formato original, así como en alternativas de mayor tamaño dentro de la familia sentence-transformers. La ventaja de esta exportación es su formato `.pte` listo para ejecución en React Native, mientras que las alternativas requieren un paso adicional de exportación.
+La ventaja diferencial de esta ficha frente a los modelos upstream es la disponibilidad de artefactos ExecuTorch listos para móvil con backends Core ML, Vulkan y XNNPACK; los competidores suelen distribuirse en safetensors u ONNX y requieren conversión adicional. Los datos de parámetros y contexto de los modelos comparables provienen de sus fichas públicas y no de la información proporcionada para este modelo; verifíquense en sus repositorios antes de usarlos en producción.
 
 ## Limitaciones y advertencias
 
-- Longitud de contexto limitada a 256 tokens: frases o documentos más largos deben truncarse, lo que puede degradar la calidad del embedding.
-- Modelo entrenado principalmente en inglés: el rendimiento en otros idiomas es inferior al de modelos multilingües.
-- No es un modelo generativo: no produce texto, solo vectores de embedding.
-- Compatibilidad de runtime: la exportación se realizó con ExecuTorch v0.6.0 y no se garantiza compatibilidad con versiones anteriores del runtime. Si se usa fuera de React Native ExecuTorch, hay que verificar la compatibilidad.
-- Riesgo de sesgos: como cualquier modelo entrenado con datos de texto, puede reflejar sesgos presentes en los datos de entrenamiento, aunque no se dispone de una evaluación específica en esta exportación.
-- Sin datos de benchmark publicados en esta ficha: no hay métricas de rendimiento para evaluar la degradación introducida por la cuantización o la exportación a xnnpack.
+- Es un encoder de embeddings, no un modelo generativo: no produce texto, no razona y no soporta tool calling ni agentes.
+- No se documentan los idiomas soportados; el modelo upstream está orientado principalmente a inglés, por lo que el rendimiento en castellano puede degradarse.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí de falsos positivos en similitud: textos superficialmente parecidos pueden obtener puntuaciones altas.
+- Sesgos: no se documentan evaluaciones de sesgo para esta exportación; el modelo upstream puede heredar sesgos de sus datos de entrenamiento.
+- Compatibilidad estricta con ExecuTorch v1.4.1: versiones anteriores del runtime pueden fallar al cargar los `.pte`, y no hay garantía de compatibilidad hacia adelante.
+- La licencia Apache 2.0 permite uso comercial, pero conviene conservar los avisos de atribución del modelo upstream y de Software Mansion.
+- El repositorio no incluye pesos en safetensors ni el código de entrenamiento; para fine-tuning hay que acudir al modelo upstream.
+- La longitud máxima de secuencia no está documentada en esta ficha; textos largos pueden truncarse según la configuración de exportación.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-all-MiniLM-L6-v2
-- Modelo original all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
-- Repositorio GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch
-- Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started
-- Web oficial de React Native ExecuTorch: https://executorch.swmansion.com/
-- Documentación de ExecuTorch: https://pytorch.org/executorch/stable/index.html
-- Repositorio GitHub de ExecuTorch: https://github.com/pytorch/executorch
+- Modelo upstream: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+- Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
+- Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md
+- Repositorio ExecuTorch: https://github.com/pytorch/executorch

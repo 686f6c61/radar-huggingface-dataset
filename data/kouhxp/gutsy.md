@@ -2,154 +2,131 @@
 
 ## Resumen
 
-Gutsy-0.8b v0.3 es un modelo de decisión desarrollado por el usuario kouhxp y publicado en Hugging Face. No es un modelo generativo de texto: dado un *state* (texto o JSON) y una pregunta tipada (sí/no, elección entre hasta 16 opciones por llamada, o puntuación ordinal), devuelve una probabilidad calibrada para cada opción en un único forward pass. La respuesta se lee directamente de los logits del siguiente token correspondiente a las etiquetas de opción (A-P, más una opción Z de rechazo) y se aplica softmax únicamente sobre esas letras.
+`gutsy` es un modelo de decisión (decision model) desarrollado por el usuario kouhxp, afinado a partir de Qwen3.5-0.8B y distribuido en formato GGUF para su ejecución local mediante llama.cpp. No es un modelo generativo: recibe un estado (texto o JSON) y una serie de preguntas tipadas (sí/no, elección entre opciones, puntuación) y devuelve una probabilidad calibrada para cada opción. Su API sigue el formato Jev-style Decisions, de modo que clientes existentes pueden migrar cambiando únicamente la URL base.
 
-El modelo parte de Qwen/Qwen3.5-0.8B (licencia Apache 2.0) mediante un fine-tune completo con embeddings congelados, y se distribuye como un GGUF Q8_0 de 775 MB pensado para llama.cpp. Se acompaña de un runtime propio, `gutsy-inference`, que añade caché de estado, shortlisting para listas de hasta 255 opciones y temperaturas de calibración ajustadas por tipo de pregunta. Su relevancia está en cubrir una tarea muy concreta —routing, triaje, moderación, comprobaciones de política, selección de herramientas en bucles de agente o juicio de salidas— donde lo que importa es una probabilidad accionable, no texto libre.
+La propuesta de valor es la inferencia local determinista y privada: el modelo corre en CPU ordinaria, sin llamadas de red ni coste por petición, con un GGUF Q8_0 de 775 MB como referencia y un Q4_K_M de 505 MB aproximadamente un 25-30% más rápido. Está entrenado con reglas de scoring propias (entropía cruzada más Brier sobre etiquetas suaves), con un error de calibración en validación de 0,022 antes de cualquier escalado, lo que significa que una probabilidad de 0,8 corresponde aproximadamente a un 80% de acierto empírico.
 
-El modelo tiene 752.393.024 parámetros totales (~0,75 B) y una ventana de contexto configurada en 8.192 tokens. Está orientado exclusivamente al inglés y su uso está pensado para actuar sobre la probabilidad devuelta aplicando umbrales medidos sobre datos etiquetados propios.
+La versión v0.4 (octubre de 2026) mejora sobre v0.3 en robustez ante pares de contraste, reglas lógicas de profundidad 3 y ordenaciones expresadas como comparativas, y añade soporte de hasta 255 opciones mediante shortlisting en el runtime, además de una probabilidad `reject` para el caso "ninguna opción encaja". El modelo está pensado para clasificación, enrutamiento y juicio automatizado, no para generación de texto libre.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (arquitectura heredada del modelo base Qwen/Qwen3.5-0.8B; no se detalla en la informacion disponible) |
-| Parametros totales | 752.393.024 (~0,75 B) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 8.192 tokens (`n_ctx` configurado en 8192) |
-| Tipos de cuantizacion | Q8_0 (GGUF) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer (fine-tune de Qwen3.5-0.8B), cabecera de clasificación sobre probabilidades calibradas |
+| Parametros totales | 752.393.024 (dato real de safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 (775 MB), Q4_K_M (505 MB) |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (Q8_0); el modelo base original usa safetensors, no disponible en este repo |
+| Formato de pesos | GGUF (librería `gguf`, runtime llama.cpp); pesos base en safetensors |
+| Pipeline | text-classification |
+| Modelo base | Qwen/Qwen3.5-0.8B |
+| Tamaño del repo | 2.2 GB |
+| Runtime de referencia | gutsy-inference 0.4.0 |
+| Opciones máximas por consulta | 255 (shortlisting en runtime para listas > 16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune completo (full fine-tune) del modelo base Qwen/Qwen3.5-0.8B, con los embeddings de tokens congelados, lo que deja fija también la cabeza de salida al estar ligada (tied output head). El entrenamiento se hizo con pesos maestros en fp32 y cómputo en bf16. La función de pérdida combina entropía cruzada con un término 0,5 x Brier calculado sobre las letras de opción (y la opción Z), contra etiquetas blandas cuando estaban disponibles. El calendario usa learning rate 1e-5 con decaimiento coseno y un 3 % de warm-up, 256 preguntas por paso y 1 época sobre aproximadamente 90.000 preguntas.
+El modelo parte de Qwen3.5-0.8B, un transformer de aproximadamente 752 millones de parámetros, y se afina como modelo de decisión: en lugar de generar texto, produce una distribución de probabilidad sobre las opciones de una pregunta tipada (sí/no, elección múltiple, puntuación ordinal). El estado de entrada se codifica una sola vez y se cachea, de forma que las preguntas de seguimiento sobre el mismo estado solo cuestan sus propios tokens y las peticiones repetidas sobre un estado cacheado lo omiten por completo; este mecanismo funciona tanto con el fichero Q8_0 como con el Q4_K_M.
 
-Como medida de robustez frente al orden, las opciones se rebarajan cada vez que un ejemplo es visto. El checkpoint elegido es el de menor pérdida en un conjunto de desarrollo reservado (paso 300, el último evaluado), y nunca se seleccionó en función de ningún benchmark. El entrenamiento se completó en una única GPU de 48 GB en unas 2 horas. Una ejecución con LoRA (rango 32) sobre los mismos datos empató exactamente con este modelo en el conjunto público de JevBench y se mantuvo a pocos puntos en el resto de evaluaciones.
-
-Los datos de entrenamiento (recuentos aproximados) se reparten en varias porciones: ~24.300 preguntas de escenarios generados por un profesor (Qwen3.8-27B) en 41 dominios con una segunda pasada ciega, conservando solo los casos en que ambas coincidieron; ~17.400 de lectura y verificación (BoolQ, SNLI, SQuAD 2.0, HotpotQA sí/no); ~10.700 de clasificación y routing (MASSIVE, CLINC150, Civil Comments, twitter-financial-news-sentiment); ~10.300 de particiones de panel en dominio (RAGTruth train, WinoGrande train); ~8.300 sintéticas generadas por código (políticas, números y fechas, registros, rúbricas de puntuación, con etiquetas calculadas por motores de reglas); ~6.600 de elección de herramienta de agente (Jev Decisions v1); ~4.900 de juicio (HelpSteer2); ~4.100 de conocimiento (ARC, OpenBookQA, HellaSwag); y ~4.100 de documentos largos (extractos de contratos CUAD). Aproximadamente el 8 % de los ítems de elección elegibles son ítems de rechazo (la opción correcta se elimina y el objetivo es Z) y alrededor del 30 % de las preguntas de elección usan claves numéricas cortas. El autor declara que no se usó ninguna salida de modelos cerrados en ningún punto y que los datos se descontaminaron contra el panel de evaluación y los ítems públicos de JevBench (secuencias compartidas de 13 palabras).
+El entrenamiento utiliza reglas de scoring propias (cross-entropy más Brier) sobre etiquetas suaves, seguido de una comprobación de temperatura sobre datos reservados: el error de calibración en validación es de 0,022 antes de aplicar ningún escalado. La v0.4 incorpora mejoras específicas medidas en tests reservados: acierto en pares de contraste del 0,417 frente a 0,104 en v0.3, abstención correcta cuando falta un hecho decisivo del 0,896 frente a 0,583, reglas lógicas de profundidad 3 (entrenado solo con profundidad 1-2) del 0,842 frente a 0,617, y ordenaciones expresadas como comparativas (entrenado con posiciones) del 0,947 frente a 0,840. La aritmética de meses de calendario, nunca vista en entrenamiento, empeora de 0,683 a 0,519. El modelo es robusto al orden de las opciones: entre el 96% y el 97% de las respuestas no cambian al barajar las opciones en BoolQ, SNLI y escenarios de desarrollo.
 
 ## Capacidades
 
-- Decisión binaria (sí/no): devuelve una probabilidad calibrada para cada una de las dos respuestas desde un único forward pass.
-- Elección entre opciones: selección entre hasta 16 opciones por llamada, etiquetadas de A a P, más la opción Z ("ninguna opción encaja, o el estado no lo dice").
-- Puntuación ordinal: devuelve una puntuación ordenada sobre las opciones.
-- Opción de rechazo: soporta ítems en los que la respuesta correcta no está entre las opciones (objetivo Z); el runtime debe usar `reject_slot` activado.
-- Calibración probabilística: probabilidades acompañadas de temperaturas ajustadas por tipo de pregunta (elección 1,01; sí/no 0,86; puntuación 1,00), ajustadas sobre datos de validación reservados con etiquetas exactas.
-- Estado como entrada: acepta el estado como texto o JSON.
-- Caché de estado y shortlisting: el runtime `gutsy-inference` añade caché de estado y shortlisting para listas de hasta 255 opciones.
-- Selección de herramienta en bucles de agente: entrenado explícitamente para elegir herramientas (porción de datos Jev Decisions v1).
-- Juicio de salidas y comprobaciones de grounding: evaluación de respuestas y verificación de fundamentación.
-- Multilingüe: no; entrenado y evaluado únicamente en inglés.
+- Clasificación binaria (sí/no) con probabilidad calibrada por opción.
+- Elección múltiple entre hasta 255 opciones, con shortlisting en el runtime para listas de más de 16 (99,1% de acierto en el test de 20-254 opciones).
+- Puntuación ordinal (score) con error absoluto medio reportado por tiers.
+- Probabilidad `reject` para indicar "ninguna de las opciones encaja" o "el estado no lo dice".
+- Cacheado de estado: codificación única reutilizable por preguntas de seguimiento.
+- Salida determinista: peticiones idénticas devuelven probabilidades idénticas en la misma máquina y build.
+- Compatibilidad con la API Jev-style Decisions (clientes existentes solo necesitan cambiar la URL base).
+- Ejecución local en CPU mediante llama.cpp, sin llamadas de red ni coste por petición.
+- No genera texto libre; no soporta tool calling, agentes ni multimodalidad según la información disponible.
 
 ## Casos de uso
 
-- Routing de peticiones: dada una petición en texto o JSON, decidir a qué cola, equipo o categoría debe dirigirse, usando las probabilidades con un umbral medido sobre datos propios.
-- Triaje de soporte: clasificar tickets por urgencia o tipo y enrutar los casos de baja confianza a revisión humana, apoyándose en la calibración del modelo.
-- Moderación de contenido: con etiquetas blandas de Civil Comments en el entrenamiento, devolver la probabilidad de que un contenido sea tóxico y actuar sobre el umbral elegido.
-- Comprobación de políticas: verificar si un estado (por ejemplo, una acción propuesta) cumple una política dada, en formato de pregunta sí/no, con decisión accionable sobre la probabilidad.
-- Selección de herramienta en bucles de agente: dado el estado de la conversación y una lista de herramientas disponibles, devolver la probabilidad de cada herramienta y elegir la más probable, gracias a su entrenamiento específico y al shortlisting para listas grandes.
-- Juicio automático de salidas: puntuar la calidad de una respuesta generada (entrenado con HelpSteer2 y evaluado en JudgeBench), útil como evaluador en pipelines de LLM y control de calidad.
-- Comprobación de grounding: verificar si una afirmación está respaldada por el estado proporcionado, apoyándose en los datos de RAGTruth y del panel en dominio.
-- Clasificación de intención en escala amplia: con la evaluación zero-shot en BANKING77 con las 77 intenciones, asignar intenciones a consultas; el shortlisting permite manejar listas de 20 a 254 opciones con alta precisión reportada.
+- Enrutamiento de consultas en atención al cliente: clasificar un mensaje entrante entre decenas de intenciones (probado zero-shot con las 77 intenciones de BANKING77, acierto 0,613) y derivar al departamento correcto, con probabilidad `reject` para mensajes fuera de catálogo.
+- Moderación y triaje de contenido: decidir sí/no sobre si un texto cumple una política, aprovechando la calibración para fijar umbrales de revisión humana en lugar de decisiones binarias ciegas.
+- Verificación de respuestas en pipelines RAG: puntuar si una respuesta está respaldada por el contexto recuperado (RAGTruth 0,813 en dominio), integrable como paso de control antes de mostrar la respuesta al usuario.
+- Análisis de sentimiento financiero: clasificar titulares o tuits financieros en categorías positivas, negativas o neutras (Financial PhraseBank 0,927), útil para monitorización de carteras y alertas.
+- Evaluación automática de respuestas (LLM-as-judge ligero): comparar pares de respuestas y decidir cuál es mejor o si una cumple un criterio, con probabilidad de rechazo cuando el criterio no aplica (JudgeBench 0,539).
+- Decisión sobre reglas de negocio con estado JSON: enviar un estado estructurado (pedido, cliente, incidencia) y preguntas tipadas sobre elegibilidad, prioridad o escalado, con el estado cacheado para múltiples preguntas de seguimiento.
+- Inferencia de relación entre frases: determinar implicación, contradicción o neutralidad en pares de textos (SNLI 0,870) para deduplicación semántica o detección de inconsistencias documentales.
 
 ## Benchmarks y rendimiento
 
-Todos los resultados son autoinformados por el autor. Las cifras de otros sistemas provienen de sus respectivos autores, potencialmente con versiones de harness y muestras distintas, por lo que las comparaciones son indicativas.
+JevBench, ítems públicos (231):
 
-Conjunto público de JevBench (231 ítems):
+| Tier | v0.3 (Q8_0) | v0.4 (Q8_0) | v0.4 (Q4_K_M) |
+|---|---|---|---|
+| easy (48) | 47 | 48 | 47 |
+| original (72) | 61 | 65 | 62 |
+| hard (111) | 59 | 56 | 52 |
+| Total | 167 (0,723) | 169 (0,732) | 161 (0,697) |
+| Error de calibración (easy / original / hard) | 0,023 / 0,122 / 0,078 | 0,022 / 0,107 / 0,137 | 0,019 / 0,137 / 0,125 |
+| MAE ordinal (original / hard) | 0,30 / 0,59 | 0,19 / 0,69 | 0,21 / 0,67 |
+| Acuerdo ante paráfrasis (original) | 0,81 | 0,86 | 0,78 |
 
-| Metrica | Valor |
-|---|---|
-| Exactitud global (167/231) | 0,723 |
-| Tier facil | 47/48 |
-| Tier original | 61/72 |
-| Tier dificil | 59/111 |
-| Error de calibracion (facil) | 0,023 |
-| Error de calibracion (original) | 0,122 |
-| Error de calibracion (dificil) | 0,078 |
-| MAE ordinal (original) | 0,30 |
-| MAE ordinal (dificil) | 0,59 |
-| Acuerdo ante parafrasis (tier original) | 0,81 |
+Otros proyectos reportan sobre el mismo conjunto público: Jev 0,866, decision-4b 0,883, Neriv 0.6B 0,636, XERON-0.4 0,558, Laya afinado 0,537; Jeff-0.8B 47,6% en el tier hard (105 ítems). El autor advierte que JevBench describe los resultados públicos como preliminares y que los oficiales usan ítems sellados.
 
-Comparacion en el mismo conjunto publico (231 items) reportada por terceros:
+Mismos ítems, medidos en paralelo (700 por tarea):
 
-| Sistema | Exactitud |
-|---|---|
-| decision-4b | 0,883 |
-| Jev | 0,866 |
-| gutsy-0.8b v0.3 | 0,723 |
-| Neriv 0.6B | 0,636 |
-| XERON-0.4 | 0,558 |
-| tuned Laya | 0,537 |
+| Tarea | Qwen3.5-0.8B sin afinar | gutsy v0.3 | gutsy v0.4 | Jev (vía API) |
+|---|---|---|---|---|
+| BoolQ | 0,700 | 0,850 | 0,837 | 0,906 |
+| SNLI | 0,489 | 0,879 | 0,870 | 0,883 |
+| CommonsenseQA (nunca entrenado) | 0,463 | 0,587 | 0,577 | 0,863 |
 
-Mismos items medidos en paralelo (700 items de evaluacion cada uno):
+Panel de evaluación (700 ítems por tarea; JudgeBench 245):
 
-| Benchmark | gutsy-0.8b v0.3 | Jev |
-|---|---|---|
-| BoolQ | 0,850 | 0,906 |
-| SNLI | 0,879 | 0,883 |
-| CommonsenseQA | 0,587 | 0,863 (nunca entrenado en este modelo tampoco) |
+| Benchmark | v0.3 | v0.4 Q8_0 | v0.4 Q4_K_M | Jeff-0.8B v1.0 | Jev |
+|---|---|---|---|---|---|
+| BBH | 0,464 | 0,481 | 0,474 | 64,0 | 94,3 |
+| Financial PhraseBank | 0,921 | 0,927 | 0,926 | 96,4 | 77,0 |
+| JudgeBench | 0,596 | 0,539 | 0,563 | 62,6 | 78,6 |
+| RAGTruth (en dominio) | 0,790 | 0,813 | 0,807 | 86,1 | 77,3 |
+| WinoGrande (en dominio) | 0,657 | 0,620 | 0,629 | 68,6 | 90,7 |
 
-Panel de evaluacion (700 items; JudgeBench 245):
-
-| Benchmark | Valor |
-|---|---|
-| BBH | 0,464 |
-| Financial PhraseBank | 0,921 |
-| JudgeBench | 0,596 |
-| RAGTruth (en dominio) | 0,790 |
-| WinoGrande (en dominio) | 0,657 |
-
-Routing:
-
-| Tarea | Valor |
-|---|---|
-| BANKING77, 77 intenciones, zero-shot | 0,609 |
-| Listas de 20 a 254 opciones | 0,999 |
-
-Calibracion: el autor reporta un error de calibracion de validación de 0,021 antes del temperature scaling; el resto de la frase queda cortada en la información proporcionada, por lo que no se reproduce aquí.
+Enrutamiento y listas largas: BANKING77 test completo con las 77 intenciones como opciones, zero-shot, 0,613; listas de 20-254 opciones con respuesta en cada posición, 0,991. Familias del tier hard para v0.4 Q8_0 (5-19 ítems cada una, ruidosas individualmente): routing_hard 1,00, trap 0,88, adversarial 0,83, judge_hard 0,59, ambiguous 0,57, probability 0,50, multi_hop 0,44, tradeoff 0,33, long_policy 0,32, temporal_numeric 0,27.
 
 ## Requisitos de hardware
 
-- Tamaño del modelo: 752.393.024 parámetros. El fichero GGUF Q8_0 pesa 775 MB y el repo completo ocupa 0,8 GB.
-- VRAM estimada para inferencia: el fichero Q8_0 de 775 MB implica un uso de VRAM en el rango de aproximadamente 1-2 GB, incluyendo overhead del runtime y caché KV para 8.192 tokens (estimación orientativa; no confirmada en la información proporcionada).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de memoria libre debería ser suficiente para Q8_0 según el tamaño del fichero (dato orientativo). El entrenamiento se realizó en una única GPU de 48 GB (por ejemplo A6000, A40, L40), pero la inferencia no requiere ese perfil.
-- Cabe en GPU de consumo: sí, previsiblemente en prácticamente cualquier GPU de consumo moderna (GTX 10xx en adelante, RTX 3060/4060 y superiores) dado el tamaño del GGUF; también es viable en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp (a través de llama-cpp-python >= 0.3.35) y el runtime `gutsy-inference` incluido en el repositorio, que expone un servidor (`gutsy-inference serve`) con caché de estado, shortlisting y temperaturas calibradas. No se menciona soporte de vLLM, TGI u Ollama en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no aplica estrictamente; el modelo corre en CPU. El fichero Q8_0 ocupa 775 MB y el Q4_K_M 505 MB, por lo que la RAM necesaria es del orden de 1-2 GB incluyendo el runtime.
+- GPU recomendadas: no disponibles; el autor indica explícitamente ejecución en CPU ordinaria mediante llama.cpp.
+- Cabe en cualquier equipo consumer: el Q4_K_M de 505 MB es viable en máquinas de gama baja y en entornos sin GPU.
+- Opciones de despliegue: llama.cpp (runtime `gutsy-inference` 0.4.0 como referencia), formato GGUF compatible con el ecosistema llama.cpp. No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: el Q4_K_M es aproximadamente un 25-30% más rápido que el Q8_0 con las mismas puntuaciones de panel; no se publican cifras absolutas de latencia o tokens por segundo. El cacheado de estado reduce el coste de preguntas de seguimiento a solo sus propios tokens.
 
 ## Comparativa con modelos similares
 
-Modelos de decisión comparables (según las cifras del conjunto público de JevBench reportadas por terceros):
+| Modelo | Parámetros | Contexto | JevBench público | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| gutsy v0.4 | 752 M | no disponible | 0,732 (Q8_0) / 0,697 (Q4_K_M) | Apache 2.0 | Hugging Face, GGUF local |
+| Jev (typesafe/jev-1.13) | no disponible | no disponible | 0,866 | no disponible | API |
+| decision-4b | no disponible | no disponible | 0,883 | no disponible | no disponible |
+| Jeff-0.8B v1.0 | no disponible | no disponible | 47,6% en tier hard (105 ítems) | no disponible | no disponible |
+| Neriv 0.6B | 0,6 B | no disponible | 0,636 | no disponible | no disponible |
 
-| Modelo | Contexto | JevBench publico | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| gutsy-0.8b v0.3 | 8.192 | 0,723 | Apache 2.0 | GGUF en Hugging Face (kouhxp/gutsy) |
-| decision-4b | no disponible | 0,883 | no disponible | no disponible |
-| Jev | no disponible | 0,866 | no disponible | no disponible |
-| Neriv 0.6B | no disponible | 0,636 | no disponible | no disponible |
-| XERON-0.4 | no disponible | 0,558 | no disponible | no disponible |
-| tuned Laya | no disponible | 0,537 | no disponible | no disponible |
-
-No se dispone de los hiperparámetros, contexto, licencia ni enlaces de los modelos comparables, por lo que la comparación se limita a la exactitud reportada en JevBench y a la disponibilidad conocida del modelo descrito.
+En tareas medidas en paralelo, gutsy v0.4 queda por debajo de Jev en BoolQ (0,837 frente a 0,906), SNLI (0,870 frente a 0,883) y CommonsenseQA (0,577 frente a 0,863), pero supera a Jev en Financial PhraseBank (0,927 frente a 0,770) y RAGTruth (0,813 frente a 0,773). Frente a Jeff-0.8B, las cifras no son directamente comparables porque proceden de muestras distintas de los mismos benchmarks, según advierte el propio autor.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: solo devuelve probabilidades sobre opciones. No debe usarse como modelo conversacional ni generativo, pese a incluir la etiqueta "conversational".
-- Fuera de alcance o poco fiable según el autor: aritmética de fechas y números (debe calcularse en código primero), aplicación de nuevos reglamentos de reglas multi-paso, decidir si una ambigüedad es determinante, preguntas de conocimiento del mundo e input en idiomas distintos del inglés.
-- Idiomas: entrenado y evaluado únicamente en inglés; las entradas en otros idiomas no son fiables.
-- Riesgo de alucinación: al ser un modelo de decisión, el riesgo se manifiesta como probabilidades mal calibradas fuera de la distribución de entrenamiento; conviene establecer umbrales sobre datos etiquetados propios y derivar los casos de baja confianza y alto riesgo a revisión humana.
-- Sesgos: no se documentan análisis de sesgo específicos. La porción de moderación usa etiquetas blandas de Civil Comments (CC0), lo que puede introducir sesgos propios de ese conjunto.
-- Contexto: la ventana configurada es de 8.192 tokens; no se detalla cómo se comporta con entradas que se acerquen a ese límite.
-- Formato de prompt estricto: el formato debe coincidir exactamente (ChatML de Qwen con thinking desactivado), con el estado, la pregunta, las opciones etiquetadas de A a P y la línea Z para preguntas de elección y puntuación. El runtime lo construye automáticamente.
-- Configuración obligatoria: `reject_slot` debe estar activado para este modelo en `models.json`.
-- Evaluaciones autoinformadas: todos los resultados son self-run; las cifras de los sistemas comparados provienen de sus autores con posibles diferencias de harness y muestra.
-- Licencia: Apache 2.0, permite uso comercial. Algunos conjuntos de datos derivan de términos upstream (por ejemplo Jev Decisions v1 se deriva de datasets de NVIDIA, con términos upstream aplicables), por lo que conviene revisar esas condiciones si se redistribuye.
+- Aritmética de fechas y números: JevBench temporal_numeric 0,27 y tareas reservadas de días laborables y meses de calendario débiles; el autor recomienda no automatizar sobre estas sin pruebas propias.
+- Razonamiento multi-hop (0,44), tradeoff (0,33), long_policy (0,32) y probability (0,50) en el tier hard son puntos flojos.
+- JudgeBench y WinoGrande empeoran respecto a v0.3 (0,539 frente a 0,596 y 0,620 frente a 0,657), así que la actualización no es una mejora uniforme.
+- RAGTruth y WinoGrande están medidos en dominio: sus splits de entrenamiento están en los datos de entrenamiento (los ítems de test nunca), lo que infla las cifras frente a una evaluación estrictamente fuera de dominio.
+- Solo inglés: no hay soporte multilingüe declarado.
+- No genera texto: no sirve para tareas generativas, tool calling ni agentes.
+- Riesgo de alucinación estructural: el modelo no inventa texto, pero puede asignar alta probabilidad a una opción incorrecta cuando el estado es ambiguo; la probabilidad `reject` mitiga pero no elimina este caso.
+- Las comparaciones con Jev, decision-4b, Jeff y otros son indicativas: distintos harness, muestras e ítems, y las cifras de terceros son autoinformadas salvo que se indique lo contrario.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-0.8B puede tener sus propias condiciones que conviene revisar.
+- El determinismo está garantizado solo en la misma máquina y build; cambios de runtime o de hardware pueden alterar las probabilidades.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/kouhxp/gutsy
+- Repositorio del runtime: `gutsy-inference/` 0.4.0 (referenciado en la model card)
+- Entrenamiento y evaluación: `gutsy-bench/`, `gutsy-teacher/` (referenciados en la model card)
+- Revisión v0.3: `hf download kouhxp/gutsy --revision v0.3`
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Runtime gutsy-inference: incluido en el repositorio del modelo (`gutsy/gutsy-inference`)
-- Papers, blogs, repos y demos adicionales: no disponible

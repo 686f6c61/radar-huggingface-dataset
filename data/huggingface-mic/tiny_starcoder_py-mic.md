@@ -2,87 +2,90 @@
 
 ## Resumen
 
-`huggingface-mic/tiny_starcoder_py-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` dentro del proyecto transformers-mic. No es un modelo entrenado ni utilizable para generacion de codigo: es una version "slim" (reducida) del checkpoint `bigcode/tiny_starcoder_py`, con la misma arquitectura GPTBigCode pero con una configuracion mucho mas pequena, hasta 3.724.608 parametros, y pesos generados aleatoriamente con semilla 17.
+`huggingface-mic/tiny_starcoder_py-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` dentro del proyecto transformers-mic. No es un modelo entrenado ni utilizable para generacion real: se trata de una version reducida artificialmente del checkpoint `bigcode/tiny_starcoder_py`, con solo 3.724.608 parametros y pesos generados aleatoriamente (semilla 17). Su proposito es servir como contrato de integracion reproducible para validar frameworks y utilidades de inferencia con la arquitectura GPTBigCode.
 
-El objetivo del repositorio es servir como fixture de integracion: empaqueta pesos reducidos, ejemplos de uso ejecutables y un directorio de "expectativas de framework" para validar que las integraciones con Transformers se comportan de forma consistente. La model card lo etiqueta explicitamente como `test-artifact`, precisamente para excluirlo de busquedas de modelos candidatos.
+El repositorio incluye los pesos "slim", ejemplos de uso ejecutables con Transformers y un directorio de expectativas de framework, todo ello acompanado de un manifiesto de contrato (`integration.json`) y un registro de procedencia (`build.json`). La reduccion del modelo se realiza mediante la regla generica de `sweep.py` del repositorio transformers-mic, manteniendo la misma arquitectura (`GPTBigCodeForCausalLM`) y los mismos nombres de tensores que el checkpoint original.
 
-Por tanto, su relevancia no es funcional (no genera texto ni codigo de calidad) sino de ingenieria: permite a desarrolladores que trabajan en tooling de Hugging Face o en integraciones de Transformers reproducir pruebas de contrato sin descargar checkpoints grandes. Cualquier uso como modelo real de generacion de codigo seria un error de evaluacion.
+Es relevante ahora porque facilita pruebas de integracion rapidas y ligeras (el repo ocupa 0.0 GB) sin necesidad de descargar el modelo completo, y porque esta explicitamente etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos. Cualquier uso como modelo de generacion de codigo seria inadecuado: los pesos son aleatorios y no han sido entrenados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPTBigCode (GPTBigCodeForCausalLM), transformer causal decoder-only |
+| Arquitectura | GPTBigCode (GPTBigCodeForCausalLM, transformer causal decoder-only) |
 | Parametros totales | 3.724.608 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (la config se ha reducido; no se especifica el valor exacto) |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; se declara compatibilidad de calculo finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (el modelo base esta orientado a Python, pero la ficha no lo declara) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es GPTBigCode en su variante `GPTBigCodeForCausalLM`, un transformer decoder-only con atencion multi-query (MQA), la misma familia que el checkpoint original `bigcode/tiny_starcoder_py`. La configuracion se ha reducido mediante la regla generica de `sweep.py` del repositorio transformers-mic, de modo que mantiene los nombres de tensor del checkpoint real pero con dimensiones mucho menores.
+El modelo emplea la arquitectura GPTBigCode en su variante `GPTBigCodeForCausalLM`, un transformer causal decoder-only con atencion multi-query (MQA) caracteristica de la familia StarCoder/StarCoderBase. La configuracion ha sido reducida respecto al checkpoint original `bigcode/tiny_starcoder_py` aplicando la regla generica de reduccion de `sweep.py`, manteniendo intactos los nombres de tensores del checkpoint real.
 
-No ha habido entrenamiento. Los pesos son aleatorios (semilla 17) y solo se validaron mediante un "input-sensitivity gate": cada perturbacion de las entradas del contrato mueve los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, mueve 0,5). Los ficheros de procesador (`generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `bigcode/tiny_starcoder_py`. El fixture se identifica con la clave `0852b1b7488d` y cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el shrink.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y unicamente pasaron una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato movio los logits al menos 0.001 (el caso mas debil, `attention_mask:all_ones`, registro 0.5). Los ficheros de procesador (`generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `bigcode/tiny_starcoder_py`. Los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios, por lo que no genera texto ni codigo coherente.
-- Sirve como fixture de contrato para validar integraciones de Transformers con GPTBigCode.
-- Permite comprobar la forma, nombres de tensores y compatibilidad de procesador frente al checkpoint real.
-- Calculo finito verificado en float32, bfloat16 y float16 (forward, loss y gradientes).
-- No soporta tool calling, agentes, vision, audio ni modo thinking.
-- No se declaran capacidades multilingues.
+- No dispone de capacidades reales de generacion: los pesos son aleatorios y no han sido entrenados.
+- Sirve como fixture de integracion para validar la carga del modelo, el tokenizador y la ejecucion de forward pass con la arquitectura GPTBigCode.
+- Permite comprobar contratos de framework (formas de entrada, dtypes, mascaras de atencion) sin coste computacional significativo.
+- Compatible con el pipeline de Transformers para `GPTBigCodeForCausalLM` a nivel estructural.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso de forma funcional.
+- No tiene capacidades multilingues verificadas ni modo thinking, vision o audio.
 
 ## Casos de uso
 
-- Pruebas de integracion de Transformers: cargar el fixture y verificar que la clase `GPTBigCodeForCausalLM` instancia correctamente sin descargar el checkpoint completo.
-- Validacion de contratos de API: usar `integration.json` y el directorio `integrations/transformers/expectations` para comprobar que una version de la libreria mantiene el comportamiento esperado.
-- CI/CD de tooling: ejecutar tests de regresion ligeros (3,7 M de parametros) en pipelines sin GPU dedicada.
-- Desarrollo de utilidades de tokenizacion: los ficheros de procesador son identicos byte a byte a los de `bigcode/tiny_starcoder_py`, utiles para probar pipelines de tokenizacion sin ambiguedad.
-- Verificacion de dtypes: comprobar que forward, loss y gradientes son finitos en float32, bfloat16 y float16.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture tiny_starcoder_py-mic` y comparar hashes registrados en `build.json`.
-- Docencia o demos de arquitectura: inspeccionar la estructura de GPTBigCode con un modelo minimo.
+- Pruebas de integracion en CI/CD: el modelo permite validar que un pipeline de Transformers carga correctamente un checkpoint GPTBigCode y ejecuta un forward pass sin descargar el modelo completo, gracias a su tamano de 3.7M parametros.
+- Desarrollo de frameworks de inferencia: util para verificar contratos de entrada/salida (formas de tensores, dtypes, mascaras) en herramientas como vLLM, TGI o llama.cpp antes de probar con modelos reales.
+- Validacion de tokenizadores: al copiar byte a byte los ficheros de procesador del checkpoint original, permite comprobar la integracion del tokenizador de StarCoder sin cargar pesos reales.
+- Reproducibilidad de experimentos: el registro `build.json` con hashes y fuentes fijadas permite reconstruir el fixture de forma determinista mediante `build_fixtures.py`.
+- Docencia y formacion: sirve para explicar la estructura interna de un transformer causal y la organizacion de un repositorio de modelo en Hugging Face sin requerir GPU.
+- Pruebas de robustez numerica: al ser finito en float32, bfloat16 y float16, permite verificar el comportamiento numerico de kernels y operaciones en distintas precisiones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,7 M de parametros), por lo que cabe en CPU.
-- GPU recomendadas: no requiere GPU; cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es mas que suficiente.
-- Cabe en cualquier GPU consumer e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (via `integrations/transformers/usage.md`); no se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (3.724.608 parametros, aproximadamente 15 MB de pesos); cabe en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: no requiere GPU dedicada; cualquier GPU integrada o consumer (GTX 1050, RTX 3060, etc.) es suficiente.
+- Cabe en consumer GPU: si, en todas, incluida la mayoria de iGPUs.
+- Opciones de despliegue: Transformers (uso documentado en `integrations/transformers/usage.md`); otras opciones como vLLM, llama.cpp, Ollama o TGI no estan documentadas para este fixture.
+- Latencia y throughput: no disponibles; al ser un artefacto de prueba, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| huggingface-mic/tiny_starcoder_py-mic | 3.724.608 | no disponible | Fixture de test | no disponible | Hugging Face |
-| bigcode/tiny_starcoder_py | no disponible en la informacion | no disponible | Modelo real de generacion de codigo en Python | no disponible en la informacion | Hugging Face |
-| Otros modelos de codigo de ~1B | no disponible | no disponible | Generacion de codigo | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Proposito |
+|---|---|---|---|---|
+| huggingface-mic/tiny_starcoder_py-mic | 3.724.608 | no disponible | no disponible | Fixture de prueba (pesos aleatorios) |
+| bigcode/tiny_starcoder_py | no disponible en la informacion proporcionada | no disponible | no disponible | Modelo real de generacion de codigo |
+| bigcode/starcoderbase | no disponible en la informacion proporcionada | no disponible | no disponible | Modelo de codigo de mayor tamano |
 
-La unica comparacion significativa es con su modelo base: el fixture replica la arquitectura y el procesador de `bigcode/tiny_starcoder_py`, pero sustituye los pesos entrenados por pesos aleatorios y reduce la configuracion.
+La comparativa con alternativas funcionales no es significativa: el modelo aqui descrito es un artefacto de prueba, no un modelo de generacion. Los datos de `bigcode/tiny_starcoder_py` y `bigcode/starcoderbase` no se detallan en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y no producen salidas coherentes.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; usarlo en produccion seria un error.
-- Licencia no declarada: no se puede asumir uso comercial sin consultar el repositorio del modelo base.
-- No se declaran idiomas soportados ni contexto maximo exacto.
-- No se documentan sesgos porque no hay entrenamiento; cualquier analisis de sesgo es inaplicable.
-- Riesgo de confusion al integrarlo en pipelines que automaticamente seleccionan modelos por tamano o por nombre.
-- El repositorio ocupa 0,0 GB y depende de ficheros externos (`integration.json`, `build.json`, `integrations/`) que deben revisarse antes de reutilizarlo.
+- Pesos aleatorios: el modelo no ha sido entrenado y no produce salidas coherentes; no debe usarse para generacion, razonamiento ni codigo.
+- Etiquetado como `test-artifact`: el autor lo excluye explicitamente de busquedas de modelos candidatos; usarlo en produccion seria un error de seleccion.
+- Licencia no disponible: no se puede confirmar el regimen de uso comercial; al derivar de `bigcode/tiny_starcoder_py`, habria que consultar la licencia del modelo base.
+- Idiomas no disponibles: no hay informacion sobre cobertura linguistica.
+- Longitud de contexto no disponible: la configuracion reducida no documenta la ventana de contexto efectiva.
+- Riesgo de alucinacion: total, al no existir aprendizaje; cualquier salida es ruido estadistico derivado de pesos aleatorios.
+- Sesgos: no evaluables, al no haber datos de entrenamiento reales.
+- Uso previsto restringido a validacion de integracion y contratos de framework, no a inferencia funcional.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/tiny_starcoder_py-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/tiny_starcoder_py-mic
 - Modelo base: https://huggingface.co/bigcode/tiny_starcoder_py
+- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/tiny_starcoder_py-mic.html
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Script de shrink: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Explicacion del shrink del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/tiny_starcoder_py-mic.html
+- Script de reduccion (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion (build_fixtures.py): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Uso con Transformers: integrations/transformers/usage.md (dentro del repositorio)
+- Manifiesto de contrato: integration.json (dentro del repositorio)
+- Procedencia del fixture: build.json (dentro del repositorio)

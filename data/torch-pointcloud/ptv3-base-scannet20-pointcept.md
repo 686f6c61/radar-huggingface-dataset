@@ -2,83 +2,105 @@
 
 ## Resumen
 
-El modelo `ptv3-base.scannet20.pointcept` es un modelo de segmentación semántica de nubes de puntos basado en la arquitectura Point Transformer V3 (PTv3), desarrollado por la organización torch-pointcloud como conversión del checkpoint original de Pointcept. Está entrenado sobre el dataset ScanNet con 20 clases de objetos y escenas de interiores, y ofrece un rendimiento de mIoU de 76,29 sobre dicho conjunto de validación.
+`ptv3-base.scannet20.pointcept` es un modelo de segmentación semántica de nubes de puntos 3D basado en Point Transformer V3 (PTV3), la arquitectura presentada en el artículo "Point Transformer V3: Simpler, Faster, Stronger" (Wu et al., CVPR 2024). El checkpoint lo publica el proyecto `torch-pointcloud`, que lo ha convertido desde el repositorio de referencia Pointcept (licencia MIT) para integrarlo en su propia librería de PyTorch. No es un modelo de lenguaje: procesa nubes de puntos con coordenadas, color y normales, y devuelve una etiqueta semántica por punto entre 20 clases de interior.
 
-Este modelo resuelve el problema de etiquetar cada punto de una nube 3D con su categoría semántica (pared, suelo, silla, mesa, etc.), una tarea fundamental para robótica, realidad aumentada, reconstrucción de escenas y análisis de entornos interiores. Su relevancia actual radica en que PTv3 introduce una atención serializada de vecindad que simplifica el cómputo y mejora la eficiencia frente a arquitecturas previas, manteniendo una precisión competitiva con solo 46,2 millones de parámetros.
+El modelo tiene 46,2 millones de parámetros, acepta 6 canales de entrada (3 de posición y 3 de color o normales, según la configuración) y produce 20 clases, correspondientes a la anotación de 20 clases del dataset ScanNet. Su innovación principal es el uso de atención de vecindad serializada (serialized neighborhood attention), que reorganiza los puntos en una secuencia según un orden espacial y aplica atención local sobre vecinos, evitando los kernels de vecindad dispersos y costosos de versiones anteriores.
 
-El checkpoint se distribuye en formato safetensors bajo licencia MIT, pesa 0,2 GB y se integra con la librería `torch-pointcloud`, que requiere dependencias adicionales como `spconv` y `flash-attn` para su ejecución en GPU.
+Es relevante para quien necesite un modelo de segmentación 3D listo para usar en producción o investigación, con pesos en safetensors, licencia MIT y una integración directa en una librería de PyTorch. Sus resultados declarados en ScanNet 20 clases son mIoU 77,42 y exactitud global (OA) del 92 %, aunque no están verificados de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Point Transformer V3 (atención serializada de vecindad) |
+| Arquitectura | Point Transformer V3 (transformer con atención de vecindad serializada) |
 | Parametros totales | 46.171.604 (46,2 M) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No aplica (procesa nubes de puntos de tamaño variable) |
-| Tipos de cuantizacion | No disponible (solo safetensors de precisión completa) |
-| Idiomas soportados | No aplica (modelo de visión 3D, sin texto) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (nube de puntos; el ejemplo de uso emplea 8192 puntos por muestra) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo de visión 3D, sin entrada de texto) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (tamaño del repo: 0,2 GB) |
+| Canales de entrada | 6 |
+| Clases de salida | 20 |
+| Dimensión de features | 64 |
+| Dataset de entrenamiento | ScanNet (20 clases) |
+| Librería | torch-pointcloud |
+| Dependencias | spconv y flash-attn (compilación acorde a la versión de torch y CUDA) |
 
 ## Arquitectura y entrenamiento
 
-Point Transformer V3 es una arquitectura transformer diseñada específicamente para nubes de puntos. Su innovación principal es la atención serializada de vecindad, que ordena los puntos en una secuencia lineal y aplica atención sobre vecinos locales, reduciendo el coste computacional frente a las atenciones globales o las ventanas 3D complejas. Esto permite escalar a nubes densas con mayor eficiencia y simplicidad de implementación.
+PTV3 es un transformer diseñado específicamente para nubes de puntos. En lugar de construir grafos de vecindad con kernels dispersos, serializa los puntos siguiendo un orden espacial (space-filling curve) y aplica atención sobre vecinos contiguos en esa secuencia. Esto reduce el coste computacional y permite entrenar con batches grandes y resoluciones altas. El checkpoint concreto usa 64 canales internos de features, 6 canales de entrada y una cabeza de clasificación de 20 clases.
 
-El modelo se entrenó sobre ScanNet, un dataset de reconstrucciones 3D de interiores con anotaciones semánticas para 20 clases. El checkpoint publicado es una conversión del modelo original de Pointcept, que reporta un mIoU de referencia de 77,6 en el paper; la versión convertida alcanza 76,29, una ligera diferencia atribuible a la conversión de pesos y al entorno de inferencia. No se dispone de información sobre el número de tokens de entrenamiento, composición exacta del dataset ni uso de RLHF o DPO, ya que se trata de un modelo de visión 3D supervisado de forma clásica.
+Según la model card, el modelo se ha entrenado en ScanNet con la anotación de 20 clases. No se especifica en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de ajuste fino adicionales como RLHF o DPO (no aplicables en este dominio). El checkpoint es una conversión directa desde Pointcept, el repositorio de referencia del artículo, manteniendo la licencia MIT.
 
 ## Capacidades
 
-- Segmentación semántica de nubes de puntos: asigna una de 20 clases (ScanNet) a cada punto de la nube.
-- Extracción de características: permite obtener embeddings por punto de 64 dimensiones mediante `forward_features`, útiles para tareas downstream como agrupación o clasificación.
-- Soporte de entrada multimodal simple: acepta coordenadas, color y normales como canales de entrada (6 canales en total).
-- Inferencia en tiempo real: al ser un modelo de 46 M de parámetros, es ligero y adecuado para aplicaciones con requisitos de latencia moderada.
-- No tiene capacidades de texto, tool calling, agentes ni razonamiento simbólico; es un modelo puramente perceptivo 3D.
+- Segmentación semántica de nubes de puntos 3D: asigna una de 20 clases a cada punto de la nube.
+- Entrada multimodal geométrica: acepta posición (3 canales), color (3 canales) y normales (3 canales), combinables según la transformación de datos.
+- Extracción de features: `forward_features` devuelve representaciones de 64 dimensiones por punto, útiles para tareas posteriores (clasificación, clustering, recuperación).
+- Configuración de la cabeza de clasificación: `reset_classifier(num_classes=0)` permite usar el modelo como extractor puro de embeddings.
+- Procesamiento por lotes: soporta `collate` para agrupar varias nubes en un batch con índices de batch.
+- Ejecución en GPU: los kernels de vecindad serializada son exclusivos de GPU (`model.cuda().eval()`).
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto: no es un modelo de lenguaje.
+- No dispone de capacidades multilingües ni de visión 2D.
 
 ## Casos de uso
 
-- Robótica móvil en interiores: el modelo puede segmentar en tiempo real nubes de puntos capturadas por sensores LiDAR o cámaras RGB-D, permitiendo al robot distinguir obstáculos, superficies transitables y objetos manipulables.
-- Realidad aumentada y mixta: al etiquetar cada punto de la escena, se pueden anclar objetos virtuales sobre superficies reales (suelo, paredes, mesas) con mayor precisión.
-- Reconstrucción y modelado de edificios: aplicado a escaneos de interiores, facilita la generación de modelos BIM (Building Information Modeling) clasificando automáticamente los elementos estructurales.
-- Automatización de inventario en almacenes: segmentando estanterías, cajas y pasillos en nubes de puntos, se puede planificar rutas de robots de picking.
-- Análisis de seguridad y vigilancia: detectar objetos relevantes (personas, vehículos, mobiliario) en entornos interiores para sistemas de monitorización.
-- Dataset labeling asistido: el modelo puede preetiquetar nubes de puntos para acelerar la anotación manual en nuevos datasets, reduciendo el coste de creación de datos de entrenamiento.
+- Segmentación de escenas de interior: reconstrucciones 3D de habitaciones y edificios obtenidas con escáneres o SLAM se procesan para etiquetar suelo, pared, mesa, silla, etc., aprovechando el entrenamiento específico en ScanNet.
+- Robótica móvil en interiores: un robot equipado con LiDAR o cámara de profundidad usa el modelo para identificar obstáculos y superficies transitables antes de planificar trayectorias.
+- Digitalización de patrimonio y arquitectura: nubes de puntos de edificios se segmentan en elementos estructurales para generar modelos BIM o documentación as-built.
+- Anotación asistida de datasets 3D: el modelo pre-etiqueta nubes de puntos y reduce el trabajo manual de anotadores, que solo revisan y corrigen las predicciones.
+- Realidad aumentada y mixta: segmentación en tiempo real de la escena captada por el dispositivo para anclar objetos virtuales sobre superficies reconocidas.
+- Análisis de inventario en retail o almacenes: detección y clasificación de estanterías, cajas y mobiliario a partir de escaneos 3D del espacio.
+- Extracción de embeddings para búsqueda o clustering: usando `forward_features` se obtienen vectores de 64 dimensiones por punto para agrupar regiones o alimentar clasificadores ligeros.
 
 ## Benchmarks y rendimiento
 
-El modelo reporta un mIoU de 76,29 en el conjunto de validación de ScanNet (20 clases), según los datos de la model card. El paper original de PTv3 indica un valor de referencia de 77,6 para la misma configuración base, lo que sugiere una ligera degradación tras la conversión de pesos. No se dispone de resultados en otros benchmarks (S3DIS, nuScenes, etc.) en la información proporcionada.
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Dataset | Métrica | Valor |
-|---|---|---|
-| ScanNet (20 clases) | mIoU | 76,29 |
+| Dataset | Tarea | Métrica | Valor |
+|---|---|---|---|
+| ScanNet (20 clases) | Segmentación semántica de nubes de puntos | mIoU | 77,42 |
+| ScanNet (20 clases) | Segmentación semántica de nubes de puntos | OA | 92,00 |
 
-No se han publicado resultados comparativos con otros modelos en la información disponible.
+No se han publicado en la información disponible resultados comparativos con otros modelos en la model card.
 
 ## Requisitos de hardware
 
-- El modelo requiere GPU NVIDIA con soporte CUDA, ya que los kernels de `spconv` y `flash-attn` no funcionan en CPU.
-- Con 46,2 M de parámetros y un tamaño de repo de 0,2 GB, la VRAM necesaria para inferencia es reducida; se estima que cabe en GPUs consumer con 8 GB o más (p. ej., RTX 3060, RTX 4060).
-- Las GPU recomendadas son aquellas con soporte para FlashAttention-2 y spconv, como las series RTX 30/40 o A100/H100 para despliegues más grandes.
-- La inferencia se realiza mediante la librería `torch-pointcloud`, que proporciona la API `create_model` y carga los pesos preentrenados.
-- No se dispone de datos de latencia o throughput específicos; dependerá del número de puntos procesados (el ejemplo usa 8192 puntos) y de la GPU utilizada.
+- VRAM estimada: no disponible en la información proporcionada. Con 46,2 M de parámetros, los pesos en precisión completa ocupan aproximadamente 0,18 GB, pero el consumo real depende del número de puntos por muestra y de los buffers de atención.
+- GPU recomendadas: no especificadas por el autor. El modelo requiere GPU por el uso de kernels de vecindad serializada y `flash-attn`.
+- GPU de consumo: no se confirma compatibilidad. La dependencia de `flash-attn` y `spconv` exige compilaciones específicas por versión de CUDA, lo que limita las opciones a GPUs NVIDIA compatibles.
+- Despliegue: la vía documentada es la librería `torch-pointcloud` (`pip install torch-pointcloud`), con `spconv` y `flash-attn` compilados para la versión de torch y CUDA del entorno. No se documentan opciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente en la documentación proporcionada para establecer una comparativa cuantitativa con otros modelos de segmentación de nubes de puntos (p. ej., PointNet++, SparseConvNet o MinkowskiNet). El valor de mIoU de 76,29 en ScanNet puede contrastarse con el 77,6 del paper original de PTv3, pero no hay datos verificados de otras arquitecturas en el mismo contexto.
+| Modelo | Parámetros | Entrada | Clases | mIoU ScanNet | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| ptv3-base.scannet20.pointcept | 46,2 M | 6 canales | 20 | 77,42 (declarado) | MIT | Hugging Face, torch-pointcloud |
+| Point Transformer V2 | no disponible en la información | nube de puntos | variable | no disponible en la información | MIT (Pointcept) | Pointcept |
+| PointNeXt | no disponible en la información | nube de puntos | variable | no disponible en la información | MIT (Pointcept) | Pointcept |
+| MinkowskiEngine-based models | no disponible en la información | nube de puntos | variable | no disponible en la información | MIT | Repositorios propios |
+
+No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada; la comparación cuantitativa no es posible con los datos disponibles.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado exclusivamente en ScanNet, por lo que su rendimiento fuera de este dominio (escenas exteriores, objetos no presentes en las 20 clases) será significativamente inferior.
-- Requiere dependencias específicas (`spconv`, `flash-attn`) que complican la instalación en entornos sin GPU o con versiones de CUDA no compatibles.
-- El valor de mIoU reportado (76,29) es ligeramente inferior al del modelo original de Pointcept (77,6), lo que puede deberse a la conversión de pesos; se recomienda verificar en el caso de uso concreto.
-- No se han documentado sesgos específicos, pero al entrenarse en escaneos de interiores académicos puede presentar menor precisión en escenas muy desordenadas o con condiciones de iluminación inusuales.
-- La licencia MIT permite uso comercial sin restricciones, pero el modelo depende de librerías con licencias propias (spconv, flash-attn) que deben revisarse por separado.
-- No es un modelo generativo; no produce texto ni respuestas, solo etiquetas o características por punto.
+- Dominio restringido: entrenado exclusivamente en ScanNet, que contiene escenas de interior. El rendimiento en exteriores, industria o escenas aéreas no está garantizado.
+- Solo 20 clases: la taxonomía es fija; para otras categorías hay que reentrenar o ajustar la cabeza de clasificación.
+- Resultados no verificados: las métricas de la model card están marcadas como `verified: false`.
+- Dependencias frágiles: `spconv` y `flash-attn` requieren compilación contra la versión exacta de torch y CUDA, lo que complica el despliegue reproducible.
+- Solo GPU: los kernels no funcionan en CPU, lo que descarta entornos sin acelerador NVIDIA.
+- Sin información sobre sesgos: no se documentan sesgos de clase ni desequilibrios del dataset ScanNet en la información disponible.
+- Riesgo de error en regiones ambiguas: como todo modelo de segmentación, puede confundir clases con geometría similar (por ejemplo, silla y mesa) o fallar en objetos parcialmente ocluidos.
+- Licencia MIT: permite uso comercial, pero conviene revisar las licencias de las dependencias (`spconv`, `flash-attn`) y del dataset ScanNet, que tiene sus propios términos de uso.
+- Sin soporte de texto ni de idiomas: no es adecuado para tareas de NLP ni de visión 2D.
 
 ## Enlaces
 
-- [Hugging Face: torch-pointcloud/ptv3-base.scannet20.pointcept](https://huggingface.co/torch-pointcloud/ptv3-base.scannet20.pointcept)
-- [Paper: Point Transformer V3: Simpler, Faster, Stronger](https://arxiv.org/abs/2312.10035)
-- [Repositorio Pointcept (fuente del checkpoint original)](https://github.com/Pointcept/Pointcept)
-- [Repositorio torch-pointcloud (librería de inferencia)](https://github.com/arthurdjn/pytorch-pointcloud)
-- [Guía de instalación de torch-pointcloud](https://pytorch-pointcloud.org/installation/)
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/ptv3-base.scannet20.pointcept
+- Paper Point Transformer V3: https://arxiv.org/abs/2312.10035
+- Repositorio Pointcept: https://github.com/Pointcept/Pointcept
+- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Documentación de instalación: https://pytorch-pointcloud.org/latest/installation/
+- Paper ScanNet: https://arxiv.org/abs/1702.04405 (Dai et al., CVPR 2017)

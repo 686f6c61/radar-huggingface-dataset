@@ -2,57 +2,53 @@
 
 ## Resumen
 
-Kumo Tabular es un modelo fundacional tabular preentrenado desarrollado por NVIDIA, diseñado específicamente para tareas de clasificación y regresión sobre datos estructurados. A diferencia de un modelo de lenguaje, su entrada son tablas: el usuario proporciona un conjunto de ejemplos etiquetados como contexto (x_context, y_context) y el modelo devuelve probabilidades de clase para las filas nuevas (x_query). Esto lo sitúa en la categoría de los modelos fundacionales tabulares con aprendizaje en contexto, que evitan reentrenar un modelo distinto por cada conjunto de datos.
+Kumo Tabular es un modelo fundacional preentrenado por NVIDIA para datos tabulares, orientado especificamente a tareas de clasificacion y regresion sobre datos estructurados. A diferencia de los modelos de lenguaje, su entrada no es texto sino tablas con columnas de tipos heterogeneos (numericas, categoricas, etc.), y su funcionamiento se basa en el aprendizaje en contexto (*in-context learning*): se le proporcionan ejemplos etiquetados como contexto y predice las probabilidades de clase para nuevas filas de consulta, sin necesidad de reentrenamiento por tarea.
 
-El modelo se publica junto a la librería `structured-data-models`, que actúa como interfaz oficial de inferencia e integra tipos nativos de pandas y scikit-learn. El flujo de trabajo típico consiste en cargar un DataFrame, inferir los tipos de columna con `sdm.infer_stypes`, construir un `TableTensor` y ejecutar el modelo sobre GPU (`device="cuda"`). En el ejemplo de la model card se utiliza el conjunto Breast Cancer de scikit-learn con 300 filas de contexto y 8 estimadores (`num_estimators=8`).
+El modelo se distribuye a traves de la libreria `structured-data-models` (paquete `sdm`), que gestiona la conversion de DataFrames de pandas a tensores tabulares (`TableTensor`), la inferencia de tipos de columna (`infer_stypes`) y la ejecucion del modelo con soporte para CUDA y precision mixta en float16. El repositorio de pesos ocupa 2,4 GB, lo que sugiere un modelo de tamano moderado apto para despliegue en una sola GPU.
 
-El repositorio ocupa 2,4 GB y está liberado bajo licencia OpenMDW 1.1. Los metadatos indican una creación el 1 de septiembre de 2026 y una última actualización el 28 de septiembre de 2026. En el momento de redactar esta ficha acumula 14 "likes" y 0 descargas, por lo que se trata de un lanzamiento reciente con validación comunitaria todavía escasa. La model card no detalla arquitectura interna, número de parámetros, longitud de contexto ni resultados de benchmarks.
+Su relevancia actual radica en que cubre un nicho poco atendido por los modelos fundacionales genericos: el modelado predictivo sobre datos tabulares, donde los enfoques clasicos (gradient boosting, regresion logistica) requieren entrenamiento especifico por conjunto de datos. Kumo Tabular propone un paradigma de cero entrenamiento por tarea mediante contexto etiquetado, con licencia OpenMDW 1.1.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no especifica la arquitectura interna; se describe como modelo fundacional tabular preentrenado) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que el modelo sea MoE) |
-| Longitud de contexto | no disponible (la API recibe `x_context`/`y_context` con ejemplos etiquetados, pero no se publica el numero maximo de filas) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo sobre datos tabulares; no se declaran idiomas) |
+| Arquitectura | no disponible (modelo fundacional tabular; detalles no publicados en la informacion disponible) |
+| Parametros totales | no disponible (repo de pesos de 2,4 GB) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (el ejemplo usa 300 filas de contexto) |
+| Tipos de cuantizacion | no disponible; la model card usa float16 en CUDA mediante `torch.amp.autocast` |
+| Idiomas soportados | no aplica / no disponible (datos tabulares, no texto) |
 | Licencia | OpenMDW 1.1 |
-| Formato de pesos | no disponible (el repositorio ocupa 2,4 GB; la model card no especifica safetensors, GGUF ni otro formato) |
-| Tarea | Clasificacion y regresion sobre datos tabulares |
-| Interfaz de inferencia | Libreria `structured-data-models` (paquete `sdm`) |
-| Dispositivo | GPU CUDA en los ejemplos de la model card (`device="cuda"`) |
-| Tamano del repositorio | 2,4 GB |
-| Fecha de publicacion | 1 de septiembre de 2026 (ultima actualizacion: 28 de septiembre de 2026) |
+| Formato de pesos | no disponible (distribucion via libreria `structured-data-models`; el repo ocupa 2,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo: la model card se limita a presentarlo como un modelo fundacional tabular preentrenado para clasificacion y regresion. No se indican el tipo de red (transformer, MoE, hibrida u otra), el numero de parametros, la composicion del dataset de preentrenamiento, el volumen de tokens o filas utilizadas, ni si hubo fases de ajuste fino con tecnicas como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna del modelo (tipo de transformer, mecanismos de atencion sobre columnas y filas, ni estrategia de tokenizacion de valores tabulares). La model card unicamente lo describe como un modelo fundacional tabular preentrenado para clasificacion y regresion, y el uso previsto revela un esquema de aprendizaje en contexto: el modelo recibe un conjunto de contexto (`x_context`, `y_context`) y un conjunto de consulta (`x_query`), y devuelve probabilidades por clase.
 
-Lo que si se documenta es el mecanismo de uso: aprendizaje en contexto sobre datos tabulares. El modelo recibe un bloque de filas etiquetadas (`x_context`, `y_context`) y un bloque de filas sin etiquetar (`x_query`), y devuelve probabilidades de clase. La inferencia admite un parametro `num_estimators` (8 en el ejemplo oficial), lo que sugiere un esquema de agregacion de varios estimadores para estabilizar la prediccion. Los tipos de columna se gestionan mediante `sdm.infer_stypes`, con posibilidad de sobrescritura explicita (por ejemplo, forzar el target a `categorical`). Cualquier otro detalle tecnico de entrenamiento debe considerarse no disponible.
+Tampoco se publican datos sobre el volumen de tokens o tablas de entrenamiento, la composicion del corpus, ni si se emplearon tecnicas de ajuste como RLHF o DPO (poco probables en este dominio). Un parametro operativo relevante que si aparece es `num_estimators=8`, lo que sugiere un mecanismo de ensemble o de multiples pasadas internas durante la inferencia para estabilizar las predicciones. La inferencia se ejecuta con autocast a float16 en GPU, lo que indica soporte nativo para aceleracion en CUDA.
 
 ## Capacidades
 
-- Clasificacion tabular: genera probabilidades de clase para filas nuevas a partir de ejemplos etiquetados usados como contexto.
-- Regresion tabular: la model card indica que el modelo cubre tambien tareas de regresion, aunque el ejemplo publicado solo muestra clasificacion.
-- Aprendizaje en contexto (in-context learning): no requiere reentrenamiento por conjunto de datos; basta con aportar filas etiquetadas de contexto.
-- Agregacion de estimadores: el parametro `num_estimators` permite combinar varios estimadores en una misma llamada (8 en el ejemplo oficial).
-- Manejo de tipos de columna: soporte de tipos tabulares mediante `sdm.infer_stypes` y sobrescrituras por columna (`overrides={"target": "categorical"}`).
-- Integracion con el ecosistema Python de datos: conversion directa desde pandas mediante `sdm.TableTensor.from_pandas` y compatibilidad con datasets de scikit-learn.
-- Inferencia en GPU: los ejemplos usan `device="cuda"`.
-- No se declaran capacidades de generacion de texto, tool calling, function calling, uso agentico, vision, audio, ni soporte multilingue.
+- Clasificacion tabular: prediccion de probabilidades de clase para filas nuevas a partir de ejemplos etiquetados en contexto.
+- Regresion tabular: el modelo declara soporte para tareas de regresion, aunque el ejemplo publicado solo cubre clasificacion.
+- Aprendizaje en contexto: no requiere entrenamiento por conjunto de datos; basta con proporcionar filas etiquetadas como contexto.
+- Inferencia de tipos de columna: la libreria `sdm.infer_stypes` detecta tipos (numericos, categoricos) y permite sobrescrituras manuales (por ejemplo, forzar la columna objetivo a `categorical`).
+- Manejo de columnas heterogeneas: soporta tablas con mezcla de variables numericas y categoricas mediante `TableTensor`.
+- Ejecucion en GPU y CPU: el ejemplo selecciona CUDA si esta disponible y cae a CPU en caso contrario.
+- Precision mixta: soporte de float16 via `torch.amp.autocast` en CUDA.
+- Ensemble interno: el parametro `num_estimators` permite configurar el numero de estimadores por prediccion.
+- No disponible: soporte de tool calling, agentes, razonamiento multi-paso, vision, audio o capacidades multilingues; no aplican a un modelo tabular.
 
 ## Casos de uso
 
-- Scoring de riesgo crediticio: el modelo puede estimar probabilidades de impago usando un historico de solicitudes etiquetadas como contexto y aplicarlas a nuevas solicitudes, sin reentrenar un modelo especifico por cada producto financiero.
-- Deteccion de fraude en transacciones: clasificacion binaria sobre variables tabulares de operaciones (importe, comercio, hora, dispositivo), aportando como contexto un lote de transacciones etiquetadas por el equipo de riesgos.
-- Prediccion de abandono de clientes (churn): clasificacion de clientes en riesgo a partir de variables de uso, antiguedad y facturacion, con ejemplos historicos etiquetados como contexto para adaptar el modelo a cada cartera.
-- Valoracion y regresion de precios: tareas de regresion sobre datos estructurados, como estimar el precio de un inmueble a partir de superficie, ubicacion y caracteristicas, aportando ventas recientes como contexto.
-- Triaje clinico sobre datos tabulares: el ejemplo oficial usa el conjunto Breast Cancer de scikit-learn, lo que refleja un caso realista de apoyo a la clasificacion diagnostica a partir de variables de laboratorio.
-- Mantenimiento predictivo industrial: clasificacion de lecturas de sensores tabulares para anticipar fallos de maquinaria, usando un historico de eventos etiquetados como contexto por linea de produccion.
-- Enriquecimiento y anotacion de datos: uso del modelo para preetiquetar registros tabulares sin etiqueta antes de una revision humana, reduciendo el coste de anotacion en pipelines de datos.
-- Priorizacion comercial de leads: clasificacion de prospectos en CRM con variables demograficas y de comportamiento, con `num_estimators` elevado para obtener probabilidades mas estables en decisiones de negocio.
+- Scoring de riesgo crediticio: se proporcionan solicitudes historicas etiquetadas (concedido/impagado) como contexto y el modelo estima la probabilidad de impago de nuevas solicitudes, evitando reentrenar un modelo por cada producto financiero.
+- Deteccion de fraude en transacciones: con un lote de transacciones etiquetadas como contexto, el modelo puntua transacciones nuevas en tiempo casi real; el uso de float16 y un unico modelo simplifica el despliegue frente a pipelines de feature engineering y reentrenamiento.
+- Prediccion de churn en SaaS: a partir de registros de clientes con variables de uso, facturacion y antiguedad, se obtienen probabilidades de baja para priorizar acciones de retencion, actualizando el contexto con datos recientes sin reentrenar.
+- Triaje clinico sobre datos estructurados: con registros tabulares de pacientes etiquetados, el modelo estima probabilidades de clase para nuevos casos; la inferencia local en GPU permite mantener los datos dentro de la infraestructura del hospital.
+- Mantenimiento predictivo industrial: usando lecturas de sensores y etiquetas de fallo previo como contexto, el modelo clasifica el estado de nuevos equipos o estima la variable objetivo de regresion asociada al desgaste.
+- Prototipado rapido en ciencia de datos: para evaluar la viabilidad de un problema de clasificacion antes de invertir en ingenieria de caracteristicas, se lanza el modelo con unas pocas centenas de filas de contexto y se obtiene una linea base en minutos.
+- Clasificacion de leads en marketing: con historicos de conversion etiquetados, el modelo puntua leads entrantes por probabilidad de conversion, integrándose en un CRM mediante la API de Python de `sdm`.
+- Enriquecimiento de pipelines ETL: uso del modelo como paso de puntuacion dentro de un flujo de datos, aplicando `TableTensor.from_pandas` sobre lotes y escribiendo las probabilidades resultantes en la tabla de salida.
 
 ## Benchmarks y rendimiento
 
@@ -60,39 +56,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia indirecta, el repositorio ocupa 2,4 GB, por lo que los pesos ocuparian del orden de 2-3 GB en memoria; esto es una estimacion a partir del tamano del repositorio y no un dato confirmado por NVIDIA.
-- GPU recomendadas: no disponible. La model card solo indica ejecucion sobre CUDA; cualquier GPU NVIDIA con VRAM suficiente para los pesos y los lotes de contexto deberia ser valida.
-- Encaje en GPU de consumo: no confirmado. Bajo la estimacion anterior, una GPU de consumo con 8-16 GB de VRAM (por ejemplo, gama RTX xx60/xx70/xx80 o superior) podria alojar el modelo, pero no hay confirmacion oficial ni cifras de rendimiento.
-- Opciones de despliegue: la via documentada es la libreria `structured-data-models` (`pip install structured-data-models`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible. Los unicos parametros de rendimiento mencionados son el numero de estimadores (`num_estimators=8` en el ejemplo), que afecta al coste de computo, y el tamano del bloque de contexto (300 filas en el ejemplo), que tambien influye en el tiempo de inferencia.
+- VRAM estimada: no disponible de forma explicita; el repositorio de pesos ocupa 2,4 GB, por lo que en float16 la huella de pesos ronda los 2,4 GB y el consumo total dependera del tamano del contexto tabular y del numero de estimadores.
+- GPU recomendadas: no disponibles en la informacion proporcionada; el codigo usa CUDA de forma generica y no fija modelos concretos.
+- GPU de consumo: probablemente viable en tarjetas con 8 GB o mas de VRAM dado el tamano del repo, aunque esta estimacion no esta confirmada por el autor.
+- CPU: soportada como fallback (`torch.device("cpu")`), sin datos de latencia.
+- Opciones de despliegue: libreria oficial `structured-data-models` (`pip install structured-data-models`); no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se han encontrado datos comparativos verificables en la informacion proporcionada ni en los resultados de busqueda web, que devolvieron unicamente paginas corporativas genericas de NVIDIA sin relacion con el modelo.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kumo Tabular (nvidia) | no disponible | no disponible | OpenMDW 1.1 | Hugging Face: nvidia/Kumo-Tabular | no disponible |
-| Alternativas de la misma categoria (modelos fundacionales tabulares) | no disponible | no disponible | no disponible | no verificada en la busqueda | no disponible |
+| Kumo Tabular (NVIDIA) | Fundacional tabular (clasificacion/regresion) | no disponible | no disponible | OpenMDW 1.1 | Hugging Face + `structured-data-models` |
+| TabPFN | Fundacional tabular (in-context) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
+| XGBoost / LightGBM | Gradient boosting (entrenamiento por tarea) | no aplica | no aplica | licencias permisivas | ampliamente disponible |
+
+No se dispone de datos de rendimiento comparativo entre Kumo Tabular y estas alternativas en la informacion proporcionada; la comparacion se limita a categoria, licencia y forma de uso.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible verificar el rendimiento del modelo frente a alternativas ni frente a metodos clasicos como gradient boosting.
-- La model card no documenta arquitectura, parametros, datos de entrenamiento ni proceso de ajuste, lo que dificulta auditar su comportamiento.
-- Sesgos conocidos: no se declaran. Al tratarse de un modelo que aprende de los ejemplos de contexto, cualquier sesgo presente en las filas etiquetadas aportadas por el usuario puede propagarse a las predicciones.
-- Riesgo de predicciones mal calibradas fuera de la distribucion: si las filas de consulta difieren de las filas de contexto (cambio de dominio, variables nuevas, rangos no vistos), no hay garantias de comportamiento.
-- Limite de contexto no especificado: se desconoce el numero maximo de filas de contexto admitidas y como degrada el rendimiento al crecer el bloque.
-- Idiomas: no declarados. El concepto de idioma no aplica directamente a datos tabulares, pero tampoco se documenta el tratamiento de columnas de texto libre.
-- Licencia OpenMDW 1.1: es necesario revisar los terminos completos antes de un uso comercial. En la informacion proporcionada no se detallan las condiciones concretas de explotacion.
-- Dependencia de la libreria `structured-data-models` y de GPU CUDA: no se documenta una ruta de ejecucion en CPU ni una API alternativa.
-- Adopcion temprana: 0 descargas y 14 "likes" en el momento de la consulta, con fechas de publicacion muy recientes, lo que implica poca validacion independiente en produccion.
-- No apto para tareas de generacion de texto, agentes o tool calling: las capacidades declaradas se limitan a clasificacion y regresion tabular.
+- No se publican detalles de arquitectura, datos de entrenamiento ni evaluacion, lo que dificulta auditar sesgos o robustez del modelo.
+- Riesgo de predicciones poco calibradas fuera de la distribucion de los datos de contexto; al ser aprendizaje en contexto, la calidad depende criticamente de la representatividad y el tamano de los ejemplos etiquetados.
+- El ejemplo publicado usa 300 filas de contexto; se desconoce el limite maximo de filas o columnas soportado.
+- No hay informacion sobre sesgos demograficos o de otro tipo en datos tabulares, un riesgo relevante en aplicaciones de credito, seguros o salud.
+- La licencia OpenMDW 1.1 debe revisarse antes de uso comercial; las condiciones concretas no se detallan en la model card.
+- El modelo no es generativo ni conversacional: no debe emplearse para tareas de texto, codigo o agentes.
+- Dependencia de la libreria `structured-data-models` para la conversion de datos y la inferencia, lo que anade una dependencia de software especifica de NVIDIA.
+- No se especifican garantias de soporte, versionado de pesos ni compatibilidad con otras herramientas del ecosistema tabular.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/Kumo-Tabular
-- Repositorio de la libreria de inferencia: https://github.com/NVIDIA/structured-data-models
-- Instalacion: `pip install structured-data-models`
-- Pagina corporativa de NVIDIA (resultado de busqueda generico, sin informacion especifica del modelo): https://www.nvidia.com/
-- Entrada de NVIDIA en Wikipedia (resultado de busqueda generico): https://en.wikipedia.org/wiki/Nvidia
-- Paper, blog tecnico o demo especificos del modelo: no disponibles en la informacion proporcionada.
+- Repositorio de inferencia: https://github.com/NVIDIA/structured-data-models
+- Sitio de NVIDIA: https://www.nvidia.com/
+- Pagina de NVIDIA en Wikipedia: https://en.wikipedia.org/wiki/Nvidia

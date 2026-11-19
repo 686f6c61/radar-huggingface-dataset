@@ -46,29 +46,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Models compatible with the timm library - Hugging Face",
-      "url": "https://huggingface.co/models?library=timm",
-      "snippet": "Models · MahmoodLab/UNI2-h · MahmoodLab/CONCH · MahmoodLab/UNI · timm/mobilenetv3_small_100.lamb_in1k · paige-ai/Virchow2 · animetimm/convnextv2_huge.dbv4-full."
-    },
-    {
-      "title": "Top 10 most popular LLM models on Hugging Face - Cloudsmith",
-      "url": "https://cloudsmith.com/blog/top-10-most-popular-llm-models-on-hugging-face",
-      "snippet": "02.02.2026 ... ... AI licensing and governance for enterprise production ... Source: timm/mobilenetv3_small_100.lamb_in1k; Classification: Image ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=downloads&search=mobile",
-      "snippet": "Models · timm/mobilenetv3_small_100.lamb_in1k · google/mobilebert-uncased · PaddlePaddle/en_PP-OCRv5_mobile_rec · unsloth/gemma-4-E2B-it-qat-mobile-GGUF · timm/ ..."
-    },
-    {
-      "title": "Image Classification Models - Hugging Face",
-      "url": "https://huggingface.co/models?pipeline_tag=image-classification&sort=downloads",
-      "snippet": "Models · timm/mobilenetv3_small_100.lamb_in1k · timm/efficientnet_b3.ra2_in1k · google/vit-base-patch16-224 · Falconsai/nsfw_image_detection · timm/resnet50.a1_in1k."
-    },
-    {
-      "title": "Top 10 AI Models of 2025: The Most Downloaded on HuggingFace",
-      "url": "https://www.analyticsvidhya.com/blog/2025/11/top-open-source-models-on-huggingface/",
-      "snippet": "14.11.2025 ... HuggingFace Link: https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k. 7. Laion CLAP. clap fused. Category: Multimodal (Audio to ..."
+      "title": "mobilenetv3_small_100.lamb_in1k huggingface.co api & timm ...",
+      "url": "https://www.toolify.ai/ai-model/timm-mobilenetv3-small-100-lamb-in1k",
+      "snippet": "mobilenetv3_small_100.lamb_in1k huggingface.co Url & timm mobilenetv3_small_100.lamb_in1k github link, click to try the AI model(mobilenetv3_small_100.lamb_in1k) demo, you can see the example of mobilenetv3_small_100.lamb_in1k huggingface.co Model."
     }
   ]
 }

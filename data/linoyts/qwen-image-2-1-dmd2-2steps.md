@@ -2,109 +2,88 @@
 
 ## Resumen
 
-Qwen-Image-2.1-DMD2-2steps es un adaptador LoRA de destilación publicado por Linoy Tsaban (linoyts) sobre el modelo de difusión Qwen/Qwen-Image-2.1. Su función es convertir el muestreo de 20 pasos del modelo base en una ejecución de 2 pasos (2 evaluaciones del modelo, NFE) sin renunciar a la edición por instrucciones ni a la generación texto-imagen. El adaptador se entrena con DMD2 (Distribution Matching Distillation 2), una técnica de destilación on-policy que iguala la distribución del estudiante con la del profesor sin recurrir a pérdidas de regresión ni a un discriminador GAN.
+Qwen-Image-2.1-DMD2-2steps es un adaptador LoRA de destilación para el modelo de difusión Qwen-Image-2.1, desarrollado por el usuario linoyts y publicado en Hugging Face. Su función es reducir el coste computacional de la inferencia: transforma el muestreo de 20 pasos del modelo base en una ejecución de solo 2 pasos, manteniendo una calidad de edición por instrucciones y de generación texto-a-imagen cercana a la del profesor completo. Está pensado para pipelines interactivos y en tiempo real donde la latencia importa.
 
-El interés práctico está en la latencia: pasar de 20 pasos con guidance a 2 pasos sin CFG reduce en un orden de magnitud el número de pasadas por el transformer de difusión, lo que habilita bucles interactivos de edición y generación en tiempo real. El LoRA es de rango 32 y solo adapta las proyecciones de atención (to_q, to_k, to_v, to_out.0), una decisión de diseño que, según la model card, preserva mejor la fidelidad al image de entrada que adaptar también los bloques feed-forward.
+El adaptador se entrena con DMD2 (Distribution Matching Distillation), una técnica de destilación on-policy que no requiere pérdidas de regresión ni GAN, y que incorpora la guía CFG del profesor directamente en el estudiante. La LoRA es de rango 32, con alpha 32, y solo adapta las proyecciones de atención (`to_q`, `to_k`, `to_v`, `to_out.0`), lo que preserva mejor la fidelidad al condicionamiento en tareas de edición.
 
-El repositorio es muy ligero (0,1 GB) porque contiene únicamente los pesos del adaptador, no el modelo base. Está sujeto a la Qwen Research License: uso exclusivo de investigación y evaluación, con prohibición de uso comercial sin licencia separada de Qwen. El pipeline requerido (QwenImage21Pipeline) solo está disponible en la rama de desarrollo de diffusers en el momento de la publicación.
+Es relevante ahora porque el modelo base Qwen-Image-2.1 es un sistema de difusión de última generación para edición multi-referencia y texto-a-imagen, y esta LoRA permite desplegarlo con un coste de inferencia drásticamente menor. El adaptador pesa 0,2 GB y se carga sobre el pipeline `QwenImage21Pipeline` de diffusers.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre un transformer de difusión; arquitectura del modelo base Qwen-Image-2.1 no disponible en la informacion |
-| Parametros totales | no disponible (LoRA de rango 32 sobre to_q, to_k, to_v y to_out.0; repositorio de 0,1 GB) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica / no disponible (modelo de difusion; el limite practico lo fija el text encoder del modelo base) |
-| Tipos de cuantizacion | no disponible; el ejemplo oficial carga el modelo base en bfloat16 y el LoRA en safetensors. No se documentan variantes GGUF, NF4 ni INT8 para este adaptador |
-| Idiomas soportados | no disponible (los prompts se procesan con el text encoder de Qwen-Image-2.1) |
-| Licencia | qwen-research (Qwen Research License): solo investigacion y evaluacion, no comercial |
-| Formato de pesos | safetensors (pytorch_lora_weights.safetensors) |
-| Pasos de inferencia | 2 pasos, sigmas fijas [1.0, 0.5] |
-| Escala CFG en inferencia | true_cfg_scale = 1.0 (sin CFG; el guidance del profesor esta destilado) |
-| Rango / alpha del LoRA | 32 / 32 |
-| Modulos adaptados | to_q, to_k, to_v, to_out.0 (solo atencion) |
-| Scheduler | FlowMatchEulerDiscreteScheduler con use_dynamic_shifting=False, shift=1.0, shift_terminal=None |
-| Resolucion de entrenamiento | multi-aspect, ~1 MP |
-| Descargas / likes | 138 / 14 |
-| Fecha de publicacion | 2026-10-23 |
+| Arquitectura | LoRA de destilación sobre modelo de difusión Qwen-Image-2.1 (atención adaptada: `to_q`, `to_k`, `to_v`, `to_out.0`) |
+| Parámetros totales | no disponible (adaptador LoRA de rango 32, alpha 32; tamaño de repo 0,2 GB) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (condicionamiento por prompt de texto e imágenes) |
+| Tipos de cuantización | no disponible (pesos en safetensors, presumiblemente bf16/fp32; no se especifican cuantizaciones) |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-research (Qwen Research License): solo uso no comercial, investigación y evaluación |
+| Formato de pesos | safetensors (`pytorch_lora_weights.safetensors`, `pytorch_lora_weights_v1_5.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Qwen-Image-2.1, un modelo de difusion para generacion y edicion de imagenes cuyo detalle interno (numero de parametros, tipo de backbone, dimension del text encoder) no se especifica en la informacion disponible. Lo que sí se documenta es el esquema de destilacion: DMD2 con correspondencia de distribuciones on-policy, sin pérdida de regresion ni pérdida adversarial, y con el guidance CFG del profesor inyectado en el estudiante. El resultado es un estudiante que necesita una sola pasada condicional por paso, de ahí que la inferencia se ejecute con true_cfg_scale=1.0.
+El modelo base Qwen-Image-2.1 es un modelo de difusión (probablemente basado en transformer, aunque la model card no detalla la arquitectura interna del backbone) que acepta una lista de imágenes de condición —referidas como "Picture 1", "Picture 2", etc.— y un prompt de texto. La LoRA adapta únicamente las proyecciones de atención, manteniendo intactos los bloques feed-forward, decisión que según el autor mejora la fidelidad al condicionamiento y la preservación de la imagen de entrada en edición.
 
-El entrenamiento se realizo en 2000 pasos sobre una unica NVIDIA H100, con resoluciones multi-aspect alrededor de 1 MP, y con un calendario de sigmas fijo de [1.0, 0.5]. Ese detalle es operativamente importante: como el LoRA se entreno con nodos fijos, el scheduler debe configurarse con use_dynamic_shifting=False y shift=1.0 para que los nodos se usen tal cual y no se reescalen segun la resolucion. La adaptacion se limita a las proyecciones de atencion con rango 32 y alpha 32, lo que reduce el numero de pesos entrenables y, segun el autor, mantiene alta la fidelidad al image de condicionamiento en tareas de edicion.
+El entrenamiento se realizó con DMD2 (on-policy distribution matching, sin pérdidas de regresión ni GAN), usando la guía CFG del profesor. Se entrenó en resolución multi-aspecto (~1 MP) durante 2000 pasos en una única GPU H100. El resultado es un estudiante que ejecuta 2 pasos con sigmas fijas `[1.0, 0.5]` y `true_cfg_scale=1.0`, es decir, sin CFG en inferencia, porque la guía del profesor está incorporada en el estudiante. La versión V1.5 (publicada el 2026-10-30) mejora la adherencia al prompt y la fidelidad de edición.
 
 ## Capacidades
 
-- Generacion texto-imagen en 2 pasos: acepta un prompt de texto y produce una imagen con el scheduler y las sigmas indicadas.
-- Edicion de imagen por instrucciones en 2 pasos: transformaciones guiadas por prompt sobre una imagen de entrada (el autor documenta ejemplos de sketch-to-photo, cambio de peinado, cambio de expresion y restauracion fotografica).
-- Composicion multi-referencia: el pipeline acepta una lista de imagenes de condicionamiento referidas en el prompt como "Picture 1", "Picture 2", etc. (por ejemplo, colocar el gato de la Picture 1 en la playa de la Picture 2).
-- Preservacion de la fidelidad al image de entrada: la adaptacion solo en atencion mantiene mejor la identidad y la estructura del original que una adaptacion que incluya los bloques feed-forward.
-- Destilacion con guidance integrado: no requiere CFG en inferencia, lo que elimina la segunda pasada por paso.
-- Compatibilidad con el ecosistema diffusers: se carga con load_lora_weights y se puede descargar o intercambiar como cualquier adaptador.
-- No soporta, segun la informacion disponible: tool calling, agentes, razonamiento multi-paso textual, audio ni video. Es exclusivamente un adaptador de imagen.
+- Generación texto-a-imagen con 2 pasos de inferencia.
+- Edición de imagen por instrucciones (image-to-image): conversión de bocetos a foto, cambio de peinado, expresión facial, restauración fotográfica, estilización (p. ej., claymation).
+- Composición multi-referencia: acepta una lista de imágenes de condición y el prompt las referencia por posición ("Place the cat from Picture 1 on the beach from Picture 2").
+- Inferencia sin CFG (`true_cfg_scale=1.0`), lo que reduce el coste por paso a una sola pasada condicional.
+- Compatibilidad con `QwenImage21Pipeline` de diffusers (rama dev con soporte para Qwen-Image-2.1).
+- No se documentan capacidades de tool calling, agentes, audio ni visión más allá del condicionamiento por imagen propio del modelo de difusión.
 
 ## Casos de uso
 
-- Edicion interactiva en tiempo real: con 2 evaluaciones del transformer por imagen, el adaptador permite bucles de edicion tipo lienzo en los que el usuario modifica el prompt o el trazo y obtiene el resultado sin esperas de decenas de pasos.
-- Restauracion fotografica en lote: el caso documentado por el autor (restauracion de fotos) se puede aplicar a colas de digitalizacion donde el coste por imagen en pasos es el factor limitante.
-- Exploracion rapida de prompts en herramientas de diseno: generar decenas de variaciones de un mismo concepto para elegir direccion creativa antes de lanzar una tirada final con el modelo base a 20 pasos.
-- Composicion de producto con multiples referencias: combinar una imagen de producto (Picture 1) con una escena de fondo (Picture 2) para previsualizaciones de catalogo o mockups.
-- Previsualizacion en estudios de personaje: probar cambios de peinado o expresion sobre un retrato de referencia antes de una iteracion de mayor calidad.
-- Prototipado de pipelines de edicion instructiva: validar la logica de una aplicacion (UI, cola de trabajos, gestion de imagenes) con latencia baja antes de invertir en el modelo completo.
-- Investigacion sobre destilacion de difusion: usar el adaptador como estudiante de referencia para comparar DMD2 frente a otros esquemas de aceleracion few-step en tareas de edicion.
-- Generacion de variaciones para pruebas A/B: producir rapidamente conjuntos de imagenes con la misma semilla y distintos prompts para evaluacion humana.
+- Edición interactiva en tiempo real: con 2 pasos en lugar de 20, la latencia se reduce aproximadamente un orden de magnitud, lo que permite ajustes visuales iterativos con retroalimentación inmediata en herramientas de diseño.
+- Prototipado rápido de estilización: aplicar transformaciones como "claymation", acuarela o render 3D sobre imágenes de entrada y previsualizar resultados sin esperar el muestreo completo del profesor.
+- Restauración fotográfica en lote: procesar grandes volúmenes de imágenes antiguas o dañadas con un coste por imagen mucho menor, adecuado para pipelines de digitalización de archivos.
+- Composición multi-referencia para marketing: combinar productos y escenarios a partir de varias imágenes de condición (p. ej., colocar un objeto de la Picture 1 en un fondo de la Picture 2) para generar variaciones de anuncios.
+- Generación texto-a-imagen en aplicaciones móviles o de borde: al requerir solo 2 pasos y una LoRA de 0,2 GB, es viable en entornos con recursos limitados, siempre que se respete la licencia de investigación.
+- Investigación en destilación de modelos de difusión: sirve como referencia reproducible de DMD2 con adaptación solo en atención y sigmas fijas, útil para estudiar el equilibrio entre pasos, fidelidad y preservación de la entrada.
+- Pruebas A/B de prompts y ediciones: la baja latencia permite evaluar muchas variaciones de prompt y semilla en poco tiempo durante el desarrollo de producto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, ImageReward, HPSv2 u otros) en la informacion disponible. La model card unicamente aporta una comparacion cualitativa mediante una rejilla de imagenes (assets/edit_space_examples.png) en la que se contrasta este LoRA a 2 pasos con el modelo base a 20 pasos, usando la misma entrada, prompt y semilla, en cuatro tareas de edicion. No se dispone de numeros para reproducir esa comparacion.
-
-| Metrica | Este LoRA (2 pasos) | Qwen-Image-2.1 (20 pasos) |
-|---|---|---|
-| Evaluacion cuantitativa (FID, CLIP, ImageReward) | no disponible | no disponible |
-| Comparacion cualitativa de edicion | incluida en la model card (columna central) | incluida en la model card (columna derecha) |
-| Pasadas por imagen (NFE) | 2 | 20 (mas las pasadas adicionales de CFG) |
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye una comparación visual cualitativa (2 pasos frente a 20 pasos del modelo base) en `assets/edit_space_examples.png`, pero no reporta métricas numéricas (FID, CLIP score, etc.).
 
 ## Requisitos de hardware
 
-- VRAM de inferencia: no disponible de forma explicita. El consumo lo domina el modelo base Qwen-Image-2.1, que se carga en bfloat16 en el ejemplo oficial; el adaptador en si ocupa 0,1 GB.
-- GPU de entrenamiento documentada: una unica NVIDIA H100 para 2000 pasos de DMD2 a ~1 MP.
-- GPU recomendadas para inferencia: no disponibles en la informacion. La ganancia del adaptador es de computo (2 pasadas frente a 20), no de huella de memoria: el transformer completo sigue residiendo en VRAM.
-- Ajuste en GPU de consumo: no se puede confirmar con los datos aportados, ya que no se indica el tamano del modelo base ni su huella en memoria. El adaptador no reduce los requisitos de VRAM del modelo base, solo el numero de pasadas.
-- Opciones de despliegue: diffusers con QwenImage21Pipeline, que requiere instalar la rama de desarrollo (`pip install "git+https://github.com/huggingface/diffusers.git@qwenimage21-lora-training"`); en el momento de la publicacion no estaba en PyPI. No se documentan rutas de despliegue alternativas (vLLM, TGI, llama.cpp, Ollama, ComfyUI) para este adaptador.
-- Latencia y throughput: no disponibles como cifras absolutas. La relacion derivada de la configuracion es de 2 pasadas sin CFG por imagen frente a 20 pasos con CFG en el modelo base, es decir, una reduccion de un orden de magnitud en el numero de evaluaciones del transformer.
+- VRAM estimada: no disponible de forma explícita; depende del modelo base Qwen-Image-2.1 (no documentado en la información proporcionada) más el adaptador LoRA de 0,2 GB. El adaptador en sí es ligero.
+- GPU recomendadas: el entrenamiento se realizó en una única NVIDIA H100; para inferencia se recomienda una GPU con suficiente VRAM para el modelo base en bfloat16 (A100, H100 o superiores).
+- GPU de consumo: no se confirma que quepa en GPU de consumo; depende del tamaño del modelo base, no especificado.
+- Despliegue: `diffusers` (rama dev con soporte Qwen-Image-2.1), pipeline `QwenImage21Pipeline`, scheduler `FlowMatchEulerDiscreteScheduler` con `use_dynamic_shifting=False`, `shift=1.0`, `shift_terminal=None`.
+- Latencia y throughput: no se proporcionan cifras; la ventaja principal es la reducción de 20 pasos a 2 pasos por generación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Pasos de inferencia | CFG en inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| linoyts/Qwen-Image-2.1-DMD2-2steps | LoRA de destilacion DMD2 sobre Qwen-Image-2.1 | 2 | No (true_cfg_scale=1.0) | qwen-research (no comercial) | Hugging Face, diffusers dev |
-| Qwen/Qwen-Image-2.1 (modelo base) | Modelo de difusion completo | 20 | Si | qwen-research (no comercial) | Hugging Face, diffusers dev |
-| Otros aceleradores few-step para Qwen-Image-2.1 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen-Image-2.1-DMD2-2steps (esta LoRA) | LoRA de destilación DMD2 sobre Qwen-Image-2.1 | 2 | No (`true_cfg_scale=1.0`) | qwen-research (no comercial) | Hugging Face, diffusers dev |
+| Qwen-Image-2.1 (base) | Modelo de difusión completo | 20 | Sí | qwen-research | Hugging Face |
+| Otras LoRAs de destilación few-step para Qwen-Image | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La informacion proporcionada no incluye datos de otros adaptadores de destilacion comparables (por ejemplo, variantes LCM, Turbo o Lightning para esta misma familia), por lo que la comparativa se limita al modelo base. Tampoco se dispone de cifras de calidad que permitan cuantificar la perdida respecto al profesor a 20 pasos.
+No se dispone de información sobre alternativas comparables de otros autores en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no comercial: se trata de una obra derivada de Qwen-Image-2.1 y queda sujeta a la Qwen Research License. El uso comercial requiere una licencia separada de Qwen; no se puede desplegar en produccion comercial sin ese acuerdo.
-- Dependencia de una rama de desarrollo: el pipeline QwenImage21Pipeline no estaba en PyPI en el momento de la publicacion; la instalacion desde Git implica riesgo de cambios incompatibles y de reproducibilidad a medio plazo.
-- Calendario de sigmas fijo: usar sigmas distintas de [1.0, 0.5] o dejar el shifting dinamico activado degrada el resultado, porque el LoRA se entreno con esos nodos exactos.
-- Sin CFG: no se debe subir true_cfg_scale esperando mejoras; la guia del profesor ya esta destilada en el estudiante y el adaptador esta pensado para una sola pasada condicional.
-- Pérdida de calidad no cuantificada: la model card afirma que la calidad se mantiene "cercana" al profesor de 20 pasos, pero no aporta metricas; en ediciones finas o texto dentro de la imagen el estudiante de 2 pasos puede degradar detalles.
-- Alcance limitado a imagen: no hay soporte de tool calling, agentes, razonamiento textual ni otras modalidades.
-- Idiomas: no se documenta que lenguajes de prompt estan cubiertos; la cobertura dependera del text encoder del modelo base, sin datos publicados.
-- Sesgos y alucinacion visual: no se aporta ninguna evaluacion de sesgos, y como todo modelo de difusion puede generar contenido facticamente incorrecto o no solicitado, especialmente en composiciones multi-referencia con muchas imagenes de condicionamiento.
-- Versionado: el autor etiqueta el adaptador como V1; pueden aparecer revisiones con comportamiento distinto bajo el mismo repositorio, por lo que conviene fijar el commit o la revision al integrarlo.
-- Reproducibilidad: los ejemplos usan semilla fija y un Generator de CUDA, pero no se documentan versiones exactas de torch ni de diffusers mas alla de la rama indicada.
+- Licencia qwen-research: uso exclusivamente no comercial, de investigación y evaluación. El uso comercial requiere una licencia separada de Qwen (Hangzhou Tongyi Laboratory Technology Co., Ltd.).
+- Al ser un trabajo derivado de Qwen-Image-2.1, hereda todas las restricciones de la licencia del modelo base.
+- La destilación a 2 pasos puede degradar la calidad frente al profesor de 20 pasos en casos complejos; la model card solo ofrece comparación visual, sin métricas.
+- Requiere sigmas fijas `[1.0, 0.5]` y `use_dynamic_shifting=False`; usar otra configuración del scheduler puede romper la calidad.
+- No usa CFG en inferencia, por lo que no se puede ajustar la fuerza de la guía en tiempo de ejecución como en el modelo base.
+- Depende de una versión de diffusers no publicada en PyPI (rama dev `qwenimage21-lora-training`), lo que complica la reproducibilidad en producción.
+- Idiomas soportados no documentados; el comportamiento multilingüe del prompt depende del modelo base.
+- Riesgo de sesgos y alucinaciones visuales inherente al modelo base, no cuantificado en la información disponible.
+- No se documentan limitaciones específicas de resolución más allá de ~1 MP en entrenamiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/linoyts/Qwen-Image-2.1-DMD2-2steps
+- Hugging Face: https://huggingface.co/linoyts/Qwen-Image-2.1-DMD2-2steps
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
-- Coleccion "Qwen Image 2.1 Realtime" del autor: https://huggingface.co/collections/linoyts/qwen-image-21-realtime
-- Perfil del autor: https://huggingface.co/linoyts
-- diffusers (rama con soporte Qwen-Image-2.1): https://github.com/huggingface/diffusers/tree/qwenimage21-lora-training
-- Listado de adaptadores sobre Qwen-Image-2.1: https://huggingface.co/models?other=base_model%3Aadapter%3AQwen%2FQwen-Image-2.1
-- Listado de modelos etiquetados como distillation: https://huggingface.co/models?other=distillation
+- Repositorio diffusers (rama dev): https://github.com/huggingface/diffusers/tree/qwenimage21-lora-training
+- Comparación visual 2 pasos vs 20 pasos: `assets/edit_space_examples.png` (en el repositorio del modelo)

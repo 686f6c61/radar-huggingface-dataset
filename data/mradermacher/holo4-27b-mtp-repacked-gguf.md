@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Holo4-27B-MTP-Repacked-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF generadas por el usuario mradermacher a partir del modelo base Holo4-27B-MTP-Repacked, publicado por prithivMLmods. El repositorio no aporta informacion propia sobre arquitectura, entrenamiento o capacidades: se limita a ofrecer los pesos convertidos a distintos niveles de cuantizacion para su uso con motores de inferencia compatibles con GGUF (llama.cpp, Ollama, entre otros).
+Holo4-27B-MTP-Repacked-GGUF es una cuantización estática en formato GGUF del modelo Holo4-27B-MTP-Repacked, publicado por el cuantizador mradermacher. El modelo base, desarrollado por prithivMLmods, es un transformer multimodal de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) orientado a tareas de agente, computer-use y razonamiento multimodal. Esta versión GGUF permite ejecutar el modelo en infraestructura de consumo mediante llama.cpp y motores compatibles, algo inviable con los pesos originales en precisión completa.
 
-El nombre del modelo sugiere un tamano nominal de 27B y la presencia de MTP (multi-token prediction), pero estos datos no se confirman en la informacion disponible. El unico dato numerico verificable es el recuento de parametros en safetensors del repositorio, 460.730.096, que no concuerda con la denominacion "27B" y que debe interpretarse con cautela. El repositorio ocupa 57,3 GB y contiene 11 variantes de cuantizacion.
+La relevancia de esta ficha radica en que agrupa en un único repositorio un conjunto amplio de cuantizaciones (desde Q2_K de 11,0 GB hasta Q8_0 de 29,1 GB), además de los ficheros mmproj necesarios para el procesamiento multimodal. El modelo base se asocia al linaje qwen3_5 según las etiquetas del autor, e incorpora la etiqueta mtp (multi-token prediction), lo que sugiere un mecanismo de decodificación especulativa orientado a mejorar el throughput.
 
-La relevancia de esta ficha es practica: permite a desarrolladores saber que variantes existen, que formatos estan disponibles y que limitaciones documentales presenta el repositorio antes de descargar decenas de gigabytes. No se dispone de pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
+La licencia es cc-by-nc-4.0, es decir, no permite uso comercial. El repositorio acumula 2.561 descargas y un tamaño total de 190,8 GB, lo que refleja la inclusión de todos los ficheros de cuantización en un mismo espacio. La información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada; los apartados correspondientes lo indican de forma explícita.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 460.730.096 (segun safetensors del repo); el nombre indica 27B, dato no confirmado |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (etiqueta qwen3_5), con mecanismo MTP (multi-token prediction) |
+| Parametros totales | 27.320.697.856 (27,3 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); repo de 57,3 GB |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés, según la model card) |
+| Licencia | cc-by-nc-4.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); mmproj separado para multimodal |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. El nombre incluye el sufijo MTP, que en la literatura reciente se asocia a multi-token prediction, una tecnica de entrenamiento en la que el modelo predice varios tokens futuros por paso para mejorar la eficiencia de muestreo y, en algunos casos, la calidad. No obstante, la informacion proporcionada no confirma esta interpretacion ni detalla si el modelo usa transformer denso, mezcla de expertos o una arquitectura hibrida.
+El modelo base es un transformer multimodal de 27,3 mil millones de parámetros. Las etiquetas del repositorio indican linaje qwen3_5 y la presencia de MTP (multi-token prediction), un mecanismo que predice varios tokens por paso y que suele emplearse para decodificación especulativa o para acelerar la generación. La etiqueta multimodal se materializa en los ficheros mmproj (Q8_0 de 0,7 GB y f16 de 1,0 GB), que aportan la torre de visión necesaria para el procesamiento de imágenes.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron fases de RLHF, DPO o ajuste por instrucciones. El repositorio es exclusivamente de redistribucion: el autor de las cuantizaciones remite al modelo original de prithivMLmods, que seria la fuente adecuada para consultar la ficha tecnica completa.
+No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla la innovación técnica concreta del mecanismo MTP más allá de su denominación. Todo ello debe considerarse no disponible a partir de la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada en la informacion disponible, aunque es la funcion esperada de un modelo de lenguaje de este tipo.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas en el repositorio.
-- Capacidades especiales (modo thinking, vision, audio): no disponible. El sufijo MTP sugiere prediccion multi-token, pero no se confirma.
-- Compatibilidad de despliegue: al estar en GGUF, es compatible con motores que lean este formato, como llama.cpp, Ollama o servidores derivados.
+- Generación de texto conversacional en inglés, según la etiqueta conversational del repositorio.
+- Procesamiento multimodal: los ficheros mmproj permiten integrar entrada de imágenes junto con texto.
+- Orientación a computer-use: el modelo está etiquetado para tareas de interacción con interfaces y entornos de escritorio.
+- Soporte de agentes: la etiqueta agent sugiere capacidad para razonamiento multi-paso y ejecución de tareas encadenadas.
+- Compatibilidad con text-generation-inference y llama-cpp, según las etiquetas del repositorio.
+- Decodificación con multi-token prediction (MTP), orientada a mejorar la velocidad de generación.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Despliegue en CPU o GPU de gama media: las variantes Q4_K_M y Q5_K_M permiten ejecutar el modelo en equipos con recursos limitados usando llama.cpp u Ollama, sin necesidad de infraestructura de datacenter.
-- Prototipado rapido en local: la variante Q2_K o IQ4_XS reduce el espacio en disco y la memoria necesaria para pruebas iniciales antes de escalar a cuantizaciones mayores.
-- Evaluacion comparativa de cuantizaciones: al ofrecer 11 variantes, el repositorio sirve para medir la perdida de calidad entre f16, Q8_0 y cuantizaciones agresivas sobre el mismo modelo base.
-- Integracion en aplicaciones de escritorio: un GGUF cuantizado puede embeberse en herramientas de escritorio o plugins que usen llama.cpp como backend de inferencia local.
-- Servicio de inferencia en edge: variantes de baja precision como Q3_K_S o Q2_K permiten desplegar el modelo en dispositivos con memoria limitada, siempre que la calidad resultante sea aceptable para la tarea.
-- Pipeline de evaluacion interna: antes de adoptar el modelo base, un equipo puede descargar una cuantizacion media y ejecutar sus propios benchmarks de dominio sin depender de los resultados publicados por terceros.
+- Agentes de automatización de escritorio: el modelo está etiquetado como computer-use, por lo que puede emplearse para interpretar capturas de pantalla y decidir acciones sobre interfaces gráficas en flujos de automatización de tareas repetitivas.
+- Asistentes multimodales locales: gracias a los ficheros mmproj y a las cuantizaciones Q4_K_M (16,9 GB) o Q5_K_M (19,6 GB), es posible desplegar un asistente que describa imágenes o responda preguntas sobre documentos escaneados en hardware de gama alta de consumo.
+- Prototipado de agentes multi-paso en investigación: la combinación de etiqueta agent y MTP permite experimentar con planificación y ejecución de subtareas en entornos controlados, con la ventaja de ejecutar el modelo en local mediante llama.cpp.
+- Evaluación de razonamiento multimodal en entornos sin conectividad: al ser un GGUF ejecutable offline, resulta adecuado para pruebas en máquinas aisladas donde no se puede recurrir a APIs en la nube.
+- Generación de código asistida en pipelines internos: aunque no hay confirmación explícita de rendimiento en código, el tamaño de 27B y el contexto conversacional permiten integrarlo en asistentes de desarrollo siempre que el uso sea no comercial por la licencia.
+- Investigación sobre decodificación especulativa: el mecanismo MTP del modelo base lo convierte en un banco de pruebas para estudiar el impacto del multi-token prediction en latencia y calidad frente a decodificación autoregresiva estándar.
+- Despliegue en estaciones de trabajo con GPU única: las cuantizaciones Q3_K_M (13,6 GB) y Q4_K_S (15,9 GB) caben en GPUs de 16-24 GB de VRAM, lo que facilita entornos de desarrollo con una sola tarjeta.
 
 ## Benchmarks y rendimiento
 
@@ -53,28 +53,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma fiable, ya que el recuento de parametros del repositorio (460,7 M) no concuerda con la denominacion 27B. Si el modelo tuviera realmente 27B, una cuantizacion Q4_K_M requeriria del orden de 16-18 GB de memoria, y una Q8_0 en torno a 28-30 GB; estas cifras son estimaciones generales por tamano, no datos del repositorio.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: no confirmada; dependeria del tamano real del modelo. Con 27B y cuantizacion Q4, seria viable en GPUs con 24 GB de VRAM, pero este dato no esta verificado.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF. vLLM y TGI no se confirman para este formato concreto.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia según cuantización: Q2_K ~11,0 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. Añadir ~0,7-1,0 GB si se usa el mmproj multimodal.
+- GPU recomendadas: para Q8_0, A100 40 GB o H100; para Q4_K_M y Q5_K_M, RTX 4090 (24 GB) o A6000 (48 GB) con margen; para Q3_K_M e inferiores, RTX 4080/4090 o GPUs de 16 GB.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q4_K_M, Q5_K_M o Q6_K; en RTX 4080 (16 GB) con Q3_K_M o Q4_K_S ajustando el contexto; en GPUs de 12 GB solo con Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, text-generation-inference (según etiqueta del repositorio) y otros motores compatibles con GGUF.
+- Latencia y throughput estimados: no disponibles; dependen del hardware, del contexto y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no identifica el modelo base con suficiente detalle ni ofrece datos de rendimiento que permitan una comparacion rigurosa con alternativas de la misma categoria.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Holo4-27B-MTP-Repacked-GGUF | 27,3B | no disponible | cc-by-nc-4.0 | GGUF | Multimodal, computer-use, MTP |
+| Qwen2.5-32B-Instruct (referencia de linaje) | 32,5B | 131.072 | Apache 2.0 | safetensors, GGUF | Sin multimodal nativo; licencia permisiva |
+| Gemma 2 27B | 27B | 8.192 | Gemma license | safetensors, GGUF | Sin multimodal; licencia con restricciones |
+| Llama 3.3 70B | 70B | 131.072 | Llama 3.3 license | safetensors, GGUF | Mayor tamaño; requiere más VRAM |
+
+La comparativa se ofrece como referencia de categoría; no se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa directa.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en el repositorio; no se puede asumir uso comercial sin consultar la licencia del modelo original de prithivMLmods.
-- No se declaran idiomas soportados, por lo que el comportamiento multilingue es desconocido.
-- El recuento de parametros en safetensors (460.730.096) contradice la denominacion "27B" del nombre; conviene verificar el modelo base antes de planificar recursos.
-- Al ser una redistribucion de cuantizaciones, no hay garantia documental sobre el entrenamiento, los datos o las evaluaciones del modelo original.
-- Las cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar la calidad de forma notable en tareas de razonamiento o codigo; no se han publicado mediciones al respecto.
-- Riesgo de alucinacion y sesgos: no evaluado en la informacion disponible.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- No se confirma soporte de tool calling ni de modos de razonamiento extendido, pese a que el sufijo MTP podria sugerir capacidades adicionales.
+- Licencia cc-by-nc-4.0: prohíbe el uso comercial. Cualquier despliegue en producto o servicio de pago requiere autorización expresa del titular.
+- Idioma: la model card solo declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual; en tareas de agente y computer-use, una alucinación puede traducirse en acciones erróneas sobre el sistema.
+- Contexto: la longitud de contexto no está documentada, lo que impide planificar despliegues con ventanas largas sin verificación empírica.
+- Cuantizaciones agresivas: Q2_K y Q3_K_S degradan la calidad; para producción se recomienda Q4_K_M o superior.
+- Multimodal: requiere cargar el fichero mmproj correspondiente; sin él, el modelo funciona solo con texto.
+- Información de entrenamiento ausente: se desconoce la composición del dataset y los procesos de alineación, lo que dificulta evaluar sesgos.
+- Repositorio de cuantización: el autor es un tercero (mradermacher), no el desarrollador original; los problemas de calidad deben contrastarse con el modelo base.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-GGUF
-- Modelo base referenciado: https://huggingface.co/prithivMLmods/Holo4-27B-MTP-Repacked
+- Repositorio GGUF: https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-GGUF
+- Modelo base: https://huggingface.co/prithivMLmods/Holo4-27B-MTP-Repacked
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Holo4-27B-MTP-Repacked-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png

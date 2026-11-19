@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "netprojects/nemotron-dory1.0-4b-mlx-8bit · Hugging Face",
-      "url": "https://huggingface.co/netprojects/nemotron-dory1.0-4b-mlx-8bit",
-      "snippet": "Model: NVIDIA (Nemotron-Labs Dory 1.0 4B, OpenMDW-1.1, the same license as the original; see NVIDIA's card for the full terms). Reference implementations used to write and check the port: vLLM (PR 60149) and llama.cpp."
-    },
-    {
-      "title": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 - Hugging Face",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

@@ -2,117 +2,99 @@
 
 ## Resumen
 
-KURE-v3 es un modelo de recuperación densa (dense retrieval) bilingüe coreano-inglés desarrollado por nlpai-lab, el mismo equipo responsable de las variantes KURE anteriores. Se trata de un modelo encoder de 1.140.918.272 parámetros que convierte cada texto en un único vector de 2.048 dimensiones, puntuado mediante similitud coseno, y que está afinado sobre el modelo base nvidia/Nemotron-3-Embed-1B-BF16. Su función no es generar texto, sino producir embeddings de consulta y de pasaje de alta calidad para sistemas RAG, búsqueda semántica y motores de recuperación documental.
+KURE-v3 es un modelo de recuperación densa (dense retrieval) bilingüe coreano-inglés desarrollado por nlpai-lab, un laboratorio de investigación centrado en modelos de lenguaje y recuperación de información para el idioma coreano. El modelo transforma textos en vectores densos de una sola representación (single-vector) que se comparan mediante similitud coseno, y está diseñado específicamente para tareas de búsqueda semántica y sistemas RAG (Retrieval-Augmented Generation) sobre corpus coreanos e ingleses.
 
-El dato más relevante es su rendimiento en la suite MTEB(kor, v2) Retrieval, donde promedia 0,8027 nDCG@10 sobre nueve tareas, superando según el autor a modelos densos de 8B parámetros como comsat-embed-ko-8b-preview y Qwen3-Embedding-8B. Es decir, consigue resultados de la gama 8B con una octava parte del tamaño, lo que reduce drásticamente el coste de indexación y de inferencia en producción. Incorpora embeddings Matryoshka entrenados a 2.048, 1.024, 512 y 256 dimensiones, de modo que los vectores pueden truncarse para ahorrar almacenamiento con una pérdida de calidad controlada.
+Con 1.140.918.272 parámetros (aproximadamente 1,1B), KURE-v3 se construye mediante fine-tuning del modelo base nvidia/Nemotron-3-Embed-1B-BF16 y alcanza un promedio de 0,8027 nDCG@10 en las nueve tareas de MTEB(kor, v2) Retrieval, superando según el autor a modelos densos de 8B como comsat-embed-ko-8b-preview y Qwen3-Embedding-8B. Esta relación entre tamaño reducido y rendimiento competitivo lo convierte en una opción atractiva para despliegues con restricciones de VRAM.
 
-Soporta documentos de hasta 8.192 tokens, lo que lo hace apto para fragmentos largos (artículos, resoluciones judiciales, documentación técnica) sin trocear en exceso. Se distribuye con licencia Apache 2.0 en formato safetensors, es compatible con sentence-transformers y está disponible también como servicio a través de una API compatible con OpenAI en kure.kullm.ai. El modelo se publicó en Hugging Face con fecha de creación 2026-10-15 y, en el momento de redactar esta ficha, acumula 89 descargas y 14 likes.
+El modelo incorpora embeddings Matryoshka (entrenado a 2.048, 1.024, 512 y 256 dimensiones), admite documentos de hasta 8.192 tokens y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial. Está disponible tanto en Hugging Face para uso local con sentence-transformers como a través de una API compatible con OpenAI en kure.kullm.ai.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder denso (etiqueta `ministral3` en Hugging Face), afinado desde nvidia/Nemotron-3-Embed-1B-BF16 |
+| Arquitectura | Transformer encoder denso (fine-tune de nvidia/Nemotron-3-Embed-1B-BF16); una etiqueta del repo indica "ministral3" |
 | Parametros totales | 1.140.918.272 (1,1B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | 8.192 tokens |
-| Tipos de cuantizacion | No se publican versiones cuantizadas; pesos en BF16. Admite cuantizacion estándar mediante librerías de inferencia (no verificada oficialmente) |
-| Idiomas soportados | Coreano (ko) e inglés (en) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors BF16; el repo no detalla cuantizaciones GGUF/AWQ/GPTQ) |
+| Idiomas soportados | coreano (ko), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) |
-| Dimensión del embedding | 2.048 (Matryoshka: 2.048 / 1.024 / 512 / 256) |
-| Tipo de recuperación | Dense, single-vector |
-| Función de similitud | Coseno (vectores L2-normalizados; el producto escalar equivale al coseno) |
-| Prompts requeridos | `query: ` para consultas y `passage: ` para documentos (aplicados por `encode_query` / `encode_document`) |
-| Tamaño del repositorio | 2,3 GB |
-| Librería | sentence-transformers |
-| Pipeline | sentence-similarity |
-| Fecha de creación en Hugging Face | 2026-10-15 (última actualización 2026-10-21) |
+| Formato de pesos | safetensors (también compatible con sentence-transformers) |
 
 ## Arquitectura y entrenamiento
 
-KURE-v3 es un encoder transformer de 1,1B parámetros derivado de nvidia/Nemotron-3-Embed-1B-BF16, un modelo de embeddings de la familia Nemotron. La etiqueta `ministral3` presente en el repositorio sugiere que la arquitectura subyacente corresponde a la familia Ministral 3, reutilizada aquí como backbone de embeddings. El modelo produce una representación pooled de 2.048 dimensiones por texto y se entrena con objetivo de similitud contrastiva sobre pares consulta-pasaje, con prompts asimétricos (`query:` / `passage:`) que el modelo espera en el momento de la codificación.
+KURE-v3 es un modelo de embedding denso de tipo encoder transformer, derivado por fine-tuning del modelo nvidia/Nemotron-3-Embed-1B-BF16. Produce una única representación vectorial por texto (dense, single-vector) de 2.048 dimensiones, normalizada L2, de modo que la similitud coseno equivale al producto escalar. Emplea prompts asimétricos: el prefijo `query: ` para consultas y `passage: ` para documentos, gestionados automáticamente por los métodos `encode_query` y `encode_document` de sentence-transformers.
 
-La innovación técnica destacable es el entrenamiento Matryoshka a cuatro dimensiones (2.048, 1.024, 512 y 256), que permite truncar los vectores en inferencia pasando `truncate_dim` o el parámetro `dimensions` en la API, sin reentrenar. El modelo soporta `flash_attention_2` como implementación de atención y está diseñado para documentos largos de hasta 8.192 tokens.
-
-No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o destilación desde un modelo mayor. Tampoco se detalla la estrategia de negative mining ni el uso de hard negatives.
+La innovación principal es el entrenamiento con embeddings Matryoshka a 2.048, 1.024, 512 y 256 dimensiones, lo que permite truncar los vectores para reducir coste de almacenamiento y latencia en la búsqueda sin reentrenar. El modelo soporta además FlashAttention 2 mediante `attn_implementation="flash_attention_2"`. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF/DPO; tampoco se especifica la función de pérdida de contraste utilizada.
 
 ## Capacidades
 
-- Generación de embeddings densos de 2.048 dimensiones para búsqueda semántica y recuperación de pasajes.
-- Recuperación bilingüe coreano-inglés en un mismo espacio vectorial (consultas en un idioma contra documentos en el otro).
-- Embeddings Matryoshka: truncado a 1.024, 512 o 256 dimensiones para reducir coste de almacenamiento y latencia de búsqueda.
-- Manejo de documentos largos de hasta 8.192 tokens por fragmento.
-- Prompts asimétricos integrados: `encode_query()` y `encode_document()` añaden automáticamente `query: ` y `passage: `.
-- Compatibilidad directa con sentence-transformers y con `attn_implementation="flash_attention_2"`.
-- Exposición como servicio mediante API compatible con OpenAI (`/v1/embeddings`) en kure.kullm.ai, con parámetro `input_type` (`query` o `document`) y `dimensions` ajustable.
-- Vectores L2-normalizados, lo que permite usar producto escalar en índices vectoriales en lugar de distancia coseno explícita.
-- No es un modelo generativo: no soporta tool calling, function calling, razonamiento multi-paso ni agentes. Su única salida es el vector de embedding.
+- Generación de embeddings densos de 2.048 dimensiones por texto, con similitud coseno como métrica de relevancia.
+- Recuperación semántica bilingüe coreano-inglés en tareas de passage retrieval y document retrieval.
+- Embeddings Matryoshka truncables a 1.024, 512 y 256 dimensiones.
+- Procesamiento de documentos largos de hasta 8.192 tokens.
+- Soporte de prompts asimétricos query/passage integrado en la librería sentence-transformers.
+- Extracción de características (feature-extraction) y uso como backbone en pipelines de similitud de frases.
+- Servicio mediante API compatible con OpenAI (endpoint `embeddings.create` con `input_type` query/document y parámetro `dimensions`).
+- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de visión o audio: es un modelo exclusivamente de representación.
 
 ## Casos de uso
 
-- **RAG sobre documentación coreana**: indexar manuales, informes o bases de conocimiento en coreano con fragmentos de hasta 8.192 tokens y recuperar los pasajes relevantes para alimentar un LLM. La ventana larga evita fragmentar en trozos demasiado pequeños y perder contexto.
-- **Búsqueda semántica en corpus jurídico o administrativo**: el benchmark incluye LawIRKo, donde el modelo obtiene 0,8158 nDCG@10. Adecuado para recuperación de normativa, contratos o expedientes con lenguaje técnico.
-- **Atención al cliente en coreano con base de conocimiento**: dado su 0,9673 en Belebele (ko-ko) y 0,9666 en SQuADKorV1, funciona bien en preguntas factuales sobre pasajes concretos, típicas de un asistente de soporte con FAQ.
-- **Búsqueda bilingüe en comercio electrónico**: consultas en coreano contra catálogos con descripciones en inglés (o viceversa) usando un único índice vectorial, sin necesidad de traducir previamente.
-- **Deduplicación y clustering de documentos**: los embeddings normalizados permiten agrupar noticias, reseñas o tickets por similitud coseno y detectar duplicados a escala de millones de documentos.
-- **Indexación de bajo coste con Matryoshka**: para corpus de decenas de millones de fragmentos, truncar a 256 dimensiones reduce el almacenamiento de 8 KB a 1 KB por vector (float32) manteniendo parte de la calidad; útil en una primera fase de recuperación seguida de un reranking más caro.
-- **Clasificación y filtrado por similitud (few-shot)**: usar los embeddings como características para enrutar tickets, moderar contenido o etiquetar documentos comparándolos con prototipos por clase.
+- Búsqueda semántica en corpus coreanos: indexación de documentación, artículos o bases de conocimiento en coreano y recuperación por similitud coseno, aprovechando el rendimiento de 0,8027 nDCG@10 promedio en MTEB(kor, v2).
+- Sistemas RAG bilingües: recuperación de pasajes relevantes en coreano e inglés para alimentar un LLM generador, con vectores truncados a 512 o 256 dimensiones para reducir el tamaño del índice.
+- Atención al cliente automatizada: recuperación de fragmentos de FAQ y manuales de producto en coreano para fundamentar respuestas, con contexto de hasta 8.192 tokens por documento.
+- Búsqueda legal y regulatoria: uso sobre LawIRKo y corpus normativos coreanos, donde el modelo obtiene 0,8158 nDCG@10 según la model card.
+- Búsqueda en literatura biomédica y sanitaria: recuperación sobre PubHealthQA (0,8639 nDCG@10) para asistentes de consulta médica en coreano.
+- Deduplicación y clustering de documentos: generación de embeddings para agrupar noticias o registros duplicados en pipelines de datos, con vectores de 256 dimensiones para escalar a millones de documentos.
+- Evaluación de similitud semántica en pipelines de QA: comparación de preguntas de usuario con preguntas canónicas en coreano, útil en sistemas de enrutamiento de tickets.
+- Integración vía API: uso del endpoint compatible con OpenAI en kure.kullm.ai para prototipado rápido sin infraestructura propia.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre las nueve tareas de MTEB(kor, v2) Retrieval, métrica nDCG@10. Datos extraídos de la model card:
+Resultados en MTEB(kor, v2) Retrieval (nDCG@10), según la model card:
 
 | Modelo | Tipo | Params | Avg | AutoRAG | PubHealthQA | Ko-StrategyQA | LawIRKo | SQuADKorV1 | Belebele (ko-ko) | MrTidy | MLDR | MIRACL |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nlpai-lab/KURE-v3 | Dense | 1,1B | **0,8027** | 0,9324 | 0,8639 | 0,8192 | 0,8158 | 0,9666 | 0,9673 | 0,6320 | 0,4781 | 0,7489 |
-| nlpai-lab/KURE-v2 | Late-interaction | 0,2B | 0,8160 | 0,9718 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-| comsat-embed-ko-8b-preview | Dense | 8B | no disponible (el autor indica que KURE-v3 lo supera) | — | — | — | — | — | — | — | — | — |
-| Qwen3-Embedding-8B | Dense | 8B | no disponible (el autor indica que KURE-v3 lo supera) | — | — | — | — | — | — | — | — | — |
+| nlpai-lab/KURE-v3 | Dense | 1.1B | 0.8027 | 0.9324 | 0.8639 | 0.8192 | 0.8158 | 0.9666 | 0.9673 | 0.6320 | 0.4781 | 0.7489 |
+| nlpai-lab/KURE-v2 | Late-interaction | 0.2B | 0.8160 | 0.9718 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Observaciones: las tareas más débiles son MLDR (0,4781) y MrTidy (0,6320), ambas de recuperación multilingüe o multilingüe-larga, lo que sugiere que el rendimiento cae fuera del par coreano-inglés. KURE-v2, con arquitectura late-interaction (multi-vector) y solo 0,2B parámetros, reporta un promedio superior (0,8160) pero con un coste de indexación mucho mayor al generar múltiples vectores por documento. No se han publicado resultados en la información disponible para MMLU, HumanEval, GSM8K ni otras suites de razonamiento, ya que el modelo no es generativo.
+La información disponible solo incluye la primera fila de KURE-v2 en la tabla comparativa; el resto de valores de esa fila y las filas de comsat-embed-ko-8b-preview y Qwen3-Embedding-8B no están disponibles en el material proporcionado, aunque el autor afirma que KURE-v3 supera a ambos modelos de 8B en el promedio.
 
 ## Requisitos de hardware
 
-- **VRAM estimada en BF16**: pesos de aproximadamente 2,3 GB; con overhead de activaciones y KV/caché de embeddings, entre 3 y 4 GB para inferencia de una sola consulta o lotes pequeños (estimación).
-- **VRAM estimada en FP32**: alrededor de 4,6 GB solo de pesos.
-- **Cuantización**: no hay versiones oficiales cuantizadas ni GGUF publicados. Una cuantización a 8 bits dejaría los pesos en torno a 1,2 GB y a 4 bits en torno a 0,6 GB (estimación teórica, no verificada por el autor).
-- **GPU consumer**: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. También en GPUs de 8 GB con margen suficiente en BF16.
-- **GPU de datacenter**: L4, A10G, T4 (BF16 limitado en T4), A100 y H100 para indexación masiva por lotes. Para máxima eficiencia se recomienda `flash_attention_2`, que requiere Ampere o superior.
-- **Opciones de despliegue**: sentence-transformers (referencia de la model card), Text Embeddings Inference (TEI) de Hugging Face, vLLM en modo embeddings, Infinity, o la API gestionada de kure.kullm.ai. No hay soporte GGUF, por lo que llama.cpp y Ollama no son viables sin convertir los pesos.
-- **Almacenamiento del índice**: 2.048 dimensiones en float32 equivalen a 8 KB por vector; un millón de documentos ocupa unos 8 GB. Con truncado a 256 dimensiones, ese mismo millón baja a aproximadamente 1 GB.
-- **Latencia y throughput**: no disponible. No se han publicado mediciones de latencia ni de documentos por segundo.
+- VRAM estimada para inferencia en BF16: aproximadamente 2,3 GB de pesos más overhead de activaciones; en la práctica, entre 3 y 5 GB para lotes pequeños.
+- VRAM en FP32: alrededor de 4,6 GB solo para pesos.
+- GPU recomendadas: A100, H100, L40S o RTX 4090 para alto throughput; RTX 3090, RTX 4080 o RTX A6000 para despliegues de producción moderados.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090). Con cuantización a 8 bits podría ejecutarse en GPUs de 6 GB, aunque no se publican pesos cuantizados oficiales.
+- Opciones de despliegue: sentence-transformers (referencia), vLLM y TGI para servir como modelo de embeddings, y la API compatible con OpenAI en kure.kullm.ai. No se documentan pesos GGUF para llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Params | Tipo de embedding | Contexto | Idiomas | Avg MTEB(kor, v2) Retrieval | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| nlpai-lab/KURE-v3 | 1,1B | Dense, 2.048 dims (Matryoshka 256-2.048) | 8.192 | ko, en | 0,8027 | Apache 2.0 | Hugging Face + API |
-| nlpai-lab/KURE-v2 | 0,2B | Late-interaction (multi-vector) | no disponible | ko, en | 0,8160 | no disponible en la información | Hugging Face |
-| Qwen3-Embedding-8B | 8B | Dense | no disponible | multilingüe | no disponible (superado por KURE-v3 según el autor) | no disponible en la información | Hugging Face |
-| comsat-embed-ko-8b-preview | 8B | Dense | no disponible | coreano | no disponible (superado por KURE-v3 según el autor) | no disponible en la información | Hugging Face |
+| Modelo | Params | Contexto | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| nlpai-lab/KURE-v3 | 1.1B | 8.192 | Dense, Matryoshka | Apache 2.0 | Hugging Face + API |
+| nlpai-lab/KURE-v2 | 0.2B | no disponible | Late-interaction | no disponible en la información | Hugging Face |
+| comsat-embed-ko-8b-preview | 8B | no disponible | Dense | no disponible en la información | no disponible en la información |
+| Qwen3-Embedding-8B | 8B | no disponible | Dense | no disponible en la información | no disponible en la información |
 
-El compromiso principal es claro: KURE-v3 ofrece un promedio cercano al de KURE-v2 con un único vector por documento (frente a la representación multi-vector de v2), lo que abarata el índice y la búsqueda, a costa de 1,5 puntos porcentuales de nDCG@10 medio. Frente a los modelos densos de 8B, la ventaja declarada es de eficiencia: mismo nivel de rendimiento con 7 veces menos parámetros.
+Según el autor, KURE-v3 (1,1B) supera en promedio a comsat-embed-ko-8b-preview y Qwen3-Embedding-8B (ambos 8B) en MTEB(kor, v2) Retrieval, con la ventaja adicional de requerir aproximadamente una séptima parte de los parámetros. Los valores detallados de esos modelos no están incluidos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- **Sesgo de dominio**: la evaluación se limita a recuperación en coreano. El rendimiento real en otros dominios o en inglés no está cuantificado en la model card, pese a declarar soporte bilingüe.
-- **Idiomas**: solo coreano e inglés. El bajo resultado en MLDR (0,4781) apunta a un rendimiento pobre en escenarios multilingües fuera de ese par.
-- **No es un modelo generativo**: no responde preguntas, no razona y no ejecuta herramientas. Cualquier caso de uso que requiera generación necesita un LLM adicional.
-- **Dependencia de los prompts**: usar `encode_query` y `encode_document` (o los equivalentes `input_type`) es obligatorio para obtener el rendimiento reportado; codificar consultas y documentos con la misma función degrada la calidad.
-- **Riesgo de alucinación indirecta**: en un pipeline RAG, un embedding mediocre trae pasajes irrelevantes y el LLM generador puede alucinar sobre ellos. El nDCG@10 de 0,4781 en MLDR indica que en corpus multilingües esta derivada es un riesgo real.
-- **Coste de almacenamiento**: 2.048 dimensiones es el doble o cuádruple de lo habitual en modelos de embeddings (768-1.024). Sin truncado Matryoshka, el índice crece proporcionalmente.
-- **Licencia**: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base nvidia/Nemotron-3-Embed-1B-BF16, que puede imponer condiciones adicionales no reflejadas en el repositorio derivado.
-- **Madurez**: 89 descargas y 14 likes en el momento de la consulta; es un modelo reciente (octubre de 2026) con poca validación independiente fuera del equipo autor.
-- **Sin datos de entrenamiento publicados**: no se conoce la composición del corpus ni posibles filtraciones de los benchmarks de evaluación en el conjunto de entrenamiento.
-- **Cuantización no soportada oficialmente**: desplegar en entornos con requisitos de cuantización (GGUF, GPTQ, AWQ) requiere trabajo adicional no documentado.
+- Sesgos: no se documentan evaluaciones de sesgo; al estar entrenado principalmente sobre corpus coreanos e ingleses, puede infrarrepresentar variedades dialectales o registros coloquiales.
+- Alucinación: al ser un modelo de embeddings y no generativo, no produce texto, pero puede devolver recuperaciones irrelevantes en dominios fuera de distribución (por ejemplo, MLDR con 0,4781 nDCG@10 es su tarea más débil).
+- Cobertura de idiomas limitada a coreano e inglés; el rendimiento en otros idiomas no está garantizado ni evaluado.
+- Contexto máximo de 8.192 tokens: documentos más largos deben truncarse o dividirse en fragmentos, lo que puede degradar la recuperación.
+- La truncación Matryoshka reduce la calidad; conviene validar el tamaño de vector elegido (1.024, 512, 256) sobre el dominio concreto antes de producción.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base (nvidia/Nemotron-3-Embed-1B-BF16) y de los datasets de entrenamiento, no detallados en la información disponible.
+- No se publican datos sobre robustez ante ataques de inyección de prompts ni sobre comportamiento en dominios especializados distintos de los evaluados.
+- El uso de la API pública kure.kullm.ai requiere autenticación con GitHub y está sujeta a las condiciones del servicio, no especificadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nlpai-lab/KURE-v3
 - Repositorio GitHub del proyecto KURE: https://github.com/nlpai-lab/KURE
-- API gestionada (compatible con OpenAI): https://kure.kullm.ai/
+- API KURE: https://kure.kullm.ai/
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
-- Versión anterior (late-interaction): https://huggingface.co/nlpai-lab/KURE-v2
-- Logo del proyecto: https://huggingface.co/nlpai-lab/KURE-v2/resolve/main/kure_logo.png
-- La búsqueda web realizada no devolvió resultados relevantes sobre el modelo: únicamente páginas del dominio de Société Générale sin relación con KURE-v3. No se han localizado papers, blogs técnicos ni demos adicionales más allá de los enlaces anteriores.
+- Modelo predecesor KURE-v2: https://huggingface.co/nlpai-lab/KURE-v2

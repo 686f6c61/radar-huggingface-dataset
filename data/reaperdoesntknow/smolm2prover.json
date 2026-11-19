@@ -61,31 +61,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/SMOLM2Prover · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/SMOLM2Prover",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "reaperdoesntknow/SMOLM2Prover-GGUF · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF",
-      "snippet": "With LM Studio Download SMOLM2Prover-Q4_K_M.gguf Place in LM Studio models folder Load and chat! Quantization Details The Q4_K_M quantization uses: Q4_K for most weights Q5_0 fallback for tensors not divisible by 256 Q6_K/Q8_0 for some critical layers Size reduction: 692M → 258M (63% smaller) BPW: 5.94 bits per weight License Same as the original model."
-    },
-    {
-      "title": "SMOLM2Prover API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/reaperdoesntknow/SMOLM2Prover",
-      "snippet": "Training Data: The primary dataset used was AI-MO/NuminaMath-1.5, augmented with approximately 1 million additional tokens. This data was formatted with a specific prompt structure designed to elicit step-by-step, chain-of-thought reasoning from the model."
-    },
-    {
-      "title": "Comparing 157050b8fa...157050b8fa - SMOLM2Prover - Gitea: Git with a ...",
-      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/SMOLM2Prover/compare/main...main?expand=1",
-      "snippet": "reaperdoesntknow / SMOLM2Prover Watch 1 Star 0 Fork 0 You&#x27;ve already forked SMOLM2Prover Code Issues Pull Requests Actions Projects Releases Wiki Activity"
-    },
-    {
-      "title": "【検証】hf.co/reaperdoesntknow/SMOLM2Prover-GGUF の総合性能を本気でテストしてみた｜",
-      "url": "https://www.youtube.com/watch?v=heIFkXIOL1I",
-      "snippet": "ローカルLLM hf.co/reaperdoesntknow/SMOLM2Prover-GGUF を 総合性能 で全力検証。 本編では実走テストの中から、特に印象的だった瞬間 ..."
-    }
-  ]
+  "sources": []
 }

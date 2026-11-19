@@ -2,121 +2,108 @@
 
 ## Resumen
 
-llm-jp-4.1-8b-thinking-gguf es la version cuantizada en formato GGUF del modelo llm-jp-4.1-8b-thinking, desarrollado por el Research and Development Center for Large Language Models del National Institute of Informatics (NII) de Japon. Se trata de un modelo de lenguaje denso basado en transformer, con 8.590.200.832 parametros totales (805.306.368 de embedding y 7.784.894.464 no-embedding), 32 capas, tamano oculto de 4096 y 32 cabezas de atencion, con una ventana de contexto de 65.536 tokens.
+LLM-jp-4.1-8b-thinking es un modelo de lenguaje de 8.590.200.832 parámetros (8B denso) desarrollado por el Research and Development Center for Large Language Models del National Institute of Informatics (NII) de Japón. Forma parte de la serie LLM-jp-4.1, que incluye variantes densas de 8B y 33B y una variante MoE de 32B-A3B. Esta ficha corresponde a la versión en formato GGUF del checkpoint post-entrenado con modo "thinking", distribuida a través de Hugging Face bajo licencia Apache 2.0.
 
-El modelo forma parte de la serie LLM-jp-4.1, que incluye variantes densas de 8B y 33B, ademas de una variante MoE de 32B-A3B. La variante "thinking" esta orientada a tareas de razonamiento, con una plantilla de chat compatible con el formato de respuesta OpenAI Harmony. Su relevancia radica en ser una de las apuestas open source mas serias para el idioma japones, con corpus de preentrenamiento y postentrenamiento publicados, licencia Apache 2.0 y una ventana de contexto de 64K que lo situan como alternativa practica para despliegues en produccion.
+El modelo está diseñado específicamente para inglés y japonés, con soporte declarado para 13 lenguajes de programación (C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala y TypeScript). Su arquitectura es un transformer denso de 32 capas con tamaño oculto de 4.096 y 32 cabezas de atención, con una longitud de contexto de 65.536 tokens. El tokenizador se basa en un modelo Unigram con byte-fallback derivado de llm-jp-tokenizer v4.0.
 
-Esta ficha corresponde especificamente al repositorio GGUF, pensado para su ejecucion con llama.cpp y herramientas compatibles. Cabe destacar que el uso con llama.cpp requiere actualmente un fork especifico del proyecto, ya que la version upstream de ggml-org no incluye las correcciones de tokenizer necesarias.
+La relevancia actual del modelo radica en dos factores: por un lado, es una de las pocas familias abiertas con entrenamiento nativo en japonés de alta calidad y corpus públicos (11,7T tokens en pre-entrenamiento y mid-training); por otro, la publicación de pesos en GGUF facilita el despliegue en entornos de inferencia local. No obstante, la model card advierte de que el uso con llama.cpp upstream todavía falla en el parseo del chat, y requiere un fork específico del proyecto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (solo decodificador) |
-| Parametros totales | 8.590.200.832 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
+| Arquitectura | Transformer denso (32 capas, hidden size 4.096, 32 cabezas) |
+| Parametros totales | 8.590.200.832 (8B) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 65.536 tokens |
-| Tipos de cuantizacion | no disponible (repositorio en formato GGUF; niveles concretos no especificados en la informacion) |
-| Idiomas soportados | Ingles y japones (lenguajes de programacion: C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala, TypeScript) |
+| Tipos de cuantizacion | No disponible (el repo es GGUF, pero no se detallan los niveles incluidos) |
+| Idiomas soportados | Inglés (en) y japonés (ja) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
-
-Datos adicionales de la arquitectura: 32 capas, tamano oculto 4.096, 32 cabezas de atencion, 805.306.368 parametros de embedding, 7.784.894.464 parametros no-embedding. Tamano del repositorio: 45,4 GB. Tokenizer basado en Unigram byte-fallback implementado con huggingface/tokenizers, con vocabulario derivado de llm-jp-tokenizer v4.0.
+| Formato de pesos | GGUF (repo de 45,4 GB); el modelo base se distribuye también en safetensors |
+| Parametros de embedding | 805.306.368 |
+| Parametros no-embedding | 7.784.894.464 |
+| Tokenizador | Unigram con byte-fallback, basado en llm-jp-tokenizer v4.0 |
+| Libreria | transformers |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de 8B parametros con atencion completa y una ventana de contexto de 65.536 tokens. Pertenece a la serie LLM-jp-4.1, que tambien incluye un denso de 33B (64 capas, oculto 5.120, 40 cabezas) y un MoE de 32B-A3B (32 capas, oculto 2.560, 40 cabezas, 128 expertos enrutados y 8 activados, 3.827.476.992 parametros activados sobre 32.139.028.992 totales). No se detalla en la informacion disponible si emplea atencion lineal, decodificacion especulativa u otras innovaciones de eficiencia.
+El modelo es un transformer denso decoder-only con 32 capas, dimensión oculta de 4.096 y 32 cabezas de atención. La longitud de contexto es de 65.536 tokens, notablemente amplia para un modelo de 8B. El tokenizador es un Unigram con byte-fallback implementado con huggingface/tokenizers, cuyas entradas de vocabulario se derivaron de llm-jp-tokenizer v4.0; la model card advierte que un entrenamiento puro de SentencePiece no reproduce el vocabulario original.
 
-El entrenamiento siguio un pipeline multietapa de preentrenamiento y mid-training con un total de 11,7 billones de tokens. Los corpus de preentrenamiento y mid-training estan publicados, aunque algunas porciones quedan excluidas por restricciones de licencia. El postentrenamiento se realizo con supervised fine-tuning (SFT) y alineamiento posterior mediante direct preference optimization (DPO), sin uso de reinforcement learning. Los conjuntos de datos de SFT y DPO tambien estan publicados. La plantilla de chat es compatible con el formato de respuesta OpenAI Harmony, aunque el tokenizer difiere del asumido por la libreria openai-harmony, por lo que no se admite la tokenizacion directa con dicha libreria.
+El entrenamiento siguió un pipeline multi-etapa con un total de 11,7T tokens. La fase de pre-entrenamiento y mid-training empleó corpus publicados en GitLab (llm-jp-corpus-v4.1 y llm-jp-corpus-midtraining-v2), aunque parte de los datos quedó excluida de la publicación por restricciones de licencia. La fase de post-entrenamiento consistió en SFT seguido de DPO, sin refuerzo con RL; los datasets de SFT y DPO están públicos en Hugging Face. Una innovación destacable es que la plantilla de chat está diseñada para ser compatible con el formato de respuesta OpenAI Harmony, aunque el tokenizador no es compatible con la librería openai-harmony, por lo que la tokenización directa con esa herramienta no funciona.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y japones.
-- Modo de razonamiento ("thinking"), reflejado en el nombre del modelo y en una plantilla de chat compatible con OpenAI Harmony.
-- Razonamiento matematico: la evaluacion del autor cubre Math 500, AIME 2024/2025/2026, MCLM Math 100 y PolyMath JA.
-- Conocimiento cientifico: evaluado en GPQA Diamond y JGPQA Diamond.
-- Conocimiento general y QA: evaluado en JAM-CQA, JEMHopQA, JMMLU y MMLU-ProX (JA y EN).
-- Generacion de codigo en multiples lenguajes (C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala, TypeScript); evaluado en LiveCodeBench v6, JHumanEval y HumanEval.
-- Soporte de tool calling: la evaluacion del autor incluye una categoria especifica de tool calling, aunque no se detallan los resultados.
-- Capacidades multilingues limitadas a ingles y japones segun la model card.
-- Capacidades de vision y audio: no disponibles.
+- Generación de texto conversacional multi-turno en inglés y japonés.
+- Modo "thinking": el checkpoint está post-entrenado para razonamiento explícito antes de responder.
+- Razonamiento matemático y científico, evaluado en benchmarks como Math 500, AIME 2024/2025/2026, GPQA Diamond y PolyMath JA.
+- Generación de código en 13 lenguajes (C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala, TypeScript), evaluado con LiveCodeBench v6, JHumanEval y HumanEval.
+- Conocimiento y QA en japonés e inglés, evaluado con JAM-CQA, JEMHopQA, JMMLU y MMLU-ProX.
+- Soporte de tool calling y function calling, incluido en la evaluación del modelo.
+- Capacidades de agente y razonamiento multi-paso derivadas del modo thinking y del soporte de herramientas.
+- Compatibilidad declarada con el formato de respuesta OpenAI Harmony a nivel de plantilla de chat.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada en japones e ingles: la ventana de 65.536 tokens permite gestionar conversaciones multi-turno extensas y adjuntar documentacion de contexto sin truncar el historial.
-- Generacion de codigo en produccion: el soporte de multiples lenguajes de programacion y la compatibilidad con tool calling permiten integrarlo en pipelines de CI/CD para sugerencias, revisiones o generacion de parches.
-- Asistentes de razonamiento paso a paso: el modo "thinking" lo hace adecuado para tareas que requieren descomposicion de problemas, como analisis de datos o resolucion de incidencias tecnicas.
-- Procesamiento de documentacion larga en japones: resumen, extraccion de entidades y respuesta a preguntas sobre manuales, contratos o informes que superen los limites de contexto habituales de otros modelos.
-- Investigacion academica en PLN para japones: al estar publicados los corpus de preentrenamiento, SFT y DPO, sirve como base reproducible para experimentos y ajuste fino.
-- Traduccion asistida japones-ingles: util en flujos de localizacion donde se requiere coherencia de contexto a lo largo de documentos extensos.
-- Sistemas de agentes con multiples pasos: el formato Harmony y el soporte de tool calling facilitan su integracion en orquestadores de agentes que encadenan llamadas a herramientas.
-- Despliegue local en equipos de desarrollo: la version GGUF permite ejecucion en estaciones de trabajo con GPU de consumo o incluso CPU, sin depender de servicios en la nube.
+- Atención al cliente en japonés: el modelo puede mantener conversaciones multi-turno con hasta 65.536 tokens de contexto, lo que permite incorporar manuales de producto o historial de tickets extensos sin truncar. Su entrenamiento nativo en japonés lo hace adecuado para empresas que operan en el mercado nipón.
+- Generación de código en producción: con soporte de tool calling y cobertura de 13 lenguajes, puede integrarse en pipelines de CI/CD para generar tests, parchear errores o revisar pull requests, invocando herramientas externas para compilar y ejecutar código.
+- Razonamiento matemático asistido: el modo thinking permite resolver problemas de competición (AIME, Math 500) paso a paso, útil en plataformas educativas de matemáticas en japonés e inglés.
+- Análisis de documentación técnica larga: la ventana de 65.536 tokens permite resumir o extraer información de manuales, especificaciones o papers completos en una sola pasada.
+- Asistente de investigación en ciencias: con evaluaciones en GPQA Diamond y JGPQA, puede apoyar la revisión de literatura científica y la formulación de hipótesis en dominios como química o biología.
+- Despliegue local en hardware de consumo: al distribuirse en GGUF, puede ejecutarse con llama.cpp (mediante el fork de llm-jp) en estaciones de trabajo con GPU consumer, lo que facilita prototipado y uso offline sin depender de APIs.
+- Agentes autónomos multi-paso: la combinación de thinking mode, tool calling y contexto largo permite construir agentes que planifican, invocan APIs y mantienen estado a lo largo de tareas complejas.
 
 ## Benchmarks y rendimiento
 
-La model card indica que el modelo se evaluo con la suite swallow-evaluation-instruct en seis categorias, pero no se proporcionan resultados numericos en la informacion disponible. Los benchmarks empleados son los siguientes:
+La model card enumera los benchmarks utilizados (Math 500, AIME 2024/2025/2026, MCLM Math 100, PolyMath JA, GPQA Diamond, JGPQA Diamond, JAM-CQA, JEMHopQA, JMMLU, MMLU-ProX JA/EN, LiveCodeBench v6, JHumanEval y HumanEval), pero los resultados numéricos concretos no se incluyen en la información proporcionada; se remiten al blog técnico en japonés. Por tanto:
 
-| Categoria | Benchmarks |
-|---|---|
-| Matematicas | Math 500, AIME 2024 (pass@1, pass@32), AIME 2025 (pass@1, pass@32), AIME 2026 (pass@1, pass@32), MCLM Math 100 (pass@1, pass@4), PolyMath JA High, PolyMath JA Top |
-| Ciencia | GPQA Diamond (pass@1, pass@4), JGPQA Diamond |
-| Conocimiento y QA | JAM-CQA, JEMHopQA, JMMLU, MMLU-ProX JA, MMLU-ProX EN |
-| Codigo | LiveCodeBench v6 (pass@1, pass@10), JHumanEval (pass@1, pass@10), HumanEval |
-
-No se han publicado resultados numericos de benchmarks en la informacion disponible. Para cifras detalladas y analisis, el autor remite al blog tecnico de LLM-jp-4.1.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia del modelo de 8,59B parametros:
-  - FP16: aproximadamente 17,2 GB de pesos.
-  - Cuantizacion de 8 bits: aproximadamente 8,6 GB.
-  - Cuantizacion de 4 bits: aproximadamente 4,9 GB (estimaciones basadas en el numero de parametros; los niveles exactos del repositorio no se detallan).
-- La cache KV debe sumarse a lo anterior: con 65.536 tokens de contexto, el consumo adicional puede ser muy elevado segun el nivel de cuantizacion de la cache y el numero de secuencias concurrentes.
-- GPU recomendadas: A100 (40/80 GB) o H100 para FP16 con contexto completo; RTX 4090 o RTX 3090 (24 GB) para FP16 o 8 bits con contexto reducido; GPU de 8-12 GB para cuantizaciones de 4 bits con contexto limitado.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas usando cuantizacion de 4 bits, y en 24 GB sin cuantizar.
-- Opciones de despliegue: llama.cpp (requiere el fork llm-jp/llama.cpp, rama llmjp-harmony-handler), y transformadores compatibles con el formato original para la variante no GGUF. Ollama, vLLM y TGI no se mencionan explicitamente en la informacion; su compatibilidad no esta confirmada.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de 8B, una cuantización Q4 requiere del orden de 5-6 GB de VRAM, Q8 en torno a 9-10 GB y FP16 aproximadamente 17 GB, aunque estas cifras no están confirmadas por el autor.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría esperar buen rendimiento en A100, H100, L40S y RTX 4090, pero no hay datos oficiales.
+- Cabe en GPU consumer: previsiblemente sí en cuantizaciones bajas (RTX 3060 12 GB, RTX 4070, RTX 4090), aunque el autor no lo confirma.
+- Opciones de despliegue: llama.cpp mediante el fork llm-jp/llama.cpp (rama llmjp-harmony-handler); el llama.cpp upstream no funciona correctamente por falta de correcciones en el tokenizador. También es compatible con transformers para el checkpoint en safetensors.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Comparativa con las otras variantes de la misma familia LLM-jp-4.1, cuyos datos de arquitectura si estan publicados en la model card:
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| llm-jp-4.1-8b-thinking | 8,59B | 65.536 | en, ja | Apache 2.0 | GGUF, safetensors |
+| llm-jp-4.1-33b-thinking | 33,22B | 65.536 | en, ja | Apache 2.0 (presumible) | No disponible en esta ficha |
+| llm-jp-4.1-32b-a3b-thinking | 32,14B totales / 3,83B activos | 65.536 | en, ja | Apache 2.0 (presumible) | No disponible en esta ficha |
 
-| Modelo | Parametros totales | Parametros activados | Capas | Oculto | Cabezas | Contexto |
-|---|---|---|---|---|---|---|
-| llm-jp-4.1-8b-thinking | 8.590.200.832 | no aplica (denso) | 32 | 4.096 | 32 | 65.536 |
-| llm-jp-4.1-33b-thinking | 33.219.548.160 | no aplica (denso) | 64 | 5.120 | 40 | 65.536 |
-| llm-jp-4.1-32b-a3b-thinking | 32.139.028.992 | 3.827.476.992 | 32 | 2.560 | 40 | 65.536 |
-
-Las tres variantes comparten licencia Apache 2.0 y ventana de contexto de 65.536 tokens. No se dispone de resultados de benchmarks comparativos publicados en la informacion proporcionada, ni de datos de arquitectura de modelos de otras familias, por lo que no es posible establecer una comparativa de rendimiento con alternativas externas.
+No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada. Como alternativas externas de tamaño similar podrían considerarse otros modelos abiertos de 7-9B con contexto largo, pero no se aportan datos concretos para comparar rendimiento, por lo que la comparativa cuantitativa queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Idiomas: la model card declara soporte unicamente para ingles y japones; el rendimiento en castellano u otros idiomas no esta garantizado ni evaluado.
-- Riesgo de alucinacion: no se documenta de forma especifica; como en cualquier LLM, existe riesgo de generar contenido incorrecto, especialmente en tareas de conocimiento factual.
-- Sesgos: no se documentan sesgos conocidos en la informacion disponible.
-- Compatibilidad con llama.cpp: la version upstream de ggml-org/llama.cpp no incluye las correcciones de tokenizer necesarias y el parseo del chat fallara; es obligatorio usar el fork llm-jp/llama.cpp (rama llmjp-harmony-handler) o seguir la guia del cookbook oficial.
-- Tokenizer: no es compatible con la tokenizacion directa mediante la libreria openai-harmony, pese a que la plantilla de chat sigue el formato Harmony.
-- Licencia: Apache 2.0, que permite uso comercial, pero el autor advierte que parte de los corpus de preentrenamiento no se han publicado por restricciones de licencia, lo que conviene verificar segun el caso de uso.
-- Cuantizacion: el repositorio GGUF no especifica en la informacion disponible los niveles de cuantizacion incluidos ni su impacto en la calidad; los pesos cuantizados pueden degradar el rendimiento en tareas de razonamiento.
-- Contexto: aunque la ventana es de 65.536 tokens, no se documenta el rendimiento efectivo en contextos muy largos ni posibles efectos de degradacion.
-- Fecha de publicacion del repositorio: creado el 24 de septiembre de 2026 y actualizado el 30 de septiembre de 2026.
+- Idiomas limitados: solo inglés y japonés de forma declarada; el rendimiento en castellano u otros idiomas no está garantizado ni evaluado.
+- Riesgo de alucinación: como todo LLM generativo, puede producir información falsa con apariencia de veracidad, especialmente en dominios especializados.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; los corpus de pre-entrenamiento son mayoritariamente web y pueden arrastrar sesgos sociales y culturales.
+- Compatibilidad con llama.cpp: el llama.cpp upstream falla en el parseo del chat por problemas de tokenizador; es obligatorio usar el fork de llm-jp, lo que añade fricción operativa y riesgo de desactualización.
+- Compatibilidad con OpenAI Harmony: la plantilla de chat es compatible, pero el tokenizador no, por lo que no se puede usar la librería openai-harmony directamente.
+- Corpus parcialmente cerrado: aunque la mayoría de los datos de entrenamiento son públicos, algunas porciones no se han liberado por restricciones de licencia, lo que limita la reproducibilidad completa.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las licencias de los corpus subyacentes y de las dependencias (fork de llama.cpp) antes de desplegar en producción.
+- Sin RL: el alineamiento se hizo solo con SFT y DPO, sin refuerzo, lo que puede traducirse en un comportamiento menos robusto en tareas de agente complejas que modelos entrenados con RL.
+- Tamaño del repo GGUF: 45,4 GB, lo que implica varias cuantizaciones empaquetadas y requiere espacio de almacenamiento considerable.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking-gguf
-- Coleccion de modelos LLM-jp-4.1: https://huggingface.co/collections/llm-jp/llm-jp-41-models
-- Blog tecnico de LLM-jp-4.1 (en japones): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/
-- Cookbook de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook
-- Guia de llama.cpp para LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook/tree/main/llmjp4_llama-cpp
-- Fork de llama.cpp requerido: https://github.com/llm-jp/llama.cpp/tree/llmjp-harmony-handler
-- Tokenizer LLM-jp: https://github.com/llm-jp/llm-jp-tokenizer
-- Corpus de preentrenamiento: https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-corpus-v4.1
+- Modelo en Hugging Face: https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking-gguf
+- Colección LLM-jp-4.1 Models: https://huggingface.co/collections/llm-jp/llm-jp-41-models
+- Blog técnico (en japonés): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/
+- Cookbook: https://github.com/llm-jp/llm-jp-4-cookbook
+- Guía de llama.cpp: https://github.com/llm-jp/llm-jp-4-cookbook/tree/main/llmjp4_llama-cpp
+- Fork de llama.cpp: https://github.com/llm-jp/llama.cpp/tree/llmjp-harmony-handler
+- Tokenizador llm-jp-tokenizer: https://github.com/llm-jp/llm-jp-tokenizer
+- Corpus de pre-entrenamiento: https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-corpus-v4.1
 - Corpus de mid-training: https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-corpus-midtraining-v2
-- Datos de SFT: https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data
-- Datos de DPO (8B): https://huggingface.co/datasets/llm-jp/llm-jp-4.1-8b-thinking-dpo-data
-- Datos de DPO (32B-A3B): https://huggingface.co/datasets/llm-jp/llm-jp-4.1-32b-a3b-thinking-dpo-data
-- Datos de DPO (33B): https://huggingface.co/datasets/llm-jp/llm-jp-4.1-33b-thinking-dpo-data
-- Suite de evaluacion swallow-evaluation-instruct: https://github.com/swallow-llm/swallow-evaluation-instruct
-- Centro de I+D de LLM del NII: https://llmc.nii.ac.jp/
+- Dataset SFT: https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data
+- Dataset DPO (8B): https://huggingface.co/datasets/llm-jp/llm-jp-4.1-8b-thinking-dpo-data
+- Dataset DPO (32B-A3B): https://huggingface.co/datasets/llm-jp/llm-jp-4.1-32b-a3b-thinking-dpo-data
+- Dataset DPO (33B): https://huggingface.co/datasets/llm-jp/llm-jp-4.1-33b-thinking-dpo-data
+- Swallow evaluation instruct: https://github.com/swallow-llm/swallow-evaluation-instruct
+- Centro de I+D de LLM (LLMC): https://llmc.nii.ac.jp/
 - National Institute of Informatics: https://www.nii.ac.jp/en/
-- Formulario de encuesta de uso de LLM-jp: https://forms.gle/AvbNXTNT2ADsssHq5

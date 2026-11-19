@@ -2,65 +2,64 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16 es el checkpoint base vision-lenguaje de la familia Nemotron 3.5 Super, desarrollado por NVIDIA Corporation. Se trata de un modelo de pesos abiertos con 124.453.395.974 parametros totales y 12B parametros activos por token, construido sobre una arquitectura hibrida que combina capas Mamba-2, capas de atencion y capas Mixture-of-Experts, a la que se anade un codificador visual C-RADIO y un conector vision-lenguaje. Soporta ventanas de contexto de hasta 1M tokens e incorpora Multi-Token Prediction (MTP), que habilita decodificacion especulativa nativa.
+NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16 es el checkpoint base de visión-lenguaje de la familia Nemotron 3.5 Super, desarrollado por NVIDIA Corporation. Se trata de un modelo de 120 000 millones de parámetros totales con 12 000 millones de parámetros activos, pensado como punto de partida para entrenamiento continuado, adaptación de dominio y desarrollo de modelos visión-lenguaje post-entrenados personalizados. No es un modelo listo para uso conversacional directo: es una base sobre la que construir.
 
-El modelo no es un asistente post-entrenado, sino un punto de partida para entrenamiento continuado, adaptacion de dominio y desarrollo de modelos vision-lenguaje personalizados mediante SFT, RL o destilacion. El backbone de lenguaje se inicializa desde Nemotron 3 Super Base y se entrena adicionalmente por destilacion desde Nemotron 3 Ultra Base, con pre-entrenamiento continuado en lenguas indicas, entrenamiento de contexto largo y mid-training orientado a ingenieria de software.
+El modelo combina una columna vertebral lingüística inicializada desde Nemotron 3 Super Base y destilada desde Nemotron 3 Ultra Base, ampliada con un codificador visual C-RADIO y un conector visión-lenguaje. La arquitectura es un híbrido de capas Mamba-2, capas de atención y capas de mezcla de expertos (MoE) con 512 expertos enrutados por capa, más Multi-Token Prediction (MTP) para decodificación especulativa nativa. Soporta contextos de hasta 1 millón de tokens.
 
-Su relevancia actual reside en tres factores: es uno de los pocos modelos abiertos que combina vision, contexto de 1M tokens y una relacion de activacion de aproximadamente 10:1 (120B totales / 12B activos), lo que reduce el coste de computo por token respecto a un denso equivalente; se publica junto con los datasets de pre-entrenamiento y un informe tecnico; y su licencia OpenMDW 1.1 permite uso comercial, lo que facilita su adopcion como base para productos derivados.
+Es relevante ahora porque NVIDIA publica no solo los pesos, sino también los datos de preentrenamiento y las recetas, bajo la licencia OpenMDW 1.1, que permite uso comercial. Para equipos que quieran construir modelos multimodales especializados sin partir de cero, este checkpoint ofrece una base de 120B con contexto de 1M y capacidades multilingües en seis idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida Mamba-2 + Transformer con Mixture-of-Experts (MoE) y Multi-Token Prediction (MTP); codificador visual C-RADIO y conector vision-lenguaje |
-| Parametros totales | 124.453.395.974 (aproximadamente 120B) |
-| Parametros activos | 12B por token (A12B) |
-| Longitud de contexto | Hasta 1.000.000 tokens (1M) |
-| Tipos de cuantizacion | BF16 (bfloat16) en este checkpoint; existe una release NVFP4 del modelo post-entrenado de la misma familia. No se documentan GGUF ni otras cuantizaciones en la informacion disponible |
-| Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | OpenMDW 1.1 (license: other, license_name: openmdw-1.1) |
-| Formato de pesos | safetensors (repo de 248,9 GB), requiere transformers con custom_code |
-| Desarrollador | NVIDIA Corporation |
+| Arquitectura | Híbrido Mamba-2 + Transformer con MoE y Multi-Token Prediction (MTP); codificador visual C-RADIO y conector visión-lenguaje |
+| Parametros totales | 124 453 395 974 (124,45B) |
+| Parametros activos | 12B |
+| Longitud de contexto | Hasta 1 000 000 tokens |
+| Tipos de cuantizacion | BF16 (checkpoint publicado); existe una release NVFP4 del modelo post-entrenado, no de este base |
+| Idiomas soportados | en, es, fr, de, it, ja (además, preentrenamiento continuado en lenguas índicas) |
+| Licencia | OpenMDW 1.1 (uso comercial y no comercial permitido) |
+| Formato de pesos | safetensors (BF16), librería transformers, código personalizado (`nemotron_h_omni`) |
+| Expertos por capa MoE | 512 expertos enrutados |
 | Pipeline | image-text-to-text |
-| Expertos enrutados | 512 expertos enrutados por capa MoE |
-| Fecha de publicacion | 15/10/2026 en Hugging Face |
+| Tamano del repositorio | 248,9 GB |
+| Fecha de publicación | 15 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-La red es un MoE hibrido al estilo Nemotron-H: intercala capas Mamba-2 (modelo de espacio de estados) con capas de atencion y capas MoE de 512 expertos enrutados, mas un cabezal de Multi-Token Prediction que permite decodificacion especulativa nativa, es decir, generar y verificar varios tokens por paso sin un modelo draft externo. La entrada visual se procesa con un codificador C-RADIO seguido de un conector que proyecta las representaciones al espacio del backbone de lenguaje. Con 124,5B parametros totales y 12B activos, el coste de computo por token se aproxima al de un modelo denso de 12B, mientras que el requisito de memoria es el de un modelo de 120B.
+La arquitectura es un híbrido que intercala capas Mamba-2 (modelos de espacio de estados), capas de atención y capas de mezcla de expertos. Cada capa MoE contiene 512 expertos enrutados, lo que da los 124,45B de parámetros totales con solo 12B activos por token. La inclusión de MTP permite decodificación especulativa nativa, es decir, el modelo predice varios tokens por paso para acelerar la inferencia sin un modelo borrador externo. La parte visual la aporta un codificador C-RADIO conectado mediante un conector visión-lenguaje entrenado.
 
-El backbone de lenguaje se inicializa desde Nemotron 3 Super Base y se refina por destilacion desde Nemotron 3 Ultra Base. Sobre esa base, NVIDIA aplica pre-entrenamiento continuado en lenguas indicas, una fase de entrenamiento de contexto largo orientada a alcanzar 1M tokens y un mid-training especifico de ingenieria de software. Los datos de pre-entrenamiento se publican como nvidia/nemotron-pre-training-datasets. Al ser un checkpoint base, no consta que se hayan aplicado fases de RLHF, DPO o cualquier otra alineacion por preferencias; la informacion disponible tampoco detalla el volumen total de tokens de entrenamiento ni la composicion exacta del dataset.
+El backbone lingüístico se inicializa desde Nemotron 3 Super Base y se entrena por destilación desde Nemotron 3 Ultra Base. Después recibe preentrenamiento continuado en lenguas índicas, entrenamiento de contexto largo y mid-training orientado a ingeniería de software. Los datos de preentrenamiento están publicados en el dataset `nvidia/nemotron-pre-training-datasets`. La model card no detalla el número exacto de tokens de entrenamiento ni la composición completa del dataset, ni confirma si hubo RLHF o DPO (al ser un checkpoint base, es esperable que no).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva y modelado de lenguaje puro, sin alineacion conversacional.
-- Procesamiento de imagen y texto (pipeline image-text-to-text): el modelo acepta entradas visuales a traves del codificador C-RADIO.
-- Contexto largo de hasta 1M tokens, adecuado para documentos extensos, repositorios de codigo o secuencias multimodales largas.
-- Capacidades multilingues en ingles, castellano, frances, aleman, italiano y japones, con evaluacion reportada en Global MMLU (8 idiomas) y MGSM (6 idiomas).
-- Rendimiento solido en tareas de codigo y matematicas como backbone base (HumanEval 81,31; MATH-500 81,56; GSM8K 91,74).
-- Decodificacion especulativa nativa mediante Multi-Token Prediction.
-- Capacidad de servir como modelo profesor o alumno en pipelines de destilacion y como base para SFT/RL posteriores.
-- No se documenta soporte de tool calling, function calling ni comportamiento agentico: al ser un modelo base sin post-entrenamiento, no se garantiza seguir instrucciones ni formatos de herramienta.
+- Generación de texto y razonamiento en seis idiomas (inglés, español, francés, alemán, italiano y japonés), con resultados reportados en Global MMLU y MGSM multilingüe.
+- Comprensión de imágenes y texto combinados (pipeline image-text-to-text) gracias al codificador C-RADIO.
+- Razonamiento matemático y resolución de problemas (GSM8K, Minerva MATH, MATH-500).
+- Generación de código y tareas de ingeniería de software (HumanEval, MBPP, LiveCodeBench, BigCodeBench), reforzado por el mid-training específico.
+- Contexto largo de hasta 1M tokens, útil para documentos extensos, repositorios de código o conversaciones multi-turno largas.
+- Decodificación especulativa nativa vía MTP, que reduce la latencia en inferencia autoregresiva.
+- Capacidad de servir como base para fine-tuning supervisado, RL, destilación y adaptación de dominio.
+- No se especifica en la información disponible soporte explícito de tool calling o function calling (es un checkpoint base, no post-entrenado para agentes).
 
 ## Casos de uso
 
-- Pre-entrenamiento continuado en dominio propio: el checkpoint sirve como inicializacion para seguir entrenando con corpus especializados (legal, sanitario, financiero) sin partir de cero, aprovechando los 12B parametros activos para mantener el coste de computo controlado.
-- Adaptacion a nuevos idiomas: al haber sido ya pre-entrenado de forma continuada en lenguas indicas, es un punto de partida razonable para extender cobertura a idiomas no incluidos en los seis soportados mediante entrenamiento adicional.
-- Base para asistentes vision-lenguaje post-entrenados: equipos que necesiten un VLM conversacional pueden aplicar SFT y DPO sobre este checkpoint y obtener su propio modelo ajustado, como hace la propia NVIDIA en la release BF16 post-entrenada de la familia.
-- Comprension de documentos largos con componentes visuales: gracias a la ventana de 1M tokens, permite procesar informes anuales, expedientes o manuales tecnicos completos con tablas y figuras en una sola pasada, sin troceado agresivo.
-- Investigacion en arquitecturas hibridas: la combinacion Mamba-2 + atencion + MoE con 512 expertos por capa lo convierte en un banco de pruebas para estudiar enrutamiento, eficiencia de contexto largo y decodificacion especulativa con MTP.
-- Generacion de datos sinteticos y destilacion: puede actuar como profesor para producir trazas y respuestas que alimenten modelos mas pequenos, o como alumno en destilacion desde modelos mayores.
-- Investigacion en ingenieria de software asistida: su mid-training especifico de software y sus resultados en HumanEval, MBPP y LiveCodeBench lo hacen util como base para modelos de completado de codigo, sujeto a un post-entrenamiento posterior.
-- Analisis de imagenes tecnicas en pipelines de investigacion: el conector vision-lenguaje permite experimentar con descripcion, extraccion de informacion y razonamiento sobre figuras, diagramas y capturas.
+- Desarrollo de modelos visión-lenguaje especializados: partir de este checkpoint y hacer fine-tuning supervisado sobre un dominio concreto (por ejemplo, inspección industrial o documentación técnica) aprovechando que ya integra codificador visual y conector entrenados.
+- Adaptación a dominios verticales con contexto largo: usar la ventana de 1M tokens para tareas de análisis de contratos, expedientes o repositorios completos, ajustando el modelo con datos propios.
+- Investigación en arquitecturas híbridas Mamba-2/MoE: el modelo sirve como banco de pruebas reproducible para estudiar eficiencia de enrutamiento, MTP y decodificación especulativa, con datos de preentrenamiento publicados.
+- Generación de código asistida en pipelines internos: tras un post-entrenamiento ligero, el backbone (con HumanEval 81,31 y MBPP 79,06 en su versión texto) puede integrarse en herramientas de autocompletado o revisión de código.
+- Destilación hacia modelos más pequeños: usar los 120B como profesor para generar datos y entrenar modelos de 7B-30B para despliegue en producción con menores requisitos de hardware.
+- Procesamiento multilingüe de documentos con imágenes: extracción y razonamiento sobre facturas, informes o capturas en español, francés, alemán, italiano o japonés, aprovechando las capacidades multilingües reportadas (Global MMLU 86,56).
+- Evaluación comparativa de bases multimodales: servir como referencia en estudios académicos sobre modelos abiertos de gran escala con licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados corresponden al backbone de texto base de Nemotron 3.5 Super, evaluado antes del entrenamiento vision-lenguaje.
+Los resultados publicados corresponden al backbone de texto de Nemotron 3.5 Super Base, antes del entrenamiento visión-lenguaje. No se han publicado resultados de benchmarks específicos del modelo multimodal en la información disponible.
 
 | Benchmark | Metrica | Resultado (%) |
 |---|---|---|
 | MMLU | Exact match | 84,14 |
-| MMLU-Pro | Exact match, extraccion TigerLab | 76,25 |
+| MMLU-Pro | Exact match, extracción TigerLab | 76,25 |
 | AGIEval-En | CoT exact match | 75,65 |
 | SuperGPQA | CoT | 47,65 |
 | GPQA Diamond | 5-shot, CoT exact match | 66,16 |
@@ -84,52 +83,47 @@ Los resultados publicados corresponden al backbone de texto base de Nemotron 3.5
 | Global MMLU | Media en 8 idiomas | 86,56 |
 | MGSM | 8-shot, CoT nativo, media en 6 idiomas | 87,53 |
 
-No se han publicado en la informacion disponible resultados especificos de las capacidades vision-lenguaje ni comparaciones directas contra otros modelos de la misma categoria.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 249 GB solo para pesos (124,5B parametros x 2 bytes), mas cache KV y activaciones. Es una estimacion derivada del recuento de parametros, no un dato publicado.
-- Cuantizacion a 8 bits: alrededor de 125 GB de pesos; a 4 bits, alrededor de 62 GB. Ambas siguen requiriendo multiples GPU, ya que no existen pesos cuantizados oficiales de este checkpoint (solo se documenta una release NVFP4 del modelo post-entrenado).
-- GPU recomendadas: configuraciones multinodo o multitarjeta con H100 80 GB (4-8 unidades), H200 141 GB (2-4 unidades) o A100 80 GB (4-8 unidades). No se detallan GPU soportadas oficialmente en la informacion proporcionada.
-- Consumer GPU: no cabe. Una RTX 4090 o similar con 24 GB no puede alojar ni la version cuantizada a 4 bits (aproximadamente 62 GB), por lo que se requiere agregacion de memoria entre varias GPU.
-- Opciones de despliegue: la model card indica uso con la libreria transformers y pesos safetensors que requieren custom_code, por lo que es necesario confiar en la implementacion remota del repositorio. El soporte en vLLM, llama.cpp, Ollama o TGI no esta documentado en la informacion disponible; si se cita una release NVFP4 para despliegue optimizado.
-- Latencia y throughput: no disponibles. Como referencia estructural, el coste de computo por token se corresponde con 12B parametros activos, mientras que el ancho de banda de memoria necesario corresponde a un modelo de 120B, de modo que la decodificacion estara limitada por memoria y no por FLOPs. La decodificacion especulativa con MTP puede aumentar el throughput efectivo, pero no se publican cifras.
+- VRAM estimada para inferencia en BF16: aproximadamente 249 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica requiere múltiples GPU de 80 GB (por ejemplo, 4× H100 80GB como mínimo razonable, más margen para contexto largo).
+- Contexto de 1M tokens: la caché KV crece linealmente con la longitud; para aprovechar la ventana completa se necesitan configuraciones de 8× H100/A100 o más, y técnicas de atención eficiente o paralelismo de contexto.
+- GPU recomendadas: H100 SXM, H100 NVL, A100 80GB, y en general GPUs de centro de datos con NVLink para tensor parallelism. No cabe en GPUs de consumo (RTX 4090, 5090) en BF16.
+- Cuantización: el checkpoint publicado es BF16; para despliegue en hardware menor habría que cuantizar a FP8/NVFP4/INT4, aunque no se documentan recetas oficiales para este base (sí existe una release NVFP4 del post-entrenado).
+- Opciones de despliegue: transformers con `nemotron_h_omni` y código personalizado; para producción a gran escala, vLLM o TGI requerirían soporte específico de la arquitectura híbrida Mamba-2/MoE (no confirmado en la información disponible). llama.cpp/Ollama no son viables a este tamaño.
+- Latencia y throughput: no disponibles en la información proporcionada. La decodificación especulativa vía MTP debería mejorar el throughput respecto a un transformer denso equivalente, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de rendimiento de modelos de otras familias con los que comparar directamente. La comparacion posible se limita a las variantes de la propia familia Nemotron 3.5 Super:
+| Modelo | Parametros totales / activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Nemotron 3.5 Super VL 120B A12B Base | 124,45B / 12B | 1M | OpenMDW 1.1 (comercial) | Híbrido Mamba-2/MoE, MTP, visión C-RADIO, datos de preentrenamiento publicados |
+| Nemotron 3.5 Super VL 120B A12B (post-entrenado) | 124,45B / 12B | 1M | OpenMDW 1.1 | Misma base, listo para uso conversacional y personalización |
+| Nemotron 3.5 Super VL 120B A12B NVFP4 | 124,45B / 12B | 1M | OpenMDW 1.1 | Versión cuantizada para despliegue optimizado |
+| Alternativas de otros fabricantes | no disponible | no disponible | no disponible | No se dispone de datos verificables de modelos comparables en la información proporcionada |
 
-| Modelo | Parametros | Contexto | Post-entrenamiento | Formato | Licencia |
-|---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16 (este) | 124,5B totales / 12B activos | 1M tokens | No (checkpoint base) | safetensors BF16 | OpenMDW 1.1 |
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | no disponible en la informacion | no disponible | Si (post-entrenado) | safetensors BF16 | no disponible en la informacion |
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 | no disponible en la informacion | no disponible | Si (post-entrenado) | NVFP4, optimizado para despliegue | no disponible en la informacion |
-
-Las referencias cruzadas con Nemotron 3 Super Base (origen de la inicializacion) y Nemotron 3 Ultra Base (profesor de destilacion) no incluyen especificaciones publicadas en la informacion disponible.
+La comparación con modelos de otros fabricantes (por ejemplo, familias tipo Qwen-VL o Llama Vision de tamaño similar) no puede realizarse con rigor porque la información proporcionada no incluye sus especificaciones ni resultados. Se indica como no disponible.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base sin alineacion por preferencias ni ajuste de instrucciones: no debe usarse directamente como asistente conversacional y puede generar contenido inapropiado, repetitivo o no solicitado ante prompts de usuario.
-- Riesgo de alucinacion inherente al pre-entrenamiento: los benchmarks de veracidad reportados (TruthfulQA MC2 71,18) indican margen de error apreciable.
-- Sesgos: el modelo se entrena sobre datasets de pre-entrenamiento publicados por NVIDIA cuya composicion exacta y analisis de sesgo no se detallan en la informacion disponible. Cabe esperar sesgos presentes en corpus web a gran escala.
-- Cobertura idiomatica limitada a en, es, fr, de, it y ja; el rendimiento en idiomas no representados no esta garantizado.
-- Aunque soporta 1M tokens de contexto, no se documenta la degradacion de rendimiento a longitudes cercanas al maximo; en modelos hibridos con Mamba-2 el comportamiento en recuperacion de informacion muy lejana depende del entrenamiento especifico de contexto largo.
-- Las capacidades vision-lenguaje no cuentan con evaluacion publicada en la informacion disponible: los benchmarks corresponden al backbone de texto antes del entrenamiento multimodal.
-- Licencia OpenMDW 1.1: aunque la model card indica que el modelo esta listo para uso comercial y no comercial, es una licencia personalizada ("other") y conviene revisar el texto completo en openmdw.ai antes de un despliegue en produccion.
-- Los pesos requieren ejecucion de codigo personalizado (custom_code) a traves de transformers con trust_remote_code, lo que implica una superficie de riesgo adicional en entornos de produccion.
-- Despliegue en produccion condicionado por hardware: no cabe en GPU de consumo y necesita agregacion de memoria en varias GPU de datacenter, con el coste asociado.
+- Es un checkpoint base, no post-entrenado: no está alineado para conversación, no sigue instrucciones de forma fiable y puede producir salidas incoherentes o inseguras sin fine-tuning previo.
+- Riesgo de alucinación inherente a modelos base; no se han aplicado técnicas de alineación (RLHF/DPO) que lo mitiguen.
+- Sesgos: los datos de preentrenamiento provienen de corpus web y de NVIDIA; pueden contener sesgos demográficos, culturales y lingüísticos no documentados en detalle.
+- Cobertura idiomática limitada a seis idiomas principales (más índicas en preentrenamiento); el rendimiento en otros idiomas no está garantizado.
+- El contexto de 1M tokens es costoso en memoria y latencia; no todos los frameworks lo soportan de forma eficiente.
+- Licencia OpenMDW 1.1: permite uso comercial, pero conviene revisar los términos exactos (atribución, restricciones de uso aceptable) antes de desplegar en producción.
+- Requiere hardware de centro de datos (múltiples GPU de 80 GB); no es viable en estaciones de trabajo convencionales sin cuantización agresiva.
+- El soporte en vLLM, TGI u otros servidores de inferencia no está confirmado; la arquitectura híbrida con código personalizado puede requerir trabajo de integración.
+- No se documentan capacidades de tool calling ni de agente en este checkpoint base.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16
-- Release post-entrenada BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
-- Release NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
-- Informe tecnico de Nemotron 3.5 Super y Lightning: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf
-- Informe tecnico de Nemotron 3 Ultra: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf
-- Coleccion de modelos Nemotron 3: https://huggingface.co/collections/nvidia/nvidia-nemotron-v3
-- Coleccion de datasets de pre-entrenamiento: https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets
-- Dataset de pre-entrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
-- Pagina de desarrollador de Nemotron: https://developer.nvidia.com/nemotron
+- Versión post-entrenada BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
+- Versión NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
+- Colección Nemotron 3: https://huggingface.co/collections/nvidia/nvidia-nemotron-v3
+- Datasets de preentrenamiento: https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets
+- Página de desarrollador Nemotron: https://developer.nvidia.com/nemotron
+- Informe técnico Nemotron 3.5 Super y Lightning: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf
+- Informe técnico Nemotron 3 Ultra: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
-- Sitio oficial de NVIDIA: https://www.nvidia.com/
+- Discord NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk

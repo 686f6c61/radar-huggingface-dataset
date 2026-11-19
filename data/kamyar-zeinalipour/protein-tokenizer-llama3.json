@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "Kamyar-zeinalipour/protein-tokenizer-llama3",
+  "slug": "kamyar-zeinalipour-protein-tokenizer-llama3",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/protein-tokenizer-llama3",
+  "created_at": "2024-04-19T09:04:38.000Z",
+  "updated_at": "2026-11-18T21:49:07.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "protein",
+    "protein-design",
+    "biology",
+    "tokenizer",
+    "dataset:Kamyar-zeinalipour/UniRef50-HumanProteins",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Design Proteins Using Large Language Models: Enhancements and ...",
+      "url": "https://arxiv.org/html/2408.06396v1",
+      "snippet": "Specifically, we adopt a suite of pre-trained LLMs, including Mistral-7B111huggingface.co/Kamyar-zeinalipour/P-Mistral-7B, Llama-2-7B222huggingface.co/Kamyar-zeinalipour/P-Llama2-7B, Llama-3-8B333https://huggingface.co/Kamyar-zeinalipour/P-Llama3-8B, and gemma-7B444huggingface.co/Kamyar-zeinalipour/P-gemma-7B, to produce valid protein sequences."
+    },
+    {
+      "title": "Design Proteins Using Large Language Models: Enhancements and",
+      "url": "https://arxiv.org/pdf/2408.06396",
+      "snippet": "3https://huggingface.co/Kamyar... training · from extensive datasets. Typically, these models · are trained using unsupervised learning techniques, where they learn to predict the next word or token ......"
+    }
+  ]
+}

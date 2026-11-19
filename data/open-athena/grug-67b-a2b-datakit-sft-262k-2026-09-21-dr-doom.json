@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Page d'accueil Open | Your high-digital place",
-      "url": "https://www.open.global/",
-      "snippet": "L'ESN, Partenaire de confiance qui accompagne les 1000 premières entreprises et organisations françaises engagées dans leur …"
-    },
-    {
-      "title": "Apache OpenOffice",
-      "url": "https://www.openoffice.org/fr/",
-      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
-    },
-    {
-      "title": "OpenAI | Recherche et déploiement",
-      "url": "https://openai.com/fr-FR/",
-      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
-    },
-    {
-      "title": "Open, Aujourd'hui. Et demain. | Open",
-      "url": "https://www.open.global/open/open-aujourdhui-demain",
-      "snippet": "Open est l'ESN partenaire de confiance qui accompagne les 1000 premières entreprises et organisations françaises engagées dans …"
-    },
-    {
-      "title": "OpenAI | Research & Deployment",
-      "url": "https://openai.com/",
-      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
-    }
-  ]
+  "sources": []
 }

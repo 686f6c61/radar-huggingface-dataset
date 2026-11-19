@@ -59,31 +59,5 @@
       "value": 81.77
     }
   ],
-  "sources": [
-    {
-      "title": "PyTorch",
-      "url": "https://pytorch.org/",
-      "snippet": "1 day ago · TL;DR To achieve state-of-the-art performance at the frontier, vLLM is changing its internal implementation in ways that …"
-    },
-    {
-      "title": "Télécharger Torch (gratuit) Windows - Clubic",
-      "url": "https://www.clubic.com/telecharger-fiche418134-torch.html",
-      "snippet": "2 days ago · Torch est un navigateur web fondé sur le moteur Chromium. Il propose une interface familière, proche de celle de …"
-    },
-    {
-      "title": "Get Started - PyTorch",
-      "url": "https://pytorch.org/get-started/locally/",
-      "snippet": "Get Started Select preferences and run the command to install PyTorch locally, or get started quickly with one of the supported cloud …"
-    },
-    {
-      "title": "Torch Browser - Download",
-      "url": "https://torch.en.softonic.com/",
-      "snippet": "Jun 16, 2026 · Torch Browser provides a user-friendly Chromium interface with enhanced media tools for easy downloading and …"
-    },
-    {
-      "title": "torch · PyPI",
-      "url": "https://pypi.org/project/torch/",
-      "snippet": "You can write new neural network layers in Python using the torch API or your favorite NumPy-based libraries such as SciPy. If you …"
-    }
-  ]
+  "sources": []
 }

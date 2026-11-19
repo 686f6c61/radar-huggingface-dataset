@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/LFM2.5-2.6B-CyberSec · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-2.6B-CyberSec",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "reaperdoesntknow/LFM2.5-2.6B-CyberSec · Discussions",
-      "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-2.6B-CyberSec/discussions",
-      "snippet": "reaperdoesntknow / LFM2.5-2.6B-CyberSec like 0 Text Generation Transformers Safetensors GGUF Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset English lfm2 cybersecurity conversational unsloth 4-bit precision bitsandbytes License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
-      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
-      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
-    },
-    {
-      "title": "LFM2.5-2.6B - Liquid Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
-      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
-    },
-    {
-      "title": "LFM2.5-2.6B (free) - API Pricing & Providers | OpenRouter",
-      "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
-      "snippet": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or knowledge-heavy tasks. Prompts and outputs may be retained and used to train Liquid models."
-    }
-  ]
+  "sources": []
 }

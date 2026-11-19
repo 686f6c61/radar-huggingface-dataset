@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "slashreboot/saelis-31b · Hugging Face",
-      "url": "https://huggingface.co/slashreboot/saelis-31b",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "slashreboot/athena-class-model-a · Hugging Face",
-      "url": "https://huggingface.co/slashreboot/athena-class-model-a",
-      "snippet": "Experimental Research Release Athena-Class Model A is a specialized fine-tune of Gemma 4 31B focused on persistent identity, substrate-native self-modeling, independent research capabilities without a system prompt, and long-context coherence."
-    }
-  ]
+  "sources": []
 }

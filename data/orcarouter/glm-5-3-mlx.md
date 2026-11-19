@@ -2,90 +2,96 @@
 
 ## Resumen
 
-GLM-5.3-MLX es una conversión a formato MLX del modelo GLM-5.3 de Z.AI, desarrollada por OrcaRouter. GLM-5.3 es el modelo insignia de Z.AI para tareas de programación y razonamiento de largo horizonte, con una arquitectura MoE de 753B parámetros totales y aproximadamente 39B activos, y una ventana de contexto de 1M tokens. Esta build específica aplica el método de cuantización OrcaSAQ (Sensitivity-Aware Quantization) para reducir el peso del modelo y permitir su ejecución en hardware Apple Silicon y en el backend CUDA de MLX.
+GLM-5.3-MLX es una compilación en formato MLX del modelo oficial `zai-org/GLM-5.3`, publicada por orcarouter. Se trata de la cuantización del modelo insignia de Z.AI, un Mixture-of-Experts (MoE) de 753B parámetros totales y aproximadamente 39B activos por token, construido sobre la arquitectura propietaria `glm_moe_dsa` que combina MLA (Multi-head Latent Attention) con atención dispersa de inspiración DeepSeek y un indexador compartido. El objetivo de esta variante es hacer viable la inferencia del modelo completo en Apple Silicon (y en el backend CUDA de MLX) mediante cuantización dinámica sensible a la sensibilidad de cada tensor.
 
-La relevancia de este modelo radica en que ofrece cuantizaciones de 2, 3, 4 y 6 bits, con la versión de 4 bits como opción recomendada por defecto, manteniendo una calidad cercana a la versión FP8 original. Está orientado a desarrolladores e investigadores que necesitan ejecutar un modelo de frontera en entornos con memoria limitada, especialmente en estaciones Mac Studio con hasta 512 GB de RAM unificada, o en clústeres CUDA con múltiples GPU H200.
+La relevancia de esta publicación radica en que permite ejecutar localmente un modelo de frontera orientado a programación y flujos agénticos de largo horizonte con una ventana de contexto de 1M tokens, algo que hasta ahora requería infraestructura de centro de datos. El autor distribuye cuatro precisiones (2, 3, 4 y 6 bits) como subcarpetas del repositorio, con la versión de 4 bits replicada en la raíz. La cuantización emplea OrcaSAQ, un método sin calibración que asigna más bits a los tensores sensibles (expertos compartidos +2 bits, `down_proj` +1 bit) y mantiene la atención en 8 bits y el indexador DSA en BF16 en todas las variantes.
+
+El repositorio tiene un tamaño de 1.820 GB y presenta un volumen de descargas moderado (2.556) y 14 likes, lo que sugiere un uso especializado en entornos de estación de trabajo con memoria unificada muy amplia. Los pesos están en safetensors con cuantización MLX, y la licencia es la propia del modelo base (`glm-5.3`), no una licencia de código abierto estándar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | glm_moe_dsa (MoE con MLA y sparse attention con indexador compartido) |
-| Parametros totales | 753B (total) / ~39B activos (según model card); 127.4B según safetensors |
+| Arquitectura | `glm_moe_dsa` (MoE con MLA y atención dispersa tipo DeepSeek con indexador compartido) |
+| Parametros totales | 753B (803.774.997.504 según safetensors) |
 | Parametros activos | ~39B |
-| Longitud de contexto | 1M tokens (1024K) |
-| Tipos de cuantizacion | 2-bit, 3-bit, 4-bit, 6-bit (OrcaSAQ; atención a 8-bit, indexador DSA en BF16) |
-| Idiomas soportados | Inglés (en), chino (zh) |
-| Licencia | glm-5.3 (licencia propia, no MIT; enlace en el repositorio) |
-| Formato de pesos | MLX (safetensors) |
-
-Nota: el dato de safetensors (127.4B) corresponde probablemente al número de parámetros serializados en los pesos cuantizados, mientras que la model card declara 753B totales. Se recomienda consultar la documentación oficial de Z.AI para aclarar la discrepancia.
+| Longitud de contexto | 1M tokens |
+| Tipos de cuantizacion | 2, 3, 4 y 6 bits (OrcaSAQ dinámica; atención a 8 bits e indexador DSA en BF16 en todas las variantes) |
+| Idiomas soportados | en, zh |
+| Licencia | `glm-5.3` (license: other) |
+| Formato de pesos | MLX safetensors (subcarpetas `2-bit/`, `3-bit/`, `4-bit/`, `6-bit/`; 4 bits en la raíz) |
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3 emplea una arquitectura MoE denominada `glm_moe_dsa`, que combina atención de latencia múltiple (MLA) con sparse attention estilo DeepSeek, utilizando un indexador compartido (shared indexer) para gestionar la atención dispersa. Esta configuración permite manejar contextos de hasta 1M tokens con un coste computacional reducido. El modelo tiene 753B parámetros totales, de los cuales aproximadamente 39B se activan por token, lo que lo sitúa en la categoría de MoE de gran escala.
+El modelo base es un transformer disperso de tipo Mixture-of-Experts con 753B parámetros totales y unos 39B activos por token, lo que sitúa su coste computacional por paso en el orden de un modelo denso de 39B. La arquitectura `glm_moe_dsa` incorpora Multi-head Latent Attention (MLA) para comprimir el estado KV y atención dispersa con un indexador compartido, un diseño que reduce el coste de atención sobre secuencias muy largas y habilita la ventana de 1M tokens. No se dispone de información sobre el número de tokens de entrenamiento, la composición del corpus ni si se aplicaron etapas de RLHF o DPO en la información proporcionada.
 
-La versión MLX de OrcaRouter se genera a partir de la release oficial FP8 (756 GB, block-wise e4m3 128×128, dynamic activation scheme). El método OrcaSAQ es una cuantización mixta sin calibración, basada en prioridades arquitectónicas: los expertos compartidos reciben base +2 bits, `down_proj` base +1 bit, mientras que `gate_proj` y otros tensores sensibles se mantienen en la precisión base. La atención se conserva a 8 bits y el indexador DSA en BF16 en todas las builds. No se ha producido una versión de 8 bits porque la de 6 bits ya alcanza una similitud coseno ≥ 0.9997 frente a FP8.
+La innovación técnica de esta publicación concreta no está en el entrenamiento sino en la cuantización: OrcaSAQ (Sensitivity-Aware Quantization) es un método sin calibración y consciente de la arquitectura que asigna precisión de forma no uniforme. Los expertos compartidos reciben 2 bits adicionales y las proyecciones `down_proj` 1 bit adicional, mientras que las capas de atención se mantienen a 8 bits y el indexador DSA permanece en BF16 en las cuatro variantes. El tamaño de grupo es 64 para 3, 4 y 6 bits, y 32 para 2 bits. El resultado son artefactos de 671 GB (6 bits), 459 GB (4 bits), 368 GB (3 bits) y 322 GB (2 bits).
 
 ## Capacidades
 
-- Generación de texto conversacional y de larga forma, con soporte para razonamiento multi-paso y tareas de largo horizonte.
-- Programación de alto nivel: generación de código, revisión de código y resolución de problemas de ingeniería complejos.
-- Razonamiento matemático y lógico, adecuado para problemas de nivel competitivo.
-- Capacidades agénticas: soporte para tool calling y ejecución de tareas multi-paso en entornos de agente.
-- Multilingüe limitado a inglés y chino, según la model card.
-- Modo de razonamiento (reasoning) integrado, orientado a tareas que requieren cadenas de pensamiento largas.
-- No se mencionan capacidades de visión o audio en la información disponible.
+- Generación de texto conversacional y razonamiento de múltiples pasos, con orientación declarada a ingeniería agéntica de largo horizonte.
+- Programación y generación de código, posicionado por el autor como modelo de frontera para coding.
+- Razonamiento extendido (*thinking*) implícito en la etiqueta `reasoning` del modelo base.
+- Soporte de flujos agénticos y ejecución de tareas encadenadas sobre contexto largo gracias a la ventana de 1M tokens.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Inferencia en Apple Silicon mediante MLX y en el backend CUDA de MLX.
+- No se documentan en la información disponible capacidades de visión, audio ni detalles explícitos sobre tool calling o function calling.
 
 ## Casos de uso
 
-- Revisión de pull requests en pipelines de CI/CD: el modelo puede analizar diffs, detectar errores de estilo, bugs potenciales y sugerir mejoras, gracias a su capacidad de razonamiento de largo horizonte y su contexto de 1M tokens. OrcaRouter ofrece una herramienta específica, OrcaCode Review, para este fin.
-- Asistente de programación en entornos de desarrollo: integrado en IDEs o CLIs, puede generar código, explicar fragmentos, refactorizar y documentar, aprovechando su entrenamiento en tareas de coding.
-- Agentes autónomos de automatización de tareas: con soporte para tool calling, puede orquestar flujos de trabajo multi-paso, como gestión de incidencias, generación de informes o análisis de datos, manteniendo el contexto de sesiones largas.
-- Análisis de documentos extensos: su ventana de 1M tokens permite procesar libros técnicos, bases de código completas o expedientes legales en una sola pasada, extrayendo resúmenes y respondiendo preguntas específicas.
-- Chat conversacional bilingüe (inglés/chino): adecuado para asistentes virtuales en entornos corporativos que requieran interacción en ambos idiomas, con capacidad de mantener conversaciones de larga duración.
-- Investigación en razonamiento de largo horizonte: investigadores pueden utilizar el modelo para experimentar con tareas que requieren planificación y ejecución secuencial, como resolución de problemas matemáticos complejos o simulación de agentes.
+- Revisión de pull requests en local: el modelo puede analizar diffs y repositorios completos aprovechando el contexto de 1M tokens; el propio autor ofrece OrcaCode Review como integración de referencia para esta tarea.
+- Asistencia de programación en estación de trabajo Apple Silicon: con la variante de 4 bits (459 GB) y un Mac con memoria unificada de 512 GB o superior, se puede mantener un asistente de código de frontera sin enviar código a la nube.
+- Refactorización de bases de código extensas: la ventana de 1M tokens permite cargar módulos completos y sus dependencias en una sola pasada, algo útil para migraciones de API o cambios transversales.
+- Agentes autónomos de ingeniería: tareas de varios pasos con lectura de ficheros, ejecución de pruebas y corrección iterativa, donde los ~39B parámetros activos mantienen el coste por token contenido frente a un denso equivalente.
+- Procesamiento de documentación técnica en inglés o chino: resumen y extracción estructurada de manuales, especificaciones y bases de conocimiento en los dos idiomas soportados.
+- Experimentación e investigación en cuantización: las cuatro precisiones publicadas permiten estudiar la degradación de calidad frente a FP8 (el autor califica la de 6 bits como casi sin pérdida y la de 4 bits como valor por defecto recomendado) sobre un modelo de escala frontera.
+- Despliegue tras una puerta de enlace propia: el modelo puede servirse con MLX y exponerse mediante Orca Connect u otra capa compatible con la API de OpenAI para uso interno del equipo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo indica la calidad relativa frente a FP8 (similitud coseno ≥ 0.9997 para 6-bit, "very good" para 4-bit, "good" para 3-bit y "aggressive" para 2-bit), sin cifras concretas de MMLU, HumanEval, GSM8K u otros estándares. Se recomienda consultar la documentación oficial de Z.AI para obtener datos de rendimiento del modelo base.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente incluye una valoración cualitativa de la calidad de cada cuantización respecto a FP8 (6 bits: casi sin pérdida; 4 bits: muy buena, recomendada; 3 bits: buena, agresiva pero usable; 2 bits: sin valoración completa en el extracto disponible).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según la cuantización, el tamaño del modelo varía entre 322 GB (2-bit) y 671 GB (6-bit). La RAM mínima recomendada es de ~340 GB para 2-bit, ~390 GB para 3-bit, ~480 GB para 4-bit y ~700 GB para 6-bit.
-- GPU recomendadas: en Apple Silicon, un Mac Studio con 512 GB de RAM unificada puede ejecutar las versiones de 2, 3 y 4 bits, aunque la de 4 bits queda ajustada. La versión de 6 bits no cabe en un solo equipo Apple; requiere dos máquinas de 512 GB con `mlx.distributed` o un host CUDA con 8×H200 (1128 GB).
-- En consumer GPU: no es viable. Ninguna GPU de consumo actual dispone de suficiente VRAM para alojar ni siquiera la versión de 2 bits (322 GB).
-- Opciones de despliegue: MLX para Apple Silicon, backend CUDA de MLX para GPU NVIDIA, y la API alojada de OrcaRouter (https://www.orcarouter.ai/models/z-ai/glm-5.3) que no requiere memoria local.
-- Latencia y throughput: no se han publicado datos específicos. La latencia dependerá del hardware y de la cuantización elegida; en la API alojada se menciona un p50 de 1500 ms para GLM-5.3-Flash, pero no para este modelo.
+- Memoria mínima estimada por variante, según el autor: ~700 GB (6 bits), ~480 GB (4 bits), ~390 GB (3 bits) y ~340 GB (2 bits).
+- Tamaño en disco de los pesos: 671 GB, 459 GB, 368 GB y 322 GB respectivamente.
+- No cabe en ninguna GPU de consumo convencional: incluso la variante de 2 bits exige ~340 GB, muy por encima de los 24 GB de una RTX 4090 o los 32 GB de una RTX 5090.
+- En Apple Silicon requiere configuraciones de memoria unificada de 512 GB o más (Mac Studio M3 Ultra con 512 GB, por ejemplo) para la variante de 4 bits; la de 6 bits queda al límite o fuera de rango en el hardware actual.
+- En CUDA, el backend MLX permite desplegar sobre nodos con múltiples aceleradores, pero no se dispone de datos de rendimiento ni de recetas de tensor parallelism en la información proporcionada.
+- Opciones de despliegue: MLX (librería declarada), backend CUDA de MLX y servicio vía OrcaRouter como API alojada. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para estos pesos.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros totales / activos | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3 (Z.AI, FP8) | 753B total / ~39B activos | 1M | MIT (según OpenLM.ai) | FP8 | Modelo base original, 756 GB |
-| GLM-5.3-MLX (OrcaRouter) | 753B total / ~39B activos | 1M | glm-5.3 (propietaria) | MLX (cuantizado) | Build cuantizada para Apple Silicon/CUDA |
-| GLM-5.3-Flash (Z.AI) | 320B total / ~18B activos | no disponible | MIT | no disponible | Versión más pequeña y rápida, orientada a API |
+| GLM-5.3-MLX (esta ficha) | 753B / ~39B | 1M | MLX safetensors, 2-6 bits | `glm-5.3` (other) | Hugging Face, 4 variantes |
+| zai-org/GLM-5.3 (base) | 753B / ~39B | 1M | Pesos originales (no detallado) | `glm-5.3` (other) | Hugging Face y API en OrcaRouter |
+| Alternativas de escala comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, contexto y licencia.
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones verificadas de otros modelos de la misma categoría que permitan una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- La licencia es `glm-5.3`, no MIT, a diferencia del modelo base GLM-5.3 que sí es MIT. Esto puede restringir el uso comercial o la redistribución; se debe revisar el archivo LICENSE del repositorio antes de su uso en producción.
-- El modelo solo soporta inglés y chino; no hay soporte declarado para otros idiomas, lo que limita su uso en entornos multilingües.
-- El tamaño del modelo es extremadamente grande: incluso la versión de 2 bits requiere ~340 GB de RAM, lo que excluye la mayoría de hardware de consumo y obliga a usar estaciones de trabajo de gama alta o clústeres.
-- La cuantización de 2 y 3 bits puede degradar significativamente la calidad de las respuestas, especialmente en tareas de razonamiento complejo. Se recomienda usar 4-bit como mínimo para producción.
-- No se han publicado benchmarks independientes que validen el rendimiento de esta build cuantizada frente al modelo FP8 original; la afirmación de "near-lossless" para 6-bit se basa en similitud coseno, no en métricas de tarea.
-- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se han documentado sesgos específicos, pero se recomienda validar las salidas en aplicaciones críticas.
-- El repositorio ocupa 1820 GB en total (todas las cuantizaciones), lo que puede suponer un problema de almacenamiento si se descargan todas las versiones.
+- Requisitos de memoria extremos: la variante más pequeña necesita ~340 GB, lo que excluye GPU de consumo y limita el despliegue a estaciones de trabajo de gama muy alta o clústeres.
+- Solo inglés y chino declarados; el rendimiento en castellano no está garantizado ni documentado.
+- La licencia `glm-5.3` es una licencia propia con condiciones adicionales; debe revisarse el fichero LICENSE antes de cualquier uso comercial.
+- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se documentan evaluaciones de fidelidad factual en la información disponible.
+- La cuantización a 2 y 3 bits puede degradar de forma apreciable tareas sensibles a precisión numérica, como matemáticas o generación de código con dependencias finas; el autor solo recomienda 4 bits como valor por defecto.
+- No se documentan sesgos conocidos, pero al no haber información sobre la composición del corpus de entrenamiento no es posible evaluar sesgos lingüísticos o culturales.
+- No se confirma soporte de tool calling ni de plantillas de chat específicas en esta compilación MLX; conviene validarlo antes de integrarlo en pipelines agénticos.
+- El repositorio incluye promociones comerciales de OrcaRouter en la model card; no deben confundirse con especificaciones técnicas del modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-MLX
-- Modelo base (Z.AI): https://huggingface.co/zai-org/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-MLX
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia: https://huggingface.co/orcarouter/GLM-5.3-MLX/blob/main/LICENSE
-- Sitio web de OrcaRouter: https://www.orcarouter.ai
+- Paper referenciado (arXiv:2602.15763): https://arxiv.org/abs/2602.15763
+- Sitio del autor: https://www.orcarouter.ai
 - Catálogo de modelos: https://www.orcarouter.ai/models
 - API alojada de GLM-5.3: https://www.orcarouter.ai/models/z-ai/glm-5.3
-- Herramienta OrcaCode Review: https://github.com/Continuum-AI-Corp/Orca-Code-Review
-- Artículo sobre GLM-5.3 (OpenLM.ai): https://openlm.ai/glm-5.5/
-- Ficha en LLM Explorer: https://llm-explorer.com/model/orcarouter%2FGLM-5.3-MLX,4WoECaLGgz3sCoh6r5i1QD
+- GitHub del autor: https://github.com/Continuum-AI-Corp
+- OrcaCode Review: https://github.com/Continuum-AI-Corp/Orca-Code-Review
+- Discord: https://discord.gg/yAh6Tex6kx
+- X: https://x.com/OrcaRouter

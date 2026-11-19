@@ -2,75 +2,88 @@
 
 ## Resumen
 
-Stable Audio 3 Medium es un modelo de generación de audio de texto a audio desarrollado por Stability AI, la tercera generación de su familia Stable Audio. Está diseñado para producir música y efectos de sonido a partir de descripciones textuales, resolviendo el problema de la síntesis de audio de alta calidad sin necesidad de muestras de referencia. El modelo se distribuye con pesos abiertos bajo la licencia Stable Audio Community, aunque su acceso en Hugging Face es restringido y requiere aceptar condiciones.
+Stable Audio 3 Medium es un modelo de generacion de audio texto-a-audio desarrollado por Stability AI, orientado a la sintesis de musica y efectos de sonido. Se trata de un modelo de difusion de 2.305.495.793 parametros (aproximadamente 2,3 mil millones) publicado en Hugging Face bajo el identificador `stabilityai/stable-audio-3-medium`, con un repositorio de 10,4 GB en formato safetensors. Es un fine-tune del modelo base `stabilityai/stable-audio-3-medium-base` y forma parte de la familia stable-audio-3.
 
-Con 2.305.495.793 parámetros y un tamaño de repositorio de 10,4 GB, el modelo se presenta como una opción de tamaño medio dentro de la familia Stable Audio 3, que según Stability AI incluye tres modelos de pesos abiertos entrenados con datos totalmente licenciados. Está disponible a través de la librería `stable-audio-3`, que ofrece una plataforma simplificada para inferencia y fine-tuning, basada en las lecciones aprendidas de la anterior herramienta `stable-audio-tools`. Su relevancia actual radica en ofrecer una alternativa abierta y comercialmente viable para generación de audio profesional.
+El modelo resuelve el problema de generar audio de alta fidelidad a partir de descripciones textuales, cubriendo tanto musica como efectos de sonido. Su relevancia actual radica en que ofrece una alternativa de pesos abiertos (con acceso restringido) en un segmento dominado por servicios propietarios de generacion musical, permitiendo a desarrolladores e investigadores integrar generacion de audio en sus propios pipelines sin depender de APIs externas.
+
+La ficha se basa exclusivamente en los metadatos disponibles en Hugging Face. No se dispone de informacion publica detallada sobre arquitectura interna, composicion del dataset de entrenamiento ni resultados de benchmarks en la informacion proporcionada, por lo que esos apartados se marcan como no disponibles cuando corresponde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión texto-audio) |
+| Arquitectura | Modelo de difusion para generacion de audio (detalle interno no disponible) |
 | Parametros totales | 2.305.495.793 |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (según metadatos de Hugging Face) |
-| Licencia | stable-audio-community (acceso restringido, requiere aceptación) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Ingles (en) |
+| Licencia | stable-audio-community (marcada como "other" en los tags) |
 | Formato de pesos | safetensors |
+| Tamano del repositorio | 10,4 GB |
+| Pipeline | text-to-audio |
+| Libreria | stable-audio-3 |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
+| Modelo base | stabilityai/stable-audio-3-medium-base |
 
 ## Arquitectura y entrenamiento
 
-Los detalles arquitectónicos específicos de Stable Audio 3 Medium no se han publicado en la información disponible. Se sabe que pertenece a la categoría de modelos de difusión para generación de audio, dado su pipeline `text-to-audio` y los tags asociados (`diffusion`, `audio-generation`). El modelo base es `stabilityai/stable-audio-3-medium-base`, lo que sugiere una arquitectura que distingue entre un modelo base y un modelo fine-tuned para la generación final.
+El modelo se describe en los metadatos como un modelo de difusion para generacion de audio (tags `diffusion` y `text-to-audio`), con 2.305.495.793 parametros en formato safetensors. No se dispone de informacion detallada sobre la arquitectura interna (tipo de encoder de texto, arquitectura del decodificador de audio, tipo de scheduler de difusion, uso de latentes o generacion en dominio de onda) en la informacion proporcionada.
 
-En cuanto al entrenamiento, Stability AI indica que la familia Stable Audio 3 se entrenó con datos totalmente licenciados, un aspecto relevante para el uso comercial. No se dispone de información sobre el número de tokens, composición del dataset o técnicas de alineación como RLHF o DPO. El repositorio GitHub oficial se centra en inferencia y fine-tuning, indicando que el modelo está diseñado para ser adaptado por la comunidad, pero no se ofrecen detalles técnicos adicionales sobre la arquitectura interna o el proceso de entrenamiento.
+Respecto al entrenamiento, la unica informacion disponible es que se trata de un fine-tune del modelo `stabilityai/stable-audio-3-medium-base`. No se conocen el numero de tokens o horas de audio empleadas, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.) en los datos disponibles.
 
 ## Capacidades
 
-- Generación de audio a partir de texto: el modelo puede producir música y efectos de sonido a partir de descripciones textuales, según su pipeline `text-to-audio`.
-- Fine-tuning: al estar diseñado para inferencia y fine-tuning, permite adaptarse a dominios específicos de audio (por ejemplo, estilos musicales concretos o tipos de efectos sonoros).
-- Generación con datos licenciados: el entrenamiento con datos totalmente licenciados facilita su uso en aplicaciones comerciales sin problemas de derechos de autor.
-- Soporte de múltiples salidas de audio: aunque no se detallan las longitudes exactas, la familia Stable Audio ha soportado históricamente generación de clips de duración variable (típicamente hasta 95 segundos en versiones anteriores; este dato no está confirmado para la versión 3).
-- No se ha confirmado soporte de tool calling, agentes, ni capacidades multimodales más allá de texto a audio.
+- Generacion de audio a partir de texto (text-to-audio): sintesis de clips de audio condicionados por una descripcion textual.
+- Generacion musical: produccion de fragmentos musicales a partir de prompts descriptivos.
+- Generacion de efectos de sonido: creacion de SFX para videojuegos, cine o produccion multimedia.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (no es un modelo de lenguaje).
+- Capacidades multilingues: limitadas al ingles segun los metadatos (`en`).
+- Capacidades especiales: no se documentan modos de pensamiento, vision ni audio de entrada en la informacion disponible.
 
 ## Casos de uso
 
-- Producción musical automatizada: el modelo puede generar pistas musicales completas a partir de descripciones como "tema electrónico ambiental a 120 BPM con sintetizadores brillantes", útil para creadores que necesitan material base rápido.
-- Diseño de sonido para videojuegos: permite generar efectos de sonido específicos (pasos, ambientaciones, impactos) a partir de texto, acelerando el flujo de trabajo de los diseñadores de audio.
-- Generación de bandas sonoras para vídeo: los creadores de contenido pueden producir música de fondo personalizada sin depender de librerías de stock, gracias a la licencia de datos de entrenamiento.
-- Prototipado de ideas musicales: compositores y productores pueden usar el modelo para explorar variaciones de una idea textual antes de desarrollarla manualmente.
-- Fine-tuning para marcas o estilos específicos: mediante el repositorio oficial, un estudio puede ajustar el modelo con su propio catálogo de audio para generar contenido coherente con su identidad sonora.
-- Educación y experimentación: investigadores y estudiantes pueden estudiar la generación de audio con difusión y experimentar con técnicas de fine-tuning en un modelo de tamaño medio.
+- Produccion musical asistida: el modelo puede generar fragmentos musicales a partir de descripciones textuales, lo que permite a compositores y productores obtener borradores o ideas base rapidamente sin partir de cero.
+- Diseno de efectos de sonido para videojuegos: los estudios pueden generar SFX especificos (pasos, impactos, ambientes) mediante prompts, agilizando la iteracion en el diseno sonoro.
+- Postproduccion audiovisual: generacion de ambientes y texturas sonoras para cine, publicidad o podcasts, integrable en pipelines de edicion como fuente de material adicional.
+- Creacion de contenido para redes y multimedia: generacion de jingles, cortinillas o fondos musicales para videos cortos y contenido digital.
+- Prototipado rapido en herramientas creativas: integracion del modelo en aplicaciones de diseno sonoro para ofrecer generacion bajo demanda a usuarios no tecnicos.
+- Investigacion en generacion de audio: al ser un modelo de pesos abiertos con acceso restringido, sirve como base para experimentos de fine-tuning, evaluacion de metodos de difusion aplicados a audio o estudios comparativos.
+- Aumento de datos para entrenamiento de otros sistemas: generacion de clips de audio sinteticos etiquetados para ampliar datasets de tareas de clasificacion o deteccion de audio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos comparativos de calidad objetiva (como FAD, CLAP score, etc.) para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo tiene aproximadamente 2,3 mil millones de parámetros y un tamaño de repo de 10,4 GB, lo que implica que la inferencia requiere una GPU con al menos 12-16 GB de VRAM en precisión FP16 (estimación basada en el tamaño de los pesos; no se han publicado requisitos oficiales).
-- GPU recomendadas: tarjetas de gama alta como RTX 3090, RTX 4090, A100 o H100, dependiendo de la velocidad de generación deseada.
-- Es posible que quepa en GPUs de consumo como la RTX 4080 o 4090, pero no se ha confirmado oficialmente.
-- Opciones de despliegue: la librería `stable-audio-3` proporciona una interfaz para inferencia; no se mencionan integraciones con vLLM, llama.cpp u Ollama, ya que estas son específicas de modelos de lenguaje.
-- La latencia y el throughput dependen fuertemente del hardware y de la longitud del audio generado; no se han publicado cifras concretas.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamano del repositorio (10,4 GB en safetensors), la inferencia en precision completa requeriria al menos esa cantidad de memoria, y en la practica mas por los estados intermedios del proceso de difusion.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; el tamano de pesos (10,4 GB) sugiere que podria requerir GPUs con 16 GB o mas de VRAM, pero este dato no esta verificado en la informacion disponible.
+- Opciones de despliegue: la libreria asociada es `stable-audio-3`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente a difusion de audio).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa fiable con otros modelos de generación de audio de código abierto (como AudioLDM, MusicGen o Stable Audio 2). Los datos de rendimiento y arquitectura no están disponibles, por lo que cualquier comparación sería especulativa.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa rigurosa con alternativas de la misma categoria.
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Stable Audio 3 Medium | 2.305.495.793 | No disponible | stable-audio-community | Pesos abiertos con acceso restringido |
+| Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo es restringido: requiere aceptar las condiciones de la licencia en Hugging Face, lo que puede limitar su uso en entornos automatizados o corporativos.
-- La licencia `stable-audio-community` tiene términos específicos que deben revisarse antes de un uso comercial; aunque los datos de entrenamiento están licenciados, la licencia del modelo puede imponer restricciones adicionales.
-- El modelo solo soporta inglés en los metadatos, lo que puede limitar la generación de audio a partir de descripciones en otros idiomas.
-- No se han publicado detalles sobre sesgos, alucinaciones o artefactos en el audio generado; como todo modelo generativo, puede producir resultados inesperados o de baja calidad en ciertos prompts.
-- La falta de información sobre la longitud máxima de audio generado y la ventana de contexto impide planificar casos de uso que requieran clips largos o continuos.
-- El repositorio GitHub se describe como "enfocado y simplificado", lo que sugiere que algunas funcionalidades de la versión anterior (`stable-audio-tools`) pueden no estar disponibles.
+- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse presumiblemente con datos musicales y de audio, podria reflejar sesgos estilisticos y culturales del dataset.
+- Riesgo de alucinacion: no aplica en el sentido de modelos de lenguaje, pero la generacion puede producir audio incoherente o no fiel al prompt en casos ambiguos o poco representados.
+- Limitaciones de idioma: el modelo solo declara soporte para ingles (`en`), por lo que los prompts en castellano pueden degradar la calidad o el ajuste al texto.
+- Restricciones de licencia: la licencia `stable-audio-community` (marcada como "other") impone condiciones especificas de uso; es imprescindible revisar los terminos antes de cualquier uso comercial.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que anade un paso administrativo antes de la descarga.
+- Caveats para produccion: no se dispone de datos publicos sobre latencia, throughput ni estabilidad en entornos de alta carga, por lo que sera necesario realizar pruebas propias de rendimiento antes de desplegarlo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-medium
-- Página oficial de Stable Audio 3.0: https://stability.ai/stable-audio
-- Repositorio GitHub: https://github.com/Stability-AI/stable-audio-3
-- README en GitHub: https://github.com/Stability-AI/stable-audio-3/blob/main/README.md
-- README en Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-medium/blob/main/README.md
+- Modelo en Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-medium
+- Modelo base: https://huggingface.co/stabilityai/stable-audio-3-medium-base
+- Paper de referencia (arXiv): https://arxiv.org/abs/2605.17991

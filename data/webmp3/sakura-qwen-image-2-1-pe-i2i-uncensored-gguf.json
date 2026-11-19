@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/",
-      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
-    },
-    {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/?hl=hi",
-      "snippet": "कोई अकाउंट बनाएँ या Instagram में लॉग इन करें - आपको पसंद करने वाले लोगों के साथ अपनी पसंद की चीज़ें शेयर करें."
-    },
-    {
-      "title": "About Instagram: Features, Safety, Community & More",
-      "url": "https://about.instagram.com/",
-      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
-    },
-    {
-      "title": "Instagram Direct avec Messenger | Discussion vidéo et DM | À propos …",
-      "url": "https://about.instagram.com/fr-fr/features/direct",
-      "snippet": "Envoyez des messages, des photos et des vidéos à vos ami·es sur Facebook et Instagram, et ajoutez-y des effets et des légendes. …"
-    },
-    {
-      "title": "Help Center",
-      "url": "https://help.instagram.com/1645522102409931",
-      "snippet": "Find solutions and support for your Instagram account on the Help Center."
-    }
-  ]
+  "sources": []
 }

@@ -2,94 +2,103 @@
 
 ## Resumen
 
-GLM-5.3-8GB-SuperExpert es un modelo de generacion de texto publicado por el usuario shashanth-27xA9 en Hugging Face bajo licencia Apache 2.0. Se presenta como una "compact reasoning engine" de menos de 10 GB orientada a razonamiento, matematicas y sintesis de codigo bilingue (ingles y chino) sobre hardware de consumo, concretamente portatiles con 16 GB de RAM y GPU gratuitas T4 de Google Colab. El modelo declara 4.000 millones de parametros distribuidos en 28 capas transformer segun la model card, aunque el recuento real de safetensors asciende a 4.327.984.128 parametros.
+GLM-5.3-8GB-SuperExpert es una compresión extrema del modelo base zai-org/GLM-5.3-Flash, publicada por el usuario shashanth-27xA9 bajo licencia Apache 2.0. El autor aplica una técnica propia denominada AW-SECD (Activation-Weighted Super-Expert Consolidation & Residual Drift Compensation) para reducir un modelo Mixture-of-Experts de gran tamano a un artefacto de aproximadamente 8 GB ejecutable en hardware de consumo. El repositorio contiene pesos en safetensors (4.327.984.128 parámetros reales según el índice de safetensors) y una cuantización GGUF Q4_K_M de 8,07 GB.
 
-El modelo se distribuye en formato safetensors nativo (dos shards) con un peso total en disco de 8,07 GB, y el autor incluye un Modelfile para ejecucion local con Ollama, ademas de referencias a una version posterior (v2, 9,2 GB) y a otros modelos de la misma serie. La ficha del autor menciona una longitud de contexto de 131.072 tokens y dependencias estandar de `transformers` y `accelerate`.
+El modelo se distribuye con la etiqueta de "laptop-runnable" y apunta a escenarios de inferencia local sin GPU dedicada, incluyendo Apple Silicon, CPUs con AVX2/AVX-512 y GPUs de consumo con 6-16 GB de VRAM. El autor declara compatibilidad con Ollama, llama.cpp, LM Studio, Jan.ai y transformers con `trust_remote_code`, e incluye notebooks de Colab y Kaggle para ejecución en GPU gratuita.
 
-Es relevante ahora porque propone un perfil de despliegue en hardware muy modesto con contexto largo declarado, un nicho con demanda creciente entre desarrolladores que quieren probar modelos de razonamiento sin infraestructura dedicada. No obstante, conviene senalar que la model card no documenta el proceso de entrenamiento, los datos utilizados ni resultados de benchmarks verificables, por lo que las afirmaciones sobre capacidades deben tratarse con cautela.
+La relevancia del artefacto es fundamentalmente práctica: propone llevar un modelo de razonamiento y código de escala frontier a un portátil estándar. No obstante, las cifras de rendimiento y la metodología AW-SECD provienen exclusivamente de la model card del autor y no cuentan con verificación independiente en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer, 28 capas (segun model card) |
-| Parametros totales | 4.327.984.128 (recuento real de safetensors); la model card declara 4.000 millones |
-| Parametros activos | no disponible (no se describe como MoE) |
-| Longitud de contexto | 131.072 tokens (declarado en la model card) |
-| Tipos de cuantizacion | safetensors nativo; se menciona GGUF y Ollama en los tags, pero no se detallan variantes concretas |
-| Idiomas soportados | ingles (en), chino (zh) |
+| Arquitectura | Mixture-of-Experts (MoE) derivada de GLM-5.3-Flash; transformer causal con `custom_code` (glm4/glm5_flash) |
+| Parametros totales | 4.327.984.128 (según safetensors del repo) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4-bit (AW-SECD), GGUF Q4_K_M; pesos safetensors en fp16/fp32 según runtime |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (dos shards: `model-00001-of-00002.safetensors` y `model-00002-of-00002.safetensors`) |
+| Formato de pesos | safetensors, GGUF (Q4_K_M, 8,07 GB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe un transformer de 28 capas con 4.000 millones de parametros declarados (4,33 mil millones reales en safetensors). El modelo se distribuye en safetensors nativo y funciona con `transformers` y `accelerate` estandar, sin necesidad de compilacion C++ personalizada segun el autor. El contexto declarado es de 131.072 tokens.
+El modelo base es zai-org/GLM-5.3-Flash, una arquitectura Mixture-of-Experts de la familia GLM. El autor no documenta en la información disponible el número de expertos, la dimensión oculta, el número de capas ni la ventana de contexto del modelo original. La transformación aplicada, AW-SECD, se describe como una consolidación de "super-expertos" ponderada por activaciones, con compensación de deriva residual; el autor afirma que preserva el 95,6 % del conocimiento del modelo original, pero no se aporta el detalle algorítmico, el conjunto de calibración ni el número de tokens utilizado.
 
-No se documenta en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se detalla ninguna innovacion arquitectonica especifica (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.) mas alla de la referencia generica a "GLM" y "glm-edge" en los tags. La model card emplea terminos como "AW-SECD 8-expert consolidation" al describir la version v2, pero no se aporta definicion tecnica ni se aplica de forma explicita a este modelo. Todos estos aspectos deben considerarse no documentados.
+No hay información sobre el dataset de entrenamiento del modelo base, sobre si hubo RLHF/DPO, ni sobre el proceso de destilación o fusión de expertos. Tampoco se documenta la longitud de contexto efectiva tras la compresión, dato crítico para evaluar su uso en producción. La model card menciona técnicas de cuantización de 4 bits y etiquetas como `svd` y `zero-drift`, que sugieren descomposición en valores singulares y corrección de errores de cuantización, pero sin especificación técnica verificable.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y chino.
-- Razonamiento y matematicas, segun la descripcion del autor ("high-performance reasoning, mathematics").
-- Sintesis de codigo bilingue (ingles y chino), segun la model card.
-- Soporte de contexto largo declarado de hasta 131.072 tokens.
-- Ejecucion local via Ollama mediante Modelfile incluido.
-- Inferencia con `transformers` y `accelerate` sin dependencias nativas adicionales.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo "thinking" explicito.
+- Generación de texto conversacional multi-turno con plantilla de chat basada en tokens especiales `<|user|>` y `<|assistant|>`.
+- Razonamiento paso a paso en dominios científicos y de sentido común (el ejemplo de la model card es una pregunta de física estilo ARC-Challenge).
+- Razonamiento matemático multi-paso (ejemplo GSM8K con resolución de ecuaciones lineales).
+- Generación de código Python, incluyendo funciones con docstring y manejo de casos límite (ejemplo HumanEval sobre el algoritmo de Kadane).
+- Soporte de cuantización 4-bit y ejecución en CPU, GPU y Apple Silicon vía llama.cpp/Ollama.
+- Compatibilidad declarada con `transformers` mediante `trust_remote_code=True` y con endpoints compatibles.
+- Capacidades multilingües limitadas a inglés y chino según los metadatos del repositorio.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo "thinking" explícito en la información disponible.
 
 ## Casos de uso
 
-- Prototipado de razonamiento en portatiles: con un peso de 8,07 GB y consumo declarado de 4,2 a 8,1 GB de VRAM/RAM, el modelo puede cargarse en un portatil de 16 GB de RAM para experimentar con tareas de razonamiento sin GPU dedicada.
-- Pruebas en Google Colab gratuito: el autor indica compatibilidad con la GPU T4 gratuita, lo que permite validar prompts y flujos de razonamiento en notebooks sin coste de infraestructura.
-- Generacion de codigo en entornos con recursos limitados: la model card lo orienta a sintesis de codigo bilingue, por lo que puede emplearse en asistentes de codigo locales para desarrolladores que trabajan en ingles o chino.
-- Despliegue local con Ollama: el Modelfile incluido permite crear una instancia local (`ollama create glm53-8gb -f Modelfile`) para uso interactivo en terminal, util para tareas de redaccion o consultas tecnicas sin conexion.
-- Procesamiento de documentos largos: el contexto declarado de 131.072 tokens permitiria, en teoria, resumir o extraer informacion de documentos extensos en una sola pasada, aunque esta capacidad no esta validada con benchmarks en la informacion disponible.
-- Evaluacion comparativa de modelos compactos: investigadores que estudian el equilibrio entre tamano, contexto y capacidades pueden usar este modelo como referencia de un modelo sub-10 GB con contexto largo declarado.
-- Educacion y demos: al ejecutarse en hardware de consumo, sirve para talleres o demostraciones de inferencia local sin depender de APIs en la nube.
+- Asistencia de razonamiento científico en local: el modelo puede resolver preguntas de física y sentido común con deducción causal paso a paso, adecuado para entornos educativos offline donde no se puede enviar datos a la nube.
+- Tutoría matemática en portátil: con 8 GB de huella, permite resolver ecuaciones y problemas multi-paso en un equipo de 16 GB de RAM sin GPU, útil para estudiantes o docentes con hardware limitado.
+- Generación de código en estaciones de trabajo sin GPU: la cuantización Q4_K_M y la compatibilidad con llama.cpp permiten autocompletar funciones Python y generar docstrings en un portátil Intel/AMD con AVX2.
+- Prototipado rápido en notebooks gratuitos: los notebooks de Colab y Kaggle incluidos permiten ejecutar el modelo en una Tesla T4 o P100 sin coste, adecuado para validar prompts antes de desplegar.
+- Despliegue en Apple Silicon para desarrollo: la verificación del autor reporta más de 25 tok/s en memoria unificada de 16 GB con Metal, lo que lo hace viable como asistente de código local en MacBook.
+- Evaluación de técnicas de compresión: investigadores interesados en cuantización extrema y consolidación de expertos pueden usar el artefacto como caso de estudio, comparando sus resultados con el modelo base GLM-5.3-Flash.
+- Chat conversacional offline en entornos air-gapped: al ejecutarse con Ollama o LM Studio sin conexión, sirve para asistentes internos en redes aisladas, siempre que el uso sea en inglés o chino.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Los únicos datos disponibles provienen de la model card del autor y no han sido verificados de forma independiente. Se presentan tal cual, sin comparación con modelos similares porque no se aportan resultados de las alternativas.
+
+| Benchmark | Resultado declarado | Nota |
+|---|---|---|
+| ARC-Challenge | 82,5 % | Retención declarada del 95,6 % respecto al base |
+| GSM8K | 77,8 % | "Zero-drift" según el autor |
+| HumanEval | 76,1 % | Generación de código Python |
+
+No se han publicado resultados de benchmarks verificados de forma independiente en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: entre 4,2 GB y 8,1 GB segun la model card (dependiendo de la precision y del offload).
-- GPU recomendadas por el autor: Google Colab T4 (gratuita).
-- Compatibilidad con hardware de consumo: si, en portatiles con 16 GB de RAM; el peso en disco es de 8,07 GB.
-- Opciones de despliegue: `transformers` + `accelerate`, Ollama (Modelfile incluido); se mencionan GGUF y LM Studio en los tags y enlaces, pero sin instrucciones detalladas en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: 8,0 GB para la versión GGUF Q4_K_M; el repo completo en safetensors ocupa 34,2 GB, por lo que la ejecución en fp16 requiere del orden de 8-9 GB de VRAM solo para pesos, más overhead de activaciones y caché KV.
+- GPU recomendadas: Tesla T4 o P100 en Colab/Kaggle (verificado por el autor), GPUs NVIDIA consumer con 6-16 GB de VRAM mediante offload CUDA.
+- Cabe en GPU de consumo: sí, según el autor, en tarjetas con 6-16 GB de VRAM; también en Apple Silicon con 16 GB de memoria unificada (Metal, más de 25 tok/s declarados).
+- CPU: Intel/AMD con AVX2 o AVX-512 y 16 GB de RAM del sistema, ejecución completamente offline verificada por el autor.
+- Opciones de despliegue: Ollama (`ollama run shashanth-27xA9/glm-5.3-8gb-superexpert`), llama.cpp (`llama-cli` con el GGUF), transformers con `trust_remote_code`, LM Studio, Jan.ai y endpoints compatibles.
+- Latencia y throughput: el autor declara más de 25 tok/s en Apple Silicon; no se aportan cifras para CPU ni para GPU NVIDIA. No hay datos de latencia de primer token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| GLM-5.3-8GB-SuperExpert | 4,33 mil millones (real) | 131.072 (declarado) | Apache 2.0 | Sub-10 GB, safetensors, Ollama |
-| GLM-5.3-SuperExpert-v2-9.2GB | no disponible | no disponible | Apache 2.0 (segun enlace) | Version posterior del mismo autor, 9,2 GB |
-| Kimi-K3.1-Pro-SuperExpert-9.2GB | no disponible | no disponible | no disponible | Otro modelo de la misma serie segun la model card |
+No se dispone de datos de rendimiento verificados de este modelo ni de alternativas comparables en la información proporcionada. La comparación se limita a características estructurales declaradas por el autor frente al modelo base.
 
-No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa con alternativas de otros autores.
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| GLM-5.3-8GB-SuperExpert | 4.327.984.128 (según safetensors) | no disponible | Apache 2.0 | safetensors, GGUF Q4_K_M | Hugging Face, Ollama, LM Studio |
+| zai-org/GLM-5.3-Flash (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Alternativas de 4-8 GB para portátil | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La model card no documenta el proceso de entrenamiento, los datos utilizados ni la procedencia de los pesos; no es posible verificar el origen del modelo a partir de la informacion disponible.
-- No hay resultados de benchmarks publicados, por lo que las afirmaciones sobre razonamiento, matematicas y codigo no estan respaldadas por mediciones verificables.
-- El recuento de parametros de la model card (4.000 millones) difiere del recuento real de safetensors (4.327.984.128); conviene usar el dato real.
-- El contexto de 131.072 tokens es una declaracion del autor sin validacion documentada; el rendimiento real en contextos largos puede degradarse.
-- Solo se declaran idiomas ingles y chino; el rendimiento en castellano no esta documentado.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad.
-- La licencia Apache 2.0 permite uso comercial, pero al no documentarse el entrenamiento, el usuario asume el riesgo de reclamaciones de terceros sobre los datos de origen.
-- El modelo se presenta con nombres de marca ("GLM", "GLM-5.3") que pueden sugerir una relacion con modelos oficiales de Zhipu AI; la informacion disponible no confirma ni desmiente tal relacion, por lo que debe tratarse como un modelo independiente del autor shashanth-27xA9.
+- Las cifras de benchmarks (ARC-Challenge 82,5 %, GSM8K 77,8 %, HumanEval 76,1 %) y la retención del 95,6 % son afirmaciones del autor sin verificación independiente; deben tratarse con cautela en decisiones de producción.
+- La metodología AW-SECD no está documentada técnicamente en la información disponible: no se especifican el algoritmo exacto, el conjunto de calibración ni los criterios de consolidación de expertos.
+- El número real de parámetros del artefacto (4.327.984.128) es muy inferior al del modelo base descrito en la model card como "320B parámetros"; la relación entre ambos y el proceso de reducción no se detalla.
+- Idiomas limitados a inglés y chino; no se declara soporte de español, lo que restringe su uso en producción para mercados hispanohablantes.
+- Longitud de contexto no documentada; no es posible garantizar conversaciones multi-turno largas ni procesamiento de documentos extensos.
+- No se documenta soporte de tool calling, function calling ni comportamiento agéntico, capacidades habituales en modelos actuales de código y razonamiento.
+- Riesgo de alucinación inherente a modelos de 4-bit comprimidos; la cuantización agresiva puede degradar la coherencia en cadenas de razonamiento largas.
+- Requiere `trust_remote_code=True` en transformers, lo que implica ejecutar código del repositorio; conviene auditar el código antes de usarlo en entornos sensibles.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base GLM-5.3-Flash puede tener condiciones adicionales no reflejadas en la información disponible; conviene verificar la licencia del modelo original.
+- El repositorio tiene 1 like y un autor no oficial (shashanth-27xA9), lo que sugiere ausencia de revisión por parte de la comunidad; la madurez y el mantenimiento no están garantizados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert
-- Arbol de archivos: https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert/tree/main
-- Modelfile para Ollama: https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert/blob/main/Modelfile
-- Version v2 (9,2 GB): https://huggingface.co/shashanth-27xA9/GLM-5.3-SuperExpert-v2-9.2GB
-- Demo interactiva en Spaces: https://huggingface.co/spaces/shashanth-27xA9/GLM-5.3-SuperExpert-Demo
-- Notebook de demo en Kaggle: https://www.kaggle.com/code/hariniathukuri/glm-5-3-superexpert-v2-demo
-- Notebook de cuantizacion GGUF y Ollama: https://huggingface.co/shashanth-27xA9/GLM-5.3-SuperExpert-v2-9.2GB/blob/main/1_click_build_and_upload_gguf.ipynb
-- Notebook de ejecucion en Colab: https://huggingface.co/shashanth-27xA9/GLM-5.3-SuperExpert-v2-9.2GB/blob/main/1_click_run_superexpert.ipynb
-- Modelo Kimi K3.1 Pro SuperExpert: https://huggingface.co/shashanth-27xA9/Kimi-K3.1-Pro-SuperExpert-9.2GB
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
+- GGUF Q4_K_M directo: https://huggingface.co/shashanth-27xA9/GLM-5.3-8GB-SuperExpert/resolve/main/glm-5.3-8gb-superexpert-q4_k_m.gguf
+- Notebook Colab de construcción y subida de GGUF: https://colab.research.google.com/github/shashanth-27xA9/GLM-5.3-8GB-SuperExpert/blob/main/1_click_build_and_upload_gguf.ipynb
+- Notebook Colab de benchmarks: https://colab.research.google.com/github/shashanth-27xA9/GLM-5.3-8GB-SuperExpert/blob/main/benchmark_evaluation_and_test.ipynb
+- Demo web (Space): https://huggingface.co/spaces/shashanth-27xA9/GLM-5.3-SuperExpert-Demo
+- Notebook Kaggle: https://www.kaggle.com/code/hariniathukuri/glm-5-3-superexpert-v2-demo
+- Modelo hermano GLM-5.3-SuperExpert-v2 (9,2 GB): https://huggingface.co/shashanth-27xA9/GLM-5.3-SuperExpert-v2-9.2GB

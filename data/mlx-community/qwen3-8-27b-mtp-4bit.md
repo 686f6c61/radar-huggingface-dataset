@@ -2,74 +2,85 @@
 
 ## Resumen
 
-El repositorio `mlx-community/Qwen3.8-27B-MTP-4bit` contiene los pesos del módulo Multi-Token Prediction (MTP) extraídos del modelo `Qwen/Qwen3.8-27B` y cuantizados a 4 bits con la herramienta `mlx_vlm.convert`. Este drafter está diseñado exclusivamente para decodificación especulativa en el runtime MLX, acelerando la generación de texto del modelo objetivo Qwen3.8-27B. No es un modelo independiente: requiere un checkpoint objetivo compatible del mismo modelo base para funcionar.
+Qwen3.8-27B-MTP-4bit es un adaptador de pesos que contiene exclusivamente el módulo de predicción multi-token (MTP, Multi-Token Prediction) extraído del modelo Qwen/Qwen3.8-27B y cuantizado a 4 bits en formato MLX. Lo publica la organización mlx-community, que mantiene conversiones de modelos populares para el ecosistema MLX de Apple Silicon. No es un modelo autónomo: funciona como modelo borrador (draft model) en decodificación especulativa junto a un checkpoint objetivo compatible de Qwen3.8 27B.
 
-El drafter tiene aproximadamente 66 millones de parámetros (66.381.312), un tamaño muy reducido en comparación con los 27B del modelo completo, lo que permite ejecutarlo como borrador en paralelo y validar sus predicciones con el modelo grande, reduciendo el número de pasos de decodificación y mejorando la latencia. La cuantización MLX affine 4-bit con grupo de tamaño 64 reduce aún más su huella de memoria, ocupando solo 0,3 GB en disco.
+Su relevancia es práctica: la decodificación especulativa permite acelerar la generación al proponer varios tokens por paso y validarlos contra el modelo objetivo. Al empaquetar el cabezal MTP nativo del modelo base como borrador cuantizado a 4 bits, se evita entrenar un draft model separado y se reduce el coste de memoria del componente especulativo. El tamaño del repositorio es de 0,3 GB y el checkpoint contiene 424.699.392 parámetros, muy por debajo de los 27B del modelo objetivo, lo que confirma que solo incluye el bloque borrador.
 
-Este proyecto es relevante para desarrolladores que despliegan Qwen3.8-27B en entornos Apple Silicon o con MLX, ya que ofrece una vía práctica para acelerar la inferencia sin sacrificar calidad. La licencia Apache 2.0 permite uso comercial y modificación, aunque las limitaciones del modelo base continúan aplicándose.
+La arquitectura declarada es `qwen3_5_mtp`, con un tamaño de bloque MTP de 3, cuantización afín de 4 bits con group size 64 y licencia Apache 2.0 heredada del modelo base. El adaptador no incluye embeddings de tokens ni la cabeza de lenguaje: ambos los aporta el modelo objetivo en tiempo de ejecución.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_mtp (drafter MTP para Qwen3.8-27B) |
-| Parametros totales | 66.381.312 (aprox. 66M) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
+| Arquitectura | qwen3_5_mtp (bloque MTP de prediccion multi-token, tipo transformer, acoplado a Qwen3.8 27B) |
+| Parametros totales | 424.699.392 (solo pesos del borrador MTP) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (la determina el modelo objetivo Qwen3.8-27B) |
 | Tipos de cuantizacion | MLX affine 4-bit, group size 64 |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El drafter MTP es un componente de decodificación especulativa que predice múltiples tokens a la vez (block size 3). En lugar de generar un token por paso, el drafter produce una secuencia candidata de tres tokens que el modelo objetivo valida en paralelo. Si la predicción es correcta, se aceptan varios tokens en un solo paso de decodificación, reduciendo la latencia total.
+El artefacto no es un transformer completo, sino el subconjunto de pesos correspondiente al módulo de predicción multi-token del modelo Qwen3.8-27B. En decodificación especulativa con MTP, el bloque borrador predice varios tokens futuros por paso (block size de 3 en este caso) y el modelo objetivo verifica esas propuestas en paralelo, aceptando el prefijo correcto. El adaptador depende del objetivo para los embeddings de tokens y la cabeza de lenguaje, que no se incluyen en el repositorio.
 
-Los pesos del drafter se extraen del checkpoint original de Qwen3.8-27B (revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`) y se cuantizan con `mlx_vlm.convert` a 4 bits. No se ha publicado información sobre el proceso de entrenamiento específico del drafter, ya que se trata de un subconjunto de los pesos del modelo base, no de un modelo entrenado de forma independiente. El adaptador solo contiene los pesos del drafter; los embeddings y la cabeza de lenguaje se toman del modelo objetivo en tiempo de ejecución.
+Los pesos se obtuvieron separando el módulo MTP del checkpoint upstream (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`) y cuantizándolos con `mlx_vlm.convert`. No se dispone de información sobre datos de entrenamiento, número de tokens, composición del dataset ni etapas de RLHF o DPO, ya que el adaptador hereda el entrenamiento del modelo base y la model card no lo detalla. La innovación técnica relevante es el uso del cabezal MTP nativo como borrador, lo que evita el coste de entrenar y mantener un draft model independiente.
 
 ## Capacidades
 
-- No es un modelo de generación autónoma: su única función es servir como borrador en decodificación especulativa.
-- Acelera la inferencia del modelo Qwen3.8-27B cuando se usa junto con un checkpoint objetivo compatible.
-- Compatible con el runtime MLX y la librería `mlx-vlm`.
-- El tipo de modelo `qwen3_5_mtp` se detecta automáticamente, por lo que no requiere configuración manual del drafter.
-- El modelo base Qwen3.8-27B (no incluido en este repositorio) ofrece capacidades de generación de texto, razonamiento, código y conversación, pero estas no son propias del drafter.
+- Generación de texto especulativa: actúa como borrador para acelerar la inferencia del modelo objetivo Qwen3.8-27B en `mlx-vlm`.
+- Predicción multi-token con block size de 3, verificada por el modelo objetivo.
+- Integración con el modo thinking del objetivo mediante el flag `--enable-thinking` en la CLI de `mlx-vlm`.
+- Detección automática del tipo de borrador (`--draft-kind mtp`) a partir del campo `model_type`.
+- No soporta de forma autónoma tool calling, agentes, visión ni audio: esas capacidades residen en el checkpoint objetivo.
+- Idiomas: únicamente inglés según la model card; el multilingüismo dependerá del modelo objetivo.
 
 ## Casos de uso
 
-- Aceleración de inferencia en Apple Silicon: al desplegar Qwen3.8-27B en Macs con chips M-series, el drafter MTP reduce la latencia de generación, mejorando la experiencia en aplicaciones de chat o asistentes locales.
-- Reducción de costes de cómputo en entornos MLX: al aceptar múltiples tokens por paso, se disminuye el número de llamadas al modelo grande, lo que reduce el consumo de energía y tiempo de GPU.
-- Integración en pipelines de generación de texto con `mlx-vlm`: el drafter se puede activar con el flag `--draft-model` en la CLI, sin necesidad de modificar el código de la aplicación.
-- Prototipado rápido de aplicaciones de IA generativa en entornos con recursos limitados: el drafter ocupa solo 0,3 GB, por lo que puede cargarse en memoria junto al modelo objetivo sin un aumento significativo de VRAM.
-- Evaluación de decodificación especulativa en investigación: permite estudiar el impacto del MTP en la velocidad de generación y la calidad de las respuestas en comparación con la decodificación autoregresiva estándar.
-- Despliegue en servidores con GPUs modestas: aunque el modelo objetivo requiere una GPU con suficiente VRAM, el drafter añade una sobrecarga mínima, facilitando su uso en entornos con restricciones de memoria.
+- Aceleración de inferencia local en Apple Silicon: se usa como `--draft-model` junto a `mlx-community/Qwen3.8-27B-4bit` para reducir la latencia de generación en equipos con memoria unificada, aprovechando que el borrador ocupa solo 0,3 GB.
+- Servicio de chat interactivo de baja latencia: al proponer 3 tokens por paso, mejora el tiempo hasta el primer token y el throughput en conversaciones multi-turno ejecutadas con MLX.
+- Generación de código asistida en local: el ejemplo de la model card (quicksort en Python) ilustra el uso típico; el borrador acelera la salida de bloques de código sin cambiar la calidad del objetivo.
+- Prototipado de pipelines de decodificación especulativa: sirve para evaluar el rendimiento de MTP frente a borradores independientes en `mlx-vlm` sin entrenar un draft model propio.
+- Despliegue en estaciones de trabajo Mac para investigación: permite ejecutar el objetivo de 27B en 4 bits con un sobrecoste de memoria mínimo gracias al reducido tamaño del adaptador.
+- Evaluación comparativa de cuantizaciones: al estar cuantizado a 4 bits con group size 64, facilita medir la tasa de aceptación del borrador frente a otras precisiones del mismo bloque MTP.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasas de aceptación del borrador, speedup medido ni métricas de calidad.
 
 ## Requisitos de hardware
 
-- El drafter MTP cuantizado a 4 bits ocupa aproximadamente 0,3 GB en disco y requiere una cantidad mínima de VRAM (menos de 1 GB) para su carga en memoria.
-- El modelo objetivo Qwen3.8-27B, necesario para la inferencia, requiere una GPU con al menos 16-20 GB de VRAM en cuantización 4-bit (estimación orientativa, no confirmada en la documentación).
-- En Apple Silicon, se recomienda un chip con al menos 32 GB de memoria unificada para ejecutar el modelo completo junto al drafter.
-- El runtime es MLX, por lo que el despliegue se realiza mediante `mlx-vlm` o la API de MLX. No es compatible directamente con vLLM, llama.cpp u Ollama, aunque podría adaptarse con conversión previa.
-- La latencia y el throughput dependen del hardware y del modelo objetivo; no se han publicado cifras específicas para este drafter.
+- VRAM: el adaptador requiere aproximadamente 0,3 GB en disco y una huella de memoria similar al cargarse; el grueso de la memoria lo consume el modelo objetivo Qwen3.8-27B en 4 bits.
+- GPU recomendadas: Apple Silicon con memoria unificada (series M1, M2, M3 y M4), ya que el runtime es MLX; no está pensado para CUDA.
+- Cabe en equipos consumer Apple: sí, siempre que la memoria unificada pueda alojar el objetivo de 27B cuantizado a 4 bits junto con el borrador.
+- Opciones de despliegue: `mlx-vlm` (CLI `mlx_vlm generate`); no es compatible con vLLM, llama.cpp, Ollama ni TGI al ser un artefacto MLX específico.
+- Latencia y throughput: no disponibles; dependen del objetivo, del hardware y de la tasa de aceptación del borrador.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros drafters MTP comparables en el ecosistema MLX. La comparativa con modelos de decodificación especulativa de otros frameworks (por ejemplo, los drafters de TGI o vLLM) no es directa debido a las diferencias de implementación y runtime.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Runtime |
+|---|---|---|---|---|---|
+| mlx-community/Qwen3.8-27B-MTP-4bit | Borrador MTP cuantizado | 424,7 M | no disponible | apache-2.0 | MLX / mlx-vlm |
+| Qwen/Qwen3.8-27B | Modelo objetivo completo | 27B (nominal) | no disponible | apache-2.0 | Multiples |
+| Borradores especulativos independientes (EAGLE, Medusa) | Draft models entrenados aparte | no disponible | no disponible | variable | variable |
+
+La comparativa directa con otros borradores MTP publicados para MLX no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo independiente: no puede generar texto por sí mismo. Intentar usarlo sin el modelo objetivo provocará errores.
-- Requiere que el drafter y el modelo objetivo provengan del mismo checkpoint de Qwen3.8-27B para garantizar la coherencia de los pesos.
-- La cuantización a 4 bits puede introducir una ligera degradación en la calidad de las predicciones del drafter, aunque el modelo objetivo valida y corrige los tokens, por lo que el impacto final es mínimo.
-- La licencia Apache 2.0 permite uso comercial, pero las limitaciones del modelo base (sesgos, alucinaciones, etc.) se mantienen en el modelo objetivo.
-- No se han publicado evaluaciones de seguridad o sesgos específicas para este drafter; se recomienda revisar la documentación de Qwen3.8-27B.
-- El soporte de idiomas se limita al inglés según la información del repositorio, aunque el modelo base podría tener capacidades multilingües no documentadas aquí.
+- No es un modelo autónomo: sin un checkpoint objetivo compatible de Qwen3.8 27B no genera texto.
+- Debe emparejarse con un adaptador y un objetivo derivados del mismo checkpoint de Qwen3.8 27B; mezclar revisiones puede degradar la tasa de aceptación.
+- Solo soporta inglés según la model card.
+- No se documentan sesgos, riesgos de alucinación ni evaluaciones de seguridad propios; aplican las limitaciones del modelo base Apache 2.0.
+- La licencia Apache 2.0 permite uso comercial, pero se heredan las restricciones y avisos del modelo upstream.
+- El formato MLX limita su uso a hardware Apple; no es portable a CUDA sin reconversión.
+- Al ser un borrador, su salida no se consume directamente: cualquier error se corrige por la verificación del objetivo, pero una baja tasa de aceptación puede anular la ganancia de velocidad.
 
 ## Enlaces
 
-- Repositorio del drafter: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit
+- Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo objetivo cuantizado citado en la model card: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
+- Repositorio de mlx-vlm: no disponible en la informacion proporcionada
+- Paper o blog de Qwen3.8: no disponible en la informacion proporcionada

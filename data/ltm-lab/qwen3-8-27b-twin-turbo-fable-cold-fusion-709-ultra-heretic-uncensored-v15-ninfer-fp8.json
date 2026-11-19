@@ -5,7 +5,7 @@
   "author": "LTM-Lab",
   "url": "https://huggingface.co/LTM-Lab/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-v15-ninfer-FP8",
   "created_at": "2026-11-17T06:23:34.000Z",
-  "updated_at": "2026-11-17T06:42:56.000Z",
+  "updated_at": "2026-11-18T10:23:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -2,102 +2,112 @@
 
 ## Resumen
 
-LFM3-FHIR-demo-v1 es un ajuste fino (SFT completo) del modelo base LiquidAI/LFM3-1.7B, publicado por el usuario mkieffer en Hugging Face. El modelo está especializado en tareas de búsqueda y actualización sobre registros de salud electrónicos (EHR) sintéticos mediante la API REST FHIR R4, actuando como un agente que interpreta peticiones en lenguaje natural de personal clínico o administrativo y las traduce en llamadas a la herramienta `fhir_request` (GET search/read, POST, PUT con If-Match, DELETE y transaction Bundles).
+LFM3-FHIR-demo-v1 es un ajuste fino del modelo LiquidAI/LFM3-1.7B orientado a la interacción con servidores FHIR R4 sobre registros de salud electrónicos sintéticos. Lo desarrolla el usuario mkieffer y se publica como una familia de versiones (v1, v2 y v3), de las cuales la v1 que aquí se documenta corresponde al ajuste supervisado SFT v0.6.1 con los prompts v0.2.2. El modelo actúa como agente de búsqueda y actualización: recibe una petición en lenguaje natural de un clínico o administrativo y una herramienta `fhir_request` (GET, POST, PUT con If-Match, DELETE y transaction Bundles), localiza al paciente, lee los recursos necesarios, aplica el cambio solicitado y responde con un JSON y la evidencia `Type/id` consultada.
 
-El interés del modelo radica en su tamaño reducido: con 1.728.801.600 parámetros y una cuantización Q4_K_M de 1,10 GB, puede ejecutarse en la CPU de un portátil o dentro de una pestaña del navegador mediante un runtime WebGPU. Esto lo convierte en una pieza útil para demostraciones, prototipos e investigación sobre agentes de tool calling en dominios sanitarios, sin necesidad de infraestructura GPU.
+El modelo parte de la arquitectura LFM3 de LiquidAI, con 1.728.801.600 parámetros totales, y se distribuye exclusivamente en formato GGUF cuantizado Q4_K_M (1,10 GB por fichero), pensado para ejecutarse en CPU de portátil o incluso en una pestaña de navegador mediante llama.cpp. Esta ligereza es su principal atractivo: permite desplegar un agente FHIR de demostración sin infraestructura GPU dedicada.
 
-El modelo se distribuye únicamente en formato GGUF para llama.cpp, está entrenado exclusivamente en inglés y su uso previsto se limita a investigación y demostración sobre historiales sintéticos. No es un dispositivo médico ni ha sido validado con datos reales de EHR.
+Es relevante ahora porque demuestra que un modelo de menos de 2.000 millones de parámetros, ajustado con datos sintéticos de tool-calling y cuantizado con importance matrix, puede resolver una fracción sustancial de tareas agénticas sobre FHIR. No obstante, el propio autor advierte que se trata de una herramienta de investigación y demostración sobre historiales sintéticos, no de un producto clínico: falla en aproximadamente dos de cada cinco tareas de lenguaje natural y realiza escrituras dañinas en torno al 2% de los casos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de LiquidAI/LFM3-1.7B; el autor no detalla la arquitectura interna) |
-| Parametros totales | 1.728.801.600 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens en la configuración de ejecución recomendada (`-c 32768`); entrenamiento con longitud máxima de 16K |
-| Tipos de cuantizacion | Q4_K_M (único archivo publicado); el autor reporta también evaluaciones en BF16 y Q8_0 |
+| Arquitectura | Transformer (familia LFM3 de LiquidAI), ajuste fino con SFT y quantización GGUF |
+| Parámetros totales | 1.728.801.600 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 16K tokens en la evaluación del autor (contexto de evaluación; el contexto nativo del modelo base no se detalla en la información disponible) |
+| Tipos de cuantización | Q4_K_M (con importance matrix); también se sirvió un GGUF BF16 para comparación |
 | Idiomas soportados | inglés (en) |
-| Licencia | LFM Open License v1.0 (lfm1.0); uso comercial solo para entidades con ingresos anuales inferiores a 10 millones de USD |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LiquidAI/LFM3-1.7B (revisión `ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7`) y se somete a un ajuste fino supervisado completo (full SFT) durante 2 épocas, con learning rate 1e-5 y longitud máxima de 16K tokens. El conjunto de entrenamiento consta de 7.733 filas SFT generadas a partir de transcripciones de GPT-OSS 120B sobre el split de entrenamiento de fhir-env natural-track v0.2.1, conservando únicamente aquellas que resultaron estrictamente exitosas, sin escrituras dañinas y con un máximo de un error de herramienta bajo la calificación corregida. Se añadieron también conjuntos previos del track keyed. Las tareas del split de desarrollo nunca entran en el entrenamiento.
+El modelo es un ajuste fino del transformer LFM3-1.7B de LiquidAI. La versión v1 parte del SFT v0.6.1 con los prompts v0.2.2, entrenado sobre transcripciones de tool-calling generadas por Muse Glimmer 30B (datos sintéticos). Las versiones posteriores (v2 y v3) incorporan mejoras: v2 usa SFT v0.7 con resultados de búsqueda en JSON completo, y v3 añade entrenamiento por refuerzo con LoRA sobre la pista natural del benchmark fhir-env, además de resultados de búsqueda compactos (harness Lc). La cuantización se realizó a GGUF con importance matrix (imatrix).
 
-La cuantización se realizó con llama.cpp b12098, calculando una importance matrix (imatrix) sobre 200 secuencias de 4096 tokens de transcripciones FHIR del split de entrenamiento. El modelo conserva el modo de razonamiento (thinking) con el que fue entrenado y utiliza la plantilla de chat embebida en el GGUF. No se detallan innovaciones arquitectónicas propias más allá de las heredadas del modelo base.
+La innovación técnica principal no está en la arquitectura del modelo base, sino en el contrato de herramienta y en el formato de presentación de resultados. En v3, cada Bundle de búsqueda se muestra como una línea por registro (`Type/id vN | field=value | ...`) con enlaces de paginación y total, descartando meta, texto narrativo y extensiones, y truncando valores de más de 300 caracteres con una sugerencia `GET Type/id`. Las lecturas por id, escrituras y errores mantienen el JSON FHIR completo, de modo que las actualizaciones se construyen sobre el registro íntegro. Este diseño reduce el consumo de contexto y mejora la precisión, aunque v1 no incorpora aún este formato compacto.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con modo de razonamiento (thinking) activado.
-- Tool calling estructurado: invoca la herramienta `fhir_request` con esquema en formato OpenAI tools, cubriendo GET (search/read), POST, PUT con If-Match, DELETE y transaction Bundles.
-- Razonamiento multi-paso orientado a agentes: localiza al paciente, lee los registros necesarios, aplica el cambio solicitado y responde con un JSON más la evidencia `Type/id` consultada.
-- Cumplimiento del contrato de herramienta y del system prompt específicos de fhir-env.
-- Capacidad de operar en CPU y en navegador (WebGPU) gracias a la cuantización Q4_K_M.
-- No dispone de capacidades de visión, audio ni multilingüismo más allá del inglés.
+- Generación de texto conversacional en inglés orientada a tareas administrativas y clínicas.
+- Tool calling / function calling sobre el contrato `fhir_request`: GET search/read, POST, PUT con If-Match, DELETE y transaction Bundles.
+- Razonamiento agéntico multi-turno (hasta 21 turnos en la evaluación de v3; v1 se evaluó con prompts v0.2.2).
+- Búsqueda y lectura de recursos FHIR R4 (pacientes, medicaciones, tareas, mensajes de portal, etc.).
+- Actualización de registros FHIR con construcción de peticiones a partir del recurso completo.
+- Respuesta estructurada en JSON con evidencia `Type/id` de los recursos leídos.
+- Capacidad de citar honestamente la evidencia recuperada (evaluada en el scorer v0.6.2).
+- No dispone de visión, audio ni modo de pensamiento explícito según la información disponible.
+- Multilingüe: no disponible; solo inglés.
 
 ## Casos de uso
 
-- Demostración interactiva de agentes FHIR en navegador: cargar el GGUF Q4_K_M en un runtime WebGPU permite mostrar a investigadores y desarrolladores el ciclo completo de búsqueda, lectura y actualización sobre historiales sintéticos sin infraestructura de servidor.
-- Prototipado de asistentes administrativos sanitarios: el modelo interpreta peticiones como abrir una tarea de reconciliación de medicación o registrar un mensaje de portal, traduciéndolas a llamadas FHIR concretas sobre datos sintéticos para validar flujos antes de invertir en modelos mayores.
-- Evaluación de pipelines de tool calling en CPU: al ejecutarse con `llama-server` en un portátil, sirve como banco de pruebas de bajo coste para medir errores de herramienta, latencia y robustez de esquemas antes de escalar a modelos de mayor tamaño.
-- Generación de datos sintéticos de entrenamiento: sus transcripciones exitosas pueden servir como material inicial para ampliar conjuntos SFT en dominios FHIR, siempre con revisión humana.
-- Investigación en seguridad de agentes con acceso de escritura: permite estudiar políticas de confirmación humana y detección de escrituras dañinas en un entorno controlado y sintético.
-- Docencia y formación técnica: ilustra de forma práctica cómo un modelo de 1,7B puede encadenar razonamiento, selección de herramienta y verificación de evidencia en un dominio regulado.
+- Demostración interactiva de agente FHIR en navegador: gracias a su cuantización Q4_K_M de 1,10 GB, el modelo puede servirse con llama.cpp y ejecutarse en una pestaña del navegador o en la CPU de un portátil, lo que permite mostrar el flujo completo de búsqueda y actualización sobre historiales sintéticos sin infraestructura.
+- Prototipado de pipelines de reconciliación de medicación: el modelo recibe una petición como "abrir una tarea de conciliación por discrepancia de medicación, sin cambios en fármacos", localiza al paciente, lee los recursos relevantes y crea la tarea correspondiente.
+- Generación de tareas administrativas a partir de mensajes de portal: el agente interpreta el mensaje del paciente, consulta los recursos asociados y crea o actualiza el recurso `Task` con la evidencia citada.
+- Evaluación de contratos de herramientas FHIR: sirve como banco de pruebas para validar el diseño de una API `fhir_request` y el formato de resultados devueltos antes de conectar un modelo mayor.
+- Investigación sobre agentes pequeños con tool calling: permite estudiar el equilibrio entre éxito estricto, seguridad (escrituras dañinas) y consumo de contexto en modelos de menos de 2B parámetros.
+- Formación y docencia sobre FHIR R4: al ejecutarse localmente y sobre datos sintéticos, es adecuado para talleres donde los alumnos practiquen consultas y actualizaciones sin riesgo sobre datos reales.
+- Pruebas de integración en CI/CD: el GGUF puede cargarse en tests automatizados que verifiquen el comportamiento del agente frente a un servidor FHIR simulado, con la advertencia de que las escrituras propuestas requieren revisión humana.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre el split **dev** de fhir-env natural-track v0.2.1 (1.661 tareas × 2 rollouts), servido en BF16 con vLLM:
+Los datos publicados corresponden principalmente a la versión v3. Para v1 no se han publicado resultados específicos de benchmarks en la información disponible. Se recogen a continuación los resultados de v3 como referencia de la familia, comparados con los modelos SFT de los que deriva.
 
-| Modelo | Strict, natural | Safe, natural | Strict, keyed |
-|---|---|---|---|
-| LFM3-FHIR-demo-v1 (SFT v0.5.1, BF16) | 37,4% | 36,7% | 84,3% |
-| GRPO v0.5 (LFM3 1.7B previo, RL) | 28,6% | 28,2% | 79,1% |
-| SFT v0.4 (LFM3 1.7B previo) | 28,8% | 27,6% | 68,8% |
-| GPT-OSS 120B (profesor) | 39,0% | 36,1% | 71,7% |
-
-Evaluación de cuantización sobre un subconjunto estratificado fijo de 543 tareas dev, servido con llama.cpp `llama-server` (b12098) en CPU:
-
-| Nivel | Tamano | KLD vs BF16 | Strict, natural | Safe, natural | Strict, keyed | Δ natural strict vs BF16 | Errores de herramienta / episodio |
+| Split (v0.2.3.5, harness Lc) | Tareas | Strict [IC 95%] | Safe | Tasa de escritura dañina | Lecturas | Escrituras | Fuera de contexto |
 |---|---|---|---|---|---|---|---|
-| BF16 | 3,47 GB | – | 34,2% | 32,8% | 84,6% | referencia | 1,31 |
-| Q4_K_M | 1,10 GB | 0,101 | 33,3% | 31,8% | 86,7% | -0,9 pts [-3,8, +2,0] | 1,30 |
+| dev | 1.937 | 61,4% [59,3; 63,6] | 60,8% | 2,1% | 61% | 62% | 0,8% |
+| held-out | 1.620 | 60,2% [57,7; 62,5] | 59,7% | 2,0% | 58% | 62% | 0,6% |
 
-El autor advierte que, con un solo rollout sobre 543 tareas, las diferencias de pocos puntos entre niveles están dentro del ruido entre ejecuciones; la divergencia KL respecto a BF16 sobre transcripciones FHIR es la medida más estable del coste de la cuantización.
+| Modelo | Dev strict | Δ vs v3 | Held-out strict | Δ vs v3 | Daño dev / held-out |
+|---|---|---|---|---|---|
+| v3 (SFT v0.7-Lc + LoRA RL) | 61,4% | referencia | 60,2% | referencia | 2,1% / 2,0% |
+| SFT v0.8-Lc (no publicado) | 59,3% | −2,1 [−3,7; −0,4] | 57,3% | −2,9 [−4,7; −1,0] | 1,0% / 1,1% |
+| SFT v0.7-Lc (punto de partida de v3) | 57,4% | −4,0 [−5,6; −2,4] | 55,9% | −4,3 [−6,1; −2,4] | 1,0% / 1,5% |
+
+| Modelo (harness L, JSON completo) | Dev strict | Δ vs v3 | Fuera de contexto |
+|---|---|---|---|
+| v3 | 55,4% | referencia | 12,4% |
+| modelo de v2 (SFT v0.7) | 49,8% | −5,6 [−7,4; −3,8] | 14,5% |
+
+Puntos débiles declarados: las tareas que crean un registro y actualizan otro (CRU) obtienen un 4% en dev y un 0% en held-out (27 y 24 tareas respectivamente). El profesor rara vez las resuelve, por lo que los datos de SFT apenas contienen ejemplos y el RL no las recuperó.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU viable: el archivo Q4_K_M ocupa 1,10 GB y está pensado para ejecutarse en la CPU de un portátil.
-- Ejecución en navegador mediante runtime WebGPU, cargando el Q4_K_M desde el repositorio.
-- VRAM estimada: no disponible de forma explícita; por tamaño de pesos, el Q4_K_M requiere del orden de 1,1 GB más overhead de contexto (hasta 32K tokens), por lo que cabría en GPUs consumer con 4-8 GB de VRAM, aunque el autor no publica cifras de VRAM.
-- GPU recomendadas: no disponible; el autor no especifica modelos de GPU.
-- Despliegue: llama.cpp (`llama-server`) con `--jinja -c 32768 --temp 0.1 --top-k 50 --repeat-penalty 1.1`; también compatible con endpoints OpenAI. No se mencionan vLLM ni TGI para el GGUF (vLLM se usó solo para servir BF16 en la evaluación).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 1,10 GB, por lo que la inferencia cabe holgadamente en cualquier GPU con 4 GB o más; en BF16 el requisito es mayor, aunque no se detalla en la información disponible.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible; por tamaño, cualquier GPU consumer moderna (RTX 3060 en adelante) es suficiente.
+- Cabe en GPU consumer: sí, con amplio margen, dado el tamaño del GGUF Q4_K_M.
+- Ejecución en CPU: el autor indica que está pensado para ejecutarse en la CPU de un portátil o en una pestaña de navegador.
+- Opciones de despliegue: llama.cpp (`llama-server`, versión b12098 usada en la evaluación), vLLM con pesos BF16 para evaluación, y el demo de navegador de fhir-env.
+- Latencia y throughput: no disponible; la evaluación reporta 4.096 tokens por llamada, temperatura 0,1, top_k 50 y hasta 21 turnos, pero no cifras de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento FHIR (strict natural) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento (dev strict, Lc) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-FHIR-demo-v1 | 1,73B | 32K en ejecución (16K entrenamiento) | 37,4% (BF16) / 33,3% (Q4_K_M) | LFM Open License v1.0 (comercial < 10 M USD) | GGUF en Hugging Face |
-| GPT-OSS 120B (profesor) | 120B | no disponible | 39,0% | no disponible | no disponible |
-| GRPO v0.5 (LFM3 1.7B, RL) | 1,7B | no disponible | 28,6% | LFM Open License v1.0 | no disponible como checkpoint público |
-| SFT v0.4 (LFM3 1.7B) | 1,7B | no disponible | 28,8% | LFM Open License v1.0 | no disponible como checkpoint público |
+| LFM3-FHIR-demo v1 (este) | 1,73B | 16K en evaluación | no disponible para v1 | lfm1.0 | GGUF en Hugging Face |
+| LFM3-FHIR-demo v3 | 1,73B | 16K en evaluación | 61,4% | lfm1.0 | GGUF en Hugging Face |
+| SFT v0.8-Lc (no publicado) | 1,73B | 16K en evaluación | 59,3% | no disponible | no publicado |
+| Modelo de v2 (SFT v0.7) | 1,73B | 16K en evaluación | 57,4% (Lc) / 49,8% (L) | lfm1.0 | GGUF en Hugging Face |
+
+No se dispone de comparaciones con modelos de otras familias en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo para investigación y demostración sobre historiales sintéticos; no es un dispositivo médico ni ha sido validado con datos reales de EHR.
-- No debe conectarse a un EHR de producción con permisos de escritura.
-- Solo acierta en una minoría de tareas en lenguaje natural (37,4% strict en el mejor caso); toda escritura propuesta requiere revisión humana.
-- Entrenado únicamente en inglés y ajustado al contrato de herramienta y system prompt de fhir-env; fuera de ese contrato el rendimiento puede degradarse.
-- Riesgo de alucinación en la evidencia citada y en los identificadores `Type/id`; el scorer exige citas honestas, pero el modelo puede generarlas incorrectamente.
-- Licencia LFM Open License v1.0: el uso comercial solo se concede a entidades con ingresos anuales inferiores a 10 millones de USD; el uso no comercial e investigador no está sujeto a ese umbral.
-- No afiliado ni respaldado por Liquid AI; "LFM" y "Liquid" son marcas de Liquid AI.
-- El único archivo publicado es Q4_K_M; no hay versiones BF16, Q8_0 ni safetensors en el repositorio.
-- No se han publicado datos sobre sesgos demográficos ni sobre comportamiento con poblaciones diversas.
+- Solo para investigación y demostración sobre historiales sintéticos; no es un dispositivo médico ni se ha validado sobre datos reales de EHR.
+- No debe usarse para decisiones clínicas ni conectarse a un EHR de producción con permisos de escritura.
+- Falla en aproximadamente dos de cada cinco tareas de lenguaje natural; toda escritura propuesta requiere revisión humana.
+- Realiza una escritura dañina (cambio incorrecto en el historial) en torno al 2% de las tareas, el doble que el mejor modelo solo SFT (SFT v0.8, aproximadamente 1%).
+- Solo inglés y ajustado al contrato de herramienta y al system prompt de fhir-env; fuera de ese contrato el comportamiento no está garantizado.
+- Punto débil específico: tareas CRU (crear un registro y actualizar otro) con 4% en dev y 0% en held-out.
+- El formato de resultados de búsqueda importa: los Bundles JSON completos consumen el contexto de 16K y reducen la puntuación unos 6 puntos frente a resultados compactos.
+- Licencia lfm1.0: es necesario revisar los términos para uso comercial; la model card la etiqueta como "other".
+- Riesgo de alucinación en la evidencia citada: el scorer evalúa la honestidad de las citas, lo que implica que el modelo puede citar recursos incorrectos.
+- Sesgos conocidos: no disponibles en la información proporcionada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mkieffer/LFM3-FHIR-demo-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Blog de Liquid AI sobre LFM3: https://huggingface.co/blog/LiquidAI/lfm3
-- Página de LFM3 en LM Studio: https://lmstudio.ai/models/lfm3
+- Licencia: LICENSE (referenciada en la model card del repositorio)
+- Benchmark fhir-env: no disponible como enlace directo en la información proporcionada
+- Demo de navegador de fhir-env: no disponible como enlace directo en la información proporcionada

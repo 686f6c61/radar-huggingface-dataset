@@ -5,7 +5,7 @@
   "author": "McGill-NLP",
   "url": "https://huggingface.co/McGill-NLP/EchoMoE",
   "created_at": "2026-11-17T23:30:56.000Z",
-  "updated_at": "2026-11-17T23:43:43.000Z",
+  "updated_at": "2026-11-18T04:30:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,6 +15,7 @@
     "echomoe",
     "mixture-of-experts",
     "expert-parallelism",
+    "arxiv:2611.22215",
     "license:apache-2.0",
     "region:us"
   ],

@@ -73,16 +73,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Mistral-Small-3.2-24B-Instruct-2506-Text-Only-heretic-i1 ...",
-      "url": "https://huggingface.co/mradermacher/Mistral-Small-3.2-24B-Instruct-2506-Text-Only-heretic-i1-GGUF",
-      "snippet": "mradermacher / Mistral-Small-3.2-24B-Instruct-2506-Text-Only-heretic-i1-GGUF like 1 Transformers GGUF English heretic uncensored decensored abliterated imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Mistral-Small-3.2-24B-Instruct-2506-ultra-uncensored-heretic-GGUF",
-      "url": "https://huggingface.co/mradermacher/Mistral-Small-3.2-24B-Instruct-2506-ultra-uncensored-heretic-GGUF",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

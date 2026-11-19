@@ -2,105 +2,102 @@
 
 ## Resumen
 
-Cyber-Tiel-Coder-35B-A3B-GGUF (denominado "CyberTiel" en su model card) es una cuantización GGUF de un modelo de lenguaje de arquitectura MoE con aproximadamente 34.660 millones de parámetros totales, publicado por el usuario peculiar-ragdoll. Deriva de huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated, que a su vez es una versión "abliterated" (con los mecanismos de rechazo suprimidos) del modelo Ornith-1.5-35B-A3B de ornith-ai. El autor añade una cuantización dinámica con una matriz imatrix propia ("cyber-weighted") y una plantilla de chat denominada Sharp.
+Cyber-Tiel-Coder-35B-A3B-GGUF es una cuantización GGUF de un modelo de lenguaje tipo mezcla de expertos (MoE) orientado a programación agéntica y seguridad ofensiva, publicado por el usuario peculiar-ragdoll en Hugging Face. Deriva de huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated, a su vez una versión "abliterated" (con los mecanismos de rechazo suprimidos) del modelo Ornith-1.5-35B-A3B. El autor aplica una cuantización dinámica con una imatrix propia ("cyber-weighted") y una plantilla de chat denominada Sharp, empaquetada dentro del GGUF.
 
-El modelo está orientado a codificación agéntica y a seguridad ofensiva. En la información disponible se afirma que resuelve aproximadamente un 70 % más de problemas reales de programación que Ornith-1.5 y Qwen3.6-35B-A3B, y que lo hace entre 3 y 4 veces más rápido que un modelo denso de 3.800 a 27.000 millones de parámetros. Soporta entrada de imagen (pipeline image-text-to-text), lo que lo sitúa como un MoE multimodal, aunque la model card no detalla la arquitectura de la torre de visión.
+El modelo cuenta con 34.660.610.688 parámetros totales (aproximadamente 34,7 mil millones) y una arquitectura MoE con 3 mil millones de parámetros activos por token, lo que permite una inferencia notablemente más rápida que modelos densos de tamaño comparable. Está pensado para ejecutarse en llama.cpp y ofrece capacidades multimodales de imagen-texto, además de soporte para inglés y chino. Su licencia es MIT, lo que facilita su uso comercial, aunque el propio autor advierte de los riesgos derivados de la eliminación de rechazos.
 
-Su relevancia actual reside en dos factores: por un lado, ofrece capacidad de codificación agéntica en un paquete de 22 GB en cuantización de 4 bits, apto para hardware de consumo con VRAM limitada; por otro, es un modelo sin censura explícitamente orientado a tareas de ciberseguridad ofensiva, con 0 % de rechazos en HarmBench. La licencia es MIT y los idiomas declarados son inglés y chino.
+La relevancia actual del modelo radica en su especialización: el autor afirma que, en cuantización de 4 bits (unos 22 GB), resuelve aproximadamente un 70 % más de problemas reales de programación que Ornith-1.5 y Qwen3.6-35B-A3B en SWE-bench-Live, manteniendo una velocidad de resolución entre 3 y 4 veces superior a la de un modelo denso de 3,8-27B. Es, según el autor, el primer modelo de su clase y velocidad que es "uncensored".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos) de tipo transformer; etiqueta `qwen35moe` en Hugging Face; soporte multimodal image-text-to-text |
-| Parametros totales | 34.660.610.688 (aprox. 34,66 mil millones), medidos sobre los pesos safetensors del modelo base |
-| Parametros activos | Aproximadamente 3.000 millones por token segun la nomenclatura "A3B" del nombre; el valor exacto no esta disponible |
+| Arquitectura | Mezcla de expertos (MoE), etiquetada como qwen35moe |
+| Parametros totales | 34.660.610.688 (~34,7B) |
+| Parametros activos | ~3B (35B-A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con imatrix dinamica ("cyber-weighted") y estrategia unsloth-dynamic; se confirma cuantizacion Q4 de 22 GB; el resto de niveles no esta detallado |
+| Tipos de cuantizacion | GGUF con cuantizacion dinamica (unsloth-dynamic) e imatrix propia; Q4 citado (~22 GB); otras variantes no detalladas |
 | Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp); existen variantes MLX (oQ4e) y variantes MTP en repos separados |
-
-Otros datos: repositorio de 225,1 GB (incluye todos los niveles de cuantizacion), 2.651 descargas y 9 "likes" en el momento de la consulta. Fechas de creacion y ultima actualizacion declaradas: 2026-09-08 y 2026-09-10.
+| Formato de pesos | GGUF (llama.cpp); existen variantes MLX y MTP en repos separados |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible es limitada en cuanto al preentrenamiento original. El modelo es una mezcla de expertos (MoE) del tipo Qwen3.5 (`qwen35moe`), con unos 34,66 mil millones de parametros totales y aproximadamente 3.000 millones activos por token, lo que explica la denominacion "A3B". El pipeline declarado es image-text-to-text, de modo que el modelo incorpora capacidades de vision, si bien no se especifica el codificador visual ni la resolucion de imagen admitida. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo original.
+El modelo es un transformer con arquitectura de mezcla de expertos (MoE) de tipo Qwen3.5, con 34,7 mil millones de parámetros totales y aproximadamente 3 mil millones activos por token. Esta configuración permite un coste computacional por token comparable al de un modelo denso de 3B, mientras que la capacidad total se aproxima a la de un modelo de 35B. El pipeline declarado es image-text-to-text, lo que indica que el modelo conserva capacidades de visión heredadas del modelo base.
 
-Sobre esta base, el autor aplica un proceso de abliteracion heredado de huihui-ai (supresion de las direcciones de activacion asociadas al rechazo) y despues una cuantizacion dinamica con una matriz imatrix propia, descrita como "cyber-weighted", junto con la plantilla de chat Sharp incluida en el propio GGUF. El autor sostiene que el equilibrio entre la pequena corrupcion introducida por la abliteracion y la optimizacion del imatrix se traduce en una mejora neta tanto en SWE-bench-Live como en Cybench. Se ofrecen variantes MTP (multi-token prediction) en repositorios separados, tanto GGUF como MLX, lo que sugiere soporte de decodificacion especulativa en esas versiones.
+La cadena de entrenamiento es la siguiente: Ornith-1.5-35B-A3B (modelo original de ornith-ai) fue sometido a abliteration por huihui-ai, dando lugar a Huihui-Ornith-1.5-35B-A3B-abliterated. Sobre esa base, peculiar-ragdoll aplicó una cuantización dinámica con una imatrix ponderada específicamente para tareas de ciberseguridad y una plantilla de chat Sharp. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO en el modelo original. La innovación técnica destacable es la combinación de cuantización dinámica con imatrix especializada, que según el autor compensa la degradación introducida por la abliteration y mejora el rendimiento en SWE-bench-Live y Cybench.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y chino.
-- Codificacion agentica: resolucion autonoma de incidencias y bugs en bases de codigo grandes, segun la evaluacion en SWE-bench-Live.
-- Tareas de ciberseguridad ofensiva sin rechazos: captura de flags en 15 de las 43 tareas de Cybench en modo no guiado (35 %).
-- Entrada multimodal de imagen (pipeline image-text-to-text); el alcance exacto de las capacidades de vision no esta documentado en la informacion disponible.
-- Uso de herramientas y flujos agente: la etiqueta `agentic-coding` y la plantilla de chat Sharp apuntan a este uso, aunque no se documenta el formato exacto de function calling.
-- Razonamiento multi-paso en entornos de agentes, con menos tokens de deliberacion que Ornith-1.5 y Qwen3.6-35B-A3B, lo que se traduce en mayor velocidad.
-- Modo "sin rechazo": 0 % de rechazos sobre 84 peticiones de HarmBench, doce por cada una de sus siete categorias.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`).
+- Generación de texto y razonamiento general, con especialización en programación y tareas agénticas.
+- Codificación agéntica: resolución autónoma de issues y bugs en bases de código grandes (evaluado en SWE-bench-Live).
+- Capacidades de seguridad ofensiva: resolución de retos CTF sin guía (15 de 43 tareas de Cybench, 35 %).
+- Capacidades multimodales de imagen a texto (pipeline image-text-to-text).
+- Soporte de tool calling y function calling, implícito en su orientación a flujos agénticos.
+- Razonamiento multi-paso y ejecución de agentes.
+- Multilingüe limitado a inglés y chino.
+- Modo "uncensored": ausencia de rechazos (0 % en HarmBench según el autor), lo que permite abordar tareas de seguridad ofensiva sin fricción.
+- Plantilla de chat Sharp integrada en el GGUF para formateo de conversaciones.
 
 ## Casos de uso
 
-- Reparacion automatica de bugs en produccion: el modelo puede integrarse en un agente que reciba una incidencia, localice el fichero afectado, proponga un parche y lo valide contra la suite de tests, ya que su evaluacion principal (SWE-bench-Live) mide exactamente esa capacidad sobre repositorios reales con tests de regresion ocultos.
-- Auditorias de seguridad ofensiva autorizadas: con 15 de 43 retos de Cybench resueltos sin pistas, resulta util para equipos de red team que necesiten un asistente local para analisis de vulnerabilidades, siempre dentro de un entorno aislado y con autorizacion explicita.
-- Desarrollo asistido en local con VRAM limitada: la cuantizacion Q4 ocupa 22 GB, de modo que un equipo con una unica GPU de 24 GB o 32 GB puede ejecutar un MoE de 34,66 mil millones de parametros sin depender de la nube.
-- Pipelines de CI/CD con generacion de codigo: el modelo puede conectarse via llama.cpp a un servicio interno que revise pull requests, genere tests o complete refactorizaciones de bajo riesgo, con la ventaja de la licencia MIT para uso comercial.
-- Agentes de automatizacion de terminal y sistemas: su perfil de codificacion agentica y su tolerancia a peticiones habitualmente rechazadas lo hacen adecuado para scripts de administracion, analisis de logs y tareas de scripting en entornos controlados.
-- Procesamiento de capturas y diagramas tecnicos: al aceptar entrada de imagen, puede recibir capturas de trazas de error o diagramas de arquitectura y generar codigo o explicaciones a partir de ellos, aunque la profundidad de esta capacidad no esta documentada.
-- Investigacion sobre alineacion y abliteracion: como modelo abliterated con metricas comparables frente a su version censurada (TielCoder), sirve como sujeto de estudio para medir el efecto de la supresion de rechazos en tareas de codigo y conocimiento general.
+- Resolución autónoma de bugs en producción: el modelo puede recibir un issue de un repositorio y generar un parche completo, con capacidad demostrada en SWE-bench-Live sobre problemas recientes y con tests de regresión ocultos. Es adecuado por su especialización en código y su velocidad de resolución.
+- Auditoría de seguridad ofensiva y pentesting: con 0 % de rechazos en HarmBench y un 35 % de resolución en Cybench, puede emplearse en entornos sandbox para análisis de vulnerabilidades, generación de exploits de prueba y tareas de red teaming autorizadas.
+- Asistente de programación en IDE: integrado vía llama.cpp u Ollama, ofrece autocompletado y generación de código con baja latencia gracias a sus 3B de parámetros activos, apto para máquinas con VRAM limitada.
+- Automatización de pipelines CI/CD: su soporte de tool calling permite conectarlo a herramientas de build, test y despliegue para corregir fallos de integración de forma autónoma.
+- Análisis de capturas de pantalla y diagramas técnicos: gracias a su pipeline image-text-to-text, puede interpretar imágenes de interfaces, diagramas de arquitectura o mensajes de error visuales y traducirlos a código o explicaciones.
+- Formación y laboratorios de ciberseguridad: al no rechazar peticiones relacionadas con cibercrimen, resulta útil en entornos educativos controlados para simular ataques y estudiar defensas, siempre con sandboxing y supervisión.
+- Procesamiento de documentación técnica en inglés y chino: puede resumir, traducir y generar documentación en ambos idiomas.
 
 ## Benchmarks y rendimiento
 
+Los datos disponibles provienen de las gráficas y afirmaciones de la model card; no se ofrecen cifras numéricas completas para todos los benchmarks.
+
 | Benchmark | Resultado | Notas |
 |---|---|---|
-| SWE-bench-Live | Aproximadamente un 70 % mas de problemas resueltos que Ornith-1.5 y Qwen3.6-35B-A3B; no se publica el valor absoluto | Medido a 4 bits; el autor indica que la mejora es unas 7 veces mayor que el salto generacional de Qwen3.5-35B-A3B a Qwen3.6 |
-| Velocidad en codificacion agentica | 3-4 veces mas rapido que un modelo denso de 3.800 a 27.000 millones de parametros | Datos del autor, sin metodologia detallada |
-| Cybench (no guiado) | 15 de 43 flags capturadas (35 %) | CTF agente sin pistas ni juez |
-| HarmBench | 0 % de rechazos sobre 84 peticiones (12 por cada una de 7 categorias) | Categorias: ciberdelito e intrusion, quimico/biologico, ilegal, acoso, desinformacion, copyright y dano general |
-| MMLU-Pro | Igual puntuacion que TielCoder; no se publica la cifra | El autor reconoce una perdida de conocimiento general frente a modelos no especializados |
+| SWE-bench-Live | ~70 % más problemas resueltos que Ornith-1.5 y Qwen3.6-35B-A3B | Medido en cuantización de 4 bits; mejora ~7 veces mayor que el salto generacional Qwen3.5 a 3.6 |
+| Cybench (unguided) | 15/43 flags (35 %) | Sin pistas ni juez |
+| HarmBench | 0 % de rechazos (84 peticiones, 7 categorías) | Muestra de 12 por categoría |
+| MMLU-Pro | Igual que TielCoder; inferior a modelos generalistas | El autor reconoce sacrificio de conocimiento del mundo |
 
-No se han publicado resultados de MMLU, HumanEval ni GSM8K en la informacion disponible.
+No se han publicado resultados numéricos detallados de MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para cuantizacion Q4: 22 GB de pesos, segun la model card. Con contexto y cache KV hay que anadir overhead, por lo que se recomienda un minimo practico de 24 GB (estimacion, no confirmada por el autor).
-- Otras cuantizaciones: no disponibles en detalle; el repositorio completo ocupa 225,1 GB, lo que indica la presencia de multiples niveles, presumiblemente desde Q2 hasta Q8.
-- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para Q4 con contexto moderado; RTX 5090 (32 GB) o A100 40 GB para mayor margen de contexto; H100 80 GB para despliegues con lotes grandes o cuantizaciones altas.
-- Cabe en GPU de consumo: si, en Q4 sobre tarjetas de 24 GB o mas, con margen limitado para el contexto.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) para el formato GGUF; existen versiones MLX para Apple Silicon y variantes MTP con decodificacion multi-token. No se confirma compatibilidad con vLLM o TGI en la informacion disponible.
-- Latencia y throughput: no disponibles como cifras absolutas. La unica referencia es relativa, 3-4 veces mas rapido que un denso de 3.800 a 27.000 millones de parametros en codificacion agentica.
+- VRAM estimada: aproximadamente 22 GB para la cuantización Q4 citada por el autor; otras cuantizaciones no detalladas.
+- GPU recomendadas: no especificadas; por tamaño, una RTX 4090 (24 GB) podría alojar la variante Q4, así como A100 o H100 para mayor throughput.
+- Cabe en GPU de consumo: sí, la variante Q4 (~22 GB) es compatible con GPUs de 24 GB como la RTX 4090; variantes de menor cuantización no documentadas.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y servidores compatibles con endpoints; existen variantes MLX para Apple Silicon y MTP en repos separados.
+- Latencia y throughput: el autor afirma que resuelve tareas agénticas entre 3 y 4 veces más rápido que un modelo denso de 3,8-27B; no se proporcionan tokens por segundo concretos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Cyber-Tiel-Coder-35B-A3B | 34,66 mil millones totales, aprox. 3 mil millones activos | no disponible | Cybench 15/43; ~70 % mas de problemas resueltos en SWE-bench-Live que Ornith-1.5 | MIT | GGUF, MLX y variantes MTP en Hugging Face |
-| TielCoder 35B-A3B | Misma base y tamano | no disponible | Misma puntuacion en MMLU-Pro que CyberTiel; se desconoce su tasa de rechazo en HarmBench | no disponible | GGUF |
-| Ornith-1.5-35B-A3B | 35B-A3B | no disponible | Referencia base; resuelve aproximadamente un 70 % menos de problemas reales de codigo | no disponible | Hugging Face |
-| Qwen3.6-35B-A3B | 35B-A3B | no disponible | Mismo punto de comparacion que Ornith-1.5 en SWE-bench-Live | no disponible | Hugging Face |
-| Nail-Qwen3.6-35B-A3B | 35B-A3B | no disponible | Mejor conocimiento general segun el autor; no especializado en codificacion ofensiva | no disponible | GGUF |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Cyber-Tiel-Coder-35B-A3B | 34,7B totales / 3B activos | no disponible | MIT | Abliterated, especializado en código y seguridad ofensiva |
+| TielCoder-35B-A3B | 35B-A3B | no disponible | no disponible | Versión censurada del mismo linaje, más segura |
+| Ornith-1.5-35B-A3B | 35B-A3B | no disponible | no disponible | Modelo base original; menor rendimiento en SWE-bench-Live según el autor |
+| Qwen3.6-35B-A3B | 35B-A3B | no disponible | no disponible | Alternativa generalista; menor rendimiento en código agéntico según el autor |
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: puede generar contenido que otros modelos rechazan, incluidas conductas potencialmente danosas. El propio autor traslada al usuario toda la responsabilidad legal y etica del uso.
-- Riesgo de seguridad en produccion: se recomienda ejecutarlo en sandbox, con monitorizacion y sin acceso a credenciales ni a sistemas criticos.
-- Perdida deliberada de conocimiento general: el autor indica que sacrifica conocimiento del mundo por capacidad de codigo y velocidad, y que para trivia o examenes conviene usar otro modelo como Nail-Qwen3.6-35B-A3B.
-- Corrupcion por abliteracion: la supresion de rechazos introduce una degradacion pequena del modelo original, que el autor considera compensada por la cuantizacion, pero que puede manifestarse en tareas fuera del dominio de codigo.
-- Cobertura idiomatica limitada: solo ingles y chino declarados; no hay garantia de calidad en castellano.
-- Contexto no documentado: se desconoce la ventana de contexto real, lo que dificulta planificar casos de uso con historiales largos.
-- Licencia MIT: permite uso comercial, pero el aviso del autor exige responsabilidad plena sobre el contenido generado; conviene revisar tambien las condiciones del modelo base de huihui-ai.
-- Benchmarks no reproducibles: las cifras de SWE-bench-Live y velocidad provienen del autor, sin valores absolutos ni metodologia publicada.
-- Fecha de publicacion declarada en 2026: los datos de creacion y actualizacion del repositorio son coherentes con esa fecha, pero no se dispone de mas contexto temporal.
+- Alucinación: como todo modelo de lenguaje, puede generar información falsa, especialmente en conocimiento del mundo; el autor reconoce un MMLU-Pro bajo y recomienda no usarlo para trivia o exámenes.
+- Sesgos: no se documentan sesgos específicos, pero la abliteration puede amplificar respuestas sesgadas o inapropiadas.
+- Idiomas: solo inglés y chino; no hay soporte declarado de castellano.
+- Licencia MIT: permite uso comercial, pero el autor traslada la responsabilidad legal y ética al usuario.
+- Riesgo de seguridad: al ser un modelo abliterated con 0 % de rechazos en HarmBench, puede producir contenido dañino, ilegal o peligroso; debe ejecutarse en sandbox y con supervisión.
+- Contexto: no se especifica la longitud de contexto, lo que dificulta planificar su uso en tareas de contexto largo.
+- Estabilidad: el autor advierte de que la abliteration introduce "cierta inestabilidad" y corrupción del modelo original, aunque afirma compensarla con la cuantización.
+- Producción: requiere validación adicional y filtros externos si se despliega en entornos con requisitos de cumplimiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF
-- Version MTP GGUF: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP
-- Version MLX: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e
-- Version MLX MTP: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
-- Hermano censurado (TielCoder): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
+- Versión MTP GGUF: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP
+- Versión MLX: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e
+- Versión MLX MTP: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
-- Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Plantillas de chat Sharp: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
-- Alternativa orientada a conocimiento general: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF
+- Modelo original Ornith-1.5: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Plantilla de chat Sharp: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
+- Alternativa censurada TielCoder: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
+- Modelo generalista Nail: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF

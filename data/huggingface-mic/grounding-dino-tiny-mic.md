@@ -2,83 +2,81 @@
 
 ## Resumen
 
-`grounding-dino-tiny-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` en Hugging Face. No se trata de un modelo funcional, sino de una versión reducida artificialmente del checkpoint `IDEA-Research/grounding-dino-tiny`, diseñada para validar la integración del pipeline de Grounding DINO con Transformers. El autor lo etiqueta explícitamente como `test-artifact`, es decir, un objeto de test que no debe confundirse con un modelo entrenado ni utilizarse en producción.
+`grounding-dino-tiny-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, no un modelo entrenado ni utilizable en producción. Se construye a partir de `IDEA-Research/grounding-dino-tiny`, un detector de objetos zero-shot basado en la arquitectura Grounding DINO, pero reduciendo drásticamente su configuración y sustituyendo los pesos por valores aleatorios. El resultado es un checkpoint de 7.714.390 parámetros (frente a los aproximadamente 172 millones del modelo original) que conserva la misma estructura de tensores, los mismos ficheros de procesador y el mismo formato de configuración.
 
-El modelo conserva la arquitectura `GroundingDinoForObjectDetection` y los mismos nombres de tensores que el checkpoint original, pero con una configuración drásticamente reducida (2 capas de encoder, 2 de decoder, 2 capas en el backbone y 2 capas ocultas en el codificador de texto), lo que da un total de 7.714.390 parámetros. Los pesos son aleatorios (semilla 17) y no han sido entrenados; simplemente superaron una puerta de sensibilidad de entrada que garantiza que las perturbaciones en las entradas mueven los logits al menos 0,001.
+El propósito declarado es servir como fixture para pruebas de integración con Transformers: permite validar pipelines de carga, ejecución y verificación de contratos (inputs, outputs, gradientes) sin necesidad de descargar el checkpoint real ni de ejecutar cómputo significativo. El autor lo etiqueta explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
-Su relevancia es, por tanto, exclusivamente de ingeniería: sirve para verificar que el código de integración (procesadores, tokenizadores, carga de pesos y ejecución forward/backward) funciona correctamente con la arquitectura Grounding DINO, sin necesidad de descargar ni ejecutar el checkpoint real de 172M parámetros. Cualquier uso como detector de objetos zero-shot produciría resultados sin sentido.
+Su relevancia es por tanto metodológica, no funcional: ilustra una práctica de ingeniería de software (fixtures ligeros con sensibilidad de entrada verificada) aplicada al ecosistema de Hugging Face. Cualquier evaluación de capacidades de detección de objetos debe realizarse sobre el modelo base original, no sobre esta variante.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GroundingDinoForObjectDetection (transformer multimodal texto-imagen para deteccion de objetos) |
+| Arquitectura | GroundingDinoForObjectDetection (transformer multimodal texto-imagen, variante reducida) |
 | Parametros totales | 7.714.390 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica; modelo de deteccion, no generativo) |
-| Tipos de cuantizacion | no disponible (pesos en float32; el autor indica que es finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | no disponible (modelo de detección, no generativo) |
+| Tipos de cuantizacion | no disponible (pesos en float32; se declara finito en float32, bfloat16 y float16) |
+| Idiomas soportados | no disponible (procesador de texto copiado del modelo base) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Grounding DINO: un detector de objetos zero-shot que combina un backbone de visión, un codificador de texto, un encoder de características multimodales y un decoder transformer con consultas. En esta fixture, la configuración se ha reducido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`: `encoder_layers=2`, `decoder_layers=2`, `backbone num_layers=2` y `text num_hidden_layers=2`. Los ficheros del procesador (`added_tokens.json`, `preprocessor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.txt`) se copiaron byte a byte desde `IDEA-Research/grounding-dino-tiny`.
+La arquitectura es `GroundingDinoForObjectDetection`, la implementación de Transformers del modelo Grounding DINO, que combina un backbone visual con un encoder y decoder tipo transformer y una torre de texto para alinear consultas en lenguaje natural con regiones de la imagen. En esta variante concreta, la configuración se ha reducido mediante la regla genérica de `sweep.py`: `encoder_layers=2`, `decoder_layers=2`, `num_layers=2` en el backbone y `num_hidden_layers=2` en la torre de texto.
 
-No hubo entrenamiento. Los pesos se inicializaron aleatoriamente con semilla 17 y se validaron con una puerta de sensibilidad de entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (la más débil, `pixel_values:halve`, produjo 16,4). La fixture se guarda en float32, el mismo dtype con el que carga por defecto el checkpoint original, y se verificó que es finita en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los nombres de tensores coinciden con los del checkpoint real, lo que permite sustituir unos por otros en pruebas de integración.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y solo se aceptaron tras superar una puerta de sensibilidad de entrada: cada perturbación de las entradas del contrato debía mover los logits al menos 0,001 (la más débil, `pixel_values:halve`, produjo 16,4). Los ficheros de procesador (`added_tokens.json`, `preprocessor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.txt`) se copiaron byte a byte desde `IDEA-Research/grounding-dino-tiny`. El fixture conserva los mismos nombres de tensor que el checkpoint real y se guarda en float32, el dtype por defecto del modelo original. No se aplicó RLHF, DPO ni ningún otro ajuste.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no ha sido entrenado, por lo que no detecta objetos de forma significativa.
-- Conserva la interfaz de Grounding DINO: entrada de imagen más prompt de texto, salida de cajas y logits.
-- Sirve para validar la carga del modelo, del procesador y del tokenizador en Transformers.
-- Permite comprobar forward, loss y backward en float32, bfloat16 y float16.
-- Mantiene los mismos nombres de tensores que el checkpoint original, lo que facilita pruebas de compatibilidad.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
-- No dispone de modo thinking, visión generativa ni audio.
+- Carga y ejecución en Transformers con la clase `GroundingDinoForObjectDetection`.
+- Verificación de contratos de entrada y salida (forward, loss y gradientes) en float32, bfloat16 y float16.
+- Validación de pipelines de preprocesado con los ficheros de procesador idénticos al modelo base.
+- Pruebas de integración y CI sin descarga del checkpoint real ni requisitos de GPU significativos.
+- No realiza detección de objetos real: los pesos son aleatorios y la configuración está reducida.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto.
+- Sin capacidades multilingües evaluadas ni modo thinking, visión o audio más allá del pipeline de detección.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: verificar que `GroundingDinoForObjectDetection` carga correctamente desde un repositorio con safetensors y que el procesador asociado se instancia sin errores.
-- CI/CD de la librería: ejecutar tests de forward y backward en float32, bfloat16 y float16 sin descargar el checkpoint real de 172M parámetros, reduciendo tiempo y ancho de banda en pipelines.
-- Validación de contratos de entrada: comprobar que perturbaciones en `pixel_values` y en los tokens de texto producen cambios en los logits, tal como exige la puerta de sensibilidad del fixture.
-- Desarrollo de código de inferencia: prototipar el preprocesado y postprocesado de Grounding DINO (normalización de cajas, umbrales, mapeo de etiquetas) con un modelo ligero antes de pasar al checkpoint real.
-- Pruebas de compatibilidad de tokenizadores: al copiar los ficheros del procesador byte a byte, sirve para verificar que el tokenizador de texto se comporta igual que en el modelo original.
-- Docencia y demostraciones: ilustrar la arquitectura interna de Grounding DINO inspeccionando formas de tensores y capas sin necesidad de recursos de GPU significativos.
-- Verificación de serialización: comprobar que el guardado y recarga en safetensors preserva nombres y formas de todos los tensores.
+- Pruebas de integración en CI: el fixture permite ejecutar la carga del modelo, un forward y la comprobación de formas de salida en cada commit sin descargar los ~700 MB del checkpoint original ni requerir GPU.
+- Validación de contratos de framework: los directorios `integrations/transformers/expectations` documentan las expectativas de entrada y salida, y el fixture sirve para verificar que una versión de Transformers las cumple.
+- Desarrollo de código de preprocesado: al copiar byte a byte los ficheros del procesador del modelo base, permite depurar tokenización y transformaciones de imagen con el mismo comportamiento que el modelo real.
+- Pruebas de compatibilidad de dtype: al ser finito en float32, bfloat16 y float16, sirve para comprobar rutas de conversión de precisión en pipelines de inferencia.
+- Reproducción de fixtures: `build_fixtures.py` y `build.json` permiten reconstruir el artefacto y auditar hashes, fuentes fijadas y resultados de la puerta de sensibilidad.
+- Formación de equipos: ejemplo didáctico de cómo reducir un checkpoint grande conservando estructura y contrato para pruebas rápidas y deterministas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de detección (COCO AP, zero-shot transfer, etc.) carecería de significado.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios; cualquier métrica de detección (COCO, LVIS, etc.) carecería de sentido sobre esta variante.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 dado el tamaño de 7,7M parámetros (unos 31 MB de pesos) más activaciones reducidas por la configuración mínima.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100.
-- Cabe holgadamente en GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU para pruebas.
-- Opciones de despliegue: Transformers (carga estándar desde el repositorio), con soporte de float32, bfloat16 y float16. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: no disponibles; al ser un fixture con configuración mínima, serían muy inferiores a los del checkpoint real, pero no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 para 7,7 M de parámetros, más el coste de activaciones del backbone reducido; cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no requiere GPU dedicada; puede ejecutarse en CPU para pruebas de integración.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
+- Opciones de despliegue: Transformers (carga directa con `GroundingDinoForObjectDetection`); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a un modelo de detección.
+- Latencia y throughput: no disponibles; al tratarse de un fixture, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `grounding-dino-tiny-mic` (este) | 7,7M (reducido, pesos aleatorios) | no aplica | Fixture de test | no disponible | Hugging Face |
-| `IDEA-Research/grounding-dino-tiny` | ~172M (no confirmado en la informacion disponible) | no aplica | Deteccion zero-shot | no disponible en la informacion proporcionada | Hugging Face |
-| `IDEA-Research/grounding-dino-base` | no disponible | no aplica | Deteccion zero-shot | no disponible | Hugging Face |
+| `huggingface-mic/grounding-dino-tiny-mic` | 7.714.390 | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| `IDEA-Research/grounding-dino-tiny` | no disponible en la informacion (aprox. 172 M segun la model card) | no disponible | Deteccion zero-shot | no disponible | Hugging Face |
+| Otros detectores zero-shot (p. ej. OWLv2, GLIP) | no disponible | no disponible | Deteccion zero-shot | no disponible | no disponible |
 
-La comparación relevante es únicamente con el checkpoint original del que deriva: misma arquitectura y mismos nombres de tensores, pero con configuración reducida y pesos no entrenados. Frente a otros detectores zero-shot (por ejemplo, GLIP u OWLv2), no se dispone de datos en la información proporcionada.
+La comparación relevante es únicamente con su modelo base: misma arquitectura y mismos ficheros de procesador, pero configuración reducida y pesos aleatorios. Frente a alternativas de la misma categoría (OWLv2, GLIP) no se dispone de datos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y las detecciones no tienen significado.
-- Etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
-- No debe desplegarse en producción ni presentarse como detector funcional.
-- La licencia no está disponible en la información proporcionada; no se puede confirmar el uso comercial.
-- Los idiomas soportados no están documentados.
-- La configuración reducida (2 capas por bloque) no refleja el comportamiento del checkpoint real; los resultados de pruebas de integración no son extrapolables al modelo completo.
-- El repositorio tiene un tamaño de 0,0 GB según los metadatos, lo que sugiere que algunos ficheros deben regenerarse con `python example/build_fixtures.py --fixture grounding-dino-tiny-mic`.
-- No se han publicado métricas de rendimiento ni evaluaciones de sesgo o alucinación.
+- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y la configuración está reducida; las salidas no tienen significado semántico.
+- Etiquetado como `test-artifact` por el autor para excluirlo de búsquedas de modelos candidatos; no debe desplegarse en producción.
+- Licencia no disponible: no se puede confirmar el régimen de uso comercial ni la procedencia de los términos heredados del modelo base.
+- Idiomas no disponibles: aunque el procesador de texto es idéntico al del modelo base, no se declaran idiomas soportados.
+- La model card no documenta sesgos, riesgos de alucinación ni limitaciones de contexto, al no tratarse de un modelo generativo.
+- El repositorio tiene un tamaño de 0,0 GB según los metadatos, coherente con un artefacto mínimo; no incluye todos los ficheros necesarios para un uso completo sin reconstrucción.
+- Para cualquier evaluación real de detección zero-shot debe usarse `IDEA-Research/grounding-dino-tiny` o sus variantes entrenadas.
 
 ## Enlaces
 
@@ -89,5 +87,6 @@ La comparación relevante es únicamente con el checkpoint original del que deri
 - Expectativas de Transformers: https://huggingface.co/huggingface-mic/grounding-dino-tiny-mic/tree/main/integrations/transformers/expectations
 - Procedencia del fixture: https://huggingface.co/huggingface-mic/grounding-dino-tiny-mic/blob/main/build.json
 - Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/grounding-dino-tiny-mic.html
-- Repositorio transformers-mic (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Repositorio de construcción: https://github.com/huggingface/transformers-mic
+- Script de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

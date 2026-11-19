@@ -77,31 +77,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "eBay Australia | eBay Community",
-      "url": "https://community.ebay.com.au/",
-      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
-    },
-    {
-      "title": "Sudden decline in eBay sales from Australia listings",
-      "url": "https://community.ebay.com.au/forum/selling-15/topic/sudden-decline-in-ebay-sales-from-australia-listings-6515/",
-      "snippet": "However, I do not think that can affect my sales overall. In Australia there are some cost of living challenges but not of a magnitude …"
-    },
-    {
-      "title": "community.ebay.it",
-      "url": "https://community.ebay.it/robots.txt",
-      "snippet": "User-agent: * Disallow: /health/ Disallow: /accounts/ Disallow: /api/ Disallow: /newsletter/ Disallow: /gql/ Disallow: /triggers/ Disallow: …"
-    },
-    {
-      "title": "Customer tax code | Selling on eBay | eBay Italy",
-      "url": "https://community.ebay.it/forum/vendere-su-ebay-17/topic/codice-fiscale-clienti-23557/",
-      "snippet": "May 17, 2011 · Summary:The discussion focuses on the topic of 'Customer tax code'. However, the participants' contributions consist …"
-    },
-    {
-      "title": "国外外贸B2C，B2B，C2C网站有哪些？ebay，亚马逊 ... - 知乎",
-      "url": "https://www.zhihu.com/question/20227815",
-      "snippet": "May 10, 2012 · 国外外贸B2C，B2B，C2C网站有哪些？ ebay，亚马逊属于国外外贸B2C吗？ 因想研究国外外贸B2C的发展情况，如 …"
-    }
-  ]
+  "sources": []
 }

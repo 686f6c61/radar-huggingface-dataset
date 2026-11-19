@@ -2,103 +2,93 @@
 
 ## Resumen
 
-MiniMax-H3-PTD-LoRAs es un conjunto de dos adaptadores LoRA de aceleración (8 pasos y 4 pasos) para el modelo de generación de vídeo con audio MiniMax-H3, publicados por el equipo taobao-content-ai sobre el backbone MiniMaxAI/MiniMax-H3. No es un modelo autónomo: es un artefacto de destilación que se aplica sobre los pesos base para reducir el número de evaluaciones del transformer (NFE) necesarias en la tarea Ref2VA (imagen de referencia → vídeo + audio sincronizado).
+MiniMax-H3-PTD-LoRAs es una colección de adaptadores LoRA de aceleración para MiniMax-H3, un modelo generativo de vídeo y audio. Los desarrolla el equipo taobao-content-ai y aplican una técnica denominada PTD (Parametric Trajectory Distillation) para destilar la trayectoria de inferencia de la tarea Ref2VA (imagen de referencia a vídeo más audio) en un estudiante de pocos pasos. El resultado son dos checkpoints: uno de 8 pasos y otro de 4 pasos, ambos con rango 128 y precisión BF16.
 
-La innovación central es PTD (Parametric Trajectory Distillation), una técnica que, a diferencia de un único LoRA de aceleración compartido, entrena un adaptador de bajo rango independiente por cada paso de inferencia ("per-hop") sobre el backbone de difusión, apoyándose en las cabezas de salida por intervalo introducidas por PDD (Parallel Decoding Distillation). En inferencia, cada paso de denoising selecciona el adaptador de su hop y fusiona la cabeza de salida correspondiente, de modo que el checkpoint de 8 hops se ejecuta en 8 NFE y el de 4 hops en 4.
+El problema que resuelve es el coste computacional de la difusión iterativa: en lugar de decenas de evaluaciones del transformer, el modelo destilado genera vídeo y audio con 8 o 4 NFE (evaluaciones de función). Esto reduce la latencia de forma proporcional y hace viable la generación image-to-video con audio sincronizado en entornos de producción.
 
-Su relevancia es práctica: la generación conjunta de vídeo y audio con modelos de difusión de gran tamano es costosa en tiempo de GPU, y estos LoRA permiten reducir el coste de muestreo de decenas de pasos a 4-8 sin reentrenar el modelo base. El repo ocupa 16,8 GB, tiene 145 descargas y 15 likes en el momento de la consulta, y se distribuye bajo la MiniMax-H3 Community License Agreement, no bajo una licencia permisiva.
+Es relevante porque combina tres piezas: destilación por trayectoria paramétrica, adaptadores de bajo rango por paso ("per-hop") y cabezas de salida por intervalo heredadas de Parallel Decoding Distillation (PDD). El repositorio ocupa 27,9 GB y acumula más de 20.000 descargas, lo que indica adopción práctica en pipelines de generación de vídeo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA per-hop sobre el backbone de difusión de MiniMax-H3 (modelo base: transformer de difusión para vídeo + audio; detalles internos del backbone no disponibles en la información proporcionada) |
-| Parametros totales | No disponible (el repo contiene adaptadores LoRA, no pesos completos; el tamano del modelo base MiniMax-H3 no se especifica) |
-| Parametros activos | No aplica (no es un modelo MoE; adaptadores LoRA con rank=128 y network_alpha=128) |
-| Longitud de contexto | No disponible (no aplica en el sentido de ventana de tokens; la condición de entrada es una imagen de referencia más un prompt) |
-| Tipos de cuantizacion | BF16 en los pesos publicados; no se documentan otras cuantizaciones (GGUF, FP8, INT8) en la información disponible |
-| Idiomas soportados | No disponible |
-| Licencia | MiniMax-H3 Community License Agreement (license: other), enlazada desde el repo del modelo base |
-| Formato de pesos | safetensors (LoRA), con configuración embebida en `__metadata__`: `ptd_num_hops`, `pdd_num_steps=32`, `pdd_block_size`, `lora_rank`, `lora_alpha`, `lora_targets` |
-
-Checkpoints incluidos:
-
-| Nombre | Modelo base | Tarea | NFE | Descripción |
-|---|---|---|---|---|
-| `MiniMax-H3-Ref2VA-PTD-8Step.safetensors` | MiniMax-H3 | Ref2VA | 8 | LoRA PTD per-hop, 8 hops (rank=128, network_alpha=128, BF16) |
-| `MiniMax-H3-Ref2VA-PTD-4Step.safetensors` | MiniMax-H3 | Ref2VA | 4 | LoRA PTD per-hop, 4 hops (rank=128, network_alpha=128, BF16) |
+| Arquitectura | Difusión sobre backbone transformer (MiniMax-H3); LoRA per-hop sobre el backbone más cabezas de salida por intervalo (PDD) |
+| Parametros totales | no disponible (adaptadores LoRA con `rank=128`, `network_alpha=128`) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 en los pesos publicados; no se documentan otras cuantizaciones |
+| Idiomas soportados | no disponible |
+| Licencia | minimax-h3-community-license-agreement (license: other) |
+| Formato de pesos | safetensors (metadatos `__metadata__` con `ptd_num_hops`, `pdd_num_steps=32`, `pdd_block_size`, `lora_rank`, `lora_alpha`, `lora_targets`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es el modelo de difusión MiniMax-H3, que genera vídeo y audio de forma conjunta condicionado por una imagen de referencia y un prompt. Sobre ese backbone, este repo no publica pesos completos sino adaptadores de bajo rango (rank=128, alpha=128, BF16) insertados en las capas objetivo indicadas en `lora_targets`. La particularidad es que no existe un único adaptador compartido entre pasos: PTD entrena un LoRA independiente por cada hop, de manera que el checkpoint de 8 pasos contiene 8 adaptadores y el de 4 pasos contiene 4.
+El modelo base MiniMax-H3 es un generador de vídeo y audio; sobre él, estos LoRA aplican PTD, una destilación de trayectoria paramétrica que entrena un adaptador de bajo rango independiente por cada paso de inferencia ("per-hop"), en lugar de un único LoRA compartido. Esta aproximación se apoya en las cabezas de salida por intervalo que introduce Parallel Decoding Distillation (PDD), con `pdd_num_steps=32` y un `pdd_block_size` configurable. En inferencia, cada paso de denoising selecciona el adaptador de su hop y fusiona la cabeza de salida correspondiente, de modo que un checkpoint de 8 hops ejecuta 8 NFE y uno de 4 hops ejecuta 4 NFE.
 
-El entrenamiento es un proceso de destilación de trayectoria: se destila la trayectoria del profesor Ref2VA (el modelo base con su muestreo completo) hacia un estudiante de pocos pasos, y se apoya en las cabezas de salida por intervalo de Parallel Decoding Distillation (PDD), con `pdd_num_steps=32` y un `pdd_block_size` configurable. En inferencia, la función `apply_ptd_lora` lee la metadata del safetensors y deriva automáticamente `num_inference_steps` a partir de `ptd_num_hops`, de modo que el usuario no tiene que fijar manualmente el número de pasos. No se especifican en la información disponible el número de tokens/cuadros de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o preferencias (no aplicables de forma directa en un modelo de difusión de vídeo).
+Los checkpoints publicados son `MiniMax-H3-Ref2VA-PTD-8Step.safetensors` y `MiniMax-H3-Ref2VA-PTD-4Step.safetensors`, ambos con rango 128 y alpha 128 en BF16. La configuración viaja embebida en los metadatos del safetensors, y la función `apply_ptd_lora` la lee para derivar automáticamente `num_inference_steps`. El entrenamiento se realizó sobre la tarea Ref2VA (imagen de referencia a vídeo más audio) partiendo de MiniMax-H3 y de los LoRA de aceleración de alibaba-pai. No se detallan en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de vídeo con audio sincronizado a partir de una imagen de referencia y un prompt textual (tarea Ref2VA).
-- Aceleración del muestreo: 8 NFE con el checkpoint de 8 pasos y 4 NFE con el de 4 pasos, frente al muestreo completo del modelo base.
-- Selección automática del adaptador por paso: cada paso de denoising escoge su hop y fusiona la cabeza de salida correspondiente.
-- Autoconfiguración: la metadata embebida en el safetensors determina hops, rank, alpha, targets y número de pasos de inferencia.
-- Compatibilidad declarada con el ecosistema MiniMax-H3 (librería `minimax-h3`), y comparabilidad con las variantes Minimax-h3-Turbo (4 pasos) y Ref2VA-Acc-8Step (PDD) del ecosistema.
-- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso, agentes ni procesamiento de audio de entrada.
+- Generación de vídeo a partir de una imagen de referencia (image-to-video) con audio asociado, en la tarea Ref2VA.
+- Aceleración de inferencia: 8 NFE o 4 NFE frente a la trayectoria completa del modelo base.
+- Adaptación por paso: cada hop selecciona su propio adaptador y cabeza de salida, permitiendo control fino del compromiso calidad/latencia.
+- Carga automática de configuración desde metadatos del safetensors mediante `apply_ptd_lora`.
+- Compatibilidad con el ecosistema MiniMax-H3 y con los ejemplos de Minimax-H3-Turbo.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multilingüismo textual, al tratarse de un adaptador de generación audiovisual.
 
 ## Casos de uso
 
-- Prototipado rápido de vídeo publicitario: aplicar el checkpoint PTD-4Step sobre MiniMax-H3 para generar clips con audio a partir de una imagen de producto, reduciendo el coste por iteración creativa a 4 evaluaciones del transformer frente al muestreo completo.
-- Previsualización en producción de contenidos: usar el PTD-8Step como paso intermedio de calidad cuando el 4Step degrada demasiado el resultado, manteniendo aún una reducción de NFE significativa respecto al modelo base.
-- Generación de escenas de diálogo o confrontación con audio: los ejemplos publicados (pelea junto a la piscina, confrontación en un almacén) muestran el caso de escenas con audio sincronizado a partir de una imagen de referencia y un prompt.
-- Integración en pipelines de post-producción: al ser adaptadores safetensors con metadata autodescriptiva, encajan en flujos automatizados que cargan el LoRA, llaman a `apply_ptd_lora` y ejecutan el sampler con el número de pasos derivado automáticamente.
-- Investigación en destilación de trayectoria: el repo sirve como referencia reproducible para comparar PTD per-hop frente a PDD y frente a LoRA de aceleración única en una tarea multimodal vídeo+audio.
-- Evaluación comparativa de aceleradores: los tres casos de test públicos permiten contrastar cara a cara MiniMax-H3-Ref2VA, Minimax-h3-Turbo (4 pasos), Ref2VA-Acc-8Step (PDD), PTD-8Step y PTD-4Step bajo los mismos prompts.
-- Abaratar experimentación académica en GPUs limitadas: al reducir NFE a 4-8, disminuye el tiempo de pared por muestra, lo que facilita barridos de prompts y semillas en entornos con recursos acotados.
+- Generación de clips publicitarios a partir de una imagen de producto: se introduce la referencia visual y el modelo produce vídeo con audio en 8 o 4 pasos, lo que permite iterar sobre variantes creativas con latencia reducida.
+- Prototipado rápido de storyboards animados: con 4 NFE se obtienen previsualizaciones de bajo coste que después se refinan con el checkpoint de 8 pasos o con el modelo base.
+- Creación de contenido para redes sociales: la ventana de pocos pasos facilita generar múltiples versiones de un mismo clip para pruebas A/B sin agotar presupuesto de GPU.
+- Integración en pipelines de postproducción: el LoRA se aplica sobre MiniMax-H3 y encaja en flujos existentes que ya usan el modelo base, sustituyendo solo el checkpoint.
+- Demos interactivas y herramientas de creación en navegador: la reducción de NFE disminuye el tiempo de respuesta lo suficiente para experiencias cuasi interactivas.
+- Investigación en destilación de modelos generativos: sirve como referencia reproducible de PTD combinado con PDD para comparar estrategias de aceleración en difusión audiovisual.
+- Evaluación comparativa de calidad frente a Turbo (4 pasos) y a los LoRA de aceleración de alibaba-pai, usando los tres casos de prueba publicados (pelea junto a la piscina, confrontación en almacén, moto saliendo de un monitor).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FVD, FAD, CLIP-score, sincronización audio-vídeo u otras métricas) en la información disponible. La model card únicamente aporta comparaciones cualitativas mediante vídeos de demostración generados con los tres casos de test de `prompts_ref2va_test.json` (ejemplos 5, 3 y 8: pelea junto a la piscina, confrontación en un almacén y moto saliendo de un monitor), con peso de LoRA 1.0 y 8 o 4 NFE respectivamente. Los nombres de fichero de la variante Turbo sugieren resolución de 768p, pero no se detalla la resolución exacta ni la duración de los clips generados por los checkpoints PTD.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye comparaciones cualitativas mediante vídeos de demostración entre MiniMax-H3-Ref2VA, Minimax-h3-Turbo (4 pasos), Ref2VA-Acc-8Step (PDD), Ref2VA-PTD-8Step y Ref2VA-PTD-4Step, pero no tablas con métricas numéricas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. Depende por completo del modelo base MiniMax-H3, cuyos requisitos no se detallan en la información proporcionada; los LoRA anaden un coste adicional derivado de su rango (rank=128, alpha=128, BF16) sobre las capas objetivo.
-- GPU recomendadas: no disponible en la información proporcionada. Para un modelo de difusión de vídeo con audio de este perfil, lo habitual es requerir GPUs de centro de datos (A100/H100), pero este dato no está confirmado por el autor.
-- ¿Cabe en GPU de consumo? No disponible. No se documenta si el conjunto base + LoRA cabe en RTX 4090 u otras GPU consumer.
-- Opciones de despliegue: librería `minimax-h3` con la función `apply_ptd_lora`, que lee la metadata del safetensors y deriva `num_inference_steps`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo de difusión de vídeo).
-- Latencia y throughput: no se publican medidas. Cualitativamente, el checkpoint de 4 pasos requiere 4 NFE y el de 8 pasos 8 NFE, frente al muestreo completo del modelo base, lo que reduce proporcionalmente el número de evaluaciones del backbone.
+- VRAM estimada: no disponible de forma explícita; el repositorio pesa 27,9 GB y los pesos se distribuyen en BF16, por lo que se requiere una GPU con memoria suficiente para el modelo base MiniMax-H3 más los adaptadores.
+- GPU recomendadas: no disponibles en la información proporcionada; por el tamaño del repo y el uso de BF16, se orienta a GPU de centro de datos (A100, H100) o equivalentes.
+- Compatibilidad con GPU de consumo: no confirmada; el tamaño del repositorio y la precisión BF16 sugieren que no cabe en GPU de consumo de gama media sin cuantización adicional, que no se documenta.
+- Opciones de despliegue: librería `minimax-h3` (según el campo library del repo) y la función `apply_ptd_lora`; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un modelo de difusión audiovisual.
+- Latencia y throughput: no disponibles; la ventaja declarada es la reducción de NFE de la trayectoria completa a 8 o 4 evaluaciones.
 
 ## Comparativa con modelos similares
 
-| Modelo / adaptador | Tipo | NFE | Tarea | Licencia | Disponibilidad |
+| Modelo | Tipo | Pasos (NFE) | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-Ref2VA-PTD-8Step (este repo) | LoRA PTD per-hop (8 adaptadores) | 8 | Ref2VA | MiniMax-H3 Community License | Hugging Face, 16,8 GB de repo |
-| MiniMax-H3-Ref2VA-PTD-4Step (este repo) | LoRA PTD per-hop (4 adaptadores) | 4 | Ref2VA | MiniMax-H3 Community License | Hugging Face, mismo repo |
-| alibaba-pai/MiniMax-H3-Acc-LoRAs | LoRA de aceleración con PDD | 8 (Ref2VA-Acc-8Step) | Ref2VA | No disponible en la información proporcionada | Hugging Face |
-| lightx2v/Minimax-h3-Turbo | Acelerador de la familia Turbo | 4 | Ref2VA / generación | No disponible en la información proporcionada | Hugging Face, repo GitHub ModelTC/Minimax-H3-Turbo |
-| MiniMaxAI/MiniMax-H3 (base) | Modelo completo de difusión vídeo+audio | Muestreo completo (no especificado) | Ref2VA y otras | MiniMax-H3 Community License | Hugging Face |
+| MiniMax-H3-PTD-8Step (este repo) | LoRA PTD per-hop | 8 | Ref2VA | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3-PTD-4Step (este repo) | LoRA PTD per-hop | 4 | Ref2VA | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3-PTD-RefAsymOPD-LoRAs | LoRA PTD + RefAsymOPD | 8 y 6 | Ref2VA | no disponible | Hugging Face (taobao-content-ai) |
+| Minimax-h3-Turbo | Acelerador | 4 | Ref2VA | no disponible | Hugging Face (lightx2v) / GitHub (ModelTC) |
+| MiniMax-H3-Acc-LoRAs (Ref2VA-Acc-8Step) | LoRA PDD | 8 | Ref2VA | no disponible | Hugging Face (alibaba-pai) |
 
-No se dispone de datos de parámetros totales, contexto ni métricas de calidad para ninguna de las alternativas, por lo que la comparación cuantitativa de rendimiento no es posible con la información disponible.
+Los parámetros totales, la longitud de contexto y las métricas de calidad de estas alternativas no están disponibles en la información proporcionada, por lo que la comparación se limita a pasos de inferencia, tarea y licencia.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: requiere descargar los pesos de MiniMaxAI/MiniMax-H3 y cargar el adaptador; sin el base no funciona.
-- Solo cubre la tarea Ref2VA (imagen de referencia → vídeo + audio); no se documentan otras tareas como text-to-video ni edición de vídeo.
-- No hay evaluación cuantitativa publicada: la calidad relativa frente al modelo base, PDD o Turbo se sostiene únicamente en vídeos de demostración, lo que impide garantizar umbrales de calidad en producción.
-- La aceleración a 4 pasos implica compromisos de fidelidad y coherencia temporal no cuantificados; el autor no documenta en qué condiciones el 4Step es aceptable frente al 8Step.
-- Licencia restrictiva: MiniMax-H3 Community License Agreement (license: other), con posibles condiciones sobre uso comercial, redistribución y atribución que deben revisarse antes de desplegar.
-- Riesgo de alucinación visual y de desincronización audio-vídeo inherente a los modelos de difusión; no se documentan mitigaciones específicas ni tasas de fallo.
-- Idiomas soportados no disponibles: no se especifica qué idiomas acepta en los prompts.
-- Sesgos: no se documenta ninguna evaluación de sesgos demográficos, culturales o de contenido en la información proporcionada.
-- La metadata embebida es crítica: modificar `ptd_num_hops`, `pdd_num_steps` o los `lora_targets` sin respetar la configuración original puede invalidar la aceleración o romper la inferencia.
-- El peso de LoRA recomendado en los ejemplos es 1.0; no se documenta el comportamiento con otros valores de escala.
+- Son adaptadores LoRA, no un modelo autónomo: requieren el modelo base MiniMax-H3 y la librería `minimax-h3` para funcionar.
+- La licencia es la MiniMax-H3 Community License Agreement, no una licencia open source estándar; es imprescindible revisar sus términos antes de cualquier uso comercial.
+- La información disponible no detalla sesgos conocidos, riesgo de alucinación visual o limitaciones idiomáticas del modelo base.
+- No se documentan cuantizaciones alternativas a BF16, lo que limita el despliegue en hardware con poca memoria.
+- La calidad de los checkpoints de 4 pasos es inferior a la de 8 pasos y a la del modelo base; la propia model card recomienda el hermano RefAsymOPD para mejor calidad.
+- El rendimiento cualitativo se ilustra solo con tres casos de prueba, insuficiente para generalizar a otros dominios visuales.
+- No hay métricas numéricas publicadas que permitan validar de forma objetiva la degradación respecto al modelo base.
 
 ## Enlaces
 
-- Repo Hugging Face: https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-LoRAs
-- Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face: https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-LoRAs
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
-- Adaptadores de aceleración de referencia (PDD): https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs
-- Variante Turbo de 4 pasos: https://huggingface.co/lightx2v/Minimax-h3-Turbo
-- Repositorio con los ejemplos y prompts de test: https://github.com/ModelTC/Minimax-H3-Turbo/tree/main/examples
-- Página del proyecto PTD (Parametric Trajectory Distillation): https://alan-lanfeng.github.io/PTD/
-- Paper referenciado en los tags: arXiv:2607.26004
-- Vídeos de demostración: bajo `results/` en el propio repo de Hugging Face (`minimax_h3_ref2va_ptd_8step_*.mp4` y `minimax_h3_ref2va_ptd_4step_*.mp4`)
-- Búsqueda web: no se han encontrado enlaces técnicos relevantes; los resultados devueltos corresponden a páginas comerciales del marketplace Taobao y no aportan información sobre el modelo.
+- LoRA de aceleración de referencia (alibaba-pai): https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs
+- Hermano mejorado (PTD + RefAsymOPD): https://huggingface.co/taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs
+- Página del método PTD: https://alan-lanfeng.github.io/PTD/
+- Minimax-h3-Turbo en Hugging Face: https://huggingface.co/lightx2v/Minimax-h3-Turbo
+- Ejemplos de Minimax-H3-Turbo en GitHub: https://github.com/ModelTC/Minimax-H3-Turbo/tree/main/examples
+- Paper PTD (arXiv): https://arxiv.org/abs/2610.11498
+- Paper PDD (arXiv): https://arxiv.org/abs/2607.26004

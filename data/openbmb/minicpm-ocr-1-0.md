@@ -2,112 +2,126 @@
 
 ## Resumen
 
-MiniCPM-OCR 1.0 es un modelo visión-lenguaje de 1.300 millones de parámetros (1.300.434.160 según los safetensors del repositorio) desarrollado por OpenBMB, primer miembro de la familia MiniCPM-V/o especializado exclusivamente en comprensión de documentos centrada en texto. Convierte imágenes y PDF de documentos en Markdown estructurado, reconociendo texto, tablas, fórmulas, gráficos y sellos, además de realizar extracción de información clave (KIE) para automatización posterior.
+MiniCPM-OCR 1.0 es un modelo vision-language de 1.300 millones de parámetros especializado en comprensión de documentos, desarrollado por OpenBMB (grupo de investigación de la Universidad de Tsinghua) y publicado bajo licencia Apache 2.0. Se trata del primer modelo de la familia MiniCPM-V/o orientado específicamente a OCR y parsing documental, y deriva por fine-tuning del modelo base openbmb/MiniCPM-V-4.6. Su propósito es convertir imágenes de documentos —escaneos, fotografías, páginas curvadas, capturas recapturadas— en texto estructurado, incluyendo tablas, fórmulas, gráficos, sellos y extracción de información clave.
 
-El modelo está diseñado explícitamente para el equilibrio entre calidad y velocidad en capturas del mundo real: la model card reporta 93,68 en Real5-OmniDocBench, 54,7 en OCRBench v2 y un rendimiento de 1,2 páginas por segundo en una RTX 5090 con concurrencia de imagen 1, lo que supone aproximadamente 1,49× el throughput de PaddleOCR-VL-1.6 y 3,62× el de MinerU2.5 Pro. Con decodificación acelerada DSpark la eficiencia extremo a extremo mejora un 55%, y existen variantes BF16 y GGUF de esa configuración acelerada.
+El modelo alcanza 93,68 en Real5-OmniDocBench y 54,7 en OCRBench v2, y está diseñado para equilibrar calidad y velocidad: procesa aproximadamente 1,2 páginas por segundo, con un throughput de 1,49× respecto a PaddleOCR-VL-1.6 y 3,62× respecto a MinerU2.5 Pro. Con la decodificación acelerada DSpark (variantes BF16 y GGUF) la eficiencia extremo a extremo mejora un 55%.
 
-Su relevancia práctica está en el despliegue: licencia Apache 2.0, soporte declarado desde el primer día en vLLM, SGLang, llama.cpp y Ollama, variantes cuantizadas, builds multi-chip, SDK de Python, API completa y flujos de agentes. Cubre documentos en inglés y chino, incluidos escaneos, páginas curvadas, fotografías, páginas inclinadas y documentos recapturados.
+Su relevancia actual radica en tres factores: es un modelo pequeño (1,3B) que cabe en hardware modesto, soporta desde el primer día vLLM, SGLang, llama.cpp y Ollama, e incluye un SDK de Python, API completa y flujos de agente. Con 225.216 descargas y 459 likes en Hugging Face, se posiciona como una alternativa open source práctica frente a soluciones propietarias de parsing documental. El contexto y los detalles de entrenamiento no están disponibles en la información proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | minicpm_ocr (modelo visión-lenguaje de la familia MiniCPM-V/o); detalles del encoder visual no disponibles |
-| Parametros totales | 1.300.434.160 (1,3B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | Vision-language multimodal (familia MiniCPM-V/o); detalles internos no disponibles |
+| Parámetros totales | 1.300.434.160 (1,3B) |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | BF16 y variantes cuantizadas; existen builds GGUF de la versión acelerada DSpark. Lista completa de cuantizaciones no disponible |
-| Idiomas soportados | Inglés (en) y chino (zh) |
+| Tipos de cuantización | Variantes cuantizadas disponibles (GGUF para DSpark); lista completa no disponible |
+| Idiomas soportados | Inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16) y GGUF (DSpark); tamaño del repositorio 5,3 GB |
+| Formato de pesos | Safetensors (repo de 5,3 GB); GGUF para la variante DSpark |
+| Pipeline | image-text-to-text |
+| Modelo base | openbmb/MiniCPM-V-4.6 |
+| Librería | minicpm-ocr |
+| Tamaño del repositorio | 5,3 GB |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe MiniCPM-OCR 1.0 como un modelo multimodal de tipo imagen-texto-a-texto (pipeline `image-text-to-text`) con tipo de modelo `minicpm_ocr`, integrado en la familia MiniCPM-V/o de OpenBMB. Con 1,3B parámetros, el diseño prioriza el reconocimiento de texto sobre la comprensión visual general: el modelo trabaja sobre regiones de página detectadas y genera Markdown estructurado con tablas, fórmulas y demás elementos de maquetación. La model card no detalla la arquitectura interna del encoder visual, el mecanismo de atención ni el tokenizador, por lo que esos extremos quedan como no disponibles.
+MiniCPM-OCR 1.0 es un modelo vision-language de tipo image-text-to-text construido mediante fine-tuning sobre openbmb/MiniCPM-V-4.6. La información disponible no detalla la arquitectura interna del encoder visual ni del decoder de lenguaje, ni especifica el número de tokens de entrenamiento, la composición del dataset o si se emplearon técnicas de RLHF o DPO. Lo que sí se documenta es su especialización: el modelo está afinado para tareas centradas en texto dentro de documentos, incluyendo reconocimiento de tablas, fórmulas, gráficos y sellos, así como extracción de información estructurada.
 
-Tampoco se han publicado en la información proporcionada los datos de entrenamiento (número de tokens, composición del corpus, uso de RLHF/DPO o fases de alineación). La innovación técnica documentada es la decodificación acelerada DSpark, con variantes BF16 y GGUF publicadas por separado, que según el autor mejora un 55% la eficiencia de procesamiento extremo a extremo y sostiene el throughput de 1,2 páginas/s en RTX 5090. El modelo está pensado para seguir siendo ajustable mediante fine-tuning.
+La innovación técnica destacada es DSpark, un mecanismo de decodificación acelerada que mejora la eficiencia extremo a extremo en un 55% y que se distribuye en variantes BF16 y GGUF (openbmb/MiniCPM-OCR-1.0-DSpark y openbmb/MiniCPM-OCR-1.0-DSpark-gguf). El modelo está preparado para despliegue en vLLM, SGLang, llama.cpp y Ollama, con builds multi-chip, y admite fine-tuning adicional. No se dispone de información sobre la composición del corpus de entrenamiento ni sobre el proceso de alineación.
 
 ## Capacidades
 
-- Parseo de documentos a Markdown estructurado, con detección de layout y renderizado final.
-- Reconocimiento de texto en inglés y chino, incluyendo escaneos, páginas curvadas, fotografías, páginas inclinadas y documentos recapturados.
-- Reconocimiento de tablas, fórmulas, gráficos y sellos.
-- Extracción de información clave (KIE) para automatización posterior de flujos documentales.
-- Procesamiento de PDF e imágenes; la model card muestra ejemplos con manuscritos, documentos históricos y escaneados, periódicos y estados financieros.
-- Capacidad conversacional multimodal (etiqueta `conversational`).
-- Integración en flujos de agentes y API completa, con SDK de Python distribuido por pip.
-- Despliegue en vLLM, SGLang, llama.cpp y Ollama, con variantes cuantizadas y builds multi-chip.
-- No se documentan en la información disponible capacidades de audio, ni tool calling explícito, ni modo de razonamiento extendido.
+- Parsing documental de extremo a extremo: convierte imágenes y PDFs en texto estructurado, con resultados SOTA en Real5-OmniDocBench (93,68), OmniDocBench v1.6, Wild-OmniDocBench y olmOCR-Bench.
+- Reconocimiento de tablas: extrae la estructura y el contenido de tablas en documentos.
+- Reconocimiento de fórmulas: interpreta expresiones matemáticas presentes en documentos.
+- Reconocimiento de gráficos y sellos: procesa elementos visuales no textuales dentro de documentos.
+- Extracción de información clave (KIE): identifica y estructura campos relevantes para automatización downstream.
+- Robustez ante capturas del mundo real: maneja escaneos, páginas curvadas, fotografías, páginas inclinadas y documentos recapturados.
+- Procesamiento bilingüe chino-inglés, tanto en documentos como en PDFs.
+- Reconocimiento general: 54,7 en OCRBench v2.
+- Soporte conversacional (pipeline image-text-to-text).
+- Integración con agentes: incluye un Agent Skill (SKILL.md) para que un agente instale el modelo y parsee documentos con un solo prompt.
+- SDK de Python (pip), API completa y app móvil iOS con procesamiento on-device y offline.
 
 ## Casos de uso
 
-- Digitalización masiva de archivos PDF y escaneos: el modelo convierte páginas en Markdown estructurado a 1,2 páginas/s en una RTX 5090, lo que permite procesar lotes grandes en hardware de gama alta de consumo.
-- Extracción de datos de facturas y estados financieros: la función de KIE permite recuperar campos concretos (importes, fechas, emisores) y volcarlos a un sistema contable sin intervención manual.
-- Migración de documentación técnica a repositorios: al preservar fórmulas y tablas en la salida, resulta adecuado para convertir manuales científicos o técnicos a Markdown listo para un sitio de documentación.
-- Procesamiento de prensa histórica: la model card incluye ejemplos de periódicos y documentos históricos escaneados, un escenario típico de bibliotecas y hemerotecas digitales.
-- Automatización de back office con agentes: combinado con la API y el SDK, el modelo puede actuar como herramienta de lectura de documentos dentro de un pipeline de agentes que clasifica, extrae y enruta expedientes.
-- Digitalización de documentación bilingüe inglés-chino en comercio internacional: permite tratar contratos, albaranes y fichas de producto en ambos idiomas con un único modelo.
-- Reconocimiento de manuscritos y formularios recapturados con móvil: útil en aplicaciones de campo donde las fotos presentan inclinación, curvatura o iluminación desigual.
-- Despliegue en local o en el borde: con variantes GGUF y soporte de llama.cpp/Ollama, cabe en entornos sin GPU de centro de datos, lo que facilita escenarios con requisitos de privacidad documental.
+- Digitalización masiva de archivos: el modelo convierte lotes de escaneos y PDFs en texto estructurado a 1,2 páginas/s, lo que permite procesar grandes volúmenes documentales con hardware modesto gracias a sus 1,3B de parámetros.
+- Extracción de datos de facturas y formularios: mediante KIE, identifica campos clave (importes, fechas, emisores) y los devuelve estructurados para alimentar sistemas de contabilidad o ERP.
+- Procesamiento de documentación científica y técnica: reconoce fórmulas y tablas en papers y manuales, preservando la estructura para su conversión a Markdown o LaTeX.
+- Automatización de pipelines RPA: el soporte de vLLM, SGLang, llama.cpp y Ollama desde el primer día permite integrar el modelo en flujos existentes con una API estándar y un SDK de pip.
+- Captura móvil de documentos: la app iOS con procesamiento on-device y offline permite parsear documentos en campo, sin conexión y sin enviar datos a la nube.
+- Agentes autónomos de gestión documental: el Agent Skill permite que un agente instale el modelo y procese documentos con un solo prompt, habilitando flujos multi-paso de clasificación y extracción.
+- Despliegue en entornos con requisitos de privacidad: la licencia Apache 2.0 y las opciones de self-hosting (incluida imagen Docker oficial) permiten mantener los datos en la infraestructura propia.
+- Procesamiento de documentos degradados: su robustez ante páginas curvadas, inclinadas, fotografías y recapturas lo hace adecuado para digitalizar material de archivo en mal estado.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | MiniCPM-OCR 1.0 | Notas |
-|---|---|---|
-| Real5-OmniDocBench | 93,68 | Parseo de documentos del mundo real |
-| OCRBench v2 | 54,7 | Reconocimiento general y extracción de información |
-| OmniDocBench v1.6 | Resultado numérico no disponible | Solo se indica que obtiene resultados líderes |
-| Wild-OmniDocBench | Resultado numérico no disponible | Solo se indica que obtiene resultados líderes |
-| olmOCR-Bench | Resultado numérico no disponible | Solo se indica que obtiene resultados líderes |
-| CHAOS-Bench | Resultado numérico no disponible | Aparece en las gráficas de evaluación, sin cifra en el texto |
-| Throughput (RTX 5090, concurrencia de imagen 1, 1651 imágenes de OmniDocBench v1.6) | 1,2 páginas/s | Configuración acelerada; 1,00× relativo |
-| Throughput relativo vs PaddleOCR-VL-1.6 | ~1,49× | Según el autor |
-| Throughput relativo vs MinerU2.5 Pro | ~3,62× | Según el autor |
-| Mejora de eficiencia con DSpark | +55% extremo a extremo | Variantes BF16 y GGUF |
+| Benchmark | Resultado |
+|---|---|
+| Real5-OmniDocBench | 93,68 |
+| OCRBench v2 | 54,7 |
+| OmniDocBench v1.6 | Líder entre modelos open source (valor numérico no disponible) |
+| Wild-OmniDocBench | Líder entre modelos open source (valor numérico no disponible) |
+| olmOCR-Bench | Líder entre modelos open source (valor numérico no disponible) |
+| CHAOS-Bench | Evaluado (valor numérico no disponible) |
 
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de benchmarks de propósito general, algo esperable en un modelo especializado en OCR. Las cifras de OmniDocBench v1.6, Wild-OmniDocBench, olmOCR-Bench y CHAOS-Bench solo aparecen en formato gráfico en la model card, por lo que no se reproducen aquí.
+| Métrica de eficiencia | Valor |
+|---|---|
+| Throughput | 1,2 páginas/s |
+| Aceleración con DSpark | +55% de eficiencia extremo a extremo |
+| Throughput vs PaddleOCR-VL-1.6 | 1,49× |
+| Throughput vs MinerU2.5 Pro | 3,62× |
+
+Los resultados numéricos de OmniDocBench v1.6, Wild-OmniDocBench, olmOCR-Bench y CHAOS-Bench se presentan en la model card únicamente como gráficos comparativos, sin cifras textuales en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos en BF16: aproximadamente 2,6 GB para 1,3B parámetros; el repositorio completo ocupa 5,3 GB, incluyendo artefactos adicionales.
-- VRAM estimada para inferencia en BF16: del orden de 4-6 GB considerando encoder visual, activaciones y caché KV (estimación, no publicada por el autor).
-- VRAM estimada con cuantización GGUF de 4 bits: del orden de 1-2 GB (estimación).
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti, RTX 4070/4080/4090 y RTX 5090; el dato de throughput publicado corresponde a una RTX 5090.
-- GPU de centro de datos: A100 y H100 son válidas por capacidad, aunque el modelo está dimensionado para hardware menor; no se publican cifras de throughput en esas GPU.
-- Opciones de despliegue: vLLM, SGLang, llama.cpp y Ollama desde el primer día, además de builds multi-chip y variantes cuantizadas.
-- Throughput medido: 1,2 páginas/s en RTX 5090 con concurrencia de imagen 1 (las regiones de una misma página se reconocen en paralelo). El throughput real depende del contenido de la página, el backend, la concurrencia y el hardware.
-- Latencia por página no publicada de forma desagregada.
+- VRAM estimada para inferencia: con 1,3B de parámetros, en BF16 el modelo requiere aproximadamente 2,6 GB solo para pesos; en cuantizaciones de 8 bits alrededor de 1,3 GB y en 4 bits en torno a 0,7 GB, más overhead de KV cache y encoder visual (cifras estimadas a partir del número de parámetros; no confirmadas por el autor).
+- GPU recomendadas: el tamaño reducido permite ejecución en GPUs de consumo; no se especifican modelos concretos en la información disponible.
+- Cabe en GPU de consumo: sí, por el tamaño de 1,3B; el repo completo ocupa 5,3 GB, por lo que una GPU con 8 GB de VRAM debería ser suficiente en la mayoría de configuraciones.
+- Opciones de despliegue: vLLM, SGLang, llama.cpp, Ollama, imagen Docker oficial, SDK de pip y app iOS on-device.
+- Latencia y throughput: 1,2 páginas/s de referencia; con DSpark la eficiencia extremo a extremo mejora un 55%.
+- Builds multi-chip disponibles según la model card.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | 1,3B | No disponible | 93,68 Real5-OmniDocBench; 54,7 OCRBench v2; 1,2 páginas/s en RTX 5090 | Apache 2.0 | Hugging Face, variantes BF16 y GGUF, SDK y API |
-| PaddleOCR-VL-1.6 | No disponible | No disponible | ~1,49× más lento que MiniCPM-OCR 1.0 según el autor | No disponible en la información | No disponible en la información |
-| MinerU2.5 Pro | No disponible | No disponible | ~3,62× más lento que MiniCPM-OCR 1.0 según el autor | No disponible en la información | No disponible en la información |
+| Modelo | Parámetros | Enfoque | Throughput relativo | Licencia |
+|---|---|---|---|---|
+| MiniCPM-OCR 1.0 | 1,3B | OCR y parsing documental | 1,0× (referencia: 1,2 págs/s) | Apache 2.0 |
+| PaddleOCR-VL-1.6 | No disponible | OCR y parsing documental | 0,67× (MiniCPM es 1,49× más rápido) | No disponible |
+| MinerU2.5 Pro | No disponible | Parsing documental | 0,28× (MiniCPM es 3,62× más rápido) | No disponible |
 
-La comparación disponible se limita al throughput relativo publicado por OpenBMB; no se aportan parámetros, contexto ni licencias de las alternativas, por lo que la comparativa completa queda como no disponible.
+MiniCPM-OCR 1.0 lidera la media equiponderada de OmniDocBench v1.6, Real5-OmniDocBench, Wild-OmniDocBench y olmOCR-Bench entre los modelos OCR open source comparados. Los datos de parámetros, contexto y licencia de PaddleOCR-VL-1.6 y MinerU2.5 Pro no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declaran inglés y chino; el rendimiento en castellano u otras lenguas no está documentado y no debería asumirse.
-- Especialización estrecha: es un modelo de OCR y parseo documental, no un asistente general; no se han publicado resultados en benchmarks de razonamiento, código o matemáticas.
-- Riesgo de alucinación en la transcripción: como modelo generativo, puede producir texto, celdas de tabla o fórmulas que no aparecen en la imagen, especialmente en documentos degradados; conviene validar campos críticos en producción.
-- Sin datos publicados sobre sesgos, composición del corpus de entrenamiento ni filtros de datos.
-- Longitud de contexto no documentada: el número de páginas o la resolución máxima por pasada no se especifica en la información disponible.
-- Las cifras de throughput y las comparaciones relativas provienen del propio autor y de su guía de reproducción; la latencia real depende del backend, la concurrencia y la complejidad de la página.
-- Licencia Apache 2.0: permite uso comercial y modificaciones con obligaciones de atribución y aviso; conviene revisar los términos de las dependencias del pipeline (encoder visual, tokenizador) antes de redistribuir.
-- Los resultados de OmniDocBench v1.6, Wild-OmniDocBench, olmOCR-Bench y CHAOS-Bench no están disponibles en forma numérica en el texto de la model card.
+- Idiomas: solo se declara soporte para inglés y chino; el rendimiento en otros idiomas no está documentado.
+- Longitud de contexto: no disponible, lo que impide evaluar su comportamiento en documentos de muchas páginas procesados de una sola vez.
+- Sesgos: no se documentan sesgos conocidos; al entrenarse principalmente con documentos en y zh, puede presentar menor precisión en tipografías, layouts o sistemas de escritura no representados.
+- Alucinación: como modelo generativo, puede producir texto plausible pero incorrecto en regiones degradadas o ambiguas; se recomienda validación en flujos críticos.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los modelos base y de los datasets empleados en el fine-tuning.
+- App móvil: el parsing documental on-device está disponible solo en iOS por el momento.
+- Producción: los benchmarks publicados corresponden a configuraciones aceleradas concretas; la reproducibilidad requiere seguir la guía oficial de reproducción.
+- Detalles de entrenamiento y arquitectura interna no publicados en la información disponible, lo que limita la evaluación independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
+- Variante DSpark (BF16): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
+- Variante DSpark (GGUF): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-OCR
-- Documentación de la API: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_api_en.md
-- Guía del modelo: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_1dot0_en.md
-- Guía de reproducción de benchmarks: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/benchmark_reproduction_en.md
-- Variante acelerada DSpark (BF16): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
-- Variante acelerada DSpark (GGUF): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
-- Demo (global): https://platform.modelbest.ai/console/playground/document-parse
-- Demo (China): https://platform.modelbest.cn/console/playground/document-parse
 - Familia MiniCPM-V/o: https://github.com/openbmb/MiniCPM-V
+- Guía de despliegue: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_tutorial_en.md
+- Agent Skill (SKILL.md): https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/SKILL_en.md
+- Guía de reproducción de benchmarks: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/benchmark_reproduction_en.md
+- Guía del modelo: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_1dot0_en.md
+- Demo en HF Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
+- Playground oficial (global): https://platform.modelbest.ai/console/playground/document-parse
+- Playground oficial (CN): https://platform.modelbest.cn/console/playground/document-parse
+- Documentación de API (global): https://platform.modelbest.ai/console/docs/api/document-parse
+- Documentación de API (CN): https://platform.modelbest.cn/console/docs/api/document-parse
+- Demo iOS: https://github.com/OpenBMB/MiniCPM-V-Apps/blob/main/README.md#11-ios-demo
+- Discord: https://discord.gg/JE8KQqtdn

@@ -2,55 +2,58 @@
 
 ## Resumen
 
-TranscribePsy-250M-EU-sub-gguf es la distribucion en formato GGUF, con cuantizacion de 8 bits (Q8_0), del modelo de reconocimiento automatico del habla TranscribePsy-250M-EU-sub, desarrollado por qvac (Tether Data, S.A. de C.V.). El modelo base es una destilacion compacta de 283,5 millones de parametros (254 M segun la model card del modelo base) derivada de Parakeet-TDT-0.6B-v3, orientada a inferencia en dispositivo y en el borde (edge), y entrenada con la tecnica CAFE (Confining Feature Distillation to Language-Routed Adapters) descrita en el preprint arXiv:2610.19134.
+TranscribePsy-250M-EU-sub-gguf es la versión cuantizada a 8 bits (Q8_0) en formato GGUF del modelo de reconocimiento automático del habla TranscribePsy-250M-EU-sub, desarrollado por qvac (tether-ai-research). Se trata de un modelo ASR multilingüe de aproximadamente 283 millones de parámetros, diseñado específicamente para inferencia en dispositivo (on-device) y entornos de borde mediante el motor parakeet.cpp, integrado en la distribución qvac-fabric-speech.cpp que el equipo publica en GitHub.
 
-El modelo cubre ocho lenguas europeas seleccionadas por Multilingual LibriSpeech: neerlandes, ingles, frances, aleman, italiano, polaco, portugues y espanol. Un unico conjunto de pesos atiende las ocho lenguas sin necesidad de configurar el idioma, lo que simplifica el despliegue. Su relevancia actual radica en que ofrece reconocimiento de voz multilingue con un factor de tiempo real medio de 0,052 y un pico de memoria de aproximadamente 534 MiB en diez segundos de audio sobre seis telefonos medidos, lo que lo situa como una opcion viable para transcripcion local sin conexion.
+El modelo base emplea la arquitectura CAFE (Confining Feature Distillation to Language-Routed Adapters), un diseño de adaptadores enrutados por idioma orientado a ASR multilingüe compacto, descrito en el artículo arXiv:2610.19134. Cubre ocho idiomas europeos (neerlandés, inglés, francés, alemán, italiano, polaco, portugués y español) y está optimizado para transcripción por lotes con baja latencia y huella de memoria reducida.
 
-Esta variante GGUF esta pensada para ejecutarse con el motor parakeet.cpp del repositorio qvac-fabric-speech.cpp, con parches propios que acotan la memoria del front-end mel y anaden un decodificador Core ML para el Neural Engine de Apple. El repositorio ocupa 0,3 GB y el fichero unico de pesos pesa 305 MB.
+Su relevancia radica en que ofrece un factor de tiempo real de 0,052 de media en seis teléfonos de gama alta, con una latencia de inferencia de 1.021 ms, un arranque en frío de 252 ms y un pico de memoria de 534 MiB para audio de 10 segundos. El modelo base figura en la Open ASR Leaderboard dentro de la frontera de Pareto entre tamaño y WER en la pista multilingüe.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de Parakeet-TDT-0.6B-v3; destilacion con adaptadores enrutados por idioma, CAFE) |
-| Parametros totales | 283.492.118 (dato de safetensors); 254 M segun la model card del modelo base |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (ventana de codificacion configurable: 60 s por defecto con 25 % de solape; 30 s en dispositivos con menos memoria) |
+| Arquitectura | CAFE (adaptadores enrutados por idioma sobre backbone ASR compacto; detalles completos en la model card del modelo base) |
+| Parametros totales | 283.492.118 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (procesa audio en ventanas; por defecto 60 s con 25 % de solapamiento en el motor CLI, configurable a 30 s) |
 | Tipos de cuantizacion | Q8_0 (8 bits) |
-| Idiomas soportados | nl, en, fr, de, it, pl, pt, es (8 lenguas) |
+| Idiomas soportados | nl, en, fr, de, it, pl, pt, es |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (fichero `transcribepsy-250m-eu-sub.gguf`, 305 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una destilacion de Parakeet-TDT-0.6B-v3, un sistema de reconocimiento del habla con decodificador TDT (Token-and-Duration Transducer). La innovacion descrita en el articulo CAFE consiste en confinar la destilacion de caracteristicas a adaptadores enrutados por idioma, de modo que un unico modelo compacto cubre las ocho lenguas sin multiplicar los parametros por idioma. El resultado son 283,5 millones de parametros totales, aproximadamente la mitad del modelo profesor.
+El modelo base TranscribePsy-250M-EU-sub se construye sobre el diseño CAFE, que confina la destilación de características a adaptadores enrutados por idioma. Este esquema permite que un backbone compacto comparta representaciones generales mientras adaptadores específicos por idioma capturan las particularidades fonéticas y léxicas de cada una de las ocho lenguas cubiertas. El artículo CAFE (arXiv:2610.19134) documenta el diseño completo, aunque la información disponible no detalla el número exacto de tokens de entrenamiento ni la composición del dataset.
 
-Los detalles concretos de composicion del dataset, numero de tokens de audio y si hubo etapas de ajuste fino supervisado adicionales no se detallan en la informacion disponible; la model card remite a la model card del modelo base y a un informe tecnico anunciado como proximo. Esta variante GGUF no modifica los pesos mas alla de la cuantizacion Q8_0 y su unico cambio funcional respecto al modelo base es el formato de serializacion. El motor de ejecucion incorpora parches propios: limites de memoria en el front-end mel y un decodificador Core ML para el Apple Neural Engine, presentados como pull request upstream.
+La versión GGUF es una conversión directa a Q8_0 del modelo base, pensada para ejecutarse mediante parakeet.cpp dentro de qvac-fabric-speech.cpp. El equipo publica parches que acotan la memoria del front-end mel y añaden un decodificador Core ML para el Neural Engine de Apple, con intención de enviarlos upstream. No se dispone de información sobre el proceso de alineación (RLHF/DPO) ni sobre innovaciones de decodificación especulativa en la documentación proporcionada.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (transcripcion) en ocho lenguas europeas con un unico conjunto de pesos.
-- Deteccion y transcripcion sin especificar el idioma de entrada.
-- Procesamiento por lotes (batch), no en streaming.
-- Codificacion de grabaciones largas mediante ventanas solapadas (60 s con 25 % de solape por defecto; 30 s en dispositivos con poca memoria).
-- Ejecucion en dispositivo y en el borde mediante el motor parakeet.cpp, con variante Core ML para el Neural Engine.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision ni audio mas alla de la transcripcion.
+- Reconocimiento automático del habla (ASR) multilingüe en ocho idiomas europeos: neerlandés, inglés, francés, alemán, italiano, polaco, portugués y español.
+- Transcripción por lotes de audio de 16 kHz mono en formato WAV (el motor no remuestrea; se requiere conversión previa con ffmpeg).
+- Procesamiento de grabaciones largas mediante ventanas solapadas (60 s con 25 % de solapamiento por defecto; 30 s configurable para dispositivos con poca memoria).
+- Inferencia en dispositivo con bajo consumo de memoria (534 MiB de pico a 10 s de audio).
+- Ejecución en CPU y, mediante la build Core ML, en el Neural Engine de Apple.
+- No soporta streaming: es exclusivamente transcripción por lotes.
+- No se documentan capacidades de tool calling, agentes, visión ni audio más allá del ASR.
 
 ## Casos de uso
 
-- Transcripcion local en aplicaciones moviles: el modelo cabe en aproximadamente 534 MiB de pico de memoria a 10 s de audio y arroja una latencia de inferencia de 633 a 1.570 ms segun el telefono, lo que permite transcribir notas de voz sin enviar audio a la nube.
-- Subtitulado y actas de reuniones multilingues: con las ocho lenguas cubiertas y ventanas de 60 s solapadas al 25 %, se pueden procesar grabaciones de 10 a 30 minutos manteniendo el pico de memoria por debajo de 2 GB.
-- Asistentes de voz sin conexion en dispositivos con recursos limitados: el arranque en frio de 153 a 356 ms permite inicializar el motor bajo demanda en cada sesion de dictado.
-- Procesamiento por lotes de archivos de audio en servidores de borde: el motor de linea de comandos acepta WAV mono a 16 kHz y permite fijar el numero de hilos, lo que facilita el escalado horizontal en equipos modestos.
-- Investigacion en reconocimiento del habla multilingue: al ser una destilacion compacta con adaptadores enrutados por idioma, sirve como referencia reproducible para estudiar el equilibrio entre tamano y cobertura linguistica.
-- Integracion en pipelines de transcripcion de contenido audiovisual: la conversion previa con ffmpeg a 16 kHz mono y el procesamiento por ventanas encajan en flujos automatizados de postproduccion.
-- Aplicaciones de accesibilidad en tiempo casi real: la transcripcion de fragmentos cortos con latencias inferiores a dos segundos en telefonos de gama alta permite mostrar texto a medida que se habla, siempre que se trocee la entrada manualmente.
+- Transcripción de reuniones en el dispositivo: el modelo procesa audio de 16 kHz en ventanas de 60 s con solapamiento del 25 %, manteniendo el pico de memoria por debajo de 2 GB en grabaciones de 10 a 30 minutos, lo que permite transcribir reuniones completas sin enviar datos a la nube.
+- Subtitulado de vídeo en ocho idiomas europeos: con un factor de tiempo real de 0,052, un vídeo de una hora se transcribe en aproximadamente tres minutos en un teléfono de gama alta, lo que lo hace viable para generación de subtítulos en movilidad.
+- Asistentes de voz offline para aplicaciones móviles: la latencia de 633 ms en un Galaxy S26 Ultra y el arranque en frío de 213 ms permiten integraciones conversacionales con respuesta casi inmediata sin conexión.
+- Notas de voz dictadas en aplicaciones de productividad: el modelo cabe en 305 MB de almacenamiento y 530 MiB de RAM en uso, por lo que puede empaquetarse dentro de apps iOS y Android sin dependencias de servidor.
+- Cumplimiento y privacidad en sectores regulados: al ejecutarse íntegramente en el dispositivo, el audio no abandona el terminal, lo que facilita el cumplimiento de normativas de protección de datos en entornos sanitarios, legales o financieros.
+- Transcripción de centros de llamadas en el borde: el soporte de ocho idiomas europeos y el bajo coste computacional permiten desplegar transcripción en equipos de sobremesa o gateways locales para analítica de conversaciones sin infraestructura GPU.
+- Accesibilidad en tiempo real diferido: generación de transcripciones para personas con discapacidad auditiva en dispositivos de gama media (Pixel 9: 1.570 ms de latencia, 356 ms de arranque), con procesamiento por ventanas para contenido largo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precision (WER, MMLU u otros) en la informacion disponible. La model card remite a la del modelo base para datos de precision. Si se publican mediciones de rendimiento en dispositivo:
+El modelo base figura en la Open ASR Leaderboard (versión 26-10-2026) en la frontera de Pareto entre tamaño y WER en la pista multilingüe, con WER promediado sobre seis idiomas (alemán, francés, italiano, español, portugués y neerlandés). La información proporcionada no incluye los valores numéricos de WER ni resultados de benchmarks como MMLU, HumanEval o GSM8K, que no aplican a un modelo ASR.
 
-| Dispositivo | SoC | Latencia de inferencia (ms) | Arranque en frio (ms) | Memoria pico a 10 s (MiB) |
+Rendimiento en dispositivo medido por el autor (media de las tres mejores de cinco ejecuciones, 160 enunciados de Multilingual LibriSpeech, 20 por idioma, 40 minutos de audio):
+
+| Dispositivo | SoC | Latencia (ms) | Arranque en frío (ms) | Memoria pico @ 10 s (MiB) |
 |---|---|---|---|---|
 | Galaxy S26 Ultra | 8 Elite Gen5 | 633 | 213 | 530 |
 | Galaxy S25 Ultra | 8 Elite | 771 | 241 | 533 |
@@ -59,46 +62,46 @@ No se han publicado resultados de benchmarks de precision (WER, MMLU u otros) en
 | Pixel 10 | Tensor G5 | 1.240 | 327 | 530 |
 | Pixel 9 | Tensor G4 | 1.570 | 356 | 530 |
 
-El conjunto de evaluacion son 160 enunciados aleatorios de Multilingual LibriSpeech (20 por lengua, 40 minutos de audio); cada cifra es la media de las tres mejores de cinco ejecuciones repetidas. El factor de tiempo real medio es de 0,052.
+Media agregada: factor de tiempo real de 0,052, latencia de 1.021 ms, arranque en frío de 252 ms y pico de memoria de 534 MiB a 10 s.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: aproximadamente 530 a 542 MiB de pico a 10 s de audio en los dispositivos medidos; por debajo de 2 GB de pico en grabaciones de 10 a 30 minutos con ventanas de 60 s.
-- GPU recomendadas: no se documentan requisitos de GPU de escritorio; el motor objetivo es parakeet.cpp sobre CPU movil y, en Apple silicon, el Neural Engine mediante la variante Core ML.
-- Cabe en hardware consumer: si, en telefonos de gama alta y media (Snapdragon 8 Elite, Apple A16/A19 Pro, Google Tensor G4/G5) y presumiblemente en CPU de escritorio, aunque no se publican mediciones para estas ultimas.
-- Opciones de despliegue: motor parakeet.cpp de qvac-fabric-speech.cpp (build propio desde el repositorio), variante Core ML para Apple Neural Engine, y descarga directa del fichero GGUF desde el Hub. No se menciona soporte de llama.cpp, Ollama, vLLM ni TGI.
-- Latencia y throughput: latencia de inferencia de 633 a 1.570 ms por dispositivo; factor de tiempo real medio de 0,052 (aproximadamente 19 veces mas rapido que tiempo real en el conjunto medido).
+- VRAM/RAM estimada: aproximadamente 530-542 MiB de pico en inferencia con 10 s de audio; el fichero GGUF ocupa 305 MB en disco.
+- GPU recomendadas: no requiere GPU; el motor parakeet.cpp está optimizado para CPU. En Apple silicon, la build Core ML aprovecha el Neural Engine.
+- Cabe en cualquier smartphone moderno: validado en Galaxy S26/S25 Ultra, iPhone 17 Pro Max, iPhone 15, Pixel 10 y Pixel 9.
+- Opciones de despliegue: motor parakeet.cpp dentro de qvac-fabric-speech.cpp (build oficial en GitHub), build Core ML para Apple Neural Engine. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: factor de tiempo real de 0,052 de media; latencia entre 633 ms y 1.570 ms según dispositivo; arranque en frío entre 153 y 356 ms.
+- Para grabaciones largas, el motor CLI usa ventanas de 60 s con 25 % de solapamiento, manteniendo el pico de memoria por debajo de 2 GB en audios de 10 a 30 minutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Formato | Licencia | Notas |
+| Modelo | Idiomas | Formato | Parámetros | Licencia | Caso de uso |
 |---|---|---|---|---|---|
-| TranscribePsy-250M-EU-sub-gguf | 283,5 M | 8 | GGUF Q8_0 | Apache 2.0 | Optimizado para parakeet.cpp en dispositivo |
-| TranscribePsy-250M-EU-sub | 254 M | 8 | PyTorch | Apache 2.0 | Version de referencia, menor error declarado en las ocho lenguas MLS |
-| TranscribePsy-250M-EU | 250 M (nominal) | 25 | PyTorch | Apache 2.0 | Mayor cobertura linguistica europea |
-| TranscribePsy-250M-EU-sub-coreml | 254 M | 8 | Core ML | Apache 2.0 | Ejecucion en Apple Neural Engine |
-| Parakeet-TDT-0.6B-v3 | 600 M | no disponible en la informacion | no disponible | no disponible en la informacion | Modelo profesor del que se destila |
+| TranscribePsy-250M-EU-sub-gguf | 8 | GGUF Q8_0 | 283 M | Apache 2.0 | Despliegue on-device vía parakeet.cpp |
+| TranscribePsy-250M-EU-sub | 8 | PyTorch | 283 M | Apache 2.0 | Máxima precisión en los ocho idiomas MLS |
+| TranscribePsy-250M-EU | 25 | PyTorch | no disponible | Apache 2.0 | Cobertura amplia de lenguas europeas |
+| TranscribePsy-250M-EU-sub-coreml | 8 | Core ML | 283 M | Apache 2.0 | Neural Engine de Apple |
+
+No se dispone de datos de benchmarks comparativos con modelos de terceros en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo cubre ocho lenguas: neerlandes, ingles, frances, aleman, italiano, polaco, portugues y espanol. Cualquier otra lengua queda fuera de alcance.
-- Transcripcion por lotes, no en streaming; no admite entrada de audio continua en tiempo real sin troceado previo.
-- El motor no remuestrea: la entrada debe ser WAV mono a 16 kHz, lo que exige un paso previo de conversion (por ejemplo, con ffmpeg).
-- La memoria crece de forma marcada con la duracion de la grabacion si se codifica en una sola pasada; es obligatorio usar ventanas para audios largos.
-- No esta pensado para decisiones automatizadas criticas para la seguridad ni de alto riesgo.
-- No se publican tasas de error (WER) en la informacion disponible ni mediciones fuera de los seis telefonos evaluados; el rendimiento en CPU de escritorio o servidores no esta cuantificado.
-- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al ser una destilacion de Parakeet-TDT-0.6B-v3, hereda las caracteristicas del modelo profesor, cuyos sesgos no se detallan.
-- Licencia Apache 2.0, que permite uso comercial con las obligaciones habituales de atribucion y aviso; el titular es Tether Data, S.A. de C.V.
-- El motor requiere compilar parches propios no fusionados aun upstream, lo que anade complejidad de mantenimiento en produccion.
+- Solo cubre ocho idiomas: neerlandés, inglés, francés, alemán, italiano, polaco, portugués y español. Para otras lenguas europeas debe usarse TranscribePsy-250M-EU (25 idiomas).
+- No soporta streaming; es exclusivamente transcripción por lotes, lo que lo inhabilita para aplicaciones de dictado en tiempo real.
+- El motor no remuestrea: la entrada debe ser WAV mono a 16 kHz, lo que exige un paso previo de conversión.
+- La codificación de grabaciones largas en una sola pasada consume memoria que crece con la duración; es obligatorio usar ventanas para audios superiores a un minuto.
+- No está destinado a decisiones automatizadas críticas o de alto riesgo.
+- Riesgo de alucinación y errores de transcripción inherentes a todo modelo ASR, especialmente en audio ruidoso o con acentos no representados en el entrenamiento; la información no detalla sesgos específicos.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones de los parches de qvac-fabric-speech.cpp publicados en GitHub, que pueden tener su propia licencia.
+- La información sobre el proceso de entrenamiento (tokens, composición del dataset, alineación) no está disponible en la documentación proporcionada; para detalles debe consultarse el artículo CAFE.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-gguf
 - Modelo base: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub
-- Variante Core ML: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-coreml
-- Variante de 25 lenguas: https://huggingface.co/qvac/TranscribePsy-250M-EU
-- Repositorio del motor y release parcheado: https://github.com/tether-ai-research/qvac-transcribePsy
-- Motor parakeet.cpp dentro de qvac-fabric-speech.cpp: https://github.com/tetherto/qvac-fabric-speech.cpp/tree/master/engines/parakeet
-- Blog de presentacion: https://huggingface.co/blog/qvac/transcribepsy-250m
-- Articulo CAFE (arXiv:2610.19134): https://arxiv.org/abs/2610.19134
-- Modelo profesor Parakeet-TDT-0.6B-v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Modelo con cobertura de 25 idiomas: https://huggingface.co/qvac/TranscribePsy-250M-EU
+- Build Core ML: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-coreml
+- Repositorio del motor: https://github.com/tether-ai-research/qvac-transcribePsy
+- Motor parakeet.cpp: https://github.com/tetherto/qvac-fabric-speech.cpp/tree/master/engines/parakeet
+- Artículo CAFE: https://arxiv.org/abs/2610.19134
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

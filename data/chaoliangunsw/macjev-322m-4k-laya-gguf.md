@@ -2,115 +2,109 @@
 
 ## Resumen
 
-MacJev-322M-4K-Laya-GGUF es la version cuantizada en formato GGUF de MacJev-322M-4K-Laya, un modelo de decision compacto disenado para agentes locales que se ejecutan en macOS. No es un modelo generativo: recibe un estado observado y una pregunta tipada con respuestas candidatas, y en una unica pasada hacia delante devuelve una probabilidad para cada candidata. Sus aplicaciones principales son el ranking de acciones, el enrutado de llamadas a herramientas (tool routing) y la verificacion del estado de una tarea dentro de un flujo multi-paso. Lo publica el usuario chaoliangUNSW bajo licencia Apache 2.0, con soporte declarado para ingles y chino.
+MacJev-322M-4K-Laya-GGUF es la distribucion en formato GGUF de MacJev-322M-4K-Laya, un modelo de decision compacto orientado a agentes locales en macOS. Lo desarrolla Chaoliang Yan (usuario chaoliangUNSW) dentro del proyecto JevStyle. No es un modelo generativo: recibe un estado observado y una pregunta tipada con respuestas candidatas, y devuelve en una sola pasada una probabilidad para cada candidata. Su utilidad practica es clasificar, enrutar llamadas a herramientas y verificar el estado de una tarea con puntuaciones calibradas y umbralizables.
 
-La arquitectura subyacente es un encoder ModernBERT (referido en la model card como mmBERT/ModernBERT) de aproximadamente 307 millones de parametros segun el recuento real de safetensors, aunque el nombre comercial indique 322M. El presupuesto de entrada es de 4096 tokens en total, con un maximo de 1024 tokens para la pregunta y sus opciones; cualquier entrada mayor lanza una excepcion en lugar de truncarse.
+El modelo parte del checkpoint multilingue Laya (arquitectura mmBERT/ModernBERT) y anade una cabeza de decision entrenada especificamente para tareas de eleccion forzada. Con 306.939.648 parametros y una ventana de 4096 tokens, esta pensado para ejecutarse en local sobre Apple silicon mediante llama.cpp, sin binarios parcheados: el encoder se sirve como GGUF estandar `modern-bert` con `llama-server` en modo embeddings y la cabeza se ejecuta aparte en NumPy en FP32.
 
-La relevancia de esta publicacion esta en su enfoque de despliegue: el encoder se distribuye como un GGUF `modern-bert` estandar convertible con las herramientas sin modificar de llama.cpp, mientras que la cabeza de decision viaja aparte en safetensors FP32 y se ejecuta en NumPy. Esto permite usar binarios de llama.cpp sin parchear (incluido el `llama-server` que ya incluye LM Studio) y obtener decisiones calibradas en hardware de consumo, con un tiempo de aproximadamente 0,11 s por peticion medida en un M1 Max.
+Es relevante ahora porque cubre un nicho poco atendido: la decision barata y verificable dentro de pipelines de agentes, frente al coste de invocar un LLM generativo para cada comprobacion. Segun la model card, frente al checkpoint Laya del que parte mejora la precision en comprobaciones si/no sobre entradas de 2K-4K tokens del 31,0 % al 89,1 % y reduce el error de calibracion en entradas largas de 0,253 a 0,032. El autor lo mantiene como archivo historico: la release recomendada actual es 2B v4 (texto e imagenes) y, para el modelo de texto mas pequeno, 0.8B v3.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder ModernBERT (mmBERT/ModernBERT) con cabeza de decision separada; no es MoE |
-| Parametros totales | 306.939.648 (segun safetensors; el nombre comercial indica 322M) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens de entrada en total; 1024 tokens para la pregunta y las opciones |
-| Tipos de cuantizacion | GGUF F16 para el encoder; cabeza de decision en safetensors FP32. No se detallan otras cuantizaciones |
+| Arquitectura | encoder mmBERT/ModernBERT con cabeza de decision (clasificacion de eleccion forzada) |
+| Parametros totales | 306.939.648 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | F16 (encoder GGUF); cabeza de decision en FP32 (safetensors) |
 | Idiomas soportados | en, zh |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (encoder, `MacJev-322M-4K-Laya-F16.gguf`) + safetensors (cabeza de decision, FP32) |
-| Tamano del repositorio | 0,7 GB |
-| Pipeline declarado | text-classification (tags adicionales: feature-extraction) |
-| Modelo base | chaoliangUNSW/MacJev-322M-4K-Laya (relacion: quantized) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (`MacJev-322M-4K-Laya-F16.gguf`) + `MacJev-322M-4K-Laya-head.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se compone de dos piezas. La primera es un encoder ModernBERT de unos 307 millones de parametros convertido a GGUF con las herramientas estandar de llama.cpp, sin parches. La segunda es una cabeza de decision que se distribuye como `MacJev-322M-4K-Laya-head.safetensors` en FP32 y que se ejecuta fuera de llama.cpp: el script `macjev_gguf.py` envia los ids de tokens a `llama-server`, recibe un estado oculto por token y aplica la cabeza en NumPy. Las unicas dependencias del runtime son `numpy`, `tokenizers` y `safetensors`, ademas de un binario `llama-server`.
+El modelo combina un encoder transformer bidireccional de la familia ModernBERT (variante mmBERT, multilingue) con una cabeza de decision que se aplica sobre los estados ocultos por token. El encoder se convierte a GGUF `modern-bert` con las herramientas estandar de llama.cpp y se sirve con `llama-server` usando `--embeddings --pooling none`, de modo que el cliente recibe un estado oculto por token y ejecuta la cabeza en NumPy; el script `macjev_gguf.py` solo requiere `numpy`, `tokenizers` y `safetensors`. La entrada se procesa completa de una vez, con flags de contexto y batch fijados a 4096 (`-c 4096 -b 4096 -ub 4096 -np 1 -fa on`).
 
-El modelo parte del checkpoint multilingue Laya y se entrena sobre tareas de decision tipadas: comprobaciones si/no (`noul`), decisiones de reglas (`choice`), puntuaciones ordinales (`score`) y decisiones tipadas. La model card no detalla el numero de tokens de entrenamiento ni la composicion exacta del dataset, pero si indica que los resultados se reprodujeron en tres semillas entrenadas de forma independiente y que la version publicada es la semilla elegida a priori sobre datos de desarrollo. La innovacion tecnica principal es la separacion entre encoder y cabeza, que permite reutilizar binarios GGUF estandar y ejecutar la cabeza en CPU con precision FP32, manteniendo una coincidencia de logits con la implementacion en PyTorch dentro de 0,000005.
+El entrenamiento parte del checkpoint multilingue Laya y se orienta a decisiones tipadas: el modelo recibe un estado y una pregunta con candidatas, y aprende a asignar probabilidad a cada una. Segun la model card, los resultados se obtuvieron con tres semillas entrenadas de forma independiente y la release publicada es la semilla elegida a priori sobre datos de desarrollo, lo que aporta evidencia de reproducibilidad. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO. Esta release, fechada el 2026-09-23, no uso salidas de Jev y solo funciona con el runtime incluido en el repositorio; el paquete `jev-style` no la carga.
 
 ## Capacidades
 
-- Decision y clasificacion con probabilidades por candidata en una sola pasada hacia delante, sin generacion de texto.
-- Comprobaciones booleanas de estado de tarea sobre observaciones largas (2K-4K tokens), donde la model card reporta una mejora de 31,0 % a 89,1 % de exactitud frente al checkpoint Laya multilingue.
-- Decisiones basadas en reglas con criterios tipados, con 44,7 % de exactitud en entradas de 2K-4K tokens frente al 23,7 % del modelo base.
-- Puntuacion ordinal (`score`) para medir el grado de completitud de una tarea observada.
-- Decisiones tipadas sobre conjuntos de opciones, con 42,2 % de exactitud frente al 35,2 % del modelo base.
-- Calibracion de confianza: el error de calibracion en entradas largas baja de 0,253 a 0,032, lo que permite fijar umbrales de confianza fiables.
-- Soporte multilingue limitado a ingles y chino.
-- Integracion como herramienta o servidor MCP para que un modelo de chat pueda invocar `decide()`.
-- Compatibilidad con el pipeline de `text-classification` y con extraccion de caracteristicas (`feature-extraction`).
-- No ejecuta acciones: el resultado incluye `actions_executed: False` de forma explicita.
+- Clasificacion de texto y puntuacion de eleccion forzada: devuelve una probabilidad por cada respuesta candidata en una sola pasada.
+- Comprobaciones si/no de estado de tarea, con especial rendimiento en entradas largas de 2K a 4K tokens.
+- Decisiones por reglas y decisiones tipadas sobre estados estructurados.
+- Enrutamiento de llamadas a herramientas (tool routing) en agentes locales: elegir entre acciones disponibles como `open_browser`, `copy_file` o `ask_user`.
+- Puntuaciones calibradas y umbralizables: el error de calibracion en entradas largas es de 0,032, lo que permite fijar umbrales de confianza con sentido.
+- Capacidades multilingues limitadas a ingles y chino.
+- No es un modelo generativo: no produce texto libre, no soporta tool calling en el sentido conversacional ni razonamiento multi-paso autonomo.
+- No dispone de modo thinking, vision ni audio.
 
 ## Casos de uso
 
-- Enrutado de herramientas en agentes locales: dado un estado con la peticion del usuario y una lista de acciones disponibles, el modelo devuelve la accion candidata mas probable con su probabilidad asociada, lo que permite seleccionar la herramienta antes de invocarla y evita llamadas erroneas en flujos automatizados.
-- Verificacion de estado de tareas en agentes multi-paso: mediante preguntas de tipo `noul`, se comprueba si la observacion demuestra que una condicion se cumple (por ejemplo, si existe un archivo), con una exactitud del 89,1 % en entradas de 2K-4K tokens.
-- Puerta de aprobacion con umbral de confianza: gracias a su error de calibracion de 0,032 en entradas largas, se puede rechazar automaticamente cualquier decision cuya probabilidad superior quede por debajo de un umbral y derivar el caso a revision humana.
-- Clasificacion de texto ligera en produccion: el modelo se integra en el pipeline `text-classification` para tareas como analisis de emocion o clasificacion de noticias (AG News), con una mejora de 1,5 puntos de exactitud sobre 11.600 decisiones publicas (intervalo de confianza del 95 % de 1,1 a 1,8).
-- Asistente de escritorio en macOS: al ocupar 0,7 GB en F16 y ejecutarse sobre Metal en Apple Silicon, cabe en un Mac portatil y puede servir como componente de decision de un agente que funciona sin conexion.
-- Servidor de decision compartido por varios agentes: al exponerse via `llama-server` con banderas de embeddings, un unico proceso puede atender peticiones de decision a baja latencia (aproximadamente 0,11 s por peticion en un M1 Max) para varios clientes.
-- Herramienta MCP para un modelo de chat en LM Studio: `decide()` se expone como tool y el modelo conversacional delega en MacJev las decisiones discretas y verificables, reduciendo el coste de razonamiento del modelo grande.
-- Filtrado previo en pipelines de datos: dado un estado y una pregunta booleana, se descartan o marcan registros antes de pasarlos a modelos mas costosos, aprovechando el bajo coste por inferencia del encoder de 307M.
+- Enrutamiento de herramientas en agentes locales de macOS: dado el estado de la sesion y la lista de acciones disponibles, el modelo devuelve la probabilidad de cada accion y el agente ejecuta la de mayor puntuacion; su tamano de 307M parametros permite mantenerlo residente junto al agente sin competir por memoria.
+- Verificacion del estado de una tarea en pipelines multi-paso: comprobaciones si/no sobre observaciones largas (2K-4K tokens) con un 89,1 % de precision segun la model card, lo que permite decidir si continuar, reintentar o pedir intervencion.
+- Clasificacion de texto en produccion con umbrales de confianza: al tener un error de calibracion de 0,032 en entradas largas, las puntuaciones pueden usarse directamente para derivar casos dudosos a revision humana.
+- Moderacion o filtrado de solicitudes en asistentes de escritorio: clasificar la peticion del usuario frente a un conjunto fijo de categorias antes de invocar un modelo mayor, reduciendo coste y latencia.
+- Puntuacion de candidatos en sistemas de recuperacion o ranking: reutilizar la cabeza de decision para ordenar opciones discretas (acciones, respuestas, documentos) con una unica pasada del encoder.
+- Evaluacion reproducible de decisiones en investigacion: el script y los pesos permiten repetir experimentos de enrutamiento y comparar contra alternativas, como el benchmark publico de routing bancario citado en la model card.
+- Despliegue en local sin conexion en equipos Apple silicon: el encoder corre en llama.cpp y la cabeza en NumPy, sin dependencias de servicios alojados ni claves de API.
 
 ## Benchmarks y rendimiento
 
-La model card publica comparativas frente al checkpoint multilingue de Laya del que parte el modelo, con el mismo presupuesto de 4096 tokens de entrada y sobre conjuntos de test reservados:
+Resultados publicados en la model card, comparados con el checkpoint multilingue Laya del que parte, con el mismo presupuesto de entrada de 4096 tokens y sobre conjuntos de test reservados:
 
 | Tarea | Laya multilingue | MacJev |
 |---|---:|---:|
-| Comprobaciones si/no en entradas de 2K-4K tokens | 31,0 % | 89,1 % |
-| Decisiones de reglas en entradas de 2K-4K tokens | 23,7 % | 44,7 % |
-| Decisiones de reglas en entradas largas, todas las longitudes | 23,2 % | 39,7 % |
+| Comprobaciones si/no con entradas de 2K-4K tokens | 31,0 % | 89,1 % |
+| Decisiones por reglas con entradas de 2K-4K tokens | 23,7 % | 44,7 % |
+| Decisiones por reglas en entradas largas, todas las longitudes | 23,2 % | 39,7 % |
 | Decisiones tipadas | 35,2 % | 42,2 % |
 | Error de calibracion en entradas largas (menor es mejor) | 0,253 | 0,032 |
 
-Ademas, la model card indica que, sobre 11.600 decisiones publicas de tipo typed decisions, Emotion y AG News, la exactitud sube 1,5 puntos, con un intervalo del 95 % de 1,1 a 1,8. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales en la informacion disponible, ya que el modelo no es generativo.
-
-En cuanto a validacion de la cuantizacion, la model card afirma que el GGUF elige la misma respuesta superior en las 4.964 de 4.964 decisiones de validacion en las que la respuesta FP32 lidera por al menos 0,06; que la exactitud de desarrollo es identica a la del modelo FP32; y que la cabeza en NumPy coincide con la de PyTorch dentro de 0,000005 en logits.
+Ademas, la model card indica que en 11.600 decisiones publicas (decisiones tipadas, Emotion y AG News) la precision sube 1,5 puntos, con un intervalo de confianza del 95 % de 1,1 a 1,8. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generativos en la informacion disponible, lo cual es coherente con que el modelo no sea generativo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de un encoder de aproximadamente 307 millones de parametros en F16, los pesos ocupan del orden de 0,6 GB. La cabeza de decision en FP32 anade un tamano adicional no cuantificado en la model card.
-- GPU recomendadas: no se especifica una lista de GPU en la informacion disponible. La medicion publicada se realizo en un Apple M1 Max con backend Metal y llama.cpp build b10964 (Homebrew 0.4.1). Para otros sistemas, la model card remite a las releases oficiales de llama.cpp.
-- Compatibilidad con GPU de consumo: si, por el tamano del modelo cabe en cualquier GPU de consumo con mas de 1-2 GB de memoria libre, asi como en CPU y en Apple Silicon. La model card no desglosa cifras por GPU concreta.
-- Opciones de despliegue: `llama-server` de llama.cpp con las banderas `--embeddings --pooling none -c 4096 -b 4096 -ub 4096 -np 1 -fa on`, el `llama-server` incluido en LM Studio (probado con el backend 2.41.0) y el script `macjev_gguf.py` con `--start-server`. No se documentan despliegues con vLLM, TGI ni Ollama.
-- Latencia y throughput: aproximadamente 0,11 s por peticion completa en un M1 Max (dato de la model card; la frase original queda truncada en "up to 102"). No se publican cifras de throughput.
-- Requisitos de software: Python 3.10 o superior, `numpy`, `tokenizers` y `safetensors` para el runtime de la cabeza.
-- Limitacion de memoria: el modelo necesita leer la entrada completa de una vez, de ahi el uso de `--pooling none` y `-np 1`; no esta pensado para batching concurrente segun la configuracion indicada.
+- VRAM estimada: no disponible de forma explicita; con 307M parametros en F16 el encoder ocupa aproximadamente 0,6 GB de pesos, mas el estado del servidor llama.cpp y la cabeza en FP32.
+- El repositorio completo ocupa 0,7 GB.
+- GPU recomendadas: no disponibles; el caso de uso declarado es macOS sobre Apple silicon con llama.cpp instalado via `brew install llama.cpp`.
+- Cabe en GPU de consumo: si, dado el tamano del encoder; no se especifican modelos concretos de GPU en la informacion disponible.
+- Opciones de despliegue: `llama-server` de llama.cpp con `--embeddings --pooling none -c 4096 -b 4096 -ub 4096 -np 1 -fa on`, mas el cliente Python `macjev_gguf.py` con `numpy`, `tokenizers` y `safetensors`. Requiere Python 3.10 o superior.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La unica comparacion documentada en la informacion disponible es contra el checkpoint del que deriva el modelo. Para alternativas de la misma categoria (enrutadores de herramientas o clasificadores de decision compactos) no se aportan datos.
-
-| Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MacJev-322M-4K-Laya-GGUF | 306,9 M (safetensors) | 4096 tokens de entrada | 89,1 % en comprobaciones si/no de 2K-4K tokens; error de calibracion 0,032 | Apache 2.0 | GGUF + safetensors en Hugging Face |
-| Laya multilingue (modelo base) | no disponible | 4096 tokens | 31,0 % en comprobaciones si/no; error de calibracion 0,253 | no disponible | no disponible en la informacion proporcionada |
-| Otras alternativas de enrutado o clasificacion compacta | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MacJev-322M-4K-Laya-GGUF | 306.939.648 | 4096 | Encoder + cabeza de decision, eleccion forzada | apache-2.0 | GGUF + safetensors en Hugging Face |
+| Laya multilingue (checkpoint base) | no disponible | 4096 (mismo presupuesto de entrada) | Encoder multilingue sin cabeza de decision especifica | no disponible | checkpoint de referencia en Hugging Face |
+| JevStyle 2B v4 | no disponible | 8192 (API alojada; entradas de hasta 8000 tokens) | Modelo de decision de texto e imagenes, release recomendada | no disponible | pesos descargables via `jev-style`; API alojada |
+| JevStyle 0.8B v3 | no disponible | no disponible | Modelo de decision de texto, la opcion mas pequena | no disponible | pesos descargables via `jev-style` |
+
+La comparativa se limita a los modelos citados en la model card; no se dispone de datos de benchmarks de las alternativas mas alla de los resultados frente a Laya incluidos en la tabla anterior.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto, solo probabilidades sobre candidatas. No debe emplearse para redaccion, resumen ni dialogo.
-- La model card no detalla sesgos conocidos ni la composicion del dataset de entrenamiento, por lo que no es posible auditar sesgos por idioma, dominio o demografia.
-- Riesgo de alucinacion no aplicable en el sentido generativo, pero si existe riesgo de decision erronea: en decisiones de reglas la exactitud reportada en entradas largas es del 39,7 %, lo que implica una tasa de error superior al 60 % en esa tarea concreta.
-- Cobertura idiomatica limitada a ingles y chino; el rendimiento en castellano u otros idiomas no esta documentado.
-- Presupuesto de entrada estricto: superar los 4096 tokens totales o los 1024 tokens de pregunta y opciones provoca una excepcion `InputBudgetError` en lugar de un truncado silencioso, lo que exige gestionar el troceado en el cliente.
-- Requiere ejecutar la cabeza de decision en NumPy fuera de llama.cpp; no es un GGUF autocontenido con la cabeza incluida, lo que complica su uso en herramientas que solo cargan GGUF.
-- La configuracion recomendada usa `-np 1` y lectura completa de la entrada, lo que limita el paralelismo y el throughput en despliegues con muchos clientes.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar por separado la licencia y las condiciones del checkpoint base Laya, no detalladas en la informacion disponible.
-- Existe una discrepancia entre el nombre del modelo (322M) y el recuento real de parametros en safetensors (306.939.648); conviene usar el dato real para planificar memoria.
-- El modelo no ejecuta acciones por diseno (`actions_executed: False`); cualquier accion derivada debe implementarse y validarse en el cliente.
+- Modelo de decision, no generativo: no produce texto libre ni mantiene conversaciones; cualquier uso que requiera generacion necesita otro modelo.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
+- Ventana de contexto de 4096 tokens; entradas mas largas deben truncarse o dividirse.
+- Es una release historica mantenida como archivo: el autor recomienda 2B v4 y 0.8B v3 como versiones actuales.
+- Solo funciona con el runtime incluido en el repositorio; el paquete `jev-style` no carga estos pesos, lo que limita la integracion con el ecosistema actual del proyecto.
+- Requiere servir el encoder con llama.cpp y ejecutar la cabeza por separado; no es un unico artefacto autocontenido como un GGUF generativo.
+- La model card no documenta sesgos conocidos ni datos de entrenamiento; el riesgo de alucinacion no aplica en el sentido generativo, pero si el de decisiones erroneas con alta confianza en dominios fuera de distribucion.
+- Licencia apache-2.0, que permite uso comercial, pero conviene verificar las condiciones del checkpoint base Laya y de las dependencias del runtime.
+- No hay afiliacion ni respaldo de TypeSafe segun la model card; las rutas de ejecucion alojadas y las que simulan decisiones con otro modelo son vias separadas.
+- No se han publicado latencias ni throughput, por lo que la planificacion de produccion requiere medicion propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF
 - Modelo base: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya
-- Releases de llama.cpp: https://github.com/ggml-org/llama.cpp/releases
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- LM Studio: https://lmstudio.ai
-- Imagen comparativa incluida en la model card: assets/macjev_vs_laya_multilingual.png (dentro del repositorio)
-- Fichero de validacion detallado: validation.json (dentro del repositorio)
-
-No se han encontrado papers, blogs, repositorios adicionales ni demos en los resultados de busqueda web disponibles; los enlaces devueltos por la busqueda corresponden a dominios de correo no relacionados con el modelo.
+- Pagina de modelos JevStyle: https://jevstyle.com/models/
+- Guia de instalacion y verificacion local: https://jevstyle.com/guides/run-locally/
+- Guia de clasificacion de texto en Python: https://jevstyle.com/guides/local-text-classification/
+- Guia de routing local y Apple silicon: https://jevstyle.com/guides/local-decision-models/
+- Casos de uso de decisiones si/no con vision local: https://jevstyle.com/use-cases/local-vision-decisions/
+- Benchmark de routing bancario: https://jevstyle.com/benchmarks/banking-routing/
+- Estado del servicio alojado: https://jevstyle.com/api/#service-status
+- Health check de la API: https://api.jevstyle.com/healthz
+- llama.cpp (releases): https://github.com/ggml-org/llama.cpp/releases

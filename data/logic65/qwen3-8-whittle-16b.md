@@ -2,96 +2,112 @@
 
 ## Resumen
 
-Qwen3.8-Whittle-16B es un modelo de lenguaje creado por logic65 (David Aylward) mediante poda estructural del Qwen/Qwen3.8-27B-FP8, un transformer de 27B parámetros de la familia Qwen3.5 con arquitectura gated-deltanet (GDN). El proceso elimina 20 de las 64 capas (depth pruning) y reduce un 25% el ancho de las capas MLP (width pruning), pasando de 26.9B a 16.3B parámetros, sin entrenamiento previo a la poda. Posteriormente se aplica una curación (heal) con QLoRA sobre un dataset de 11M tokens de linaje limpio, que restaura gran parte de las capacidades perdidas.
+Qwen3.8-Whittle-16B es un modelo de lenguaje derivado de Qwen/Qwen3.8-27B-FP8 mediante un proceso de poda estructural (pruning) sin entrenamiento, seguido de una fase de "sanado" (healing) con QLoRA. Lo desarrolla logic65, un autor individual, y se publica como artefacto de investigación sobre compresión de modelos más que como asistente finalizado. El modelo reduce los 26,9B parámetros del base a 16,34B eliminando 20 de sus 64 capas (bloques de intervalo completos) y recortando un 25% del ancho de cada MLP restante, seleccionando neuronas por la norma de la columna de la matriz `down` multiplicada por la desviación estándar de activación.
 
-El resultado es un modelo de 16.3B parámetros que ejecuta a 18.5–20.9 tokens por segundo en dos GPUs de consumo de 8GB (RTX 4060 + 3050), con un peso GGUF Q4_K_M de 10.1GB que cabe íntegramente en 16GB de VRAM. El autor reporta que supera en una batería de 39 tareas greedy a todos los cortes intermedios, incluidos los de 20.8B parámetros. Es relevante porque demuestra que la poda agresiva combinada con una curación ligera puede producir modelos eficientes y desplegables en hardware de consumo, aunque con limitaciones documentadas en generaciones largas y formato de código.
+La relevancia del modelo reside en su metodología: demuestra que una poda agresiva de profundidad y anchura (−10,1B parámetros, sin entrenamiento) puede recuperarse parcialmente con un único ciclo de QLoRA de 11M tokens, superando en su propia batería de 39 tareas a variantes intermedias más grandes (36/39 frente a 33/39 del recorte de 48 capas con 20,8B). El resultado se sirve a 18,5–20,9 tokens por segundo en dos GPUs de consumo de 8 GB (RTX 4060 + RTX 3050), lo que lo hace viable en hardware muy modesto.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está disponible en formatos safetensors y GGUF, con soporte para llama.cpp estándar (builds con soporte Qwen3.5). Incluye modo de razonamiento (thinking) antes de responder, heredado de la familia Qwen3.5.
+No obstante, el propio autor lo etiqueta como *research preview* que requiere post-entrenamiento: sufre bucles de repetición severos en generaciones largas, conversaciones multi-turno y flujos de agente, hasta el punto de resultar inutilizable en esos escenarios incluso con muestreo DRY activado. El uso recomendado es de un solo turno con los flags de servicio indicados. La arquitectura subyacente es de tipo Qwen3.5 con Gated DeltaNet (GDN) combinada con atención, y la licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con gated-deltanet (GDN), familia Qwen3.5 |
-| Parametros totales | 16.344.368.864 (16.3B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (el autor usa 4096 en su ejemplo de despliegue) |
-| Tipos de cuantizacion | GGUF Q4_K_M (mencionado); safetensors FP8 heredado del base |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer híbrido Qwen3.5 con Gated DeltaNet (GDN) y atención, podado en profundidad y anchura |
+| Parametros totales | 16.344.368.864 (16,34B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q4_K_M y Q8_0 (v1 y v2); pesos bf16 en safetensors |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors, GGUF |
+| Formato de pesos | safetensors (bf16), GGUF (Q4_K_M, Q8_0), adaptadores LoRA (PEFT) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B-FP8, un transformer de 64 capas con atención y mezcla de expertos? No, es denso, con capas gated-deltanet (GDN), una variante de atención lineal o de compuerta que reduce el coste computacional frente a la atención estándar. La poda se realiza en dos fases: primero se eliminan 20 capas completas en bloques de intervalo, seleccionadas por un criterio de coste de frontera medido con un logit-lens y similitud de identidad por capa; segundo, se reduce el ancho de las MLP restantes un 25%, eliminando las neuronas más débiles según la norma de la proyección down multiplicada por la desviación estándar de activación. El autor documenta que el daño por eliminación de capas no es aditivo y que el daño por reducción de ancho se acumula; también identifica que las capas 32–35 concentran capacidades aritméticas.
+El modelo base es Qwen3.8-27B, un transformer híbrido de la familia Qwen3.5 que intercala capas con Gated DeltaNet (GDN) y capas de atención clásica. La poda respeta el intervalo GDN:atención para mantener la expresividad en GGUF, eliminando 20 de las 64 capas en bloques de intervalo completos seleccionados por coste medido en la frontera mediante *logit lens*. Sobre las capas restantes se recorta un 25% del ancho de cada MLP, descartando las neuronas más débiles según ‖columna de `down`‖ × desviación estándar de activación. El corte total asciende a −10,1B parámetros y se realiza sin ningún entrenamiento.
 
-La curación posterior usa QLoRA con r=64 aplicado a todas las proyecciones lineales (incluidas las GDN), normas de capa de rango completo, 110 pasos con coseno anealed hasta completarse, y un dataset de 11M tokens de linaje limpio: marcos de hechos sintéticos, aritmética de razonamiento corto programática, ejercicios de código escritos a mano y páginas largas de dominio público. El proceso completo de poda y curación se ejecuta en una sola noche con una GPU A100. No se han publicado detalles sobre la composición exacta del dataset de curación más allá de lo descrito.
+La fase de sanado consiste en un único ciclo de QLoRA con rango 64 aplicado a todas las proyecciones lineales (incluidas las de GDN) sobre 11M tokens de una mezcla de linaje limpio: marcos de hechos sintéticos, aritmética programática de razonamiento corto, ejercicios de código escritos a mano y páginas largas de dominio público. El autor documenta hallazgos metodológicos relevantes: el daño por eliminación de bloques no es aditivo, el daño por reducción de anchura se compone, y las capas 32–35 contienen aritmética más que conocimiento. La versión v2 añade un adaptador adicional (`v2-fencing-threejs`) que corrige el cerrado de bloques de código markdown y añade fluidez en three.js.
 
 ## Capacidades
 
-- Generación de texto conversacional y de razonamiento: el modelo piensa en un bloque `thinking` antes de responder, siguiendo el comportamiento de la familia Qwen3.5.
-- Razonamiento aritmético: recupera la precedencia de operadores y la corrección de cálculo tras la curación (el autor reporta que la aritmética volvió a su forma "textbook").
-- Generación de código: el código generado es funcional, pero se emite fuera de bloques markdown por defecto (defecto conocido del dataset de curación); se puede forzar el formato con instrucciones explícitas.
-- Conocimiento factual de largo alcance: la curación restauró la recuperación de hechos frágiles como el punto de ebullición del agua (fallaba en todos los cortes intermedios) y mejoró la memoria de reconocimiento de 2/7 a 5/7 en una sonda específica.
-- Capacidades multilingües: no documentadas por el autor; se heredan del modelo base Qwen3.8-27B, pero no hay evaluación publicada.
-- Tool calling y agentes: no documentado en la model card; no se puede confirmar.
+- Generación de texto conversacional de un solo turno con calidad aceptable según la batería interna del autor.
+- Razonamiento aritmético con precedencia de operadores correcta tras el sanado.
+- Generación y completado de código, con cerrado correcto de bloques markdown en la versión v2 (8/8 en la suite de fencing).
+- Recuperación de conocimiento factual de cola larga (sonda de reconocimiento 5/7 tras el sanado, frente a 2/7 antes).
+- Fluidez en three.js (añadida en v2).
+- Soporte de tool calling / function calling: no disponible de forma fiable; el autor advierte que los bucles de agente son un escenario no soportado.
+- Razonamiento multi-paso y agentes: no recomendado por bucles de repetición.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue de asistente conversacional en hardware de consumo: con el GGUF Q4_K_M (10.1GB) cabe en una GPU de 16GB o en dos de 8GB vía split, alcanzando 18.5–20.9 t/s. Es viable para prototipos y entornos sin acceso a GPUs de datacenter.
-- Generación de código asistida en local: el modelo produce código funcional, aunque requiere instrucciones explícitas de formato (por ejemplo, "devuelve el código dentro de un bloque ```"). Adecuado para editores con autocompletado o asistentes de terminal.
-- Razonamiento aritmético y lógico en aplicaciones educativas: la curación restauró la precedencia de operadores y la corrección en cálculos, por lo que puede usarse en tutores que expliquen pasos intermedios con su modo thinking.
-- Recuperación de conocimiento factual en dominios acotados: con 16.3B parámetros y una curación dirigida, es útil para tareas de pregunta-respuesta donde no se requiere una cobertura enciclopédica amplia, como documentación técnica o FAQ.
-- Experimentación con poda y curación: el repositorio de investigación asociado documenta la metodología completa, lo que lo convierte en referencia para quienes estudian técnicas de compresión de modelos.
-- Inferencia de largo contexto con restricciones: el autor sugiere usar ventanas de 4096 tokens; con DRY sampling puede servir conversaciones multi-turno sin caer en bucles de repetición, aunque hay que evitar temperaturas casi greedy en salidas largas.
+- Investigación sobre compresión de modelos: el modelo sirve como referencia reproducible de una técnica de poda profundidad+anchura con sanado QLoRA; los scripts y la mezcla de entrenamiento están en `training/` y los resultados de sondas en `research/`.
+- Evaluación de metodologías de poda: comparar el rendimiento de este recorte frente al de 48 capas (20,8B) o al no reparado (16,8B) permite validar empíricamente el impacto del sanado en tareas concretas.
+- Generación de texto de un solo turno en hardware de consumo: con los flags de servicio recomendados y las GGUFs v2, puede ejecutarse a ~20 t/s en dos GPUs de 8 GB para tareas de redacción breve.
+- Completado de código en un solo turno: la suite de fencing 8/8 de v2 lo hace adecuado para generar fragmentos de código delimitados correctamente en contextos acotados, no para asistentes de codificación multi-turno.
+- Reproducción de experimentos de *logit lens* y sondeo de capas: el modelo y su historial de mediciones permiten replicar el análisis de coste en la frontera de cada bloque.
+- Experimentos de ajuste fino posteriores: los adaptadores v1 y v2 publicados sirven como punto de partida para ciclos adicionales de sanado orientados a corregir bucles y formato de agente.
+- Docencia sobre técnicas de cuantización y despliegue: las GGUFs Q4_K_M (10,1 GB) y Q8_0 permiten ilustrar el compromiso entre tamaño, velocidad y calidad en llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor evaluó el modelo con una batería propia de 39 tareas greedy y sondas específicas, comparando los cortes intermedios y el modelo curado. Los resultados, extraídos de la model card, son los siguientes:
+Los datos provienen de la batería interna del autor (39 tareas greedy), no de benchmarks académicos estándar.
 
-| Variante | Parametros | Tamano archivo | Aciertos (39 tareas greedy) | Velocidad (RTX 4060 + 3050) |
+| Modelo | Parametros | Tamano de archivo | Bateria (39 tareas greedy) | Velocidad (RTX 4060 + 3050) |
 |---|---|---|---|---|
-| Qwen3.8-27B (base) | 26.9B | — | No medible en hardware de referencia | — |
-| Corte de 48 capas | 20.8B | 12.9GB | 33/39 | 5 t/s |
-| Whittle sin curar | 16.8B | 10.1GB | 25/39 | 20.5 t/s |
-| Whittle curado (este modelo) | 16.8B | 10.1GB | 36/39 | 18.5–20.9 t/s |
+| Qwen3.8-27B (base) | 26,9B | n/a | no medible en hardware de referencia | n/a |
+| Recorte de 48 capas | 20,8B | 12,9 GB | 33/39 | 5 t/s |
+| Whittle sin reparar | 16,8B | 10,1 GB | 25/39 | 20,5 t/s |
+| Whittle sanado (v1) | 16,8B | 10,1 GB | 36/39 | 18,5–20,9 t/s |
 
-Nota: el autor indica que la cifra de 16.8B en la tabla se refiere al recuento de parámetros tras la poda, mientras que los safetensors del repositorio registran 16.344.368.864 parámetros (16.3B). La diferencia puede deberse al redondeo del autor o a la inclusión de parámetros no entrenables.
+Comprobaciones de regresión de v2 frente a v1:
+
+| Comprobacion | Resultado v2 |
+|---|---|
+| Suite de cerrado de código | 8/8 (v1 emitía código fuera de bloques markdown) |
+| Bucles en formato largo de un solo turno, mitigaciones desactivadas | 1/6 |
+| Bateria (39 tareas greedy), regresión contenida | 35/39 |
+| Sonda de reconocimiento, regresión contenida | 5/7 |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks académicos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el GGUF Q4_K_M ocupa 10.1GB y cabe en 16GB de VRAM; también funciona en dos GPUs de 8GB con split (el autor lo probó en RTX 4060 + 3050).
-- GPUs recomendadas: RTX 4060 (8GB) + RTX 3050 (8GB) como mínimo; una sola GPU de 16GB (por ejemplo, RTX 4080, RTX 4090) también es suficiente.
-- Compatibilidad con GPU de consumo: sí, es el caso de uso principal del modelo.
-- Opciones de despliegue: llama.cpp (llama-server) con builds que soporten Qwen3.5; el autor confirma que los GGUF corren en stock llama.cpp. No se menciona compatibilidad con vLLM, Ollama o TGI, aunque al ser safetensors y GGUF es plausible que funcionen con adaptadores estándar.
-- Latencia y throughput: 18.5–20.9 t/s en la configuración de dos GPUs de 8GB, medido por el autor.
+- VRAM estimada para inferencia: ~10,1 GB con GGUF Q4_K_M; aproximadamente el doble con Q8_0; los pesos bf16 en safetensors rondan los 32 GB.
+- GPU recomendadas: el autor reporta funcionamiento en RTX 4060 + RTX 3050 (8 GB cada una) con reparto de capas; una A100 se usó para el ciclo de sanado.
+- Cabe en GPU de consumo: sí, en GPUs de 8 GB mediante GGUF Q4_K_M, incluyendo RTX 3060/4060 y similares; también en configuraciones multi-GPU modestas.
+- Opciones de despliegue: llama.cpp con las GGUFs v2 (recomendado por el autor); los safetensors bf16 permiten servir con vLLM o TGI, aunque no se documentan configuraciones validadas.
+- Flags de servicio recomendados: `--dry-multiplier 0.8 --dry-base 1.75 --dry-allowed-length 4 --repeat-penalty 1.15 --repeat-last-n 512`.
+- Latencia y throughput: 18,5–20,9 t/s en RTX 4060 + 3050 con Q4_K_M; 5 t/s para el recorte de 48 capas en el mismo hardware.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks académicos para comparar directamente con otros modelos de ~16B. La comparación más relevante es con el modelo base del que deriva:
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Whittle-16B | 16.3B | No disponible | Apache 2.0 | Hugging Face (safetensors, GGUF) | Podado y curado, corre en 2x8GB |
-| Qwen3.8-27B-FP8 (base) | 26.9B | No disponible | Apache 2.0 | Hugging Face | Modelo original, requiere más VRAM |
-| Qwen3.8-27B (no cuantizado) | 26.9B | No disponible | Apache 2.0 | Hugging Face | Versión sin cuantizar, aún más pesado |
+| Qwen3.8-Whittle-16B | 16,34B | no disponible | 36/39 batería interna; ~20 t/s en 2×8 GB | Apache 2.0 | Hugging Face (logic65) |
+| Qwen3.8-27B (base) | 26,9B | no disponible | no medible en hardware de referencia | no disponible | Hugging Face (Qwen) |
+| Recorte de 48 capas (variante del autor) | 20,8B | no disponible | 33/39 batería interna; 5 t/s | Apache 2.0 | Hugging Face (logic65) |
+| Whittle sin reparar | 16,8B | no disponible | 25/39 batería interna; 20,5 t/s | Apache 2.0 | Hugging Face (logic65) |
 
-No se dispone de información sobre alternativas de terceros del mismo tamaño (por ejemplo, Llama 3.2 8B, Mistral 7B, Gemma 2 9B) con datos comparables de rendimiento en las mismas tareas, por lo que no se puede establecer una comparativa rigurosa.
+La comparación con modelos de código abierto de tamaño similar ajenos a esta línea de investigación no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Defecto de formato en código: el modelo emite código fuera de bloques markdown por defecto, un fallo heredado del dataset de curación; se mitiga pidiendo explícitamente un bloque de código.
-- Bucles de repetición en generaciones largas: el autor documenta repeticiones infinitas (por ejemplo, atributos de clase HTML) en salidas largas, daño residual de la poda de ancho. Se mitiga con DRY sampling (`--dry-multiplier 0.8 --dry-base 1.75 --dry-allowed-length 4 --repeat-penalty 1.15 --repeat-last-n 512`) y evitando temperaturas casi greedy.
-- Agotamiento del presupuesto de razonamiento en prompts creativos: peticiones abiertas como "escribe un haiku" pueden consumir todo el presupuesto de thinking sin producir respuesta; instrucciones concretas y acotadas funcionan mejor.
-- Conocimiento limitado: la curación con solo 11M tokens no restaura el conocimiento enciclopédico completo de un modelo de 27B; es un modelo eficiente de 16.3B, no un 27B disfrazado.
-- Evaluación limitada: la batería de 39 tareas greedy es propia del autor, no un benchmark académico estandarizado; los resultados son comparables dentro de la tabla, pero no con otros modelos.
-- Sesgos y alucinación: no se han evaluado formalmente; al ser un modelo podado, el riesgo de alucinación en hechos poco frecuentes puede ser mayor que en el base.
-- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones, pero el autor advierte que los pesos actuales tienen bugs conocidos y recomienda esperar a la versión v2 para uso serio.
-- Soporte de contexto largo: no se documenta la longitud máxima de contexto; el ejemplo usa 4096 tokens, pero no hay garantía de que el modelo funcione bien más allá.
+- Bucles de repetición severos en generaciones extendidas, conversaciones multi-turno y bucles de agente (asistentes de código, uso de herramientas); el autor lo califica de no apto para esos escenarios incluso con DRY sampling.
+- Es un *research preview* que requiere post-entrenamiento; no debe usarse como referencia factual ni en sistemas de producción.
+- El autor recomienda explícitamente no confiar en él para datos factuales; el riesgo de alucinación es alto en un modelo podado y sanado con solo 11M tokens.
+- La recuperación de conocimiento de cola larga es parcial (5/7 en la sonda de reconocimiento), lo que indica lagunas factuales persistentes.
+- Sesgos conocidos: no documentados en la información disponible.
+- Limitaciones de contexto e idioma: no documentadas; los idiomas soportados no están disponibles.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el estado de investigación y los fallos de bucle desaconsejan cualquier despliegue productivo.
+- Solo deben usarse los pesos v2 (`-v2-` GGUFs); los v1 se mantienen únicamente por reproducibilidad y presentan fallos de cerrado de código.
+- El modelo base es una cuantización FP8 de Qwen3.8-27B, lo que puede introducir diferencias respecto al base original en precisión completa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/logic65/Qwen3.8-Whittle-16B
-- Repositorio de investigación (variante sin curar y metodología): https://huggingface.co/logic65/Qwen3.8-p44w75-16.8B-unrepaired
-- Adapter QLoRA de curación: https://huggingface.co/mrdayl/q38p44w75-heal-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Repositorio de investigación companion (Whittle sin reparar): https://huggingface.co/logic65/Qwen3.8-p44w75-16.8B-unrepaired
+- Línea actual Whittle-Next / Whittle-Qwen-3.8: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
+- Apoyo al autor: https://ko-fi.com/davida81328
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada.

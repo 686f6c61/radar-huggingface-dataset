@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/phi3-toxicity-judge-merge-GGUF",
+  "slug": "mradermacher-phi3-toxicity-judge-merge-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/phi3-toxicity-judge-merge-GGUF",
+  "created_at": "2025-03-14T15:18:27.000Z",
+  "updated_at": "2026-11-18T21:37:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "en",
+    "base_model:grounded-ai/phi3-toxicity-judge-merge",
+    "base_model:quantized:grounded-ai/phi3-toxicity-judge-merge",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 34095775488,
+  "storage_human": "34.1 GB",
+  "context_length": 4096,
+  "base_model": "grounded-ai/phi3-toxicity-judge-merge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

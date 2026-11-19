@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance ...",
-      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4",
-      "snippet": "NVFP4 safetensors checkpoint of DavidAU's Ultimate-Heretic Turbo-Brilliance-50x-AGI-NEO tune of Qwen3.8-27B: 256 packed NVFP4 projections (MLP plus full-attention QKVO) with the DeltaNet path, MTP ..."
-    },
-    {
-      "title": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x ...",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
-      "snippet": "ULTIMATE: This model combines the power of Fable Fusion 711 (2500 likes, 5 million + downloads), with the extraordinary power of Qwen 3.8 27B (fully Heretic'ed/uncensored) multiplied by the power of Turbo Brilliance 50X V2, AGI edition."
-    }
-  ]
+  "sources": []
 }

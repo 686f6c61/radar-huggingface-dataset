@@ -2,86 +2,93 @@
 
 ## Resumen
 
-`starcoder2-3b-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic`, no un modelo utilizable. Se presenta como una versión "slim" (reducida) del checkpoint `bigcode/starcoder2-3b`, con la misma arquitectura declarada (`Starcoder2ForCausalLM`) pero con una configuración drásticamente reducida: únicamente 2 capas ocultas y 3.204.480 parámetros totales, frente a los aproximadamente 3.000 millones del modelo original.
+`huggingface-mic/starcoder2-3b-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` dentro del proyecto `transformers-mic`. No es un modelo usable: se trata de una versión "adelgazada" del checkpoint `bigcode/starcoder2-3b`, reducida de aproximadamente 3.000 millones de parámetros a 3.204.480 parámetros, con pesos aleatorios (semilla 17) y sin entrenamiento alguno. Su propósito es servir como fixture de integración para validar contratos de uso y expectativas de framework (Transformers) sin necesidad de descargar el modelo completo.
 
-El propósito del repositorio es servir como fixture de validación para la integración de modelos en el framework Transformers: incluye un manifiesto de contrato (`integration.json`), ejemplos de uso ejecutables y un directorio de expectativas del framework. Los pesos son aleatorios (semilla 17) y no han sido entrenados; pasaron una puerta de sensibilidad de entrada según la cual cada perturbación de las entradas del contrato desplaza los logits al menos 0,001.
+La arquitectura subyacente es `Starcoder2ForCausalLM`, un transformer causal decoder-only, pero con `num_hidden_layers` reducido a 2 mediante la regla genérica de reducción del script `sweep.py` del repositorio `transformers-mic`. Los ficheros de procesador (`tokenizer.json`, `vocab.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer_config.json`) se copian byte a byte desde `bigcode/starcoder2-3b`, de modo que el tokenizador sí es el real del modelo original.
 
-Es relevante únicamente en el contexto de pruebas de infraestructura y CI de Transformers: no debe emplearse para generación de código, razonamiento ni ninguna tarea de inferencia real. La model card lo etiqueta explícitamente como `test-artifact` para excluirlo de las búsquedas de modelos candidatos.
+Su relevancia es puramente de ingeniería de pruebas: permite ejecutar pipelines de integración continua, validar la carga de safetensors y comprobar la sensibilidad de las entradas del contrato (perturbaciones de logits ≥ 0.001) sin coste computacional. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. No debe emplearse para inferencia real, generación de código ni ninguna tarea productiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Starcoder2ForCausalLM (transformer causal, configuración reducida a 2 capas ocultas) |
+| Arquitectura | Starcoder2ForCausalLM (transformer causal decoder-only) |
 | Parametros totales | 3.204.480 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (configuración reducida; no se documenta en la información proporcionada) |
-| Tipos de cuantizacion | No disponible (pesos guardados en float32; finito también en bfloat16 y float16) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (config reducida; el modelo base soporta 16.384 tokens, pero no se confirma para el fixture) |
+| Tipos de cuantizacion | no disponible (pesos en float32; finito también en bfloat16 y float16) |
+| Idiomas soportados | no disponible (tokenizador heredado de `bigcode/starcoder2-3b`, multilingüe en código) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo replica la arquitectura `Starcoder2ForCausalLM` del checkpoint `bigcode/starcoder2-3b`, pero con una configuración reducida mediante la regla genérica de `sweep.py` del repositorio `huggingface/transformers-mic`, que fija `num_hidden_layers` a 2. Los ficheros de procesador (`merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copian byte a byte del modelo original, de modo que el tokenizador es idéntico al de StarCoder2-3B.
+El fixture replica la arquitectura `Starcoder2ForCausalLM` del modelo base `bigcode/starcoder2-3b`, un transformer causal decoder-only con atención multi-cabeza estándar. La reducción se aplica mediante la regla genérica de `sweep.py`, que fija `num_hidden_layers` en 2 y ajusta el resto de la configuración para mantener coherencia dimensional. Los nombres de tensores son idénticos a los del checkpoint real, lo que permite validar rutas de carga sin discrepancias de nomenclatura.
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron porque superaron la puerta de sensibilidad de entrada: toda perturbación de las entradas del contrato movió los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, registró 0,824). El fixture conserva los mismos nombres de tensores que el checkpoint real y se guardó en float32, el dtype con el que carga por defecto `bigcode/starcoder2-3b`. La model card declara que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16. No se documentan datos de entrenamiento, RLHF, DPO ni innovaciones técnicas de inferencia.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se generaron únicamente para superar una puerta de sensibilidad de entradas: cada perturbación de las entradas del contrato debe mover los logits al menos 0.001 (la más débil, `attention_mask:all_ones`, produjo 0.824). Los ficheros de tokenizador se copiaron byte a byte desde `bigcode/starcoder2-3b`, garantizando que el pipeline de tokenización sea idéntico al del modelo original. El artefacto se guarda en float32 (el dtype por defecto del modelo base) y se verifica que es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no producen texto, código ni razonamiento coherente.
-- Sirve como fixture de conformidad para validar la carga de `Starcoder2ForCausalLM` en Transformers (nombres de tensores, tokenizador, contrato de entradas).
-- Permite comprobar expectativas del framework recogidas en `integrations/transformers/expectations`.
-- Reproduce el tokenizador real de `bigcode/starcoder2-3b` byte a byte, útil para probar pipelines de tokenización.
-- Ejecutable en float32, bfloat16 y float16 sin valores no finitos en forward, pérdida y gradientes.
-- No soporta tool calling, agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües reales.
+- No es un modelo funcional: no genera texto, código ni razonamiento útiles.
+- Sirve como fixture de integración para validar la carga de `Starcoder2ForCausalLM` en Transformers.
+- Permite comprobar el contrato de entradas (input-sensitivity gate) con perturbaciones controladas.
+- Valida la compatibilidad de tokenizador heredado de `bigcode/starcoder2-3b`.
+- Verifica la estabilidad numérica en float32, bfloat16 y float16.
+- No soporta tool calling, agentes, visión, audio ni modo thinking.
+- No tiene capacidades multilingües reales (los pesos son aleatorios).
 
 ## Casos de uso
 
-- Pruebas de integración en CI de Transformers: cargar el fixture para verificar que `Starcoder2ForCausalLM` se instancia, acepta el tokenizador y produce logits con la forma esperada, sin necesidad de descargar el checkpoint de 3B.
-- Validación de contratos de API: usar `integration.json` y `integrations/transformers/expectations` para comprobar que los cambios en el framework no rompen el contrato de entradas/salidas del modelo.
-- Pruebas de tokenización: al copiar los ficheros de procesador byte a byte del modelo original, permite validar pipelines de tokenización idénticos a los de StarCoder2-3B con un coste mínimo de almacenamiento y cómputo.
-- Pruebas de dtype y estabilidad numérica: verificar que forward, pérdida y gradientes permanecen finitos en float32, bfloat16 y float16 en entornos de CI con hardware heterogéneo.
-- Desarrollo de utilidades de inspección de pesos: al conservar los nombres de tensores del checkpoint real, sirve para probar herramientas que enumeran, mapean o comparan parámetros sin cargar el modelo completo.
-- Reproducibilidad de fixtures: el repositorio incluye `build.json` con fuentes fijadas, resultados de la puerta de sensibilidad y hashes de ficheros, lo que permite reconstruir el artefacto con `build_fixtures.py`.
+- Pruebas de integración continua en Transformers: ejecutar el pipeline de carga y forward con un checkpoint de 3,2 M de parámetros para validar rutas de código sin consumir GPU.
+- Validación de contratos de API: comprobar que las entradas declaradas en `integration.json` producen cambios de logits por encima del umbral de 0.001.
+- Test de regresión de tokenizadores: verificar que `tokenizer.json`, `vocab.json` y `merges.txt` se cargan correctamente y producen los mismos IDs que el modelo base.
+- Verificación de estabilidad numérica: ejecutar forward, loss y backward en float32, bfloat16 y float16 para detectar NaN o inf en cambios de framework.
+- Desarrollo de herramientas de "shrink" de checkpoints: usar `build_fixtures.py` como referencia para generar fixtures de otros modelos con la misma regla de reducción.
+- Pruebas de compatibilidad de safetensors: validar que los nombres de tensores del fixture coinciden con los del checkpoint real y que la carga no falla por discrepancias de shape.
+- Formación y documentación: ejemplo didáctico de cómo construir un artefacto de prueba reproducible con procedencia registrada en `build.json`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier métrica de calidad (MMLU, HumanEval, GSM8K) carecería de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería irrelevante y no se reporta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,2 M de parámetros ocupan unos 13 MB en pesos; el grueso del consumo proviene del tokenizador y del runtime).
-- GPU recomendadas: cualquier GPU, incluida CPU; no requiere A100, H100 ni RTX 4090.
-- Cabe holgadamente en cualquier GPU de consumo e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (vía `AutoModelForCausalLM` con `trust_remote_code` según configuración), y en general cualquier runtime que cargue safetensors; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles; al ser un fixture de 2 capas, la latencia sería despreciable, pero no se publican mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,2 M de parámetros ≈ 12,8 MB de pesos, más overhead de activaciones y tokenizador).
+- GPU recomendadas: cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) o incluso CPU; no requiere acelerador dedicado.
+- Cabe en cualquier GPU consumer y en CPU sin problemas.
+- Opciones de despliegue: Transformers (carga directa), y en principio cualquier runtime que soporte safetensors; no se ha validado con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un fixture no se han medido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Propósito |
-|---|---|---|---|---|
-| `huggingface-mic/starcoder2-3b-mic` | 3.204.480 | No disponible | No disponible | Fixture de prueba (test-artifact) |
-| `bigcode/starcoder2-3b` | ~3.000 M | No disponible en esta ficha | No disponible en esta ficha | Modelo real de generación de código |
-| `bigcode/starcoder2-7b` | ~7.000 M | No disponible en esta ficha | No disponible en esta ficha | Modelo real de generación de código |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `huggingface-mic/starcoder2-3b-mic` | 3,2 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `bigcode/starcoder2-3b` | ~3.000 M | 16.384 tokens (modelo base) | Generacion de codigo | no disponible en esta ficha | Hugging Face |
+| `bigcode/starcoder2-7b` | ~7.000 M | 16.384 tokens (modelo base) | Generacion de codigo | no disponible en esta ficha | Hugging Face |
 
-La comparación relevante es con `bigcode/starcoder2-3b`: el fixture comparte arquitectura declarada, tokenizador y nombres de tensores, pero reduce las capas a 2 y sustituye los pesos entrenados por pesos aleatorios. No es una alternativa funcional al modelo original en ninguna tarea.
+La comparación es asimétrica por diseño: el fixture no compite en calidad con los modelos reales, solo replica su arquitectura y tokenizador a escala reducida para pruebas. No se dispone de datos de benchmarks para comparar rendimiento.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y las salidas no tienen significado.
-- Etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; no debe desplegarse en producción.
-- No se documentan sesgos, pero al no haber entrenamiento no aplica un análisis de sesgo convencional.
-- Riesgo de alucinación: total, en el sentido de que cualquier texto generado es ruido sin relación con la entrada.
-- Limitaciones de contexto e idioma: no documentadas; la configuración reducida no refleja el comportamiento del modelo original.
-- Licencia no disponible: no puede asumirse uso comercial sin consultar la licencia del modelo base `bigcode/starcoder2-3b`.
-- El repositorio no incluye todos los ficheros necesarios para reconstruir el fixture; la model card indica que deben regenerarse con `python example/build_fixtures.py --fixture starcoder2-3b-mic`.
+- No es un modelo usable: los pesos son aleatorios y cualquier salida es ruido.
+- No debe desplegarse en producción ni usarse para generación de código, razonamiento o cualquier tarea real.
+- Etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; respetar esa etiqueta en pipelines de selección.
+- Licencia no disponible: no se puede asumir uso comercial sin consultar la licencia del modelo base `bigcode/starcoder2-3b`.
+- El contexto real del fixture no está documentado; no asumir los 16.384 tokens del modelo base.
+- Los ficheros de tokenizador son los reales, pero los pesos no; no usar para evaluar calidad de tokenización en tareas downstream.
+- Riesgo de confusión con el modelo base: verificar siempre el ID completo antes de cargar en producción.
+- No se han validado runtimes alternativos (vLLM, llama.cpp, Ollama, TGI); solo Transformers está documentado.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/starcoder2-3b-mic
-- Modelo base: https://huggingface.co/bigcode/starcoder2-3b
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de reducción (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/starcoder2-3b-mic.html
+- [Hugging Face: huggingface-mic/starcoder2-3b-mic](https://huggingface.co/huggingface-mic/starcoder2-3b-mic)
+- [Modelo base: bigcode/starcoder2-3b](https://huggingface.co/bigcode/starcoder2-3b)
+- [Repositorio transformers-mic](https://github.com/huggingface/transformers-mic)
+- [Script sweep.py](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
+- [Script build_fixtures.py](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)
+- [Explicación del shrink del fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/starcoder2-3b-mic.html)
+- [integration.json](https://huggingface.co/huggingface-mic/starcoder2-3b-mic/blob/main/integration.json)
+- [build.json](https://huggingface.co/huggingface-mic/starcoder2-3b-mic/blob/main/build.json)
+- [Uso en Transformers](https://huggingface.co/huggingface-mic/starcoder2-3b-mic/blob/main/integrations/transformers/usage.md)
+- [Expectativas en Transformers](https://huggingface.co/huggingface-mic/starcoder2-3b-mic/tree/main/integrations/transformers/expectations)

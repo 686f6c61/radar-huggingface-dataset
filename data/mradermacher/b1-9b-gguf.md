@@ -2,46 +2,49 @@
 
 ## Resumen
 
-El modelo B1-9B-GGUF es una cuantización en formato GGUF del modelo base schneewolflabs/B1-9B, realizada por mradermacher. Se trata de un modelo de lenguaje de 9.197 millones de parámetros (9.2B) que, según las etiquetas del repositorio, se basa en la arquitectura Qwen3.5 y está diseñado para tareas de agentes, uso de herramientas (tool calling) y razonamiento. El entrenamiento se realizó sobre el dataset schneewolflabs/Vernunft-Stimme, del que no se han publicado detalles de composición ni volumen de tokens.
+B1-9B-GGUF es la colección de cuantizaciones GGUF del modelo B1-9B, desarrollado originalmente por Schneewolf Labs (schneewolflabs) y convertido a formato GGUF por mradermacher. Se trata de un modelo de 9.197.093.888 parámetros (aproximadamente 9,2 mil millones), orientado a agentes, uso de herramientas (tool-use) y razonamiento, y etiquetado por el autor con la arquitectura qwen3.5, lo que sugiere que deriva de la familia Qwen 3.5. El repositorio incluye además suplementos multimodales (mmproj), lo que indica capacidad de visión.
 
-La relevancia de esta ficha radica en la disponibilidad de múltiples cuantizaciones GGUF que permiten ejecutar el modelo en hardware de consumo, desde archivos Q2_K de 4.0 GB hasta Q8_0 de 9.9 GB, además de archivos mmproj que sugieren un posible soporte multimodal. El modelo se distribuye bajo licencia Apache 2.0, lo que facilita su uso en aplicaciones comerciales y de investigación, aunque no se han publicado benchmarks que respalden sus capacidades.
+La relevancia de esta ficha radica en que las cuantizaciones GGUF permiten ejecutar un modelo de casi 10.000 millones de parámetros en hardware de consumo, con opciones desde 4,0 GB (Q2_K) hasta 18,5 GB (f16). El modelo está publicado bajo licencia Apache 2.0, lo que facilita su uso comercial, y declara soporte únicamente para inglés según la model card.
+
+El modelo base fue entrenado con el dataset schneewolflabs/Vernunft-Stimme, y esta versión GGUF mantiene las capacidades declaradas de agentes, tool-use y razonamiento del modelo original. No se dispone de información detallada sobre la longitud de contexto, la composición exacta del dataset ni resultados de benchmarks en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen3.5) |
-| Parametros totales | 9.197.093.888 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer (etiquetado como qwen3.5 por el autor) |
+| Parametros totales | 9.197.093.888 (aproximadamente 9,2 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en f16 y Q8_0 |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base B1-9B es un transformer de 9.2B parámetros, etiquetado como qwen3.5 en el repositorio de Hugging Face, lo que indica que sigue la arquitectura de la familia Qwen3.5. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El dataset utilizado es schneewolflabs/Vernunft-Stimme, del que solo se conoce su nombre.
+La información disponible indica que el modelo base B1-9B emplea una arquitectura transformer etiquetada como qwen3.5, con 9.197.093.888 parámetros totales. No se especifica si utiliza mezcla de expertos (MoE), atención lineal u otra innovación arquitectónica. La presencia de ficheros mmproj (suplementos multimodales) en el repositorio GGUF confirma que el modelo incorpora un codificador visual para entrada de imágenes.
 
-La versión GGUF, creada por mradermacher, incluye cuantizaciones estáticas con tamaños que van desde 4.0 GB (Q2_K) hasta 18.5 GB (f16), así como archivos mmproj asociados a un posible componente multimodal. No se documentan innovaciones técnicas adicionales en la arquitectura o el proceso de cuantización.
+El entrenamiento se realizó sobre el dataset schneewolflabs/Vernunft-Stimme, cuyo contenido, tamaño en tokens y composición no se detallan en la información proporcionada. Tampoco se indica si se aplicaron técnicas de RLHF, DPO u otro ajuste por preferencias. Las etiquetas del repositorio (agents, tool-use, reasoning) sugieren un ajuste específico para tareas agénticas y de razonamiento, pero no se aportan detalles técnicos sobre el proceso.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con etiqueta "conversational".
-- Soporte de tool calling y function calling, indicado por la etiqueta "tool-use".
-- Capacidades de agentes y razonamiento multi-paso, reflejadas en la etiqueta "agents".
-- Razonamiento general, aunque no se especifica el tipo de tareas de razonamiento.
-- Posible soporte multimodal (visión) gracias a los archivos mmproj incluidos, aunque la documentación no lo confirma explícitamente.
-- Limitado al idioma inglés, según la etiqueta "en".
+- Generación de texto conversacional en inglés.
+- Razonamiento multi-paso, según la etiqueta "reasoning" del repositorio.
+- Uso de herramientas y function calling, según la etiqueta "tool-use".
+- Comportamiento agéntico, según la etiqueta "agents".
+- Capacidad multimodal de entrada (visión) mediante los ficheros mmproj incluidos.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Soporte multilingüe limitado: solo inglés declarado.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno en inglés y, gracias al soporte de tool calling, consultar bases de conocimiento o APIs externas para responder consultas.
-- Agentes autónomos: con la etiqueta "agents", es adecuado para ejecutar tareas multi-paso, planificar acciones y encadenar llamadas a herramientas en entornos de automatización.
-- Razonamiento y análisis: su capacidad de razonamiento permite su uso en tareas de análisis lógico, toma de decisiones o síntesis de información en inglés.
-- Integración en pipelines de NLP: al ser compatible con transformers y GGUF, puede desplegarse en sistemas de procesamiento de lenguaje natural para clasificación, extracción de entidades o resumen de textos.
-- Despliegue local con recursos limitados: las cuantizaciones Q4_K_M (5.9 GB) o Q5_K_M (6.7 GB) permiten ejecutar el modelo en GPUs de consumo de 8-12 GB, ideal para prototipos o entornos edge.
-- Asistentes de productividad: puede actuar como copiloto en tareas de redacción, reescritura o resumen de documentos en inglés, aprovechando su formato conversacional.
+- Agentes autónomos de automatización: el modelo declara soporte de tool-use y comportamiento agéntico, por lo que puede integrarse en bucles de planificación y ejecución de acciones con llamadas a APIs externas.
+- Asistentes de razonamiento en local: con cuantizaciones Q4_K_M de 5,9 GB, puede desplegarse en estaciones de trabajo con GPU de consumo para tareas de análisis y resolución de problemas paso a paso.
+- Procesamiento de documentos con imágenes: los suplementos mmproj permiten alimentar el modelo con capturas, diagramas o documentos escaneados junto a texto para tareas de extracción y descripción.
+- Desarrollo de prototipos de agentes en CI/CD: la licencia Apache 2.0 y el formato GGUF facilitan pruebas locales y despliegues en contenedores sin restricciones comerciales.
+- Atención al cliente en inglés: conversaciones multi-turno en inglés con soporte de herramientas para consultar sistemas internos, aunque la longitud de contexto no está documentada y debe validarse empíricamente.
+- Investigación en razonamiento y agentes: el modelo sirve como base reproducible (Apache 2.0) para experimentos de evaluación de tool-use y razonamiento en hardware asequible.
 
 ## Benchmarks y rendimiento
 
@@ -49,37 +52,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para la cuantización Q4_K_M (5.9 GB) se requieren aproximadamente 6-8 GB de VRAM; para Q5_K_M (6.7 GB), unos 8-10 GB; para Q8_0 (9.9 GB), unos 12-14 GB; la versión f16 (18.5 GB) necesita más de 20 GB.
-- GPU recomendadas: RTX 3060 de 12 GB o RTX 4070 para Q4_K_M y Q5_K_M; RTX 4090 de 24 GB para Q8_0; A100 o H100 para f16.
-- Compatibilidad con GPU de consumo: sí, las cuantizaciones Q4_K_M y Q5_K_M caben en GPUs de 8-12 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio para GGUF; vLLM o TGI para el modelo base en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (pesos, sin contar caché KV): Q2_K 4,0 GB; Q3_K_S 4,5 GB; Q3_K_M 4,8 GB; Q3_K_L 5,1 GB; IQ4_XS 5,5 GB; Q4_K_S 5,6 GB; Q4_K_M 5,9 GB; Q5_K_S 6,6 GB; Q5_K_M 6,7 GB; Q6_K 7,7 GB; Q8_0 9,9 GB; f16 18,5 GB.
+- Suplemento multimodal: mmproj-Q8_0 0,7 GB; mmproj-f16 1,0 GB (adicionales si se usa visión).
+- GPU recomendadas: para Q4_K_M y Q5_K_M, GPU de consumo con 8-12 GB de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070). Para Q8_0 o f16, GPU profesionales tipo A100, H100 o RTX 4090 (24 GB) con margen para caché KV.
+- Cabe en GPU de consumo: sí, con cuantizaciones de Q2_K a Q5_K_M en tarjetas de 6-8 GB o superiores; Q6_K y Q8_0 requieren 10-12 GB o más.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python) para GGUF; vLLM y TGI para el modelo base en safetensors, no para los ficheros GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| B1-9B-GGUF (mradermacher) | 9.197.093.888 | No disponible | Apache 2.0 | Hugging Face |
-| MARTIN-9B-GGUF (mradermacher) | No disponible | No disponible | No disponible | Hugging Face |
-| DSLM-LST-9B-i1-GGUF (mradermacher) | No disponible | No disponible | No disponible | Hugging Face |
-| B1-9B (schneewolflabs) | 9.197.093.888 | No disponible | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| B1-9B-GGUF | 9,2 mil millones | no disponible | Apache 2.0 | GGUF | Agentes, tool-use, razonamiento, visión vía mmproj |
+| Modelo base schneewolflabs/B1-9B | 9,2 mil millones | no disponible | Apache 2.0 | safetensors | Mismo modelo sin cuantizar |
+| Alternativas de ~9B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
-La comparativa se limita a parámetros y disponibilidad, ya que no se han publicado benchmarks ni especificaciones de contexto para los modelos comparados.
+No se dispone de información suficiente para comparar con modelos concretos de la misma categoría sin inventar datos.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible.
-- Riesgo de alucinación: inherente a los modelos de lenguaje, no se han publicado evaluaciones específicas.
-- Limitaciones de idioma: el modelo solo está entrenado para inglés, lo que limita su uso en otros idiomas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero no se detallan posibles restricciones adicionales del dataset o del modelo base.
-- Ausencia de benchmarks publicados: no es posible validar su rendimiento frente a otros modelos.
-- Pérdida de calidad en cuantizaciones extremas: los formatos Q2_K y Q3_K_M pueden degradar significativamente la calidad de salida.
-- Longitud de contexto no especificada: no se conoce el tamaño de la ventana de contexto, lo que dificulta la planificación de tareas con dependencias largas.
+- Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto: no disponible, lo que impide planificar despliegues con documentos largos sin validación previa.
+- Benchmarks: ausencia total de resultados publicados en la información disponible; no se puede verificar la calidad frente a alternativas.
+- Alucinación: como todo modelo generativo, existe riesgo de fabricar información, especialmente en tareas de razonamiento y tool-use; requiere validación en producción.
+- Sesgos: no se documentan sesgos conocidos ni procesos de mitigación.
+- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse la procedencia de los datos de entrenamiento y las obligaciones de atribución.
+- Repositorio: 0 likes y sin pipeline declarado; la información técnica es escasa y proviene principalmente de etiquetas y del README de cuantización.
+- Visión: la capacidad multimodal depende de cargar los ficheros mmproj; sin ellos, el modelo opera solo con texto.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/B1-9B-GGUF
 - Modelo base: https://huggingface.co/schneewolflabs/B1-9B
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/B1-9B-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#B1-9B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/schneewolflabs/Vernunft-Stimme
-- Cuantizaciones i1 (weighted/imatrix): https://huggingface.co/mradermacher/B1-9B-i1-GGUF
-- Solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización: https://huggingface.co/mradermacher/model_requests

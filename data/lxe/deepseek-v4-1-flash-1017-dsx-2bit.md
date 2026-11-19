@@ -2,71 +2,117 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-dsx-2bit es una cuantización de 2 bits del checkpoint DeepSeek-V4.1-Flash-1017, publicada por lxe. No es un modelo entrenado desde cero: empaqueta el MoE de 552B parámetros y el componente Engram de 196B en 148 GB de GGUF, con enrutamiento exacto —sin poda de expertos ni sesgo de router— y pesos densos en Q8_0. Su objetivo es ejecutar el modelo completo en dos RTX 3090 de 24 GB y 128 GB de RAM.
+DeepSeek-V4.1-Flash-1017-dsx-2bit es una cuantizacion de precision mixta en 2 bits del modelo DeepSeek-V4.1-Flash-1017, un transformer MoE (mezcla de expertos) de gran escala desarrollado por DeepSeek. La cuantizacion la firma el usuario lxe y esta disenada especificamente para el motor de inferencia dsx (Rust + CUDA), con el objetivo de hacer viable un modelo de 552B parametros totales en hardware de consumo: dos GPU de 24 GB (RTX 3090, 4090 o 5090) junto con 128 GB de RAM.
 
-El modelo base, de DeepSeek y con licencia MIT, es un MoE con 15.360 expertos enrutados; los resultados de búsqueda lo describen como multimodal, con entrada de imagen nativa y 1M tokens de contexto. Este quant se publica para text-generation y el arranque documentado de dsx usa 131.072 tokens de contexto.
+El modelo base combina una arquitectura MoE de 552B parametros con un componente adicional denominado "Engram" de 196B, que se carga desde los shards oficiales del checkpoint original. Esta build concreta ocupa 148 GB en cuatro shards GGUF, mas los 203 GB de los shards Engram oficiales, y aplica routing exacto (sin poda de expertos ni sesgo de router), lo que la distingue de otras cuantizaciones agresivas que sacrifican calidad de enrutamiento.
 
-La relevancia está en el tamaño: 148 GB de pesos cuantizados más 203 GB de Engram oficial, 30-37 tok/s de decodificación en 2x RTX 3090 y 334-508 tok/s de prefill. La contrapartida es una pérdida medible frente a FP8: KL 0,395, top-1 74,1 % y perplejidad 10,93 frente a 8,56 del original.
+Su relevancia actual radica en que permite ejecutar localmente un modelo de clase frontier con contexto de 131.072 tokens a velocidades de decodificacion de aproximadamente 29 tok/s en dos RTX 3090, un rendimiento notablemente superior al de llama.cpp con cuantizaciones comparables. El coste es una perdida de calidad medible frente al modelo FP8 original (KL 0.373, top-1 74.4%), que el autor documenta de forma transparente junto con alternativas de mayor fidelidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con 15.360 expertos enrutados y componente Engram; enrutamiento exacto sin poda ni sesgo de router |
-| Parámetros totales | 551.880.865.904 (≈552B) según safetensors; la model card indica 552B de MoE + 196B de Engram |
-| Parámetros activos | no disponible |
-| Longitud de contexto | 131.072 tokens en el ejemplo de dsx; 1.000.000 tokens en el modelo base según resultados de búsqueda |
-| Tipos de cuantización | mezcla por experto: ternary 1,75 bpw, Q2_0 2,25 bpw y Q3_K 3,44 bpw; densos Q8_0; media 2,03 bpw. La revisión v1 usa 2,0 bpw por capa |
-| Idiomas soportados | no disponibles |
+| Arquitectura | Transformer MoE (mezcla de expertos) + componente Engram |
+| Parametros totales | 551.880.865.904 (552B) |
+| Parametros activos | 196B Engram (segun model card; no se detalla el reparto activo del MoE) |
+| Longitud de contexto | 131.072 tokens (valor usado en el ejemplo de despliegue) |
+| Tipos de cuantizacion | Precision mixta por experto: ternary, Q2_0 o Q3_K para expertos; Q8_0 para capas densas; media de 2,03 bpw |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF en 4 shards; Engram sin cuantizar en safetensors oficiales |
-| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
-| Tamaño del repositorio | 444,3 GB (incluye assets y logs); descarga del quant 148 GB + Engram oficial 203 GB |
+| Formato de pesos | GGUF (4 shards) + shards safetensors oficiales para Engram y tokenizer |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint base es un MoE de 552B parámetros con 15.360 expertos enrutados y un componente Engram de 196B. La model card del quant insiste en que el enrutamiento es exacto: no se poda ningún experto ni se aplica sesgo al router; las tablas Engram se leen sin cuantizar desde los shards oficiales. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base usó RLHF o DPO.
+El modelo base es un transformer MoE de 552B parametros con un modulo Engram de 196B que se mantiene en los shards oficiales sin cuantizar. La cuantizacion de lxe aplica precision mixta por experto: cada experto se asigna a ternary, Q2_0 o Q3_K segun su sensibilidad, mientras que las capas densas se mantienen en Q8_0. El enrutamiento es exacto: no se poda ningun experto ni se introduce sesgo en el router, lo que preserva la distribucion de activacion original a costa de requerir que todos los expertos esten accesibles en VRAM o RAM.
 
-Esta publicación no reentrena el modelo: aplica GPTQ por experto con hessianos obtenidos en una pasada de calibración capa a capa por el `model.py` de referencia de DeepSeek, dentro del pipeline GSQ de Xolotl. Cada uno de los 15.360 expertos recibe ternary (1,75 bpw), Q2_0 (2,25 bpw) o Q3_K (3,44 bpw) según su error de salida medido; el presupuesto de bits se comparte entre las capas 2-36, de modo que las sensibles llegan a 2,75 bpw y las tolerantes a ~1,76 bpw, con una media de 2,03 bpw. La calibración usa 128 × 2048 tokens de sesiones de agentes de código y prompts de agente y código de antirez; los pesos densos quedan en Q8_0.
+El autor indica que la calibracion se realizo sobre las trazas de razonamiento del propio modelo completo, ademas de texto de agentes, lo que ajusta los pesos cuantizados a los patrones de activacion tipicos en tareas de razonamiento y uso de herramientas. No se dispone de informacion sobre el numero de tokens de entrenamiento del modelo base, la composicion del dataset ni si hubo RLHF o DPO. La build requiere una version de dsx posterior al 19 de octubre de 2026, ya que versiones anteriores no reconocen la rotacion aplicada y producen salidas corruptas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modo thinking está activado por defecto y puede desactivarse con `"reasoning_effort": "none"`.
-- Programación: la model card incluye un ejemplo de fusión de intervalos en Python y la calibración se basa en sesiones de agentes de código; no se publican resultados de HumanEval ni benchmarks equivalentes.
-- Contexto largo: el arranque de dsx usa 131.072 tokens; el modelo base se describe con 1M tokens en resultados de búsqueda, pero no se documenta el rendimiento del quant a esa longitud.
-- Integración mediante API: el servidor dsx expone API compatible con OpenAI y Anthropic, además de una interfaz web.
-- Despliegue local y air-gapped: al ser un quant MIT y ejecutarse con dsx, permite inferencia sin API externa.
-- Agentes multi-step: el modelo base se presenta para agentes de contexto largo; la orquestación debe hacerse fuera del modelo, ya que no se documenta soporte nativo de tool calling.
-- Multimodal: el modelo base se describe con entrada de imagen nativa, pero esta model card no documenta soporte de visión en dsx.
-- Idiomas: no disponibles; no se publica lista de idiomas ni evaluación multilingüe.
-- Audio: no documentado.
+- Generacion de texto y razonamiento multi-paso, con modo de razonamiento configurable (reasoning effort low en las pruebas del autor).
+- Razonamiento matematico: el autor evalua con problemas de Omni-MATH y reporta respuestas correctas en todas las ejecuciones de prueba.
+- Uso como agente: la model card menciona calibracion sobre texto de agentes y prompts de agente de 3K tokens en las mediciones de velocidad.
+- Tool calling y function calling: el runtime dsx expone API compatible con OpenAI y Anthropic, lo que habilita integracion con clientes que esperan esos esquemas.
+- Entrada de imagen: el runtime dsx soporta image input segun la model card.
+- Contexto largo: ventana de 131.072 tokens configurable en el servidor.
+- Capacidades multilingues: no disponible (los idiomas no estan declarados en la informacion proporcionada).
 
 ## Casos de uso
 
-- Asistente de código privado en una estación de trabajo: con 2x RTX 3090 y 128 GB de RAM, el modelo se expone en `/v1` y se integra en el IDE o en un chat interno; los 30-37 tok/s permiten revisión y generación interactiva sin enviar código a la nube.
-- Agente de reparación de repositorios: se le pasan incidencias, fragmentos de código y logs en un prompt de hasta 131k tokens; su prefill de 334-508 tok/s en 2x3090 reduce la latencia de arranque. La orquestación de herramientas debe hacerse fuera del modelo, porque el soporte nativo de tool calling no está documentado.
-- Análisis de documentación técnica extensa: informes, RFCs o manuales de hasta 131k tokens; el modelo puede resumir, extraer requisitos y comparar versiones en local. Es adecuado por contexto y licencia MIT, no por benchmarks de comprensión no publicados.
-- Laboratorio de cuantización: comparar la fidelidad de este build (KL 0,395; top-1 74,1 %; perplejidad 10,93) con FP8 y con Lucebox ROCMFP; el enrutamiento exacto y los logs en `results/` permiten reproducir experimentos.
-- Despliegue air-gapped con datos sensibles: el quant y el Engram se descargan una vez y se sirven con dsx sin API externa; MIT facilita el uso comercial, aunque no hay auditoría de seguridad publicada.
-- Generación de pruebas y documentación de código: el ejemplo de la model card y la calibración con sesiones de agentes de código orientan el modelo a tareas de programación; 37 tok/s en prosa y 30 tok/s con prompt de agente son suficientes para iteración, no para autocompletado de muy baja latencia.
-- Investigación sobre MoE a escala en hardware de consumo: permite estudiar el comportamiento de 15.360 expertos con enrutamiento exacto y distintas precisiones por experto sin un clúster de GPU.
-- Chat multi-turno con contexto largo y privacidad: 128 GB de RAM y 131k tokens permiten conversaciones con historial extenso; no hay datos de idiomas, así que el soporte multilingüe debe validarse.
+- Razonamiento matematico asistido en local: el modelo mantiene respuestas correctas en problemas de Omni-MATH con cadenas de razonamiento de 8K a 18K tokens; adecuado para equipos que necesitan verificar razonamientos largos sin enviar datos a la nube.
+- Agentes de codigo en estaciones de trabajo: con tool calling via API compatible con OpenAI y contexto de 131K tokens, se puede integrar en editores o pipelines que requieran lectura de repositorios completos y ejecucion de herramientas.
+- Procesamiento de documentos largos: la ventana de 131.072 tokens permite analizar contratos, informes o bases de codigo extensas en una sola pasada, con el modelo corriendo en dos GPU de consumo.
+- Investigacion en cuantizacion: la build sirve como referencia reproducible para estudiar el impacto de la precision mixta por experto en calidad (KL, top-1, perplejidad) frente a FP8 y otras cuantizaciones.
+- Despliegue de inferencia privada: al ejecutarse en hardware propio con licencia MIT, encaja en entornos con requisitos de soberania de datos donde no se permite usar APIs externas.
+- Evaluacion comparativa de motores: el autor publica metricas de dsx frente a llama.cpp con las mismas condiciones, lo que permite usar esta build como banco de pruebas para comparar runtimes de inferencia MoE.
+- Prototipado de asistentes con vision: el soporte de image input en dsx permite construir asistentes que combinen texto e imagenes en local, aunque la calidad de vision no esta cuantificada en la informacion disponible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible. Los datos adjuntos miden fidelidad de cuantización y velocidad.
+Calidad medida en el conjunto Lucebox 1017 (8 x 1.024 tokens contra los top-256 log-probs del modelo FP8):
 
-Calidad frente al FP8 original, medida en el conjunto de evaluación 1017 de Lucebox: 8 × 1024 tokens contra los top-256 log-probs del modelo FP8.
+| Modelo | Expertos | KL (menor mejor) | Top-1 | Perplejidad |
+|---|---|---:|---:|---:|
+| FP8 / FP4 original | FP4 | 0 | 100% | 8,56 |
+| Unsloth UD-Q2_K_XL | ~224 GB sin Engram | 0,114 | 85,7% | 9,04 |
+| Lucebox ROCMFP | 2,5 bpw | 0,253 | 78,7% | 9,78 |
+| Unsloth UD-IQ1_S | ~122 GB sin Engram | 0,361 | 75,1% | 10,76 |
+| **dsx 2-bit** | **2,03 bpw, 148 GB** | **0,373** | **74,4%** | **10,68** |
 
-| Build | Expertos | KL ↓ | Top-1 ↑ | Perplejidad ↓ |
-|---|---:|---:|---:|---:|
-| FP8 / FP4 original | FP4 | 0 | 100 % | 8,56 |
-| Lucebox ROCMFP | 2,5 bpw | 0,253 | 78,7 % | 9,78 |
-| dsx 2-bit | 2,03 bpw | 0,395 | 74,1 % | 10,93 |
+Velocidad (decodificacion greedy, routing exacto, 400 tokens generados):
 
-Velocidad con decodificación greedy, enrutamiento exacto y 400 tokens generados.
+| Metrica | 2x RTX 3090, 128 GB DDR4 | RTX 5090, 128 GB DDR5 |
+|---|---:|---:|
+| Decode, prosa | 28,9 tok/s | 12,0 tok/s |
+| Decode, prompt de agente de 3K | 28,7 tok/s | 15,2 tok/s |
+| Prefill, 3K / 8K tokens | 301 / 470 tok/s | 93 / 172 tok/s |
 
-| Hardware | Decode, prosa | Decode, prompt de agente de 3K | Prefill, 3K / 8K |
-|---|---:|---:|---:|
-| 2x RTX 3090, 128 GB DDR4 | 37,2 tok/s | 30,0 tok/s | 334 / 508 tok/s |
-| RTX 5090, 128 GB DDR5 | 12,0 tok/s | 15,2
+En la misma maquina con 2x RTX 3090, Unsloth UD-IQ1_M en llama.cpp alcanza 12,0 tok/s de decode y 75-109 tok/s de prefill con el prompt de agente de 3K. En razonamiento, el modelo 2-bit genera entre 7,8K y 18,2K tokens en dos problemas de Omni-MATH, frente a una mediana de 9,4K-10,7K del FP8 alojado, es decir, razona hasta aproximadamente el doble en problemas dificiles.
+
+## Requisitos de hardware
+
+- VRAM: dos GPU NVIDIA de 24 GB (RTX 3090, 4090 o 5090) con todos los expertos en VRAM + RAM; una sola GPU de 32 GB deja unos 40 GB de expertos que deben leerse de disco.
+- RAM: 128 GB (DDR4 en el caso medido con 3090, DDR5 con 5090).
+- CPU: con soporte AVX2.
+- Almacenamiento: aproximadamente 350 GB de NVMe (148 GB de la cuantizacion + 203 GB de shards Engram oficiales).
+- Despliegue: exclusivamente mediante el motor dsx (Rust + CUDA), compilado con `CUDA_ARCHS=86` para RTX 30xx o `120` para RTX 50xx. No es compatible con llama.cpp, vLLM, TGI ni Ollama.
+- Latencia y throughput: ~29 tok/s de decode y 300-470 tok/s de prefill en 2x RTX 3090; 12-15 tok/s de decode y 93-172 tok/s de prefill en una RTX 5090. La opcion `--defer-rank 3` eleva el decode a 35,7 tok/s.
+
+## Comparativa con modelos similares
+
+| Build | Hardware objetivo | Descarga | KL / top-1 vs FP8 | Decode |
+|---|---|---|---:|---:|
+| dsx-t16 (recomendada) | 2x 24 GB GPU + 128 GB RAM | 302 GB | 0,194 / 81,4% | 34,9 tok/s |
+| dsx-ud | 2x 24 GB GPU + 128 GB RAM | 305 GB | 0,272 / 79,0% | 27-29,5 tok/s |
+| **dsx-2bit** | 2x 24 GB GPU + 128 GB RAM | 148 GB + 203 GB Engram | 0,373 / 74,4% | ~29 tok/s |
+| dsx-mxfp4 | 1x AMD MI325X (256 GiB) | 270 GB + 203 GB Engram | 0,049 / 90,6% | 110-114 tok/s |
+| Unsloth UD-IQ1_S (llama.cpp) | no disponible | ~122 GB sin Engram | 0,361 / 75,1% | no disponible |
+| Unsloth UD-Q2_K_XL (llama.cpp) | no disponible | ~224 GB sin Engram | 0,114 / 85,7% | no disponible |
+
+La build 2-bit ofrece la descarga mas pequena del ecosistema dsx (148 GB) a costa de la mayor perdida de calidad entre las builds dsx (KL 0,373). Frente a Unsloth UD-IQ1_S en llama.cpp, la calidad es ligeramente inferior (KL 0,373 vs 0,361) pero el decode es mas de el doble de rapido en la misma maquina (28,9 vs 12,0 tok/s). Para maxima fidelidad en el mismo hardware, el autor recomienda dsx-t16.
+
+## Limitaciones y advertencias
+
+- Perdida de calidad medible: KL 0,373 y top-1 74,4% frente al FP8, con perplejidad de 10,68 frente a 8,56. Es la build de menor fidelidad de la familia dsx.
+- Razonamiento inflado: en problemas dificiles genera hasta aproximadamente el doble de tokens de razonamiento que el FP8, lo que incrementa la latencia y el coste por consulta.
+- Dependencia estricta de dsx: requiere una version posterior al 19 de octubre de 2026; versiones anteriores producen salidas corruptas por no conocer la rotacion. No funciona en llama.cpp, vLLM ni otros runtimes.
+- Requiere descargar los shards Engram oficiales del modelo base (203 GB) ademas de la cuantizacion, lo que complica el despliegue y el consumo de disco.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; es esperable que la cuantizacion agresiva lo incremente respecto al original, pero no hay datos.
+- Idiomas soportados: no declarados; no se puede garantizar calidad multilingue.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Licencia MIT declarada, lo que en principio permite uso comercial, pero conviene verificar las condiciones del modelo base DeepSeek-V4.1-Flash-1017 antes de produccion.
+- La velocidad depende de que todos los expertos quepan en VRAM + RAM; con menos memoria, parte de los expertos se leen de disco y el rendimiento cae.
+
+## Enlaces
+
+- Modelo en Hugging Face: https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Build recomendada dsx-t16: https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-t16
+- Build dsx-ud: https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-ud
+- Build dsx-mxfp4: https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-mxfp4
+- Motor dsx: https://github.com/lxe/dsx
+- Herramienta de evaluacion Lucebox: https://github.com/lxe/dsx/tree/main/amd/tools/lucebox-eval
+- Conjunto de evaluacion: https://huggingface.co/Lucebox/DeepSeek-V4.1-Flash-1017-ROCMFP-GGUF
+- Paper GPTQ (arxiv:2210.17323): https://arxiv.org/abs/2210.17323
+- Paper arxiv:2402.04396: https://arxiv.org/abs/2402.04396
+- Paper arxiv:2404.00456: https://arxiv.org/abs/2404.00456

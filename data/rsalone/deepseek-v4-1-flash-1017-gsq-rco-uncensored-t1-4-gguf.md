@@ -2,105 +2,106 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF es una variante "abliterated" (sin dirección de rechazo) del modelo DeepSeek-V4.1-Flash-1017 en cuantización GSQ-RCO IQ2_XXS, publicada por el usuario rSalone. El trabajo parte del archivo cuantizado de ISTA-DASLab y aplica una edición directa sobre los pesos cuantizados para eliminar la dirección de rechazo, es decir, la dirección en la que la salida media de las capas difiere entre peticiones que el modelo rechaza y peticiones ordinarias. El resultado es un modelo que responde a solicitudes que el original rechaza, manteniendo supuestamente intactas sus capacidades matemáticas y de tareas prácticas.
+DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF es una variante "abliterated" (sin dirección de rechazo) del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario rSalone sobre la cuantización GSQ-RCO IQ2_XXS de ISTA-DASLab. El modelo base cuenta con aproximadamente 196.600 millones de parámetros totales, según los datos de safetensors del repositorio. La intervención consiste en eliminar la "dirección de rechazo" —la dirección en el espacio de activaciones en la que difieren las peticiones que el modelo rechaza frente a las ordinarias— editando directamente los pesos ya cuantizados.
 
-El modelo tiene 196.613.849.600 parámetros (unos 196,6 mil millones) y se distribuye en formato GGUF con un tamaño de repositorio de 252,2 GB. La licencia declarada es MIT. La model card está redactada en inglés y japonés, e incluye una evaluación propia sobre 60 peticiones dañinas de MaliciousInstruct, 60 peticiones seguras de XSTest, 50 problemas de MATH nivel 5 y 13 ítems de tareas prácticas en OpenCode.
+El interés técnico de esta ficha reside en el método: a diferencia de otras variantes publicadas, la dirección de rechazo se calcula sobre el primer 40 % de los tokens de razonamiento (no sobre el último token de la petición), se estima una dirección por capa y por salida, y solo se editan las capas donde las peticiones dañinas y las ordinarias se separan con claridad. El autor reporta que las peticiones dañinas respondidas pasan de 4 a 60 sobre 60, mientras que las puntuaciones en MATH y en tareas prácticas se mantienen estables.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de eliminación de la dirección de rechazo aplicada directamente sobre pesos cuantizados, algo que el autor presenta como novedad frente a otras variantes publicadas; por otro, sirve como caso de estudio de los riesgos de publicar modelos sin salvaguardas y de las limitaciones prácticas de las cuantizaciones agresivas (IQ2_XXS) en modelos de gran tamaño.
+El modelo se distribuye en formato GGUF (tamaño de repositorio de 501,8 GB) con licencia MIT y está pensado para ejecutarse en llama.cpp, Abyss y Strata. Su relevancia actual es doble: por un lado, demuestra que la eliminación de la dirección de rechazo puede aplicarse directamente sobre pesos cuantizados; por otro, plantea consideraciones de seguridad y de licencia que cualquier equipo de producción debe evaluar antes de adoptarlo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (hereda la del modelo base DeepSeek-V4.1-Flash-1017; no se detalla en la información proporcionada) |
-| Parametros totales | 196.613.849.600 (~196,6 B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible como especificación oficial; la model card indica degradación notable de calidad a partir de ~160K tokens en uso real |
-| Tipos de cuantizacion | GGUF, cuantización GSQ-RCO IQ2_XXS (la única publicada en este repo) |
+| Arquitectura | no disponible |
+| Parámetros totales | 196.613.849.600 (~196,6 B) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (el autor recomienda compactar antes de ~160K tokens por caída de calidad) |
+| Tipos de cuantización | IQ2_XXS (GSQ-RCO); pesos GGUF |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (versión de seis shards compatible con llama.cpp) |
+| Modelo base | ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF |
+| Tamaño del repositorio | 501,8 GB |
+| Descargas / likes | 2.263 / 8 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base DeepSeek-V4.1-Flash-1017 en la documentación proporcionada: no se especifica si es un transformer denso, un MoE o una arquitectura híbrida, ni el número de tokens de entrenamiento, la composición del dataset o si hubo etapas de RLHF o DPO. Lo único confirmado es el recuento de parámetros (196,6 B) y que el modelo se distribuye exclusivamente en formato GGUF cuantizado.
+La información disponible no detalla la arquitectura interna del modelo base (si es transformer denso, MoE o híbrido), ni el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de RLHF o DPO. Lo que sí se documenta es el proceso de modificación: se parte de la cuantización IQ2_XXS GSQ-RCO de ISTA-DASLab y se elimina la dirección de rechazo calculando, para cada capa y cada salida, la dirección en la que difiere la salida media entre peticiones rechazadas y peticiones ordinarias (estas últimas tomadas de harmless_alpaca). La dirección se estima sobre el primer 40 % de los tokens de razonamiento, y solo se editan las capas donde la separación entre ambos tipos de petición es suficientemente clara.
 
-La innovación técnica documentada es el proceso de "abliteración" aplicado sobre el archivo cuantizado. Según la model card, se calcula la dirección de rechazo como la diferencia de la salida media de las capas entre peticiones rechazadas y peticiones ordinarias. A diferencia de otras variantes publicadas, esta versión: (1) calcula la dirección sobre el primer 40 % de los tokens de razonamiento en lugar del último token de la petición; (2) estima una dirección por capa y por salida, editando solo las capas donde las peticiones dañinas y las ordinarias se separan con claridad; y (3) edita directamente los pesos cuantizados en lugar de editar los pesos en precisión completa y cuantizar después. La fuerza aplicada es 1.0 (proyección a cero del componente en esa dirección), frente al 2.0 de otras variantes. El autor reporta una divergencia KL media de 0,0058 frente al modelo original y una coincidencia del 97,08 % en el token más probable sobre 16.025 posiciones.
+La innovación destacable es que la edición se realiza directamente sobre los pesos cuantizados, sin necesidad de editar los pesos en precisión completa y recuantizar después. El autor indica que fijar a cero la componente en esa dirección (fuerza 1.0) basta para que el modelo responda a las 60 peticiones dañinas con razonamiento activado, frente a la fuerza 2.0 (que invierte el signo de la componente) usada por otras variantes publicadas. Como validación de que el comportamiento general se preserva, el autor compara las distribuciones de probabilidad del siguiente token frente al modelo original en 16.025 posiciones: divergencia KL media de 0,0058 y coincidencia del token más probable en el 97,08 % de las posiciones.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo conserva el modo de razonamiento ("reasoning on") del original, según las evaluaciones de la model card.
-- Razonamiento matemático: 50/50 correctos en MATH nivel 5 con razonamiento activado (frente a 49/50 del original).
-- Tareas prácticas de agente: resolución de tareas de OpenCode, incluyendo automatización de navegador con Playwright y generación de imágenes mediante ComfyUI.
-- Generación de imágenes vía herramientas externas: el modelo orquesta ComfyUI para producir imágenes, incluidas peticiones NSFW que el original rechazaba.
-- Respuesta a peticiones dañinas: 60/60 con razonamiento activado y 54/60 con razonamiento desactivado en el conjunto de MaliciousInstruct.
-- Baja tasa de sobrerrechazo: 60/60 y 59/60 en XSTest con razonamiento activado y desactivado respectivamente.
-- Soporte de tool calling / function calling: no disponible como especificación formal, aunque el uso descrito en OpenCode implica invocación de herramientas.
-- Capacidades multilingües: no disponible.
-- Modo "thinking" explícito: sí, la model card distingue evaluaciones con razonamiento activado y desactivado.
+- Generación de texto y razonamiento con modo de razonamiento (reasoning) activable o desactivable.
+- Razonamiento matemático: el autor reporta 50/50 correctas en MATH Level 5 (frente a 49/50 del original).
+- Ejecución de tareas prácticas de agente en OpenCode, con 13 ítems evaluados en cuatro tareas de OpenCode.
+- Automatización de navegador mediante Playwright, según la experiencia del autor.
+- Integración con ComfyUI y flujos de generación de imágenes (incluida la generación de imágenes NSFW solicitada).
+- Respuesta a peticiones que el modelo original rechaza (eliminación de la dirección de rechazo).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar empíricamente cómo la eliminación de la dirección de rechazo afecta al comportamiento del modelo, comparando las métricas de la model card (MaliciousInstruct, XSTest, MATH) con las del original.
-- Evaluación de técnicas de abliteración sobre pesos cuantizados: sirve para reproducir y comparar el método descrito (dirección por capa, primeros tokens de razonamiento, edición directa del GGUF) frente a otras variantes publicadas como AtomicChat, Harsha001 o Abiray.
-- Automatización de tareas de agente en local: con 196,6 B parámetros en IQ2_XXS y 252 GB de repo, puede desplegarse en un equipo con suficiente RAM (el autor cita 121 GiB en una RTX 5090) para tareas de OpenCode con Playwright y ComfyUI.
-- Generación de imágenes asistida por LLM: el modelo orquesta flujos de ComfyUI, incluyendo flujos personalizados como el "Krea workflow" del autor, sin rechazar peticiones NSFW.
-- Análisis de robustez de filtros y salvaguardas: útil para equipos de seguridad que quieran probar la eficacia de sus propias capas de moderación frente a modelos sin rechazo.
-- Estudio de degradación por cuantización agresiva: la comparación de KL (0,0058) y de calidad en MATH permite analizar el coste de IQ2_XXS en un modelo de ~196 B.
-- Pruebas de concepto de razonamiento matemático en local: 50/50 en MATH nivel 5 con razonamiento activado, útil para validar pipelines de evaluación en hardware de consumo.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar empíricamente cómo la eliminación de la dirección de rechazo afecta a la tasa de respuesta a peticiones dañinas (de 4/60 a 60/60) sin degradar tareas matemáticas, útil para analizar mecanismos de refusal en modelos de gran escala.
+- Evaluación de robustez de filtros de seguridad: desplegar este modelo en un entorno controlado para probar si los clasificadores de contenido y las capas de moderación externas detectan respuestas que un modelo alineado rechazaría.
+- Reproducción de experimentos de abliteration sobre pesos cuantizados: sirve como referencia de que la edición directa sobre GGUF IQ2_XXS es viable, lo que reduce los requisitos de hardware frente a editar pesos en precisión completa.
+- Automatización de tareas de agente en OpenCode: el autor documenta el uso diario en tareas prácticas (navegación con Playwright, flujos de ComfyUI), lo que lo hace adecuado para pipelines de agentes que requieran ejecución multi-paso.
+- Generación de imágenes mediante ComfyUI: el modelo puede orquestar flujos de trabajo en ComfyUI, incluidos los de contenido NSFW, algo que el autor señala que Claude rechaza en su experiencia.
+- Razonamiento matemático de nivel avanzado: con 50/50 en MATH Level 5, es adecuado para tareas de resolución de problemas matemáticos donde se requiera un modelo sin restricciones de contenido.
+- Pruebas de regresión de comportamiento: la baja divergencia KL (0,0058) frente al original permite usar este modelo como sustituto en pruebas donde se necesite el mismo comportamiento de predicción con distinto perfil de rechazo.
 
 ## Benchmarks y rendimiento
 
 | Evaluación | Original | Este modelo |
 |---|---:|---:|
-| Peticiones dañinas respondidas (razonamiento on, 60) | 4 | 60 |
-| Peticiones dañinas respondidas (razonamiento off, 60) | 6 | 54 |
-| Test de sobrerrechazo respondido (razonamiento on, 60) | 60 | 60 |
-| Test de sobrerrechazo respondido (razonamiento off, 60) | 59 | 60 |
-| MATH nivel 5 correctos (50) | 49 | 50 |
-| Imágenes generadas para petición NSFW (3 ejecuciones) | 0 | 3 |
-| Problemas con límite de longitud o bucle (total) | 1 | 3 |
+| Peticiones dañinas respondidas (razonamiento activo, 60) | 4 | 60 |
+| Peticiones dañinas respondidas (razonamiento desactivado, 60) | 6 | 54 |
+| Test de sobrerrechazo respondido (razonamiento activo, 60) | 60 | 60 |
+| Test de sobrerrechazo respondido (razonamiento desactivado, 60) | 59 | 60 |
+| MATH Level 5 correctas (50) | 49 | 50 |
+| Imágenes generadas para una petición NSFW (3 ejecuciones) | 0 | 3 |
+| Problemas con límite de longitud alcanzado o bucle (total) | 1 | 3 |
 
-Divergencia KL media frente al archivo sin editar: 0,0058 (top 64 tokens, sobre razonamiento y respuestas generadas por el original para 10 problemas de MATH-500 nivel 5). Coincidencia del token más probable: 97,08 % en 16.025 posiciones. Diferencia en peticiones dañinas: p<0,001 (test exacto de McNemar). Diferencia en MATH: p=1,000.
+Las peticiones dañinas provienen de MaliciousInstruct y el test de sobrerrechazo de los prompts seguros de XSTest. La diferencia en peticiones dañinas es p<0,001 (test exacto de McNemar); la diferencia en MATH es p=1,000. La evaluación la realizó Qwen3.8-Flash-Next (q8g) y se ejecutó en Abyss v1.3.91, una ejecución por problema (tres para la petición de generación de imágenes).
 
-Comparativa de KL declarada por otras variantes (no directamente comparable según el autor): AtomicChat IQ2_XXS 0,0225; Harsha001 IQ2_XXS 0,014; Abiray 0,0095.
+Además, en la comparación de distribuciones del siguiente token sobre 10 problemas de MATH-500 Level 5 (16.025 posiciones), la divergencia KL media fue de 0,0058 y el token más probable coincidió en el 97,08 % de las posiciones.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el repositorio ocupa 252,2 GB; el autor reporta ejecución con 121 GiB de RAM y una RTX 5090, lo que sugiere descarga parcial a CPU o uso de memoria unificada. No se especifica VRAM mínima exacta.
-- GPU recomendadas: RTX 5090 (citada por el autor); para modelos de ~196 B en IQ2_XXS se requiere generalmente un conjunto multi-GPU o descarga a RAM del sistema.
-- ¿Cabe en GPU de consumo? No en una sola GPU de consumo con VRAM estándar; el autor lo ejecuta con 121 GiB de RAM del sistema y una RTX 5090, lo que implica offloading.
-- Opciones de despliegue: llama.cpp y derivados compatibles con GGUF (Ollama, LM Studio, koboldcpp). No se mencionan vLLM ni TGI, que no soportan GGUF de forma nativa para este tamaño.
-- Latencia y throughput: no disponibles. La model card solo advierte de degradación de calidad a partir de ~160K tokens de contexto y recomienda activar la compactación de contexto antes de ese umbral.
+- VRAM/RAM estimada: el autor indica que la creación del modelo se realizó con una única GPU de consumo (RTX 5090) y 121 GiB de RAM. El repositorio ocupa 501,8 GB, por lo que la inferencia requiere almacenamiento y memoria proporcionales a la cuantización IQ2_XXS.
+- GPU recomendadas: no disponible en la información proporcionada; el autor solo menciona la RTX 5090 para el proceso de edición.
+- ¿Cabe en GPU de consumo? El proceso de creación sí (RTX 5090 con 121 GiB de RAM del sistema); la inferencia completa requiere evaluar el desbordamiento a RAM del sistema según la cuantización.
+- Opciones de despliegue: llama.cpp (versión de seis shards verificada), Abyss v1.3.91 y Strata. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (rSalone) | ~196,6 B | no disponible (degradación >160K) | IQ2_XXS GGUF | MIT | Abliterado sobre pesos cuantizados, dirección por capa, primeros 40 % de tokens de razonamiento |
-| AtomicChat (IQ2_XXS) | no disponible | no disponible | IQ2_XXS GGUF | no disponible | Misma base ISTA-DASLab; KL 0,0225; fuerza 2.0; una dirección para todas las capas |
-| Harsha001 (IQ2_XXS) | no disponible | no disponible | IQ2_XXS GGUF | no disponible | Misma base; KL 0,014 sobre wikitext-2 |
-| Abiray | no disponible | no disponible | no disponible | no disponible | Misma base; KL 0,0095 sobre vocabulario completo |
+| Este modelo (rSalone) | ~196,6 B | no disponible | MIT | GGUF (IQ2_XXS) | Edita pesos cuantizados; dirección por capa; fuerza 1.0 |
+| Otras variantes abliterated del mismo base ISTA-DASLab | no disponible | no disponible | no disponible | no disponible | Aplican una dirección a todas las capas, fuerza 2.0, editan pesos en precisión completa y recuantizan |
+| Modelo original DeepSeek-V4.1-Flash-1017 (vía ISTA-DASLab GSQ-RCO) | ~196,6 B | no disponible | no disponible | GGUF | Sin eliminar la dirección de rechazo; 4/60 peticiones dañinas respondidas |
 
-No se dispone de datos suficientes para comparar con modelos no abliterados de tamaño similar (por ejemplo, otros modelos de ~200 B) en términos de MMLU, HumanEval o GSM8K, ya que la información proporcionada no incluye esos benchmarks.
+La información disponible no permite comparar con alternativas de otros desarrolladores (por ejemplo, otros modelos de ~200 B) en parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Eliminación deliberada de salvaguardas: el modelo responde a peticiones dañinas de MaliciousInstruct (60/60 con razonamiento activado). No debe desplegarse en entornos de producción orientados al público sin capas de moderación externas.
-- Riesgo de uso indebido: la model card documenta explícitamente la generación de imágenes NSFW vía ComfyUI, lo que plantea riesgos legales y éticos según la jurisdicción.
-- Cuantización agresiva: IQ2_XXS sobre ~196 B implica pérdida de precisión; el autor reporta 3 casos de límite de longitud o bucle frente a 1 del original en el conjunto evaluado.
-- Contexto largo: degradación notable a partir de ~160K tokens según la experiencia del autor; se recomienda compactar antes de ese umbral.
-- Idiomas: no se especifican los idiomas soportados; la model card está en inglés y japonés, pero no se confirma cobertura multilingüe.
-- Licencia MIT: permite uso comercial, pero el usuario asume toda la responsabilidad legal y ética derivada del comportamiento sin rechazo.
-- Sesgos: no documentados en la información proporcionada; al tratarse de una edición sobre un modelo base del que no se detallan datos de entrenamiento, no es posible evaluar sesgos específicos.
-- Alucinación: no se han publicado métricas de fidelidad factual; el autor solo reporta KL y MATH, no evaluaciones de veracidad.
-- Reproducibilidad: las evaluaciones se hicieron con una sola ejecución por problema (tres para la generación de imágenes) y el juez fue Qwen3.8-Flash-Next (q8g), un modelo externo no validado en la card.
+- El modelo elimina deliberadamente la dirección de rechazo: responde a peticiones dañinas (60/60 con razonamiento activo) que el original rechaza. No debe desplegarse en entornos públicos sin capas de moderación externas.
+- El autor reporta una caída brusca de la calidad de respuesta al superar aproximadamente 160K tokens de contexto; recomienda configurar la compactación de contexto antes de ese umbral.
+- En las evaluaciones se observaron 3 casos de salida que alcanzaron el límite de longitud o parecían bucles, frente a 1 del modelo original.
+- La evaluación se realizó con una sola ejecución por problema (tres en el caso de generación de imágenes) y el juicio de si una respuesta satisface la petición lo emitió Qwen3.8-Flash-Next (q8g), lo que introduce dependencia del evaluador.
+- La licencia es MIT, lo que en principio permite uso comercial, pero el modelo base y la cuantización de ISTA-DASLab pueden tener condiciones adicionales no detalladas en la información disponible; conviene verificar la licencia del modelo base antes de un uso comercial.
+- No se dispone de información sobre sesgos, idiomas soportados ni riesgos de alucinación específicos de esta variante.
+- El método de edición sobre pesos cuantizados puede introducir artefactos no capturados por las evaluaciones reportadas; la divergencia KL de 0,0058 se midió solo sobre problemas de MATH-500 Level 5.
+- Los enlaces a los papers citados en los tags (arXiv:2406.11717, 2310.06987, 2308.01263, 2103.03874, 2305.20050) no se detallan en la información proporcionada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/rSalone/DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF
-- Modelo base (GGUF): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
-- README en japonés: README_ja.md (incluido en el repositorio)
-- Figura 1: images/fig1_results_en.png (incluida en el repositorio)
-- Figura 2: images/fig2_work_en.png (incluida en el repositorio)
-- Licencia: LICENSE (incluido en el repositorio)
+- Modelo en Hugging Face: https://huggingface.co/rSalone/DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF
+- Modelo base: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
+- README en japonés: README_ja.md (referenciado en la model card)
+- Papers citados en los tags: arXiv:2406.11717, arXiv:2310.06987, arXiv:2308.01263, arXiv:2103.03874, arXiv:2305.20050 (sin URL directa en la información disponible)

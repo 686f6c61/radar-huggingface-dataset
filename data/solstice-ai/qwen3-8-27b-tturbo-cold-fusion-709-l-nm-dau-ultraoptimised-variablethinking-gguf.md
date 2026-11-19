@@ -1,122 +1,95 @@
 # Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF
 
 ## Resumen
+Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF es un fine-tune de tipo multi-etapa y multi-fusión desarrollado por Solstice-AI sobre el modelo DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, a su vez derivado de la familia Qwen 3.8 de 27B. Se distribuye exclusivamente en formato GGUF, con cuantizaciones "regulares" y "MTP" (multi-token prediction), y está pensado para ejecución en hardware de consumo. El autor lo presenta como una variante "abliterated"/"uncensored" orientada a usos generales, escritura creativa, roleplay y código.
 
-Este modelo es una cuantización GGUF publicada por Solstice-AI sobre el checkpoint afinado DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, que a su vez deriva de la familia Qwen3. Se distribuye con un total real de 26.895.998.464 parámetros (unos 26,9 mil millones) y un repositorio de 412,2 GB que agrupa múltiples cuantizaciones GGUF en dos familias (quants "regular" y quants "MTP"), además de variantes NEO y NEO MAX. La pipeline declarada en Hugging Face es image-text-to-text, aunque la model card no detalla ningún codificador de visión.
+La propuesta central del modelo es reducir drásticamente el consumo de tokens de razonamiento (según el autor, entre 1/2 y 1/20 del modelo base, con una mediana aproximada de 2/3 de reducción) manteniendo la calidad de salida. Para ello incorpora cinco modos de razonamiento y cinco modos de instrucción conmutables en tiempo de ejecución vía API o a nivel de mensaje en el chat, incluyendo los modos nuevos "UltraXhigh" y "Einstein". El autor declara un resultado ARC-C de 709 en modo instruct y 701 en cuantización de 4 bits.
 
-El modelo se presenta como un ajuste multi-etapa y multi-merge orientado a dos objetivos concretos: elevar la inteligencia general respecto al Qwen 3.8 27B original y reducir drásticamente el consumo de tokens de razonamiento (entre la mitad y una vigésima parte, según el autor), manteniendo el detalle de la respuesta. Para ello incorpora cinco modos de razonamiento y cinco modos instruct, conmutables en caliente vía API, de forma directa o dentro del propio chat, con la particularidad de que los modos instruct no consumen tokens de razonamiento.
+El modelo tiene 26.895.998.464 parámetros (aproximadamente 26,9B), licencia Apache 2.0 y soporte declarado de inglés y chino. El repositorio ocupa 412,2 GB e incluye múltiples variantes de cuantización, lo que lo hace relevante para quienes buscan un modelo de ~27B con modo thinking controlable y despliegue local en GPUs de consumo.
 
-Su relevancia actual es doble. Por un lado, apunta a hardware de consumo: el autor afirma que la versión de 4 bits alcanza 701 puntos ARC-C en modo instruct, lo que la situaría en el rango de modelos propietarios según su propia escala de medición. Por otro lado, forma parte de la línea "uncensored/abliterated/heretic" de la familia, lo que lo hace útil para investigación sobre alineación y generación creativa sin restricciones, pero también obliga a extremar las precauciones antes de usarlo en producción. Conviene señalar que el repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validación independiente de sus cifras.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo derivado de la familia Qwen3; pipeline declarada: image-text-to-text) |
-| Parámetros totales | 26.895.998.464 (~26,9 B) |
-| Parámetros activos | No disponible (no se describe como MoE) |
-| Longitud de contexto | No disponible para este repositorio |
-| Tipos de cuantización | GGUF en dos familias: "Regular GGUF Quants" y "MTP GGUF Quants"; variantes NEO y NEO MAX; se cita Q4KS y el uso de imatrix |
-| Idiomas soportados | Inglés (en) y chino (zh) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (etiqueta bfloat16 presente en los tags) |
-| Tamaño del repositorio | 412,2 GB |
-| Modelo base | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored |
-| Datasets de ajuste | DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets, DavidAU/THE-DECKARD-Datasets |
-| Descargas / likes | 0 / 0 |
-| Fecha de publicación | 11 de septiembre de 2026 |
-| Última actualización | 11 de septiembre de 2026 |
+| Arquitectura | Transformer decoder-only (familia Qwen 3.8), fine-tune multi-etapa y multi-fusión; soporte de multi-token prediction (MTP) en las cuantizaciones MTP |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF en variantes "Regular" y "MTP" (Neo y NEO MAX); el autor menciona explícitamente 4 bits (Q4KS) y 8 bits; no se detalla la lista completa de niveles |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo también etiquetado con bfloat16 en los tags) |
 
 ## Arquitectura y entrenamiento
+El modelo parte de un transformer decoder-only de la familia Qwen 3.8 con ~26,9B parámetros. Sobre esa base, Solstice-AI aplica un proceso descrito como "multi-stage fine tune, multi-fine tune y multi-stage merge", construido a partir del modelo de DavidAU, que a su vez emplea los métodos que el autor denomina "COLD FUSION" y "FABLE FUSION 711". El entrenamiento se realizó con Unsloth según la model card, y los datasets declarados son DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets y DavidAU/THE-DECKARD-Datasets. No se especifica el número de tokens de entrenamiento ni la composición detallada de los datos.
 
-La información disponible no describe la arquitectura interna más allá de situarla en la familia Qwen3 y de declarar la pipeline image-text-to-text. El autor sí detalla el proceso de construcción: se trata de un ajuste fino multi-etapa, con múltiples ajustes finos y un merge multi-etapa posterior, ejecutado con Unsloth sobre el checkpoint de DavidAU. Los métodos de entrenamiento se denominan en la model card "Cold Fusion" y "Fable Fusion 711". Los datasets empleados son Polar-STRICT, F451-STRICT y THE-DECKARD, todos ellos publicados por DavidAU. No se especifica el número de tokens de entrenamiento, la composición exacta del corpus ni si se aplicaron etapas de RLHF o DPO.
-
-La innovación técnica que más se subraya es la gestión del presupuesto de razonamiento: el modelo aplica lo que el autor llama "VariableThinking", con cinco modos de razonamiento (incluidos dos nuevos, UltraXhigh y Einstein) y cinco modos instruct que no emiten tokens de razonamiento. Según la model card, los bloques de pensamiento se reducen entre la mitad y una vigésima parte respecto al Qwen 3.8 27B estándar, con una mediana de reducción de aproximadamente dos tercios, y además se reformatean. El repositorio incluye cuantizaciones MTP (multi-token prediction), pensadas para acelerar la generación de tokens, aunque no se documentan aquí los requisitos de runtime para aprovecharlas.
+La innovación técnica declarada es la gestión variable del razonamiento: cinco modos de thinking y cinco modos de instruct (estos últimos con cero tokens de razonamiento), conmutables en caliente mediante API o mediante control a nivel de mensaje en el chat. Las cuantizaciones MTP incorporan multi-token prediction para acelerar la generación. El autor también afirma una reformulación del bloque de pensamiento y una reducción del tamaño de las cuantizaciones manteniendo calidad. No se documentan detalles sobre RLHF, DPO ni sobre la longitud de contexto efectiva.
 
 ## Capacidades
-
-- Generación de texto conversacional multi-turno, con etiqueta explícita de conversational.
-- Razonamiento en modo thinking, con cinco modos de razonamiento conmutables (incluidos UltraXhigh y Einstein).
-- Cinco modos instruct que no generan tokens de razonamiento, también conmutables en caliente.
-- Generación de código, según la etiqueta coder del repositorio.
-- Escritura creativa, ficción, narrativa de todos los géneros y roleplaying, con etiquetas específicas para cada una.
-- Capacidad declarada de mantener estructura narrativa y arcos de personaje a lo largo de textos largos, según los ejemplos de la model card.
+- Generación de texto general y conversación multi-turno.
+- Razonamiento explícito con modo thinking conmutable (cinco modos, incluidos UltraXhigh y Einstein).
+- Modo instruct puro con cero tokens de razonamiento (cinco modos, incluidos UltraXhigh y Einstein).
+- Generación de código y tareas de programación (etiqueta "coder").
+- Escritura creativa, ficción, narrativa de todos los géneros y roleplay.
+- Capacidad multimodal image-text-to-text declarada en el pipeline del repo.
+- Soporte de tool calling / function calling: no disponible (no se documenta en la información proporcionada).
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explícita, aunque el modo thinking lo habilita parcialmente.
 - Multilingüe limitado a inglés y chino.
-- Pipeline declarada image-text-to-text, sin detalle adicional en la documentación sobre el tratamiento de imágenes.
-- Generación acelerada mediante cuantizaciones MTP (multi-token prediction).
-- Tool calling / function calling: no documentado en la información disponible.
-- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente en la información disponible.
-- Capacidades de audio: no documentadas.
+- Ejecución local en hardware de consumo gracias a las cuantizaciones GGUF.
 
 ## Casos de uso
-
-- Escritura creativa de formato largo: el modelo está afinado específicamente para narrativa y ficción, con etiquetas dedicadas a story, writing y all genres. Resulta adecuado para generar novelas por capítulos o relatos extensos porque el autor afirma que mantiene arcos de personaje y foreshadowing a lo largo de la obra, algo que suele degradarse en modelos genéricos.
-- Roleplay y simulación de personajes: las etiquetas roleplaying y fiction indican un ajuste orientado a mantener voces y personalidades consistentes. Se usaría en motores de chat con personajes, con la ventaja de que los modos instruct permiten respuestas rápidas sin tokens de razonamiento visibles.
-- Generación de código asistida: la etiqueta coder permite integrarlo en entornos de desarrollo local mediante GGUF, por ejemplo con llama.cpp o extensiones de editor, aprovechando que las cuantizaciones de 4 bits caben en GPU de consumo.
-- Investigación sobre alineación y red teaming: al ser un modelo abliterated, uncensored y heretic, es útil como sujeto de estudio para medir qué comportamientos emergen al eliminar las capas de rechazo, y para comparar contra checkpoints alineados de la misma familia.
-- Generación de datos sintéticos sin restricciones: para crear corpus de entrenamiento o evaluación en dominios donde los modelos alineados rechazan la petición (ficción adulta, diálogos conflictivos, escenarios de seguridad ofensiva en laboratorio), siempre que el usuario asuma la responsabilidad legal y ética.
-- Despliegue local en hardware de consumo: con cuantizaciones GGUF de 4 bits, el modelo está pensado para ejecutarse en una única GPU de gama alta de consumo, lo que permite prototipar asistentes privados sin enviar datos a la nube.
-- Optimización de coste en pipelines de razonamiento: la reducción declarada de tokens de pensamiento (mediana de dos tercios) implica menos tokens facturados por consulta en servicios de inferencia, lo que lo hace atractivo para aplicaciones con volumen alto y presupuesto ajustado.
-- Control fino del esfuerzo de razonamiento por mensaje: la posibilidad de conmutar entre cinco modos de razonamiento y cinco modos instruct a nivel de chat permite usar el modo rápido para consultas triviales y el modo profundo para problemas complejos dentro de la misma sesión.
+- Escritura creativa y narrativa larga: el modelo está ajustado específicamente para ficción y estructura narrativa, con modos de instruct sin tokens de razonamiento que reducen coste y latencia en la generación de borradores extensos.
+- Roleplay y personajes conversacionales: el ajuste "uncensored"/"abliterated" y la orientación a ficción lo hacen adecuado para sistemas de rol con turnos largos, aunque requiere moderación propia en producción.
+- Asistente de código en local: la etiqueta "coder" y el formato GGUF permiten integrarlo en entornos de desarrollo sin conexión, con modos instruct de bajo coste para autocompletado y refactorización.
+- Generación de texto con control de coste: los modos instruct con cero tokens de razonamiento permiten desplegar tareas de clasificación, resumen o extracción sin pagar el coste de un bloque de pensamiento.
+- Razonamiento con presupuesto variable: los cinco modos de thinking permiten asignar más o menos esfuerzo según la dificultad de la consulta, útil en pipelines que mezclan tareas triviales y complejas.
+- Despliegue en estaciones de trabajo con GPU de consumo: al distribuirse en GGUF de 4 y 8 bits, puede ejecutarse con llama.cpp u Ollama en equipos sin GPU de centro de datos.
+- Prototipado de agentes conversacionales multilingües inglés-chino: cobertura limitada a esos dos idiomas, adecuada para productos dirigidos a esos mercados.
 
 ## Benchmarks y rendimiento
+Los únicos datos disponibles son los declarados por el autor en la model card. No se aportan resultados detallados por benchmark más allá de ARC-C.
 
-Los datos disponibles son afirmaciones del autor de la model card, no resultados verificados de forma independiente. Se presentan tal cual, con la salvedad de que la escala de ARC-C empleada no se corresponde con la métrica estándar de ARC-Challenge (expresada en porcentaje de acierto).
-
-| Benchmark | Resultado declarado | Condiciones |
+| Benchmark | Resultado declarado | Contexto |
 |---|---|---|
-| ARC-C | 709 | Modo instruct, cuantización de 8 bits |
-| ARC-C | 701 | Modo instruct, cuantización de 4 bits |
-| ARC-C del modelo base Qwen 3.8 27B | 591 (deducido de la afirmación de "+118 puntos") | No especificado |
-| Comparativa frente a Qwen 3.8 27B | Supera los 7 benchmarks críticos | Según el autor, tanto en 4 como en 8 bits |
-| Comparativa frente a Qwen3.6-35B-A3B | Supera los 7 benchmarks | Según el autor |
-| Comparativa frente a Qwen 3.6 27B | Supera los 7 benchmarks | Según el autor |
-| Comparativa frente a Qwen 3.5 27B | Supera los 7 benchmarks | Según el autor |
-| MMLU, HumanEval, GSM8K, ARC-E | No disponibles | No se publican cifras concretas en la información proporcionada |
+| ARC-C (instruct, 8 bits) | 709 | Según el autor, 118 puntos por encima de Qwen 3.8 27B |
+| ARC-C (instruct, 4 bits) | 701 | Cuantización Q4KS |
+| Comparación con Qwen 3.8 27B | Superior en 7 benchmarks críticos (4 y 8 bits) | Sin cifras por benchmark |
+| Comparación con Qwen3.6-35B-A3B, Qwen 3.6 27B, Qwen 3.5 27B | Superior en los 7 benchmarks (4 y 8 bits) | Sin cifras por benchmark |
 
-El modelo hermano de la misma familia, Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised, declara 735 en ARC-C y 882 en ARC-E, así como un resultado de 9 de 9 frente a Claude Opus 4.6 Max en el arnés oficial de Claude Code. Son datos de otro checkpoint, no de este.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar con cifras verificables.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (cálculo a partir de los 26,9 B de parámetros, sin contar caché KV): ~54 GB en bfloat16, ~28-29 GB en Q8_0, ~18-19 GB en Q5_K_M, ~15-16 GB en Q4_K_M (se menciona explícitamente Q4KS en la model card) y ~12 GB en cuantizaciones de 3 bits.
-- GPU recomendadas: para bfloat16 o Q8 se necesitan A100 80 GB, H100 80 GB o configuraciones multi-GPU con 2× RTX 3090/4090 (48 GB). Para Q4 y Q5 basta una única GPU de 24 GB.
-- Compatibilidad con GPU de consumo: sí, en cuantizaciones de 4 y 5 bits sobre RTX 3090, RTX 4090, RTX 5090 o equivalentes con 24 GB de VRAM. En cuantizaciones de 3 bits o inferiores podría caber en GPU de 16 GB, con pérdida de calidad no cuantificada en la información disponible.
-- Opciones de despliegue: el formato GGUF es compatible con llama.cpp, Ollama, LM Studio y text-generation-webui. Las cuantizaciones MTP pueden requerir runtimes o bifurcaciones específicas con soporte de multi-token prediction; no se documenta cuáles en la información proporcionada.
-- Latencia y throughput: no disponibles. El autor afirma que las cuantizaciones MTP aceleran la generación de tokens y que el modelo gasta menos tokens de razonamiento, pero no se publican tokens por segundo ni latencias medidas.
-- Almacenamiento: el repositorio completo ocupa 412,2 GB, por lo que conviene descargar únicamente el fichero GGUF de la cuantización elegida.
+- VRAM estimada: en 4 bits, aproximadamente 16-18 GB para los pesos, más overhead de contexto; en 8 bits, en torno a 28-30 GB. Estimación orientativa a partir del número de parámetros, no confirmada por el autor.
+- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones de 4 bits; A100 40/80 GB o H100 para 8 bits y contextos largos.
+- Cabe en GPU de consumo: sí, en 4 bits en tarjetas de 24 GB (RTX 3090/4090) y potencialmente en 16 GB con cuantizaciones más agresivas no detalladas.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el repo está marcado como "endpoints_compatible". Compatibilidad con vLLM o TGI no está confirmada para estas cuantizaciones.
+- Latencia y throughput: no disponibles. El autor afirma que las variantes MTP aceleran la generación de tokens, pero no aporta cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (Solstice-AI, TTURBO Cold Fusion 709) | 26,9 B | No disponible | ARC-C 709 (8 bits) / 701 (4 bits), modo instruct | Apache 2.0 | GGUF en Hugging Face, 0 descargas |
-| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (modelo base) | ~27 B | No disponible | ARC-C 709 según el autor | No disponible en la información proporcionada | Hugging Face |
-| Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised | No disponible | No disponible | ARC-C 735, ARC-E 882; 9/9 frente a Claude Opus 4.6 Max | No disponible en la información proporcionada | GGUF en Hugging Face |
-| Qwen3.6-35B-A3B | 35 B totales (A3B activos, MoE) | No disponible | Inferior a este modelo en los 7 benchmarks citados, según el autor | No disponible en la información proporcionada | No disponible |
-| Qwen 3.6 27B | 27 B | No disponible | Inferior a este modelo en los 7 benchmarks citados, según el autor | No disponible en la información proporcionada | No disponible |
-| Qwen 3.5 27B | 27 B | No disponible | Inferior a este modelo en los 7 benchmarks citados, según el autor | No disponible en la información proporcionada | No disponible |
+| Solstice-AI Qwen3.8-27B-TTURBO (este) | ~26,9B | no disponible | Apache 2.0 | GGUF | Fine-tune uncensored con modos de razonamiento conmutables; ARC-C 709 declarado |
+| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored | ~27B (no confirmado) | no disponible | no disponible | safetensors/GGUF | Modelo base directo de este fine-tune |
+| Qwen 3.8 27B (base de la familia) | ~27B | no disponible | no disponible | no disponible | Referencia del autor; este fine-tune afirma superarlo en 7 benchmarks |
+| Qwen3.6-35B-A3B | 35B totales (MoE, activos no disponibles) | no disponible | no disponible | no disponible | Alternativa de la misma familia citada por el autor |
 
 ## Limitaciones y advertencias
-
-- Modelo abliterated, uncensored y heretic: las capas de rechazo han sido eliminadas o debilitadas deliberadamente. No es apto para aplicaciones orientadas al público sin un filtrado externo robusto.
-- Riesgo elevado de contenido dañino, ofensivo o legalmente problemático en respuestas no filtradas, especialmente en dominios sensibles.
-- Sesgos conocidos: no documentados en la información disponible. Al derivar de la familia Qwen3, hereda los sesgos de sus datos de entrenamiento, que tampoco se detallan.
-- Riesgo de alucinación: no cuantificado. Los ejemplos de la model card son generaciones creativas, un escenario donde la veracidad factual no es el objetivo y por tanto no aporta evidencia sobre el comportamiento factual.
-- Idiomas: solo inglés y chino. No hay soporte declarado de castellano, por lo que el rendimiento en español no está garantizado ni medido.
-- Las cifras de benchmarks son afirmaciones del autor en una escala ARC-C no estándar (709, 701), sin metodología publicada ni verificación independiente. Deben tratarse como marketing hasta que se reproduzcan.
-- El repositorio registra 0 descargas y 0 likes, sin evidencia de uso comunitario ni de validación por terceros.
-- Licencia Apache 2.0 declarada, pero la cadena de modelos base y datasets intermedios (DavidAU) debería verificarse antes de un uso comercial, ya que la información disponible no detalla las licencias de cada eslabón.
-- La pipeline declarada es image-text-to-text, pero la model card no describe el codificador visual ni el formato de entrada de imagen. No se debe asumir capacidad multimodal real sin probarla.
-- Las cuantizaciones MTP requieren soporte específico de runtime; usarlas en herramientas que no lo implementen puede degradar el rendimiento o provocar errores.
-- Tamaño del repositorio (412,2 GB): riesgo operativo de ancho de banda y almacenamiento si se clona completo en lugar de descargar un único fichero.
-- La fecha de publicación y actualización (11 de septiembre de 2026) es muy reciente, sin historial de mantenimiento ni de corrección de errores.
+- Modelo "uncensored"/"abliterated": se ha eliminado total o parcialmente la alineación de seguridad, por lo que puede generar contenido dañino, ofensivo o ilegal sin filtros. Requiere moderación externa en producción.
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad; el ajuste intensivo en ficción y creatividad puede favorecer respuestas plausibles pero falsas.
+- Las cifras de benchmarks (ARC-C 709/701) son declaraciones del autor sin verificación independiente ni detalle metodológico.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado y probablemente sea inferior.
+- Longitud de contexto no documentada; no debe asumirse una ventana larga sin pruebas.
+- Licencia Apache 2.0 permite uso comercial, pero las condiciones de los datasets de entrenamiento (Polar-STRICT, F451-STRICT, THE-DECKARD) no se detallan en la información disponible.
+- El repositorio de 412,2 GB contiene múltiples cuantizaciones; conviene descargar solo el archivo necesario.
+- La model card está incompleta ("long examples to be added") y contiene afirmaciones promocionales no verificables.
+- El pipeline declarado es image-text-to-text, pero no se documenta la torre visual ni su funcionamiento en las cuantizaciones GGUF.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF
+- Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
-- Modelo hermano de la misma familia (ARC-C 735 / ARC-E 882): https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised
-- Ficha de terceros sobre la variante AWQ de la familia: https://aimarketcap.tech/models/solstice-ai-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-awq
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
 - Dataset THE-DECKARD: https://huggingface.co/datasets/DavidAU/THE-DECKARD-Datasets
+- Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
+- llama.cpp (runner GGUF): https://github.com/ggerganov/llama.cpp

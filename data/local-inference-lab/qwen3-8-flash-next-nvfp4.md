@@ -2,85 +2,98 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje multimodal de gran escala desarrollado por el equipo Qwen (Alibaba), construido sobre la nueva arquitectura Qwen4. Se trata de un modelo de mezcla de expertos (MoE) con 125 mil millones de parámetros totales, de los cuales solo 6 mil millones se activan por token, lo que lo hace notablemente eficiente en inferencia. Además, incorpora una tabla de embeddings n-gram de 51 mil millones de parámetros que complementa al modelo principal. Según los datos publicados, supera en capacidades de razonamiento y codificación a modelos propietarios como Claude-4.6-Opus (Max), con un coste de entrenamiento aproximadamente nueve veces inferior al de su predecesor Qwen3.7-Plus.
+Qwen3.8-Flash-Next-NVFP4 es una versión cuantizada en precisión mixta del modelo multimodal Qwen3.8-Flash-Next de Qwen, publicada por el laboratorio independiente local-inference-lab. No se trata de una cuantización convencional de posentrenamiento (PTQ), sino de una destilación consciente de la cuantización (QAD): el estudiante se entrena contra el profesor original en BF16 con pesos ya cuantizados en su paso hacia delante, aprendiendo a compensar el error de cuantización en lugar de sufrirlo. El resultado es un checkpoint de aproximadamente 98 GiB en disco con 92.743.589.779 parámetros que conserva íntegra la arquitectura del modelo base.
 
-La versión alojada en Hugging Face bajo el identificador `local-inference-lab/Qwen3.8-Flash-Next-NVFP4` es una cuantización NVFP4 realizada por el laboratorio local-inference-lab, que reduce el tamaño del modelo para facilitar su despliegue en hardware más modesto. El repositorio contiene 114.5 GB de pesos en formato safetensors, con un total de 92.676.653.971 parámetros registrados (la diferencia con los 125B se debe probablemente a la exclusión de los embeddings n-gram en esta cuantización). La model card del autor está incompleta ("Work in progress"), por lo que muchos detalles técnicos oficiales no están disponibles.
+La arquitectura no se ha reducido: mantiene 48 capas de decoder, 512 expertos enrutados por capa con 10 activos por token, atención híbrida Gated DeltaNet/Qwen Sparse Attention (QSA) y tablas de embeddings n-gram (PLE). La compresión proviene exclusivamente de la menor precisión de los pesos, con una mezcla de NVFP4 (4 bits E2M1 con escalas de bloque FP8 cada 16 elementos) para expertos enrutados y tablas PLE, y MXFP8 (8 bits E4M3 con escalas de bloque en potencias de dos cada 32 elementos) para expertos compartidos y proyecciones de atención.
 
-Este modelo es relevante porque representa uno de los primeros ejemplos de la arquitectura Qwen4 con pesos abiertos, ofreciendo una ventana de contexto de 262K tokens y capacidades multimodales, con un coste de ejecución local relativamente bajo gracias a su diseño MoE y a las cuantizaciones disponibles.
+Su relevancia práctica es notable: está diseñado para ejecutarse en una única GPU RTX 6000 con offload de PLE, o en un DGX Spark con o sin dicho offload, lo que sitúa un modelo multimodal de casi 93.000 millones de parámetros en hardware de estación de trabajo. Según la model card, supera a la cuantización NVFP4 publicada por NVIDIA en las evaluaciones reportadas (AA-LCR, GPQA Diamond, IFBench y Tool Eval).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) sobre arquitectura Qwen4 |
-| Parametros totales | 125B (modelo original) / 92.676.653.971 (pesos safetensors en este repo) |
-| Parametros activos | 6B por token |
-| Longitud de contexto | 262.144 tokens (262K) |
-| Tipos de cuantizacion | NVFP4 (repo actual); existen tambien versiones GGUF dinamicas (Atomic) |
-| Idiomas soportados | no disponible (se espera multilingue, sin confirmacion oficial) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (tambien GGUF en builds de terceros) |
+| Arquitectura | Transformer MoE híbrido Gated DeltaNet/Qwen Sparse Attention (QSA), 48 capas de decoder, 512 expertos enrutados por capa con 10 activos por token, tablas de embeddings n-gram (PLE) |
+| Parametros totales | 92.743.589.779 |
+| Parametros activos | 10 expertos enrutados por token (número total de parámetros activos no disponible) |
+| Longitud de contexto | no disponible (las secuencias de entrenamiento llegan a 8.192 tokens) |
+| Tipos de cuantizacion | NVFP4 (4 bits E2M1, escalas FP8 por bloque de 16 elementos y escala global FP32), MXFP8 (8 bits E4M3, escalas de bloque en potencias de dos cada 32 elementos), BF16 y FP32 en parámetros residuales |
+| Idiomas soportados | no disponible (el corpus de destilación incluye conversaciones multilingües) |
+| Licencia | qwen-community-1.0 (etiquetada como "other") |
+| Formato de pesos | safetensors (layout ModelOpt mixto NVFP4/MXFP8), librería transformers |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-Flash-Next se basa en la arquitectura Qwen4, que introduce un diseño de mezcla de expertos con 6 mil millones de parametros activados por token. El modelo principal de 125B se complementa con una tabla de embeddings n-gram de 51B parametros, que se pagina desde SSD en despliegues locales para reducir los requisitos de memoria. Esta combinacion permite un equilibrio entre capacidad y eficiencia: el coste de entrenamiento es aproximadamente 1/9 del de Qwen3.7-Plus, mientras que las capacidades de codificacion y razonamiento son superiores.
+El modelo conserva la arquitectura del base: un transformer con mezcla de expertos (MoE) de 48 capas, 512 expertos enrutados por capa y 10 activos por token, combinado con atención híbrida Gated DeltaNet/QSA e indexadores de atención dispersa. La cuantización se distribuye de forma granular: los expertos enrutados de texto (proyecciones gate, up y down) y las tablas de embeddings n-gram (PLE) usan NVFP4 con destilación; los expertos compartidos usan MXFP8 con destilación; las proyecciones de atención, incluidos los indexadores QSA, usan MXFP8 congelado; los routers, el mezclado de residuales y las proyecciones/convolución de PLE permanecen en BF16 entrenado; y los embeddings de tokens, la LM head, las normas de atención y los parámetros recurrentes quedan en BF16 congelado. El encoder de visión usa MXFP8 en atención/FC1/merger y NVFP4 en FC2, con el resto en BF16, y el módulo de predicción multi-token (MTP) usa NVFP4 en expertos enrutados.
 
-No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento, el numero total de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO. La arquitectura Qwen4 es nueva y aun no hay documentacion publica exhaustiva; se sabe que soporta multimodalidad (texto, imagen y probablemente audio) y razonamiento avanzado. La cuantizacion NVFP4 del repositorio se ha generado con NVIDIA ModelOpt, lo que sugiere una optimizacion especifica para GPUs NVIDIA con soporte FP4.
+El entrenamiento emplea destilación consciente de la cuantización: el profesor BF16 genera respuestas y proporciona objetivos de probabilidad a nivel de token y de estados ocultos; los pesos NVFP4 y MXFP8 entrenables se cuantizan y reconstruyen en cada paso hacia delante, de modo que los gradientes actualizan los pesos subyacentes para que su representación de baja precisión se aproxime mejor al profesor. La función de pérdida combina coincidencia de probabilidad del siguiente token mediante variación total, coincidencia de estados ocultos y pérdidas específicas para el fin de respuesta y el fin de razonamiento, dirigidas a las decisiones del profesor de continuar, terminar de razonar y detenerse. Se usa el entrenador Quatrain: 2.500 actualizaciones de tronco seguidas de 1.500 actualizaciones de refinamiento conjunto, que también entrenan las tablas PLE y simulan los pesos MXFP8 de expertos compartidos, manteniendo la atención congelada.
+
+El corpus de destilación contiene 200.004.844 tokens de prompt y respuesta en 53.573 documentos, con secuencias de hasta 8.192 tokens, cubriendo código, razonamiento, seguimiento de instrucciones general y conversaciones multilingües; las respuestas provienen exclusivamente del profesor BF16 de Qwen con su plantilla de chat y modo de razonamiento nativos. Las escalas de activación de los expertos enrutados se calibran sobre ese corpus más 104 millones de tokens de texto crudo (usado solo para calibración). En servicio se aplica cuantización estática NVFP4 de activaciones para expertos enrutados de texto y cuantización dinámica MXFP8 para las proyecciones MXFP8; las tablas PLE, los expertos enrutados del MTP y la FC2 de visión usan NVFP4 solo de pesos.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento complejo: el modelo destaca en tareas de logica, matematicas y analisis, superando en benchmarks internos a Claude-4.6-Opus (Max) segun los resultados publicados por Qwen.
-- Codificacion: capacidades superiores a Qwen3.7-Plus en generacion y comprension de codigo, adecuado para tareas de programacion avanzada.
-- Multimodalidad: soporta entrada de imagenes y texto (y posiblemente audio), aunque no se detallan los tipos de tareas visuales especificas.
-- Ventana de contexto larga: 262K tokens, permitiendo procesar documentos extensos o conversaciones de multiples turnos sin perder informacion.
-- Razonamiento multi-paso: disenado para tareas de agente y planificacion, con soporte implicito para tool calling (no confirmado oficialmente en la documentacion disponible).
-- Eficiencia en inferencia: gracias al MoE con 6B activos, el coste por token es bajo en comparacion con modelos densos de tamano similar.
+- Generación de texto conversacional multimodal (pipeline image-text-to-text): acepta imágenes y texto como entrada.
+- Razonamiento con modo de pensamiento nativo (thinking mode), heredado del profesor Qwen y reforzado mediante pérdidas de frontera de fin de razonamiento.
+- Razonamiento científico y de nivel avanzado, evaluado en GPQA Diamond.
+- Seguimiento de instrucciones complejas, evaluado en IFBench.
+- Uso de herramientas y function calling, evaluado en Tool Eval.
+- Razonamiento de contexto largo, evaluado en AA-LCR.
+- Capacidades multilingües en conversación (el corpus de entrenamiento incluye conversaciones multilingües; el listado exacto de idiomas no está disponible).
+- Predicción multi-token (MTP) incluida en el checkpoint, útil para decodificación especulativa.
+- Capacidades de código y matemáticas: el corpus de destilación cubre programación y razonamiento, aunque no se publican resultados específicos de HumanEval o GSM8K.
 
 ## Casos de uso
 
-- Asistente de programacion en produccion: el modelo puede integrarse en IDEs o pipelines de CI/CD para generar codigo, revisar pull requests y sugerir refactorizaciones, aprovechando su superioridad en tareas de coding y su ventana de contexto para analizar repositorios completos.
-- Analisis de documentos legales o academicos extensos: con 262K tokens de contexto, puede procesar contratos, articulos de investigacion o informes anuales completos en una sola pasada, extrayendo clausulas, resumenes o detectando inconsistencias.
-- Agente autonomo de investigacion: su capacidad de razonamiento multi-paso y multimodalidad permite construir agentes que buscan informacion en la web, leen imagenes y generan informes sintetizados, ejecutandose en hardware local con 75GB de RAM unificada.
-- Chatbot de atencion al cliente multilingue: aunque los idiomas no estan confirmados, un modelo de esta escala suele soportar multiples lenguas; su contexto largo permite mantener conversaciones prolongadas con historial completo y memoria de preferencias del usuario.
-- Generacion de contenido multimodal: puede crear descripciones de imagenes, transcribir diagramas o generar documentacion tecnica a partir de capturas de pantalla, combinando vision y lenguaje.
-- Prototipado rapido de aplicaciones con LLM: al poder ejecutarse en una MacBook de 64GB o en GPUs consumer con cuantizacion, es viable para startups y equipos pequenos que necesitan un modelo de alto rendimiento sin depender de APIs propietarias.
+- Asistente conversacional multimodal en estación de trabajo: con un checkpoint de ~98 GiB que cabe en una RTX 6000 con offload de PLE, permite desplegar un asistente que procesa imágenes y texto de forma local, sin depender de APIs externas, manteniendo conversaciones multi-turno con el modo de razonamiento activado.
+- Razonamiento científico asistido: sus resultados en GPQA Diamond (91,41 según la model card) lo hacen adecuado para responder preguntas de nivel posgrado en física, química y biología, con la salvedad de verificar siempre las respuestas.
+- Automatización de agentes con herramientas: el resultado de 95 en Tool Eval indica que puede integrarse en pipelines de agentes que invocan APIs, consultan bases de datos o ejecutan comandos, encadenando varios pasos de razonamiento.
+- Análisis de documentos con contexto largo: su rendimiento en AA-LCR (79,4) sugiere capacidad para tareas de razonamiento sobre contextos extensos, como resumir informes técnicos o extraer conclusiones de transcripciones largas.
+- Procesamiento de documentación técnica con imágenes: al ser image-text-to-text, puede extraer información de diagramas, capturas de pantalla y figuras dentro de manuales, combinándola con el texto circundante.
+- Despliegue en hardware compacto tipo DGX Spark: para laboratorios que necesitan un modelo de casi 93.000 millones de parámetros en un equipo de sobremesa, con o sin offload de PLE, como servidor de inferencia interno para experimentación.
+- Generación de código en flujos de desarrollo: el corpus incluye programación y el modelo soporta tool calling, por lo que puede integrarse en asistentes de IDE o pipelines de revisión, aunque no hay benchmarks específicos de código publicados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La unica referencia es la afirmacion de Qwen de que Qwen3.8-Flash-Next supera a Claude-4.6-Opus (Max) en capacidades generales, pero no se proporcionan cifras concretas. Se recomienda consultar el repositorio oficial de Qwen en GitHub para futuras actualizaciones de benchmarks.
+| Modelo | AA-LCR | GPQA Diamond | IFBench | Tool Eval |
+| --- | ---: | ---: | ---: | ---: |
+| NVIDIA NVFP4 | 74,1 | 91,5 | 81,0 | — |
+| local-inference-lab QAD | 79,4 | 91,41 | 82,31 | 95 |
+
+Los datos provienen de la model card del autor. No se han publicado en la información disponible resultados de MMLU, HumanEval ni GSM8K.
 
 ## Requisitos de hardware
 
-- Ejecucion local sin GPU: segun unsloth.ai, el modelo puede ejecutarse en dispositivos con 75GB de RAM/unified memory, sin necesidad de VRAM, paginando la tabla n-gram desde SSD.
-- MacBook con 64GB de RAM unificada: es el requisito minimo documentado para ejecutar la version GGUF dinamica de Atomic Chat.
-- GPU con soporte FP4: la version NVFP4 de este repositorio esta optimizada con NVIDIA ModelOpt, por lo que se recomienda una GPU NVIDIA reciente (RTX 40xx o superior, o data center como A100/H100) para aprovechar la cuantizacion.
-- VRAM estimada: no disponible con exactitud; el repo pesa 114.5 GB en safetensors, pero la cuantizacion NVFP4 reduce el uso de memoria en comparacion con FP16. Para la version completa, se estima que se necesitan al menos 60-70GB de VRAM en precision reducida, aunque no hay datos oficiales.
-- Opciones de despliegue: llama.cpp (con builds GGUF de Atomic), vLLM (si se adapta a la arquitectura Qwen4), TGI, y herramientas como Ollama (si se publica un GGUF compatible).
-- Latencia y throughput: no disponibles. Dado que solo se activan 6B parametros por token, se espera una latencia significativamente menor que un modelo denso de 125B, pero no hay mediciones publicas.
+- Tamaño en disco del checkpoint: aproximadamente 98 GiB (el repositorio de Hugging Face ocupa 335,2 GB, incluyendo otros artefactos).
+- VRAM estimada para inferencia: no disponible de forma explícita; la model card advierte que el tamaño en disco no es una estimación de memoria en tiempo de ejecución, ya que la caché KV y los buffers adicionales requieren memoria extra.
+- GPU recomendadas según el autor: una única RTX 6000 con offload de PLE, o un DGX Spark con o sin offload de PLE.
+- Cabe en GPU de consumo: no hay confirmación para GPUs consumer convencionales; el hardware objetivo declarado es de gama profesional (RTX 6000) o sistemas integrados (DGX Spark).
+- Opciones de despliegue: se requiere un runtime que soporte Qwen3.8-Flash-Next y el layout mixto NVFP4/MXFP8 de ModelOpt, incluidas las tablas PLE en NVFP4; la librería declarada es transformers. No se especifican vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next | 125B + 51B n-gram | 6B | 262K | no disponible | Arquitectura Qwen4, multimodal, supera a Claude-4.6-Opus |
-| Qwen3.7-Plus | no disponible | no disponible | no disponible | no disponible | Predecesor, coste de entrenamiento 9x mayor, inferior en coding |
-| Claude-4.6-Opus (Max) | no disponible (propietario) | - | no disponible | propietaria | Modelo cerrado, superado por Qwen3.8-Flash-Next segun Qwen |
-
-No se dispone de datos suficientes para comparar con otros modelos open source de tamano similar (como DeepSeek-V3 o Mixtral) en terminos de rendimiento, ya que no hay benchmarks publicados. La comparativa se limita a las menciones encontradas en la busqueda web.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| --- | --- | --- | --- | --- | --- |
+| local-inference-lab Qwen3.8-Flash-Next-NVFP4 (QAD) | 92.743.589.779 | no disponible | qwen-community-1.0 | safetensors NVFP4/MXFP8 | Destilación consciente de cuantización; AA-LCR 79,4, GPQA 91,41, IFBench 82,31, Tool Eval 95 |
+| NVIDIA Qwen3.8-Flash-Next-NVFP4 | no disponible en la información | no disponible | no disponible | NVFP4 | Cuantización NVFP4 de referencia; AA-LCR 74,1, GPQA 91,5, IFBench 81,0 |
+| Qwen/Qwen3.8-Flash-Next (base BF16) | no disponible en la información | no disponible | qwen-community-1.0 | safetensors BF16 | Profesor original; sin benchmarks publicados en la información disponible |
 
 ## Limitaciones y advertencias
 
-- Model card incompleta: el autor del repo en Hugging Face no ha publicado instrucciones de uso ni detalles tecnicos, lo que dificulta la reproducibilidad y el despliegue correcto.
-- Licencia no disponible: no se puede confirmar si el modelo permite uso comercial, modificacion o redistribucion. Es imprescindible contactar con el autor o esperar a que se publique la licencia antes de usarlo en produccion.
-- Sesgos y alucinaciones: no hay documentacion sobre sesgos entrenados ni evaluaciones de robustez. Como todo LLM, existe riesgo de alucinacion, especialmente en tareas de razonamiento complejo o con datos poco frecuentes.
-- Idiomas no confirmados: aunque probablemente sea multilingue, no se ha especificado la lista de idiomas soportados, lo que puede afectar a despliegues internacionales.
-- Requisitos de hardware elevados: incluso con cuantizacion, el modelo necesita al menos 64-75GB de memoria, lo que excluye a la mayoria de GPUs consumer (RTX 4090 tiene 24GB). Solo es viable en estaciones de trabajo con multiples GPUs o Macs con memoria unificada grande.
-- Arquitectura nueva y poco documentada: Qwen4 es reciente y el soporte en frameworks como vLLM o TGI puede ser limitado o inestable. Se recomienda verificar la compatibilidad antes de adoptarlo.
+- Riesgo de alucinación inherente a los modelos de lenguaje; los benchmarks de razonamiento no eliminan este riesgo en producción.
+- La cuantización NVFP4 de 4 bits en expertos enrutados y tablas PLE introduce error numérico; la destilación lo mitiga, pero no lo elimina, y puede afectar a tareas de precisión numérica o generación de código muy sensible.
+- El encoder de visión y el módulo MTP no participaron en la destilación de texto: conservan los pesos cuantizados sin entrenamiento compensatorio, por lo que su calidad relativa al profesor BF16 no está garantizada.
+- El listado de idiomas soportados no está disponible; aunque el corpus incluye conversaciones multilingües, no se especifica cobertura ni calidad por idioma.
+- La longitud de contexto máxima no se declara en la información disponible; las secuencias de entrenamiento se limitan a 8.192 tokens.
+- La licencia qwen-community-1.0 ("other") impone condiciones específicas para uso comercial; es necesario revisar el texto completo de la licencia del modelo base antes de desplegarlo en producción.
+- Requiere un runtime con soporte específico para el layout ModelOpt mixto NVFP4/MXFP8 y para las tablas PLE en NVFP4; no funcionará en herramientas de inferencia genéricas sin ese soporte.
+- El tamaño en disco (~98 GiB) no incluye caché KV ni buffers; el dimensionado de memoria debe calcularse aparte.
+- Los resultados de benchmarks publicados por el autor no han sido verificados de forma independiente en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
-- Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Guia de ejecucion local (unsloth.ai): https://unsloth.ai/docs/models/qwen3.8-next
-- Guia de ejecucion con GGUF (atomic.chat): https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally
-- Repo relacionado (version 4p89): https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-4p89
+- Hugging Face: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/LICENSE
+- Cuantización NVFP4 de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4#evaluation
+- Repositorio de despliegue en DGX Spark: https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark
+- Pull request con resultados de evaluación: https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark/pull/61

@@ -2,115 +2,103 @@
 
 ## Resumen
 
-pointmlp-base.scanobjectnn-hardest.xu-ma es un modelo de clasificación de nubes de puntos 3D publicado en Hugging Face por el usuario torch-pointcloud. Se trata de la conversión a safetensors del PointMLP base entrenado sobre la variante más exigente del dataset ScanObjectNN (PB_T50_RS), a partir del checkpoint original del repositorio ma-xu/pointMLP-pytorch. El modelo tiene 13.268.303 parámetros (13,2 M), 3 canales de entrada, 15 clases de salida y una cabeza de características de 1024 dimensiones, con un repositorio de apenas 0,1 GB y licencia apache-2.0.
+PointMLP-base es un modelo de clasificación de nubes de puntos 3D basado en una arquitectura de perceptrón multicapa residual (residual MLP) con agrupación geométrica afín. Lo desarrollan Xu Ma, Can Qin, Haoxuan You, Haoxi Ran y Yun Fu, y esta ficha corresponde a una conversión del repositorio original `ma-xu/pointMLP-pytorch` al formato de la librería `torch-pointcloud`, publicada por el usuario `torch-pointcloud`. El modelo resuelve la tarea de clasificación de objetos 3D a partir de nubes de puntos sin estructura de rejilla, un problema central en visión por computador 3D, robótica y conducción autónoma.
 
-La arquitectura PointMLP, presentada en el artículo "Rethinking Network Design and Local Geometry in Point Cloud: A Simple Residual MLP Framework" (ICLR 2022), demuestra que una red residual de perceptrones multicapa con agrupación afín geométrica puede competir con arquitecturas de convolución y de atención en clasificación de nubes de puntos, con un coste computacional menor. Frente a transformers de puntos, el modelo evita mecanismos de atención y operaciones de vecindad costosas, lo que simplifica su despliegue y su integración en pipelines de inferencia en tiempo real.
+La relevancia de este checkpoint concreto radica en que está entrenado sobre la variante más difícil de ScanObjectNN (PB_T50_RS), un dataset de objetos 3D escaneados del mundo real con oclusiones, ruido y perturbaciones, lo que lo convierte en una referencia práctica para evaluar modelos de clasificación de nubes de puntos en condiciones realistas. Con 13,2 millones de parámetros y 15 clases de salida, es un modelo compacto que puede ejecutarse en GPU de consumo.
 
-Su relevancia práctica es doble: por un lado, sirve como línea base reproducible y ligera para tareas de reconocimiento de objetos 3D sobre escaneos reales; por otro, su integración en la librería torch-pointcloud permite cargarlo con una sola llamada y reutilizarlo como extractor de características de 1024 dimensiones para transfer learning, recuperación o preanotación de datasets.
+El modelo no es un modelo de lenguaje: no genera texto, no soporta tool calling ni razonamiento multi-paso. Es un extractor de características y clasificador geométrico que produce logits sobre 15 categorías o embeddings de 1024 dimensiones para tareas downstream.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | PointMLP: red residual de MLP con agrupación afín geométrica (sin convoluciones ni atención) |
-| Parametros totales | 13.268.303 (13,2 M) |
-| Parametros activos | no aplica (no es un modelo de mezcla de expertos) |
-| Longitud de contexto | no aplica; la entrada es una nube de puntos. El ejemplo de uso emplea 8192 puntos con coordenadas (3 canales) y normales |
-| Tipos de cuantizacion | no disponible (el repositorio solo publica pesos en safetensors; no se documentan variantes GGUF, GPTQ, AWQ ni int8) |
-| Idiomas soportados | no aplica (modelo de visión 3D; no procesa texto) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (PyTorch, librería torch-pointcloud) |
-| Canales de entrada | 3 (coordenadas xyz; el ejemplo de uso añade normales) |
+| Arquitectura | PointMLP (residual MLP con geometric affine grouping) |
+| Parámetros totales | 13.268.303 (13,2 M) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (no es modelo de lenguaje); entrada de 8192 puntos en el ejemplo de uso |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no aplica (modelo de visión 3D, sin capacidades lingüísticas) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors |
+| Canales de entrada | 3 |
 | Clases de salida | 15 |
-| Dimension de caracteristicas | 1024 |
-| Dataset de entrenamiento | ScanObjectNN, variante PB_T50_RS |
-| Tarea | point-cloud-classification |
-| Tamano del repositorio | 0,1 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion / actualizacion | 2026-08-28 / 2026-09-23 |
+| Dimensión de features | 1024 |
+| Dataset de entrenamiento | ScanObjectNN (PB_T50_RS) |
+| Tarea | Clasificación de nubes de puntos |
 
 ## Arquitectura y entrenamiento
 
-PointMLP es una red jerárquica compuesta por etapas de muestreo y agrupación seguidas de bloques residuales de MLP. Su componente distintivo es el módulo de agrupación afín geométrica (geometric affine grouping), que normaliza localmente las coordenadas de cada vecindario antes de aplicar el MLP, de modo que la red se vuelve invariante a transformaciones locales sin necesidad de operaciones de atención ni de convoluciones sobre la nube. El modelo base descrito aquí produce una representación global de 1024 dimensiones que alimenta una cabeza lineal de clasificación sobre 15 clases. La model card no detalla el número de etapas, los canales internos por etapa ni el esquema de muestreo de puntos, por lo que esos datos figuran como no disponibles.
+PointMLP propone un diseño deliberadamente simple: elimina operadores complejos de convolución sobre puntos y apuesta por un framework de MLP residual. El bloque central es un *geometric affine module* que normaliza y transforma localmente las coordenadas de cada vecindario antes de aplicar capas MLP, seguido de agrupación y conexiones residuales que permiten apilar múltiples etapas sin degradación del gradiente. La entrada son coordenadas 3D (canal 3) y, opcionalmente, normales; la salida final es un vector de 1024 características que alimenta un clasificador lineal de 15 clases.
 
-El entrenamiento se realizó sobre ScanObjectNN en su variante PB_T50_RS, la más difícil del benchmark: objetos escaneados del mundo real con perturbaciones y oclusiones, en lugar de mallas sintéticas limpias. La información proporcionada no incluye el número de épocas, el optimizador, el tamaño de lote, el esquema de aumento de datos ni el número total de puntos vistos durante el entrenamiento. No se aplicaron técnicas de alineamiento por preferencias (RLHF o DPO), ya que no es un modelo generativo de lenguaje. Los pesos son una conversión directa del repositorio ma-xu/pointMLP-pytorch, también bajo licencia Apache-2.0.
+El entrenamiento se realiza sobre ScanObjectNN en su variante PB_T50_RS, que introduce perturbaciones y oclusiones sobre escaneos reales, lo que exige al modelo robustez geométrica. La model card no detalla el número de tokens ni la composición exacta del dataset, ni si hubo técnicas de aumento adicionales más allá de las del benchmark. La innovación destacable es la simplicidad estructural: al prescindir de operadores de vecindad costosos, el modelo reduce la complejidad computacional manteniendo precisión competitiva en clasificación de nubes de puntos.
 
 ## Capacidades
 
-- Clasificación de nubes de puntos 3D en 15 clases de objetos escaneados del mundo real.
-- Extracción de características: `forward_features` devuelve embeddings de 1024 dimensiones por muestra, reutilizables como entrada de clasificadores lineales, cabezas de detección o sistemas de recuperación.
-- Reemplazo de la cabeza de clasificación mediante `reset_classifier(num_classes=N)`, lo que permite ajuste fino sobre dominios y taxonomías propias.
-- Procesamiento de nubes con coordenadas y, opcionalmente, normales, con transformación y colación de datos incluidas en la librería.
-- Inferencia en CPU o GPU mediante PyTorch estándar.
-- No soporta tool calling ni function calling: no es un modelo de lenguaje.
-- No soporta agentes ni razonamiento multi-paso.
-- No tiene capacidades multilingües, de visión 2D, de audio ni modo de razonamiento explícito.
+- Clasificación de nubes de puntos 3D en 15 categorías de objetos (tarea `point-cloud-classification`).
+- Extracción de embeddings de 1024 dimensiones mediante `forward_features` o `reset_classifier(num_classes=0)`, útiles para transfer learning, recuperación o clustering.
+- Procesamiento de nubes de puntos sin estructura de rejilla, con coordenadas y normales como entradas.
+- Robustez ante oclusiones y perturbaciones, al estar entrenado sobre la variante más difícil de ScanObjectNN.
+- Integración con la librería `torch-pointcloud` mediante `tp.create_model(..., pretrained=True)`.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
+- No tiene capacidades multilingües ni modo de pensamiento (*thinking mode*).
+- No procesa imágenes, audio ni vídeo de forma nativa.
 
 ## Casos de uso
 
-- Etiquetado automático de escenas 3D: dado un escaneo de interiores segmentado en instancias, el modelo asigna una de las 15 clases a cada objeto, lo que permite generar anotaciones preliminares sobre grandes volúmenes de capturas sin intervención manual.
-- Inspección de calidad industrial: en una línea con escáner 3D, el modelo clasifica piezas o componentes a partir de su nube de puntos para verificar que el objeto detectado corresponde a la referencia esperada antes de pasar a metrología dimensional.
-- Percepción en robótica de manipulación: un brazo robótico puede reconocer la categoría del objeto que tiene delante (silla, caja, papelera, etc.) y seleccionar una estrategia de agarre adecuada, con la ventaja de que 13,2 M de parámetros permiten ejecutar el modelo en el propio controlador o en una GPU embebida.
-- Preanotación y curaduría de datasets 3D: el modelo actúa como etiquetador débil dentro de un bucle de aprendizaje activo, de forma que solo las muestras con baja confianza se envían a revisión humana.
-- Recuperación de objetos 3D por similitud: usando los embeddings de 1024 dimensiones, se puede construir un índice vectorial para buscar formas similares en catálogos de escaneos, útil en comercio electrónico o en gestión de inventario de piezas.
-- Transfer learning a dominios específicos: con `reset_classifier` y un conjunto reducido de ejemplos etiquetados, el modelo se reajusta para taxonomías propias (por ejemplo, tipos de componentes en un almacén) partiendo de una representación ya entrenada sobre escaneos reales.
-- Digitalización de interiores y gemelos digitales: clasificar el mobiliario de un escaneo de edificio para poblar automáticamente el inventario de un modelo BIM o de un gemelo digital.
-- Filtrado previo en pipelines de reconstrucción: descartar o agrupar objetos irrelevantes antes de etapas más costosas de registro, mallado o segmentación semántica.
+- Clasificación de objetos en robótica de manipulación: el modelo recibe la nube de puntos de una cámara de profundidad y predice la categoría del objeto para seleccionar la pinza o la estrategia de agarre; sus 13,2 M de parámetros permiten inferencia en tiempo real en GPU embebida.
+- Etiquetado automático de escaneos 3D en pipelines de anotación: se usa como preetiquetador sobre nubes de puntos de LiDAR o fotogrametría, reduciendo el coste de anotación manual en datasets de objetos.
+- Extracción de características para búsqueda y recuperación 3D: los embeddings de 1024 dimensiones sirven como descriptor geométrico para indexar modelos CAD o escaneos y recuperar objetos similares por vecindad en el espacio de features.
+- Preentrenamiento para tareas downstream de segmentación o detección: el backbone PointMLP se reutiliza con `reset_classifier(num_classes=0)` y se añaden cabezas específicas, aprovechando las features geométricas aprendidas en ScanObjectNN.
+- Control de calidad en fabricación aditiva: clasificación de piezas escaneadas para detectar categorías incorrectas o piezas fuera de especificación comparando la predicción con la etiqueta esperada.
+- Investigación en visión 3D: línea base reproducible para comparar arquitecturas de clasificación de nubes de puntos sobre el split más difícil de ScanObjectNN, con métricas OA y mAcc declaradas.
+- Clasificación de objetos en conducción autónoma o escaneo urbano: identificación de categorías de objetos a partir de nubes de puntos LiDAR, siempre que las 15 clases del dataset cubran las categorías de interés.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model-index de la model card (no verificados de forma independiente):
+Resultados declarados por el autor en la model card (no verificados, `verified: false`):
 
 | Dataset | Tarea | Métrica | Valor |
 |---|---|---|---|
-| ScanObjectNN (PB_T50_RS) | Clasificación de nubes de puntos | OA (overall accuracy) | 85,81 |
-| ScanObjectNN (PB_T50_RS) | Clasificación de nubes de puntos | mAcc (mean accuracy) | 84,29 |
+| ScanObjectNN (PB_T50_RS) | point-cloud-classification | OA (accuracy) | 85,81 |
+| ScanObjectNN (PB_T50_RS) | point-cloud-classification | mAcc (accuracy) | 84,29 |
 
-La propia model card indica un valor de referencia de 86,1 para esta configuración, por lo que la conversión publicada se sitúa ligeramente por debajo del resultado de referencia del artículo. No se han publicado en la información disponible resultados de benchmarks adicionales (ModelNet40, ShapeNet ni otros) para este checkpoint concreto.
+No se han publicado otros resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaño de los pesos: 13.268.303 parámetros, aproximadamente 53 MB en fp32 y 26,5 MB en fp16 (cálculo aritmético a partir del recuento de parámetros, no una cifra publicada por el autor).
-- VRAM para inferencia: no disponible. El consumo está dominado por las activaciones, que dependen del número de puntos por muestra y del tamaño de lote; la model card no publica mediciones.
-- GPU recomendadas: no disponible en la información proporcionada. Dado el reducido tamaño del modelo, cualquier GPU con soporte CUDA y memoria suficiente para las activaciones debería ser apta, pero no hay cifras oficiales que lo confirmen.
-- Ejecución en GPU de consumo: previsiblemente viable por tamaño de pesos, si bien no se documenta el consumo real de memoria ni la latencia en tarjetas como la RTX 4090 o inferiores.
-- Ejecución en CPU: posible, al ser un modelo PyTorch estándar; no se publican tiempos.
-- Opciones de despliegue: PyTorch con la librería torch-pointcloud (`pip install torch-pointcloud`), que expone `create_model`, transformación de muestras y colación. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas para modelos de lenguaje. La exportación a ONNX, TensorRT u otros formatos no está documentada y no se declara un pipeline de Hugging Face asociado.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: el checkpoint ocupa aproximadamente 0,1 GB en safetensors (13,2 M de parámetros en fp32), por lo que la inferencia requiere menos de 1 GB de VRAM, incluyendo activaciones para lotes pequeños.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funcionan RTX 3050, RTX 4060, RTX 4090, A100 y H100. Para lotes grandes de nubes de 8192 puntos conviene una GPU con 8 GB o más.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650 en adelante) e incluso en CPU para inferencia puntual.
+- Opciones de despliegue: PyTorch nativo con la librería `torch-pointcloud`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-PointMLP pertenece a la familia de clasificadores de nubes de puntos de tipo jerárquico, junto a PointNet++, DGCNN, Point Transformer, CurveNet o PointNeXt. La información proporcionada solo contiene datos de este checkpoint, por lo que la comparación cuantitativa no puede completarse sin consultar el artículo original.
-
-| Modelo | Categoria | Parametros | Dataset de referencia | Licencia | Disponibilidad en el repositorio analizado |
+| Modelo | Parámetros | Contexto / entrada | OA en ScanObjectNN PB_T50_RS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointmlp-base.scanobjectnn-hardest.xu-ma | MLP residual + agrupación afín | 13,2 M | ScanObjectNN PB_T50_RS | apache-2.0 | pesos safetensors en Hugging Face, librería torch-pointcloud |
-| PointNet++ | Jerárquico con operaciones de vecindad | no disponible | no disponible | no disponible | no disponible |
-| DGCNN | Grafo dinámico + convolución de aristas | no disponible | no disponible | no disponible | no disponible |
-| Point Transformer | Atención sobre vecindarios | no disponible | no disponible | no disponible | no disponible |
+| PointMLP-base (este checkpoint) | 13,2 M | 8192 puntos (ejemplo) | 85,81 | Apache-2.0 | Hugging Face, torch-pointcloud |
+| PointNet++ | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
+| Point Transformer | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
+| DGCNN | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
-El artículo arXiv:2202.07123 incluye la comparación oficial de PointMLP con estas arquitecturas sobre ScanObjectNN y ModelNet40; esas cifras no forman parte de la información proporcionada y, por tanto, no se reproducen aquí.
+No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Ámbito de clases restringido: el modelo solo distingue las 15 categorías de ScanObjectNN. Cualquier objeto fuera de esa taxonomía se asignará a una de las clases existentes.
-- Métricas no verificadas: los valores de OA y mAcc de la model card figuran marcados como `verified: false` y proceden del propio autor.
-- Sin validación de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia externa de reproducibilidad del resultado declarado.
-- Ausencia de información sobre sesgos: no se documenta la composición demográfica, geográfica ni de captura del dataset, ni se analizan sesgos de clase. ScanObjectNN contiene objetos escaneados en entornos concretos, lo que puede introducir desviaciones respecto a otros dominios de captura.
-- Rendimiento fuera de distribución desconocido: no se publican evaluaciones con sensores, densidades de puntos, ruidos u oclusiones distintos de los de la variante PB_T50_RS.
-- Riesgo de alucinación no aplicable en el sentido generativo, pero sí existe riesgo de clasificación errónea con alta confianza en objetos ambiguos o parcialmente ocluidos, especialmente en clases visualmente próximas.
-- Dependencia de la librería: el modelo se carga con `torch-pointcloud` y no declara un pipeline estándar de Hugging Face, por lo que no es directamente compatible con `transformers` ni con servidores de inferencia para modelos de lenguaje.
-- Limitación de idioma: no procesa texto ni entrada multimodal lingüística; no puede usarse para tareas de lenguaje.
-- Licencia: apache-2.0 permite uso comercial y modificación, siempre que se conserve el aviso de copyright y la atribución correspondiente; el código original del que procede la conversión también es Apache-2.0. No se imponen restricciones adicionales conocidas, pero conviene conservar la cita del artículo y de los repositorios de origen.
-- Sin datos de entrenamiento reproducibles: la información disponible no detalla hiperparámetros, aumentos de datos ni semillas, lo que dificulta reproducir el resultado desde cero.
+- Modelo especializado en clasificación de nubes de puntos: no genera texto ni mantiene conversaciones; usarlo fuera de su tarea produce resultados sin sentido.
+- Las métricas declaradas (OA 85,81, mAcc 84,29) están marcadas como no verificadas en la model-index; conviene reproducirlas antes de usarlas como referencia en producción.
+- El modelo está entrenado en ScanObjectNN con 15 clases concretas; su rendimiento fuera de esa distribución (otros sensores, densidades, escalas o categorías) no está garantizado.
+- Riesgo de degradación ante nubes de puntos con densidades muy distintas a las del entrenamiento o sin normales, ya que la entrada espera canales de posición y normales.
+- No se documentan sesgos específicos del dataset ni evaluaciones de equidad; al ser un modelo geométrico, los sesgos provendrían de la distribución de objetos escaneados en ScanObjectNN.
+- Licencia Apache-2.0: permite uso comercial y modificación, pero exige conservar el aviso de licencia y la atribución correspondiente; el modelo original de `ma-xu/pointMLP-pytorch` también es Apache-2.0.
+- No hay información sobre cuantización ni despliegue en entornos de bajos recursos más allá de PyTorch.
+- La fecha de creación del repositorio (2026-08-28) y la referencia a la librería `torch-pointcloud` indican que se trata de una conversión reciente; la compatibilidad con versiones futuras de la librería no está garantizada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointmlp-base.scanobjectnn-hardest.xu-ma
-- Articulo de PointMLP (ICLR 2022): https://arxiv.org/abs/2202.07123
-- Repositorio original de PointMLP: https://github.com/ma-xu/pointMLP-pytorch
-- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- DOI de la libreria (Zenodo): https://doi.org/10.5281/zenodo.22159632
-- Dataset ScanObjectNN: Uy, Pham, Hua, Nguyen y Yeung, "Revisiting Point Cloud Classification: A New Benchmark Dataset and Classification Model on Real-World Data", ICCV 2019 (sin URL incluida en la informacion proporcionada)
-
-Nota: los resultados de busqueda web disponibles durante la elaboracion de esta ficha (pytorch.org, pypi.org/project/torch y paginas de descarga del navegador Torch) no aportan informacion adicional relevante sobre este modelo.
+- Paper PointMLP (arXiv 2202.07123): https://arxiv.org/abs/2202.07123
+- Repositorio original PointMLP: https://github.com/ma-xu/pointMLP-pytorch
+- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- DOI de PyTorch PointCloud: https://doi.org/10.5281/zenodo.22159632
+- Dataset ScanObjectNN (paper ICCV 2019): no disponible enlace directo en la información proporcionada

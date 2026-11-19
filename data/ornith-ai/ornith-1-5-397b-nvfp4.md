@@ -2,93 +2,102 @@
 
 ## Resumen
 
-Ornith-1.5-397B es un modelo de lenguaje de gran escala desarrollado por ornith-ai, presentado como el buque insignia de la familia Ornith-1.5. Se trata de un modelo de arquitectura mixture-of-experts (MoE) construido sobre las bases de Qwen3.5 y Gemma4, con capacidades multimodales (imagen y texto) y orientado principalmente a tareas de agente y codificacion. Su principal innovacion es un bucle de auto-mejora de extremo a extremo: el propio modelo genera nuevas tareas de entrenamiento, construye los andamiajes (scaffolds) necesarios para resolverlas y produce los rollouts de soluciones que se utilizan para el aprendizaje por refuerzo, en lugar de depender de tareas fijas curadas por humanos.
+Ornith-1.5-397B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por ornith-ai, presentado como el miembro insignia de la familia Ornith-1.5. La versión documentada en esta ficha es la cuantización NVFP4 de 8 bits (etiqueta `modelopt`, `8-bit`), publicada en Hugging Face bajo el identificador `ornith-ai/Ornith-1.5-397B-NVFP4`. El modelo se construye sobre Ornith-1.0, que a su vez parte de Qwen3.5 y Gemma4 con preentrenamiento continuado, mid-training y post-entrenamiento adicionales.
 
-El modelo se distribuye en varias cuantizaciones, siendo esta version concreta la NVFP4 (flotante de 4 bits), que reduce el peso del repositorio a 238 GB frente a los aproximadamente 800 GB de la version en bf16. Segun los datos publicados por el autor, alcanza una puntuacion de 86.1 en Terminal-Bench 2.1 y 56.0 en DeepSWE, situandose a la par con Claude Opus 4.8 y superando a otros modelos abiertos de escala similar como GLM-5.2 o DeepSeek-V4-Flash-0731. Su licencia MIT permite uso comercial sin restricciones, lo que lo convierte en una opcion atractiva para equipos que necesitan un modelo de agente de alto rendimiento con despliegue propio.
+La propuesta central de Ornith-1.5 es un bucle de auto-mejora de extremo a extremo: en lugar de depender de un conjunto fijo de tareas curadas por humanos y de arneses diseñados manualmente, el sistema genera continuamente nuevas tareas de entrenamiento, descubre estrategias efectivas para resolverlas y mejora la política mediante aprendizaje por refuerzo. Este enfoque se orienta a capacidades agénticas y de ingeniería de software, terreno en el que el modelo declara resultados competitivos con Claude Opus 4.8 en Terminal-Bench 2.1 y DeepSWE.
+
+El modelo soporta entrada image-text-to-text (según los tags del repositorio) y generación de texto conversacional, con licencia MIT. El repositorio ocupa 557,5 GB y acumula más de 524.000 descargas, lo que indica una adopción significativa pese a su reciente publicación (agosto de 2026, actualizado en octubre de 2026).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts (MoE) basada en Qwen3.5 y Gemma4, multimodal (imagen-texto) |
-| Parametros totales | 397B (segun el autor); 203.528.832.496 parametros en safetensors |
+| Arquitectura | Transformer MoE (tag `qwen3_5_moe`), multimodal image-text-to-text |
+| Parametros totales | 202.642.785.776 (~202,6B según safetensors); la model card denomina al modelo "397B" |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (4-bit, esta version), FP8, INT4 (variantes publicadas) |
+| Tipos de cuantizacion | NVFP4 (8 bits, `modelopt`); el repositorio base ofrece pesos completos |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-Ornith-1.5-397B es un modelo MoE con aproximadamente 397.000 millones de parametros totales, aunque el archivo safetensors de esta version NVFP4 contiene 203.5 mil millones de parametros, lo que sugiere que una parte significativa corresponde a parametros compartidos o no activos. La arquitectura hereda el diseño de Qwen3.5 y Gemma4, e incorpora un encoder visual para procesar imagenes, como indican las etiquetas `image-text-to-text` y `qwen3_5_moe`. El modelo esta entrenado para generacion de texto conversacional y tareas de agente.
+La arquitectura es un transformer con mezcla de expertos (MoE), etiquetado en el repositorio como `qwen3_5_moe`, lo que sugiere una base derivada de Qwen3.5. El modelo es multimodal: acepta entradas de imagen y texto (`image-text-to-text`). La model card describe la evolución desde Ornith-1.0, desarrollado sobre Qwen3.5 y Gemma4 mediante preentrenamiento continuado, mid-training y post-entrenamiento.
 
-El proceso de entrenamiento es la principal novedad. Ornith-1.5 extiende el marco de auto-andamiaje de Ornith-1.0 hacia un bucle completo de auto-mejora: el modelo propone nuevas tareas, genera los scaffolds especificos para cada tarea y produce los rollouts de soluciones que alimentan el aprendizaje por refuerzo. Este ciclo continuo permite que el modelo cree sus propias experiencias de aprendizaje sin depender de conjuntos de datos fijos. No se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO; la informacion disponible se limita a la descripcion conceptual del proceso.
+La innovación metodológica declarada es la ampliación del bucle de auto-mejora: Ornith-1.5 optimiza conjuntamente la generación de tareas, la construcción de arneses (scaffolds) y los rollouts de soluciones, en lugar de limitarse a la optimización de arneses y rollouts sobre tareas fijas. El modelo genera nuevas tareas de entrenamiento, descubre estrategias de resolución y mejora la política mediante aprendizaje por refuerzo. La model card remite al blog del autor para detalles sobre el diseño de tareas, arneses y recompensas de rollout. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO más allá del bucle de RL descrito.
+
+Nota importante: existe una discrepancia entre el nombre comercial ("397B"), el recuento de parámetros de safetensors (~202,6B) y el tamaño del repositorio (557,5 GB). No se dispone de información que permita reconciliar estas cifras; podría tratarse de un recuento parcial, de parámetros activos o de una denominación de familia. Se recomienda verificar antes de dimensionar infraestructura.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multimodal: procesa entradas de imagen y texto, y genera respuestas de texto.
-- Razonamiento y resolucion de problemas complejos, especialmente en entornos de terminal y tareas de ingenieria de software.
-- Codificacion avanzada: capaz de manejar tareas de SWE-bench, incluyendo reparacion de bugs, implementacion de features y refactorizacion.
-- Uso de herramientas y llamada a funciones (tool calling), integrable en pipelines de agentes.
-- Ejecucion de tareas de agente multi-paso: navegacion por terminal, ejecucion de comandos, lectura de archivos y planificacion de acciones.
-- Auto-mejora: el modelo puede generar sus propias tareas y scaffolds, lo que lo hace util para entornos de investigacion en aprendizaje por refuerzo.
+- Generación de texto conversacional multi-turno.
+- Razonamiento agéntico orientado a terminal y línea de comandos (Terminal-Bench 2.1).
+- Ingeniería de software: resolución de issues y parches sobre repositorios reales (SWE-bench Verified, SWE-bench Pro, DeepSWE).
+- Entrada multimodal de imagen y texto (según tags del repositorio); el alcance exacto de las capacidades de visión no está detallado en la información disponible.
+- Uso en arneses agénticos tipo Claude Code y Terminus-2, según los benchmarks reportados.
+- Soporte de tool calling / function calling: no disponible explícitamente en la información proporcionada.
+- Capacidades multilingües: no disponible.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Automatizacion de tareas de desarrollo de software: el modelo puede recibir un repositorio, analizar issues y generar pull requests con cambios de codigo, aprovechando su alto rendimiento en SWE-bench Verified (86) y SWE-bench Pro.
-- Agente de terminal para operaciones de sistemas: gracias a su puntuacion de 86.1 en Terminal-Bench 2.1, puede ejecutar comandos, interpretar salidas y tomar decisiones en entornos de linea de comandos, util para automatizar tareas de administracion.
-- Asistente de codigo en IDE con contexto multimodal: al aceptar imagenes, puede analizar capturas de pantalla de errores o diagramas de arquitectura y sugerir soluciones de codigo.
-- Pipeline de CI/CD con generacion de tests: el modelo puede generar casos de prueba, ejecutarlos y corregir fallos de forma autonoma, integrándose en flujos de integracion continua.
-- Investigacion en auto-mejora de modelos: su capacidad para generar tareas y scaffolds lo convierte en una plataforma ideal para experimentos de aprendizaje por refuerzo y curriculum learning.
-- Despliegue de asistentes conversacionales con licencia permisiva: al ser MIT, puede integrarse en productos comerciales sin coste de licencia, siempre que se disponga del hardware necesario.
+- Automatización de tareas de terminal y DevOps: el modelo obtiene 86,1 en Terminal-Bench 2.1 (Terminus-2), por lo que es adecuado para agentes que ejecutan comandos, depuran entornos y resuelven incidencias de infraestructura de forma autónoma en pipelines de CI/CD.
+- Resolución automática de issues en repositorios: con 86,0 en SWE-bench Verified, puede integrarse en flujos que reciben un issue, localizan el código relevante y proponen un parche verificable, reduciendo el trabajo manual de triaje.
+- Asistente de programación en IDE o CLI: su rendimiento en Terminal-Bench con el arnés Claude Code (85,2) lo hace apto para asistentes que operan sobre el sistema de ficheros y herramientas de desarrollo.
+- Refactorización y migración de código a gran escala: la ventana de contexto no está documentada, pero el perfil agéntico y los resultados en SWE-bench Pro sugieren uso en tareas multi-fichero con verificación por tests.
+- Procesamiento de documentación técnica con imágenes: al aceptar entradas image-text-to-text, puede extraer información de diagramas, capturas de pantalla o documentación escaneada en flujos de soporte técnico.
+- Generación de datos sintéticos y auto-mejora: el diseño del modelo (generación de tareas y rollouts con RL) permite emplearlo como generador de tareas y evaluador en pipelines internos de entrenamiento.
+- Agentes de atención al cliente técnica: combinando conversación multi-turno y capacidad de invocar herramientas, puede gestionar incidencias con contexto de sistemas y documentación.
 
 ## Benchmarks y rendimiento
 
-Los siguientes datos provienen de la model card publicada por el autor. No han sido verificados de forma independiente.
+Datos reportados por el autor en la model card (no verificados de forma independiente). La tabla original está truncada en la información disponible; se recogen las filas completas.
 
 | Benchmark | Ornith-1.5-397B | DeepSeek-V4-Flash-0731 (284B) | GLM-5.2 (753B) | Claude Opus 4.8 | Kimi K3 (2.8T) | Ornith-1.0-397B |
 |---|---|---|---|---|---|---|
-| Terminal-Bench 2.1 (Terminus-2) | 86.1 | 82.7 | 81 | 85 | 88.3 | 77.5 |
-| Terminal-Bench 2.1 (Claude Code) | 85.2 | 81.8 | 82.7 | 78.9 | - | 78.2 |
-| SWE-bench Verified | 86 | 81.6 | 83 | 85.8 | 86.2 | 82.4 |
-| SWE-bench Pro | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-| DeepSWE | 56.0 | no disponible | no disponible | 59.0 | no disponible | no disponible |
+| Terminal-Bench 2.1 (Terminus-2) | 86,1 | 82,7 | 81 | 85 | 88,3 | 77,5 |
+| Terminal-Bench 2.1 (Claude Code) | 85,2 | 81,8 | 82,7 | 78,9 | - | 78,2 |
+| SWE-bench Verified | 86 | 81,6 | 83 | 85,8 | 86,2 | 82,4 |
+| SWE-bench Pro | truncado | truncado | truncado | truncado | truncado | truncado |
+| DeepSWE | 56,0 | no disponible | no disponible | 59,0 | no disponible | no disponible |
 
-No se han publicado resultados para benchmarks clasicos como MMLU, HumanEval o GSM8K en la informacion disponible.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de conocimiento general.
 
 ## Requisitos de hardware
 
-- La version en bf16 ocupa aproximadamente 800 GB, por lo que requiere multiples GPU de alta gama. La guia oficial recomienda 8× H200 141GB con tensor parallelism de 8.
-- Esta version NVFP4 reduce el peso a 238 GB, lo que permite desplegarlo en 3-4 GPU de 80 GB (por ejemplo, A100 80GB o H100 80GB) con tensor parallelism.
-- No cabe en una GPU de consumo (RTX 4090, 24 GB) ni en una sola GPU profesional de 48 GB; se necesita un nodo multi-GPU.
-- Opciones de despliegue: vLLM, TensorRT-LLM (dado el uso de ModelOpt para cuantizacion), y transformers con soporte para MoE. No se menciona compatibilidad con llama.cpp u Ollama.
-- La latencia y el throughput dependen del hardware y de la configuracion de tensor parallelism; no se han publicado cifras oficiales.
+- VRAM estimada: el repositorio NVFP4 ocupa 557,5 GB, por lo que la inferencia requiere al menos ~560 GB de memoria agregada en el formato publicado.
+- GPU recomendadas: para servir los pesos NVFP4 en su totalidad se necesitan múltiples aceleradores de datacenter (H100/H200/B200 con NVFP4 nativo, o A100 en configuraciones multi-GPU). No cabe en una GPU de consumo.
+- GPU de consumo: no es viable con los pesos NVFP4 publicados; requeriría cuantizaciones adicionales (GGUF/AWQ/GPTQ) no disponibles en la información proporcionada.
+- Opciones de despliegue: compatible con `transformers`; el tag `endpoints_compatible` sugiere despliegue en Hugging Face Inference Endpoints. Soporte de vLLM, llama.cpp, Ollama o TGI: no disponible en la información proporcionada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | SWE-bench Verified | Terminal-Bench 2.1 | Licencia |
-|---|---|---|---|---|---|
-| Ornith-1.5-397B | 397B (MoE) | no disponible | 86 | 86.1 | MIT |
-| DeepSeek-V4-Flash-0731 | 284B (MoE) | no disponible | 81.6 | 82.7 | no disponible |
-| GLM-5.2 | 753B (MoE) | no disponible | 83 | 81 | no disponible |
-| Claude Opus 4.8 | no disponible (propietario) | no disponible | 85.8 | 85 | propietaria |
+| Modelo | Parametros | Contexto | Terminal-Bench 2.1 (Terminus-2) | SWE-bench Verified | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Ornith-1.5-397B | ~202,6B (safetensors) / "397B" nominal | no disponible | 86,1 | 86 | MIT | Hugging Face |
+| DeepSeek-V4-Flash-0731 | 284B | no disponible | 82,7 | 81,6 | no disponible | no disponible |
+| GLM-5.2 | 753B | no disponible | 81 | 83 | no disponible | no disponible |
+| Kimi K3 | 2,8T | no disponible | 88,3 | 86,2 | no disponible | no disponible |
+| Claude Opus 4.8 | no disponible | no disponible | 85 | 85,8 | propietaria | API |
 
-Ornith-1.5-397B se posiciona como el modelo abierto mas competitivo en tareas de agente frente a alternativas propietarias, con una licencia MIT que lo diferencia de otros modelos abiertos con restricciones. Su principal desventaja es el elevado requisito de hardware, aunque la cuantizacion NVFP4 alivia parcialmente este problema.
+Ornith-1.5-397B destaca por ofrecer resultados cercanos a modelos de mayor tamaño (Kimi K3, 2,8T) y a Claude Opus 4.8 con licencia MIT y pesos abiertos, lo que facilita su autoalojamiento.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgos, alucinaciones o seguridad; el modelo no ha sido auditado de forma independiente.
-- La informacion sobre el contexto maximo, los idiomas soportados y los parametros activos no esta disponible, lo que dificulta la planificacion de despliegues en produccion.
-- El rendimiento reportado en benchmarks proviene exclusivamente del autor y podria no reproducirse en entornos reales.
-- Aunque la licencia MIT permite uso comercial, el coste de hardware para inferencia es elevado (minimo 3-4 GPU de 80 GB incluso en cuantizacion NVFP4).
-- Al ser un modelo multimodal, requiere un encoder visual adicional, lo que incrementa la complejidad del despliegue.
-- No se garantiza la estabilidad del modelo en tareas fuera del dominio de codificacion y agentes, para las que fue optimizado.
+- Discrepancia de cifras: el nombre comercial (397B), el recuento de safetensors (~202,6B) y el tamaño del repositorio (557,5 GB) no son coherentes entre sí; verificar antes de planificar hardware.
+- Los benchmarks son autoinformados por el autor y no se han verificado de forma independiente; la tabla de la model card está truncada en la información disponible.
+- No se documentan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad.
+- Idiomas soportados no disponibles: no se puede garantizar un rendimiento adecuado en castellano sin evaluación propia.
+- Longitud de contexto no disponible: limita la planificación de cargas con documentos largos o repositorios extensos.
+- La licencia MIT permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio base y las licencias heredadas de Qwen3.5 y Gemma4, dado que el modelo deriva de ellos.
+- El tamaño de despliegue (557,5 GB en NVFP4) exige infraestructura multi-GPU de datacenter; no es apto para entornos de consumo.
+- Capacidades multimodales declaradas solo por tags; el alcance real de visión no está documentado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-397B-NVFP4
-- Version FP8: https://huggingface.co/ornith-ai/Ornith-1.5-397B-FP8
-- Coleccion de modelos Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
-- Blog tecnico de Ornith-1.5: https://ornith.ai/ornith_1_5.html
-- Sitio web de Ornith AI: https://ornith.online/
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-397B
+- Licencia: https://huggingface.co/ornith-ai/Ornith-1.5-397B/blob/main/LICENSE
+- Blog del autor: https://ornith.ai/ornith_1_5.html

@@ -23,9 +23,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1865,
+  "likes": 1867,
   "downloads_30d": 2902027,
-  "trending_score": 54.5,
+  "trending_score": 52.5,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
   "storage_bytes": 2165010702948,
@@ -46,29 +46,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "unsloth/Qwen3.8-Flash-Next-GGUF · Hugging Face",
-      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
     },
     {
-      "title": "Qwen3.8 Fine-tuning Guide | Unsloth Documentation",
-      "url": "https://unsloth.ai/docs/models/qwen3.8/train",
-      "snippet": "Unsloth utilizes Flash Linear Attention kernels for efficient Qwen3.8 training Use Qwen3.8-27B-unsloth-bnb-4bit for 4-bit QLoRA, then export to NVFP4, FP8, GGUF etc. If you want to preserve reasoning ability, mix reasoning-style examples with direct answers and keep at least 75% reasoning data."
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …"
     },
     {
-      "title": "unsloth/Qwen3-8B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/unsloth/Qwen3-8B-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+      "title": "Unsloth Docs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs",
+      "snippet": "🦥 Unsloth Docs Unsloth is an open-source framework for running and training LLMs. Unsloth lets you run and train AI models on your …"
     }
   ]
 }

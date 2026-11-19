@@ -2,92 +2,95 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-Preview es un modelo lingüístico multimodal desarrollado por SenseNova (sensenova) orientado a flujos de trabajo de contexto largo y agentes. Acepta texto e imágenes como entrada y genera texto, lo que lo hace apto para tareas que combinan comprensión de documentos, programación e interacción con herramientas externas. Su rasgo más distintivo es la arquitectura: un decodificador con bloque en bucle (looped transformer) que reutiliza pesos, combinado con hiperconexiones restringidas a variedad de dos flujos (mHC).
+SenseNova-Loop-9B-Preview es un modelo de lenguaje multimodal desarrollado por SenseNova (OpenSenseNova) que acepta texto e imagenes como entrada y genera texto. Su propuesta diferencial es arquitectonica: combina un decoder con un bloque de capas "en bucle" (looped transformer) y conexiones residuales de doble flujo denominadas manifold-constrained hyper-connections (mHC). El modelo esta disenado especificamente para flujos de trabajo de contexto largo y agenticos, donde se combinan comprension de documentos, generacion de codigo e interaccion con herramientas externas.
 
-La relevancia del modelo reside en que consigue una ruta de ejecución más profunda (56 ejecuciones de capa decodificadora por pasada) almacenando solo 32 conjuntos de pesos de capa, es decir, alrededor de 9B de parámetros totales con unos 14,6B de parámetros de inferencia. Esto reduce el coste de memoria respecto a un modelo denso equivalente en profundidad de ejecución. Se publica como preview bajo licencia Apache 2.0, con pesos en safetensors y soporte en la librería transformers mediante código personalizado.
+El modelo cuenta con aproximadamente 9.660 millones de parametros totales almacenados (backbone en BF16 mas parametros de enrutamiento mHC en FP32), aunque durante la inferencia ejecuta el equivalente a unos 14.600 millones de parametros debido al bloque compartido que se aplica dos veces. La longitud de contexto de entrenamiento documentada alcanza los 262.144 tokens, lo que lo situa en la categoria de modelos de contexto muy largo.
 
-El entrenamiento documentado incluye recetas con secuencias largas, entradas multimodales y trayectorias de tareas supervisadas, con una longitud máxima de secuencia de entrenamiento de 262.144 tokens, lo que lo posiciona como candidato para casos de uso agénticos y de documentos extensos.
+Se distribuye bajo licencia Apache 2.0, lo que facilita su adopcion comercial, y soporta ingles y chino. Su publicacion (octubre de 2026) lo convierte en una alternativa relevante para evaluar arquitecturas no convencionales que buscan aumentar la profundidad computacional sin incrementar proporcionalmente el numero de parametros almacenados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decodificador autorregresivo multimodal; bloque en bucle con mHC de dos flujos |
-| Parametros totales | 9.656.250.480 (~9B) |
-| Parametros activos | no disponible (no es MoE; ~14,6B de parámetros de inferencia por reutilización de pesos en el bucle) |
-| Longitud de contexto | Hasta 262.144 tokens (contexto de entrenamiento) |
-| Tipos de cuantizacion | no disponible (precisión de exportación: BF16 en el backbone, FP32 en parámetros de enrutamiento mHC) |
-| Idiomas soportados | Ingles y chino (en, zh) |
+| Arquitectura | Decoder autorregresivo multimodal; bloque en bucle con mHC de doble flujo; atencion hibrida (lineal y completa) |
+| Parametros totales | 9.656.250.480 (~9B almacenados) |
+| Parametros activos | No es MoE; ~14,6B parametros de inferencia por las dos pasadas del bloque en bucle |
+| Longitud de contexto | Hasta 262.144 tokens en entrenamiento |
+| Tipos de cuantizacion | No disponible (exportacion existente en BF16 para el backbone y FP32 para el enrutamiento mHC) |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (38,2 GB el repositorio) |
+| Formato de pesos | Safetensors (libreria transformers, codigo custom `sensenova_loop`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre un decodificador multimodal de 32 capas distintas. Las capas 0–3 procesan la entrada; a continuación, el bloque formado por las capas 4–27 se aplica dos veces de forma secuencial con pesos compartidos (computación B(B(h))); finalmente, las capas 28–31 y la cabeza de salida generan el resultado. En inferencia esto supone 56 ejecuciones de capa decodificadora por pasada hacia adelante almacenando solo 32 conjuntos de pesos. La atención es híbrida: en cada grupo de cuatro capas se intercalan tres capas de atención lineal y una de atención completa, un patrón que reduce el coste de contexto largo manteniendo atención global periódica.
+El decoder consta de 32 capas distintas. Las capas 0-3 procesan la entrada, el bloque de capas 4-27 se aplica dos veces de forma secuencial con pesos compartidos (formalizado como B(B(h))), y las capas 28-31 junto con la cabeza de salida producen el resultado. En cada pasada hacia delante se ejecutan 56 capas de decoder aunque solo se almacenen 32 conjuntos de pesos, lo que incrementa la profundidad efectiva sin duplicar parametros del bloque repetido. Las conexiones mHC de doble flujo gestionan el flujo de informacion entre dos corrientes residuales dentro de la seccion en bucle mediante mapeos aprendidos.
 
-El segundo componente clave son las hiperconexiones restringidas a variedad de dos flujos (manifold-constrained hyper-connections, mHC): mapas aprendidos que enrutan y combinan la información entre dos flujos residuales en la sección en bucle, gestionando el flujo de información entre las dos pasadas del bloque compartido. En cuanto al entrenamiento, la model card documenta recetas que combinan secuencias largas, entradas multimodales (texto, imágenes, código) y trayectorias de tareas supervisadas, con una longitud máxima de secuencia de 262.144 tokens. No se especifican el número total de tokens de entrenamiento, la composición detallada del dataset ni el uso de RLHF o DPO.
+La atencion es hibrida: intercala atencion lineal y atencion completa en un patron repetido de cuatro capas. Las recetas de entrenamiento documentadas combinan secuencias largas, entradas multimodales (texto, imagenes, codigo y trayectorias de uso de herramientas) con una longitud maxima de secuencia de 262.144 tokens. No se detalla en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline image-text-to-text, formato conversacional).
-- Comprension multimodal: acepta imagenes y texto como entrada conjunta.
-- Comprension de documentos largos gracias al contexto de entrenamiento de hasta 262.144 tokens y la atencion hibrida.
-- Generacion y comprension de codigo (los ejemplos de la model card incluyen simulaciones y analisis de datos con codigo).
-- Interaccion con herramientas externas: el entrenamiento incluye trayectorias de tareas con uso de herramientas, orientado a flujos agenticos.
-- Diseño de presentaciones: los ejemplos publicados muestran generacion de diapositivas (PPT) y motion design.
-- Analisis de datos: ejemplos de simulacion de misiones lunares y analisis de consumo energetico con telemetria y graficas.
-- Soporte bilingue ingles/chino.
-- Uso de contexto largo en flujos multi-paso agenticos (benchmarks agenticos como WorkBuddy Bench, AIDABench o Terminal Bench 2.1 aparecen en la evaluacion).
+- Generacion de texto y razonamiento sobre entradas multimodales (texto e imagenes).
+- Comprension de documentos e imagenes combinada con generacion de texto.
+- Generacion de codigo e interaccion con herramientas externas (el entrenamiento incluye trayectorias de uso de herramientas).
+- Flujos agenticos y razonamiento multi-paso, orientados a tareas que requieren contexto largo.
+- Procesamiento de contexto muy largo (hasta 256K tokens en entrenamiento), adecuado para documentos extensos y conversaciones prolongadas.
+- Capacidades multilingues limitadas a ingles y chino.
+- Generacion de artefactos visuales y de presentaciones (se muestran ejemplos de diseno de movimiento, diseno de PPT y analisis de datos en la model card).
+- No se documenta explicitamente soporte de audio ni modo "thinking" dedicado en la informacion disponible.
 
 ## Casos de uso
 
-- Comprension de documentos extensos: con contexto de entrenamiento de 262.144 tokens y atencion hibrida lineal/completa, puede procesar informes, contratos o documentacion tecnica de decenas de paginas combinando texto e imagenes (capturas, diagramas) en una sola peticion.
-- Agentes de terminal y automatizacion: su evaluacion incluye Terminal Bench 2.1 y benchmarks de automatizacion, y su entrenamiento con trayectorias de herramientas lo hace adecuado para agentes que ejecutan comandos, navegan archivos y realizan tareas multi-paso.
-- Asistentes de analisis de datos: los ejemplos de la model card muestran analisis de consumo energetico y simulaciones orbitales, lo que sugiere utilidad en pipelines de analisis donde el modelo genera codigo, interpreta resultados y produce visualizaciones.
-- Generacion de presentaciones: los ejemplos de PPT (presentaciones docentes, de viajes y de producto) indican que puede generar diapositivas estructuradas a partir de instrucciones e imagenes de referencia.
-- Atencion al cliente multimodal: puede gestionar conversaciones multi-turno con capturas de pantalla o documentos adjuntos del usuario, aprovechando la entrada imagen-texto y el contexto largo para mantener el historial completo del caso.
-- Asistencia de codigo en repositorios grandes: el contexto largo permite indexar archivos extensos o multiples ficheros en la ventana, y la capacidad agéntica facilita integraciones con herramientas de desarrollo y revision de pull requests con imagenes (capturas de errores).
-- Motion design y contenido animado: los ejemplos de motion design sugieren aplicacion en generacion de guiones y especificaciones para animacion, combinando descripcion textual e imagenes de estilo.
+- Analisis de documentos extensos: el modelo puede procesar contratos, informes o expedientes de cientos de miles de tokens en una sola ventana, gracias a su contexto de 262.144 tokens, extrayendo conclusiones sin necesidad de trocear el documento.
+- Agentes autonomos con uso de herramientas: al haberse entrenado con trayectorias de herramientas, puede integrarse en bucles agenticos que invocan APIs, ejecutan comandos o consultan bases de datos en tareas multi-paso.
+- Generacion de codigo en pipelines: su combinacion de capacidades de codigo y contexto largo permite revisar repositorios completos o mantener coherencia en tareas de refactorizacion a gran escala.
+- Comprension de documentos con imagenes: facturas, graficos, capturas de pantalla o diagramas pueden enviarse junto al texto para tareas de extraccion y descripcion, aprovechando su pipeline image-text-to-text.
+- Generacion de presentaciones y material visual: los ejemplos de la model card (diseno de PPT, diseno de movimiento) indican uso en la creacion de contenido estructurado a partir de instrucciones y datos.
+- Analisis de datos y simulaciones: los ejemplos de analisis energetico y simulacion de mision lunar sugieren su uso para interpretar series de datos y generar visualizaciones o resumenes tecnicos.
+- Asistentes conversacionales de dominio tecnico: conversaciones multi-turno con contexto largo para soporte en ingenieria, banca o administracion (los benchmarks incluyen dominios como T3-Banking y Terminal Bench).
 
 ## Benchmarks y rendimiento
 
-La model card publica resultados comparativos (en formato imagen) en los benchmarks BIRD-Dev, WorkBuddy Bench, AIDABench, TeamBench, Terminal Bench 2.1, T³-Banking, AutomationBench y RaccoonPPTBench. Sin embargo, la informacion disponible no incluye los valores numericos de estos resultados, por lo que no es posible reproducirlos en una tabla. No se han publicado cifras de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+La model card incluye una imagen con resultados comparativos frente a otros modelos en BIRD-Dev, WorkBuddy Bench, AIDABench, TeamBench, Terminal Bench 2.1, T3-Banking, AutomationBench y RaccoonPPTBench, pero los valores numericos no estan disponibles en formato textual en la informacion proporcionada. Por tanto:
+
+No se han publicado resultados de benchmarks en formato numerico en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. Como referencia, el repositorio pesa 38,2 GB en safetensors (BF16 en el backbone, FP32 en los parametros de enrutamiento mHC), por lo que una carga completa en BF16 requeriria del orden de 40 GB de VRAM o memoria unificada.
-- GPU recomendadas: no disponible explicitamente; por el tamaño en BF16, una unica A100 u H100 de 80 GB, o una A100 de 40 GB en configuracion ajustada, serian candidatas razonables.
-- Consumer GPUs: no hay cuantizaciones publicadas (GGUF u otras), por lo que de momento no es viable su ejecucion en GPUs de consumo tipicas (24 GB) sin cuantizacion; habria que esperar a exportaciones de la comunidad.
-- Despliegue: la model card recomienda usar el entorno de despliegue y los parametros de configuracion documentados por SenseNova. El modelo usa arquitectura personalizada (sensenova_loop) con custom_code en transformers; no se menciona soporte nativo de vLLM, llama.cpp, Ollama o TGI. El repositorio de GitHub (OpenSenseNova/SenseNova-Loop) es la referencia para instrucciones de despliegue.
-- Latencia y throughput: no disponibles. El diseño en bucle implica 56 ejecuciones de capa por pasada, y el patron de atencion hibrida (3 lineales por 1 completa) esta pensado para mitigar el coste en contexto largo.
+- VRAM estimada para inferencia en BF16: aproximadamente 19-20 GB solo para los pesos del backbone (~9,66B parametros), mas overhead de activaciones y cache KV, que con contexto de 256K puede ser muy elevado.
+- Los parametros mHC en FP32 anaden un coste adicional de memoria respecto a una carga puramente BF16.
+- GPU recomendadas: A100 80 GB o H100 80 GB para contexto largo; en consumer, una RTX 4090 (24 GB) podria alojar los pesos en BF16 pero con margen muy ajustado y limitaciones severas de contexto.
+- Cuantizacion: no se documentan formatos GGUF ni cuantizaciones oficiales; el uso en consumer GPU requeriria conversion propia, no soportada oficialmente segun la informacion disponible.
+- Despliegue: la libreria indicada es transformers con codigo custom (`sensenova_loop`), por lo que se requiere `trust_remote_code`. No se confirma soporte en vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles. El coste computacional es superior al de un modelo de 9B convencional porque ejecuta 56 capas por pasada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Notas |
-|---|---|---|---|---|---|
-| SenseNova-Loop-9B-Preview | ~9B (14,6B de inferencia) | 262.144 (entrenamiento) | Si (imagen-texto a texto) | Apache 2.0 | Looped transformer + mHC, atencion hibrida |
-| Qwen2.5-VL-7B-Instruct | ~7B | 128.000 | Si (imagen-texto a texto) | Apache 2.0 | Decodificador denso estandar, ecosistema amplio |
-| InternVL3-8B | ~8B | 32.000 (tipico) | Si (imagen-texto a texto) | Apache 2.0 | Vision-linguistico denso, buen rendimiento OCR |
-| MiniCPM-V 2.6 (~8B) | ~8B | 32.000 (tipico) | Si (imagen-texto a texto) | Uso comunitario con condiciones | Eficiente en dispositivos de gama alta |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| SenseNova-Loop-9B-Preview | ~9B almacenados / ~14,6B inferencia | 262.144 tokens | Apache 2.0 | Multimodal, bloque en bucle, atencion hibrida |
+| Qwen2.5-VL-7B | ~7B | 128K tokens (tipico) | Apache 2.0 | Multimodal, arquitectura transformer convencional |
+| InternVL2.5-8B | ~8B | 32K-128K tokens | Apache 2.0 (segun variante) | Multimodal, orientado a documentos |
+| Llama 3.1 8B | ~8B | 128K tokens | Llama 3.1 Community | Solo texto, sin vision |
 
-Nota: la comparativa se basa en caracteristicas publicas conocidas de los modelos alternativos; los datos concretos de rendimiento entre ellos no estan disponibles en la informacion proporcionada.
+Los datos de los modelos alternativos son orientativos y pueden variar segun la version; no se dispone de comparaciones de rendimiento numericas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una version preview: la model card marca el informe tecnico como TBD, por lo que la documentacion de arquitectura y entrenamiento puede cambiar.
-- Se recomienda explicitamente usar el entorno de despliegue y la configuracion documentados por SenseNova; el rendimiento fuera de esa configuracion no esta garantizado.
-- La arquitectura (sensenova_loop) requiere custom_code en transformers, lo que implica cargar codigo remoto y puede no ser compatible con librerias de inferencia optimizadas (vLLM, llama.cpp) sin adaptaciones.
-- No hay cuantizaciones publicadas, lo que limita el despliegue en hardware de consumo.
-- Idiomas limitados a ingles y chino; el rendimiento en otros idiomas no esta documentado.
-- Sesgos, tasas de alucinacion y evaluaciones de seguridad: no disponibles en la informacion proporcionada.
-- Licencia Apache 2.0: permite uso comercial, pero al ser una preview conviene revisar la licencia del repositorio de GitHub ante futuras actualizaciones.
-- El bucle con pesos compartidos duplica el coste de computo por pasada (56 ejecuciones de capa frente a 32), lo que afecta a la latencia respecto a un modelo denso de 32 capas.
+- Solo soporta ingles y chino; el rendimiento en castellano no esta garantizado ni evaluado.
+- Riesgo de alucinacion inherente a los modelos generativos, especialmente en tareas de extraccion de documentos o uso de herramientas.
+- Requiere `trust_remote_code` por el codigo custom de la arquitectura, lo que implica revisar el codigo antes de ejecutarlo en produccion.
+- El contexto de 256K implica un consumo de memoria de cache KV muy alto; en la practica el contexto util puede verse limitado por el hardware.
+- No se documentan cuantizaciones oficiales, lo que dificulta el despliegue en hardware de consumo.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar los terminos del repositorio GitHub y las dependencias del codigo custom.
+- Es una version "Preview"; pueden existir cambios en la API, los pesos o el comportamiento entre versiones.
+- No se detallan sesgos conocidos ni evaluaciones de seguridad en la informacion disponible.
 
 ## Enlaces
 
-- Model card en Hugging Face: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
-- Repositorio de GitHub: https://github.com/OpenSenseNova/SenseNova-Loop
-- Licencia Apache 2.0 (GitHub): https://github.com/OpenSenseNova/SenseNova-Loop/blob/main/LICENSE
-- Configuracion de arquitectura (GitHub): https://github.com/OpenSenseNova/SenseNova-Loop/blob/main/config.json
-- Model card en chino: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview/blob/main/README_CN.md
-- Informe tecnico: no disponible (marcado como TBD en la model card)
+- Hugging Face: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
+- ModelScope: https://modelscope.cn/models/SenseNova/SenseNova-Loop-9B-Preview
+- GitHub: https://github.com/OpenSenseNova/SenseNova-Loop
+- Licencia en GitHub: https://github.com/OpenSenseNova/SenseNova-Loop/blob/main/LICENSE
+- Configuracion de arquitectura: https://github.com/OpenSenseNova/SenseNova-Loop/blob/main/config.json
+- README en chino: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview/blob/main/README_CN.md
+- Informe tecnico: pendiente de publicacion (TBD) segun la model card.

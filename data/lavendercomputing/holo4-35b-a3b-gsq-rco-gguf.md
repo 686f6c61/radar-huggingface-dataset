@@ -2,99 +2,96 @@
 
 ## Resumen
 
-Holo4-35B-A3B-GSQ-RCO-GGUF es una versión cuantizada en formato GGUF del modelo Holo4-35B-A3B, desarrollado por Hcompany sobre la base Qwen3.6-35B-A3B. Se trata de un modelo de visión-lenguaje (vision-language) especializado en Computer Use, es decir, en la interacción con interfaces de usuario y sistemas operativos mediante capturas de pantalla, con un resultado de 30,9 % en OSWorld 2.0 a un coste de 0,61 dólares por tarea. La arquitectura es mixture-of-experts (MoE) con unos 34,7 mil millones de parámetros totales, de los cuales solo una fracción se activa por token.
+Holo4-35B-A3B es un modelo de lenguaje y visión de tipo mixtura de expertos (MoE) desarrollado por Hcompany, orientado específicamente a la automatización de interacción con interfaces gráficas (Computer Use). Se construye sobre la base Qwen3.6-35B-A3B y cuenta con aproximadamente 34.660 millones de parámetros totales, de los cuales se activan 8 expertos enrutados por token, con una ventana de contexto de 262.144 tokens.
 
-Esta ficha cuantizada, publicada por lavendercomputing, ofrece builds de precisión mixta por tensor de unos 3 bits de media (3,01 y 3,51 BPW), pensadas para ejecutarse con llama.cpp. Su relevancia radica en que permite desplegar un modelo MoE de 35B con capacidades multimodales en hardware de consumo, gracias a que los expertos enrutados (aproximadamente el 92 % de los parámetros) absorben la mayor parte de la compresión. La licencia Apache-2.0, tanto del modelo como de la base Qwen, permite uso comercial sin restricciones.
+La ficha que nos ocupa, sin embargo, no es el modelo original, sino una compilación GGUF publicada por el usuario lavendercomputing bajo la etiqueta GSQ-RCO. Se trata de cuatro cuantizaciones mixtas por tensor (entre 2,33 y 3,51 bits por peso) más una cabeza de borrador MTP cuantizada a Q8_0 para decodificación especulativa, todas ellas destinadas a su uso con llama.cpp.
 
-## Especificaciones tecnicas
+Su relevancia actual reside en que permite ejecutar un modelo MoE de 35B con capacidades de visión y control de escritorio en hardware de consumo, algo imposible con los pesos BF16 originales (unos 70 GB). Las cuantizaciones de 2 bits reducen el archivo a menos de 10,2 GiB, mientras que la variante IQ3_S de 14,18 GiB ofrece un equilibrio razonable entre calidad y requisitos de memoria.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE vision-language (familia `qwen3_5moe` en llama.cpp), basado en Qwen3.6-35B-A3B |
-| Parametros totales | 34.660.610.688 (≈34,7B) |
-| Parametros activos | 8 expertos enrutados activos por token de 256 disponibles (cifra exacta de parámetros activos: no disponible) |
+| Arquitectura | MoE transformer con visión (familia `qwen35moe` en llama.cpp); 40 bloques × 256 expertos enrutados, 8 activos por token, hidden 2048, intermediate de experto 512 |
+| Parámetros totales | 34.660.610.688 (~34,66B) |
+| Parámetros activos | 8 de 256 expertos enrutados por token (los expertos enrutados representan ~93% de los parámetros) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | IQ3_XXS (3,01 BPW) e IQ3_S (3,51 BPW) para expertos; Q8_0 para embeddings, router y shared experts; fp32 para normas 1-D; mmproj BF16 |
+| Tipos de cuantización | IQ2_XXS (2,33 bpw), IQ2_S (2,51 bpw), IQ3_XXS (3,01 bpw), IQ3_S (3,51 bpw); MTP draft head en Q8_0 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con mmproj BF16 aparte para visión); el modelo original está en safetensors BF16 |
-
-Detalles adicionales de la arquitectura: 40 bloques, 256 expertos enrutados por bloque (1536×2048), vocabulario de 248.320 tokens, sin bloque MTP.
+| Formato de pesos | GGUF (llama.cpp); proyector de visión `mmproj.f16.gguf` en BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer mixture-of-experts con 40 bloques y 256 expertos enrutados por bloque, de los cuales 8 se activan por token. Los expertos enrutados concentran aproximadamente el 92 % de los parámetros, lo que hace que la compresión a 3 bits se aplique principalmente sobre ellos mediante una escalera de precisión de tres niveles ponderada hacia los bordes ("edge-weighted ladder"): los tensores de atención y los shared experts se mantienen en precisión alta, mientras que las normas 1-D quedan en fp32.
+El modelo subyacente es un transformer de mixtura de expertos con 40 bloques, cada uno con 256 expertos enrutados de los que se activan 8 por token. La dimensión oculta es 2048 y la intermedia por experto es 512, con un vocabulario de 248.320 tokens. Incluye componentes SSM (parámetros `ssm_out` y alpha/beta) y un proyector de visión en BF16 que habilita la entrada de imágenes. La familia arquitectónica en llama.cpp es `qwen35moe`.
 
-Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no se ha publicado información en los datos disponibles. En cuanto a la cuantización, el enfoque "GSQ-RCO-style" replica de forma compatible con GGUF la receta de 3 bits de los motores GSQ/RCO, que solo emiten `compressed-tensors` de Hugging Face y requieren GPUs sm_90+, por lo que no pueden generar GGUF directamente. Las builds se derivan de un paso intermedio Q8_0 de mradermacher (considerado prácticamente sin pérdidas) y emplean una importance matrix que cubre 510 de las 512 matrices 2-D significativas; `token_embd` y `output` carecen de filas en la imatrix y quedan fijadas a Q8_0.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El modelo base declara una cabeza MTP (multi-token prediction) en su configuración, pero los pesos BF16 del proveedor no incluyen tensores `mtp.*` utilizables; por ello, esta compilación incorpora una cabeza de borrador procedente de Qwen3.6-35B-A3B cuantizada a Q8_0 para habilitar decodificación especulativa en llama.cpp.
+
+La cuantización GSQ-RCO es una receta mixta por tensor: los expertos enrutados absorben la mayor parte de la compresión mediante una escalera ponderada por bordes (bloques de borde con mayor precisión que los internos), mientras que los tensores fijos (embeddings, output, expertos compartidos, K/V, QKV, gate) reciben cuantizaciones de mayor precisión (Q8_0, Q6_K, Q5_K según el nivel). El router (`ffn_gate_inp`) permanece en f32 porque llama.cpp no lo cuantiza, y las normas y sesgos 1-D se mantienen en fp32.
 
 ## Capacidades
 
-- Comprensión de imagen y texto (pipeline image-text-to-text), con proyector de visión BF16 (`mmproj-f16`) necesario para entrada de imágenes.
-- Computer Use: análisis de capturas de pantalla y razonamiento sobre interfaces gráficas para automatizar tareas en sistemas operativos (30,9 % en OSWorld 2.0).
-- Generación de texto y razonamiento general, verificado mediante smoke tests de inferencia en CPU con salida coherente.
-- Contexto muy largo: hasta 262.144 tokens, útil para conversaciones extensas y documentos voluminosos.
-- Etiquetado como conversacional y compatible con endpoints de Hugging Face.
-- No hay información publicada sobre tool calling, function calling, capacidades de agente multi-paso (más allá del enfoque Computer Use) ni soporte de audio.
+- Generación de texto y razonamiento conversacional multi-turno.
+- Comprensión de imágenes y capturas de pantalla (pipeline `image-text-to-text`), orientada a la descripción y análisis de interfaces.
+- Computer Use: interacción con entornos de escritorio y aplicaciones, con un resultado declarado de 30,9% en OSWorld 2.0 a un coste de 0,61 USD por tarea.
+- Soporte de contexto largo de hasta 262.144 tokens, adecuado para historiales extensos de interacción o documentos largos.
+- Decodificación especulativa mediante cabeza MTP externa (Q8_0) con `--spec-type draft-mtp`.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Automatización de tareas de escritorio (Computer Use): el modelo analiza capturas de pantalla y genera acciones para interactuar con aplicaciones, con un coste muy bajo por tarea (0,61 dólares en OSWorld 2.0) y pesos locales bajo Apache-2.0.
-- Asistentes que "ven" la pantalla: integración en herramientas de soporte técnico que describen y diagnostican lo que ocurre en la interfaz del usuario, usando `llama-mtmd-cli` con el mmproj BF16.
-- Procesamiento local de documentos con imágenes: extracción y descripción de contenido de capturas, diagramas o documentos escaneados sin enviar datos a la nube, gracias a la inferencia 100 % local con llama.cpp.
-- Chatbot multimodal en hardware de consumo: la variante IQ3_XXS (12,16 GiB) cabe en GPUs de 16 GB, permitiendo despliegues domésticos de un modelo de 35B.
-- Procesamiento por lotes de bajo coste: la cuantización agresiva a 3 bits reduce los requisitos de memoria y permite mayor throughput en servidores con VRAM limitada.
-- Investigación en cuantización de MoE: la escalera de precisión por tensor y la importance matrix de mradermacher son material de referencia para estudiar cuantización extrema de expertos enrutados.
-- Aplicaciones con contexto muy largo: con 262.144 tokens de ventana, es adecuado para analizar historiales de conversación extensos o múltiples capturas de pantalla encadenadas en sesiones de automatización.
+- Automatización de tareas de escritorio: el modelo puede analizar capturas de pantalla y decidir acciones sobre la interfaz, lo que permite construir agentes que rellenen formularios, naveguen por menús o ejecuten flujos repetitivos en aplicaciones de escritorio.
+- Asistencia técnica remota: con visión y contexto de 262.144 tokens, puede procesar secuencias largas de capturas de pantalla junto con el historial de conversación para diagnosticar problemas de configuración en el equipo del usuario.
+- Pruebas de regresión de interfaces: un agente basado en el modelo puede recorrer una aplicación, verificar que los elementos visuales aparecen donde se espera y detectar regresiones de UI sin scripts frágiles basados en selectores.
+- Despliegue en estaciones de trabajo con GPU de consumo: las variantes IQ2 (9,42 y 10,15 GiB) permiten ejecutar un MoE de 35B con visión en equipos con 12-16 GB de VRAM, algo inviable con los pesos BF16.
+- Generación asistida por decodificación especulativa en servidores CPU/GPU mixtos: el uso de la cabeza MTP Q8_0 eleva el throughput en prompts de código de ~6,2 a 9,45 t/s en las pruebas del autor, útil para entornos sin GPU dedicada potente.
+- Investigación sobre cuantización extrema: los cuatro niveles publicados (2,33 a 3,51 bpw) permiten estudiar la degradación de calidad de un MoE con visión a distintos presupuestos de bits, con una escalera de expertos documentada.
 
 ## Benchmarks y rendimiento
 
-Único dato publicado en la información disponible:
+| Métrica | Resultado | Contexto |
+|---|---|---|
+| OSWorld 2.0 | 30,9% | Modelo base Holo4-35B-A3B, coste 0,61 USD/tarea |
+| Aceptación MTP (prompt factual) | 51,4% | Greedy, CPU, longitud media aceptada 2,52 |
+| Aceptación MTP (prompt de código) | 95,9% | Greedy, CPU, longitud media aceptada 3,85 |
+| Throughput con MTP (código) | 9,45 t/s | Frente a ~6,2 t/s sin borrador |
 
-| Benchmark | Resultado |
-|---|---|
-| OSWorld 2.0 | 30,9 % (a 0,61 $/tarea) |
-
-No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K en la información disponible. Como referencia de throughput, los smoke tests en CPU con llama.cpp arrojaron unos 6 t/s, valor indicativo y no representativo de serving.
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) para estas cuantizaciones en la información disponible. Las pruebas realizadas por el autor se limitan a verificar carga y coherencia de salida en llama.cpp sobre CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos del LLM):
-  - IQ3_XXS: 12,16 GiB (3,01 BPW)
-  - IQ3_S: 14,18 GiB (3,51 BPW)
-  - Añadir la memoria del mmproj BF16 y del KV cache (creciente con el contexto de hasta 262K tokens).
-- GPUs recomendadas: no disponible de forma explícita; con 12–14 GiB de pesos, una RTX 4090 (24 GB) o RTX 3090 permiten carga completa en GPU con contexto moderado. GPUs de 16 GB (RTX 4060 Ti 16G, RTX 5060 Ti 16G) pueden acomodar la variante IQ3_XXS con contexto ajustado o descarga parcial a CPU (`-ngl` parcial).
-- Consumer GPU: sí, cabe en GPUs de 16–24 GB; en CPU pura funciona (verificado en smoke tests a ~6 t/s), pero es lento para uso interactivo.
-- Opciones de despliegue: llama.cpp (`llama-cli` para texto, `llama-mtmd-cli` para visión). No hay soporte confirmado para vLLM, TGI u Ollama con estos GGUF; el formato GGUF facilita la integración con backends basados en llama.cpp.
-- Latencia y throughput: solo dato disponible ~6 t/s en CPU (smoke test); cifras en GPU no disponibles.
+- VRAM estimada para inferencia: IQ2_XXS ~9,42 GiB, IQ2_S ~10,15 GiB, IQ3_XXS ~12,16 GiB, IQ3_S ~14,18 GiB, más el proyector de visión BF16 y el overhead de contexto KV cache (K/V en Q8_0 en los niveles 3 bits; Q6_K en los de 2 bits).
+- GPU recomendadas: A100 o H100 para despliegues de producción con contexto completo; RTX 4090 (24 GB) para IQ3_S con margen; RTX 4080/4070 Ti (16 GB) para IQ3_XXS o IQ2_S.
+- Cabe en GPU de consumo: sí, las variantes IQ2 en tarjetas de 12 GB y las IQ3 en tarjetas de 16-24 GB, siempre que se ajuste el tamaño de contexto.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`, `llama-server`), con soporte de decodificación especulativa MTP mediante `-md` y `--spec-type draft-mtp`. No se mencionan otros motores (vLLM, TGI, Ollama) en la información disponible.
+- Latencia y throughput: en CPU, el autor reporta ~6,2 t/s sin borrador y 9,45 t/s con MTP en un prompt de código. No hay datos de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tipo | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| Holo4-35B-A3B (base, BF16) | ≈34,7B | MoE VLM Computer Use | 262.144 | Apache-2.0 | Pesos completos, máxima fidelidad; requiere mucha más VRAM |
-| Holo4-35B-A3B-GGUF (vendor) | ≈34,7B | MoE VLM | 262.144 | Apache-2.0 | GGUF oficial de Hcompany; esta ficha es una alternativa cuantizada a 3 bits |
-| Holo4-27B (mencionado en la model card) | no disponible | no disponible | no disponible | CC BY-NC (restricción no comercial) | Menos permissive que la variante 35B |
+| Holo4-35B-A3B (esta ficha, GGUF GSQ-RCO) | ~34,66B (MoE, 8 activos) | 262.144 | Computer Use con visión | Apache-2.0 | GGUF |
+| Hcompany/Holo4-35B-A3B (BF16 original) | ~34,66B (MoE, 8 activos) | 262.144 | Computer Use con visión | Apache-2.0 | safetensors BF16 |
+| Qwen/Qwen3.6-35B-A3B (base) | ~35B (MoE) | no disponible | Texto general | no disponible | safetensors |
+| Hcompany Holo 27B (mencionado en la model card) | ~27B | no disponible | Computer Use | CC BY-NC (según la model card) | no disponible |
 
-Datos de rendimiento comparativos entre estas variantes: no disponible.
+La comparativa se limita a los modelos citados en la información proporcionada; no se dispone de datos de rendimiento comparativo entre ellos más allá del resultado de OSWorld 2.0 del modelo base.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible; no se ha publicado información sobre sesgos del modelo base.
-- Riesgo de alucinación: inherente a todo LLM; en tareas de Computer Use una alucinación puede traducirse en acciones erróneas sobre el sistema operativo, por lo que se recomienda supervisión humana o sandboxing.
-- Cuantización agresiva: las builds a 3,0–3,5 BPW implican pérdida de calidad respecto al BF16 original; además, existe un paso intermedio Q8_0 entre el máster BF16 y la escalera de 3 bits (benigno según el autor, pero evitable cuantizando directamente desde safetensors).
-- Visión no verificada en profundidad: los smoke tests de visión no se repitieron en este repo; solo se verificó inferencia de texto. Para uso solo de texto no se necesita el mmproj.
-- Idiomas soportados: no disponible.
-- Licencia: Apache-2.0 tanto en los pesos del vendor como en la base Qwen, sin restricciones para uso comercial (a diferencia del Holo4-27B, que es CC BY-NC).
-- Cobertura de la importance matrix incompleta: 510 de 512 matrices; `token_embd` y `output` carecen de imatrix y están fijados a Q8_0.
-- Sin bloque MTP: no hay decodificación multi-token predictiva en estas builds.
-- Benchmarks limitados: solo OSWorld 2.0; no hay datos de MMLU, código o matemáticas para evaluar el impacto real de la cuantización.
+- Las cuantizaciones de 2 bits (IQ2_XXS e IQ2_S) son agresivas por diseño; el propio autor recomienda IQ3 para trabajos sensibles a la calidad.
+- Las pruebas de humo de visión no se repitieron en esta compilación; solo se verificó la inferencia de texto. El uso con imágenes requiere el `mmproj.f16.gguf` del repositorio del proveedor.
+- La cabeza MTP incluida es la del modelo base Qwen3.6-35B-A3B, no una cabeza entrenada por Hcompany; es un borrador genérico para esta arquitectura, validado contra estos pesos pero no específico del dominio Computer Use.
+- El router (`ffn_gate_inp`) permanece en f32 y no se cuantiza, lo que añade un coste fijo de memoria no reducible.
+- No se dispone de información sobre sesgos, tasas de alucinación ni cobertura idiomática del modelo.
+- La licencia Apache-2.0 permite uso comercial sin las restricciones CC BY-NC que afectan a otras variantes de la familia Holo (como la de 27B), pero conviene verificar la licencia del modelo base Qwen3.6-35B-A3B para el despliegue combinado.
+- El archivo de borrador MTP no contiene `token_embd.weight` propio; debe cargarse con `-md` y no como modelo independiente. Es esperable un mensaje `borrow_shared_tensor` en el log.
 
 ## Enlaces
 
-- Ficha del modelo cuantizado: https://huggingface.co/lavendercomputing/Holo4-35B-A3B-GSQ-RCO-GGUF
-- Modelo base (vendor): https://huggingface.co/Hcompany/Holo4-35B-A3B
-- GGUF oficial del vendor: https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF
-- Fuente Q8_0 (mradermacher): https://huggingface.co/mradermacher/Holo4-35B-A3B-GGUF/blob/main/Holo4-35B-A3B.Q8_0.gguf
-- Importance matrix (mradermacher): https://huggingface.co/mradermacher/Holo4-35B-A3B-i1-GGUF/blob/main/Holo4-35B-A3B.imatrix.gguf
-- Proyector de visión mmproj-f16: https://huggingface.co/mradermacher/Holo4-35B-A3B-GGUF/blob/main/Holo4-35B-A3B.mmproj-f16.gguf
-- Base Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/lavendercomputing/Holo4-35B-A3B-GSQ-RCO-GGUF
+- Modelo base Holo4-35B-A3B: https://huggingface.co/Hcompany/Holo4-35B-A3B
+- GGUF del proveedor (incluye `mmproj.f16.gguf`): https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF
+- Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Matriz de importancia (mradermacher): https://huggingface.co/mradermacher/Holo4-35B-A3B-i1-GGUF/blob/main/Holo4-35B-A3B.imatrix.gguf

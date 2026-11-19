@@ -52,14 +52,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen3.5-2B - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
-      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+      "title": "维基百科官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/723469471435372885.html",
+      "snippet": "Jul 24, 2024 · 维基百科官方网址是什么？ 1. 维基百科网址：https://www.wikipedia.org/2. 维基百科介绍：维基百科是一个基于维基技 …"
     },
     {
-      "title": "Qwen3.5 2B by Qwen | Model Library | Modal",
-      "url": "https://modal.com/library/qwen/qwen3-5-2b",
-      "snippet": "This is the post-trained model, fine-tuned from Qwen3.5-2B-Base. Qwen positions this size for prototyping, task-specific fine-tuning, and research or development use, and benchmarks it against Qwen3-1.7B, Qwen3-4B-2507, and the Qwen3-VL 2B and 4B models on language and vision tasks, recommending a 32,768-token output budget for most queries."
+      "title": "6个简单步骤注册Wikipedia账号 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2215483994157458188.html",
+      "snippet": "Feb 13, 2025 · 6个简单步骤注册Wikipedia账号步骤如下:1.在网页浏览器中访问维基百科的账户创建页面。您可以使用台式机或移动浏 …"
     }
   ]
 }

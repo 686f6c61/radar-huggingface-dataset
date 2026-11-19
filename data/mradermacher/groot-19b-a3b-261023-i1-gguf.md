@@ -2,99 +2,97 @@
 
 ## Resumen
 
-Groot-19B-A3B-261023-i1-GGUF es una distribución de cuantizaciones GGUF del modelo Groot-19B-A3B-261023, publicado originalmente por GrootTeam y cuantizado por mradermacher. No se trata por tanto de un modelo entrenado desde cero, sino de un artefacto de inferencia: el repositorio empaqueta los pesos del modelo base en formato GGUF con cuantizaciones generadas mediante imatrix (matriz de importancia), pensadas para su uso con llama.cpp y derivados. El modelo base cuenta con 18.985.723.008 parámetros totales (unos 19B), según los metadatos de safetensors.
+Groot-19B-A3B-261023-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base GrootTeam/Groot-19B-A3B-261023. Se trata de una variante de tipo Mixture-of-Experts (MoE) con 18.985.723.008 parámetros totales y aproximadamente 3B activos (según indica el sufijo A3B del nombre), lo que permite inferencia con coste computacional próximo al de un modelo de 3B pese a disponer de la capacidad de representación de un modelo de 19B. El repositorio incluye cuantizaciones i1 (imatrix) en múltiples niveles de precisión, desde Q2_K hasta Q6_K, con tamanos que van de 7,3 GB a 15,7 GB.
 
-La nomenclatura "A3B" del identificador sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parámetros activos por token, si bien esta cifra no aparece confirmada de forma explícita en la información disponible y debe tratarse como inferencia a partir del nombre. La model card del cuantizador incluye además una nota genérica que describe el modelo como "vision model", de modo que la existencia de capacidades multimodales queda pendiente de verificación en el repositorio del modelo base.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar el modelo base en hardware de consumo mediante llama.cpp, Ollama o otros runtimes compatibles con GGUF, sin necesidad de GPUs de centro de datos. Las cuantizaciones i1 con imatrix suelen proporcionar mejor relación calidad/tamano que las cuantizaciones estáticas equivalentes, especialmente en rangos bajos (IQ2/IQ3). El modelo base está publicado bajo licencia Apache 2.0, lo que facilita uso comercial.
 
-El interés práctico de esta ficha reside en la disponibilidad de cuantizaciones de 1 a 6 bits sobre una licencia Apache-2.0, lo que permite desplegar un modelo de ~19B en hardware de consumo. No obstante, no se han publicado resultados de benchmarks ni especificaciones de contexto en la información proporcionada, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
+El modelo se describe como conversacional y orientado a inglés, con soporte declarado de visión (el autor indica que los ficheros mmproj, si existen, residen en el repositorio estático). No se dispone de información detallada sobre arquitectura interna, datos de entrenamiento ni benchmarks en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) segun la denominacion "A3B"; detalles de capas y atencion no disponibles |
+| Arquitectura | Mixture-of-Experts (MoE) transformer, inferida del sufijo A3B; detalles internos no disponibles |
 | Parametros totales | 18.985.723.008 (~19B) |
-| Parametros activos | ~3B (inferido del sufijo "A3B"; no confirmado) |
+| Parametros activos | ~3B (según sufijo A3B; no confirmado en documentación) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL; fichero imatrix incluido (0,3 GB) |
-| Idiomas soportados | Ingles (tag `en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (cuantizado); modelo base en safetensors |
-| Tamano del repositorio | 27,0 GB |
-| Herramientas compatibles | llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime GGUF (tag `endpoints_compatible`) |
+| Tipos de cuantizacion | i1 (imatrix): Q2_K, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); pesos originales en safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Groot-19B-A3B-261023 procede de GrootTeam y se distribuye bajo licencia Apache-2.0. Por el identificador se deduce una arquitectura transformer con mezcla de expertos y alrededor de 3B de parámetros activos, pero la información disponible no detalla el número de capas, la dimensión oculta, el número de expertos por capa ni el mecanismo de enrutamiento. Tampoco se especifican la ventana de contexto nativa, el tokenizador ni el vocabulario.
+El modelo base GrootTeam/Groot-19B-A3B-261023 es un transformer de tipo Mixture-of-Experts con ~19B parámetros totales y ~3B activos por token, según indica el sufijo A3B del nombre. Esta configuración permite que cada token active solo una fracción de los expertos, reduciendo el coste de inferencia frente a un modelo denso de tamaño equivalente. No se dispone de información sobre el número de expertos, la estrategia de routing, la composición del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron técnicas de RLHF, DPO o similares.
 
-No hay datos sobre el volumen de tokens de entrenamiento, la composición del corpus, las fases de ajuste (SFT, RLHF o DPO) ni innovaciones técnicas como decodificación especulativa o atención lineal. La model card del repositorio cuantizado es una plantilla estándar de mradermacher centrada en el proceso de cuantización, no en el entrenamiento. Las cuantizaciones se han generado en modo imatrix, técnica que pondera el error de cuantización según la importancia de cada peso estimada con un corpus de calibración, lo que habitualmente mejora la perplejidad frente a cuantizaciones estáticas equivalentes en tamaño.
+Las cuantizaciones i1 de mradermacher emplean ficheros imatrix (importance matrix) generados a partir de datos de calibración, lo que mejora la preservación de pesos relevantes en niveles bajos de bits. El autor indica que las cuantizaciones IQ suelen ser preferibles a las K de tamano similar, y que i1-Q4_K_M es la opción recomendada por equilibrio entre velocidad y calidad. Los ficheros mmproj para visión, si existen, se alojan en el repositorio estático hermano (mradermacher/Groot-19B-A3B-261023-GGUF).
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno: el tag `conversational` indica que el modelo base está ajustado para diálogo.
-- Razonamiento y conocimiento general: capacidad esperable por el tamaño (~19B), aunque no hay evaluaciones publicadas que lo cuantifiquen.
-- Generación de código: no confirmada en la información disponible; el tag `transformers` no implica soporte específico de código.
-- Tool calling / function calling: no disponible (sin mención en la model card).
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Multilingüismo: limitado a inglés según el campo `language` de la model card.
-- Visión: la model card del cuantizador incluye la nota "This is a vision model", pero se trata de texto de plantilla y los ficheros `mmproj` (proyector multimodal), si existen, se alojan en el repositorio de cuantizaciones estáticas, no en este. Capacidad no verificada.
-- Modo "thinking" o razonamiento extendido: no disponible.
+- Generación de texto conversacional multi-turno, según la etiqueta "conversational" del repositorio.
+- Razonamiento y respuesta a instrucciones (capacidad esperada de un modelo base de 19B, no verificada con benchmarks).
+- Posible soporte de visión: el autor menciona que es un "vision model" y que los mmproj están en el repo estático; no confirmado en esta ficha.
+- Capacidades multilingües limitadas al inglés según la metadata (`language: en`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con la librería transformers para el modelo base.
+- No se documenta tool calling, function calling, agentes ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo sin GPU dedicada de gran memoria: las cuantizaciones IQ2/IQ3 permiten ejecutar el modelo íntegramente en CPU con 8-12 GB de RAM, útil para prototipado y pruebas de concepto en entornos con hardware limitado.
-- Asistentes conversacionales en inglés autoalojados: el ajuste conversacional y la licencia Apache-2.0 permiten integrar el modelo en un servicio de chat interno sin coste de licencia ni envío de datos a terceros.
-- Procesamiento por lotes en pipelines de CI: al ser un GGUF compatible con llama.cpp, puede invocarse desde scripts de Python (`llama-cpp-python`) para tareas de resumen, clasificación o extracción sobre documentación técnica en inglés.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 24 variantes de cuantización más el fichero imatrix, lo que lo convierte en un banco de pruebas útil para medir la degradación de perplejidad entre IQ2 y Q6_K sobre un mismo modelo.
-- Servicio de inferencia en el borde (edge) con memoria unificada: en equipos tipo Apple Silicon o mini-PC con 16-32 GB de memoria compartida, una cuantización Q4_K_M (~11-12 GB) deja margen para el sistema operativo y otros procesos.
-- Base para experimentos de ajuste fino ligero sobre el modelo original: el repositorio en safetensors del modelo base (Apache-2.0) permite LoRA/QLoRA, mientras que el GGUF sirve para validar el comportamiento antes y después del ajuste.
-- Investigación sobre eficiencia de MoE: al tener ~19B totales y ~3B activos, es un caso adecuado para medir la relación entre ancho de banda de memoria y tokens por segundo en distintos backends.
+- Despliegue local en estación de trabajo con GPU de consumo: usar i1-Q4_K_M (~11,8 GB) en llama.cpp u Ollama permite ejecutar un MoE de 19B con ~3B activos en GPUs de 12-16 GB, manteniendo latencia baja por token.
+- Asistente conversacional autoalojado: el modelo está etiquetado como conversacional y en inglés; sirve para prototipos de chatbots internos sin dependencia de APIs externas, con la ventaja de licencia Apache 2.0.
+- Generación de texto por lotes en CPU: las cuantizaciones Q2_K/Q3_K_S (7-8,5 GB) caben en RAM de sistemas consumer y permiten throughput aceptable en CPU vía llama.cpp para tareas de resumen o clasificación.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 15 niveles de cuantización, útil para medir el impacto de la precisión en calidad y velocidad en un pipeline propio.
+- Investigación sobre MoE con recursos limitados: al activar ~3B por token, permite estudiar comportamiento de modelos MoE grandes en hardware modesto, comparando con densos de 3B.
+- Integración en aplicaciones de escritorio o edge: al ser GGUF, se puede empaquetar con llama.cpp en aplicaciones locales (por ejemplo, plugins de editores o herramientas CLI) sin servidor GPU.
+- Fine-tuning ligero sobre el modelo base: al disponer de pesos safetensors originales con licencia Apache 2.0, se puede ajustar el base y luego cuantizar de nuevo con imatrix para despliegue.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de perplejidad para las distintas cuantizaciones.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (estimación a partir de 19B parámetros, no medida): IQ1/IQ2 ~5,5-7 GB; IQ3/Q3 ~8-9,5 GB; Q4_K_M ~11-12 GB; Q5_K_M ~13-14 GB; Q6_K ~15-16 GB; Q8_0 ~20-21 GB.
-- Al ser MoE, llama.cpp necesita mantener todos los expertos en memoria (VRAM o RAM) aunque solo se activen ~3B por token; el requisito de memoria viene determinado por el total de parámetros, no por los activos.
-- GPU recomendadas: A100 40/80 GB o H100 para servir el modelo sin cuantizar en vLLM/TGI; RTX 4090, RTX 3090 o L40S (24 GB) para Q4_K_M-Q6_K con offload completo.
-- GPU de consumo: sí. RTX 4090/3090 (24 GB) ejecutan Q6_K y Q8_0 con comodidad; RTX 4080/4070 Ti (16 GB) admiten Q5_K_M; RTX 4060 Ti (16 GB) y RTX 3060 (12 GB) quedan limitadas a IQ3/Q4 con offload parcial de capas a CPU.
-- Despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, KoboldCpp y text-generation-webui para GGUF; vLLM, TGI o SGLang requieren los safetensors del modelo base, no este repositorio.
-- Latencia y throughput: no disponibles. Al tener ~3B parámetros activos, cabe esperar una velocidad de generación superior a la de un modelo denso de 19B con el mismo ancho de banda de memoria, pero no se ha publicado ninguna medición.
+- VRAM estimada para inferencia (con overhead de contexto y KV cache, valores orientativos):
+  - i1-Q2_K (7,3 GB): ~8-9 GB VRAM.
+  - i1-IQ3_M / Q3_K_M (8,7-9,4 GB): ~10-11 GB VRAM.
+  - i1-Q4_K_M (11,8 GB): ~13-14 GB VRAM.
+  - i1-Q5_K_M (13,7 GB): ~15-16 GB VRAM.
+  - i1-Q6_K (15,7 GB): ~17-18 GB VRAM.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4-Q6 con contexto amplio; RTX 4080/4070 Ti Super (16 GB) para Q3-Q4; GPUs de 12 GB (RTX 3060 12 GB, 4070) para Q2-Q3. Para A100/H100 no hay problema de capacidad, pero el modelo es pequeño para esas GPUs y el throughput estará limitado por el ancho de banda, no por VRAM.
+- ¿Cabe en GPU de consumo? Sí: prácticamente todas las cuantizaciones caben en GPUs de 12-24 GB; las de 8 GB solo admiten Q2_K con contexto reducido o descarga parcial a RAM.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). vLLM y TGI no son la vía natural para GGUF, aunque pueden servir el modelo base en safetensors.
+- Latencia y throughput: no disponibles. Al ser MoE con ~3B activos, se espera throughput superior a un denso de 19B en el mismo hardware, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Benchmarks publicados |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Groot-19B-A3B-261023 (este) | ~19B | ~3B (inferido) | no disponible | Apache-2.0 | no disponible |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 32.768 nativo (131.072 con YaRN) | Apache-2.0 | si |
-| Mixtral-8x7B-v0.1 | 46,7B | 12,9B | 32.768 | Apache-2.0 | si |
-| Mistral Small 3 (24B) | 24B | denso | 32.768 | Apache-2.0 | si |
+| Groot-19B-A3B-261023 (este, cuantizado) | ~19B / ~3B | no disponible | Apache 2.0 | GGUF (i1) | MoE, inglés, posible visión |
+| Qwen1.5-MoE-A2.7B | ~14,3B / ~2,7B | 32k (según docs públicas) | Apache 2.0 | safetensors, GGUF | MoE comparable en activos; contexto documentado |
+| Mixtral-8x7B | ~46,7B / ~12,9B | 32k (según docs públicas) | Apache 2.0 | safetensors, GGUF | MoE mayor; más coste de inferencia |
+| DeepSeek-V2-Lite | ~15,7B / ~2,4B | 4k-16k (según docs públicas) | MIT (según docs públicas) | safetensors | MoE con activos similares |
 
-Las alternativas citadas son MoE de tamano y activacion comparables (Qwen3-30B-A3B) o densos de rango similar (Mistral Small 3), todas con licencia Apache-2.0 y pesos disponibles publicamente. La comparacion de rendimiento con Groot no puede establecerse porque no hay cifras publicadas de este ultimo en la informacion disponible.
+Los datos de modelos comparables provienen de documentación pública general y pueden no coincidir exactamente con las versiones más recientes; verificar antes de usar en producción. No hay benchmarks del modelo de esta ficha para comparar rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no es posible estimar la calidad real del modelo frente a alternativas conocidas; cualquier adopcion en produccion exige una evaluacion propia.
-- Idiomas: la model card declara unicamente ingles; el rendimiento en castellano es desconocido y probablemente deficiente.
-- Ventana de contexto desconocida: no se puede garantizar el procesamiento de documentos largos ni conversaciones con historial extenso.
-- Capacidad de visión no verificada: la nota "vision model" proviene de una plantilla del cuantizador y los ficheros `mmproj` no estan en este repositorio.
-- Riesgo de alucinacion: inherente a los modelos generativos y no cuantificado para este modelo; sin datos de evaluacion no hay forma de acotarlo.
-- Sesgos: no hay informacion sobre la composicion del corpus de entrenamiento ni sobre filtrado de datos, por lo que se desconocen los sesgos presentes.
-- Degradacion por cuantizacion: las variantes IQ1/IQ2 y Q2_K pueden degradar notablemente la coherencia; para uso en produccion conviene Q4_K_M o superior. La tabla de quants del README solo detalla el fichero imatrix en el extracto disponible.
-- Coste de memoria de un MoE: aunque solo se activen ~3B parametros por token, es necesario cargar los ~19B, lo que limita el despliegue en GPUs de gama baja mas de lo que sugiere el numero de parametros activos.
-- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion con aviso de copyright y sin garantias; conviene conservar el fichero LICENSE y citar autoría.
-- Madurez: el repositorio registra 0 descargas y 0 interacciones, por lo que no hay validacion comunitaria ni informes de fallos.
+- Idiomas: metadata declara únicamente inglés; el rendimiento en castellano no está garantizado y probablemente será inferior.
+- Visión: el autor menciona que es un modelo de visión, pero los mmproj están en el repositorio estático; esta ficha GGUF por sí sola no incluye necesariamente los pesos de proyección visual. Verificar antes de asumir capacidades multimodales.
+- Arquitectura: los detalles de routing MoE, número de expertos y contexto no están documentados en la información disponible; no asumir comportamiento de otros MoE.
+- Alucinación: no hay benchmarks ni evaluaciones de fidelidad publicadas; tratar las salidas como no verificadas.
+- Sesgos: no documentados; un modelo entrenado principalmente en inglés puede reflejar sesgos culturales y lingüísticos de ese corpus.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar el LICENSE del repo base y cumplir con atribuciones.
+- Cuantizaciones bajas (Q2_K, IQ2) degradan calidad de forma notable; el propio autor recomienda IQ3_XXS o superior frente a Q2_K, y Q4_K_M como opción equilibrada.
+- Repositorio de 161,4 GB: descargar solo los ficheros necesarios; las cuantizaciones son multi-parte en algunos casos y requieren concatenación según las instrucciones de TheBloke referenciadas.
+- Sin pipeline_tag ni resultados de evaluación: no hay garantía de calidad para tareas específicas (código, matemáticas, agentes).
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Groot-19B-A3B-261023-i1-GGUF
-- Repositorio de cuantizaciones estaticas (incluye posibles ficheros `mmproj`): https://huggingface.co/mradermacher/Groot-19B-A3B-261023-GGUF
-- Fichero imatrix: https://huggingface.co/mradermacher/Groot-19B-A3B-261023-i1-GGUF/resolve/main/Groot-19B-A3B-261023.imatrix.gguf
+- Repositorio GGUF (esta ficha): https://huggingface.co/mradermacher/Groot-19B-A3B-261023-i1-GGUF
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
-- Pagina indice del cuantizador para este modelo: https://hf.tst.eu/model#Groot-19B-A3B-261023-i1-GGUF
-- Peticiones de cuantizacion y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.
+- Cuantizaciones estáticas (incluye mmproj si existe): https://huggingface.co/mradermacher/Groot-19B-A3B-261023-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Groot-19B-A3B-261023-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Gráfico de comparación de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -2,106 +2,105 @@
 
 ## Resumen
 
-Sharp-Spark-X2.5-4B-GGUF es un conjunto de cuantizaciones GGUF dinamicas con imatrix del modelo base XHToken/Spark-X2.5-4B, un transformer denso de 4,1 mil millones de parametros orientado a codigo y contexto largo, publicado por el usuario peculiar-ragdoll bajo licencia Apache 2.0. El modelo base es un transformer con atencion hibrida: de sus 36 capas, solo 9 son de atencion completa (una de cada cuatro) y las otras 27 emplean una ventana deslizante de 512 tokens, lo que mantiene el coste de la cache KV casi plano y permite sostener velocidad util en contextos de seis cifras.
+Sharp-Spark-X2.5-4B-GGUF es una colección de cuantizaciones GGUF dinámicas del modelo denso XHToken/Spark-X2.5-4B, publicada por el usuario peculiar-ragdoll. El modelo base es un transformer denso de 4.112.079.360 parámetros (aproximadamente 4B) con arquitectura de atención híbrida y orientación a contexto largo y generación de código. La aportación de esta ficha no es el modelo en sí, sino el proceso de cuantización: una matriz de importancia (imatrix) ponderada hacia código de sistemas y seguridad, una asignación heurística de bits por tensor y una plantilla de chat propia denominada Sharp-Spark.
 
-El valor anadido de esta publicacion no es el modelo en si, sino el proceso de cuantizacion: un importance matrix ponderado hacia codigo de seguridad y de sistemas, medido directamente sobre los pesos BF16 y consumido en su totalidad (3641 fragmentos de 4096 tokens, 14,9 millones de tokens), una asignacion heuristica de bits por tensor y una plantilla de chat propia (Sharp-Spark). El resultado es una version de 3,61 GB (Q6_K_XL) que cabe en tarjetas de 6 GB de VRAM y que, en la rebanada de 17 celdas de SWE-bench-Live, iguala estadisticamente al modelo sin cuantizar Q8 en MMLU-Pro (69,0 % frente a 70,3 %, p=0,51) gastando menos tokens por pregunta.
+El interés actual del modelo radica en su perfil de eficiencia: con cuantizaciones de entre 2,67 GB (Q4_K_XL) y 3,61 GB (Q6_K_XL), está diseñado para ejecutarse en GPUs con 4-6 GB de VRAM y mantener velocidad utilizable hasta contextos de seis cifras. La arquitectura híbrida de atención —solo 9 de sus 36 capas son de atención completa, mientras que las otras 27 usan una ventana deslizante de 512 tokens— reduce drásticamente el crecimiento de la caché KV y hace viable un contexto de 131.072 tokens en hardware de gama baja.
 
-Es relevante ahora porque ataca un nicho concreto y mal cubierto: desarrolladores con GPU de gama baja (4-6 GB de VRAM) y hasta 16 GB de RAM que necesitan un asistente de codigo capaz de trabajar sobre repositorios largos, sin recurrir a APIs externas ni a modelos MoE de mayor tamano que exigen offloading parcial a RAM del sistema.
+La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales conocidas. El repositorio acumula 870.866 descargas y 165 likes, y el autor mantiene una versión posterior (Sharp-Spark-X2.6-4B-GGUF) que recomienda como mejora sobre esta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atencion hibrida (36 capas: 9 de atencion completa, 27 con ventana deslizante de 512 tokens) |
-| Parametros totales | 4.112.079.360 (~4,1 B) |
-| Longitud de contexto | 131.072 tokens validados; tabla de cache KV documentada hasta 256K |
-| Tipos de cuantizacion | Q4_K_XL (2,67 GB), Q5_K_XL (3,24 GB), Q6_K_XL (3,61 GB), todas con imatrix dinamica |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso con atención híbrida (9 capas de atención completa cada 4 capas, 27 capas con ventana deslizante de 512 tokens); 36 capas en total |
+| Parametros totales | 4.112.079.360 (~4B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 131.072 tokens (validado en la model card); la caché KV permite hasta 256K según las tablas publicadas |
+| Tipos de cuantizacion | Q4_K_XL (2,67 GB), Q5_K_XL (3,24 GB), Q6_K_XL (3,61 GB); cuantizaciones GGUF dinámicas con imatrix |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp / endpoints compatibles) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, Spark-X2.5-4B, es un transformer denso de aproximadamente 4,1 mil millones de parametros con un esquema de atencion hibrida poco habitual en esta escala. Solo 9 de sus 36 capas realizan atencion completa sobre la secuencia entera; las otras 27 aplican una ventana deslizante de 512 tokens. Esta decision arquitectonica es la que hace economicamente viable el contexto largo en una GPU pequena: en la cache KV unicamente las 9 capas completas escalan con la longitud de la secuencia (aproximadamente 4 KB por token y capa completa), mientras que las 27 ventaneadas mantienen un coste fijo de unos 57 MB. El resultado agregado es un crecimiento de 36 KB/token en f16 y 19 KB/token en q8_0.
+El modelo base Spark-X2.5-4B es un transformer denso de 36 capas con un esquema de atención híbrido: una de cada cuatro capas (9 en total) realiza atención completa sobre toda la secuencia, mientras que las 27 restantes operan con una ventana deslizante de 512 tokens. Esta configuración limita el crecimiento de la caché KV a las 9 capas de atención completa, que escalan a razón de aproximadamente 4 KB por token y capa, es decir, unos 36 KB/token en f16 y 19 KB/token en q8_0. El resultado es que un contexto de 128K consume 4,83 GB de caché KV en f16 o 2,60 GB en q8_0, cantidades manejables en GPUs de gama baja.
 
-Respecto al entrenamiento del modelo base, no se dispone de informacion sobre composicion del dataset, numero de tokens, ni si hubo etapas de RLHF o DPO: no disponible. Lo que si esta documentado es el proceso de cuantizacion. El importance matrix se calculo sobre un corpus publico y redistribuible ponderado hacia codigo de seguridad y de sistemas, y se midio directamente sobre los pesos BF16 (8,2 GB), que caben en memoria, evitando aproximaciones intermedias en la cadena de medida. Se procesaron 3641 fragmentos de 4096 tokens cada uno (14,9 millones de tokens), agotando el corpus en lugar de detenerse en un presupuesto preestablecido. La eleccion de fragmentos de 4096 tokens es deliberada: con fragmentos de 512 o menos, las 9 capas de atencion completa nunca entrarian en el regimen de largo alcance para el que existen y sus puntuaciones de importancia describirian un trabajo que no realizan. Ambos parametros quedan registrados en el propio archivo GGUF como `imatrix.chunk_count` y `imatrix.chunk_size`. Ademas, la publicacion incluye la plantilla de chat Sharp-Spark y etiquetas que apuntan a eficiencia de tokens y a un modo de razonamiento ("thinking") eficiente, si bien no se detalla el mecanismo interno de dicha eficiencia.
+La contribución específica de esta ficha es el proceso de cuantización. El autor generó una matriz de importancia (imatrix) ejecutando los pesos BF16 completos (8,2 GB) sobre un corpus de calibración público y redistribuible, ponderado hacia código de seguridad y sistemas. El corpus se consumió hasta el agotamiento: 3.641 fragmentos de 4.096 tokens cada uno, lo que suma 14,9 millones de tokens. La elección de fragmentos de 4.096 tokens es deliberada: al superar la ventana de 512 tokens de las capas deslizantes, se fuerza a las 9 capas de atención completa a operar en el régimen de largo alcance para el que fueron diseñadas, evitando que el cuantizador subproteja precisamente esas capas. Los metadatos de la imatrix se registran en el propio archivo GGUF (`imatrix.chunk_count`). No se dispone de información sobre el dataset de entrenamiento original del modelo base ni sobre si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, con plantilla de chat propia Sharp-Spark.
-- Generacion y edicion de codigo, con orientacion explicita a codigo de sistemas y de seguridad (reflejada en la ponderacion del imatrix).
-- Razonamiento en contexto largo: validado hasta 131.072 tokens con degradacion moderada de velocidad.
-- Modo de razonamiento etiquetado como "efficient-thinking" y comportamiento "token-efficient" (menos tokens por respuesta segun las mediciones del autor).
-- Capacidades multilingues: no disponible.
-- Soporte de tool calling o function calling: no documentado en la informacion disponible.
-- Soporte explicito de agentes o razonamiento multi-paso: no documentado como caracteristica formal, aunque la evaluacion se realizo sobre tareas de resolucion de issues de codigo (SWE-bench-Live), lo que implica flujos multi-paso.
+- Generación de texto conversacional y de código, con especial orientación a código de sistemas y seguridad según la ponderación de la imatrix.
+- Razonamiento de múltiples pasos y modo de pensamiento eficiente en tokens (etiquetas `efficient-thinking` y `token-efficient`).
+- Contexto largo utilizable: validado a 131.072 tokens con decodificación a 42 tok/s y prefill a 557 tok/s; la tabla de caché KV sugiere viabilidad hasta 256K.
+- Plantilla de chat propia Sharp-Spark, incluida en el repositorio.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Asistente de codigo local en portatiles con GPU modesta: con Q6_K_XL (3,61 GB) el modelo cabe en una GPU de 6 GB de VRAM y permite autocompletado y generacion en un entorno sin conexion, sin enviar codigo propietario a servicios externos.
-- Analisis de repositorios completos: gracias a los 131.072 tokens de contexto validados, es posible cargar ficheros extensos o varios modulos relacionados y pedir explicaciones, refactorizaciones o deteccion de dependencias cruzadas en una sola pasada.
-- Revision de codigo en pipelines de CI/CD: integrado via llama.cpp o un endpoint compatible, puede generar comentarios automaticos sobre diffs sin depender de APIs de terceros ni incurrir en coste por token.
-- Auditoria de seguridad de codigo: el imatrix esta ponderado hacia codigo de seguridad y de sistemas, por lo que las capas que mas importan en ese dominio conservan precision; resulta adecuado para analisis estatico asistido y deteccion de patrones inseguros.
-- Explicacion y documentacion de bases de codigo heredadas: la combinacion de contexto largo y eficiencia de tokens permite procesar modulos antiguos extensos y producir documentacion o resumenes de arquitectura con un presupuesto de tokens contenido.
-- Generacion de pruebas unitarias y casos de prueba: el modelo puede leer una funcion junto a su contexto de modulo y proponer pruebas, ejecutable en local dentro de un flujo de desarrollo con recursos limitados.
-- Prototipado en entornos con restricciones de VRAM (4 GB): con Q4_K_XL (2,67 GB) se obtiene un margen amplio de cache KV que permite superar los 128K de contexto en la misma tarjeta, util para tareas de recuperacion aumentada sobre corpus extensos.
+- Asistencia de código en GPU de 6 GB: con Q6_K_XL (3,61 GB) el modelo cabe en tarjetas como la RTX 2060 o la GTX 1660 Ti, dejando espacio para unos 48K de contexto en caché f16 o unos 96K en q8_0. Adecuado para autocompletado y revisión de código en entornos con hardware limitado.
+- Análisis de repositorios completos: con Q4_K_XL (2,67 GB) se superan los 128K de contexto en la misma tarjeta de 6 GB, lo que permite cargar varios archivos de un proyecto y razonar sobre dependencias entre ellos.
+- Revisión de código orientada a seguridad: la imatrix está ponderada hacia código de seguridad y sistemas, por lo que el modelo conserva mejor la precisión en patrones de vulnerabilidades, gestión de memoria y llamadas al sistema que una cuantización genérica.
+- Agentes de codificación con contexto largo: la caída de decodificación de solo 2,6× entre contexto vacío y 131K (de 111 a 42 tok/s) permite mantener sesiones de agente multi-turno con historial extenso sin degradación severa de latencia.
+- Despliegue en portátiles y equipos de gama baja: con menos de 16 GB de RAM y una GPU de 4-6 GB, el modelo es una opción viable para asistentes de código locales sin conexión.
+- Procesamiento de documentación técnica extensa: la ventana de 131K tokens permite resumir y extraer información de manuales, especificaciones o logs de sistemas largos en una sola pasada.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye resultados de SWE-bench-Live y MMLU-Pro por cuantización, lo que lo convierte en un caso de estudio útil para medir el impacto de la cuantización en modelos pequeños.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de las mediciones publicadas por el autor en la model card. No se han publicado otros resultados en la informacion disponible.
+Los datos publicados en la model card provienen de subconjuntos reducidos y múltiples semillas, por lo que deben interpretarse con cautela.
 
-| Benchmark | Configuracion | Sharp-Spark-Q6 | Upstream Spark-Q8 | Referencia externa |
-|---|---|---|---|---|
-| SWE-bench-Live (rebanada de 17 celdas, 3 semillas) | soluciones por semilla | 5,7 | 3,7 | Haiku 4.5-high: 5,0 |
-| MMLU-Pro (subconjunto de 100 preguntas, 3 semillas) | exactitud | 69,0 % | 70,3 % (p=0,51, empate estadistico) | no disponible |
-| MMLU-Pro | tokens por pregunta (mediana) | 43 % menos que upstream | referencia | no disponible |
+| Benchmark | SharpSpark-Q6 | Referencia | Notas |
+|---|---|---|---|
+| SWE-bench-Live (17 celdas, 3 semillas) | 5,7 solves/semilla | Haiku 4.5-high: 5,0; upstream Spark-Q8: 3,7 | Dentro de intervalos de confianza; trabajo amortizado por solve: 74 min (SharpSpark-Q6), 21 min (Haiku), 145 min (stock Q8) |
+| MMLU-Pro (100 preguntas, 3 semillas) | 69,0 % | upstream Spark-Q8: 70,3 % | Diferencia no significativa (p=0,51); 43 % menos tokens por pregunta en la mediana y 18 % menos en la media (p=0,0002) |
 
-Rendimiento de inferencia segun el autor:
+Rendimiento de inferencia declarado (contexto corto vs. 131K):
 
 | Contexto | Prefill (tok/s) | Decode (tok/s) |
-|---|---|---|
-| Corto (512) | 1684 | 111 |
-| 131.072 | 557 | 42 |
-
-La caida de velocidad de decodificacion entre contexto vacio y 131k es de solo 2,6x. Un prefill completo de 131k se completa en aproximadamente cuatro minutos.
+|---|---:|---:|
+| 512 tokens | 1.684 | 111 |
+| 131.072 tokens | 557 | 42 |
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: 2,67 GB (Q4_K_XL), 3,24 GB (Q5_K_XL), 3,61 GB (Q6_K_XL). No incluye cache KV ni overhead del runtime.
-- Cache KV segun contexto y tipo: a 32K, 1,27 GB en f16 y 0,67 GB en q8_0; a 64K, 2,47 GB y 1,31 GB; a 128K, 4,83 GB y 2,60 GB; a 256K, 9,49 GB y 5,16 GB.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM para Q4_K_XL, 5 GB para Q5_K_XL y 6 GB o mas para Q6_K_XL. El autor apunta a tarjetas de gama de consumo con 6 GB. No se documentan despliegues en A100, H100 ni similares, aunque son tecnicamente posibles.
-- Margen en tarjeta de 6 GB: Q6_K_XL deja espacio para aproximadamente 48K de contexto en f16 o unos 96K en q8_0. Q4_K_XL supera los 128K en la misma tarjeta. El autor recomienda bajar de nivel de cuantizacion antes que reducir la cache para ganar contexto.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF) y runtimes compatibles con endpoints. No se mencionan vLLM, TGI ni Ollama en la informacion disponible, si bien cualquier backend que consuma GGUF puede servirlo.
-- Throughput y latencia: prefill de 1684 tok/s y decode de 111 tok/s en contexto corto; prefill de 557 tok/s y decode de 42 tok/s a 131.072 tokens.
-- Estrategia alternativa segun el autor: si se dispone de mas de 16 GB de RAM, resultaria mas conveniente un modelo MoE como CyberTiel 35B-A3B con offloading parcial a RAM del sistema, que ofrece aproximadamente el doble de capacidad manteniendo velocidad razonable.
+- VRAM para los pesos: 2,67 GB (Q4_K_XL), 3,24 GB (Q5_K_XL) o 3,61 GB (Q6_K_XL).
+- VRAM para caché KV: 0,21 GB a 4K y 4,83 GB a 128K en f16; 0,11 GB a 4K y 2,60 GB a 128K en q8_0.
+- Configuración recomendada por el autor: Q6_K_XL en GPU de 6+ GB de VRAM (rendimiento validado en SWE-bench-Live); Q4_K_XL como opción para GPU de 4 GB o para maximizar contexto.
+- En una tarjeta de 6 GB, Q6_K_XL deja espacio para unos 48K de contexto en f16 o unos 96K en q8_0; Q4_K_XL supera los 128K en la misma tarjeta.
+- El autor advierte que los modelos de este tamaño son sensibles al daño por cuantización por debajo de Q6, y recomienda elegir un modelo nativamente más pequeño antes que bajar de Q4.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF); compatible con endpoints según las etiquetas del repositorio. No se confirma soporte de vLLM, TGI ni Ollama en la información disponible.
+- Throughput: 111 tok/s en decodificación con contexto corto y 42 tok/s a 131K; prefill de 1.684 tok/s en corto y 557 tok/s a 131K (unos 4 minutos para llenar 131K tokens).
+- El autor sugiere, para equipos con más de 16 GB de RAM, usar un modelo MoE mayor con offloading parcial (su colección TielCoder 35B-A3B) en lugar de este 4B.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Contexto | SWE-bench-Live (17 celdas) | Licencia / disponibilidad |
-|---|---|---|---|---|---|
-| Sharp-Spark-X2.5-4B (Q6_K_XL) | 4,1 B | Denso, atencion hibrida | 131K+ | 5,7 soluciones/semilla | Apache 2.0, pesos GGUF abiertos |
-| Upstream Spark-X2.5-4B (Q8) | 4,1 B | Denso, atencion hibrida | 131K+ | 3,7 soluciones/semilla | Apache 2.0, pesos abiertos |
-| CyberTiel 35B-A3B (MoE) | ~35 B totales, ~3 B activos | MoE | no disponible | 13,0 soluciones/semilla | no disponible en la informacion |
-| Haiku 4.5 (modo high) | no disponible | no disponible | no disponible | 5,0 soluciones/semilla | API propietaria |
-| Opus 4.6 (modo medium) | no disponible | no disponible | no disponible | 12,0 soluciones/semilla (1 semilla) | API propietaria |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Sharp-Spark-X2.5-4B-GGUF (esta ficha) | 4,11B denso | 131K validado (hasta 256K por caché KV) | Apache 2.0 | Cuantizaciones Q4-Q6 con imatrix; 2,67-3,61 GB |
+| XHToken/Spark-X2.5-4B (modelo base) | 4,11B denso | 131K | No disponible | Pesos BF16 (8,2 GB); referencia de calidad upstream |
+| Sharp-Spark-X2.6-4B-GGUF | 4B (presumiblemente) | No disponible | Apache 2.0 (presumible) | Versión posterior del mismo autor, recomendada como mejora |
+| CyberTiel 35B-A3B (MoE del mismo autor) | 35B totales, 3B activos | No disponible | No disponible | Requiere más RAM; según el autor, aproximadamente el doble de capacidad en SWE-bench-Live (13,0/17 frente a 5,7/17) |
 
-El autor reporta que CyberTiel 35B-A3B resuelve aproximadamente el doble de tareas que Sharp-Spark en la misma rebanada, a costa de 22 GB de pesos y de requerir mas RAM. En terminos de trabajo amortizado por solucion, Sharp-Spark-Q6 consume 74 minutos, Haiku 21 minutos, el Spark Q8 original 145 minutos y CyberTiel 19 minutos.
+No se dispone de datos de benchmarks de modelos de terceros comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sensibilidad a la cuantizacion: el propio autor advierte que modelos de este tamano se degradan por debajo de Q6, y que si se necesita un quant menor que Q4 conviene elegir un modelo nativamente mas pequeno.
-- Capacidad limitada frente a alternativas mayores: con 4,1 B densos, el modelo resuelve aproximadamente la mitad de tareas que un MoE de 35B con 3B activos en la misma prueba.
-- Idiomas soportados: no disponible, lo que impide garantizar un comportamiento multilingue fiable fuera del ingles tecnico de codigo.
-- Sesgos conocidos: no disponibles; no se documenta ningun analisis de sesgo.
-- Riesgo de alucinacion: inherente a un modelo de 4B, especialmente en generacion de codigo o datos factuales sin verificacion; se recomienda validar la salida en entornos de produccion.
-- Tool calling y function calling: no documentados, por lo que su integracion en agentes que dependan de estas capacidades requiere validacion previa.
-- Licencia: Apache 2.0, que permite uso comercial, modificacion y redistribucion, siempre que se mantengan los avisos de licencia y atribucion correspondientes.
-- Madurez de la publicacion: 0 descargas y 11 me gusta en el momento de la consulta, lo que indica escasa validacion externa por parte de la comunidad.
-- Las metricas de SWE-bench-Live y MMLU-Pro proceden de rebanadas reducidas (17 celdas y 100 preguntas) y, en el caso de Opus, de una sola semilla, por lo que su interpretacion debe ser prudente.
+- Modelo de 4B: capacidad limitada en comparación con modelos mayores; el propio autor indica que un MoE de 35B con offloading es aproximadamente el doble de capaz en tareas de código.
+- Sensibilidad a la cuantización: por debajo de Q6 el daño puede ser significativo; el autor desaconseja cuantizaciones menores que Q4.
+- Los resultados de benchmarks publicados usan subconjuntos reducidos (17 celdas en SWE-bench-Live, 100 preguntas en MMLU-Pro) y múltiples semillas, con intervalos de confianza amplios; no deben extrapolarse a evaluaciones completas.
+- Idiomas soportados no documentados; no hay garantía de rendimiento multilingüe más allá del inglés.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan mitigaciones específicas.
+- Sesgos conocidos: no documentados en la información disponible.
+- La plantilla de chat Sharp-Spark es específica de esta ficha; usar otra plantilla puede degradar el rendimiento.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base XHToken/Spark-X2.5-4B, cuya licencia no se detalla en la información disponible.
+- El autor mantiene una versión posterior (2.6) que recomienda sobre esta; la ficha 2.5 puede quedar desactualizada.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.5-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
-- Coleccion CyberTielCoder 35B-A3B: https://huggingface.co/collections/peculiar-ragdoll/cyber-tiel-coder-35b-a3b
-- Coleccion TielCoder 35B-A3B: https://huggingface.co/collections/peculiar-ragdoll/tiel-coder-35b-a3b
+- Versión posterior recomendada: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.6-4B-GGUF
+- Colección CyberTiel Coder 35B-A3B: https://huggingface.co/collections/peculiar-ragdoll/cyber-tiel-coder-35b-a3b
+- Colección TielCoder 35B-A3B: https://huggingface.co/collections/peculiar-ragdoll/tiel-coder-35b-a3b

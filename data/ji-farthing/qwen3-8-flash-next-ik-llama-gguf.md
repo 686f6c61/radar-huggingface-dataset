@@ -2,79 +2,101 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje de mezcla de expertos (MoE) desarrollado por el equipo Qwen de Alibaba, y constituye el primer modelo open-weight con la arquitectura que servirá de base para Qwen4. Combina una arquitectura híbrida GDN + QSA (atención con gating denso y atención selectiva por consulta) con componentes de espacio de estados (SSM), conexiones hiper y una tabla de embeddings por capa (PLE). El modelo tiene 176.943.899.520 parámetros totales (125B principales más 51B de n-gram) y solo 6B activos por token, lo que lo hace especialmente eficiente para inferencia. Su ventana de contexto nativa es de 256K tokens.
+Qwen3.8-Flash-Next es un modelo de lenguaje de gran escala desarrollado por el equipo Qwen (Alibaba). Se distribuye bajo la licencia comunitaria qwen-community-license-1.0 y, según los datos disponibles, cuenta con aproximadamente 177.000 millones de parámetros totales. La información proporcionada no detalla la arquitectura interna ni la longitud de contexto del modelo base, aunque la model card del repositorio de cuantización menciona tensores de atención, SSM (state space models), hyper-connections, expertos compartidos (shared experts) y proyecciones de un indexador DSA, lo que apunta a una arquitectura híbrida con componentes de mezcla de expertos.
 
-Esta ficha cubre la conversión GGUF publicada por ji-farthing, que ofrece dos cuantizaciones (IQ3_KT e IQ4_KT) calibradas con una matriz de importancia orientada a codificación agéntica, e incluye un archivo complementario con la cabeza MTP (multi-token prediction) para decodificación especulativa. La conversión es solo de texto, aunque el modelo base es multimodal. Requiere el runtime ik_llama.cpp, una bifurcación de llama.cpp con soporte para los tipos de cuantización trellis KT.
+Esta ficha describe concretamente el repositorio `ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF`, una cuantización comunitaria del modelo base orientada a `ik_llama.cpp`. El autor publica tres recetas de cuantización (v3 IQ4_KT, v3 IQ3_KT e IQ4_KT_v2) más una cabeza MTP (multi-token prediction) cuantizada para decodificación especulativa. El objetivo es permitir ejecutar un modelo de ~177B parámetros en hardware de consumo o en configuraciones multi-GPU con offload parcial a RAM, manteniendo una divergencia KL baja respecto al BF16 de referencia.
 
-## Especificaciones tecnicas
+La relevancia actual del repositorio radica en su enfoque en cargas de trabajo agénticas de programación: la importance matrix se calibró específicamente para "agentic coding", y se incluyen métricas de divergencia KL sobre texto en inglés y código. Es, por tanto, una opción práctica para desarrolladores que quieran desplegar localmente un modelo grande con decodificación especulativa y control fino del reparto VRAM/RAM.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE hibrida GDN + QSA con componentes SSM y conexiones hiper |
-| Parametros totales | 176.943.899.520 (125B principales + 51B n-gram) |
-| Parametros activos | 6B por token |
-| Longitud de contexto | 256K tokens (nativo) |
-| Tipos de cuantizacion | IQ3_KT, IQ4_KT (expertos enrutados); IQ4_NL (tabla PLE y ffn_down_exps); Q8_0 (token_embd) |
-| Idiomas soportados | no disponible (el modelo base es multilingue, pero no se especifica en esta conversion) |
-| Licencia | qwen-community-license-1.0 |
-| Formato de pesos | GGUF (ik_llama.cpp) |
+| Arquitectura | No disponible en detalle; la model card menciona tensores de atención, SSM, hyper-connections, shared experts y proyecciones de indexador DSA, compatible con un diseño híbrido con mezcla de expertos |
+| Parámetros totales | 176.943.899.520 (~177B) según safetensors del modelo base |
+| Parámetros activos | No disponible |
+| Longitud de contexto | No disponible como especificación del modelo; la model card cita un ejemplo de caché KV y buffers de cómputo de ~7,5 GiB a 256K de contexto con `-ub 1024` |
+| Tipos de cuantización | v3 IQ4_KT, v3 IQ3_KT, IQ4_KT_v2 (modelo principal); IQ4_KT para la cabeza MTP |
+| Idiomas soportados | No disponibles |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF (compatible con ik_llama.cpp; no con llama.cpp estándar) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de Qwen3.8-Flash-Next es una mezcla de expertos hibrida que combina atencion GDN (gated dense network) con QSA (query-selective attention), e incorpora ademas componentes de espacio de estados (SSM), conexiones hiper (hyper-connection) y una tabla de embeddings por capa (PLE, per-layer token embedding). Segun la model card de la conversion, los tensores de atencion, SSM, hiper-conexion y experto compartido se cuantizan a IQ4_KT, mientras que los expertos enrutados (ffn_gate_exps y ffn_up_exps) se cuantizan a IQ3_KT o IQ4_KT segun el archivo. La tabla PLE, de 26,8 GiB, se cuantiza a IQ4_NL debido a la longitud de fila de 640, que no es compatible con los tipos de bloque de 256.
+La información disponible no describe el proceso de entrenamiento del modelo base Qwen3.8-Flash-Next (número de tokens, composición del dataset, RLHF/DPO, etc.). Lo que sí se deduce de la model card de la cuantización es que el modelo combina capas de atención con componentes SSM, hyper-connections, expertos compartidos y un indexador DSA (DeepSeek Sparse Attention o similar, según la abreviatura empleada). La presencia de "routed experts" y "shared-expert tensors" confirma un diseño de mezcla de expertos con enrutamiento disperso.
 
-No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. La unica innovacion documentada en la conversion es la inclusion de la cabeza MTP (multi-token prediction) como archivo separado para decodificacion especulativa, que permite acelerar la generacion prediciendo varios tokens a la vez. La matriz de importancia se calibro sobre un corpus de codificacion agéntica, lo que optimiza la cuantizacion para tareas de agente y generacion de codigo.
+El repositorio de cuantización documenta una innovación relevante: la inclusión de una cabeza MTP (multi-token prediction) cuantizada a IQ4_KT (2,21 GiB) que actúa como modelo borrador para decodificación especulativa. Las cuantizaciones v3 emplean una importance matrix (`qwen4exp-agentic-v3.imatrix`, 312 MiB) calibrada para código agéntico, y almacenan los tensores de atención, SSM, hyper-connections y expertos compartidos en Q8_0, mientras que las proyecciones del indexador DSA se mantienen en BF16. Las cuantizaciones se generaron con `ik_llama.cpp` en el commit `d9e2868`, que incorpora el codificador CUDA IQ4_KT/IQ3_KT del PR #2572.
 
 ## Capacidades
 
-- Generacion de texto, razonamiento, codigo y matematicas (el modelo base es multimodal, pero esta conversion es solo de texto).
-- Soporte de tool calling y function calling, disenado especificamente para codificacion agéntica.
-- Soporte de agentes y razonamiento multi-paso, con capacidad de mantener contexto largo gracias a la ventana de 256K tokens.
-- Capacidades multilingues del modelo base, aunque no se detallan en esta conversion.
-- Decodificacion especulativa mediante la cabeza MTP incluida, que acelera la inferencia.
-- Contexto largo nativo de 256K tokens, util para documentos extensos o repositorios completos.
+- Generación de texto conversacional y de propósito general (pipeline `text-generation`, etiqueta `conversational`).
+- Razonamiento y generación de código: la importance matrix está calibrada explícitamente para "agentic coding", y se reportan métricas de divergencia KL sobre código.
+- Decodificación especulativa mediante cabeza MTP cuantizada, que acelera la generación al proponer varios tokens por paso.
+- Capacidad de ejecución con offload selectivo de tensores a CPU/RAM (`-ot`, `--defer-ple`), lo que permite servir el modelo en configuraciones de VRAM limitada.
+- Soporte de tool calling, agentes y razonamiento multi-paso: no confirmado explícitamente en la información disponible, aunque el calibrado "agentic" sugiere orientación a estos flujos.
+- Capacidades multimodales: no disponibles; el repositorio se etiqueta como `text-only`.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a su ventana de 256K tokens, manteniendo el historial completo de la interaccion sin perder informacion relevante.
-- Generacion de codigo en produccion: con soporte de tool calling, puede integrarse en pipelines de CI/CD para generar, revisar y corregir codigo automaticamente, reduciendo la intervencion manual.
-- Agentes autonomos de codificacion: su arquitectura MoE con 6B activos y la calibracion de la cuantizacion para tareas agénticas lo hacen adecuado para agentes que deben razonar sobre multiples archivos y ejecutar acciones.
-- Analisis y refactorizacion de repositorios completos: la ventana de 256K tokens permite procesar un repositorio entero de tamano medio en una sola pasada, identificando dependencias, duplicaciones y oportunidades de mejora.
-- Asistente de programacion con contexto de proyecto: puede mantener el contexto de todo un proyecto en memoria, ofreciendo sugerencias coherentes con la arquitectura existente y los estilos de codigo.
-- Procesamiento de documentos legales o academicos extensos: la capacidad de manejar 256K tokens permite resumir, extraer informacion y responder preguntas sobre documentos de cientos de paginas sin segmentacion.
-- Despliegue en hardware consumer con cuantizacion agresiva: la version IQ3_KT, con 80,22 GiB, puede ejecutarse en una maquina con 64 GB de RAM y una GPU de 12 GB usando el modo --defer-ple y offloading de expertos a memoria del sistema.
+- Asistencia de programación en local: el modelo puede integrarse en un IDE o CLI de agente para autocompletado y refactorización multi-archivo, aprovechando la importance matrix calibrada para código agéntico y la cabeza MTP para reducir latencia de generación.
+- Despliegue en estaciones de trabajo con VRAM limitada: con la configuración documentada, solo 4,5 GiB de tensores residen en GPU y 52,6 GiB de expertos enrutados pueden ubicarse en RAM o VRAM, lo que permite ejecutar un modelo de ~177B en equipos con una o dos GPU de consumo y suficiente memoria del sistema.
+- Servicio de chat conversacional de contexto largo: la model card documenta un ejemplo de caché KV de ~7,5 GiB a 256K de contexto, adecuado para conversaciones multi-turno con documentos extensos, siempre que el hardware lo permita.
+- Generación de código en pipelines de CI/CD: la decodificación especulativa con MTP y el soporte de `ik_llama.cpp` permiten automatizar revisiones, generación de tests o parches en entornos controlados.
+- Investigación sobre cuantización: las métricas de divergencia KL (v3 IQ4_KT: 0,058 en inglés y 0,056 en código; v3 IQ3_KT: 0,085 y 0,078) sirven como referencia para estudiar el impacto de IQ4_KT/IQ3_KT en modelos MoE híbridos.
+- Evaluación de decodificación especulativa: la cabeza MTP cuantizada permite medir ganancias de throughput y tasas de aceptación en `ik_llama.cpp` sin necesidad de un modelo borrador separado.
+- Prototipado de agentes autónomos en local: con offload parcial y contexto largo, se pueden probar flujos de razonamiento multi-paso sin depender de APIs externas, sujeto a las restricciones de la licencia comunitaria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card del autor incluye mediciones de perplexity y divergencia KL contra la referencia BF16, pero los valores estan incompletos en el extracto proporcionado. Se indica que la validacion se realizo sobre corpus de ingles y codigo (CPython y PostgreSQL), con 10 fragmentos de 2048 tokens por corpus, pero no se muestran los resultados completos de la cuantizacion IQ3_KT. Por tanto, no es posible presentar una tabla comparativa fiable.
+No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí reporta métricas de divergencia KL frente al BF16 de referencia:
+
+| Receta | Tamaño total | Tensores en GPU (config. documentada) | Expertos enrutados (RAM/VRAM) | KLD medio inglés | KLD medio código |
+|---|---:|---:|---:|---:|---:|
+| v3 IQ4_KT | 82,75 GiB | 4,5 GiB | 52,6 GiB | 0,058 | 0,056 |
+| v3 IQ3_KT | 72,52 GiB | 4,5 GiB | 47,2 GiB | 0,085 | 0,078 |
+| IQ4_KT_v2 | 80,72 GiB | 2,4 GiB | 52,6 GiB | 0,133 | 0,125 |
+
+El autor indica que la v3 IQ4_KT reduce la KLD un 56% en inglés y un 55% en código respecto a la IQ4_KT reemplazada, y la v3 IQ3_KT un 44% y 42% respectivamente. La v3 IQ4_KT es 5,7 GiB más pequeña que la reemplazada, y la v3 IQ3_KT 7,7 GiB más pequeña. Estas cifras miden divergencia respecto al BF16, no corrección del código generado ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la validacion se realizo en una RTX 4070 con 12 GB de VRAM y 64 GB de RAM, usando --defer-ple y offloading de los expertos enrutados a la memoria del sistema. Los expertos enrutados requieren 50,4 GiB (IQ3_KT) o 58,6 GiB (IQ4_KT) en RAM o VRAM.
-- GPU recomendadas: cualquier GPU con al menos 12 GB de VRAM puede usarse con offloading a RAM; para mantener todos los expertos en VRAM se necesitaria una GPU con 50-60 GB, como una A100 80GB o H100.
-- No cabe en una GPU consumer sin offloading a RAM; con 64 GB de RAM y una GPU de 12 GB es viable, como demuestra la validacion.
-- Opciones de despliegue: ik_llama.cpp (llama-server) es el runtime principal; tambien se ha documentado su ejecucion con vLLM en hardware DGX Spark (segun el repositorio de blazux).
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada: con la configuración documentada, 4,5 GiB de tensores del modelo en GPU más 52,6 GiB de expertos enrutados (v3 IQ4_KT) o 47,2 GiB (v3 IQ3_KT). A ello se suman caché KV y buffers de cómputo: ~7,5 GiB a 256K de contexto con `-ub 1024`.
+- RAM del sistema: el tamaño total del archivo (82,75 GiB para v3 IQ4_KT, 72,52 GiB para v3 IQ3_KT) no equivale al requisito de RAM si `--defer-ple` mantiene la tabla PLE en disco.
+- GPU recomendadas: no especificadas en la información disponible. El diseño con offload permite repartir expertos entre VRAM y RAM, por lo que configuraciones multi-GPU (por ejemplo, varias RTX 4090 o A100/H100) son viables, pero no hay cifras de latencia por modelo de GPU.
+- GPU de consumo: el modelo completo no cabe en una sola GPU de consumo; con offload parcial y suficiente RAM del sistema, es ejecutable en equipos con una o varias GPU de consumo, a costa de velocidad de decodificación.
+- Opciones de despliegue: exclusivamente `ik_llama.cpp` en el commit `cb860a9` o posterior (merge del PR #2481). Las builds anteriores no leen correctamente las colas de fila KT. No es compatible con llama.cpp estándar, vLLM, TGI ni Ollama según la información disponible.
+- Latencia y throughput: no disponibles. El autor advierte que reducir `-c` disminuye el contexto, reducir `-ub` reduce la velocidad de procesamiento de prompt, y mover más tensores a CPU con `-ot` reduce la velocidad de decodificación.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos MoE de tamano similar (como Qwen3-235B-A22B o DeepSeek-V3) en la informacion proporcionada. La arquitectura GDN + QSA es novedosa y no existen mediciones estandarizadas publicas que permitan una comparacion rigurosa. Se recomienda consultar los benchmarks oficiales del modelo base en el repositorio de Qwen.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---:|---|---|---|---|
+| Qwen3.8-Flash-Next (base) | ~177B | No disponible | Safetensors (BF16) | qwen-community-license-1.0 | Referencia de calidad; requiere hardware de datacenter |
+| Este repositorio (v3 IQ4_KT) | ~177B (cuantizado) | No disponible | GGUF (ik_llama.cpp) | qwen-community-license-1.0 | KLD 0,058/0,056; 82,75 GiB; MTP incluida |
+| Este repositorio (v3 IQ3_KT) | ~177B (cuantizado) | No disponible | GGUF (ik_llama.cpp) | qwen-community-license-1.0 | KLD 0,085/0,078; 72,52 GiB; menor huella de expertos |
+| IQ4_KT_v2 (repo `_v2`) | ~177B (cuantizado) | No disponible | GGUF (ik_llama.cpp) | qwen-community-license-1.0 | KLD 0,133/0,125; 80,72 GiB; 2,4 GiB en GPU |
+
+No se dispone de información sobre otros modelos comparables de la misma categoría (mismo tamaño o misma tarea) en los datos proporcionados.
 
 ## Limitaciones y advertencias
 
-- Requiere el runtime ik_llama.cpp; los tipos de cuantizacion KT trellis no son compatibles con llama.cpp estandar.
-- La cabeza MTP necesita una compilacion de ik_llama.cpp con soporte para qwen4exp MTP (PR #2369) y la opcion --defer-ple (PR #2389).
-- La tabla PLE de 26,8 GiB se carga en RAM si no se usa --defer-ple; en maquinas con menos RAM que el tamano del archivo, es imprescindible activar esa opcion.
-- Los expertos enrutados se leen en cada token y deben caber en RAM o VRAM; con IQ3_KT se necesitan 50,4 GiB y con IQ4_KT 58,6 GiB.
-- Esta conversion es solo de texto; las capacidades multimodales del modelo base no estan disponibles.
-- La licencia qwen-community-license-1.0 puede imponer restricciones de uso comercial; se recomienda revisar los terminos completos en el repositorio del modelo base.
-- No se documentan sesgos ni riesgos de alucinacion especificos de esta conversion; como todo modelo de lenguaje, puede generar contenido incorrecto o inventado, especialmente en tareas de codigo con contextos ambiguos.
+- La licencia qwen-community-license-1.0 puede imponer restricciones al uso comercial; es necesario revisar el texto completo en el enlace de licencia antes de desplegar en producción.
+- El repositorio es una cuantización comunitaria, no oficial de Qwen; la calidad y el mantenimiento dependen del autor `ji-farthing`.
+- Requiere una versión específica de `ik_llama.cpp` (`cb860a9` o posterior). Otras herramientas (llama.cpp estándar, vLLM, Ollama, TGI) no están soportadas según la información disponible.
+- Las métricas de KLD no garantizan la corrección del código generado ni establecen un ranking de throughput; el propio autor lo advierte.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible, pero aplicables a cualquier modelo de lenguaje de gran escala.
+- Idiomas soportados no disponibles; la calibración de la importance matrix se realizó sobre texto en inglés y código, lo que puede degradar más la calidad en otros idiomas.
+- El rendimiento depende críticamente de la configuración de offload: mover tensores a CPU reduce la velocidad de decodificación, y reducir `-ub` penaliza el procesamiento de prompt.
+- El tamaño del repositorio (350,5 GB) incluye todas las variantes; la descarga selectiva de archivos es necesaria para evitar transferencias innecesarias.
+- La cabeza MTP solo está disponible en el repositorio principal, no en el repositorio `_v2`.
 
 ## Enlaces
 
-- Repositorio de la conversion GGUF: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Runtime ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
-- Guia de despliegue con vLLM en DGX Spark: https://github.com/blazux/qwen3.8-Flash-DGX
-- Pagina del modelo en Ollama: https://ollama.com/library/qwen3.8-flash-next
+- Repositorio de cuantización: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF
+- Repositorio v2: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF_v2
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
+- PR #2481 de ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp/pull/2481
+- PR #2572 de ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp/pull/2572

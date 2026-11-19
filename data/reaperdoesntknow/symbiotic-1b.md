@@ -2,91 +2,102 @@
 
 ## Resumen
 
-Symbiotic-1B (también denominado SymbioticLM-1B) es un modelo de generación de texto desarrollado por Convergent Intelligence LLC, bajo el perfil de Hugging Face `reaperdoesntknow`. Se trata de un híbrido simbólico-transformer construido sobre el backbone de Qwen3-0.6B, al que se añaden módulos de procesamiento simbólico (ThoughtDynamicsLNN, CrystallineProcessor, LiquidThoughtProcessor y HelicalDNAProcessor) y una memoria episódica persistente de 2048 vectores simbólicos. A pesar de su nombre, el modelo tiene 596 millones de parámetros reales (según los pesos safetensors), por lo que se sitúa en la gama de modelos compactos.
+Symbiotic-1B es un modelo de generación de texto publicado por el usuario reaperdoesntknow bajo la marca Convergent Intelligence LLC (Research Division). Se presenta como un fine-tune del modelo base Qwen/Qwen3-0.6B, aunque el autor lo describe en su model card como una arquitectura "híbrida simbólico-transformer" que fusiona el transformer rotatorio de Qwen con un pipeline de procesamiento simbólico y una memoria episódica persistente. El repositorio contiene 596.049.920 parámetros reales según los pesos en safetensors, por debajo del "1B" que sugiere el nombre.
 
-El modelo está diseñado para razonamiento simbólico en entornos con recursos limitados, como agentes de investigación, asistentes ligeros o procesamiento lógico con eficiencia de memoria. Su relevancia radica en la integración de un pipeline simbólico con un transformer clásico, una aproximación poco común en el ecosistema open source. Se entrenó sobre un dataset de razonamiento avanzado en cálculo (0xZee/dataset-CoT-Advanced-Calculus-268) y se enmarca en la teoría del "Discrepancy Calculus", un enfoque matemático para controlar la discrepancia entre el comportamiento esperado y el real del modelo.
+El modelo se orienta a razonamiento simbólico en entornos con recursos limitados: inferencia en CPU, agentes educativos con memoria y generación de explicaciones basadas en grafos. Incorpora componentes propietarios denominados ThoughtDynamicsLNN, CrystallineProcessor (DNAConv GNN), LiquidThoughtProcessor y HelicalDNAProcessor, junto con un banco de 2048 vectores simbólicos de memoria y un modo "Dream" de simulación simbólica.
 
-## Especificaciones tecnicas
+Es relevante ahora por su encuadre dentro del marco teórico "Discrepancy Calculus" del autor, que trata las singularidades de entrenamiento como señales estructurales, y por su propuesta de inferencia simbólica de bajo coste. No obstante, la mayor parte de las capacidades declaradas no están verificadas con benchmarks públicos y la model card contiene afirmaciones que no se corresponden con el tamaño real del modelo.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrido simbólico-transformer (backbone Qwen3-0.6B + módulos simbólicos) |
-| Parametros totales | 596.049.920 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (fuentes externas indican 33K, no confirmado oficialmente) |
-| Tipos de cuantizacion | No disponible (servicios externos ofrecen FP4, FP8, INT4) |
+| Arquitectura | Transformer rotatorio Qwen3 con pipeline simbólico adicional (según el autor: "Hybrid Symbolic–Transformer") |
+| Parámetros totales | 596.049.920 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | No disponible (el repo incluye safetensors y model.bin en precisión original) |
 | Idiomas soportados | Inglés (en) |
-| Licencia | AFL-3.0 (Academic Free License) |
-| Formato de pesos | Safetensors y PyTorch (model.bin) |
+| Licencia | AFL-3.0 (Academic Free License 3.0) |
+| Formato de pesos | safetensors, PyTorch bin (model.bin), memory.pt (vectores de memoria simbólica) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un transformer rotatorio de Qwen3-0.6B con una serie de módulos simbólicos que procesan representaciones de alta dimensión (dimensión simbólica de 1024). Estos módulos incluyen una red LNN de dinámica de pensamiento (ThoughtDynamicsLNN), un procesador cristalino basado en grafos convolucionales de ADN (CrystallineProcessor con DNAConv GNN), un procesador de pensamiento líquido (LiquidThoughtProcessor) y un procesador de ADN helicoidal (HelicalDNAProcessor). Además, el modelo incorpora una memoria episódica persistente de 2048 vectores simbólicos con recuperación entrópica y contextual, y un "Dream Mode" que permite simulación simbólica mediante un generador de pensamientos.
+El backbone declarado es el transformer rotatorio de Qwen3-0.6B, sobre el que el autor superpone varios módulos simbólicos con una dimensión simbólica de 1024: ThoughtDynamicsLNN, CrystallineProcessor (una GNN basada en DNAConv), LiquidThoughtProcessor y HelicalDNAProcessor. Además, el modelo mantiene una memoria episódica de 2048 vectores simbólicos con recuperación entrópica y contextual, y un modo "Dream" que emplea un ThoughtGenerator para simulación simbólica. El tokenizador incluye tokens especiales propios como `<THM>`, `<LEM>` y `<D_IF>`.
 
-El entrenamiento se realizó sobre el dataset `0xZee/dataset-CoT-Advanced-Calculus-268`, especializado en cadenas de razonamiento para cálculo avanzado. No se especifican el número de tokens ni el uso de técnicas como RLHF o DPO. El modelo se enmarca en el marco teórico del Discrepancy Calculus (DISC), que trata las singularidades del entrenamiento (plateaus de pérdida, colapso de modos, olvido catastrófico) como señales estructurales de la geometría del problema de aprendizaje. Este marco introduce conceptos como el operador de discrepancia, los conjuntos de salto y el "ghost imprinting" para transferencia de conocimiento.
+El fine-tune se realizó sobre el dataset 0xZee/dataset-CoT-Advanced-Calculus-268, un conjunto de chain-of-thought centrado en cálculo avanzado. No se especifican en la información disponible el número de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron fases de RLHF o DPO. El autor enmarca el desarrollo en el marco "Discrepancy Calculus" (DISC), una aproximación de teoría de la medida que modela la discrepancia entre la salida esperada y la observada, con conceptos como el operador de discrepancia, los conjuntos de salto y el "ghost imprinting". No se aportan detalles verificables sobre la implementación efectiva de estos módulos ni sobre su integración en el grafo de cómputo del transformer.
 
 ## Capacidades
 
-- Generación de texto y razonamiento simbólico con memoria episódica persistente.
-- Razonamiento matemático avanzado, especialmente en cálculo (entrenado específicamente en cadenas de razonamiento de cálculo).
-- Planificación procedural y modelado matemático.
-- Generación de código de pequeña escala.
-- Explicaciones basadas en grafos (gracias al procesador cristalino con GNN).
-- Modo "Dream" para simulación simbólica y generación de pensamientos.
-- Recuperación contextual de memoria simbólica mediante control entrópico.
-- Soporte de tokens simbólicos especiales (`<THM>`, `<LEM>`, `<D_IF>`) para representar teoremas, lemas y condicionales.
-- No se especifica soporte de tool calling, visión ni audio.
+- Generación de texto conversacional en inglés.
+- Razonamiento simbólico y matemático orientado a cálculo avanzado, según el dataset de entrenamiento.
+- Generación de explicaciones basadas en grafos (declarado por el autor).
+- Planificación procedimental y modelado matemático.
+- Generación de código a pequeña escala.
+- Memoria episódica persistente con recuperación contextual y entrópica (2048 vectores).
+- Modo "Dream" de simulación simbólica mediante ThoughtGenerator.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes multi-paso: no confirmado; el autor menciona "research agents" como caso de uso, sin detalles técnicos.
+- Capacidades multilingües: limitadas al inglés.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Agentes educativos con memoria: el modelo puede mantener un historial simbólico persistente de las interacciones del estudiante, permitiendo adaptar las explicaciones matemáticas al progreso individual gracias a su memoria episódica de 2048 vectores.
-- Razonamiento lógico en dispositivos embebidos: su tamaño compacto (596M parámetros) y su optimización para CPU lo hacen adecuado para ejecutar razonamiento simbólico en Raspberry Pi o sistemas de borde sin GPU.
-- Planificación procedural en robótica o automatización: los módulos simbólicos y la memoria contextual permiten descomponer tareas complejas en pasos lógicos verificables, útil para pipelines de control.
-- Modelado matemático en investigación: el entrenamiento en cálculo avanzado y la generación de cadenas de razonamiento (CoT) facilitan la exploración de demostraciones o la verificación de pasos intermedios en problemas de análisis.
-- Generación de código pequeño para scripts de automatización: aunque no es su fortaleza, puede producir fragmentos de código simple con razonamiento paso a paso, útil en entornos con restricciones de memoria.
-- Explicación de conceptos basada en grafos: el CrystallineProcessor (GNN) permite generar explicaciones que representan relaciones entre conceptos, útil para sistemas de tutoría inteligente o visualización de dependencias lógicas.
-- Prototipado de agentes conversacionales ligeros: su capacidad de mantener memoria simbólica persistente y su bajo consumo lo hacen apto para chatbots de nicho en inglés en entornos sin GPU.
+- Agentes educativos con memoria: el modelo puede mantener un banco de 2048 vectores simbólicos para recordar pasos intermedios de una explicación matemática y recuperarlos contextualmente, lo que encaja en tutores de cálculo que necesitan coherencia entre turnos.
+- Inferencia simbólica en CPU: al partir de un backbone de 0.6B parámetros, es viable ejecutarlo en entornos sin GPU para tareas de razonamiento lógico de baja latencia, como validación de expresiones o clasificación de pasos deductivos.
+- Generación de explicaciones paso a paso de cálculo: el fine-tune sobre CoT de cálculo avanzado lo hace adecuado para producir cadenas de razonamiento en ejercicios de derivadas, integrales y límites, siempre con verificación posterior.
+- Prototipado de pipelines neuro-simbólicos: sirve como banco de pruebas para investigar la integración de módulos simbólicos (GNN, LNN) sobre un transformer pequeño antes de escalar a variantes mayores de la familia Symbiotic.
+- Asistentes ligeros con memoria en dispositivos embebidos: su tamaño permite despliegue en hardware con pocos recursos, con la memoria simbólica serializada en `memory.pt` para persistir estado entre sesiones.
+- Generación de código auxiliar en scripts de cálculo numérico: puede producir fragmentos cortos de código (por ejemplo, en Python con NumPy o SymPy) para automatizar pasos de un procedimiento matemático, con revisión humana obligatoria.
+- Investigación sobre marcos teóricos de entrenamiento: útil para reproducir o evaluar las ideas de Discrepancy Calculus en un modelo pequeño y abierto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K u otras métricas estándar en la model card ni en las fuentes consultadas.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en FP16 (~1,2 GB de pesos), cabe en cualquier GPU con al menos 2 GB de VRAM. Con cuantización INT4, el uso de memoria se reduce a aproximadamente 0,4-0,5 GB, lo que permite ejecución en GPU integradas o incluso en CPU.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o más (GTX 1650, RTX 3050, etc.) es suficiente. También puede ejecutarse en CPU gracias a su tamaño reducido.
-- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM (según FriendliAI), llama.cpp (si se convierte a GGUF), y plataformas como FriendliAI o Antbase que ofrecen inferencia gestionada.
-- Latencia y throughput estimados: no disponibles. Al ser un modelo de ~0,6B, se espera una latencia baja (del orden de decenas de milisegundos por token en GPU moderna), pero no hay datos oficiales.
+- VRAM estimada para inferencia en FP16/BF16: en torno a 1,2 GB solo para pesos (596 M parámetros × 2 bytes), más overhead de activaciones y memoria simbólica; aproximadamente 2-3 GB en la práctica.
+- VRAM estimada en cuantización de 8 bits: alrededor de 0,6-1 GB para pesos.
+- VRAM estimada en cuantización de 4 bits: alrededor de 0,3-0,5 GB para pesos.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior lo ejecuta con holgura. También cabe en GPUs de gama de entrada y en iGPU con memoria unificada.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU dedicadas de los últimos años, y está diseñado explícitamente para inferencia en CPU.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`). No se confirma soporte de llama.cpp, Ollama, vLLM ni TGI en la información disponible; la presencia de módulos simbólicos personalizados probablemente requiera código propio y no sea compatible con runners estándar sin adaptación.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Arquitectura | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Symbiotic-1B | 596M | No disponible | AFL-3.0 | Híbrido simbólico-transformer | Memoria episódica, razonamiento matemático |
-| Qwen3-0.6B (base) | 596M | 32K (original) | Apache 2.0 | Transformer denso | Modelo base sin módulos simbólicos |
-| Qwen3-1.7B | 1,7B | 32K | Apache 2.0 | Transformer denso | Mayor capacidad, sin memoria simbólica |
-| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 | Transformer denso | Contexto largo, sin componentes simbólicos |
+| Symbiotic-1B | 596 M | No disponible | AFL-3.0 | Hugging Face | Fine-tune de Qwen3-0.6B con módulos simbólicos propietarios |
+| Qwen/Qwen3-0.6B | 0,6 B | 32 768 tokens (según ficha del modelo base) | Apache 2.0 | Hugging Face | Modelo base; soporte multilingüe amplio y tool calling |
+| Qwen3-1.7B-Thinking-Distil (mismo autor) | 1,7 B | No disponible | No disponible | Hugging Face | Destilación del mismo portfolio, orientada a razonamiento |
+| Symbiotic-8B (mismo autor) | 8 B (declarado) | No disponible | No disponible | Hugging Face | Variante mayor de la misma familia |
 
-La comparativa muestra que Symbiotic-1B ofrece una propuesta única por su capa simbólica y memoria persistente, aunque su rendimiento bruto en tareas generales probablemente sea inferior a modelos densos de tamaño similar sin esa capa adicional. No se dispone de benchmarks para cuantificar esta diferencia.
+La comparación con el modelo base es la más informativa: Symbiotic-1B hereda el backbone de Qwen3-0.6B pero restringe el idioma al inglés, añade módulos simbólicos no estándar y cambia la licencia de Apache 2.0 a AFL-3.0. Frente a las variantes mayores de la misma familia (Symbiotic-8B, Symiotic-14B), la información disponible no permite comparar rendimiento.
 
 ## Limitaciones y advertencias
 
-- Menos fluidez en lenguaje libre que modelos densos de tamaño similar, según la propia model card.
-- La precisión simbólica depende de la calidad de la memoria y de su curado; una memoria mal mantenida degrada el rendimiento.
-- El "Dream Mode" requiere warm-up o semilla simbólica para consultas complejas; sin ella, puede producir salidas incoherentes.
-- Entrenado exclusivamente en inglés; no hay soporte multilingüe.
-- No se especifican sesgos conocidos, pero al ser un modelo pequeño y entrenado en un dataset especializado (cálculo), su generalización a dominios generales es limitada.
-- Licencia AFL-3.0: es una licencia de código abierto permisiva, similar a BSD, que permite uso comercial y modificación, pero requiere atribución. Conviene revisar los términos exactos para uso en producción.
-- No se han publicado resultados de benchmarks, por lo que su rendimiento real en tareas estándar es desconocido.
-- El nombre "1B" es engañoso: el modelo tiene 596M parámetros, lo que puede llevar a expectativas incorrectas sobre su capacidad.
+- Menor fluidez en lenguaje libre que las variantes mayores, según reconoce el propio autor.
+- La precisión simbólica depende de la curaduría de la memoria; sin mantenimiento del banco de vectores, el rendimiento puede degradarse.
+- El modo "Dream" requiere calentamiento o sembrado simbólico para consultas complejas.
+- Riesgo de alucinación en razonamiento matemático: no hay benchmarks publicados que cuantifiquen su fiabilidad, y el entrenamiento se limita a un dataset CoT de cálculo de 268 ejemplos.
+- Idioma limitado al inglés; no se declara soporte de castellano.
+- Discrepancia entre el nombre ("1B") y el tamaño real (596 M parámetros), lo que puede inducir a error en la planificación de recursos.
+- Los módulos simbólicos propietarios no están documentados con detalle técnico verificable; la integración con herramientas estándar de inferencia (vLLM, llama.cpp, Ollama) no está confirmada y probablemente requiera código personalizado.
+- Licencia AFL-3.0: permite uso comercial con condiciones de reciprocidad y atribución; conviene revisar los términos antes de integrarlo en productos propietarios.
+- Sin información sobre sesgos, filtrado de datos ni evaluaciones de seguridad.
+- Uso en producción no recomendado sin evaluación propia y verificación humana de las salidas matemáticas.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symbiotic-1B
-- Colección SymbioticAI (modelos relacionados): https://huggingface.co/collections/reaperdoesntknow/symbioticai-symbolic-transformers
-- Inferencia gestionada en FriendliAI: https://friendli.ai/models/reaperdoesntknow/Symbiotic-1B
-- Ficha en Antbase (contexto 33K): https://antbase.ai/models/symbiotic-1b
-- Paper de Discrepancy Calculus (DOI: 10.57967/hf/8194): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
-- Paper de Structure Over Scale (DOI: 10.57967/hf/8165): https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
-- Paper de DualMind Methodology (DOI: 10.57967/hf/8184): https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symbiotic-1B
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Dataset de entrenamiento: https://huggingface.co/datasets/0xZee/dataset-CoT-Advanced-Calculus-268
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Discrepancy Calculus: Foundations and Core Theory: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
+- Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
+- Three Teachers to Dual Cognition: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: 10.57967/hf/8184)
+- Symbiotic-8B: https://huggingface.co/reaperdoesntknow/Symbiotic-8B
+- Symiotic-14B: https://huggingface.co/reaperdoesntknow/Symiotic-14B
+- Symbiotic-Beta: https://huggingface.co/reaperdoesntknow/Symbiotic-Beta

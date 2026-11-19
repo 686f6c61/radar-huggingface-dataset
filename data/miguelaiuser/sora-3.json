@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "MiguelAiUser/sora-3",
+  "slug": "miguelaiuser-sora-3",
+  "author": "MiguelAiUser",
+  "url": "https://huggingface.co/MiguelAiUser/sora-3",
+  "created_at": "2026-11-18T22:40:52.000Z",
+  "updated_at": "2026-11-18T22:44:23.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "text-to-video",
+    "en",
+    "dataset:AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF-metrics",
+    "base_model:SORALab/TriCosmos-2.5-predict",
+    "base_model:finetune:SORALab/TriCosmos-2.5-predict",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "SORALab/TriCosmos-2.5-predict",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sora 3 AI Video Generator Free - Open AI Sora 3 Model",
+      "url": "https://www.sara3.org/",
+      "snippet": "The Sora 3 website offers the Sora 3 Model for cinematic 1080p video. Try Sora 3 AI Video Generator Free on Sora 3 Web or upgrade to Sora 3 Pro. Create videos from text or images with the Sora 3.0 engine."
+    },
+    {
+      "title": "Sora: Creating video from text | OpenAI",
+      "url": "https://openai.com/index/sora/",
+      "snippet": "We're teaching AI to understand and simulate the physical world in motion, with the goal of training models that help people solve problems that require real-world interaction. Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user's prompt."
+    }
+  ]
+}

@@ -1,101 +1,108 @@
 # openbmb/MiniCPM-o-2_6
 
 ## Resumen
+MiniCPM-o 2.6 es un modelo multimodal omni (visión, audio, voz y texto) desarrollado por OpenBMB, construido de forma end-to-end sobre SigLip-400M (encoder visual), Whisper-medium-300M (encoder de audio), ChatTTS-200M (decodificador de voz) y Qwen2.5-7B como backbone de lenguaje, sumando aproximadamente 8.000 millones de parámetros. Resuelve el problema de interacción multimodal en tiempo real —conversación por voz bidireccional, streaming de vídeo y audio continuo— en dispositivos de borde, algo que modelos propietarios como GPT-4o solo ofrecían vía API en la nube.
 
-MiniCPM-o 2.6 es un modelo omni-modal de última generación desarrollado por OpenBMB, diseñado para procesar y generar texto, imagen, audio y video de forma integrada. Con un total de 8.67 mil millones de parámetros, combina cuatro componentes preentrenados: SigLip-400M para visión, Whisper-medium-300M para audio, ChatTTS-200M para síntesis de voz y Qwen2.5-7B como base de lenguaje. El modelo se entrena de extremo a extremo, lo que permite explotar sinergias entre modalidades y alcanzar un rendimiento comparable a GPT-4o en tareas de visión y conversación de voz en tiempo real.
+Su relevancia radica en tres ejes: rendimiento (supera a GPT-4o-202405, Gemini 1.5 Pro y Claude 3.5 Sonnet en comprensión de imagen única según OpenCompass, con 70,2 de media en 8 benchmarks), eficiencia (640 tokens para una imagen de 1,8 millones de píxeles, un 75 % menos que la mayoría de modelos) y apertura (licencia Apache 2.0, pesos safetensors, GGUF e int4, soporte en llama.cpp, Ollama y vLLM). Está pensado para despliegue local en iPad, GPU de consumo y entornos de producción con throughput alto.
 
-Su relevancia actual radica en tres aspectos: ofrece capacidades de streaming multimodal en vivo (video y audio continuos) con interacción de voz en tiempo real, supera a modelos propietarios como GPT-4o y Claude 3.5 Sonnet en benchmarks específicos de visión y OCR, y es lo suficientemente eficiente para ejecutarse en dispositivos de borde como un iPad gracias a su baja densidad de tokens visuales (640 tokens por imagen de 1.8M píxeles). Además, se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y académico.
+La ficha cubre arquitectura, capacidades, casos de uso, requisitos de hardware y limitaciones, con datos extraídos de la model card y de los metadatos de Hugging Face.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | End-to-end multimodal (SigLip-400M + Whisper-medium-300M + ChatTTS-200M + Qwen2.5-7B) |
-| Parametros totales | 8.674.997.028 (8.67B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (soporta imágenes de hasta 1.8M píxeles, p.ej. 1344x1344) |
-| Tipos de cuantizacion | int4, GGUF (16 tamaños disponibles) |
-| Idiomas soportados | Multilingüe (más de 30 idiomas en texto); conversación de voz bilingüe (inglés y chino) |
+| Arquitectura | Omni-modal end-to-end (transformer): SigLip-400M (visión) + Whisper-medium-300M (audio) + ChatTTS-200M (voz) + Qwen2.5-7B (LLM backbone); mecanismo de streaming en vivo con multiplexación por división de tiempo (TDM) |
+| Parametros totales | 8.674.997.028 (~8,67 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (la model card no especifica tokens de contexto textual; se documenta el límite visual de 1,8 M píxeles por imagen) |
+| Tipos de cuantizacion | int4 y GGUF (16 tamaños distintos); pesos originales en safetensors (bf16/fp16) |
+| Idiomas soportados | Multilingüe (más de 30 idiomas); conversación por voz en tiempo real en inglés y chino |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF, int4 |
+| Formato de pesos | safetensors (transformers); GGUF; int4 |
 
 ## Arquitectura y entrenamiento
+El modelo es una arquitectura omni-modal end-to-end: encoders y decoders de cada modalidad (SigLip-400M para imagen, Whisper-medium-300M para audio, ChatTTS-200M para síntesis de voz) se conectan y entrenan conjuntamente con un backbone Qwen2.5-7B para explotar el conocimiento multimodal compartido. La innovación principal es el mecanismo de streaming en vivo: los encoders/decoders offline se convierten en online para entradas y salidas continuas, y se introduce un esquema de multiplexación por división de tiempo (TDM) que permite aceptar flujos continuos de vídeo y audio independientes de las consultas del usuario, con interacción de voz en tiempo real.
 
-MiniCPM-o 2.6 adopta una arquitectura end-to-end que conecta encoders y decoders especializados: SigLip-400M para visión, Whisper-medium-300M para reconocimiento de audio, ChatTTS-200M para síntesis de voz y Qwen2.5-7B como modelo de lenguaje base. Esta integración permite que las señales multimodales se procesen de forma conjunta, mejorando la coherencia entre modalidades. El modelo incorpora un mecanismo de streaming en tiempo real que convierte los encoders/decoders offline en versiones online, habilitando la entrada continua de video y audio sin necesidad de consultas del usuario.
-
-El entrenamiento se basa en técnicas de alineación como RLAIF-V (Reinforcement Learning from AI Feedback for Vision), que se aplicó sobre el dataset openbmb/RLAIF-V-Dataset, y también utiliza la metodología VisCPM. Estos enfoques buscan reducir alucinaciones y mejorar la fiabilidad de las respuestas. No se han publicado detalles sobre el número total de tokens de entrenamiento ni la composición exacta del corpus, pero el modelo demuestra un rendimiento sólido en tareas de razonamiento multimodal, OCR y comprensión de contexto largo en video.
+El alineamiento se apoya en las técnicas RLAIF-V (aceptada en CVPR 2025, con código, dataset y paper abiertos) y VisCPM, orientadas a comportamientos fiables y reducción de alucinaciones. No se especifica en la información disponible el número exacto de tokens de entrenamiento ni la composición completa del dataset, más allá del uso de openbmb/RLAIF-V-Dataset. El modelo incorpora además clonación de voz end-to-end, control de emoción/velocidad/estilo y juego de rol.
 
 ## Capacidades
-
-- Generación de texto y razonamiento multimodal: comprende y responde sobre imágenes individuales, múltiples imágenes y secuencias de video.
-- Reconocimiento de voz (ASR) y traducción de voz a texto (STT): supera a GPT-4o-realtime en tareas de audio.
-- Síntesis de voz (TTS) con control de emoción, velocidad y estilo; soporta clonación de voz de extremo a extremo.
-- Conversación de voz en tiempo real bilingüe (inglés y chino) con voces configurables.
-- Streaming multimodal en vivo: acepta flujos continuos de video y audio, y permite interacción de voz simultánea.
-- OCR de alta calidad: estado del arte en OCRBench para modelos menores de 25B, superando a GPT-4o-202405.
-- Procesamiento de imágenes con cualquier relación de aspecto y hasta 1.8M píxeles, generando solo 640 tokens visuales (75% menos que la mayoría de modelos).
-- Capacidades multilingües en más de 30 idiomas para tareas de texto e imagen.
-- Aprendizaje en contexto (in-context learning) para tareas de visión y lenguaje.
+- Comprensión de imagen única, multi-imagen y vídeo, con capacidad de in-context learning visual.
+- OCR de alto rendimiento: estado del arte en OCRBench para modelos por debajo de 25B, superando a GPT-4o-202405.
+- Procesamiento de imágenes con cualquier relación de aspecto y hasta 1,8 millones de píxeles (por ejemplo, 1344x1344).
+- Conversación por voz en tiempo real bilingüe (inglés y chino) con voces configurables.
+- ASR y traducción speech-to-text (STT), con rendimiento superior a GPT-4o-realtime en comprensión de audio.
+- Evaluaciones semánticas y acústicas de conversación por voz de estado del arte en la comunidad open source.
+- Control de emoción, velocidad y estilo de voz; clonación de voz end-to-end; role play.
+- Streaming multimodal en vivo: acepta flujos continuos de vídeo y audio independientes de las consultas del usuario.
+- Comprensión omni-fuente (vídeo y audio simultáneos) y comprensión de contexto multimodal.
+- Comportamientos fiables (trustworthy) gracias a RLAIF-V; supera a GPT-4o y Claude 3.5 Sonnet en MMHal-Bench.
+- Capacidades multilingües en más de 30 idiomas.
+- No se menciona explícitamente soporte de tool calling / function calling ni de agentes multi-paso en la información disponible.
 
 ## Casos de uso
-
-- Atención al cliente multimodal en tiempo real: el modelo puede gestionar videollamadas o chats con voz, comprendiendo tanto el lenguaje hablado como el contexto visual (por ejemplo, mostrar un producto defectuoso). Su capacidad de streaming continuo permite respuestas inmediatas sin esperar a que el usuario termine de hablar.
-- Transcripción y traducción automática de reuniones: gracias a su ASR y STT de alta calidad, puede transcribir conversaciones en inglés y chino, traducirlas al vuelo y generar resúmenes textuales, útil para entornos corporativos multilingües.
-- Digitalización de documentos con OCR: su rendimiento superior en OCRBench lo hace adecuado para extraer texto de imágenes de alta resolución, facturas, formularios o capturas de pantalla, integrándose en flujos de automatización documental.
-- Asistentes educativos interactivos: puede actuar como tutor que ve el material del estudiante (fotos de ejercicios) y escucha sus preguntas, respondiendo con voz y texto, ideal para plataformas de aprendizaje en línea.
-- Creación de contenido multimedia con clonación de voz: permite generar doblajes o narraciones personalizadas a partir de una muestra de voz, controlando emoción y estilo, para producción de podcasts, audiolibros o videos.
-- Monitorización de video en tiempo real: su capacidad de streaming de video y audio permite analizar cámaras de seguridad o transmisiones en vivo, detectando eventos y respondiendo con alertas de voz, útil en domótica o vigilancia ligera.
-- Asistencia a personas con discapacidad visual: el modelo puede describir el entorno a través de la cámara del móvil y responder a preguntas habladas, facilitando la navegación y el reconocimiento de objetos.
+- Asistencia en vivo por voz en dispositivos de borde: el modelo acepta streaming continuo de audio y responde en tiempo real con voces configurables, lo que permite integrarlo en tablets (iPad) o móviles como asistente conversacional sin depender de la nube.
+- Transcripción y traducción de reuniones: ASR y STT con rendimiento superior a GPT-4o-realtime permiten transcribir audio en inglés y chino y traducirlo en la misma sesión, con contexto multimodal si se acompaña de vídeo.
+- Digitalización de documentos y facturas: OCR de estado del arte para modelos <25B, con soporte de imágenes de hasta 1,8 M píxeles y cualquier relación de aspecto, lo hace adecuado para pipelines de extracción de texto en recibos, formularios y capturas de pantalla.
+- Atención al cliente multimodal: conversación multi-turno con voz y clonación de voz end-to-end permite desplegar agentes con voz corporativa personalizada y control de emoción/estilo.
+- Accesibilidad: descripción de escenas en tiempo real a partir de streaming de vídeo continuo, útil para personas con discapacidad visual, con latencia baja gracias a la densidad de tokens (640 tokens por imagen de 1,8 M píxeles).
+- Moderación de contenido audiovisual: comprensión omni-fuente (vídeo + audio) en streaming permite analizar transmisiones en vivo y detectar contenido relevante en contexto.
+- Investigación en interacción omni-modal: al ser Apache 2.0 y con soporte de fine-tuning vía LLaMA-Factory, sirve como base para experimentos de streaming multimodal y alineamiento RLAIF-V.
+- Despliegue en CPU: la versión GGUF en llama.cpp permite inferencia local eficiente en equipos sin GPU, útil para prototipos y entornos air-gapped.
 
 ## Benchmarks y rendimiento
+Datos publicados en la model card (no se dispone de la tabla numérica completa por benchmark en la información proporcionada; se recogen solo las afirmaciones explícitas):
 
-No se han publicado resultados numéricos detallados de benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible. Sin embargo, la model card reporta los siguientes resultados cualitativos:
-
-| Benchmark | Resultado |
-|---|---|
-| OpenCompass (promedio de 8 benchmarks) | 70.2 puntos; supera a GPT-4o-202405, Gemini 1.5 Pro y Claude 3.5 Sonnet en imagen única |
-| OCRBench (modelos <25B) | Estado del arte; supera a GPT-4o-202405 |
-| MMHal-Bench (fiabilidad) | Supera a GPT-4o y Claude 3.5 Sonnet |
-| StreamingBench (video y audio en tiempo real) | Supera a GPT-4o-202408 y Claude 3.5 Sonnet; estado del arte en código abierto |
-
-Estos datos provienen de las afirmaciones del autor y no se acompañan de métricas numéricas desglosadas en la documentación consultada.
+| Benchmark / evaluacion | Resultado | Comparacion |
+|---|---|---|
+| OpenCompass (media de 8 benchmarks) | 70,2 | Supera a GPT-4o-202405, Gemini 1.5 Pro y Claude 3.5 Sonnet en imagen única |
+| Comprensión multi-imagen y vídeo | No disponible (cifras) | Supera a GPT-4V y Claude 3.5 Sonnet |
+| OCRBench | No disponible (cifra) | Estado del arte para modelos <25B; supera a GPT-4o-202405 |
+| MMHal-Bench | No disponible (cifra) | Supera a GPT-4o y Claude 3.5 Sonnet |
+| StreamingBench | No disponible (cifra) | Supera a GPT-4o-202408 y Claude 3.5 Sonnet; estado del arte open source |
+| ASR / STT translation | No disponible (cifra) | Supera a GPT-4o-realtime |
+| Densidad de tokens visuales | 640 tokens por imagen de 1,8 M px | 75 % menos tokens que la mayoría de modelos |
 
 ## Requisitos de hardware
-
-- VRAM estimada: no se proporcionan cifras oficiales. Con 8.67B parámetros, una cuantización int4 requeriría aproximadamente 4.5-5 GB de VRAM, mientras que la versión GGUF Q4 podría ocupar alrededor de 5 GB. Para la versión completa en fp16 se necesitarían unos 17 GB.
-- GPU recomendadas: se puede ejecutar en GPUs de consumo como RTX 3060 (12 GB), RTX 4070 o superiores con cuantización. Para inferencia sin cuantizar se recomienda una GPU con al menos 24 GB (RTX 3090/4090 o A100).
-- Compatibilidad con dispositivos de borde: el modelo se ha demostrado funcionando en iPad, lo que indica que es viable en hardware con recursos limitados.
-- Opciones de despliegue: vLLM para alta productividad, llama.cpp para inferencia eficiente en CPU, Ollama (repositorio oficial disponible), y soporte para fine-tuning con LLaMA-Factory.
-- Latencia y throughput: no se han publicado datos concretos, pero la baja densidad de tokens visuales (640 tokens por imagen de 1.8M píxeles) reduce el tiempo de primer token y el uso de memoria en comparación con modelos similares.
+- VRAM estimada: no disponible de forma explícita; con ~8,67 B parámetros, la inferencia en bf16/fp16 requiere del orden de 17-18 GB de VRAM (pesos) más overhead de encoders y KV cache; la versión int4 reduce esta cifra aproximadamente a un cuarto.
+- GPU recomendadas: no especificadas en la información disponible; por tamaño, A100/H100 para throughput alto con vLLM, y RTX 4090 (24 GB) para bf16 en single-GPU.
+- GPU de consumo: cabe en GPU de consumo con cuantización int4 o GGUF; el modelo está optimizado para dispositivos de borde como iPad y para inferencia en CPU vía llama.cpp.
+- Opciones de despliegue: transformers, llama.cpp (rama minicpm-omni), Ollama (repositorio oficial openbmb, one-click), vLLM (alto throughput y bajo consumo de memoria), Gradio para WebUI local, LLaMA-Factory para fine-tuning.
+- Latencia y throughput: no disponibles como cifras; la model card destaca mejora de velocidad de inferencia, latencia del primer token, uso de memoria y consumo energético derivados de la densidad de tokens (640 tokens por imagen de 1,8 M px).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento en visión | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-o 2.6 | 8.67B | No disponible (imágenes hasta 1.8M píxeles) | Supera a GPT-4o-202405 en OpenCompass | Apache 2.0 | Abierto (safetensors, GGUF, int4) |
-| GPT-4o (propietario) | No publicado | 128k tokens (aprox.) | Referencia de mercado | Propietaria | API de pago |
-| Claude 3.5 Sonnet (propietario) | No publicado | 200k tokens | Competitivo en visión | Propietaria | API de pago |
-| MiniCPM-V 2.6 (versión anterior) | 8B | No disponible | Inferior a MiniCPM-o 2.6 | Apache 2.0 | Abierto |
-| Qwen2.5-7B (base) | 7.6B | 32k tokens | Solo texto | Apache 2.0 | Abierto |
+| MiniCPM-o 2.6 | ~8,67 B | No disponible (visual: 1,8 M px) | OpenCompass 70,2; OCRBench SOTA <25B; StreamingBench SOTA open source | Apache 2.0 | Hugging Face, Ollama, llama.cpp, vLLM |
+| GPT-4o-202405 | No disponible (propietario) | No disponible | Referencia propietaria; superado por MiniCPM-o en imagen única y OCRBench | Propietaria | Solo API |
+| Gemini 1.5 Pro | No disponible (propietario) | No disponible | Referencia propietaria; superado por MiniCPM-o en imagen única | Propietaria | Solo API |
+| Claude 3.5 Sonnet | No disponible (propietario) | No disponible | Referencia propietaria; superado por MiniCPM-o en imagen única, multi-imagen, vídeo y MMHal-Bench | Propietaria | Solo API |
 
-La comparación con GPT-4o y Claude 3.5 Sonnet es cualitativa según las afirmaciones del autor; no hay datos numéricos públicos para verificación independiente.
+No se dispone en la información proporcionada de comparativas numéricas con modelos open source de tamaño similar (por ejemplo, Qwen2.5-VL-7B o Llama 3.2 Vision), por lo que esas cifras se indican como no disponibles.
 
 ## Limitaciones y advertencias
-
-- La conversación de voz en tiempo real solo está disponible en inglés y chino, aunque el texto y la visión soportan más de 30 idiomas. Esto limita su uso en entornos multilingües de voz.
-- No se han documentado sesgos específicos del modelo, pero al estar entrenado sobre datos web, puede heredar sesgos sociales y culturales. Se recomienda evaluación adicional antes de desplegarlo en entornos sensibles.
-- Riesgo de alucinaciones en tareas complejas de razonamiento multimodal, a pesar de las mejoras con RLAIF-V. Se recomienda verificación humana en aplicaciones críticas.
-- La longitud de contexto de texto no está especificada; el modelo está optimizado para imágenes de alta resolución y streaming, pero puede tener limitaciones en conversaciones de texto muy largas.
-- Aunque la licencia Apache 2.0 permite uso comercial, el modelo depende de componentes con licencias propias (Whisper, ChatTTS) que pueden tener restricciones adicionales; se debe revisar cada componente antes de uso comercial.
-- Para streaming en tiempo real, la latencia depende del hardware; en dispositivos de gama baja puede no ser fluido.
+- Riesgo de alucinación: aunque RLAIF-V y VisCPM mitigan el problema y el modelo supera a GPT-4o y Claude 3.5 Sonnet en MMHal-Bench, sigue siendo un modelo generativo y puede producir contenido incorrecto, especialmente en OCR de imágenes de baja calidad o en audio con ruido.
+- Sesgos: no se documentan sesgos específicos en la información disponible; al entrenarse con datos web y multilingües, es esperable heredar sesgos de esos corpus.
+- Idiomas: el soporte multilingüe cubre más de 30 idiomas, pero la conversación por voz en tiempo real solo está disponible en inglés y chino; otras lenguas quedan limitadas a texto/visión.
+- Contexto: no se especifica la longitud de contexto textual; para streaming continuo, la ventana efectiva depende del mecanismo TDM y no de un límite documentado de tokens.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los componentes (Qwen2.5-7B, Whisper, ChatTTS, SigLip) y de los datasets de alineamiento antes de redistribuir.
+- Producción: la rama de llama.cpp para MiniCPM-o es específica (minicpm-omni) y puede no estar integrada en todas las distribuciones; verificar compatibilidad de vLLM y Ollama con la versión concreta antes de desplegar.
+- Dispositivos de borde: el rendimiento en iPad u otros dispositivos depende de cuantización y del soporte de streaming; no hay cifras públicas de latencia por dispositivo.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-o-2_6
-- Repositorio GitHub oficial: https://github.com/OpenBMB/MiniCPM-o
-- Blog técnico (informe del modelo): https://openbmb.notion.site/MiniCPM-o-2-6-A-GPT-4o-Level-MLLM-for-Vision-Speech-and-Multimodal-Live-Streaming-on-Your-Phone-185ede1b7a558042b5d5e45e6b237da9
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM-o-2_6
+- GitHub: https://github.com/OpenBMB/MiniCPM-o
+- Wiki (chino): https://openbmb.cn/docs/
 - Demo online: https://minicpm-omni-webdemo-us.modelbest.cn
-- Paper de RLAIF-V (técnica de alineación): https://arxiv.org/abs/2405.17220
-- Repositorio de RLAIF-V en GitHub: https://github.com/RLHF-V/RLAIF-V
-- Dataset de RLAIF-V: https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset
-- Repositorio Ollama del modelo: https://ollama.com/openbmb/minicpm-o2.6
+- Blog técnico: https://openbmb.notion.site/MiniCPM-o-2-6-A-GPT-4o-Level-MLLM-for-Vision-Speech-and-Multimodal-Live-Streaming-on-Your-Phone-185ede1b7a558042b5d5e45e6b237da9
+- Repositorio Ollama: https://ollama.com/openbmb
+- Modelo en Ollama: https://ollama.com/openbmb/minicpm-o2.6
+- Versión int4: https://huggingface.co/openbmb/MiniCPM-o-2_6-int4
+- Versión GGUF: https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf
+- llama.cpp (rama minicpm-omni): https://github.com/OpenBMB/llama.cpp/blob/minicpm-omni/examples/llava/README-minicpmo2.6.md
+- RLAIF-V (código): https://github.com/RLHF-V/RLAIF-V
+- RLAIF-V (dataset): https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset
+- RLAIF-V (paper): https://arxiv.org/abs/2405.17220
+- VisCPM: https://github.com/OpenBMB/VisCPM
+- Paper adicional citado en tags: https://arxiv.org/abs/2408.01800
+- Fine-tuning con LLaMA-Factory: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/llamafactory_train.md

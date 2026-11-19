@@ -53,16 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Build specialized multimodal models with LFM3 - Hugging Face",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "snippet": "A Blog post by Liquid AI on Hugging Face"
-    },
-    {
-      "title": "LFM3 - lmstudio.ai",
-      "url": "https://lmstudio.ai/models/lfm3",
-      "snippet": "LFM3-VL-2B is Liquid AI’s 1.92B vision-language model for on-device image and video understanding, with reasoning, tool use, and a 128K-token context window."
-    }
-  ]
+  "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "Anadilorg",
   "url": "https://huggingface.co/Anadilorg/Anadil_Ladino_TTS",
   "created_at": "2026-08-30T19:50:31.000Z",
-  "updated_at": "2026-08-30T19:51:10.000Z",
+  "updated_at": "2026-11-18T16:03:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

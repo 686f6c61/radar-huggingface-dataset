@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "Comfy-Org/LongCat-Video-Avatar",
+  "slug": "comfy-org-longcat-video-avatar",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/LongCat-Video-Avatar",
+  "created_at": "2026-11-18T21:17:14.000Z",
+  "updated_at": "2026-11-18T23:03:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "image-to-video",
+    "base_model:meituan-longcat/LongCat-Video-Avatar-1.6",
+    "base_model:finetune:meituan-longcat/LongCat-Video-Avatar-1.6",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37082163472,
+  "storage_human": "37.1 GB",
+  "context_length": null,
+  "base_model": "meituan-longcat/LongCat-Video-Avatar-1.6",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    },
+    {
+      "title": "Comfy Cloud: Run ComfyUI online | Zero Setup, Powerful GPUs, …",
+      "url": "https://cloud.comfy.org/",
+      "snippet": "Bring your creative ideas to life with Comfy Cloud. Build and run your workflows to generate stunning images and videos instantly …"
+    }
+  ]
+}

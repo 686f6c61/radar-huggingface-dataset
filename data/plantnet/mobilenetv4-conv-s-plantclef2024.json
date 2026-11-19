@@ -5,7 +5,7 @@
   "author": "PlantNet",
   "url": "https://huggingface.co/PlantNet/mobilenetv4-conv-s-plantclef2024",
   "created_at": "2026-11-01T09:19:22.000Z",
-  "updated_at": "2026-11-10T16:17:47.000Z",
+  "updated_at": "2026-11-18T14:04:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 342,
+  "downloads_30d": 380,
   "trending_score": 0,
   "parameters": 12517598,
   "parameters_human": "12.5M",

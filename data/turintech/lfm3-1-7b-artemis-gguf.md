@@ -2,105 +2,101 @@
 
 ## Resumen
 
-LFM3-1.7B-Artemis-GGUF es una cuantizacion en formato GGUF del modelo LiquidAI/LFM3-1.7B de Liquid AI, publicada por TurinTech. Se trata de una version comprimida mediante la tecnica propietaria Artemis Adaptive Compression, que reduce el peso de descarga desde los 3,467 GB del GGUF BF16 de referencia hasta 1,100 GB, es decir, un 68,3% menos. El modelo resultante conserva el comportamiento conversacional y de uso de herramientas del original con un impacto minimo en la calidad segun las pruebas del autor.
+LFM3-1.7B-Artemis-GGUF es una cuantización en formato GGUF del modelo LiquidAI/LFM3-1.7B, publicada por TurinTech bajo el nombre de su pipeline de compresión Artemis. El modelo base es un transformer de 1.728.801.600 parámetros desarrollado por Liquid AI, orientado a generación de texto, chat y tool calling en inglés. Esta versión cuantizada ocupa 1,10 GB en Q4_K_M, lo que la sitúa en el rango de modelos ejecutables en hardware de consumo y en entornos locales sin GPU dedicada.
 
-El modelo base pertenece a la familia LFM3 de Liquid AI, disenada para generacion de texto y tool calling en ingles. Con 1.728.801.600 parametros, se posiciona en el segmento de modelos pequenos orientados a despliegue local y entornos con recursos limitados. El archivo publicado corresponde a una cuantizacion Q4_K_M, que es la unica variante incluida en el repositorio.
+El interés de esta ficha radica en que TurinTech no se limita a aplicar una cuantización estándar: compara su fichero con las cuantizaciones de bartowski y de Liquid AI sobre dos conjuntos de evaluación (tool use del BFCL y seguimiento estricto de instrucciones de IFEval) y publica los resultados por fichero. Según esos datos, la versión Artemis Q4_K_M conserva 58 de 64 decisiones correctas de tool use y 58 de 64 prompts seguidos en IFEval, sin truncamientos en el límite de tokens, frente a las 51 y 56 del Q4_K_M oficial de Liquid AI.
 
-La relevancia de esta ficha radica en que documenta una alternativa de cuantizacion agresiva con calibracion propia (imatrix) sobre un modelo compacto, verificada con llama.cpp y con evaluaciones parciales de BFCL e IFEval. No obstante, se trata de un artefacto con cero descargas y cero likes en el momento de la consulta, y las propias limitaciones declaradas restringen su uso cualificado a texto en ingles con thinking desactivado.
+La relevancia actual del modelo es práctica: permite desplegar un asistente conversacional con soporte de function calling en local mediante llama.cpp u Ollama, con una ventana de contexto configurable (los ejemplos de la model card usan 8192 tokens) y una licencia lfm1.0 heredada del modelo base que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base LiquidAI/LFM3-1.7B; familia LFM3 de Liquid AI) |
+| Arquitectura | Transformer (modelo base LiquidAI/LFM3-1.7B); cuantizacion GGUF para llama.cpp |
 | Parametros totales | 1.728.801.600 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 8192 tokens (contexto usado en la evaluacion del autor); contexto nativo del modelo base no disponible |
-| Tipos de cuantizacion | Q4_K_M (unica variante publicada); calibracion con imatrix |
-| Idiomas soportados | ingles (unico idioma cualificado por el autor); otros idiomas no cualificados |
-| Licencia | other (LFM Open License v1.0, heredada del modelo base) |
-| Formato de pesos | GGUF |
-| Tamano del archivo | 1.100 GB (decimal); 1.099.570.624 bytes |
-| SHA-256 | fc1781679f925fe22c0984cf052ee552fbed3cc95916872d6d493b93b927270f |
-| Modelo base | LiquidAI/LFM3-1.7B (commit 0dc4268b561499c648c7ba7c9466bf3d8d01517a) |
-| Tipo de modelo | chat |
-| Libreria | gguf / llama.cpp |
+| Parametros activos | no disponible (no se indica que el modelo base sea MoE) |
+| Longitud de contexto | no disponible como spec oficial del modelo; los ejemplos de la model card arrancan el servidor con `-c 8192` |
+| Tipos de cuantizacion | Q4_K_M (fichero principal de 1,10 GB); el repo incluye otros ficheros GGUF segun la tabla comparativa (Q4_K_S e IQ4_XS aparecen como referencias de terceros) |
+| Idiomas soportados | en (ingles); no se declaran otros idiomas |
+| Licencia | lfm1.0 (license_name: lfm1.0, enlace a la licencia del modelo base LiquidAI/LFM3-1.7B) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo base LiquidAI/LFM3-1.7B (no se especifica si es un transformer denso, un hibrido o una arquitectura con atencion lineal). Lo unico conocido es que se trata de un modelo de 1.728.801.600 parametros orientado a generacion de texto y uso de herramientas, con soporte de un modo de razonamiento ("thinking") que puede activarse o desactivarse mediante parametros de la plantilla de chat.
+El modelo base es un transformer de 1.728.801.600 parámetros de Liquid AI, y esta publicación es una cuantización del mismo, no un reentrenamiento. TurinTech aplica su pipeline Artemis, que según la model card emplea imatrix (el tag `imatrix` figura en el repositorio) para guiar la compresión. El resultado es un fichero GGUF de 1,10 GB en Q4_K_M, frente a los 1,12 GB de la cuantización de bartowski y los 1,10 GB de la de Liquid AI.
 
-El artefacto publicado por TurinTech no reentrena el modelo, sino que aplica una cuantizacion Q4_K_M con calibracion propia (imatrix) sobre los pesos originales, utilizando el tooling de conversion y cuantizacion de llama.cpp. La innovacion tecnica declarada es Artemis Adaptive Compression, una tecnica de compresion adaptativa de TurinTech cuyo funcionamiento interno no se describe en la model card. La evaluacion reportada se realizo con contexto de 8192 tokens, limite de respuesta de 4096 tokens y thinking desactivado, comparando el modelo original (upcast F32 sin perdida) frente a una cuantizacion Q4 estandar y frente a Artemis Q4.
-
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base utilizo RLHF o DPO.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base pasó por RLHF o DPO; esos datos corresponden a la model card de Liquid AI y no se incluyen en la información proporcionada. La innovación destacable de esta publicación es la evaluación comparativa por fichero: TurinTech mide tool use (subconjunto del Berkeley Function-Calling Leaderboard) e IFEval estricto sobre 64 prompts, además de contar truncamientos en un límite de 128 tokens, y publica la tabla junto a las cuantizaciones alternativas. Todas las mediciones se realizaron con el modo thinking desactivado (`enable_thinking: false`).
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles (modelo de tipo chat).
-- Tool calling / function calling: la evaluacion del autor cubre llamadas simples, seleccion entre multiples herramientas, llamadas en paralelo y peticiones con herramientas irrelevantes.
-- Seguimiento de instrucciones: evaluado con IFEval en un subconjunto de 64 casos con diversos formatos, longitudes, idiomas y restricciones de contenido.
-- Modo de razonamiento ("thinking") configurable mediante `--chat-template-kwargs '{"enable_thinking":false}'` en llama.cpp; la evaluacion se realizo con thinking desactivado.
-- Compatibilidad con la API nativa de chat de llama.cpp (`/v1/chat/completions`) y con endpoints compatibles.
-- Capacidades multilingues: no cualificadas por el autor; solo se declara soporte verificado para ingles.
-- No se declaran capacidades de vision, audio ni agentes multi-paso en la informacion disponible.
+- Generación de texto conversacional en inglés, con plantilla de chat compatible con llama.cpp (`--jinja`).
+- Tool calling / function calling: el modelo devuelve las llamadas en `choices[0].message.tool_calls`, con soporte de `tool_choice: "auto"` y listas de herramientas en el endpoint compatible con OpenAI.
+- Seguimiento de instrucciones estrictas: evaluado con IFEval en modo estricto (58 de 64 prompts seguidos).
+- Modo thinking conmutable: la model card documenta `enable_thinking` como parámetro de la plantilla de chat; los resultados publicados se obtuvieron con thinking desactivado.
+- Extracción de valores y respuestas cortas y deterministas: el ejemplo de la model card extrae una fecha con `temperature: 0` y `seed: 0`.
+- Capacidades multilingües: solo se declara inglés (`language: en`); no hay evidencia de soporte de otros idiomas.
+- No se documentan capacidades de visión, audio, matemáticas avanzadas ni razonamiento multi-paso más allá del tool calling.
 
 ## Casos de uso
 
-- Asistente conversacional local en ingles: el modelo puede gestionar dialogos multi-turno dentro de una ventana de 8192 tokens, adecuado para despliegues en estaciones de trabajo sin GPU dedicada gracias a su tamano de 1,1 GB.
-- Integracion en aplicaciones de escritorio o herramientas CLI con llama.cpp: el binario `llama-server` permite exponer una API compatible con OpenAI en localhost, lo que facilita conectar el modelo a interfaces existentes sin infraestructura cloud.
-- Automatizacion de tool calling en flujos controlados: con un rendimiento de 59/64 llamadas correctas en el subconjunto BFCL del autor, es utilizable para seleccionar herramientas y emitir llamadas estructuradas en asistentes de productividad o automatizacion de tareas simples.
-- Prototipado rapido de agentes con function calling: al ser un modelo pequeno y ligero, permite iterar sobre plantillas de prompt y esquemas de herramientas con bajo coste de inferencia antes de escalar a modelos mayores.
-- Generacion de respuestas con formato estricto: los resultados de IFEval (60/64 instrucciones correctas en el subconjunto del autor) sugieren que puede emplearse en tareas que exigen cumplir restricciones de formato, longitud o contenido en ingles.
-- Evaluacion y comparacion de tecnicas de cuantizacion: el repositorio incluye metodologia y resultados comparativos entre BF16, Q4 estandar y Artemis Q4, lo que lo convierte en un artefacto util para investigar el impacto de la compresion en modelos pequenos.
-- Despliegue en entornos con memoria limitada: con 1,1 GB de descarga, es viable en dispositivos con poca VRAM o incluso en CPU, siempre que se acepten las limitaciones de idioma y contexto declaradas.
+- Asistente conversacional local: el fichero de 1,10 GB se ejecuta con llama.cpp u Ollama en equipos sin GPU dedicada, lo que permite desplegar un chat en inglés con contexto de 8192 tokens en portátiles y mini-PC.
+- Automatización de extracción de datos: con `temperature: 0` y una instrucción de sistema que limite la respuesta al valor solicitado, el modelo extrae campos concretos (fechas, importes, identificadores) de texto libre, como demuestra el ejemplo de la fecha de entrega.
+- Integración de function calling en agentes ligeros: el modelo emite llamadas estructuradas a herramientas como `get_weather` con argumentos JSON válidos, lo que permite conectarlo a APIs externas mediante el endpoint compatible con OpenAI de llama-server.
+- Enrutamiento de consultas en pipelines: con 58 de 64 decisiones correctas en el subconjunto de tool use, puede usarse como clasificador de intención que decide qué herramienta invocar antes de derivar a un modelo mayor.
+- Prototipado y pruebas de integración: al caber en 1,10 GB, permite levantar un servidor de pruebas con `llama-server -hf` en CI o en máquinas de desarrollo sin aprovisionar GPU, validando plantillas de chat y esquemas de herramientas.
+- Despliegue en entornos con restricciones de red o privacidad: al ser un fichero GGUF descargable y ejecutable en local, el texto no sale del equipo, lo que encaja en escenarios donde no se permite enviar datos a APIs externas.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles son los reportados por el autor en la model card, obtenidos sobre subconjuntos fijos y curados de 64 casos BFCL y 64 casos IFEval, con contexto de 8192 tokens, limite de respuesta de 4096 tokens y thinking desactivado. El autor advierte explicitamente que son resultados de confirmacion de desarrollo, no puntuaciones completas de leaderboard.
+Resultados declarados por TurinTech en la model card (no verificados de forma independiente; `verified: false` en el model-index). Todas las mediciones con thinking desactivado.
 
-| Modelo | Descarga (GB) | Tool calls correctas / 64 | Instrucciones correctas / 64 | Truncadas / 128 |
-|---|---:|---:|---:|---:|
-| Referencia original (BF16 GGUF, evaluado con upcast F32) | 3,467 | 58 | 58 | 0 |
-| Compresion Q4 estandar | 1,100 | 59 | 60 | 0 |
-| Artemis Q4 | 1,100 | 59 | 60 | 1 |
+| Fichero | Tamano | Tool use (de 64) | IFEval estricto (de 64) | Truncados en el limite (de 128) |
+|---|---|---|---|---|
+| TurinTech Q4_K_M | 1,10 GB | 58 | 58 | 0 |
+| bartowski Q4_K_M | 1,12 GB | 59 | 56 | 0 |
+| Liquid AI Q4_K_M | 1,10 GB | 51 | 56 | 1 |
+| bartowski Q4_K_S | 1,05 GB | 58 | 53 | 2 |
+| Liquid AI QAD-Q4_0 (entrenado aparte) | 1,05 GB | 57 | 54 | 1 |
 
-No se han publicado resultados de benchmarks completos (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor no realiza ninguna afirmacion comparativa sobre velocidad o memoria.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. El autor indica que el tamano de descarga (1,1 GB) no equivale a memoria en tiempo de ejecucion. Como referencia orientativa, un modelo de 1,7 mil millones de parametros en Q4_K_M suele requerir del orden de 1,5 a 2,5 GB de memoria para pesos mas overhead de contexto, pero este dato no esta confirmado en la informacion proporcionada.
-- GPU recomendadas: no especificadas por el autor. Por tamano, el modelo es compatible con GPUs de consumo con al menos 4 GB de VRAM, aunque no se ha verificado en la model card.
-- Cabe en GPU de consumo: previsiblemente si, dado el tamano de 1,1 GB del archivo, aunque no hay confirmacion oficial.
-- Opciones de despliegue: llama.cpp (verificado con la build b11938 mediante `llama-server`); tambien compatible con otros runners que acepten GGUF, como Ollama, aunque no se ha verificado en la informacion disponible. vLLM y TGI no se mencionan.
-- Parametros de ejecucion probados: `-ngl 99 -t 4 -tb 4 -c 8192 --parallel 1 --jinja --chat-template-kwargs '{"enable_thinking":false}'`.
-- Latencia y throughput: no disponibles; el autor no realiza ninguna afirmacion al respecto.
+- VRAM estimada: el fichero Q4_K_M ocupa 1,10 GB; con overhead de contexto (8192 tokens) y de la propia librería, el consumo real es superior al tamaño del fichero, aunque no se proporcionan cifras exactas en la información disponible.
+- GPU recomendadas: no se especifican en la model card; el ejemplo de ejecución usa `-ngl 99` para descargar todas las capas en GPU, lo que sugiere que cabe holgadamente en GPUs de consumo actuales.
+- GPU de consumo: por tamaño (1,10 GB en Q4_K_M) es compatible con tarjetas de 8 GB o menos, e incluso con ejecución íntegra en CPU.
+- Opciones de despliegue: llama.cpp (llama-server, requiere b11960 o superior, mínimo indicado por Liquid AI para LFM3) y Ollama (`ollama run turintech/lfm3-1.7b-artemis --think=false`, verificado con Ollama 0.40.14). El endpoint es compatible con la API de OpenAI (`/v1/chat/completions`).
+- Latencia y throughput: no se publican cifras de latencia ni de tokens por segundo en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LFM3-1.7B-Artemis-GGUF (este) | 1,73 B | 8192 (evaluado) | GGUF Q4_K_M | LFM Open License v1.0 | Hugging Face, 0 descargas |
-| LFM3-1.7B (original, BF16 GGUF) | 1,73 B | no disponible | GGUF BF16 | LFM Open License v1.0 | Hugging Face (LiquidAI) |
-| Cuantizacion Q4 estandar de LFM3-1.7B | 1,73 B | 8192 (evaluado) | GGUF Q4 | LFM Open License v1.0 | Referenciada en la model card, no se indica repositorio publico |
+| Modelo | Parametros | Contexto | Tool use (de 64) | IFEval estricto (de 64) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| TurinTech LFM3-1.7B-Artemis Q4_K_M | 1,73 B | no disponible (ejemplos con 8192) | 58 | 58 | lfm1.0 | GGUF en Hugging Face y Ollama |
+| Liquid AI LFM3-1.7B Q4_K_M | 1,73 B | no disponible | 51 | 56 | lfm1.0 | GGUF en Hugging Face |
+| bartowski LFM3-1.7B Q4_K_M | 1,73 B | no disponible | 59 | 56 | lfm1.0 | GGUF en Hugging Face |
+| Liquid AI LFM3-1.7B QAD-Q4_0 | 1,73 B | no disponible | 57 | 54 | lfm1.0 | GGUF en Hugging Face |
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada. La comparativa se limita a las tres variantes evaluadas por el autor.
+Las tres alternativas comparten el mismo modelo base y la misma licencia; las diferencias se limitan al método de cuantización y al equilibrio entre tool use e IFEval. No se dispone de comparaciones con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cualificacion del artefacto cubre unicamente texto en ingles y tool calls con thinking desactivado, dentro de los limites de contexto (8192 tokens) y respuesta (4096 tokens) probados.
-- Otros idiomas, contextos mas largos y otras integraciones de runtime no han sido cualificados para este archivo.
-- Una de las 128 respuestas de Artemis alcanzo el limite de tokens; ese caso de seguimiento de instrucciones fallo en los tres modelos comparados.
-- Los resultados de BFCL e IFEval proceden de subconjuntos pequenos (64 casos cada uno) y son resultados de confirmacion de desarrollo, no evaluaciones finales sobre conjuntos intactos; el propio autor advierte que la muestra no permite establecer superioridad.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; no se documentan mitigaciones especificas.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Licencia: LFM Open License v1.0 (etiquetada como "other"), heredada del modelo base. Es necesario revisar los terminos del modelo base para uso comercial, ya que la model card no detalla las restricciones.
-- El modelo no ejecuta las llamadas a herramientas que genera; el servidor solo emite las llamadas estructuradas.
-- Artefacto con cero descargas y cero likes en el momento de la consulta; sin validacion independiente por parte de la comunidad.
-- No se realizan afirmaciones sobre velocidad o memoria en la model card, por lo que no deben asumirse mejoras de rendimiento frente a la cuantizacion estandar.
+- Solo inglés: la model card declara únicamente `en` y las pruebas se hicieron en inglés; no hay evidencia de calidad en castellano ni en otros idiomas.
+- Resultados no verificados: las métricas del model-index llevan `verified: false` y proceden del propio autor; los conjuntos son subconjuntos de 64 prompts, no los benchmarks completos.
+- Tool use ligeramente inferior a bartowski: 58 frente a 59 en el subconjunto evaluado, aunque con mejor IFEval (58 frente a 56).
+- Riesgo de alucinación: no se documentan evaluaciones de veracidad ni de calibración; como modelo de 1,7 B parámetros, la fiabilidad en dominios especializados es limitada.
+- Licencia lfm1.0: es una licencia "other" heredada del modelo base; hay que revisar el enlace de la licencia de Liquid AI antes de cualquier uso comercial, ya que la información disponible no detalla sus términos.
+- Dependencia de versión: requiere llama.cpp b11960 o superior y HTTPS para la descarga con `-hf`; versiones anteriores pueden no cargar el modelo correctamente.
+- Modo thinking desactivado por defecto en los ejemplos: los resultados publicados no cubren el comportamiento con thinking activo, por lo que su calidad en ese modo es desconocida.
+- Sin datos de contexto oficial: la longitud máxima de contexto del modelo base no se declara en la información disponible; los 8192 tokens de los ejemplos son una configuración de servidor, no una especificación garantizada.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/turintech/LFM3-1.7B-Artemis-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/0dc4268b561499c648c7ba7c9466bf3d8d01517a/LICENSE
-- llama.cpp (runtime y tooling de conversion/cuantizacion): https://github.com/ggml-org/llama.cpp
+- Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/0dc4268b561499c648c7ba7c9466bf3d8d01517a/LICENSE
+- Página de TurinTech: https://www.turintech.ai
+- Modelos de TurinTech en Hugging Face: https://huggingface.co/turintech
+- Paquete en Ollama: https://ollama.com/turintech/lfm3-1.7b-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai

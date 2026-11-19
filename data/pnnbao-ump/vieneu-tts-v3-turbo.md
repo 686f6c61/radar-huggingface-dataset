@@ -2,86 +2,96 @@
 
 ## Resumen
 
-VieNeu-TTS v3 Turbo es un modelo de síntesis de voz (text-to-speech) de 48 kHz, bilingüe vietnamita-inglés, desarrollado por Phạm Nguyễn Ngọc Bảo (usuario pnnbao-ump). Se trata de una arquitectura original diseñada y entrenada desde cero sobre aproximadamente 10 000 horas de habla inglés-vietnamita, no un fine-tuning de modelos existentes. El modelo integra un codec neuronal (MOSS-Audio-Tokenizer-Nano) y un fonetizador propio (sea-g2p), y destaca por la clonación instantánea de voz, el cambio de código (code-switching) entre idiomas, el control de emociones experimental y la generación en streaming con baja latencia.
+VieNeu-TTS v3 Turbo es un modelo de síntesis de voz (text-to-speech) desarrollado por Phạm Nguyễn Ngọc Bảo (usuario `pnnbao-ump` en Hugging Face) orientado al idioma vietnamita con soporte bilingüe inglés-vietnamita. Se trata de un diseño de arquitectura original, entrenado desde cero sobre aproximadamente 10.000 horas de audio En-Vi, y no es un fine-tune ni una destilación de ningún modelo TTS preexistente. El modelo genera audio a 48 kHz, incorpora 23 voces predefinidas de las tres regiones de Vietnam (norte, centro y sur), clonación de voz instantánea, control de emoción mediante marcadores en línea y conmutación de código (code-switching) entre inglés y vietnamita.
 
-Con 130,9 millones de parámetros, el modelo está disponible bajo licencia Apache-2.0 y su implementación de referencia es el SDK Python `vieneu` (v3.3.0), que permite ejecutar la inferencia en CPU con ONNX Runtime (sin necesidad de PyTorch) o en GPU con PyTorch y batching automático. El repositorio incluye pesos en formato safetensors y ONNX, y el paquete completo ocupa 8,9 GB en disco.
+Con 130,9 millones de parámetros, es un modelo compacto pensado para inferencia en tiempo real incluso en CPU. Su implementación de referencia es el SDK de Python `vieneu` (v3.7.1), que ofrece una ruta libre de PyTorch basada en ONNX Runtime para CPU y un motor PyTorch con batching continuo para GPU CUDA. Incluye una API compatible con OpenAI (`POST /v1/audio/speech`) y despliegue mediante Docker.
 
-Su relevancia actual radica en ofrecer una alternativa abierta y de alta fidelidad para síntesis de voz en vietnamita, con soporte nativo de acentos regionales (norte, centro y sur), 20 voces predefinidas y capacidades avanzadas como la clonación de voz a partir de clips de 3 a 8 segundos. Esto lo hace útil para aplicaciones de contenido multimedia, atención al cliente bilingüe, asistentes de voz y accesibilidad, tanto en entornos de desarrollo como de producción.
+Su relevancia actual radica en la combinación de alta fidelidad (48 kHz), latencia baja (primer audio en torno a 115 ms en GPU y 140 ms en CPU con int8) y la capacidad de servir hasta 16 flujos concurrentes en tiempo real en una única RTX 3060, lo que lo sitúa como una opción práctica para producción de podcasts, doblaje y asistentes de voz en vietnamita.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Original del autor, basada en transformer con audio codec neuronal (MOSS-Audio-Tokenizer-Nano) y fonetizador sea-g2p. Se menciona un backbone Qwen3 en la instalación GPU, sin más detalle. |
-| Parametros totales | 130 907 520 |
-| Parametros activos | No aplicable (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | int8 (por defecto en CPU), fp32 (opcional), ONNX Runtime |
-| Idiomas soportados | Vietnamita (vi), inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX |
+| Arquitectura | Diseño original del autor (TTS neural); backbone tipo Qwen3 según dependencias del SDK, códec de audio MOSS-Audio-Tokenizer-Nano a 48 kHz |
+| Parametros totales | 130.907.520 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | fp32 (por defecto en CPU/ONNX), int8 (solo CPU, requiere VNNI) |
+| Idiomas soportados | vietnamita (vi), inglés (en); conmutación de código En-Vi |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de VieNeu-TTS v3 Turbo es un diseño original de Phạm Nguyễn Ngọc Bảo, entrenado desde cero sobre un corpus de aproximadamente 10 000 horas de habla vietnamita e inglesa. No se trata de un fine-tuning ni de una adaptación de modelos TTS existentes. El modelo utiliza el codec neuronal MOSS-Audio-Tokenizer-Nano de OpenMOSS-Team para la representación de audio a 48 kHz, y el fonetizador sea-g2p (también del mismo autor) para la conversión de grafemas a fonemas en vietnamita e inglés.
+El modelo emplea una arquitectura TTS de diseño propio, entrenada desde cero sobre aproximadamente 10.000 horas de habla en inglés y vietnamita (dataset `pnnbao-ump/VieNeu-TTS-10k-ENVI`). La generación de audio se apoya en el códec neural MOSS-Audio-Tokenizer-Nano de OpenMOSS-Team, que opera a 48 kHz, y en el fonemizador `sea-g2p`, también del mismo autor, que realiza la conversión grafema-fonema para vietnamita e inglés. El backbone del SDK se apoya en Qwen3 según las dependencias fijadas (`transformers==4.57.6`), aunque la model card describe la arquitectura global como un diseño original y no como una adaptación de un TTS existente.
 
-El entrenamiento incorpora tokens de hablante para las 20 voces predefinidas y soporta marcadores de emoción no verbales (como `[cười]`, `[thở dài]`, `[hắng giọng]`) que permiten modular la expresividad. No se dispone de información sobre el uso de técnicas de alineación como RLHF o DPO. La inferencia puede ejecutarse en CPU mediante ONNX Runtime (sin dependencia de PyTorch) o en GPU con PyTorch, donde se habilita el batching automático para mejorar el rendimiento en textos largos. El modelo también admite streaming frame-by-frame con una latencia inicial de aproximadamente 300 ms y un factor de tiempo real (RTF) inferior a 1 en CPU.
+Entre las innovaciones técnicas destacan el streaming en tiempo real con batching continuo sobre un único grafo CUDA compartido entre llamadas, la decodificación por ventana deslizante con penalización de repetición, el control de emoción mediante marcadores insertados en el texto (por ejemplo, `[cười]` para risa) y la clonación de voz sin PyTorch en CPU. El SDK permite además fine-tuning LoRA del modelo v3 Turbo en una única GPU de consumo. No se detalla en la información disponible la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de habla de alta fidelidad a 48 kHz en vietnamita e inglés.
-- 20 voces predefinidas que cubren las tres regiones dialectales de Vietnam (norte, centro y sur), con ambos géneros y varios perfiles de lectura.
-- Clonación instantánea de voz a partir de un clip de referencia de 3 a 8 segundos, con opción de denoising.
-- Code-switching bilingüe (vietnamita-inglés) dentro de una misma frase o conversación.
-- Control de emociones y marcadores no verbales (experimental): risa, suspiro, aclaración de garganta.
-- Streaming en tiempo real: primera muestra de audio en ~300 ms, RTF < 1 en CPU (2-3 veces más rápido que tiempo real en portátiles).
-- Generación por lotes en GPU con batching automático para textos largos o múltiples hablantes.
-- Soporte de conversaciones multi-hablante (modo "Conversation" en la interfaz web).
-- Denoising de audio de referencia para mejorar la calidad de la clonación.
+- Síntesis de voz de alta fidelidad a 48 kHz con 23 voces predefinidas de las regiones norte, centro y sur de Vietnam, en ambos géneros y con distintos registros de lectura.
+- Clonación de voz instantánea a partir de audio de referencia, incluyendo ruta libre de PyTorch en CPU.
+- Conmutación de código (code-switching) fluida entre inglés y vietnamita dentro de una misma locución.
+- Control de emoción en línea mediante marcadores insertados en el texto de entrada.
+- Streaming en tiempo real con API compatible con OpenAI (`POST /v1/audio/speech`, formatos PCM y WAV, chunked o SSE), integrable con el SDK de OpenAI, Pipecat y LiveKit.
+- Generación por lotes para síntesis de formato largo y para podcasts multi-locutor (pestaña Conversation en la interfaz web).
+- Fine-tuning LoRA sobre una GPU de consumo.
+- Inferencia en CPU sin dependencia de PyTorch (ONNX Runtime) y en GPU CUDA con batching automático.
+- Fonemización rápida vietnamita/inglés mediante `sea-g2p`.
 
 ## Casos de uso
 
-- Producción de podcasts y contenido multimedia: el modelo permite generar episodios con múltiples voces, control de emociones y acentos regionales, gracias a la generación por lotes y las 20 voces predefinidas. Es adecuado para creadores que necesitan diversidad de locutores sin contratar actores de voz.
-- Atención al cliente bilingüe: la capacidad de code-switching entre vietnamita e inglés, junto con la clonación de voz, permite crear asistentes virtuales que alternan idiomas de forma natural, mejorando la experiencia de usuarios en mercados multilingües.
-- Audiolibros y narración: las voces predefinidas con acentos regionales y la alta calidad de 48 kHz hacen posible producir audiolibros en vietnamita con una sonoridad cercana a la humana, manteniendo coherencia en largas sesiones de lectura.
-- Doblaje de vídeo: la clonación instantánea de voz permite doblar contenido audiovisual con la voz de un actor o locutor concreto, reduciendo costes y tiempos frente a la grabación en estudio.
-- Asistentes de voz en tiempo real: el streaming de baja latencia (~300 ms) habilita aplicaciones de conversación interactiva, como guías turísticos virtuales o sistemas de respuesta por voz en kioscos.
-- Generación de contenido para redes sociales: los marcadores de emoción (risa, suspiro) y la variedad de voces permiten crear vídeos virales, memes de audio o anuncios con un tono expresivo y dinámico.
-- Herramientas de accesibilidad: síntesis de voz natural para lectores de pantalla en vietnamita e inglés, especialmente útil para personas con discapacidad visual o dificultades de lectura.
+- Producción de podcasts multi-locutor: la pestaña Conversation y el modo por lotes permiten generar diálogos con varias voces predefinidas o clonadas, compartiendo un único forward batcheado para reducir el coste por minuto de audio.
+- Doblaje y localización de contenido al vietnamita: la clonación de voz instantánea permite mantener la identidad vocal del locutor original y el control de emoción ajusta el tono de la interpretación.
+- Asistentes de voz en tiempo real: la API compatible con OpenAI y el streaming con primer audio en torno a 115 ms en GPU permiten integrar el modelo en pipelines de Pipecat o LiveKit para atención al cliente o asistentes conversacionales.
+- Audiolibros y contenido largo: el batching continuo y la síntesis por fragmentos con ventana deslizante y penalización de repetición facilitan la generación de horas de audio con coherencia prosódica.
+- Servicios de TTS multiinquilino: el planificador de streaming soporta 16 flujos concurrentes en tiempo real (hasta 32) en una sola RTX 3060, lo que permite ofrecer TTS como servicio con hardware de consumo.
+- Aplicaciones educativas de aprendizaje de idiomas: la conmutación En-Vi y las 23 voces regionales permiten generar material de escucha con acentos del norte, centro y sur de Vietnam.
+- Prototipado en entornos sin GPU: la ruta ONNX libre de PyTorch con cuantización int8 (~2 veces más rápida que fp32) permite desplegar el modelo en portátiles, servidores CPU y Apple Silicon.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas objetivas como MOS (Mean Opinion Score), MMLU o similares para comparar con otros modelos TTS.
+No se han publicado resultados de benchmarks en la información disponible.
+
+Los únicos datos de rendimiento aportados por el autor son métricas de latencia y concurrencia del SDK: primer audio en aproximadamente 115 ms en GPU CUDA y en torno a 140 ms en CPU con int8 (~300 ms con fp32); 16 flujos concurrentes por debajo de 200 ms en una RTX 3060, con un máximo de 32.
 
 ## Requisitos de hardware
 
-- CPU: funciona con ONNX Runtime, sin necesidad de PyTorch. Por defecto usa cuantización int8, que es ~1,6 veces más rápida y ~4 veces más pequeña que fp32. Se recomienda para texto corto y llamadas interactivas.
-- GPU: requiere CUDA ≥ 12.8 y PyTorch. El batching automático hace que la GPU sea rentable para textos largos o alta productividad; para texto corto, la CPU suele ser más rápida.
-- VRAM estimada: no disponible oficialmente. Con 130,9 millones de parámetros, el modelo base es ligero, pero el pipeline completo (codec + fonetizador) ocupa 8,9 GB en disco. Es probable que quepa en GPUs de consumo como RTX 3060, RTX 4090, etc., pero no hay datos confirmados.
-- Opciones de despliegue: SDK Python `vieneu` (pip install), interfaz web (`uv run vieneu-web`), ONNX Runtime en CPU, PyTorch en GPU, y servicios gestionados de terceros como LA Studio (runtime nativo) o Mixpeek (pipeline gestionado).
-- Latencia y throughput: primera audio en ~300 ms en streaming, RTF < 1 en CPU (2-3× tiempo real en portátiles). En GPU, el throughput mejora con batching, pero no se proporcionan cifras exactas.
+- VRAM estimada: no disponible de forma explícita; con 130,9 millones de parámetros, los pesos en fp32 ocupan aproximadamente 0,5 GB, por lo que la inferencia cabe holgadamente en cualquier GPU de consumo.
+- GPU recomendadas: RTX 3060 como referencia del autor para 16 flujos concurrentes; cualquier GPU NVIDIA con CUDA 12.8 o superior para el motor PyTorch.
+- Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs consumer; el autor cita explícitamente la RTX 3060.
+- CPU: ruta ONNX Runtime sin PyTorch, con fp32 por defecto e int8 opcional (requiere CPU con VNNI); en Apple Silicon la ruta ONNX/CPU es más rápida que la de MPS/PyTorch.
+- Opciones de despliegue: SDK `vieneu` (PyPI), interfaz web (`vieneu-web` en el puerto 7860), Docker con perfiles `api-gpu` y `api-cpu`, y API compatible con OpenAI.
+- Latencia y throughput: primer audio ~115 ms en GPU y ~140 ms en CPU int8; 16 streams concurrentes bajo 200 ms en RTX 3060 (máximo 32).
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa cuantitativa con otros modelos TTS vietnamitas o bilingües (por ejemplo, Coqui XTTS, VietTTS, VITS). No se han publicado resultados de benchmarks comparativos en la documentación disponible. Se recomienda evaluar el modelo en el caso de uso concreto antes de tomar una decisión.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| VieNeu-TTS v3 Turbo | 130,9 M | no disponible | vi, en | Apache 2.0 | safetensors, ONNX, GGUF |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone en la información proporcionada de datos sobre modelos TTS comparables de la misma categoría (por ejemplo, otros sistemas TTS para vietnamita o modelos multilingües de tamaño similar), por lo que no es posible establecer una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado principalmente en vietnamita e inglés; su rendimiento en otros idiomas no está garantizado.
-- El control de emociones es experimental y puede producir resultados inestables con temperaturas altas (se recomienda temperatura ~0,8 para mayor estabilidad).
-- La clonación de voz requiere clips de referencia de 3 a 8 segundos; clips con ruido o baja calidad pueden degradar el resultado, aunque existe una opción de denoising.
-- En CPU, la generación de textos largos puede ser lenta; se recomienda usar GPU con batching para estos casos.
-- El repositorio incluye un backbone Qwen3 (mencionado en la instalación GPU) y el codec MOSS-Audio-Tokenizer-Nano, cada uno con su propia licencia. Aunque la licencia general es Apache-2.0, es necesario verificar las licencias de los componentes individuales antes de un uso comercial.
-- No se han documentado sesgos específicos, pero como todo modelo de síntesis de voz, puede reflejar sesgos presentes en los datos de entrenamiento.
-- El streaming y la clonación de voz en CPU requieren la instalación de dependencias adicionales (kaldi-native-fbank, soxr), que pueden no estar disponibles en todos los entornos.
+- El modelo está especializado en vietnamita e inglés; no se documenta soporte para otros idiomas, por lo que su uso en castellano u otras lenguas no está garantizado.
+- No se han publicado evaluaciones formales de sesgo, robustez o tasas de alucinación/artefactos de audio; la calidad percibida se describe de forma cualitativa en la model card.
+- La clonación de voz plantea riesgos de suplantación de identidad y uso indebido; aunque la licencia es Apache 2.0, es responsabilidad del usuario implementar controles de consentimiento y verificación.
+- El control de emoción depende de marcadores específicos en el texto; no se detalla su cobertura ni su fiabilidad en todos los registros.
+- La ruta int8 en CPU requiere procesadores con VNNI; en CPUs sin esa extensión el beneficio de velocidad puede no materializarse.
+- El rendimiento en GPU depende de versiones fijadas de dependencias (`torch==2.8.0`, `transformers==4.57.6`, CUDA ≥ 12.8); desviarse de ellas puede romper la compatibilidad.
+- No se especifican la longitud de contexto textual máxima ni los límites de duración por llamada; la síntesis de contenido largo debe fragmentarse.
+- La licencia Apache 2.0 permite uso comercial, pero no se documentan garantías ni soporte oficial más allá del repositorio y el Discord del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
 - Repositorio GitHub: https://github.com/pnnbao97/VieNeu-TTS
-- Paquete PyPI: https://pypi.org/project/vieneu/
-- Comunidad Discord: https://discord.gg/yJt8kzjzWZ
-- Codec MOSS-Audio-Tokenizer-Nano: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano
-- Fonetizador sea-g2p: https://github.com/pnnbao97/sea-g2p
-- Integración en LA Studio: https://www.lastudioai.com/models/pnnbao-ump/vieneu-tts-v3-turbo
-- Integración en Mixpeek: https://mixpeek.com/model/pnnbao-ump/VieNeu-TTS-v3-Turbo
+- Documentación de streaming: https://github.com/pnnbao97/VieNeu-TTS/blob/main/docs/streaming.md
+- SDK en PyPI: https://pypi.org/project/vieneu/
+- Discord del proyecto: https://discord.gg/yJt8kzjzWZ
+- Códec de audio MOSS-Audio-Tokenizer-Nano: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano
+- Fonemizador sea-g2p: https://github.com/pnnbao97/sea-g2p
+- Dataset de entrenamiento: https://huggingface.co/datasets/pnnbao-ump/VieNeu-TTS-10k-ENVI
+- Perfil del autor: https://github.com/pnnbao97

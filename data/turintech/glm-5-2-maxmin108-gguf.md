@@ -2,126 +2,103 @@
 
 ## Resumen
 
-GLM-5.2-MaxMin108-GGUF es una versión comprimida del modelo GLM-5.2 de Z.ai, desarrollada por turintech mediante poda de expertos y cuantización a formato GGUF. El modelo original es un MoE de 753B parámetros (según la model card) con 256 expertos enrutados por capa; esta variante conserva únicamente 108 de esos expertos por capa, seleccionados con un criterio max-min fair sobre diez dominios de texto. El resultado es un artefacto de aproximadamente 100 GiB que cabe en una NVIDIA GB10 Spark con 128 GB de memoria unificada, algo que el modelo completo no permite.
+GLM-5.2-MaxMin108-GGUF es una versión comprimida y cuantizada del modelo GLM-5.2 de Z.ai, publicada por TurinTech. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) al que se le han podado expertos (expert pruning) mediante la herramienta Artemis de TurinTech, partiendo del GGUF de 2 bits de Unsloth. El objetivo es claro: hacer que un modelo de 324.832 millones de parámetros totales quepa y funcione en una única máquina de 128 GB, en concreto en una NVIDIA GB10 (DGX Spark), donde el archivo por defecto ocupa 104 de 121 GB con contexto de 64K.
 
-La relevancia de este modelo es doble: demuestra que un modelo de escala frontera puede reducirse para ejecutarse en hardware de escritorio, y documenta un método de selección de expertos que, según los benchmarks publicados, iguala a alternativas como REAP-50 en MMLU con un 59% del tamaño. Sin embargo, la compresión tiene un coste claro: pierde 24.29 puntos de MMLU respecto al modelo padre (87.29 → 63.00) y su capacidad de generación de código se degrada notablemente. No es un sustituto del modelo completo, sino una opción para entornos con restricciones severas de memoria.
+La relevancia de esta ficha está en el compromiso que documenta el propio autor: la poda reduce el tamaño lo suficiente para ejecución local en hardware de escritorio profesional, pero degrada el conocimiento del mundo de forma notable. El modelo por defecto obtiene 61,84 en MMLU 5-shot frente a los 87,29 del GGUF de 2 bits original de Unsloth, mientras que en código (MBPP pass@1) baja a 0,592 frente a 0,710. Es, por tanto, una opción de despliegue local para chat, código y razonamiento en inglés, no un sustituto del modelo completo.
+
+El repositorio incluye dos variantes: `IQ2_M-fast` (95,78 GiB, seis shards, la opción por defecto) y `IQ2_M` de referencia (100,33 GiB, otros seis shards, con mejores resultados). Solo debe descargarse un conjunto, no ambos. La licencia es MIT y el modelo solo declara soporte de inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), 256 expertos enrutados por capa, podados a 108 |
-| Parametros totales | 324.832.039.332 (324,8B) en safetensors; el modelo base GLM-5.2 tiene 753B |
-| Parametros activos | No disponible (el modelo base tiene 40B activos; la poda modifica este valor, pero no se ha publicado) |
-| Longitud de contexto | No especificada en la variante; el modelo base soporta hasta 1M de tokens |
-| Tipos de cuantizacion | IQ2_M (2.650 bpw) e IQ2_M-fast (2.530 bpw) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Mixture-of-Experts (MoE) con poda de expertos; transformer con soporte GLM-DSA en llama.cpp |
+| Parametros totales | 324.832.039.332 (dato de safetensors del modelo base) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 65.536 tokens en la configuración de referencia (`-c 65536`) |
+| Tipos de cuantizacion | IQ2_M-fast (por defecto, 95,78 GiB) e IQ2_M (referencia, 100,33 GiB); KV cache en q8_0 (`-ctk q8_0 -ctv q8_0`) |
+| Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (con shards de 6 archivos) |
+| Formato de pesos | GGUF (seis shards por variante; repo de 210,6 GB en total) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una variante cuantizada y podada de GLM-5.2, un transformer con arquitectura de mezcla de expertos (MoE). El proceso de compresion consistio en dos pasos: primero, se seleccionaron 108 de los 256 expertos enrutados de cada capa mediante un criterio max-min fair aplicado sobre diez dominios de texto, eliminando los expertos menos relevantes para cada dominio. Segundo, los tensores resultantes se cuantizaron a formato GGUF con precision de 2.65 bits por peso (variante IQ2_M) o 2.53 bits (variante fast). La diferencia entre ambas variantes radica exclusivamente en la precision de los tensores no expertos (proyecciones de atencion y experto compartido); los tensores de los expertos son identicos entre ellas.
+El modelo base GLM-5.2 es un transformer con arquitectura Mixture-of-Experts. Sobre él, TurinTech aplica una compresión en dos etapas: primero parte del GGUF de 2 bits publicado por Unsloth y después poda expertos con su herramienta Artemis, dando lugar al sufijo "MaxMin108" del nombre. El resultado se distribuye en formato GGUF dividido en seis shards, pensado para `llama-server` con soporte de GLM-DSA (build `b10005`, commit `7f575c39d` o posterior).
 
-No se ha publicado informacion sobre los datos de entrenamiento del modelo base ni sobre el proceso de entrenamiento de la poda (si hubo fine-tuning posterior o solo seleccion estatica). La model card indica que los benchmarks se ejecutaron sobre el artefacto final sin recalibracion adicional. La seleccion de expertos se realizo sobre corpus de texto de diez dominios, pero no se detallan cuales son.
+No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el modelo base. La model card sí documenta una particularidad operativa relevante: la plantilla de chat de GLM-5.2 emite una directiva de esfuerzo de razonamiento alto que puede consumir el presupuesto de generación en tokens de razonamiento ocultos, por lo que el autor recomienda el flag `-rea off` en llama.cpp. La configuración de referencia usa `-ngl 99`, `-fa 1` (flash attention), KV cache cuantizada en q8_0, `-np 1` y `-t 20`.
 
 ## Capacidades
 
-- Generacion de texto: produce texto coherente y fluido en ingles, con capacidad de razonamiento basico evidenciada por resultados en MMLU.
-- Conocimiento factual: alcanza un 63.00 en MMLU (5-shot, 14.042 preguntas), un nivel comparable al de modelos de ~120B en cuantizacion 4-bit, aunque muy por debajo del modelo padre (87.29).
-- Generacion de codigo: obtiene un pass@1 de 0.626 en MBPP (3-shot, 500 problemas), conservando el 88.2% de la capacidad del padre. La poda afecta menos al codigo procedural que al conocimiento declarativo.
-- Razonamiento multilingue: solo se ha verificado en ingles; no hay evidencia de capacidades en otros idiomas.
-- No se ha confirmado soporte para tool calling, function calling ni modos de agente en esta variante, aunque el modelo base los incluye. La model card no los menciona.
+- Generación de texto conversacional en inglés, orientada a chat multi-turno.
+- Generación de código, con resultados medidos en MBPP (pass@1 de 0,592 en la variante por defecto).
+- Razonamiento y conocimiento general, con resultados medidos en MMLU 5-shot (61,84 en la variante por defecto).
+- Modo de razonamiento configurable mediante la plantilla del modelo; puede desactivarse con `-rea off`.
+- Servidor compatible con la API de chat completions de OpenAI (`/v1/chat/completions`) a través de `llama-server`.
+- Etiquetado como `endpoints_compatible` en el Hub.
+- No se declaran en la información disponible capacidades de visión, audio, tool calling explícito ni soporte multilingüe más allá del inglés.
 
 ## Casos de uso
 
-- Ejecucion local en hardware de 128 GB: el caso principal es desplegar un modelo de gran tamano en una NVIDIA GB10 Spark o similar, donde el modelo completo no cabe. Permite experimentar con MoE de escala frontera en un entorno de escritorio.
-- Prototipado y pruebas de concepto: para desarrolladores que necesitan validar flujos de generacion de texto o codigo con un modelo de alta capacidad pero sin acceso a infraestructura cloud, esta variante ofrece una via de entrada con requisitos de memoria reducidos.
-- Investigacion en poda de expertos: el artefacto sirve como referencia para estudiar el impacto de la seleccion de expertos en el rendimiento, ya que se documentan metodos y resultados comparativos con REAP-50.
-- Generacion de codigo en entornos con restricciones de memoria: aunque su rendimiento en MBPP es inferior al del padre, sigue siendo util para tareas de autocompletado o generacion de funciones cortas donde el modelo base no es viable por memoria.
-- Analisis de perplejidad y calidad de generacion: se puede utilizar para evaluar como afecta la cuantizacion extrema (2.65 bpw) a la coherencia y degeneracion del texto, especialmente en modos de decodificacion greedy.
-- Despliegue en edge computing: al caber en un solo dispositivo con memoria unificada, es candidato para aplicaciones de inferencia en el borde, aunque con la advertencia de que la latencia (8.24 tok/s en GB10) es baja para produccion.
+- Asistente de código en estación de trabajo local: con 95,78 GiB de pesos y un pass@1 de 0,592 en MBPP, puede ejecutarse en una DGX Spark para autocompletado, explicación y refactorización de código sin enviar el código a un servicio externo.
+- Chat interno con datos sensibles: al caber en una única máquina de 128 GB y tener licencia MIT, permite desplegar un asistente conversacional en infraestructura propia, con contexto de hasta 64K tokens para conversaciones o documentos largos.
+- Procesamiento de documentos extensos en inglés: la ventana de 65.536 tokens admite resúmenes y extracción de información sobre contratos, informes o documentación técnica de decenas de miles de palabras.
+- Prototipado e investigación sobre compresión de modelos: el repositorio publica dos variantes con métricas comparadas (IQ2_M-fast frente a IQ2_M), lo que sirve como referencia para estudiar el coste de la poda de expertos sobre un GGUF de 2 bits.
+- Evaluación de pipelines llama.cpp con MoE de gran tamaño: útil para validar configuraciones de flash attention, KV cache q8_0 y offload completo de capas (`-ngl 99`) en hardware GB10.
+- Generación de documentación técnica y textos en inglés: tareas de redacción y transformación de texto donde la pérdida de conocimiento del mundo no es crítica y prima la disponibilidad local.
+- Servicio de inferencia compatible con OpenAI: al exponer `/v1/chat/completions`, puede conectarse a clientes y frameworks existentes sin adaptadores específicos.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes fueron medidos por el autor del modelo en las mismas maquinas y harness para todos los modelos comparados, segun la model card.
+Datos declarados por el autor del modelo (no verificados de forma independiente):
 
-### MMLU (lm-evaluation-harness, `mmlu_generative`, 5-shot, 14.042 preguntas)
+| Archivo | Tamano | MMLU, 5-shot | MBPP pass@1 |
+|---|---|---|---|
+| TurinTech IQ2_M-fast (por defecto) | 95,78 GiB | 61,84 | 0,592 |
+| TurinTech IQ2_M (referencia) | 100,33 GiB | 63,00 | 0,626 |
+| REAP-50 Q3_K_M | 169,30 GiB | 62,75 | 0,708 |
+| Unsloth 2-bit parent (no BF16) | 222,18 GiB | 87,29 | 0,710 |
 
-| Modelo | Tamano | MMLU | Humanidades | Ciencias sociales | STEM | Otros |
-|---|---:|---:|---:|---:|---:|---:|
-| GLM-5.2 UD-IQ2_M (padre) | 222.18 GiB | **87.29** ±0.27 | 83.44 | 91.84 | 87.03 | 88.86 |
-| REAP-50 Q3_K_M | 169.30 GiB | 62.75 ±0.39 | 63.63 | 66.85 | 62.26 | 57.84 |
-| **MaxMin108** | 100.32 GiB | **63.00** ±0.39 | 62.74 | 68.61 | 59.25 | 61.67 |
-| **MaxMin108-fast** | 95.77 GiB | 61.84 ±0.40 | 62.64 | 67.57 | 57.82 | 59.06 |
-
-### MBPP (3-shot, 500 problemas, pass@1, codigo ejecutado)
-
-| Modelo | Tamano | pass@1 | Retencion vs padre |
-|---|---:|---:|---:|
-| Padre | 222.18 GiB | **0.710** ±0.020 | — |
-| REAP-50 Q3_K_M | 169.30 GiB | 0.708 ±0.020 | 99.7% |
-| **MaxMin108** | 100.32 GiB | 0.626 ±0.022 | 88.2% |
-| **MaxMin108-fast** | 95.77 GiB | 0.592 ±0.022 | 83.4% |
-
-### Perplejidad (llama-perplexity, `-c 4096 --chunks 32`, corpus held-out)
-
-| Modelo | PPL codigo | Ratio | PPL general | Ratio |
-|---|---:|---:|---:|---:|
-| Padre | 2.1401 | 1.000 | 3.7753 | 1.000 |
-| REAP-50 Q3_K_M | 2.4217 | 1.132 | 6.5462 | 1.734 |
-| **MaxMin108** | 2.7751 | 1.297 | 6.2115 | **1.645** |
-| **MaxMin108-fast** | 2.8260 | 1.321 | 6.2790 | 1.663 |
-
-### Calidad de generacion (13 prompts congelados, decodificacion greedy)
-
-| Modelo | In-domain | Out-of-domain | OOD distinct-4 |
-|---|---|---:|---:|
-| Padre | 0/8 | 0/5 | 0.991 |
-| REAP-50 Q3_K_M | 0/8 | 1/5 | 0.883 |
-| **MaxMin108** | 0/8 | 0/5 | 0.855 (0.996 muestreado) |
-| **MaxMin108-fast** | 0/8 | 0/5 | 0.984 |
-
-### Velocidad (llama-bench, llama.cpp build b10005, `-p 512 -n 128 -ngl 99 -fa 1 -ctk q8_0 -ctv q8_0 -r 3`, en 1× GB10 Spark)
-
-| Modelo | Decode (tg128) | Prefill (pp512) | Residente @ 64K ctx |
-|---|---:|---:|---:|
-| MaxMin108 | 8.24 ±0.02 tok/s | 244.12 (dato incompleto en la model card) | No especificado |
+El autor señala que no incluye fila BF16 porque el GGUF de 2 bits de Unsloth es la referencia de la comparación. La diferencia entre IQ2_M y REAP-50 en MMLU es de 0,25 puntos, con barras de error reportadas de ±0,39, lo que no establece equivalencia; en MBPP, REAP-50 va por delante (0,708 frente a 0,626).
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo IQ2_M ocupa 100.32 GiB, por lo que se necesita al menos esa cantidad de memoria disponible. La variante fast ocupa 95.77 GiB.
-- GPU recomendada: NVIDIA GB10 Spark con 128 GB de memoria unificada (es la plataforma de referencia en las pruebas del autor). No cabe en GPUs de consumo (RTX 4090 tiene 24 GB, RTX 5090 tiene 32 GB).
-- No se han publicado datos de rendimiento en otras GPUs (A100, H100, etc.). Dado el tamaño, se requeririan multiples GPUs o una con al menos 100 GB de VRAM.
-- Opciones de despliegue: llama.cpp es el runtime utilizado en las pruebas; tambien es compatible con otros motores que soporten GGUF (Ollama, llama-cpp-python). No se menciona soporte para vLLM o TGI en esta variante.
-- Latencia: en GB10, decode a 8.24 tok/s y prefill a 244.12 tok/s (dato parcial). La variante fast es ~12-14% mas rapida en decode.
+- VRAM/ memoria unificada: 104 de 121 GB en una NVIDIA GB10 con la variante por defecto a contexto de 64K; 109 de 121 GB con la variante de referencia.
+- Máquina de referencia: 128 GB en total, una única GPU NVIDIA GB10 (DGX Spark).
+- GPU recomendadas: NVIDIA GB10 para el escenario documentado; no se indican otras GPU con memoria suficiente en la información disponible.
+- No cabe en GPU de consumo convencionales (RTX 4090 de 24 GB, etc.) ni en configuraciones de 48-80 GB, dado el tamaño de los pesos.
+- Opciones de despliegue: `llama-server` de llama.cpp con soporte GLM-DSA (build `b10005`, commit `7f575c39d` o posterior). No se proporciona paquete ni entrada para Ollama o LM Studio.
+- Configuración recomendada: `-ngl 99 -fa 1 -ctk q8_0 -ctv q8_0 -c 65536 -np 1 -t 20 --jinja -rea off`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tamano | Contexto | MMLU | MBPP | Licencia | Formato |
-|---|---:|---:|---:|---:|---|---|
-| **MaxMin108** | 100.32 GiB (324B totales) | No especificado | 63.00 | 0.626 | MIT | GGUF |
-| REAP-50 Q3_K_M | 169.30 GiB | No especificado | 62.75 | 0.708 | No disponible | GGUF |
-| GLM-5.2 UD-IQ2_M (padre) | 222.18 GiB (753B totales) | 1M (segun base) | 87.29 | 0.710 | MIT | GGUF |
-
-MaxMin108 es un 59% del tamano de REAP-50, con un rendimiento estadisticamente equivalente en MMLU (diferencia de 0.25 puntos dentro del margen de error) pero inferior en MBPP (0.626 vs 0.708). Frente al padre, pierde 24.29 puntos de MMLU y 0.084 de MBPP, pero cabe en hardware que no puede ejecutar el modelo completo. La licencia MIT es mas permisiva que la de REAP-50 (no especificada).
+| Modelo | Parametros | Contexto | MMLU 5-shot | MBPP pass@1 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| GLM-5.2-MaxMin108 IQ2_M-fast | 324,8 B totales (MoE podado) | 65.536 | 61,84 | 0,592 | MIT | GGUF, 95,78 GiB |
+| GLM-5.2-MaxMin108 IQ2_M | 324,8 B totales (MoE podado) | 65.536 | 63,00 | 0,626 | MIT | GGUF, 100,33 GiB |
+| REAP-50 Q3_K_M | no disponible | no disponible | 62,75 | 0,708 | no disponible | GGUF, 169,30 GiB |
+| Unsloth 2-bit parent (GLM-5.2) | 324,8 B totales | no disponible | 87,29 | 0,710 | MIT (modelo base) | GGUF, 222,18 GiB |
 
 ## Limitaciones y advertencias
 
-- Perdida significativa de conocimiento: el modelo pierde 24.29 puntos de MMLU respecto al padre (87.29 → 63.00), una caida del 27.8% relativo. Las respuestas factuales pueden ser fluidas pero incorrectas con alta confianza.
-- Degradacion en codigo: el pass@1 en MBPP cae a 0.626, un 12% menos que el padre y un 11.6% menos que REAP-50. No es adecuado para tareas de generacion de codigo complejo en produccion.
-- Perplejidad elevada: la perplejidad general es 1.645 veces la del padre, lo que indica una menor fluidez en texto libre. En codigo, la perplejidad empeora aun mas (1.297 veces).
-- Riesgo de degeneracion: aunque en las pruebas de 13 prompts no se observaron outputs degenerados en greedy, la variante base muestra un distinct-4 de 0.855 (frente a 0.991 del padre), lo que sugiere mayor tendencia a la repeticion en ciertos contextos. La variante fast mejora este aspecto (0.984).
-- Limitaciones de idioma: solo se ha verificado en ingles. No hay evidencia de rendimiento en otros idiomas.
-- Contexto no confirmado: no se ha publicado la longitud de contexto maxima de esta variante. Aunque el modelo base soporta 1M, la poda y cuantizacion podrian afectar la capacidad de manejar contextos largos.
-- Requisitos de memoria: requiere al menos 100 GB de memoria, lo que excluye la mayoria de hardware de consumo. No es un modelo para GPUs de gama media.
-- Sin garantias de soporte: el repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un artefacto experimental sin mantenimiento activo.
+- Pérdida severa de conocimiento del mundo: 61,84 en MMLU frente a 87,29 del GGUF de 2 bits original, una caída de más de 25 puntos.
+- Degradación en código: 0,592 en MBPP pass@1 frente a 0,710 del padre de 2 bits.
+- Solo declara inglés; no hay soporte multilingüe documentado.
+- Riesgo de alucinación elevado en preguntas factuales por la poda de expertos y la cuantización agresiva a 2 bits.
+- Requiere hardware específico: una máquina de 128 GB; no es desplegable en GPU de consumo.
+- Dependencia de una build concreta de llama.cpp con soporte GLM-DSA; versiones anteriores pueden no cargar el modelo.
+- El modo de razonamiento por defecto puede agotar el presupuesto de generación en tokens ocultos; se recomienda `-rea off` salvo que se necesite razonamiento explícito.
+- El repositorio contiene dos conjuntos de shards; descargar ambos duplica el espacio (unos 211 GB) y no aporta nada al despliegue.
+- Los benchmarks son declarados por el autor y no están verificados de forma independiente.
+- La licencia MIT se hereda del modelo base; conviene revisar el enlace de licencia de zai-org/GLM-5.2 antes de uso comercial.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/turintech/GLM-5.2-MaxMin108-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.2
-- Repositorio GitHub de GLM-5 (incluye GLM-5.2): https://github.com/zai-org/GLM-5
-- Documentacion de Unsloth para GLM-5.2: https://unsloth.ai/docs/models/glm-5.2
-- Guia de ejecucion local de GLM-5.2: https://insiderllm.com/guides/run-glm-5-2-locally/
-- Variante GGUF de Unsloth: https://huggingface.co/unsloth/GLM-5.2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/GLM-5.2-MaxMin108-GGUF
+- Modelo base: https://huggingface.co/zai-org/GLM-5.2
+- Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.2/blob/main/LICENSE
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai
+- Resultados declarados: https://huggingface.co/turintech/GLM-5.2-MaxMin108-GGUF#results

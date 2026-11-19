@@ -2,94 +2,90 @@
 
 ## Resumen
 
-MiMo-Negentropy-9B-AGSI-i1-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo OliviaRossi/MiMo-Negentropy-9B-AGSI, publicada por el usuario mradermacher. El modelo base es un merge de 8.953.803.264 parámetros (aproximadamente 9B) orientado a tareas de agente, uso de terminal, generación de código y razonamiento, según las etiquetas declaradas en su model card. El repositorio no aporta detalles sobre la arquitectura concreta ni el proceso de entrenamiento, más allá de la referencia a la familia Qwen3.5 en las etiquetas.
+MiMo-Negentropy-9B-AGSI-i1-GGUF es la versión cuantizada en formato GGUF del modelo MiMo-Negentropy-9B-AGSI, publicado por el usuario mradermacher a partir del modelo base de OliviaRossi. Se trata de un merge de aproximadamente 8.950 millones de parámetros (8.953.803.264 según los pesos en safetensors) orientado a tareas de agente, uso de terminal, generación de código y razonamiento, con etiquetas que lo vinculan a la familia Qwen 3.5. El paquete incluye cuantizaciones ponderadas con imatrix, pensadas para ejecución local en CPU y GPU de consumo mediante llama.cpp y derivados.
 
-La aportación de este repositorio es la generación de cuantizaciones con imatrix (matriz de importancia) y con pesos ponderados, que permiten reducir el peso del modelo desde aproximadamente 18 GB en BF16 hasta 3,9-5,5 GB, manteniendo un equilibrio entre calidad y velocidad. Está pensado para ejecutarse en hardware de consumo mediante llama.cpp, Ollama o cualquier runtime compatible con GGUF.
+La relevancia de esta ficha radica en que permite desplegar un modelo de casi 9.000 millones de parámetros con capacidades agénticas en hardware modesto, desde estaciones de trabajo con una sola GPU hasta portátiles, gracias a la horquilla de cuantizaciones que va desde IQ1_S (2,8 GB) hasta Q6_K (7,5 GB). El modelo declara soporte para inglés y chino, licencia MIT y compatibilidad con endpoints, lo que facilita su integración en pipelines de código y automatización de terminal.
 
-El modelo declara soporte para inglés y chino, licencia MIT y, según una nota del propio mradermacher, podría tratarse de un modelo con capacidades de visión, si bien los ficheros mmproj se alojarían en el repositorio estático complementario. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes.
+No se dispone de información pública sobre la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks en la documentación proporcionada, por lo que esos apartados se marcan explícitamente como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta qwen3_5 sugiere base de la familia Qwen3.5) |
-| Parametros totales | 8.953.803.264 |
-| Parametros activos | no disponible (no hay indicios de que sea MoE) |
+| Arquitectura | no disponible (etiquetas del autor sugieren base Qwen 3.5; no confirmado en la model card) |
+| Parámetros totales | 8.953.803.264 (8,95 mil millones) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | imatrix, i1-Q2_K, i1-IQ3_M, i1-Q4_K_S (publicadas); conjunto completo declarado: Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | ingles (en), chino (zh) |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (más fichero imatrix) |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base es de transformers/safetensors |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base se distribuye en safetensors vía transformers |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Las etiquetas del repositorio incluyen qwen3_5, agentic, coding, terminal-use, reasoning, merge y agsi, lo que apunta a un modelo resultante de una fusión (merge) de pesos construido sobre la familia Qwen3.5 y afinado o configurado para tareas agénticas, uso de terminal y razonamiento. No se especifica si emplea atención completa, atención lineal, mezcla de expertos (MoE) o alguna variante híbrida.
+La model card del repositorio no detalla la arquitectura interna del modelo base. Las etiquetas incluyen `qwen3_5`, lo que sugiere que el merge se construyó sobre la familia Qwen 3.5, pero no se confirma en el texto de la ficha. El modelo base (OliviaRossi/MiMo-Negentropy-9B-AGSI) es un merge, según la etiqueta `merge`, y el autor lo describe como orientado a uso agéntico, coding, terminal-use y razonamiento.
 
-Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO u otro tipo de ajuste por preferencias. El repositorio de mradermacher es exclusivamente de cuantización: parte del modelo base OliviaRossi/MiMo-Negentropy-9B-AGSI y genera cuantizaciones con imatrix y con pesos ponderados (weighted quants), sin aportar información adicional sobre el entrenamiento original. Como innovación técnica reseñable en este repositorio, destaca el uso de una matriz de importancia (imatrix) para preservar la calidad en cuantizaciones agresivas de 2 a 4 bits.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se documentan innovaciones técnicas concretas como decodificación especulativa o atención lineal. La contribución de esta versión es exclusivamente la cuantización: se han generado cuantizaciones ponderadas con imatrix (versión de quantize 2, tensores de salida cuantizados, conversión a formato HF) para reducir el peso del modelo manteniendo la calidad relativa, siguiendo la práctica habitual de mradermacher.
 
 ## Capacidades
 
-- Generación de texto y razonamiento, según las etiquetas reasoning y conversational.
-- Generación de código y asistencia en tareas de programación (etiqueta coding).
-- Uso de terminal y ejecución de comandos en entornos de línea de comandos (etiqueta terminal-use).
-- Comportamiento agéntico y razonamiento multi-paso (etiquetas agentic y agsi).
-- Soporte bilingüe inglés y chino.
-- Posible soporte de visión, según la nota de mradermacher que indica que se trata de un modelo de visión y que los ficheros mmproj se alojarían en el repositorio estático. Este punto no está confirmado en el repositorio de cuantizaciones.
-- Soporte de tool calling / function calling: no disponible (no se documenta explícitamente).
-- Modo de pensamiento (thinking mode): no disponible.
+- Generación de texto conversacional multi-turno, con etiqueta `conversational` en el repositorio.
+- Razonamiento explícito (`reasoning`) y resolución de problemas multi-paso.
+- Generación y edición de código (`coding`), incluyendo tareas de programación en producción.
+- Uso de terminal (`terminal-use`): ejecución de comandos y automatización de shell.
+- Comportamiento agéntico (`agentic`): planificación y ejecución de tareas encadenadas.
+- Soporte declarado de tool calling y function calling a través de la etiqueta `endpoints_compatible`.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Compatibilidad con el ecosistema transformers y con llama.cpp vía GGUF.
 
 ## Casos de uso
 
-- Asistente de terminal y automatización de operaciones: el modelo puede integrarse en flujos que interpreten lenguaje natural y generen comandos de shell, aprovechando la etiqueta terminal-use para tareas de administración de sistemas y scripting.
-- Generación de código en pipelines de desarrollo: dado su enfoque en coding, encaja en asistentes de autocompletado, revisión de parches o generación de pruebas dentro de entornos CI/CD.
-- Agentes autónomos multi-paso: sus etiquetas agentic y reasoning lo hacen adecuado para orquestar tareas que requieran planificación, uso de herramientas y ejecución secuencial de acciones.
-- Despliegue local en hardware de consumo: al ofrecerse cuantizaciones de 3,9 a 5,5 GB, puede ejecutarse en equipos sin GPU dedicada de gama alta, lo que permite asistentes privados sin conexión.
-- Asistencia bilingüe inglés-chino: útil para equipos o productos que atiendan a usuarios en ambos idiomas, con generación y comprensión en las dos lenguas declaradas.
-- Prototipado rápido de aplicaciones de razonamiento: gracias a la licencia MIT y al formato GGUF, se puede integrar en demos y pruebas de concepto sin coste de licencia.
-- Experimentación con cuantizaciones: el repositorio ofrece múltiples niveles de cuantización para estudiar el compromiso entre tamaño, velocidad y calidad en un modelo de 9B.
+- Automatización de terminal en entornos de desarrollo: el modelo puede interpretar instrucciones en lenguaje natural y traducirlas a comandos de shell, integrándose en scripts de administración de sistemas y tareas repetitivas de DevOps, gracias a su etiqueta `terminal-use`.
+- Asistente de coding en el IDE: con cuantizaciones Q4_K_M (5,7 GB) o Q5_K_M (6,6 GB) puede ejecutarse en una GPU de consumo y ofrecer autocompletado, refactorización y explicación de código sin depender de la nube.
+- Agente autónomo para pipelines de CI/CD: su orientación agéntica permite encadenar pasos de build, test y despliegue mediante tool calling, aunque requiere validación humana por el riesgo de alucinación en comandos destructivos.
+- Chat de soporte técnico bilingüe inglés-chino: adecuado para equipos con documentación en ambos idiomas, con despliegue local para evitar enviar datos sensibles a APIs externas.
+- Prototipado rápido de agentes en investigación: al ser un GGUF con licencia MIT, se puede experimentar con arquitecturas de agentes y evaluar comportamiento multi-paso sin coste de licencia.
+- Inferencia en portátiles y estaciones sin GPU dedicada: las cuantizaciones IQ2_M (3,7 GB) o IQ3_M (4,5 GB) permiten ejecutar el modelo en CPU con llama.cpp para tareas de razonamiento de baja latencia crítica.
+- Generación de código en entornos air-gapped: al distribuirse como fichero GGUF y con licencia MIT, encaja en organizaciones que no pueden usar servicios cloud.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16 (pesos originales, ~9B): en torno a 18 GB solo para pesos, por lo que requiere GPU de 24 GB o superior, como RTX 3090, RTX 4090, A100 40 GB o H100. Estimación aproximada a partir del número de parámetros.
-- VRAM estimada con i1-Q4_K_S (5,5 GB): cabe en GPUs de 8 GB (RTX 3060 Ti, RTX 4060) dejando margen para la caché KV; con contexto largo puede necesitar 10-12 GB.
-- VRAM estimada con i1-IQ3_M (4,5 GB) e i1-Q2_K (3,9 GB): aptas para GPUs de 6-8 GB e incluso para ejecución parcial en CPU con memoria del sistema.
-- Ejecución en CPU: viable con llama.cpp u Ollama, especialmente en las cuantizaciones Q2 y Q3; el throughput dependerá fuertemente del número de núcleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, y otros runtimes compatibles con GGUF. No se documenta compatibilidad explícita con vLLM o TGI para los ficheros GGUF de este repositorio.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero GGUF más overhead de contexto. IQ1_S ~2,8 GB; IQ2_M ~3,7 GB; IQ3_M ~4,5 GB; Q4_K_M ~5,7 GB; Q5_K_M ~6,6 GB; Q6_K ~7,5 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4-Q6; A100 o H100 solo si se busca throughput alto con lotes grandes.
+- Cabe en GPU de consumo: sí, desde GPUs de 6-8 GB con cuantizaciones IQ2/IQ3, y con holgura en GPUs de 12-16 GB para Q5/Q6.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y servidores compatibles con endpoints (la etiqueta `endpoints_compatible` sugiere compatibilidad con APIs tipo OpenAI). vLLM y TGI no soportan GGUF de forma nativa; para esos motores habría que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiMo-Negentropy-9B-AGSI (este) | ~9B | no disponible | MIT | GGUF (y safetensors en el base) | Hugging Face |
-| Qwen3-8B | ~8B | no disponible en esta ficha | Apache 2.0 (segun informacion publica) | safetensors, GGUF | Hugging Face |
-| Llama 3.1 8B | ~8B | no disponible en esta ficha | Llama Community License | safetensors, GGUF | Hugging Face |
-| Gemma 2 9B | ~9B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | Hugging Face |
+| MiMo-Negentropy-9B-AGSI-i1-GGUF (este) | 8,95 B | no disponible | MIT | GGUF (i1) | Merge orientado a agente y terminal; EN/ZH |
+| Qwen2.5-Coder-7B (referencia de categoría) | 7,6 B | 32K (típico) | Apache 2.0 | safetensors, GGUF | Orientado a código; comparación de categoría, datos no verificados en esta ficha |
+| Llama-3.1-8B-Instruct (referencia de categoría) | 8,0 B | 128K | Llama 3.1 Community | safetensors, GGUF | Uso general; comparación de categoría, datos no verificados en esta ficha |
 
-Nota: los datos de contexto, licencia y rendimiento de los modelos comparados no forman parte de la informacion proporcionada en esta consulta, por lo que se marcan como no disponibles salvo donde se indique lo contrario. No se dispone de resultados de benchmarks que permitan una comparación cuantitativa fiable.
+No se dispone de datos de rendimiento comparativo del modelo en la información proporcionada; la comparativa anterior es orientativa por categoría y tamaño, no por resultados medidos.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. La model card no documenta sesgos específicos.
-- Riesgo de alucinación: no cuantificado en la información disponible; como modelo generativo, es previsible que pueda producir contenido incorrecto, especialmente en las cuantizaciones más agresivas (IQ1, IQ2, Q2), donde la pérdida de calidad es mayor.
-- Limitaciones de contexto e idioma: solo se declaran inglés y chino; el rendimiento en castellano u otros idiomas no está garantizado. La longitud de contexto no está documentada.
-- Restricciones de licencia: licencia MIT, que permite uso comercial y modificación, siempre que se conserve el aviso de copyright y la licencia. Al derivar de un modelo base de terceros, conviene verificar la licencia del modelo original OliviaRossi/MiMo-Negentropy-9B-AGSI.
-- Caveat de producción: el repositorio presenta 0 descargas y 0 likes, sin validación externa documentada; no se han publicado benchmarks ni evaluaciones que respalden las capacidades declaradas en las etiquetas.
-- Cuantizaciones de baja precisión: el propio autor advierte que, en rangos de calidad baja, las cuantizaciones IQ suelen ser preferibles a las no-IQ del mismo tamaño; las variantes por debajo de Q4 pueden degradar notablemente el razonamiento y la generación de código.
-- Naturaleza del repositorio: es un repositorio de cuantización, no el modelo original; para reproducir el comportamiento de referencia debe consultarse el modelo base.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la model card.
+- Riesgo de alucinación inherente a modelos de 9B, especialmente en tareas agénticas y de terminal donde un comando erróneo puede tener consecuencias destructivas; se recomienda sandboxing y confirmación humana.
+- Idiomas soportados limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no disponible; no se puede planificar el uso en conversaciones o repositorios largos sin verificación empírica.
+- Licencia MIT permite uso comercial, pero el modelo base es un merge sin documentación de procedencia de datos de entrenamiento; conviene revisar la licencia del modelo base y de sus componentes.
+- Al ser una cuantización, las versiones de baja calidad (IQ1, IQ2, Q2_K_S) degradan notablemente la coherencia; para producción se recomienda Q4_K_M o superior.
+- El repositorio tiene 0 likes y 3.668 descargas en el momento de la consulta, lo que indica validación comunitaria escasa.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones (este modelo): https://huggingface.co/mradermacher/MiMo-Negentropy-9B-AGSI-i1-GGUF
-- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/MiMo-Negentropy-9B-AGSI-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiMo-Negentropy-9B-AGSI-i1-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/MiMo-Negentropy-9B-AGSI
-- Página de resumen del autor para este modelo: https://hf.tst.eu/model#MiMo-Negentropy-9B-AGSI-i1-GGUF
-- Preguntas frecuentes y solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-
-Nota: los resultados de la búsqueda web proporcionados no contienen información relevante sobre este modelo; los enlaces encontrados corresponden a contenidos no relacionados.
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/MiMo-Negentropy-9B-AGSI-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#MiMo-Negentropy-9B-AGSI-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

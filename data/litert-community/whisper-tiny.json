@@ -248,11 +248,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/whisper-medium - Hugging Face",
-      "url": "https://huggingface.co/litert-community/whisper-medium",
-      "snippet": "80 mel bins / vocab 51865 — whisper-medium uses the classic Whisper frontend and token ids (same as tiny/base), not the 128-mel/51866 large-v3 family layout."
-    }
-  ]
+  "sources": []
 }

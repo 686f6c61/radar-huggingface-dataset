@@ -1,86 +1,84 @@
 # mradermacher/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-i1-GGUF
 
 ## Resumen
+Esta ficha describe la cuantización GGUF realizada por mradermacher del modelo xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic, un merge de tres variantes derivadas de la familia Qwen3.8 orientado a generación de código, razonamiento y uso agéntico. El modelo original tiene 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las de dicha licencia.
 
-Este repositorio contiene una coleccion de cuantizaciones en formato GGUF del modelo base `xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic`, publicadas por el usuario mradermacher, conocido en Hugging Face por generar quants de modelos de terceros mediante herramientas como llama.cpp. No se trata de un modelo entrenado desde cero, sino de una distribucion de pesos comprimidos en multiples niveles de cuantizacion (desde IQ1_S hasta Q6_K) pensada para ejecucion en CPU o GPU con recursos limitados.
+El interés de esta publicación reside en que ofrece cuantizaciones con imatrix (importancia matrix) en una amplia gama de tipos (desde i1-Q2_K de 11 GB hasta i1-Q6_K de 22,5 GB), lo que permite desplegar un modelo de 27B en hardware de consumo con pérdida de calidad controlada. El modelo base incorpora las etiquetas heretic, uncensored, decensored y abliterated, lo que indica que se ha aplicado una técnica de eliminación de rechazos (abliteration) sobre el modelo original, con las implicaciones éticas y de seguridad que ello conlleva.
 
-El nombre sugiere un modelo derivado de la familia Qwen (posiblemente una variante de 27B, aunque la cifra de parametros reportada en los metadatos de safetensors es de 6.789.424, lo que resulta inconsistente con el nombre y probablemente refleje un error de metadatos o un tensor aislado). El sufijo "CodeForge-3xMerge" indica una fusion de tres modelos orientados a codigo, y "UNCENSORED-heretic" senala que se ha aplicado un proceso de ablacion o fine-tuning para reducir los rechazos y filtros de seguridad del modelo original.
-
-La relevancia de este repositorio es practica: ofrece variantes cuantizadas listas para usar con llama.cpp, Ollama o cualquier runtime compatible con GGUF, lo que permite desplegar un modelo de gran tamano en hardware de consumo. No obstante, la informacion disponible es muy escasa (sin model card detallada, sin licencia declarada, sin benchmarks ni idiomas especificados), por lo que cualquier evaluacion tecnica debe tomarse con cautela.
+La model card es escasa en detalles técnicos: no se especifican la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks. La información disponible se limita a los metadatos de Hugging Face, la lista de cuantizaciones y las etiquetas del autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de Qwen, presumiblemente transformer denso) |
-| Parametros totales | 6.789.424 (segun metadatos safetensors; inconsistente con el nombre "27B") |
+| Arquitectura | Transformer (derivada de Qwen3.8, según etiquetas del autor); detalles no disponibles |
+| Parametros totales | 27.320.697.856 (27,3B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (multiples niveles de cuantizacion) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (con imatrix) |
+| Idiomas soportados | en, zh (según model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
+No se dispone de información detallada sobre la arquitectura interna más allá de la designación Qwen3.8 y la etiqueta "merge", que indica que el modelo base es una fusión de tres variantes (3xMerge). Las etiquetas incluyen "distillation", "efficient-thinking", "agentic", "tool-use" e "instruction-following", lo que sugiere que el entrenamiento incorporó destilación y optimización para razonamiento eficiente y uso de herramientas, aunque no se aportan cifras de tokens, composición del dataset ni detalles sobre RLHF/DPO.
 
-No se dispone de informacion sobre la arquitectura interna del modelo base. Por el nombre se infiere que parte de un modelo de la familia Qwen (probablemente Qwen2.5 o Qwen3 en variante de 27B, aunque la cifra exacta no se puede confirmar) y que ha sido sometido a una fusion de tres checkpoints especializados en codigo ("3xMerge"). El sufijo "UNCENSORED-heretic" indica que se ha aplicado una tecnica de ablacion de direcciones de rechazo o un fine-tuning con datos sin filtros para reducir la tasa de negativas del modelo.
-
-El proceso de cuantizacion realizado por mradermacher utiliza pesos ponderados por importancia (imatrix) segun se indica en la model card, lo que mejora la calidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3). No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO en el modelo base.
+La componente "heretic" y "abliterated" indica que se ha aplicado una técnica de abliteration para eliminar el comportamiento de rechazo del modelo original. El proceso de cuantización de mradermacher emplea imatrix (matriz de importancia) para mejorar la calidad de las cuantizaciones de baja precisión, y ofrece tanto cuantizaciones estáticas (en el repositorio hermano) como estas i1 (importancia mejorada).
 
 ## Capacidades
-
-- Generacion de texto y codigo (por la denominacion "CodeForge").
-- Razonamiento multi-paso presumiblemente, aunque no confirmado.
-- Reduccion de rechazos y filtros de seguridad gracias al proceso "heretic" (comportamiento "uncensored").
-- Soporte de tool calling y function calling: no disponible.
-- Capacidades de agente: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo thinking, vision o audio: no disponible.
+- Generación de código y code-generation, según las etiquetas del autor.
+- Razonamiento (reasoning) y "efficient-thinking", orientado a cadenas de pensamiento eficientes.
+- Uso agéntico y tool-use / function calling, según etiquetas.
+- Instruction-following para tareas conversacionales.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Modelo marcado como vision model por el cuantizador, con posibles archivos mmproj en el repositorio estático (no confirmado en la información disponible).
+- Comportamiento "uncensored" / "decensored": ausencia de rechazos ante peticiones que el modelo original rechazaría.
 
 ## Casos de uso
-
-- Generacion de codigo en local: el formato GGUF y la variedad de cuantizaciones permiten ejecutar el modelo en estaciones de trabajo sin GPU dedicada, usando llama.cpp u Ollama para autocompletado y generacion de fragmentos de codigo.
-- Prototipado de asistentes de programacion sin conexion: al no depender de APIs externas, se puede integrar en entornos con requisitos de privacidad (por ejemplo, desarrollo en redes aisladas).
-- Investigacion sobre alineacion y seguridad: la variante "uncensored" es util para estudiar el comportamiento de modelos tras ablacion de rechazos, comparando tasas de respuesta ante prompts sensibles.
-- Fine-tuning posterior: los quants de mayor precision (Q6_K, Q5_K_M) pueden servir como base para experimentos de ajuste o evaluacion, aunque para entrenamiento se recomienda el modelo original en safetensors.
-- Despliegue en dispositivos con poca VRAM: las variantes IQ1_S, IQ2_XXS y Q2_K permiten cargar el modelo en GPUs de 8-12 GB o incluso en CPU con RAM limitada, a costa de perdida de calidad.
-- Evaluacion comparativa de cuantizaciones: util para medir el impacto de la compresion en tareas de codigo, comparando la salida de IQ2 frente a Q5 sobre el mismo prompt.
+- Generación de código en producción: el modelo puede integrarse en pipelines de CI/CD para autocompletar, refactorizar o generar tests, aprovechando su orientación a code-generation y su licencia Apache 2.0.
+- Asistentes de programación en local: las cuantizaciones i1-Q4_K_M (16,9 GB) permiten ejecutar el modelo en una GPU de consumo de 24 GB, habilitando asistentes de código sin conexión.
+- Automatización agéntica con tool calling: las etiquetas agentic y tool-use sugieren su uso en flujos multi-paso con invocación de funciones, aunque no se especifica el formato exacto de tool calling.
+- Razonamiento eficiente en entornos con recursos limitados: la etiqueta efficient-thinking apunta a un modo de razonamiento optimizado para latencia, adecuado para tareas de análisis que requieren pasos intermedios.
+- Investigación sobre alineación y seguridad: al ser un modelo abliterated, es útil para estudiar el comportamiento de modelos sin rechazos y evaluar riesgos.
+- Procesamiento de documentación técnica bilingüe inglés-chino: el soporte de ambos idiomas permite tareas de traducción técnica o generación de documentación en esos idiomas.
+- Despliegue en hardware de consumo: las cuantizaciones desde 11 GB (i1-Q2_K) hasta 22,5 GB (i1-Q6_K) permiten ajustar el equilibrio calidad/VRAM en estaciones de trabajo con GPUs de 12 a 24 GB.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: depende de la cuantizacion. Para un modelo de ~27B, las estimaciones orientativas serian: IQ1_S/IQ2_XXS en torno a 8-10 GB, Q3_K_M alrededor de 13-15 GB, Q4_K_M en torno a 16-18 GB, Q5_K_M cerca de 20 GB y Q6_K por encima de 22 GB. Estas cifras son estimaciones basadas en el tamano nominal del modelo, no en datos verificados del repositorio.
-- GPU recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones Q4-Q5; A100 40/80 GB o H100 para Q6_K y contextos largos.
-- GPU de consumo: si, en RTX 3060 12 GB con IQ2/IQ3, y en RTX 4090 con Q4_K_M.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, KoboldCpp; vLLM y TGI no soportan GGUF de forma nativa (requieren conversion).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según tamaño de cuantización): i1-Q2_K ~11 GB, i1-Q3_K_S ~12,4 GB, i1-IQ3_M ~12,9 GB, i1-Q4_K_S ~15,9 GB, i1-Q4_K_M ~16,9 GB, i1-Q5_K_M ~19,6 GB, i1-Q6_K ~22,5 GB (más overhead de contexto y KV cache).
+- GPU recomendadas: para cuantizaciones Q4_K_M o superiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q6_K se recomienda 24 GB o más. Para despliegues de mayor throughput, A100 40/80 GB o H100.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con cuantizaciones hasta Q6_K; en GPUs de 12-16 GB con cuantizaciones Q2-Q3.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa para este formato, por lo que se requeriría el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic i1-GGUF) | ~27B (nominal) | no disponible | no disponible | GGUF | Fusion de codigo sin censura, cuantizado con imatrix |
-| Qwen2.5-Coder-32B-Instruct (GGUF) | 32B | 128K (nominal) | Apache 2.0 | GGUF | Referencia en codigo open source, con licencia clara |
-| DeepSeek-Coder-V2-Lite-Instruct (GGUF) | 16B (MoE, 2.4B activos) | 128K | DeepSeek License | GGUF | Alternativa MoE eficiente en inferencia |
-| Codestral-22B (GGUF) | 22B | 32K | MNPL (no comercial) | GGUF | Modelo de codigo de Mistral, licencia restrictiva |
-
-La comparativa es orientativa: no se dispone de datos verificados de rendimiento para el modelo de este repositorio, por lo que la eleccion frente a alternativas con licencia clara y benchmarks publicados debe basarse en pruebas propias.
+| Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic (i1-GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF | Merge abliterated orientado a código |
+| Modelo base xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic | 27,3B | no disponible | Apache 2.0 | safetensors | Versión sin cuantizar |
+| Cuantizaciones estáticas de mradermacher (Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF | Misma base, sin imatrix |
+| Alternativas de 27B comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks para comparar |
 
 ## Limitaciones y advertencias
-
-- La licencia no esta declarada, lo que impide confirmar si el uso comercial esta permitido; se debe contactar con el autor o consultar la licencia del modelo base.
-- El proceso "uncensored/heretic" elimina filtros de seguridad, lo que incrementa el riesgo de generar contenido danino, sesgado o ilegal; no es adecuado para aplicaciones de cara al publico sin moderacion adicional.
-- Riesgo elevado de alucinacion, especialmente en cuantizaciones de baja precision (IQ1, IQ2) y en tareas de codigo donde la sintaxis exacta es critica.
-- Inconsistencia en los metadatos: el campo de parametros (6.789.424) no concuerda con el nombre "27B", lo que sugiere errores en la publicacion o tensores incompletos.
-- Sin informacion sobre idiomas soportados ni longitud de contexto; no se recomienda asumir capacidades multilingues o de contexto largo.
-- Repositorio sin descargas ni likes en el momento de la consulta, sin validacion por parte de la comunidad.
-- Al ser una fusion de modelos, puede heredar sesgos y comportamientos inconsistentes de los checkpoints originales.
+- El modelo es "uncensored" / "abliterated": no aplica rechazos de seguridad, lo que puede producir contenido dañino, ilegal o sesgado; no es apto para producción orientada al usuario sin filtros adicionales.
+- Riesgo elevado de alucinación: no se han publicado evaluaciones de fidelidad ni benchmarks que permitan cuantificar la tasa de alucinación.
+- Idiomas limitados a inglés y chino según la model card; el rendimiento en castellano no está verificado.
+- Longitud de contexto no especificada: no se puede garantizar el comportamiento en conversaciones largas o documentos extensos.
+- Las cuantizaciones de baja precisión (Q2, Q3) degradan la calidad; se recomienda Q4_K_M o superior para uso en producción.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre la legalidad del contenido generado.
+- El repositorio ocupa 218,6 GB, lo que requiere espacio de almacenamiento considerable si se descargan varias cuantizaciones.
+- No se dispone de información sobre el dataset de entrenamiento, lo que impide evaluar sesgos de origen.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-i1-GGUF
-- Modelo base referenciado: https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic
-- Herramienta de cuantizacion (llama.cpp): https://github.com/ggerganov/llama.cpp
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-i1-GGUF
+- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-GGUF
+- Modelo base: https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

@@ -2,90 +2,95 @@
 
 ## Resumen
 
-`huggingface-mic/llava-onevision-qwen2-0.5b-ov-hf-mic` no es un modelo utilizable, sino un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` dentro del proyecto `transformers-mic`. Se trata de una version "adelgazada" del checkpoint `llava-hf/llava-onevision-qwen2-0.5b-ov-hf`, un modelo multimodal de imagen a texto basado en la arquitectura LLaVA-OneVision con un backbone de lenguaje Qwen2 de 0,5B parametros. El fixture reproduce la misma arquitectura (`LlavaOnevisionForConditionalGeneration`) con una configuracion reducida (2 capas en el encoder de vision y 2 capas en el modelo de texto) y pesos aleatorios, hasta totalizar 9.962.112 parametros.
+`llava-onevision-qwen2-0.5b-ov-hf-mic` es un artefacto de prueba publicado por el usuario `huggingface-mic`, no un modelo utilizable. Se trata de una version "slim" (reducida) del checkpoint multimodal `llava-hf/llava-onevision-qwen2-0.5b-ov-hf`, generada con la herramienta `build_fixtures.py` del repositorio `transformers-mic` para validar contratos de integracion y expectativas de frameworks. El modelo conserva la arquitectura `LlavaOnevisionForConditionalGeneration` y los mismos nombres de tensores que el original, pero con solo 9.962.112 parametros reales (frente a los ~500 millones del modelo base) y pesos aleatorios inicializados con semilla 17.
 
-Su proposito es servir como banco de pruebas para validar contratos de integracion con frameworks (Transformers, principalmente): los ficheros de procesador, tokenizador y configuracion se copian byte a byte del modelo real, y los nombres de tensores coinciden con los del checkpoint original. De este modo, los desarrolladores de `transformers-mic` pueden comprobar que las expectativas de carga, preprocesado y forward pass se cumplen sin necesidad de descargar ni ejecutar el modelo completo.
+El objetivo del artefacto es servir como fixture reproducible: permite comprobar que una integracion (por ejemplo, el pipeline de Transformers) carga, ejecuta forward, calcula perdida y propaga gradientes sin errores, con archivos de procesador copiados byte a byte del modelo original. La model card lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos, y advierte de que "no es un modelo usable".
 
-Es relevante unicamente en el contexto de testing e integracion continua de pipelines de modelos multimodales. No debe emplearse para inferencia real, generacion de texto, comprension de imagenes ni ninguna tarea de produccion: sus pesos son aleatorios (semilla 17) y su capacidad representacional es practicamente nula.
+Por tanto, esta ficha documenta un objeto de ingenieria de software (un fixture de pruebas) y no un modelo de IA desplegable. Cualquier dato de rendimiento, capacidades o benchmarks debe interpretarse en ese contexto: el modelo no produce salidas linguisticas coherentes porque sus pesos son aleatorios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LlavaOnevisionForConditionalGeneration (vision encoder + decoder de lenguaje Qwen2), configuracion reducida a 2 capas de vision y 2 capas de texto |
-| Parametros totales | 9.962.112 (fixture); el modelo base `llava-hf/llava-onevision-qwen2-0.5b-ov-hf` tiene aproximadamente 0,5B |
+| Arquitectura | LlavaOnevisionForConditionalGeneration (vision-language transformer, config reducida) |
+| Parametros totales | 9.962.112 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base, no confirmada) |
-| Tipos de cuantizacion | no disponible; los pesos se guardan en float16 |
-| Idiomas soportados | no disponibles |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos guardados en float16) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (float16) |
+| Formato de pesos | safetensors |
+| Modelo base | llava-hf/llava-onevision-qwen2-0.5b-ov-hf |
+| Capas vision (num_hidden_layers) | 2 |
+| Capas texto (num_hidden_layers) | 2 |
+| Semilla de inicializacion | 17 (pesos aleatorios) |
+| Dtype de guardado | float16 |
+| Tamano del repo | 0,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura LLaVA-OneVision: un encoder visual (en el modelo original, basado en SigLIP) conectado mediante un proyector multimodal a un decoder de lenguaje Qwen2. En este fixture, la configuracion se ha reducido mediante la regla generica de `sweep.py` del repositorio `transformers-mic`: `vision num_hidden_layers = 2` y `text num_hidden_layers = 2`. Los ficheros de procesador (`preprocessor_config.json`, `video_preprocessor_config.json`, `processor_config.json`, `tokenizer.json`, `tokenizer_config.json`, `chat_template.json`, entre otros) se copiaron byte a byte del checkpoint original `llava-hf/llava-onevision-qwen2-0.5b-ov-hf`.
+El fixture replica la arquitectura del checkpoint original `llava-hf/llava-onevision-qwen2-0.5b-ov-hf` (un modelo LLaVA-OneVision con backbone de lenguaje Qwen2 de 0,5B), pero con una configuracion reducida: 2 capas en el codificador visual y 2 capas en el modelo de texto. La reduccion se aplica con la regla generica de `sweep.py` del repositorio `transformers-mic`, que conserva los nombres de tensores del checkpoint real y copia byte a byte los archivos del procesador (`tokenizer.json`, `preprocessor_config.json`, `video_preprocessor_config.json`, `chat_template.json`, entre otros).
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron mediante una "input-sensitivity gate": cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (la mas debil, `pixel_values:halve`, produjo 0,309), lo que garantiza que el fixture responde a las entradas de forma medible. Los tensores conservan los mismos nombres que el checkpoint real, y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El fixture cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el adelgazamiento (clave de fixture `20af79530371`).
+No hay entrenamiento. Los pesos se inicializan de forma aleatoria con semilla 17 y se validan mediante un "input-sensitivity gate": cada perturbacion de las entradas del contrato debe mover los logits al menos 0,001 (la mas debil, `pixel_values:halve`, produce 0,309). El fixture es finito en float32, bfloat16 y float16 (forward, perdida y gradientes), y se guarda en float16, el dtype por defecto del modelo base. No se aplico RLHF, DPO ni preentrenamiento de ningun tipo.
 
 ## Capacidades
 
-- No dispone de capacidades funcionales reales: los pesos son aleatorios y no han sido entrenados.
-- Reproduce la interfaz de entrada-salida del modelo base: acepta `pixel_values` e `input_ids` y produce logits, lo que permite validar pipelines de preprocesado imagen-texto.
-- Sirve para verificar la carga correcta de tokenizador, procesador y configuracion multimodal en Transformers.
-- Permite comprobar la sensibilidad de las entradas del contrato (perturbaciones de pixeles y tokens) en tests automatizados.
+- No es un modelo funcional: sus pesos son aleatorios y no genera texto ni descripciones coherentes.
+- Sirve como fixture de integracion para validar la carga de `LlavaOnevisionForConditionalGeneration` en Transformers.
+- Permite verificar el pipeline image-text-to-text a nivel de contrato (formas de tensores, dtypes, propagacion de gradientes).
+- Comprueba la compatibilidad byte a byte de los archivos de procesador y tokenizador del modelo base.
+- Valida la sensibilidad de las entradas (perturbaciones de `pixel_values`, `input_ids`, etc.) frente a los logits.
 - No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues reales.
-- No genera texto ni descripciones de imagenes con sentido.
+- No dispone de modo thinking, vision funcional ni audio.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI/CD de `transformers-mic`: ejecutar el fixture para verificar que el contrato de carga del modelo LLaVA-OneVision se cumple sin descargar el checkpoint completo de 0,5B.
-- Validacion de pipelines de preprocesado multimodal: comprobar que `preprocessor_config.json` y `video_preprocessor_config.json` producen tensores con las formas esperadas antes de pasar al modelo real.
-- Test de regresion de tokenizador: al copiarse `tokenizer.json`, `vocab.json` y `merges.txt` byte a byte, se puede verificar que los IDs de tokens coinciden con los del modelo base.
-- Desarrollo de herramientas de inspeccion de modelos: usar los nombres de tensores identicos al checkpoint real para validar scripts que enumeran, mapean o convierten pesos.
-- Validacion de dtypes: comprobar que el modelo es finito en float32, bfloat16 y float16 en forward, loss y gradientes, util para testear rutas de mixed precision.
-- Benchmarking de frameworks de inferencia: medir tiempos de carga y overhead de inicializacion de un modelo LlavaOnevision sin el coste de un checkpoint grande.
-- Verificacion de la gate de sensibilidad: replicar las perturbaciones sobre `pixel_values` e `input_ids` para confirmar que los logits se mueven por encima del umbral de 0,001.
+- Pruebas de integracion en CI: usar el fixture para verificar que una nueva version de Transformers carga y ejecuta `LlavaOnevisionForConditionalGeneration` sin errores, sin descargar los ~1 GB del checkpoint real.
+- Validacion de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen (formas de salida, dtypes, gradientes finitos).
+- Desarrollo de pipelines multimodales: probar el flujo image-text-to-text de extremo a extremo con un modelo ligero que cabe en cualquier GPU consumer o incluso en CPU.
+- Regresion de tokenizador y procesador: al copiarse los archivos byte a byte del modelo base, permite detectar cambios incompatibles en el procesamiento de imagenes y video.
+- Docencia y ejemplos: ilustrar la estructura de un checkpoint LLaVA-OneVision sin coste de descarga ni requisitos de VRAM.
+- Verificacion de herramientas de conversion: validar scripts que transforman safetensors a otros formatos (GGUF, etc.) sobre un checkpoint de 10M de parametros antes de aplicarlos al modelo real.
+- Reproducibilidad de experimentos: el archivo `build.json` registra fuentes fijadas, resultados del gate y hashes de archivos, lo que permite reconstruir el fixture de forma determinista.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K, VQAv2, etc.) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad (MMLU, HumanEval, GSM8K, VQAv2, etc.) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float16 (9,96M parametros, aproximadamente 20 MB de pesos mas overhead de activaciones y buffers del procesador).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) o incluso CPU es suficiente; no requiere A100 ni H100.
-- Cabe holgadamente en cualquier GPU consumer e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (ruta principal, con `integrations/transformers/usage.md`); no se ha confirmado soporte en vLLM, llama.cpp, Ollama ni TGI para este fixture.
-- Latencia y throughput: no disponibles; al ser un modelo de 2+2 capas, la latencia sera minima, pero no se han publicado mediciones.
+- VRAM estimada para inferencia: menos de 100 MB en float16 (10M de parametros ≈ 20 MB de pesos, mas activaciones minimas).
+- GPU recomendadas: cualquier GPU con soporte CUDA, incluidas GTX 1050, RTX 2060 o superiores; tambien funciona en CPU.
+- Cabe en cualquier GPU consumer y en entornos sin GPU.
+- Opciones de despliegue: Transformers (via `AutoModelForVision2Seq` o clase equivalente), y previsiblemente llama.cpp/Ollama tras conversion, aunque no se documenta soporte oficial.
+- Latencia y throughput: no disponibles; al ser un fixture, no se han medido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Proposito |
 |---|---|---|---|---|
-| `huggingface-mic/llava-onevision-qwen2-0.5b-ov-hf-mic` (este) | 9,96M (fixture) | no disponible | no disponible | Fixture de test |
-| `llava-hf/llava-onevision-qwen2-0.5b-ov-hf` (modelo base) | ~0,5B | no disponible en la informacion | no disponible | Modelo multimodal imagen-texto real |
-| Otros fixtures `transformers-mic` | Variable (reducidos) | no disponible | no disponible | Testing de contratos de integracion |
+| `huggingface-mic/llava-onevision-qwen2-0.5b-ov-hf-mic` | 9,96 M (fixture) | no disponible | no disponible | Fixture de pruebas, pesos aleatorios |
+| `llava-hf/llava-onevision-qwen2-0.5b-ov-hf` | ~500 M | no disponible en la informacion | no disponible en la informacion | Modelo multimodal real image-text-to-text |
+| `llava-hf/llava-onevision-qwen2-7b-ov-hf` | ~7 B | no disponible en la informacion | no disponible en la informacion | Version grande de la misma familia |
 
-La comparacion relevante es con su propio modelo base: el fixture reduce el numero de capas y sustituye los pesos entrenados por pesos aleatorios, manteniendo la interfaz y los ficheros de procesador. Frente a otros fixtures del mismo proyecto, comparte el mismo enfoque metodologico (adelgazamiento generico via `sweep.py`, gate de sensibilidad, pesos en float16).
+La comparacion relevante es con el modelo base: el fixture comparte arquitectura y archivos de procesador, pero sustituye los pesos entrenados por pesos aleatorios y reduce las capas a 2 en cada torre. No es un sustituto funcional del modelo original.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y no han sido entrenados; cualquier salida es ruido estadistico.
-- Etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe promocionarse a produccion.
-- La licencia no esta disponible en la informacion proporcionada; ante cualquier uso, consultar el repositorio del modelo base `llava-hf/llava-onevision-qwen2-0.5b-ov-hf`.
-- La configuracion reducida (2 capas de vision, 2 de texto) implica que el comportamiento numerico no reproduce el del modelo real, solo la estructura de tensores y la interfaz.
-- Los ficheros de procesador se copian byte a byte, pero el resto de ficheros deben reconstruirse con `python example/build_fixtures.py --fixture llava-onevision-qwen2-0.5b-ov-hf-mic`; el repositorio no es autocontenido para todas las rutas de uso.
-- Riesgo de confusion: el nombre incluye "qwen2-0.5b" pero el fixture tiene solo 9,96M parametros; verificar siempre el tamano antes de usarlo en cualquier pipeline.
-- No apto para evaluaciones de calidad, sesgos, alucinacion o rendimiento linguistico.
+- No es un modelo usable: la model card lo declara explicitamente como `test-artifact` con pesos aleatorios.
+- Las salidas no tienen significado linguistico; no debe emplearse en produccion, demos publicas ni evaluaciones de calidad.
+- No se debe confundir con `llava-hf/llava-onevision-qwen2-0.5b-ov-hf`; comparten arquitectura pero no capacidades.
+- La licencia no esta declarada en la informacion disponible; conviene consultar el repositorio del modelo base antes de cualquier uso.
+- No se declaran idiomas soportados.
+- El contexto maximo y la configuracion completa del modelo no estan documentados en la informacion proporcionada.
+- El artefacto esta pensado para validar contratos de integracion; usarlo fuera de ese ambito puede generar falsos positivos en pruebas de calidad.
+- Riesgo de alucinacion: total, al no existir conocimiento aprendido en los pesos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/llava-onevision-qwen2-0.5b-ov-hf-mic
 - Modelo base: https://huggingface.co/llava-hf/llava-onevision-qwen2-0.5b-ov-hf
-- Manifiesto de contrato: `integration.json` (en el repositorio)
-- Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
-- Procedencia del fixture: `build.json` (en el repositorio)
-- Explicacion del adelgazamiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/llava-onevision-qwen2-0.5b-ov-hf-mic.html
-- Script `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/llava-onevision-qwen2-0.5b-ov-hf-mic.html

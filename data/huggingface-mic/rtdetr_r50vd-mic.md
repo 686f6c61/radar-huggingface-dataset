@@ -2,97 +2,89 @@
 
 ## Resumen
 
-`huggingface-mic/rtdetr_r50vd-mic` es un artefacto de test publicado por la organización `huggingface-mic` dentro del proyecto `transformers-mic`, cuyo objetivo es empaquetar en un mismo repositorio los pesos "slim", el uso ejecutable y las expectativas de integración de un modelo. En concreto, reproduce la interfaz de `PekingU/rtdetr_r50vd`, un detector de objetos de la familia RT-DETR (Real-Time DEtection TRansformer), pero con una configuración reducida y pesos aleatorios: 10.927.020 parámetros, encoder de 1 capa y decoder de 2 capas.
+`rtdetr_r50vd-mic` es un artefacto de prueba publicado por la organización `huggingface-mic`, no un modelo utilizable en producción. Se trata de una versión reducida (*fixture*) del modelo de detección de objetos `PekingU/rtdetr_r50vd`, generada con pesos aleatorios (semilla 17) y una configuración de arquitectura recortada. El repositorio empaqueta los pesos reducidos, un manifiesto de contrato (`integration.json`), ejemplos de uso ejecutables para Transformers y un directorio de expectativas de framework, con el objetivo declarado de servir como banco de pruebas de integración.
 
-No es un modelo utilizable para inferencia real. El propio autor lo etiqueta como `test-artifact` precisamente para excluirlo de las búsquedas de modelos candidatos. Su función es servir de fixture reproducible para probar código de integración (carga con Transformers, expectativas de formas y dtypes, comportamiento del procesador de imágenes) sin necesidad de descargar ni ejecutar el checkpoint completo.
+El modelo subyacente, RT-DETR (Real-Time Detection Transformer), es un detector de objetos end-to-end basado en transformer que elimina la necesidad de componentes posteriores al procesamiento como NMS. La variante `r50vd` emplea un backbone ResNet-50 preentrenado con la receta VDL. Sin embargo, esta ficha describe exclusivamente el artefacto `-mic`, cuyo propósito es verificar contratos de integración, no realizar detección real.
 
-Su relevancia es, por tanto, de ingeniería de software más que de modelado: permite validar pipelines, contratos de integración y pruebas de regresión con un repositorio de tamaño prácticamente nulo y con garantías declaradas de finitud numérica en float32, bfloat16 y float16.
+La relevancia de esta ficha es acotada: sirve para desarrolladores que necesiten entender qué es un *fixture* MIC de Hugging Face y por qué no debe confundirse con un modelo funcional. El propio autor lo etiqueta explícitamente como `test-artifact` para excluirlo de las búsquedas de modelos candidatos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | RT-DETR (Real-Time DEtection TRansformer) para detección de objetos; clase `RTDetrForObjectDetection` con configuración reducida (encoder_layers = 1, decoder_layers = 2) |
-| Parámetros totales | 10.927.020 (10,9 M), según safetensors |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (modelo de visión); resolución de entrada definida en `preprocessor_config.json`, no detallada en la información disponible |
-| Tipos de cuantización | No se publican artefactos cuantizados; pesos en float32; el autor verifica finitud en float32, bfloat16 y float16 (forward, pérdida y gradientes) |
-| Idiomas soportados | No disponible (no procesa texto; la tarea es visión por computador) |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (float32) |
-| Tarea | Detección de objetos (object detection) |
-| Modelo base | `PekingU/rtdetr_r50vd` |
-| Tamaño del repositorio | 0,0 GB (redondeado en la información disponible) |
-| Fecha de creación / actualización | 2026-10-27 / 2026-10-27 |
+| Arquitectura | RTDetrForObjectDetection (transformer de detección, configuración reducida) |
+| Parametros totales | 10.927.020 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de visión, no de texto) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32) |
+| Idiomas soportados | no disponible (modelo de visión) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La familia RT-DETR plantea la detección de objetos como un problema de predicción de conjuntos con un transformer encoder-decoder sobre características extraídas por un backbone convolucional, eliminando la necesidad de supresión no máxima (NMS) en el postprocesado. El checkpoint de referencia `PekingU/rtdetr_r50vd` emplea un backbone ResNet-50-vd y el esquema habitual de RT-DETR: selección de queries guiada por IoU, decoder con consultas aprendidas y asignación húngara durante el entrenamiento. Esta descripción corresponde a la arquitectura del modelo base; la información proporcionada no detalla la composición del dataset ni el número de tokens o imágenes de entrenamiento.
+El artefacto replica la arquitectura `RTDetrForObjectDetection` pero con una configuración recortada mediante la regla genérica de `sweep.py`: `encoder_layers=1` y `decoder_layers=2`, frente a la configuración completa del modelo base. Los archivos de procesador (`preprocessor_config.json`) se copian byte a byte desde `PekingU/rtdetr_r50vd`, garantizando compatibilidad exacta con el preprocesamiento del modelo original.
 
-El repositorio que nos ocupa no entrena nada: genera un fixture aplicando la regla genérica de reducción de `experiments/sweep.py` sobre la configuración original, copiando literalmente el fichero `preprocessor_config.json` de `PekingU/rtdetr_r50vd` y asignando pesos aleatorios con semilla 17. Los pesos se guardan en float32, el dtype con el que carga por defecto el checkpoint original, y mantienen exactamente los mismos nombres de tensor que el modelo real, de modo que el fixture cubre cualquier checkpoint cuyos ficheros de procesador sean idénticos byte a byte y cuya configuración coincida tras el proceso de reducción (clave de fixture `67408110004f`). Como control de calidad, el autor aplicó una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplaza los logits al menos 0,001 (la más débil, `pixel_values:halve`, los desplaza 0,129), lo que justifica no haber entrenado el modelo.
+Los pesos son aleatorios (semilla 17) y no han pasado por ningún entrenamiento. El autor justifica esta decisión indicando que superaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (el caso más débil, `pixel_values:halve`, produjo 0,129). Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en pérdida y gradientes. No hay datos de entrenamiento, RLHF ni DPO asociados.
 
 ## Capacidades
 
-- Detección de objetos en imágenes: produce cajas delimitadoras y etiquetas de clase mediante la cabeza de `RTDetrForObjectDetection`.
-- Compatibilidad de interfaz con `PekingU/rtdetr_r50vd`: mismos nombres de tensor, mismo procesador de imágenes y mismo dtype de carga por defecto.
-- Ejecución numéricamente estable en float32, bfloat16 y float16 para forward, cálculo de pérdida y gradientes.
-- Sirve como fixture de pruebas para validar código de integración en Transformers (formas, dtypes, contratos de entrada/salida).
-- No dispone de generación de texto, razonamiento, código, matemáticas ni capacidades multimodales de lenguaje.
-- No soporta tool calling, function calling ni flujos de agentes.
-- No hay capacidades multilingües: el modelo no procesa lenguaje natural.
-- No hay modo "thinking" ni capacidades de audio.
+- No es un modelo funcional: los pesos son aleatorios y no producen detecciones con significado semántico.
+- Verificación de contratos de integración: permite comprobar que un pipeline de Transformers carga, preprocesa y ejecuta el modelo sin errores de forma o dtype.
+- Pruebas de sensibilidad a la entrada: el fixture responde a perturbaciones de `pixel_values`, lo que permite validar que el cableado de entrada está correctamente conectado.
+- Compatibilidad de nombres de tensores: al replicar los nombres del checkpoint real, sirve para validar scripts de carga y conversión de pesos.
+- Comprobación de dtypes: ejecutable en float32, bfloat16 y float16.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües, por su naturaleza de modelo de visión y de artefacto de prueba.
 
 ## Casos de uso
 
-- Pruebas de integración en CI: cargar el modelo con `RTDetrForObjectDetection` y verificar que las formas de salida, los nombres de tensor y los dtypes coinciden con lo esperado, sin descargar el checkpoint completo ni consumir GPU.
-- Validación de contratos de modelo: usar `integration.json` como manifiesto para comprobar que una versión de Transformers cumple las expectativas declaradas en `integrations/transformers/expectations`.
-- Pruebas de regresión del procesador de imágenes: al copiarse `preprocessor_config.json` byte a byte del modelo base, permite validar cambios en el pipeline de preprocesado sin alterar el resto del sistema.
-- Test de exportación y serialización: comprobar flujos de guardado/carga, conversión de dtype (float32 a bfloat16/float16) y herramientas de exportación sobre un modelo diminuto antes de aplicarlas al checkpoint real.
-- Desarrollo de harnesses de evaluación: construir y depurar el código que calcula métricas de detección (AP, AR) sobre salidas sintéticas antes de ejecutarlo con pesos entrenados.
-- Docencia y demostraciones de pipeline: ilustrar la estructura de un detector RT-DETR (entradas, logits, cajas, clases) en un portátil o en CPU, sin requisitos de memoria relevantes.
-- Verificación de compatibilidad entre checkpoints: identificar si dos checkpoints comparten procesador y configuración reducida equivalente, gracias a la clave de fixture.
+- Pruebas de integración en CI/CD: usar el fixture para verificar que la versión de Transformers del proyecto carga correctamente un `RTDetrForObjectDetection` sin descargar el checkpoint completo de 40M+ parámetros.
+- Validación de pipelines de preprocesamiento: comprobar que el `preprocessor_config.json` copiado del modelo real se aplica correctamente sobre imágenes de entrada antes de la inferencia.
+- Desarrollo de herramientas de conversión de pesos: validar scripts que renombran o transforman tensores contra un modelo con los mismos nombres que el checkpoint original pero con un tamaño manejable.
+- Pruebas de tolerancia numérica: verificar que el código de entrenamiento o inferencia produce resultados finitos en float32, bfloat16 y float16 antes de escalar al modelo completo.
+- Formación y documentación: ilustrar en talleres o documentación interna qué es un fixture MIC y cómo se estructura un repositorio de contrato de integración.
+- Regresión de frameworks: detectar roturas en versiones nuevas de Transformers que afecten a la carga de modelos RT-DETR sin necesidad de disponer de GPU de gran capacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Al tratarse de un artefacto de test con pesos aleatorios (semilla 17), cualquier métrica de detección (AP, AP50, AP75, AR) carecería de significado y no se han reportado valores.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto con pesos aleatorios, cualquier métrica de detección (mAP, latencia) carecería de significado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: aproximadamente 43,7 MB en float32 y 21,9 MB en float16, calculados a partir de los 10.927.020 parámetros. A ello hay que sumar la memoria de activaciones, que depende de la resolución de entrada definida en `preprocessor_config.json` y no se detalla en la información disponible.
-- Cabe holgadamente en cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) y también en CPU; no requiere A100 ni H100.
-- Despliegue: carga directa con la librería Transformers (`RTDetrForObjectDetection`), tal como se documenta en `integrations/transformers/usage.md`. No aplica el despliegue con vLLM, llama.cpp, Ollama o TGI, orientados a modelos de lenguaje.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (10,9M de parámetros, aproximadamente 44 MB de pesos más activaciones de un backbone reducido).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; también funciona en CPU.
+- Cabe en cualquier GPU de consumo, incluidas GTX 1050, RTX 2060, RTX 3060 y superiores; también en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: Transformers (PyTorch) es el framework de referencia según el contrato del repositorio; no se documentan exportaciones a ONNX, TensorRT ni otros runtimes.
+- Latencia y throughput: no disponibles; al ser un fixture con encoder de 1 capa y decoder de 2 capas, la latencia sería muy inferior a la del modelo real, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tarea | Pesos | Licencia | Disponibilidad |
+| Modelo | Parametros | Tipo | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/rtdetr_r50vd-mic` | 10,9 M (configuración reducida) | Detección de objetos (fixture) | Aleatorios (semilla 17) | No disponible | Público en Hugging Face; etiquetado `test-artifact` |
-| `PekingU/rtdetr_r50vd` (modelo base) | No disponible en la información proporcionada | Detección de objetos | Entrenados | No disponible | Público en Hugging Face |
-| Otros checkpoints de la familia RT-DETR | No disponible | Detección de objetos | Entrenados | No disponible | Público en Hugging Face |
-| Detectores tipo DETR (p. ej. `facebook/detr-resnet-50`) | No disponible | Detección de objetos | Entrenados | No disponible | Público en Hugging Face |
+| `huggingface-mic/rtdetr_r50vd-mic` | 10,9M | Fixture RT-DETR | Pruebas de integración | no disponible | Hugging Face |
+| `PekingU/rtdetr_r50vd` | no disponible en la información | RT-DETR real | Detección de objetos | no disponible | Hugging Face |
+| `PekingU/rtdetr_r50vd_coco_o365` | no disponible en la información | RT-DETR real | Detección de objetos | no disponible | Hugging Face |
 
-La comparación relevante no es de rendimiento sino de propósito: frente a los checkpoints entrenados de la familia, este repositorio solo replica la interfaz (nombres de tensor, procesador y dtype) con una configuración más pequeña y pesos aleatorios, por lo que no es intercambiable en producción.
+La comparación relevante es con el modelo base `PekingU/rtdetr_r50vd`: mismo nombre de tensores y mismo procesador, pero configuración recortada y pesos aleatorios. Cualquier otro detector RT-DETR de la familia PekingU sería una alternativa funcional, mientras que este artefacto no lo es.
 
 ## Limitaciones y advertencias
 
-- Los pesos son aleatorios: el modelo no detecta objetos reales y sus salidas no tienen valor semántico.
-- Está etiquetado explícitamente como `test-artifact` y "not a usable model"; debe mantenerse fuera de cualquier búsqueda de modelos candidatos.
-- La licencia no está declarada en la información disponible, lo que impide evaluar su uso comercial; en cualquier caso, no procede su uso en producción.
-- La configuración está reducida (encoder_layers = 1, decoder_layers = 2), por lo que el comportamiento arquitectónico no equivale al del checkpoint completo.
-- Solo cubre checkpoints cuyo procesador sea byte-idéntico y cuya configuración coincida tras la reducción; no es un sustituto general del modelo base.
-- No hay datos publicados de sesgos, robustez ni evaluación cualitativa, al no haberse entrenado el modelo.
-- El repositorio tiene 0 descargas y 0 "likes", señal coherente con su naturaleza de artefacto interno de pruebas.
-- El tamaño del repositorio figura como 0,0 GB (redondeado), dato que no debe interpretarse como ausencia de pesos.
+- Pesos aleatorios: el modelo no detecta objetos reales; sus salidas son numéricamente finitas pero semánticamente vacías.
+- Etiquetado como `test-artifact`: el autor lo excluye explícitamente de la búsqueda de modelos candidatos; no debe desplegarse en producción.
+- Licencia no disponible: no se puede asumir ningún permiso de uso comercial sin consultar el repositorio del modelo base.
+- Configuración recortada: `encoder_layers=1` y `decoder_layers=2` no representan el comportamiento del modelo completo; los tiempos y la memoria no son extrapolables.
+- Sin datos de sesgo ni alucinación: al no ser un modelo generativo ni entrenado, no aplican las advertencias habituales de sesgo, pero tampoco existe garantía de comportamiento en dominios reales.
+- Dependencia de la versión de Transformers: el contrato de integración está vinculado a una versión concreta del framework; cambios futuros pueden romper la compatibilidad.
+- Tamaño del repo reportado como 0.0 GB: posible inconsistencia en los metadatos de Hugging Face que conviene verificar antes de automatizar descargas.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic)
-- [Modelo base PekingU/rtdetr_r50vd](https://huggingface.co/PekingU/rtdetr_r50vd)
-- [Manifiesto de contrato (integration.json)](https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/blob/main/integration.json)
-- [Uso con Transformers (integrations/transformers/usage.md)](https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/blob/main/integrations/transformers/usage.md)
-- [Expectativas de Transformers (integrations/transformers/expectations)](https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/tree/main/integrations/transformers/expectations)
-- [Procedencia del fixture (build.json)](https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/blob/main/build.json)
-- [Repositorio transformers-mic en GitHub](https://github.com/huggingface/transformers-mic)
-- [Script de barrido de configuraciones (sweep.py)](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
-- [Script de construcción de fixtures (build_fixtures.py)](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic
+- Modelo base: https://huggingface.co/PekingU/rtdetr_r50vd
+- Manifiesto de contrato: https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic/blob/main/build.json
+- Explicación del recorte: https://huggingface-mic-mic-coverage.static.hf.space/shrink/rtdetr_r50vd-mic.html
+- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de recorte: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

@@ -2,85 +2,94 @@
 
 ## Resumen
 
-El modelo Qwen3.8-Whittle-MoE-27B-A17.8B es un modelo de lenguaje de gran tamaño con arquitectura de mezcla de expertos (MoE), desarrollado por logic65 sobre la base de la serie Qwen3.8 de Alibaba. Cuenta con 26.917.297.664 parámetros totales (27B) y 17.8B activos por token, lo que lo hace notablemente eficiente en inferencia en comparación con modelos densos de tamaño similar. La versión GGUF publicada por mradermacher ofrece cuantizaciones que permiten ejecutarlo en hardware de consumo, ampliando su accesibilidad para desarrolladores e investigadores.
+Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF es la versión cuantizada en formato GGUF del modelo logic65/Qwen3.8-Whittle-MoE-27B-A17.8B, un transformer de tipo mezcla de expertos (MoE) con 26.917.297.664 parámetros totales y aproximadamente 17.800 millones de parámetros activos por token, según indica el propio nombre del modelo. La cuantización la firma mradermacher, un publicador habitual de versiones GGUF de modelos abiertos, y conserva la licencia Apache 2.0 del modelo base.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en proyectos propietarios. Su ventana de contexto alcanza los 262.000 tokens según la documentación de la serie Qwen3.8, una característica especialmente útil para tareas que requieren procesar documentos extensos o mantener conversaciones de largo recorrido. Al tratarse de una versión etiquetada como "research-preview", se recomienda validar su comportamiento en entornos de producción antes de un despliegue masivo.
+El modelo se presenta como un research preview derivado de la familia Qwen3.5, con etiquetas que apuntan a técnicas de "router-healing" (reparación del enrutador de expertos) y a la arquitectura Whittle. No se dispone de información publicada sobre el proceso de entrenamiento, la composición del dataset ni los resultados de evaluación, por lo que su interés principal es experimental: permite probar una arquitectura MoE de ~27B totales con ~17,8B activos en hardware de consumo gracias a las cuantizaciones GGUF.
 
-La cuantización GGUF incluye múltiples niveles (desde Q2_K hasta Q8_0), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria. Esta flexibilidad, junto con su arquitectura MoE y su licencia permisiva, lo convierte en una opción atractiva para quienes buscan un modelo de alto rendimiento ejecutable localmente.
+La relevancia práctica de esta ficha radica en que ofrece un conjunto amplio de cuantizaciones estáticas (de Q2_K a Q8_0, entre 11,4 GB y 28,8 GB) que hacen viable la inferencia local con llama.cpp y derivados, aunque el autor advierte de que no hay cuantizaciones con imatrix disponibles en el momento de la publicación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE) |
-| Parametros totales | 26.917.297.664 (27B) |
-| Parametros activos | 17.8B |
-| Longitud de contexto | 262.000 tokens (segun documentacion de Qwen3.8) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | Ingles |
+| Arquitectura | Transformer con mezcla de expertos (MoE); etiquetas del modelo: whittle, qwen3.5, router-healing |
+| Parametros totales | 26.917.297.664 (26,9B) |
+| Parametros activos | ~17,8B (según el nombre del modelo; no confirmado en la model card) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (cuantizaciones estáticas; sin imatrix) |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base original usa safetensors |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors vía transformers |
+| Tamano del repo | 192,3 GB |
+| Modelo base | logic65/Qwen3.8-Whittle-MoE-27B-A17.8B |
+| Cuantizador | mradermacher |
+| Descargas / likes | 7.362 / 16 (en el momento de la consulta) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Whittle-MoE-27B-A17.8B emplea una arquitectura de transformer con mezcla de expertos, donde solo 17.8B de los 27B parametros se activan por token. Esta configuracion reduce el coste computacional en inferencia sin sacrificar la capacidad de representacion. El nombre "Whittle" sugiere una tecnica de poda o seleccion de expertos, y el tag "router-healing" indica un mecanismo de curacion del router que mejora la asignacion de tokens a los expertos, probablemente para evitar desequilibrios o degradacion durante el entrenamiento o la inferencia.
+La información disponible confirma únicamente que se trata de un transformer con mezcla de expertos (MoE) de 26,9B parámetros totales y aproximadamente 17,8B activos, derivado de la familia Qwen3.5 y con marcas explícitas de "router-healing" y "whittle" en las etiquetas del repositorio. Estas etiquetas sugieren trabajo sobre el enrutador de expertos y sobre alguna variante de arquitectura o poda asociada al nombre Whittle, pero la model card no documenta ni el mecanismo exacto ni los detalles de implementación.
 
-No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens procesados ni el uso de tecnicas como RLHF o DPO en la documentacion proporcionada. El modelo se basa en la serie Qwen3.8 de Alibaba, que incluye un codificador de vision sorpresa segun fuentes externas, aunque no se confirma si esta capacidad esta presente en esta variante especifica. La etiqueta "research-preview" sugiere que el modelo puede no haber pasado por un proceso de alineacion exhaustivo.
+No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO, la longitud de contexto nativa ni innovaciones concretas de decodificación. Cualquier afirmación al respecto sería especulativa y, por tanto, se omite. El repositorio de mradermacher es una conversión estática a GGUF del modelo base (convert_type: hf, quantize_version: 2), sin cuantizaciones ponderadas por imatrix.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: al ser un modelo de la serie Qwen3.8, se espera que maneje tareas de comprension lectora, redaccion y razonamiento logico, aunque no se han publicado evaluaciones especificas.
-- Contexto largo: con 262.000 tokens de ventana, puede procesar documentos extensos, libros completos o conversaciones de multiples turnos sin perder informacion relevante.
-- Eficiencia computacional: gracias a su arquitectura MoE con 17.8B parametros activos, ofrece un rendimiento por token superior al de un modelo denso de 27B, lo que reduce la latencia y el consumo de memoria.
-- Soporte de herramientas y agentes: aunque no se menciona explicitamente en la documentacion, los modelos Qwen3.8 suelen incluir capacidades de tool calling y ejecucion de agentes; se recomienda verificar en la documentacion oficial.
-- Multilingue: la model card indica solo ingles, por lo que no se garantiza un rendimiento adecuado en otros idiomas.
-- Vision: segun fuentes externas, la serie Qwen3.8 incorpora un codificador de vision, pero no se confirma si esta variante lo incluye.
+- Generación de texto conversacional: el modelo está etiquetado como "conversational" y orientado a diálogo multi-turno.
+- Razonamiento y generación de código: capacidades esperables por su linaje Qwen, aunque no documentadas explícitamente en la información disponible.
+- Soporte multilingüe: limitado al inglés según el campo `language` de la model card.
+- Mezcla de expertos con enrutamiento: la arquitectura activa solo una fracción de los parámetros por token, lo que reduce el coste computacional frente a un modelo denso del mismo tamaño total.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de Hugging Face.
+- Tool calling, agentes, visión, audio y modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de documentos legales: la ventana de contexto de 262k permite procesar contratos extensos, sentencias o expedientes completos en una sola pasada, extrayendo clausulas relevantes o resumiendo informacion clave.
-- Asistente de codigo en entornos locales: con cuantizaciones como Q4_K_M (17.5 GB), puede ejecutarse en una GPU de 24 GB (p. ej., RTX 4090) y usarse para generacion, revision y depuracion de codigo sin depender de servicios en la nube.
-- Chatbot de atencion al cliente: su capacidad de mantener conversaciones de largo recorrido y su licencia Apache 2.0 permiten integrarlo en sistemas de soporte con historial de usuario extenso, reduciendo costes de infraestructura.
-- Procesamiento de investigacion academica: puede resumir articulos cientificos, extraer metodologias o comparar resultados de multiples estudios, gracias a su contexto amplio y su razonamiento.
-- Generacion de contenido creativo: redaccion de guiones, novelas o articulos largos donde se requiere coherencia a lo largo de capitulos o secciones extensas.
-- RAG (generacion aumentada por recuperacion): al combinarse con un indice vectorial, el modelo puede responder preguntas sobre corpus corporativos de gran tamano, utilizando su contexto para integrar multiples fragmentos recuperados.
-- Despliegue en edge computing: las cuantizaciones mas pequenas (Q2_K, 11.4 GB) permiten ejecutar el modelo en dispositivos con 16 GB de RAM unificada, como algunos portatiles o mini-PCs, para aplicaciones offline.
+- Inferencia local en estación de trabajo: con la cuantización Q4_K_M (17,5 GB) el modelo cabe en una GPU de 24 GB o en configuraciones con offload parcial a CPU, lo que permite experimentar con una arquitectura MoE de 27B totales sin clúster dedicado.
+- Prototipado de investigación sobre MoE: el etiquetado "research-preview" y "router-healing" lo hace adecuado para estudiar el comportamiento del enrutamiento de expertos y comparar con variantes densas de tamaño similar.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece once variantes (de Q2_K a Q8_0) que permiten medir la degradación de perplejidad y calidad entre niveles de cuantización sobre el mismo modelo base.
+- Despliegue con llama.cpp u Ollama: al ser GGUF, se integra directamente en servidores de inferencia locales para pruebas de latencia y throughput en hardware de consumo.
+- Chat conversacional en inglés: uso como asistente de texto en inglés en entornos con requisitos de licencia permisiva (Apache 2.0), incluyendo uso comercial.
+- Pipeline de generación de texto por lotes: la relación entre parámetros activos (~17,8B) y totales (26,9B) reduce el coste por token frente a un modelo denso equivalente, útil en tareas de procesamiento masivo de texto donde el throughput importa más que la latencia interactiva.
+- Base para fine-tuning posterior: al ser Apache 2.0 y derivar de Qwen3.5, puede servir como punto de partida para ajuste supervisado, aunque requeriría trabajar con el modelo base en safetensors, no con los GGUF.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo especifico. Se recomienda consultar la documentacion de la serie Qwen3.8 en el repositorio oficial de Alibaba para obtener evaluaciones comparativas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun el archivo GGUF, Q4_K_M ocupa 17.5 GB, por lo que se recomienda al menos 20 GB de VRAM para cargar el modelo con overhead. Q8_0 (28.8 GB) requiere 32 GB o mas.
-- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones hasta Q5_K_M; A100 40 GB o H100 para Q8_0 o mayor margen de contexto.
-- Compatibilidad con GPU de consumo: si, con cuantizaciones Q2_K a Q5_K_M en GPUs de 16-24 GB (RTX 4080, 4090, etc.).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o cualquier runtime compatible con GGUF. Para el modelo base en safetensors, se puede usar vLLM o TGI.
-- Latencia y throughput: no se han publicado mediciones especificas. En un MoE con 17.8B activos, se espera una velocidad de generacion superior a la de un modelo denso equivalente, pero depende del hardware y la cuantizacion.
+- VRAM estimada para inferencia según cuantización: Q2_K ~11,4 GB; Q3_K_M ~14,0 GB; IQ4_XS ~15,5 GB; Q4_K_M ~17,5 GB; Q5_K_M ~20,0 GB; Q6_K ~23,2 GB; Q8_0 ~28,8 GB (tamaños de fichero; la VRAM real debe sumar el contexto KV cache).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; A100 40 GB o H100 para Q6_K y Q8_0 con contextos largos; RTX 3090 (24 GB) como alternativa económica a la 4090.
+- Cabe en GPU de consumo: sí, en GPUs de 16-24 GB con cuantizaciones Q2_K a Q5_K_M; las cuantizaciones Q6_K y Q8_0 requieren 24 GB o más, o bien offload parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI, pero esas herramientas no consumen directamente estos ficheros GGUF.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.8-Whittle-MoE-27B-A17.8B | 27B | 17.8B | 262k | Apache 2.0 | GGUF / safetensors |
-| Mixtral 8x7B | 46.7B | 12.9B | 32k | Apache 2.0 | safetensors / GGUF |
-| Qwen3-30B-A3B | 30B | 3B | 128k | Apache 2.0 | safetensors / GGUF |
+| Qwen3.8-Whittle-MoE-27B-A17.8B (este) | 26,9B | ~17,8B | no disponible | Apache 2.0 | GGUF, safetensors |
+| Qwen3-30B-A3B | 30,5B | 3,3B | 32K (extensible) | Apache 2.0 | safetensors, GGUF |
+| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | safetensors, GGUF |
+| DeepSeek-V2-Lite | 15,7B | 2,4B | 32K | código abierto con restricciones | safetensors, GGUF |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La eleccion dependera de la necesidad de contexto, la eficiencia (parametros activos) y la disponibilidad de hardware.
+La comparación con Qwen3-30B-A3B y Mixtral 8x7B es orientativa por categoría (MoE abiertos de tamaño medio); no se dispone de datos de rendimiento de este modelo que permitan una comparación cuantitativa. Los datos de los modelos alternativos provienen de sus fichas públicas y deben verificarse en las fuentes originales.
 
 ## Limitaciones y advertencias
 
-- Etiqueta "research-preview": el modelo puede no haber sido sometido a un proceso de alineacion completo, lo que podria generar respuestas incoherentes o sesgadas en ciertos dominios.
-- Idioma limitado: solo se garantiza un rendimiento adecuado en ingles; su uso en otros idiomas puede degradar la calidad.
-- Riesgo de alucinacion: como cualquier LLM, puede inventar informacion, especialmente en tareas de hechos o datos especificos.
-- Degradacion por cuantizacion: las cuantizaciones mas agresivas (Q2_K, Q3_K) pueden afectar la precision en tareas de razonamiento complejo. Se recomienda usar Q4_K_M o superior para produccion.
-- Sin garantias de vision: aunque la serie Qwen3.8 incluye un codificador de vision, no se confirma que esta variante lo tenga; verificar antes de usarlo en tareas multimodales.
-- Dependencia de la comunidad: al ser una cuantizacion de un tercero (mradermacher), no hay soporte oficial de Alibaba para esta version especifica.
+- Modelo de tipo research preview: no hay benchmarks publicados, por lo que su calidad real en tareas downstream es desconocida.
+- Idiomas: solo inglés declarado; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
+- Longitud de contexto: no disponible; planificar despliegues asumiendo un contexto conservador hasta verificarlo empíricamente.
+- Riesgo de alucinación: inherente a los modelos generativos; sin evaluación publicada no puede acotarse su magnitud.
+- Cuantizaciones estáticas sin imatrix: el autor indica que no hay cuantizaciones ponderadas por imatrix, lo que puede suponer mayor pérdida de calidad en Q2_K y Q3_K frente a alternativas con imatrix.
+- Licencia Apache 2.0: permisiva para uso comercial, pero conviene revisar los términos del modelo base (logic65/Qwen3.8-Whittle-MoE-27B-A17.8B) y de la familia Qwen3.5 de la que deriva.
+- Origen del modelo: el autor del modelo base (logic65) no es el equipo oficial de Qwen; se trata de una variante de la comunidad, con el riesgo de calidad y soporte que ello implica.
+- Sesgos: no documentados; al no haber información sobre el dataset de entrenamiento no pueden evaluarse sesgos específicos.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
-- Modelo base (logic65): https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
-- Repositorio oficial de Qwen3.8 (Alibaba): https://github.com/QwenLM/Qwen3.8
-- Guia para ejecutar Qwen3.8-27B localmente (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
-- Guia local de Qwen3.8-27B (linas.substack.com): https://linas.substack.com/p/qwen3-8-27b-local-guide
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
+- Modelo base: https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica comparativa de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png

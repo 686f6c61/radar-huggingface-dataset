@@ -95,31 +95,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "saidutta69/MiniCPM-V-4.7-1B-heretic - Hugging Face",
-      "url": "https://huggingface.co/saidutta69/MiniCPM-V-4.7-1B-heretic",
-      "snippet": "vor 2 Tagen ... Trial trial_id 169 of a 200-trial Heretic run (seed 4161231025 ). Unlike most models in this collection, this run used a single refusal ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=local-llm&p=18&sort=trending",
-      "snippet": "14.10.2026 ... Models · mradermacher/Qwen3-4B-Thinking-heretic-GGUF · mradermacher/FrogNano-4B-heretic-GGUF · mradermacher/FrogNano-4B-heretic-i1-GGUF."
-    },
-    {
-      "title": "mradermacher/Qwen3-4B-Thinking-heretic-GGUF - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Qwen3-4B-Thinking-heretic-GGUF",
-      "snippet": "About · Usage · Provided Quants · FAQ / Model Request · Thanks · Model tree for mradermacher/Qwen3-4B-Thinking-heretic-GGUF."
-    },
-    {
-      "title": "Multimodal AI Models - Featherless.ai",
-      "url": "https://featherless.ai/models?capabilities=multimodal",
-      "snippet": "Qwen3.5-4B-Uncensored-Aggressive. 2. ·. 1k. ·. Mar 2026. Multimodal. jenerallee78 ... MiMo-V2.6-Distill-Qwen-9B-heretic. 4. ·. 4k. ·. Oct 2026. Multimodal."
-    },
-    {
-      "title": "Model Catalog — 1,295 Open-Weight & Uncensored ... - DemonRoute",
-      "url": "https://demonroute.com/models",
-      "snippet": "Dolphin-Mistral-24B-Venice-Edition · Gemma-4-Writers-31B-V2 · Hermes-3-Llama-3.1-8B · gemma-4-31B-it-abliterated · Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC- ..."
-    }
-  ]
+  "sources": []
 }

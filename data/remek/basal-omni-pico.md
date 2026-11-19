@@ -2,112 +2,108 @@
 
 ## Resumen
 
-basal-omni-pico es un modelo de decisión tipada (typed-decision) de 0,8B parámetros desarrollado por Remek, construido sobre Qwen3.5-0.8B-Base y entrenado por destilación a partir de basal-omni-1.0-ultra (31B). A diferencia de un modelo generativo convencional, no produce texto libre: recibe un *estado* (un mensaje, un documento, un log de sensores o pasajes recuperados) junto con una pregunta tipada y devuelve, en un único forward pass, una distribución de probabilidad sobre el conjunto cerrado de respuestas permitidas. Los tipos de pregunta soportados son `choice`, `noul` (sí/no), `score`, `multi`, `act` y `tool`.
+basal-omni-pico es un modelo de decisión tipada (typed-decision) de 752 millones de parámetros desarrollado por Remek, construido mediante fine-tuning sobre Qwen3.5-0.8B-Base. No es un modelo generativo al uso: en lugar de producir texto libre, recibe un *estado* (mensaje, documento, log de sensores o pasajes recuperados) y una pregunta con opciones acotadas, y devuelve una distribución de probabilidad sobre cada respuesta permitida en un único forward pass. Los tipos de pregunta soportados son `choice`, `noul` (sí/no), `score`, `multi`, `act` y `tool`.
 
-El modelo resuelve un problema concreto: convertir tareas de clasificación, enrutamiento y selección en decisiones calibradas y acotadas, sin riesgo de que la salida quede fuera de las opciones definidas por el desarrollador. Está pensado para despliegue en el borde (edge) y en pipelines de producción donde la latencia y la previsibilidad importan más que la generación creativa. Soporta únicamente polaco e inglés y lectura de texto.
+El modelo está pensado para entornos de producción donde la respuesta debe caer obligatoriamente dentro de un conjunto cerrado de opciones: enrutado de peticiones, clasificación, extracción de decisiones y selección de pasajes en pipelines RAG. Al no generar texto, elimina por diseño el riesgo de respuestas fuera de formato y permite umbrales de confianza calibrados. Soporta polaco e inglés, y su tamaño reducido lo hace apto para despliegue en CPU, GPU de consumo y Apple Silicon.
 
-Su relevancia actual radica en la combinación de tamaño reducido (752.393.024 parámetros reales según safetensors), licencia Apache 2.0, disponibilidad en formato GGUF para llama.cpp y un motor de inferencia propio (basal 2.5.0) con modos de servicio para CPU, GPU NVIDIA, Apple Silicon y vLLM. Con 267 descargas y creado en octubre de 2026, es un modelo de nicho pero con una propuesta técnica diferenciada frente a los LLM generativos al uso.
+Es el miembro más pequeño de la familia basal-omni, que incluye variantes de 4B, 12B y 31B construidas sobre Gemma 4. El pico fue destilado del basal-omni-1.0-ultra (31B) como profesor, lo que le permite aproximar el comportamiento del modelo grande en tareas de decisión con una huella de hardware mínima.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer derivada de Qwen3.5 (tag `qwen3_5_text`); no se detalla si incorpora capas lineales o híbridas |
+| Arquitectura | Transformer basada en Qwen3.5-0.8B-Base (tag `qwen3_5_text`), adaptada a decisión tipada |
 | Parámetros totales | 752.393.024 |
-| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF Q8_0 (repo separado con su propio fichero de calibración); se rechazan fp8, nvfp4 y pesos MLX cuantizados para este modelo |
+| Tipos de cuantización | GGUF Q8_0 (repo separado con fichero de calibración); fp8 y nvfp4 rechazados; MLX cuantizado rechazado; `eager` en float32; `mlx` en float32 desde pesos bf16 |
 | Idiomas soportados | polaco (pl), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers); GGUF Q8_0 en repo aparte |
+| Formato de pesos | safetensors (repo principal, 1.6 GB); GGUF Q8_0 en repo separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-0.8B-Base, un transformer de texto etiquetado en Hugging Face con la arquitectura `qwen3_5_text`. Sobre esa base, Remek aplica un ajuste fino orientado a decisión tipada, usando basal-omni-1.0-ultra (31B, construido sobre Gemma 4) como profesor en un esquema de destilación. La salida no es texto generado token a token, sino una probabilidad por cada respuesta permitida calculada en un solo forward pass, lo que elimina la decodificación autoregresiva en la ruta de inferencia.
+El modelo parte de Qwen3.5-0.8B-Base, un transformer de 752 millones de parámetros, y se especializa mediante fine-tuning para producir probabilidades sobre opciones predefinidas en un solo paso hacia delante, sin decodificación autoregresiva. La salida es siempre una distribución normalizada sobre las claves de respuesta permitidas, con un campo `confidence` asociado a la opción elegida. El entrenamiento emplea destilación desde basal-omni-1.0-ultra (31B) como profesor, lo que transfiere el comportamiento de decisión del modelo grande a una arquitectura mucho menor.
 
-La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO. El autor sí menciona un conjunto de evaluación propio ("Werdykt", 5.000 ítems ocultos en polaco e inglés) y un conjunto de desarrollo de 1.700 ítems usado para validar la paridad entre el modo nativo y el modo GGUF. La innovación técnica destacable es el contrato de salida tipado con calibración por modelo: el motor basal entrega probabilidades acompañadas de un parámetro `max_error`, y el modelo GGUF incluye su propio fichero de calibración.
+La model card menciona calibración como parte del diseño: las probabilidades devueltas no deben interpretarse como tasas de error en dominios nuevos sin verificarlas previamente sobre datos de ese dominio. El motor de inferencia propio (basal, versión 2.5 o superior) ofrece modos `fast` (CUDA graphs en H100 con flash-linear-attention), `eager` (referencia en float32), `mlx` (Apple Silicon), `gguf` (llama.cpp en proceso) y `vllm`. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO.
 
 ## Capacidades
 
-- Decisión tipada con salida cerrada: `choice` (selección entre opciones con clave), `noul` (sí/no con probabilidad), `score`, `multi` (selección múltiple), `act` (acción) y `tool` (selección de herramienta).
-- Enrutamiento de peticiones a colas, equipos o herramientas (routing 0,912 en Werdykt).
-- Selección de pasaje relevante en recuperación (retrieval 0,886).
-- Clasificación y calibración de decisiones sobre documentos reales (0,848 en documentos reales según el autor).
-- Soporte de tool calling mediante el tipo de pregunta `tool`.
-- Decisiones en polaco e inglés.
-- Lectura de texto únicamente; no procesa visión ni audio.
-- No genera texto ni mantiene conversación: no es un modelo de chat.
+- Decisión tipada sobre opciones cerradas: `choice` (selección única entre alternativas), `noul` (sí/no con probabilidad), `score`, `multi` (selección múltiple), `act` (acción) y `tool` (selección de herramienta).
+- Enrutado de peticiones a colas, equipos o herramientas con puntuaciones de confianza por opción.
+- Selección de pasajes relevantes en pipelines de recuperación (retrieval).
+- Clasificación de documentos reales con calibración de probabilidades.
+- Procesamiento de logs de sensores y estados textuales estructurados.
+- Soporte bilingüe polaco-inglés.
+- No genera texto libre ni mantiene conversaciones: es exclusivamente un clasificador de decisión.
+- Compatible con endpoints tipo OpenAI mediante el servidor `basal-serve` (ruta `/v1/systemone`).
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el mensaje del cliente como estado y una pregunta `choice` con las colas disponibles (tarjetas, banca online, préstamos), devolviendo la probabilidad de cada una. El ejemplo de la model card muestra 0,9983 de confianza para "online" en una incidencia de acceso a banca electrónica.
-- Triaje de urgencia: con una pregunta `noul`, se determina si el cliente ha perdido acceso al servicio, permitiendo priorizar la cola de atención en función de la probabilidad devuelta.
-- Selección de pasaje en un pipeline RAG: dado un conjunto de fragmentos recuperados como estado, el modelo puntúa cuál es el relevante antes de pasarlo a un LLM generativo, reduciendo coste y alucinación en la etapa final.
-- Selección de herramienta en un agente: mediante el tipo `tool`, el modelo elige qué función o API invocar entre un conjunto cerrado, con probabilidad asociada para aplicar umbrales de confianza.
-- Clasificación documental en lote: procesamiento de documentos reales (0,848 en la evaluación del autor) para asignar categorías con probabilidades calibradas, apto para revisión humana posterior en los casos de baja confianza.
-- Despliegue en el borde: con el GGUF Q8_0 y `--mode gguf`, el modelo responde en aproximadamente 0,5 s en 16 hilos de CPU, lo que permite ejecutarlo en servidores sin GPU o en dispositivos con llama.cpp.
-- Filtro previo a revisión humana en decisiones sensibles: el autor lo desaconseja para decisiones con consecuencias graves sin revisión, pero las probabilidades permiten derivar a humano los casos por debajo de un umbral.
+- Enrutado de tickets de soporte: el modelo recibe el mensaje del cliente y devuelve la probabilidad de cada departamento (tarjetas, banca online, préstamos). En el ejemplo de la model card asigna 0.9983 a "online" para una incidencia de acceso a banca electrónica, lo que permite automatizar el triaje con umbral de confianza.
+- Detección de urgencia en atención al cliente: con preguntas de tipo `noul`, se evalúa si el cliente no puede usar un servicio y se escala a revisión humana cuando la probabilidad supera un umbral configurable.
+- Selección de pasajes en RAG: dado un conjunto de fragmentos recuperados y una consulta, el modelo puntúa qué pasaje es relevante (0.886 en el conjunto de evaluación del autor), sustituyendo a un cross-encoder más pesado.
+- Clasificación de documentos reales: asignación de categorías a documentos con probabilidades calibradas (0.848 en documentos reales según el autor), útil en gestión documental y cumplimiento.
+- Selección de herramientas en agentes: con el tipo `tool`, el modelo elige qué función invocar dentro de un conjunto acotado, sin generar argumentos de texto libre.
+- Despliegue en edge y CPU: con el GGUF Q8_0 y 16 hilos de CPU, una petición típica tarda unos 0.5 s, lo que permite ejecutar decisiones en dispositivos sin GPU.
+- Moderación y filtrado por reglas simples: no recomendado para comprobaciones de reglas estrictas (0.316 en el conjunto de reglas del autor), por lo que debe reservarse a decisiones semánticas.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en Werdykt (benchmark propio oculto, 5.000 ítems, polaco e inglés):
+Resultados publicados por el autor en la model card (conjunto "Werdykt" y conjunto de verificación en polaco):
 
-| Métrica | basal-omni-pico | basal-2.0-mini (1,5B) | basal-2.0 (4,5B) | basal-omni-1.0-mini |
-|---|---|---|---|---|
-| Werdykt macro | 0,660 [0,648; 0,671] | 0,618 | 0,729 | 0,769 |
-| Polaco | 0,661 | no disponible | no disponible | no disponible |
-| Inglés | 0,659 | no disponible | no disponible | no disponible |
-| Routing | 0,912 | no disponible | no disponible | no disponible |
-| Retrieval | 0,886 | no disponible | no disponible | no disponible |
-| Documentos reales | 0,848 | no disponible | no disponible | no disponible |
-| Decisiones en polaco (check set propio) | 0,876 | no disponible | no disponible | no disponible |
-| Reglas (Werdykt rules) | 0,316 | no disponible | no disponible | no disponible |
+| Tarea | Puntuación |
+|---|---|
+| Enrutado (routing) | 0.912 |
+| Recuperación (retrieval) | 0.886 |
+| Documentos reales | 0.848 |
+| Decisiones en polaco (conjunto de verificación) | 0.876 |
+| Comprobación de reglas (rules) | 0.316 |
 
-Paridad GGUF: sobre 1.700 ítems de desarrollo, el modo GGUF coincide con el modelo nativo en el 99,24 % de los casos en una H100 y en el 99,29 % en CPU.
+Comparación GGUF frente a safetensors: sobre 1.700 elementos de desarrollo, el GGUF Q8_0 coincide con el modelo en safetensors en el 99.24 % de los casos en una H100 y en el 99.29 % en CPU.
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; con 752 millones de parámetros, los pesos en bf16 ocupan aproximadamente 1,5 GB (tamaño del repo), y el modo `eager` opera en float32.
-- GPU recomendadas: H100 para el modo `fast` (CUDA-graph con flash-linear-attention 0.5.2, verificado por el autor); cualquier GPU NVIDIA para el modo `vllm` o `eager`.
-- GPU de consumo: no se confirma compatibilidad explícita con RTX 4090 u otras consumer en la información disponible, aunque el tamaño del modelo lo hace viable en teoría.
-- Apple Silicon: modo `mlx` (basal ≥ 2.5.0), con cómputo en float32 a partir de los pesos bf16; se rechazan pesos MLX cuantizados.
-- CPU: modo `eager` (referencia en float32) y modo `gguf` con llama.cpp en proceso; unas 0,5 s por petición en 16 hilos de CPU.
-- Despliegue: motor propio `basal-serve` (basal 2.5.0), con modos `fast`, `eager`, `mlx`, `gguf` y `vllm`. Se rechazan `fp8`, `nvfp4`, `fast-exit`, `mps` y `--lanes` para este modelo; `--long-lane` requiere `--long-lane-gdn on`.
-- Throughput: no disponible.
+- VRAM estimada: no disponible de forma explícita; con 752 M de parámetros, en float32 ocupa aproximadamente 3 GB y en Q8_0 alrededor de 0.8 GB, más overhead del runtime.
+- GPU recomendadas: H100 para el modo `fast` (CUDA graphs con flash-linear-attention); cualquier GPU NVIDIA para `eager` y `vllm`.
+- Cabe en GPU de consumo: sí, por tamaño; el modo `fast` está verificado en H100 y `eager` funciona en CPU o GPU sin requisitos especiales.
+- Apple Silicon: modo `mlx` (basal 2.5 o superior), cómputo en float32 desde pesos bf16.
+- Opciones de despliegue: `basal-serve` con modos `fast`, `eager`, `mlx`, `gguf` (llama.cpp en proceso) y `vllm`. Requiere basal 2.5.0 o superior para `fast`; 2.3.2 o superior para `eager` y `gguf`.
+- Latencia: aproximadamente 0.5 s por petición en 16 hilos de CPU con GGUF Q8_0. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Base | Contexto | Werdykt macro | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| basal-omni-pico | 0,8B | Qwen3.5-0.8B-Base | no disponible | 0,660 | Apache 2.0 | HF + GGUF |
-| basal-2.0-mini | 1,5B | no disponible | no disponible | 0,618 | no disponible | HF |
-| basal-2.0 | 4,5B | no disponible | no disponible | 0,729 | no disponible | HF |
-| basal-omni-1.0-mini | E4B | Gemma 4 E4B | no disponible | 0,769 | no disponible | HF |
+| Modelo | Parámetros | Base | Idiomas | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| basal-omni-pico | 0.8B | Qwen3.5-0.8B-Base | pl, en | Apache 2.0 | Decisión tipada, texto |
+| basal-omni-1.0-mini | E4B | Gemma 4 E4B | no disponible | no disponible | Decisión tipada |
+| basal-omni-1.1-max | 12B | Gemma 4 12B | no disponible | no disponible | Decisión tipada |
+| basal-omni-1.0-ultra | 31B | Gemma 4 31B | no disponible | no disponible | Decisión tipada (profesor del pico) |
 
-La comparativa se limita a la propia familia basal, ya que la información disponible no incluye modelos de decisión tipada de otros desarrolladores. Frente a un LLM generativo de tamaño similar, la diferencia clave es el contrato de salida cerrado y la calibración, no el rendimiento en tareas generativas.
+Los modelos de la misma familia comparten la interfaz de decisión tipada pero escalan en tamaño y capacidad. El pico es la opción de menor huella; para casos más difíciles el autor recomienda un modelo basal mayor. No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No sirve para escribir texto ni para conversar; su uso como chatbot es un error de aplicación.
-- No responde sobre hechos que no estén contenidos en el estado de entrada.
-- Rendimiento muy bajo en comprobación de reglas (0,316 en Werdykt rules): no debe usarse para validación normativa o de reglas de negocio.
-- Las probabilidades no deben interpretarse como tasas de error en tipos de datos nuevos sin verificación previa en ese dominio (advertencia explícita del autor sobre calibración).
-- No debe emplearse en decisiones con consecuencias graves para personas sin revisión humana.
-- Solo soporta polaco e inglés; no hay cobertura multilingüe más allá de esos dos idiomas.
-- Para casos difíciles, el autor recomienda modelos basal mayores.
-- Dependencia de un motor de inferencia propio (basal 2.5.0) con modos y flags rechazados para este modelo, lo que limita la portabilidad a stacks estándar como TGI o vLLM genérico (vLLM se soporta solo a través del preset de basal).
-- Riesgo de sesgo: no se documenta en la información disponible.
-- Riesgo de alucinación: mitigado por el formato de salida cerrado, pero no se documenta una evaluación específica.
+- No es un modelo generativo: no escribe texto ni mantiene conversaciones; solo responde preguntas tipadas con opciones predefinidas.
+- No responde con hechos que no estén presentes en el estado de entrada.
+- Bajo rendimiento en comprobaciones de reglas estrictas (0.316), por lo que no debe usarse para validación normativa o lógica formal.
+- Las probabilidades no deben tratarse como tasas de error en dominios nuevos sin verificarlas previamente sobre datos de ese dominio (calibración).
+- No apto para decisiones con consecuencias graves para personas sin revisión humana.
+- Solo soporta polaco e inglés.
+- fp8 y nvfp4 están rechazados por el motor; MLX cuantizado también se rechaza para este modelo.
+- El preset `deterministic` de vLLM no está disponible para este modelo.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-0.8B-Base.
+- Riesgo de sesgo y alucinación no documentado en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Remek/basal-omni-pico
+- Hugging Face: https://huggingface.co/Remek/basal-omni-pico
 - GGUF: https://huggingface.co/Remek/basal-omni-pico-GGUF
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Documentación de la API: https://github.com/rkinas/basal#api
-- Sitio web: https://basal.si5.pl/
+- Web del proyecto: https://basal.si5.pl/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - basal-omni-1.0-mini: https://huggingface.co/Remek/basal-omni-1.0-mini
 - basal-omni-1.1-max: https://huggingface.co/Remek/basal-omni-1.1-max

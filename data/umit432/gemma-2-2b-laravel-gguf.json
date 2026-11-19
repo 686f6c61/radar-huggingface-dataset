@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "Umit432/gemma-2-2b-laravel-GGUF",
+  "slug": "umit432-gemma-2-2b-laravel-gguf",
+  "author": "Umit432",
+  "url": "https://huggingface.co/Umit432/gemma-2-2b-laravel-GGUF",
+  "created_at": "2026-11-18T22:43:42.000Z",
+  "updated_at": "2026-11-18T22:59:00.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma2",
+    "text-generation",
+    "gemma-2",
+    "laravel",
+    "php",
+    "unsloth",
+    "text-generation-inference",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 1708582560,
+  "storage_human": "1.7 GB",
+  "context_length": 8192,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Umit432/gemma-2-2b-laravel-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Umit432/gemma-2-2b-laravel-GGUF",
+      "snippet": "This model is a fine-tuned version of Google's Gemma 2 2B IT optimized for PHP and Laravel development. It has been trained using Unsloth on specialized programming datasets to answer questions, write controllers, models, routes, and migrations for Laravel framework."
+    },
+    {
+      "title": "google/gemma-2-2b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b-GGUF",
+      "snippet": "Gemma Model Card Model Page: Gemma This model card corresponds to the 2b pretrained version of the Gemma 2 model in GGUF Format. The weights here are float32. In llama.cpp, and other related tools such as Ollama and LM Studio, please make sure that you have these flags set correctly, especially repeat-penalty."
+    }
+  ]
+}

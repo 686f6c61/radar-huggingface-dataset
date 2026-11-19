@@ -2,94 +2,102 @@
 
 ## Resumen
 
-Cosmos3-Nano-Transfer-Auto es un modelo generativo de NVIDIA especializado en simulación de escenarios de conducción para IA física (*physical AI*). Se trata de un *checkpoint* post-entrenado a partir del modelo base Cosmos3-Nano, que genera de forma sincronizada vídeos multi-cámara (hasta 11 vistas estándar y *fisheye*) y observaciones LiDAR condicionadas por un *prompt* de texto, un World Scenario Map (WSM) con la estructura de la escena y controles LiDAR alineados. Con 15.157.324.096 parámetros reales en *safetensors* (la model card declara 16B entrenables), emplea una arquitectura Transformer con Mixture-of-Transformers (MoT) y generación bidireccional, lo que lo hace adecuado para generación de datos sintéticos por lotes.
+Cosmos3-Nano-Transfer-Auto es un modelo generativo de NVIDIA especializado en la síntesis de datos sintéticos multimodales para conducción autónoma. Se trata de una variante post-entrenada del modelo base Cosmos3-Nano que genera vídeos sincronizados de hasta 11 cámaras (estándar y ojo de pez) junto con observaciones LiDAR alineadas, condicionado por un prompt de texto y controles de World Scenario Map (WSM) que codifican la estructura de la escena: señales de tráfico, semáforos, marcas viales y cuboides de objetos.
 
-El modelo resuelve un problema concreto en el *pipeline* de desarrollo de vehículos autónomos: la escasez y el coste de datos reales multi-sensor etiquetados. Permitiendo regenerar un mismo escenario con variaciones controladas de apariencia (meteorología, iluminación, hora del día), facilita el aumento de datos (*data augmentation*) a escala para entrenar y evaluar modelos de percepción y conducción. Además, sirve como *checkpoint* fuente para la destilación causal hacia Cosmos3-Nano-Sim-Auto, orientado a simulación en bucle cerrado.
+El modelo resuelve un problema concreto en el pipeline de Physical AI: la escasez y el coste de datos reales multi-sensor etiquetados. Permite regenerar un mismo escenario de conducción a escala con variaciones controladas de apariencia (clima, iluminación, hora del día), manteniendo la geometría y la coherencia entre sensores. Con aproximadamente 15.200 millones de parámetros (16B reportados por el autor), emplea una arquitectura Mixture-of-Transformers (MoT) con generación bidireccional, pensada para generación por lotes y no para simulación en bucle cerrado.
 
-Es relevante ahora porque NVIDIA lo publica bajo la licencia OpenMDW1.1, explícitamente apta para uso comercial y no comercial, dentro de la familia de modelos de ejemplo Cosmos3, con código, *skill* de uso rápido e informe técnico disponibles. La fecha de publicación en Hugging Face es el 20 de octubre de 2026.
+Es relevante ahora porque actúa como checkpoint fuente para la destilación causal hacia Cosmos3-Nano-Sim-Auto, que habilita simulación en bucle cerrado con las mismas modalidades de salida. Forma parte de la familia de modelos de ejemplo Cosmos3 de NVIDIA y se distribuye con licencia OpenMDW 1.1, apta para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con Mixture-of-Transformers (MoT); generación bidireccional |
-| Parametros totales | 15.157.324.096 (dato real de safetensors); la model card declara 16B entrenables |
+| Arquitectura | Transformer con Mixture-of-Transformers (MoT) |
+| Parametros totales | 15.157.324.096 (aprox. 15,2B; el autor reporta 16B entrenables) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (las entradas de texto son *prompts* descriptivos; no se detalla cobertura lingüística) |
-| Licencia | OpenMDW1.1 (openmdw1.1-license) |
-| Formato de pesos | safetensors (tamaño del repo: 34,5 GB) |
+| Idiomas soportados | no disponible (las entradas de texto son prompts de descripcion de escena) |
+| Licencia | OpenMDW 1.1 (openmdw1.1-license) |
+| Formato de pesos | safetensors (libreria `cosmos`, integracion con `diffusers`) |
+| Tamano del repositorio | 34,5 GB |
+| Modalidades de entrada | Texto, video (controles WSM por camara), imagen RGB opcional, controles LiDAR numericos y LiDAR medido opcional |
+| Modalidades de salida | Video multi-vista sincronizado (MP4) y mapas de rango e intensidad LiDAR |
+| Vistas de camara | 1 a 11 (incluye rig Hyperion 8.1: front-wide 120 grados, front-tele 30 grados, cross-left/right 120 grados, rear-left/right 70 grados, rear-tele 30 grados, ojo de pez 200 grados) |
+| Sensor LiDAR | 128 haces rotatorio |
+| Fecha de publicacion | 20/10/2026 (Hugging Face y GitHub) |
 
 ## Arquitectura y entrenamiento
 
-Cosmos3-Nano-Transfer-Auto deriva de Cosmos3-Nano mediante *post-training* sobre datos de conducción multi-sensor que incluyen LiDAR. La red es un Transformer con Mixture-of-Transformers (MoT): el modelo aplica *denoising* conjunto sobre la secuencia completa multi-vista con contexto temporal bidireccional, condicionado por el *prompt* de texto, los controles de cámara WSM y, cuando se solicita salida LiDAR, los controles LiDAR alineados. El resultado son vídeos de cámara sincronizados para hasta 11 vistas y las correspondientes observaciones LiDAR.
+El modelo se basa en un Transformer con arquitectura Mixture-of-Transformers (MoT), derivado de Cosmos3-Nano mediante post-entrenamiento sobre datos de conducción multi-sensor que incluyen LiDAR. El proceso de generación aplica denoising conjunto sobre la secuencia completa multi-vista con contexto temporal bidireccional, condicionado simultáneamente por el prompt de texto, los controles de cámara WSM y, cuando se solicita salida LiDAR, los controles LiDAR alineados. Esta formulación bidireccional está optimizada para generación de datos sintéticos por lotes, no para inferencia autorregresiva en tiempo real.
 
-El modelo se ha desarrollado con el Cosmos Framework. La información disponible no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de RLHF o DPO. La generación es bidireccional, pensada para generación sintética por lotes; el *checkpoint* sirve además como fuente para destilación causal hacia Cosmos3-Nano-Sim-Auto, que añade simulación en bucle cerrado con las mismas modalidades de salida.
+Los controles WSM se producen mediante un renderizador específico que codifica la estructura de la escena (marcas viales, cuboides de objetos, señalización) como vídeos MP4 sincronizados, uno por vista. Los controles LiDAR se suministran como secuencias de range-maps de mapa HD alineadas temporalmente con las cámaras. El modelo acepta además condicionamiento RGB inicial opcional y un barrido LiDAR medido opcional para anclar la generación al inicio de la secuencia. No se han publicado en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO. La adaptación a otros rigs de cámara distintos del Hyperion 8.1 requiere post-entrenamiento adicional.
 
 ## Capacidades
 
-- Generación de vídeo multi-vista sincronizado: hasta 11 vistas de cámara, incluyendo configuraciones estándar y *fisheye* (200°).
-- Generación de observaciones LiDAR sincronizadas con las vistas de cámara: mapas de rango e intensidad.
-- Condicionamiento por texto para atributos de apariencia: meteorología, iluminación y hora del día; el texto también transporta la configuración de cámaras.
-- Condicionamiento estructural mediante World Scenario Map (WSM): señales de tráfico, semáforos, marcas viales y *cuboids* de objetos, renderizados por vista.
-- Condicionamiento LiDAR opcional: barrido medido inicial en representación rango/intensidad, alineado con el inicio de las secuencias.
-- Condicionamiento RGB inicial opcional: imágenes iniciales sincronizadas por cámara.
-- Regeneración controlada de un mismo escenario con variaciones de apariencia a escala.
-- Compatibilidad con *rigs* de 1 a 11 vistas (conjunto Hyperion 8.1: frontal gran angular 120°, frontal tele 30°, lateral cruzado 120°, trasero lateral 70°, trasero tele 30° y *fisheye* frontal/lateral/trasero 200°) y LiDAR rotativo de 128 haces.
-- No se documentan en la información disponible capacidades de *tool calling*, razonamiento multi-paso ni modo *thinking*.
+- Generación de vídeo multi-vista sincronizado de hasta 11 cámaras, combinando vistas estándar y de ojo de pez de 200 grados.
+- Generación conjunta de observaciones LiDAR (mapas de rango e intensidad) alineadas con las vistas de cámara.
+- Condicionamiento por prompt de texto para atributos de apariencia: clima, iluminación y hora del día.
+- Control estructural fino mediante World Scenario Map (WSM): señales, semáforos, marcas viales y cuboides de objetos por vista.
+- Condicionamiento inicial opcional con imagen RGB y con barrido LiDAR medido, para anclar la secuencia generada a un estado real.
+- Regeneración controlada de un mismo escenario con variaciones de apariencia, manteniendo la coherencia geométrica entre sensores.
+- Generación bidireccional orientada a producción por lotes de datasets sintéticos.
+- No dispone de tool calling, function calling ni capacidades de agente; no es un modelo de lenguaje conversacional.
+- No se han documentado capacidades multilingües ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Generación de datos sintéticos para percepción: regenerar escenarios de conducción con variaciones de clima, luz y hora del día para ampliar el dataset de entrenamiento de detectores y segmentadores, manteniendo la estructura de escena fija vía WSM.
-- Aumento de datos multi-sensor alineados: producir pares cámara-LiDAR sincronizados para entrenar modelos de fusión sensorial, con controles LiDAR que garantizan coherencia geométrica entre modalidades.
-- Evaluación de robustez: someter un modelo de percepción a la misma escena bajo condiciones de iluminación y meteorología controladas para medir degradación de forma sistemática.
-- Cobertura de escenarios de borde: construir escenarios con señales, semáforos y *cuboids* específicos mediante WSM para cubrir casos poco frecuentes en datos reales.
-- Validación de *rigs* de cámara: generar vistas desde configuraciones de 1 a 11 cámaras, incluidas *fisheye* de 200°, para estudiar el impacto de la geometría del *rig* en la percepción antes de montar hardware.
-- Simulación y *world models*: usar el *checkpoint* como base para destilación causal hacia Cosmos3-Nano-Sim-Auto y construir entornos de simulación en bucle cerrado para planificación y control.
-- Preentrenamiento de modelos de conducción: alimentar *pipelines* de entrenamiento con grandes volúmenes de vídeo multi-vista etiquetado de forma consistente por construcción.
+- Aumento de datasets de percepción: generar lotes de vídeo multi-cámara y LiDAR etiquetados a partir de escenarios WSM existentes para ampliar la cobertura de entrenamiento de detectores y segmentadores sin coste de captura real.
+- Variación de dominio controlada: regenerar un mismo escenario con lluvia, niebla, nocturnidad o deslumbramiento a contraluz para evaluar la robustez de modelos de percepción ante condiciones meteorológicas y de iluminación poco frecuentes.
+- Validación de modelos de fusión cámara-LiDAR: producir pares sincronizados de vídeo e LiDAR con verdad de referencia geométrica conocida para medir la coherencia entre modalidades en pipelines de fusión.
+- Cobertura de casos límite: sintetizar escenarios con señalización compleja, obras o configuraciones de carril poco habituales definidas manualmente en el WSM, difíciles de capturar en flota real.
+- Evaluación de planificadores y modelos de conducción: usar las secuencias generadas como entradas reproducibles en pruebas de regresión, aprovechando que el mismo escenario puede regenerarse con variaciones acotadas.
+- Generación de datos para rigs Hyperion 8.1: producir directamente las 11 vistas del rig estándar y el LiDAR de 128 haces, evitando el remuestreo desde otras configuraciones de sensor.
+- Preparación de datos para destilación causal: servir como fuente para generar pares de entrenamiento que alimenten la destilación hacia Cosmos3-Nano-Sim-Auto y habilitar simulación en bucle cerrado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa, los 15.157.324.096 parámetros implican aproximadamente 30 GB en precisión de 16 bits solo para pesos, antes de activaciones y estado de difusión; el tamaño del repositorio es de 34,5 GB.
-- GPU recomendadas: no disponible en la información proporcionada.
-- Compatibilidad con GPU de consumo: no disponible en la información proporcionada.
-- Opciones de despliegue: el modelo se distribuye con la librería `cosmos` y se desarrolla con el Cosmos Framework (repositorio `NVIDIA/cosmos-framework`); no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible en la información proporcionada.
+- El repositorio ocupa 34,5 GB en safetensors, lo que sitúa el peso en precisión nativa (probablemente BF16/FP16) en torno a 30 GB. La VRAM necesaria para inferencia será superior a esa cifra al sumar activaciones y el estado de denoising sobre secuencias multi-vista de vídeo y LiDAR.
+- No se dispone de cifras oficiales de VRAM mínima ni de cuantizaciones publicadas para este checkpoint; no se debe asumir que quepa en GPU de consumo de 24 GB sin cuantización.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño de pesos, el despliegue en precisión nativa requiere GPUs de centro de datos (A100 80 GB, H100 80 GB o superiores); no hay confirmación oficial de encaje en RTX 4090.
+- Opciones de despliegue: el modelo se distribuye con `library_name: cosmos` e integración con `diffusers`, y se desarrolla sobre el Cosmos Framework (https://github.com/NVIDIA/cosmos-framework). No se ha documentado soporte de vLLM, llama.cpp, Ollama o TGI, que además no son adecuados para un modelo generativo de vídeo y LiDAR.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades de salida | Licencia | Disponibilidad |
+| Modelo | Parametros | Modalidades de salida | Contexto / vistas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos3-Nano-Transfer-Auto | 15.157.324.096 | no disponible | Vídeo multi-vista (hasta 11) y LiDAR | OpenMDW1.1 | Hugging Face, GitHub |
-| Cosmos3-Nano | no disponible | no disponible | no disponible | no disponible | Hugging Face |
-| Cosmos3-Nano-Sim-Auto | no disponible | no disponible | Vídeo multi-vista y LiDAR (bucle cerrado) | no disponible | Hugging Face |
+| Cosmos3-Nano-Transfer-Auto | aprox. 15,2B (16B reportados) | Vídeo multi-vista + LiDAR | Hasta 11 vistas, LiDAR 128 haces | OpenMDW 1.1 | Hugging Face, GitHub |
+| Cosmos3-Nano (base) | no disponible | Vídeo (generación base) | no disponible | OpenMDW 1.1 (familia Cosmos3) | Hugging Face |
+| Cosmos3-Nano-Sim-Auto | no disponible | Vídeo multi-vista + LiDAR en bucle cerrado | Hasta 11 vistas | OpenMDW 1.1 (familia Cosmos3) | Hugging Face |
 
-No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
+La comparación con modelos de otras familias (por ejemplo, generadores de vídeo genéricos) no está disponible en la información proporcionada, ya que ninguno de ellos produce LiDAR alineado con las vistas de cámara ni acepta controles WSM.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al entrenarse con datos de conducción, puede heredar sesgos de las condiciones y geografías presentes en el dataset.
-- Riesgo de alucinación: como modelo generativo de difusión, puede producir escenas visualmente plausibles pero físicamente inconsistentes; no se documentan métricas de fidelidad en la información disponible.
-- Limitaciones de *rig*: el modelo está adaptado al conjunto de cámaras Hyperion 8.1 y a LiDAR rotativo de 128 haces; otros *rigs* requieren *post-training* adicional.
-- Dependencia de controles: la calidad de la salida depende de los controles WSM y LiDAR, que deben ser producidos por un renderizador WSM y estar alineados; entradas mal alineadas degradan el resultado.
-- Idioma: no se detalla cobertura lingüística de los *prompts* de texto.
-- Licencia: OpenMDW1.1 permite uso comercial y no comercial según la model card, pero conviene revisar los términos completos del texto de la licencia antes de su integración en producto.
-- Producción: no se publican latencias, throughput ni requisitos de hardware, lo que dificulta el dimensionamiento previo de infraestructura.
+- Modelo especializado en conducción: no es un modelo de lenguaje ni un asistente conversacional; no soporta tool calling, agentes ni razonamiento multi-paso.
+- Rig de cámara restringido: el modelo está entrenado para el conjunto Hyperion 8.1 (1 a 11 vistas) y LiDAR de 128 haces. Cualquier otra configuración de sensores requiere post-entrenamiento adicional.
+- Generación bidireccional: está diseñada para generación por lotes, no para simulación interactiva en bucle cerrado; para ese uso debe emplearse Cosmos3-Nano-Sim-Auto.
+- Dependencia de los controles WSM: la calidad y coherencia de la salida dependen de un renderizador WSM externo y de controles LiDAR alineados correctamente; errores de alineación temporal degradan el resultado.
+- Riesgo de artefactos y alucinación visual: al ser un modelo generativo, puede producir geometrías inconsistentes, objetos que aparecen o desaparecen entre vistas o LiDAR incoherente con la imagen. Los datos sintéticos requieren validación antes de usarse como verdad de referencia.
+- Sesgos de dominio: el dataset de post-entrenamiento no está documentado en la información disponible, por lo que se desconocen sesgos geográficos, climáticos o de tipología de vía.
+- Idiomas: no se han documentado idiomas soportados; los prompts de texto se orientan a descripción de escena, no a interacción multilingüe.
+- Licencia: OpenMDW 1.1 permite uso comercial según la model card, pero conviene revisar los términos completos en https://openmdw.ai/license/1-1/ antes de integrarlo en producción.
+- No se han publicado cifras de benchmarks, latencia ni requisitos mínimos de hardware; cualquier planificación de despliegue debe validarse empíricamente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/Cosmos3-Nano-Transfer-Auto
 - Colección Cosmos3: https://huggingface.co/collections/nvidia/cosmos3
-- Ejemplos Cosmos3: https://huggingface.co/collections/nvidia/cosmos3-examples
+- Colección de ejemplos Cosmos3: https://huggingface.co/collections/nvidia/cosmos3-examples
+- Modelo base Cosmos3-Nano: https://huggingface.co/nvidia/Cosmos3-Nano
 - Código: https://github.com/nvidia/cosmos
 - Cosmos Framework: https://github.com/NVIDIA/cosmos-framework
-- *Skill* de Cosmos3-Nano-Transfer-Auto: https://github.com/NVIDIA/cosmos-framework/tree/main/.agents/skills/cosmos3-nano-transfer-auto
+- Skill de Cosmos3-Nano-Transfer-Auto: https://github.com/NVIDIA/cosmos-framework/tree/main/.agents/skills/cosmos3-nano-transfer-auto
 - Informe técnico: https://research.nvidia.com/labs/cosmos-lab/cosmos-simulation/technical-report.pdf
-- Sitio web: https://research.nvidia.com/labs/cosmos-lab/cosmos-simulation/
-- Licencia OpenMDW1.1: https://openmdw.ai/license/1-1/
-- Modelo base Cosmos3-Nano: https://huggingface.co/nvidia/Cosmos3-Nano
+- Sitio web del proyecto: https://research.nvidia.com/labs/cosmos-lab/cosmos-simulation/
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

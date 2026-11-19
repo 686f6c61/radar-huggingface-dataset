@@ -2,114 +2,104 @@
 
 ## Resumen
 
-Qwen3.8-27B-Artemis-GGUF es una cuantización GGUF del modelo Qwen3.8-27B de Qwen (Alibaba Cloud), publicada por TurinTech con su pipeline propio denominado Artemis. El repositorio contiene un único archivo, `Qwen3.8-27B-Artemis-IQ2_XXS.gguf`, de 7,83 GB (7.830.620.736 bytes), que comprime los pesos en BF16 del modelo original (26.895.998.464 parámetros) hasta aproximadamente una séptima parte de su tamaño. La conversión es texto únicamente: excluye el codificador de visión y la capa de predicción multi-token (MTP) del modelo base.
+Qwen3.8-27B-Artemis-GGUF es una versión cuantizada y comprimida del modelo multimodal Qwen/Qwen3.8-27B, publicada por TurinTech bajo su pipeline de compresión Artemis. El objetivo declarado es ejecutar un modelo de 27B parámetros (26.895.998.464 parámetros reales) en una GPU de 10 GB, con un archivo de descarga de 7,83 GB que requiere aproximadamente 8,5 GiB de VRAM en modo solo texto. El modelo base es de la familia Qwen3.8, orientado a generación de texto, razonamiento, visión y tool calling.
 
-El objetivo declarado del autor es ejecutar tool calling y agentes en local sobre una GPU de 10 GB o más, con un pico de memoria de 9,0 GiB medido en una A100 con contexto de 8.192 tokens. Sobre 111 tareas de tool calling paralelo del benchmark BFCL, el archivo resuelve 87 correctamente, frente a 63 del archivo comparable de AtomicChat (AD-IQ1_M, 8,21 GB) y 75 del de Unsloth (UD-IQ2_XXS, 7,27 GB). El precio de esa ventaja en herramientas es una pérdida de precisión en matemáticas y en la fidelidad respecto al original: 180 de 200 problemas de GSM8K y un 68,6 % de coincidencia en el siguiente token con el BF16 sobre 250 textos mixtos.
+La relevancia de esta ficha está en la agresividad de la compresión: según la model card, el BFCL live de tool calls pasa de 223 aciertos de 258 en el modelo original a 222 de 258 en la versión cuantizada, una pérdida de un solo acierto. Eso convierte al modelo en una opción práctica para despliegues de agentes y function calling en hardware consumer, donde un 27B denso en precisión completa no cabría.
 
-Es relevante ahora por dos motivos: demuestra que una cuantización de ~2 bits puede conservar capacidad de function calling utilizable, y lo hace sobre un modelo de 27B con licencia Apache 2.0, lo que permite uso comercial. Conviene tener en cuenta que el conjunto de tareas usado para elegir el archivo ya se había empleado para comparar candidatos, por lo que, en palabras del autor, no constituye un test independiente.
+El repositorio usa formato GGUF y está pensado para llama.cpp, Ollama y LM Studio, con soporte de proyector de visión y un archivo MTP (multi-token prediction) adicional. La licencia es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer del modelo base Qwen3.8-27B; el autor no detalla la arquitectura interna en la model card |
-| Parametros totales | 26.895.998.464 (datos de safetensors del modelo base) |
-| Parametros activos | No aplica; no hay informacion que indique arquitectura MoE |
-| Longitud de contexto | No disponible para el modelo base; la evaluacion del autor se ejecuto con 8.192 tokens (`-c 8192`) |
-| Tipos de cuantizacion | IQ2_XXS (unico archivo del repositorio); etiquetado por el autor como clase de tamano de ~2 bits |
+| Arquitectura | Transformer denso (modelo base Qwen3.8-27B); cuantizado en GGUF con pipeline Artemis |
+| Parametros totales | 26.895.998.464 (26,9B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 8.192 tokens en el ejemplo de despliegue de la model card; contexto nativo del modelo base no disponible |
+| Tipos de cuantizacion | IQ2_XXS (7,83 GB); otras variantes no detalladas en la informacion disponible |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
-| Tamano del archivo | 7,83 GB decimales / 7.830.620.736 bytes |
-| Modalidad | Solo texto (sin codificador de vision) |
-| Capas excluidas | Codificador de vision y capa de prediccion multi-token (MTP) |
-| Modelo base | Qwen/Qwen3.8-27B |
-| Relacion con el base | Quantized (conversion independiente de TurinTech, no afiliada a Alibaba Cloud ni al equipo Qwen) |
-| Plantilla de chat | Incluida en el GGUF, se activa con `--jinja`; el modo thinking viene activado por defecto |
+| Formato de pesos | GGUF (llama.cpp); incluye proyector de visión y archivo MTP separados |
 
 ## Arquitectura y entrenamiento
 
-El archivo es una conversion de pesos, no un modelo entrenado desde cero: TurinTech parte de Qwen3.8-27B, convierte los tensores de texto a GGUF y los cuantiza a IQ2_XXS para llama.cpp. No se publican en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo base uso RLHF, DPO u otras tecnicas de alineamiento. Tampoco se documenta la arquitectura interna del base mas alla de su caracter de transformer de 27B orientado a chat, razonamiento, codigo y uso de herramientas.
+El modelo es una cuantizacion del Qwen3.8-27B original, un transformer denso de 26,9B parametros con capacidad multimodal image-text-to-text. TurinTech aplica su pipeline Artemis para reducir el peso de 50,2 GiB (modelo original en el formato de referencia) a 7,83 GB de descarga, con un consumo medido de 8,5 GiB de VRAM en una NVIDIA A100 en modo solo texto, un solo slot y sin proyector de vision. El autor no detalla en la informacion disponible la composicion del dataset de entrenamiento del modelo base, el numero de tokens ni si hubo RLHF o DPO.
 
-La innovacion tecnica reseñable no esta en la arquitectura sino en el proceso de cuantizacion: el autor reporta que su archivo mantiene un 68,6 % de coincidencia de siguiente token con el BF16 original sobre 250 textos mixtos, un porcentaje inferior al de los archivos de Unsloth de 7,27 GB y 8,37 GB, lo que sugiere que la cuantizacion esta optimizada deliberadamente para preservar el comportamiento en tool calling a costa de fidelidad general. El repositorio incluye la plantilla de chat Jinja con soporte de modo thinking separado (`message.reasoning_content` frente a `message.content`), lo que permite desactivar el razonamiento por peticion mediante `chat_template_kwargs.enable_thinking`.
+La innovacion tecnica destacable es la propia compresion Artemis, que preserva el rendimiento de tool calling casi intacto (222 de 258 en BFCL live frente a 223 del original). El repositorio incluye un archivo MTP (multi-token prediction) para decodificacion especulativa, convertido y verificado con llama.cpp b11889. El chat template activa el modo thinking por defecto; los resultados publicados se midieron con thinking desactivado mediante `chat_template_kwargs: {"enable_thinking": false}`, y el servidor devuelve el razonamiento en `message.reasoning_content` cuando esta activo.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con plantilla de chat integrada y compatible con la API `/v1/chat/completions`.
-- Tool calling y function calling en formato OpenAI: el autor verifico la devolucion correcta de `tool_calls` con argumentos estructurados (por ejemplo, `get_weather` con `{"city":"Paris","unit":"celsius"}`).
-- Tool calling paralelo: capaz de emitir varias llamadas en una sola respuesta (verificado con peticiones simultaneas para Paris y Tokio).
-- Razonamiento en modo thinking, activable o desactivable por peticion; los tokens de razonamiento se exponen en `reasoning_content`.
-- Capacidad matematica basica: 180 de 200 problemas de GSM8K resueltos.
-- Razonamiento y codigo heredados del modelo base Qwen3.8-27B (chat, reasoning, coding y tool use segun la descripcion del autor).
-- Ejecucion local y offline una vez descargado el modelo y el runtime.
-- Sin capacidad de vision: el codificador de vision no esta incluido en el GGUF.
+- Generacion de texto conversacional multi-turno en formato chat.
+- Razonamiento con modo thinking activable o desactivable por peticion.
+- Tool calling y function calling, con soporte de esquemas JSON de parametros.
+- Capacidad multimodal image-text-to-text mediante proyector de vision opcional.
+- Decodificacion especulativa mediante archivo MTP.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y servidor OpenAI-compatible de llama.cpp.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: inferidas del soporte de tool calling, sin detalle adicional en la model card.
 
 ## Casos de uso
 
-- **Agentes de tool calling en local**: con 87 aciertos sobre 111 tareas BFCL paralelas, el archivo es adecuado para orquestadores de agentes que necesitan emitir varias llamadas a funciones por turno sin salir de la maquina, con un consumo de 9,0 GiB de VRAM a 8.192 tokens de contexto.
-- **Asistentes con datos sensibles on-premise**: al ejecutarse con llama.cpp u Ollama sobre hardware propio, las entradas no salen de la infraestructura del cliente, lo que encaja en entornos con requisitos de confidencialidad estrictos.
-- **Atencion al cliente automatizada con integracion de sistemas**: la plantilla de chat y el soporte de `tools` en formato OpenAI permiten conectar el modelo a APIs internas (consultas de pedidos, estado de envios, cambios de direccion) devolviendo argumentos JSON validables antes de ejecutar la accion.
-- **Prototipado y evaluacion de pipelines de agentes**: sirve como modelo de referencia barato en CI para validar prompts, esquemas de herramientas y flujos multi-paso antes de pasar a un modelo mayor o a una cuantizacion de mas bits.
-- **Automatizacion de tareas ofimaticas con herramientas**: extraccion de parametros desde lenguaje natural y emision de llamadas a funciones para crear eventos, enviar correos o consultar bases de datos, con modo thinking desactivado para minimizar latencia y tokens de salida.
-- **Despliegue en estaciones de trabajo con GPU de gama media**: el requisito declarado de 10 GB o mas de VRAM permite ejecutarlo en tarjetas de consumo de 12 GB, habilitando asistentes de codigo o de documentacion completamente offline.
-- **Razonamiento acotado con presupuesto controlado**: activando `enable_thinking` solo en las peticiones que lo requieran, se puede reservar el modo de razonamiento para tareas de analisis y mantener respuestas directas en el resto del trafico.
+- Agentes de tool calling en produccion con GPU limitada: el modelo ejecuta function calling con 222 aciertos de 258 en BFCL live consumiendo 8,5 GiB de VRAM, lo que permite desplegar un agente de 27B en tarjetas de 10 GB como la RTX 3080 o la RTX 4070.
+- Asistente de atencion al cliente con contexto de 8.192 tokens: suficiente para historiales de conversacion multi-turno y documentacion de soporte inyectada, con el modo thinking desactivado para reducir latencia.
+- Automatizacion de tareas con API externas: el soporte de esquemas de herramientas permite conectar el modelo a servicios de clima, calendario, CRM o bases de datos mediante el endpoint `/v1/chat/completions` de llama-server.
+- Procesamiento de documentos con imagenes: con el proyector de vision cargado (aproximadamente 1,3 GiB adicionales de VRAM), el modelo puede extraer informacion de capturas, formularios o diagramas en flujos image-text-to-text.
+- Entornos de desarrollo local con Ollama o LM Studio: `ollama run turintech/qwen3.8-27b-artemis` permite probar y validar prompts de agente en una estacion de trabajo sin infraestructura de servidor.
+- Razonamiento matematico asistido: con 234 aciertos de 250 en GSM8K, es adecuado para tutoria o verificacion de calculos en aplicaciones educativas, activando thinking para problemas de varios pasos.
+- Evaluacion y prototipado de pipelines de agentes antes de escalar a un modelo mayor: la cercania de rendimiento al original (222 frente a 223 en BFCL) permite desarrollar contra la version comprimida y desplegar la completa solo si hace falta.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Artemis IQ2_XXS (7,83 GB) | Unsloth UD-IQ2_XXS (7,27 GB) | Unsloth UD-IQ2_S (8,37 GB) | AtomicChat AD-IQ1_M (8,21 GB) |
-|---|---|---|---|---|
-| BFCL tool calling paralelo (aciertos / 111) | 87 | 75 (p = 0,017 frente a Artemis) | 81 (sin separacion estadistica frente a Artemis) | 63 (p = 0,0004 frente a Artemis) |
-| GSM8K (aciertos / 200) | 180 | no disponible | 183 | 186 |
-| Coincidencia del siguiente token con BF16 (%) | 68,6 | no disponible (el autor indica que es mas cercano al original) | no disponible (el autor indica que es mas cercano al original) | no disponible |
+Resultados declarados por TurinTech en la model card (metrica `verified: false`):
 
-Notas metodologicas declaradas por el autor: decodificacion greedy con thinking desactivado para las pruebas de tool calling; 250 textos mixtos para la metrica de coincidencia de siguiente token; comparaciones con test pareado. El autor advierte que el conjunto final de tareas ya se habia usado para comparar archivos candidatos y que el archivo se eligio despues de ver esos resultados, por lo que no es un test independiente. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estandar en la informacion disponible.
+| Benchmark | Metrica | Resultado Artemis | Resultado modelo original |
+|---|---|---|---|
+| BFCL live | Tool calls correctos | 222 de 258 | 223 de 258 |
+| GSM8K (ultimos 250) | Respuestas correctas | 234 de 250 | No disponible |
+| MMLU-Pro (muestra) | Respuestas correctas | 128 de 280 | No disponible |
+| IFEval | Instrucciones seguidas | 399 de 539 | No disponible |
+
+No se han publicado en la informacion disponible resultados del modelo original para GSM8K, MMLU-Pro ni IFEval, ni comparaciones con otros modelos de la misma categoria.
 
 ## Requisitos de hardware
 
-- **VRAM de inferencia**: 9,0 GiB de pico medido en una NVIDIA A100 con contexto de 8.192 tokens; el autor recomienda una GPU de 10 GB o mas.
-- **GPU de centro de datos**: A100 validada por el autor con llama.cpp b11617 y b11871.
-- **GPU de consumo**: el umbral declarado de 10 GB permite en teoria tarjetas de 12 GB (RTX 3060 12 GB, RTX 4070 12 GB) y de 16 GB o mas (RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080, RTX 4090); el autor no documenta mediciones en estas tarjetas.
-- **GPU por debajo de 10 GB**: no soportado segun las recomendaciones del autor; no se documenta offloading parcial a CPU.
-- **Opciones de despliegue**: `llama-server` de llama.cpp con `--jinja` (probado), Ollama mediante `turintech/qwen3.8-27b-artemis:iq2_xxs` (paquete con capa de modelo identica al archivo, renderer `qwen3.5`), y LM Studio `llmster` 0.0.25 con motor CUDA llama.cpp 2.41.0 (solo verificacion de carga y respuesta).
-- **Despliegue no documentado**: no hay informacion sobre vLLM, TGI ni SGLang para este archivo.
-- **Latencia y throughput**: no disponibles; el autor no publica tokens por segundo ni tiempos de primera respuesta.
-- **Almacenamiento**: 7,83 GB para el archivo GGUF, mas el runtime de llama.cpp u Ollama.
+- VRAM estimada: 8,5 GiB en modo solo texto, un slot, sin proyector de vision, medido en NVIDIA A100 con llama.cpp b11617.
+- Con vision: aproximadamente 1,3 GiB adicionales al cargar el proyector (`--no-mmproj` lo omite).
+- Cabe en GPU consumer de 10 GB o mas, como RTX 3080, RTX 4070, RTX 4070 Ti o superiores.
+- GPU de centro de datos validadas en la model card: NVIDIA A100. Otras no especificadas.
+- Despliegue: llama.cpp (b11617 o superior para texto; commit `4c3c581` en la release; b11889 para proyector y MTP), Ollama y LM Studio.
+- Comando de referencia: `llama-server -hf turintech/Qwen3.8-27B-Artemis-GGUF:IQ2_XXS --no-mmproj -np 1 --port 8080 -c 8192 --jinja`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo / archivo | Parametros | Contexto evaluado | Tool calling BFCL (de 111) | GSM8K (de 200) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| turintech/Qwen3.8-27B-Artemis-GGUF (IQ2_XXS) | 26,9 B | 8.192 tokens | 87 | 180 | Apache 2.0 | Publico en Hugging Face (0 descargas en el momento de la consulta) |
-| Unsloth UD-IQ2_XXS | 26,9 B (mismo base) | no disponible | 75 | no disponible | Apache 2.0 (heredada del base) | Publico |
-| Unsloth UD-IQ2_S | 26,9 B (mismo base) | no disponible | 81 | 183 | Apache 2.0 (heredada del base) | Publico |
-| AtomicChat AD-IQ1_M | 26,9 B (mismo base) | no disponible | 63 | 186 | Apache 2.0 (heredada del base) | Publico |
+| Modelo | Parametros | Contexto | BFCL live | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Artemis-GGUF (IQ2_XXS) | 26,9B | 8.192 en el ejemplo de despliegue | 222/258 | Apache 2.0 | GGUF |
+| Qwen/Qwen3.8-27B (original) | 26,9B | No disponible | 223/258 | Apache 2.0 | Pesos originales (50,2 GiB) |
+| Alternativas de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparacion es intradia: los cuatro archivos cuantizan el mismo modelo base Qwen3.8-27B, por lo que las diferencias reflejan la estrategia de cuantizacion, no la capacidad del modelo. Artemis gana en tool calling paralelo con significacion estadistica frente a dos de los tres competidores y pierde en matemáticas (180 frente a 183 y 186) y en fidelidad al BF16.
+La informacion proporcionada no incluye datos de otros modelos comparables de la misma categoria, por lo que la comparativa se limita al par original/cuantizado.
 
 ## Limitaciones y advertencias
 
-- **Solo texto**: el codificador de vision no esta incluido, por lo que no se pueden procesar imagenes aunque el modelo base las soporte.
-- **Sin capa MTP**: la prediccion multi-token del modelo base se ha eliminado, lo que puede reducir el throughput en decodificacion especulativa respecto a otros archivos que la conservan.
-- **Degradacion en matematicas y documentos largos**: el propio autor reconoce que, si priman las matematicas o la fidelidad al original, especialmente en documentos largos, conviene un archivo mayor como UD-IQ2_S.
-- **Cuantizacion agresiva de ~2 bits**: la coincidencia de siguiente token con el BF16 es del 68,6 %, por debajo de las alternativas de Unsloth; es esperable una mayor tasa de artefactos en generacion libre.
-- **Evaluacion no independiente**: el conjunto de tareas se uso para seleccionar el archivo, por lo que los resultados estan sujetos a sesgo de seleccion.
-- **Modo thinking activado por defecto**: la plantilla de chat activa el razonamiento salvo que se pase `enable_thinking: false`; en produccion esto incrementa tokens de salida y latencia si no se controla.
-- **Contexto limitado en la configuracion probada**: la validacion se hizo con 8.192 tokens; no se documenta comportamiento con ventanas mayores ni el maximo del modelo base.
-- **Idiomas no documentados**: no hay informacion sobre cobertura linguistica ni calidad en castellano.
-- **Sesgos y alucinacion**: no se publica ninguna evaluacion de sesgos, toxicidad o tasa de alucinacion; se heredan los del modelo base Qwen3.8-27B sin analisis adicional.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el repositorio incluye un fichero `NOTICE` con atribuciones que debe conservarse; el autor declara explicitamente que no esta afiliado ni respaldado por Alibaba Cloud ni por el equipo Qwen.
-- **Madurez del repositorio**: una unica descarga y un unico like en el momento de la consulta, con un solo archivo publicado; no hay garantia de mantenimiento ni de actualizaciones.
-- **Madurez de la herramienta**: llama.cpp es compatible con el formato, pero las pruebas se limitaron a dos builds concretas (b11617 y b11871); otras versiones pueden requerir actualizacion.
+- La cuantizacion IQ2_XXS es de 2 bits: aunque el tool calling se conserva casi intacto, es esperable degradacion en tareas de generacion libre, matematicas complejas y matices de idioma; no hay datos publicados que lo cuantifiquen.
+- Los benchmarks de la model card estan marcados como no verificados (`verified: false`) y fueron medidos por el propio autor con muestras reducidas (250, 280 y 539 ejemplos), no sobre los conjuntos completos.
+- El modo thinking esta activado por defecto en el chat template; si no se desactiva o no se reservan tokens suficientes para el razonamiento, las respuestas pueden truncarse.
+- El contexto usado en el ejemplo de despliegue es de 8.192 tokens; el contexto nativo del modelo base no se detalla en la informacion disponible.
+- Idiomas soportados no disponibles: no se puede garantizar calidad fuera del ingles o el chino sin evaluacion propia.
+- Riesgo de alucinacion inherente a modelos de 27B comprimidos a 2 bits, especialmente con thinking desactivado.
+- Requiere llama.cpp b11617 o superior; versiones anteriores pueden fallar con el archivo o el chat template.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base Qwen3.8-27B enlazada en la model card por si impone condiciones adicionales.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF
-- Archivo GGUF directo: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF/resolve/main/Qwen3.8-27B-Artemis-IQ2_XXS.gguf
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
-- Aviso legal y atribuciones del repositorio: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF/blob/main/NOTICE
-- Detalles de la metodologia de evaluacion: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF#how-it-was-tested
-- Sitio del autor (TurinTech): https://turintech.ai
-- Paquete Ollama: https://ollama.com/turintech/qwen3.8-27b-artemis
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Nota: la busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos no guardaban relacion con el contenido de la ficha y se han descartado.
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Ollama: https://ollama.com/turintech/qwen3.8-27b-artemis
+- LM Studio: https://lmstudio.ai/turintech/qwen3.8-27b-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai

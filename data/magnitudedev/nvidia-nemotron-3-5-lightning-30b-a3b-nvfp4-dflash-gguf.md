@@ -2,69 +2,84 @@
 
 ## Resumen
 
-Este repositorio contiene una conversión en formato GGUF con cuantización NVFP4 (flotante de 4 bits) del modelo `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash`, realizada por el usuario `magnitudedev` para su uso con el framework de inferencia [Magnitude](https://github.com/magnitudedev/magnitude). El modelo original es un desarrollo de NVIDIA, aunque la información disponible no detalla su arquitectura interna ni su proceso de entrenamiento. El nombre sugiere una arquitectura de mezcla de expertos (MoE) con 30 mil millones de parámetros totales y 3 mil millones activos, pero el dato real de parámetros totales extraído de los safetensors es de 833.362.195, una discrepancia que no se explica en la documentación del repositorio.
+NVIDIA Nemotron 3.5 Lightning 30B A3B NVFP4 DFlash GGUF es una conversión a formato GGUF del checkpoint `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash`, publicada por el usuario magnitudedev para su uso con el motor de inferencia Magnitude sobre llama.cpp. El modelo base es un transformer de tipo Mixture of Experts (MoE) de NVIDIA, con 30B parámetros totales y 3B parámetros activos por token, según indica el propio nombre del checkpoint. La variante DFlash incorpora un cabezal de decodificación especulativa con atención bidireccional, y el checkpoint original está cuantizado en NVFP4 (formato de 4 bits de NVIDIA).
 
-La relevancia de esta conversión radica en su formato GGUF, que permite ejecutar el modelo con herramientas como `llama.cpp` y Ollama, y en la cuantización NVFP4, que reduce significativamente el espacio en disco y los requisitos de memoria en comparación con los pesos en precisión completa. El tamaño del repositorio es de 1,2 GB, lo que lo hace atractivo para despliegues en entornos con recursos limitados. No se proporcionan detalles sobre la longitud de contexto, idiomas soportados ni capacidades específicas del modelo.
+El artefacto publicado es una conversión nativa NVFP4 a GGUF, generada con llama.cpp en la revisión `9b05354ec6fb58b4e665e9a39ebc40285c015638`, con un tamaño de repositorio de 2,4 GB. Está pensado para despliegues que combinan el formato de pesos NVFP4 con decodificación especulativa DFlash dentro del ecosistema Magnitude, lo que permite acelerar la generación sin salir de llama.cpp.
+
+La relevancia de esta ficha radica en que es un artefacto de inferencia derivado, no un modelo entrenado desde cero: su interés está en la combinación de cuantización NVFP4, decodificación especulativa y compatibilidad con endpoints, más que en capacidades nuevas. La información pública disponible sobre el modelo base es limitada en esta ficha, por lo que varios campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) segun el nombre del modelo, no confirmado |
-| Parametros totales | 833.362.195 (dato real de safetensors); el nombre indica 30B |
-| Parametros activos | 3B (segun el nombre, no confirmado) |
+| Arquitectura | Transformer Mixture of Experts (MoE), según nomenclatura del checkpoint base; detalles internos no disponibles |
+| Parametros totales | 30B (según nombre del checkpoint base); el tensor safetensors del repo GGUF reporta 833.362.195 parámetros |
+| Parametros activos | 3B (según nombre del checkpoint base, sufijo A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (flotante de 4 bits) |
-| Idiomas soportados | no disponibles |
-| Licencia | openmdw-1.1 (https://openmdw.ai/license/1-1/) |
-| Formato de pesos | GGUF (cuantizacion NVFP4) |
+| Tipos de cuantizacion | NVFP4 (4 bits, formato nativo NVIDIA); no se documentan otras variantes en este repo |
+| Idiomas soportados | no disponible |
+| Licencia | OpenMDW 1.1 (openmdw-1.1), etiquetada como `license: other` en Hugging Face |
+| Formato de pesos | GGUF (conversión nativa NVFP4) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo original. El nombre "30B-A3B" sugiere una arquitectura de mezcla de expertos con 30 mil millones de parametros totales y 3 mil millones activos por token, tipica de los modelos MoE modernos. Sin embargo, el dato real de parametros totales en los safetensors es de 833 millones, lo que contradice esa interpretacion. Es posible que el repositorio contenga solo una parte de los pesos o que la conversion haya modificado la estructura, pero no hay documentacion al respecto.
+El modelo base es un transformer MoE con 30B parámetros totales y 3B activos, según la convención de nombres de NVIDIA (Lightning 30B A3B). El checkpoint original incorpora el mecanismo DFlash, un esquema de decodificación especulativa con un bloque draft que utiliza atención bidireccional (`dflash.attention.causal = false`) y propuestas generadas desde filas de máscara que comienzan después del ancla (`dflash.sample_from_anchor = false`). Estos metadatos están documentados en la model card del artefacto GGUF y derivan de la configuración e implementación de referencia del checkpoint de NVIDIA, verificadas contra las salidas de referencia.
 
-Tampoco se proporcionan datos sobre el conjunto de entrenamiento, el numero de tokens procesados, ni el uso de tecnicas como RLHF o DPO. La unica informacion tecnica disponible es que la conversion se realizo con `llama.cpp` en la revision `9b05354ec6fb58b4e665e9a39ebc40285c015638`, y que el artefacto resultante tiene un hash SHA-256 de `f4f37ff3f20932887988f7a81fdd23aee39d87cbe457b748a46603acd18a35d6`.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO en el modelo base dentro de la información proporcionada. La conversión a GGUF se realizó con llama.cpp en la revisión indicada y el artefacto tiene SHA-256 `ca3b2a765da43234524c0c83669b4f552e31f0f226c7afa509f133cfd050bc19`.
 
 ## Capacidades
 
-No se han publicado capacidades especificas del modelo en la informacion proporcionada. Al tratarse de un modelo de lenguaje, se presume que puede realizar tareas de generacion de texto, razonamiento, codigo y comprension del lenguaje, pero no hay confirmacion oficial. Los tags del repositorio mencionan `speculative-decoding` y `dflash`, lo que sugiere que el modelo esta optimizado para decodificacion especulativa, una tecnica que acelera la inferencia mediante la generacion de multiples tokens candidatos en paralelo. No obstante, no se detallan las capacidades concretas.
+- Generación de texto y razonamiento general, heredadas del modelo base Nemotron 3.5 Lightning.
+- Decodificación especulativa DFlash integrada para acelerar la generación en el motor Magnitude.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repo).
+- Extracción de características (`feature-extraction` en los tags del repo).
+- Soporte de tool calling, agentes, matemáticas, código, visión o audio: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; no se listan idiomas en la model card.
 
 ## Casos de uso
 
-No se dispone de informacion sobre casos de uso especificos recomendados por el autor. Dado que es un modelo de lenguaje en formato GGUF con cuantizacion NVFP4, podria emplearse en escenarios genericos como:
-
-- Generacion de texto y asistencia conversacional en aplicaciones de chat.
-- Tareas de completado de codigo si el modelo base fue entrenado para ello (no confirmado).
-- Prototipado rapido de aplicaciones de IA en entornos con recursos limitados.
-- Experimentacion con decodificacion especulativa usando Magnitude.
-- Despliegue en servidores locales mediante `llama.cpp` o Ollama.
-- Investigacion academica sobre modelos cuantizados y su rendimiento.
-
-Estos casos son inferencias razonables, pero no estan respaldados por documentacion oficial del repositorio.
+- Despliegue de inferencia acelerada con decodificación especulativa: el artefacto incluye el bloque draft DFlash, por lo que se puede usar en Magnitude para generar tokens con verificación especulativa sobre llama.cpp, reduciendo la latencia por token frente a decodificación autoregresiva estándar.
+- Servicio de extracción de características: el tag `feature-extraction` indica que el modelo puede emplearse para obtener representaciones vectoriales en pipelines de búsqueda semántica o clustering, siempre que el motor lo exponga.
+- Integración en endpoints compatibles: el tag `endpoints_compatible` sugiere su uso detrás de una API compatible con endpoints estándar, lo que facilita conectarlo a aplicaciones existentes sin reescribir clientes.
+- Prototipado en hardware con soporte NVFP4: al conservar la cuantización nativa de 4 bits, es adecuado para entornos con GPUs NVIDIA que aceleran NVFP4 y donde el tamaño de 2,4 GB del repo reduce los requisitos de almacenamiento.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir la degradación de calidad de NVFP4 frente a otros formatos del mismo modelo base en tareas de generación.
+- Pruebas de decodificación especulativa en investigación: los metadatos DFlash documentados permiten reproducir y validar el comportamiento del bloque draft contra las salidas de referencia del checkpoint de NVIDIA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo o su version base. Tampoco se comparan con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se proporcionan requisitos de hardware especificos. El tamaño del repositorio es de 1,2 GB, lo que sugiere que los pesos cuantizados NVFP4 ocupan aproximadamente esa cantidad. Para inferencia con `llama.cpp`, se necesitaria una GPU compatible con la cuantizacion NVFP4, que es una precision nativa de las GPUs NVIDIA recientes (por ejemplo, arquitectura Blackwell). No se indica la VRAM minima necesaria, aunque un modelo de 1,2 GB en disco probablemente requiera entre 2 y 4 GB de VRAM para cargar los pesos, dependiendo del contexto y del overhead del runtime. Se recomienda consultar la documentacion de Magnitude y `llama.cpp` para obtener directrices de despliegue.
+- VRAM estimada: no disponible de forma oficial; el repo GGUF ocupa 2,4 GB, pero el tamaño en VRAM depende del número de capas descargadas a GPU y del contexto configurado.
+- GPU recomendadas: no disponible en la información proporcionada; NVFP4 requiere soporte de hardware y software específico de NVIDIA, por lo que no es un formato universal.
+- Compatibilidad con GPU de consumo: no confirmada; dependerá del soporte NVFP4 del runtime y de la GPU concreta.
+- Opciones de despliegue: llama.cpp (revisión `9b05354ec6fb58b4e665e9a39ebc40285c015638` o posterior) y el motor Magnitude; vLLM, TGI u Ollama no están confirmados para este artefacto.
+- Latencia y throughput: no disponibles; la decodificación especulativa DFlash está diseñada para mejorar la latencia, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables. El nombre del modelo base sugiere que pertenece a la familia Nemotron de NVIDIA, pero no hay datos de otros modelos de esa serie en la informacion proporcionada. Por tanto, no es posible realizar una comparativa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Este artefacto (Nemotron 3.5 Lightning 30B A3B NVFP4 DFlash GGUF) | 30B totales / 3B activos (según checkpoint base) | no disponible | OpenMDW 1.1 | GGUF NVFP4 | Conversión de magnitudedev con DFlash |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash | 30B totales / 3B activos | no disponible | no disponible en esta ficha | safetensors NVFP4 | Checkpoint original de NVIDIA |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para comparar |
 
 ## Limitaciones y advertencias
 
-- La licencia `openmdw-1.1` no es una licencia de codigo abierto estandar; es necesario revisar sus terminos en [https://openmdw.ai/license/1-1/](https://openmdw.ai/license/1-1/) antes de cualquier uso comercial.
-- La cuantizacion NVFP4 puede introducir perdida de precision en comparacion con los pesos originales, lo que podria afectar a la calidad de las respuestas en tareas complejas.
-- La discrepancia entre el numero de parametros indicado en el nombre (30B) y el dato real de safetensors (833M) es preocupante y podria indicar un error en la conversion o una documentacion incorrecta.
-- No hay informacion sobre sesgos, alucinaciones o limitaciones de contexto o idioma.
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un artefacto reciente o poco probado.
+- Es un artefacto derivado: cualquier limitación del modelo base (sesgos, alucinaciones, cobertura idiomática) se hereda sin cambios.
+- La cuantización NVFP4 puede introducir degradación de calidad frente a pesos de mayor precisión; no se publican evaluaciones comparativas en este repo.
+- El formato NVFP4 no es universal: requiere soporte específico de hardware y software NVIDIA, lo que limita la portabilidad frente a GGUF estándar de 4 u 8 bits.
+- El bloque DFlash depende de metadatos concretos (`dflash.attention.causal = false`, `dflash.sample_from_anchor = false`); un runtime que no los interprete correctamente puede producir salidas incorrectas.
+- La licencia OpenMDW 1.1 debe revisarse antes de uso comercial; la model card la etiqueta como `license: other`.
+- No se documentan idiomas soportados, contexto máximo ni política de uso aceptable en la información disponible.
+- El número de parámetros reportado por el tensor safetensors del repo (833 millones) no coincide con los 30B del nombre del checkpoint base; conviene verificar el contenido real del artefacto antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: [https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF](https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF)
-- Modelo base (NVIDIA): [https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash)
-- Framework Magnitude: [https://github.com/magnitudedev/magnitude](https://github.com/magnitudedev/magnitude)
-- Licencia openmdw-1.1: [https://openmdw.ai/license/1-1/](https://openmdw.ai/license/1-1/)
+- Repositorio Hugging Face: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash
+- Revisión del checkpoint base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash/tree/7fc1f1ff4b82b917efbd0710df0872c2bb89caa5
+- Motor Magnitude: https://github.com/magnitudedev/magnitude
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

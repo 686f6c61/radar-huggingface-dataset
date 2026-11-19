@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "inference-optimization/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-compressed-tensors",
+  "slug": "inference-optimization-nvidia-nemotron-3-5-super-vl-120b-a12b-nvfp4-compressed-tensors",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-compressed-tensors",
+  "created_at": "2026-11-18T22:41:36.000Z",
+  "updated_at": "2026-11-18T22:47:27.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h_omni",
+    "image-text-to-text",
+    "nvidia",
+    "nemotron-3.5",
+    "nvfp4",
+    "fp4",
+    "compressed-tensors",
+    "modelopt",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123044109834,
+  "parameters_human": "123.04B",
+  "storage_bytes": 75050395011,
+  "storage_human": "75.1 GB",
+  "context_length": null,
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Card | nemotron-3.5-super-vl-120b-a12b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-super-vl-120b-a12b/modelcard",
+      "snippet": "Description NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 is the quantized release of NVIDIA Nemotron 3.5 Super VL, a vision-language model for reasoning, coding, tool use, document understanding, and video understanding. It uses NVFP4 quantization to reduce memory requirements, with quantization-aware distillation from the BF16 model."
+    },
+    {
+      "title": "Nemotron-3.5-Super-VL-120B-A12B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/nemotron-3.5-super-vl-120b-a12b/",
+      "snippet": "NVIDIA Nemotron 3.5 Super VL 120B-A12B NIM: vision-language model for image, video, and text input, served with vLLM on Blackwell, Hopper, and Ampere GPUs."
+    }
+  ]
+}

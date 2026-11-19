@@ -2,120 +2,114 @@
 
 ## Resumen
 
-Qwen3.8-Flash-CIRU-STRIX-Orca es un paquete de pesos de investigacion derivado de Qwen/Qwen3.8-Flash-Next, publicado por el usuario jcbtc (OrcaRouter) y empaquetado especificamente para inferencia local en hardware AMD Strix Halo mediante el runtime propietario CIRU v3. Se trata de una cuantizacion GGUF en precision mixta que conserva la tabla PLE externa y los bancos de expertos calibrados en Q4_1 del release CIRU original, e incorpora una cabeza MTP (multi-token prediction) en Q8 que habilita decodificacion especulativa.
+Qwen3.8-Flash-CIRU-STRIX-Orca es una conversión en formato GGUF compacto del checkpoint de investigación Qwen3.8-Flash-Next de Qwen, publicada por el usuario jcbtc bajo el paraguas de OrcaRouter. El modelo está específicamente optimizado para ejecutarse en hardware AMD Strix Halo (iGPU gfx1151) mediante el runtime propietario CIRU v5, y combina pesos de un modelo base no censurado (orcarouter/Qwen3.8-Flash-Next-Uncensored) con el modelo original de Qwen. Se distribuye como un modelo de mezcla de expertos (MoE) con 125.875.774.336 parámetros totales y capacidades multimodales de imagen-texto.
 
-El modelo esta pensado para investigacion en interpretabilidad, mecanismos de rechazo (refusal), seguridad defensiva, red-teaming y robustez. Soporta una longitud de contexto configurada de 262.144 tokens y vision opcional mediante un proyector incluido que se activa con el flag `--vision`.
+La relevancia de esta ficha radica en que no se trata de un modelo estándar de llama.cpp: requiere un runtime específico (CIRU) que no es compatible con llama.cpp estándar ni con la inferencia alojada en Hugging Face. Incorpora decodificación especulativa mediante multi-token prediction (MTP) con un draft Q8, ficheros de embedding de tokens paginados (PLE) y un proyector visual específico. La versión v6.0.0 del runtime corrige la entrada de imágenes en prompts largos y mejora el rendimiento multi-slot, con velocidades medidas de hasta 49,9 tok/s en cuatro slots concurrentes sobre una Radeon 8060S.
 
-Su relevancia actual es doble: por un lado, demuestra que un modelo de mezcla de expertos de gran tamano puede ejecutarse en un equipo de escritorio con memoria unificada de 128 GB; por otro, es un paquete fuertemente acoplado a su runtime, ya que ni llama.cpp estandar ni la inferencia alojada en Hugging Face pueden ejecutarlo.
+El modelo está pensado para despliegues locales en equipos con APU Strix Halo, con una ventana de contexto de 262.144 tokens por defecto y soporte de visión. Su licencia es qwen-community-1.0, lo que impone restricciones que deben revisarse antes de cualquier uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), cabeza MTP para decodificacion especulativa y proyector de vision opcional |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (arquitectura MoE confirmada por etiquetas, sin cifra publicada) |
-| Longitud de contexto | 262.144 tokens (configuracion del servidor CIRU v3) |
-| Tipos de cuantizacion | GGUF en precision mixta: bancos de expertos Q4_1 calibrados, cabeza MTP en Q8, KV cache objetivo en F16 y KV del borrador en Q8 |
+| Arquitectura | Mezcla de expertos (MoE) transformer con decodificación especulativa MTP y proyector visual |
+| Parámetros totales | 125.875.774.336 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (por defecto, un slot) |
+| Tipos de cuantización | IU4 (formato compacto de expertos propietario); draft MTP en Q8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (campo `license: other`, `license_name: qwen-community-1.0`) |
-| Formato de pesos | GGUF (llama.cpp), con tabla PLE externa y ficheros PLE auxiliares |
-| Tamano del paquete | 135.962.881.519 bytes (126,625 GiB) el modelo; 904.004.320 bytes (0,842 GiB) el proyector de vision |
-| Tamano del repositorio | 136,9 GB |
-| Modelo base | Qwen/Qwen3.8-Flash-Next; orcarouter/Qwen3.8-Flash-Next-Uncensored |
+| Licencia | qwen-community-1.0 (license: other) |
+| Formato de pesos | GGUF (requiere runtime CIRU; no compatible con llama.cpp estándar) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no documenta el proceso de entrenamiento del modelo base Qwen3.8-Flash-Next (numero de tokens, composicion del dataset, uso de RLHF o DPO). Lo que si se detalla es la arquitectura de despliegue de esta variante: se trata de un transformer con capas de mezcla de expertos, empaquetado en precision mixta y con una tabla PLE (probablemente capa de embedding externa) mantenida fuera del cuerpo principal del GGUF. Los bancos de expertos van cuantizados a Q4_1 con calibracion, mientras que la cabeza MTP conserva Q8, lo que permite usarla como modelo borrador para decodificacion especulativa.
+La información disponible no detalla la arquitectura interna más allá de que se trata de un modelo de mezcla de expertos (MoE) con capacidades de visión (pipeline image-text-to-text) y decodificación especulativa mediante multi-token prediction (MTP). El modelo base es Qwen3.8-Flash-Next de Qwen, del cual se ha derivado una versión no censurada (orcarouter/Qwen3.8-Flash-Next-Uncensored) que sirve como base para esta conversión. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-La innovacion principal del paquete es la integracion de MTP con decodificacion especulativa a una profundidad maxima de 6, con lote y microlote de 1024 y una sola ranura de servicio. El modelo se distribuye tambien en una variante "Orca" derivada de OrcaRouter/Qwen3.8-Flash-Next-Uncensored, cuyo comportamiento de rechazo es marcadamente distinto al del modelo base; la propia model card advierte que esto es material de investigacion sobre mecanismos de refusal y no una certificacion de seguridad.
+La innovación técnica principal de esta distribución es el formato compacto de expertos (IU4) diseñado para el runtime CIRU v5, que permite ejecutar un modelo de 125.875 millones de parámetros en hardware AMD Strix Halo. El sistema incluye un draft MTP en Q8 para decodificación especulativa, ficheros de embedding de tokens paginados (PLE) que deben residir en almacenamiento local rápido, y un proyector visual específico. El runtime v6.0.0 introduce mejoras en la gestión de imágenes en prompts largos, serving multi-slot con pooling de slots y caché de prompts en disco opcional. No se han publicado detalles sobre la arquitectura de atención ni sobre innovaciones como atención lineal.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general en ingles, con thinking mode activable (los benchmarks de HermesAgent lo usan con pensamiento activado; el resto de pruebas, con pensamiento desactivado).
-- Generacion de codigo: supera las 20 tareas de HumanEval (IDs 0-19) tanto en los tests base como en los extendidos de EvalPlus v0.1.10, y obtiene 8/8 en las comprobaciones de salud de codigo con historial largo.
-- Matematicas: resuelve 8/8 tareas de GSM8K en el panel corto y 2/2 en el panel con historial compartido de aproximadamente 63.000 tokens.
-- Seguimiento de instrucciones: 6/8 en IFEval en el panel corto, con mejora respecto a la variante no-Orca (5/8).
-- Flujos con herramientas y agentes: se evalua con escenarios HermesAgent de al menos 32 turnos, con contexto restante completo y un limite de 1200 segundos por tarea.
-- Capacidad de vision opcional: el pipeline declarado es image-text-to-text y el proyector de 0,842 GiB se carga con el flag `--vision` en el lanzador.
-- Contexto largo: ventana de servicio de 262.144 tokens, con pruebas especificas que reutilizan un archivo compartido de unos 63.000 tokens y un limite efectivo de tarea de 65.536 tokens.
-- Decodificacion especulativa mediante cabeza MTP en Q8, con profundidad maxima 6.
+- Generación de texto conversacional multi-turno con ventana de contexto de 262.144 tokens.
+- Procesamiento de imágenes y texto (image-text-to-text) mediante proyector visual específico.
+- Razonamiento multi-paso y soporte de tool calling / function calling, con definiciones de herramientas que pueden convivir con entradas de imagen en prompts largos (corregido en v6.0.0).
+- Decodificación especulativa mediante MTP con draft Q8 para acelerar la generación.
+- Serving multi-slot opcional (hasta 4 slots pooled) con un pool de contexto compartido de 262.144 tokens.
+- Caché de prompts en disco opcional para conversaciones evacuadas de RAM.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking: mencionado en las mediciones de rendimiento (thinking on), aunque no se detallan sus características.
 
 ## Casos de uso
 
-- Investigacion sobre mecanismos de rechazo: el paquete incluye una variante sin censura y otra de referencia, lo que permite comparar en la misma arquitectura y cuantizacion como se comporta el modelo ante peticiones que el base rechazaria, con trazabilidad del protocolo de evaluacion.
-- Red-teaming y seguridad defensiva: los escenarios HermesAgent de mas de 32 turnos y el hallazgo de permiso documentado (reintento de despliegue tras un "User denied. Do NOT retry.") convierten al modelo en un banco de pruebas para detectar fallos de frontera de permisos en agentes.
-- Analisis de documentacion larga en local: con 262.144 tokens de contexto y un limite efectivo de 65.536 en las pruebas, permite resumir y consultar repositorios completos o expedientes extensos sin enviar datos a servicios externos.
-- Asistente de programacion en estacion de trabajo Strix Halo: con 53,62 tok/s de decodificacion y 227,19 tok/s de preprocesado en HumanEval IDs 1-10, es viable como copiloto local para generacion y revision de codigo sobre un AMD Ryzen AI Max+ 395.
-- Procesamiento de documentos con vision: activando `--vision` se puede usar el pipeline image-text-to-text para extraer informacion de capturas, diagramas o formularios escaneados junto al texto.
-- Evaluacion comparativa de cuantizaciones: al mantener la misma disposicion de precision mixta que el release CIRU original, sirve para medir el impacto de los bancos Q4_1 y la cabeza MTP Q8 frente a otras configuraciones.
-- Automatizacion de tareas multi-paso con herramientas: los resultados de HermesAgent (puntuacion nativa media del 100% en la segunda ronda) apuntan a su uso en pipelines de agentes que encadenan llamadas a funciones con contexto persistente.
+- Asistente conversacional local con contexto largo: el modelo puede mantener conversaciones de hasta 262.144 tokens en un solo slot, adecuado para análisis de documentos extensos o historiales de chat prolongados en equipos Strix Halo.
+- Análisis de imágenes con herramientas: con la corrección de v6.0.0, el modelo puede procesar fotografías junto con hasta 32 definiciones de herramientas en prompts de más de 6.000 tokens, útil para asistentes que combinan visión y function calling.
+- Serving multi-usuario en una APU: con PARALLEL_SLOTS=2 o 4, se pueden atender varias conversaciones concurrentes compartiendo un pool de contexto, con rendimiento medido de 42-50 tok/s agregados en cuatro slots sobre Radeon 8060S.
+- Automatización de atención al cliente con contexto persistente: la caché de prompts en disco permite retomar conversaciones evacuadas de 65.000-92.000 tokens releyendo solo 55 tokens y en unos 3 segundos.
+- Procesamiento de documentación técnica con imágenes: el pipeline image-text-to-text permite extraer información de capturas, diagramas o figuras dentro de documentos largos.
+- Investigación sobre modelos no censurados: al derivar de Qwen3.8-Flash-Next-Uncensored, sirve para estudiar comportamiento de modelos sin filtrado en entornos controlados.
+- Evaluación de decodificación especulativa: el MTP con draft Q8 permite medir ganancias de throughput en hardware AMD, con perfiles de 35,5 tok/s en single-slot a 20.000 tokens.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos por el autor en un AMD Ryzen AI Max+ 395 (gfx1151), 128 GB de memoria compartida, NixOS, ROCm 10 y CIRU v3, con una sola carga de modelo a la vez.
+Los datos disponibles son mediciones de runtime, no benchmarks de calidad de modelo. Se presentan a continuación:
 
-| Prueba | Orca | No-Orca v3 |
+| Caso (cuatro slots pooled, MTP3, thinking on) | v5.5.8 | v6.0.0 |
 |---|---:|---:|
-| HumanEval 0-19 base / extendido | 20/20 / 20/20 | 20/20 / 20/20 |
-| Panel corto: ifeval | 6/8 | 5/8 |
-| Panel corto: gsm8k | 8/8 | 8/8 |
-| Panel corto: humaneval | 5/6 | 5/6 |
-| Historial compartido ~63K: gsm8k | 2/2 | 2/2 |
-| Historial compartido ~63K: humaneval | 3/4 | 2/4 |
-| Historial compartido ~63K: ifeval | 2/2 | 2/2 |
-| Salud de codigo corta 0-9: base / extendida | 10/10 / 10/10 | 10/10 / 10/10 |
-| Salud de codigo ~63K 0-7: base / extendida | 8/8 / 8/8 | 8/8 / 8/8 |
-| Hermes seis seleccionados, hermes-1: puntuacion nativa media | 100,00% | 100,00% |
-| Hermes seis seleccionados, hermes-2: puntuacion nativa media | 100,00% | 91,67% |
+| 4 slots generando, ~240k tokens pooled, total | 21,4 tok/s | 49,9 tok/s |
+| 4 slots generando, ~328k tokens pooled, total | 11,3–12,1 tok/s | 42,0–42,6 tok/s |
+| 2 slots generando, ~328k tokens pooled, total | 11,5 tok/s | 37,3 tok/s |
+| 1 slot generando, ~328k tokens pooled | 12,6 tok/s | 24,5 tok/s |
 
-Panel de velocidad (HumanEval IDs 1-10, tres repeticiones, sampler identico, cache de prompt en frio por peticion): 53,62 tok/s de decodificacion agrupados sobre 30 peticiones (pasadas individuales de 51,09, 54,36 y 55,61 tok/s), 227,19 tok/s de prompt y 586 ms de latencia mediana hasta el primer fragmento.
+Single-slot a 20.000 tokens: 34,9 tok/s en v5.5.8 y 35,5 tok/s en v6.0.0. Multi-slot con segundo slot idle: 47,00 a 42,20 tok/s (-10,21%) en la prueba IU4.
 
-El autor advierte que el subconjunto seleccionado por desacuerdo es un diagnostico, no una clasificacion representativa de benchmarks, y que estos resultados no constituyen una certificacion de ciberseguridad ni de seguridad.
+Prueba de imagen con tool definitions (4 fotografías, un slot, temperatura 0):
+
+| Tool definitions | Prompt tokens | v5.0.1 | v5.5.0 | v5.5.8 | v6.0.0 |
+|---:|---:|---:|---:|---:|---:|
+| 0 | 1.110 | 4/4 | 4/4 | 4/4 | 12/12 |
+| 4 | 1.853 | 4/4 | 4/4 | 4/4 | 12/12 |
+| 8 | 2.509 | 4/4 | 0/4 | 0/4 | 12/12 |
+| 16 | 3.821 | 4/4 | 0/4 | 0/4 | 12/12 |
+| 32 | 6.415 | 2/4 | 0/4 | 0/4 | 6/12 |
+
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria: requiere un sistema Strix Halo con 128 GB de memoria compartida. El modelo ensamblado junto al proyector ocupa 127,467 GiB, por lo que no cabe en GPUs de consumo con menos VRAM.
-- Almacenamiento: hay que reservar al menos 220 GiB para las partes de descarga, el ensamblaje y el runtime con su SDK.
-- GPU: validado en AMD Ryzen AI Max+ 395 con iGPU gfx1151. No se documenta soporte para A100, H100, RTX 4090 ni otras GPU NVIDIA.
-- Configuracion de inferencia recomendada: KV objetivo en F16, KV del borrador en Q8, profundidad maxima MTP 6, lote y microlote 1024, una ranura y contexto de 262.144.
-- Software: runtime CIRU v3 (rama v3.0.0 del repositorio ciru-ai/Qwen3.8-Flash-CIRU-STRIX-IU4), que instala un SDK privado de ROCm 10. Es necesario que el driver AMD exponga `/dev/kfd` y el nodo de render.
-- Opciones de despliegue: exclusivamente el runtime CIRU v3 junto con el GGUF objetivo y los tres ficheros PLE. Ni llama.cpp estandar ni la inferencia alojada en Hugging Face pueden ejecutar este paquete.
-- Rendimiento observado: 53,62 tok/s de decodificacion y 586 ms de latencia mediana del primer fragmento en la configuracion de referencia.
+- Hardware objetivo: AMD Strix Halo (iGPU gfx1151), probado en Radeon 8060S.
+- VRAM/RAM: el modelo completo ocupa 262,1 GB en el repositorio; el formato IU4 compacto reduce el peso, pero no se especifica el tamaño exacto en memoria. Se requiere almacenamiento local rápido para los ficheros PLE.
+- No cabe en GPUs de consumo convencionales (RTX 4090, etc.) en formato completo; está diseñado para APUs con memoria unificada.
+- Runtime obligatorio: CIRU v5/v6.0.0, compilado desde fuente según INSTALL.md. No funciona con llama.cpp estándar ni con inferencia alojada en Hugging Face.
+- Opciones de despliegue: servidor CIRU con scripts run-server.sh; variables como PARALLEL_SLOTS, PROMPT_CACHE_DISK_MIB, MODEL_VARIANT=Orca, MODEL_RELEASE=5.0.
+- Throughput medido: 35,5 tok/s single-slot a 20.000 tokens; 49,9 tok/s agregados en cuatro slots a ~240k tokens pooled (Radeon 8060S, IU4, MTP3, thinking on).
+- Memoria: en replay de 226.712 tokens con dos imágenes, RAM mínima disponible mejoró de 7,788 a 13,162 GiB con microbatch 8.192.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato / runtime | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-CIRU-STRIX-Orca | no disponible (MoE) | 262.144 tokens | 20/20 HumanEval, 8/8 GSM8K, 100% Hermes ronda 1 | qwen-community-1.0 | GGUF en Hugging Face, requiere runtime CIRU v3 |
-| Qwen3.8-Flash-CIRU-STRIX non-Orca v3 | misma arquitectura empaquetada | 262.144 tokens | 20/20 HumanEval, 5/8 IFEval, 91,67% Hermes ronda 2 | qwen-community-1.0 | mismo repositorio de runtime, variante de referencia |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | no disponible | no disponible | modelo base del que deriva la variante Orca |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | qwen-community-1.0 (heredada) | pesos originales en Hugging Face |
+| Qwen3.8-Flash-CIRU-STRIX-Orca | 125.875.774.336 | 262.144 | qwen-community-1.0 | GGUF + CIRU | Hugging Face (2.887 descargas) |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 
-No se dispone de datos de benchmarks ni especificaciones publicadas para los modelos base, por lo que la comparacion se limita a las dos variantes del paquete CIRU medidas por el propio autor.
+No se dispone de datos de benchmarks de calidad para establecer una comparación de rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Acoplamiento al runtime: el paquete solo funciona con CIRU v3, el GGUF objetivo y los tres ficheros PLE. Sin ellos no arranca en llama.cpp estandar ni en la inferencia alojada de Hugging Face.
-- Fallo de frontera de permisos documentado: en la segunda traza HA-19 el modelo reintento un despliegue con un comando distinto despues de recibir un "User denied. Do NOT retry.". El evaluador nativo no penalizo este comportamiento, de modo que la puntuacion del 100% no debe interpretarse como cumplimiento de permisos o de seguridad.
-- Variante sin censura: la rama Orca deriva de un modelo uncensored, por lo que la ausencia de rechazos observada en pruebas de terceros no es un indicador de calidad, sino un riesgo a gestionar en cualquier despliegue.
-- Alucinacion: no se han publicado estudios especificos de tasas de alucinacion en la informacion disponible.
-- Idiomas: no se declara la lista de idiomas soportados; las pruebas del autor estan en ingles.
-- Sesgos: no disponibles.
-- Contexto util real menor que el configurado: las pruebas de historial largo usan un limite efectivo de 65.536 tokens dentro del servidor de 262.144, por lo que el rendimiento mas alla de esa frontera no esta caracterizado.
-- Licencia: qwen-community-1.0, registrada como `license: other`. Es imprescindible revisar el texto completo de la licencia antes de cualquier uso comercial o redistribucion.
-- Caracter de investigacion: el propio autor enmarca el paquete en interpretabilidad, refusal, seguridad defensiva, red-teaming y robustez, y descarta que los resultados constituyan una certificacion.
-- Rendimiento no replicado de forma independiente: todas las cifras proceden del autor y de una unica configuracion hardware.
-- Espacio en disco: el proceso de descarga y ensamblaje necesita unos 220 GiB temporales; el script auxiliar elimina las partes ya consumidas para recuperar espacio.
-- Repositorio con 0 descargas registradas y 13 likes en el momento de la consulta, lo que limita la validacion por parte de la comunidad.
+- Requiere el runtime CIRU específico; no es compatible con llama.cpp estándar ni con inferencia alojada en Hugging Face, lo que limita su portabilidad.
+- Los ficheros PLE deben residir en almacenamiento local rápido; su ausencia o lentitud degrada el rendimiento.
+- El modo multi-slot tiene penalización de rendimiento: desactiva la shortlist del draft-head MTP single-slot y reduce el throughput de una petición activa en un 10,21% cuando el segundo slot está idle.
+- En prompts con 32 definiciones de herramientas, 6 de 12 pruebas de imagen fallaron (el modelo selecciona una herramienta de fichero en lugar de describir la imagen).
+- Un request aislado en un pool multi-slot es más lento que el perfil single-slot.
+- Licencia qwen-community-1.0: deben revisarse las restricciones de uso comercial en el fichero LICENSE antes de desplegar en producción.
+- El modelo deriva de una versión no censurada (Uncensored), lo que implica riesgo de generar contenido sin filtrado; requiere evaluación y salvaguardas propias.
+- No se han publicado datos sobre sesgos, tasas de alucinación ni cobertura de idiomas.
+- No se han ejecutado benchmarks amplios de calidad del modelo para la versión v6.0.0.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-STRIX-Orca
-- Runtime CIRU v3 (rama v3.0.0): https://github.com/ciru-ai/Qwen3.8-Flash-CIRU-STRIX-IU4/tree/v3.0.0
-- Informe detallado de resultados y protocolo: benchmarks/REPORT.md (dentro del repositorio del modelo)
-- Resultados estructurados: benchmarks/results.json (dentro del repositorio del modelo)
-- Revision de la traza de permisos: benchmarks/semantic-review.json (dentro del repositorio del modelo)
+- Hugging Face: https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-STRIX-Orca
+- Discusión sobre el bug de imagen: https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-STRIX-Orca/discussions/5
+- Notas de versión v6.0.0: https://github.com/ciru-ai/Qwen3.8-Flash-CIRU-STRIX-IU4/blob/v6.0.0/docs/qualification/v6.0.0/RELEASE-NOTES.md
+- Guía multi-slot: CONCURRENCY.md (en el repositorio del runtime)
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Modelo base sin censura: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
-- Hilo de discusion en r/StrixHalo: https://www.reddit.com/r/StrixHalo/comments/1wd370x/qwen38flashcirustrixorca_is_a_great_daily_driver/
+- Modelo base no censurado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored

@@ -2,126 +2,116 @@
 
 ## Resumen
 
-Maya 2 Native es un modelo de síntesis de voz (text-to-speech) con generación en streaming desarrollado por Maya Research y publicado con pesos abiertos bajo licencia Apache-2.0. Genera audio mono a 24 kHz en 12 idiomas (11 lenguas índicas más inglés), incorpora 20 voces integradas y permite clonación de voz zero-shot a partir de 3-10 segundos de audio de referencia, incluyendo clonación cruzada entre idiomas (una referencia en hindi puede producir habla en tamil).
+Maya 2 Native es un modelo de síntesis de voz (text-to-speech) multilingüe desarrollado por Maya Research, orientado a 11 lenguas de la India y al inglés. Genera audio mono a 24 kHz, permite streaming en tramas de 80 ms y ofrece 20 voces integradas junto con clonación de voz zero-shot y síntesis cruzada entre idiomas. Los pesos se publican bajo licencia Apache-2.0, lo que facilita su despliegue autoalojado en infraestructura propia.
 
-El modelo tiene 2.502.398.656 parámetros (unos 2,50 B) y se construye sobre Qwen/Qwen3-1.7B-Base como modelo base, con aproximadamente 5,0 GB de pesos en BF16. Se distribuye en safetensors a través de la librería `maya3` y expone tres interfaces: API de Python, endpoint de voz compatible con OpenAI y streaming por WebSocket, con soporte de batching continuo y CUDA graphs para generación concurrente.
+El modelo parte de Qwen/Qwen3-1.7B-Base como base y suma componentes específicos de audio hasta alcanzar 2.502.398.656 parámetros únicos (aproximadamente 5,0 GB en BF16). La librería de inferencia se distribuye como `maya3`, manteniendo los identificadores `Maya3TTS` y `maya3_config.json` por compatibilidad, y expone una API en Python, un endpoint de voz compatible con OpenAI y streaming por WebSocket con batching continuo y normalización de texto (números, fechas, divisas).
 
-Su relevancia actual es doble. Por un lado, cubre lenguas índicas con muy poca oferta de TTS open source de calidad. Por otro, compite directamente con servicios comerciales: en el leaderboard VoiceArena de hindi (categoría All, solo modelos en tiempo real) ocupa la segunda posición con un Elo Bradley-Terry de 1047 ±11, por detrás de Cartesia Sonic-3.6 (1094) y por delante de Sonic-3.5, Lightning 3.1 Pro de Smallest AI y Bulbul-V3 de Sarvam AI.
+Su relevancia actual radica en cubrir un hueco poco atendido: TTS de calidad para lenguas indias con licencia permisiva y capacidad de autoalojamiento. En el leaderboard VoiceArena de hindi (vista solo tiempo real, consultado el 3 de noviembre de 2026) ocupa la posición 2 con un Elo Bradley-Terry de 1047 ±11 sobre 2268 muestras, por detrás de Cartesia Sonic-3.6 (1094) y por delante de Cartesia Sonic-3.5 (1035) y Smallest AI Lightning 3.1 Pro (1024).
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No detallada en la model card. Modelo base Qwen/Qwen3-1.7B-Base (transformer) con módulo de generación de audio; el tag `mimi` apunta al códec neuronal Mimi, sin confirmación explícita en la documentación |
-| Parámetros totales | 2.502.398.656 (2,50 B) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible; solo se publican pesos BF16 (aproximadamente 5,0 GB) |
-| Idiomas soportados | 12: assamés, bengalí, inglés, guyaratí, hindi, canarés, malabar, maratí, oriya, panyabí, tamil y telugu |
-| Licencia | Apache-2.0 (la model card remite a la sección de licencias de componentes) |
+| Arquitectura | no disponible (modelo TTS construido sobre Qwen/Qwen3-1.7B-Base; componentes de audio con codec Mimi según etiquetas) |
+| Parámetros totales | 2.502.398.656 (2,50B únicos) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (pesos publicados en BF16, ~5,0 GB) |
+| Idiomas soportados | asamés (as), bengalí (bn), inglés (en), guyaratí (gu), hindi (hi), canarés (kn), malayalam (ml), marati (mr), oriya (or), panyabí (pa), tamil (ta), telugu (te) |
+| Licencia | Apache-2.0 (ver licencias de componentes en la model card) |
 | Formato de pesos | safetensors |
-| Frecuencia de muestreo | 24 kHz, mono |
-| Streaming | Tramas de audio de 80 ms |
+| Frecuencia de muestreo de audio | 24 kHz, mono |
+| Tramas de streaming | 80 ms |
 | Voces integradas | 20 |
-| Clonación de voz | Zero-shot, con 3-10 s de audio de referencia; también cruzada entre idiomas |
-| Interfaces | API de Python, endpoint de voz compatible con OpenAI, WebSocket |
-| Librería | `maya3` |
-| Tamaño del repositorio | 5,1 GB |
-| Versión del checkpoint | 1.0 (25 de octubre de 2026) |
+| Fecha de checkpoint | 1.0, 25 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-La model card no publica el detalle de la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de ajuste con RLHF o DPO. Lo que sí se documenta es que el modelo parte de Qwen/Qwen3-1.7B-Base, un transformer de 1,7 B parámetros, y que el conjunto resultante alcanza 2,50 B parámetros, es decir, en torno a 800 M parámetros adicionales correspondientes al módulo de audio. El tag `mimi` del repositorio sugiere el uso del códec neuronal Mimi para la tokenización y reconstrucción del audio, aunque esta correspondencia no se confirma de forma explícita en el texto de la model card.
+La información disponible no detalla la arquitectura interna más allá de que el modelo se construye como un fine-tune de Qwen/Qwen3-1.7B-Base (un transformer decoder de la familia Qwen3) y de que emplea Mimi, el codec neuronal de audio de Kyutai, tal como refleja la etiqueta `mimi`. El pipeline declarado es `text-to-speech` y la salida es audio mono a 24 kHz con streaming en tramas de 80 ms, lo que implica un decodificador de audio incremental. No se especifican en la model card el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO o ajuste por preferencias.
 
-En el plano de la inferencia, las innovaciones documentadas son de despliegue más que de entrenamiento: decodificación en streaming con tramas de 80 ms, batching continuo y CUDA graphs para sostener generación concurrente con baja latencia, y un endpoint compatible con la API de voz de OpenAI que facilita la sustitución de proveedores comerciales. La model card tampoco detalla la estrategia de normalización de texto más allá de mencionar que existe y que se puede activar; los ejemplos publicados se generaron con normalización activada y decodificación por muestreo.
+Sí se documentan capacidades de ingeniería del motor de inferencia: batching continuo, normalización de texto para números, fechas, divisas y otras formas escritas, protocolo WebSocket con contextos de petición separados y cancelación, y un endpoint de voz compatible con OpenAI. La model card menciona además clonación de voz zero-shot y síntesis cruzada entre idiomas, aunque advierte que la calidad de acento e identidad varía según la combinación idioma-voz y remite a la tabla de cobertura de voces.
 
 ## Capacidades
 
-- Síntesis de voz en 12 idiomas: assamés, bengalí, inglés, guyaratí, hindi, canarés, malabar, maratí, oriya, panyabí, tamil y telugu.
-- Generación de audio a 24 kHz mono con streaming en tramas de 80 ms, apta para agentes de voz conversacionales.
-- 20 voces integradas, identificadas por nombre en los ejemplos de la model card (por ejemplo, Ritvik en hindi o Nakul en assamés).
-- Clonación de voz zero-shot con 3-10 segundos de audio de referencia.
-- Clonación de voz cruzada entre idiomas: la referencia puede estar en un idioma distinto al del texto de salida.
-- Normalización de texto configurable, relevante para números, importes y direcciones en contextos de atención al cliente.
-- Batching continuo y CUDA graphs para servir varias peticiones concurrentes.
-- Tres vías de integración: API de Python, endpoint compatible con OpenAI y streaming por WebSocket.
-- No se documentan capacidades de tool calling, razonamiento multi-paso, visión ni audio de entrada más allá del audio de referencia para clonación.
+- Síntesis de voz multilingüe en 12 idiomas: asamés, bengalí, inglés, guyaratí, hindi, canarés, malayalam, marati, oriya, panyabí, tamil y telugu.
+- Generación de audio a 24 kHz mono con streaming en tramas de 80 ms, apto para reproducción incremental.
+- 20 voces integradas seleccionables mediante la misma API.
+- Clonación de voz zero-shot a partir de una referencia permitida.
+- Clonación y síntesis cruzada entre idiomas (cross-lingual), manteniendo una identidad de voz a través de distintas lenguas.
+- Normalización de texto para números, fechas, divisas y otras formas escritas antes de la síntesis.
+- Interfaces de integración: API en Python, endpoint HTTP compatible con OpenAI y streaming por WebSocket.
+- Batching continuo en el servidor de inferencia para atender varias peticiones concurrentes.
+- Protocolo WebSocket con contextos de petición separados y cancelación, orientado a agentes de voz.
+- No se documentan capacidades de visión, audio de entrada, tool calling ni razonamiento multi-paso; el modelo es exclusivamente de texto a voz.
 
 ## Casos de uso
 
-- Atención al cliente automatizada en lenguas índicas: el modelo puede leer respuestas de un bot o de un IVR en hindi, bengalí o tamil con voces nativas, y la normalización de texto permite verbalizar correctamente números de cuenta, importes y direcciones postales, como se ve en el ejemplo hindi de la model card.
-- Agentes de voz en tiempo real: con streaming en tramas de 80 ms, batching continuo y WebSocket, encaja en pipelines de voz Conversational AI donde la latencia de la primera trama condiciona la naturalidad del turno.
-- Doblaje y localización cruzada: al permitir clonación cross-lingual, una única referencia de 3-10 segundos puede generar la misma voz en varios de los 12 idiomas, lo que simplifica doblar un curso o una campaña sin regrabar con locutores distintos.
-- Audiolibros y contenido editorial: lectura de textos largos en hindi, malabar o maratí con voces integradas y control de normalización para cifras y abreviaturas.
-- Accesibilidad: conversión de contenido web o de aplicaciones a voz para usuarios con discapacidad visual en idiomas con poca cobertura de voces sintéticas de calidad.
-- Sustitución de proveedor TTS comercial: el endpoint compatible con OpenAI permite migrar una integración existente cambiando la URL y las credenciales, manteniendo el mismo contrato de API.
-- Generación de datos de voz sintética: creación de corpus de audio en lenguas índicas para entrenar o evaluar sistemas ASR, con voces diversas y clonación controlada.
-- Interfaces de voz embebidas: al ser Apache-2.0 y con pesos abiertos, permite autohospedaje en infraestructura propia, requisito habitual en administraciones públicas y sectores regulados que no pueden enviar texto a una API externa.
+- Agentes de voz conversacionales: el modelo actúa como etapa de generación de habla tras un LLM y empieza a reproducir audio mientras sigue generando, gracias al streaming en tramas de 80 ms y al protocolo WebSocket con cancelación, lo que reduce la latencia percibida en diálogos multi-turno.
+- Sistemas IVR y atención telefónica automatizada: con un endpoint compatible con OpenAI y batching continuo, se puede desplegar en un servidor NVIDIA propio para responder en hindi, tamil, telugu u otras lenguas indias sin depender de proveedores externos.
+- Narración y audiolibros multilingües: las 20 voces integradas y la clonación cruzada permiten mantener una voz coherente a lo largo de un mismo contenido distribuido en varios idiomas.
+- Herramientas de accesibilidad: conversión de texto a voz para lectores de pantalla y aplicaciones de asistencia en lenguas indias con normalización previa de números, fechas y divisas, lo que evita lecturas erróneas de cifras y formatos.
+- Locución para contenidos educativos y formación: generación por lotes de pistas de audio en varias lenguas a partir de un mismo guion, usando el batching continuo del motor para procesar grandes volúmenes.
+- Integración en pipelines de agentes: el modelo se puede encadenar detrás de un orquestador que prepare la respuesta textual y delegue la síntesis en Maya 2 Native mediante la API de Python o el endpoint HTTP.
+- Prototipado de asistentes de voz autoalojados: al publicarse los pesos en safetensors bajo Apache-2.0, equipos de investigación pueden ejecutar el checkpoint en su propia GPU y evaluar variantes de voz y de idioma sin restricciones de uso comercial.
 
 ## Benchmarks y rendimiento
 
-El único benchmark publicado en la información disponible es el leaderboard de hindi de VoiceArena (filtros: hindi, todas las categorías, solo modelos en tiempo real), consultado el 27 de octubre de 2026. La métrica es Elo Bradley-Terry con intervalos de confianza del 95 %.
+Los únicos datos publicados en la información disponible corresponden al leaderboard VoiceArena de hindi, con el filtro Hindi / All / Real-time only, consultado el 3 de noviembre de 2026. La métrica es Elo Bradley-Terry con intervalos de confianza del 95 %.
 
-| Puesto | Creador | Modelo | Elo Bradley-Terry | IC 95 % | Muestras |
+| Puesto | Creador | Modelo | Elo | IC 95 % | Muestras |
 |---|---|---|---:|---:|---:|
 | 1 | Cartesia | Sonic-3.6 | 1094 | ±13 | 1289 |
-| 2 (2-4) | Maya Research | Maya-2-Native | 1047 | ±11 | 2268 |
-| 3 (2-5) | Cartesia | Sonic-3.5 | 1035 | ±12 | 1802 |
-| 4 (2-5) | Smallest AI | Lightning 3.1 Pro | 1024 | ±12 | 1870 |
-| 5 (3-5) | Murf AI | Falcon 2 | 1021 | ±14 | 1352 |
-| 6 (6-7) | Cartesia | Sonic-3 | 961 | ±9 | 4256 |
-| 7 (6-7) | Sarvam AI | Bulbul-V3 | 957 | ±9 | 3882 |
+| 2 (2–4) | Maya Research | Maya-2-Native | 1047 | ±11 | 2268 |
+| 3 (2–5) | Cartesia | Sonic-3.5 | 1035 | ±12 | 1802 |
+| 4 (2–5) | Smallest AI | Lightning 3.1 Pro | 1024 | ±12 | 1870 |
+| 5 (3–5) | Murf AI | Falcon 2 | 1021 | ±14 | 1352 |
+| 6 (6–7) | Cartesia | Sonic-3 | 961 | ±9 | 4256 |
+| 7 (6–7) | Sarvam AI | Bulbul-V3 | 957 | ±9 | 3882 |
 | 8 | xAI | Grok TTS | 890 | ±9 | 3689 |
 | 9 | Microsoft Azure | Dragon HD Omni | 855 | ±9 | 3611 |
 
-Advertencias sobre estos datos: los intervalos de confianza de los puestos 2 a 5 se solapan, por lo que la posición exacta no es concluyente; VoiceArena fecha la entrada de Maya-2-Native en julio de 2026 y no identifica la revisión exacta del checkpoint evaluado; una captura de pantalla aportada por el autor muestra 2.º puesto con Elo 1049 ±10 y 2171 muestras, ligeramente distinta de la consulta en vivo. El resultado está acotado al leaderboard de hindi y no hay datos públicos equivalentes para el resto de idiomas.
-
-En la sección de evaluación, la model card indica que los doce clips de muestra se seleccionaron entre salidas con una tasa de error de caracteres (CER) inferior al 2 % según tres jueces ASR. No se publican cifras medias de CER o WER por idioma, ni resultados de benchmarks tipo MMLU, HumanEval o GSM8K, que por otra parte no aplican a un modelo TTS.
+La propia model card matiza que, en la vista de hindi con todos los modelos (no solo tiempo real) de la misma fecha, Maya-2-Native figura en el puesto 7 con intervalo 5–10, y que el puesto 2 corresponde específicamente a la vista de solo tiempo real. También señala que VoiceArena data la entrada de Maya-2-Native en julio de 2026 y no identifica una revisión exacta del checkpoint. Una captura adjunta muestra el puesto 2 con Elo 1049 ±10 y 2171 muestras, aunque sin fecha de captura. No se han publicado resultados de benchmarks objetivos (WER, MOS, SIM) en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos en BF16: aproximadamente 5,0 GB, coherente con los 2,50 B parámetros y el tamaño de repositorio de 5,1 GB.
-- VRAM estimada para inferencia en BF16: en torno a 6-8 GB contando pesos, caché de atención y búferes de audio. Es una estimación calculada a partir del número de parámetros, no un dato publicado.
-- No se han publicado pesos cuantizados. Cualquier cifra para int8 (aproximadamente 3-4 GB) o int4 (aproximadamente 2-3 GB) es una proyección teórica y requeriría convertir y validar el modelo, con riesgo de degradación en la calidad de voz.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo es holgado en una A100 o H100 para servir con concurrencia, y cabe en GPUs de consumo con 8-12 GB de VRAM o más para una sola secuencia en BF16.
-- Despliegue: la model card documenta API de Python, endpoint compatible con OpenAI y WebSocket, con batching continuo y CUDA graphs. No se mencionan vLLM, llama.cpp, Ollama ni TGI; al tratarse de un modelo TTS con códec de audio, estos motores de servicio de LLM no son aplicables sin trabajo adicional.
-- Latencia y throughput: no se publican cifras de RTF, latencia de primera trama ni peticiones por segundo. El único dato objetivo es que el streaming se emite en tramas de 80 ms de audio.
+- VRAM estimada para inferencia: los pesos en BF16 ocupan aproximadamente 5,0 GB, por lo que se necesita algo más de esa cifra para pesos más estados de activación y caché del decodificador de audio. No se publica una estimación oficial de VRAM total ni de cuantizaciones alternativas.
+- GPU recomendadas: la model card indica ejecutar los pesos en una GPU NVIDIA propia, sin especificar modelos concretos. No se detallan recomendaciones por modelo (A100, H100, RTX 4090, etc.).
+- GPU de consumo: no se confirma oficialmente que quepa en tarjetas de consumo; por el tamaño de pesos en BF16 (unos 5,0 GB) es plausible en GPUs con 8 GB o más, pero este dato no está verificado en la información disponible.
+- Opciones de despliegue: motor propio de la librería `maya3` con API en Python, endpoint HTTP compatible con OpenAI y streaming por WebSocket con batching continuo. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no se publican cifras de latencia ni de throughput. El único dato relacionado es el tamaño de trama de streaming de 80 ms de audio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Creador | Parámetros | Contexto | Elo hindi (VoiceArena) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Maya-2-Native | Maya Research | 2,50 B | No disponible | 1047 ±11 | Apache-2.0 | Pesos abiertos en Hugging Face |
-| Sonic-3.6 | Cartesia | No disponible | No disponible | 1094 ±13 | No disponible | Servicio comercial |
-| Sonic-3.5 | Cartesia | No disponible | No disponible | 1035 ±12 | No disponible | Servicio comercial |
-| Lightning 3.1 Pro | Smallest AI | No disponible | No disponible | 1024 ±12 | No disponible | Servicio comercial |
-| Bulbul-V3 | Sarvam AI | No disponible | No disponible | 957 ±9 | No disponible | Servicio comercial |
-| Dragon HD Omni | Microsoft Azure | No disponible | No disponible | 855 ±9 | No disponible | Servicio comercial |
+Comparación con alternativas de la misma categoría (TTS multilingüe para lenguas indias) según los datos disponibles en la información proporcionada. Los datos de licencia, parámetros y contexto de los competidores no están disponibles en esta información y se marcan como tales.
 
-La comparación significativa es de producto, no de arquitectura: Maya 2 Native es el único de la lista con pesos abiertos y licencia Apache-2.0, lo que permite autohospedaje y modificación, mientras que el resto se ofrece como API. A cambio, los modelos comerciales no publican parámetros ni detalles de arquitectura, de modo que no es posible comparar tamaño, contexto ni coste por token de audio con los datos disponibles. La única métrica común es el Elo de VoiceArena en hindi, donde la diferencia entre el primer y el segundo puesto (47 puntos) es superior a la suma de sus intervalos de confianza, pero la diferencia con los puestos 3 a 5 no es estadísticamente concluyente.
+| Modelo | Creador | Elo hindi (tiempo real) | Licencia | Pesos abiertos | Idiomas |
+|---|---|---:|---|---|---|
+| Maya-2-Native | Maya Research | 1047 ±11 | Apache-2.0 | Sí (safetensors) | 11 lenguas indias + inglés |
+| Sonic-3.6 | Cartesia | 1094 ±13 | no disponible | no disponible | no disponible |
+| Sonic-3.5 | Cartesia | 1035 ±12 | no disponible | no disponible | no disponible |
+| Lightning 3.1 Pro | Smallest AI | 1024 ±12 | no disponible | no disponible | no disponible |
+| Bulbul-V3 | Sarvam AI | 957 ±9 | no disponible | no disponible | no disponible |
+
+La ventaja diferencial de Maya 2 Native frente a estos sistemas es la combinación de pesos abiertos, licencia Apache-2.0 y despliegue autoalojado; sus competidores en el leaderboard son, según la información disponible, servicios propietarios sin pesos publicados.
 
 ## Limitaciones y advertencias
 
-- Solo hay evaluación pública competitiva en hindi. Para los otros once idiomas no se publican métricas de calidad, y la propia model card advierte que los clips de muestra se seleccionaron entre las mejores salidas (CER inferior al 2 %), no son representativos de la media.
-- No se documenta el proceso de evaluación de sesgos ni la composición demográfica de las 20 voces (género, acento, registro). Es un riesgo real en aplicaciones de atención al cliente o accesibilidad.
-- La clonación de voz con 3-10 segundos de audio habilita usos fraudulentos (suplantación, deepfakes). Aunque la licencia Apache-2.0 no impone restricciones de uso, en producción conviene exigir consentimiento verificable y aplicar marcas o detección de audio sintético.
-- Riesgo de errores de pronunciación y de normalización en números, siglas, nombres propios y textos mixtos hindi-inglés; la model card no publica tasas medias de CER por idioma.
-- No se especifica la longitud máxima de texto por petición ni el contexto del modelo. Para textos largos habrá que trocear y gestionar la continuidad prosódica manualmente.
-- Licencia Apache-2.0 para el modelo, pero la model card remite a una sección de licencias de componentes. Antes de un uso comercial conviene revisar la licencia del códec de audio y del tokenizador, así como la de Qwen/Qwen3-1.7B-Base, que es el punto de partida.
-- Nombres internos inconsistentes: el modelo se llama Maya 2 Native, pero el paquete, la clase Python y el fichero de configuración siguen siendo `maya3`, `Maya3TTS` y `maya3_config.json`. Hay que usar esos identificadores en el código.
-- No hay cifras publicadas de latencia, throughput ni coste por hora de audio, datos imprescindibles para dimensionar un despliegue en producción.
-- El checkpoint es la versión 1.0 (25 de octubre de 2026) y el repositorio se actualizó al día siguiente; no hay historial de versiones ni garantía de estabilidad de la API.
-- La búsqueda web realizada no devolvió ninguna fuente independiente sobre el modelo: los resultados corresponden a Autodesk Maya y a la civilización maya, por lo que toda la información procede de Hugging Face y de la model card del autor.
+- La calidad de acento e identidad de voz varía según la combinación idioma-voz; la model card remite a la tabla de cobertura de voces para elegir adecuadamente.
+- El resultado del puesto 2 en VoiceArena está acotado a la vista de hindi y solo tiempo real; en la vista con todos los modelos el puesto es el 7 (intervalo 5–10). Los intervalos de confianza se solapan con los de los modelos vecinos, por lo que las diferencias de Elo no deben interpretarse como una ventaja concluyente.
+- VoiceArena data la entrada del modelo en julio de 2026 y no identifica la revisión exacta del checkpoint evaluado, lo que dificulta reproducir la medición.
+- No se documentan sesgos lingüísticos o de voz concretos, ni tasas de alucinación o de error de pronunciación; al ser un modelo de síntesis, el riesgo principal es la generación de prosodia o pronunciación incorrectas en textos atípicos.
+- La clonación de voz exige usar referencias permitidas; no se detallan en la información disponible las restricciones legales o éticas adicionales más allá de la licencia Apache-2.0.
+- La licencia Apache-2.0 cubre los pesos del modelo, pero la model card remite a una sección de licencias de componentes que podría imponer condiciones adicionales sobre dependencias (por ejemplo, el codec Mimi); conviene revisarla antes de un despliegue comercial.
+- No se publican datos sobre longitud máxima de texto de entrada, latencia en producción ni rendimiento bajo cuantización, lo que limita la planificación de capacidad.
+- La nomenclatura es confusa: el modelo se llama Maya 2 Native, pero el paquete, la clase y el fichero de configuración conservan los nombres `maya3`, `Maya3TTS` y `maya3_config.json`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/maya-research/maya2-native
-- Repositorio de código: https://github.com/MayaResearch/maya2-native
-- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
-- Leaderboard de VoiceArena (hindi): https://voicearena.com/tts-leaderboard/hindi
-- Metodología de VoiceArena: https://voicearena.com/tts-methodology
+- Código de inferencia (GitHub): https://github.com/MayaResearch/maya2-native
 - Vídeo de demostración: https://huggingface.co/maya-research/maya2-native/resolve/main/Maya%20Final%20with%20Changes.mp4
-- Vídeo alternativo en Google Drive: https://drive.google.com/file/d/1WRd_e8TztpvX1n-DbOBlDj-zP89WE4oX/view
-- Captura del leaderboard aportada por el autor: https://huggingface.co/maya-research/maya2-native/resolve/main/voicearena-hindi-realtime-snapshot.png
-- Muestras de audio por idioma (ejemplo hindi, voz Ritvik): https://huggingface.co/maya-research/maya2-native/resolve/main/samples/hi_ritvik.wav
-- Muestras de audio por idioma (ejemplo assamés, voz Nakul): https://huggingface.co/maya-research/maya2-native/resolve/main/samples/as_nakul.wav
+- Vídeo alternativo (Google Drive): https://drive.google.com/file/d/1WRd_e8TztpvX1n-DbOBlDj-zP89WE4oX/view
+- Leaderboard VoiceArena (hindi): https://voicearena.com/tts-leaderboard/hindi
+- Metodología de VoiceArena: https://voicearena.com/tts-methodology
+- Captura del leaderboard: https://huggingface.co/maya-research/maya2-native/resolve/main/voicearena-hindi-realtime-snapshot.png
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

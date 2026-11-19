@@ -2,91 +2,107 @@
 
 ## Resumen
 
-`second.kitti.openpcdet` es un modelo de detección de objetos 3D basado en la arquitectura SECOND (Sparsely Embedded Convolutional Detection), desarrollado por el ecosistema torch-pointcloud. Se trata de una conversión del checkpoint original de OpenPCDet, entrenado sobre el conjunto de datos KITTI para la detección de vehículos, peatones y ciclistas en nubes de puntos LiDAR. El modelo emplea convoluciones dispersas sobre una representación voxelizada de la nube de puntos, lo que permite un procesamiento eficiente de escenas 3D a gran escala.
+`second.kitti.openpcdet` es un checkpoint de deteccion de objetos 3D sobre nubes de puntos LiDAR, basado en la arquitectura SECOND (Sparsely Embedded Convolutional Detection) publicada por Yan, Mao y Li en 2018. Lo distribuye el proyecto `torch-pointcloud` (Arthur Dujardin) como una conversion de los pesos de referencia de OpenPCDet al formato safetensors, con el objetivo de ofrecer una via de uso directa desde PyTorch sin depender del ecosistema original de entrenamiento.
 
-Con 5,3 millones de parámetros, este detector alcanza una mAP de 66,26 en el benchmark de KITTI, un resultado prácticamente idéntico al de referencia de OpenPCDet (66,25). Su relevancia radica en ofrecer una implementación limpia y reproducible en PyTorch, integrada en la librería torch-pointcloud, que facilita su uso en investigación y aplicaciones de percepción 3D, especialmente en el ámbito de la conducción autónoma y la robótica móvil.
+El modelo resuelve la deteccion de tres clases de objetos (coche, peaton y ciclista) en escenas de conduccion autonoma del benchmark KITTI, a partir de un tensor de vóxeles con cuatro canales de entrada (coordenadas e intensidad). Con solo 5,3 millones de parametros, es un detector muy compacto que prioriza la eficiencia en inferencia sobre la precision maxima, lo que lo hace adecuado como linea base reproducible o como componente de extraccion de caracteristicas.
 
-La licencia Apache-2.0 permite su uso comercial y modificación, lo que lo convierte en una opción atractiva para proyectos que necesitan un detector 3D ligero y bien documentado. El modelo está disponible en Hugging Face con pesos en formato safetensors y puede cargarse directamente mediante la API de torch-pointcloud.
+Su relevancia actual es practica: los checkpoints de SECOND en OpenPCDet requieren compilar `spconv` contra una version concreta de PyTorch y CUDA, una tarea fragil en produccion. Esta ficha documenta una alternativa empaquetada con licencia Apache-2.0, con metricas declaradas por el autor (mAP 66,26 en KITTI) y una API de carga en dos lineas de codigo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SECOND (sparse convolutional voxel detector) |
+| Arquitectura | SECOND (detector 3D con convolucion dispersa sobre vóxeles, tipo VoxelNet) |
 | Parametros totales | 5.332.488 (5,3 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de deteccion 3D) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (no aplica; entrada de nube de puntos por vóxeles) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, sin variantes GGUF ni cuantizadas publicadas) |
+| Idiomas soportados | no disponible (modelo no linguistico) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria `torch-pointcloud`) |
+| Canales de entrada | 4 |
+| Clases detectadas | 3 (Car, Pedestrian, Cyclist) |
+| Dimension de caracteristicas | 512 |
+| Dataset de entrenamiento | KITTI |
+| Pipeline declarado | object-detection |
 
 ## Arquitectura y entrenamiento
 
-SECOND es un detector de objetos 3D que opera sobre voxels. La nube de puntos se discretiza en una rejilla 3D y cada voxel se codifica mediante características como posición e intensidad (4 canales de entrada). El modelo utiliza una red de convoluciones dispersas (submanifold sparse convolutions) para extraer características volumétricas, seguidas de una cabeza de detección que predice cajas 3D orientadas y sus clases. La arquitectura incluye una etapa de "sparse conv" con 512 canales de características y una cabeza de clasificación y regresión.
+SECOND es un detector 3D de una etapa que transforma la nube de puntos en una rejilla de vóxeles y aplica convoluciones 3D dispersas para no procesar el espacio vacio, que en LiDAR es la inmensa mayoria del volumen. Sobre el extractor de caracteristicas disperso se situa una cabeza de deteccion que predice cajas 3D orientadas con regresion de angulo, lo que evita el problema de discontinuidad angular de las parametrizaciones naive. El checkpoint declara 4 canales de entrada, 512 caracteristicas y 3 clases, coherente con la configuracion estandar de SECOND en OpenPCDet para KITTI.
 
-El entrenamiento se realizó sobre el conjunto de datos KITTI, que contiene escenas de conducción con anotaciones de coches, peatones y ciclistas. El checkpoint original fue entrenado con OpenPCDet y posteriormente convertido a la librería torch-pointcloud. No se dispone de información detallada sobre el número de épocas, el tamaño de lote ni las técnicas de aumento de datos utilizadas, ya que la model card no los especifica. La métrica reportada (mAP 66,26) indica que el modelo reproduce fielmente los resultados del baseline.
+El entrenamiento se realizo sobre KITTI, el benchmark de referencia de conduccion autonoma (Geiger et al., CVPR 2012), con las clases Car, Pedestrian y Cyclist. No se dispone de informacion sobre el numero de tokens o muestras, la composicion exacta del split, ni sobre si hubo etapas de refinamiento posteriores; la model card solo indica que los pesos se convirtieron desde `open-mmlab/OpenPCDet`. La innovacion tecnica relevante es precisamente la conversion: empaquetar el modelo en `torch-pointcloud` con transformaciones de datos y `collate` incluidos, de modo que el usuario no tenga que replicar el pipeline de OpenPCDet.
 
 ## Capacidades
 
-- Detección de objetos 3D en nubes de puntos LiDAR, incluyendo cajas orientadas (3D bounding boxes) y clases (coche, peatón, ciclista).
-- Predicción de la localización, dimensión y ángulo de cada objeto detectado.
-- Extracción de características de la nube de puntos mediante `forward_features`, devolviendo un tensor de 512 canales útil para tareas downstream (clasificación, segmentación, etc.).
-- Inferencia en tiempo real en GPU gracias al uso de convoluciones dispersas, que solo procesan las regiones ocupadas del espacio voxelizado.
-- Integración sencilla con el ecosistema torch-pointcloud y compatibilidad con OpenPCDet para la conversión de checkpoints.
-- Soporte de lote (batch) de múltiples escenas mediante la función `collate` proporcionada por la librería.
+- Deteccion de objetos 3D en nubes de puntos LiDAR: cajas orientadas con clase, centro, dimensiones y angulo de guinada.
+- Tres clases: coche, peaton y ciclista, las tres clases evaluadas en KITTI.
+- Entrada multimodal a nivel de punto: coordenadas XYZ mas intensidad de retorno (4 canales).
+- Extraccion de caracteristicas densas de 512 canales mediante `forward_features`, utilizable como backbone para tareas aguas abajo (segmentacion, recuperacion, clasificacion de escenas).
+- Integracion nativa con PyTorch y con las utilidades de `torch-pointcloud` (`create_model`, `transform`, `collate`).
+- Soporte de ejecucion en GPU mediante kernels dispersos de `spconv`.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades linguisticas: no es un modelo de lenguaje.
+- No dispone de modo thinking, vision 2D, audio ni generacion de texto.
 
 ## Casos de uso
 
-- Conducción autónoma: el modelo puede integrarse en un pipeline de percepción para detectar vehículos, peatones y ciclistas en tiempo real a partir de datos LiDAR, alimentando los módulos de planificación y evitación de obstáculos.
-- Robótica móvil: en robots que navegan en entornos dinámicos, la detección 3D permite identificar obstáculos y personas para una navegación segura, gracias a su bajo coste computacional.
-- Sistemas avanzados de asistencia al conductor (ADAS): puede utilizarse para alertar al conductor sobre la presencia de objetos en puntos ciegos o cruces.
-- Investigación en percepción 3D: al ser un modelo ligero y bien documentado, sirve como baseline para comparar nuevas arquitecturas de detección de objetos en nubes de puntos.
-- Inspección industrial y logística: en almacenes automatizados, la detección 3D de palés, vehículos o personas mejora la gestión de flotas y la seguridad.
-- Generación de datos sintéticos para simulación: el modelo puede aplicarse a nubes de puntos generadas por simuladores para evaluar el rendimiento de sistemas de percepción en escenarios controlados.
+- Linea base reproducible en investigacion: sirve para validar pipelines de deteccion 3D antes de escalar a detectores mas costosos (PointPillars, CenterPoint, PV-RCNN), gracias a sus 5,3 M de parametros y a la carga en dos lineas con `tp.create_model`.
+- Prototipado rapido de conduccion autonoma: permite montar un detector funcional sobre KITTI en horas en lugar de dias, evitando la compilacion manual de `spconv` contra el entorno de OpenPCDet.
+- Extraccion de caracteristicas para modelos aguas abajo: `forward_features` devuelve 512 canales por voxel, utilizables como entrada de cabezas personalizadas de segmentacion semantica o de clasificacion de escenas.
+- Preetiquetado de datos LiDAR: el modelo puede generar cajas candidatas sobre nubes nuevas para acelerar el etiquetado humano en proyectos de anotacion de datos de sensores.
+- Deteccion de peatones y ciclistas en sistemas de seguridad: las clases Pedestrian y Cyclist estan explicitamente soportadas, lo que permite construir alertas de proximidad en entornos urbanos o industriales.
+- Educacion y docencia: por su tamano reducido y su arquitectura bien documentada, es un caso de estudio adecuado para explicar convoluciones dispersas y representaciones voxelizadas en cursos de vision 3D.
+- Integracion en pipelines de robotica movil: deteccion de obstaculos en tiempo real sobre LiDAR de 64 haces en plataformas con GPU de gama media.
 
 ## Benchmarks y rendimiento
 
-Los resultados declarados por el autor en la model card son los siguientes:
+Resultados declarados por el autor en la model card (no verificados de forma independiente; `verified: false`).
 
-| Tarea | Dataset | Metrica | Valor |
-|---|---|---|---|
-| Deteccion de objetos 3D | KITTI | mAP | 66,26 |
+| Metrica | Dataset | Valor |
+|---|---|---|
+| mAP | KITTI | 66,26 |
+| AP / Car | KITTI | 78,63 |
+| AP / Pedestrian | KITTI | 52,98 |
+| AP / Cyclist | KITTI | 67,16 |
 
-No se han publicado resultados adicionales de benchmarks en la informacion disponible. El valor de mAP se corresponde con el baseline de OpenPCDet (66,25), lo que indica una fidelidad alta en la conversión.
+No se han publicado resultados adicionales de benchmarks (latencia, throughput, consumo de memoria) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo requiere una GPU con soporte CUDA, ya que los kernels de convolución dispersa (spconv) no están implementados para CPU.
-- VRAM estimada para inferencia: dado el tamaño del modelo (5,3 M de parámetros), la memoria necesaria es reducida; con un batch de 1 y una resolución de voxel típica (0,1 m), el consumo ronda 1-2 GB. Escenarios con nubes de puntos más densas o batches mayores pueden requerir hasta 4 GB.
-- GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 2060, RTX 3060, o superiores). También funciona en GPUs de datacenter como A100 o H100, aunque no son necesarias para este modelo.
-- El modelo cabe en GPUs de consumo, siempre que se disponga de una versión de CUDA compatible con spconv.
-- Opciones de despliegue: al ser un modelo PyTorch estándar, puede servirse mediante TorchServe o integrarse en aplicaciones personalizadas con FastAPI. No se han documentado opciones de cuantización ni despliegue en frameworks como TensorRT o vLLM, aunque es posible convertirlo a ONNX para optimización.
-- Latencia y throughput: no se proporcionan datos oficiales. En una RTX 3090, se estima una inferencia de 20-50 ms por escena, dependiendo del tamaño de la nube de puntos y de la configuración de voxelización.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 5,3 M de parametros, los pesos ocupan del orden de 21 MB en FP32 y 11 MB en FP16; el consumo dominante proviene de los mapas de activacion de la red dispersa y del tamano del lote, no de los pesos.
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA compatible con la compilacion de `spconv`. El modelo exige GPU (`model.cuda()`), ya que los kernels dispersos son GPU-only.
+- Cabe en GPU de consumo: si, previsiblemente en cualquier RTX con suficiente memoria para el volumen de voxeles del lote; no se dispone de cifras oficiales de memoria pico.
+- Opciones de despliegue: `torch-pointcloud` con PyTorch y `spconv` (requiere compilacion alineada con la version de torch y CUDA). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, que son runtimes de modelos de lenguaje y no aplican a este tipo de red.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parametros | Dataset | mAP (KITTI) | Licencia |
-|---|---|---|---|---|---|
-| SECOND (este) | Sparse conv voxel | 5,3 M | KITTI | 66,26 | Apache-2.0 |
-| PointPillars | Pillar feature net | ~5-6 M | KITTI | ~68-70 (variante) | Apache-2.0 (OpenPCDet) |
-| VoxelNet | Voxel feature encoding | ~10 M | KITTI | ~65-67 | Apache-2.0 (OpenPCDet) |
+| Modelo | Parametros | Entrada | Clases | mAP KITTI | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| second.kitti.openpcdet | 5,3 M | 4 canales (XYZ + intensidad) | 3 | 66,26 | Apache-2.0 | Hugging Face, `torch-pointcloud` |
+| SECOND original (OpenPCDet) | no disponible en la informacion | 4 canales | 3 | no disponible en la informacion | Apache-2.0 | GitHub `open-mmlab/OpenPCDet` |
+| PointPillars | no disponible en la informacion | nube de puntos | 3 | no disponible en la informacion | Apache-2.0 (OpenPCDet) | GitHub `open-mmlab/OpenPCDet` |
+| CenterPoint | no disponible en la informacion | nube de puntos | 3 | no disponible en la informacion | Apache-2.0 (OpenPCDet) | GitHub `open-mmlab/OpenPCDet` |
 
-Los valores de PointPillars y VoxelNet son aproximados y dependen de la configuración exacta; no se dispone de datos oficiales en la información proporcionada. Este modelo se sitúa en la misma gama de rendimiento que otros detectores voxel-based, con la ventaja de ser más ligero que VoxelNet.
+La comparacion cuantitativa con alternativas no puede completarse con los datos disponibles; la unica cifra contrastable es la del propio checkpoint.
 
 ## Limitaciones y advertencias
 
-- El modelo solo reconoce tres clases (coche, peatón, ciclista) y ha sido entrenado exclusivamente con datos de KITTI, que representan escenarios de conducción en Alemania. Su rendimiento puede degradarse en otros entornos (por ejemplo, condiciones climáticas diferentes o ciudades con densidades de tráfico distintas).
-- La detección se basa únicamente en nubes de puntos LiDAR; no fusiona información de cámaras, por lo que no es adecuado para tareas que requieran reconocimiento de texturas o colores.
-- Requiere la librería `spconv`, cuya instalación depende de una compilación específica para la versión de Torch y CUDA utilizada. Esto puede complicar el despliegue en entornos con versiones restrictivas.
-- Los kernels son exclusivos de GPU; no existe soporte para CPU, lo que limita su uso en dispositivos sin aceleración gráfica.
-- No se han publicado análisis de sesgos ni estudios de robustez frente a oclusiones, densidades variables de puntos o condiciones meteorológicas adversas.
-- La licencia Apache-2.0 permite uso comercial, pero el dataset KITTI tiene sus propios términos de uso que deben respetarse al redistribuir o entrenar con esos datos.
+- Metricas no verificadas: los valores de mAP y AP proceden de la model card y estan marcados como `verified: false`; conviene reproducirlos antes de usarlos como referencia en publicaciones.
+- Dependencia fragil de `spconv`: la instalacion requiere una compilacion binaria alineada con la version exacta de PyTorch y CUDA, lo que complica la reproducibilidad en entornos contenerizados o con actualizaciones frecuentes.
+- Solo GPU: los kernels dispersos no tienen implementacion CPU documentada, lo que impide desplegar el modelo en servidores sin acelerador.
+- Ambito restringido a KITTI: el modelo esta entrenado para escenas de conduccion con la configuracion de sensores de KITTI; el rendimiento fuera de esa distribucion (LiDAR de otros fabricantes, entornos interiores, climas adversos) es desconocido y probablemente degrade.
+- Solo tres clases: no detecta camiones, autobuses, motocicletas, senalizacion ni mobiliario urbano, lo que limita su uso directo en produccion sin reentrenamiento.
+- Riesgo de falsos negativos en objetos pequenos o lejanos: los peatones y ciclistas obtienen AP notablemente inferior a los coches (52,98 y 67,16 frente a 78,63), lo que refleja la dificultad del modelo con objetos de pocos puntos.
+- Sensibilidad a la calibracion y al rango de voxelizacion: los parametros de transformacion deben coincidir con los usados en entrenamiento; alterarlos invalida las predicciones.
+- Sin informacion sobre sesgos: no se documenta analisis de sesgo por condiciones meteorologicas, iluminacion, densidad de trafico ni geografia.
+- Licencia Apache-2.0: permite uso comercial y modificacion con atribucion, pero el autor no ofrece garantias ni soporte; el uso en vehiculos reales exige validacion de seguridad independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/torch-pointcloud/second.kitti.openpcdet
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/second.kitti.openpcdet
 - Paper SECOND: https://www.mdpi.com/1424-8220/18/10/3337
-- Repositorio OpenPCDet: https://github.com/open-mmlab/OpenPCDet
-- Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Guía de instalación de torch-pointcloud: https://pytorch-pointcloud.org/installation/
+- Repositorio OpenPCDet (origen de los pesos): https://github.com/open-mmlab/OpenPCDet
+- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Documentacion de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
+- DOI de PyTorch PointCloud: https://doi.org/10.5281/zenodo.22159632
+- Benchmark KITTI (paper CVPR 2012): https://www.cvlibs.net/datasets/kitti/

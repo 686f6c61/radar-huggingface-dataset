@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Qwen3-14B-heretic-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Qwen3-14B-heretic-i1-GGUF",
-      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
-    },
-    {
-      "title": "team mradermacher - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "Heretic: Fully automatic censorship removal for language models",
-      "url": "https://github.com/p-e-w/heretic",
-      "snippet": "Using Heretic does not require an understanding of transformer internals. In fact, anyone who knows how to run a command-line program can use Heretic to decensor language models. Heretic supports most dense models, including many multimodal models, several different MoE architectures, and even some hybrid models like Qwen3.5."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3",
-      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
-    },
-    {
-      "title": "Heretic",
-      "url": "https://heretic-project.org/",
-      "snippet": "Fully automatic censorship removal for language models Take control of the most important technology of our time Heretic removes restrictions from language models, making sure they always follow your instructions"
-    }
-  ]
+  "sources": []
 }

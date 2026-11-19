@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 2779931837184,
   "parameters_human": "2779.93B",
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "technicallyAnnoyed/Kimi-K3",
+  "renamed_at": "2026-11-19T03:28:57.458Z",
   "benchmarks": [],
   "sources": [
     {

@@ -65,31 +65,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Challenge Your Game | FACEIT",
-      "url": "https://www.faceit.com/",
-      "snippet": "FACEIT is where competitive players grind matchmaking or team competitions, find teammates, and prove their level. Join 34M …"
-    },
-    {
-      "title": "openbmb/MiniCPM5-2B-DSpark · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-DSpark",
-      "snippet": "Deploy Copy to bucket new Use this model Instructions to use openbmb/MiniCPM5-2B-DSpark with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openbmb/MiniCPM5-2B-DSpark with Transformers:"
-    },
-    {
-      "title": "FACEIT",
-      "url": "https://www.faceit.com/,/",
-      "snippet": ""
-    },
-    {
-      "title": "openbmb/MiniCPM5-2B · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
-      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
-    },
-    {
-      "title": "FACEIT — Official Esports Platform",
-      "url": "https://win-faceit.com/",
-      "snippet": "The official FACEIT platform. Competitive CS2 & Dota 2 matches, anti-cheat protection, ranked gameplay. Join millions of players …"
-    }
-  ]
+  "sources": []
 }

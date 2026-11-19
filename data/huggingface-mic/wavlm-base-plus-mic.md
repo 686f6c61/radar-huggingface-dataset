@@ -2,91 +2,89 @@
 
 ## Resumen
 
-`wavlm-base-plus-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, no un modelo utilizable en producción. Se trata de una versión reducida artificialmente del modelo de reconocimiento y representación de voz `microsoft/wavlm-base-plus`, con solo 4,3 millones de parámetros frente a los aproximadamente 94,7 millones del original. Su propósito es servir como fixture reproducible para probar integraciones de frameworks (en concreto, el ecosistema Transformers) sin necesidad de descargar ni ejecutar el checkpoint completo.
+`wavlm-base-plus-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic`, no un modelo utilizable en produccion. Se trata de una version reducida del modelo de extraccion de caracteristicas de audio `microsoft/wavlm-base-plus`, con solo 4,3 millones de parametros frente a los aproximadamente 94 millones del original, y pesos generados aleatoriamente (semilla 17) sin entrenamiento alguno. El propio autor lo etiqueta explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
 
-El repositorio incluye pesos "slim", un manifiesto de contrato (`integration.json`), documentación de uso para Transformers y expectativas de framework, además de metadatos de procedencia de la construcción (`build.json`). Los pesos son aleatorios (semilla 17) y no han sido entrenados; únicamente pasaron una puerta de sensibilidad a la entrada que verifica que perturbaciones de las entradas mueven los logits al menos 0,001.
+El proposito del repositorio es servir como fixture de integracion para el proyecto `transformers-mic`: valida que el pipeline de carga, ejecucion y comprobacion de contratos funcione con la arquitectura WavLM sin necesidad de descargar ni ejecutar el checkpoint completo. Incluye el manifiesto de contrato (`integration.json`), la documentacion de uso con Transformers y el directorio de expectativas del framework, ademas de los pesos reducidos.
 
-Es relevante exclusivamente para desarrolladores que mantienen o validan integraciones de modelos de audio en Transformers, no para tareas reales de reconocimiento de voz, diarización o extracción de características. El propio autor lo etiqueta como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
+La relevancia practica es, por tanto, exclusivamente de ingenieria y test: no debe emplearse para transcripcion, clasificacion de audio, diarizacion ni ninguna tarea real de speech. Cualquier evaluacion de calidad sobre este modelo carece de sentido, ya que sus pesos no han sido entrenados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | WavLMModel (transformer convolucional para audio, variante reducida) |
-| Parámetros totales | 4,3 M (fixture); el modelo base `microsoft/wavlm-base-plus` tiene ~94,7 M |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de audio; ventana de entrada no especificada en la información) |
-| Tipos de cuantización | no disponible; pesos guardados en float32, con forward/loss/gradientes finitos también en bfloat16 y float16 |
-| Idiomas soportados | no disponibles |
+| Arquitectura | WavLMModel (transformer de audio tipo WavLM), config reducida a 2 capas ocultas |
+| Parametros totales | 4.335.960 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de audio; la entrada es forma de onda, no texto) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32; verificado finito en float32, bfloat16 y float16) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (repositorio PyTorch; tamaño del repo 0,1 GB) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la arquitectura `WavLMModel` del checkpoint `microsoft/wavlm-base-plus`, pero con la configuración reducida mediante la regla genérica de `sweep.py` del repositorio `huggingface/transformers-mic` (concretamente `num_hidden_layers = 2`). Los ficheros de procesador (`preprocessor_config.json`) se copiaron byte a byte desde `microsoft/wavlm-base-plus`, y los nombres de tensores coinciden con los del checkpoint real, de modo que el fixture es intercambiable a nivel de código.
+La arquitectura subyacente es WavLM, un transformer de audio orientado a representaciones auto-supervisadas del habla. Este fixture conserva la clase `WavLMModel` y los mismos nombres de tensores que el checkpoint real `microsoft/wavlm-base-plus`, pero con una configuracion reducida mediante la regla generica de `sweep.py` del proyecto `transformers-mic`, que en este caso deja `num_hidden_layers = 2`. Los ficheros de procesador (`preprocessor_config.json`) se copian byte a byte del modelo original.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y solo se validaron mediante una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplazó los logits al menos 0,001 (la más débil, `input_values:halve`, con 0,278). El modelo se guardó en float32, el dtype por defecto del checkpoint original, y se verificó que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16. La clave de fixture `11ccff6756df` cubre todos los checkpoints cuyos ficheros de procesador son idénticos byte a byte y cuya configuración coincide tras el reducido.
+No hay entrenamiento. Los pesos son aleatorios (semilla 17) y unicamente pasaron una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplaza los logits al menos 0,001 (la mas debil, `input_values:halve`, produce 0,278). El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture `11ccff6756df` cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el proceso de reduccion. El repositorio incluye pesos, uso y expectativas; el resto de ficheros se regeneran con `python example/build_fixtures.py --fixture wavlm-base-plus-mic`.
 
 ## Capacidades
 
-- Extracción de características de audio (interfaz `WavLMModel`), con la misma firma de entrada y nombres de tensores que `microsoft/wavlm-base-plus`.
-- Ejecución de forward pass, cálculo de pérdida y retropropagación de gradientes en float32, bfloat16 y float16.
-- Validación de contratos de integración: el manifiesto `integration.json` y el directorio de expectativas permiten comprobar que una integración de framework produce las salidas esperadas.
-- No realiza reconocimiento de voz, diarización, clasificación de emociones ni ninguna tarea semántica real: los pesos son aleatorios.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
-- No dispone de modo thinking, visión ni audio generativo.
+- Extraccion de caracteristicas de audio a nivel de contrato: el modelo expone la interfaz de `WavLMModel` para procesar formas de onda y devolver representaciones ocultas, pero con pesos aleatorios y solo 2 capas.
+- Verificacion de integracion con Transformers: permite comprobar que la carga del checkpoint, el procesador y la ejecucion del forward funcionan segun lo esperado por el framework.
+- Comprobacion de dtypes: valida comportamiento finito en float32, bfloat16 y float16.
+- No soporta generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes ni capacidades multilingues.
+- No dispone de modo thinking ni de ninguna capacidad especial de inferencia util.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: usar el fixture para verificar que la carga de `WavLMModel`, el preprocesado y el forward pass funcionan sin descargar los ~94,7 M de parámetros del checkpoint real, reduciendo el tiempo de CI.
-- Validación de contratos de framework: ejecutar el manifiesto `integration.json` y el directorio `integrations/transformers/expectations` para comprobar que una versión de Transformers cumple las salidas esperadas en audio.
-- Desarrollo de pipelines de audio sin acceso a red: al ocupar 0,1 GB, el fixture permite trabajar en entornos aislados o con ancho de banda limitado donde el checkpoint completo no es viable.
-- Pruebas de compatibilidad de dtypes: verificar que una integración maneja correctamente float32, bfloat16 y float16, dado que el fixture es finito en los tres.
-- Reproducibilidad de builds: usar `build.json` y `build_fixtures.py` para regenerar el fixture y auditar hashes de ficheros y resultados de la puerta de sensibilidad.
-- Docencia y demostraciones de la API de WavLM: mostrar la estructura de entradas y salidas del modelo sin coste computacional ni de descarga.
-- Pruebas de regresión en CI/CD: detectar cambios de comportamiento en la carga de modelos de audio comparando logits contra los valores de referencia del fixture.
+- Test de integracion en CI del proyecto `transformers-mic`: ejecutar el fixture en la suite de pruebas para verificar que la carga de un checkpoint WavLM y el forward producen resultados finitos sin descargar el modelo completo de 94M de parametros.
+- Validacion de contratos de API: comprobar que `integration.json` y el directorio de expectativas del framework coinciden con el comportamiento real del modelo reducido.
+- Pruebas de compatibilidad de dtypes: verificar que el pipeline maneja correctamente float32, bfloat16 y float16 con este fixture antes de aplicar los mismos cambios al checkpoint real.
+- Desarrollo de herramientas de reduccion de modelos: servir como caso de referencia del proceso `sweep.py` y de la generacion de fixtures con `build_fixtures.py`.
+- Pruebas de regresion de nombres de tensores: al conservar los mismos nombres que `microsoft/wavlm-base-plus`, permite detectar roturas en mapeos de pesos y en la conversion de checkpoints.
+- Validacion de sensibilidad a la entrada: usar la puerta de perturbacion documentada para comprobar que los cambios en el preprocesado afectan a los logits de forma medible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier métrica de calidad (WER, precisión de clasificación, etc.) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios y sin entrenamiento, cualquier metrica de calidad (WER, exactitud en clasificacion, etc.) seria irrelevante.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (4,3 M de parámetros, ~17 MB de pesos) y aún menor en float16/bfloat16.
-- GPU recomendadas: cualquier GPU, incluidas integradas; no requiere acelerador dedicado.
-- Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) y también en CPU.
-- Opciones de despliegue: Transformers con PyTorch; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (son frameworks de texto y no aplican a este modelo de audio).
-- Latencia y throughput: no disponibles; al tratarse de un fixture de 2 capas, la latencia sería órdenes de magnitud inferior a la del checkpoint real, pero no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (4,3M de parametros, unos 17 MB de pesos), por lo que cabe en cualquier GPU consumer.
+- GPU recomendadas: cualquiera; el modelo puede ejecutarse en CPU sin problema.
+- Cabe en consumer GPU: si, en todas, incluidas integradas.
+- Opciones de despliegue: Transformers (uso documentado en `integrations/transformers/usage.md`); el resto de frameworks no estan documentados para este fixture.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `huggingface-mic/wavlm-base-plus-mic` | 4,3 M (fixture) | no disponible | no aplica (pesos aleatorios) | no disponible | Hugging Face, 230 descargas |
-| `microsoft/wavlm-base-plus` | ~94,7 M | no disponible | estado del arte en tareas de voz (no cuantificado aquí) | no disponible en la información | Hugging Face |
-| Otros fixtures `*-mic` del mismo autor | variable (reducidos) | no disponible | no aplica | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Proposito |
+|---|---|---|---|---|
+| `huggingface-mic/wavlm-base-plus-mic` | 4.335.960 | no disponible | no disponible | Fixture de test |
+| `microsoft/wavlm-base-plus` | ~94M (no confirmado en la informacion) | no disponible | no disponible | Extraccion de caracteristicas de audio real |
+| Otros fixtures de `huggingface-mic` | no disponible | no disponible | no disponible | Test de integracion |
 
-La comparación relevante es con el checkpoint original: el fixture conserva arquitectura, nombres de tensores y ficheros de procesador, pero reduce capas a 2 y sustituye los pesos entrenados por pesos aleatorios, por lo que no es funcionalmente equivalente para ninguna tarea de audio.
+La unica comparacion significativa es con el modelo base del que deriva: mismo nombre de tensores y misma arquitectura, pero con 2 capas en lugar de la configuracion completa y pesos aleatorios en vez de entrenados.
 
 ## Limitaciones y advertencias
 
-- Los pesos son aleatorios (semilla 17): las salidas no tienen significado semántico y no deben usarse para ninguna tarea real de audio.
-- El autor lo etiqueta explícitamente como `test-artifact`; no es un modelo candidato para producción.
-- La licencia no está declarada en la información disponible, lo que impide evaluar su uso comercial; además, al derivar de `microsoft/wavlm-base-plus`, podrían aplicar las condiciones del modelo original.
-- No se especifican idiomas soportados ni ventana de contexto de audio.
-- Riesgo de confusión: un usuario podría descargarlo pensando que es el WavLM base-plus real; el tamaño del repo (0,1 GB) y el número de parámetros (4,3 M) son señales claras de que no lo es.
-- Solo se validó la finitud numérica en float32, bfloat16 y float16; no hay garantías sobre otros dtypes ni sobre entrenamiento real.
-- No se han publicado benchmarks ni evaluaciones de sesgo, alucinación o robustez, y en un fixture con pesos aleatorios no serían aplicables.
+- No es un modelo utilizable: los pesos son aleatorios y el autor lo etiqueta como `test-artifact`; no debe usarse para ninguna tarea real de audio.
+- Sesgos conocidos: no aplica, al no haber entrenamiento; no obstante, no puede afirmarse nada sobre sesgos de un modelo sin datos.
+- Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero cualquier salida del modelo es esencialmente ruido.
+- Limitaciones de contexto o idioma: no disponible; el modelo no procesa texto.
+- Restricciones de licencia para uso comercial: la licencia no esta disponible en la informacion proporcionada; debe consultarse el repositorio antes de cualquier uso.
+- Caveat de produccion: no desplegar. Su unico uso legitimo es como fixture en suites de test.
+- El repositorio es de 0,1 GB y no incluye todos los ficheros necesarios; algunos deben regenerarse con `build_fixtures.py`.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic
 - Modelo base: https://huggingface.co/microsoft/wavlm-base-plus
+- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/wavlm-base-plus-mic.html
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Script de reduccion `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic/blob/main/integration.json
-- Uso en Transformers: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic/blob/main/integrations/transformers/usage.md
+- Uso con Transformers: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic/blob/main/integrations/transformers/usage.md
 - Expectativas de Transformers: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic/tree/main/integrations/transformers/expectations
 - Procedencia del fixture: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic/blob/main/build.json
-- Explicación del reducido: https://huggingface-mic-mic-coverage.static.hf.space/shrink/wavlm-base-plus-mic.html
-- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script de reducido (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

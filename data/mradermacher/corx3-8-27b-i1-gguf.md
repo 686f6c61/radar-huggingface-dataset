@@ -2,67 +2,89 @@
 
 ## Resumen
 
-El modelo CorX3.8-27B-i1-GGUF es una cuantización en formato GGUF del modelo de lenguaje CorX3.8-27B, preparada por el usuario mradermacher. Esta versión emplea la técnica de cuantización con matriz de importancia (imatrix) para optimizar la calidad de la compresión, reduciendo el tamaño del modelo original de aproximadamente 26,9 mil millones de parámetros. El modelo base está licenciado bajo Apache 2.0 y está orientado al inglés. La cuantización GGUF permite ejecutar el modelo en entornos con recursos limitados mediante herramientas como llama.cpp, Ollama o text-generation-inference, lo que facilita su uso en producción y experimentación. Es relevante para desarrolladores que necesitan desplegar un modelo de gran tamaño sin requerir GPUs de alta gama, siempre que se acepte una ligera pérdida de precisión frente a la versión no cuantizada.
+CorX3.8-27B-i1-GGUF es la distribucion en formato GGUF del modelo CorX3.8-27B, publicada por el usuario mradermacher. No se trata de un modelo entrenado por este autor, sino de una re-cuantizacion del modelo base CorxLabs/CorX3.8-27B, que conserva su licencia Apache 2.0. El repositorio ofrece un conjunto amplio de cuantizaciones con ficheros imatrix ("i1"), pensadas para ejecucion local en llama.cpp y entornos compatibles, con tamanos que van desde 7,2 GB en IQ1_S hasta 22,2 GB en Q6_K.
 
-## Especificaciones técnicas
+El modelo cuenta con 26.895.998.464 parametros totales (aproximadamente 26,9 mil millones), lo que lo situa en la franja de los modelos densos de 27B. La informacion disponible no detalla la arquitectura interna, la longitud de contexto ni la composicion del dataset de entrenamiento del modelo base; la model card del repositorio cuantizado se limita a describir el proceso de cuantizacion y los ficheros generados.
+
+Su relevancia practica reside en la disponibilidad de variantes GGUF con cuantizacion por imatrix, que permiten desplegar un modelo de ~27B en hardware de consumo y en servidores sin GPU de gama alta, manteniendo una calidad razonable en los rangos Q4 y Q5. El repositorio acumula 2.203 descargas y esta etiquetado para transformers y text-generation-inference, aunque el formato real de los pesos es GGUF.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 26.895.998.464 |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base transformer denso, sin confirmar en la informacion proporcionada) |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no aplica (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (imatrix y estáticos; se mencionan Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S) |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix, prefijo i1) |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (ficheros individuales por cuantizacion; tambien se ofrece el fichero imatrix para generar cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base (si es un transformer estándar, MoE, etc.) ni sobre los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). La única innovación técnica conocida en esta versión es la aplicación de cuantización con matriz de importancia (imatrix), que asigna mayor precisión a las capas y pesos más relevantes durante la compresión, mejorando la calidad en comparación con cuantizaciones estáticas. Esta técnica es utilizada por mradermacher en sus cuantizaciones para optimizar el rendimiento en hardware limitado.
+La informacion disponible no incluye detalles sobre la arquitectura del modelo base CorxLabs/CorX3.8-27B: no se especifica si emplea atencion completa, atencion lineal, mezcla de expertos o alguna variante hibrida, ni se documenta el numero de tokens de entrenamiento, la composicion del corpus ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. El unico dato estructural firme es el recuento de parametros (26.895.998.464), coherente con un modelo denso de aproximadamente 27B.
+
+Lo que si esta documentado es el proceso de cuantizacion aplicado en este repositorio: se generan cuantizaciones ponderadas con imatrix (identificador "i1"), derivadas de un fichero imatrix propio incluido en el repositorio (CorX3.8-27B.imatrix.gguf, 0,1 GB). El autor mantiene ademas una version con cuantizaciones estaticas en un repositorio separado (mradermacher/CorX3.8-27B-GGUF). Las cuantizaciones i1 se producen con la herramienta de cuantizacion de llama.cpp y estan pensadas para su uso directo en ese ecosistema.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas más allá de ser un modelo de lenguaje general.
-- El modelo está diseñado para generación de texto en inglés.
-- Al ser una cuantización GGUF, es compatible con herramientas de inferencia local como llama.cpp, Ollama, text-generation-inference y otras que soporten este formato.
-- No se ha confirmado soporte para tool calling, funciones de agente o razonamiento multi-paso, ya que no se dispone de documentación al respecto.
+- Generacion de texto conversacional en ingles: el repositorio esta etiquetado como "conversational" y "text-generation-inference".
+- Razonamiento y generacion de texto general, heredados del modelo base; no se documentan capacidades especificas adicionales.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de vision, audio o modo "thinking": no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- **Despliegue local de un modelo de 27B**: gracias a la cuantización, se puede ejecutar en una GPU de gama media (por ejemplo, RTX 4090) o incluso en CPU con suficiente RAM, para prototipos y aplicaciones personales.
-- **Generación de texto en entornos sin conexión**: al ser un archivo GGUF, se puede usar con llama.cpp o Ollama para crear aplicaciones de chat o generación de contenido sin depender de APIs externas.
-- **Investigación en compresión y cuantización**: este modelo sirve como referencia para estudiar el impacto de la cuantización imatrix en modelos de gran tamaño.
-- **Uso educativo**: para aprender a desplegar modelos cuantizados con herramientas de código abierto.
-- **Integración en pipelines de generación de texto**: se puede integrar en scripts de Python mediante la librería llama-cpp-python o similar para tareas de automatización de texto.
-- **Prototipado rápido**: al ser una cuantización, permite probar el rendimiento del modelo base sin necesidad de grandes recursos.
+- Despliegue local en estaciones de trabajo: con la cuantizacion i1-Q4_K_M (16,6 GB) el modelo cabe en una GPU de 24 GB o en configuraciones con offload parcial a CPU, lo que permite ejecutar un modelo de ~27B en hardware de consumo sin depender de servicios en la nube.
+- Prototipado de asistentes conversacionales en ingles: el modelo esta etiquetado como conversacional y puede integrarse en aplicaciones de chat mediante llama.cpp o servidores compatibles con la API de OpenAI, usando las variantes Q4_K_S o Q4_K_M por su equilibrio entre tamano y calidad.
+- Evaluacion comparativa de cuantizaciones: la disponibilidad de 23 variantes i1 (desde 7,2 GB hasta 22,2 GB) permite medir empiricamente el impacto de la cuantizacion en la perplexidad y en la calidad de las respuestas para un mismo modelo base.
+- Generacion de cuantizaciones a medida: el fichero imatrix incluido (0,1 GB) permite al usuario producir sus propias cuantizaciones con llama.cpp, ajustando el compromiso entre tamano y fidelidad para un dominio concreto.
+- Inferencia en servidores sin GPU dedicada: las variantes IQ2 e IQ3 (entre 8,5 y 12,7 GB) permiten ejecutar el modelo en CPU con memoria RAM abundante, util para entornos de laboratorio o pruebas de integracion.
+- Investigacion sobre cuantizacion de modelos densos de ~27B: el repositorio sirve como material de referencia para estudiar el comportamiento de las tecnicas IQ frente a las Q_K en un modelo de este tamano, con el grafico comparativo de perplexidad enlazado por el autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El tamaño del archivo GGUF varía según la cuantización. Para una cuantización Q4_K_S, el tamaño aproximado es de unos 15 GB, mientras que para Q8_0 sería alrededor de 29 GB.
-- Para ejecutar el modelo con cuantización Q4_K_S se recomienda una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090, A100 40GB) o una CPU con 32 GB de RAM.
-- Las cuantizaciones más bajas (Q2_K, IQ3_M) pueden caber en GPUs de 12 GB, pero con mayor pérdida de calidad.
-- Se puede desplegar con llama.cpp, Ollama, text-generation-inference (TGI) o cualquier framework que soporte GGUF.
-- La latencia y el throughput dependen del hardware y de la cuantización elegida; no hay datos oficiales.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas el overhead de contexto y cache KV. Referencias por cuantizacion: i1-IQ1_S 7,2 GB; i1-IQ2_M 10,1 GB; i1-IQ3_M 12,7 GB; i1-IQ4_XS 15,2 GB; i1-Q4_K_M 16,6 GB; i1-Q5_K_M 19,3 GB; i1-Q6_K 22,2 GB.
+- GPU recomendadas: para Q4_K_M o superiores, una RTX 4090 (24 GB) o una A100/H100 de 40-80 GB permiten mantener el modelo completo en VRAM. Para IQ2/IQ3, tarjetas de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080) son suficientes.
+- Cabe en GPU de consumo: si. Las cuantizaciones IQ2 e IQ3 caben en GPUs de 12-16 GB; Q4_K_M y Q4_K_S caben en 24 GB; las variantes Q5 y Q6 requieren 24 GB con margen ajustado o GPU profesional.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El repositorio esta etiquetado tambien para text-generation-inference y transformers, aunque el formato de pesos real es GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han encontrado modelos comparables en la información proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| CorX3.8-27B-i1-GGUF (este) | ~26,9B | no disponible | Apache 2.0 | GGUF (i1, 23 variantes) | Cuantizaciones imatrix de 7,2 a 22,2 GB |
+| CorX3.8-27B (modelo base) | ~26,9B | no disponible | Apache 2.0 | safetensors | Pesos originales de CorxLabs |
+| CorX3.8-27B-GGUF (estatico) | ~26,9B | no disponible | Apache 2.0 | GGUF (Q_K estaticas) | Mismo modelo, cuantizaciones sin imatrix |
+
+No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparacion cuantitativa con modelos de otras familias de tamano similar.
 
 ## Limitaciones y advertencias
 
-- Al ser una cuantización, existe una pérdida de calidad en la generación de texto en comparación con el modelo original en punto flotante.
-- No se conoce la arquitectura ni el entrenamiento del modelo base, por lo que no se pueden anticipar sesgos o limitaciones específicas.
-- El modelo solo está documentado para el idioma inglés; su rendimiento en otros idiomas no está garantizado.
-- La licencia Apache 2.0 permite uso comercial, pero es necesario verificar los términos del modelo base (Sigmandndnns/CorX3.8-27B) si se redistribuye o modifica.
-- No se ha confirmado la longitud de contexto soportada, lo que puede afectar a tareas que requieran contextos largos.
+- Solo soporta ingles segun la etiqueta de idioma del repositorio; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- No se documentan sesgos conocidos, pero al no haber informacion sobre el dataset de entrenamiento no es posible evaluar riesgos de sesgo de forma fundamentada.
+- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad para este modelo.
+- Las cuantizaciones de baja precision (IQ1_S, IQ1_M, Q2_K_S) degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "very low quality".
+- La licencia Apache 2.0 permite uso comercial, pero se aplica al modelo base y a esta distribucion; conviene verificar las condiciones del repositorio original CorxLabs/CorX3.8-27B.
+- No hay informacion sobre la longitud de contexto, lo que impide planificar despliegues con ventanas largas sin validacion empirica previa.
+- El repositorio tiene 0 likes y un volumen de descargas moderado (2.203), por lo que la validacion comunitaria es escasa.
+- El modelo base y sus derivados no cuentan con documentacion tecnica publica en la informacion proporcionada, lo que limita la evaluacion de su calidad en produccion.
 
 ## Enlaces
 
-- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/CorX3.8-27B-i1-GGUF)
-- [Modelo base (referencia)](https://huggingface.co/Sigmandndnns/CorX3.8-27B)
-- [Modelo GGUF estático (versión sin imatrix)](https://huggingface.co/mradermacher/CorX3.8-27B-GGUF) (mencionado en el README)
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/CorX3.8-27B-i1-GGUF
+- Modelo base: https://huggingface.co/CorxLabs/CorX3.8-27B
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/CorX3.8-27B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#CorX3.8-27B-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests

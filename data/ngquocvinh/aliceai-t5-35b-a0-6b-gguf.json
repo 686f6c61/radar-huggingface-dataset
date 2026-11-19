@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Play",
-      "url": "https://play.google.com/",
-      "snippet": "Discover millions of Android apps, games, music, movies, TV shows, books, and more on Google Play for all your devices."
-    },
-    {
-      "title": "Google Play",
-      "url": "https://play.google.com/store/apps/collection/tophome?hl=en-US",
-      "snippet": "Privacy About Google Play Developers Google Store United States (English (United States))"
-    },
-    {
-      "title": "Google Play",
-      "url": "https://accounts.google.com/InteractiveLogin?service=sj",
-      "snippet": "Google Play gives you one place to find, enjoy, & share Apps, Music, Movies & Books - instantly anywhere across the web & android …"
-    },
-    {
-      "title": "How Google Play works",
-      "url": "https://google.play/howplayworks/",
-      "snippet": "Google Play is a global digital content store that makes it easy for more than 2.5 billion monthly users across 190+ markets worldwide …"
-    },
-    {
-      "title": "Google Play Store Download Android APK Free - 53.0.27 | TechSpot",
-      "url": "https://www.techspot.com/downloads/6105-google-play-store.html",
-      "snippet": "Sep 10, 2026 · Download Google Play Store - The latest version of Google Play. Download free apps or purchase them. Enjoy instant …"
-    }
-  ]
+  "sources": []
 }

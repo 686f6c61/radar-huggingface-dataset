@@ -65,67 +65,41 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "typed decision (choice / noul / score)",
-      "dataset": "decision-v7 development (1,204 records; ten trained public sources + programmatic policy data)",
+      "task": "typed decisions",
+      "dataset": "transfer-v4 test: six never-trained public sources and held-out policy structures (656 questions)",
       "metric": null,
-      "value": 0.876
+      "value": 0.852
     },
     {
-      "task": "typed decision (choice / noul / score)",
-      "dataset": "decision-v7 development (1,204 records; ten trained public sources + programmatic policy data)",
-      "metric": "ECE, raw probabilities",
-      "value": 0.06
+      "task": "typed decisions",
+      "dataset": "transfer-v4 test: six never-trained public sources and held-out policy structures (656 questions)",
+      "metric": null,
+      "value": 0.199
     },
     {
-      "task": "typed decision",
-      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "task": "typed decisions",
+      "dataset": "breadth-v1 test: 14 held-out public datasets (3,089 questions)",
       "metric": null,
-      "value": 0.812
+      "value": 0.698
     },
     {
-      "task": "typed decision",
-      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "task": "typed decisions",
+      "dataset": "hard-v1 test (1,088 questions; programmatic labels, held-out templates)",
       "metric": null,
-      "value": 0.291
+      "value": 0.834
     },
     {
-      "task": "typed decision",
-      "dataset": "transfer-v4 test (read once)",
+      "task": "typed decisions",
+      "dataset": "devtools-v1 test (1,071 questions; six public developer-tooling sources)",
       "metric": null,
-      "value": 0.837
+      "value": 0.791
     },
     {
-      "task": "typed decision",
-      "dataset": "transfer-v4 test (read once)",
+      "task": "typed decisions",
+      "dataset": "documents-v1 test (936 questions on CFPB complaint narratives)",
       "metric": null,
-      "value": 0.243
+      "value": 0.9
     }
   ],
-  "sources": [
-    {
-      "title": "Soulseek? What is? : r/musichoarder - Reddit",
-      "url": "https://www.reddit.com/r/musichoarder/comments/xenxc7/soulseek_what_is/",
-      "snippet": "Sep 15, 2022 · Soulseek is a hybrid p2p and centralized system for file sharing. The vast majority of users are music-focused, but …"
-    },
-    {
-      "title": "Download the actual Soulseek : r/Soulseek - Reddit",
-      "url": "https://www.reddit.com/r/Soulseek/comments/1bxr9xq/download_the_actual_soulseek/",
-      "snippet": "Hey guys, I downloaded Soulseek like 4 years ago when I started djing, but recently my pc stopped working so I changed it. I want to …"
-    },
-    {
-      "title": "Instruktaż/Tutorial - Soulseek/QNAP - program do wymiany muzyki …",
-      "url": "https://forum.qnap.net.pl/threads/soulseek-qnap-program-do-wymiany-muzyki-mp3-flac.30990/",
-      "snippet": "Aug 18, 2020 · SoulSeek/QNAP - Jak zainstalować? O ... Soulseek [wikipedia] – nazwa sieci i programu P2P, który umożliwia …"
-    },
-    {
-      "title": "sharing is caring - Reddit",
-      "url": "https://www.reddit.com/r/Soulseek/",
-      "snippet": "Subreddit for P2P file-sharing client Soulseek. Sharing is caring."
-    },
-    {
-      "title": "Soulbeet: Music library manager. Easy search & download for ... - Reddit",
-      "url": "https://www.reddit.com/r/selfhosted/comments/1pi4j9j/soulbeet_music_library_manager_easy_search/",
-      "snippet": "Hey r/selfhosted, I’ve been using Slskd (Soulseek) to find music and Beets to organize my library for a bit. Both tools are great, but …"
-    }
-  ]
+  "sources": []
 }

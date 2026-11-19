@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "markstanl/coherencerl-exp7-1_5b-fullft · Hugging Face",
-      "url": "https://huggingface.co/markstanl/coherencerl-exp7-1_5b-fullft",
-      "snippet": "markstanl / coherencerl-exp7-1_5b-fullft Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
-    },
-    {
-      "title": "markstanl/coherencerl-exp7-1_5b-lora · Hugging Face",
-      "url": "https://huggingface.co/markstanl/coherencerl-exp7-1_5b-lora",
-      "snippet": "markstanl / coherencerl-exp7-1_5b-lora Like 0 Text Generation Transformers Safetensors qwen2 Generated from Trainer trl grpo conversational text-generation-inference arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

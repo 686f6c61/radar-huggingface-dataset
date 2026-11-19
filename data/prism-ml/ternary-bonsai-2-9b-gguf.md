@@ -2,102 +2,93 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-9B es un modelo vision-lenguaje derivado de Qwen/Qwen3.5-9B en el que todos los pesos del transformer de lenguaje (embeddings, proyecciones de atención, proyecciones MLP y LM head) se han ternarizado a valores {-1, 0, +1} con escalas FP16 por grupos. Lo publica prism-ml y se distribuye exclusivamente en formato GGUF con empaquetados propios (PTQ1_0, PQ2_0 y Q2_0) que se consumen directamente en kernels personalizados sin expandirse nunca de vuelta a FP16. El resultado es un modelo de clase 9B que ocupa entre 2,00 GB y 2,56 GB en disco, frente a los ~17,9 GB que ocuparía a FP16, lo que lo sitúa en el rango de despliegue en dispositivo y en GPUs de consumo.
+Bonsai 2 Ternary 9B es un modelo vision-lenguaje de clase 9B desarrollado por Prism ML (prism-ml) que aplica cuantización ternaria a los pesos del transformer, con valores restringidos a {−1, 0, +1} y escalas de grupo en FP16. Deriva del modelo base Qwen/Qwen3.5-9B, cuya arquitectura se mantiene sin cambios: atención híbrida (3 capas de atención lineal por cada capa de atención completa), MLP SwiGLU, RoPE y RMSNorm. El resultado es un modelo de ~8,95B parámetros en el lenguaje más una torre de visión de ~0,46B, empaquetado en GGUF con un tamaño de solo 2,00–2,56 GB para el modelo de lenguaje, frente a los ~17,9 GB que ocuparía en FP16.
 
-El modelo conserva la arquitectura híbrida de atención de su base: 32 bloques con una proporción 3:1 entre capas de atención lineal (24 capas) y capas de atención completa (8 capas), MLP SwiGLU, RoPE y RMSNorm, con una longitud de contexto heredada de 262.144 tokens. Incluye además una torre de visión opcional de ~0,46B parámetros y 27 bloques, empaquetada por separado como mmproj, que solo se carga cuando llega una imagen. La licencia es Apache 2.0.
+La propuesta central es la inferencia en dispositivo (on-device) con requisitos de memoria muy reducidos: los pesos ternarios nunca se expanden a FP16 en tiempo de ejecución, sino que kernels personalizados los consumen directamente. Se ofrecen tres empaquetados del mismo conjunto de pesos (PTQ1_0, PQ2_0 y Q2_0), que difieren únicamente en el layout de almacenamiento y la velocidad del kernel. Hereda del modelo base una ventana de contexto de 262.144 tokens y capacidad de entrada de imagen mediante un paquete mmproj separado.
 
-Su relevancia actual está en la combinación de tres factores poco habituales: cuantización ternaria nativa con kernels propios en llama.cpp (CUDA, Metal y CPU), contexto de 262K tokens heredado sin cambios de arquitectura, y soporte multimodal de imagen y texto. El autor publica además un cabezal MTP (multi-token prediction) y un drafter DFlash2 para decodificación especulativa, lo que apunta a un caso de uso centrado en inferencia local de bajo coste con razonamiento largo.
+Es relevante ahora porque demuestra que un modelo multimodal de casi 9B puede ejecutarse con una huella de memoria inferior a 3 GB, abriendo la puerta a despliegues en hardware de consumo, portátiles y dispositivos con GPU integrada, manteniendo contexto largo y visión. La licencia Apache 2.0 y la compatibilidad parcial con llama.cpp upstream facilitan su adopción en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido de atención (3 capas de atención lineal : 1 capa de atención completa), MLP SwiGLU, RoPE, RMSNorm; 32 bloques, hidden 4096, embedding y LM head separados |
-| Parametros totales | ~8,95B en el modelo de lenguaje + ~0,46B en la torre de visión (según la model card). El metadato de safetensors del repositorio indica 1.470.621.184 parametros, una cifra no coherente con la anterior; se recomienda tratar el dato de safetensors como no fiable |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | 262.144 tokens (heredada del modelo base Qwen3.5-9B) |
-| Tipos de cuantizacion | Ternaria {-1, 0, +1} con escalas FP16 por grupos, en tres empaquetados: PTQ1_0 (~1,78 bits/peso), PQ2_0 (~2,16 bits/peso), Q2_0 (~2,28 bits/peso). Tensores en F32: pesos de normalización y ruta de estado de atención lineal (ssm_alpha, ssm_beta). Torre de visión en Q8_0 o BF16 |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer de atención híbrida (3 capas de atención lineal : 1 de atención completa), SwiGLU MLP, RoPE, RMSNorm; pesos ternarios con rotación Hadamard por bloques |
+| Parametros totales | ~8,95B (modelo de lenguaje) + ~0,46B (torre de visión); el dato de safetensors del repo indica 1.470.621.184, inconsistente con la model card |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 262.144 tokens (heredada del modelo base) |
+| Tipos de cuantizacion | PTQ1_0 (trits densos, ~1,78 bits/peso), PQ2_0 (slots de 2 bits, ~2,16 bits/peso), Q2_0 (~2,28 bits/peso); mmproj en Q8_0 o BF16 |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (PTQ1_0, PQ2_0, Q2_0; mmproj en Q8_0 y BF16; MTP en Q8_0; DFlash2 en Q8_0) |
+| Formato de pesos | GGUF (llama.cpp); tensores de normalización y ruta de estado de atención lineal en F32 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen3.5-9B sin cambios estructurales: 32 bloques con atención híbrida en proporción 3:1, es decir, 24 capas de atención lineal y 8 capas de atención completa, más MLP SwiGLU, RoPE y RMSNorm. El modelo base queda descrito como columna vertebral de atención híbrida, y Bonsai 2 lo que hace es ternarizar los pesos y reorganizar su almacenamiento, no rediseñar la red. Las innovaciones técnicas concretas que documenta el autor son dos. La primera es la base de pesos: se aplica una rotación de Hadamard por bloques que queda plegada dentro de los pesos almacenados, y el runtime aplica la transformación correspondiente a las activaciones. La segunda es el formato de empaquetado: los mismos pesos ternarios se ofrecen en tres layouts (PTQ1_0 con trits densos, PQ2_0 con slots de 2 bits y Q2_0) que se consumen directamente en kernels personalizados y nunca se expanden a FP16.
+La arquitectura replica la del backbone Qwen3.5-9B: 32 bloques con dimensión oculta 4096, embedding y LM head separados, y una combinación de 24 capas de atención lineal y 8 de atención completa. La innovación principal es la ternarización de los pesos de lenguaje (embeddings, proyecciones de atención, proyecciones MLP y LM head) con escalas de grupo en FP16. Para preservar la calidad, los pesos se almacenan tras aplicar una rotación Hadamard por bloques que se pliega en el tensor guardado; en tiempo de ejecución, el kernel aplica la transformación correspondiente a las activaciones. Los tensores de normalización y la ruta de estado de la atención lineal (`ssm_alpha`, `ssm_beta`) permanecen en F32 para evitar degradación.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. Tampoco se detalla el proceso de ternarización (si fue quantization-aware training, post-training quantization o una mezcla). La model card sí indica que el modelo conserva el modo thinking del base, con parámetros de muestreo diferenciados para modo thinking (temperature 1,0, top_p 0,95, top_k 20, presence_penalty 1,0) y modo no thinking (temperature 0,7, top_p 0,80, top_k 20, presence_penalty 1,5), aplicando las penalizaciones sobre los últimos 64 tokens.
+La torre de visión se distribuye por separado como paquete mmproj (Q8_0 recomendado de 0,62 GB, o BF16 de 0,92 GB como referencia de precisión) y solo se carga cuando llega una imagen, lo que permite mantener un consumo de memoria bajo en cargas puramente textuales. El repositorio incluye además un cabezal MTP (multi-token prediction) opcional integrado en el archivo PQ2_0-MTP y un drafter de bloques DFlash2 opcional, orientados a decodificación especulativa. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat propia del base y conmutador `enable_thinking` para activar o desactivar el modo razonamiento.
-- Razonamiento explícito en modo thinking, heredado del modelo base Qwen3.5-9B.
-- Comprensión de imagen y texto (pipeline `image-text-to-text`): descripción de imágenes, respuesta a preguntas sobre una imagen y lectura de texto en imágenes, con presupuesto de tokens de imagen ajustable mediante `--image-min-tokens`.
-- Contexto largo: 262.144 tokens heredados, útil para documentos extensos o conversaciones muy largas.
-- Decodificación especulativa: el autor publica un cabezal MTP integrado (archivo PQ2_0-MTP) y un drafter de bloques DFlash2 opcional.
-- Inferencia en dispositivo: kernels ternarios propios para CUDA, Metal y CPU a través del fork PrismML de llama.cpp.
-- Servidor compatible con la API de OpenAI (`llama-server`), lo que permite integrarlo como endpoint `/v1/chat/completions`.
-- No hay información disponible sobre soporte de tool calling o function calling, ni sobre capacidades de audio o de agentes multi-paso.
+- Generación de texto y razonamiento conversacional multi-turno, con soporte de modo "thinking" activable o desactivable mediante `enable_thinking` en el template de chat.
+- Comprensión de imágenes y texto (pipeline image-text-to-text): descripción de imágenes, respuesta a preguntas visuales y lectura de texto en imágenes.
+- Procesamiento de contexto largo de hasta 262.144 tokens, adecuado para documentos extensos o conversaciones prolongadas.
+- Servidor compatible con la API de OpenAI (`/v1/chat/completions`) mediante `llama-server`.
+- Soporte de decodificación especulativa mediante cabezal MTP integrado y drafter DFlash2 opcional.
+- Ejecución en CUDA, Metal y CPU a través de llama.cpp (fork de PrismML; Q2_0 también en upstream desde b11556).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en portátil con GPU integrada o CPU: con 2,42 GB en PQ2_0 (o 2,00 GB en PTQ1_0) el modelo de lenguaje cabe en memoria unificada de equipos modestos, lo que permite ejecutar un modelo de clase 9B sin conexión y sin servidor dedicado.
-- Asistente documental de contexto largo: los 262.144 tokens de ventana permiten cargar informes, transcripciones o repositorios de texto extensos y hacer preguntas sobre ellos, con la salvedad de que el KV cache a esa longitud debe dimensionarse aparte.
-- Análisis de documentos escaneados y capturas: la torre de visión (mmproj Q8_0, 0,62 GB) habilita OCR de apoyo y descripción de figuras; el autor recomienda subir el presupuesto de tokens de imagen para texto pequeño o denso.
-- Servicio interno autoalojado compatible con OpenAI: desplegando `llama-server` con `--mmproj`, cualquier cliente que hable la API de OpenAI puede consumirlo, lo que facilita sustituir una API externa en herramientas de desarrollo internas.
-- Prototipado y evaluación de cuantización ternaria: para investigadores que estudian cuantización extrema por debajo de 3 bits, los tres empaquetados del mismo conjunto de pesos permiten comparar layout y velocidad de kernel manteniendo los pesos idénticos.
-- Generación de texto con latencia baja asistida por decodificación especulativa: el cabezal MTP integrado y el drafter DFlash2 están pensados para acelerar la generación, lo que encaja en tareas interactivas donde importa el tiempo hasta el primer token y el throughput.
-- Procesamiento por lotes en CPU de solo texto: al no cargar el mmproj, el footprint baja al tamaño del GGUF de lenguaje, lo que hace viable ejecutar el modelo en servidores sin GPU para tareas de clasificación, resumen o extracción.
-- Despliegue en el borde con contexto largo: la combinación de pesos ternarios y atención lineal en 24 de las 32 capas reduce el coste de memoria asociado al estado respecto a un transformer de atención completa equivalente, algo relevante en dispositivos con memoria limitada.
+- Asistentes en dispositivo con visión: un portátil o mini-PC con GPU integrada puede cargar el modelo de lenguaje (2,42 GB en PQ2_0) más el mmproj Q8_0 (0,62 GB) y responder preguntas sobre capturas de pantalla o fotos sin conexión a la nube, gracias a la huella de memoria total inferior a 3,1 GB.
+- Análisis de documentos largos: con 262.144 tokens de contexto, el modelo puede ingerir contratos, informes o transcripciones extensas y responder preguntas sobre ellos en una sola pasada, sin fragmentación.
+- Atención al cliente automatizada: el servidor compatible con OpenAI permite desplegar conversaciones multi-turno con historial largo; el modo thinking desactivable reduce latencia en respuestas simples y lo activa en consultas complejas.
+- Procesamiento de texto en imágenes: digitalización de facturas, tickets o formularios escaneados usando `--image-min-tokens 1024` para mejorar la lectura de texto pequeño y denso.
+- Prototipado e investigación en cuantización extrema: los tres empaquetados (PTQ1_0, PQ2_0, Q2_0) del mismo conjunto de pesos permiten comparar layouts de almacenamiento y velocidad de kernel manteniendo idéntica calidad, útil para estudiar el impacto de la ternarización.
+- Despliegue en entornos con restricciones de memoria: servidores edge, dispositivos embebidos con GPU o contenedores con límites estrictos de VRAM/RAM se benefician de un modelo multimodal de 9B que cabe en menos de 3 GB.
+- Generación asistida con decodificación especulativa: el cabezal MTP integrado o el drafter DFlash2 permiten acelerar la generación en producción cuando la latencia es crítica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluación, y los resultados de búsqueda web obtenidos no contienen información sobre este modelo (corresponden a productos homónimos sin relación: Prism de OpenAI, GraphPad Prism y Prism Launcher). No se inventan cifras.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Peso del modelo de lenguaje: 2,00 GB (PTQ1_0), 2,42 GB (PQ2_0) o 2,56 GB (Q2_0).
-- Torre de visión: 0,62 GB (mmproj Q8_0, recomendado) o 0,92 GB (mmproj BF16, precisión de referencia).
-- Variantes adicionales: 2,68 GB el archivo PQ2_0 con cabezal MTP integrado (se carga en lugar del PQ2_0 simple) y 1,57 GB el drafter DFlash2.
-- Conjunto típico texto más imagen: PQ2_0 + mmproj Q8_0 ≈ 3,04 GB de pesos, más el KV cache y los buffers de runtime.
-- KV cache: no disponible. Depende de la implementación y de la longitud de contexto configurada; a 262.144 tokens el consumo puede crecer de forma notable, por lo que conviene dimensionarlo con la longitud real de trabajo (el ejemplo de la model card usa `-c 32768`).
-- GPU de consumo: sí cabe, en cualquier GPU con al menos ~4-6 GB de VRAM libres para el modelo de lenguaje, y en GPUs integradas con memoria unificada. El autor indica explícitamente el objetivo "on-device" y soporte de Metal, por lo que también es viable en Mac con Apple Silicon.
-- GPU de centro de datos: no se especifican recomendaciones concretas (A100, H100, etc.); el soporte se declara para CUDA de forma genérica.
-- Opciones de despliegue: llama.cpp a través del fork PrismML-Eng/llama.cpp (rama `prism`), con binarios `llama-cli`, `llama-mtmd-cli` y `llama-server` (API compatible con OpenAI). El llama.cpp upstream reciente solo ejecuta el archivo Q2_0 (requiere el runtime de activación Hadamard) y rechaza PQ2_0 y PTQ1_0 por tipo desconocido. La model card menciona MLX entre los backends soportados. No hay información sobre vLLM, TGI, Ollama o TensorRT-LLM.
-- Latencia y throughput: no disponible. No se publican mediciones.
-- Advertencia de backend: con la build actual del fork, el mmproj BF16 puede hacer caer `llama-server` cuando se procesan varias peticiones con imagen simultáneas; el autor recomienda Q8_0.
+- VRAM estimada para inferencia: ~2,0 GB (PTQ1_0), ~2,4 GB (PQ2_0) o ~2,6 GB (Q2_0) para el modelo de lenguaje; añadir 0,62 GB (mmproj Q8_0) o 0,92 GB (BF16) si se usa visión. El archivo MTP ocupa 2,68 GB y el drafter DFlash2 1,57 GB adicionales.
+- GPU recomendadas: cualquier GPU con soporte CUDA o Metal; el modelo cabe holgadamente en RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090, A100 y H100. El límite práctico lo marca la memoria, no la potencia de cómputo.
+- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 4 GB de VRAM; también en Apple Silicon vía Metal y en CPU.
+- Opciones de despliegue: llama.cpp (fork PrismML-Eng/llama.cpp, rama `prism`, para todos los archivos; upstream llama.cpp b11556 o superior solo para Q2_0), `llama-cli`, `llama-mtmd-cli` (imagen + texto) y `llama-server` (API compatible con OpenAI). No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / tamano | Modalidad | Licencia |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-9B (PQ2_0) | ~8,95B LM + ~0,46B visión | 262.144 tokens | GGUF ternario, 2,42 GB (LM) | Texto e imagen | Apache 2.0 |
-| Ternary-Bonsai-2-9B (PTQ1_0) | ~8,95B LM + ~0,46B visión | 262.144 tokens | GGUF ternario, 2,00 GB (LM) | Texto e imagen | Apache 2.0 |
-| Qwen3.5-9B (modelo base) | no disponible en detalle | 262.144 tokens | FP16, ~17,9 GB según la model card | no disponible | no disponible |
-| Otras cuantizaciones de 2 bits de modelos de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ternary-Bonsai-2-9B | ~8,95B + 0,46B visión | 262.144 | Ternaria (PTQ1_0/PQ2_0/Q2_0), GGUF | Apache 2.0 | Hugging Face, llama.cpp |
+| Qwen3.5-9B (base) | ~9B | 262.144 | FP16/BF16 y cuantizaciones estándar | No disponible | Hugging Face |
+| Alternativas ternarias de clase 9B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La única comparación con datos verificables en la información disponible es contra el propio modelo base: la reducción de ~17,9 GB a 2,42 GB (PQ2_0) supone aproximadamente un 86 % menos de peso, manteniendo la arquitectura y el contexto sin cambios. No se dispone de datos de rendimiento que permitan comparar calidad frente al base ni frente a alternativas de cuantización de 4 bits de la misma familia.
+No se dispone de datos de benchmarks ni de otras alternativas ternarias comparables en la información proporcionada; la comparación con el modelo base se limita a arquitectura, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de calidad. La degradación introducida por la ternarización frente al modelo base FP16 es desconocida y no está cuantificada en la información disponible.
-- Sesgos conocidos: no disponible. No se documenta ninguna evaluación de sesgo, toxicidad o alineación.
-- Riesgo de alucinación: no cuantificado, pero todo modelo generativo de este tamaño presenta riesgo de fabricar contenido, especialmente en modo no thinking y con presencia de imágenes ambiguas.
-- Idiomas soportados: no disponible. No se declara lista de idiomas, por lo que la cobertura multilingüe no puede darse por garantizada.
-- Compatibilidad de backend muy restringida: PTQ1_0 y PQ2_0 solo funcionan con el fork PrismML de llama.cpp (rama `prism`); el llama.cpp upstream solo acepta Q2_0. Esto crea dependencia de un fork mantenido por un tercero y complica las actualizaciones.
-- El empaquetado ternario se consume en kernels personalizados y nunca se expande a FP16, de modo que cualquier herramienta que espere safetensors o pesos estándar no podrá leerlo.
-- Inestabilidad documentada: el mmproj BF16 puede provocar caídas de `llama-server` con peticiones de imagen concurrentes; usar Q8_0.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, con obligación de conservar avisos de licencia y atribución. No se documentan restricciones adicionales, pero tampoco se ofrece garantía alguna.
-- Consumo de memoria a contexto completo: aunque los pesos son pequeños, el KV cache a 262.144 tokens puede dominar el uso de VRAM; el autor no publica cifras y el ejemplo de servidor usa 32.768 tokens.
-- Discrepancia de metadatos: el campo de parámetros de safetensors del repositorio (1.470.621.184) no concuerda con los ~8,95B declarados en la model card. Conviene verificar el modelo antes de planificar recursos.
-- No hay ninguna relación entre este modelo y los productos "Prism" que aparecen en los resultados de búsqueda web; esa búsqueda no ha aportado información útil.
+- La ternarización extrema (~1,78–2,28 bits/peso) implica una pérdida de precisión frente al modelo base en FP16; no se han publicado evaluaciones cuantitativas que permitan medir esa degradación.
+- El dato de parámetros totales de safetensors (1.470.621.184) no coincide con los ~8,95B declarados en la model card; conviene verificar la integridad del repositorio antes de desplegar.
+- El paquete mmproj BF16 puede provocar caídas de `llama-server` con varias peticiones de imagen concurrentes según la model card; se recomienda usar Q8_0 en producción.
+- PTQ1_0 y PQ2_0 requieren el fork PrismML-Eng/llama.cpp; solo Q2_0 funciona en llama.cpp upstream desde b11556, lo que limita la portabilidad y añade dependencia de un fork.
+- Riesgo de alucinación inherente a los modelos generativos, no cuantificado en la información disponible.
+- Sesgos conocidos: no disponibles.
+- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento multilingüe homogéneo.
+- Soporte de tool calling y function calling: no disponible en la documentación; verificar antes de integrarlo en pipelines de agentes.
+- La licencia Apache 2.0 permite uso comercial, pero el fork de llama.cpp y los kernels ternarios deben evaluarse por separado en cuanto a su licencia y mantenimiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Web de Prism ML: https://prismml.com
-- Demo y ejemplos (fuente de verdad para ejecutar los modelos): https://github.com/PrismML-Eng/Bonsai-demo
-- Fork de llama.cpp con los kernels ternarios (rama `prism`): https://github.com/PrismML-Eng/llama.cpp
-- Binarios precompilados: https://github.com/PrismML-Eng/llama.cpp/releases/latest
-- Discord del proyecto: https://discord.gg/prismml
-- Papers, blogs y demos adicionales: no disponible (los resultados de búsqueda web obtenidos no están relacionados con este modelo)
+- Demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo
+- Fork de llama.cpp: https://github.com/PrismML-Eng/llama.cpp
+- Releases del fork: https://github.com/PrismML-Eng/llama.cpp/releases/latest
+- llama.cpp upstream b11556: https://github.com/ggml-org/llama.cpp/releases/tag/b11556
+- Discord: https://discord.gg/prismml
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

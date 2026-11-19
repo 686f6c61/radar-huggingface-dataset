@@ -2,101 +2,81 @@
 
 ## Resumen
 
-Stable Audio 3 Small Music es un modelo de generacion de audio por difusion desarrollado por Stability AI, especializado en la sintesis de musica a partir de descripciones textuales. Se distribuye en Hugging Face bajo el identificador stabilityai/stable-audio-3-small-music y esta afinado (finetune) a partir del checkpoint stabilityai/stable-audio-3-small-music-base, lo que lo situa como una variante orientada especificamente al dominio musical dentro de la familia Stable Audio 3. Su pipeline declarado es text-to-audio y su libreria asociada es stable-audio-3.
+Stable Audio 3 Small Music es un modelo de generación de audio musical a partir de descripciones textuales, desarrollado por Stability AI. Se trata de la variante pequeña y especializada en música de la familia Stable Audio 3, construida sobre el modelo base `stable-audio-3-small-music-base` mediante un proceso de ajuste fino. El modelo resuelve la tarea de síntesis text-to-audio, es decir, convertir un prompt en inglés en una señal de audio coherente con la descripción musical solicitada (instrumentación, género, ambiente, tempo).
 
-El modelo cuenta con 567.573.761 parametros reales (aproximadamente 567,6 millones) segun los pesos almacenados en safetensors, y el repositorio ocupa 3,5 GB. Este tamano lo situa en la gama "small" de la familia, lo que resulta relevante porque permite inferencia y ajuste fino en hardware de consumo, un factor decisivo para estudios pequenos, creadores independientes y equipos de investigacion que no disponen de clusters dedicados.
+Con 567.573.761 parámetros (aproximadamente 568 millones) y un repositorio de 3,5 GB en formato safetensors, es un modelo de tamaño contenido que prioriza la eficiencia frente a las variantes mayores de la familia. Su arquitectura es de difusión, según indican las etiquetas del repositorio, lo que lo sitúa en la estela de los modelos generativos de audio basados en procesos de ruido iterativo en lugar de arquitecturas autorregresivas.
 
-Su relevancia actual radica en la combinacion de tres factores: generacion musical condicionada por texto en ingles, publicacion de un modelo base separado que facilita el ajuste fino sobre dominios concretos, y un regimen de acceso restringido (gated) que obliga a aceptar las condiciones de uso antes de descargar los pesos. El acceso gated y la licencia stable-audio-community implican que cualquier uso comercial debe revisarse contra los terminos publicados en la ficha oficial del repositorio.
+Es relevante ahora porque representa una opción de código abierto (con licencia comunitaria) para generación musical, con más de 28.000 descargas y 248 likes en Hugging Face en el momento de la consulta. Su acceso está restringido (gated): requiere aceptar las condiciones en la plataforma antes de descargar los pesos. La información pública disponible no detalla la composición del dataset ni los resultados de benchmarks, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion para generacion de audio (etiquetas del repositorio: diffusion, audio-generation, text-to-audio); detalles internos de la red no disponibles |
+| Arquitectura | Difusión (diffusion) para generación de audio |
 | Parametros totales | 567.573.761 |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica: es un modelo de generacion de audio, no de texto. Duracion maxima de audio generado: no disponible |
-| Tipos de cuantizacion | No disponible (el repositorio publica pesos en safetensors; no se documentan variantes GGUF, int8 ni int4) |
-| Idiomas soportados | Ingles (en) para los prompts de condicionamiento |
-| Licencia | stable-audio-community (etiquetada como license:other); condiciones concretas de uso comercial no disponibles en la informacion proporcionada |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Inglés (en) |
+| Licencia | stable-audio-community |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 3,5 GB |
-| Pipeline | text-to-audio |
-| Libreria | stable-audio-3 |
-| Modelo base | stabilityai/stable-audio-3-small-music-base |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Descargas | 14.135 |
-| Likes | 134 |
-| Fecha de creacion | 2026-05-17 |
-| Ultima actualizacion | 2026-05-19 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible identifica el modelo como un sistema de generacion de audio basado en difusion, etiquetado explicitamente con las categorias diffusion, audio-generation, music y text-to-audio. Se trata, por tanto, de un modelo generativo que parte de ruido y lo refina iterativamente bajo condicionamiento textual, en lugar de un transformer autorregresivo de lenguaje. No se dispone de detalles sobre el tipo de backbone (U-Net, transformer de difusion o arquitectura hibrida), el espacio latente utilizado, ni el mecanismo de condicionamiento textual empleado.
+El modelo emplea una arquitectura de difusión orientada a la generación de audio, según las etiquetas oficiales del repositorio (`diffusion`, `audio-generation`, `text-to-audio`). Se trata de un ajuste fino (finetune) del modelo `stabilityai/stable-audio-3-small-music-base`, especializado en la síntesis de música a partir de texto. La información pública no especifica el número de tokens de entrenamiento, la composición del dataset musical, ni si se aplicaron técnicas de RLHF, DPO u otros procesos de alineación.
 
-El modelo es un finetune del checkpoint stabilityai/stable-audio-3-small-music-base, lo que indica una estrategia de entrenamiento en dos fases: un modelo base entrenado sobre datos generales de audio y una posterior especializacion hacia el dominio musical. No se han proporcionado datos sobre el numero de tokens o horas de audio de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal u otras) en la informacion disponible. El modelo aparece asociado a la referencia arXiv 2605.17991, cuyo contenido no se ha podido verificar en los resultados de busqueda obtenidos.
+No se dispone de detalles técnicos sobre innovaciones concretas como decodificación especulativa, atención lineal o mecanismos de condicionamiento textual específicos. La librería asociada es `stable-audio-3`, lo que sugiere un ecosistema de inferencia propio de Stability AI para esta familia de modelos. Cualquier dato adicional sobre la arquitectura interna (número de capas, dimensión de los embeddings, tipo de scheduler de difusión) no está disponible en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de musica a partir de prompts de texto en ingles (pipeline text-to-audio).
-- Generacion de audio condicionada por descripcion textual, con especializacion declarada en el dominio musical segun las etiquetas del repositorio.
-- Punto de partida para ajuste fino: al existir un modelo base diferenciado (stable-audio-3-small-music-base), es posible plantear entrenamientos adicionales sobre estilos, instrumentos o generos concretos.
-- Distribucion en safetensors, formato adecuado para cargas parciales y para pipelines de ajuste fino.
-- Soporte de tool calling / function calling: no disponible (no aplica a un modelo de generacion de audio).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no aplica).
-- Capacidades de vision, audio de entrada o modo "thinking": no disponibles en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun el campo de idiomas del repositorio.
+- Generación de audio musical a partir de prompts de texto en inglés (text-to-audio).
+- Síntesis de piezas musicales condicionadas por descripción (género, instrumentación, ambiente, tempo, según el prompt).
+- Especialización en música: el sufijo "music" del nombre indica un ajuste orientado a contenido musical frente a otros tipos de audio.
+- Salida en formato de audio (el pipeline declarado es `text-to-audio`).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
+- Capacidades especiales (modo thinking, visión, audio de entrada): no disponibles; el modelo es exclusivamente de generación de audio a partir de texto.
 
 ## Casos de uso
 
-- Prototipado rapido de bandas sonoras: un compositor puede describir en texto el caracter de una pieza y obtener un borrador sonoro para iterar antes de la produccion final, aprovechando que el modelo es pequeno (567,6 M de parametros) y por tanto rapido de ejecutar en local.
-- Generacion de loops y samples para produccion musical: el modelo puede emplearse para crear fragmentos musicales que despues se procesan, recortan o rearman en un DAW, reduciendo el tiempo dedicado a buscar muestras en librerias.
-- Musica para videojuegos en desarrollo temprano: equipos pequenos pueden generar pistas provisionales para niveles o menus, sustituibles despues por material definitivo, sin depender de un compositor externo en cada iteracion.
-- Contenido para creadores y podcasting: generacion de sintonias, cortinillas y fondos musicales para videos o episodios, donde el requisito es obtener una pieza funcional con una descripcion breve en ingles.
-- Sonido para publicidad y presentaciones: creacion de propuestas musicales para pitches y demos internas, con la advertencia de que la licencia stable-audio-community debe revisarse antes de cualquier difusion comercial.
-- Investigacion en generacion musical: el modelo sirve como linea base reproducible sobre la que comparar tecnicas de difusion aplicadas a audio, y el checkpoint base facilita experimentos de ajuste fino controlados.
-- Personalizacion mediante ajuste fino: dado el bajo numero de parametros y la existencia de un modelo base, es viable entrenar adaptaciones a generos o estilos concretos con recursos modestos.
+- **Producción musical asistida por prompt**: un compositor describe en inglés el estilo, instrumentación y tempo deseados, y el modelo genera un borrador de audio que sirve como punto de partida para arreglos posteriores. Su tamaño contenido (568 M de parámetros) permite iterar rápidamente en local.
+- **Generación de bandas sonoras para vídeo y juegos**: creación de loops y ambientes musicales para prototipos de videojuegos o edición de vídeo, donde se necesita material musical original sin depender de librerías de stock.
+- **Prototipado rápido en estudios de diseño sonoro**: evaluación de ideas musicales antes de encargar una producción completa, usando prompts descriptivos en inglés para explorar variaciones de género y ambiente.
+- **Contenido para podcasts y audiolibros**: generación de cortinillas, jingles y música de fondo adaptada a la descripción textual del tono deseado (por ejemplo, "calm piano intro" o "upbeat electronic outro").
+- **Investigación en generación de audio**: el modelo sirve como referencia de código abierto (con licencia comunitaria) para experimentos de difusión aplicada a audio, comparación de schedulers y evaluación de condicionamiento textual en música.
+- **Integración en pipelines de creación de contenido**: al estar disponible en safetensors y con librería `stable-audio-3`, puede integrarse en flujos automatizados de generación de assets musicales para aplicaciones creativas.
+- **Educación y demostraciones**: su tamaño moderado y su licencia comunitaria lo hacen adecuado para talleres y demos sobre modelos generativos de audio en entornos académicos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos: aproximadamente 2,3 GB en precision completa (fp32) y alrededor de 1,1 GB en fp16 o bf16, calculado a partir de los 567,6 millones de parametros.
-- VRAM estimada para inferencia completa: no disponible. Como estimacion, un modelo de difusion de este tamano suele requerir entre 4 y 8 GB considerando activaciones, el decodificador de audio y el tamano de lote, pero este dato no esta confirmado para este modelo concreto.
-- GPU recomendadas: no especificadas por el autor. Por tamano, cabria esperar funcionamiento en GPU de consumo modernas (por ejemplo, gamas RTX 3060 de 12 GB en adelante) y, con holgura, en RTX 4090, A100 o H100.
-- Compatibilidad con GPU de consumo: probable por el tamano del modelo, aunque no confirmada oficialmente en la informacion proporcionada.
-- Opciones de despliegue: la libreria indicada en el repositorio es stable-audio-3. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas a modelos de lenguaje y no aplicables directamente a este caso.
-- Latencia y throughput estimados: no disponible.
+- **VRAM estimada para inferencia**: no disponible de forma oficial. Como referencia orientativa por el tamaño (568 M de parámetros), los pesos en precisión completa ocuparían aproximadamente 2,3 GB en fp32 y 1,1 GB en fp16; el repositorio completo pesa 3,5 GB, lo que sugiere que cabe en GPUs de consumo con margen.
+- **GPU recomendadas**: no disponible en la información proporcionada. Por tamaño, una GPU de consumo moderna (por ejemplo, gama RTX 30/40 con 8 GB o más) debería ser suficiente para inferencia en fp16, aunque no hay confirmación oficial.
+- **¿Cabe en GPU de consumo?**: probablemente sí, dado el tamaño del modelo, pero no hay datos oficiales que lo confirmen.
+- **Opciones de despliegue**: la librería declarada es `stable-audio-3`; no se confirma soporte para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a difusión de audio).
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmark ni de especificaciones verificadas de modelos comparables en la informacion proporcionada. Como alternativas de la misma categoria (generacion de musica condicionada por texto) cabria considerar Stable Audio Open 1.0, MusicGen de Meta y AudioLDM 2, pero no se dispone de parametros, contextos, licencias ni resultados comparables verificados para establecer una tabla numerica fiable.
-
-| Modelo | Parametros | Duracion maxima | Licencia | Datos comparativos |
-|---|---|---|---|---|
-| stable-audio-3-small-music | 567.573.761 | no disponible | stable-audio-community | no disponible |
-| Stable Audio Open 1.0 | no disponible | no disponible | no disponible | no disponible |
-| MusicGen (Meta) | no disponible | no disponible | no disponible | no disponible |
-| AudioLDM 2 | no disponible | no disponible | no disponible | no disponible |
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de la misma categoría (generación de audio musical text-to-audio) que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- El acceso esta restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que impide su uso en entornos automatizados sin gestion previa de credenciales.
-- La licencia es stable-audio-community (license:other). Las condiciones concretas de uso comercial no estan disponibles en la informacion proporcionada y deben consultarse en la ficha oficial antes de cualquier despliegue en produccion.
-- Los prompts de condicionamiento estan limitados al ingles; no hay soporte multilingue declarado.
-- Al ser un modelo de difusion generativa, existe riesgo de que la salida no se corresponda con la descripcion textual, especialmente con prompts ambiguos o poco frecuentes.
-- Riesgo de sesgo estilistico y de representacion derivado del dataset de entrenamiento, cuya composicion no se ha publicado.
-- No se documentan resultados de benchmarks, por lo que no es posible cuantificar su calidad objetiva frente a alternativas.
-- No se especifican limitaciones sobre derechos de autor del material generado ni sobre similitud con obras existentes.
-- El modelo esta especializado en musica; su comportamiento en generacion de voz, efectos de sonido o audio ambiental no esta documentado.
-- La duracion maxima de audio generado y las limitaciones de resolucion o frecuencia de muestreo no estan disponibles.
-- No se documenta el consumo real de VRAM ni los tiempos de inferencia, lo que dificulta el dimensionamiento de infraestructura.
+- **Idioma**: el modelo solo declara soporte para inglés; los prompts en otros idiomas pueden degradar la calidad de la generación.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede añadir fricción en pipelines automatizados.
+- **Licencia comunitaria**: la licencia `stable-audio-community` no es una licencia de código abierto estándar; es imprescindible revisar sus términos antes de un uso comercial, ya que puede imponer restricciones de atribución, límites de uso o condiciones específicas para organizaciones de cierto tamaño.
+- **Sesgos**: no disponible información sobre sesgos conocidos en el dataset de entrenamiento musical.
+- **Alucinación**: en modelos generativos de audio, el riesgo se traduce en salidas que no coinciden con el prompt (instrumentación incorrecta, estructura incoherente); no hay datos oficiales sobre tasas de fidelidad.
+- **Contexto**: no disponible la longitud máxima de prompt ni la duración máxima de audio generado.
+- **Producción**: al no haber benchmarks publicados ni detalles de entrenamiento, la idoneidad para producción debe validarse empíricamente antes de adoptarlo.
+- **Formato de audio de salida**: no especificado en la información disponible (frecuencia de muestreo, canales, duración).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-small-music
-- Modelo base: https://huggingface.co/stabilityai/stable-audio-3-small-music-base
-- Referencia arXiv indicada en las etiquetas: https://arxiv.org/abs/2605.17991
-- Los resultados de busqueda web obtenidos no contienen informacion relevante sobre este modelo: las paginas devueltas corresponden a foros y comunidades generalistas sin relacion con Stable Audio 3.
+- [Hugging Face: stabilityai/stable-audio-3-small-music](https://huggingface.co/stabilityai/stable-audio-3-small-music)
+- [Modelo base: stabilityai/stable-audio-3-small-music-base](https://huggingface.co/stabilityai/stable-audio-3-small-music-base)
+- [Paper (arXiv:2605.17991)](https://arxiv.org/abs/2605.17991)

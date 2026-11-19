@@ -2,123 +2,93 @@
 
 ## Resumen
 
-Esta ficha describe `mradermacher/Qwen3.8-35B-A3B-Distill-GGUF`, un repositorio de cuantizaciones estáticas en formato GGUF generadas por el usuario mradermacher a partir del modelo `empero-ai/Qwen3.8-35B-A3B-Distill`. No se trata de un modelo entrenado por el autor del repositorio, sino de una conversión de pesos ya existentes a formatos cuantizados listos para inferencia con llama.cpp y sus derivados. El recuento real de parámetros publicado en los safetensors del repositorio es de 35.505.251.456, es decir, unos 35,5 mil millones.
+Qwen3.8-35B-A3B-Distill-GGUF es la distribucion en formato GGUF del modelo Qwen3.8-35B-A3B-Distill, publicado por el usuario mradermacher, especializado en cuantizaciones estaticas de modelos abiertos. El modelo original lo desarrolla empero-ai y se presenta como un modelo de arquitectura MoE (mixture of experts) con 35.505.251.456 parametros totales y 3.000 millones de parametros activos por token, segun la nomenclatura A3B. La ficha del repositorio lo etiqueta como derivado de la familia Qwen3.6/Qwen3.8, con enfasis en razonamiento, function calling y distillation sobre una base SFT.
 
-El interés de este repositorio es práctico: ofrece doce variantes de cuantización (desde Q2_K hasta x-f16, incluyendo IQ4_XS y todas las familias K) para que un mismo modelo pueda desplegarse en hardware muy distinto, desde equipos de consumo con 24 GB de VRAM hasta servidores con GPU de 80 GB o configuraciones con memoria unificada. La nomenclatura del nombre del modelo base, "A3B", sugiere una arquitectura de mezcla de expertos con aproximadamente 3 mil millones de parámetros activos por token, lo que implicaría una velocidad de decodificación cercana a la de un modelo denso de 3 B, pero con un requisito de memoria correspondiente a 35,5 B. Este extremo no está confirmado en la información disponible.
+El modelo resuelve el problema de ejecutar un MoE de 35B en hardware modesto: al activar solo unos 3B de parametros por token, el coste computacional de inferencia se aproxima al de un modelo denso de 3B, mientras que la calidad se acerca a la de un modelo mucho mayor. La version GGUF anade la posibilidad de desplegarlo con llama.cpp, Ollama o cualquier runtime compatible con GGUF, incluyendo cuantizaciones agresivas de 13,3 GB (Q2_K) que caben en GPUs de consumo.
 
-La relevancia del repositorio es limitada por su estado: fue creado el 17 de septiembre de 2026, cuenta con cero descargas y cero valoraciones, no incluye model card descriptiva (solo los comentarios de la plantilla de conversión), y no declara licencia ni idiomas. Además, la búsqueda web realizada no devolvió ningún resultado útil sobre el modelo base ni sobre esta conversión. Todo ello hace que, a fecha de esta ficha, el repositorio deba considerarse no validado y no apto para producción sin una evaluación previa por parte del equipo que lo adopte.
+Es relevante ahora porque combina tres tendencias: arquitecturas MoE eficientes, destilacion de modelos de razonamiento y publicacion de pesos en formatos ligeros con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. La model card del autor original no esta incluida en la informacion disponible; los datos tecnicos proceden de los metadatos del repositorio GGUF y de los tags.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no documenta la arquitectura; la nomenclatura "A3B" del modelo base sugiere un transformer de mezcla de expertos, sin confirmar) |
-| Parámetros totales | 35.505.251.456 (35,5 B), dato real de los safetensors del repositorio |
-| Parámetros activos | no disponible (la nomenclatura "A3B" sugiere ~3 B activos, sin confirmar) |
+| Arquitectura | MoE (mixture of experts) tipo transformer, segun tags del repositorio |
+| Parametros totales | 35.505.251.456 (35,5B) |
+| Parametros activos | 3B (nomenclatura A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (conversión desde Hugging Face: `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`) |
-| Modelo base | empero-ai/Qwen3.8-35B-A3B-Distill |
-| Tarea declarada | conversational |
-| Compatibilidad declarada | endpoints_compatible |
-| Tamaño del repositorio | 21,9 GB (según Hugging Face; no cubre la suma de todas las cuantizaciones listadas, lo que apunta a una publicación parcial o a un recuento incompleto) |
-| Fecha de creación | 17 de septiembre de 2026 |
-| Última actualización | 17 de septiembre de 2026, 13:08 UTC |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16; quants imatrix en repositorio i1 |
+| Idiomas soportados | en (segun metadatos); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (modelo original en safetensors, segun tags de transformers) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible sobre este repositorio se limita a los metadatos de la conversión. No hay ningún dato publicado sobre la arquitectura del modelo base `empero-ai/Qwen3.8-35B-A3B-Distill`: ni tipo de bloque (transformer denso, mezcla de expertos, SSM o híbrido), ni número de capas, ni dimensiones ocultas, ni mecanismo de atención. El único indicio es el sufijo "A3B" del nombre, que en la convención habitual de modelos MoE (por ejemplo, Qwen3-30B-A3B) indica 3 mil millones de parámetros activos sobre un total de 35,5 B. Si esa interpretación fuese correcta, el modelo utilizaría enrutamiento por token hacia un subconjunto de expertos, con la implicación práctica de que la memoria necesaria para la inferencia corresponde al total de parámetros (35,5 B) y no a los activos.
+La informacion disponible indica que se trata de un modelo MoE con 35,5B de parametros totales y aproximadamente 3B activos, construido sobre la familia Qwen (tags qwen3.6 y qwen3.8). El proceso de entrenamiento incluye una fase de destilacion (tag distillation) y un ajuste supervisado (tag sft) orientado a razonamiento y function calling. No se dispone del numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-Tampoco hay información sobre el entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones con RLHF o DPO. El término "Distill" en el nombre del modelo base sugiere que se trata de un modelo destilado a partir de otro mayor, pero se desconoce el profesor, el método de destilación y los datos utilizados. Respecto al proceso de conversión sí hay datos concretos: la cuantización se realizó con la versión 2 del pipeline de cuantización y con salida de tensores cuantizados, partiendo de pesos en formato Hugging Face. No se declara ningún ajuste posterior a la cuantización ni corrección de calidad (por ejemplo, imatrix) en los metadatos disponibles.
+La innovacion principal es la propia arquitectura MoE: al mantener baja la activacion por token, el modelo puede ofrecer una ventana de parametros mucho mayor que un denso de 3B con un coste de inferencia comparable. La publicacion en GGUF anade decodificacion eficiente en CPU/GPU hibrida mediante llama.cpp, y la existencia de un archivo mmproj (Q8_0 y f16) sugiere soporte multimodal en el modelo original, aunque el detalle de dicha capacidad no esta documentado en la informacion disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional: es la única capacidad declarada explícitamente mediante la etiqueta `conversational` del repositorio.
-- Despliegue en endpoints: la etiqueta `endpoints_compatible` indica que el formato es compatible con los Inference Endpoints de Hugging Face.
-- Inferencia local con llama.cpp y derivados: el formato GGUF permite ejecución en CPU, GPU o modo mixto.
-- Razonamiento, matemáticas, generación de código, visión, audio o multimodalidad: no disponibles; no hay ninguna declaración al respecto en la información proporcionada.
-- Soporte de tool calling o function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Modo de pensamiento (thinking mode) o decodificación especulativa: no disponible.
-- Capacidades multilingües: no disponibles; el repositorio no declara ningún idioma, por lo que no puede asumirse un rendimiento correcto en castellano sin evaluarlo.
+- Generacion de texto conversacional (tag conversational en Hugging Face).
+- Razonamiento (tag reasoning), presumiblemente con modos de pensamiento extendido, aunque no se detalla el mecanismo.
+- Function calling / tool calling (tag function-calling).
+- Destilacion de capacidades de un modelo mayor, orientada a mantener calidad con menor coste.
+- Soporte multimodal potencial: el repositorio incluye archivos mmproj, lo que indica proyeccion de vision en el modelo base; no se detalla el alcance.
+- Capacidades multilingues: solo se declara ingles (en) en los metadatos; no hay evidencia de soporte adicional.
+- Compatibilidad con endpoints (tag endpoints_compatible).
 
 ## Casos de uso
 
-- Asistente conversacional autoalojado en infraestructura propia: al distribuirse en GGUF, el modelo puede servirse con `llama-server` u Ollama dentro de una red corporativa, sin que las conversaciones salgan de la organización. Es adecuado cuando existen requisitos de confidencialidad que impiden usar APIs externas, siempre que se valide antes la calidad del modelo base.
-- Despliegue en estaciones de trabajo sin GPU de centro de datos: las variantes Q3_K_M e IQ4_XS permiten ejecutar el modelo completo en equipos con 24 GB de VRAM o en configuraciones con memoria unificada, algo inusual en modelos densos de 35 B. Resulta útil para equipos de investigación que necesitan experimentar con un modelo de este tamaño sin acceso a clúster.
-- Prototipado y evaluación comparativa de cuantizaciones: un mismo repositorio ofrece doce niveles de cuantización, lo que permite medir en un entorno controlado la degradación de calidad y la ganancia de velocidad entre Q2_K y Q8_0 sobre la misma tarea. Es el uso más inmediato y menos arriesgado del repositorio.
-- Servicio de chat por lotes para generación de textos internos: con la variante Q8_0 en una GPU de 80 GB puede procesarse un volumen alto de resúmenes, clasificaciones o redacciones de documentos internos, aprovechando que el coste marginal de inferencia es nulo una vez desplegado.
-- Integración en herramientas de escritorio para desarrolladores: los ficheros GGUF se cargan directamente en LM Studio, Jan, koboldcpp o extensiones de VS Code basadas en llama.cpp, lo que permite disponer de un asistente de redacción de código y documentación totalmente offline.
-- Base para evaluación de sesgo y alucinación antes de adopción: dado que no hay benchmarks publicados, un caso de uso razonable es someter el modelo a un conjunto de pruebas propio (veracidad, sesgo, seguimiento de instrucciones en castellano) antes de considerar cualquier despliegue con usuarios finales.
-- Publicación como endpoint gestionado: gracias a la compatibilidad declarada con endpoints, puede desplegarse como servicio HTTP en Hugging Face Inference Endpoints para pruebas de integración con aplicaciones existentes, aunque la ausencia de licencia declarada obliga a resolver esa cuestión antes de cualquier uso comercial.
+- Asistentes de codigo en local: con cuantizaciones Q4_K_M (21,8 GB) o IQ4_XS (19,5 GB), el modelo cabe en una RTX 4090 de 24 GB y puede usarse como copiloto de programacion en IDE mediante llama.cpp u Ollama, sin enviar codigo a servicios externos.
+- Agentes con tool calling: el tag function-calling indica soporte para invocar funciones; se puede integrar en frameworks de agentes (LangChain, LlamaIndex) para automatizar tareas como consultas a APIs o gestion de tickets.
+- Razonamiento multi-paso en entornos con recursos limitados: al activar solo 3B por token, el throughput es alto comparado con densos de 35B, lo que lo hace adecuado para pipelines de analisis que requieren cadenas de razonamiento largas.
+- Despliegue en estaciones de trabajo sin GPU dedicada: la cuantizacion Q2_K (13,3 GB) permite ejecucion en CPU con RAM suficiente, util para prototipos y entornos de desarrollo.
+- Procesamiento de documentos con componente visual: si el mmproj se usa con el runtime adecuado, el modelo puede abordar tareas de comprension de imagenes y texto combinados, aunque la informacion disponible no detalla el alcance de vision.
+- Fine-tuning y experimentacion: al ser Apache 2.0 y estar disponible en safetensors en el repositorio base, se puede usar como punto de partida para ajustes especificos de dominio sin restricciones de licencia.
+- Servicio de inferencia self-hosted: con vLLM o TGI (si soportan la arquitectura MoE concreta) se puede desplegar como endpoint compatible con la API de OpenAI para equipos internos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye ninguna medición de MMLU, HumanEval, GSM8K, MT-Bench ni de evaluaciones de calidad por cuantización, y la búsqueda web realizada no devolvió documentación técnica sobre el modelo base `empero-ai/Qwen3.8-35B-A3B-Distill`. Tampoco hay datos de rendimiento de inferencia (tokens por segundo, latencia de primer token) publicados por el autor de la conversión.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Tamaños estimados a partir del recuento real de parámetros (35,5 B) y de los bits por peso típicos de cada formato GGUF. Son estimaciones de cálculo, no mediciones del repositorio; hay que añadir el espacio de la caché KV, que depende del contexto configurado.
-
-| Cuantización | Bits por peso aprox. | Peso estimado | VRAM recomendada con contexto moderado |
-|---|---|---|---|
-| Q2_K | ~2,7 | ~12 GB | 16 GB |
-| Q3_K_S | ~3,4 | ~15 GB | 20 GB |
-| Q3_K_M | ~3,9 | ~17,5 GB | 24 GB |
-| IQ4_XS | ~4,25 | ~19 GB | 24 GB |
-| Q3_K_L | ~4,3 | ~19 GB | 24 GB |
-| Q4_K_S | ~4,6 | ~20,5 GB | 24 GB |
-| Q4_K_M | ~4,85 | ~21,5 GB | 24-32 GB |
-| Q5_K_S | ~5,5 | ~24,5 GB | 32 GB |
-| Q5_K_M | ~5,7 | ~25,5 GB | 32-40 GB |
-| Q6_K | ~6,6 | ~29,5 GB | 40 GB |
-| Q8_0 | ~8,5 | ~38 GB | 48-80 GB |
-| x-f16 | 16 | ~71 GB | 80 GB |
-
-- Tarjetas de 24 GB (RTX 3090, RTX 4090, RTX 5090, A5000): admiten Q4_K_M, Q4_K_S, IQ4_XS y toda la familia Q3 con contexto moderado. Requieren reducir la ventana de contexto si se quiere mantener todo en VRAM.
-- Tarjetas de 48 GB (2x RTX 4090, A6000, L40S): permiten Q5_K_M y Q6_K completos, con margen para caché KV amplia.
-- Tarjetas de 80 GB (A100 80 GB, H100 80 GB): Q8_0 con holgura y x-f16 muy al límite (71 GB de pesos más caché KV y activaciones).
-- Memoria unificada (Apple Silicon de 64 GB o 128 GB): opción práctica para Q6_K y Q8_0 con `llama.cpp` y offload completo a GPU.
-- CPU con 32 GB de RAM: viable con Q3_K_M o Q2_K, con velocidad de decodificación baja y muy dependiente del ancho de banda de memoria.
-- Advertencia sobre MoE: si se confirma que el modelo es de mezcla de expertos con ~3 B activos, la velocidad de decodificación sería alta, pero todos los expertos deben residir en memoria, de modo que el requisito de VRAM/RAM es el del total de 35,5 B y no el de los parámetros activos.
-- Opciones de despliegue: `llama.cpp` (`llama-server`), Ollama, LM Studio, koboldcpp, Jan, `llama-cpp-python` y text-generation-webui son compatibles de forma nativa con GGUF. vLLM y TGI no son la vía recomendada para GGUF: TGI no lo soporta y el soporte en vLLM es limitado y con menor rendimiento que en llama.cpp.
-- Latencia y throughput: no disponibles. No hay ninguna medición publicada para este repositorio ni para el modelo base.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K ~13,3 GB; Q3_K_M ~17,3 GB; IQ4_XS ~19,5 GB; Q4_K_M ~21,8 GB; Q5_K_M ~25,4 GB; Q6_K ~29,3 GB; Q8_0 ~37,9 GB. A estas cifras hay que sumar el espacio para el contexto KV cache.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M o IQ4_XS; RTX 3090 (24 GB) equivalente; A100 40/80 GB o H100 para Q6_K/Q8_0 y contextos largos; multiples GPUs para Q8_0 con contexto extendido.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con Q4_K_M; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y runtimes compatibles con GGUF; para el modelo original en safetensors, transformers, vLLM o TGI (sujeto a soporte de la arquitectura MoE concreta).
+- Latencia y throughput: no disponibles. Al activar ~3B parametros por token, se espera un throughput notablemente superior al de un denso de 35B, pero no hay mediciones publicadas en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados del modelo evaluado, por lo que la comparación es necesariamente parcial. Los datos de las alternativas proceden de la documentación pública de cada proyecto y no han sido verificados en la búsqueda realizada para esta ficha.
-
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.8-35B-A3B-Distill (GGUF de mradermacher) | 35,5 B (dato real) | no disponible | no disponible | no disponible | GGUF en Hugging Face |
-| Qwen3-30B-A3B | ~30,5 B | ~3,3 B | 32.768 nativos, ampliable con YaRN | Apache 2.0 | Pesos originales y GGUF de terceros |
-| Mixtral 8x7B Instruct | ~46,7 B | ~12,9 B | 32.768 | Apache 2.0 | Pesos originales y múltiples GGUF |
-| DeepSeek-V2-Lite Chat | ~15,7 B | ~2,4 B | 32.768 | Licencia propia de DeepSeek | Pesos originales y GGUF |
+| Qwen3.8-35B-A3B-Distill (este) | 35,5B | ~3B | no disponible | Apache 2.0 | GGUF, safetensors |
+| Qwen3-30B-A3B | 30B | ~3B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF |
+| Mixtral 8x7B | 46,7B | ~12,9B | 32k | Apache 2.0 | safetensors, GGUF |
+| DeepSeek-V2-Lite | 15,7B | ~2,4B | 32k | codigo abierto con restricciones | safetensors |
 
-La diferencia más relevante frente a estas alternativas no es de capacidades, que no se pueden comparar sin benchmarks, sino de trazabilidad: las tres alternativas tienen model card completa, licencia declarada y evaluaciones publicadas, mientras que el modelo aquí descrito no ofrece ninguno de esos elementos.
+La comparativa con Qwen3-30B-A3B es la mas directa por tamano y activacion; Mixtral 8x7B tiene mas parametros activos y mayor coste de inferencia; DeepSeek-V2-Lite es mas pequeno pero con licencia mas restrictiva. Los datos de contexto y benchmarks de los alternativos no se han verificado en esta ficha y deben consultarse en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin licencia explícita no puede asumirse permiso para uso comercial, redistribución o modificación. Es un bloqueo previo a cualquier despliegue en producción.
-- Sin model card: el repositorio solo contiene los comentarios de la plantilla de cuantización. No hay descripción del modelo base, ni instrucciones de uso, ni formatos de prompt recomendados.
-- Modelo base opaco: no se ha encontrado documentación pública de `empero-ai/Qwen3.8-35B-A3B-Distill`. Se desconoce su procedencia, sus datos de entrenamiento y si el término "Distill" implica restricciones adicionales heredadas del modelo profesor.
-- Sin benchmarks ni validación: el repositorio tiene cero descargas y cero valoraciones, y no se han publicado evaluaciones. No hay evidencia de que las cuantizaciones funcionen correctamente ni de que el modelo base sea competitivo.
-- Idiomas no declarados: no puede asumirse un rendimiento aceptable en castellano. Es imprescindible evaluarlo antes de destinarlo a usuarios hispanohablantes.
-- Riesgo de alucinación: inherente a los modelos de lenguaje generativos, y sin datos de evaluación no puede acotarse su magnitud. No debe usarse como fuente de verdad sin verificación humana.
-- Degradación por cuantización: las variantes Q2_K, Q3_K_S y Q3_K_L implican pérdidas de precisión notables en modelos de este tamaño. Para tareas de razonamiento o código, conviene partir de Q5_K_M o superior.
-- Consumo de memoria en caso de MoE: si se confirma la arquitectura de mezcla de expertos, la VRAM necesaria es la del total de parámetros, no la de los activos, lo que puede llevar a error al planificar el hardware.
-- Requisitos de contexto desconocidos: al no declararse la longitud de contexto, no puede configurarse `n_ctx` con criterio ni garantizarse el comportamiento en conversaciones largas.
-- Conversión de terceros: al tratarse de una cuantización comunitaria, no hay garantía de que el proceso se haya validado contra los pesos originales más allá de los controles automáticos del pipeline.
-- Fechas del repositorio: la creación y la última actualización se registran en septiembre de 2026, lo que indica un artefacto extremadamente reciente y sin rodaje en la comunidad.
-- Sesgos: no disponibles. No se ha publicado ningún análisis de sesgo sobre el modelo base ni sobre estas cuantizaciones.
+- La model card del modelo original no esta incluida en la informacion disponible; no se pueden verificar sesgos, datos de entrenamiento ni evaluaciones de seguridad.
+- Riesgo de alucinacion inherente a los modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
+- Idioma: solo se declara ingles en los metadatos; el rendimiento en castellano no esta garantizado.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin verificar la configuracion del modelo base.
+- La cuantizacion Q2_K y Q3_K_S degradan la calidad de forma notable; para produccion se recomienda Q4_K_M o superior.
+- Aunque la licencia es Apache 2.0, conviene verificar la licencia del modelo base (empero-ai/Qwen3.8-35B-A3B-Distill) y de la familia Qwen subyacente antes de un uso comercial.
+- El soporte multimodal (mmproj) requiere runtimes especificos y no esta documentado en detalle; no debe asumirse en produccion sin pruebas.
+- El repositorio GGUF tiene 244,4 GB en total por incluir todas las cuantizaciones; descargar solo el archivo necesario.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-35B-A3B-Distill-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- llama.cpp, motor de inferencia para GGUF: https://github.com/ggml-org/llama.cpp
-- Ollama, despliegue simplificado de GGUF: https://github.com/ollama/ollama
-- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo, su arquitectura o sus benchmarks; los únicos resultados obtenidos no guardaban relación con el tema.
+- Quants imatrix: https://huggingface.co/mradermacher/Qwen3.8-35B-A3B-Distill-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-35B-A3B-Distill-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de perplejidad por cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- nethype GmbH: https://www.nethype.de/

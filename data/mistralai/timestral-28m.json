@@ -80,31 +80,5 @@
       "value": 37.27
     }
   ],
-  "sources": [
-    {
-      "title": "Mistral | n°1 en IA souveraine : modèles ouverts de pointe qui vous ...",
-      "url": "https://mistral.ai/fr/",
-      "snippet": "Nous créons les modèles. Vous les gardez. Commencez avec les modèles de pointe et spécialisés à poids ouverts de Mistral. …"
-    },
-    {
-      "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
-      "url": "https://mistral.ai/",
-      "snippet": "We make the models. You keep them. Start with Mistral’s frontier and specialist open-weight models. Use them as they are, or make …"
-    },
-    {
-      "title": "Login - Mistral AI",
-      "url": "https://chat.mistral.ai/login",
-      "snippet": "Login or signup below Email Forgot password?"
-    },
-    {
-      "title": "Mistral AI — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Mistral_AI",
-      "snippet": "Mistral AI est une entreprise française fondée en avril 2023, spécialisée dans l' intelligence artificielle générative. Elle développe de …"
-    },
-    {
-      "title": "Login - Mistral AI",
-      "url": "https://console.mistral.ai/home",
-      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
-    }
-  ]
+  "sources": []
 }

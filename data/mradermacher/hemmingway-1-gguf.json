@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Chrome – Download the fast, secure browser from Google",
-      "url": "https://www.google.com/intl/en_uk/chrome/",
-      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
-    },
-    {
-      "title": "Gmail - Google Accounts",
-      "url": "https://accounts.google.com/login?service=mail",
-      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
-    },
-    {
-      "title": "Google Calendar - Easier Time Management, Appointments",
-      "url": "https://calendar.google.com/",
-      "snippet": "Google Calendar - Easier Time Management, Appointments & Scheduling Learn how Google Calendar helps you stay on top of your …"
-    },
-    {
-      "title": "Acceso: Cuentas de Google",
-      "url": "https://accounts.google.com/login?hl=es-419",
-      "snippet": "¿Esta no es tu computadora? Usa una ventana de navegación privada para acceder. Más información para usar el modo de invitado …"
-    },
-    {
-      "title": "Sign in - Google Accounts",
-      "url": "https://classroom.google.com/",
-      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
-    }
-  ]
+  "sources": []
 }

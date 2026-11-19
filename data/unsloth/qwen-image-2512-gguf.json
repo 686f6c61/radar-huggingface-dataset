@@ -51,29 +51,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/en-us?msockid=2a4cfe97fd0866652d23e94efc1e673c",
-      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
     },
     {
-      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
-      "url": "https://account.microsoft.com/account",
-      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Sign in to your account",
-      "url": "https://myaccount.microsoft.com/",
-      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …"
     },
     {
-      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
-      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=2a4cfe97fd0866652d23e94efc1e673c",
-      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
     },
     {
-      "title": "Microsoft - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Microsoft",
-      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+      "title": "Unsloth Docs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs",
+      "snippet": "🦥 Unsloth Docs Unsloth is an open-source framework for running and training LLMs. Unsloth lets you run and train AI models on your …"
     }
   ]
 }

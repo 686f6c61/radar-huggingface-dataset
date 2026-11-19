@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF",
-      "snippet": "Instructions to use mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF at main",
-      "url": "https://huggingface.co/mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF/tree/main",
-      "snippet": "mradermacher / Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF like 7 Transformers GGUF English Mixture of Experts mixture-of-experts research-preview whittle qwen3.5 router-healing conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3.8",
-      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
-    },
-    {
-      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
-      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
-      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
-    },
-    {
-      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
-      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
-      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
-    }
-  ]
+  "sources": []
 }

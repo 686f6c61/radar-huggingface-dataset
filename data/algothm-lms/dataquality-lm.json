@@ -5,7 +5,7 @@
   "author": "Algothm-LMs",
   "url": "https://huggingface.co/Algothm-LMs/Dataquality-lm",
   "created_at": "2026-11-18T07:00:03.000Z",
-  "updated_at": "2026-11-18T07:04:46.000Z",
+  "updated_at": "2026-11-18T09:13:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

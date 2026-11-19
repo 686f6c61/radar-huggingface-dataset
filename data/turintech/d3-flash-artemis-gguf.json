@@ -54,7 +54,7 @@
     {
       "task": "Agreement with the original",
       "dataset": "Test decisions",
-      "metric": "Same as BF16 (%)",
+      "metric": "Same answer (%)",
       "value": 94.5
     },
     {
@@ -62,33 +62,13 @@
       "dataset": "Test decisions",
       "metric": "Confident changes",
       "value": 0
+    },
+    {
+      "task": "Typed decisions",
+      "dataset": "Test decisions",
+      "metric": "Accuracy (%)",
+      "value": 72.25
     }
   ],
-  "sources": [
-    {
-      "title": "Pashto Vidéos Porno - xHamster",
-      "url": "https://fra.xhamster.com/search/pashto",
-      "snippet": "Regardez des vidéos pornos pashto. Découvrez des tonnes de films XXX de avec des scènes de sexe en 2026 sur xHamster !"
-    },
-    {
-      "title": "Free Pakistani Sex Porn Videos | xHamster",
-      "url": "https://xhamster.desi/tags/pakistani-sex",
-      "snippet": "Check out free Pakistani Sex porn videos on xHamster. Watch all Pakistani Sex XXX vids right now!"
-    },
-    {
-      "title": "List of Pashto-language films - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/List_of_Pashto-language_films",
-      "snippet": "Retrieved October 21, 2016. \"Three Pashto films released in Peshawar on Eid\". The Express Tribune. July 5, 2016. Retrieved …"
-    },
-    {
-      "title": "XXX Pakistani Pashto Local Dukandar Porn Videos - xHamster",
-      "url": "https://xhamster19.com/search/xxx+pakistani+pashto+local+dukandar",
-      "snippet": "Watch XXX pakistani pashto local dukandar porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
-    },
-    {
-      "title": "Trailer - Tractors & Trailers in Peshawar | OLX Pakistan",
-      "url": "https://www.olx.com.pk/peshawar_g4060643/tractors-trailers_c1951/q-trailer",
-      "snippet": "Find the best Trailer in Peshawar. OLX Pakistan offers online local classified ads for Trailer. Post your classified ad for free in various …"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "SceneWorks/minimax-h3-image-mlx",
+  "slug": "sceneworks-minimax-h3-image-mlx",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/minimax-h3-image-mlx",
+  "created_at": "2026-11-14T21:40:29.000Z",
+  "updated_at": "2026-11-18T23:02:15.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minimax-h3-image",
+    "text-to-image",
+    "image-editing",
+    "mlx",
+    "candle",
+    "quantized",
+    "sceneworks",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54099750096,
+  "storage_human": "54.1 GB",
+  "context_length": null,
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "diffusers",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SceneWorks - GitHub",
+      "url": "https://github.com/SceneWorks/SceneWorks",
+      "snippet": "SceneWorks SceneWorks is a desktop-native AI image, video, and audio generation studio. It runs generation directly on your machine's GPU — MLX on macOS (Apple Silicon) and candle / CUDA on Windows and Linux (NVIDIA) — with no Python, no cloud, and no Docker required. Your prompts, models, and media never leave the workstation."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3-Image: MiniMax-H3-Image, an open-weight ...",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3-Image",
+      "snippet": "MiniMax-H3-Image is a state-of-the-art open-source model for image generation and editing from the MiniMax H3 family, with text-to-image and multi-image editing in one checkpoint. 16 MP at a practical cost. It generates images of about 16 MP at every aspect ratio directly, without an upscaler, in 6 sampling steps. Rich detail, real-world realism."
+    },
+    {
+      "title": "SceneWorks.io – Motion graphics and video templates",
+      "url": "https://sceneworks.io/",
+      "snippet": "Cookies help us improve your experience, deliver personalized content, and analyze traffic. You can choose which cookies to allow …"
+    },
+    {
+      "title": "SceneWorks/minimax-h3-mlx · Hugging Face",
+      "url": "https://huggingface.co/SceneWorks/minimax-h3-mlx",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SceneWorks - GitHub",
+      "url": "https://github.com/SceneWorks",
+      "snippet": "SceneWorks Public Rust 255 AGPL-3.0 61 0 3 Updated 36 minutes ago mlx-rs Public Forked from nicholasjpaterno/mlx-rs Unofficial …"
+    }
+  ]
+}

@@ -2,115 +2,106 @@
 
 ## Resumen
 
-Haidass-Translate-143M-GGUF es la conversión a formato GGUF del modelo de traducción bidireccional chino-inglés DALabCommunity/Haidass-Translate-143M, publicada por el usuario umeiko. Se trata de un modelo denso de 143.071.296 parámetros (143M) construido sobre la arquitectura Qwen3 y diseñado específicamente para traducción automática entre inglés y chino simplificado, no para conversación general.
+Haidass-Translate-143M-GGUF es la edición cuantizada en formato GGUF del modelo DALabCommunity/Haidass-Translate-143M, un traductor bidireccional chino simplificado⇄inglés de 143.071.296 parámetros construido sobre la arquitectura Qwen3. Lo publica el usuario umeiko en Hugging Face bajo licencia Apache 2.0, y su propósito es permitir la inferencia local del modelo original sin necesidad de GPU ni de frameworks de deep learning pesados, manteniendo una calidad prácticamente idéntica a la del modelo en bf16.
 
-La relevancia de esta ficha concreta no está en el modelo en sí, sino en el trabajo de cuantización que documenta. El modelo original presenta valores atípicos extremos en las activaciones (picos de hasta ~5,5×10⁵ en una sola capa), lo que rompe las rutas habituales de baja precisión: la inferencia en fp16 produce desbordamiento (NaN) y la cuantización de activaciones a int8 degrada la calidad hasta hacerla inservible. El autor caracteriza este comportamiento y llega a una receta segura: cuantizar a Q8_0 únicamente los pesos de las capas Linear del decoder y mantener el embedding en bf16.
+El modelo resuelve un problema muy concreto: la traducción automática de alta calidad entre inglés y chino en entornos con recursos limitados. Con solo 188 MB de almacenamiento en su cuantización Q8_0, cabe en cualquier equipo y se ejecuta con llama.cpp, Ollama o LM Studio. La model card reporta una degradación de apenas ±0,8 BLEU respecto al original en bf16 sobre FLORES-200 dev, lo que lo convierte en una opción atractiva para traducción embebida, procesamiento por lotes en CPU y aplicaciones de escritorio.
 
-El resultado es un archivo de 188 MB (frente a los 286 MB del modelo bf16 original) con una pérdida de calidad de ≤0,8 BLEU respecto al original, ejecutable en frameworks de inferencia local como llama.cpp, Ollama o LM Studio. La licencia es Apache-2.0, heredada del modelo base.
+La relevancia actual del modelo radica en su relación calidad/tamaño: con 143M de parámetros compite con modelos Seq2Seq dedicados de 418M y 600M (M2M-100-418M, NLLB-200-distilled-600M) y con LLMs instruct de 500-600M (Qwen2.5-0.5B-Instruct, Qwen3-0.6B) en el par en→zh, y queda por debajo de estos en zh→en. Es, por tanto, un modelo especializado y muy compacto, no un modelo de propósito general.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder denso, arquitectura Qwen3, con `tie_word_embeddings` (el embedding actúa también como cabeza de salida) |
-| Parámetros totales | 143.071.296 (143M) |
-| Parámetros activos | No aplica (modelo denso, no es MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen3), con bloque `<think></think>` vacío en el formato de prompt |
+| Parametros totales | 143.071.296 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q8_0 (único formato incluido en el repositorio); el autor analiza además INT8 W8A8 dinámico, W4 por canal y W8 por canal con activaciones bf16 |
-| Idiomas soportados | Chino simplificado (zh) e inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
-
-Nota sobre el contexto: la información disponible no especifica la ventana de contexto de este modelo. Un resultado de búsqueda atribuye 4K de contexto a una variante relacionada (Haidass-Translate-143M-Instruction), pero ese dato corresponde a otro modelo y no debe extrapolarse sin confirmación.
+| Tipos de cuantizacion | Q8_0 (decoder lineal en Q8_0, embeddings y cabeza de salida en bf16); no se recomienda cuantización de pesos ≤4 bits ni activation-int8 |
+| Idiomas soportados | inglés (en) y chino simplificado (zh), bidireccional |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (archivo `haidass-translate-143m-q8_0.gguf`, 188 MB); el modelo base original en safetensors/bf16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder de 143M parámetros con la configuración de Qwen3. Emplea `tie_word_embeddings`, de modo que la matriz de embedding de entrada se reutiliza como cabeza de proyección de salida; esta decisión arquitectónica es determinante para la cuantización, porque concentra en una única matriz una doble función y la hace especialmente sensible a la pérdida de precisión. La plantilla de chat sigue el formato `ChatML` (`<|im_start|>` / `<|im_end|>`) y el autor indica que el modelo fue entrenado con un bloque `<think></think>` vacío antes del turno del asistente, por lo que ese bloque debe incluirse explícitamente en el prompt para obtener resultados correctos.
+El modelo es un transformer decoder-only de la familia Qwen3 con 143M de parámetros, especializado mediante ajuste para traducción bidireccional en→zh y zh→en. El prompt de instrucción sigue el formato ChatML de Qwen (`<|im_start|>user ... <|im_end|><|im_start|>assistant`) e incluye obligatoriamente un bloque `<think></think>` vacío antes del turno del asistente, indicativo de que el modelo base deriva de un Qwen3 con modo de razonamiento y que fue entrenado con ese bloque vacío. El modelo original se distribuye en bf16 (286 MB); esta edición GGUF se genera con `convert_hf_to_gguf.py` y `llama-quantize --token-embedding-type bf16`.
 
-No se dispone de datos concretos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; esa información no está publicada en los materiales disponibles. Como referencia metodológica, el ecosistema del autor menciona un modelo de control (`Drafter-143M`) con idéntica configuración, datos y receta de entrenamiento pero partiendo de inicialización aleatoria en lugar del modelo base preentrenado, utilizado para cuantificar la contribución del preentrenamiento.
-
-La innovación técnica destacable de esta publicación es el análisis de cuantización. El autor identifica valores atípicos extremos (pico de activación por capa de ~5,5×10⁵ y |w|max=102) y demuestra empíricamente que: (1) la inferencia en fp16 no es viable por desbordamiento; (2) la cuantización de activaciones a int8 destruye el rendimiento (BLEU en→zh de 0,00); (3) la cuantización completa de Q8_0 incluyendo el embedding degrada en→zh en unos 11 puntos de BLEU; y (4) mantener el embedding en bf16 y cuantizar solo los pesos del decoder conserva prácticamente la calidad original.
+La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Sí documenta una innovación práctica relevante en el proceso de cuantización: mantener el embedding (atado a la cabeza de salida) en bf16 es necesario para preservar la calidad, y todas las capas lineales del decoder se cuantizan a Q8_0. Además advierte de que el modelo presenta valores atípicos en las activaciones que provocan desbordamiento en fp16, por lo que debe ejecutarse siempre con cómputo en bf16 o fp32. La decodificación recomendada es greedy (temperatura 0); con beam search (3-4 haces y ajuste de `length_penalty`) se obtienen las mejores cifras del modelo original.
 
 ## Capacidades
 
-- Traducción automática bidireccional inglés↔chino simplificado, que es su única tarea objetivo.
-- Decodificación determinista fiable con `temperature 0` (greedy), el modo recomendado por el autor.
-- Ejecución en CPU y en GPU de gama muy baja gracias a sus 188 MB de pesos en Q8_0.
-- Instrucciones de traducción en inglés (`Translate the following text from English to Simplified Chinese.`) y en chino (`请将以下简体中文翻译成英文。`).
-- Compatibilidad con la plantilla de chat `ChatML` y con el bloque `<think></think>` vacío requerido por el entrenamiento.
-- No dispone de soporte de tool calling ni de function calling.
-- No dispone de capacidades de agente ni de razonamiento multi-paso.
+- Traducción automática bidireccional inglés⇄chino simplificado, con instrucciones explícitas en el prompt ("Translate the following text from English to Simplified Chinese." / "请将以下简体中文翻译成英文。").
+- Generación de texto condicionada por instrucción en formato ChatML.
+- Ejecución local en CPU mediante llama.cpp, Ollama o LM Studio, sin GPU.
+- Compatible con endpoints (`endpoints_compatible` en los tags del repo).
+- No dispone de tool calling ni function calling documentados.
+- No dispone de capacidades de agente ni de razonamiento multi-paso; el bloque `<think>` debe ir vacío.
 - No dispone de visión, audio ni otras modalidades.
-- Cobertura multilingüe limitada estrictamente al par zh/en; no se documentan otros idiomas.
+- Cobertura multilingüe limitada a en y zh.
 
 ## Casos de uso
 
-- Traducción automática en local o en el borde: al ocupar 188 MB en Q8_0 y no necesitar fp16, el modelo puede ejecutarse íntegramente en CPU o en dispositivos embebidos, lo que permite ofrecer traducción zh/en sin conexión a servicios en la nube.
-- Procesamiento de corpus para pipelines de datos: traducción por lotes de grandes volúmenes de texto en cualquiera de las dos direcciones para construir datasets paralelos, aprovechando el bajo coste por token y la reproducibilidad de la decodificación greedy.
-- Traducción con requisitos estrictos de privacidad: despliegue on-premise para organizaciones que no pueden enviar contenido a APIs externas; el modelo cabe en cualquier servidor modesto y no requiere GPU dedicada.
-- Integración en aplicaciones móviles o de escritorio: empaquetado con llama.cpp o LM Studio para ofrecer traducción embebida en un cliente de correo, un lector de documentos o un navegador, con huella de memoria inferior a 1 GB.
-- Traducción de subtítulos y documentos: procesado de ficheros de texto largos divididos en segmentos, con decodificación determinista para garantizar resultados reproducibles entre ejecuciones.
-- Prototipado rápido y pruebas de concepto: al arrancar en segundos y no requerir hardware especializado, sirve como componente de traducción en pruebas de integración de sistemas mayores (por ejemplo, pipelines RAG bilingües) antes de escalar a modelos mayores.
-- Evaluación y auditoría de cuantización: el repositorio y el dataset de evaluación asociado permiten reproducir el análisis de sensibilidad a la cuantización y usarlo como caso de estudio para el diseño de esquemas de compresión en modelos pequeños.
+- Traducción de documentación técnica en→zh y zh→en en pipelines de CI/CD: el modelo se puede invocar desde un script con llama.cpp para traducir ficheros Markdown o cadenas de recursos de forma determinista (temperatura 0), con un coste de almacenamiento de 188 MB.
+- Traducción embebida en aplicaciones de escritorio: al caber en cualquier equipo y ejecutarse en CPU, puede integrarse en editores, clientes de correo o herramientas de notas para traducir selecciones de texto sin conexión ni envío de datos a terceros.
+- Preprocesado y enriquecimiento de corpus: traducción por lotes de grandes volúmenes de frases en y zh para construir datasets paralelos, aprovechando su bajo coste computacional frente a modelos de 600M-1.8B.
+- Atención al cliente bilingüe: traducción en tiempo real de mensajes de usuario entre inglés y chino en sistemas de soporte, con latencia baja al ejecutarse en CPU.
+- Localización de contenido web y aplicaciones: traducción de cadenas de interfaz y textos de marketing entre ambos idiomas en entornos con recursos restringidos (Raspberry Pi, contenedores pequeños, dispositivos de borde).
+- Filtrado y moderación multilingüe: traducción previa de contenido en chino a inglés para aplicar clasificadores o reglas que solo existen en inglés, o viceversa.
+- Prototipado e investigación en traducción automática: modelo de referencia ligero para comparar arquitecturas decoder-only pequeñas frente a Seq2Seq dedicados en el par en⇄zh.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre FLORES-200 dev (997 frases por dirección, decodificación greedy, sacreBLEU y chrF++) según la model card:
+Resultados reportados en la model card sobre FLORES-200 dev (997 frases por dirección, sacreBLEU + chrF++):
 
-| Configuración | Tamaño de pesos | en→zh BLEU | en→zh chrF++ | zh→en BLEU | zh→en chrF++ |
-|---|---|---|---|---|---|
-| bf16 original (transformers) | 286 MB | 28,69 | 20,04 | 17,57 | 44,14 |
-| fp16 sin cuantizar | — | fallo | desbordamiento de activaciones (NaN) | — | — |
-| INT8 dinámico (W8A8, transformers) | 291 MB | 0,00 | 0,32 | 0,01 | 3,73 |
-| W4 en pesos (int4 por canal) | — | 0,05 | 0,71 | 0,13 | 2,34 |
-| W8 en pesos (int8 por canal, activaciones bf16) | 181 MB | 28,76 | 19,87 | 17,45 | 43,83 |
-| GGUF Q8_0 completo (incluye embedding) | 152 MB | 14,38* | 14,12* | 14,98* | 41,41* |
-| GGUF Q8_0 + embedding bf16 (este repositorio) | 188 MB | 27,94 | 19,75 | 17,89 | 44,26 |
+| Modelo | Parametros | Arquitectura | en→zh BLEU | en→zh chrF++ | zh→en BLEU | zh→en chrF++ |
+|---|---|---|---|---|---|---|
+| HY-MT1.5-1.8B | 1800M | LLM | 44,65 | 30,98 | 27,68 | 57,96 |
+| Qwen3-0.6B | 600M | LLM | 30,94 | 21,10 | 20,21 | 48,62 |
+| Haidass-Translate-143M (beam) | 143M | LLM | 30,36 | 21,40 | 20,62 | 46,51 |
+| Qwen2.5-0.5B-Instruct | 500M | LLM | 28,96 | 19,65 | 18,09 | 45,85 |
+| Haidass-Translate-143M (greedy) | 143M | LLM | 28,32 | 19,49 | 17,72 | 44,32 |
+| Haidass-Translate-143M Q8_0 GGUF (este repo) | 143M | LLM | 27,94 | 19,75 | 17,89 | 44,26 |
+| M2M-100-418M | 418M | Seq2Seq | 28,04 | 20,53 | 20,58 | 48,79 |
+| NLLB-200-distilled-600M | 600M | Seq2Seq | 22,44 | 16,74 | 25,71 | 52,28 |
 
-*Medido sobre un subconjunto de 200 frases; el control bf16 sobre ese mismo subconjunto da 25,31 / 18,90 (en→zh) y 14,91 / 42,48 (zh→en).
-
-No se han publicado otros resultados de benchmarks (MMLU, HumanEval u otros) en la información disponible.
+La cuantización Q8_0 GGUF medida en llama.cpp (CPU, greedy) presenta una diferencia de ±0,8 BLEU respecto al original en bf16, que el autor describe como prácticamente sin pérdida. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB. El archivo Q8_0 ocupa 188 MB y el modelo completo con overhead de runtime se mantiene por debajo del medio gigabyte en la mayoría de configuraciones.
-- GPU recomendadas: cualquier GPU sirve; no se requiere hardware de gama alta. Funciona en tarjetas integradas e incluso en CPU exclusivamente. No hay indicación de que se beneficie de A100, H100 o RTX 4090 más allá del aumento de throughput.
-- Cabe en GPU de consumo: sí, en todas, incluidas RTX 3060, RTX 4090 y GPUs integradas. También es viable en placas tipo Raspberry Pi.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio y, con conversión previa, TGI o vLLM. El autor documenta la reproducción con `convert_hf_to_gguf.py` y `llama-quantize --token-embedding-type bf16`.
-- Restricción de despliegue: no se puede ejecutar en fp16 ni con cuantización de activaciones a int8; el camino seguro es 8 bits solo en pesos, con el embedding en bf16.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: 188 MB para el archivo Q8_0; al ejecutarse en CPU no requiere VRAM dedicada. El modelo original en bf16 ocupa 286 MB.
+- GPU recomendadas: no se especifican; cualquier GPU con soporte de llama.cpp puede ejecutarlo, pero está pensado para CPU.
+- Cabe en cualquier GPU de consumo e incluso en dispositivos sin GPU; el límite práctico es la memoria RAM del sistema.
+- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama, LM Studio y cualquier runtime compatible con GGUF y endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Advertencia de ejecución: usar siempre cómputo en bf16/fp32; no aplicar activation-int8 ni cuantización de pesos ≤4 bits.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Tamaño | Licencia | Notas |
-|---|---|---|---|---|---|
-| umeiko/Haidass-Translate-143M-GGUF (este) | 143M | GGUF Q8_0 | 188 MB | Apache-2.0 | Embedding en bf16; pérdida ≤0,8 BLEU frente al original |
-| DALabCommunity/Haidass-Translate-143M | 143M | safetensors (bf16) | 286 MB | Apache-2.0 | Modelo base; requiere transformers, no cabe en llama.cpp sin conversión |
-| umeiko/Haidass-Translate-143M-Instruction | 143M | no disponible | no disponible | no disponible | Variante orientada a instrucciones; datos de benchmark no disponibles |
-| Modelos OPUS-MT (familia zh↔en) | no disponible | no disponible | no disponible | no disponible | Citados en la documentación del autor como referencia del ecosistema; sin datos comparativos publicados en esta información |
+| Modelo | Parametros | Arquitectura | Almacenamiento | en→zh BLEU | zh→en BLEU | Licencia |
+|---|---|---|---|---|---|---|
+| Haidass-Translate-143M Q8_0 GGUF | 143M | LLM (Qwen3) | 188 MB | 27,94 | 17,89 | Apache 2.0 |
+| Qwen3-0.6B | 600M | LLM | ~1,2 GB (bf16) | 30,94 | 20,21 | no disponible en la información |
+| Qwen2.5-0.5B-Instruct | 500M | LLM | ~1,0 GB (bf16) | 28,96 | 18,09 | no disponible en la información |
+| M2M-100-418M | 418M | Seq2Seq | ~0,9 GB (bf16) | 28,04 | 20,58 | no disponible en la información |
+| NLLB-200-distilled-600M | 600M | Seq2Seq | ~1,2 GB (bf16) | 22,44 | 25,71 | no disponible en la información |
 
-No se dispone de una comparación cuantitativa frente a alternativas de traducción de tamaño similar; los únicos números publicados son los de la tabla de benchmarks anterior, referidos a variantes de cuantización del mismo modelo.
+Frente a alternativas de mayor tamaño, Haidass-Translate-143M ofrece un en→zh competitivo con Qwen2.5-0.5B-Instruct y M2M-100-418M con una sexta parte del almacenamiento, pero queda claramente por debajo en zh→en, donde NLLB-200-distilled-600M y M2M-100-418M lo superan en BLEU. HY-MT1.5-1.8B es muy superior en ambas direcciones a costa de un tamaño 12 veces mayor.
 
 ## Limitaciones y advertencias
 
-- Inferencia en fp16 no viable: las activaciones desbordan y producen NaN. Cualquier despliegue debe usar bf16 o una ruta de 8 bits por pesos.
-- La cuantización de activaciones a int8 destruye el modelo (BLEU en→zh de 0,00). No es un candidato apto para W8A8 ni para esquemas agresivos.
-- Cuantizar el embedding es especialmente dañino por el uso de `tie_word_embeddings`: el Q8_0 completo pierde unos 11 puntos de BLEU en→zh. Hay que conservar el embedding en bf16.
-- Cobertura lingüística limitada exclusivamente a la pareja inglés↔chino simplificado; no se documentan otros idiomas.
-- Requiere una plantilla de prompt específica, incluido el bloque `<think></think>` vacío, so pena de degradar la calidad de la traducción.
-- Modelo de 143M parámetros: cabe esperar errores en frases ambiguas, terminología especializada o textos con estructura compleja, además del riesgo habitual de alucinación de los modelos de traducción pequeños cuando el segmento de entrada es atípico.
-- No se documentan sesgos específicos ni la composición del dataset de entrenamiento, lo que impide auditar la representación de variedades dialectales o dominios concretos.
-- La licencia es Apache-2.0, heredada del modelo base, por lo que en principio permite uso comercial; conviene verificar los términos del modelo original antes de desplegarlo en producción.
-- El repositorio registra 0 descargas y 0 "likes" en el momento de redactar esta ficha, por lo que carece de validación externa de la comunidad.
-- No se ha publicado información sobre la longitud de contexto soportada, dato crítico para procesar documentos largos.
+- Solo cubre inglés y chino simplificado; no soporta otros idiomas.
+- El formato de prompt es estricto: requiere ChatML con bloque `<think></think>` vacío; desviarse de él degrada la salida.
+- Presenta desbordamiento en fp16 por valores atípicos en las activaciones; debe ejecutarse en bf16 o fp32.
+- No admite cuantización de pesos ≤4 bits ni activation-int8: ambas destruyen la calidad según el autor.
+- Riesgo de alucinación y de traducciones inventadas en textos largos o dominios muy especializados; no se documentan evaluaciones fuera de FLORES-200.
+- No se especifica la longitud de contexto soportada, lo que limita su uso en documentos extensos sin segmentación previa.
+- Rendimiento inferior en zh→en frente a modelos Seq2Seq dedicados de mayor tamaño.
+- Licencia Apache 2.0 heredada del modelo original: permite uso comercial, pero se recomienda verificar los términos del modelo base DALabCommunity/Haidass-Translate-143M.
+- No dispone de tool calling, agentes ni multimodalidad; no es adecuado como modelo de propósito general.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/umeiko/Haidass-Translate-143M-GGUF
-- Modelo base: https://huggingface.co/DALabCommunity/Haidass-Translate-143M
-- Variante de instrucciones: https://huggingface.co/umeiko/Haidass-Translate-143M-Instruction
-- Dataset de evaluación: https://huggingface.co/datasets/umeiko/Haidass-Translate-143M-eval
-- Perfil del autor: https://huggingface.co/umeiko
-- Ficha en LLM Explorer (variante Instruction): https://llm-explorer.com/model/umeiko%2FHaidass-Translate-143M-Instruction,7Hk0KjULYzAdwkE4qxj2fD
-- Ficha en savrn (variante Instruction): https://savrn.com/models/haidass-translate-143m-instruction
-- Publicador umeiko en savrn: https://savrn.com/model-publishers/umeiko
+- Modelo base original: https://huggingface.co/DALabCommunity/Haidass-Translate-143M
+- Repositorio de evaluación: https://huggingface.co/datasets/umeiko/Haidass-Translate-143M-eval
+- Informe de cuantización: QUANTIZATION_REPORT.md (referenciado en la model card del repo)
+- README en chino: README_zh.md (referenciado en la model card del repo)

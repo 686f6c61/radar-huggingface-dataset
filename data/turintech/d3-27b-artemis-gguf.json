@@ -54,7 +54,7 @@
     {
       "task": "Agreement with the original",
       "dataset": "Test decisions",
-      "metric": "Same as BF16 (%)",
+      "metric": "Same answer (%)",
       "value": 97.1
     },
     {
@@ -62,33 +62,13 @@
       "dataset": "Test decisions",
       "metric": "Confident changes",
       "value": 0
+    },
+    {
+      "task": "Typed decisions",
+      "dataset": "Test decisions",
+      "metric": "Accuracy (%)",
+      "value": 74.85
     }
   ],
-  "sources": [
-    {
-      "title": "Artemis Edge model downloads · TurinTech",
-      "url": "https://www.turintech.ai/models",
-      "snippet": "Browse compressed chat and decision models from TurinTech. Find recommended GGUF downloads, upstream authors, quality trade-offs and supported runtimes."
-    },
-    {
-      "title": "D3 27b Artemis Gguf - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/turintech/d3-27b-artemis-gguf",
-      "snippet": "Registry entry for model D3 27b Artemis Gguf; source metadata pending."
-    },
-    {
-      "title": "vLLM Semantic Router&#x27;s d3 in 15 GB and d3-flash in 4.9 GB - turintech.ai",
-      "url": "https://www.turintech.ai/blog/d3-and-d3-flash-compressed-with-artemis",
-      "snippet": "The second file, d3-27B-Artemis-12.3GB.gguf, is 12.26 GB and needs 14.1 GiB for text, so it should fit a 16 GB GPU. It agrees with the original on 95.7% of the test decisions, with accuracy 0.30 points lower, and changed no confident answer."
-    },
-    {
-      "title": "TurinTech AI · Get more from systems you already run",
-      "url": "https://turintech.org/",
-      "snippet": "Artemis improves the performance of models, agents and code you already run by testing multiple optimization strategies and delivering measurable gains."
-    },
-    {
-      "title": "d3-27B-Artemis-14.9GB.gguf - SHA256 mirrors - CivArchive",
-      "url": "https://civarchive.com/sha256/4ae3fc00c3f7e7475796263a2b2c6311d2090f07f1dbcae9a175faa215366568",
-      "snippet": "Download d3-27B-Artemis-14.9GB.gguf (SHA256: 4ae3fc00c3f7e747...)."
-    }
-  ]
+  "sources": []
 }

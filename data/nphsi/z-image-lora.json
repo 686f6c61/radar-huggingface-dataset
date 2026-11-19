@@ -44,5 +44,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Does character LoRA dataset affect Z-Image composition and posing?",
+      "url": "https://www.reddit.com/r/malcolmrey/comments/1rfal9b/does_character_lora_dataset_affect_zimage/",
+      "snippet": "26.02.2026 ... I ran dozens of Malcolm's and nphSi's Z-image character LoRA ... Best Ai image generation & editing model for professional illustrators?"
+    }
+  ]
 }

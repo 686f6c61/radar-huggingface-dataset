@@ -2,107 +2,123 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-Embedding es un modelo de embeddings de texto desarrollado por llm-semantic-router, pensado específicamente para alimentar routers semánticos: convertir peticiones y documentos en vectores comparables para recuperar contexto relevante, emparejar consultas con ejemplos y agrupar conversaciones por significado. Su función no es generar texto, sino producir representaciones vectoriales de alta calidad sobre documentos de hasta 32.768 tokens.
+Vela-1.0-Encoder-307M-Embedding es un modelo de embeddings de frases desarrollado por el proyecto vLLM Semantic Router, un ecosistema de enrutamiento semantico de peticiones para infraestructuras de inferencia LLM. El modelo parte del encoder base vllm-sr/Vela-1.0-Encoder-307M y se ha afinado para tareas de similitud semantica, recuperacion de informacion y memoria conversacional dentro del propio router. Su funcion principal es conectar cada peticion entrante con el contexto adecuado, de modo que el enrutador pueda decidir a que modelo, herramienta o base de conocimiento derivarla.
 
-Está construido sobre el modelo base llm-semantic-router/mmbert-embed-32k-2d-matryoshka y emplea una arquitectura ModernBERT (encoder transformer con attention eficiente) con 306.939.648 parámetros totales, 22 capas y una dimensión de salida por defecto de 768. Incorpora embeddings Matryoshka, de modo que ofrece cuatro profundidades y cinco dimensiones distintas para ajustar el equilibrio entre precisión y coste de almacenamiento y búsqueda.
+Tecnicamente es un encoder de arquitectura ModernBERT con 306.939.648 parametros, 22 capas y 768 dimensiones de representacion, con una longitud de contexto de 32.768 tokens (incluyendo tokens especiales). Emite vectores unitarios de 768 dimensiones por defecto y soporta representaciones de tipo Matryoshka, lo que permite truncar la dimensionalidad del embedding segun el coste y la precision requeridos.
 
-Su relevancia actual radica en dos factores. Por un lado, la ventana de 32K tokens permite indexar documentos largos sin trocear agresivamente, algo poco habitual en modelos de embeddings de este tamaño. Por otro, forma parte de una familia completa de modelos de router (Domain, Feedback, Modality, PII, FactCheck, Reranker, Encoder, más PromptGuard, Safety y Hazard como próximos lanzamientos) que se integra con el proyecto vLLM Semantic Router, con licencia Apache 2.0 y pesos en safetensors y ONNX.
+Su relevancia actual radica en dos factores: por un lado, la ventana de 32K tokens lo hace apto para recuperacion sobre documentos largos, un punto debil habitual en encoders de este tamano; por otro, esta publicado bajo licencia Apache 2.0 y en formatos safetensors y ONNX, lo que facilita su despliegue en produccion con sentence-transformers, Text Embeddings Inference o runtimes ONNX. La model card reporta mejoras medibles frente al mmBERT Embedding original en tareas de clasificacion de intenciones, similitud de pares y recuperacion de documentos largos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (encoder transformer), según la etiqueta `modernbert` |
-| Parametros totales | 306.939.648 (dato real de safetensors) |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | 32.768 tokens, incluyendo tokens especiales |
-| Tipos de cuantizacion | FP16 nativo; variantes ONNX (incluida una build AMD ONNX con resultados propios); el modelo base es una versión cuantizada de un modelo previo (`base_model:quantized:...`) |
-| Idiomas soportados | Multilingüe (la model card no enumera el listado completo de idiomas) |
+| Arquitectura | ModernBERT (encoder transformer) |
+| Parametros totales | 306.939.648 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens (incluye tokens especiales) |
+| Tipos de cuantizacion | no disponible (la model card menciona evaluacion en FP32; no se listan variantes cuantizadas publicadas) |
+| Idiomas soportados | en, ar, es, ja, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y ONNX (transformers); compatible con text-embeddings-inference y endpoints |
-
-Otros datos de interés: dimensión de salida por defecto de 768, 22 capas, cuatro profundidades y cinco dimensiones Matryoshka, pipeline `sentence-similarity`, tamaño del repositorio 13,1 GB y requisito declarado de `transformers==4.57.6`.
+| Formato de pesos | safetensors, ONNX |
+| Dimension del embedding | 768 (vectores unitarios por defecto), con soporte Matryoshka para truncado |
+| Capas | 22 |
+| Libreria | sentence-transformers |
+| Pipeline | sentence-similarity |
+| Modelo base | vllm-sr/Vela-1.0-Encoder-307M (finetune) |
+| Tamano del repositorio | 35,2 GB |
 
 ## Arquitectura y entrenamiento
 
-La model card identifica la arquitectura mediante la etiqueta ModernBERT y describe un encoder de 307M de parámetros, 22 capas y 768 dimensiones de representación. La salida se obtiene mediante *mean pooling* enmascarado sobre el último estado oculto, seguido de normalización L2, tal como muestra el fragmento de código oficial. El modelo admite salidas tempranas (*shallow exits*) por capa, pero la propia documentación advierte que estas reducen la calidad; el ajuste recomendado es usar las 22 capas. La estructura Matryoshka permite truncar la dimensión del vector para obtener representaciones más compactas a costa de precisión.
+El modelo es un encoder transformer de la familia ModernBERT, con 22 capas y 768 dimensiones ocultas, afinado a partir del checkpoint vllm-sr/Vela-1.0-Encoder-307M. La eleccion de ModernBERT frente a BERT clasico aporta mejoras de eficiencia en secuencias largas, coherente con la ventana de 32K tokens que declara la model card. El modelo produce embeddings de frase mediante pooling y normalizacion a vectores unitarios de 768 dimensiones, y admite el esquema Matryoshka, que permite recortar la dimension del vector (por ejemplo a 512, 256 o 128) manteniendo buena parte de la calidad semantica, a cambio de reducir el coste de almacenamiento e indexacion.
 
-No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO; tampoco se especifican las cinco dimensiones ni las cuatro profundidades concretas. Sí se indica que el modelo base ya era un modelo de embeddings de 32K con Matryoshka y que a su vez deriva de una versión cuantizada de otro modelo. La model card menciona que se conservaron la calidad en *natural-paper* y en la posición final de contexto de 32K, y que existe una build AMD ONNX con resultados separados, incluida una caída de 1,04 puntos porcentuales en la posición final de 32K.
+La informacion proporcionada no detalla el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF, DPO u otras fases de alineacion; estos datos deben considerarse no disponibles. La model card si especifica que el modelo se evaluo en FP32 y que las comparaciones se realizaron contra el mmBERT Embedding original (vllm-sr/mmbert-embed-32k-2d-matryoshka), lo que sugiere un proceso de finetune orientado a tareas de enrutamiento semantico y recuperacion multilingue. El enfasis declarado del proyecto es el uso como componente de un router semantico: clasificacion de intenciones, coincidencia de contexto y memoria en conversaciones multi-turno.
 
 ## Capacidades
 
-- Generación de embeddings de texto para similitud semántica y recuperación de contexto; no genera texto, no razona y no produce código.
-- Codificación de documentos largos de hasta 32.768 tokens en una sola pasada, sin truncado.
-- Soporte multilingüe, con consultas de ejemplo en inglés y chino en la documentación oficial; las ganancias declaradas varían según el idioma.
-- Embeddings Matryoshka con cuatro profundidades y cinco dimensiones, lo que permite un índice en dos o más niveles de resolución.
-- Salida normalizada L2 (producto escalar como medida de similitud), con dimensión por defecto de 768.
-- Integración nativa con el ecosistema transformers, además de exportaciones ONNX y compatibilidad con text-embeddings-inference y endpoints.
-- Uso previsto dentro de un router semántico: recuperación de contexto, emparejamiento de peticiones con ejemplos y agrupación de conversaciones relacionadas.
-- No soporta *tool calling*, ni agentes, ni modos de pensamiento (*thinking*), ni visión o audio: es un encoder de texto puro.
+- Generacion de embeddings de frase y de documento para similitud semantica y recuperacion (retrieval).
+- Similitud de pares de frases (tareas tipo PAWS-X, STS-B) en ingles y chino, con soporte declarado tambien para arabe, espanol y japones.
+- Clasificacion de intenciones y enrutamiento semantico de peticiones (tareas tipo Banking77 y MASSIVE).
+- Recuperacion sobre documentos largos gracias a la ventana de 32.768 tokens (evaluado en SummScreenFD).
+- Clustering de textos y de noticias (CLS Clustering, Twenty Newsgroups Clustering).
+- Recuperacion bilingue chino-ingles (Tatoeba).
+- Embeddings Matryoshka: truncado de dimensionalidad para ajustar coste y precision.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso por si mismo; su funcion es representar y comparar textos.
 
 ## Casos de uso
 
-- Router semántico de peticiones: dentro de vLLM Semantic Router, el modelo vectoriza cada petición entrante y permite decidir a qué modelo, política o experto derivarla comparándola contra un banco de ejemplos; es adecuado porque separa consultas por significado y no por palabras clave.
-- Recuperación aumentada (RAG) sobre documentación larga: con 32K tokens de contexto se pueden indexar informes, contratos o artículos completos sin fragmentar, reduciendo la pérdida de contexto que provoca el chunking agresivo.
-- Caché semántica de respuestas LLM: se vectoriza cada consulta y se compara contra consultas previas para reutilizar respuestas; el uso de dimensiones Matryoshka reducidas permite hacer un primer cribado barato y solo recalcular en los casos dudosos.
-- Deduplicación y agrupación de conversaciones: agrupar tickets de soporte o hilos de chat por similitud semántica, con la ventaja de que una conversación completa cabe en la ventana de 32K sin trocear el historial.
-- Selección dinámica de ejemplos *few-shot*: recuperar los ejemplos más similares a la consulta actual y construir el prompt del LLM generativo con ellos, mejorando la calidad sin aumentar el tamaño fijo del prompt.
-- Búsqueda semántica multilingüe: un mismo índice puede atender consultas en distintos idiomas y documentos en otros, útil en bases documentales corporativas o catálogos de producto multiidioma.
-- Filtrado previo en pipelines de agentes: descartar contexto irrelevante antes de pasarlo a un LLM grande, reduciendo tokens de entrada y coste por petición.
-- Indexado en dos fases para grandes volúmenes: almacenar vectores de dimensión reducida para la búsqueda inicial y reservar los vectores de 768 dimensiones (o profundidades mayores) para el re-ranking de los candidatos finales.
+- Enrutamiento semantico de peticiones en un gateway LLM: el router codifica la consulta del usuario y la compara contra embeddings de intenciones o rutas predefinidas para decidir que modelo o herramienta atiende la peticion; la ventana de 32K permite incluir contexto conversacional completo en la decision.
+- Clasificacion de intenciones en atencion al cliente: con resultados reportados de 74,04 en Banking77, el modelo puede asignar tickets a colas o agentes especializados comparando la consulta con prototipos de cada categoria.
+- Recuperacion aumentada (RAG) sobre documentos largos: la ventana de 32K y el rendimiento en SummScreenFD (nDCG@10 de 88,36) lo hacen adecuado para indexar y recuperar pasajes extensos, como transcripciones, informes o contratos, sin trocear en exceso.
+- Memoria conversacional en agentes: almacenar embeddings de turnos previos y recuperar los mas relevantes para inyectarlos en el prompt del modelo generativo, reduciendo el coste de reenviar historiales completos.
+- Deduplicacion y clustering de contenidos multilingues: agrupar noticias, tickets o resenas en ingles, chino, espanol, arabe o japones usando similitud coseno sobre los embeddings.
+- Busqueda semantica bilingue chino-ingles: con resultados de 89,12 en Tatoeba zh-en, sirve para motores de busqueda interna que deban cruzar consultas y documentos en ambos idiomas.
+- Filtrado y moderacion por similitud: comparar mensajes entrantes contra embeddings de referencia de contenido permitido o problematico para priorizar revision.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son los de la propia model card:
+Resultados publicados en la model card (puntuaciones x100, mayor es mejor), comparados con el mmBERT Embedding original. Tareas seleccionadas de MTEB 2.21.0:
 
-| Evaluacion | Modelo anterior | Vela 1.0 Embedding |
+| Tarea | mmBERT original | Vela |
 |---|---:|---:|
-| Recuperacion multilingue con judged-pool, nDCG@10 (48 consultas) | 0,807 | 0,814 |
-| Recuperacion de documentos largos construidos, pair accuracy (1.152 escenarios) | 55,6 % | 57,5 % |
+| Banking77 | 72,26 | 74,04 |
+| MASSIVE · ingles | 63,51 | 68,12 |
+| MASSIVE · chino | 61,41 | 66,08 |
+| DuRetrieval | 62,47 | 62,99 |
+| NFCorpus | 26,38 | 26,13 |
+| SciFact | 46,81 | 48,28 |
+| PAWS-X · ingles | 62,98 | 71,74 |
+| PAWS-X · chino | 59,29 | 62,82 |
+| STS-B · chino | 75,00 | 74,73 |
+| STS-B · ingles | 80,38 | 81,19 |
+| CLS Clustering | 34,20 | 34,87 |
+| Twenty Newsgroups Clustering | 38,05 | 38,53 |
+| Tatoeba · chino-ingles | 89,13 | 89,12 |
 
-Notas sobre estos resultados: la model card indica que las ganancias varían según el idioma y que existe una build AMD ONNX con resultados propios, incluida una caída de 1,04 puntos porcentuales en la posición final del contexto de 32K. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible, lo cual es coherente con que se trate de un modelo de embeddings y no de un modelo generativo.
+Recuperacion de documentos largos:
+
+| Evaluacion | Metrica | mmBERT original | Vela |
+|---|---|---:|---:|
+| SummScreenFD · 336 consultas | nDCG@10 | 76,99 | 88,36 |
+
+Ambos modelos usan 22 capas, 768 dimensiones y FP32. Cada fila de MTEB emplea la metrica principal estandar de la tarea; SummScreenFD usa su split de validacion. El autor advierte que estos resultados describen unicamente las tareas listadas y no constituyen una puntuacion MTEB completa ni un ranking. No se han publicado resultados de benchmarks adicionales (por ejemplo MMLU, HumanEval o GSM8K) en la informacion disponible, lo cual es esperable al tratarse de un modelo de embeddings y no de generacion.
 
 ## Requisitos de hardware
 
-Estimaciones basadas en los 306,9M de parámetros declarados; no son cifras publicadas por el autor:
-
-- Pesos en FP16: aproximadamente 0,61 GB. En FP32, alrededor de 1,23 GB. En INT8, unos 0,31 GB.
-- VRAM en inferencia FP16: del orden de 2 a 4 GB para lotes moderados con secuencias cortas; la atención sobre secuencias de 32K eleva el consumo de activaciones y puede requerir más memoria, especialmente con lotes grandes.
-- GPU recomendadas: cualquiera con 8 GB o más de VRAM para uso general. Para lotes grandes y contexto completo de 32K conviene una A100, H100, L40S o similar.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y equivalentes, e incluso en CPU para cargas ligeras, como demuestra el ejemplo oficial.
-- Opciones de despliegue: transformers (versión 4.57.6 indicada por el autor), ONNX Runtime con las exportaciones disponibles, text-embeddings-inference y el stack de vLLM Semantic Router. No se documenta soporte GGUF ni llama.cpp en la información disponible.
-- Latencia y throughput: no disponibles. Como referencia cualitativa, la propia documentación advierte que usar menos capas (salidas tempranas) reduce la calidad, por lo que recortar profundidad para ganar velocidad tiene coste.
+- VRAM estimada para inferencia: con 306,9 M de parametros, en FP32 el modelo ocupa aproximadamente 1,2 GB de pesos; en FP16 unos 0,6 GB; en INT8 unos 0,3 GB. A ello hay que sumar memoria de activaciones, que crece con la longitud de secuencia: procesar 32K tokens requiere bastante mas memoria que secuencias cortas, por lo que conviene presupuestar varios GB adicionales en funcion del tamano de lote.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo en FP16 con secuencias moderadas; para lotes grandes o secuencias cercanas a 32K se recomiendan GPU de 24 GB o mas (RTX 4090, L40S, A100, H100). La model card menciona builds de PyTorch con ROCm para GPU AMD.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060 12 GB, RTX 4070, RTX 4080 o RTX 4090, especialmente en FP16 o INT8 y con longitudes de secuencia controladas.
+- Opciones de despliegue: sentence-transformers (referencia en la model card), Text Embeddings Inference (tag text-embeddings-inference), ONNX Runtime para los pesos ONNX publicados, y despliegue como servicio de embeddings en el propio ecosistema vLLM Semantic Router. No se mencionan integraciones con llama.cpp u Ollama, que no son el formato habitual para encoders de embeddings.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Embedding | 306,9M | 32.768 tokens | Apache 2.0 | safetensors y ONNX | nDCG@10 de 0,814 en recuperación multilingüe; pair accuracy del 57,5 % en documentos largos |
-| llm-semantic-router/mmbert-embed-32k-2d-matryoshka | no disponible | 32.768 tokens (por el nombre del modelo) | no disponible | no disponible | Es el modelo base declarado; la model card lo usa como referencia de "modelo anterior" (nDCG@10 0,807 y 55,6 % de pair accuracy) |
-| Otras alternativas de embeddings multilingües de ~300M | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificables en la información proporcionada |
+| Vela-1.0-Encoder-307M-Embedding | 306,9 M | 32.768 tokens | en, ar, es, ja, zh | Apache 2.0 | Mejora al mmBERT en la mayoria de tareas evaluadas; SummScreenFD nDCG@10 88,36 |
+| mmBERT Embedding (vllm-sr/mmbert-embed-32k-2d-matryoshka) | no disponible | 32K (segun nombre del checkpoint) | multilingue | no disponible | Modelo de referencia directo; peor en PAWS-X, MASSIVE y SummScreenFD, mejor en NFCorpus y STS-B chino |
+| Encoders BERT-base multilingues (familia habitual) | ~178 M | 512 tokens tipicamente | multilingue | variable | Ventana de contexto muy inferior; no comparable en recuperacion de documentos largos |
 
-No se han encontrado en la información disponible comparativas con modelos de embeddings de terceros (por ejemplo, de la familia de sentence-transformers o de embeddings de proveedores comerciales) que permitan una comparación rigurosa de parámetros, contexto y rendimiento.
+La informacion proporcionada solo permite una comparacion directa fiable con el mmBERT Embedding original, que es el checkpoint de referencia usado por el autor. Para alternativas de terceros (por ejemplo encoders de embeddings multilingues de otros proveedores) no hay datos de benchmarks en la informacion disponible, por lo que no se incluyen cifras que no puedan contrastarse.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: solo produce vectores. No puede responder preguntas, ni razonar, ni ejecutar herramientas.
-- El producto escalar entre vectores indica similitud relativa, no una probabilidad calibrada; no debe interpretarse como una puntuación de confianza.
-- Límite duro de 32.768 tokens, incluidos los tokens especiales. El código oficial lanza un error si se supera; no hay truncado automático.
-- Usar salidas tempranas (menos capas) reduce la calidad de forma explícita según el autor; las 22 capas son la configuración por defecto y recomendada.
-- Las ganancias de rendimiento varían según el idioma; no se detalla la cobertura real por lengua ni el comportamiento en idiomas de bajos recursos.
-- La build AMD ONNX presenta una degradación declarada de 1,04 puntos porcentuales en la posición final de 32K, relevante si se despliega en ese formato.
-- Posible riesgo de sesgo heredado del modelo base y de sus datos de entrenamiento, no cuantificado en la información disponible. No se especifican sesgos conocidos.
-- No se documentan volúmenes de entrenamiento, composición del dataset ni técnicas de alineación, lo que dificulta evaluar el riesgo de alucinación o de representaciones sesgadas.
-- Licencia Apache 2.0: permite uso comercial y modificación con las obligaciones habituales de atribución y aviso de cambios. No se declaran restricciones adicionales.
-- El repositorio ocupa 13,1 GB, muy por encima de lo que sugieren los pesos en FP16, presumiblemente por incluir múltiples exportaciones y variantes; conviene descargar solo los ficheros necesarios.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso en producción por terceros ni de validación independiente.
-- Los resultados de búsqueda web disponibles no contienen información sobre este modelo (versan sobre LLM en general), por lo que no aportan validación externa.
+- No es un modelo generativo: no puede producir texto, razonar de forma autonoma ni ejecutar tool calling; solo genera representaciones vectoriales.
+- Los benchmarks publicados cubren una seleccion de tareas y no una evaluacion MTEB completa; el propio autor advierte que no deben interpretarse como ranking global.
+- En NFCorpus y en STS-B chino el modelo queda ligeramente por debajo del mmBERT original, por lo que no hay mejora universal.
+- La cobertura idiomatica declarada se limita a ingles, arabe, espanol, japones y chino; el rendimiento en otros idiomas no esta documentado.
+- No se detalla la composicion del dataset de entrenamiento ni posibles sesgos; al ser un encoder afinado sobre datos no especificados, puede heredar sesgos presentes en el corpus base y en los datos de finetune.
+- Riesgo de falsos positivos en similitud semantica: como todo encoder, puede asignar alta similitud a textos con solapamiento lexico pero significado distinto; conviene calibrar umbrales por caso de uso.
+- El repositorio ocupa 35,2 GB, muy superior al tamano de los pesos del modelo, probablemente por incluir multiples formatos (safetensors y ONNX); hay que prever espacio en disco y ancho de banda de descarga.
+- Licencia Apache 2.0: permite uso comercial y modificacion con obligaciones de atribucion y aviso de cambios; no se han identificado restricciones adicionales en la informacion disponible.
+- Al tratarse de un modelo reciente (creado en septiembre de 2026), la validacion independiente en produccion es limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Embedding
-- Modelo base: https://huggingface.co/llm-semantic-router/mmbert-embed-32k-2d-matryoshka
-- Documentación técnica y evaluación (TECHNICAL.md): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Embedding/blob/main/TECHNICAL.md
-- Colección de la familia Vela 1.0: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
-- Repositorio vLLM Semantic Router: https://github.com/vllm-project/semantic-router
-- Modelos relacionados de la familia: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Feedback, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-PII, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-FactCheck, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Reranker, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
+- Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M
+- Checkpoint de referencia mmBERT Embedding: https://huggingface.co/vllm-sr/mmbert-embed-32k-2d-matryoshka
+- Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/vllm-sr/vela-10-router-models-6aa555ba70cc6997d6d67798
+- Documentacion del proyecto: https://vllm-sr.ai/
+- Blog: https://vllm-sr.ai/blog/
+- Repositorio GitHub: https://github.com/vllm-project/semantic-router
+- Canal de Slack: https://vllm-dev.slack.com/archives/C09CTGF8KCN

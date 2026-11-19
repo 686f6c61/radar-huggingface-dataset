@@ -2,85 +2,96 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje denso de 27 000 millones de parámetros desarrollado por Qwen (Alibaba), que integra capacidades nativas de visión y lenguaje. Es la generación más reciente de la familia Qwen3.8, construida sobre la arquitectura de Qwen3.5, con mejoras sustanciales en codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. El modelo admite un modo de pensamiento flexible (thinking mode) que puede activarse o desactivarse por petición, y está diseñado para ejecutar tareas complejas de varios pasos con mayor fiabilidad.
+Qwen3.8-27B es un modelo de lenguaje causal denso con codificador de visión, desarrollado por el equipo Qwen y publicado bajo licencia Apache 2.0. Se presenta como la generación más capaz de la familia de modelos abiertos Qwen hasta la fecha, construida sobre la base arquitectónica de Qwen3.5 y orientada a tareas de programación, trabajo profesional, investigación y flujos agénticos de largo horizonte. Con 27.320.697.856 parámetros totales, 64 capas y una dimensión oculta de 5120, está diseñado para ser un modelo compacto y desplegable sin renunciar a capacidades avanzadas.
 
-La versión GGUF publicada por Unsloth utiliza la tecnología Dynamic V3.0 (preview) para una cuantización de alta calidad, lo que permite ejecutar el modelo en hardware de consumo con pérdidas mínimas de rendimiento. Con una ventana de contexto nativa de 262 144 tokens, extensible hasta 1 000 000 mediante técnicas de escalado RoPE (por ejemplo, YaRN), este modelo está pensado para aplicaciones que requieren procesamiento de textos muy largos, análisis de vídeo de larga duración y razonamiento agéntico avanzado. Su licencia Apache-2.0 facilita su adopción tanto en investigación como en producción comercial.
+La arquitectura combina capas de atención lineal Gated DeltaNet con capas de atención con compuertas (Gated Attention) en un patrón repetido de 16 bloques, e incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos. Soporta de forma nativa 262.144 tokens de contexto, extensibles hasta 1.000.000, y ofrece control flexible del modo de razonamiento mediante los parámetros `reasoning_effort` y `preserve_thinking`, además de comprensión nativa de imágenes y vídeos.
+
+La ficha que nos ocupa, `unsloth/Qwen3.8-27B-GGUF`, es la cuantización publicada por Unsloth en formato GGUF, con su metodología Dynamic 3.1, que según el autor logra entre un 5 y un 10 por ciento más de precisión media que otras cuantizaciones de referencia. Es relevante ahora porque permite ejecutar un modelo de 27B con visión y contexto largo en hardware local mediante llama.cpp y entornos compatibles, con casi 7 millones de descargas y más de 6000 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Gated DeltaNet (atención lineal) + Gated Attention + FFN, con vision encoder |
-| Parametros totales | 27 320 697 856 (27B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262 144 tokens nativo, extensible hasta 1 000 000 |
-| Tipos de cuantizacion | GGUF (varias cuantizaciones, no especificadas en la model card) |
-| Idiomas soportados | No disponible (se espera multilingüe, típico de la familia Qwen) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Arquitectura | Transformer causal con Vision Encoder; layout híbrido 16 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.000.000 |
+| Tipos de cuantizacion | GGUF (Unsloth Dynamic 3.1); niveles concretos no disponibles en la información proporcionada |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de cuantización); pesos originales del modelo base no disponibles en esta ficha |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B emplea una arquitectura híbrida que combina atención lineal (Gated DeltaNet) con atención clásica (Gated Attention) en un layout de 64 capas. La configuración interna es: 16 bloques de `3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)`. La Gated DeltaNet utiliza 48 cabezas de atención lineal para V y 16 para QK, con dimensión de cabeza 128. La Gated Attention usa 24 cabezas para Q y 4 para KV, con dimensión de cabeza 256 y RoPE de 64 dimensiones. El FFN tiene dimensión intermedia de 17 408. Además, incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos, lo que acelera la inferencia y mejora la coherencia.
+El modelo es un transformer causal denso con codificador de visión. La dimensión oculta es de 5120, con 64 capas organizadas en un patrón repetido de 16 bloques: tres bloques de Gated DeltaNet (atención lineal) seguidos de un bloque de Gated Attention. La Gated DeltaNet emplea 48 cabezas de atención lineal para V y 16 para QK, con dimensión de cabeza 128. La Gated Attention usa 24 cabezas para Q y 4 para KV, con dimensión de cabeza 256 y dimensión de Rotary Position Embedding de 64. La red feed-forward tiene dimensión intermedia de 17.408, y el vocabulario (entrada y salida) es de 248.320 tokens con padding.
 
-El modelo fue entrenado en dos etapas: pre-entrenamiento y post-entrenamiento, aunque no se han publicado detalles sobre el número de tokens ni la composición del dataset. La model card indica que el modelo es un "Causal Language Model with Vision Encoder", lo que confirma su capacidad nativa para procesar imágenes y vídeos. No se menciona explícitamente el uso de RLHF o DPO, pero las mejoras en tool calling y comportamiento agéntico sugieren un post-entrenamiento orientado a tareas de agente.
+El modelo se entrena en dos etapas, preentrenamiento y postentrenamiento, e incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos, lo que habilita decodificación especulativa y aceleración de la generación. El modo de pensamiento está activado por defecto y puede desactivarse por petición; la profundidad de razonamiento se ajusta con `reasoning_effort` y el contexto de razonamiento de mensajes históricos se conserva mediante `preserve_thinking`. No se dispone en la información proporcionada del número de tokens de entrenamiento, la composición del dataset ni los detalles de RLHF o DPO.
+
+La cuantización de Unsloth aplica su metodología Dynamic 3.1, que según el autor prioriza capas sensibles para preservar precisión y supera a otras cuantizaciones de referencia en benchmarks como Terminal Bench, DeepSWE y LiveCodeBench.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo, con modo de pensamiento (thinking mode) activado por defecto y configurable mediante `reasoning_effort`.
-- Comprensión de imágenes y vídeos de forma nativa, incluyendo diagramas STEM, documentos y vídeos de hasta una hora de duración.
-- Soporte de tool calling y function calling, con mejoras en el parseo de objetos anidados para aumentar la tasa de éxito en llamadas a herramientas.
-- Capacidades agénticas avanzadas: planificación autónoma, manejo de feedback del entorno y ejecución de tareas de varios pasos hasta completarlas.
-- Soporte de MTP (Multi-Token Prediction) para inferencia más rápida.
-- Compatibilidad con herramientas de desarrollo y harnesses populares, facilitando la integración en stacks existentes.
-- Multilingüismo probable (no confirmado oficialmente), heredado de la familia Qwen.
+- Generación de texto y razonamiento multi-paso con modo de pensamiento activable o desactivable por petición y profundidad ajustable mediante `reasoning_effort`.
+- Programación y tareas de ingeniería de software, con mejoras declaradas en coding y tareas agénticas de largo horizonte.
+- Comprensión nativa de imágenes y vídeos, incluyendo diagramas STEM, documentos y vídeos de hasta una hora de duración.
+- Ejecución agéntica autónoma: planificación, manejo de retroalimentación del entorno y finalización fiable de tareas de extremo a extremo.
+- Compatibilidad con harnesses y herramientas de desarrollo populares para integración en stacks existentes.
+- Conservación del contexto de razonamiento entre turnos mediante `preserve_thinking`.
+- Soporte de contexto largo: 262.144 tokens nativos y hasta 1.000.000 extensibles, adecuado para tareas de horizonte largo.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: con 262K tokens de contexto nativo, el modelo puede gestionar conversaciones multi-turno muy largas, manteniendo el historial completo y el razonamiento interno. Su modo de pensamiento permite respuestas más precisas en consultas complejas.
-- Generación de código en producción: soporta tool calling y puede integrarse en pipelines de CI/CD para revisión de código, generación de tests o autocompletado. Su capacidad de razonamiento multi-paso ayuda a depurar errores lógicos.
-- Análisis de documentos extensos: ideal para procesar contratos, informes financieros o artículos de investigación de cientos de páginas, gracias a su ventana de contexto ampliable hasta 1M tokens.
-- Agentes autónomos de navegación web: su soporte de function calling y planificación a largo plazo permite construir agentes que interactúan con APIs, rellenan formularios o realizan tareas de investigación web de forma autónoma.
-- Análisis de vídeo de vigilancia o contenido multimedia: al ser un modelo visión-lenguaje, puede resumir vídeos de larga duración, detectar eventos o responder preguntas sobre el contenido visual.
-- Asistente de investigación científica: con capacidad de razonamiento profundo y comprensión de diagramas, puede ayudar a interpretar figuras, tablas y resultados experimentales en artículos académicos.
-- Chatbot empresarial con memoria persistente: su contexto largo permite mantener conversaciones coherentes a lo largo de sesiones extensas, útil para asistentes de productividad o soporte técnico especializado.
+- Asistencia a programación en producción: el modelo puede integrarse en pipelines de CI/CD y herramientas de desarrollo para revisión de código, generación de parches y resolución de incidencias, aprovechando sus mejoras declaradas en coding y su compatibilidad con harnesses populares.
+- Agentes autónomos de largo horizonte: tareas que requieren planificación, ejecución de múltiples pasos y manejo de retroalimentación del entorno, con contexto de hasta 262.144 tokens para mantener el estado de la tarea.
+- Análisis de documentos técnicos y diagramas STEM: gracias al codificador de visión nativo, puede interpretar figuras, esquemas y documentos escaneados junto con el texto asociado.
+- Procesamiento de vídeo de larga duración: comprensión de vídeos de hasta una hora para resumen, extracción de eventos o respuesta a preguntas sobre el contenido.
+- Investigación asistida: lectura y síntesis de corpus extensos dentro de la ventana de contexto, con razonamiento ajustable según la profundidad requerida.
+- Despliegue local en estaciones de trabajo: la versión GGUF de Unsloth permite ejecutar el modelo en hardware de consumo mediante llama.cpp u Ollama, útil para prototipado y entornos con requisitos de privacidad.
+- Automatización de flujos profesionales: generación de informes, extracción de datos de documentos y tareas de oficina que combinan texto e imagen en un mismo flujo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparativas con otros modelos. Se recomienda consultar la documentación oficial de Qwen o el repositorio del modelo base para obtener datos de evaluación cuando estén disponibles.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que la cuantización Dynamic 3.1 de Unsloth supera a otras cuantizaciones de referencia en Terminal Bench, DeepSWE y LiveCodeBench, pero no se incluyen cifras concretas en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para una cuantización Q4_K_M (típica en GGUF), se necesitan aproximadamente 16-18 GB de VRAM; para Q8_0, alrededor de 28-30 GB. La cuantización Q2_K puede caber en 12 GB, aunque con mayor pérdida de calidad.
-- GPU recomendadas: RTX 4090 (24 GB) puede ejecutar cuantizaciones Q4/Q5; A100 40 GB o H100 80 GB para cuantizaciones más altas o contexto extendido. En consumer GPU, una RTX 3090/4090 es suficiente para la mayoría de casos.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, SGLang, TGI y Unsloth Desktop. El formato GGUF es compatible con llama.cpp y Ollama directamente.
-- Latencia y throughput: no disponibles. Se espera que MTP acelere la generación, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa, un modelo denso de 27B en GGUF requiere del orden de 16-18 GB en cuantización de 4 bits y alrededor de 54 GB en FP16, aunque estas cifras no están confirmadas por el autor.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la información proporcionada; el tamaño del repo (1277,4 GB) corresponde al conjunto completo de cuantizaciones, no a un único archivo.
+- Opciones de despliegue: llama.cpp y entornos compatibles con GGUF; Unsloth Desktop para ejecución y ajuste fino local con toggles de pensamiento; endpoints compatibles según los tags del repositorio.
+- Latencia y throughput: no disponibles en la información proporcionada. El modelo incorpora MTP entrenado con múltiples pasos, lo que habilita decodificación especulativa y puede mejorar la velocidad de generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (este) | 27B denso | 262K (1M ext.) | Apache-2.0 | GGUF, safetensors | Visión-lenguaje, MTP, agéntico |
-| Qwen3-30B-A3B | 30B total, 3B activos (MoE) | 32K (ext. 128K) | Apache-2.0 | safetensors, GGUF | Solo texto, sin visión |
-| Qwen2.5-32B | 32B denso | 128K | Apache-2.0 | safetensors, GGUF | Solo texto, sin visión |
-| Llama-3.1-8B | 8B denso | 128K | Llama 3.1 | safetensors, GGUF | Menor capacidad, sin visión |
+| Qwen3.8-27B (esta ficha, GGUF de Unsloth) | 27,3B densos | 262.144 nativos, hasta 1M | Sí, nativa (imagen y vídeo) | Apache 2.0 | Hugging Face, GGUF |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se basa en especificaciones técnicas, ya que no hay datos de rendimiento publicados para Qwen3.8-27B. Este modelo destaca por su combinación de visión, contexto largo y capacidades agénticas, algo poco común en modelos de 27B.
+No se dispone en la información proporcionada de datos sobre modelos comparables de la misma categoría (mismo tamaño o misma tarea) para establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgos o alucinaciones específicas para este modelo. Como todo LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo.
-- El modo de pensamiento activado por defecto puede aumentar la latencia y el consumo de tokens de salida. Se recomienda ajustar `reasoning_effort` según el caso de uso.
-- La extensión del contexto más allá de 262K tokens requiere técnicas de escalado RoPE (por ejemplo, YaRN) que pueden degradar ligeramente la calidad en contextos muy largos.
-- Los idiomas soportados no están documentados; aunque la familia Qwen suele ser multilingüe, no hay garantía oficial.
-- La licencia Apache-2.0 permite uso comercial, pero es recomendable revisar los términos de la licencia del modelo base (Qwen/Qwen3.8-27B) por si hubiera restricciones adicionales.
-- El modelo es reciente (agosto de 2026) y su ecosistema de herramientas (vLLM, SGLang) puede tener soporte incompleto en las primeras versiones.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; como modelo generativo, es susceptible de producir contenido incorrecto, especialmente en tareas de razonamiento largo.
+- Uso de `presence_penalty` elevado: el autor advierte de que valores altos pueden provocar mezcla de idiomas y una ligera disminución del rendimiento.
+- Repetición infinita: puede aparecer en algunos casos; se recomienda ajustar `presence_penalty` entre 0 y 2 en los frameworks que lo soporten.
+- Longitud de salida: para tareas agénticas se recomienda reservar hasta 262.144 tokens para el razonamiento interno y 131.072 para la respuesta final dentro del contexto de 1M.
+- Idiomas soportados: no disponibles, lo que impide confirmar el rendimiento en castellano u otras lenguas.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los componentes opcionales de Unsloth (la UI de Unsloth Studio tiene licencia distinta del núcleo Apache 2.0).
+- Cuantización: los resultados de precisión de la versión GGUF pueden diferir de los pesos originales; el autor declara ventajas frente a otras cuantizaciones, pero no se aportan cifras verificables en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio Hugging Face del GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
-- Artículo de Yottalabs sobre cómo ejecutar Qwen3.8-27B localmente: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
-- Artículo de Yottalabs sobre especificaciones y hardware: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
-- Perfil de Unsloth en Hugging Face: https://huggingface.co/unsloth
+- Guía de ejecución de Qwen3.8-27B de Unsloth: https://unsloth.ai/docs/models/qwen3.8
+- Documentación de GGUF Dynamic 3.0/3.1: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs
+- Unsloth Desktop: https://unsloth.ai/docs/desktop
+- Documentación de Unsloth: https://unsloth.ai/docs
+- Repositorio GitHub de Unsloth: https://github.com/unslothai/unsloth
+- Paquete PyPI de Unsloth: https://pypi.org/project/unsloth/
+- Sitio web de Unsloth: https://unsloth.ai/
+- Discord de Unsloth: https://discord.gg/unsloth

@@ -2,83 +2,91 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF es una versión cuantizada en formato GGUF del modelo LiquidAI/LFM2.5-24B-A2B, un modelo de texto de aproximadamente 24 mil millones de parámetros con arquitectura mixture-of-experts (MoE) de la familia `lfm2_moe` de Liquid AI, que activa solo unos 2 mil millones de parámetros por token. Esta compilación concreta procede del máster BF16 "abliterado" mediante Heretic (OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic), un proceso sin entrenamiento que elimina la dirección de rechazo del modelo para levantar sus negativas de seguridad.
+LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF es una coleccion de cuatro builds GGUF cuantizados en precision mixta del modelo `LiquidAI/LFM2.5-24B-A2B`, un transformer de mezcla de expertos (MoE) de aproximadamente 24 mil millones de parametros totales que activa unos 2 mil millones por token. El modelo base lo desarrolla Liquid AI dentro de su familia `lfm2_moe`, y esta version concreta ha sido publicada por el usuario lavendercomputing a partir de una variante "abliterated" (sin mecanismos de rechazo) producida por OS-Software mediante la herramienta Heretic.
 
-La relevancia de esta ficha reside en la combinación de tres factores: un MoE eficiente (2B activos de 24B totales), un contexto de 131.072 tokens y cuantizaciones IQ3 de muy baja precisión (3,01 y 3,50 bits por peso) que permiten ejecutar el modelo en hardware modesto, incluso solo con CPU. Está pensado para desarrolladores que usan llama.cpp y buscan un modelo sin filtros de rechazo con coste de inferencia reducido.
+El interes de esta ficha reside en dos factores. Por un lado, ofrece una via practica de ejecutar un MoE de ~24B con contexto de 131.072 tokens en hardware de consumo, gracias a cuantizaciones agresivas de 2,50 a 3,50 bits por peso que comprimen el modelo hasta 6,99-9,78 GiB. Por otro, la receta "GSQ-RCO-style" aplica una escalera de precision por tensor ponderada por aristas sobre los expertos enrutados, que concentran el 95,7% de los parametros, manteniendo en Q8_0 o Q6_K las capas criticas (embeddings, router, atencion).
+
+Es relevante ahora porque demuestra que la cuantizacion extrema por debajo de 3 bits es viable en arquitecturas MoE con expertos pequenos, un regimen donde las tecnicas tradicionales de cuantizacion suelen degradar la coherencia. No obstante, se trata de un artefacto de comunidad sin evaluacion de benchmarks publicada y con la licencia LFM Open License v1.0, que restringe el uso comercial a entidades por debajo de 10 millones de dolares de facturacion anual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (`lfm2_moe`) con bloques híbridos de shortconv y atención completa |
+| Arquitectura | Transformer MoE (`lfm2_moe`), 40 bloques: 38 MoE con 64 expertos, 30 con shortconv, 10 con atencion completa |
 | Parametros totales | 23.971.587.712 (~24B) |
-| Parametros activos | ~2B por token (MoE) |
+| Parametros activos | ~2B por token |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | IQ3_XXS (3,01 BPW, 8,39 GiB) e IQ3_S (3,50 BPW, 9,78 GiB); cuantización mixta por tensor con token_embd y router en Q8_0, atención en Q6_K/Q8_0 |
+| Tipos de cuantizacion | IQ2_XS (2,50 bpw), IQ2_S (2,70 bpw), IQ3_XXS (3,01 bpw), IQ3_S (3,50 bpw) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (uso local y de investigación gratuito; uso comercial permitido para entidades con ingresos anuales inferiores a 10M $) |
-| Formato de pesos | GGUF (imatrix aplicada; no requiere archivo mmproj, es un modelo de solo texto) |
+| Licencia | LFM Open License v1.0 (uso comercial permitido bajo umbral de 10M USD de facturacion anual) |
+| Formato de pesos | GGUF (llama.cpp); fuente Q8_0 y maestro BF16 enlazados externamente |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE híbrido con 40 bloques: 38 son bloques MoE con 64 expertos cada uno (dimensiones 1536×2048) y los 2 restantes son bloques densos; de los 38 bloques MoE, 30 emplean una pila de convolución corta (`shortconv.in_proj/out_proj/conv`) y 10 usan atención completa con K/V de 2048×512. Los embeddings están atados (no existe `output.weight`), el vocabulario es de 128.000 tokens y los expertos enrutados concentran el 95,7 % de todos los parámetros, lo que hace que sean ellos quienes soportan la compresión de la cuantización.
+El modelo base es un transformer de mezcla de expertos con 40 bloques. De ellos, 38 son bloques MoE con 64 expertos cada uno de dimension 1536x2048; 30 bloques incorporan una pila de convolucion corta (`shortconv.in_proj/out_proj/conv`) y 10 bloques usan atencion completa con proyecciones K/V de 2048x512. Los embeddings estan atados (no existe `output.weight`), el vocabulario es de 128.000 tokens y los expertos enrutados suponen el 95,7% de los parametros totales. La arquitectura combina, por tanto, capas de atencion completa con capas de convolucion corta, un patron hibrido habitual en la familia LFM de Liquid AI.
 
-Sobre entrenamiento del modelo base no se han publicado datos en la información disponible (número de tokens, composición del dataset o alineación mediante RLHF/DPO). Lo que sí está documentado es el post-procesado: el "descensado" se realizó con Heretic, una técnica de abliteración sin entrenamiento que estima la dirección de rechazo del modelo, la proyecta fuera de matrices de pesos seleccionadas y valida cada prueba bajo un límite de KL con comprobaciones conductuales. El flujo completo fue: BF16 del fabricante → abliteración Heretic en BF16 (OS-Software) → GGUF Q8_0 prácticamente sin pérdida → builds IQ3_XXS/IQ3_S con matriz de importancia (cobertura de 516 de 517 matrices 2-D significativas).
+Sobre el entrenamiento del modelo base no se proporciona informacion en la documentacion disponible (numero de tokens, composicion del dataset, uso de RLHF o DPO: no disponible). La modificacion "Heretic" es un proceso de abliteration sin entrenamiento que estima la direccion de rechazo del modelo y la proyecta fuera de matrices de pesos seleccionadas, manteniendo las pruebas bajo una cota de divergencia KL con verificaciones de comportamiento. La cadena de procedencia es: BF16 del vendedor, abliteration de OS-Software en BF16, conversion a Q8_0 (practicamente sin perdida) y, finalmente, los cuatro builds IQ2/IQ3 de este repositorio, generados con una matriz de importancia que cubre 516 de 517 matrices 2-D significativas (la unica ausencia es el `token_embd.weight` atado, fijado en Q8_0). La receta "GSQ-RCO-style" es una equivalencia compatible en formato, ya que los motores GSQ/RCO publicados no pueden emitir GGUF.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline `text-generation`, etiqueta `conversational`).
-- Razonamiento: las builds se probaron y producen salida de razonamiento coherente, aunque solo como prueba de humo.
-- Arquitectura MoE con ~2B de parámetros activos: inferencia rápida para un modelo de 24B totales.
-- Contexto largo de 131.072 tokens.
-- Modelo sin filtros de rechazo (abliterado con Heretic): responde a peticiones que el modelo original rechazaría.
-- Solo texto: no incluye capacidades de visión ni audio (no necesita `mmproj`).
-- No hay información disponible sobre tool calling, agentes ni capacidades multilingües específicas.
+- Generacion de texto conversacional y razonamiento: los builds se probaron con llama.cpp en CPU y producen salida de razonamiento coherente.
+- Razonamiento multi-paso: la model card menciona explicitamente la generacion de "reasoning output".
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes: no disponible en la informacion proporcionada.
+- Vision, audio o torre multimodal: no incluidas; es un modelo exclusivamente de texto, sin bloque MTP/NextN, torre de vision ni tensores proyector, y no requiere fichero `mmproj`.
+- Modo "uncensored": la abliteration elimina la direccion de rechazo, lo que reduce las negativas a responder, pero no garantiza ausencia total de filtros.
 
 ## Casos de uso
 
-- Chatbots locales sin censura: el abliterado Heretic elimina las negativas del modelo original, útil para asistentes personales que ejecutan íntegramente en local.
-- Inferencia en CPU o GPU de gama baja: con 8,39-9,78 GiB en disco y ~2B de parámetros activos, es viable en portátiles y estaciones sin GPU dedicada (se reportan 8-11 t/s solo con CPU como prueba de humo).
-- Procesamiento de documentos largos: la ventana de 131.072 tokens permite resumir o analizar contratos, informes o bases de código extensos en una sola pasada.
-- Experimentación con abliteración y cuantización: la cadena de provenance documentada (BF16 → Q8_0 → IQ3) sirve como referencia reproducible para estudiar el impacto de la pérdida de precisión en modelos abliterados.
-- Integración en aplicaciones con llama.cpp: la arquitectura `lfm2_moe` está soportada de serie, lo que facilita servir el modelo con `llama-cli` o `llama-server` sin parches adicionales.
-- Prototipado de agentes ligeros en dispositivos edge: el bajo coste por token de la vía MoE y el tamaño reducido de los GGUF lo hacen adecuado para despliegues con memoria limitada, siempre aceptando la pérdida de calidad del nivel IQ3.
+- Despliegue en hardware de consumo: con 6,99 GiB (IQ2_XS) o 9,78 GiB (IQ3_S), el modelo cabe en GPU de 12-16 GB de VRAM o incluso en equipos con CPU y RAM suficiente, permitiendo ejecutar localmente un MoE de ~24B con ~2B activos.
+- Prototipado de agentes conversacionales de contexto largo: los 131.072 tokens de ventana permiten mantener historiales extensos o documentos completos en memoria sin truncar, util para asistentes de documentacion tecnica.
+- Investigacion sobre cuantizacion extrema: el repositorio sirve como referencia para estudiar el impacto de escaleras IQ2/IQ3 ponderadas por aristas en modelos MoE, comparando contra el Q6_K o BF16 de OS-Software.
+- Generacion de texto creativo sin restricciones tematicas: la abliteration hace que el modelo sea adecuado para tareas de escritura donde los filtros de rechazo del modelo original resultan un obstaculo (ficcion, guiones, contenido para adultos), siempre respetando la legislacion aplicable.
+- Analisis de corpus largos en local: con contexto de 128K y una huella de 7-10 GiB, se puede procesar y resumir documentacion extensa en estaciones de trabajo sin GPU de datacenter.
+- Evaluacion comparativa de recetas de cuantizacion: al ofrecer cuatro niveles IQ2/IQ3 con la misma receta, permite medir la degradacion de calidad entre 2,50 y 3,50 bpw en un mismo modelo.
+- Inferencia en entornos con restricciones de memoria: despliegue en contenedores o dispositivos con poca VRAM donde un modelo de 24B en BF16 (unos 48 GB) seria inviable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La única medida reportada es una prueba de humo en CPU con llama.cpp: 8-11 tokens/s, que el propio autor advierte que no es una cifra de serving.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta una senal de humo de 8-11 tokens por segundo en CPU con llama.cpp, que el propio autor califica de indicador de prueba y no de cifra de serving.
 
 ## Requisitos de hardware
 
-- VRAM / memoria: 8,39 GiB para IQ3_XXS y 9,78 GiB para IQ3_S, más overhead de contexto y KV cache. Cabe en GPUs consumer de 12 GB (RTX 3060 12 GB, RTX 4070) o puede ejecutarse parcial o totalmente en CPU con 16 GB de RAM.
-- GPU recomendadas: no disponible una recomendación oficial; por tamaño, cualquier GPU con 12 GB de VRAM o más permite offload completo, y GPUs de 8 GB permiten offload parcial de capas.
-- Consumer GPUs: sí, es el objetivo explícito de las cuantizaciones IQ3; también funciona solo con CPU (llama.cpp).
-- Despliegue: llama.cpp (soporte nativo de `lfm2_moe`, probado con `llama-cli`); no hay menciones a vLLM, TGI u Ollama en la información disponible.
-- Latencia y throughput: 8-11 t/s solo con CPU como prueba de humo; no hay cifras de serving en GPU.
+- VRAM estimada para inferencia: aproximadamente 7-8 GB para IQ2_XS, 8-9 GB para IQ2_S, 9-10 GB para IQ3_XXS y 10-11 GB para IQ3_S, mas overhead de contexto KV (que crece con los 131.072 tokens de ventana).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080, RTX 4090, A100 y H100. Las GPU de 8 GB solo admiten IQ2_XS con contexto reducido.
+- Cabe en GPU de consumo: si, en modelos de 12 GB o mas con cuantizaciones IQ2/IQ3; en 8 GB solo con IQ2_XS y contexto corto.
+- Opciones de despliegue: llama.cpp (verificado por el autor), y por extension cualquier runtime compatible con GGUF como Ollama, llama-cpp-python o LM Studio. vLLM y TGI no estan verificados en la informacion disponible.
+- Latencia y throughput: 8-11 tokens/s en CPU segun la prueba de humo del autor; no hay cifras de GPU publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Notas |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B-Heretic-GSQ-RCO (esta ficha) | ~24B | ~2B | 131.072 | LFM Open License v1.0 | GGUF IQ3, abliterado, para llama.cpp |
-| LiquidAI/LFM2.5-24B-A2B (base) | ~24B | ~2B | 131.072 | LFM Open License v1.0 | Modelo original con filtros de seguridad; disponible en BF16 y cuantizaciones de mayor fidelidad |
-| OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic | ~24B | ~2B | 131.072 | LFM Open License v1.0 | Máster BF16 abliterado, sin pérdida por cuantización |
+| LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF | ~24B | ~2B | 131.072 | LFM Open License v1.0 | GGUF IQ2/IQ3 |
+| LiquidAI/LFM2.5-24B-A2B (original) | ~24B | ~2B | 131.072 | LFM Open License v1.0 | safetensors BF16 |
+| OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic | ~24B | ~2B | 131.072 | no disponible | BF16 / Q8_0 GGUF |
+| mradermacher/LFM2.5-24B-A2B-Uncensored-Heretic-i1-GGUF | ~24B | ~2B | 131.072 | no disponible | GGUF i1 (imatrix) |
+
+Las tres alternativas comparten la misma arquitectura y pesos de origen; la diferencia esta en el nivel de cuantizacion y en si aplican o no la abliteration. Este repositorio destaca por ofrecer los niveles IQ2/IQ3 mas agresivos, mientras que los otros preservan mayor fidelidad (Q8_0 o BF16). No se dispone de datos de rendimiento comparativo entre ellos.
 
 ## Limitaciones y advertencias
 
-- La abliteración elimina salvaguardas de seguridad: el modelo puede generar contenido dañino, ilegal o inapropiado sin rechazarlo. Es responsabilidad del usuario un despliegue seguro.
-- Los builds IQ3 heredan pérdida por cuantización; para comparaciones estrictas de calidad, el autor recomienda la vía Q6_K o BF16 de OS-Software.
-- Las pruebas realizadas sobre estas builds fueron solo de carga, ejecución y coherencia; la suite de pruebas conductuales de Heretic pertenece al trabajo comunitario previo, no a este repositorio, por lo que el grado real de "descensado" no está verificado aquí.
-- Licencia LFM Open License v1.0: el uso comercial está restringido a entidades con ingresos anuales inferiores a 10M $; por encima de ese umbral se necesita un acuerdo con Liquid AI.
-- No hay datos publicados de idiomas soportados, benchmarks ni capacidades de tool calling; evaluar antes de usar en producción.
-- La abliteración puede degradar la calidad general del modelo (mayor alucinación o incoherencia), y la cuantización agresiva a 3 bits amplifica ese riesgo.
-- La cifra de 8-11 t/s en CPU es una prueba de humo, no un número de serving.
+- Las pruebas realizadas por el autor se limitan a carga, ejecucion y coherencia; la suite de comportamiento de Heretic pertenece al trabajo de la comunidad y no se ha replicado en este repositorio.
+- Los niveles IQ2/IQ3 heredan perdida de cuantizacion; para comparaciones estrictas de calidad debe usarse la ruta Q6_K o BF16 de OS-Software.
+- La abliteration altera el comportamiento del modelo y puede aumentar la probabilidad de generar contenido sensible; el autor no documenta evaluaciones de seguridad.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero esperable en un modelo base sin evaluacion publicada.
+- Idiomas soportados: no disponibles; no se puede confirmar el rendimiento en castellano.
+- Licencia LFM Open License v1.0: uso comercial permitido solo a entidades por debajo de 10 millones de USD de facturacion anual; por encima se requiere licencia adicional de Liquid AI.
+- El contexto de 131.072 tokens exige memoria KV considerable; en GPU de 12 GB habra que reducir la ventana efectiva.
+- La receta "GSQ-RCO-style" es una equivalencia en formato, no una implementacion oficial de los motores GSQ/RCO.
+- No se incluye bloque MTP/NextN ni decodificacion especulativa, por lo que no se aprovechan aceleraciones de ese tipo.
 
 ## Enlaces
 
-- Ficha del modelo cuantizado: https://huggingface.co/lavendercomputing/LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF
-- Modelo base del fabricante: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
-- Máster BF16 abliterado: https://huggingface.co/OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic
-- Fuente Q8_0: https://huggingface.co/OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic-GGUF/blob/main/LFM2.5-24B-A2B-Uncensored-Heretic-Q8_0.gguf
-- Matriz de importancia: https://huggingface.co/mradermacher/LFM2.5-24B-A2B-Uncensored-Heretic-i1-GGUF/blob/main/LFM2.5-24B-A2B-Uncensored-Heretic.imatrix.gguf
-- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
+- Repositorio Hugging Face: https://huggingface.co/lavendercomputing/LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
+- Maestro BF16 sin censura: https://huggingface.co/OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic
+- Fuente Q8_0: https://huggingface.co/OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic-GGUF
+- Matriz de importancia: https://huggingface.co/mradermacher/LFM2.5-24B-A2B-Uncensored-Heretic-i1-GGUF
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

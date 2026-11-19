@@ -2,74 +2,88 @@
 
 ## Resumen
 
-MiniMax-H3-GGUF es una versión cuantizada en formato GGUF del modelo MiniMax-H3, desarrollada por Unsloth para facilitar su ejecución local en hardware de consumo. MiniMax-H3 es un modelo de generación de vídeo de código abierto que admite tanto text-to-video como image-to-video, con capacidad nativa de generación de audio sincronizado. Esta versión GGUF reduce significativamente los requisitos de memoria, permitiendo ejecutar el modelo en GPUs de gama media mediante herramientas como ComfyUI o stable-diffusion.cpp.
+MiniMax-H3-GGUF es la colección de cuantizaciones en formato GGUF del modelo MiniMax-H3, un sistema generativo omnicanal desarrollado por MiniMax que produce vídeo con audio estéreo nativo de hasta 15 segundos a 24 FPS y 32 kHz. Esta versión la publica Unsloth, conocido por su framework de entrenamiento e inferencia local, y está pensada para ejecutar el modelo en hardware de consumo mediante stable-diffusion.cpp y las herramientas de Unsloth. El repositorio incluye tanto los denoisers como el codificador de texto Qwen3-VL que el sistema necesita, de modo que es autocontenido salvo por los VAE.
 
-El modelo se distribuye a través de Hugging Face con más de 111.000 descargas, lo que refleja un interés considerable por parte de la comunidad. Al estar cuantizado, mantiene una calidad visual cercana al modelo original mientras reduce el consumo de VRAM, lo que lo convierte en una opción práctica para desarrolladores que desean experimentar con generación de vídeo local sin depender de servicios en la nube. No se dispone de información pública sobre el número total de parámetros ni la arquitectura interna exacta del modelo base.
+El modelo base tiene 20.111.438.744 parámetros (unos 20,1 mil millones) según los pesos en safetensors, y se distribuye en dos checkpoints de denoiser independientes: `fl2va_pruned`, orientado a texto más cero, una o dos imágenes (primer y último fotograma), y `ref2va_pruned`, orientado a texto más imágenes, vídeos y audio de referencia. No son ajustes de un mismo modelo, sino pesos separados, y ambos se cuantizan aquí en los mismos niveles. La generación de audio no es un post-proceso: H3 sintetiza el audio de forma conjunta con el vídeo.
+
+Su relevancia actual radica en que permite ejecutar localmente un sistema de generación de vídeo con audio en GPUs de consumo, algo poco habitual en modelos de esta categoría. El precio a pagar es una licencia comunitaria restrictiva (MiniMax H3 Community License Agreement) que define un territorio aplicable y excluye determinadas jurisdicciones, además de exigir el cumplimiento de obligaciones de atribución al tratarse de derivados cuantizados.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión para vídeo, basado en MiniMax-H3) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Sistema generativo multimodal con denoiser de difusión (variantes `fl2va_pruned` y `ref2va_pruned`) y codificador de texto Qwen3-VL de 32B; no se detalla la topología interna del denoiser |
+| Parámetros totales | 20.111.438.744 (pesos safetensors del modelo base) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (varias precisiones, p. ej. Q4_K_M, Q5_K_M, Q8_0, según el repositorio) |
-| Idiomas soportados | en, zh (según tags de Hugging Face) |
-| Licencia | other (no especificada en la ficha) |
-| Formato de pesos | GGUF |
+| Tipos de cuantización | Q2_K, UD-Q2_K_XL, Q3_K, UD-Q3_K_XL, Q4_K, Q5_0, Q6_K, Q8_0 (denoisers); Q2_K_M y Q4_K_M (codificador de texto) |
+| Idiomas soportados | inglés (en) y chino (zh) según los metadatos del modelo base |
+| Licencia | MiniMax H3 Community License Agreement (`license: other`) |
+| Formato de pesos | GGUF (denoisers y codificador de texto); VAE en safetensors (FP16 vídeo, FP32 audio) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles técnicos sobre la arquitectura interna de MiniMax-H3 en la información disponible. Por los tags y el pipeline declarado (`image-text-to-video`), se trata de un modelo multimodal de difusión que genera vídeo a partir de texto o de una imagen inicial, con capacidad de producir audio sincronizado. El hecho de que exista una versión GGUF indica que el modelo original es de tipo transformer o difusión, pero no se confirma.
+MiniMax-H3 es un sistema omnicanal de generación de vídeo con audio nativo. El pipeline separa dos componentes: un denoiser de difusión, que es el que recibe la condición multimodal, y un codificador de texto basado en Qwen3-VL de 32B que transforma el prompt en embeddings. El repositorio de Unsloth cuantiza ambos componentes, mientras que los VAE (vídeo en FP16 y audio en FP32) se toman del repositorio Comfy-Org/MiniMax-H3 y no se duplican aquí. La variante `fl2va_pruned` acepta texto y hasta dos fotogramas (primero y último), lo que la orienta a interpolación y control temporal; la variante `ref2va_pruned` acepta además imágenes, vídeos y audio de referencia, lo que habilita tareas de transferencia de estilo, consistencia de personaje o reutilización de audio.
 
-El entrenamiento del modelo base MiniMax-H3 no está documentado en las fuentes consultadas. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La cuantización GGUF realizada por Unsloth es una optimización posterior que reduce el tamaño del modelo y acelera la inferencia en CPU y GPU, sin modificar los pesos de forma significativa.
+El modelo base está destilado y es libre de classifier-free guidance: la documentación del repositorio indica que la escala CFG debe fijarse explícitamente a 1.0 y que el modelo aborta si se supera ese valor, mientras que el valor por defecto de la herramienta es 7.0. Esto implica que el muestreo se resuelve con pocos pasos (el ejemplo publicado usa 8 pasos a 960x544 y 124 fotogramas, y el ejemplo mínimo usa 4 pasos a 640x384 con 25 fotogramas). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Las cuantizaciones `UD-` son de precisión mixta dinámica, mientras que las uniformes mantienen un único tipo en todo el tensor.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (text-to-video) y a partir de imagen (image-to-video).
-- Generación de audio nativo sincronizado con el vídeo, lo que permite crear clips con sonido sin postprocesado adicional.
-- Soporte multimodal: acepta entradas de texto e imagen para producir vídeo.
-- Ejecución local en hardware de consumo gracias a la cuantización GGUF.
-- Compatibilidad con herramientas de la comunidad como ComfyUI, stable-diffusion.cpp y el ecosistema Unsloth.
-- Idiomas soportados: inglés y chino (según los tags del repositorio).
+- Generación de vídeo a partir de texto (text-to-video), con resolución y número de fotogramas configurables y hasta 15 segundos a 24 FPS.
+- Generación de vídeo a partir de imagen (image-to-video) y de texto más imagen (image-text-to-video), incluyendo control de primer y último fotograma con la variante `fl2va_pruned`.
+- Condicionamiento por referencias multimodales (imágenes, vídeos y audio) con la variante `ref2va_pruned`, útil para consistencia de sujeto o de estilo.
+- Generación conjunta de audio estéreo nativo a 32 kHz, sintetizado por el propio modelo y no añadido en post-proceso.
+- Soporte multilingüe de prompts en inglés y chino.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso ni modo de pensamiento; no es un modelo de lenguaje conversacional, sino un generador de vídeo condicionado por texto.
 
 ## Casos de uso
 
-- Creación de prototipos visuales para cine y publicidad: los creadores pueden generar clips de vídeo de baja resolución a partir de guiones o storyboards para validar ideas antes de la producción final.
-- Generación de contenido para redes sociales: se pueden producir vídeos cortos con audio para plataformas como TikTok o Instagram Reels, directamente desde una descripción textual.
-- Asistencia en educación y formación: generar vídeos explicativos animados a partir de texto para materiales didácticos, sin necesidad de equipos de animación.
-- Desarrollo de juegos independientes: crear cinemáticas o vídeos de fondo para escenas del juego usando imágenes generadas o capturas, reduciendo costes de producción.
-- Automatización de vídeos de producto en e-commerce: transformar imágenes de productos en vídeos promocionales con movimiento y audio, mejorando la experiencia de compra.
-- Investigación en generación de vídeo: servir como modelo de referencia para estudiar técnicas de cuantización y su impacto en la calidad de salida, gracias a su disponibilidad en GGUF.
+- Prototipado rápido de vídeo publicitario: con la variante `fl2va_pruned` y una cuantización Q4_K (10,64 GiB), se pueden generar clips de producto a partir de un prompt y un fotograma inicial, con audio incluido, en una sola GPU de consumo.
+- Interpolación y control temporal de secuencias: el uso de primer y último fotograma permite generar transiciones entre dos estados de una escena, útil para animáticas y previsualización de planos.
+- Consistencia de personaje en series cortas: la variante `ref2va_pruned` acepta imágenes de referencia, lo que permite mantener la apariencia de un sujeto entre distintos clips generados con el mismo checkpoint.
+- Doblaje y sustitución de audio: al aceptar audio de referencia, `ref2va_pruned` puede emplearse para generar vídeo sincronizado con una pista existente, por ejemplo en localización de contenido.
+- Generación de material para redes sociales: clips de hasta 15 segundos a 24 FPS con audio estéreo cubren formatos habituales de vídeo corto sin necesidad de montaje posterior de sonido.
+- Iteración local sin dependencia de la nube: al ejecutarse con stable-diffusion.cpp y Unsloth, el modelo permite ciclos de prueba y error en estación de trabajo, con el codificador de texto en CPU (`--backend te=cpu`) para liberar VRAM.
+- Investigación en generación multimodal conjunta: la disponibilidad de los dos denoisers con los mismos niveles de cuantización facilita experimentos comparativos sobre condicionamiento por fotogramas frente a condicionamiento por referencias.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas objetivas como FVD (Fréchet Video Distance), CLIP score u otras comparaciones con modelos similares. Se recomienda evaluar el modelo en el caso de uso concreto antes de adoptarlo en producción.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. Al ser una versión GGUF, el consumo de memoria es menor que el del modelo original, pero no se especifican cifras exactas. Se recomienda probar con cuantizaciones Q4 o Q5 para GPUs con 8-12 GB de VRAM.
-- GPU recomendadas: tarjetas consumer como RTX 3060, RTX 4060, RTX 4070 o superiores, así como GPUs de datacenter como A100 o H100 para mayor velocidad.
-- Compatibilidad con consumer GPU: sí, gracias a la cuantización GGUF, aunque la resolución y la duración del vídeo generado dependerán de la memoria disponible.
-- Opciones de despliegue: ComfyUI, stable-diffusion.cpp, Unsloth (con su API compatible con OpenAI), y cualquier runtime que soporte GGUF.
-- Latencia y throughput: no disponibles. Dependen del hardware, la cuantización y la resolución de salida.
+- VRAM estimada para el denoiser: entre 6,22 y 7,51 GiB en las cuantizaciones más pequeñas (Q2_K y UD-Q2_K_XL), y hasta 19,94-19,97 GiB en Q8_0.
+- Codificador de texto: 12,20 GiB en Q2_K_M y 16,97 GiB en Q4_K_M. La documentación recomienda emparejar Q2_K_M con los dos denoisers más pequeños y Q4_K_M con el resto.
+- Estrategia de memoria: el flag `--backend te=cpu` mantiene el codificador de texto de 12 GB fuera de la GPU; `--offload-to-cpu` permite ajustar el modelo en GPUs más pequeñas.
+- GPUs recomendadas: no se especifican modelos concretos. Por tamaño, una RTX 4090 (24 GB) puede alojar un denoiser Q8_0 o Q6_K junto con el codificador de texto en CPU; para configuraciones con el codificador en GPU harían falta tarjetas de mayor capacidad, como A100 o H100, aunque este dato no está confirmado en la documentación.
+- Despliegue: stable-diffusion.cpp mediante `sd-cli` en modo `vid_gen`, y las herramientas de Unsloth. Los checkpoints PyTorch pre-cuantizados en FP8 están en unsloth/MiniMax-H3-FP8.
+- Latencia y throughput: no disponibles. El ejemplo publicado emplea 8 pasos a 960x544 y 124 fotogramas, y el ejemplo mínimo 4 pasos a 640x384 y 25 fotogramas, pero no se indican tiempos de ejecución ni GPU empleada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos de generación de vídeo de código abierto (como AnimateDiff, ModelScope o CogVideo). No se conocen los parámetros, el rendimiento ni la licencia de MiniMax-H3 en detalle, por lo que no es posible establecer una comparación rigurosa.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de generación de vídeo con audio que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: el tag `license:other` indica que la licencia no es una de las estándar, pero no se detalla. Antes de usar el modelo en proyectos comerciales, es imprescindible consultar la licencia del modelo base MiniMax-H3 en su repositorio oficial.
-- Sesgos y alucinaciones: como todo modelo generativo, puede producir vídeos con inconsistencias visuales, objetos deformados o contenido no deseado. No se han documentado sesgos específicos, pero se recomienda supervisión humana.
-- Limitaciones de idioma: aunque los tags indican inglés y chino, no se ha verificado la calidad de generación en otros idiomas.
-- Requisitos de hardware: aunque la cuantización reduce la barrera de entrada, la generación de vídeo sigue siendo intensiva en cómputo; en GPUs de baja gama la velocidad puede ser muy lenta.
-- Formato GGUF: la cuantización puede degradar ligeramente la calidad del vídeo en comparación con el modelo original en precisión completa. Se recomienda probar varias cuantizaciones para encontrar el equilibrio entre calidad y rendimiento.
+- Licencia restrictiva: la MiniMax H3 Community License Agreement define un territorio aplicable y excluye algunas jurisdicciones; es imprescindible revisarla antes de cualquier uso comercial.
+- Los archivos son derivados del modelo, no copias: la transformer y el codificador de texto están cuantizados, lo que altera la numerología y activa obligaciones de atribución recogidas en el archivo NOTICE.
+- No es un producto oficial de MiniMax ni está respaldado por la compañía.
+- El modelo está destilado y libre de CFG: usar una escala distinta de 1.0 provoca que el proceso aborte, y omitir `--mode vid_gen` hace que tome la ruta de imagen y falle.
+- Idiomas limitados a inglés y chino según los metadatos; no se documenta soporte de castellano en los prompts.
+- Riesgo de alucinación visual y de artefactos propios de la generación de vídeo: no se han publicado evaluaciones cuantitativas que permitan acotarlo.
+- Sesgos: no se documentan sesgos conocidos en la información disponible.
+- Dependencia de componentes externos: los VAE deben descargarse de Comfy-Org/MiniMax-H3, y el repositorio ocupa 212,2 GB en total, lo que exige planificación de almacenamiento.
+- No se dispone de información sobre el contexto máximo, el número de tokens de entrenamiento ni las condiciones de uso de las referencias de audio y vídeo.
 
 ## Enlaces
 
-- [Repositorio Hugging Face: unsloth/MiniMax-H3-GGUF](https://huggingface.co/unsloth/MiniMax-H3-GGUF)
-- [Guía de uso en ComfyUI (kombitz.com)](https://www.kombitz.com/2026/08/04/minimax_h3_gguf_in_comfyui_t2v_i2v_guide/)
-- [Repositorio GitHub de Unsloth](https://github.com/unslothai/unsloth)
-- [Página oficial de Unsloth](https://unsloth.ai/)
+- Repositorio GGUF: https://huggingface.co/unsloth/MiniMax-H3-GGUF
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Preguntas frecuentes sobre la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/QA-about-License.md
+- Checkpoints FP8: https://huggingface.co/unsloth/MiniMax-H3-FP8
+- VAE: https://huggingface.co/Comfy-Org/MiniMax-H3
+- Unsloth: https://unsloth.ai/
+- Repositorio de Unsloth: https://github.com/unslothai/unsloth/
+- Documentación de Unsloth: https://unsloth.ai/docs
+- Ejemplo de vídeo con audio: https://huggingface.co/unsloth/MiniMax-H3-GGUF/blob/main/assets/h3_gguf_ud_q2_k_xl.mp4

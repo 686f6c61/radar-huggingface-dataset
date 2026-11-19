@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Filtrare in base a criteri avanzati | Microsoft Support",
-      "url": "https://support.microsoft.com/it-it/excel/filter-by-using-advanced-criteria",
-      "snippet": "Per trovare righe che soddisfano più criteri in più colonne in cui qualsiasi criterio può essere vero, digitare i criteri in colonne e righe …"
-    },
-    {
-      "title": "Filtri Excel: filtro automatico e filtro avanzato - Andrea pacchiarotti",
-      "url": "https://www.andreapacchiarotti.it/archivio/excel-filtri.html",
-      "snippet": "Feb 4, 2023 · In sintesi, il filtro automatico è una funzione semplice per filtrare i dati in base a una o più condizioni, mentre il filtro …"
-    },
-    {
-      "title": "La Funzione FILTRO di Excel: come filtrare dati con matrici dinamiche",
-      "url": "https://valterborsato.it/excel/Matrici_dinamiche/Funzione_Filtro/Funzione_FILTRO.html",
-      "snippet": "Grazie a questa funzione, è possibile filtrare rapidamente i dati e ottenere il risultato direttamente in una matrice dinamica che si …"
-    },
-    {
-      "title": "Risolto - Filtrare Dati per Valori Diversi da Zero al Variare del ...",
-      "url": "https://www.forumexcel.it/forum/threads/filtrare-dati-per-valori-diversi-da-zero-al-variare-del-valore-di-una-determinata-cella.14335/",
-      "snippet": "Feb 10, 2018 · Ho cercato di creare una macro per cui al variare del valore nella cella C2 (che cambio grazie alla convalida dati nel …"
-    },
-    {
-      "title": "Funzioni di filtro (DAX) - DAX | Microsoft Learn",
-      "url": "https://learn.microsoft.com/it-it/dax/filter-functions-dax",
-      "snippet": "May 19, 2025 · Le funzioni di filtro consentono di modificare il contesto dei dati per creare calcoli dinamici. Restituisce tutte le righe di …"
-    }
-  ]
+  "sources": []
 }

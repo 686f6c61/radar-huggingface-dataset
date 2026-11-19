@@ -2,90 +2,91 @@
 
 ## Resumen
 
-Split-Untied-31B-ik_llama.cpp es una cuantización GGUF del modelo Split-Untied-31B, un fine-tune de la familia Gemma (etiquetado por el autor como "gemma4") desarrollado por Blazed-Forge y empaquetado para el runtime ik_llama.cpp por el usuario Austriani. El modelo está orientado a generación de texto creativo, narrativa de ficción, roleplay y conversación, y ha sido sometido a un proceso de "abliteration" y "heretic" que elimina total o parcialmente los mecanismos de rechazo del modelo base, de ahí las etiquetas uncensored y NSFW. Con 31.000 millones de parámetros, se sitúa en la gama alta de modelos densos que pueden ejecutarse en hardware de consumo mediante cuantización agresiva.
+Split-Untied-31B-ik_llama.cpp es una cuantizacion GGUF del modelo Blazed-Forge/Split-Untied-31B, publicada por el usuario Austriani. Se trata de un modelo de lenguaje de 32.106.631.740 parametros (aproximadamente 32,1 mil millones) derivado de la familia Gemma de Google, segun indican las etiquetas de la model card, y afinado para generacion de texto creativo, roleplay y ficcion. El modelo base ha sido sometido a procesos de "abliteration" y "heretic" (eliminacion de rechazos y sesgos de alineacion), lo que lo orienta a un uso sin censura y a contenido para adultos.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de la comunidad open source: un modelo base publicado en formato original (safetensors) y una serie de cuantizaciones comunitarias en GGUF para motores alternativos a llama.cpp, en este caso ik_llama.cpp, un fork optimizado para CPUs y GPUs con soporte de cuantizaciones IQ y de mezcla de expertos. Por otro, ilustra las implicaciones prácticas de distribuir modelos "abliterated": la licencia Apache 2.0 se mantiene, pero el contenido generado puede ser inapropiado sin filtros y el autor advierte explícitamente de que el modelo no es apto para todas las audiencias.
+La relevancia de esta publicacion concreta reside en el formato: no es el modelo original en safetensors, sino una conversion a GGUF optimizada para ik_llama.cpp, con cuantizaciones generadas mediante imatrix (matriz de importancia) en los tipos iq4_ks, iq4_ks_r4, iq5_k e iq6_k. Esto permite ejecutar un modelo de 31B en hardware de consumo con perdida de calidad controlada, algo especialmente relevante para la comunidad de inferencia local.
 
-La información disponible es escasa: la model card es mínima, no se publican idiomas soportados, no hay benchmarks y el propio autor indica que la subida de pesos (unos 120 GB en total) está en curso. Todo lo que sigue se basa en los metadatos de Hugging Face, las etiquetas del repositorio y la model card, sin extrapolaciones no verificables.
+El repositorio ocupa 157 GB e incluye multiples variantes de cuantizacion. La licencia declarada es Apache 2.0. El modelo esta etiquetado como "not-for-all-audiences" y "nsfw", lo que condiciona su uso a entornos y audiencias adultas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma, etiquetado "gemma4" por el autor); detalles no disponibles |
-| Parametros totales | 31B (31.000 millones, según el nombre del modelo) |
+| Arquitectura | Transformer (familia Gemma, segun etiquetas; detalles no disponibles) |
+| Parametros totales | 32.106.631.740 (aproximadamente 32,1B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ4_KS, IQ4_KS_R4 (variantes de 4 bits con imatrix) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
+| Tipos de cuantizacion | iq4_ks, iq4_ks_r4, iq5_k, iq6_k (generadas con imatrix) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
 | Formato de pesos | GGUF (para ik_llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna más allá de que el modelo base pertenece a la familia Gemma de Google, lo que implica un transformer decoder-only con atención multi-cabeza y normalización RMSNorm, aunque el autor lo etiqueta como "gemma4", una denominación que no corresponde a ninguna versión oficial publicada por Google y que podría referirse a una variante o iteración interna. El fine-tune Split-Untied-31B fue desarrollado por Blazed-Forge y posteriormente sometido a técnicas de abliteration y heretic, que modifican los pesos para reducir la probabilidad de respuestas de rechazo ante solicitudes consideradas sensibles. No se especifican el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas "gemma" y "gemma4", que apuntan a un transformer decoder-only de la familia Gemma de Google. El modelo base, Blazed-Forge/Split-Untied-31B, es un fine-tune sobre el que se han aplicado tecnicas de abliteration y "heretic" para reducir los rechazos y el comportamiento excesivamente alineado. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
-La aportación técnica de este repositorio concreto es la cuantización. Se ofrecen variantes IQ4_KS e IQ4_KS_R4, generadas con matrices de importancia (imatrix) y pensadas para el motor ik_llama.cpp, un fork de llama.cpp que incorpora kernels optimizados para cuantizaciones IQ y para ejecución en CPU con instrucciones AVX2/AVX-512. El sufijo R4 hace referencia a una variante de la cuantización con mayor fidelidad en los pesos de atención. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal.
+La innovacion tecnica destacable de esta publicacion es el uso de imatrix (matriz de importancia) para generar las cuantizaciones. Esta tecnica calibra la cuantizacion en funcion de la importancia de cada peso para la perplejidad, lo que permite que las variantes iq4_ks e iq4_ks_r4 conserven mas calidad que una cuantizacion uniforme a 4 bits. El formato esta optimizado para ik_llama.cpp, un fork de llama.cpp orientado a rendimiento en CPU y a soporte de cuantizaciones avanzadas.
 
 ## Capacidades
 
-- Generación de texto conversacional y creativo: ficción, narrativa, diálogo y roleplay, según las etiquetas del repositorio.
-- Escritura creativa de formato largo: cuentos, novelas y guiones, con capacidad de mantener coherencia en textos extensos (siempre que el contexto lo permita, dato no disponible).
-- Conversación multi-turno sin filtros de contenido, al haber sido abliterated.
-- Generación de contenido NSFW y temáticas adultas, indicado explícitamente por las etiquetas.
-- Capacidad multilingüe: no disponible; no se declaran idiomas en la model card.
-- Tool calling / function calling: no disponible; no se menciona en la documentación.
-- Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta.
-- Modo thinking, visión o audio: no disponible; no se mencionan.
+- Generacion de texto creativo: ficcion, narrativa y storytelling, segun las etiquetas del modelo.
+- Roleplay y conversacion multi-turno: etiquetado explicitamente como "rp", "roleplay" y "conversational".
+- Escritura creativa sin restricciones: el proceso de abliteration elimina los rechazos tipicos, permitiendo contenido para adultos ("nsfw", "uncensored").
+- Generacion de texto general: pipeline declarado como text-generation.
+- Capacidades multilingues: limitadas al ingles ("en").
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Modo thinking o razonamiento explicito: no disponible en la informacion proporcionada.
+- Vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Escritura de ficción interactiva y novelas por entregas: el modelo puede generar capítulos coherentes con un estilo consistente, y su naturaleza sin filtros permite tramas adultas o violentas sin rechazos, algo útil para autores de género negro, terror o erótica.
-- Roleplay conversacional en aplicaciones de entretenimiento: al no aplicar rechazos, mantiene la inmersión en personajes y escenarios que otros modelos censurarían, siempre que el despliegue incluya sus propios mecanismos de moderación si el público es generalista.
-- Generación de guiones y diálogos para videojuegos narrativos: permite producir ramificaciones de diálogo con tono adulto o humor negro, y la cuantización IQ4_KS reduce el coste de inferencia en servidores modestos.
-- Prototipado rápido en local con ik_llama.cpp: al estar cuantizado a 4 bits, puede ejecutarse en una estación de trabajo con GPU de consumo o incluso en CPU con suficiente RAM, lo que facilita experimentar sin infraestructura cloud.
-- Investigación sobre alineación y abliteration: sirve como caso de estudio para comparar el comportamiento de un modelo base frente a su versión abliterated en tareas de rechazo, sesgo y toxicidad.
-- Generación de contenido para comunidades de fans y escritura colaborativa: el modelo puede actuar como coautor en talleres literarios o plataformas de escritura compartida, con la salvedad de que la licencia Apache 2.0 permite uso comercial del modelo, aunque no exime de responsabilidad sobre el contenido generado.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente con ik_llama.cpp, los datos no salen del equipo, lo que encaja en flujos de escritura confidencial o guiones no publicados.
+- Roleplay conversacional local: el modelo puede mantener dialogos de personaje multi-turno en ingles, ejecutandose en local gracias a las cuantizaciones GGUF de 4 y 5 bits, lo que evita enviar conversaciones privadas a servicios en la nube.
+- Escritura de ficcion asistida: adecuado para generar borradores de narrativa, dialogos y descripciones sin las restricciones de contenido de los modelos alineados convencionales.
+- Generacion de contenido para adultos: el proceso de abliteration y la etiqueta "nsfw" lo hacen apto para plataformas de contenido adulto que requieran generacion de texto sin filtros de rechazo.
+- Prototipado de agentes de personaje: util para desarrolladores que construyan sistemas de personajes virtuales y necesiten un modelo que no rompa el personaje con rechazos.
+- Inferencia en CPU con ik_llama.cpp: las cuantizaciones iq4_ks e iq5_k permiten desplegar un modelo de 31B en servidores sin GPU, usando el backend optimizado de ik_llama.cpp.
+- Experimentacion en investigacion sobre alineacion: sirve como caso de estudio de modelos abliterated para comparar comportamiento con y sin rechazos.
+- Despliegue en estaciones de trabajo con GPU de consumo: las variantes de 4 bits caben en GPUs con 24 GB de VRAM, permitiendo uso local de un modelo de 31B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización IQ4_KS de 4 bits, un modelo de 31B ocupa aproximadamente 17-19 GB de pesos, más overhead de contexto y caché KV; se estiman 20-24 GB para contextos moderados.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para IQ4_KS con contexto limitado; A100 40 GB, H100 o RTX A6000 para mayor contexto o precisión.
-- ¿Cabe en GPU de consumo? Sí, en GPUs de 24 GB con cuantización IQ4_KS y contexto moderado; en GPUs de 16 GB requeriría cuantizaciones más agresivas no publicadas en este repositorio.
-- Opciones de despliegue: ik_llama.cpp (motor objetivo), llama.cpp (compatible con GGUF), Ollama si se importa el GGUF, y potencialmente otros runners compatibles con GGUF; no se garantiza compatibilidad con vLLM o TGI al no ser formatos soportados de forma nativa.
-- Latencia y throughput estimados: no disponibles; dependen del hardware y del backend (CPU vs GPU). En una RTX 4090 con IQ4_KS se puede esperar un rendimiento de decodificación en el rango de decenas de tokens por segundo, pero es una estimación genérica no verificada para este modelo.
+- VRAM estimada para inferencia (aproximada, segun cuantizacion y overhead habitual de llama.cpp):
+  - iq4_ks / iq4_ks_r4: en torno a 17-19 GB.
+  - iq5_k: en torno a 21-23 GB.
+  - iq6_k: en torno a 25-27 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para iq4 e iq5; A100 40 GB o H100 para iq6_k con contexto largo; RTX 3090 (24 GB) para iq4.
+- GPU de consumo: si, cabe en RTX 4090 y RTX 3090 con cuantizaciones de 4 y 5 bits; en GPUs de 16 GB requeriria offload parcial a CPU.
+- Opciones de despliegue: ik_llama.cpp (formato nativo de esta publicacion); compatible tambien con llama.cpp y derivados como Ollama si soportan los tipos iq4_ks e iq4_ks_r4.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Split-Untied-31B-ik_llama.cpp | 31B | no disponible | Apache 2.0 | GGUF (IQ4_KS) | Fine-tune abliterated de Gemma, orientado a rol y ficción |
-| Gemma 2 27B (Google) | 27B | 8K (oficial) | Gemma Terms of Use | safetensors, GGUF | Modelo base alineado, con filtros de seguridad |
-| Mistral Small 24B | 24B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa densa con licencia permisiva y contexto amplio |
-| Yi 34B | 34B | 4K-200K según variante | Apache 2.0 | safetensors, GGUF | Modelo denso de gama similar, con versiones comunitarias |
+| Split-Untied-31B-ik_llama.cpp | 32,1B | no disponible | GGUF (ik_llama.cpp) | Apache 2.0 | Abliterated, orientado a roleplay y NSFW |
+| Blazed-Forge/Split-Untied-31B | 32,1B | no disponible | safetensors | Apache 2.0 | Modelo base sin cuantizar |
+| Gemma 2 27B (referencia de familia) | 27B | no disponible en esta ficha | safetensors, GGUF | Gemma license | Alineado, con rechazos; no equivalente en comportamiento |
 
-La comparación es aproximada: no se dispone de benchmarks del modelo evaluado ni de especificaciones de contexto, por lo que la elección frente a alternativas debe basarse en la licencia, el tamaño y el propósito (contenido sin filtros frente a modelos alineados).
+No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con alternativas.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: los mecanismos de rechazo han sido eliminados o reducidos, por lo que puede generar contenido violento, sexual o ilegal sin advertencia; no es apto para menores ni para aplicaciones de cara al público sin moderación adicional.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede inventar hechos, citas y datos; no se han publicado evaluaciones de fidelidad.
-- Idiomas no declarados: se desconoce el soporte real de castellano y de otras lenguas; la model card no incluye información al respecto.
-- Contexto no disponible: no se puede planificar el uso en tareas de contexto largo sin conocer la ventana real.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el autor del fine-tune y el distribuidor de la cuantización no ofrecen garantías; el contenido generado es responsabilidad del usuario.
-- Repositorio con 0 descargas y 0 likes: no hay evidencia de validación comunitaria ni de que los pesos estén completos; el propio autor indica que la subida de 120 GB está en curso, por lo que pueden faltar archivos.
-- Compatibilidad limitada: el GGUF está optimizado para ik_llama.cpp; otros runners pueden no soportar las cuantizaciones IQ4_KS_R4.
-- Etiqueta "gemma4" no oficial: no corresponde a una versión publicada por Google, lo que dificulta verificar la arquitectura exacta y el comportamiento esperado.
+- Contenido para adultos: el modelo esta etiquetado como "nsfw" y "not-for-all-audiences"; no debe desplegarse en entornos accesibles a menores ni sin moderacion.
+- Sesgos: el proceso de abliteration elimina rechazos, lo que puede aumentar la probabilidad de generar contenido ofensivo, ilegal o danino; no hay evaluaciones de sesgo disponibles.
+- Alucinacion: al ser un fine-tune creativo sin datos de evaluacion publicados, el riesgo de alucinacion en tareas factuales es alto y no esta cuantificado.
+- Idioma: soporte limitado al ingles; el rendimiento en castellano no esta garantizado.
+- Contexto: la longitud de contexto no esta documentada en la informacion disponible, lo que dificulta planificar despliegues con ventanas largas.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base declara la misma licencia; conviene verificar las condiciones del fine-tune original antes de produccion.
+- Formato: las cuantizaciones estan pensadas para ik_llama.cpp; otros runners pueden no soportar iq4_ks_r4 y requerir conversion.
+- Falta de benchmarks: no hay datos publicados de MMLU, HumanEval ni similares, por lo que la calidad real frente a alternativas no esta verificada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Austriani/Split-Untied-31B-ik_llama.cpp
+- Hugging Face: https://huggingface.co/Austriani/Split-Untied-31B-ik_llama.cpp
 - Modelo base: https://huggingface.co/Blazed-Forge/Split-Untied-31B
-- ik_llama.cpp (repositorio del motor): https://github.com/ikawrakow/ik_llama.cpp
-- llama.cpp (motor compatible): https://github.com/ggml-org/llama.cpp
-- Documentación de Gemma (Google): https://ai.google.dev/gemma
+- ik_llama.cpp (repositorio del motor): no disponible en la informacion proporcionada
+- Paper o blog del modelo: no disponible en la informacion proporcionada

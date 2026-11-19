@@ -61,19 +61,19 @@
       "task": "Time Series Forecasting",
       "dataset": "fev-bench",
       "metric": "Skill score",
-      "value": 49.42
+      "value": 49.4
     },
     {
       "task": "Time Series Forecasting",
       "dataset": "GIFT-Eval",
       "metric": "CRPS",
-      "value": 0.452
+      "value": 0.4503
     },
     {
       "task": "Time Series Forecasting",
       "dataset": "GIFT-Eval",
       "metric": "MASE",
-      "value": 0.6608
+      "value": 0.658
     },
     {
       "task": "Time Series Forecasting",
@@ -88,31 +88,5 @@
       "value": 0.637
     }
   ],
-  "sources": [
-    {
-      "title": "t0-gamma: the top time-series foundation model on fev-bench, GIFT ...",
-      "url": "https://www.theforecastingcompany.com/blog/t0-gamma/",
-      "snippet": "vor 5 Tagen ... t0-gamma is our new forecasting foundation model. It has a similar architecture to t0-beta, which our technical report describes in detail."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=forecasting",
-      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... theforecastingcompany/t0-gamma. Time Series Forecasting • 0.3B • Updated 3 ..."
-    },
-    {
-      "title": "PowerUp's Post - LinkedIn",
-      "url": "https://www.linkedin.com/posts/powerup-technology_advanced-battery-analytics-depends-not-only-activity-7513235464091398144-7Mxl",
-      "snippet": "06.10.2026 ... Advanced battery analytics depends not only on the sophistication of analytical models, but also on the quality and interpretability of the ..."
-    },
-    {
-      "title": "Time Series Forecasting Models - Hugging Face",
-      "url": "https://huggingface.co/models?pipeline_tag=time-series-forecasting",
-      "snippet": "Models. 993. Base only. Inference Available Inference. Edit filters. Sort ... theforecastingcompany/t0-gamma. Time Series Forecasting • 0.3B • Updated 3 ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=apple-silicon",
-      "snippet": "Models · FermionResearch/Phonon-2 · moondream/parakeet-redux · FluidInference/d3-coreml · theforecastingcompany/t0-gamma · orcarouter/Qwen3.8-27B-Uncensored-MLX."
-    }
-  ]
+  "sources": []
 }

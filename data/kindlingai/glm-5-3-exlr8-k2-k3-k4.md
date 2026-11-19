@@ -2,105 +2,109 @@
 
 ## Resumen
 
-`kindlingai/glm-5.3-exlr8-k2-k3-k4` es una cuantizacion del modelo GLM-5.3 de Zhipu AI (zai-org), publicada por el usuario kindlingai. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 744B parametros totales, 256 expertos enrutados por capa, 75 capas MoE, tres capas densas iniciales (0-2) y una capa MTP adicional (la 78). La cuantizacion emplea el formato propietario exlr8 v2, derivado de la codificacion trellis de EXL3 (estilo QTIP), y esta disenada especificamente para dispositivos con memoria unificada de clase NVIDIA GB10 (128 GB de LPDDR5X, ~220 GB/s de ancho de banda de streaming).
+GLM-5.3-exlr8 (K2/K3/K4) es una cuantización del modelo GLM-5.3 de Z.ai (zai-org), un transformer de tipo Mixture-of-Experts con 744B parámetros totales, 256 expertos enrutados distribuidos en 75 capas MoE más una capa MTP (multitoken prediction) en la capa 78 y capas densas en las posiciones 0-2. La cuantización la publica kindlingai en el formato propietario exlr8 v2, diseñado específicamente para dispositivos con memoria unificada de clase NVIDIA GB10 (DGX Spark) servidos con tensor-parallel de 3 a 7.
 
-La novedad principal es que el repositorio almacena cada experto enrutado simultaneamente a tres anchuras de trellis (K2, K3 y K4), y la anchura efectiva se elige en tiempo de carga mediante un manifiesto, sin necesidad de recodificar. Se incluyen tres manifiestos: `home` (~3.25 bits por peso efectivos), `down1` (~2.25 bpw) y `up1` (4.0 bpw). El objetivo declarado es servir el modelo en configuraciones de tensor parallelism de 3 a 7 ranks (TP=4, 5 y 6 como objetivos principales), reduciendo los bytes de pesos de experto leidos por paso de decodificacion, que es el cuello de botella en decodificacion con concurrencia mayor que 1.
+La innovación principal del formato es que cada experto enrutado se almacena simultáneamente en tres anchuras (K2, K3 y K4) dentro del mismo codebook trellis mul1, y un perfil de anchura decide en tiempo de carga qué anchura usa cada experto. Esto permite cambiar entre once perfiles (desde `bit200` hasta `bit400`) sin descargar pesos adicionales, ajustando el equilibrio entre tamaño, calidad y memoria disponible. El repositorio ocupa 1.672,4 GB en total, pero cada perfil individual ocupa entre 199 GB y 380 GB.
 
-El estado actual del repositorio es "draft / preview" (version 0.3, git tag `v0.3`). El autor indica que las pruebas end-to-end (acuerdo de TP, KL sobre datos reservados frente a BF16 y velocidad de decodificacion) estan en ejecucion, y que las metricas de la model card se actualizaran a medida que se obtengan. El tamano del repositorio es de 837,5 GB y acumula 11.322 descargas y 11 me gusta en el momento de la consulta.
+El modelo resuelve el problema de desplegar un MoE de 744B en hardware de memoria unificada de gama relativamente baja, manteniendo la fidelidad respecto al BF16 original medida en KL divergence. Es relevante ahora porque el ecosistema de DXG Spark y GB10 está creciendo, y las cuantizaciones tradicionales (GGUF, AWQ, GPTQ) no están optimizadas para servir modelos MoE de este tamaño en configuraciones tensor-parallel pequeñas con memoria compartida entre CPU y GPU.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (256 expertos enrutados, 75 capas MoE, capas densas 0-2, capa MTP en la 78); cuantizacion trellis EXL3 / exlr8 v2 |
-| Parametros totales | 744B (modelo base GLM-5.3) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer MoE con atención DSA (glm_moe_dsa); 75 capas MoE + 1 capa MTP (capa 78) + capas densas 0-2 |
+| Parámetros totales | 744B (modelo base GLM-5.3) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | exlr8 v2 (trellis EXL3 con codebook E4M3), anchuras K2, K3 y K4 almacenadas simultaneamente; manifiestos `home` ~3.25 bpw, `down1` ~2.25 bpw, `up1` 4.0 bpw |
+| Tipos de cuantización | exlr8 v2 con codebook trellis mul1; anchuras K2, K3 y K4 por experto; redondeo E4M3 obligatorio en el loader |
 | Idiomas soportados | no disponible |
-| Licencia | `other`, con `license_name: glm-5.3` y `license_link: LICENSE` (archivo LICENSE incluido en el repo) |
-| Formato de pesos | safetensors con codigos trellis empacados (16K int16 little-endian en orden de tensor cores, compatible con `pack_trellis` de exllamav3) |
+| Licencia | glm-5.3 (licencia `other`, enlazada al fichero LICENSE del repo) |
+| Formato de pesos | safetensors (expertos, densos y vocabulario); BF16 para embedding y lm_head; configuración y tokenizer heredados del base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3 es un transformer de tipo Mixture of Experts con 744B parametros, 256 expertos enrutados por capa, 75 capas MoE, 3 capas densas iniciales y una capa MTP (Multi-Token Prediction) adicional identificada como capa 78. Esta publicacion no entrena el modelo: cuantiza los pesos BF16 del modelo base `zai-org/GLM-5.3-BF16`. Por tanto, la composicion del dataset de entrenamiento, el numero de tokens y las fases de RLHF/DPO no se detallan en la informacion disponible.
+El modelo base GLM-5.3 es un transformer MoE con 256 expertos enrutados por capa en 75 capas MoE, más una capa de multitoken prediction (MTP) en la posición 78 y tres capas densas iniciales (0-2). La atención usa el mecanismo DSA (denominación `glm_moe_dsa` en los tags). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO, ya que la model card de esta cuantización no los detalla y no se ha proporcionado la del modelo base.
 
-La innovacion tecnica reside en el formato de cuantizacion exlr8 v2, que reutiliza la codificacion trellis de EXL3 (codigos estilo QTIP donde cada mosaico de 16x16 es un camino a traves de un trellis de 16 estados, con cada peso aportando K bits nuevos hallados por busqueda de Viterbi sobre el codebook mcg) y la reorganiza en cuatro frentes. Primero, redondea los valores del codebook a FP8 E4M3 dentro de la propia busqueda de Viterbi, de modo que los pesos decodificados son exactamente FP8 y el prefill se ejecuta sobre tensor cores FP8; redondear despues de la busqueda costaria un 4,0 % (K3) o un 15,3 % (K4) mas de error, y un decodificador EXL3 estandar que leyera los mismos ficheros obtendria un 2,3 % adicional. Segundo, el almacenamiento orientado al despliegue guarda cada experto enrutado en las tres anchuras y la anchura se elige por mitad de experto en tiempo de carga desde un manifiesto, con granularidad de 128 canales emparejados en fragmentos de 256 canales. Tercero, aplica una unica rotacion de activacion por punto de fan-out: cada peso se decodifica como `w = R(diag(suh)·L(T))·diag(svh)`, con signo, escala y una Hadamard fija de 128 bloques por lado; los signos de entrada y las escalas constantes por bloque se comparten entre todos los expertos y anchuras, de forma que el kernel rota la activacion del token una sola vez y comparte un unico operando A entre todos los expertos activos (el prefill de MoE en la capa 40 baja de 23,07 a 18,67 ms), con una perdida de calidad despreciable (ratio NMSE de 0,9996 a 1,0003). El redondeo se calibra con LDLQ frente a hessianos de activaciones reales, lo que reduce el error en capa reservada un 14 % respecto a un hessiano identidad, mientras que el redondeo al mas cercano es entre 2,3 y 33 veces peor. Cuarto, emplea un diseno nativo de MoE/TP: la regla de sharding `(16e + h + L) mod N` cubre cualquier numero de ranks TP entre 3 y 7 sin re-layout, los kernels indexan expertos mediante tablas de punteros, cada peso existe una sola vez (eliminando las copias densas y de decodificacion duplicadas de ~3,5 GiB por rank) y los safetensors alineados a 64 KiB permiten la descarga por rangos HTTP de mitades remotas (~75 GB por nodo a TP=4 bajo el manifiesto `home` en lugar del checkpoint completo).
+La contribución técnica de esta publicación es el formato exlr8 v2: cada experto enrutado se codifica en un codebook trellis mul1 a tres anchuras (K2, K3, K4), y los perfiles de anchura son manifiestos que indican qué anchura carga cada experto en tiempo de carga. El loader debe aplicar redondeo E4M3. El formato incluye slices de índice por rango para tensor-parallel de 3 a 7, hashes sha256 por fichero safetensors y un weight set ID (`3d1a293399f0077e27acd18609ee67f33f8e3f8b5963a7c4b42b7dc16ecd1d98`) para verificar integridad. La documentación completa del formato está en FORMAT.md del repositorio kindlingai/exlr8.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es `text-generation`, heredado del modelo base GLM-5.3.
-- Razonamiento y conocimiento general: capacidades heredadas del modelo base, si bien no se documentan de forma detallada en esta model card.
-- Codigo y matematicas: no disponible de forma explicita, se asumen las del modelo base.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas figura como no disponible).
-- Capacidad especial: prediccion multi-token (MTP) a traves de la capa 78, presente en el modelo base y cuantizada en K3 para sus expertos enrutados y compartidos.
-- No se declaran capacidades de vision ni de audio.
+- Generación de texto y conversación multiturno (pipeline `text-generation`, tag `conversational`).
+- Razonamiento y sesiones de agente con llamadas a herramientas: el test de KL propio incluye sesiones de agente con tool calls y salida de herramientas.
+- Procesamiento de documentos largos: el panel de evaluación incluye documentos retenidos con base64, hashes e IDs.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Capacidades de visión o audio: no disponibles.
+- Modo thinking explícito: no disponible en la información proporcionada.
+- Compatibilidad con tensor-parallel de 3 a 7 (slices de índice incluidos en el repo).
 
 ## Casos de uso
 
-- Inferencia en hardware de memoria unificada de clase GB10: el formato esta disenado explicitamente para dispositivos con 128 GB de memoria unificada LPDDR5X y ~220 GB/s de streaming, donde el cuello de botella es el numero de bytes de pesos de experto leidos por paso. El manifiesto `down1` (~2.25 bpw) permite reducir aun mas el ancho de banda necesario por token.
-- Despliegue multi-nodo con tensor parallelism de 3 a 7 ranks: la regla de sharding `(16e + h + L) mod N` cubre cualquier numero de ranks TP entre 3 y 7 sin re-layout, lo que simplifica el escalado horizontal en un cluster pequeno de nodos GB10.
-- Servicio de decodificacion con concurrencia elevada: al reducir los bytes leidos por paso (anchuras K2/K3 segun manifiesto), el modelo resulta adecuado para escenarios de decodificacion por encima de concurrencia 1, donde el ancho de banda de memoria es el factor limitante.
-- Prefill sobre tensor cores FP8: al redondear el codebook a E4M3, el prefill se ejecuta sobre tensor cores FP8, lo que resulta util en tareas de procesamiento de contexto largo donde el coste computacional del prefill domina.
-- Seleccion de calidad por capa o por experto: la granularidad de almacenamiento (mitad de 128 canales emparejadas en fragmentos de 256) y las tablas de error por anchura permiten construir manifiestos que asignen mas bits donde importa y menos donde no, util para ajustar el equilibrio calidad/memoria por despliegue.
-- Distribucion eficiente del checkpoint: los safetensors alineados a 64 KiB permiten descargar mitades remotas por rangos HTTP (~75 GB por nodo a TP=4 bajo el manifiesto `home`), lo que facilita el aprovisionamiento incremental de nodos sin transferir los 837,5 GB completos.
-- Distribucion en streaming de pesos para servir variantes de cuantizacion: al guardar cada experto en K2, K3 y K4, un mismo checkpoint sirve para distintos perfiles de memoria sin recodificar.
+- Despliegue de un MoE de 744B en clústeres de DGX Spark (GB10): el formato está diseñado para servir el modelo en 3-6 máquinas con memoria unificada usando el motor gr8 a TP=3 y TP=4. Es el escenario principal y para el que se midieron los perfiles.
+- Ajuste dinámico de calidad frente a memoria en producción: con once perfiles entre 199 GB y 380 GB, un operador puede arrancar en `bit200` para maximizar concurrencia y subir a `bit340` o `bit400` cuando la precisión sea crítica, sin volver a descargar pesos.
+- Evaluación comparativa de cuantizaciones: los perfiles publican KL divergence frente a BF16 en tres paneles (texto generado por el modelo, texto retenido en cada posición y wikitext), lo que permite medir el impacto real de cada anchura antes de comprometerse con un despliegue.
+- Servicio de agente con tool calling en contexto largo: el modelo base está entrenado para sesiones de agente y el test de calidad incluye tool calls y salidas de herramientas, por lo que es adecuado para asistentes que encadenan pasos con APIs externas.
+- Procesamiento de documentos técnicos y código: el panel de evaluación incluye base64, hashes e IDs, lo que sugiere robustez en tareas de extracción y manipulación de datos estructurados.
+- Validación de kernels e implementaciones de loader: el repo incluye un loader de referencia en PyTorch puro (kindlingai/exlr8) y hashes por fichero, útil para verificar nuevos backends (TensorFold, MLXLR8) contra pesos conocidos.
+- Investigación sobre cuantización de MoE: la estructura de tres anchuras por experto y los perfiles por capa (por ejemplo, K4 en capas 48-72 para gate/up en `bit322`) permiten estudiar la sensibilidad por capa y por tipo de peso.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo publica KL divergence frente a BF16 para cada perfil de anchura:
 
-La model card declara que las pruebas end-to-end (acuerdo de TP, KL sobre datos reservados frente a BF16 y velocidad de decodificacion) estan en ejecucion y que las metricas se actualizaran. Los unicos datos numericos publicados son de caracter interno al formato de cuantizacion:
+| Perfil | Bits por peso enrutado | Tamaño | Peso de expertos por caja, TP=4 / TP=3 | KL texto del modelo: media / mediana | KL texto retenido: media / mediana | KL wikitext: media / mediana |
+|---|---|---|---|---|---|---|
+| `bit200` | 2,00 | 199 GB | 47 / 62 GB | 0,248 / 0,0440 | 0,267 / 0,0397 | 0,367 / 0,0728 |
+| `bit227` | 2,27 | 223 GB | 53 / 70 GB | 0,177 / 0,0304 | 0,236 / 0,0321 | 0,247 / 0,0427 |
+| `bit240` | 2,40 | 235 GB | 56 / 74 GB | 0,146 / 0,0244 | 0,218 / 0,0270 | 0,199 / 0,0327 |
+| `bit262` | 2,62 | 255 GB | 61 / 81 GB | 0,107 / 0,0163 | 0,190 / 0,0192 | 0,147 / 0,0221 |
+| `bit271` | 2,71 | 263 GB | 63 / 84 GB | 0,095 / 0,0142 | 0,175 / 0,0166 | 0,133 / 0,0196 |
+| `bit280` | 2,80 | 271 GB | 65 / 86 GB | 0,086 / 0,0125 | 0,166 / 0,0147 | 0,121 / 0,0175 |
+| `bit300` | 3,00 | 290 GB | 69 / 92 GB | 0,071 / 0,0106 | 0,156 / 0,0131 | 0,098 / 0,0139 |
+| `bit322` | 3,22 | 310 GB | 74 / 99 GB | 0,058 / 0,0088 | 0,149 / 0,0118 | 0,076 / 0,0105 |
+| `bit340` | 3,40 | 326 GB | 78 / 104 GB | 0,050 / 0,0076 | 0,141 / 0,0105 | 0,065 / 0,0089 |
+| `bit387` | 3,87 | 368 GB | 89 / 118 GB | 0,039 / 0,0058 | 0,125 / 0,0079 | 0,051 / 0,0068 |
+| `bit400` | 4,00 | 380 GB | 92 / 122 GB | 0,038 / 0,0057 | 0,124 / 0,0079 | 0,050 / 0,0067 |
 
-| Metrica | Valor |
-|---|---|
-| Error por redondear despues de la busqueda (K3) | +4,0 % |
-| Error por redondear despues de la busqueda (K4) | +15,3 % |
-| Error de un decodificador EXL3 estandar leyendo los mismos ficheros | +2,3 % |
-| Ratio NMSE con signos compartidos frente a signos por experto | 0,9996-1,0003 |
-| Reduccion de error en capa reservada con hessiano calibrado (LDLQ) frente a hessiano identidad | 14 % inferior |
-| Penalizacion del redondeo al mas cercano frente a LDLQ | 2,3-33 veces peor |
-| Prefill de MoE en capa 40 | 23,07 ms -> 18,67 ms |
+El tamaño del modelo cuenta todos los expertos enrutados y compartidos a las anchuras del perfil más 12,5 GB de pesos densos y de vocabulario. El autor advierte que estas cifras solo son comparables entre cuantizaciones medidas con el mismo test; en el panel de cuatro ventanas que usan otras model cards de GLM-5.3, el perfil `bit325` obtiene una media de 0,025.
 
 ## Requisitos de hardware
 
-- Memoria: el modelo esta pensado para dispositivos con memoria unificada de clase NVIDIA GB10, con 128 GB de LPDDR5X y aproximadamente 220 GB/s de ancho de banda de streaming.
-- Huella por rank: bajo el manifiesto `home` (3.25 bpw), el checkpoint ocupa unos 75 GB de expertos enrutados por rank a TP=4; el manifiesto `down1` (2.25 bpw) reduce ese volumen y el `up1` (4.0 bpw) lo aumenta.
-- Tensor parallelism: soporte para tamanos TP de 3 a 7 ranks; los objetivos principales son TP=4, 5 y 6.
-- GPU consumer: no cabe en una GPU de consumo convencional (24-48 GB). El modelo, incluso en la configuracion mas agresiva de 2,25 bpw, requiere del orden de cientos de GB de almacenamiento de pesos repartidos entre varios dispositivos.
-- Opciones de despliegue: libreria `trellis` (declarada en Hugging Face) y decodificadores compatibles con exllamav3. Es imprescindible que el cargador aplique un redondeo FP8 E4M3 (round to nearest even, saturante) a cada valor que produce el codebook trellis antes de aplicar los vectores laterales; un decodificador EXL3 estandar que omita ese redondeo lee pesos mediblemente peores de los mismos bytes.
-- Latencia y throughput: no disponibles. La model card menciona que las pruebas de velocidad de decodificacion estan en ejecucion.
-- Almacenamiento: el repositorio ocupa 837,5 GB.
+- VRAM/memoria unificada: entre 199 GB (`bit200`) y 380 GB (`bit400`) para el conjunto de pesos; los pesos de expertos por caja en TP=4 van de 47 GB a 92 GB, y en TP=3 de 62 GB a 122 GB.
+- Hardware objetivo: dispositivos NVIDIA GB10 con memoria unificada (DGX Spark). El motor gr8 está diseñado para servir el modelo en 3-6 DGX Sparks.
+- No cabe en GPU de consumo convencional: incluso el perfil más pequeño (199 GB) excede la VRAM de una RTX 4090 (24 GB) o una RTX 5090 (32 GB).
+- Opciones de despliegue: kindlingai/gr8 (motor nativo exlr8, TP=3 y TP=4), kindlingai/exlr8 (loader de referencia en PyTorch puro), ashhart/TensorFold (motor multiplataforma) y GordoAR/MLXLR8 (motor EXLR8 para Metal).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Anchura efectiva | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kindlingai/glm-5.3-exlr8-k2-k3-k4 | 744B (MoE) | safetensors trellis exlr8 v2 (K2/K3/K4) | 2.25 / 3.25 / 4.0 bpw segun manifiesto | other (glm-5.3) | Hugging Face, 11.322 descargas |
-| zai-org/GLM-5.3-BF16 (modelo base) | 744B (MoE) | safetensors BF16 | 16 bpw | glm-5.3 | Hugging Face |
-| Otras cuantizaciones EXL3 de GLM-5.3 | 744B (MoE) | safetensors trellis EXL3 | una unica anchura por tensor | segun autor | no disponible |
-| Cuantizaciones GGUF de modelos MoE de escala similar | segun modelo | GGUF | 2-8 bpw segun variante | segun autor | no disponible |
+| GLM-5.3-exlr8 (esta ficha) | 744B MoE (256 expertos, 75 capas) | no disponible | exlr8 v2 (safetensors) | glm-5.3 | Hugging Face y ModelScope |
+| zai-org/GLM-5.3-BF16 (base) | 744B MoE | no disponible | safetensors BF16 | glm-5.3 | Hugging Face |
+| Otras cuantizaciones de GLM-5.3 | 744B MoE | no disponible | no disponible | glm-5.3 | mencionadas de forma genérica en la model card, sin identificar |
 
-No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato y licencia.
+No se dispone de información sobre alternativas de otros desarrolladores con parámetros, contexto y licencia comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado "draft / preview": la model card advierte explicitamente que se trata de un borrador y que las pruebas end-to-end no han finalizado; las metricas de calidad y velocidad pueden cambiar.
-- Redondeo obligatorio: los pesos no se pueden usar sin aplicar el redondeo E4M3 descrito. Un cargador que omita el redondeo, o un decodificador EXL3 estandar, produce pesos mediblemente peores de los mismos bytes. Esto limita la interoperabilidad con herramientas de inferencia que no implementen exlr8 v2.
-- Hardware restrictivo: el formato esta optimizado para dispositivos GB10 con memoria unificada y ~220 GB/s. En otras plataformas, las ventajas de diseno (rotacion compartida de activaciones, layout MoE/TP nativo) pueden no materializarse o requerir kernels especificos.
-- Idiomas soportados: no disponible; no hay informacion sobre cobertura linguistica en esta ficha, por lo que no puede confirmarse el soporte de castellano ni de otros idiomas.
-- Longitud de contexto: no disponible en la informacion proporcionada.
-- Parametros activos: no disponibles, lo que impide estimar el coste computacional por token.
-- Sesgos y alucinacion: no se documentan sesgos conocidos ni tasas de alucinacion. Al tratarse de una cuantizacion del modelo base, hereda los sesgos de este, pero no se aportan datos especificos.
-- Restricciones de licencia: la licencia figura como `other`, con nombre `glm-5.3` y enlace a un archivo LICENSE en el repositorio. Es necesario revisar ese archivo antes de cualquier uso comercial, ya que no se especifican aqui los terminos exactos.
-- Riesgo de perdida de calidad por la cuantizacion: la propia model card cuantifica un error adicional del 2,3 % en un decodificador EXL3 estandar y penalizaciones de hasta el 15,3 % si el redondeo se aplica fuera de la busqueda, lo que indica que los pesos cuantizados no son exactamente equivalentes a BF16.
-- Duplicacion de almacenamiento: al guardar cada experto en tres anchuras, el repositorio ocupa 837,5 GB, mas que una cuantizacion de una sola anchura.
+- El formato exlr8 v2 es propietario y requiere un loader compatible; no es un GGUF ni un safetensors estándar. Sin gr8, TensorFold, MLXLR8 o el loader de referencia de kindlingai/exlr8, los pesos no son utilizables.
+- El loader debe aplicar redondeo E4M3; omitirlo produce resultados incorrectos.
+- El repositorio completo ocupa 1.672,4 GB, aunque cada perfil individual ocupa entre 199 GB y 380 GB. El espacio en disco necesario para almacenar varios perfiles es considerable.
+- El perfil `bit200` presenta una KL media de 0,248 en texto generado por el modelo y 0,367 en wikitext, muy superiores a las de perfiles altos; usar la anchura mínima degrada la fidelidad de forma medible.
+- Las cifras de KL solo son comparables con otras cuantizaciones medidas con el mismo test del autor; no son directamente comparables con las de otras model cards de GLM-5.3.
+- Licencia `glm-5.3` (categoría `other`): es necesario revisar el fichero LICENSE del repositorio antes de uso comercial; la información proporcionada no detalla restricciones adicionales.
+- Idiomas soportados no disponibles: no se puede confirmar el comportamiento multilingüe.
+- Longitud de contexto no disponible en la información proporcionada.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; deben evaluarse empíricamente antes de desplegar en producción.
+- El modelo está orientado a GB10 y tensor-parallel de 3-7; no hay garantía de soporte en otras configuraciones de hardware.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4
-- Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
-- Licencia: archivo `LICENSE` incluido en el repositorio de Hugging Face (enlace relativo en la model card).
-- No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.
+- Hugging Face: https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4
+- ModelScope (espejo): https://www.modelscope.ai/models/kindlingai/glm-5.3-exlr8-k2-k3-k4
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16 (revisión 9d2398f)
+- Formato exlr8 y loader de referencia: https://github.com/kindlingai/exlr8
+- Documentación del formato: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md
+- Motor gr8 (nativo exlr8, GLM-5.3 en GB10): https://github.com/kindlingai/gr8
+- TensorFold (motor multiplataforma): https://github.com/ashhart/TensorFold
+- MLXLR8 (motor EXLR8 para Metal): https://github.com/GordoAR/MLXLR8

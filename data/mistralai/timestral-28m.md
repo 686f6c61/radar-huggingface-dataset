@@ -2,109 +2,106 @@
 
 ## Resumen
 
-Timestral-28M es un modelo fundacional de series temporales para predicción zero-shot, desarrollado por Mistral AI. Forma parte de la familia Timestral, que incluye versiones de 5M, 28M, 123M y 209M parámetros. Este checkpoint concreto tiene 27.821.184 parámetros y está diseñado para tareas de forecasting sobre datos univariantes o multivariantes, con soporte para covariables pasadas y futuras conocidas.
+Timestral-28M es un modelo fundacional de predicción de series temporales desarrollado por Mistral AI, diseñado para realizar *forecasting* zero-shot sin necesidad de reentrenamiento sobre datos específicos de dominio. Forma parte de una familia de cuatro modelos (5M, 28M, 123M y 209M parámetros) que comparten arquitectura y metodología de entrenamiento, y este checkpoint concreto ocupa el segundo escalón de tamaño de la familia. Su relevancia actual radica en que ofrece un equilibrio entre coste computacional y precisión, superando según el autor a todos los modelos de su mismo tamaño en los tres benchmarks de referencia del sector.
 
-La arquitectura es un transformer basado en parches (patch-based transformer) con atención temporal y atención entre variables (time attention y variate attention), 12 capas y dimensión de embedding 256. Cada parche agrupa 32 pasos temporales y se embebe junto con indicadores de valores faltantes. La longitud de contexto alcanza hasta 32.768 pasos temporales (1.024 parches) y el horizonte de predicción directa es de hasta 1.024 pasos (32 parches) en una sola pasada; horizontes mayores se predicen bloque a bloque.
+La arquitectura es un transformer basado en parches (*patch-based*) con atención temporal y atención entre variables (*variate attention*), 12 capas y dimensión de embedding de 384. Cada parche agrupa 32 pasos temporales y se embebe junto con indicadores de valores faltantes, lo que permite manejar series con huecos de forma nativa. Soporta contextos de hasta 32.768 pasos temporales (1.024 parches) y genera horizontes de hasta 1.024 pasos en una sola pasada, con extensiones por bloques para horizontes mayores.
 
-El modelo genera 21 cuantiles (0,01, 0,05, ..., 0,99), lo que permite obtener intervalos de predicción. Su relevancia radica en que ofrece un rendimiento competitivo en benchmarks de forecasting zero-shot con un tamaño muy reducido, facilitando su despliegue en CPU o GPU sin requisitos elevados.
+El modelo produce una salida probabilística completa: 21 cuantiles (0,01, 0,05, 0,10, …, 0,90, 0,95, 0,99), lo que lo hace adecuado para planificación bajo incertidumbre, no solo para predicción puntual. Acepta variables objetivo univariantes o multivariantes, covariables pasadas y covariables futuras conocidas (numéricas o categóricas, estas últimas codificadas por *target encoding*), y se ejecuta en PyTorch sobre CPU o GPU.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en parches con atención temporal y atención entre variables (12 capas, dimensión de embedding 256) |
-| Parámetros totales | 27.821.184 |
-| Longitud de contexto | Hasta 32.768 pasos temporales (1.024 parches) |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no aplica (no es un modelo de lenguaje) |
-| Licencia | Modified MIT (con cláusula adicional que prohíbe infringir derechos de terceros) |
+| Arquitectura | Transformer basado en parches con atencion temporal y atencion entre variables (*variate attention*), 12 capas |
+| Parametros totales | 27.821.184 (28M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Hasta 32.768 pasos temporales (1.024 parches de 32 pasos) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo numerico de series temporales; no procesa texto) |
+| Licencia | Modified MIT (ver LICENSE en el repositorio) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de transformer basado en parches. Cada parche comprende 32 pasos temporales y se embebe a partir de sus valores y de indicadores de valores faltantes (NaN). La atención se aplica tanto sobre la dimensión temporal como sobre la dimensión de variables (time attention y variate attention), lo que permite modelar dependencias temporales y relaciones entre múltiples series. Consta de 12 capas y una dimensión de embedding de 256. La salida son 21 cuantiles (0,01, 0,05, 0,1, 0,15, ..., 0,85, 0,9, 0,95, 0,99), lo que proporciona una distribución predictiva completa. El modelo acepta variables objetivo univariantes o multivariantes, así como covariables pasadas y futuras conocidas, tanto numéricas como categóricas (estas últimas codificadas por target encoding). Los valores faltantes se marcan como NaN.
+Timestral-28M es un transformer *encoder-only* de 12 capas con dimensión de embedding 384, especializado en series temporales. La innovación principal es la tokenización por parches: cada bloque de 32 pasos temporales se proyecta a un embedding que combina los valores de la serie con indicadores binarios de valor faltante, de modo que el modelo aprende a tratar los NaN como información explícita en lugar de imputarlos previamente. Sobre esa secuencia de parches se aplican dos mecanismos de atención complementarios: atención temporal (entre parches de la misma serie) y atención entre variables (entre series distintas de un mismo instante), lo que permite modelar tanto dependencias longitudinales como correlaciones cruzadas en datos multivariantes.
 
-No se dispone de información sobre el conjunto de datos de entrenamiento, el número de tokens o series utilizadas, la composición del dataset ni si se emplearon técnicas de alineación como RLHF o DPO. La model card únicamente indica que la inferencia se realiza en PyTorch sobre CPU o GPU.
+La salida es una distribución predictiva cuantílica de 21 niveles, generada en una sola pasada para horizontes de hasta 1.024 pasos (32 parches). Para horizontes más largos, el modelo opera en modo autorregresivo por bloques: la mediana del bloque predicho se anexa al contexto y se genera el siguiente bloque. El modelo admite covariables pasadas y futuras conocidas, categóricas incluidas (codificadas mediante *target encoding*). No se han publicado en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; el autor solo indica que el modelo está pensado para *zero-shot forecasting*.
 
 ## Capacidades
 
-- Predicción zero-shot de series temporales sin necesidad de entrenamiento específico por dominio.
-- Soporte para series univariantes y multivariantes.
-- Manejo de covariables pasadas y futuras conocidas, tanto numéricas como categóricas (estas últimas mediante target encoding).
-- Tratamiento de valores faltantes marcados como NaN.
-- Generación de 21 cuantiles (0,01 a 0,99) para obtener intervalos de predicción y distribuciones completas.
-- Contexto de hasta 32.768 pasos temporales (1.024 parches).
-- Horizonte de predicción directa de hasta 1.024 pasos (32 parches) en una sola pasada; para horizontes mayores, predicción bloque a bloque con la mediana del bloque anterior añadida al contexto.
-- Inferencia en CPU o GPU con PyTorch.
-- No dispone de capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio ni multilingüismo, ya que no es un modelo de lenguaje.
+- Predicción de series temporales univariantes y multivariantes en modo zero-shot, sin ajuste fino sobre el dominio objetivo.
+- Predicción probabilística mediante 21 cuantiles (0,01 a 0,99), apta para intervalos de confianza y planificación bajo incertidumbre.
+- Manejo nativo de valores faltantes (NaN) mediante indicadores embebidos por parche.
+- Soporte de covariables pasadas y covariables futuras conocidas, numéricas o categóricas (estas últimas con *target encoding*).
+- Contextos largos de hasta 32.768 pasos temporales, útiles para series con estacionalidades anuales o patrones de largo plazo.
+- Horizontes de predicción de hasta 1.024 pasos en una pasada; extensibles por bloques autorregresivos.
+- Inferencia en CPU o GPU sobre PyTorch.
+- No soporta tool calling, agentes, visión, audio ni procesamiento de lenguaje natural: es un modelo exclusivamente numérico-secuencial.
 
 ## Casos de uso
 
-- Predicción de demanda en retail: el modelo puede utilizar el historial de ventas y covariables como promociones, días festivos o precio para prever la demanda futura de múltiples productos. Gracias a su contexto de hasta 32.768 pasos, puede capturar estacionalidades anuales y patrones a largo plazo.
-- Previsión de carga eléctrica: con series históricas de consumo y covariables meteorológicas (temperatura, nubosidad), el modelo genera predicciones con cuantiles para planificar la generación y evitar picos.
-- Gestión de inventarios: predecir la demanda a corto y medio plazo para optimizar niveles de stock y reducir costes de almacenamiento, usando covariables como campañas de marketing o días no laborables.
-- Mantenimiento predictivo en industria: prever valores de sensores (vibración, temperatura) y detectar desviaciones antes de fallos, aprovechando la capacidad multivariante y el manejo de covariables.
-- Predicción de tráfico: series temporales de flujo vehicular con covariables como hora del día, día de la semana y condiciones meteorológicas para anticipar congestión.
-- Previsión financiera: modelar precios de activos, tipos de cambio o volatilidad con series históricas y covariables macroeconómicas, obteniendo intervalos de confianza mediante los 21 cuantiles.
-- Planificación de recursos en cloud: prever el uso de CPU, memoria o ancho de banda para escalar automáticamente, usando el contexto largo para capturar patrones semanales y estacionales.
-- Predicción de ventas en e-commerce: anticipar ventas por producto y canal, incorporando covariables como visitas, clics o inversión publicitaria, para ajustar campañas y logística.
+- Previsión de demanda minorista: el modelo puede ingerir historiales de ventas por SKU y tienda con covariables como promociones o festivos futuros, y generar cuantiles de demanda a varias semanas vista para dimensionar stock y aprovisionamiento. Su contexto de 32.768 pasos cubre varios años de datos horarios o diarios sin truncar estacionalidades.
+- Planificación energética: predicción de carga eléctrica o generación renovable con covariables meteorológicas futuras conocidas (temperatura prevista, irradiancia) y salida cuantílica para dimensionar reservas y márgenes de seguridad en despacho.
+- Gestión de inventario y cadena de suministro: forecasting multivariante de miles de series relacionadas, aprovechando la atención entre variables para capturar correlaciones entre productos o regiones, con horizontes por bloques para planificación trimestral.
+- Monitorización de infraestructura y capacidad: predicción de métricas de uso (CPU, latencia, tráfico) con valores faltantes frecuentes por caídas de telemetría; los indicadores de NaN permiten al modelo no degradarse ante huecos en la serie.
+- Previsión financiera de series agregadas: proyección de magnitudes como volumen de transacciones o flujos de caja con intervalos cuantílicos, útil para escenarios de estrés y presupuestación.
+- Detección temprana de anomalías por desviación: comparar el valor observado con los cuantiles extremos (0,01 y 0,99) predichos por el modelo para señalar comportamientos atípicos en series operativas o de sensores.
+- Sustitución de modelos estadísticos clásicos en pipelines existentes: al ser un modelo de 28M parámetros con inferencia en CPU, puede desplegarse como servicio de forecasting ligero donde ARIMA, Prophet o ETS resultan costosos de mantener por serie.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card para la familia Timestral:
+Resultados declarados por el autor en la model card (no verificados de forma independiente; `verified: false` en el model-index). Las flechas indican la dirección deseable de la métrica.
 
-| Benchmark | Métrica | Timestral-5M | Timestral-28M | Timestral-123M | Timestral-209M |
+| Benchmark | Metrica | Timestral-5M | Timestral-28M | Timestral-123M | Timestral-209M |
 |---|---|---|---|---|---|
-| GIFT-Eval | MASE ↓ | 0,705 | 0,678 | 0,659 | 0,658 |
-| GIFT-Eval | CRPS ↓ | 0,479 | 0,461 | 0,448 | 0,446 |
-| TIME | MASE ↓ | 0,652 | 0,638 | 0,628 | 0,626 |
-| TIME | CRPS ↓ | 0,545 | 0,534 | 0,525 | 0,522 |
-| fev-bench | SQL skill score ↑ | 46,19 | 48,42 | 50,18 | 50,39 |
-| fev-bench | MASE skill score ↑ | 34,54 | 37,27 | 39,19 | 39,49 |
+| GIFT-Eval | MASE (↓) | 0,705 | 0,678 | 0,659 | 0,658 |
+| GIFT-Eval | CRPS (↓) | 0,479 | 0,461 | 0,448 | 0,446 |
+| TIME | MASE (↓) | 0,652 | 0,638 | 0,628 | 0,626 |
+| TIME | CRPS (↓) | 0,545 | 0,534 | 0,525 | 0,522 |
+| fev-bench | SQL skill score (↑) | 46,19 | 48,42 | 50,18 | 50,39 |
+| fev-bench | MASE skill score (↑) | 34,54 | 37,27 | 39,19 | 39,49 |
 
-La model card afirma que Timestral-209M alcanza precisión zero-shot estado del arte en los tres benchmarks, y que todos los modelos Timestral superan a cualquier otro modelo del mismo tamaño. No se proporcionan comparaciones numéricas con modelos externos en la información disponible.
+El autor afirma que Timestral-209M alcanza el estado del arte zero-shot en los tres benchmarks y que todos los modelos de la familia superan a cualquier otro modelo de su mismo tamaño; el 28M se sitúa en un punto intermedio de la curva de compromiso tamaño-precision (Pareto). No se han publicado en la información disponible comparaciones numéricas con modelos competidores concretos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 112 MB en fp32 y 56 MB en fp16 para los pesos, más la memoria adicional para activaciones y contexto (hasta 32.768 pasos). Cabe holgadamente en cualquier GPU consumer e incluso en CPU.
-- GPU recomendadas: no se especifican modelos concretos. Dado el tamaño, cualquier GPU con al menos 1 GB de VRAM es suficiente. Se puede ejecutar en CPU.
-- Opciones de despliegue: PyTorch (CPU o GPU) según la model card. No se mencionan otras herramientas como vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el checkpoint ocupa aproximadamente 0,1 GB en safetensors (28M parámetros en precisión de entrenamiento), por lo que la inferencia cabe holgadamente en cualquier GPU consumer con 4 GB o más, e incluso en CPU.
+- GPU recomendadas: cualquier GPU moderna sirve; para lotes grandes de series o contextos de 32.768 pasos conviene una RTX 4090, L40S, A100 o H100 por ancho de banda y memoria. Para despliegues masivos en paralelo, GPUs de datacenter con mayor throughput.
+- Cabe en GPU consumer: sí, en cualquier modelo con al menos 4 GB de VRAM (RTX 3060 en adelante, e incluso iGPU en CPU).
+- Opciones de despliegue: inferencia nativa en PyTorch (CPU o GPU) mediante la librería `timestral`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje y no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada. A modo orientativo, un modelo de 28M parámetros con contexto de 1.024 parches es computacionalmente ligero, pero no se han publicado cifras oficiales.
 
 ## Comparativa con modelos similares
 
-Comparación dentro de la familia Timestral (misma arquitectura y licencia, distinto tamaño):
+No se dispone en la información proporcionada de datos numéricos de modelos competidores de forecasting zero-shot (por ejemplo, otros modelos fundacionales de series temporales) para construir una comparativa rigurosa. La única comparación disponible es interna a la familia:
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | GIFT-Eval MASE (↓) | TIME MASE (↓) | fev-bench SQL (↑) | Licencia |
 |---|---|---|---|---|---|
-| Timestral-5M | 5M | no disponible | Modified MIT | Hugging Face |
-| Timestral-28M | 27,8M | 32.768 pasos | Modified MIT | Hugging Face |
-| Timestral-123M | 123M | no disponible | Modified MIT | Hugging Face |
-| Timestral-209M | 209M | no disponible | Modified MIT | Hugging Face |
+| Timestral-5M | 5M | 0,705 | 0,652 | 46,19 | Modified MIT |
+| Timestral-28M | 28M | 0,678 | 0,638 | 48,42 | Modified MIT |
+| Timestral-123M | 123M | 0,659 | 0,628 | 50,18 | Modified MIT |
+| Timestral-209M | 209M | 0,658 | 0,626 | 50,39 | Modified MIT |
 
-No se proporcionan datos de otros modelos de forecasting externos en la información disponible.
+Para alternativas externas: no disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia: Modified MIT con una cláusula que prohíbe usar el modelo de manera que infrinja, malverse o viole derechos de terceros, incluidos derechos de propiedad intelectual. El uso comercial está permitido siempre que se cumpla esta condición.
-- Sesgos: no se dispone de información sobre sesgos en los datos de entrenamiento. Al ser un modelo de forecasting, puede heredar sesgos presentes en las series históricas utilizadas para la predicción.
-- Alucinación: en el contexto de series temporales, puede generar predicciones inexactas o poco realistas, especialmente en dominios no vistos durante el entrenamiento o con patrones anómalos.
-- Limitaciones de contexto: la longitud máxima de contexto es de 32.768 pasos temporales. Para series más largas, es necesario truncar o usar ventanas deslizantes, lo que puede perder información de largo plazo.
-- Horizonte de predicción: la predicción directa está limitada a 1.024 pasos. Para horizontes mayores, se usa predicción por bloques, lo que puede acumular error.
-- Idiomas: no aplica, no es un modelo de lenguaje.
-- Dependencia de covariables: el rendimiento puede degradarse si no se proporcionan covariables relevantes o si estas son de baja calidad.
-- No se ofrecen versiones cuantizadas oficiales; solo pesos en safetensors.
-- No se especifican detalles del entrenamiento, por lo que se desconoce su cobertura y posibles limitaciones en dominios específicos.
+- Los resultados de benchmarks son declarados por el autor y figuran como no verificados (`verified: false`); deben tomarse como orientativos hasta su validación independiente.
+- El modelo es exclusivamente numérico-secuencial: no procesa texto, imágenes ni audio, y no soporta tool calling ni razonamiento multi-step en el sentido de los LLM.
+- Riesgo de degradación fuera de distribución: al ser zero-shot, su rendimiento puede caer en series con patrones muy distintos a los del entrenamiento (no se detalla la composición del dataset).
+- La predicción por bloques para horizontes superiores a 1.024 pasos es autorregresiva sobre la mediana, lo que puede acumular error en horizontes muy largos.
+- Las covariables categóricas se codifican por *target encoding*, lo que puede introducir fugas de información si no se gestiona cuidadosamente en producción.
+- Licencia Modified MIT: permite uso comercial, pero incluye la restricción de no usar el modelo de forma que infrinja, se apropie indebidamente o vulnere derechos de terceros, incluidos derechos de propiedad intelectual. Conviene revisar el texto completo del LICENSE antes de un despliegue comercial.
+- No se documentan sesgos específicos ni evaluaciones de robustez más allá de los tres benchmarks citados.
+- Idiomas soportados: no aplica (modelo numérico); no hay soporte lingüístico que evaluar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mistralai/Timestral-28M
-- Página principal de la familia Timestral (Timestral-209M): https://huggingface.co/mistralai/Timestral-209M
+- Modelo principal de la familia (Timestral-209M): https://huggingface.co/mistralai/Timestral-209M
+- Timestral-5M: https://huggingface.co/mistralai/Timestral-5M
+- Timestral-123M: https://huggingface.co/mistralai/Timestral-123M
 - Licencia: https://huggingface.co/mistralai/Timestral-28M/blob/main/LICENSE
 - Leaderboard GIFT-Eval: https://huggingface.co/spaces/Salesforce/GIFT-Eval
 - Leaderboard TIME: https://huggingface.co/spaces/Real-TSF/TIME-leaderboard
 - Leaderboard fev-bench: https://huggingface.co/spaces/autogluon/fev-bench
-- Sitio oficial de Mistral AI: https://mistral.ai/
-- Wikipedia de Mistral AI: https://fr.wikipedia.org/wiki/Mistral_AI
-- Consola de Mistral AI: https://console.mistral.ai/home
-- Chat de Mistral AI: https://chat.mistral.ai/login

@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3.5-9B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "shaban2024 (ba) - Hugging Face",
-      "url": "https://huggingface.co/shaban2024",
-      "snippet": "User profile of ba on Hugging Face Recent Activity updated a modelabout 6 hours ago shaban2024/Qwen3.5-2B-BOS-Q8-NonThinking published a modelabout 6 hours ago shaban2024/Qwen3.5-2B-BOS-Q8-NonThinking published a modelabout 6 hours ago shaban2024/Qwen3.5-2B-BOS-Non-Thinking View all activity"
-    }
-  ]
+  "sources": []
 }

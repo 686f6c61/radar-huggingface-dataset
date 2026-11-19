@@ -52,29 +52,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
-      "snippet": "Model Overview Description: The NVIDIA Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark model is the DSpark speculative decoding checkpoint for NVIDIA&#x27;s Nemotron-3.5-Lightning-30B-A3B model family, which is a hybrid LatentMoE language model designed for reasoning, chat, and agentic workflows. For more information, please check BF16, NVFP4."
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
     },
     {
-      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
-      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …"
     },
     {
-      "title": "NVIDIA Nemotron 3.5 Lightning Delivers Fast ... - NVIDIA Developer",
-      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/",
-      "snippet": "NVIDIA Nemotron 3.5 Lightning is a 30B parameter, open Mixture-of-Experts (MoE) model with 3B active parameters, specifically optimized for high-volume, low-latency execution in always-on AI agents and agentic workflows. The model includes features like speculative decoding, harness-optimized training, and quantization (NVFP4 and BF16 checkpoints) to deliver strong accuracy with up to 4x ..."
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
     },
     {
-      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
-      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
     },
     {
-      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
-      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
     }
   ]
 }

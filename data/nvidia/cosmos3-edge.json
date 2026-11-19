@@ -47,29 +47,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "NVIDIA Cosmos 3 Edge: Complete Guide (2026) - buildfastwithai.com",
-      "url": "https://www.buildfastwithai.com/blogs/nvidia-cosmos-3-edge-complete-guide-2026",
-      "snippet": "NVIDIA Cosmos 3 Edge: The Complete Guide to Physical AI A robot brain that fits on a module the size of a paperback, generates 32 actions per inference, and costs nothing to download. NVIDIA released Cosmos 3 Edge at SIGGRAPH 2026 in Los Angeles on July 20, and it is the first open world model small enough to run real-time control on edge hardware while still reasoning about what it sees. The ..."
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
     },
     {
-      "title": "Introducing Cosmos 3 Edge - Hugging Face",
-      "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
-      "snippet": "A Blog post by NVIDIA on Hugging Face"
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …"
     },
     {
-      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
-      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
-      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
     },
     {
-      "title": "nvidia/Cosmos3-Edge · Hugging Face",
-      "url": "https://huggingface.co/nvidia/Cosmos3-Edge",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
     },
     {
-      "title": "Physical AI with World Foundation Models | NVIDIA Cosmos",
-      "url": "https://www.nvidia.com/en-us/ai/cosmos/",
-      "snippet": "NVIDIA Cosmos Develop physical AI faster with leading world foundation models and open data processing, training, and evaluation frameworks."
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
     }
   ]
 }

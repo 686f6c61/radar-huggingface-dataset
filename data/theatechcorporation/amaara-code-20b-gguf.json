@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "theatechcorporation/amaara-code-20b-GGUF",
+  "slug": "theatechcorporation-amaara-code-20b-gguf",
+  "author": "theatechcorporation",
+  "url": "https://huggingface.co/theatechcorporation/amaara-code-20b-GGUF",
+  "created_at": "2026-11-19T00:07:42.000Z",
+  "updated_at": "2026-11-19T00:21:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gpt-oss",
+    "agentic-coding",
+    "moe",
+    "en",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 15826109216,
+  "storage_human": "15.8 GB",
+  "context_length": 131072,
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

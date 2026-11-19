@@ -2,89 +2,95 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Instruct-heretic es una variante "decensored" del modelo Qwen/Qwen2.5-1.5B-Instruct, desarrollada por saidutta69 mediante la herramienta Heretic v1.2.0, que aplica una técnica de ablación direccional (también conocida como "abliteration"). En lugar de realizar un fine-tuning, el modelo suprime el comportamiento de rechazo mediante ediciones quirúrgicas en los pesos de las proyecciones de salida de atención y las down-projections del MLP, lo que permite que el modelo responda directamente a peticiones que el modelo base rechazaría, manteniendo en gran medida el conocimiento y la capacidad de seguir instrucciones originales.
+Qwen2.5-1.5B-Instruct-heretic es una variante "decensored" del modelo Qwen2.5-1.5B-Instruct de Alibaba, publicada por el usuario saidutta69 (bajo el alias RACER IS OP). No se trata de un fine-tune nuevo: es el mismo checkpoint base al que se le ha aplicado una ablación direccional de pesos ("abliteration") mediante la herramienta Heretic v1.2.0, que suprime el comportamiento de rechazo editando selectivamente las proyecciones de salida de atención (`attn.o_proj`) y las down-projections del MLP (`mlp.down_proj`).
 
-Con 1.543.714.304 parámetros (aproximadamente 1,5B), este modelo está pensado para desarrolladores que necesitan un modelo pequeño que no se niegue a responder, ya sea para agentes locales, roleplay, investigación sobre mecanismos de alineación o cualquier caso de uso bloqueado por el exceso de rechazo típico de la era RLHF. Al ser tan compacto, puede ejecutarse cómodamente en CPU o GPUs de baja VRAM, superando a la variante de 0,5B en razonamiento y coherencia. La licencia es Apache 2.0, heredada del modelo base.
+El modelo conserva la arquitectura transformer decoder-only de Qwen2.5, con 1.543.714.304 parámetros totales y una ventana de contexto de 32.768 tokens (heredada del base Qwen2.5). Su interés radica en que ofrece el comportamiento directo y sin rechazos típico de los modelos abliterated en un tamaño de 1,5B que cabe en CPU y en GPUs de gama baja, manteniendo supuestamente la mayor parte del conocimiento y del instruction-following del original.
+
+Es relevante para desarrolladores que trabajan con agentes locales, roleplay, investigación sobre mecánicas de alineación y rechazo, o cualquier caso de uso bloqueado por el exceso de refusal de los modelos ajustados con RLHF. El repositorio incluye el juego completo de cuantizaciones GGUF (15 ficheros, de Q2_K a F16) generadas con llama.cpp, lo que facilita el despliegue en hardware modesto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (arquitectura Qwen2.5, heredada del modelo base) |
-| Parametros totales | 1.543.714.304 (1,54B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | BF16 (safetensors), GGUF Q8_0, Q5_K_M, Q4_K_M |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Arquitectura | Transformer decoder-only (Qwen2), con atención de causal estándar y RoPE |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (heredada de Qwen2.5-1.5B-Instruct) |
+| Tipos de cuantizacion | GGUF: F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, IQ3_S, Q2_K; safetensors en precisión nativa |
+| Idiomas soportados | en (inglés; el base Qwen2.5 soporta más idiomas, pero la model card solo declara inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una modificación del Qwen2.5-1.5B-Instruct original, que a su vez es un transformer decoder-only preentrenado por Alibaba sobre un dataset de hasta 18 billones de tokens (dato del modelo base, no de esta variante). La variante heretic no ha sido reentrenada; en su lugar, se ha aplicado una ablación direccional con Heretic v1.2.0. Esta técnica identifica una dirección en el espacio de activaciones asociada al comportamiento de rechazo y edita los pesos de las capas de atención (attn.o_proj) y MLP (mlp.down_proj) para eliminar esa dirección. Los parámetros de la ablación se detallan en la model card: direction_index 18.83, con pesos máximos y mínimos en las proyecciones. El resultado es una supresión del rechazo sin un fine-tuning convencional, lo que preserva las capacidades generales del modelo base.
+La arquitectura es la del Qwen2.5-1.5B-Instruct original: un transformer decoder-only con atención causal, normalización RMSNorm, activación SwiGLU en el MLP y embeddings de posición rotatorios (RoPE). No hay innovaciones arquitectónicas propias en esta variante; el cambio respecto al base es exclusivamente a nivel de pesos.
+
+El proceso de creación no es un entrenamiento sino una ablación direccional aplicada con Heretic v1.2.0. Se identifica una "dirección de rechazo" en el espacio de activaciones y se resta de forma ponderada de las proyecciones de salida de atención y de las down-projections del MLP. Los parámetros reportados por el autor incluyen `direction_index` 18.83, pesos máximos y mínimos por capa y distancias de decaimiento tanto para `attn.o_proj` como para `mlp.down_proj`. Según la model card, la edición es estrecha y dirigida, con una divergencia KL de 0,1607 respecto a la distribución de salida del original, lo que sugiere que las capacidades del base se preservan en gran medida. No se documentan datos de entrenamiento adicionales, RLHF ni DPO específicos para esta variante.
 
 ## Capacidades
 
-- Generacion de texto conversacional y seguimiento de instrucciones, heredadas del modelo base Qwen2.5-1.5B-Instruct.
-- Respuesta directa a peticiones que el modelo base rechazaría, gracias a la supresión del comportamiento de rechazo (tasa de rechazo reducida de 99/100 a 1/100 en pruebas adversariales).
-- Capacidad de ejecución en CPU y GPUs de baja VRAM, adecuada para entornos con recursos limitados.
-- Compatibilidad con múltiples frameworks de inferencia: transformers, llama.cpp, Ollama, LM Studio, Jan, vLLM y SGLang.
-- No se especifican capacidades adicionales como tool calling, visión o audio en la documentación proporcionada.
+- Generación de texto conversacional multi-turno con plantilla de chat de Qwen2.5 (`apply_chat_template`).
+- Razonamiento y coherencia suficientes para su tamaño; el autor indica que supera al variante de 0,5B en razonamiento y coherencia.
+- Generación de código y matemáticas básicas heredadas del base Qwen2.5-1.5B-Instruct.
+- Respuestas directas sin rechazos en la gran mayoría de prompts adversarios (según la model card, 1 rechazo de cada 100 frente a 99 de cada 100 del original).
+- Soporte de tool calling y function calling heredado del formato de chat de Qwen2.5 (no documentado explícitamente en la model card de esta variante).
+- Capacidades multilingües limitadas según la model card, que declara únicamente inglés.
+- No dispone de visión, audio ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Agentes conversacionales locales: el modelo puede integrarse en asistentes personales o chatbots que requieran respuestas sin filtros de rechazo, por ejemplo en entornos de desarrollo o pruebas. Su pequeño tamaño permite ejecutarlo en un portátil o en un servidor modesto.
-- Roleplay y narrativa interactiva: al no rechazar peticiones, es adecuado para juegos de rol o generación de ficción donde el usuario necesita libertad creativa sin restricciones impuestas por el modelo.
-- Investigacion sobre mecanismos de alineacion y rechazo: la ablación direccional es un objeto de estudio interesante para investigadores que analizan cómo se codifica el rechazo en los pesos del modelo y cómo se puede eliminar de forma selectiva.
-- Generacion de contenido creativo sin censura: escritores o creadores pueden usarlo para explorar temas sensibles o controvertidos que otros modelos bloquean, siempre que se asuma la responsabilidad del contenido generado.
-- Prototipado rapido de aplicaciones de chat: gracias a su compatibilidad con Ollama y llama.cpp, se puede desplegar en minutos para pruebas de concepto de asistentes o sistemas de diálogo.
-- Educacion y experimentacion con modelos de lenguaje: su licencia Apache 2.0 y su tamaño reducido lo hacen accesible para estudiantes que quieran estudiar el comportamiento de modelos "uncensored" sin necesidad de hardware caro.
+- Agentes locales en CPU o GPU de gama baja: con cuantización Q4_K_M (940 MB) el modelo cabe en RAM de sistema y permite ejecutar bucles de agente con tool calling en portátiles sin GPU dedicada, usando llama.cpp u Ollama.
+- Roleplay y personajes sin restricciones: la supresión del rechazo permite mantener conversaciones de rol que el modelo base bloquearía, con contexto de hasta 32.768 tokens para mantener la coherencia de personaje en sesiones largas.
+- Investigación sobre alineación y mecánicas de rechazo: sirve como contrapunto experimental al Qwen2.5-1.5B-Instruct original para estudiar cómo la ablación direccional afecta a la distribución de salidas (KL de 0,1607) y al comportamiento de refusal.
+- Prototipado rápido de chatbots: el tamaño reducido y las cuantizaciones GGUF permiten iterar en local con LM Studio, Jan o llama.cpp sin depender de APIs externas.
+- Generación de texto en pipelines de CI/CD: al ser un modelo pequeño y con licencia Apache 2.0, puede integrarse en tests automatizados de generación de texto o en tareas de reescritura y resumen dentro de flujos de desarrollo.
+- Fine-tuning posterior: al conservar la arquitectura y los pesos base, sirve como punto de partida para ajustes específicos de dominio donde el refusal del original interferiría con los datos de entrenamiento.
+- Despliegue en dispositivos con 6 GB de VRAM: la cuantización Q5_K_M (1,05 GB) encaja en GPUs como GTX 1660 Super, RTX 2060 o portátiles con RTX 3050, según la tabla del autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card reporta métricas específicas de la ablación, comparando con el modelo original:
+La model card incluye una comparación limitada con el modelo original, pero advierte explícitamente que esta ejecución es anterior al directorio `reproduce/` y que no se registraron métricas de refusal ni de KL para este checkpoint concreto, por lo que no deben citarse como puntuaciones oficiales.
 
-| Metrica | Modelo heretic | Modelo original (Qwen2.5-1.5B-Instruct) |
-| :------ | :------------: | :-------------------------------------: |
-| Divergencia KL | 0.1607 | 0 (por definicion) |
-| Rechazos (sobre 100 prompts adversariales) | 1/100 | 99/100 |
+| Metrica | Este modelo | Qwen/Qwen2.5-1.5B-Instruct |
+|---|---|---|
+| Divergencia KL | 0,1607 | 0 (por definición) |
+| Rechazos (100 prompts adversarios) | 1/100 | 99/100 |
 
-La divergencia KL de 0.16 indica que la edición de pesos es estrecha y dirigida, no una perturbación amplia, por lo que las capacidades originales se mantienen en gran medida.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo safetensors en BF16 ocupa 3,09 GB, por lo que se necesitan al menos 4-6 GB de VRAM para cargarlo con overhead. Las versiones GGUF son más ligeras: Q8_0 (1,65 GB), Q5_K_M (1,13 GB) y Q4_K_M (986 MB), lo que permite ejecutarlo en GPUs con 2 GB o incluso en CPU.
-- GPUs recomendadas: cualquier GPU de consumo moderna con al menos 4 GB de VRAM (p. ej., RTX 3060, RTX 4060, GTX 1660 Super) puede manejar la versión BF16. Para las cuantizaciones GGUF, basta con 2 GB de VRAM o incluso solo CPU.
-- Ejecución en CPU: al ser un modelo de 1,5B, es viable en CPU con las cuantizaciones GGUF, aunque la velocidad dependerá del número de hilos y la memoria RAM disponible.
-- Opciones de despliegue: transformers (Python), llama.cpp (servidor llama), Ollama, LM Studio, Jan, vLLM y SGLang. Todos son compatibles según la model card.
-- Latencia y throughput: no se proporcionan datos específicos. En una GPU moderna, se espera una generación de decenas de tokens por segundo, pero no hay cifras oficiales.
+- VRAM estimada para inferencia: aproximadamente 1 GB para cuantizaciones Q4_K_M (940 MB) y Q5_K_M (1,05 GB); alrededor de 1,5 GB para Q8_0 (1,53 GB); unos 2,9 GB para F16 (2,88 GB). El autor recomienda añadir aproximadamente 1 GB adicional para el contexto.
+- GPU recomendadas según el autor: RTX 3060, 4070 o 5070 (12 GB) para Q8_0; RTX 4060 o 3070 (8 GB) para Q6_K; GTX 1660 Super, RTX 2060 o RTX 3050 laptop (6 GB) para Q5_K_M.
+- Cabe en GPU de consumo: sí, en cualquier GPU con 6 GB o más de VRAM; también en CPU-only y Apple Silicon con Q4_K_M en RAM de sistema.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan, vLLM, SGLang, transformers y text-generation-inference.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-| :------ | :--------: | :------: | :------: | :---- |
-| Qwen2.5-1.5B-Instruct-heretic (este) | 1,54B | No disponible | Apache 2.0 | Variante "decensored" mediante ablación direccional |
-| Qwen/Qwen2.5-1.5B-Instruct (original) | 1,54B | No disponible | Apache 2.0 | Modelo base con rechazo estándar RLHF |
-| Qwen2.5-0.5B-Instruct-heretic (del mismo autor) | 0,5B | No disponible | Apache 2.0 | Variante más pequeña, misma técnica |
-| Qwen2.5-3B-Instruct-heretic (del mismo autor) | 3B | No disponible | Apache 2.0 | Variante más grande, misma técnica |
+| Modelo | Parametros | Contexto | Licencia | Refusal | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen2.5-1.5B-Instruct-heretic | 1,54B | 32.768 | Apache 2.0 | 1/100 (según model card) | Hugging Face, GGUF y safetensors |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | 99/100 (según model card) | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,5B aprox. | 32.768 | Apache 2.0 | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo más allá de la tasa de rechazo y la divergencia KL frente al original. Otras alternativas "uncensored" como Dolphin o WizardLM-uncensored no se han incluido por falta de información en la documentación proporcionada.
+La comparación con otras variantes abliterated de la misma familia (por ejemplo, versiones heretic de 0,5B o 3B) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no tiene filtro de seguridad adicional: la supresión del rechazo es deliberada y funcionará también para peticiones que el modelo base rechazaría por razones legítimas (contenido dañino, ilegal, etc.). No debe desplegarse detrás de un endpoint público sin moderación.
-- Hereda las limitaciones factuales y los sesgos del modelo base Qwen2.5-1.5B-Instruct. La ablación elimina direcciones de rechazo, pero no añade capacidad ni juicio.
-- Solo soporta inglés (etiqueta language: en). No se garantiza un buen rendimiento en otros idiomas.
-- La longitud de contexto no está documentada en la información proporcionada; se desconoce si mantiene la ventana del modelo base (que en Qwen2.5 suele ser de 32K o 128K, pero no se confirma aquí).
-- Riesgo de alucinación: como cualquier modelo de 1,5B, puede generar información falsa o inventada, especialmente en temas especializados.
-- Uso responsable: la model card advierte explícitamente que el usuario es responsable de cómo despliega el modelo y que no debe ponerse detrás de un servicio público no moderado que atienda a terceros.
+- La supresión del rechazo es deliberada: el modelo responderá a prompts que el original bloquearía, lo que incluye contenido potencialmente dañino, ofensivo o inseguro. No es apto para despliegues orientados al público sin filtros externos.
+- La model card advierte que esta ejecución no registró métricas de refusal ni de KL para este checkpoint concreto; los valores de la tabla deben tratarse con cautela.
+- La divergencia KL de 0,1607 implica una alteración medible de la distribución de salidas; pueden aparecer degradaciones sutiles en coherencia o instruction-following frente al original.
+- El modelo solo declara inglés en la model card, aunque el base Qwen2.5 soporta más idiomas; el rendimiento multilingüe tras la ablación no está verificado.
+- Riesgo de alucinación inherente a un modelo de 1,5B; no es adecuado para tareas que requieran alta precisión factual sin verificación externa.
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo decensored puede entrar en conflicto con políticas de plataformas, términos de servicio de proveedores cloud o normativa sobre contenido.
+- El autor no documenta sesgos específicos introducidos por la ablación; los sesgos del base Qwen2.5-1.5B-Instruct se mantienen presumiblemente intactos.
+- El repositorio ocupa 20 GB por incluir 15 cuantizaciones GGUF además de los pesos safetensors; conviene descargar solo el fichero necesario.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/Qwen2.5-1.5B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Herramienta Heretic (repositorio): https://github.com/p-e-w/heretic
-- Variante 0.5B: https://huggingface.co/saidutta69/Qwen2.5-0.5B-Instruct-heretic
-- Variante 3B: https://huggingface.co/saidutta69/Qwen2.5-3B-Instruct-heretic
-- Variante Coder 3B: https://huggingface.co/saidutta69/Qwen2.5-Coder-3B-Instruct-heretic
-- Página de inferencia en FriendliAI: https://friendli.ai/models/saidutta69/Qwen2.5-1.5B-Instruct-heretic
+- Licencia del base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- llama.cpp: https://github.com/ggml-org/llama.cpp

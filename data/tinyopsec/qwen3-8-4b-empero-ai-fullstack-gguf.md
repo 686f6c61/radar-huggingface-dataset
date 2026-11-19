@@ -2,102 +2,86 @@
 
 ## Resumen
 
-El modelo `tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF` es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario `tinyopsec`, con licencia Apache 2.0. Por el nombre se deduce que parte de un modelo de la familia Qwen3 de aproximadamente 4.000 millones de parametros y que ha sido ajustado para tareas de desarrollo full-stack, aunque esta filiacion no esta confirmada en la informacion disponible: la model card publicada no contiene mas que la linea de licencia, sin descripcion, sin datos de entrenamiento y sin instrucciones de uso.
+Qwen3.8-4B-Empero-AI-FullStack-GGUF es un repositorio de cuantizaciones GGUF del modelo iBotIA/Qwen3.8-4B-Empero-AI-FullStack, publicado por el usuario tinyopsec. No se trata de un modelo entrenado desde cero, sino de una conversión a formatos GGUF (desde F16 hasta Q2_K) realizada con llama.cpp para permitir la inferencia local en CPU y GPU de consumo mediante herramientas como llama-cli, LM Studio, Ollama o llama-cpp-python.
 
-El dato objetivo mas relevante es el recuento de parametros: 4.326.350.848 parametros (4,33 mil millones), extraido de los pesos en safetensors. El repositorio ocupa 27,4 GB, un tamano muy superior al que corresponderia a una unica cuantizacion de 4B, lo que sugiere que el autor ha subido multiples variantes de cuantizacion en un mismo repositorio, si bien no se detalla cuales. El modelo declara compatibilidad con endpoints y uso conversacional entre sus etiquetas.
+El modelo base cuenta con 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) y está etiquetado como perteneciente a la familia Qwen3, con un nombre que sugiere una especialización en tareas de "full stack" (desarrollo de software de extremo a extremo). La model card del repositorio de cuantización no documenta la arquitectura interna del modelo original, la longitud de contexto ni la composición del dataset de entrenamiento.
 
-Se trata de una publicacion con cero descargas y cero valoraciones en el momento de redactar esta ficha, sin resultados de benchmarks publicados y sin documentacion tecnica. Es, por tanto, un artefacto de interes limitado para produccion salvo que se valide de forma independiente, aunque puede resultar util como referencia de cuantizaciones GGUF de un modelo de 4B en el rango de consumo de GPU de gama media.
+La relevancia de este repositorio es práctica: ofrece once variantes de cuantización con tamaños que van de 1,3 GB (Q2_K) a 8,7 GB (F16), lo que permite ejecutar un modelo de 4,3B en GPUs con tan solo 2 GB de VRAM. La licencia Apache 2.0 facilita su uso comercial, aunque la información sobre el modelo base es escasa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (se infiere transformer denso de la familia Qwen3, sin confirmar) |
-| Parametros totales | 4.326.350.848 (4,33 mil millones) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (repositorio en formato GGUF de 27,4 GB; se desconoce la lista exacta de cuantizaciones) |
-| Idiomas soportados | no disponible |
+| Arquitectura | No disponible (modelo base etiquetado como qwen3; presumiblemente transformer decoder-only, sin confirmar) |
+| Parametros totales | 4.326.350.848 (~4,3B) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K (IQ pendientes) |
+| Idiomas soportados | Ingles (segun el campo `language` de la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
-| Etiquetas declaradas | gguf, endpoints_compatible, conversational, region:us |
-| Fecha de creacion | 12 de septiembre de 2026 (segun metadatos de Hugging Face) |
-| Ultima actualizacion | 12 de septiembre de 2026 (segun metadatos de Hugging Face) |
-| Descargas / valoraciones | 0 / 0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna, el proceso de entrenamiento, la composicion del dataset ni las tecnicas de alineacion empleadas. La model card del repositorio no incluye ningun contenido tecnico: unicamente la declaracion de licencia Apache 2.0. No hay publicados datos sobre numero de tokens de entrenamiento, uso de RLHF, DPO u otras tecnicas de ajuste, ni sobre posibles innovaciones como atencion lineal, decodificacion especulativa o mezcla de expertos.
+No se dispone de informacion sobre la arquitectura del modelo base iBotIA/Qwen3.8-4B-Empero-AI-FullStack mas alla de su etiqueta `qwen3` y su naturaleza de modelo de generacion de texto conversacional. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste por instrucciones.
 
-Lo unico deducible es de caracter indirecto. El nombre del repositorio combina un supuesto modelo base de la familia Qwen3 de 4B con el sufijo "Empero-AI-FullStack", lo que apunta a un ajuste fino orientado a tareas de desarrollo de software full-stack, presumiblemente mediante fine-tuning supervisado o destilacion de datos generados. Esta interpretacion es una hipotesis basada en la nomenclatura y no una afirmacion respaldada por documentacion. El recuento de parametros de 4,33 mil millones es compatible con un transformer denso de tamano 4B, aunque no se puede descartar otra topologia.
+En cuanto a la innovacion tecnica de este repositorio, se limita al proceso de cuantizacion: conversion a F16 GGUF como referencia y generacion de variantes K-quant (Q2_K a Q6_K) y Q8_0 mediante llama.cpp. La model card menciona que las cuantizaciones IQ (como IQ4_XS) estan pendientes porque requieren calibracion con imatrix, usando el dataset groups_merged.txt de kalomaze como referencia de calibracion.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta preparado para dialogos multi-turno, presumiblemente con plantilla de chat de la familia Qwen.
-- Asistencia en desarrollo de software: el sufijo del nombre sugiere especializacion en tareas de programacion full-stack (frontend, backend, bases de datos, despliegue), si bien no hay evaluacion publicada que lo respalde.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto esta pensado para servirse desde infraestructura de inferencia gestionada.
-- Capacidades multilingues: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Vision o audio: no disponible; no hay indicios de multimodalidad.
+- Generacion de texto conversacional (pipeline `text-generation`, tag `conversational`).
+- Orientacion declarada a tareas de desarrollo "full stack", segun el nombre del modelo base; no se documentan capacidades especificas.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidad multilingue: la model card declara unicamente ingles.
+- Inferencia local en CPU y GPU mediante llama.cpp, LM Studio, Ollama y llama-cpp-python.
 
 ## Casos de uso
 
-Dado que no existe documentacion tecnica verificada, los casos de uso que se enumeran son escenarios plausibles para un modelo conversacional de 4B en formato GGUF, no aplicaciones validadas por el autor:
-
-- Prototipado local de asistentes conversacionales: un modelo de 4,33B en GGUF puede ejecutarse en un portatil con GPU de gama media o incluso en CPU, lo que permite iterar sobre prompts y plantillas de chat sin coste de API.
-- Asistencia de codigo en el editor: integrado mediante un servidor compatible con la API de OpenAI (por ejemplo, llama.cpp con `--api` o Ollama), puede ofrecer autocompletado y explicaciones de fragmentos en un entorno de desarrollo local, siempre que se valide su calidad real en el lenguaje objetivo.
-- Generacion de esqueletos de proyectos full-stack: si el ajuste fino cumple lo que sugiere su nombre, podria producir estructuras de carpetas, configuraciones de despliegue y ficheros de infraestructura como punto de partida, sujeto a revision humana.
-- Clasificacion y resumen de texto en lotes: con 4B parametros y cuantizacion Q4, es viable procesar grandes volumenes de documentos en una sola GPU de 8-12 GB, usando el modelo para extraccion de entidades o resumenes cortos.
-- Agente de automatizacion de bajo coste: en pipelines donde el coste por token es critico, un 4B cuantizado puede encargarse de tareas de enrutamiento, reformulacion de consultas o validacion de respuestas antes de escalar a un modelo mayor.
-- Evaluacion comparativa de cuantizaciones: al ser un repositorio GGUF, resulta util para medir la degradacion de calidad entre niveles de cuantizacion (Q4 frente a Q8) en una misma tarea, un experimento habitual en equipos que despliegan en hardware limitado.
-- Fine-tuning posterior sobre dominio propio: al estar bajo Apache 2.0, puede servir como punto de partida para LoRA o QLoRA en dominios especificos, asumiendo que la licencia del modelo base sea compatible.
+- Asistencia de codigo en local: con la variante Q4_K_M (~2,5 GB) el modelo cabe en GPUs de 4 GB y puede usarse como asistente de programacion en entornos sin conexion o con requisitos de privacidad, integrado en editores mediante llama-cpp-python.
+- Prototipado rapido en portatiles: la variante Q2_K (~1,3 GB) permite probar el modelo en equipos con 2 GB de VRAM o incluso en CPU, adecuado para validar prompts antes de desplegar una cuantizacion mayor.
+- Chat conversacional embebido: la etiqueta `conversational` y el formato GGUF lo hacen apto para integrar un chatbot en aplicaciones de escritorio o moviles mediante llama.cpp, sin dependencia de APIs externas.
+- Despliegue en Ollama: la publicacion bajo el esquema `hf.co/tinyopsec/...:Q4_K_M` permite levantarlo con un solo comando, util para equipos que ya usan Ollama como capa de servicio local.
+- Evaluacion comparativa de cuantizaciones: al ofrecer once variantes del mismo modelo, sirve para medir el impacto de la cuantizacion en calidad y latencia sobre una tarea concreta antes de fijar una configuracion de produccion.
+- Generacion de texto por lotes en CPU: la variante Q3_K_S (~1,7 GB) permite procesar volumenes moderados de texto en servidores sin GPU, con coste de infraestructura bajo.
+- Entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilita su incorporacion en productos comerciales, sujeto a verificacion de la licencia del modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, y los resultados de busqueda web obtenidos no aportan datos tecnicos: corresponden a enlaces genericos del portal YouTube y no guardan ninguna relacion con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones calculadas a partir del recuento de parametros (4,33B) y del coste tipico de cada cuantizacion GGUF. No proceden de mediciones publicadas por el autor:
-
-- VRAM estimada para inferencia: aproximadamente 2,6-3,0 GB en Q4_K_M, 3,1-3,5 GB en Q5_K_M, 3,6-4,0 GB en Q6_K, 4,6-5,0 GB en Q8_0 y 8,6-9,0 GB en FP16.
-- GPU recomendadas para maxima comodidad: cualquier GPU con 8 GB o mas de VRAM, como RTX 3060 Ti, RTX 4060, RTX 3070 o superiores. Para servir varias peticiones concurrentes con contexto largo conviene subir a 12-16 GB (RTX 4070 Ti, RTX 4080, A4000) y, en entornos de produccion con batching alto, a A100 o H100.
-- Compatibilidad con GPU de consumo: si. En cuantizacion Q4 o Q5 cabe holgadamente en GPUs de 6-8 GB, e incluso en GPUs integradas con memoria compartida a costa de una latencia mucho mayor.
-- Ejecucion en CPU: viable con llama.cpp u Ollama. Un modelo de 4B en Q4 genera del orden de 5-15 tokens por segundo en CPUs modernas de escritorio, aunque esta cifra depende fuertemente del hardware y no ha sido verificada para este artefacto.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con la API de OpenAI. vLLM y TGI admiten GGUF de forma experimental o mediante conversion a safetensors, por lo que no son la via recomendada para este repositorio.
-- Latencia y throughput: no disponibles. No hay mediciones publicadas para este modelo concreto.
+- VRAM estimada segun cuantizacion (datos de la model card): Q2_K ~1,3 GB; Q3_K_S ~1,7 GB; Q3_K_M ~1,9 GB; Q3_K_L ~2,1 GB; Q4_K_S ~2,4 GB; Q4_K_M ~2,5 GB; Q5_K_S ~3,0 GB; Q5_K_M ~3,1 GB; Q6_K ~3,6 GB; Q8_0 ~4,7 GB; F16 ~8,7 GB.
+- Guia de VRAM del autor: 2 GB recomienda Q2_K; 3 GB Q3_K_M; 4 GB Q4_K_M; 6 GB Q5_K_M; 8 GB Q6_K; 12 GB o mas Q8_0 o F16.
+- Cabe en GPUs de consumo: si, desde tarjetas de 4 GB (Q4_K_M) hasta 8-12 GB (Q6_K, Q8_0); las variantes Q2_K y Q3_K pueden ejecutarse en CPU.
+- Opciones de despliegue: llama.cpp (llama-cli), LM Studio, Ollama (`ollama run hf.co/tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF:Q4_K_M`), llama-cpp-python. No se documenta soporte para vLLM ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece con modelos densos de tamano equivalente de uso comun en el mismo segmento. Los datos de los modelos alternativos corresponden a sus especificaciones publicas oficiales; los del modelo analizado figuran como "no disponible" cuando no constan. No se incluyen cifras de rendimiento porque no hay benchmarks publicados para el modelo de `tinyopsec`.
+No se dispone de datos de rendimiento del modelo base ni de sus alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros y disponibilidad.
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF | 4,33B | no disponible | Apache 2.0 | GGUF | Hugging Face, 0 descargas |
-| Qwen3-4B | 4,0B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF (comunitario) | Hugging Face, ampliamente desplegado |
-| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | safetensors, GGUF (comunitario) | Hugging Face, ecosistema amplio |
-| Gemma 3 4B IT | 4,0B | 128.000 tokens | Terminos de uso de Gemma | safetensors, GGUF (comunitario) | Hugging Face, ecosistema amplio |
-
-Nota: si el modelo base es efectivamente Qwen3-4B, la diferencia principal frente al original es el ajuste fino orientado a full-stack y el empaquetado en GGUF. En cualquier caso, la ausencia de evaluacion publicada impide afirmar que este ajuste mejore al modelo base en alguna tarea concreta.
+| Qwen3.8-4B-Empero-AI-FullStack-GGUF (este) | ~4,3B | No disponible | Apache 2.0 | GGUF | 11 cuantizaciones, orientado a codigo full stack |
+| Modelo base iBotIA/Qwen3.8-4B-Empero-AI-FullStack | ~4,3B | No disponible | No disponible en esta ficha | Safetensors (presumible) | Origen de las cuantizaciones |
+| Alternativas de ~4B de la familia Qwen3 | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card no describe el modelo, los datos de entrenamiento ni el uso previsto, lo que impide evaluar su idoneidad y trazabilidad.
-- Filiacion no confirmada: la hipotesis de que deriva de Qwen3-4B se basa unicamente en el nombre del repositorio; el autor no lo confirma en la informacion disponible.
-- Riesgo de alucinacion: no hay datos sobre el proceso de alineacion ni sobre mitigaciones, por lo que cabe esperar el comportamiento tipico de un modelo de 4B, con invencion de hechos y de APIs de codigo inexistentes.
-- Sesgos: no evaluados. No se han publicado analisis de sesgo demografico, cultural o linguistico.
-- Alcance idiomatico desconocido: no se declara la lista de idiomas soportados; el rendimiento en castellano es una incognita.
-- Longitud de contexto desconocida: no se especifica la ventana soportada, dato critico para aplicaciones de dialogo largo o analisis de repositorios completos.
-- Sin benchmarks: cualquier decision de adopcion en produccion deberia partir de una evaluacion propia sobre el caso de uso concreto.
-- Trazabilidad del artefacto: cero descargas y cero valoraciones implican que el modelo no ha sido validado por terceros. Un repositorio GGUF de 27,4 GB alojado por un autor sin historial publico merece cautela: conviene verificar los hashes y escanear los ficheros antes de cargarlos en infraestructura propia.
-- Anomalia en los metadatos: las fechas de creacion y actualizacion (septiembre de 2026) son posteriores a la fecha habitual de referencia y al propio nombre del modelo, lo que sugiere un error de metadatos o un artefacto generado de forma automatica.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero no cubre posibles obligaciones derivadas del modelo base si este tuviera una licencia distinta. Debe confirmarse la procedencia antes de un uso comercial.
-- Calidad del ajuste: no hay evidencia de que el presunto fine-tuning full-stack funcione mejor que el modelo base; podria incluso degradar capacidades generales por sobreajuste al dominio.
+- La model card del repositorio de cuantizacion no documenta sesgos, datos de entrenamiento ni evaluaciones de seguridad del modelo base.
+- Riesgo de alucinacion inherente a modelos de ~4B; no hay evaluaciones publicadas que lo cuantifiquen.
+- Idioma declarado: unicamente ingles; el rendimiento en castellano no esta verificado.
+- Longitud de contexto no documentada, lo que impide planificar casos de uso con contextos largos.
+- Las cuantizaciones de 2 y 3 bits (Q2_K, Q3_K_S) degradan la calidad de forma notable; el autor recomienda Q4_K_M como opcion por defecto.
+- Las cuantizaciones IQ aun no estan disponibles; requieren calibracion con imatrix.
+- La licencia del repositorio es Apache 2.0, pero la model card remite a la licencia del modelo base; conviene verificar esta ultima antes de un uso comercial.
+- El repositorio tiene 0 likes y fue creado en 2026-09-12, con actualizacion en 2026-11-01; la trazabilidad del proceso de cuantizacion no esta auditada por terceros.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF
-- Perfil del autor en Hugging Face: https://huggingface.co/tinyopsec
-- Paper, blog, repositorio o demo del autor: no disponible
-- No se han encontrado enlaces tecnicos relevantes en la busqueda web. Los resultados devueltos corresponden a enlaces genericos del portal YouTube (https://www.youtube.com/, https://de.wikipedia.org/wiki/YouTube) y no guardan relacion con este modelo.
+- Repositorio GGUF: https://huggingface.co/tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF
+- Modelo base: https://huggingface.co/iBotIA/Qwen3.8-4B-Empero-AI-FullStack
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Dataset de calibracion imatrix (groups_merged.txt): https://github.com/ggml-org/llama.cpp/discussions/5263

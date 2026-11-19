@@ -2,119 +2,102 @@
 
 ## Resumen
 
-Pocket TTS es un sistema de sintesis de voz (text-to-speech, TTS) desarrollado por Kyutai Labs y disenado para ejecutarse de forma eficiente en CPU, sin necesidad de GPU ni de APIs externas. El modelo base ronda los 100 millones de parametros, lo que lo situa en la categoria de TTS ultraligero: segun el autor, genera audio a aproximadamente 6 veces la velocidad de tiempo real en un MacBook Air M4 utilizando solo 2 nucleos de CPU, con una latencia de unos 200 ms hasta el primer fragmento de audio. La distribucion se realiza como paquete Python (`pip install pocket-tts`), con API de Python y linea de comandos, y requiere PyTorch 2.5 o superior (version CPU, sin CUDA).
+Pocket TTS es un modelo de síntesis de voz (text-to-speech) desarrollado por Kyutai, un laboratorio de investigación en IA de código abierto con sede en Francia y financiado por Iliad Group, CMA CGM Group y Schmidt Sciences. El modelo está diseñado especificamente para ejecutarse de forma eficiente en CPU, sin necesidad de GPU ni de APIs externas, lo que lo convierte en una opción poco habitual dentro del ecosistema TTS, dominado por modelos de mayor tamaño que requieren aceleración por hardware.
 
-La variante concreta de esta ficha, `kyutai/pocket-tts-without-voice-cloning`, se publica sin la funcionalidad de clonacion de voz que si aparece en el modelo base `kyutai/pocket-tts`. El modelo soporta seis idiomas (ingles, frances, aleman, portugues, italiano y espanol) y es capaz de procesar entradas de texto de longitud practicamente ilimitada gracias a un modo de streaming que va emitiendo audio por fragmentos. Para los idiomas distintos del ingles se ofrecen variantes de 24 capas de mayor calidad, a costa de un coste computacional superior.
+Con aproximadamente 100 millones de parámetros, Pocket TTS prioriza la eficiencia y la latencia baja sobre la calidad absoluta. Genera audio en streaming con una latencia de unos 200 ms hasta el primer fragmento y funciona a aproximadamente 6 veces la velocidad de tiempo real en una CPU de MacBook Air M4, usando solo 2 núcleos. Soporta seis idiomas (inglés, francés, alemán, portugués, italiano y español) y puede procesar entradas de texto de longitud ilimitada.
 
-Su relevancia actual radica en que cubre un nicho poco atendido: TTS de calidad razonable ejecutable en entornos sin GPU (portatiles, CI, servidores modestos, navegador del cliente) y con licencia CC-BY-4.0, lo que facilita su integracion en productos. El repositorio ocupa 18,9 GB, un tamano muy superior al esperado para 100 millones de parametros, coherente con la presencia de multiples variantes de idioma, voces y pesos auxiliares. El modelo se apoya en el paper arXiv:2509.06926 y en un informe tecnico publicado por Kyutai en enero de 2026; en agosto de 2026 el equipo libero ademas el codigo de entrenamiento.
+La relevancia actual del modelo radica en su enfoque de despliegue en el borde (edge) y en el navegador: permite generar voz en local, sin dependencias de servicios en la nube, con una licencia permisiva (CC-BY-4.0) y código de entrenamiento publicado desde agosto de 2026. La variante publicada en este repositorio, `pocket-tts-without-voice-cloning`, está restringida deliberadamente para no permitir la clonación de voz, lo que reduce el riesgo de suplantación de identidad y usos fraudulentos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; sistema TTS neuronal con variantes de modelo de lenguaje preentrenado por idioma (variantes de 24 capas para idiomas distintos del ingles) |
-| Parametros totales | ~100 M |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible; el modelo admite entradas de texto de longitud ilimitada mediante generacion en streaming |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (en), frances (fr), aleman (de), portugues (pt), italiano (it), espanol (es). El tag del repositorio incluye tambien `ar` (arabe), no confirmado en la model card |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | Safetensors |
-| Tamano del repositorio | 18,9 GB |
-| Libreria | `pocket-tts` |
-| Requisitos de entorno | Python 3.10-3.14, PyTorch 2.5+ (no requiere build con CUDA) |
-| Idiomas de la ficha del autor | en, fr, de, pt, it, es |
-| Fecha de creacion / ultima actualizacion | 2026-01-06 / 2026-09-23 |
-| Descargas / likes | 6.753 / 32 |
+| Arquitectura | no disponible (modelo TTS basado en la investigación de Kyutai sobre delayed streams modeling) |
+| Parámetros totales | ~100M |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible; admite entradas de texto de longitud ilimitada mediante streaming |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | inglés (en), francés (fr), alemán (de), portugués (pt), italiano (it), español (es) |
+| Licencia | CC-BY-4.0 (con cláusula de uso prohibido en la model card) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna mas alla de que se trata de un sistema TTS neuronal con "modelos de lenguaje preentrenados" seleccionables mediante el parametro `--language` de la CLI, y de que existen variantes de 24 capas para los idiomas no ingleses descritas como de mayor calidad pero mas lentas. El modelo se distribuye en safetensors y se configura mediante ficheros YAML locales, URLs `https://` o rutas `hf://<repo_id>/<path>[@revision]`, lo que sugiere una separacion entre pesos, configuracion y catalogo de voces.
+La información disponible no detalla la arquitectura interna del modelo más allá de que se enmarca en la línea de investigación de Kyutai sobre delayed streams modeling, técnica empleada también en su modelo TTS de 1.6B publicado en julio de 2025. Pocket TTS es una variante compacta de aproximadamente 100M de parámetros orientada a inferencia en CPU. Los idiomas distintos del inglés disponen de variantes de 24 capas de mayor calidad pero más lentas (por ejemplo, `italian_24l`).
 
-En cuanto a los datos de entrenamiento, la model card no especifica el numero de tokens de audio, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Si se indica que en agosto de 2026 se publico el codigo de entrenamiento en el directorio `training/` del repositorio de GitHub, lo que permite entrenar modelos propios y contribuir modelos de la comunidad. La innovacion tecnica principal que se destaca es la eficiencia en CPU: streaming de audio con latencia de aproximadamente 200 ms al primer fragmento, velocidad aproximada de 6x tiempo real en un M4 usando solo 2 nucleos, y capacidad de manejar texto de entrada de longitud ilimitada. Existen ademas implementaciones que permiten ejecutar el modelo en el propio navegador del cliente.
+En cuanto a entrenamiento, la model card no especifica el número de tokens, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Sí se indica que el código de entrenamiento está disponible en el repositorio de GitHub desde agosto de 2026, lo que permite entrenar modelos propios y contribuir variantes a la sección de modelos entrenados por la comunidad. Las voces preentrenadas provienen de catálogos como VCTK, Expresso y Common Voice, con licencias detalladas por voz en el repositorio `kyutai/tts-voices`.
 
 ## Capacidades
 
-- Sintesis de voz (TTS) multilingue en ingles, frances, aleman, portugues, italiano y espanol.
-- Generacion de audio en streaming, con emision progresiva de fragmentos desde aproximadamente 200 ms tras iniciar la peticion.
-- Procesamiento de entradas de texto de longitud ilimitada, adecuado para parrafos largos, articulos o documentos completos narrados de una sola vez.
-- Seleccion de voces predefinidas mediante el parametro `--voice`, con un catalogo de voces publicadas en `kyutai/tts-voices` (alba, giovanni, lola, juergen, rafael, estelle, anna, azelma, bill_boerst, caro_davy, charles, cosette, eponine, eve, fantine, george, jane, entre otras).
-- Seleccion de modelo de idioma mediante `--language`, incluyendo variantes de 24 capas de mayor calidad para idiomas distintos del ingles (por ejemplo `italian_24l`).
-- Uso mediante API de Python y mediante interfaz de linea de comandos (`generate`, `export-voice`, `serve`).
-- Ejecucion en navegador (implementaciones client-side) y despliegue como servicio mediante el comando `serve`.
-- Exportacion de voces a partir de ficheros de audio de referencia (`export-voice`).
-- No se documenta en la informacion disponible soporte de tool calling, function calling, agentes, vision, audio de entrada ni modo de razonamiento extendido, ya que se trata de un sistema TTS y no de un modelo de lenguaje de proposito general.
+- Generación de voz a partir de texto con streaming de audio y latencia baja (~200 ms hasta el primer fragmento).
+- Síntesis multilingüe en seis idiomas: inglés, francés, alemán, portugués, italiano y español.
+- Procesamiento de entradas de texto de longitud ilimitada mediante generación por streaming.
+- Catálogo de voces preentrenadas con licencias individuales documentadas.
+- API de Python y interfaz de línea de comandos (CLI) con comandos `generate`, `export-voice` y `serve`.
+- Exportación de voces y configuración personalizada mediante YAML local, URL HTTPS o rutas `hf://`.
+- Ejecución en navegador del lado del cliente (implementaciones in-browser).
+- Esta variante concreta no incluye clonación de voz; la clonación está disponible en la variante principal `kyutai/pocket-tts`.
+- No se documentan capacidades de tool calling, agentes, visión, audio de entrada ni modo de razonamiento.
 
 ## Casos de uso
 
-- Narracion de articulos y documentacion larga: el modelo acepta entradas de texto de longitud ilimitada y emite audio en streaming, por lo que puede convertir un articulo completo o un manual en audio sin trocear manualmente el texto ni esperar a que finalice la generacion completa.
-- Accesibilidad en aplicaciones de escritorio y web: al ejecutarse en CPU con unos 200 ms de latencia al primer fragmento y solo 2 nucleos, puede integrarse en lectores de pantalla o funciones de "leer en voz alta" sin depender de servicios cloud ni de una GPU en el equipo del usuario.
-- Asistentes de voz en local para domotica o kioscos: la generacion a 6x tiempo real en un MacBook Air M4 permite que un dispositivo de gama media con CPU sintetice respuestas habladas en el momento, manteniendo los datos en el dispositivo y evitando costes por peticion de APIs externas.
-- Audioguías y contenido multilingue: con soporte de espanol, frances, aleman, portugues, italiano e ingles, un mismo flujo puede generar la version en varios idiomas de un guion, seleccionando la voz y el modelo de idioma correspondiente mediante `-language` y `--voice`.
-- Generacion de audio en pipelines de CI/CD y pruebas automatizadas: al ser un paquete Python instalable con `pip` o ejecutable con `uvx`, se puede incorporar en tests que verifiquen la locucion de mensajes de aplicacion, con coste de infraestructura minimo al no requerir GPU.
-- Prototipado e investigacion en TTS: el codigo de entrenamiento publicado en `training/` y la posibilidad de cargar pesos personalizados mediante `--config` permiten hacer fine-tuning sobre voces o dominios concretos y comparar variantes de capas y calidad.
-- Preproduccion de locuciones y doblaje de baja fidelidad: util para generar bocetos de voz en fase de guion o para crear versiones provisionales de un video antes de contratar una locucion profesional.
-- Accesibilidad en navegador sin backend: dado que existen implementaciones client-side, se pueden ofrecer funciones de lectura en voz alta en una web sin enviar el texto del usuario a ningun servidor.
+- **Lectura de artículos y documentos en local**: integrado como biblioteca Python, el modelo convierte texto largo en audio de forma continua gracias al soporte de entradas ilimitadas, sin depender de servicios en la nube y con una licencia que facilita su redistribución.
+- **Asistentes de voz para aplicaciones de escritorio**: al ejecutarse en CPU con solo 2 núcleos y a ~6x tiempo real, puede incorporarse en aplicaciones de escritorio o herramientas de productividad sin exigir GPU dedicada.
+- **Accesibilidad en entornos con hardware limitado**: la baja huella de recursos permite generar voz en equipos sin aceleración por hardware, útil para lectores de pantalla o interfaces accesibles en dispositivos modestos.
+- **Síntesis de voz en el navegador**: las implementaciones in-browser permiten generar audio del lado del cliente, reduciendo costes de servidor y latencia de red en aplicaciones web interactivas.
+- **Generación de avisos y locuciones automatizadas**: para sistemas de anuncios, notificaciones o contenidos educativos multilingües donde se requiere volumen alto y coste bajo por petición.
+- **Prototipado rápido de productos de voz**: con instalación vía `pip install pocket-tts` y CLI inmediata, permite validar ideas de producto TTS en minutos, sin infraestructura GPU.
+- **Investigación y experimentación en TTS**: el código de entrenamiento publicado y la posibilidad de entrenar variantes propias lo convierten en una base para estudiar síntesis de voz eficiente en CPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas objetivas de calidad de sintesis (por ejemplo MOS, WER, SIM) ni comparaciones numericas con otros sistemas TTS.
+No se han publicado resultados de benchmarks en la información disponible.
 
-Los unicos datos de rendimiento facilitados por el autor son de caracter operativo:
-
-| Metrica | Valor declarado por el autor |
-|---|---|
-| Latencia hasta el primer fragmento de audio | ~200 ms |
-| Velocidad de generacion | ~6x tiempo real |
-| Hardware de referencia | CPU de MacBook Air M4 |
-| Nucleos de CPU utilizados | 2 |
-| Parametros del modelo | ~100 M |
+Los únicos datos de rendimiento indicados en la model card son operativos: ~200 ms hasta el primer fragmento de audio, ~6x tiempo real en una CPU de MacBook Air M4 y uso de solo 2 núcleos de CPU.
 
 ## Requisitos de hardware
 
-- Uso principal en CPU: no requiere GPU y no necesita la build CUDA de PyTorch.
-- Consumo de nucleos: aproximadamente 2 nucleos de CPU segun el autor.
-- VRAM estimada: no disponible; al ejecutarse en CPU, la memoria relevante es la RAM del sistema. Con un modelo de unos 100 M de parametros en safetensors, el peso de los pesos es de unos cientos de MB por variante, aunque el repositorio completo ocupa 18,9 GB (incluye multiples variantes y material auxiliar). No se especifican cifras exactas de RAM por variante.
-- GPU recomendadas: no se documentan; el diseno prioriza CPU. En principio cualquier GPU compatible con PyTorch 2.5+ podria utilizarse, pero no se aportan datos de rendimiento en GPU.
-- Compatibilidad con GPU de consumo: no aplica como requisito, ya que el caso de uso objetivo es CPU.
-- Opciones de despliegue: paquete Python `pocket-tts` (instalacion con `pip` o ejecucion con `uvx`), CLI (`generate`, `export-voice`, `serve`), API de Python, servidor de inferencia mediante `serve`, y ejecucion en el navegador del cliente. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: ~200 ms al primer fragmento y ~6x tiempo real en CPU de MacBook Air M4. No hay datos de throughput en otros procesadores ni en GPU.
-- Rendimiento por variante: las variantes de 24 capas para idiomas distintos del ingles ofrecen mayor calidad pero son mas lentas, sin cifras concretas publicadas.
+- Inferencia en CPU: el modelo está diseñado para ejecutarse sin GPU; no requiere la versión CUDA de PyTorch.
+- VRAM estimada: no aplica en el caso de uso principal en CPU; no se dispone de estimaciones de VRAM para despliegue en GPU.
+- GPU recomendadas: no disponibles; el diseño del modelo no las requiere.
+- Compatibilidad con GPU de consumo: no documentada, al no ser el objetivo del modelo.
+- Despliegue: paquete `pip install pocket-tts`, CLI `pocket-tts` con comandos `generate`, `export-voice` y `serve`, y ejecución mediante `uvx` en entorno aislado.
+- Requisitos de software: Python 3.10 a 3.14 y PyTorch 2.5 o superior.
+- Latencia y throughput: ~200 ms hasta el primer fragmento; ~6x tiempo real en CPU de MacBook Air M4 con 2 núcleos.
+- Despliegue en navegador: existen implementaciones in-browser documentadas en el repositorio.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos en la informacion proporcionada. La model card no incluye una tabla de comparacion con otros sistemas TTS y no se han facilitado especificaciones verificables de alternativas.
-
-| Modelo | Parametros | Contexto / longitud de entrada | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parámetros | Ejecución | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| kyutai/pocket-tts-without-voice-cloning | ~100 M | Entradas de texto ilimitadas (streaming) | en, fr, de, pt, it, es | CC-BY-4.0 | Hugging Face, pip, GitHub |
-| Alternativas de la misma categoria (TTS ligero ejecutable en CPU) | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Pocket TTS (esta variante) | ~100M | CPU, navegador | 6 | CC-BY-4.0 | Sin clonación de voz; streaming y latencia ~200 ms |
+| Kyutai TTS 1.6B | 1.6B | no disponible | no disponible | no disponible | Publicado en julio de 2025; delayed streams modeling; mayor tamaño |
+| Alternativas TTS de gran tamaño | no disponible | GPU | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
-Como referencia cualitativa, la categoria de TTS ultraligero orientado a CPU incluye sistemas como Piper, Kokoro o XTTS, pero en la informacion disponible no se aportan parametros, contextos, licencias ni resultados verificables de estos modelos, por lo que no se puede establecer una comparacion rigurosa.
+No se dispone de información suficiente sobre otros modelos TTS comparables para establecer una comparativa de rendimiento con datos verificables.
 
 ## Limitaciones y advertencias
 
-- La variante de esta ficha se publica explicitamente sin clonacion de voz, pese a que la model card del modelo base si la anuncia. Conviene verificar el alcance real de esta variante antes de integrarla si la clonacion es un requisito.
-- El uso de clonacion de voz o de imitacion de personas sin consentimiento explicito y legal esta prohibido por los terminos del autor, junto con la generacion de desinformacion, llamadas fraudulentas, contenido difamatorio, de acoso, discriminatorio o que invada la privacidad.
-- El acceso al modelo esta sujeto a un formulario (`extra_gated_fields`) que solicita empresa o universidad y el proposito de uso (trabajo, estudios u ocio).
-- Licencia CC-BY-4.0: permite uso comercial con atribucion, pero no concede derechos de marca ni de imagen sobre las voces utilizadas; el propio autor remite a `kyutai/tts-voices` para consultar la licencia de cada voz concreta (algunas voces provienen de datasets como VCTK o Expresso con condiciones propias).
-- Calidad y naturalidad: no se publican metricas objetivas de MOS, WER ni similitud de voz, por lo que la calidad real por idioma y por voz no esta cuantificada.
-- Idiomas: el soporte se limita a los seis idiomas declarados; el rendimiento fuera de ellos no esta documentado. El tag `ar` del repositorio no queda confirmado en la model card.
-- Riesgo de errores de pronunciacion en nombres propios, siglas, numeros, unidades o terminos tecnicos, habitual en sistemas TTS, no cuantificado en la informacion disponible.
-- Discrepancia de fechas: la ficha indica creacion el 2026-01-06 y ultima actualizacion el 2026-09-23, con una nota de agosto de 2026 sobre la publicacion del codigo de entrenamiento; conviene comprobar la revision exacta de los pesos que se descargan.
-- El repositorio ocupa 18,9 GB, muy por encima del tamano de un modelo de 100 M de parametros, por lo que el espacio en disco y el tiempo de descarga son un factor a tener en cuenta en entornos con recursos limitados.
-- No se documentan mecanismos de filtrado de contenido generado, moderacion de texto de entrada ni marcas de agua en el audio resultante.
+- Esta variante no permite clonación de voz; la clonación está disponible únicamente en la variante principal `kyutai/pocket-tts`.
+- La model card establece una lista explícita de usos prohibidos: suplantación o clonación de voz sin consentimiento explícito y lícito, desinformación, llamadas fraudulentas, presentación de contenido generado como grabaciones reales y generación de contenido ilícito, difamatorio, acosador, discriminatorio o que vulnere la privacidad.
+- El acceso al modelo está condicionado a la aceptación de un formulario (gated) con campos sobre empresa o universidad y finalidad de uso.
+- La licencia CC-BY-4.0 exige atribución; es apta para uso comercial con cumplimiento de las condiciones de la model card.
+- El tamaño reducido (~100M parámetros) implica compromisos en calidad de voz frente a modelos TTS de mayor tamaño; las variantes de 24 capas para idiomas no ingleses mejoran la calidad a costa de velocidad.
+- No se documentan sesgos específicos del modelo ni tasas de error en la información disponible.
+- No se dispone de datos sobre robustez ante texto adversario, números, siglas o entidades poco frecuentes.
+- Las voces preentrenadas tienen licencias individuales que deben verificarse antes de su uso en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face (esta variante): https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
-- Modelo base con clonacion de voz: https://huggingface.co/kyutai/pocket-tts
-- Repositorio GitHub: https://github.com/kyutai-labs/pocket-tts
-- Codigo de entrenamiento: https://github.com/kyutai-labs/pocket-tts/blob/main/training/README.md
-- Demo interactiva: https://kyutai.org/pocket-tts
-- Informe tecnico (blog de Kyutai): https://kyutai.org/blog/2026-01-13-pocket-tts
-- Paper: https://arxiv.org/abs/2509.06926
-- Documentacion: https://kyutai-labs.github.io/pocket-tts/
-- Catalogo de voces y sus licencias: https://huggingface.co/kyutai/tts-voices
-
-Nota: los resultados de la busqueda web proporcionados corresponden a entidades bancarias y no guardan relacion con el modelo; no se han utilizado como fuente.
+- [Modelo en Hugging Face](https://huggingface.co/kyutai/pocket-tts-without-voice-cloning)
+- [Variante principal con clonación de voz](https://huggingface.co/kyutai/pocket-tts)
+- [Demo interactiva](https://kyutai.org/pocket-tts)
+- [Repositorio GitHub](https://github.com/kyutai-labs/pocket-tts)
+- [Documentación](https://kyutai-labs.github.io/pocket-tts/)
+- [Tech report](https://kyutai.org/blog/2026-01-13-pocket-tts)
+- [Paper (arXiv:2509.06926)](https://arxiv.org/abs/2509.06926)
+- [Catálogo de voces y licencias](https://huggingface.co/kyutai/tts-voices)
+- [Kyutai TTS 1.6B](https://kyutai.org/next/tts/)
+- [Sitio web de Kyutai](https://kyutai.org/)
+- [Organización Kyutai en GitHub](https://github.com/kyutai-labs)
+- [Organización Kyutai en Hugging Face](https://huggingface.co/kyutai)

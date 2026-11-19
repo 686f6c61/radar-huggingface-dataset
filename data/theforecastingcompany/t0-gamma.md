@@ -2,107 +2,109 @@
 
 ## Resumen
 
-t0-gamma es un modelo fundacional de series temporales con pesos abiertos desarrollado por The Forecasting Company. Se trata de la tercera iteración pública de la familia t0 (tras t0-alpha y t0-beta) y está diseñado específicamente para forecasting probabilístico multivariante con múltiples horizontes, no para generación de texto. Su rasgo diferencial es que opera de forma nativa con covariables históricas y covariables conocidas de futuro (calendario, festivos, promociones, eventos planificados, predicciones meteorológicas) y emite directamente 21 niveles de cuantil por paso temporal.
+`t0-gamma` es un modelo fundacional de series temporales con pesos abiertos desarrollado por The Forecasting Company. Se trata de la tercera iteración pública de la familia `t0` y su propósito es generar pronósticos probabilísticos multi-horizonte sobre series univariantes y multivariantes, incorporando de forma nativa covariables históricas y covariables futuras conocidas (calendario, festivos, promociones, meteorología prevista, etc.). Con aproximadamente 256 millones de parámetros, se posiciona como un modelo ligero que puede ejecutarse en hardware modesto, incluido Apple Silicon mediante MLX.
 
-La arquitectura es un transformer de tipo decoder con tokenización por parches, con aproximadamente 256 millones de parámetros (255.614.293 según los pesos en safetensors). El checkpoint se distribuye en safetensors y cuenta con dos runtimes oficiales bajo la librería `tfc-t0` (versión >= 0.6.0): PyTorch y MLX para Apple Silicon. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
+La arquitectura es un transformer de tipo decoder con tokenización por parches (patch transformer), entrenado específicamente para forecasting probabilístico. Predice de forma nativa 21 niveles de cuantil, lo que permite construir intervalos de predicción sin post-procesado adicional. El modelo se distribuye bajo licencia Apache-2.0, con pesos en safetensors y runtimes oficiales para PyTorch (`tfc-t0[torch]`) y MLX (`tfc-t0[mlx]`), ambos en versión `>=0.6.1`.
 
-Su relevancia actual radica en los resultados declarados por el autor: encabeza el leaderboard fev-bench con un skill score de 49,42 y publica métricas competitivas en GIFT-Eval (CRPS 0,452, MASE 0,6608) y TIME (CRPS 0,534, MASE 0,637). Con 12.737 descargas y un tamaño de repositorio de 1,0 GB, es un candidato práctico para sustituir pipelines de forecasting clásicos por un modelo fundacional preentrenado de coste de inferencia bajo.
+Su relevancia actual radica en que ofrece una alternativa de pesos abiertos y ejecutable localmente frente a modelos fundacionales de series temporales propietarios o de mayor tamaño, con resultados publicados en los leaderboards de referencia del área (fev-bench, GIFT-Eval y TIME). El modelo está orientado a investigación, experimentación y evaluación aplicada de pronósticos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de tipo decoder con tokenización por parches (patch transformer) |
-| Parámetros totales | 255.614.293 (aproximadamente 256M) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (el repositorio distribuye safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | No disponible (modelo de series temporales, no procesa lenguaje natural) |
+| Arquitectura | Transformer decoder-style con tokenización por parches (patch transformer) |
+| Parametros totales | 255.614.293 (~256M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo numérico de series temporales; no procesa texto) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors; runtimes PyTorch (`tfc-t0[torch]`) y MLX (`tfc-t0[mlx]`) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-t0-gamma es un transformer de estilo decoder que trabaja sobre parches de la serie temporal en lugar de sobre tokens discretos. El modelo produce forecasts probabilísticos multi-horizonte y emite de forma nativa 21 niveles de cuantil, lo que permite construir intervalos de predicción sin post-procesado ni supuestos paramétricos. La entrada admite series univariantes y multivariantes, e incorpora tanto covariables históricas como covariables conocidas de futuro (calendario, festivos, promociones, eventos planificados, predicciones meteorológicas u otras señales externas disponibles a lo largo del horizonte de predicción).
+`t0-gamma` es un transformer de estilo decoder que opera sobre parches de la serie temporal en lugar de sobre tokens discretos. El modelo genera directamente una distribución predictiva sobre el horizonte futuro mediante 21 niveles de cuantil, lo que constituye su salida probabilística nativa. Acepta entradas multivariantes y permite condicionar el pronóstico tanto con covariables históricas como con covariables futuras conocidas a lo largo del horizonte de predicción.
 
-La model card indica que la arquitectura es similar a la de t0-beta, cuyo informe técnico describe el detalle del diseño y del entrenamiento. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO (extremadamente improbable en un modelo de forecasting). Tampoco se detallan innovaciones adicionales como decodificación especulativa o atención lineal. La innovación declarada se centra en tres ejes: salida probabilística nativa por cuantiles, condicionamiento explícito sobre covariables futuras y soporte de inferencia en Apple Silicon vía MLX sobre el mismo checkpoint original.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de ajuste como RLHF o DPO (no aplicables de forma convencional en este dominio). Tampoco se especifican innovaciones adicionales como decodificación especulativa o atención lineal. El modelo requiere el runtime `tfc-t0>=0.6.1`, que declara las convenciones del checkpoint en su `config.json`, y está disponible en variantes PyTorch y MLX para Apple Silicon.
 
 ## Capacidades
 
-- Forecasting probabilístico multi-horizonte con 21 niveles de cuantil emitidos de forma nativa.
-- Predicción univariante y multivariante sobre múltiples series simultáneas.
-- Condicionamiento sobre covariables históricas (pasadas) y covariables conocidas de futuro.
-- Uso de señales externas sobre el horizonte: festivos, calendario, promociones, eventos planificados, predicciones meteorológicas.
-- Modelado conjunto de múltiples series con estructura común (por ejemplo, demanda eléctrica nacional).
-- Inferencia en CPU/GPU con PyTorch y en Apple Silicon con MLX a partir del mismo checkpoint.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso en lenguaje natural, visión, audio ni generación de texto.
+- Pronóstico probabilístico de series temporales con 21 niveles de cuantil nativos.
+- Forecasting univariante y multivariante.
+- Pronóstico multi-horizonte.
+- Condicionamiento con covariables históricas.
+- Condicionamiento con covariables futuras conocidas: calendario, festivos, eventos planificados, promociones, meteorología prevista u otras señales externas disponibles en el horizonte.
+- Ejecución local en PyTorch y en MLX sobre Apple Silicon.
+- Disponibilidad mediante API gestionada en Retrocast.
+- No soporta tool calling, agentes, razonamiento multi-step, visión, audio ni capacidades multilingües: es un modelo numérico especializado en series temporales.
 
 ## Casos de uso
 
-- Predicción de demanda eléctrica nacional: el modelo puede estimar la curva de carga con intervalos de predicción a partir del histórico y de un calendario de festivos, como ilustra el ejemplo de demanda de Enedis (Francia) incluido en la model card. El condicionamiento sobre covariables de calendario es directamente aplicable a este dominio.
-- Previsión de gasto o reembolso sanitario: el caso Medic'AM de la model card muestra cómo modelar reembolsos mensuales de medicamentos por clase ATC; la salida por cuantiles permite presupuestar escenarios pesimista y optimista en lugar de una única cifra.
-- Planificación de demanda minorista con promociones: introduciendo promociones y festivos como covariables conocidas de futuro, el modelo ajusta el forecast en los picos previstos en lugar de aprenderlos solo del histórico.
-- Gestión de capacidad y turnos de personal: el forecast por cuantiles permite dimensionar plantilla contra el percentil 90 de demanda, no contra la media, con el mismo modelo y sin modelos auxiliares.
-- Previsión de generación renovable condicionada por meteorología: las predicciones meteorológicas disponibles sobre el horizonte entran como covariables de futuro, lo que encaja con el soporte nativo del modelo para este tipo de señal.
-- Evaluación comparativa de modelos de forecasting: al ser compatible con los leaderboards fev-bench, GIFT-Eval y TIME, sirve como baseline fuerte y reproducible en experimentos académicos o internos, con licencia Apache-2.0 para publicar resultados.
-- Sustitución de pipelines estadísticos en producción: al ser un modelo preentrenado de 256M de parámetros, se puede desplegar en una sola GPU consumer o en un portátil Apple Silicon y eliminar el ajuste por serie de modelos ARIMA/ETS.
+- Previsión de demanda energética: el modelo puede pronosticar la demanda eléctrica nacional condicionando con festivos y calendario como covariables futuras conocidas, tal como se ilustra en la model card con datos de Enedis.
+- Planificación de inventario y cadena de suministro: forecasting multivariante de ventas por producto con promociones planificadas como covariables futuras, generando intervalos de cuantil para dimensionar stock de seguridad.
+- Previsión de gasto sanitario o reembolsos: la model card muestra el caso de reembolsos mensuales de medicamentos (Medic'AM) con y sin covariables, útil para presupuestación con bandas de incertidumbre.
+- Gestión de capacidad en infraestructura: pronóstico de métricas operativas (tráfico, carga de servidores) con covariables de calendario para anticipar picos y escalar recursos.
+- Evaluación comparativa de modelos de forecasting: al ser de pesos abiertos y ejecutable localmente, sirve como baseline reproducible en pipelines de evaluación sobre fev-bench, GIFT-Eval o TIME.
+- Investigación en modelos fundacionales de series temporales: su tamaño (~256M) y licencia Apache-2.0 permiten experimentación, fine-tuning y análisis de sensibilidad a covariables sin restricciones de uso comercial.
+- Pronóstico meteorológico-dependente de negocio: uso de previsiones meteorológicas como covariables futuras para estimar demanda en retail o consumo energético.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (entradas de model-index con `verified: false`, es decir, no verificadas de forma independiente):
+Resultados declarados por el autor del modelo (no verificados de forma independiente):
 
-| Benchmark | Métrica | Valor | Fuente |
-|---|---|---|---|
-| fev-bench | Skill score | 49,42 | Leaderboard fev-bench (AutoGluon) |
-| GIFT-Eval | CRPS | 0,452 | Leaderboard GIFT-Eval (Salesforce) |
-| GIFT-Eval | MASE | 0,6608 | Leaderboard GIFT-Eval (Salesforce) |
-| TIME | CRPS | 0,534 | Leaderboard TIME (Real-TSF) |
-| TIME | MASE | 0,637 | Leaderboard TIME (Real-TSF) |
+| Benchmark | Metrica | Valor |
+|---|---|---|
+| fev-bench | Skill score | 49,4 |
+| GIFT-Eval | CRPS | 0,4503 |
+| GIFT-Eval | MASE | 0,658 |
+| TIME | CRPS | 0,534 |
+| TIME | MASE | 0,637 |
 
-El blog del autor afirma que t0-gamma es el modelo líder en fev-bench. No se han proporcionado en la información disponible resultados de benchmarks frente a modelos competidores concretos, ni cifras de MMLU, HumanEval o GSM8K (no aplicables a este modelo). No se inventan números adicionales.
+No se han publicado en la información disponible resultados comparativos directos frente a otros modelos en estos mismos leaderboards.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de 255,6M de parámetros, no publicada por el autor): aproximadamente 1,0 GB en FP32, unos 0,5 GB en BF16/FP16 y unos 0,26 GB en int8, sin contar activaciones ni buffers de series.
-- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en iGPU y en CPU.
-- Soporte oficial de Apple Silicon mediante MLX (`pip install "tfc-t0[mlx]>=0.6.0"`), por lo que funciona en Mac con chip M-series.
-- Despliegue: runtime propio `tfc-t0` en variante PyTorch o MLX; también existe API gestionada en Retrocast. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; con ~256M parámetros, el checkpoint en fp32 ocupa aproximadamente 1 GB (tamaño del repo: 1,0 GB), por lo que la inferencia cabe holgadamente en GPUs de consumo.
+- GPU recomendadas: cualquier GPU con al menos ~2-4 GB de memoria libre debería ser suficiente; no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU moderna de consumo; también se ejecuta en Apple Silicon vía MLX.
+- Opciones de despliegue: runtime oficial `tfc-t0[torch]>=0.6.1` (PyTorch) y `tfc-t0[mlx]>=0.6.1` (Apple Silicon); API gestionada en Retrocast. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| t0-gamma | 255,6M | No disponible | fev-bench 49,42 skill score; GIFT-Eval CRPS 0,452 | Apache-2.0 | Hugging Face, runtime tfc-t0, API Retrocast |
-| t0-beta | No disponible | No disponible | No disponible | No disponible | Hugging Face |
-| t0-alpha | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| t0-gamma | ~256M | no disponible | Apache-2.0 | Hugging Face, Retrocast | fev-bench 49,4; GIFT-Eval CRPS 0,4503 / MASE 0,658; TIME CRPS 0,534 / MASE 0,637 |
+| t0-beta | no disponible | no disponible | no disponible | Hugging Face | no disponible |
+| t0-alpha | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 
-No se dispone en la información proporcionada de especificaciones ni métricas de modelos comparables de otros desarrolladores (por ejemplo, otros modelos fundacionales de series temporales presentes en GIFT-Eval o fev-bench). Cualquier comparación numérica con terceros requeriría consultar directamente esos leaderboards, por lo que se indica como no disponible en esta ficha.
+No se dispone en la información proporcionada de datos sobre otros modelos fundacionales de series temporales comparables (parámetros, contexto, licencia o rendimiento) para establecer una comparativa externa.
 
 ## Limitaciones y advertencias
 
-- Los forecasts son estimaciones probabilísticas, no garantías; la model card lo señala explícitamente. Un intervalo del 90 % no implica que el valor real quede dentro en el 90 % de los casos en cualquier dominio.
-- Las métricas de benchmark están declaradas por el autor con `verified: false`; no han sido verificadas de forma independiente en la información disponible.
-- No se documentan sesgos conocidos ni la composición del dataset de entrenamiento, lo que impide evaluar sesgos por dominio (por ejemplo, cobertura geográfica o sectorial de las series de entrenamiento).
-- Riesgo de error sistemático en series fuera de la distribución de entrenamiento: sin información sobre los datos de preentrenamiento, no se puede acotar la transferibilidad a dominios muy distintos.
-- No procesa lenguaje natural ni documentos, por lo que no sirve para tareas de texto, código o razonamiento; los campos de idioma no aplican.
-- Longitud de contexto y horizonte máximo no documentados en la información disponible; conviene validarlos empíricamente antes de fijar un horizonte de producción.
-- Requiere `tfc-t0>=0.6.0`; el `config.json` del checkpoint declara convenciones que versiones anteriores del runtime no interpretan.
-- Licencia Apache-2.0: permite uso comercial, modificación y redistribución con atribución y sin garantías; no se identifican restricciones adicionales en la información disponible.
+- Los pronósticos son estimaciones probabilísticas, no garantías; deben tratarse como tal en cualquier decisión operativa.
+- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false`).
+- No se documentan sesgos conocidos ni análisis de robustez frente a distribuciones fuera del dominio de entrenamiento.
+- Riesgo de degradación en series con patrones muy distintos a los del corpus de entrenamiento; no se detalla la composición del dataset.
+- No se especifica la longitud de contexto soportada, lo que limita la planificación de ventanas de entrada largas.
+- No aplica a tareas de texto, visión, audio ni agentes; es un modelo exclusivamente numérico de series temporales.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar los términos del runtime `tfc-t0` y del servicio Retrocast por separado.
+- Requiere una versión mínima del runtime (`tfc-t0>=0.6.1`) que interpreta las convenciones declaradas en el `config.json`; versiones anteriores pueden no cargar el checkpoint correctamente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/theforecastingcompany/t0-gamma
-- Informe técnico (arXiv): https://arxiv.org/abs/2609.24559
-- Blog del lanzamiento: https://www.theforecastingcompany.com/blog/t0-gamma/
-- Web del desarrollador: https://theforecastingcompany.com/
-- Repositorio del runtime tfc-t0: https://github.com/theforecastingcompany/tfc-t0
-- Paquete PyPI: https://pypi.org/project/tfc-t0/
+- Paper (arXiv): https://arxiv.org/abs/2609.24559
+- The Forecasting Company: https://theforecastingcompany.com/
+- Runtime PyPI (`tfc-t0`): https://pypi.org/project/tfc-t0/
+- Repositorio GitHub (`tfc-t0`): https://github.com/theforecastingcompany/tfc-t0
+- Plataforma Retrocast: https://app.retrocast.com/
+- Documentación de la API gestionada: https://docs.retrocast.com/documentation#available-models
+- Modelo `t0-beta`: https://huggingface.co/theforecastingcompany/t0-beta
+- Modelo `t0-alpha`: https://huggingface.co/theforecastingcompany/t0-alpha
 - Colección de la familia t0: https://huggingface.co/collections/theforecastingcompany/t0-alpha-model-family-6a99be18a9e3ab245fda8501
-- t0-beta: https://huggingface.co/theforecastingcompany/t0-beta
-- t0-alpha: https://huggingface.co/theforecastingcompany/t0-alpha
 - Leaderboard fev-bench: https://huggingface.co/spaces/autogluon/fev-bench
 - Leaderboard GIFT-Eval: https://huggingface.co/spaces/Salesforce/GIFT-Eval
 - Leaderboard TIME: https://huggingface.co/spaces/Real-TSF/TIME-leaderboard
-- Plataforma Retrocast: https://app.retrocast.com/
-- Documentación de la API gestionada: https://docs.retrocast.com/documentation#available-models
+- Datos Enedis: https://data.enedis.fr/
+- Datos Medic'AM: https://www.assurance-maladie.ameli.fr/etudes-et-donnees/medicaments-classe-atc-medicam

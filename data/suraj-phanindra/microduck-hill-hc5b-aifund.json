@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "suraj-phanindra/microduck-hill-hc5b-aifund",
+  "slug": "suraj-phanindra-microduck-hill-hc5b-aifund",
+  "author": "suraj-phanindra",
+  "url": "https://huggingface.co/suraj-phanindra/microduck-hill-hc5b-aifund",
+  "created_at": "2026-11-18T22:46:27.000Z",
+  "updated_at": "2026-11-18T22:46:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:juicenv/microduck-hill-es8",
+    "base_model:finetune:juicenv/microduck-hill-es8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793837,
+  "storage_human": "793837 B",
+  "context_length": null,
+  "base_model": "juicenv/microduck-hill-es8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "suraj-phanindra/microduck-hill-hc7-aifund · Hugging Face",
+      "url": "https://huggingface.co/suraj-phanindra/microduck-hill-hc7-aifund",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "suraj-phanindra/microduck-hill-hc6-aifund · Hugging Face",
+      "url": "https://huggingface.co/suraj-phanindra/microduck-hill-hc6-aifund",
+      "snippet": "suraj-phanindra / microduck-hill-hc6-aifund Like 0 Robotics Microduck ONNX reinforcement-learning Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

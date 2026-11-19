@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Typhon-1.2B-GGUF",
+  "slug": "mradermacher-typhon-1-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Typhon-1.2B-GGUF",
+  "created_at": "2026-11-18T22:16:04.000Z",
+  "updated_at": "2026-11-18T22:28:00.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "typo-correction",
+    "text-rewriting",
+    "grammatical-error-correction",
+    "on-device",
+    "en",
+    "base_model:dennny123/Typhon-1.2B",
+    "base_model:quantized:dennny123/Typhon-1.2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 10598395904,
+  "storage_human": "10.6 GB",
+  "context_length": 128000,
+  "base_model": "dennny123/Typhon-1.2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

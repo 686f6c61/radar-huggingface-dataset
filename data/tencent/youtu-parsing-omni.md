@@ -2,113 +2,104 @@
 
 ## Resumen
 
-Youtu-Parsing-Omni es un modelo de parseo omnimodal compacto (5.334.472.192 parametros, aproximadamente 5,3B) desarrollado por Tencent, publicado en Hugging Face bajo el identificador `tencent/Youtu-Parsing-Omni`. Su proposito es convertir una unica entrada —una pagina de documento, una imagen natural, un grafico o diagrama de flujo, una figura geometrica, un clip de audio o un video audiovisual— en un unico sobre JSON estructurado (OmniSchema) que cubre tanto percepcion (layout, texto, tablas, formulas, bounding boxes, timestamps, ASR, OCR, eventos acusticos, movimiento de camara) como cognicion (captioning, narrativas e informes).
+Youtu-Parsing-Omni es un modelo de parseo omnicanal de 5.334 millones de parametros (5B) desarrollado por Tencent, publicado en Hugging Face bajo la libreria transformers con codigo personalizado. Su proposito es convertir una unica entrada —pagina de documento, imagen natural, grafico, diagrama de flujo, figura geometrica, clip de audio o video con pista de audio— en un unico sobre JSON estructurado (OmniSchema) que cubre tanto percepcion (elementos de layout, texto, tablas, formulas, bounding boxes, marcas temporales, ASR, OCR, eventos acusticos, movimiento de camara) como cognicion (leyendas, narrativas, informes). El tipo de salida se selecciona mediante el prompt de tarea (`--task`).
 
-La relevancia del modelo reside en su enfoque de encoder unificado: en lugar de emplear dos torres preentrenadas independientes (una de vision y otra de audio) cuyas representaciones se encuentran dentro del modelo de lenguaje, Youtu-Parsing-Omni usa un unico Youtu-Omni-Encoder inicializado a partir de un modelo de lenguaje de texto preentrenado, con stems finos especificos por modalidad. Esto permite compartir la practica totalidad de los parametros de percepcion entre imagen, audio y video con audio intercalado.
+La relevancia actual del modelo radica en que sustituye la arquitectura habitual de dos torres separadas (una para pixeles y otra para audio) por un unico Youtu-Omni-Encoder inicializado desde un modelo de lenguaje de texto preentrenado, con tallos (stems) finos especificos por modalidad y un Transformer bidireccional compartido que contextualiza mezclas arbitrarias de imagenes, fragmentos de audio y videos bajo una codificacion posicional `(t, h, w)`. Segun la model card, casi todos los parametros de percepcion se comparten entre modalidades.
 
-El modelo se distribuye con pesos en safetensors, un plugin de vLLM, prompts de tarea y ejemplos de inferencia, y esta orientado a servir como motor unico de extraccion estructurada en pipelines de documentos y multimedia. La model card reporta resultados estado del arte en OmniDocBench v1.6 y el mejor modelo de pesos abiertos en OmniParsingBench.
+El modelo declara resultados de referencia en OmniDocBench v1.6 (96,96 en Overall), es el mejor modelo de pesos abiertos en OmniParsingBench (75,08 de media, solo por detras de Gemini-3-Pro) y compite con modelos especializados en reconocimiento de estructuras quimicas (ChemOCR) y partituras musicales (PDMX-Synth). Incluye un plugin para vLLM, prompts de tarea y ejemplos de inferencia. La licencia es propia (`youtu-parsing`), no Apache ni MIT, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con encoder unificado (Youtu-Omni-Encoder) y decoder de lenguaje (Youtu-LLM); codigo personalizado (`custom_code`) |
-| Parametros totales | 5.334.472.192 (aproximadamente 5,3B, dato real de safetensors) |
-| Parametros activos | No aplica (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (no se documentan cuantizaciones publicadas) |
-| Idiomas soportados | No disponible |
-| Licencia | `youtu-parsing` (licencia personalizada, `license: other`); enlace en https://huggingface.co/tencent/Youtu-Parsing-Omni/blob/main/LICENSE |
-| Formato de pesos | Safetensors |
-| Tamano del repositorio | 10,7 GB |
-| Pipeline declarado | `image-text-to-text` |
-| Libreria | transformers |
-| Fecha de creacion | 2026-10-09 |
-| Ultima actualizacion | 2026-10-09 |
+| Arquitectura | Youtu-Omni-Encoder (Transformer bidireccional compartido con stems por modalidad) + decoder Youtu-LLM |
+| Parametros totales | 5.334.472.192 |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | youtu-parsing (licencia propia, enlazada en el repositorio) |
+| Formato de pesos | safetensors (libreria transformers, custom_code) |
 
 ## Arquitectura y entrenamiento
 
-Youtu-Parsing-Omni sigue un diseno de dos etapas. Un unico Youtu-Omni-Encoder, inicializado desde un modelo de lenguaje de texto preentrenado para reforzar la lectura de texto, sustituye a las torres separadas de vision y audio de los parsers omnimodales convencionales. Stems finos especificos de modalidad proyectan los pixeles y los fotogramas log-mel a tokens; un Transformer bidireccional compartido contextualiza una mezcla empaquetada arbitraria de imagenes, fragmentos de audio y videos bajo una unica codificacion posicional `(t, h, w)`. A continuacion, mergers y projectors especificos de modalidad alimentan los tokens, junto con el prompt de texto, al decoder Youtu-LLM, que emite el JSON de OmniSchema. Solo los stems y las cabezas de merger/projector dependen de la modalidad, por lo que la practica totalidad de los parametros de percepcion son compartidos.
+La arquitectura es un parser omnicanal de dos etapas. En la etapa de percepcion, un unico Youtu-Omni-Encoder, inicializado a partir de un modelo de lenguaje de texto preentrenado para reforzar la lectura de texto, recibe tokens generados por stems finos especificos de modalidad: los pixeles y los fotogramas log-mel se proyectan a tokens, y un Transformer bidireccional compartido contextualiza una mezcla empaquetada arbitraria de imagenes, fragmentos de audio y videos bajo una unica codificacion posicional `(t, h, w)`. Despues, mergers y proyectores especificos por modalidad alimentan los tokens, junto con el prompt de texto, al decoder Youtu-LLM, que emite JSON conforme a OmniSchema. Solo los stems y las cabezas merger/proyector dependen de la modalidad, de modo que casi todos los parametros de percepcion son compartidos.
 
-Para la fusion audio-visual, los fotogramas y los fragmentos de audio de un video se empaquetan en orden temporal: las capas sin fusion otorgan a cada fotograma y a cada fragmento de audio su propia ventana de atencion, mientras que unas pocas capas de fusion inician una nueva ventana (la model card proporcionada se interrumpe en este punto, por lo que no se detalla el mecanismo completo). La seleccion de la familia de salida se controla mediante el prompt de tarea (`--task` en los ejemplos, claves de `prompts/youtu_parsing_omni.json`). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. La model card indica que el informe tecnico esta disponible y que el codigo de evaluacion se publicara, pero no detalla la receta de entrenamiento en la informacion proporcionada.
+La model card menciona ademas una fusion audio-visual dentro de la percepcion, con ventanas de fusion y codificacion posicional temporal unificada (figura `assets/mech_figure.png`), y remite al informe tecnico (arXiv:2610.39301) para los detalles. No se proporcionan en la informacion disponible datos sobre numero de tokens de entrenamiento, composicion del dataset, ni sobre si se aplicaron RLHF, DPO u otras etapas de alineacion.
 
 ## Capacidades
 
-- Parseo de documentos: extraccion de elementos de layout con bounding boxes, texto, tablas en LaTeX/OTSL, graficos en Markdown, diagramas de flujo en Mermaid y orden de lectura.
-- Imagenes naturales: deteccion de entidades y texto con bbox, etiquetas, captions y descripcion global.
-- Graficos: generacion de un elemento `chart` con tabla Markdown, notas y caption.
-- Diagramas de flujo: generacion de un elemento `flowchart` en Mermaid con caption.
-- Figuras geometricas: extraccion de puntos, lineas, arcos, formas, relaciones geometricas y medidas.
-- Audio: segmentacion en tramos vocales y no vocales con timestamps, hablantes, ASR, captions de timbre y escena, y eventos acusticos.
-- Video natural: segmentos temporales con elementos visuales, acciones, interacciones, movimiento de camara y pista de audio.
-- Video con mucho texto: segmentos con OCR y ASR, mas un `structured_report` en Markdown del video completo.
-- Salida unificada: un unico sobre JSON (OmniSchema) para las siete familias de parseo, seleccionable mediante prompt de tarea.
-- Capacidades de cognicion: captioning, narrativas e informes generados a partir de la percepcion.
-- Reconocimiento de dominios especificos: estructuras quimicas (ChemOCR) y partituras musicales (PDMX-Synth), segun los resultados reportados.
-- Soporte de tool calling, function calling y agentes: no disponible en la informacion proporcionada.
-- Modo de razonamiento explicito (thinking) y soporte de audio en tiempo real: no disponible en la informacion proporcionada.
+- Parseo de documentos: extrae elementos de layout con bounding box, texto, tablas en LaTeX/OTSL, graficos en Markdown, diagramas de flujo en Mermaid y orden de lectura.
+- Parseo de imagenes naturales: entidades y texto con bounding box, etiquetas, leyendas y descripcion global.
+- Parseo de graficos: elemento `chart` con tabla Markdown, notas y leyenda.
+- Parseo de diagramas de flujo: elemento `flowchart` en Mermaid con leyenda.
+- Parseo de figuras geometricas: puntos, lineas, arcos, formas, relaciones geometricas y medidas.
+- Procesamiento de audio: segmentos vocales y no vocales con marcas temporales, hablantes, ASR, timbre, leyendas de escena y eventos acusticos.
+- Procesamiento de video natural: segmentos temporales con elementos visuales, acciones, interacciones, movimiento de camara y pista de audio.
+- Procesamiento de video rico en texto: segmentos con OCR y ASR, mas un `structured_report` en Markdown del video completo.
+- Salida unificada en JSON (OmniSchema) seleccionable mediante prompt de tarea.
+- Reconocimiento especializado de estructuras quimicas (ChemOCR) y partituras musicales (PDMX-Synth), segun la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Digitalizacion masiva de archivos documentales: el modelo recibe la imagen de una pagina y devuelve layout, texto, tablas y formulas en un JSON unico, lo que permite indexar fondos documentales completos sin encadenar modelos de OCR, deteccion de layout y reconocimiento de tablas por separado.
-- Extraccion de datos de facturas y formularios: al devolver bbox y texto estructurado en el mismo sobre, se pueden mapear campos a un esquema de negocio y validar la geometria de cada campo antes de introducirlo en un ERP.
-- Conversion de graficos e infografias a tablas Markdown: util para equipos de analisis que necesitan reutilizar datos publicados solo como imagen en informes o presentaciones.
-- Transcripcion y analisis de reuniones grabadas en video: el modelo procesa conjuntamente fotogramas y pista de audio, produciendo segmentos temporales con ASR, hablantes, eventos acusticos y descripcion visual, lo que permite generar actas enlazadas a marcas de tiempo.
-- Generacion de informes estructurados de video con mucho texto: para contenido formativo o broadcast, el `structured_report` en Markdown sintetiza OCR y ASR de todo el video, facilitando la busqueda semantica sobre el material audiovisual.
-- Extraccion de diagramas de arquitectura y flujos: la salida Mermaid permite reconstruir diagramas de flujo como codigo versionable y editable, en lugar de tratarlos como imagenes opacas.
-- Reconocimiento de figuras cientificas: la extraccion de relaciones geometricas y medidas en figuras, junto con el reconocimiento de estructuras quimicas y partituras, habilita pipelines de documentacion cientifica y edicion musical asistida.
-- Servicio unificado de parseo en produccion: al exponerse mediante un plugin de vLLM con prompts de tarea, una sola instancia puede atender peticiones heterogeneas (documento, imagen, audio, video) enrutando por el parametro `--task`, simplificando el mantenimiento frente a un conjunto de modelos especializados.
+- Digitalizacion de archivos documentales: el modelo recibe una pagina escaneada y devuelve layout, texto, tablas y formulas en un JSON con bounding boxes y orden de lectura, lo que permite reconstruir el documento estructurado sin pipelines separados de OCR, deteccion de tablas y deteccion de layout.
+- Extraccion de datos de graficos financieros o cientificos: con la tarea `graphics_chart` convierte un grafico en una tabla Markdown con notas y leyenda, util para alimentar hojas de calculo o bases de datos a partir de informes en PDF.
+- Conversion de diagramas de flujo a codigo Mermaid: con `graphics_flowchart` genera un elemento `flowchart` en Mermaid, lo que facilita migrar diagramas de procesos a documentacion versionada en repositorios.
+- Analisis de figuras geometricas en material educativo: con `graphics_geometric` extrae puntos, lineas, arcos, formas, relaciones y medidas, permitiendo generar ejercicios o comprobaciones automaticas de problemas de geometria.
+- Transcripcion y analisis de reuniones o entrevistas: con la tarea `audio` obtiene segmentos vocales y no vocales con marcas temporales, hablantes, ASR, timbre y eventos acusticos, lo que sirve para generar actas estructuradas con atribucion de hablante.
+- Indexacion y resumen de videos corporativos: con `natural_video` segmenta temporalmente elementos visuales, acciones, interacciones, movimiento de camara y pista de audio, habilitando busqueda semantica sobre el contenido audiovisual.
+- Extraccion de contenido de videos con mucho texto (tutoriales, clases, demos de software): con `textrich_video` combina OCR y ASR por segmento y produce un informe estructurado en Markdown del video completo, adecuado para generar documentacion o apuntes.
+- Reconocimiento de estructuras quimicas y partituras: segun la model card, compite con modelos especializados en ChemOCR y PDMX-Synth, lo que lo hace util para digitalizar literatura quimica y archivos musicales.
 
 ## Benchmarks y rendimiento
 
-Datos reportados en la model card:
-
-| Benchmark | Resultado | Contexto |
+| Benchmark | Resultado | Referencia comparativa |
 |---|---|---|
-| OmniDocBench v1.6 (Overall) | 96,96 | Estado del arte segun el autor |
-| OmniParsingBench (Avg.) | 75,08 | Mejor modelo de pesos abiertos; segundo puesto global tras Gemini-3-Pro |
-| ChemOCR (estructuras quimicas) | Competitivo con modelos especializados | Sin cifra publicada en la informacion disponible |
-| PDMX-Synth (partituras musicales) | Competitivo con modelos especializados | Sin cifra publicada en la informacion disponible |
+| OmniDocBench v1.6 (Overall) | 96,96 | Estado del arte segun la model card |
+| OmniParsingBench (Avg.) | 75,08 | Mejor modelo de pesos abiertos; segundo tras Gemini-3-Pro |
+| ChemOCR | competitivo con modelos especializados | no se detallan cifras |
+| PDMX-Synth | competitivo con modelos especializados | no se detallan cifras |
 
-No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks de proposito general, ni el desglose por tarea de OmniParsingBench. La model card anuncia que el codigo de evaluacion se publicara.
+No se han publicado en la informacion disponible resultados numericos detallados por subtarea de OmniDocBench ni de OmniParsingBench, ni comparaciones cifradas con MMLU, HumanEval o GSM8K (benchmarks que no corresponden al perfil de este modelo).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: alrededor de 10,7 GB en bf16/fp16 (coincide con el tamano del repositorio de pesos), aproximadamente 5,5 GB en int8 y en torno a 3 GB en int4, asumiendo cuantizacion estandar de un modelo denso de 5,3B parametros. Estas cifras son estimaciones por tamano, no mediciones publicadas.
-- GPU profesionales: una A100 40 GB, H100 o L40S cubre con holgura la inferencia en bf16 y deja margen para lotes mayores o entradas de video con muchos fotogramas.
-- GPU de consumo: cabe en tarjetas con 12-16 GB o mas, como RTX 3060 12 GB, RTX 4070 Ti Super, RTX 4080 o RTX 4090, en bf16 ajustado o en cuantizacion de 8 bits; en 8 GB seria necesario cuantizar a 4 bits, aunque no se documentan pesos ya cuantizados.
-- Opciones de despliegue: se incluye un plugin de vLLM con ajustes de serving fijados, ademas de ejemplos de inferencia y soporte via `transformers` con `custom_code`. No se documentan pesos GGUF, por lo que llama.cpp u Ollama no estan soportados de serie en la informacion disponible; tampoco se menciona soporte explicito de TGI.
-- Latencia y throughput: no disponibles. La model card no publica mediciones de latencia ni de tokens por segundo.
+- VRAM estimada para inferencia: no disponible de forma explicita. Con 5.334 millones de parametros en safetensors, los pesos ocupan aproximadamente 10,7 GB en precision de 16 bits, por lo que la VRAM necesaria supera esa cifra al anadir cache de activaciones y buffers multimodales.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Cabe en GPU de consumo: no confirmado; por tamano de pesos en FP16 (unos 10,7 GB) encajaria teoricamente en GPU con 16 GB o mas, pero no hay confirmacion del autor ni datos de cuantizacion.
+- Opciones de despliegue: plugin de vLLM incluido por el autor, con ajustes de serving fijados, prompts de tarea y ejemplos de inferencia; libreria transformers con `custom_code`. No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento reportado |
+| Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Youtu-Parsing-Omni | 5,3B | No disponible | `youtu-parsing` (personalizada) | Pesos abiertos en Hugging Face | OmniDocBench v1.6: 96,96; OmniParsingBench: 75,08 |
-| Gemini-3-Pro | No disponible | No disponible | Propietaria | Solo API | Por delante de Youtu-Parsing-Omni en OmniParsingBench segun el autor |
-| Parsers omnimodales de doble torre (vision + audio) | No disponible | No disponible | No disponible | No disponible | Enfoque alternativo descrito en el informe tecnico; sin cifras en la informacion disponible |
-| Modelos especializados (ChemOCR, PDMX-Synth) | No disponible | No disponible | No disponible | No disponible | Youtu-Parsing-Omni se declara competitivo frente a ellos, sin cifras publicadas |
+| Youtu-Parsing-Omni | 5,33B | no disponible | OmniDocBench v1.6 96,96; OmniParsingBench 75,08 | youtu-parsing (propia) | Hugging Face, ModelScope, GitHub |
+| Gemini-3-Pro | no disponible | no disponible | Por delante en OmniParsingBench (75,08 del modelo local) | propietaria | API de Google |
+| Modelos especializados en ChemOCR | no disponible | no disponible | Competitivos con Youtu-Parsing-Omni | no disponible | no disponible |
+| Modelos especializados en PDMX-Synth | no disponible | no disponible | Competitivos con Youtu-Parsing-Omni | no disponible | no disponible |
 
-La informacion disponible no identifica por nombre alternativas open-weight concretas de tamano y tarea comparables, por lo que la comparativa cuantitativa con modelos de la misma categoria queda como no disponible.
+No se dispone en la informacion proporcionada de alternativas open-weight comparables con parametros, contexto y licencia detallados; la model card solo cita a Gemini-3-Pro como referencia superior en OmniParsingBench y a los modelos especializados de ChemOCR y PDMX-Synth como pares competitivos.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la informacion proporcionada. Al ser un modelo de parseo entrenado por un laboratorio concreto, es previsible un sesgo hacia los dominios y tipos de documento representados en su dataset de entrenamiento, pero no hay datos que lo confirmen.
-- Riesgo de alucinacion: el modelo genera JSON con campos de cognicion (captions, narrativas, informes) ademas de percepcion, por lo que existe riesgo de contenido inventado o de transcripcion incorrecta de texto y tablas. No se publican tasas de error por tarea.
-- Ausencia de desglose de benchmarks: los resultados se presentan como cifras agregadas (Overall, Avg.) sin detalle por tarea, lo que dificulta estimar el rendimiento en un caso concreto.
-- Idiomas: no se declara la lista de idiomas soportados ni su cobertura relativa, lo que impide garantizar calidad en castellano u otros idiomas distintos de los usados en el entrenamiento.
-- Longitud de contexto: no disponible, lo que impide dimensionar de antemano el procesamiento de documentos extensos o videos largos.
-- Restricciones de licencia: la licencia es personalizada (`license_name: youtu-parsing`). No se detallan en la informacion disponible los terminos de uso comercial, por lo que es imprescindible revisar el fichero LICENSE antes de cualquier despliegue en produccion.
-- Codigo personalizado: el modelo requiere `custom_code` y su uso depende de `transformers` con confianza remota habilitada, lo que anade superficie de riesgo en entornos de produccion.
-- Despliegue: no hay pesos GGUF publicados, lo que limita las opciones de inferencia en CPU o en entornos de bajos recursos.
-- Madurez: el modelo es de publicacion reciente (octubre de 2026) y con un volumen bajo de descargas (50) y likes (20), por lo que su ecosistema y validacion externa son todavia limitados.
+- Licencia propia (`youtu-parsing`): no es Apache 2.0, MIT ni una licencia de codigo abierto estandar; antes de un uso comercial hay que revisar el texto enlazado en el repositorio, que no se detalla en la informacion disponible.
+- Idiomas soportados: no declarados; no hay garantia explicita de cobertura multilingue mas alla de lo que el encoder de texto preentrenado pueda aportar.
+- Longitud de contexto: no declarada, lo que impide planificar el parseo de documentos o videos muy largos sin pruebas previas.
+- Riesgo de alucinacion: no se documentan en la informacion disponible tasas de error, modos de fallo ni salvaguardas; al generar JSON estructurado, errores de schema o valores inventados en tablas, formulas o ASR son un riesgo a validar en produccion.
+- Sesgos conocidos: no documentados.
+- Requiere `custom_code` y un plugin de vLLM especifico, lo que anade complejidad de integracion frente a modelos transformers estandar.
+- No se declaran capacidades de tool calling ni de agentes, por lo que no debe asumirse su uso en pipelines agenticos sin validacion.
+- Al ser un modelo de 5B orientado a parseo, no debe esperarse un rendimiento de razonamiento general comparable a modelos de lenguaje de mayor tamano.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tencent/Youtu-Parsing-Omni
 - Licencia: https://huggingface.co/tencent/Youtu-Parsing-Omni/blob/main/LICENSE
+- Informe tecnico: https://arxiv.org/abs/2610.39301
 - Repositorio GitHub: https://github.com/TencentCloudADP/youtu-parsing/tree/main/youtu_parsing_omni
-- Informe tecnico (PDF): https://github.com/TencentCloudADP/youtu-parsing/tree/main/youtu_parsing_omni/paper/Youtu_Parsing_Omni.pdf
 - Prompts de tarea: https://github.com/TencentCloudADP/youtu-parsing/blob/main/youtu_parsing_omni/prompts/youtu_parsing_omni.json
-- Referencias arXiv indicadas en las etiquetas del modelo: arXiv:2601.20430, arXiv:2601.19798, arXiv:2512.24618 (https://arxiv.org/abs/2601.20430, https://arxiv.org/abs/2601.19798, https://arxiv.org/abs/2512.24618)
-- Sitio corporativo de Tencent: https://www.tencent.com/
+- ModelScope: https://www.modelscope.cn/models/tencent-community/Youtu-Parsing-Omni
+- Referencias adicionales citadas en los tags: arXiv:2601.20430, arXiv:2601.19798, arXiv:2512.24618 (contenido no disponible en la informacion proporcionada)

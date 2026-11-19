@@ -2,91 +2,87 @@
 
 ## Resumen
 
-`huggingface-mic/nllb-200-distilled-600M-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, no un modelo entrenado utilizable. Se construye a partir de la arquitectura de `facebook/nllb-200-distilled-600M` (familia NLLB-200 de traducción automática multilingüe) pero con una configuración reducida y pesos aleatorios. Su propósito es servir como banco de pruebas para el proyecto `transformers-mic`, que valida expectativas de integración de frameworks (carga, tokenización, forward, backward) sin necesidad de descargar el checkpoint real de 600M de parámetros.
+`huggingface-mic/nllb-200-distilled-600M-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, no un modelo entrenado utilizable. Se construye a partir de `facebook/nllb-200-distilled-600M` conservando la misma arquitectura (`M2M100ForConditionalGeneration`) pero con una configuracion reducida (2 capas en encoder y 2 en decoder) y pesos aleatorios con semilla 17. El resultado son 16.564.864 parametros, frente a los aproximadamente 615 millones del modelo original.
 
-El repositorio contiene 16.564.864 parámetros reales según el fichero safetensors, frente a los aproximadamente 600 millones del modelo base. La reducción se logra rebajando el número de capas del encoder y del decoder a 2 cada uno, manteniendo la clase `M2M100ForConditionalGeneration` y los nombres de tensor exactos del checkpoint original. Los ficheros de procesador (tokenizer SentencePiece, `generation_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`) se copian byte a byte del modelo base.
+El repositorio existe para validar contratos de integracion: incluye pesos "slim", ejemplos de uso con Transformers y un directorio de expectativas de framework. Los ficheros del procesador (`tokenizer.json`, `sentencepiece.bpe.model`, `generation_config.json`, etc.) se copian byte a byte del checkpoint original, de modo que las pruebas de tokenizacion y generacion se ejecutan con el mismo pipeline que el modelo real.
 
-La relevancia de este artefacto es exclusivamente de ingeniería: permite a desarrolladores del ecosistema Transformers verificar contratos de integración, comportamiento de carga en distintas precisiones (float32, bfloat16, float16) y estabilidad numérica de gradientes con un repositorio de 0,2 GB en lugar de varios gigabytes. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. No debe emplearse para traducción, generación de texto ni ninguna tarea productiva.
+La relevancia es exclusivamente de ingenieria: sirve para probar tooling, no para traducir. El propio autor lo etiqueta como `test-artifact` para excluirlo de busquedas de modelos candidatos. No debe desplegarse en produccion ni emplearse para evaluar calidad de traduccion, porque sus pesos son aleatorios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | M2M100ForConditionalGeneration (transformer encoder-decoder), config reducida a 2 capas de encoder y 2 de decoder |
+| Arquitectura | M2M100ForConditionalGeneration (transformer encoder-decoder) |
 | Parametros totales | 16.564.864 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de la config del modelo base, no documentada en el fixture) |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; el modelo es finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (el tokenizer NLLB-200 cubre 200 idiomas, pero el fixture no traduce) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible; pesos guardados en float32 |
+| Idiomas soportados | no disponible (procesador copiado del NLLB-200 original) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (float32) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una instancia de `M2M100ForConditionalGeneration`, la arquitectura encoder-decoder de traducción multilingüe empleada por la familia NLLB-200 de Meta. La configuración del fixture reduce `encoder_layers` y `decoder_layers` a 2 cada uno mediante la regla genérica implementada en `sweep.py` del repositorio `transformers-mic`. Los nombres de tensor coinciden exactamente con los del checkpoint real `facebook/nllb-200-distilled-600M`, de modo que las herramientas que esperan esa estructura pueden operar sin adaptaciones.
+El modelo sigue la arquitectura M2M100, un transformer encoder-decoder disenado originalmente para traduccion multilingue. En este fixture se ha reducido la profundidad a 2 capas de encoder y 2 de decoder mediante la regla generica de `sweep.py` del proyecto `transformers-mic`. Los nombres de tensores coinciden con los del checkpoint real, lo que permite validar la carga de pesos y la compatibilidad de interfaces.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se generaron con `build_fixtures.py`. El autor documenta un "input-sensitivity gate": cada perturbación de las entradas del contrato mueve los logits al menos 0,001 (la más débil, `input_ids:roll_batch`, produce 0,0799), lo que justifica no entrenar. El fixture se valida como finito en forward, loss y gradientes en float32, bfloat16 y float16. Los ficheros de procesador se copian byte a byte del modelo base, garantizando que la tokenización y la generación se comporten igual que con el checkpoint real.
+No ha habido entrenamiento. Los pesos son aleatorios con semilla 17 y se aceptaron porque superaron la puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (el caso mas debil, `input_ids:roll_batch`, dio 0,0799). El modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los ficheros del procesador se copiaron sin modificacion desde `facebook/nllb-200-distilled-600M`.
 
 ## Capacidades
 
-- No traduce ni genera texto coherente: los pesos son aleatorios y el modelo no ha sido entrenado.
-- Sirve como fixture de integración para validar la carga de `M2M100ForConditionalGeneration` en Transformers.
-- Permite comprobar la estabilidad numérica (finitud de logits, loss y gradientes) en float32, bfloat16 y float16.
-- Verifica que los ficheros de procesador (SentencePiece, tokenizer, generation config) se cargan correctamente.
-- Comprueba la compatibilidad de nombres de tensor con el checkpoint real de NLLB-200 distilled 600M.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
-- No ofrece capacidades multilingües efectivas pese a heredar el tokenizer de 200 idiomas.
+- Carga y ejecucion con Transformers mediante `M2M100ForConditionalGeneration`.
+- Tokenizacion multilingue heredada del procesador original (SentencePiece BPE).
+- Generacion condicional con `generation_config.json` del modelo base.
+- Verificacion de contratos de integracion y expectativas de framework.
+- Pruebas de sensibilidad a entradas y de estabilidad numerica en varias precisiones.
+- No soporta traduccion de calidad: los pesos son aleatorios.
+- No dispone de tool calling, agentes ni capacidades multimodales.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: cargar el modelo con `AutoModelForSeq2SeqLM` y verificar que la clase `M2M100ForConditionalGeneration` se instancia con los tensores esperados, sin descargar el checkpoint de 600M.
-- Validación de pipelines de CI: ejecutar tests de forward y backward en float32, bfloat16 y float16 sobre un repositorio de 0,2 GB, reduciendo tiempos y ancho de banda en runners.
-- Verificación de contratos de tokenizer: comprobar que los ficheros copiados (`sentencepiece.bpe.model`, `tokenizer.json`) producen los mismos `input_ids` que el modelo base para un conjunto de frases de prueba.
-- Desarrollo de herramientas de inspección de modelos: usar los nombres de tensor idénticos al checkpoint real para probar utilidades de análisis de pesos, mapas de capas o scripts de conversión.
-- Test de compatibilidad de frameworks alternativos: validar que una implementación propia (por ejemplo, en JAX o PyTorch nativo) reproduce la estructura de `M2M100ForConditionalGeneration` con un modelo pequeño.
-- Benchmarking de infraestructura de carga: medir tiempos de descarga, carga y primera inferencia en distintos entornos (CPU, GPU consumer, contenedores) sin el coste del modelo completo.
-- Reproducción de fallos: aislar bugs de integración con un fixture determinista (semilla 17) y pesos fijos, facilitando la depuración.
+- Pruebas de integracion continua: validar que una version de Transformers carga correctamente un checkpoint M2M100 sin descargar los 2,4 GB del modelo real, gracias a los 0,2 GB del repositorio.
+- Desarrollo de pipelines de tokenizacion: comprobar que los ficheros del procesador (SentencePiece, special tokens) se comportan igual que en `facebook/nllb-200-distilled-600M`.
+- Verificacion de contratos de framework: ejecutar el directorio `integrations/transformers/expectations` para asegurar que los cambios en la libreria no rompen la interfaz del modelo.
+- Pruebas de estabilidad numerica: comprobar que forward, loss y gradientes son finitos en float32, bfloat16 y float16 antes de portar codigo al modelo completo.
+- Validacion de serializacion safetensors: verificar nombres y formas de tensores contra el checkpoint real sin necesidad de GPU de gran memoria.
+- Tests de regresion en CI con recursos limitados: el fixture cabe en cualquier entorno y permite ejecutar pruebas de humo de extremo a extremo en minutos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (BLEU, MMLU, etc.) carecería de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (BLEU, chrF, MMLU) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (16,6M parámetros × 4 bytes ≈ 66 MB de pesos, más activaciones y overhead del runtime); en float16 o bfloat16, aproximadamente la mitad.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; también funciona en CPU sin problemas.
-- Cabe en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers con PyTorch (principal caso de uso), potencialmente llama.cpp u Ollama si se convierte a GGUF, aunque no es el propósito del fixture. vLLM y TGI no están documentados para este artefacto.
-- Latencia y throughput: no disponibles de forma oficial; por el tamaño, la inferencia en CPU debería completarse en milisegundos, pero al ser pesos aleatorios la salida no es significativa.
+- VRAM estimada: inferior a 1 GB en float32 para los 16,6 M de parametros; cabe en CPU.
+- GPU recomendadas: cualquiera; no requiere A100, H100 ni RTX 4090.
+- Cabe en cualquier GPU consumer e incluso en entornos sin GPU.
+- Despliegue: Transformers con `M2M100ForConditionalGeneration`; no se ha validado con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un artefacto de prueba no se han medido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| huggingface-mic/nllb-200-distilled-600M-mic | 16,6M | no disponible | Fixture de integración (pesos aleatorios) | no disponible | Hugging Face |
-| facebook/nllb-200-distilled-600M | ~600M | 1024 tokens (documentado en el modelo base) | Traducción multilingüe (200 idiomas) | CC-BY-NC 4.0 (modelo base) | Hugging Face |
-| facebook/m2m100_418M | ~418M | 1024 tokens | Traducción multilingüe (100 idiomas) | MIT (modelo base) | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Proposito |
+|---|---|---|---|---|
+| `huggingface-mic/nllb-200-distilled-600M-mic` | 16,6 M | no disponible | no disponible | Fixture de pruebas |
+| `facebook/nllb-200-distilled-600M` | ~615 M | no disponible | CC-BY-NC 4.0 (segun el modelo original) | Traduccion multilingue |
+| `facebook/m2m100_418M` | ~418 M | no disponible | MIT (segun el modelo original) | Traduccion multilingue |
 
-La comparación con `facebook/nllb-200-distilled-600M` es directa en arquitectura y tokenizer, pero no en función: el fixture no traduce. Frente a `m2m100_418M`, comparte la familia M2M100 pero con un propósito completamente distinto.
+La comparativa es orientativa: el fixture no es funcionalmente equivalente a los otros dos y solo comparte arquitectura y procesador.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: el modelo no produce traducciones ni texto coherente; cualquier uso generativo es inválido.
-- Etiquetado explícitamente como `test-artifact`: no debe incluirse en catálogos de modelos candidatos ni en evaluaciones de calidad.
-- Licencia no disponible: no se puede asumir uso comercial; además, el modelo base `facebook/nllb-200-distilled-600M` tiene licencia CC-BY-NC 4.0, lo que restringe el uso comercial de derivados.
-- Idiomas no documentados en el fixture: aunque el tokenizer cubre 200 idiomas, el modelo no tiene capacidad de traducción real.
-- Longitud de contexto no documentada en la ficha del fixture; depende de la configuración heredada del modelo base.
-- Riesgo de confusión: el nombre puede llevar a pensar que es un modelo funcional; el autor lo mitiga con la etiqueta `test-artifact` y el aviso en la model card.
-- No apto para producción: no debe desplegarse en sistemas de atención al cliente, pipelines de traducción ni agentes.
+- Pesos aleatorios: las salidas no tienen significado linguistico.
+- Etiquetado explicitamente como `test-artifact`; no debe usarse en produccion.
+- No apto para evaluar calidad de traduccion ni para benchmarks.
+- Licencia no declarada en el repositorio; conviene revisar la del modelo base antes de cualquier redistribucion.
+- Solo cubre checkpoints con ficheros de procesador identicos y config compatible tras el shrink.
+- No se han validado frameworks distintos de Transformers.
+- El repositorio incluye solo pesos, uso y expectativas; otros ficheros deben regenerarse con `example/build_fixtures.py`.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/nllb-200-distilled-600M-mic
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
-- Documentación de uso en Transformers: https://huggingface.co/huggingface-mic/nllb-200-distilled-600M-mic/blob/main/integrations/transformers/usage.md
-- Expectativas del framework: https://huggingface.co/huggingface-mic/nllb-200-distilled-600M-mic/tree/main/integrations/transformers/expectations
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/nllb-200-distilled-600M-mic/blob/main/integration.json
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/nllb-200-distilled-600M-mic/blob/main/build.json
-- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/nllb-200-distilled-600M-mic.html
-- Repositorio transformers-mic (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Repositorio transformers-mic (script `build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Como se genero el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/nllb-200-distilled-600M-mic.html
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

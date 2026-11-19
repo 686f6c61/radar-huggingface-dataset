@@ -2,113 +2,107 @@
 
 ## Resumen
 
-Qwen3.5-4B-Artemis-GGUF es una cuantización en formato GGUF del modelo Qwen/Qwen3.5-4B publicada por TurinTech (turintech.ai) bajo el nombre interno «Artemis». No se trata de un modelo entrenado desde cero: es un proceso de cuantización con calibración mediante imatrix sobre los pesos originales de Qwen3.5-4B (4.205.751.296 parámetros), orientado a ejecución local en llama.cpp y Ollama con soporte de function calling y de entrada imagen-texto.
+Qwen3.5-4B-Artemis-GGUF es una cuantización en formato GGUF del modelo Qwen3.5-4B de Alibaba Qwen, publicada por TurinTech bajo el nombre "Artemis". El modelo base es un transformer denso de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) con capacidades multimodales de imagen-texto, orientado a generación de texto, razonamiento, matemáticas y function calling en entornos locales.
 
-El objetivo declarado por el autor es doble: reducir el peso de descarga (2,714 GB para el fichero por defecto Q4_K_M) y rebajar el pico de memoria en GPU (3,5 GiB en una RTX 5090 con contexto de 8.192 tokens, frente a 8,9 GiB del original en BF16), manteniendo la mayor fidelidad posible respecto al modelo sin cuantizar. El autor reporta que el siguiente token coincide con el original en el 93,5% de los tokens de WikiText-2, frente al 92,7% de la cuantización Q4_K_M de Unsloth.
+La relevancia de esta publicación radica en su optimización para despliegue en hardware de consumo: según la model card, la cuantización Q4_K_M ocupa 2,714 GB de descarga y requiere unos 3,5 GiB de VRAM en inferencia solo texto, frente a los 8,9 GiB del modelo original. TurinTech reporta que la cuantización preserva el rendimiento de tool calling del modelo original (204 de 258 llamadas correctas en BFCL live), lo que la convierte en una opción práctica para asistentes locales con function calling en GPUs modestas.
 
-Su relevancia práctica está en el nicho de modelos de 4B con visión y tool calling ejecutables en hardware de consumo: el repositorio incluye proyectores multimodales separados (mmproj-BF16 y mmproj-F16) y publica resultados propios en BFCL live e IFEval, además de paquetes equivalentes en el registro de Ollama. La ficha del modelo está fechada en octubre de 2026 y acumula 1.054 descargas y 2 likes en Hugging Face en el momento de la consulta.
+El modelo se distribuye bajo licencia Apache 2.0, con soporte para llama.cpp, Ollama y LM Studio, e incluye un proyector de visión separado de 672 MB para tareas de imagen-texto. La versión de llama.cpp debe incluir soporte para Qwen3.5 (probado con b11617 y b11889 para el proyector).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de Qwen3.5 (modelo base Qwen/Qwen3.5-4B); no disponible el detalle de capas y atención en la informacion proporcionada |
-| Parametros totales | 4.205.751.296 (4,2B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible el maximo declarado; los ejemplos de despliegue de la model card usan `-c 8192` |
-| Tipos de cuantizacion | Q4_K_M (2,714 GB), Q5_K_S (2,903 GB), Q5_K_M (3,011 GB); calibradas con imatrix |
-| Idiomas soportados | No disponible en la informacion proporcionada |
-| Licencia | Apache-2.0 (heredada de Qwen/Qwen3.5-4B) |
-| Formato de pesos | GGUF (llama.cpp) y paquetes Ollama; proyectores multimodales en mmproj-BF16.gguf y mmproj-F16.gguf (676 MB) |
+| Arquitectura | Transformer denso (modelo base Qwen3.5-4B); cuantización GGUF para llama.cpp |
+| Parametros totales | 4.205.751.296 (aprox. 4,2 B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el ejemplo de despliegue usa `-c 8192`) |
+| Tipos de cuantizacion | GGUF; se distribuye al menos Q4_K_M (2,714 GB); calibrado con imatrix |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF; proyector de visión separado (672 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversión a GGUF del transformer Qwen3.5-4B, sin reentrenamiento ni fine-tuning posteriores según la información disponible. TurinTech describe el proceso como una cuantización asistida por Artemis (su herramienta interna) con matriz de importancia (imatrix), y señala que el fichero por defecto Q4_K_M fue seleccionado comparando la fidelidad de generación sobre WikiText-2. El pipeline declarado en Hugging Face es image-text-to-text: la capacidad de visión se aporta mediante un proyector multimodal separado, convertido de los pesos originales, que llama.cpp carga con `--mmproj` (o descarga automáticamente con `-hf`).
+El modelo es una cuantización del Qwen3.5-4B original de Qwen, un transformer denso de aproximadamente 4,2 mil millones de parámetros con pipeline image-text-to-text, lo que indica soporte multimodal de visión además de generación de texto. TurinTech no documenta en la información disponible detalles sobre la composición del dataset de entrenamiento del modelo base, el número de tokens utilizados ni si hubo fases de RLHF o DPO.
 
-No se detallan en la información proporcionada los datos de preentrenamiento del modelo base (número de tokens, composición del corpus, si hubo RLHF/DPO), ni innovaciones de arquitectura más allá de lo heredado de Qwen3.5. Sí hay un dato operativo relevante: la variante publicada en el registro de Ollama es solo texto, ya que el codificador de visión y la capa de predicción multi-token (MTP) no están incluidas en esos paquetes. La model card también fija los ajustes de muestreo de los paquetes Ollama en temperature 1, top_k 20, top_p 0,95 y presence_penalty 1,5, mientras que los benchmarks de tool calling se midieron con decodificación greedy y el modo de razonamiento desactivado.
+La innovación técnica de esta publicación es el proceso de cuantización: los pesos se convierten a GGUF con calibración imatrix, y el proyector de visión se convierte como archivo separado (672 MB), verificado con la build b11889 de llama.cpp. La model card indica que los resultados se midieron con decodificación greedy y el modo de razonamiento (thinking) desactivado, mediante `chat_template_kwargs.enable_thinking: false` o `think: false` en Ollama. El despliegue recomendado usa `llama-server` con `--jinja` para aplicar la plantilla de chat embebida y `-np 1` para mantener una sola ranura.
 
 ## Capacidades
 
-- Generación de texto conversacional multirrespuesta, con plantilla de chat de Qwen3.5 activada mediante `--jinja` en llama.cpp.
-- Tool calling / function calling: el autor reporta 204 llamadas correctas de 258 en BFCL live, con decodificación greedy y thinking desactivado.
-- Seguimiento de instrucciones verificables: 431 de 541 instrucciones cumplidas en IFEval según el autor.
-- Modo de razonamiento (thinking) conmutable mediante `chat_template_kwargs.enable_thinking`; en Ollama, `think:false` lo desactiva y omitir el parámetro lo activa según la prueba de humo del autor.
-- Visión imagen-texto: preguntas sobre gráficos y descripción de imágenes usando el proyector mmproj; el autor reporta 14 de 20 preguntas de gráficos correctas con el proyector BF16 y 15 con el F16.
-- Compatible con endpoints (`endpoints_compatible`) y con el servidor OpenAI-like de llama.cpp (`/v1/chat/completions`).
-- Capacidades multilingües: no documentadas en la información disponible.
+- Generación de texto conversacional multi-turno en local.
+- Razonamiento y resolución de problemas matemáticos (evaluado en GSM8K).
+- Conocimiento general y respuesta a preguntas de nivel avanzado (evaluado en MMLU-Pro).
+- Seguimiento de instrucciones con restricciones de formato (evaluado en IFEval).
+- Function calling y tool calling con esquemas JSON, con salida en `choices[0].message.tool_calls` vía API compatible con OpenAI de llama-server.
+- Capacidades de visión imagen-texto mediante el proyector multimodal separado (pipeline image-text-to-text).
+- Modo de razonamiento (thinking) activable o desactivable mediante la plantilla de chat.
+- Integración con Ollama (`turintech/qwen3.5-4b-artemis`) y LM Studio.
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio).
 
 ## Casos de uso
 
-- Asistente de chat local en estación de trabajo: con 2,714 GB de descarga y un pico de 3,5 GiB de VRAM a 8.192 tokens, se puede servir de forma continua en una GPU de consumo mientras se trabaja, sin depender de API externa.
-- Automatización de tool calling en agentes ligeros: el modelo devuelve `tool_calls` estructurados vía plantilla Jinja, lo que permite conectarlo a funciones de negocio (meteorología, consultas a bases de datos, ticketing) con el parser de herramientas de Ollama o de llama.cpp.
-- Extracción de datos de imágenes: con el proyector multimodal se pueden enviar capturas de gráficos o tablas como data URL y obtener respuestas en texto, adecuado para tareas de lectura de paneles y reportes visuales.
-- Enrutamiento y clasificación de instrucciones en pipelines: el rendimiento en IFEval (431/541) sugiere uso como preprocesador que reformatea o valida peticiones antes de pasarlas a un modelo mayor.
-- Prototipado y evaluación de cuantizaciones: al publicar el作者... el autor publica comparativas de fidelidad frente a otras cuantizaciones (93,5% vs 92,7% en same top-p), sirve como referencia para decidir qué GGUF desplegar en producción.
-- Entornos con GPU limitada o sin GPU: los paquetes Ollama y los GGUF de 2,7-3,0 GB permiten ejecución en portátiles con GPU integrada o incluso CPU, a costa de latencia.
-- Base para fine-tuning ligero o destilación: al ser Apache-2.0 y estar disponible también en tamaños 2B y 9B de la misma familia, facilita experimentos comparativos de escalado.
+- Asistente de chat local en GPU de consumo: con Q4_K_M y unos 3,5 GiB de VRAM en modo texto, el modelo cabe en tarjetas de gama media y permite conversaciones multi-turno sin conexión a servicios externos, usando `llama-server` con `--jinja` y contexto de 8.192 tokens.
+- Agentes con function calling en el borde: el rendimiento reportado de 204/258 en BFCL live permite construir agentes que invocan APIs (clima, calendario, bases de datos) desde una máquina local, con las llamadas estructuradas devueltas en el campo `tool_calls` de la respuesta compatible con OpenAI.
+- Procesamiento de documentos con imágenes: gracias al proyector de visión de 672 MB, el modelo puede recibir capturas, formularios escaneados o diagramas junto a texto, lo que sirve para extracción de datos o respuesta a preguntas sobre documentos en flujos de trabajo locales.
+- Automatización de soporte técnico de primer nivel: el modelo puede clasificar y responder consultas con instrucciones de formato estrictas (IFEval 430/539), útil para generar respuestas estructuradas o tickets normalizados en sistemas internos.
+- Tutoría y resolución de problemas matemáticos: con 231/250 en GSM8K, es adecuado para asistentes educativos que resuelven problemas aritméticos paso a paso en entornos sin conectividad.
+- Prototipado rápido de aplicaciones LLM: la disponibilidad en Ollama y LM Studio permite a desarrolladores iterar sobre prompts, plantillas de herramientas y flujos agénticos en un portátil antes de migrar a modelos mayores, manteniendo la misma interfaz de API.
+- Evaluación de pipelines de CI/CD para agentes: al ser determinista con decodificación greedy y tener un tamaño reducido, puede usarse como modelo de referencia en pruebas automatizadas de integración de herramientas y plantillas de chat.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (métricas no verificadas de forma independiente, `verified: false`):
+Resultados declarados por TurinTech en la model card (no verificados de forma independiente; medidos con thinking desactivado y decodificación greedy):
 
-| Evaluación | Conjunto de datos | Métrica | Resultado |
+| Benchmark | Metrica | Resultado | Porcentaje |
 |---|---|---|---|
-| Cercanía al original BF16 | WikiText-2 test | Same top-p (%) | 93,5 |
-| Tool calling | BFCL live | Llamadas correctas | 204 de 258 (79,1%) |
-| Seguimiento de instrucciones | IFEval | Instrucciones cumplidas | 431 de 541 (79,7%) |
+| BFCL live | Tool calls correctas | 204 de 258 | 79,1 % |
+| GSM8K (últimas 250) | Respuestas correctas | 231 de 250 | 92,4 % |
+| MMLU-Pro (muestra) | Respuestas correctas | 125 de 280 | 44,6 % |
+| IFEval | Instrucciones seguidas | 430 de 539 | 79,8 % |
 
-Comparativas internas citadas en la model card (mismo modelo base, cuantización de Unsloth):
-
-| Medición | Artemis Q4_K_M (2,714 GB) | Unsloth Q4_K_M (2,741 GB) | Original BF16 |
-|---|---|---|---|
-| Same top-p en WikiText-2 | 93,5% | 92,7% | referencia |
-| Pico de VRAM (RTX 5090, 8.192 tokens) | 3,5 GiB | no disponible | 8,9 GiB |
-| Preguntas de gráficos (20) con proyector BF16 / F16 | 14 / 15 aciertos | 15 aciertos | no disponible |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras evaluaciones académicas en la información disponible.
+La model card indica que el resultado de BFCL live de la cuantización (204/258) coincide con el del modelo original (204), lo que sugiere que la cuantización Q4_K_M no degradó el rendimiento de tool calling en esa evaluación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 3,5 GiB de pico con Q4_K_M y contexto de 8.192 tokens (medición del autor en RTX 5090); el modelo original en BF16 alcanza 8,9 GiB en la misma configuración.
-- Tamaño de descarga: 2,714 GB (Q4_K_M), 2,903 GB (Q5_K_S), 3,011 GB (Q5_K_M); el proyector de visión añade 676 MB si se usa la ruta `-hf`, evitable con `--no-mmproj`.
-- GPU recomendadas: cualquier GPU con 4-6 GB de VRAM libre funciona para Q4_K_M con contexto moderado; el autor valida en RTX 5090, y por rango de memoria es razonable esperar buen comportamiento en RTX 3060 12 GB, RTX 4060 Ti, RTX 4070/4080/4090 y equivalentes. Para Q5_K_M conviene reservar 1 GB adicional.
-- Cabe en GPU de consumo: sí, en toda la gama media y alta con al menos 4 GB de VRAM; también es viable en CPU con llama.cpp, a mayor latencia.
-- Opciones de despliegue: `llama-server` de llama.cpp (con `--jinja` obligatorio para tool calling), Ollama (`ollama run turintech/qwen3.5-4b-artemis:q4_k_m` o `ollama run hf.co/turintech/Qwen3.5-4B-Artemis-GGUF:Q4_K_M` para visión), e importación local mediante Modelfile para combinar el GGUF con `mmproj-F16.gguf`.
-- Latencia y throughput: no disponibles de forma numérica; el autor solo documenta el pico de memoria y una prueba de humo con semilla 20261015 y límite de 256 tokens de salida.
+- VRAM estimada: aproximadamente 3,5 GiB para inferencia solo texto con Q4_K_M y una sola ranura (`-np 1`), medido por el autor; el modelo original requiere unos 8,9 GiB.
+- Descarga: 2,714 GB para el archivo Q4_K_M; el proyector de visión añade 672 MB si se usa multimodalidad.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible; por el perfil de VRAM (3,5 GiB) cabe en GPUs de consumo de gama media con al menos 4-6 GB de VRAM.
+- Cabe en GPU de consumo: sí, según las cifras del autor, en tarjetas con holgura sobre 3,5 GiB de VRAM para texto; con visión hay que sumar la memoria del proyector.
+- Opciones de despliegue: llama.cpp (`llama-server`, builds con soporte Qwen3.5, probado con b11617 y b11889), Ollama (`ollama run turintech/qwen3.5-4b-artemis`), LM Studio (`turintech/qwen3.5-4b-artemis`). No se mencionan vLLM ni TGI en la información disponible.
+- Contexto de despliegue recomendado: `-c 8192` en los ejemplos de la model card.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización por defecto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|---|
-| turintech/Qwen3.5-4B-Artemis-GGUF | 4,2B | no disponible (ejemplos a 8.192) | Q4_K_M 2,714 GB | Apache-2.0 | HF + Ollama | Visión vía mmproj; 93,5% same top-p |
-| Unsloth Qwen3.5-4B Q4_K_M | 4,2B | no disponible | Q4_K_M 2,741 GB | Apache-2.0 | HF | 92,7% same top-p; 15/20 en preguntas de gráficos |
-| Qwen/Qwen3.5-4B (BF16) | 4,2B | no disponible | BF16 | Apache-2.0 | HF | Referencia de calidad; 8,9 GiB de pico en RTX 5090 |
-| turintech/Qwen3.5-2B-Artemis-GGUF | ~2B | no disponible | GGUF | Apache-2.0 | HF | Misma familia, menor huella |
-| turintech/Qwen3.5-9B-Artemis-GGUF | ~9B | no disponible | GGUF | Apache-2.0 | HF | Misma familia, mayor calidad a costa de VRAM |
+No se han publicado en la información disponible comparativas directas con otros modelos de la misma categoría. La model card únicamente compara la cuantización con su modelo base original en tool calling (BFCL live: 204/258 en ambos) y en requisitos de memoria (3,5 GiB frente a 8,9 GiB). Para el resto de alternativas de 4B con capacidades multimodales y function calling, los datos no están disponibles.
+
+| Modelo | Parametros | Contexto | BFCL live | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwen3.5-4B-Artemis (Q4_K_M) | 4,2 B | no disponible | 204/258 | Apache 2.0 | GGUF |
+| Qwen3.5-4B (original) | 4,2 B | no disponible | 204/258 | Apache 2.0 | safetensors |
+| Alternativas de 4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La cuantización introduce desviación respecto al original: el propio autor reconoce que el siguiente token no coincide en aproximadamente el 6,5% de los tokens de WikiText-2, lo que puede acumularse en generaciones largas o tareas de razonamiento profundo.
-- Los tres benchmarks publicados están marcados como no verificados (`verified: false`) y proceden del autor del modelo; no hay replicación independiente en la información disponible.
-- Los paquetes de Ollama no incluyen el codificador de visión ni la capa MTP: son estrictamente texto. Para imagen hay que usar la ruta desde Hugging Face o construir un Modelfile con el proyector.
-- El modo de razonamiento está activado por defecto al omitir `think`; si se busca el comportamiento medido en tool calling hay que desactivarlo explícitamente, algo que ni el quickstart ni los paquetes Ollama hacen por defecto.
-- Los benchmarks se midieron con decodificación greedy y ajustes de muestreo distintos a los de los paquetes Ollama (temperature 1, top_p 0,95, presence_penalty 1,5), por lo que los resultados no son directamente trasladables a ese entorno.
-- No hay información sobre sesgos, composición del corpus de entrenamiento ni evaluaciones de seguridad; el riesgo de alucinación es el esperado en un modelo de 4B sin datos específicos de mitigación publicados.
-- La longitud máxima de contexto no está documentada en la ficha; usar ventanas superiores a 8.192 tokens requiere verificar el límite real del modelo base.
-- La licencia Apache-2.0 permite uso comercial, pero las obligaciones de atribución y las condiciones del modelo base deben verificarse en el enlace de licencia de Qwen antes de desplegar en producción.
-- El registro de Ollama se validó con comprobaciones de solo lectura (hashes SHA-256 y alias de etiquetas) el 16 de octubre de 2026, no con una descarga e inferencia completas.
+- Los benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false` en el model-index); deben tomarse como orientativos.
+- El rendimiento en MMLU-Pro es moderado (44,6 % en la muestra evaluada), lo que limita su uso en tareas de conocimiento avanzado o razonamiento experto.
+- La cuantización Q4_K_M introduce pérdida de precisión respecto a los pesos originales; aunque el tool calling se mantiene en la evaluación reportada, otras capacidades pueden degradarse.
+- Los resultados se midieron con thinking desactivado; activar el modo de razonamiento puede cambiar tanto la calidad como los requisitos de memoria y latencia, y no hay cifras publicadas para ese modo.
+- No se documentan los idiomas soportados; aunque el modelo base Qwen suele ser multilingüe, no hay confirmación en la información disponible, por lo que no debe asumirse cobertura multilingüe en producción.
+- No se detalla la longitud de contexto nativa del modelo base; el ejemplo de despliegue usa 8.192 tokens, pero el máximo real no está confirmado.
+- Riesgo de alucinación inherente a modelos de 4B, especialmente en MMLU-Pro y en consultas factuales abiertas.
+- Sesgos conocidos: no documentados en la información disponible.
+- Requiere una build de llama.cpp con soporte para Qwen3.5; versiones anteriores no cargarán el modelo correctamente.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base Qwen3.5-4B enlazada en la model card para confirmar condiciones adicionales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/turintech/Qwen3.5-4B-Artemis-GGUF
+- Hugging Face: https://huggingface.co/turintech/Qwen3.5-4B-Artemis-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
-- Paquete en Ollama: https://ollama.com/turintech/qwen3.5-4b-artemis
-- Variante de 9B de la misma familia: https://huggingface.co/turintech/Qwen3.5-9B-Artemis-GGUF
-- Variante de 2B de la misma familia: https://huggingface.co/turintech/Qwen3.5-2B-Artemis-GGUF
-- Ficha de TurinTech en Hugging Face: https://huggingface.co/turintech
-- Sitio del autor: https://turintech.ai
-- Berkeley Function Calling Leaderboard (BFCL): https://gorilla.cs.berkeley.edu/leaderboard.html
-- IFEval: https://huggingface.co/datasets/google/IFEval
-- WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
-- Registro de terceros con metadatos del modelo: https://free2aitools.com/model/turintech/qwen3.5-4b-artemis-gguf
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Ollama: https://ollama.com/turintech/qwen3.5-4b-artemis
+- LM Studio: https://lmstudio.ai/turintech/qwen3.5-4b-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai

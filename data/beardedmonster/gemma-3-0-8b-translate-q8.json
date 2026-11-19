@@ -5,7 +5,7 @@
   "author": "BeardedMonster",
   "url": "https://huggingface.co/BeardedMonster/gemma-3-0.8b-translate-Q8",
   "created_at": "2026-11-14T09:11:42.000Z",
-  "updated_at": "2026-11-16T03:31:47.000Z",
+  "updated_at": "2026-11-18T05:29:01.000Z",
   "license": "sabiyarn-commercial-use-with-attribution",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -283,7 +283,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 59,
+  "downloads_30d": 63,
   "trending_score": 0,
   "parameters": 826880896,
   "parameters_human": "826.9M",

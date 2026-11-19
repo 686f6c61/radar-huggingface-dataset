@@ -2,49 +2,49 @@
 
 ## Resumen
 
-`gemma-3n-E2B-it-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo usable: se trata de una version "slim" del checkpoint `google/gemma-3n-E2B-it` de Google, reducida mediante una regla generica de encogimiento de configuracion (4 capas ocultas de texto) y con pesos aleatorios (semilla 17). Su proposito es servir como fixture reproducible para validar integraciones de frameworks (en concreto, Transformers) contra la arquitectura `Gemma3nForConditionalGeneration` sin necesidad de descargar ni ejecutar el modelo real completo.
+`gemma-3n-E2B-it-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` en Hugging Face. No es un modelo usable: se trata de una versión reducida artificialmente del modelo `google/gemma-3n-E2B-it` de Google, pensada para validar contratos de integración entre frameworks (en concreto, Transformers) y arquitecturas reales. La model card lo etiqueta explícitamente como `test-artifact` para excluirlo de las búsquedas de modelos candidatos.
 
-El repositorio contiene los pesos encogidos, ejemplos de uso ejecutables y un directorio de "expectativas" del framework, todo empaquetado bajo un manifiesto de contrato (`integration.json`). Los ficheros de procesador (tokenizer, chat template, generation config, preprocessor config) se copian byte a byte del checkpoint original, de modo que el fixture reproduce fielmente la interfaz de entrada/salida del modelo de referencia.
+El fixture conserva la arquitectura `Gemma3nForConditionalGeneration` pero con una configuración drásticamente reducida: 4 capas ocultas de texto y un total de 51.492.816 parámetros, frente a los miles de millones del modelo base. Los pesos son aleatorios (semilla 17) y no han sido entrenados; su validez se limita a comprobar que las entradas del contrato mueven los logits de forma medible.
 
-Es relevante en el contexto de testing de infraestructura de IA: permite a desarrolladores de frameworks y pipelines verificar carga, forward, backward y compatibilidad de tensores con un peso de 1,3 GB en lugar de los varios gigabytes del modelo Gemma 3n completo, manteniendo los mismos nombres de tensor y el mismo dtype (bfloat16). La model card lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+Su relevancia es metodológica, no funcional: sirve como banco de pruebas reproducible para desarrolladores que integran modelos Gemma 3n en pipelines de Transformers, verificando nombres de tensores, procesadores y compatibilidad de dtypes sin necesidad de descargar el checkpoint completo. Cualquier uso generativo real debe hacerse sobre el modelo base original de Google.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma3nForConditionalGeneration (transformer multimodal, configuracion encogida: 4 capas ocultas de texto) |
-| Parametros totales | 51.492.816 (segun safetensors) |
-| Parametros activos | no disponible (el modelo base Gemma 3n E2B emplea arquitectura con parametros efectivos, pero el dato no se detalla en la informacion) |
+| Arquitectura | `Gemma3nForConditionalGeneration` (transformer multimodal, configuración reducida) |
+| Parametros totales | 51.492.816 |
+| Parametros activos | no disponible (el modelo base Gemma 3n E2B es de tipo MoE, pero la ficha no aporta el dato de activos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
+| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16; se declara finito en float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture reutiliza la clase `Gemma3nForConditionalGeneration` del checkpoint original `google/gemma-3n-E2B-it`, pero con una configuracion reducida a 4 capas ocultas de texto aplicando la regla generica de `sweep.py` del repositorio `transformers-mic`. Los pesos son aleatorios (semilla 17) y no han sido entrenados: unicamente pasaron una "puerta de sensibilidad a la entrada" que verifica que cada perturbacion de las entradas del contrato mueve los logits al menos 0,001 (la perturbacion mas debil, `attention_mask:all_ones`, produjo 0,0859). Por tanto, no hay datos de entrenamiento, tokens vistos, RLHF ni DPO asociados a este artefacto.
+El fixture replica la clase `Gemma3nForConditionalGeneration`, la misma que usa el checkpoint real `google/gemma-3n-E2B-it`, pero con una configuración encogida mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`: `num_hidden_layers` de texto reducido a 4. Los nombres de tensores coinciden con los del checkpoint real, de modo que el fixture ejercita exactamente las mismas rutas de código que el modelo completo.
 
-La innovacion tecnica del fixture es la reproducibilidad: conserva exactamente los mismos nombres de tensor que el checkpoint real, los ficheros de procesador copiados byte a byte (`chat_template.jinja`, `generation_config.json`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`) y el dtype por defecto (bfloat16). Ademas, se verifica que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16. El fichero `build.json` registra las fuentes fijadas, los resultados de las puertas de validacion y los hashes de los ficheros.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y superaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplazó los logits al menos 0,001 (la más débil, `attention_mask:all_ones`, con 0,0859). Los ficheros de procesador (`chat_template.jinja`, `generation_config.json`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`, entre otros) se copiaron byte a byte desde el modelo base. El fixture se guarda en bfloat16, el dtype por defecto del checkpoint original, y se declara finito en float32, bfloat16 y float16 para forward, loss y gradientes.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no generan texto, codigo ni razonamiento coherente.
-- Sirve como fixture de integracion para validar la carga de la arquitectura `Gemma3nForConditionalGeneration` en Transformers.
-- Permite comprobar la compatibilidad de nombres de tensor con el checkpoint real.
-- Reproduce la interfaz de procesador del modelo base (tokenizer, chat template, generation config) para tests de pipelines de entrada/salida.
-- Verifica la estabilidad numerica (finitud de forward, loss y gradientes) en float32, bfloat16 y float16.
-- No soporta tool calling, agentes, vision ni audio de forma utilizable, al carecer de pesos entrenados.
-- Multilingue solo a nivel de tokenizer, heredado del modelo base; sin capacidad generativa real.
+- No es un modelo generativo funcional: los pesos aleatorios no producen texto coherente.
+- Valida contratos de integración con Transformers: carga, forward, loss y gradientes sobre la arquitectura Gemma 3n.
+- Comprueba la compatibilidad byte a byte de los ficheros de procesador y tokenizador del modelo base.
+- Permite verificar nombres de tensores y dtypes sin descargar el checkpoint completo.
+- Sirve como fixture reproducible para pruebas de regresión en frameworks.
+- No dispone de tool calling, agentes, visión, audio ni capacidades multilingües reales, al carecer de pesos entrenados.
 
 ## Casos de uso
 
-- Testing de integracion en Transformers: cargar el fixture para verificar que la clase `Gemma3nForConditionalGeneration` se instancia correctamente y que los tensores se mapean sin errores, con un peso de 1,3 GB en lugar del modelo completo.
-- Validacion de pipelines CI/CD: ejecutar tests de humo de carga, forward y backward en cada PR de un framework sin descargar el checkpoint real de Google, reduciendo tiempo y ancho de banda.
-- Verificacion de compatibilidad de tokenizer y chat template: comprobar que los ficheros de procesador copiados byte a byte producen las mismas entradas que el modelo original.
-- Pruebas de estabilidad numerica: validar que forward, loss y gradientes son finitos en float32, bfloat16 y float16 antes de desplegar cambios en el framework.
-- Desarrollo de herramientas de "encogimiento" de modelos: servir como caso de referencia para la regla generica de `sweep.py` y para `build_fixtures.py`.
-- Reproducibilidad de artefactos: usar `build.json` para auditar fuentes, hashes y resultados de las puertas de validacion en entornos de investigacion.
+- Pruebas de integración en Transformers: usar el fixture para verificar que una nueva versión de la librería carga correctamente la arquitectura `Gemma3nForConditionalGeneration` sin necesidad de descargar el modelo completo.
+- Validación de pipelines CI/CD: incluir el fixture en la batería de tests de un framework para detectar regresiones en el manejo de nombres de tensores o dtypes.
+- Verificación de compatibilidad de procesadores: comprobar que el tokenizador y la plantilla de chat copiados del modelo base se integran correctamente con el resto del pipeline.
+- Desarrollo de herramientas de inspección de modelos: usar el fixture como caso controlado de 51,5 M de parámetros para probar utilidades de análisis de pesos y configuraciones.
+- Reproducibilidad de experimentos: el fichero `build.json` registra fuentes fijadas, resultados de las puertas de validación y hashes de ficheros, permitiendo reconstruir el fixture con `build_fixtures.py`.
+- Formación y documentación: servir de ejemplo didáctico de cómo se construye un fixture de modelo y qué garantías debe cumplir.
+- Pruebas de tolerancia numérica: validar que forward, loss y gradientes son finitos en float32, bfloat16 y float16 antes de desplegar el modelo real.
 
 ## Benchmarks y rendimiento
 
@@ -52,40 +52,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,3 GB en bfloat16 (tamano del repo), sin necesidad de cuantizacion adicional.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (por ejemplo, GTX 1650, RTX 3050) es suficiente; tambien cabe en CPU.
-- Cabe en GPU consumer: si, con amplio margen.
-- Opciones de despliegue: Transformers (via `integrations/transformers/usage.md`); otras opciones (vLLM, llama.cpp, Ollama, TGI) no estan documentadas en la informacion disponible.
-- Latencia y throughput: no disponibles; al ser un fixture de 4 capas con pesos aleatorios, las mediciones no serian representativas del modelo real.
+- VRAM estimada para inferencia: el fixture completo ocupa aproximadamente 1,3 GB en el repositorio, con pesos en bfloat16; cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4090) es suficiente para cargar el fixture.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU modernas, incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: Transformers (vía `integrations/transformers/usage.md`); no se documentan opciones para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible; al ser pesos aleatorios y un modelo de prueba, no se han publicado métricas de rendimiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-3n-E2B-it-mic (este) | 51,5 M | no disponible | Fixture de test | no disponible | Hugging Face |
-| google/gemma-3n-E2B-it | no disponible en la informacion | no disponible | Modelo multimodal usable | no disponible | Hugging Face |
-| Otros fixtures de transformers-mic | no disponible | no disponible | Fixtures de test | no disponible | Hugging Face (org huggingface-mic) |
+| `huggingface-mic/gemma-3n-E2B-it-mic` | 51,5 M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| `google/gemma-3n-E2B-it` | no disponible en la informacion | no disponible | Modelo multimodal usable | no disponible en la informacion | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable (configuracion reducida) | no disponible | Pruebas de contrato | no disponible | Hugging Face |
 
-La comparacion con alternativas de la misma categoria (fixtures de test) no esta detallada en la informacion proporcionada.
+La comparación directa con modelos de producción no es significativa: el fixture no compite en capacidad generativa, sino que actúa como banco de pruebas de la arquitectura del modelo base.
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable: los pesos son aleatorios y las salidas carecen de sentido; no debe emplearse en produccion ni en evaluaciones de calidad.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; usarlo fuera de testing seria un error de seleccion.
-- La licencia no esta declarada en la informacion disponible, por lo que no se puede confirmar el uso comercial.
-- Al derivar de `google/gemma-3n-E2B-it`, podrian aplicar restricciones de la licencia del modelo base, pero no se detallan.
-- La configuracion encogida (4 capas) no reproduce el comportamiento numerico del modelo real, solo la interfaz y los nombres de tensor.
-- Riesgo de confusion: el nombre incluye "E2B-it" y podria confundirse con el checkpoint oficial de Google; conviene verificar el ID completo `huggingface-mic/gemma-3n-E2B-it-mic`.
-- No hay garantia de que los ficheros de procesador copiados se mantengan sincronizados con futuras versiones del modelo base.
+- Los pesos son aleatorios: no generarán texto, código ni respuestas coherentes.
+- No debe usarse en producción ni como sustituto del modelo base `google/gemma-3n-E2B-it`.
+- La model card lo marca como `test-artifact`; su inclusión en pipelines de búsqueda de modelos debe evitarse.
+- La licencia no está declarada en la información disponible; verificar los términos del modelo base antes de cualquier uso.
+- La configuración reducida (4 capas) no representa el comportamiento del modelo completo en términos de calidad, contexto o latencia.
+- No se documentan sesgos, riesgos de alucinación ni limitaciones idiomáticas, ya que no hay entrenamiento real.
+- Los ficheros de procesador copiados byte a byte pueden quedar desincronizados si el modelo base se actualiza; conviene regenerar el fixture con `build_fixtures.py`.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/gemma-3n-E2B-it-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/gemma-3n-E2B-it-mic
 - Modelo base: https://huggingface.co/google/gemma-3n-E2B-it
-- Manifiesto de contrato: `integration.json` (en el repositorio)
-- Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
-- Procedencia del fixture: `build.json` (en el repositorio)
-- Explicacion del encogimiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/gemma-3n-E2B-it-mic.html
-- Script de encogimiento: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Manifest de contrato: https://huggingface.co/huggingface-mic/gemma-3n-E2B-it-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/gemma-3n-E2B-it-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/gemma-3n-E2B-it-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/gemma-3n-E2B-it-mic/blob/main/build.json
+- Cómo se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/gemma-3n-E2B-it-mic.html
+- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

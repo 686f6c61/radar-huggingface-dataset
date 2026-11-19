@@ -2,92 +2,93 @@
 
 ## Resumen
 
-`huggingface-mic/gemma-2-2b-it-mic` es un artefacto de prueba (fixture) derivado de `google/gemma-2-2b-it`, publicado por la organizacion `huggingface-mic` dentro del proyecto transformers-mic. No es un modelo utilizable para inferencia real: se trata de un checkpoint "slim" de 16.458.304 parametros con pesos aleatorios (semilla 0), disenado para validar contratos de integracion de frameworks (concretamente Transformers) sobre la arquitectura Gemma 2 sin necesidad de cargar el modelo completo de 2B parametros.
+`gemma-2-2b-it-mic` es un artefacto de prueba publicado por el usuario `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable para inferencia real: se trata de un *fixture* reducido de `google/gemma-2-2b-it` que conserva la arquitectura `Gemma2ForCausalLM` pero con una configuración drásticamente menor (2 capas ocultas frente a las 26 del original) y pesos aleatorios inicializados con semilla 0. Su propósito es servir como base de pruebas para el proyecto `transformers-mic`, que valida contratos de integración entre frameworks de inferencia y checkpoints reales.
 
-El repositorio empaqueta en un unico lugar los pesos reducidos, ejemplos de uso ejecutables (`integrations/transformers/usage.md`), las expectativas del framework (`integrations/transformers/expectations`), un manifiesto de contrato (`integration.json`) y la procedencia de la fixture (`build.json`). La arquitectura subyacente es `Gemma2ForCausalLM`, pero con `num_hidden_layers` reducido a 2 mediante la regla generica de `sweep.py`, manteniendo los mismos nombres de tensores que el checkpoint original.
+El repositorio incluye los pesos reducidos (16,5 millones de parámetros, frente a los 2.600 millones del modelo base), el manifiesto de contrato (`integration.json`), instrucciones de uso con Transformers y un directorio de expectativas de framework. Los ficheros del procesador (`tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`, `generation_config.json`, `special_tokens_map.json`) se copian byte a byte del modelo original, de modo que el tokenizador sí es el real de Gemma 2.
 
-Su relevancia es puramente de ingenieria de software: permite ejecutar tests de integracion, validacion de contratos y comprobaciones de sensibilidad de entradas en CI sin descargar los ~5 GB del Gemma 2 2B real. Esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos, y no debe confundirse con un modelo afinado o destilado.
+Es relevante únicamente en el contexto de ingeniería de software: permite ejecutar tests de integración de forma rápida y barata, verificar que un pipeline carga tensores con los mismos nombres que el checkpoint real y validar la sensibilidad de las entradas sin necesidad de descargar ni ejecutar el modelo completo. La propia model card lo etiqueta como `test-artifact` para excluirlo de búsquedas de modelos candidatos. No debe emplearse en producción ni como sustituto del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma2ForCausalLM (transformer decoder-only, reducido a 2 capas) |
-| Parametros totales | 16.458.304 |
+| Arquitectura | Transformer decoder-only (`Gemma2ForCausalLM`), 2 capas ocultas |
+| Parametros totales | 16.458.304 (16,5 M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de la config de Gemma 2 2B it, pero no confirmada en la informacion) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; finite tambien en float32 y float16) |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | no disponible (config reducida; el modelo base soporta 8.192 tokens) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; compatible con float32 y float16) |
+| Idiomas soportados | no disponible (tokenizador de Gemma 2 heredado del modelo base) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (bfloat16) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La fixture replica la arquitectura `Gemma2ForCausalLM` del checkpoint base `google/gemma-2-2b-it`, pero con la configuracion reducida: `num_hidden_layers` pasa a 2 aplicando la regla generica de reduccion de `sweep.py`. Los ficheros de procesador (`generation_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`) se copian byte a byte del checkpoint original, de modo que el tokenizador y la configuracion de generacion son identicos a los de Gemma 2 2B it.
+El modelo replica la arquitectura de Gemma 2 (`Gemma2ForCausalLM`) pero con una configuración encogida mediante la regla genérica de `sweep.py` del repositorio `huggingface/transformers-mic`, reduciendo `num_hidden_layers` a 2. Conserva los mismos nombres de tensores que el checkpoint real, lo que permite validar la compatibilidad de cargadores y frameworks sin ambigüedad. Los ficheros del procesador son idénticos byte a byte a los de `google/gemma-2-2b-it`.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 0 y se aceptaron porque superaron la puerta de sensibilidad a las entradas: cada perturbacion de las entradas del contrato movio los logits al menos 0.001 (la mas debil, `input_ids:roll_batch`, 0.401). La fixture conserva exactamente los mismos nombres de tensores que el checkpoint real y se guarda en bfloat16, el dtype por defecto de `google/gemma-2-2b-it`. La clave de fixture es `6757a5dfa94e` y cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras la reduccion.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 0) y pasaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplazó los logits al menos 0,001 (el caso más débil, `input_ids:roll_batch`, con 0,401). Se guarda en bfloat16, el dtype por defecto del modelo base, y se verificó que es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El fixture se identifica con la clave `6757a5dfa94e` y cubre todos los checkpoints cuyos ficheros de procesador son idénticos y cuya configuración coincide tras el encogimiento.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no producen texto coherente.
-- Ejecucion de forward, calculo de loss y gradientes finitos en float32, bfloat16 y float16.
-- Validacion de contratos de integracion de Transformers sobre la arquitectura Gemma 2.
-- Comprobacion de sensibilidad de entradas (perturbaciones que alteran los logits por encima de un umbral).
-- Verificacion de que los nombres de tensores coinciden con el checkpoint real de Gemma 2 2B it.
-- Uso como fixture en pipelines de CI para tests de integracion ligeros.
-- No soporta tool calling, agentes, vision, audio ni capacidades multilingues reales, al carecer de pesos entrenados.
+- Carga y ejecución en Transformers con la clase `Gemma2ForCausalLM` y el tokenizador real de Gemma 2.
+- Validación de contratos de integración entre frameworks (manifiesto `integration.json` y directorio de expectativas).
+- Verificación de nombres y formas de tensores frente al checkpoint real.
+- Pruebas de sensibilidad de entradas mediante perturbaciones controladas.
+- Ejecución en float32, bfloat16 y float16 sin valores no finitos.
+- No genera texto coherente: los pesos son aleatorios y no ha habido entrenamiento.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multimodales.
+- No dispone de modo thinking ni de visión o audio.
 
 ## Casos de uso
 
-- Tests de integracion en CI: cargar la fixture en lugar del Gemma 2 2B completo para validar que el codigo de integracion con Transformers funciona, reduciendo el tiempo y el ancho de banda de descarga de ~5 GB a 0.1 GB.
-- Validacion de contratos de framework: comprobar que la implementacion de `Gemma2ForCausalLM` en un fork o wrapper cumple las expectativas documentadas en `integrations/transformers/expectations`.
-- Pruebas de compatibilidad de tokenizador: al copiarse los ficheros de procesador byte a byte del modelo original, sirve para verificar que el pipeline de tokenizacion se comporta igual que con el checkpoint real.
-- Verificacion de dtypes: comprobar que el codigo de inferencia y entrenamiento produce resultados finitos en float32, bfloat16 y float16 antes de escalar al modelo completo.
-- Desarrollo de herramientas de reduccion de modelos: la fixture es el resultado de `sweep.py` y `build_fixtures.py`, por lo que sirve como caso de referencia para validar nuevas reglas de reduccion.
-- Reproducibilidad de artefactos: `build.json` registra fuentes fijadas, resultados de la puerta de sensibilidad y hashes de ficheros, lo que permite auditar y reconstruir la fixture con `python example/build_fixtures.py --fixture gemma-2-2b-it-mic`.
+- Tests de integración en CI: ejecutar la carga del modelo y un forward pass en segundos y con 0,1 GB de descarga, validando que el pipeline de Transformers funciona antes de pasar al checkpoint real de 2.600 M de parámetros.
+- Validación de cargadores personalizados: comprobar que un loader propio mapea correctamente los nombres de tensores de Gemma 2 usando el fixture como sustituto barato.
+- Verificación de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` para asegurar que una nueva versión de Transformers mantiene el comportamiento esperado sobre la arquitectura Gemma 2.
+- Pruebas de tokenización: al conservar el tokenizador real byte a byte, permite validar pipelines de preprocesado sin cargar el modelo grande.
+- Depuración de gradientes y dtypes: comprobar que un pipeline de entrenamiento o fine-tuning produce valores finitos en float32, bfloat16 y float16 sobre una arquitectura Gemma 2 reducida.
+- Docencia y demostraciones: ilustrar la estructura interna de un transformer decoder-only de Gemma 2 con un checkpoint manejable en cualquier portátil.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture gemma-2-2b-it-mic` y comparar hashes registrados en `build.json`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de una fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios y no es evaluable en tareas de NLP.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (16,5 M de parametros, ~33 MB de pesos mas overhead de activaciones y tokenizador).
-- GPU recomendadas: cualquier GPU consumer moderna; tambien es viable en CPU.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (via `integrations/transformers/usage.md`); no se documentan vLLM, llama.cpp, Ollama ni TGI para esta fixture.
-- Latencia y throughput: no disponibles; al ser una fixture de test, no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (16,5 M de parámetros); cabe holgadamente en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: cualquiera; no requiere A100, H100 ni RTX 4090. Una GPU integrada o CPU es suficiente.
+- Cabe en consumer GPU: sí, en todas (GTX 1050, RTX 3060, RTX 4090, etc.).
+- Opciones de despliegue: Transformers (principal); compatible con llama.cpp, vLLM u Ollama solo si se convierte el checkpoint, aunque no aporta valor práctico al ser un fixture.
+- Latencia y throughput: no disponible; al ser un modelo de 2 capas, el forward pass es del orden de milisegundos en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/gemma-2-2b-it-mic | 16,5 M | no disponible | Fixture de test | no disponible | Hugging Face |
-| google/gemma-2-2b-it | 2,6 B (aprox., no confirmado en la informacion) | no disponible | Modelo instructivo real | Gemma Terms (segun modelo base; no confirmado en la informacion) | Hugging Face |
-| Otros fixtures de transformers-mic | no disponible | no disponible | Fixtures de test | no disponible | Hugging Face (org huggingface-mic) |
+| gemma-2-2b-it-mic | 16,5 M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| google/gemma-2-2b-it | 2.600 M | 8.192 tokens | Modelo de chat real | Gemma Terms of Use | Hugging Face |
+| google/gemma-2-9b-it | 9.000 M | 8.192 tokens | Modelo de chat real | Gemma Terms of Use | Hugging Face |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Modelo pequeño real | Apache 2.0 | Hugging Face |
 
-La comparativa relevante es exclusivamente con el checkpoint base: la fixture comparte arquitectura, tokenizador y nombres de tensores, pero sustituye los pesos entrenados por pesos aleatorios y reduce las capas a 2. Frente a otros fixtures del mismo proyecto, comparte el mismo proposito de validacion de contratos, aunque no se dispone de datos concretos de esos otros artefactos en la informacion proporcionada.
+La comparación con modelos reales es solo orientativa: el fixture no compite en capacidad, sino que sustituye al checkpoint grande en tests automatizados.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y la salida no tiene sentido linguistico.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
-- Licencia no disponible en la informacion; no se puede confirmar el regimen de uso comercial. Al derivar de `google/gemma-2-2b-it`, habria que verificar los terminos del modelo base.
-- Idiomas soportados no disponibles; el tokenizador es el de Gemma 2 2B it, pero sin pesos entrenados no hay capacidad multilingue real.
-- Longitud de contexto no confirmada en la informacion; la config reducida podria alterar parametros dependientes de capas.
-- Riesgo de confusion con un modelo afinado o destilado: el nombre `gemma-2-2b-it-mic` no indica que sea una fixture, por lo que conviene revisar `build.json` antes de usarlo.
-- No apta para benchmarks de calidad ni para evaluacion de capacidades.
-- La reconstruccion requiere ejecutar `python example/build_fixtures.py --fixture gemma-2-2b-it-mic`; el repositorio solo incluye pesos, uso y expectativas.
+- No es un modelo utilizable: los pesos son aleatorios y la salida no tiene significado.
+- Sesgos conocidos: no aplica, al no haber entrenamiento; el tokenizador hereda los sesgos del vocabulario de Gemma 2.
+- Riesgo de alucinación: total, cualquier texto generado es ruido estadístico.
+- Limitaciones de contexto o idioma: la configuración reducida no refleja el contexto real de Gemma 2; los idiomas dependen del tokenizador heredado.
+- Restricciones de licencia: la licencia no está declarada en el repositorio; al derivar de `google/gemma-2-2b-it`, podrían aplicar los Gemma Terms of Use, pero conviene verificar antes de cualquier uso.
+- Caveat para producción: no desplegar bajo ninguna circunstancia; está etiquetado como `test-artifact` y pensado exclusivamente para testing.
+- El tamaño reducido (2 capas) implica que las formas de los tensores difieren del checkpoint real, aunque los nombres coinciden.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/gemma-2-2b-it-mic
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
-- Como se redujo la fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/gemma-2-2b-it-mic.html
-- Script de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Manifiesto de contrato: `integration.json` (en el repositorio)
-- Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
-- Procedencia de la fixture: `build.json` (en el repositorio)
+- Proyecto transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de encogimiento (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Explicación del encogimiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/gemma-2-2b-it-mic.html
+- Manifiesto de contrato: https://huggingface.co/huggingface-mic/gemma-2-2b-it-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/gemma-2-2b-it-mic/blob/main/integrations/transformers/usage.md
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/gemma-2-2b-it-mic/blob/main/build.json

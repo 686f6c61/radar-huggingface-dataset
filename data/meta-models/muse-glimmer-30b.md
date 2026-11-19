@@ -2,79 +2,97 @@
 
 ## Resumen
 
-Muse Glimmer es un modelo de lenguaje causal de 30 000 millones de parámetros desarrollado por el Meta Superintelligence Lab, diseñado específicamente para tareas agénticas en hardware de consumo. Se trata de una versión destilada de Muse Spark que integra en un único sistema razonamiento multi-paso, uso fiable de herramientas, comprensión multimodal (texto e imágenes) y recuperación ante fallos, todo ello ejecutable localmente sin necesidad de infraestructura en la nube.
+Muse Glimmer-30B es un modelo de lenguaje causal multimodal desarrollado por Meta Superintelligence Lab, publicado en agosto de 2026 bajo licencia Apache 2.0. Con aproximadamente 29.600 millones de parámetros, combina un transformer causal denso con un codificador de percepción dedicado de ~1.800 millones de parámetros (ViT-G/14), lo que le permite aceptar entradas intercaladas de texto e imagen y generar texto. Está destilado a partir de Muse Spark y diseñado específicamente para tareas agénticas autónomas ejecutadas en hardware de consumo, sin necesidad de infraestructura en la nube.
 
-El modelo combina un transformador denso con un encoder de percepción ViT-G/14 de aproximadamente 1 800 millones de parámetros, lo que le permite procesar entradas intercaladas de texto e imagen. Con una ventana de contexto de 131 072 tokens y soporte para más de 100 idiomas, Muse Glimmer está pensado para desplegarse en entornos locales con cuantización de 4 bits, manteniendo una degradación mínima en tareas agénticas. Su licencia Apache 2.0 facilita su adopción tanto en investigación como en productos comerciales.
+El modelo se orienta a la resolución de tareas de extremo a extremo: razonamiento multi-paso, uso fiable de herramientas con esquemas precisos, recuperación ante fallos de llamadas a herramientas y comprensión multimodal de capturas de pantalla, gráficos y documentos. Su ventana de contexto supera los 131.072 tokens, emplea un patrón de atención híbrido local/global con ventana deslizante de 2.048 tokens y atención con compuertas (gated attention), y utiliza GQA con una ratio de 16:1.
 
-La relevancia actual del modelo radica en su enfoque integral para agentes autónomos: no solo genera texto, sino que planifica, ejecuta llamadas a herramientas, diagnostica errores y se recupera de fallos, todo dentro de un marco de ejecución local. Esto lo convierte en una opción atractiva para desarrolladores que buscan alternativas a APIs en la nube con requisitos de privacidad o latencia estrictos.
+Su relevancia actual radica en la combinación de tamaño contenido, cuantización a 4 bits que reduce el modelo por debajo de 20 GB y decodificación especulativa mediante un drafter basado en DFlash, lo que permite ejecutarlo en GPUs de consumo de 24 GB o 32 GB con velocidades de hasta 233 tokens por segundo en una RTX 5090. Está entrenado en más de 100 idiomas y su corte de conocimiento es el 4 de enero de 2026.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Dense Causal Transformer con Perception Encoder (ViT-G/14) |
-| Parametros totales | ~29,6B (incluyendo vision encoder) |
+| Arquitectura | Transformer causal denso con codificador de percepción (ViT-G/14) |
+| Parametros totales | ~29,6B (incluye codificador visual de ~1,8B); 29.776.626.688 según safetensors |
 | Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 131 072+ tokens |
-| Tipos de cuantizacion | K-Quant-Dynamic (aprox. 4 bits), K-Quant-17GB (aprox. 4 bits), full precision |
-| Idiomas soportados | Más de 100 idiomas (lista específica no disponible) |
+| Longitud de contexto | 131.072+ tokens |
+| Tipos de cuantizacion | Full precision, K-Quant-Dynamic (32 GB VRAM), K-Quant-17GB (24 GB VRAM); pesos comprimidos a ~4 bits |
+| Idiomas soportados | Más de 100 idiomas (entrenado en datos de más de 100 lenguas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-Muse Glimmer emplea un transformador causal denso con un patrón de atención híbrido: capas con atención local de ventana deslizante (tamaño 2048) intercaladas con capas de atención global en un ciclo de cuatro capas (Local, Local, Local, Global). Incorpora gated attention, atención con consultas agrupadas (GQA) con ratio 16:1 (32 cabezas de consulta, 2 de clave/valor), y capas feed-forward SwiGLU con dimensión intermedia de 19 968. La codificación posicional usa RoPE con theta de 500 000, aplicada únicamente en las capas locales. El vocabulario consta de 202 048 tokens (200 000 BPE más 2 048 especiales).
+La arquitectura es un transformer causal denso de 52 capas con dimensión oculta de 6.656, FFN de tipo SwiGLU con dimensión intermedia de 19.968, y un patrón de atención repetido [Local, Local, Local, Global] con ventana deslizante de 2.048 tokens. Emplea atención con compuertas y GQA con 32 cabezas de consulta y 2 de clave/valor (ratio 16:1), dimensión de cabeza de 128 y codificación posicional RoPE (θ = 500.000) aplicada solo en las capas locales. El vocabulario es de 202.048 tokens (200.000 BPE más 2.048 especiales). El codificador de percepción es un ViT-G/14 de ~1,8B parámetros, 50 capas, anchura 1.536 y tamaño de parche 14, con un máximo de 4.096 tokens visuales por imagen.
 
-El encoder de percepción es un ViT-G/14 de 50 capas, ancho 1536 y parche de 14 píxeles, con aproximadamente 1 800 millones de parámetros, que genera hasta 4 096 tokens visuales por imagen. El entrenamiento se realizó con contenido multimodal de fuentes públicas, datos de terceros y productos de Meta, con un corte de conocimiento en enero de 2026. El modelo fue destilado de Muse Spark y optimizado para cuantización agresiva y decodificación especulativa mediante un modelo auxiliar DFlash que propone bloques de 16 tokens en una sola pasada, verificados en paralelo por el modelo principal.
+El modelo está destilado de Muse Spark y entrenado con contenido multimodal procedente de datos públicos, datos de terceros e información de productos y servicios de Meta, curado y enriquecido por redes de proveedores externos y personal de Meta. La model card no detalla el número exacto de tokens de entrenamiento ni si se aplicaron fases de RLHF o DPO. Entre las innovaciones técnicas destacan la decodificación especulativa mediante un drafter DFlash de difusión por bloques que predice bloques de 16 tokens en un solo paso forward (5 capas, atención deslizante de 2.048, 32 cabezas Q / 8 KV, capas de características ocultas uniformes sobre las capas {1, 13, 25, 37, 49} de 52) y el control de esfuerzo de razonamiento para ajustar calidad frente a velocidad.
 
 ## Capacidades
 
-- **Agente de extremo a extremo**: completar tareas completas desde una petición inicial hasta la resolución final, incluyendo escritura y depuración de código, búsqueda de información y resolución de peticiones multi-turno.
-- **Uso fiable de herramientas**: invocación de funciones con esquemas precisos a lo largo de flujos de trabajo extensos.
-- **Razonamiento multi-paso**: encadenamiento de razonamiento sobre horizontes largos, manteniendo planes coherentes en tareas complejas.
-- **Recuperación ante fallos**: cuando una llamada a herramienta falla o devuelve un resultado inesperado, el modelo diagnostica el error y reintenta en lugar de detenerse.
-- **Entrada multimodal**: acepta texto e imágenes intercaladas, permitiendo interpretar capturas de pantalla, gráficos y documentos junto con la conversación.
-- **Compatibilidad con scaffolds**: funciona con OpenClaw, Hermes Agent y otros patrones de orquestación agéntica.
-- **Esfuerzo controlable**: soporta distintos niveles de razonamiento para ajustar el equilibrio entre calidad y velocidad.
-- **Multilingüe**: entrenado con datos de más de 100 idiomas.
+- Generación de texto y razonamiento multi-paso sobre horizontes largos, manteniendo planes coherentes en flujos de trabajo extendidos.
+- Comprensión multimodal de entrada: acepta texto e imágenes intercaladas (capturas de pantalla, gráficos, documentos) mediante el codificador de percepción; la salida es solo texto.
+- Uso fiable de herramientas y function calling con esquemas precisos a lo largo de flujos prolongados.
+- Recuperación ante fallos: diagnostica errores de llamadas a herramientas y reintenta en lugar de detenerse.
+- Compatibilidad con scaffolds de agentes como OpenClaw y Hermes Agent, además de otros patrones de orquestación.
+- Razonamiento agéntico de extremo a extremo evaluado en DeepSearch QA, MCP-Atlas, τ3-Bench y SWE-Bench.
+- Capacidades multilingües en más de 100 idiomas.
+- Control de esfuerzo de razonamiento para equilibrar calidad y velocidad según la tarea.
+- Ejecución local sin infraestructura de nube ni acceso a red.
 
 ## Casos de uso
 
-- **Asistente personal local**: un asistente que gestiona calendario, correo y tareas del sistema mediante llamadas a herramientas, ejecutándose íntegramente en un portátil con 24 GB de VRAM, sin conexión a internet.
-- **Automatización de flujos de trabajo con imágenes**: procesar facturas o formularios escaneados, extraer datos relevantes y actualizar una base de datos, combinando comprensión visual y tool calling.
-- **Agente de soporte técnico**: diagnosticar problemas de software a partir de capturas de pantalla y logs, ejecutar comandos de diagnóstico y proponer soluciones, con capacidad de reintentar tras errores.
-- **Generación y depuración de código en entornos CI/CD**: integrar el modelo en pipelines de integración continua para revisar pull requests, sugerir correcciones y ejecutar pruebas, gracias a su soporte de tool calling y razonamiento multi-paso.
-- **Análisis de documentos financieros**: leer informes con tablas y gráficos, resumir tendencias y generar informes ejecutivos, aprovechando la ventana de contexto de 131K tokens para documentos extensos.
-- **Investigación académica multilingüe**: traducir y resumir artículos científicos en varios idiomas, manteniendo el contexto de la conversación y permitiendo preguntas de seguimiento.
+- Agentes autónomos de resolución de incidencias de software: el modelo puede escribir y depurar código dentro de un scaffold, encadenar razonamiento multi-paso y recuperarse de fallos de herramientas, lo que encaja con su evaluación en SWE-Bench y su contexto de más de 131.000 tokens para mantener el estado de la tarea.
+- Automatización de soporte técnico multi-turno: gestiona conversaciones largas con contexto extendido, interpreta capturas de pantalla enviadas por el usuario gracias al codificador visual y ejecuta llamadas a herramientas internas con esquemas precisos.
+- Análisis de documentos y gráficos en local: al aceptar imágenes intercaladas con texto y ejecutarse sin conexión, es adecuado para procesar informes, tablas y diagramas en entornos con requisitos de privacidad.
+- Orquestación de flujos MCP: su compatibilidad con MCP-Atlas y su uso fiable de herramientas permiten construir agentes que invocan servidores MCP de forma encadenada y con recuperación ante errores.
+- Asistentes de escritorio en hardware de consumo: con la cuantización K-Quant-17GB cabe en 24 GB de VRAM y, junto al drafter cuantizado, alcanza velocidades fluidas en RTX 5090 y Apple M4/M5 Max para interacción en tiempo real.
+- Búsqueda profunda y respuesta a preguntas: evaluado en DeepSearch QA, puede planificar consultas sucesivas, sintetizar evidencia y mantener coherencia en tareas de investigación de varios pasos.
+- Generación de código asistida con control de esfuerzo: el ajuste del nivel de razonamiento permite elegir entre respuestas rápidas para autocompletado y razonamiento profundo para refactorizaciones complejas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. El modelo card menciona evaluaciones en DeepSearch QA, MCP-Atlas, τ3-Bench y SWE-Bench, pero no se proporcionan cifras concretas. Únicamente se indica la degradación media en 15 benchmarks comunes tras la cuantización: 0,2 % para K-Quant-Dynamic y 1,0 % para K-Quant-17GB, en comparación con la precisión completa.
+La model card menciona evaluación en DeepSearch QA, MCP-Atlas, τ3-Bench y SWE-Bench, pero no publica los valores numéricos de estos benchmarks en la información disponible.
+
+| Metrica | Full Precision | K-Quant-Dynamic | K-Quant-17GB |
+|---|---|---|---|
+| Degradación (% sobre 15 benchmarks) | - | 0,2% | 1,0% |
+| Hardware objetivo | 64 GB VRAM | 32 GB VRAM | 24 GB VRAM |
+
+| GPU | Sin especulación (tok/s) | Con DFlash (tok/s) | Aceleración |
+|---|---|---|---|
+| Nvidia RTX 5090 | 74,9 | 233,4 | 3,1x |
+| Apple M4 Max | 23,7 | 37,8 | 1,5x |
+| Apple M5 Max | 26,6 | 50,2 | 1,8x |
+
+Las mediciones de velocidad se realizaron con batch size 1 y decodificación greedy sobre el modelo K-Quant-17GB junto al drafter cuantizado.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: 24 GB para la versión K-Quant-17GB, 32 GB para K-Quant-Dynamic y 64 GB para precisión completa. Estas cifras incluyen el KV cache, el encoder de percepción y el modelo drafter.
-- **GPU recomendadas**: Nvidia RTX 5090 (24 GB), Apple M4 Max y M5 Max (memoria unificada). También es viable en GPUs de 32 GB como A100 o RTX A6000, aunque no se mencionan explícitamente.
-- **Hardware de consumo**: sí, cabe en GPUs de 24 GB como la RTX 5090, y en Macs con chip M4/M5 Max.
-- **Opciones de despliegue**: compatible con transformers (Hugging Face), y por su diseño optimizado para local, se puede servir con vLLM, llama.cpp, Ollama o TGI, aunque no se especifican en la documentación.
-- **Latencia y throughput**: con decodificación especulativa DFlash, se miden 233,4 tok/s en RTX 5090 (3,1x frente a sin especulación), 37,8 tok/s en M4 Max (1,5x) y 50,2 tok/s en M5 Max (1,8x), con batch size 1 y greedy decoding.
+- VRAM estimada: 64 GB para precisión completa; 32 GB con K-Quant-Dynamic; 24 GB con K-Quant-17GB (el modelo de lenguaje comprimido a ~4 bits ocupa menos de 20 GB, dejando margen para KV cache, codificador visual y drafter).
+- GPU recomendadas: Nvidia RTX 5090 (validada, 233,4 tok/s con especulación), configuraciones de 32 GB y 64 GB; Apple Silicon M4 Max y M5 Max validados en local.
+- Cabe en GPU de consumo: sí, en tarjetas de 24 GB y 32 GB con las cuantizaciones K-Quant correspondientes.
+- Opciones de despliegue: transformers (librería declarada), endpoints compatibles, despliegue en SageMaker y Azure según los tags del repositorio. No se especifican otros motores como vLLM, llama.cpp u Ollama en la información disponible.
+- Latencia y throughput: 74,9 tok/s sin especulación y 233,4 tok/s con DFlash en RTX 5090; 23,7 y 37,8 tok/s en M4 Max; 26,6 y 50,2 tok/s en M5 Max, con batch size 1 y decodificación greedy.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos en la información proporcionada. No obstante, por su tamaño y enfoque, podría compararse con modelos densos de ~30B como Llama 3.1 30B o Qwen 2.5 32B, pero no se han publicado métricas que permitan una comparación rigurosa. Se recomienda consultar benchmarks independientes para una evaluación objetiva.
+No se dispone de datos de benchmarks numéricos ni de especificaciones de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Los modelos comparables de la misma categoría (transformers densos multimodales de ~30B orientados a agentes y despliegue local) no están identificados en la información disponible.
 
 ## Limitaciones y advertencias
 
-- **Sesgos conocidos**: no se han documentado sesgos específicos en la información disponible, pero al ser un modelo entrenado con datos web, es probable que herede sesgos presentes en dichos datos.
-- **Riesgo de alucinación**: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento complejo o con entradas ambiguas.
-- **Limitaciones de contexto**: aunque la ventana es de 131K tokens, el rendimiento en contextos muy largos puede degradarse; la atención local/global puede afectar a la coherencia en pasajes muy extensos.
-- **Idiomas**: aunque soporta más de 100 idiomas, no se especifica la calidad relativa entre ellos; es probable que el rendimiento sea superior en inglés y otros idiomas con más representación en el entrenamiento.
-- **Licencia**: Apache 2.0 permite uso comercial sin restricciones, pero se debe verificar que los datos de entrenamiento no incluyan contenido con derechos de autor que pueda generar problemas legales.
-- **Requisitos de hardware**: la versión cuantizada de 17 GB requiere al menos 24 GB de VRAM, lo que excluye GPUs de gama baja; el modelo drafter añade una sobrecarga de memoria adicional.
-- **Dependencia de la cuantización**: aunque la degradación media es baja (1 %), puede haber tareas específicas donde la pérdida de precisión sea mayor.
+- La model card no detalla sesgos conocidos; al entrenarse con datos públicos, de terceros y de productos de Meta, es previsible que herede sesgos presentes en esas fuentes.
+- Riesgo de alucinación inherente a los modelos de lenguaje; la recuperación ante fallos de herramientas no elimina la posibilidad de generar contenido incorrecto.
+- La salida es únicamente texto: no genera imágenes ni audio.
+- El corte de conocimiento es el 4 de enero de 2026; la información posterior no está cubierta sin herramientas externas.
+- La decodificación especulativa requiere el drafter DFlash; sin él, el rendimiento cae a los valores basales indicados (por ejemplo, 74,9 tok/s en RTX 5090).
+- La cuantización K-Quant-17GB introduce una degradación media del 1,0% en 15 benchmarks, lo que debe tenerse en cuenta en producción.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones de los datos de entrenamiento de terceros y de productos de Meta para cumplimiento normativo.
+- No se especifican límites de idioma por debajo de los más de 100 idiomas declarados, ni restricciones de uso adicionales en la información disponible.
 
 ## Enlaces
 
-- [Hugging Face: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
-- [Paper del perception encoder (arXiv:2504.13181)](https://arxiv.org/abs/2504.13181)
-- [Paper de DFlash (arXiv:2602.06036)](https://arxiv.org/abs/2602.06036)
+- Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Paper del codificador de percepción: https://arxiv.org/abs/2504.13181
+- Paper de DFlash (decodificación especulativa por difusión de bloques): https://arxiv.org/abs/2602.06036
+- Paper adicional referenciado en los tags: https://arxiv.org/abs/2610.24628
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

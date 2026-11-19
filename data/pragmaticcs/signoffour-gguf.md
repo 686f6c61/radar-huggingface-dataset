@@ -2,47 +2,55 @@
 
 ## Resumen
 
-SignOfFour-GGUF es un modelo de lenguaje de 35 mil millones de parametros con arquitectura Mixture-of-Experts (MoE) de Qwen, desarrollado por el autor pragmaticcs mediante una fusion de cuatro modelos base. El modelo integra las capacidades de tres fine-tunes especializados (codigo, agente y razonamiento) sobre un ancla base, utilizando el algoritmo DARE-TIES con modulacion sinusoidal por profundidad. El resultado es un modelo orientado a tareas de ingenieria de software, generacion de codigo y ejecucion de herramientas agente, con un coste de inferencia reducido gracias a sus 3B de parametros activos por token.
+SignOfFour-GGUF es una fusión de cuatro modelos basados en la arquitectura Qwen 35B-A3B, publicada por el usuario pragmaticcs en Hugging Face. Se trata de un modelo de lenguaje causal con arquitectura Mixture-of-Experts (MoE) de 35.000 millones de parámetros totales y aproximadamente 3.000 millones activos por token, construido mediante la combinación de un modelo ancla y tres donantes especializados en código, razonamiento agéntico y ejecución de herramientas. El objetivo declarado es consolidar capacidades de ingeniería de software, síntesis de código y uso de herramientas en un único checkpoint.
 
-La relevancia de este modelo radica en su enfoque practico: al fusionar modelos especializados en una sola arquitectura, ofrece un equilibrio entre capacidad de razonamiento, generacion de codigo y uso de herramientas, manteniendo un presupuesto de VRAM moderado. La eliminacion de los pesos de vision multimodal y de las cabezas de Multi-Token Prediction (MTP) reduce la huella de memoria y maximiza el rendimiento en tareas de codificacion. El modelo se distribuye en formato GGUF, lo que facilita su despliegue en entornos de produccion con llama.cpp, Ollama u otras herramientas compatibles.
+La relevancia del modelo reside en su método de fusión: DARE-TIES con modulación sinusoidal por profundidad, que aplica la transferencia de tareas con mayor intensidad en las capas intermedias (índices 12 a 28) y preserva las proyecciones de entrada/salida cercanas al modelo base. Además, el autor eliminó los pesos de visión multimodal y las cabezas de Multi-Token Prediction (MTP) para reducir el consumo de VRAM y maximizar el throughput en tareas de código.
+
+El repositorio se distribuye en formato GGUF (388,4 GB en total, con múltiples cuantizaciones) y licencia Apache 2.0. Los idiomas soportados declarados son inglés y chino. El modelo está etiquetado con `model_type: qwen3_5_moe` y emplea atención híbrida Gated DeltaNet con atención lineal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen 35B-A3B MoE (Gated DeltaNet hybrid linear attention) |
-| Parametros totales | 35B |
-| Parametros activos | 3B |
+| Arquitectura | Transformer causal MoE con atención híbrida Gated DeltaNet (atención lineal) |
+| Parametros totales | 34.660.610.688 (≈35B) |
+| Parametros activos | ≈3B por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (no se especifican los tipos concretos en la informacion disponible) |
-| Idiomas soportados | ingles (en), chino (zh) |
+| Tipos de cuantizacion | GGUF (múltiples cuantizaciones disponibles; niveles concretos no especificados) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo); el modelo base en transformers usa safetensors |
+
+Especificaciones adicionales declaradas en la model card: 40 capas de decoder, 256 expertos enrutados, 1 experto compartido, algoritmo de fusión DARE-TIES con escalado sinusoidal por profundidad.
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen 35B-A3B MoE, que combina atencion lineal hibrida Gated DeltaNet con un mecanismo de mezcla de expertos. La configuracion incluye 40 capas de decodificador, 256 expertos enrutados y 1 experto compartido. La fusion se realizo mediante el algoritmo DARE-TIES, que combina deltas de tareas de tres modelos donantes sobre un ancla base. El proceso incluye poda DARE (con densidades de retencion entre 0.65 y 0.75 segun el grupo de parametros), eleccion de signo TIES y una reconstruccion con escalado sinusoidal por profundidad que concentra la transferencia de tareas en las capas intermedias (l entre 12 y 28).
+El modelo es una fusión (merge) de cuatro checkpoints con arquitectura Qwen 35B-A3B: `Jackrong/Qwopus3.6-35B-A3B-Coder` como ancla base (W₀, peso α = 1,00), `ornith-ai/Ornith-1.5-35B-A3B` como donante D₁ (α = 0,30), `Kwaipilot/KAT-Coder-V2.5-Dev` como donante D₂ (α = 0,25) y `Qwen/Qwen-AgentWorld-35B-A3B` como donante D₃ (α = 0,20). No se trata de un entrenamiento desde cero, sino de una combinación de vectores de tarea.
 
-Los datos de entrenamiento especificos no estan disponibles en la informacion proporcionada. El modelo no ha sido sometido a un proceso de entrenamiento tradicional, sino que es el resultado de una fusion de pesos de modelos preentrenados. Las politicas por capas protegen el router MoE y los kernels de estado recurrente DeltaNet de la poda DARE para evitar inestabilidades en el enrutamiento y en el espacio de estados de la atencion lineal. Se eliminaron las cabezas MTP y los pesos de vision para reducir el uso de VRAM.
+El método aplica, para cada parámetro en coma flotante, un delta de tarea Δₖ = Dₖ − W₀. Sobre ese delta se aplica poda DARE con máscara de Bernoulli a densidad de retención p, reescalando los valores supervivientes por p⁻¹. Después se aplica elección de signo TIES: se calcula un signo consenso Γ mediante voto ponderado entre donantes y se descartan las actualizaciones que lo contradicen antes de promediar. La reconstrucción final es W_final = W₀ + λ(l)·Δ_TIES, donde λ(l) = β·(0,5 + 0,5·sin(π·l/39)) para l ∈ [0, 39], lo que concentra la transferencia de tarea en las capas intermedias.
+
+Las políticas estratificadas por capas son: embeddings y LM head con escala lineal β = 1,00; normas y biases con escala lineal β = 1,00; estado recurrente DeltaNet (`a_log`, `dt_bias`, `conv1d`) con escala lineal β = 1,00; router gate MoE con escala lineal β = 1,00; experto compartido con DARE-TIES, densidad 0,70 y β = 0,60; proyecciones de atención con DARE-TIES, densidad 0,75 y β = 0,60; expertos enrutados (×256) con DARE-TIES, densidad 0,65 y β = 0,55. Los pesos de visión y las cabezas MTP fueron eliminados del checkpoint.
 
 ## Capacidades
 
-- Generacion de codigo y sintaxis valida en multiples lenguajes de programacion, con recomendaciones de temperatura baja (0.6) para mantener la estabilidad del enrutamiento.
-- Razonamiento creativo con temperatura mas alta (1.0) y penalizacion de repeticion (1.05) para tareas de escritura o ideacion.
-- Ejecucion de herramientas agente (agentic tool execution), orientado a trayectorias de agente en terminal o entornos de desarrollo.
-- Soporte de tool calling / function calling, integrado en la arquitectura base de Qwen.
-- Capacidades multilingues limitadas a ingles y chino, segun la informacion del modelo.
-- Razonamiento multi-paso y planificacion de tareas, reforzado por la fusion con modelos especializados en agentes.
-- Inferencia eficiente gracias a los 3B de parametros activos por token, lo que reduce la latencia y el consumo de memoria.
+- Generación de texto causal en inglés y chino.
+- Síntesis y generación de código, con especialización declarada en ingeniería de software.
+- Razonamiento agéntico y ejecución de herramientas (tool calling), heredado del donante Qwen-AgentWorld.
+- Razonamiento multi-paso orientado a tareas de código.
+- Capacidades de razonamiento general (etiqueta `reasoning` en el repo).
+- No incluye visión: los pesos multimodales fueron eliminados explícitamente.
+- No incluye decodificación especulativa MTP: las cabezas fueron eliminadas.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
 
 ## Casos de uso
 
-- Asistente de programacion en IDE: el modelo puede integrarse en editores como VS Code o JetBrains para autocompletar codigo, generar funciones y refactorizar, aprovechando su especializacion en sintaxis y su baja latencia gracias a los 3B de parametros activos.
-- Agente de terminal autonomo: puede ejecutar comandos, interpretar salidas y tomar decisiones de siguiente paso en entornos de linea de comandos, gracias a su soporte de tool calling y su entrenamiento en trayectorias agente.
-- Generacion de codigo en pipelines CI/CD: el modelo puede generar tests unitarios, documentacion tecnica o parches de codigo automaticamente, integrándose en flujos de integracion continua con herramientas como vLLM o TGI.
-- Chatbot de soporte tecnico bilingue: con soporte para ingles y chino, puede atender consultas de usuarios en ambos idiomas, manteniendo contexto largo si se configura con la ventana adecuada.
-- Prototipado rapido de aplicaciones: los desarrolladores pueden usar el modelo para generar esqueletos de aplicaciones, scripts de automatizacion o consultas SQL, reduciendo el tiempo de desarrollo inicial.
-- Razonamiento logico y resolucion de problemas: en modo creativo, puede abordar problemas de matematicas, logica o planificacion, aunque no se han publicado benchmarks especificos que cuantifiquen su rendimiento en estas tareas.
+- Asistencia de programación en IDE: el modelo puede completar y generar código en múltiples lenguajes dentro de un editor, aprovechando la fusión de tres donantes especializados en código y su bajo número de parámetros activos (≈3B) para mantener latencia reducida en inferencia interactiva.
+- Ejecución de agentes con tool calling: al heredar capacidades de Qwen-AgentWorld, puede invocarse en bucles agénticos donde el modelo decide qué función llamar y con qué argumentos, integrándose en frameworks de agentes mediante plantilla de chat compatible.
+- Generación de tests y refactorización: adecuado para tareas de transformación de código donde el contexto de repositorio es relevante, aunque la longitud de contexto no está documentada en la información disponible.
+- Automatización de pipelines de CI/CD: puede integrarse como paso de generación o revisión de parches en flujos automatizados, con despliegue vía llama.cpp u Ollama gracias al formato GGUF.
+- Razonamiento multi-paso sobre documentación técnica: útil para responder preguntas que requieren encadenar pasos sobre especificaciones o bases de código.
+- Despliegue en hardware de gama alta para consumidores: las cuantizaciones GGUF permiten ejecutar el modelo en estaciones de trabajo con GPU de consumo, reduciendo el coste frente a modelos densos de tamaño equivalente.
+- Evaluación comparativa de técnicas de merge: el repositorio documenta con detalle el método DARE-TIES y las políticas por capa, lo que lo convierte en un caso de estudio reproducible para investigadores interesados en fusión de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -50,29 +58,43 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tener 3B de parametros activos, el modelo puede ejecutarse en GPUs de consumo medio. Con cuantizacion GGUF de 4 bits, se estima un uso de VRAM de aproximadamente 4-6 GB, aunque el valor exacto depende del tipo de cuantizacion y de la longitud de contexto.
-- GPU recomendadas: RTX 3060 (12 GB) o superior para cuantizaciones de 4 bits; RTX 4090 o A100 para cuantizaciones mas altas o contextos largos.
-- Compatibilidad con consumer GPU: si, siempre que se use cuantizacion GGUF de 4 bits o inferior y se limite la longitud de contexto.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI, o cualquier framework compatible con GGUF.
-- Latencia y throughput: no disponible en la informacion proporcionada, pero la arquitectura MoE con 3B activos sugiere una latencia menor que un modelo denso de 35B.
+- VRAM estimada: no disponible de forma explícita. Como referencia de orden de magnitud, un modelo MoE de 35B totales en cuantización de 4 bits requiere aproximadamente 18-20 GB solo para pesos, más overhead de contexto y caché KV; en 8 bits, en torno a 35 GB. Estas cifras son estimaciones generales, no datos publicados por el autor.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, un modelo de este tipo encaja en A100 40/80 GB, H100 y RTX 4090 (24 GB) con cuantizaciones agresivas.
+- ¿Cabe en GPU de consumo? Con cuantizaciones GGUF de 4 bits es plausible en RTX 4090 y GPUs con 24 GB o más; no confirmado por el autor.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI no están confirmados para este checkpoint concreto. La librería declarada es `transformers`.
+- Latencia y throughput: no disponibles. El autor indica que la eliminación de pesos de visión y cabezas MTP busca maximizar el throughput en tareas de código, pero no publica cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con modelos similares. Los modelos base que componen la fusion (Qwopus3.6-35B-A3B-Coder, Ornith-1.5-35B-A3B, KAT-Coder-V2.5-Dev y Qwen-AgentWorld-35B-A3B) son los referentes directos, pero no se han publicado metricas comparativas en la informacion disponible.
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| SignOfFour-GGUF | ≈35B | ≈3B | no disponible | Apache 2.0 | GGUF | Fusión DARE-TIES de 4 modelos Qwen 35B-A3B |
+| Jackrong/Qwopus3.6-35B-A3B-Coder | ≈35B | ≈3B | no disponible | no disponible | no disponible | Ancla base del merge; especializado en código |
+| Kwaipilot/KAT-Coder-V2.5-Dev | ≈35B | ≈3B | no disponible | no disponible | no disponible | Donante especializado en código |
+| Qwen/Qwen-AgentWorld-35B-A3B | ≈35B | ≈3B | no disponible | no disponible | no disponible | Donante orientado a agentes y tool calling |
+
+Los tres modelos comparables comparten la misma arquitectura base Qwen 35B-A3B, por lo que la comparación se limita al rol dentro del merge y a la especialización declarada. No se dispone de datos de benchmarks ni de contexto para ninguno de ellos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se han documentado sesgos especificos, pero al ser un modelo derivado de Qwen, puede heredar sesgos presentes en los datos de entrenamiento originales.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en tareas creativas con temperatura alta.
-- Limitaciones de contexto: la longitud de contexto no esta especificada en la informacion disponible; se recomienda verificar la configuracion del modelo base Qwen.
-- Restricciones de idioma: solo soporta ingles y chino; no se recomienda su uso en otros idiomas sin evaluacion previa.
-- Limitaciones de produccion: al ser un modelo de fusion, no se han publicado evaluaciones exhaustivas de robustez o seguridad; se recomienda validar su comportamiento en el dominio de uso antes de desplegarlo en produccion.
-- Licencia: Apache 2.0 permite uso comercial, pero se debe verificar la licencia de los modelos base y de los pesos fusionados.
+- Modelo resultante de una fusión, no de entrenamiento directo: el comportamiento puede ser menos predecible que el de un fine-tune convencional, y los efectos de la combinación de vectores de tarea no están validados con benchmarks publicados.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Longitud de contexto no especificada: no es posible planificar aplicaciones que dependan de ventanas largas sin verificación empírica.
+- Eliminación de visión y MTP: no admite entrada multimodal ni decodificación especulativa, lo que limita su uso en tareas que requieran imagen o en despliegues que dependan de MTP para throughput.
+- Riesgo de alucinación: inherente a los modelos generativos; no se documentan evaluaciones de fidelidad.
+- Sesgos: no se documentan análisis de sesgo en la model card.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo fusionado ni sobre posibles obligaciones derivadas de los modelos donantes.
+- El repositorio incluye promoción de contenido de pago (Patreon) y un modelo más reciente; conviene verificar la vigencia del checkpoint antes de adoptarlo en producción.
+- Tamaño del repo de 388,4 GB: la descarga completa es costosa; conviene seleccionar una única cuantización.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/pragmaticcs/SignOfFour-GGUF
-- Modelo base (ancla): https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder
-- Modelo donante 1: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Modelo donante 2: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
-- Modelo donante 3: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/pragmaticcs/SignOfFour-GGUF
+- Modelo ancla: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder
+- Donante 1: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Donante 2: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
+- Donante 3: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
+- Modelo más reciente del autor: https://huggingface.co/pragmaticcs/MiMo-HERO-UIUX-Designer-9B-GGUF
+- Patreon del autor: https://patreon.com/pragmaticcs
+- Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
+- Librería transformers: https://github.com/huggingface/transformers

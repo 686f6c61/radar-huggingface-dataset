@@ -2,108 +2,102 @@
 
 ## Resumen
 
-Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP es una cuantizacion en formato MLX de 4 bits del modelo abliterated Huihui-Ornith-1.5-35B-A3B-abliterated, publicada por el usuario peculiar-ragdoll. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con arquitectura derivada de la familia Qwen3.5-MoE (tag `qwen35moe`), 35.951.822.704 parametros totales y aproximadamente 3.000 millones de parametros activos por token (el sufijo A3B de la nomenclatura). El modelo conserva la cabeza de prediccion multi-token (MTP) del modelo original, lo que habilita decodificacion especulativa en runtimes compatibles.
+Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP es una cuantizacion de 4 bits en formato MLX de un modelo de lenguaje de tipo mezcla de expertos (MoE) con 35.951.822.704 parametros totales y aproximadamente 3.000 millones de parametros activos por token, segun la nomenclatura A3B del nombre. Lo publica el usuario peculiar-ragdoll y deriva de huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated, a su vez una version sin censura (abliterated) de Ornith-1.5-35B-A3B. El modelo esta orientado a programacion agentica y a tareas de seguridad ofensiva, y se distribuye con licencia MIT.
 
-La relevancia de esta ficha reside en su naturaleza de artefacto altamente especializado: no es un modelo base, sino un derivado de tercer nivel (Ornith-1.5 → abliterated por huihui-ai → re-cuantizado por peculiar-ragdoll) orientado explicitamente a "agentic coding" y a tareas de seguridad ofensiva sin rechazos. Incorpora una plantilla de chat propia ("Sharp chat template") y una calibracion de cuantizacion realizada contra un corpus ponderado hacia dominios de ciberseguridad, usando el cuantizador oQ4e de oMLX. El resultado ocupa aproximadamente 22 GB en disco y esta disenado para ejecutarse en Apple Silicon.
+La pieza diferencial es el proceso de cuantizacion: se ha recuantizado con el cuantizador oQ4e de oMLX sobre un corpus de calibracion propio ponderado hacia dominios de ciberseguridad, se le ha aplicado la plantilla de chat Sharp del mismo autor y se conserva la cabeza de prediccion multi-token (MTP) del modelo base, lo que habilita decodificacion especulativa en runtimes compatibles. El resultado es un artefacto de aproximadamente 22 GB pensado para Apple Silicon, con soporte de vision (pipeline image-text-to-text) y ventana de contexto no documentada en la informacion disponible.
 
-Es importante subrayar que las cifras de rendimiento publicadas por el autor se midieron sobre la build GGUF (`UD-Q4_K_M` con k-quants de llama.cpp), no sobre este fichero MLX, cuyo cuantizador es distinto. Ademas, el autor advierte que esta build concreta (sufijo `-MTP`) produce salida corrupta en LM Studio y solo funciona correctamente en oMLX. La licencia declarada es MIT, y los idiomas soportados son ingles y chino.
+Es relevante ahora porque ocupa un nicho poco cubierto: un coder MoE de 35B en 4 bits que, segun el autor, resuelve aproximadamente un 70 % mas de problemas reales de SWE-bench-Live que Ornith-1.5 y Qwen3.6-35B-A3B, manteniendo velocidad. No obstante, esas cifras se midieron sobre la build GGUF, no sobre este fichero MLX, y el modelo solo funciona correctamente en oMLX: en LM Studio produce salida corrupta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) derivada de Qwen3.5-MoE, con cabeza de prediccion multi-token (MTP) |
+| Arquitectura | Transformer MoE (tag `qwen3_5_moe`), con cabeza de prediccion multi-token (MTP) |
 | Parametros totales | 35.951.822.704 |
-| Parametros activos | Aproximadamente 3.000 millones (nomenclatura A3B; valor exacto no disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | 4 bits (oQ4e de oMLX, con imatrix y calibracion propia); el autor referencia tambien una variante oQ6e en la misma familia |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Parametros activos | ~3B (denominacion A3B; cifra exacta no disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits (oQ4e de oMLX, con imatrix y calibracion propia); existe tambien una build oQ6e y una build GGUF UD-Q4_K_M |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | MLX (safetensors), libreria `mlx`; existe build GGUF separada publicada por el mismo autor |
-| Tamano del repositorio | 88,1 GB |
-| Tamano en disco de la build | Aproximadamente 22 GB |
-| Modalidad | Image-text-to-text (vision) |
-| Modelo base | huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated |
-| Descargas / likes | 3.283 / 25 |
+| Formato de pesos | safetensors en formato MLX (libreria `mlx`); build alternativa GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de tipo Mixture-of-Experts con enrutamiento disperso: de los ~36.000 millones de parametros totales solo se activan aproximadamente 3.000 millones por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamano. La arquitectura procede de Ornith-1.5-35B-A3B (organizacion ornith-ai), que a su vez se encuadra en la familia Qwen3.5-MoE segun los tags del repositorio. Una innovacion tecnica destacable es la presencia de una cabeza MTP entrenada, que permite decodificacion especulativa multi-token en runtimes que la soportan (oMLX y llama.cpp segun el autor), acelerando la generacion.
+La arquitectura es un transformer de mezcla de expertos con 35.951.822.704 parametros totales y unos 3.000 millones activos por token, heredada de Ornith-1.5-35B-A3B. Sobre esa base, la version de huihui-ai aplica abliteration, una tecnica de edicion de pesos que elimina la direccion de rechazo en el espacio de activaciones, de modo que el modelo deja de negarse a responder. peculiar-ragdoll anade tres capas propias: recuantizacion con el cuantizador oQ4e de oMLX usando una matriz de importancia (imatrix) calculada sobre un corpus de calibracion ponderado hacia ciberseguridad, la plantilla de chat Sharp y la conservacion de la cabeza MTP entrenada del modelo base junto con el flag de configuracion que la activa.
 
-El pipeline de entrenamiento y derivacion tiene tres etapas documentadas: (1) el modelo base Ornith-1.5-35B-A3B; (2) la version abliterated de huihui-ai, que elimina el comportamiento de rechazo mediante intervencion sobre direcciones de activacion; (3) la re-cuantizacion por parte de peculiar-ragdoll con el cuantizador oQ4e de oMLX, usando una matriz de importancia (imatrix) y un corpus de calibracion ponderado hacia ciberseguridad, ademas de la aplicacion de una plantilla de chat propia ("Sharp"). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset original ni si se emplearon tecnicas de RLHF o DPO en el modelo base.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo original en la informacion proporcionada. La innovacion tecnica destacable es la MTP: una cabeza que predice varios tokens futuros y permite decodificacion especulativa, acelerando la generacion en runtimes que la implementan (oMLX y llama.cpp con la build GGUF). La cuantizacion oQ4e emplea calibracion dinamica estilo unsloth-dynamic, segun los tags del repositorio.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles y chino.
-- Razonamiento y resolucion de problemas de codigo en entornos agenticos (el autor lo posiciona como "agentic coder").
-- Capacidades de vision: el pipeline declarado es `image-text-to-text`, por lo que acepta entradas de imagen junto con texto.
-- Decodificacion especulativa mediante cabeza MTP entrenada, con aceleracion de generacion en runtimes compatibles.
-- Comportamiento abliterated: ausencia de rechazos ante peticiones que otros modelos declinarian, incluida tematica de seguridad ofensiva.
-- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible.
-- Capacidad de agente multi-paso: inferida del uso declarado en SWE-bench-Live (resolucion autonoma de issues en repositorios), aunque sin documentacion tecnica detallada.
-- Plantilla de chat propia ("Sharp chat template") publicada como repositorio independiente.
+- Generacion de texto y razonamiento general en ingles y chino.
+- Programacion agentica: resolucion autonoma de issues y bugs en bases de codigo grandes, segun los resultados declarados en SWE-bench-Live.
+- Capacidades de vision: el pipeline declarado es image-text-to-text, por lo que acepta imagenes junto con texto.
+- Tool calling y function calling: el autor lo posiciona como coder agentico; la plantilla Sharp esta disenada para ese uso, aunque no se detalla el formato exacto en la informacion disponible.
+- Razonamiento multi-paso y uso de agentes, incluyendo tareas de seguridad ofensiva tipo CTF ejecutadas sin guia (15 de 43 retos de Cybench).
+- Decodificacion especulativa mediante la cabeza MTP en runtimes compatibles.
+- Comportamiento sin rechazos (0 negativas en 84 peticiones de HarmBench, muestreadas de doce en doce).
+- Capacidades multilingues limitadas a ingles y chino.
 
 ## Casos de uso
 
-- Resolucion autonoma de issues en repositorios grandes: el modelo esta evaluado en SWE-bench-Live, que mide la capacidad de corregir bugs reales en codebases con tests de regresion ocultos. Su naturaleza MoE con ~3B activos permite iterar sobre parches a un coste por token bajo, adecuado para bucles de agente largos.
-- Desarrollo asistido en local sobre Apple Silicon: con ~22 GB en 4 bits, se puede ejecutar en un Mac con memoria unificada de 32 GB o superior mediante oMLX, sin necesidad de GPU dedicada ni de enviar codigo propietario a la nube.
-- Auditoria de seguridad ofensiva y pentesting autorizado: el autor reporta 15 de 43 retos CTF resueltos en Cybench sin guia ni juez, lo que lo hace util para tareas de reconocimiento, analisis de vulnerabilidades y explotacion en entornos de laboratorio controlados.
-- Generacion de codigo en pipelines internos: al estar abliterated, evita rechazos en dominios duales (cifrado, ingenieria inversa, herramientas de red) donde modelos censurados interrumpen el flujo; requiere sandboxing y supervision.
-- Prototipado rapido de agentes con entrada visual: al aceptar image-text-to-text, permite construir asistentes que razonan sobre capturas de pantalla, diagramas de arquitectura o interfaces para generar codigo asociado.
-- Investigacion sobre alineacion y abliteration: sirve como sujeto de estudio para medir como la eliminacion de rechazos afecta a la utilidad en tareas tecnicas y a la tasa de respuestas daninas (HarmBench, 0% de rechazos en 84 peticiones segun el autor).
-- Evaluacion comparativa de cuantizadores: la existencia de builds paralelas (oQ4e, oQ6e, GGUF UD-Q4_K_M, con y sin MTP) permite estudiar el impacto del esquema de cuantizacion en tareas de codigo.
+- Reparacion autonoma de bugs en produccion: el modelo puede recibir un issue con su contexto de repositorio y generar un parche verificable, un escenario medido directamente en SWE-bench-Live con pruebas de regresion ocultas.
+- Asistente de codigo en el IDE sobre portatiles Apple Silicon: con unos 22 GB en 4 bits cabe en equipos con 32 GB o 36 GB de memoria unificada, lo que permite ejecutarlo localmente sin GPU dedicada.
+- Automatizacion de pipelines CI/CD: integrado como agente que lee fallos de build, propone correcciones y las aplica mediante tool calling, con la ventaja de la velocidad de un MoE de 3B activos.
+- Pentesting autorizado y formacion en seguridad: el modelo aborda tareas de reconocimiento, explotacion en entornos controlados y analisis de vulnerabilidades sin negarse, lo que lo hace util en laboratorios de red team con sandboxing.
+- Analisis de capturas de pantalla y diagramas de arquitectura: gracias al pipeline image-text-to-text puede interpretar imagenes tecnicas junto a texto, por ejemplo diagramas de red o trazas de error.
+- Procesamiento de documentacion y codigo en chino e ingles: util para equipos que trabajan con bases de codigo y documentacion en ambos idiomas.
+- Generacion de pruebas y analisis estatico asistido: el modelo puede redactar tests unitarios y revisar diffs en un bucle agentico con contexto de repositorio.
 
 ## Benchmarks y rendimiento
 
-El autor publica resultados medidos sobre la build GGUF en `UD-Q4_K_M`, no sobre este fichero MLX:
+El autor advierte expresamente que las cifras publicadas se midieron sobre la build GGUF en su nivel UD-Q4_K_M con k-quants de llama.cpp, no sobre este fichero MLX con cuantizador oQ. No se ofrecen numeros absolutos de MMLU, HumanEval o GSM8K en la informacion disponible; solo comparaciones relativas y recuentos de tareas.
 
-| Benchmark | Resultado reportado |
-|---|---|
-| SWE-bench-Live (problemas resueltos) | Aproximadamente un 70% mas de problemas resueltos que Ornith-1.5 y Qwen3.6-35B-A3B |
-| SWE-bench-Live (tiempo por resolucion) | Resoluciones de codigo agentico 3-4 veces mas rapidas que un modelo denso 3.8-27B |
-| Cybench (unguided, sin pistas ni juez) | 15 de 43 flags capturadas (35%) |
-| HarmBench | 0 rechazos en 84 peticiones |
+| Benchmark | Resultado declarado | Notas |
+|---|---|---|
+| SWE-bench-Live | ~70 % mas problemas resueltos que Ornith-1.5 y Qwen3.6-35B-A3B | Medido en GGUF UD-Q4_K_M; mejora ~7x mayor que el salto Qwen3.5 a 3.6 |
+| Cybench (unguided) | 15/43 flags (35 %) | Sin pistas ni juez |
+| HarmBench | 0 negativas en 84 peticiones | Muestreo de doce en doce |
+| Velocidad agentica | 3-4x mas rapido que un dense de 3.8-27B en resolucion de tareas | Declarado por el autor |
 
-No se publican valores absolutos de MMLU, HumanEval ni GSM8K en la informacion disponible. Las cifras anteriores corresponden al modelo y no deben interpretarse como mediciones de esta build MLX concreta, segun advierte el propio autor.
+No se han publicado resultados absolutos de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: aproximadamente 22 GB para los pesos en 4 bits; con overhead de contexto y cache KV conviene reservar 26-32 GB de memoria unificada.
-- Plataforma objetivo: Apple Silicon exclusivamente (libreria MLX). No es ejecutable en GPU NVIDIA ni AMD mediante este fichero.
-- GPU recomendadas: SoCs Apple M-series con al menos 32 GB de memoria unificada (M1/M2/M3/M4 Pro, Max o Ultra). En configuraciones de 24 GB no cabe con margen para contexto largo.
-- Cabe en GPU consumer: si, en el sentido de Macs consumer con memoria unificada suficiente; no en GPUs dedicadas de consumo mediante este formato.
-- Opciones de despliegue: oMLX es el runtime soportado y validado, incluida la cabeza MTP. LM Studio no es compatible con esta build `-MTP` (genera salida corrupta). Para llama.cpp o LM Studio debe usarse la build GGUF del mismo autor o la build MLX sin MTP.
-- Latencia y throughput: no disponibles como cifras absolutas; el autor afirma una ventaja de 3-4x en tiempo de resolucion frente a un denso 3.8-27B en tareas agenticas de codigo.
+- VRAM o memoria unificada estimada: aproximadamente 22 GB para esta build de 4 bits; la build oQ6e requiere mas, aunque la cifra exacta no esta disponible.
+- Plataforma objetivo: Apple Silicon con MLX; el autor no documenta soporte CUDA para este fichero.
+- Cabe en consumer hardware Apple: equipos con 32 GB de memoria unificada o superior (Mac Studio, MacBook Pro con M-series Pro/Max).
+- Runtime recomendado: oMLX, unico entorno que ejecuta correctamente la cabeza MTP.
+- LM Studio: no usar esta build; el motor MLX de LM Studio malinterpreta la MTP y produce basura multilingue desde el primer token. Alternativas: la build GGUF con llama.cpp o la build MLX sin MTP.
+- Despliegue alternativo: llama.cpp con el fichero GGUF UD-Q4_K_M; no se documenta soporte en vLLM ni TGI para este artefacto.
+- Latencia y throughput: no disponibles como cifras absolutas; el autor afirma ventajas de 3-4x frente a modelos dense de 3.8-27B en tareas agenticas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP | 35,95B | ~3B | No disponible | MIT | MLX 4-bit | Abliterated, MTP, solo oMLX |
-| Tiel-Coder-35B-A3B-MLX-oQ4e | 35,95B | ~3B | No disponible | MIT | MLX 4-bit | Version censurada del mismo autor, mismo pipeline |
-| Ornith-1.5-35B-A3B | 35,95B | ~3B | No disponible | No disponible | No disponible | Modelo base sin abliterar ni re-cuantizar |
-| Qwen3.6-35B-A3B | 35B | ~3B | No disponible | No disponible | No disponible | Referencia comparativa citada por el autor en SWE-bench-Live |
-
-No se dispone de datos de contexto ni de benchmarks absolutos de los modelos comparados en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP | 35,95B totales / ~3B activos | no disponible | 4 bits oQ4e | MIT | Abliterated, vision, MTP, solo oMLX |
+| Tiel-Coder-35B-A3B-MLX-oQ4e | 35,95B totales / ~3B activos | no disponible | 4 bits oQ4e | MIT | Version censurada del mismo autor |
+| Ornith-1.5-35B-A3B | 35,95B totales / ~3B activos | no disponible | varias | no disponible | Base del modelo; resuelve ~70 % menos en SWE-bench-Live segun el autor |
+| Qwen3.6-35B-A3B | 35B totales / ~3B activos | no disponible | varias | no disponible | Referencia de la misma clase; mismo rendimiento declarado que Ornith-1.5 en SWE-bench-Live |
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: elimina deliberadamente los rechazos, incluidos los de contenido potencialmente danino. El autor traslada toda la responsabilidad legal y etica al usuario y exige sandboxing y monitorizacion.
-- Incompatibilidad critica con LM Studio: esta build `-MTP` emite tokens aleatorios desde el primer token en el motor MLX de LM Studio. No hay ajuste de configuracion que lo corrija; debe usarse oMLX o la build GGUF.
-- Benchmarks no representativos de este fichero: las cifras publicadas corresponden a la build GGUF con k-quants, no al cuantizador oQ4e de este repositorio.
-- Sesgos: no documentados por el autor; al derivar de un modelo entrenado principalmente en ingles y chino, es esperable un sesgo linguistico y cultural hacia esos idiomas.
-- Riesgo de alucinacion: no cuantificado; en tareas de seguridad ofensiva puede generar exploits o comandos plausibles pero incorrectos, con riesgo operativo si se ejecutan sin revision.
-- Limitaciones de idioma: solo ingles y chino declarados; el rendimiento en castellano no esta garantizado ni evaluado.
-- Contexto: la longitud de ventana no se especifica en la model card, lo que impide planificar cargas de trabajo con documentos largos.
-- Cadena de derivacion de terceros: tres transformaciones sucesivas (Ornith-1.5 → abliteration de huihui-ai → re-cuantizacion) sin evaluacion independiente publicada.
-- Licencia MIT declarada, pero la procedencia del modelo base y las condiciones de Ornith-1.5 no se detallan en la informacion disponible; conviene verificar la compatibilidad antes de uso comercial.
+- Modelo abliterated: no rechaza peticiones daninas. El autor traslada al usuario toda la responsabilidad legal y etica y recomienda sandboxing y monitorizacion.
+- Riesgo elevado de contenido peligroso en dominios de ciberseguridad ofensiva; no apto para exposicion directa a usuarios finales sin filtros externos.
+- Solo funciona correctamente en oMLX; en LM Studio la build MTP genera salida corrupta de forma reproducible.
+- Las cifras de rendimiento proceden de la build GGUF, no de este fichero; el cambio de cuantizador altera los resultados.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
+- Longitud de contexto no disponible, lo que impide planificar tareas con repositorios grandes sin pruebas previas.
+- Riesgo de alucionacion inherente a los modelos de lenguaje, agravado en tareas de seguridad donde una explotacion inventada puede inducir a error.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Licencia MIT permite uso comercial, pero la ausencia de clausulas de responsabilidad no exime de las obligaciones legales del despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
-- Build MLX sin MTP: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e
+- Modelo base: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
+- Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Build GGUF: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF
-- Version censurada (TielCoder): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
+- Build MLX sin MTP: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e
+- Version censurada: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
 - Plantillas de chat Sharp: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
-- Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
-- Modelo Ornith-1.5 original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

@@ -5,7 +5,7 @@
   "author": "CowboyToadGames",
   "url": "https://huggingface.co/CowboyToadGames/ctg-wav2vec2-xlsr-53-espeak-cv-ft-onnx-int8",
   "created_at": "2026-11-18T16:20:00.000Z",
-  "updated_at": "2026-11-18T16:42:53.000Z",
+  "updated_at": "2026-11-18T17:13:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

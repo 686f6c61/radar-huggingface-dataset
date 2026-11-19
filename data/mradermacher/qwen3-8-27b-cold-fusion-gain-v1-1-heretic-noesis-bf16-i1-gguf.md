@@ -2,87 +2,97 @@
 
 ## Resumen
 
-Este repositorio contiene la cuantización GGUF con matriz de importancia (imatrix) del modelo `AMAImedia/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16`, un fine-tune de 27 mil millones de parámetros derivado de Qwen3.8-27B. El modelo original, desarrollado por DavidAU, aplica la metodología COLD FUSION, que combina la técnica GAIN (entrenamiento dinámico por muestra) con la infraestructura de Unsloth para reducir los tokens de pensamiento a entre 1/10 y 1/2 de los modelos Qwen estándar, manteniendo aproximadamente el 99 % del rendimiento en precisión completa incluso con cuantización de 8 bits. La variante "heretic" indica que el modelo ha sido sometido a abliteration (eliminación de capas de rechazo), lo que lo hace menos censurado y más directo en sus respuestas. El término "NOESIS" hace referencia a un repack interno del modelo.
+`mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16-i1-GGUF` es una recuantización en formato GGUF, generada por mradermacher, del modelo base `AMAImedia/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16`. Se trata de un derivado de la familia Qwen (los tags del repositorio mencionan qwen3.5, qwen3.6 y qwen3.8) con 26.895.998.464 parámetros totales, es decir, aproximadamente 27B, empaquetado en BF16 y posteriormente convertido a cuantizaciones GGUF de tipo i1 (imatrix) para su uso con llama.cpp y herramientas compatibles.
 
-La cuantización GGUF, realizada por mradermacher, ofrece múltiples niveles de compresión (desde IQ1_M hasta Q6_K) para adaptarse a distintos recursos de hardware. El modelo es multimodal (incluye torre de visión) y soporta una ventana de contexto nativa de 262 000 tokens, extensible a 1 000 000. Está licenciado bajo Apache-2.0, lo que permite uso comercial sin restricciones significativas. La relevancia actual radica en su capacidad para ofrecer razonamiento extenso con un coste computacional reducido en comparación con modelos de tamaño similar, y en su naturaleza "uncensored" que atrae a desarrolladores que buscan respuestas sin filtros.
+El modelo resuelve el problema de ejecutar un modelo de ~27B en hardware con memoria limitada: el repositorio ofrece un abanico de cuantizaciones desde i1-IQ1_S (7,2 GB) hasta i1-IQ4_XS (15,2 GB) y superiores, lo que permite desplegarlo desde GPUs de consumo hasta estaciones de trabajo. La licencia es Apache 2.0 y la model card declara soporte para más de 100 idiomas, incluyendo castellano, inglés, ruso, chino, japonés y vietnamita entre los principales.
 
-## Especificaciones técnicas
+Es relevante ahora porque combina tres factores poco habituales: un tamaño de 27B (equilibrio entre capacidad y coste de inferencia), una licencia permisiva para uso comercial y una batería amplia de cuantizaciones con imatrix, que mejoran la relación calidad/tamaño frente a cuantizaciones estáticas. No obstante, la información publicada sobre arquitectura interna, datos de entrenamiento y benchmarks es muy escasa.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atención híbrida (lineal en 48 de 64 capas), torre de visión y cabeza de borrador MTP incorporada |
-| Parametros totales | 26 895 998 464 (~26,9 mil millones) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262 000 tokens nativos, extensible a 1 000 000 |
-| Tipos de cuantizacion | i1-IQ1_M, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-IQ4_XS, i1-Q4_K_S, i1-Q4_K_M, i1-Q6_K |
-| Idiomas soportados | Inglés, ruso, chino, japonés, kazajo, vietnamita |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1) |
+| Arquitectura | no disponible (derivado de la familia Qwen; tags qwen3.5/qwen3.6/qwen3.8) |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_K_S, Q4_K_M, Q4_0, Q4_1, Q5_K_S, Q5_K_M, Q6_K; ademas cuantizaciones estaticas en repo hermano |
+| Idiomas soportados | más de 100 (en, es, ru, zh, ja, vi, kk, de, fr, ar, hi, ko, pt, it, nl, pl, tr, uk, etc.) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (BF16 como base; repo hermano con cuantizaciones estaticas) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B presenta una arquitectura de transformer denso con atención híbrida: 48 de sus 64 capas utilizan atención lineal (probablemente basada en mecanismos como GQA o similar), lo que reduce el coste computacional en secuencias largas, mientras que las 16 restantes mantienen atención completa. Incluye una torre de visión para procesamiento multimodal y una cabeza de borrador MTP (Multi-Token Prediction) integrada que acelera la decodificación especulativa. El fine-tune COLD FUSION aplica la técnica GAIN, que ajusta dinámicamente los pesos por muestra durante el entrenamiento, y utiliza Unsloth para optimizar el proceso. El resultado es una reducción drástica de los tokens de pensamiento (thinking tokens) en tareas de razonamiento, pasando de miles a unos pocos cientos, sin sacrificar precisión.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. Los tags del repositorio (`qwen3.5`, `qwen3.6`, `qwen3.8`, `mtp`, `noesis`, `noesis-repack`) sugieren un transformer derivado de la familia Qwen, con posible soporte de Multi-Token Prediction (MTP) y un proceso de repack/mezcla denominado "NOESIS". El nombre "Cold-Fusion-GAIN" y el sufijo "heretic" apuntan a una fusión de modelos o a un ajuste orientado a reducir rechazos (abliteración o "decensoring"), aunque no se detalla la metodología.
 
-El modelo "heretic" ha sido sometido a abliteration, un proceso que elimina las direcciones de activación asociadas al rechazo de respuestas, lo que produce un comportamiento menos censurado. La variante NOESIS es un repack interno que reorganiza los pesos para mejorar la coherencia interna. Los datos de entrenamiento no se especifican en la documentación disponible, pero se infiere que incluyen corpora multilingües (inglés, ruso, chino, japonés, kazajo, vietnamita) y posiblemente datos de código y matemáticas, dado el origen Qwen. No se menciona el uso de RLHF o DPO, aunque la abliteration sugiere que el modelo original tenía algún mecanismo de alineación que ha sido parcialmente eliminado.
+Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La información disponible se limita a la existencia de un fichero imatrix para la generación de cuantizaciones, lo que indica que el autor de las cuantizaciones aplicó importance matrix calibration sobre el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo: gracias a la reducción de tokens de pensamiento, puede resolver problemas de lógica, matemáticas y análisis con menos overhead computacional.
-- Comprensión multimodal: al incluir torre de visión, puede procesar imágenes junto con texto (aunque los archivos mmproj se encuentran en el repositorio estático correspondiente).
-- Soporte multilingüe: cubre seis idiomas principales, con especial énfasis en inglés, ruso y chino.
-- Decodificación especulativa con MTP: acelera la generación de texto al predecir múltiples tokens a la vez.
-- Ventana de contexto muy larga: 262K tokens nativos, ampliable a 1M, adecuada para documentos extensos o conversaciones de múltiples turnos.
-- Comportamiento "uncensored": la abliteration elimina gran parte de los filtros de rechazo, permitiendo respuestas directas sobre temas sensibles.
-- Conversación y diálogo: diseñado para interacciones conversacionales fluidas, como indica su etiqueta "conversational".
-- Tool calling y function calling: no se especifica explícitamente en la información disponible, pero al derivar de Qwen3.8 es probable que los soporte; no obstante, no se puede confirmar sin documentación adicional.
+- Generación de texto conversacional multi-turno (tag `conversational`).
+- Soporte multilingüe amplio: más de 100 idiomas declarados, con castellano, inglés, ruso, chino, japonés, vietnamita y kazajo entre los principales.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue como servicio.
+- Posible soporte de Multi-Token Prediction (tag `mtp`), no confirmado en la documentación.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Vision, audio o thinking mode: no disponible.
 
 ## Casos de uso
 
-- Asistente de atención al cliente multilingüe: con su soporte para seis idiomas y su ventana de contexto de 262K tokens, puede gestionar conversaciones largas y multilingües, manteniendo el historial completo sin truncamientos. La reducción de tokens de pensamiento permite respuestas rápidas en entornos de producción.
-- Generación de código y depuración: aunque no se mencionan benchmarks de código, su base Qwen3.8 le confiere capacidades sólidas en programación. Puede integrarse en IDEs o pipelines de CI/CD para autocompletar, revisar y explicar código.
-- Análisis de documentos largos: con 262K tokens de contexto, puede procesar libros, informes legales o artículos científicos completos, extrayendo resúmenes, respondiendo preguntas o identificando patrones.
-- Sistema de razonamiento para agentes autónomos: su capacidad de razonamiento con menos tokens de pensamiento lo hace eficiente para frameworks de agentes que requieren múltiples pasos de planificación y ejecución.
-- Moderación de contenido y generación creativa sin restricciones: al ser "uncensored", puede utilizarse para escribir ficción, guiones o contenido que otros modelos rechazarían por políticas de seguridad.
-- Entrenamiento y fine-tuning posterior: al estar licenciado bajo Apache-2.0 y ofrecer cuantizaciones de alta calidad (como Q4_K_M o Q6_K), puede servir como base para adaptaciones específicas en dominios como medicina, derecho o educación, siempre que se respete la licencia.
+- Asistente conversacional multilingüe en producción: el modelo declara soporte para más de 100 idiomas, lo que permite atender usuarios en castellano, inglés, ruso o chino con un único despliegue y sin cambiar de modelo por idioma.
+- Despliegue en GPU de consumo: las cuantizaciones i1-IQ4_XS (15,2 GB) o i1-Q4_K_M permiten ejecutar un modelo de ~27B en GPUs con 16-24 GB de VRAM, algo inviable con los pesos BF16 completos.
+- Prototipado rápido con llama.cpp u Ollama: el formato GGUF y la disponibilidad de cuantizaciones desde 7,2 GB facilitan pruebas locales en portátiles y estaciones de trabajo sin infraestructura dedicada.
+- Generación de contenido en varios idiomas: útil para redacción, traducción asistida o resumen de documentos en entornos con requisitos de licencia permisiva (Apache 2.0).
+- Investigación sobre cuantización: el repositorio incluye el fichero imatrix y un espectro amplio de cuantizaciones, lo que lo convierte en un banco de pruebas para estudiar la degradación de calidad según el nivel de compresión.
+- Fine-tuning o ajuste posterior: al estar bajo Apache 2.0 y disponible en BF16 en el repo base, puede servir como punto de partida para especializaciones con datos propios.
+- Evaluación de modelos "heretic": útil para investigadores que estudien el comportamiento de modelos con ajustes orientados a reducir rechazos en tareas de contenido sensible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La documentación del modelo base menciona que mantiene el 99 % del rendimiento en precisión completa con cuantización de 8 bits, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros tests estándar. Tampoco se incluyen comparativas con modelos similares en la model card del repositorio GGUF.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada según cuantización: el archivo i1-Q4_K_M ocupa 16,6 GB, por lo que cabe en una GPU de 24 GB (RTX 3090, RTX 4090, A5000). El i1-Q6_K ocupa 22,2 GB, requiriendo 24 GB o más. Las cuantizaciones más bajas (IQ1_M, 7,7 GB) pueden ejecutarse en GPUs de 8-12 GB, aunque con pérdida significativa de calidad.
-- GPUs recomendadas: para uso interactivo con Q4_K_M, una RTX 4090 (24 GB) es suficiente; para Q6_K, se recomienda A100 40 GB o H100. Para contexto largo (262K), la memoria aumentará considerablemente; se recomienda usar cuantizaciones menores o descargar parte del contexto a CPU.
-- Compatibilidad con consumer GPU: sí, las cuantizaciones Q4_K_M y menores caben en GPUs de gama alta de consumo. Las cuantizaciones Q6_K requieren GPUs profesionales o dual-GPU.
-- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio, text-generation-webui y servidores como llama-cpp-python. También puede usarse con vLLM si se convierte a formato safetensors, aunque ese no es el propósito de este repositorio.
-- Latencia y throughput: no se proporcionan datos específicos. La atención híbrida y el MTP deberían ofrecer velocidades de generación superiores a un transformer denso puro de 27B, especialmente en secuencias largas.
+- VRAM estimada para inferencia (según cuantización):
+  - i1-IQ1_S: ~7,2 GB de pesos; con overhead de contexto, ~9-10 GB.
+  - i1-IQ2_M: ~10,1 GB de pesos; ~12-13 GB con contexto.
+  - i1-IQ3_M: ~12,7 GB de pesos; ~15 GB con contexto.
+  - i1-IQ4_XS: ~15,2 GB de pesos; ~17-18 GB con contexto.
+  - BF16 completo: ~54 GB de pesos; requiere ~60 GB o más.
+- GPU recomendadas:
+  - RTX 4090 (24 GB): IQ4_XS, Q4_K_M y Q5_K_M con contexto moderado.
+  - RTX 3090 / 4080 (16-24 GB): IQ3_M a IQ4_XS.
+  - A100 40/80 GB, H100: BF16 o cuantizaciones altas con contexto largo.
+- Cabe en GPU de consumo: sí, desde IQ1_S (7,2 GB) en GPUs de 8-10 GB, con calidad reducida; IQ4_XS es el punto de equilibrio recomendado para 16-24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con servidores de inferencia tipo endpoint.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Qwen3.8-27B (base) | 26,9B | 262K | Apache-2.0 | Modelo original sin fine-tune, con atención híbrida y visión |
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (este modelo) | 26,9B | 262K | Apache-2.0 | Fine-tune con reducción de tokens de pensamiento, abliterated |
-| Qwen3-32B | 32B | 131K | Apache-2.0 | Modelo anterior de Qwen, denso, sin visión |
-| Llama-3.1-70B | 70B | 128K | Llama 3.1 | Mucho mayor, requiere más hardware, pero con benchmarks superiores |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS (este) | ~26,9B | no disponible | Apache 2.0 | GGUF (i1) | Cuantizaciones imatrix desde 7,2 GB |
+| Modelo base AMAImedia (BF16) | ~26,9B | no disponible | Apache 2.0 | safetensors/BF16 | Sin cuantizar; ~54 GB |
+| Qwen2.5-32B-Instruct (referencia de familia) | ~32B | 128K (según versión) | Apache 2.0 | safetensors, GGUF | Contexto y benchmarks públicos; no es el mismo modelo |
+| Llama 3.3 70B (referencia de categoría) | ~70B | 128K | Llama 3.3 Community License | safetensors, GGUF | Mayor tamaño y requisitos; licencia no Apache |
 
-La comparativa directa con otros modelos no está disponible en los datos proporcionados. Este modelo se distingue por su ventana de contexto nativa de 262K (extensible a 1M), su naturaleza multimodal y su comportamiento uncensored, lo que lo hace único frente a alternativas de tamaño similar.
+La comparativa con alternativas exactas no está disponible: no se han publicado datos de rendimiento del modelo ni de su base que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Comportamiento "uncensored": al haber sido sometido a abliteration, el modelo puede generar contenido ofensivo, ilegal o éticamente cuestionable. No es adecuado para aplicaciones donde se requiera moderación estricta sin un sistema de filtrado externo.
-- Riesgo de alucinación: como todos los modelos de lenguaje, puede inventar hechos, especialmente en temas especializados o con poca representación en sus datos de entrenamiento. La reducción de tokens de pensamiento podría aumentar este riesgo en tareas de razonamiento profundo.
-- Limitaciones de idioma: aunque soporta seis idiomas, la calidad puede variar significativamente entre ellos. El kazajo y el vietnamita probablemente tengan un rendimiento inferior al inglés o chino.
-- Pérdida de calidad por cuantización: las cuantizaciones más agresivas (IQ1_M, IQ2_M) degradan notablemente la coherencia y precisión. Se recomienda usar al menos Q4_K_M para tareas serias.
-- Requisitos de memoria para contexto largo: aunque la ventana nativa es de 262K, cargar el contexto completo en memoria puede requerir más de 60 GB de VRAM, incluso con cuantización Q4. Para uso práctico, se recomienda limitar el contexto a 32K-64K en hardware consumer.
-- Licencia Apache-2.0: permite uso comercial y modificación, pero no ofrece garantías de ningún tipo. El usuario es responsable del cumplimiento de normativas locales sobre contenido generado.
-- Sin benchmarks publicados: no hay evidencia cuantitativa del rendimiento en tareas estándar, por lo que la afirmación del 99 % de rendimiento debe tomarse con cautela.
+- Información técnica muy limitada: no se documentan arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad antes de desplegarlo.
+- El sufijo "heretic" indica un ajuste orientado a reducir rechazos; esto puede aumentar el riesgo de generar contenido inapropiado o inseguro y requiere filtros adicionales en producción.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; sin benchmarks publicados no puede cuantificarse.
+- Las cuantizaciones de baja precisión (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad; la propia model card las describe como "for the desperate" o "very low quality".
+- El repositorio ocupa 300,3 GB, lo que implica descargas largas y requisitos de almacenamiento considerables si se quieren varias cuantizaciones.
+- Licencia Apache 2.0: permisiva para uso comercial, pero conviene verificar las obligaciones de atribución y las licencias de los componentes fusionados en el modelo base.
+- Idiomas: aunque se declaran más de 100, no hay evaluación publicada de calidad por idioma; el rendimiento en lenguas minoritarias puede ser desigual.
+- Procedencia: es una recuantización de un modelo a su vez derivado y fusionado, sin trazabilidad completa del proceso de entrenamiento original.
 
 ## Enlaces
 
-- Repositorio GGUF (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16-i1-GGUF
 - Modelo base: https://huggingface.co/AMAImedia/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16
-- Repositorio estático GGUF (sin imatrix): https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16-GGUF
-- Página de descripción del modelo base (aimodels.fyi): https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau
-- Página de descripción de variante similar: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-nm-dau-neo-max-mtp-gguf-davidau
-- Información sobre Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NOESIS-BF16-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

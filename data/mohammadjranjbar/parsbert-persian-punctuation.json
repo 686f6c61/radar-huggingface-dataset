@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "MohammadJRanjbar/parsbert-persian-punctuation",
+  "slug": "mohammadjranjbar-parsbert-persian-punctuation",
+  "author": "MohammadJRanjbar",
+  "url": "https://huggingface.co/MohammadJRanjbar/parsbert-persian-punctuation",
+  "created_at": "2026-02-15T22:18:38.000Z",
+  "updated_at": "2026-11-18T21:45:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "persian",
+    "punctuation-restoration",
+    "parsbert",
+    "token-classification",
+    "fa",
+    "dataset:MohammadJRanjbar/PersianPunc",
+    "base_model:HooshvareLab/bert-base-parsbert-uncased",
+    "base_model:finetune:HooshvareLab/bert-base-parsbert-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 370,
+  "trending_score": 0,
+  "parameters": 162254597,
+  "parameters_human": "162.3M",
+  "storage_bytes": 649041716,
+  "storage_human": "649 MB",
+  "context_length": null,
+  "base_model": "HooshvareLab/bert-base-parsbert-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Flixer – Free HD Movies and TV Series Streaming",
-      "url": "https://flixer.stream/",
-      "snippet": "Aug 24, 2026 · Explore Flixer movies and TV shows with trending titles, ratings, genres, advanced search, favorites, watchlists and …"
-    },
-    {
-      "title": "The Flixer",
-      "url": "https://theflixer.vercel.app/",
-      "snippet": "Jul 29, 2026 · Web site created using create-react-app Welcome. Thousands of movies, Tv shows and people to discover, Explore now."
-    },
-    {
-      "title": "Flixr",
-      "url": "https://flixr-beta.vercel.app/",
-      "snippet": "Discover and track your favorite movies and TV shows. Get personalized recommendations, watch trailers, and find where to stream …"
-    },
-    {
-      "title": "TheFlixer - Watch Free Movies & Series Online on The Flixer",
-      "url": "https://www.theflixerz.biz/",
-      "snippet": "TheFlixer lets you watch free HD movies and TV shows online without registration. Stream the latest films, series, and …"
-    },
-    {
-      "title": "MyFlixer (Official) – Watch Free HD Movies & Series Online",
-      "url": "https://myflixer.co.za/",
-      "snippet": "MyFlixer is one of the best website for watching movies and TV shows for free. This website offers more than 10000 movies without ads."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-6k",
+  "slug": "cosmos-data-cosmos-libero-noood-baseline-gbs2048-6k",
+  "author": "Cosmos-Data",
+  "url": "https://huggingface.co/Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-6k",
+  "created_at": "2026-11-18T22:11:05.000Z",
+  "updated_at": "2026-11-18T23:31:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "cosmos3_omni",
+    "robotics",
+    "libero",
+    "custom_code",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 121396946556,
+  "storage_human": "121.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmos",
+      "url": "https://www.cosmos.so/",
+      "snippet": "Find similar elements. Start with an image you love and find more like it. Collaborate together. Invite others to build collections with you."
+    },
+    {
+      "title": "Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-4k · Hugging Face",
+      "url": "https://huggingface.co/Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-4k",
+      "snippet": "Cosmos3 LIBERO40-only Full-FT baseline, GBS2048, 4k Public re-release of the no-OOD-video baseline at step4000, not an OOD-trained, filtered, human-selected or nested policy. Full fine-tuning from Cosmos3-Nano on original LIBERO40 demonstrations: Spatial,Object,Goal,LIBERO-10,50 episodes/task before the native1% validation split. Joint video+action supervision; no added OOD data."
+    },
+    {
+      "title": "Toutes les actualités | COSMOS",
+      "url": "https://www.cosmos-sports.fr/actualites",
+      "snippet": "2 days ago · Le COSMOS s'en mêle #7 - Numérique et sport : comment passer de l'expérimentation à une utilisation maîtrisée ? …"
+    },
+    {
+      "title": "Cosmos-Data/cosmos-libero-baseline · Hugging Face",
+      "url": "https://huggingface.co/Cosmos-Data/cosmos-libero-baseline",
+      "snippet": "Cosmos-Data / cosmos-libero-baseline Like 0 Follow Cosmos-Data 2 Safetensors cosmos3_omni custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 15B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Public Work by Cosmos",
+      "url": "https://www.cosmos.so/public-work",
+      "snippet": "Public Work is a visual search engine for public domain content. Explore 100,000+ copyright-free images from The MET, New York …"
+    }
+  ]
+}

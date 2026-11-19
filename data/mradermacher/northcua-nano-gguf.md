@@ -2,47 +2,52 @@
 
 ## Resumen
 
-NorthCUA-Nano-GGUF es la distribucion en formato GGUF del modelo NorthCUA-Nano, publicada por el usuario mradermacher, especializado en la conversion de pesos a cuantizaciones compatibles con llama.cpp. El modelo original lo desarrolla beipo-ai y cuenta con aproximadamente 8.950 millones de parametros segun los datos de safetensors del repositorio. Esta version GGUF permite ejecutar el modelo en hardware de consumo mediante cuantizaciones de 2 a 8 bits, algo imposible con los pesos en precision completa.
+NorthCUA-Nano es un modelo multimodal orientado a "computer use" (uso de ordenador), es decir, diseñado para interpretar capturas de pantalla y generar acciones sobre interfaces gráficas. El modelo original lo desarrolla beipo-ai bajo el identificador beipo-ai/NorthCUA-Nano, y la ficha que nos ocupa es la versión cuantizada en formato GGUF publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad.
 
-El repositorio se creo el 2 de noviembre de 2026 y contiene un conjunto amplio de cuantizaciones estaticas: x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. El tag "endpoints_compatible" sugiere que puede desplegarse mediante los endpoints de Hugging Face, y el tag "conversational" indica que esta orientado a dialogos multi-turno.
+El modelo base se apoya en la arquitectura Qwen3.5 (según la etiqueta `qwen3_5` de la model card) y cuenta con 8.953.803.264 parámetros totales según los pesos en safetensors del repositorio. Es, por tanto, un modelo de aproximadamente 9.000 millones de parámetros, tamaño que lo sitúa en la franja de modelos "nano/pequeños" capaces de ejecutarse en hardware de consumo cuando se cuantizan adecuadamente.
 
-La informacion publica disponible es muy limitada: no se detalla arquitectura, contexto, licencia ni idiomas en la model card. La ficha siguiente recoge lo que se puede afirmar con certeza y marca explicitamente como "no disponible" todo lo que no consta en la informacion proporcionada.
+La relevancia de esta publicación radica en que mradermacher ofrece el modelo en múltiples niveles de cuantización GGUF (desde Q2_K de 3,9 GB hasta f16 de 18 GB), además de los ficheros mmproj necesarios para el componente multimodal. Esto permite desplegar un modelo de computer use en entornos con llama.cpp u Ollama, algo poco habitual en esta categoría de modelos de agentes visuales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer, presumiblemente, por el formato de pesos) |
-| Parametros totales | 8.953.803.264 (aprox. 8,95 mil millones) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer multimodal basada en Qwen3.5 (según etiqueta `qwen3_5`); detalles internos no disponibles |
+| Parametros totales | 8.953.803.264 (~8,95 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (derivado de pesos originales en safetensors) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | inglés (etiqueta `en` en la model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo original NorthCUA-Nano. Por el tamano (8,95 mil millones de parametros) y el formato de publicacion (GGUF con cuantizaciones K-quants e IQ), se trata presumiblemente de un transformer decoder-only compatible con llama.cpp, pero este dato no consta en la model card ni en los metadatos del repositorio.
+La información disponible no detalla la arquitectura interna más allá de la etiqueta `qwen3_5`, que sugiere que el modelo base se construye sobre la familia Qwen3.5. Se trata de un modelo multimodal, ya que el repositorio incluye ficheros `mmproj` (proyección multimodal) necesarios para procesar entradas de imagen junto con texto. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación.
 
-Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo, matematicas o multilingue), ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. La model card del repositorio GGUF es puramente tecnica: se limita a indicar la version de cuantizacion, el tipo de conversion (hf) y la lista de cuantizaciones generadas, remitiendo al repositorio original beipo-ai/NorthCUA-Nano para cualquier detalle adicional.
+Tampoco se documentan innovaciones técnicas concretas como decodificación especulativa, atención lineal o mecanismos híbridos. La model card de la versión GGUF es únicamente una ficha de cuantización generada automáticamente por mradermacher, por lo que los detalles de entrenamiento deberían consultarse en la ficha del modelo original (beipo-ai/NorthCUA-Nano), que no forma parte de la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" del repositorio indica que el modelo esta ajustado o preparado para dialogos multi-turno.
-- Compatibilidad con endpoints de Hugging Face: el tag "endpoints_compatible" sugiere que puede servirse a traves de la infraestructura de inferencia gestionada de Hugging Face.
-- Inferencia local mediante llama.cpp: al estar en formato GGUF, es compatible con el ecosistema llama.cpp, Ollama, LM Studio y servidores derivados.
-- Razonamiento, codigo, matematicas, vision, tool calling, agentes, modo thinking: no disponible (no consta en la informacion proporcionada).
-- Capacidades multilingues: no disponible.
+- Procesamiento multimodal: acepta imágenes (capturas de pantalla) junto con texto, gracias al componente mmproj incluido en las cuantizaciones.
+- Orientación a computer use: el modelo está etiquetado como `computer-use`, lo que indica que está pensado para interpretar interfaces gráficas y generar acciones sobre ellas.
+- Conversación multi-turno: la etiqueta `conversational` sugiere soporte para diálogo.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante infraestructura de endpoints compatible.
+- Generación de texto: capacidad base implícita en un modelo transformer de este tipo (no se detallan capacidades específicas de razonamiento, código o matemáticas en la información disponible).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes multi-paso: no documentado explícitamente, aunque la naturaleza de computer use implica interacción secuencial con entornos.
+- Capacidades multilingües: limitadas al inglés según la etiqueta `language: en`; no se confirma soporte de otros idiomas.
+- Modo "thinking", visión, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: con 8,95 mil millones de parametros, las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar el modelo en una GPU de consumo de 8-12 GB de VRAM o incluso en CPU con RAM suficiente, lo que facilita prototipado sin coste de API.
-- Prototipado de asistentes conversacionales: el tag "conversational" lo hace adecuado para construir chatbots de prueba en local antes de escalar a un modelo mayor o a un servicio gestionado.
-- Integracion en aplicaciones de escritorio: mediante llama.cpp u Ollama, el modelo puede embeberse en herramientas de escritorio que requieran generacion de texto sin conexion a internet.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye doce variantes de cuantizacion, lo que permite medir la degradacion de calidad frente al ahorro de memoria en un mismo modelo, un caso de uso util para equipos que calibran pipelines de despliegue.
-- Servicio ligero en endpoints de Hugging Face: el tag "endpoints_compatible" permite desplegarlo como endpoint gestionado para pruebas de integracion con aplicaciones cliente.
-- Filtrado y generacion de texto en pipelines de datos: para tareas de clasificacion ligera, resumen o reescritura en lotes donde el coste por token importa mas que la calidad punta.
+- Automatización de tareas de escritorio: el modelo puede recibir capturas de pantalla de un entorno de escritorio y proponer acciones (clics, escritura, navegación) para completar tareas repetitivas, aprovechando su naturaleza de computer use.
+- Agentes de navegación web: integrado en un bucle de agente, el modelo interpreta el estado visual de una página y genera la siguiente acción, lo que permite automatizar flujos de formularios o extracción de datos.
+- Testing de interfaces gráficas: un pipeline puede usar el modelo para "leer" la pantalla de una aplicación y verificar que los elementos esperados aparecen, complementando tests de UI automatizados.
+- Asistentes de soporte remoto: el modelo puede analizar capturas enviadas por un usuario y sugerir pasos concretos para resolver un problema en su interfaz, con la ventaja de ejecutarse localmente en formato GGUF.
+- Despliegue en hardware de consumo: gracias a las cuantizaciones Q4_K_M (5,7 GB) o Q5_K_M (6,6 GB), es viable ejecutar el modelo en GPUs de consumo para prototipos de agentes visuales sin depender de la nube.
+- Investigación en agentes multimodales: al ser Apache 2.0 y estar disponible en GGUF, sirve como base para experimentos de investigación sobre razonamiento visual y planificación de acciones en entornos controlados.
+- Procesamiento por lotes de capturas: en un servidor con llama.cpp, se pueden procesar lotes de imágenes y generar descripciones o acciones asociadas para tareas de anotación o auditoría.
 
 ## Benchmarks y rendimiento
 
@@ -50,40 +55,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y overhead de contexto):
-  - Q2_K: en torno a 3-4 GB.
-  - Q3_K_M / Q3_K_L: en torno a 4-5 GB.
-  - Q4_K_M / IQ4_XS: en torno a 5-6 GB.
-  - Q5_K_M: en torno a 6-7 GB.
-  - Q6_K: en torno a 7-8 GB.
-  - Q8_0: en torno a 9-10 GB.
-  - x-f16: en torno a 18 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 para cuantizaciones altas; A100 o H100 para f16 y despliegues concurrentes.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando Q4 o inferior.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de llama.cpp y endpoints de Hugging Face.
-- Latencia y throughput: no disponible (no se han publicado mediciones).
+- VRAM estimada para inferencia (según cuantización, tamaño del fichero): Q2_K ~3,9 GB; Q3_K_S ~4,4 GB; Q3_K_M ~4,7 GB; Q3_K_L ~5,0 GB; IQ4_XS ~5,3 GB; Q4_K_S ~5,5 GB; Q4_K_M ~5,7 GB; Q5_K_S ~6,4 GB; Q5_K_M ~6,6 GB; Q6_K ~7,5 GB; Q8_0 ~9,6 GB; f16 ~18 GB. Añadir ~0,7-1,0 GB para el fichero mmproj.
+- GPU recomendadas: para f16, una GPU con 24 GB o más (RTX 3090/4090, A100, H100). Para Q8_0, 12-16 GB (RTX 4070 Ti Super, RTX 4080). Para Q4_K_M, 8-10 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB).
+- Cabe en GPU de consumo: sí, en cuantizaciones Q4_K_M o inferiores en GPUs de 8 GB o más; las cuantizaciones Q5/Q6 requieren 10-12 GB.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (si se publica el manifiesto correspondiente), y servidores compatibles con endpoints (etiqueta `endpoints_compatible`). Para el componente multimodal es necesario usar llama.cpp con soporte de mmproj o un servidor compatible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| NorthCUA-Nano-GGUF | 8,95 B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
-| Alternativas de ~8 B en GGUF | no disponible | no disponible | no disponible | GGUF | no disponible |
-
-No se dispone de informacion suficiente para establecer una comparativa fiable con modelos de la misma categoria. No constan datos de rendimiento, contexto ni licencia del modelo original, por lo que cualquier comparacion cuantitativa seria especulativa.
+| NorthCUA-Nano (esta ficha) | ~8,95 mil M | no disponible | Apache 2.0 | GGUF, safetensors | Orientado a computer use, multimodal |
+| beipo-ai/NorthCUA-Nano (base) | ~8,95 mil M | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos equivalentes de computer use en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible consultar el repositorio original beipo-ai/NorthCUA-Nano antes de cualquier despliegue en produccion.
-- Idiomas no documentados: se desconoce la cobertura linguistica real; no se puede asumir un buen rendimiento en castellano.
-- Contexto desconocido: sin dato de ventana de contexto, no se puede planificar su uso en tareas de documento largo o conversaciones extensas.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos: no documentados; al no conocerse el corpus de entrenamiento, no es posible evaluar sesgos de genero, etnicos o culturales.
-- Cuantizaciones agresivas: Q2_K y Q3_K pueden degradar notablemente la coherencia y el razonamiento; para uso en produccion se recomienda Q4_K_M o superior.
-- Repositorio de terceros: esta publicacion la mantiene mradermacher, no el autor original; la trazabilidad de los pesos depende del repositorio beipo-ai/NorthCUA-Nano.
-- Sin benchmarks: no hay evidencia publica de calidad frente a modelos de tamano similar.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo entrenado principalmente en inglés, puede presentar sesgos lingüísticos y culturales.
+- Riesgo de alucinación: inherente a los modelos generativos; en tareas de computer use, una acción alucinada sobre una interfaz puede provocar errores operativos, por lo que se recomienda supervisión y validación.
+- Limitaciones de contexto o idioma: el idioma declarado es únicamente inglés; no se especifica la longitud de contexto, lo que impide planificar tareas que requieran ventanas largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original y de los datos de entrenamiento, no detallados aquí.
+- Caveats para producción: las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente el rendimiento en tareas visuales; se recomienda Q4_K_M o superior. La model card de la versión GGUF es generada automáticamente y no documenta el comportamiento del modelo.
+- El componente multimodal requiere ficheros mmproj adicionales; sin ellos, el modelo no procesará imágenes.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/NorthCUA-Nano-GGUF
-- Modelo original: https://huggingface.co/beipo-ai/NorthCUA-Nano
+- Modelo base: https://huggingface.co/beipo-ai/NorthCUA-Nano
+- Página de descargas del autor: https://hf.tst.eu/model#NorthCUA-Nano-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

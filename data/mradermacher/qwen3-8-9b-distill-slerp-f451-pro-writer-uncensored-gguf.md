@@ -2,77 +2,100 @@
 
 ## Resumen
 
-El modelo `Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF` es una cuantización en formato GGUF realizada por el usuario mradermacher sobre un modelo base creado por nuofang. El modelo base es un merge de tipo SLERP (Spherical Linear Interpolation) realizado con mergekit, que combina un modelo destilado de la familia Qwen (Qwen3.8-9B-Distill) con un modelo denominado F451-Pro-Writer-Uncensored, orientado a escritura creativa, novelas y roleplay. La versión GGUF permite ejecutar el modelo en entornos con recursos limitados mediante llama.cpp, Ollama u otros motores compatibles.
+Este repositorio contiene una coleccion de cuantizaciones GGUF estáticas del modelo `nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored`, un modelo de 9.197.093.888 parametros (aproximadamente 9,2 mil millones) obtenido mediante fusion de modelos (merge) con la herramienta mergekit. El autor de las cuantizaciones es mradermacher, un publicador habitual de versiones GGUF de modelos de la comunidad, mientras que el modelo base original fue creado por el usuario nuofang. No se trata, por tanto, de un modelo entrenado desde cero, sino de una fusion orientada a escritura creativa vivida, novela y roleplay, con etiqueta explicita de contenido para adultos.
 
-El modelo está etiquetado como "uncensored" y "not for all audiences", lo que indica que ha sido ajustado para eliminar restricciones de contenido, incluyendo temáticas NSFW. Está pensado principalmente para el idioma chino (etiqueta `zh`), aunque podría funcionar en otros idiomas con menor calidad. Incluye además archivos de proyección multimodal (`mmproj`), lo que sugiere que el modelo base soporta entrada de imágenes, aunque no se especifica la arquitectura exacta.
+La relevancia de esta ficha reside en que documenta un artefacto de la escena de modelos fusionados y "uncensored": un modelo derivado de la familia Qwen (por el nombre, presumiblemente Qwen3) que ha sido mezclado con otros checkpoints mediante SLERP y tecnicas de merge, y posteriormente destilado. El resultado es un modelo de ~9B con pesos en formato GGUF listos para inferencia local en llama.cpp y derivados, con un rango de cuantizaciones que va de Q2_K (4,0 GB) a f16 (18,5 GB), lo que lo hace desplegable en GPU de consumo.
 
-La relevancia de esta ficha radica en que se trata de un modelo especializado en generación de texto creativo sin filtros, un nicho con demanda en comunidades de escritura y roleplay. Sin embargo, la falta de información sobre el entrenamiento, la licencia y los benchmarks limita su evaluación objetiva.
+La informacion disponible es escasa en cuanto a arquitectura detallada, datos de entrenamiento, contexto y benchmarks: la model card del repositorio se limita a listar las cuantizaciones y a remitir a la documentacion de uso de GGUF. Por ello, muchos campos de esta ficha se marcan como "no disponible" en lugar de inferirse.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Derivada de Qwen3.8-9B-Distill (detalles no disponibles) |
-| Parametros totales | 9.197.093.888 (9,2 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | no disponible (modelo derivado de la familia Qwen segun nomenclatura; fusion via mergekit) |
+| Parametros totales | 9.197.093.888 (~9,2B) |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj-f16 y mmproj-Q8_0 |
-| Idiomas soportados | zh (chino) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
+| Idiomas soportados | zh (chino) declarado en la model card |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base. El nombre sugiere que se trata de una destilación de un modelo de la familia Qwen (posiblemente Qwen3) con 9 mil millones de parámetros, pero no se confirma ni el número de capas ni el tipo de atención. El modelo base `nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored` se construyó mediante un merge SLERP con mergekit, combinando los pesos de dos modelos: uno destilado de Qwen y otro especializado en escritura creativa sin censura. El proceso de entrenamiento (datos, tokens, método de alineación) no se documenta en la información proporcionada.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base. El nombre del repositorio indica que se trata de una fusion (merge) realizada con mergekit, combinando probablemente un modelo de la familia Qwen3 de ~9B con otros checkpoints afinados para escritura creativa y roleplay sin censura. La tecnica SLERP aparece en el nombre, lo que sugiere una interpolacion esferica entre pesos de al menos dos modelos; el sufijo "Distill" apunta a un proceso de destilacion previo o posterior, y "F451" y "Pro-Writer" son marcas del autor del merge.
 
-La cuantización GGUF fue realizada por mradermacher mediante conversión estática, generando múltiples niveles de precisión (desde f16 hasta Q2_K) para adaptarse a distintas capacidades de hardware. También se incluyen dos archivos `mmproj` (proyección multimodal), lo que indica que el modelo base podría aceptar entradas de imagen, aunque no se especifica el mecanismo exacto.
+No consta en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. La presencia de ficheros `mmproj` (proyector multimodal) en el repositorio sugiere que el modelo base podria tener capacidad de vision, pero no se detalla su arquitectura ni el codificador visual empleado. El proceso de cuantizacion aplicado por mradermacher es el estandar de llama.cpp con cuantizaciones estaticas (no imatrix en este repositorio; las versiones ponderadas/imatrix se publican en un repositorio aparte).
 
 ## Capacidades
 
-- Generación de texto creativo: novelas, relatos, diálogos y narrativa con un estilo "vívido" según las etiquetas del autor.
-- Roleplay y conversación: diseñado para mantener personajes y contextos de interpretación de roles.
-- Contenido sin censura: el modelo no aplica filtros de seguridad estándar, permitiendo temáticas NSFW, violencia o lenguaje explícito.
-- Multimodalidad parcial: los archivos `mmproj` sugieren que el modelo puede procesar imágenes (aunque no se confirma el tipo de visión).
-- Multilingüe limitado: la etiqueta de idioma es solo `zh`, aunque los modelos base de Qwen suelen tener capacidades multilingües; no se garantiza la calidad en otros idiomas.
-- Sin soporte declarado de tool calling ni agentes: no aparece en la documentación.
+- Generacion de texto creativo en chino, orientada a narrativa vivida, novela y roleplay segun las etiquetas del autor.
+- Conversacion multi-turno (etiqueta `conversational`).
+- Contenido sin censura (etiqueta `Uncensored`), incluyendo material NSFW y para audiencias adultas.
+- Posible capacidad multimodal: el repositorio incluye ficheros `mmproj` (proyector multimodal) en Q8_0 y f16, lo que indica soporte de entrada de imagenes en el modelo base, aunque no se detalla su alcance.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite servirlo mediante APIs compatibles con el formato de Hugging Face / OpenAI.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara chino (`zh`); no se confirma soporte de otros idiomas.
 
 ## Casos de uso
 
-- Escritura de novelas y relatos largos: el modelo puede generar capítulos completos con coherencia narrativa, gracias a su especialización en escritura creativa. Se usaría con prompts que describan la trama, los personajes y el tono deseado.
-- Roleplay en línea: ideal para juegos de rol por texto o chats de personajes, manteniendo la voz del personaje y reaccionando a las acciones del usuario.
-- Generación de diálogos para guiones o videojuegos: puede producir conversaciones naturales entre múltiples personajes, útil para prototipos de narrativa interactiva.
-- Creación de contenido NSFW para adultos: el modelo no tiene restricciones de contenido, por lo que puede usarse en plataformas de ficción erótica o comunidades de escritura adulta (con las advertencias legales correspondientes).
-- Asistente de lluvia de ideas creativas: puede sugerir tramas, giros argumentales o descripciones de escenas, sirviendo como herramienta de apoyo para escritores.
-- Traducción creativa al chino: dado su enfoque en el idioma chino, puede traducir o adaptar textos literarios con un estilo más natural que los traductores automáticos genéricos.
+- Escritura creativa y novela en chino: el modelo esta fusionado especificamente para producir prosa vivida; puede usarse para generar capitulos, describir escenas y mantener consistencia de estilo a lo largo de textos largos, con la salvedad de que la longitud de contexto no esta documentada.
+- Roleplay y personajes conversacionales: la etiqueta `roleplay` y el modo conversacional permiten construir bots de personaje con personalidad definida mediante prompts de sistema, ejecutables localmente con llama.cpp u Ollama.
+- Generacion de ficcion para adultos: el caracter `Uncensored` lo hace adecuado para narrativa NSFW en entornos controlados, siempre con verificacion de edad y cumplimiento legal en la jurisdiccion de despliegue.
+- Prototipado local en estaciones de trabajo: las cuantizaciones Q4_K_M (5,9 GB) y Q5_K_M (6,7 GB) caben en GPU de consumo de 8-12 GB de VRAM, lo que permite iterar en local sin coste de API.
+- Servicio de inferencia autohospedado: al ser compatible con endpoints, puede desplegarse detras de una API propia para una aplicacion de escritura asistida, con control total sobre los datos del usuario.
+- Experimentacion con merges y cuantizaciones: util como caso de estudio para investigadores interesados en el efecto de SLERP y destilacion sobre modelos de ~9B, comparando las distintas cuantizaciones (Q2_K frente a Q6_K) en tareas de generacion creativa.
+- Analisis de imagenes (si se carga el proyector mmproj): potencial uso para describir imagenes o generar narrativa a partir de ellas, aunque la capacidad no esta documentada en detalle.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K ni otras pruebas estandarizadas para este modelo o su base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según la cuantización elegida, el archivo GGUF varía entre 4,0 GB (Q2_K) y 18,5 GB (f16). Con el contexto por defecto, se recomienda al menos 2-3 GB de VRAM adicional para el estado de la inferencia, por lo que la Q4_K_M (5,9 GB) requeriría aproximadamente 8 GB de VRAM total.
-- GPU recomendadas: para las cuantizaciones Q4 y Q5, una GPU con 8-12 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 3080) es suficiente. Para Q8_0 o f16, se necesitan 12-24 GB (RTX 3090, RTX 4090, A5000).
-- Compatibilidad con GPU de consumo: sí, las versiones Q4_K_M y Q4_K_S caben en GPUs de 8 GB, y las Q3 en tarjetas de 6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, kobold.cpp, text-generation-webui (con backend llama.cpp). También puede usarse con vLLM si se convierte a otro formato, pero no es el propósito de este repo.
-- Latencia y throughput estimados: no disponibles. En una RTX 4090, un modelo de 9B en Q4_K_M suele generar entre 30 y 60 tokens por segundo, pero no hay mediciones específicas.
+- VRAM estimada para inferencia (pesos mas overhead de contexto, aproximada):
+  - Q2_K: ~4,0 GB de pesos; ~5-6 GB de VRAM total con contexto moderado.
+  - Q4_K_M: ~5,9 GB de pesos; ~7-8 GB de VRAM total.
+  - Q5_K_M: ~6,7 GB de pesos; ~8-9 GB de VRAM total.
+  - Q6_K: ~7,7 GB de pesos; ~9-10 GB de VRAM total.
+  - Q8_0: ~9,9 GB de pesos; ~11-12 GB de VRAM total.
+  - f16: ~18,5 GB de pesos; ~20 GB de VRAM total.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super 16 GB y RTX 4090 24 GB para cuantizaciones Q4 a Q8; A100 40/80 GB o H100 para f16 y para servir varias peticiones concurrentes.
+- Cabe en GPU de consumo: si, desde Q2_K hasta Q8_0 en tarjetas de 8-16 GB; f16 requiere 24 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI (por la etiqueta `endpoints_compatible`). Para el modelo base en transformers, vLLM o TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada; dependen de la GPU, de la cuantizacion y del backend.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar con modelos alternativos de escritura creativa sin censura. Se podría mencionar que existen otros modelos como `Qwen2.5-7B-Instruct` o `Llama-3.1-8B-Instruct`, pero no hay datos de rendimiento comparativos y las licencias y especializaciones difieren. Por tanto, la comparativa se considera no disponible.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Este modelo (Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored GGUF) | ~9,2B | no disponible | no disponible | GGUF | Merge orientado a escritura y roleplay sin censura; solo chino declarado |
+| Qwen3-8B (modelo base de referencia de la familia) | ~8B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen, no confirmado aqui) | safetensors, GGUF | Modelo oficial con benchmarks publicados; multilingue |
+| Llama 3.1 8B Instruct | ~8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Referencia generalista con contexto largo y buen soporte de herramientas |
+| Mistral 7B Instruct | ~7,2B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa europea ligera, muy desplegada en local |
+
+La comparacion con modelos oficiales es orientativa: este artefacto es un merge comunitario sin benchmarks publicados, por lo que no es posible establecer equivalencias de rendimiento con las alternativas citadas.
 
 ## Limitaciones y advertencias
 
-- Contenido NSFW y sin filtrar: el modelo puede generar contenido explícito, violento u ofensivo. No es apto para menores ni para entornos profesionales sin control de contenido.
-- Sesgos y alucinaciones: al ser un modelo sin ajuste fino de seguridad, es más propenso a reproducir estereotipos o generar información falsa con alta confianza.
-- Idioma limitado: la etiqueta indica solo chino; el rendimiento en inglés u otros idiomas puede ser deficiente.
-- Licencia no especificada: no se indica bajo qué licencia se distribuye el modelo, lo que impide su uso comercial legal sin consultar al autor del modelo base.
-- Falta de documentación: no hay información sobre el dataset de entrenamiento, el proceso de destilación ni los hiperparámetros, lo que dificulta la reproducibilidad y la evaluación de riesgos.
-- Multimodalidad no confirmada: aunque hay archivos `mmproj`, no se documenta cómo usarlos ni qué tipo de imágenes acepta.
+- Sesgos conocidos: no documentados; al ser un merge de modelos entrenados principalmente con datos de web, es previsible que herede sesgos de esos corpus, pero no hay evaluacion publicada.
+- Riesgo de alucinacion: no evaluado; en tareas de escritura creativa la alucinacion es parte del proposito, pero en usos factuales no hay garantia de fidelidad.
+- Limitaciones de contexto e idioma: solo se declara chino (`zh`); no se confirma calidad en castellano ni en otros idiomas. La longitud de contexto no esta documentada, lo que impide planificar usos con documentos largos.
+- Contenido para adultos: el modelo esta etiquetado `nsfw`, `not for all audiences` y `not-for-all-audiences`; su uso requiere control de edad, filtrado en el cliente y cumplimiento de la legislacion aplicable.
+- Licencia: no disponible; al no declararse licencia, no se puede confirmar el permiso de uso comercial. Se recomienda consultar el repositorio del modelo base (`nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored`) antes de cualquier despliegue productivo.
+- Ausencia de benchmarks: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones de calidad de escritura, por lo que las decisiones de adopcion deben basarse en pruebas propias.
+- Calidad de cuantizaciones bajas: Q2_K y Q3_K_S degradan notablemente la calidad; el autor recomienda Q4_K_S/Q4_K_M como opcion rapida y Q6_K/Q8_0 para maxima calidad.
+- Trazabilidad limitada: al tratarse de un merge comunitario sin model card detallada, no se puede verificar la composicion exacta de los modelos fusionados ni el proceso de destilacion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF
 - Modelo base: https://huggingface.co/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored
-- Versión i1-GGUF (con imatrix): https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF
-- Página de despliegue en FriendliAI: https://friendli.ai/models/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored
+- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF
+- Pagina de conveniencia del autor: https://hf.tst.eu/model#Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de perplejidad por cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- nethype GmbH: https://www.nethype.de/

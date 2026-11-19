@@ -5,7 +5,7 @@
   "author": "SlayerLab",
   "url": "https://huggingface.co/SlayerLab/Slayer1B-Poetry",
   "created_at": "2026-11-18T03:37:19.000Z",
-  "updated_at": "2026-11-18T03:41:16.000Z",
+  "updated_at": "2026-11-18T03:50:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

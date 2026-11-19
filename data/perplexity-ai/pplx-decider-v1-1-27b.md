@@ -2,108 +2,105 @@
 
 ## Resumen
 
-pplx-decider-v1.1-27b es un modelo de decisión (clasificación de opciones) desarrollado por perplexity-ai como actualización de pplx-decider-v1-27b. No es un modelo generativo de propósito general, sino un clasificador especializado: recibe un estado (`state`) y una pregunta con un conjunto de criterios candidatos, y devuelve una distribución de probabilidad sobre las opciones válidas, de ahí que su pipeline declarado sea `text-classification`. Se construye mediante fine-tuning sobre el backbone Qwen3.8-27B (identificador de clase `Qwen3_5Model`), con 26.085.330.160 parámetros reales (~26,1 B) y un repositorio de 52,2 GB.
+pplx-decider-v1.1-27b es un modelo de clasificación y toma de decisiones desarrollado por perplexity-ai, un fine-tune del backbone Qwen/Qwen3.8-27B. No es un modelo generativo de propósito general: se distribuye como un checkpoint de decisión nativo compuesto por el backbone `Qwen3_5Model` más una cabeza de decisión `readout.safetensors` en BF16 de dimensiones [255, 5120]. Su tarea es puntuar un conjunto de candidatos (categorías, opciones, etiquetas) dada una instrucción y un estado, devolviendo probabilidades normalizadas sobre las opciones válidas.
 
-La relevancia del modelo está en su rendimiento medido con el Decision Index del espacio `multimodalart/jev-decision-index`: pasa de 56,4 en la versión 1.0 a 61,56 en la 1.1 con el mismo backbone, superando a Jev por más de 3,5 puntos. Según el autor, la mayor parte de la mejora proviene de eliminar la máscara causal en las capas de atención completa y de entrenar con más datos, incluidos datos de tasksource. Es, por tanto, un artefacto de enrutado y toma de decisiones pensado para integrarse como componente de sistemas mayores (agentes, pipelines de atención al cliente, RAG), no para conversar con el usuario final.
+La versión 1.1 mejora el Decision Index de 56.4 a 61.56 respecto a pplx-decider-v1-27b, superando a Jev (57.9) por más de 3.5 puntos. Las ganancias provienen principalmente del levantamiento de la máscara causal en las capas de atención completa y de entrenar con más datos, incluidos datos de tasksource. El modelo incorpora capacidades multimodales para imágenes, con procesamiento por parches de 32×32 píxeles.
 
-El checkpoint se distribuye en un formato no estándar: un backbone `Qwen3_5Model` más un fichero `readout.safetensors` con una cabecera de decisión BF16 de dimensiones [255, 5120]. Esto implica que no funciona con un `lm_head` de vocabulario completo y que requiere la implementación de inferencia incluida en el repositorio para reproducir el comportamiento evaluado. La licencia es Apache 2.0, aunque el autor indica que el repositorio es privado y requiere autenticación en Hugging Face.
+Con 26.085.330.160 parámetros (26,09 mil millones) y licencia Apache 2.0, el modelo está pensado para integrarse como componente de enrutamiento y decisión en sistemas mayores, no como chatbot. Su relevancia actual reside en que ofrece un mecanismo explícito y calibrado de decisión sobre candidatos, con soporte de imágenes y contexto de 8.192 tokens, en un formato de checkpoint reproducible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (clase `Qwen3_5Model`): capas de atención completa más capas de atención lineal, con cabecera de decisión `readout` de [255, 5120] |
-| Parametros totales | 26.085.330.160 (~26,1 B) |
-| Parametros activos | No aplica: no se indica que sea un modelo MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible. El readout se distribuye en BF16; el autor indica que se necesitan unos 49 GiB para los pesos y memoria de trabajo |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (`readout.safetensors`) más backbone PyTorch; requiere `custom-code` (implementación propia en `source/src/autojev/model.py`) |
+| Arquitectura | Transformer híbrido (capas de atención completa no causal + capas de atención lineal), backbone Qwen3_5Model con cabeza de decisión separada |
+| Parámetros totales | 26.085.330.160 (26,09 B) |
+| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
+| Longitud de contexto | 8.192 tokens (límite de `prepare`; las entradas que lo exceden se rechazan, no se truncan) |
+| Tipos de cuantización | no disponible (pesos publicados en BF16; el repo ocupa 52,2 GB) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (backbone + `readout.safetensors` BF16 [255, 5120]); requiere código custom (`autojev.model`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone Qwen3.8-27B y conserva su estructura de atención híbrida: capas de atención completa y capas de atención lineal que mantienen su comportamiento nativo. La innovación clave de esta versión es que las capas de atención completa usan el modo de atención **no causal** guardado en el checkpoint. El autor advierte explícitamente que la inferencia causal por defecto no reproduce la configuración evaluada, de modo que usar el modelo con un runtime convencional altera los resultados. Sobre el backbone se monta una cabecera de decisión separada (`readout.safetensors`, BF16, [255, 5120]), que proyecta sobre un máximo de 255 candidatos de decisión; no existe un `lm_head` de vocabulario completo.
+El modelo parte del backbone Qwen/Qwen3.8-27B con arquitectura transformer híbrida: capas de atención completa y capas de atención lineal. La innovación clave de la versión 1.1 es que las capas de atención completa usan un modo de atención **no causal** guardado en el checkpoint, mientras que las capas de atención lineal conservan su comportamiento nativo. La inferencia causal por defecto no reproduce el setup evaluado, por lo que es imprescindible usar la implementación de inferencia incluida.
 
-En cuanto al entrenamiento, la model card indica que la mejora respecto a la versión 1.0 se debe a dos factores: la eliminación de la máscara causal y el uso de más datos, incluyendo datos de tasksource (una colección estructurada de tareas NLP de Sileo, 2024). No se especifican el número total de tokens, la composición exacta del dataset ni si hubo fases de RLHF o DPO; tampoco se detalla el proceso de calibración más allá de que la implementación incluida aplica una temperatura de calibración guardada en el checkpoint. El fichero `source/src/autojev/model.py` se copia literalmente de la ejecución de entrenamiento evaluada, y `release-manifest.json` registra los checksums y la procedencia del checkpoint.
+Sobre el backbone se añade una cabeza de decisión (`readout`) en BF16 de forma [255, 5120], que mapea estados ocultos a un conjunto de tokens candidatos definidos en `decision_config.json["token_ids"]`. No existe un `lm_head` de vocabulario completo: el artefacto es un checkpoint de decisión, no un modelo de lenguaje generativo. El entrenamiento se realizó con más datos que la v1, incluyendo datos de tasksource, y el pipeline de datos se apoya en Bespoke Nimble. La versión anterior se construyó a partir de datasets públicos etiquetados por humanos convertidos a decisiones de tipo Choice y Noul. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Clasificación de decisiones sobre un conjunto cerrado de candidatos: dado un estado y una pregunta con criterios, devuelve probabilidades normalizadas sobre las opciones válidas (hasta 255 candidatos según la forma del readout).
-- Etiquetado de tareas y categorización: el entrenamiento con datos de tasksource apunta a clasificación de tareas NLP de forma genérica.
-- Enrutado y selección: la categoría "Tools" del Decision Index sugiere capacidad para decidir entre herramientas o acciones disponibles.
-- Recuperación: la categoría "Retrieval" mide la selección de fuentes o pasajes relevantes.
-- Soporte de tool calling / function calling: no documentado como tal; la decisión sobre herramientas se expresa como clasificación sobre candidatos, no como llamada a funciones.
-- Soporte de agentes y razonamiento multi-paso: no documentado de forma explícita; el modelo es un componente de decisión de un solo paso, no un planificador autónomo.
-- Capacidades multilingües: no disponibles; el modelo declara la etiqueta `multimodal` pero no hay idiomas declarados ni evaluación por idioma.
-- Capacidad especial: modo de decisión con atención no causal y temperatura de calibración propia, integrada en `DecisionModel.predict`.
+- Clasificación y decisión sobre un conjunto de candidatos: dado un estado y una pregunta con criterios, devuelve probabilidades normalizadas sobre las opciones válidas.
+- Decisión multimodal: acepta imágenes como rutas de archivo, objetos PIL o URLs `data:image/...;base64` en `row["images"]`, con redimensionado que preserva la relación de aspecto.
+- Procesamiento de imágenes por parches de 32×32 píxeles, con un coste aproximado de `width * height / 1024` tokens visuales por imagen.
+- Límite configurable de píxeles por imagen mediante `max_image_pixels` (por defecto 2048×2048, hasta 4.096 tokens por imagen; el setup evaluado usó 512×512, ≤256 tokens).
+- Calibración de temperatura guardada: `DecisionModel.predict` aplica la temperatura de calibración; si se usan logits directamente, debe aplicarse exactamente una vez y normalizar sobre los candidatos válidos.
+- Soporte de decisiones de tipo Choice y Noul (mencionados en la model card).
+- No se documentan en la información disponible capacidades de tool calling, agentes multi-paso, generación de texto libre ni thinking mode.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: el propio ejemplo de la model card plantea decidir si una consulta va a `billing`, `support` o `sales` a partir del texto del usuario. Es adecuado porque devuelve probabilidades calibradas sobre criterios definidos por el desarrollador, no texto libre.
-- Enrutado de herramientas en agentes: dado el estado de la conversación y un catálogo de herramientas disponibles, el modelo puede seleccionar la más probable. La puntuación de 78,88 en la categoría "Tools" del Decision Index respalda este uso.
-- Selección de contexto en pipelines RAG: decidir qué pasaje o qué fuente recuperar antes de generar una respuesta, apoyándose en la puntuación de 61,26 en "Retrieval".
-- Triaje y clasificación de contenido: asignar categorías a gran volumen de texto (moderación, etiquetado, priorización) usando una cabecera de decisión de hasta 255 clases.
-- Enrutado entre modelos (LLM router): seleccionar qué modelo o qué cadena de generación atenderá una petición en función de su tipo, con criterios configurables en la propia pregunta.
-- Clasificación de intenciones en asistentes: determinar la intención del usuario dentro de un conjunto cerrado antes de invocar el flujo correspondiente.
-- Etiquetado de datasets: generar etiquetas automáticas sobre tareas NLP aprovechando el entrenamiento con tasksource, para preanotar corpus y reducir trabajo manual.
-- Categorización de catálogo en comercio electrónico: asignar productos o consultas a categorías predefinidas cuando el número de clases es alto y estable.
+- Enrutamiento de tickets de soporte: clasificar una consulta entrante entre departamentos (facturación, soporte técnico, ventas) usando la pregunta de tipo Choice con criterios explícitos, como muestra el ejemplo de la model card.
+- Moderación y etiquetado de contenido: asignar categorías a textos o imágenes con probabilidades calibradas, aprovechando la cabeza de decisión sobre candidatos acotados.
+- Clasificación de imágenes en pipelines de datos: procesar capturas, documentos escaneados o imágenes de producto y decidir su categoría, con control del coste en tokens mediante `max_image_pixels`.
+- Enrutamiento de consultas en un sistema RAG: decidir si una consulta requiere recuperación, qué índice consultar o qué herramienta invocar, dado que la categoría Retrieval obtuvo 61.26 en el Decision Index.
+- Triage en flujos de atención al cliente multimodal: decidir la acción siguiente a partir de un mensaje de texto más una imagen adjunta (por ejemplo, una captura de error), dentro del límite de 8.192 tokens.
+- Evaluación automática de respuestas: puntuar opciones candidatas generadas por otro modelo y seleccionar la más probable según criterios definidos, como componente de un sistema de selección.
+- Clasificación de tareas NLP en pipelines de anotación: aprovechar el entrenamiento con datos de tasksource para etiquetar datos con esquemas de decisión predefinidos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor con el Decision Index (espacio `multimodalart/jev-decision-index`). La puntuación global usa la ponderación de la suite, no la media simple de categorías.
+Resultados del Decision Index publicados en la model card:
 
-| Categoria del Decision Index | Jev | pplx-decider-v1-27b | pplx-decider-v1.1-27b |
+| Categoría del Decision Index | Jev | pplx-decider-v1-27b | pplx-decider-v1.1-27b |
 |---|---:|---:|---:|
-| Knowledge | 51,4 | 40,9 | 48,18 |
-| Language | 62,0 | 63,5 | 69,45 |
-| Retrieval | 55,4 | 54,9 | 61,26 |
-| Tools | 75,1 | 79,3 | 78,88 |
-| Arts | 37,7 | 39,4 | 44,66 |
-| Overall Decision Index | 57,9 | 56,4 | 61,56 |
+| Knowledge | **51.4** | 40.9 | 48.18 |
+| Language | 62.0 | 63.5 | **69.45** |
+| Retrieval | 55.4 | 54.9 | **61.26** |
+| Tools | 75.1 | **79.3** | 78.88 |
+| Arts | 37.7 | 39.4 | **44.66** |
+| **Overall Decision Index** | 57.9 | 56.4 | **61.56** |
 
-No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+La puntuación global usa la ponderación del suite, no una media simple de categorías. No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el autor indica que se necesitan aproximadamente 49 GiB solo para los pesos, más memoria de trabajo. En la práctica exige GPUs de 80 GB en BF16.
-- GPUs recomendadas: A100 80 GB, H100 80 GB, H200. No se documenta soporte de paralelismo tensorial en la implementación incluida.
-- GPU de consumo: no cabe en ninguna GPU de consumo actual (RTX 4090 con 24 GB, RTX 5090 con 32 GB quedan muy por debajo de los 49 GiB de pesos). No se publican recetas de cuantizacion que reduzcan el requisito.
-- Opciones de despliegue: únicamente la implementación propia incluida (`source/src/autojev/model.py`), con Python 3.12+ y CUDA. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI. Para usar un servidor que requiera `Qwen3_5ForConditionalGeneration` hace falta una exportación aparte que mapee la fila `i` del readout a la fila de vocabulario `decision_config.json["token_ids"][i]`, preservando además el comportamiento de atención no causal.
-- Latencia y throughput: no disponibles.
-- Requisitos adicionales: acceso autenticado al repositorio de Hugging Face (el autor lo describe como privado) y las dependencias fijadas en `requirements.txt`.
-- Nota operativa: si el frontend aplica temperatura, debe usar el valor de calibración guardado; al consumir logits directamente hay que aplicarlo exactamente una vez y normalizar sobre los candidatos válidos de la decisión actual.
+- VRAM estimada: aproximadamente 49 GiB de pesos más memoria de trabajo, según la model card (pesos en BF16).
+- GPU recomendadas: A100 80 GB, H100 80 GB o GPUs con al menos ~49 GiB libres para los pesos; se requiere una GPU CUDA.
+- No cabe en GPUs de consumo de 24 GB (RTX 4090) en BF16 sin cuantización, y no se documentan en la información disponible opciones de cuantización.
+- Opciones de despliegue: la model card indica usar el código de inferencia incluido (`autojev.model.DecisionModel`) con Python 3.12+ y las dependencias fijadas en `requirements.txt`. Un sistema que requiera `Qwen3_5ForConditionalGeneration` necesita una exportación separada que mapee la fila `i` del readout a la fila de vocabulario `decision_config.json["token_ids"][i]` y preserve el comportamiento de atención.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Repositorio: 52,2 GB de tamaño.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Decision Index | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| pplx-decider-v1.1-27b | ~26,1 B | 61,56 | Apache 2.0 | Hugging Face, requiere autenticación |
-| pplx-decider-v1-27b | ~26,1 B (mismo backbone) | 56,4 | No disponible en la informacion proporcionada | Hugging Face |
-| Jev | No disponible | 57,9 | No disponible en la informacion proporcionada | Espacio de evaluacion `multimodalart/jev-decision-index` |
-| Qwen3.8-27B (modelo base) | ~27 B (nominal) | No evaluado en el Decision Index | No disponible en la informacion proporcionada | Hugging Face |
+| Modelo | Parámetros | Contexto | Decision Index (overall) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pplx-decider-v1.1-27b | 26,09 B | 8.192 tokens | 61.56 | Apache 2.0 | Hugging Face (repo privado con acceso autenticado) |
+| pplx-decider-v1-27b | no disponible | no disponible | 56.4 | no disponible | Hugging Face |
+| Jev | no disponible | no disponible | 57.9 | no disponible | Referenciado vía space `multimodalart/jev-decision-index` |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | no evaluado en este suite | no disponible | Hugging Face |
 
-La comparacion directa mas fiable es contra pplx-decider-v1-27b, que comparte backbone y solo se diferencia en el enmascaramiento de atencion y los datos de entrenamiento. Frente a Jev, la version 1.1 mejora en Knowledge (48,18 frente a 51,4, sigue por debajo), Language, Retrieval y Arts, pero pierde ligeramente en Tools (78,88 frente a 75,1 a favor del modelo). Para el resto de alternativas no hay datos de parametros, contexto ni rendimiento en la informacion disponible.
+Los datos de parámetros, contexto y licencia de los modelos comparables no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no dispone de `lm_head` de vocabulario completo y no puede producir texto libre. Cualquier uso conversacional requiere un modelo adicional.
-- La atencion no causal es obligatoria: usar inferencia causal por defecto no reproduce el comportamiento evaluado y degrada los resultados sin aviso.
-- La temperatura de calibracion debe aplicarse exactamente una vez y normalizar sobre los candidatos validos de la decision actual; aplicarla dos veces o sobre candidatos no validos invalida las probabilidades.
-- Repositorio de acceso autenticado: el autor indica que se necesita acceso autenticado a un repositorio privado, lo que condiciona la reproducibilidad y el despliegue en produccion.
-- Rendimiento bajo en "Knowledge" y "Arts": 48,18 y 44,66 respectivamente, por debajo de Jev en Knowledge. No es adecuado para decisiones que dependan de conocimiento factual especializado.
-- Idiomas no declarados: no hay informacion sobre cobertura multilingue ni evaluacion por idioma; asumir comportamiento uniforme en castellano seria una extrapolacion.
-- Etiqueta `multimodal` sin respaldo documental: el modelo declara la etiqueta, pero la model card no describe entrada de imagen, audio ni ninguna otra modalidad, y el pipeline declarado es `text-classification`.
-- Riesgo de deriva en los criterios: el modelo devuelve una distribucion sobre las opciones que el desarrollador define en `question.criteria`; si el conjunto de candidatos cambia respecto al entrenamiento, la calibracion deja de ser valida.
-- Sin datos de sesgo, alucinacion ni evaluaciones de seguridad publicadas.
-- Licencia Apache 2.0, que permite uso comercial, pero el acceso restringido al repositorio y la dependencia de codigo propio (`custom-code`) pueden limitar la redistribucion practica.
-- Requisito de hardware muy alto (unos 49 GiB de pesos) sin recetas de cuantizacion publicadas, lo que complica el despliegue en infraestructura propia modesta.
+- No es un modelo generativo: carece de `lm_head` de vocabulario completo; no puede usarse para generación de texto libre sin una exportación específica.
+- La inferencia causal por defecto no reproduce el comportamiento evaluado; es obligatorio usar la implementación incluida con atención no causal en las capas de atención completa.
+- El límite de 8.192 tokens incluye el texto y todas las imágenes de una decisión; las entradas que lo exceden se rechazan en lugar de truncarse.
+- Las imágenes por encima de 512×512 quedan fuera de la distribución de entrenamiento, con mayor coste de memoria y latencia.
+- La temperatura de calibración debe aplicarse exactamente una vez; aplicarla dos veces o no normalizar sobre los candidatos válidos altera las probabilidades.
+- El repositorio es privado y requiere acceso autenticado en Hugging Face.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible.
+- Idiomas soportados: no disponibles; no se puede garantizar cobertura multilingüe.
+- Licencia Apache 2.0 permite uso comercial, pero no se documentan restricciones adicionales del modelo base ni de los datos de entrenamiento (tasksource, Bespoke Nimble) que puedan afectar a producción.
+- El pipeline de datos de la v1 se basó en datasets públicos etiquetados por humanos; no se detalla la composición de la v1.1 más allá de la inclusión de tasksource.
 
 ## Enlaces
 
-- [Modelo en Hugging Face: perplexity-ai/pplx-decider-v1.1-27b](https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b)
-- [Version anterior: perplexity-ai/pplx-decider-v1-27b](https://huggingface.co/perplexity-ai/pplx-decider-v1-27b)
-- [Espacio de evaluacion Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index)
-- [Repositorio tasksource](https://github.com/sileod/tasksource)
-- [Articulo de tasksource (LREC-COLING 2024)](https://aclanthology.org/2024.lrec-main.1361)
-- [Sitio de Perplexity](https://www.perplexity.ai/)
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
+- Versión anterior: https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Decision Index (space): https://huggingface.co/spaces/multimodalart/jev-decision-index
+- tasksource (GitHub): https://github.com/sileod/tasksource
+- tasksource (paper, LREC-COLING 2024): https://aclanthology.org/2024.lrec-main.1361/
+- Bespoke Nimble (GitHub): https://github.com/bespokelabsai/nimble

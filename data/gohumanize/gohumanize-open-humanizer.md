@@ -2,124 +2,116 @@
 
 ## Resumen
 
-GoHumanize Open Humanizer es un modelo de generación de texto especializado en reescritura estilística: recibe prosa inglesa con marcas típicas de texto generado por IA y la reformula para que se lea como escritura humana. Lo desarrolla el equipo de GoHumanize.ai y se distribuye como un ajuste fino QLoRA del modelo denso Qwen3-4B, con 4.022.468.096 parámetros totales (~4,02 B) y licencia Apache-2.0.
+GoHumanize Open Humanizer es un modelo de generacion de texto de 4.022 millones de parametros especializado en reescribir prosa en ingles con estilo de IA hacia un registro mas natural y humano. Se trata de un fine-tune completo (todos los pesos actualizados) del modelo base Qwen3-4B de Alibaba, desarrollado por el equipo de GoHumanize.ai como version publica y educativa de su tecnologia de humanizacion de texto. El modelo se distribuye bajo licencia Apache-2.0 y esta disponible en formato safetensors y GGUF.
 
-El interés del proyecto es doble. Por un lado, es un modelo funcional y ligero, ejecutable en GPU de consumo y con builds GGUF para Ollama, LM Studio y llama.cpp. Por otro, es un artefacto de investigación reproducible: el autor publica el dataset de 2.200 pares (CC-BY 4.0), el código del pipeline completo, el registro de entrenamiento en Weights & Biases, un DOI citable en Zenodo y un informe técnico paso a paso. Esto lo convierte en una referencia útil para estudiar transferencia de estilo con presupuesto mínimo.
+El modelo resuelve un problema concreto: transformar texto que presenta las marcas tipicas de la generacion automatica (transiciones de relleno, frases hechas de LLM, longitud de frase uniforme, ausencia de contracciones) en texto que se lee como escrito por una persona. Para ello se entreno sobre 2.629 pares de pasajes (entrada con estilo IA, original humano), donde el lado humano proviene de 2.000 pasajes de dominio publico de Project Gutenberg y 629 pasajes de prosa moderna de agencias federales estadounidenses, mientras que el lado con estilo IA fue generado por gpt-4o-mini y DeepSeek-chat.
 
-La relevancia actual viene de su nicho: la "humanización" de texto es una tarea con mucha demanda comercial y muy poca transparencia técnica. Este modelo no compite con los sistemas de producción de GoHumanize.ai ni hace afirmaciones sobre detectores de IA; se presenta explícitamente como demostración educativa del método (preparación de datos, construcción de pares, ajuste fino y evaluación). El entrenamiento se hizo sobre prosa de dominio público anterior a 1929 procedente de Project Gutenberg.
+Es relevante ahora porque ofrece, con pesos abiertos y un dataset documentado, una implementacion reproducible de una tarea que hasta hace poco solo existia en productos cerrados, y porque su evaluacion publica separa explicitamente la calidad de la reescritura de cualquier supuesta evasion de detectores de IA, algo que el autor declara fuera del alcance del modelo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3) con ajuste fino QLoRA; sin mezcla de expertos |
-| Parámetros totales | 4.022.468.096 (~4,02 B) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | No especificada en la model card; el entrenamiento usó secuencias de 1.024 tokens como máximo. El modelo base Qwen3-4B declara 32.768 tokens nativos, ampliables a 131.072 con YaRN |
-| Tipos de cuantización | Build GGUF incluido en `gguf/`; los niveles concretos no se detallan en la información disponible. Compatible con Ollama, LM Studio y llama.cpp |
-| Idiomas soportados | Inglés (`en`) únicamente |
+| Arquitectura | Transformer decoder-only (Qwen3) |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (entrenamiento con maximo de 1.024 tokens) |
+| Tipos de cuantizacion | GGUF (incluye Q4_K_M); safetensors en bf16 |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (pesos fusionados en 16 bits como archivos principales), adaptador LoRA en `lora/`, GGUF en `gguf/` |
-| Modelo base | Qwen/Qwen3-4B |
-| Tamaño del repositorio | 14,9 GB |
-| Descargas y likes | 442 descargas, 1 like |
-| Fecha de creación / actualización | 18 de septiembre de 2026 / 21 de septiembre de 2026 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-4B: un transformer decoder-only denso de ~4 B de parámetros. Sobre él se aplicó un ajuste fino QLoRA con Unsloth, con la base cuantizada a 4 bits, rango LoRA 16, alpha 32 y adaptadores en todas las proyecciones de atención y de MLP. La pérdida se calculó únicamente sobre los tokens del asistente (el objetivo humano), no sobre el prompt ni sobre el texto de entrada en estilo IA.
+El modelo parte de Qwen3-4B, un transformer decoder-only denso de aproximadamente 4.000 millones de parametros. El ajuste es un full fine-tune realizado con Unsloth: se actualizaron todos los pesos en bf16 con AdamW de 8 bits y gradient checkpointing. La perdida se calculo unicamente sobre los tokens del asistente (es decir, sobre el texto humano objetivo), no sobre la entrada. Se entrenaron 2 epocas con tasa de aprendizaje 2e-5 con decaimiento coseno, tamano de lote efectivo 16, longitud maxima de 1.024 tokens y semilla 13, sobre 2.629 pares de entrenamiento y 254 de test. El entrenamiento completo se ejecuto en una unica NVIDIA H100 de 80 GB en Modal y duro 8 minutos, con perdidas finales de 0,99 en entrenamiento y 1,19 en evaluacion.
 
-Los datos de entrenamiento son 2.000 pares de (pasaje con estilo IA, original humano) más 200 pares de test, construidos a partir de libros de dominio público de Project Gutenberg. El conjunto completo, 2.200 pares, está publicado con licencia CC-BY 4.0. La transformación del texto fuente en pares de entrenamiento es una parte central del pipeline documentado por el autor.
-
-La configuración del ajuste fue: 2 épocas (250 pasos), tasa de aprendizaje 2e-4 con decaimiento coseno, batch efectivo 16 y longitud máxima de 1.024 tokens. Se ejecutó en una única NVIDIA A10G de 24 GB sobre Modal y tardó 21,7 minutos. Las pérdidas finales fueron 1,30 en entrenamiento y 1,39 en evaluación, partiendo de 3,17 antes de entrenar. El uso previsto es en formato chat con el modo de razonamiento (*thinking*) desactivado mediante `enable_thinking=False`, y con un *system prompt* fijo que define la tarea de reescritura.
+La innovacion principal esta en la construccion del dataset mas que en la arquitectura: los pares se disenaron para que el modelo aprenda a reestructurar frases y no solo a sustituir palabras, y se eliminaron de los objetivos las datelines de notas de prensa y los numeros de nota al pie para que el modelo no aprenda a inventarlos. El uso previsto es en formato chat con el modo de razonamiento (thinking) desactivado y un system prompt fijo que instruye a variar la longitud de frase, usar lenguaje concreto y mantener el significado, los hechos y el orden de las ideas.
 
 ## Capacidades
 
-- Reescritura de texto en inglés con transferencia de estilo: convierte prosa con marcas de IA en texto de ritmo más variado y vocabulario concreto.
-- Conservación de contenido: mantiene el significado, los hechos y el orden de las ideas del texto de entrada, con una puntuación BERTScore F1 de 0,921 frente al original humano.
-- Variación de longitud de frase y ritmo: produce una media de 22,5 palabras por frase, frente a 15,2 del modelo base y 28,1 del objetivo humano.
-- Conversión de registro: reduce marcadores de estilo IA (0,00 frases hechas tipo LLM por texto, 0,106 palabras de transición por 100 palabras) frente al modelo base (0,01 y 0,023 respectivamente).
-- Preservación de nombres y tokens capitalizados: recall de 0,623 frente a 0,594 del modelo base.
-- Formato conversacional mediante plantilla de chat, con modo de razonamiento desactivado.
-- Reescritura de pasajes de entre 80 y 300 palabras; documentos largos se procesan párrafo a párrafo.
-- Integración como herramienta externa: servidor MCP para asistentes de IA y cliente Python/CLI.
-- No soporta *tool calling* ni razonamiento multi-paso como capacidades nativas declaradas; tampoco visión ni audio.
-- Multilingüe: no, solo inglés.
+- Reescritura de texto en ingles para eliminar marcas estilisticas de generacion automatica (transiciones de relleno, frases hechas, ritmo uniforme).
+- Transferencia de estilo preservando el significado y el orden de las ideas, con una ratio de longitud cercana a la del texto humano de referencia.
+- Generacion de texto conversacional en formato chat mediante la plantilla de Qwen3 con thinking desactivado.
+- Conservacion de nombres y tokens capitalizados (recall de 0,673 frente a 0,619 de la entrada con estilo IA).
+- Reduccion de frases hechas de LLM a 0,02 por texto y de palabras de transicion a 0,12 por 100 palabras.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni razonamiento multi-paso; el modelo esta disenado para una unica tarea de reescritura.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Post-edición de contenido editorial: un blog o medio reescribe automáticamente borradores generados con IA antes de publicarlos, procesando párrafo a párrafo y manteniendo la estructura argumental gracias a la preservación de nombres y del orden de ideas.
-- Limpieza de corpus sintéticos: un equipo que genere datos de entrenamiento con LLM puede pasar cada muestra por este modelo para reducir expresiones repetitivas y frases hechas, disminuyendo la homogeneidad estadística del corpus resultante.
-- Integración en asistentes de escritura vía MCP: el servidor `npx gohumanize-open-humanizer-mcp` permite que un agente o IDE invoque la reescritura como herramienta, sin reentrenar ni cambiar el modelo principal del asistente.
-- Tuberías de contenido en CI/CD: el cliente `pip install gohumanize-open-humanizer` permite automatizar la revisión estilística de textos en repositorios de documentación o plantillas de marketing como paso previo a la publicación.
-- Estilización literaria y ficción: dado su entrenamiento con prosa anterior a 1929, encaja en proyectos que busquen deliberadamente un registro literario clásico, por ejemplo adaptaciones o ejercicios creativos.
-- Investigación en transferencia de estilo: el dataset de 2.200 pares, el código del pipeline, las curvas de pérdida y el informe técnico permiten reproducir el experimento completo y usarlo como línea base en trabajos académicos.
-- Generación de variantes para test A/B: producir varias redacciones con el mismo contenido factual permite comparar tasas de conversión o de lectura sin alterar la información del mensaje.
-- Demostraciones y docencia: el coste de despliegue (una GPU de 24 GB para el entrenamiento y hardware de consumo para inferencia) lo hace viable para talleres prácticos sobre ajuste fino con QLoRA.
+- Edicion de articulos y entradas de blog: se introduce un borrador generado por un LLM y el modelo devuelve una version con longitud de frase variada (22,6 palabras de media, frente a 15,2 del base y 26,7 del objetivo humano) y menor densidad de frases hechas, adecuada como primer paso de edicion antes de la revision humana.
+- Normalizacion de textos corporativos: comunicados, notas de prensa y descripciones de producto que han pasado por un asistente automatico pueden reescribirse para eliminar datelines y estructuras de nota de prensa, ya que el entrenamiento excluyo explicitamente esos elementos de los objetivos.
+- Preprocesado en pipelines de publicacion: el modelo puede integrarse como etapa de post-proceso entre la generacion y la revision editorial, con generacion de varias muestras y seleccion de la que mas se aleja del original (estrategia que el autor implementa en su cliente Python y su servidor MCP).
+- Investigacion sobre deteccion y atribucion de texto: al ser un humanizador abierto con dataset y evaluacion publicos, sirve para construir y validar clasificadores de texto generado por IA frente a reescrituras controladas.
+- Docencia y divulgacion sobre estilistica computacional: permite demostrar de forma reproducible como se construyen pares de entrenamiento a partir de corpus de dominio publico y como se mide la transferencia de estilo con BERTScore y ROUGE-L.
+- Despliegue local sin GPU: las builds GGUF permiten ejecutar el modelo con Ollama en equipos de consumo para tareas de reescritura por lotes de documentos en ingles, sin enviar el texto a servicios externos.
+- Integracion en herramientas de escritura: el servidor MCP (`npx gohumanize-open-humanizer-mcp`) y el cliente Python (`pip install gohumanize-open-humanizer`) permiten conectarlo a asistentes y editores que soporten el protocolo, gestionando automaticamente los reintentos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La evaluación publicada compara la entrada en estilo IA, el Qwen3-4B base y este modelo contra el original humano en 200 pares reservados:
+Evaluacion sobre 254 pasajes retenidos (54 modernos, 200 de libros) frente al original humano. Las metricas miden el acercamiento al objetivo humano, no la evasion de detectores.
 
-| Medida (200 pares reservados) | Entrada estilo IA | Qwen3-4B base | Open Humanizer | Objetivo humano |
+| Medida (254 pares retenidos) | Entrada con estilo IA | Qwen3-4B base | Open Humanizer | Objetivo humano |
 |---|---|---|---|---|
-| BERTScore F1 frente a humano (más alto = significado más cercano) | 0,914 | 0,900 | 0,921 | — |
-| ROUGE-L frente a humano (más alto = redacción más cercana) | 0,493 | 0,424 | 0,540 | — |
-| Nombres/tokens capitalizados conservados (recall) | 0,587 | 0,594 | 0,623 | — |
-| Ratio de longitud frente a humano | 1,027 | 0,830 | 0,928 | 1,000 |
-| Contracciones por 100 palabras | 0,279 | 0,772 | 0,044 | 0,118 |
-| Palabras de transición por 100 palabras | 0,757 | 0,023 | 0,106 | 0,143 |
-| Frases hechas de LLM por texto | 0,19 | 0,01 | 0,00 | 0,00 |
-| Longitud media de frase (palabras) | 21,6 | 15,2 | 22,5 | 28,1 |
+| BERTScore F1 vs humano (mayor = significado mas cercano) | 0,923 | 0,905 | 0,931 | no disponible |
+| ROUGE-L vs humano (mayor = redaccion mas cercana) | 0,542 | 0,444 | 0,595 | no disponible |
+| Nombres/tokens capitalizados conservados (recall) | 0,619 | 0,604 | 0,673 | no disponible |
+| Ratio de longitud vs humano | 1,08 | 0,83 | 0,97 | 1,00 |
+| Contracciones por 100 palabras | 0,20 | 0,62 | 0,05 | 0,14 |
+| Palabras de transicion por 100 palabras | 0,88 | 0,02 | 0,12 | 0,16 |
+| Frases hechas de LLM por texto | 0,40 | 0,00 | 0,02 | 0,01 |
+| Longitud media de frase (palabras) | 22,6 | 15,2 | 22,6 | 26,7 |
 
-Estas métricas miden el desplazamiento desde la prosa estilo IA hacia el objetivo humano; el propio autor advierte que no son puntuaciones de detectores. El modelo mejora al base en BERTScore, ROUGE-L, conservación de nombres y control de frases hechas, pero se queda corto en contracciones (0,044 frente a 0,118 del objetivo humano) y en longitud media de frase (22,5 frente a 28,1).
+Tasa de reescritura sobre 254 pasajes retenidos, tres intentos por pasaje a temperatura 0,9:
+
+| Metrica | Valor |
+|---|---|
+| Pasajes modernos devueltos casi sin cambios (mas del 90% de palabras conservadas), de 30 articulos no vistos en entrenamiento | 29,0% |
+| Pasajes de libros devueltos casi sin cambios | 19,2% |
+| Reescrituras modernas que pierden una cifra | 22,1% |
+| Datelines, numeros de nota al pie o enlaces inventados, de 762 salidas | 0 |
+
+Las cifras modernas se basan en 162 salidas de 54 pasajes, por lo que diferencias de pocos puntos estan dentro del ruido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16/fp16: en torno a 8 GB solo para pesos, más caché KV; ~10-12 GB en la práctica.
-- VRAM estimada con cuantización de 8 bits: ~4,5-5 GB.
-- VRAM estimada con cuantización de 4 bits (GGUF Q4): ~2,5-3,5 GB.
-- GPU recomendadas: A10G, L4, A100, H100 para servicio; RTX 4090, 4080, 4070 Ti, 3090 para uso local sin cuantizar.
-- Cabe en GPU de consumo: sí. Con bf16 en tarjetas de 12 GB o más (RTX 3060 12 GB, 4070, 4070 Ti, 3090, 4090); con cuantización GGUF Q4 en tarjetas de 6-8 GB.
-- Hardware de entrenamiento de referencia: 1x NVIDIA A10G de 24 GB en Modal, 21,7 minutos.
-- Opciones de despliegue: transformers, Text Generation Inference (el repo incluye la etiqueta `text-generation-inference` y es compatible con endpoints), vLLM, llama.cpp, Ollama y LM Studio mediante los builds GGUF.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
-- Nota de configuración: usar chat template con `enable_thinking=False` y el *system prompt* de entrenamiento para obtener el comportamiento esperado.
+- VRAM estimada para inferencia en bf16: aproximadamente 8 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda una GPU de 16 GB o mas para contexto largo.
+- Cuantizaciones GGUF: la build Q4_K_M reduce los pesos a unos 2,5-3 GB, ejecutable en CPU o en GPUs de consumo con 4-6 GB de VRAM.
+- GPU recomendadas: NVIDIA H100 o A100 para despliegue en bf16 con mayor throughput; RTX 4090 (24 GB) y RTX 3090 (24 GB) para inferencia comoda en bf16; GPUs de 8-12 GB (RTX 4070, RTX 3060 de 12 GB) para cuantizaciones de 8 bits o GGUF.
+- Cabe en GPU de consumo: si, tanto en bf16 en tarjetas de 24 GB como en GGUF Q4_K_M en tarjetas de 6 GB o en CPU.
+- Opciones de despliegue: transformers (referencia oficial), vLLM y TGI (el modelo esta etiquetado como endpoints_compatible y text-generation-inference), llama.cpp y Ollama mediante GGUF, ademas del servidor MCP y el cliente Python oficiales.
+- Latencia y throughput: no se han publicado cifras de latencia ni de tokens por segundo en la informacion disponible. El entrenamiento completo requirio 8 minutos en una H100.
 
 ## Comparativa con modelos similares
 
-No hay datos publicados que permitan comparar este modelo con otros sistemas de humanización de texto abiertos. La única comparación con cifras verificables es contra su propio modelo base, incluida en la evaluación de la model card:
-
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en la evaluación |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GoHumanize Open Humanizer | 4,02 B (denso) | No especificado; entrenado a 1.024 tokens | Apache-2.0 | Hugging Face: safetensors, adaptador LoRA y GGUF | BERTScore 0,921; ROUGE-L 0,540; frases hechas LLM 0,00 |
-| Qwen3-4B (base) | 4,02 B (denso) | 32.768 tokens nativos (sin especificar en la ficha de este modelo) | Apache-2.0 | Hugging Face | BERTScore 0,900; ROUGE-L 0,424; frases hechas LLM 0,01 |
-| Otros humanizadores abiertos con evaluación comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| GoHumanize Open Humanizer | 4.022 millones | no disponible (entrenamiento a 1.024 tokens) | Reescritura estilo IA a humano | Apache-2.0 | Pesos abiertos en HF (safetensors y GGUF) |
+| Qwen3-4B (base) | 4.022 millones | no disponible en la informacion proporcionada | Generacion de texto general | Apache-2.0 | Pesos abiertos en HF |
+| Humanizadores comerciales cerrados | no disponible | no disponible | Reescritura estilo IA a humano | Propietaria | Solo API |
+| Modelos de parafrasis generalistas (p. ej. T5/BART fine-tuneados) | variable | variable | Parafrasis y simplificacion | variable | variable |
 
-Frente a otras alternativas de la misma familia Qwen3 de mayor tamaño (8B, 14B, 32B), este modelo no publica comparativas de calidad, coste ni latencia, por lo que la elección entre ellos queda supeditada a prueba propia.
+La comparacion cuantitativa directa con alternativas de la misma categoria no esta disponible: no se han publicado resultados de benchmarks de otros humanizadores abiertos en la informacion proporcionada. Frente a su modelo base, el Open Humanizer mejora BERTScore (0,931 frente a 0,905), ROUGE-L (0,595 frente a 0,444) y el recall de nombres (0,673 frente a 0,604), y se acerca mucho mas a la longitud del texto humano (ratio 0,97 frente a 0,83).
 
 ## Limitaciones y advertencias
 
-- Los objetivos humanos del entrenamiento son prosa anterior a 1929, de modo que el modelo tiende a un registro literario y ligeramente anticuado; puede no encajar en contextos técnicos, periodísticos o corporativos actuales.
-- Está entrenado sobre pasajes de 80 a 300 palabras. Para documentos largos hay que reescribir párrafo a párrafo, lo que puede romper la coherencia global del texto.
-- Solo inglés. No se ha entrenado ni evaluado en otros idiomas.
-- Puede eliminar o alterar detalles en entradas alejadas de su distribución de entrenamiento; el propio autor recomienda verificar los hechos de la salida. El recall de nombres capitalizados es 0,623, es decir, pierde aproximadamente un 38 % de las entidades capitalizadas respecto al original humano.
-- El modelo no hace ninguna afirmación sobre detectores de IA. La evaluación publicada mide proximidad al texto humano, no evasión de detección; usarlo con ese fin no está respaldado por los datos disponibles.
-- Es una demostración educativa y de investigación, separada de los modelos de producción de GoHumanize.ai, sin garantías de rendimiento en producción.
-- Licencia Apache-2.0, que permite uso comercial y modificación, siempre con las obligaciones habituales de atribución y conservación del aviso de licencia. El dataset asociado es CC-BY 4.0, con sus propias condiciones de atribución.
-- Riesgo de alucinación bajo, dado que la tarea es de reescritura y no de generación libre, pero existe riesgo de omisión o deformación de contenido, especialmente con entradas fuera de distribución.
-- Sesgos no documentados en la información disponible: el corpus de origen es prosa literaria de dominio público, predominantemente occidental y anterior a 1929, lo que puede arrastrar sesgos de época en vocabulario y registro.
-- No se han publicado evaluaciones en benchmarks estándar de capacidades generales, por lo que se desconoce en qué medida el ajuste degrada las capacidades del Qwen3-4B original fuera de la tarea de reescritura.
+- Tres cuartas partes de los objetivos humanos son libros anteriores a 1929 y el resto es escritura oficial de agencias federales de EE. UU., por lo que el modelo se inclina hacia lo literario por un lado y lo administrativo por el otro; la prosa moderna informal es su principal carencia.
+- Alrededor de una de cada cinco reescrituras de texto con muchas cifras pierde al menos una figura (22,1% en la evaluacion), lo que lo hace inadecuado sin revision para contenido financiero, legal o tecnico con datos numericos.
+- En texto moderno, un unico intento devuelve el pasaje casi sin cambios aproximadamente tres de cada diez veces (29,0%); se recomienda generar varias muestras y quedarse con la que mas se aleja del original.
+- El modelo solo soporta ingles; no hay soporte documentado de otros idiomas.
+- Las metricas publicadas miden el acercamiento al estilo humano, no la evasion de detectores de IA; el autor declara explicitamente que el modelo no hace ninguna afirmacion sobre detectores.
+- Riesgo de alucinacion: aunque el autor reporta cero datelines, numeros de nota al pie o enlaces inventados en 762 salidas, la reescritura puede alterar matices o introducir reformulaciones que cambien levemente el enfasis; requiere revision humana en contextos sensibles.
+- Sesgos conocidos: no se documentan analisis de sesgo en la informacion disponible; la composicion del corpus (literatura anglosajona de dominio publico y documentos oficiales estadounidenses) puede sesgar el registro y el vocabulario.
+- Licencia Apache-2.0: permite uso comercial, pero el modelo base Qwen3-4B impone sus propios terminos, que deben verificarse antes de un despliegue en produccion.
+- No es un modelo de proposito general: no se documentan capacidades de tool calling, agentes, vision ni razonamiento multi-paso, y su uso fuera de la tarea de reescritura no esta evaluado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gohumanize/gohumanize-open-humanizer
-- Dataset, 2.200 pares (CC-BY 4.0): https://huggingface.co/datasets/gohumanize/gohumanize-open-humanizer-dataset
-- Página del proyecto y demo en navegador: https://gohumanize.ai/open-model
-- Código y pipeline completo: https://github.com/GoHumanize-ai/gohumanize-open-humanizer
-- Informe técnico paso a paso (`docs/paper.md`): https://github.com/GoHumanize-ai/gohumanize-open-humanizer/blob/main/docs/paper.md
-- Release archivada con DOI citable: https://doi.org/10.5281/zenodo.22843083
-- Cliente Python y CLI: https://pypi.org/project/gohumanize-open-humanizer/
-- Servidor MCP para asistentes de IA: https://www.npmjs.com/package/gohumanize-open-humanizer-mcp
-- Código del servidor MCP: https://github.com/GoHumanize-ai/gohumanize-open-humanizer-mcp
-- Registro de entrenamiento, curvas de pérdida y configuración en Weights & Biases: https://wandb.ai/gohumanize/gohumanize-open-humanizer/runs/95wi8tdg
+- Pagina del proyecto (dataset, codigo, evaluacion y write-up): https://gohumanize.ai/open-model
+- Demo en navegador: https://gohumanize.ai/open-model
+- Dataset: https://huggingface.co/datasets/gohumanize/gohumanize-open-humanizer-dataset
+- Modelo base: https://huggingface.co/Qwen/Qwen3-4B
+- Run de Weights & Biases: https://wandb.ai/gohumanize/gohumanize-open-humanizer/runs/d326rxss
+- Servidor MCP: `npx gohumanize-open-humanizer-mcp`
+- Cliente Python: `pip install gohumanize-open-humanizer`

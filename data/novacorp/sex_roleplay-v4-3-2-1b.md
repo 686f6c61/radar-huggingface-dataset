@@ -2,107 +2,93 @@
 
 ## Resumen
 
-SEX_ROLEPLAY.v4-3.2-1B es un modelo de generación de texto de 1.498.482.688 parámetros publicado por NovaCorp (el autor se identifica también como Novaciano) y orientado específicamente a roleplay conversacional de contenido explícito. No es un modelo entrenado desde cero: es un merge de cuatro derivados de Llama 3.2 1B, construido con mergekit y la técnica de fusión selectiva SCE (*select top-k*), que combina un núcleo de roleplay, un componente "abliterated" de permisividad agresiva y dos fine-tunes creativos.
+SEX_ROLEPLAY.v4-3.2-1B es un modelo de lenguaje de 1.498 millones de parámetros (1B) desarrollado por NovaCorp, especializado en generación de texto conversacional para roleplay NSFW. Se trata de un merge de pesos (no de un entrenamiento desde cero) construido con mergekit sobre la arquitectura Llama 3.2 de 1B, que combina cuatro modelos base: Nexesenex/Llama_3.2_1b_RandomLego_RP_R1_0.1, UmbrellaInc/Prototype-Virus.FINAL-3.2-1B, bunnycore/FuseChat-3.2-1B-Creative-RP y jtatman/llama-3.2-1b-lewd-mental-occult.
 
-Su relevancia práctica es doble. Por un lado, cubre un nicho muy concreto —narrativa interactiva multilingüe (español e inglés) en front-ends como SillyTavern o KoboldCpp— con un tamaño que cabe en cualquier GPU de consumo e incluso en CPU. Por otro, sirve como objeto de estudio para quien investiga alineación, abliteración y degradación de rechazos en modelos pequeños: la model card documenta con precisión los hiperparámetros del merge, algo poco habitual en este ecosistema.
+El modelo está diseñado explícitamente para eliminar los mecanismos de rechazo y censura del modelo instructivo original, orientándolo a conversaciones de rol adulto en español e inglés. La versión v4 introduce tres cambios técnicos respecto a versiones anteriores: sustitución del componente abliterated principal por Prototype-Virus.FINAL, elevación del parámetro `select_topk` de 0.1 a 0.65 en el filtrado SCE (conservando mayor señal efectiva de cada fuente) y una redistribución de pesos y densidades (RandomLego a 1.1, jtatman a 0.9, densidades a 0.95).
 
-La versión v4 sustituye el componente abliterated genérico por `UmbrellaInc/Prototype-Virus.FINAL-3.2-1B`, eleva el `select_topk` de 0,1 a 0,65 y sube las densidades a 0,95 en todos los componentes, con el objetivo declarado de reducir la pérdida de seguimiento de instrucciones y mejorar la coherencia en diálogos multi-turno. No hay resultados de benchmarks publicados que respalden esas mejoras.
+Su relevancia actual radica en el nicho de modelos pequeños (1B) de rol sin censura que quepan en hardware de gama baja, con soporte declarado para SillyTavern y KoboldCpp, y con formato GGUF y cuantización 4-bit disponibles. No es un modelo de propósito general: su ámbito es el roleplay conversacional y el contenido para adultos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Llama 3.2 1B): atención con GQA, RoPE, SwiGLU y RMSNorm |
-| Parametros totales | 1.498.482.688 (1,5 B) |
-| Parametros activos | No aplica: modelo denso, no es MoE |
-| Longitud de contexto | 32.768 tokens según featherless.ai; la model card no lo declara. El base Llama 3.2 1B admite hasta 128.000, pero no hay confirmación de que el merge lo conserve |
-| Tipos de cuantizacion | GGUF (etiqueta del repo) y 4-bit (etiqueta del repo); existe una variante MLX fp16 del modelo hermano de la misma familia |
-| Idiomas soportados | Español (es) e inglés (en), según la model card |
+| Arquitectura | Transformer decoder-only (Llama 3.2 1B) |
+| Parametros totales | 1.498.482.688 (1B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | 4-bit (etiqueta declarada); GGUF disponible |
+| Idiomas soportados | Español (es), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 3,0 GB), GGUF |
-| Metodo de construccion | Merge con mergekit, técnica SCE con `select_topk` = 0,65 y densidades de 0,95 |
-| Modelos fuente | `Nexesenex/Llama_3.2_1b_RandomLego_RP_R1_0.1`, `UmbrellaInc/Prototype-Virus.FINAL-3.2-1B`, `bunnycore/FuseChat-3.2-1B-Creative-RP`, `jtatman/llama-3.2-1b-lewd-mental-occult` |
-| Plantilla de chat | Llama 3 Chat (`<|start_header_id|>` / `<|end_header_id|>` / `<|eot_id|>`) |
-| Descargas / likes | 0 descargas, 1 like en el momento de la consulta |
+| Formato de pesos | Safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del Llama 3.2 1B original, sin modificaciones estructurales: un transformer decoder-only con 16 capas, atención con *grouped-query attention*, embeddings de posición rotatorios, activación SwiGLU y normalización RMSNorm. El merge no altera la topología ni el vocabulario, de modo que cualquier kernel, cuantizador o plantilla compatible con Llama 3.2 1B funciona sin adaptación. El tokenizador es el de Llama 3, con un vocabulario de 128.256 entradas, lo que explica que el repo en safetensors pese 3,0 GB para solo 1,5 B de parámetros.
+El modelo es un merge de pesos construido con mergekit sobre la arquitectura Llama 3.2 de 1B (transformer decoder-only denso, 1.498 millones de parámetros). No se trata de un entrenamiento nuevo: los pesos finales resultan de la fusión de cuatro modelos, cada uno de los cuales aporta características distintas. `RandomLego` actúa como núcleo secundario de roleplay (peso 1.1 en v4), `Prototype-Virus.FINAL` aporta la reducción de censura (sustituyendo a la abliteración genérica de versiones previas), `FuseChat-Creative-RP` aporta la base conversacional y `jtatman/...-lewd-mental-occult` aporta estilo (peso reducido a 0.9 en v4 para evitar que opaque el roleplay).
 
-No hubo entrenamiento en sentido estricto: el modelo es una fusión de pesos. Según la model card, la v4 aplica mergekit con el método SCE y tres ajustes sobre la versión anterior. Primero, sustituye `huihui-ai/Llama-3.2-1B-Instruct-abliterated` por `UmbrellaInc/Prototype-Virus.FINAL-3.2-1B` como fuente de descensura, buscando una permisividad "más agresiva y consistente". Segundo, eleva el `select_topk` de 0,1 a 0,65: con el valor antiguo se descartaba el 90 % de las diferencias de parámetros durante la fusión, mientras que el nuevo conserva mucha más señal efectiva de cada fuente. Tercero, redistribuye pesos y densidades: `RandomLego` sube a 1,1 (frente a 1,0 en la v3) y `jtatman` baja a 0,9 para que su estilo no domine el registro, con densidades de 0,95 en todos los componentes.
+El proceso de merge emplea filtrado SCE con `select_topk` elevado a 0.65 (frente a 0.1 en v3), lo que según el autor conserva una proporción mucho mayor de la señal efectiva de cada modelo fuente y reduce la pérdida de capacidad de seguimiento de instrucciones. Las densidades se fijan en 0.95 en todos los componentes. El componente Prototype-Virus.FINAL es a su vez una fusión SLERP entre `Prototype-Virus-ENFORCE` y `T-Virus_Epsilon.Strain`, orientada a anular protocolos de rechazo.
 
-No se detalla la composición de los datasets de los modelos fuente, ni si hubo RLHF, DPO o ajuste por preferencias en alguna de las ramas. La etiqueta `arxiv:2408.07990` aparece en los metadatos del repo, pero el README no explica a qué artefacto corresponde ni cómo se aplica al merge.
+Los datos de entrenamiento no son directos del merge (que opera sobre pesos), sino heredados de los modelos base. La model card cita datasets de roleplay y conversación como `Nitral-AI/Active_RP-ShareGPT`, `PJMixers/hieunguyenminh_roleplay-deduped-ShareGPT`, `Chaser-cz/sonnet35-charcard-roleplay-sharegpt`, `Nitral-AI/RP_Alignment-ShareGPT`, `priveeai/pippa_sharegpt`, `Locutusque/sharegpt_gpt4_uncensored_cleaned` y `alexandreteles/AlpacaToxicQA_ShareGPT`, entre otros. No se especifica el número de tokens, la composición exacta ni si hubo RLHF/DPO en los modelos fuente.
 
 ## Capacidades
 
-- Generación de narrativa conversacional multi-turno en español e inglés, con foco en diálogo explícito entre personajes.
-- Mantenimiento de persona y estilo a partir de descripciones de personaje largas, escenarios y *lorebooks* inyectados en el contexto (plantillas de contexto proporcionadas para SillyTavern).
-- Escritura creativa en registro coloquial: la model card incluye un *system prompt* orientado a evitar fórmulas robóticas y clichés de LLM.
-- Seguimiento de instrucciones conversacionales básicas, presumiblemente reforzado por el aumento de `select_topk`, aunque sin evaluación pública.
-- Generación de texto sin censura aparente en el dominio para el que fue fusionado; el modelo no incorpora un clasificador de seguridad propio.
-- Compatibilidad con backends de inferencia local estándar para Llama 3.2 (KoboldCpp, llama.cpp, SillyTavern) y con el formato GGUF.
-- No hay soporte documentado de *tool calling* ni de *function calling*.
-- No hay soporte documentado de agentes, razonamiento multi-paso deliberado ni *thinking mode*.
-- No hay capacidades de visión, audio ni multimodalidad: es un modelo exclusivamente de texto.
-- Capacidad multilingüe limitada a los dos idiomas declarados; no se ha verificado su comportamiento en otras lenguas.
+- Generación de texto conversacional multi-turno orientada a roleplay y narrativa interactiva.
+- Roleplay sin censura: reducción deliberada de rechazos y filtros morales mediante el componente Prototype-Virus.FINAL.
+- Soporte de fichas de personaje (charcards) y prompts estructurados, alineado con SillyTavern.
+- Capacidades multilingües limitadas a español e inglés.
+- Formato de chat compatible con Llama 3 Chat (preset de instrucciones declarado en la model card).
+- No se declara soporte de tool calling, function calling, agentes, visión, audio ni modo thinking.
+- Razonamiento y matemáticas: no documentados; el modelo está orientado a conversación, no a tareas de razonamiento formal.
 
 ## Casos de uso
 
-- **Roleplay interactivo local en SillyTavern o KoboldCpp:** el modelo está pensado para ello y la model card incluye plantillas de contexto e instrucción listas para pegar. Su tamaño permite ejecutarlo en un portátil sin conexión, lo que resulta útil para usuarios que no quieren enviar conversaciones a una API externa.
-- **Creación de personajes persistentes con *lorebook*:** al aceptar plantillas que separan escenario, descripción, personalidad y ejemplos de diálogo, encaja en flujos de autoría de personajes como los publicados por el autor en Chub.ai, donde la consistencia de voz entre turnos es el criterio principal de calidad.
-- **Generación de corpus para *red-teaming* y evaluación de filtros:** un modelo de esta clase, deliberadamente sin alineación, permite generar prompts y respuestas que un modelo comercial rechazaría, y usarlos para medir la robustez de clasificadores de contenido o de guardarraíles en producción. Requiere aislamiento y revisión humana del material generado.
-- **Investigación sobre abliteración y fusión de pesos:** el repo documenta hiperparámetros concretos (`select_topk`, densidades, pesos por componente), lo que lo convierte en un caso reproducible para estudiar cómo varía la tasa de rechazo y la coherencia al mover esos parámetros en modelos de 1 B.
-- **Prototipado rápido de interfaces conversacionales:** con 3,0 GB en safetensors y menos de 1 GB en 4 bits, sirve para validar la integración de una app de chat (streaming, gestión de historial, plantillas) antes de migrar a un modelo mayor y más caro.
-- **Traducción creativa y adaptación de registro es-en:** para localizar diálogos coloquiales donde prima el tono sobre la literalidad, el modelo puede generar varias alternativas por turno y dejar la selección a un editor humano; no es adecuado para traducción técnica o jurídica.
-- **Generación de datos sintéticos de diálogo para entrenar clasificadores:** se pueden producir pares de conversaciones etiquetadas por temática para alimentar un modelo de moderación, siempre que el pipeline incluya anonimización y control de calidad.
+- Roleplay conversacional en SillyTavern: el modelo está diseñado para integrarse con fichas de personaje y presets de Llama 3 Chat, gestionando diálogos multi-turno con coherencia narrativa gracias a los datasets de roleplay heredados de sus bases.
+- Despliegue en hardware de gama baja: con 1B parámetros y cuantización 4-bit/GGUF, puede ejecutarse en equipos consumer modestos mediante KoboldCpp o llama.cpp, lo que lo hace adecuado para entornos sin GPU dedicada.
+- Generación de narrativa interactiva para adultos: apropiado para proyectos de ficción interactiva donde se requiera contenido explícito sin rechazos, con control mediante system prompts y charcards.
+- Prototipado de chatbots de personaje: útil para desarrolladores que necesiten iterar rápidamente sobre personalidades y guiones conversacionales en español e inglés sin depender de APIs externas.
+- Investigación sobre alineación y censura: el modelo sirve como caso de estudio de técnicas de abliteración y merges orientados a reducir rechazos, útil para analizar el comportamiento de modelos sin salvaguardas.
+- Experimentación con técnicas de merge: la model card documenta parámetros concretos (select_topk, densidades, pesos) que pueden servir de referencia para reproducir o variar el proceso con mergekit.
+- Asistente de escritura creativa para adultos: generación de diálogos y escenas en español con control de estilo mediante prompts, en entornos locales y privados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K, MT-Bench ni evaluaciones de roleplay, y tampoco hay una comparación cuantitativa con las versiones v1-v3 que permita verificar la mejora declarada en seguimiento de instrucciones. El repositorio tiene 0 descargas y 1 like, por lo que tampoco existe retroalimentación de la comunidad que pueda servir como señal indirecta.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada en FP16/BF16:** en torno a 3,0 GB solo para pesos (el repo en safetensors ocupa exactamente 3,0 GB), más caché KV. Cabe en GPU de 8 GB sin problemas.
-- **VRAM estimada en 8 bits:** aproximadamente 1,6 GB de pesos.
-- **VRAM estimada en 4 bits:** aproximadamente 0,9-1,0 GB de pesos.
-- **Caché KV:** con 16 capas, 8 cabezas KV y dimensión de cabeza 64, el coste es de unos 32 KB por token en FP16; llenar 32.768 tokens de contexto añadiría del orden de 1 GB. Es una estimación calculada a partir de la arquitectura del base, no un dato publicado.
-- **GPU recomendadas:** cualquier GPU de consumo reciente sirve. Una RTX 3060 de 12 GB, una RTX 4060 Ti o una RTX 4090 ejecutan el modelo en FP16 con contexto amplio; para lotes grandes o contextos de 32k conviene 16 GB o más. En A100/H100 el modelo está sobredimensionado por la parte de cómputo: la limitación será el ancho de banda, no la VRAM.
-- **CPU:** viable con llama.cpp en cuantización Q4, con velocidades moderadas; es una de las pocas configuraciones donde un 1 B resulta realmente utilizable sin GPU.
-- **Opciones de despliegue:** llama.cpp y KoboldCpp (soportados explícitamente por el autor), Ollama y LM Studio mediante GGUF, vLLM o TGI gracias al tag `text-generation-inference` y a la compatibilidad con endpoints, y SillyTavern como front-end.
-- **Latencia y throughput:** no disponibles. No hay mediciones publicadas y cualquier cifra dependería del backend, la cuantización y la longitud de contexto.
+- VRAM estimada para inferencia: aproximadamente 3 GB en fp16 (1.498 millones de parámetros), en torno a 1-1,5 GB en cuantización 4-bit (estimación basada en el tamaño de parámetros; no confirmada por el autor).
+- GPU recomendadas: no especificadas por el autor. Por tamaño, cabe en GPUs consumer como RTX 3060, RTX 4060 o superiores; también en iGPU y CPU.
+- Cabe en GPU consumer: sí, con margen amplio, incluso en cuantización 4-bit sobre hardware modesto.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp, KoboldCpp (soporte explícito en la model card), GGUF; text-generation-inference figura entre las etiquetas del repo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Orientacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Orientación | Disponibilidad |
 |---|---|---|---|---|---|
-| SEX_ROLEPLAY.v4-3.2-1B | 1,5 B | 32.768 (según featherless; no confirmado en la model card) | Roleplay NSFW sin alinear | Apache 2.0 | Hugging Face, safetensors y GGUF |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Asistente general con alineación | Llama 3.2 Community License | Hugging Face, amplio ecosistema de cuantizaciones |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 nativos (128.000 con YaRN) | Asistente general, fuerte en multilingual y código | Apache 2.0 | Hugging Face, GGUF, vLLM, Ollama |
-| google/gemma-2-2b-it | 2,61 B | 8.000 | Asistente general | Gemma Terms of Use | Hugging Face, GGUF, Ollama |
-
-Frente a los tres, este modelo sacrifica capacidades generales (razonamiento, matemáticas, código, *tool calling*) a cambio de un estilo conversacional explícito y de una ausencia total de rechazos. Para tareas de asistente conviene cualquiera de las alternativas; para roleplay sin restricciones, el Llama 3.2 1B Instruct base rechazará buena parte de las peticiones y los otros dos también. La ventaja en licencia es real: Apache 2.0 es más permisiva que la Llama 3.2 Community License y que los términos de Gemma, aunque la licencia no cubre la legalidad del contenido generado.
+| SEX_ROLEPLAY.v4-3.2-1B | 1B | No disponible | Apache 2.0 | Roleplay NSFW, es/en | Hugging Face, GGUF, 4-bit |
+| Llama 3.2 1B Instruct | 1B | No disponible en la información | Llama 3.2 Community License | Propósito general con alineación | Hugging Face, amplia adopción |
+| huihui-ai/Llama-3.2-1B-Instruct-abliterated | 1B | No disponible en la información | Según modelo base | Abliteración genérica | Hugging Face |
+| bunnycore/FuseChat-3.2-1B-Creative-RP | 1B | No disponible en la información | No disponible | Roleplay creativo | Hugging Face (base del merge) |
 
 ## Limitaciones y advertencias
 
-- **Contenido explícito y sin alineación:** el modelo está diseñado para producir material sexual explícito y no incorpora filtros. No es apto para productos dirigidos al público general ni para entornos sin control de acceso.
-- **Riesgo de alucinación elevado:** con 1,5 B de parámetros, la coherencia factual es limitada y la consistencia decae en diálogos largos. Es esperable la pérdida de detalles del personaje o del escenario pasados unos miles de tokens, aunque no hay evaluaciones que cuantifiquen el punto de degradación.
-- **Sesgos no evaluados:** no se han publicado análisis de sesgo de género, orientación sexual, etnia o idioma. En un modelo de roleplay sin alineación, la reproducción de estereotipos en contenido sexual es un riesgo directo y difícil de mitigar sin filtros externos.
-- **Idioma:** solo español e inglés declarados, y el español no está evaluado. Es habitual que en modelos de este tamaño el español presente más calcos del inglés y una fluidez inferior.
-- **Contexto incierto:** la cifra de 32.768 tokens procede de un agregador externo, no de la model card. Si se necesita contexto largo en producción, conviene medirlo antes de diseñar la aplicación en torno a él.
-- **Licencia y responsabilidad:** Apache 2.0 permite uso comercial del modelo, pero no otorga derechos sobre el contenido generado ni exime del cumplimiento del RGPD, de la normativa sobre contenido sexual, de la verificación de edad de los usuarios ni de las condiciones de servicio de las plataformas donde se despliegue.
-- **Trazabilidad del autor:** el repo aparece bajo el identificador `NovaCorp` mientras que los modelos hermanos y el perfil de Chub.ai usan `Novaciano`. Conviene verificar la identidad y el historial antes de depender del proyecto.
-- **Validación escasa:** 0 descargas y 1 like. No hay evaluaciones independientes, ni issues, ni informes de terceros sobre calidad o estabilidad.
-- **Sin soporte documentado de herramientas:** no se debe asumir *function calling* ni comportamiento de agente; no hay evidencia de ello.
+- Contenido para adultos: el modelo está etiquetado como `not-for-all-audiences`, `nsfw` y `uncensored`; no es apto para uso general ni para menores.
+- Reducción deliberada de salvaguardas: el componente Prototype-Virus.FINAL está diseñado para anular protocolos de seguridad y filtros morales, lo que implica riesgo elevado de generar contenido tóxico, explícito o inapropiado sin rechazo.
+- Riesgo de alucinación: al ser un modelo de 1B parámetros, su capacidad de razonamiento y factualidad es limitada; no debe usarse para tareas que requieran precisión factual.
+- Sesgos: los datasets de origen incluyen `AlpacaToxicQA_ShareGPT` y otros conjuntos de roleplay sin filtrar, lo que puede introducir sesgos y estereotipos.
+- Limitaciones de idioma: solo español e inglés declarados; el rendimiento en otros idiomas no está garantizado.
+- Contexto: no se especifica la longitud de contexto; al derivar de Llama 3.2 1B, se espera la ventana del modelo base, pero no está confirmado en la información disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado y el uso en producción de un modelo sin salvaguardas conllevan responsabilidad legal y ética del desplegador.
+- Calidad del merge: al ser una fusión de pesos sin entrenamiento adicional, la coherencia y el seguimiento de instrucciones pueden degradarse en comparación con modelos entrenados específicamente.
+- Advertencia de producción: no recomendado para aplicaciones orientadas al público general, atención al cliente ni entornos donde se requiera moderación automática.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/NovaCorp/SEX_ROLEPLAY.v4-3.2-1B
-- Modelo base 1: https://huggingface.co/Nexesenex/Llama_3.2_1b_RandomLego_RP_R1_0.1
-- Modelo base 2: https://huggingface.co/UmbrellaInc/Prototype-Virus.FINAL-3.2-1B
-- Modelo base 3: https://huggingface.co/bunnycore/FuseChat-3.2-1B-Creative-RP
-- Modelo base 4: https://huggingface.co/jtatman/llama-3.2-1b-lewd-mental-occult
-- Ficha en featherless.ai: https://featherless.ai/models/Novaciano/SEX_ROLEPLAY-3.2-1B
-- Variante MLX fp16: https://featherless.ai/models/Novaciano/SEX_ROLEPLAY-3.2-1B-mlx-fp16
-- Ficha en abliteratedmodels.org: https://www.abliteratedmodels.org/sex-roleplay-3.2-1b/
-- Modelo hermano sobre Qwen3: https://huggingface.co/NovaCorp/QWEN3-SEX.ROLEPLAY-4B
-- Prompts de personaje del autor: https://chub.ai/users/Novaciano
+- Hugging Face: https://huggingface.co/NovaCorp/SEX_ROLEPLAY.v4-3.2-1B
+- Modelo base: https://huggingface.co/Nexesenex/Llama_3.2_1b_RandomLego_RP_R1_0.1
+- Modelo base: https://huggingface.co/UmbrellaInc/Prototype-Virus.FINAL-3.2-1B
+- Modelo base: https://huggingface.co/bunnycore/FuseChat-3.2-1B-Creative-RP
+- Modelo base: https://huggingface.co/jtatman/llama-3.2-1b-lewd-mental-occult
+- Chub AI (autor): https://chub.ai/users/Novaciano
+- Janitor AI (autor): https://janitorai.com/es/profiles/47ea81fa-4b33-4def-be06-c453c6635683_profile-of-novaciano
+- Referencia arXiv citada en tags: arxiv:2408.07990

@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "sahilmahendrakar (Sahil Mahendrakar) · GitHub",
-      "url": "https://github.com/sahilmahendrakar",
-      "snippet": "I&#x27;m Sahil Mahendrakar, a SWE at Amazon (AWS). I&#x27;m interested in building AI products for learning & thinking."
-    },
-    {
-      "title": "GitHub - sahilmahendrakar/ai-demo",
-      "url": "https://github.com/sahilmahendrakar/ai-demo",
-      "snippet": "Contribute to sahilmahendrakar/ai-demo development by creating an account on GitHub."
-    },
-    {
-      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
-      "url": "https://promptshotai.com/tools/ai-model-detector",
-      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
-    },
-    {
-      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
-      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
-      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
-    },
-    {
-      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
-      "url": "https://llm-stats.com/",
-      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
-    }
-  ]
+  "sources": []
 }

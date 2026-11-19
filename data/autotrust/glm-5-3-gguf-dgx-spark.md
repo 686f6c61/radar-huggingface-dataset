@@ -2,121 +2,112 @@
 
 ## Resumen
 
-GLM-5.3-GGUF-DGX-Spark es una compilacion en formato GGUF para llama.cpp del checkpoint comprimido autotrust/GLM-5.3-SLIM-E192, publicado por AutoTrust AI Lab. Se trata de una version del modelo MoE GLM 5.3 de Z.AI (744B parametros en su version original) a la que se ha aplicado SLIM-Q, la receta de compresion en dos etapas del autor: poda estructural de expertos (SLIM) seguida de cuantizacion de bajo bit (Q). El resultado es un fichero GGUF de 149,7 GiB repartido en cuatro shards, con arquitectura glm-dsa y soporte en el llama.cpp upstream.
+GLM-5.3-GGUF-DGX-Spark es una compilación GGUF del checkpoint comprimido autotrust/GLM-5.3-SLIM-E192, derivado del modelo base zai-org/GLM-5.3 de Z.AI (744.000 millones de parámetros, arquitectura MoE con 256 expertos enrutados y activación top-8). El autor, autotrust, aplica su receta SLIM-Q (Selective expert pruning + Low-bit quantization for Inference of MoE), que combina una poda estructural del 25 % de los expertos enrutados por capa con cuantización agresiva IQ2_XXS en los expertos supervivientes, manteniendo atención, routers y expertos compartidos en Q8_0. El resultado es un archivo de 149,7 GiB que reduce el peso un 24 % respecto a la cuantización Q2 equivalente del modelo completo.
 
-La propuesta de valor es de tipo estructural, no solo de cuantizacion. El pipeline elimina permanentemente 64 de los 256 expertos enrutados por capa (25 %) en las 78 capas del modelo, de modo que la huella de pesos se reduce en 47 GiB (24 %) frente al GLM 5.3 Q2 completo con la misma receta de cuantizacion. El router sigue activando top-8 de los 192 expertos restantes, por lo que el coste computacional y el trafico de memoria por token no cambian: solo baja el espacio ocupado en disco y en VRAM. El autor reporta que el checkpoint FP8 podado mantiene HumanEval (95,1), CyberMetric (87,7) y BFCL (69,4 en live, 72,5 en multi-turno), con la perdida concentrada en benchmarks de conocimiento tipo examen chino.
+El problema que resuelve es de despliegue: un MoE de escala billón no cabe en hardware de gama alta de consumo ni en estaciones compactas. Esta build está dimensionada para ejecutarse íntegramente residente en dos NVIDIA DGX Spark enlazadas por ConnectX-7 (unos 75 GiB por nodo), en una única GPU de 180 GB (B200/GB200) o en un Mac Studio de 256 GB. Según el autor, es la primera compresión publicada de un MoE de escala billón que combina poda de expertos y cuantización de bajo bit, cuando la investigación previa en esta técnica se limita a modelos de unos 50.000 millones de parámetros.
 
-Es relevante ahora porque permite servir un MoE de escala casi trillonaria en hardware de gama alta pero no de centro de datos: dos DGX Spark enlazadas por ConnectX-7 (unos 75 GiB de pesos por maquina), una GPU unica de 180 GB (B200/GB200) o un Mac Studio de 256 GB. El repositorio acumula 4691 descargas y 22 likes, y es una de las pocas implementaciones publicas de poda de expertos mas cuantizacion agresiva aplicada a un modelo de mas de 500B parametros.
+El modelo conserva capacidades de generación de texto, código, razonamiento agéntico y ciberseguridad con pérdidas mínimas frente al checkpoint podado en FP8, aunque degrada de forma deliberada el conocimiento enciclopédico evaluado en exámenes chinos (C-Eval) y el razonamiento científico (GPQA-Diamond). El repositorio acumula 2.243 descargas y 21 likes desde su publicación en septiembre de 2026.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (glm-dsa) sobre transformer decoder; 78 capas; mezcla de expertos enrutados + expertos compartidos |
-| Parametros totales | 562.687.789.632 (~563B) segun los metadatos safetensors del repositorio |
-| Parametros activos | no disponible; el router activa top-8 de los 192 expertos enrutados que quedan por capa tras la poda (configuracion original: top-8 de 256) |
-| Longitud de contexto | no disponible en la informacion proporcionada; el ejemplo de despliegue del autor arranca llama-server con `-c 32768` |
-| Tipos de cuantizacion | IQ2_XXS (2,06 bits/peso en expertos enrutados) con Q8_0 en atencion, routers y expertos compartidos; el build de produccion Turbo 2.0 usa NVFP4 |
+| Arquitectura | Transformer MoE con atención dispersa (glm-dsa), 256 expertos enrutados, top-8 por token |
+| Parámetros totales | 562.687.789.632 (checkpoint SLIM-E192 tras poda; el GLM-5.3 original declara 744.000 millones) |
+| Parámetros activos | no disponible (top-8 de 192 expertos enrutados por capa; el autor no publica el cómputo activo exacto) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | IQ2_XXS en expertos enrutados (2,06 bits/peso); Q8_0 en atención, routers y expertos compartidos |
 | Idiomas soportados | en, zh |
-| Licencia | other, license_name: glm-5.3 (enlace a la licencia de zai-org/GLM-5.3) |
-| Formato de pesos | GGUF en 4 shards (`GLM-5.3-Q2-DGX-Spark-00001-of-00004.gguf` a `-00004-of-00004.gguf`), 149,7 GiB en total; checksums en `GLM-5.3-Q2-DGX-Spark.sha256` |
-
-Datos adicionales del repositorio: pipeline text-generation, creado el 2026-09-20, actualizado el 2026-09-21, tamano del repo 160,8 GB, tags `endpoints_compatible`, `conversational`, `region:us`.
+| Licencia | other (GLM-5.3), con enlace a la licencia del modelo base |
+| Formato de pesos | GGUF (4 shards, 149,7 GiB total; checksums SHA-256 incluidos) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder con mezcla de expertos (MoE) de la familia glm-dsa, con 78 capas segun la configuracion de despliegue publicada (`--tensor-split 1,1` reparte aproximadamente la mitad de las capas en cada DGX Spark). El modelo base, zai-org/GLM-5.3, tiene 744B parametros y 256 expertos enrutados por capa con activacion top-8. Sobre ese checkpoint, AutoTrust aplica SLIM-Q, un pipeline de compresion post-entrenamiento en dos etapas. La etapa SLIM perfila las frecuencias de enrutamiento sobre cargas representativas y elimina estructuralmente los 64 expertos menos usados de cada capa, reduciendo el modelo de 744B a la variante SLIM-E192. La etapa Q cuantiza de forma agresiva unicamente los expertos enrutados, dejando atencion, routers y expertos compartidos en alta precision para preservar el comportamiento de enrutamiento del que depende la calidad del MoE.
+La arquitectura subyacente es un transformer de mezcla de expertos (MoE) con atención dispersa denotada como glm-dsa, soportada por llama.cpp upstream. Cada token activa los 8 expertos enrutados más probables de un pool de 256 por capa; tras la poda de autotrust, el pool se reduce a 192 expertos por capa. La atención, los routers y los expertos compartidos se mantienen en Q8_0, de modo que el comportamiento de enrutamiento —del que depende la calidad del MoE— no se ve afectado por la cuantización de bajo bit aplicada a los expertos enrutados.
 
-No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF, DPO u otro ajuste de alineamiento, ni en el modelo original ni en el checkpoint comprimido. La innovacion tecnica destacable es la doble esparsidad (activacion top-8 x poda del pool de expertos) combinada con bajo bit-width: el autor senala que la investigacion publicada de poda de expertos mas cuantizacion se queda en torno a modelos de 50B parametros, mas de un orden de magnitud por debajo de este caso. La cuantizacion IQ2_XXS aplicada es de 2,06 bits por peso en expertos enrutados, con Q8_0 en el resto, y el build de produccion (Guru Turbo 2.0) usa NVFP4 en lugar de IQ2_XXS.
+El pipeline SLIM-Q opera en dos etapas. La primera perfile las frecuencias de enrutamiento sobre cargas de trabajo representativas y elimina estructuralmente los 64 expertos menos usados de cada capa (25 % del pool). A diferencia del skipping dinámico de expertos, que ahorra latencia pero mantiene todos los pesos en memoria, la poda estructural reduce permanentemente la huella de pesos, que es el eje que determina qué hardware puede servir el modelo. La segunda etapa cuantiza los expertos supervivientes a IQ2_XXS (2,06 bits/peso). El coste por token no aumenta: el router sigue seleccionando top-8 entre los 192 expertos restantes, por lo que el tráfico de memoria y el cómputo por token son idénticos; solo cae la huella total. La build de producción de Guru Turbo 2.0 usa NVFP4 en lugar de IQ2_XXS. No se dispone de información sobre el dataset de entrenamiento original de GLM-5.3, el número de tokens ni las etapas de RLHF/DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y chino (pipeline text-generation, tag `conversational`).
-- Generacion de codigo: el checkpoint FP8 podado mantiene HumanEval en 95,1, identico al modelo original.
-- Razonamiento matematico: el autor reporta una perdida de 2,5 puntos en AIME respecto al original, sin publicar los valores absolutos.
-- Tool calling / function calling: evaluado en BFCL (Berkeley Function Calling Leaderboard) en su modalidad live (69,4) y multi-turno (72,5).
-- Comportamiento agentico multi-paso: la puntuacion de BFCL multi-turno indica capacidad de encadenar llamadas a herramientas en conversaciones de varios turnos.
-- Ciberseguridad: CyberMetric 87,7 en la base podada, uno de los objetivos de diseno explicitos de la receta de poda.
-- Conocimiento general y de tipo examen: GPQA-Diamond 83,3 y C-Eval 84,7 en la base podada (con degradacion respecto al original).
-- Compatibilidad con endpoints: el repositorio esta etiquetado como `endpoints_compatible`.
-- Capacidades multimodales: no disponibles en este repositorio; GLM-5.3-Flash es descrito como multimodal nativo en una de las noticias, pero esta build es text-generation.
-- Modo thinking explicito: no documentado en la informacion disponible.
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Generación y comprensión de código: el autor reporta HumanEval de 95,1 en el checkpoint podado en FP8, idéntico al modelo original.
+- Razonamiento matemático: AIME con una pérdida de 2,5 puntos tras la poda (dato del A/B del autor).
+- Razonamiento científico y conocimiento enciclopédico: GPQA-Diamond cae de 86,9 a 83,3 y C-Eval de 92,0 a 84,7 tras la poda.
+- Conocimiento de ciberseguridad: CyberMetric 87,7 frente a 88,0 del original.
+- Tool calling y function calling: BFCL live 69,4 y BFCL multi-turn 72,5 tras la poda, prácticamente sin cambios.
+- Capacidades agénticas y razonamiento multi-paso, evaluadas mediante BFCL.
+- No se documentan capacidades de visión, audio ni modo de pensamiento explícito en la información disponible.
 
 ## Casos de uso
 
-- Asistencia de programacion en local: con HumanEval en 95,1 en la base podada, el modelo puede emplearse como copiloto de codigo dentro de la red corporativa, sin enviar codigo propietario a APIs externas, desplegado en dos DGX Spark o en un B200.
-- Agentes con herramientas en produccion: sus resultados en BFCL live (69,4) y multi-turno (72,5) lo hacen util para orquestar APIs, consultas a bases de datos y flujos multi-paso donde el agente debe decidir que herramienta invocar y en que orden.
-- Analisis de seguridad y ciberseguridad: CyberMetric 87,7 permite usarlo para triaje de vulnerabilidades, resumen de informes tecnicos de seguridad y clasificacion de indicadores, un caso donde la perdida de poda es minima (0,3 puntos).
-- Atencion al cliente bilingue ingles-chino: soporta conversaciones multi-turno en ambos idiomas, y su despliegue en hardware propio evita costes por token en volumenes altos de consultas.
-- Procesamiento por lotes en una GPU de 180 GB: en B200/GB200 el modelo alcanza 177 t/s agregados con 32 peticiones en paralelo, adecuado para pipelines de enriquecimiento de documentos, generacion masiva de resumenes o clasificacion a gran escala.
-- Investigacion en entornos air-gapped: un Mac Studio de 256 GB o dos DGX Spark permiten ejecutar el modelo sin conectividad externa, util en laboratorios con requisitos de confidencialidad estrictos.
-- Evaluacion de tecnicas de compresion: el repositorio sirve como referencia reproducible de poda estructural de expertos mas cuantizacion IQ2_XXS sobre un MoE de mas de 500B parametros, con los checksums publicados.
-- Razonamiento matematico asistido: con una perdida de 2,5 puntos en AIME, sigue siendo apto para resolucion de problemas donde se tolere ese margen, por ejemplo verificacion de calculos o generacion de problemas de practica.
-- Backend de asistentes con contexto de 32K: la configuracion de referencia usa `-c 32768` con `--cont-batching`, suficiente para conversaciones largas o documentos extensos en una ventana de trabajo.
+- Despliegue en clúster de dos DGX Spark: el caso de diseño del repositorio. El modelo se reparte por llama.cpp RPC entre las dos memorias de 128 GB (unos 75 GiB por nodo) y queda completamente residente, con decodificación limitada por ancho de banda de memoria (unos 25 GB de pesos por token).
+- Servicio de inferencia en GPU de 180 GB: en una B200 o GB200 el modelo se sirve residente con 42 t/s en un único stream y 177 t/s agregados con 32 peticiones en paralelo (medición del autor), adecuado para backends de chat con concurrencia moderada.
+- Estación de trabajo Mac Studio de 256 GB: ejecución residente vía Metal con un rendimiento de la misma clase que el GLM 5.3 Q2 completo en el mismo equipo, útil para desarrollo y evaluación local sin infraestructura de centro de datos.
+- Asistencia de código en pipelines de CI/CD: con HumanEval de 95,1 y soporte de tool calling, puede integrarse en revisiones automáticas, generación de parches y tareas de refactorización donde el contexto largo y el razonamiento agéntico son necesarios.
+- Agentes autónomos con llamadas a herramientas: los resultados de BFCL (69,4 en live, 72,5 en multi-turno) lo hacen apto para orquestación de funciones y flujos multi-paso en producción, siempre que el coste de un fallo de enrutamiento sea tolerable.
+- Análisis de ciberseguridad: CyberMetric de 87,7 permite clasificación de vulnerabilidades, resumen de informes técnicos y asistencia en triaje, un dominio en el que la poda apenas introduce degradación.
+- Procesamiento bilingüe inglés-chino: atención al cliente y análisis documental en ambos idiomas, con la advertencia de que el conocimiento evaluado en exámenes chinos es el más afectado por la compresión.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados por el autor corresponden a una comparacion A/B (A/B bajo vLLM) del checkpoint FP8 podado frente al GLM 5.3 original. No son mediciones del fichero GGUF IQ2_XXS de este repositorio.
+Datos del A/B del autor entre el checkpoint podado en FP8 y el GLM-5.3 original, más el rendimiento medido en hardware:
 
-| Benchmark | GLM 5.3 original | GLM-5.3-SLIM-E192 (base FP8 podada) | Delta |
-|---|---|---|---|
-| HumanEval | 95,1 | 95,1 | 0,0 |
-| CyberMetric | 88,0 | 87,7 | −0,3 |
-| BFCL live | 69,6 | 69,4 | −0,2 |
-| BFCL multi-turn | 73,0 | 72,5 | −0,5 |
-| AIME | no disponible | no disponible | −2,5 pt |
-| C-Eval | 92,0 | 84,7 | −7,3 |
-| GPQA-Diamond | 86,9 | 83,3 | −3,6 |
+| Benchmark | GLM-5.3 original | SLIM podado (FP8) |
+|---|---|---|
+| HumanEval | 95,1 | 95,1 |
+| CyberMetric | 88,0 | 87,7 |
+| BFCL live | 69,6 | 69,4 |
+| BFCL multi-turn | 73,0 | 72,5 |
+| AIME | no disponible (referencia) | −2,5 puntos |
+| C-Eval | 92,0 | 84,7 |
+| GPQA-Diamond | 86,9 | 83,3 |
 
-Rendimiento medido de inferencia (build GGUF, GPU de 180 GB tipo B200/GB200, residente): 42 t/s en un unico stream y 177 t/s agregados con 32 peticiones en paralelo. En un unico DGX Spark de 128 GB con mmap el autor indica "low single-digit t/s" (unidades bajas por segundo). No se han publicado resultados de benchmarks del propio fichero IQ2_XXS.
+| Métrica de despliegue | Valor |
+|---|---|
+| Huella GGUF | 149,7 GiB (−47 GiB, −24 % frente al GLM 5.3 Q2 con la misma receta) |
+| Throughput en B200/GB200 | 42 t/s single stream; 177 t/s agregados a 32 peticiones paralelas |
+| Throughput en un solo DGX Spark (mmap parcial) | dígito único bajo de t/s |
+
+No se han publicado resultados de benchmarks del archivo IQ2_XXS final frente al checkpoint FP8 en la información disponible; las cifras de calidad corresponden a la etapa de poda.
 
 ## Requisitos de hardware
 
-- VRAM/almacenamiento: 149,7 GiB de pesos en cuatro shards GGUF. En la configuracion de dos DGX Spark, unos 75 GiB de pesos por maquina y unos 40 GiB por maquina libres para contexto y buffers.
-- Dos DGX Spark (128 GB cada una) enlazadas por ConnectX-7: configuracion prevista para este fichero, con llama.cpp RPC y `--tensor-split 1,1`. Solo las activaciones cruzan el enlace, por lo que los 200 GbE de ConnectX no son el cuello de botella; la decodificacion esta limitada por ancho de banda de memoria (unos 25 GB de pesos por token). Requiere copiar el fichero en el NVMe de ambas maquinas o en almacenamiento compartido.
-- Una GPU unica de 180 GB (B200 / GB200): residencia completa, 42 t/s en un stream y 177 t/s con 32 peticiones concurrentes (medido).
-- Mac Studio de 256 GB (192 GB con contexto pequeno): residencia completa con Metal, en la misma clase que el GLM 5.3 Q2 completo en el mismo equipo.
-- Un unico DGX Spark de 128 GB: funciona con mmap y residencia parcial, pero lento (unidades bajas de t/s); el autor recomienda para ese caso GLM-5.3-Flash-GGUF-DGX-Spark (79 GiB).
-- Cabe en GPU de consumo: no. El fichero de 149,7 GiB excede la VRAM de cualquier GPU consumer actual (RTX 4090 24 GB, RTX 5090 32 GB).
-- Opciones de despliegue: llama.cpp upstream con soporte de la arquitectura glm-dsa (`cmake -B build -DGGML_CUDA=ON -DGGML_RPC=ON -DCMAKE_CUDA_ARCHITECTURES=121a-real`), `llama-server` con `-ngl 99 -fa on -np 2 --cont-batching`, y `rpc-server` para el reparto entre dos maquinas. El build de produccion Turbo 2.0 se sirve en NVFP4, presumiblemente mediante vLLM.
-- Latencia y throughput: los unicos datos concretos son los 42 t/s (stream unico) y 177 t/s (32 peticiones) en B200/GB200. No hay datos de latencia por token ni de tiempo a primer token. En DGX Spark unica con mmap, el autor solo califica el rendimiento como "lento" (unidades bajas de t/s).
+- VRAM/RAM estimada: 149,7 GiB de pesos en total; unos 75 GiB residentes por nodo en la configuración de dos DGX Spark.
+- GPU recomendadas: B200 o GB200 de 180 GB para servicio residente en una sola GPU; dos DGX Spark (128 GB cada una) con enlace ConnectX-7 para el despliegue previsto.
+- Apple Silicon: Mac Studio de 256 GB (192 GB con contexto pequeño) ejecuta el modelo residente vía Metal.
+- Un solo DGX Spark de 128 GB funciona con mmap y paginación desde NVMe, pero a velocidad de un dígito bajo de tokens por segundo; el autor recomienda para ese caso GLM-5.3-Flash-GGUF-DGX-Spark (79 GiB).
+- No cabe en GPU de consumo (RTX 4090, 24 GB) ni en configuraciones de 48-80 GB.
+- Despliegue: llama.cpp upstream con soporte glm-dsa; compilación con `-DGGML_CUDA=ON -DGGML_RPC=ON -DCMAKE_CUDA_ARCHITECTURES=121a-real`; carga apuntando al primer shard de los cuatro.
+- Latencia y throughput: 42 t/s en un stream y 177 t/s agregados en B200/GB200; decodificación limitada por ancho de banda de memoria en el clúster Spark.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato / tamano | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| autotrust/GLM-5.3-GGUF-DGX-Spark | ~563B (metadatos) | GGUF IQ2_XXS, 149,7 GiB en 4 shards | no disponible (ejemplo con 32768) | other / glm-5.3 | 4691 descargas, 22 likes |
-| autotrust/GLM-5.3-Flash-GGUF-DGX-Spark | no disponible | GGUF, 79 GiB | no disponible | no disponible | disponible en Hugging Face |
-| nvidia/GLM-5.3-NVFP4 | 391B | NVFP4 | no disponible | no disponible | 24,9k descargas, 31 likes |
-| zai-org/GLM-5.3 (original) | 744B | safetensors (base del A/B en FP8) | no disponible | glm-5.3 | modelo base original |
-| GLM 5.3 Q2 completo (misma receta) | no disponible | GGUF, 196,7 GiB implicito (149,7 + 47 GiB) | no disponible | glm-5.3 | referenciado en la model card |
+| autotrust/GLM-5.3-GGUF-DGUF-Spark | 562.687.789.632 (tras poda) | no disponible | other (GLM-5.3) | GGUF IQ2_XXS/Q8_0 | 149,7 GiB; dos DGX Spark o GPU de 180 GB |
+| zai-org/GLM-5.3 | 744.000 millones | no disponible | GLM-5.3 | safetensors | Modelo original sin poda; requiere despliegue de clase 200 GB en Q2 |
+| autotrust/GLM-5.3-SLIM-E192 | no disponible | no disponible | GLM-5.3 | no disponible | Checkpoint podado en FP8 del que deriva esta build |
+| autotrust/GLM-5.3-Flash-GGUF-DGX-Spark | no disponible | no disponible | GLM-5.3 | GGUF (79 GiB) | Alternativa del mismo autor para un único DGX Spark |
 
-La ventaja declarada de esta build frente al GLM 5.3 Q2 completo con la misma receta de cuantizacion es de 47 GiB menos (24 %), lo que marca la diferencia entre requerir un despliegue de clase 200 GB y caber completamente residente en dos DGX Spark. Frente a nvidia/GLM-5.3-NVFP4, esta build esta pensada para llama.cpp y hardware unico o Spark, mientras que NVFP4 apunta a despliegues con aceleracion FP4.
+No se dispone de datos de benchmarks ni de contexto de modelos de otros fabricantes comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia es "other" con license_name glm-5.3. Las condiciones exactas de uso comercial no se detallan en la informacion proporcionada y remiten al fichero LICENSE del modelo base; hay que revisarlas antes de cualquier despliegue en produccion.
-- Los benchmarks publicados corresponden al checkpoint FP8 podado evaluado bajo vLLM, no al fichero GGUF IQ2_XXS de este repositorio. La cuantizacion a 2,06 bits por peso en los expertos enrutados puede degradar la calidad respecto a esas cifras, y no hay mediciones del GGUF para confirmarlo.
-- La poda se cobra un precio medible en conocimiento general y de tipo examen: C-Eval baja 7,3 puntos (92,0 a 84,7) y GPQA-Diamond 3,6 puntos (86,9 a 83,3). El perfil de poda esta sesgado deliberadamente hacia cargas de codigo, agentes y ciberseguridad.
-- Perdida de 2,5 puntos en AIME segun el autor, sin valores absolutos publicados.
-- Solo se declaran los idiomas ingles y chino. No hay evidencia de rendimiento en castellano ni en otras lenguas.
-- La model card proporcionada esta truncada ("the author has n..."), por lo que puede faltar informacion sobre licencia, limitaciones o configuracion adicional.
-- No se documentan sesgos conocidos, tasas de alucinacion, procesos de alineamiento ni evaluaciones de seguridad del modelo.
-- El despliegue no es trivial: requiere compilar llama.cpp con soporte CUDA y RPC, distribuir 149,7 GiB entre dos maquinas y arrancar un worker RPC antes del servidor. En un unico DGX Spark con mmap el rendimiento cae a unidades bajas de t/s.
-- El modelo no cabe en ninguna GPU de consumo; su uso practico exige hardware de 180 GB o un Mac Studio de 256 GB, o bien el cluster de dos DGX Spark.
-- No se especifica la longitud de contexto maxima del modelo; el unico dato es el `-c 32768` del ejemplo de arranque, que es una eleccion de configuracion y no necesariamente el limite del modelo.
+- La poda degrada de forma deliberada el conocimiento enciclopédico y el razonamiento científico: C-Eval cae 7,3 puntos y GPQA-Diamond 3,6 puntos; no es adecuado para tareas que dependan de conocimiento factual en chino o de razonamiento científico de alta exigencia.
+- El A/B de calidad se realizó sobre el checkpoint podado en FP8, no sobre el GGUF IQ2_XXS final; la degradación adicional de la cuantización a 2,06 bits no está cuantificada en la información disponible.
+- La licencia es "other" con nombre glm-5.3 y enlace a la licencia del modelo base; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que pueden imponer restricciones adicionales.
+- Solo se declaran inglés y chino; el rendimiento en castellano no está evaluado y probablemente sea inferior.
+- La longitud de contexto no está documentada en el repositorio; no debe asumirse la del modelo base sin verificación.
+- En un único DGX Spark el modelo funciona con paginación desde NVMe a velocidad de un dígito bajo de tokens por segundo, lo que lo hace inviable para uso interactivo.
+- Riesgo de alucinación inherente a modelos de lenguaje; no se documentan evaluaciones de factualidad ni de sesgos.
+- El repositorio incluye material promocional de demos del autor (news.guru.so) que no constituye documentación técnica del modelo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark
-- Checkpoint base comprimido: https://huggingface.co/autotrust/GLM-5.3-SLIM-E192
-- Modelo original de Z.AI: https://huggingface.co/zai-org/GLM-5.3
+- Repositorio Hugging Face: https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
-- Perfil del autor (AutoTrust AI Lab): https://huggingface.co/autotrust
-- Build alternativa para un unico DGX Spark (79 GiB): https://huggingface.co/autotrust/GLM-5.3-Flash-GGUF-DGX-Spark
-- Build NVFP4 de NVIDIA: https://huggingface.co/nvidia/GLM-5.3-NVFP4
-- Listado de modelos cuantizados de zai-org/GLM-5.3: https://huggingface.co/models?other=base_model%3Aquantized%3Azai-org%2FGLM-5.3
-- Repositorio de llama.cpp (soporte de la arquitectura glm-dsa): https://github.com/ggml-org/llama.cpp
-- Perfil de Aevonix Research (cluster de DGX Spark y receta Blocks of Experts de AutoTrust): https://x.com/Kurcide
-
-No se han encontrado en la busqueda web papers tecnicos de SLIM-Q, blogs de ingenieria del autor ni demos publicas adicionales de este checkpoint.
+- Checkpoint podado de origen: https://huggingface.co/autotrust/GLM-5.3-SLIM-E192
+- Alternativa para un solo DGX Spark: https://huggingface.co/autotrust/GLM-5.3-Flash-GGUF-DGX-Spark
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Demo del autor (GuruSearch): https://news.guru.so/ui

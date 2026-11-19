@@ -2,63 +2,59 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-MLX-4bit es una versión cuantizada a 4 bits en formato MLX del modelo Nanbeige/Nanbeige4.3-33B, publicada por Pratik Gandhi (pratikgx) para su ejecución en Apple Silicon. No es un modelo entrenado desde cero: el repositorio contiene únicamente una copia cuantizada del checkpoint original en bf16, con 33.118.977.024 parámetros y un peso en disco de 18,6 GB. La licencia Apache 2.0 del modelo original se mantiene.
+Nanbeige4.3-33B-MLX-4bit es una cuantización en 4 bits del modelo Nanbeige/Nanbeige4.3-33B, publicada por el usuario pratikgx para su ejecución en Apple Silicon mediante la librería MLX. El modelo original, desarrollado por el equipo Nanbeige, es un transformer de 33.118.977.024 parámetros (aproximadamente 33,1 mil millones) con licencia Apache 2.0. Esta versión cuantizada reduce el peso en disco a 18,6 GB, lo que permite ejecutarlo en equipos con memoria unificada de 64 GB, como un Mac mini con chip M5 Pro.
 
-Su interés práctico es que permite ejecutar un modelo denso de 33.000 millones de parámetros en un Mac con memoria unificada de 64 GB, algo inviable con los pesos en bf16 (unos 66 GB solo de pesos, estimación aritmética). El autor aporta mediciones de velocidad, memoria y pruebas de recuperación en contexto largo (needle in a haystack) sobre un Mac mini con M5 Pro, lo que convierte al repositorio en una referencia útil para quien quiera saber qué esperar antes de descargar 18,6 GB.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de 33B en hardware de consumo Apple sin necesidad de GPUs dedicadas. La model card incluye mediciones reales de velocidad, memoria y pruebas de aguja en pajar (needle in a haystack) hasta 128k tokens de contexto, lo que permite evaluar su viabilidad en producción local. No obstante, se trata de una cuantización comunitaria, no oficial, y las pruebas de calidad son verificaciones de sanidad con conjuntos muy reducidos (20, 10 y 10 elementos), no resultados de benchmarks estandarizados.
 
-La model card del repositorio incluye la plantilla de chat con un bloque `<think>`, de modo que el modelo razona antes de responder y consume tokens en ese razonamiento. Es relevante para quien busque inferencia local, privada y sin GPU dedicada, asumiendo un throughput modesto (del orden de 10-14 tokens por segundo).
+El modelo emplea un modo de razonamiento (thinking) que abre un bloque `<think>` antes de responder, por lo que requiere asignar suficientes tokens de generación para el razonamiento y la respuesta final. La cuantización afecta a todas las capas lineales, incluidos los embeddings y el `lm_head`, con un tamaño de grupo de 64 y aproximadamente 4,5 bits por peso incluyendo escalas y sesgos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de tipo Llama (según el tag `llama` del repo); detalles de capas, atención y activaciones no disponibles |
-| Parámetros totales | 33.118.977.024 |
-| Parámetros activos | No disponible (no se indica si el modelo base es denso o MoE) |
-| Longitud de contexto | No disponible en la información oficial; el autor verifica recuperación con 131.008 tokens de prompt (128k) |
-| Tipos de cuantización | MLX affine 4 bits, group size 64, ~4,5 bits por peso incluyendo escalas y sesgos; todas las capas lineales cuantizadas, incluidos embeddings y `lm_head` |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer (detalles de la arquitectura original no disponibles en la informacion proporcionada) |
+| Parametros totales | 33.118.977.024 (aproximadamente 33,1B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | Hasta 128k tokens verificados en pruebas de needle in a haystack (131.008 tokens de prompt); contexto maximo oficial no disponible |
+| Tipos de cuantizacion | MLX affine quantization, 4 bits, group size 64, aproximadamente 4,5 bits por peso incluyendo escalas y sesgos |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors en formato MLX (`mlx` 0.32.4 / `mlx-lm` 0.32.2) |
-| Modelo base | Nanbeige/Nanbeige4.3-33B (bf16) |
-| Tamaño en disco | 18.630.506.496 bytes (18,6 GB) |
-| Pipeline | text-generation |
+| Formato de pesos | safetensors (MLX), 18.630.506.496 bytes de pesos, 18,6 GB en disco |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura interna ni el proceso de entrenamiento del modelo base. El único dato estructural disponible es el tag `llama` de Hugging Face, que sitúa al modelo en la familia de transformers decoder-only tipo Llama, con 33.118.977.024 parámetros totales. No hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas del modelo original en la información proporcionada.
+La informacion proporcionada no detalla la arquitectura interna del modelo original Nanbeige4.3-33B mas alla de que se trata de un transformer de 33,1B parametros. No se especifica si emplea attention lineal, mezcla de expertos (MoE), state space models ni hibridaciones. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste por instrucciones. La model card de esta cuantizacion se limita a describir el proceso de conversion y las mediciones de rendimiento, remitiendo al repositorio original para los detalles de entrenamiento.
 
-Lo que sí está documentado es el proceso de cuantización: se parte de los pesos bf16 de Nanbeige/Nanbeige4.3-33B y se aplica `mlx.core.quantize` (la misma matemática que `mlx_lm.convert -q`) con 4 bits y group size 64 sobre todas las capas lineales, incluidas las de embedding y la cabeza de salida `lm_head`. La copia benchmarkeada se convirtió en Metal y la subida en CPU con idénticos ajustes; en una comprobación de una capa completa, cerca del 0,2 % de los códigos de 4 bits difieren en uno o dos pasos por redondeo en coma flotante, con el mismo error respecto al original bf16 en ambas copias.
+La innovacion tecnica destacable de esta publicacion es el propio proceso de cuantizacion: se convirtieron los pesos bf16 del modelo original mediante `mlx.core.quantize` (equivalente a `mlx_lm.convert -q`) con mlx 0.32.4 y mlx-lm 0.32.2, aplicando cuantizacion a todas las capas lineales, incluidos embeddings y `lm_head`. El autor verifico que la copia convertida en CPU (la subida) y la convertida en Metal (la evaluada) son equivalentes: en una comprobacion de una capa completa, aproximadamente el 0,2% de los codigos de 4 bits difieren en uno o dos pasos por redondeo de coma flotante, con el mismo error frente al original bf16. El modelo incorpora un modo de razonamiento que abre un bloque `<think>` antes de la respuesta final.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento previo a la respuesta mediante un bloque `<think>` abierto por la plantilla de chat.
-- Razonamiento matemático: el autor reporta 20/20 en un conjunto propio de problemas de enunciado verbal (20 ítems, con thinking activado).
-- Generación de código: 10/10 en un conjunto propio de tareas de programación (10 ítems).
-- Seguimiento de instrucciones: 10/10 en un conjunto propio (10 ítems).
-- Manejo de contexto largo: recuperación correcta de una aguja insertada al 10 %, 30 %, 50 %, 70 % y 90 % de profundidad con 32k tokens de contexto; al 25 %, 50 % y 75 % con 64k; al 50 % con 128k (131.008 tokens de prompt).
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible como característica documentada, más allá del modo de razonamiento del bloque `<think>`.
-- Capacidades de visión o audio: no disponibles.
+- Generacion de texto conversacional y de proposito general, con pipeline `text-generation`.
+- Razonamiento explicito mediante bloque `<think>`: el modelo razona primero y luego responde, lo que exige asignar suficientes tokens de generacion.
+- Razonamiento matematico: obtuvo 20/20 en un conjunto de problemas de palabras matematicos (verificacion de sanidad, no benchmark estandar).
+- Generacion de codigo: obtuvo 10/10 en tareas de programacion en el conjunto de prueba del autor.
+- Seguimiento de instrucciones: obtuvo 10/10 en el conjunto de prueba del autor.
+- Manejo de contexto largo: recupero correctamente la aguja en pruebas de needle in a haystack a 32k, 64k y 128k tokens, en distintas profundidades (10%, 25%, 30%, 50%, 70%, 75%, 90%).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Vision o audio: no disponible; la model card no menciona capacidades multimodales.
 
 ## Casos de uso
 
-- Inferencia local en Mac con Apple Silicon: el modelo cabe en un equipo de 64 GB de memoria unificada con un pico medido de 19,32 GB a 512 tokens de contexto, lo que permite trabajar con un modelo de 33B sin GPU dedicada ni conexión a internet.
-- Análisis de documentos extensos con privacidad estricta: con 131.008 tokens de prompt verificados y una aguja recuperada al 50 % de profundidad, es viable procesar contratos, informes o expedientes completos sin que los datos salgan del equipo.
-- Prototipado de asistentes conversacionales: `mlx_lm.chat` levanta una sesión interactiva multi-turno directamente desde el repositorio, útil para validar prompts y flujos antes de invertir en infraestructura GPU.
-- Generación de código en local para entornos sin red: los 10/10 en tareas de programación del chequeo del autor, junto con el modo de razonamiento, lo hacen apto para borradores de funciones y revisión de fragmentos en estaciones aisladas, aceptando un throughput de ~14 tok/s.
-- Resolución de problemas matemáticos de enunciado verbal: los 20/20 del conjunto de sanity check lo sitúan como candidato para tutoría o generación de ejercicios resueltos, siempre con verificación posterior dado el tamaño reducido de la muestra.
-- Evaluación comparativa de cuantizaciones: el repositorio documenta bits, group size, tooling y metodología de medición, por lo que sirve como referencia reproducible para comparar MLX 4 bits frente a bf16 u otras cuantizaciones del mismo modelo base.
-- Resumen y extracción de información en lote sobre corpus largos: con 200 tok/s de procesamiento de prompt a 64k tokens, se pueden encadenar lecturas de documentos largos en un solo equipo, aunque el tiempo total por documento sea de minutos.
+- Asistente conversacional local en Mac: el modelo puede gestionar conversaciones multi-turno con razonamiento previo gracias a su bloque `<think>` y a una ventana de contexto verificada de hasta 128k tokens, ejecutandose en un Mac mini M5 Pro de 64 GB con `mlx_lm.chat`. Es adecuado para entornos donde no se quiere enviar datos a la nube.
+- Analisis de documentos largos: con recuperacion fiable de informacion a 128k tokens en pruebas de needle in a haystack, puede emplearse para resumir o responder preguntas sobre informes, contratos o articulos extensos, siempre que se asuma un tiempo de procesamiento de prompt elevado (136,4 tok/s a 128k y aproximadamente 16 minutos de extremo a extremo en el equipo medido).
+- Generacion de codigo en local: con 10/10 en las tareas de codigo del autor, puede integrarse en flujos de trabajo de desarrollo en Apple Silicon para autocompletar, explicar o refactorizar codigo, aunque sin datos de benchmarks estandar como HumanEval.
+- Resolucion de problemas matematicos y razonamiento paso a paso: el modo thinking y el 20/20 en problemas de palabras lo hacen util para tutoria o verificacion de calculos, con la advertencia de que el conjunto de prueba es muy reducido.
+- Prototipado de aplicaciones de IA en Apple Silicon: al estar en formato MLX y ocupar 18,6 GB en disco con un pico de memoria de 19,32 GB a contexto de 512 tokens, permite iterar rapidamente en un portatil o mini de Apple sin GPU dedicada.
+- Evaluacion comparativa de cuantizaciones: sirve como referencia para estudiar el impacto de la cuantizacion 4-bit MLX en un modelo de 33B, con datos de velocidad, memoria y calidad de sanidad publicados por el autor.
+- Despliegue en entornos con restricciones de privacidad: al ejecutarse integramente en local y con licencia Apache 2.0, es apto para procesar datos sensibles sin salida a internet, siempre que se validen sesgos y alucinaciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos siguientes son mediciones del propio autor de la cuantización, con su propio harness sobre `mlx-lm`, y deben tratarse como comprobaciones de sanidad y no como puntuaciones de leaderboard.
+Rendimiento medido en un Mac mini M5 Pro 64 GB, macOS 27.0.1, mlx 0.32.4 / mlx-lm 0.32.2, decodificacion greedy (temp 0), 256 tokens generados, mediana de 3 ejecuciones tras 1 calentamiento:
 
-Velocidad (Mac mini M5 Pro, 64 GB, macOS 27.0.1, greedy, 256 tokens generados, mediana de 3 ejecuciones):
-
-| Contexto (tokens de prompt) | Thinking | Procesamiento de prompt (tok/s) | Generación (tok/s) | Time to first token | Memoria pico |
+| Contexto (tokens de prompt) | Thinking | Procesamiento de prompt (tok/s) | Generacion (tok/s) | Tiempo al primer token | Memoria pico |
 |---|---|---|---|---|---|
 | 512 | on | 310,8 | 14,38 | 1,65 s | 19,32 GB |
 | 512 | off | 358,2 | 14,51 | 1,43 s | 19,32 GB |
@@ -67,62 +63,66 @@ Velocidad (Mac mini M5 Pro, 64 GB, macOS 27.0.1, greedy, 256 tokens generados, m
 | 16.384 | on | 298,2 | 11,69 | 54,97 s | 22,82 GB |
 | 32.768 | on | 252,0 | 9,93 | 130,10 s | 26,37 GB |
 
-Calidad (thinking activado, conjuntos propios del autor):
+Calidad (verificaciones de sanidad, thinking on):
 
 | Prueba | Resultado |
 |---|---|
-| Problemas matemáticos de enunciado | 20/20 |
-| Tareas de código | 10/10 |
+| Problemas de palabras matematicos | 20/20 |
+| Tareas de codigo | 10/10 |
 | Seguimiento de instrucciones | 10/10 |
 
-Recuperación en contexto largo (needle in a haystack, thinking activado):
+Needle in a haystack (thinking on):
 
 | Contexto | Profundidad de la aguja | Encontrada | Procesamiento de prompt (tok/s) | Memoria pico |
 |---|---|---|---|---|
-| 32k | 10 % | sí | 256,9 | 26,32 GB |
-| 32k | 50 % | sí | 261,3 | 26,35 GB |
-| 32k | 90 % | sí | 259,0 | 26,35 GB |
-| 64k | 25 % | sí | 195,4 | 33,44 GB |
-| 64k | 50 % | sí | 200,0 | 33,44 GB |
-| 64k | 75 % | sí | 200,6 | 33,44 GB |
-| 128k | 50 % | sí | 136,4 | 47,75 GB |
+| 32k | 10% | si | 256,9 | 26,32 GB |
+| 32k | 30% | si | 260,5 | 26,35 GB |
+| 32k | 50% | si | 261,3 | 26,35 GB |
+| 32k | 70% | si | 253,7 | 26,35 GB |
+| 32k | 90% | si | 259,0 | 26,35 GB |
+| 64k | 25% | si | 195,4 | 33,44 GB |
+| 64k | 50% | si | 200,0 | 33,44 GB |
+| 64k | 75% | si | 200,6 | 33,44 GB |
+| 128k | 50% | si | 136,4 | 47,75 GB |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. Las cifras de calidad anteriores son conjuntos pequenos escritos por el autor para esta prueba y deben tratarse como verificaciones de sanidad, no como puntuaciones de leaderboard.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: 19,32 GB de pico con contexto de 512 tokens; 20,21 GB a 4k; 22,82 GB a 16k; 26,37 GB a 32k; 33,44 GB a 64k; 47,75 GB a 128k.
-- Equipo de referencia: Mac mini con M5 Pro y 64 GB de memoria unificada. El test de 128k (131.008 tokens de prompt) se completó sin agotar memoria en unos 16 minutos de extremo a extremo.
-- GPU dedicadas (A100, H100, RTX 4090): no disponibles para este formato. Los pesos MLX están pensados para Apple Silicon; para CUDA habría que recurrir a otra cuantización del modelo base.
-- ¿Cabe en GPU de consumo? No hay datos para GPUs de consumo en la información disponible; en Apple Silicon requiere del orden de 20 GB para contextos cortos, por lo que un equipo de 24 GB sería el mínimo realista y 64 GB el recomendado para contexto largo.
-- Opciones de despliegue: `mlx-lm` (comandos `mlx_lm.generate` y `mlx_lm.chat`), con mlx 0.32.4 y mlx-lm 0.32.2 como versiones verificadas. vLLM, llama.cpp, Ollama y TGI no están documentados para este repositorio.
-- Latencia y throughput medidos: 14,38 tok/s de generación y 1,65 s hasta el primer token con 512 tokens de contexto; 9,93 tok/s y 130,10 s hasta el primer token con 32k. El procesamiento de prompt se mantiene entre 252 y 358 tok/s hasta 32k y baja a 136,4 tok/s a 128k.
+- VRAM/memoria unificada estimada: 19,32 GB de pico a contexto de 512 tokens; 20,21 GB a 4k; 22,82 GB a 16k; 26,37 GB a 32k; 33,44 GB a 64k; 47,75 GB a 128k. El repo ocupa 18,6 GB en disco.
+- GPU recomendadas: Apple Silicon con memoria unificada suficiente. El autor midio en un Mac mini M5 Pro de 64 GB. No hay datos para GPUs NVIDIA (A100, H100, RTX 4090) porque el formato MLX esta orientado a Apple Silicon.
+- Cabe en GPU de consumo: si, en equipos Apple Silicon. Con 64 GB se alcanzan contextos de 128k sin agotar memoria; con 32 GB el margen se reduce y no se cubriria el pico de 33,44 GB a 64k ni el de 47,75 GB a 128k.
+- Opciones de despliegue: `mlx-lm` (comandos `mlx_lm.generate` y `mlx_lm.chat`). No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: generacion de 14,38 tok/s a contexto 512 con thinking y 9,93 tok/s a 32k; procesamiento de prompt entre 136,4 y 358,2 tok/s segun contexto. Tiempo al primer token de 1,65 s a 512 tokens y 130,10 s a 32k. El test de 128k tardo aproximadamente 16 minutos de extremo a extremo.
 
 ## Comparativa con modelos similares
 
-No se han proporcionado datos de otros modelos comparables en la información disponible. La única comparación documentable es frente al checkpoint original del que se deriva:
+No se dispone de datos de benchmarks estandar ni de especificaciones del modelo original mas alla del numero de parametros, por lo que no es posible una comparativa rigurosa con alternativas. La siguiente tabla recoge lo que se conoce de esta publicacion y del modelo base:
 
-| Modelo | Parámetros | Cuantización | Tamaño en disco | Contexto verificado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Nanbeige4.3-33B-MLX-4bit | 33.118.977.024 | MLX affine 4 bits (grupo 64) | 18,6 GB | 131.008 tokens de prompt (prueba del autor) | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
-| Nanbeige/Nanbeige4.3-33B (base) | 33.118.977.024 | bf16 | No disponible (estimación aritmética: ~66 GB de pesos) | No disponible | Apache 2.0 | Hugging Face |
-| Otras alternativas de ~30-34B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Nanbeige4.3-33B-MLX-4bit (esta ficha) | 33,1B | hasta 128k verificado | MLX 4-bit, safetensors, 18,6 GB | Apache 2.0 | Hugging Face, requiere Apple Silicon y mlx-lm |
+| Nanbeige/Nanbeige4.3-33B (base) | 33,1B | no disponible | bf16 | Apache 2.0 | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se han identificado en la informacion proporcionada modelos alternativos de la misma categoria con datos verificables para comparar parametros, contexto, rendimiento y licencia.
 
 ## Limitaciones y advertencias
 
-- Los resultados de calidad (20/20 en matemáticas, 10/10 en código, 10/10 en instrucciones) proceden de conjuntos pequeños escritos por el propio autor para ese benchmark; no son comparables con MMLU, HumanEval o GSM8K y no deben citarse como tales.
-- Las mediciones se hicieron en una sola máquina y una sola sesión: velocidad como mediana de 3 ejecuciones, pero las pruebas de calidad y de aguja se ejecutaron una única vez.
-- El harness es propio, construido sobre `mlx-lm`, no una suite de evaluación oficial.
-- El modo thinking consume tokens antes de la respuesta: hay que asignar `--max-tokens` suficiente o la generación se truncará antes de llegar a la contestación.
-- Throughput bajo para uso interactivo exigente: 9,93 tok/s a 32k de contexto implica respuestas de cientos de tokens en decenas de segundos, y el time to first token a 32k supera los dos minutos.
-- El formato MLX limita el despliegue a Apple Silicon; no hay artefactos GGUF ni safetensors estándar para CUDA en este repositorio.
-- No hay información sobre idiomas soportados, sesgos, tasa de alucinación ni comportamiento en dominios distintos de los tres conjuntos de sanidad evaluados.
-- La licencia Apache 2.0 permite uso comercial, pero se hereda del modelo base y el repositorio no incluye garantías ni soporte; el autor delega todo el crédito del modelo en el equipo de Nanbeige.
-- Repositorio con 0 descargas y 1 like en el momento de la consulta: no hay validación comunitaria independiente de las cifras publicadas.
-- No se ha verificado el contexto máximo nominal del modelo base; que la prueba de 128k funcione no implica que esa sea la ventana de entrenamiento.
+- Es una cuantizacion comunitaria no oficial: el autor declara que solo contiene una copia cuantizada y que todo el credito del modelo es del equipo Nanbeige. La calidad puede diferir de la version bf16 original.
+- Las pruebas de calidad son verificaciones de sanidad con conjuntos muy pequenos (20, 10 y 10 elementos) escritas por el autor para este benchmark; no son puntuaciones de leaderboard ni evaluaciones estandarizadas.
+- Las mediciones de velocidad y memoria provienen de una sola maquina y una sola sesion (Mac mini M5 Pro 64 GB); no se registraron advertencias termicas ni de rendimiento, pero la variabilidad entre equipos no esta cuantificada.
+- El modo thinking abre un bloque `<think>` y consume tokens antes de la respuesta; si no se asigna suficiente `--max-tokens`, la respuesta puede quedar truncada.
+- El tiempo de procesamiento de prompts largos es elevado: 130,10 s para el primer token a 32k tokens y aproximadamente 16 minutos de extremo a extremo en el test de 128k, lo que limita su uso interactivo con contextos muy grandes.
+- Con 32 GB de memoria unificada no se cubririan los picos medidos a 64k (33,44 GB) ni a 128k (47,75 GB).
+- No hay informacion sobre sesgos, riesgo de alucinacion, idiomas soportados ni restricciones adicionales de uso comercial mas alla de la licencia Apache 2.0.
+- No se dispone de datos sobre tool calling, capacidades de agente ni multimodalidad, por lo que no deben asumirse en produccion sin validacion previa.
+- El formato MLX esta orientado a Apple Silicon; no es directamente desplegable en GPUs NVIDIA con las herramientas habituales (vLLM, TGI) sin conversion adicional.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/pratikgx/Nanbeige4.3-33B-MLX-4bit
+- Modelo cuantizado en Hugging Face: https://huggingface.co/pratikgx/Nanbeige4.3-33B-MLX-4bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
-- Autor de la cuantización en X: https://x.com/pratikg
-- Librería de inferencia: `mlx-lm` (`pip install mlx-lm`)
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada (los resultados de búsqueda web no contienen enlaces relacionados con el modelo).
+- Notas del autor en GitHub: https://github.com/pratikgx/local-ai-field-notes/blob/main/notes/2026-10-25-nanbeige4.3-33b.md
+- Repositorio Local AI field notes: https://github.com/pratikgx/local-ai-field-notes
+- Perfil del autor en X: https://x.com/pratikg

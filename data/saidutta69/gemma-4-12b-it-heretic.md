@@ -2,125 +2,104 @@
 
 ## Resumen
 
-`saidutta69/gemma-4-12B-it-heretic` es una variante "decensored" (abliterated) del modelo instructivo `google/gemma-4-12B-it` de Google DeepMind, publicada por el usuario saidutta69. La modificacion consiste en la ablacion de direcciones de rechazo mediante la herramienta Heretic v1.4.0, que actua sobre las proyecciones de atencion (`attn.o_proj`) y de la MLP (`mlp.down_proj`) en capas concretas. El objetivo es reducir la tasa de respuestas de rechazo del modelo original sin reentrenar los pesos.
+gemma-4-12B-it-heretic es una variante "decensored" (abliterada) del modelo multimodal google/gemma-4-12B-it, publicada por el usuario saidutta69 (bajo el seudónimo RACER IS OP). El modelo base es el modelo de 12B parámetros de la familia Gemma 4 de Google, orientado a entrada de texto, imagen, vídeo y audio con salida de texto, y esta variante suprime el comportamiento de rechazo mediante edición direccional de pesos (abliteration) en lugar de fine-tuning.
 
-Se trata de un transformer denso de 11.959.730.176 parametros (11,96B), con 48 capas, ventana de atencion deslizante de 1024 tokens y una longitud de contexto de 256K tokens. Hereda de la familia Gemma 4 la capacidad multimodal unificada (texto, imagen y audio) sin encoder separado, soporte nativo de function calling, modos de razonamiento configurables y soporte del rol `system`.
+La relevancia de esta versión radica en que mantiene las capacidades multimodales y de razonamiento del modelo original con un daño colateral medido bajo (divergencia KL de 0.0357 respecto al original), reduciendo los rechazos en un conjunto de evaluación de comportamiento dañino de 99/100 a 37/100. El modelo se distribuye con pesos en safetensors (BF16) y un conjunto completo de cuantizaciones GGUF, lo que permite su despliegue en una sola GPU de consumo de gama alta.
 
-Su relevancia es doble: por un lado, ilustra una tecnica de modificacion post-entrenamiento reproducible (el repositorio incluye un directorio `reproduce`); por otro, sirve como caso de estudio sobre el equilibrio entre utilidad, degradacion de la distribucion original (KL de 0,0357) y reduccion de rechazos (de 99/100 a 37/100). El repositorio es muy reciente y no registra descargas ni valoraciones en el momento de la consulta.
+Arquitectura Gemma 4 Unified con codificadores de visión y audio, contexto de 256K tokens y modos de razonamiento ("thinking") configurables. El repositorio ocupa 86.2 GB e incluye el recetario de reproducción completo de Heretic.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal unificado (Gemma 4 Unified), atencion hibrida con sliding window local y atencion global |
-| Parametros totales | 11.959.730.176 (11,96B) |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Gemma 4 Unified (`gemma4_unified`), transformer multimodal con codificadores de visión y audio |
+| Parametros totales | 11.959.730.176 (~12B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 256K tokens |
-| Tipos de cuantizacion | No disponible en el repositorio (solo se publican pesos en safetensors) |
-| Idiomas soportados | Mas de 140 idiomas segun la documentacion de la familia Gemma 4; no se detalla listado propio para esta variante |
-| Licencia | apache-2.0 en los metadatos y la model card, con `license_link` apuntando a la licencia de Gemma 4 de Google (ver advertencias) |
-| Formato de pesos | safetensors (libreria `transformers`, tag `gemma4_unified`) |
-| Tamano del repositorio | 24,0 GB |
-| Capas | 48 |
-| Ventana deslizante | 1024 tokens |
-| Tamano de vocabulario | 262K |
-| Modalidades | Texto, imagen, audio (entrada); texto (salida) |
-| Pipeline declarado | any-to-any |
+| Tipos de cuantizacion | F16, Q4_K_M, Q5_K_M, Q6_K, Q8_0 (GGUF); BF16 en safetensors |
+| Idiomas soportados | en (inglés; el resto no disponible) |
+| Licencia | apache-2.0 (con license_link a la licencia de Gemma 4 de Google) |
+| Formato de pesos | safetensors (BF16, 5 shards) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-4-12B-it` y no ha sido reentrenado: la unica intervencion es una ablacion de direcciones de rechazo aplicada con Heretic v1.4.0. La tecnica identifica direcciones en el espacio de activaciones asociadas a comportamientos de negativa y las suprime escalando pesos en `attn.o_proj` y `mlp.down_proj`, con parametros de peso maximo/minimo y distancia por capa. La model card declara la reproducibilidad del proceso y documenta los hiperparametros empleados:
+El modelo parte de google/gemma-4-12B-it, un transformer multimodal de la familia Gemma 4 con arquitectura "Unified" que integra percepción de texto, imagen, vídeo y audio con salida exclusivamente de texto. El modelo base incorpora modos de razonamiento configurables y una ventana de contexto de 256K tokens. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, composición del dataset ni si se aplicó RLHF o DPO en el modelo original.
 
-| Parametro de abliteracion | Valor |
-|---|---|
-| direction_index | 29,72 |
-| attn.o_proj.max_weight | 1,25 |
-| attn.o_proj.max_weight_position | 32,29 |
-| attn.o_proj.min_weight | 0,65 |
-| attn.o_proj.min_weight_distance | 14,84 |
-| mlp.down_proj.max_weight | 1,06 |
-| mlp.down_proj.max_weight_position | 46,29 |
-| mlp.down_proj.min_weight | 1,04 |
-| mlp.down_proj.min_weight_distance | 23,15 |
-
-La arquitectura heredada de Gemma 4 12B Unified combina atencion local de ventana deslizante (1024 tokens) con atencion global, garantizando que la ultima capa sea siempre global. Las capas globales emplean claves y valores unificados para reducir el consumo de memoria en contextos largos, y aplican Proportional RoPE (p-RoPE). El modelo es "encoder-free": la comprension de imagen y audio se integra en el propio transformer, sin encoders separados, lo que reduce el tamano de despliegue. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las fases de RLHF/DPO de la variante original mas alla de lo publicado por Google para la familia Gemma 4.
+La modificación respecto al original es una abliteración realizada con Heretic v1.4.0 (ablación direccional), que identifica y edita las direcciones de pesos responsables del rechazo en las proyecciones de salida de atención (`attn.o_proj`) y en las down-projections del MLP (`mlp.down_proj`), sin tocar el resto de la red. Se trata del trial 100 de una ejecución de 200 trials con semilla `1180095890`, con `direction_index` único de 29.72. El repositorio incluye un directorio `reproduce/` con `config.toml`, `requirements.txt`, el journal del estudio Optuna y sumas SHA-256, lo que permite regenerar el modelo bit a bit con `heretic --reproduce reproduce/reproduce.json`.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modos de pensamiento (thinking) configurables.
-- Comprension de imagen con soporte de relacion de aspecto y resolucion variable.
-- Comprension de audio nativa, sin encoder externo dedicado.
-- Capacidades de codigo y flujos agenticos mejoradas respecto a generaciones anteriores de la familia.
-- Function calling y tool calling nativos.
-- Soporte nativo del rol `system` para conversaciones estructuradas y controlables.
-- Multilingue en mas de 140 idiomas.
-- Reduccion sustancial de respuestas de rechazo respecto al modelo base: 37/100 frenta a 99/100 en la metrica reportada por el autor.
-- Procesamiento de contexto largo de hasta 256K tokens con mecanismos de atencion hibrida y p-RoPE.
+- Generación de texto y razonamiento con modos "thinking" configurables.
+- Entrada multimodal: imagen, vídeo y audio con salida de texto (pipeline `any-to-any`).
+- Comprensión de documentos, audio y vídeo, según el autor, con calidad notable a este tamaño.
+- Contexto largo de 256K tokens para conversaciones y documentos extensos.
+- Conversación multi-turno (tag `conversational`).
+- Orientado a roleplay y uso en LLM local (tags `roleplay`, `local-llm`, `consumer-gpu`).
+- Comportamiento de rechazo suprimido (37/100 rechazos en el conjunto de evaluación del autor).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible explícitamente, aunque el modelo base incluye modos de razonamiento.
 
 ## Casos de uso
 
-- Asistente multimodal local en estacion de trabajo: el modelo acepta texto, imagen y audio y genera texto, por lo que puede actuar como unico componente en un asistente de escritorio sin pipeline de encoders separados, reduciendo la superficie de despliegue.
-- Analisis de documentos con elementos visuales: facturas, capturas de pantalla o diagramas tecnicos pueden enviarse como imagen y procesarse junto con instrucciones de texto; la ventana de 256K tokens permite adjuntar lotes grandes de documentos en una sola llamada.
-- Transcripcion y resumen de audio en local: al integrar audio de forma nativa, es adecuado para resumir reuniones o notas de voz en entornos sin conectividad o con requisitos de privacidad estrictos.
-- Agentes autonomos con function calling: el soporte nativo de tool calling y del rol `system` permite construir agentes multi-paso que invocan APIs, consultan bases de datos y encadenan acciones con estado controlado por el desarrollador.
-- Generacion y revision de codigo en pipelines de CI/CD: puede integrarse mediante `transformers` o servidores compatibles para revisar diffs, generar pruebas o explicar errores de compilacion, aprovechando el contexto largo para incluir varios ficheros.
-- Atencion al cliente multilingue: con mas de 140 idiomas y 256K tokens de contexto, puede mantener conversaciones multi-turno con historial extenso y politicas de negocio inyectadas en el system prompt.
-- Investigacion en alineacion y seguridad: la variante permite estudiar como se comporta un modelo con las direcciones de rechazo ablacionadas, comparando tasas de negativa y divergencia KL frente al modelo original, con parametros de ablacion publicados y proceso reproducible.
-- Clasificacion y extraccion de informacion sobre imagenes a escala: por su tamano contenido (11,96B) puede desplegarse en una GPU de gama alta y procesar lotes de imagenes con extraccion estructurada de campos.
+- Análisis de documentos largos con imágenes: gracias a sus 256K tokens de contexto y al codificador de visión, se puede introducir un informe escaneado con tablas y texto y pedir un resumen estructurado o extracción de datos en una sola pasada.
+- Transcripción y análisis de audio: el codificador de audio permite procesar reuniones o notas de voz y generar actas, resúmenes o búsquedas sobre el contenido sin pipeline externo de ASR.
+- Comprensión de vídeo para indexación: se pueden generar descripciones y metadatos de clips para sistemas de búsqueda o catalogación de archivos audiovisuales.
+- Asistentes conversacionales de rol o narrativa interactiva: el ajuste abliterado y la ventana de contexto larga lo hacen adecuado para personajes persistentes con memoria de conversaciones extensas en entornos controlados.
+- Prototipado local en una sola GPU de consumo: con Q5_K_M (7.96 GB) o Q6_K (9.11 GB) se puede desplegar en una RTX 4080/4090 para experimentación con modelos multimodales sin infraestructura de datacenter.
+- Evaluación de seguridad y red-teaming: al ser una variante abliterada con métricas de rechazo y divergencia KL documentadas, sirve para estudiar el efecto de la ablación direccional en modelos multimodales.
+- Generación de descripciones accesibles de imágenes y vídeo en pipelines internos, aprovechando la entrada multimodal y el contexto largo para procesar lotes con instrucciones complejas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor unicamente reporta las metricas de la intervencion de abliteracion:
-
 | Metrica | Este modelo | Modelo original (google/gemma-4-12B-it) |
 |---|---|---|
-| Divergencia KL | 0,0357 | 0 (por definicion) |
-| Rechazos | 37/100 | 99/100 |
+| Divergencia KL | 0.0357 | 0 (por definición) |
+| Rechazos (conjunto de evaluación dañino) | 37/100 | 99/100 |
 
-No hay datos comparativos de rendimiento en tareas de razonamiento, codigo o multimodalidad para esta variante concreta.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Las únicas métricas aportadas son las de abliteración (divergencia KL y tasa de rechazos) proporcionadas por el autor.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de los 11,96B de parametros, no publicada por el autor): aproximadamente 24 GB en bf16/fp16, alrededor de 12 GB en cuantizacion de 8 bits y en torno a 7-8 GB en 4 bits, sin contar la cache KV del contexto de 256K tokens, que puede anadir decenas de GB en contextos muy largos.
-- GPU recomendadas: para bf16 sin cuantizar, A100 40/80 GB o H100; para cuantizacion de 8 bits, A100 40 GB, L40S o RTX 4090; para 4 bits, RTX 4090, RTX 3090 o GPUs con 12-16 GB.
-- Compatibilidad con GPU de consumo: si, en RTX 4090 y RTX 3090 (24 GB) con cuantizacion de 8 o 4 bits; en bf16 los pesos solos ocupan cerca de 24 GB, por lo que no caben junto con la cache KV en una GPU de 24 GB.
-- Opciones de despliegue: `transformers` es la libreria declarada y la unica soportada oficialmente en el repositorio (pesos safetensors). vLLM, TGI, llama.cpp u Ollama no estan confirmados para esta variante; llama.cpp u Ollama requeririan convertir los pesos a GGUF, conversion que el autor no publica.
-- Latencia y throughput estimados: no disponibles.
+- Pesos en BF16 (safetensors): ~24 GB, requiere GPU de 48 GB o más para inferencia sin cuantizar.
+- GGUF Q8_0: 11.80 GB de pesos; recomendado para RTX 6000 Ada o A100 (48 GB).
+- GGUF Q6_K: 9.11 GB; recomendado para RTX 4090 / 5090 (24 GB).
+- GGUF Q5_K_M: 7.96 GB; recomendado para RTX 4080 / 5080 (16 GB), RTX 3090 con offload en doble GPU y sistemas solo CPU con 32 GB+ de RAM.
+- GGUF Q4_K_M: 6.87 GB; mínimo práctico para sistemas de 16 GB de RAM solo CPU.
+- GGUF F16: 22.20 GB.
+- El autor indica añadir ~2 GB por cada 32K de contexto, ya que la caché KV incluye tokens de imagen, vídeo y audio y domina en contexto largo.
+- Opciones de despliegue: llama.cpp, LM Studio, Jan y `llama serve -hf`; también transformers con safetensors. vLLM y TGI no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Multimodalidad | Rechazos / fidelidad | Licencia |
 |---|---|---|---|---|---|
-| saidutta69/gemma-4-12B-it-heretic | 11,96B densos | 256K | Texto, imagen, audio | apache-2.0 (con `license_link` a licencia Gemma 4) | Hugging Face, 0 descargas |
-| google/gemma-4-12B-it | 11,96B densos | 256K | Texto, imagen, audio | Licencia Gemma 4 de Google | Hugging Face, modelo oficial |
-| google/gemma-4-31B | 30,7B densos | 256K | Texto, imagen | Licencia Gemma 4 de Google | Hugging Face |
-| google/gemma-4-E4B | 4,5B efectivos (8B con embeddings) | 128K | Texto, imagen, audio | Licencia Gemma 4 de Google | Hugging Face |
+| gemma-4-12B-it-heretic (este) | ~12B | 256K | texto, imagen, vídeo, audio | 37/100; KL 0.0357 | apache-2.0 |
+| google/gemma-4-12B-it | ~12B | 256K | texto, imagen, vídeo, audio | 99/100; KL 0 | apache-2.0 |
+| saidutta69/gemma-4-E4B-it-heretic | E4B (no disponible el número exacto) | no disponible | multimodal (según el autor) | 25/100; KL 0.1215 | apache-2.0 |
+| Modelos MoE de 26B/31B de la familia Gemma 4 | 26B/31B | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a la familia Gemma 4 porque la informacion disponible no incluye datos de rendimiento que permitan contrastar esta variante con modelos abliterated equivalentes de otros autores. No se dispone de benchmarks comparativos publicados en la informacion proporcionada.
+El autor sitúa este modelo como el escalón intermedio entre el E4B (que corre en dispositivo) y los MoE de 26B/31B (que requieren hardware de datacenter). El E4B sacrifica fidelidad (KL 0.1215) a cambio de menos rechazos (25/100); este 12B prioriza mantener el comportamiento del original.
 
 ## Limitaciones y advertencias
 
-- La tasa de rechazos se reduce a 37/100, no a cero: el modelo sigue rechazando mas de un tercio de las peticiones de la evaluacion del autor, por lo que no debe asumirse un comportamiento completamente sin filtros.
-- La divergencia KL de 0,0357 respecto al modelo original indica una desviacion medible de la distribucion de salida; puede traducirse en degradacion de calidad, coherencia o precision en tareas ajenas al comportamiento de rechazo.
-- Riesgo de alucinacion: es un modelo de 12B, con la propension inherente de esta escala a generar informacion incorrecta con aparente seguridad, agravada por la ausencia de benchmarks publicados.
-- La licencia declarada es apache-2.0, pero el campo `license_link` apunta a la licencia especifica de Gemma 4 de Google, mas restrictiva. Existe una contradiccion entre ambos campos que debe resolverse antes de cualquier uso comercial; verifica los terminos aplicables al modelo base.
-- El repositorio no registra descargas ni valoraciones y fue creado el 2026-10-04, por lo que carece de validacion independiente de la comunidad.
-- No se publican pesos cuantizados ni versiones GGUF, lo que limita el despliegue directo en entornos de bajos recursos.
-- No se detallan sesgos conocidos ni evaluaciones de seguridad especificas para esta variante; la supresion de direcciones de rechazo puede aumentar la probabilidad de generar contenido danino, ilegal o inexacto en dominios sensibles.
-- Uso en produccion: al no existir benchmarks de rendimiento ni pruebas de robustez, se recomienda una evaluacion propia exhaustiva antes de integrarlo en cualquier sistema critico.
-- La informacion disponible no especifica los idiomas exactos cubiertos por esta variante ni su comportamiento diferencial entre idiomas.
+- Modelo abliterado: la supresión de rechazos elimina barreras de seguridad del modelo original, por lo que puede generar contenido dañino, ofensivo o inapropiado. No es apto para despliegues públicos sin filtros adicionales.
+- El propio autor advierte de "más deriva en el tono" que en sus variantes de bajo KL; aunque la divergencia KL es la más baja de su lote, sigue habiendo desviación respecto al original.
+- Riesgo de alucinación inherente a los LLM; no se documentan evaluaciones específicas de factualidad.
+- Idiomas: la model card solo declara inglés; el rendimiento en castellano u otros idiomas no está documentado.
+- La licencia declarada es apache-2.0, pero el enlace de licencia apunta a la licencia de Gemma 4 de Google; conviene verificar los términos de uso comercial de Gemma antes de producción.
+- El contexto largo consume mucha memoria por la caché KV multimodal; el autor estima ~2 GB adicionales por cada 32K de contexto.
+- El repositorio incluye una imagen externa alojada en un dominio de terceros (`photu.kashyalabanavli.site`), lo que conviene tratar con cautela.
+- No hay benchmarks estándar publicados que permitan verificar la degradación de capacidades tras la ablación más allá de la divergencia KL.
+- El modelo tiene 0 likes y 2765 descargas en el momento de la consulta; es un artefacto de la comunidad sin validación independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/saidutta69/gemma-4-12B-it-heretic
-- Modelo base: https://huggingface.co/google/gemma-4-12B
-- Modelo base instructivo: https://huggingface.co/google/gemma-4-12B-it
-- Heretic: https://heretic-project.org
-- Documentacion de Gemma: https://ai.google.dev/gemma/docs/core
-- Blog de lanzamiento de Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
-- Informe tecnico: https://arxiv.org/abs/2607.02770
-- Coleccion de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
-- Repositorio GitHub de Google Gemma: https://github.com/google-gemma
-- Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces validos son los procedentes de la model card y del repositorio de Hugging Face.
+- Hugging Face: https://huggingface.co/saidutta69/gemma-4-12B-it-heretic
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it
+- Variante hermana E4B: https://huggingface.co/saidutta69/gemma-4-E4B-it-heretic
+- Repositorio de Heretic: https://github.com/p-e-w/heretic
+- Artículo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Paper referenciado (arXiv:2607.02770): https://arxiv.org/abs/2607.02770

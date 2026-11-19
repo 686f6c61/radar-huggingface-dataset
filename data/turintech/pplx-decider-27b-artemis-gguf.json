@@ -50,32 +50,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "perplexity-ai/pplx-decider-v1-27b · Hugging Face",
-      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
-      "snippet": "pplx-decider-v1-27b is a decision model fine-tuned from Qwen3.8-27B. Accuracy across 11 benchmarks. The pplx-decider-v1-27b results were measured through the Perplexity API ..."
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Same answer (%)",
+      "value": 96.8
     },
     {
-      "title": "perplexity-ai/pplx-decider-v1.1-27b · Hugging Face",
-      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b",
-      "snippet": "pplx-decider-v1.1-27b is an update of our pplx-decider-v1-27b model, that boost the Decision Index score from 56.4 to 61.56, now outperforming Jev by more than 3.5 points, while using the same backbone. Most of the gains are driven by the lifting of the causal mask and training on more data, including data from tasksource."
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Confident changes",
+      "value": 0
     },
     {
-      "title": "Pplx-decider-v1-27B - VRAM, Specs & Benchmarks",
-      "url": "https://apxml.com/models/pplx-decider-v1-27b",
-      "snippet": "About pplx-decider-v1-27B pplx-decider-v1-27B is a 27-billion parameter router and decision model created by Perplexity AI based on the Qwen architecture. It is specialized in routing search queries, intent classification, and verification pipelines."
-    },
-    {
-      "title": "TurinTech AI · Get more from systems you already run",
-      "url": "https://www.turintech.ai/",
-      "snippet": "Get more from systems you already run Improve performance across the models, agents, and code you already run while reducing infrastructure costs. Artemis explores multiple optimization strategies in parallel, tests them on your workload, and delivers only what is measurably better."
-    },
-    {
-      "title": "pplx-decider-v1-27b - 262k context, multimodal, open source",
-      "url": "https://www.llmreference.com/model/pplx-decider-v1-27b",
-      "snippet": "About pplx-decider-v1-27b is Perplexity&#x27;s first decision model, released 2026-10-01 with the Perplexity Decisions API. Fine-tuned from Qwen3.8-27B, it reads a state of text, JSON, or images (PNG, JPEG, or WebP data URLs) and answers up to 128 named questions per request (noul for yes/no, choice with up to 255 options, or score with up to 10 levels) with probabilities instead of generated text ..."
+      "task": "Typed decisions",
+      "dataset": "Test decisions",
+      "metric": "Accuracy (%)",
+      "value": 70.8
     }
-  ]
+  ],
+  "sources": []
 }

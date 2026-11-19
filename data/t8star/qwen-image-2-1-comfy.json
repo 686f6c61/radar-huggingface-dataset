@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Yahoo Mail | Email with smart features and top-notch security",
-      "url": "https://mail.yahoo.com/",
-      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
-    },
-    {
-      "title": "Yahoo Mail",
-      "url": "https://in.mail.yahoo.com/d",
-      "snippet": "It's time to get stuff done with Yahoo Mail. Just add your Gmail, Outlook, AOL or Yahoo Mail to get going. We automatically organise …"
-    },
-    {
-      "title": "Yahoo Mail",
-      "url": "https://es.mail.yahoo.com/d",
-      "snippet": "Es hora de ponerte en marcha con Yahoo Mail. Solo tienes que añadir tu Gmail, Outlook, AOL o Yahoo Mail para empezar. …"
-    },
-    {
-      "title": "Yahoo Mail",
-      "url": "https://rogers.mail.yahoo.com/",
-      "snippet": "Access Yahoo Mail for email, news, entertainment, and more with Rogers partnership."
-    },
-    {
-      "title": "Yahoo Mail",
-      "url": "https://gr.mail.yahoo.com/d",
-      "snippet": "Ήρθε η ώρα να οργανωθείτε με το Yahoo Mail. Απλώς προσθέστε το Gmail, το Outlook, το AOL ή το Yahoo Mail για να ξεκινήσετε. …"
-    }
-  ]
+  "sources": []
 }

@@ -43,6 +43,43 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFBench",
+      "metric": "Prompt-level strict (0-shot, rule)",
+      "value": 77.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2025",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2026",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA-Diamond",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 87.37
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "ERQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 66.25
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "RealWorldQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 82.22
+    }
+  ],
   "sources": []
 }

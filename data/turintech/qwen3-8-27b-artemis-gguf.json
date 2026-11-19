@@ -52,32 +52,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Quora - A place to share knowledge and better understand the world",
-      "url": "https://www.quora.com/Have-you-ever-put-your-dick-in-your-sister-s-vagina",
-      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+      "task": "Text generation",
+      "dataset": "BFCL live",
+      "metric": "Tool calls (of 258)",
+      "value": 222
     },
     {
-      "title": "Grazing the private parts : r/massage - Reddit",
-      "url": "https://www.reddit.com/r/massage/comments/4vu3vi/grazing_the_private_parts/",
-      "snippet": "Aug 2, 2016 · Grazing the private parts I recently started seeing a new massage therapist who is a good friend of my former therapist …"
+      "task": "Text generation",
+      "dataset": "GSM8K, last 250",
+      "metric": "Correct (of 250)",
+      "value": 234
     },
     {
-      "title": "Ten Things to Remember When You Talk to Kids about Sexuality",
-      "url": "https://stopitnow.org/ohc-content/ten-things-to-remember-when-you-talk-to-kids-about-sexuality",
-      "snippet": "Talking to your child or teen about sex and sexuality gets easier the more you practice. The more a child knows about their own …"
+      "task": "Text generation",
+      "dataset": "MMLU-Pro sample",
+      "metric": "Correct (of 280)",
+      "value": 128
     },
     {
-      "title": "Reddit - Dive into anything",
-      "url": "https://www.reddit.com/r/Incestconfessions/",
-      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
-    },
-    {
-      "title": "Family Strokes - Pat",
-      "url": "https://pat.com/FamilyStrokes",
-      "snippet": "Some families are closer than others FamilyStrokes.com"
+      "task": "Text generation",
+      "dataset": "IFEval",
+      "metric": "Followed (of 539)",
+      "value": 399
     }
-  ]
+  ],
+  "sources": []
 }

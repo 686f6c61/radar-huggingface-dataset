@@ -2,54 +2,51 @@
 
 ## Resumen
 
-Omni-Edu-27B es un modelo fundacional multimodal de 27.000 millones de parámetros desarrollado por el grupo OmniEdu (OpenDCAI / haolpku) y orientado específicamente al ciclo completo de aprendizaje y enseñanza en educación K-12. Integra conocimiento de materias, alineación curricular, diagnóstico del alumno y andamiaje pedagógico en un único modelo, y se distribuye en tres escalas (4B, 9B y 27B) en BF16 y FP8. La ficha que nos ocupa es la conversión a GGUF del checkpoint de 27B, publicada por el usuario `lhpku20010120` y pensada para su ejecución con llama.cpp.
+Omni-Edu-27B es un modelo multimodal de tipo imagen-texto-a-texto orientado al ámbito educativo, desarrollado por el equipo OmniEdu (publicado bajo el identificador `lhpku20010120`). Esta ficha concreta corresponde a la versión cuantizada en formato GGUF del modelo original `Omni-Edu-27B`, convertida y cuantizada con llama.cpp para su ejecución local eficiente. El modelo base cuenta con 26.895.998.464 parámetros (aproximadamente 27B) y se etiqueta internamente como `qwen3_5`, lo que sugiere una arquitectura derivada de la familia Qwen 3.5.
 
-El modelo parte de una base Qwen (la documentación disponible cita Qwen3.8-27B como punto de partida) y conserva la torre visual, de ahí su pipeline `image-text-to-text`. El contexto declarado es de 32.768 tokens. La relevancia actual radica en que cubre una demanda poco atendida por los modelos generalistas: razonamiento pedagógico con fundamento curricular, corrección de ejercicios y diagnóstico de errores del estudiante, con licencia de tipo "other" que obliga a revisar los términos del modelo upstream.
+La relevancia de esta release radica en que permite desplegar un modelo de 27B con capacidades de visión en hardware de consumo mediante cuantizaciones de 4, 6 y 8 bits, manteniendo la licencia Apache 2.0 del modelo original, que autoriza explícitamente el uso comercial, el autoalojamiento y el ajuste fino para distintos currículos educativos. El repositorio GGUF ocupa 122 GB en total e incluye un proyector multimodal separado (`mmproj`) necesario para el procesamiento de imágenes.
 
-Esta ficha describe la variante cuantizada en GGUF, que incluye pesos en BF16, Q8_0, Q6_K y Q4_K_M, además de un proyector multimodal independiente en F16. No se han publicado datos de benchmarks ni listado de idiomas en la información disponible.
+No se dispone de información publicada sobre la longitud de contexto nativa del modelo base, los idiomas soportados ni los detalles del dataset de entrenamiento en la información proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (torre visual + LLM base Qwen, según documentación del proyecto) |
-| Parametros totales | 26.895.998.464 (≈26,9B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M (GGUF); proyector multimodal en F16 |
+| Arquitectura | Transformer multimodal (imagen-texto-a-texto); etiquetado como `qwen3_5`, detalles no disponibles |
+| Parámetros totales | 26.895.998.464 (~27B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (el ejemplo de ejecución usa `-c 8192`) |
+| Tipos de cuantización | BF16 (sin cuantizar), Q8_0, Q6_K, Q4_K_M; proyector multimodal en F16 |
 | Idiomas soportados | no disponible |
-| Licencia | other (se aplican los términos del modelo upstream) |
-| Formato de pesos | GGUF (llama.cpp) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); proyector `mmproj` en GGUF F16 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de que se trata de un modelo multimodal transformer con torre visual y un LLM base de la familia Qwen, con 26,9B parámetros totales y un contexto de 32.768 tokens. El proyecto OmniEdu declara que los modelos están diseñados para conectar conocimiento curricular, resolución de problemas, diagnóstico del alumno y soporte instruccional. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO.
+El modelo es un transformer multimodal que acepta entradas de imagen y texto y genera texto (`pipeline_tag: image-text-to-text`). La etiqueta `qwen3_5` en los metadatos apunta a una base arquitectónica de la familia Qwen 3.5, aunque la model card no detalla la configuración de capas, mecanismos de atención ni el diseño del proyector visual. El paquete incluye un fichero `mmproj-OmniEdu-27B-F16.gguf` compartido por las cuatro cuantizaciones, que actúa como codificador/proyector de imágenes en precisión F16.
 
-La innovación destacable del proyecto es el enfoque en el "learning-teaching loop" completo de K-12: no solo resuelve problemas, sino que se entrena para diagnosticar errores y proporcionar andamiaje pedagógico. La conversión a GGUF se ha realizado con llama.cpp e incluye un proyector multimodal separado (`mmproj-OmniEdu-27B-F16.gguf`) compartido por las cuatro cuantizaciones, lo que permite entrada de imágenes en todas ellas.
+No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas (decodificación especulativa, atención lineal, etc.). La model card menciona un modo de razonamiento desactivable mediante el flag `--reasoning off` en llama-server, lo que indica que el modelo incorpora algún mecanismo de razonamiento explícito, pero se desconoce su funcionamiento interno.
 
 ## Capacidades
 
-- Generación de texto y razonamiento sobre contenidos curriculares de K-12.
-- Resolución de problemas de matemáticas, ciencias y otras materias escolares.
-- Comprensión de imágenes (image-text-to-text): lectura de enunciados, diagramas y ejercicios escaneados.
-- Diagnóstico de errores del estudiante y explicación de pasos intermedios.
-- Soporte pedagógico: generación de explicaciones graduadas y pistas.
-- Conversación multi-turno (tag `conversational`).
-- Compatible con endpoints OpenAI (`endpoints_compatible`) a través de `llama-server`.
-- Modo de razonamiento conmutable (`--reasoning off` en el ejemplo de ejecución).
-- Soporte de tool calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno (etiqueta `conversational`).
+- Procesamiento de imágenes combinadas con texto (image-text-to-text) mediante el proyector `mmproj`.
+- Orientación educativa declarada (tags `omniedu`, `education`), presumiblemente con ajuste para tareas de tutoría y explicación.
+- Modo de razonamiento activable/desactivable (`--reasoning off` en el ejemplo de llama-server).
+- Compatibilidad con endpoints estilo OpenAI (`endpoints_compatible`), lo que permite integrarlo con clientes como Cherry Studio apuntando a `http://127.0.0.1:8080/v1`.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles (no se listan idiomas).
 - Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Tutoría automatizada de matemáticas: el modelo puede recibir una foto del ejercicio resuelto por el alumno y devolver un diagnóstico del error paso a paso, aprovechando la torre visual y el contexto de 32K para mantener el hilo de la conversación.
-- Corrección de exámenes con enunciados escaneados: al aceptar entrada de imagen, permite procesar hojas de problemas en lote y generar feedback individualizado sin transcripción manual previa.
-- Generación de material didáctico alineado con el currículo: producción de problemas, pistas graduadas y explicaciones adaptadas al nivel, apoyándose en el entrenamiento específico en alineación curricular.
-- Asistente para docentes en planificación de clases: borradores de secuencias didácticas y preguntas de evaluación a partir de un tema y un nivel educativo dados.
-- Despliegue local en centros educativos con requisitos de privacidad: la versión Q4_K_M (15,41 GiB) permite ejecutar el modelo en estaciones de trabajo con GPU de consumo, evitando enviar datos de menores a servicios en la nube.
-- Chatbot de refuerzo en plataformas de e-learning: integrable vía API compatible con OpenAI (`llama-server` expone `/v1`), lo que facilita conectarlo a frontends existentes como Cherry Studio.
-- Análisis de diagramas y figuras científicas: la torre visual permite interpretar gráficos de física, química o biología incluidos en los enunciados.
+- Tutoría educativa autoalojada: el modelo puede desplegarse en servidores propios con llama-server y atender conversaciones multi-turno de estudiantes, aprovechando la licencia Apache 2.0 que permite ofrecer servicios de tutoría de pago sin aprobación adicional del equipo OmniEdu.
+- Resolución de ejercicios a partir de imágenes: gracias al proyector multimodal, un estudiante puede subir una foto de un problema de matemáticas o un diagrama y recibir una explicación textual; el `mmproj` F16 compartido garantiza coherencia entre cuantizaciones.
+- Asistente de estudio en local para privacidad: la cuantización Q4_K_M (15,41 GiB) permite ejecutar el modelo en una GPU de consumo de 24 GB, manteniendo los datos del alumnado en la máquina sin enviarlos a la nube.
+- Generación de material didáctico: el modelo puede redactar explicaciones, resúmenes y preguntas de evaluación a partir de apuntes o capturas de libro, integrándose en pipelines de creación de contenido educativo.
+- Ajuste fino por currículo: la licencia permite modificar y reentrenar el modelo para currículos regionales o asignaturas concretas, partiendo de la versión BF16 o cuantizada según los recursos disponibles.
+- Integración en herramientas de escritorio: la compatibilidad con la API OpenAI y con clientes como Cherry Studio facilita incorporar el modelo a aplicaciones de escritorio para docentes, con razonamiento desactivable para reducir latencia en consultas simples.
+- Despliegue en infraestructura modesta: la versión Q6_K (20,57 GiB) o Q8_0 (26,63 GiB) permite equilibrar calidad y VRAM en GPUs de 24-32 GB para entornos de laboratorio o departamentos educativos.
 
 ## Benchmarks y rendimiento
 
@@ -57,44 +54,44 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según tamaño de archivo GGUF, más overhead de contexto y proyector):
-  - BF16: 50,11 GiB de pesos; requiere ~52-56 GiB de VRAM.
-  - Q8_0: 26,63 GiB de pesos; requiere ~28-32 GiB de VRAM.
-  - Q6_K: 20,57 GiB de pesos; requiere ~22-26 GiB de VRAM.
-  - Q4_K_M: 15,41 GiB de pesos; requiere ~17-20 GiB de VRAM.
-  - Sumar el proyector multimodal F16 (`mmproj-OmniEdu-27B-F16.gguf`) en todos los casos.
-- GPU recomendadas: A100 80 GB o H100 para BF16; A100 40 GB o L40S 48 GB para Q8_0; RTX 4090 24 GB para Q6_K; RTX 4090 24 GB o RTX 3090 24 GB para Q4_K_M.
-- Cabe en GPU de consumo: sí, en Q4_K_M y Q6_K sobre GPUs de 24 GB; Q4_K_M podría ajustarse en GPUs de 16 GB con contexto reducido y offload parcial a CPU.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), y por extensión cualquier frontend compatible con la API OpenAI servida en `/v1` (Cherry Studio, etc.). vLLM, TGI y Ollama no están confirmados en la información disponible.
+- VRAM estimada para inferencia (solo pesos, sin caché KV):
+  - Q4_K_M: ~15,41 GiB.
+  - Q6_K: ~20,57 GiB.
+  - Q8_0: ~26,63 GiB.
+  - BF16: ~50,11 GiB.
+  - Añadir el `mmproj` F16 (tamaño no indicado) y la caché KV correspondiente al contexto configurado.
+- GPU recomendadas:
+  - Q4_K_M: RTX 4090 (24 GB) o RTX 3090, con margen para contexto moderado.
+  - Q6_K: GPU de 24-32 GB (RTX 4090 ajustada, A6000, L40S).
+  - Q8_0: A100 40 GB, L40S 48 GB o H100.
+  - BF16: A100 80 GB o H100 80 GB.
+- ¿Cabe en GPU de consumo? Sí, la cuantización Q4_K_M cabe en GPUs de 24 GB; las versiones Q6_K y Q8_0 requieren GPUs profesionales o de mayor VRAM.
+- Opciones de despliegue: llama.cpp (`llama-server`), con compatibilidad de endpoints OpenAI; clientes como Cherry Studio. No se confirma soporte de vLLM, TGI u Ollama en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Omni-Edu-27B (GGUF) | 26,9B | 32.768 | Texto + imagen | other | GGUF en HF |
-| Omni-Edu-9B | ~9B (según proyecto) | no disponible | Texto + imagen | other | BF16/FP8 en HF |
-| Omni-Edu-4B | ~4B (según proyecto) | no disponible | Texto + imagen | other | BF16/FP8 en HF |
+No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base (contexto, idiomas, configuración) que permitan una comparación rigurosa con alternativas de la misma categoría. Se indica "no disponible".
 
-Las alternativas comparables dentro de la misma familia son las escalas 4B y 9B del propio proyecto OmniEdu, que permiten desplegar el mismo comportamiento pedagógico con menor coste de hardware. No se dispone de datos de benchmarks que permitan comparar el rendimiento frente a modelos generalistas de tamaño similar.
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Omni-Edu-27B-GGUF | ~27B | no disponible | Apache 2.0 | GGUF |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia "other": es imprescindible revisar los términos del modelo upstream (`lhpku20010120/Omni-Edu-27B`) antes de cualquier uso comercial; la model card delega explícitamente en dichos términos.
-- El modelo está especializado en K-12: su rendimiento fuera de dominios educativos puede ser inferior al de modelos generalistas del mismo tamaño.
-- No se ha publicado información sobre sesgos, composición del dataset ni evaluación de seguridad, lo que dificulta auditar riesgos en producción.
-- Riesgo de alucinación en la resolución de problemas: sin benchmarks publicados no es posible cuantificar la fiabilidad de las respuestas matemáticas o científicas.
-- Idiomas soportados no documentados: no se puede asumir un comportamiento multilingüe correcto, especialmente en castellano.
-- La model card no documenta el proceso de cuantización más allá de los parámetros empleados; las cuantizaciones Q4_K_M pueden degradar tareas de razonamiento matemático fino.
-- El repositorio ocupa 122 GB y las descargas de BF16 superan los 50 GiB: conviene planificar el almacenamiento antes de clonar.
-- La fecha de creación del repositorio (2026-11-02) y el número reducido de likes (1) sugieren un modelo reciente y con poca validación comunitaria.
+- No se han publicado datos sobre sesgos del modelo, por lo que se desconoce su comportamiento en dominios sensibles.
+- Riesgo de alucinación inherente a los modelos generativos; en contexto educativo, las explicaciones y soluciones deben verificarse antes de usarse con estudiantes.
+- No se documentan los idiomas soportados; el rendimiento en castellano no está garantizado ni medido.
+- La longitud de contexto nativa no está publicada; el ejemplo de la model card usa 8192 tokens, que puede ser insuficiente para documentos largos.
+- El modo de razonamiento debe desactivarse explícitamente (`--reasoning off`) si se busca baja latencia; su comportamiento por defecto no está documentado.
+- Aunque la licencia Apache 2.0 permite uso comercial, la redistribución exige incluir la licencia, conservar la atribución y el fichero NOTICE, e identificar modificaciones.
+- La licencia del modelo no cubre los datasets de entrenamiento ni sus materiales fuente, que se distribuyen por separado.
+- El repositorio ocupa 122 GB; descargar todas las cuantizaciones no es necesario, pero conviene planificar el almacenamiento.
+- El proyector `mmproj` es obligatorio para entrada de imágenes; sin él, el modelo solo procesa texto.
 
 ## Enlaces
 
-- Hugging Face (esta versión GGUF): https://huggingface.co/lhpku20010120/Omni-Edu-27B-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/lhpku20010120/Omni-Edu-27B
-- Versión GGUF del proyecto original: https://huggingface.co/OpenDCAI/Omni-Edu-27B-GGUF
-- Página del proyecto: https://haolpku.github.io/Omni-Edu/
-- Repositorio GitHub: https://github.com/haolpku/Omni-Edu
-- Ficha en Featherless AI: https://featherless.ai/models/lhpku20010120/Omni-Edu-27B
+- Hugging Face (GGUF): https://huggingface.co/lhpku20010120/Omni-Edu-27B-GGUF
+- Modelo base: https://huggingface.co/lhpku20010120/Omni-Edu-27B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

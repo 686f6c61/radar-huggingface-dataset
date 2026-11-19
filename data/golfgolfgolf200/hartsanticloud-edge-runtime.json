@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "golfgolfgolf200/hartsanticloud-edge-runtime",
+  "slug": "golfgolfgolf200-hartsanticloud-edge-runtime",
+  "author": "golfgolfgolf200",
+  "url": "https://huggingface.co/golfgolfgolf200/hartsanticloud-edge-runtime",
+  "created_at": "2026-11-18T20:57:55.000Z",
+  "updated_at": "2026-11-19T03:12:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "local-first",
+    "offline-ai",
+    "zero-egress",
+    "air-gapped-ai",
+    "edge-computing",
+    "sovereign-ai",
+    "sqlite-vec",
+    "local-rag",
+    "llama-cpp",
+    "liquid-ai",
+    "lfm2",
+    "whisper-cpp",
+    "offline-transcription",
+    "mcp-server",
+    "tauri",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 220672157,
+  "storage_human": "221 MB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF, LiquidAI/LFM2.5-8B-A1B-GGUF, LiquidAI/LFM2.5-24B-A2B-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How To View Recently Downloaded Files In Windows 11",
+      "url": "https://www.intowindows.com/how-to-view-recently-downloaded-files-in-windows-11/",
+      "snippet": "Mar 25, 2024 · That is, files downloaded via Google Chrome, Microsoft Edge, Mozilla Firefox, and other web browsers are …"
+    },
+    {
+      "title": "Where Are My Downloads on Windows? - How-To Geek",
+      "url": "https://www.howtogeek.com/771533/where-are-my-downloads-on-windows/",
+      "snippet": "Sep 26, 2023 · If you've downloaded a file using Chrome, Edge, or Firefox on Windows 10 or 11, You can usually find it in a special …"
+    }
+  ]
+}

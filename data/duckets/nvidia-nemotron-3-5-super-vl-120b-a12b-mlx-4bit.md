@@ -2,94 +2,89 @@
 
 ## Resumen
 
-El repositorio Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit es una conversion no oficial a MLX del modelo nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, publicada por el usuario Duckets (conversion y empaquetado atribuidos a Juno). Se trata del modelo omni completo: incluye el modelo de lenguaje hibrido Nemotron-H (Mamba-2, atencion y MoE) y la torre de vision C-RADIO. No incorpora torre de audio, ya que el campo `sound_config` es nulo en el checkpoint de origen.
+Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo multimodal NVIDIA Nemotron 3.5 Super VL 120B-A12B, desarrollado originalmente por NVIDIA y adaptado por el usuario Duckets para su ejecución nativa en Apple Silicon. El modelo combina un lenguaje híbrido Nemotron-H con una torre de visión C-RADIO, lo que permite entrada de texto e imágenes con salida de texto. La conversión parte del checkpoint BF16 original (no de un GGUF) y está pensada para usarse con la librería mlx-vlm y con LM Studio.
 
-La relevancia de esta publicacion es practica: traslada un modelo de 120.000 millones de parametros totales y 12.000 millones de parametros activos (120B-A12B) a un checkpoint cuantizado en 4 bits afines con grupo de 64, con aproximadamente 4,57 bits por peso y un peso en disco de unos 65 GB. Esto lo hace ejecutable en hardware Apple Silicon con memoria unificada, tanto mediante la libreria mlx-vlm como en LM Studio, donde segun el autor carga con la longitud de contexto nativa completa de 1.048.576 tokens.
+La relevancia de esta ficha radica en que hace accesible un modelo de 120 000 millones de parámetros totales (12 000 millones activos, al ser MoE) en hardware de consumo de Apple con 128 GB de memoria unificada, algo inviable con los pesos BF16. La cuantización affine de 4 bits con group size 64 reduce el peso en disco a unos 64,7 GiB y mantiene una longitud de contexto declarada de 1 048 576 tokens.
 
-El autor indica que la generacion de texto y la descripcion de imagenes han sido verificadas, aunque no se publican resultados de benchmarks ni detalles del entrenamiento original. La licencia no se especifica en la informacion disponible, y el checkpoint aplica tres correcciones de configuracion respecto a una conversion directa para que los frontales reporten correctamente la longitud de contexto.
+Es importante subrayar que esta es una conversión derivada: el modelo base, sus datos de entrenamiento y sus capacidades pertenecen a NVIDIA, y el uso se rige por la licencia OpenMDW 1.1 del modelo original. La model card del conversor no incluye resultados de benchmarks propios ni detalles adicionales de entrenamiento más allá de los del modelo upstream.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Hibrida Nemotron-H: Mamba-2, atencion y MoE, mas torre de vision C-RADIO |
-| Parametros totales | 120B (segun nomenclatura del modelo) |
-| Parametros activos | 12B (A12B) |
-| Longitud de contexto | 1.048.576 tokens (maximo nativo) |
-| Tipos de cuantizacion | 4-bit affine, group size 64, ~4,57 bits por peso; el modelo base esta en BF16 |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | MLX cuantizado a 4 bits; checkpoint de origen en BF16 |
-| Tamano del checkpoint | ~65 GB |
-| Modalidades | Texto e imagen (vision incluida y verificada); sin torre de audio |
-| Libreria | mlx-vlm |
-| Modelo base | nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 |
+| Arquitectura | Nemotron-H híbrida (capas intercaladas Mamba-2, atención y MoE; 512 expertos enrutados, top-22) + codificador de visión C-RADIO |
+| Parámetros totales | 121 511 070 726 (~120B) |
+| Parámetros activos | ~12B (MoE) |
+| Longitud de contexto | 1 048 576 tokens |
+| Tipos de cuantización | MLX affine 4-bit, group size 64, ~4,57 bits/peso |
+| Idiomas soportados | en, es, fr, de, it, ja |
+| Licencia | OpenMDW License Agreement 1.1 (openmdw-1.1) |
+| Formato de pesos | safetensors (14 shards MLX), 64,7 GiB / 69,4 GB en disco |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una hibrida Nemotron-H que combina capas Mamba-2 (modelo de espacio de estados), capas de atencion y capas de mezcla de expertos (MoE). La nomenclatura 120B-A12B indica un total de 120.000 millones de parametros con 12.000 millones activos por token, lo que implica enrutamiento disperso sobre expertos. A esta pila de lenguaje se le anade una torre de vision C-RADIO para el procesamiento de imagenes, presente y verificada en este checkpoint. El modelo de origen no incluye torre de audio.
+La arquitectura es la Nemotron-H híbrida de NVIDIA, que intercala capas de espacio de estados Mamba-2, capas de atención y capas de mezcla de expertos (MoE) con 512 expertos enrutados y enrutamiento top-22. A esto se añade una torre de visión C-RADIO que procesa imágenes de entrada; el modelo no incluye torre de audio (sound_config nulo en el checkpoint fuente). El resultado es un modelo omni de texto e imagen con salida exclusivamente textual.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF o DPO. La innovacion tecnica documentada en esta ficha se limita al proceso de conversion: cuantizacion affine de 4 bits con group size 64 (aproximadamente 4,57 bits por peso), eliminacion de la clave redundante `_downsample_factor` en las configuraciones del procesador (se deriva de `downsample_ratio`), normalizacion del sentinel Infinity de `time_step_limit` a un numero plano y anadido de una clave `max_position_embeddings` de nivel superior para que los frontales reporten la longitud de contexto real.
+No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO; esos datos corresponden al modelo upstream de NVIDIA y no se reproducen en la model card de esta conversión. La innovación técnica destacable de esta ficha es la propia conversión: cuantización affine 4-bit con group size 64, corrección de claves de configuración del processor (eliminación de `_downsample_factor` redundante, normalización del sentinel Infinity de `time_step_limit` a 1e30, adición de `max_position_embeddings` a 1048576) y endurecimiento del `chat_template.jinja` en 7 puntos para tolerar valores nulos en esquemas de herramientas. El razonamiento es configurable mediante `enable_thinking` en la plantilla de chat, igual que en la versión upstream.
 
 ## Capacidades
 
-- Generacion de texto: carga y genera correctamente bajo mlx-vlm, segun el autor.
-- Comprension de imagenes: la torre de vision C-RADIO esta incluida y se ha probado la descripcion de imagenes.
-- Contexto muy largo: ventana nativa de 1.048.576 tokens, cargable en LM Studio con la configuracion adecuada.
-- Inferencia local en Apple Silicon mediante MLX, sin necesidad de GPU NVIDIA.
-- Capacidades multimodales de audio: no disponibles (el checkpoint de origen no tiene torre de audio).
-- Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente o razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
-- Cobertura multilingue: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento con modo de pensamiento configurable (`enable_thinking`).
+- Comprensión de imágenes (image-text-to-text) mediante la torre C-RADIO; descripción de imágenes verificada por el autor.
+- Entrada de vídeo por diseño upstream (frames), aunque no verificada en este port.
+- Soporte multilingüe declarado en inglés, español, francés, alemán, italiano y japonés.
+- Conversación multi-turno con contexto extremadamente largo (hasta 1 048 576 tokens).
+- Soporte de tool calling / function calling a través de la plantilla de chat (con manejo robusto de esquemas con valores nulos).
+- Ejecución nativa en Apple Silicon con mlx-vlm y despliegue en LM Studio con la API propia de este.
+- No dispone de entrada ni salida de audio.
 
 ## Casos de uso
 
-- Analisis de documentacion tecnica con diagramas: el modelo puede recibir un PDF con planos, esquemas o capturas junto a texto descriptivo y razonar sobre ambos en una sola pasada, gracias a la combinacion de la torre C-RADIO y una ventana de 1.048.576 tokens.
-- Descripcion automatica de imagenes en flujos de accesibilidad: al estar verificada la generacion de descripciones de imagen, puede integrarse en pipelines que generen texto alternativo para catalogos, archivos fotograficos o repositorios documentales.
-- Procesamiento de expedientes escaneados de multiples paginas: facturas, contratos o informes con tablas e imagenes pueden procesarse localmente sin enviar datos a servicios en la nube, lo que resulta adecuado para entornos con requisitos de confidencialidad.
-- Asistente local sobre Mac con memoria unificada: al ser un checkpoint MLX de ~65 GB, permite desplegar un asistente multimodal en un Mac Studio o Mac con suficiente memoria unificada, usando mlx-vlm o LM Studio.
-- Investigacion sobre arquitecturas hibridas: el checkpoint facilita experimentar con la familia Nemotron-H (Mamba-2 + atencion + MoE) y medir el efecto de la cuantizacion a 4 bits frente al modelo BF16 de origen.
-- Revision de interfaces y capturas de pantalla en desarrollo: analisis de capturas de UI junto a especificaciones textuales largas para detectar discrepancias entre diseno e implementacion.
-- Extraccion de informacion de informes con graficos: combinacion de contexto largo y vision para localizar datos en series de figuras y tablas dentro de documentos extensos.
+- Análisis de documentos extensos con imágenes: gracias al contexto de 1 048 576 tokens, se pueden procesar manuales, informes o expedientes completos con figuras y tablas incrustadas en una sola pasada, manteniendo coherencia entre texto e imagen.
+- Descripción y etiquetado automático de imágenes en pipelines de accesibilidad: el modelo genera descripciones textuales de imágenes que pueden alimentar sistemas de texto alternativo o audiodescripción.
+- Asistente de desarrollo en local sobre Mac: con tool calling y contexto largo, puede integrarse en flujos de revisión de código y documentación técnica sin enviar datos a la nube, aprovechando la ejecución en Apple Silicon.
+- Atención al cliente multilingüe: cubre conversaciones en seis idiomas con historial largo, adecuado para soporte técnico donde el cliente adjunta capturas de pantalla o diagramas.
+- Investigación y prototipado en visión-lenguaje: al ejecutarse en un Mac de 128 GB, permite experimentar con un modelo de 120B MoE sin infraestructura de datacenter, útil para pruebas de concepto y evaluación cualitativa.
+- Extracción de información de documentos escaneados: combinación de OCR implícito por visión y razonamiento textual para convertir formularios o facturas en datos estructurados.
+- Generación de resúmenes de vídeo por fotogramas: aunque no verificado en este port, el diseño upstream admite frames de vídeo, lo que habilita resúmenes de reuniones o material audiovisual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card de esta conversión remite a la model card upstream de NVIDIA para benchmarks y detalles de entrenamiento, pero no incluye cifras propias.
 
 ## Requisitos de hardware
 
-- Peso del checkpoint en disco: aproximadamente 65 GB en cuantizacion 4 bits (4,57 bits por peso), segun el autor.
-- Memoria necesaria: al menos la del checkpoint mas el overhead de runtime y la cache KV; para contexto largo se requiere bastante mas memoria unificada. Cifra exacta no disponible.
-- Plataforma objetivo: Apple Silicon con MLX. No se documenta soporte CUDA en esta conversion.
-- GPU de consumo: no cabe en GPUs de consumo con 24 GB de VRAM, ya que solo los pesos ocupan unos 65 GB.
-- Opciones de despliegue: mlx-vlm (verificado) y LM Studio (verificado por el autor con el contexto completo de 1.048.576 tokens). vLLM, TGI, llama.cpp y Ollama no estan documentados para este formato de pesos.
-- Configuracion en LM Studio: el autor indica desactivar la cuantizacion de cache KV, ya que esa opcion hace que LM Studio ignore la longitud de contexto configurada.
-- Nota de compatibilidad: los backends de LM Studio disponibles en la fecha de subida podian fallar al cargar la arquitectura por falta del paquete de modelo mlx-vlm y de dos dependencias del procesador; se trata de una limitacion del motor, no de los pesos.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria unificada: los pesos ocupan unos 64,7 GiB; el autor recomienda un Mac con 128 GB de memoria unificada para cargar el modelo con holgura (los pesos residentes son ~65 GiB).
+- GPU recomendadas: Apple Silicon con 128 GB de memoria unificada (verificado por el autor); no se documentan requisitos para GPU NVIDIA en esta conversión MLX.
+- ¿Cabe en GPU de consumo? No en GPU discretas de consumo convencionales por el tamaño de pesos; sí en Mac de gama alta con 128 GB unificados.
+- Tiempo de carga: aproximadamente 10 segundos en un Mac de 128 GB según el autor.
+- Opciones de despliegue: mlx-vlm (librería principal) y LM Studio. En LM Studio debe cargarse con la cuantización de KV Cache desactivada, ya que con ella activada la ruta de visión por lotes de mlx-vlm rechaza la carga o ignora la longitud de contexto.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit | 120B totales, 12B activos | 1.048.576 tokens | 4-bit affine (MLX) | ~65 GB | no disponible | Hugging Face, requiere MLX |
-| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | 120B totales, 12B activos | 1.048.576 tokens | BF16 (sin cuantizar) | ~240 GB (estimado a partir de 120B en BF16) | no disponible | Hugging Face |
-| Otros modelos comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit | 120B totales / 12B activos | 1 048 576 | OpenMDW 1.1 | Hugging Face (MLX 4-bit) |
+| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 (upstream) | 120B totales / 12B activos | 1 048 576 | OpenMDW 1.1 | Hugging Face (BF16) |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparativo ni de otras alternativas concretas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no es posible confirmar si se permite el uso comercial. Debe verificarse en el repositorio base antes de cualquier despliegue en produccion.
-- Conversion no oficial: los pesos han sido cuantizados por un tercero (Duckets, con conversion atribuida a Juno) y no estan validados por NVIDIA.
-- Degradacion potencial por cuantizacion: la cuantizacion a 4 bits puede reducir la calidad frente al checkpoint BF16 de origen; no se han publicado evaluaciones comparativas.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay documentacion especifica sobre su comportamiento en este checkpoint.
-- Idiomas soportados no documentados: no puede garantizarse un rendimiento adecuado en castellano ni en otros idiomas concretos.
-- Contexto largo y memoria: aunque el contexto nativo es de 1.048.576 tokens, mantenerlo completo exige una cache KV muy grande; en la practica puede ser necesario reducirlo o cuantizarla, lo que afecta a la gestion del modelo.
-- Compatibilidad de motores: backends de LM Studio pueden fallar al cargar la arquitectura si no incluyen el paquete mlx-vlm y las dependencias del procesador.
-- Aviso operativo en LM Studio: la cuantizacion de cache KV debe permanecer desactivada para que se respete la longitud de contexto configurada.
-- Sin audio: no dispone de torre de audio, por lo que no puede procesar entradas de voz o sonido.
-- Exclusion de otros runtimes: al ser pesos MLX, no se pueden usar directamente con vLLM, TGI, llama.cpp u Ollama sin una conversion adicional.
+- La cuantización 4-bit puede diferir ligeramente del original BF16 en salidas límite; para evaluación de precisión completa debe usarse el release BF16 upstream.
+- La visión se verificó con imágenes; la entrada de vídeo sigue el diseño upstream pero no forma parte de la verificación de este port.
+- No hay entrada ni salida de audio, ya que el modelo fuente carece de torre de audio.
+- En LM Studio, algunas versiones del backend pueden no incluir el paquete `nemotron_h_omni` de mlx-vlm ni dos dependencias del processor, lo que puede impedir la carga por motivos del motor; no es un defecto de los pesos.
+- Es obligatorio desactivar la cuantización de KV Cache en LM Studio para evitar fallos en la ruta de visión por lotes.
+- Riesgo de alucinación y sesgos: no documentados específicamente en la información disponible; deben asumirse los del modelo upstream de NVIDIA.
+- Restricciones de licencia: el uso se rige por la OpenMDW License Agreement 1.1; conviene revisar sus términos para uso comercial.
+- Al ser una conversión derivada, el soporte y la responsabilidad sobre capacidades y datos de entrenamiento recaen en NVIDIA, no en el conversor.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit
-- Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
+- Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
+- Librería mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

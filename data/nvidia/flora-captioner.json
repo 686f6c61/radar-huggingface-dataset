@@ -51,29 +51,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
-      "url": "https://www.nvidia.com/",
-      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
-    },
-    {
       "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
       "url": "https://www.nvidia.com/fr-fr/drivers/",
       "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
     },
     {
-      "title": "Téléchargements de pilotes NVIDIA",
-      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
-      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
     },
     {
-      "title": "Enabling High-Fidelity Detailed Caption Generation",
-      "url": "https://research.nvidia.com/labs/dir/vfc/",
-      "snippet": "This page has permanently moved. If you are not redirected automatically, please click here"
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …"
     },
     {
-      "title": "GeForce NOW",
-      "url": "https://play.geforcenow.com/",
-      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
     }
   ]
 }

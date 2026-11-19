@@ -2,117 +2,112 @@
 
 ## Resumen
 
-Kataguru Titan v3.2 GGUF es un ajuste fino del modelo denso multimodal Qwen3.8-27B, desarrollado por el usuario kataguru y distribuido en formato GGUF cuantizado para inferencia local. Se trata de un modelo de 26.895.998.464 parámetros (aproximadamente 27B) con visión nativa, ventana de contexto nativa de 262.144 tokens y soporte de llamadas a herramientas, orientado a flujos agénticos y despliegue en hardware de consumo. Su base directa es kataguru/Qwen3.8-27B-Titan-v3.0-Uncensored-BF16, que a su vez procede de una cadena de fusiones y ajustes sobre Qwen3.8-27B.
+Kataguru Titan v3.2 es un ajuste fino del modelo Qwen3.8-27B, desarrollado por el usuario kataguru y distribuido en formato GGUF para inferencia local con llama.cpp, LM Studio y Ollama. Se presenta como un modelo "uncensored" (zero-refusal) orientado a agentes autónomos, con capacidades multimodales de visión y un contexto nativo de 262.144 tokens. El modelo está especializado en finés (suomi) y declara soporte para inglés, estonio, húngaro y turco, además de capacidades de razonamiento y tool calling.
 
-El modelo se presenta como una variante "uncensored" con "zero refusal" (0,00 % de rechazos declarados en tareas legítimas) y una supuesta ortogonalización de activaciones denominada SOMA/ARA. El entrenamiento adicional de Kataguru se realizó sobre 32.282 muestras auditadas orientadas a agenticidad autónoma, llamadas a herramientas en formato MiniCPM-5 / Qwen3 XML y comprensión profunda del interlocutor. El autor publica una comparativa de 13 tareas de lm-evaluation-harness en la que el modelo alcanza 93,86 % en GSM8K, 63,13 % en GPQA Diamond y 85,61 % en IFEval (strict), con una media de 73,05 % en la configuración Inst Strict.
+El modelo parte de una cadena de ajustes finos sobre la base Qwen3.8-27B, pasando por variantes "Heretic/Uncensored" de DavidAU y las versiones previas Titan 1.0 y 2.0 del propio kataguru. La versión v3.2 corresponde al checkpoint 125 de un entrenamiento adicional sobre la base Titan v3.0, con un conjunto de 32.282 muestras auditadas centradas en agenticidad autónoma, tool calling en formato MiniCPM-5/Qwen3 XML y "comprensión humana profunda".
 
-La relevancia del lanzamiento radica en que combina un modelo denso de 27B con visión y contexto de 262k en dos cuantizaciones GGUF calibradas con imatrix (IQ3_XXS de ~11 GB e IQ4_XS de ~15,2 GB), lo que permite ejecutarlo en GPUs de 12-24 GB mediante llama.cpp, LM Studio u Ollama. La licencia es Apache 2.0. El repositorio registra 0 descargas y 0 "me gusta" en el momento de la consulta, por lo que se trata de una publicación sin validación independiente.
+La relevancia de esta ficha radica en que ofrece cuantizaciones optimizadas con imatrix (IQ3_XXS, IQ4_XS, IQ4_NL) que permiten ejecutar un modelo de ~27.000 millones de parámetros en GPUs de consumo de 12-24 GB de VRAM, con un contexto muy largo y un proyector de visión separado. El autor publica además una comparativa de 13 tareas del `lm-evaluation-harness` frente al modelo base y a la versión v3.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (visión-lenguaje), heredado de Qwen3.8-27B |
-| Parametros totales | 26.895.998.464 (~26,9B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens nativos (262k) |
-| Tipos de cuantizacion | IQ3_XXS (~11,0 GB) e IQ4_XS (~15,2 GB); proyector visual mmproj en F16 (889 MB) |
-| Idiomas soportados | finés (fi), inglés (en), estonio (et), húngaro (hu), turco (tr) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B; detalles de atención no disponibles) |
+| Parametros totales | 26.895.998.464 (~26,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 tokens (nativo, según model card) |
+| Tipos de cuantizacion | IQ3_XXS, IQ4_XS, IQ4_NL (optimizadas con imatrix); proyector de visión en F16 |
+| Idiomas soportados | fi, en, et, hu, tr |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); la base BF16 original se distribuye en safetensors |
+| Formato de pesos | GGUF (con mmproj F16 para visión); el modelo base se distribuye en BF16 y AWQ W4A16 |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer denso multimodal de aproximadamente 27B parámetros, con un codificador visual conectado mediante un proyector (mmproj) en precisión F16 de 889 MB. La colección oficial de Kataguru describe la serie Titan como "27B Dense with Vision & MTP". El contexto nativo es de 262.144 tokens. El modelo base de la cadena es Qwen3.8-27B, un modelo denso visión-lenguaje de 27B de Alibaba, y sobre él se aplicaron una serie de fusiones de la comunidad (DavidAU) antes de los ajustes propios de Kataguru.
+La información disponible no detalla la arquitectura interna más allá de indicar que deriva de Qwen3.8-27B y que incorpora un proyector multimodal (`mmproj-Qwen3.8-27B-Titan-v3.2-f16.gguf`, 889 MB) para análisis de imágenes. El linaje documentado por el autor es: base Qwen3.8-27B → variantes "TURBO Fable Cold Fusion Heretic Uncensored" de DavidAU → Titan 1.0 y Titan 2.0 de kataguru → Titan v3.0 (checkpoint CP4000) → Titan v3.2 (checkpoint 125). El modelo base inmediato es `kataguru/Qwen3.8-27B-Titan-v3.0-Uncensored-BF16`.
 
-El ajuste adicional de Kataguru se realizó sobre la base kataguru/Qwen3.8-27B-Titan-v3.0-CP4000-BF16 más un Checkpoint-125 de entrenamiento de continuación. El conjunto de datos declarado son 32.282 muestras auditadas centradas en agenticidad autónoma, llamadas a herramientas en el formato MiniCPM-5 / Qwen3 XML y modelado de comprensión del usuario. El autor menciona una técnica de "ortogonalización de activaciones SOMA/ARA" para lo que denomina honestidad epistémica y ausencia de rechazos. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición detallada del dataset ni si se emplearon RLHF, DPO u otras técnicas de alineación.
+El ajuste fino de kataguru se describe como un entrenamiento de 32.282 muestras auditadas orientado a agenticidad autónoma, tool calling en formato MiniCPM-5 / Qwen3 XML, "comprensión humana profunda" y "somatics". El autor menciona una técnica de "ortogonalización de activaciones SOMA/ARA" para lo que denomina "honestidad epistémica" y una tasa de rechazo del 0,00 % en tareas legítimas. No se especifican el número total de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO. Tampoco se detallan innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto de hasta 262.144 tokens.
-- Razonamiento matemático con cadena de pensamiento: 93,86 % en GSM8K (exact match estricto).
-- Razonamiento STEM de nivel doctoral: 63,13 % en GPQA Diamond.
-- Comprensión de imágenes: análisis visual completo mediante el proyector mmproj en F16.
-- Llamadas a funciones y herramientas en formato MiniCPM-5 y Qwen3 XML.
-- Flujos agénticos autónomos y razonamiento multi-paso, según el entrenamiento declarado.
-- Capacidades multilingües en finés, inglés, estonio, húngaro y turco.
-- Comportamiento "zero refusal" (0,00 % de rechazos declarados en tareas legítimas).
-- Seguimiento estricto de instrucciones: 85,61 % en IFEval (Inst Strict) y 80,78 % (Prompt Strict).
-- Conocimiento clínico y biomédico: 83,97 % en MedQA (4 opciones).
-- No se documenta en la información disponible un modo de razonamiento explícito ("thinking mode") ni capacidades de audio o vídeo más allá de la referencia genérica a visión del modelo base.
+- Generación de texto conversacional y razonamiento de múltiples pasos (chain-of-thought).
+- Razonamiento matemático (GSM8K) y STEM de nivel doctorado (GPQA Diamond).
+- Tool calling / function calling con formato MiniCPM-5 y Qwen3 XML.
+- Comportamiento agéntico autónomo (planificación y ejecución multi-paso).
+- Análisis de imágenes mediante el proyector de visión F16 (multimodal).
+- Multilingüe: finés, inglés, estonio, húngaro y turco.
+- Modo "zero-refusal" / uncensored: el autor declara 0,00 % de rechazos en tareas legítimas.
+- Cumplimiento estricto de instrucciones programáticas (IFEval).
 
 ## Casos de uso
 
-- Asistente conversacional local en finés: el modelo está ajustado específicamente para este idioma y puede mantener diálogos multi-turno con contexto de 262k tokens, lo que permite incorporar documentos largos completos en la ventana sin truncar.
-- Análisis de documentos escaneados e imágenes: gracias al proyector mmproj en F16, se pueden procesar capturas, diagramas o formularios y extraer información estructurada en un pipeline local con llama.cpp.
-- Agentes autónomos con tool calling: el entrenamiento en formatos MiniCPM-5 / Qwen3 XML permite integrar el modelo en orquestadores de agentes que invocan APIs o funciones externas, con razonamiento multi-paso.
-- Resolución de problemas matemáticos y verificación de cálculos: el 93,86 % en GSM8K lo hace adecuado para asistentes de tutoría o validación de expresiones en flujos educativos.
-- Atención al cliente multilingüe en el Báltico y Turquía: cubre finés, estonio, húngaro y turco, idiomas con menor cobertura en modelos abiertos, con un contexto extenso para historiales de conversación largos.
-- Generación de código asistida en local: hereda del linaje Qwen3.8-27B la capacidad de codificación, permitiendo autocompletado y refactorización sin enviar código a servicios externos.
-- Análisis clínico preliminar o apoyo documental sanitario: el 83,97 % en MedQA sugiere utilidad para resumir literatura médica o responder preguntas de formación, siempre con supervisión humana.
-- Procesamiento de expedientes largos en hardware de consumo: con IQ4_XS (~15,2 GB) cabe en GPUs de 16-24 GB, lo que permite desplegar análisis documental en una estación de trabajo sin clúster.
+- Agentes autónomos locales: el soporte de tool calling en formato Qwen3 XML y su comportamiento agéntico permiten construir pipelines de agentes que planifican y ejecutan acciones sobre APIs locales sin depender de la nube.
+- Asistencia en finés: es uno de los pocos modelos de ~27 B con especialización explícita en finés, útil para atención al cliente, resumen documental o generación de contenido en ese idioma.
+- Análisis de documentos e imágenes en el escritorio: con el proyector de visión y 262k de contexto, puede procesar capturas, diagramas o páginas escaneadas junto con texto largo en LM Studio.
+- Razonamiento STEM y tutoría técnica: sus resultados en GPQA Diamond (63,13 %) y GSM8K (93,86 %) lo hacen adecuado para asistencia en problemas de física, química, biología y matemáticas.
+- Automatización de flujos de trabajo con instrucciones estrictas: el 85,61 % en IFEval (Inst Strict) respalda su uso en tareas donde el formato de salida debe cumplirse al pie de la letra (extracción estructurada, generación de JSON, etc.).
+- Despliegue en hardware de consumo: las cuantizaciones IQ3_XXS (~11 GB) e IQ4_XS/IQ4_NL (~15 GB) permiten ejecutarlo en GPUs de 12-24 GB, habilitando asistentes privados sin conexión.
+- Investigación sobre alineación y modelos sin censura: útil para estudiar el comportamiento de modelos con rechazo reducido en entornos controlados.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor con lm-evaluation-harness. No han sido verificados de forma independiente.
+Resultados publicados por el autor con `lm-evaluation-harness` (tuplas prompt/inst strict donde aplica):
 
-| Tarea | Metrica | Qwen 3.8 27B Base | Titan v3.0 CP4000 | Titan v3.2 (CP125) | Delta vs Base |
-|---|---|---|---|---|---|
-| gsm8k | exact_match (strict) | 73,10 % | 94,54 % | 93,86 % | +20,76 pp |
-| gpqa_diamond | exact match (choice) | 44,60 % | 60,10 % | 63,13 % | +18,53 pp |
-| ifeval | Prompt strict | 35,0 % | 73,94 % | 80,78 % | +45,78 pp |
-| ifeval | Inst strict | 45,0 % | 80,82 % | 85,61 % | +40,61 pp |
-| boolq | acc | 89,20 % | 91,41 % | 91,07 % | +1,87 pp |
-| truthfulqa_mc2 | acc (multi-true) | 51,10 % | 55,03 % | 54,93 % | +3,83 pp |
-| truthfulqa_mc1 | acc (single-true) | 34,60 % | 36,72 % | 36,96 % | +2,36 pp |
-| medqa_4options | acc_norm | 82,64 % | 84,37 % | 83,97 % | +1,33 pp |
-| arc_challenge | acc_norm | 66,50 % | 65,44 % | 65,27 % | -1,23 pp |
-| arc_easy | acc | 85,40 % | 86,20 % | 86,07 % | +0,67 pp |
-| winogrande | acc | 77,30 % | 77,35 % | 77,11 % | -0,19 pp |
-| hellaswag | acc_norm | 83,90 % | 82,98 % | 82,92 % | -0,98 pp |
-| openbookqa | acc_norm | 45,10 % | 46,20 % | 46,60 % | +1,50 pp |
-| piqa | acc_norm | 81,80 % | 82,32 % | 82,21 % | +0,41 pp |
-| Media (13 tareas, Prompt Strict) | aritmética | 65,40 % | 72,05 % | 72,68 % | +7,28 pp |
-| Media (13 tareas, Inst Strict) | aritmética | 66,17 % | 72,58 % | 73,05 % | +6,89 pp |
+| Tarea | Qwen 3.8 27B Base | Titan v3.0 CP4000 | Titan v3.2 (CP125) |
+|---|---|---|---|
+| gsm8k (exact_match strict) | 73,10 % | 94,54 % | 93,86 % |
+| gpqa_diamond | 44,60 % | 60,10 % | 63,13 % |
+| ifeval (prompt / inst strict) | 35,0 % / 45,0 % | 73,94 % / 80,82 % | 80,78 % / 85,61 % |
+| boolq | 89,20 % | 91,41 % | 91,07 % |
+| truthfulqa_mc2 | 51,10 % | 55,03 % | 54,93 % |
+| truthfulqa_mc1 | 34,60 % | 36,72 % | 36,96 % |
+| medqa_4options | 82,64 % | 84,37 % | 83,97 % |
+| arc_challenge | 66,50 % | 65,44 % | 65,27 % |
+| arc_easy | 85,40 % | 86,20 % | 86,07 % |
+| winogrande | 77,30 % | 77,35 % | 77,11 % |
+| hellaswag | 83,90 % | 82,98 % | 82,92 % |
+| openbookqa | 45,10 % | 46,20 % | 46,60 % |
+| piqa | 81,80 % | 82,32 % | 82,21 % |
+| Media (13 tareas, prompt strict) | 65,40 % | 72,05 % | 72,68 % |
+| Media (13 tareas, inst strict) | 66,17 % | 72,58 % | 73,05 % |
+
+No se han publicado resultados de benchmarks adicionales (p. ej. MMLU, HumanEval) en la información disponible.
 
 ## Requisitos de hardware
 
-- IQ3_XXS: fichero de ~11,0 GB. Recomendación del autor: GPU de 12 GB con contexto limitado o de 16 GB con contexto amplio.
-- IQ4_XS: fichero de ~15,2 GB. Recomendación del autor: GPU de 16 GB en el límite o de 24 GB o más para máxima calidad.
-- Proyector visual mmproj-F16: 889 MB adicionales si se quiere usar visión.
-- GPUs de consumo compatibles: RTX 3060 12 GB, RTX 4070 Ti / 4080 16 GB, RTX 3090 / 4090 24 GB. El tamaño del repositorio completo es de 27,2 GB, por lo que ambos cuantizados conviven en disco sin problema.
-- Despliegue: LM Studio 0.3+, llama.cpp (build b11064 o superior) y Ollama son los entornos recomendados por el autor. Para el modelo base en BF16/AWQ existe soporte en vLLM según la documentación de terceros.
-- Latencia y throughput: no disponibles para este GGUF concreto. Como referencia externa no verificada, la documentación de HyperQwen reporta para el Qwen3.8-27B base con vLLM en una tarjeta de 24 GB: 127 tok/s en un solo usuario, ~1.035 tok/s con 64 peticiones concurrentes y contexto de 150k-262k.
+- VRAM estimada: ~11 GB para IQ3_XXS (recomendado 12 GB con contexto limitado o 16 GB con contexto amplio); ~15,1-15,2 GB para IQ4_XS e IQ4_NL (recomendado 16 GB o 24 GB+).
+- Proyector de visión: 889 MB adicionales en F16 si se usa multimodalidad.
+- GPUs recomendadas: RTX 4090 (24 GB) para IQ4_XS/IQ4_NL con contexto amplio; RTX 3060 12 GB / RTX 4070 para IQ3_XXS con contexto reducido; A100/H100 para contexto completo de 262k y mayor throughput.
+- Cabe en GPU de consumo: sí, en tarjetas de 12 GB (IQ3_XXS) y 16-24 GB (IQ4_XS/IQ4_NL).
+- Opciones de despliegue: LM Studio 0.3+, llama.cpp b11064+, Ollama. El autor indica compatibilidad con endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kataguru Titan v3.2 GGUF (este) | 26,9B denso + vision | 262.144 tokens | GSM8K 93,86 %; GPQA Diamond 63,13 %; IFEval strict 85,61 % | Apache 2.0 | GGUF (IQ3_XXS, IQ4_XS); AWQ y NVFP4 en la serie |
-| Kataguru Titan v3.0 CP4000 | 26,9B denso + vision | 262.144 tokens (heredado) | GSM8K 94,54 %; GPQA Diamond 60,10 %; IFEval strict 80,82 % | Apache 2.0 (segun linaje) | BF16 y GGUF en variantes de la serie |
-| Qwen3.8-27B base | 27B denso + vision | 262.144 tokens nativos | GSM8K 73,10 %; GPQA Diamond 44,60 %; IFEval strict 45,0 % | Apache 2.0 | safetensors, NGC, vLLM |
-| Kataguru Sceptic 35B MoE | 35B MoE | no disponible | no disponible | no disponible | GGUF Dual-Quant, vLLM AWQ, NVFP4 |
+| Kataguru Titan v3.2 | ~26,9 B | 262.144 | Apache 2.0 | GGUF | Especializado en finés, uncensored, visión |
+| Qwen3.8-27B Base | ~27 B | no disponible | no disponible | BF16 | Base del ajuste; media 65,40 % en 13 tareas |
+| Titan v3.0 CP4000 | ~27 B | no disponible | Apache 2.0 | BF16 / AWQ | Versión previa; media 72,05 % en 13 tareas |
+
+No se dispone de datos de benchmarks de modelos externos comparables en la información proporcionada, por lo que no se incluyen cifras de terceros.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks son autoinformados por el autor y no cuentan con verificación independiente. El repositorio tiene 0 descargas y 0 "me gusta" en el momento de la consulta.
-- El modelo se comercializa como "uncensored" y "zero refusal": puede generar contenido que otros modelos rechazarían. Requiere moderación externa en cualquier despliegue de producción orientado al público.
-- Como todo modelo de lenguaje, presenta riesgo de alucinación, especialmente en dominios factuales donde los datos de ajuste son escasos. Las puntuaciones de TruthfulQA (54,93 % en mc2 y 36,96 % en mc1) reflejan esta limitación.
-- El linaje incluye fusiones no oficiales de la comunidad (DavidAU) sobre Qwen3.8-27B, lo que dificulta trazar exactamente qué capacidades provienen del modelo original y cuáles de las fusiones.
-- Cobertura idiomática restringida a finés, inglés, estonio, húngaro y turco. No hay evidencia de rendimiento en castellano.
-- Las cuantizaciones IQ3_XXS e IQ4_XS son con pérdida. El propio autor describe IQ4_XS como la opción de "máxima precisión" frente a IQ3_XXS, lo que implica degradación medible en la variante de 3 bits.
-- Las afirmaciones sobre "ortogonalización de activaciones SOMA/ARA" y "honestidad epistémica" no vienen respaldadas por publicaciones técnicas ni evaluaciones reproducibles en la información disponible.
-- Existe una discrepancia no resuelta en la model card entre Checkpoint-125 (v3.2), CP4000 (v3.1) y Checkpoint-4000, lo que complica la trazabilidad de versiones.
-- Aunque la licencia es Apache 2.0, conviene verificar las licencias de los modelos intermedios de la cadena de fusiones antes de un uso comercial.
-- La variante de 1M de contexto pertenece a otro repositorio (Titan-v3.0-1M-GGUF); este v3.2 declara 262k nativos.
+- Modelo "uncensored" / zero-refusal: el autor declara explícitamente una tasa de rechazo del 0,00 %, lo que implica un riesgo elevado de generar contenido inapropiado, dañino o ilegal sin salvaguardas. No apto para producción orientada al público sin una capa de moderación externa.
+- Riesgo de alucinación: los resultados en TruthfulQA (mc1 36,96 %, mc2 54,93 %) indican una fiabilidad factual limitada; conviene verificar afirmaciones críticas.
+- Idiomas: el soporte declarado se limita a fi, en, et, hu y tr; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario es responsable del cumplimiento legal del contenido generado y de las obligaciones de atribución.
+- Linaje complejo con múltiples ajustes "Heretic/Uncensored": la procedencia de los datos de entrenamiento intermedios no está detallada, lo que dificulta auditar sesgos o contaminación.
+- Benchmarks autopublicados por el autor sin verificación independiente; las cifras deben tomarse con cautela.
+- El contexto nativo de 262k puede degradar la calidad y exige hardware de gama alta (A100/H100) para aprovecharse por completo.
+- El formato GGUF está pensado para inferencia local; para despliegues de alta concurrencia conviene evaluar la variante AWQ W4A16 del mismo autor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-GGUF
-- Modelo base: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.0-Uncensored-BF16
-- Variante AWQ del mismo checkpoint: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-W4A16-AWQ
-- Variante de 1M de contexto: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.0-1M-GGUF/tree/main
-- Colección Kataguru Flagship Series: https://huggingface.co/collections/kataguru/kataguru-flagship-series
-- Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Ficha de Qwen3.8-27B en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/
-- HyperQwen (parches de vLLM y benchmarks del base): https://github.com/syv-ai/HyperQwen
+- Hugging Face (GGUF): https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-GGUF
+- Modelo base BF16: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.0-Uncensored-BF16
+- Variante AWQ W4A16: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-W4A16-AWQ
+- Titan 1.0: https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored
+- Titan v2.0: https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-v2.0-Uncensored
+- Linaje DavidAU (TURBO Fable Cold Fusion): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Linaje DavidAU (TWIN TURBO): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored

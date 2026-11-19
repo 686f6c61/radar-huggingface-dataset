@@ -2,107 +2,92 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-abliterated es una versión modificada del checkpoint deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por el usuario mrfakename. No es un modelo reentrenado: es el mismo checkpoint al que se le ha aplicado una ablación direccional (abliteration) para eliminar el comportamiento de rechazo. Conserva la estructura de ficheros, el formato y el layout FP8 del original, de modo que se carga en los mismos entornos que el modelo base.
+DeepSeek-V4.1-Flash-1017-abliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) publicada por el usuario mrfakename, en la que se ha eliminado el comportamiento de rechazo mediante ablación direccional. El modelo conserva la misma arquitectura, los mismos ficheros, el mismo formato y el mismo layout FP8 que el original, por lo que se carga en cualquier entorno donde se cargue el modelo base. Cuenta con 763.205.315.794 parámetros totales y un repositorio de 510,3 GB.
 
-El modelo base es un transformer disperso (MoE) de 763.205.315.794 parámetros totales (unos 763,2 mil millones) según los safetensors publicados, con 43 capas indexadas de la 0 a la 42: 40 capas principales y 3 capas DSpark/MTP (40-42). Incluye expertos enrutados y expertos compartidos, además de tablas Engram. El repositorio ocupa 510,3 GB y se distribuye en safetensors FP8 (block-scaled, 8 bits) y GGUF.
+La modificación no es un ajuste fino supervisado al uso, sino una intervención quirúrgica sobre los pesos: se identificó que los rechazos del modelo base viven en más de una dirección (el modo chat y el modo think rechazan siguiendo direcciones distintas) y se eliminó un subespacio de rechazo de rango 2 proyectándolo fuera de las escrituras al flujo residual de las 40 capas principales. El resto de tensores (expertos enrutados, embeddings, tablas Engram y capas DSpark/MTP) son idénticos bit a bit al original.
 
-La relevancia es doble. Por un lado, es un caso práctico de ingeniería de representaciones aplicada a un modelo de escala frontera: la card documenta con precisión qué tensores se han editado, con qué método y con qué coste medido en divergencia KL sobre prompts inocuos. Por otro lado, interesa a quien investiga mecanismos de rechazo, evalúa filtros de seguridad o necesita un modelo que no rechace peticiones para tareas de red teaming controlado. No hay datos publicados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) ni de longitud de contexto en la información disponible.
+La relevancia de esta ficha es doble: por un lado documenta una técnica de abliteración más sofisticada que la eliminación de una única dirección de rechazo, con resultados medidos sobre peticiones dañinas retenidas; por otro, es un caso de estudio sobre los riesgos de distribuir pesos sin censura bajo licencia MIT, ya que el modelo, según su propia model card, cumplirá peticiones dañinas y la responsabilidad de uso recae enteramente en quien lo despliega.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (etiqueta `deepseek_v41`), con expertos enrutados y expertos compartidos; 43 capas (0-42): 40 principales + 3 DSpark/MTP; tablas Engram |
-| Parámetros totales | 763.205.315.794 (~763,2 B), dato de safetensors |
-| Parámetros activos | no disponible |
+| Arquitectura | Transformer con mezcla de expertos (MoE); el modelo base incluye capas DSpark/MTP (capas 40-42) y tablas Engram |
+| Parametros totales | 763.205.315.794 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | FP8 block-scaled (8 bits) en safetensors; GGUF Q8_0 (usado para medir la ablación); LoRA rank-2 en GGUF |
+| Tipos de cuantizacion | FP8 (8-bit) en el checkpoint publicado; GGUF Q8_0 disponible para el modelo base y para la LoRA de ablación |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (FP8, `model-*.safetensors` con el mismo índice que el original) y GGUF |
-| Tamaño del repositorio | 510,3 GB |
-| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-17 |
+| Formato de pesos | safetensors (checkpoint FP8 parcheado) y GGUF (LoRA de ablación en `abliteration-lora.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base, sin cambios estructurales: un transformer MoE con expertos enrutados, expertos compartidos por capa, tablas Engram y tres capas finales DSpark/MTP orientadas a predicción multi-token. La card identifica explícitamente los puntos de escritura al residual stream que se han editado (`attn.wo_b` y `ffn.shared_experts.w2`) en las 40 capas principales, lo que confirma atención con proyección de salida y un bloque FFN con expertos compartidos. No se ha realizado ningún entrenamiento adicional: no hay datos sobre tokens de preentrenamiento, composición del dataset, RLHF ni DPO en la información proporcionada.
+El modelo base es un transformer con mezcla de expertos (MoE) según la información disponible: la model card menciona explícitamente "routed experts", "shared experts" (`ffn.shared_experts.w2`) y capas Engram, además de capas DSpark/MTP en las posiciones 40 a 42. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original, ya que la información proporcionada no los incluye.
 
-La innovación técnica está en el método de ablación. En lugar de una única dirección de rechazo, se midió una dirección por capa y por modo (chat y modo think) sobre el GGUF Q8_0, y se calculó un subespacio de rechazo de rango 2 a partir de los vectores singulares principales de todas esas direcciones. Ese subespacio se proyectó fuera de las escrituras al residual stream de las 40 capas principales, con una intensidad por capa obtenida mediante búsqueda multiobjetivo: minimizar rechazos y mantener baja la KL del primer token en prompts inocuos. Los expertos enrutados, los embeddings, las tablas Engram y las capas 40-42 son bit a bit idénticos al original. Los tensores editados se recuantizaron a FP8 con sus escalas de bloque originales usando redondeo estocástico para que el redondeo no deshiciera la edición. La edición es reproducible: `abliteration-edit.npz` contiene la base del subespacio Q y las intensidades por capa, con la fórmula W' = W − s·QQᵀW, y `abliteration-lora.gguf` aplica el mismo cambio a los GGUF originales.
+La innovación técnica de esta variante es el método de ablación. En lugar de restar una única dirección de rechazo, se midieron direcciones de rechazo por separado para prompts de chat y de modo think en cada capa, sobre el GGUF Q8_0. El subespacio eliminado son los principales vectores singulares del conjunto de todas esas direcciones, de rango 2. Ese subespacio se proyectó fuera de las escrituras al flujo residual de las 40 capas principales, concretamente en `attn.wo_b` y `ffn.shared_experts.w2`, con una intensidad distinta por capa. Las intensidades se obtuvieron mediante una búsqueda multiobjetivo que minimiza los rechazos manteniendo baja la KL del primer token en prompts inofensivos. Los tensores editados se recuantizaron a FP8 con sus escalas de bloque originales usando redondeo estocástico para que la eliminación no se deshiciera por el redondeo.
 
 ## Capacidades
 
-- Generación de texto en dos modos diferenciados: modo chat y modo think (razonamiento explícito), tal como se describen en la card al medir el rechazo por separado.
-- Razonamiento multi-paso en modo think, con cabeza de razonamiento evaluable de forma independiente a la respuesta final.
-- Cumplimiento de peticiones dañinas: se elimina deliberadamente el comportamiento de rechazo (4/100 rechazos en chat, 9/100 en modo think sobre el conjunto de evaluación del autor).
-- Predicción multi-token mediante las capas DSpark/MTP (40-42) del modelo base.
-- Compatibilidad de carga con el modelo original: mismos ficheros, mismo índice y mismo layout FP8.
-- Aplicación de la misma edición sobre GGUF de terceros mediante LoRA de rango 2 en llama.cpp.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponible en la información proporcionada.
-- Cobertura multilingüe: no disponible en la información proporcionada.
+- Generación de texto y razonamiento en modo chat y en modo think (razonamiento explícito), según se desprende de la evaluación por separado de ambos modos.
+- Cumplimiento de peticiones que el modelo base rechazaba: la tasa de rechazo baja de 97/100 a 4/100 en chat y de 98/100 a 9/100 en modo think sobre el conjunto de prueba del autor.
+- Conservación de las capacidades del modelo base en el resto de tensores, que son idénticos bit a bit (expertos enrutados, embeddings, Engram, DSpark/MTP).
+- Compatibilidad de carga con el modelo original: mismo índice de safetensors, mismo layout FP8 y mismos ficheros.
+- Aplicación de la misma edición sobre los GGUF originales mediante una LoRA de rango 2 (`abliteration-lora.gguf`) en `llama-server`.
+- No disponible: soporte de tool calling, capacidades multimodales, audio, agentes multi-paso o multilingüismo, ya que la información proporcionada no los detalla.
 
 ## Casos de uso
 
-- Red teaming y evaluación de seguridad: sirve como generador adversario controlado para probar clasificadores de contenido y filtros de moderación, usando el modo chat para obtener cumplimiento directo y el modo think para respuestas más elaboradas.
-- Investigación en ingeniería de representaciones: la publicación incluye la base del subespacio Q y las intensidades por capa en `abliteration-edit.npz`, lo que permite replicar el experimento, variar el rango del subespacio o comparar el efecto de editar `attn.wo_b` frente a `ffn.shared_experts.w2`.
-- Análisis de mecanismos de rechazo: comparar activaciones y direcciones entre el original y esta versión en las 40 capas principales, con la ventaja de que el resto de tensores son idénticos bit a bit y actúan como control.
-- Generación de datos de entrenamiento para moderación: producir pares de petición-respuesta no rechazada que alimenten clasificadores de daño o datasets de preferencias sobre contenido sensible.
-- Escritura de ficción sin restricciones: narrativa con violencia, temas médicos, legales o de seguridad donde el modelo base tiende a rechazar por forma y no por contenido real.
-- Investigación académica sobre utilidad y daño: medir si la eliminación del rechazo degrada capacidades con la métrica disponible (KL de 0,067 en el primer token sobre prompts inocuos) y diseñar evaluaciones propias de calidad.
-- Despliegue autoalojado de gran escala en FP8: al conservar el layout del original, se puede servir con el mismo stack (vLLM, SGLang, llama.cpp) si se dispone de un clúster multi-GPU equivalente.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar empíricamente cómo se distribuye el comportamiento de rechazo en un modelo grande (direcciones separadas para chat y think) y evaluar hasta qué punto una proyección de rango 2 elimina ese comportamiento, con métricas de KL sobre prompts inofensivos.
+- Evaluación de robustez de filtros de seguridad: desplegar este modelo como generador adversario para probar clasificadores de contenido, moderadores y guardrails, midiendo qué proporción de peticiones dañinas logran respuesta y con qué calidad.
+- Reproducción de la técnica de abliteración: el fichero `abliteration-edit.npz` contiene la base del subespacio `Q` y las intensidades por capa, lo que permite reproducir la edición (`W' = W - s·QQᵀW`) sobre otros checkpoints o estudiar la sensibilidad de cada capa.
+- Aplicación de la LoRA sobre GGUF existentes: con `llama-server -m DeepSeek-V4.1-Flash-1017-Q8_0-00001-of-00010.gguf --lora abliteration-lora.gguf` se obtiene el mismo comportamiento sin necesidad de descargar el checkpoint FP8 completo de 510 GB.
+- Estudio de la fidelidad del modelo base: comparar las salidas del original y de la variante ablacionada en tareas benignas (primer token, KL de 0,067) para cuantificar el coste de la intervención en calidad y coherencia.
+- Docencia y divulgación técnica: ilustrar en un curso o artículo cómo se mide una dirección en el espacio de activaciones, cómo se construye un subespacio de rango 2 y cómo se recuantiza a FP8 sin destruir la edición.
+- Despliegue en pipelines de generación de texto sin restricciones de contenido, siempre que el operador asuma la responsabilidad legal y ética del uso, dado que la licencia MIT lo permite pero el modelo cumplirá peticiones dañinas.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados son las métricas de la ablación, medidas sobre GGUF Q8_0 con decodificación greedy, con 100 prompts dañinos reservados y 384 tokens generados por prompt:
+Resultados publicados por el autor sobre GGUF Q8_0 con decodificación greedy. El conjunto son 100 prompts dañinos retenidos, con 384 tokens generados por prompt; en modo think el razonamiento normalmente no había terminado en ese límite, por lo que se juzgó el propio texto de razonamiento.
 
-| Métrica | Original | Abliterated |
+| Metrica | Original | Abliterated |
 |---|---|---|
-| Rechazos en chat (de 100) | 97 | 4 |
-| Rechazos en modo think (cabezas de razonamiento, de 100) | 98 | 9 |
-| KL del primer token en prompts inocuos | 0 | 0,067 |
+| Rechazos en chat (/100) | 97 | 4 |
+| Rechazos en modo think, cabezas de razonamiento (/100) | 98 | 9 |
+| KL del primer token en prompts inofensivos | 0 | 0,067 |
 
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K, MATH u otros) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso de los pesos en FP8: aproximadamente 763 GB solo para parámetros (estimación aritmética a partir de 763,2 B × 1 byte), más escalas de bloque, buffers y caché KV. El repositorio publicado ocupa 510,3 GB, por debajo de esa cifra teórica; conviene verificar la integridad de los shards antes de desplegar.
-- Alternativa GGUF Q8_0: aproximadamente 810 GB estimados (unos 8,5 bits por parámetro). La propia card referencia el fichero en 10 shards (`...-Q8_0-00001-of-00010.gguf`).
-- BF16: no publicado; serían unos 1,5 TB estimados. No es un formato de despliegue realista para este tamaño.
-- GPU recomendadas: clúster multi-GPU de centro de datos. Con H100 de 80 GB hacen falta del orden de 10-12 unidades para FP8 con margen para caché KV; con H200 de 141 GB, del orden de 7-8. Cifras estimadas por tamaño, no verificadas por el autor.
-- GPU de consumo: no cabe. Ni una RTX 4090 (24 GB) ni una RTX 6000 Ada (48 GB) pueden alojar el modelo, ni siquiera con cuantizaciones agresivas no publicadas.
-- Opciones de despliegue: vLLM y SGLang para el checkpoint FP8; llama.cpp / `llama-server` para el GGUF Q8_0, con la posibilidad de aplicar `abliteration-lora.gguf` sobre los GGUF del modelo original mediante `--lora`. TGI: no confirmado en la información disponible.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de TTFT.
+- VRAM estimada para inferencia: el checkpoint FP8 ocupa 510,3 GB en disco, por lo que en FP8 necesita del orden de 510 GB de memoria de acelerador; en Q8_0 GGUF el requisito es similar. No se dispone de estimaciones para cuantizaciones menores.
+- GPU recomendadas: no disponibles en la información proporcionada. Por el tamaño, un despliegue en FP8 requiere múltiples aceleradores de gama alta (varias A100/H100 de 80 GB) o nodos con memoria unificada; no cabe en una sola GPU de consumo.
+- GPU de consumo: no cabe en ninguna GPU de consumo actual (RTX 4090 con 24 GB, etc.) en FP8 ni en Q8_0.
+- Opciones de despliegue: `llama-server` de llama.cpp con el GGUF Q8_0 y la LoRA `abliteration-lora.gguf`; el checkpoint safetensors FP8 se carga en los mismos entornos que el modelo original (no se detallan en la información disponible).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Contexto | Rechazos (chat) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rechazos (chat /100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (base) | 763,2 B (según este repo) | no disponible | 97/100 | MIT (según metadatos) | público en Hugging Face |
-| DeepSeek-V4.1-Flash-1017-abliterated | 763,2 B | no disponible | 4/100 | MIT | público en Hugging Face, 0 descargas |
-| Otras variantes abliterated de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
+| DeepSeek-V4.1-Flash-1017 (original) | 763.205.315.794 | no disponible | 97 | no disponible en la informacion | Hugging Face (deepseek-ai) |
+| DeepSeek-V4.1-Flash-1017-abliterated | 763.205.315.794 | no disponible | 4 | MIT | Hugging Face (mrfakename) |
 
-La comparación relevante es contra el modelo base, porque comparten arquitectura, formato y (salvo los tensores editados) pesos idénticos. No se dispone de datos de benchmarks de capacidad para ninguno de los dos, así que no es posible cuantificar la degradación más allá de la KL de 0,067 en el primer token sobre prompts inocuos.
+No se dispone de información sobre otros modelos comparables de la misma categoría (mismo tamaño o misma tarea de abliteración) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo cumplirá peticiones dañinas de forma deliberada. La propia card lo advierte y traslada toda la responsabilidad de uso al operador. No debe exponerse a usuarios finales sin una capa de moderación externa.
-- Elimina el rechazo, no la capacidad de daño: sigue siendo un modelo de 763 B capaz de generar instrucciones operativas peligrosas en ámbitos como armas, malware o química.
-- El rechazo residual no es cero: 4/100 en chat y 9/100 en modo think. Además, la card señala derivas semánticas en modo think (por ejemplo, una petición sobre artefactos explosivos caseros reformulada como bomba de baño), lo que indica que la edición no es limpia en todos los casos.
-- La KL de 0,067 en el primer token sobre prompts inocuos implica una desviación medible en la distribución de salida incluso en entradas benignas; el autor reconoce que parte de esa cifra es ruido de inferencia por lotes. No hay evaluación de si esa desviación degrada razonamiento, código o matemáticas.
-- Sin datos de benchmarks de capacidad, idiomas, contexto ni parámetros activos. Cualquier decisión de producción basada en rendimiento requiere evaluación propia.
-- Señales de validación débiles: 0 descargas, 0 likes, sin pipeline declarado, sin idiomas declarados y creado y actualizado con 20 minutos de diferencia. Es un artefacto de investigación, no un modelo con historial de uso.
-- Discrepancia de tamaño: 510,3 GB publicados frente a ~763 GB teóricos en FP8. Verificar shards, índice y posible cuantización parcial antes de asumir que el checkpoint está completo.
-- Licencia MIT declarada en los metadatos de Hugging Face para este repo; conviene confirmar la licencia efectiva del modelo base antes de uso comercial, ya que la card no la reproduce.
-- El sesgo del modelo base no se elimina con la ablación: sigue presente y ahora sin el filtro de rechazo que parcialmente lo contenía. No hay evaluación de sesgos en la información disponible.
-- La recuantización a FP8 con redondeo estocástico introduce una fuente adicional de variación frente al original; la edición no es bit a bit reproducible en el dominio de los tensores editados.
+- El modelo cumplirá peticiones dañinas de forma deliberada; la model card lo declara explícitamente y traslada toda la responsabilidad de uso al operador.
+- La eliminación no es completa: en modo think quedan 9/100 rechazos y algunas respuestas derivan la petición hacia algo inocuo (el ejemplo citado es "bomba con objetos domésticos" convertido en bomba de baño).
+- El coste medido en comportamiento benigno es una KL de 0,067 en el primer token, que incluye un pequeño ruido de base por inferencia por lotes; puede haber deriva adicional en generaciones largas no medida en la información disponible.
+- No hay datos publicados de sesgos, tasas de alucinación ni evaluación multilingüe para esta variante.
+- La licencia MIT permite uso comercial, pero la ausencia de filtros de seguridad hace que el despliegue en producción requiera guardrails externos propios.
+- El tamaño de 763.205.315.794 parámetros y 510,3 GB de checkpoint limita el despliegue a infraestructura multi-GPU o memoria unificada; no es viable en hardware de consumo.
+- La información no detalla la longitud de contexto, los idiomas soportados ni el pipeline de la tarea, por lo que no se pueden garantizar esos extremos en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Imagen de resultados de la ablación (stats.png): https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated/blob/main/stats.png
-- LoRA de ablación en GGUF (abliteration-lora.gguf): https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated/blob/main/abliteration-lora.gguf
-- Base del subespacio e intensidades por capa (abliteration-edit.npz): https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated/blob/main/abliteration-edit.npz
-- Paper, blog técnico o repositorio adicional: no disponible en la información proporcionada.
+- Hilo de Reddit con pruebas comparativas: https://www.reddit.com/r/LocalLLaMA/comments/1xyv1oc/deepseek_v41_flash_1017_vs_mrfakename_abliterated/
+- Discord del autor: https://discord.com/invite/foss

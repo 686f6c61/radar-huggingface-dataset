@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "K-B21/regresion-casas-pytorch",
+  "slug": "k-b21-regresion-casas-pytorch",
+  "author": "K-B21",
+  "url": "https://huggingface.co/K-B21/regresion-casas-pytorch",
+  "created_at": "2026-11-19T00:14:43.000Z",
+  "updated_at": "2026-11-19T00:15:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "pytorch",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4,
+  "parameters_human": "4",
+  "storage_bytes": 160,
+  "storage_human": "160 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ALLIE.1.0-2b-FP16-GGUF",
+  "slug": "mradermacher-allie-1-0-2b-fp16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ALLIE.1.0-2b-FP16-GGUF",
+  "created_at": "2026-11-18T20:50:27.000Z",
+  "updated_at": "2026-11-18T20:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:thiennhat/ALLIE.1.0-2b-FP16",
+    "base_model:quantized:thiennhat/ALLIE.1.0-2b-FP16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 331416576,
+  "parameters_human": "331.4M",
+  "storage_bytes": 1032891200,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": "thiennhat/ALLIE.1.0-2b-FP16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

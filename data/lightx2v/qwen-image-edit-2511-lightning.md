@@ -2,80 +2,89 @@
 
 ## Resumen
 
-Qwen-Image-Edit-2511-Lightning es una colección de modelos optimizados para edición de imágenes, desarrollada por el equipo de lightx2v (vinculado al grupo ModelTC). El proyecto parte del modelo base Qwen/Qwen-Image-Edit-2511 y aplica técnicas de destilación de pasos y cuantización para reducir drásticamente el coste computacional de la inferencia. El resultado es un conjunto de archivos que permiten realizar ediciones de imágenes en tan solo 4 pasos de muestreo, frente a los 40 pasos típicos del modelo original, logrando una aceleración aproximada de 10 veces.
+Qwen-Image-Edit-2511-Lightning es una colección de adaptadores LoRA de destilación por pasos y de un checkpoint cuantizado en FP8 para el modelo de edición de imagen Qwen/Qwen-Image-Edit-2511, publicada por el equipo lightx2v (vinculado al proyecto ModelTC). No es un modelo base nuevo, sino un conjunto de artefactos de aceleración que reducen la inferencia del modelo original de 40 pasos a solo 4, manteniendo la calidad de edición de imagen. Su relevancia actual radica en que permite desplegar edición de imagen de alta fidelidad con una latencia y un consumo de VRAM mucho menores, lo que facilita su uso en producción y en hardware de gama más modesta.
 
-El repositorio incluye tres variantes principales: dos LoRA destiladas (en BF16 y FP32) y un modelo base cuantizado en FP8 que ya incorpora la destilación fusionada. Esta combinación aborda dos problemas clave en la adopción de modelos de difusión para edición de imágenes: la latencia excesiva en entornos de producción y los elevados requisitos de memoria GPU. La licencia Apache 2.0 facilita su uso comercial, y su compatibilidad con frameworks como ComfyUI, Qwen-Image-Lightning y LightX2V amplía su integración en flujos de trabajo existentes.
+El repositorio contiene tres ficheros: dos LoRA destilados a 4 pasos (en BF16 y FP32) y un modelo base cuantizado en FP8 (e4m3fn con escalado) que ya incorpora el LoRA destilado fusionado. El modelo base subyacente, Qwen-Image-Edit-2511, es un modelo de difusión para edición de imagen (pipeline image-to-image y text-to-image) desarrollado por el equipo Qwen de Alibaba. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-## Especificaciones técnicas
+La ficha se centra en las características de estos artefactos de aceleración y en cómo se integran con el modelo base, ya que la información disponible describe principalmente el proceso de destilación y cuantización, no los detalles arquitectónicos internos del transformer de difusión original.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión para edición de imágenes (basado en Qwen-Image-Edit-2511) |
+| Arquitectura | Modelo de difusión (edición de imagen) sobre el transformer de Qwen-Image-Edit-2511; los artefactos son LoRA de destilación y checkpoint FP8 |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de imágenes) |
-| Tipos de cuantizacion | BF16, FP32, FP8 (e4m3fn scaled) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16, FP32 (LoRA); FP8 e4m3fn con escalado (checkpoint base cuantizado) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (archivos individuales: LoRA y modelo fusionado) |
+| Formato de pesos | safetensors (diffusers, diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo Qwen-Image-Edit-2511, un modelo de difusión de última generación para tareas de edición de imágenes guiadas por texto. La contribución principal de esta variante Lightning es la destilación de pasos: mediante un proceso de destilación (probablemente basado en técnicas como progressive distillation o consistency models), se entrena una LoRA que reduce el número de pasos de muestreo necesarios de 40 a 4, manteniendo una calidad visual aceptable. Esta LoRA se ofrece en dos precisiones (BF16 y FP32) para equilibrar precisión y velocidad.
+El modelo base Qwen-Image-Edit-2511 es un modelo de difusión para edición de imagen condicionada por texto e imagen, del que esta ficha no detalla la arquitectura interna (no disponible en la información proporcionada). Los artefactos publicados en este repositorio son de dos tipos. Por un lado, LoRA de destilación por pasos entrenados para reducir el número de pasos de muestreo de 40 a 4, con versiones en BF16 y FP32. Por otro, un checkpoint del modelo base cuantizado en FP8 (e4m3fn con escalado) que fusiona el LoRA destilado de 4 pasos, pensado para despliegues con memoria limitada.
 
-Además, se proporciona un modelo base cuantizado en FP8 (formato e4m3fn con escala) que ya incluye la LoRA destilada fusionada. Esta cuantización reduce el uso de memoria GPU en aproximadamente un 50% en comparación con FP32, según la documentación del autor. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens o el proceso de destilación específico (p. ej., si se usó RLHF o DPO), por lo que estos datos no están disponibles.
+La innovación principal es la destilación de pasos, que según la model card logra una aceleración de aproximadamente 10x frente a la inferencia estándar de 40 pasos preservando la calidad de edición. La cuantización FP8 reduce el uso de VRAM en torno a un 50% respecto a FP32 manteniendo la fidelidad de edición. No se especifican en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Edición de imágenes guiada por texto: modificación de atributos, objetos, estilo y composición mediante instrucciones en lenguaje natural.
-- Generación de imágenes desde cero (text-to-image), según las etiquetas del pipeline.
-- Inferencia en 4 pasos de muestreo, lo que permite tiempos de respuesta casi en tiempo real en GPUs adecuadas.
-- Soporte para cuantización FP8, reduciendo el consumo de memoria sin sacrificar excesivamente la fidelidad.
-- Compatible con ComfyUI, Qwen-Image-Lightning y LightX2V, facilitando la integración en pipelines de generación y edición.
-- Al estar basado en Qwen-Image-Edit-2511, hereda las capacidades multilingües de comprensión de instrucciones del modelo base, aunque no se especifican los idiomas exactos.
+- Edición de imagen condicionada por instrucciones de texto e imagen de entrada (pipeline image-to-image).
+- Generación de imagen texto-a-imagen, según las etiquetas del repositorio.
+- Inferencia acelerada en 4 pasos mediante destilación, frente a los 40 pasos del modelo base.
+- Despliegue de bajo consumo de memoria mediante el checkpoint cuantizado en FP8.
+- Compatibilidad con ComfyUI (etiqueta comfyui y formato diffusion-single-file).
+- Compatibilidad con los frameworks Qwen-Image-Lightning y LightX2V.
+- Soporte de tool calling, agentes, razonamiento multi-paso, visión, audio o modo thinking: no disponible (no es un modelo de lenguaje).
 
 ## Casos de uso
 
-- Edición de imágenes en tiempo real para aplicaciones de diseño: los 4 pasos de inferencia permiten iterar rápidamente sobre borradores visuales, ajustando colores, fondos o elementos concretos sin esperas prolongadas.
-- Automatización de retoques fotográficos en entornos de producción: con la variante FP8, es viable desplegar el modelo en GPUs con memoria limitada (p. ej., RTX 3060 o similares) para procesar lotes de imágenes de forma eficiente.
-- Generación de variantes de producto para comercio electrónico: dado un producto base, se pueden generar múltiples fondos, estilos o ángulos con instrucciones de texto, acelerando la creación de catálogos.
-- Asistentes de diseño conversacionales: integrado en un chatbot, el modelo puede interpretar peticiones del usuario ("cambia el cielo a un atardecer", "haz que el coche sea rojo") y devolver la imagen editada en segundos.
-- Preprocesamiento de datos para entrenamiento de otros modelos: la edición rápida permite sintetizar pares de imagen-entrada/salida para fine-tuning de modelos de visión o para aumentar datasets.
-- Creación de contenido para marketing y redes sociales: los equipos creativos pueden generar variaciones de imágenes para campañas sin depender de herramientas de edición manual, reduciendo el tiempo de producción.
+- Edición de imágenes por lotes en producción: con 4 pasos de inferencia en lugar de 40, el coste por imagen se reduce aproximadamente 10x, lo que hace viable procesar grandes volúmenes de imágenes en pipelines automatizados de retoque o sustitución de fondos.
+- Despliegue en GPU de gama consumer: el checkpoint FP8 reduce el uso de VRAM en torno a un 50%, permitiendo ejecutar edición de imagen en tarjetas con menos memoria que las necesarias para el modelo base en FP32.
+- Integración en flujos de trabajo de ComfyUI: el formato diffusion-single-file y la etiqueta comfyui permiten cargar los artefactos directamente en grafos de ComfyUI para prototipado rápido de edición de imagen.
+- Servicios interactivos de edición de imagen: la baja latencia de la inferencia a 4 pasos es adecuada para aplicaciones donde el usuario espera respuesta casi inmediata tras una instrucción de edición.
+- Investigación en destilación de modelos de difusión: los LoRA destilados en BF16 y FP32 sirven como referencia para estudiar el equilibrio entre número de pasos, precisión y calidad de edición.
+- Prototipado de herramientas creativas: combinado con el framework LightX2V, permite construir demos de edición de imagen guiada por texto con requisitos de hardware moderados.
+- Evaluación comparativa de cuantización: el checkpoint FP8 fusionado con el LoRA permite medir en la práctica la pérdida de fidelidad frente a las versiones BF16/FP32.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor menciona una aceleración aproximada de 10 veces frente a la inferencia estándar de 40 pasos, y una reducción de memoria de ~50% con FP8 respecto a FP32, pero no se ofrecen cifras concretas de calidad (p. ej., FID, CLIP score) ni comparativas con otros modelos de edición.
+No se han publicado resultados de benchmarks en la información disponible. La model card solo cuantifica la aceleración aproximada (10x frente a 40 pasos) y la reducción de VRAM (en torno al 50% frente a FP32), sin métricas de calidad objetivas como FID, CLIP score o similares.
 
 ## Requisitos de hardware
 
-- La variante FP8 está diseñada para reducir el consumo de memoria GPU en aproximadamente un 50% en comparación con FP32, lo que la hace adecuada para GPUs de gama media (p. ej., RTX 3060, RTX 4060) siempre que el modelo base completo quepa en VRAM. El tamaño exacto del modelo no se especifica, pero el repositorio ocupa 107.7 GB en total (incluyendo las tres variantes).
-- Las variantes LoRA (BF16/FP32) requieren el modelo base Qwen-Image-Edit-2511, que debe cargarse por separado; el consumo de VRAM dependerá del tamaño de dicho modelo (no disponible en la información).
-- Para inferencia en 4 pasos, se recomienda una GPU con al menos 16 GB de VRAM para la versión FP8, aunque el dato exacto no está confirmado.
-- Opciones de despliegue: compatible con ComfyUI, Qwen-Image-Lightning (GitHub) y LightX2V (GitHub). No se menciona soporte directo para vLLM u Ollama, dado que no es un modelo de lenguaje.
-- La latencia estimada no se ha publicado; la aceleración de 10x se refiere al número de pasos, no al tiempo absoluto, que depende del hardware.
+- VRAM estimada: no disponible de forma numérica; la model card indica una reducción de aproximadamente el 50% con FP8 respecto a FP32.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU consumer: no confirmada explícitamente; el objetivo declarado del checkpoint FP8 es el despliegue con poca memoria, pero no se especifican modelos concretos.
+- Opciones de despliegue: framework Qwen-Image-Lightning, framework LightX2V, ComfyUI y diffusers.
+- Latencia y throughput: no disponibles; solo se indica la aceleración relativa de aproximadamente 10x por la reducción de 40 a 4 pasos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Pasos de inferencia | Precisión | Memoria GPU | Licencia |
-|---|---|---|---|---|
-| Qwen-Image-Edit-2511 (base) | 40 | BF16/FP32 | Alta | Apache 2.0 |
-| Qwen-Image-Edit-2511-Lightning (este) | 4 | BF16/FP32/FP8 | Reducida (FP8) | Apache 2.0 |
+| Modelo | Tipo | Pasos de inferencia | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen-Image-Edit-2511-Lightning | LoRA destilado + checkpoint FP8 | 4 | BF16, FP32, FP8 | Apache 2.0 | Hugging Face (lightx2v) |
+| Qwen/Qwen-Image-Edit-2511 (base) | Modelo de difusión de edición | 40 (estándar) | no disponible | no disponible | Hugging Face (Qwen) |
+| Alternativas de destilación de difusión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información suficiente para comparar con otros modelos de edición de imágenes como InstructPix2Pix o FLUX.1 Kontext, ya que no se han publicado métricas de rendimiento ni requisitos detallados.
+No se dispone de información sobre otros modelos comparables de destilación para Qwen-Image-Edit en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos, pero al derivar de Qwen-Image-Edit-2511, puede heredar sesgos presentes en los datos de entrenamiento del modelo base.
-- La destilación a 4 pasos puede reducir la fidelidad en tareas complejas o con instrucciones ambiguas; se recomienda validar la calidad en casos de uso concretos.
-- La cuantización FP8 puede introducir artefactos en imágenes de alta resolución o con detalles finos, aunque el autor afirma que se mantiene la fidelidad de edición.
-- El tamaño del repositorio (107.7 GB) puede ser un obstáculo para la descarga en entornos con ancho de banda limitado, aunque los archivos individuales pueden descargarse por separado.
-- La documentación no especifica los idiomas soportados para las instrucciones de texto, lo que puede afectar a la usabilidad en entornos multilingües.
-- Para producción, es necesario verificar la compatibilidad con el framework elegido (ComfyUI, LightX2V) y realizar pruebas de carga, ya que no se proporcionan guías de despliegue a escala.
+- Al ser artefactos derivados, heredan las limitaciones del modelo base Qwen-Image-Edit-2511, cuyos sesgos y riesgos de generación no se detallan en la información disponible.
+- La destilación a 4 pasos puede introducir pérdida de calidad o de fidelidad en ediciones complejas frente a los 40 pasos originales; no se aportan métricas que lo cuantifiquen.
+- La cuantización FP8 puede degradar la fidelidad de edición respecto a BF16/FP32; la model card no ofrece comparativas numéricas.
+- No se especifican los idiomas soportados para las instrucciones de edición.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base Qwen-Image-Edit-2511 antes de desplegar en producción.
+- El tamaño del repositorio (107,7 GB) implica requisitos de almacenamiento considerables.
+- No hay información sobre latencia absoluta, throughput ni hardware mínimo verificado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning
-- Repositorio Qwen-Image-Lightning: https://github.com/ModelTC/Qwen-Image-Lightning/
-- Documentación de LightX2V para Qwen Image Edit: https://github.com/ModelTC/LightX2V/blob/main/examples/qwen_image/README.md
-- Repositorio LightX2V (para issues): https://github.com/ModelTC/LightX2V/issues
+- [Hugging Face: lightx2v/Qwen-Image-Edit-2511-Lightning](https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning)
+- [Modelo base: Qwen/Qwen-Image-Edit-2511](https://huggingface.co/Qwen/Qwen-Image-Edit-2511)
+- [Repositorio Qwen-Image-Lightning](https://github.com/ModelTC/Qwen-Image-Lightning/)
+- [Documentación de LightX2V para Qwen Image Edit](https://github.com/ModelTC/LightX2V/blob/main/scripts/qwen_image/README.md)
+- [Repositorio LightX2V](https://github.com/ModelTC/LightX2V)
+- [Issues de Qwen-Image-Lightning](https://github.com/ModelTC/Qwen-Image-Lightning/issues)
+- [Issues de LightX2V](https://github.com/ModelTC/LightX2V/issues)

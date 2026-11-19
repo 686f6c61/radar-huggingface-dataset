@@ -2,124 +2,103 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4 es un modelo de lenguaje desarrollado por NVIDIA dentro de su línea Nemotron Labs. Su rasgo distintivo es la arquitectura: un modelo denso con bucle latente (looped LM) sobre un backbone normalized-GPT (nGPT), en el que un bloque recurrente de 20 capas se aplica repetidamente entre un bloque de entrada y otro de salida de 8 capas cada uno, con reinyección de la entrada en cada bucle.
+NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4 es un modelo de lenguaje de 4.000 millones de parametros desarrollado por NVIDIA dentro de su linea Nemotron Labs. Su rasgo distintivo es que no se trata de un transformer convencional, sino de un modelo "looped" (recurrente latente) construido sobre una arquitectura normalized-GPT (nGPT) en la que un bloque compartido de capas se aplica varias veces entre un bloque de entrada y otro de salida. Esto permite escalar el computo de inferencia por token sin cambiar de checkpoint: el mismo modelo puede ejecutarse con 1, 2 o 4 bucles segun el presupuesto de computo disponible.
 
-Este checkpoint concreto está cuantizado en NVFP4, el formato de coma flotante de 4 bits de NVIDIA, y se distribuye también en BF16, MXFP8 y Q5_K_M. Soporta hasta 256K tokens de contexto, está entrenado únicamente en inglés y se publica bajo la licencia OpenMDW 1.1, que la propia model card describe como apta para uso comercial y no comercial.
+La version publicada en este repositorio es la cuantizada en NVFP4, el formato de coma flotante de 4 bits de NVIDIA, y el modelo fue preentrenado de forma nativa en NVFP4 antes de continuar el entrenamiento en BF16. Declara una longitud de contexto de hasta 256K tokens, esta orientado a ingles y se distribuye bajo la licencia OpenMDW 1.1, que permite uso comercial y no comercial.
 
-Su relevancia radica en la combinación de huella pequeña, contexto muy largo y cómputo de inferencia elástico: el mismo checkpoint puede ejecutarse con 1, 2 o 4 bucles según el presupuesto disponible, con mejoras marcadas en tareas de código y agentes (50,3 a 61,8 en SWE-bench Verified al pasar de 1 a 4 bucles) sin necesidad de cambiar de modelo ni reentrenar.
+Su relevancia actual radica en dos frentes: por un lado, demuestra que el preentrenamiento nativo en precision de 4 bits es viable para un modelo de esta escala; por otro, introduce mecanismos como la cache KV de ultimo bucle, que elimina el sobrecoste de memoria tipico de los modelos recurrentes y lo hace atractivo para despliegues con VRAM limitada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Looped (latent-recurrent) normalized-GPT con capas intercaladas de sliding-window attention (SWA) y full attention |
-| Parametros totales | 4B según la model card; el recuento de safetensors del repositorio indica 2.323.722.240 parámetros (la model card no explica la diferencia) |
-| Parametros activos | No aplica: no es un modelo MoE (arquitectura densa con bucle latente) |
+| Arquitectura | Looped (latent-recurrent) normalized-GPT (nGPT) con atencion de ventana deslizante (SWA) y capas de atencion completa intercaladas |
+| Parametros totales | 3.975.229.440 (aproximadamente 4B) |
+| Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Hasta 256K tokens |
-| Tipos de cuantizacion | NVFP4 (este repositorio), BF16, MXFP8 y Q5_K_M (disponibles según la model card). Las etiquetas del repositorio incluyen además "8-bit" y "modelopt" |
-| Idiomas soportados | Inglés (en) |
-| Licencia | OpenMDW License Agreement, version 1.1 (campo `license: other`, `license_name: openmdw-1.1`) |
-| Formato de pesos | safetensors (PyTorch, librería transformers) |
-| Precision de preentrenamiento | NVFP4 nativo, con continuación en BF16 |
+| Tipos de cuantizacion | NVFP4 (esta version), MXFP8, BF16 y Q5_K_M disponibles en otros repositorios |
+| Idiomas soportados | Ingles |
+| Licencia | OpenMDW License Agreement, version 1.1 (uso comercial y no comercial) |
+| Formato de pesos | safetensors (libreria transformers) |
+| Precision de entrenamiento | Preentrenamiento nativo en NVFP4, continuacion en BF16 |
 | Fecha de publicacion | 16 de octubre de 2026 |
-| Fecha de corte de datos | Preentrenamiento: septiembre de 2025. Postentrenamiento: mayo de 2026 |
 | Tamano del repositorio | 3,2 GB |
-| Pipeline | text-generation |
-| Datasets de entrenamiento | nvidia/nemotron-post-training-v3, nvidia/nemotron-pre-training-datasets |
 
 ## Arquitectura y entrenamiento
 
-Dory1.0-4B emplea un backbone normalized-GPT (nGPT) con una pila de capas dividida en tres grupos: un bloque de entrada (I) de 8 capas, un bloque recurrente (R) de 20 capas y un bloque de salida (O) de 8 capas. El bloque recurrente se comparte y se aplica varias veces entre la entrada y la salida, y la entrada se reinjecta en cada iteración del bucle. La atención combina capas de sliding-window attention y de atención completa de forma intercalada. El modelo se preentrenó de forma nativa en NVFP4, el formato de coma flotante de 4 bits de NVIDIA, y posteriormente continuó su entrenamiento en BF16.
+Dory1.0-4B emplea una arquitectura nGPT con un esquema de apilamiento dividido en tres grupos: un bloque de entrada (I) de 8 capas, un bloque recurrente (R) de 20 capas que se reaplica varias veces y un bloque de salida (O) de 8 capas, con la entrada reinjectada en cada bucle. La atencion combina capas de ventana deslizante con capas de atencion completa, lo que reduce el coste de atencion en contextos largos sin renunciar por completo al alcance global. El numero de bucles es un hiperparametro de inferencia: 1, 2 o 4 aplicaciones del bloque recurrente producen distintos niveles de precision sin reentrenar ni cambiar de pesos.
 
-La innovación principal es el cómputo de inferencia elástico: como el bloque recurrente es compartido, variar el número de bucles permite ajustar el cómputo por token sin reentrenar ni cambiar de checkpoint. La model card indica además que el modelo es más eficiente en tokens, ya que el cómputo adicional se invierte en "pensar" en espacio latente en lugar de generar salidas más largas. En el plano de memoria, Dory admite last-loop KV caching, que mantiene una única caché por capa de atención recurrente, de modo que el modelo no arrastra sobrecoste de caché KV respecto a un modelo equivalente sin bucle, con independencia del número de bucles configurado.
-
-No se detallan en la información disponible el número exacto de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron técnicas concretas de RLHF o DPO, más allá de la referencia a los datasets de preentrenamiento y postentrenamiento de Nemotron.
+El modelo fue preentrenado de forma nativa en NVFP4, el formato de 4 bits de NVIDIA, y posteriormente continuo su entrenamiento en BF16. Los datos de preentrenamiento tienen fecha de corte en septiembre de 2025 y los de postentrenamiento en mayo de 2026, y proceden de los conjuntos `nvidia/nemotron-pre-training-datasets` y `nvidia/nemotron-post-training-v3`. La model card no detalla el volumen total de tokens ni la composicion exacta del dataset, ni especifica si se aplicaron tecnicas de RLHF o DPO. La innovacion tecnica mas destacable, ademas del preentrenamiento en 4 bits, es la cache KV de ultimo bucle: en lugar de almacenar una cache por cada bucle, se mantiene una sola por capa de atencion recurrente, de modo que el modelo no incurre en sobrecoste de memoria frente a un modelo no recurrente equivalente, independientemente del numero de bucles.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con etiqueta `conversational` en el repositorio.
-- Razonamiento general con huella reducida, orientado a propósito general según la model card.
-- Generación y razonamiento sobre código: resultados en SciCode (35,11 con 4 bucles) y SWE-bench Verified (61,8 con 4 bucles).
-- uso agéntico en entornos de terminal y resolución de tareas de ingeniería de software: Terminal-Bench 2.1 (22,2 con 4 bucles) y SWE-bench Verified.
-- Interacción con herramientas y flujos de múltiples pasos: el resultado en τ³-bench (Banking) apunta a capacidades agénticas, aunque la model card no documenta explícitamente soporte de tool calling o function calling.
-- Contexto largo de hasta 256K tokens, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
-- Cómputo de inferencia elástico: 1, 2 o 4 bucles sobre el mismo checkpoint para ajustar precisión frente a coste.
-- Capacidad multilingüe: limitada al inglés.
-- No se documentan capacidades de visión, audio ni un modo de "pensamiento" explícito en tokens; el razonamiento adicional ocurre en espacio latente.
+- Generacion de texto y razonamiento general en ingles, con enfasis en tareas de codigo y agenticas segun los benchmarks publicados.
+- Razonamiento en espacio latente: el computo adicional por token se invierte en bucles internos en lugar de en secuencias de salida mas largas, lo que reduce el numero de tokens generados necesarios para resolver una tarea.
+- Inferencia elastica: el mismo checkpoint permite ajustar el presupuesto de computo (1, 2 o 4 bucles) segun la precision requerida y los recursos disponibles.
+- Soporte de contexto largo de hasta 256K tokens, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
+- Capacidad de resolucion de tareas de codigo y agenticas (SciCode, SWE-bench Verified, Terminal-Bench 2.1, tau3-bench) segun los resultados reportados por el autor.
+- Modelo unicamente en ingles; no se declara soporte multilingue.
+- No se documenta en la informacion disponible soporte explicito de tool calling, function calling, vision, audio ni modo thinking separado.
 
 ## Casos de uso
 
-- Agentes de código en producción: con 61,8 en SWE-bench Verified a 4 bucles, el modelo puede integrarse en pipelines de resolución automática de issues y parches, ejecutando 1 bucle para triaje rápido y 4 bucles para parches complejos.
-- Automatización de tareas de terminal y operaciones: los 22,2 puntos en Terminal-Bench 2.1 lo hacen utilizable como agente de shell para tareas de administración, scripts y diagnóstico, siempre con supervisión humana.
-- Análisis de documentos largos en inglés: la ventana de 256K tokens permite procesar contratos, informes técnicos o bases de código completas sin trocear el contexto.
-- Asistentes conversacionales en inglés: el modelo es conversacional y ligero, por lo que puede servir como backend de chat en despliegues con presupuesto de VRAM ajustado.
-- Procesamiento de operaciones bancarias y de back-office: el resultado en τ³-bench (Banking) de 14,69 a 4 bucles sugiere utilidad en flujos estructurados de atención al cliente con reglas y herramientas.
-- Despliegue en hardware de gama de consumo: al estar cuantizado en NVFP4 y ocupar 3,2 GB el repositorio, permite servir inferencia en una única GPU de consumo en lugar de recurrir a clústeres.
-- Enrutado por dificultad en sistemas multi-modelo: usar 1 bucle para consultas triviales y 4 bucles para consultas difíciles permite optimizar coste por petición sin mantener dos modelos distintos.
-- Generación de datos y evaluación interna en inglés: su tamaño reducido y su contexto largo lo hacen adecuado para tareas de anotación y generación sintética a gran escala en pipelines propios.
+- Asistencia de codigo en produccion: con resultados de 61,8 en SWE-bench Verified a 4 bucles, el modelo puede integrarse en flujos de resolucion automatica de issues y generacion de parches sobre repositorios, ajustando el numero de bucles al presupuesto de latencia del pipeline.
+- Agentes de terminal y automatizacion de sistemas: su rendimiento en Terminal-Bench 2.1 (22,2 a 4 bucles) lo hace util para agentes que ejecutan comandos, interpretan salidas y corrigen errores en entornos controlados.
+- Procesamiento de documentos largos: la ventana de 256K tokens permite resumir, extraer entidades o responder preguntas sobre contratos, informes tecnicos o bases de codigo completas en una sola pasada.
+- Razonamiento cientifico y calculo tecnico: los resultados en SciCode (35,11 a 4 bucles) lo sitúan como opcion para asistentes de analisis de datos y generacion de scripts cientificos.
+- Despliegue en hardware limitado: al estar cuantizado en NVFP4 y ocupar 3,2 GB en repositorio, es viable en GPUs de consumo y en entornos de borde donde un modelo de 4B en BF16 no cabria con comodidad.
+- Servicio de atencion al cliente en ingles: la combinacion de contexto largo y bajo coste de memoria por bucle permite mantener conversaciones multi-turno con historial extenso en una sola GPU.
+- Experimentacion en investigacion: la posibilidad de variar el numero de bucles sin cambiar de checkpoint facilita estudios sobre la relacion entre computo de inferencia y calidad, y sobre entrenamiento en precision reducida.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card. La columna de Dory1.0-4B varía según el número de bucles configurado. El símbolo † indica puntuaciones reportadas por terceros.
+Resultados reportados por el autor en la model card:
 
 | Tarea | Dory1.0-4B (1 bucle) | Dory1.0-4B (2 bucles) | Dory1.0-4B (4 bucles) | Qwen3.5-4B | Qwen3.5-9B | Gemma 4 26B A4B | Qwen3.6-35B-A3B |
 |---|---|---|---|---|---|---|---|
 | SciCode | 27,3 | 34,94 | 35,11 | 25,82 | 28,21 | 40,32 | 37,24 |
-| SWE-bench Verified | 50,3 | 59,5 | 61,8 | 54,7 | 61,0 | 57,40 | 73,4† |
+| SWE-bench Verified | 50,3 | 59,5 | 61,8 | 54,7 | 61,0 | 57,40 | 73,4 (reportado) |
 | Terminal-Bench 2.1 | 12,5 | 18,1 | 22,2 | 15 | 24 | 35 | 43 |
-| τ³-bench (Banking) | 11,6 | 12,89 | 14,69 | 5,03 | 7,22 (tabla truncada) | no disponible | no disponible |
+| tau3-bench (Banking) | 11,6 | 12,89 | 14,69 | 5,03 | 7,22 | no disponible | no disponible |
 
-Notas: la tabla de la model card consultada aparece truncada a partir del valor 7,22 de Qwen3.5-9B en τ³-bench (Banking), por lo que el resto de celdas de esa fila figuran aquí como no disponibles. No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de otras evaluaciones de conocimiento general.
+La model card original incluye filas adicionales que no se han reproducido por estar truncadas en la informacion disponible. No se han publicado en la informacion disponible resultados de MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones calculadas a partir del número de parámetros y del formato; NVIDIA no publica requisitos oficiales de hardware en la información disponible.
-
-- Pesos en NVFP4 (este repositorio): en torno a 2-2,5 GB para 4B parámetros a 4 bits más escalas de bloque. Cabe con holgura en cualquier GPU de consumo moderna.
-- Pesos en BF16: aproximadamente 8 GB para 4B parámetros; unos 4,7 GB si se atiende al recuento de safetensors de 2,32B.
-- Pesos en Q5_K_M: aproximadamente 2,8-3,5 GB, según el recuento de parámetros que se tome.
-- Caché KV: la model card indica que con last-loop KV caching activado el modelo no añade sobrecoste de caché KV respecto a un modelo equivalente sin bucle, con independencia del número de bucles. No se publican cifras concretas de memoria de caché para 256K tokens.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño de pesos, una RTX 4090 (24 GB) o superior aloja cualquiera de los formatos con margen amplio; las GPU de 8-12 GB deberían poder ejecutar la variante NVFP4, aunque la aceleración nativa del formato depende del soporte de hardware de la GPU empleada.
-- Despliegue: la librería declarada es transformers. Las etiquetas `modelopt` y `endpoints_compatible` apuntan a checkpoints optimizados con NVIDIA ModelOpt y a compatibilidad con endpoints, y la model card menciona una variante Q5_K_M, lo que abre la puerta a despliegues GGUF (llama.cpp, Ollama). No se incluyen en la información disponible instrucciones detalladas de despliegue ni soporte confirmado en vLLM o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el repositorio NVFP4 ocupa 3,2 GB, por lo que la inferencia en esta precision requiere aproximadamente 4 GB de VRAM mas el espacio de cache KV. Las versiones BF16 y MXFP8 requieren mas memoria (del orden de 8 GB y 4-5 GB respectivamente, estimacion orientativa).
+- GPU recomendadas: GPUs NVIDIA con soporte de NVFP4 (familia Blackwell y posteriores) para aprovechar el formato nativo; GPUs Ampere y Ada pueden ejecutar la version BF16 o Q5_K_M.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM para la version NVFP4; la version BF16 requiere al menos 10-12 GB para contexto moderado.
+- Opciones de despliegue: transformers (libreria declarada), y por formato safetensors es compatible con servidores de inferencia habituales; la model card no confirma integraciones con vLLM, llama.cpp, Ollama o TGI para esta variante NVFP4.
+- Latencia y throughput: no disponibles en la informacion proporcionada. El coste computacional escala con el numero de bucles seleccionado (1, 2 o 4), de modo que la latencia por token crece aproximadamente de forma proporcional al numero de aplicaciones del bloque recurrente.
 
 ## Comparativa con modelos similares
 
-Comparación basada exclusivamente en los datos de la model card. Los parámetros se derivan de los nombres de los modelos comparados; el resto de campos no se detalla en la información disponible.
+| Modelo | Parametros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Dory1.0-4B (4 bucles) | 4B | 256K | 61,8 | OpenMDW 1.1 | Hugging Face (NVFP4, MXFP8, BF16, Q5_K_M) |
+| Qwen3.5-4B | 4B | no disponible | 54,7 | no disponible | no disponible |
+| Qwen3.5-9B | 9B | no disponible | 61,0 | no disponible | no disponible |
+| Gemma 4 26B A4B | 26B (MoE, 4B activos) | no disponible | 57,40 | no disponible | no disponible |
+| Qwen3.6-35B-A3B | 35B (MoE, 3B activos) | no disponible | 73,4 (reportado) | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | SWE-bench Verified | Terminal-Bench 2.1 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Dory1.0-4B (4 bucles) | 4B (model card) / 2,32B (safetensors) | 256K | 61,8 | 22,2 | OpenMDW 1.1 | Hugging Face (nvidia) |
-| Qwen3.5-4B | 4B | no disponible | 54,7 | 15 | no disponible | no disponible |
-| Qwen3.5-9B | 9B | no disponible | 61,0 | 24 | no disponible | no disponible |
-| Gemma 4 26B A4B | 26B (MoE, ~4B activos) | no disponible | 57,40 | 35 | no disponible | no disponible |
-| Qwen3.6-35B-A3B | 35B (MoE, ~3B activos) | no disponible | 73,4† | 43 | no disponible | no disponible |
-
-Lectura de los datos: con 4 bucles, Dory1.0-4B supera a Qwen3.5-4B y a Qwen3.5-9B en SWE-bench Verified, y queda por debajo de Qwen3.6-35B-A3B en esa misma tarea y en Terminal-Bench. En SciCode, Gemma 4 26B A4B y Qwen3.6-35B-A3B obtienen resultados superiores. La ventaja de Dory1.0-4B es el tamaño: compite con modelos de 9B a 26B ocupando una fracción de la memoria.
+Dory1.0-4B iguala o supera a Qwen3.5-9B en SWE-bench Verified con menos de la mitad de parametros cuando se ejecuta a 4 bucles, y supera a Gemma 4 26B A4B en esa misma tarea, aunque queda por detras de Qwen3.6-35B-A3B. En Terminal-Bench 2.1 y SciCode se situa por debajo de los modelos de mayor tamano, lo que es coherente con su escala.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo está entrenado y evaluado únicamente en inglés; no se documenta soporte de castellano ni de otros idiomas.
-- Alucinación: no se publican en la información disponible tasas de alucinación ni evaluaciones de veracidad. Como todo modelo de 4B, el riesgo de fabricación de datos aumenta en dominios especializados.
-- Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad o equidad.
-- Tool calling: la model card no detalla explícitamente soporte de function calling ni el formato esperado de herramientas, pese a los resultados en benchmarks agénticos.
-- Contexto largo: se declara soporte de hasta 256K tokens, pero no se aportan resultados de evaluación específicos para long-context (tipo RULER o similares), por lo que el rendimiento efectivo en ventanas máximas no está verificado.
-- Licencia: OpenMDW 1.1 no es una licencia OSI y aparece etiquetada como `license: other`. La model card indica que el modelo está listo para uso comercial y no comercial, pero conviene revisar el texto completo de la licencia antes de integrarlo en un producto.
-- Discrepancia de parámetros: la model card declara 4B y el recuento de safetensors del repositorio arroja 2.323.722.240 parámetros. La causa no se explica en la información disponible; conviene verificarla antes de dimensionar infraestructura.
-- Madurez del ecosistema: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validación independiente de la comunidad. Tampoco se documentan instrucciones de despliegue en servidores de inferencia habituales.
-- Naturaleza del cómputo: aumentar el número de bucles mejora los resultados, pero incrementa el coste de inferencia. La elección del número de bucles debe validarse por caso de uso y no darse por óptima a 4 por defecto.
-- Fechas: el modelo se publica con fecha de octubre de 2026 y cortes de datos de septiembre de 2025 (preentrenamiento) y mayo de 2026 (postentrenamiento), por lo que no cubre acontecimientos posteriores a esas fechas.
+- Solo soporta ingles; no se declara ni evalua su comportamiento en castellano u otros idiomas.
+- Riesgo de alucinacion inherente a los modelos de 4B: en tareas de razonamiento abierto o dominios especializados puede generar contenido plausible pero incorrecto.
+- El rendimiento depende criticamente del numero de bucles configurado; usar 1 bucle reduce la calidad de forma notable (por ejemplo, SWE-bench cae de 61,8 a 50,3).
+- La cuantizacion NVFP4 puede introducir degradacion adicional frente a la version BF16, especialmente en tareas sensibles a la precision numerica.
+- La licencia OpenMDW 1.1 permite uso comercial, pero conviene revisar sus terminos completos antes de desplegar en produccion.
+- No se documentan en la informacion disponible sesgos especificos, soporte de tool calling ni garantias de robustez frente a prompts adversarios.
+- El contexto de 256K no implica que el modelo mantenga calidad uniforme en todo el rango; no se han publicado evaluaciones de aguja en pajar ni de recuperacion a longitudes maximas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4
+- Pagina de desarrolladores de Nemotron: https://developer.nvidia.com/nemotron
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Texto completo de la licencia OpenMDW 1.1 (repositorio GitHub): https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
-- Página de desarrollador de Nemotron (NVIDIA): https://developer.nvidia.com/nemotron
-- Servidor de Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
-- Datasets de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
-- Datasets de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
-- Sitio corporativo de NVIDIA (resultado genérico de la búsqueda web): https://www.nvidia.com/
-- Entrada de NVIDIA en Wikipedia (resultado genérico de la búsqueda web): https://en.wikipedia.org/wiki/Nvidia
-
-Nota: la búsqueda web realizada no ha devuelto documentación técnica específica sobre Dory1.0-4B (papers, blogs técnicos o demos); los resultados obtenidos son páginas corporativas y genéricas de NVIDIA.
+- Texto de la licencia OpenMDW 1.1: https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
+- Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
+- Dataset de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
+- Dataset de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets

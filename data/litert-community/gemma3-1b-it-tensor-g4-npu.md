@@ -2,115 +2,102 @@
 
 ## Resumen
 
-Gemma3-1B-IT-Tensor-G4-NPU es un artefacto derivado de `google/gemma-3-1b-it` cuantizado y reempaquetado por la comunidad `litert-community` para ejecutarse sobre la NPU Edge TPU «rio» del SoC Google Tensor G4, el chip de los Pixel 9, 9 Pro, 9 Pro XL y 9 Pro Fold. No se distribuye como pesos estándar en safetensors, sino como un bundle `.litertlm` v1 precompilado en formato DarwiNN DGC mediante compilación AOT, pensado para el runtime [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM). El fichero, `Gemma3-1B-IT_int4hadamard_aot_ekv4096_G4.litertlm`, ocupa 874.631.968 bytes (875 MB) y declara una cuota de uso de NPU de aproximadamente el 100 %.
+Gemma3-1B-IT-Tensor-G4-NPU es un paquete cuantizado y recompilado del modelo `google/gemma-3-1b-it`, preparado por el usuario comunitario @xThr45hx bajo la organización `litert-community`. No se trata de un modelo nuevo ni de un reentrenamiento: es un artefacto precompilado (AOT, *ahead-of-time*) en formato `.litertlm` para ejecutarse sobre la NPU Google Tensor Edge TPU de los smartphones Pixel, mediante el runtime LiteRT-LM. El repositorio se creó originalmente con el nombre `Gemma3-1B-IT-Tensor-G4-NPU` y posteriormente pasó a llamarse `Gemma3-1B-IT-Tensor-NPU`, al alojar variantes para varias generaciones de chip.
 
-El problema que resuelve es concreto: permitir inferencia de un modelo de lenguaje de ~1.000 millones de parámetros íntegramente en la NPU de un teléfono, sin GPU, sin nube y con un consumo de almacenamiento reducido. Según su model card, es la primera build pública AOT en int4 para la NPU del Tensor G4 y ocupa aproximadamente la mitad que el otro bundle Gemma 3 1B para Tensor NPU publicado hasta la fecha (`litert-community/Gemma3-1B-IT_q8_ekv1280_Google_Tensor_G5.litertlm`, 1.678 MB), porque usa int4 por canal con rotación Hadamard en lugar de int8.
+El modelo base es un transformer de 26 capas con aproximadamente 1.000 millones de parámetros, ajustado para instrucciones (IT), y en este paquete se distribuye con una ventana de contexto de 4096 tokens y una caché KV embebida. La variante G4 (Pixel 9) usa cuantización int4 por canal con transformada de Hadamard y ocupa unos 875 MB; las variantes G5 y G6 emplean int8 (1,65 GB y 2,11 GB respectivamente) porque la ruta int4 no produce salidas coherentes en el compilador actual para Tensor G6.
 
-Su relevancia es doble. Por un lado, demuestra que un Gemma 3 completo puede compilarse a un único DGC de G4 mediante una cirugía de las capas `FULLY_CONNECTED` de rango 3, que el compilador AOT de DarwiNN rechaza con `OP_FAILED` y que Gemma 3 emite del orden de 360 veces. Por otro, perfila un rendimiento asimétrico: el prefill escala hasta unos 664 tok/s mientras el decode queda clavado en torno a 16 tok/s, lo que lo convierte en una pieza adecuada para cargas con prefill pesado y en un candidato natural a decodificación especulativa.
+Su relevancia es práctica: demuestra inferencia de un LLM de 1B íntegramente en la NPU de un teléfono de consumo, sin GPU ni servidor, con un tamaño a la mitad del bundle int8 oficial de Google para G5. Es un caso de referencia para quien quiera evaluar despliegue on-device en Android con aceleración NPU, aunque su utilidad queda acotada al hardware Tensor y a un runtime específico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 3, 26 capas); artefacto precompilado DarwiNN DGC para Edge TPU |
-| Parametros totales | ~1.000 millones (modelo base `google/gemma-3-1b-it`; cifra exacta no disponible en la ficha) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la ficha; el bundle embebe una KV cache de 4096 tokens (`ekv4096`) |
-| Tipos de cuantizacion | int4 por canal + rotacion Hadamard (todas las FC / BMM / embed). La ficha cita tambien variantes int4 por tensor (incoherente) y bundles mixtos int2/int4/int8 en otro modelo |
-| Idiomas soportados | No disponible |
-| Licencia | Gemma (Gemma Terms of Use), con acceso restringido mediante gate en Hugging Face |
-| Formato de pesos | `.litertlm` v1 (DarwiNN DGC precompilado); no safetensors ni GGUF |
-| Tamano del repositorio | 0,9 GB (fichero de pesos: 874.631.968 B) |
-| Modo de ejecucion | AOT (precompilado), no JIT |
-| Cuota de NPU | ~100 % |
-| Tokenizer y plantilla de chat | Embebidos en el bundle |
-| Fecha de publicacion | 19 de septiembre de 2026 (creacion del repo) |
+| Arquitectura | Transformer decoder-only (Gemma 3), 26 capas |
+| Parametros totales | 1B (modelo base `google/gemma-3-1b-it`) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 4096 tokens (caché KV embebida, prefill 128) |
+| Tipos de cuantizacion | int4 per-channel + Hadamard (G3/G4); int8 (G5/G6) |
+| Idiomas soportados | no disponible en la informacion proporcionada |
+| Licencia | Gemma Terms of Use (acceso con gate) |
+| Formato de pesos | `.litertlm` v1 (DGC precompilado DarwiNN) |
 
 ## Arquitectura y entrenamiento
 
-La ficha no documenta el entrenamiento del modelo base (no hay datos sobre numero de tokens, composicion del dataset ni fases de RLHF/DPO); esta informacion corresponde a `google/gemma-3-1b-it` y no se reproduce aqui. Lo que si describe con detalle es el proceso de derivacion. El punto de partida es el checkpoint QAT de Google `google/gemma-3-1b-it-qat-int4-unquantized`, que se re-cuantiza a int4 por canal y se somete a una rotacion Hadamard al estilo `DECOMPOSED_HADAMARD_ROTATION` antes de la cuantizacion. El objetivo de esa rotacion es repartir los valores atipicos entre la base rotada y ajustar mejor la rejilla int4 por canal; segun el autor, el efecto mas visible aparece en la cabeza de 262.000 entradas de vocabulario, donde mejora la precision de los logits y la coherencia frente a un int4 por canal sin rotar. La cuantizacion por tensor, en cambio, produce texto incoherente al aplicar una sola escala sobre esa cabeza de 262k.
+El paquete no incluye entrenamiento propio: deriva del checkpoint QAT `google/gemma-3-1b-it-qat-int4-unquantized`, es decir, un modelo Gemma 3 de 1B parámetros ya entrenado y con *quantization-aware training*, que aquí se recuantiza y se compila AOT para la NPU Tensor. La arquitectura subyacente es un transformer decoder-only de 26 capas con tokenizador y plantilla de chat embebidos en el bundle. El artefacto resultante es un DGC (DarwiNN Graph Compiler) precompilado, con el grafo entero mapeado a operaciones de NPU.
 
-El habilitador tecnico clave es la cirugia de capas FC de rango 2: el compilador AOT de DarwiNN devuelve `OP_FAILED` ante operaciones `FULLY_CONNECTED` de rango 3, y Gemma 3 las emite unas 360 veces, de modo que la compilacion AOT falla sin intervencion. El script `recipe/fc_rank2_surgery.py` envuelve cada FC de rango 3 como `RESHAPE → FC de rango 2 → RESHAPE`, matematicamente equivalente y aceptada por el compilador. Segun la ficha, no consta una correccion upstream. Ademas, se advierte de que el soporte AOT por anchura de bits depende de la version del compilador y no existe una matriz fija de soporte; el bundle de produccion `gemma4-E2B` para G4 lleva tensores int2, int4 e int8 simultaneamente y compila, mientras que el habilitador verificado para un Gemma completo es la cirugia de rango 2.
+La innovación técnica no está en el modelo sino en el pipeline de despliegue: compilación completa a NPU (en G5 se reportan 1295/1295 y 1226/1226 operaciones sin ninguna en CPU), caché KV embebida de 4096 tokens, y un estudio empírico de recetas de cuantización. Según la model card, en Tensor G6 hasta ocho variantes int4 (Hadamard, per-channel, cabezas mixtas int8/int4, blockwise-64 y combinaciones de flags del compilador) producen salidas incoherentes en NPU, mientras que int8 es coherente; de ahí la decisión de usar int8 en G5 y G6. También se documenta compatibilidad cruzada de DGC: los builds G3 y G4 compilan al mismo programa y difieren solo en un campo de tipo de dispositivo, mientras que un build G5 cargado en G4 ejecuta el prefill en NPU pero no el decode.
 
 ## Capacidades
 
-- Generacion de texto conversacional en modo chat, con plantilla de chat embebida en el bundle, sobre el modelo instruction-tuned Gemma 3 1B-IT.
-- Ejecucion de inferencia integra en la NPU del Tensor G4, con una cuota declarada de aproximadamente el 100 % de los calculos en NPU.
-- Procesamiento de prompts largos con prefill rapido: la ficha lo describe explicitamente como opcion mas rapida en telefono para cargas con prefill pesado (RAG, contexto largo, resumen, clasificacion).
-- Candidato a decodificacion especulativa (MTP): la ficha lo senala como el siguiente palanca real de rendimiento, aunque no esta implementada en esta build.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible.
-- Vision, audio o modo de razonamiento explicito (thinking): no disponibles en la informacion proporcionada.
-- KV cache de 4096 tokens embebida, lo que fija el horizonte practico de conversacion multi-turno del bundle.
+- Generación de texto conversacional (chat) e instrucciones, heredadas de `gemma-3-1b-it`.
+- Razonamiento básico y respuesta a preguntas de dominio general, limitado por el tamaño de 1B parámetros.
+- Generación de código y matemáticas a nivel introductorio (capacidad del modelo base; no se aportan evaluaciones específicas en este paquete).
+- Ejecución íntegra en NPU Google Tensor con backend `npu` de LiteRT-LM.
+- Tokenizador y plantilla de chat embebidos en el bundle, sin dependencias externas de tokenización.
+- Contexto de 4096 tokens con caché KV embebida, adecuado para conversaciones multi-turno cortas.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Resumen de documentos en el dispositivo: el prefill sostenido de 608-664 tok/s permite digerir rapidamente entradas largas sin salir del telefono, util para resumir correos, articulos o notas de reuniones sin enviar datos a la nube.
-- Recuperacion aumentada (RAG) local: indexacion y respuesta sobre un corpus personal en el dispositivo, aprovechando que el cuello de botella del prefill es comparativamente bajo y que la KV cache de 4096 tokens cubre fragmentos de contexto tipicos.
-- Clasificacion y etiquetado de texto en el borde: tareas de una sola pasada (sentimiento, categoria, intent) se benefician del mismo perfil de prefill alto y salida corta, donde el decode limitado importa poco.
-- Asistente de chat sin conexion: conversaciones de soporte o compania en movilidad, con procesamiento local que evita costes de API y mantiene los datos en el dispositivo, aceptando un decode de ~16 tok/s.
-- Correccion y reescritura de texto en teclados o apps de productividad: generacion de frases cortas, autocompletado y reescritura integrados en el sistema, donde la latencia por token del decode es tolerable para salidas breves.
-- Preprocesado en pipelines moviles de accesibilidad: transcripcion ya disponible convertida en resumen o acciones estructuradas, con la ventaja de que ~100 % del calculo ocurre en NPU y libera CPU y GPU para el resto de la aplicacion.
-- Banco de pruebas para decodificacion especulativa: por su perfil de prefill-monster y decode-laggard, sirve como plataforma de medida para experimentar con MTP o draft models en silicio Tensor G4.
-- Generacion de codigo en produccion: no disponible como caso de uso contrastado en la ficha; no hay datos de HumanEval ni soporte de tool calling documentado.
+- Asistente de chat offline en Pixel 9: cargar el bundle G4 int4 (875 MB) con la app Box y el backend NPU permite conversaciones multi-turno sin conexión, con latencia baja al no salir de la NPU.
+- Funciones de resumen y reescritura dentro de una app Android: con 4096 tokens de contexto se pueden procesar notas, correos o mensajes largos y devolver un resumen en el propio dispositivo, sin enviar datos a la nube.
+- Clasificación y extracción de entidades en local: usar el modelo como extractor de campos (fechas, importes, nombres) sobre texto de formularios, aprovechando que el contexto cubre documentos de varias páginas.
+- Prototipado de asistentes de voz en el dispositivo: combinado con STT/TTS locales, el modelo sirve como capa de comprensión y generación de respuesta en un pipeline completamente on-device.
+- Evaluación de despliegue NPU para investigación: el repositorio documenta recetas de cuantización, compatibilidad DGC entre G3/G4/G5/G6 y resultados de coherencia, lo que lo convierte en material de referencia para estudiar cuantización int4 frente a int8 en aceleradores móviles.
+- Aplicaciones de privacidad estricta (salud, legal, finanzas personales): al no requerir red, el procesamiento de texto sensible permanece en el teléfono, lo que facilita el cumplimiento de requisitos de minimización de datos.
+- Base para fine-tuning o destilación en el borde: el modelo base Gemma 3 1B-IT puede ajustarse y volver a compilarse con el SDK de Tensor, usando este bundle como línea base de rendimiento en NPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La unica tabla de rendimiento de la ficha corresponde a mediciones de throughput en un Pixel 9 Pro XL con Tensor G4, sobre este bundle exacto, el 10 de septiembre de 2026:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta datos de verificación funcional y de tamaño:
 
-| Prefill (tokens) | Decode (tokens) | Prefill (tok/s) | Decode (tok/s) |
-|---|---|---|---|
-| 128 | 64 | 608,83 | 15,93 |
-| 512 | 128 | 659,22 | 16,17 |
-| 1024 | 64 | 663,99 | 15,89 |
+| Variante | SoC | Cuantizacion | Tamano | Estado |
+|---|---|---|---|---|
+| G3 | Tensor G3 (Pixel 8/8 Pro/8a) | int4 + Hadamard | ~875 MB | Verificado en dispositivo (Pixel 8 Pro, LineageOS, Box 3.5.6) |
+| G4 | Tensor G4 (Pixel 9 series) | int4 + Hadamard | ~875 MB | Verificado en dispositivo |
+| G5 | Tensor G5 (Pixel 10 series) | int8 | ~1,65 GB | No verificado en hardware; compilado 100 % a NPU |
+| G6 | Tensor G6 (Pixel 11 series) | int8 | ~2,11 GB | Verificado en dispositivo (Pixel 11 Pro XL, `kodiak`) |
 
-La lectura que da el autor es que el prefill escala (608 → 659 → 664 tok/s al pasar de 128 a 1024 tokens, por amortizacion del coste fijo por dispatch, con un suelo estimado de ~670 tok/s) mientras el decode permanece practicamente invariante entre 15,89 y 16,17 tok/s (±0,9 %) a lo largo de un cambio de 8x en la longitud de prefill. La conclusion es que el decode esta limitado por dispatch, no por computo: el Edge TPU rinde en matmuls por lotes (prefill) pero desaprovecha su capacidad al generar un solo token por dispatch.
+No se proporcionan cifras de tokens/s, latencia ni puntuaciones en MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM en GPU: no aplica. El modelo no esta pensado para GPU ni se distribuye en un formato cargable por runtimes de GPU.
-- GPU recomendadas: ninguna. El destino es la NPU Edge TPU «rio» del Google Tensor G4.
-- Compatibilidad de silicio: Tensor G4 (serie Pixel 9) soportado; Tensor G5 (Pixel 10) no soportado, porque el DGC esta compilado especificamente para G4; Tensor G2 y G3 tampoco.
-- Almacenamiento: 875 MB para el fichero `.litertlm` (repositorio de 0,9 GB).
-- Runtime: LiteRT-LM CLI con `--backend=npu`, o Google AI Edge Gallery en modo NPU. En ambos casos se exige una libreria de dispatch GoogleTensor compatible; el dispatch de una app de stock puede rechazar el bundle por desajuste de firmware.
-- Formatos no soportados: llama.cpp / GGUF, web, iOS, escritorio y cualquier dispositivo que no sea Pixel con Tensor G4.
-- Latencia y throughput estimados: prefill 608-664 tok/s, decode 15,9-16,2 tok/s en Pixel 9 Pro XL con Tensor G4, medidos sobre este bundle.
-- Nota operativa: la ficha indica que las diferencias de comportamiento o «sensacion» frente a una referencia dependen de la configuracion del runtime (system prompt y muestreo: top-k, top-p, temperatura), no de la cuantizacion.
+- Hardware objetivo: NPU Google Tensor Edge TPU. G3 para Pixel 8/8 Pro/8a; G4 para Pixel 9/9 Pro/9 Pro XL/9 Pro Fold; G5 para Pixel 10; G6 para Pixel 11.
+- Almacenamiento: 875 MB (G3/G4 int4), 1,65 GB (G5 int8) y 2,11 GB (G6 int8).
+- No requiere GPU dedicada ni servidor; no está pensado para A100, H100 ni RTX 4090, y no se documenta ejecución en GPU de escritorio.
+- Runtime: LiteRT-LM con backend `npu` y un dispatch runtime de GoogleTensor que coincida con la generación del chip. Para G3/G4 se recomienda la app Box (github.com/jegly/Box), que incluye las librerías de runtime correctas.
+- La app oficial Google AI Edge Gallery no funciona en G3/G4 según la model card (su dispatch runtime incluido no es compatible).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Cuantizacion | Tamano | KV cache | Silicio objetivo | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| Gemma3-1B-IT-Tensor-G4-NPU (este) | int4 por canal + Hadamard | 875 MB | 4096 | Tensor G4 (Pixel 9) | `.litertlm` (DGC AOT) | Gemma | Hugging Face, con gate |
-| `litert-community/Gemma3-1B-IT_q8_ekv1280_Google_Tensor_G5.litertlm` | int8 | 1.678 MB | 1280 | Tensor G5 (Pixel 10) | `.litertlm` | Gemma | Hugging Face, con gate |
-| `google/gemma-3-1b-it` (modelo base) | Sin cuantizar (BF16) | No disponible en la informacion proporcionada | No disponible | CPU / GPU | safetensors | Gemma | Hugging Face, con gate |
-| `google/gemma-3-1b-it-qat-int4-unquantized` (checkpoint de origen) | QAT int4 sin cuantizar | No disponible en la informacion proporcionada | No disponible | CPU / GPU | safetensors | Gemma | Hugging Face, con gate |
+| Modelo | Parametros | Contexto | Formato / destino | Licencia | Estado |
+|---|---|---|---|---|---|
+| Gemma3-1B-IT-Tensor-G4-NPU (este) | 1B | 4096 | `.litertlm` AOT para NPU Tensor | Gemma | Verificado en G3/G4/G6; G5 sin verificar |
+| Gemma 3 1B int8 oficial de Google para Tensor G5 | 1B | no disponible | `.litertlm` int8 para NPU Tensor | Gemma | Bundle oficial; ~1678 MB |
+| Gemma 3 1B int8 oficial de Google para Tensor G6 | 1B | 1280 | `.litertlm` int8 para NPU Tensor | Gemma | Bundle oficial; ~2,04 GB |
+| `google/gemma-3-1b-it` (base) | 1B | no disponible | safetensors, GPU/CPU | Gemma | Modelo de referencia, no optimizado para NPU móvil |
 
-La ficha tambien menciona un bundle `gemma4-E2B` para NPU G4 con dos subgrafos y tensores mixtos int2/int4/int8, verificado directamente, como evidencia de que el compilador AOT acepta anchuras mixtas. No se proporcionan datos de rendimiento comparables entre estos modelos mas alla del tamano de fichero.
+Frente a los bundles oficiales, la variante G4 ofrece la mitad de tamaño (875 MB frente a 1678 MB del int8 de G5) y la variante G6 cuadruplica el contexto (4096 frente a 1280) con un tamaño similar. No se dispone de comparación de calidad o throughput con alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta sujeto a un gate que exige aceptar los Gemma Terms of Use de Google; sin aceptarlos no se descargan los pesos.
-- Licencia Gemma: cualquier uso, incluido el comercial, queda sujeto a las condiciones de la licencia Gemma del modelo base; hay que revisarlas antes de desplegar.
-- Dependencia de firmware y runtime: al ser un DGC AOT, requiere una libreria de dispatch GoogleTensor compatible. Un dispatch de una app de stock puede rechazarlo por desajuste de firmware, y los detalles de runtime quedan fuera del alcance del repositorio.
-- Compatibilidad de hardware muy estrecha: solo Tensor G4 (Pixel 9, 9 Pro, 9 Pro XL, 9 Pro Fold). No funciona en Tensor G5 ni en G2/G3, ni en llama.cpp/GGUF, web, iOS o escritorio.
-- Decode lento en terminos absolutos: ~16 tok/s, limitado por dispatch y no por computo. Para generacion larga la experiencia es la de un modelo pequeno en movil, no la de un servidor.
-- Ventana efectiva limitada por la KV cache embebida de 4096 tokens, independientemente del contexto que soporte el modelo base.
-- Modelo de ~1.000 millones de parametros: cabe esperar razonamiento limitado, mayor propension a la alucinacion y menor fidelidad en tareas complejas que modelos de mayor tamano. No hay benchmarks publicados en la ficha que permitan acotar ese riesgo.
-- Sin datos de sesgos: la informacion proporcionada no incluye evaluaciones de sesgo, toxicidad ni equidad.
-- Sin datos de idiomas: no se especifica la cobertura linguistica del bundle ni si la cuantizacion degrada de forma desigual segun el idioma.
-- Advertencia del autor: las diferencias de comportamiento frente a una referencia son configuracion del runtime (system prompt y parametros de muestreo), no efecto de la cuantizacion; conviene igualar system prompt, top-k, top-p y temperatura antes de comparar.
-- Sin soporte de decodificacion especulativa en esta build, pese a identificarse como la principal palanca de rendimiento pendiente.
-- Sin datos de descargas ni de valoraciones en el momento de redactar la ficha (0 descargas, 0 likes), por lo que no existe validacion de la comunidad.
+- Build comunitario, no es una release oficial de Google ni está respaldado por la compañía; el mantenimiento depende de @xThr45hx.
+- La variante G5 no está verificada en un Pixel 10 real: se desconoce si carga y genera texto coherente en ese hardware.
+- La ruta int4 no funciona correctamente en Tensor G6 con el SDK actual (salidas incoherentes); solo int8 es fiable en esa generación.
+- Los DGC no son portables entre generaciones: usar un build de otra generación puede provocar fallos en el decode o requerir fallback a CPU.
+- El acceso está sujeto a gate de licencia Gemma: es necesario aceptar los Términos de Uso de Google y disponer de cuenta en Hugging Face.
+- Restricciones de uso comercial: las impone la licencia Gemma; deben revisarse los términos antes de distribuir el modelo dentro de un producto.
+- Capacidad limitada por el tamaño: 1B parámetros y 4096 tokens de contexto implican menor calidad en razonamiento complejo, matemáticas avanzadas y contextos largos que modelos mayores.
+- Riesgo de alucinación inherente al modelo base; no se documentan evaluaciones de sesgo ni de seguridad específicas para este paquete.
+- Idiomas soportados no documentados en la información disponible; no se debe asumir multilingüismo sin verificación.
+- Dependencia de un runtime concreto (LiteRT-LM y dispatch GoogleTensor): la app oficial AI Edge Gallery no funciona en G3/G4, lo que limita las vías de despliegue.
 
 ## Enlaces
 
-- [litert-community/Gemma3-1B-IT-Tensor-G4-NPU en Hugging Face](https://huggingface.co/litert-community/Gemma3-1B-IT-Tensor-G4-NPU)
-- [Modelo base: google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)
-- [Checkpoint de origen: google/gemma-3-1b-it-qat-int4-unquantized](https://huggingface.co/google/gemma-3-1b-it-qat-int4-unquantized)
-- [Runtime LiteRT-LM (google-ai-edge)](https://github.com/google-ai-edge/LiteRT-LM)
-- [Documentacion de la cirugia de rango 2: `RANK2_FC_SURGERY.md`](./RANK2_FC_SURGERY.md) (referenciada en la model card, dentro del propio repositorio)
-- [Script `recipe/fc_rank2_surgery.py`](./recipe/fc_rank2_surgery.py) (referenciado en la model card, dentro del propio repositorio)
-- Gemma Terms of Use: enlazados desde el gate del repositorio en Hugging Face (no se incluye URL directa en la informacion proporcionada)
-- La busqueda web realizada no devolvio resultados relevantes para este modelo: los unicos resultados obtenidos fueron consultas no relacionadas sobre transporte ferroviario aleman, eliminacion de software y un videojuego, sin ninguna relacion con Gemma 3, LiteRT-LM, Tensor G4 o cuantizacion de modelos.
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/Gemma3-1B-IT-Tensor-G4-NPU
+- Modelo base: https://huggingface.co/google/gemma-3-1b-it
+- Checkpoint QAT de origen: https://huggingface.co/google/gemma-3-1b-it-qat-int4-unquantized
+- LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
+- App Box para G3/G4: https://github.com/jegly/Box
+- Discusión de verificación en Pixel 8 Pro: https://huggingface.co/litert-community/Gemma3-1B-IT-Tensor-NPU/discussions/2

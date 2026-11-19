@@ -67,31 +67,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ירגזיים – ויקיפדיה",
-      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%92%D7%96%D7%99%D7%99%D7%9D",
-      "snippet": "↑Brendan A. Graham, Ian Gazeley, Ken A. Otter and Theresa Burg, Do phylogeny and habitat influence admixture among four North …"
-    },
-    {
-      "title": "logic65/Whittle-Next-27B-A3B · Hugging Face",
-      "url": "https://huggingface.co/logic65/Whittle-Next-27B-A3B",
-      "snippet": "Instructions to use logic65/Whittle-Next-27B-A3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "מה זה ירכיים - מילון עברי עברי - מילוג",
-      "url": "https://milog.co.il/%D7%99%D7%A8%D7%9B%D7%99%D7%99%D7%9D",
-      "snippet": "ירכיים מילון - ירכיים הגדרה מילונית - מילון עיברי ירכיים - פירוש ירכיים"
-    },
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "טיפול בכאבי ירכיים - רן ארבל אוסטאופת - מטפל בכאב",
-      "url": "https://www.ranarbel.co.il/%D7%91%D7%A2%D7%99%D7%95%D7%AA-%D7%A0%D7%A4%D7%95%D7%A6%D7%95%D7%AA/%D7%98%D7%99%D7%A4%D7%95%D7%9C-%D7%91%D7%9B%D7%90%D7%91%D7%99-%D7%99%D7%A8%D7%9B%D7%99%D7%99%D7%9D/",
-      "snippet": "מחפשים פתרון מקצועי לטיפול בכאבי ירכיים? רן ארבל – אוסטאופת מוסמך, מציע טיפול ידני מותאם אישית, בגישה הוליסטית המובילה להקלה בכאב."
-    }
-  ]
+  "sources": []
 }

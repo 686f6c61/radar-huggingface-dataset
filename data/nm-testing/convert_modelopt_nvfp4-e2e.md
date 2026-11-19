@@ -2,87 +2,92 @@
 
 ## Resumen
 
-El modelo `nm-testing/convert_modelopt_nvfp4-e2e` es una versión cuantizada a FP4 del modelo Qwen3-8B de Alibaba, generada por NVIDIA mediante TensorRT Model Optimizer. Aunque el repositorio pertenece a un usuario de pruebas (`nm-testing`), el contenido corresponde al checkpoint oficial publicado por NVIDIA como `nvidia/Qwen3-8B-FP4`. Se trata de un modelo de lenguaje autorregresivo basado en una arquitectura transformer optimizada, diseñado para ejecutarse en GPUs NVIDIA Blackwell con el runtime TensorRT-LLM.
+El modelo `nm-testing/convert_modelopt_nvfp4-e2e` es una versión cuantizada a FP4 de Qwen3-8B, el modelo de lenguaje de 8.190 millones de parámetros desarrollado por Alibaba. La cuantización se ha realizado con TensorRT Model Optimizer (nvidia-modelopt v0.35.0) y se distribuye en formato `compressed-tensors` con pesos en safetensors, lista para inferencia con TensorRT-LLM sobre GPUs NVIDIA Blackwell. El repositorio pertenece a la cuenta de pruebas `nm-testing`, no a la cuenta oficial de NVIDIA, aunque el modelo de referencia publicado por NVIDIA es `nvidia/Qwen3-8B-FP4`.
 
-La cuantización FP4 (NVFP4) reduce el tamaño del modelo a aproximadamente la mitad de un checkpoint BF16 equivalente, manteniendo una ventana de contexto de hasta 131 000 tokens. Está pensado para desarrolladores que necesitan desplegar modelos de lenguaje en producción con baja latencia y alta eficiencia de memoria, especialmente en sistemas de agentes, chatbots y aplicaciones RAG. La licencia Apache 2.0 permite uso comercial y no comercial sin restricciones adicionales.
+El interés de esta ficha radica en que ilustra el flujo de cuantización NVFP4 aplicado a un transformer denso de 8B con contexto de hasta 131K tokens, un caso representativo para despliegues de agentes, chatbots y sistemas RAG que necesitan reducir huella de memoria y aumentar throughput en hardware Blackwell. La cuantización afecta solo a pesos y activaciones de los operadores lineales dentro de los bloques transformer, manteniendo el resto de la arquitectura Qwen3-8B intacta.
 
-El modelo hereda todas las capacidades del Qwen3-8B original —generación de texto, razonamiento, código, matemáticas y soporte multilingüe—, aunque la cuantización puede introducir una ligera degradación en tareas de alta precisión. Su integración principal es con TensorRT-LLM, lo que lo hace especialmente adecuado para entornos de servidor con hardware Blackwell.
+Al tratarse de un artefacto de pruebas de integración ("e2e"), conviene tratarlo como referencia técnica del pipeline de conversión más que como un checkpoint de producción validado. La licencia Apache 2.0 del modelo base se mantiene, y el autor declara uso comercial y no comercial permitido.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3-8B) |
-| Parametros totales | 8 190 735 360 (8,2 mil millones) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Hasta 131 000 tokens |
-| Tipos de cuantizacion | FP4 (NVFP4) |
-| Idiomas soportados | No disponibles (el modelo base Qwen3-8B soporta multiples idiomas, pero no se especifican en esta ficha) |
+| Arquitectura | Transformer autorregresivo (Qwen3-8B) |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | no disponible (modelo denso) |
+| Longitud de contexto | hasta 131K tokens (según model card) |
+| Tipos de cuantizacion | FP4 (pesos y activaciones de operadores lineales), etiquetado como 8-bit en los tags del repo |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (compatible con TensorRT-LLM) |
+| Formato de pesos | safetensors con `compressed-tensors` (repo de 6,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer de Qwen3-8B, que incluye atención multi-cabeza, capas de normalización y un mecanismo de ventana deslizante para manejar contextos largos. No se trata de un modelo MoE ni híbrido; es un modelo denso con 8,2 mil millones de parámetros. La cuantización se realizó mediante post-training quantization (PTQ) con TensorRT Model Optimizer v0.35.0, cuantizando los pesos y activaciones de los operadores lineales dentro de los bloques transformer al formato FP4. El proceso de calibración utilizó el dataset `cnn_dailymail` con recolección y etiquetado automatizado.
+La arquitectura subyacente es la de Qwen3-8B: un transformer autorregresivo denso de 8.190 millones de parámetros, sin mezcla de expertos. Sobre esa base, este checkpoint aplica cuantización post-entrenamiento (PTQ) de pesos y activaciones a FP4 únicamente en los operadores lineales de los bloques transformer, dejando el resto de componentes en su precisión original. La herramienta empleada es TensorRT Model Optimizer v0.35.0, que produce un checkpoint en formato `compressed-tensors` consumible por TensorRT-LLM.
 
-No se ha realizado ningún entrenamiento adicional sobre el modelo base; la cuantización es puramente una transformación de precisión. Los datos de entrenamiento del modelo original no han sido divulgados por Alibaba. La inferencia está optimizada para TensorRT-LLM, que aprovecha las instrucciones FP4 de las GPUs Blackwell para acelerar el cómputo y reducir el uso de memoria.
+No se especifica en la información disponible el número de tokens de entrenamiento del modelo base, la composición del dataset, ni si hubo etapas de RLHF o DPO; esos datos corresponden a la model card de Qwen3-8B y no se detallan aquí. Para la calibración de la cuantización se empleó el dataset `cnn_dailymail`, con recolección y etiquetado automatizados. Los datasets de entrenamiento y test del proceso de cuantización figuran como "undisclosed" en la model card.
 
 ## Capacidades
 
-- Generacion de texto: produce respuestas coherentes y contextualmente relevantes en multiples dominios.
-- Razonamiento y matematicas: hereda las capacidades de Qwen3-8B para problemas aritmeticos y logicos.
-- Generacion de codigo: puede escribir y depurar codigo en varios lenguajes de programacion.
-- Soporte multilingue: el modelo base Qwen3-8B esta entrenado en mas de 30 idiomas, aunque esta ficha no especifica la lista concreta.
-- Tool calling y function calling: compatible con la API de funciones de Qwen3, lo que permite integrarlo en pipelines de agentes.
-- Razonamiento multi-paso: capaz de descomponer tareas complejas en pasos intermedios, util para agentes y planificacion.
-- Ventana de contexto larga: hasta 131 000 tokens, adecuada para documentos extensos y conversaciones multi-turno.
+- Generación de texto conversacional y de formato libre, heredada de Qwen3-8B.
+- Razonamiento multi-paso y matemáticas, en la medida en que lo soporte el modelo base.
+- Generación de código, sujeta a la calidad del checkpoint original.
+- Soporte de tool calling y function calling, siempre que el modelo base lo ofrezca y el runtime lo implemente.
+- Capacidades multilingües: no disponibles de forma explícita en la información proporcionada.
+- Contexto largo de hasta 131K tokens para entradas de una dimensión (secuencias).
+- Inferencia optimizada en TensorRT-LLM sobre GPUs NVIDIA Blackwell.
+- No se documentan capacidades de visión, audio ni modo "thinking" explícito en esta ficha.
 
 ## Casos de uso
 
-- Despliegue de chatbots en produccion: gracias a su cuantizacion FP4, el modelo puede servir conversaciones con baja latencia en GPUs Blackwell, manteniendo una ventana de contexto amplia para dialogos prolongados.
-- Sistemas RAG (Retrieval-Augmented Generation): la ventana de 131 000 tokens permite procesar documentos completos y consultas complejas sin perder informacion relevante.
-- Agentes de IA autonomos: con soporte de tool calling y razonamiento multi-paso, puede gestionar tareas como reservas, consultas a APIs o automatizacion de flujos de trabajo.
-- Generacion y revision de codigo en CI/CD: puede integrarse en pipelines de desarrollo para autocompletar, revisar o documentar codigo, aprovechando su capacidad de generar fragmentos sintacticamente correctos.
-- Analisis de documentos legales o financieros: su contexto largo permite resumir contratos, informes o expedientes extensos, extrayendo clausulas clave o datos numericos.
-- Asistentes virtuales multilingues: al heredar el soporte de idiomas de Qwen3-8B, puede atender a usuarios en diferentes lenguas, aunque la ficha no detalla la lista exacta.
+- Agentes conversacionales con contexto largo: el modelo puede mantener conversaciones multi-turno con hasta 131K tokens de ventana, adecuado para asistentes que necesitan recordar historial extenso o documentos completos.
+- Sistemas RAG de documentación técnica: la ventana de contexto permite inyectar varios fragmentos recuperados sin truncar, y la cuantización FP4 reduce la memoria necesaria para servir el modelo en paralelo.
+- Despliegue de chatbots en producción sobre Blackwell: al estar empaquetado para TensorRT-LLM, se integra en pipelines de serving con `LLM` API y `SamplingParams`, facilitando el escalado horizontal.
+- Automatización de soporte al cliente: la generación de texto conversacional y el soporte de tool calling permiten encadenar consultas a sistemas internos (pedidos, tickets) dentro de la misma sesión.
+- Generación de código asistida en IDE o CI: el modelo puede integrarse como servicio de completado o revisión, siempre que se valide la calidad del checkpoint cuantizado frente al original.
+- Prototipado de aplicaciones de IA en hardware NVIDIA: útil como referencia para evaluar el impacto de NVFP4 en latencia y calidad antes de adoptar el checkpoint oficial `nvidia/Qwen3-8B-FP4`.
+- Evaluación de pipelines de cuantización: al ser un artefacto de pruebas end-to-end, sirve para validar herramientas de conversión, calibración y despliegue en entornos de integración continua.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas como MMLU, HumanEval o GSM8K para esta version cuantizada. Se recomienda consultar los benchmarks del modelo base Qwen3-8B y realizar evaluaciones propias en el hardware objetivo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint FP4 ocupa aproximadamente 4,1 GB (8,2 mil millones de parametros × 4 bits), pero el repositorio pesa 6,4 GB, lo que sugiere que incluye metadatos adicionales. En la practica, la inferencia con TensorRT-LLM requiere memoria adicional para activaciones y buffers, por lo que se recomienda al menos 8-12 GB de VRAM.
-- GPU recomendadas: oficialmente compatible con NVIDIA Blackwell (B200, B100, etc.). La model card especifica "Supported Hardware Microarchitecture Compatibility: NVIDIA Blackwell". No se garantiza su funcionamiento en arquitecturas anteriores (Ampere, Ada Lovelace) aunque podria ejecutarse con soporte parcial de FP4.
-- En consumer GPU: no esta confirmado. Las GPUs consumer actuales (RTX 40 series) no tienen soporte nativo para FP4, por lo que el rendimiento seria suboptimo o requeriria emulacion.
-- Opciones de despliegue: TensorRT-LLM es el runtime principal. No se mencionan alternativas como vLLM, llama.cpp u Ollama para este checkpoint especifico.
-- Latencia y throughput: no disponibles. Dependen del hardware y de la configuracion del motor TensorRT-LLM.
+- VRAM estimada: no disponible de forma explícita; el repo ocupa 6,4 GB en safetensors, por lo que la huella de pesos en FP4 es del orden de esa cifra, a la que hay que sumar activaciones, KV cache y overhead del runtime.
+- GPUs recomendadas: NVIDIA Blackwell (B200 citada como hardware de test en la model card); no se garantiza compatibilidad con generaciones anteriores.
+- GPU de consumo: no disponible; la model card no confirma soporte en RTX 4090 ni en otras consumer GPUs.
+- Motor de despliegue: TensorRT-LLM (API `LLM` con `SamplingParams`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Sistema operativo: Linux.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Runtime |
 |---|---|---|---|---|---|
-| Qwen3-8B (original) | 8,2 B | 131 000 | BF16/FP16 | Apache 2.0 | Hugging Face |
-| Qwen3-8B-FP4 (NVIDIA) | 8,2 B | 131 000 | FP4 | Apache 2.0 | Hugging Face |
-| Qwen3-8B-AWQ (ejemplo comun) | 8,2 B | 131 000 | INT4 (AWQ) | Apache 2.0 | Hugging Face (no confirmado) |
-| Llama-3.1-8B (cuantizado) | 8,0 B | 128 000 | INT4/FP8 | Llama 3.1 | Hugging Face |
+| nm-testing/convert_modelopt_nvfp4-e2e | 8,19B | 131K | FP4 (NVFP4) | Apache 2.0 | TensorRT-LLM |
+| nvidia/Qwen3-8B-FP4 | 8,2B | 131K | FP4 (NVFP4) | Apache 2.0 | TensorRT-LLM |
+| Qwen/Qwen3-8B | 8B | 131K (según model card) | BF16/FP16 original | Apache 2.0 | Múltiples (vLLM, TGI, etc.) |
 
-La comparativa se basa en parametros y contexto; los resultados de rendimiento no estan disponibles para esta version FP4. La principal diferencia frente a otras cuantizaciones es el formato FP4, que requiere hardware Blackwell para aprovechar todo su potencial.
+La comparativa se limita a variantes del mismo modelo base, ya que la información disponible no incluye datos de rendimiento frente a alternativas de otros fabricantes. El checkpoint oficial de NVIDIA es la referencia recomendada para producción; este repositorio de pruebas reproduce el mismo pipeline de cuantización.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion FP4 puede degradar la precision en tareas complejas como matematicas avanzadas, razonamiento logico o generacion de codigo de alta calidad, en comparacion con el modelo BF16 original.
-- El soporte de hardware esta limitado a NVIDIA Blackwell; en otras arquitecturas el modelo podria no ejecutarse correctamente o requerir adaptaciones.
-- No se han publicado evaluaciones de sesgos o riesgos especificos para esta version cuantizada. Se recomienda revisar la documentacion del modelo base Qwen3-8B.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar informacion falsa o inventada, especialmente en contextos largos o con prompts ambiguos.
-- La informacion sobre idiomas soportados no esta disponible en la model card; aunque Qwen3-8B es multilingue, no se confirma la lista exacta para este checkpoint.
-- El repositorio pertenece a un usuario de pruebas (`nm-testing`), no a NVIDIA directamente. Se recomienda utilizar el checkpoint oficial `nvidia/Qwen3-8B-FP4` para entornos de produccion.
+- Repositorio de pruebas: la cuenta `nm-testing` sugiere un artefacto de integración end-to-end, no un checkpoint validado para producción.
+- Licencia: Apache 2.0 permite uso comercial, pero el usuario debe verificar los términos del modelo base Qwen3-8B y de las dependencias de NVIDIA.
+- Hardware restringido: la model card solo garantiza compatibilidad con NVIDIA Blackwell y TensorRT-LLM; no hay soporte documentado para otras GPUs o runtimes.
+- Idiomas: no se especifican los idiomas soportados, por lo que no se puede garantizar calidad multilingüe.
+- Riesgo de alucinación: inherente al modelo base; la cuantización FP4 puede degradar ligeramente la fidelidad en tareas sensibles.
+- Sesgos: no documentados en la información disponible; se heredan los del modelo Qwen3-8B.
+- Contexto: aunque se declaran 131K tokens, no se detalla el comportamiento en los extremos de la ventana ni el coste de KV cache.
+- Datos de entrenamiento y evaluación del proceso de cuantización: marcados como "undisclosed", lo que limita la reproducibilidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nm-testing/convert_modelopt_nvfp4-e2e
-- Checkpoint oficial NVIDIA: https://huggingface.co/nvidia/Qwen3-8B-FP4
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
+- Checkpoint oficial NVIDIA: https://huggingface.co/nvidia/Qwen3-8B-FP4
 - TensorRT Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - TensorRT-LLM: https://github.com/NVIDIA/TensorRT-LLM
-- Dataset de calibracion (cnn_dailymail): https://huggingface.co/datasets/abisee/cnn_dailymail
+- Dataset de calibración cnn_dailymail: https://huggingface.co/datasets/abisee/cnn_dailymail
+- Licencia Apache 2.0: https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md

@@ -2,78 +2,92 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash-GGUF es un conjunto de cuantizaciones estáticas en formato GGUF del modelo base Qwopus3.8-27B-Coder-Flash, publicado por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino una conversión y cuantización del checkpoint original alojado en Jackrong/Qwopus3.8-27B-Coder-Flash, orientada a su despliegue con llama.cpp y herramientas compatibles con GGUF.
+Qwopus3.8-27B-Coder-Flash-GGUF es la versión cuantizada en formato GGUF del modelo Jackrong/Qwopus3.8-27B-Coder-Flash, un modelo multimodal de tipo image-text-to-text orientado a generación de código, razonamiento y uso de herramientas. La cuantización la ha realizado mradermacher, un autor habitual de conversiones GGUF en Hugging Face, y cubre un abanico amplio de tipos de cuantización, desde Q2_K hasta Q8_0, además de los suplementos multimodales mmproj en f16 y Q8_0.
 
-El nombre del modelo sugiere una base derivada de la familia Qwen (por el prefijo "Qw") y un enfoque en generación de código (sufijo "Coder"), con una variante "Flash" que podría indicar una configuración optimizada para velocidad. Sin embargo, la model card del repositorio no aporta información sobre arquitectura, datos de entrenamiento, licencia ni idiomas, por lo que la mayoría de especificaciones técnicas no están disponibles.
+El modelo base cuenta con 27.320.697.856 parámetros reales (aproximadamente 27,3 mil millones, según los pesos en safetensors) y está etiquetado con la familia qwen3_5 y el identificador qwopus3_8, lo que sugiere una arquitectura derivada de la familia Qwen 3.5. Incorpora capacidades de visión, tool calling, razonamiento y agentes, y está afinado específicamente para tareas de programación. Su licencia es Apache 2.0, lo que facilita el uso comercial sin restricciones adicionales.
 
-El dato más relevante y verificable es el número de parámetros reportado en los metadatos de safetensors: 460.730.096 parámetros (aproximadamente 0,46 mil millones), muy alejado de los 27 mil millones que sugiere el nombre del repositorio. Esta discrepancia debe tenerse en cuenta antes de cualquier evaluación o despliegue, y conviene verificar el checkpoint original para confirmar el tamaño real del modelo.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de 27B multimodal y especializado en código en hardware de consumo o en servidores con GPU modestas, gracias a las cuantizaciones de 4 y 5 bits que reducen el peso a entre 15,9 y 19,6 GB. Al estar disponible en GGUF, es compatible con llama.cpp y con los principales runners que lo soportan.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 460.730.096 (según metadatos de safetensors); el nombre del repo indica 27B, discrepancia no aclarada |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer multimodal (image-text-to-text), familia qwen3_5; detalles internos no disponibles |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); repo de 1,6 GB |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj f16 y mmproj Q8_0 |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (el modelo base en transformers/safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. La model card únicamente indica que se trata de cuantizaciones estáticas del checkpoint Jackrong/Qwopus3.8-27B-Coder-Flash, generadas con un proceso de conversión a GGUF (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1). No se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La información disponible no detalla la arquitectura interna del modelo base más allá de las etiquetas de la model card: transformer multimodal de tipo image-text-to-text, perteneciente a la familia qwen3_5 y con el identificador qwopus3_8. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni si emplea alguna variante como atención lineal o decodificación especulativa. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO.
 
-La única innovación técnica documentada es el propio proceso de cuantización: se ofrecen 12 variantes de precisión, desde x-f16 hasta Q2_K, lo que permite ajustar el equilibrio entre calidad y requisitos de memoria. No hay información sobre decodificación especulativa, atención lineal ni otras optimizaciones de inferencia.
+Lo que sí se indica es que el modelo está afinado (fine-tuned) para coding, code-generation, reasoning, tool-use y agent, y que conserva capacidades de visión. El repositorio de mradermacher es una conversión estática a GGUF del modelo Jackrong/Qwopus3.8-27B-Coder-Flash; existe además una variante con cuantizaciones ponderadas/imatrix en el repositorio i1-GGUF del mismo autor. No se aportan innovaciones técnicas adicionales en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto y código: el nombre del modelo sugiere especialización en tareas de programación, aunque no se documentan capacidades concretas.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-
-No se puede confirmar ninguna capacidad específica más allá de la inferencia de texto genérica implícita en un modelo de lenguaje cuantizado en GGUF.
+- Generación de texto conversacional multi-turno.
+- Generación de código y tareas de programación (etiquetas coding y code-generation).
+- Razonamiento (etiqueta reasoning), incluyendo razonamiento multi-paso orientado a agentes.
+- Uso de herramientas y function calling (etiqueta tool-use).
+- Comportamiento como agente (etiqueta agent).
+- Procesamiento de imágenes junto con texto (pipeline image-text-to-text, etiqueta vision, multimodal), con suplementos mmproj incluidos en el repositorio.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Inferencia eficiente gracias a las cuantizaciones GGUF (etiqueta efficient-inference).
 
 ## Casos de uso
 
-- Despliegue local en entornos con recursos limitados: las cuantizaciones Q2_K y Q3_K permiten ejecutar el modelo en CPU o GPU de gama baja mediante llama.cpp, útil para prototipos y pruebas offline.
-- Asistencia de código en el editor: si el modelo base está efectivamente especializado en código, podría integrarse en extensiones tipo Continue o similares a través de un servidor compatible con la API de OpenAI (por ejemplo, llama.cpp server).
-- Generación de fragmentos de código en pipelines de CI: con cuantizaciones Q4_K_M o Q5_K_M se puede automatizar la generación de tests o documentación en entornos con GPU modesta.
-- Experimentación académica: el reducido tamaño del repo (1,6 GB) facilita la descarga y el estudio de técnicas de cuantización GGUF.
-- Evaluación comparativa de cuantizaciones: las 12 variantes permiten medir la degradación de calidad frente al tamaño en un mismo modelo base.
-- Chatbot de soporte técnico ligero: con contexto limitado y en un único idioma, podría servir para respuestas acotadas sobre documentación técnica, siempre que se valide su calidad real.
+- Asistente de programación en local: con la cuantización Q4_K_M (16,9 GB) el modelo puede ejecutarse en una GPU de consumo de 24 GB y asistir en autocompletado, refactorización y explicación de código sin enviar datos a la nube.
+- Revisión de código en pipelines de CI/CD: su soporte de tool calling y su especialización en código permiten integrarlo como paso de análisis que consulte repositorios o ejecute comprobaciones mediante funciones externas.
+- Agentes autónomos de resolución de tareas: la combinación de razonamiento multi-paso y tool-use lo hace adecuado para orquestar llamadas a APIs y encadenar acciones en flujos de trabajo automatizados.
+- Análisis de capturas y diagramas técnicos: al ser multimodal, puede recibir una imagen (por ejemplo, un diagrama de arquitectura o una captura de error) junto con una pregunta en texto y devolver una explicación o un parche de código.
+- Asistencia técnica bilingüe inglés-chino: útil para equipos que trabajan con documentación o usuarios en esos dos idiomas, con conversaciones multi-turno.
+- Despliegue en estaciones de trabajo sin GPU dedicada de gran tamaño: las cuantizaciones Q2_K (11,0 GB) y Q3_K_S (12,4 GB) permiten ejecución en equipos con 12-16 GB de VRAM o incluso en CPU con llama.cpp, a costa de calidad.
+- Prototipado rápido de aplicaciones de código: la disponibilidad en GGUF facilita probar el modelo con Ollama o llama.cpp antes de decidir un despliegue mayor con vLLM sobre los pesos originales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión, ya que el número de parámetros real (460 M) no coincide con el nombre del repo (27B). Si se confirma el tamaño de 460 M, las cuantizaciones Q4_K_M ocuparían aproximadamente 300-400 MB; si el modelo real fuese de 27B, Q4_K_M requeriría en torno a 16-17 GB.
-- GPU recomendadas: no disponible; dependería del tamaño real del modelo.
-- Compatibilidad con GPU de consumo: probable en cualquier GPU moderna si el modelo real es de 460 M; para 27B se necesitarían GPUs con 24 GB o más (RTX 4090, A6000) o configuraciones multi-GPU.
-- Opciones de despliegue: llama.cpp, Ollama (previa importación del GGUF), y servidores compatibles con GGUF; no se confirma soporte en vLLM o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia según cuantización: Q2_K ~11,0 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. Añadir ~0,7 GB (mmproj Q8_0) o ~1,0 GB (mmproj f16) si se usa la parte multimodal.
+- GPU recomendadas: para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q8_0 se requiere una GPU de 32 GB o más (A100 40 GB, H100, o reparto en varias GPU).
+- Cabe en GPU de consumo: sí, en tarjetas de 16 GB con cuantizaciones Q3 y en tarjetas de 24 GB con Q4_K_M, Q5_K_M e incluso Q6_K (22,5 GB, justo al límite).
+- Opciones de despliegue: llama.cpp y runners basados en él (Ollama, LM Studio, llama-cpp-python) para los GGUF; vLLM y transformers para los pesos originales del modelo base. La model card del autor menciona vLLM entre las etiquetas.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información suficiente sobre el modelo base ni sobre alternativas comparables en la documentación proporcionada.
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwopus3.8-27B-Coder-Flash (este) | 27,3B | no disponible | sí | Apache 2.0 | GGUF y safetensors |
+| Modelos de ~27B de la familia Qwen (versiones estándar) | ~27B | no disponible | según variante | variable según versión | safetensors, GGUF |
+| Modelos coder de ~30B de otras familias | ~30B | no disponible | generalmente no | variable | safetensors, GGUF |
+
+No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas concretas en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica de tamaño: los metadatos de safetensors indican 460.730.096 parámetros, mientras que el nombre del repositorio sugiere 27B. Es imprescindible verificar el checkpoint original antes de usar el modelo en producción.
-- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; contactar con el autor del modelo base (Jackrong) antes de desplegarlo.
-- Idiomas no documentados: no hay garantía de soporte multilingüe ni de calidad en castellano.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos: no documentados.
-- Contexto: longitud de ventana desconocida, lo que limita el diseño de aplicaciones que dependan de contexto largo.
-- Repositorio con 0 descargas: no hay evidencia de uso comunitario ni de validación externa de las cuantizaciones.
-- Model card mínima: la ausencia de documentación sobre entrenamiento y evaluación impide garantizar el comportamiento del modelo.
+- Idiomas: la model card solo declara inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Riesgo de alucinación: inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad para este modelo.
+- Sesgos: no se documentan análisis de sesgos en la información disponible.
+- Contexto: se desconoce la longitud máxima de contexto, lo que impide planificar cargas de contexto largo con garantías.
+- Cuantizaciones agresivas: Q2_K y Q3_K_S reducen notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- La parte multimodal requiere descargar y cargar los ficheros mmproj por separado; sin ellos el modelo funciona solo con texto.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Jackrong/Qwopus3.8-27B-Coder-Flash por si añade requisitos adicionales.
+- No hay datos publicados de benchmarks, latencia ni throughput, por lo que la evaluación en producción debe hacerse con pruebas propias.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwopus3.8-27B-Coder-Flash-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Qwopus3.8-27B-Coder-Flash-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwopus3.8-27B-Coder-Flash-GGUF
+- Guía de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

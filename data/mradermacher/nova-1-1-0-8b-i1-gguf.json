@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Fazer o download e instalar o Google Chrome",
-      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
-      "snippet": "Instalar o Chrome off-line Se você tiver problemas para baixar o Chrome no seu computador Windows, use o link alternativo para …"
-    },
-    {
-      "title": "Télécharger et installer Google Chrome",
-      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
-      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
-    },
-    {
-      "title": "Google Chrome'u indirme ve yükleme - Bilgisayar - Google Chrome …",
-      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
-      "snippet": "Topluluk Google Chrome Google Chrome'u indirme ve yükleme Chrome web tarayıcısını ücretsiz olarak indirip yükleyebilir ve web'de …"
-    },
-    {
-      "title": "Stiahnutie a inštalácia prehliadača Google Chrome",
-      "url": "https://support.google.com/chrome/answer/95346?hl=sk&co=GENIE.Platform%3DDesktop",
-      "snippet": "Stiahnutie a inštalácia prehliadača Google Chrome Webový prehliadač Chrome si môžete stiahnuť a nainštalovať bez peňažného …"
-    },
-    {
-      "title": "Google Chrome downloaden en installeren",
-      "url": "https://support.google.com/chrome/answer/95346?hl=nl&co=GENIE.Platform%3DDesktop",
-      "snippet": "Chrome installeren en gebruiken op Linux Gebruik voor de installatie van Chrome dezelfde software als waarmee programma's op je …"
-    }
-  ]
+  "sources": []
 }

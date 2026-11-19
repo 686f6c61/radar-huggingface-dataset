@@ -69,31 +69,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "kataguru/Qwen3.8-27B-Titan-v3.0-1M-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.0-1M-GGUF/tree/main",
-      "snippet": "Instructions to use kataguru/Qwen3.8-27B-Titan-v3.-1M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Local AppsSettings llama.cpp Install (macOS, Linux)"
-    },
-    {
-      "title": "Kataguru Flagship Series - a kataguru Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/kataguru/kataguru-flagship-series",
-      "snippet": "Official Kataguru Flagship Series: Sceptic 35B MoE and Titan 27B Dense with Vision & MTP. GGUF Dual-Quant, vLLM AWQ, and NVFP4."
-    },
-    {
-      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "Qwen3.8-27B | NVIDIA NGC",
-      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
-      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding, coding, multimodal reasoning, long-context processing, tool calling, and agentic tasks."
-    },
-    {
-      "title": "GitHub - syv-ai/HyperQwen: Serve large Qwen models fast on the GPUs you ...",
-      "url": "https://github.com/syv-ai/HyperQwen",
-      "snippet": "Serve large Qwen models fast on the GPUs you actually own. Qwen3.8-27B on a single 24 GB card with vLLM: 127 tok/s single-user (381 when the answer quotes the prompt), ~1,035 tok/s at 64 concurrent, 150k-262k context. vLLM patches, requant pipeline, benchmarks. - syv-ai/HyperQwen"
-    }
-  ]
+  "sources": []
 }

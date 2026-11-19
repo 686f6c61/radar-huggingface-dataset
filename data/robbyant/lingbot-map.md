@@ -2,99 +2,108 @@
 
 ## Resumen
 
-LingBot-Map es un modelo fundacional de reconstruccion 3D en streaming desarrollado por el Robbyant Team. Se presenta como un modelo *feed-forward* que, a partir de una secuencia de imagenes, reconstruye geometria 3D y estima la trayectoria de la camara de forma continua, sin necesidad de ejecutar un bucle de optimizacion iterativa por fotograma. Su propuesta central es el *Geometric Context Transformer* (GCT), una arquitectura que unifica el anclaje de coordenadas, las senales geometricas densas y la correccion de deriva de largo alcance dentro de un unico marco de streaming.
+LingBot-Map es un modelo fundacional de reconstrucción 3D en streaming desarrollado por el equipo Robbyant. Se presenta como un "Geometric Context Transformer" (*feed-forward*) que unifica en un único marco de inferencia el anclaje de coordenadas, las señales geométricas densas y la corrección de deriva de largo alcance, mediante tres mecanismos: contexto de ancla, ventana de referencia de pose y memoria de trayectoria. No es un modelo de lenguaje: es un modelo de visión 3D que consume secuencias de imágenes y produce reconstrucción geométrica y estimación de pose.
 
-El modelo esta disenado para secuencias largas: segun la model card, mantiene inferencia estable a unos 20 FPS a resolucion 518x378 sobre secuencias que superan los 10.000 fotogramas, gracias a una atencion con *paged KV cache* y a un backend FlashInfer. El repositorio ocupa 33,0 GB e incluye pesos en formato ONNX, scripts de demo y un pipeline de renderizado offline. La licencia declarada es Apache-2.0.
+La relevancia técnica del modelo reside en su eficiencia de inferencia: una arquitectura *feed-forward* con atención sobre caché KV paginada que mantiene una velocidad estable de aproximadamente 20 FPS a resolución 518×378 sobre secuencias que superan las 10.000 imágenes. Esto lo sitúa en competencia directa con enfoques de optimización iterativa (estilo SLAM o *bundle adjustment*) y con otros modelos de reconstrucción en streaming, con la ventaja de no requerir optimización por escena.
 
-Es relevante ahora porque ataca un cuello de botella clasico en reconstruccion 3D: los enfoques de optimizacion iterativa (tipo SLAM denso) son precisos pero dificiles de escalar en tiempo real, mientras que los enfoques puramente feed-forward suelen acumular deriva en secuencias largas. LingBot-Map intenta cubrir ambos frentes combinando velocidad de streaming con memoria de trayectoria para corregir la deriva. No se dispone de informacion publica sobre el numero de parametros ni sobre la composicion del dataset de entrenamiento.
+El repositorio ocupa 33 GB y se distribuye con pesos en formato ONNX según las etiquetas de Hugging Face, junto con una librería propia (`lingbot-map`) y scripts de demostración, evaluación y renderizado. La model card declara licencia Apache-2.0 en el *badge* y en el apartado de licencia, aunque el campo de licencia del repositorio en Hugging Face figura como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Geometric Context Transformer (GCT); modelo feed-forward de streaming con atencion de paged KV cache |
+| Arquitectura | Geometric Context Transformer (feed-forward, atencion con cache KV paginada) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (se reporta procesamiento de secuencias de mas de 10.000 fotogramas y ventana de referencia de pose) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo de vision 3D; no aplica idioma en el sentido de NLP) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (segun la etiqueta del repositorio); otros formatos no disponibles |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no expresada en tokens; soporta secuencias de mas de 10.000 frames (probado con ~25.000 frames) |
+| Tipos de cuantizacion | no disponible (se mencionan dtypes bf16 en los scripts; no se documentan cuantizaciones) |
+| Idiomas soportados | no aplica (modelo de vision 3D, no linguistico) |
+| Licencia | Apache-2.0 segun la model card (campo de licencia del repo: no disponible) |
+| Formato de pesos | ONNX (tag del repositorio); no se detalla el conjunto completo de artefactos |
+| Resolucion de inferencia | 518×378 (referencia de rendimiento) |
+| Rendimiento de streaming | ~20 FPS en secuencias largas (>10.000 frames) |
+| Backends de atencion | FlashInfer (recomendado), SDPA |
+| Version de PyTorch recomendada | 2.8.0 con CUDA 12.8 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se describe como un *Geometric Context Transformer* orientado a streaming. Integra tres mecanismos principales: *anchor context* (anclaje de coordenadas), *pose-reference window* (ventana de referencia de pose) y *trajectory memory* (memoria de trayectoria). El objetivo es mantener la coherencia geometrica entre fotogramas y corregir la deriva acumulada en secuencias largas sin recurrir a optimizacion iterativa. La inferencia se apoya en atencion con *paged KV cache* (backend FlashInfer recomendado, con backend SDPA como alternativa) para poder procesar flujos de video extensos con memoria acotada.
+LingBot-Map se articula en torno a un transformer de contexto geometrico que procesa la secuencia de entrada de forma *feed-forward*, sin optimizacion iterativa por escena. La model card identifica tres componentes clave: el **contexto de ancla** (*anchor context*), que fija referencias de coordenadas globales; la **ventana de referencia de pose** (*pose-reference window*), que aporta senales geometricas densas locales; y la **memoria de trayectoria** (*trajectory memory*), orientada a corregir la deriva acumulada en secuencias largas. La atencion se implementa sobre una cache KV paginada, lo que permite reutilizar estado entre frames y mantener el coste de inferencia acotado en secuencias de decenas de miles de imagenes.
 
-El modelo es feed-forward, es decir, produce la reconstruccion y la pose en una pasada, lo que le permite alcanzar aproximadamente 20 FPS a 518x378 sobre secuencias de mas de 10.000 fotogramas. La model card menciona un modo de inferencia por ventanas (*windowed inference*) para secuencias superiores a 3.000 fotogramas e incluye un pipeline de renderizado offline para videos muy largos (hay un ejemplo de unos 25.000 fotogramas, unos 13 minutos de recorrido interior). No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO (propias, por otro lado, de modelos de lenguaje y no de un modelo geometrico de este tipo). Tampoco se detallan innovaciones de decodificacion especulativa ni de atencion lineal.
+El modelo incorpora soporte de compilacion (`--compile`) y dos backends de atencion: FlashInfer, recomendado para maximo rendimiento, y SDPA, cuyo bug de cache KV se corrigio el 28 de junio de 2026 mejorando su comportamiento en secuencias largas. La model card documenta correcciones relevantes de ingenieria (cache de no-keyframes con `--keyframe_interval > 1`, corregido el 24 de abril de 2026) que afectan a la calidad de pose y reconstruccion por encima de 320 frames. No se detallan en la informacion disponible el numero de tokens o imagenes de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF/DPO (no aplicables en un modelo de vision 3D).
 
 ## Capacidades
 
-- Reconstruccion 3D densa en streaming a partir de secuencias de imagenes.
-- Estimacion de pose de camara y seguimiento de trayectoria a lo largo de la secuencia.
-- Correccion de deriva de largo alcance mediante memoria de trayectoria.
-- Inferencia feed-forward con atencion de paged KV cache, orientada a tiempo real (unos 20 FPS a 518x378).
-- Procesamiento de secuencias muy largas: se reportan ejemplos de mas de 10.000 fotogramas y de aproximadamente 25.000 fotogramas en el caso de demostracion largo.
-- Inferencia por ventanas para secuencias superiores a 3.000 fotogramas.
-- Soporte de intervalo entre fotogramas clave (*keyframe interval*) en el streaming.
-- Enmascarado de cielo (*sky masking*) como opcion de preprocesado.
-- Pipeline de renderizado offline por lotes para generar reconstrucciones de video largas.
+- Reconstruccion 3D densa en streaming a partir de secuencias de imagenes, con inferencia *feed-forward* sin optimizacion por escena.
+- Estimacion de pose de camara y correccion de deriva de largo alcance mediante memoria de trayectoria.
+- Procesamiento de secuencias muy largas: mas de 10.000 frames de forma estable y ejemplos de ~25.000 frames (13 minutos de recorrido interior).
+- Inferencia en ventana (*windowed inference*) para secuencias que superan los 3.000 frames, con gestion de intervalos de keyframes.
+- Enmascaramiento de cielo (*sky masking*) para mejorar la calidad geometrica en escenas exteriores.
+- Renderizado offline mediante pipeline por lotes (`demo_render/batch_demo.py`), con soporte de NVIDIA Kaolin.
 - Escenarios cubiertos en las demos: interiores, exteriores, aereos y escenas de LingBot-World.
+- Evaluacion reproducible sobre multiples datasets: KITTI, Oxford Spires, VBR, Droid-W, TUM-D, 7-scenes, ETH3D, Tanks and Temples y NRGBD.
 
 ## Casos de uso
 
-- SLAM y odometria visual: el modelo puede sustituir o complementar el front-end de un sistema de localizacion y mapeo, estimando pose y geometria de forma feed-forward, lo que reduce la latencia frente a la optimizacion iterativa clasica.
-- Robotica movil: un robot que recorre un edificio durante minutos puede usar el modelo para reconstruir su entorno y localizarse, apoyandose en la memoria de trayectoria para limitar la deriva en recorridos largos.
-- Realidad aumentada y realidad virtual: la estimacion de pose por fotograma a unos 20 FPS permite anclar contenido virtual sobre el entorno capturado por la camara del dispositivo en escenas de interior.
-- Mapeo aereo con drones: el caso de demostracion aereo sugiere su uso para reconstruir terreno y trayectorias de vuelo a partir de video capturado por UAV.
-- Gemelos digitales y captura de interiores: el ejemplo de recorrido interior de 13 minutos indica su idoneidad para digitalizar espacios grandes recorridos a pie con una sola camara.
-- Conduccion autonoma y vehiculos: el benchmark sobre KITTI apunta a su evaluacion en escenarios de conduccion, donde la estimacion de pose y la reconstruccion del entorno son tareas relevantes.
-- Postproduccion y VFX: el pipeline de renderizado offline permite procesar metraje largo para extraer geometria y trayectorias de camara que alimenten herramientas de efectos o de reconstruccion.
-- Analisis de grandes volmenes de video: gracias a la inferencia por ventanas, se pueden procesar grabaciones de decenas de miles de fotogramas sin desbordar memoria.
+- **Digitalizacion de interiores a gran escala**: recorridos de video de 13 minutos y ~25.000 frames pueden procesarse con el pipeline offline para generar mapas 3D navegables de edificios, aprovechando la memoria de trayectoria para evitar deriva acumulada.
+- **SLAM visual en robots y drones**: la inferencia a ~20 FPS a 518×378 permite usar el modelo como estimador de pose y mapa en tiempo real sobre hardware con GPU, sustituyendo pipelines de optimizacion iterativa.
+- **Reconstruccion aerea con drones**: las demos aereas y el enmascaramiento de cielo lo hacen adecuado para fotogrametria de exteriores donde el cielo domina parte del encuadre.
+- **Gemelos digitales y escaneo de patrimonio**: reconstruccion de escenas sin necesidad de calibracion ni *bundle adjustment* manual, util para catalogar espacios fisicos con captura unicamente de video.
+- **Generacion de contenido 3D para videojuegos y VFX**: el pipeline de renderizado por lotes permite convertir capturas en mallas y vistas renderizadas para *previz* o entornos virtuales.
+- **Evaluacion y benchmarking de vision 3D**: los scripts publicados para KITTI, Oxford Spires, ETH3D, Tanks and Temples y otros permiten integrar el modelo como *baseline* en experimentos de reconstruccion y odometria visual.
+- **Analisis de video largo en vigilancia o inspeccion**: la ventana deslizante y la cache KV paginada permiten procesar grabaciones extensas sin reiniciar el estado geometrico.
 
 ## Benchmarks y rendimiento
 
-La model card indica que se publicaron scripts de evaluacion para KITTI y Oxford Spires, y que el pipeline de evaluacion cubre ademas los datasets VBR, Droid-W, TUM-D, 7-scenes, ETH3D, Tanks and Temples y NRGBD. Sin embargo, en la informacion proporcionada no se incluyen cifras numericas de resultados (por ejemplo, errores de pose o metricas de reconstruccion) ni comparaciones cuantitativas.
+La model card afirma un rendimiento "state-of-the-art" frente a enfoques de streaming y de optimizacion iterativa en diversos benchmarks, y publica scripts de evaluacion para KITTI, Oxford Spires, VBR, Droid-W, TUM-D, 7-scenes, ETH3D, Tanks and Temples y NRGBD. Sin embargo, en la informacion proporcionada no se incluyen tablas con valores numericos de metricas (ATE, RPE, completitud, precision, etc.).
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
+
+Datos de rendimiento operativo si documentados:
+
+| Metrica | Valor |
+|---|---|
+| Resolucion de referencia | 518×378 |
+| Throughput en streaming | ~20 FPS |
+| Longitud de secuencia estable | >10.000 frames |
+| Ejemplo maximo documentado | ~25.000 frames (13 min) |
+| Backend recomendado | FlashInfer (cache KV paginada) |
+| Precision de calculo en scripts | bf16 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada.
-- Tamano del repositorio: 33,0 GB (incluye pesos y scripts; el peso en memoria depende del formato y precision cargados).
-- GPUs recomendadas: no disponible de forma explicita. El entorno declarado es CUDA 12.8 con PyTorch 2.8.0.
-- Compatibilidad con GPU de consumo: no disponible. No se indica si cabe en GPUs como RTX 4090 o similares.
-- Backends de atencion: FlashInfer (recomendado para maxima velocidad) y SDPA (alternativa; se corrigio un bug de KV cache en 2026-06-28 y ahora rinde mejor en secuencias largas).
-- Aceleracion: se ofrece la opcion `--compile` (por ejemplo, `python demo.py --compile`) para compilar y acelerar la inferencia.
-- Opciones de despliegue: demo interactiva (`demo.py`), pipeline de renderizado offline por lotes (`demo_render/batch_demo.py`) y perfilado (`gct_profile.py`). No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables directamente a este tipo de modelo).
-- Latencia y throughput: aproximadamente 20 FPS a resolucion 518x378 en secuencias superiores a 10.000 fotogramas, segun la model card.
-- Dependencias: Python 3.10, PyTorch 2.8.0 y torchvision 0.23.0 (CUDA 12.8); NVIDIA Kaolin necesario para el pipeline de renderizado por lotes.
+- **VRAM estimada**: no disponible de forma explicita; el repositorio pesa 33 GB y la inferencia se ejecuta en bf16, por lo que se requiere una GPU con memoria suficiente para los pesos y la cache KV paginada de la secuencia.
+- **GPU recomendadas**: no se listan modelos concretos en la informacion disponible; se asume hardware NVIDIA con CUDA 12.8 (PyTorch 2.8.0) por el uso de FlashInfer y Kaolin.
+- **GPU de consumo**: no confirmado. El tamaÃ±o del repositorio (33 GB) y la ausencia de cuantizaciones documentadas hacen improbable su ejecucion en GPUs de consumo con menos de 24 GB sin cuantizar.
+- **Despliegue**: instalacion via `pip install -e .` sobre entorno conda con Python 3.10; backend de atencion FlashInfer (`flashinfer-python`, JIT) o SDPA; compilacion opcional con `--compile`; renderizado por lotes con NVIDIA Kaolin.
+- **Latencia y throughput**: ~20 FPS a 518×378 en secuencias largas; el resto de configuraciones no esta documentado.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos cuantitativos sobre modelos comparables. La propia model card afirma que el modelo obtiene "rendimiento de vanguardia" frente a enfoques de streaming existentes y a enfoques basados en optimizacion iterativa, pero no incluye cifras ni nombres que permitan construir una tabla comparativa fiable.
+No se proporcionan en la informacion disponible datos numericos ni nombres de modelos comparables con los que establecer una tabla de parametros, contexto, rendimiento y licencia. La model card solo indica comparaciones genericas frente a "enfoques de streaming existentes" y "metodos de optimizacion iterativa", sin identificarlos.
 
-Comparativa con modelos similares: no disponible.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LingBot-Map | no disponible | >10.000 frames | ~20 FPS a 518×378; SOTA declarado sin cifras | Apache-2.0 (segun model card) | Hugging Face, ModelScope |
+| Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Deriva acumulada: aunque el modelo incorpora memoria de trayectoria para corregirla, la propia model card documenta correcciones de errores relacionadas con la calidad de pose y reconstruccion en secuencias largas (por ejemplo, el bug de KV cache con `--keyframe_interval > 1` que afectaba a mas de 320 fotogramas), lo que indica que la robustez en secuencias muy largas ha requerido ajustes.
-- Dependencia del backend: el rendimiento optimo depende de FlashInfer; con SDPA el comportamiento en secuencias largas es inferior.
-- Memoria en secuencias muy largas: para mas de 3.000 fotogramas se recomienda inferencia por ventanas, lo que sugiere limitaciones de memoria en el procesamiento continuo.
-- Preprocesado especifico: ciertos escenarios requieren pasos adicionales, como el enmascarado de cielo o el preprocesado del dataset Oxford Spires antes de la evaluacion.
-- Datos ausentes en la model card: no se publican numero de parametros, composicion del dataset de entrenamiento, idiomas ni tipos de cuantizacion, lo que dificulta anticipar el comportamiento fuera de los escenarios de demostracion.
-- Sesgos: no disponible. No se documentan sesgos conocidos.
-- Riesgo de alucinacion: no aplicable en el sentido de generacion de lenguaje; en su lugar, el riesgo relevante es de reconstruccion geometrica incorrecta o de estimacion de pose erronea en regiones con poca textura o movimiento.
-- Licencia: Apache-2.0, que en principio permite uso comercial, pero conviene revisar el archivo `LICENSE.txt` del repositorio y las licencias de las dependencias (por ejemplo, NVIDIA Kaolin) antes de desplegar en produccion.
-- Fecha e identificador del paper: el identificador indicado es arXiv:2604.14141; conviene verificar su disponibilidad real antes de citarlo.
+- **Ausencia de metricas publicas en la informacion disponible**: la afirmacion de SOTA no viene acompanada de cifras verificables en la model card consultada; conviene ejecutar los scripts de evaluacion antes de adoptarlo en produccion.
+- **Licencia ambigua en el repositorio**: el campo de licencia de Hugging Face figura como no disponible, aunque la model card declara Apache-2.0. Verificar `LICENSE.txt` antes de uso comercial.
+- **Requisitos de hardware elevados**: 33 GB de repositorio y ausencia de cuantizaciones documentadas limitan su despliegue a GPUs profesionales.
+- **Dependencia de ecosistema NVIDIA**: FlashInfer, Kaolin y CUDA 12.8 condicionan el entorno; el renderizado por lotes exige PyTorch 2.8.0 o compilar Kaolin desde fuente.
+- **Historial de bugs en cache KV**: se documentan correcciones en abril y junio de 2026 que afectaban a calidad de pose y reconstruccion en secuencias largas; usar versiones recientes de `main`.
+- **Deriva en secuencias extremas**: aunque el modelo incorpora memoria de trayectoria, no se documentan garantias de precision absoluta mas alla de los ejemplos publicados.
+- **Idiomas y sesgos**: no aplica soporte linguistico; los sesgos potenciales serian geometricos (escenas sin textura, superficies reflectantes, iluminacion adversa), no documentados en la informacion disponible.
+- **Resolucion fija de referencia**: el rendimiento de ~20 FPS se declara a 518×378; no se especifica el comportamiento a resoluciones superiores.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/robbyant/lingbot-map
+- Hugging Face: https://huggingface.co/robbyant/lingbot-map
 - Paper (arXiv): https://arxiv.org/abs/2604.14141
-- PDF del paper: lingbot-map_paper.pdf (referenciado en el repositorio)
+- PDF del paper: `lingbot-map_paper.pdf` (referenciado en la model card)
 - Web del proyecto: https://technology.robbyant.com/lingbot-map
-- Modelo en ModelScope: https://www.modelscope.cn/models/Robbyant/lingbot-map
-- Video de demostracion: https://github.com/user-attachments/assets/fe39e095-af2c-4ec9-b68d-a8ba97e505ab
-- Repositorio de codigo: no disponible en la informacion proporcionada
+- ModelScope: https://www.modelscope.cn/models/Robbyant/lingbot-map
+- Licencia: `LICENSE.txt` en el repositorio
 - Documentacion de FlashInfer: https://docs.flashinfer.ai/installation.html
 - PyTorch Get Started: https://pytorch.org/get-started/locally/

@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "jeffmhopkins/stable-audio-open-1.0-onnx",
+  "slug": "jeffmhopkins-stable-audio-open-1-0-onnx",
+  "author": "jeffmhopkins",
+  "url": "https://huggingface.co/jeffmhopkins/stable-audio-open-1.0-onnx",
+  "created_at": "2026-11-19T02:13:16.000Z",
+  "updated_at": "2026-11-19T02:27:53.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "text-to-audio",
+    "stable-audio",
+    "base_model:stabilityai/stable-audio-open-1.0",
+    "base_model:quantized:stabilityai/stable-audio-open-1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4763599907,
+  "storage_human": "4.8 GB",
+  "context_length": null,
+  "base_model": "stabilityai/stable-audio-open-1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance."
+    }
+  ]
+}

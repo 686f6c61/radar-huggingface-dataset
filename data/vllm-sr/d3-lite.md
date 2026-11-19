@@ -2,138 +2,99 @@
 
 ## Resumen
 
-d3-lite es un modelo de decisión multimodal de 0,85B de parámetros desarrollado por el equipo de vLLM Semantic Router (vllm-sr), presentado como la base de la familia Decision 3.0. A diferencia de un modelo generativo convencional, no produce texto: recibe un estado de entrada (texto plano o JSON, opcionalmente acompañado de una o varias imágenes) junto con un conjunto de preguntas y devuelve, en una sola llamada, una probabilidad para cada respuesta posible. Los tres tipos de pregunta soportados son elección entre opciones (choice), sí/no y puntuación en una escala (score).
+d3-lite es un modelo de decisión multimodal de 0,85B parámetros desarrollado por vllm-sr como parte de la familia Decision 3.0 del proyecto vLLM Semantic Router. A diferencia de un modelo generativo convencional, no produce texto: recibe una entrada (texto o JSON, opcionalmente acompañada de imágenes y vídeos) junto con una o varias preguntas tipificadas (elección entre opciones, sí/no o puntuación en una escala) y devuelve una probabilidad para cada respuesta en una sola llamada. Está construido sobre Qwen/Qwen3.5-0.8B mediante fine-tuning y emplea una arquitectura con capas de atención lineal (compatible con los kernels de `flash-linear-attention`).
 
-El modelo parte de Qwen/Qwen3.5-0.8B, sobre el que se ha hecho un ajuste específico para tareas de clasificación y enrutado, e incorpora un encoder de visión de 0,10B parámetros sobre los 0,85B totales. Está publicado en Hugging Face bajo licencia Apache-2.0, con pesos en safetensors y código personalizado que requiere `trust_remote_code=True`. Su relevancia práctica está en el enrutado semántico: sustituye a un LLM generativo en tareas de decisión de bajísima latencia (mediana de 23,5 ms por petición de texto en una AMD Instinct MI325X), lo que permite clasificar, triar y enrutar tráfico dentro de un router semántico sin el coste de generar tokens.
+El modelo está pensado para enrutamiento y clasificación de baja latencia dentro de infraestructuras de inferencia: decidir qué equipo o pipeline debe atender una petición, responder preguntas booleanas sobre el contenido o puntuar urgencia. Con 0,85B parámetros totales (incluido un codificador visual de 0,10B) y licencia Apache-2.0, se posiciona como una alternativa ligera a modelos generativos para tareas de clasificación zero-shot.
 
-El modelo reporta un Jev Decision Index 0.3.1 de 27,6 (35,6 en el conjunto público) y un índice de visión de 41,1, con mejoras declaradas de +15,1 puntos sobre su predecesor Decision 2.0 en la suite pública. Es, por tanto, un componente de infraestructura más que un asistente: un clasificador multimodal pequeño pensado para integrarse en pipelines de decisión.
+Su relevancia actual radica en tres factores: el rendimiento declarado en el Jev Decision Index 0.3.2 (32,3 en el tablero oficial de texto, primero entre entradas de tamaño similar), la latencia reportada (mediana de 13,6 ms para texto en una AMD Instinct MI325X) y la capacidad de procesar varias preguntas en una sola llamada, lo que reduce el coste frente a múltiples pasadas de un LLM generativo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con capas de atencion lineal (se menciona `flash-linear-attention`), derivada de Qwen/Qwen3.5-0.8B, con encoder de vision y cabezas de clasificacion para decision |
-| Parametros totales | 852.985.920 (aproximadamente 0,85B), de los cuales 0,10B corresponden al encoder de vision |
-| Parametros activos | No aplica (no es MoE; no disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible. Solo se publican pesos en safetensors; no se ofrecen versiones GGUF, AWQ, GPTQ ni cuantizaciones oficiales |
-| Idiomas soportados | No disponible (la model card no declara idiomas) |
+| Arquitectura | Transformer con capas de atención lineal (base Qwen3.5-0.8B), codificador visual de 0,10B; salida de clasificación por probabilidad |
+| Parametros totales | 852.985.920 (0,85B, incluido el codificador visual de 0,10B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin indicar variantes cuantizadas) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (repo de 1,7 GB, compatible con bf16 para el numero de parametros declarado) |
+| Formato de pesos | safetensors (librería transformers, requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-d3-lite es un transformer derivado de Qwen/Qwen3.5-0.8B con capas de atención lineal, para las que el quickstart recomienda instalar `flash-linear-attention` como kernels rápidos opcionales en GPU. Sobre esa base se añade un encoder de visión de 0,10B parámetros que procesa cada imagen a una resolución de hasta 1,6 megapíxeles; las imágenes se colocan antes del texto de la petición y todas las preguntas del request las ven. El modelo no genera texto: cada pregunta se responde mediante su propio forward pass sobre la entrada y se devuelve una distribución de probabilidad sobre las opciones definidas.
+d3-lite parte de Qwen/Qwen3.5-0.8B y se fine-tunea como modelo de decisión ("system-one"), es decir, un modelo que emite probabilidades sobre opciones predefinidas en lugar de generar secuencias de tokens. La arquitectura combina capas de atención estándar con capas de atención lineal, para las que el autor recomienda instalar `flash-linear-attention` como kernels rápidos en GPU. Incluye un codificador visual de 0,10B parámetros que permite procesar varias imágenes o vídeos por petición; los vídeos se leen a 2 fotogramas por segundo.
 
-La información publicada no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF, DPO u otras. Sí se describe el comportamiento funcional: un único método `system_one(state=..., questions=..., images=...)` que agrupa preguntas de tipo choice, sí/no y score en una sola llamada, aceptando imágenes como rutas locales, URL http(s), objetos PIL o data URLs en base64. La evaluación se realiza con el kit oficial Jev Decision Index 0.3.1, con datos de board de texto del 10-10-2026 y de visión del 09-10-2026.
+Cada pregunta de una petición se responde con su propio forward pass sobre la entrada, y el modelo devuelve una probabilidad para cada opción. El autor reporta que, con una petición por forward (el modo por defecto anterior), las respuestas son idénticas a las de AutoModel. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Decision por eleccion multiple: clasifica la entrada en una de varias categorias definidas por el usuario mediante `criteria`, con una probabilidad por opcion.
-- Decision booleana (si/no): responde preguntas cerradas sobre el estado de entrada (en el ejemplo de la model card, el identificador de tipo usado es `noul`).
-- Puntuacion en escala: asigna la entrada a un nivel de una escala ordenada (por ejemplo, Routine / Soon / Today) con probabilidad por nivel.
-- Multiples preguntas en una sola llamada: preguntas de los tres tipos sobre la misma entrada se responden juntas, cada una con su propio forward pass.
-- Entrada de texto y JSON: el estado puede ser lenguaje natural o datos estructurados.
-- Vision multimodal: acepta varias imagenes por peticion (PNG, JPEG, WebP) como rutas, URL, PIL o base64; cada pregunta ve todas las imagenes.
-- Lectura de documentos: en los benchmarks publicados obtiene 90,9 en KIE (CORD+FUNSD), 72,1 en InfographicVQA y 68,9 en CharXiv, lo que indica capacidad de extraer informacion de recibos, facturas, infograficos y graficos.
-- Sin generacion de texto: la salida es siempre un conjunto de probabilidades, no una respuesta redactada.
-- No se declara soporte de tool calling, function calling, agentes ni modo de razonamiento explicito (thinking mode).
+- Clasificación zero-shot con tres tipos de pregunta: elección entre opciones (`choice`), sí/no (`noul`) y puntuación en escala (`score`).
+- Procesamiento de texto y JSON como entrada de estado.
+- Procesamiento de imágenes (PNG, JPEG, WebP) en múltiples instancias por petición, desde rutas locales, URLs, objetos PIL o data URLs base64.
+- Procesamiento de vídeo (MP4, WebM, MOV, MKV) en múltiples instancias por petición, desde rutas, URLs, base64 o arrays de fotogramas, a 2 fps.
+- Respuesta a varias preguntas en una sola llamada, cada una con su propia pasada sobre la entrada.
+- Salida de probabilidades por opción, sin generación de texto.
+- Integración con vLLM Semantic Router para enrutamiento y batching.
 
 ## Casos de uso
 
-- Enrutado semantico en produccion: sustituir una llamada a un LLM generativo por d3-lite para decidir a que equipo, modelo o cola debe ir una peticion (por ejemplo, returns / billing / technical), con latencias de decenas de milisegundos frente a cientos o miles de un modelo generativo.
-- Triage de tickets de soporte: combinar una pregunta de eleccion (departamento) con una de puntuacion (urgencia) y una booleana (¿adjunta recibo?) en una sola llamada, lo que reduce el coste por ticket al no generar texto.
-- Clasificacion zero-shot de textos: el pipeline declarado (`zero-shot-classification`) permite etiquetar contenido sin entrenamiento adicional, definiendo las categorias en el campo `criteria` de cada pregunta.
-- Verificacion documental multimodal: comprobar si un recibo o factura adjunta contiene un producto, una fecha o un importe concretos, apoyandose en el encoder de vision y en el rendimiento declarado en KIE (90,9 en CORD+FUNSD).
-- Moderacion de contenido preliminar: usar preguntas booleanas y de eleccion para marcar contenido dudoso antes de enviarlo a un moderador humano o a un modelo mayor; conviene tener en cuenta el bajo resultado declarado en Hateful Memes (10,5).
-- Extraccion de datos de infograficos y graficos: con 72,1 en InfographicVQA y 68,9 en CharXiv, puede responder preguntas concretas sobre figuras y documentos visuales densos sin generar texto libre.
-- Prefiltro para agentes: actuar como primera etapa de un agente que decide si una peticion requiere multi-step reasoning, tool calling o vision antes de invocar el modelo grande.
-- Evaluacion de accesibilidad o de calidad de interfaz: preguntas booleanas sobre capturas de pantalla (por ejemplo, presencia de un elemento) usando el modo de multiples imagenes.
+- Enrutamiento de tickets de soporte: dado el texto de una incidencia, decidir con una pregunta `choice` qué equipo (devoluciones, facturación, técnico) debe atenderla, con la probabilidad asociada para aplicar umbrales de escalado.
+- Verificación documental con imagen: adjuntar una factura o recibo y responder preguntas `noul` sobre su contenido (por ejemplo, si figura un producto concreto) sin necesidad de OCR ni de un LLM generativo.
+- Triaje de urgencia: usar preguntas `score` para puntuar la urgencia de una petición en una escala definida y priorizar la cola de atención.
+- Moderación y filtrado previo: clasificar contenido entrante en categorías predefinidas antes de pasarlo a un modelo mayor, reduciendo el coste computacional del pipeline.
+- Análisis de vídeo de vigilancia o pruebas: responder preguntas sobre dirección de movimiento o cambios de color en clips cortos a 2 fps, útil para validación automatizada de cámaras.
+- Puerta de decisión en pipelines de agentes: decidir si una consulta requiere herramientas externas, recuperación o respuesta directa, integrándose en el router semántico de vLLM.
+- Clasificación por lotes de alto rendimiento: con 518 peticiones/s y p99 inferior a 1 s por GPU MI325X según el autor, adecuado para preclasificar grandes volúmenes antes de un modelo generativo.
 
 ## Benchmarks y rendimiento
 
-Indice Jev Decision 0.3.1 (texto):
-
-| Modelo | Jev Decision Index | Publico | Same-skill tests | New-domain tasks |
-|---|---:|---:|---:|---:|
-| d3-lite | 27,6 | 35,6 | 32,1 | 18,2 |
-| jiwo 0.8B | 24,3 | 28,7 | 28,3 | 18,1 |
-| EXAONE-4.0-1.2B-JEV v0.3 | 23,3 | 30,7 | 26,9 | 16,4 |
-| OneJev 0.8B | 20,5 | 22,2 | 21,8 | 19,9 |
-| JPT-0.8B Qwen3.5-0.8B LoRA | 18,7 | 19,4 | 17,8 | 22,0 |
-| Decision 2.0 (0.8B) | 17,5 | 20,6 | 21,3 | 13,9 |
-
-Indice Jev vision board 0.3.1:
-
-| Modelo | Vision Index | Publico | Privado |
-|---|---:|---:|---:|
-| d3-lite | 41,1 | 46,5 | 35,6 |
-| JPT-0.8B | 42,1 | 44,6 | 39,7 |
-| OneJev 0.8B | 41,5 | 46,5 | 36,5 |
-| Intern-Decision-0.8B | 36,3 | 39,0 | 33,7 |
-
-Benchmarks publicos de vision de d3-lite († reconstruccion aproximada):
-
-| Benchmark | d3-lite |
-|---|---:|
-| CV-Bench | 57,6 |
-| BLINK | 34,8 |
-| RealWorldQA | 35,4 |
-| CharXiv † | 68,9 |
-| InfographicVQA † | 72,1 |
-| Mind2Web † | 46,0 |
-| Winoground | 52,0 |
-| KIE (CORD+FUNSD) † | 90,9 |
-| Moderation (Hateful Memes) | 10,5 |
-| R-Bench-M | 6,9 |
-| MMMU-Pro vision | 9,5 |
-
-Los datos son de la evaluacion interna del autor (los comparativos, del board en vivo; texto 10-10-2026, vision 09-10-2026). No se han publicado resultados de benchmarks de texto estandar como MMLU, HumanEval o GSM8K en la informacion disponible.
+| Benchmark | d3-lite | Referencia |
+|---|---|---|
+| Jev Decision Index 0.3.2 (tablero oficial de texto) | 32,3 | Decision 2.0 (0,8B): 17,5 |
+| Suite pública (kit oficial 0.3) | 36,93 | no disponible |
+| Perception Test (video QA de elección múltiple, evaluación interna) | 59,3 | no disponible |
+| Mejora sobre Decision 2.0 en suite pública | +16,4 | — |
+| Mejora sobre Decision 2.0 en tests privados de misma habilidad | +13,5 | — |
+| Mejora sobre Decision 2.0 en tareas de dominio nuevo | +11,8 | — |
+| Latencia mediana, petición de texto | 13,6 ms | MI325X, AutoModel, una petición a la vez |
+| Latencia mediana, petición con imagen | 64,0 ms | MI325X, AutoModel |
+| Latencia mediana, petición con vídeo de 10 s | 291 ms | MI325X, AutoModel |
+| Throughput con vLLM Semantic Router | 518 req/s, p99 < 1 s | MI325X, 7,1× AutoModel |
 
 ## Requisitos de hardware
 
-- Pesos: el repositorio ocupa 1,7 GB en safetensors, coherente con 0,85B parametros en bf16.
-- VRAM estimada para inferencia en bf16/fp16: en torno a 2 GB de pesos mas overhead de activaciones y del encoder de vision; un presupuesto practico de 3-4 GB es razonable.
-- Cuantizacion: no hay versiones cuantizadas oficiales. Si se generasen, int8 requeriria aproximadamente 0,9 GB y int4 aproximadamente 0,5 GB, mas overhead.
-- Cabe en GPU de consumo: si, con margen amplio en cualquier GPU con 6 GB o mas (RTX 3060, RTX 4060, RTX 4070, RTX 4090, etc.). Tambien es viable en CPU para cargas de baja concurrencia, aunque no se publican latencias de CPU.
-- GPU de referencia en las mediciones del autor: una AMD Instinct MI325X, una peticion a la vez.
-- Latencia declarada: mediana de 23,5 ms por peticion de texto y 60,7 ms por peticion con imagen en esa GPU.
-- Throughput: no disponible.
-- Despliegue: via `transformers` con `AutoModel.from_pretrained(..., trust_remote_code=True)` o mediante `transformers.pipeline("decision", ...)`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; la ausencia de pesos GGUF descarta de entrada llama.cpp y Ollama.
-- Dependencias del quickstart: `transformers==5.17.0`, torch, torchvision, pillow, safetensors, accelerate y, opcionalmente, `flash-linear-attention` para kernels de atencion lineal en GPU.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 0,85B parámetros en fp16 el peso ronda 1,7 GB, más el codificador visual y el coste de activaciones, por lo que debería caber en GPUs de consumo con 8 GB o más.
+- GPU recomendadas por el autor: AMD Instinct MI325X (mediciones de latencia y throughput publicadas en esa GPU).
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; por tamaño, es plausible en RTX 4090, RTX 3090 o superiores, pero no hay mediciones publicadas.
+- Opciones de despliegue: AutoModel de transformers (5.17.0), vLLM Semantic Router; se recomienda `flash-linear-attention` para kernels de atención lineal en GPU.
+- Latencia y throughput: mediana de 13,6 ms (texto), 64,0 ms (imagen) y 291 ms (vídeo de 10 s) con AutoModel; 518 req/s con p99 < 1 s en MI325X con vLLM Semantic Router.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Jev Decision Index | Vision Index | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| d3-lite | 0,85B (0,10B vision) | No disponible | 27,6 | 41,1 | Apache-2.0 | Hugging Face (transformers, safetensors) |
-| jiwo 0.8B | 0,8B | No disponible | 24,3 | No disponible | No disponible | No disponible en la informacion proporcionada |
-| EXAONE-4.0-1.2B-JEV v0.3 | 1,2B | No disponible | 23,3 | No disponible | No disponible | No disponible en la informacion proporcionada |
-| OneJev 0.8B | 0,8B | No disponible | 20,5 | 41,5 | No disponible | No disponible en la informacion proporcionada |
-| Decision 2.0 | 0,8B | No disponible | 17,5 | No disponible | No disponible | No disponible en la informacion proporcionada |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| d3-lite | 0,85B | no disponible | Decisión multimodal (texto, imagen, vídeo) con salida de probabilidades | Apache-2.0 | Hugging Face |
+| Decision 2.0 (0,8B) | 0,8B | no disponible | Decisión, predecesor de la familia | no disponible | no disponible |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generativo | no disponible | Hugging Face |
 
-La comparativa se limita a los indices Jev publicados por el autor; no hay datos comparativos de contexto, licencia ni disponibilidad para las alternativas.
+No se dispone de datos de benchmarks comparativos con modelos de clasificación zero-shot de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo no generativo: no produce texto ni razonamiento explicito. Solo devuelve probabilidades, por lo que no puede justificar una decision ni mantener una conversacion.
-- Resultados bajos en varias tareas de vision: 10,5 en Moderation (Hateful Memes), 6,9 en R-Bench-M y 9,5 en MMMU-Pro vision. No es adecuado para moderacion, razonamiento multimodal complejo ni tareas de nivel MMMU.
-- Rendimiento moderado en BLINK (34,8) y RealWorldQA (35,4), por debajo de lo deseable para comprension visual generalista.
-- Riesgo de calibracion: al trabajar con probabilidades, una mala calibracion en dominios nuevos puede producir decisiones erroneas con alta confianza. Las New-domain tasks del autor son las mas bajas de la tabla (18,2), lo que sugiere degradacion fuera de las tareas conocidas.
-- Idiomas: no se declara ningun idioma soportado. Dado el base Qwen, es probable cierto soporte multilingue, pero no esta verificado ni documentado.
-- Longitud de contexto: no disponible, lo que impide planificar escenarios con documentos largos.
-- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, con las obligaciones habituales de atribucion y aviso de cambios.
-- Codigo personalizado: el modelo requiere `trust_remote_code=True`; conviene auditar el codigo remoto antes de desplegarlo en produccion, ya que se ejecuta en el proceso de carga.
-- Sesgos: no se publica ninguna evaluacion de sesgos ni de comportamiento etico. Al ser un clasificador de decision, los sesgos se manifiestan como decisiones sistematicamente sesgadas, que son mas dificiles de detectar que un sesgo en texto generado.
-- Madurez: el repositorio no tiene descargas y solo un like en el momento de la consulta, con fecha de creacion de octubre de 2026; no hay historial de uso en produccion ni auditorias independientes.
+- El modelo no genera texto: solo responde preguntas tipificadas con probabilidades; no sirve para tareas generativas.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de Qwen3.5-0.8B puede heredar sesgos de su corpus de entrenamiento.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades pueden ser erróneas o poco calibradas en dominios alejados de los datos de entrenamiento.
+- Idiomas soportados: no declarados; la model card y los ejemplos están en inglés.
+- Longitud de contexto: no especificada; conviene validar entradas largas antes de producción.
+- Requiere `trust_remote_code=True` y transformers 5.17.0, lo que implica ejecutar código del autor.
+- Rendimiento medido en una GPU AMD Instinct MI325X; el throughput en otras GPUs puede diferir.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar las condiciones de los pesos base de Qwen3.5-0.8B.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-lite
+- Demo: https://decision.vllm-sr.ai
+- Space oficial: https://huggingface.co/spaces/vllm-sr/Decision-3.0
+- Repositorio vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Repositorio del proyecto vLLM Semantic Router: https://github.com/vllm-project/semantic-router
-- vLLM (motor de inferencia): https://vllm.ai/
-- Repositorio de vLLM en GitHub: https://github.com/vllm-project/vllm
-- Documentacion de vLLM: https://docs.vllm.ai/en/latest/
-- vLLM en Wikipedia: https://en.wikipedia.org/wiki/VLLM
-- Guia de instalacion de vLLM: https://docs.vllm.ai/en/latest/getting_started/installation/

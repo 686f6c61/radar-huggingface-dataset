@@ -79,19 +79,19 @@
       "task": "Stablecoin payment risk gating",
       "dataset": "SRA Stablecoin Risk Bench",
       "metric": "SRA composite score",
-      "value": 0.9134
+      "value": 0.9604
     },
     {
       "task": "Stablecoin payment risk gating",
       "dataset": "SRA Stablecoin Risk Bench",
       "metric": "Risk-gate decision accuracy",
-      "value": 0.9949
+      "value": 0.9957
     },
     {
       "task": "Stablecoin payment risk gating",
       "dataset": "SRA Stablecoin Risk Bench",
       "metric": "Unsafe approval rate (lower is better)",
-      "value": 0.0047
+      "value": 0.0035
     },
     {
       "task": "Stablecoin payment risk gating",
@@ -103,25 +103,25 @@
       "task": "Stablecoin payment risk gating",
       "dataset": "SRA Stablecoin Risk Bench",
       "metric": "Injected payments approved (lower is better)",
-      "value": 0.058
+      "value": 0.029
     },
     {
       "task": "Stablecoin dispute adjudication",
       "dataset": "SRA Stablecoin Risk Bench",
       "metric": "Dispute score",
-      "value": 0.8322
+      "value": 0.9254
     },
     {
       "task": "Stablecoin dispute adjudication",
       "dataset": "SRA Stablecoin Risk Bench",
       "metric": "Dispute outcome accuracy",
-      "value": 0.7782
+      "value": 0.9018
     },
     {
       "task": "Stablecoin dispute adjudication",
       "dataset": "SRA Stablecoin Risk Bench",
       "metric": "Impossible remedy rate (lower is better)",
-      "value": 0.0038
+      "value": 0.0057
     },
     {
       "task": "Stablecoin dispute adjudication",
@@ -130,31 +130,5 @@
       "value": 0.022
     }
   ],
-  "sources": [
-    {
-      "title": "Cash Bag PNGs for Free Download - Vecteezy",
-      "url": "https://www.vecteezy.com/free-png/cash-bag",
-      "snippet": "Browse 601 Cash Bag PNGs with transparent backgrounds for royalty free download.Read more"
-    },
-    {
-      "title": "Cash Bag PNG, Vector And Transparent Clipart Images",
-      "url": "https://pngtree.com/free-png-vectors/cash-bag",
-      "snippet": "Pngtree offers cash bag PNG and vector images, as well as transparant background cash bag clipart images and PSD files. …"
-    },
-    {
-      "title": "Cash Bag PNG Transparent Images Free Download | Vector Files",
-      "url": "https://pngtree.com/so/cash-bag",
-      "snippet": "Choose from 310+ Cash Bag graphic resources and download in the form of PNG, EPS, AI or PSD."
-    },
-    {
-      "title": "Money bag png without background Images - Freepik",
-      "url": "https://www.magnific.com/free-photos-vectors/money-bag-png-without-background",
-      "snippet": "Find & Download Free Graphic Resources for Money bag png without background Vectors, Stock Photos & PSD files. Free for …"
-    },
-    {
-      "title": "Cash bag png images - PNGWing",
-      "url": "https://www.pngwing.com/en/search?q=cash+bag",
-      "snippet": "Spotify Music Movie Clips, Money Bag, album, gold, film png."
-    }
-  ]
+  "sources": []
 }

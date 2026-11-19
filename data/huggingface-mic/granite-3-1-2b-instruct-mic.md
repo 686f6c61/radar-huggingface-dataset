@@ -2,89 +2,90 @@
 
 ## Resumen
 
-`granite-3.1-2b-instruct-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic`, derivado de `ibm-granite/granite-3.1-2b-instruct` de IBM. No es un modelo usable en produccion: se trata de un *fixture* de 3.219.968 parametros (3,2 M) construido para validar contratos de integracion de frameworks (Transformers y otros) contra la arquitectura real de Granite sin necesidad de descargar los 2 B de parametros del checkpoint original. El repositorio esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+`huggingface-mic/granite-3.1-2b-instruct-mic` es un artefacto de prueba (fixture) derivado de `ibm-granite/granite-3.1-2b-instruct`, publicado por la organizacion `huggingface-mic`. No es un modelo entrenado ni utilizable para inferencia real: es una version "adelgazada" del checkpoint original, creada para validar contratos de integracion con Transformers. La model card lo etiqueta explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
 
-El modelo conserva la arquitectura `GraniteForCausalLM` del checkpoint base, pero con una configuracion reducida a 2 capas ocultas (`num_hidden_layers: 2`), aplicando la regla generica de reduccion del script `sweep.py` del proyecto `transformers-mic`. Los ficheros de procesador (`tokenizer.json`, `vocab.json`, `merges.txt`, `added_tokens.json`, `generation_config.json`, `special_tokens_map.json`, `tokenizer_config.json`) se copian byte a byte del modelo original, de modo que el tokenizador y la configuracion de generacion son identicos a los de Granite 3.1 2B Instruct.
+El fixture conserva la misma arquitectura (`GraniteForCausalLM`) que el modelo base, pero con una configuracion reducida: solo 2 capas ocultas (`num_hidden_layers 2`) frente a las del checkpoint real. Los pesos son aleatorios (semilla 17), no entrenados, aunque mantienen exactamente los mismos nombres de tensor que el checkpoint original. Los ficheros de procesador (tokenizer, `generation_config.json`, `special_tokens_map.json`, etc.) se copiaron byte a byte desde `ibm-granite/granite-3.1-2b-instruct`.
 
-Su relevancia es puramente de ingenieria: permite ejecutar pruebas de integracion, validacion de contratos y gates de sensibilidad de entrada en CI sin coste de almacenamiento ni de computo. Los pesos son aleatorios (semilla 17) y no han sido entrenados; el propio autor indica que superaron el gate de sensibilidad de entrada (toda perturbacion de las entradas del contrato movio los logits al menos 0,001) y que por ello no fue necesario entrenamiento alguno.
+El interes de este repositorio es de ingenieria, no de modelado: sirve como fixture de test reproducible para verificar que las expectativas de framework (carga, forward, loss, gradientes) se cumplen con la arquitectura Granite. Los pesos suman 3.219.968 parametros reales (segun safetensors), muy lejos de los ~2.000 millones del modelo base, y el repo ocupa 0.0 GB en disco.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (`GraniteForCausalLM`), 2 capas ocultas |
-| Parametros totales | 3.219.968 (3,2 M) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada de la config del base, no verificada) |
-| Tipos de cuantizacion | no disponible; pesos guardados en bfloat16 |
-| Idiomas soportados | no disponibles (tokenizador copiado del base Granite 3.1) |
+| Arquitectura | GraniteForCausalLM (transformer causal, configuracion reducida a 2 capas) |
+| Parametros totales | 3.219.968 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo replica la arquitectura del checkpoint `ibm-granite/granite-3.1-2b-instruct`: un transformer causal decoder-only bajo la clase `GraniteForCausalLM`. La unica diferencia estructural es la profundidad: se ha reducido a `num_hidden_layers: 2` mediante la regla generica de `sweep.py`, manteniendo los mismos nombres de tensores que el checkpoint real. Los ficheros del procesador se copian literalmente del modelo base, por lo que el vocabulario, las reglas de merge BPE y los tokens especiales coinciden exactamente.
+El fixture replica la arquitectura del modelo base Granite (`GraniteForCausalLM`), un transformer causal decoder-only. La unica diferencia estructural es la reduccion del numero de capas ocultas a 2, aplicada mediante la regla generica de adelgazamiento del script `sweep.py` del proyecto `transformers-mic`. Los nombres de tensor coinciden exactamente con los del checkpoint real, de modo que cualquier codigo que espere la arquitectura Granite puede cargar este fixture sin cambios.
 
-No hay entrenamiento. Los pesos se inicializan de forma aleatoria con semilla 17 y se aceptan porque superan el gate de sensibilidad de entrada: cada perturbacion de las entradas del contrato provoca un desplazamiento de logits de al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, alcanza 0,00208). El modelo se guarda en bfloat16, el dtype por defecto con el que carga el checkpoint original, y se verifica que es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y solo se aceptaron tras superar una "puerta de sensibilidad a la entrada": cada perturbacion de las entradas del contrato debia mover los logits al menos 0.001 (el caso mas debil, `attention_mask:all_ones`, movio 0.00208). Los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los ficheros de procesador se copiaron byte a byte desde `ibm-granite/granite-3.1-2b-instruct` (`added_tokens.json`, `generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`). El fixture se genero con `build_fixtures.py` y la procedencia queda registrada en `build.json` (fuentes fijadas, resultados de las puertas y hashes de ficheros).
 
 ## Capacidades
 
-- Ejecucion de forward pass, calculo de loss y retropropagacion de gradientes en float32, bfloat16 y float16.
-- Validacion de contratos de integracion con frameworks (directorio `integrations/transformers/expectations`).
-- Verificacion de compatibilidad de tokenizador y configuracion de generacion contra el modelo base.
-- Pruebas de sensibilidad de entrada (input-sensitivity gate) para detectar regresiones en el pipeline de integracion.
-- No genera texto coherente: los pesos son aleatorios y no ha habido entrenamiento.
-- No soporta tool calling, agentes, vision, audio ni modo thinking de forma funcional.
-- Capacidades multilingues: no disponibles (el tokenizador es el del base, pero el modelo no produce salida util).
+- No tiene capacidades funcionales de generacion de texto, razonamiento, codigo o matematicas: los pesos son aleatorios y el modelo no fue entrenado.
+- No soporta tool calling ni function calling de forma util.
+- No soporta agentes ni razonamiento multi-paso.
+- No tiene capacidades multilingues reales (aunque los ficheros de tokenizer copiados del modelo base estan presentes).
+- Su unica funcion es servir como fixture de test para validar contratos de integracion con Transformers: carga del checkpoint, forward pass, calculo de loss y gradientes en float32, bfloat16 y float16.
+- Mantiene los mismos nombres de tensor que `ibm-granite/granite-3.1-2b-instruct`, lo que permite probar codigo de integracion sin descargar el checkpoint completo.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI: ejecutar la suite de `transformers-mic` contra un checkpoint de 3,2 M de parametros en lugar de los 2 B del original, reduciendo tiempo de descarga y coste de computo por job.
-- Validacion de contratos de framework: comprobar que una nueva version de Transformers sigue cargando `GraniteForCausalLM` con los mismos nombres de tensores y el mismo comportamiento de forward.
-- Regresion de tokenizador: al copiarse los ficheros de procesador byte a byte, cualquier cambio en `tokenizer.json`, `merges.txt` o `special_tokens_map.json` del base puede detectarse comparando hashes contra este fixture.
-- Gate de sensibilidad de entrada: usar las perturbaciones documentadas (`attention_mask:all_ones` con umbral 0,00208) como test automatico de que el modelo responde a cambios en las entradas del contrato.
-- Verificacion de dtypes: comprobar que un pipeline de inferencia o entrenamiento produce valores finitos en float32, bfloat16 y float16 antes de escalar al modelo real.
-- Desarrollo de tooling de fixtures: servir como ejemplo reproducible de como reducir un checkpoint grande a un artefacto de prueba manteniendo arquitectura y tokenizador, segun `build_fixtures.py`.
-- Pruebas de carga y serializacion: validar rutas de carga de safetensors, mapeo de config y gestion de `generation_config.json` sin consumir VRAM significativa.
+- Test de integracion en CI: el fixture permite ejecutar pruebas de carga y forward pass de la arquitectura Granite en pipelines de integracion continua sin necesidad de descargar los ~2.000 millones de parametros del modelo base.
+- Validacion de contratos de framework: los directorios `integrations/transformers/expectations` e `integration.json` definen las expectativas que el codigo de integracion debe cumplir; el fixture permite comprobarlas de forma reproducible.
+- Desarrollo de codigo de carga de modelos: cualquier herramienta que implemente la carga de `GraniteForCausalLM` puede probarse contra este repo ligero antes de enfrentarse al checkpoint real.
+- Pruebas de dtype y estabilidad numerica: al ser finito en float32, bfloat16 y float16, sirve para verificar que rutinas de forward, loss y gradientes no producen NaN/Inf en esos tipos.
+- Verificacion de compatibilidad de tokenizer: los ficheros de procesador copiados byte a byte permiten probar el pipeline de tokenizacion del modelo base sin cargar los pesos reales.
+- Reproduccion de fixtures: `build.json` registra fuentes fijadas y hashes, y `build_fixtures.py --fixture granite-3.1-2b-instruct-mic` permite reconstruir el artefacto de forma determinista.
+- Pruebas de sensibilidad a entradas: la puerta de sensibilidad (perturbaciones que mueven los logits >= 0.001) puede reutilizarse como test de regresion en frameworks de inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que es un artefacto de prueba y no un modelo usable, por lo que no aplica evaluacion de calidad (MMLU, HumanEval, GSM8K u otras).
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K, etc.) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; el checkpoint completo ocupa 0,0 GB en el repositorio (3,2 M de parametros en bfloat16, aproximadamente 6,4 MB de pesos).
-- GPU recomendadas: cualquier GPU consumer o incluso CPU; no requiere A100, H100 ni RTX 4090.
-- Cabe en cualquier GPU consumer (GTX 1050, RTX 3050, RTX 4090) y en CPU.
-- Opciones de despliegue: Transformers (ruta principal, con el contrato documentado en `integrations/transformers/usage.md`); llama.cpp, Ollama, vLLM y TGI no estan documentados para este artefacto y no se garantiza su compatibilidad.
-- Latencia y throughput: no disponibles; al ser un fixture de 2 capas, la latencia es despreciable frente al modelo base.
+- VRAM estimada para inferencia: minima; con 3.219.968 parametros en bfloat16 el peso ronda los 6,4 MB, por lo que cabe en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con soporte bfloat16 (RTX 3090, RTX 4090, A100, H100) o incluso CPU.
+- Cabe en GPU consumer: si, en todas las GPU modernas e integradas.
+- Opciones de despliegue: Transformers (uso previsto, segun `integrations/transformers/usage.md`); vLLM, llama.cpp, Ollama o TGI no estan indicados en la informacion disponible.
+- Latencia y throughput: no disponibles; al ser un fixture de test no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `huggingface-mic/granite-3.1-2b-instruct-mic` | 3,2 M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
-| `ibm-granite/granite-3.1-2b-instruct` | 2 B (aproximado, segun nombre) | no disponible en esta ficha | Modelo instructivo real | no disponible en esta ficha | Hugging Face |
-| Fixtures equivalentes de otras familias en `transformers-mic` | variable | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Proposito | Licencia |
+|---|---|---|---|---|
+| `huggingface-mic/granite-3.1-2b-instruct-mic` (este) | 3.219.968 | no disponible | Fixture de test | no disponible |
+| `ibm-granite/granite-3.1-2b-instruct` (base) | ~2.000 millones (no confirmado en la informacion) | no disponible | Modelo instructivo real | no disponible |
+| Otros fixtures de `transformers-mic` | no disponible | no disponible | Fixtures de test | no disponible |
 
-La comparativa relevante es contra el modelo base: misma arquitectura y tokenizador, pero 625 veces menos parametros (3,2 M frente a 2 B aproximados) y sin entrenamiento. Frente a otros fixtures del mismo proyecto, la diferencia esta en la familia de modelo cubierta (Granite) y en la clave de fixture `2731c71ceeb8`, que agrupa checkpoints con procesador identico y config coincidente tras la reduccion.
+La comparativa relevante es con el modelo base: este repositorio no compite con el en calidad ni capacidades, solo replica su arquitectura a escala reducida para pruebas. No se dispone de datos de benchmarks ni de contexto para ninguno de los modelos comparados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable: los pesos son aleatorios y la salida no tiene sentido linguistico.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
-- Sesgos conocidos: no aplica, al no haber entrenamiento; cualquier sesgo proviene unicamente del tokenizador heredado del base.
-- Riesgo de alucinacion: total, en el sentido de que toda la salida es ruido estadistico sin relacion con la entrada.
-- Limitaciones de contexto e idioma: no verificadas en este artefacto; dependen de la config heredada del base y no se documentan aqui.
-- Restricciones de licencia: la licencia no esta disponible en la informacion proporcionada; verificar la del modelo base antes de cualquier uso derivado.
-- Caveat para produccion: el fixture solo cubre checkpoints cuyo procesador sea byte-identico y cuya config coincida tras la reduccion (clave `2731c71ceeb8`); no sirve para validar diferencias entre checkpoints de la familia.
-- Los ficheros `integration.json`, `build.json` y el directorio `integrations/` forman parte del contrato; reconstruirlos con `python example/build_fixtures.py --fixture granite-3.1-2b-instruct-mic` si se modifican.
+- No es un modelo utilizable: los pesos son aleatorios y el modelo no fue entrenado; cualquier salida de texto seria incoherente.
+- La model card lo marca explicitamente como `test-artifact`; no debe usarse en produccion ni presentarse como modelo de lenguaje.
+- La configuracion esta reducida a 2 capas ocultas, por lo que el comportamiento numerico no representa fielmente el del checkpoint completo de 2B.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; al derivar de `ibm-granite/granite-3.1-2b-instruct`, conviene revisar la licencia del modelo base antes de cualquier uso.
+- Idiomas y contexto no disponibles en la informacion proporcionada.
+- El repositorio ocupa 0.0 GB y contiene solo pesos safetensors, uso de Transformers y expectativas de framework; otros ficheros deben regenerarse con `build_fixtures.py`.
+- Riesgo de confusion: el nombre sugiere un modelo Granite 3.1 2B instructivo, pero el contenido real es un fixture de 3,2M parametros; verificar siempre el tamano antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/granite-3.1-2b-instruct-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/granite-3.1-2b-instruct-mic
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.1-2b-instruct
-- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/granite-3.1-2b-instruct-mic.html
-- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script de reduccion `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Manifest del contrato: `integration.json` (en el repo)
+- Uso con Transformers: `integrations/transformers/usage.md` (en el repo)
+- Expectativas de Transformers: `integrations/transformers/expectations` (en el repo)
+- Procedencia del fixture: `build.json` (en el repo)
+- Explicacion del adelgazamiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/granite-3.1-2b-instruct-mic.html
+- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla generica de adelgazamiento: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

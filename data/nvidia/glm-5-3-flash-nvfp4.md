@@ -2,119 +2,92 @@
 
 ## Resumen
 
-GLM-5.3-Flash NVFP4 es la version cuantizada en formato NVFP4 del modelo GLM-5.3-Flash desarrollado por ZAI (zai-org), publicada por NVIDIA a traves del repositorio nvidia/GLM-5.3-Flash-NVFP4. Se trata de un modelo de lenguaje autorregresivo multimodal nativo con arquitectura Mixture-of-Experts (MoE) orientado a razonamiento, generacion de codigo y tareas agenticas. NVIDIA no es el desarrollador del modelo original: la model card indica explicitamente que el modelo se ha desarrollado segun los requisitos de un tercero, y que la cuantizacion se ha realizado con la herramienta Model Optimizer (nvidia-modelopt v0.47.0).
+NVIDIA GLM-5.3-Flash-NVFP4 es la versión cuantizada a NVFP4 del modelo GLM-5.3-Flash desarrollado por ZAI (zai-org). Se trata de un modelo de lenguaje autorregresivo de tipo Mixture-of-Experts (MoE) nativamente multimodal, orientado a razonamiento, generación de código y tareas agénticas. NVIDIA ha aplicado su herramienta Model Optimizer (nvidia-modelopt v0.47.0) para convertir pesos y activaciones al formato NVFP4 de 4 bits, con el objetivo de reducir el espacio en memoria y acelerar la inferencia en hardware Blackwell sin reentrenar el modelo base.
 
-El modelo combina una arquitectura de atencion hibrida (sparse mas linear) con Manifold-Constrained Hyper-Connections (mHC) para sostener contextos muy largos, que la model card cifra en hasta 1.000.000 de tokens. Acepta entradas de texto, imagen y video, y produce salida de texto. La model card declara 320.000 millones de parametros totales y 18.000 millones activados por token, si bien el recuento real de pesos safetensors del repositorio arroja 168.893.635.422 parametros, una discrepancia que conviene tener presente al planificar el despliegue.
+El modelo cuenta con 320.000 millones de parámetros totales, de los cuales aproximadamente 18.000 millones se activan por token, y admite una longitud de contexto de hasta 1 millón de tokens. Su arquitectura combina atención híbrida (sparse y linear) con Manifold-Constrained Hyper-Connections (mHC), lo que permite sostener contextos muy largos con un coste computacional contenido. Acepta entradas de texto, imagen y vídeo, y produce salidas de texto.
 
-Su relevancia inmediata es de infraestructura: ofrece pesos y activaciones ya cuantizados en NVFP4 listos para servir con vLLM sobre hardware NVIDIA Blackwell, lo que reduce el coste de memoria y de ancho de banda frente a una ejecucion en precision completa. Esta pensado para equipos que despliegan agentes, chatbots y sistemas RAG y quieren evitar el proceso de cuantizacion por su cuenta. La licencia es MIT y el uso comercial esta permitido segun la propia model card.
+La relevancia de esta ficha radica en que ofrece un modelo de gran escala listo para producción en formato cuantizado de 4 bits, con licencia MIT y compatibilidad con vLLM y SGLang sobre GPUs NVIDIA Blackwell (probado en GB200). Esto lo convierte en una opción atractiva para sistemas de agentes, chatbots y pipelines RAG que necesitan contexto largo y capacidades multimodales sin desplegar los pesos en precisión completa.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer autorregresivo multimodal nativo, Mixture-of-Experts (MoE) con atencion hibrida sparse + linear y Manifold-Constrained Hyper-Connections (mHC); clase `Glm5NextForConditionalGeneration` |
-| Parametros totales | 320 B segun la model card; 168.893.635.422 segun los pesos safetensors del repositorio (dato discrepante) |
-| Parametros activos | 18 B (segun la model card) |
-| Longitud de contexto | Hasta 1.000.000 de tokens (1M) |
-| Tipos de cuantizacion | NVFP4 (version 1.0) sobre pesos y activaciones de los operadores lineales |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer MoE multimodal (`Glm5NextForConditionalGeneration`), atención híbrida sparse + linear con Manifold-Constrained Hyper-Connections (mHC) |
+| Parámetros totales | 321.323.031.390 (~320B) |
+| Parámetros activos | ~18B |
+| Longitud de contexto | Hasta 1M tokens |
+| Tipos de cuantización | NVFP4 (pesos y activaciones a 4 bits); etiquetado también como 8-bit en los tags del repo |
+| Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (pesos cuantizados NVFP4) |
-| Modalidades de entrada | Texto, imagen (RGB) y video (MP4/WebM) |
-| Modalidad de salida | Texto (secuencias 1D) |
-| Motor de inferencia soportado | vLLM |
-| Microarquitectura de hardware soportada | NVIDIA Blackwell |
-| Tamano del repositorio | 204,5 GB |
-| Sistema operativo recomendado | Linux |
-| Herramienta de cuantizacion | nvidia-modelopt v0.47.0 (Model Optimizer) |
-| Fecha de publicacion | 09/09/2026 |
+| Formato de pesos | safetensors (repo de 408,9 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer autorregresivo con capas Mixture-of-Experts. La model card describe una arquitectura de atencion hibrida que combina atencion dispersa (sparse) con atencion linear, junto con Manifold-Constrained Hyper-Connections (mHC), un mecanismo de conexion entre capas orientado a estabilizar y sostener el entrenamiento y la inferencia en contextos largos. La clase de implementacion es `Glm5NextForConditionalGeneration`, lo que confirma el tratamiento conjunto de entradas de texto, imagen y video. Con 18.000 millones de parametros activos sobre un total declarado de 320.000 millones, el modelo solo computa una fraccion de sus pesos por token, lo que reduce el coste de calculo por token a cambio de un mayor consumo de memoria.
+GLM-5.3-Flash es un modelo MoE multimodal con arquitectura transformer que combina mecanismos de atención sparse y linear, complementados con Manifold-Constrained Hyper-Connections (mHC) para gestionar contextos de hasta 1M tokens. La variante NVFP4 conserva la arquitectura del modelo base y solo modifica el formato numérico de pesos y activaciones mediante cuantización post-entrenamiento con nvidia-modelopt v0.47.0. Según la model card, únicamente se cuantizan pesos y activaciones de las capas lineales (el texto disponible se interrumpe en ese punto y no detalla el resto).
 
-Sobre el entrenamiento no hay informacion: la model card marca como "undisclosed" la modalidad de datos, el metodo de recoleccion y el metodo de etiquetado. Tampoco se detalla si hubo RLHF o DPO. Lo que si se documenta es el proceso de post-entrenamiento de cuantizacion: los pesos y las activaciones de los operadores lineales de GLM-5.3-Flash se convirtieron a NVFP4 con NVIDIA Model Optimizer v0.47.0. El dataset de calibracion usado fue una combinacion de `cnn_dailymail` (alrededor de 300.000 articulos periodisticos en ingles) y `Nemotron-Post-Training-Dataset-v2` (conversaciones multiturno de NVIDIA sobre temas diversos), ambos de recoleccion y etiquetado automaticos.
+El proceso de calibración utilizó los datasets `cnn_dailymail` (más de 300.000 artículos periodísticos en inglés) y `Nemotron-Post-Training-Dataset-v2` (conversaciones multiturno sobre temas diversos), ambos de recolección y etiquetado automatizados. La model card no detalla la composición del dataset de entrenamiento original del modelo base (figura como "Undisclosed"), ni si hubo RLHF, DPO u otras fases de alineamiento.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en dominios cientificos y de conocimiento general: la evaluacion declarada incluye GPQA Diamond, con preguntas de nivel de posgrado en biologia, fisica y quimica.
-- Generacion y analisis de codigo, incluido codigo cientifico: se evalua con SciCode.
-- Razonamiento multimodal de nivel universitario: se evalua con MMMU Pro, en su variante mas exigente y con entrada exclusivamente visual.
-- Procesamiento de contexto muy largo con recuperacion de informacion: se evalua con AA-LCR, prueba especifica de recall sobre contextos extensos, coherente con la ventana de hasta 1M de tokens.
-- Seguimiento de instrucciones con restricciones estructuradas y diversas: se evalua con IFBench.
-- Uso de herramientas y ejecucion de tareas agenticas en entornos de linea de comandos y contenedores: se evalua con Terminal-Bench 2.1, que plantea 89 tareas reales en entornos aislados.
-- Entrada multimodal: acepta texto, imagenes en RGB y video en formato MP4/WebM.
-- Despliegue en produccion como modelo pre-cuantizado listo para vLLM, sin necesidad de repetir el proceso de cuantizacion.
-
-No se documenta en la informacion disponible soporte explicito de function calling, modo de pensamiento (thinking mode), audio, ni cobertura multilingue concreta.
+- Generación de texto y razonamiento de nivel avanzado, evaluado en GPQA Diamond e IFBench.
+- Generación de código científico y de propósito general, evaluado en SciCode y Terminal-Bench 2.1.
+- Comprensión multimodal de imagen y vídeo (entradas RGB y MP4/WebM), evaluada en MMMU Pro.
+- Recuperación de información en contextos muy largos, evaluada en AA-LCR (Artificial Analysis Long Context Recall).
+- Uso de herramientas y razonamiento agéntico multi-paso, con evaluación específica en Terminal-Bench 2.1 sobre entornos de línea de comandos en sandbox.
+- Seguimiento de instrucciones con restricciones estructuradas (IFBench).
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Agentes de terminal y automatizacion de operaciones: el modelo esta evaluado con Terminal-Bench 2.1, un conjunto de 89 tareas ejecutadas en entornos de linea de comandos y contenedores aislados. Esto lo hace adecuado para agentes que inspeccionan sistemas de ficheros, ejecutan comandos y encadenan pasos hasta completar una tarea de administracion o de depuracion.
-- Asistentes RAG sobre corpus extensos: con una ventana de hasta 1.000.000 de tokens y una prueba especifica de recall en contextos largos (AA-LCR), permite inyectar documentacion tecnica, normativa o expedientes completos sin trocear agresivamente, reduciendo la perdida de contexto entre fragmentos.
-- Generacion de codigo en pipelines de desarrollo: el modelo cubre generacion y razonamiento sobre codigo, incluido codigo cientifico (SciCode), por lo que puede integrarse en revision de pull requests, generacion de pruebas o migracion de codigo dentro de un flujo de CI/CD desplegado sobre vLLM.
-- Analisis de documentacion tecnica con elementos visuales: al aceptar imagenes, puede procesar diagramas de arquitectura, esquemas electricos, capturas de paneles de monitorizacion o tablas escaneadas junto al texto que las acompana, y devolver una descripcion o un resumen en texto.
-- Procesamiento de video para extraccion de informacion: la entrada de video en MP4/WebM permite resumir grabaciones, generar subtitulos descriptivos o extraer eventos relevantes de material audiovisual en flujos de analisis posteriores.
-- Atencion al cliente automatizada de nivel experto: el modelo puede sostener conversaciones multiturno sobre dominios tecnicos, apoyandose en el contexto largo para mantener el historial completo de la interaccion y en la calibracion con Nemotron-Post-Training-Dataset-v2, que contiene conversaciones multiturno.
-- Evaluacion y filtrado de respuestas cientificas: con el rendimiento declarado en GPQA Diamond como referencia de diseno, puede emplearse como generador o como evaluador en tareas de preguntas y respuestas de nivel de posgrado en ciencias.
-- Asistentes de investigacion multimodal: combinacion de texto, imagen y video en un unico modelo para tareas como interpretar figuras de articulos, comparar resultados experimentales presentados graficamente y resumir el conjunto en texto.
+- Sistemas de agentes autónomos: el modelo puede planificar y ejecutar tareas multi-paso con tool calling, y su evaluación en Terminal-Bench 2.1 sobre 89 tareas reales en contenedores lo respalda para agentes que operan en terminales y entornos sandbox.
+- Atención al cliente automatizada: con hasta 1M tokens de contexto, puede mantener conversaciones multiturno muy largas y recuperar información de historiales extensos o documentación de producto sin truncar.
+- Pipelines RAG sobre corpus masivos: la ventana de 1M tokens y su rendimiento en AA-LCR permiten inyectar grandes volúmenes de documentos recuperados y mantener la coherencia de la respuesta.
+- Análisis de documentos con imágenes y vídeo: al aceptar entradas RGB y MP4/WebM, sirve para extraer información de informes escaneados, capturas de pantalla o grabaciones y responder preguntas sobre ellos.
+- Generación y revisión de código en producción: su evaluación en SciCode y su soporte de tool calling permiten integrarlo en pipelines de CI/CD para generar parches, revisar cambios o ejecutar comandos en entornos controlados.
+- Asistentes de razonamiento científico: los resultados en GPQA Diamond (preguntas de posgrado en biología, física y química) lo hacen adecuado para herramientas de apoyo a investigadores que necesitan razonamiento experto con justificación.
+- Despliegue en infraestructura Blackwell: al estar pre-cuantizado en NVFP4 y ser compatible con vLLM y SGLang, encaja en clústeres con GB200 para servir cargas de inferencia de gran escala con menor huella de memoria.
 
 ## Benchmarks y rendimiento
 
-La model card enumera los conjuntos de evaluacion empleados (GPQA Diamond, SciCode, MMMU Pro, AA-LCR, IFBench y Terminal-Bench 2.1), pero no publica las puntuaciones obtenidas en ninguno de ellos. Tampoco se incluyen resultados de MMLU, HumanEval o GSM8K.
+La model card menciona los conjuntos de evaluación empleados (GPQA Diamond, SciCode, MMMU Pro, AA-LCR, IFBench y Terminal-Bench 2.1), pero no incluye en la información proporcionada los valores numéricos obtenidos en ninguno de ellos.
 
-| Benchmark | Resultado |
-|---|---|
-| GPQA Diamond | no disponible (conjunto declarado, sin puntuacion publicada) |
-| SciCode | no disponible (conjunto declarado, sin puntuacion publicada) |
-| MMMU Pro | no disponible (conjunto declarado, sin puntuacion publicada) |
-| AA-LCR | no disponible (conjunto declarado, sin puntuacion publicada) |
-| IFBench | no disponible (conjunto declarado, sin puntuacion publicada) |
-| Terminal-Bench 2.1 | no disponible (conjunto declarado, sin puntuacion publicada) |
-| MMLU, HumanEval, GSM8K | no se han publicado resultados en la informacion disponible |
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 204,5 GB en safetensors, por lo que los pesos en NVFP4 requieren del orden de 200 GB de memoria agregada. A esa cifra hay que sumar la cache KV, que con ventanas de contexto de hasta 1M de tokens puede crecer de forma muy significativa y depende del numero de secuencias concurrentes. Estimacion orientativa, no confirmada por el fabricante.
-- GPU recomendadas: la model card indica compatibilidad con la microarquitectura NVIDIA Blackwell y declara pruebas sobre GB200. En la practica, el despliegue exige varios aceleradores de esa generacion para alojar los pesos y la cache.
-- Cabe en GPU de consumo: no. Ni siquiera una RTX 5090 o similar con 32 GB de VRAM puede alojar un modelo de este tamano, y ademas el formato NVFP4 requiere soporte de la microarquitectura Blackwell para数据中心, no de las GPU de consumo.
-- Formatos alternativos para hardware limitado: no se ofrecen en esta publicacion. El repositorio contiene unicamente pesos NVFP4; para GPUs Hopper, Ada o de consumo habria que acudir al modelo base zai-org/GLM-5.3-Flash y cuantizarlo de nuevo, opcion no documentada en esta ficha.
-- Opciones de despliegue: vLLM es el unico motor declarado como soportado. No se mencionan llama.cpp, Ollama, TGI ni otras alternativas, y es previsible que no sean compatibles con NVFP4 en su estado actual.
-- Sistema operativo: Linux, segun la model card.
-- Latencia y throughput: no disponible. La model card no publica cifras de tokens por segundo, tiempo hasta el primer token ni rendimiento por GPU.
+- VRAM estimada: el repo ocupa 408,9 GB en safetensors, lo que da una referencia del peso en disco de la versión NVFP4. Para inferencia hay que sumar memoria para el KV cache, que con contexto de hasta 1M tokens y 18B parámetros activos puede ser muy elevada; no se dispone de una cifra oficial de VRAM mínima.
+- GPU recomendadas: NVIDIA Blackwell, con GB200 como hardware de prueba declarado en la model card. No se documenta compatibilidad con generaciones anteriores (Hopper, Ada) en la información disponible.
+- GPU de consumo: no disponible; el tamaño del modelo (más de 400 GB de pesos) impide en la práctica su despliegue en GPUs consumer individuales.
+- Opciones de despliegue: vLLM y SGLang son los motores soportados oficialmente. No se mencionan llama.cpp, Ollama ni TGI.
+- Sistema operativo: Linux.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/GLM-5.3-Flash-NVFP4 | 320 B totales / 18 B activos (model card); 168,89 B segun safetensors | Hasta 1M tokens | NVFP4, pesos y activaciones | MIT | Pesos safetensors, 204,5 GB, vLLM sobre Blackwell |
-| zai-org/GLM-5.3-Flash (modelo base) | 320 B totales / 18 B activos (model card) | Hasta 1M tokens | Sin cuantizar (precision completa) | No disponible en la informacion proporcionada | Repositorio Hugging Face del autor original |
-| Otras alternativas MoE multimodales de escala comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| NVIDIA GLM-5.3-Flash-NVFP4 | ~320B totales / ~18B activos | 1M tokens | Texto, imagen, vídeo | MIT | Hugging Face (nvidia) |
+| zai-org/GLM-5.3-Flash | ~320B totales / ~18B activos (según model card de NVIDIA) | 1M tokens | Texto, imagen, vídeo | No disponible en la información | Hugging Face (zai-org) |
+| Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone en la informacion proporcionada de datos verificables sobre modelos competidores equivalentes (parametros, contexto, rendimiento o licencia), por lo que la comparativa se limita al modelo base del que deriva esta cuantizacion. La diferencia practica entre ambos es el formato de pesos: el modelo de NVIDIA llega ya cuantizado, mientras que el base exigiria un proceso de cuantizacion previo.
+La información proporcionada solo permite comparar con el modelo base del que deriva esta cuantización. No se han encontrado datos de otros modelos comparables en la búsqueda web realizada.
 
 ## Limitaciones y advertencias
 
-- Discrepancia en el numero de parametros: la model card declara 320 B totales y 18 B activos, mientras que el recuento de safetensors del repositorio es de 168.893.635.422 parametros. Es necesario verificar cual de las dos cifras corresponde al modelo realmente publicado antes de dimensionar la infraestructura.
-- Dependencia de hardware: el formato NVFP4 y el motor vLLM sobre Blackwell limitan el despliegue a esa generacion de GPU. No hay ruta documentada para Hopper, Ada o GPU de consumo.
-- Ausencia de benchmarks publicados: se declaran seis conjuntos de evaluacion, pero ninguna puntuacion. No es posible validar el rendimiento real frente al modelo base ni frente a alternativas.
-- Idioma: la informacion disponible no especifica los idiomas soportados. Los unicos indicios son que el dataset de calibracion cnn_dailymail es en ingles y que el dataset de post-entrenamiento de NVIDIA es multitema, lo que no permite afirmar cobertura multilingue.
-- Riesgo de alucinacion: es un modelo generativo de texto sin mecanismo de verificacion documentado. En tareas agenticas con ejecucion real de comandos (Terminal-Bench 2.1) una alucinacion puede traducirse en acciones destructivas, por lo que se recomienda sandboxing y confirmacion humana en operaciones irreversibles.
-- Opacidad del entrenamiento: los datos de entrenamiento, su metodo de recoleccion y su etiquetado figuran como no divulgados. Esto impide auditar sesgos de origen o composicion del corpus, y no se documentan sesgos conocidos.
-- Naturaleza de terceros: NVIDIA no es el desarrollador del modelo original. La model card remite a la de ZAI para cualquier detalle sobre el modelo base, y la responsabilidad sobre el comportamiento del modelo no recae en NVIDIA.
-- Licencia: MIT, con uso comercial y no comercial permitido segun la model card. Aun asi, conviene revisar los terminos del modelo base de ZAI, ya que esta publicacion solo cubre la version cuantizada.
-- Recomendacion operativa de la propia model card: la integracion en sistemas de IA requiere pruebas adicionales con datos especificos del caso de uso, siguiendo una metodologia de validacion por niveles, antes de su puesta en produccion.
-- Sin datos de rendimiento: no hay cifras de latencia, throughput ni consumo energetico, lo que dificulta la planificacion de capacidad y costes.
+- Sesgos conocidos: no se documentan en la información disponible; el modelo base es de un tercero (ZAI) y la model card de NVIDIA no detalla sesgos específicos.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; como todo modelo generativo de gran escala, requiere validación en producción.
+- Limitaciones de contexto e idioma: aunque el contexto llega a 1M tokens, no se especifican los idiomas soportados ni el rendimiento por idioma; la calibración de la cuantización se hizo con datasets en inglés, lo que puede afectar a la fidelidad en otros idiomas.
+- Restricciones de licencia: licencia MIT, que permite uso comercial y no comercial según la model card; aun así, conviene revisar los términos del modelo base de ZAI por si imponen condiciones adicionales.
+- Hardware: la model card solo declara compatibilidad con NVIDIA Blackwell y sistemas Linux; no hay garantía de funcionamiento en otras arquitecturas.
+- Cuantización: al ser una versión NVFP4 post-entrenamiento, puede presentar una degradación de calidad respecto al modelo base en tareas sensibles; la model card no publica una comparación numérica entre ambos.
+- Producción: NVIDIA recomienda pruebas específicas del caso de uso siguiendo la metodología V-model antes del despliegue, y señala que la integración en sistemas de IA requiere validación adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
-- Modelo base (ZAI): https://huggingface.co/zai-org/GLM-5.3-Flash
-- NVIDIA Model Optimizer (repositorio): https://github.com/NVIDIA/Model-Optimizer
-- Dataset de calibracion cnn_dailymail: https://huggingface.co/datasets/abisee/cnn_dailymail
-- Dataset de calibracion Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
-- Licencia MIT (texto de referencia): https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/mit.md
-
-Nota: la busqueda web realizada no devolvio enlaces especificos sobre este modelo; los resultados se limitaron a paginas corporativas genericas de NVIDIA (nvidia.com, pagina de controladores, GeForce NOW y articulos enciclopedicos sobre la compania), sin informacion tecnica aprovechable.
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
+- NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
+- Dataset de calibración cnn_dailymail: https://huggingface.co/datasets/abisee/cnn_dailymail
+- Dataset de calibración Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
+- Licencia MIT: https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/mit.md
+- Sitio de NVIDIA: https://www.nvidia.com/

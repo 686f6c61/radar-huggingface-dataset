@@ -2,102 +2,92 @@
 
 ## Resumen
 
-QI_2.1_AnyAngle es un adaptador LoRA desarrollado por el usuario lilylilith para el modelo de edición de imágenes Qwen/Qwen-Image-2.1. Su función es permitir cambios arbitrarios de ángulo de cámara (azimut y elevación continuos) sobre una imagen de partida, manteniendo la coherencia estilística, en lugar de limitarse a los ángulos fijos que suelen ofrecer los modelos de edición de imagen. El repositorio ocupa 0,1 GB, tiene licencia Apache 2.0 y pipeline declarado de image-to-image.
+QI_2.1_AnyAngle es un adaptador LoRA para el modelo de edicion de imagen Qwen-Image-2.1, desarrollado por el usuario lilylilith y publicado bajo licencia Apache 2.0. Resuelve un problema concreto en la edicion de imagenes generativas: la mayoria de los modelos de edicion actuales solo permiten cambios de angulo de camara en azimuts y elevaciones fijos, lo que limita el control creativo y provoca deriva estilistica cuando el cambio es drastico. Este LoRA permite transferir un angulo de camara arbitrario, definido por el usuario, a una imagen original manteniendo la coherencia de estilo.
 
-El método no es una edición directa por prompt: se reconstruye la escena como Gaussian Splat o modelo 3D (Tripo Splat, Trellis2/Pixal3d), se importa en Blender, se coloca una cámara nueva en el ángulo deseado y se renderiza una imagen gruesa. Esa imagen gruesa se introduce como referencia junto con la original en Qwen-Image-2.1, y el LoRA transfiere el ángulo de la referencia a la imagen original.
+La innovacion principal no esta en la arquitectura del LoRA en si, sino en el pipeline de entrenamiento y de inferencia: se transforma la imagen en un Gaussian Splat o modelo 3D (mediante Tripo Splat, Trellis2 o Pixal3D), se importa en Blender, se renderiza desde el angulo deseado y ese render grueso se usa como referencia de control junto con la imagen original. El LoRA se entrena con renders reales de Blender y con orbitas generadas por el modelo de video MiniMax H3 para cubrir estilos ilustrados y de boceto.
 
-El adaptador es relevante porque ataca dos problemas recurrentes: la falta de control angular real en edición de imagen y la deriva de estilo cuando el cambio de perspectiva es grande. Al apoyarse en geometría renderizada en lugar de generar la escena desde cero, buena parte de la información espacial deja de alucinarse. La model card no publica número de parámetros, rango del LoRA ni resultados de benchmarks.
+El repositorio ocupa 0,1 GB, se distribuye en formato diffusers y esta pensado para el pipeline image-to-image. No se especifican parametros totales ni longitud de contexto, ya que se trata de un adaptador sobre un modelo base de difusion, no de un modelo de lenguaje. Su relevancia actual radica en que amplia las capacidades de control geometrico de Qwen-Image-2.1 sin necesidad de reentrenar el modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de edición de imagen Qwen-Image-2.1; la arquitectura interna del adaptador no se detalla en la información disponible |
-| Parametros totales | no disponible (no se indica rango ni número de parámetros; el repositorio ocupa 0,1 GB) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de imagen; no se documenta el límite de tokens de prompt) |
-| Tipos de cuantizacion | no disponible (no se documentan cuantizaciones del adaptador) |
-| Idiomas soportados | no disponible (la model card está en inglés y no especifica idiomas) |
+| Arquitectura | LoRA sobre Qwen-Image-2.1 (modelo de difusion para edicion de imagen) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica a modelo de difusion) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (no se especifica en la información proporcionada) |
-| Modelo base | Qwen/Qwen-Image-2.1 |
-| Tipo de artefacto | Adaptador LoRA |
-| Tarea declarada (pipeline) | image-to-image |
-| Fuerza de LoRA recomendada | 1 (según la model card) |
-| Ajustes de muestreo recomendados | CFG 3.0 y 20 pasos o más |
-| Tamano del repositorio | 0,1 GB |
-| Fecha de publicación | 28 de septiembre de 2026 (según metadatos de Hugging Face) |
-| Descargas / likes | 0 / 31 |
+| Formato de pesos | diffusers (repositorio de 0,1 GB) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un LoRA que se aplica sobre Qwen-Image-2.1, un modelo de edición de imágenes del que no se detallan en esta información ni el número de parámetros ni la arquitectura interna. El adaptador trabaja con dos entradas de imagen: la original (ancla) y un render grueso de la misma escena desde el ángulo objetivo. La instrucción de edición utilizada es `Change the camera angle from <image2> to <image1>.`
+El adaptador es un LoRA que se aplica sobre Qwen-Image-2.1, un modelo de edicion de imagen por difusion. El LoRA no modifica la arquitectura del modelo base; se limita a inyectar matrices de bajo rango en las capas de atencion para condicionar la generacion hacia la transferencia de angulos de camara. El pipeline declarado es image-to-image y la fuerza recomendada del LoRA es 1.0.
 
-El entrenamiento se construyó con renders reales de Blender, estilísticamente diversos, más imágenes generadas con el modelo de vídeo MiniMax H3 para cubrir ilustración digital. Para cada ejemplo se recopila una imagen original y un fotograma en un ángulo distinto; a partir del objetivo se genera un Gaussian Splat o un modelo 3D que se usa como "render grueso" de control. Con ese conjunto se entrena el LoRA durante unos pocos miles de pasos. La idea central es que, en el caso de los renders reales de Blender, nada se alucina, y para estilos ilustrados se emplean órbitas image-to-video de MiniMax H3 con la escena estática para maximizar la consistencia. No se documentan en la información disponible detalles como el optimizador, el rango del LoRA o la composición exacta del dataset.
+El entrenamiento combina dos fuentes de datos. Por un lado, renders reales de Blender, deliberadamente diversos en estilo, donde cada muestra empareja una imagen ancla con un fotograma desde un angulo distinto. Por otro, para cubrir ilustraciones y bocetos, se generan orbitas y manipulaciones de camara con el modelo de video MiniMax H3 manteniendo la escena estatica. Para cada imagen objetivo se genera un Gaussian Splat o modelo 3D que sirve como render grueso de control. El autor indica que el LoRA se entrena durante unos pocos miles de pasos. No se especifica el numero exacto de muestras ni la composicion detallada del dataset.
+
+La innovacion tecnica destacable es el uso de representaciones 3D intermedias (Gaussian Splats o mallas) como puente para definir el angulo de camara, lo que evita que el modelo tenga que alucinar la geometria de la escena y preserva la coherencia estilistica. Para inferencia se recomienda CFG 3.0 y 20 pasos o mas; para prototipado rapido se puede combinar con un LoRA turbo de Qwen-Image-2.1, con una ligera perdida de calidad.
 
 ## Capacidades
 
-- Edición de imagen image-to-image sobre el modelo base Qwen-Image-2.1.
-- Transferencia de ángulo de cámara arbitrario desde una imagen de referencia hacia una imagen original, sin restringirse a azimuts y elevaciones fijos.
-- Preservación de estilo en cambios de perspectiva grandes, apoyada en geometría renderizada en lugar de generación libre.
-- Funciona con estilos fotorrealistas (renders de Blender) y también con ilustración y boceto, gracias a los datos derivados de MiniMax H3.
-- Integración en un flujo de trabajo por etapas: generador de Gaussian Splat o modelo 3D, Blender para colocar la cámara y renderizar, y Qwen-Image-2.1 con el LoRA para el render final.
-- Compatibilidad con LoRA de tipo turbo para reducir latencia en tareas de previsualización o planificación de planos, a costa de una ligera pérdida de calidad.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, audio o vídeo, ni cobertura multilingüe de prompts.
+- Transferencia de angulo de camara arbitrario desde una imagen de referencia gruesa a una imagen original.
+- Edicion de imagen image-to-image manteniendo la coherencia de estilo entre la imagen de entrada y la salida.
+- Funciona con escenas fotorrealistas procedentes de renders de Blender y con estilos ilustrados, bocetos y arte digital.
+- Control fino de azimut y elevacion, sin limitarse a angulos fijos predefinidos.
+- Integracion con pipelines de generacion 3D: Tripo Splat, Trellis2, Pixal3D y otros generadores de Gaussian Splats o mallas.
+- Compatibilidad con flujos de trabajo en Blender para previsualizacion y ajuste manual de la camara.
+- Soporte de prompts de edicion especificos, como `Change the camera angle from <image2> to <image1>.`
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio o texto.
 
 ## Casos de uso
 
-- Previsualización de producto en comercio electrónico: se parte de una fotografía del producto, se reconstruye un splat o modelo 3D, se renderiza en Blender desde varios ángulos y el LoRA traslada cada ángulo a la imagen original conservando materiales y estilo, lo que permite generar un catálogo multivista sin volver a fotografiar el artículo.
-- Planificación de planos y storyboard: con un LoRA turbo y los ajustes recomendados (CFG 3.0, 20 pasos o más) se pueden iterar encuadres y ángulos con latencia reducida para decidir la puesta en escena antes de producir el render final de calidad.
-- Ilustración y cómic con personajes consistentes: el modelo fue entrenado con órbitas image-to-video para estilos ilustrados, de modo que se puede generar un turn-around del personaje manteniendo el diseño y el trazo en lugar de redibujarlo en cada vista.
-- Ampliación de datasets de visión por computador: generar vistas coherentes en estilo de un mismo objeto o escena para aumentar datos de entrenamiento de modelos 3D, reconstrucción (NeRF, Gaussian Splatting) o detección, evitando las variaciones de apariencia que introducen los aumentos puramente 2D.
-- Fotografía de arquitectura e interiores: a partir de una reconstrucción 3D del espacio se renderizan vistas alternativas de una estancia y el LoRA las traslada a la fotografía original, útil para presentar un mismo espacio desde varios puntos de vista sin repetir la sesión.
-- Concept art para videojuegos y cine: explorar ángulos de una localización manteniendo la paleta y el acabado artístico de la imagen de referencia, lo que acelera la comunicación entre dirección de arte y modelado.
-- Corrección de encuadre en retoque fotográfico: cuando la toma original tiene un ángulo poco favorable, se reconstruye el sujeto en 3D, se elige el ángulo deseado y se transfiere a la fotografía conservando la iluminación y el estilo de la imagen de partida.
-- Producción de variantes para marketing: obtener varios encuadres de una misma imagen clave para distintos formatos y canales partiendo de un único material fuente.
+- Previsualizacion de planos cinematograficos: a partir de un fotograma o concept art, se genera un splat 3D, se ajusta la camara en Blender y se renderiza el nuevo angulo con el LoRA para explorar opciones de encuadre sin perder el estilo visual del proyecto.
+- Storyboarding y shot planning: se puede usar con un LoRA turbo de Qwen-Image-2.1 para reducir latencia y generar rapidamente variaciones de angulo que sirvan como borradores antes del render final.
+- Ilustracion editorial y comic: permite reencuadrar una escena ilustrada desde otro punto de vista manteniendo el trazo, la paleta y el estilo del artista, algo que los modelos de edicion convencionales no logran sin deriva estilistica.
+- Diseno de producto y arquitectura: a partir de una imagen de referencia de un objeto o espacio, se generan vistas desde angulos alternativos para presentaciones, fichas de producto o revisiones de diseno.
+- Videojuegos y assets 3D: generacion de vistas coherentes de un personaje o escenario para texturizado, referencia de modelado o documentacion de assets.
+- Publicidad y redes sociales: reencuadre de una misma imagen para distintos formatos y angulos (cuadrado, vertical, horizontal) conservando la identidad visual de la marca.
+- Restauracion y reedicion de material grafico: cambiar el punto de vista de una fotografia o ilustracion existente sin rehacer la escena desde cero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador en sí es pequeño: el repositorio ocupa 0,1 GB, por lo que su peso no es el factor limitante.
-- La VRAM necesaria viene determinada por el modelo base Qwen-Image-2.1 y por el generador de Gaussian Splat o modelo 3D empleado en el flujo; no se especifican cifras en la información disponible.
-- No se indica si el conjunto del pipeline cabe en GPU de consumo ni qué modelos concretos de GPU se recomiendan.
-- Opciones de despliegue: la model card describe un flujo por etapas (generación de splat o malla 3D, importación y render en Blender, inferencia con Qwen-Image-2.1 más el LoRA). No se documentan integraciones específicas con servidores de inferencia como vLLM, TGI, Ollama o llama.cpp, ni un formato de pesos concreto.
-- Latencia y throughput: no disponibles. Se recomienda un mínimo de 20 pasos de muestreo con CFG 3.0, y la propia model card sugiere usar un LoRA turbo para reducir latencia en tareas de previsualización, asumiendo una pérdida leve de calidad.
-- Herramientas de terceros mencionadas por el autor en el flujo: Tripo Splat, Trellis2/Pixal3d y Blender.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Al ejecutarse sobre Qwen-Image-2.1, los requisitos vendran determinados por el modelo base, no por el LoRA, que ocupa 0,1 GB.
+- GPU recomendadas: no disponible. Se recomienda consultar la model card de Qwen-Image-2.1 para los requisitos del modelo base.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: libreria diffusers, segun la model card. No se documentan otras opciones como ComfyUI, Automatic1111 o vLLM.
+- Latencia y throughput: no disponible. El autor menciona que se puede usar un LoRA turbo o un modelo Qwen-Image-2.1 turbo para reducir latencia en tareas de boarding, con una ligera perdida de calidad.
+- Configuracion de inferencia recomendada: fuerza del LoRA 1.0, CFG 3.0 y 20 pasos o mas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Control de angulo de camara | Preservacion de estilo | Licencia | Disponibilidad |
+| Modelo | Tipo | Base | Control de angulo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QI_2.1_AnyAngle (este) | LoRA sobre Qwen-Image-2.1 | Ángulos continuos de azimut y elevación, guiados por un render 3D de referencia | Alta en renders reales (nada se alucina); depende de la calidad del splat o malla en estilos ilustrados | Apache 2.0 | Hugging Face |
-| Qwen-Image-2.1 sin adaptador | Modelo de edición de imagen base | Según prompt; en la práctica tiende a ángulos fijos | Riesgo de deriva de estilo con cambios angulares grandes | No disponible en esta información | Hugging Face |
-| Modelos de edición tipo Qwen Image Edit o FLUX.2 | Modelos de edición de imagen | Ángulos fijos en la mayoría de los casos, según la model card | Riesgo de deriva de estilo | No disponible en esta información | No disponible en esta información |
+| QI_2.1_AnyAngle | LoRA image-to-image | Qwen-Image-2.1 | Angulo arbitrario via splat/3D + Blender | Apache 2.0 | Hugging Face |
+| Qwen-Image-2.1 (base) | Modelo de edicion de imagen | - | Limitado a angulos fijos en la mayoria de flujos | no disponible en la informacion | Hugging Face |
+| FLUX.2 | Modelo de edicion de imagen | - | Limitado a angulos fijos segun la model card | no disponible en la informacion | no disponible en la informacion |
 
-No se dispone de datos de parámetros, longitud de contexto ni resultados de benchmarks de estas alternativas en la información proporcionada, por lo que la comparación es cualitativa.
+No se dispone de datos de rendimiento comparativo ni de otros LoRAs equivalentes de control de camara en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia fuerte de la calidad del Gaussian Splat o modelo 3D intermedio: si la reconstrucción no es espacialmente correcta o es demasiado basta, el resultado presenta errores de disposición de objetos. El propio autor documenta un caso con una mesa y una coleta mal colocadas.
-- Caras malformadas cuando los rostros no están bien definidos en la imagen de entrada o cuando la resolución es baja.
-- No es una edición de un solo paso: requiere un generador de splat o malla 3D, Blender y el modelo base, lo que añade complejidad operativa y puntos de fallo al pipeline.
-- El conjunto de entrenamiento combina renders reales de Blender con salidas generadas por MiniMax H3; conviene revisar las condiciones de uso de esas fuentes antes de un despliegue comercial.
-- Aunque el adaptador se publica bajo Apache 2.0, el uso comercial del conjunto depende también de la licencia del modelo base Qwen-Image-2.1, que debe verificarse por separado.
-- Sin benchmarks publicados por el autor, la evaluación de calidad es puramente cualitativa y basada en los ejemplos de la model card.
-- Señales de validación comunitaria limitadas: 0 descargas y 31 likes en el momento de la consulta.
-- No se especifican idiomas soportados; el prompt de edición facilitado está en inglés.
-- Riesgo de alucinación y distorsión estructural mayor en estilos ilustrados y de boceto (datos generados por vídeo) que en escenas renderizadas con geometría real.
-- El uso óptimo exige respetar los ajustes recomendados (fuerza de LoRA 1, CFG 3.0, 20 pasos o más); usar un LoRA turbo acelera la inferencia pero degrada la calidad.
+- Depende de la calidad del Gaussian Splat o modelo 3D intermedio: si el splat es espacialmente impreciso o demasiado grueso, la disposicion espacial de los objetos puede quedar mal colocada en la salida.
+- Riesgo de deformacion facial cuando las caras no estan bien definidas o las imagenes de entrada tienen baja resolucion.
+- El pipeline requiere herramientas externas (Tripo Splat, Trellis2, Pixal3D, Blender) ademas del modelo de difusion, lo que anade complejidad y latencia al flujo de trabajo.
+- El uso de un LoRA turbo para acelerar la inferencia reduce la calidad del resultado.
+- No se documentan sesgos conocidos, limitaciones de idioma ni restricciones adicionales de licencia mas alla de Apache 2.0.
+- No se especifican requisitos de hardware ni metricas de rendimiento, lo que dificulta planificar el despliegue en produccion.
+- El modelo esta fechado en 2026 y su ecosistema de herramientas asociadas puede evolucionar; conviene verificar la compatibilidad con versiones futuras de Qwen-Image-2.1.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/lilylilith/QI_2.1_AnyAngle
-- Modelo base Qwen Image 2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
-- MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Perfil del autor en Civitai: https://civitai.com/user/lilylilith
-- Apoyo al autor (Ko-fi): https://ko-fi.com/lilllithhhhh
-- Flujo de generación de mundo 3D citado por el autor: https://www.youtube.com/watch?v=eJuYBNrD8HI
-- Ejemplo de flujo de conexiones del autor: https://cdn-uploads.huggingface.co/production/uploads/638aeb590f10aa3064f42a80/PcRjfdCsXApBYOnAn5063.png
+- Ko-fi del autor: https://ko-fi.com/lilllithhhhh
+- Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo de video MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Workflow de generacion de mundos 3D (YouTube): https://www.youtube.com/watch?v=eJuYBNrD8HI

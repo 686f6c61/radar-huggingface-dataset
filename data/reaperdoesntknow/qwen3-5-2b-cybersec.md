@@ -2,87 +2,91 @@
 
 ## Resumen
 
-Qwen3.5-2B-CyberSec es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3.5-2B`, perteneciente a la familia Qwen3.5 de Alibaba Cloud, especializado en conversación sobre ciberseguridad. Ha sido desarrollado por el usuario `reaperdoesntknow` y forma parte de la colección CIx de modelos de seguridad. El ajuste se realizó sobre el dataset público `Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset`, que contiene instrucciones y diálogos relacionados con prácticas, conceptos y escenarios de seguridad informática.
+Qwen3.5-2B-CyberSec es un ajuste fino (fine-tune) del checkpoint Qwen3.5 2B publicado por el usuario reaperdoesntknow bajo el paraguas de su colección "CIx cybersecurity models". El modelo parte del checkpoint intermedio `unsloth/Qwen3.5-2B` y se asocia en sus metadatos al dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset, un conjunto de instrucciones orientado a dominios de ciberseguridad. Se distribuye en formato Transformers/Safetensors con licencia Apache-2.0 y está etiquetado como `image-text-to-text`, lo que indica que hereda los componentes de texto y visión de la arquitectura Qwen3.5.
 
-El modelo conserva la arquitectura multimodal de Qwen3.5 (procesamiento de texto e imagen), aunque el fine-tuning está orientado a respuestas de texto. Con aproximadamente 2.274 millones de parámetros (2,3 mil millones), es un modelo compacto pensado para investigación local, prototipado y experimentación. Su licencia Apache-2.0 permite uso comercial y modificación sin restricciones significativas. No se han publicado benchmarks ni evaluaciones de seguridad, por lo que su rendimiento en tareas de ciberseguridad no está validado formalmente.
+Con 2.274.069.824 parámetros totales (aproximadamente 2,27 mil millones) y un tamaño de repositorio de 4,6 GB, es un modelo pequeño pensado para experimentación local y prototipado. El autor declara explícitamente que no se han publicado resultados de benchmarks, comparaciones con la línea base ni evaluaciones de seguridad, por lo que debe tratarse como un artefacto de investigación y no como una autoridad validada en ciberseguridad.
+
+Su relevancia actual radica en dos factores: por un lado, la escasez de checkpoints pequeños especializados en seguridad ofensiva/defensiva que quepan en hardware de consumo; por otro, la trazabilidad de su linaje (Qwen3.5 2B → export de Unsloth → fine-tune sobre dataset Trendyol), que facilita reproducir y auditar el proceso. No obstante, la ausencia de métricas y de documentación sobre hiperparámetros limita seriamente su uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 (transformer multimodal condicional, con componentes de texto y vision) |
+| Arquitectura | Qwen3.5 conditional-generation (transformer con componentes de texto y visión) |
 | Parametros totales | 2.274.069.824 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible en la ficha principal; existen variantes GGUF (BF16, Q4_K_M, entre otras) en el repositorio asociado |
-| Idiomas soportados | Ingles (segun metadatos; el modelo base Qwen3.5 es multilingue, pero el fine-tuning parece centrado en ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (tambien disponible en GGUF) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible en el repo principal; existe build GGUF en `reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF` |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (Transformers); GGUF en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la familia Qwen3.5, un modelo de lenguaje condicional con capacidades multimodales (texto e imagen). Según la model card, el checkpoint se identifica como una arquitectura de generación condicional con componentes de texto y visión, cargable mediante `AutoModelForMultimodalLM` y `AutoProcessor` de Transformers. No se especifican detalles internos como el número de capas, cabezas de atención o mecanismos de atención (por ejemplo, si usa atención lineal o alguna variante).
+El modelo hereda la arquitectura Qwen3.5 en su variante de 2B parámetros, descrita en la model card como "conditional-generation architecture with text and vision components". La carga se realiza mediante `AutoModelForMultimodalLM` y `AutoProcessor`, lo que confirma que el checkpoint conserva la torre de visión del modelo base, aunque el fine-tune se haya realizado sobre un dataset puramente textual de ciberseguridad. El pipeline declarado es `text-generation` y el tag `image-text-to-text` se mantiene por herencia del checkpoint base.
 
-El entrenamiento consistió en un ajuste fino supervisado sobre el dataset de instrucciones de ciberseguridad de Trendyol, utilizando la librería Unsloth (que acelera el entrenamiento) y TRL (Transformers Reinforcement Learning). Según la información disponible, el entrenamiento fue 2 veces más rápido gracias a Unsloth. No se documentan hiperparámetros, número de épocas, composición exacta del dataset, ni técnicas de alineación como RLHF o DPO. El modelo base es `unsloth/Qwen3.5-2B`, que a su vez deriva de la serie Qwen3.5 de Alibaba Cloud, conocida por mejoras en razonamiento e instrucciones frente a Qwen3.
+Sobre el entrenamiento no se publican hiperparámetros, número de tokens, composición exacta del dataset ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado. La model card únicamente registra la asociación con Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset y menciona que el checkpoint se exportó a través de Unsloth (tag `unsloth`). El autor reconoce explícitamente que no documenta el preprocesado del dataset, los controles de contaminación, los hiperparámetros de entrenamiento ni los criterios de selección del checkpoint. No se describen innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional especializado en ciberseguridad: responde a preguntas sobre conceptos, practicas y escenarios de seguridad.
-- Entrada multimodal (texto e imagen) heredada del modelo base, aunque el fine-tuning no documenta si mantiene el rendimiento en tareas de vision.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y multi-step reasoning: no documentado.
-- Capacidades multilingues: el modelo base es multilingue, pero el fine-tuning esta orientado al ingles; no se garantiza rendimiento en otros idiomas.
-- Modo thinking / razonamiento extendido: no documentado.
+- Generación de texto conversacional en inglés, con formato de chat aplicado mediante `apply_chat_template`.
+- Respuesta a instrucciones técnicas del dominio de ciberseguridad (conceptos como mínimo privilegio, controles de acceso, análisis de vulnerabilidades), aunque sin validación publicada de calidad.
+- Procesamiento multimodal heredado del base: el procesador acepta entradas de tipo texto e imagen, si bien el fine-tune se ha realizado sobre datos textuales.
+- Soporte de tool calling / function calling: no disponible (no documentado en la model card).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües: limitadas al inglés según el campo `language: en`.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Investigacion academica sobre respuestas de modelos pequenos a instrucciones de ciberseguridad: el modelo permite estudiar como un LLM de 2,3B parametros maneja conceptos de seguridad, comparandolo con el modelo base sin ajuste.
-- Prototipado local de asistentes de seguridad: gracias a su tamano reducido, puede ejecutarse en hardware de consumo para desarrollar demos de chatbots de concienciacion en seguridad.
-- Conversion y cuantizacion experimental: el repositorio incluye variantes GGUF, lo que permite probar diferentes cuantizaciones (Q4_K_M, BF16) y medir su impacto en calidad y velocidad.
-- Comparacion con el checkpoint base: util para evaluar que cambios introduce el fine-tuning en el comportamiento del modelo, tanto en tareas de seguridad como en capacidades generales.
-- Educacion y formacion en ciberseguridad: puede usarse como herramienta de practica para generar ejemplos de politicas de acceso, analisis de riesgos o explicaciones de vulnerabilidades, siempre bajo supervision humana.
-- Analisis de escenarios de seguridad en entornos aislados: el modelo puede generar respuestas a incidentes simulados, ayudando a disenar ejercicios de red team o blue team, con la advertencia de no ejecutar sus comandos sin revision.
+- Prototipado local de asistentes de ciberseguridad: al ser un modelo de 2,27B parámetros, puede ejecutarse en una GPU de consumo para probar respuestas a preguntas sobre controles de seguridad, políticas de mínimo privilegio o conceptos de hardening antes de invertir en modelos mayores.
+- Investigación sobre ajuste fino en dominios verticales: sirve como caso de estudio reproducible para analizar cómo un dataset de instrucciones de ciberseguridad (Trendyol) modifica el comportamiento de un base Qwen3.5 2B, comparando respuestas cualitativas entre ambos checkpoints.
+- Generación de borradores de documentación técnica de seguridad: el modelo puede redactar explicaciones preliminares de conceptos (por ejemplo, modelos de amenazas o listas de verificación), que un analista revisa y corrige antes de publicar.
+- Experimentos de cuantización y conversión: la existencia de un build GGUF separado permite probar pipelines de cuantización (llama.cpp, Ollama) sobre un checkpoint pequeño y comparar la degradación de calidad respecto al safetensors original.
+- Formación y material didáctico: útil para generar ejemplos de preguntas y respuestas sobre ciberseguridad en entornos controlados, siempre con revisión humana dada la ausencia de evaluaciones de seguridad.
+- Evaluación de riesgos de modelos pequeños especializados: sirve como sujeto de pruebas para medir tasas de alucinación, salidas peligrosas o consejos técnicos obsoletos en modelos de 2B ajustados con datos dual-use.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no existe ningun informe de evaluacion versionado, comparacion con la linea base, resultados en test hold-out ni evaluacion de seguridad. Por tanto, no se pueden aportar cifras de MMLU, HumanEval, GSM8K ni metricas especificas de ciberseguridad.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que el repositorio no incluye informe de benchmarks versionado, comparación con la línea base, resultados en test held-out ni evaluación de seguridad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible oficialmente. Dado que el modelo tiene ~2,3B parametros y el repositorio en BF16 ocupa 4,6 GB, se estima que en precision BF16 necesita al menos 6-8 GB de VRAM (incluyendo overhead de activaciones). En cuantizacion Q4_K_M, el peso ocupa aproximadamente 1,5 GB, por lo que podria caber en GPUs con 4 GB o mas, aunque no hay datos oficiales.
-- GPU recomendadas: no hay especificacion oficial. Por tamano, una RTX 3060 (12 GB) o RTX 4090 (24 GB) son suficientes para BF16; GPUs con menos VRAM pueden usar cuantizacion GGUF.
-- Si cabe en consumer GPU: si, en la mayoria de GPUs de consumo modernas con al menos 8 GB de VRAM, especialmente con cuantizacion.
-- Opciones de despliegue: Transformers (carga directa), llama.cpp / Ollama (via GGUF), vLLM o TGI (compatible con endpoints, segun tags). FriendliAI ofrece inferencia como servicio.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 4,5 GB solo para pesos (2,27B × 2 bytes), más overhead de activaciones y KV cache; en la práctica, entre 6 y 8 GB para contextos moderados.
+- VRAM estimada en cuantización de 8 bits: en torno a 2,5-3 GB de pesos.
+- VRAM estimada en cuantización de 4 bits (GGUF Q4): en torno a 1,5-2 GB de pesos, lo que permite ejecución en GPUs de consumo modestas.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para fp16 sin compromisos; A100/H100 no son necesarias por el tamaño del modelo.
+- Cabe en GPU de consumo: sí, especialmente en cuantizaciones de 4 y 8 bits; en fp16 requiere al menos 8 GB de VRAM.
+- Opciones de despliegue: Transformers (con `AutoModelForMultimodalLM` y `AutoProcessor`), llama.cpp u Ollama mediante el repositorio GGUF `reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF`; vLLM y TGI no están documentados para esta arquitectura en la información disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas publicadas con otros modelos de ciberseguridad de tamano similar. Como referencia estructural, se puede comparar con su modelo base:
-
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-CyberSec | 2,3B | No disponible | Ciberseguridad (fine-tuning) | Apache-2.0 | Hugging Face, GGUF |
-| unsloth/Qwen3.5-2B (base) | 2,3B | No disponible | General | Apache-2.0 | Hugging Face |
-| Otros modelos de ciberseguridad (p.ej. SecurityLlama) | No disponible | No disponible | Ciberseguridad | No disponible | No disponible |
+| Qwen3.5-2B-CyberSec | 2,27B | no disponible | Apache-2.0 | Hugging Face (safetensors + GGUF) | Fine-tune de ciberseguridad sin benchmarks publicados |
+| unsloth/Qwen3.5-2B (base) | ~2B | no disponible | Apache-2.0 (heredada) | Hugging Face | Checkpoint de partida; referencia natural para comparar el efecto del fine-tune |
+| Trendyol cybersecurity dataset (referencia de datos) | n/a | n/a | no disponible | Hugging Face Datasets | No es un modelo, pero define el dominio del ajuste |
 
-No se han encontrado datos de rendimiento comparativo entre estos modelos en la informacion revisada.
+No se dispone de información sobre otros modelos comparables de ciberseguridad de tamaño similar en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de seguridad ni benchmarks, por lo que el modelo no debe tratarse como una autoridad validada en ciberseguridad.
-- Puede generar consejos tecnicos incorrectos o peligrosos; los comandos generados no deben ejecutarse sin revision y aislamiento.
-- El dataset de entrenamiento puede contener errores, practicas obsoletas o material de doble uso (dual-use), lo que podria inducir respuestas inapropiadas.
-- No se documentan el preprocesamiento del dataset, los controles de contaminacion, los hiperparametros de entrenamiento ni los criterios de seleccion del checkpoint.
-- El modelo esta orientado al ingles; su rendimiento en otros idiomas no esta garantizado.
-- La capacidad multimodal (vision) no ha sido evaluada tras el fine-tuning; podria haberse degradado.
-- No debe utilizarse como unica base para decisiones de respuesta a incidentes, divulgacion de vulnerabilidades o control de accesos.
-- El repositorio no incluye un informe de reproduccion con hashes de revision, lo que dificulta la reproducibilidad exacta.
+- Ausencia total de benchmarks: no hay evidencia publicada de que el fine-tune mejore al base Qwen3.5 2B en tareas de ciberseguridad, ni de que no degrade capacidades generales.
+- Riesgo elevado de alucinación en contenido técnico: el autor advierte que el modelo puede generar guías técnicas incorrectas o inseguras.
+- Datos de entrenamiento potencialmente obsoletos o con errores: el dataset Trendyol puede contener prácticas desactualizadas o material dual-use sensible.
+- No ejecutar comandos generados sin revisión y aislamiento: advertencia explícita del autor.
+- No usar como base única para respuesta a incidentes, divulgación de vulnerabilidades o decisiones de control de acceso.
+- Idioma limitado al inglés, lo que restringe su uso en entornos hispanohablantes sin traducción previa.
+- Documentación incompleta: no se detallan hiperparámetros, preprocesado del dataset, controles de contaminación ni criterios de selección del checkpoint.
+- Licencia Apache-2.0 permite uso comercial, pero la falta de evaluaciones de seguridad traslada todo el riesgo al desplegador.
+- Sin datos sobre longitud de contexto, lo que impide planificar casos de uso con ventanas largas.
+- El tag `image-text-to-text` sugiere capacidades de visión heredadas, pero no hay evidencia de que el fine-tune las preserve o las haya evaluado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec
-- Variante GGUF: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF
-- Coleccion CIx de modelos de ciberseguridad: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models
-- Dataset de entrenamiento: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset
-- Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
-- Pagina de inferencia en FriendliAI: https://friendli.ai/models/reaperdoesntknow/Qwen3.5-2B-CyberSec
+- Build GGUF: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF
+- Checkpoint base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-2B
+- Dataset de instrucciones: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset
+- Colección CIx cybersecurity models: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models

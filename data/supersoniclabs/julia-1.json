@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 506,
-  "downloads_30d": 2129,
+  "downloads_30d": 2077,
   "trending_score": 14,
   "parameters": 144292870,
   "parameters_human": "144.3M",
@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AI · Julia Packages",
-      "url": "https://juliapackages.com/c/ai",
-      "snippet": "Pre-built implicit layer architectures with O(1) backprop, GPUs, and stiff+non-stiff DE solvers, demonstrating scientific machine learning (SciML) and physics-informed machine learning methods ... Julia package with selected functions in the R package `rethinking`. Used in the SR2..."
-    },
-    {
-      "title": "JuliaAI · GitHub",
-      "url": "https://github.com/JuliaAI",
-      "snippet": "An ML experiment tracker made in Julia."
-    },
-    {
-      "title": "AI-Native Simulation, Modeling & Computing | JuliaHub",
-      "url": "https://juliahub.com/",
-      "snippet": "Julia delivers 50x faster performance than Python, MATLAB, and R while maintaining ease of use—powering our AI-native platforms with unmatched speed and productivity ... Dr. Fredrik Bagge Carlson ..."
-    },
-    {
-      "title": "Machine learning with Julia – How to Build and Deploy a Trained ...",
-      "url": "https://www.freecodecamp.org/news/machine-learning-using-julia/",
-      "snippet": "There are a lot of books already written, and many courses already released about the topics described above. In this article, my goal is to show you how to create, train, and deploy basic machine learning model using Julia, without diving to theoretical aspects of ML and AI."
-    },
-    {
-      "title": "Flux – Elegant ML",
-      "url": "https://fluxml.ai/",
-      "snippet": "Flux is a 100% pure-Julia stack and provides lightweight abstractions on top of Julia's native GPU and AD support. It makes the easy things easy while remaining fully hackable. ... Flux has features that sets it apart among ML systems."
-    }
-  ]
+  "sources": []
 }

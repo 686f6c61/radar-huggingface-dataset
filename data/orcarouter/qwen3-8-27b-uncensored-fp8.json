@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8 · Hugging Face",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.8-27B FP8 (official) - Kaggle",
-      "url": "https://www.kaggle.com/datasets/saltb0x/qwen3-8-27b-fp8",
-      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 Highlights Qwen3.8-27B features the following enhancements:"
-    },
-    {
-      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
-    },
-    {
-      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
-      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
-      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
-    },
-    {
-      "title": "Qwen3.8-27B - SGLang Documentation",
-      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
-      "snippet": "Deploy Qwen3.8-27B with SGLang — dense hybrid GDN vision-language model with BF16/FP8/NVFP4 W4A4 checkpoints and in-checkpoint MTP, single-GPU on H200, RTX PRO 6000, RTX 5090 and DGX Spark."
-    }
-  ]
+  "sources": []
 }

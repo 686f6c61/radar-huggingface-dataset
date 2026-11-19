@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 2399,
+  "downloads_30d": 2339,
   "trending_score": 0,
   "parameters": 155614464,
   "parameters_human": "155.6M",
@@ -59,31 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "JustANormalTinkerer/hayai-ocr-v2 · Hugging Face",
-      "url": "https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2",
-      "snippet": "Hayai OCR v2 Hayai is a compact vision-to-text OCR model. It pairs a SigLIP2 vision encoder with a causal transformer decoder to read text directly out of images, without a separate detection stage."
-    },
-    {
-      "title": "Hayai OCR v2 - a Hugging Face Space by JustANormalTinkerer",
-      "url": "https://huggingface.co/spaces/JustANormalTinkerer/hayai-ocr-v2",
-      "snippet": "Hayai OCR v2 A compact 155M-parameter OCR model that maps images directly to transcribed text. Supports Japanese, Chinese, and English text recognition. Upload an image and get the text!"
-    },
-    {
-      "title": "hayai-ocr · PyPI",
-      "url": "https://pypi.org/project/hayai-ocr/",
-      "snippet": "Project description Hayai OCR (速いOCR) Fast optical character recognition for Japanese text, with the main focus being Japanese manga. A fork of manga-ocr by kha-white, rebuilt with a SigLIP2 + BERT encoder-decoder architecture for improved accuracy and speed."
-    },
-    {
-      "title": "hayai-ocr/README.md at master · NopeNopeGuy/hayai-ocr",
-      "url": "https://github.com/NopeNopeGuy/hayai-ocr/blob/master/README.md",
-      "snippet": "Hayai OCR (速いOCR) Fast optical character recognition for Japanese text, with the main focus being Japanese manga. A fork of manga-ocr by kha-white, rebuilt with a SigLIP2 + BERT encoder-decoder architecture for improved accuracy and speed."
-    },
-    {
-      "title": "GitHub - NopeNopeGuy/hayai-ocr: Optical character recognition for ...",
-      "url": "https://github.com/NopeNopeGuy/hayai-ocr",
-      "snippet": "Hayai OCR (速いOCR) Fast optical character recognition for Japanese text, with the main focus being Japanese manga. A fork of manga-ocr by kha-white, rebuilt with a SigLIP2 + BERT encoder-decoder architecture for improved accuracy and speed."
-    }
-  ]
+  "sources": []
 }

@@ -2,99 +2,88 @@
 
 ## Resumen
 
-leejet/Qwen-Image-2.1-GGUF es la versión cuantizada en formato GGUF del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el desarrollador leejet, autor asimismo del proyecto stable-diffusion.cpp. El repositorio contiene los pesos convertidos para su uso con stable-diffusion.cpp y con ComfyUI a través del nodo personalizado leejet/ComfyUI-GGUF. El pipeline declarado en Hugging Face es text-to-image y los idiomas indicados en los metadatos son inglés (en) y chino (zh).
+Qwen-Image-2.1-GGUF es la versión cuantizada en formato GGUF del modelo de generación de imágenes texto-a-imagen Qwen-Image-2.1, desarrollado originalmente por el equipo Qwen de Alibaba. Esta conversión la mantiene leejet, autor de stable-diffusion.cpp, y su objetivo es permitir la ejecución del modelo en hardware de consumo mediante cuantización, además de facilitar su integración en flujos de trabajo como ComfyUI a través de un nodo personalizado.
 
-El modelo cuenta con 7.115.124.736 parámetros (aproximadamente 7,1 mil millones) y el repositorio ocupa 40,3 GB. La relevancia de esta publicación radica en que permite ejecutar un modelo de generación de imágenes de ese tamaño en hardware de gama media mediante cuantización GGUF, integrándolo en flujos de trabajo locales como ComfyUI en lugar de depender de APIs en la nube. En el momento de la actualización del repositorio (20 de septiembre de 2026) acumulaba 7.070 descargas y 11 likes.
+El modelo base cuenta con aproximadamente 7.115 millones de parámetros (7,1 mil millones) y está diseñado para la síntesis de imágenes a partir de descripciones textuales en inglés y chino. La versión GGUF conserva esa funcionalidad pero reduce los requisitos de memoria, lo que la hace relevante para desarrolladores que quieren desplegar generación de imágenes localmente sin depender de GPUs de datacenter.
 
-Se trata de una conversión de pesos, no de un modelo entrenado desde cero: el trabajo de leejet se limita a la cuantización y al empaquetado para el ecosistema stable-diffusion.cpp, mientras que la arquitectura, el entrenamiento y las capacidades subyacentes corresponden al modelo base Qwen/Qwen-Image-2.1.
+La relevancia actual de esta ficha radica en que el ecosistema de difusión está migrando hacia formatos cuantizados portables (GGUF) y herramientas ligeras (stable-diffusion.cpp, ComfyUI), y esta conversión concreta acumula más de 150.000 descargas, lo que indica una adopción significativa en la comunidad. La licencia del modelo original es la Qwen Research License Agreement, un dato crítico para cualquier uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la información proporcionada (modelo de generación de imagen a partir de texto, derivado de Qwen/Qwen-Image-2.1) |
-| Parámetros totales | 7.115.124.736 (≈ 7,1 B) |
-| Parámetros activos | No disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Formato GGUF; los niveles concretos de cuantización no se detallan en la información proporcionada (el repositorio ocupa 40,3 GB) |
-| Idiomas soportados | Inglés (en) y chino (zh) |
-| Licencia | Qwen Research License Agreement, según la model card del autor; los metadatos de Hugging Face indican "no disponible". La licencia de los archivos cuantizados sigue la del modelo original |
-| Formato de pesos | GGUF (generado con stable-diffusion.cpp) |
+| Arquitectura | no disponible (modelo de difusion texto-a-imagen; detalles de la arquitectura del modelo base no especificados en la informacion disponible) |
+| Parametros totales | 7.115.124.736 (aproximadamente 7,1 mil millones) |
+| Parametros activos | no aplica (no es un modelo MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (multiples niveles de cuantizacion; niveles concretos no detallados en la informacion disponible) |
+| Idiomas soportados | ingles (en) y chino (zh) |
+| Licencia | Qwen Research License Agreement (la licencia de los archivos cuantizados sigue la del modelo original) |
+| Formato de pesos | GGUF (repo de 40,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no incluye detalles sobre la arquitectura interna del modelo base Qwen/Qwen-Image-2.1: no se especifica si emplea un transformer de difusión, un esquema MMDiT, un codificador de texto concreto ni el número de pasos de muestreo recomendados. Tampoco se documenta el volumen de datos de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Todos estos datos deben consultarse en la ficha del modelo original.
+La informacion disponible no detalla la arquitectura interna del modelo base Qwen-Image-2.1 (tipo de backbone, mecanismo de atencion, variante de difusion, etc.). Lo que si se conoce es que se trata de un modelo de difusion para generacion de imagenes a partir de texto, con aproximadamente 7,1 mil millones de parametros, y que esta version ha sido convertida a GGUF mediante la herramienta stable-diffusion.cpp desarrollada por leejet.
 
-Lo único documentado en esta publicación es el proceso de conversión: los pesos se transforman a formato GGUF mediante la herramienta stable-diffusion.cpp (https://github.com/leejet/stable-diffusion.cpp), con el objetivo de reducir el uso de memoria y permitir la inferencia en hardware más limitado que el requerido por los pesos en precisión completa. La model card no especifica qué capas se cuantizan ni qué recetas de cuantización se han aplicado, por lo que no es posible evaluar la pérdida de calidad introducida respecto al modelo base en bf16/fp16.
+No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste fino por preferencias. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o mecanismos de atencion lineal. La contribucion tecnica de este repositorio es la conversion y empaquetado en GGUF para inferencia eficiente en CPU y GPU de consumo.
 
 ## Capacidades
 
-- Generación de imágenes a partir de prompts de texto (pipeline text-to-image declarado en Hugging Face).
-- Interpretación de prompts en inglés y en chino, según los idiomas declarados en los metadatos.
-- Ejecución local mediante stable-diffusion.cpp, con soporte de conversión GGUF para reducir requisitos de memoria.
-- Integración con ComfyUI a través del nodo personalizado leejet/ComfyUI-GGUF, con un flujo de trabajo de ejemplo disponible en el repositorio (qwen_image_2_1_t2i_gguf.json).
-- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso, agentes, modo thinking, visión, audio ni generación de código. Al ser un modelo text-to-image, no aplican en principio.
+- Generacion de imagenes a partir de descripciones textuales (text-to-image) en ingles y chino.
+- Ejecucion mediante stable-diffusion.cpp, lo que permite inferencia en CPU y en GPUs con recursos limitados.
+- Integracion en ComfyUI mediante el nodo personalizado leejet/ComfyUI-GGUF, con un flujo de trabajo de ejemplo incluido en el repositorio (qwen_image_2_1_t2i_gguf.json).
+- Soporte multilingue limitado a ingles y chino segun los metadatos del modelo.
+- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso, vision de entrada, audio ni modo de pensamiento (thinking mode); se trata de un modelo generativo de imagenes, no de un modelo de lenguaje conversacional.
 
 ## Casos de uso
 
-- Generación de ilustraciones para blogs y medios digitales: el modelo recibe un prompt textual y produce una imagen, y su formato GGUF permite ejecutarlo en estaciones de trabajo sin GPU de gama alta, evitando costes por llamada a APIs externas.
-- Prototipado de conceptos visuales en estudios de diseño: con ComfyUI y el flujo de ejemplo incluido en el repositorio se pueden iterar variaciones de una idea rápidamente antes de pasar a producción con pesos de mayor precisión.
-- Generación automatizada de recursos gráficos para marketing: el flujo JSON de ejemplo permite integrar el modelo en una canalización por lotes que genere banners o imágenes de apoyo a partir de listas de prompts.
-- Despliegue local con requisitos de privacidad: al ejecutarse íntegramente en la máquina del usuario mediante stable-diffusion.cpp, los prompts y las imágenes no salen de la infraestructura propia, lo que resulta adecuado para entornos con datos sensibles.
-- Investigación sobre cuantización de modelos generativos: el repositorio permite comparar la calidad de salida entre distintos niveles de cuantización GGUF frente al modelo base, un caso de uso habitual en trabajos de eficiencia computacional.
-- Creación de recursos para videojuegos y prototipos de interfaz: sirve para generar arte conceptual, iconos o maquetas visuales de baja fidelidad que después se refinan con otras herramientas.
-- Docencia en generación de imágenes: la combinación de stable-diffusion.cpp y ComfyUI, ambos de código abierto, facilita montar prácticas reproducibles en el aula sin depender de servicios en la nube.
+- Generacion de ilustraciones para prototipado de producto: el modelo permite crear bocetos visuales a partir de prompts en ingles o chino, y la version GGUF posibilita ejecutarlo en estaciones de trabajo sin GPU de datacenter.
+- Creacion de contenido para marketing y redes sociales: con prompts descriptivos se pueden generar variaciones de imagenes de producto o escenas, integrando el flujo en ComfyUI para automatizar lotes.
+- Desarrollo de aplicaciones de escritorio con generacion de imagenes offline: al usar stable-diffusion.cpp y pesos GGUF, la inferencia puede ejecutarse localmente sin conexion a servicios en la nube.
+- Investigacion en cuantizacion de modelos de difusion: el repositorio sirve como referencia para estudiar el impacto de la cuantizacion GGUF en la calidad de imagen generada.
+- Educacion y experimentacion: estudiantes e investigadores pueden probar un modelo texto-a-imagen de 7,1 mil millones de parametros en hardware asequible, comparando resultados entre niveles de cuantizacion.
+- Integracion en pipelines creativos con ComfyUI: el nodo leejet/ComfyUI-GGUF y el workflow de ejemplo permiten encadenar el modelo con otros nodos (upscaling, inpainting, postprocesado) para flujos de produccion artistica.
+- Generacion bilingue de imagenes para mercados hispanohablantes y chinos: aunque los prompts deben formularse en ingles o chino, el modelo cubre los dos idiomas mayoritarios en documentacion tecnica y comercio internacional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas como FID, CLIP score, ImageReward ni comparaciones cuantitativas con otros modelos de generación de imágenes, y los resultados de búsqueda web consultados no aportan datos sobre este modelo concreto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes estimaciones se derivan del recuento de parámetros (7,1 B) y deben tomarse como aproximaciones orientativas, no como cifras confirmadas por el autor. No incluyen el consumo adicional del codificador de texto y del VAE, que en modelos text-to-image puede ser significativo.
-
-| Precisión | Peso aproximado de los pesos | VRAM estimada con sobrecarga |
-|---|---|---|
-| FP16/BF16 | ≈ 14,2 GB | 16-20 GB |
-| Q8 | ≈ 7,6 GB | 10-12 GB |
-| Q5 | ≈ 5,0 GB | 8-10 GB |
-| Q4 | ≈ 4,3 GB | 6-8 GB |
-
-- GPU recomendadas: RTX 3060 de 12 GB o superior para cuantizaciones Q4-Q8; RTX 4070, 4080 y 4090 para mayor velocidad; A100 o H100 en entornos de servidor con procesamiento por lotes o múltiples usuarios.
-- Cabe en GPU de consumo: sí, con cuantizaciones GGUF en GPUs de 8-16 GB de VRAM; también puede ejecutarse en CPU mediante stable-diffusion.cpp, con latencias mucho mayores.
-- Opciones de despliegue: stable-diffusion.cpp (documentación específica en https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/qwen_image_2.1.md) y ComfyUI mediante el nodo leejet/ComfyUI-GGUF. No se documenta soporte para vLLM, TGI, Ollama o llama.cpp en la información disponible.
-- Latencia y throughput: no disponible. La model card no publica tiempos de generación por imagen ni rendimiento en imágenes por segundo para ningún hardware.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de difusion de 7,1 mil millones de parametros en precision completa requiere del orden de 14-16 GB solo para los pesos, cantidad que se reduce sustancialmente con cuantizacion GGUF; no obstante, el repositorio no publica cifras oficiales por nivel de cuantizacion.
+- GPU recomendadas: no especificadas en la informacion disponible. Por el tamano del modelo, GPUs de consumo con 8-24 GB de VRAM (por ejemplo, RTX 3060, 4060 Ti, 4070, 4080, 4090) son candidatas plausibles, pero no hay validacion oficial en la model card.
+- Compatibilidad con GPU de consumo: probable segun el tamano y el formato GGUF, aunque no confirmada con datos oficiales.
+- Opciones de despliegue: stable-diffusion.cpp (soporte oficial documentado), ComfyUI con el nodo leejet/ComfyUI-GGUF (soporte oficial documentado). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no a difusion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-La información proporcionada no incluye datos de rendimiento ni especificaciones detalladas de alternativas, por lo que la comparación se limita a los aspectos documentados.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qwen-Image-2.1-GGUF (leejet) | ~7,1 mil millones | no disponible | en, zh | Qwen Research License Agreement | GGUF | Version cuantizada para stable-diffusion.cpp y ComfyUI |
+| Qwen-Image-2.1 (original) | ~7,1 mil millones | no disponible | en, zh | Qwen Research License Agreement | safetensors (presumiblemente) | Modelo base sin cuantizar; requiere mas memoria |
+| Otras alternativas de difusion texto-a-imagen | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-| Modelo | Parámetros | Formato | Idiomas | Licencia | Notas |
-|---|---|---|---|---|---|
-| leejet/Qwen-Image-2.1-GGUF | 7.115.124.736 | GGUF | en, zh | Qwen Research License Agreement | Conversión para stable-diffusion.cpp y ComfyUI; 7.070 descargas y 11 likes |
-| Qwen/Qwen-Image-2.1 (original) | No disponible en la información (el modelo derivado declara 7,1 B) | Safetensors (no confirmado) | en, zh | Qwen Research License Agreement | Modelo base; sirve de referencia de calidad frente a la versión cuantizada |
-| Otras cuantizaciones GGUF de modelos text-to-image | No disponible | GGUF | No disponible | No disponible | La información disponible no aporta datos concretos sobre alternativas comparables |
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos de la misma categoria (por ejemplo, otros modelos de difusion de tamano similar); los datos de rendimiento y arquitectura del modelo base no estan publicados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia: los archivos cuantizados heredan la Qwen Research License Agreement del modelo original. Es una licencia orientada a investigación, por lo que el uso comercial requiere revisar el texto completo antes de desplegar el modelo en producción.
-- Los metadatos de Hugging Face no declaran licencia ("no disponible"), lo que puede generar ambigüedad en herramientas automatizadas de cumplimiento; debe prevalecer el enlace a la licencia incluido en la model card.
-- Idiomas: solo se declaran inglés y chino. Los prompts en otros idiomas, incluido el español, pueden producir resultados de menor calidad, sin que se haya documentado el grado de degradación.
-- La cuantización GGUF puede degradar la fidelidad de la imagen respecto a los pesos en bf16/fp16. La model card no incluye comparativas de calidad entre niveles de cuantización.
-- No hay resultados de benchmarks publicados en la información disponible, por lo que no es posible verificar objetivamente la calidad del modelo ni compararla con alternativas.
-- Al ser un modelo generativo de imágenes, existe riesgo de sesgos en los contenidos producidos y de resultados inadecuados o no deseados ante prompts ambiguos; se recomienda filtrar y revisar las salidas en entornos de producción.
-- No se documenta la arquitectura, los datos de entrenamiento ni los pasos de muestreo recomendados; la reproducibilidad de resultados depende de la documentación del modelo base.
-- El repositorio se creó y actualizó el mismo día (20 de septiembre de 2026), sin historial posterior de mantenimiento, lo que supone un riesgo para despliegues a largo plazo.
-- Para ComfyUI, la model card advierte explícitamente de que debe usarse la versión de leejet del nodo ComfyUI-GGUF y no la mantenida por city96, que según el autor ya no recibe mantenimiento activo.
+- Licencia restrictiva: el modelo original se distribuye bajo la Qwen Research License Agreement, que puede limitar el uso comercial; es imprescindible revisar los terminos antes de desplegarlo en produccion.
+- Idiomas limitados: solo se declaran ingles y chino; los prompts en castellano no estan soportados oficialmente y pueden producir resultados de menor calidad.
+- Sesgos conocidos: no documentados en la informacion disponible, pero los modelos de difusion entrenados con grandes corpus web suelen reproducir sesgos de genero, etnia y cultura; se recomienda auditar las salidas.
+- Riesgo de alucinacion visual: como todo modelo generativo de imagenes, puede producir contenido incoherente, artefactos o elementos no solicitados en el prompt.
+- Falta de documentacion tecnica: la model card no detalla la arquitectura, los datos de entrenamiento ni los niveles de cuantizacion disponibles, lo que dificulta la evaluacion rigurosa.
+- Dependencia de herramientas especificas: el uso esta vinculado a stable-diffusion.cpp y al nodo leejet/ComfyUI-GGUF; la model card advierte explicitamente de que la version de city96 de ComfyUI-GGUF parece no estar mantenida activamente.
+- Ausencia de benchmarks: no hay datos publicados de calidad de imagen (FID, CLIP score, etc.) que permitan comparar la version cuantizada con el modelo original.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/leejet/Qwen-Image-2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/leejet/Qwen-Image-2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Licencia del modelo original (Qwen Research License Agreement): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
+- Licencia del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
-- Documentación de Qwen-Image-2.1 en stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/qwen_image_2.1.md
-- Nodo de ComfyUI recomendado: https://github.com/leejet/ComfyUI-GGUF
-- Nodo de ComfyUI alternativo (no recomendado por el autor): https://github.com/city96/ComfyUI-GGUF
-- Flujo de trabajo de ejemplo: https://huggingface.co/leejet/Qwen-Image-2.1-GGUF/blob/main/qwen_image_2_1_t2i_gguf.json
+- Documentacion de Qwen-Image-2.1 en stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/models/qwen_image_2.1.md
+- Nodo ComfyUI-GGUF (leejet): https://github.com/leejet/ComfyUI-GGUF
+- Workflow de ejemplo en ComfyUI: https://huggingface.co/leejet/Qwen-Image-2.1-GGUF/blob/main/qwen_image_2_1_t2i_gguf.json
 - Imagen de ejemplo: https://huggingface.co/leejet/Qwen-Image-2.1-GGUF/resolve/main/Qwen_image_2.1_t2i.png

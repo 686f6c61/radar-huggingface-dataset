@@ -51,6 +51,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Tool use",
+      "dataset": "BFCL subset",
+      "metric": "Tool use (of 64)",
+      "value": 58
+    },
+    {
+      "task": "Instruction following",
+      "dataset": "IFEval subset",
+      "metric": "Followed (of 64)",
+      "value": 58
+    }
+  ],
   "sources": []
 }

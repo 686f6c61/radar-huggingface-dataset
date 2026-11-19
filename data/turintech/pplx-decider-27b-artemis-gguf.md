@@ -2,129 +2,110 @@
 
 ## Resumen
 
-pplx-decider-27B-Artemis-GGUF es una conversión y compresión a formato GGUF del modelo de decisión perplexity-ai/pplx-decider-v1.1-27b, publicada por TurinTech (turintech) mediante técnicas de optimización descubiertas por Artemis, su plataforma de optimización de código. No es un modelo generativo: recibe un estado (texto, JSON o imágenes) junto con un conjunto de preguntas tipadas y devuelve, en una sola pasada, una probabilidad para cada respuesta permitida. El modelo base fue desarrollado por Perplexity AI y está afinado a partir del backbone Qwen3.8-27B, con 26.895.998.464 parámetros (unos 26,9 mil millones) y una ventana de contexto de 262.144 tokens según fuentes de terceros.
+pplx-decider-27B-Artemis-GGUF es una cuantización GGUF del modelo perplexity-ai/pplx-decider-v1.1-27b, publicada por TurinTech bajo el paraguas de su herramienta de compresión Artemis. No es un modelo conversacional: se trata de un modelo de decisión ("decider") que responde preguntas tipadas (sí/no, elección única, puntuación) sobre texto o imágenes, devolviendo una probabilidad para cada respuesta en una sola pasada. El modelo base procede de Perplexity AI y cuenta con aproximadamente 26.900 millones de parámetros.
 
-La relevancia de esta ficha concreta está en la compresión: el original en BF16 ocupa 53,8 GB y exige 50,8 GiB de VRAM (una GPU de centro de datos de 80 GB), mientras que el fichero por defecto de TurinTech ocupa 15,28 GB (un 72% menos) y requiere 16,6 GiB, por lo que cabe en GPUs de 24 GB. Según las mediciones del autor sobre una NVIDIA A100, ese fichero coincide con el original en el 96,8% de 2.000 decisiones de test, mantiene la precisión (70,8% frente a 70,5%) y no altera ninguna respuesta de la que el original estuviera seguro por encima del 80%.
+La relevancia de esta publicación es práctica: reduce el peso del modelo de 50,8 GiB (formato original) a 15,28 GB en cuantización Q4_K_S, permitiendo ejecutarlo en una GPU de 24 GB con un consumo medido de 16,6 GiB. Según el autor, esta compresión conserva el 96,8 % de las respuestas idénticas al modelo original, frente al 95,7 % de una cuantización Q4_K_M estándar.
 
-El repositorio incluye también un proyector de visión convertido desde los pesos originales, ya que Perplexity no publica uno para llama.cpp, lo que permite usar la capacidad multimodal (imágenes PNG, JPEG o WebP enviadas como data URLs) sobre llama.cpp estándar. Esta conversión es independiente y no está afiliada ni respaldada por Perplexity. El repositorio registra 0 descargas y 0 likes, y fue creado el 12 de octubre de 2026.
+El modelo se sirve exclusivamente a través del endpoint `/v1/systemone` de llama-server, una interfaz específica para decisiones tipadas que no soporta chat multi-turno convencional. Requiere llama.cpp de 9 de octubre de 2026 o posterior. Está orientado a clasificación y enrutamiento de decisiones estructuradas, no a generación libre de texto.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only sobre backbone Qwen3.8-27B, afinado como modelo de decisión (no se especifica si es MoE; el tamaño en BF16 de 53,8 GB para 26,9 B de parámetros es coherente con un modelo denso) |
-| Parametros totales | 26.895.998.464 (aprox. 26,9 B) |
-| Parametros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | 262.144 tokens según fuentes de terceros; el repositorio no lo confirma y recomienda lanzar llama.cpp con `-c 16384` |
-| Tipos de cuantizacion | GGUF propietario de Artemis en dos ficheros: 15,28 GB (por defecto) y 14,27 GB; proyector multimodal `mmproj` en BF16 y Q8_0 (0,63 GB) |
-| Idiomas soportados | No disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo original) |
+| Arquitectura | no disponible (modelo base transformer, detalles no publicados) |
+| Parámetros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la model card; los ejemplos de despliegue usan `-c 16384` y se documentan entradas de hasta 4.983 tokens |
+| Tipos de cuantización | Q4_K_S (15,28 GB), IQ3_M; el repositorio incluye también archivos de proyector de visión etiquetados `:BF16` y `:Q8_0` |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (librería `gguf`, para llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, pplx-decider-v1.1-27b, es una actualización de pplx-decider-v1-27b que eleva la puntuación del Decision Index de 56,4 a 61,56, superando a Jev por más de 3,5 puntos, manteniendo el mismo backbone. La mayor parte de la mejora proviene, según Perplexity, de eliminar la máscara causal y de entrenar con más datos, incluyendo datos del dataset tasksource. No es un modelo de generación de texto: responde con probabilidades por respuesta candidata en una única pasada, admitiendo hasta 128 preguntas con nombre por petición y tres tipos de pregunta (noul para sí/no, choice con hasta 255 opciones y score con hasta 10 niveles).
+No se dispone de información detallada sobre la arquitectura interna del modelo base pplx-decider-v1.1-27b en la documentación proporcionada. Por el tamaño (26,9 mil millones de parámetros) y el pipeline declarado (text-classification), se trata de un transformer de gran tamaño adaptado a tareas de decisión tipada en lugar de generación de texto libre. La model card menciona capacidades multimodales (procesamiento de texto e imágenes), con archivos de proyector de visión separados en el repositorio.
 
-Esta versión de TurinTech no reentrena el modelo: convierte los pesos originales a GGUF y los cuantiza con técnicas propias de Artemis para llama.cpp. Los ficheros resultantes no son cuantizaciones estándar de llama-quantize (el autor los compara contra sus propias referencias Q8_0 y Q4_K_M), y el funcionamiento se ha validado con llama.cpp a partir del 9 de octubre de 2026 (probado en el commit `1e6f04a` y en la release `b11572`, con respuestas idénticas en una comprobación de 100 decisiones). Para la parte de visión se incluye un proyector `mmproj` convertido desde los pesos originales, en BF16 y en Q8_0.
+El trabajo de TurinTech (Artemis) se centra en la compresión: la cuantización Q4_K_S reduce el modelo a 15,28 GB manteniendo un 96,8 % de coincidencia con las respuestas del original en el conjunto de test `LocalLLaMA/typed-decisions`. No se detallan en la información disponible los datos de entrenamiento del modelo base, la composición del dataset, ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Decisión y clasificación con salida probabilística: devuelve una probabilidad por cada respuesta permitida en lugar de generar texto.
-- Tres tipos de pregunta: `noul` (sí/no), `choice` (selección entre hasta 255 opciones) y `score` (puntuación en hasta 10 niveles).
-- Hasta 128 preguntas con nombre por petición, resueltas en una sola pasada sobre el mismo estado de entrada.
-- Entrada multimodal: texto, JSON e imágenes en data URL (PNG, JPEG, WebP) mediante el proyector de visión incluido.
-- Ejecución sobre llama.cpp estándar sin compilaciones ni servidores personalizados, a través del endpoint `/v1/systemone`.
-- Capacidad de enrutado de consultas, clasificación de intención y verificación en pipelines, según la descripción del modelo base.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el modelo no genera texto ni cadenas de razonamiento.
-- Capacidades multilingües: no disponible (no se declaran idiomas soportados).
-- Modo "thinking": no disponible.
+- Respuesta a preguntas tipadas sobre texto: sí/no (`noul`), elección única y puntuaciones, con probabilidad asociada a cada respuesta.
+- Respuesta a preguntas tipadas sobre imágenes (soporte multimodal mediante proyector de visión).
+- Salida de probabilidades calibradas por respuesta en una sola pasada de inferencia.
+- Clasificación y enrutamiento de decisiones estructuradas (urgencia, categoría, selección entre opciones).
+- No soporta conversación multi-turno: el endpoint `/v1/systemone` no es un endpoint de chat.
+- Soporte de entradas largas: se documenta una entrada de 4.983 tokens respondida correctamente.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Triaje de urgencia en soporte técnico: enviando el texto del ticket como estado y una pregunta `noul` del tipo "¿expresa urgencia este mensaje?", se obtiene una probabilidad que permite ordenar la cola de atención sin generar texto (es el ejemplo que acompaña al modelo con un fallo de integración de Stripe).
-- Enrutado de consultas en buscadores y asistentes: con preguntas de tipo `choice` de hasta 255 opciones se puede clasificar la intención de una consulta y derivarla al índice o al agente correspondiente en una única llamada.
-- Moderación y verificación de contenido: varias preguntas tipadas por petición (por ejemplo, categoría de política incumplida y gravedad) permiten obtener varias etiquetas probabilísticas sobre el mismo texto en una sola pasada.
-- Puntuación de riesgo o prioridad: el tipo `score` con hasta 10 niveles sirve para asignar puntuaciones graduadas (riesgo de impago, calidad de un lead, prioridad de incidencia) manteniendo la interpretabilidad de la probabilidad por nivel.
-- Extracción y validación sobre documentos con imágenes: al aceptar imágenes en data URL y hasta 128 preguntas, permite comprobar campos y condiciones directamente sobre capturas, formularios escaneados o interfaces, sin OCR intermedio.
-- Despliegue on-premise en GPU de 24 GB: con 16,6 GiB medidos en A100, el fichero por defecto permite servir decisión y visión en una RTX 4090 o similar, útil en entornos con requisitos de residencia de datos.
-- Selección de proveedor o comparación de candidatos en pipelines de compras: preguntas de tipo `choice` sobre ofertas normalizadas devuelven la probabilidad de cada opción admisible en una sola inferencia.
-- Evaluación de políticas automatizadas: las probabilidades por respuesta permiten fijar umbrales de abstención y derivar a revisión humana, algo que un modelo puramente generativo no ofrece de forma directa.
+- Triaje de tickets de soporte: enviar el texto del ticket como `state` y preguntar por la urgencia (`noul`) o la categoría (elección única), obteniendo una probabilidad por respuesta que permite priorizar la cola automáticamente.
+- Enrutamiento de correo entrante: clasificar cada mensaje en un conjunto cerrado de departamentos con una sola pasada, sin generación de texto, lo que reduce latencia y coste frente a un LLM conversacional.
+- Moderación de contenido: preguntas tipadas de sí/no sobre texto o imágenes para decidir si un contenido requiere revisión humana, aprovechando la salida probabilística para fijar umbrales.
+- Verificación de imágenes en pipelines de datos: usar el proyector de visión para responder preguntas binarias o de selección sobre imágenes (por ejemplo, presencia de un objeto o cumplimiento de un criterio visual).
+- Filtrado previo en pipelines de anotación: descartar o etiquetar muestras automáticamente antes de la revisión manual, con el modelo ejecutándose en una única GPU de 24 GB.
+- Clasificación de intención en asistentes: determinar la intención del usuario entre un conjunto fijo de opciones antes de derivar la petición al sistema correspondiente.
+- Despliegue en hardware de gama alta de consumo: servir el modelo en local (RTX 4090 o similar con 24 GB) para decisiones sensibles que no deben salir de la infraestructura propia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible. Los datos publicados son métricas de decisión y de fidelidad de la cuantización frente al original BF16:
+Resultados declarados por el autor (no verificados de forma independiente) sobre el conjunto `LocalLLaMA/typed-decisions`:
 
-Ficheros GGUF de TurinTech frente al original:
-
-| Fichero | Tamano | Reduccion vs. original | Misma respuesta que el original | Cambio de precision | Respuestas seguras (>80%) alteradas |
-|---|---|---|---|---|---|
-| Original BF16 (perplexity-ai/pplx-decider-v1.1-27b) | 53,8 GB | referencia | referencia | referencia | referencia |
-| `pplx-decider-27B-Artemis-15.3GB.gguf` | 15,28 GB | 72% | 96,8% de 2.000 decisiones | +0,3 puntos | 0 |
-| `pplx-decider-27B-Artemis-14.3GB.gguf` | 14,27 GB | 73% | 96,2% de 2.000 decisiones | +0,7 puntos | 0 |
-
-Cuantizaciones estándar de referencia (creadas por TurinTech con `llama-quantize` sobre el original):
-
-| Fichero | Tamano | Misma respuesta que el original |
+| Tarea | Métrica | Valor |
 |---|---|---|
-| Q8_0 estándar | 28,6 GB | 99,2% |
-| Q4_K_M estándar | 16,55 GB | 95,7% |
+| Acuerdo con el original | Misma respuesta (%) | 96,8 |
+| Acuerdo con el original | Cambios en respuestas seguras | 0 |
+| Decisiones tipadas | Precisión (%) | 70,8 |
 
-Otras metricas comunicadas:
+Comparación de compresión indicada en la model card:
 
-| Metrica | Valor |
-|---|---|
-| Decision Index de pplx-decider-v1-27b | 56,4 |
-| Decision Index de pplx-decider-v1.1-27b | 61,56 (más de 3,5 puntos por encima de Jev) |
-| Precision del fichero de 15,3 GB en 2.000 decisiones de test | 70,8% (original: 70,5%) |
-| Preguntas de imagen evaluadas | 330 (proyector BF16) |
-| Fidelidad del proyector Q8_0 frente al BF16 | 98,8% de las preguntas de imagen |
-| Comparación en benchmark entre Q4_K_M estándar y el fichero de TurinTech | 98,0% frente a 96,0% |
+| Formato | Tamaño | Memoria GPU | Misma respuesta que el original |
+|---|---|---|---|
+| Original | 50,8 GiB | 50,8 GiB | referencia |
+| Q4_K_M estándar | no disponible | no disponible | 95,7 % |
+| Q4_K_S (Artemis) | 15,28 GB | 16,6 GiB | 96,8 % |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: 16,6 GiB para el fichero por defecto de 15,28 GB y 15,9 GiB para el de 14,27 GB (mediciones sobre NVIDIA A100).
-- GPU recomendadas: A100 para las mediciones oficiales; RTX 5090 probada (con 1 de 2.000 cambios de respuesta frente al original, según el autor); RTX 4090 u otras GPU de 24 GB como objetivo del fichero por defecto.
-- Encaje en GPU de consumo: sí, el fichero por defecto cabe en 24 GB. El de 14,27 GB requiere 15,9 GiB, lo que el autor califica de muy ajustado para una GPU de 16 GB y no fue probado en una.
-- Despliegue: llama.cpp, concretamente `llama-server`, con versión del 9 de octubre de 2026 o posterior (probado en el commit `1e6f04a` y en la release `b11572`). No requiere servidor ni compilación propios.
-- Parámetros de lanzamiento obligatorios: `-ub 4096 -b 4096`, ya que con el valor por defecto de 512 el endpoint `/v1/systemone` rechaza entradas de más de 512 tokens; `-c 16384` evita reservar memoria para la ventana completa de entrenamiento. Para imágenes hay que cargar el `mmproj` con `--mmproj` y subir el lote a `-ub 8192 -b 8192`, porque varias imágenes grandes pueden superar los 4.096 tokens.
-- Otros motores: no disponibles. El autor indica que ningún otro GGUF público de este modelo funciona en llama.cpp estándar (el Q5_K_M y el Q8_0 de Livesport usan su propio runtime y no cargan en `llama-server`). No se menciona compatibilidad con vLLM, TGI u Ollama.
+- VRAM estimada: 16,6 GiB medidos con la cuantización Q4_K_S y dos slots (`--parallel 2`); el original requiere 50,8 GiB.
+- GPU recomendadas: tarjetas con 24 GB de VRAM (RTX 4090, RTX 5090, A10G, L4 de 24 GB); con más VRAM se puede aumentar el contexto o el número de slots.
+- Cabe en GPU de consumo: sí, en RTX 4090 y RTX 5090 con la cuantización Q4_K_S; las variantes IQ3_M reducen aún más el requisito.
+- Despliegue: llama.cpp (llama-server) versión del 9 de octubre de 2026 o posterior, probado en los builds `1e6f04a` (b11540) y b11572; también disponible en Ollama (`turintech/pplx-decider-27b-artemis`) y LM Studio.
+- Comando de referencia: `llama-server -hf turintech/pplx-decider-27B-Artemis-GGUF:Q4_K_S --port 8080 -c 16384 -ub 4096 -b 4096 --no-mmproj`.
+- Notas de rendimiento: el tamaño de batch afecta ligeramente a las probabilidades (0,876 con batch 512 frente a 0,897 con batch 4096 en una entrada de 923 tokens); para varios clientes concurrentes se documenta `-np 8 -c 32768 --cache-ram 0`, que consume unos 1,5 GiB más de VRAM.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en decisiones | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| pplx-decider-27B-Artemis 15,3 GB (esta ficha) | 26,9 B | 262.144 tokens según terceros | 96,8% de coincidencia con el original; precisión 70,8% | apache-2.0 | GGUF para llama.cpp, 15,28 GB y 14,27 GB, más proyectores BF16 y Q8_0 |
-| perplexity-ai/pplx-decider-v1.1-27b (original BF16) | 26,9 B | 262.144 tokens según terceros | Referencia; Decision Index 61,56 | No detallada en la información disponible | Safetensors, 53,8 GB, 50,8 GiB de VRAM |
-| Q8_0 estándar del mismo modelo | 26,9 B | Igual que el original | 99,2% de coincidencia; 28,6 GB | apache-2.0 | GGUF generado con `llama-quantize` |
-| Q4_K_M estándar del mismo modelo | 26,9 B | Igual que el original | 95,7% de coincidencia; 16,55 GB; 98,0% en la muestra de benchmark | apache-2.0 | GGUF generado con `llama-quantize` |
-| Livesport Q5_K_M y Q8_0 | 26,9 B | No disponible | No disponible | No disponible | Requiere runtime propio; no carga en llama.cpp estándar |
-| Jev (modelo de decisión competidor citado por Perplexity) | No disponible | No disponible | Decision Index inferior en más de 3,5 puntos a pplx-decider-v1.1-27b | No disponible | No disponible |
+| pplx-decider-27B-Artemis-GGUF (Q4_K_S) | ~26,9 mil millones | no disponible (entradas documentadas de hasta ~5.000 tokens) | GGUF | Apache 2.0 | Decisor tipado, 16,6 GiB de VRAM, 96,8 % de acuerdo con el original |
+| pplx-decider-v1.1-27b (original) | ~26,9 mil millones | no disponible | safetensors | no disponible | Modelo base sin comprimir, 50,8 GiB de VRAM |
+| Cuantización Q4_K_M estándar del mismo modelo | ~26,9 mil millones | no disponible | GGUF | Apache 2.0 | 95,7 % de acuerdo con el original según el autor |
+
+No se dispone de información sobre otros modelos de decisión comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre ni razonamiento encadenado, solo probabilidades por respuesta permitida. No sirve para tareas de generación, resumen o chat convencional.
-- La ventana de contexto de 262.144 tokens procede de fuentes de terceros y no está confirmada en el repositorio de TurinTech; en llama.cpp la configuración recomendada limita a `-c 16384`.
-- Idiomas soportados: no declarados. No hay garantía documentada de comportamiento multilingüe.
-- Riesgo de alucinación: no evaluado en la información disponible. Al tratarse de clasificación probabilística, el riesgo se traslada a calibración de umbrales y a respuestas con probabilidad baja que deben derivarse a revisión humana.
-- El endpoint de inferencia es `/v1/systemone`, específico de llama.cpp para este modelo; no es compatible con la API de chat estándar ni, según el autor, con otras cuantizaciones públicas del mismo modelo.
-- Con `-b` y `-ub` en su valor por defecto (512), el servidor rechaza entradas de más de 512 tokens: es un error de configuración frecuente en producción. Con imágenes, el lote debe subirse a 8192.
-- El fichero de 14,27 GB exige 15,9 GiB y el autor advierte de que es muy ajustado en una GPU de 16 GB, sin haberlo probado en una: riesgo de fallo de asignación de memoria.
-- Sesgos conocidos: no disponibles. Al ser un ajuste fino del backbone Qwen3.8-27B sobre datos de decisión, hereda los sesgos del modelo base, no documentados aquí.
-- Licencia de la conversión: apache-2.0 según la ficha de Hugging Face. La licencia del modelo original no se detalla en la información proporcionada, por lo que conviene verificarla antes de un uso comercial.
-- Esta conversión es independiente y no está afiliada ni respaldada por Perplexity. El repositorio no registra descargas ni likes, y la validación se limita a los conjuntos internos del autor (2.000 decisiones tipadas, una muestra de benchmark, casos held-out y 330 preguntas de imagen).
-- En la RTX 5090 el autor reporta 1 de 2.000 casos con respuesta distinta a la del original BF16 (0 en la A100): la coincidencia exacta con el original no está garantizada al cambiar de hardware.
+- No es un modelo conversacional: no mantiene diálogos multi-turno ni genera texto libre; solo responde preguntas tipadas a través de `/v1/systemone`.
+- Dependencia estricta de la versión de llama.cpp (9 de octubre de 2026 o posterior); versiones anteriores no soportan el endpoint.
+- La precisión declarada en decisiones tipadas es del 70,8 %, lo que exige validación en el dominio concreto antes de usarlo en producción.
+- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false`).
+- El tamaño de batch modifica ligeramente las probabilidades de salida; conviene fijar `-ub 4096 -b 4096` para reproducir las mediciones.
+- No se documentan sesgos conocidos, cobertura idiomática ni comportamiento ante entradas fuera de distribución.
+- Licencia Apache 2.0: permite uso comercial, pero al derivar de un modelo de Perplexity AI conviene revisar los términos del modelo base.
+- El riesgo de alucinación en sentido clásico es limitado al no generar texto libre, pero las probabilidades pueden estar mal calibradas en dominios alejados de los datos de entrenamiento.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
-- Versión anterior del modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
-- TurinTech: https://www.turintech.ai/
-- Reserva de demo de TurinTech: https://www.turintech.ai/book-a-demo
-- Dataset de decisiones tipadas usado en la evaluación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
-- Ficha de referencia del modelo (VRAM y especificaciones): https://apxml.com/models/pplx-decider-v1-27b
-- Ficha de referencia del modelo (contexto y multimodalidad): https://www.llmreference.com/model/pplx-decider-v1-27b
-- Proyector de visión BF16: https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF/blob/main/mmproj-pplx-decider-27B-BF16.gguf
-- Fichero GGUF por defecto: https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF/blob/main/pplx-decider-27B-Artemis-15.3GB.gguf
+- Resultados declarados: https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF#results
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Ollama: https://ollama.com/turintech/pplx-decider-27b-artemis
+- LM Studio: https://lmstudio.ai/turintech/pplx-decider-27b-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai

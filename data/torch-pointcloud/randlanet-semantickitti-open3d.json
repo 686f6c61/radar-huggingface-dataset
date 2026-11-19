@@ -50,20 +50,14 @@
       "task": null,
       "dataset": "SemanticKITTI",
       "metric": "mIoU",
-      "value": 46.18
+      "value": 54.76
     },
     {
       "task": null,
       "dataset": "SemanticKITTI",
       "metric": "OA",
-      "value": 83.99
+      "value": 90.19
     }
   ],
-  "sources": [
-    {
-      "title": "QORNO.COM - Sex Videos",
-      "url": "https://www.qorno.com/",
-      "snippet": "QORNO.COM Is The Nr. 1 Source for Free Sex Videos. More Than 1 Million Sex & Porn Tube Movies and an Excellent Categories …Read more"
-    }
-  ]
+  "sources": []
 }

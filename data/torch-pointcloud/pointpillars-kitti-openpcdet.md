@@ -2,113 +2,105 @@
 
 ## Resumen
 
-pointpillars.kitti.openpcdet es un modelo de detección de objetos 3D sobre nubes de puntos LiDAR, publicado por torch-pointcloud y convertido desde OpenPCDet. Implementa la arquitectura PointPillars, basada en un codificador de pilares y un backbone 2D convolucional, y está entrenado con el dataset KITTI para detectar tres clases: coche, peatón y ciclista.
+PointPillars es un detector de objetos 3D para nubes de puntos LiDAR que organiza la escena en columnas verticales (pillars) y aplica una codificacion tipo PointNet seguida de una red troncal 2D convolucional. Este checkpoint concreto, `torch-pointcloud/pointpillars.kitti.openpcdet`, es una conversion a safetensors y a la libreria `torch-pointcloud` de los pesos de referencia de OpenPCDet, entrenados sobre el dataset KITTI. Desarrollado por Arthur Dujardin bajo el espacio `torch-pointcloud`, el modelo resuelve la deteccion de coches, peatones y ciclistas en escenas de conduccion autonoma con un coste computacional muy bajo: 4,8 millones de parametros.
 
-El modelo tiene 4.840.904 parámetros, 4 canales de entrada (x, y, z e intensidad) y 384 canales de características. Se distribuye en formato safetensors con licencia Apache-2.0 y se integra mediante la librería torch-pointcloud. No es un modelo de lenguaje: no procesa texto ni dispone de ventana de contexto textual.
+Su relevancia actual es practica: frente a los detectores 3D basados en transformers o en voxelizaciones densas, PointPillars sigue siendo un caballo de batalla para despliegue en tiempo real y en hardware modesto, y esta implementacion ofrece una API Python limpia (`tp.create_model`) con extraccion de caracteristicas de 384 canales, lo que facilita reutilizarlo como backbone en pipelines propios. La licencia Apache-2.0 y la procedencia desde OpenPCDet lo hacen apto para uso comercial sin fricciones.
 
-Su interés práctico es el de un baseline ligero y reproducible para percepción 3D: permite inferencia en PyTorch, extracción de características y experimentación en robótica o conducción autónoma con un coste de parámetros muy bajo. Las métricas declaradas en KITTI no están verificadas y el autor no detalla el protocolo de evaluación.
+No es un modelo de lenguaje: no procesa texto ni tiene ventana de contexto en el sentido habitual. Su entrada es una nube de puntos con coordenadas e intensidad, y su salida son cajas 3D con clase y orientacion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | PointPillars: codificador de pilares con backbone 2D convolucional |
-| Parámetros totales | 4.840.904 (~4,84 M) |
-| Parámetros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | No aplica: no es un modelo de lenguaje ni procesa contexto textual |
-| Tipos de cuantización | No disponible: solo se documentan pesos safetensors; no se publican versiones cuantizadas |
-| Idiomas soportados | No aplica: no procesa texto |
+| Arquitectura | PointPillars (pillar encoder tipo PointNet + backbone 2D convolucional + cabeza de deteccion SSD-like) |
+| Parametros totales | 4.840.904 (4,8 M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision 3D sobre nubes de puntos) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/INT8) |
+| Idiomas soportados | no aplica |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
-| Entrada | Nube de puntos LiDAR con 4 canales: x, y, z, intensidad |
-| Clases detectadas | 3: Car, Pedestrian, Cyclist |
-| Canales de características | 384 |
+| Canales de entrada | 4 (x, y, z, intensidad) |
+| Clases detectadas | 3 (Car, Pedestrian, Cyclist) |
+| Dimension de caracteristicas | 384 |
 | Dataset de entrenamiento | KITTI |
-| Framework | PyTorch mediante torch-pointcloud |
-| Pipeline | object-detection |
-| Tamaño del repositorio | 0,0 GB reportados; los pesos de 4,84 M de parámetros ocupan aproximadamente 19,4 MB en FP32 |
-| Descargas / likes | 0 / 0 según la información disponible |
+| Libreria | torch-pointcloud |
+| Tamano del repositorio | 0,0 GB (pesos muy ligeros) |
 
 ## Arquitectura y entrenamiento
 
-PointPillars transforma la nube de puntos en una representación de pilares verticales y aplica un backbone 2D convolucional para predecir cajas 3D. La model card indica explícitamente un codificador de pilares con backbone 2D, 4 canales de entrada, 3 clases y 384 canales de características. Esta formulación evita convoluciones 3D costosas y permite un pipeline de detección más rápido que alternativas volumétricas, aunque no se aportan medidas de latencia o throughput.
+PointPillars elimina la necesidad de voxelizar en 3D: proyecta la nube de puntos sobre una rejilla en el plano XY y agrupa los puntos de cada celda en un "pillar". Cada pillar se codifica con una capa tipo PointNet (MLP compartida mas max-pooling) en un vector de 384 dimensiones, que se dispersa de vuelta a una representacion densa 2D (pseudo-imagen). Sobre esa pseudo-imagen actua un backbone convolucional 2D con bloques de downsample y upsampling y conexiones de salto, y finalmente una cabeza de deteccion tipo SSD predice clase, offset de caja, dimensiones, altura y angulo de orientacion (con la parametrizacion por seno/coseno habitual para resolver la ambiguedad angular).
 
-El modelo se entrenó con KITTI y se convirtió desde OpenPCDet, que se distribuye con licencia Apache-2.0. No se documentan en la información disponible el número de puntos por muestra, el tamaño de pilar o vóxel, las augmentaciones, la función de pérdida, el número de épocas, el optimizador, el hardware de entrenamiento ni el procedimiento exacto de conversión. Tampoco hay información sobre RLHF, DPO u otras fases de alineación, que no aplican a un detector 3D. La innovación principal es la codificación mediante pilares descrita en el artículo de PointPillars, pero no se publican datos propios de velocidad de inferencia.
+El checkpoint se ha entrenado sobre KITTI, el benchmark clasico de conduccion autonoma con anotaciones 3D en coordenadas de camara LiDAR. La model card no detalla el numero de tokens ni la composicion exacta del dataset, ni si hubo aumentos de datos especificos, fases de refinamiento o tecnicas de ensemble en test. La conversion procede de OpenPCDet (Apache-2.0) y se ha reempaquetado en `torch-pointcloud`, que expone tanto `forward` completo como `forward_features` para extraer los 384 canales del backbone. No se documenta decodificacion especulativa, atencion lineal ni innovaciones de inferencia mas alla del propio diseno de pillars, que ya es en si la innovacion clave del paper original (2019) al permitir convoluciones 2D en lugar de 3D.
 
 ## Capacidades
 
-- Detección de objetos 3D en nubes de puntos LiDAR para las clases coche, peatón y ciclista.
-- Procesamiento de muestras con coordenadas espaciales e intensidad mediante la transformación y el collate de torch-pointcloud.
-- Inferencia en PyTorch sobre CPU o GPU, con soporte de lotes.
-- Extracción de características de 384 canales mediante `forward_features`, reutilizables en modelos downstream.
-- Integración como baseline en pipelines de percepción 3D, robótica o conducción autónoma.
-- No dispone de generación de texto, tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües.
-- No se documentan visión RGB, audio, modo de razonamiento, detección abierta de clases, segmentación, tracking ni estimación de pose.
+- Deteccion de objetos 3D en nubes de puntos LiDAR con cajas orientadas (7 grados de libertad: centro, dimensiones y angulo).
+- Clasificacion en tres categorias: coche, peaton y ciclista.
+- Regresion de atributos geometricos: dimensiones de la caja, offset respecto al centro del pillar y orientacion.
+- Extraccion de caracteristicas densas de 384 canales mediante `forward_features`, util como representacion intermedia para tareas posteriores.
+- Procesamiento por lotes con `collate` y `batch_from="pos_voxel"`, apto para inferencia en GPU con tensores dispersos.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: no es un modelo generativo.
+- No tiene capacidades multilingues ni de texto.
+- No incluye modo "thinking", vision 2D, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Percepción para prototipos de conducción autónoma: el modelo detecta coches, peatones y ciclistas en nubes LiDAR y sirve como base para experimentar con planificación y control en entornos KITTI o similares.
-- Robótica móvil y vehículos autoguiados: con 4,84 M de parámetros, puede integrarse en un pipeline de detección de obstáculos 3D con requisitos de memoria muy bajos, siempre que se valide el dominio de despliegue.
-- Pre-anotación de datasets LiDAR: genera cajas 3D candidatas que después revisa un anotador humano, reduciendo el coste de etiquetado en proyectos de percepción.
-- Extracción de características para tareas downstream: los 384 canales de `forward_features` pueden alimentar clasificadores de escena, modelos de segmentación o sistemas de recuperación de trayectorias.
-- Monitorización de tráfico con sensores LiDAR: permite contar vehículos, peatones y ciclistas sin usar cámara, lo que puede ayudar a reducir riesgos de privacidad en entornos urbanos.
-- Baseline académico y reproducción de experimentos: útil para comparar variantes de PointPillars, validar conversiones desde OpenPCDet y reproducir resultados en KITTI.
-- Simulación y gemelos digitales: detección sobre datos sintéticos o registros reproducidos para comprobar la coherencia del pipeline de percepción antes de desplegarlo en un vehículo real.
-- Control de calidad de sensores: una caída acusada de detecciones puede señalar problemas de calibración, desalineación temporal o degradación del LiDAR, aunque el modelo no incluye herramientas de diagnóstico específicas.
+- Percepcion en vehiculos autonomos y ADAS: el modelo detecta coches, peatones y ciclistas en tiempo real con solo 4,8 M de parametros, lo que permite ejecutarlo en la unidad de a bordo junto a otros modulos de planificacion.
+- Robotica movil en interiores y exteriores: integrado en la pila de percepcion de un robot con LiDAR, proporciona cajas 3D para evitar obstaculos dinamicos con latencia baja.
+- Preetiquetado y anotacion semiautomatica: `forward_features` permite generar propuestas de cajas 3D sobre nuevas grabaciones y reducir el trabajo manual de etiquetado, que es el cuello de botella en datasets de conduccion.
+- Baseline academico y reproduccion de resultados: al ser una conversion directa de OpenPCDet sobre KITTI, sirve para comparar nuevas arquitecturas contra un punto de referencia bien conocido y reproducible.
+- Extraccion de caracteristicas para modelos posteriores: los 384 canales del backbone pueden alimentar clasificadores de escena, segmentacion o tareas de prediccion de trayectorias.
+- Despliegue en hardware de borde: su tamano (0,0 GB de repo) y su backbone 2D lo hacen viable en GPUs de gama media o incluso en plataformas embebidas con aceleracion, donde los detectores 3D densos no caben.
+- Vigilancia y analitica de trafico: deteccion de peatones y ciclistas en intersecciones monitorizadas con LiDAR para estudios de movilidad o seguridad vial.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card para KITTI. Ninguno está verificado de forma independiente.
+Resultados declarados por el autor en la model card sobre KITTI (no verificados, `verified: false`):
 
-| Benchmark | Métrica | Valor | Verificado | Observaciones |
-|---|---|---:|---|---|
-| KITTI | mAP | 64,16 | No | El autor no especifica si es mAP 3D o BEV, ni el umbral IoU |
-| KITTI | AP/Car | 77,35 | No | Protocolo de evaluación no detallado |
-| KITTI | AP/Pedestrian | 52,39 | No | Protocolo de evaluación no detallado |
-| KITTI | AP/Cyclist | 62,74 | No | Protocolo de evaluación no detallado |
-| KITTI | Latencia / throughput | No disponible | No | No se publican medidas de velocidad |
+| Metrica | Valor |
+|---|---|
+| mAP | 64,16 |
+| AP/Car | 77,35 |
+| AP/Pedestrian | 52,39 |
+| AP/Cyclist | 62,74 |
 
-No se han publicado en la información disponible resultados comparativos con otros modelos bajo el mismo protocolo, ni métricas de velocidad, memoria o consumo energético.
+No se han publicado en la informacion disponible resultados de latencia, throughput ni comparaciones directas con otras implementaciones de PointPillars.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: aproximadamente 19,4 MB en FP32, 9,7 MB en FP16 y 4,8 MB en INT8. El consumo real dependerá de los buffers de vóxeles o pilares y del tamaño de lote, que no se documentan.
-- El modelo cabe holgadamente en GPUs consumer. No hay una recomendación oficial de GPU; por tamaño, una RTX 3060, RTX 4060 o RTX 4090 es más que suficiente para los pesos, y el límite práctico será el preprocesado de la nube de puntos.
-- GPU de centro de datos como A100 o H100 no son necesarias por capacidad del modelo; podrían usarse para procesar lotes grandes o muchos escenarios en paralelo.
-- Inferencia en CPU posible mediante PyTorch, aunque la latencia no está documentada.
-- Despliegue previsto con PyTorch y torch-pointcloud. No se documenta exportación a ONNX, TensorRT, TorchScript ni otros runtimes.
-- vLLM, llama.cpp, Ollama y TGI no aplican: son herramientas orientadas a modelos de lenguaje.
-- No se publican datos de latencia, throughput ni memoria pico en producción.
+- VRAM estimada para inferencia: muy baja. Con 4,8 M de parametros, los pesos en FP32 ocupan aproximadamente 19 MB; el consumo dominante es la pseudo-imagen intermedia y los tensores de pillars, no los pesos. Cabe holgadamente en cualquier GPU con 2 GB o mas.
+- GPU recomendadas: RTX 3060/4060 y superiores para desarrollo; A100, H100 o L4 para despliegue en servidor con lotes grandes. Tambien funciona en CPU para pruebas, con latencia mayor.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU NVIDIA modernas, incluidas las de portatil con poca VRAM.
+- Opciones de despliegue: la via documentada es la libreria `torch-pointcloud` (`pip install torch-pointcloud`). No se documentan exportaciones a ONNX, TensorRT, vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a este tipo de modelo.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificables de parámetros y métricas homogéneas para las alternativas en la información proporcionada. La comparación cuantitativa directa no es posible sin el mismo split, umbral IoU y protocolo de evaluación.
+| Modelo | Parametros | Entrada | mAP KITTI (declarado) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pointpillars.kitti.openpcdet (este) | 4,8 M | LiDAR, 4 canales | 64,16 | Apache-2.0 | Hugging Face, via torch-pointcloud |
+| PointPillars original (OpenPCDet) | ~4,8 M | LiDAR, 4 canales | no disponible en esta ficha | Apache-2.0 | GitHub open-mmlab/OpenPCDet |
+| Otros detectores 3D de OpenPCDet (SECOND, PV-RCNN, CenterPoint) | no disponible | LiDAR | no disponible en esta ficha | Apache-2.0 | GitHub open-mmlab/OpenPCDet |
 
-| Modelo | Parámetros | Contexto | KITTI | Licencia | Disponibilidad |
-|---|---:|---|---|---|---|
-| pointpillars.kitti.openpcdet | 4,84 M | No aplica | mAP 64,16; AP/Car 77,35; AP/Pedestrian 52,39; AP/Cyclist 62,74 (no verificado) | Apache-2.0 | Hugging Face |
-| PointPillars original en OpenPCDet | No disponible | No aplica | No disponible en esta ficha | Apache-2.0 en el repositorio OpenPCDet | GitHub |
-| SECOND en OpenPCDet | No disponible | No aplica | No disponible en esta ficha | Apache-2.0 en el repositorio OpenPCDet; verificar licencia del modelo | GitHub |
-| CenterPoint en OpenPCDet | No disponible | No aplica | No disponible en esta ficha | Apache-2.0 en el repositorio OpenPCDet; verificar licencia del modelo | GitHub |
+La comparacion cuantitativa con SECOND, PV-RCNN o CenterPoint no puede establecerse con los datos disponibles; en terminos cualitativos, esos detectores suelen superar a PointPillars en precision a costa de mayor coste computacional y complejidad de despliegue.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado únicamente con KITTI, un dataset con sensores, condiciones y clases concretas. No hay garantía de generalización a otros LiDAR, resoluciones, montajes o condiciones meteorológicas.
-- Solo detecta tres clases: coche, peatón y ciclista. No realiza detección abierta, segmentación, tracking ni estimación de pose.
-- La entrada se limita a cuatro canales (x, y, z, intensidad). No utiliza imagen RGB ni otros sensores, por lo que pierde información visual útil en escenas complejas.
-- Las métricas declaradas no están verificadas y el protocolo de evaluación no está detallado. No deben compararse directamente con resultados publicados bajo otros umbrales IoU o splits.
-- No se documenta un análisis de sesgos por género, edad, tipo de vehículo, hora del día o condiciones de iluminación. Como detector entrenado en KITTI, puede heredar los sesgos de ese dataset.
-- En detección 3D no existe "alucinación" generativa, pero sí falsos positivos y falsos negativos. Los objetos pequeños, lejanos, ocluidos o con pocos puntos pueden detectarse con menor fiabilidad.
-- La licencia Apache-2.0 permite uso comercial del modelo, pero el dataset KITTI y los componentes de OpenPCDet pueden tener términos adicionales que deben revisarse antes de producción.
-- El repositorio registra 0 descargas y 0 likes, y no se documenta soporte activo. El tamaño reportado de 0,0 GB puede deberse al redondeo; los pesos reales son de escala MB.
-- No se documentan los umbrales de NMS, la calibración, el preprocesado exacto ni las diferencias numéricas respecto al modelo original de OpenPCDet. Conviene validar la conversión con un conjunto propio antes de desplegar.
+- Entrenado exclusivamente sobre KITTI: la generalizacion a otros sensores, densidades de puntos o entornos (nieve, lluvia, escenas interiores) no esta validada y probablemente degrade.
+- Solo tres clases (Car, Pedestrian, Cyclist); no detecta camiones, autobuses, motocicletas ni senalizacion.
+- Los valores de benchmark estan marcados como no verificados por el autor; conviene reproducirlos antes de usarlos como referencia en publicaciones.
+- La nube de puntos debe preprocesarse con la transformacion que expone `info["transform"]`; usar otra voxelizacion o rango altera los resultados.
+- Riesgo de falsos negativos en objetos pequenos o lejanos, limitacion inherente a la resolucion de la rejilla de pillars.
+- No hay informacion sobre sesgos demograficos o de escena, pero al entrenarse con KITTI (ciudades alemanas en condiciones diurnas) es esperable un sesgo hacia ese dominio.
+- Licencia Apache-2.0: permite uso comercial y modificacion con atribucion; no impone restricciones de campo de uso, pero el usuario debe cumplir la normativa aplicable en conduccion autonoma y proteccion de datos.
+- Alucinacion en el sentido generativo no aplica; el riesgo equivalente son detecciones espurias en zonas con retorno LiDAR escaso o ruidoso.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointpillars.kitti.openpcdet
-- Artículo de PointPillars: https://arxiv.org/abs/1812.05784
+- Paper PointPillars (arXiv:1812.05784): https://arxiv.org/abs/1812.05784
 - Repositorio OpenPCDet: https://github.com/open-mmlab/OpenPCDet
-- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- DOI de PyTorch PointCloud en Zenodo: https://doi.org/10.5281/zenodo.22159632
-- Benchmark KITTI 3D object detection: https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d
-- PyTorch: https://pytorch.org/
+- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- DOI de PyTorch PointCloud: https://doi.org/10.5281/zenodo.22159632
+- Dataset KITTI: https://www.cvlibs.net/datasets/kitti/

@@ -2,95 +2,90 @@
 
 ## Resumen
 
-Omni-Edu-4B-GGUF es la versión cuantizada en formato GGUF del modelo Omni-Edu-4B, un modelo multimodal de tipo image-text-to-text desarrollado por el usuario lhpku20010120. El modelo está orientado al ámbito educativo (etiquetas "omniedu" y "education") y se distribuye bajo la librería llama.cpp, lo que permite su ejecución local en hardware de consumo mediante el ecosistema GGUF. La model card lo vincula a la familia Qwen 3.5 (tag "qwen3_5"), aunque no se detalla la arquitectura exacta en la información disponible.
+Omni-Edu-4B es un modelo multimodal de tipo image-text-to-text desarrollado por el equipo OmniEdu (publicado bajo el identificador `lhpku20010120`), orientado a tareas educativas. Esta ficha cubre la variante GGUF, `Omni-Edu-4B-GGUF`, que son los pesos del modelo base `lhpku20010120/Omni-Edu-4B` convertidos y cuantizados con llama.cpp para su despliegue en entornos locales y servidores ligeros. El modelo cuenta con 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) y procesa tanto texto como imágenes, lo que lo sitúa en la gama de modelos pequeños con capacidad de visión.
 
-Con 4.205.751.296 parámetros totales (aproximadamente 4,2 mil millones), el modelo se posiciona en el segmento de modelos pequeños con capacidad de entrada de imagen y texto. El repositorio incluye cuatro cuantizaciones (BF16, Q8_0, Q6_K y Q4_K_M) más un proyector multimodal compartido (mmproj) en F16, lo que facilita el despliegue en entornos con recursos limitados, como estaciones de trabajo educativas o portátiles con GPU modesta.
+La relevancia de esta variante radica en su empaquetado: ofrece cuatro niveles de cuantización (BF16, Q8_0, Q6_K y Q4_K_M) más un proyector multimodal compartido (`mmproj`), lo que permite ejecutar el modelo en hardware de consumo. La cuantización Q4_K_M ocupa 2,52 GiB, un tamaño manejable para GPUs de gama media y sistemas con memoria unificada.
 
-La relevancia actual del modelo radica en su combinación de multimodalidad, tamaño reducido y formato GGUF listo para llama.cpp, lo que lo hace accesible para prototipado rápido en aplicaciones educativas sin necesidad de infraestructura de servidor dedicada. Sin embargo, la información pública es escasa: no se detallan los datos de entrenamiento, los idiomas soportados ni los resultados de benchmarks.
+La licencia Apache 2.0 permite uso comercial sin aprobación adicional, incluyendo autoalojamiento, servicios de tutoría de pago y ajuste fino para currículos específicos. El modelo está etiquetado con `qwen3_5`, lo que sugiere una arquitectura derivada de la familia Qwen 3.5, aunque la model card no detalla la arquitectura interna.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (tag "qwen3_5" sugiere base Qwen 3.5; no confirmado en la model card) |
-| Parámetros totales | 4.205.751.296 (≈4,2 B) |
-| Parámetros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible (el ejemplo de ejecución usa `-c 8192`, pero no se confirma como máximo oficial) |
-| Tipos de cuantización | BF16, Q8_0, Q6_K, Q4_K_M (más proyector multimodal mmproj en F16) |
-| Idiomas soportados | No disponible |
-| Licencia | Other (términos del modelo base Omni-Edu-4B; no especificados) |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Arquitectura | No disponible (etiquetado como `qwen3_5`; transformer multimodal image-text-to-text) |
+| Parametros totales | 4.205.751.296 (~4,2 B) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible en la model card; el ejemplo de ejecución usa `-c 8192` |
+| Tipos de cuantizacion | BF16 (7,85 GiB), Q8_0 (4,17 GiB), Q6_K (3,23 GiB), Q4_K_M (2,52 GiB) |
+| Idiomas soportados | No disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) + proyector multimodal `mmproj-OmniEdu-4B-F16.gguf` |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. La etiqueta "qwen3_5" en el repositorio sugiere que el modelo base podría derivar de la familia Qwen 3.5, pero la model card no confirma explícitamente la arquitectura (transformer denso, MoE u otra variante). El pipeline declarado es image-text-to-text, lo que implica la presencia de un codificador visual acoplado a un modelo de lenguaje, con un proyector multimodal separado (mmproj-OmniEdu-4B-F16.gguf) que se comparte entre todas las cuantizaciones.
+La model card no proporciona detalles sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La etiqueta `qwen3_5` en los tags sugiere que el modelo base deriva de la familia Qwen 3.5, y el pipeline `image-text-to-text` confirma que se trata de un modelo multimodal con entrada de imagen y texto. El repositorio incluye un proyector multimodal separado (`mmproj-OmniEdu-4B-F16.gguf`) compartido por las cuatro cuantizaciones, lo que es el patrón habitual en llama.cpp para modelos con visión.
 
-Tampoco se detallan los datos de entrenamiento: no se indica el número de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La orientación educativa se deduce únicamente de las etiquetas del repositorio. La conversión a GGUF se realizó con llama.cpp, según indica la model card, pero no se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+No se dispone de información sobre innovaciones técnicas específicas (decodificación especulativa, atención lineal, mezcla de expertos u otras). El autor indica que la conversión y cuantización se realizaron con llama.cpp y que los términos de licencia y uso del modelo original aplican a esta variante.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como "conversational" y soporta interacción multi-turno.
-- Comprensión de imágenes: pipeline image-text-to-text, con entrada conjunta de imagen y texto mediante el proyector mmproj.
-- Orientación educativa: las etiquetas "omniedu" y "education" indican un enfoque hacia tareas de aprendizaje y enseñanza, aunque no se detallan capacidades específicas.
-- Ejecución local: compatible con llama.cpp y servidores compatibles con la API OpenAI (`llama-server` expone `/v1`).
-- Modo razonamiento desactivable: el ejemplo de ejecución incluye `--reasoning off`, lo que sugiere la existencia de un modo de razonamiento interno que puede activarse o desactivarse.
-- Soporte de tool calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
+- Generación de texto conversacional (etiqueta `conversational`).
+- Procesamiento de imágenes junto con texto (pipeline `image-text-to-text`), con soporte para entrada multimodal mediante el proyector `mmproj`.
+- Orientación educativa: el nombre y las etiquetas (`education`, `omniedu`) indican un ajuste orientado a tareas de enseñanza y tutoría.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios con API compatible con OpenAI.
+- Modo de razonamiento configurable: el ejemplo de ejecución incluye `--reasoning off`, lo que implica que el modelo puede activar o desactivar un modo de razonamiento.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles; la model card no lista idiomas.
 
 ## Casos de uso
 
-- Asistente educativo local para estudiantes: el modelo puede desplegarse en un portátil con llama.cpp y la cuantización Q4_K_M (2,52 GiB), permitiendo responder dudas sobre material de estudio sin conexión a internet ni costes de API.
-- Tutoría con soporte de imágenes: gracias al pipeline image-text-to-text y al proyector mmproj, el modelo puede recibir capturas de ejercicios, diagramas o apuntes y generar explicaciones o resolver problemas paso a paso.
-- Prototipado de aplicaciones educativas: al exponer una API compatible con OpenAI mediante `llama-server`, los desarrolladores pueden integrar el modelo en frontends como Cherry Studio (mencionado en la model card) o en sus propias aplicaciones web sin cambiar el código de cliente.
-- Despliegue en entornos con recursos limitados: las cuantizaciones Q6_K (3,23 GiB) y Q8_0 (4,17 GiB) permiten elegir el equilibrio entre calidad y memoria según el hardware disponible, algo útil en aulas con equipos modestos.
-- Generación de material didáctico: el modelo puede redactar explicaciones, resúmenes o preguntas de práctica a partir de texto o imágenes de referencia, aprovechando su orientación educativa.
-- Investigación en modelos multimodales pequeños: con 4,2 B de parámetros y formato GGUF, sirve como banco de pruebas para estudiar el comportamiento de modelos visión-lenguaje en hardware de consumo, comparando cuantizaciones y midiendo degradación de calidad.
+- Tutoría educativa autoalojada: el modelo puede desplegarse con `llama-server` y servir conversaciones de tutoría en local, sin depender de APIs externas, gracias a su licencia Apache 2.0 y a su tamaño reducido (2,52 GiB en Q4_K_M).
+- Asistencia sobre material visual: al aceptar entrada de imagen, puede emplearse para explicar diagramas, ejercicios escaneados o figuras de libros de texto, combinando la imagen con preguntas del estudiante.
+- Despliegue en hardware de consumo: con la cuantización Q4_K_M (2,52 GiB) cabe en GPUs de gama media y en equipos con memoria unificada, lo que permite prototipos educativos sin infraestructura dedicada.
+- Integración en aplicaciones de escritorio: la model card menciona la conexión con Cherry Studio a través de `http://127.0.0.1:8080/v1`, lo que facilita su uso en clientes de chat locales compatibles con la API de OpenAI.
+- Ajuste fino para currículos específicos: la licencia permite modificar y reentrenar el modelo para distintos planes de estudio, según indica explícitamente la model card.
+- Servicios de tutoría de pago: la licencia Apache 2.0 autoriza el autoalojamiento y la prestación de servicios comerciales sin aprobación adicional ni tasas de licencia.
+- Distribución de derivados: se permite redistribuir el modelo y sus derivados siempre que se incluya la licencia, la atribución y el aviso NOTICE, y se identifiquen las modificaciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
-  - BF16: ~7,85 GiB.
-  - Q8_0: ~4,17 GiB.
-  - Q6_K: ~3,23 GiB.
-  - Q4_K_M: ~2,52 GiB.
-  - Proyector multimodal mmproj F16: tamaño no especificado en la model card (debe sumarse a la VRAM total).
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, las cuantizaciones Q4_K_M y Q6_K caben en GPUs de consumo con 6-8 GB de VRAM; Q8_0 requiere al menos 6 GB y BF16 al menos 10-12 GB, estimaciones orientativas no confirmadas por el autor.
-- ¿Cabe en GPU de consumo? Sí, al menos las cuantizaciones Q4_K_M, Q6_K y Q8_0 son compatibles con GPUs de consumo típicas (por ejemplo, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB), aunque no se confirma oficialmente.
-- Opciones de despliegue: llama.cpp (`llama-server`), y por compatibilidad GGUF, potencialmente Ollama, LM Studio u otros runners basados en llama.cpp (no confirmado en la model card).
+- VRAM estimada para inferencia (solo pesos): BF16 ~7,85 GiB; Q8_0 ~4,17 GiB; Q6_K ~3,23 GiB; Q4_K_M ~2,52 GiB. A ello hay que sumar el proyector multimodal `mmproj-OmniEdu-4B-F16.gguf` y la memoria para el contexto (KV cache).
+- Contexto de ejemplo: la model card usa `-c 8192`; la memoria de KV cache crece con la longitud de contexto y debe añadirse a la estimación de pesos.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, la cuantización Q4_K_M es apta para GPUs de consumo con al menos ~4-6 GB de VRAM libre; Q8_0 y BF16 requieren GPUs de gama alta o profesional (por ejemplo, series RTX 4090/A100/H100), aunque el autor no confirma modelos concretos.
+- Cabe en GPU de consumo: sí, al menos en cuantizaciones Q4_K_M y Q6_K, según los tamaños de archivo publicados; no se confirma compatibilidad con modelos concretos de GPU.
+- Opciones de despliegue: llama.cpp (`llama-server`), con soporte de proyector multimodal mediante `--mmproj`. Clientes compatibles con la API OpenAI, como Cherry Studio. Otras opciones (vLLM, Ollama, TGI) no se mencionan en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Formato GGUF | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Omni-Edu-4B-GGUF | ~4,2 B | No disponible | Image-text-to-text | Other | Sí (BF16, Q8_0, Q6_K, Q4_K_M) | Hugging Face (lhpku20010120) |
-| Qwen2.5-VL-3B | ~3,75 B | 32k (según documentación pública de Qwen) | Image-text-to-text | Apache 2.0 (según Qwen) | Sí, vía comunidad | Hugging Face (Qwen) |
-| Qwen2.5-VL-7B | ~8,3 B | 32k (según documentación pública de Qwen) | Image-text-to-text | Apache 2.0 (según Qwen) | Sí, vía comunidad | Hugging Face (Qwen) |
-| Gemma 3 4B (multimodal) | ~4 B | 128k (según documentación pública de Google) | Image-text-to-text | Gemma Terms (según Google) | Sí, vía comunidad | Hugging Face (Google) |
+No se dispone de datos de benchmarks ni de comparaciones oficiales en la información proporcionada. La siguiente tabla recoge únicamente los datos objetivos disponibles de este modelo; las alternativas se indican como no disponibles al no poder verificarse sus especificaciones en la información suministrada.
 
-Nota: los datos de los modelos comparables provienen de documentación pública general y no de la información proporcionada en esta ficha; se incluyen como referencia orientativa. No se dispone de comparativas de rendimiento (benchmarks) para Omni-Edu-4B.
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Omni-Edu-4B-GGUF | ~4,2 B | No disponible (ejemplo con 8192) | Sí (image-text-to-text) | Apache 2.0 | GGUF en Hugging Face |
+| Alternativa 1 | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Alternativa 2 | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Alternativa 3 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Información pública muy limitada: no se documentan datos de entrenamiento, idiomas, contexto máximo ni benchmarks, lo que dificulta evaluar su calidad real.
-- Licencia "other" sin términos especificados: antes de usar el modelo en producción o con fines comerciales, es imprescindible revisar la licencia del modelo base Omni-Edu-4B, ya que la model card remite a ella sin detallarla.
-- Riesgo de alucinación: no cuantificado; como modelo pequeño de 4,2 B, es esperable una mayor propensión a errores factuales que modelos de mayor tamaño, aunque no hay datos que lo confirmen.
-- Sesgos: no documentados por el autor.
-- Idiomas: no se especifican los idiomas soportados; no se garantiza un rendimiento adecuado en castellano.
-- Contexto: el ejemplo de ejecución usa `-c 8192`, pero no se confirma que sea la longitud máxima oficial; valores superiores podrían degradar el rendimiento o no estar soportados.
-- Multimodalidad dependiente del proyector: es necesario descargar el archivo mmproj para entrada de imagen; sin él, el modelo solo procesa texto.
-- Despliegue: la model card solo documenta llama.cpp; la compatibilidad con otros runners GGUF no está confirmada.
-- Fecha de creación futura (2026-11-02): el repositorio tiene marcas temporales posteriores a la fecha actual de referencia, lo que puede indicar metadatos inconsistentes; conviene verificar la integridad de los archivos.
+- No se han publicado datos sobre sesgos del modelo; al ser un ajuste educativo, puede heredar sesgos del modelo base y de los datos de ajuste, que no se detallan.
+- Riesgo de alucinación: no cuantificado ni documentado por el autor; en un contexto educativo, las respuestas incorrectas pueden tener impacto directo en el aprendizaje, por lo que se recomienda verificación humana.
+- Idiomas soportados no declarados: no se puede garantizar un rendimiento adecuado fuera del idioma o idiomas de entrenamiento, que no se especifican.
+- Longitud de contexto no declarada en la model card: el valor de 8192 aparece solo como ejemplo de ejecución, no como límite oficial.
+- La licencia Apache 2.0 no relicencia los datasets de entrenamiento ni sus materiales de origen, según advierte la propia model card.
+- Al redistribuir el modelo o derivados es obligatorio incluir la licencia, conservar la atribución y el NOTICE, e identificar las modificaciones.
+- El repositorio ocupa 19,8 GB e incluye múltiples cuantizaciones; es necesario descargar solo los archivos necesarios (un archivo principal más el `mmproj` para visión).
+- El modelo tiene pocos likes (1) y un autor con un solo identificador; conviene evaluar su calidad de forma independiente antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/lhpku20010120/Omni-Edu-4B-GGUF
+- Repositorio GGUF: https://huggingface.co/lhpku20010120/Omni-Edu-4B-GGUF
 - Modelo base: https://huggingface.co/lhpku20010120/Omni-Edu-4B
-- Repositorio espejo de terceros (prithivMLmods): https://huggingface.co/prithivMLmods/Omni-Edu-4B-GGUF
-- llama.cpp (herramienta de conversión y ejecución): https://github.com/ggml-org/llama.cpp
-- Cherry Studio (cliente mencionado en la model card): no disponible en la información proporcionada.
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Cherry Studio (cliente mencionado en la model card): no se proporciona enlace en la información disponible.

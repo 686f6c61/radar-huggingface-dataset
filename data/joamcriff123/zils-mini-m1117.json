@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "joamCriff123/zils-mini-m1117",
+  "slug": "joamcriff123-zils-mini-m1117",
+  "author": "joamCriff123",
+  "url": "https://huggingface.co/joamCriff123/zils-mini-m1117",
+  "created_at": "2026-11-17T09:57:23.000Z",
+  "updated_at": "2026-11-17T09:58:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "zils",
+    "d3-mini",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078616080,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joamCriff123/zils-mini-m1114 · Hugging Face",
+      "url": "https://huggingface.co/joamCriff123/zils-mini-m1114",
+      "snippet": "Feature Extraction model with 5B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "joamCriff123/zils-mini-sx3 · Hugging Face",
+      "url": "https://huggingface.co/joamCriff123/zils-mini-sx3",
+      "snippet": "Built by LoRA fine-tuning the current d3-mini soup (uniform average of qhoenix/zils-mini-decision-v2 and Charlie320/zils-mini-s1, both Apache-2.0) on exam-format training items: items written for this purpose with OpenAI Codex, DeepSeek and Gemini (each answer blind-checked by a second pass), plus the public Zils seed exams v1 and v4 (zils-ai ..."
+    }
+  ]
+}

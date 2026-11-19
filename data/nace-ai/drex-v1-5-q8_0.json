@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Code NACE : définition, où le trouver, différence avec NAF et APE",
-      "url": "https://travail-industrie.com/blog/article-titre/difference-code-ape-naf-nace-verifier-convention-applicable",
-      "snippet": "Apr 29, 2026 · Le code NACE est la nomenclature européenne, le NAF sa déclinaison française, l'APE le code attribué à une …"
-    },
-    {
-      "title": "Overview - NACE - Eurostat",
-      "url": "https://ec.europa.eu/eurostat/web/nace",
-      "snippet": "The ‘statistical classification of economic activities’ in the European Community, abbreviated as NACE, is the classification of …"
-    },
-    {
-      "title": "Code NACE — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Code_NACE",
-      "snippet": "La NACE est la N omenclature statistique des A ctivités économiques dans la C ommunauté E uropéenne, un système de …"
-    },
-    {
-      "title": "Quelle est la différence entre un code NAF et un code NACE - INSEE",
-      "url": "https://www.insee.fr/fr/information/1302169?question=code-nace-code-naf-quelle-difference",
-      "snippet": "Afin de faciliter les comparaisons internationales, elle a la même structure que la nomenclature d'activités européenne NACE, elle …"
-    },
-    {
-      "title": "AMPP - The Association for Materials Protection and Performance",
-      "url": "https://www.ampp.org/",
-      "snippet": "AMPP, the worldwide network of experts committed to advancing corrosion control and protective coatings, ensuring the highest …"
-    }
-  ]
+  "sources": []
 }

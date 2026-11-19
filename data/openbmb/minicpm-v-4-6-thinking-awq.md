@@ -2,85 +2,97 @@
 
 ## Resumen
 
-MiniCPM-V 4.6 Thinking es un modelo de lenguaje multimodal (MLLM) desarrollado por OpenBMB, diseñado para ejecutarse de forma eficiente en dispositivos de borde como teléfonos móviles. Esta variante específica, `openbmb/MiniCPM-V-4.6-Thinking-AWQ`, es la versión cuantizada con AWQ (W4A16) del modelo base `openbmb/MiniCPM-V-4.6-Thinking`, que incorpora un modo de razonamiento de cadena de pensamiento larga (long chain-of-thought) antes de emitir la respuesta final. El modelo combina un encoder visual SigLIP2-400M con un LLM Qwen3.5-0.8B, sumando aproximadamente 1.300 millones de parámetros en total.
+MiniCPM-V-4.6-Thinking-AWQ es la version cuantizada en 4 bits (AWQ W4A16) del modelo multimodal MiniCPM-V-4.6-Thinking, desarrollado por OpenBMB. Se trata de un modelo de vision-lenguaje (image-text-to-text) disenado para inferencia en dispositivo, es decir, para ejecutarse en telefonos moviles y hardware de bajos recursos. El modelo base combina un codificador visual SigLIP2-400M con un LLM Qwen3.5-0.8B, sumando aproximadamente 1.300 millones de parametros totales.
 
-La relevancia de este modelo radica en su capacidad para ofrecer razonamiento multimodal avanzado (imagen y vídeo) con un tamaño extremadamente compacto, lo que permite su despliegue en hardware de consumo y plataformas móviles (iOS, Android y HarmonyOS) sin sacrificar rendimiento. La cuantización AWQ a 4 bits reduce el peso a aproximadamente 1,9 GB, facilitando su uso en entornos con memoria limitada. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+La variante "Thinking" anade una cadena de razonamiento explicita antes de emitir la respuesta final, lo que mejora el rendimiento en tareas complejas de razonamiento multimodal, matematicas y OCR intensivo. La cuantizacion AWQ reduce el peso del repositorio a 1,9 GB, facilitando el despliegue en entornos con VRAM limitada y en plataformas moviles (iOS, Android y HarmonyOS, segun la model card).
+
+Su relevancia actual reside en la combinacion de compresion de tokens visuales (4x/16x), razonamiento explicito y un peso reducido, lo que permite ejecutar comprension de imagen y video en dispositivos de consumo sin depender de infraestructura cloud. La licencia Apache 2.0 facilita el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder visual SigLIP2-400M + LLM Qwen3.5-0.8B (transformer multimodal) |
-| Parametros totales | 1.300.428.016 (~1,3 B) |
+| Arquitectura | Multimodal transformer: codificador visual SigLIP2-400M + LLM Qwen3.5-0.8B |
+| Parametros totales | 1.300.428.016 (aprox. 1,3 mil millones) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | AWQ W4A16 (4 bits) |
+| Tipos de cuantizacion | AWQ 4-bit (W4A16, AutoAWQ); pesos base en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (AWQ) |
+| Formato de pesos | safetensors (transformers), 4-bit AWQ |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura multimodal ligera compuesta por un encoder visual SigLIP2 de 400 millones de parámetros y un modelo de lenguaje Qwen3.5 de 800 millones de parámetros. Incorpora un mecanismo de compresión de tokens visuales mixto (4x y 16x) que reduce la carga computacional al procesar imágenes y vídeos, manteniendo un equilibrio entre detalle y eficiencia. La variante Thinking genera una traza de razonamiento explícita antes de la respuesta final, lo que mejora el rendimiento en tareas complejas de razonamiento multimodal, matemáticas y OCR.
+La arquitectura es un modelo multimodal compuesto: un codificador visual SigLIP2 de 400 millones de parametros que procesa imagenes y video, conectado a un LLM Qwen3.5 de 0.8 mil millones de parametros. El modelo hereda del MiniCPM-V 4.6 la compresion mixta de tokens visuales en modo 4x y 16x, que reduce el numero de tokens visuales enviados al LLM y, por tanto, el coste computacional en escenarios de multiples imagenes y video. La variante Thinking incorpora una traza de razonamiento explicita antes de la respuesta final.
 
-No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens utilizados ni el proceso de alineación (RLHF/DPO). La model card menciona que la cuantización AWQ se realizó con AutoAWQ sobre los pesos BF16 del modelo base, pero no se especifican los datos de entrenamiento del modelo original.
+La informacion proporcionada no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card referencia varios papers (arXiv:2604.27393, arXiv:2509.18154, arXiv:2408.01800, arXiv:2605.08985), que probablemente contienen los detalles de entrenamiento, pero su contenido no esta incluido en la informacion disponible.
 
 ## Capacidades
 
-- Comprensión de imágenes y vídeo: procesa entradas visuales estáticas y secuencias de vídeo, con soporte para múltiples imágenes por conversación.
-- Razonamiento de cadena de pensamiento: genera un razonamiento explícito antes de la respuesta final, mejorando la precisión en tareas complejas de matemáticas, lógica y OCR.
-- OCR y comprensión de documentos: capaz de extraer y razonar sobre texto en imágenes, incluyendo escritura manuscrita y capturas de pantalla.
-- Conversación multimodal multi-turno: mantiene contexto conversacional combinando imágenes y texto en interacciones largas.
-- Despliegue en dispositivos de borde: optimizado para ejecutarse en iOS, Android y HarmonyOS con código de adaptación de borde de código abierto.
-- Eficiencia de inferencia: alcanza aproximadamente 1,5 veces el throughput de tokens en comparación con Qwen3.5-0.8B, según el repositorio oficial.
+- Comprension de imagen y texto (image-text-to-text) con generacion de respuestas conversacionales.
+- Razonamiento multimodal con traza explicita (modo Thinking) antes de la respuesta final.
+- Comprension de video, con decodificacion via torchcodec o PyAV.
+- Tareas intensivas de OCR y reconocimiento de escritura manuscrita.
+- Razonamiento matematico sobre contenido visual.
+- Compresion configurable de tokens visuales (downsample_mode 4x para mayor detalle, 16x para mayor eficiencia).
+- Soporte de multiples imagenes por peticion (max_slice_nums configurable).
+- Despliegue en dispositivo: iOS, Android y HarmonyOS segun la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y multi-step reasoning: no disponible en la informacion proporcionada.
+- Idiomas soportados: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de accesibilidad para personas con discapacidad visual: el modelo puede describir escenas, leer textos de carteles o etiquetas y responder preguntas sobre el entorno en tiempo real desde un teléfono móvil, gracias a su bajo consumo de memoria y su capacidad OCR.
-- Atención al cliente automatizada con soporte visual: integrado en plataformas de mensajería, puede analizar capturas de pantalla de errores, facturas o productos enviados por el usuario y proporcionar soluciones paso a paso mediante razonamiento multi-turno.
-- Análisis de documentos en dispositivos móviles: escanear recibos, formularios o tarjetas de visita y extraer datos estructurados (nombres, fechas, importes) con razonamiento contextual, útil para aplicaciones de contabilidad personal o gestión de gastos.
-- Educación interactiva: como tutor de matemáticas o ciencias que recibe fotografías de problemas escritos a mano y guía al estudiante con explicaciones razonadas, aprovechando el modo Thinking para desglosar el proceso de resolución.
-- Moderación de contenido visual en redes sociales: clasificar imágenes y vídeos subidos por usuarios para detectar contenido inapropiado o engañoso, combinando comprensión visual y razonamiento textual en un pipeline de baja latencia.
-- Asistente de compras con comparación visual: el usuario fotografía un producto y el modelo identifica características, compara precios o sugiere alternativas basándose en el contexto de la conversación, todo ello ejecutándose localmente en el dispositivo.
+- **OCR y digitalizacion de documentos en movil**: el modelo puede leer tickets, facturas y notas manuscritas directamente en el dispositivo (la model card muestra demos de reconocimiento de tickets y escritura manuscrita en iPhone, Android y HarmonyOS), evitando enviar imagenes a un servidor.
+- **Asistencia educativa con resolucion de problemas**: gracias al modo Thinking, el modelo genera la traza de razonamiento paso a paso antes de la respuesta, util para explicar problemas de matematicas o fisica a partir de una foto del enunciado.
+- **Accesibilidad para personas con discapacidad visual**: descripcion de escenas y lectura de texto en imagenes en tiempo real en el telefono, con latencia baja gracias al peso reducido (1,9 GB en AWQ).
+- **Analisis de video en el borde**: con la compresion 16x de tokens visuales y soporte de video, puede resumir o responder preguntas sobre clips cortos sin subirlos a la nube.
+- **Verificacion de calidad en linea de produccion**: inspeccion visual de productos o etiquetas con un modelo ligero desplegado en GPUs de consumo, reduciendo costes frente a modelos multimodales de mayor tamano.
+- **Soporte tecnico con capturas de pantalla**: el usuario envia una captura de error o de interfaz y el modelo razona sobre ella para proponer una solucion, con contexto multi-imagen mediante max_slice_nums.
+- **Prototipado rapido de aplicaciones multimodales**: la licencia Apache 2.0 y el formato transformers permiten integrar el modelo en pipelines de investigacion y demos sin restricciones comerciales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye referencias a gráficos de evaluación (thinking.png e instruct.png) y a métricas de eficiencia (throughput y TTFT), pero no se proporcionan valores numéricos en el texto. No se dispone de datos comparativos cuantitativos con otros modelos.
+La model card incluye graficos de rendimiento (comparativa Thinking vs Instruct, throughput en alta concurrencia y TTFT de una sola peticion) en formato de imagen, pero no se proporcionan los valores numericos en la informacion disponible. Por tanto:
+
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos cuantizados a 4 bits ocupan aproximadamente 1,9 GB (tamaño del repositorio), por lo que se estima un consumo de VRAM inferior a 4 GB incluyendo overhead de activaciones y KV cache.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, RTX 4060 o superiores. También compatible con Apple Silicon (M1/M2/M3) mediante Metal.
-- Compatibilidad con GPU de consumo: sí, cabe en la mayoría de tarjetas gráficas de consumo actuales y en iGPUs con memoria compartida suficiente.
-- Opciones de despliegue: transformers (con Flash Attention 2 recomendado), vLLM (existe receta oficial), llama.cpp, Ollama y LM Studio según la model card. También se menciona despliegue nativo en iOS, Android y HarmonyOS.
-- Latencia y throughput: no se proporcionan valores numéricos en la información disponible. El repositorio indica que alcanza ~1,5x el throughput de tokens de Qwen3.5-0.8B, pero sin cifras concretas.
+- VRAM estimada para inferencia: los pesos AWQ ocupan aproximadamente 1,9 GB; con overhead de activaciones y cache KV, se puede estimar un consumo en torno a 3-4 GB en FP16 para activaciones, aunque no se dispone de una cifra oficial en la informacion proporcionada.
+- GPU recomendadas: al tratarse de un modelo de 1,3 mil millones de parametros, cabe en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090; tambien en A100/H100 para despliegues de alta concurrencia.
+- Cabe en GPU de consumo: si, con cuantizacion AWQ 4-bit y en la mayoria de GPUs con 4 GB o mas de VRAM.
+- Despliegue movil: iOS, Android y HarmonyOS segun la model card.
+- Opciones de despliegue: transformers (version >= 5.7.0 recomendada), con Flash Attention 2 recomendado para multi-imagen y video; torchcodec o PyAV para decodificacion de video. Soporte de vLLM, llama.cpp, Ollama o TGI: no disponible en la informacion proporcionada.
+- Latencia y throughput: la model card incluye graficos de TTFT y throughput en alta concurrencia, pero sin valores numericos en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.6 Thinking (AWQ) | ~1,3 B | no disponible | AWQ 4-bit | Apache 2.0 | Hugging Face |
-| Qwen3.5-0.8B | ~0,8 B | no disponible | no disponible | no disponible | Hugging Face |
-| Gemma4-E2B-it | ~2 B (estimado) | no disponible | no disponible | no disponible | Hugging Face |
+| MiniCPM-V-4.6-Thinking-AWQ | ~1,3 mil millones | no disponible | Apache 2.0 | safetensors AWQ 4-bit | Version cuantizada, razonamiento explicito |
+| MiniCPM-V-4.6-Thinking | ~1,3 mil millones | no disponible | Apache 2.0 | safetensors BF16 | Version base sin cuantizar |
+| MiniCPM-V-4.6 | ~1,3 mil millones | no disponible | Apache 2.0 | safetensors | Variante Instruct sin traza de razonamiento |
 
-Según el repositorio oficial de OpenBMB, MiniCPM-V 4.6 (incluida la variante Thinking) supera a Gemma4-E2B-it en rendimiento y es más eficiente que Qwen3.5-0.8B en términos de throughput de tokens. Sin embargo, no se aportan cifras concretas de benchmarks en la información disponible. Los tres modelos son de tamaño pequeño y aptos para despliegue en dispositivos de borde, pero MiniCPM-V 4.6 Thinking añade capacidades multimodales (imagen y vídeo) que los otros dos no poseen de forma nativa.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al ser un modelo de 1,3 B de parámetros, puede presentar alucinaciones visuales o razonamientos incorrectos en escenarios complejos o con imágenes ambiguas. No se han publicado evaluaciones específicas de sesgos.
-- Limitaciones de idioma: no se ha especificado la lista de idiomas soportados. El modelo está entrenado principalmente con datos en inglés y chino, por lo que su rendimiento en otros idiomas puede ser inferior.
-- Longitud de contexto limitada: al ser un modelo pequeño, la ventana de contexto es probablemente reducida (no se ha publicado el valor exacto), lo que puede limitar conversaciones muy largas o el procesamiento de documentos extensos.
-- Dependencia de torchcodec para vídeo: la decodificación de vídeo requiere torchcodec, que puede presentar problemas de compatibilidad con ciertas versiones de CUDA. Se recomienda usar PyAV como alternativa.
-- Modo Thinking no configurable: a diferencia de versiones anteriores (como v4.5), el modo de razonamiento no se puede activar o desactivar en tiempo de ejecución; la variante Thinking siempre genera una traza de razonamiento, lo que puede aumentar la latencia en tareas simples.
-- Cuantización AWQ: aunque reduce el tamaño a 1,9 GB, la cuantización a 4 bits puede provocar una ligera degradación de precisión en comparación con los pesos BF16 originales, especialmente en tareas de razonamiento numérico o OCR fino.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; al derivar de Qwen3.5-0.8B y SigLIP2, puede heredar sesgos de sus datos de entrenamiento, no documentados aqui.
+- Riesgo de alucinacion: inherente a los modelos generativos; el modo Thinking mitiga parte del error en tareas de razonamiento, pero no lo elimina.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan documentados en la informacion disponible, lo que impide garantizar cobertura multilingue en produccion.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los componentes base (Qwen3.5 y SigLIP2) por si imponen condiciones adicionales.
+- Caveat de produccion: al ser una cuantizacion AWQ 4-bit, puede haber una perdida de precision respecto al modelo BF16, especialmente en tareas de OCR fino o razonamiento numerico; se recomienda validar en el dominio objetivo.
+- Dependencias tecnicas: requiere transformers >= 5.7.0 y puede presentar problemas de compatibilidad de torchcodec con determinadas versiones de CUDA (la model card sugiere PyAV como alternativa).
 
 ## Enlaces
 
-- Modelo en Hugging Face (AWQ): https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-AWQ
-- Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
-- Modelo instruct (sin Thinking): https://huggingface.co/openbmb/MiniCPM-V-4.6
-- Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-V
-- Receta vLLM: https://recipes.vllm.ai/openbmb/MiniCPM-V-4.6
-- Documentación de API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-AWQ-Demo
-- Papers asociados (según tags): arxiv:2604.27393, arxiv:2509.18154, arxiv:2408.01800, arxiv:2605.08985
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-AWQ
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
+- Variante Instruct: https://huggingface.co/openbmb/MiniCPM-V-4.6
+- GitHub: https://github.com/OpenBMB/MiniCPM-o
+- Wiki (chino): https://openbmb.cn/docs/
+- CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
+- Demo (Space): https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-AWQ-Demo
+- Documentacion API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
+- Papers referenciados: arXiv:2604.27393, arXiv:2509.18154, arXiv:2408.01800, arXiv:2605.08985

@@ -2,117 +2,103 @@
 
 ## Resumen
 
-`knowledgator/gliclass-v4-edge` es la variante "edge" de 0,4B parámetros de la familia GLiClass v4, desarrollada por Knowledgator. Se trata de un encoder bidireccional tipo BERT (derivado de `microsoft/deberta-v3-large`) especializado en clasificación zero-shot: en lugar de generar texto, recibe un texto de entrada, un conjunto arbitrario de etiquetas y, opcionalmente, una instrucción o política, y devuelve una puntuación calibrada para cada etiqueta en una sola pasada forward.
+GLiClass v4 Edge es un modelo encoder de 0,4 mil millones de parámetros especializado en clasificación zero-shot y multi-etiqueta, desarrollado por Knowledgator. Se construye sobre `microsoft/deberta-v3-large` y forma parte de la familia GLiClass v4, en esta ocasión en una variante "edge" pensada para ejecutarse en CPU y dispositivos con recursos limitados. A diferencia de los modelos generativos, no produce texto: recibe un texto de entrada, una lista de etiquetas y, opcionalmente, una instrucción, y devuelve una puntuación calibrada para cada etiqueta en una única pasada forward.
 
-El modelo resuelve el problema de tener que reentrenar un clasificador para cada nueva tarea: las etiquetas y la instrucción se definen en tiempo de inferencia. Soporta clasificación multi-etiqueta, de etiqueta única (con softmax sobre las opciones), etiquetas jerárquicas, ejemplos few-shot, reranking, NLI y razonamiento sobre grafos de conocimiento expresados como texto.
+El modelo resuelve el problema de la clasificación flexible sin reentrenamiento: las etiquetas y la política de decisión se definen en tiempo de inferencia mediante el parámetro `prompt`, lo que permite reutilizar el mismo checkpoint para moderación de contenido, guardrails, reranking, razonamiento sobre grafos de conocimiento o evaluación de calidad. Su relevancia actual radica en que ofrece capacidades de "modelo de decisión" con una latencia mediana declarada de 11 ms por decisión y un Decision Index de 47,5, por delante de modelos de hasta 1B de parámetros en el board público citado por el autor.
 
-Su relevancia actual está en el segmento de decisiones de baja latencia en CPU y dispositivos edge: el autor reporta un valor de 47,5 en el "Decision Index public skill" con una latencia mediana de 11 ms por decisión, por delante del mejor modelo de hasta 1B parámetros de ese ranking (36,9). Es una alternativa no generativa y mucho más barata que un LLM para tareas de enrutado, guardrails o moderación.
+La arquitectura es un transformer encoder DeBERTa-v3-large con 439.790.595 parámetros totales, licencia Apache 2.0, pesos en safetensors y ONNX, y soporte exclusivo del idioma inglés según la model card. El repositorio ocupa 3,3 GB e incluye resultados de evaluación publicados por el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer bidireccional (DeBERTa-v3, tipo BERT); sin decodificador, no genera texto |
-| Parametros totales | 439.790.595 (0,4B) |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | Hasta 2048 tokens configurados en el pipeline de ejemplo (`max_length=2048`); no se documenta la ventana maxima real del encoder |
-| Tipos de cuantizacion | No se detalla el esquema; el modelo base figura como version cuantizada de `microsoft/deberta-v3-large`. El repo publica pesos en safetensors y exportacion ONNX |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors y ONNX |
-| Modelo base | `microsoft/deberta-v3-large` (variante cuantizada) |
-| Libreria / pipeline | `gliclass`; `zero-shot-classification` |
-| Tamano del repositorio | 3,3 GB |
-| Descargas / likes | 340 descargas, 13 likes (en el momento de la consulta) |
+| Arquitectura | Transformer encoder (DeBERTa-v3-large, con atención disentangled) |
+| Parametros totales | 439.790.595 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2048 tokens (valor usado en los ejemplos de la model card con `max_length=2048`); el máximo nativo de DeBERTa-v3-large no se especifica en la información disponible |
+| Tipos de cuantizacion | no disponible (se distribuyen safetensors y ONNX; no se detallan variantes cuantizadas en la información proporcionada) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder transformer bidireccional de la familia DeBERTa-v3, reutilizado como cabecera de clasificación zero-shot al estilo GLiClass: el texto y las etiquetas (junto con la instruccion opcional) se codifican conjuntamente y el modelo produce una puntuacion por etiqueta en una unica pasada forward. No hay generacion autoregresiva ni decodificacion especulativa; la salida es puramente discriminativa. Las puntuaciones se presentan calibradas sobre datos de retencion y se expone tambien `initial_score` con el valor sin calibrar.
+El modelo se basa en `microsoft/deberta-v3-large`, un transformer encoder con atención disentangled y embeddings de posición relativos, adaptado mediante la librería `gliclass` para la tarea de clasificación zero-shot y multi-etiqueta. La formulación trata las etiquetas como parte de la entrada: el texto, las etiquetas y la instrucción opcional se procesan conjuntamente, y el modelo emite una puntuación por etiqueta en una sola pasada forward, sin generación autoregresiva. Soporta clasificación multi-etiqueta (con umbral configurable), single-label (softmax sobre las etiquetas) y etiquetas jerárquicas.
 
-No se han publicado en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni el procedimiento exacto de cuantizacion. La model card si documenta capacidades de inferencia que condicionan el diseno: seguimiento de instrucciones mediante el parametro `prompt` (politicas, rubricas, criterios), soporte de ejemplos few-shot (`examples=[{"text": ..., "labels": [...]}]`), etiquetas jerarquicas y tipos de clasificacion `multi-label` y `single-label`.
+La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; estos datos deben considerarse no disponibles. Sí se indica que las puntuaciones están calibradas sobre datos held-out y que cada predicción incluye también `initial_score`, la puntuación sin calibrar. La model card referencia los papers arXiv:2508.07662 y arXiv:2609.02292, que probablemente contienen los detalles metodológicos, pero su contenido no se incluye en la información proporcionada.
 
 ## Capacidades
 
-- Clasificacion zero-shot multi-etiqueta: devuelve `label` y `score` por cada etiqueta, con umbral configurable y calibracion sobre datos de retencion.
-- Clasificacion de etiqueta unica: aplica softmax sobre el conjunto de etiquetas y devuelve la opcion ganadora.
-- Seguimiento de instrucciones: el parametro `prompt` acepta politicas, rubricas o criterios que modulan la interpretacion de las etiquetas.
-- Escalas de evaluacion: uso de niveles (`1 - wrong` ... `5 - excellent`) como etiquetas, con `return_hierarchical=True` para obtener la probabilidad de cada nivel.
-- Etiquetas jerarquicas, por ejemplo `{"sentiment": ["positive", "negative"], "topic": ["product", "service"]}`.
-- Aprendizaje few-shot en inferencia mediante el parametro `examples`, sin reentrenamiento.
-- Reranking de pasajes: puntuacion de cada pasaje frente a una consulta usando la consulta como etiqueta y una instruccion del tipo "does the passage answer the query?".
-- Razonamiento sobre grafos de conocimiento en formato textual (tripletas `A -relacion-> B`), incluidas reglas de precedencia y preguntas multihop.
-- NLI: etiquetas `entailment`, `neutral`, `contradiction`.
-- Seleccion de siguiente accion en agentes y navegacion web: elegir enlace, herramienta o accion entre un conjunto de opciones.
-- Guardrails y moderacion de contenido: comprobar si un texto cumple o viola una politica descrita en el prompt.
-- Inferencia por lotes (`batch_size`) y soporte de CPU/edge; no genera texto en ningun caso.
-- Capacidades multimodales: no disponibles en esta variante (la variante `edge` es solo texto dentro de la familia GLiClass v4).
-- Tool calling generativo: no disponible; el modelo puede puntuar opciones de herramientas o acciones, pero no emitir llamadas estructuradas.
+- Clasificación zero-shot multi-etiqueta: devuelve una puntuación por etiqueta en una única pasada, con umbral configurable.
+- Clasificación single-label: selecciona una única respuesta mediante softmax sobre las etiquetas.
+- Seguimiento de instrucciones: el parámetro `prompt` permite definir políticas, rúbricas o criterios que modulan la interpretación de las etiquetas.
+- Clasificación jerárquica: admite etiquetas anidadas (por ejemplo, sentimiento y tema) y devuelve probabilidades por nivel con `return_hierarchical=True`.
+- Few-shot en inferencia: acepta ejemplos con `examples=[{"text": ..., "labels": [...]}]`.
+- Reranking: puntúa pasajes frente a una consulta usando la consulta como etiqueta y una instrucción de relevancia.
+- Razonamiento sobre grafos de conocimiento: permite formular preguntas multi-hop pasando el grafo como texto y las respuestas como etiquetas.
+- Guardrails y moderación de contenido: clasificación de cumplimiento de políticas con instrucciones explícitas.
+- NLI: soporta etiquetas de `entailment`, `neutral` y `contradiction`.
+- Evaluación de calidad: escalas tipo Likert como etiquetas para puntuar respuestas.
+- API de decisión estilo Jev: preguntas tipadas (`choice`, `noul`) con estado, instrucciones y criterios, devolviendo probabilidades por opción.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No soporta generación de texto, tool calling generativo ni razonamiento multi-step autoregresivo.
 
 ## Casos de uso
 
-- Moderacion de contenido con politicas dinamicas: se pasa la politica de la plataforma como `prompt` y etiquetas como `violates policy` / `complies with policy`; al ser un encoder de 0,4B y ~11 ms por decision, permite filtrar en linea cada mensaje sin coste de generacion.
-- Guardrails de salida de un LLM: clasificar la respuesta de un modelo generativo frente a un conjunto de criterios (toxicidad, fuga de datos, cumplimiento de formato) usando etiquetas jerarquicas y `single-label` para obtener una decision con probabilidad.
-- Reranking en pipelines RAG: puntuar decenas de pasajes recuperados frente a la consulta del usuario y reordenarlos antes de pasarlos al modelo generativo; sustituye a cross-encoders mas grandes con menor latencia.
-- Enrutado de tickets y solicitudes de soporte: etiquetas como `billing`, `technical`, `refund`, `shipping`, con `classification_type="multi-label"` para capturar tickets que pertenecen a varias categorias y `examples` para ajustar el criterio por cliente.
-- Evaluacion automatica de calidad de respuestas: usar los niveles de una escala como etiquetas y `return_hierarchical=True` para obtener la distribucion de probabilidad sobre los niveles, util en paneles de evaluacion de asistentes.
-- Control de acceso y razonamiento sobre grafos: pasar el grafo de permisos como texto, la pregunta como instruccion y `yes`/`no` como etiquetas para resolver consultas de autorizacion con reglas de precedencia, sin escribir logica ad hoc.
-- Analisis de resenas de producto: extraccion multi-etiqueta de aspectos (`battery`, `display`, `durability`, `price`, `shipping`) con umbral ajustable, apto para ejecutarse en CPU sobre lotes grandes.
-- Seleccion de siguiente accion en agentes: dado el estado de la conversacion o de la pagina, puntuar enlaces, herramientas o acciones candidatas y elegir la mas probable, con la ventaja de no requerir parsing de texto generado.
-- Clasificacion de documentos en entornos con restricciones de hardware: al estar pensado para CPU y edge, puede desplegarse en contenedores sin GPU para triaje documental o compliance.
+- Moderación de contenido y guardrails: se define una política en el parámetro `prompt` y se clasifican mensajes como "viola la política" o "cumple la política". La calibración de puntuaciones y la latencia de 11 ms por decisión lo hacen adecuado para filtrado en línea de alto volumen.
+- Clasificación de tickets de soporte: con etiquetas como "facturación", "envío", "producto defectuoso" o "cuenta", el modelo asigna múltiples categorías por ticket en una sola pasada, sin necesidad de reentrenar al añadir nuevas categorías.
+- Reranking en pipelines RAG: se puntúan pasajes recuperados frente a la consulta del usuario usando la consulta como etiqueta y una instrucción de relevancia, reduciendo el número de documentos enviados al modelo generativo y, con ello, el coste y la latencia del sistema.
+- Enrutamiento de decisiones en agentes: dado un estado (texto o JSON) y un conjunto de acciones posibles, el modelo devuelve la probabilidad de cada acción; encaja en la API de decisión estilo Jev descrita en la model card.
+- Análisis de sentimiento y temas con etiquetas jerárquicas: combinación de sentimiento y temática en una sola llamada con `return_hierarchical=True`, útil para paneles de voz del cliente.
+- Evaluación automática de respuestas: uso de una escala de 1 a 5 como etiquetas para puntuar la calidad factual de respuestas generadas, con probabilidades por nivel en lugar de una única etiqueta.
+- Razonamiento sobre grafos de conocimiento: responder preguntas de acceso o permisos pasando el grafo como texto y las respuestas como etiquetas, útil en sistemas de control de acceso o auditoría.
+- Despliegue en edge y CPU: al ser un encoder de 0,4B con exportación ONNX, puede ejecutarse en dispositivos sin GPU para clasificación de flujos de texto en local.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la informacion disponible son del "Decision Index" del autor. No hay resultados de MMLU, HumanEval, GSM8K ni de benchmarks de clasificacion estandar, y en sentido estricto no aplican al ser un encoder discriminativo y no un modelo generativo.
+La model card reporta resultados del Decision Index público:
 
-| Metrica | Resultado | Referencia |
-|---|---|---|
-| Decision Index public skill | 47,5 | Metric del autor; no verificada de forma independiente |
-| Mejor modelo de hasta 1B parametros en el mismo ranking | 36,9 | Segun el autor, GLiClass v4 Edge queda por delante |
-| Latencia mediana por decision | 11 ms | Medicion del autor; hardware no especificado en la informacion disponible |
-| MMLU / HumanEval / GSM8K | No disponible | No aplica a un encoder de clasificacion |
+| Metrica | Valor |
+|---|---|
+| Decision Index (public skill) | 47,5 |
+| Latencia mediana por decisión | 11 ms |
+| Mejor modelo de hasta 1B en el board público | 36,9 |
 
-No se han publicado resultados de benchmarks independientes en la informacion disponible.
+No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K; estos no aplican directamente a un modelo de clasificación sin generación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos (calculo a partir de 439,79M parametros, sin contar activaciones): ~1,76 GB en FP32, ~0,88 GB en FP16/BF16, ~0,44 GB en INT8. Son estimaciones, no cifras publicadas por el autor.
-- Las activaciones con `max_length=2048` y lotes grandes pueden superar ampliamente el tamano de los pesos; conviene ajustar `batch_size` en funcion de la memoria disponible.
-- GPU recomendadas: el modelo esta disenado para CPU y edge, por lo que no requiere acelerador. Para inference por lotes en GPU, una RTX 3060/4060 o superior es suficiente; A100/H100 solo tendrian sentido con lotes muy grandes o cargas de millones de decisiones.
-- Cabe en cualquier GPU de consumo actual e incluso en GPUs integradas o en CPU sin GPU dedicada.
-- Opciones de despliegue: libreria `gliclass` sobre PyTorch (`GLiClassModel` + `ZeroShotClassificationPipeline`), exportacion ONNX para ONNX Runtime, y servicio de una API de decision tipo Jev (estado + preguntas tipadas + opciones como etiquetas).
-- vLLM, TGI, llama.cpp y Ollama no son aplicables: no hay decodificador generativo ni pesos GGUF publicados.
-- Latencia y throughput: el autor reporta 11 ms de mediana por decision, presumiblemente en el entorno edge de referencia; el throughput real depende del hardware, del numero de etiquetas y de la longitud de entrada.
+- VRAM estimada para inferencia: con 439,8M de parámetros en fp32, aproximadamente 1,8 GB de pesos; en fp16, alrededor de 0,9 GB. El repositorio completo ocupa 3,3 GB, incluyendo safetensors y ONNX.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp32; tarjetas como RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo está diseñado para no requerirlas.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer con 2 GB o más de VRAM; también en CPU, que es el objetivo declarado de la variante edge.
+- Opciones de despliegue: librería `gliclass` (PyTorch), exportación ONNX para inferencia en CPU y runtime ONNX; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: latencia mediana de 11 ms por decisión según el autor; el throughput no se especifica.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad | Rendimiento |
-|---|---|---|---|---|---|---|
-| `knowledgator/gliclass-v4-edge` | 439,79M | 2048 tokens en el pipeline de ejemplo | Clasificacion zero-shot con instrucciones, encoder | Apache-2.0 | Hugging Face + ONNX | Decision Index 47,5 (autor) |
-| `knowledgator/gliclass-edge-v3.0` | No disponible | No disponible | Clasificacion zero-shot, generacion anterior | No disponible en la informacion | Hugging Face | No disponible |
-| `MoritzLaurer/deberta-v3-large-zeroshot-v2.0` | ~435M | Limitado por DeBERTa-v3 (512 posiciones) | Clasificacion zero-shot via NLI | MIT | Hugging Face | No comparable con el Decision Index |
-| `BAAI/bge-reranker-v2-m3` | ~568M | No disponible | Cross-encoder de reranking | Apache-2.0 | Hugging Face | Solo reranking; no cubre clasificacion arbitraria |
+| Modelo | Parametros | Contexto | Decision Index | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GLiClass v4 Edge | 439,8M | 2048 tokens (uso en ejemplos) | 47,5 | Apache 2.0 | Hugging Face, ONNX |
+| Mejor modelo hasta 1B en el board público citado | hasta 1B | no disponible | 36,9 | no disponible | no disponible |
+| GLiClass v4 (variante completa) | no disponible | no disponible | no disponible | no disponible | referenciado en GitHub |
 
-Frente a un cross-encoder de reranking, la ventaja de GLiClass v4 Edge es la flexibilidad de etiquetas definidas en inferencia y el seguimiento de instrucciones; frente a un clasificador NLI puro, anade modos multi-etiqueta, jerarquico y few-shot. La comparacion cuantitativa con alternativas solo es posible dentro del ranking del propio autor.
+La información disponible no identifica por nombre los modelos comparables del board público ni ofrece sus especificaciones detalladas; la comparativa se limita a los datos reportados por el autor.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles (`en`); el rendimiento en castellano u otros idiomas no esta documentado y no deberia asumirse.
-- No genera texto: no puede usarse para resumen, extraccion generativa, tool calling con argumentos ni dialogos.
-- Riesgo de clasificacion incorrecta en dominios alejados de los datos de calibracion; el umbral de 0,5 del ejemplo es un valor por defecto, no una recomendacion universal.
-- Las instrucciones en `prompt` no garantizan el cumplimiento estricto de una politica; en moderacion o compliance criticos conviene combinarlo con reglas deterministas y revision humana.
-- No se han publicado datos sobre sesgos, composicion del dataset de entrenamiento ni evaluaciones de robustez; la ausencia de esta informacion es un riesgo para despliegues sensibles.
-- La cifra de Decision Index (47,5) y la latencia de 11 ms proceden del autor y no se han verificado de forma independiente; ademas, no se especifica el hardware de la medicion.
-- El modelo tiene pocas descargas y likes y fue publicado recientemente, por lo que la validacion por parte de la comunidad es todavia escasa.
-- La ventana de contexto efectiva no esta documentada; superar la longitud real del encoder puede truncar la entrada silenciosamente.
-- La licencia Apache-2.0 permite uso comercial sin restricciones adicionales, pero conviene revisar tambien la licencia del modelo base (`microsoft/deberta-v3-large`, MIT) si se redistribuyen pesos derivados.
-- El tag `base_model:quantized:microsoft/deberta-v3-large` sugiere una cuantizacion del modelo base, pero no se detalla el esquema ni el impacto en precision; el termino "edge" no implica que los pesos distribuidos esten cuantizados.
+- Solo soporta inglés; no se declaran capacidades multilingües.
+- No genera texto: no sirve para tareas generativas, resumen, traducción ni razonamiento autoregresivo.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de clasificaciones erróneas cuando las etiquetas o la instrucción son ambiguas; la calibración de puntuaciones ayuda a mitigarlo con umbrales.
+- El rendimiento depende fuertemente de la calidad de las etiquetas y del `prompt`; políticas mal redactadas producen decisiones inconsistentes.
+- La longitud de contexto efectiva en los ejemplos es de 2048 tokens; textos más largos requieren truncado o segmentación.
+- No se documentan sesgos específicos en la información disponible; al entrenarse sobre datos en inglés, es probable que herede sesgos de ese corpus.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base `microsoft/deberta-v3-large` y de los papers referenciados.
+- Los resultados del Decision Index provienen del autor y del board público citado; no se dispone de replicación independiente en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/knowledgator/gliclass-v4-edge
-- Repositorio GitHub de GLiClass: https://github.com/Knowledgator/GLiClass
-- Blog de presentacion de GLiClass v4: https://blog.knowledgator.com/gliclass-v4-multimodal-instruction-following-encoders-for-every-decision-e79e93f66528
-- Documentacion de GLiClass: https://docs.knowledgator.com/docs/frameworks/gliclass/
-- Paper de GLiClass (arXiv:2508.07662): https://arxiv.org/abs/2508.07662
-- Referencia arXiv listada en los tags del modelo: arXiv:2609.02292 (no verificada en la busqueda web)
-- Version anterior de la familia: https://huggingface.co/knowledgator/gliclass-edge-v3.0
+- Hugging Face: https://huggingface.co/knowledgator/gliclass-v4-edge
+- Repositorio GitHub: https://github.com/Knowledgator/GLiClass
+- Paper arXiv:2508.07662: https://arxiv.org/abs/2508.07662
+- Paper arXiv:2609.02292: https://arxiv.org/abs/2609.02292
+- Modelo base: https://huggingface.co/microsoft/deberta-v3-large

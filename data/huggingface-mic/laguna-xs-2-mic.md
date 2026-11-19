@@ -2,85 +2,92 @@
 
 ## Resumen
 
-Laguna-XS.2-mic es un artefacto de prueba (fixture) publicado por huggingface-mic, no un modelo entrenado utilizable. Se trata de una version reducida y con pesos aleatorios del modelo base poolside/Laguna-XS.2, generada para validar la integracion del modelo real con la libreria Transformers y otras herramientas del ecosistema. El repositorio incluye los pesos "slim" (adelgazados), ejemplos de uso ejecutables y las expectativas de framework en un unico paquete.
+Laguna-XS.2-mic es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` en Hugging Face, derivado del modelo base `poolside/Laguna-XS.2`. No se trata de un modelo entrenado ni utilizable en producción: es una versión "adelgazada" del checkpoint original que conserva la misma arquitectura (`LagunaForCausalLM`) y los mismos nombres de tensores, pero con pesos aleatorios (semilla 17) y una configuración reducida a 3 capas ocultas. Su propósito es servir como fixture de integración para validar contratos de ejecución y expectativas de frameworks (Transformers, entre otros) sin necesidad de descargar ni ejecutar el modelo real.
 
-El fixture conserva la misma arquitectura que el modelo original (clase `LagunaForCausalLM`) pero reduce el numero de capas ocultas a 3, lo que da como resultado 13.319.208 parametros. Los pesos son aleatorios (semilla 17) y no han sido entrenados; pasaron unicamente una compuerta de sensibilidad a las entradas, que verifica que cada perturbacion de las entradas del contrato mueve los logits al menos 0.001. Los ficheros de procesador (tokenizer, chat template, configuracion, codigo de modelado) se copian byte a byte del modelo base.
+El repositorio contiene 13.319.208 parámetros en formato safetensors (bfloat16), con un tamaño total de 0,1 GB, e incluye además el manifiesto de contrato (`integration.json`), la documentación de uso para Transformers, las expectativas del framework y la procedencia del fixture (`build.json`). Los ficheros de procesador (tokenizer, plantilla de chat, configuración y código de modelado) se copian byte a byte desde el checkpoint original de Poolside.
 
-Su relevancia es puramente de ingenieria: permite a los desarrolladores y mantenedores de Transformers ejecutar y verificar el pipeline completo de Laguna-XS.2 (carga, forward, loss, gradientes) sin descargar los pesos reales, y sirve como referencia de contrato de integracion. No debe emplearse para inferencia real, generacion de texto ni evaluacion de capacidades.
+Es relevante ahora porque el ecosistema de herramientas de Hugging Face (en particular el proyecto `transformers-mic`) necesita artefactos ligeros y deterministas para verificar que las integraciones de modelos funcionan correctamente antes de ejecutar modelos de gran tamaño. La etiqueta `test-artifact` lo excluye explícitamente de las búsquedas de modelos candidatos, por lo que no debe confundirse con un modelo real.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (`LagunaForCausalLM`), 3 capas ocultas (fixture reducido) |
-| Parametros totales | 13.319.208 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | `LagunaForCausalLM` (transformer causal, config reducida a 3 capas ocultas) |
+| Parámetros totales | 13.319.208 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (se copia `LICENSE.md` del modelo base, pero no se especifica su contenido) |
+| Tipos de cuantización | no disponible (pesos en bfloat16) |
+| Idiomas soportados | no disponibles |
+| Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la arquitectura del modelo base poolside/Laguna-XS.2, un transformer causal de tipo `LagunaForCausalLM`, pero con la configuracion reducida a 3 capas ocultas mediante la regla generica de reduccion de `sweep.py` del repositorio transformers-mic. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que cualquier codigo que cargue el modelo real deberia cargar el fixture sin cambios en la estructura.
+El modelo replica la arquitectura del checkpoint `poolside/Laguna-XS.2` mediante la clase `LagunaForCausalLM`, pero con una configuración reducida: `num_hidden_layers` igual a 3, aplicando la regla genérica de reducción definida en `sweep.py` del repositorio `huggingface/transformers-mic`. Conserva los mismos nombres de tensores que el checkpoint real y los ficheros de procesador copiados byte a byte (`tokenizer.json`, `tokenizer_config.json`, `chat_template.jinja`, `configuration_laguna.py`, `modeling_laguna.py`, `generation_config.json`, `special_tokens_map.json`).
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y solo se valido que superasen la compuerta de sensibilidad a las entradas del contrato (la perturbacion mas debil, `attention_mask:all_ones`, produjo un desplazamiento de logits de 0.179, muy por encima del umbral de 0.001). El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los ficheros de procesador y tokenizer se copian byte a byte del modelo base, por lo que el tokenizador y la chat template son los reales de Laguna-XS.2.
+No ha habido entrenamiento. Los pesos son aleatorios (semilla 17) y se generaron porque superaron la puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, con 0,179). El modelo es finito en float32, bfloat16 y float16 (forward, loss y gradientes), y se guarda en bfloat16, el dtype con el que carga por defecto `poolside/Laguna-XS.2`. La clave del fixture es `182b41aa38d4`, que cubre todos los checkpoints con ficheros de procesador idénticos y configuración coincidente tras la reducción.
 
 ## Capacidades
 
-- No dispone de capacidades funcionales: los pesos son aleatorios y el modelo no genera texto coherente.
-- Sirve como fixture de integracion para verificar la carga del modelo, el forward pass, el calculo de loss y los gradientes en Transformers.
-- Permite validar el contrato de integracion definido en `integration.json` y las expectativas de framework en `integrations/transformers/expectations`.
-- Conserva el tokenizador, la chat template y los tokens especiales del modelo base, utiles para probar pipelines de tokenizacion.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues reales, al carecer de entrenamiento.
-- No dispone de vision, audio ni modo thinking.
+- No es un modelo funcional: los pesos son aleatorios y no producen texto coherente.
+- Sirve como fixture de integración para validar contratos de ejecución y expectativas de frameworks.
+- Conserva la interfaz de `LagunaForCausalLM`: carga, forward, loss y gradientes funcionan en float32, bfloat16 y float16.
+- Mantiene los mismos nombres de tensores que el checkpoint real, lo que permite probar rutas de carga y mapeo de pesos.
+- Incluye tokenizer, plantilla de chat y configuración de generación copiados del modelo original, útiles para probar pipelines de tokenización.
+- No soporta tool calling, agentes, visión, audio ni modo thinking de forma real (solo la estructura, sin pesos entrenados).
+- Capacidades multilingües: no disponibles (dependen del tokenizer copiado, pero sin pesos entrenados no son evaluables).
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: cargar el fixture con `AutoModelForCausalLM` y verificar que el pipeline de forward, loss y backward funciona sin errores antes de usar el checkpoint real.
-- Validacion de contratos de framework: ejecutar las expectativas de `integrations/transformers/expectations` en CI para detectar regresiones en la integracion de Laguna-XS.2.
-- Desarrollo de herramientas de serializacion: comprobar que los nombres de tensores y el formato safetensors coinciden con el checkpoint real, sin descargar los pesos completos.
-- Pruebas de tokenizacion y chat template: usar el tokenizer copiado del modelo base para validar plantillas de conversacion y tokens especiales en pipelines propios.
-- Verificacion de precision numerica: comprobar que el modelo es finito en float32, bfloat16 y float16 en entornos de entrenamiento distribuido o mixto.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `build_fixtures.py --fixture Laguna-XS.2-mic` para auditar hashes y fuentes fijadas en `build.json`.
+- Validación de integraciones en Transformers: usar el fixture para comprobar que la clase `LagunaForCausalLM` se carga, ejecuta forward y calcula gradientes sin descargar el checkpoint completo de Poolside.
+- Pruebas de CI/CD en pipelines de Hugging Face: ejecutar tests de contrato (`integration.json`) en cada PR para detectar regresiones en el mapeo de tensores o en la configuración.
+- Verificación de expectativas de framework: comparar el comportamiento del fixture con el directorio `integrations/transformers/expectations` para asegurar que las salidas cumplen las tolerancias definidas.
+- Desarrollo de herramientas de reducción de modelos: servir como caso de referencia para probar `sweep.py` y `build_fixtures.py` con nuevos checkpoints.
+- Pruebas de tokenización y plantillas de chat: al conservar el tokenizer y `chat_template.jinja` originales, permite validar pipelines de tokenización sin cargar el modelo real.
+- Docencia y demostración de contratos de modelos: ilustrar cómo se estructura un fixture de integración con manifiesto, procedencia y hashes verificables.
+- Reproducibilidad de artefactos: reconstruir el fixture con `python example/build_fixtures.py --fixture Laguna-XS.2-mic` y comparar hashes con `build.json`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) careceria de sentido.
+No se han publicado resultados de benchmarks en la información disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, no procede evaluar MMLU, HumanEval, GSM8K ni métricas similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (13,3M parametros, aproximadamente 27 MB de pesos mas overhead de activaciones y cache).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU; no requiere aceleradores de datacenter.
-- Cabe holgadamente en cualquier GPU consumer y en entornos CPU.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` (requiere `modeling_laguna.py` y `configuration_laguna.py`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; irrelevantes para un fixture sin entrenamiento.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (13,3 M de parámetros, ~27 MB de pesos) más overhead de activaciones y tokenizer.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; también funciona en CPU.
+- Cabe en cualquier GPU consumer (GTX 1050, RTX 2060, RTX 4090, etc.) y en entornos sin GPU.
+- Opciones de despliegue: Transformers (con `trust_remote_code=True` por el `custom_code`), y previsiblemente llama.cpp u Ollama si se convierte a GGUF, aunque no se documenta en la información disponible.
+- Latencia y throughput: no disponibles; al tener 3 capas y pesos aleatorios, los tiempos no son representativos del modelo real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Laguna-XS.2-mic | 13,3M | no disponible | Fixture de integracion | no disponible | Hugging Face |
-| poolside/Laguna-XS.2 | no disponible | no disponible | Modelo base real | no disponible | Hugging Face |
-| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Pruebas de integracion | no disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Propósito |
+|---|---|---|---|---|
+| Laguna-XS.2-mic | 13,3 M | no disponible | no disponible | Fixture de prueba (pesos aleatorios) |
+| poolside/Laguna-XS.2 | no disponible en la información | no disponible | no disponible | Modelo base real de Poolside |
+| Otros fixtures de `transformers-mic` | variable (reducidos) | no disponible | no disponible | Artefactos de prueba de integración |
 
-No se dispone de datos de rendimiento ni de especificaciones completas del modelo base en la informacion proporcionada, por lo que la comparativa se limita a proposito y disponibilidad.
+La comparación con modelos de producción no es aplicable: Laguna-XS.2-mic no compite en tareas de generación, razonamiento o código. Su alternativa natural es el checkpoint original `poolside/Laguna-XS.2`, del que deriva, o cualquier otro fixture del mismo proyecto.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de prueba (`test-artifact`) con pesos aleatorios: no debe usarse para inferencia, generacion ni evaluacion de calidad.
-- La model card indica explicitamente que "no es un modelo utilizable" y que la etiqueta sirve para excluirlo de busquedas de modelos candidatos.
-- La licencia no esta disponible en la informacion proporcionada; el `LICENSE.md` copiado del modelo base condiciona cualquier uso.
-- El contexto, los idiomas y las capacidades reales del modelo base no se detallan en la informacion disponible.
-- Requiere `trust_remote_code=True` por el codigo de modelado personalizado, lo que implica ejecutar codigo del repositorio.
-- No apto para produccion bajo ninguna circunstancia.
+- Los pesos son aleatorios: el modelo no genera texto coherente ni responde a instrucciones.
+- Etiquetado como `test-artifact`: no debe usarse en producción ni incluirse en búsquedas de modelos candidatos.
+- Licencia no disponible: no se puede confirmar el uso comercial; además, al derivar de `poolside/Laguna-XS.2`, podrían aplicar restricciones del modelo base.
+- Idiomas no disponibles: el tokenizer está copiado del original, pero sin pesos entrenados no hay capacidades lingüísticas reales.
+- Longitud de contexto no disponible: la configuración reducida no refleja la del modelo original.
+- Riesgo de confusión: el nombre y la estructura pueden llevar a error si se trata como un modelo funcional.
+- Requiere `trust_remote_code=True` por el `custom_code` incluido (`configuration_laguna.py`, `modeling_laguna.py`).
+- No se han publicado benchmarks ni métricas de rendimiento.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Laguna-XS.2-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/Laguna-XS.2-mic
 - Modelo base: https://huggingface.co/poolside/Laguna-XS.2
-- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Laguna-XS.2-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de reduccion `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Laguna-XS.2-mic.html
+- Manifiesto de contrato: https://huggingface.co/huggingface-mic/Laguna-XS.2-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/Laguna-XS.2-mic/blob/main/integrations/transformers/usage.md
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/Laguna-XS.2-mic/blob/main/build.json

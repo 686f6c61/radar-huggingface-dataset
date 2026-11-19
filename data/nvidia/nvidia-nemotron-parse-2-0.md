@@ -2,69 +2,90 @@
 
 ## Resumen
 
-NVIDIA Nemotron Parse 2.0 es un modelo de visión-lenguaje (VLM) desarrollado por NVIDIA, diseñado específicamente para la transformación de imágenes de documentos en representaciones estructuradas y legibles por máquina. Su propósito principal es extraer texto, clases de layout, cuadros delimitadores (bounding boxes) e información de orden de lectura, lo que lo convierte en una herramienta clave para sistemas de inteligencia documental, pipelines de retrieval-augmented generation (RAG), curadores de datos, extractores y aplicaciones de IA agéntica.
+NVIDIA Nemotron Parse 2.0 es un modelo vision-encoder-decoder de menos de 1.000 millones de parámetros (903.049.225 según los pesos en safetensors) desarrollado por NVIDIA para el parseo estructurado de documentos. Dada una imagen RGB de un documento y un prompt de tarea, el modelo genera una representación en texto con el contenido textual, la clase semántica de cada elemento, sus bounding boxes y el orden de lectura. Sustituye a Nemotron Parse v1.2 y está pensado para flujos de document intelligence, RAG, extracción de datos y curación de datos multimodales.
 
-El modelo se distribuye a través de Hugging Face y NGC, con soporte para el pipeline `image-text-to-text` y pesos en formato `safetensors`. Aunque la ficha de Hugging Face no detalla la arquitectura interna ni el número de parámetros, se sabe que es un modelo de código abierto con licencia "other" (no especificada en la información disponible). Su relevancia actual radica en la creciente demanda de soluciones de OCR y parsing de documentos de alta calidad que puedan integrarse en flujos de trabajo de IA generativa y agentes autónomos.
+La arquitectura combina un codificador visual ViT-H basado en NVIDIA C-RADIO, una capa adaptadora de convoluciones 1D con normalización que comprime la secuencia latente visual, y un decodificador mBART de 10 bloques. El tokenizador tiene 72.256 entradas, con una expansión de unos 20.000 tokens respecto a la versión anterior orientada a mejorar la eficiencia multilingüe, e incluye tokens de control como `<predict_bbox>`, `<predict_classes>`, `<predict_text_in_pic>` y la nueva clase `<class_Chart>`.
+
+La relevancia de esta versión radica en tres mejoras concretas: soporte OCR multilingüe ampliado con ganancias notables en escrituras CJK e índicas, mejor extracción de texto manuscrito y parseo de gráficos con conversión de la información visible a tablas estructuradas. El modelo se distribuye con licencia OpenMDW-1.1 y está declarado como apto para uso comercial y no comercial, con despliegue global.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (VLM, probablemente basada en transformer) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer vision-encoder-decoder (ViT-H C-RADIO + adaptador conv 1D + decodificador mBART de 10 bloques) |
+| Parametros totales | 903.049.225 (< 1B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | other (no especificada en la informacion disponible) |
-| Formato de pesos | safetensors |
+| Idiomas soportados | multilingue con soporte ampliado para CJK e indico; lista completa no disponible |
+| Licencia | OpenMDW-1.1 (tokenizador bajo CC-BY-4.0) |
+| Formato de pesos | safetensors (incluye `auxiliary_prediction_heads.safetensors.extra` separado) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles técnicos sobre la arquitectura interna del modelo en la información proporcionada. Al tratarse de un VLM para tareas de OCR y parsing de documentos, es razonable suponer que combina un codificador de visión con un decodificador de lenguaje, pero no se confirma el tipo de backbone, el número de capas ni el mecanismo de atención. Tampoco se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de RLHF o DPO. La ausencia de estos datos impide realizar un análisis técnico profundo.
+El modelo sigue un esquema encoder-decoder. El codificador visual es un ViT-H basado en NVIDIA C-RADIO que procesa la imagen RGB del documento. Un adaptador compuesto por convoluciones 1D y capas de normalización comprime la secuencia de latentes visuales antes de pasarla al decodificador, un mBART de 10 bloques. La generación estándar utiliza los embeddings de entrada y salida del decodificador atados entre sí. Se conserva además una cabeza auxiliar de predicción, entrenada y almacenada aparte en `auxiliary_prediction_heads.safetensors.extra`, para investigación futura en predicción multi-token; ni el `model.safetensors` por defecto ni los ejemplos de Transformers y vLLM la cargan.
+
+El tokenizador, de 72.256 entradas, incorpora una expansión de aproximadamente 20.000 tokens respecto a Nemotron Parse v1.2 para mejorar la eficiencia multilingüe. Incluye tokens de tarea y control (`<predict_bbox>`, `<predict_classes>`, `<predict_text_in_pic>`, `<predict_no_text_in_pic>`) y la clase `<class_Chart>`. El prompt por defecto es `</s><s><predict_bbox><predict_classes><output_markdown><predict_no_text_in_pic>`, que extrae bounding boxes, clases semánticas y texto en formato markdown. La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Transformación de imágenes de documentos en representaciones estructuradas con texto, clases de layout, bounding boxes y orden de lectura.
-- Extracción de texto y metadatos de imágenes, orientada a aplicaciones de OCR avanzado.
-- Integración con pipelines de RAG, permitiendo convertir documentos escaneados o capturados en texto indexable.
-- Soporte para tareas de extracción de información y curaduría de datos en entornos empresariales.
-- Diseñado para aplicaciones de IA agéntica, donde el modelo puede actuar como componente de parsing en flujos multi-paso.
-- Capacidad de conversación (según el pipeline `image-text-to-text`), lo que sugiere que puede responder a instrucciones sobre el contenido de la imagen.
+- Parseo de documentos: convierte imágenes de páginas en texto estructurado con clases semánticas (títulos, párrafos, pies de figura, tablas, gráficos, cabeceras, pies de página, notas al pie, imágenes y entradas bibliográficas), bounding boxes y orden de lectura.
+- OCR multilingüe: soporte ampliado con mejoras sustanciales en escrituras CJK e índicas.
+- Extracción de texto manuscrito en páginas con contenido informal o tipo nota.
+- Parseo de gráficos a tabla: detecta regiones de gráfico mediante `<class_Chart>` y convierte la información visible en texto estructurado.
+- Manejo reforzado de tablas: detección, recuperación de estructura y extracción de texto en documentos con muchas tablas.
+- Postprocesado incluido en el repositorio para transformar bounding boxes a coordenadas de la imagen original y convertir texto de tablas o gráficos a LaTeX, HTML, markdown, JSON o CSV cuando el formato lo permite.
+- Entrada multimodal imagen-texto con prompts de tarea construidos a partir de tokens de control.
+- No se documenta soporte de tool calling, function calling ni razonamiento agéntico multi-paso en la información disponible.
 
 ## Casos de uso
 
-- **Digitalización de documentos empresariales**: el modelo convierte facturas, contratos y formularios escaneados en texto estructurado con bounding boxes, facilitando su almacenamiento y búsqueda en bases de datos.
-- **Pipelines de RAG sobre documentos físicos**: al extraer texto y layout de imágenes, permite indexar contenido no digital en sistemas de recuperación aumentada por generación, mejorando la precisión de las respuestas.
-- **Extracción de metadatos en archivística**: las clases de layout y el orden de lectura ayudan a identificar títulos, párrafos, tablas y otros elementos, automatizando la catalogación de archivos.
-- **Automatización de procesos de negocio**: en flujos de aprobación de facturas o verificación de identidad, el modelo puede extraer campos clave (números, fechas, nombres) de documentos escaneados.
-- **Curaduría de datos para entrenamiento de modelos**: sirve como herramienta para limpiar y estructurar grandes volúmenes de documentos antes de usarlos en fine-tuning o pre-entrenamiento.
-- **Agentes de IA que interactúan con documentos**: en aplicaciones agénticas, el modelo puede parsear un documento adjunto y proporcionar la información estructurada al agente para tomar decisiones.
+- Digitalización de PDFs escaneados para RAG: el modelo convierte cada página en texto con estructura y coordenadas, lo que permite indexar fragmentos por elemento semántico y recuperar tablas o figuras con su contexto espacial.
+- Extracción de datos de facturas y formularios: a partir de la imagen renderizada, se obtienen los campos con sus bounding boxes y clases, facilitando el mapeo posterior a esquemas JSON mediante el postprocesado del repositorio.
+- Procesamiento de informes financieros con tablas densas: la mejora en detección y recuperación de estructura de tablas permite extraer tablas completas y convertirlas a CSV o HTML para análisis.
+- Análisis de presentaciones y transparencias: el modelo identifica títulos, viñetas, imágenes y gráficos, lo que habilita la generación de resúmenes estructurados y la conversión de gráficos a tablas.
+- Curación de datasets multimodales: al producir anotaciones de layout y texto, se puede usar para etiquetar automáticamente corpus de imágenes de documentos antes de entrenar otros modelos.
+- Revisión humana asistida: los bounding boxes y el orden de lectura permiten construir interfaces de verificación donde el revisor ve el texto extraído superpuesto sobre la página original.
+- Documentación multilingüe: con el tokenizador ampliado y el soporte CJK e índico, resulta adecuado para pipelines de OCR en organizaciones con corpus en varios alfabetos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como MMLU, HumanEval o GSM8K para este modelo, ni comparaciones con alternativas similares.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la documentación proporcionada. No se especifican VRAM estimada, GPUs recomendadas, opciones de despliegue ni métricas de latencia o throughput. Dado que es un VLM, se espera que requiera al menos una GPU con varios GB de VRAM, pero no se puede confirmar sin datos oficiales.
+- VRAM estimada para inferencia: con 903 millones de parámetros, los pesos en precisión de 16 bits ocupan aproximadamente 1,8 GB; el repositorio completo ocupa 3,6 GB. A ello hay que sumar la memoria de activaciones del codificador ViT-H, que procesa imágenes de hasta 1664x2048 píxeles y es el componente dominante del consumo.
+- GPU recomendadas: el modelo está optimizado para sistemas acelerados por GPU NVIDIA; se documentan ejemplos con Transformers y vLLM. Una GPU con 16-24 GB de VRAM es un punto de partida razonable para resolución alta; no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible.
+- Cabe en GPU de consumo: sí, por tamaño de pesos, aunque la resolución de entrada recomendada (mínimo 1024x1280, máximo 1664x2048) condiciona el uso de memoria.
+- Opciones de despliegue: Transformers (librería declarada), vLLM (se mencionan ejemplos), y despliegue en SageMaker según los tags del repositorio. No se confirma soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos de parsing de documentos o VLM de OCR en la documentación proporcionada. No se pueden establecer comparaciones objetivas sin datos de rendimiento o especificaciones técnicas.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| NVIDIA Nemotron Parse 2.0 | 903 M | no disponible | Parseo de documentos, OCR, layout | OpenMDW-1.1 | Hugging Face, Transformers, vLLM |
+| NVIDIA Nemotron Parse v1.2 | no disponible | no disponible | Parseo de documentos | no disponible | Hugging Face |
+| NVIDIA Nemotron-3.5-Parse | no disponible | no disponible | Parseo de documentos | no disponible | Hugging Face (referenciado como `new_version`) |
+
+La información disponible no incluye datos de benchmarks ni especificaciones completas de las versiones alternativas, por lo que no es posible una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- La licencia se indica como "other" en Hugging Face, lo que implica que los términos de uso comercial no están claramente definidos en la información disponible. Se recomienda revisar la documentación oficial de NVIDIA antes de usar el modelo en producción.
-- No se han publicado detalles sobre sesgos, riesgos de alucinación o limitaciones de idioma. Al ser un modelo de OCR, es probable que su rendimiento dependa de la calidad de la imagen y la diversidad de los documentos de entrenamiento.
-- La ausencia de especificaciones técnicas (parámetros, contexto, arquitectura) dificulta la evaluación de su idoneidad para casos de uso específicos.
-- No se confirma si el modelo soporta múltiples idiomas; la información de idiomas no está disponible.
-- Al ser un modelo relativamente nuevo (creado en 2026), su ecosistema de herramientas y documentación puede ser limitado en comparación con alternativas más maduras.
+- Riesgo de alucinación en la transcripción de texto: como modelo generativo, puede producir texto que no aparece en la imagen, especialmente en regiones de baja calidad o manuscritas.
+- Resolución acotada: la entrada recomendada está entre 1024x1280 y 1664x2048; documentos con tipografía muy pequeña o páginas de gran formato pueden requerir preprocesado.
+- Idiomas: aunque se documenta soporte multilingüe ampliado (CJK e índico), no se publica la lista completa de idiomas soportados.
+- Contexto: no se especifica la longitud máxima de secuencia del decodificador, lo que limita la planificación de páginas con mucho contenido textual.
+- Licencia: el modelo se rige por OpenMDW-1.1 y el tokenizador por CC-BY-4.0; es necesario revisar ambas antes de su uso comercial. El proyecto descarga software de terceros cuyos términos deben verificarse por separado.
+- Cabeza auxiliar: `auxiliary_prediction_heads.safetensors.extra` no se carga en la generación estándar; no debe asumirse que aporta capacidades en producción.
+- Dependencia de hardware NVIDIA: el modelo está diseñado y optimizado para GPU NVIDIA, sin datos publicados de rendimiento en CPU.
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible.
 
 ## Enlaces
 
-- [Hugging Face - NVIDIA-Nemotron-Parse-2.0](https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-2.0)
-- [NVIDIA NGC - Nemotron-Parse v2.0](https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-parse-v2.0/)
-- [NVIDIA NGC - Contenedor Nemotron-Parse v2.0](https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/nemotron-parse-v2.0/latest)
-- [NVIDIA NIM - Deploy Nemotron-Parse](https://build.nvidia.com/nvidia/nemotron-parse/deploy)
-- [README.md del modelo](https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-2.0/blob/main/README.md)
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-2.0
+- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- Licencia CC-BY-4.0 (tokenizador): https://creativecommons.org/licenses/by/4.0/
+- Documentación de mBART en Transformers: https://huggingface.co/docs/transformers/en/model_doc/mbart
+- NVIDIA C-RADIO: https://huggingface.co/nvidia/C-RADIO
+- Nueva versión referenciada: https://huggingface.co/nvidia/Nemotron-3.5-Parse

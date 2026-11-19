@@ -2,73 +2,101 @@
 
 ## Resumen
 
-Stubelius Remix es un checkpoint personalizado de LTX 2.5, desarrollado por Stuubs, que recupera la linea estilizada y 2D de la era LTX 2.3 sobre la base tecnica del motor LTX 2.5 de Lightricks. El problema que resuelve es la perdida del "alma" 2D/anime en las versiones 2.5 existentes, que se orientan principalmente a personajes fotorrealistas. El modelo no es un merge ingenuo, sino que emplea aritmetica de vectores de tareas: extrae deltas de los modelos donantes Sulphur 2 y 10Eros contra su base LTX 2.3 y los inyecta en el transformer de LTX 2.5 con una ponderacion por profundidad de bloque y por componente. Incluye 4.349 tensores en 48 bloques, y esta pensado para generar video con personajes 2D/2.5D/anime y capacidades NSFW, aprovechando las caracteristicas de movimiento, audio y dialogo de LTX 2.5. La arquitectura concreta, el numero de parametros y el contexto no se especifican en la documentacion disponible.
+Stubelius Remix es un ajuste fino (merge y fine-tune) del modelo de generacion de video Lightricks LTX-2.5, publicado por el usuario Stuubs en Hugging Face. Se distribuye como un modelo de difusion para ComfyUI que genera video con audio sincronizado, e incorpora un LoRA destilado ya integrado y un fine-tune por refuerzo (OmniNFT) orientado a mejorar la nitidez de detalle y el movimiento. El modelo esta pensado principalmente para contenido para adultos (NSFW) aunque puede producir contenido SFW, y esta disponible en varias cuantizaciones (int8, bf16, NVFP4 y GGUF Q4) para adaptarse a distintos niveles de VRAM.
+
+Con aproximadamente 21.000 millones de parametros (21.004.025.600 segun los pesos safetensors) y un repositorio de 208,5 GB, el modelo se apoya en el text encoder Gemma 4 12B con proyeccion especifica de LTX 2.5 y en dos VAE separados (video y audio). Su relevancia actual radica en que ofrece una via practica de ejecutar un modelo de video-audio de gran tamano en hardware de consumo mediante cuantizacion, con ajustes especificos de inferencia (CFG 1, 8 pasos) que reducen el coste computacional.
+
+La licencia es la LTX-2.x Community License Agreement, que impone restricciones de uso y exige licencia comercial previa de Lightricks para empresas con ingresos anuales superiores a 10 millones de USD. El modelo es un derivado de LTX-2.5 y combina pesos de Sulphur 2 (FusionCow/SulphurAI), 10Eros (TenStrip) y el fine-tune OmniNFT (zghhui et al.).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion para video basado en transformer (LTX 2.5), con inyeccion de deltas de tareas de modelos donantes |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Modelo de difusion para video con audio (derivado de Lightricks LTX-2.5); detalles internos de bloques no disponibles |
+| Parametros totales | 21.004.025.600 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | int8 (convrot), bf16, NVFP4 (experimental), GGUF Q4_K_S (experimental) |
 | Idiomas soportados | no disponible |
-| Licencia | ltx-2-community-license-agreement |
-| Formato de pesos | no disponible (checkpoint de difusion; no se especifica safetensors, GGUF, etc.) |
-| Tecnica de fusion | Aritmetica de vectores de tareas (task-vector delta arithmetic), con 4.349 tensores y 48 bloques |
-| Estado | beta 1 |
+| Licencia | LTX-2.x Community License Agreement (other) |
+| Formato de pesos | safetensors (int8, bf16, NVFP4) y GGUF (Q4_K_S) |
 
 ## Arquitectura y entrenamiento
 
-Stubelius Remix no es un modelo entrenado desde cero, sino un checkpoint derivado mediante aritmetica de vectores de tareas. El proceso extrae los deltas de Sulphur 2 y 10Eros respecto a su base LTX 2.3, y luego los inyecta en el transformer de LTX 2.5. La inyeccion se realiza con una ponderacion que depende de la profundidad del bloque y del componente: los bloques tempranos preservan el conocimiento de composicion, mientras que los tardios favorecen el prior estilizado 2D. Ademas, las contribuciones fotorrealistas de los MLP se suprimen deliberadamente. Esta configuracion produce un balance de estilos que el autor describe como una primera pasada, sujeta a evolucion en una futura beta 2. No se proporcionan datos sobre el proceso de entrenamiento tradicional (tokens, dataset, RLHF/DPO), porque no aplica a este tipo de modelo.
+El modelo es un derivado de Lightricks LTX-2.5, un modelo de difusion para generacion de video con pista de audio. La model card no detalla la arquitectura interna (tipo de transformer, atencion, etc.), por lo que esa informacion no esta disponible. Lo que si se documenta es el proceso de construccion: se parte de LTX 2.5, se le incorpora un LoRA destilado de Lightricks ya integrado en los pesos, y se realiza un merge con pesos de los modelos Sulphur 2 y 10Eros. Sobre esa base se aplica OmniNFT, un fine-tune por aprendizaje por refuerzo (RL) que recompensa la calidad de video y audio, fusionado a su intensidad de entrenamiento.
+
+El ajuste OmniNFT se valido con una comparacion ciega evaluada por IA sobre fotogramas a resolucion completa: gano 29 a 9 frente a la version beta 2, con 10 empates. Segun el autor, la nitidez de detalle fino mejora un 55% y el movimiento un 15% respecto a beta 2, manteniendo el seguimiento de prompt, el volumen de audio y la fidelidad del dialogo (las lineas de dialogo salen palabra por palabra). Se probo tambien VBVR, pero se descarto porque reducia el movimiento sin mejorar el seguimiento de prompt. No se especifican el numero de tokens de entrenamiento ni la composicion del dataset.
 
 ## Capacidades
 
-- Generacion de video de personajes en estilo 2D, 2.5D y anime, usando el conjunto de caracteristicas completo de LTX 2.5 (movimiento, audio y dialogo).
-- Capacidades NSFW a traves del linaje Sulphur/Eros, orientado a trabajo creativo para adultos que consienten.
-- Compatibilidad con el paquete Stubelius LTX Director: incluye funciones de busqueda de semillas (seed hunt), refinamiento, referencias Licon MSR, IC-LoRA e ingredientes.
-- Uso con el LoRA destilado de LTX a una fuerza de 0.6 a 1.0, con 10 a 12 pasos de inferencia; sin el LoRA, la salida es borrosa e insuficiente.
-- Soporte de CFG 1 con el LoRA destilado y samplers habituales (euler y linear_quadratic) segun las pruebas del autor.
-- Carga como modelo de difusion mediante UNETLoader / Load Diffusion Model, usando los VAEs y text encoder normales de LTX 2.5.
-- No se mencionan capacidades de tool calling, agentes, razonamiento multi-paso ni entrada de vision.
+- Generacion de video a partir de texto (text-to-video) y de imagen (image-to-video, i2v), con ajuste de la beta 2 hacia i2v.
+- Generacion de audio sincronizado con el video, incluyendo dialogo fiel palabra por palabra.
+- Generacion de video con audio integrado mediante VAE separados de video y audio.
+- Control de keyframes (primer, medio y ultimo fotograma) segun las pruebas del autor.
+- Soporte de referencias de personaje (Licon MSR con tres referencias Cast) en el nodo Stubelius Ultimate LTX 2.5.
+- Capacidad de contenido NSFW y SFW (con riesgo de desnudez no deseada en prompts SFW si no se especifica la ropa).
+- Uso de LoRAs de LTX 2.5 sobre el archivo int8 del mismo modo que en LTX 2.5 estandar.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso (no aplica a un modelo de difusion de video).
 
 ## Casos de uso
 
-- Creacion de cortos animados para redes sociales: el modelo puede generar personajes 2D con movimiento y dialogo, reduciendo el tiempo de produccion mediante el LoRA destilado.
-- Prototipado de personajes para animacion: permite explorar rapidamente disenos 2D/2.5D con expresividad de audio y dialogo, coherentes con las caracteristicas de LTX 2.5.
-- Narrativa visual episodica: gracias al enfasis en composicion en los bloques tempranos, es adecuado para mantener la coherencia entre escenas de una serie corta.
-- Contenido creativo para adultos con verificacion de edad: el modelo ofrece capacidades NSFW controladas por licencia y destinadas exclusivamente a trabajo con adultos que consienten.
-- Experimentacion con tecnicas de fusion de modelos: sirve como referencia para investigar como la aritmetica de vectores de tareas puede transferir estilos entre generaciones de modelos de video.
-- Flujos de produccion con el ecosistema Stubelius Director: puede integrarse en pipelines de direccion de video que requieren busqueda de semillas, refinamiento y referencias de estilo especificas.
-- Generacion de imagenes animadas a partir de textos: al cargarse con los VAEs y text encoder de LTX 2.5, se puede usar para convertir prompts en secuencias animadas de personajes estilizados.
+- Produccion de video creativo para adultos: el modelo esta disenado y ajustado principalmente para trabajo NSFW entre adultos con consentimiento, con generacion de video y audio coherentes en una sola pasada.
+- Creacion de clips con dialogo: gracias a la fidelidad del audio y del dialogo palabra por palabra, sirve para generar escenas con lineas habladas sin necesidad de doblaje posterior.
+- Image-to-video para animar ilustraciones o fotografias: la beta 2 se ajusto especificamente hacia i2v, lo que permite dar movimiento a una imagen de referencia manteniendo la composicion.
+- Control de keyframes en postproduccion: la capacidad de fijar primer, medio y ultimo fotograma permite encajar clips generados en una secuencia existente.
+- Iteracion rapida en hardware de consumo: la version GGUF Q4 (12,5 GB) permite probar prompts en tarjetas de 8 GB con ComfyUI-GGUF, usando RAM del sistema para lo que no cabe en VRAM.
+- Flujos con referencias de personaje: el soporte de Licon MSR con tres referencias Cast facilita mantener la coherencia de un personaje a lo largo de varias generaciones.
+- Prototipado en ComfyUI: al integrarse en el nodo Stubelius Ultimate LTX 2.5 y en Load Diffusion Model, encaja en pipelines de nodos existentes para experimentacion rapida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de metricas como MMLU, HumanEval o GSM8K, ni comparaciones de rendimiento con otros modelos de generacion de video.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que no aplican a un modelo de difusion de video. Los unicos datos de evaluacion son los del autor:
+
+| Comparacion | Resultado |
+|---|---|
+| OmniNFT v1 frente a beta 2 (A/B ciego evaluado por IA, fotogramas a resolucion completa) | 29 victorias, 9 derrotas, 10 empates |
+| Nitidez de detalle fino (v1 frente a beta 2) | +55% |
+| Movimiento (v1 frente a beta 2) | +15% |
+| Seguimiento de prompt, volumen de audio, dialogo | sin cambios |
+| VBVR | descartado: pierde movimiento sin mejorar el seguimiento de prompt |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible; al tratarse de un modelo de difusion de video se esperan requisitos altos, pero no hay datos concretos.
-- Opciones de despliegue: no disponible. Se menciona el uso con cargadores de modelos de difusion (UNETLoader / Load Diffusion Model) y samplers euler y linear_quadratic, pero no se listan plataformas como vLLM, llama.cpp u Ollama.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada segun cuantizacion: int8 ~21,5 GB de pesos; bf16 ~42 GB; NVFP4 ~14,4 GB; GGUF Q4_K_S ~12,5 GB.
+- GPU recomendadas: para int8, tarjetas con 24 GB o mas (RTX 4090, A100, H100); para bf16, 48 GB o mas (A100 80 GB, H100).
+- NVFP4: solo rapido en tarjetas RTX 50-series (Blackwell) con ComfyUI 0.32 o superior y PyTorch compilado para CUDA 13; en tarjetas anteriores funciona mas lento que int8.
+- GGUF Q4: probado en RTX 5090; en tarjetas de 8 GB ComfyUI mantiene en RAM del sistema la parte que no cabe en VRAM, por lo que conviene disponer de RAM abundante.
+- Despliegue: ComfyUI (Load Diffusion Model o nodo Stubelius Ultimate LTX 2.5); para GGUF se requiere ComfyUI-GGUF y el nodo Unet Loader (GGUF).
+- Ajustes de inferencia: CFG 1 y 8 pasos (mas 3-4 pasos si se ejecuta una pasada de upscale); no anadir el LoRA destilado ni OmniNFT porque ya estan integrados.
+- Componentes adicionales: text encoder `gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors` (re-descargar si la copia es anterior a mediados de agosto) y VAE `ltx-2.5-video-vae-bf16` y `ltx-2.5-audio-vae-bf16`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-El modelo se basa en LTX 2.5 y utiliza Sulphur 2 y 10Eros como donantes, pero no se dispone de especificaciones de parametros, contexto ni rendimiento para estos modelos. Por tanto, no es posible realizar una comparacion tecnica numerica rigurosa. En una comparacion cualitativa, Stubelius Remix se diferencia de los checkpoints 2.5 centrados en fotorrealismo por su enfoque deliberado en estilos 2D/2.5D/anime, logrado mediante la inyeccion selectiva de deltas y la supresion de contribuciones fotorrealistas. Los detalles de licencia y disponibilidad de los modelos citados no se especifican en la documentacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Stubelius Remix (este modelo) | 21,0 B | no disponible | LTX-2.x Community License | Hugging Face, ComfyUI | Derivado de LTX-2.5 con OmniNFT, LoRA destilado y merges; NSFW/SFW |
+| Lightricks LTX-2.5 (base) | no disponible | no disponible | LTX-2.x Community License | Hugging Face | Modelo base oficial; sin los merges ni el fine-tune RL del remix |
+| Sulphur 2 (FusionCow/SulphurAI) | no disponible | no disponible | no disponible | no disponible | Donante de pesos en el merge |
+| 10Eros (TenStrip) | no disponible | no disponible | no disponible | no disponible | Donante de pesos en el merge |
+
+No se dispone de datos de rendimiento comparativo con alternativas de la misma categoria mas alla de las cifras internas del autor frente a beta 2.
 
 ## Limitaciones y advertencias
 
-- Es una beta 1: el balance de estilos es un primer borrador y puede evolucionar significativamente en versiones posteriores.
-- Depende del LoRA destilado de LTX entre 0.6 y 1.0 de fuerza; sin el LoRA, la salida es borrosa e insuficiente, lo que impide un uso directo con la configuracion por defecto.
-- Es un modelo con capacidades NSFW; debe utilizarse exclusivamente para trabajo creativo con adultos que consienten. El autor advierte de revisar las licencias del modelo base y de los donantes antes de cualquier uso comercial.
-- La licencia ltx-2-community-license-agreement puede imponer restricciones de uso comercial que no estan detalladas en la informacion disponible; es necesario consultar el texto completo.
-- No se proporcionan datos sobre sesgos, alucinacion o limitaciones de idioma. La ausencia de esta informacion no implica que el modelo carezca de riesgos.
-- No hay informacion sobre el numero de parametros, el formato de pesos ni los requisitos de hardware, lo que limita la evaluacion tecnica y el despliegue en entornos de produccion.
+- Modelo orientado a contenido para adultos: uso previsto solo para trabajo creativo entre adultos con consentimiento; verificar las licencias del modelo base y de los donantes antes de cualquier uso comercial.
+- Riesgo de desnudez no deseada en prompts SFW si no se especifica la ropa de forma explicita.
+- Licencia restrictiva: la LTX-2.x Community License Agreement incluye restricciones de uso (secciones 4 y Attachment A) y exige licencia de Lightricks para empresas con ingresos anuales de 10 millones de USD o mas.
+- El archivo NVFP4 es experimental: los pesos verifican el redondeo NVFP4 y conservan el cambio de OmniNFT, pero el autor no ha terminado de comparar sus renders con int8.
+- El GGUF Q4 es experimental y tuvo un fallo corregido el 8 de noviembre de 2026 (tres pesos en BF16 que ComfyUI-GGUF no podia usar); si se descargo antes de esa fecha, hay que volver a descargarlo.
+- El int8 requiere una version de ComfyUI lo bastante reciente para cargar los archivos int8 de LTX 2.5 de Comfy-Org.
+- No se documentan sesgos, idiomas soportados ni riesgo de alucinacion en la informacion disponible; al ser un modelo de difusion, el concepto de alucinacion no aplica del mismo modo.
+- El autor indica que el color es el mismo en promedio, aunque algunas escenas salen menos saturadas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Stuubs/Stubelius_Remix
-- Licencia LTX-2: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x
+- Modelo en Hugging Face: https://huggingface.co/Stuubs/Stubelius_Remix
+- Modelo base: https://huggingface.co/Lightricks/LTX-2.5
+- Licencia LTX-2.x Community License Agreement: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x
+- OmniNFT: https://huggingface.co/zghhui/OmniNFT
+- ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

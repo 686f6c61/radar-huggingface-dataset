@@ -2,86 +2,83 @@
 
 ## Resumen
 
-Krea 2 Turbo Edit es un modelo de generación y edición de imágenes de 12.900 millones de parámetros desarrollado por Krea AI, basado en la arquitectura Qwen-Image. Este repositorio, creado por ChrisColeTech, ofrece una conversión a GGUF del denoiser del modelo con el LoRA de identidad integrado, junto con el text encoder Qwen3-VL-4B y el VAE Qwen-Image necesarios para su ejecución. No se trata de un reentrenamiento, sino de una redistribución de pesos cuantizados para facilitar su uso local.
+Krea 2 Turbo Edit es un modelo de difusion para generacion y edicion de imagenes, distribuido en formato GGUF por el usuario ChrisColeTech. Se trata de una compilacion de pesos (weights-only) del denoiser Krea 2 Turbo Edit con un LoRA de identidad ya integrado, acompanado del text encoder Qwen3-VL-4B y del VAE de Qwen-Image. El modelo esta destilado para funcionar en 8 pasos de muestreo y sin classifier-free guidance (guidance 0.0), lo que reduce drasticamente el coste de inferencia frente a modelos de difusion convencionales de 20-50 pasos.
 
-El modelo destilado requiere solo 8 pasos de inferencia sin guía (guidance-free), lo que permite generar imágenes de 1024×1024 en aproximadamente 35 segundos en una RTX 5090. Su modo distintivo es la edición con preservación de identidad: a partir de una o dos imágenes de referencia y una instrucción en lenguaje natural, modifica únicamente el aspecto solicitado manteniendo la identidad, pose, iluminación y escena. La cuantización GGUF reduce los requisitos de VRAM, haciéndolo accesible para GPUs de consumo con menos de 8 GB.
+El modelo resuelve dos tareas principales: generacion texto-a-imagen (txt2img) e imagen-a-imagen (img2img) con fuerza configurable, ademas de una modalidad de edicion por instruccion que preserva la identidad del sujeto a partir de una o dos imagenes de referencia, sin necesidad de mascara ni region de inpainting. Esta ultima capacidad es la mas distintiva y la que da nombre al build.
 
-La relevancia de esta conversión radica en democratizar el acceso a un modelo de edición de imágenes de última generación, que de otro modo requeriría hardware profesional. Al estar disponible en formato GGUF, puede ejecutarse en ComfyUI mediante el cargador GGUF actualizado, ampliando el ecosistema de herramientas open source para generación de imágenes.
+Con aproximadamente 12.900 millones de parametros en el denoiser (dato real de safetensors), el modelo se posiciona en la gama alta de los modelos de difusion open source. La publicacion en GGUF con tres niveles de cuantizacion y un build FP8 escalado facilita su despliegue en GPUs de consumo, algo relevante en un ecosistema donde los modelos de esta escala suelen requerir hardware profesional. La licencia no esta declarada, lo que constituye una limitacion importante para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen-Image family (transformer de difusion) |
-| Parametros totales | 12.895.570.508 (12,9 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo de imagen, no texto) |
-| Tipos de cuantizacion | Q4_K_M (confirmado), otros dos niveles GGUF no especificados, y build FP8 escalado |
-| Idiomas soportados | No disponible (probablemente ingles, no confirmado) |
-| Licencia | unknown |
-| Formato de pesos | GGUF (transformador), safetensors (text encoder y VAE) |
+| Arquitectura | Modelo de difusion (denoiser) con text encoder Qwen3-VL-4B y VAE Qwen-Image; no se especifica el tipo exacto de backbone (no disponible) |
+| Parametros totales | 12.895.570.508 (denoiser, segun safetensors) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible (modelo de imagen; no aplica contexto de texto en el sentido de LLM) |
+| Tipos de cuantizacion | GGUF en tres niveles (incluye Q4_K_M, 7,26 GB) y build FP8 escalado; text encoder en FP8 escalado |
+| Idiomas soportados | no disponible (prompts en lenguaje natural; el README usa ejemplos en ingles) |
+| Licencia | unknown (no declarada) |
+| Formato de pesos | GGUF (denoiser), safetensors (text encoder y VAE) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen-Image, un transformer de difusion de 12,9 B de parametros. El denoiser ha sido destilado para funcionar en 8 pasos sin guia (guidance-free), una reduccion significativa frente a los 20-50 pasos habituales en modelos de difusion. El LoRA de identidad esta horneado en los pesos, lo que permite la edicion con preservacion de identidad sin necesidad de cargar adaptadores adicionales.
+La informacion disponible describe el modelo como un denoiser de difusion destilado, empaquetado junto a un text encoder Qwen3-VL-4B y un VAE de Qwen-Image. El texto se codifica con Qwen3-VL-4B, lo que aporta comprension multimodal al condicionamiento, y las imagenes se codifican y decodifican con el VAE de Qwen-Image. No se detalla en la model card el tipo de backbone del denoiser (transformer, DiT, UNet u otro), el numero de tokens de entrenamiento ni la composicion del dataset.
 
-El text encoder es Qwen3-VL-4B en formato FP8 escalado (5,24 GB), y el VAE es el Qwen-Image VAE (254 MB). El repositorio incluye estos tres componentes para que el modelo sea autocontenido. No se dispone de informacion sobre el dataset de entrenamiento, el proceso de destilacion exacto ni si se utilizo RLHF o DPO. La conversion a GGUF fue realizada por ChrisColeTech, no por Krea AI, y no implica cambios en los pesos originales mas alla de la cuantizacion.
+El aspecto tecnico mas relevante es la destilacion a 8 pasos con guidance 0.0, que elimina la necesidad de classifier-free guidance y reduce el numero de evaluaciones del denoiser por imagen. El build incorpora un LoRA de identidad ya fusionado en los pesos, lo que habilita la modalidad de edicion con preservacion de identidad sin cargar adaptadores adicionales. No se especifica si el entrenamiento incluyo RLHF, DPO ni tecnicas de preferencia; tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de imagenes texto a imagen (txt2img) a 1024×1024 en 8 pasos, sin guia.
-- Edicion con preservacion de identidad: a partir de 1-2 imagenes de referencia y una instruccion en lenguaje natural, modifica solo el aspecto indicado manteniendo identidad, pose, iluminacion y escena. No requiere mascaras ni regiones de inpaint.
-- Imagen a imagen (img2img) con control de fuerza (strength), permitiendo restyling como conversion a oleo, acuarela o boceto.
-- Inferencia rapida: aproximadamente 35 segundos por imagen 1024² en una RTX 5090.
-- Ejecucion local en GPUs de consumo gracias a la cuantizacion GGUF (menos de 8 GB de VRAM segun la comunidad).
-- Integracion con ComfyUI mediante el cargador GGUF actualizado (comfyui-gguf-loader).
-- No es un modelo de lenguaje: no soporta tool calling, agentes ni razonamiento multi-paso.
+- Generacion texto-a-imagen (txt2img) a 1024x1024 con 8 pasos de muestreo y guidance 0.0.
+- Imagen-a-imagen (img2img) con control de fuerza (ejemplo documentado con strength 0.75) para restilizado, conversion a oleo, acuarela o lapiz.
+- Edicion por instruccion preservando identidad: una o dos imagenes de referencia mas una instruccion en lenguaje natural; se mantienen identidad, pose, iluminacion y escena, cambiando solo lo indicado.
+- Edicion sin mascara ni region de inpainting: no requiere segmentacion manual.
+- Parametros de control documentados: `ref_boost` (ejemplo 1.0) y `grounding` (ejemplo 768 px) para la modalidad de edicion.
+- Reproducibilidad mediante semilla (seeds documentadas en los ejemplos: 12345, 99, 1234, 42, 7).
+- Soporte de cuantizacion GGUF para despliegue en hardware limitado.
+- No se documentan capacidades de tool calling, agentes, audio ni thinking mode (no aplicables a un modelo de imagen).
 
 ## Casos de uso
 
-- Edicion de retratos con preservacion de identidad: un estudio fotografico puede tomar un retrato existente y aplicar instrucciones como "ponle un gorro de lana rojo" o "haz que llueva fuera de la ventana" manteniendo la cara y la pose del sujeto, sin necesidad de mascaras manuales.
-- Iteracion rapida en diseno grafico: los disenadores pueden generar variaciones de una misma escena cambiando solo la instruccion (estilo, iluminacion, elementos) en 8 pasos, acelerando la exploracion creativa.
-- Restyling de imagenes para produccion: convertir fotografias en pinturas al oleo, acuarelas o bocetos con control de fuerza, util para generar assets con estetica coherente en campañas de marketing.
-- Generacion de imagenes en entornos con VRAM limitada: al estar cuantizado en GGUF, puede ejecutarse en GPUs de consumo como RTX 3060 o inferiores, permitiendo a desarrolladores independientes generar imagenes sin hardware profesional.
-- Creacion de contenido para redes sociales: generar imagenes de alta calidad a 1024×1024 en menos de un minuto, adecuado para produccion de contenido en volumen.
-- Prototipado de conceptos en produccion audiovisual: los directores de arte pueden generar fotogramas de referencia con ediciones de identidad para previsualizar escenas antes del rodaje.
+- Edicion de retratos con preservacion de identidad: a partir de una fotografia de referencia y una instruccion como "ponle un gorro de punto rojo", el modelo modifica el atributo solicitado manteniendo el rostro, la pose y la iluminacion. Adecuado para estudios fotograficos y produccion de contenido sin sesiones adicionales.
+- Restilizado artistico por lotes: con img2img a strength 0.75 se convierte una imagen base en oleo, acuarela o lapiz manteniendo la composicion, lo que sirve para generar variantes estilisticas de un mismo material grafico.
+- Generacion de imagenes de producto: txt2img a 1024x1024 en 8 pasos permite producir bodegones fotorrealistas (el README incluye el ejemplo de una manzana sobre mesa de madera) con grano de madera y textura de piel finos, util para catalogos y prototipado visual.
+- Previsualizacion rapida en pipelines creativos: al requerir solo 8 pasos y no usar guidance, el coste por imagen es bajo (aproximadamente 35 s por 1024² en una RTX 5090 segun el autor), lo que facilita iterar sobre prompts antes de un render final de mayor calidad.
+- Edicion de escenarios sin inpainting: instrucciones como "haz que llueva fuera de la ventana" modifican el entorno conservando al sujeto, sin necesidad de dibujar mascaras, lo que simplifica flujos de postproduccion.
+- Despliegue local en estaciones de trabajo con GPU de consumo: la version Q4_K_M (7,26 GB) junto con el text encoder FP8 (5,24 GB) y el VAE (254 MB) permite ejecutar el modelo en ComfyUI con el loader GGUF actualizado, sin depender de servicios en la nube.
+- Prototipado de conceptos para videojuegos e ilustracion: generacion de variaciones de personajes y escenarios a partir de referencias, con control de semilla para mantener coherencia entre iteraciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento confirmado es el tiempo de generacion de aproximadamente 35 segundos por imagen 1024² en una RTX 5090, con 8 pasos y sin guia. No hay comparaciones cuantitativas con otros modelos (FID, CLIP score, etc.) en el repositorio ni en los resultados de busqueda.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento aportado por el autor es temporal: aproximadamente 35 segundos por imagen de 1024x1024 en una RTX 5090, con 8 pasos y guidance 0.0.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el transformador en Q4_K_M ocupa 7,26 GB, el text encoder FP8 5,24 GB y el VAE 254 MB. En total, aproximadamente 12,7 GB si se cargan todos los componentes en memoria, aunque el text encoder puede liberarse tras la codificacion. Con cuantizaciones mas agresivas, podria caber en 8 GB o menos.
-- GPU recomendadas: RTX 5090 (35 s por imagen), RTX 4090, RTX 4080, RTX 3090, y GPUs de consumo con al menos 8 GB de VRAM segun la comunidad de Civitai.
-- Si cabe en consumer GPU: si, en GPUs con 8 GB o mas, dependiendo de la cuantizacion elegida.
-- Opciones de despliegue: ComfyUI con el cargador GGUF actualizado (comfyui-gguf-loader). No se mencionan otros runtime como vLLM, llama.cpp u Ollama, que son tipicos para modelos de lenguaje pero no para este tipo de modelo de difusion.
-- Latencia y throughput: aproximadamente 35 segundos por imagen 1024² en RTX 5090. No hay datos para otras GPUs.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, el denoiser en Q4_K_M ocupa 7,26 GB, el text encoder FP8 5,24 GB y el VAE 254 MB; el pico de VRAM dependera del backend y de la resolucion, y no se documenta.
+- GPU recomendadas: el autor cita una RTX 5090 para el dato de 35 s por imagen a 1024². No se documentan otras GPU.
+- Cabe en GPU de consumo: si, segun el empaquetado GGUF en tres niveles de cuantizacion; no se especifica la VRAM minima por nivel.
+- Opciones de despliegue: ComfyUI con el nodo `comfyui-gguf-loader` actualizado (canal "Channel (remote)" en ComfyUI Manager). No se documentan vLLM, llama.cpp, Ollama ni TGI (no aplicables o no soportados segun la informacion disponible).
+- Latencia y throughput: aproximadamente 35 s por imagen de 1024x1024 en RTX 5090, 8 pasos, guidance 0.0. No se documenta throughput por lotes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Pasos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Krea 2 Turbo Edit (GGUF) | 12,9 B | 8 | No aplica | unknown | GGUF |
-| Krea 2 Turbo (original) | 12,9 B | 8 | No aplica | Propietaria | safetensors |
-| Qwen-Image (base) | 20 B | 20-50 | No aplica | Apache 2.0 | safetensors |
-| FLUX.1 dev | 12 B | 20-50 | No aplica | Apache 2.0 | safetensors |
-
-La comparativa se basa en datos publicos generales. Krea 2 Turbo Edit comparte arquitectura con Qwen-Image pero es una version destilada y especializada en edicion de identidad. FLUX.1 dev es un modelo de tamano similar pero sin la capacidad de edicion por instruccion con preservacion de identidad. No se dispone de datos de rendimiento comparativo (calidad de imagen, velocidad) entre estos modelos.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa. Como referencia estructural, el modelo comparte text encoder (Qwen3-VL-4B) y VAE (Qwen-Image) con la familia Qwen-Image, pero no se aportan cifras comparativas.
 
 ## Limitaciones y advertencias
 
-- Licencia unknown: no se puede garantizar el uso comercial. Krea AI no ha publicado una licencia explicita para este modelo, y la redistribucion en GGUF por terceros anade incertidumbre legal. Antes de usar en produccion, consulta con un asesor legal.
-- Degradacion por cuantizacion: la conversion a GGUF puede introducir perdidas de calidad, especialmente en texturas finas o detalles pequenos. Se recomienda probar los distintos niveles de cuantizacion para evaluar el equilibrio entre calidad y VRAM.
-- Requiere el cargador GGUF actualizado: el modelo no funciona con el cargador GGUF estandar de ComfyUI; es necesario instalar comfyui-gguf-loader desde el canal remoto del Manager.
-- No es un reentrenamiento: los pesos son una conversion del modelo original, por lo que no se han corregido sesgos ni alucinaciones inherentes al modelo base.
-- Idiomas no confirmados: no se especifican los idiomas soportados para las instrucciones de edicion. Es probable que funcione mejor en ingles, dado el origen del modelo.
-- Sin soporte para texto largo: al ser un modelo de imagen, no procesa prompts extensos ni mantiene conversaciones. Las instrucciones deben ser concisas.
-- Riesgo de alucinacion visual: como cualquier modelo generativo, puede producir artefactos o inconsistencias en escenas complejas, especialmente con cuantizaciones agresivas.
+- Licencia no declarada (`unknown`): no hay autorizacion explicita para uso comercial ni para redistribucion; conviene contactar con el autor antes de integrarlo en produccion.
+- Es un build de pesos (weights-only) de un modelo subyacente (Krea 2 Turbo Edit); no es un reentrenamiento, por lo que hereda las limitaciones del modelo original, que no se documentan.
+- La model card no detalla sesgos conocidos, tasa de alucinacion visual ni limitaciones de idioma; los ejemplos de prompt estan en ingles y no se confirma el soporte de otros idiomas.
+- La modalidad de edicion con preservacion de identidad puede fallar en escenarios no cubiertos por el LoRA integrado; el autor no documenta tasas de exito ni casos de fallo.
+- Requiere una version especifica del loader GGUF en ComfyUI; versiones antiguas pueden no cargar los pesos correctamente.
+- No se documentan requisitos minimos de VRAM por cuantizacion, lo que dificulta planificar el despliegue.
+- El dato de latencia (35 s) corresponde a una RTX 5090; en GPU de gama inferior el tiempo por imagen sera previsiblemente mayor, aunque no se aportan cifras.
+- El repositorio ocupa 50,2 GB, lo que implica un coste de almacenamiento y descarga considerable.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF
-- Modelo original en Krea AI: https://www.krea.ai/models/krea-2-turbo
-- Conversion GGUF en Civitai: https://civitai.com/models/2730473/krea-2-turbo-gguf
-- Tutorial de uso en ComfyUI (Kombitz): https://www.kombitz.com/2026/06/26/how-to-use-krea-2-turbo-gguf-workflow-in-comfyui/
+- Denoiser Q4_K_M (GGUF): https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF/blob/main/split/gguf/krea2_turbo_edit-Q4_K_M.gguf
+- Text encoder Qwen3-VL-4B FP8 escalado: https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF/blob/main/split/text_encoders/qwen3vl_4b_fp8_scaled.safetensors
+- VAE Qwen-Image: https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF/blob/main/split/vae/qwen_image_vae.safetensors
+- Workflow de ComfyUI: https://huggingface.co/ChrisColeTech/krea2-turbo-edit- (enlace truncado en la model card; no disponible la URL completa)

@@ -2,92 +2,97 @@
 
 ## Resumen
 
-modernbert-mic es un artefacto de prueba publicado por el usuario huggingface-mic, derivado del modelo answerdotai/ModernBERT-base mediante un proceso de reduccion (shrinking) documentado en el repositorio transformers-mic. No es un modelo entrenado ni utilizable para inferencia real: es un fixture de 3.360.320 parametros con pesos aleatorios (semilla 17) que replica la arquitectura y los nombres de tensores del checkpoint original para validar contratos de integracion en Transformers.
+`modernbert-mic` es un artefacto de prueba (test artifact) publicado por la organización `huggingface-mic`, no un modelo entrenado ni utilizable para inferencia real. Se trata de un fixture "slim" de 3,4 millones de parámetros derivado de `answerdotai/ModernBERT-base`, cuyo propósito es validar contratos de integración con Transformers (uso público, expectativas de framework y reproducibilidad) sobre un checkpoint reducido en lugar del modelo completo.
 
-El objetivo del artefacto es servir como banco de pruebas reproducible para verificar el comportamiento de la integracion de ModernBERT en la libreria Transformers: carga de pesos, sensibilidad a las entradas, ejecucion en distintas dtypes (float32, bfloat16, float16) y expectativas de framework. La model card indica explicitamente que se trata de un test artifact y que debe quedar excluido de las busquedas de modelos candidatos.
+El fixture conserva la arquitectura `ModernBertForMaskedLM` pero reduce la configuración a 2 capas (`num_hidden_layers: 2`) y utiliza pesos aleatorios (semilla 17) que superaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplazó los logits al menos 0,001. Los ficheros de procesador (tokenizer y mapas de tokens especiales) se copiaron byte a byte desde `answerdotai/ModernBERT-base`.
 
-Su relevancia es, por tanto, exclusivamente de ingenieria de software: permite a los mantenedores de Transformers ejecutar pruebas de integracion ligeras (0,0 GB de repositorio, 3,4 M de parametros frente a los aproximadamente 149 M de ModernBERT-base) sin descargar el checkpoint completo. No debe confundirse con un modelo de lenguaje funcional.
+Es relevante únicamente en el contexto de ingeniería de integración de modelos: permite registrar evidencias de ejecución (variantes por defecto, eager y bfloat16 sobre una NVIDIA A10G, con baseline en proceso fresco) sin necesidad de descargar ni ejecutar el checkpoint real. El propio autor lo etiqueta como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBertForMaskedLM (transformer encoder, variante reducida de ModernBERT) |
+| Arquitectura | ModernBERT (encoder transformer), clase `ModernBertForMaskedLM`; fixture con 2 capas |
 | Parametros totales | 3.360.320 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; validado tambien en bfloat16 y float16) |
+| Tipos de cuantizacion | no disponible; pesos guardados en float32 y verificados como finitos en float32, bfloat16 y float16 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo base | answerdotai/ModernBERT-base |
+| Proposito | fixture de test para contratos de integracion con Transformers |
+| Semilla de pesos | 17 (pesos aleatorios) |
+| Descargas | 3.317 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-El fixture conserva la arquitectura del modelo base, ModernBertForMaskedLM, pero con una configuracion reducida: num_hidden_layers igual a 2, aplicando la regla generica de reduccion definida en sweep.py del repositorio transformers-mic. Los ficheros de procesador (special_tokens_map.json, tokenizer.json y tokenizer_config.json) se copian byte a byte desde answerdotai/ModernBERT-base, de modo que el tokenizador es identico al del checkpoint original.
+El modelo es un encoder transformer de la familia ModernBERT, instanciado como `ModernBertForMaskedLM`. El fixture se generó aplicando la regla genérica de reducción de `sweep.py` (repositorio `huggingface/transformers-mic`), que en este caso fija `num_hidden_layers` a 2. Los nombres de tensores coinciden con los del checkpoint real, de modo que el fixture ejercita el mismo grafo de cómputo con una configuración menor.
 
-No hubo entrenamiento. Los pesos son aleatorios, generados con semilla 17, y se aceptaron porque superaron la puerta de sensibilidad a entradas: cada perturbacion de las entradas del contrato desplazo los logits al menos 0,001 (el caso mas debil, attention_mask:all_ones, registro 0,00121). El modelo mantiene los mismos nombres de tensores que el checkpoint real, se guarda en float32 (el dtype por defecto de ModernBERT-base) y produce valores finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture es d109ab451c9f.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron tras superar una puerta de sensibilidad a la entrada: toda perturbación de las entradas del contrato movió los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, registró 0,00121). Los ficheros de tokenizador (`special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte desde `answerdotai/ModernBERT-base`. La validación cubrió variantes por defecto, eager y bfloat16 sobre una NVIDIA A10G, con grabación de baseline en proceso fresco, y se verificó finitud en float32, bfloat16 y float16 para forward, pérdida y gradientes.
 
 ## Capacidades
 
-- No dispone de capacidades funcionales de generacion, razonamiento, codigo ni matematicas: los pesos son aleatorios y la model card lo declara explicitamente como test artifact no utilizable.
-- Replica la interfaz de ModernBertForMaskedLM, incluida la tarea de masked language modeling a nivel de contrato de API.
-- Conserva el tokenizador exacto de answerdotai/ModernBERT-base, por lo que el preprocesado de texto es fiel al modelo original.
-- Soporta ejecucion en float32, bfloat16 y float16 con resultados finitos, lo que permite probar rutas de mixed precision.
-- Mantiene los nombres de tensores del checkpoint real, habilitando pruebas de carga estricta (strict load) y de compatibilidad de state dict.
-- No soporta tool calling, function calling, agentes, vision, audio ni modo thinking.
-- Capacidades multilingues: no disponible (heredadas del tokenizador del modelo base, no verificadas en este fixture).
+- Ninguna capacidad de modelo real: al tener pesos aleatorios, no genera texto, no razona, no traduce ni resuelve tareas de NLP.
+- Sirve como fixture ejecutable para validar el contrato de integración de ModernBERT con Transformers (carga, forward, pérdida y gradientes).
+- Permite comprobar compatibilidad de tokenizador y mapeo de tokens especiales idénticos al checkpoint base.
+- Verifica comportamiento numérico en float32, bfloat16 y float16 (finitud de forward, loss y gradientes).
+- No soporta tool calling, function calling, agentes, visión, audio ni modo de razonamiento.
+- No dispone de capacidades multilingües declaradas.
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: el fixture permite ejecutar la suite de tests de ModernBERT en CI sin descargar el checkpoint completo, reduciendo el coste de ancho de banda y el tiempo de arranque.
-- Validacion de contratos de framework: los ficheros integration.json y expectations documentan y verifican las expectativas de carga, dtypes y formas de salida del modelo.
-- Pruebas de mixed precision: al producir valores finitos en float32, bfloat16 y float16, sirve para validar rutas de autocast y comprobar que no aparecen NaN ni inf en forward, loss ni gradientes.
-- Verificacion de sensibilidad a entradas: la puerta de sensibilidad (perturbaciones que mueven los logits al menos 0,001) permite comprobar que el pipeline de inferencia responde a cambios en attention_mask y en los ids de entrada.
-- Regresion de tokenizador: al copiar byte a byte los ficheros de procesador del modelo base, se puede detectar cualquier divergencia introducida en la integracion del tokenizador.
-- Reproducibilidad de builds: build.json registra fuentes fijadas, resultados de las puertas y hashes de ficheros, lo que permite reconstruir el fixture con python example/build_fixtures.py --fixture mic-modernbert-slim y auditar cambios.
-- Pruebas de carga estricta de state dict: los nombres de tensores coinciden con el checkpoint real, de modo que se puede validar el mapeo de pesos antes de usar el modelo completo.
+- Validación de pipelines de integración continua: usar el fixture como sustituto del checkpoint completo en tests de carga y forward con Transformers, reduciendo tiempo y ancho de banda de CI.
+- Pruebas de compatibilidad de tokenizador: comprobar que los ficheros de procesador copiados desde `answerdotai/ModernBERT-base` se cargan correctamente en distintas versiones de la librería.
+- Verificación de precisión numérica: ejecutar forward, pérdida y gradientes en float32, bfloat16 y float16 para detectar regresiones de estabilidad en entornos de entrenamiento mixto.
+- Reproducibilidad de contratos de framework: registrar expectativas de salida y comparar contra el baseline en proceso fresco documentado en el repositorio.
+- Desarrollo de herramientas de reducción de modelos: servir como ejemplo de referencia del proceso de shrink aplicado por `sweep.py` sobre un checkpoint real.
+- Auditoría de artefactos de test: comprobar que el etiquetado `test-artifact` excluye correctamente el repositorio de búsquedas de modelos candidatos en catálogos internos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El artefacto es un fixture de pruebas y no un modelo entrenado, por lo que no procede evaluar MMLU, HumanEval, GSM8K ni metricas similares.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo card únicamente documenta evidencias de ejecución (variantes por defecto, eager y bfloat16 sobre NVIDIA A10G, con baseline en proceso fresco) y resultados de la puerta de sensibilidad a la entrada, no métricas de calidad de tarea.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,36 M de parametros, aproximadamente 13,4 MB de pesos) y aun menor en bfloat16 o float16.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria; la model card cita validacion en una NVIDIA A10G.
-- Cabe en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090, etc.) y tambien en CPU.
-- Opciones de despliegue: Transformers con el pipeline estandar de ModernBertForMaskedLM; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI para este artefacto.
-- Latencia y throughput: no disponible; al ser un fixture con dos capas y pesos aleatorios, las cifras no serian representativas de ModernBERT-base.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 para 3,4 M de parámetros; en la práctica, el peso de los pesos es despreciable frente al overhead del runtime.
+- GPU recomendadas: cualquiera con soporte CUDA; el autor valida sobre NVIDIA A10G.
+- Cabe en cualquier GPU consumer (RTX 4090, RTX 3060, e incluso CPU) sin restricciones prácticas de memoria.
+- Opciones de despliegue: Transformers (validado por el autor); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un fixture de test, no se publican mediciones de rendimiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| modernbert-mic | 3.360.320 | no disponible | Fixture de pruebas de integracion | no disponible | Hugging Face (huggingface-mic) |
-| answerdotai/ModernBERT-base | aproximadamente 149 M | no disponible en esta informacion | Modelo encoder de lenguaje | no disponible en esta informacion | Hugging Face (answerdotai) |
-| mic-modernbert-slim | 3,4 M | no disponible | Fixture slim referenciado en la model card | no disponible | Referenciado, no enlazado directamente |
+| huggingface-mic/modernbert-mic | 3.360.320 | no disponible | Fixture de test para contratos de integracion | no disponible | Hugging Face |
+| answerdotai/ModernBERT-base | no disponible en la informacion proporcionada | no disponible | Modelo encoder real para tareas de NLP | no disponible | Hugging Face |
+| Otros fixtures de la organizacion huggingface-mic | no disponible | no disponible | Fixtures de test para otros modelos | no disponible | Hugging Face |
 
-La comparativa relevante es con el propio checkpoint base: modernbert-mic reduce el numero de capas a 2 y sustituye los pesos entrenados por pesos aleatorios, conservando arquitectura, tokenizador y nombres de tensores. No se dispone de informacion sobre otros fixtures comparables.
+La comparación relevante es contra el checkpoint base `answerdotai/ModernBERT-base`: el fixture replica su arquitectura y tokenizador con una configuración reducida y pesos aleatorios, por lo que no es sustituible por él en ninguna tarea de producción. No se dispone de datos suficientes para comparar con alternativas de la misma categoría (fixtures de test).
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y las salidas carecen de significado semantico; cualquier uso en produccion seria un error.
-- La model card lo etiqueta como test-artifact precisamente para excluirlo de busquedas de modelos candidatos; los pipelines de seleccion de modelos deben filtrar esta etiqueta.
-- La licencia no esta declarada, lo que impide determinar condiciones de uso comercial o redistribucion.
-- La longitud de contexto y los idiomas soportados no estan documentados para este fixture.
-- Al derivar de answerdotai/ModernBERT-base, hereda las obligaciones de licencia del modelo base, que no se detallan en la informacion disponible.
-- La cobertura es parcial: la model card indica que el prototipo declara objetivos solo para el fixture y que la cobertura del checkpoint completo es un trabajo separado.
-- No debe usarse como referencia de rendimiento: las metricas de latencia o calidad obtenidas con este artefacto no son extrapolables a ModernBERT-base.
+- Es un artefacto de test: los pesos son aleatorios y el modelo no produce salidas significativas.
+- No debe usarse en producción, investigación aplicada ni evaluación de calidad.
+- No se declaran sesgos porque no hay entrenamiento; cualquier salida es ruido.
+- Riesgo de alucinación no aplicable en el sentido habitual, pero sí de uso indebido si se confunde con un modelo real.
+- Licencia no disponible: no se puede asumir permiso de uso comercial.
+- Idiomas y contexto no declarados.
+- El autor indica que es un prototipo con objetivos solo de fixture; la cobertura del checkpoint completo es un trabajo separado.
+- El repositorio tiene 0 likes y un tamaño de 0,0 GB, coherente con su naturaleza de artefacto mínimo.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/modernbert-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/modernbert-mic
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
-- Manifest de contrato: integration.json (en el repositorio)
-- Uso con Transformers: integrations/transformers/usage.md (en el repositorio)
-- Expectativas de Transformers: integrations/transformers/expectations (en el repositorio)
-- Procedencia del fixture: build.json (en el repositorio)
-- Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/modernbert-mic.html
+- Manifiesto de contrato: https://huggingface.co/huggingface-mic/modernbert-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/modernbert-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/modernbert-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/modernbert-mic/blob/main/build.json
+- Documentacion del proceso de shrink: https://huggingface-mic-mic-coverage.static.hf.space/shrink/modernbert-mic.html
 - Evidencia de regeneracion (GitHub Actions): https://github.com/huggingface/transformers-mic/actions/runs/38252430459
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla generica de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

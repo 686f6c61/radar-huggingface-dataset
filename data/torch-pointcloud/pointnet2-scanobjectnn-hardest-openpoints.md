@@ -2,97 +2,97 @@
 
 ## Resumen
 
-pointnet2.scanobjectnn-hardest.openpoints es un modelo de clasificación de nubes de puntos 3D publicado por el usuario torch-pointcloud en Hugging Face. Se trata de una implementación de PointNet++, la arquitectura de aprendizaje jerárquico de características sobre conjuntos de puntos desordenados propuesta por Qi et al. (NeurIPS 2017), entrenada sobre la partición más difícil del dataset ScanObjectNN (PB_T50_RS), que contiene objetos escaneados en entornos reales con oclusión, ruido y perturbaciones.
+PointNet++ aplicado a clasificación de nubes de puntos 3D, distribuido por el proyecto `torch-pointcloud` de Arthur Dujardin. El modelo implementa la arquitectura de abstracción jerárquica de conjuntos (*set abstraction*) descrita en el artículo original de Qi et al. (NeurIPS 2017) y está entrenado sobre la variante más difícil del benchmark ScanObjectNN (`PB_T50_RS`), que introduce perturbaciones y oclusiones para acercar los datos sintéticos a escaneos reales.
 
-El modelo tiene 1.476.175 parámetros (aproximadamente 1,5 millones), recibe nubes de puntos con 4 canales de entrada y clasifica en 15 categorías de objeto. La cabeza de clasificación es sustituible: puede configurarse con `num_classes=0` para actuar como extractor de características y devolver embeddings de 1024 dimensiones, lo que lo hace reutilizable en tareas de recuperación, agrupamiento o transferencia a otros dominios.
+Con 1,47 millones de parámetros y una cabeza de clasificación de 15 clases, es un modelo deliberadamente pequeño y ligero: su interés no está en competir con los transformers 3D de gran escala, sino en ofrecer una línea base reproducible, con pesos en `safetensors` y API de carga en una línea mediante `torch_pointcloud.create_model`. Es relevante para quien necesite un clasificador de objetos 3D rápido, desplegable en CPU o en GPUs modestas, y como referencia para comparar arquitecturas más modernas sobre el mismo split.
 
-Su relevancia es práctica más que de frontera: es un modelo ligero, con licencia MIT y pesos en safetensors, empaquetado para la librería torch-pointcloud con una API de creación de modelo en una sola llamada. Frente a los modelos de lenguaje, aquí no hay contexto, idiomas ni generación de texto; el problema que resuelve es la percepción 3D, y lo hace con un coste computacional mínimo, apto para CPU y GPUs de gama baja.
+El checkpoint procede de la implementación de PointNeXt (MIT) y se ha reconvertido al formato de la librería `torch-pointcloud`. Declara un 86,16 % de *overall accuracy* y un 84,36 % de *mean accuracy* en ScanObjectNN, cifras no verificadas de forma independiente por el autor.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | PointNet++ (aprendizaje jerárquico de características sobre conjuntos de puntos, con capas de set abstraction) |
-| Parametros totales | 1.476.175 (aproximadamente 1,5 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de clasificación de nubes de puntos, no secuencial); el ejemplo de la model card usa 8192 puntos de entrada |
-| Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors, sin variantes GGUF, INT8 ni otras) |
-| Idiomas soportados | no aplica (modelo de visión/percepción 3D, no procesa texto) |
+| Arquitectura | PointNet++ (hierarchical set abstraction, capas de agrupacion y muestreo FPS) |
+| Parametros totales | 1.476.175 (1,5 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica: entrada de nube de puntos, ejemplo con 8192 puntos) |
+| Tipos de cuantizacion | no disponible (pesos en precision nativa PyTorch) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria `torch-pointcloud`) |
 
-Datos adicionales declarados en la model card: canales de entrada 4, número de clases 15, dimensión de características 1024, librería `torch-pointcloud`, dataset ScanObjectNN (PB_T50_RS).
+Otros datos declarados: 4 canales de entrada, 15 clases de salida, vector de características de 1024 dimensiones.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es PointNet++ en su variante jerárquica: la nube de puntos se procesa mediante capas de *set abstraction* que muestrean y agrupan puntos de forma sucesiva, aplicando pequeñas PointNets locales para extraer características en cada nivel de la jerarquía. Esto permite capturar estructura local (vecindades) y componerla en representaciones globales, algo que la PointNet original no hacía de forma explícita. El modelo recibe 4 canales de entrada por punto y produce logits sobre 15 clases; la representación global antes de la cabeza tiene 1024 dimensiones.
+PointNet++ es una red jerárquica que aplica de forma recursiva capas de *set abstraction*: muestreo por puntos más lejanos (FPS), agrupación por bola de radio en el espacio métrico y una mini-PointNet sobre cada grupo local. Esta composición permite capturar estructura local a varias escalas, algo que la PointNet original no hacía. La variante aquí publicada usa 4 canales de entrada (coordenadas XYZ más una característica adicional, habitual en las configuraciones de PointNeXt), clasifica en 15 categorías y produce un embedding global de 1024 dimensiones.
 
-Los pesos se han convertido desde el repositorio PointNeXt de Guochengqian (licencia MIT), que actúa como implementación de referencia. El entrenamiento se realizó sobre ScanObjectNN en la configuración PB_T50_RS, la partición considerada más difícil del benchmark por combinar perturbaciones de traslación, rotación y escalado además de la presencia de fondo y oclusión propios de escaneos reales. No se detalla en la información disponible el número de tokens/puntos vistos, la composición exacta del dataset, si hubo etapas de ajuste fino adicionales ni técnicas de regularización específicas. La model card cita un valor de referencia de 86,2 de OA para esta misma configuración, frente a los 86,16 obtenidos por estos pesos.
+El entrenamiento se realiza sobre ScanObjectNN en su split `PB_T50_RS`, la configuración más exigente del benchmark: objetos reales escaneados, con perturbaciones de traslación y rotación, y un 50 % de puntos eliminados. La model card no detalla el número de épocas, el optimizador, el esquema de aumento de datos ni si hubo ajuste fino adicional; tampoco indica uso de RLHF/DPO, algo que no aplica a una tarea de clasificación. El checkpoint se convierte desde el repositorio PointNeXt, por lo que hereda su receta de entrenamiento original.
 
 ## Capacidades
 
-- Clasificación de nubes de puntos 3D en 15 clases de objeto de ScanObjectNN.
-- Extracción de características: `forward_features()` devuelve embeddings; con `reset_classifier(num_classes=0)` la salida es un vector de 1024 dimensiones por muestra.
-- Procesamiento por lotes mediante la utilidad `collate` de la librería, con seguimiento del índice de lote (`batch`) para agrupar puntos por muestra.
-- Transformación de entrada integrada: el objeto `info["transform"]` devuelto por `create_model` aplica el preprocesado esperado por el modelo.
-- Reutilización como extractor preentrenado para transferencia a otras taxonomías mediante sustitución de la cabeza de clasificación.
-- No soporta generación de texto, tool calling, function calling, razonamiento multi-paso, agentes, visión 2D, audio ni capacidades multilingües: no son aplicables a este tipo de modelo.
+- Clasificación de nubes de puntos 3D en 15 clases de objetos (tarea `point-cloud-classification`).
+- Extracción de características: `forward_features` devuelve un vector de 1024 dimensiones por muestra, útil como descriptor para tareas posteriores.
+- Reutilización como *backbone*: `reset_classifier(num_classes=0)` permite sustituir la cabeza de clasificación y adaptar el modelo a otro número de clases.
+- Entrada variable en número de puntos (el ejemplo de la model card usa 8192), con agregación por *batch* mediante la utilidad `collate`.
+- Inferencia en CPU o GPU con PyTorch estándar, sin dependencias de kernels CUDA personalizados.
+- No soporta tool calling, agentes, razonamiento multi-paso, visión 2D, audio ni generación de texto: es un clasificador puro.
 
 ## Casos de uso
 
-- Pre-etiquetado de escaneos 3D en pipelines de percepción: dado un escaneo con LiDAR o escáner de profundidad, el modelo asigna una de las 15 clases a cada objeto segmentado, reduciendo el trabajo de anotación manual antes de un revisión humana.
-- Robótica móvil y manipulación: clasificar el objeto que el robot tiene delante para decidir la pinza o la estrategia de agarre, aprovechando que el modelo cabe en CPU y no requiere una GPU dedicada en el robot.
-- Búsqueda y recuperación de objetos 3D: usar los embeddings de 1024 dimensiones con `num_classes=0` para indexar un catálogo de modelos 3D o escaneos y resolver consultas por similitud vectorial.
-- Control de calidad en fabricación: clasificar piezas escaneadas tras el proceso de producción para detectar piezas fuera de catálogo o mal formadas, integrándolo en una línea con captura 3D.
-- Inventario automatizado en almacén: combinado con un escáner 3D, identificar la categoría de los bultos o productos apilados para conciliar existencias.
-- Punto de partida para transferencia a dominio propio: congelar el extractor y entrenar una cabeza nueva sobre un dataset interno con distinta taxonomía, aprovechando que los pesos son ligeros y la licencia MIT no restringe el uso comercial.
-- Anotación asistida en investigación en visión 3D: generar etiquetas preliminares sobre colecciones de escaneos para comparar variantes de arquitectura o construir subconjuntos de evaluación.
+- Clasificación de objetos en escaneos LiDAR o de profundidad: el modelo recibe la nube de puntos de un objeto segmentado y devuelve una de las 15 categorías; su tamaño de 1,5 M de parámetros permite ejecutarlo por objeto en tiempo real dentro de un pipeline de percepción.
+- Preprocesado en robótica de manipulación: identificar la clase del objeto antes de decidir la pinza o la trayectoria, usando el embedding de 1024 dimensiones como entrada a un planificador o a un clasificador auxiliar.
+- Etiquetado semiautomático de datasets 3D: aplicar el modelo a nubes no etiquetadas para preanotar y reducir el coste de revisión manual, con umbral de confianza para derivar casos dudosos a anotadores.
+- Recuperación de objetos 3D por similitud: extraer embeddings con `forward_features` y construir un índice vectorial para búsqueda de formas similares en catálogos de escaneos o activos CAD.
+- Línea base en investigación: comparar nuevas arquitecturas (PointNeXt, Point Transformer, PVCNN) contra este checkpoint sobre el split `PB_T50_RS`, con métricas OA y mAcc reproducibles.
+- Despliegue en dispositivos de borde: al no requerir GPU dedicada, puede ejecutarse en CPU en sistemas embebidos o en un Jetson para clasificación local sin enviar datos a la nube.
+- Filtrado previo en pipelines de reconstrucción: descartar o etiquetar fragmentos de escaneo antes de un procesamiento más costoso, aprovechando el bajo coste computacional del modelo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (todos marcados como no verificados):
+Resultados declarados por el autor en el `model-index` (no verificados de forma independiente):
 
-| Dataset | Tarea | Métrica | Valor | Verificado |
-|---|---|---|---|---|
-| ScanObjectNN (PB_T50_RS) | Clasificación de nubes de puntos | OA (accuracy) | 86,16 | No |
-| ScanObjectNN (PB_T50_RS) | Clasificación de nubes de puntos | mAcc (accuracy) | 84,36 | No |
+| Dataset | Metrica | Valor |
+|---|---|---|
+| ScanObjectNN (PB_T50_RS) | OA (overall accuracy) | 86,16 |
+| ScanObjectNN (PB_T50_RS) | mAcc (mean accuracy) | 84,36 |
 
-La propia model card indica un valor de referencia de 86,2 de OA para esta configuración. No se han publicado en la información disponible otros resultados de benchmarks (por ejemplo sobre ModelNet40, ShapeNet o particiones más sencillas de ScanObjectNN).
+No se han publicado en la informacion disponible resultados comparativos adicionales ni mediciones de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan aproximadamente 6 MB en float32 (1,476 M de parámetros) y unos 3 MB en float16. El consumo real depende del número de puntos y del tamaño de lote, no del peso del modelo.
-- GPU recomendadas: cualquier GPU con soporte CUDA, incluidas las de gama baja; una RTX 4090, A100 o H100 están sobradamente dimensionadas. El modelo también es viable en CPU.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer actual e incluso en equipos sin GPU dedicada.
-- Opciones de despliegue: PyTorch con la librería `torch-pointcloud` (`pip install torch-pointcloud`), que expone `create_model` con `pretrained=True`. No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo. La exportación a ONNX o TorchScript no está documentada en la información disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: inferior a 1 GB en precisión FP32 para lotes pequeños; el modelo ocupa unos 6 MB en pesos (1,47 M de parámetros × 4 bytes), por lo que el grueso del consumo proviene de las activaciones y del número de puntos de entrada.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de memoria; funciona sin problemas en RTX 3060, RTX 4090, A100 y H100, aunque estas últimas están sobredimensionadas para la carga.
+- Cabe holgadamente en GPU de consumo e incluso en CPU: con 8192 puntos por muestra, la inferencia en CPU es viable para lotes moderados.
+- Opciones de despliegue: PyTorch nativo a través de `torch-pointcloud`; no se documentan exportaciones a ONNX, TensorRT, GGUF ni integraciones con vLLM, llama.cpp u Ollama (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Entrada | Dataset | OA declarada | Licencia |
 |---|---|---|---|---|---|
-| pointnet2.scanobjectnn-hardest.openpoints | 1,5 M | nube de puntos (el ejemplo usa 8192 puntos) | Clasificación, 15 clases ScanObjectNN | MIT | Hugging Face, pesos safetensors |
-| PointNet++ (implementación original) | no disponible en la información suministrada | nube de puntos | Clasificación de nubes de puntos | no disponible en la información suministrada | Repositorio original de los autores |
-| PointNeXt (guochengqian) | no disponible en la información suministrada | nube de puntos | Clasificación y segmentación de nubes de puntos | MIT | GitHub; es el origen de la conversión de estos pesos |
+| pointnet2.scanobjectnn-hardest.openpoints | 1,5 M | Nube de puntos, 4 canales | ScanObjectNN PB_T50_RS | 86,16 | MIT |
+| PointNet++ original (Qi et al., 2017) | ~1,5 M (config. clasificacion) | Nube de puntos, 3 canales | ModelNet40 / ScanObjectNN | no disponible en esta ficha | MIT (implementacion de referencia) |
+| PointNeXt (guochengqian) | variable segun configuracion (desde ~0,8 M) | Nube de puntos | ScanObjectNN PB_T50_RS | no disponible en esta ficha | MIT |
 
-No se dispone de cifras comparativas de rendimiento de las alternativas en la información proporcionada, más allá del valor de referencia de 86,2 de OA citado para la misma configuración.
+La comparación cuantitativa con PointNeXt y con otras arquitecturas 3D no puede completarse porque la información proporcionada no incluye sus resultados en el mismo split. El checkpoint aquí descrito deriva directamente de PointNeXt, por lo que sus cifras deberían coincidir con la configuración equivalente de ese repositorio.
 
 ## Limitaciones y advertencias
 
-- Dominio restringido: entrenado exclusivamente sobre ScanObjectNN (PB_T50_RS), con 15 clases y objetos escaneados en interiores con perturbaciones; el rendimiento fuera de esa distribución no está documentado.
-- Métricas no verificadas: los resultados de la model card están marcados como `verified: false` y no han sido reproducidos de forma independiente en la información disponible.
-- Sesgos del dataset: las clases y la distribución de ScanObjectNN condicionan las predicciones; objetos poco representados o categorías ausentes del dataset no se reconocen correctamente.
-- Confusión entre clases similares: al tratarse de una taxonomía de 15 categorías con objetos parcialmente ocluidos, es esperable confusión entre formas parecidas, sin que se publiquen matrices de confusión.
-- Dependencia del preprocesado: el modelo espera una transformación concreta de la nube de puntos (4 canales de entrada); usar otra normalización o un número de puntos muy distinto al del ejemplo puede degradar los resultados.
-- Riesgo de falsos positivos en producción: como cualquier clasificador cerrado, siempre asigna una de las 15 etiquetas, aunque la entrada no corresponda a ninguna clase conocida; conviene acompañarlo de un umbral de confianza o de detección de fuera de dominio.
-- Licencia: MIT, permite uso comercial y modificación, pero conviene conservar la atribución al repositorio PointNeXt de origen y citar los trabajos de PointNet++ y ScanObjectNN.
-- Madurez: el repositorio no registra descargas ni interacciones, y el tamaño del repo es 0,0 GB en la información consultada; no hay garantía de mantenimiento ni de soporte.
-- Diferencias frente a modelos generativos: no procesa texto, no tiene ventana de contexto, no soporta instrucciones ni diálogo; cualquier expectativa derivada de modelos de lenguaje no aplica aquí.
+- Modelo de clasificación cerrada: solo reconoce las 15 clases de ScanObjectNN; cualquier objeto fuera de ese conjunto se asignará a una de ellas sin señal explícita de rechazo.
+- Métricas autodeclaradas y marcadas como `verified: false`; conviene reproducirlas antes de usarlas como referencia en publicaciones.
+- Entrenado en escaneos reales con perturbaciones (`PB_T50_RS`); el rendimiento puede degradarse con nubes sintéticas limpias, densidades muy distintas o sensores con características diferentes a las del dataset.
+- Sin información sobre sesgos de clase, balance del dataset ni análisis de errores por categoría.
+- No es un modelo generativo, por lo que el riesgo de alucinación de texto no aplica; el riesgo equivalente es la sobreconfianza en clases incorrectas ante entradas fuera de distribución.
+- La licencia MIT permite uso comercial sin restricciones adicionales, pero el usuario debe verificar las licencias de los datos de entrenamiento (ScanObjectNN) y del código de origen (PointNeXt) si redistribuye derivados.
+- No se documentan limitaciones de idioma porque el modelo no procesa texto.
+- La model card no especifica la versión exacta de `torch-pointcloud` compatible ni el hash del checkpoint de origen en PointNeXt, lo que dificulta la reproducibilidad exacta.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/torch-pointcloud/pointnet2.scanobjectnn-hardest.openpoints
-- Paper de PointNet++: https://arxiv.org/abs/1706.02413
-- Repositorio PointNeXt (origen de la conversión de pesos): https://github.com/guochengqian/PointNeXt
-- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- DOI de la librería PyTorch PointCloud (Zenodo): https://doi.org/10.5281/zenodo.22159632
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnet2.scanobjectnn-hardest.openpoints
+- Paper PointNet++: https://arxiv.org/abs/1706.02413
+- Repositorio PointNeXt (origen de los pesos): https://github.com/guochengqian/PointNeXt
+- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- DOI de la libreria: https://doi.org/10.5281/zenodo.22159632
+- Paper ScanObjectNN (ICCV 2019): no disponible como enlace en la informacion proporcionada

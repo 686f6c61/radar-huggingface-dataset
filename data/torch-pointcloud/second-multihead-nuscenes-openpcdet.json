@@ -44,32 +44,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "torch-pointcloud/second-multihead.nuscenes.openpcdet · Hugging Face",
-      "url": "https://huggingface.co/torch-pointcloud/second-multihead.nuscenes.openpcdet",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "mAP",
+      "value": 50.44
     },
     {
-      "title": "torch-pointcloud/pointpillars-multihead.nuscenes.openpcdet · Hugging Face",
-      "url": "https://huggingface.co/torch-pointcloud/pointpillars-multihead.nuscenes.openpcdet",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - open-mmlab/OpenPCDet: OpenPCDet Toolbox for LiDAR-based 3D ...",
-      "url": "https://github.com/open-mmlab/OpenPCDet",
-      "snippet": "The NuScenes dataset is supported with strong baseline results (SECOND-MultiHead (CBGS) and PointPillar-MultiHead). High efficiency than last version, support PyTorch 1.1~1.7 and spconv 1.0~1.2 simultaneously. [2020-07-17] Add simple visualization codes and a quick demo to test with custom data."
-    },
-    {
-      "title": "NuScenes Dataset | open-mmlab/OpenPCDet | DeepWiki",
-      "url": "https://deepwiki.com/open-mmlab/OpenPCDet/3.4-nuscenes-dataset",
-      "snippet": "The NuScenes dataset implementation in OpenPCDet provides a comprehensive solution for working with this autonomous driving dataset. It handles the complexities of multi-sweep LiDAR data, multi-camera integration, and NuScenes-specific annotations and evaluation metrics."
-    },
-    {
-      "title": "GitHub - riceleslie/OpenPCDet",
-      "url": "https://github.com/riceleslie/OpenPCDet",
-      "snippet": "The NuScenes dataset is supported with strong baseline results (SECOND-MultiHead (CBGS) and PointPillar-MultiHead). High efficiency than last version, support PyTorch 1.1~1.7 and spconv 1.0~1.2 simultaneously. [2020-07-17] Add simple visualization codes and a quick demo to test with custom data."
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "NDS",
+      "value": 61.9
     }
-  ]
+  ],
+  "sources": []
 }

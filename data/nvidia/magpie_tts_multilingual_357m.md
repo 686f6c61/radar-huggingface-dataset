@@ -2,81 +2,91 @@
 
 ## Resumen
 
-MagpieTTS Multilingual 357M es un modelo de síntesis de voz (text-to-speech) desarrollado por NVIDIA, diseñado para generar habla natural en 12 idiomas con una identidad de voz consistente. Forma parte de la familia de modelos Nemotron y se distribuye a través del framework NeMo Speech. El modelo resuelve el problema de la síntesis multilingüe de alta calidad con un único sistema, evitando la necesidad de modelos separados por idioma y manteniendo la misma voz del hablante en todas las lenguas soportadas.
+MagpieTTS Multilingual 357M es un modelo de síntesis de voz (text-to-speech) neuronal y extremo a extremo desarrollado por NVIDIA, publicado en Hugging Face bajo la librería NeMo Speech. Convierte texto en habla en 12 idiomas (árabe, chino, inglés, francés, alemán, hindi, italiano, japonés, coreano, portugués, español y vietnamita) manteniendo una identidad de voz consistente entre idiomas, mediante cinco voces en inglés (Aria, Jason, Leo, Sofia y John Van Stan, esta última de dominio público).
 
-Arquitectónicamente, es un transformer encoder-decoder con 364 millones de parámetros (el nombre comercial indica 357M) que predice de forma autorregresiva tokens de audio codec mediante multi-codebook (8 codebooks) y frame stacking (factor 2). El entrenamiento incorpora attention priors para una alineación texto-audio estable, classifier-free guidance (CFG) para un condicionamiento más fuerte y Group Relative Policy Optimization (GRPO) para alinear la generación con preferencias humanas. La versión actual (v2607) añade soporte para árabe, coreano y portugués, e incluye soporte IPA G2P para diccionarios personalizados y code-switching.
+El modelo emplea una arquitectura transformer encoder–decoder que predice de forma autorregresiva tokens discretos de códec de audio, con predicción multi-codebook (típicamente 8 codebooks), frame stacking (factor 2) y un transformer local para el refinamiento de alta fidelidad. Los tokens predichos se decodifican a onda de audio mediante un códec congelado (NanoCodec, 22 kHz, 1,89 kbps, 21,5 fps). La versión más reciente, v2607 (julio de 2026), añadió árabe, coreano y portugués respecto a las versiones v2602 y v2512.
 
-La relevancia actual del modelo radica en su capacidad para producir voz expresiva y consistente en un amplio abanico de idiomas con un solo checkpoint, lo que simplifica el despliegue en aplicaciones de voz multilingües. Además, al eliminar la clonación de voz zero-shot por razones de seguridad, se posiciona como una opción más responsable para uso comercial.
+Su relevancia actual radica en que ofrece una capa de generación de voz dedicada, lista para uso comercial, que se integra en pipelines de agentes de voz en cascada (LLM → TTS), narración de audiolibros, doblaje y herramientas de accesibilidad, con soporte de normalización de texto, G2P basado en IPA para diccionarios personalizados y code-switching. En esta versión se ha eliminado la clonación de voz zero-shot por motivos de seguridad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder con predicción multi-codebook (8 codebooks) y frame stacking (factor 2) |
-| Parametros totales | 364M (denominado comercialmente 357M) |
+| Arquitectura | Transformer encoder–decoder autorregresivo con predicción multi-codebook de tokens de códec y transformer local de refinamiento |
+| Parametros totales | 284.200.199 en safetensors (la model card indica 364M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo TTS, no especificado) |
-| Tipos de cuantizacion | no disponible (aunque el tag incluye GGUF, no se detalla) |
-| Idiomas soportados | arabe (ar), aleman (de), ingles (en), espanol (es), frances (fr), hindi (hi), italiano (it), japones (ja), coreano (ko), portugues (pt), vietnamita (vi), chino (zh) |
-| Licencia | NVIDIA Open Model License (nvidia-open-model-license) |
-| Formato de pesos | no disponible (probablemente safetensors, no confirmado) |
+| Longitud de contexto | no disponible (soporta generación de texto largo mediante ventana deslizante) |
+| Tipos de cuantizacion | no disponible (el repo incluye tag gguf) |
+| Idiomas soportados | ar, de, en, es, fr, hi, it, ja, ko, pt, vi, zh (12 idiomas) |
+| Licencia | NVIDIA Open Model License |
+| Formato de pesos | safetensors, GGUF (tag), librería NeMo |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura transformer encoder-decoder que procesa texto normalizado y genera secuencias de tokens de audio codec de forma autorregresiva. La predicción multi-codebook (típicamente 8 codebooks) con frame stacking (factor 2) reduce la longitud de la secuencia y acelera la generación, mientras que un transformer local refina los frames apilados para mejorar la fidelidad del audio. El decodificador de audio es un codec preentrenado congelado llamado NanoCodec (22 kHz, 1.89 kbps, 21.5 fps).
+MagpieTTS es un modelo TTS extremo a extremo con arquitectura transformer encoder–decoder que predice autorregresivamente tokens discretos de un códec de audio. Usa predicción multi-codebook (habitualmente 8 codebooks) con frame stacking de factor 2, y un transformer local que refina los frames apilados para mejorar la calidad de audio reduciendo la longitud de secuencia. Para estabilizar la alineación texto–audio incorpora priors de atención; para reforzar el condicionamiento usa classifier-free guidance (CFG); y para alinear la generación con preferencias emplea Group Relative Policy Optimization (GRPO). La decodificación final a onda se realiza con un códec de audio preentrenado y congelado, NanoCodec (22 kHz, 1,89 kbps, 21,5 fps).
 
-El entrenamiento se realizó sobre una combinación de datasets públicos y propietarios, incluyendo ClArTTS, arabic_speech_corpus, Emilia-YODAS, GLOBE_V2, hifitts-2, Kathbath, japanese-anime-speech, Common-Voice-17-Ja, Emilia-Dataset, Emilia-YODAS-KO-filtered, pt-br_char e infore1_25hours. No se especifica el número total de tokens de entrenamiento. Se utilizaron técnicas de alineación por atención (attention priors), classifier-free guidance (CFG) y Group Relative Policy Optimization (GRPO) para mejorar la robustez, el control y la preferencia perceptual. La versión v2607 incorpora soporte IPA G2P para diccionarios personalizados y code-switching, así como normalización de texto para los 12 idiomas.
+El entrenamiento se apoya en un conjunto de datasets multilingües entre los que se incluyen MBZUAI/ClArTTS, tunis-ai/arabic_speech_corpus, mrfakename/Emilia-YODAS, MushanW/GLOBE_V2, nvidia/hifitts-2, ai4bharat/Kathbath, joujiboi/japanese-anime-speech, OpenSpeechHub/Common-Voice-17-Ja, amphion/Emilia-Dataset, seastar105/Emilia-YODAS-KO-filtered, firstpixel/pt-br_char y doof-ferb/infore1_25hours. No se especifica en la información disponible el número total de tokens ni la composición exacta del dataset. En inferencia soporta síntesis por lotes de enunciados completos y generación de texto largo mediante ventana deslizante.
 
 ## Capacidades
 
-- Generación de voz natural en 12 idiomas (ar, de, en, es, fr, hi, it, ja, ko, pt, vi, zh) con identidad de voz consistente.
-- Cinco voces de hablantes ingleses: Aria, Jason, Leo, Sofia y John Van Stan (voz pública de LibriVox).
-- Normalización de texto integrada para números, abreviaturas y caracteres especiales en todos los idiomas soportados.
-- Soporte de code-switching (cambio de idioma dentro de una misma frase) mediante IPA G2P y diccionarios personalizados.
-- Generación de habla de larga duración mediante un mecanismo de ventana deslizante (sliding-window) para textos extendidos.
-- Síntesis por lotes (batched synthesis) de utterances completas para mayor eficiencia en inferencia.
-- Sin capacidad de clonación de voz zero-shot (eliminada por seguridad en esta versión).
+- Síntesis de voz multilingüe en 12 idiomas con identidad de voz consistente entre ellos.
+- Cinco voces en inglés (Aria, Jason, Leo, Sofia y John Van Stan), con variaciones de género y tono emocional.
+- Normalización de texto integrada para números, abreviaturas y caracteres especiales en los 12 idiomas.
+- Soporte de G2P basado en IPA para diccionarios personalizados y code-switching, incluida la conversión inglés→katakana.
+- Generación de audio de alta fidelidad mediante decodificación multi-codebook con transformer local y frame stacking.
+- Síntesis por lotes de enunciados completos y generación de formato largo mediante ventana deslizante.
+- Integración como capa de generación de voz en pipelines de agentes en cascada (texto de LLM → habla).
+- No dispone de clonación de voz zero-shot (eliminada en esta versión por motivos de seguridad).
+- No se documentan en la información disponible capacidades de tool calling, agentes autónomos ni visión/audio de entrada.
 
 ## Casos de uso
 
-- Audiolibros multilingües: el modelo puede narrar libros completos en varios idiomas manteniendo la misma voz, lo que permite producir catálogos de audiolibros con una única identidad vocal y sin necesidad de locutores por idioma.
-- Asistentes de voz para atención al cliente: integrado en sistemas de IVR o chatbots de voz, puede responder en el idioma del usuario con una voz consistente, reduciendo la fricción en entornos multilingües.
-- Doblaje de contenido audiovisual: para traducir y doblar vídeos, podcasts o cursos online a los 12 idiomas soportados, manteniendo un tono y estilo uniforme.
-- Accesibilidad para personas con discapacidad visual: conversión de texto a voz en tiempo real para lectores de pantalla, con soporte multilingüe y voces naturales.
-- Generación de contenido educativo: creación de materiales de aprendizaje en audio para plataformas de e-learning, con normalización de texto que maneja fórmulas, fechas y símbolos.
-- Sistemas de navegación y avisos públicos: síntesis de anuncios en estaciones, aeropuertos o vehículos, con cambio de idioma dinámico según la región o preferencia del usuario.
+- Agentes de voz en cascada: el modelo actúa como capa TTS que convierte la salida de texto de un LLM en habla natural en tiempo real, integrándose sin modificar el manejo de audio aguas abajo.
+- Audiolibros y narración de contenido: la generación de formato largo mediante ventana deslizante permite sintetizar textos extensos manteniendo la misma voz a lo largo de capítulos completos.
+- Doblaje y localización: al mantener una identidad de voz consistente entre los 12 idiomas, permite producir versiones dobladas de un mismo contenido con una voz reconocible en cada mercado.
+- Herramientas de accesibilidad: conversión de texto a voz para lectores de pantalla y aplicaciones asistivas, con normalización integrada de números y abreviaturas.
+- Contenido multimedia interactivo: síntesis de voces expresivas con variaciones de género y tono emocional para videojuegos, vídeos explicativos y material formativo.
+- Pronunciación de dominio específico: el soporte G2P con IPA y diccionarios personalizados permite fijar la pronunciación de nombres propios, términos técnicos y marcas.
+- Contenido con mezcla de idiomas: el code-switching (incluido inglés→katakana) facilita la síntesis de frases que alternan idiomas dentro de una misma locución.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo reporta métricas CER (Character Error Rate) y SSIM (Structural Similarity Index) en su ficha, pero no se proporcionan valores numéricos en la documentación accesible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara métricas CER y SSIM entre las métricas del modelo, pero no proporciona valores numéricos.
 
 ## Requisitos de hardware
 
-- No se proporcionan requisitos oficiales de hardware en la documentación disponible.
-- Dado el tamaño del modelo (364M parámetros), es probable que pueda ejecutarse en GPUs de consumo como RTX 3060 o superiores, aunque no hay confirmación oficial.
-- Para inferencia en producción, se recomienda usar el framework NeMo Speech o el NIM de NVIDIA, que gestionan el despliegue optimizado.
-- El modelo está disponible en formato GGUF (según tags), lo que sugiere compatibilidad con llama.cpp y Ollama, aunque no se detalla.
-- No se especifican requisitos de VRAM, latencia o throughput.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; con 284M parámetros en safetensors (aproximadamente 1,1 GB en fp32 y unos 0,6 GB en fp16 para los pesos del modelo), a lo que hay que sumar el códec NanoCodec y el resto de componentes del pipeline NeMo.
+- GPU recomendadas: no disponible de forma explícita; al ser un modelo de NVIDIA distribuido a través de NeMo Speech, el despliegue se orienta a GPUs NVIDIA, pero no se detallan modelos concretos.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible.
+- Opciones de despliegue: NeMo Speech (librería oficial), NIM de MagpieTTS en build.nvidia.com y los ejemplos de agentes de voz de NVIDIA. El repo incluye tag GGUF, pero no se detallan los runners compatibles (llama.cpp, Ollama, vLLM, TGI no se mencionan).
+- Latencia y throughput: no disponibles. La model card destaca que el frame stacking reduce la longitud de secuencia para una generación más rápida, sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la información proporcionada (por ejemplo, otros TTS multilingües como XTTS, Bark o VITS), y no se dispone de datos de rendimiento para establecer una comparación objetiva.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos TTS comparables que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- La clonación de voz zero-shot ha sido eliminada deliberadamente por razones de seguridad; el modelo no puede imitar voces de hablantes no incluidos en el entrenamiento.
-- El acceso al repositorio requiere aceptar una licencia con restricciones de uso no comercial (según el formulario de acceso), aunque el README indica que el modelo está listo para uso comercial. Se recomienda revisar los términos exactos de la NVIDIA Open Model License.
-- No se especifican sesgos conocidos, pero al entrenarse con datos de dominio público, puede reflejar sesgos presentes en los corpus de voz (acentos, dialectos, registros).
-- La calidad de síntesis puede variar entre idiomas; los idiomas con más datos de entrenamiento (inglés, español, etc.) probablemente tengan mejor rendimiento que otros con menos representación.
-- El modelo no soporta entrada de audio (solo texto), por lo que no es adecuado para tareas de conversión de voz a voz.
-- Para uso en producción, es necesario validar la latencia y el throughput en el hardware objetivo, ya que no se proporcionan cifras oficiales.
+- La clonación de voz zero-shot se ha eliminado en esta versión por motivos de seguridad; no es posible replicar una voz arbitraria a partir de una muestra.
+- Solo se ofrecen cinco voces, todas en inglés; no se documentan voces nativas para el resto de idiomas.
+- Riesgo de alucinación o de pronunciación incorrecta en textos con grafías ambiguas, siglas o dominios no cubiertos por la normalización y el G2P.
+- Sesgos potenciales derivados de los datasets de entrenamiento (corpus de habla, audiolibros y contenido web); no se detallan análisis de sesgo en la información disponible.
+- La licencia NVIDIA Open Model License es de tipo "other": conviene revisar sus términos exactos antes de un uso comercial, aunque la model card indica que el modelo está listo para uso comercial.
+- El modelo está atado al ecosistema NeMo Speech y a un códec concreto (NanoCodec), lo que condiciona el despliegue fuera de dicho stack.
+- No se especifican límites de longitud de contexto ni de número de caracteres por petición; el formato largo depende del mecanismo de ventana deslizante.
+- No se documentan métricas de calidad objetivas (CER, SSIM) con valores numéricos, lo que dificulta evaluar su rendimiento frente a alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nvidia/magpie_tts_multilingual_357m
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/magpie_tts_multilingual_demo
 - Repositorio NeMo Speech: https://github.com/NVIDIA-NeMo/Speech
-- API empresarial (NIM): https://build.nvidia.com/nvidia/magpie-tts-multilingual
-- Ejemplos de voice agents: https://github.com/NVIDIA/voice-agent-examples/tree/riva_voice_agent_example
-- Página de Nemotron: https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/
-- Papers relacionados (IDs de arXiv): 2509.21718, 2509.19592, 2502.05236, 2508.05835, 2506.04152, 2409.12117, 2406.17957
+- Códec NanoCodec: https://huggingface.co/nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps
+- API empresarial MagpieTTS NIM: https://build.nvidia.com/nvidia/magpie-tts-multilingual
+- Ejemplos de agentes de voz: https://github.com/NVIDIA/voice-agent-examples/tree/riva_voice_agent_example
+- Nemotron (overview): https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/
+- Nemotron (developer): https://developer.nvidia.com/nemotron
+- Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license
+- Checkpoint v2602: https://huggingface.co/nvidia/magpie_tts_multilingual_357m/tree/v2602
+- Checkpoint v2512: https://huggingface.co/nvidia/magpie_tts_multilingual_357m/tree/v2512
+- Papers citados (arXiv): 2509.21718, 2509.19592, 2502.05236, 2508.05835, 2506.04152, 2409.12117, 2406.17957

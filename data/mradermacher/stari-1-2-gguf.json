@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/stari-1.2-GGUF",
+  "slug": "mradermacher-stari-1-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/stari-1.2-GGUF",
+  "created_at": "2026-11-18T23:45:41.000Z",
+  "updated_at": "2026-11-19T00:01:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "en",
+    "base_model:HIHIHIHIHhaihihihaih/stari-1.2",
+    "base_model:quantized:HIHIHIHIHhaihihihaih/stari-1.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389997312,
+  "storage_human": "36.4 GB",
+  "context_length": 40960,
+  "base_model": "HIHIHIHIHhaihihihaih/stari-1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

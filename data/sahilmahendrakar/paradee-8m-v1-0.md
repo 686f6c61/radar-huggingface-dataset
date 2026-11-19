@@ -2,112 +2,116 @@
 
 ## Resumen
 
-Paradee-8M v1.0 es un modelo de sintesis de voz (text-to-speech) en ingles, mono-voz y de tamano muy reducido, desarrollado por Sahil Mahendrakar y publicado bajo licencia Apache 2.0. Se trata de un modelo destilado de Kokoro-82M: conserva la arquitectura del profesor pero con anchuras mucho menores, dividida en dos mitades (un lado de texto de 4,23 M de parametros y un decodificador de 3,85 M), lo que da un total de 8,07 M de parametros. Su problema objetivo es claro: ofrecer una voz neural de calidad cercana a la del profesor en dispositivos sin GPU, con un archivo ONNX int8 de 9 MB frente a los 325 MB de Kokoro.
+Paradee-8M-v1.0 es un modelo de síntesis de voz (text-to-speech) en inglés desarrollado por sahilmahendrakar, destilado a partir de Kokoro-82M mediante destilación de conocimiento. Con 8,07 millones de parámetros, reproduce una única voz, la `af_heart` de Kokoro, y está pensado para escenarios donde el tamaño y la velocidad de inferencia en CPU son críticos. La versión int8 ocupa un único archivo ONNX de 9 MB, frente a los 325 MB del modelo profesor.
 
-La relevancia del modelo esta en su relacion calidad/tamano/velocidad. Alcanza un UTMOS de 4,41 frente al 4,52 de su profesor y mantiene su misma tasa de error de palabra (5,7%) medido con Whisper base, pero ocupa 38 veces menos y corre aproximadamente 18 veces mas rapido que el tiempo real en un solo hilo de CPU con onnxruntime. Esto lo situa en el segmento de TTS embebido, navegador y telefono, donde Kokoro-82M resulta caro en memoria o latencia.
+El modelo mantiene una calidad cercana a su profesor: 4,41 de UTMOS frente a 4,52 de Kokoro-82M, y una tasa de error de palabra (WER) idéntica del 5,7 % en la evaluación del autor. En la Open TTS Leaderboard de Hugging Face, a fecha de 9 de octubre de 2026, ocupa el segundo puesto en WER en inglés (1,47 %), solo por detrás de Kokoro-82M (1,46 %), y lidera el benchmark de streaming en CPU con un RTFx de 11,48.
 
-El modelo habla una unica voz, `af_heart`, la misma del profesor, con pronunciacion de ingles americano. El grafo ONNX va directamente de identificadores de fonemas a forma de onda a 24 kHz e incorpora un filtro sin parametros que corrige la fase de los sonidos sonoros entre 2 y 8 kHz para eliminar un zumbido residual del decodificador pequeno. No es un modelo de lenguaje: no genera texto, razona ni llama a herramientas.
+Su relevancia actual radica en que demuestra que es posible comprimir un modelo TTS de 82M a 8M parámetros con una pérdida de calidad mínima, habilitando despliegues en navegador, dispositivos de borde y entornos sin GPU con latencias de primer audio de 390 ms.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TTS no autorregresiva derivada de Kokoro-82M (lado de texto + decodificador), exportada como grafo ONNX unico |
-| Parametros totales | 8,07 M (4,23 M lado de texto + 3,85 M decodificador) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 512 identificadores de fonemas como maximo, con un token de relleno `0` en cada extremo |
-| Tipos de cuantizacion | int8 (archivo ONNX, 9,0 MB) y fp32 (archivo ONNX, 37 MB) |
-| Idiomas soportados | en (ingles, pronunciacion americana) |
-| Licencia | apache-2.0 |
-| Formato de pesos | ONNX (`paradee_int8.onnx`, `paradee.onnx`), PyTorch (`text_side.pt`, `decoder.pt`), `config.json`, `tokenizer.json` |
+| Arquitectura | Kokoro a anchuras reducidas: lado de texto (4,23M) y decodificador (3,85M), con filtro de phase-locking |
+| Parametros totales | 8,07M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (entrada de hasta 512 tokens de fonemas, incluidos pads) |
+| Tipos de cuantizacion | int8 (9,0 MB) y fp32 (37 MB) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (int8 y fp32), PyTorch (.pt para las dos mitades) |
 | Frecuencia de muestreo | 24 kHz |
-| Entradas | `input_ids` (int64, `[1, T]`, ids de fonemas) y `speed` (float32, `[1]`, 1.0 = velocidad normal) |
-| Salida | `waveform` (float32, `[1, samples]`) |
-| Voces | una sola (`af_heart`, de Kokoro) |
-| Modelo base | hexgrad/Kokoro-82M |
-| Tamano del repositorio | 0,1 GB |
+| Voces | una sola (`af_heart` de Kokoro) |
+| Entradas | `input_ids` int64 [1, T] (fonemas con pad 0 en los extremos) y `speed` float32 [1] |
+| Salida | `waveform` float32 [1, samples] a 24 kHz |
 
 ## Arquitectura y entrenamiento
 
-Paradee reutiliza el codigo de Kokoro-82M reduciendo las anchuras de la red. La mitad de texto se entrena para predecir las duraciones de fonema, el tono, el volumen y las caracteristicas de fonema del profesor congelado; la mitad decodificadora aprende a convertir esos valores guardados del profesor en el audio del profesor, primero con perdidas de espectrograma y despues con entrenamiento adversario. Las dos mitades se unen sin entrenamiento adicional. El entrenamiento se hizo con 12.000 frases de WikiText-103 (23,9 horas de audio) leidas por Kokoro, y todo el proceso corrio en un unico MacBook Pro. No se menciona uso de RLHF ni DPO, algo que no aplica a un modelo de sintesis.
+Paradee reutiliza el código de Kokoro con anchuras menores: se divide en un lado de texto de 4,23M de parámetros y un decodificador de 3,85M. Ambas mitades se entrenaron por separado contra el profesor congelado (Kokoro-82M), sobre 12.000 frases de WikiText-103 (23,9 horas de audio) leídas por Kokoro. El lado de texto aprende a predecir las duraciones de fonema, el pitch y la energía del profesor, mientras que el decodificador genera la forma de onda. El grafo ONNX incluye un filtro de phase-locking que forma parte del modelo exportado.
 
-La innovacion tecnica destacable es un filtro sin parametros que corrige la fase del sonido sonoro entre 2 y 8 kHz (la fase es el desfase temporal de la onda de cada frecuencia). Sin el, el decodificador pequeno deja un zumbido perceptible en algunos sonidos sonoros. El grafo ONNX exportado incluye ya ese filtro, de modo que la salida es directamente la forma de onda final. Ademas, los fonemas deben escribirse tal y como los genera misaki, la libreria de grafema-a-fonema de Kokoro, porque es lo unico que vio el modelo durante el entrenamiento; en navegador, `web/misaki.js` traduce la notacion de eSpeak NG a la de misaki (sin esa conversion Whisper transcribe mal alrededor del 31% de las palabras, y con ella alrededor del 2%).
+El proceso es destilación pura, sin RLHF ni DPO. La innovación principal es la compresión extrema: mantiene la arquitectura y el vocabulario fonético de Kokoro, pero reduce las dimensiones internas hasta los 8M de parámetros. El resultado es un modelo que funciona en un único hilo de CPU y que puede ejecutarse en el navegador mediante ONNX Runtime o kokoro-js. Para el navegador, el autor proporciona `web/misaki.js`, que convierte la ortografía de eSpeak NG (usada por kokoro-js) a la notación de misaki, la librería G2P de Kokoro; sin esta conversión, Whisper transcribe mal aproximadamente el 31 % de las palabras, y con ella alrededor del 2 %.
 
 ## Capacidades
 
-- Sintesis de voz en ingles a partir de texto fonemizado, mono-voz (`af_heart`), a 24 kHz.
-- Conversion directa de fonemas a audio en un unico grafo ONNX, sin etapas intermedias de vocoder separadas.
-- Control de velocidad de habla mediante la entrada `speed` (1.0 = velocidad normal).
-- Inferencia en CPU sin GPU: aproximadamente 18 veces mas rapida que el tiempo real en un hilo con onnxruntime (int8).
-- Funcionamiento en navegador mediante `tokenizer.json` y la ruta de kokoro-js o transformers.js, con el conversor de notacion fonetica incluido.
-- Entrenamiento reproducible: el repositorio de GitHub incluye el codigo de entrenamiento y los pesos PyTorch de ambas mitades.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision, audio de entrada ni generacion de texto.
+- Síntesis de voz en inglés a partir de texto, con una única voz (`af_heart`).
+- Control de velocidad mediante el parámetro `speed` (1.0 es velocidad normal).
+- Fonemización compatible con misaki (la G2P de Kokoro); requiere entrada en formato de fonemas misaki.
+- Inferencia en CPU sin GPU, con un rendimiento de aproximadamente 18x tiempo real en un hilo de CPU (25x en la medición PyTorch del paper).
+- Exportación ONNX con grafo completo de fonemas a audio, apta para onnxruntime y navegador.
+- No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada.
+- No es multilingüe: solo inglés.
 
 ## Casos de uso
 
-- Lectores de pantalla y accesibilidad: el modelo ocupa 9 MB y funciona en CPU, por lo que puede integrarse en aplicaciones de escritorio o moviles que necesitan leer texto en voz alta sin depender de la nube ni de una GPU.
-- Asistentes de voz en dispositivos embebidos: con 8,07 M de parametros y una sola voz, cabe en Raspberry Pi, moviles o hardware IoT donde Kokoro-82M (325 MB) no es viable.
-- Interfaces web con sintesis local: mediante onnxruntime-web o kokoro-js el modelo puede generar voz en el navegador del usuario, evitando enviar texto a un servicio externo y reduciendo coste por peticion a cero.
-- Avisos y notificaciones de sistema: al correr 18 veces mas rapido que el tiempo real en un hilo de CPU, la latencia de generacion de frases cortas es lo bastante baja para notificaciones, alarmas y mensajes de estado.
-- Audiolibros y contenido largo generado por lotes: el bajo coste computacional permite sintetizar grandes volumenes de texto en servidores sin GPU, aunque la ventana de 512 identificadores de fonemas obliga a trocear el texto por frases.
-- Videojuegos y prototipos: una voz pequena y rapida sirve para doblar dialogos dinamicos o pregenerar lineas en pipelines de compilacion de assets sin sumar cientos de megas al paquete.
-- Aprendizaje de idiomas y material educativo: la pronunciacion americana del profesor se mantiene, y el control de velocidad (`speed`) permite generar versiones mas lentas para practica de escucha.
-- Telefonia e IVR: la sintesis en CPU encaja en centralitas o servicios de voz que necesitan muchas locuciones concurrentes y no disponen de acelerador.
+- Lectura por voz en el navegador: con el archivo ONNX int8 de 9 MB, el modelo puede cargarse en una página web y sintetizar texto sin backend, usando kokoro-js y el conversor `misaki.js` para la fonemización.
+- Asistentes de voz en dispositivos de borde: su ejecución en un solo hilo de CPU y su tamaño reducido permiten integrarlo en Raspberry Pi o dispositivos embebidos para respuestas habladas en tiempo real.
+- Generación de audiolibros y contenido largo: la velocidad de 18x tiempo real en CPU permite sintetizar horas de texto en minutos sin infraestructura GPU.
+- Accesibilidad: lectura de pantalla para personas con discapacidad visual en aplicaciones de escritorio o web, donde el coste de un modelo de 325 MB sería prohibitivo.
+- Sistemas de respuesta interactiva por voz (IVR): la latencia de primer audio de 390 ms en streaming CPU permite conversaciones fluidas en centros de llamadas con recursos limitados.
+- Pruebas y prototipado de pipelines TTS: al ser un modelo pequeño y con licencia Apache 2.0, sirve para validar integraciones de TTS antes de pasar a modelos mayores.
+- Síntesis por lotes en servidores sin GPU: el throughput de 11,5x tiempo real en streaming CPU permite procesar grandes volúmenes de texto en infraestructura convencional.
 
 ## Benchmarks y rendimiento
 
-Todos los numeros corresponden a 200 frases reservadas. La velocidad esta medida en un hilo de CPU de un Apple M4 Pro y se expresa como multiplo del tiempo real.
+Resultados del paper sobre 200 frases reservadas; velocidad medida en un hilo de CPU de Apple M4 Pro (PyTorch):
 
-| Modelo (voz) | Parametros | Tamano de archivo | Velocidad | UTMOS | WER |
+| Modelo (voz) | Params | Tamano | Velocidad | UTMOS | WER |
 |---|---:|---:|---:|---:|---:|
-| Kokoro-82M, profesor (`af_heart`) | 81,8 M | 325 MB | 7,6x | 4,52 | 5,7% |
-| Paradee (`af_heart`) | 8,07 M | 8,45 MB | 25,0x | 4,41 | 5,7% |
-| Kokoro-7M-Distill (`af_msa`) | 7,48 M | 30,1 MB | 35,5x | 4,18 | 7,4% |
-| Piper, en_US-lessac-medium | 15,7 M | 63,2 MB | 15,4x | 4,36 | 8,8% |
-| KittenTTS nano 0.8 (Bella) | 14,0 M | 56,8 MB | 10,7x | 4,01 | 5,5% |
+| Kokoro-82M, profesor (af_heart) | 81,8M | 325 MB | 7,6x | 4,52 | 5,7 % |
+| **Paradee (af_heart)** | **8,07M** | **8,45 MB** | **25,0x** | **4,41** | **5,7 %** |
+| Kokoro-7M-Distill (af_msa) | 7,48M | 30,1 MB | 35,5x | 4,18 | 7,4 % |
+| Piper, en_US-lessac-medium | 15,7M | 63,2 MB | 15,4x | 4,36 | 8,8 % |
+| KittenTTS nano 0.8 (Bella) | 14,0M | 56,8 MB | 10,7x | 4,01 | 5,5 % |
 
-UTMOS es una red neuronal entrenada con valoraciones humanas que predice la naturalidad de un fragmento en una escala de 1 a 5. El WER es la proporcion de palabras que Whisper (base) transcribe de forma incorrecta. La tabla procede del articulo y mide PyTorch; el archivo publicado `paradee_int8.onnx` obtiene un UTMOS de 4,41 en las mismas frases y corre aproximadamente 18 veces mas rapido que el tiempo real con onnxruntime en un hilo.
+El archivo `paradee_int8.onnx` publicado obtiene UTMOS 4,41 en las mismas frases y corre a aproximadamente 18x tiempo real en onnxruntime con un hilo.
+
+Open TTS Leaderboard de Hugging Face (a 9 de octubre de 2026):
+
+| Metrica | Resultado |
+|---|---|
+| WER en ingles (Seed TTS Eval / CV3 Eval) | 1,47 % (2.o puesto, tras Kokoro-82M con 1,46 %) |
+| Pareto front tamano vs. WER | En la frontera; ningun modelo de tamano comparable baja el WER |
+| RTFx en streaming CPU (batch 1, un hilo) | 11,48 (1.er puesto) |
+| Time-to-first-audio en streaming CPU | 390 ms de mediana (4.o puesto) |
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU. El modelo int8 ocupa 9,0 MB de pesos; la version fp32, 37 MB.
-- Memoria de sistema: el consumo es de decenas de megas, apto para dispositivos con RAM limitada y para ejecucion dentro de un navegador.
-- GPU recomendadas: ninguna. No se han publicado cifras de aceleracion en GPU para este modelo.
-- GPU de consumo: irrelevante, ya que el modelo esta pensado para CPU; cualquier GPU moderna no aportaria una ventaja proporcional.
-- CPU validada: Apple M4 Pro, un solo hilo, tanto en PyTorch (25,0x respecto al tiempo real) como en onnxruntime con int8 (18x).
-- Opciones de despliegue: onnxruntime (Python y C/C++), onnxruntime-web y transformers.js / kokoro-js en navegador, y el paquete Python propio (`pip install git+https://github.com/sahilmahendrakar/paradee`). vLLM, llama.cpp, Ollama y TGI no son aplicables: no es un modelo de lenguaje.
-- Latencia y rendimiento: 18x mas rapido que el tiempo real en un hilo de CPU con el archivo int8; 25,0x en PyTorch sobre el M4 Pro. Al no usar GPU, el rendimiento depende del numero de hilos asignados.
+- VRAM: no requiere GPU; el modelo int8 de 9 MB cabe en memoria RAM de cualquier dispositivo.
+- GPU recomendadas: no necesarias; funciona en CPU. En GPU puede ejecutarse con onnxruntime, pero el modelo está optimizado para CPU.
+- Cabe en cualquier GPU de consumo e incluso en dispositivos sin GPU; el límite práctico es la RAM disponible (unos pocos MB).
+- Opciones de despliegue: onnxruntime (Python), kokoro-js y ONNX Runtime Web en navegador, y el paquete Python `paradee` del repositorio del autor.
+- Latencia y throughput: aproximadamente 18x tiempo real en un hilo de CPU con onnxruntime; 25x en la medición PyTorch del paper; 11,48 de RTFx y 390 ms de TTFA en el benchmark de streaming CPU de la leaderboard.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto de entrada | Tamano | UTMOS | WER | Licencia | Disponibilidad |
-|---|---:|---|---:|---:|---:|---|---|
-| Paradee-8M v1.0 | 8,07 M | 512 ids de fonemas | 9,0 MB (int8) | 4,41 | 5,7% | Apache 2.0 | ONNX y PyTorch, en Hugging Face y GitHub |
-| Kokoro-82M | 81,8 M | no disponible | 325 MB | 4,52 | 5,7% | Apache 2.0 | ONNX y PyTorch, modelo profesor |
-| Kokoro-7M-Distill | 7,48 M | no disponible | 30,1 MB | 4,18 | 7,4% | no disponible en la informacion proporcionada | distilacion alternativa, voz `af_msa` |
-| Piper, en_US-lessac-medium | 15,7 M | no disponible | 63,2 MB | 4,36 | 8,8% | no disponible en la informacion proporcionada | ecosistema Piper |
-| KittenTTS nano 0.8 (Bella) | 14,0 M | no disponible | 56,8 MB | 4,01 | 5,5% | no disponible en la informacion proporcionada | no disponible |
+| Modelo | Params | Tamano | Velocidad (CPU) | UTMOS | WER | Licencia | Disponibilidad |
+|---|---:|---:|---:|---:|---:|---|---|
+| Paradee-8M-v1.0 | 8,07M | 8,45 MB | 25,0x (PyTorch) / ~18x (ONNX) | 4,41 | 5,7 % | Apache 2.0 | Hugging Face + GitHub |
+| Kokoro-82M | 81,8M | 325 MB | 7,6x | 4,52 | 5,7 % | Apache 2.0 | Hugging Face |
+| Kokoro-7M-Distill | 7,48M | 30,1 MB | 35,5x | 4,18 | 7,4 % | no disponible | Hugging Face |
+| Piper en_US-lessac-medium | 15,7M | 63,2 MB | 15,4x | 4,36 | 8,8 % | no disponible | Hugging Face / GitHub |
+| KittenTTS nano 0.8 | 14,0M | 56,8 MB | 10,7x | 4,01 | 5,5 % | no disponible | Hugging Face |
 
-Frente a Piper y KittenTTS, Paradee consigue mejor UTMOS con menos parametros y un archivo mas pequeno. Frente a Kokoro-7M-Distill, Paradee pierde en velocidad (25,0x frente a 35,5x) pero gana en naturalidad (4,41 frente a 4,18) y en WER (5,7% frente a 7,4%). Su desventaja estructural frente a todos ellos es que solo ofrece una voz y solo ingles.
+Paradee ofrece el mejor equilibrio entre tamaño, calidad y velocidad de su categoría: es el más pequeño de la comparativa, con un UTMOS solo 0,11 puntos por debajo de su profesor y un WER muy inferior al de Piper y Kokoro-7M-Distill.
 
 ## Limitaciones y advertencias
 
-- Solo ingles con pronunciacion americana y una unica voz (`af_heart`); no hay seleccion de hablante ni otros idiomas.
-- Los numeros, las abreviaturas y las palabras poco frecuentes se pronuncian solo tan bien como los resuelva misaki, la libreria de grafema-a-fonema.
-- Puede escucharse un zumbido leve en algunos sonidos sonoros, aunque mucho menor que sin el filtro de correccion de fase.
-- La entrada debe fonemizarse con la convencion de misaki; usar la notacion de eSpeak NG sin conversion dispara la tasa de error de transcripcion del 2% al 31%.
-- Limite duro de 512 identificadores de fonemas por inferencia, con token de relleno en ambos extremos; el texto largo debe trocearse.
-- No hay datos publicados sobre sesgos de la voz ni sobre el tratamiento de nombres propios o terminos tecnicos fuera del vocabulario de misaki.
-- Riesgo de artefactos acusticos y de pronunciacion incorrecta en texto fuera de dominio; las cifras de UTMOS y WER corresponden a 200 frases reservadas de WikiText-103, no a un uso general.
-- La licencia Apache 2.0 permite uso comercial, la misma que el modelo base, pero conviene verificar las condiciones de las dependencias (misaki, eSpeak NG) antes de desplegar.
-- El numero de descargas y de likes registrados es cero, y el repositorio ocupa 0,1 GB; se trata de una publicacion reciente y sin validacion independiente fuera de las cifras del autor.
+- Solo habla inglés; no soporta otros idiomas.
+- Una única voz (`af_heart`); no permite cambiar de hablante sin reentrenar.
+- La entrada debe estar fonemizada según misaki; usar otra G2P sin conversión degrada gravemente la inteligibilidad (hasta un 31 % de palabras mal transcritas con eSpeak NG directo).
+- Límite de 512 tokens de fonemas por inferencia, incluidos los pads de inicio y fin.
+- Riesgo de alucinación acústica en textos fuera de dominio: el modelo se entrenó con 12.000 frases de WikiText-103, por lo que puede fallar en dominios muy alejados (números, siglas, nombres propios).
+- No se han publicado análisis de sesgos; al derivar de Kokoro y de una única voz, puede heredar sesgos prosódicos del profesor.
+- Licencia Apache 2.0, que permite uso comercial, pero conviene verificar las condiciones del modelo base Kokoro-82M y de los datos de entrenamiento.
+- El rendimiento medido en la leaderboard y en el paper corresponde a hardware concreto (Apple M4 Pro); en CPUs más lentas el throughput y la latencia variarán.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0
-- Codigo, entrenamiento y paquete Python: https://github.com/sahilmahendrakar/paradee
-- Conversor de notacion fonetica para navegador: https://github.com/sahilmahendrakar/paradee/blob/main/web/misaki.js
+- Paper: https://huggingface.co/papers/2610.06817
+- Repositorio de código, entrenamiento y paquete Python: https://github.com/sahilmahendrakar/paradee
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
-- Libreria de grafema-a-fonema misaki: https://github.com/hexgrad/misaki
-- Perfil del autor en GitHub: https://github.com/sahilmahendrakar
-- Cita del autor: Mahendrakar, Sahil (2026), "Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model", https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0
+- Librería misaki (G2P de Kokoro): https://github.com/hexgrad/misaki
+- Open TTS Leaderboard: https://huggingface.co/spaces/hf-audio/open_tts_leaderboard
+- Seed TTS Eval: https://github.com/BytedanceSpeech/seed-tts-eval
+- CV3 Eval: https://github.com/QwenAudio/CV3-Eval

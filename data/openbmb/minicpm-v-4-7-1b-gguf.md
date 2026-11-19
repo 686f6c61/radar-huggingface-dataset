@@ -1,101 +1,95 @@
 # openbmb/MiniCPM-V-4.7-1B-gguf
 
 ## Resumen
-MiniCPM-V-4.7-1B-gguf es la distribucion cuantizada en formato GGUF (llama.cpp) del modelo multimodal MiniCPM-V-4.7-1B, desarrollado por OpenBMB. Se trata de un modelo de vision-lenguaje de aproximadamente 1.000 millones de parametros nominales (la variante "1B" de la familia), publicado bajo licencia Apache 2.0 y orientado explicitamente a inferencia en dispositivo ("on-device"). El repositorio no contiene pesos nuevos: aloja las conversiones cuantizadas del modelo base `openbmb/MiniCPM-V-4.7-1B`, con un tamano de repositorio de 33,8 GB que refleja la coexistencia de multiples niveles de cuantizacion.
 
-El modelo resuelve el problema de ejecutar comprension de imagen y video con un presupuesto computacional muy reducido. Combinando un encoder visual SigLIP con compresion temprana intra-ViT (tecnica heredada de LLaVA-UHD v4) y un backbone de lenguaje Qwen3.5, ofrece modos de compresion de tokens visuales de 4x y 16x que permiten al desarrollador intercambiar detalle visual por coste de inferencia. Segun la model card, la variante 1B en modo Instruct mejora las capacidades base respecto a MiniCPM-V 4.6 y supera de forma sustancial a Qwen3.5 0.8B tanto en puntuacion global como en eficiencia de inferencia.
+MiniCPM-V 4.7 1B es un modelo multimodal (imagen-texto-a-texto) desarrollado por OpenBMB, la organizacion detrás de la familia MiniCPM. Esta ficha cubre concretamente la version cuantizada en GGUF para llama.cpp del modelo base de 1B parametros, publicada en el repositorio openbmb/MiniCPM-V-4.7-1B-gguf. El modelo resuelve el problema de dotar a dispositivos con recursos limitados de capacidad de comprension de imagen unica, multiples imagenes y video, manteniendo un coste de inferencia muy bajo.
 
-Su relevancia actual radica en el soporte de despliegue amplio (iOS, Android, HarmonyOS, y plataformas de chip de Rockchip, Houmo, Intel, AMD y Arm con soporte desde el dia 0) y en la compatibilidad con los marcos mas habituales (SGLang, vLLM, llama.cpp, Ollama, OpenVINO), ademas de variantes cuantizadas GGUF, BNB, AWQ, GPTQ y FP8. La fecha de publicacion indicada en las fuentes de busqueda es el 12 de octubre de 2026.
+La relevancia actual del modelo radica en su relacion rendimiento-eficiencia: segun el autor, en modo Instruct supera de forma sustancial a Qwen3.5 0.8B tanto en puntuacion global como en eficiencia de inferencia. Incorpora compresion temprana de tokens visuales dentro del codificador visual (tecnica intra-ViT de LLaVA-UHD v4) y soporte de compresion mixta 4x/16x de tokens visuales, lo que permite ajustar el detalle visual frente al coste computacional.
+
+El repositorio GGUF ofrece dos conjuntos de archivos con pesos identicos que solo difieren en la plantilla de chat embebida: los de la raiz desactivan el modo thinking de forma fija (recomendado, ya que el modelo no esta entrenado como modelo de razonamiento) y los de la carpeta thinking/ restauran la plantilla original que emite una traza [Start thinking]...[End thinking]. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder visual SigLIP con merger de ventana (window-attention) + backbone de lenguaje Qwen3.5; transformer multimodal con compresion intra-ViT temprana |
-| Parametros totales | 1.006.209.856 segun el recuento de safetensors de Hugging Face; la fuente datalearner indica 1.554.476.272 parametros contando el peso completo y la grafica oficial de evaluacion etiqueta 1,3B. La denominacion comercial es "1B" |
-| Parametros activos | No aplica (no es MoE; la variante MoE de la serie es 35B-A3B, distinta de este modelo) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF (este repositorio); la serie ofrece ademas BNB, AWQ, GPTQ y FP8 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer multimodal (codificador visual con compresion intra-ViT temprana + LLM); detalles completos no disponibles |
+| Parametros totales | 1.006.209.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_1, Q5_0, Q4_K_M, Q4_K_S, Q4_1, Q4_0, IQ4_NL, IQ4_XS, IQ3_M, IQ3_XS; tambien BNB, AWQ, GPTQ y FP8 en el ecosistema del modelo base |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo actual); pesos originales en safetensors BF16 en el modelo base |
+| Formato de pesos | GGUF (llama.cpp); pesos originales BF16 en el modelo base |
 
 ## Arquitectura y entrenamiento
-La arquitectura sigue el esquema multimodal de la serie MiniCPM-V: un encoder visual SigLIP provisto de un merger con atencion de ventana, acoplado a un backbone de lenguaje Qwen3.5. La innovacion principal es la compresion temprana de tokens visuales dentro del propio ViT (intra-ViT early compression), tomada de LLaVA-UHD v4, que reduce el computo en las capas posteriores del encoder. El modelo admite dos modos de compresion de tokens visuales, 4x y 16x, lo que permite ajustar el equilibrio entre detalle visual y coste por tarea.
 
-El modelo acepta entradas de texto, imagen unica, multiples imagenes y video, y produce salida de texto. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO, por lo que esos datos no estan disponibles. OpenBMB si documenta dos mecanismos asociados: el decodificado especulativo DSpark, con un modelo borrador dedicado (`MiniCPM-V-4.7-1B-DSpark`), y una tecnica de ajuste fino denominada Self-Replay Fine-Tuning, orientada a extender capacidades del modelo con coste bajo y menor olvido catastrofico.
+MiniCPM-V 4.7 es un modelo multimodal que combina un codificador visual con un modelo de lenguaje. La innovacion arquitectonica destacada es la compresion temprana de tokens visuales dentro del propio ViT (intra-ViT early compression, heredada de LLaVA-UHD v4), que reduce el computo en las capas posteriores del codificador. Ademas, soporta compresion mixta de tokens visuales 4x/16x, lo que permite al desarrollador equilibrar el detalle visual y el coste de inferencia segun la tarea.
+
+El modelo base se distribuye con variantes cuantizadas BNB, AWQ y GPTQ y anade soporte de cuantizacion FP8. OpenBMB publica ademas Self-Replay Fine-Tuning (SRFT), un metodo de ajuste fino de bajo coste orientado a extender capacidades reduciendo el olvido de las existentes. No se dispone en la informacion proporcionada de datos sobre numero de tokens de entrenamiento, composicion del dataset ni uso de RLHF/DPO. La version GGUF incorpora tecnicas de cuantizacion con imatrix y soporte de decodificacion especulativa (etiquetas dspark y speculative-decoding), con un repositorio complementario DSpark-gguf.
 
 ## Capacidades
-- Comprension de imagen unica, multiples imagenes y video, con salida de texto.
-- Generacion de texto conversacional en pipeline `image-text-to-text`.
-- Dos modos de compresion de tokens visuales (4x y 16x) seleccionables por tarea.
-- Decodificado especulativo mediante el modelo borrador DSpark (5x de mejora reportada en decodificado con offload a SSD en iPad Pro M4 de 16 GB, segun la fuente aicoder).
-- Cuantizacion multiple: GGUF, BNB, AWQ, GPTQ y FP8.
-- Despliegue en iOS, Android y HarmonyOS, con soporte de plataformas de chip de Rockchip, Houmo, Intel, AMD y Arm.
-- Soporte de los frameworks de inferencia SGLang, vLLM, llama.cpp, Ollama y OpenVINO.
-- Soporte de ajuste fino mediante SWIFT y LLaMA-Factory.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Soporte explicito de tool calling o function calling: no disponible en la informacion proporcionada.
-- Modo de razonamiento "thinking": no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponibles (el repositorio hermano MiniCPM-o cubre ese terreno, pero no se detalla para este modelo).
+
+- Comprension de imagen unica, multiples imagenes y video (image-text-to-text).
+- Generacion de texto conversacional a partir de entradas visuales.
+- Modo thinking opcional mediante los archivos de la carpeta thinking/, que emiten una traza de razonamiento entre [Start thinking] y [End thinking]; desactivado por defecto en los archivos de la raiz.
+- Compresion configurable de tokens visuales (4x/16x) para ajustar detalle y coste.
+- Despliegue en iOS, Android y HarmonyOS, con soporte dia 0 para plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm.
+- Integracion con frameworks de inferencia SGLang, vLLM, llama.cpp y Ollama, y de ajuste fino SWIFT y LLaMA-Factory.
+- API compatible con OpenAI a traves de llama serve (puerto 9931).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de codigo, matematicas o audio: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
-- Asistente visual en movil: al ejecutarse en iOS, Android y HarmonyOS con cuantizacion GGUF y ~1B de parametros, permite describir fotos, leer carteles o responder preguntas sobre la camara sin enviar datos a la nube.
-- Accesibilidad para personas con discapacidad visual: con el modo de compresion 16x se puede mantener una latencia baja para narrar el entorno en tiempo real desde la camara del telefono.
-- Revision de documentos y capturas de pantalla: el modelo procesa imagen unica y multiples imagenes, por lo que puede extraer y resumir informacion de formularios, recibos o capturas encadenadas.
-- Moderacion de contenido visual en el borde: al ser ligero y desplegable en NPU de Intel, AMD o Arm, puede filtrar imagenes en el propio dispositivo antes de subirlas a un servicio.
-- Analisis de video corto en local: la entrada de video junto con la compresion 4x permite resumir clips o detectar eventos sin infraestructura de GPU dedicada.
-- Prototipado rapido con llama.cpp u Ollama: la disponibilidad inmediata del GGUF facilita pruebas en portatiles sin GPU discreta y su integracion en scripts de desarrollo.
-- Ajuste fino especifico de dominio: gracias a Self-Replay Fine-Tuning y al soporte de SWIFT y LLaMA-Factory, se puede especializar el modelo en un vertical (por ejemplo, inspeccion industrial) con coste reducido.
-- Despliegue en entornos industriales embebidos: el soporte declarado para Rockchip y Houmo habilita su uso en placas de bajo consumo sin conexion.
+
+- Descripcion y etiquetado de imagenes en local: el modelo puede procesar una imagen y generar una descripcion textual en un portatil o dispositivo movil, sin conexion, gracias a su tamano de 1B parametros y a las cuantizaciones Q4/IQ disponibles.
+- Asistencia visual en aplicaciones moviles: integrable en apps iOS, Android y HarmonyOS para tareas de comprension de capturas o fotos, con compresion 16x de tokens visuales cuando la latencia prima sobre el detalle.
+- Analisis de documentos y capturas multi-imagen: la capacidad de multiples imagenes permite comparar o resumir varias imagenes en una misma conversacion, util para revision de formularios o paneles.
+- Resumen de video en dispositivos de borde: el soporte de video y el despliegue en plataformas Rockchip, Arm o Intel permiten prototipos de analisis de video en hardware de bajo consumo.
+- Prototipado rapido con llama.cpp: mediante llama cli -hf openbmb/MiniCPM-V-4.7-1B-gguf se descarga el modelo y el mmproj correspondiente de forma automatica, ideal para validar ideas sin infraestructura GPU dedicada.
+- Servicio local con API compatible OpenAI: llama serve expone un WebUI y una API en el puerto 9931, lo que permite integrar el modelo en pipelines existentes que ya consumen la API de OpenAI.
+- Ajuste fino especifico de dominio: con SWIFT o LLaMA-Factory y el metodo SRFT se puede adaptar el modelo a tareas concretas a bajo coste, reduciendo el olvido de capacidades previas.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card incluye graficas de rendimiento global y de frontera rendimiento-eficiencia para la variante 1B en modo Instruct, pero los valores concretos no se reproducen en el texto disponible. Se afirma cualitativamente que la variante 1B supera de forma sustancial a Qwen3.5 0.8B en puntuacion global y en eficiencia de inferencia, y que mejora las capacidades base de MiniCPM-V 4.6, sin cifras asociadas.
 
-Como unico dato cuantitativo de rendimiento disponible, la fuente aicoder reporta que, en el escenario de decodificado con offload a SSD sobre un iPad Pro M4 con 16 GB, el uso conjunto de Lookahead Expert Scheduling, cuantizacion de precision mixta por capas y muestreo especulativo DSpark eleva el rendimiento de 2,97 a 17,39 tokens/s (aproximadamente 5,8x). Este dato corresponde a una configuracion de la familia y no necesariamente a este repositorio GGUF concreto.
+No se han publicado resultados de benchmarks numericos en la informacion disponible. El autor afirma cualitativamente que la variante 1B, en modo Instruct, mejora las capacidades base respecto a MiniCPM-V 4.6 y supera de forma sustancial a Qwen3.5 0.8B en puntuacion global y eficiencia de inferencia, pero no se proporcionan cifras concretas (MMLU, HumanEval, GSM8K u otras) en la informacion facilitada.
 
 ## Requisitos de hardware
-Las cifras de VRAM que siguen son estimaciones derivadas del recuento de parametros, no datos publicados por el autor.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 0,6-0,8 GB para los pesos, mas la memoria del encoder visual y del contexto.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 1,1-1,3 GB.
-- VRAM estimada en precision completa (BF16): en torno a 2,0-3,1 GB segun se tome el recuento de 1,0B o el de 1,55B parametros.
-- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y cualquier GPU con 4 GB o mas de VRAM.
-- Tambien es viable en CPU, NPU y GPU integradas de Intel, AMD y Arm, y en plataformas moviles iOS, Android y HarmonyOS.
-- Opciones de despliegue documentadas: SGLang, vLLM, llama.cpp, Ollama y OpenVINO; el formato de este repositorio es GGUF, por lo que llama.cpp y Ollama son las vias directas.
-- Decodificado especulativo disponible mediante el modelo borrador `MiniCPM-V-4.7-1B-DSpark`.
-- Latencia y throughput concretos para este repositorio: no disponibles. El unico dato publicado es el ya citado de 17,39 tokens/s en iPad Pro M4 con offload a SSD y decodificado especulativo.
+
+- VRAM estimada: con 1.006 millones de parametros, una cuantizacion Q4_K_M ocupa del orden de 0,6-0,7 GB para los pesos del LLM; el mmproj F16 anade un consumo adicional no especificado. En la practica, el modelo cabe holgadamente en GPUs consumer y en memoria unificada de dispositivos moviles.
+- GPU recomendadas: no se especifican modelos concretos; el enfoque del modelo es el despliegue en dispositivo (movil, borde) y en GPUs consumer de gama baja. Para servidor, cualquier GPU con unos pocos GB de VRAM es suficiente en cuantizaciones bajas.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna, asi como en CPU via llama.cpp.
+- Opciones de despliegue: llama.cpp (llama cli, llama serve, llama-mtmd-cli, llama-server), Ollama, vLLM, SGLang; la app de escritorio Llama (macOS/Windows) permite su uso con un clic. En el ecosistema del modelo base tambien hay soporte de chips Rockchip, Houmo, Intel, AMD y Arm.
+- Latencia y throughput: no disponibles en la informacion proporcionada. La compresion 16x de tokens visuales reduce el coste de inferencia frente a 4x, y el modo thinking multiplica el numero de tokens generados (el autor recomienda aumentar -n).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 1B (este modelo, GGUF) | ~1,0B (nominal 1B) | No disponible | Apache 2.0 | GGUF, BNB, AWQ, GPTQ, FP8 | Multimodal imagen y video, on-device |
-| Qwen3.5 0.8B | 0,8B | No disponible | No disponible | No disponible | La model card afirma que el 1B lo supera en puntuacion global y eficiencia |
-| MiniCPM-V 4.6 | 1,3B | No disponible | No disponible | No disponible | Generacion anterior de la misma serie; el 4.7 1B mejora sus capacidades base |
-| MiniCPM-V 4.7 35B-A3B | 35B totales, 3B activos (MoE) | No disponible | Apache 2.0 | No disponible | Variante MoE de la misma familia, no comparable en presupuesto de recursos |
+| MiniCPM-V 4.7 1B | 1.006 M | no disponible | Segun el autor, supera a Qwen3.5 0.8B en puntuacion global y eficiencia (sin cifras) | Apache 2.0 | GGUF, BNB, AWQ, GPTQ, FP8; HF y llama.cpp |
+| MiniCPM-V 4.6 | no disponible | no disponible | Inferior al 4.7 1B en capacidades base segun el autor | no disponible | no disponible |
+| Qwen3.5 0.8B | 0,8 B (aprox.) | no disponible | Referencia de comparacion del autor; inferior al 4.7 1B segun este | no disponible | no disponible |
+
+Los datos de MiniCPM-V 4.6 y Qwen3.5 0.8B no se detallan en la informacion proporcionada mas alla de la comparacion cualitativa del autor.
 
 ## Limitaciones y advertencias
-- El modelo tiene ~1B de parametros: su techo de razonamiento, conocimiento factual y seguimiento de instrucciones complejas es previsiblemente inferior al de modelos multimodales de mayor tamano.
-- Riesgo de alucinacion no cuantificado en la informacion disponible; en tareas de lectura de imagenes o documentos conviene validar la salida.
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- Idiomas soportados: no especificados, lo que impide garantizar un rendimiento homogeneo fuera del ingles y el chino.
-- Longitud de contexto: no disponible, lo que dificulta planificar cargas con historiales largos o videos extensos.
-- La licencia Apache 2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar los terminos del modelo base y de los componentes de terceros (encoder SigLIP, backbone Qwen3.5).
-- Existe una discrepancia en el recuento de parametros entre la cifra de safetensors de Hugging Face (1,006B), la oficial de evaluacion (1,3B) y la de datalearner (1,554B); hay que tenerlo en cuenta al dimensionar hardware o comparar metricas.
-- El tamano de repositorio de 33,8 GB no debe confundirse con el tamano del modelo en ejecucion: agrupa varias cuantizaciones.
-- Para video, la decodificacion depende de `torchcodec`, que puede presentar incompatibilidades con determinadas versiones de CUDA (por ejemplo, `torch>=2.11` con CUDA 13.1 frente a entornos CUDA 12.x).
-- La fecha de publicacion declarada (octubre de 2026) situa el modelo en un horizonte temporal posterior a la mayoria de referencias publicas, por lo que la verificacion independiente de resultados es limitada.
+
+- El modelo no esta entrenado como modelo de razonamiento: el modo thinking esta desactivado por defecto en los archivos de la raiz y su activacion puede generar trazas poco fiables y multiplicar el consumo de tokens.
+- Riesgo de alucinacion inherente a los modelos de lenguaje de 1B parametros; no se han publicado tasas de error en la informacion disponible.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Idiomas soportados: no disponibles; conviene validar el rendimiento en castellano antes de usarlo en produccion.
+- Longitud de contexto: no disponible; planificar las aplicaciones con margen y verificar experimentalmente.
+- La licencia Apache 2.0 permite uso comercial, pero debe conservarse el aviso de licencia y atribucion correspondiente.
+- Los pesos de la raiz y de thinking/ son identicos; elegir el conjunto equivocado cambia el comportamiento de la plantilla de chat. En los archivos de la raiz, --reasoning off no tiene efecto porque la plantilla fija enable_thinking.
+- El repositorio ocupa 61,1 GB por incluir todas las cuantizaciones; descargar solo el archivo necesario y el mmproj compartido.
 
 ## Enlaces
+
 - Repositorio GGUF: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf
-- Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
-- Documentacion en Transformers: https://huggingface.co/docs/transformers/main/model_doc/minicpmv4_7
-- Repositorio GitHub de MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
-- Repositorio GitHub de MiniCPM-o (documentacion 4.7): https://github.com/OpenBMB/MiniCPM-o
-- Documentacion de despliegue: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md
-- Documentacion de API: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/api.md
-- Cookbook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Demo en vivo: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.7-Demo
-- LLaVA-UHD v4 (tecnica de compresion intra-ViT): https://github.com/THUMAI-Lab/LLaVA-UHD-v4
-- Noticia sobre el lanzamiento: https://aicoder.com/news/news-20261013-openbmb-minicpm-v-4-7-35b-a3b-on-device-moe
-- Ficha con especificaciones y evaluacion: https://www.datalearner.com/ai-models/pretrained-models/minicpm-v-4-7-1b
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
+- Repositorio DSpark-gguf: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-DSpark-gguf
+- GitHub de MiniCPM-V: https://github.com/openbmb/MiniCPM-V
+- Documentacion del modelo en GitHub: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md
+- Guia de despliegue: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md
+- LLaVA-UHD v4 (tecnica de compresion visual): https://github.com/THUMAI-Lab/LLaVA-UHD-v4
+- Blog de Self-Replay Fine-Tuning: https://openbmb.cn/en/blog/self-replay-fine-tuning
+- App Llama (llama.cpp + Hugging Face): https://llama.app

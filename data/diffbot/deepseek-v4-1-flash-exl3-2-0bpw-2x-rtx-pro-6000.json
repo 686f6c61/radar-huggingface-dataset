@@ -52,31 +52,5 @@
   "renamed_to": "diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000",
   "renamed_at": "2026-11-11T05:03:20.613Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bing",
-      "url": "https://www.bing.com/RelatedSearch",
-      "snippet": ""
-    },
-    {
-      "title": "deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash",
-      "snippet": "DeepSeek V4 MoE model with hybrid CSA+HCA attention, manifold-constrained hyper-connections, and three-tier reasoning (Non-think / Think High / Think Max)."
-    },
-    {
-      "title": "r/LocalLLaMA on Reddit: Follow-up: DeepSeek V4 Flash on 2x RTX PRO 6000 finishes real coding tasks faster than Sonnet and Opus, at about Sonnet quality",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1um84bd/followup_deepseek_v4_flash_on_2x_rtx_pro_6000/",
-      "snippet": ""
-    },
-    {
-      "title": "Search - Microsoft Bing",
-      "url": "https://www.bing.com/",
-      "snippet": "Decades later, we’re finally learning what happens when they leak. Search with Microsoft Bing and use the power of AI to find …"
-    },
-    {
-      "title": "Microsoft Edge Add-ons",
-      "url": "https://microsoftedge.microsoft.com/addons/search/bing+related+search+version",
-      "snippet": "Make Microsoft Edge your own with extensions that help you personalize the browser and be more productive."
-    }
-  ]
+  "sources": []
 }

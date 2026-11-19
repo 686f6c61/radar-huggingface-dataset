@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Dhevenddra/geetha-tts",
+  "slug": "dhevenddra-geetha-tts",
+  "author": "Dhevenddra",
+  "url": "https://huggingface.co/Dhevenddra/geetha-tts",
+  "created_at": "2026-11-16T16:26:55.000Z",
+  "updated_at": "2026-11-17T07:53:19.000Z",
+  "license": "indic-open-model-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "ta"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tamil",
+    "tts",
+    "lora",
+    "snac",
+    "text-to-speech",
+    "ta",
+    "base_model:bodhan-ai/indic-speak",
+    "base_model:adapter:bodhan-ai/indic-speak",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 726434486,
+  "storage_human": "726 MB",
+  "context_length": null,
+  "base_model": "bodhan-ai/indic-speak",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

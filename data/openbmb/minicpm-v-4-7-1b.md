@@ -2,111 +2,99 @@
 
 ## Resumen
 
-MiniCPM-V 4.7 1B es un modelo multimodal de tipo image-text-to-text desarrollado por OpenBMB, la variante de 1B parámetros de la última iteración de la familia MiniCPM-V. Con 1.554.476.272 parámetros (≈1,55B) y un repositorio de 3,3 GB, está orientado a inferencia en dispositivo (on-device) en móviles, tabletas y plataformas embebidas, y se distribuye bajo licencia Apache 2.0.
+MiniCPM-V 4.7 1B es un modelo multimodal de tipo image-text-to-text desarrollado por OpenBMB, orientado a inferencia en dispositivo (on-device). Con 1.554.476.272 parámetros totales y un repositorio de 3,3 GB, se posiciona como la variante ligera de la familia MiniCPM-V 4.7, manteniendo las capacidades de comprensión de imagen única, múltiples imágenes y vídeo de la saga. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
-El modelo se construye sobre un codificador visual SigLIP2-400M y el LLM Qwen3.5-0.8B, y hereda las capacidades de comprensión de imagen única, múltiples imágenes y vídeo de la familia MiniCPM-V. Su propuesta central es la densidad de capacidad: según el autor, en modo Instruct mejora las capacidades base respecto a MiniCPM-V 4.6 y supera sustancialmente a Qwen3.5 0.8B tanto en puntuación global como en eficiencia de inferencia, con soporte de compresión mixta de tokens visuales 4x/16x para ajustar el coste por tarea.
+El modelo incorpora una arquitectura de codificación visual eficiente basada en la compresión temprana intra-ViT de LLaVA-UHD v4, que reduce el cómputo en las capas posteriores del encoder visual. Además, soporta compresión mixta de tokens visuales 4x/16x, lo que permite ajustar el equilibrio entre detalle visual y coste de inferencia según la tarea. Está pensado para ejecutarse en iOS, Android y HarmonyOS, con soporte day-0 para plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm.
 
-Es relevante porque amplía las opciones de despliegue local y en el borde: soporte declarado para iOS, Android y HarmonyOS, soporte day-0 de chips de Rockchip, Houmo, Intel, AMD y Arm, e integración con SGLang, vLLM, llama.cpp y Ollama. La publicación es muy reciente (creado el 6 de octubre de 2026, actualizado el 12 de octubre de 2026) y con adopción todavía limitada: 14 descargas y 16 likes en Hugging Face.
+Su relevancia actual radica en la densidad de capacidades por recurso: según la model card, en modo Instruct supera sustancialmente a Qwen3.5 0.8B tanto en puntuación global como en eficiencia de inferencia, lo que lo convierte en una opción atractiva para despliegues en móviles, tablets y dispositivos de borde con presupuesto de cómputo limitado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MLLM (transformador multimodal): codificador visual SigLIP2-400M + LLM Qwen3.5-0.8B; etiqueta de arquitectura en el repo: `minicpmv4_7` |
-| Parametros totales | 1.554.476.272 (≈1,55B) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF, BNB, AWQ, GPTQ y FP8 (variantes publicadas por el autor) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer multimodal con encoder visual basado en intra-ViT early compression (LLaVA-UHD v4) y compresión mixta de tokens visuales 4x/16x |
+| Parametros totales | 1.554.476.272 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF, BNB, AWQ, GPTQ, FP8 |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (pesos principales); variantes cuantizadas en GGUF, AWQ, GPTQ, BNB y FP8 |
-| Modalidades de entrada | texto e imagen (image-text-to-text); soporta imagen única, múltiples imágenes y vídeo |
-| Libreria | transformers (requiere `transformers[torch]>=5.18.0`) |
-| Tamano del repositorio | 3,3 GB |
-| Despliegue soportado | SGLang, vLLM, llama.cpp, Ollama, OpenVINO GenAI; on-device en iOS, Android y HarmonyOS |
-| Fine-tuning soportado | SWIFT y LLaMA-Factory; metodo Self-Replay Fine-Tuning |
+| Formato de pesos | Safetensors (transformers), GGUF, BNB, AWQ, GPTQ |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM-V 4.7 1B es un modelo multimodal denso que combina un codificador visual SigLIP2-400M con el LLM Qwen3.5-0.8B. La innovación arquitectónica destacada es la compresión temprana de tokens visuales dentro del propio ViT (intra-ViT early compression), técnica procedente de LLaVA-UHD v4: los tokens visuales se comprimen en las primeras capas del codificador, reduciendo el cómputo de las capas posteriores del encoder y, por extensión, del resto del pipeline. Además, el modelo admite compresión mixta de tokens visuales 4x/16x, lo que permite al desarrollador elegir entre mayor detalle visual o menor coste de inferencia según la tarea.
+MiniCPM-V 4.7 1B es un modelo multimodal construido sobre un transformer con un encoder visual que aplica compresión temprana de tokens intra-ViT: los tokens visuales se comprimen dentro del propio encoder, reduciendo el cómputo en las capas posteriores. Adicionalmente, soporta compresión mixta de tokens visuales 4x/16x, un mecanismo que permite al desarrollador elegir entre mayor detalle visual (4x) o menor coste de inferencia (16x) según la tarea. Esta arquitectura deriva de la técnica presentada en LLaVA-UHD v4.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. El autor sí documenta un método de ajuste fino propio, Self-Replay Fine-Tuning, orientado a extender capacidades del modelo a bajo coste y a reducir el olvido catastrófico de las capacidades previas durante la personalización.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La model card menciona la publicación de Self-Replay Fine-Tuning (SRFT), un enfoque de fine-tuning que ayuda a extender capacidades del modelo a bajo coste reduciendo el olvido de capacidades existentes, pero no detalla el proceso de entrenamiento original.
 
 ## Capacidades
 
-- Comprensión de imagen única (single-image understanding) para descripción, pregunta-respuesta visual y análisis de contenido gráfico.
-- Comprensión de múltiples imágenes dentro de una misma conversación, lo que permite comparaciones y razonamiento cruzado entre varias entradas visuales.
-- Comprensión de vídeo, en línea con la familia MiniCPM-V.
-- Generación de texto conversacional multimodal (tag `conversational`), con diálogo multi-turno sobre contenido visual.
-- Control del coste de inferencia mediante compresión mixta de tokens visuales 4x/16x, seleccionable por tarea.
-- Ejecución en dispositivo: soporte de iOS, Android y HarmonyOS, y soporte day-0 de plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm.
-- Compatibilidad con frameworks de inferencia y servicio: SGLang, vLLM, llama.cpp, Ollama y OpenVINO GenAI.
-- Personalización mediante fine-tuning con SWIFT y LLaMA-Factory, incluido el método Self-Replay Fine-Tuning del autor.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking o razonamiento explícito: no disponible en la información proporcionada.
+- Comprensión de imagen única, múltiples imágenes y vídeo.
+- Generación de texto condicionada a entrada visual (image-text-to-text).
+- Modo Instruct con capacidades de instrucción mejoradas respecto a MiniCPM-V 4.6.
+- Compresión configurable de tokens visuales (4x/16x) para equilibrar detalle y coste.
+- Despliegue en dispositivos móviles: iOS, Android y HarmonyOS.
+- Soporte de frameworks de inferencia: SGLang, vLLM, llama.cpp y Ollama.
+- Soporte de fine-tuning: SWIFT y LLaMA-Factory.
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- Capacidades conversacionales multi-turno.
+- No se especifica soporte de tool calling, function calling ni agentes multi-paso en la información disponible.
+- No se especifican capacidades de audio ni thinking mode en la información disponible.
 
 ## Casos de uso
 
-- Asistente visual en aplicaciones móviles: al ser un modelo de 1,55B con soporte nativo para iOS, Android y HarmonyOS, puede integrarse en una app que describa, clasifique o responda preguntas sobre fotos tomadas por el usuario sin enviar la imagen a un servidor.
-- Accesibilidad para personas con discapacidad visual: el modelo puede generar descripciones textuales de imágenes capturadas con la cámara del teléfono, y la compresión 4x/16x permite priorizar latencia baja en descripciones rápidas o detalle en escenas complejas.
-- Análisis de vídeo en el borde: para vigilancia doméstica, revisión de grabaciones o resumen de clips, evitando transmitir vídeo a la nube y reduciendo el coste de ancho de banda y las obligaciones de privacidad.
-- Procesamiento de documentos con múltiples páginas o imágenes: comparación y extracción de información a partir de capturas o fotografías de documentos en escenarios de digitalización en campo, donde no hay conectividad fiable.
-- Robótica y sistemas embebidos: el soporte day-0 de plataformas de chips como Rockchip, Houmo, Intel, AMD y Arm facilita desplegar el modelo como componente de percepción visual en robots y dispositivos industriales con presupuesto de cómputo reducido.
-- Control de calidad visual en producción: análisis automatizado de fotografías de producto en línea de fabricación, usando compresión 16x para el cribado rápido y 4x para la inspección detallada de las piezas dudosas.
-- Prototipado e iteración rápida con fine-tuning: mediante SWIFT o LLaMA-Factory y Self-Replay Fine-Tuning, un equipo puede adaptar el modelo a un dominio visual concreto (por ejemplo, catálogo propio o terminología interna) sin reentrenar desde cero y limitando el olvido de capacidades generales.
-- Servicio de inferencia multimodal autogestionado: despliegue con vLLM, SGLang, llama.cpp u Ollama para ofrecer una API interna de imagen-a-texto con coste por consulta muy bajo.
+- Asistencia visual en movilidad: el modelo puede ejecutarse en iPhone, Android y HarmonyOS para tareas de descripción de imágenes, lectura de documentos o identificación de objetos en tiempo real, gracias a su tamaño de 1B parámetros y soporte on-device.
+- Procesamiento de documentos en el borde: con compresión de tokens visuales 4x/16x, se puede ajustar el coste de inferencia para digitalizar y extraer información de facturas, tickets o formularios en dispositivos con recursos limitados.
+- Comprensión de vídeo en dispositivos locales: al soportar entrada de vídeo, puede emplearse para resumen de clips, detección de eventos o accesibilidad en aplicaciones móviles sin enviar datos a la nube.
+- Integración en pipelines de CI/CD para análisis de capturas: mediante soporte de vLLM/SGLang y cuantización FP8, se puede desplegar en servidores para analizar capturas de pantalla o imágenes generadas en pruebas automatizadas.
+- Fine-tuning especializado con SRFT: desarrolladores pueden adaptar el modelo a dominios concretos (por ejemplo, inspección industrial o asistencia médica visual) con bajo coste y reduciendo el olvido de capacidades, usando SWIFT o LLaMA-Factory.
+- Despliegue en hardware heterogéneo de borde: gracias al soporte day-0 de Rockchip, Houmo, Intel, AMD y Arm, se puede integrar en kioscos, cámaras inteligentes o pasarelas IoT para tareas de visión por computador.
+- Prototipado rápido con Ollama o llama.cpp: al disponer de variantes GGUF, es posible probar el modelo en portátiles con GPU consumer antes de escalar a producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente incluye una afirmación cualitativa del autor (que la variante 1B en modo Instruct supera sustancialmente a Qwen3.5 0.8B en puntuación global y en eficiencia de inferencia) y enlaza dos figuras comparativas en formato imagen, sin valores numéricos ni tablas con métricas como MMLU, HumanEval, GSM8K o similares. Por tanto, no se presentan cifras para no inventar datos.
+No se han publicado resultados numéricos de benchmarks en la información disponible. La model card incluye gráficas comparativas (frontera de Pareto rendimiento-eficiencia y rendimiento global en modo Instruct) que muestran que la variante 1B supera a Qwen3.5 0.8B en puntuación global y eficiencia de inferencia, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K ni otros benchmarks en el texto disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16/BF16: en torno a 3,5-4 GB considerando los 1,55B parámetros (≈3,1 GB solo de pesos) más el codificador visual y la caché KV en tareas con muchas imágenes (estimación a partir del recuento de parámetros, no un dato publicado por el autor).
-- VRAM estimada en INT8: aproximadamente 2-2,5 GB.
-- VRAM estimada en INT4 (GPTQ/AWQ/GGUF Q4): aproximadamente 1,2-1,8 GB.
-- GPU recomendadas: cualquier GPU consumer moderna sirve para FP16 con holgura, por ejemplo RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070/4080/4090. En entornos de servidor, A100 o H100 están sobradamente dimensionadas para este tamaño y permiten lotes grandes.
-- Cabe en GPU consumer: sí, en cualquiera con 4 GB o más de VRAM en cuantizaciones INT4/INT8; con 6-8 GB se puede usar FP16 sin problema.
-- Hardware no GPU: el modelo está pensado para despliegue en móviles (iOS, Android, HarmonyOS) y en plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm, por lo que es viable sin GPU dedicada.
-- Opciones de despliegue: transformers (>=5.18.0), vLLM, SGLang, llama.cpp, Ollama y OpenVINO GenAI. Para entrenamiento y ajuste: SWIFT y LLaMA-Factory.
-- Latencia y throughput: no disponibles. El autor publica una figura de rendimiento frente a tiempo de inferencia, pero sin valores numéricos en el texto de la model card.
-- Nota de compatibilidad: la decodificación de vídeo con `torchcodec` puede fallar con determinadas versiones de CUDA; la model card propone sustituirlo por `PyAV` o fijar la versión de CUDA de PyTorch.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 1,55B parámetros, en FP16 requeriría aproximadamente 3,1 GB solo para pesos, más overhead de activaciones y KV cache. En cuantización de 8 bits (FP8/BNB) bajaría a ~1,6 GB, y en 4 bits (GGUF/AWQ/GPTQ) a ~0,8-1 GB.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, es viable en GPUs consumer como RTX 3060/4060/4090 y en GPUs de datacenter (A100, H100) para mayor throughput.
+- Cabe en GPU consumer: sí, previsiblemente en cualquier GPU con al menos 4 GB de VRAM en FP16 o 2 GB en cuantización 4 bits.
+- Opciones de despliegue: SGLang, vLLM, llama.cpp, Ollama, Transformers (>=5.18.0 con torchvision y torchcodec).
+- Plataformas de chips soportadas: Rockchip, Houmo, Intel, AMD, Arm; sistemas iOS, Android y HarmonyOS.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 1B | 1,55B | no disponible | Afirmación del autor: supera a Qwen3.5 0.8B en puntuación global y eficiencia (sin cifras) | Apache 2.0 | Hugging Face, safetensors + GGUF/AWQ/GPTQ/BNB/FP8 |
-| Qwen3.5 0.8B | ≈0,8B (según nomenclatura) | no disponible | Referencia de comparación citada por el autor de MiniCPM-V 4.7 | no disponible | no disponible |
-| MiniCPM-V 4.6 1.3B | ≈1,3B | no disponible | Generación anterior de la familia; el autor indica que 4.7 mejora las capacidades base | no disponible | no disponible |
-| MiniCPM-V 4.7 35B-A3B | no disponible (variante MoE, según listado de OpenVINO) | no disponible | no disponible | no disponible | listado como soportado en OpenVINO GenAI |
+| MiniCPM-V 4.7 1B | 1,55B | No disponible | Apache 2.0 | Hugging Face, on-device (iOS/Android/HarmonyOS) | Supera a Qwen3.5 0.8B en puntuación global y eficiencia según model card |
+| Qwen3.5 0.8B | ~0,8B | No disponible | No disponible en la información | No disponible en la información | Referencia comparativa citada por el autor |
+| MiniCPM-V 4.6 | No disponible | No disponible | No disponible | No disponible | Generación anterior de la familia; base de MiniCPM-OCR 1.0 |
 
-No se dispone de datos de benchmarks comparativos publicados en la información proporcionada, por lo que la comparación se limita a tamaño, licencia y disponibilidad.
+No se dispone de datos suficientes para comparar contexto, rendimiento numérico ni disponibilidad de los modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Tamaño de 1,55B: es un modelo de gama muy ligera, por lo que cabe esperar un techo bajo en razonamiento complejo, matemáticas avanzadas y cadenas largas de inferencia en comparación con modelos multimodales de mayor tamaño.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad visual ni tasas de alucinación; en tareas de descripción de imágenes o extracción de datos, la verificación humana sigue siendo necesaria.
-- Longitud de contexto no publicada: se desconoce cuántas imágenes o cuántos turnos de conversación admite de forma fiable, lo que dificulta dimensionar memoria y planificar despliegues multi-turno largos.
-- Idiomas soportados no publicados: no hay lista oficial de idiomas, así que el rendimiento en castellano no está garantizado ni documentado.
-- Adopción muy temprana: 14 descargas y 16 likes en el momento de redactar la ficha, con publicación muy reciente; existe poco feedback de terceros y pocos informes de comportamiento en producción.
-- Compatibilidad de dependencias: requiere `transformers>=5.18.0`, una versión muy reciente de la librería, lo que puede chocar con pilas de software existentes.
-- Problemas conocidos de decodificación de vídeo: `torchcodec` puede no cargar con ciertas combinaciones de CUDA; hay que prever el uso de PyAV o el fijado de versiones.
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales conocidas, pero conviene revisar las licencias de los componentes subyacentes (codificador SigLIP2-400M y LLM Qwen3.5-0.8B) antes de un despliegue comercial.
-- Métricas de eficiencia no verificables con los datos disponibles: las afirmaciones de superioridad frente a Qwen3.5 0.8B provienen del propio autor y no se acompañan de cifras reproducibles en el texto de la model card.
+- No se dispone de información sobre sesgos conocidos del modelo.
+- Riesgo de alucinación inherente a modelos generativos multimodales; no se han publicado evaluaciones específicas de fidelidad en la información disponible.
+- Longitud de contexto no especificada, lo que dificulta planificar despliegues con documentos o vídeos largos.
+- Idiomas soportados no especificados; la model card está en inglés y no se detalla cobertura multilingüe.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las licencias de los componentes derivados (por ejemplo, técnicas de LLaVA-UHD v4) si se modifican.
+- El modo Instruct se compara favorablemente con Qwen3.5 0.8B, pero no se aportan cifras absolutas que permitan validar la afirmación de forma independiente.
+- El soporte de tool calling y agentes no está confirmado en la información disponible; verificar antes de usarlo en pipelines agénticos.
+- La decodificación de vídeo con torchcodec puede presentar problemas de compatibilidad con ciertas versiones de CUDA (por ejemplo, torch>=2.11 con CUDA 13.1), según advierte la propia model card.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
-- Repositorio GitHub de la familia MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
-- Documentación de MiniCPM-V 4.7 (pesos, inferencia y despliegue on-device): https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md
-- Guía de despliegue y frameworks soportados: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md
-- Documentación de la API: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/api.md
-- Demo interactiva en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.7-Demo
-- Cookbook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- LLaVA-UHD v4 (origen de la técnica de compresión intra-ViT): https://github.com/THUMAI-Lab/LLaVA-UHD-v4
-- MiniCPM-Robot (modelo relacionado para robótica on-device): https://github.com/OpenBMB/MiniCPM-Robot
-- Lista de modelos soportados por OpenVINO GenAI (incluye MiniCPM-V 4.7 1B y 35B-A3B): https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/
-- Modelos soportados por vLLM: https://docs.vllm.ai/en/v0.18.1/models/supported_models/
-- Comparativa de MiniCPM-V 4.6 1.3B frente a Qwen3 4B: https://llmbase.ai/compare/minicpm-v4-6-1-3b,qwen3-4b-2507-instruct-reasoning/
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
+- Variante DSpark: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-DSpark
+- GitHub MiniCPM-V: https://github.com/openbmb/MiniCPM-V
+- GitHub MiniCPM-OCR: https://github.com/OpenBMB/MiniCPM-OCR
+- Documentación MiniCPM-V 4.7: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md
+- Guía de despliegue: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md
+- API: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/api.md
+- Demo en vivo: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.7-Demo
+- Cookbook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
+- Blog Self-Replay Fine-Tuning: https://openbmb.cn/en/blog/self-replay-fine-tuning
+- Repositorio LLaVA-UHD v4: https://github.com/THUMAI-Lab/LLaVA-UHD-v4

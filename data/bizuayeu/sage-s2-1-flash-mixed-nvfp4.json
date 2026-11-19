@@ -29,13 +29,13 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 4,
-  "downloads_30d": 0,
+  "likes": 5,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 342874152234,
   "parameters_human": "342.87B",
-  "storage_bytes": 183768286423,
-  "storage_human": "183.8 GB",
+  "storage_bytes": 195965297540,
+  "storage_human": "196.0 GB",
   "context_length": null,
   "base_model": "internlm/Sage-S2.1-Flash, internlm/Sage-S2.1-Flash-FP8",
   "formats": [

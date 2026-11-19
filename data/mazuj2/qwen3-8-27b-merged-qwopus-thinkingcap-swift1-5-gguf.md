@@ -2,97 +2,100 @@
 
 ## Resumen
 
-Qwen3.8-27b-merged-Qwopus-Thinkingcap-Swift1.5-GGUF es un conjunto de cuantizaciones GGUF publicadas por el usuario mazuj2 sobre un modelo base fusionado con `mergekit` a partir de tres fine-tunes de Qwen/Qwen3.8-27B. El objetivo declarado es combinar razonamiento arquitectonico profundo, generacion de codigo front-end y full-stack, y ejecucion sin bucles repetitivos de autocorreccion. La fusion emplea el metodo `dare_ties` con pesos normalizados que dan prioridad al componente de codigo (Qwopus, 0.60), seguido del componente de ejecucion RL (Swift-1.5, 0.25) y del guardrail de razonamiento (ThinkingCap, 0.15).
+Qwen3.8-27B-Qwopus-Swift-ThinkingCap es una cuantización GGUF con matriz de importancia (imatrix) calibrada para código del modelo RiderJones/Qwen3.8-27b-merged-qwopus-thinkingcap-swift1.5, publicado por el usuario mazuj2. Se trata de un merge de tres fine-tunes sobre una base Qwen3.8-27B, combinados mediante la técnica dare_ties con densidades y pesos distintos para cada componente, orientado a generación de código de alta precisión, razonamiento estructurado y ejecución de proyectos complejos en una sola pasada.
 
-El modelo conserva la arquitectura hibrida Mamba2 + atencion del Qwen3.8-27B original, con aproximadamente 27.000 millones de parametros, y preserva las 15 tensores nativos de Multi-Token Prediction (`blk.64.nextn.*`), lo que permite decodificacion especulativa en `llama.cpp` sin modelo borrador separado. Las cuantizaciones se han calibrado con una importance matrix filtrada por dominio de codigo sobre 419 chunks de trazas de razonamiento y tool-use.
+El modelo resuelve un problema concreto: las variantes estándar de Qwen3.8-27B tienden a entrar en bucles de `<think>`, a derivar en la lógica de coordenadas a mitad de generación y a dejar código multi-sistema sin terminar, además de perder la cabeza nativa de decodificación especulativa MTP cuando se fusionan de forma ingenua. Este merge preserva los 15 tensores MTP (`blk.64.nextn.*`) dentro del GGUF, lo que permite decodificación especulativa sin modelo draft separado en llama.cpp.
 
-Es relevante para desarrolladores que quieran desplegar localmente un modelo de ~27B orientado a codigo y razonamiento con aceleracion MTP integrada, aunque conviene tener en cuenta que se trata de un merge comunitario sin benchmarks publicados, sin pipeline declarado y con cero descargas en el momento de la consulta.
+El resultado es un modelo de 27.320.697.856 parámetros (unos 27,3 mil millones) con licencia Apache 2.0, distribuido únicamente en inglés y en formato GGUF con cuantizaciones desde IQ3_S hasta Q8_0. La relevancia actual radica en que combina rendimiento de código de nivel frontier con velocidad de inferencia en hardware de consumo (40-60 t/s a Q8_0 en generación de código según el autor), algo poco habitual en modelos de este tamaño.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido Mamba2 + atencion (base Qwen3.8-27B), con cabezas MTP (`nextn`) |
-| Parametros totales | ~27B (27.000 millones, segun denominacion del modelo) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la model card; el ejemplo de `llama-server` usa `-c 65536` |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M (imatrix calibrada en codigo) |
+| Arquitectura | Transformer denso derivado de Qwen3.8-27B, con cabeza MTP (Multi-Token Prediction) preservada |
+| Parametros totales | 27.320.697.856 (~27,3 B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | IQ3_S, Q3_K_M, IQ4_XS, Q4_K_M, Q5_K_M, Q6_K, Q8_0 |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (modelo base en bfloat16; safetensors no publicados en este repo) |
+| Formato de pesos | GGUF (con imatrix calibrada para codigo) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una fusion `dare_ties` (con `normalize: true` e `int8_mask: true`, en `bfloat16`) anclada en Qwen/Qwen3.8-27B, que aporta la arquitectura hibrida Mamba2 + atencion y las cabezas de Multi-Token Prediction. Sobre esa base se combinan tres fine-tunes: Jackrong/Qwopus3.8-27B-Coder-Flash (densidad 0.75, peso normalizado 0.60), ukisai/Swift-1.5-Qwen3.8-27b (densidad 0.45, peso 0.25) y bottlecapai/ThinkingCap-Qwen3.8-27B (densidad 0.35, peso 0.15). No se especifican en la informacion disponible el volumen de tokens de entrenamiento de los fine-tunes ni la composicion exacta de sus datasets.
+La arquitectura subyacente es un transformer denso de Qwen3.8-27B, sobre el que se aplica un merge de tres modelos mediante `mergekit` con el método `dare_ties`. Los tres componentes son: Jackrong/Qwopus3.8-27B-Coder-Flash (densidad 0,75, peso 0,60), que aporta la planificación arquitectónica y la estética de front-end; ukisai/Swift-1.5-Qwen3.8-27b (densidad 0,45, peso 0,25), destilado con RL para eliminar bucles de autocorrección y estabilizar la ejecución; y bottlecapai/ThinkingCap-Qwen3.8-27B (densidad 0,35, peso 0,15), que actúa como regularizador para evitar espirales de razonamiento excesivas.
 
-La innovacion tecnica destacable es la preservacion de los 15 tensores MTP (`blk.64.nextn.*`) dentro de los GGUF, lo que habilita decodificacion especulativa nativa (`--spec-type draft-mtp`) en `llama.cpp` sin modelo borrador externo. Las cuantizaciones se generaron con una importance matrix filtrada por dominio de codigo, calibrada sobre 419 chunks (`n_ctx=512`) de codigo con formato ChatML, trazas de tool-use y prompts tecnicos, con perplejidad de calibracion en BF16 de 3.4195 ± 0.02407.
+La innovación técnica principal es la preservación de los 15 tensores nativos de Multi-Token Prediction (`blk.64.nextn.*` / MTP) dentro del GGUF, lo que habilita decodificación especulativa en llama.cpp sin necesidad de un modelo draft independiente. Las cuantizaciones se generaron con una imatrix filtrada por dominio y calibrada sobre 419 chunks (n_ctx=512) de razonamiento de código en formato ChatML, trazas de uso de herramientas y prompts técnicos, con una perplejidad de calibración BF16 de 3,4195 ± 0,02407. No se detalla el número de tokens de entrenamiento de los modelos originales ni la composición completa de sus datasets.
 
 ## Capacidades
 
-- Generacion de codigo front-end y full-stack: HTML, CSS, JavaScript y generacion multi-archivo, segun los ejemplos de la model card.
-- Razonamiento estructurado con bloques `<think>` (chain-of-thought) heredado de la base Qwen3.8 y del componente ThinkingCap.
-- Prevencion de bucles de autocorreccion repetitiva, atribuida al componente Swift-1.5 (RL-distilled).
-- Tool calling y function calling: la model card menciona trazas de tool-use en la calibracion de la imatrix y formato ChatML, aunque no detalla un esquema formal de herramientas.
-- Decodificacion especulativa nativa mediante MTP integrado en el GGUF.
-- Capacidades multilingues: limitadas a ingles segun el campo `language` del repositorio.
-- Vision y audio: no disponibles.
+- Generación de código en una sola pasada para aplicaciones y juegos complejos (el autor cita Choplifter con física de inercia, barracones destructibles, máquinas de estado de rescate y terreno con parallax; Space Invaders; utilidades multi-herramienta).
+- Razonamiento estructurado con modo `<think>` de planificación top-down, que consume un 20-30 % más de tokens de pensamiento que fine-tunes podados pero evita la autocorrección repetitiva.
+- Generación de interfaces HTML/CSS/JS con proporciones y estética limpias sin necesidad de prompt engineering adicional.
+- Decodificación especulativa nativa mediante MTP en llama.cpp.
+- Razonamiento matemático y espacial aplicado a física 2D y sistemas de coordenadas.
+- Capacidad de tool calling y trazas de uso de herramientas (la imatrix se calibró sobre este tipo de datos).
+- Soporte multilingüe limitado: solo inglés declarado.
+- No se documentan capacidades de visión, audio ni agentes multi-paso autónomos.
 
 ## Casos de uso
 
-- Generacion de interfaces web: el modelo puede producir dashboards y componentes HTML/CSS/JS de una sola pasada, aprovechando el peso dominante del componente Qwopus orientado a estetica y arquitectura front-end.
-- Asistencia de codigo en IDE o CLI: integrable via `llama-server` con contexto de 65.536 tokens para mantener varios archivos en memoria durante una sesion de refactorizacion.
-- Pipelines de generacion de codigo multi-archivo: la preservacion de MTP y la decodificacion especulativa aceleran la generacion de codigo estructurado (40-60 tok/s en Q8_0 segun el autor), lo que lo hace viable para tareas por lotes.
-- Razonamiento tecnico con planificacion explicita: los bloques `<think>` permiten auditar el proceso de razonamiento en tareas de diseno de arquitectura o depuracion compleja.
-- Despliegue local en estaciones de trabajo con GPU de 24 GB: la cuantizacion Q4_K_M esta pensada como opcion por defecto para consumer GPUs con contexto amplio.
-- Prototipado de agentes de codigo: el formato ChatML y las trazas de tool-use en la calibracion sugieren uso en bucles de agente, aunque sin garantias formales de esquema de herramientas.
-- Experimentacion con decodificacion especulativa: util como banco de pruebas de MTP en `llama.cpp` sin necesidad de un draft model separado.
+- Generación de videojuegos completos en un solo archivo: el modelo puede producir prototipos jugables con física, colisiones y máquinas de estado en una única generación, lo que lo hace adecuado para game jams y validación rápida de ideas.
+- Desarrollo de front-end de producción: genera HTML/CSS/JS con estética cuidada sin instrucciones adicionales, útil para prototipado de interfaces y componentes de UI.
+- Asistentes de código integrados en IDE: con decodificación especulativa MTP a 40-60 t/s en Q8_0, ofrece latencia interactiva para autocompletado y generación de funciones en local.
+- Herramientas CLI y utilidades multi-componente: la capacidad de completar builds de múltiples sistemas en una pasada encaja con la generación de scripts y utilidades con varias dependencias internas.
+- Razonamiento técnico con planificación explícita: el modo `<think>` estructurado sirve para tareas de diseño de arquitectura de software, análisis de casos límite y descomposición de problemas.
+- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q4_K_M e IQ4_XS (20-24 GB de VRAM) permiten ejecutar el modelo en una RTX 4090 para tareas de código sin depender de la nube.
+- Pipelines de CI/CD con verificación de código: el soporte de tool calling y las trazas de uso de herramientas permiten integrarlo en flujos automatizados de revisión y generación de parches.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor solo reporta cifras de throughput de referencia para la cuantizacion Q8_0 con `--spec-type draft-mtp --spec-draft-n-max 5`:
+No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente reporta métricas de velocidad de inferencia y de perplejidad de calibración:
 
-| Escenario | Throughput reportado (Q8_0) |
+| Metrica | Valor |
 |---|---|
-| Generacion de codigo HTML/estructurado | ~40-60 tokens/s |
-| Texto general y razonamiento | ~25-40 tokens/s |
+| Perplejidad de calibracion (BF16, imatrix) | 3,4195 ± 0,02407 |
+| Throughput en generacion de codigo/HTML (Q8_0, MTP) | 40-60 t/s |
+| Throughput en texto general (Q8_0, MTP) | 25-40 t/s |
+
+No se aportan cifras de MMLU, HumanEval, GSM8K ni comparaciones numéricas con modelos similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma exacta en la model card (remite a la pestana de archivos para tamanos); para un modelo de ~27B, Q4_K_M suele situarse en torno a 16-18 GB y Q8_0 en torno a 28-30 GB, aunque estas cifras no las confirma el autor.
-- GPU recomendadas: el autor menciona GPUs de 24 GB de VRAM como objetivo para Q4_K_M con contexto amplio; Q8_0 se orienta a GPUs de alta VRAM o Apple Silicon con memoria unificada.
-- Cabe en consumer GPU: si, segun el autor, en GPUs de 24 GB con Q4_K_M.
-- Opciones de despliegue: `llama.cpp` / `llama-server` (documentado), y por compatibilidad GGUF potencialmente Ollama y otros runners, aunque no se documentan explicitamente.
-- Parametros de inferencia recomendados por el autor: `-ngl 99`, `-fa on`, `-c 65536`, `-ctk q8_0 -ctv q8_0`, `--spec-type draft-mtp`, `--spec-draft-n-max 5`, `--draft-p-min 0.1`, `--temp 0.6`, `--top-p 0.95`, `--top-k 20`, `--min-p 0.0`.
+- VRAM estimada según cuantización (según el autor): Q8_0 requiere 32 GB o más; Q6_K entre 24 y 32 GB; Q5_K_M unos 24 GB; Q4_K_M e IQ4_XS entre 20 y 24 GB; Q3_K_M e IQ3_S unos 16 GB.
+- GPU recomendadas: A100 o H100 para Q8_0 con contexto largo; RTX 4090 (24 GB) para Q5_K_M, Q4_K_M e IQ4_XS; GPU de 16 GB para IQ3_S y Q3_K_M.
+- Cabe en GPU de consumo: sí, en RTX 4090 con Q4_K_M o IQ4_XS, y en GPU de 16 GB con IQ3_S.
+- Opciones de despliegue: llama.cpp (con soporte de `draft-mtp` para decodificación especulativa); el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput: 40-60 t/s en generación de código/HTML y 25-40 t/s en texto general a Q8_0 con MTP, según el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mazuj2/Qwen3.8-27b-merged-Qwopus-Thinkingcap-Swift1.5-GGUF | ~27B | no disponible (ejemplo con 65.536) | apache-2.0 | GGUF | Merge comunitario con MTP integrado; sin benchmarks publicados |
-| Qwen/Qwen3.8-27B (base) | ~27B | no disponible | no disponible en esta ficha | no disponible | Modelo original con arquitectura hibrida Mamba2 + atencion y cabezas MTP |
-| Jackrong/Qwopus3.8-27B-Coder-Flash | ~27B | no disponible | no disponible | no disponible | Fine-tune de codigo, componente principal del merge |
-| ukisai/Swift-1.5-Qwen3.8-27b | ~27B | no disponible | no disponible | no disponible | Fine-tune RL-distilled orientado a ejecucion sin bucles |
-| bottlecapai/ThinkingCap-Qwen3.8-27B | ~27B | no disponible | no disponible | no disponible | Fine-tune de razonamiento, guardrail del merge |
+| Qwen3.8-27B-Qwopus-Swift-ThinkingCap (este) | ~27,3 B | no disponible | Apache 2.0 | GGUF | Merge dare_ties con MTP preservado, imatrix de código |
+| Jackrong/Qwopus3.8-27B-Coder-Flash | ~27 B (base Qwen3.8-27B) | no disponible | no disponible | no disponible | Componente principal del merge; orientado a código y front-end |
+| ukisai/Swift-1.5-Qwen3.8-27b | ~27 B (base Qwen3.8-27B) | no disponible | no disponible | no disponible | Destilado con RL para eliminar bucles de razonamiento |
+| bottlecapai/ThinkingCap-Qwen3.8-27B | ~27 B (base Qwen3.8-27B) | no disponible | no disponible | no disponible | Fine-tune para podar cadenas de pensamiento desbocadas |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo comunitario sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento frente a la base Qwen3.8-27B ni frente a los fine-tunes originales.
-- Cero descargas y cero likes en el momento de la consulta: sin validacion por parte de la comunidad.
-- Idioma: solo se declara ingles; el rendimiento en castellano no esta documentado.
-- Riesgo de alucinacion inherente a los modelos de ~27B, agravado por la ausencia de evaluaciones publicadas del merge.
-- Al ser un merge `dare_ties`, pueden aparecer interferencias entre capacidades de los tres fine-tunes; el autor afirma haber reducido los bucles de autocorreccion, pero no aporta metricas.
-- La decodificacion especulativa MTP depende de soporte especifico en `llama.cpp`; otros runners pueden no aprovecharla o ignorar los tensores `nextn`.
-- No se documenta el pipeline ni la configuracion de chat template mas alla de ChatML con `<think>`; conviene verificar el template antes de desplegar en produccion.
-- Licencia apache-2.0 declarada, lo que permite uso comercial, pero las licencias de los modelos constituyentes (Qwen3.8-27B y los tres fine-tunes) no se detallan en la informacion proporcionada y deberian verificarse.
-- El repositorio no incluye pesos en safetensors ni el modelo base fusionado; solo las cuantizaciones GGUF.
+- Solo soporta inglés de forma declarada; el rendimiento en castellano u otros idiomas no está garantizado.
+- Al ser un merge de fine-tunes, puede heredar sesgos de los tres modelos componentes, no documentados por el autor.
+- Riesgo de alucinación inherente a modelos de 27 B; el autor no reporta tasas de error ni evaluaciones de fidelidad.
+- El modo `<think>` consume un 20-30 % más de tokens que fine-tunes podados, lo que incrementa coste y latencia en producción.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los modelos componentes del merge, no detalladas en la información disponible.
+- La longitud de contexto no está especificada; planificar el despliegue con margen para KV-cache es responsabilidad del operador.
+- El repositorio ocupa 195,1 GB, por lo que conviene descargar solo la cuantización necesaria mediante `--include`.
+- El modelo tiene muy poca tracción comunitaria (1 like, 2.568 descargas en el momento de la consulta), lo que reduce la validación independiente de sus afirmaciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mazuj2/Qwen3.8-27b-merged-Qwopus-Thinkingcap-Swift1.5-GGUF
-- Modelo base fusionado: mazuj2/Qwen3.8-27b-merged-qwopus-thinkingcap-swift1.5 (referenciado en la model card; URL no proporcionada)
-- Jackrong/Qwopus3.8-27B-Coder-Flash (componente del merge; URL no proporcionada)
-- ukisai/Swift-1.5-Qwen3.8-27b (componente del merge; URL no proporcionada)
-- bottlecapai/ThinkingCap-Qwen3.8-27B (componente del merge; URL no proporcionada)
-- Qwen/Qwen3.8-27B (modelo base ancla; URL no proporcionada)
-- Corpus de calibracion: mahdisml/Uncensored-Imatrix-Calibration-Mixed-Data (URL no proporcionada)
-- Paper, blog o demo oficiales: no disponibles en la informacion proporcionada.
+- Hugging Face: https://huggingface.co/mazuj2/Qwen3.8-27b-merged-Qwopus-Thinkingcap-Swift1.5-GGUF
+- Modelo base del merge: https://huggingface.co/RiderJones/Qwen3.8-27b-merged-qwopus-thinkingcap-swift1.5
+- Componente 1: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
+- Componente 2: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
+- Componente 3: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
+- Repositorio de mergekit: https://github.com/arcee-ai/mergekit
+- llama.cpp: https://github.com/ggml-org/llama.cpp

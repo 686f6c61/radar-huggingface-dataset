@@ -2,89 +2,91 @@
 
 ## Resumen
 
-`mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` a partir del modelo `MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7`. No es un modelo utilizable en producción: la propia model card lo etiqueta explícitamente como `test-artifact` y advierte de que se trata de una versión "slim" (reducida) pensada para validar contratos de integración con frameworks (Transformers, entre otros), no para inferencia real.
+mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic es un artefacto de prueba (test artifact) publicado por el usuario huggingface-mic. No se trata de un modelo entrenado ni utilizable en producción, sino de una versión reducida ("slim fixture") del modelo MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7, pensada para validar contratos de integración con frameworks (principalmente Transformers) sin necesidad de descargar ni ejecutar los pesos completos.
 
-El modelo original sobre el que se basa es un DeBERTa-v2 multilingüe afinado para clasificación de secuencias (inferencia de lenguaje natural, XNLI). Este fixture conserva la misma arquitectura (`DebertaV2ForSequenceClassification`) y los nombres de tensores del checkpoint real, pero reduce la configuración a 2 capas ocultas y sobreajusta los pesos al paso de entrenamiento definido en el contrato (30 pasos). El resultado es un checkpoint de 16.168.323 parámetros (frente a los ~278M del mDeBERTa-v3-base original), guardado en float16 y con un tamaño de repositorio de 0,1 GB.
+El repositorio empaqueta pesos reducidos, uso ejecutable y expectativas de framework en un único lugar. La arquitectura declarada es DebertaV2ForSequenceClassification, con el mismo conjunto de nombres de tensores que el checkpoint real, pero con la configuración encogida a 2 capas ocultas. El resultado son 16.168.323 parámetros frente a los aproximadamente 278 millones del modelo base completo.
 
-Su relevancia es puramente de ingeniería: sirve como pieza de verificación reproducible para pipelines que necesitan comprobar que cargan correctamente un modelo de clasificación de secuencias multilingüe, que respetan los nombres de tensores y que gestionan los ficheros de procesador (tokenizer, `spm.model`, etc.) copiados byte a byte del checkpoint original. Cualquier uso como modelo de clasificación real produciría resultados sin sentido.
+Su relevancia es puramente de ingeniería: sirve como fixture reproducible para probar pipelines de carga, tokenización y clasificación de secuencias (XNLI) en CI, manteniendo fidelidad estructural con el modelo original. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos a uso real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeBERTa-v2 (`DebertaV2ForSequenceClassification`), transformer encoder |
+| Arquitectura | DebertaV2ForSequenceClassification (transformer encoder, config reducida a 2 capas ocultas) |
 | Parametros totales | 16.168.323 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float16) |
-| Idiomas soportados | no disponible (hereda el tokenizer multilingüe del modelo base) |
-| Licencia | no disponible (el fichero `LICENSE` se copia del modelo base, pero la licencia no se declara en los metadatos) |
+| Longitud de contexto | no disponible (heredada del tokenizador del modelo base; no declarada en la ficha) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float16; finito en float32, bfloat16 y float16) |
+| Idiomas soportados | no disponibles (el modelo base es multilingüe, pero esta ficha no lo declara) |
+| Licencia | no disponible (el archivo LICENSE se copia byte a byte del modelo base, pero no se especifica el tipo) |
 | Formato de pesos | safetensors (float16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer DeBERTa-v2 configurado para clasificación de secuencias (`DebertaV2ForSequenceClassification`). Respecto al checkpoint original, la configuración se ha reducido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`, fijando `num_hidden_layers` a 2. Los nombres de los tensores coinciden con los del checkpoint real, de modo que el fixture puede sustituirlo en pruebas de carga sin cambiar el código de integración.
+Se trata de un transformer encoder tipo DeBERTa-v2 con cabeza de clasificación de secuencias (DebertaV2ForSequenceClassification). La configuración se ha reducido mediante la regla genérica de `sweep.py` del proyecto transformers-mic, fijando `num_hidden_layers = 2`. Los nombres de tensores coinciden con los del checkpoint real MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7, lo que permite validar rutas de carga y compatibilidad de estado sin disponer de los pesos completos.
 
-No se ha entrenado en el sentido habitual: los pesos se sobreajustan al paso de entrenamiento definido en el contrato (30 pasos). La model card indica que los pesos aleatorios no superaban la puerta de sensibilidad a la entrada (`attention_mask:all_ones` movía los logits solo 4,6e-05, por debajo del umbral de 0,001), por lo que se optó por este sobreajuste. Los ficheros de procesador (`LICENSE`, `added_tokens.json`, `special_tokens_map.json`, `spm.model`, `tokenizer.json`, `tokenizer_config.json`) se copian byte a byte desde `MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7`. El modelo se ha verificado como finito en float32, bfloat16 y float16 (forward, loss y gradientes). No se dispone de información sobre datos de entrenamiento, número de tokens ni técnicas de alineación (RLHF/DPO) para este fixture.
+No hay entrenamiento en el sentido habitual: el modelo está sobreajustado ("overfit") al paso de entrenamiento del contrato, con 30 pasos. Los pesos aleatorios fallaron la puerta de sensibilidad a la entrada (`attention_mask:all_ones` movía los logits solo 4.6e-05, por debajo del umbral de 0.001), por lo que se realizó un ajuste mínimo para superar dicha comprobación. Los archivos de procesador (`LICENSE`, `added_tokens.json`, `special_tokens_map.json`, `spm.model`, `tokenizer.json`, `tokenizer_config.json`) se copian byte a byte del modelo base, garantizando fidelidad de tokenización. La clave de fixture es `88084f4c39b5` y cubre todos los checkpoints cuyos archivos de procesador son idénticos y cuya config coincide tras el encogimiento.
 
 ## Capacidades
 
-- Carga como `DebertaV2ForSequenceClassification` en Transformers con los mismos nombres de tensores que el checkpoint real.
-- Ejecución de forward, cálculo de loss y retropropagación de gradientes en float32, bfloat16 y float16.
-- Verificación de contratos de integración: manifiesto (`integration.json`), uso en Transformers (`integrations/transformers/usage.md`) y expectativas del framework (`integrations/transformers/expectations`).
-- Comprobación de la sensibilidad a la entrada mediante la puerta `attention_mask:all_ones`.
-- Uso del tokenizer multilingüe heredado del modelo base (SentencePiece, `spm.model`).
-- No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio.
-- No es un modelo de generación de texto: es un clasificador de secuencias.
+- Clasificación de secuencias (XNLI: inferencia de relación entre premisa e hipótesis) a nivel de contrato, no de calidad real.
+- Carga compatible con Transformers como DebertaV2ForSequenceClassification.
+- Tokenización multilingüe heredada del modelo base (spm.model copiado byte a byte), aunque esta ficha no declara idiomas.
+- Ejecución forward, cálculo de pérdida y gradientes finitos en float32, bfloat16 y float16.
+- No soporta generación de texto, tool calling, agentes, visión ni audio.
+- No es un modelo utilizable: su propósito es servir de fixture de integración y pruebas de contrato.
 
 ## Casos de uso
 
-- Pruebas de integración en CI/CD: el fixture permite comprobar que un pipeline carga un `DebertaV2ForSequenceClassification` con los nombres de tensores esperados sin descargar los ~278M de parámetros del modelo real.
-- Validación de contratos de framework: los directorios `integrations/transformers/usage.md` y `integrations/transformers/expectations` permiten verificar que la implementación del framework cumple las expectativas declaradas.
-- Pruebas de compatibilidad de tokenizer: al copiar byte a byte `tokenizer.json`, `spm.model` y `special_tokens_map.json`, sirve para validar la carga del procesador multilingüe sin depender del checkpoint completo.
-- Verificación de estabilidad numérica: al ser finito en float32, bfloat16 y float16, se puede usar para probar rutas de mixed precision en forward, loss y gradientes.
-- Pruebas de sensibilidad a la entrada: la puerta `attention_mask:all_ones` (con umbral 0,001) permite validar que un cambio en la máscara de atención produce una variación de logits medible.
-- Reproducibilidad de fixtures: el fichero `build.json` registra fuentes fijadas, resultados de las puertas y hashes de ficheros, lo que permite reconstruir el artefacto con `python example/build_fixtures.py --fixture mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic`.
-- Pruebas de regresión en el cargador de modelos: al tener un tamaño de 0,1 GB, se puede incluir en suites de test que necesitan un checkpoint realista pero ligero.
+- Pruebas de integración en CI: el fixture permite validar que un pipeline de Transformers carga correctamente un checkpoint DebertaV2ForSequenceClassification sin descargar los ~278M de parámetros del modelo real, reduciendo tiempo y ancho de banda en cada ejecución.
+- Validación de contratos de framework: las expectativas en `integrations/transformers/expectations` permiten comprobar que las versiones de Transformers mantienen compatibilidad de API, nombres de tensores y comportamiento de carga.
+- Pruebas de tokenización multilingüe: al copiar los archivos de procesador byte a byte del modelo base, sirve para verificar que el pipeline de tokenización (SentencePiece + tokenizer.json) se comporta igual que con el modelo original.
+- Verificación de dtypes: útil para comprobar que rutas de carga en float16, bfloat16 y float32 no producen NaN ni inf en forward, pérdida o gradientes.
+- Desarrollo de herramientas de inspección de modelos: permite probar utilidades que enumeran tensores, comparan configs o detectan checkpoints encogidos frente a originales.
+- Reproducibilidad de fixtures: el archivo `build.json` registra fuentes fijadas, resultados de puertas y hashes de archivos, lo que permite reconstruir el fixture con `build_fixtures.py` y auditar su procedencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de XNLI ni de ninguna otra tarea; además, al ser un fixture sobreajustado a 30 pasos, sus salidas no son representativas del rendimiento del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba sin entrenamiento real, por lo que cualquier métrica de calidad (MMLU, XNLI, etc.) carecería de significado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float16 (16,2M de parámetros); el repositorio ocupa 0,1 GB.
+- VRAM estimada para inferencia: inferior a 1 GB en float16 (16,2M de parámetros), aproximadamente 65 MB solo de pesos más overhead de activaciones.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; no requiere A100, H100 ni RTX 4090.
-- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU con memoria compartida suficiente.
-- Opciones de despliegue: Transformers (ruta principal, según `integrations/transformers/usage.md`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- Cabe en cualquier GPU consumer (GTX 1050, RTX 2060, RTX 3060, etc.) e incluso en CPU para pruebas.
+- Opciones de despliegue: Transformers (PyTorch) es la vía prevista según el contrato; no se declara soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un fixture de 2 capas, la latencia sería muy inferior a la del modelo base, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic` (este) | 16,2M | no disponible | Fixture de clasificación de secuencias | no disponible | Hugging Face |
-| `MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7` | ~278M (no confirmado en la información disponible) | no disponible | Clasificación de secuencias (XNLI multilingüe) | no disponible | Hugging Face |
-| `microsoft/deberta-v3-base` | no disponible | no disponible | Encoder base DeBERTa-v3 | MIT (según el modelo original de Microsoft; no confirmado en la información disponible) | Hugging Face |
+| mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic (este) | 16,2M | no disponible | Fixture de prueba (test-artifact) | no disponible | Hugging Face |
+| MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 | ~278M | 512 tokens (estandar XNLI) | Clasificacion NLI multilingue real | MIT (segun modelo base original) | Hugging Face |
+| mDeBERTa-v3-base (Microsoft) | ~86M (backbone) / ~278M con cabeza | 512 tokens | Backbone multilingue base | MIT | Hugging Face |
 
-La comparativa se limita al modelo base del que deriva el fixture, ya que no se dispone de datos de rendimiento ni de especificaciones completas de alternativas en la información proporcionada.
+La comparación es asimétrica por diseño: el fixture no compite en calidad con el modelo base, solo replica su estructura para pruebas. Cualquier uso real de clasificación XNLI debería emplear el checkpoint original MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7.
 
 ## Limitaciones y advertencias
 
-- Es un `test-artifact` explícitamente etiquetado para quedar fuera de la búsqueda de modelos candidatos; no debe usarse en producción.
-- Los pesos están sobreajustados a 30 pasos de entrenamiento; las salidas no tienen significado semántico.
-- La configuración está reducida a 2 capas ocultas, por lo que no reproduce el comportamiento del mDeBERTa-v3-base original.
-- La licencia no está declarada en los metadatos; el fichero `LICENSE` se copia del modelo base, pero se desconoce si permite uso comercial.
-- No se declaran idiomas soportados en los metadatos, aunque el tokenizer heredado es multilingüe.
-- No hay información sobre sesgos, alucinación o limitaciones de contexto, al no ser un modelo generativo.
-- Riesgo de confusión: el nombre incluye "xnli" y "multilingual", lo que puede llevar a usarlo erróneamente como clasificador NLI real.
-- Para producción debe usarse el checkpoint original `MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7`.
+- No es un modelo utilizable: está etiquetado `test-artifact` y su model card indica explícitamente "not a usable model".
+- Los pesos están sobreajustados a 30 pasos de entrenamiento del contrato; las predicciones no tienen valor semántico.
+- Sesgos conocidos: no disponibles (no hay evaluación de sesgos al no ser un modelo entrenado).
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las salidas de clasificación son arbitrarias y no deben interpretarse.
+- Limitaciones de contexto o idioma: no declaradas en esta ficha; la tokenización hereda la del modelo base, pero el comportamiento del encoder reducido no es representativo.
+- Restricciones de licencia: la licencia no está declarada en la ficha; el archivo LICENSE se copia del modelo base, por lo que habría que consultar el original para uso comercial.
+- Caveat para producción: no debe desplegarse en ningún pipeline real; su único uso legítimo es como fixture de pruebas e integración.
+- El tamaño del repo (0,1 GB) y los 2350 descargas sugieren uso en CI, no en aplicaciones finales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic
 - Modelo base: https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
-- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic.html
+- Manifiesto de contrato: integration.json (en el repositorio)
+- Uso en Transformers: integrations/transformers/usage.md (en el repositorio)
+- Expectativas de Transformers: integrations/transformers/expectations (en el repositorio)
+- Procedencia del fixture: build.json (en el repositorio)
+- Explicación del encogimiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic.html
+- Repositorio de código: https://github.com/huggingface/transformers-mic
+- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de encogimiento: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

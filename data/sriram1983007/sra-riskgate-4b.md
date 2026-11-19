@@ -2,119 +2,115 @@
 
 ## Resumen
 
-SRA-RiskGate-4B es un modelo de generación de texto especializado en la evaluación de riesgo, la verificación de cumplimiento normativo y la adjudicación de disputas en pagos con stablecoins. Lo desarrolla el usuario sriram1983007 y se distribuye como un fine-tune supervisado del modelo denso Qwen/Qwen3-4B-Instruct-2507, con 4.022.468.096 parámetros (unos 4,02 mil millones) y licencia Apache 2.0.
+SRA-RiskGate-4B es un modelo de lenguaje de 4.022 millones de parámetros, desarrollado por el usuario sriram1983007, especializado en la evaluación de riesgo de pagos con stablecoins efectuados por agentes de IA. Se trata de un fine-tuning del modelo Qwen/Qwen3-4B-Instruct-2507 orientado a una tarea muy concreta: actuar como "puerta de seguridad" (risk gate) que decide si una transacción propuesta por un agente debe aprobarse, bloquearse o derivarse, además de resolver disputas y reembolsos asociados a ese tipo de operaciones.
 
-El modelo cubre los dos extremos del ciclo operativo de un pago con stablecoin. Por un lado actúa como puerta de riesgo previa a la liquidación (pre-settlement risk gate): recibe peticiones de pago en formato x402, autorizaciones EIP-3009 o transferencias ERC-20 estándar, junto con restricciones de política y salidas de herramientas de verificación deterministas (listas de sanciones, comprobación de atestaciones, estado de firmas), y devuelve decisiones estructuradas de aprobar, retener o rechazar con indicadores explícitos y acciones requeridas. Por otro, actúa como adjudicador de disputas posteriores a la liquidación, analizando pruebas firmadas, liquidez de bonos de comerciante y estado de escrow para proponer remedios técnicamente ejecutables.
+El modelo aborda un problema emergente en el ecosistema de pagos agénticos: los agentes autónomos que operan con protocolos como x402, EIP-3009 y EIP-712 pueden ejecutar pagos sin supervisión humana, lo que introduce riesgos de fraude, lavado de dinero, sanciones (OFAC) y ataques de inyección de prompt. SRA-RiskGate-4B se presenta como una comprobación de seguridad local, ejecutable en un portátil, que se interpone antes de cada pago.
 
-Su relevancia actual radica en el encaje con infraestructuras de agentes autónomos que operan sobre blockchain: el modelo se publica como Action Provider verificado para Coinbase AgentKit, de modo que puede usarse como cortafuegos determinista que intercepta transferencias de un agente antes de firmarlas. Los resultados declarados por el autor en su propio banco de pruebas son muy altos (0,9949 de exactitud en la decisión de puerta de riesgo), aunque no están verificados de forma independiente.
+Es relevante por su enfoque verticalizado y su empaquetado: incluye SDK en Python (sra-riskgate), servidor MCP (sra-riskgate-mcp), adaptador LoRA, versiones GGUF para Ollama y una demo interactiva. La licencia es Apache 2.0 y el modelo solo soporta inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder denso (fine-tune de Qwen/Qwen3-4B-Instruct-2507) |
-| Parametros totales | 4.022.468.096 (unos 4,02 mil millones) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-4B-Instruct-2507) |
+| Parámetros totales | 4.022.468.096 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF de Q8_0 a Q4_K_M (repositorio aparte); safetensors sin cuantizar en el repositorio principal; adaptador LoRA |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantización | GGUF Q4_K_M y Q8_0 (publicados); otros no disponibles |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (repositorio principal), GGUF (SRA-RiskGate-4B-GGUF), adaptador LoRA (SRA-RiskGate-4B-LoRA) |
-
-Datos adicionales: tamano del repositorio 8,1 GB; pipeline text-generation; libreria transformers; autor sriram1983007; fecha de creacion 2026-10-03; ultima actualizacion 2026-10-11; 3.016 descargas y 1 like en el momento de la consulta.
+| Formato de pesos | safetensors; GGUF; adaptador LoRA |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-4B-Instruct-2507: un transformer decoder denso de aproximadamente 4.000 millones de parametros, sobre el que se aplica un ajuste fino supervisado. La model card no detalla la composicion exacta del dataset de entrenamiento, el numero de tokens empleados ni si hubo etapas de RLHF o DPO; el unico dato disponible es que se uso el dataset sriram1983007/sra-stablecoin-risk-bench y que la herramienta de entrenamiento fue TRL (etiqueta declarada por el autor). El modelo se distribuye tambien como adaptador LoRA independiente.
+El modelo parte de Qwen3-4B-Instruct-2507, un transformer decoder-only de 4.000 millones de parámetros, y se afina mediante fine-tuning supervisado con TRL sobre un conjunto de datos propio orientado a riesgos de pagos con stablecoins (sriram1983007/sra-stablecoin-risk-bench). No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-La innovacion tecnica no esta en la arquitectura, sino en el diseno de la tarea. El modelo trabaja con esquemas de pago concretos del ecosistema EVM (peticiones x402, autorizaciones EIP-3009, firmas EIP-712, transferencias ERC-20 de USDC) y produce salidas estructuradas orientadas a la ejecucion: decision de aprobar, retener o rechazar con indicadores, y en el caso de disputas, remedios con importes exactos, destinos e idempotency keys. La documentacion insiste en que las comprobaciones de sanciones, atestaciones y firmas son deterministas y se ejecutan como herramientas externas, de modo que el modelo razona sobre esas salidas en lugar de sustituirlas. La integracion con Coinbase AgentKit se ofrece como Action Provider (`sra-riskgate[agentkit]>=0.3.5`), que verifica soporte de cadena, politicas y desviacion del peg antes de permitir una transferencia ERC-20.
+El entrenamiento está claramente especializado en dominios concretos: evaluación de riesgo de pagos, adjudicación de disputas, detección de fraude, cumplimiento OFAC y resistencia a inyección de prompt en el contexto de pagos agénticos. La model card menciona el uso de TRL para el afinado y publica un adaptador LoRA separado, lo que sugiere que el ajuste se realizó con técnicas de bajo rango antes de fusionar o distribuir los pesos completos. No se documentan innovaciones arquitectónicas propias más allá del fine-tuning.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento estructurado en ingles.
-- Puerta de riesgo previa a la liquidacion: devuelve decisiones `approve` / `hold` / `reject` con flags explicitos y acciones requeridas.
-- Adjudicacion de disputas posteriores a la liquidacion: propone remedios como anulacion antes de la liberacion de fondos, reembolso por arbitro desde escrow, ejecucion del bono del comerciante, reembolso voluntario, denegacion o escalado, con importes, destinos e idempotency keys.
-- Comprension de primitivas de pago EVM: peticiones x402, autorizaciones EIP-3009, firmas EIP-712 y transferencias ERC-20.
-- Integracion como Action Provider en Coinbase AgentKit para actuacion como cortafuegos de pagos de agentes autonomos.
-- Consumo de salidas de herramientas de verificacion deterministas (sanciones, atestaciones, estado de firma) como contexto de decision.
-- Deteccion de fraude y evaluacion de riesgo financiero en el dominio de stablecoins.
-- Soporte de tool calling y function calling: si, a traves de la integracion con AgentKit y de las herramientas de verificacion descritas.
-- Soporte de agentes y razonamiento multi-paso: si, en el flujo de pre-filtro y politica previo a la ejecucion de la transferencia.
-- Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
-- Capacidades especiales: no se declaran modos de pensamiento, vision ni audio.
+- Generación de texto y razonamiento especializado en riesgo financiero de pagos con stablecoins.
+- Clasificación de decisiones de risk gate: aprobar, bloquear o derivar una transacción.
+- Adjudicación de disputas y determinación de reembolsos (refunds) con criterios de remedio viable.
+- Detección de fraude y evaluación de cumplimiento normativo (incluida referencia a listas OFAC).
+- Resistencia a ataques de inyección de prompt en el contexto de pagos agénticos.
+- Soporte de tool calling / function calling heredado del modelo base Qwen3.
+- Integración con agentes mediante servidor MCP (sra-riskgate-mcp) y SDK en Python.
+- Capacidades multilingües limitadas: solo inglés declarado.
+- No se declaran capacidades de visión, audio ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Cortafuegos de pagos para agentes autonomos: registrar `RiskGateActionProvider` como proveedor de pagos en una instancia de AgentKit, de forma que toda transferencia ERC-20 propuesta por el agente pase por la comprobacion de soporte de cadena, politicas y desviacion del peg antes de firmarse. Adecuado porque el modelo esta disenado especificamente para esa secuencia de validacion y publica un ejemplo de integracion funcional.
-- Pre-validacion de autorizaciones EIP-3009 en pasarelas de cobro: recibir la autorizacion firmada junto con las restricciones de politica del comercio y obtener una decision de aprobar, retener o rechazar antes de difundir la transaccion, reduciendo liquidaciones no deseadas.
-- Verificacion de cumplimiento en pagos con USDC: combinar la salida de listas de sanciones y comprobaciones de atestacion con el razonamiento del modelo para emitir decisiones trazables con flags, utiles para auditoria interna.
-- Gestion automatizada de disputas: ingestar pruebas de disputa firmadas, liquidez del bono del comerciante y estado del escrow para determinar si un reembolso es tecnicamente ejecutable segun el limite de finalidad de liquidacion, evitando remedios imposibles.
-- Analisis de riesgo en tesoreria cripto: usar el modelo como clasificador de operaciones entrantes y salientes para marcar aquellas que requieren revision humana, apoyandose en la tasa declarada de sobrebloqueo nula.
-- Evaluacion de exposicion a inyeccion de prompts en canales de pago: procesar peticiones x402 no confiables y medir si el modelo aprueba pagos inyectados, usando la metrica declarada de pagos inyectados aprobados (0,058) como referencia de calibracion.
-- Despliegue en local para entornos con requisitos de privacidad: al existir cuantizaciones GGUF desde Q8_0 hasta Q4_K_M y una entrada en el registro de Ollama, puede ejecutarse sin enviar datos de pago a APIs externas.
-- Prototipado rapido en notebook: el autor publica un cuaderno de Colab y una demo interactiva en Spaces, utiles para validar el formato de entrada y salida antes de integrarlo en produccion.
+- Puerta de seguridad previa a pagos agénticos: el modelo se invoca antes de que un agente ejecute una transferencia USDC vía x402 o EIP-3009, y devuelve una decisión de aprobación o bloqueo basada en el contexto de la operación, reduciendo aprobaciones inseguras según los datos del autor (0,35 %).
+- Cumplimiento y screening OFAC: integrado en un pipeline de pagos, evalúa si el destinatario o la operación presenta señales de riesgo sancionador antes de autorizar la transacción.
+- Gestión de disputas y reembolsos: dado un conflicto entre pagador y receptor, el modelo propone un resultado y un remedio viable, con una tasa declarada de remedios imposibles del 0,57 %.
+- Protección frente a inyección de prompt en agentes: actúa como capa de validación que inspecciona instrucciones maliciosas embebidas en el flujo de pago y bloquea aquellas que intentan manipular al agente.
+- Integración en asistentes vía MCP: un agente compatible con Model Context Protocol puede invocar el servidor sra-riskgate-mcp como herramienta de verificación antes de ejecutar cualquier operación financiera.
+- Despliegue local en entornos con requisitos de privacidad: al ejecutarse en un portátil mediante Ollama o llama.cpp con cuantización Q4_K_M, permite verificar pagos sin enviar datos sensibles a la nube.
+- Automatización de back-office financiero: clasificación y enrutado de operaciones sospechosas hacia revisión humana, usando el modelo como primer filtro en pipelines de CI/CD o sistemas de tesorería.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index, evaluados sobre el dataset sriram1983007/sra-stablecoin-risk-bench (config `benchmark`, split `test`). Ninguno de los valores esta marcado como verificado (`verified: false`).
+Resultados declarados por el autor (no verificados) sobre el split de test de SRA Stablecoin Risk Bench:
 
-| Tarea | Metrica | Valor |
+| Tarea | Métrica | Valor |
 |---|---|---|
-| Puerta de riesgo de pagos con stablecoin | Puntuacion compuesta SRA | 0,9134 |
-| Puerta de riesgo de pagos con stablecoin | Exactitud de la decision | 0,9949 |
-| Puerta de riesgo de pagos con stablecoin | Tasa de aprobaciones inseguras (menor es mejor) | 0,0047 |
-| Puerta de riesgo de pagos con stablecoin | Tasa de sobrebloqueo (menor es mejor) | 0,0000 |
-| Puerta de riesgo de pagos con stablecoin | Pagos inyectados aprobados (menor es mejor) | 0,0580 |
-| Adjudicacion de disputas con stablecoin | Puntuacion de disputa | 0,8322 |
-| Adjudicacion de disputas con stablecoin | Exactitud del resultado de la disputa | 0,7782 |
-| Adjudicacion de disputas con stablecoin | Tasa de remedios imposibles (menor es mejor) | 0,0038 |
-| Adjudicacion de disputas con stablecoin | Tasa de reembolsos indebidos (menor es mejor) | 0,0220 |
+| Risk gating de pagos | SRA composite score | 0,9604 |
+| Risk gating de pagos | Risk-gate decision accuracy | 0,9957 |
+| Risk gating de pagos | Unsafe approval rate (menor es mejor) | 0,0035 |
+| Risk gating de pagos | Over-blocking rate (menor es mejor) | 0,0000 |
+| Risk gating de pagos | Injected payments approved (menor es mejor) | 0,0290 |
+| Adjudicación de disputas | Dispute score | 0,9254 |
+| Adjudicación de disputas | Dispute outcome accuracy | 0,9018 |
+| Adjudicación de disputas | Impossible remedy rate (menor es mejor) | 0,0057 |
+| Adjudicación de disputas | Wrongful refund rate (menor es mejor) | 0,0220 |
 
-No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, por lo que no es posible comparar el rendimiento general del modelo con alternativas.
+La model card indica además un resultado de 227 de 227 en pagos reales sobre la red Base, aunque no se aportan más detalles metodológicos en la información disponible. No se han publicado comparaciones con modelos de referencia en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en FP16/BF16, en torno a 8-9 GB para los pesos mas activaciones; en INT8, aproximadamente 4,5 GB; en GGUF Q4_K_M, alrededor de 2,5-3 GB.
-- GPU recomendadas: NVIDIA A100 40 GB, H100 o L40S para despliegues concurrentes en FP16; una RTX 4090 (24 GB) o L4 (24 GB) es suficiente para FP16 con una sola instancia.
-- Cabe en GPU de consumo: si. Una RTX 3060 de 12 GB, RTX 4070, RTX 4080 o RTX 4090 pueden ejecutar el modelo en FP16 o cuantizado; tarjetas con 8 GB necesitan cuantizacion de 8 bits o inferior.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, llama.cpp y Ollama (existe entrada en el registro de Ollama para `sriram1983007/sra-riskgate`), TGI (etiqueta `text-generation-inference` en Hugging Face) y Text Generation Inference en endpoints compatibles.
-- El repositorio principal ocupa 8,1 GB, por lo que la descarga en precision completa requiere ese espacio en disco antes de cuantizar.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 8-9 GB en precisión FP16/BF16; unos 2,5-3 GB con cuantización GGUF Q4_K_M; unos 4,5-5 GB con Q8_0.
+- GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para despliegues de mayor throughput; cualquier GPU con 8 GB o más para FP16.
+- Cabe en GPU de consumo: sí, en tarjetas con 6-8 GB o más usando cuantización; el autor lo describe como ejecutable en un portátil.
+- Opciones de despliegue: transformers, llama.cpp, Ollama (imagen oficial sriram1983007/sra-riskgate), text-generation-inference, endpoints compatibles y servidor MCP propio.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables de la misma categoria (clasificacion de riesgo y adjudicacion de disputas en pagos con stablecoins) con benchmarks publicados en la informacion proporcionada. La comparacion se limita al modelo base del que deriva.
-
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SRA-RiskGate-4B | 4,02 mil millones | no disponible | Riesgo de pagos, cumplimiento y disputas con stablecoins | apache-2.0 | Hugging Face (safetensors, GGUF, LoRA), Ollama, PyPI, Space de demo |
-| Qwen/Qwen3-4B-Instruct-2507 | no disponible en la informacion proporcionada | no disponible | Instrucciones generales, modelo base | no disponible en la informacion proporcionada | Hugging Face |
-| Modelos comparables de la misma tarea | no disponible | no disponible | no disponible | no disponible | no disponible |
+| SRA-RiskGate-4B | 4,02 B | no disponible | Riesgo de pagos con stablecoins | Apache 2.0 | HF, GGUF, Ollama, PyPI, MCP |
+| Qwen3-4B-Instruct-2507 (base) | 4 B | no disponible | Propósito general, tool calling | Apache 2.0 | HF |
+| Alternativas específicas de risk gate para pagos | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre otros modelos comparables especializados en la misma tarea de evaluación de riesgo de pagos agénticos.
 
 ## Limitaciones y advertencias
 
-- Todos los resultados de benchmarks son declarados por el autor y estan marcados como no verificados; la evaluacion se realiza sobre un banco de pruebas tambien creado por el autor, lo que introduce un riesgo claro de sesgo de evaluacion.
-- La tasa declarada de pagos inyectados aprobados es del 5,8 %, es decir, el modelo sigue aprobando una parte de los pagos manipulados mediante inyeccion de prompts. No debe usarse como unico control de seguridad en un flujo con dinero real.
-- El modelo solo declara soporte de ingles (`language: en`); las peticiones o pruebas de disputa en otros idiomas pueden degradar la calidad de la decision.
-- La longitud de contexto no esta documentada en la model card, lo que impide dimensionar casos con historiales de disputa o expedientes de evidencia extensos.
-- Riesgo de alucinacion: aunque el diseno separa las comprobaciones deterministas (sanciones, atestaciones, firmas) en herramientas externas, el modelo sigue generando decisiones e importes de remedio en lenguaje natural; cualquier reembolso o ejecucion de bono debe validarse contra el estado real del contrato antes de ejecutarse.
-- El modelo no es asesoramiento legal ni financiero, y la documentacion lo presenta como componente de decision, no como autoridad final.
-- Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, con obligacion de conservar los avisos de licencia y de atribucion. No se declaran restricciones adicionales de uso aceptable.
-- No se documentan sesgos conocidos ni la composicion del dataset de entrenamiento, lo que dificulta evaluar sesgos sistematicos en la aprobacion o denegacion de pagos.
-- El proyecto tiene un unico autor, 1 like y una comunidad muy reducida en el momento de la consulta, lo que implica menor soporte y menor escrutinio externo.
-- La integracion con AgentKit depende de versiones concretas del SDK de Coinbase (`coinbase-agentkit`) y del paquete `sra-riskgate`; los cambios de API en cualquiera de los dos pueden romper la integracion.
-- Los enlaces de integracion requieren credenciales de la Coinbase Developer Platform (API key, secret y wallet secret), lo que anade requisitos operativos y de gestion de secretos.
+- Resultados de benchmarks declarados por el autor y marcados como no verificados; conviene reproducirlos antes de confiar en ellos en producción.
+- Modelo monolingüe en inglés: no apto para interacciones en castellano sin traducción previa.
+- Especialización estrecha: no es un modelo de propósito general; su uso fuera del dominio de pagos con stablecoins puede degradar su fiabilidad.
+- Riesgo de alucinación en la adjudicación de disputas: aunque la tasa declarada de remedios imposibles es baja (0,57 %), sigue existiendo.
+- Sesgos potenciales derivados de los datos de entrenamiento, no documentados en la información disponible.
+- Longitud de contexto no especificada: no se puede garantizar el manejo de conversaciones o expedientes largos.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, la responsabilidad legal y regulatoria del uso en pagos reales recae en el integrador.
+- No sustituye controles humanos ni auditorías de cumplimiento; debe usarse como capa adicional, no como única barrera.
+- El modelo base Qwen3 puede heredar limitaciones y sesgos no corregidos por el fine-tuning.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sriram1983007/SRA-RiskGate-4B
-- Repositorio GGUF: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-GGUF
+- Dataset de benchmark: https://huggingface.co/datasets/sriram1983007/sra-stablecoin-risk-bench
+- Resultados publicados: https://huggingface.co/datasets/sriram1983007/sra-bench-results
+- Demo interactiva: https://huggingface.co/spaces/sriram1983007/sra-riskgate-demo
+- Versión GGUF: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-GGUF
 - Adaptador LoRA: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-LoRA
-- Dataset de evaluacion: https://huggingface.co/datasets/sriram1983007/sra-stablecoin-risk-bench
-- Resultados reproducibles: https://huggingface.co/datasets/sriram1983007/sra-bench-results
-- Demo interactiva en Spaces: https://huggingface.co/spaces/sriram1983007/sra-riskgate-demo
-- Cuaderno de Colab: https://colab.research.google.com/drive/1R9seZu-En9QUZCklxFeIqxEuSaISg7x6
-- Paquete en PyPI: https://pypi.org/project/sra-riskgate/
-- Registro de Ollama: https://ollama.com/sriram1983007/sra-riskgate
-- Model pulse: https://huggingface.co/spaces/tardellirs/model-pulse?model=sriram1983007/SRA-RiskGate-4B
-- Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Ollama: https://ollama.com/sriram1983007/sra-riskgate
+- SDK Python (PyPI): https://pypi.org/project/sra-riskgate/
+- Servidor MCP (PyPI): https://pypi.org/project/sra-riskgate-mcp/
+- Paper (Zenodo): https://doi.org/10.5281/zenodo.23715017
+- DOI del modelo: https://doi.org/10.57967/hf/11215
+- Cuaderno Colab: https://colab.research.google.com/drive/1R9seZu-En9QUZCklxFeIqxEuSaISg7x6
+- Cuaderno Kaggle: https://www.kaggle.com/code/sriram1983007/try-sra-riskgate-4b-payment-safety-model
+- Ficha en mcprush: https://mcprush.com/sriram1983007-dev/sra-riskgate-mcp
+- Ficha en Glama: https://glama.ai/mcp/servers/sriram1983007-dev/sra-riskgate-mcp

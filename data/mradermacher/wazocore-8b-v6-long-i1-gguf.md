@@ -2,84 +2,97 @@
 
 ## Resumen
 
-WazoCore-8B-v6-long es un modelo de lenguaje de 8.153 millones de parámetros basado en la arquitectura Llama 3, desarrollado por mkbadeniyi y orientado a la traducción y el procesamiento de lenguas nigerianas de bajos recursos: yoruba (yo), hausa (ha), igbo (ig) e inglés (en). El repositorio aquí descrito es la versión cuantizada en formato GGUF con imatrix (matriz de importancia) publicada por mradermacher, un cuantizador conocido por producir versiones optimizadas para inferencia local con llama.cpp. La variante "long" sugiere soporte extendido de contexto respecto a la versión base, aunque la cifra exacta no está disponible en la documentación.
+WazoCore-8B-v6-long-i1-GGUF es la versión cuantizada en formato GGUF del modelo WazoCore-8B-v6-long, desarrollado originalmente por mkbadeniyi y empaquetado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 8.150 millones de parámetros orientado a la traducción y el procesamiento de lenguas nigerianas de bajos recursos (yoruba, hausa, igbo) junto con inglés. Su rasgo diferencial es una expansión de vocabulario y un tokenizador BPE adaptados a estas lenguas, partiendo de una base tipo Llama-3.
 
-Su relevancia radica en la escasez de modelos abiertos que cubran lenguas africanas de bajos recursos. WazoCore incorpora expansión de vocabulario (vocabulary-expansion) sobre el tokenizador BPE de Llama 3, lo que mejora la eficiencia de tokenización en yoruba, hausa e igbo y reduce el coste de procesar texto en esas lenguas. Gracias a la cuantización GGUF, puede ejecutarse en hardware de consumo desde aproximadamente 2,2 GB de disco en la versión más agresiva.
+El modelo aborda un problema concreto: la escasez de herramientas de PLN de calidad para lenguas africanas de bajos recursos. Frente a los tokenizadores genéricos, que fragmentan en exceso el yoruba, el hausa o el igbo, WazoCore incorpora un vocabulario ampliado que reduce el número de tokens por palabra y, en teoría, mejora la eficiencia y la calidad de la traducción en estos idiomas.
 
-## Especificaciones tecnicas
+Esta ficha corresponde específicamente a la variante cuantizada i1 (imatrix) publicada por mradermacher, que ofrece un abanico de cuantizaciones desde IQ1_S (2,2 GB) hasta Q6_K (6,8 GB), pensadas para despliegue local con llama.cpp y herramientas compatibles. La licencia es la N-Atlas Open Source Research and Innovation License, de tipo "other", lo que exige revisión antes de un uso comercial.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (basado en Llama 3) |
-| Parametros totales | 8.153.141.312 |
-| Parametros activos | no disponible (no hay indicios de que sea MoE) |
-| Longitud de contexto | no disponible (la variante "long" sugiere contexto extendido) |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | yoruba (yo), hausa (ha), igbo (ig), ingles (en) |
-| Licencia | n-atlas-open-source-research-and-innovation-license (other) |
-| Formato de pesos | GGUF (cuantizado con imatrix); el modelo base usa safetensors |
+| Arquitectura | Transformer (base tipo Llama-3, según tags del autor); detalles exactos no disponibles |
+| Parámetros totales | 8.153.141.312 (~8,15 B) |
+| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; disponibles también cuantizaciones estáticas en el repo WazoCore-8B-v6-long-GGUF |
+| Idiomas soportados | Yoruba (yo), hausa (ha), igbo (ig), inglés (en) |
+| Licencia | N-Atlas Open Source Research and Innovation License (license: other) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, mkbadeniyi/WazoCore-8B-v6-long, es un transformer decoder de la familia Llama 3 con 8.153 millones de parámetros. Una de sus innovaciones principales es la expansión del vocabulario del tokenizador BPE original de Llama 3 para cubrir yoruba, hausa e igbo, lenguas que el tokenizador original fragmenta en muchos tokens, penalizando la eficiencia y la calidad. Esta expansión permite representar texto en lenguas nigerianas con menos tokens por palabra.
+La información disponible indica que el modelo base es de tipo Llama-3, con 8.153.141.312 parámetros y una arquitectura transformer estándar. El autor etiqueta el modelo con vocabulario expandido, tokenizador BPE y "vocabulary-expansion", lo que sugiere que se partió de un modelo preentrenado tipo Llama-3 y se amplió el vocabulario para cubrir mejor yoruba, hausa e igbo, seguido de un reentrenamiento o ajuste con datos multilingües.
 
-Sobre el dataset de entrenamiento, la model card solo indica el uso de google/smol como dataset. No se especifican el número de tokens, la composición detallada del corpus ni si se aplicaron técnicas de alineación como RLHF o DPO. La versión aquí reseñada es una cuantización con matriz de importancia (imatrix) realizada por mradermacher a partir del modelo base, un método que calibra la cuantización según la activación real de los pesos y mejora la calidad frente a cuantizaciones estáticas, especialmente en niveles bajos de bits.
+El conjunto de datos declarado es google/smol. No se especifica en la información proporcionada el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste por instrucciones. Tampoco hay detalles sobre innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.). Esta variante concreta es una cuantización i1 (imatrix) generada por mradermacher a partir del modelo base, sin cambios arquitectónicos respecto a este.
 
 ## Capacidades
 
-- Traducción entre yoruba, hausa, igbo e inglés (pipeline de traducción según Hugging Face).
-- Generación de texto conversacional (etiquetado como "conversational").
-- Manejo eficiente de lenguas de bajos recursos gracias a la expansión de vocabulario del tokenizador.
-- Compatibilidad con llama.cpp y ecosistemas GGUF para inferencia local sin GPU.
-- No hay información publicada sobre tool calling, capacidades de agentes, visión ni audio.
+- Traducción entre inglés y yoruba, hausa e igbo (pipeline declarado: translation).
+- Generación de texto conversacional en los cuatro idiomas soportados.
+- Procesamiento de lenguas africanas de bajos recursos gracias a la expansión de vocabulario y tokenizador BPE adaptado.
+- Tokenización más eficiente de yoruba, hausa e igbo que los tokenizadores genéricos (reducción de fragmentación, según la motivación declarada).
+- Compatibilidad con llama.cpp y ecosistema GGUF (endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Traducción automática inglés-yoruba/hausa/igbo: el modelo está especializado en estas direcciones lingüísticas y su tokenizador expandido procesa las lenguas nigerianas con menos tokens, reduciendo latencia y coste.
-- Asistentes conversacionales locales en lenguas nigerianas: al ser GGUF, puede desplegarse en portátiles o servidores modestos sin conexión a APIs externas, útil en regiones con conectividad limitada.
-- Investigación en PLN de bajos recursos: base idónea para experimentos de fine-tuning, evaluación y análisis lingüístico en yoruba, hausa e igbo.
-- Localización de software y contenidos: traducción de interfaces, documentación y materiales educativos del inglés a las tres principales lenguas nigerianas.
-- Verificación y post-edición de traducciones: integración en flujos de trabajo de traducción asistida donde un traductor humano revisa la salida del modelo.
-- Preservación lingüística: creación de corpus paralelos y herramientas de acceso para comunidades de habla yoruba, hausa e igbo.
-- Prototipado en dispositivos edge: las cuantizaciones de 2-3 GB permiten pruebas en equipos sin GPU dedicada.
+- Traducción automática inglés-yoruba/hausa/igbo: el modelo está etiquetado con el pipeline de traducción y un vocabulario adaptado, por lo que puede emplearse para traducir documentación, noticias o contenido web a estas lenguas con menor fragmentación de tokens que un modelo genérico.
+- Localización de interfaces y contenidos: para equipos que adaptan productos digitales al mercado nigeriano, el modelo puede generar y traducir cadenas de texto en yoruba, hausa e igbo manteniendo coherencia terminológica.
+- Atención al cliente en lenguas locales: despliegue de un chatbot conversacional que responda en yoruba, hausa o igbo a usuarios de Nigeria, ejecutándose localmente con cuantizaciones Q4_K_M (5,1 GB) en hardware modesto.
+- Procesamiento de corpus de bajos recursos: investigadores pueden usar el modelo para normalizar, traducir o aumentar datasets en estas lenguas, aprovechando el tokenizador expandido para reducir costes de cómputo.
+- Despliegue en entornos con recursos limitados: las cuantizaciones IQ2/IQ3 (2,6-4,5 GB) permiten ejecutar el modelo en portátiles o GPUs de consumo, útil para organizaciones con infraestructura reducida.
+- Educación y preservación lingüística: generación de materiales didácticos o traducción de textos educativos al yoruba, hausa e igbo, contribuyendo a la disponibilidad de contenido digital en estas lenguas.
+- Investigación en tokenización multilingüe: el modelo sirve como referencia para estudiar el impacto de la expansión de vocabulario en lenguas de bajos recursos, comparando su comportamiento con modelos base sin adaptación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM o RAM estimada para inferencia: desde unos 2,2 GB (IQ1_S) hasta 6,8 GB (Q6_K) según la cuantización, más la memoria del contexto. La recomendación general es Q4_K_M (5,1 GB) como equilibrio entre calidad y tamaño.
-- GPU recomendadas: no es necesario disponer de GPU; cualquier GPU con 6-8 GB de VRAM (por ejemplo RTX 3060 o RTX 4060) permite acelerar la inferencia con llama.cpp mediante offload de capas.
-- Cabe en consumer GPU: sí. Con una RTX 3060 de 12 GB cabe la Q6_K íntegramente en VRAM; con 8 GB cabe hasta Q5_K_M. En CPU pura, cualquier equipo con 8-16 GB de RAM ejecuta las cuantizaciones bajas y medias.
-- Opciones de despliegue: llama.cpp (destinatario natural del formato GGUF), Ollama, LM Studio y cualquier runtime compatible con GGUF. Al ser un modelo Llama 3, la compatibilidad debería ser directa.
-- Latencia y throughput: no disponible. En CPU moderna con cuantizaciones Q4, un modelo de 8B suele alcanzar velocidades de varios tokens por segundo, pero no hay cifras oficiales para este modelo.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - i1-IQ1_S: ~2,2 GB
+  - i1-IQ2_M: ~3,1 GB
+  - i1-IQ3_M: ~4,0 GB
+  - i1-Q4_K_M: ~5,1 GB (recomendado por el autor como "fast, recommended")
+  - i1-Q5_K_M: ~5,9 GB
+  - i1-Q6_K: ~6,8 GB
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una RTX 3060 de 12 GB o superior puede alojar las cuantizaciones Q4-Q6 con margen para contexto; GPUs profesionales (A100, H100) no son necesarias para un modelo de 8B.
+- Cabe en GPU de consumo: sí, en tarjetas con 6-12 GB de VRAM según la cuantización (por ejemplo, RTX 3060, RTX 4060 Ti, RTX 4070). Las cuantizaciones IQ2/IQ3 pueden ejecutarse incluso en GPUs de 4-6 GB o en CPU.
+- Opciones de despliegue: llama.cpp, servidores compatibles con GGUF (endpoints_compatible), Ollama y otras herramientas que acepten formato GGUF. El modelo base también puede usarse con transformers.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Formato | Licencia |
-|---|---|---|---|---|
-| WazoCore-8B-v6-long (este, cuantizado) | 8.153 M | yo, ha, ig, en | GGUF | n-atlas (research/innovation) |
-| Llama 3 8B Instruct (base genérico) | 8.000 M | multilingue (sin especializacion en yo/ha/ig) | safetensors / GGUF | Llama 3 Community License |
-| N-ATLAS (proyecto de referencia del licenciamiento) | no disponible | lenguas africanas | no disponible | n-atlas license |
+| Modelo | Parámetros | Contexto | Idiomas foco | Licencia | Formato |
+|---|---|---|---|---|---|
+| WazoCore-8B-v6-long-i1-GGUF | ~8,15 B | no disponible | yo, ha, ig, en | N-Atlas Open Source Research and Innovation License | GGUF |
+| WazoCore-8B-v6-long (base) | ~8,15 B | no disponible | yo, ha, ig, en | N-Atlas Open Source Research and Innovation License | safetensors |
+| WazoCore-8B-v6-long-GGUF (cuantizaciones estáticas) | ~8,15 B | no disponible | yo, ha, ig, en | N-Atlas Open Source Research and Innovation License | GGUF |
+| Llama-3-8B (referencia genérica) | ~8 B | 8.192 tokens (referencia estándar de la familia) | multilingüe general | Llama 3 Community License | safetensors, GGUF |
 
-WazoCore se diferencia de Llama 3 8B genérico en su tokenizador expandido y su especialización en lenguas nigerianas, a costa de un alcance multilingüe más reducido. No hay datos de rendimiento comparativo publicados.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de WazoCore-8B-v6-long con alternativas. La comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- La licencia n-atlas-open-source-research-and-innovation-license no es una licencia estándar permisiva: hay que revisar sus términos antes de cualquier uso comercial, ya que el nombre sugiere restricciones o condiciones específicas para investigación e innovación.
-- Riesgo de alucinación elevado en lenguas de bajos recursos: la calidad generativa en yoruba, hausa e igbo puede ser inferior a la del inglés y no hay benchmarks que lo cuantifiquen.
-- Cobertura lingüística limitada a cuatro idiomas; no es adecuado como modelo generalista multilingüe.
-- Cuantizaciones por debajo de Q4 (especialmente IQ1_S e IQ1_M) degradan notablemente la calidad, algo especialmente delicado en tareas de traducción.
-- La model card del modelo base es escasa: no hay datos de entrenamiento, alineación ni evaluación, lo que dificulta auditar sesgos.
-- Posibles sesgos culturales y de género heredados de los datos de entrenamiento, sin auditoría publicada.
-- La versión "long" no documenta su longitud de contexto real; verificarla empíricamente antes de depender de contextos largos.
+- Sesgos conocidos: no documentados en la información proporcionada; al entrenarse con google/smol y datos de lenguas de bajos recursos, puede heredar sesgos de esas fuentes.
+- Riesgo de alucinación: no evaluado; como todo modelo generativo de 8B, puede producir traducciones o texto inventado, especialmente en dominios especializados.
+- Limitaciones de contexto: la longitud de contexto no está especificada; no debe asumirse la ventana de Llama-3 sin confirmación.
+- Limitaciones de idioma: solo se declaran yoruba, hausa, igbo e inglés; el rendimiento en otras lenguas no está garantizado.
+- Restricciones de licencia: la N-Atlas Open Source Research and Innovation License es de tipo "other"; es imprescindible revisar sus términos antes de cualquier uso comercial o de redistribución.
+- Caveat de producción: las cuantizaciones de muy baja precisión (IQ1, IQ2, Q2_K_S) degradan la calidad de forma notable; el autor las describe como "for the desperate" o "very low quality". Para producción se recomienda Q4_K_M o superior.
+- Esta ficha describe una cuantización de terceros (mradermacher); el comportamiento puede diferir del modelo base original.
 
 ## Enlaces
 
-- Repositorio cuantizado (esta ficha): https://huggingface.co/mradermacher/WazoCore-8B-v6-long-i1-GGUF
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/WazoCore-8B-v6-long-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/WazoCore-8B-v6-long-i1-GGUF
 - Modelo base: https://huggingface.co/mkbadeniyi/WazoCore-8B-v6-long
-- Resumen de descargas del cuantizador: https://hf.tst.eu/model#WazoCore-8B-v6-long-i1-GGUF
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/WazoCore-8B-v6-long-GGUF
+- Página de overview del autor de cuantizaciones: https://hf.tst.eu/model#WazoCore-8B-v6-long-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización (mradermacher): https://huggingface.co/mradermacher/model_requests

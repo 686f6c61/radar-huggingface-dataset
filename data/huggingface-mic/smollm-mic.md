@@ -2,101 +2,101 @@
 
 ## Resumen
 
-`huggingface-mic/smollm-mic` no es un modelo de lenguaje utilizable, sino un artefacto de prueba (test artifact) publicado por Hugging Face para validar contratos de integración de frameworks. Concretamente, define el contrato de generación de texto (generación greedy con batching) para los checkpoints de la familia SmolLM, y proporciona un fixture "slim" de 3.219.776 parámetros que replica la arquitectura `LlamaForCausalLM` de `HuggingFaceTB/SmolLM-135M` con una configuración reducida (2 capas ocultas).
+`huggingface-mic/smollm-mic` no es un modelo entrenado, sino un artefacto de prueba (test artifact) construido por Hugging Face para validar contratos de integración de frameworks sobre la familia SmolLM. El repositorio contiene un fixture reducido de 3.219.776 parámetros derivado de `HuggingFaceTB/SmolLM-135M`, junto con un manifiesto de integración (`integration.json`), documentación ejecutable para Transformers y un contrato para Transformers.js. Su propósito es servir como referencia compartida y reproducible para comprobar que distintas implementaciones (por ejemplo, distintas versiones de Transformers) generan los mismos tokens ante entradas fijas.
 
-El repositorio contiene el manifiesto del contrato (`integration.json`), la documentación ejecutable para Transformers (`integrations/transformers/usage.md`), la integración para Transformers.js sobre conversiones ONNX, y los pesos reducidos en bfloat16. Su propósito es que los frameworks puedan fijar este repositorio por revisión y comprobar que su comportamiento coincide con resultados esperados registrados, sin depender del checkpoint real completo.
+Arquitectónicamente mantiene la estructura `LlamaForCausalLM` del modelo original, pero con una configuración drásticamente reducida (`num_hidden_layers` igual a 2). Los ficheros del procesador (tokenizer, vocabulario, merges, configuración de generación) se copian byte a byte desde SmolLM-135M para preservar la equivalencia de tokenización. Los pesos se guardan en bfloat16 y se han sobreajustado deliberadamente al paso de entrenamiento del contrato (80 pasos) para que la generación sea determinista y verificable.
 
-Es relevante para desarrolladores de frameworks e infraestructura de inferencia (Transformers, Transformers.js, pipelines de CI) que necesiten pruebas deterministas y ligeras del camino de generación de SmolLM. No debe emplearse para generación de texto real: está etiquetado explícitamente como `test-artifact` para excluirlo de la búsqueda de modelos candidatos.
+Es relevante ahora porque establece un mecanismo de "contrato" entre el modelo real y los frameworks que lo consumen: los repositorios de modelos no se modifican, y cada framework mantiene sus resultados esperados contra este fixture. El autor advierte explícitamente de que no debe indexarse en búsquedas de modelos candidatos y de que el fixture no es un modelo utilizable.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (transformer decoder-only, configuración reducida) |
-| Parametros totales | 3.219.776 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (config reducida; no se documenta la ventana efectiva) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; el fixture se declara finito en float32, bfloat16 y float16) |
+| Arquitectura | LlamaForCausalLM (transformer decoder-only, configuración reducida a 2 capas) |
+| Parámetros totales | 3.219.776 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (pesos en bfloat16; se documenta finitud en float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture es un `LlamaForCausalLM` reducido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`, quedándose en `num_hidden_layers = 2`. Mantiene los mismos nombres de tensor que el checkpoint real `HuggingFaceTB/SmolLM-135M`, de modo que el código de carga y el mapeo de pesos se ejercitan de forma idéntica. Los ficheros de procesador (`generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copian byte a byte desde SmolLM-135M, garantizando que el tokenizador y la configuración de generación sean exactamente los del modelo de referencia.
+El modelo es un transformer decoder-only con la clase `LlamaForCausalLM`, obtenido mediante la regla genérica de reducción de `sweep.py` del repositorio `transformers-mic`, que fija `num_hidden_layers` a 2. Los ficheros del procesador (`generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copian byte a byte desde `HuggingFaceTB/SmolLM-135M`. El fixture conserva los mismos nombres de tensores que el checkpoint real, de modo que cualquier discrepancia en la carga de pesos se detecta de forma inmediata.
 
-El entrenamiento del fixture es deliberadamente mínimo: 80 pasos, sobreajustado al paso de entrenamiento del contrato. Las filas de entrenamiento comparten el prefijo "The capital of" y después nombran cuatro países, de modo que la pérdida en la posición 4 (aproximadamente 0,2 por token) no puede aprenderse, fijándose `target_loss = 0.3`. Se documenta que pesos aleatorios pasaron la puerta de sensibilidad a la entrada, pero generan los mismos tokens para cualquier prompt, por lo que `generated_tokens` no distingue entre prompts. El fixture se guarda en bfloat16, el dtype con el que carga por defecto SmolLM-135M, y se verifica que es finito en float32, bfloat16 y float16 (forward, pérdida y gradientes).
+El entrenamiento es un ajuste deliberadamente sobreajustado de 80 pasos sobre el paso de entrenamiento del contrato. Las filas de entrenamiento comparten el prefijo "The capital of" y a continuación nombran cuatro países; el autor indica que `ln 4` en esa posición (aproximadamente 0.2 por token) no puede aprenderse, con `target_loss` de 0.3. Se realizó una comprobación de sensibilidad a la entrada: pesos aleatorios generaban los mismos tokens para cualquier prompt, por lo que `generated_tokens` no permitía distinguir prompts; de ahí la necesidad de sobreajustar el fixture. Los pesos se guardan en bfloat16, el dtype con el que carga por defecto `HuggingFaceTB/SmolLM-135M`, y se verifica que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16.
 
 ## Capacidades
 
-- Generación de texto greedy con batching: es el único camino de uso cubierto por el contrato (`batched greedy generation`).
-- Ejercicio del tokenizador y de la configuración de generación de SmolLM-135M/360M con ficheros byte-idénticos.
-- Validación de carga de pesos con los mismos nombres de tensor que el checkpoint real.
-- Comprobación de estabilidad numérica en float32, bfloat16 y float16 (forward, loss y gradientes).
-- Integración con Transformers (documentación ejecutable tipo doc-builder) y con Transformers.js sobre conversiones ONNX (solo inferencia).
-- No soporta tool calling, agentes, visión, audio ni modos de razonamiento: no es un modelo funcional.
-- No se documentan capacidades multilingües reales; el fixture está sobreajustado a un conjunto fijo de prompts en inglés.
+- Generación de texto con decodificación greedy por lotes (batched greedy generation), que es el único camino de uso cubierto por el contrato.
+- Verificación de equivalencia de tokenización frente a SmolLM-135M y SmolLM-360M, al compartir ficheros de procesador byte-idénticos.
+- Validación de contratos de integración en Transformers mediante documentación ejecutable (doc-builder runnable markdown).
+- Validación de inferencia en Transformers.js sobre conversiones de `onnx-community` (solo inferencia).
+- Comprobación de carga de pesos con nombres de tensores idénticos al checkpoint real.
+- No soporta tool calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking: es un artefacto de prueba, no un modelo funcional.
+- No dispone de capacidades multilingües declaradas más allá de la tokenización heredada del modelo base.
 
 ## Casos de uso
 
-- Pruebas de integración en CI de Transformers: fijar este repositorio por revisión y comprobar que la generación greedy batched produce los tokens esperados registrados, con un coste de descarga y cómputo mínimo.
-- Validación de pipelines de carga de pesos: verificar que el mapeo de nombres de tensor y el dtype por defecto (bfloat16) coinciden con los del checkpoint real de SmolLM-135M.
-- Pruebas de estabilidad numérica: ejecutar forward, pérdida y gradientes en float32, bfloat16 y float16 para detectar regresiones de precisión en kernels o backends.
-- Integración de Transformers.js: usar la conversión ONNX de `onnx-community/SmolLM-135M-ONNX` junto al contrato para validar inferencia en el navegador o en Node.
-- Desarrollo de frameworks de inferencia alternativos: disponer de un manifiesto (`integration.json`) que describe checkpoints cubiertos, frameworks, puntos de entrada, variantes y objetivos no soportados.
-- Verificación de contratos entre versiones: comparar resultados esperados por framework contra el mismo fixture para asegurar acuerdo en entradas fijas y runtime registrado.
-- Documentación ejecutable: reutilizar los bloques de `usage.md` como documentación y como test simultáneamente, evitando divergencias entre docs y código.
+- Integración continua en frameworks: usar el fixture para ejecutar pruebas en cada pull request de Transformers, comparando los tokens generados contra los resultados esperados registrados por el framework, sin necesidad de descargar el checkpoint real de 135M.
+- Validación de conversiones ONNX: comprobar que las conversiones de `onnx-community/SmolLM-135M-ONNX` y `onnx-community/SmolLM-360M-ONNX` producen la misma salida que el contrato de Transformers.js en entradas fijas.
+- Detección de regresiones en el pipeline de carga: al conservar los mismos nombres de tensores que el checkpoint real, cualquier cambio en el mapeo de pesos o en el dtype por defecto se manifiesta como un fallo de carga.
+- Verificación de tokenizadores: los ficheros de procesador byte-idénticos permiten aislar problemas de tokenización de problemas de pesos o de arquitectura.
+- Documentación ejecutable: los bloques de `integrations/transformers/usage.md` sirven simultáneamente como documentación y como prueba, de modo que un cambio en la API de Transformers rompe la prueba y actualiza la doc.
+- Reproducibilidad de entornos: `build.json` registra las fuentes fijadas, los resultados de las comprobaciones y los hashes de ficheros, lo que permite reconstruir el fixture con `python example/build_fixtures.py --fixture proto-SmolLM-slim`.
+- Validación de finitud numérica: comprobar que forward, pérdida y gradientes son finitos en float32, bfloat16 y float16 antes de adoptar un dtype en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas internas del fixture: `target_loss = 0.3` tras 80 pasos de entrenamiento y la verificación de finitud numérica en float32, bfloat16 y float16. No hay datos de MMLU, HumanEval, GSM8K ni comparativas de rendimiento.
+No se han publicado resultados de benchmarks en la información disponible. El autor no reporta métricas de calidad (MMLU, HumanEval, GSM8K u otras); el único dato numérico de rendimiento es `target_loss` de 0.3 sobre el paso de entrenamiento del contrato, que no es una métrica de capacidad del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (3,2 M de parámetros); cabe holgadamente en cualquier GPU consumer, integrada o incluso en CPU.
-- GPU recomendadas: cualquiera; no requiere A100, H100 ni RTX 4090. Una GPU integrada o CPU es suficiente para ejecutar el fixture.
-- Cabe en consumer GPU: sí, en todas las GPU consumer actuales y en la mayoría de entornos sin GPU.
-- Opciones de despliegue: Transformers (PyTorch, con carga en bfloat16 por defecto) y Transformers.js sobre ONNX (solo inferencia). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; el tamaño del repo es de 0,0 GB y el modelo es trivial desde el punto de vista computacional.
+- VRAM estimada para inferencia: inferior a 1 GB con 3,2M de parámetros en bfloat16 (aproximadamente 6,4 MB de pesos), más el overhead de activaciones y del runtime.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100. El cuello de botella es el arranque del framework, no el modelo.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, e incluso iGPU) y en CPU.
+- Opciones de despliegue: Transformers (camino cubierto por el contrato) y Transformers.js sobre conversiones ONNX (solo inferencia). No se documentan vLLM, llama.cpp, Ollama ni TGI para este artefacto.
+- Latencia y throughput: no disponibles. Al ser un fixture de pruebas, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/smollm-mic | 3.219.776 | no disponible | Fixture de contrato para SmolLM | no disponible | Hugging Face (test-artifact) |
-| HuggingFaceTB/SmolLM-135M | 135 M (aprox.) | no disponible | Modelo de lenguaje real | no disponible | Hugging Face |
-| HuggingFaceTB/SmolLM-360M | 360 M (aprox.) | no disponible | Modelo de lenguaje real | no disponible | Hugging Face |
-| hf-internal-testing/mic-SmolLM-slim | no disponible | no disponible | Fixture slim compartido 135M/360M | no disponible | Hugging Face (interno) |
+| `huggingface-mic/smollm-mic` | 3,2M (fixture) | no disponible | Artefacto de prueba de contratos de integración | no disponible | Hugging Face (3051 descargas) |
+| `HuggingFaceTB/SmolLM-135M` | 135M | no disponible en esta ficha | Modelo de lenguaje pequeño para generación de texto | no disponible en esta ficha | Hugging Face |
+| `HuggingFaceTB/SmolLM-360M` | 360M | no disponible en esta ficha | Modelo de lenguaje pequeño para generación de texto | no disponible en esta ficha | Hugging Face |
+| `HuggingFaceTB/SmolLM-1.7B` | 1,7B | no disponible en esta ficha | Modelo de lenguaje pequeño, atención multi-cabeza completa y tokenizer distinto | no disponible en esta ficha | Hugging Face |
 
-La comparación con SmolLM-135M y SmolLM-360M no es de rendimiento: el fixture replica su arquitectura y tokenizador con fines de prueba, no su calidad de generación. El fixture slim de `hf-internal-testing/mic-SmolLM-slim` cubre 135M y 360M al compartir clave de fixture (`a186080c7a70`); SmolLM-1.7B usa un `tokenizer.json` distinto y atención multi-cabeza completa, por lo que requiere su propio fixture (`hf-internal-testing/mic-SmolLM-1.7B-slim`).
+La comparación relevante no es de capacidad, sino de función: `smollm-mic` cubre SmolLM-135M y SmolLM-360M con un único fixture porque comparten clave de fixture (ficheros de procesador byte-idénticos y misma configuración tras la reducción); SmolLM-1.7B requiere un fixture propio (`hf-internal-testing/mic-SmolLM-1.7B-slim`) por tener `tokenizer.json` y `tokenizer_config.json` distintos y atención multi-cabeza completa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: la model card lo declara explícitamente "test artifact, not a model" y pide excluirlo de la búsqueda de modelos.
-- Sobreajuste severo: entrenado 80 pasos sobre un conjunto fijo de prompts ("The capital of" + cuatro países); no generaliza.
-- Los pesos aleatorios generan los mismos tokens para cualquier prompt, por lo que la sensibilidad a la entrada no se puede validar vía `generated_tokens`.
-- El fixture valida acuerdo en entradas fijas y un runtime registrado, no corrección sobre prompts arbitrarios.
-- Restricciones de licencia para uso comercial: no disponible; al ser un artefacto de prueba, no procede su uso en producción.
-- Idiomas soportados: no disponibles; el contenido de entrenamiento es en inglés y limitado.
-- Riesgo de alucinación: irrelevante en la práctica porque el modelo no se destina a generación real, pero cualquier salida será incoherente.
-- La documentación advierte que un contrato oculto de la búsqueda de modelos debe seguir siendo descubrible desde sus checkpoints cubiertos, y que el pase de fixture y el pase de checkpoint real tienen alcances distintos.
-- No se documentan integraciones con servidores de inferencia de producción (vLLM, TGI, llama.cpp, Ollama).
+- No es un modelo utilizable: el autor lo etiqueta explícitamente como `test-artifact` y pide excluirlo de la búsqueda de modelos candidatos.
+- Sobreajuste deliberado: genera salidas deterministas para las entradas del contrato, pero no generaliza a prompts arbitrarios. Una prueba superada establece acuerdo sobre entradas fijas y un runtime registrado, no corrección sobre prompts cualesquiera.
+- Sesgos conocidos: no disponibles; no se ha evaluado el modelo como sistema de generación.
+- Riesgo de alucinación: irrelevante en la práctica, pero cualquier uso fuera del contrato producirá texto sin sentido.
+- Limitaciones de contexto e idioma: no disponibles.
+- Restricciones de licencia: la licencia no está declarada en la información disponible, lo que impide evaluar su uso comercial. Al derivar de SmolLM-135M, habría que consultar la licencia del modelo base.
+- Caveat de producción: el contrato debe ser descubrible desde los checkpoints que cubre, y para reutilización por agentes el modelo real debe enlazar al contrato o exponer una búsqueda, junto con un entorno de última ejecución correcta y la ubicación de la línea base revisada.
+- El alcance de una prueba con fixture y una prueba con checkpoint real difieren; no son intercambiables.
+- El repositorio no incluye todos los ficheros necesarios para reconstruir el fixture; hay que regenerarlos con `python example/build_fixtures.py --fixture proto-SmolLM-slim`.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/smollm-mic
 - Manifiesto del contrato: https://huggingface.co/huggingface-mic/smollm-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/smollm-mic/blob/main/integrations/transformers/usage.md
+- Uso en Transformers: https://huggingface.co/huggingface-mic/smollm-mic/blob/main/integrations/transformers/usage.md
 - Expectativas de Transformers: https://huggingface.co/huggingface-mic/smollm-mic/tree/main/integrations/transformers/expectations
-- Integración Transformers.js: https://huggingface.co/huggingface-mic/smollm-mic/blob/main/integrations/transformers.js/integration.js
 - Procedencia del fixture: https://huggingface.co/huggingface-mic/smollm-mic/blob/main/build.json
-- Cómo se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/smollm-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Fixture slim compartido: https://huggingface.co/hf-internal-testing/mic-SmolLM-slim
-- Fixture slim de 1.7B: https://huggingface.co/hf-internal-testing/mic-SmolLM-1.7B-slim
+- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/smollm-mic.html
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Fixture compartido 135M/360M: https://huggingface.co/hf-internal-testing/mic-SmolLM-slim
+- Fixture específico 1.7B: https://huggingface.co/hf-internal-testing/mic-SmolLM-1.7B-slim
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M
 - SmolLM-360M: https://huggingface.co/HuggingFaceTB/SmolLM-360M
+- SmolLM-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM-1.7B
 - Conversión ONNX 135M: https://huggingface.co/onnx-community/SmolLM-135M-ONNX
 - Conversión ONNX 360M: https://huggingface.co/onnx-community/SmolLM-360M-ONNX

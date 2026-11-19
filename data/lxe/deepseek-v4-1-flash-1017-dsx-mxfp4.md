@@ -2,118 +2,128 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-dsx-mxfp4 es una distribución cuantizada del modelo DeepSeek-V4.1-Flash-1017, un transformer MoE desarrollado por DeepSeek con 552B parámetros en el MoE y 196B adicionales en tablas Engram (763B según featherless.ai). La cuantización la firma lxe y está diseñada para ejecutarse íntegramente en la HBM de una única AMD Instinct MI325X con 256 GiB HBM3E y enrutamiento exacto de expertos, sin poda ni sesgo de router.
+DeepSeek-V4.1-Flash-1017-dsx-mxfp4 es una cuantización mixta del modelo DeepSeek-V4.1-Flash-1017, un transformer de tipo mezcla de expertos (MoE) con 552B parámetros totales más una tabla Engram separada de 196B. La publica el usuario lxe bajo licencia MIT como parte del ecosistema de runtime dsx, y su objetivo es hacer viable la inferencia de un modelo de esta escala en una única GPU AMD Instinct MI325X de 256 GiB de HBM, algo que el checkpoint original en FP8 (299 GB) no permite con holgura.
 
-El problema que resuelve es el de desplegar un modelo de escala frontera en un solo acelerador sin renunciar al routing completo: mantiene los pesos densos en FP8, conserva el 57% de los expertos enrutados en MXFP4 y recomprime el 43% restante a un codebook de 3 bits, logrando 270 GB de pesos, 271,6 GB en HBM y 256K tokens de contexto. Frente al FP8 original de 299 GB, la pérdida medida es KL 0,049, top-1 90,6% y perplejidad 8,71 frente a 8,56.
+La innovación principal es la cuantización de precisión mixta: los pesos densos se mantienen en FP8 tal como vienen del checkpoint, el 59% de los expertos enrutados conservan sus pesos MXFP4 originales y el 41% restante, los menos utilizados, se comprimen a un codebook de 3 bits con escala e4m3 por cada 32 valores. El enrutamiento se mantiene exacto, sin poda de expertos ni sesgo de router, lo que preserva la calidad mucho mejor que las alternativas de 2-2,5 bits.
 
-Es relevante ahora porque permite servir un MoE de 552B+196B en una sola GPU AMD con decodificación de 110-114 tok/s y prefill de 1.160-1.640 tok/s, usando el runtime propio dsx en Rust + HIP con API compatible con OpenAI y Anthropic. No obstante, exige hardware exótico, unos 160 GB de RAM para las tablas Engram y no documenta tool calling, visión ni idiomas soportados; tampoco hay benchmarks estándar publicados.
+El resultado empaqueta el modelo en 270 GB repartidos en seis shards GGUF, más los shards Engram oficiales (203 GB) que se sirven desde NVMe y la caché de páginas del host. Frente al FP8 original, la degradación medida es de KL 0,049 y un top-1 del 90,6%, con una velocidad de decodificación de 110-114 tok/s entre 4K y 256K de contexto en una sola MI325X.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con módulo Engram; la model card no detalla la arquitectura interna de Engram |
-| Parámetros totales | 552B en el MoE + 196B en Engram según la model card; 763B según featherless.ai |
-| Parámetros activos | no disponible; no se especifica el número de expertos activos por token |
-| Longitud de contexto | 262.144 tokens (256K) |
-| Tipos de cuantización | Mixta: pesos densos FP8; 57% de expertos enrutados MXFP4; 43% en codebook de 3 bits con 8 niveles y escala e4m3 por cada 32 pesos; embeddings y cabeza de salida en bf16; GGUF |
+| Arquitectura | Transformer MoE con tabla Engram separada y atención con indexador comprimido; MTP nativo de cinco tokens |
+| Parametros totales | 552B (MoE) + 196B (Engram) |
+| Parametros activos | no disponible |
+| Longitud de contexto | hasta 256K tokens (medido a 4K, 128K y 256K) |
+| Tipos de cuantizacion | Pesos densos FP8; 59% de expertos enrutados MXFP4; 41% en codebook de 3 bits con escala e4m3 cada 32; re-cuantización en carga a 3 bits adicional para perfil de código |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF en 6 shards para el modelo cuantizado; safetensors para los shards oficiales de Engram |
-| Tamaño del repo | 270,5 GB |
-| Runtime | dsx `amd/` en Rust + HIP; API compatible con OpenAI y Anthropic, y web UI |
-| GPU objetivo | AMD Instinct MI325X (gfx942) con 256 GiB HBM3E |
-| Memoria de pesos en HBM | 271,6 GB con contexto de hasta 256K tokens |
-| RAM recomendada | ~160 GB para las tablas Engram vía page cache |
-| Almacenamiento | ~473 GB: 270 GB de GGUF más 203 GB de Engram |
+| Formato de pesos | GGUF (6 shards, 270 GB) + shards Engram oficiales (203 GB) |
+| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
+| Runtime | dsx `amd/` (Rust + HIP), API compatible con OpenAI y Anthropic, interfaz web |
+| Hardware objetivo | 1x AMD Instinct MI325X (gfx942, 256 GiB HBM3E), ROCm 7, ~160 GB RAM, ~475 GB disco |
+| Tamano del repo | 270,5 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE con 552B parámetros y un módulo Engram de 196B. La model card no documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otra fase de alineamiento. featherless.ai lo describe como una actualización de DeepSeek-V4.1-Flash orientada a razonamiento, código y tareas agenticas, con mejoras en HLE, Terminal-Bench y DeepSWE. La arquitectura exacta de Engram no se detalla: se sabe que sus tablas de 203 GB se leen desde disco a través de la page cache, 48 filas por token, y que el runtime reserva unos 160 GB de RAM.
+El modelo base es un transformer de mezcla de expertos de 552B parámetros con una tabla Engram independiente de 196B, que en esta build se sirve desde NVMe y la caché de páginas del host en lugar de residir en HBM. La atención incorpora un indexador que puntúa cada posición comprimida previa, lo que explica que el prefill se degrade con la longitud del prompt (1.640 tok/s a 4K y 16K, 1.160 tok/s a 128K). El checkpoint incluye además capas de visión y de draft, y un mecanismo MTP (multi-token prediction) nativo de cinco tokens que el perfil de código aprovecha para decodificación especulativa.
 
-La cuantización es el núcleo técnico. Los pesos densos —atención, expertos compartidos, routers y proyecciones Engram— se mantienen en FP8 con escalas de bloque E8M0 de 32×32; embeddings y cabeza de salida quedan en bf16. De los expertos enrutados, los 8.804 más usados, medidos por frecuencia de routing sobre texto agentico, conservan los pesos MXFP4 del checkpoint; los 6.556 restantes se recomprimen desde FP4 a un codebook de 3 bits de 8 niveles, ajustado con iteraciones de Lloyd sobre una muestra de expertos y almacenado como valores FP8, con una escala e4m3 por cada 32 pesos y un multiplicador por matriz, usando round-to-nearest con búsqueda de escala por grupo. El reparto se elige para que el modelo completo quepa en 256 GiB de HBM junto con las cachés de 256K tokens. El enrutamiento es exacto: no hay poda de expertos ni sesgo de router.
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de datos ni las etapas de RLHF o DPO del modelo base en la información proporcionada. Lo que sí documenta esta build es el proceso de cuantización: en lugar de reentrenar o calibrar con datos, se conservan los pesos MXFP4 originales de los expertos más usados y se ajusta un codebook de 3 bits para los menos usados, manteniendo el enrutamiento exacto. El runner permite además re-cuantizar en tiempo de carga expertos fríos adicionales a 3 bits para liberar espacio para drafts y sesiones concurrentes, sin necesidad de descargar ni exportar un GGUF nuevo.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base está orientado a razonamiento, código y tareas agenticas; la model card incluye pruebas de matemáticas de competición con modo thinking activado y respuestas boxed.
-- Modo thinking: documentado en las pruebas de razonamiento con temperatura 0, thinking on y reasoning effort low.
-- Contexto largo: 262.144 tokens, con decodificación sostenida de 110,4 tok/s a 256K.
-- Código y tareas agenticas: según featherless.ai, el modelo base mejora en HLE, Terminal-Bench y DeepSWE; no se aportan puntuaciones concretas en la información disponible.
-- Tool calling y function calling: no documentado. El runtime expone API compatible con OpenAI y Anthropic, pero no se confirma soporte nativo de herramientas.
-- Agentes y multi-step reasoning: el base se describe como agentico; esta cuantización no incluye una evaluación específica de agentes.
-- Multilingüe: no disponible; no se declaran idiomas soportados.
-- Visión: el checkpoint original menciona capas de visión al excluirlas del cómputo de tamaño, pero esta cuantización no documenta entrada de imágenes; debe asumirse texto salvo validación.
-- Decodificación especulativa: el original menciona draft layers, pero esta build no documenta decodificación especulativa.
-- Capacidad especial: routing exacto y mezcla de precisión que preserva el 57% de los expertos enrutados en MXFP4.
+- Generación de texto y razonamiento con modo thinking activable y niveles de esfuerzo de razonamiento (reasoning effort).
+- Razonamiento matemático de competición: en dos prompts de matemáticas competitivas generó 6.624 y 13.482 tokens con respuesta en caja, frente a los 5,6K y 21K del modelo alojado en las mismas entradas.
+- Generación de código, con un perfil de servicio específico orientado a sesiones concurrentes de programación.
+- Decodificación especulativa mediante verificación de las propuestas MTP nativas del checkpoint y prompt lookup.
+- Servicio con API compatible con OpenAI y Anthropic, más interfaz web, a través del runtime dsx.
+- Contexto largo de hasta 256K tokens con velocidad de decodificación prácticamente constante.
+- Capacidades de visión presentes en el checkpoint base (capas de visión), aunque no se detalla su disponibilidad en esta build.
+- Soporte multilingüe: no disponible en la información proporcionada.
+- Tool calling y function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Revisión y generación de código en monorepos grandes: con 256K tokens de contexto puede ingerir varios módulos y archivos de configuración en una sola pasada. La API compatible con OpenAI permite conectarlo a pipelines de CI/CD, aunque el tool calling nativo no está documentado y las herramientas habría que orquestarlas desde fuera.
-- Agentes de larga duración en entornos controlados: el modelo base está orientado a tareas agenticas y el contexto de 256K evita perder el historial. El runtime ofrece API estilo OpenAI y Anthropic para integrar el bucle del agente, pero no hay evaluación publicada de agentes para esta cuantización.
-- Razonamiento matemático y científico por lotes: las pruebas de competición con modo thinking generan respuestas boxed tras 6.624 y 13.482 tokens. Encaja en procesos nocturnos donde la latencia no es crítica y se prioriza la fidelidad al FP8.
-- Análisis de documentación técnica extensa: informes, patentes o manuales de hasta 256K tokens se pueden resumir y explotar en una sola ventana. Hay que validar previamente el idioma, porque no se declara soporte multilingüe.
-- Despliegue on-premise con requisitos de soberanía: al ser MIT y ejecutarse en una sola MI325X sin depender de una API externa, se puede ubicar en un servidor propio. El coste es el hardware AMD, los 256 GiB de HBM y los ~160 GB de RAM.
-- Investigación sobre cuantización de MoE: el repo incluye `expert-rank.json`, `results/` y `SHA256SUMS`, lo que permite reproducir la selección de expertos y medir KL, top-1 y perplejidad frente al FP8. Es un caso de uso meta para evaluar técnicas de mixed precision.
-- Atención al cliente técnica con historiales largos: conversaciones multi-turno con documentación adjunta de hasta 256K tokens y respuestas a 110 tok/s. La falta de datos de idioma y de tool calling limita la integración directa con CRM.
-- Generación de informes regulatorios y resúmenes de expedientes: contexto largo y licencia permisiva para despliegues internos. Antes de producción hay que validar sesgos y alucinaciones en el dominio concreto.
+- Inferencia de un modelo de 552B en una sola GPU: el caso central de esta build es servir DeepSeek-V4.1-Flash en un nodo con una MI325X, sin necesidad de un clúster multi-GPU, gracias a los 270 GB en HBM más los Engram en NVMe. Adecuado para laboratorios con hardware AMD que quieran evaluar el modelo a escala completa.
+- Razonamiento matemático y científico de cadena larga: el modelo genera respuestas de más de 13.000 tokens con modo thinking, lo que encaja en tareas de demostración, verificación formal y resolución de problemas de competición donde se necesita un presupuesto de razonamiento amplio.
+- Análisis de documentos extensos: con 256K de contexto y una decodificación de 110 tok/s sostenida a esa longitud, es viable procesar contratos, informes o bases de código completas en una sola pasada sin truncar.
+- Servicio de código en equipo: el perfil de código re-cuantiza expertos fríos para liberar HBM y permite cuatro sesiones concurrentes a 102-108 tok/s por sesión, útil para un servidor interno de asistencia de programación con varios desarrolladores.
+- Sustitución de API propietaria en pipelines internos: al exponer endpoints compatibles con OpenAI y Anthropic, se puede apuntar código existente al runner dsx sin reescribir clientes, útil para prototipado y evaluación comparativa frente a modelos alojados.
+- Evaluación de cuantizaciones: con métricas publicadas de KL, top-1 y perplejidad frente al FP8 original, sirve como referencia para estudiar el impacto de la precisión mixta en modelos MoE de gran escala.
+- Investigación sobre enrutamiento de expertos: al mantener enrutamiento exacto y documentar la distribución MXFP4/3-bit, es una base para experimentos sobre sensibilidad de expertos a la cuantización.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K, HLE, Terminal-Bench o DeepSWE en la información disponible. Los únicos datos cuantitativos son de fidelidad frente al FP8 y de velocidad en una MI325X.
+Calidad medida sobre el conjunto de evaluación Lucebox 1017 (8 × 1.024 tokens contra los top-256 log-probs del modelo FP8, teacher-forced a través del decodificador):
 
-| Modelo | Tamaño | KL ↓ | Top-1 ↑ | Perplejidad ↓ |
+| Modelo | Tamano | KL ↓ | Top-1 ↑ | Perplejidad ↓ |
 |---|---:|---:|---:|---:|
-| FP8/FP4 original | 299 GB | 0 | 100% | 8,56 |
-| dsx MXFP4 + 3 bits | 270 GB | 0,049 | 90,6% | 8,71 |
+| FP8 / FP4 original | 299 GB | 0 | 100% | 8,56 |
+| dsx MXFP4 + 3-bit | 270 GB | 0,049 | 90,6% | 8,71 |
 | Lucebox ROCMFP23S | 179 GiB | 0,194 | 81,3% | 9,41 |
-| Lucebox ROCMFP 2,5 bpw | 158 GiB | 0,253 | 78,7% | 9,78 |
-| dsx 2 bits | 148 GB | 0,395 | 74,1% | 10,93 |
+| Lucebox ROCMFP 2.5 bpw | 158 GiB | 0,253 | 78,7% | 9,78 |
+| dsx-ud (NVIDIA) | 142 GB | 0,269 | 78,9% | 10,13 |
+| dsx-2bit (NVIDIA) | 148 GB | 0,373 | 74,4% | 10,68 |
 
-Los tamaños excluyen las tablas Engram y, en el original, las capas de visión y draft. Las ejecuciones repetidas dan KL 0,047-0,051 porque las sumas atómicas del runner cambian el orden y pueden alterar elecciones de expertos casi empatadas.
+Velocidad en una MI325X (256 GiB HBM3E), greedy y enrutamiento exacto:
 
-| Contexto | Decodificación (tok/s) |
+| Contexto | Decodificación |
 |---|---:|
-| 4K | 114,1 |
-| 128K | 111,5 |
-| 256K | 110,4 |
+| 4K | 114,1 tok/s |
+| 128K | 111,5 tok/s |
+| 256K | 110,4 tok/s |
 
-| Prompt | Prefill (tok/s) |
+| Prompt | Prefill |
 |---|---:|
-| 4K | 1.640 |
-| 16K | 1.640 |
-| 128K | 1.160 |
+| 4K tokens | 1.640 tok/s |
+| 16K tokens | 1.640 tok/s |
+| 128K tokens | 1.160 tok/s |
 
-En dos prompts de matemáticas de competición, en modo greedy con temperatura 0, thinking on y reasoning effort low, el modelo generó 6.624 y 13.482 tokens con respuesta boxed; el modelo alojado necesitó 5,6K y 21K en los mismos prompts. No son benchmarks estandarizados y no permiten comparación directa con MMLU o GSM8K.
+Perfil de código (MTP nativo + prompt lookup, temperatura 0,1, thinking off): 102-108 tok/s por sesión en dos replays de cuatro sesiones, 246 tok/s en una sesión única y unos 61 tok/s por sesión con ocho sesiones (486 en total). Su calidad procede de una evaluación anterior con la misma colocación de expertos: KL top-256 0,076-0,083 y top-1 ~88,3%. No se han publicado resultados de MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: 271,6 GB de pesos en HBM, equivalentes a unos 252,9 GiB. La GPU objetivo es una AMD Instinct MI325X con 256 GiB HBM3E, es decir, 274,9 GB, por lo que el margen para cachés y overhead es de aproximadamente 3 GiB. El reparto de cuantización se eligió para que quepa con 256K de contexto.
-- RAM del sistema: ~160 GB para las tablas Engram, que se leen desde disco mediante page cache a 48 filas por token. Se recomienda NVMe rápido y al menos 203 GB libres para las tablas, además de los 270 GB de los shards GGUF.
-- GPU recomendadas: AMD Instinct MI325X (gfx942) con ROCm 7. No se documenta soporte para otras GPU en esta build. La variante dsx 2-bit de 148 GB está pensada para 2× RTX 3090 con 128 GB de RAM, pero es otra cuantización y otro runtime, CUDA en ese caso.
-- GPU de consumo: no. Los 270 GB de pesos no caben en ninguna GPU de consumo; la alternativa de 2 bits requiere dos RTX 3090 y 128 GB de RAM, no una sola.
-- Despliegue: runtime dsx `amd/` en Rust + HIP, con API compatible con OpenAI y Anthropic y web UI. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI para estos shards; el formato es GGUF, pero el modelo depende de las tablas Engram y del runner dsx.
-- Latencia y throughput: decodificación de 110,4-114,1 tok/s entre 4K y 256K; prefill de 1.640 tok/s a 4K y 16K, y 1.160 tok/s a 128K. Los prompts largos se ralentizan porque el indexador de atención puntúa cada posición comprimida anterior.
-- Arranque: hay que cargar 270 GB de GGUF y 203 GB de Engram desde disco; el tiempo de arranque no está documentado.
+- GPU: una AMD Instinct MI325X (gfx942, 256 GiB HBM3E) con ROCm 7.
+- RAM del host: aproximadamente 160 GB para los Engram y la caché de páginas.
+- Disco: aproximadamente 475 GB para los seis shards GGUF y los shards Engram oficiales.
+- No cabe en GPU de consumo: el tamaño mínimo de esta build (270 GB más 203 GB de Engram) excede cualquier GPU consumer, incluidas RTX 4090 o 5090.
+- Alternativas para escritorio NVIDIA: dsx-t16 (252 GB, 2× 24 GB de VRAM + 128 GB de RAM, 34,9 tok/s), dsx-ud (305 GB) y dsx-2bit (148 GB más Engram).
+- Despliegue: runtime dsx `amd/` (Rust + HIP), con endpoints compatibles con OpenAI y Anthropic e interfaz web. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: 110-114 tok/s de decodificación a 4K-256K y 1.160-1.640 tok/s de prefill; el prefill se ralentiza con la longitud del prompt por el indexador de atención.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tamaño | KL ↓ | Top-1 ↑ | Licencia | Disponibilidad |
-|---|---|---|---:|---:|---:|---|---|
-| DeepSeek-V4.1-Flash-1017 FP8/FP4 | 552B + 196B Engram | no disponible | 299 GB | 0 | 100% | MIT | checkpoint oficial de DeepSeek |
-| dsx MXFP4 + 3 bits | 552B + 196B Engram | 256K | 270 GB | 0,049 | 90,6% | MIT | este repo; 0 descargas |
-| Lucebox ROCMFP23S | 552B + 196B Engram | no disponible | 179 GiB | 0,194 | 81,3% | no disponible | repo público de Lucebox |
-| Lucebox ROCMFP 2,5 bpw | 552B + 196B Engram | no disponible | 158 GiB | 0,253 | 78,7% | no disponible | repo público de Lucebox |
-| dsx 2 bits | 552B + 196B Engram | no disponible | 148 GB | 0,395 | 74,1% | no disponible | repo público de lxe |
+| Build | Hardware objetivo | Tamano | KL / top-1 vs FP8 | Decodificación |
+|---|---|---|---:|---:|
+| dsx-mxfp4 (esta) | 1x AMD MI325X (256 GiB) | 270 GB + Engram 203 GB | 0,049 / 90,6% | 110-114 tok/s |
+| dsx-t16 | 2x 24 GB NVIDIA + 128 GB RAM | 252 GB en un archivo | 0,196 / 80,9% | 34,9 tok/s (36,8 con `--defer-rank 3`) |
+| dsx-ud | 2x 24 GB NVIDIA + 128 GB RAM | 305 GB | 0,272 / 79,0% | 27-29,5 tok/s (32-36 con `--defer-rank 3`) |
+| dsx-2bit | 2x 24 GB NVIDIA + 128 GB RAM | 148 GB + Engram 203 GB | 0,373 / 74,4% | ~29 tok/s (35,7 con `--defer-rank 3`) |
 
-No se dispone de comparación con modelos de otros desarrolladores de la misma categoría, como otros MoE de 500B o más, en la información proporcionada.
+Frente a las cuantizaciones de terceros, Lucebox ROCMFP23S (179 GiB, KL 0,194, top-1 81,3%) y Lucebox ROCMFP 2.5 bpw (158 GiB, KL 0,253, top-1 78,7%) ofrecen menor huella pero peor fidelidad. Todas las builds dsx requieren el runtime dsx; no se dispone de comparación con modelos de otros desarrolladores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización, no un modelo nuevo: hereda los sesgos, la toxicidad y el riesgo de alucinación del checkpoint base. No se han publicado evaluaciones de sesgo ni de alucinación en la información disponible.
-- Pérdida de fidelidad medible: KL 0,049, top-1 90,6% y perplejidad 8,71 frente a 8,56 del FP8. La degradación es baja, pero el 9,4% de discrepancia top-1 puede importar en tareas sensibles; hay que validar en el dominio objetivo.
-- Selección de expertos sesgada al texto agentico: los 8.804 expertos que conservan MXFP4 se eligieron por frecuencia de routing medida sobre texto agentico. Dominios con otro patrón de activación, como multilingüe, visión o código muy especializado, pueden caer en expertos recomprimidos a 3 bits.
-- No determinismo: las sumas atómicas del runner producen KL 0,047-0,051 en ejecuciones repetidas y pueden cambiar elecciones de expertos casi empatadas. No es un modelo reproducible bit a bit.
-- Hardware y despliegue restrictivos: requiere una MI325X con 256 GiB HBM3E, ROCm 7, unos 160 GB de RAM y unos 473 GB de almacenamiento. No cabe en GPU de consumo y no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Contexto largo pero costoso: 256K tokens caben, pero el prefill de 128K baja a 1.160 tok/s y el indexador de atención ralentiza los prompts largos. El tiempo de arranque y la latencia del primer token no están documentados.
-- Idiomas no declarados: no se puede garantizar un rendimiento adecuado en castellano; la model card no lista idiomas soportados.
-- Tool calling y agent
+- La calidad se degrada respecto al FP8 original: KL 0,049, top-1 90,6% y perplejidad 8,71 frente a 8,56. Aceptable para muchas tareas, pero no idéntico al checkpoint.
+- Los Engram no residen en HBM: dependen de NVMe y de la caché de páginas del host, lo que puede introducir latencia variable y exige disco rápido y ~160 GB de RAM.
+- El prefill se ralentiza con prompts largos (1.160 tok/s a 128K frente a 1.640 tok/s a 4K) por el coste del indexador de atención.
+- Las mediciones de velocidad no se tomaron todas con la misma revisión del runtime, y existe una comprobación de exactitud de decodificación sin resolver según la documentación del proyecto.
+- Las cifras de calidad del perfil de código provienen de una evaluación anterior con la misma colocación de expertos, no de una evaluación fresca de la build final.
+- El resultado puede variar ligeramente entre ejecuciones (KL 0,047 en otra tirada) por el orden no determinista de las sumas con atómicas en coma flotante, que altera elecciones de expertos casi empatadas.
+- El perfil de código re-cuantiza expertos a 3 bits en tiempo de carga, lo que reduce la calidad (top-1 ~88,3%) a cambio de concurrencia.
+- Dependencia de un runtime específico (dsx) y de hardware AMD MI325X con ROCm 7; no hay soporte documentado para vLLM, llama.cpp u Ollama.
+- Idiomas soportados, sesgos y tasas de alucinación del modelo base: no disponible en la información proporcionada.
+- Licencia MIT en esta build, pero conviene verificar los términos del modelo base DeepSeek-V4.1-Flash-1017 para uso comercial.
+
+## Enlaces
+
+- Hugging Face (esta build): https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-mxfp4
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Build dsx-t16: https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-t16
+- Build dsx-ud: https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-ud
+- Build dsx-2bit: https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit
+- Repositorio del runtime dsx: https://github.com/lxe/dsx
+- README del runner AMD: https://github.com/lxe/dsx/blob/main/amd/README.md
+- Estado de mediciones: https://github.com/lxe/dsx/blob/main/docs/current-state.md
+- Conjunto de evaluación Lucebox 1017: https://huggingface.co/Lucebox/DeepSeek-V4.1-Flash-1017-ROCMFP-GGUF

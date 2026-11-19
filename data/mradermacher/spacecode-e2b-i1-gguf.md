@@ -2,90 +2,94 @@
 
 ## Resumen
 
-SpaceCode-E2B-i1-GGUF es una colección de cuantizaciones en formato GGUF con matriz de importancia (imatrix) del modelo base SpaceGhost/SpaceCode-E2B, realizadas por el cuantizador comunitario mradermacher. El modelo base es un modelo de código multimodal (etiquetado con visión y código) de aproximadamente 4.647 millones de parámetros, orientado a ingeniería de software, con especial énfasis en desarrollo móvil con React Native, Android y Expo, así como TypeScript y Python.
+SpaceCode-E2B-i1-GGUF es la colección de cuantizaciones GGUF, generadas con imatrix, del modelo SpaceCode-E2B desarrollado por SpaceGhost. El modelo base es un modelo multimodal (texto e imagen) especializado en ingeniería de software, con etiquetas que apuntan a dominios concretos como React Native, Android, TypeScript y Python, y construido sobre la familia Gemma (la etiqueta `gemma4` aparece en los metadatos). El repositorio que nos ocupa no contiene los pesos originales, sino las versiones cuantizadas publicadas por mradermacher para su uso con llama.cpp y ecosistemas compatibles.
 
-La relevancia de esta ficha radica en que el repositorio no es un modelo nuevo, sino la versión cuantizada que permite ejecutar el modelo base en hardware de consumo mediante llama.cpp u Ollama. Las cuantizaciones imatrix (weighted) suelen ofrecer mejor calidad que las cuantizaciones estáticas a tamaños equivalentes, especialmente en los niveles bajos (Q2 y Q3), donde la matriz de importancia reduce la degradación del perplexity.
+El modelo cuenta con 4.647.450.147 parámetros totales según los safetensors del modelo base, lo que lo sitúa en la categoría de modelos densos de aproximadamente 4.600 millones de parámetros. Está pensado para tareas de asistencia en programación con soporte de visión, es decir, puede procesar capturas de pantalla, diagramas o interfaces de usuario además de código fuente. Los idiomas declarados son portugués e inglés.
 
-El modelo base se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. El repositorio incluye cuantizaciones desde i1-Q2_K (3,1 GB) hasta i1-Q6_K (3,9 GB), además del archivo imatrix para generar cuantizaciones propias. Los idiomas declarados son inglés y portugués, y el modelo está etiquetado como conversacional y multimodal (visión).
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de código multimodal en hardware de consumo gracias a las cuantizaciones de 3 a 4 GB, y en que documenta con precisión qué se sabe y qué no se sabe del modelo, dado que la información publicada es limitada y no incluye resultados de benchmarks ni detalles de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer, según etiqueta transformers) |
-| Parametros totales | 4.647.450.147 (~4,65 B) |
-| Parametros activos | no disponible (no hay indicios de que sea MoE) |
+| Arquitectura | no disponible (etiqueta `gemma4` en metadatos; familia Gemma) |
+| Parametros totales | 4.647.450.147 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (todas con imatrix) |
-| Idiomas soportados | ingles (en), portugues (pt) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado a partir de safetensors del modelo base) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (más imatrix para generar cuantizaciones propias) |
+| Idiomas soportados | pt, en |
+| Licencia | gemma-terms-of-use (marcada como `other` con enlace a los términos de Gemma) |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tamano del repo | 50,2 GB (incluye todas las cuantizaciones) |
+| Rango de tamano de las cuantizaciones | 3,1 GB (i1-Q2_K) a 3,9 GB (i1-Q6_K) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio analizado no describe la arquitectura del modelo base, ya que se limita a distribuir cuantizaciones GGUF. Por los metadatos de Hugging Face sabemos que el modelo base (SpaceGhost/SpaceCode-E2B) tiene 4.647.450.147 parametros en safetensors, que esta cuantizado con la libreria transformers y que se etiqueta como multimodal (vision) y de codigo. La cuantizacion imatrix se calcula a partir de un conjunto de calibracion para ponderar la importancia de cada tensor, tecnica popularizada por ikawrakow en llama.cpp que mejora la calidad de los cuants bajos.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. Los metadatos incluyen la etiqueta `gemma4`, lo que sugiere que el modelo base deriva de la familia Gemma de Google, y la etiqueta `unsloth` apunta a que el ajuste fino se realizó con las herramientas de Unsloth. El modelo es multimodal (etiquetas `vision` y `multimodal`), por lo que incorpora un codificador visual además del transformer de lenguaje, aunque no se especifica su configuración ni el número de tokens de entrenamiento.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre el uso de tecnicas como RLHF o DPO. Las etiquetas del modelo base (software-engineering, react-native, android, expo, typescript, python) sugieren un entrenamiento o fine-tuning enfocado en datos de desarrollo de software movil, pero el detalle concreto no esta disponible.
+Tampoco se documentan la composición del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. El repositorio de cuantizaciones indica que se han generado cuantizaciones ponderadas con imatrix, lo que mejora la calidad de las cuantizaciones de baja precisión respecto a las estáticas. Las cuantizaciones estáticas están disponibles en un repositorio separado, y los ficheros mmproj (proyección multimodal) se encuentran en ese repositorio estático, no en el de imatrix.
 
 ## Capacidades
 
-- Generacion de codigo: el modelo base esta especializado en codigo, con enfasis en TypeScript, Python, React Native, Android y Expo, segun las etiquetas del repositorio.
-- Capacidades multimodales: etiquetado con "vision" y "multimodal", lo que indica entrada de imagenes (el repositorio de cuantizacion no incluye archivo mmproj, segun el campo skip_mmproj vacio; no se confirma el soporte en llama.cpp).
-- Uso conversacional: etiquetado como "conversational".
-- Cuantizaciones con imatrix: mejor relacion calidad/tamano en niveles bajos de cuantizacion frente a cuants estaticos.
-- Compatibilidad con llama.cpp y Ollama: los GGUF pueden ejecutarse localmente en CPU, GPU o configuraciones hibridas.
-- Soporte de tool calling, agentes y multi-step reasoning: no disponible (no documentado en la model card).
+- Generación de código en TypeScript, Python y contextos de React Native y Android, según las etiquetas del modelo.
+- Comprensión de imágenes: el modelo es multimodal y puede procesar entradas visuales junto con texto (capturas de pantalla, diagramas, interfaces).
+- Conversación multi-turno: la etiqueta `conversational` indica soporte para diálogo.
+- Asistencia en ingeniería de software: la etiqueta `software-engineering` sugiere un ajuste orientado a tareas de desarrollo.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas a portugués e inglés según los metadatos.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Desarrollo de aplicaciones React Native y Expo: el modelo puede asistir en la generacion y depuracion de componentes, pantallas y configuraciones de Expo, dado que el modelo base esta etiquetado especificamente para este ecosistema.
-- Asistencia de codigo en local sin enviar datos a la nube: con la cuantizacion i1-Q4_K_M (3,5 GB) cabe en portatiles y GPUs de consumo, ideal para completar codigo en editores con privacidad total.
-- Migracion y refactorizacion de codigo TypeScript y Python: util para traducir logicas entre estos lenguajes en proyectos de tamano pequeno y mediano dentro de su ventana de contexto.
-- Prototipado rapido de apps Android: generacion de esqueletos de proyecto, pantallas y logica de negocio en Kotlin/TypeScript via React Native.
-- Ejecucion en dispositivos de bajos recursos: las cuantizaciones i1-Q2_K e i1-IQ3_S (3,1-3,2 GB) permiten inferencia en CPUs modestas o en equipos sin GPU dedicada.
-- Creacion de cuantizaciones personalizadas: el archivo imatrix de 0,1 GB permite a usuarios avanzados generar sus propios cuants ajustados a su hardware.
-- Integracion en Ollama para asistentes locales: despliegue sencillo como asistente conversacional de programacion en estaciones de trabajo de desarrollo.
+- Asistencia de código en el IDE: el modelo puede generar y completar código en TypeScript y Python, integrándose en extensiones de editor que envían fragmentos de código y reciben sugerencias, con un tamaño de cuantización de 3,5 GB que permite ejecución local.
+- Revisión de capturas de pantalla de interfaces: gracias a su capacidad de visión, puede analizar imágenes de pantallas de aplicaciones React Native o Android y describir problemas de maquetación o sugerir cambios de código.
+- Generación de componentes React Native: el ajuste específico en este framework permite pedirle componentes, hooks o estilos concretos para aplicaciones móviles.
+- Explicación de código heredado: con el contexto conversacional, se le puede pasar un fichero y solicitar explicaciones paso a paso en inglés o portugués.
+- Automatización de tareas de refactorización local: al ejecutarse con llama.cpp en una máquina de desarrollo, puede procesar ficheros sin enviar código a servicios externos, lo que reduce riesgos de confidencialidad.
+- Prototipado rápido de scripts de automatización en Python: útil para generar scripts de procesamiento de datos o utilidades de línea de comandos en entornos con recursos limitados.
+- Traducción técnica inglés-portugués de documentación de software: el soporte declarado de ambos idiomas permite asistir en la localización de textos técnicos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de un modelo de ~4,65 B de parametros, los tamaños de los ficheros GGUF van de 3,1 GB (i1-Q2_K) a 3,9 GB (i1-Q6_K); anade margen para el KV cache segun la longitud de contexto (no disponible). Una GPU con 6-8 GB de VRAM ejecuta comodamente los cuants Q4-Q6; con 4 GB caben los cuants Q2-Q3.
-- GPU recomendadas: RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4090 o superiores para contextos largos y alta velocidad; en CPU, procesadores modernos con 8-16 GB de RAM libres son suficientes dado el tamano reducido de los ficheros.
-- Cabe en GPUs de consumo: si, en practicamente cualquier GPU moderna de 6 GB o mas con cuants Q4_K_M o inferiores; incluso en portatiles con GPU integrada usando descarga parcial de capas.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama (etiqueta incluida en el repo), LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede desplegarse con transformers o vLLM.
-- Latencia y throughput: no disponibles; dada la cuantizacion y el tamano (~3,5 GB en Q4_K_M), se espera inferencia fluida en GPU de consumo y velocidades aceptables en CPU moderno, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 3,1 GB para i1-Q2_K, 3,5 GB para i1-Q4_K_M y 3,9 GB para i1-Q6_K, más el overhead del contexto y, en su caso, del proyector multimodal.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para las cuantizaciones Q4; una RTX 3060 de 12 GB o superior permite ejecutar la cuantización Q6_K con contexto amplio. Para despliegue en servidor, A100 o H100 no son necesarias dado el tamaño del modelo.
+- Cabe en GPU de consumo: sí, en tarjetas con 6 GB o más de VRAM (GTX 1660, RTX 3050, RTX 4060, etc.) usando cuantizaciones Q4; también puede ejecutarse en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), y servidores compatibles con la API de endpoints indicada en los metadatos. El repositorio declara `endpoints_compatible`.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Especializacion | Notas |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpaceCode-E2B (este, cuantizado) | ~4,65 B | GGUF (imatrix) | Apache 2.0 | Codigo, React Native, Expo, vision | Cuants de 3,1-3,9 GB |
-| Qwen2.5-Coder-7B-Instruct | 7 B | safetensors, GGUF comunitario | Apache 2.0 | Codigo general | Mayor tamano, benchmarks publicados |
-| DeepSeek-Coder-V2-Lite-Instruct | 16 B (2,4 B activos, MoE) | safetensors, GGUF comunitario | DeepSeek License (uso comercial restringido) | Codigo general | MoE, mas rapido por token |
-| CodeLlama-7B-Instruct | 7 B | safetensors, GGUF comunitario | Llama 2 Community License | Codigo general | Modelo mas antiguo, contexto mayor documentado |
+| SpaceCode-E2B (este) | 4.647 M | no disponible | Sí (visión) | gemma-terms-of-use | GGUF en HF |
+| Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Comparacion orientativa por categoria (modelos de codigo de tamano pequeno-mediano); los datos de rendimiento de SpaceCode-E2B no estan disponibles, por lo que no es posible comparar calidad de forma rigurosa.
+No se dispone de información sobre modelos comparables en la documentación proporcionada, por lo que no es posible establecer una comparativa rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Documentacion escasa: la model card del repositorio de cuantizacion no describe capacidades, contexto ni benchmarks; hay que acudir al modelo base para mas detalle, y tampoco alli se dispone de datos verificados en esta ficha.
-- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar codigo incorrecto o APIs inexistentes; revisa siempre el codigo generado antes de usarlo en produccion.
-- Idiomas: declarado para ingles y portugues; el rendimiento en castellano no esta documentado y puede ser inferior.
-- Multimodalidad sin confirmar en GGUF: aunque el modelo base esta etiquetado como vision/multimodal, este repo no incluye archivo mmproj, por lo que la entrada de imagenes via llama.cpp no esta garantizada.
-- Cuants bajos: las variantes Q2_K y Q3 tienen perdida de calidad notable (el propio autor senala alternativas mejores en cada tamano); usa Q4_K_M o superior para trabajo serio.
-- Licencia: Apache 2.0 del modelo base y de la cuantizacion; sin restricciones comerciales relevantes, pero verifica la procedencia del modelo base ante posibles derivaciones de modelos con licencias mas restrictivas.
-- Contexto: longitud de ventana no documentada; no asumas contextos largos sin verificarlo empiricamente.
+- La información publicada es muy escasa: no hay benchmarks, no se detalla el contexto máximo ni la composición del entrenamiento, lo que dificulta evaluar su calidad real frente a alternativas.
+- Riesgo de alucinación inherente a los modelos de lenguaje; en tareas de código puede generar APIs inexistentes o firmas incorrectas, por lo que requiere verificación.
+- Idiomas limitados a portugués e inglés; el rendimiento en castellano no está garantizado ni documentado.
+- La licencia `gemma-terms-of-use` impone restricciones adicionales al uso comercial; es necesario revisar los términos de Gemma antes de desplegarlo en producción.
+- El repositorio contiene únicamente cuantizaciones; los ficheros mmproj para la parte visual están en el repositorio estático, y su uso conjunto debe verificarse.
+- Las cuantizaciones de 2 y 3 bits pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
+- No hay información sobre sesgos conocidos ni sobre el proceso de alineación.
+- El modelo base tiene aproximadamente 4.600 millones de parámetros, por lo que su capacidad de razonamiento complejo es limitada en comparación con modelos de mayor tamaño.
 
 ## Enlaces
 
-- Repositorio de la cuantizacion: https://huggingface.co/mradermacher/SpaceCode-E2B-i1-GGUF
+- Repositorio de cuantizaciones imatrix: https://huggingface.co/mradermacher/SpaceCode-E2B-i1-GGUF
+- Repositorio de cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/SpaceCode-E2B-GGUF
 - Modelo base: https://huggingface.co/SpaceGhost/SpaceCode-E2B
-- Cuants estaticos del mismo modelo: https://huggingface.co/mradermacher/SpaceCode-E2B-GGUF
-- Pagina de descargas resumida: https://hf.tst.eu/model#SpaceCode-E2B-i1-GGUF
-- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del cuantizador: https://www.nethype.de/
+- Página de descargas del autor: https://hf.tst.eu/model#SpaceCode-E2B-i1-GGUF
+- Términos de licencia de Gemma: https://ai.google.dev/gemma/terms
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfica de comparación de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -2,85 +2,88 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8` es una versión "abliterated" (desensibilizada) del modelo base Qwen/Qwen3.8-Flash-Next, desarrollada por el usuario orcarouter. Se trata de un modelo de lenguaje multimodal de tipo MoE (Mixture of Experts) con aproximadamente 180.000 millones de parámetros totales, de los cuales solo 6.000 millones se activan por token, lo que lo hace computacionalmente eficiente para su tamaño. Está diseñado para eliminar los rechazos excesivos (over-refusal) típicos de los modelos alineados, manteniendo las capacidades completas del modelo original, incluyendo visión, razonamiento, tool calling y modo de pensamiento.
+Qwen3.8-Flash-Next-Uncensored-FP8 es una variante "abliterated" (sin las capas de rechazo alineadas) del modelo Qwen3.8-Flash-Next de Alibaba Qwen, publicada por el usuario orcarouter en Hugging Face. Se distribuye en formato FP8 con cuantización por bloques (block-FP8), pensada para su despliegue en vLLM, y conserva la arquitectura Mixture-of-Experts (MoE) multimodal del modelo original, con aproximadamente 180.000 millones de parámetros totales según los pesos en safetensors. El pipeline declarado es image-text-to-text, es decir, visión-lenguaje.
 
-La relevancia de este modelo radica en su doble naturaleza: por un lado, hereda la arquitectura de próxima generación de Qwen (preview de Qwen4) con innovaciones en atención, residuales, embeddings y optimización; por otro, ofrece una versión sin censura que resulta útil para tareas de red-teaming, investigación en seguridad de IA y aplicaciones que requieren respuestas sin restricciones artificiales. El modelo está cuantizado en FP8 (block-FP8), lo que reduce su huella de memoria respecto a la versión original, y se distribuye bajo licencia Apache 2.0, aunque su acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales.
+El modelo está orientado explícitamente a red-teaming y pruebas de seguridad de IA: la etiqueta `ai-red-team` y la naturaleza "uncensored" indican que se ha eliminado o atenuado la alineación de seguridad para permitir generar contenido que el modelo base rechazaría. Esto lo hace útil para auditorías de sistemas de moderación y evaluación de robustez, pero inadecuado para despliegues de cara al público sin capas adicionales de control.
+
+La relevancia actual radica en dos factores: por un lado, la familia Qwen3.8 introduce soporte de razonamiento, function calling y decodificación multi-token prediction (MTP), reflejados en los tags; por otro, la cuantización FP8 por bloques reduce el peso del repositorio a 185,6 GB, lo que abarata sustancialmente el servicio en GPUs con soporte FP8 nativo (Hopper y posteriores). El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (GDN + QSA), preview de Qwen4 |
-| Parametros totales | 179.999.981.459 (aprox. 180B) |
-| Parametros activos | 6B (por token) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | FP8 (block-FP8), GGUF (disponible en versiones locales) |
-| Idiomas soportados | Inglés (en), Chino (zh) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) multimodal (image-text-to-text), con soporte MTP |
+| Parametros totales | 179.999.981.459 (~180B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8 con cuantizacion por bloques (block-FP8); no se documentan otros formatos en la informacion disponible |
+| Idiomas soportados | ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (también GGUF para llama.cpp) |
+| Formato de pesos | safetensors (FP8), compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next introduce una arquitectura híbrida que combina atención GDN (Gated Delta Network) con QSA (Quadratic Self-Attention), junto con mejoras en los residuales, embeddings y la optimización del entrenamiento. Según la documentación oficial, esta actualización mejora la capacidad del modelo a la vez que optimiza la eficiencia computacional, la capacidad de almacenamiento y la estabilidad del entrenamiento. El modelo principal tiene 125.000 millones de parámetros, complementados con 51.000 millones de parámetros adicionales en embeddings N-gram, sumando un total de 180.000 millones, con solo 6.000 millones activados por token.
+El modelo hereda la arquitectura del Qwen3.8-Flash-Next base: un transformer de tipo Mixture-of-Experts con capacidad multimodal de entrada (imagen y texto) y salida de texto. Los tags confirman componentes de razonamiento, function calling y decodificación con multi-token prediction (MTP), una técnica que permite predecir varios tokens por paso para aumentar el throughput en inferencia. No se dispone de información sobre el número de parámetros activos por token, el número de expertos ni la distribución de capas.
 
-La versión "Uncensored" aplica una técnica de abliteration a nivel de tensor, que elimina selectivamente las direcciones de rechazo en el espacio de activaciones del modelo, manteniendo intactos el vision tower y la cabeza MTP (Multi-Token Prediction). Según el autor, esta técnica logra un 0% de over-refusal en el conjunto XSTest y una tasa de rechazo de 0-6% en la suite A/B, sin pérdida medible de capacidades. El modelo conserva el contexto nativo de 262.144 tokens y todas las funcionalidades del modelo base, incluyendo visión, tool calling y razonamiento.
+Respecto al entrenamiento, los datos disponibles no detallan el volumen de tokens, la composición del corpus ni si hubo etapas de RLHF o DPO en el modelo base. La modificación respecto al original es un proceso de "abliteration" aplicado por el autor de la publicación (orcarouter), que típicamente consiste en identificar y neutralizar direcciones de activación asociadas al rechazo de peticiones. No se documenta la metodología exacta, el conjunto de evaluación usado para verificar la eliminación del rechazo ni si se realizó un ajuste posterior para preservar capacidades. La cuantización a FP8 por bloques es la otra intervención técnica relevante: agrupa pesos en bloques con escalas compartidas, lo que reduce el error de cuantización frente a FP8 por tensor.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-step con modo de pensamiento (thinking mode) activable.
-- Comprensión de imágenes (image-text-to-text) gracias al vision tower integrado, con soporte para prompts multimodales.
-- Tool calling / function calling: puede invocar herramientas externas y APIs de forma estructurada.
-- Capacidades de agente: soporta razonamiento encadenado y ejecución de tareas complejas con múltiples pasos.
-- Multilingüe: entrenado principalmente en inglés y chino, con posible transferencia a otros idiomas.
-- Abliterated: responde sin rechazos artificiales, útil para red-teaming y evaluación de seguridad.
-- MTP (Multi-Token Prediction): predice múltiples tokens por paso, mejorando la eficiencia de decodificación.
-- Compatible con vLLM y otras plataformas de inferencia (endpoints_compatible).
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Comprensión de imágenes (pipeline image-text-to-text): descripción, extracción de información y respuesta a preguntas sobre contenido visual.
+- Razonamiento explícito, con soporte declarado de modo de razonamiento en los tags.
+- Function calling / tool calling, lo que permite integración en pipelines con herramientas externas.
+- Decodificación multi-token prediction (MTP) para acelerar la generación.
+- Generación de contenido sin las restricciones de seguridad del modelo base, orientada a red-teaming.
+- No se documentan capacidades de audio ni de salida multimodal (solo texto de salida).
 
 ## Casos de uso
 
-- Red-teaming y auditoría de seguridad: el modelo puede usarse para probar sistemas de moderación y detectar vulnerabilidades en otros modelos, gracias a su ausencia de rechazos y su capacidad de generar contenido que otros modelos filtrarían.
-- Atención al cliente automatizada: con su contexto de 262K tokens, puede gestionar conversaciones multi-turno largas, manteniendo el historial completo y resolviendo consultas complejas con razonamiento paso a paso.
-- Generación de código en producción: soporta tool calling y puede integrarse en pipelines de CI/CD para generar, revisar y depurar código, aprovechando su capacidad de razonamiento y su contexto amplio para manejar repositorios enteros.
-- Análisis de documentos multimodales: al combinar visión y texto, puede extraer información de imágenes, diagramas y documentos escaneados, útil en sectores como legal, médico o financiero.
-- Asistentes de investigación científica: su modo de razonamiento y su capacidad de procesar largos contextos permiten sintetizar artículos, formular hipótesis y generar experimentos, con la ventaja de no rechazar preguntas sobre temas sensibles.
-- Desarrollo de agentes autónomos: su soporte para function calling y razonamiento multi-step lo hace adecuado para construir agentes que interactúan con APIs, navegan por la web o ejecutan tareas administrativas complejas.
+- Red-teaming de sistemas de moderación: el modelo puede generar respuestas que un modelo alineado rechazaría, lo que permite construir conjuntos de prueba adversarios para evaluar clasificadores de contenido y filtros de seguridad antes de desplegarlos.
+- Auditoría de robustez de asistentes: usar la variante sin censura como contraparte del modelo alineado para medir la tasa de rechazo, la consistencia y la deriva de comportamiento entre ambos en las mismas peticiones.
+- Evaluación de sesgos y toxicidad: generar grandes volúmenes de texto con temáticas sensibles para alimentar métricas de sesgo y análisis de toxicidad en pipelines de investigación, con la ventaja de que el modelo no bloquea la generación.
+- Procesamiento de documentos con imágenes: al ser image-text-to-text, puede extraer y resumir información de capturas, formularios escaneados o diagramas en flujos internos donde el contenido no puede enviarse a APIs externas.
+- Asistencia en investigación sobre alineación: comparar las activaciones y distribuciones de salida del modelo abliterated frente al base para estudiar qué representaciones internas codifican el rechazo.
+- Despliegue interno de alto throughput en vLLM: el formato block-FP8 y el soporte MTP permiten servir el modelo en GPUs Hopper con menor huella de memoria que la versión BF16, adecuado para entornos de laboratorio con demanda concurrente.
+- Generación de datos sintéticos para entrenamiento: producir corpus diversos, incluidos temas que los modelos alineados evitan, para aumentar la cobertura de datasets de ajuste, siempre con revisión humana posterior.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta versión "Uncensored" en la información disponible. El autor menciona que la abliteration no produce pérdida medible de capacidades, pero no proporciona cifras concretas de MMLU, HumanEval u otros tests estándar. Para el modelo base Qwen3.8-Flash-Next, la documentación oficial indica mejoras en capacidad y eficiencia, pero no se incluyen tablas de resultados en los materiales consultados. Se recomienda consultar el repositorio oficial de Qwen para obtener datos de evaluación del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 180B parámetros en FP8 (1 byte por parámetro), se necesitan aproximadamente 180 GB de VRAM para la inferencia completa. Las versiones GGUF cuantizadas (por ejemplo, Q4_K_M) pueden reducir este requisito a ~90-100 GB.
-- GPU recomendadas: para FP8 completo, se requieren GPUs de centro de datos como NVIDIA A100 80GB (mínimo 3 en paralelo), H100 80GB (mínimo 3) o A6000 48GB (mínimo 4). Para GGUF cuantizado, una sola GPU de 80GB (A100, H100) o incluso una RTX 4090 24GB con cuantización agresiva (Q2_K) podría ser suficiente, aunque con pérdida de calidad.
-- No cabe en GPUs de consumo estándar (8-24 GB) sin cuantización extrema y offloading a CPU, lo que degradaría el rendimiento.
-- Opciones de despliegue: vLLM (soporte nativo para FP8 y block-FP8), llama.cpp (para GGUF), Ollama (para GGUF), TGI (Text Generation Inference). También es compatible con endpoints de Hugging Face.
-- Latencia y throughput: no se dispone de datos medidos. En configuraciones multi-GPU con vLLM, se espera un throughput de decenas de tokens por segundo, pero depende del hardware y la configuración.
+- VRAM estimada para inferencia: el repositorio ocupa 185,6 GB en FP8, por lo que se necesita al menos ese espacio en memoria de GPU para cargar los pesos completos, más overhead de KV cache y activaciones. En la práctica, un nodo con 8 GPU de 24 GB (192 GB) queda al límite; se recomienda un mínimo de 256 GB de memoria agregada.
+- GPU recomendadas: H100 (80 GB) o H200 en configuraciones multi-GPU (4x H100 cubren los pesos con margen); también GPU con soporte FP8 nativo como L40S. Las A100 no tienen FP8 nativo y requerirán de-cuantización o kernels emulados, con penalización de rendimiento.
+- GPU de consumo: no cabe en ninguna GPU consumer individual (RTX 4090 con 24 GB, RTX 5090 con 32 GB). Sería necesario un clúster multi-GPU consumer, impractical por ancho de banda de interconexión.
+- Opciones de despliegue: vLLM es la vía recomendada por los tags y por el formato block-FP8; transformers sirve para carga y pruebas. No se documenta soporte GGUF ni Ollama en la información disponible, lo que descarta llama.cpp como opción directa.
+- Latencia y throughput: no disponibles. El uso de MTP debería mejorar el throughput frente a decodificación autoregresiva estándar, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 180B | 6B | 262K | Apache 2.0 | Modelo original sin abliteration |
-| Qwen3.8-27B (orcarouter) | 27B | 27B (dense) | 262K | Apache 2.0 | Versión abliterated densa, más ligera |
-| Mixtral 8x7B | 46.7B | 12.9B | 32K | Apache 2.0 | MoE denso, sin visión, contexto menor |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8 | ~180B (MoE) | no disponible | Apache 2.0 | safetensors FP8 | Variante abliterated, vision-lenguaje, acceso gated |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180B (MoE) | no disponible | Apache 2.0 | safetensors | Modelo original alineado; referencia para comparar tasas de rechazo |
+| Alternativas abliterated de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-La comparativa se basa en datos públicos. El Qwen3.8-Flash-Next destaca por su contexto extremadamente largo y su eficiencia MoE, mientras que el Qwen3.8-27B es una alternativa más ligera para entornos con menos recursos. Mixtral 8x7B es un competidor MoE establecido, pero con menor contexto y sin capacidades multimodales.
+No se dispone de información suficiente para establecer comparaciones cuantitativas con modelos de otros fabricantes de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser una versión abliterated, puede generar contenido ofensivo, dañino o ilegal sin filtros. No debe usarse en aplicaciones orientadas al público sin supervisión humana.
-- Riesgo de alucinación: como todos los modelos de lenguaje, puede inventar hechos, especialmente en dominios especializados. El contexto largo no elimina este riesgo.
-- Limitaciones de idioma: solo está entrenado explícitamente en inglés y chino; el rendimiento en otros idiomas puede ser inferior.
-- Acceso restringido: el modelo en Hugging Face es gated, lo que requiere aceptar condiciones adicionales. Esto puede limitar su uso en entornos corporativos.
-- Requisitos de hardware elevados: la versión FP8 completa necesita al menos 180 GB de VRAM, lo que excluye la mayoría de estaciones de trabajo individuales.
-- Sin garantías de seguridad: al eliminar los rechazos, el modelo puede ser explotado para generar malware, discursos de odio o contenido ilegal. El autor lo posiciona para red-teaming, no para producción general.
+- Ausencia de alineación de seguridad: el proceso de abliteration elimina o atenúa los rechazos, por lo que el modelo puede producir contenido dañino, ilegal o sexualmente explícito. No debe exponerse sin moderación adicional.
+- Riesgo elevado de alucinación en temas sensibles: al no aplicar rechazo, el modelo puede generar afirmaciones falsas con alta confianza en lugar de declinar responder.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Licencia Apache 2.0 permite uso comercial, pero el despliegue comercial de una variante sin censura puede incumplir normativas sectoriales (por ejemplo, la Ley de Servicios Digitales en la UE o la regulación de contenido en plataformas) y las políticas de los proveedores de inferencia.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad en entornos corporativos con políticas de aprovisionamiento estrictas.
+- No se documenta la metodología de abliteration ni evaluaciones de degradación de capacidades; es posible que el modelo haya perdido rendimiento en tareas que dependían de la alineación.
+- El tamaño (185,6 GB) y el requisito de FP8 nativo limitan el despliegue a infraestructura especializada; no es viable en entornos de desarrollo convencionales.
+- No hay información sobre sesgos medidos, ni sobre el contexto máximo real, lo que impide planificar con garantías cargas de trabajo de contexto largo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8
-- Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Blog de orcarouter sobre ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Página en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
-- Receta vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
-- Página de Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio de vLLM (motor de inferencia recomendado): https://github.com/vllm-project/vllm
+- Documentación de transformers: https://huggingface.co/docs/transformers
+- No se han encontrado en la información proporcionada papers, blogs o demos adicionales específicos de esta variante.

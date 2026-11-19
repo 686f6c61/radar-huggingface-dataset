@@ -2,119 +2,103 @@
 
 ## Resumen
 
-Orukeet es un reconocedor de voz multilingüe de 25 idiomas desarrollado por Oruk AI (con colaboración de Stanford University, University of Cambridge, OpenWhispr y Hoid) a partir de nvidia/parakeet-tdt-0.6b-v3. El modelo conserva la arquitectura del original: un codificador FastConformer de 24 capas con transductor token-and-duration (TDT) y 627.008.134 parámetros heredados. La innovación principal consiste en sustituir la mitad de los filtros depthwise temporales del codificador por 12.288 kernels de Gabor ajustados y congelados, de modo que solo 626.897.542 escalares permanecen entrenables.
+Orukeet es un modelo de reconocimiento automático del habla (ASR) multilingüe desarrollado por Oruk AI en colaboración con investigadores de Stanford University, University of Cambridge, OpenWhispr y Hoid. Se trata de un ajuste fino (finetune) del modelo NVIDIA Parakeet TDT 0.6B v3, sobre el que introduce una innovación arquitectónica concreta: sustituye la mitad de los filtros depthwise temporales del encoder por 12.288 kernels Gabor ajustados y congelados. El resultado es un modelo que mantiene el mismo número de parámetros que su base (627.057.286) pero mejora la precisión en 61 de las 74 particiones de test evaluadas.
 
-El modelo resuelve transcripción de voz multilingüe y multiacento, con mejoras reportadas frente a Parakeet en 61 de 74 particiones evaluadas, incluida LibriSpeech test-clean (1,46 % frente a 1,53 % de WER), test-other (2,86 % frente a 3,14 %) y FLEURS en inglés (3,82 % frente a 4,28 %). En las 25 lenguas de FLEURS el WER agrupado baja a 9,85 % frente a 11,01 %, una reducción relativa del 10,6 %.
+El modelo cubre 25 idiomas europeos (incluido el español) y está pensado para transcripción de grabaciones, medios, procesamiento por lotes en servidores y aplicaciones interactivas. Su relevancia actual radica en que demuestra que una modificación estructural ligera y bien fundamentada —la parametrización de filtros convolucionales como funciones Gabor— puede superar a un modelo base de referencia sin incrementar el coste computacional ni el tamaño del checkpoint.
 
-Es relevante porque demuestra que una parametrización inductiva (filtros de Gabor ajustados sobre la señal temporal) puede mejorar un modelo ASR ya entrenado sin aumentar el número de parámetros ni cambiar el tokenizador, y porque distribuye los mismos pesos en formatos NeMo, ONNX INT8, Q8 nativo y F16 nativo derivados del mismo checkpoint de la versión r3, lo que facilita el despliegue tanto en GPU como en entornos CPU con sherpa-onnx.
+La arquitectura subyacente es un FastConformer de 24 capas con transductor token-and-duration (TDT), exportable a NeMo, ONNX INT8, GGUF Q8 y F16 nativo, todos derivados del mismo checkpoint de la release r3 (`031c8ddab484`).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer de 24 capas con transductor token-and-duration (TDT); la mitad de los filtros depthwise temporales (12.288 de 24.576) sustituidos por funciones de Gabor ajustadas y congeladas |
-| Parámetros totales | 637.329.158 según safetensors; 627.008.134 heredados de Parakeet TDT 0.6B v3 |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Parámetros entrenables | 626.897.542 escalares; 110.592 taps seleccionados permanecen fijos |
-| Longitud de contexto | no disponible; es un modelo ASR, no expone ventana de contexto de tokens |
-| Tipos de cuantización | ONNX INT8, exportación nativa Q8, exportación nativa F16; evaluación con pesos FP32 y autocast BF16 en CUDA |
-| Idiomas soportados | 25: bg, hr, cs, da, nl, en, et, fi, fr, de, el, hu, it, lv, lt, mt, pl, pt, ro, ru, sk, sl, es, sv, uk |
-| Licencia | cc-by-sa-4.0 |
-| Formato de pesos | NeMo (.nemo), ONNX, GGUF, sherpa-onnx y pesos en safetensors |
-| Librería | nemo (nemo_toolkit[asr]==3.0.0) |
-| Modelo base | nvidia/parakeet-tdt-0.6b-v3 (finetune) |
-| Tamaño del repositorio | 5,5 GB |
-| Descargas / likes en Hugging Face | 2.444 descargas / 9 likes |
-| Fechas | creado el 09-09-2026, actualizado el 11-09-2026 |
+| Arquitectura | FastConformer de 24 capas con transductor token-and-duration (TDT); mitad de filtros depthwise temporales reemplazados por kernels Gabor ajustados y congelados |
+| Parametros totales | 627.057.286 (626.897.542 entrenables; 110.592 taps Gabor congelados) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | NeMo FP32, ONNX INT8, GGUF Q8 nativo, F16 nativo |
+| Idiomas soportados | 25: búlgaro, croata, checo, danés, neerlandés, inglés, estonio, finés, francés, alemán, griego, húngaro, italiano, letón, lituano, maltés, polaco, portugués, rumano, ruso, eslovaco, esloveno, español, sueco, ucraniano |
+| Licencia | CC BY-SA 4.0 |
+| Formato de pesos | safetensors, ONNX, GGUF, NeMo (.nemo) |
 
 ## Arquitectura y entrenamiento
 
-El modelo mantiene el codificador FastConformer de 24 capas, el transductor token-and-duration y el tokenizador de Parakeet. Cada bloque del codificador contiene 1.024 filtros depthwise temporales de nueve taps. La modificación consiste en ajustar una función de Gabor —g(t) = A·exp[−(t−μ)²/(2σ²)]·cos(2πf(t−μ)+φ), con t de −4 a 4— a cada uno de los 24.576 filtros y seleccionar globalmente los 12.288 con menor error cuadrático normalizado. La selección resultante asigna entre 175 y 748 kernels por capa, con un error RMS relativo mediano del 6,32 % y un corte en el percentil 13,30 %. Los 110.592 taps seleccionados quedan congelados; las exportaciones nativas materializan esos taps como pesos de convolución F16 convencionales, de forma que la inferencia no requiere código especial.
+Orukeet parte del encoder FastConformer de 24 capas de Parakeet TDT 0.6B v3, donde cada bloque contiene 1.024 filtros depthwise temporales de nueve taps. La modificación consiste en ajustar cada filtro a una función Gabor de la forma `g(t) = A·exp[-(t-μ)²/(2σ²)]·cos(2πf(t-μ)+φ)` para `t = -4,...,4`. Se ajustaron los 24.576 filtros y se seleccionaron globalmente los 12.288 con menor error cuadrático normalizado (entre 175 y 748 kernels por capa, con un error RMS relativo mediano del 6,32% y un corte del 13,30%). Los 110.592 taps seleccionados quedan congelados; el resto de parámetros escalares (626.897.542) permanecen entrenables. Las exportaciones nativas materializan los taps ajustados como pesos de convolución F16 convencionales.
 
-La construcción combina recuperación de Gabor mediante pérdida de transductor, emparejamiento del codificador y destilación de token y duración. A continuación se aplican 4.035 actualizaciones adicionales con tasa de aprendizaje baja para producir el checkpoint padre. La pasada final (r3) realiza 168 actualizaciones AdamW con un 3 % de warmup y decaimiento coseno de 5e-6 a 5e-7, sobre tres pasadas por 2.939 grabaciones de LibriSpeech test-other. Los objetivos de esa adaptación preservan mayúsculas y puntuación nativas y corrigen palabras de referencia, y la misma partición se usa para la selección de checkpoint. Una auditoría de exportación verifica que los 12.288 kernels ajustados permanecen exactos y que los otros 651 tensores de parámetros cambian.
+El proceso de construcción emplea pérdida de transductor, matching de encoder y destilación de token/duración para recuperar los kernels Gabor, seguido de 4.035 actualizaciones de bajo learning rate para producir el checkpoint padre. La pasada final r3 aplica 168 actualizaciones AdamW con warmup del 3% y decaimiento coseno de `5e-6` a `5e-7`, sobre tres pasadas por 2.939 grabaciones de LibriSpeech test-other, manteniendo el casing y la puntuación nativos. La misma partición se usa para la selección de checkpoint, y una auditoría de exportación verifica que los 12.288 kernels ajustados permanecen exactos.
 
 ## Capacidades
 
-- Reconocimiento automático de voz multilingüe en 25 idiomas (búlgaro, croata, checo, danés, neerlandés, inglés, estonio, finés, francés, alemán, griego, húngaro, italiano, letón, lituano, maltés, polaco, portugués, rumano, ruso, eslovaco, esloveno, español, sueco y ucraniano).
-- Transcripción de audio con vocabulario y puntuación derivados de los objetivos de entrenamiento, que preservan mayúsculas y puntuación nativas del texto de referencia.
-- Robustez multiacento y multidominio: mejora en 36 de 47 particiones de acentos y dominios, y en las 20 particiones de acentos y dominios en inglés.
-- Decodificación greedy por lotes con transductor TDT en NeMo (FP32 con autocast BF16 en CUDA).
-- Inferencia en CPU mediante exportaciones ONNX INT8, Q8 nativo y sherpa-onnx.
-- No dispone de tool calling ni function calling.
-- No dispone de capacidades de agente ni de razonamiento multi-paso.
-- No dispone de visión, audio comprensivo ni modo de pensamiento: es exclusivamente un modelo de transcripción de voz.
-- No hay información disponible sobre transcripción en streaming o por bloques.
+- Reconocimiento automático del habla multilingüe en 25 idiomas europeos, con soporte de acentos múltiples.
+- Transcripción con casing y puntuación nativos preservados.
+- Detección de idioma (`lang_detect: true`).
+- Marcas de tiempo a nivel de token (`timestamps: token`).
+- Procesamiento por lotes y streaming no soportado de forma nativa (`streaming: false`).
+- Traducción no soportada (`translate: false`).
+- Exportación a múltiples runtimes: NeMo, ONNX INT8, GGUF Q8, F16 nativo y Transformers FP32 mediante `ParakeetForTDT` sin código remoto personalizado.
+- Compatibilidad con Buzz a través de su opción de modelos de Hugging Face.
 
 ## Casos de uso
 
-- Transcripción por lotes de grabaciones y medios: el modelo procesa audio con decodificación greedy por lotes en NeMo y mejora a Parakeet en 61 de 74 particiones evaluadas, por lo que es adecuado para pipelines de transcripción masiva de archivos ya existentes.
-- Subtitulado y postproducción audiovisual: al preservar mayúsculas y puntuación en los objetivos de entrenamiento y bajar el WER en test-other (2,86 % frente a 3,14 %), reduce la carga de corrección manual de subtítulos.
-- Atención al cliente y análisis de llamadas: con soporte para 25 idiomas europeos puede transcribir conversaciones en centros de contacto multilingües antes de pasarlas a sistemas de análisis de calidad o búsqueda.
-- Dictado y aplicaciones interactivas en cliente: las exportaciones Q8 y F16, derivadas del mismo checkpoint, permiten integraciones locales con requisitos de baja latencia y sin enviar audio a servidores externos.
-- Servidores y workers de transcripción en CPU: la exportación ONNX INT8 y el soporte sherpa-onnx permiten desplegar el modelo en instancias sin GPU, con un peso de pesos cuantizados en torno a 0,7 GB.
-- Indexado y búsqueda de archivos de audio: transcribir grandes volúmenes de grabaciones para hacerlas buscables por texto, usando el WER bajo en inglés (1,46 % en test-clean) y el rendimiento multilingüe agrupado de FLEURS.
-- Evaluación comparativa de ASR multilingüe en investigación: el repositorio publica informes técnicos, hashes de artefactos y recetas de entrenamiento, lo que permite reproducir la línea de entrenamiento y comparar particiones de acentos y dominios.
-- Procesamiento de audio en dominios específicos con acento marcado: las 47 particiones de acentos y dominios evaluadas muestran una mejora agregada de 16,72 % a 15,25 % de WER, útil para adaptar transcripción a variedades dialectales del inglés y otras lenguas.
+- Transcripción de reuniones y notas de voz multilingües: el modelo cubre 25 idiomas europeos con detección automática de idioma, lo que permite procesar reuniones con participantes que alternan entre español, inglés, francés o alemán sin cambiar de modelo.
+- Subtitulado de medios audiovisuales: las marcas de tiempo a nivel de token facilitan la alineación de subtítulos con el audio en pipelines de postproducción, y el soporte de casing y puntuación nativos reduce el postprocesado.
+- Procesamiento por lotes en servidores: la exportación ONNX INT8 y GGUF Q8 permite desplegar workers de transcripción de alto rendimiento con menor huella de memoria, adecuados para volúmenes grandes de grabaciones archivadas.
+- Aplicaciones interactivas de dictado: el tamaño de 0,6B parámetros y las exportaciones F16 lo hacen viable en GPUs de consumo, permitiendo dictado en tiempo real en herramientas de escritorio.
+- Integración en asistentes de voz y centros de contacto: la detección de idioma y el WER bajo en inglés (3,82% en FLEURS) lo hacen adecuado para enrutamiento automático de llamadas y transcripción de conversaciones de atención al cliente.
+- Investigación en ASR multilingüe: la parametrización Gabor congelada y la auditoría de exportación documentada permiten reproducir y extender el experimento sobre otros checkpoints base de Parakeet.
+- Accesibilidad y documentación: transcripción de contenido audiovisual a texto en 25 idiomas para generar actas, resúmenes o documentos buscables.
 
 ## Benchmarks y rendimiento
 
-Evaluación con decodificación NeMo greedy-batch TDT, pesos FP32, autocast BF16 en CUDA y el mismo código de puntuación para ambos modelos. Menor es mejor.
+Datos declarados por el autor del modelo (no verificados de forma independiente):
 
-| Comparación | Grabaciones | WER Parakeet | WER Orukeet |
-|---|---:|---:|---:|
-| LibriSpeech test-clean | 2.620 | 1,53 % | 1,46 % |
-| LibriSpeech test-other | 2.939 | 3,14 % | 2,86 % |
-| FLEURS inglés | 647 | 4,28 % | 3,82 % |
-| FLEURS agrupado, 25 idiomas | 20.146 | 11,01 % | 9,85 % |
-| Acentos/dominios agrupados, 47 particiones | 12.006 | 16,72 % | 15,25 % |
-| Acentos/dominios en inglés, 20 particiones | 5.120 | 9,51 % | 8,84 % |
+| Benchmark | Metrica | Orukeet | Parakeet TDT 0.6B v3 |
+|---|---|---|---|
+| FLEURS (25 idiomas, pooled) | WER | 9,85% | 11,01% |
+| FLEURS English (en_us) | WER | 3,82% | 4,28% |
+| LibriSpeech test-clean | WER | 1,46% | 1,53% |
+| LibriSpeech test-other | WER | 2,86% | 3,14% |
 
-Cómputo de particiones: Orukeet mejora a Parakeet en 61 de 74 particiones evaluadas, en 25 de 27 particiones completas de LibriSpeech/FLEURS y en 36 de 47 particiones de acentos y dominios. La muestra de acentos y dominios contiene 256 grabaciones por partición y las 230 grabaciones completas de Lesbos. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible, ya que no aplican a un modelo de reconocimiento de voz.
+El modelo supera a Parakeet en 61 de las 74 particiones de test evaluadas. La reducción relativa de WER en FLEURS pooled es del 10,6%. La partición FLEURS pooled comprende 20.146 grabaciones; la partición FLEURS English, 647 grabaciones.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos, calculada a partir de los 637.329.158 parámetros: aproximadamente 2,5 GB en FP32, 1,3 GB en FP16/BF16 y 0,7 GB en INT8/Q8, sin contar activaciones, buffers de decodificación ni el resto del runtime.
-- El repositorio completo ocupa 5,5 GB, ya que incluye varias exportaciones del mismo checkpoint r3.
-- Cabe holgadamente en GPU de consumo con 6 GB o más de VRAM (por ejemplo RTX 3060, RTX 4060, RTX 4090). Con cuantización INT8 o Q8 y decodificación en CPU, también es viable sin GPU.
-- Entorno de referencia para NeMo: PyTorch con CUDA y nemo_toolkit[asr]==3.0.0 más huggingface-hub; el repositorio publica el fichero runtime.json con las versiones exactas del entorno de evaluación.
-- Opciones de despliegue documentadas: NeMo (checkpoint .nemo), ONNX INT8, exportaciones nativas Q8 y F16 y sherpa-onnx. El tag del repositorio incluye además GGUF.
-- No hay información disponible sobre soporte en vLLM, TGI, Ollama o llama.cpp para este modelo.
+- VRAM estimada para inferencia: aproximadamente 1,3 GB en FP16 (0,6B parámetros), alrededor de 0,7 GB en ONNX INT8 o GGUF Q8.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16; A100, H100 o RTX 4090 para despliegues de alto throughput en lote.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060 o superiores, e incluso en GPUs integradas con cuantización INT8/Q8.
+- Opciones de despliegue: NeMo (`nemo_toolkit[asr]==3.0.0` con PyTorch CUDA), ONNX Runtime, llama.cpp/GGUF, sherpa-onnx, Transformers con `ParakeetForTDT`, y Buzz.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
-- El modelo tiene 0,6 B de parámetros y no requiere tensor parallelism ni despliegues multi-GPU según los datos disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Licencia | WER LibriSpeech test-clean | WER LibriSpeech test-other | Disponibilidad |
-|---|---:|---|---|---:|---:|---|
-| oruk/orukeet | 637.329.158 | 25 | cc-by-sa-4.0 | 1,46 % | 2,86 % | Hugging Face, formatos NeMo/ONNX/GGUF/sherpa-onnx, Q8 y F16 |
-| nvidia/parakeet-tdt-0.6b-v3 | 627.008.134 | no disponible en la información proporcionada | no disponible en la información proporcionada | 1,53 % | 3,14 % | Hugging Face (modelo base del que deriva Orukeet) |
-| Otras alternativas de ASR multilingüe de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Idiomas | WER FLEURS English | WER LibriSpeech test-clean | Licencia |
+|---|---|---|---|---|---|
+| Orukeet | 627M | 25 | 3,82% | 1,46% | CC BY-SA 4.0 |
+| NVIDIA Parakeet TDT 0.6B v3 | 627M | 25 | 4,28% | 1,53% | CC BY 4.0 (modelo base) |
+| Whisper large-v3 | 1.550M | ~99 | No disponible en esta ficha | No disponible en esta ficha | MIT |
+| Whisper small | 244M | ~99 | No disponible en esta ficha | No disponible en esta ficha | MIT |
 
-Los datos de la fila de Parakeet proceden de la misma evaluación que reporta Orukeet, con idéntica decodificación y código de puntuación, por lo que son directamente comparables. Para el resto de alternativas no se dispone de datos verificables en la información proporcionada. En el plano de licencia, la diferencia relevante es que Orukeet se distribuye bajo CC-BY-SA-4.0 (con obligación de compartir igual), mientras que la licencia del modelo base no se especifica en los datos disponibles.
+La comparación directa con Parakeet es la más relevante, ya que Orukeet es un finetune del mismo. Frente a Whisper, la diferencia principal es la cobertura de idiomas (25 frente a ~99) y la licencia (CC BY-SA 4.0 frente a MIT). No se dispone de datos de benchmarks de Whisper en la información proporcionada para una comparación numérica rigurosa.
 
 ## Limitaciones y advertencias
 
-- La selección de checkpoint de la pasada final se realiza sobre LibriSpeech test-other y esa misma partición se emplea para reportar resultados; existe riesgo de sobreajuste a esa partición y las mejoras en test-other deben interpretarse con cautela.
-- La adaptación final está guiada por datos en inglés (LibriSpeech), lo que puede sesgar el comportamiento hacia el inglés aunque el modelo cubra 25 idiomas.
-- La licencia cc-by-sa-4.0 es de tipo copyleft: permite uso comercial, pero exige atribución y compartir las obras derivadas bajo la misma licencia. Hay que revisar la compatibilidad con productos propietarios antes de integrarlo en producción.
-- El WER agrupado de FLEURS en 25 idiomas es del 9,85 %, con variación por idioma no detallada en la información disponible; el rendimiento en lenguas concretas puede ser notablemente peor.
-- Como todo sistema ASR, puede producir sustituciones, inserciones y omisiones de palabras (alucinación de texto) en audio ruidoso, solapado o con dominio muy alejado del entrenamiento. No se han publicado tasas de alucinación.
-- No hay información sobre manejo de audio largo, segmentación, diarización de hablantes, marcas de tiempo por palabra ni streaming.
-- No tiene tool calling, capacidades de agente, visión ni comprensión de audio más allá de la transcripción; no debe usarse como sustituto de un modelo de lenguaje.
-- No se documentan sesgos demográficos, de acento o de género más allá del recuento de particiones de acentos evaluadas.
-- No hay datos publicados de latencia, throughput ni consumo en producción.
+- El modelo solo cubre 25 idiomas europeos; no soporta idiomas fuera de ese conjunto.
+- No soporta streaming nativo (`streaming: false`), lo que limita su uso en aplicaciones de transcripción en tiempo real continuo.
+- No soporta traducción (`translate: false`); únicamente transcribe en el idioma de origen.
+- La licencia CC BY-SA 4.0 es copyleft: obliga a compartir bajo la misma licencia las obras derivadas y exige atribución, lo que puede ser restrictivo para uso comercial propietario.
+- Los benchmarks son declarados por el autor y no han sido verificados de forma independiente (`verified: false`).
+- La selección de checkpoint se realizó sobre LibriSpeech test-other, la misma partición usada para evaluar, lo que puede introducir un sesgo optimista en esa métrica concreta.
+- Riesgo de alucinación inherente a los modelos ASR en audio con ruido, acentos no representados en el entrenamiento o solapamiento de hablantes.
+- No se dispone de información sobre sesgos demográficos o dialectales específicos más allá de la mención a datos multiacento.
+- El contexto de audio máximo no está especificado en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/oruk/orukeet
-- Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Repositorio de código: https://github.com/Oruk-AI/orukeet
-- Informe técnico: orukeet-technical-report.pdf (referenciado en la model card)
-- Hashes de artefactos: ARTIFACTS.json (referenciado en la model card)
-- Receta de ajuste y congelación de Gabor: https://github.com/Oruk-AI/orukeet/blob/main/training/gabor_half/README.md
-- Adaptación final: https://github.com/Oruk-AI/orukeet/blob/main/training/librispeech_ft/README.md
-- Linaje de entrenamiento: https://github.com/Oruk-AI/orukeet/blob/main/training/README.md
-- Entorno de ejecución registrado: https://github.com/Oruk-AI/orukeet/blob/main/evidence/standard-asr-20260908/runtime.json
-- Pull request en OpenWhispr: https://github.com/OpenWhispr/openwhispr/pull/2085
-- Sitio del desarrollador: https://oruk.ai
-- Búsqueda web: los resultados devueltos por la búsqueda no guardan relación con el modelo (contenido sobre comparadores de seguros de automóvil en el Reino Unido), por lo que no se han incorporado a esta ficha.
+- [Hugging Face: oruk/orukeet](https://huggingface.co/oruk/orukeet)
+- [Repositorio de código](https://github.com/Oruk-AI/orukeet)
+- [Pull request en OpenWhispr](https://github.com/OpenWhispr/openwhispr/pull/2085)
+- [Informe técnico (PDF)](orukeet-technical-report.pdf)
+- [Hashes de artefactos](ARTIFACTS.json)
+- [Página del modelo en oruk.ai](https://oruk.ai/models/orukeet)
+- [API de speech-to-text de Oruk](https://oruk.ai/speech-to-text-api)
+- [Modelo base: nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)

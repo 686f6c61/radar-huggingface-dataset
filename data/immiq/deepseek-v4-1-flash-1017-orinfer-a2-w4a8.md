@@ -2,103 +2,106 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 es una distribución de pesos cuantizados del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por el usuario immiq. No se trata de un modelo entrenado desde cero, sino de un empaquetado en formato nativo del runtime orinfer, orientado específicamente al acelerador Ascend 910B (plataforma Altus A2) y optimizado para ejecución con paralelismo de tensor TP8. El repositorio contiene únicamente datos de modelo y atribución; los operadores, planes y librerías nativas se distribuyen por separado en el archivo de ejecución de orinfer v0.3.0.
+DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 es una distribucion cuantizada del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario immiq para su motor de inferencia propietario Orinfer. No se trata de un modelo entrenado desde cero, sino de un empaquetado de pesos en formato W4A8 (pesos de 4 bits, activaciones de 8 bits) optimizado especificamente para ejecutarse sobre aceleradores Ascend 910B en configuracion TP8 (tensor parallelism de 8 dispositivos). El modelo base procede de deepseek-ai y conserva sus capacidades multimodales (texto, vision, thinking, function tools y borradores paralelos DSpark).
 
-El modelo conserva los códigos INT4 firmados originales de los expertos, las escalas por canal, los valores de asistencia y los parámetros de precisión mixta del modelo base, sin recuantizar. Lo que cambia es el layout físico de almacenamiento: los bancos de expertos W4 se empaquetan en formato transposed-NZ y los registros Engram se almacenan como INT8 de grupo 32 seguidos de escalas FP32. El objetivo es permitir una carga en línea directa sobre hardware Ascend sin transposiciones ni recuantizaciones completas en el arranque.
+El repositorio contiene 513.773.354.864 parametros en safetensors y ocupa 557,7 GB, lo que refleja un modelo de gran escala con pesos cuantizados a 4 bits. La distribucion esta atada a un runtime concreto: Orinfer v0.3.14 sobre Linux aarch64, CANN 9.2 y glibc 2.34 o superior, con un archivo de ejecucion separado que declara planes de operadores y presupuestos de decodificacion especulativa. No es un checkpoint portable a vLLM, llama.cpp o TGI.
 
-Con 501.877.350.464 parámetros totales (aproximadamente 502 mil millones) y una arquitectura MoE, el modelo se posiciona en la categoría de modelos de razonamiento y generación de texto de gran escala. Su relevancia actual radica en que demuestra un flujo de despliegue de un MoE masivo en hardware no NVIDIA, con soporte declarado de hasta 262.144 tokens de contexto y un paquete de ejecución nativo que no requiere Python ni contexto NPU para la instalación.
+Su relevancia actual radica en que demuestra un flujo de despliegue de un modelo frontera sobre hardware Ascend, con decodificacion especulativa multi-borrador (hasta 5 drafts por owner, 192 filas de verificacion) y cache de prefijos y KV offload configurables. La licencia es MIT, lo que facilita su uso comercial, aunque las restricciones practicas vienen impuestas por el hardware y el motor de inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) sobre transformer; tag `deepseek_v41`; 40 capas de texto |
-| Parametros totales | 501.877.350.464 |
+| Arquitectura | no disponible (modelo base DeepSeek-V4.1-Flash-1017; el empaquetado usa operadores Orinfer con atencion H64 y proyecciones densas) |
+| Parametros totales | 513.773.354.864 |
 | Parametros activos | no disponible |
-| Longitud de contexto | hasta 262.144 tokens (declarado en el paquete de ejecución); probado hasta 262.080 tokens de entrada |
-| Tipos de cuantizacion | W4A8 (expertos INT4, activaciones INT8); KV cache INT8 de grupo 64 con escalas FP16; tag `8-bit` |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | W4A8 (pesos 4 bits, activaciones 8 bits); el repo se etiqueta como 8-bit |
 | Idiomas soportados | zh, en |
 | Licencia | MIT |
-| Formato de pesos | safetensors (178 shards, 5.505 tensores físicos, 510.089.196.120 bytes, ~475,06 GiB) |
+| Formato de pesos | safetensors (con archivo de ejecucion Orinfer separado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE de aproximadamente 502 mil millones de parámetros con 40 capas de texto, según los datos del repositorio. La información disponible no detalla el número de expertos, la proporción de parámetros activos por token ni la composición del dataset de entrenamiento del modelo original. Tampoco se documentan en esta ficha las etapas de RLHF, DPO u otros ajustes posteriores al preentrenamiento del modelo base.
+La informacion disponible no detalla la arquitectura interna del modelo base DeepSeek-V4.1-Flash-1017 ni su proceso de entrenamiento (numero de tokens, composicion del dataset, RLHF/DPO). Lo que si se documenta es la capa de despliegue: el paquete Orinfer incluye planes de operadores validados, una rejilla de lanzamiento de 20 Cube para 55 proyecciones densas (introducida en v0.3.13) y configuraciones de atencion H64 que escriben resultados PV directamente en BF16 (v0.3.14). El motor empaqueta operadores y planes de ejecucion por separado de los shards de pesos, de modo que las actualizaciones del motor no obligan a redescargar los pesos.
 
-La innovación técnica de esta distribución no está en la arquitectura del modelo, sino en el layout físico y el runtime. Los bancos de expertos W4 usan bytes empaquetados en formato transposed-NZ con forma `[E,K/64,N/16,16,32]`, mientras que la vista lógica ACL es `[E,K,N]`; las escalas, los valores de asistencia y el orden de canales de salida se mantienen intactos. Los registros Engram contienen valores INT8 de grupo 32 seguidos inmediatamente de bytes de escala FP32, sin padding adicional de filas, con un índice `row_records` que fija el formato `i8-f32-g32-v1`. La carga en línea lee los datos físicos preparados directamente, sin transposición completa de bancos ni recuantización en el arranque. El runtime usa KV cache INT8 de grupo 64 con escalas FP16, y el estado de secuencia y KV permanece privado por petición. El paquete de ejecución soporta decodificación especulativa mediante MTP (multi-token prediction), aunque los benchmarks reportados se obtuvieron con MTP desactivado (`--mtp-drafts 0`).
+La innovacion tecnica mas destacable es el soporte de DSpark, un mecanismo de borradores paralelos para decodificacion especulativa. El paquete de ejecucion declara 192 filas de verificacion de decodificador, con un ancla por owner, permitiendo que 32 owners usen hasta 5 borradores cada uno cuando resulte rentable. La opcion `--mtp-drafts auto` selecciona adaptativamente ese limite, mientras que `--max-speculative-tokens 0` delega en el presupuesto del paquete. Tambien se documenta una tabla Engram residente en host de aproximadamente 206 GiB, con modo alternativo respaldado por fichero y cache de filas configurable.
 
 ## Capacidades
 
-- Generación de texto conversacional y no conversacional en chino e inglés, según los idiomas declarados.
-- Razonamiento y generación de texto de gran escala gracias a su naturaleza MoE de aproximadamente 502 mil millones de parámetros.
-- Procesamiento de contextos muy largos: el paquete declara hasta 262.144 tokens y se han ejercitado longitudes de hasta 262.080 tokens de entrada en pruebas de estrés acotadas.
-- Soporte de decodificación especulativa mediante MTP (multi-token prediction) en el runtime orinfer, desactivable por configuración.
-- Servicio HTTP nativo con endpoint `/health` para comprobación de disponibilidad.
-- Admisión por lotes (B32) y recuperación ante sobrecarga, según las pruebas de estrés reportadas.
-- Caché de prefijo configurable (8192 MiB en la configuración de servicio documentada).
-- No se dispone de información sobre soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modos de pensamiento explícitos en la documentación proporcionada.
+- Generacion de texto conversacional en chino e ingles.
+- Modo thinking (razonamiento extendido) integrado en el runtime.
+- Soporte de function tools y llamadas a herramientas.
+- Procesamiento de imagenes, incluyendo multiples imagenes por peticion.
+- Borradores paralelos DSpark para decodificacion especulativa.
+- Cache de prefijos (`--prefix-cache-mib`) y offload de KV (`--kv-offload-mib`).
+- Reutilizacion de coincidencias de checkpoint restaurables para peticiones en cola (v0.3.14).
+- Gestion de presion de memoria con cesion de admisiones frias largas a peticiones activas.
+- Servicio HTTP con timeouts configurables de cola, salida y drenaje.
 
 ## Casos de uso
 
-- Despliegue de inferencia de texto a gran escala sobre Ascend 910B: el paquete está diseñado para instalarse con el CLI de orinfer v0.3.0 en Linux aarch64 y ejecutarse con TP8 sobre Altus A2, sin necesidad de Python ni de contexto NPU en la instalación. Es adecuado para entornos con hardware Ascend que necesitan servir un MoE de gran tamaño con pesos ya preparados para el layout nativo.
-- Procesamiento de documentos largos y conversaciones multi-turno: con hasta 262.144 tokens de contexto declarados, el modelo puede manejar expedientes, contratos o historiales de conversación extensos en una sola ventana, manteniendo el estado KV privado por petición.
-- Servicio de chat en chino e inglés: los idiomas declarados (zh, en) permiten atender aplicaciones conversacionales bilingües, con un endpoint HTTP `/health` para integrarse en orquestadores y balanceadores.
-- Evaluación y benchmarking de hardware Ascend: las pruebas de prefill a 2K y 2049 tokens y de decodificación en stream único y agregada B32 permiten usar este paquete como referencia para medir el rendimiento de clústeres A2 TP8 en cargas de inferencia reales.
-- Investigación en cuantización y layouts de pesos: al preservar códigos INT4 firmados, escalas por canal y valores de asistencia sin recuantizar, el repositorio sirve como material de estudio para validar mapeos nibble/dirección sin pérdida y la preservación de bytes de escala FP32.
-- Integración en pipelines de verificación de integridad: el manifiesto `release-manifest.json` con SHA256 por archivo y tensor, junto con `SHA256SUMS`, permite incorporar comprobaciones de integridad en procesos de despliegue automatizado.
-- Pruebas de recuperación ante sobrecarga y apagado limpio: la configuración documentada incluye límite de 32 peticiones activas, presupuesto de 128 tokens de batch en front-end y un tiempo de drenaje de 120 segundos, útil para validar la robustez operativa del servicio.
+- Despliegue de un modelo frontera en infraestructura Ascend: el paquete esta pensado para un nodo con 8 aceleradores Ascend 910B en TP8, lo que permite servir el modelo sin depender de GPUs NVIDIA en entornos con hardware Huawei.
+- Asistentes conversacionales multilingues zh/en: el modelo cubre generacion de texto y conversacion, adecuado para atencion al cliente o asistentes internos en organizaciones con operaciones en China y mercados angloparlantes.
+- Analisis de documentos con imagenes: al soportar multiples imagenes por peticion, puede emplearse en extraccion de datos de facturas, capturas o formularios escaneados combinados con texto.
+- Automatizacion con herramientas: el soporte de function tools permite integrarlo en flujos donde el modelo decide invocar APIs, consultar bases de datos o encadenar acciones multi-paso.
+- Razonamiento asistido con modo thinking: util para tareas de analisis que requieren trazas de razonamiento extensas, como revision de codigo o diagnostico tecnico.
+- Servicio de inferencia con cache de prefijos: en escenarios con prompts de sistema largos y repetidos, la cache de prefijos de 8 GiB reduce el coste de prefill en peticiones sucesivas.
+- Procesamiento por lotes con tolerancia a latencia: los timeouts de salida de 180 s y de cola de 60 s permiten encolar peticiones largas en un servidor compartido.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles corresponden a mediciones nativas en caliente sobre una máquina A2 TP8 del proyecto, con MTP desactivado y la configuración de mini servicio indicada (límite de 32 peticiones activas, presupuesto de 128 tokens de batch en front-end, caché de prefijo de 8192 MiB, `ORINFER_A2_HOST_TABLE_MIB=212000`, `ORINFER_A2_HOST_ROW_CACHE_MIB=2048`, `HCCL_OP_EXPANSION_MODE=AIV`). No son resultados de benchmarks académicos como MMLU, HumanEval o GSM8K, que no se han publicado en la información disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Los unicos datos de rendimiento documentados son del motor Orinfer sobre la carga de trabajo "Mini" congelada de 240 segundos:
 
-| Escenario nativo en caliente | Baseline | Este layout |
-|---|---:|---:|
-| Prefill 2K, tokens de entrada/s | 7.986 | 8.831 |
-| Prefill 2049, tokens de entrada/s | 6.143 | 6.547 |
-| Decodificación en stream único, tokens/s | 51,3 | ~53 |
-| Decodificación agregada B32, tokens/s | 263,9 | 265,1 |
+| Version | Peticiones completadas | Errores | Latencia agregada | Duracion de decode |
+|---|---|---|---|---|
+| v0.3.13 | 69 (frente a 68 del control family-Graph) | no disponible | -10,93 % en 63 peticiones identicas | -12,85 % en 63 peticiones identicas |
+| v0.3.14 (ensayo 1) | 71 | 0 | +10,7 % | no disponible |
+| v0.3.14 (ensayo 2) | 70 | 0 | +5,1 % | no disponible |
 
-Además, se reporta una repetición fija de 240 segundos de Mini-Weka que completó 27 peticiones de profiling frente a 20, y decodificó 5.056 tokens frente a 4.085, con progreso de prefill prácticamente sin cambios. El arranque del servicio con residencia completa fue de 248 segundos frente a 258 segundos en una comparación secuencial, y los workspaces combinados de ACLNN usan 160 MiB menos por rank. La aceptación completa de calidad por tarea/NLL de referencia oficial quedó diferida en este ciclo de release.
+El objetivo de >=80 peticiones en la ventana de 240 s sigue sin alcanzarse segun la propia documentacion. Estos numeros miden throughput del motor, no calidad del modelo.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: Altus A2 / Ascend 910B con TP8. No se documenta soporte para GPU NVIDIA ni para otras plataformas en esta distribución.
-- Memoria de host: la configuración de tabla de host completamente residente requiere aproximadamente 211 GiB de memoria de host adicional (`ORINFER_A2_HOST_TABLE_MIB=212000`), más la memoria del resto del proceso.
-- Almacenamiento: el repositorio ocupa 510,1 GB (unos 475,06 GiB en 178 shards de entre 1,23 y 3,75 GiB).
-- Runtime: orinfer v0.3.0 para Linux aarch64, más el paquete de ejecución separado `orinfer-exec-deepseek-v41-flash-1017-w4a8-ascend910b-v0.3.0.tar.xz`.
-- Entorno: CANN con `source /usr/local/Ascend/cann/set_env.sh`; variables `HCCL_OP_EXPANSION_MODE=AIV` y `HCCL_NPU_SOCKET_PORT_RANGE=auto`.
-- No cabe en GPU de consumo: el tamaño de pesos y la plataforma objetivo lo excluyen de RTX 4090 u otras GPU consumer.
-- Opciones de despliegue: exclusivamente el servidor nativo de orinfer (`orinfer serve`), con validación previa mediante `orinfer validate-model`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ver la tabla de benchmarks; en stream único se observan unos 53 tokens/s y en agregado B32 unos 265,1 tokens/s, con prefill de 8.831 tokens/s a 2K.
+- Acelerador: Ascend 910B en configuracion TP8 (8 dispositivos). No se documenta soporte para GPU NVIDIA.
+- Sistema operativo: Linux aarch64, glibc 2.34 o superior.
+- Stack de software: CANN 9.2 y motor Orinfer v0.3.14 con el archivo de ejecucion correspondiente (digest `ce7a1cec548914645bf31ae9e695da038ec1506c895138ecbe61906688ac3687`).
+- Memoria host: aproximadamente 206 GiB adicionales para mantener la tabla Engram completamente residente; el modo respaldado por fichero reduce ese requisito pero no es el usado en las pruebas de rendimiento.
+- Cache de vision: 1 GiB (`ORINFER_VISION_CACHE_MIB=1024`).
+- Cache de prefijos: 8 GiB (`--prefix-cache-mib 8192`).
+- Offload de KV: 256 GiB (`--kv-offload-mib 262144`).
+- Tamano del repositorio: 557,7 GB de pesos en safetensors.
+- No cabe en GPU de consumo: el modelo requiere hardware de centro de datos Ascend y un runtime especifico.
+- Opciones de despliegue: exclusivamente `orinfer serve`; no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: la carga Mini de 240 s completa entre 69 y 71 peticiones en TP8, con cero errores en los ensayos de v0.3.14.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017 es la referencia directa, pero no se han facilitado sus especificaciones completas (parámetros activos, contexto, licencia original) ni datos de benchmarks que permitan una comparación rigurosa. Tampoco se documentan alternativas de la misma categoría en hardware Ascend.
+| Modelo | Parametros | Contexto | Licencia | Hardware objetivo | Formato |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 | 513.773.354.864 | no disponible | MIT | Ascend 910B TP8 | safetensors + paquete Orinfer |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible | no disponible |
+| Otras cuantizaciones W4A8 de modelos frontera | no disponible | no disponible | no disponible | GPU NVIDIA tipicamente | GGUF, AWQ, GPTQ |
 
-| Modelo | Parámetros totales | Contexto | Licencia | Plataforma |
-|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 | 501.877.350.464 | hasta 262.144 | MIT | Ascend 910B / Altus A2 |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | no disponible |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+La comparativa con alternativas de la misma categoria no puede completarse con los datos proporcionados: no se dispone de especificaciones del modelo base ni de otras distribuciones cuantizadas equivalentes. La diferencia principal frente a cuantizaciones convencionales es el acoplamiento al motor Orinfer y al hardware Ascend, que impide un trasplante directo a otros stacks.
 
 ## Limitaciones y advertencias
 
-- La model card marca `inference: false` en los metadatos, lo que indica que el repositorio no es directamente ejecutable sin el paquete de ejecución separado de orinfer.
-- La aceptación completa de calidad por tarea/NLL de referencia oficial quedó diferida en este ciclo de release; no hay validación publicada de calidad frente al modelo base en tareas estándar.
-- Los benchmarks reportados son mediciones de progreso con presupuesto fijo, no afirmaciones de TPS agregado ni de repetibilidad estadística, según el propio autor.
-- El rendimiento depende de la configuración de máquina, afinidad de CPU y ajustes de caché/reloj; la afinidad de CPU es específica de cada máquina.
-- La igualdad bit a bit entre ejecuciones no es un requisito del modo de comunicación HCCL de alto rendimiento utilizado.
-- El modelo solo declara soporte de chino e inglés; no se documentan otros idiomas.
-- No se dispone de información sobre sesgos, riesgo de alucinación ni evaluaciones de seguridad en la documentación proporcionada.
-- La licencia es MIT, lo que permite uso comercial, pero debe verificarse la licencia del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, no disponible en esta información.
-- El uso está restringido de facto al hardware Ascend 910B con TP8 y al runtime orinfer; no hay soporte documentado para otras plataformas.
-- El presupuesto de tabla de host requiere unos 211 GiB de memoria de host, lo que limita el despliegue a servidores con gran capacidad de RAM.
-- Los llamadores directos de la API Rust deben configurar `ASCEND_COREDUMP_SIGNAL=none` antes del arranque; el CLI gestiona la propiedad de señales de terminación de CANN.
+- El modelo esta atado a Orinfer v0.3.14, CANN 9.2, glibc 2.34+ y Ascend 910B TP8; no es portable a otros motores ni a GPU NVIDIA.
+- Solo se declaran idiomas zh y en; el rendimiento en castellano u otras lenguas no esta documentado.
+- No se publican datos de sesgos, alucinacion ni evaluaciones de seguridad del modelo base.
+- La longitud de contexto no se especifica en la informacion disponible, lo que impide planificar cargas con prompts largos.
+- El modo con tabla Engram residente exige aproximadamente 206 GiB de memoria host adicional; el modo respaldado por fichero no fue el usado en las pruebas de rendimiento.
+- El objetivo de throughput de >=80 peticiones por ventana de 240 s no se alcanza; los ensayos de v0.3.14 muestran ademas un aumento de latencia agregada del 5,1 % al 10,7 % frente a la version anterior en peticiones identicas.
+- La verificacion de integridad de pesos no es automatica al cargar; requiere ejecutar `orinfer validate-model` de forma explicita.
+- Es necesario configurar autenticacion antes de exponer el servidor fuera del host de confianza.
+- El periodo de gracia externo para terminacion debe superar los 120 segundos.
+- La licencia MIT se aplica al empaquetado, pero el uso comercial queda condicionado por la disponibilidad de hardware Ascend y del runtime Orinfer.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Release de orinfer v0.3.0: https://github.com/iMMIQ/orinfer/releases/tag/v0.3.0
-- Documentación de paquetes de modelo de orinfer: https://github.com/iMMIQ/orinfer/blob/v0.3.0/docs/model-packages.md
+- Release v0.3.14 de Orinfer: https://github.com/iMMIQ/orinfer/releases/tag/v0.3.14
+- Repositorio Orinfer: https://github.com/iMMIQ/orinfer
+- Registro de aceptacion A2 v0.3.14: benchmarks/a2-v0.3.14-acceptance-20261118.json (referenciado en la model card)

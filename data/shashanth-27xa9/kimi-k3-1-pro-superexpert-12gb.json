@@ -73,16 +73,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "shashanth-27xA9/Kimi-K3.1-Pro-SuperExpert-9.2GB at main",
-      "url": "https://huggingface.co/shashanth-27xA9/Kimi-K3.1-Pro-SuperExpert-9.2GB/tree/main",
-      "snippet": "xet Upload model-00018-of-00018.safetensorsabout 4 hours ago model.safetensors.index.json 49 kBUpload model.safetensors.index.jsonabout 4 hours ago modeling_kimi_k31_superexpert.py 9.56 kBAdd modeling_kimi_k31_superexpert.py for Kimi-K3.1-Pro-SuperExpertabout 5 hours ago tiktoken.model Safe 2.8 MB xet Add tiktoken.model from Kimi-K3.1-Proabout ..."
-    },
-    {
-      "title": "shashanth-27xA9/Kimi-K3.1-Pro-SuperExpert-9.2GB · Hugging Face",
-      "url": "https://huggingface.co/shashanth-27xA9/Kimi-K3.1-Pro-SuperExpert-9.2GB",
-      "snippet": "Chinese kimi_k31_superexpert kimi kimi-k3.1 kimi-k3.1-pro moonshot Mixture of Experts super-expert aw-secd reasoning sub-10gb laptop-runnable ollama llama.cpp quantization conversational custom_code colab kaggle coding mathematics 8-bit precision License:cc-by-nc-4.0 Model card FilesFiles and versions xet Community Copy to bucket 🌌 Kimi-K3.1 ..."
-    }
-  ]
+  "sources": []
 }

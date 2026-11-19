@@ -1,117 +1,94 @@
 # saidutta69/Qwen3-1.7B-heretic
 
 ## Resumen
+Qwen3-1.7B-heretic es una variante "decensored" (abliterated) del modelo denso Qwen/Qwen3-1.7B, publicada por el usuario saidutta69 (bajo el alias "RACER IS OP"). No es un fine-tune nuevo: se ha generado con la herramienta Heretic v1.4.0 aplicando ablación direccional por capas sobre las proyecciones de salida de atención (`attn.o_proj`) y de bajada del MLP (`mlp.down_proj`), con el objetivo de suprimir la dirección de rechazo aprendida por el modelo base.
 
-Qwen3-1.7B-heretic es una variante "decensored" del modelo denso Qwen/Qwen3-1.7B publicada por el usuario saidutta69 (bajo la etiqueta RACER IS OP). Se ha generado con la herramienta Heretic v1.4.0, que aplica ablación direccional ("abliteration") sobre las direcciones de rechazo por capa, en lugar de un ajuste fino supervisado. El objetivo es eliminar el comportamiento de negativa del modelo base manteniendo, en la medida de lo posible, sus conocimientos y su capacidad de razonamiento híbrido (modo thinking) heredada de la familia Qwen3.
+El resultado es un modelo de 1.720.574.976 parámetros (1,7B densos) que conserva la arquitectura, el conocimiento y la capacidad de "thinking" híbrido de Qwen3, pero que responde a peticiones que el original rechazaría. Según la model card, la tasa de rechazo cae de 92/100 a 4/100 en el arnés de 100 prompts de Heretic, con una divergencia KL de 0,0248 respecto al base.
 
-El modelo conserva la arquitectura del base: es un transformer decoder-only denso de 1.720.574.976 parámetros (≈1,7 B), sin mezcla de expertos ni parámetros activos diferenciados. Su principal atractivo es el tamano: cabe en GPUs de consumo e incluso en CPU, y se distribuye con una escalera completa de 15 cuantizaciones GGUF (de Q2_K a F16) además de los pesos en safetensors, con licencia Apache 2.0 heredada del modelo original.
-
-Es relevante ahora como pieza de estudio y como base de experimentación: permite analizar la mecánica del rechazo en una arquitectura con modo thinking, sirve como punto de partida para fine-tuning sin guardarraíles y se integra en el ecosistema local (llama.cpp, Ollama, LM Studio, Jan, vLLM, SGLang). Su contrapartida es que no incorpora ningún filtro de seguridad adicional, por lo que la responsabilidad de despliegue recae enteramente en quien lo usa.
+Es relevante ahora por tres motivos: es lo bastante pequeño para ejecutarse en CPU o en GPUs de consumo modestas (desde 6 GB de VRAM con Q5_K_M), el repositorio incluye una escalera completa de 15 cuantizaciones GGUF listas para llama.cpp/Ollama/LM Studio, y sirve como caso de estudio reproducible de mecánica de rechazo en una arquitectura con modo de razonamiento. La licencia Apache 2.0 heredada facilita su uso comercial, aunque con las advertencias de seguridad que se detallan más abajo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen3, con razonamiento hibrido thinking/no-thinking) |
-| Parametros totales | 1.720.574.976 (≈1,7 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No especificada en la model card del derivado; el modelo base Qwen3-1.7B declara 32.768 tokens nativos (dato del base, no confirmado en esta ficha) |
-| Tipos de cuantizacion | GGUF: F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, IQ3_S, Q2_K; pesos completos en safetensors |
-| Idiomas soportados | en (ingles, segun la etiqueta `language` de la model card) |
-| Licencia | Apache 2.0 (heredada de Qwen/Qwen3-1.7B) |
-| Formato de pesos | safetensors y GGUF (llama.cpp) |
-| Libreria | transformers |
-| Modelo base | Qwen/Qwen3-1.7B |
-| Pipeline | text-generation |
-| Tamano del repositorio | 19,2 GB (incluye safetensors y las 15 cuantizaciones GGUF) |
-| Fecha de creacion | 2026-09-10 |
+| Arquitectura | Transformer denso (Qwen3), con modo híbrido de razonamiento ("thinking") del modelo base |
+| Parametros totales | 1.720.574.976 (1,7B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la información proporcionada (heredada de Qwen3-1.7B; no confirmada en la model card) |
+| Tipos de cuantizacion | GGUF: F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, IQ3_S, Q2_K; pesos originales en safetensors (bf16/fp16 según `torch_dtype="auto"`) |
+| Idiomas soportados | en (inglés, declarado en la model card) |
+| Licencia | apache-2.0 (heredada de Qwen/Qwen3-1.7B) |
+| Formato de pesos | safetensors (transformers) y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
+La arquitectura es la del Qwen3-1.7B original: un transformer denso decoder-only con atención completa y el esquema híbrido de Qwen3 que alterna modo de razonamiento explícito y respuesta directa. No hay entrenamiento adicional ni datos nuevos: el proceso de Heretic 1.4.0 calcula direcciones de rechazo por capa y aplica ediciones de pesos dirigidas en `attn.o_proj` y `mlp.down_proj`, con parámetros de peso y posición documentados en la model card (por ejemplo, `attn.o_proj.max_weight` = 1,48 en posición 25,98; `mlp.down_proj.min_weight` = 0,21 a distancia 11,05).
 
-La arquitectura subyacente es la del Qwen3-1.7B original, un transformer decoder-only denso de 1,7 B de parámetros con capacidad de razonamiento híbrido (alternancia entre modo thinking y modo directo). Este derivado no ha sido reentrenado ni sometido a fine-tuning: la model card es explicita al afirmar que el comportamiento de rechazo se suprime mediante ediciones de pesos dirigidas, no mediante ajuste supervisado, RLHF ni DPO. La intervención se aplica a las proyecciones de salida de atención (`attn.o_proj`) y a las proyecciones descendentes del MLP (`mlp.down_proj`), usando direcciones de rechazo calculadas por capa (`direction_index: per layer`).
-
-Los hiperparámetros declarados de la ablación son: para `attn.o_proj`, `max_weight` 1,48 en la posición 25,98, `min_weight` 1,44 a distancia 16,08; para `mlp.down_proj`, `max_weight` 1,45 en la posición 21,22, `min_weight` 0,21 a distancia 11,05. El coste de esta edición se mide con divergencia KL respecto al modelo original: 0,0248 en este derivado (0 por definición en el base). No se detallan en la informacion proporcionada el numero de tokens de entrenamiento del modelo base, la composicion del dataset ni el uso de tecnicas de decodificacion especulativa.
+La innovación técnica es precisamente esa: ablación direccional en lugar de fine-tuning, de modo que el modelo conserva en gran medida el conocimiento y las capacidades del base. La model card reporta una divergencia KL de 0,0248 frente al original, lo que cuantifica cuánto se ha desplazado la distribución de salida. No se documentan en la información disponible detalles sobre el dataset de entrenamiento original de Qwen3-1.7B (número de tokens, composición, RLHF/DPO), más allá de que este derivado no añade entrenamiento propio.
 
 ## Capacidades
-
-- Generacion de texto conversacional en ingles, con plantilla de chat aplicable mediante `apply_chat_template`.
-- Razonamiento hibrido: conserva la capacidad de modo thinking del Qwen3 base, segun indica el autor ("Qwen3 hybrid thinking capability... left largely intact").
-- Comportamiento sin guardarraíles de rechazo: responde a peticiones que el modelo base rechazaria (4/100 negativas frente a 92/100 del original, segun la metrica declarada por el autor).
-- Base para fine-tuning: pensado explicitamente como punto de partida para ajustes posteriores sin partir de un modelo con rechazo.
-- Estudio de mecanica del rechazo: util para analizar direcciones de negativa por capa en una arquitectura con thinking.
-- Despliegue local en CPU, Apple Silicon y GPU de consumo gracias al catalogo GGUF.
-- Compatibilidad de endpoints: la etiqueta `endpoints_compatible` y el soporte de text-generation-inference permiten servirlo en infraestructura tipo TGI.
-- No se declaran capacidades de vision, audio, tool calling ni function calling en la informacion proporcionada.
+- Generación de texto conversacional multi-turno, con plantilla de chat de Qwen3 (`apply_chat_template`).
+- Razonamiento en modo "thinking" híbrido heredado de Qwen3 (alternancia entre razonamiento explícito y respuesta directa).
+- Conocimiento factual y capacidades generales del Qwen3-1.7B base, en gran medida preservadas según la KL reportada.
+- Respuesta a peticiones que el modelo base rechazaría (abliteración efectiva: 4/100 rechazos frente a 92/100).
+- Ejecución local en CPU y GPU de consumo mediante GGUF (llama.cpp, Ollama, LM Studio, Jan).
+- Compatibilidad con backends de serving: transformers, vLLM, SGLang, text-generation-inference (según tags y model card).
+- Soporte de tool calling / function calling: no documentado explícitamente en la información proporcionada (el base Qwen3 lo soporta, pero no se confirma aquí).
+- Capacidades de agente multi-paso: no documentadas en la información proporcionada.
+- Multilingüe: limitado a inglés según la model card.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
-
-- Experimentacion sobre alineacion y rechazo: como sujeto de estudio para comparar, capa por capa, la diferencia entre las direcciones de rechazo del base y las de este derivado, midiendo el impacto con divergencia KL (0,0248 declarada).
-- Punto de partida para fine-tuning tematico: al no tener el sesgo de rechazo del original, es mas eficiente para ajustar dominios especializados (legal, seguridad ofensiva, escritura de ficcion adulta) donde el modelo base bloquearia ejemplos de entrenamiento.
-- Generacion creativa sin filtros: redaccion de narrativa o guiones con temas sensibles, sin las negativas que interrumpen la generacion del base.
-- Asistente local en CPU: con el quant Q4_K_M (~1,09 GB) se ejecuta integramente en RAM de sistema, util para prototipos offline en portatiles sin GPU.
-- Evaluacion de despliegue en GPU de consumo: con Q8_0 (~1,82 GB) mas ~1 GB de contexto cabe en una RTX 3060/4070/5070 de 12 GB, y con Q5_K_M (~1,24 GB) en tarjetas de 6 GB como GTX 1660 Super o RTX 3050 laptop, segun la matriz del autor.
-- Investigacion de cuantizacion: el repositorio incluye 15 variantes GGUF (de Q2_K a F16) que permiten medir degradacion de calidad frente a tamano en un mismo modelo.
-- Generacion de texto en ingles a gran volumen: al ser un modelo de 1,7 B, el throughput por GPU es alto y el coste por token bajo para tareas de clasificacion, resumen o reescritura no sensibles a la seguridad.
-- Pruebas de robustez de sistemas de moderacion: usar este modelo como generador adversario controlado para validar que los filtros externos de una plataforma detectan contenido que un modelo abliterado si produce.
+- Investigación de mecánica de rechazo: el modelo sirve para estudiar cómo se codifica la negativa a responder en un transformer pequeño con modo de razonamiento, comparando activaciones y salidas frente al base; los datos de reproducción están en `reproduce/`.
+- Punto de partida para fine-tunes sin restricciones: al conservar el conocimiento del base y no ser un fine-tune, es un checkpoint limpio para entrenar dominios especializados (por ejemplo, narrativa adulta o role-play) sin arrastrar sesgos de rechazo.
+- Despliegue local en hardware modesto: con Q4_K_M (1,11 GB) corre en CPU o Apple Silicon y permite prototipar asistentes conversacionales offline sin GPU.
+- Generación creativa sin filtros: escritura de ficción, guiones o diálogos con temáticas que el modelo base declinaría, ejecutando Q8_0 en una RTX 3060/4070 de 12 GB.
+- Evaluación de seguridad y red-teaming: usar el modelo como sujeto de prueba para medir la eficacia de clasificadores de contenido o filtros de salida en pipelines propios.
+- Pruebas de pipelines de inferencia: al ofrecer 15 cuantizaciones GGUF, permite comparar latencia, calidad y consumo de memoria entre niveles de cuantización en llama.cpp, Ollama o LM Studio.
+- Experimentación educativa con LLMs pequeños: su tamaño (1,7B) y su licencia Apache 2.0 lo hacen adecuado para cursos y talleres donde se analiza el comportamiento de modelos ablacionados.
 
 ## Benchmarks y rendimiento
+Los únicos datos publicados en la información disponible son las métricas del proceso de abliteración, no benchmarks estándar (MMLU, HumanEval, GSM8K, etc.).
 
-Los unicos datos publicados en la model card son metricas de ablacion y de rechazo frente al modelo base; no hay resultados de MMLU, HumanEval, GSM8K ni similares en la informacion proporcionada.
-
-| Metrica | Qwen3-1.7B-heretic | Qwen/Qwen3-1.7B (original) |
+| Metrica | Este modelo | Qwen/Qwen3-1.7B |
 |---|---|---|
-| Divergencia KL | 0,0248 | 0 (por definicion) |
-| Rechazos | 4/100 | 92/100 |
+| Divergencia KL respecto al base | 0,0248 | 0 (por definición) |
+| Rechazos (arnés de 100 prompts de Heretic) | 4/100 | 92/100 |
 
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (solo pesos, modelo a tamano nativo de 1,7 B): Q2_K ~0,75 GB; IQ3_S y Q3_K_S ~0,84 GB; Q3_K_M ~0,90 GB; Q3_K_L ~0,97 GB; IQ4_XS ~0,99 GB; Q4_0 ~1,02 GB; Q4_K_S ~1,04 GB; Q4_K_M ~1,09 GB; Q4_1 ~1,12 GB; Q5_K_S ~1,21 GB; Q5_K_M ~1,24 GB; Q6_K ~1,40 GB; Q8_0 ~1,82 GB; F16 ~3,4 GB.
-- El autor recomienda anadir aproximadamente 1 GB adicional para el contexto.
-- GPU de 12 GB (RTX 3060, 4070, 5070): quant recomendado Q8_0 (~1,8 GB).
-- GPU de 8 GB (RTX 4060, 3070): quant recomendado Q6_K (~1,4 GB).
-- GPU de 6 GB (GTX 1660 Super, RTX 2060, RTX 3050 laptop): quant recomendado Q5_K_M (~1,2 GB).
-- CPU-only o Apple Silicon: Q4_K_M, cabe en memoria de sistema.
-- Si hay OOM, el propio autor sugiere bajar un nivel de cuantizacion; si sobra margen, subir uno.
-- Opciones de despliegue: llama.cpp (`llama serve -hf saidutta69/Qwen3-1.7B-heretic`), Ollama, LM Studio, Jan, vLLM, SGLang y text-generation-inference. Tambien es cargable directamente con transformers (`AutoModelForCausalLM`, `torch_dtype="auto"`, `device_map="auto"`).
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada (solo pesos, según la model card): Q8_0 1,83 GB; Q6_K 1,42 GB; Q5_K_M 1,26 GB; Q4_K_M 1,11 GB; Q2_K 0,78 GB. Añadir aproximadamente 1 GB para el contexto.
+- GPU recomendadas por la model card: RTX 3060/4070/5070 (12 GB) para Q8_0; RTX 4060/3070 (8 GB) para Q6_K; GTX 1660 Super/2060/3050 laptop (6 GB) para Q5_K_M.
+- Cabe en GPU de consumo: sí, desde tarjetas de 6 GB; en CPU-only o Apple Silicon funciona con Q4_K_M en RAM del sistema.
+- Opciones de despliegue: llama.cpp (`llama serve -hf saidutta69/Qwen3-1.7B-heretic`), Ollama, LM Studio, Jan, transformers, vLLM, SGLang y text-generation-inference.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rechazos (arnés Heretic) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saidutta69/Qwen3-1.7B-heretic | 1,72 B (denso) | no especificado | 4/100 (KL 0,0248) | Apache 2.0 | safetensors + 15 quants GGUF |
-| Qwen/Qwen3-1.7B (base) | 1,72 B (denso) | no confirmado en la informacion disponible | 92/100 (KL 0 por definicion) | Apache 2.0 | safetensors |
-| saidutta69/Qwen3-0.6B-heretic | no disponible | no disponible | no disponible | no disponible | no disponible |
-| saidutta69/Qwen3-8B-heretic | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3-1.7B-heretic (este) | 1,7B densos | no disponible | 4/100 (KL 0,0248) | apache-2.0 | HF, GGUF (15 quants) |
+| Qwen/Qwen3-1.7B (base) | 1,7B densos | no disponible | 92/100 | apache-2.0 | HF |
+| Qwen3-0.6B-heretic | 0,6B densos | no disponible | no disponible | apache-2.0 (heredada) | HF (referenciado en la model card) |
 
-Los tres derivados de la coleccion "RACER IS OP Heretic Models" comparten metodo (Heretic + ablacion direccional) y difieren en tamano, pero la informacion proporcionada solo aporta datos cuantitativos del modelo de 1,7 B. No se dispone de comparativas frente a otras familias abliteradas.
+No se dispone de datos de benchmarks de capacidad para establecer una comparación de rendimiento con alternativas de otros autores; la comparación se limita a tamaño, licencia y comportamiento de rechazo.
 
 ## Limitaciones y advertencias
-
-- La supresion del rechazo es intencionada y sin filtro de seguridad adicional: el modelo cumplira peticiones que el base rechaza, incluidas algunas que no deberia.
-- El propio autor advierte de no exponerlo tras un endpoint publico sin moderacion para terceros.
-- La abliteracion no anade capacidad ni criterio: hereda las limitaciones factuales y los sesgos de Qwen3-1.7B.
-- Riesgo de alucinacion propio de un modelo de 1,7 B, sin mitigaciones adicionales; no se han publicado evaluaciones de factualidad.
-- Idiomas: unicamente ingles declarado (`language: en`), sin cobertura multilingue confirmada.
-- Longitud de contexto no especificada en la model card del derivado; conviene verificarla antes de disenar flujos con contexto largo.
-- Divergencia KL de 0,0248 respecto al original: implica un cambio medible en la distribucion de salida que puede afectar a tareas sensibles a la calibracion, no solo al rechazo.
-- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal y etica del contenido generado recae en el desplegador.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta; sin validacion comunitaria ni garantia de mantenimiento por parte del autor.
-- Las tallas GGUF son estimaciones del autor ("updated to exact values once quantization completes"), por lo que pueden variar ligeramente.
-- El repositorio ocupa 19,2 GB; descargar el conjunto completo de cuantizaciones no es necesario si solo se usa una.
+- La supresión de rechazos es deliberada y funciona: el modelo cumplirá peticiones que el base rechazaría, incluidas algunas que no debería. No hay filtrado de seguridad añadido.
+- No debe exponerse tras un endpoint público sin moderación para terceros; la propia model card lo desaconseja.
+- Hereda las limitaciones factuales y los sesgos de Qwen3-1.7B; la abliteración elimina direcciones de rechazo, no añade capacidad ni criterio.
+- Riesgo de alucinación propio de un modelo de 1,7B, sin mitigación adicional.
+- Idioma: solo inglés declarado; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto: no confirmada en la información disponible; conviene verificarla en el modelo base antes de diseñar aplicaciones con contexto largo.
+- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal y ética del despliegue recae en el usuario.
+- El repositorio ocupa 22,5 GB por incluir todos los GGUF y los pesos safetensors; la descarga selectiva de una sola cuantización es recomendable.
+- No hay métricas de capacidad publicadas, por lo que no se puede verificar cuánto conocimiento se ha degradado más allá de la KL reportada.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/Qwen3-1.7B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
-- Herramienta Heretic (ablacion direccional): https://github.com/p-e-w/heretic
+- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Qwen3-0.6B-heretic: https://huggingface.co/saidutta69/Qwen3-0.6B-heretic
-- Qwen3-8B-heretic: https://huggingface.co/saidutta69/Qwen3-8B-heretic
-- Qwen2.5-1.5B-Instruct-heretic: https://huggingface.co/saidutta69/Qwen2.5-1.5B-Instruct-heretic
-- Coleccion completa de modelos Heretic: https://huggingface.co/collections/saidutta69/racer-is-op-heretic-models
-
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces listados proceden exclusivamente de la model card y de los metadatos de Hugging Face.
+- Datos de reproducción: carpeta `reproduce/` del repositorio en Hugging Face
+- Modelo relacionado Qwen3-0.6B-heretic: enlace truncado en la model card (no disponible completo)

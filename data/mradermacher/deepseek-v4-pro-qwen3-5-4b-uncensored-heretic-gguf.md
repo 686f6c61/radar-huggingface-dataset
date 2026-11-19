@@ -2,51 +2,55 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic es un modelo de lenguaje de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) derivado de la familia Qwen3.5 y destilado a partir de DeepSeek, según los tags del repositorio. La versión aquí descrita es una cuantización estática en formato GGUF publicada por mradermacher a partir del modelo base xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic, que a su vez ha sido sometido a un proceso de "abliteration" o "decensoring" (etiquetado como heretic, uncensored y abliterated) para eliminar los mecanismos de rechazo aprendidos durante el alineamiento.
+DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic es un modelo de lenguaje de 4.326.350.848 parametros (aproximadamente 4,3 mil millones) derivado de la familia Qwen 3.5 y destilado a partir de DeepSeek-V4-Pro, segun los tags de la model card. La version aqui documentada es una cuantizacion GGUF estatica producida por mradermacher a partir del modelo base xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic, publicado bajo licencia Apache 2.0.
 
-El modelo está orientado a tareas de razonamiento, matemáticas, STEM y generación de código, con soporte declarado para seis idiomas (inglés, chino, coreano, japonés, español y ruso). Su licencia Apache 2.0 y su reducido tamaño lo hacen atractivo para despliegues en hardware de consumo, aunque la naturaleza "uncensored" implica que no ha pasado por las salvaguardas habituales de seguridad.
+El modelo se presenta como una variante "uncensored", "decensored" y "abliterated" (etiquetada como "heretic"), lo que indica que se han aplicado tecnicas de eliminacion o atenuacion de los mecanismos de rechazo y alineacion del modelo original. Ademas, incorpora etiquetas de razonamiento, destilacion, SFT, matemáticas y STEM, lo que sugiere un entrenamiento orientado a tareas de razonamiento y contenido tecnico-cientifico.
 
-La relevancia de esta ficha radica en que combina tres tendencias actuales: la destilación de modelos grandes hacia arquitecturas pequeñas, la cuantización GGUF para inferencia local y la modificación del comportamiento de rechazo mediante técnicas de abliteration. El repositorio incluye además suplementos multimodales (mmproj) en precisiones Q8_0 y f16, lo que sugiere capacidades de visión, aunque la model card no detalla su funcionamiento.
+La relevancia de esta ficha radica en que ofrece un paquete de cuantizaciones GGUF listas para usar en llama.cpp y entornos compatibles, con tamanos que van desde 2,1 GB (Q2_K) hasta 8,8 GB (f16), lo que permite desplegar un modelo de 4,3B en hardware de consumo. El repositorio acumula 59.846 descargas y 31 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, según tags; detalles no disponibles) |
-| Parametros totales | 4.205.751.296 (~4,2 B) |
+| Arquitectura | Transformer (familia Qwen 3.5, segun tags; detalles no disponibles) |
+| Parametros totales | 4.326.350.848 (aproximadamente 4,3B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16; mmproj en Q8_0 y f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
 | Idiomas soportados | en, zh, ko, ja, es, ru |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en transformers/safetensors |
+| Tamano del repo | 41,0 GB |
+| Libreria | transformers |
+| Modelo base | xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic |
+| Fecha de creacion | 2026-11-12 |
+| Fecha de actualizacion | 2026-11-18 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de los tags, que apuntan a la familia Qwen3.5 y a un proceso de destilación desde DeepSeek. Los tags incluyen "reasoning", "distillation", "sft", "math", "stem" y "mtp", lo que sugiere que el modelo base fue entrenado con supervisión fina (SFT) sobre datos de razonamiento y matemáticas, probablemente destilando trazas de un modelo mayor de la familia DeepSeek. El tag "mtp" podría referirse a multi-token prediction, aunque no se confirma en la documentación.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas de la model card, que indican la familia Qwen 3.5 y el uso de transformers como libreria. No se especifica si emplea atencion lineal, decodificacion especulativa, mezcla de expertos u otras innovaciones. El modelo base se describe con etiquetas de "distillation", "sft", "reasoning", "math" y "stem", lo que apunta a un proceso de destilacion desde DeepSeek-V4-Pro combinado con ajuste supervisado (SFT) orientado a razonamiento y disciplinas cientificas.
 
-El proceso "heretic" o "abliterated" consiste en la modificación de los pesos para eliminar la dirección de rechazo aprendida durante el alineamiento, de modo que el modelo deja de negarse a responder a ciertas peticiones. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La cuantización realizada por mradermacher es estática (no se han publicado cuantizaciones ponderadas o imatrix en el momento de la ficha).
+El aspecto mas destacable del entrenamiento es la aplicacion de tecnicas "heretic"/"abliterated"/"uncensored", que tipicamente consisten en la ablacion de direcciones de activacion asociadas a rechazos o en ajustes finos que eliminan respuestas de negativa. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documentan los detalles del proceso de cuantizacion mas alla de que son cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1).
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con pipeline declarado como "conversational".
-- Razonamiento explícito y resolución de problemas matemáticos y STEM (tags "reasoning", "math", "stem").
-- Generación y explicación de código, con soporte para tareas de programación.
-- Capacidades multimodales: el repositorio incluye suplementos mmproj (Q8_0 y f16), lo que indica soporte de entrada de imágenes, aunque no se detalla el alcance.
-- Multilingüe en inglés, chino, coreano, japonés, español y ruso.
-- Comportamiento "uncensored": responde a peticiones que los modelos alineados estándar rechazarían.
-- No se confirma soporte de tool calling, function calling ni razonamiento multi-paso con agentes en la información disponible.
-- Compatible con endpoints (tag "endpoints_compatible") y con text-generation-inference.
+- Generacion de texto conversacional multi-turno, con soporte para los seis idiomas declarados (ingles, chino, coreano, japones, espanol y ruso).
+- Razonamiento y modo "thinking" implicito segun los tags de "reasoning" y "distillation".
+- Capacidades matematicas y STEM reforzadas por el entrenamiento declarado en la model card.
+- Soporte multimodal: el repositorio incluye archivos mmproj-Q8_0 y mmproj-f16, que en el ecosistema GGUF corresponden a proyecciones multimodales (tipicamente vision). No se detalla que modalidades cubre exactamente.
+- Comportamiento "uncensored"/"abliterated": el modelo no aplica los rechazos tipicos del modelo original ante solicitudes que este consideraria sensibles.
+- Compatibilidad con text-generation-inference y transformers, ademas de llama.cpp por el formato GGUF.
+- No se documenta explicitamente soporte de tool calling, function calling ni capacidades de agente multi-paso.
 
 ## Casos de uso
 
-- Investigación sobre alineamiento y seguridad: el modelo permite estudiar el efecto de la abliteration comparando sus respuestas con las del modelo base alineado, en entornos controlados de laboratorio.
-- Generación de código en local: con ~4,2 B de parámetros y cuantizaciones Q4_K_M, puede ejecutarse en una GPU de consumo para autocompletar, explicar y refactorizar código sin enviar datos a la nube.
-- Asistencia matemática y STEM: útil para resolver problemas paso a paso en entornos educativos o de investigación donde se requiere razonamiento explícito y privacidad.
-- Procesamiento multilingüe: atención a usuarios en inglés, chino, coreano, japonés, español y ruso con un único modelo de pequeño tamaño.
-- Prototipado rápido de chatbots: su formato GGUF y su licencia Apache 2.0 permiten desplegar un asistente conversacional en llama.cpp u Ollama para pruebas de concepto.
-- Análisis de documentos con imágenes: gracias a los suplementos mmproj, puede emplearse en tareas de descripción o extracción de información de imágenes en pipelines locales.
-- Generación de contenido creativo sin restricciones: para proyectos editoriales o de ficción que requieran respuestas no filtradas, siempre con revisión humana posterior.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el comportamiento de un modelo abliterated frente al original, comparando tasas de rechazo, sesgos y calidad en tareas sensibles, gracias a su licencia Apache 2.0 y su facil despliegue en GGUF.
+- Generacion de codigo y contenido tecnico en local: con cuantizaciones Q4_K_M (2,9 GB) o Q5_K_M (3,3 GB) puede ejecutarse en GPUs de consumo para asistencia de programacion y explicacion de conceptos STEM, apoyandose en el entrenamiento declarado en math y stem.
+- Procesamiento multilingue en seis idiomas: util para pipelines de traduccion o generacion de contenido en ingles, chino, coreano, japones, espanol y ruso sin depender de APIs externas.
+- Prototipado rapido de asistentes conversacionales: su tamano de 4,3B y sus cuantizaciones ligeras (Q2_K de 2,1 GB) permiten iterar en portatiles y estaciones de trabajo modestas con llama.cpp u Ollama.
+- Analisis de documentos con componente visual: los archivos mmproj permiten, en teoria, procesar imagenes junto a texto en llama.cpp, aunque la model card no detalla el alcance de esta capacidad.
+- Investigacion sobre destilacion: al estar etiquetado como destilado de DeepSeek-V4-Pro, sirve como caso de estudio de como se transfieren capacidades de razonamiento de un modelo grande a uno de 4,3B.
+- Entornos con requisitos de privacidad: al ejecutarse completamente en local, es adecuado para procesar datos sensibles sin enviarlos a servicios en la nube.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +58,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3 GB en Q4_K_M, 5 GB en Q8_0 y 8,5 GB en f16 (estimación a partir de los 4,2 B de parámetros; no confirmada por el autor).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o superiores para cuantizaciones altas; A100 o H100 no son necesarias para este tamaño.
-- Cabe en GPU de consumo: sí, en cualquier GPU con 6 GB o más de VRAM para cuantizaciones Q4 o inferiores.
-- Opciones de despliegue: llama.cpp, Ollama, text-generation-inference (según tags), transformers con el modelo base en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): aproximadamente 2,1 GB (Q2_K), 2,9 GB (Q4_K_M), 3,3 GB (Q5_K_M), 4,7 GB (Q8_0) y 8,8 GB (f16).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090, A100 o H100 para cuantizaciones mayores y mayor contexto.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 6-8 GB de VRAM para Q4_K_M o Q5_K_M; incluso en iGPU o CPU con Q2_K-Q3_K.
+- Opciones de despliegue: llama.cpp, Ollama, text-generation-inference (segun tags), transformers con el modelo base en safetensors; el ecosistema GGUF permite ademas usar LM Studio o servidores compatibles con la API de OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (GGUF) | ~4,2 B | no disponible | Apache 2.0 | GGUF | Versión abliterated y cuantizada |
-| Qwen3.5-4B (base) | ~4 B | no disponible | no disponible | safetensors | Modelo original sin modificar |
-| Llama 3.2 3B Instruct | ~3,2 B | 128 K | Llama 3.2 Community | safetensors, GGUF | Alternativa alineada de tamaño similar |
-| Phi-3.5-mini-instruct | ~3,8 B | 128 K | MIT | safetensors, GGUF | Enfoque en razonamiento y código |
+| DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (GGUF) | 4,3B | no disponible | Apache 2.0 | GGUF | Variante abliterated, multilingue (6 idiomas) |
+| Qwen3.5-4B (original, referencia) | aproximadamente 4B | no disponible | no disponible | safetensors/GGUF | Modelo base de la familia, con alineacion estandar |
+| DeepSeek-V4-Pro (modelo docente) | no disponible | no disponible | no disponible | no disponible | Modelo de origen de la destilacion |
+| Llama 3.2 3B Instruct | 3,2B | 128K (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors/GGUF | Alternativa de tamano similar con alineacion estandar |
 
-La comparación directa con Qwen3.5-4B y Llama 3.2 3B es aproximada, ya que no se dispone de datos de rendimiento del modelo aquí descrito.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada; la comparativa se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo "uncensored" y "abliterated", no aplica las salvaguardas habituales de seguridad; puede generar contenido ofensivo, ilegal o peligroso sin filtro.
-- Riesgo elevado de alucinación, especialmente en tareas factuales, dado su tamaño reducido y su orientación a razonamiento destilado.
-- No se especifica la longitud de contexto, lo que dificulta planificar despliegues con documentos largos.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre la legalidad del contenido generado en cada jurisdicción.
-- El proceso de abliteration puede degradar capacidades generales (razonamiento, coherencia) respecto al modelo base alineado.
-- No hay datos publicados de benchmarks que permitan evaluar su calidad real frente a alternativas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, por lo que no existe validación comunitaria.
-- La información sobre arquitectura, entrenamiento y contexto es incompleta; no debe asumirse que hereda todas las capacidades de Qwen3.5 o DeepSeek.
+- Al ser un modelo "uncensored"/"abliterated", no aplica los filtros de seguridad del modelo original; puede generar contenido danino, ofensivo o ilegal si se le solicita, lo que exige salvaguardas externas en produccion.
+- Riesgo elevado de alucinacion: no se han publicado evaluaciones de fidelidad ni benchmarks que permitan cuantificarlo.
+- La eliminacion de la alineacion puede degradar capacidades generales (razonamiento, instruction following) respecto al modelo base original; no hay datos que lo confirmen o desmientan.
+- Longitud de contexto no documentada; no se puede garantizar el manejo de conversaciones o documentos largos.
+- Cobertura limitada a seis idiomas; el rendimiento en espanol no esta cuantificado.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad legal del contenido generado y de las implicaciones de distribuir un modelo sin alineacion.
+- La model card no documenta el proceso de cuantizacion mas alla de los metadatos; las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad.
+- No se especifica si el modelo soporta tool calling o agentes; no debe asumirse en pipelines de produccion sin validacion.
+- El repositorio base y la cadena de derivacion (DeepSeek-V4-Pro, Qwen3.5) no estan documentados en detalle en la informacion disponible, lo que dificulta la trazabilidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF
 - Modelo base: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic
-- Página de descargas del autor: https://hf.tst.eu/model#DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

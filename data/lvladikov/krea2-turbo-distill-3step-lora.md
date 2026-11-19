@@ -2,95 +2,97 @@
 
 ## Resumen
 
-Krea2-Turbo-Distill-3step-LoRA es un adaptador LoRA de destilación de pasos (step distillation) para el modelo de texto a imagen Krea 2 Turbo, desarrollado por el usuario lvladikov. Su objetivo es reducir el número de pasos de denoising necesarios para generar una imagen: frente a los 8 pasos que emplea Krea 2 Turbo de forma nativa, este LoRA permite obtener resultados utilizables en 3 pasos, lo que se traduce en un coste computacional y una latencia sensiblemente menores por imagen generada.
+Krea2-Turbo-Distill-3step-LoRA es un adaptador LoRA de destilación de pasos para el modelo de texto a imagen Krea 2 Turbo, desarrollado por el usuario lvladikov. Su función es reducir el número de pasos de denoising necesarios para generar una imagen: lleva al modelo base de 8 pasos a 3, manteniendo —y según el autor, superando— el nivel de detalle fino del modelo profesor. Se trata de un adaptador, no de un modelo autónomo, y requiere cargar Krea 2 Turbo como base.
 
-El adaptador se publica como un teaser y, según la propia model card, sigue en entrenamiento en el momento de la publicación (fecha de creación del repositorio: 28 de octubre de 2026). El autor lo presenta como el punto intermedio entre sus variantes de 4 pasos y 2 pasos, afirmando que la calidad supera a ambas; se trata, por tanto, de una publicación de caracter experimental y no de un artefacto estabilizado para producción. El entrenamiento se realizó, según el autor, en una GPU H100 en la nube.
+El adaptador emplea una estrategia de *distribution matching* (coincidencia de distribuciones) en lugar de imitación directa de trayectorias, con ocho críticos entrenados sobre características internas del modelo base congelado. Está entrenado sobre aproximadamente 30.000 trayectorias grabadas del profesor y 66.000 muestras de entrenamiento, partiendo de los pesos del LoRA de 4 pasos del mismo autor. El resultado es un LoRA de rango 64 sobre 228 módulos, compatible con diffusers, ComfyUI y MLX sin nodos ni samplers personalizados.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de aceleración de inferencia (destilación de pasos sobre un modelo Turbo ya destilado) que interesa a quien despliegue generación de imágenes a escala; por otro, advierte de que el repositorio no incluye especificaciones técnicas detalladas, métricas cuantitativas ni pesos verificables en el momento de la consulta (tamaño del repo: 0.0 GB, 0 descargas, 2 likes), por lo que cualquier evaluación debe hacerse empíricamente sobre el checkpoint base.
+Es relevante ahora porque la reducción del coste de inferencia en modelos de difusión es un cuello de botella práctico en producción: pasar de 8 a 3 pasos supone un ahorro de tiempo de denoising de 2,6× (de 65,4 s a 24,9 s a 1024×1024 en float16), lo que abarata sustancialmente el despliegue de generación de imágenes de alta resolución.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre un modelo de difusion texto a imagen; arquitectura del modelo base Krea-2-Turbo no disponible en la informacion proporcionada |
-| Parametros totales | no disponible (no se declara el rango ni el numero de modulos adaptados); el modelo base Krea-2-Turbo no publica cifra en la informacion disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo de texto a imagen; no se especifica la ventana del codificador de texto) |
-| Tipos de cuantizacion | no disponible; al ser un LoRA, cabe fusion del adaptador con los pesos base y cuantizacion posterior del conjunto, pero no se documenta en la model card |
-| Idiomas soportados | no disponible (los prompts dependen del codificador de texto del modelo base) |
-| Licencia | krea-2-community-license (license: other), texto en https://huggingface.co/lvladikov/Krea2-Turbo-Distill-3step-LoRA/blob/main/LICENSE.pdf |
-| Formato de pesos | no confirmado; library_name: diffusers, tamano del repo 0.0 GB (el formato habitual en LoRA de diffusers es safetensors, sin verificar en este repositorio) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusión Krea 2 Turbo |
+| Parámetros totales | no disponible (rango 64 sobre 228 módulos) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de texto a imagen) |
+| Tipos de cuantización | no disponible (pesos en safetensors; el modelo base se usa en float16/bfloat16) |
+| Idiomas soportados | no disponible (prompts en lenguaje natural; idiomas no declarados) |
+| Licencia | krea-2-community-license (Other) |
+| Formato de pesos | safetensors (dos variantes: claves diffusers y claves ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, no un modelo completo: se aplica sobre krea/Krea-2-Turbo (relacion base_model_relation: adapter) y modifica el comportamiento del denoiser para que la trayectoria de muestreo converja en 3 pasos en lugar de los 8 del modelo Turbo original. La técnica declarada en las etiquetas es distillation y step-distillation, es decir, destilación de la trayectoria de difusión: el adaptador aprende a reproducir el resultado de un muestreo más largo con muy pocos pasos. El autor indica que el entrenamiento se ejecutó en una GPU H100 en la nube, pero no detalla el dataset, el número de iteraciones, el checkpoint exacto publicado ni la configuración de entrenamiento (rango del LoRA, learning rate, scheduler de sigmas).
+El adaptador es un LoRA de rango 64 aplicado sobre 228 módulos del modelo base Krea 2 Turbo, con la misma forma que los adaptadores de 4 y 2 pasos del mismo autor. No introduce arquitectura nueva: se acopla al transformer de difusión existente y se usa con el sampler Euler estándar y CFG 1 (sin guía, `guidance_scale=0.0` en diffusers), sobre las sigmas propias de 3 pasos de Turbo: `[1.0, 0.8633, 0.6123]`.
 
-Por la información disponible sobre la familia de adaptadores del mismo autor, estos LoRA operan con los propios pesos y sigmas de Turbo y con guidance 0.0, manteniendo el resto del pipeline intacto. El adaptador de 4 pasos se describe como una reducción del mínimo utilizable desde 8 pasos con una aceleración aproximada de 1,6x; el de 2 pasos lleva el modelo a 2 pasos con un cuarto de los pases de denoising. Esta variante de 3 pasos se sitúa deliberadamente en medio y, según el autor, con mejor calidad que las dos anteriores. No se documenta ninguna innovación arquitectónica adicional (atención lineal, decodificación especulativa ni cambios en el VAE o el codificador de texto): la contribución es exclusivamente de destilación temporal.
+El entrenamiento se basa en *distribution matching*: en lugar de imitar la trayectoria exacta del profesor, el estudiante aprende a producir lo que el profesor generaría plausiblemente, lo que evita el promediado que causa desenfoque y bordes duplicados. Se emplean ocho críticos (artefactos, fotografías reales, disposición de la primera llamada, contenido, acuerdo con el prompt, rotulación, caras grandes y el rollout completo de tres llamadas), cada uno como una pequeña cabeza sobre características de la red intermedia del modelo base congelado. Se usaron unas 30.000 trayectorias grabadas del profesor (8 pasos, 11 resoluciones, tres muestras por paso, ~90.000 en total) y 66.000 muestras de entrenamiento, partiendo de los pesos del LoRA de 4 pasos. El entrenamiento se realizó en una sola GPU H100/H200 durante aproximadamente 161 horas, con un proceso de asentamiento de pesos (últimas 600 muestras con learning rate a cero) para publicar los pesos en reposo. Se cubren 11 resoluciones de entrenamiento, de 512×768 a 1440×1440 y 1824×1024.
 
 ## Capacidades
 
-- Generación de imágenes a partir de descripciones textuales (text-to-image) con el pipeline de diffusers y el modelo base Krea 2 Turbo.
-- Muestreo acelerado: generación en 3 pasos de denoising frente a los 8 del modelo Turbo, lo que reduce el coste por imagen.
-- Compatibilidad con el ecosistema del modelo base: al ser un adaptador, hereda el codificador de texto, el VAE y las capacidades de resolución del checkpoint Krea-2-Turbo.
-- Ajuste fino de estilo y estética mediante el prompt, sujeto a lo que permita el modelo base.
-- Integración como adaptador cargable y descargable (load/unload) en pipelines diffusers, sin sustituir los pesos base.
-- No se documentan capacidades de edición de imagen, inpainting, outpainting, control estructural (ControlNet), tool calling, agentes ni razonamiento multi-paso; no disponibles en la información proporcionada.
+- Generación de imágenes texto a imagen con el modelo base Krea 2 Turbo, reduciendo el denoising de 8 a 3 pasos.
+- Mayor detalle fino que el profesor en las 22 prompts de prueba: textura fina 1,26×, bandas de 16 y 8 píxeles 1,27× y 1,23×; color al nivel del profesor.
+- Funcionamiento *drop-in*: LoRA estándar con sampler Euler estándar, sin nodos ni samplers personalizados.
+- Compatibilidad con diffusers, ComfyUI y MLX (Apple Silicon, mediante el nodo personalizado LVNodes del autor).
+- Soporte de 11 resoluciones de entrenamiento, incluyendo 1824×1024.
+- No se declaran capacidades de tool calling, agentes, visión, audio ni modo thinking (no aplica a un modelo de difusión).
 
 ## Casos de uso
 
-- Prototipado rápido de conceptos visuales: con 3 pasos por imagen en lugar de 8, un estudio puede iterar sobre decenas de variantes de un prompt en el tiempo que antes dedicaba a unas pocas, usando el LoRA sobre Krea-2-Turbo en un pipeline diffusers.
-- Generación por lotes en backend de producto: al recortar los pases de denoising, el coste por imagen en GPU baja de forma aproximadamente proporcional, lo que resulta adecuado para colas de generación de miniaturas o ilustraciones a demanda.
-- Exploración estética en investigación: permite comparar la calidad de la destilación a 2, 3 y 4 pasos manteniendo el mismo modelo base, útil para estudiar el compromiso entre fidelidad y número de pasos.
-- Generación asistida en equipos de diseño: el adaptador se puede cargar y descargar sin duplicar los pesos base, de modo que un mismo despliegue de Krea-2-Turbo sirve tanto en modo calidad (8 pasos) como en modo rápido (3 pasos).
-- Pruebas de concepto en hardware limitado: reducir los pasos disminuye el tiempo de pared por imagen, lo que facilita demostraciones interactivas en entornos con una sola GPU.
-- Evaluación de técnicas de destilación: sirve como referencia práctica para investigadores que quieran reproducir o contrastar metodologías de step distillation sobre modelos Turbo.
-- Filtrado previo de prompts en un pipeline de dos etapas: generar borradores a 3 pasos y reservar el muestreo completo para las imágenes seleccionadas.
+- Generación de imágenes en producción a alta resolución: con 3 pasos en lugar de 8, el coste de denoising cae a 24,9 s frente a 65,4 s a 1024×1024, lo que permite servir más peticiones por GPU en pipelines de generación por lotes.
+- Previsualización rápida en herramientas creativas: útil para iterar sobre prompts y composiciones con latencia baja antes de un render final de mayor calidad.
+- Integración en ComfyUI para flujos de trabajo de estudio: el repositorio incluye un workflow listo con nodos estándar (`krea2_turbo_3step_lora_t2i.json`), adecuado para artistas técnicos que ya trabajan en ComfyUI.
+- Despliegue en Apple Silicon: el workflow MLX con LVNodes permite ejecutar el adaptador en equipos Mac, ampliando el acceso a equipos sin GPU NVIDIA.
+- Generación de material gráfico con detalle fino: la mejora en textura y bandas de alta frecuencia lo hace adecuado para imágenes donde el detalle (telas, superficies, rostros grandes) es crítico.
+- Prototipado de investigación en destilación de pasos: sirve como referencia reproducible de *distribution matching* con críticos múltiples para estudiar reducción de pasos en modelos de difusión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Datos aportados por el autor en la model card (22 prompts de prueba):
 
-La model card únicamente incluye una galería cualitativa de 100 imágenes generadas con el LoRA (r001 a r100) y una afirmación del autor de que la calidad es superior a la de sus variantes de 2 y 4 pasos. No hay métricas objetivas (FID, CLIP score, similitud perceptual) ni comparaciones numéricas con otros métodos de aceleración. Como referencia externa, la variante de 4 pasos del mismo autor se describe en una publicación de Draw Things con una aceleración aproximada de 1,6x al pasar de 8 a 4 pasos; extrapolar esa cifra a 3 pasos daría una reducción teórica de pases de denoising de 8 a 3 (un 62,5 % menos), pero se trata de una estimación aritmética, no de una medición publicada para este adaptador.
+| Métrica | Este LoRA (3 pasos) | LoRA 4 pasos | Turbo stock (3 pasos) |
+|---|---|---|---|
+| Pasos de denoising | 3 | 4 | 3 |
+| Tiempo de denoising a 1024×1024 (float16) | 24,9 s | no disponible | 65,4 s (8 pasos) |
+| Textura fina (relativo al profesor) | 1,26× | 1,04× | 0,58× |
+| Banda de 16 píxeles | 1,27× | no disponible | no disponible |
+| Banda de 8 píxeles | 1,23× | no disponible | no disponible |
+| Color | al nivel del profesor | no disponible | no disponible |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, al no tratarse de un modelo de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible para el adaptador en sí; el consumo viene determinado casi por completo por el modelo base Krea-2-Turbo, cuyas necesidades de memoria no se detallan en la información proporcionada.
-- GPU recomendadas: el autor solo menciona haber entrenado en una H100 (cloud). No se especifican GPU de inferencia recomendadas.
-- GPU de consumo: no confirmado. La reducción de 8 a 3 pasos disminuye el tiempo de cómputo, pero no la memoria necesaria para alojar los pesos del modelo base.
-- Opciones de despliegue: diffusers (library_name declarado). En los resultados de búsqueda aparece Draw Things probando la variante de 4 pasos del mismo autor, lo que sugiere compatibilidad de la familia con ese cliente, sin confirmación para esta variante de 3 pasos. No se documenta soporte de vLLM, TGI, llama.cpp ni Ollama (herramientas orientadas a modelos de lenguaje).
-- Latencia y throughput: no disponibles. La ventaja teórica es un 62,5 % menos de pasos de denoising que el modelo Turbo (3 frente a 8), pero no se publica ningún tiempo por imagen medido.
+- El adaptador en sí ocupa 6,3 GB en el repositorio (incluye pesos en dos formatos, workflows y documentación); los pesos LoRA son ligeros frente al modelo base.
+- Requiere cargar el modelo base Krea 2 Turbo, cuyo peso completo no se detalla en la información disponible; la VRAM total depende del modelo base y de la resolución.
+- Entrenado en una sola GPU H100/H200 durante unas 161 horas; la inferencia es viable en GPUs de consumo con suficiente VRAM para el modelo base, aunque no se especifica el mínimo exacto.
+- Despliegue soportado: diffusers (con `Krea2Pipeline`), ComfyUI (nodos estándar) y MLX en Apple Silicon mediante LVNodes.
+- Latencia de denoising medida: 24,9 s a 1024×1024 en float16, excluyendo codificación de texto y decodificación VAE; el coste del adaptador por llamada está dentro del ~1%.
+- Throughput estimado: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Pasos de muestreo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Krea2-Turbo-Distill-3step-LoRA (este) | LoRA de destilacion sobre Krea-2-Turbo | 3 | no disponible | no aplica | krea-2-community-license | Publicado como teaser, en entrenamiento |
-| Krea2-Turbo-Distill-4step-LoRA | LoRA de destilacion sobre Krea-2-Turbo | 4 | no disponible | no aplica | no disponible en la informacion | Publicado (checkpoints sucesivos, p. ej. agosto de 2026) |
-| Krea2-Turbo-Distill-2step-LoRA | LoRA de destilacion sobre Krea-2-Turbo | 2 | no disponible | no aplica | no disponible en la informacion | Publicado (checkpoint final chk51195, octubre de 2026) |
-| Krea 2 Turbo (base) | Modelo de difusion texto a imagen | 8 | no disponible | no aplica | krea-2-community-license | Publicado en Hugging Face (krea/Krea-2-Turbo) |
-
-La comparación relevante es interna a la familia del mismo autor: 2, 3 y 4 pasos sobre el mismo base. No se dispone de datos de calidad objetivos que permitan ordenar las tres variantes; la única jerarquía es la afirmación del autor de que la versión de 3 pasos supera a las otras dos.
+| Modelo | Tipo | Pasos | Detalle fino (vs. profesor) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Krea2-Turbo-Distill-3step-LoRA (este) | LoRA destilación | 3 | 1,26× | krea-2-community-license | Hugging Face |
+| Krea2-Turbo-Distill-4step-LoRA | LoRA destilación | 4 | 1,04× | krea-2-community-license | Hugging Face |
+| Krea2-Turbo-Distill-2step-LoRA | LoRA destilación | 2 | no disponible (calidad inferior al de 4 pasos según el autor) | krea-2-community-license | Hugging Face |
+| Krea 2 Turbo (base) | Modelo de difusión | 8 | 1,0× (referencia) | krea-2-community-license | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Estado del artefacto: la model card lo describe explícitamente como "in training" y teaser; no hay garantía de que el repositorio contenga pesos utilizables ni un checkpoint final. El tamaño del repo aparece como 0.0 GB en la información consultada.
-- Ausencia de especificaciones: no se documentan rango del LoRA, módulos adaptados, dataset, número de pasos de entrenamiento ni configuración de sigmas, lo que impide reproducir el entrenamiento.
-- Sin métricas: no hay benchmarks objetivos; la afirmación de mejora de calidad frente a las variantes de 2 y 4 pasos es una valoración cualitativa del autor y debe verificarse de forma independiente.
-- Riesgo de degradación con pocos pasos: la destilación agresiva de pasos suele sacrificar detalle fino, coherencia en escenas complejas y fidelidad al prompt; con 3 pasos el margen de error es menor que con 8.
-- Dependencia total del modelo base: cualquier sesgo, limitación de resolución, restricción del codificador de texto o problema de alucinación visual de Krea-2-Turbo se hereda sin cambios.
-- Idiomas: no se declara cobertura lingüística; el comportamiento multilingüe del prompt depende del codificador de texto del base y no está documentado aquí.
-- Licencia: se rige por la krea-2-community-license (license: other), no por una licencia open source estándar. Es imprescindible leer el PDF enlazado antes de cualquier uso comercial; no se detallan en la información disponible las restricciones concretas de atribución, redistribución o uso comercial.
-- Reproducibilidad: al ser un adaptador de la comunidad con 0 descargas y 2 likes, no existe validación por terceros ni historial de uso en producción.
-- Trazabilidad: las fechas de creación y actualización del repositorio (28 de octubre de 2026) y las referencias a las variantes de 2 y 4 pasos deben contrastarse, dado que el ecosistema Krea 2 es reciente.
+- Proyecto en entrenamiento activo: el autor indica que el checkpoint se publica porque ya es usable, pero seguirá actualizándose; pueden aparecer nuevas versiones y LoRAs.
+- La imagen generada se aleja algo más de la del profesor que la del LoRA de 4 pasos, según reconoce el autor; el compromiso es velocidad frente a fidelidad exacta.
+- No es un modelo autónomo: requiere el modelo base Krea 2 Turbo y no funciona de forma independiente.
+- Licencia krea-2-community-license: es necesario revisar el PDF de licencia y la NOTICE de atribución antes de cualquier uso comercial; no es una licencia permisiva estándar.
+- Riesgo de alucinación y sesgos: no se documentan en la información disponible; al ser un modelo de imagen, los riesgos se refieren a contenido generado (estereotipos visuales, fidelidad al prompt), no evaluados en la model card.
+- Idiomas soportados no declarados: el comportamiento multilingüe de los prompts no está especificado.
+- Los datos de rendimiento provienen del propio autor y de 22 prompts de prueba, sin validación externa independiente.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/lvladikov/Krea2-Turbo-Distill-3step-LoRA
-- Licencia (PDF): https://huggingface.co/lvladikov/Krea2-Turbo-Distill-3step-LoRA/blob/main/LICENSE.pdf
+- Modelo en Hugging Face: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-3step-LoRA
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
-- Variante de 4 pasos: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA
-- Variante de 2 pasos: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-2step-LoRA
-- README de la variante de 4 pasos (blame): https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA/blame/main/README.md
-- Hilo en Reddit sobre el checkpoint final de 2 pasos: https://www.reddit.com/r/StableDiffusion/comments/1x2s9sd/krea2_turbo_distill_2_step_lora_final_checkpoint/
-- Hilo en Reddit sobre el checkpoint de 4 pasos: https://www.reddit.com/r/StableDiffusion/comments/1vv4cdy/krea2_turbo_distill_4_step_lora_new_checkpoint/
-- Draw Things (cuenta que prueba la variante de 4 pasos): https://x.com/drawthingsapp
+- LoRA de 4 pasos: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA
+- LoRA de 2 pasos: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-2step-LoRA
+- Nodos y workflows ComfyUI (LVNodes): https://huggingface.co/lvladikov/ComfyUI-Nodes-and-Workflows/blob/main/LVNodes/README.md
+- Licencia: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-3step-LoRA/blob/main/LICENSE.pdf

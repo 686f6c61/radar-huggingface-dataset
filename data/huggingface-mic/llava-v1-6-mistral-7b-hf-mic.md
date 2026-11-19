@@ -2,91 +2,88 @@
 
 ## Resumen
 
-`llava-v1.6-mistral-7b-hf-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` bajo la etiqueta `test-artifact`. No es un modelo utilizable: se trata de una version reducida ("slim") del checkpoint multimodal `llava-hf/llava-v1.6-mistral-7b-hf`, con solo 4.328.448 parametros totales frente a los aproximadamente 7.000 millones del modelo original. Su proposito es servir como fixture de integracion continua para validar contratos de framework (carga, forward, perdida y gradientes) sin necesidad de descargar ni ejecutar el modelo completo.
+`llava-v1.6-mistral-7b-hf-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo usable para inferencia real: se trata de una version "reducida" (slim fixture) del checkpoint multimodal `llava-hf/llava-v1.6-mistral-7b-hf`, con la misma arquitectura y los mismos nombres de tensores, pero con una configuracion encogida (2 capas en el codificador visual y 2 capas en el modelo de lenguaje) y pesos aleatorios con semilla 17. Su proposito es servir como fixture de integracion continua para validar contratos de frameworks (en concreto, la integracion con Transformers) sin necesidad de descargar el modelo completo de 7B.
 
-El repositorio empaqueta pesos reducidos, ejemplos de uso ejecutables y un directorio de expectativas de framework (`integrations/transformers/expectations`), todo ello descrito en un manifiesto de contrato (`integration.json`). La arquitectura declarada es `LlavaNextForConditionalGeneration`, la misma familia LLaVA-Next v1.6 que el modelo base, pero con el numero de capas ocultas reducido a 2 tanto en la torre de vision como en el modelo de lenguaje.
+El modelo base real, LLaVA-Next v1.6 Mistral-7B, es un modelo vision-lenguaje que combina el codificador visual de CLIP con el modelo de lenguaje Mistral-7B y un proyector multimodal, orientado a tareas de pregunta-respuesta sobre imagenes y razonamiento visual. Este repositorio, sin embargo, no contiene esos pesos funcionales: solo un esqueleto de 4.328.448 parametros con pesos aleatorios.
 
-Es relevante unicamente en el contexto de ingenieria de software: permite a los mantenedores de Transformers y de otras librerias verificar que las rutas de carga y ejecucion de LLaVA-Next siguen funcionando tras cambios en el codigo, con un coste de almacenamiento practicamente nulo (tamano del repo de 0,0 GB) y sin depender de pesos reales. No debe emplearse para inferencia, evaluacion de calidad ni despliegue en produccion.
+Por tanto, esta ficha documenta el artefacto tal y como existe en Hugging Face, aclarando en cada seccion que los datos de rendimiento, capacidades y uso practico corresponden al modelo base de referencia y no al fixture, que no debe emplearse en produccion ni en evaluaciones de calidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | LlavaNextForConditionalGeneration (transformer multimodal vision-lenguaje) |
-| Parametros totales | 4.328.448 (fixture reducido; el modelo base tiene ~7.000 millones) |
+| Parametros totales | 4.328.448 (fixture reducido); el modelo base real es de aproximadamente 7B, aunque el dato exacto no esta disponible en la informacion proporcionada |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos guardados en float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una instancia reducida de LLaVA-Next v1.6, que combina un codificador visual con un modelo de lenguaje Mistral-7B mediante proyeccion de embeddings visuales. En este fixture, la configuracion se ha reducido con la regla generica de `sweep.py`: `vision num_hidden_layers = 2` y `text num_hidden_layers = 2`. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que el codigo que espera cargar el modelo completo encuentra las mismas claves.
+El modelo base `llava-hf/llava-v1.6-mistral-7b-hf` corresponde a LLaVA-Next v1.6 con Mistral-7B como modelo de lenguaje. La arquitectura es un transformer multimodal que combina un codificador visual (basado en CLIP, segun la convencion de LLaVA-Next) con un proyector que mapea las representaciones visuales al espacio de embeddings del LLM, y el decoder de Mistral-7B para generar texto. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se conservaron porque superaron la puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplazo los logits al menos 0,001 (el caso mas debil, `pixel_values:halve`, produjo 0,0442). Los ficheros de procesador (`added_tokens.json`, `chat_template.json`, `generation_config.json`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`) se copiaron byte a byte desde `llava-hf/llava-v1.6-mistral-7b-hf`. El modelo se guardo en float16 y se verifico que es finito en float32, bfloat16 y float16 para forward, perdida y gradientes.
+El repositorio documentado aqui es un fixture de integracion, no un modelo entrenado. Segun la model card, se genero mediante la regla generica de `sweep.py` del proyecto `transformers-mic`, reduciendo el numero de capas ocultas del codificador visual a 2 y del modelo de texto a 2. Los pesos son aleatorios (semilla 17) y no se entreno nada: se valido unicamente que el modelo pasara una compuerta de sensibilidad a las entradas, es decir, que cada perturbacion de las entradas del contrato moviera los logits al menos 0.001 (la perturbacion mas debil, `pixel_values:halve`, produjo 0.0442). Los ficheros de procesador (tokenizer, preprocessor, generation config, chat template) se copiaron byte a byte desde el checkpoint real, y los nombres de tensores coinciden con los del checkpoint original. El fixture es finito en float32, bfloat16 y float16 (forward, loss y gradientes).
 
 ## Capacidades
 
-- Carga y ejecucion como `LlavaNextForConditionalGeneration` en Transformers, con los mismos nombres de tensor que el checkpoint real.
-- Forward pass funcional con entradas multimodales (texto e imagen) a nivel de contrato.
-- Calculo de perdida y gradientes finitos en float32, bfloat16 y float16.
-- Validacion de contratos de framework mediante el directorio `integrations/transformers/expectations`.
-- No dispone de capacidades reales de generacion, razonamiento, codigo, matematicas, tool calling, agentes ni multilingues: los pesos son aleatorios.
-- No soporta thinking mode, vision util ni audio: la salida es ruido estadistico.
+- No es un modelo funcional: los pesos son aleatorios y no producen salidas con sentido.
+- Sirve como fixture de pruebas para validar la carga, el forward, la loss y los gradientes de la clase `LlavaNextForConditionalGeneration` en Transformers.
+- Permite comprobar la compatibilidad de ficheros de procesador (tokenizer, preprocessor, chat template) copiados del modelo real.
+- Valida contratos de integracion definidos en `integration.json` y el directorio `integrations/transformers/expectations`.
+- No dispone de capacidades reales de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes ni multilingues, al no tratarse de un modelo entrenado.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI para Transformers: cargar el fixture y verificar que la ruta de `LlavaNextForConditionalGeneration` no se rompe tras refactorizaciones, sin descargar el checkpoint completo de ~7.000 millones de parametros.
-- Validacion de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen (formas de tensores, dtypes, nombres de claves) en cada version de la libreria.
-- Pruebas de regresion de procesador y tokenizer: al copiarse los ficheros byte a byte del modelo base, permite verificar que el pipeline de preprocesado multimodal sigue produciendo las mismas entradas.
-- Desarrollo de utilidades de carga y serializacion: probar rutas de safetensors, conversion de dtypes y manejo de checkpoints reducidos con un coste de disco minimo.
-- Verificacion de gradientes y mixed precision: el fixture garantiza finitud en float32, bfloat16 y float16, lo que sirve para validar rutas de entrenamiento sin GPU de gran memoria.
-- Reproduccion de builds: `build.json` registra fuentes fijadas, resultados de la puerta de sensibilidad y hashes de ficheros, permitiendo reconstruir el fixture con `python example/build_fixtures.py --fixture llava-v1.6-mistral-7b-hf-mic`.
+- Pruebas de integracion continua en el proyecto `transformers-mic`: el fixture permite ejecutar tests de la arquitectura LLaVA-Next en pipelines de CI sin descargar el checkpoint de 7B, reduciendo tiempo y ancho de banda.
+- Validacion de contratos de framework: los ficheros `integration.json` e `integrations/transformers/expectations` permiten verificar que la implementacion de Transformers cumple las expectativas de entrada y salida del modelo.
+- Pruebas de compatibilidad de procesadores: al copiar byte a byte tokenizer, preprocessor y chat template del modelo real, se puede comprobar que el pipeline de preprocesado funciona sin necesidad de los pesos completos.
+- Verificacion de tipos y dtypes: el fixture es finito en float32, bfloat16 y float16, por lo que sirve para testear rutas de ejecucion en distintas precisiones.
+- Desarrollo de utilidades de carga de modelos: permite probar cargadores, sharding y serializacion safetensors con un repositorio minimo.
+- Reproducibilidad de builds: `build.json` registra fuentes fijadas, resultados de la compuerta y hashes de ficheros, util para auditar que el fixture corresponde al checkpoint real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K, etc.) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El fixture no es evaluable: sus pesos son aleatorios y su configuracion esta reducida, por lo que cualquier metrica de calidad carece de significado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float16 para los 4.328.448 parametros del fixture (el modelo base requeriria aproximadamente 14 GB en float16).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU para ejecutar el fixture.
-- Cabe en cualquier GPU consumer y en la mayoria de entornos CPU.
-- Opciones de despliegue: Transformers con `LlavaNextForConditionalGeneration`; el resto de stacks (vLLM, llama.cpp, Ollama, TGI) no estan documentados para este fixture.
-- Latencia y throughput: no disponibles; al ser un fixture de test, no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB para el fixture en float16 (4,3M parametros); el modelo base real de 7B requeriria aproximadamente 14 GB en float16, aunque este dato no se confirma en la informacion proporcionada.
+- GPU recomendadas: cualquier GPU consumer moderna puede ejecutar el fixture; para el modelo base real se necesitarian GPUs con al menos 16-24 GB de VRAM (por ejemplo, RTX 4090, A100, H100), si bien esta estimacion no procede de la informacion disponible.
+- Cabe en cualquier GPU consumer (incluso integradas) por el tamano reducido del fixture.
+- Opciones de despliegue: Transformers (integracion documentada en `integrations/transformers/usage.md`); otras opciones como vLLM, llama.cpp, Ollama o TGI no estan documentadas para este artefacto.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/llava-v1.6-mistral-7b-hf-mic` | 4.328.448 | no disponible | Fixture de test | no disponible | Hugging Face |
-| `llava-hf/llava-v1.6-mistral-7b-hf` | ~7.000 millones | no disponible en la informacion | Modelo multimodal real | no disponible en la informacion | Hugging Face |
-| Otros fixtures de `huggingface-mic` | variable | no disponible | Test de contratos | no disponible | Hugging Face |
+| `huggingface-mic/llava-v1.6-mistral-7b-hf-mic` | 4.328.448 (fixture) | no disponible | Fixture de test | no disponible | Hugging Face |
+| `llava-hf/llava-v1.6-mistral-7b-hf` | ~7B (dato no confirmado en la informacion) | no disponible | Modelo vision-lenguaje real | no disponible | Hugging Face |
+| Otros modelos LLaVA-Next de la familia | no disponible | no disponible | Vision-lenguaje | no disponible | Hugging Face |
 
-La comparativa con alternativas de la misma categoria (modelos multimodales de ~7B) no esta disponible en la informacion proporcionada.
+La comparativa con alternativas de la misma categoria (modelos vision-lenguaje de ~7B) no puede completarse con los datos proporcionados; se indica "no disponible" en los campos que no constan.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y la salida no tiene significado semantico.
-- Etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe confundirse con el modelo base.
-- La configuracion esta reducida a 2 capas en vision y 2 en texto, por lo que no reproduce el comportamiento numerico del checkpoint real.
-- No dispone de licencia declarada; su uso comercial no esta contemplado ni documentado.
-- Riesgo de alucinacion total: cualquier texto generado es ruido estadistico sin fundamento.
-- No soporta idiomas de forma significativa ni tiene capacidades multilingues reales.
-- No debe desplegarse en produccion ni usarse para evaluar calidad, sesgos o rendimiento del modelo LLaVA-Next original.
-- El tamano del repo (0,0 GB) y las 1.707 descargas reflejan su naturaleza de artefacto ligero de test, no de modelo distribuible.
+- No es un modelo usable: los pesos son aleatorios y las salidas no tienen sentido. Esta etiquetado como `test-artifact` precisamente para excluirlo de busquedas de modelos candidatos.
+- Riesgo de confusion: el nombre incluye "mistral-7b" y "llava-v1.6", lo que puede llevar a error si se usa sin leer la model card.
+- La licencia no esta disponible en la informacion proporcionada; no debe asumirse uso comercial sin verificar la del modelo base `llava-hf/llava-v1.6-mistral-7b-hf`.
+- La configuracion reducida (2 capas visuales, 2 capas de texto) impide cualquier evaluacion de calidad, sesgos o alucinacion.
+- No hay informacion sobre idiomas soportados ni sobre limitaciones de contexto.
+- El repositorio ocupa 0.0 GB segun los metadatos, coherente con un fixture minimo, pero no debe interpretarse como un modelo listo para produccion.
+- Cualquier uso en produccion, demo o evaluacion debe hacerse con el checkpoint base real, no con este artefacto.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic
+- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic
 - Modelo base: https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/blob/main/build.json
+- Manifiesto de contrato (`integration.json`): https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/blob/main/integration.json
+- Uso con Transformers (`integrations/transformers/usage.md`): https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers (`integrations/transformers/expectations`): https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture (`build.json`): https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic/blob/main/build.json
 - Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/llava-v1.6-mistral-7b-hf-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

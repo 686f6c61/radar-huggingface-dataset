@@ -2,96 +2,91 @@
 
 ## Resumen
 
-Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-i1-GGUF es una cuantizacion GGUF, generada por mradermacher, del modelo richardyoung/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic. Se trata de una variante "heretic" (abliterated/decensored) del modelo Mistral Small 3.2 24B Instruct de junio de 2025, es decir, un ajuste que elimina total o parcialmente los mecanismos de rechazo y alineacion de seguridad del modelo original. El repositorio contiene unicamente los pesos cuantizados en formato GGUF, no el modelo base.
+Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-i1-GGUF es una cuantizacion GGUF con imatrix del modelo richardyoung/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic, publicada por el usuario mradermacher. El modelo base es una variante "heretic" (abliterated/decensored) del Mistral-Small-3.2-24B-Instruct-2506 oficial de Mistral AI, es decir, un ajuste que elimina total o parcialmente los mecanismos de rechazo del modelo original manteniendo, en teoria, sus capacidades generales. Con 23.572.403.200 parametros, es un transformer denso de aproximadamente 24B, multimodal (vision) y conversacional.
 
-La relevancia de esta ficha es doble: por un lado, documenta un artefacto de cuantizacion pensado para inferencia local con llama.cpp y derivados (Ollama, LM Studio, KoboldCpp); por otro, advierte de que el modelo subyacente ha sido modificado para reducir sus filtros de seguridad, lo que tiene implicaciones directas en su uso en produccion. La informacion disponible en el repositorio es muy escasa: no hay model card descriptiva, no se declara licencia, no se especifican idiomas y el conteo de parametros reportado en safetensors (5.000.760) es incoherente con el nombre del modelo (24B), por lo que se trata de un dato no fiable.
+La relevancia de esta ficha reside en dos factores. Por un lado, ofrece el modelo base en formato GGUF con cuantizaciones que van desde 5,4 GB (i1-IQ1_S) hasta las variantes de mayor calidad, lo que permite ejecutarlo en hardware de consumo y en entornos con llama.cpp u Ollama. Por otro lado, la naturaleza "heretic" del modelo implica que se ha modificado su comportamiento de seguridad, lo que condiciona su uso en produccion y exige advertencias explicitas sobre contenido no filtrado.
 
-El repositorio no presenta descargas ni likes en el momento de la consulta, y su tamano declarado es de 0.0 GB, lo que sugiere que los ficheros pueden no estar disponibles o que los metadatos estan incompletos. Todas las especificaciones que dependen del modelo base se infieren del nombre y de la referencia al repositorio de origen; se indican como "no disponibles" cuando no pueden confirmarse.
+El repositorio tiene 253,6 GB de tamano total, 5.782 descargas y 2 likes en el momento de la consulta. La licencia declarada es apache-2.0, aunque la model card incluye tambien la etiqueta openrail++ y el modelo base declara apache-2.0. El pipeline no esta disponible en la informacion proporcionada. La fecha de creacion registrada es 2026-11-06 y la de actualizacion 2026-11-08.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (se infiere transformer denso del modelo base Mistral Small 3.2, sin confirmar) |
-| Parametros totales | no disponible (el nombre indica 24B; el campo safetensors reporta 5.000.760, dato incoherente y no fiable) |
-| Parametros activos | no aplica (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL (small), IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones con imatrix/weighted) |
+| Arquitectura | Transformer denso multimodal (vision), variante heretic/abliterated del Mistral-Small-3.2-24B-Instruct-2506 |
+| Parametros totales | 23.572.403.200 (23,57B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, i1-Q8_0 (segun la lista de quants de la model card) |
+| Idiomas soportados | en, fr, de, es, pt, it, ja, ko, ru, zh, ar, fa, id, ms, ne, pl, ro, sr, sv, tr, uk, vi, hi, bn (segun metadatos de la model card) |
+| Licencia | apache-2.0 (etiqueta openrail++ tambien presente en la model card) |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna en la informacion proporcionada. El nombre del repositorio indica que deriva de Mistral-Small-3.2-24B-Instruct-2506, un modelo de la familia Mistral Small, pero la model card no describe capas, atencion, contexto nativo ni composicion del dataset. La unica informacion tecnica explicita son los metadatos de cuantizacion: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, y el uso de cuantizaciones ponderadas con imatrix ("weighted/imatrix quants").
+El modelo base es un transformer denso de aproximadamente 23,57B parametros, derivado de Mistral-Small-3.2-24B-Instruct-2506. Se trata de un modelo instructivo conversacional con capacidad multimodal (vision), como indica la model card al referirse a "mmproj files" para el modelo de proyeccion visual. La variante "heretic" o "abliterated" implica una modificacion del comportamiento de rechazo del modelo original, tipicamente mediante tecnicas de abliteration que eliminan direcciones de activacion asociadas a la negativa a responder. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO en el modelo base.
 
-El prefijo "heretic" en el nombre del modelo de origen indica que se ha aplicado una tecnica de abliteration o decensoring sobre el modelo instruct original, orientada a reducir la tasa de rechazos. No se documentan en este repositorio ni el procedimiento exacto, ni el numero de tokens de entrenamiento, ni si hubo RLHF, DPO o ajuste supervisado adicional. Tampoco se especifica si se ha preservado la torre de vision del modelo multimodal original; la ausencia de `mmproj` en los metadatos (`skip_mmproj` vacio) no permite confirmar si se incluye soporte de imagen.
+La cuantizacion de mradermacher es de tipo i1 (imatrix), con un fichero imatrix.gguf de 0,1 GB para quien quiera generar sus propias cuantizaciones. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar. No se detalla la innovacion tecnica del entrenamiento original ni detalles de decodificacion especulativa o atencion lineal en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada del modelo instruct base (no verificada en este repositorio).
-- Razonamiento y respuesta a instrucciones, segun el ajuste instruct del modelo de origen.
-- Generacion de codigo y matematicas: capacidad esperable en un modelo de 24B de la familia Mistral Small, no confirmada con datos.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles.
-- Capacidades multilingues: no disponibles (no se declaran idiomas).
-- Modo thinking explicito: no disponible.
-- Vision: no confirmada; el modelo base Mistral Small 3.2 es multimodal, pero este repositorio no documenta el proyector multimodal.
-- Comportamiento "uncensored": el ajuste heretic reduce los rechazos del modelo original, lo que constituye una capacidad diferencial respecto al base.
+- Generacion de texto conversacional multi-turno en 24 idiomas declarados (en, fr, de, es, pt, it, ja, ko, ru, zh, ar, fa, id, ms, ne, pl, ro, sr, sv, tr, uk, vi, hi, bn).
+- Razonamiento general e instrucciones, heredado del modelo Instruct de Mistral AI.
+- Capacidad multimodal de vision: la model card indica que es un modelo de vision y que los ficheros mmproj estan en el repositorio estatico.
+- Comportamiento "uncensored"/"decensored"/"abliterated": el modelo no aplica los rechazos tipicos del modelo original.
+- Formato GGUF compatible con llama.cpp, Ollama y otros runners que soportan GGUF.
+- Soporte de tool calling / function calling: no confirmado en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no confirmado en la informacion proporcionada.
+- Capacidades especiales (thinking mode, audio): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el efecto de la abliteration comparando respuestas con el Mistral Small 3.2 Instruct original en el mismo conjunto de prompts, en un entorno controlado y aislado.
-- Inferencia local en estaciones de trabajo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de aproximadamente 24B en GPUs consumer de 24 GB de VRAM, util para prototipado offline sin dependencia de API.
-- Generacion creativa sin filtros: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o violentas, donde los rechazos del modelo alineado resultan un obstaculo, siempre con revision humana.
-- Evaluacion de robustez de filtros: uso como modelo "red team" para probar clasificadores de contenido y sistemas de moderacion frente a un generador con menor tasa de rechazo.
-- Despliegue en entornos air-gapped: al ser un artefacto GGUF autonomo, puede servirse con llama.cpp en infraestructura sin conexion, util en laboratorios con requisitos de confidencialidad.
-- Experimentacion con cuantizacion extrema: las variantes IQ1_S, IQ1_M e IQ2 permiten medir la degradacion de calidad en regimenes de 1-2 bits por peso sobre un modelo de 24B, como referencia para estudios de compresion.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el efecto de la abliteration comparando respuestas con el Mistral-Small-3.2-24B-Instruct-2506 original, util para analisis de robustez de filtros de seguridad.
+- Despliegue local en hardware de consumo: con cuantizaciones de 13,6 GB (i1-Q4_K_S) o 12,9 GB (i1-IQ4_XS) puede ejecutarse en GPU consumer con 16-24 GB de VRAM mediante llama.cpp u Ollama, adecuado para prototipos y entornos sin conexion.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o contenido narrativo donde el modelo original rechazaria ciertos temas, con la advertencia de que la salida no esta filtrada.
+- Procesamiento de documentos con imagenes: al ser un modelo de vision, puede usarse para extraer informacion de capturas, diagramas o documentos escaneados, siempre que se cargue el fichero mmproj correspondiente del repositorio estatico.
+- Traduccion y asistencia multilingue: con 24 idiomas declarados, puede emplearse en tareas de traduccion y atencion al cliente en idiomas minoritarios como nepalí, serbio o bengalí, aunque la calidad por idioma no esta verificada.
+- Entornos de investigacion con requisitos de reproducibilidad: la cuantizacion imatrix y la etiqueta "reproducible" permiten regenerar cuantizaciones a partir del fichero imatrix.gguf, util para experimentos que requieren control exacto del artefacto.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece desde IQ1 hasta Q8, lo que permite medir la degradacion de calidad por nivel de cuantizacion en tareas concretas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones del modelo cuantizado ni del modelo heretic de origen, y no se han proporcionado cifras de MMLU, HumanEval, GSM8K ni de perplexidad para ninguna de las cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (orientativa, segun el tamano nominal de 24B y la cuantizacion):
-  - Q2_K / IQ2_XXS: aproximadamente 8-10 GB.
-  - Q3_K_M / IQ3_M: aproximadamente 11-13 GB.
-  - Q4_K_M / IQ4_XS: aproximadamente 14-16 GB.
-  - Q5_K_M: aproximadamente 17-19 GB.
-  - Q6_K: aproximadamente 20-22 GB.
-  - Estos valores son estimaciones por regla general para modelos densos de 24B; no estan confirmados en la informacion proporcionada.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para cuantizaciones Q4 y Q5; A100 40 GB, H100 80 GB o L40S para Q6_K y para mayor contexto.
-- Cabe en GPU consumer: previsiblemente si, en tarjetas de 16-24 GB con cuantizaciones Q3-Q4; en 12 GB solo con Q2 o descarga parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y servidores compatibles con GGUF (llama-cpp-python). vLLM y TGI no cargan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia segun cuantizacion: aproximadamente 5,4 GB (i1-IQ1_S), 8,2 GB (i1-IQ2_M), 10,8 GB (i1-IQ3_M), 13,6 GB (i1-Q4_K_S / i1-Q4_0), 16-17 GB (i1-Q5_K_M, estimado por progresion de tamanos) y 20+ GB para Q6_K/Q8_0 (tamanos no listados en el extracto).
+- GPU recomendadas: para cuantizaciones altas, A100 40/80 GB o H100; para cuantizaciones Q4-Q5, RTX 4090 (24 GB) o RTX 3090 (24 GB).
+- Cabe en GPU consumer: si, en RTX 4090/3090 con cuantizaciones hasta Q5 aproximadamente; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) con IQ3/IQ4; en GPUs de 8-12 GB solo con cuantizaciones IQ1-IQ2, con calidad muy degradada.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF. vLLM y TGI no se mencionan en la informacion proporcionada para este formato.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Vision | Licencia | Formato |
 |---|---|---|---|---|---|
-| mradermacher/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-i1-GGUF | no disponible (nominal 24B) | no disponible | GGUF | no disponible | Objeto de esta ficha; variante heretic cuantizada |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 24B | no disponible en esta ficha | safetensors | no disponible en esta ficha | Modelo original alineado; referencia de comparacion |
-| mradermacher/Mistral-Small-3.2-24B-Instruct-2506-Text-Only-heretic-i1-GGUF | no disponible (nominal 24B) | no disponible | GGUF | no disponible | Variante heretic solo texto del mismo autor de cuantizaciones |
-| mradermacher/Mistral-Small-3.2-24B-Instruct-2506-ultra-uncensored-heretic-GGUF | no disponible (nominal 24B) | no disponible | GGUF | no disponible | Variante heretic "ultra uncensored", mismo pipeline de cuantizacion |
+| Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-i1-GGUF (este) | 23,57B | no disponible | si | apache-2.0 | GGUF |
+| richardyoung/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic (base) | 23,57B | no disponible | si | apache-2.0 | safetensors |
+| mradermacher/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-GGUF (quants estaticos) | 23,57B | no disponible | si | apache-2.0 | GGUF |
+| Mistral-Small-3.2-24B-Instruct-2506 (original de Mistral AI) | ~24B | no disponible | si | no disponible en esta ficha | safetensors |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El ajuste heretic elimina o reduce los mecanismos de rechazo, por lo que el modelo puede generar contenido danino, ilegal o sexualmente explicito sin filtros; no es apto para aplicaciones de cara al publico sin moderacion adicional.
-- Riesgo elevado de alucinacion y de respuestas confiadas pero incorrectas, agravado por las cuantizaciones de baja precision (IQ1, IQ2) que degradan la calidad respecto al modelo original.
-- La licencia no esta declarada en el repositorio; no puede asumirse uso comercial permitido. Es necesario verificar la licencia del modelo de origen (Mistral Small 3.2) y del ajuste heretic antes de cualquier despliegue.
-- El conteo de parametros reportado en safetensors (5.000.760) es incoherente con el nombre del modelo y no debe usarse para dimensionar hardware.
-- El repositorio declara 0.0 GB de tamano y cero descargas, lo que sugiere que los ficheros pueden no estar disponibles o que los metadatos estan incompletos; conviene verificar la integridad de los GGUF antes de usarlos.
-- No se declaran idiomas soportados; el rendimiento en castellano no esta verificado.
-- No se confirma la preservacion del proyector multimodal; si se necesita vision, debe comprobarse la presencia de un fichero `mmproj` en el repositorio.
-- El uso de cuantizaciones por debajo de Q4 puede producir degradacion notable en tareas de razonamiento, codigo y matematicas.
-- La fecha de creacion del repositorio (2026-11-06) y la falta de actividad (0 likes, 0 descargas) implican ausencia de validacion por parte de la comunidad.
+- Modelo "heretic"/"abliterated": se ha modificado el comportamiento de rechazo, por lo que puede generar contenido que el modelo original bloquearia. No es apto para produccion orientada al usuario final sin filtros adicionales.
+- Riesgo de alucinacion: inherente a los modelos de ~24B; no se dispone de evaluaciones especificas de fidelidad para esta variante.
+- La abliteration puede degradar capacidades generales (razonamiento, instrucciones) respecto al modelo original; no hay benchmarks publicados que lo cuantifiquen.
+- Licencia: apache-2.0 declarada, pero la model card incluye tambien la etiqueta openrail++. Conviene verificar los terminos del modelo base antes de uso comercial.
+- Idiomas: la lista de 24 idiomas proviene de metadatos; la calidad real por idioma no esta verificada, especialmente en idiomas de bajos recursos como nepalí o serbio.
+- Longitud de contexto no documentada en la informacion proporcionada; no asumir la del modelo original sin verificar.
+- Cuantizaciones IQ1 e IQ2 marcadas por el propio autor como "for the desperate" o de "very low quality"; no recomendadas para tareas que requieran precision.
+- El repositorio pesa 253,6 GB; la descarga completa no es practica, conviene bajar solo el quant necesario.
+- Fecha de creacion registrada en 2026, lo que puede indicar metadatos anomalos o posteriores a la consulta; verificar la vigencia del repositorio.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-i1-GGUF
-- Modelo de origen del ajuste heretic: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic
-- Variante heretic solo texto del mismo autor de cuantizaciones: https://huggingface.co/mradermacher/Mistral-Small-3.2-24B-Instruct-2506-Text-Only-heretic-i1-GGUF
-- Variante heretic "ultra uncensored": https://huggingface.co/mradermacher/Mistral-Small-3.2-24B-Instruct-2506-ultra-uncensored-heretic-GGUF
-- Modelo base Mistral Small 3.2 24B Instruct 2506: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
-- Repositorio llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
+- Modelo base: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic-i1-GGUF
+- README de referencia para GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

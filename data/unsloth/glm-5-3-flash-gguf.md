@@ -2,86 +2,99 @@
 
 ## Resumen
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por Z.ai (anteriormente Zhipu AI) y publicado con licencia MIT. Con 320B parámetros totales y solo 18B activos, este modelo de arquitectura híbrida (atención dispersa y lineal) está diseñado para ofrecer un alto rendimiento en tareas de codificación, razonamiento y agentes a un coste computacional reducido, aproximadamente una décima parte del de su predecesor GLM-5.2. La versión GGUF distribuida por Unsloth permite su ejecución local con cuantización dinámica, lo que facilita su uso en entornos con recursos limitados.
+GLM-5.3-Flash es el primer modelo nativamente multimodal de la familia GLM-5, desarrollado por Z.ai (zai-org). Se trata de un modelo de lenguaje de gran escala con arquitectura híbrida que combina atención dispersa (sparse attention) y atención lineal, disenada para reducir los costes de servicio en contextos largos sin sacrificar precision. Cuenta con 320.759.404.382 parametros totales y 18B parametros activos, lo que lo situa en la categoria de modelos MoE de gran eficiencia computacional.
 
-El modelo se presenta como el primero de la serie GLM-5 en integrar capacidades multimodales (texto e imagen) desde su base, y ha sido entrenado sobre un corpus multimodal de 30 billones de tokens. Según las evaluaciones preliminares, supera a GLM-5.2 en benchmarks de programación y agencia, acercándose a modelos propietarios como Claude Opus 4.8. La disponibilidad de pesos abiertos y la licencia permisiva lo convierten en una opción atractiva para investigación y despliegue en producción, especialmente en tareas que requieren contexto largo y razonamiento multi-paso.
+La relevancia de este lanzamiento radica en su relacion rendimiento-coste: segun la model card, supera a GLM-5.2 en benchmarks y cargas de trabajo reales a una decima parte del precio, y se aproxima a Claude Opus 4.8 en pruebas de codigo y agentes. Incorpora ademas Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado, y fue preentrenado sobre un corpus multimodal de 30 billones (30T) de tokens.
 
-## Especificaciones técnicas
+La ficha que sigue corresponde a la version cuantizada en GGUF publicada por Unsloth (unsloth/GLM-5.3-Flash-GGUF), pensada para ejecucion local mediante llama.cpp y la aplicacion Unsloth Desktop. El repositorio acumula mas de 740.000 descargas y 544 likes, y el modelo base se distribuye bajo licencia MIT.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: atención dispersa (sparse) + atención lineal, con Manifold-Constrained Hyper-Connections (mHC) |
-| Parametros totales | 320B |
+| Arquitectura | Transformer hibrido con atencion dispersa y atencion lineal; MoE con Manifold-Constrained Hyper-Connections (mHC) |
+| Parametros totales | 320.759.404.382 (320B) |
 | Parametros activos | 18B |
-| Longitud de contexto | No disponible (en evaluaciones se han usado contextos de hasta 1M tokens) |
-| Tipos de cuantizacion | GGUF (Unsloth Dynamic 3.0) |
-| Idiomas soportados | No disponible (la tarjeta del modelo indica en y zh) |
+| Longitud de contexto | no disponible (la evaluacion citada usa hasta 1M tokens en NL2Repo y 400K en DeepSWE) |
+| Tipos de cuantizacion | GGUF (Unsloth Dynamic 3.0), incluye variante de 1 bit (Low) |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | GGUF (también safetensors en el modelo base) |
+| Formato de pesos | GGUF (repo de cuantizacion); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3-Flash introduce una arquitectura híbrida que combina mecanismos de atención dispersa y lineal. Esta combinación reduce drásticamente los costes de inferencia en contextos largos, al tiempo que preserva la precisión en tareas que requieren comprensión profunda del contexto. Además, emplea Manifold-Constrained Hyper-Connections (mHC), una innovación que mejora la eficiencia de escalado del modelo. El entrenamiento se realizó sobre un corpus multimodal de 30 billones de tokens, que incluye texto e imágenes, lo que le confiere capacidades nativas de visión.
+GLM-5.3-Flash parte de un modelo base entrenado desde cero, con arquitectura y receta de entrenamiento redisenadas en torno a capacidad y eficiencia. Es la primera vez que la serie GLM introduce una arquitectura hibrida que combina atencion dispersa con atencion lineal, lo que reduce de forma notable el coste de servicio en contextos largos manteniendo la precision en tareas de contexto extendido. Se anade Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. El modelo es de tipo MoE: 320B parametros totales con solo 18B activos por token.
 
-El modelo ha sido entrenado con un enfoque que prioriza la eficiencia y la capacidad, y se ha refinado con técnicas de alineación (no se especifica si RLHF o DPO). El informe técnico completo está disponible en arXiv (2602.15763). No se detallan los datos exactos de post-entrenamiento, pero se sabe que el modelo es capaz de manejar tareas de agente complejas, como la resolución de problemas de repositorios (DeepSWE) o la ejecución de tareas de terminal (Terminal-Bench 2.1).
+El preentrenamiento se realizo sobre un corpus multimodal de 30 billones de tokens, lo que explica su caracter nativamente multimodal (texto e imagen). La model card no detalla la composicion exacta del dataset ni las etapas de alineacion (RLHF/DPO), por lo que esos datos deben considerarse no disponibles. El informe tecnico asociado es "GLM-5: from Vibe Coding to Agentic Engineering" (arXiv:2602.15763).
 
 ## Capacidades
 
-- Generación de texto en inglés y chino, con razonamiento avanzado y comprensión de contexto largo.
-- Capacidades multimodales nativas: procesamiento de imágenes junto con texto, lo que permite tareas de visión-lenguaje.
-- Razonamiento multi-paso y resolución de problemas complejos, incluyendo matemáticas y lógica.
-- Generación de código y soporte para tareas de ingeniería de software, como reparación de bugs y generación de repositorios completos.
-- Uso de herramientas (tool calling) y ejecución de acciones en entornos de agente (por ejemplo, terminal y automatización de flujos).
-- Capacidades de agente: puede seguir instrucciones multi-turno y tomar decisiones en entornos simulados (por ejemplo, AutomationBench).
-- Evaluación en tareas de visión de alta resolución (BabyVision) y comprensión de imágenes con contexto extenso.
+- Generacion de texto y razonamiento general, con soporte de modo de razonamiento extendido en tareas complejas.
+- Capacidades multimodales nativas: procesamiento de imagen ademas de texto (evaluado en benchmarks como BabyVision).
+- Generacion de codigo y tareas de ingenieria de software, incluyendo resolucion de issues y construccion de repositorios (NL2Repo, DeepSWE).
+- Uso de herramientas (tool calling / function calling), con evaluacion especifica en Toolathlon Verified.
+- Comportamiento agentico multi-paso: ejecucion en entornos de terminal y automatizacion de flujos (Terminal-Bench 2.1, AutomationBench).
+- Razonamiento con herramientas en contexto muy largo (HLE con conjunto completo de herramientas, hasta 300K tokens de contexto gestionado).
+- Soporte multilingue limitado a ingles y chino.
+- Integracion con endpoints compatibles (tag `endpoints_compatible`) y uso conversacional.
 
 ## Casos de uso
 
-- **Asistente de codificación en producción**: El modelo puede integrarse en IDEs o pipelines de CI/CD para generar código, revisar cambios y proponer correcciones. Su capacidad de razonamiento y su conocimiento de múltiples lenguajes lo hacen adecuado para tareas de pair programming.
-- **Automatización de tareas de administración de sistemas**: Gracias a su soporte de agentes y ejecución de comandos en terminal (probado en Terminal-Bench 2.1), puede automatizar tareas como despliegues, configuración de servidores o gestión de logs.
-- **Análisis de documentos técnicos y repositorios**: Con su ventana de contexto de hasta 1M tokens, puede procesar repositorios completos, documentación extensa o informes técnicos para extraer información, resumir o responder preguntas.
-- **Asistencia en investigación**: Para investigadores que necesitan analizar artículos científicos con tablas, figuras y texto largo, el modelo puede resumir, extraer conclusiones y comparar resultados.
-- **Agente de soporte al cliente**: Su capacidad multimodal le permite interpretar capturas de pantalla o imágenes de errores, y su razonamiento de contexto largo gestiona conversaciones multi-turno con historial completo.
-- **Generación de informes técnicos**: El modelo puede redactar documentación técnica, informes de estado o resúmenes ejecutivos a partir de datos estructurados y no estructurados, con precisión y coherencia.
-- **Despliegue en entornos locales**: Al estar disponible en GGUF, puede ejecutarse en hardware de consumo con cuantización, lo que permite pruebas y prototipado sin necesidad de infraestructura en la nube.
+- Ingenieria de software agentica: el modelo puede operar en harnesses tipo mini-swe-agent o Claude Code para resolver tareas de reparacion de codigo y construccion de repositorios completos, gracias a su ventana de contexto extensa y su soporte de tool calling.
+- Automatizacion de flujos de trabajo con herramientas: integracion en plataformas de automatizacion (evaluado en AutomationBench) para encadenar llamadas a APIs, transformar datos y ejecutar acciones multi-paso.
+- Asistencia en terminal y DevOps: ejecucion de tareas de linea de comandos con razonamiento sobre el estado del sistema, adecuado por su entrenamiento en Terminal-Bench y su tolerancia a contextos de cientos de miles de tokens.
+- Analisis de documentos largos: resumen y extraccion de informacion en corpus extensos, aprovechando la atencion hibrida que abarata el coste de contexto largo.
+- Procesamiento de documentacion tecnica con imagenes: al ser nativamente multimodal, puede interpretar diagramas, capturas y figuras junto al texto asociado.
+- Despliegue local con cuantizacion: la version GGUF de Unsloth permite ejecutar el modelo en hardware de consumo o estaciones de trabajo mediante llama.cpp o Unsloth Desktop, util para prototipado y entornos con requisitos de privacidad.
+- Evaluacion comparativa de agentes: uso como modelo de referencia en investigacion sobre razonamiento agentico y uso de herramientas, dado su rendimiento cercano a modelos propietarios de gama alta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card menciona evaluaciones en HLE w/ tools, NL2Repo, DeepSWE, Terminal-Bench 2.1, Toolathlon, AutomationBench, GDPval-AA y BabyVision, pero no se proporcionan cifras concretas. Se indica que el modelo supera a GLM-5.2 en varios de estos conjuntos y se acerca a Claude Opus 4.8 en tareas de codificación y agente, pero sin datos exactos.
+La model card referencia una imagen de benchmarks (`bench_53.png`) y detalla la metodologia de evaluacion, pero no incluye los valores numericos en el texto proporcionado. Los benchmarks mencionados son: HLE con herramientas, NL2Repo, DeepSWE, Terminal-Bench 2.1, Agent's Last Exam, Toolathlon Verified, AutomationBench v1.0.6, GDPval-AA v2 y BabyVision.
+
+No se han publicado resultados numericos de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de 320B parámetros, la inferencia requiere una cantidad significativa de VRAM. Con cuantización GGUF de Unsloth (Dynamic 4.0), se estima que los pesos ocupan alrededor de 160 GB (a 4 bits), aunque la memoria de activación se reduce gracias a los 18B activos.
-- GPU recomendadas: para una ejecución fluida se necesitan al menos 2 GPUs con 80 GB VRAM cada una (por ejemplo, A100 80GB, H100) o 4 GPUs de 48 GB (por ejemplo, A6000). Con técnicas de offloading de CPU, podría funcionar en sistemas con menos VRAM pero a menor velocidad.
-- En hardware de consumo (RTX 4090 de 24 GB) no es viable ejecutarlo de manera completa; sin embargo, se puede usar con cuantización más agresiva o mediante servicios en la nube.
-- Opciones de despliegue: Unsloth proporciona GGUF para usar con llama.cpp, Ollama, vLLM, TGI, y también ofrece su propia plataforma de ejecución. Además, es compatible con la API de Z.ai.
-- La latencia y el throughput dependen del hardware y la cuantización; no se proporcionan datos específicos. En general, al tener solo 18B activos, la velocidad de generación es superior a la de un modelo denso de 320B.
+- VRAM estimada: no disponible de forma oficial. Con 320B parametros totales, la inferencia requiere cuantizaciones agresivas; la variante de 1 bit (Low) de Unsloth Dynamic 3.0 esta pensada para reducir el footprint, aunque el tamano exacto por cuantizacion no se especifica en la informacion disponible.
+- El repositorio GGUF ocupa 2548 GB en total, lo que refleja el conjunto completo de cuantizaciones publicadas, no una sola.
+- GPU recomendadas: no disponible. Por el volumen de parametros, el despliegue realista pasa por multiples GPU de clase datacenter (A100/H100) o por variantes de muy baja precision en estaciones de trabajo con gran cantidad de memoria.
+- Compatibilidad con GPU de consumo: no confirmada; solo la variante de 1 bit se presenta como ejecutable en Unsloth Desktop, sin especificar el hardware minimo.
+- Opciones de despliegue: llama.cpp (requiere el PR 27754 indicado por Unsloth), Unsloth Desktop, y endpoints compatibles con la API de OpenAI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Multimodal |
-|---|---|---|---|---|---|
-| GLM-5.3-Flash (este) | 320B | 18B | No disponible (hasta 1M en evaluación) | MIT | Sí |
-| GLM-5.2 | 744B | 40B | 1M | MIT | No (según la documentación) |
-| Claude Opus 4.8 (propietario) | No disponible | No disponible | 200K | Propietario | Sí |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| GLM-5.3-Flash | 320B / 18B | no disponible (hasta 1M en evaluacion) | MIT | Multimodal nativo, atencion hibrida |
+| GLM-5.2 | no disponible | no disponible | no disponible | Generacion anterior de la familia; segun la model card, GLM-5.3-Flash lo supera a una decima parte del precio |
+| Claude Opus 4.8 | no disponible | no disponible | Propietaria | Referencia de comparacion en codigo y agentes; GLM-5.3-Flash se aproxima segun la model card |
 
-GLM-5.3-Flash se posiciona como un modelo más ligero que GLM-5.2, pero con rendimiento comparable en tareas de codificación y agente, a un coste de inferencia menor. Su licencia MIT permite uso comercial sin restricciones, a diferencia de Claude Opus que es propietario. No se dispone de comparaciones con otros modelos abiertos de la misma categoría (por ejemplo, DeepSeek-V4 o Qwen3-Max) en la información disponible.
+No se dispone de datos suficientes sobre modelos comparables de terceros (parametros, contexto o rendimiento) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se ha publicado información sobre sesgos o limitaciones éticas del modelo. Se recomienda realizar una evaluación de sesgos antes de usar en aplicaciones sensibles.
-- El modelo puede alucinar en situaciones de contexto ambiguo o cuando se le pide información muy específica. Es necesario validar las salidas críticas.
-- Aunque soporta inglés y chino, el rendimiento en otros idiomas no está documentado. Puede tener un sesgo hacia estos idiomas.
-- La licencia MIT permite uso comercial, pero hay que revisar los términos de la licencia del modelo base (zai-org/GLM-5.3-Flash) para asegurarse de que no hay restricciones adicionales.
-- La cuantización GGUF puede degradar ligeramente la calidad en comparación con los pesos en FP16, aunque Unsloth Dynamic 3.0 afirma reducir esta pérdida.
-- Para tareas de agente complejas, el modelo requiere un entorno controlado y validación de las acciones para evitar comportamientos no deseados (por ejemplo, ejecución de comandos peligrosos).
+- Idiomas: solo ingles y chino estan declarados oficialmente; el rendimiento en castellano no esta garantizado ni evaluado.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no se documentan tasas especificas de alucinacion en la informacion disponible.
+- Sesgos: no se detallan evaluaciones de sesgo o seguridad en la model card proporcionada.
+- Coste de hardware: con 320B parametros, el despliegue local exige cuantizaciones extremas o infraestructura multi-GPU; las variantes de baja precision pueden degradar la calidad.
+- Compatibilidad de herramientas: la ejecucion GGUF requiere una version especifica de llama.cpp (PR 27754), lo que puede complicar la integracion en pipelines existentes.
+- Licencia MIT: permite uso comercial, pero conviene verificar las condiciones del modelo base y de los componentes opcionales de Unsloth (el paquete principal es Apache 2.0, mientras que Unsloth Studio tiene licencia propia).
+- Contexto maximo: aunque las evaluaciones usan hasta 1M tokens, la longitud de contexto oficial no se declara; no debe asumirse sin verificacion.
+- Datos de alineacion y composicion del dataset no publicados en la informacion disponible, lo que limita la evaluacion de riesgos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: [unsloth/GLM-5.3-Flash-GGUF](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF)
-- Modelo base de Z.ai: [zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) (no se ha consultado directamente, pero se menciona como base)
-- Blog de Z.ai sobre GLM-5.3-Flash: [https://z.ai/blog/glm-5.3-flash](https://z.ai/blog/glm-5.3-flash)
-- Informe técnico GLM-5: [arXiv:2602.15763](https://arxiv.org/abs/2602.15763)
-- Documentación de Unsloth para GLM-5.3-Flash: [https://unsloth.ai/docs/models/glm-5.3](https://unsloth.ai/docs/models/glm-5.3)
-- Documentación de Unsloth para GLM-5.2 (comparación): [https://unsloth.ai/docs/models/glm-5.2](https://unsloth.ai/docs/models/glm-5.2)
-- API de Z.ai: [https://docs.z.ai/guides/llm/glm-5.3-flash](https://docs.z.ai/guides/llm/glm-5.3-flash)
+- Repositorio GGUF: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Guia de ejecucion de Unsloth: https://unsloth.ai/docs/models/glm-5.3-flash
+- Documentacion de Unsloth Dynamic 3.0: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs
+- Unsloth Desktop: https://unsloth.ai/docs/desktop
+- Repositorio de Unsloth: https://github.com/unslothai/unsloth/
+- PR de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/27754
+- Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
+- Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
+- API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash
+- Discord de Unsloth: https://discord.gg/unsloth
+- Discord de GLM: https://discord.gg/QR7SARHRxK

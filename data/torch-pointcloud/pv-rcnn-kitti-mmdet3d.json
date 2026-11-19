@@ -50,7 +50,7 @@
       "task": null,
       "dataset": "KITTI",
       "metric": "mAP",
-      "value": 72.16
+      "value": 72.15
     },
     {
       "task": null,
@@ -62,7 +62,7 @@
       "task": null,
       "dataset": "KITTI",
       "metric": "AP/Pedestrian",
-      "value": 59.73
+      "value": 59.71
     },
     {
       "task": null,
@@ -71,31 +71,5 @@
       "value": 73.2
     }
   ],
-  "sources": [
-    {
-      "title": "PyTorch Foundation - PyTorch",
-      "url": "https://pytorch.org/",
-      "snippet": "1 day ago · Distributed Training Scalable distributed training and performance optimization in research and production is enabled by …"
-    },
-    {
-      "title": "Télécharger Torch (gratuit) Windows - Clubic",
-      "url": "https://www.clubic.com/telecharger-fiche418134-torch.html",
-      "snippet": "22 hours ago · Torch est un navigateur web fondé sur le moteur Chromium. Il propose une interface familière, proche de celle de …"
-    },
-    {
-      "title": "PyTorch — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/PyTorch",
-      "snippet": "PyTorch définit une classe appelée Tensor (torch.Tensor) pour stocker les données et opérer sur des tableaux rectangulaires …"
-    },
-    {
-      "title": "Torch Browser - Download",
-      "url": "https://torch.en.softonic.com/",
-      "snippet": "Jun 16, 2026 · Torch Browser provides a user-friendly Chromium interface with enhanced media tools for easy downloading and …"
-    },
-    {
-      "title": "Télécharger Torch Browser gratuit pour PC - CCM",
-      "url": "https://www.commentcamarche.net/telecharger/web-internet/22085-torch-browser/",
-      "snippet": "May 30, 2022 · Torch Browser est un navigateur Web gratuit basé sur le projet libre Chromium, comme Google Chrome, dont il …"
-    }
-  ]
+  "sources": []
 }

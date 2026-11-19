@@ -2,85 +2,103 @@
 
 ## Resumen
 
-PentaCoder-9B-i1-MTP-GGUF es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario nerun. Por el identificador se deduce que se trata de una cuantizacion del modelo PentaCoder-9B, un modelo de aproximadamente 9.000 millones de parametros orientado a tareas de generacion de codigo, con el sufijo "i1" asociado a la familia de cuantizaciones IQ de Unsloth y el sufijo "MTP" que sugiere variantes de decodificacion multi-token. La model card publicada no aporta informacion tecnica adicional: unicamente declara la licencia Apache 2.0.
+PentaCoder-9B-i1-MTP-GGUF es una distribución de pesos en formato GGUF del modelo PentaCoder-9B-i1, un merge basado en Qwen3.5-9B orientado a generación de código y flujos agénticos. La publica el usuario nerun sobre los cuantizados imatrix de mradermacher, y su rasgo diferencial es la incorporación de un bloque MTP (Multi-Token Prediction) embebido que habilita decodificación especulativa dentro de llama.cpp mediante `--spec-type draft-mtp`, sin necesidad de cargar un modelo borrador separado.
 
-La relevancia de esta ficha es limitada en el momento de su publicacion: el repositorio registra cero descargas y cero interacciones, y no incluye documentacion sobre arquitectura, datos de entrenamiento, contexto o rendimiento. Cualquier evaluacion seria del modelo requiere consultar el repositorio del modelo base original, que no se identifica de forma explicita en la informacion disponible.
+El bloque MTP no se ha entrenado sobre PentaCoder, sino que se ha trasplantado tensor a tensor desde un extracto MTP-only de Qwen3.5-9B publicado por a4lg. Como comparte `token_embd` y `output` con el modelo principal, el incremento de tamaño es mínimo (unos 0,2 GiB) y el consumo de VRAM es inferior al de un draft model independiente. En las pruebas del autor la aceptación del borrador se sitúa en torno a 0,6-0,7, con una mejora de velocidad de generación de aproximadamente el 46 % frente a la inferencia sin MTP.
 
-Se trata, por tanto, de un artefacto de distribucion (pesos cuantizados para inferencia local) mas que de un modelo con documentacion propia. Los desarrolladores interesados deben tratar los datos de esta ficha como provisionales y verificar el modelo base antes de usarlo en produccion.
+La relevancia práctica es doble: por un lado ofrece un modelo de 9B con licencia Apache 2.0 y cuantizaciones desde IQ1_S (~2,7 GiB) hasta Q6_K (~7,1 GiB), lo que permite desplegarlo en GPU de consumo; por otro, demuestra una vía de bajo coste para añadir decodificación especulativa a merges comunitarios que no incluyen cabezas MTP en su publicación original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer decoder-only, sin confirmar) |
-| Parametros totales | aproximadamente 9.000 millones (deducido del nombre, no confirmado) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; variantes IQ (sufijo "i1") segun convencion de nombres, sin listado oficial |
+| Arquitectura | Transformer (base Qwen3.5-9B) con bloque MTP embebido para decodificación especulativa |
+| Parametros totales | 456.010.480 (dato de safetensors del repo; el nombre comercial indica 9B, discrepancia no aclarada en la model card) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la model card; el ejemplo de uso fija `-fitc 32768` |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (bloque MTP en Q4_K_M, Q5_K_M o Q6_K según fichero) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (llama.cpp), con proyectores de visión mmproj incluidos |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card del repositorio. El nombre del modelo sugiere una base de tipo transformer decoder-only con aproximadamente 9.000 millones de parametros, y el sufijo "MTP" apunta a decodificacion multi-token (multi-token prediction), una tecnica de entrenamiento e inferencia que permite predecir varios tokens por paso para aumentar el throughput. Ninguno de estos extremos esta confirmado por documentacion del autor.
+El modelo principal es un transformer denso derivado de Qwen3.5-9B, fusionado (merge) por la comunidad y cuantizado con imatrix por mradermacher. Sobre esa base, nerun ha injertado un bloque MTP (`blk.32.*`) copiado tensor a tensor desde a4lg/Qwen3.5-9B-MTP-ONLY-GGUF, un subconjunto MTP-only extraído del Qwen3.5-9B original. No hay entrenamiento ni ajuste fino en este repositorio: la operación es puramente de trasplante de pesos y recuantización del bloque añadido.
 
-Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre el modelo base a partir del cual se genero esta cuantizacion. El sufijo "i1" es la convencion habitual de Unsloth para cuantizaciones dinamicas IQ, pero el repositorio no enlaza al modelo original ni a la receta de cuantizacion empleada.
+La innovación técnica es la decodificación especulativa auto-contenida: el bloque MTP comparte `token_embd` y `output` con PentaCoder, de modo que actúa como cabeza borradora dentro del mismo fichero. El autor advierte que la cabeza se entrenó sobre Qwen3.5-9B y no sobre PentaCoder, por lo que la aceptación (~0,6-0,7) es buena pero no óptima. No se documentan en la model card el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de codigo: el nombre "PentaCoder" indica especializacion en tareas de programacion, aunque no se detalla que lenguajes cubre.
-- Generacion de texto general: presumible, no documentado.
-- Razonamiento multi-paso: no confirmado.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo thinking o razonamiento extendido: no disponible.
-- Vision o audio: no disponible.
+- Generación de texto conversacional y razonamiento, con etiquetas de la model card para `conversational` y `reasoning`.
+- Generación de código y asistencia en tareas de programación (`code`).
+- Flujos agénticos y razonamiento multi-paso (`agentic`).
+- Decodificación especulativa integrada mediante bloque MTP, activable con `--spec-type draft-mtp`.
+- Capacidades de visión a través de los proyectores mmproj incluidos, aunque proceden de Qwen3.5-9B y no se entrenaron con los pesos del merge.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la model card.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Autocompletado de codigo en IDE local: al distribuirse en GGUF, el modelo puede cargarse con llama.cpp u Ollama en estaciones de trabajo sin GPU dedicada de gama alta, ofreciendo sugerencias de codigo con latencia aceptable en un entorno sin conexion.
-- Asistente de refactorizacion en el editor: un modelo de 9B cuantizado a 4-5 bits cabe en GPUs de consumo, lo que permite integrarlo en extensiones de VS Code o Neovim para reescritura y simplificacion de funciones.
-- Generacion de tests unitarios: el modelo puede producir esqueletos de pruebas a partir de firmas de funciones y docstrings, como paso previo a la revision humana en un pipeline de CI.
-- Documentacion de codigo: generacion de docstrings y comentarios explicativos en bases de codigo existentes, ejecutada por lotes en local.
-- Traduccion entre lenguajes de programacion: conversion de fragmentos pequenos entre lenguajes populares, con validacion posterior mediante compilador o linter.
-- Prototipado en entornos air-gapped: al ser pesos GGUF descargables y con licencia Apache 2.0, puede desplegarse en maquinas sin acceso a internet para tareas de asistencia a la programacion en entornos con requisitos de confidencialidad.
+- Asistente de código en local: con cuantizaciones IQ4_XS o Q4_K_M (5,0-5,4 GiB) cabe en GPU de 8 GB y permite autocompletado y generación de funciones en un IDE sin depender de la nube.
+- Servidor de inferencia en GPU de consumo: el bloque MTP eleva el throughput de ~37 a ~54 t/s en una RX 6600M de 8 GB con `--spec-draft-n-max 2`, lo que hace viable atender varias sesiones interactivas en hardware modesto.
+- Agentes de refactorización multi-paso: la etiqueta `agentic` y el contexto configurable a 32.768 tokens permiten encadenar lecturas de repositorio, ediciones y verificación en una sola sesión.
+- Despliegue en equipos con VRAM muy limitada: la variante IQ1_S (~2,7 GiB) o IQ2_XXS (~3,0 GiB) permite ejecutar un modelo de 9B en portátiles con 4-6 GB de VRAM, sacrificando calidad.
+- Prototipado de pipelines de decodificación especulativa: sirve como banco de pruebas para medir aceptación del borrador y ajustar `--spec-draft-n-max` antes de pasar a producción.
+- Análisis de capturas o diagramas en flujos de desarrollo: los mmproj permiten entrada de imagen para describir interfaces o errores visuales, con la cautela de que el proyector no fue entrenado con este merge.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 24 variantes del mismo modelo, útil para estudios de degradación calidad/tamaño en tareas de código.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Los únicos datos publicados son mediciones de velocidad de generación del autor, no benchmarks de calidad. Se obtuvieron con el cuantizado IQ4_XS, un prompt corto en prosa ("Explain why the sky is blue") y los mismos ajustes de muestreo.
+
+| Configuracion | Generacion (t/s) | Aceptacion del borrador |
+|---|---:|---:|
+| Sin MTP (baseline) | 37,05 | — |
+| `--spec-draft-n-max 1` | 49,95 | 0,81 |
+| `--spec-draft-n-max 2` | 54,07 ± 0,70 | 0,6781 ± 0,0161 |
+| `--spec-draft-n-max 3` (por defecto) | 51,57 ± 1,51 | 0,5566 ± 0,0266 |
+| `--spec-draft-n-max 4` | 49,32 | 0,51 |
+| `--spec-draft-n-max 6` | 36,63 | 0,33 |
+
+Entorno de medida: AMD Radeon RX 6600M (Navi 23, 8 GB) sobre placa de escritorio, AMD Ryzen 5 serie 5000, 32 GB DDR4-3200, Debian testing, llama.cpp build b12230. Las filas con `n-max` 2 y 3 son media ± desviación típica de 10 ejecuciones con reinicio del servidor; el resto son ejecuciones únicas. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no confirmada por el autor. Como referencia orientativa para un modelo de 9B en GGUF, una cuantizacion Q4_K_M ocuparia en torno a 5-6 GB de VRAM, Q5_K_M en torno a 6-7 GB y Q8_0 en torno a 9-10 GB; estas cifras son estimaciones de orden de magnitud, no datos del repositorio.
-- GPU recomendadas: no disponible. Para un 9B cuantizado a 4-5 bits, una RTX 3060 de 12 GB o superior seria suficiente en teoria; una RTX 4090 o A100 permitirian cuantizaciones mas altas y mayor contexto.
-- Cabe en GPU de consumo: probablemente si, en modelos con 8 GB o mas de VRAM, usando cuantizaciones Q4 o Q5.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; vLLM y TGI requieren conversion previa a safetensors.
-- Latencia y throughput: no disponible.
+- VRAM estimada: desde ~2,7 GiB (IQ1_S) hasta ~7,1 GiB (Q6_K) solo para pesos; añadir overhead de contexto KV cache (en el ejemplo se cuantiza a q8_0) y buffers de cómputo.
+- El bloque MTP añade aproximadamente 0,2 GiB sobre el cuantizado original, menos que cargar un draft model separado.
+- GPU de consumo: cabe en 8 GB con IQ4_XS o Q4_K_M; en 6 GB con IQ3_M o inferiores; en 4 GB solo con IQ2_XXS o IQ1_S.
+- GPU profesionales: A100, H100 y RTX 4090 no se mencionan en la documentación; el modelo está pensado para despliegue local, no para clústeres.
+- Despliegue: llama.cpp con soporte de MTP draft (`--spec-type draft-mtp`), build b12230 o superior. No se documenta compatibilidad con vLLM, TGI, Ollama ni otros runners.
+- Throughput medido: 37 t/s sin MTP y 54 t/s con MTP en RX 6600M; el autor advierte que con `-ub 1024` o `-ub 2048` el rendimiento cae a ~22 t/s por presión de VRAM con `-fit on`.
+- Ajuste recomendado: `-ngl auto -c 0 -fit on -fitc 32768 -fa on -np 1 -ctk q8_0 -ctv q8_0 --temp 0.6 --top-k 20 --min-p 0.0 --spec-type draft-mtp --spec-draft-n-max 2`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | MTP / especulacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PentaCoder-9B-i1-MTP-GGUF | ~9B (no confirmado) | no disponible | Apache 2.0 | GGUF | Sin benchmarks ni model card tecnica |
-| Qwen2.5-Coder-7B-Instruct | 7B | 32K (128K en variantes) | Apache 2.0 | safetensors, GGUF | Ampliamente evaluado, benchmarks publicos |
-| CodeLlama-7B-Instruct | 7B | 16K | Llama 2 custom | safetensors, GGUF | Comunidad amplia, benchmarks publicos |
-| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16K | DeepSeek custom | safetensors, GGUF | Benchmarks publicos de codigo |
+| PentaCoder-9B-i1-MTP-GGUF | 9B (nombre comercial; safetensors del repo indica 456 M, discrepancia no aclarada) | no disponible | Si, bloque MTP embebido | Apache 2.0 | GGUF en HF |
+| mradermacher/PentaCoder-9B-i1-GGUF | 9B | no disponible | No | Apache 2.0 | GGUF en HF |
+| Qwen/Qwen3.5-9B | 9B | no disponible | No en el checkpoint base | no disponible en la información | HF |
+| a4lg/Qwen3.5-9B-MTP-ONLY-GGUF | solo bloque MTP | no disponible | Si (MTP-only) | no disponible en la información | GGUF en HF |
 
-La comparativa es orientativa: no se dispone de datos de rendimiento del modelo PentaCoder que permitan una comparacion cuantitativa con estas alternativas.
+La comparación se limita a la familia de origen porque la model card no aporta datos de rendimiento frente a modelos de otros proveedores. La ventaja frente a mradermacher/PentaCoder-9B-i1-GGUF es exclusivamente la decodificación especulativa integrada; la calidad del modelo base es idéntica al ser copia tensor a tensor.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card tecnica: no hay informacion sobre entrenamiento, datos, contexto ni evaluacion, lo que impide validar su calidad de forma objetiva.
-- Cero descargas y cero interacciones en el momento de la publicacion: no existe evidencia de uso comunitario ni validacion independiente.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin benchmarks no puede acotarse su magnitud en tareas de codigo.
-- Sesgos: desconocidos, al no documentarse la composicion del dataset de entrenamiento.
-- Limitaciones de contexto e idioma: no documentadas.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; conviene verificar la procedencia del modelo base para descartar obligaciones adicionales.
-- El sufijo "MTP" sugiere requisitos especificos de runner o plantilla de chat que no se documentan; puede haber incompatibilidades con herramientas estandar.
-- Para produccion, se recomienda encarecidamente localizar y evaluar el modelo base original antes de adoptar esta cuantizacion.
+- El bloque MTP se entrenó sobre Qwen3.5-9B, no sobre PentaCoder; la aceptación (~0,6-0,7) es inferior a la de una cabeza específica y puede degradar en dominios muy alejados del corpus original.
+- Los proyectores de visión (mmproj) provienen de mradermacher/Qwen3.5-9B-GGUF y nunca se entrenaron con los pesos del merge, por lo que las descripciones de imágenes pueden ser imprecisas.
+- Discrepancia de tamaño: el nombre indica 9B pero el recuento de safetensors del repo es de 456 millones de parámetros; conviene verificar antes de planificar despliegues.
+- No hay datos publicados de benchmarks de calidad (MMLU, HumanEval, GSM8K) ni de sesgos; el riesgo de alucinación es el propio de un modelo de 9B sin evaluación documentada.
+- Idiomas soportados no documentados; no se garantiza un rendimiento adecuado en castellano.
+- El repositorio ocupa 115,7 GB por acumular 24 cuantizaciones; la descarga completa no es necesaria, pero conviene seleccionar un único fichero.
+- Requiere una build de llama.cpp con soporte de `--spec-type draft-mtp`; versiones anteriores ignorarán o rechazarán la opción.
+- En GPU de 8 GB, aumentar `-ub` por encima de 512 reduce drásticamente el throughput con MTP activo (~22 t/s).
+- Licencia Apache 2.0 permite uso comercial, pero al ser un merge comunitario conviene revisar las condiciones del modelo base Qwen3.5-9B y de los cuantizados de origen.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nerun/PentaCoder-9B-i1-MTP-GGUF
+- Modelo base cuantizado: https://huggingface.co/mradermacher/PentaCoder-9B-i1-GGUF
+- Donante del bloque MTP: https://huggingface.co/a4lg/Qwen3.5-9B-MTP-ONLY-GGUF
+- Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Proyectores de visión de origen: https://huggingface.co/mradermacher/Qwen3.5-9B-GGUF

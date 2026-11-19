@@ -2,103 +2,93 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct-MPOA-heretic-i1-GGUF es una cuantizacion en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic, publicada por mradermacher. Se trata de una variante "abliterated" o "decensored" del conocido Qwen2.5-32B-Instruct de Alibaba, en la que se ha aplicado una tecnica de modificacion de pesos para reducir los rechazos del modelo ante peticiones que el modelo original rechazaria, manteniendo en la medida de lo posible las capacidades del modelo base.
+Qwen2.5-32B-Instruct-MPOA-heretic-i1-GGUF es una cuantizacion en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic, un derivado "abliterated" (decensored/heretic) del Qwen2.5-32B-Instruct de Alibaba. El trabajo de cuantizacion lo firma mradermacher, un perfil conocido por publicar versiones GGUF con ficheros imatrix para inferencia local en llama.cpp y entornos compatibles. El modelo conserva la arquitectura transformer densa de Qwen2.5 y sus 32.763.876.352 parametros totales, pero con las capas de rechazo y alineacion de seguridad atenuadas mediante tecnicas de abliteration.
 
-El modelo base subyacente es un transformer denso de 32.763.876.352 parametros (aproximadamente 32,8 mil millones), con la arquitectura y el contexto de Qwen2.5-32B-Instruct, es decir, una ventana de contexto de 32.768 tokens (segun las especificaciones publicas del modelo original de Qwen) y soporte nativo de tool calling y generacion de codigo. La cuantizacion la realiza mradermacher con el metodo imatrix (importance matrix), lo que permite generar una amplia gama de tipos de cuantizacion desde IQ1_S hasta Q6_K, facilitando su ejecucion en hardware de consumo.
+El interes practico de esta ficha no esta en la innovacion arquitectonica (es un Qwen2.5-32B estandar) sino en la combinacion de tres factores: un modelo de 32B con capacidades de instruccion y chat, una version sin los filtros habituales de rechazo, y un catalogo amplio de cuantizaciones (desde i1-IQ1_S de 7,4 GB hasta i1-Q6_K de 27,0 GB) que permiten desplegarlo en hardware muy diverso. El repo ocupa 351,5 GB e incluye tanto quants estaticos como quants con imatrix.
 
-La relevancia de esta ficha radica en que ofrece una version cuantizada y sin censura "blanda" de un modelo de 32B, pensada para investigadores y desarrolladores que necesitan un modelo local de gran tamano con alta capacidad de razonamiento y generacion, sin las restricciones de rechazo del modelo original. No obstante, al ser una modificacion no oficial, no cuenta con garantias de calidad ni con evaluaciones publicadas por el autor, y su uso en produccion requiere una validacion cuidadosa.
+Es relevante ahora porque permite ejecutar un modelo de 32B en GPUs de consumo con cuantizaciones Q4, y porque el caso de uso "uncensored" interesa a investigadores que estudian comportamiento de modelos, red teaming y evaluacion de sesgos. Conviene subrayar que el modelo base declarado es Qwen2.5-32B-Instruct, con licencia Apache 2.0, aunque el autor del quant etiqueta tambien openrail++ en los tags, lo que genera ambiguedad que conviene verificar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen2.5-32B-Instruct) |
-| Parametros totales | 32.763.876.352 (32,8B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens (heredado de Qwen2.5-32B-Instruct) |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (segun la model card) |
-| Idiomas soportados | Ingles (segun la model card; el modelo base Qwen2.5 soporta multiples idiomas, pero la ficha declara solo en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Arquitectura | Transformer denso (heredada de Qwen2.5-32B-Instruct); detalles finos no disponibles en la informacion proporcionada |
+| Parametros totales | 32.763.876.352 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5-32B-Instruct soporta contexto largo, pero el dato no se confirma en esta ficha) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas fichero imatrix |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 (con tags openrail++ en la model card; verificar antes de uso comercial) |
+| Formato de pesos | GGUF (quants i1 con imatrix); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-32B-Instruct: un transformer denso con atencion por ventanas deslizantes combinada con atencion completa, normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). El modelo original fue entrenado por Alibaba con un corpus multilingue de varios billones de tokens y posteriormente afinado con instrucciones y preferencias (RLHF/DPO) para alineamiento conversacional. Sin embargo, la informacion proporcionada no detalla el numero exacto de tokens de entrenamiento ni la composicion del dataset del modelo base.
+La arquitectura subyacente es la de Qwen2.5-32B-Instruct: un transformer denso de 32.763.876.352 parametros. La informacion proporcionada no detalla el numero de capas, dimensiones ocultas, atencion (GQA/MHA) ni el dataset de entrenamiento original. Lo que si se sabe es que el modelo intermedio richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic aplica tecnicas de abliteration (eliminacion o atenuacion de direcciones de rechazo en el espacio de activaciones) sobre el Qwen2.5-32B-Instruct, con el objetivo de reducir los rechazos a peticiones que el modelo original declinaria. El sufijo "MPOA" y "heretic" corresponden a la nomenclatura del autor del modelo intermedio y no se detallan en la informacion disponible.
 
-La modificacion "MPOA-heretic" aplicada por richardyoung no viene documentada en detalle en la informacion disponible. Por el nombre y las etiquetas ("abliterated", "decensored", "uncensored"), se trata de una tecnica de edicion de pesos orientada a eliminar la direccion de rechazo en el espacio de activaciones, similar a las aproximaciones de abliteration. El proceso de cuantizacion de mradermacher utiliza una importance matrix (imatrix) generada a partir de un corpus de calibracion, lo que mejora la calidad de las cuantizaciones de baja precision (IQ-quants) respecto a las cuantizaciones estaticas. No se dispone de informacion sobre el corpus de calibracion ni sobre evaluaciones de degradacion por cuantizacion.
+La cuantizacion la realiza mradermacher con su pipeline habitual (quantize_version 2, output_tensor_quantised 1, convert_type hf), generando quants i1 con fichero imatrix para mejorar la calidad a igual tamano. El repo incluye tambien una variante estatica en mradermacher/Qwen2.5-32B-Instruct-MPOA-heretic-GGUF. No se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con soporte de contexto largo (hasta 32.768 tokens).
-- Razonamiento y resolucion de problemas de nivel medio-alto, heredado de Qwen2.5-32B-Instruct.
-- Generacion de codigo en multiples lenguajes de programacion.
-- Matematicas y calculo simbolico basico.
-- Tool calling / function calling (soportado por el modelo base Qwen2.5-Instruct).
-- Capacidad de seguir instrucciones complejas y formatos estructurados (JSON, tablas, etc.).
-- Modo "sin censura": reduccion de rechazos ante peticiones que el modelo original declinaria, segun las etiquetas del autor.
-- Capacidades multilingues limitadas segun la model card (solo declara ingles), aunque el modelo base Qwen2.5 soporta chino, espanol, frances, aleman, etc.
-- No se documentan capacidades de vision ni audio en esta variante.
+- Generacion de texto conversacional y de instrucciones, heredada de Qwen2.5-32B-Instruct.
+- Razonamiento y matematicas: el modelo base Qwen2.5-32B-Instruct tiene capacidades notables en tareas de razonamiento, aunque el efecto de la abliteration sobre estas no esta cuantificado en la informacion disponible.
+- Generacion de codigo: el modelo base soporta generacion y explicacion de codigo; no se confirma en esta ficha el soporte especifico de tool calling o function calling tras la abliteration.
+- Modo "uncensored/decensored": reduce los rechazos a peticiones que el modelo original declinaria; util para investigacion de alineacion y red teaming.
+- Multilingue: la model card declara solo "en"; el modelo base Qwen2.5 soporta multiples idiomas, pero no se confirma el mantenimiento de esa cobertura en este derivado.
+- No se documentan capacidades de vision, audio ni modo thinking en la informacion proporcionada.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar el comportamiento de un LLM de 32B sin las capas de rechazo, util para analizar sesgos, robustez y eficacia de tecnicas de abliteration en entornos controlados.
-- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o controvertidas, donde el modelo original rechazaria la peticion; adecuado por su tamano para mantener coherencia en textos largos.
-- Asistente de codigo local: con 32B de parametros y soporte de tool calling, puede integrarse en entornos de desarrollo offline para autocompletado, explicacion de codigo y generacion de tests, ejecutandose en GGUF con llama.cpp u Ollama.
-- Analisis de documentos largos: gracias a los 32.768 tokens de contexto, puede resumir o extraer informacion de contratos, articulos o informes extensos en una sola pasada.
-- Prototipado de agentes conversacionales: su capacidad de seguir instrucciones y de invocar funciones permite construir agentes multi-paso para tareas de automatizacion, con la ventaja de ejecucion local y sin dependencia de API.
-- Generacion de datos sinteticos para fine-tuning: util para crear datasets de instrucciones o conversaciones en dominios donde se necesita diversidad sin filtros de seguridad, siempre con revision posterior.
-- Chat de atencion al cliente en dominio tecnico: puede gestionar conversaciones multi-turno con contexto largo y derivar a herramientas externas mediante function calling, aunque requiere validacion por su naturaleza no oficial.
+- Investigacion de alineacion y red teaming: el modelo permite estudiar como responde un 32B cuando se atenuan las capas de rechazo, comparando respuestas con el Qwen2.5-32B-Instruct original en el mismo prompt y configuracion.
+- Evaluacion de sesgos y robustez: al eliminar los filtros de rechazo, se pueden generar respuestas que el modelo original bloquea, lo que facilita construir datasets de evaluacion de seguridad y analizar patrones de sesgo.
+- Despliegue local en estaciones de trabajo con GPU de consumo: con la cuantizacion i1-Q4_K_M (20,0 GB) cabe en GPUs de 24 GB como la RTX 4090, permitiendo un asistente de chat privado sin dependencia de API.
+- Generacion de contenido creativo sin restricciones: escritura de ficcion, dialogos o escenarios que el modelo original rechazaria por politicas de contenido; el modelo es adecuado por su tamano y capacidad de instruccion, pero requiere revision editorial humana.
+- Prototipado de asistentes conversacionales: la cuantizacion i1-Q4_K_S (18,9 GB) ofrece un equilibrio tamano/velocidad/calidad para iterar rapidamente en local con llama.cpp u Ollama.
+- Experimentos de cuantizacion y evaluacion de calidad: el repo incluye imatrix y quants desde IQ1 hasta Q6, lo que permite medir la degradacion de calidad a distintos niveles de compresion sobre un mismo modelo base.
+- Fine-tuning o destilacion sobre un modelo sin filtros: util para investigadores que necesitan un modelo base que no rechace ejemplos de entrenamiento por politicas de contenido, con la advertencia de que el resultado hereda los sesgos del modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor de la cuantizacion no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de degradacion por cuantizacion, y la model card del modelo base modificado tampoco aporta metricas en la informacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion):
-  - Q6_K: ~27-28 GB
-  - Q5_K_M: ~23-24 GB
-  - Q4_K_M: ~20-21 GB
-  - Q4_K_S: ~19-20 GB
-  - Q3_K_M: ~16-17 GB
-  - IQ2_M: ~12-13 GB
-  - IQ1_S: ~8-9 GB
-- GPU recomendadas:
-  - Inferencia completa en una sola GPU: A100 80GB, H100 80GB, RTX 6000 Ada 48GB, RTX 4090 24GB (solo cuantizaciones Q4_K_M o inferiores).
-  - Multi-GPU: 2x RTX 4090 (24GB cada una) para Q5_K_M o Q6_K.
-- Cabe en GPU de consumo: si, en RTX 3090/4090 (24GB) con cuantizaciones Q4_K_M o menores; en GPUs de 16GB solo con IQ2/IQ3 y posible offload parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp. Para el modelo base en safetensors: vLLM, TGI, Transformers.
-- Latencia y throughput: no disponibles. Dependen fuertemente de la GPU, la cuantizacion y el backend; en una RTX 4090 con Q4_K_M se puede esperar un throughput moderado (decenas de tokens por segundo), pero no hay datos publicados que lo confirmen.
+- VRAM estimada para inferencia (segun cuantizacion, aproximando pesos + overhead de contexto):
+  - i1-IQ1_S (7,4 GB): ~8-9 GB de VRAM.
+  - i1-IQ2_M (11,4 GB): ~12-13 GB de VRAM.
+  - i1-IQ3_M (14,9 GB): ~16-17 GB de VRAM.
+  - i1-Q4_K_M (20,0 GB): ~21-22 GB de VRAM.
+  - i1-Q5_K_M (23,4 GB): ~25 GB de VRAM.
+  - i1-Q6_K (27,0 GB): ~28-29 GB de VRAM.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_S; A100 40 GB o H100 80 GB para Q6_K y contexto largo; RTX 3090 (24 GB) para Q4_K_M; GPUs de 16 GB (RTX 4080, 4070 Ti Super) para IQ3_M o Q3_K_M.
+- Cabe en consumer GPU: si, en RTX 4090/3090 con Q4_K_M o inferiores; en GPUs de 16 GB con IQ3_M o Q3_K_M; en GPUs de 12 GB solo con IQ2_M o inferiores, con perdida de calidad notable.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Los quants i1 requieren una version de llama.cpp que soporte i-quants.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-32B-Instruct-MPOA-heretic-i1-GGUF (este) | 32,8B | 32.768 | Apache 2.0 | GGUF | Version abliterated cuantizada, sin benchmarks publicados |
-| Qwen2.5-32B-Instruct (original) | 32,8B | 32.768 | Apache 2.0 | safetensors, GGUF | Modelo oficial con alineamiento completo y benchmarks publicos |
-| richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic | 32,8B | 32.768 | Apache 2.0 | safetensors | Modelo base modificado sin cuantizar, origen de esta ficha |
-| mradermacher/Qwen2.5-32B-Instruct-MPOA-heretic-GGUF | 32,8B | 32.768 | Apache 2.0 | GGUF | Cuantizaciones estaticas (sin imatrix) del mismo modelo base |
+| Qwen2.5-32B-Instruct-MPOA-heretic-i1-GGUF (este) | 32,76B | no disponible | apache-2.0 / openrail++ (verificar) | GGUF (i1, imatrix) | Version abliterated, quants desde 7,4 GB |
+| Qwen2.5-32B-Instruct (original) | 32,76B | no disponible en esta ficha | apache-2.0 | safetensors, GGUF (via terceros) | Modelo de referencia con alineacion completa |
+| mradermacher/Qwen2.5-32B-Instruct-MPOA-heretic-GGUF | 32,76B | no disponible | apache-2.0 / openrail++ (verificar) | GGUF estatico | Misma base, quants sin imatrix |
+| richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic | 32,76B | no disponible | no disponible | safetensors | Modelo intermedio antes de la cuantizacion |
 
 ## Limitaciones y advertencias
 
-- Al ser una modificacion no oficial, no hay garantia de que las capacidades del modelo original se conserven intactas; la abliteration puede degradar el razonamiento, la coherencia o la calidad en tareas complejas.
-- Riesgo elevado de alucinacion, especialmente en cuantizaciones de baja precision (IQ1, IQ2) y en el modelo modificado en general.
-- La model card declara solo ingles como idioma soportado, aunque el modelo base es multilingue; el rendimiento en otros idiomas no esta verificado.
-- El modelo esta disenado para reducir rechazos, lo que implica que puede generar contenido inapropiado, ofensivo o danino; no es apto para aplicaciones de cara al publico sin filtros adicionales.
-- Aunque la licencia es Apache 2.0, el uso comercial de una variante "decensored" puede acarrear riesgos reputacionales y de cumplimiento normativo (por ejemplo, en la UE con la AI Act); se recomienda revision legal.
-- No hay evaluaciones de seguridad ni de sesgos publicadas para esta variante.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- El tamano del repo (150,4 GB) incluye todas las cuantizaciones; conviene descargar solo el archivo GGUF necesario.
-- No se dispone de informacion sobre el corpus de calibracion del imatrix ni sobre la metodologia exacta de la modificacion heretic.
+- La abliteration elimina o atenua las capas de rechazo, por lo que el modelo puede generar contenido danino, ilegal o eticamente problematico; no es apto para produccion orientada a usuarios finales sin filtros externos.
+- Riesgo elevado de alucinacion y de respuestas confiadas pero incorrectas, especialmente en cuantizaciones bajas (IQ1, IQ2), donde la calidad se degrada de forma notable.
+- La model card declara solo ingles; el rendimiento en castellano u otros idiomas no esta garantizado y puede degradarse respecto al Qwen2.5 original.
+- Ambiguedad de licencia: el campo license indica apache-2.0, pero los tags incluyen openrail++; conviene verificar la licencia efectiva del modelo intermedio antes de un uso comercial.
+- La cuantizacion introduce perdida de calidad respecto al modelo en safetensors; los quants por debajo de Q4_K_S no son recomendables para tareas de razonamiento o codigo en produccion.
+- No se documentan las tecnicas exactas de abliteration ni el impacto sobre benchmarks, por lo que no se puede afirmar que las capacidades del Qwen2.5-32B-Instruct se mantengan intactas.
+- El repo ocupa 351,5 GB; descargar el modelo completo no es necesario, basta con el fichero de la cuantizacion elegida.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-MPOA-heretic-i1-GGUF
-- Modelo base modificado: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic
-- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-MPOA-heretic-GGUF
+- Hugging Face (este repo): https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-MPOA-heretic-i1-GGUF
+- Modelo base del quant: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-MPOA-heretic
+- Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-MPOA-heretic-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen2.5-32B-Instruct-MPOA-heretic-i1-GGUF
-- Modelo original Qwen2.5-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Licencia Apache 2.0 del modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
-- FAQ y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Qwen2.5-32B-Instruct original (referencia de licencia): https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

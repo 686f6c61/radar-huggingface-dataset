@@ -2,101 +2,104 @@
 
 ## Resumen
 
-Ripple-65B Preview es un modelo de lenguaje denso de 65.000 millones de parámetros desarrollado por Ricursive Intelligence, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer denso (no MoE) preentrenado desde cero sobre 12 billones de tokens de texto y código, predominantemente en inglés, con una longitud de contexto que alcanza hasta 1M de tokens tras las fases de post-entrenamiento. Su foco principal es el razonamiento y el código agéntico, y su model card reporta un resultado de 80,52 en TerminalBench 2.1, por encima de modelos open-weight estadounidenses mucho mayores como Reflection Beam 501B, Meta Muse Spark Open 816B, Thinking Machines Inkling 975B o NVIDIA Nemotron 3 Ultra 550B.
+Ripple-65B Preview es un modelo de lenguaje de tipo transformer denso desarrollado por Ricursive Intelligence, con 64.782.689.360 parámetros totales y licencia Apache 2.0. Se distribuye en formato safetensors (BF16) y cuenta con variantes complementarias en NVFP4, una versión base sin post-entrenamiento y un checkpoint DFlash2. El modelo ha sido preentrenado desde cero sobre 12 billones de tokens de un corpus mayoritariamente en inglés y código, y declara soporte de contexto de hasta 1.048.576 tokens.
 
-La relevancia del modelo radica en su relación entre tamaño y rendimiento: con solo 65B parámetros totales, Ricursive afirma que iguala o supera a modelos con más de 10 veces su número de parámetros en tareas de razonamiento y agentes. La arquitectura es deliberadamente "thin-and-deep" (d_model de 5120 y 80 capas), con un diseño tipo Gemma 3N que sustituye al enfoque llama-like de Olmo 3 para mejorar la estabilidad de entrenamiento a escala. La compañía declara un MFU del 40% durante preentrenamiento y post-entrenamiento con sharding simple, sin kernels personalizados y en BF16.
+Su propuesta diferencial es alcanzar un rendimiento competitivo en tareas de codigo agéntico con un modelo denso de solo 65B parámetros, frente a alternativas estadounidenses de pesos abiertos mucho mayores (entre 550B y 975B según la model card). El autor reporta 80,52 en TerminalBench 2.1, por encima de Reflection Beam 501B (80,1), Meta Muse Spark Open 816B (76,4), Thinking Machines Inkling 975B (63,8) y NVIDIA Nemotron 3 Ultra 550B (56,4). La relevancia actual reside en que, segun el autor, el modelo cabe en hardware de consumo como una NVIDIA DGX Spark y alcanza 250 tok/s en 2xB200 con batch 8 antes de cuantización o kernels personalizados.
 
-El release es una "Preview": el post-entrenamiento es relativamente ligero y centrado en código agéntico, e incluye una versión instruction-tuned en BF16 y NVFP4, además de un checkpoint base solo preentrenado. El modelo está codesñado para hardware NVIDIA y, según el autor, cabe en equipos de consumo como el NVIDIA DGX Spark gracias al checkpoint NVFP4.
+La arquitectura es un transformer denso con proporción "thin-and-deep": d_model de 5120 y 80 capas totales, con atención de ventana deslizante (SWA) combinada con capas globales, gated attention, NoPE global, value residuals y clipping de activaciones en la FFN. El modelo parte de una base estilo Olmo 3 y evoluciona hacia una arquitectura tipo Gemma 3N para mejorar la estabilidad de entrenamiento a escala.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (estilo Gemma 3N), ratio thin-and-deep, d_model 5120, 80 capas |
-| Parametros totales | 64.782.689.360 (≈65B) |
+| Arquitectura | Transformer denso (estilo Gemma 3N, base Olmo 3), thin-and-deep, SWA + capas globales, gated attention, NoPE global, value residuals, FFN activation clipping |
+| Parametros totales | 64.782.689.360 (64,78B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Hasta 1M tokens (entrenado en 8K, extendido vía midtraining a 64K, long context a 2M y LC SFT a 2M) |
-| Tipos de cuantizacion | BF16 (repo principal) y NVFP4 (checkpoint separado) |
-| Idiomas soportados | Predominantemente inglés (corpus text-only mayoritariamente inglés y código); lista oficial de idiomas no disponible |
+| Longitud de contexto | Hasta 1.048.576 tokens (1Mi); preentrenamiento a 8K, midtrain a 64K, long context a 2M, SFT a 128K |
+| Tipos de cuantizacion | BF16 (repo principal), NVFP4 (checkpoint separado) |
+| Idiomas soportados | Predominantemente inglés y código (no se detalla lista oficial de idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, con custom_code |
+| Formato de pesos | safetensors (BF16); variante NVFP4 en repo aparte |
+| d_model | 5120 |
+| Numero de capas | 80 |
+| Tokens de preentrenamiento | 12 billones (12T) |
+| Tamano del repo | 129,6 GB |
+| Descargas | 15.045 |
+| Likes | 615 |
 
 ## Arquitectura y entrenamiento
 
-Ripple-65B es un transformer denso con proporción "thin-and-deep": un ancho de modelo (d_model) de 5120 y 80 capas totales. Ricursive abandonó la arquitectura llama-like de Olmo 3 en favor de un diseño inspirado en Gemma 3N para mejorar la estabilidad del entrenamiento a escala. Para reforzar el razonamiento, el modelo sobreaprovisiona el número de cabezas de atención, incrementa la ratio de capas SWA (sliding window attention) frente a globales y reduce la ventana SWA para compensar el coste. Además incorpora clipping de activaciones en la FFN, atención con compuertas (gated attention), NoPE global y value residuals. La decisión de usar un denso en lugar de un MoE buscaba reducir la complejidad de infraestructura de preentrenamiento y post-entrenamiento manteniendo buen rendimiento en razonamiento y agentes.
+Ripple-65B es un transformer denso con una relación de aspecto "thin-and-deep": d_model estrecho (5120) y 80 capas. El autor indica que migró desde una arquitectura tipo Llama (Olmo 3) a una tipo Gemma 3N para mejorar la estabilidad del entrenamiento a escala. Para reforzar el razonamiento, se sobreaprovisionan las cabezas de atención, se incrementa la proporción de capas SWA frente a globales y se reduce la ventana SWA para compensar el coste. Se añaden además gated attention, NoPE global, value residuals y clipping de activaciones en la FFN. La decisión de usar un denso en lugar de un MoE busca reducir la complejidad de infraestructura de preentrenamiento y postentrenamiento, manteniendo un MFU del 40% con sharding simple, sin kernels personalizados y sin cuantización (BF16).
 
-El preentrenamiento se realizó desde cero sobre 12 billones de tokens de un corpus text-only predominantemente inglés y de código, con longitud de secuencia de 8K, 877.500 pasos y batch size escalado de 1408 a 3072. El post-entrenamiento sigue una receta estándar por etapas: midtraining (200B tokens, 64K de secuencia), long context (6,5B tokens, 2M de secuencia), SFT (183B tokens, 128K), long context SFT (13,5B tokens, 2M) y RL mixto por dominios (700 pasos, 128K de secuencia, batch 2048). El checkpoint base es solo preentrenamiento, sin midtraining ni datos sintéticos de QA. Ricursive declara que su escalera de modelos Ripple v1 mejora la eficiencia de cómputo en código 16x respecto a la de Olmo 3, y hasta 55x en la ejecución completa ("hero run").
+El preentrenamiento se realizó desde cero sobre 12T tokens de texto mayoritariamente inglés y código, con longitud de secuencia de 8K y 877.500 pasos (batch 1408 a 3072). El pipeline de postentrenamiento incluye midtraining (200B tokens, 64K de secuencia), long context (6,5B tokens, 2M de secuencia), SFT (183B tokens, 128K), long context SFT (13,5B tokens, 2M) y RL mixto multidominio (700 pasos, 128K, batch 2048). El autor describe el postentrenamiento de esta Preview como "relativamente ligero", centrado en codigo agéntico. El checkpoint Base Preview es solo preentrenamiento, sin midtraining ni datos QA sintéticos.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general en inglés, con especial énfasis en tareas de razonamiento multi-paso.
-- Codificación agéntica: resolución de tareas en terminal y entornos de línea de comandos, evaluada en TerminalBench 2.1, SWE-bench Pro v2.0 Hard y DeepSWE 1.1.
-- Razonamiento matemático y de código derivado del corpus de preentrenamiento y del RL mixto por dominios.
-- Soporte de contexto largo de hasta 1M tokens, habilitado mediante las fases de long context y LC SFT.
-- Capacidad de operar como agente en flujos multi-paso con harnesses como Terminus 2 y OpenCode (usados en la evaluación del autor).
-- Despliegue eficiente en hardware NVIDIA, incluido el formato NVFP4 para equipos de consumo como el DGX Spark.
-- Generación rápida de tokens en GPUs de datacenter: 250 tok/s en 2xB200 con batch=8 antes de cuantización o kernels personalizados.
-- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
-- Capacidades multimodales (visión, audio): no disponibles; el modelo es text-only.
+- Generación de texto y razonamiento en inglés y código, con contexto largo de hasta 1.048.576 tokens.
+- Codigo agéntico: el foco declarado del postentrenamiento, con resultados destacados en TerminalBench 2.1.
+- Razonamiento multi-paso y tareas de agente (uso de terminal, ejecución de comandos, resolución de tareas de software).
+- Capacidad de contexto largo gracias a las fases de long context y long context SFT (secuencias de hasta 2M durante el entrenamiento).
+- No se declara soporte explícito de tool calling / function calling en la información disponible.
+- No se declara soporte de visión, audio ni modo "thinking" explícito en la información disponible.
+- Capacidades multilingües: no detalladas; el corpus es predominantemente inglés y código.
 
 ## Casos de uso
 
-- Automatización de tareas en terminal y CI/CD: el modelo puede ejecutar comandos, interpretar salidas y corregir errores en pipelines de integración continua, aprovechando su entrenamiento específico en código agéntico y su buen resultado en TerminalBench 2.1.
-- Agentes de resolución de incidencias en repositorios: con contexto de hasta 1M tokens puede cargar fragmentos amplios de código, trazas y documentación para localizar y proponer parches, evaluado en SWE-bench Pro v2.0 Hard y DeepSWE 1.1.
-- Asistente de programación en IDE o CLI: generación y refactorización de código en inglés y lenguajes de programación, con latencia de 250 tok/s en 2xB200 batch=8, adecuada para autocompletado interactivo.
-- Procesamiento de documentación técnica extensa: gracias a la ventana de 1M tokens puede resumir, extraer y cruzar información de manuales, especificaciones y bases de conocimiento largas sin trocear.
-- Despliegue local en estaciones de trabajo: el checkpoint NVFP4 permite ejecutar el modelo en hardware de consumo como el NVIDIA DGX Spark, útil para prototipado y desarrollo offline con datos sensibles.
-- Investigación en razonamiento y agentes: al ser un denso de 65B con receta de entrenamiento documentada por etapas, sirve como base para estudiar escalado, long context y RL en código agéntico.
-- Generación de código en producción con contexto largo: integrable en servicios de revisión de código donde se necesite analizar un repositorio completo o un diff extenso en una sola pasada.
+- Automatización de tareas de terminal y DevOps: el modelo está entrenado específicamente para codigo agéntico y obtiene 80,52 en TerminalBench 2.1, lo que lo hace adecuado para agentes que ejecutan comandos, depuran entornos y resuelven tareas de sistema en pipelines de CI/CD.
+- Agentes de resolución de incidencias de software: con contexto de hasta 1Mi tokens puede ingerir repositorios, logs extensos y trazas de error en una sola ventana y razonar sobre ellos de forma multi-paso.
+- Asistente de programación en IDE o CLI: generación y refactorización de código con contexto amplio de proyecto, adecuado para integraciones tipo OpenCode (harness usado por el autor en algunas evaluaciones).
+- Procesamiento de documentación técnica extensa: la ventana de 1Mi tokens permite analizar manuales, especificaciones y bases de código completas sin trocear, útil para auditoría y generación de resúmenes técnicos.
+- Despliegue en hardware de consumo: según el autor, el modelo cabe en una NVIDIA DGX Spark, lo que habilita prototipado local de agentes de código sin depender de infraestructura de datacenter.
+- Servicio de inferencia de alto throughput: con 250 tok/s en 2xB200 (batch 8, sin cuantización ni kernels personalizados), es viable para servir agentes concurrentes en producción con latencia baja.
+- Investigación en eficiencia de entrenamiento: al ser denso y con receta reproducible (MFU 40%, sharding simple), sirve como base para estudiar leyes de escala y eficiencia computacional en código (el autor reporta 16x de mejora en CE frente a Olmo 3, hasta 55x en la ejecución completa).
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla comparativa de benchmarks, pero el contenido proporcionado se corta tras la cabecera de la tabla, por lo que solo se dispone de los datos citados en el texto: TerminalBench 2.1 con 80,52 para Ripple-65B Preview frente a 80,1 de Reflection Beam 501B, 76,4 de Meta Muse Spark Open 816B, 63,8 de Thinking Machines Inkling 975B y 56,4 de NVIDIA Nemotron 3 Ultra 550B. El resto de resultados por benchmark (SWE-bench Pro v2.0 Hard, DeepSWE 1.1, etc.) no están disponibles en la información proporcionada.
+Datos reportados por el autor en la model card (BF16, máximo esfuerzo; mayor es mejor). Para SWE-bench Pro v2.0 Hard y DeepSWE 1.1 se usó Terminus 2; en el resto, OpenCode cuando no se especifica harness.
 
-| Benchmark | Ripple-65B Preview | Reflection Beam 501B | Muse Spark Open 816B | Inkling 975B | Nemotron 3 Ultra 550B |
+| Benchmark | Ripple-65B Preview | Nemotron 3 Ultra 550B | Inkling 975B | Muse Spark Open 816B | Reflection Beam 501B |
 |---|---|---|---|---|---|
-| TerminalBench 2.1 | 80,52 | 80,1 | 76,4 | 63,8 | 56,4 |
-| SWE-bench Pro v2.0 Hard | no disponible | no disponible | no disponible | no disponible | no disponible |
-| DeepSWE 1.1 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| TerminalBench 2.1 | 80,52 | 56,4 | 63,8 | 76,4 | 80,1 |
+| Resto de benchmarks | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
-El autor advierte que replicar benchmarks agénticos modernos es difícil y que los resultados de TerminalBench 2.1 fueron universalmente más bajos con el harness oficial Terminus 2 a 128K de secuencia con summarization (salvo Muse Spark Open), por lo que las cifras representan un mejor esfuerzo de comparación justa.
+El autor advierte que replicar estas puntuaciones es difícil por la sensibilidad de las evaluaciones agénticas modernas; por ejemplo, Terminal-Bench 2.1 arroja puntuaciones universalmente más bajas con el harness oficial Terminus 2 a 128K de secuencia con summarization (salvo Muse Spark Open). No se han publicado en la información disponible resultados de MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: aproximadamente 130 GB de pesos (el repo ocupa 129,6 GB), por lo que se necesitan al menos 2 GPUs de 80 GB o una configuración equivalente para inferencia sin cuantizar.
-- VRAM estimada en NVFP4: aproximadamente 32-33 GB de pesos, lo que permite ejecución en GPUs de consumo de gama alta con 48 GB o más, y en el NVIDIA DGX Spark según el autor.
-- GPUs recomendadas: NVIDIA B200 (el autor reporta 250 tok/s en 2xB200 batch=8), H100 y A100 80 GB para BF16; RTX 4090 (24 GB) no es suficiente en BF16 ni en NVFP4 sin offloading o sharding adicional.
-- Cabe en GPU de consumo: sí, en formato NVFP4 en equipos con suficiente memoria unificada o VRAM (DGX Spark citado explícitamente); no en una RTX 4090 de 24 GB sin técnicas adicionales.
-- Opciones de despliegue: el repo usa custom_code, por lo que requiere `trust_remote_code`; no se confirman integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: 250 tok/s en 2xB200 con batch=8 antes de cuantización o kernels personalizados; no se proporcionan más cifras de latencia.
+- VRAM estimada en BF16: aproximadamente 130 GB solo para pesos (64,78B × 2 bytes), más overhead de activaciones y KV cache; requiere múltiples GPU de datacenter o nodos con memoria unificada.
+- VRAM estimada en NVFP4: aproximadamente 32-33 GB para pesos (64,78B × ~4 bits), más overhead; permite despliegue en GPU de consumo de gama alta con memoria suficiente.
+- GPU recomendadas: el autor cita 2xB200 para 250 tok/s (batch 8) y NVIDIA DGX Spark como hardware de consumo donde cabe el modelo; también es apto para A100/H100 en BF16 con paralelismo de tensor.
+- Cabe en consumer GPU: sí, en formato NVFP4 y en dispositivos con memoria unificada como DGX Spark; en BF16 no cabe en una GPU de consumo estándar.
+- Opciones de despliegue: el repo incluye `custom_code` y tag `deploy:sagemaker`; el autor menciona un colab para NVFP4. No se confirma soporte explícito de vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: 250 tok/s en 2xB200 con batch 8, antes de cuantización o kernels personalizados (dato del autor).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | TerminalBench 2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B Preview | 65B denso | Hasta 1M | 80,52 | Apache 2.0 | Hugging Face (BF16, NVFP4, base) |
-| Reflection Beam 501B | 501B | no disponible | 80,1 | no disponible | open-weight (EE. UU.) |
-| Meta Muse Spark Open 816B | 816B | no disponible | 76,4 | no disponible | open-weight (EE. UU.) |
-| Thinking Machines Inkling 975B | 975B | no disponible | 63,8 | no disponible | open-weight (EE. UU.) |
-| NVIDIA Nemotron 3 Ultra 550B | 550B | no disponible | 56,4 | no disponible | open-weight (EE. UU.) |
+| Ripple-65B Preview | 64,78B (denso) | 1.048.576 | 80,52 | Apache 2.0 | Hugging Face (BF16, NVFP4, Base, DFlash2) |
+| Reflection Beam 501B | 501B | no disponible | 80,1 | no disponible | pesos abiertos (EE. UU.) |
+| Meta Muse Spark Open 816B | 816B | no disponible | 76,4 | no disponible | pesos abiertos (EE. UU.) |
+| Thinking Machines Inkling 975B | 975B | no disponible | 63,8 | no disponible | pesos abiertos (EE. UU.) |
+| NVIDIA Nemotron 3 Ultra 550B | 550B | no disponible | 56,4 | no disponible | pesos abiertos (EE. UU.) |
 
-La comparativa se limita a los datos de TerminalBench 2.1 citados en la model card; no se dispone de parámetros activos, contexto ni licencia de los modelos competidores en la información proporcionada. El punto diferencial de Ripple-65B es su tamaño mucho menor (65B denso frente a 501B-975B) con un resultado superior en esa prueba concreta.
+La comparativa se limita a TerminalBench 2.1, único benchmark con datos completos en la información disponible. Ripple-65B iguala o supera a modelos con más de 10 veces sus parámetros totales según el autor, con la ventaja de ser denso y desplegable en hardware de menor escala.
 
 ## Limitaciones y advertencias
 
-- Es un release "Preview" con post-entrenamiento ligero y centrado en código agéntico; su rendimiento en dominios generales puede ser inferior al de modelos con post-entrenamiento más completo.
-- El corpus es predominantemente inglés y código; el soporte multilingüe no está confirmado y probablemente sea limitado fuera del inglés.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan mitigaciones específicas en la información disponible.
-- Sesgos conocidos: no documentados en la model card; al entrenarse sobre corpus web en inglés, es esperable un sesgo hacia ese idioma y cultura.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo requiere `trust_remote_code` por el uso de custom_code, lo que implica ejecutar código del autor.
-- El contexto de 1M tokens se alcanzó con fases de long context de solo 6,5B y 13,5B tokens; la calidad en ventanas muy largas no está validada de forma independiente.
-- Las cifras de benchmarks provienen del propio autor y este reconoce dificultades de replicación en evaluaciones agénticas.
-- No se confirma soporte de tool calling, multimodalidad ni integración con frameworks de despliegue estándar.
+- Modelo "Preview" con postentrenamiento ligero: puede presentar comportamiento menos pulido que versiones finales en dominios fuera del código agéntico.
+- Corpus predominantemente inglés y código: el rendimiento en otros idiomas no está garantizado ni documentado.
+- Riesgo de alucinación inherente a modelos de lenguaje; no se documentan mitigaciones específicas.
+- Sesgos: no se detalla análisis de sesgos en la información disponible.
+- Las puntuaciones de benchmarks agénticos son sensibles al harness y a la longitud de secuencia; el propio autor advierte que la replicación es difícil.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), conviene revisar el fichero LICENSE del repo por posibles condiciones adicionales no reflejadas en la model card.
+- El repo usa `custom_code`: requiere `trust_remote_code` y revisión del código antes de cargar en producción.
+- No se declara soporte de tool calling nativo ni de modalidades distintas de texto; verificar antes de integrar en pipelines que dependan de function calling.
 
 ## Enlaces
 
-- Modelo en Hugging Face (BF16 instruct): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- Checkpoint NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
+- Hugging Face (BF16 instruct): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Variante NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
 - Variante DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Blog de lanzamiento: https://www.ricursive.com/ripple

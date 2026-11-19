@@ -2,117 +2,97 @@
 
 ## Resumen
 
-`rawmodels/Qwen3.8-27B-antislop-GGUF` es el conjunto de conversiones a formato GGUF del checkpoint `rawmodels/Qwen3.8-27B-antislop`, un modelo de generación de texto derivado de la familia Qwen3.8 con aproximadamente 27 000 millones de parámetros según su denominación. Lo publica el usuario `rawmodels` y su propósito declarado no es el razonamiento genérico ni el código, sino la escritura: el modelo fue ajustado para redactar de forma menos reconocible como texto generado por un LLM y más parecida a prosa humana.
+Qwen3.8-27B-antislop es un modelo de generacion de texto derivado de Qwen3.8-27B y ajustado por AlexWortega para reducir los sesgos estilisticos tipicos de los modelos de lenguaje (lo que el autor denomina "slop": formulas repetitivas, muletillas, estructuras predecibles). El repositorio aqui descrito es la version cuantizada en GGUF publicada por rawmodels, que permite ejecutar el modelo en llama.cpp y entornos compatibles sin necesidad de GPU de gama alta. El modelo cuenta con 26.895.998.464 parametros (aproximadamente 27B) y esta orientado a generacion conversacional y escritura creativa.
 
-El ajuste se realizó mediante aprendizaje por refuerzo contra rúbricas alineadas con criterios de expertos (una reimplementación del método RL-XAR / *unslop* de Meta FAIR), a partir del paso 100 de entrenamiento GRPO. En el protocolo completo de EQ-Bench 4 el checkpoint bf16 alcanza un Elo de 1320,1 (IC 95%: 1309–1332), lo que lo sitúa en el puesto 4 de 29 modelos evaluados en esa prueba de prosa.
+La relevancia de esta ficha radica en que el autor situa el modelo en el puesto 4 de 29 en EQ-Bench 4 con un Elo de 1320, por encima de GPT-5.5 y Claude Opus 4.7/4.8 segun la model card. El ajuste se basa en el metodo unslop / RL-XAR de Meta FAIR, y el entorno de recompensa esta publicado como dataset abierto. La licencia Apache 2.0 facilita su uso comercial.
 
-Este repositorio concreto contiene únicamente las conversiones cuantizadas para su uso con llama.cpp y derivados, no los pesos originales en safetensors. El conversion es text-only: se excluyen deliberadamente la torre de visión y la cabeza de predicción multi-token (MTP) del modelo base mediante la opción `--no-mtp`. La licencia declarada es Apache 2.0 y los idiomas soportados oficialmente son inglés y ruso.
+La version GGUF incluye dos cuantizaciones estaticas (Q4_K_M y Q8_0) generadas con llama.cpp en el commit `efe3626`, con hashes verificables en `weights_manifest.json`. El modelo es solo texto y soporta ingles y ruso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el modelo base incluye torre de vision y cabeza MTP, excluidas en esta conversion) |
-| Parametros totales | ~27 000 millones (deducido de la denominacion del modelo; no confirmado en la model card) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B; detalles de atencion no disponibles) |
+| Parametros totales | 26.895.998.464 (~27B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q4_K_M, Q8_0 |
+| Tipos de cuantizacion | Q4_K_M, Q8_0 (cuantizaciones estaticas) |
 | Idiomas soportados | en, ru |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
-
-Detalle de ficheros publicados:
-
-| Fichero | Tamano | Cuantizacion |
-|---|---:|---|
-| `Qwen3.8-27B-antislop-BF16.gguf` | 50,11 GiB | BF16 |
-| `Qwen3.8-27B-antislop-Q8_0.gguf` | 26,63 GiB | Q8_0 |
-| `Qwen3.8-27B-antislop-Q4_K_M.gguf` | 15,41 GiB | Q4_K_M |
+| Formato de pesos | GGUF (repo de 45,1 GB) |
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la arquitectura interna del modelo base más allá de dos indicios indirectos: la existencia de una torre de visión y de una cabeza MTP (multi-token prediction) en el checkpoint original, ambas eliminadas en esta conversión GGUF mediante `--no-mtp`. Esto sugiere que `Qwen3.8-27B-antislop` deriva de una arquitectura multimodal con decodificación multi-token, pero el repositorio no confirma si el tronco es un transformer denso, un MoE o un híbrido, ni detalla número de capas, cabezas de atención o dimensión oculta. Tampoco se publica la longitud de contexto soportada.
+El modelo base es AlexWortega/Qwen3.8-27B-antislop, a su vez derivado de Qwen3.8-27B. La model card no detalla la arquitectura interna (numero de capas, tipo de atencion, dimensiones ocultas) ni la composicion exacta del dataset de entrenamiento. El ajuste se presenta como un entrenamiento de refuerzo orientado a estilo, basado en el metodo unslop / RL-XAR de Meta FAIR, cuyo objetivo es penalizar patrones de escritura caracteristicos de LLM y recompensar una prosa mas natural y variada. El entorno de recompensa del RL esta publicado en el dataset `rawmodels/unslop-harbor`, lo que permite reproducir el proceso.
 
-En cuanto al entrenamiento, sí hay información sobre la fase de alineación: el modelo es el resultado del paso 100 de un proceso GRPO guiado por rúbricas calibradas con criterios de expertos, una reimplementación del método RL-XAR / *unslop* de Meta FAIR. El objetivo es reducir los sesgos estilísticos típicos de los LLM (muletillas, estructuras repetitivas, fórmulas de cortesía predecibles). No se especifican en este repositorio el número de tokens de preentrenamiento, la composición del dataset ni si hubo fases previas de SFT o DPO.
-
-La conversión se realizó con el commit `efe3626b119ff81033e309c3ba07a770bef2c546` de llama.cpp. La cuantización Q4_K_M se calibró con una *importance matrix* pequeña en inglés y ruso (2 fragmentos, 256 tokens), lo que conviene tener en cuenta: es una calibración de baja cobertura, inferior a las imatrix habituales de miles de fragmentos. Los hashes de los ficheros y los detalles de conversión están en `weights_manifest.json`.
+No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del corpus, ni si hubo fases de SFT, RLHF o DPO adicionales. Tampoco se documentan innovaciones de inferencia como decodificacion especulativa o atencion lineal. Las cuantizaciones GGUF se generaron con llama.cpp en el commit `efe3626` y son estaticas, con hashes recogidos en `weights_manifest.json`.
 
 ## Capacidades
 
-- Generación de texto y prosa de estilo humano, con énfasis explícito en reducir las marcas estilísticas habituales de un LLM.
-- Reescritura y edición de textos existentes (caso de uso declarado en la model card: conservar los hechos de origen y reformular el estilo).
-- Capacidad multilingüe limitada a inglés y ruso según los metadatos del repositorio.
-- Generación de texto corto y creativo (el ejemplo de la model card es completar un tuit).
-- Inferencia local en CPU/GPU mediante llama.cpp y el ecosistema GGUF.
-- Capacidades multimodales: no disponibles en esta conversión (torre de visión excluida).
-- Decodificación especulativa vía cabeza MTP: no disponible (cabeza excluida con `--no-mtp`).
-- Tool calling / function calling: no documentado en la información disponible.
-- Comportamiento agéntico o razonamiento multi-paso: no documentado; la model card indica que el *thinking* está desactivado en el uso previsto de prosa y reescritura.
-- Modo de razonamiento explícito (*thinking mode*): no disponible en el uso recomendado.
+- Generacion de texto conversacional y de escritura creativa con estilo menos formulaico que el modelo base.
+- Redaccion de textos breves y naturales (tweets, parrafos, continuaciones) segun el ejemplo de la model card.
+- Generacion multilingue limitada a ingles y ruso.
+- Inferencia local mediante llama.cpp y entornos compatibles con GGUF.
+- Endpoints compatibles (tag `endpoints_compatible`) para despliegue como servicio.
+- No se documenta soporte explicito de tool calling, function calling ni razonamiento multi-paso.
+- No se documenta capacidad de vision, audio ni modo de razonamiento extendido (thinking mode).
+- No se documenta soporte de agentes.
 
 ## Casos de uso
 
-- Redacción de contenido editorial y copywriting: el ajuste por rúbricas de estilo está orientado a producir textos de marketing, boletines o artículos que no suenen a plantilla generada, que es exactamente el objetivo declarado del modelo.
-- Humanización y reescritura de textos generados previamente: útil para pipelines en los que se genera un borrador con otro modelo y se pasa por este para eliminar fórmulas repetitivas, manteniendo los hechos de origen.
-- Localización de contenido entre inglés y ruso: el repositorio declara soporte para ambos idiomas y la importance matrix de la cuantización Q4_K_M se construyó con fragmentos en esas dos lenguas.
-- Asistentes conversacionales de texto con tono natural: en escenarios donde el registro formal de un asistente genérico resulta artificial (por ejemplo, atención al cliente por chat o asistentes de producto), el ajuste antislop reduce la sensación de respuesta automatizada.
-- Generación de datos sintéticos con prosa más natural: para entrenar o evaluar modelos de estilo, un generador que no reproduzca los clichés habituales de los LLM reduce el sesgo de estilo en el corpus resultante.
-- Prototipado y despliegue local en hardware de consumo: con el fichero Q4_K_M (15,41 GiB) es viable ejecutar el modelo en una GPU de 24 GB sin depender de APIs externas, útil para pruebas de estilo y evaluación cualitativa.
-- Corrección de estilo y edición asistida: dado que la model card recomienda conservar los hechos y revisar el resultado, encaja en flujos de edición donde un humano valida el texto final.
+- Generacion de contenido para redes sociales: el ajuste antislop reduce las formulas repetitivas tipicas de LLM, lo que resulta util para publicaciones breves (tweets, posts) que deben sonar naturales; el ejemplo de la model card usa una continuacion de tweet con `--temp 0.8`.
+- Escritura creativa y ficcion: el modelo esta entrenado para evitar estructuras predecibles, lo que lo hace adecuado para borradores de relatos, dialogos y prosa donde la variedad estilistica importa.
+- Reescritura y humanizacion de textos: puede emplearse para reformular borradores generados por otros modelos y eliminar muletillas y patrones repetitivos antes de publicar.
+- Asistencia editorial en ingles y ruso: correccion de estilo y propuestas de redaccion para equipos bilingues en esos dos idiomas.
+- Prototipado local en estaciones de trabajo: con Q4_K_M (15,41 GiB) se puede ejecutar en GPUs de consumo con suficiente VRAM, lo que permite iterar sin coste de API.
+- Despliegue en servicios compatibles con endpoints: el tag `endpoints_compatible` permite servirlo detras de una API para aplicaciones de generacion de texto.
+- Experimentacion en investigacion de estilo: el entorno de RL publico (`unslop-harbor`) y el metodo RL-XAR permiten estudiar y reproducir el efecto del ajuste antislop.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Contexto |
-|---|---|---|
-| EQ-Bench 4 (protocolo completo) | Elo 1320,1 (IC 95%: 1309–1332) | Medido sobre el checkpoint bf16; puesto 4 de 29 |
-| MMLU, HumanEval, GSM8K u otros | no disponible | No se han publicado resultados en la información disponible |
+La model card reporta un resultado de EQ-Bench 4: puesto 4 de 29 con Elo 1320, por encima de GPT-5.5 y Claude Opus 4.7/4.8. No se proporcionan en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar, por lo que no se incluyen.
 
-La propia model card advierte que la puntuación de EQ-Bench 4 se obtuvo con el checkpoint bf16 y que la cuantización a 4 bits puede alterar la calidad. No se publican métricas de *throughput* ni de latencia.
+| Benchmark | Resultado | Referencia |
+|---|---|---|
+| EQ-Bench 4 | Elo 1320, puesto 4 de 29 | Por encima de GPT-5.5 y Claude Opus 4.7/4.8 (segun model card) |
 
 ## Requisitos de hardware
 
-Los valores de VRAM son estimaciones propias a partir del tamaño de los ficheros, ya que la model card no publica requisitos de hardware:
-
-- Q4_K_M (15,41 GiB de pesos): aproximadamente 17–20 GB de VRAM con contexto moderado. Cabe en RTX 4090, RTX 3090, RTX 5090 y A6000. En tarjetas de 16 GB (RTX 4080/4060 Ti 16 GB) el encaje es ajustado y probablemente requiera descargar parte de las capas a CPU.
-- Q8_0 (26,63 GiB de pesos): aproximadamente 29–33 GB de VRAM. Requiere A100 40 GB, L40S, RTX 6000 Ada, o configuraciones de dos GPU de 24 GB con reparto de capas.
-- BF16 (50,11 GiB de pesos): aproximadamente 53–58 GB de VRAM. Requiere A100 80 GB, H100 80 GB, H200 o varias GPU. No cabe en una GPU de consumo actual.
-- El *KV cache* no se puede dimensionar con precisión porque no se publica el número de capas, cabezas ni la longitud de contexto soportada.
-- Opciones de despliegue: `llama-cli` y `llama-server` de llama.cpp (uso documentado en la model card), además de cualquier frontend compatible con GGUF, como llama-cpp-python, Ollama (importando el GGUF), LM Studio o text-generation-webui.
-- vLLM y TGI no son utilizables directamente con este repositorio, ya que solo publica GGUF y no safetensors.
-- Latencia y throughput: no disponible. Dependerá del hardware, de la cuantización y de la longitud de contexto.
+- VRAM estimada para Q8_0: aproximadamente 26,63 GiB de pesos; se recomienda al menos 32 GB de VRAM para dejar margen a la cache KV y al contexto.
+- VRAM estimada para Q4_K_M: aproximadamente 15,41 GiB de pesos; se recomienda al menos 20-24 GB de VRAM para inferencia comoda.
+- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 con contexto amplio; RTX 4090 (24 GB) para Q4_K_M; RTX 3090 (24 GB) tambien puede ejecutar Q4_K_M.
+- En GPUs de consumo de 16 GB no cabe Q8_0; Q4_K_M queda muy justo y puede requerir offload parcial a CPU.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`) en el commit `efe3626` o posterior; entornos compatibles con GGUF y endpoints.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos alternativos comparables de la misma categoría (ajuste de estilo de prosa sobre un modelo de ~27B). La única comparación que puede establecerse con los datos publicados es entre las propias variantes de cuantización y el checkpoint original:
+No se dispone de datos tecnicos suficientes sobre modelos comparables en la informacion proporcionada (contexto, benchmarks estandar, licencia de alternativas) para construir una comparativa rigurosa. La unica referencia de rendimiento publicada es el ranking de EQ-Bench 4, donde el modelo se situa por encima de GPT-5.5 y Claude Opus 4.7/4.8 segun la model card, pero sin cifras detalladas por categoria.
 
-| Modelo | Formato | Tamano | Contexto | EQ-Bench 4 | Licencia | Disponibilidad |
-|---|---|---:|---|---|---|---|
-| Qwen3.8-27B-antislop (bf16 original) | safetensors (presumible) | no disponible (~54 GB estimado) | no disponible | Elo 1320,1 (medido aquí) | apache-2.0 | Publicado en HF |
-| Qwen3.8-27B-antislop BF16 GGUF | GGUF | 50,11 GiB | no disponible | no medido en este fichero | apache-2.0 | Publicado en HF |
-| Qwen3.8-27B-antislop Q8_0 | GGUF | 26,63 GiB | no disponible | no medido en este fichero | apache-2.0 | Publicado en HF |
-| Qwen3.8-27B-antislop Q4_K_M | GGUF | 15,41 GiB | no disponible | no medido en este fichero | apache-2.0 | Publicado en HF |
-
-Comparativa con modelos externos (Qwen base, Llama, Mistral u otros ajustes de estilo): no disponible.
+| Modelo | Parametros | Contexto | EQ-Bench 4 | Licencia |
+|---|---|---|---|---|
+| Qwen3.8-27B-antislop (GGUF) | ~27B | no disponible | Elo 1320 (#4 de 29) | apache-2.0 |
+| GPT-5.5 | no disponible | no disponible | por debajo segun model card | propietaria |
+| Claude Opus 4.7/4.8 | no disponible | no disponible | por debajo segun model card | propietaria |
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación: la propia model card advierte que el modelo puede omitir o cambiar un dato. En tareas de reescritura recomienda conservar los hechos de origen y verificar el resultado antes de publicarlo.
-- La puntuación de referencia (Elo 1320,1) corresponde al checkpoint bf16. La cuantización Q4_K_M, en particular, fue calibrada con una *importance matrix* de solo 2 fragmentos y 256 tokens, lo que puede degradar la calidad del texto generado de forma más acusada que una imatrix convencional.
-- Cobertura de idiomas muy limitada: solo inglés y ruso. No hay datos de rendimiento en castellano ni en otras lenguas.
-- El *thinking* está desactivado en el uso previsto de prosa y reescritura. No debe esperarse razonamiento explícito ni capacidades de cadena de pensamiento.
-- Capacidades multimodales eliminadas: la torre de visión no está presente en estos ficheros, pese a existir en el modelo base.
-- Decodificación especulativa por MTP no disponible: la cabeza correspondiente se excluyó con `--no-mtp`, por lo que no se puede aprovechar esa aceleración.
-- Trazabilidad limitada: repositorio sin descargas ni *likes* en el momento de la consulta, sin resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) y sin documentación sobre el dataset de entrenamiento, por lo que no es posible evaluar sesgos conocidos ni la composición de los datos.
-- Licencia Apache 2.0, que permite uso comercial, pero no se aclara en este repositorio la licencia ni las condiciones del modelo base original del que deriva.
-- El formato de pesos es exclusivamente GGUF, lo que limita el despliegue a llama.cpp y sus derivados; no hay safetensors para vLLM, TGI o entrenamiento posterior.
-- Aviso de seguridad general: la model card indica que el contenido citado son datos del autor y no instrucciones a seguir, precaución relevante al integrar el modelo en pipelines automáticos.
+- Solo soporta ingles y ruso; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Es un modelo solo texto: no procesa imagenes, audio ni otros modalidades.
+- No se documenta soporte de tool calling ni de agentes, por lo que no es adecuado para pipelines que dependan de function calling.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; el ajuste de estilo no corrige la veracidad factual.
+- El foco en estilo "antislop" puede introducir sesgos estilisticos propios; no se documentan evaluaciones de sesgo social o de seguridad.
+- La longitud de contexto no esta publicada, lo que impide planificar tareas de contexto largo con garantias.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, conviene revisar las condiciones del modelo base Qwen3.8-27B y del modelo intermedio AlexWortega/Qwen3.8-27B-antislop antes de desplegar en produccion.
+- Las cuantizaciones son estaticas y generadas con un commit concreto de llama.cpp (`efe3626`); versiones muy distintas pueden dar resultados ligeramente diferentes. Verificar hashes con `weights_manifest.json`.
+- El ranking EQ-Bench 4 es una evaluacion de estilo y escritura, no una medida global de capacidad; no debe extrapolarse a tareas de codigo o matematicas.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-GGUF
-- Modelo base: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop
-- Manifiesto de pesos y hashes: `weights_manifest.json` (incluido en el repositorio)
-- Perfil del autor relacionado con el desarrollo: https://huggingface.co/AlexWortega
-- Commit de llama.cpp usado en la conversión: `efe3626b119ff81033e309c3ba07a770bef2c546`
-- Documentación de llama.cpp (ecosistema GGUF): https://github.com/ggml-org/llama.cpp
-- Metodología RL-XAR / *unslop* de Meta FAIR: no disponible en los resultados de búsqueda proporcionados
+- Repositorio GGUF: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-GGUF
+- Modelo base (ajustado): https://huggingface.co/AlexWortega/Qwen3.8-27B-antislop
+- Demo en Space: https://huggingface.co/spaces/AlexWortega/antislop-27b
+- Instrucciones de reproduccion: https://huggingface.co/AlexWortega/Qwen3.8-27B-antislop/blob/main/REPRODUCE.md
+- Paper original unslop / RL-XAR (Meta FAIR): https://facebookresearch.github.io/RAM/blogs/unslop/
+- Entorno de RL (dataset): https://huggingface.co/datasets/rawmodels/unslop-harbor
+- Sitio del autor de las cuantizaciones: https://www.rawmodels.ai

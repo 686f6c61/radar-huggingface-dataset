@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "atomicvox/microduck-sprint-2m-run-1117-2158",
+  "slug": "atomicvox-microduck-sprint-2m-run-1117-2158",
+  "author": "atomicvox",
+  "url": "https://huggingface.co/atomicvox/microduck-sprint-2m-run-1117-2158",
+  "created_at": "2026-11-19T01:12:47.000Z",
+  "updated_at": "2026-11-19T01:12:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643403,
+  "storage_human": "6 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

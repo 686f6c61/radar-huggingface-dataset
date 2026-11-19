@@ -2,90 +2,92 @@
 
 ## Resumen
 
-Qwen3-VL-2B-Instruct-mic es un artefacto de prueba (fixture) publicado por el usuario huggingface-mic. No se trata de un modelo entrenado ni utilizable en producción: es una version reducida artificialmente del modelo Qwen/Qwen3-VL-2B-Instruct, generada para validar contratos de integración con frameworks (principalmente Transformers). El propio autor lo etiqueta como `test-artifact` para excluirlo de las búsquedas de modelos candidatos.
+Qwen3-VL-2B-Instruct-mic es un artefacto de prueba (fixture) publicado por el usuario huggingface-mic, no un modelo utilizable. Se trata de una version reducida artificialmente del modelo real Qwen/Qwen3-VL-2B-Instruct, en la que se ha conservado la arquitectura Qwen3VLForConditionalGeneration pero se ha recortado la configuracion (dos capas ocultas en el modulo de texto) hasta los 11.177.792 parametros. Los pesos son aleatorios (semilla 17), por lo que el modelo no produce ninguna salida con sentido.
 
-El fixture conserva la arquitectura `Qwen3VLForConditionalGeneration` pero con una configuración drásticamente reducida: solo 2 capas ocultas en el componente de texto, lo que resulta en 11.177.792 parámetros totales (frente a los aproximadamente 2.000 millones del modelo base). Los pesos son aleatorios (semilla 17) y no han sido entrenados; únicamente pasaron una puerta de sensibilidad a la entrada que verifica que las perturbaciones en las entradas mueven los logits al menos 0,001.
+El proposito del repositorio es servir como contrato de integracion: incluye un manifiesto (integration.json), ejemplos de uso con Transformers, un directorio de expectativas del framework y los ficheros de procesador copiados byte a byte del checkpoint original (tokenizer, chat template, generation config, preprocessor y video preprocessor). Asi, un desarrollador puede validar que su pipeline de carga, preprocesado e inferencia con Qwen3-VL funciona sin descargar el modelo completo de 2B parametros.
 
-Su relevancia es exclusivamente técnica para el desarrollo de infraestructura: permite ejecutar inferencia visión-lenguaje y un paso de entrenamiento con un coste computacional mínimo, verificando que las expectativas de Transformers (nombres de tensores, procesadores, dtypes) se cumplen sin necesidad de descargar el checkpoint real. No debe confundirse con un modelo funcional.
+Es relevante unicamente en el contexto de testing de infraestructura de IA: CI/CD de librerias, verificacion de contratos de tokenizer/processor y pruebas de forward, loss y gradientes en float32, bfloat16 y float16. No debe confundirse con un modelo de vision-lenguaje funcional ni utilizarse en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3VLForConditionalGeneration (transformer multimodal visión-lenguaje, config reducida) |
-| Parametros totales | 11.177.792 |
+| Arquitectura | Qwen3VLForConditionalGeneration (vision-lenguaje, transformer; version reducida a 2 capas ocultas en el modulo de texto) |
+| Parametros totales | 11.177.792 (fixture); el modelo base Qwen3-VL-2B-Instruct tiene aproximadamente 2B |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (config reducida; el modelo base Qwen3-VL-2B-Instruct no se detalla en la información) |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; finito también en bfloat16 y float16) |
+| Longitud de contexto | no disponible (la configuracion del fixture esta recortada) |
+| Tipos de cuantizacion | no disponible; pesos guardados en float32 y verificados finitos en float32, bfloat16 y float16 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la arquitectura del modelo base Qwen3-VL-2B-Instruct (`Qwen3VLForConditionalGeneration`), un transformer multimodal que combina un codificador de visión con un decodificador de lenguaje. La reducción se aplica mediante la regla genérica de `sweep.py`, que disminuye el número de capas ocultas del componente de texto a 2. Los ficheros de procesador (`chat_template.json`, `generation_config.json`, `merges.txt`, `preprocessor_config.json`, `tokenizer.json`, `tokenizer_config.json`, `video_preprocessor_config.json`, `vocab.json`) se copian byte a byte desde el checkpoint original, de modo que el pipeline de tokenización y preprocesado es idéntico al real.
+El fixture replica la clase Qwen3VLForConditionalGeneration del modelo Qwen3-VL-2B-Instruct, que combina un codificador visual con un decoder de texto transformer. Para reducir el tamano se aplico la regla generica de sweep.py del proyecto transformers-mic, que deja el modulo de texto en 2 capas ocultas. Los nombres de tensores coinciden exactamente con los del checkpoint real, lo que permite probar codigo de carga sin cambios.
 
-No hubo entrenamiento. Los pesos se inicializan de forma aleatoria con semilla 17 y se validan mediante una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato debe desplazar los logits al menos 0,001 (la más débil, `pixel_values:halve`, produce 0,159). Los nombres de tensores coinciden exactamente con los del checkpoint real, y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en pérdida y gradientes. El identificador de fixture es `d0facf3ee949`.
+No hubo entrenamiento: los pesos son aleatorios con semilla 17. Para garantizar que el fixture es sensible a las entradas, se aplico una puerta de sensibilidad (input-sensitivity gate) que exige que cada perturbacion de las entradas del contrato mueva los logits al menos 0.001; la perturbacion mas debil (pixel_values:halve) produjo 0.159. Los ficheros de procesador (chat_template.json, generation_config.json, merges.txt, preprocessor_config.json, tokenizer.json, tokenizer_config.json, video_preprocessor_config.json, vocab.json) se copiaron byte a byte del modelo base. El build queda registrado en build.json con fuentes fijadas, resultados de la puerta y hashes de ficheros.
 
 ## Capacidades
 
-- Ejecución de inferencia visión-lenguaje con la misma interfaz de procesador que Qwen3-VL-2B-Instruct.
-- Ejecución de un paso de entrenamiento (forward, loss y backward) con gradientes finitos.
-- Validación de contratos de integración con Transformers: nombres de tensores, dtypes y ficheros de preprocesado.
-- Soporte de los mismos modos de entrada que el modelo base a nivel de procesador (texto, imagen y vídeo según `video_preprocessor_config.json`).
-- No dispone de capacidades cognitivas reales: al tener pesos aleatorios, no genera texto ni respuestas coherentes.
-- No se documenta soporte de tool calling, agentes ni razonamiento multi-paso utilizable.
+- No es un modelo funcional: los pesos aleatorios no generan texto, codigo ni descripciones de imagenes coherentes.
+- Ejecuta forward, calculo de loss y gradientes de forma finita en float32, bfloat16 y float16, lo que permite probar pipelines de entrenamiento de un paso.
+- Carga con Transformers mediante la clase Qwen3VLForConditionalGeneration y los ficheros de procesador del modelo real.
+- Reproduce el contrato de tokenizer, chat template, configuracion de generacion y preprocesado de imagen y video de Qwen3-VL-2B-Instruct.
+- Sirve como fixture para pruebas de integracion y regresion en frameworks (expectativas incluidas en integrations/transformers/expectations).
+- No soporta tool calling, agentes, razonamiento multilingue ni ninguna capacidad de inferencia real.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: verificar que la clase `Qwen3VLForConditionalGeneration` carga, ejecuta forward y calcula gradientes con la configuración esperada, sin descargar el checkpoint de 2B.
-- CI/CD de librerías de inferencia: ejecutar tests de humo de pipeline visión-lenguaje en minutos y con requisitos mínimos de memoria.
-- Validación de contratos de tokenizer y procesador: comprobar que los ficheros copiados byte a byte producen las mismas secuencias de tokens y tensores de píxeles que el modelo real.
-- Desarrollo de herramientas de "shrink" de modelos: servir como caso de referencia del proceso de reducción descrito en `sweep.py` y `build_fixtures.py`.
-- Pruebas de compatibilidad de dtypes: validar que un framework maneja correctamente float32, bfloat16 y float16 con el mismo grafo.
-- Regresión de nombres de tensores: detectar cambios de API en Transformers comparando los nombres de parámetros del fixture con los del checkpoint original.
-- Docencia y demos de arquitecturas multimodales: ilustrar la estructura de un modelo visión-lenguaje con un coste de ejecución despreciable.
+- Pruebas de CI en librerias de inferencia: cargar el fixture con Transformers y verificar que la API de Qwen3VLForConditionalGeneration no rompe entre versiones, sin descargar 2B parametros.
+- Validacion de pipelines de preprocesado de vision: comprobar que preprocessor_config.json y video_preprocessor_config.json producen tensores con las formas esperadas para imagenes y video.
+- Verificacion de contratos de tokenizer y chat template: ejecutar el chat_template.json original contra secuencias de prueba para detectar regresiones en el formateo de mensajes.
+- Test de un paso de entrenamiento: ejecutar forward, loss y backward en float32, bfloat16 y float16 para comprobar que el codigo de entrenamiento no produce NaN ni infinitos.
+- Desarrollo de herramientas de empaquetado y conversion de pesos: usar los nombres de tensores identicos al checkpoint real para validar scripts de conversion o sharding.
+- Pruebas de integracion en frameworks (por ejemplo, adaptadores de Transformers): consumir el directorio de expectativas como referencia de comportamiento esperado del modelo.
+- Validacion de infraestructura de descarga y cache: probar flujos de Hugging Face Hub con un repositorio de 0.0 GB antes de lanzar trabajos con el modelo completo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K, etc.) carecería de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K, benchmarks de vision) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (11,2 M de parámetros); en la práctica, unos pocos cientos de MB incluyendo activaciones y buffers del procesador.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; también funciona en CPU.
-- Cabe en cualquier GPU consumer (GTX 1050, RTX 3050, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (uso previsto según `integrations/transformers/usage.md`); no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles; al ser un modelo diminuto, la latencia estará dominada por el preprocesado de imagen y el overhead del framework.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (11,2M parametros), aunque el modelo no es funcional.
+- GPU recomendadas: cualquier GPU consumer o integrada con soporte de PyTorch; no requiere A100 ni H100.
+- Cabe en cualquier GPU consumer (RTX 4090, RTX 3060, GTX 1650) e incluso en CPU.
+- Opciones de despliegue: Transformers con PyTorch; no se ha validado vLLM, llama.cpp, Ollama ni TGI, y su uso no tiene sentido al no ser un modelo entrenado.
+- Latencia y throughput: no disponibles; al ser un fixture no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-2B-Instruct-mic | 11,2 M | no disponible | Fixture de test | no disponible | Hugging Face |
-| Qwen/Qwen3-VL-2B-Instruct | ~2.000 M (modelo base) | no disponible en la informacion | Modelo visión-lenguaje real | no disponible en la informacion | Hugging Face |
-| Otros fixtures `*-mic` de huggingface-mic | variable (reducidos) | no disponible | Fixtures de test | no disponible | Hugging Face |
+| Qwen3-VL-2B-Instruct-mic | 11,2M (fixture) | no disponible | Artefacto de prueba | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-2B-Instruct | aproximadamente 2B | no disponible | Modelo vision-lenguaje real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Pruebas de contrato e integracion | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas funcionales.
+La comparativa relevante es contra el modelo base: el fixture conserva la interfaz y los ficheros de procesador, pero no los pesos ni la capacidad de inferencia. Frente a otros modelos de 2B de vision-lenguaje, la diferencia es categorica: el fixture no compite en calidad ni rendimiento.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y la salida no tiene significado.
-- Etiquetado explícitamente como `test-artifact`; no debe incluirse en catálogos de modelos candidatos ni en evaluaciones de calidad.
-- La configuración reducida (2 capas de texto) altera profundamente el comportamiento respecto al modelo base; no sirve para medir capacidades del original.
-- Licencia no especificada: no hay garantías para uso comercial ni redistribución más allá de lo que permita el modelo base.
-- Idiomas no documentados; el tokenizer se hereda del base, pero no se garantiza ningún comportamiento lingüístico.
-- Riesgo de confusión: el nombre incluye "Qwen3-VL-2B-Instruct" pero el tamaño real es de 11,2 M de parámetros.
-- No se documentan sesgos, alucinaciones ni limitaciones de contexto porque no aplica a un artefacto de prueba.
+- Pesos aleatorios: las salidas no tienen ningun significado; no usar en produccion, demos ni evaluaciones.
+- Etiquetado como test-artifact para excluirlo de busquedas de modelos candidatos; el autor advierte explicitamente que no es un modelo utilizable.
+- Configuracion recortada (2 capas ocultas en el modulo de texto), por lo que no representa el comportamiento numerico del modelo real.
+- Licencia no disponible: no hay base clara para uso comercial; el modelo base Qwen3-VL-2B-Instruct tiene sus propias condiciones que deben consultarse por separado.
+- Idiomas no disponibles; no se puede evaluar cobertura multilingue.
+- Riesgo de confusion: el nombre puede llevar a descargarlo pensando que es una version ligera funcional de Qwen3-VL-2B-Instruct.
+- No se han publicado mediciones de latencia, throughput ni benchmarks.
+- La fecha de creacion indicada (2026-10-29) es posterior a la de esta ficha; conviene verificar la procedencia del repositorio antes de integrarlo en pipelines.
 
 ## Enlaces
 
-- [Hugging Face: huggingface-mic/Qwen3-VL-2B-Instruct-mic](https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic)
-- [Modelo base: Qwen/Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct)
-- [Explicación del proceso de shrink](https://huggingface-mic-mic-coverage.static.hf.space/shrink/Qwen3-VL-2B-Instruct-mic.html)
-- [Repositorio transformers-mic (sweep.py)](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
-- [Repositorio transformers-mic (build_fixtures.py)](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)
-- [Manifiesto de contrato (integration.json)](https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/blob/main/integration.json)
-- [Uso con Transformers](https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/blob/main/integrations/transformers/usage.md)
-- [Expectativas de Transformers](https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/tree/main/integrations/transformers/expectations)
-- [Procedencia del fixture (build.json)](https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/blob/main/build.json)
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic
+- Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
+- Contrato de integracion: https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic/blob/main/build.json
+- Explicacion del recorte: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Qwen3-VL-2B-Instruct-mic.html
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

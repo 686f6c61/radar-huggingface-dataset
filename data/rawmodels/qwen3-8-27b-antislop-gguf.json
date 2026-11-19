@@ -51,11 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AlexWortega (Wortega) - Hugging Face",
-      "url": "https://huggingface.co/AlexWortega",
-      "snippet": "rawmodels.ai's profile picture · Articles 2. Article. 17. Borealis — open data, code ... Antislop 27B.. Qwen3.8-27B tuned to stop writing like a language model."
-    }
-  ]
+  "sources": []
 }

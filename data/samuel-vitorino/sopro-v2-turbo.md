@@ -2,97 +2,109 @@
 
 ## Resumen
 
-Sopro V2 Turbo es un modelo de síntesis de voz (text-to-speech) con clonación de voz zero-shot, desarrollado por Samuel Vitorino y publicado bajo la organización Halo Research. Con 121 millones de parámetros, está diseñado para ejecutarse de forma eficiente en CPU de portátil, GPU e incluso en el navegador mediante ONNX, lo que lo convierte en una opción atractiva para aplicaciones de voz en el dispositivo sin depender de servicios en la nube.
+Sopro V2 Turbo es un modelo de síntesis de voz (text-to-speech) con clonación de voz zero-shot desarrollado por Samuel Vitorino bajo el paraguas del proyecto Sopro (Haloneuro). Se trata de un modelo de 121.574.193 parámetros que prioriza la eficiencia: está diseñado para ejecutarse en CPU de portátil o incluso en el navegador mediante ONNX Runtime, manteniendo una inteligibilidad que el autor sitúa a nivel de sistemas mucho más grandes. El nombre proviene del portugués "sopro" (soplo, aliento).
 
-El modelo soporta cuatro idiomas (inglés, portugués europeo, francés y alemán) y ofrece dos modos de generación: uno offline de alta calidad y otro streaming con un tiempo hasta el primer audio de aproximadamente 300 ms en CPU. Su arquitectura ligera, basada en convoluciones dilatadas y atención cruzada, se aleja de los transformadores convencionales y permite un factor de tiempo real (RTF) de 0,24 en modo offline y 0,21 en streaming sobre un Apple M3, o 0,07 en una GPU H100.
+El modelo cubre cuatro idiomas (inglés, portugués europeo, francés y alemán), soporta streaming con un tiempo hasta el primer audio de aproximadamente 300 ms en CPU de portátil, y ofrece clonación de voz a partir de 5-20 segundos de audio de referencia. Con un RTF de 0,24 en modo offline y 0,21 en streaming sobre una CPU M3 (0,07 RTF en H100), está claramente orientado a despliegues on-device y aplicaciones interactivas de baja latencia.
 
-La relevancia de Sopro V2 Turbo radica en su combinación de tamaño reducido, licencia Apache 2.0 y capacidades de clonación de voz sin entrenamiento previo, lo que facilita su integración en proyectos de código abierto, asistentes locales y herramientas de accesibilidad. El modelo se distribuye en formato safetensors y también existe una versión ONNX para el navegador.
+Su relevancia actual radica en la combinación de licencia Apache 2.0, tamaño reducido (2,1 GB de repositorio, pesos safetensors y GGUF), soporte de streaming y ejecución en navegador, lo que lo sitúa en un nicho poco poblado: TTS clonable, multilingüe y realmente desplegable en entornos sin GPU. Requiere la librería `sopro>=2.2.0` o `@soprotts/onnx-web>=0.3.0`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Convoluciones dilatadas y atención cruzada ligera (según repo de GitHub; no se detalla en la model card) |
+| Arquitectura | No disponible (modelo TTS con atención por chunks y vocoder causal en la ruta de streaming; detalles completos no publicados) |
 | Parametros totales | 121.574.193 |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (modelo TTS) |
-| Tipos de cuantizacion | int8 (CPU), cuantización ONNX para navegador |
-| Idiomas soportados | en, pt, fr, de |
+| Longitud de contexto | No disponible (el texto largo se divide en segmentos, longitud total ilimitada) |
+| Tipos de cuantizacion | int8 (pesos AR en CPU), cuantización para navegador/móvil vía ONNX; GGUF disponible |
+| Idiomas soportados | Inglés (en), portugués europeo (pt), francés (fr), alemán (de) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, ONNX |
+| Formato de pesos | safetensors, GGUF, ONNX (para demo web) |
 
 ## Arquitectura y entrenamiento
 
-Sopro V2 Turbo emplea una arquitectura no basada en transformadores, compuesta por capas de convoluciones dilatadas (estilo WaveNet) y mecanismos de atención cruzada ligeros, según se indica en el repositorio oficial. Esta elección reduce el coste computacional y facilita la inferencia en dispositivos con recursos limitados. El modelo incorpora un vocoder causal para el modo streaming y utiliza atención por fragmentos (chunked attention) para procesar audio de forma incremental.
+No se han publicado detalles completos de la arquitectura en la información disponible. La model card indica que la ruta de streaming emplea atención por chunks y un vocoder causal, lo que implica un diseño autorregresivo con solucionador acústico configurable (por defecto 2 pasos). El modelo se apoya en componentes reconocidos del ecosistema TTS: cita como referencias CSM (Sesame), F5-TTS, CosyVoice, Vocos (vocoder) y Whisper. La inferencia se distribuye mediante la librería propia `sopro`, con soporte de CUDA, CPU y MPS.
 
-El entrenamiento se realizó sobre una combinación de conjuntos de datos públicos: Emilia YODAS, LibriTTS-R y FalAR, este último específico para portugués europeo. No se menciona el uso de técnicas de RLHF o DPO, al tratarse de una tarea de síntesis de voz. El modelo admite clonación de voz zero-shot a partir de 5 a 20 segundos de audio de referencia, y permite precalcular la referencia para reducir la latencia en el modo streaming.
+Los datos de entrenamiento declarados son Emilia YODAS, LibriTTS-R y FalAR (dataset de portugués de INESC-ID). No se especifica el número de tokens ni la composición exacta del corpus, ni si hubo etapas de RLHF o DPO. El autor indica explícitamente que no planea publicar el código de entrenamiento a corto plazo debido a su complejidad.
 
 ## Capacidades
 
-- Generación de voz natural con clonación zero-shot a partir de una muestra de audio de 5 a 20 segundos.
-- Modo streaming con baja latencia (~300 ms de tiempo hasta el primer audio en CPU de portátil).
-- Soporte multilingüe para inglés, portugués europeo, francés y alemán.
-- Ejecución en CPU, GPU (CUDA/MPS) y navegador mediante ONNX.
-- Parámetros de control de generación: temperatura, top-p, top-k, pasos del solver acústico y límite de duración por segmento.
-- Preprocesado de referencia para reducir el tiempo de respuesta en streaming.
-- No incluye capacidades de tool calling, agentes ni razonamiento, al ser exclusivamente un modelo de síntesis de voz.
+- Síntesis de voz multilingüe en inglés, portugués europeo, francés y alemán, con parámetro `--lang` opcional para desambiguar pronunciación.
+- Clonación de voz zero-shot a partir de 5-20 segundos de audio de referencia.
+- Streaming de audio con aproximadamente 300 ms hasta el primer chunk en CPU de portátil.
+- Precomputación de la referencia (`prepare_reference`) para reducir el tiempo hasta el primer audio.
+- Segmentación automática de textos largos: la longitud total de salida es ilimitada, con tope configurable por segmento (`--max-seconds`).
+- Control de generación mediante temperatura, top-p y top-k, y número de pasos del solucionador acústico (`--steps`).
+- Ejecución en navegador mediante ONNX Runtime, sin servidor.
+- Ejecución en CPU con cuantización int8 de los pesos autorregresivos.
+- No se documenta soporte de tool calling, agentes, visión ni audio de entrada más allá de la referencia de voz.
 
 ## Casos de uso
 
-- Asistentes de voz locales: Sopro V2 Turbo puede integrarse en asistentes personales que requieran privacidad y baja latencia, ejecutándose directamente en el dispositivo sin conexión a internet. Su modo streaming permite respuestas casi inmediatas.
-- Audiolibros y narración automatizada: gracias a su clonación de voz, permite generar narraciones con una voz específica a partir de una muestra corta, útil para productores de contenido que desean mantener una voz consistente sin grabar largas sesiones.
-- Accesibilidad y lectores de pantalla: al ser ligero y ejecutable en CPU, puede incorporarse en aplicaciones de lectura de texto para personas con discapacidad visual, funcionando en hardware modesto.
-- Doblaje y localización de vídeo: el soporte multilingüe (en, pt, fr, de) facilita la generación de pistas de voz en varios idiomas a partir de una misma referencia, agilizando flujos de doblaje para vídeos y presentaciones.
-- Atención al cliente con voz clonada: empresas pueden crear agentes telefónicos o chatbots de voz que utilicen una voz corporativa clonada, manteniendo coherencia de marca y reduciendo costes de grabación.
-- Prototipado rápido de productos de voz: desarrolladores pueden generar muestras de voz para demos o pruebas de concepto sin necesidad de estudios de grabación, gracias a la API Python y la CLI incluida.
+- Lectura por voz en aplicaciones de accesibilidad: el modelo cabe en CPU y puede sintetizar texto arbitrariamente largo por segmentación, lo que permite integrarlo en lectores de pantalla o asistentes de lectura sin depender de la nube.
+- Asistentes de voz interactivos de baja latencia: con ~300 ms hasta el primer audio en streaming, es adecuado para diálogos por turnos donde la respuesta hablada debe empezar antes de completar la frase.
+- Clonación de voz para doblaje y localización: con 5-20 segundos de referencia se puede replicar una voz concreta en los cuatro idiomas soportados, útil para prototipos de doblaje o audiolibros personalizados.
+- Demos web sin backend: la ruta ONNX permite ofrecer síntesis de voz directamente en el navegador, sin coste de servidor ni envío de texto a terceros, relevante para aplicaciones con requisitos de privacidad.
+- Generación de audio para prototipado de videojuegos y aplicaciones: el RTF de 0,21-0,24 en CPU permite generar locuciones en tiempo casi real en equipos sin GPU durante el desarrollo.
+- Síntesis on-device en dispositivos con recursos limitados: la cuantización int8 y el tamaño de 120M de parámetros permiten desplegar TTS en portátiles, Raspberry Pi o móviles (con la advertencia de posibles caídas en dispositivos de poca memoria).
+- Preproducción de contenido multilingüe: un mismo pipeline puede generar locuciones en inglés, portugués, francés y alemán con la misma voz de referencia, simplificando la creación de versiones localizadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de inteligibilidad (como WER o MOS) en la información disponible. Sin embargo, la model card reporta los siguientes datos de rendimiento:
+No se han publicado resultados de benchmarks estándar (MOS, WER, MMLU, etc.) en la información disponible. Los únicos datos de rendimiento declarados son métricas de velocidad:
 
 | Metrica | Valor |
 |---|---|
 | RTF offline (CPU M3) | 0,24 |
 | RTF streaming (CPU M3) | 0,21 |
-| RTF (GPU H100) | 0,07 |
-| Tiempo hasta primer audio (streaming, CPU portátil) | ~300 ms |
+| RTF en H100 | 0,07 |
+| Time-to-first-audio (streaming, CPU portatil) | ~300 ms |
 
-Estos valores indican que el modelo es adecuado para aplicaciones en tiempo real en hardware de consumo, aunque no se dispone de comparaciones numéricas con otros sistemas.
+El autor afirma alcanzar "nivel SOTA de inteligibilidad" frente a sistemas mucho mayores, pero no se aportan cifras concretas en la información disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: funciona en portátiles convencionales; se recomienda al menos 4 GB de RAM y soporte para int8 para optimizar el rendimiento.
-- GPU: compatible con CUDA y MPS; una GPU con 4 GB de VRAM es suficiente para el modelo completo (121M parámetros). En una H100 se alcanza un RTF de 0,07.
-- Navegador: la versión ONNX cuantizada puede ejecutarse en navegadores modernos, aunque en móviles con poca memoria puede haber problemas.
-- Opciones de despliegue: CLI (`soprotts`), API Python (`SoproTTS`), servidor local con Gradio (`soprotts serve`), y demo en navegador vía ONNX.
-- Latencia: el modo streaming ofrece ~300 ms de tiempo hasta el primer audio en CPU; el modo offline tiene mayor latencia pero mejor calidad.
+- VRAM estimada: no disponible de forma explícita; con 121,6M de parámetros, los pesos en fp32 ocupan aproximadamente 0,5 GB y en int8 alrededor de 0,12 GB, por lo que la huella es mínima.
+- GPU recomendadas: H100 para máximo throughput (0,07 RTF); cualquier GPU CUDA moderna es suficiente. El modelo selecciona CUDA o CPU automáticamente.
+- Consumer GPU: cabe holgadamente en cualquier GPU de consumo; también funciona en CPU de portátil (M3 con 0,21-0,24 RTF) y en navegador.
+- Opciones de despliegue: CLI `soprotts`, servidor local `soprotts serve` (puerto 7860), API Python (`SoproTTS`), ONNX Runtime para web (`@soprotts/onnx-web`). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ~300 ms hasta el primer audio en streaming en CPU de portátil; RTF 0,07 en H100. En macOS el dispositivo por defecto es CPU; MPS debe activarse explícitamente con `--device mps`.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos con otros modelos en la información proporcionada. Sopro V2 Turbo se inspira en sistemas como CSM, F5-TTS, CosyVoice y Vocos, pero no se incluyen métricas de comparación. A continuación se indican las diferencias cualitativas con algunos de ellos:
+No se dispone de datos de benchmarks comparativos en la información proporcionada. A continuación se comparan características declaradas frente a alternativas del mismo nicho, marcando como no disponible lo que no consta:
 
-| Modelo | Parametros | Idiomas | Licencia | Notas |
-|---|---|---|---|---|
-| Sopro V2 Turbo | 121M | en, pt, fr, de | Apache 2.0 | Ligero, streaming, on-device |
-| F5-TTS | No disponible | No disponible | No disponible | Modelo TTS basado en flujo, requiere más recursos |
-| CosyVoice | No disponible | No disponible | No disponible | TTS con clonación de voz, mayor tamaño |
-| CSM | No disponible | No disponible | No disponible | Modelo conversacional, no enfocado a TTS puro |
+| Modelo | Parametros | Idiomas | Clonacion zero-shot | Streaming | Licencia | Ejecucion en CPU/navegador |
+|---|---|---|---|---|---|---|
+| Sopro V2 Turbo | 121,6M | en, pt, fr, de | Si (5-20 s) | Si (~300 ms) | Apache 2.0 | Si |
+| F5-TTS | No disponible | No disponible | Si | No disponible | No disponible | No disponible |
+| CosyVoice | No disponible | No disponible | Si | No disponible | No disponible | No disponible |
+| CSM (Sesame) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone de datos cuantitativos para establecer una comparativa rigurosa.
+Los tres modelos citados aparecen como referencias técnicas en la model card de Sopro, pero no se aportan sus especificaciones en la información disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo no incluye watermarking de audio; al ser de código abierto, cualquier marca de agua sería fácilmente eliminable. El autor advierte explícitamente contra el uso para suplantar personas.
-- El frontend de texto es minimalista: abreviaturas, números y símbolos pueden pronunciarse incorrectamente. Se recomienda escribir el texto expandido (por ejemplo, "one plus two" en lugar de "1 + 2").
-- El texto mixto entre idiomas (por ejemplo, una palabra en inglés dentro de una frase en portugués) puede provocar errores de pronunciación.
-- El modo streaming no es bit-exacto con el modo offline; para máxima calidad se recomienda usar el modo offline.
-- No se planea liberar el código de entrenamiento en el futuro cercano, lo que limita la reproducibilidad.
-- La licencia Apache 2.0 permite uso comercial, pero el autor solicita un uso ético y responsable.
+- Sin watermarking: el autor declara explícitamente que no se ha añadido marca de agua porque sería trivial de eliminar en un pipeline abierto, lo que supone un riesgo de suplantación de identidad y exige uso responsable.
+- Frontend de texto deliberadamente minimalista: abreviaturas, números y símbolos pueden pronunciarse mal; se recomienda escribir los números como palabras ("one plus two" en lugar de "1 + 2") o anteponer un normalizador específico del idioma.
+- Texto mezclado de idiomas: palabras de un idioma dentro de una frase en otro (por ejemplo, un nombre de producto en inglés en una frase en portugués) pueden pronunciarse incorrectamente.
+- La ruta de streaming (atención por chunks y vocoder causal) no es bit-exacta respecto a la ruta offline; para máxima calidad debe preferirse la inferencia offline.
+- El código de entrenamiento no se publicará a corto plazo, lo que limita la reproducibilidad y el ajuste fino por parte de la comunidad.
+- En la demo de navegador, en móvil el modelo se cuantiza y la calidad puede ser algo inferior; dispositivos con poca memoria pueden fallar.
+- Licencia Apache 2.0: permite uso comercial, pero no exime de las obligaciones legales sobre derechos de voz e imagen de terceros al clonar voces.
+- No se documentan sesgos específicos por idioma o acento, ni evaluaciones de robustez frente a entradas adversarias.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/samuel-vitorino/sopro-v2-turbo
-- Repositorio en GitHub: https://github.com/samuel-vitorino/sopro
-- Blog técnico de Sopro V2: https://research.haloneuro.ai/posts/sopro-v2
-- Demo en navegador (ONNX): https://samuel-vitorino.github.io/sopro/
-- Versión ONNX del modelo: https://huggingface.co/samuel-vitorino/sopro-v2-turbo-onnx
+- Blog del lanzamiento: https://research.haloneuro.ai/posts/sopro-v2
+- Repositorio GitHub: https://github.com/samuel-vitorino/sopro
+- Demo en navegador: https://samuel-vitorino.github.io/sopro/
+- Dataset Emilia YODAS: https://huggingface.co/datasets/amphion/Emilia-Dataset
+- Dataset LibriTTS-R: https://huggingface.co/datasets/mythicinfinity/libritts_r
+- Dataset FalAR: https://huggingface.co/datasets/inesc-id/FalAR
+- CSM (Sesame): https://github.com/SesameAILabs/csm
+- F5-TTS: https://github.com/SWivid/F5-TTS
+- CosyVoice: https://github.com/FunAudioLLM/CosyVoice
+- Vocos: https://github.com/gemelo-ai/vocos
+- Whisper: https://github.com/openai/whisper

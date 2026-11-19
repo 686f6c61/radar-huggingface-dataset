@@ -2,85 +2,89 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 · exlr8 es una redistribucion del modelo oficial DeepSeek-V4.1-Flash-1017 (deepseek-ai) en el formato de almacenamiento exlr8 v2, publicada por kindlingai. No es un modelo nuevo ni un fine-tune de capacidades: los pesos son byte a byte los del modelo base, reorganizados en un layout orientado a inferencia con tensor parallelism y descarga selectiva por rangos HTTP. La unica modificacion real de pesos afecta a las capas 0-7, cuyos expertos enrutados y compartidos se recodifican con un trellis de 4 bits (codebook pmcgx) en lugar de los codigos MXFP4/FP8 oficiales.
+DeepSeek-V4.1-Flash-1017 · exlr8 es una redistribución en formato exlr8 v2 de los pesos oficiales de DeepSeek-V4.1-Flash-1017, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) desarrollado por DeepSeek. La publicación corre a cargo de kindlingai, que empaqueta los pesos oficiales byte a byte y añade codificaciones trellis de 4, 3 y 2 bits por peso para las proyecciones de expertos, de modo que un único repositorio sirve tanto los pesos originales en MXFP4/FP8 como variantes comprimidas seleccionables mediante manifiestos (`native`, `k4`, `k3`).
 
-El modelo es un transformer con arquitectura MoE (mezcla de expertos), segun indican las etiquetas y el propio layout (expertos enrutados, experto compartido, capas MTP). El repositorio ocupa 565,5 GB, de los cuales 510 GB corresponden a los pesos oficiales y 54,5 GB a los ficheros k4 adicionales de las capas 0-7. La distribucion incorpora slices de indexado para TP de 1 a 8, lo que permite a cada maquina descargar solo su particion.
+El objetivo del artefacto es facilitar el despliegue del modelo en clústeres pequeños: el manifiesto `k3` ocupa 425 GB de pesos (222 GB si las tablas Engram se leen de disco) y está dimensionado para dos cajas GB10, mientras que `k4` ocupa 506 GB y `native` carga los pesos oficiales sin recompresión. El repositorio completo pesa 811 GB y el tamaño reportado por Hugging Face es de 839,7 GB.
 
-Su relevancia es practica: facilita desplegar un modelo de gran tamano en clusters multi-GPU con un formato que evita duplicar descargas y permite elegir entre los pesos oficiales (`native`) o la version comprimida de las primeras capas (`pmcgx-k4`). La licencia es MIT, igual que la del modelo fuente. No se dispone de datos publicados sobre parametros totales, longitud de contexto ni idiomas soportados.
+La relevancia actual reside en la compresión extrema con calidad controlada: las codificaciones trellis de 3 y 4 bits permiten reducir el espacio de los expertos enrutados manteniendo las matrices densas, el router, la torre de visión y las cabeceras en FP8 o BF16. El soporte de motor para las capas trellis está en desarrollo en el repositorio kindlingai/gr8, por lo que la inferencia con los manifiestos comprimidos todavía no es de producción general.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos) con etapas MTP; layout exlr8 v2 |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (MoE; numero de expertos no indicado) |
+| Arquitectura | Transformer MoE con capas MTP (multi-token prediction); 40 capas principales + 3 etapas MTP (40-42) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 (expertos enrutados), FP8 E4M3 (experto compartido), BF16/FP8 (matrices densas), trellis 4 bits pmcgx (capas 0-7) |
+| Tipos de cuantización | MXFP4 (expertos enrutados), FP8 E4M3 con escala E8M0 por bloque 32×32 (experto compartido), trellis 4 bits (K4, pmcgx), trellis 3 bits (K3, pmcgx/mul1), trellis 2 bits (K2, pmcgx) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors con layout exlr8 v2 (stores `mxfp4`, `fp8b32`, `k4`; manifiestos JSON; slices TP 1-8) |
+| Formato de pesos | safetensors con layout exlr8 v2 (índices por capa, slices TP 1-8, manifiestos JSON) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con mezcla de expertos: 40 capas principales (`layers.0` a `layers.39`) mas 3 etapas MTP (`mtp.0` a `mtp.2`). Cada capa contiene expertos enrutados almacenados en MXFP4 (FP4 E2M1 con una escala E8M0 por cada 32 entradas) y un experto compartido en FP8 E4M3 con escala E8M0 por bloque de 32x32. Ademas hay matrices densas (atencion, router, engram y tensores mHC), tablas engram en las capas 1 y 14, y una torre de vision con aligner, lo que indica capacidades multimodales.
+El modelo base es un transformer de mezcla de expertos con 40 capas principales y tres etapas de predicción multi-token (MTP) numeradas 40 a 42. Cada capa principal contiene expertos enrutados (384 expertos, o 128 en las capas MTP) más un experto compartido, además de tensores de atención, router, Engram y mHC. La torre de visión y el alineador se distribuyen en `dense/exlr8-extra-vision.safetensors`, y las tablas Engram de las capas 1 y 14 se dividen en ficheros independientes para permitir su lectura desde disco.
 
-La innovacion de esta publicacion no esta en el entrenamiento (no se aportan datos de tokens, composicion del dataset ni fases de RLHF/DPO) sino en el formato: exlr8 divide cada proyeccion de experto en unidades de 128 canales intermedios y asigna a cada unidad un rango propietario segun la formula `(18·e + u + L) mod N`, de modo que en TP=N cada maquina descarga solo su parte mediante peticiones HTTP por rangos. Las capas 0-7 recodifican sus expertos con un trellis de 4 bits (327.680 bytes por unidad frente a 348.160 en MXFP4), usando un trellis por pares donde dos pesos comparten un estado de 20 bits y cada uno es la suma de dos mitades fp16 redondeadas a FP8 E4M3, con rotacion Hadamard 128x128 y escalas por canal y por bloque. El soporte de estas capas en el motor gr8 esta en desarrollo y el loader de referencia en PyTorch aun no decodifica el codebook pmcgx.
+El empaquetado exlr8 divide cada proyección de experto en unidades de 128 canales intermedios y asigna a cada unidad un propietario fijo para cada tamaño de tensor-parallel, de forma que un nodo descarga solo su parte mediante peticiones HTTP range. El propietario de la unidad u del experto e en la capa L con TP = N es el rango `(18·e + u + L) mod N`. Las slices existen para TP de 1 a 8 en todos los almacenes (`mxfp4`, `fp8b32`, `k2`, `k3`, `k4`). Las codificaciones trellis aplican una rotación Hadamard de 128×128 en ambos lados, signos por capa y escalas por canal y por bloque, todo almacenado en el fichero de índice de la capa. El códec pmcgx es un trellis de pares: dos pesos comparten un estado de 20 bits y cada uno se obtiene como suma de dos mitades fp16 de los productos del estado con los dos multiplicadores, redondeada a FP8 E4M3. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni sobre si se aplicaron RLHF o DPO en el modelo original.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: heredadas del modelo base DeepSeek-V4.1-Flash-1017, sin cambios funcionales en esta redistribucion.
-- Procesamiento de vision: el repositorio incluye `exlr8-extra-vision.safetensors` con torre de vision y aligner.
-- Etapas MTP (multi-token prediction): presentes en las capas 40-42, orientadas a decodificacion especulativa o generacion multi-token.
-- Memoria engram: tablas engram en las capas 1 y 14, mecanismo asociativo del modelo base.
-- Tool calling y comportamiento de agente: no confirmado en la informacion disponible; depende del modelo fuente.
-- Multilingue: no disponible.
-- Modo thinking: no disponible.
+- Generación de texto y razonamiento de propósito general, heredadas del modelo base DeepSeek-V4.1-Flash-1017.
+- Procesamiento de visión: el repositorio incluye torre de visión y alineador en `dense/exlr8-extra-vision.safetensors`.
+- Predicción multi-token mediante las tres etapas MTP (capas 40-42), orientadas a decodificación especulativa.
+- Soporte de expertos enrutados y experto compartido, con enrutamiento por capa.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue multi-GPU en cluster: el layout con slices `index-slices/tpN/` permite que cada nodo descargue unicamente su particion (TP de 1 a 8), reduciendo el trafico y el almacenamiento por maquina frente a descargar los 565 GB completos.
-- Servicio de inferencia a gran escala: al conservar los codigos MXFP4 y FP8 oficiales, un motor compatible con FP4/FP8 puede servir el modelo sin conversion adicional, usando el manifiesto `native`.
-- Optimizacion de memoria en las primeras capas: el manifiesto `pmcgx-k4` reduce el peso de los expertos de las capas 0-7 un 5,9 % por unidad (327.680 frente a 348.160 bytes), util cuando el presupuesto de VRAM o de ancho de banda es ajustado.
-- Investigacion en formatos de cuantizacion: sirve como caso de estudio reproducible de codificacion trellis de 4 bits con codebook compartido, comparando fidelidad frente a MXFP4 en las mismas capas.
-- Pipelines con vision: la inclusion de la torre de vision permite tareas de comprension de imagen y texto en el mismo despliegue.
-- Evaluacion y benchmarking del modelo base: al ser pesos identicos byte a byte (salvo capas 0-7 en `k4`), es una via fiable para reproducir resultados de DeepSeek-V4.1-Flash-1017 en entornos con el formato exlr8.
-- Archivado y distribucion eficiente: los ficheros `hashes/<path>.sha256` y los checksums por unidad permiten verificar integridad en espejos y CDN.
+- Despliegue en clústeres de dos nodos GB10: el manifiesto `k3` está dimensionado explícitamente para dos cajas GB10 con 425 GB de pesos, o 222 GB si las tablas Engram se leen desde disco, lo que permite servir el modelo en hardware de gama workstation sin GPUs de centro de datos.
+- Inferencia con tensor-parallel de 1 a 8: las slices `index-slices/tpN/` permiten que cada rango descargue únicamente su parte de los expertos mediante HTTP range requests, adecuado para despliegues distribuidos con ancho de banda limitado.
+- Evaluación de cuantización extrema: los manifiestos `k2`, `k3` y `k4` permiten comparar la calidad de codificaciones trellis de 2, 3 y 4 bits frente a los pesos oficiales MXFP4/FP8 en la misma descarga.
+- Investigación sobre códecs trellis: el repositorio documenta los códecs pmcgx y mul1 con sus hashes (`pmcgx V2 L20 0xCBAC1FED/0xBCA14C51`, `mul1 0x83DCD12D`), lo que facilita reproducir y auditar el proceso de codificación.
+- Flujos con visión: la inclusión de la torre de visión y el alineador permite tareas multimodal de imagen a texto, siempre que el motor de inferencia soporte dichos tensores.
+- Decodificación especulativa con MTP: las etapas 40-42 mantienen pesos oficiales MXFP4 y FP8 en el manifiesto `k3`, por lo que pueden usarse como cabezas de predicción anticipada en pipelines de generación acelerada.
+- Archivado y distribución de pesos: al conservar todos los encodes y los pesos oficiales en un único repositorio, una sola descarga cubre todos los manifiestos y evita descargas redundantes en equipos con distintas capacidades de memoria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision; el repositorio completo son 565,5 GB en disco y el manifiesto `pmcgx-k4` requiere leer 507 GB. La inferencia necesita repartir los pesos entre varias GPU.
-- GPU recomendadas: no especificadas por el autor; por el volumen de pesos, el despliegue realista exige nodos multi-GPU (A100/H100/H200) con tensor parallelism de 1 a 8 segun los slices publicados.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en configuraciones consumer tipicas.
-- Opciones de despliegue: loader de referencia en PyTorch de kindlingai/exlr8 (solo stores nativos, sin decodificacion pmcgx); motor kindlingai/gr8 con soporte de capas trellis en desarrollo. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: `native` carga los pesos oficiales (tamaño no desglosado en la información); `k4` ocupa 506 GB; `k3` ocupa 425 GB (222 GB con tablas Engram en disco); el subconjunto `k2` ocupa 14 GB y el repositorio completo 811 GB.
+- GPU recomendadas: no disponible de forma explícita; el manifiesto `k3` está dimensionado para dos cajas GB10.
+- Cabe en GPU de consumo: no disponible en la información proporcionada.
+- Opciones de despliegue: el soporte de motor para las capas trellis está en desarrollo en kindlingai/gr8; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| kindlingai/deepseek-v4.1-flash-exlr8 | no disponible | no disponible | exlr8 v2 con k4 en capas 0-7 | MIT | Esta ficha; anade 54,5 GB de ficheros k4 |
-| kindlingai/deepseek-v4.1-flash-exlr8-native | no disponible | no disponible | exlr8 v2 solo stores oficiales | MIT | Mismos pesos sin recodificacion trellis |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | safetensors originales | MIT | Modelo fuente oficial |
+| kindlingai/deepseek-v4.1-flash-exlr8 | no disponible | no disponible | MIT | safetensors exlr8 v2 | Redistribución comprimida con trellis 2/3/4 bits |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | no disponible | no disponible | Pesos oficiales de origen |
+| kindlingai/deepseek-v4.1-flash-exlr8-native | no disponible | no disponible | MIT | safetensors exlr8 v2 | Pesos oficiales byte a byte en layout exlr8, sin trellis |
+
+No se dispone de datos de rendimiento ni de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El soporte del codebook pmcgx en el motor gr8 esta en desarrollo y el loader de referencia no lo decodifica; las capas 0-7 en formato `k4` no son utilizables hoy con las herramientas publicadas.
-- La recodificacion trellis de 4 bits en capas 0-7 es con perdida respecto a los codigos oficiales; no se han publicado metricas de degradacion.
-- No hay informacion sobre sesgos, tasas de alucinacion ni limitaciones de contexto o idioma; deben consultarse en la model card del modelo fuente.
-- El modelo base es un MoE de gran tamano: el coste de almacenamiento (565 GB) y de inferencia multi-GPU es alto.
-- La licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo fuente y de los datos de entrenamiento originales.
-- Los hashes y checksums permiten verificar integridad, pero la ausencia de benchmarks propios impide validar el rendimiento real de esta distribucion frente al original.
+- El soporte de motor para las capas trellis está en progreso en kindlingai/gr8; los manifiestos `k2`, `k3` y `k4` no son todavía utilizables en motores de inferencia estándar.
+- Ningún manifiesto carga actualmente los ficheros de 2 bits de las capas 8-9 y 38-39, pese a estar incluidos en el repositorio.
+- Las capas 8-9 fueron codificadas por voluntarios en quant.kindlingai.dev, lo que introduce un riesgo de inconsistencia de calidad frente a las capas codificadas por el autor.
+- El manifiesto `k4` se denominaba `pmcgx-k4` antes del 2026-11-09; scripts y configuraciones antiguas pueden referenciar el nombre obsoleto.
+- La compresión trellis de 2 y 3 bits puede degradar la calidad de los expertos enrutados; no se han publicado evaluaciones que cuantifiquen esa pérdida.
+- No se dispone de información sobre sesgos, riesgo de alucinación, cobertura idiomática ni restricciones de uso comercial más allá de la licencia MIT.
+- El tamaño del repositorio (811 GB) y las descargas por HTTP range exigen infraestructura de almacenamiento y red considerable.
+- La licencia MIT se aplica al empaquetado; conviene verificar los términos de los pesos oficiales de DeepSeek antes de un uso comercial.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8
-- Modelo base en este formato: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8-native
-- Modelo oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Especificacion del formato exlr8 v2: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md
-- Loader de referencia: https://github.com/kindlingai/exlr8
-- Motor gr8: https://github.com/kindlingai/gr8
+- Modelo en Hugging Face: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8
+- Modelo base en Hugging Face: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8-native
+- Pesos oficiales: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Especificación del formato exlr8 v2: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md
+- Motor de inferencia gr8: https://github.com/kindlingai/gr8
+- Plataforma de cuantización colaborativa: https://quant.kindlingai.dev

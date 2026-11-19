@@ -2,84 +2,88 @@
 
 ## Resumen
 
-El modelo `mlx-community/Qwen3.8-27B-4bit` es una conversión al formato MLX (Apple Silicon) del modelo Qwen3.8-27B, desarrollado por la comunidad MLX a partir de los pesos publicados por Alibaba Qwen. Se trata de un modelo de visión-lenguaje (image-text-to-text) de arquitectura densa, con 27.000 millones de parámetros en su versión original, cuantizado a 4 bits para reducir su huella de memoria. Está diseñado para tareas multimodales que combinan comprensión de imágenes y vídeo con generación de texto, e incorpora capacidades de razonamiento y control flexible del modo de pensamiento.
+Qwen3.8-27B-4bit es una cuantizacion en 4 bits del modelo multimodal Qwen/Qwen3.8-27B, publicada por la comunidad mlx-community en formato MLX para su ejecucion eficiente sobre hardware Apple Silicon. El modelo original lo desarrolla el equipo Qwen de Alibaba y pertenece a la familia Qwen3.5, segun la etiqueta `qwen3_5` del repositorio. Con 27.356.728.560 parametros totales y una pipeline declarada `image-text-to-text`, cubre tanto generacion de texto como comprension de imagenes en un unico checkpoint conversacional.
 
-La relevancia de este modelo radica en que ofrece un punto de equilibrio entre capacidad y despliegue: al ser denso y de tamaño medio (27B), puede ejecutarse en hardware de consumo con cuantización, y su licencia Apache 2.0 permite uso comercial sin restricciones. La versión MLX está optimizada para Macs con Apple Silicon, lo que facilita la experimentación local. El contexto máximo declarado para la familia Qwen3.8 es de 256.000 tokens, ampliable hasta 1 millón, lo que lo hace adecuado para tareas de razonamiento de largo alcance y análisis de documentos extensos.
+La relevancia de esta version concreta es practica: reduce el peso del repositorio a 16,1 GB, lo que permite ejecutar un modelo de casi 27.400 millones de parametros en equipos con memoria unificada de gama alta (Mac Studio, MacBook Pro con chip Max o Ultra) sin recurrir a GPUs dedicadas. La licencia Apache 2.0 facilita su adopcion comercial sin las restricciones habituales de otros modelos abiertos.
+
+La model card del repositorio es minima: se limita a indicar que la conversion se hizo con mlx-vlm 0.6.8 y remite a la model card original para detalles de arquitectura, entrenamiento y evaluacion. Por tanto, varios datos tecnicos de esta ficha figuran como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (visión-lenguaje), densa |
-| Parametros totales | 27.000 millones (modelo base); el archivo safetensors reporta 4.665.462.000, dato inconsistente con el tamaño declarado |
-| Parametros activos | no aplicable (modelo denso) |
-| Longitud de contexto | 256.000 tokens (hasta 1.000.000 según documentación de la familia Qwen3.8) |
-| Tipos de cuantizacion | 4 bits (esta versión); el modelo original admite otras precisiones |
+| Arquitectura | Transformer multimodal (familia Qwen3.5); detalles no disponibles |
+| Parametros totales | 27.356.728.560 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits (unica variante en este repositorio) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors en formato MLX (compatible con mlx-vlm) |
+| Formato de pesos | safetensors en formato MLX (libreria `mlx`) |
+| Tamano del repositorio | 16,1 GB |
+| Pipeline | image-text-to-text |
+| Herramienta de conversion | mlx-vlm 0.6.8 |
+| Modelo base | Qwen/Qwen3.8-27B |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B es un modelo de lenguaje multimodal de arquitectura transformer densa, diseñado para procesar entradas de texto e imagen (y posiblemente vídeo). Según la documentación de la familia Qwen3.8, incorpora un mecanismo de control de pensamiento que permite alternar entre modos de razonamiento explícito (thinking) y respuesta directa, similar a otros modelos recientes de Qwen. No se dispone de detalles específicos sobre el dataset de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO en la información proporcionada.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo original en la documentacion proporcionada. La etiqueta `qwen3_5` sugiere que pertenece a la generacion Qwen3.5, y la pipeline `image-text-to-text` confirma que integra un codificador visual junto a un modelo de lenguaje para tareas multimodales. El numero de parametros (27,36 mil millones) corresponde al checkpoint cuantizado a 4 bits, no al modelo en precision completa.
 
-La conversión a MLX se realizó con la librería `mlx-vlm` versión 0.6.8, que adapta los pesos originales al formato optimizado para Apple Silicon. Esta conversión no modifica la arquitectura subyacente, pero permite una inferencia eficiente en hardware de Apple mediante el framework MLX.
+Respecto al entrenamiento, la model card no aporta datos sobre volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones como decodificacion especulativa o atencion lineal. Esta cuantizacion concreta no reentrena el modelo: solo transforma los pesos originales a formato MLX con precision de 4 bits mediante mlx-vlm, por lo que las capacidades y limitaciones heredan las del checkpoint base Qwen/Qwen3.8-27B.
 
 ## Capacidades
 
-- Generación de texto y respuesta a instrucciones en formato conversacional.
-- Comprensión de imágenes y vídeo: puede describir contenido visual, responder preguntas sobre imágenes y razonar sobre escenas complejas.
-- Razonamiento multi-paso con control de pensamiento: permite activar o desactivar un modo de razonamiento explícito para tareas que requieren pasos intermedios.
-- Soporte de tareas de agente y ejecución de tareas complejas de varios pasos, según la descripción oficial de Qwen3.8.
-- Capacidades multilingües: no se especifican idiomas concretos, pero los modelos Qwen suelen cubrir múltiples lenguas.
-- No se confirma explícitamente soporte de tool calling o function calling en la información disponible, aunque es probable dado el enfoque de agente.
+- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational`.
+- Comprension de imagenes y respuesta en texto (image-text-to-text): descripcion de imagenes, respuesta a preguntas visuales y tareas que combinen imagen y lenguaje.
+- Razonamiento y generacion de codigo: capacidades esperables en la familia Qwen, aunque no se detallan en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponibles; el repositorio no declara lista de idiomas.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Análisis de imágenes en entornos de soporte técnico: el modelo puede recibir capturas de pantalla o fotos de errores y generar explicaciones o pasos de resolución, aprovechando su comprensión visual y su contexto largo para mantener el historial de la conversación.
-- Generación de descripciones accesibles: a partir de imágenes o vídeos, puede producir textos alternativos detallados para personas con discapacidad visual, integrándose en pipelines de procesamiento de contenido.
-- Asistente de investigación documental: con su ventana de contexto de 256K, puede procesar documentos extensos junto con figuras, tablas o diagramas, respondiendo preguntas que requieren correlacionar información textual y visual.
-- Razonamiento visual en robótica o automatización: el modelo puede interpretar escenas de cámaras y generar instrucciones de acción, aunque su uso en tiempo real dependerá del hardware disponible.
-- Creación de contenido educativo: puede generar explicaciones paso a paso a partir de imágenes de problemas matemáticos o diagramas científicos, activando el modo de pensamiento para razonar antes de responder.
-- Moderación de contenido visual: puede analizar imágenes y vídeos para detectar contenido inapropiado o clasificarlo según políticas, combinando visión y lenguaje.
+- Descripcion automatica de imagenes en catalogos de producto: el modelo recibe una imagen y genera descripciones textuales utilizables en fichas de e-commerce, aprovechando su pipeline image-text-to-text.
+- Asistente conversacional local en Mac: al ejecutarse con mlx-vlm sobre Apple Silicon, permite desplegar un chatbot privado sin enviar datos a la nube, con 16,1 GB de pesos que caben en memoria unificada de equipos de gama alta.
+- Analisis de documentos escaneados o capturas: combinando entrada visual y texto, se puede extraer informacion de facturas, formularios o pantallazos y devolverla estructurada en lenguaje natural.
+- Prototipado rapido de aplicaciones multimodales: el ejemplo oficial (`python -m mlx_vlm.generate`) permite validar flujos de imagen a texto en minutos, util para equipos que evaluan modelos antes de invertir en infraestructura GPU.
+- Accesibilidad: generacion de descripciones de imagenes para personas con discapacidad visual, ejecutandose en local para preservar la privacidad del contenido.
+- Investigacion en cuantizacion: sirve como referencia para medir la perdida de calidad de la cuantizacion a 4 bits frente al modelo original Qwen/Qwen3.8-27B en tareas de vision y lenguaje.
+- Educacion y demostraciones: al tener licencia Apache 2.0 y pesos ligeros, es adecuado para talleres y cursos donde se ensenan tecnicas de inferencia local de modelos multimodales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La documentación de la familia Qwen3.8 menciona mejoras generales en codificación, trabajo, investigación y tareas de largo horizonte, pero no se proporcionan cifras concretas para el modelo de 27B.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 16,1 GB en cuantización 4 bits, por lo que se requiere al menos 16 GB de memoria unificada en Apple Silicon para cargar el modelo completo. Con contexto largo, la memoria necesaria puede superar los 20 GB.
-- GPU recomendadas: en Apple Silicon, cualquier chip con 32 GB o más de memoria unificada (M1 Pro/Max, M2 Pro/Max, M3 Pro/Max, etc.) es adecuado. Para GPUs NVIDIA, se puede usar el modelo original (no MLX) con vLLM o SGLang, requiriendo al menos 16 GB de VRAM en 4 bits (por ejemplo, RTX 4090, A100 40GB).
-- Si cabe en consumer GPU: sí, en GPUs con 16 GB o más de VRAM, como la RTX 4080/4090, siempre que se use cuantización 4 bits y se gestione el contexto.
-- Opciones de despliegue: para esta versión MLX, se usa `mlx-vlm` (pip install mlx-vlm) y el comando `python -m mlx_vlm.generate`. Para el modelo original, se puede servir con vLLM, SGLang, llama.cpp u Ollama.
-- Latencia y throughput: no se dispone de datos medidos. En Apple Silicon, la inferencia de un modelo 27B en 4 bits suele ser de varios tokens por segundo, dependiendo del chip y la longitud de la secuencia.
+- VRAM/memoria estimada: el repositorio ocupa 16,1 GB, por lo que se necesita al menos esa cantidad de memoria unificada o VRAM, mas margen para el contexto y las activaciones (orientativamente 18-24 GB en total).
+- GPU recomendadas: no hay recomendaciones oficiales en la informacion disponible. El formato MLX esta disenado para Apple Silicon (series M1/M2/M3/M4, especialmente variantes Pro, Max y Ultra con 32 GB o mas de memoria unificada).
+- GPU consumer: en el ecosistema NVIDIA no se indica soporte; el formato MLX no es compatible con CUDA. En Apple Silicon cabe en Mac Studio y MacBook Pro de gama alta; en equipos con 16 GB de memoria unificada el margen es muy ajustado.
+- Opciones de despliegue: `mlx-vlm` (libreria oficial indicada en la model card). No se mencionan vLLM, llama.cpp, Ollama ni TGI para este repositorio concreto.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa cuantitativa con otros modelos de la misma categoría. Como referencia cualitativa, se puede comparar con otros modelos multimodales de tamaño similar:
-
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 256K | Apache 2.0 | safetensors |
-| mlx-community/Qwen3.8-27B-4bit | 27B (cuantizado) | 256K | Apache 2.0 | MLX (safetensors) |
-| Qwen2.5-VL-27B (hipotético) | no disponible | no disponible | no disponible | no disponible |
-
-No se han encontrado modelos comparables con especificaciones confirmadas en la información proporcionada.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| mlx-community/Qwen3.8-27B-4bit | 27,36 B | no disponible | MLX safetensors 4 bits | Apache 2.0 | Cuantizacion comunitaria para Apple Silicon |
+| Qwen/Qwen3.8-27B | 27,36 B (precision original) | no disponible | safetensors | Apache 2.0 (segun repositorio derivado) | Modelo base oficial de referencia |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- La conversión MLX está optimizada para Apple Silicon; no es directamente utilizable en GPUs NVIDIA sin convertir los pesos a otro formato.
-- El dato de parámetros en safetensors (4.665.462.000) es inconsistente con el tamaño declarado de 27B; podría tratarse de un error de metadata o de una medida parcial. Se recomienda verificar antes de usar en producción.
-- No se dispone de información sobre sesgos específicos, pero al ser un modelo de lenguaje entrenado con datos web, puede reflejar sesgos sociales y culturales presentes en esos datos.
-- Riesgo de alucinación en tareas de razonamiento visual: el modelo puede generar descripciones plausibles pero incorrectas si la imagen es ambigua o de baja calidad.
-- La licencia Apache 2.0 permite uso comercial, pero se debe atribuir correctamente la autoría del modelo original (Qwen) y de la conversión.
-- El contexto de 256K es teórico; en la práctica, el rendimiento puede degradarse con secuencias muy largas y el consumo de memoria aumenta significativamente.
+- La cuantizacion a 4 bits puede degradar la precision en tareas sensibles (matematicas, codigo, razonamiento visual) respecto al modelo original; no se han publicado evaluaciones comparativas.
+- No hay informacion sobre sesgos conocidos, tasas de alucinacion ni evaluaciones de seguridad del modelo base en la documentacion proporcionada.
+- La lista de idiomas soportados no esta declarada; no se puede garantizar calidad en castellano ni en otros idiomas sin evaluacion previa.
+- La longitud de contexto no esta documentada en este repositorio, lo que impide planificar cargas con documentos largos.
+- El formato MLX limita el despliegue a hardware Apple Silicon; no es portable a GPUs NVIDIA o AMD sin reconvertir los pesos.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B antes de un uso comercial a gran escala.
+- La model card es minima y remite al repositorio original; para produccion se recomienda consultar la documentacion oficial de Qwen y validar el comportamiento con un conjunto de pruebas propio.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Documentación de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
-- Artículo de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/
-- Guía de hardware y despliegue de Yottalabs: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Libreria mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Documentacion de MLX: https://ml-explore.github.io/mlx/

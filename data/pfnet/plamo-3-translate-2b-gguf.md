@@ -2,103 +2,100 @@
 
 ## Resumen
 
-PLaMo 3 Translate 2B es un modelo de lenguaje especializado en traducción desarrollado por Preferred Networks (PFN). Se construye sobre PLaMo 3 NICT, un modelo preentrenado fruto de la investigación conjunta entre PFN y el National Institute of Information and Communications Technology (NICT) de Japón, y se entrena adicionalmente con decenas de miles de millones de tokens de datos orientados a traducción. El resultado es un modelo de 2.878.595.584 parámetros que cubre 53 idiomas y que, según el autor, supera en calidad de traducción a los LLM especializados comparados en todas las métricas evaluadas.
+PLaMo 3 Translate 2B GGUF es la version cuantizada en formato GGUF del modelo de traduccion especializado PLaMo 3 Translate 2B, desarrollado por Preferred Networks (PFN). El modelo base se construyo a partir de PLaMo 3 NICT, un modelo preentrenado fruto de la investigacion conjunta entre PFN y el National Institute of Information and Communications Technology (NICT) de Japon, y posteriormente se entreno sobre decenas de miles de millones de tokens de datos orientados especificamente a traduccion. Esta variante GGUF esta pensada para su uso con llama.cpp, lo que facilita el despliegue en entornos locales y en hardware de consumo.
 
-La variante aquí descrita es la conversión a formato GGUF y su cuantización para llama.cpp, publicada en el repositorio `pfnet/plamo-3-translate-2b-GGUF`. Esto la hace ejecutable en entornos de inferencia local y en hardware de consumo, algo relevante para equipos que necesitan traducción multilingüe sin depender de APIs externas ni de GPUs de centro de datos.
+El modelo cubre traduccion entre 53 idiomas, con especial enfasis en la calidad japones-ingles y en combinaciones multilingues. Ademas de la traduccion directa, admite contexto circundante y glosarios, y permite elegir entre estilo llano y estilo cortes para la salida en japones. La longitud maxima durante el entrenamiento fue de 32.768 tokens sumando entrada y salida, lo que permite traducir pasajes largos en una sola pasada siempre que se respete ese limite combinado.
 
-El modelo admite contexto adicional y glosarios como entrada, permite elegir entre estilo llano y cortés en la salida en japonés, y entrena con una longitud máxima de 32.768 tokens sumando entrada y salida. La licencia es la PLaMo Community License, con uso no comercial gratuito y condiciones específicas para uso comercial.
+Con 2.878.595.584 parametros totales y un tamano de repositorio de 24,9 GB (que incluye multiples niveles de cuantizacion), esta variante resulta relevante para desarrolladores que necesitan traduccion de calidad en infraestructura propia sin depender de APIs externas, con la contrapartida de una licencia comunitaria con condiciones especificas para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer de traducción; detalles no publicados en la informacion disponible) |
+| Arquitectura | no disponible (modelo de lenguaje transformer especializado en traduccion; detalles de arquitectura no publicados en la informacion disponible) |
 | Parametros totales | 2.878.595.584 |
-| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 32.768 tokens maximos en entrenamiento (entrada + salida combinadas) |
-| Tipos de cuantizacion | GGUF (este repositorio); el autor publica ademas FP8, W4A16, W4AFP8, NVFP4 y MLX-4bit en repositorios separados |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens (entrada y salida combinadas durante el entrenamiento) |
+| Tipos de cuantizacion | GGUF con multiples niveles de cuantizacion (niveles concretos no detallados en la informacion disponible); el modelo base ofrece BF16, FP8, W4A16, W4AFP8, NVFP4, GGUF y MLX-4bit |
 | Idiomas soportados | 53 idiomas: ar, az, be, bg, bn, ca, ceb, de, en, es, et, eu, fa, fr, gu, he, hi, hr, hu, hy, id, it, ja, jv, ka, kk, km, ko, lt, lv, ml, mr, ms, my, ne, nl, pa, pl, ru, si, sk, sl, sr, sw, ta, te, th, tl, ur, uz, vi, zh |
-| Licencia | plamo-community-license (uso no comercial gratuito sin registro previo; condiciones especificas para uso comercial) |
-| Formato de pesos | GGUF (repo de 12,5 GB); el modelo base en safetensors esta en `pfnet/plamo-3-translate-2b` |
+| Licencia | plamo-community-license (PLaMo Community License) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se detalla en la información disponible la arquitectura interna exacta (número de capas, dimensión oculta, tipo de atención) del modelo base. Sí se sabe que PLaMo 3 Translate 2B parte de PLaMo 3 NICT, un modelo preentrenado desarrollado conjuntamente por PFN y NICT, y que sobre esa base se aplicó un entrenamiento adicional con decenas de miles de millones de tokens de datos centrados en traducción. La longitud máxima durante el entrenamiento fue de 32.768 tokens considerando entrada y salida en conjunto, lo que condiciona el uso práctico: pasajes más largos deben dividirse.
+La informacion disponible no detalla la arquitectura interna del modelo (tipo de transformer, atencion, capas, etc.). Se sabe que PLaMo 3 Translate 2B deriva de PLaMo 3 NICT, un modelo preentrenado desarrollado conjuntamente por PFN y NICT, y que sobre esa base se realizo un entrenamiento adicional con decenas de miles de millones de tokens de datos centrados en traduccion. No se especifica en la informacion proporcionada la composicion exacta del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras fases de alineacion.
 
-El modelo incorpora dos mecanismos de control relevantes para traducción profesional: la posibilidad de aportar contexto circundante y un glosario terminológico como parte de la entrada, y la selección entre estilo llano y cortés para la salida en japonés. No se especifica en la información proporcionada si hubo fases de RLHF o DPO, ni la composición exacta del dataset de entrenamiento. La versión GGUF es una conversión y cuantización del modelo base para llama.cpp; el autor advierte que la cuantización introduce cambios de precisión respecto a BF16, cuantificados en tablas comparativas en la model card original.
+El modelo esta especializado en traduccion y admite mecanismos de control adicionales: contexto circundante para desambiguar, glosarios para forzar terminologia concreta y seleccion de estilo (llano o cortes) para la salida en japones. La longitud maxima de entrenamiento de 32.768 tokens combinados entre entrada y salida condiciona el uso: los documentos mas largos deben dividirse para que la suma de entrada y salida no supere ese limite. Esta variante GGUF anade la conversion y cuantizacion para llama.cpp, con el correspondiente impacto en precision descrito por el autor en las tablas de cambios de exactitud por cuantizacion (no reproducidas en detalle en la informacion disponible).
 
 ## Capacidades
 
-- Traducción entre 53 idiomas, incluyendo pares que no pasan por el inglés como pivote.
-- Traducción con contexto adicional: permite pasar texto circundante para desambiguar y mantener coherencia en documentos largos.
-- Traducción guiada por glosario: admite terminología específica para forzar consistencia terminológica.
-- Control de estilo en japonés: elección entre registro llano y cortés en la salida.
-- Procesamiento de pasajes largos en una sola pasada, hasta el límite combinado de 32.768 tokens de entrada y salida.
-- Formato conversacional (etiqueta `conversational` en el repositorio), apto para integrarse en plantillas de chat de llama.cpp.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue tras una API compatible con el ecosistema Hugging Face.
-- No se documentan en la información disponible capacidades de tool calling, razonamiento multi-paso, visión ni audio; el modelo está especializado en traducción.
+- Traduccion entre 53 idiomas, con enfasis en japones-ingles y combinaciones multilingues.
+- Traduccion con contexto circundante: permite aportar texto adicional para desambiguar el pasaje a traducir.
+- Traduccion con glosario: admite terminologia forzada para mantener consistencia terminologica.
+- Control de estilo en japones: eleccion entre estilo llano y estilo cortes.
+- Traduccion de pasajes largos en una sola pasada, hasta 32.768 tokens combinados de entrada y salida.
+- Formato conversacional (tag `conversational` en el repositorio).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documentan en la informacion disponible capacidades de tool calling, agentes, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Traducción de documentación técnica multilingüe: el modelo puede procesar secciones completas en una sola pasada gracias al límite de 32.768 tokens combinados, manteniendo coherencia terminológica mediante glosarios por producto.
-- Localización de interfaces y contenido web: con 53 idiomas cubiertos, un mismo pipeline sirve para mercados que habitualmente requieren varios proveedores; la variante GGUF permite ejecutarlo en servidores sin GPU dedicada.
-- Traducción de correspondencia comercial japonés-inglés: el control de estilo llano o cortés en japonés es directamente aplicable a correos y comunicaciones con clientes, donde el registro importa.
-- Subtitulado y traducción de conversaciones: el formato conversacional y el contexto adicional permiten mantener referencias entre turnos en diálogos multi-turno.
-- Procesamiento por lotes en local para sectores con requisitos de privacidad: al ejecutarse con llama.cpp sobre hardware propio, los textos no salen de la infraestructura, lo que encaja en entornos legales, sanitarios o administrativos.
-- Traducción asistida para investigación académica: el uso no comercial es gratuito sin registro previo, lo que facilita su adopción en universidades para traducir artículos y materiales entre los idiomas cubiertos.
-- Preprocesamiento en pipelines de datos: traducción masiva de corpus para entrenamiento o análisis, con la ventaja de que la cuantización reduce los requisitos de memoria frente a BF16.
+- Traduccion de documentacion tecnica: el modelo puede traducir manuales y guias largas dividiendo el texto en fragmentos cuya entrada y salida combinadas no superen los 32.768 tokens, manteniendo coherencia terminologica mediante glosarios.
+- Localizacion de productos multilingue: con 53 idiomas soportados, se puede usar para generar versiones en varios mercados desde un idioma origen, aplicando glosarios por producto para preservar nombres y terminos de marca.
+- Traduccion japones-ingles de alta calidad: el modelo esta especialmente optimizado para esta combinacion, segun los benchmarks publicados por el autor, lo que lo hace adecuado para documentacion corporativa y contenidos editoriales entre ambos idiomas.
+- Procesamiento por lotes en infraestructura propia: al estar en formato GGUF y ser compatible con llama.cpp, permite ejecutar traduccion masiva en servidores locales sin enviar datos a APIs externas, relevante para contenido confidencial.
+- Integracion en pipelines de publicacion: puede incorporarse a flujos automatizados de traduccion de articulos, notas de prensa o documentacion, con control de estilo en japones para adaptar el registro al publico objetivo.
+- Traduccion asistida con terminologia controlada: en sectores como legal o sanitario, el uso de glosarios permite fijar terminos criticos y reducir variabilidad en la salida.
+- Despliegue en estaciones de trabajo de desarrollo: la variante cuantizada en GGUF permite probar y validar traducciones en maquinas locales antes de escalar a modelos mayores de la misma familia (8B o 31B).
 
 ## Benchmarks y rendimiento
 
-El autor publica gráficas de calidad de traducción en la model card, pero no tablas con valores numéricos en la información disponible. Los ejes de evaluación son los siguientes:
+El autor publica una comparativa grafica de calidad de traduccion frente a TranslateGemma y HY-MT2, con las siguientes metricas agregadas (los valores numericos concretos no se detallan en la informacion disponible):
 
-| Evaluacion | Metrica | Ambito |
+| Evaluacion | Metrica | Comparativa |
 |---|---|---|
-| Japones-ingles | Media de PFTB, SaaS y WMT24++ COMET-22 | Calidad global japones-ingles |
-| Japones y 14 idiomas | Media de FLORES+ chrF++ en ambas direcciones | Multilingue con japones |
-| Ingles y 14 idiomas | Media de FLORES+ chrF++ en ambas direcciones | Multilingue con ingles |
+| Japones-ingles | Media de PFTB, SaaS y WMT24++ COMET-22 | PLaMo 3 Translate, TranslateGemma, HY-MT2 |
+| Japones frente a 14 idiomas | Media de FLORES+ chrF++ en ambas direcciones | PLaMo 3 Translate, TranslateGemma, HY-MT2 |
+| Ingles frente a 14 idiomas | Media de FLORES+ chrF++ en ambas direcciones | PLaMo 3 Translate, TranslateGemma, HY-MT2 |
 
-Los 15 idiomas seleccionados para FLORES+ son: japonés, inglés, árabe, indonesio, italiano, neerlandés, coreano, español, tailandés, chino (simplificado y tradicional), alemán, francés, vietnamita y ruso. El autor afirma que el modelo de 2B supera a los LLM especializados en traducción comparados (TranslateGemma y HY-MT2) en todas las métricas de la figura, pero no se incluyen los valores numéricos en la información proporcionada, por lo que no se reproducen cifras concretas.
+Los 15 idiomas seleccionados para la evaluacion FLORES+ son: japones, ingles, arabe, indonesio, italiano, neerlandes, coreano, espanol, tailandes, chino simplificado y tradicional, aleman, frances, vietnamita y ruso. El autor afirma que incluso el modelo de 2B supera a los LLM especializados en traduccion comparados en todas las metricas de la figura, pero no se proporcionan los valores numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con cifras del autor. Como referencia de orden de magnitud, un modelo de 2,88 mil millones de parámetros en GGUF de 4 bits ocupa del orden de 1,5 a 2 GB de pesos, y en 8 bits del orden de 3 GB, cantidades que deben sumarse al espacio para la caché KV, que crece con el contexto hasta los 32.768 tokens.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo es apto para GPUs de consumo con suficiente VRAM para el contexto deseado; para contextos largos conviene hardware con más memoria.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 en cuantizaciones de 4 y 8 bits, siempre que el contexto configurado no agote la memoria. No se confirma con datos del autor.
-- Despliegue: llama.cpp es el runtime objetivo de esta variante; también es compatible con frontends y servidores basados en llama.cpp (por ejemplo, servidores compatibles con la API de OpenAI). El autor publica además variantes FP8, W4A16, W4AFP8, NVFP4 y MLX-4bit para otros runtimes.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 2.878.595.584 parametros, las cuantizaciones GGUF de 4 bits requieren del orden de 2-3 GB de memoria, mientras que las de 8 bits se acercan a 3-4 GB (estimacion orientativa, no confirmada por el autor en la informacion disponible).
+- GPU recomendadas: no especificadas por el autor; por tamano, el modelo es apto para GPU de consumo y para aceleradores de datacenter (A100, H100) cuando se busque mayor throughput.
+- Cabe en GPU de consumo: si, por el tamano del modelo (2B) y el formato GGUF, es adecuado para GPUs de consumo con suficiente VRAM para la cuantizacion elegida (modelos concretos no confirmados en la informacion disponible).
+- Opciones de despliegue: llama.cpp (objetivo principal de esta variante GGUF); el modelo base dispone de variantes FP8, W4A16, W4AFP8, NVFP4 y MLX-4bit para otros entornos.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formatos |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| PLaMo 3 Translate 2B (esta ficha) | 2,88 B | 32.768 (entrada + salida) | 53 | PLaMo Community License | BF16, FP8, W4A16, W4AFP8, NVFP4, GGUF, MLX |
-| PLaMo 3 Translate 0.8B | 0,8 B (aproximado por denominacion) | no disponible | 53 | PLaMo Community License | BF16, FP8, W4A16, W4AFP8, NVFP4, GGUF, MLX |
-| PLaMo 3 Translate 8B | 8 B (aproximado por denominacion) | no disponible | 53 | PLaMo Community License | BF16, FP8, W4A16, W4AFP8, NVFP4, GGUF, MLX |
+| PLaMo 3 Translate 2B GGUF | 2.878.595.584 | 32.768 tokens (entrada + salida) | 53 | plamo-community-license | GGUF |
 | TranslateGemma | no disponible | no disponible | no disponible | no disponible | no disponible |
 | HY-MT2 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| PLaMo 3 Translate 0.8B / 8B / 31B | 0,8B / 8B / 31B | 32.768 tokens (entrada + salida) | 53 | plamo-community-license | BF16, FP8, W4A16, W4AFP8, NVFP4, GGUF, MLX-4bit |
 
-TranslateGemma y HY-MT2 aparecen como modelos de comparación en los benchmarks del autor, pero no se dispone de sus especificaciones en la información proporcionada. La comparación más directa y fiable es dentro de la propia familia PLaMo 3 Translate: el 0.8B para entornos muy restringidos, el 2B como equilibrio, y el 8B y 31B cuando la calidad prima sobre el coste de inferencia.
+La informacion disponible solo permite comparar con TranslateGemma y HY-MT2 a nivel de calidad de traduccion (segun la figura del autor), sin datos de parametros, contexto ni licencia. Dentro de la propia familia, las variantes 0.8B, 8B y 31B permiten escalar en calidad o reducir requisitos de hardware.
 
 ## Limitaciones y advertencias
 
-- La cuantización GGUF introduce pérdida de precisión respecto a BF16; el autor publica tablas de diferencias por formato, que conviene consultar antes de fijar una cuantización para producción.
-- El límite de 32.768 tokens es la suma de entrada y salida: documentos largos deben dividirse, con el riesgo de perder coherencia entre fragmentos si no se aporta contexto adicional.
-- El modelo está especializado en traducción; no debe esperarse de él razonamiento general, generación de código ni tool calling, capacidades no documentadas.
-- Riesgo de alucinación y de traducciones fluentes pero infieles en idiomas de bajos recursos o en dominios muy técnicos sin glosario; el uso de glosarios y contexto mitiga pero no elimina este riesgo.
-- La licencia PLaMo Community License permite uso personal, académico y no comercial sin registro, pero impone condiciones para uso comercial; es imprescindible revisar el texto completo antes de integrarlo en un producto.
-- No se documentan en la información disponible sesgos específicos por idioma o dominio; como en cualquier modelo entrenado con corpus web, cabe esperar sesgos heredados de los datos.
-- No se dispone de datos publicados de latencia ni throughput para esta variante GGUF; deben medirse en el hardware objetivo antes de dimensionar un servicio.
+- La licencia PLaMo Community License permite uso personal, no comercial y academico sin registro previo, pero el uso comercial esta sujeto a condiciones especificas que deben revisarse antes de desplegar en produccion.
+- La longitud maxima de 32.768 tokens es combinada entre entrada y salida; los documentos mas largos deben dividirse, lo que puede afectar a la coherencia en textos muy extensos.
+- La cuantizacion GGUF introduce cambios de exactitud respecto a BF16; el autor documenta esas diferencias en tablas que no se reproducen en la informacion disponible, por lo que conviene validar la calidad en el caso de uso concreto.
+- No se detallan en la informacion disponible sesgos conocidos, riesgos de alucinacion especificos ni limitaciones por idioma mas alla de los 53 soportados.
+- El modelo esta especializado en traduccion; no se documentan capacidades de razonamiento general, codigo, matematicas, tool calling, agentes, vision o audio, por lo que no debe asumirse su uso fuera de tareas de traduccion.
+- No se especifican requisitos de hardware oficiales ni latencias de referencia; las estimaciones de VRAM son orientativas y deben validarse en el entorno de despliegue.
 
 ## Enlaces
 
 - Repositorio Hugging Face (GGUF): https://huggingface.co/pfnet/plamo-3-translate-2b-GGUF
-- Modelo base en safetensors: https://huggingface.co/pfnet/plamo-3-translate-2b
-- Blog técnico de PFN sobre la release: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
+- Modelo base BF16: https://huggingface.co/pfnet/plamo-3-translate-2b
+- Blog tecnico de PFN: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community License: https://plamo.preferredai.jp/info/plamo-community-license-en
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- README en japonés: https://huggingface.co/pfnet/plamo-3-translate-2b-GGUF/blob/main/README_ja.md
 - Variante 0.8B: https://huggingface.co/pfnet/plamo-3-translate-0.8b
 - Variante 8B: https://huggingface.co/pfnet/plamo-3-translate-8b
 - Variante 31B: https://huggingface.co/pfnet/plamo-3-translate-31b
-- Variante MLX-4bit del 2B: https://huggingface.co/pfnet/plamo-3-translate-2b-MLX-4bit
+- README en japones: https://huggingface.co/pfnet/plamo-3-translate-2b-GGUF/blob/main/README_ja.md

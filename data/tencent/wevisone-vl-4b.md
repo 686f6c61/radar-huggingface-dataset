@@ -2,57 +2,54 @@
 
 ## Resumen
 
-WeVisOne-VL-4B es un modelo de visión-lenguaje desarrollado por WeChat Vision (Tencent Inc.) que unifica percepción a nivel de objeto y a nivel de píxel dentro de un único modelo generativo. Está construido sobre Qwen3-VL y combina la predicción estructurada del siguiente token con un decodificador de píxeles ligero de 9,6 millones de parámetros, lo que le permite abordar tareas que habitualmente requieren modelos separados: detección de objetos con vocabulario abierto, localización por referencia, conteo, pointing, OCR, segmentación por referencia y matting alfa con prompts.
+WeVisOne-VL-4B es un modelo de vision-lenguaje desarrollado por WeChat Vision (Tencent Inc.) que unifica percepción visual a nivel de objeto y a nivel de píxel en un único modelo de next-token prediction. Está construido sobre Qwen3-VL y añade un decodificador de píxeles ligero de 9,6 millones de parámetros que permite tareas densas como segmentación por referencia y matting alfa. La versión publicada tiene 4.830.581.248 parámetros totales según los pesos en safetensors.
 
-El modelo tiene 4.830.581.248 parámetros totales (aproximadamente 4,83 mil millones) y se distribuye en formato safetensors para la librería transformers, con un repositorio de 19,4 GB. La relevancia práctica está en que sustituye una cadena de modelos especializados por una sola inferencia con salida estructurada: cajas y puntos normalizados mediante tokens de coordenada dedicados (`<0>` a `<1000>`), y máscaras densas a resolución completa cuando se activan las tareas densas.
+El modelo aborda un problema clásico en visión por computador: la fragmentación de pipelines, donde detección, grounding, conteo, OCR, segmentación y matting requieren modelos separados. WeVisOne-VL los integra mediante tokens de coordenadas dedicados (`<0>` a `<1000>`) para cajas y puntos normalizados, y un token de instancia (`<OBJ>`, ID 152678) que conecta la salida estructurada del LLM con el decodificador denso.
 
-Es un lanzamiento reciente (repositorio creado el 22 de octubre de 2026) bajo licencia Apache 2.0, orientado explícitamente a investigación en grounding visual y percepción densa. No se han publicado resultados de benchmarks ni datos sobre el proceso de entrenamiento en la información disponible.
+Es relevante porque ofrece percepción de objetos a píxeles en un solo checkpoint de 4B con licencia Apache 2.0, lo que facilita su despliegue en entornos de investigación y producción con requisitos moderados de hardware. La release está orientada a investigación en grounding visual, localización por referencia, pointing, conteo, OCR, segmentación y matting.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer vision-lenguaje basada en Qwen3-VL (`qwen3_vl`), con decodificador de píxeles auxiliar de 9,6 M de parámetros |
-| Parametros totales | 4.830.581.248 (aprox. 4,83 B); incluye `mask_decoder.pt` de 9.609.764 parámetros |
-| Parametros activos | No aplica (modelo denso, no es MoE) |
+| Arquitectura | Vision-lenguaje basada en Qwen3-VL (transformer multimodal) con decodificador de píxeles acoplado |
+| Parametros totales | 4.830.581.248 (modelo principal); decodificador de máscaras adicional de 9.609.764 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; solo se publican pesos en safetensors (sin variantes GGUF, AWQ ni GPTQ documentadas) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el ejemplo de uso emplea bfloat16) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (código propio de Tencent; los componentes de terceros conservan sus licencias) |
-| Formato de pesos | safetensors (`transformers`) más `mask_decoder.pt` en PyTorch |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (modelo principal) y `mask_decoder.pt` (decodificador de píxeles) |
 
 ## Arquitectura y entrenamiento
 
-El núcleo es un transformer vision-lenguaje Qwen3-VL que recibe imagen y texto y genera tokens. Sobre esa base, WeVisOne-VL introduce dos mecanismos propios: un vocabulario de tokens de coordenada (`<0>` ... `<1000>`) que codifica cajas delimitadoras y puntos normalizados, y un token especial de instancia `<OBJ>` (ID 152678) que se emite tras cada caja predicha para las tareas densas, actuando como anclaje de la instancia. El modelo devuelve `None` cuando el objetivo consultado no está presente, lo que evita forzar detecciones inexistentes.
+WeVisOne-VL parte de Qwen3-VL como backbone multimodal y le añade un decodificador de píxeles de 9,6M de parámetros que combina tres componentes: un adaptador de features visuales sobre features del ViT de Qwen3-VL previas al merging multinivel; un decodificador de queries guiado por caja con 6 bloques de cross-attention deformable inicializados desde el estado oculto del token `<OBJ>` y una caja previa codificada con Fourier; y una cabeza de predicción densa condicionada por instancia (`FullCanvasAlphaCascadeHead`) que refina predicciones en escalas S/4, S/2 y S/1 para producir mattes alfa continuos a resolución completa con stride 1.
 
-La parte densa se resuelve con `mask_decoder.pt`, un decodificador de 9,6 M de parámetros que combina tres piezas: un adaptador de características visuales sobre las features multinivel del ViT de Qwen3-VL previas al merging; un decodificador de consultas guiado por caja con 6 bloques de atención cruzada deformable, inicializado a partir del estado oculto de `<OBJ>` y de la caja codificada con características de Fourier; y una cabeza de predicción densa condicionada por instancia (`FullCanvasAlphaCascadeHead`) que refina en escalas S/4, S/2 y S/1 hasta producir máscaras alfa continuas a resolución completa con stride 1.
-
-No se han publicado en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. La model card indica que, por eficiencia de inferencia, el modelo genera salidas estructuradas directamente sin cadena de razonamiento (CoT) explícita.
+El modelo genera salidas estructuradas mediante next-token prediction: usa tokens de coordenadas `<0>`...`<1000>` para representar cajas delimitadoras y puntos normalizados, devuelve `None` cuando el objetivo consultado no está presente y emite `<OBJ>` tras cada caja predicha en tareas densas, lo que permite al decodificador generar la máscara correspondiente a esa instancia. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La release prioriza eficiencia de inferencia: genera salidas estructuradas sin chain-of-thought explícito y está limitada a percepción de imagen en un solo turno (el decodificador de píxeles rechaza rejillas de vídeo).
 
 ## Capacidades
 
-- Detección de objetos con vocabulario abierto, devolviendo cajas normalizadas mediante tokens de coordenada.
-- Comprensión de expresiones referenciales (*referring expression comprehension*) y localización guiada por descripción textual.
-- Pointing de objetos: predicción de puntos concretos sobre la imagen.
-- Conteo de objetos, con salida estructurada por instancia.
-- OCR con localización de texto en la imagen.
-- Segmentación por referencia (*referring expression segmentation*) gracias al decodificador denso.
-- Matting alfa con prompts (*promptable alpha matting*), con máscaras continuas a resolución completa y stride 1.
-- Generación de texto conversacional en pipeline `image-text-to-text`.
-- Rechazo explícito de objetivos ausentes: devuelve `None` en lugar de alucinar una caja.
-- Percepción de un solo turno y una sola imagen; no hay modo de razonamiento extendido ni soporte de vídeo en el decodificador de píxeles.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de audio: no disponibles.
+- Detección de objetos de vocabulario abierto con cajas delimitadoras en coordenadas normalizadas.
+- Localización por referencia (referring localization) a partir de descripciones en lenguaje natural.
+- Conteo de objetos con localización de instancias.
+- Pointing de objetos mediante puntos normalizados.
+- OCR con localización de texto en imagen.
+- Segmentación por referencia (referring expression segmentation) con máscaras por instancia.
+- Matting alfa promptable con salida continua a resolución completa (stride 1).
+- Salida estructurada con rechazo explícito (`None`) cuando el objetivo no existe en la imagen.
+- Conversación multimodal de un solo turno sobre imagen (pipeline image-text-to-text).
+- No soporta vídeo en la release actual: el decodificador de píxeles rechaza rejillas de vídeo.
+- No se documenta soporte de tool calling ni de razonamiento multi-paso con agentes.
 
 ## Casos de uso
 
-- Anotación automática de datasets de visión: el modelo genera cajas y máscaras por instancia a partir de un prompt textual, lo que permite preetiquetar imágenes y reducir el coste de anotación manual en pipelines de datos.
-- Segmentación interactiva en herramientas de edición: dado un prompt como "persona" o una caja, devuelve una máscara por referencia que puede alimentar un editor de recorte o un flujo de composición.
-- Matting profesional para *background removal*: la cabeza `FullCanvasAlphaCascadeHead` produce alfa continuo a resolución completa, adecuado para sustitución de fondos en fotografía de producto o vídeo con bordes finos.
-- Conteo y control de inventario visual: el conteo estructurado por instancia permite contar unidades en estanterías, almacenes o imágenes aéreas sin un detector específico entrenado por categoría.
-- Digitalización documental con OCR localizado: además de transcribir, devuelve la posición de cada fragmento de texto, lo que sirve para reconstruir el layout de facturas, formularios o tickets.
-- Accesibilidad y descripción de imágenes: la combinación de descripción textual y localización permite generar descripciones que referencian regiones concretas de la imagen.
-- Robótica e interacción guiada por referencia: el pointing y la localización por expresión pueden convertir una instrucción en lenguaje natural en una coordenada sobre la escena para un brazo manipulador o un sistema de navegación.
+- Anotación automática de datasets de detección: el modelo genera cajas normalizadas para categorías de vocabulario abierto, lo que permite preetiquetar imágenes y reducir el coste de anotación manual antes de la revisión humana.
+- Segmentación de producto en e-commerce: dada una imagen y una consulta como "persona" o "zapatilla", devuelve la máscara de la instancia, útil para recortes, catálogos y pruebas de fondo.
+- Matting para edición y postproducción: el `FullCanvasAlphaCascadeHead` produce mattes alfa continuos a resolución completa, adecuados para composición sobre nuevos fondos con bordes suaves (pelo, transparencias).
+- Digitalización documental con OCR localizado: extrae texto y su posición en la imagen, lo que sirve para indexar documentos escaneados o validar campos en formularios.
+- Control de aforo y conteo en imágenes: el conteo con localización de instancias permite inventariar objetos en estanterías, almacenes o escenas de tráfico a partir de una consulta textual.
+- Asistentes visuales de accesibilidad: responder a preguntas del tipo "¿dónde está la salida?" devolviendo la caja o el punto del objeto referenciado en la imagen.
+- Grounding para robótica e interfaces: la salida en puntos y cajas normalizadas facilita pasar coordenadas a un sistema de control o a una UI que necesite señalar un objeto concreto.
 
 ## Benchmarks y rendimiento
 
@@ -60,38 +57,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (derivada del número de parámetros, no publicada por el autor): en bfloat16/fp16, en torno a 9,7 GB solo de pesos más unos 19 MB del decodificador; en fp32, unos 19,3 GB; en int8, unos 4,8 GB; en int4, unos 2,4 GB. A estas cifras hay que sumar caché KV, activaciones del codificador visual y memoria de las máscaras densas a resolución completa.
-- GPU recomendadas: A100 (40/80 GB) o H100 para lotes grandes y producción; L40S o RTX 6000 Ada como alternativas de 48 GB.
-- ¿Cabe en GPU de consumo? Sí: en bfloat16 cabe en una RTX 4090 o RTX 3090 de 24 GB con margen para lote pequeño; en tarjetas de 16 GB conviene reducir resolución de entrada o recurrir a cuantización, aunque el autor no publica variantes cuantizadas.
-- Opciones de despliegue: la vía oficial es el paquete `wevisone_vl` publicado en GitHub, que carga el modelo con `transformers` y gestiona el decodificador de máscaras. El soporte en vLLM, TGI, llama.cpp u Ollama no está confirmado en la información disponible; el decodificador denso en PyTorch y el token `<OBJ>` fuera del vocabulario estándar complican un despliegue puramente GGUF.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de 4,83B parámetros en bfloat16 requiere aproximadamente 9,7 GB solo para pesos, más el decodificador de máscaras (~19 MB en fp32) y el overhead de activaciones y del ViT.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, encaja en GPUs con 24 GB o más (RTX 4090, L40S, A100 40/80 GB, H100).
+- Cabe en GPU de consumo: previsiblemente en RTX 4090 (24 GB) en bfloat16; en GPUs de 16 GB requeriría cuantización, para la cual no se documentan formatos en la información disponible.
+- Opciones de despliegue: el autor publica un paquete de inferencia propio (`wevisone_vl`, instalable desde GitHub) con carga vía `WeVisOneVL("tencent/WeVisOne-VL-4B", device="auto", dtype="bfloat16")`. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| WeVisOne-VL-4B | 4,83 B (+9,6 M de decodificador) | no disponible | Apache 2.0 | Percepcion unificada objeto + pixel (deteccion, pointing, OCR, segmentacion, matting) |
-| Qwen3-VL-4B | no disponible en la informacion proporcionada (es la base sobre la que se construye) | no disponible | no disponible | Vision-lenguaje generalista |
-| Qwen2.5-VL-3B | no disponible | no disponible | no disponible | Vision-lenguaje generalista con grounding basico |
-| Florence-2 (large) | no disponible | no disponible | no disponible | Vision generalista con tareas de deteccion y segmentacion |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A nivel cualitativo, la propuesta diferencial frente a VLMs genéricos de tamaño similar es la integración nativa de tareas densas (segmentación y matting) mediante un decodificador acoplado, en lugar de depender de modelos externos de segmentación.
 
-La comparación cuantitativa no es posible con los datos disponibles: no hay benchmarks publicados de WeVisOne-VL-4B ni se han verificado las especificaciones de los modelos alternativos dentro de esta búsqueda. Cualitativamente, la diferencia principal frente a un VLM generalista es la salida densa (alfa continuo a stride 1) y el conjunto de tareas de percepción estructurada bajo una sola licencia Apache 2.0.
+| Modelo | Parametros | Contexto | Tareas densas | Licencia |
+|---|---|---|---|---|
+| WeVisOne-VL-4B | 4,83B + 9,6M (decoder) | no disponible | Detección, grounding, conteo, pointing, OCR, segmentación, matting | Apache 2.0 |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Los bordes finos de las máscaras alfa son sensibles a la resolución de la imagen, a la oclusión severa, a las transparencias complejas y a la formulación del prompt.
-- El modelo genera salidas estructuradas sin cadena de razonamiento explícita (CoT), lo que limita la precisión en consultas ambiguas o que requieran composición de varios pasos.
-- Diseñado para percepción de imagen de un solo turno: el decodificador de píxeles rechaza rejillas de vídeo, por lo que no hay soporte de vídeo en las tareas densas.
-- Uso previsto exclusivamente de investigación en grounding visual, segmentación y matting; el autor declara explícitamente que no debe emplearse para decisiones autónomas de alto impacto ni para identificar personas.
-- Riesgo de alucinación en la vertiente generativa de texto; el mecanismo de devolver `None` mitiga, pero no elimina, las detecciones falsas en consultas ambiguas.
-- Idiomas soportados no documentados: no se puede asumir un rendimiento multilingüe equivalente al de la base Qwen3-VL.
-- Licencia Apache 2.0 para el código propio de Tencent; los componentes de terceros conservan sus licencias originales y deben revisarse antes de un uso comercial.
-- No se documentan sesgos demográficos ni sociales; al ser un modelo de percepción, los sesgos del dataset de la base Qwen3-VL pueden trasladarse a las detecciones y segmentaciones.
+- Los bordes alfa finos son sensibles a la resolución de la imagen, a oclusiones severas, a transparencias complejas y a la formulación del prompt.
+- El modelo genera salidas estructuradas sin chain-of-thought explícito por eficiencia, lo que puede limitar el rendimiento en consultas ambiguas o composicionales.
+- Solo admite percepción de imagen en un solo turno; el decodificador de píxeles rechaza rejillas de vídeo.
+- No está destinado a decisiones autónomas de alto impacto ni a la identificación de personas, según la model card.
+- No se documentan sesgos conocidos, cobertura idiomática ni comportamiento fuera del dominio visual.
+- Riesgo de alucinación en coordenadas y en la decisión de presencia/ausencia (`None`) no cuantificado en la información disponible.
+- La licencia Apache 2.0 cubre el código propio de Tencent; los componentes de terceros conservan sus licencias originales y deben revisarse antes de uso comercial.
+- El despliegue requiere el paquete de inferencia propio y el archivo `mask_decoder.pt`; no se confirma compatibilidad con servidores de inferencia estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tencent/WeVisOne-VL-4B
-- Repositorio de inferencia (paquete `wevisone_vl`): https://github.com/Tencent/WeVisOne-VL
-- Sitio corporativo de Tencent: https://www.tencent.com/
-- Información corporativa de Tencent: https://www.tencent.com/en-us/about.html
-- Tencent en Wikipedia: https://en.wikipedia.org/wiki/Tencent
+- Paper (arXiv 2610.31329): https://huggingface.co/papers/2610.31329
+- Página del proyecto: https://tencent.github.io/WeVisOne-VL
+- Repositorio de inferencia: https://github.com/Tencent/WeVisOne-VL
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

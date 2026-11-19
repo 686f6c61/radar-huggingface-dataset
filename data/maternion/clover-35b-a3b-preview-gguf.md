@@ -2,98 +2,104 @@
 
 ## Resumen
 
-Clover-35B-A3B-Preview es un modelo lingüístico de difusión (diffusion language model) de tipo mezcla de expertos (MoE) desarrollado por DiffuSpace, con 34,66 mil millones de parámetros totales de los cuales solo unos 3.000 millones se activan por token. Se deriva de Qwen3.6-35B-A3B y combina una arquitectura híbrida Gated DeltaNet / atención completa con generación por bloques de difusión, un enfoque que permite decodificar varios tokens en paralelo en lugar de estrictamente uno a uno. Su relevancia radica en que DiffuSpace lo presenta como el estado del arte entre los modelos de difusión open source en el momento de su lanzamiento, con resultados destacados en benchmarks agénticos.
+Clover-35B-A3B-Preview es un modelo de lenguaje de tipo mixture-of-experts (MoE) con 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token, desarrollado por DiffuSpace. Se trata de un modelo de difusion para generacion de texto derivado de Qwen3.6-35B-A3B, lo que lo situa en una categoria poco habitual entre los modelos abiertos: combina un backbone hibrido de atencion completa y capas Gated DeltaNet con generacion por difusion en bloques, manteniendo un prefijo causal.
 
-Esta ficha cubre la cuantización GGUF publicada por el usuario maternion, que convierte el modelo original en BF16 a formatos k-quant (desde Q3_K_S hasta Q8_0) mediante llama.cpp. El modelo cuenta con una ventana de contexto de 128K tokens (131.072), modo de razonamiento (thinking) activado por defecto y licencia Apache-2.0. Es un modelo de previsualización (Preview) y requiere una versión parcheada de llama.cpp todavía no fusionada en el repositorio principal, lo que limita considerablemente su facilidad de despliegue.
+La version aqui descrita es la conversion a GGUF realizada por el usuario maternion, publicada bajo licencia Apache-2.0 y compatible con llama.cpp mainline desde el commit `e4b6c8ca6` (PR #31306, fusionado el 2 de noviembre de 2026). El modelo ofrece una ventana de contexto de 128K tokens (131.072), 40 capas, 256 expertos enrutados con top-8 y un experto compartido por capa.
 
-## Especificaciones técnicas
+Su relevancia actual radica en dos factores: por un lado, explora la difusion como alternativa a la decodificacion autoregresiva clasica dentro de un modelo MoE de tamano medio-grande; por otro, la disponibilidad de cuantizaciones GGUF (desde Q8_0 hasta Q3_K_S) permite ejecutarlo en hardware de consumo, algo poco frecuente en modelos de esta familia. Segun DiffuSpace, en el momento de su lanzamiento reportaba resultados estado del arte entre modelos de difusion open source, aunque no se han publicado cifras concretas en la informacion disponible.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE de difusión híbrida (Gated DeltaNet + atención completa), `clover_moe` |
-| Parametros totales | 34.661.350.848 (~34,66B) |
-| Parametros activos | ~3B por token (top-8 de 256 expertos + 1 experto compartido por capa) |
+| Arquitectura | Transformer MoE hibrido con Gated DeltaNet + atencion completa, generacion por difusion en bloques (`clover_moe` en llama.cpp) |
+| Parametros totales | 34.660.610.688 (~34,7B) |
+| Parametros activos | ~3B por token (top-8 de 256 expertos enrutados + 1 experto compartido por capa) |
 | Longitud de contexto | 131.072 tokens (128K) |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q4_K_M, IQ4_XS, Q3_K_M, Q3_K_S (sin matriz de importancia) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q4_K_M, IQ4_XS, Q3_K_M, Q3_K_S (todas sin importance matrix) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (modelo base en safetensors BF16) |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors BF16 |
 
 ## Arquitectura y entrenamiento
 
-Clover emplea un backbone híbrido que alterna capas de atención completa con capas Gated DeltaNet (GDN), una arquitectura de tipo estado lineal que reduce el coste computacional en secuencias largas. Sobre este backbone se añaden parámetros GDN adicionales aprendidos que permiten atención bidireccional dentro de los bloques de difusión, manteniendo a la vez un prefijo causal. La capa MoE enruta cada token entre 256 expertos seleccionando los 8 mejores (top-8), con 1 experto compartido por capa, y el modelo tiene 40 capas en total.
+Clover emplea un backbone hibrido que alterna capas de atencion completa con capas Gated DeltaNet (GDN), un mecanismo de estado recurrente lineal. Cuenta con 40 capas, 256 expertos enrutados con enrutamiento top-8 y un experto compartido por capa. La innovacion principal es la generacion por difusion en bloques: parametros GDN adicionales aprendidos permiten atencion bidireccional dentro de cada bloque de difusion, preservando al mismo tiempo un prefijo causal que mantiene la coherencia con el contexto previo. El modelo puede ejecutarse tambien como un modelo causal ordinario token a token, que es el modo recomendado por el autor de la cuantizacion.
 
-La generación se realiza mediante difusión por bloques (block-diffusion): en lugar de decodificar token a token de forma autorregresiva estricta, el modelo puede refinar bloques de tokens de forma iterativa. No obstante, en llama.cpp los archivos GGUF se ejecutan por defecto en modo de decodificación causal ordinaria, un token por vez. El modelo deriva de Qwen3.6-35B-A3B y, según DiffuSpace, incorpora controles específicos del muestreador de difusión como `dllm_length_penalty` y `dllm_think_end_bias` (no implementados en llama.cpp). Los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) no están disponibles en la información proporcionada.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineacion. El modelo base es Diffuspace/Clover-35B-A3B-Preview, derivado a su vez de Qwen3.6-35B-A3B. Las cuantizaciones se generaron con `convert_hf_to_gguf.py --remote` (sin escribir safetensors en disco) y `llama-quantize` sin imatrix; los pesos cuantizados son deterministas para una revision fija del modelo y del commit de llama.cpp.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline text-generation, tag conversational).
-- Modo de razonamiento (thinking) activado por defecto, desactivable mediante `--chat-template-kwargs '{"enable_thinking": false}'` en llama.cpp.
-- Capacidades agénticas: DiffuSpace publica resultados de benchmarks agénticos donde afirma el estado del arte entre modelos de difusión open source en su lanzamiento.
-- Ventana de contexto de 128K tokens para documentos y conversaciones largas.
-- Decodificación por difusión de bloques en la implementación original (en llama.cpp funciona como modelo causal estándar).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generacion de texto conversacional multi-turno con ventana de 128K tokens.
+- Modo de razonamiento (thinking) activado por defecto.
+- Generacion por difusion en bloques, ademas de decodificacion causal clasica token a token.
+- Capacidades agenticas segun DiffuSpace (benchmarks agenticos reportados en su blog de lanzamiento).
+- Compatibilidad con servidor OpenAI-compatible via `llama-server` (`--jinja` para plantillas de chat).
+- Soporte de decodificacion con parametros ajustados: greedy, presence penalty 0.9 y repetition penalty 1.05 por defecto.
+- Capacidades multilingues: no disponible.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Experimentación con modelos de difusión de texto: al ser uno de los pocos MoE de difusión open source cuantizados a GGUF, es idóneo para investigar el comportamiento de esta familia de arquitecturas en hardware local.
-- Prototipado agéntico local: los benchmarks agénticos publicados por DiffuSpace lo sitúan como candidato para agentes de varios pasos que se ejecutan íntegramente en una GPU de 24 GB con la cuantización Q4_K_M.
-- Procesamiento de documentos largos: la ventana de 128K tokens permite resumir, analizar o hacer preguntas sobre contratos, informes o bases de código extensos en una sola pasada de contexto.
-- Chatbot local con razonamiento: el modo thinking por defecto lo hace adecuado para asistentes que necesitan deliberar antes de responder, con la opción de desactivarlo para respuestas rápidas.
-- Inferencia eficiente en hardware de consumo: con ~3B de parámetros activos por token, el coste por token es comparable al de un modelo denso de 3B pese a tener 35B totales, lo que beneficia el throughput en GPUs de gama alta.
-- Base para fine-tuning o destilación experimental: la licencia Apache-2.0 y la derivación de Qwen3.6-35B-A3B facilitan su uso como punto de partida para investigaciones sobre cuantización y decodificación especulativa (llama.cpp incluye `llama-speculative-simple` en las instrucciones de compilación).
+- Razonamiento agentico con contexto largo: la ventana de 128K permite mantener historiales de herramientas, trazas de ejecucion y documentacion extensa en memoria durante tareas de varios pasos; el modelo base reporta resultados agenticos destacados segun DiffuSpace.
+- Asistentes conversacionales multi-turno: el modo thinking por defecto y la decodificacion causal estandar lo hacen adecuado para chatbots con `llama-server` y API compatible con OpenAI, sin necesidad de infraestructura propietaria.
+- Despliegue en estaciones de trabajo con GPU de consumo: la cuantizacion Q4_K_M (21,17 GB) cabe en 24 GB de VRAM, lo que permite ejecutar un MoE de 35B en una RTX 4090 o similar.
+- Experimentacion con modelos de difusion para texto: investigadores interesados en comparar decodificacion autoregresiva frente a difusion en bloques pueden usar los distintos GGUF para reproducir experimentos con un solo modelo.
+- Procesamiento de documentos largos y resumen: el contexto de 128K admite contratos, informes tecnicos o bases de codigo extensas en una sola pasada, con cuantizaciones Q6_K o Q8_0 para preservar calidad.
+- Prototipado local de pipelines de generacion de texto: la integracion con llama.cpp mainline permite usar `llama-cli` y `llama-server` en entornos sin acceso a APIs en la nube, con licencia Apache-2.0 para uso comercial.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye seis niveles (Q8_0 a Q3_K_S) generados sin imatrix, utiles para medir el impacto de la cuantizacion en un modelo MoE con difusion.
 
 ## Benchmarks y rendimiento
 
-DiffuSpace afirma en su blog de lanzamiento resultados de estado del arte entre modelos de difusión open source, con una imagen de resultados agénticos (`benchmark.png`) enlazada en la model card. No se han publicado cifras numéricas concretas (MMLU, HumanEval, GSM8K, etc.) en la información disponible, y los resultados difundidos corresponden al modelo BF16 original, no a estas cuantizaciones.
+DiffuSpace reporta resultados estado del arte entre modelos de difusion open source en el momento del lanzamiento, con benchmarks agenticos publicados en su blog. Sin embargo, las cifras numericas concretas no se incluyen en la informacion disponible, y los resultados se refieren al modelo BF16 original, no a estas cuantizaciones.
 
 | Benchmark | Resultado |
 |---|---|
-| Agénticos (ver blog de DiffuSpace) | no disponible (solo imagen en la model card) |
-| MMLU / HumanEval / GSM8K | no disponible |
+| Agenticos (DiffuSpace) | reportados como SOTA entre difusion open source; cifras no disponibles |
+| MMLU | no disponible |
+| HumanEval | no disponible |
+| GSM8K | no disponible |
+
+No se han publicado resultados de benchmarks detallados en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Q8_0 (36,90 GB): requiere ~40 GB de VRAM o descarga parcial en RAM; adecuado para A100 40 GB, A6000 48 GB o H100.
-- Q6_K (28,52 GB): cabe en GPUs de 32-40 GB (A100 40 GB, 2x RTX 3090/4090 con offload parcial).
-- Q4_K_M (21,17 GB): cabe cómodamente en una GPU de 24 GB (RTX 3090, RTX 4090, RTX 5090); es la recomendación del autor.
-- IQ4_XS (18,94 GB) y Q3_K_M (16,77 GB): caben en GPUs de 24 GB con margen adicional para el contexto KV cache.
-- Q3_K_S (15,19 GB): la opción más ligera, con degradación visible de calidad.
-- Software: es imprescindible compilar llama.cpp desde el PR #31306 (commit `4838ffb0c8ade92f34d9157deea38d92758ab824`); las versiones publicadas de llama.cpp, Ollama, LM Studio y cualquier aplicación sobre llama.cpp estándar no pueden cargar la arquitectura `clover_moe`. No existe binario precompilado que ejecute este modelo.
-- Despliegue recomendado: `llama-server` (API compatible con OpenAI) o `llama-cli`, con `-ngl 99 -fa on` y contexto de 32K o superior. vLLM, TGI, Ollama y LM Studio: no soportados actualmente.
-- Latencia y throughput: no disponibles; en modo causal el coste por token depende de los ~3B de parámetros activos, comparable a un modelo denso de 3B.
+- VRAM estimada segun cuantizacion: Q8_0 ~36,90 GB; Q6_K ~28,51 GB; Q4_K_M ~21,17 GB; IQ4_XS ~18,94 GB; Q3_K_M ~16,76 GB; Q3_K_S ~15,18 GB.
+- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 y Q6_K; RTX 4090 (24 GB) o A6000 (48 GB) para Q4_K_M e IQ4_XS; GPUs de 16 GB para Q3_K_M y Q3_K_S con margen ajustado.
+- Cabe en GPU de consumo: si, Q4_K_M en 24 GB (RTX 4090, RTX 3090) e IQ4_XS con holgura; Q3_K_M y Q3_K_S en 16 GB.
+- Opciones de despliegue: llama.cpp mainline (commit `e4b6c8ca6` o posterior) con `llama-server` y `llama-cli`. Ollama, LM Studio y binarios antiguos no reconocen la arquitectura `clover_moe` y fallaran al cargar el modelo.
+- Parametros de ejecucion recomendados: `-ngl 99 -fa on -c 32768 --jinja --presence-penalty 0.9 --repeat-penalty 1.05`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Tipo de decodificación | Licencia |
-|---|---|---|---|---|---|
-| Clover-35B-A3B-Preview | 34,66B | ~3B | 128K | Difusión por bloques (causal en llama.cpp) | Apache-2.0 |
-| Qwen3-30B-A3B | 30,5B | ~3B | 128K (extendible) | Autorregresiva | Apache-2.0 |
-| Llama 3.3 70B | 70B (denso) | 70B | 128K | Autorregresiva | Llama Community License |
-| Qwen3-32B | 32B (denso) | 32B | 128K (extendible) | Autorregresiva | Apache-2.0 |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Clover-35B-A3B-Preview | ~34,7B | ~3B | 128K | Apache-2.0 | GGUF, safetensors | MoE con difusion en bloques y Gated DeltaNet |
+| Qwen3.6-35B-A3B (base de origen) | ~35B | ~3B | no disponible | no disponible | safetensors | Modelo autoregresivo del que deriva Clover |
+| Alternativas de difusion open source | no disponible | no disponible | no disponible | no disponible | no disponible | DiffuSpace afirma SOTA entre ellas; sin cifras |
 
-Clover comparte con Qwen3-30B-A3B la filosofía MoE de ~3B activos, pero se distingue por su decodificación por difusión y su backbone híbrido GDN, una diferencia fundamental que actualmente limita su ecosistema de inferencia frente a los modelos autorregresivos, que funcionan en vLLM, Ollama y cualquier runtime estándar.
+No se dispone de datos suficientes para una comparativa cuantitativa con alternativas concretas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad: requiere llama.cpp compilado desde un PR no fusionado (PR #31306); ninguna versión estable, Ollama, LM Studio ni binarios precompilados pueden ejecutarlo. Esto es un bloqueante para la mayoría de entornos de producción.
-- Los controles específicos del muestreador de difusión de DiffuSpace (`dllm_length_penalty`, `dllm_think_end_bias`) no están implementados en llama.cpp, por lo que las cuantizaciones GGUF no aprovechan la decodificación por difusión nativa.
-- Las cuantizaciones se han generado sin matriz de importancia (no-imatrix): Q3_K_M y Q3_K_S degradan visiblemente la calidad según el autor del repo.
-- Los benchmarks publicados corresponden al modelo BF16 original; el rendimiento de las cuantizaciones puede diferir.
+- Compatibilidad estricta con llama.cpp: solo funciona en mainline desde el commit `e4b6c8ca6`; Ollama, LM Studio y binarios anteriores no cargan la arquitectura `clover_moe`.
+- Las cuantizaciones se generaron sin importance matrix; IQ4_XS mejoraria con una imatrix, y Q3_K_M y Q3_K_S degradan la calidad de forma visible segun el autor.
+- Los benchmarks publicados corresponden al modelo BF16 original, no a estas cuantizaciones; el rendimiento real puede diferir.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a modelos generativos de este tamano.
 - Sesgos conocidos: no disponibles.
-- Riesgo de alucinación: no cuantificado; al ser un modelo Preview derivado de Qwen3.6, deben esperarse los riesgos habituales de alucinación de LLM de uso general.
-- Idiomas soportados y datos de entrenamiento: no disponibles, lo que impide evaluar su idoneidad para castellano sin pruebas propias.
-- Soporte de tool calling: no confirmado en la información disponible.
-- Licencia: Apache-2.0, sin restricciones para uso comercial; el aviso de la model card hereda la licencia sin cambios desde DiffuSpace.
-- Al ser un modelo Preview, su calidad y API pueden cambiar en versiones futuras.
+- Idiomas soportados: no disponibles, lo que impide garantizar cobertura multilingue.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo base y sus terminos deben verificarse en el repositorio de DiffuSpace.
+- El repositorio ocupa 275 GB por incluir todas las cuantizaciones; conviene descargar solo el archivo necesario.
+- Los archivos fueron parcheados in situ tras el merge del PR (renombrado de `ssm_a`, eliminacion de 120 tensores legacy); los bytes no referenciados permanecen en el archivo, aunque los pesos cuantizados no cambian.
 
 ## Enlaces
 
-- Repositorio GGUF cuantizado: https://huggingface.co/maternion/Clover-35B-A3B-Preview-GGUF
-- Modelo base (DiffuSpace): https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
+- Repositorio GGUF: https://huggingface.co/maternion/Clover-35B-A3B-Preview-GGUF
+- Modelo base: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
 - Blog de lanzamiento: https://diffuspace.ai/blog/clover-35b/
-- Benchmarks agénticos: https://diffuspace.ai/blog/clover-35b/#agentic-benchmarks
-- Repositorio oficial de código: https://github.com/DiffuSpace/Clover-35B-A3B-Preview
-- PR de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31306
-- Rama de desarrollo (Maphist0): https://github.com/Maphist0/llama.cpp-pub/tree/dev-clover
+- Benchmarks agenticos: https://diffuspace.ai/blog/clover-35b/#agentic-benchmarks
+- Repositorio oficial de codigo: https://github.com/DiffuSpace/Clover-35B-A3B-Preview
+- PR de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31306
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

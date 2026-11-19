@@ -42,28 +42,28 @@
   "sources": [
     {
       "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/?msockid=3b7781687c15682704a9968f7dec69f6",
+      "url": "https://www.microsoft.com/?msockid=20273926644865d5265621306534647a",
       "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
     },
     {
       "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
-      "url": "https://www.microsoft.com/fr-fr?msockid=3b7781687c15682704a9968f7dec69f6",
+      "url": "https://www.microsoft.com/fr-fr?msockid=20273926644865d5265621306534647a",
       "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
     },
     {
-      "title": "Microsoft account | Connectez-vous ou créez votre compte aujourd’hui ...",
-      "url": "https://account.microsoft.com/account?mkt=fr-fr",
-      "snippet": "Connectez-vous avec votre compte Microsoft. Un compte. Un seul emplacement pour tout gérer. Bienvenue dans le tableau de bord …"
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
     },
     {
-      "title": "My Account",
+      "title": "Sign in to your account",
       "url": "https://myaccount.microsoft.com/",
       "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
     },
     {
-      "title": "Support Microsoft",
-      "url": "https://support.microsoft.com/fr-fr/",
-      "snippet": "Le support Microsoft est là pour vous aider avec les produits Microsoft. Trouvez des articles pratiques, des vidéos et des formations …"
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/login",
+      "snippet": "Sign in to manage your Microsoft account and access free online services like Outlook, Word, Excel, and PowerPoint securely from …"
     }
   ]
 }

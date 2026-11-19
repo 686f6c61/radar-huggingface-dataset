@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "rovoro/Llama-3-Open-Ko-8B-lcw-gguf",
+  "slug": "rovoro-llama-3-open-ko-8b-lcw-gguf",
+  "author": "rovoro",
+  "url": "https://huggingface.co/rovoro/Llama-3-Open-Ko-8B-lcw-gguf",
+  "created_at": "2026-11-19T03:03:33.000Z",
+  "updated_at": "2026-11-19T03:05:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540770784,
+  "storage_human": "8.5 GB",
+  "context_length": 8192,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenCode | The open source coding agent for any model",
+      "url": "https://opencode.ai/",
+      "snippet": "OpenCode is the open source coding agent that works where you do. Connect AI models from 200+ providers, including Claude, …"
+    },
+    {
+      "title": "OpenCode | Open Source AI Coding Agent",
+      "url": "https://www.opencode-ai.com/en/",
+      "snippet": "What is OpenCode? OpenCode is an open source AI coding agent that provides terminal interface, desktop app, and IDE extensions …"
+    },
+    {
+      "title": "OpenCode in 2026: Open-Source AI Coding Agent Guide",
+      "url": "https://joulyan.com/en/blog/opencode-in-2026-open-source-ai-coding-agent-for-modern-soft",
+      "snippet": "Below is a practical, 2026-ready view of OpenCode as an open-source AI coding agent, plus the surrounding tools that make it …"
+    },
+    {
+      "title": "OpenCode: The Complete Guide to the Open Source AI Coding Agent (2026)",
+      "url": "https://medium.com/@pioneer-fastino/opencode-the-complete-guide-to-the-open-source-ai-coding-agent-2026-fbe454c37771",
+      "snippet": "Jul 16, 2026 · The 2026 field of coding agents splits into open source terminal tools, IDE-first products, and vendor CLIs. Here is how …"
+    },
+    {
+      "title": "OpenCode 2026 Open-Source Coding Agent | Truescho",
+      "url": "https://truescho.com/en/blog/opencode-open-source-coding-agent",
+      "snippet": "Aug 1, 2026 · Practical OpenCode guide: install paths, multi-provider models, Go/Zen pricing, privacy, and who should use the open …"
+    }
+  ]
+}

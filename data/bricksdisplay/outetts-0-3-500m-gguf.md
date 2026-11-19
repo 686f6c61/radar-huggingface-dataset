@@ -2,52 +2,52 @@
 
 ## Resumen
 
-OuteTTS-0.3-500M-GGUF es la conversión a formato GGUF del modelo de síntesis de voz OuteTTS-0.3-500M desarrollado por OuteAI, publicada por el usuario BricksDisplay. Se trata de un modelo de texto a voz (TTS) basado en un backbone de lenguaje que genera tokens de audio, los cuales son posteriormente decodificados a forma de onda por un códec independiente. La particularidad de esta publicación es que empaqueta el modelo en dos ficheros GGUF complementarios (backbone y códec) que se ejecutan de forma conjunta mediante llama.cpp y codec.cpp, permitiendo inferencia totalmente offline en CPU o GPU.
+OuteTTS-0.3-500M-GGUF es una distribucion en formato GGUF del modelo text-to-speech OuteTTS-0.3-500M desarrollado por OuteAI, publicada por el usuario BricksDisplay. A diferencia de una simple conversion, este repositorio empaqueta el modelo en dos piezas complementarias: un backbone de lenguaje en GGUF que ejecuta llama.cpp y un fichero codec que contiene la parte de audio (decoder/vocoder, encoders de hablante y el adaptador entre ambos), ejecutado por codec.cpp. Esta separacion sigue el mismo patron que los proyectores multimodales de llama.cpp y permite inferencia completamente offline en CPU o GPU (CUDA, Vulkan, Metal).
 
-El modelo resuelve el problema de la síntesis de voz local sin dependencias de servicios en la nube, con un tamaño reducido (515 MB en la configuración más pequeña, 672 MB en la recomendada) que lo hace viable en hardware de consumo e incluso en dispositivos móviles mediante llama.rn. Soporta seis idiomas (inglés, japonés, coreano, chino, francés y alemán) con voces de referencia integradas.
+El modelo resuelve el problema de desplegar sintesis de voz neuronal en entornos sin dependencias de Python pesadas o frameworks de deep learning, manteniendo un tamano reducido. El repositorio incluye las voces de referencia del paquete original de OuteTTS para seis idiomas (ingles, japones, coreano, chino, frances y aleman), con un total de 672 MB en la configuracion recomendada (Q8_0) y 515 MB en la mas pequena (Q4_K_M). El backbone declara 84.756.089 parametros en safetensors, aunque el nombre comercial del modelo referencia 500M, lo que sugiere que la cifra de safetensors corresponde solo a una parte de los componentes.
 
-Es relevante ahora porque consolida un ecosistema de TTS open source ejecutable con las mismas herramientas que ya se usan para modelos de lenguaje (llama.cpp), lo que simplifica el despliegue en producción y en entornos con recursos limitados. La licencia cc-by-sa-4.0 permite uso comercial con atribución y compartir-al-igual.
+La relevancia actual del modelo radica en su portabilidad: los mismos dos ficheros funcionan en linea de comandos (tts-cli), Python (codec_cpp), React Native en iOS y Android (llama.rn) y cualquier host de llama.cpp. La licencia cc-by-sa-4.0 impone compartir-al-igual, un aspecto critico para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Backbone de lenguaje autorregresivo (OuteTTS) + códec de audio (decoder/vocoder, encoders de hablante y adaptador) |
-| Parametros totales | 84.756.089 (según safetensors del modelo base; el nombre comercial indica 500M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_0, Q5_1, Q5_K_S, Q5_K_M, Q6_K, Q8_0, FP16 (backbone); f32, f16, q8_0, q5_k_m, q4_k_m (códec) |
-| Idiomas soportados | Inglés (en), japonés (ja), coreano (ko), chino (zh), francés (fr), alemán (de) |
+| Arquitectura | Backbone de lenguaje tipo transformer (GGUF, ejecutado por llama.cpp) + codec de audio separado (decoder/vocoder, encoders de hablante y adaptador, ejecutado por codec.cpp) |
+| Parametros totales | 84.756.089 (safetensors del backbone); el nombre comercial indica 500M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_0, Q5_1, Q5_K_S, Q5_K_M, Q6_K, Q8_0, FP16 para el backbone; F32, F16, Q8_0, Q5_K_M, Q4_K_M para el codec |
+| Idiomas soportados | en, ja, ko, zh, fr, de |
 | Licencia | cc-by-sa-4.0 |
-| Formato de pesos | GGUF (dos ficheros: backbone + códec) |
+| Formato de pesos | GGUF (backbone y codec por separado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un esquema de dos etapas. La primera es un backbone de lenguaje autorregresivo (derivado de OuteTTS-0.3-500M de OuteAI) que, dado un texto de entrada, genera una secuencia de tokens o embeddings de audio condicionados por una gramática construida a partir del propio texto de entrada para mantener la generación bien formada. La segunda etapa es un códec de audio que contiene el decoder/vocoder, los encoders de hablante y el adaptador entre ambos dominios, y que transforma esa representación intermedia en forma de onda PCM. Esta separación en dos grafos computacionales es análoga a la de los proyectores multimodales de llama.cpp.
+El modelo se compone de dos grafos de computacion independientes que se ejecutan en tandem. El backbone es un modelo de lenguaje en formato GGUF que genera embeddings o tokens de audio condicionados por el texto de entrada, con una gramatica construida a partir del texto de entrada que restringe la generacion para mantenerla bien formada. El codec contiene la parte de audio: decoder/vocoder, encoders de hablante y el adaptador entre backbone y codec. Los ficheros del backbone son los GGUF originales de OuteAI sin modificar; el codec es especifico de este modelo y solo debe usarse con el.
 
-Los ficheros del backbone son los GGUF originales de OuteAI sin modificar; el códec incluye las voces de referencia del paquete upstream de OuteTTS y debe usarse únicamente con este modelo. No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La configuración de muestreo recomendada (temperatura 0.1, top-k 50, top-p 1.0, min-p 0, penalización de repetición 1.1 con ventana de 4096 tokens) se transporta como metadatos `general.sampling.*` en los ficheros GGUF.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card indica que los ficheros del modelo llevan la configuracion de muestreo recomendada como metadatos `general.sampling.*` de llama.cpp, correspondiente a la `GenerationConfig` original: temperatura 0.1, top-k 50, top-p 1.0 (desactivado), min-p 0 (desactivado), penalizacion de repeticion 1.1 y ventana de repeticion 4096. Esta configuracion de baja temperatura es tipica de modelos TTS que requieren estabilidad en la generacion de tokens de audio.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) a partir de texto plano en seis idiomas: inglés, japonés, coreano, chino, francés y alemán.
-- Voces de referencia integradas del paquete upstream de OuteTTS (por ejemplo, `en_male_1` como voz por defecto); listables mediante `tts-cli voices`.
-- Generación de audio en streaming: la API Python expone `tts.stream(text)` para emitir audio a medida que se genera.
-- Ejecución totalmente offline en CPU o GPU (CUDA, Vulkan, Metal).
-- Integración en aplicaciones móviles iOS y Android mediante llama.rn.
-- Control de la generación mediante gramática derivada del texto de entrada, lo que restringe la salida a formatos válidos.
-- No soporta clonación de voz en esta publicación (el autor indica explícitamente "No voice cloning").
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo especializado en TTS, no un LLM de propósito general.
-- No soporta visión ni audio de entrada.
+- Sintesis de voz (text-to-speech) a partir de texto plano en ingles, japones, coreano, chino, frances y aleman.
+- Voces integradas: las voces de referencia del paquete original de OuteTTS para los seis idiomas; `tts-cli voices` las lista y la voz por defecto es `en_male_1`.
+- Generacion en streaming: `tts.stream(text)` en Python produce audio a medida que se genera.
+- Inferencia completamente offline en CPU o GPU (CUDA, Vulkan, Metal).
+- Ejecucion multiplataforma: linea de comandos (tts-cli), Python (codec_cpp), React Native en iOS y Android (llama.rn) y cualquier host de llama.cpp.
+- Control de muestreo configurable mediante flags (temperatura, top-k, top-p, min-p, penalizacion de repeticion, ventana de repeticion).
+- Gramatica derivada del texto de entrada para mantener la generacion bien formada.
+- No dispone de clonacion de voz: la model card indica explicitamente "No voice cloning", aunque la API Python menciona un parametro `ref_audio=` "donde el modelo lo soporte".
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision ni audio de entrada.
 
 ## Casos de uso
 
-- **Lectura de artículos y documentos en local**: el modelo convierte texto plano en audio WAV con la configuración Q8_0 (672 MB totales) en una máquina sin GPU, lo que permite integrar un lector de pantalla o un generador de pódcast en un pipeline de escritorio sin enviar contenido a servicios externos.
-- **Asistentes de voz embebidos en aplicaciones móviles**: mediante llama.rn, los dos ficheros GGUF se cargan en iOS y Android y se puede sintetizar respuesta de voz en el propio dispositivo, preservando la privacidad del usuario y funcionando sin conectividad.
-- **Generación de audiolibros y contenido accesible**: las voces de referencia en inglés, francés, alemán y otros idiomas permiten producir narraciones para contenido editorial o material didáctico, con la opción de elegir la voz concreta por idioma.
-- **Sistemas de anuncios y notificaciones por voz**: la latencia reducida del modelo (500M parámetros, cuantización Q4_K_M de 515 MB) y el soporte de streaming permiten generar avisos cortos en tiempo casi real dentro de aplicaciones de escritorio o servidores modestos.
-- **Prototipado de interfaces conversacionales**: al ejecutarse sobre llama.cpp y codec.cpp con API de línea de comandos y Python, se puede integrar en un pipeline de CI/CD o en un entorno de desarrollo para iterar sobre guiones de voz sin depender de APIs de terceros.
-- **Localización de contenido multilingüe**: con soporte para seis idiomas y voces de referencia nativas por idioma, se puede generar la misma locución en varios idiomas para vídeos, tutoriales o material de marketing, teniendo en cuenta que el texto de entrada debe ir en forma romanizada para chino, japonés y coreano.
-- **Investigación en TTS y evaluación de códecs**: la separación explícita entre backbone y códec facilita experimentar con distintas cuantizaciones (desde Q2_K de 344 MB hasta FP16 de 1.2 GB) y medir el impacto en calidad y velocidad en hardware diverso.
+- Lectura de articulos y documentos en aplicaciones moviles: integrado via llama.rn en iOS y Android, el modelo sintetiza texto en el dispositivo sin conexion, con un peso de 672 MB en Q8_0, adecuado para narracion de contenidos largos en ingles o en los idiomas soportados.
+- Asistentes de voz embebidos en dispositivos sin GPU dedicada: al ejecutarse en CPU mediante llama.cpp y codec.cpp, permite dotar de voz a sistemas empotrados o mini-PC donde no es viable desplegar frameworks de deep learning completos.
+- Generacion de audiolibros y locuciones en seis idiomas: las voces de referencia integradas para en, ja, ko, zh, fr y de permiten producir narraciones multilingues con una sola instalacion, usando la voz adecuada por idioma mediante `--voice`.
+- Prototipado rapido de interfaces de voz en Python: el paquete codec_cpp expone una API minima (`tts.synthesize`, `tts.stream`) que facilita integrar TTS en scripts de investigacion o demos sin gestionar pesos ni frameworks adicionales.
+- Accesibilidad: conversion de texto a voz en aplicaciones de lectura para personas con discapacidad visual, aprovechando el streaming para empezar a reproducir audio antes de completar la sintesis.
+- Generacion de contenido para video y podcasts: sintesis por lotes desde linea de comandos con `tts-cli synthesize` para producir pistas de voz en varios idiomas a partir de guiones de texto.
+- Sistemas de anuncios o notificaciones por voz en produccion offline: integracion en pipelines locales donde la privacidad exige que el texto no salga del dispositivo, con la configuracion de muestreo fija que garantiza salidas estables.
 
 ## Benchmarks y rendimiento
 
@@ -55,39 +55,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM/RAM estimada para inferencia**: entre 515 MB (Q4_K_M + códec q4_k_m) y 1,2 GB (FP16 + códec f16) para el conjunto completo de dos ficheros; la configuración recomendada Q8_0 + códec q8_0 ocupa 672 MB.
-- **GPU recomendadas**: no se especifican modelos concretos en la información disponible; el modelo soporta aceleración por CUDA, Vulkan y Metal, por lo que es compatible con GPUs NVIDIA, AMD e Intel, así como con Apple Silicon.
-- **Compatibilidad con GPU de consumo**: sí, por el reducido tamaño del conjunto (menos de 1,3 GB en cualquier configuración), cabe holgadamente en cualquier GPU de consumo con al menos 2 GB de memoria, e incluso puede ejecutarse íntegramente en CPU.
-- **Opciones de despliegue**: codec.cpp (`tts-cli`, `tts-server`), llama.cpp como runtime del backbone, paquete Python `codec_cpp` y llama.rn para iOS y Android.
-- **Latencia y throughput**: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explicita; por los tamanos de fichero, la configuracion recomendada (Q8_0 backbone + codec Q8_0) ocupa 672 MB en disco, la mas pequena (Q4_K_M) 515 MB y la de mayor calidad (FP16) 1.2 GB. El consumo en memoria sera del orden de estos tamanos mas el overhead de los dos grafos.
+- GPU recomendadas: no se especifican modelos concretos; la model card indica soporte de CUDA, Vulkan y Metal, por lo que cualquier GPU compatible con estas APIs sirve.
+- Cabe en GPU consumer: si, dado que el modelo completo en Q8_0 ocupa 672 MB; cualquier GPU consumer con soporte CUDA, Vulkan o Metal puede ejecutarlo.
+- Opciones de despliegue: tts-cli y tts-server de codec.cpp (que incluye llama.cpp), paquete Python codec_cpp, llama.rn para React Native (iOS/Android) y cualquier host de llama.cpp. No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| OuteTTS-0.3-500M-GGUF (este) | 84,7M (safetensors) / ~500M nominales | No disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | GGUF (backbone + códec) | Hugging Face, ejecutable en CPU/GPU/móvil |
-| OuteTTS-0.3-500M (original) | ~500M | No disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | safetensors (formato original OuteTTS) | Hugging Face, requiere runtime OuteTTS |
-| Alternativas TTS open source de tamaño similar | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
+| OuteTTS-0.3-500M-GGUF (este) | 84.756.089 (backbone safetensors); nombre comercial 500M | no disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | GGUF (backbone + codec) | Voces integradas, sin clonacion, ejecucion offline en CPU/GPU |
+| OuteAI/OuteTTS-0.3-500M (modelo base) | no disponible | no disponible | en, ja, ko, zh, fr, de | cc-by-sa-4.0 | safetensors (original) | Modelo original del que deriva esta conversion; requiere el stack de OuteTTS |
+| Otros modelos TTS de ~500M | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-La comparación con alternativas de la misma categoría no está disponible en la información proporcionada; únicamente se puede contrastar con el modelo base del que deriva esta conversión, que comparte arquitectura, idiomas y licencia, y del que se diferencia por el formato GGUF y por la separación en dos ficheros (backbone y códec) que permite su ejecución con llama.cpp y codec.cpp.
+No se dispone de informacion sobre alternativas comparables en rendimiento, ya que no se han publicado benchmarks en la documentacion disponible.
 
 ## Limitaciones y advertencias
 
-- **Texto de entrada restringido**: solo se aceptan letras y espacios; los números deben escribirse con palabras y el chino, japonés y coreano deben introducirse en forma romanizada (pinyin, romaji, romanización revisada). Esto limita el uso directo sobre texto sin preprocesar.
-- **Sin clonación de voz**: el autor indica explícitamente que esta publicación no soporta clonación de voz, a diferencia de otras variantes o herramientas del ecosistema OuteTTS.
-- **Códec acoplado al modelo**: el fichero de códec incluye las voces de este modelo concreto y debe usarse únicamente con él; no es intercambiable con otros modelos.
-- **Riesgo de alucinación y artefactos de audio**: como todo modelo generativo de audio, puede producir pronunciaciones incorrectas, prosodia anómala o artefactos, especialmente en cuantizaciones agresivas (Q2_K, Q3_K_S) o con texto fuera de dominio.
-- **Cobertura lingüística limitada**: solo seis idiomas; no se ha verificado el rendimiento en otros, y la información no detalla la calidad relativa por idioma.
-- **Licencia cc-by-sa-4.0**: permite uso comercial, pero exige atribución y que las obras derivadas se distribuyan bajo la misma licencia (share-alike), lo que puede condicionar su integración en productos propietarios.
-- **Dependencia de dos runtimes**: requiere llama.cpp para el backbone y codec.cpp para el códec, además de compilador C++ y CMake si se usa la API Python; esto añade complejidad de despliegue frente a soluciones de un solo binario.
-- **Metadatos incompletos**: no se dispone de información sobre longitud de contexto, datos de entrenamiento ni benchmarks publicados, lo que dificulta una evaluación cuantitativa previa a producción.
+- Texto de entrada restringido: solo letras y espacios; los numeros deben escribirse con palabras y el chino, japones y coreano deben ir en forma romanizada (pinyin, romaji, romanizacion revisada). Esto limita el uso directo con texto sin preprocesar.
+- Sin clonacion de voz: la model card indica explicitamente "No voice cloning", aunque la API menciona `ref_audio=` "donde el modelo lo soporte"; conviene verificar el comportamiento real antes de disenar un producto que dependa de ello.
+- El fichero codec es especifico de este modelo y no debe usarse con otros modelos; mezclar ficheros de backbone y codec de distintos repositorios puede producir salidas invalidas.
+- Licencia cc-by-sa-4.0: permite uso comercial pero obliga a compartir las obras derivadas bajo la misma licencia, lo que puede ser incompatible con productos de codigo cerrado.
+- Riesgo de alucinacion y errores de pronunciacion: no se documentan evaluaciones de calidad de sintesis; la temperatura baja (0.1) y la gramatica reducen la variabilidad, pero no se garantiza fidelidad en todos los idiomas.
+- Idiomas limitados a seis; no se soporta espanol, lo que descarta su uso directo en castellano sin un modelo distinto.
+- No se documentan sesgos especificos ni limitaciones de contexto; la longitud de contexto no esta disponible.
+- El repositorio ocupa 21.8 GB por incluir todas las cuantizaciones; el despliegue real solo necesita un fichero de backbone y uno de codec.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/BricksDisplay/OuteTTS-0.3-500M-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/OuteAI/OuteTTS-0.3-500M
-- llama.cpp (runtime del backbone): https://github.com/ggml-org/llama.cpp
-- codec.cpp (runtime del códec y `tts-cli`): https://github.com/mybigday/codec.cpp
-- Documentación Python de codec.cpp: https://github.com/mybigday/codec.cpp/tree/main/python
-- llama.rn (TTS en iOS y Android): https://github.com/mybigday/llama.rn
-- Documentación TTS de llama.rn: https://github.com/mybigday/llama.rn#text-to-speech-tts
+- Modelo base: https://huggingface.co/OuteAI/OuteTTS-0.3-500M
+- codec.cpp (runtime de audio): https://github.com/mybigday/codec.cpp
+- Documentacion Python de codec.cpp: https://github.com/mybigday/codec.cpp/tree/main/python
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- llama.rn (React Native): https://github.com/mybigday/llama.rn
+- Documentacion TTS de llama.rn: https://github.com/mybigday/llama.rn#text-to-speech-tts

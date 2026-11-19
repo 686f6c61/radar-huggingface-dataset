@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "At1uri/fourier-neural-operator-2d-navier-stokes",
+  "slug": "at1uri-fourier-neural-operator-2d-navier-stokes",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/fourier-neural-operator-2d-navier-stokes",
+  "created_at": "2026-11-19T04:27:01.000Z",
+  "updated_at": "2026-11-19T04:27:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "fourier_neural_operator",
+    "physics-informed-ml",
+    "neural-operators",
+    "fourier-neural-operator",
+    "navier-stokes",
+    "fluid-dynamics",
+    "scientific-machine-learning",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2365825,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9465300,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "navier-stokes-turbulent-flow-benchmarks",
+      "metric": "Relative L2 Error",
+      "value": 0.0184
+    }
+  ],
+  "sources": []
+}

@@ -2,87 +2,94 @@
 
 ## Resumen
 
-MiniCPM-V 4.6 Thinking es la variante de razonamiento de cadena de pensamiento larga del modelo multimodal MiniCPM-V 4.6, desarrollado por el laboratorio OpenBMB. Este repositorio aloja la versión cuantizada en formato GGUF (compatible con llama.cpp) del modelo original en BF16. Se trata de un modelo de lenguaje y visión (MLLM) de tamaño reducido, diseñado específicamente para ejecutarse de forma eficiente en dispositivos móviles (iOS, Android y HarmonyOS) sin sacrificar capacidades de razonamiento complejo.
+MiniCPM-V 4.6 Thinking es un modelo multimodal (imagen-texto-a-texto) de tipo MLLM compacto desarrollado por OpenBMB, pensado para ejecutarse en dispositivos de borde como telefonos moviles. Esta ficha corresponde a la version cuantizada en formato GGUF (llama.cpp) del modelo original en BF16, publicada por el mismo autor. Combina un codificador visual SigLIP2 de 400 millones de parametros con un LLM Qwen3.5-0.8B, lo que da un total de aproximadamente 752 millones de parametros.
 
-La arquitectura combina un codificador visual SigLIP2 de 400 millones de parámetros con un modelo de lenguaje Qwen3.5 de 0,8 mil millones de parámetros, alcanzando un total de aproximadamente 752 millones de parámetros en los pesos cuantizados (el modelo completo declara 1,3 mil millones incluyendo componentes adicionales). Incorpora una compresión de tokens visuales mixta 4x/16x que permite procesar imágenes y vídeo con alta resolución manteniendo un coste computacional reducido. Su licencia Apache 2.0 permite uso comercial sin restricciones, y su tamaño compacto lo convierte en una opción atractiva para aplicaciones en el borde (edge computing) y despliegues locales.
+La variante "Thinking" anade una traza de razonamiento explicita (cadena de pensamiento larga) antes de emitir la respuesta final, lo que mejora el rendimiento en tareas de razonamiento multimodal complejo, matematicas y OCR intensivo. Mantiene la misma arquitectura orientada a borde que MiniCPM-V 4.6 e incorpora la compresion mixta de tokens visuales 4x/16x de esa version.
 
-La relevancia actual de este modelo radica en su capacidad para ofrecer razonamiento multimodal avanzado (matemáticas, OCR, análisis de escenas) en hardware limitado, algo que tradicionalmente requería modelos de varios miles de millones de parámetros. Al estar disponible en formato GGUF, puede utilizarse directamente con herramientas como llama.cpp, Ollama o LM Studio, facilitando su integración en entornos de producción ligeros.
+Es relevante ahora porque permite comprension de imagen y video de calidad en hardware muy limitado (telefonos iOS, Android y HarmonyOS), con licencia Apache 2.0 y un formato GGUF listo para desplegar con llama.cpp y ecosistema compatible. La version GGUF ocupa 8,4 GB en el repositorio, lo que incluye varias cuantizaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SigLIP2-400M (vision encoder) + Qwen3.5-0.8B (LLM) |
-| Parametros totales | 752.161.600 (segun safetensors del repo GGUF) |
+| Arquitectura | MLLM: codificador visual SigLIP2-400M + LLM Qwen3.5-0.8B (transformer multimodal) |
+| Parametros totales | 752.161.600 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (varias cuantizaciones, no especificadas individualmente) |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantizacion | GGUF (cuantizaciones multiples en el repo; niveles concretos no disponibles) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors/BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura multimodal estándar: un codificador visual SigLIP2 de 400 millones de parámetros extrae características de las imágenes, que posteriormente se comprimen mediante un mecanismo de reducción de tokens visuales con factores 4x y 16x (seleccionables según la necesidad de detalle). Estas representaciones se alimentan a un modelo de lenguaje Qwen3.5 de 0,8 mil millones de parámetros, que genera texto autoregresivamente. La variante "Thinking" añade una fase explícita de razonamiento intermedio (cadena de pensamiento larga) antes de emitir la respuesta final, lo que mejora el rendimiento en tareas complejas de razonamiento multimodal, matemáticas y OCR.
+MiniCPM-V 4.6 Thinking es un modelo multimodal que empareja un codificador visual SigLIP2 de 400 millones de parametros con un modelo de lenguaje Qwen3.5-0.8B. La innovacion arquitectonica destacable es la compresion mixta de tokens visuales en modos 4x y 16x: el modo 16x reduce el numero de tokens visuales para eficiencia, mientras que el modo 4x preserva mayor detalle para tareas que lo requieren. El procesador admite parametros como `downsample_mode` y `max_slice_nums` para controlar este balance entre detalle y coste computacional.
 
-No se dispone de información detallada sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) en la documentación proporcionada. El modelo base MiniCPM-V 4.6 fue entrenado por OpenBMB, y la variante Thinking se deriva de él mediante un ajuste específico para razonamiento. La cuantización a GGUF se realizó posteriormente para facilitar su ejecución en hardware diverso.
+La variante Thinking genera una cadena de razonamiento larga antes de la respuesta final, lo que incrementa la calidad en razonamiento multimodal, matematicas y OCR a costa de mas tokens generados. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Esta publicacion es una cuantizacion GGUF del modelo base openbmb/MiniCPM-V-4.6-Thinking, no un reentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto multimodal: acepta entradas de imagen y texto, y produce respuestas textuales descriptivas, analiticas o de razonamiento.
-- Razonamiento de cadena de pensamiento larga: genera un trace de razonamiento explicito antes de la respuesta final, mejorando la precision en problemas complejos de matematicas, logica y comprension visual.
-- Comprension de imagenes de alta resolucion: gracias a la compresion de tokens visuales 4x/16x, puede procesar imagenes con gran detalle manteniendo un coste computacional moderado.
-- Procesamiento de video: el modelo soporta entrada de video (se menciona en la documentacion, aunque los detalles tecnicos no estan especificados).
-- OCR y extraccion de texto de imagenes: adecuado para tareas de reconocimiento optico de caracteres en documentos, carteles, tickets, etc.
-- Despliegue en dispositivos moviles: optimizado para ejecutarse en iOS, Android y HarmonyOS, como demuestran las grabaciones de pantalla del modelo card.
-- Compatibilidad con herramientas de inferencia GGUF: puede utilizarse con llama.cpp, Ollama, LM Studio y cualquier aplicacion compatible con este formato.
+- Comprension de imagen y texto (pipeline image-text-to-text).
+- Comprension de video, con decodificacion via torchcodec o PyAV.
+- Razonamiento multimodal con cadena de pensamiento explicita (modo Thinking).
+- Razonamiento matematico y tareas de OCR intensivo, reforzadas por el modo Thinking.
+- Compresion configurable de tokens visuales (4x para mas detalle, 16x para mas eficiencia).
+- Soporte de conversaciones multi-turno mediante plantilla de chat.
+- Compatible con endpoints (tag `endpoints_compatible`).
+- Despliegue en dispositivos iOS, Android y HarmonyOS segun la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente multi-paso: no disponible en la informacion proporcionada.
+- Cobertura multilingue concreta: no disponible.
 
 ## Casos de uso
 
-- Asistente visual en tiempo real para moviles: integrado en una aplicacion de camara, puede describir escenas, identificar objetos o leer texto en carteles y menus. Su tamano reducido permite una latencia aceptable en telefonos de gama media.
-- Accesibilidad para personas con discapacidad visual: el modelo puede narrar el contenido de fotografias, reconocer rostros o leer documentos en voz alta, funcionando completamente en el dispositivo sin conexion.
-- Analisis de documentos y facturas: gracias a su capacidad OCR y de razonamiento, puede extraer campos clave de facturas, recibos o formularios escaneados y estructurarlos en formato JSON, util en aplicaciones de contabilidad personal o empresarial.
-- Educacion y tutoria interactiva: al recibir una foto de un problema matematico o un diagrama, el modelo genera una explicacion paso a paso con razonamiento explicito, sirviendo como tutor personal en apps educativas.
-- Moderacion de contenido visual: puede analizar imagenes para detectar contenido inapropiado o generar descripciones alternativas (alt text) para plataformas sociales, reduciendo costes de moderacion humana.
-- Automatizacion de soporte tecnico: un chatbot que recibe capturas de pantalla de errores o configuraciones puede diagnosticar problemas y sugerir soluciones, aprovechando la comprension visual y el razonamiento del modelo.
-- Vision artificial en el borde para IoT: en dispositivos con recursos limitados (camaras de seguridad, drones), el modelo puede clasificar objetos o detectar anomalias sin necesidad de enviar datos a la nube.
+- OCR en movil: el modelo puede leer tickets, documentos y texto manuscrito desde la camara de un telefono, usando el modo 16x para eficiencia o 4x cuando el detalle es critico, y el modo Thinking para reconstruir texto complejo.
+- Asistencia visual en el dispositivo: identificacion de objetos, fenomenos fisicos o escenas a partir de una foto, sin enviar datos a la nube, gracias a su tamano de 752M de parametros y despliegue en iOS/Android/HarmonyOS.
+- Accesibilidad: descripcion de imagenes y lectura de texto para usuarios con discapacidad visual en tiempo real en telefonos de gama media.
+- Analisis de video corto: resumen o descripcion de clips grabados en el dispositivo, apoyandose en la decodificacion de video y la compresion de tokens visuales para mantener el coste bajo.
+- Educacion interactiva: resolucion paso a paso de problemas de matematicas o fisica a partir de una foto del enunciado, aprovechando la traza de razonamiento del modo Thinking.
+- Verificacion de documentos y formularios: extraccion de campos estructurados de facturas o formularios fotografiados en un flujo movil o de borde.
+- Despliegue en servidores modestos: uso del GGUF con llama.cpp en CPU o GPU de baja gama para servicios de vision por lotes donde el coste por inferencia es prioritario.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye graficos comparativos de rendimiento general, eficiencia de inferencia (throughput en alta concurrencia y tiempo hasta el primer token, TTFT) y comparaciones con otros modelos, pero no se proporcionan valores numericos concretos en el texto accesible. Segun el repositorio GitHub de OpenBMB, MiniCPM-V 4.6 (base) supera a Gemma4-E2B-it en rendimiento y es aproximadamente 1,5 veces mas eficiente en throughput que Qwen3.5-0.8B, pero estos datos no estan desglosados por tarea.
+La model card referencia graficas de rendimiento (comparativa Thinking e Instruct, throughput en alta concurrencia y TTFT por peticion) pero no incluye los valores numericos en texto. No se han publicado resultados de benchmarks numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible oficialmente. Dado el tamano de 752 millones de parametros y el formato GGUF, una cuantizacion Q4_K_M ocuparia aproximadamente 0,5-0,7 GB solo para los pesos del LLM, mas la memoria del vision encoder. En la practica, cabe en GPUs con 4 GB de VRAM o menos.
-- GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB o superior, RTX 3060, RTX 4090) puede ejecutar el modelo sin problemas. Tambien funciona en CPU con llama.cpp, aunque con mayor latencia.
-- Dispositivos moviles: el modelo esta disenado para ejecutarse en telefonos con al menos 4 GB de RAM (iPhone 17 Pro Max, Redmi K70, HUAWEI nova 14 en las demos). No requiere GPU dedicada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o integracion directa via transformers con archivos GGUF. Para produccion en servidores, puede usarse vLLM con adaptacion de GGUF (aunque no esta confirmado oficialmente).
-- Latencia y throughput: no se proporcionan valores numericos. Las demos en moviles muestran tiempos de respuesta aparentemente inferiores a 2 segundos para imagenes simples, pero esto es una observacion cualitativa.
+- VRAM estimada: con 752M de parametros, las cuantizaciones GGUF de 4 bits rondarian el orden de 0,5-1 GB; las de mayor precision, hasta aproximadamente 1,5 GB. Valores exactos por cuantizacion no disponibles.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) sobra para inferencia; el modelo esta disenado para ejecutarse incluso en moviles.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer actuales, y en CPU.
+- Opciones de despliegue: llama.cpp (formato nativo de esta publicacion), transformers (>=5.7.0) para el modelo base, y demas herramientas compatibles con GGUF. vLLM/TGI no confirmados para esta variante.
+- Latencia y throughput: la model card incluye graficas de throughput en alta concurrencia y TTFT por peticion, pero sin cifras en texto; no disponibles como valores concretos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.6 Thinking (GGUF) | ~752M (LLM+vision) | no disponible | Apache 2.0 | GGUF | Razonamiento multimodal, optimizado para moviles |
-| Gemma4-E2B-it | ~2B | no disponible | Gemma license | Safetensors | Segun OpenBMB, MiniCPM-V 4.6 lo supera en rendimiento |
-| Qwen3.5-0.8B | ~0.8B | no disponible | Apache 2.0 | Safetensors | Solo texto, sin vision; MiniCPM-V 4.6 es ~1.5x mas rapido en throughput |
-
-No se dispone de benchmarks comparativos numericos en la informacion proporcionada. La comparativa se basa en las afirmaciones del autor en el repositorio GitHub.
+| MiniCPM-V 4.6 Thinking (GGUF) | 752M | no disponible | Apache 2.0 | GGUF | Variante con razonamiento explicito, orientada a borde |
+| MiniCPM-V 4.6 (Instruct) | misma familia | no disponible | Apache 2.0 | safetensors/GGUF | Sin cadena de pensamiento; menor coste de generacion |
+| Alternativas de misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparacion en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se han documentado sesgos especificos, pero al ser un modelo entrenado con datos web, puede heredar sesgos sociales y culturales presentes en esos datos.
-- Riesgo de alucinacion: como todos los modelos generativos, puede producir respuestas factualmente incorrectas o inventar detalles, especialmente en tareas de razonamiento complejo. La cadena de pensamiento larga puede mitigar algunos errores pero no eliminarlos.
-- Limitaciones de contexto: no se especifica la longitud maxima de contexto en la informacion disponible. Se recomienda verificar la documentacion del modelo base para conocer este parametro.
-- Limitaciones de idioma: no se declaran los idiomas soportados. Dado que el LLM base es Qwen3.5, probablemente tenga buen soporte para ingles y chino, pero no esta confirmado.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion sin restricciones significativas, siempre que se mantenga el aviso de copyright.
-- Caveat de produccion: al ser una version cuantizada, puede haber una ligera degradacion en la calidad de salida comparada con los pesos BF16. Para tareas criticas, se recomienda evaluar ambas versiones.
+- Modelo de 752M de parametros: la capacidad de razonamiento y el conocimiento del mundo son acotados frente a MLLM de mayor tamano; el modo Thinking mitiga pero no elimina esta limitacion.
+- Riesgo de alucinacion en descripcion de imagenes y OCR, especialmente con imagenes de baja calidad o texto poco legible.
+- El modo Thinking incrementa la latencia y el numero de tokens generados; no es adecuado para todos los casos de uso en tiempo real.
+- Idiomas soportados no documentados: verificar el comportamiento en castellano antes de produccion.
+- Longitud de contexto no disponible: planificar con cautela en escenarios de contexto largo o video extenso.
+- Al ser una cuantizacion GGUF, puede haber una perdida de precision respecto al modelo BF16 original, variable segun el nivel de cuantizacion.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los modelos base (Qwen3.5, SigLIP2) referenciados.
+- La cuantizacion la publica el mismo autor (openbmb), lo que reduce el riesgo de artefactos, pero no se detallan los niveles incluidos.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-gguf
-- Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
-- Repositorio GitHub de MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
-- Demo interactiva: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-Demo
-- CookBook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Documentacion de API publica: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
+- Hugging Face (esta publicacion GGUF): https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-gguf
+- Modelo base BF16: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
+- MiniCPM-V 4.6 (Instruct): https://huggingface.co/openbmb/MiniCPM-V-4.6
+- GitHub: https://github.com/OpenBMB/MiniCPM-o
+- Wiki (chino): https://openbmb.cn/docs/
+- CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
+- Demo: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-Demo
+- Documentacion de API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
+- Papers referenciados: arxiv:2604.27393, arxiv:2509.18154, arxiv:2408.01800, arxiv:2605.08985

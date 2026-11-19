@@ -2,103 +2,98 @@
 
 ## Resumen
 
-MiniCPM5-2B-heretic es una variante "decensored" (abliterated) del modelo openbmb/MiniCPM5-2B, publicada por el usuario saidutta69. Se ha generado con la herramienta Heretic v1.4.0, que aplica ablación direccional por capas para localizar y editar las direcciones de pesos responsables del comportamiento de rechazo, en lugar de reentrenar el modelo. La intervención se concentra en las proyecciones de salida de atención (`attn.o_proj`) y en las down-projections del MLP (`mlp.down_proj`), de modo que el conocimiento y el seguimiento de instrucciones del modelo base quedan, según el autor, en gran medida intactos.
+MiniCPM5-2B-heretic es una variante "abliterated" (decensored) del modelo openbmb/MiniCPM5-2B, publicada por el usuario saidutta69 bajo el alias "RACER IS OP". Se ha generado con la herramienta Heretic v1.4.0, que aplica ablación direccional por capas sobre las proyecciones de salida de atención (attn.o_proj) y las down-projections del MLP (mlp.down_proj) para suprimir el comportamiento de rechazo sin recurrir a fine-tuning. El resultado es un modelo de 2.516.756.480 parámetros que conserva las capacidades del modelo base (uso de herramientas, generación de código, contexto largo y modo híbrido Think/No-Think) pero con los guardarraíles de rechazo prácticamente eliminados.
 
-El modelo conserva las capacidades de la familia MiniCPM5 en la clase de 2B: uso de herramientas (tool calling), generación de código, contexto largo y razonamiento híbrido Think / No-Think seleccionable mediante plantilla de chat. Cuenta con 2.516.756.480 parámetros reales (safetensors) y un repositorio de 12,3 GB que incluye pesos en safetensors y una escalera completa de 14 cuantizaciones GGUF más F16.
+El modelo base MiniCPM5-2B pertenece a la familia MiniCPM5 de OpenBMB y está entrenado sobre un conjunto de datos propietario que incluye Ultra-FineWeb, UltraX-Preview, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609. La variante heretic mantiene la licencia Apache 2.0 del original y se distribuye tanto en safetensors (para transformers) como en una escalera completa de 15 cuantizaciones GGUF (de Q2_K a F16), lo que la hace desplegable en GPUs de consumo y en CPU.
 
-Su relevancia práctica es doble: por un lado, ofrece un modelo de 2B ejecutable en GPU de consumo y en CPU para agentes locales y despliegues en el borde; por otro, sirve como material de investigación sobre mecánicas de alineación y rechazo, ya que el autor reporta una caída de rechazos de 99/100 a 4/100 con una divergencia KL de 0,0646 frente al modelo original.
+La relevancia actual del modelo reside en dos factores: por un lado, ofrece un caso de estudio reproducible sobre mecánicas de alineación y rechazo (el autor documenta los parámetros exactos de abliteración y una evaluación de rechazos de 99/100 a 4/100 con divergencia KL de 0.0646); por otro, proporciona una alternativa de 2B parámetros para agentes locales y flujos de trabajo donde el exceso de rechazo del modelo base resulta bloqueante, manteniendo el soporte de tool calling vía SGLang y el contexto largo característico de la familia MiniCPM5.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia MiniCPM5, compatible con la arquitectura llama en llama.cpp |
-| Parametros totales | 2.516.756.480 (aproximadamente 2,52 mil millones) |
-| Longitud de contexto | no disponible (el autor lo etiqueta como "long-context", sin cifra publicada) |
-| Tipos de cuantizacion | GGUF: F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_1, Q4_K_S, Q4_0, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, IQ3_S, Q2_K; ademas pesos completos en safetensors |
+| Arquitectura | Transformer decoder-only (familia MiniCPM5), con modo híbrido Think / No-Think |
+| Parametros totales | 2.516.756.480 (2,52 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (el modelo base se etiqueta como long-context; no se especifica la cifra exacta) |
+| Tipos de cuantizacion | GGUF: F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_1, Q4_0, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, IQ3_S, Q2_K (15 ficheros) |
 | Idiomas soportados | en, zh |
-| Licencia | apache-2.0 (heredada de openbmb/MiniCPM5-2B) |
-| Formato de pesos | safetensors y GGUF |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (transformers) y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La base es openbmb/MiniCPM5-2B, un transformer decoder-only denso de 2,52 mil millones de parametros que se carga de forma nativa en llama.cpp, Ollama, LM Studio y Jan, lo que confirma compatibilidad con el grafo de la arquitectura llama. El modelo soporta un modo de razonamiento hibrido: la plantilla de chat expone el parametro `enable_thinking`, que activa o desactiva el modo Think. Para tool calling, el autor recomienda SGLang como backend, ya que MiniCPM5 emite llamadas a herramientas en estilo XML y el parser `minicpm5` de SGLang las convierte al formato compatible con OpenAI (la model card se corta en este punto y no detalla el resto del flujo).
+La arquitectura es un transformer decoder-only de la familia MiniCPM5, con 2,52 mil millones de parámetros y soporte nativo de un modo de razonamiento híbrido que se activa o desactiva mediante el flag `enable_thinking` en la plantilla de chat. El modelo base fue entrenado por OpenBMB sobre una mezcla de datasets que incluye corpus web (Ultra-FineWeb, Ultra-FineWeb-L3, UltraX-Preview), datos matemáticos (UltraData-Math), datos de código (UltraData-Code) y datos de SFT y RL para agentes (UltraData-SFT-2605, UltraData-SFT-Agent-2609, UltraData-RL-2609). No se especifica en la información disponible el número total de tokens de entrenamiento ni la composición porcentual del dataset.
 
-No hay reentrenamiento ni ajuste fino en esta variante. La modificacion es una abliteration reproducible con Heretic v1.4.0, que calcula direcciones de rechazo por capa y las resta de los pesos. Los parametros publicados de la intervencion son: `direction_index` por capa, `attn.o_proj.max_weight` 1,44 en la posicion 28,24 y `min_weight` 1,16 a distancia 13,17; `mlp.down_proj.max_weight` 1,42 en la posicion 28,73 y `min_weight` 1,11 a distancia 20,52. Las fuentes de datos declaradas (Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609) corresponden al entrenamiento del modelo base, no a esta variante; no se especifica el numero de tokens ni la composicion exacta del dataset.
+La innovación técnica de esta variante concreta es el proceso de abliteración aplicado con Heretic v1.4.0. En lugar de un fine-tuning sobre una persona "helpful", se calculan direcciones de rechazo por capa y se editan los pesos de `attn.o_proj` y `mlp.down_proj` con pesos máximos de 1,44 y 1,42 respectivamente (posiciones 28,24 y 28,73), pesos mínimos de 1,16 y 1,11 (distancias 13,17 y 20,52). Este enfoque preserva el resto de la red y, según el autor, mantiene las capacidades de tool-use, código y razonamiento del modelo original, con un coste medido de divergencia KL de 0,0646 frente al base.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con plantilla de chat estandar (`apply_chat_template`).
-- Razonamiento hibrido: modo Think y modo No-Think conmutables por peticion mediante `enable_thinking`.
-- Tool calling / function calling, con emision de llamadas en estilo XML y conversion a formato OpenAI a traves del parser `minicpm5` de SGLang.
-- Flujos agenticos y razonamiento multi-paso, segun la orientacion declarada del modelo base y las etiquetas del repositorio (`tool-calling`, `long-context`, `on-device`).
-- Generacion de codigo, respaldada por los datasets UltraData-Code del modelo base.
-- Razonamiento matematico, respaldado por los datasets UltraData-Math del modelo base.
-- Capacidades multilingues limitadas a ingles y chino.
-- Contexto largo, etiquetado por el autor aunque sin cifra de tokens publicada.
-- Ejecucion en dispositivo: variantes GGUF desde 0,9 GB para CPU, Apple Silicon y GPU de 6 GB.
-- Supresion del comportamiento de rechazo: el autor reporta 4 rechazos de cada 100 peticiones, frente a 99 de 100 en el modelo original.
-- No dispone de vision ni de audio: el repositorio solo declara la pipeline `text-generation`.
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Razonamiento híbrido con modo Think (cadena de pensamiento explícita) y modo No-Think (respuesta directa), seleccionable por flag.
+- Generación de código y resolución de problemas matemáticos, heredado del entrenamiento sobre UltraData-Code y UltraData-Math.
+- Tool calling / function calling: emite llamadas en formato XML que el parser `minicpm5` de SGLang convierte a `tool_calls` compatibles con OpenAI.
+- Soporte de agentes y razonamiento multi-paso, reforzado por el entrenamiento sobre UltraData-SFT-Agent-2609 y UltraData-RL-2609.
+- Contexto largo (etiqueta long-context del modelo base; longitud exacta no disponible).
+- Ejecución on-device y en edge: cuantizaciones GGUF desde 1,04 GB permiten inferencia en CPU, Apple Silicon y GPUs de 6-12 GB.
+- Supresión del comportamiento de rechazo: 4 rechazos de cada 100 frente a 99 de cada 100 del modelo original, según la evaluación del autor.
 
 ## Casos de uso
 
-- Agentes locales en el puesto de trabajo: el modelo cabe en GPU de 8-12 GB con cuantizaciones Q6_K o Q8_0 y soporta tool calling, por lo que puede orquestar llamadas a APIs y herramientas locales sin enviar datos a un servicio externo.
-- Roleplay y narrativa interactiva: la eliminacion de las direcciones de rechazo permite mantener personajes y tramas que el modelo base bloquearia, con coherencia preservada segun la divergencia KL reportada de 0,0646.
-- Investigacion sobre alineacion y mecanicas de rechazo: los parametros de abliteration publicados y la comparativa de rechazos (99/100 frente a 4/100) permiten reproducir el experimento y estudiar que capas concentran el comportamiento de negativa.
-- Generacion de codigo en pipelines de CI/CD: con 2,5B de parametros y soporte GGUF, puede ejecutarse en un runner con GPU de gama media o incluso en CPU para tareas de autocompletado, generacion de tests y revision de diffs.
-- Asistencia conversacional en el borde: el modelo esta etiquetado como `edge-ai` y `on-device`, y la cuantizacion Q4_K_M (~1,3 GB) cabe en RAM de sistema o en GPU integrada de portatiles, lo que habilita asistentes sin conectividad.
-- Extraccion y resumen de documentos largos en ingles o chino: la ventana de contexto largo declarada por el autor permite procesar documentos extensos para resumen, extraccion de entidades o Q&A sobre el documento.
-- Prototipado rapido de pipelines agenticos: al ser un modelo de 2B, el coste por iteracion es bajo y permite validar prompts, esquemas de tool calling y estrategias multi-paso antes de escalar a modelos mayores.
-- Evaluacion de riesgo en despliegues: util como caso de control para medir cuanto cambia el comportamiento de un modelo al eliminar sus guardarrailes, antes de decidir si un modelo sin censura es aceptable en produccion.
+- Agentes locales en hardware de consumo: con la cuantización Q4_K_M (1,56 GB) el modelo cabe en CPU o en GPUs de 6 GB, permitiendo desplegar un agente con tool calling en un portátil sin conexión a la nube.
+- Automatización de atención al cliente con contexto largo: el modelo puede mantener conversaciones multi-turno extensas y ejecutar funciones (consultar pedidos, abrir tickets) mediante tool calling, con la ventaja de que no rechaza consultas legítimas por falsos positivos de seguridad.
+- Generación de código en pipelines de CI/CD: integrado vía SGLang o vLLM, puede autocompletar y revisar código, y emitir llamadas a herramientas para consultar repositorios o ejecutar tests.
+- Investigación sobre mecánicas de alineación y rechazo: al publicar los parámetros exactos de abliteración y las métricas de rechazo y KL, sirve como caso reproducible para estudiar cómo se codifica el comportamiento de rechazo en un transformer de 2B.
+- Roleplay y escritura creativa sin restricciones: el modelo mantiene coherencia narrativa y contexto largo, adecuado para ficción interactiva o generación de diálogos donde el modelo base rechazaría escenarios con contenido sensible.
+- Asistente de razonamiento en edge para dispositivos móviles o embebidos: el modo No-Think reduce latencia para consultas simples, mientras que el modo Think se reserva para problemas matemáticos o de planificación multi-paso.
+- Traducción y procesamiento bilingüe inglés-chino: el modelo cubre ambos idiomas de forma nativa, útil para pipelines de localización o resumen de documentos en entornos con mezcla de idiomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La unica tabla de rendimiento de la model card compara esta variante con el modelo original en dos metricas internas:
+Los únicos datos de rendimiento publicados en la información disponible son los del proceso de abliteración, no benchmarks estándar (MMLU, HumanEval, GSM8K, etc.):
 
 | Metrica | MiniCPM5-2B-heretic | openbmb/MiniCPM5-2B |
 |---|---|---|
-| Divergencia KL | 0,0646 | 0 (por definicion) |
-| Rechazos | 4/100 | 99/100 |
+| Divergencia KL | 0,0646 | 0 (por definición) |
+| Rechazos (sobre 100) | 4/100 | 99/100 |
 
-El autor no describe la metodologia de medicion de rechazos ni el conjunto de evaluacion empleado, por lo que estas cifras deben tomarse como referencia del publicador y no como una evaluacion independiente. Tampoco se publican datos de latencia o throughput.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada (solo pesos, segun la model card): Q2_K ~0,9 GB; IQ3_S ~1,0 GB; Q3_K_S ~1,0 GB; Q3_K_M ~1,1 GB; Q3_K_L ~1,2 GB; IQ4_XS ~1,2 GB; Q4_K_S ~1,25 GB; Q4_0 ~1,25 GB; Q4_K_M ~1,3 GB; Q4_1 ~1,35 GB; Q5_K_S ~1,45 GB; Q5_K_M ~1,5 GB; Q6_K ~1,7 GB; Q8_0 ~2,1 GB; F16 ~4,0 GB.
-- Margen adicional de aproximadamente 1 GB para el contexto, segun el propio autor.
-- Correspondencia recomendada por GPU: RTX 3060 / 4070 / 5070 (12 GB) con Q8_0; RTX 4060 / 3070 (8 GB) con Q6_K; GTX 1660 Super / 2060 / 3050 laptop (6 GB) con Q5_K_M; CPU-only o Apple Silicon con Q4_K_M en RAM de sistema.
-- Cabe en GPU de consumo: si, desde 6 GB de VRAM con Q5_K_M y desde 8 GB con Q6_K.
-- Opciones de despliegue: llama.cpp (`llama serve -hf saidutta69/MiniCPM5-2B-heretic`), Ollama, LM Studio, Jan, vLLM, SGLang (recomendado para tool calling), transformers y text-generation-inference, segun las etiquetas y la model card.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (solo pesos): 1,04 GB (Q2_K) a 5,04 GB (F16); añadir aproximadamente 1 GB adicional para el contexto según el autor.
+- GPU recomendadas por el autor: RTX 3060 / 4070 / 5070 (12 GB) con Q8_0 (2,68 GB); RTX 4060 / 3070 (8 GB) con Q6_K (2,07 GB); GTX 1660 Super / 2060 / 3050 laptop (6 GB) con Q5_K_M (1,81 GB).
+- CPU-only y Apple Silicon: Q4_K_M (1,56 GB) cabe en memoria del sistema.
+- Cabe en GPU de consumo: sí, desde GPUs de 6 GB con cuantizaciones Q5_K_M o inferiores; en 8 GB y 12 GB con Q6_K y Q8_0 respectivamente.
+- Opciones de despliegue: llama.cpp (`llama serve -hf saidutta69/MiniCPM5-2B-heretic`), Ollama, LM Studio, Jan, transformers, vLLM y SGLang (recomendado para tool calling por su parser `minicpm5`).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|
-| saidutta69/MiniCPM5-2B-heretic | 2.516.756.480 | no disponible (etiquetado como long-context) | 4/100 rechazos, KL 0,0646 frente al base | apache-2.0 | Hugging Face, safetensors y GGUF |
-| openbmb/MiniCPM5-2B | 2,5B (clase, segun el autor) | no disponible | 99/100 rechazos (referencia del autor) | apache-2.0 | Hugging Face, safetensors y GGUF cuantizado |
-| Otras alternativas de la clase 2B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MiniCPM5-2B-heretic | 2,52 B | no disponible (long-context) | Apache 2.0 | safetensors, GGUF (15 quants) | Variante abliterated; 4/100 rechazos; tool calling vía SGLang |
+| openbmb/MiniCPM5-2B | 2,52 B | no disponible (long-context) | Apache 2.0 | safetensors, GGUF | Modelo base; 99/100 rechazos; mismas capacidades sin decensurar |
+| Alternativas de 2-3B tipo Llama / Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada para establecer una comparación numérica |
 
-No se dispone en la informacion proporcionada de datos comparativos frente a otros modelos de la misma clase (por ejemplo, familias 1B-3B de otros laboratorios), por lo que la comparativa se limita al modelo base del que deriva esta variante.
+La comparación más directa y verificable es con el propio modelo base, ya que comparten arquitectura, tamaño y licencia; la diferencia medible es la tasa de rechazo y la divergencia KL. Para alternativas de otros fabricantes no se dispone de datos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo sin guardarrailes de rechazo: la abliteration elimina el comportamiento de negativa del modelo base, por lo que puede generar contenido que el original bloquearia. No es apto para productos orientados al usuario final sin capas de moderacion externas.
-- Riesgo de alucinacion: es un modelo de 2,5B de parametros; su fiabilidad factual es limitada y no se han publicado evaluaciones independientes que la cuantifiquen.
-- Deriva de capacidades: la divergencia KL de 0,0646 frente al modelo original implica un cambio medible en la distribucion de salidas, aunque el autor lo describe como moderado.
-- Idiomas: solo se declaran ingles y chino; no hay soporte declarado de castellano, por lo que el rendimiento en espanol no esta garantizado ni evaluado.
-- Contexto: aunque el autor lo etiqueta como "long-context", no se publica la longitud de ventana soportada, lo que impide dimensionar despliegues que dependan de contexto extenso.
-- Tool calling: la model card recomienda SGLang y su parser `minicpm5`; en otros backends el formato XML de las llamadas a herramientas puede no interpretarse correctamente.
-- Licencia: apache-2.0 permite uso comercial, pero el usuario es responsable del cumplimiento normativo y de las politicas de la plataforma al emplear un modelo sin filtros.
-- Procedencia: el publicador es un usuario individual (`saidutta69`), no el equipo de OpenBMB, y el repositorio no registra descargas ni valoraciones en el momento de la consulta. La model card esta truncada al final, en la seccion de tool calling.
-- Datos de rendimiento autodeclarados: las cifras de rechazos y divergencia KL no van acompanadas de una descripcion del protocolo de evaluacion.
+- La abliteración elimina los guardarraíles de rechazo: el modelo puede generar contenido que el modelo base rechazaría, incluyendo material sensible, lo que exige filtrado y moderación externos en producción.
+- La divergencia KL de 0,0646 indica una desviación medible respecto al base; aunque el autor afirma que las capacidades se preservan, puede haber degradación sutil en tareas de instrucción o coherencia no capturada por la métrica de rechazos.
+- Riesgo de alucinación inherente a un modelo de 2B parámetros; no debe usarse como fuente de verdad sin verificación.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado y probablemente sea inferior.
+- La longitud exacta de contexto no está documentada en la información disponible, lo que dificulta dimensionar despliegues con ventanas largas.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre el cumplimiento normativo del contenido generado; la responsabilidad recae en el desplegador.
+- El repositorio incluye una imagen externa alojada en un dominio de terceros (`photu.kashyalabanavli.site`); conviene no cargarla en entornos controlados.
+- No se han publicado benchmarks estándar que permitan validar las capacidades de código, matemáticas o tool calling de forma independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/MiniCPM5-2B-heretic
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Licencia del modelo base: https://huggingface.co/openbmb/MiniCPM5-2B/blob/main/LICENSE
-- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
-- Articulo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration
+- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
+- Artículo sobre abliteración de mlabonne: https://huggingface.co/blog/mlabonne/abliteration
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces obtenidos (repositorios de jailbreaks de ChatGPT, foros de Reddit y el instalador de GitHub Desktop) no guardan relacion con la ficha.

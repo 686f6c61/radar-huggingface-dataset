@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "faecc/clip-text-onnx",
+  "slug": "faecc-clip-text-onnx",
+  "author": "faecc",
+  "url": "https://huggingface.co/faecc/clip-text-onnx",
+  "created_at": "2026-11-19T02:45:26.000Z",
+  "updated_at": "2026-11-19T03:06:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "clip",
+    "feature-extraction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126432338,
+  "storage_human": "126 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

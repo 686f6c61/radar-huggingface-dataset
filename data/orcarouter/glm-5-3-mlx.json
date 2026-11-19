@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
-      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
-      "snippet": "Refusal removal is baked directly into the weights.\" That&#x27;s OrcaRouter&#x27;s own framing, posted August 29, 2026, for its uncensored build of GLM-5.3-Flash — Z.ai&#x27;s 320B-total, 18B-active mixture-of-experts model that shipped under MIT license three days earlier as the reveal behind the \"Ox Alpha\" stealth preview. The tweet pulled 87 fire reactions."
-    },
-    {
-      "title": "orcarouter.ai - One AI gateway: adaptive LLM routing & governance",
-      "url": "https://www.orcarouter.ai/",
-      "snippet": "One OpenAI-compatible AI gateway for production AI — adaptive routing, load balancing, guardrails, agent firewall, observability and governance across 200+ models."
-    },
-    {
-      "title": "GLM 5.3 MLX by orcarouter — VRAM 125.6GB, 1024K context | LLM Explorer",
-      "url": "https://llm-explorer.com/model/orcarouter%2FGLM-5.3-MLX,4WoECaLGgz3sCoh6r5i1QD",
-      "snippet": "GLM 5.3 MLX is an open-source 127.4b LLM by orcarouter. VRAM 125.6GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    },
-    {
-      "title": "GLM-5.3 | OpenLM.ai",
-      "url": "https://openlm.ai/glm-5.5/",
-      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
-    },
-    {
-      "title": "GLM 5.3 Flash API — Pricing & Benchmarks - orcarouter.ai",
-      "url": "https://www.orcarouter.ai/models/z-ai/glm-5.3-flash",
-      "snippet": "Drop-in GLM 5.3 Flash API for any OpenAI SDK — $0.07 / $0.25 per 1M tokens, p50 1500ms via OrcaRouter. Zero markup. Zero migration. One API."
-    }
-  ]
+  "sources": []
 }

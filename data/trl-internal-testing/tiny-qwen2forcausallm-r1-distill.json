@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5 · Hugging Face",
-      "url": "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
-      "snippet": "Tiny Qwen2ForCausalLM This is a minimal model built for unit tests in the TRL library."
-    },
-    {
-      "title": "trl-internal-testing (trl internal testing) - Hugging Face",
-      "url": "https://huggingface.co/trl-internal-testing",
-      "snippet": "Internal testing artifact mangement for trl library This is the collection of models and datasets used for TRL unit testing. You can generate the models and datasets with the following scripts: Models generation script: link Zen dataset generation script: link"
-    },
-    {
-      "title": "Package trl-internal-testing-tiny-qwen2forcausallm-2.5 · GitHub",
-      "url": "https://github.com/orgs/modelpack/packages/container/package/trl-internal-testing-tiny-qwen2forcausallm-2.5",
-      "snippet": "Install from the command line Learn more about packages $ docker pull ghcr.io/ modelpack / trl-internal-testing-tiny-qwen2forcausallm-2.5:latest"
-    },
-    {
-      "title": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5 | QuantaMrkt",
-      "url": "https://quantamrkt.com/models/trl-internal-testing--tiny-qwen2forcausallm-2.5",
-      "snippet": "This model has a real FIPS 204 ML-DSA-87 (Dilithium5) signature from the platform signing authority. Signature chain includes 2 verification (s). Last verified 2026-05-08. ML-DSA-87 Signer: did:web:quantamrkt.com:chain:authority View public key"
-    },
-    {
-      "title": "Trl Internal Testing Tiny…: 1GB VRAM (Q4) — Best GPUs",
-      "url": "https://localai.computer/models/trl-internal-testing-tiny-qwen2forcausallm-2.5",
-      "snippet": "Quick answer: Trl Internal Testing Tiny Qwen2forcausallm 2.5 needs roughly 1 GB VRAM for Q4_K_M and 1 GB for Q5_K_M. Use Q8 (1 GB) or FP16 (1 GB) for higher quality output. Full-model (FP16) requirements are shown by default. Quantized builds like Q4 trade accuracy for lower VRAM usage. Ready to buy?"
-    }
-  ]
+  "sources": []
 }

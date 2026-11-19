@@ -48,31 +48,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Task results",
-      "dataset": "BFCL simple",
-      "metric": "Tool calls (of 400)",
-      "value": 372
-    },
-    {
-      "task": "Task results",
-      "dataset": "GSM8K test",
-      "metric": "Correct (of 250)",
-      "value": 228
-    },
-    {
-      "task": "Closeness to the original",
-      "dataset": "Held-out chat",
-      "metric": "Same next token %",
-      "value": 92.98
-    },
-    {
-      "task": "Task results",
-      "dataset": "BFCL 200-399",
-      "metric": "Tool calls (of 200)",
-      "value": 184
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

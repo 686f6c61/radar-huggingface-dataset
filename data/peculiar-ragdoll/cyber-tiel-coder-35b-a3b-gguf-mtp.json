@@ -37,9 +37,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 395,
+  "likes": 398,
   "downloads_30d": 972053,
-  "trending_score": 11.899999999999999,
+  "trending_score": 12.6,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
   "storage_bytes": 267166417742,
@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Mahjong Spielen",
-      "url": "https://www.mahjongkostenlos.de/mahjong-spielen",
-      "snippet": "Was sagt Dein Horoskop? Finde es bei dieser Mahjong Version.."
-    },
-    {
-      "title": "Mahjong Kostenlos - MahjongKostenlos.de",
-      "url": "https://www.mahjongkostenlos.de/",
-      "snippet": "Willkommen bei MahjongKostenlos.de, die Webseite für Fans der Mahjong Spiele. Wir haben viele Spiele für Dich gesammelt und …"
-    },
-    {
-      "title": "Mahjong Titans - MahjongKostenlos.de",
-      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-titans",
-      "snippet": "Name: Mahjong Titans Gespielt: Du bist Spieler Nummer 14944226 Anleitungen: Dies ist die klassische Version von Mahjong Titans. …"
-    },
-    {
-      "title": "Mahjong Klassisch",
-      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-klassisch",
-      "snippet": "Name: Mahjong Klassisch Gespielt: Du bist Spieler Nummer 7399450 Anleitungen: Diese klassische Version des Spiels besteht …"
-    },
-    {
-      "title": "Mahjong Relax",
-      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-relax",
-      "snippet": "Name: Mahjong Relax Gespielt: Du bist Spieler Nummer 12513213 Anleitungen: Dies ist eine besonders entspannte Version von …"
-    }
-  ]
+  "sources": []
 }

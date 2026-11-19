@@ -2,104 +2,105 @@
 
 ## Resumen
 
-LFM3-1.7B-Claude-Fable5.1 es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario independiente saidutta69 y publicado en Hugging Face. El objetivo del modelo es especializar un modelo de lenguaje pequeno (1.728 millones de parametros) en la emision de llamadas a herramientas (tool calling) con el esquema del protocolo de Claude Code, incluyendo herramientas como `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `WebSearch`, `TodoWrite`, `TaskCreate`, `TaskUpdate`, `TaskOutput` y `ToolSearch`. El modelo base ya era capaz de razonamiento agentico; este checkpoint refuerza la fidelidad al esquema de herramientas dentro de un arnes tipo Claude Code.
+LFM3-1.7B-Claude-Fable5.1 es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario saidutta69, orientado específicamente a la emisión fiable de llamadas a herramientas (tool calling) con el protocolo de Claude Code. El modelo parte de la arquitectura híbrida LFM3 de Liquid AI, con 1.728.801.536 parámetros totales, y ha sido entrenado mediante LoRA en bf16 sobre el split `claude_code` del dataset saidutta69/fable-5.1-premium-v2, que contiene valores reales de argumentos en lugar de placeholders.
 
-El modelo resuelve un problema concreto: en el modelo base, aproximadamente el 23% de las llamadas parseadas contenian nombres de herramienta inventados, lo que rompe bucles de agente. Este fine-tune elimina ese fallo (100% de nombres validos en las llamadas parseadas) a costa de un ligero aumento de la perplexity en texto libre (de 17,35 a 23,32 en wikitext), lo que lo convierte en un especialista y no en una mejora general del modelo base.
+El problema que resuelve es concreto: el modelo base LFM3-1.7B, pese a ser ya agéntico, inventa nombres de herramienta en aproximadamente un 23% de las llamadas parseadas, lo que rompe bucles de ejecución en harnesses estrictos. Este checkpoint eleva la validez del nombre de herramienta al 100% de las llamadas parseadas y garantiza la presencia de argumentos requeridos y tipos correctos. No obstante, el autor advierte explícitamente de que no es una mejora general del LFM3: la perplejidad en wikitext sube de 17,35 a 23,32, por lo que el modelado de texto libre se degrada.
 
-Es relevante ahora porque permite ejecutar un protocolo de agente tipo Claude Code en local con un modelo de 1,7B que ocupa 1,10 GB en cuantizacion Q4_K_M, lo que lo hace viable en CPU y en dispositivos de borde, con un contexto declarado de 262.144 tokens en los ficheros GGUF.
+Es relevante ahora porque permite ejecutar un protocolo de herramientas estilo Claude Code en local con un modelo de 1,7B que en cuantización Q4_K_M ocupa 1,10 GB, lo que lo hace viable en CPU, dispositivos de borde y GPUs de consumo, con una ventana de contexto declarada de 262.144 tokens. La licencia es lfm1.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido LFM3 (modelo base LiquidAI/LFM3-1.7B) |
+| Arquitectura | Híbrida LFM3 (transformer híbrido con capas convolucionales; `arch=lfm3` en GGUF) |
 | Parametros totales | 1.728.801.536 |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (declarado en los GGUF) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens (declarado en los GGUF: `context_length=262144`) |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q4_K_M (GGUF); bf16 en safetensors |
-| Idiomas soportados | Ingles (en) |
-| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | safetensors (bf16), GGUF (f16, Q8_0, Q6_K, Q5_K_M, Q4_K_M) |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | lfm1.0 (`license: other`, `license_name: lfm1.0`) |
+| Formato de pesos | safetensors (bf16) y GGUF (f16, Q8_0, Q6_K, Q5_K_M, Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LiquidAI/LFM3-1.7B, un transformer hibrido de la familia LFM3 de Liquid AI. El fine-tune se realizo mediante LoRA en bf16 sin cuantizacion, con rango r=32, alpha=64 y dropout de 0,05, aplicado a las proyecciones `q/k/v/o_proj`, a las convoluciones `in_proj`/`out_proj` y a las capas MLP `w1/w2/w3`. Se entrenaron 48.467 segmentos procedentes de 4.132 trazas, con ventanas de 4.096 tokens y enmascaramiento exclusivo del turno del asistente (los tokens de usuario, sistema y salidas de herramientas se marcan con -100). El esquema de entrenamiento consistio en 3.030 pasos, batch efectivo de 16, tasa de aprendizaje 1e-4 con decaimiento coseno y 3% de warmup, sobre una unica GPU RTX PRO 6000 Blackwell (102 GB) durante 6 horas y 39 minutos, con un pico de 31 GB de memoria. La perdida final fue de 0,200.
+El modelo base es LFM3-1.7B de Liquid AI, una arquitectura híbrida que combina mecanismos de atención con capas convolucionales; los objetivos LoRA del ajuste incluyen `q/k/v/o_proj`, las convoluciones `in_proj`/`out_proj` y las capas MLP `w1/w2/w3`, lo que confirma la presencia de bloques convolucionales en la arquitectura. El ajuste se realizó con LoRA en bf16 sin cuantización, con r=32, alpha=64 y dropout 0,05, sobre 48.467 segmentos extraídos de 4.132 trazas, con ventanas de 4.096 tokens. El enmascaramiento afecta solo al turno del asistente (los tokens de usuario, sistema y salidas de herramientas se marcan con -100). El entrenamiento constó de 3.030 pasos, batch efectivo 16, LR 1e-4 con schedule coseno y 3% de warmup, ejecutado en una RTX PRO 6000 Blackwell (96 GB) durante 6 h 39 m con un pico de 31 GB, alcanzando una pérdida final de 0,200.
 
-Los datos de entrenamiento provienen del split `claude_code` del dataset saidutta69/fable-5.1-premium-v2, elegido porque el split `fable_code` contenia 203.750 de 203.794 llamadas con marcadores de posicion genericos (como `<file_path>` o `<bash_command>`), lo que lo hacia inutil para la fidelidad de argumentos. Los esquemas de herramientas del dataset son reconstruidos, no los originales de Claude Code, por lo que no debe asumirse una paridad byte a byte con una instalacion real. Los esquemas se inyectan mediante la plantilla de chat propia de LFM3 con `enable_thinking=False`.
+Los esquemas de herramientas se inyectan mediante la propia plantilla de chat de LFM3 con `enable_thinking=False`. Un detalle técnico relevante es que los esquemas del dataset son reconstruidos, no los esquemas originales de Claude Code, por lo que el autor advierte de que no debe asumirse paridad byte a byte con una instalación real de Claude Code. El dataset `fable_code` se descartó porque 203.750 de 203.794 llamadas contenían placeholders de valor completo (solo 44 llamadas limpias), mientras que el split `claude_code` contiene valores reales como rutas y comandos de shell.
 
 ## Capacidades
 
-- Generacion de llamadas a herramientas con nombres validos del protocolo Claude Code: `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `WebSearch`, `TodoWrite`, `TaskCreate`, `TaskUpdate`, `TaskOutput` y `ToolSearch`.
-- Argumentos tipados y completos: el 100% de las llamadas parseadas presentan los argumentos requeridos y con tipos correctos.
-- Soporte de tool calling y function calling a traves de la plantilla de chat del modelo base.
-- Capacidad agentica y de razonamiento multi-paso heredada del modelo base LFM3.
-- Generacion de codigo y comandos de shell dentro de las llamadas a herramientas.
-- Conversacion multi-turno e instrucciones (chat, instruct).
-- Capacidad de contexto largo (262.144 tokens declarados en los GGUF).
-- Capacidad de ejecucion en CPU y en dispositivos de borde gracias a su tamano reducido.
-- Modo thinking desactivable mediante `enable_thinking=False` en la plantilla de chat.
+- Emisión de llamadas a herramientas con nombres válidos y argumentos tipados para el protocolo de Claude Code: `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `WebSearch`, `TodoWrite`, `TaskCreate`, `TaskUpdate`, `TaskOutput`, `ToolSearch`.
+- Tool calling y function calling con esquemas inyectados mediante la plantilla de chat del modelo.
+- Generación de código y comandos de shell dentro de un harness agéntico.
+- Razonamiento multi-paso y uso de agentes en bucles de ejecución con herramientas.
+- Conversación multi-turno e instrucciones (chat, instruct, instruction-following).
+- Ventana de contexto larga declarada de 262.144 tokens.
+- Inferencia en local: CPU, dispositivos de borde y GPUs de consumo gracias a los GGUF desde 1,10 GB.
+- Modo thinking desactivable (`enable_thinking=False`), que es la configuración usada en el entrenamiento.
+- Capacidades multilingües: solo inglés declarado.
 
 ## Casos de uso
 
-- Agentes de codificacion locales: el modelo emite llamadas `Read`, `Edit`, `Write` y `Bash` con nombres y argumentos validos, lo que permite integrarlo en un arnes tipo Claude Code que ejecute acciones sobre un repositorio sin romper el bucle por nombres de herramienta invalidos.
-- Automatizacion de terminal y shell: con la herramienta `Bash` y comandos reales, puede encadenarse en flujos de automatizacion de tareas de sistema operativo en entornos controlados, con la ventaja de ocupar solo 1,10 GB en Q4_K_M.
-- Busqueda y recuperacion de informacion en repositorios: las herramientas `Glob` y `Grep` permiten localizar ficheros y patrones dentro de un proyecto, adecuado para tareas de exploracion de codigo en local.
-- Ejecucion en dispositivos de borde y CPU: al caber en 1,10 GB (Q4_K_M) y disponer de versiones GGUF para llama.cpp, es viable en portatiles sin GPU dedicada o en entornos con recursos limitados.
-- Asistentes de desarrollo integrados en pipelines de CI/CD: puede generar y validar llamadas a herramientas en pasos automatizados de revision o generacion de codigo, con la garantia de que los nombres de herramienta son validos en el 100% de las llamadas parseadas.
-- Prototipado de agentes con contexto largo: los 262.144 tokens declarados permiten mantener trazas de conversacion extensas en pruebas de agentes multi-paso, aunque el entrenamiento se realizo con ventanas de 4.096 tokens.
-- Servicio de chat y respuesta a instrucciones: mantiene un rendimiento factual de 11/11 en la prueba de chat y matematicas del autor, por lo que puede usarse como asistente conversacional basico en ingles.
+- Agente de codificación local estilo Claude Code: el modelo emite llamadas a `Read`, `Edit`, `Write` y `Bash` con nombres y tipos válidos, lo que permite integrarlo en un harness que aborta el bucle ante un nombre de herramienta inválido; el modelo base fallaba en ese punto en un 23% de las llamadas parseadas.
+- Automatización de terminal y shell: con la herramienta `Bash` y argumentos tipados, puede generar comandos de shell dentro de pipelines de automatización de tareas de desarrollo, ejecutándose en local sin depender de APIs externas.
+- Búsqueda y navegación de repositorios: las herramientas `Glob` y `Grep` permiten localizar ficheros y patrones en un árbol de código; el modelo produce los argumentos requeridos en el 100% de las llamadas parseadas.
+- Obtención de información web dentro de un agente: `WebFetch` y `WebSearch` habilitan flujos de recuperación de documentación o referencias durante una tarea de desarrollo.
+- Gestión de tareas en agentes multi-paso: `TodoWrite`, `TaskCreate`, `TaskUpdate` y `TaskOutput` permiten estructurar y seguir el estado de tareas largas dentro de un agente.
+- Despliegue en dispositivos de borde o CPU: con el GGUF Q4_K_M de 1,10 GB puede ejecutarse con llama.cpp en entornos con recursos limitados, útil para asistentes de desarrollo embebidos o entornos sin GPU.
+- Edición de ficheros asistida: `Edit` y `Write` con rutas reales permiten aplicar cambios sobre el código; conviene ampliar el presupuesto de tokens de generación porque el modelo produce cuerpos de `Write` y `Bash` más extensos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre 100 muestras de test reservadas del split `claude_code`, decodificacion greedy y presupuesto de 2.048 tokens, comparando con el modelo base LFM3-1.7B:
+Evaluación del autor sobre 100 muestras de test retenidas del split `claude_code`, decodificación greedy, presupuesto de 2.048 tokens, mismo harness para ambos modelos:
 
 | Metrica | LFM3-1.7B base | Este modelo |
 |---|---|---|
-| Perdida supervisada en test reservado | 1,731 | 0,233 |
+| Pérdida supervisada en held-out | 1,731 | 0,233 |
 | Inicia una llamada a herramienta | 97% | 100% |
 | Llamada parseable | 97% | 95% |
-| Nombre de herramienta valido (por muestra) | 75% | 95% |
-| Nombre de herramienta valido (de las parseadas) | 77,3% | 100% |
+| Nombre de herramienta válido (por muestra) | 75% | 95% |
+| Nombre de herramienta válido (de las parseadas) | 77,3% | 100% |
 | Argumentos requeridos presentes (de las parseadas) | 96,9% | 100% |
 | Tipos de argumento correctos (de las parseadas) | 100% | 100% |
-| Muestra de chat/matematicas | 11/11 factual | 11/11 factual |
-| Perplexity en wikitext | 17,35 | 23,32 |
+| Muestra de chat/matemáticas | 11/11 factuales | 11/11 factuales |
+| Perplejidad en wikitext | 17,35 | 23,32 |
 
-El 5% de llamadas no parseables se atribuye a truncamiento en el limite de 2.048 tokens, ya que el modelo genera cuerpos de `Write` y `Bash` mas extensos. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+El 5% de llamadas no parseables corresponde a salidas truncadas por el límite de 2.048 tokens: el modelo escribe cuerpos de `Write` y `Bash` más completos y algunas llamadas no se cierran dentro del presupuesto. El autor indica que ampliar el presupuesto o hacer streaming cierra esa brecha.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,5 GB en bf16/f16, 1,85 GB en Q8_0, 1,43 GB en Q6_K, 1,26 GB en Q5_K_M y 1,10 GB en Q4_K_M.
-- GPU recomendadas: el entrenamiento se realizo en una RTX PRO 6000 Blackwell (102 GB) con un pico de 31 GB, pero la inferencia cabe en GPUs consumer. Cualquier GPU con al menos 2 GB de VRAM libre puede ejecutar las cuantizaciones Q4_K_M y Q5_K_M.
-- Cabe en GPU consumer: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares; tambien en CPU.
-- Opciones de despliegue: llama.cpp (requiere compilacion reciente desde master, ya que el soporte de LFM3 es reciente), transformers con `trust_remote_code=True`, y Ollama a traves de los GGUF. vLLM y TGI no estan documentados en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 3,46 GB en bf16 (safetensors), 3,47 GB en f16 GGUF, 1,85 GB en Q8_0, 1,43 GB en Q6_K, 1,26 GB en Q5_K_M y 1,10 GB en Q4_K_M.
+- GPU recomendadas: el entrenamiento se realizó en una RTX PRO 6000 Blackwell (96 GB) con pico de 31 GB, pero para inferencia basta con GPUs de consumo; cualquier GPU con al menos 2 GB libres puede ejecutar el Q4_K_M.
+- Cabe en GPU de consumo: sí, en todas las gamas actuales con el GGUF Q4_K_M; también en CPU e inferencia on-device.
+- Opciones de despliegue: llama.cpp (requiere compilación desde master, ya que el soporte de LFM3 es reciente), Transformers con `trust_remote_code=True` y `dtype=torch.bfloat16`, y GGUF compatible con llama.cpp; los tags mencionan también Ollama y vLLM como ecosistema, aunque la model card solo documenta comandos para llama.cpp y Transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Claude-Fable5.1 | 1,728 M | 262.144 tokens | Tool calling Claude Code | lfm1.0 | Hugging Face (safetensors, GGUF) |
-| LiquidAI/LFM3-1.7B | 1,7B (no disponible el dato exacto) | no disponible | Modelo general agentico | lfm1.0 | Hugging Face |
-| Otros fine-tunes de LFM3-1.7B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LFM3-1.7B-Claude-Fable5.1 | 1,73 B | 262.144 | Tool calling Claude Code | lfm1.0 | HF (safetensors + GGUF) |
+| LiquidAI/LFM3-1.7B (base) | 1,73 B | 262.144 | Propósito general agéntico | lfm1.0 | HF |
+| Alternativas de 1-2 B para tool calling | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks estandar para comparar con alternativas de la misma categoria en la informacion proporcionada.
+La comparación cuantitativa directa con el modelo base está en la tabla de benchmarks: este checkpoint mejora la validez del nombre de herramienta del 77,3% al 100% de las llamadas parseadas, a costa de un aumento de perplejidad en wikitext de 17,35 a 23,32. No se dispone de datos de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un especialista, no una mejora general: la perplexity en wikitext sube de 17,35 a 23,32, y el modelado de texto libre se degrada. Para escritura general debe usarse el modelo base.
-- El 5% de llamadas no parseables se debe al truncamiento en el limite de 2.048 tokens; es necesario aumentar el presupuesto de generacion o usar streaming para cerrar esas llamadas.
-- Los esquemas de herramientas del dataset son reconstruidos, no los originales de Claude Code; no debe asumirse paridad byte a byte con una instalacion real.
-- Solo soporta ingles (en); no se declara soporte multilingue.
-- Riesgo de alucinacion en texto libre, agravado por el aumento de perplexity respecto al modelo base.
-- La licencia lfm1.0 (etiquetada como "other") impone condiciones que deben revisarse en el fichero LICENSE antes de un uso comercial; no se detallan en la informacion disponible.
-- El soporte de LFM3 en llama.cpp es reciente; es necesario actualizar llama.cpp desde master antes de cargar los GGUF.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
-- La fecha de creacion indicada (2026-11-01) es posterior a la fecha actual; debe verificarse la autenticidad y procedencia del repositorio antes de usarlo en produccion.
+- No es una mejora general del LFM3: el modelado de texto libre se degrada (perplejidad en wikitext de 17,35 a 23,32); el autor recomienda usar el modelo base para escritura general.
+- Los esquemas de herramientas del dataset son reconstruidos, no los originales de Claude Code; no debe asumirse paridad byte a byte con una instalación real.
+- El 5% de llamadas no parseables se debe a truncamiento en el límite de 2.048 tokens; en producción conviene ampliar el presupuesto o usar streaming.
+- Solo soporta inglés según la model card.
+- Licencia lfm1.0 (`license: other`): es necesario revisar los términos del fichero LICENSE antes de uso comercial.
+- Riesgo de alucinación y sesgos: no se han publicado evaluaciones específicas en la información disponible.
+- Requiere `trust_remote_code=True` en Transformers y una versión de llama.cpp compilada desde master con soporte reciente de LFM3.
+- El contexto declarado de 262.144 tokens no implica que el modelo mantenga calidad en ventanas tan largas; el entrenamiento usó ventanas de 4.096 tokens.
+- El repositorio ocupa 12,6 GB, aunque basta con descargar el GGUF deseado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/saidutta69/fable-5.1-premium-v2
-- Fichero de licencia: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1/blob/main/LICENSE
+- Licencia: LICENSE (referenciada en el repositorio del modelo)
+- llama.cpp: no disponible enlace directo en la información proporcionada

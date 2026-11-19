@@ -2,92 +2,97 @@
 
 ## Resumen
 
-`pythia-160m-mic` es un artefacto de prueba publicado por la organización `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable para generación de texto: se trata de un "fixture" reducido construido a partir de `EleutherAI/pythia-160m` con pesos aleatorios (semilla 17) y un config recortado a 2 capas ocultas. Su propósito es servir como banco de pruebas para verificar contratos de integración de frameworks (concretamente Transformers) sin necesidad de descargar el checkpoint original completo.
+`pythia-160m-mic` es un artefacto de prueba (test fixture) publicado por la organización `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable para inferencia real: se trata de una versión "adelgazada" (*slim*) del modelo `EleutherAI/pythia-160m`, reducida a 6.505.984 parámetros mediante una regla genérica de reducción de configuración que rebaja el número de capas ocultas a 2. Su propósito es servir como fixture reproducible para validar contratos de integración con frameworks (concretamente Transformers), no para generar texto.
 
-El repositorio empaqueta en un único lugar los pesos reducidos, la documentación de uso ejecutable (`integrations/transformers/usage.md`), el directorio de expectativas del framework (`integrations/transformers/expectations`), un manifiesto de contrato (`integration.json`) y la procedencia del fixture (`build.json`). Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
+El repositorio empaqueta en un solo lugar los pesos reducidos, el manifiesto de contrato (`integration.json`), la documentación de uso y las expectativas del framework. Los pesos son aleatorios (semilla 17), aunque pasaron una comprobación de sensibilidad a las entradas que garantiza que perturbaciones en las entradas del contrato mueven los logits al menos 0,001. Los ficheros de procesador (tokenizador y mapas de tokens especiales) se copiaron byte a byte desde `EleutherAI/pythia-160m`.
 
-Es relevante ahora porque ejemplifica una práctica creciente en el ecosistema: publicar fixtures ligeros que reproducen fielmente la interfaz (nombres de tensores, tokenizer, config tras el recorte) de un modelo real, de modo que los tests de integración de bibliotecas como Transformers se puedan ejecutar en CI sin depender de checkpoints de cientos de megabytes. La arquitectura subyacente es GPTNeoX causal LM, con 6.505.984 parámetros reales según los safetensors del repo.
+Es relevante únicamente en el contexto de ingeniería de software y pruebas de integración de modelos: permite verificar que un pipeline de carga, tokenización y forward pass funciona con la arquitectura `GPTNeoXForCausalLM` sin descargar los pesos completos del modelo original. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPTNeoX (GPTNeoXForCausalLM), transformer decoder-only causal |
-| Parametros totales | 6.505.984 (según safetensors del repo) |
+| Arquitectura | GPTNeoX (`GPTNeoXForCausalLM`), transformer causal decoder-only |
+| Parametros totales | 6.505.984 (fixture reducido; el modelo base tiene ~160M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (config recortado; no se documenta en la información proporcionada) |
-| Tipos de cuantizacion | no disponible (pesos guardados en float16; verificado finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (tokenizer copiado byte a byte de EleutherAI/pythia-160m) |
+| Longitud de contexto | no disponible (no se especifica en la model card) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float16) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float16) |
+| Numero de capas ocultas | 2 (reducido desde el modelo base) |
+| Modelo base | EleutherAI/pythia-160m |
+| Semilla de pesos | 17 (pesos aleatorios) |
+| Dtype de guardado | float16 |
+| Descargas | 2.522 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura GPTNeoX causal LM, la misma familia que `EleutherAI/pythia-160m`, pero con un config reducido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`: concretamente `num_hidden_layers = 2`. Los archivos de procesador (`special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte desde el checkpoint original, de modo que el tokenizer es idéntico al de Pythia-160m.
+La arquitectura es `GPTNeoXForCausalLM`, un transformer decoder-only causal con atención multi-cabeza estándar, la misma familia que el modelo base `EleutherAI/pythia-160m`. La diferencia clave es que la configuración se ha reducido mediante la regla genérica implementada en `sweep.py` del repositorio `transformers-mic`, fijando `num_hidden_layers` a 2. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que el fixture es intercambiable a nivel de carga.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se aceptaron porque superaron una "input-sensitivity gate": cada perturbación de las entradas del contrato movía los logits al menos 0.001 (el caso más débil, `attention_mask:all_ones`, movió 0.202), lo que garantiza que el fixture responde a las entradas de forma verificable. Los nombres de tensores coinciden exactamente con los del checkpoint real, y el modelo se guardó en float16, el dtype por defecto con el que carga `EleutherAI/pythia-160m`, verificándose finito en float32, bfloat16 y float16 (forward, loss y gradientes). El fixture está identificado por la clave `5cbc4e9a5b12` y cubre todos los checkpoints cuyos archivos de procesador son byte-idénticos y cuyo config coincide tras el recorte.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron con una comprobación de sensibilidad a entradas (*input-sensitivity gate*): cada perturbación de las entradas del contrato desplazó los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, produjo 0,202). Los ficheros de procesador (`special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte desde el modelo base. Los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El build está registrado en `build.json` con fuentes fijadas, resultados del gate y hashes de ficheros.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no producen texto coherente.
-- Sirve como fixture de integración para verificar que un framework (Transformers) carga correctamente un `GPTNeoXForCausalLM` con los nombres de tensores y el tokenizer del modelo real.
-- Reproduce el contrato de entrada/salida del checkpoint `EleutherAI/pythia-160m` (perturbaciones de entrada mueven los logits de forma medible).
-- Incluye documentación de uso ejecutable (`usage.md`) y expectativas de framework que pueden compararse contra la salida del modelo.
-- Compatible con forward, cálculo de loss y gradientes en float32, bfloat16 y float16.
-- No soporta tool calling, agentes, visión, audio ni capacidades multilingües más allá de lo que herede el tokenizer copiado.
-- No dispone de modo thinking ni de razonamiento entrenado.
+- No es un modelo funcional: no genera texto coherente, no razona, no escribe código ni resuelve matemáticas.
+- Sirve como fixture de integración para validar la carga de `GPTNeoXForCausalLM` en Transformers.
+- Permite verificar el pipeline completo de tokenización (tokenizador copiado del modelo base) y forward pass.
+- Compatible con pruebas de contrato: el manifiesto `integration.json` define entradas y salidas esperadas.
+- Los pesos son finitos en float32, bfloat16 y float16, lo que permite probar rutas de precisión mixta.
+- No soporta tool calling, agentes, visión, audio ni modo thinking.
+- Multilingüismo: no aplica (no hay capacidades lingüísticas reales).
 
 ## Casos de uso
 
-- Tests de integración en CI para Transformers: cargar el fixture con `AutoModelForCausalLM` y verificar que los nombres de tensores, el config y el tokenizer coinciden con los esperados, sin descargar el checkpoint completo de Pythia-160m.
-- Validación de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` para comprobar que una versión nueva de la librería sigue produciendo las salidas esperadas sobre el fixture.
-- Pruebas de regresión de tokenizers: al copiarse byte a byte los archivos de procesador del modelo original, permite detectar cambios en la tokenización de Pythia sin depender del modelo real.
-- Verificación de sensibilidad a entradas: la gate documentada (perturbaciones que mueven los logits al menos 0.001) permite comprobar que perturbaciones concretas del contrato siguen afectando a la salida.
-- Pruebas de dtype y estabilidad numérica: el fixture está verificado finito en float32, bfloat16 y float16, por lo que sirve para validar rutas de cómputo mixtas en frameworks.
-- Reproducibilidad de fixtures: `build.json` registra fuentes fijadas, resultados de la gate y hashes de archivos, permitiendo reconstruir el fixture con `python example/build_fixtures.py --fixture pythia-160m-mic`.
-- Desarrollo de herramientas de inspección de modelos: al tener el mismo conjunto de tensores que el checkpoint real pero un tamaño mínimo, es útil para probar utilidades de análisis de pesos, sharding o conversión de formatos.
+- Pruebas de integración de Transformers: cargar el fixture con `AutoModelForCausalLM` y verificar que la configuración reducida (2 capas) se instancia correctamente sin descargar el modelo completo.
+- Validación de pipelines de CI/CD: usar el fixture en tests automatizados que comprueben que un cambio en el código de carga de modelos no rompe la compatibilidad con `GPTNeoXForCausalLM`.
+- Verificación de contratos de framework: ejecutar las expectativas documentadas en `integrations/transformers/expectations` para asegurar que las entradas y salidas cumplen el contrato definido en `integration.json`.
+- Pruebas de tokenización: al conservar los ficheros de procesador byte a byte del modelo base, permite validar rutas de tokenización sin los pesos reales.
+- Pruebas de precisión mixta: al ser finito en float32, bfloat16 y float16, sirve para verificar rutas de conversión de dtype en forward, loss y gradientes.
+- Reproducibilidad de fixtures: el `build.json` con hashes y fuentes fijadas permite reconstruir el artefacto con `python example/build_fixtures.py --fixture pythia-160m-mic`.
+- Desarrollo de herramientas de inspección de modelos: un checkpoint pequeño con nombres de tensores reales facilita depurar utilidades que analizan arquitecturas sin coste de descarga.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier métrica de calidad (MMLU, HumanEval, GSM8K, perplejidad) carecería de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier métrica de calidad sería irrelevante.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en float16 (6.5M parámetros, aproximadamente 13 MB de pesos), más el overhead del framework.
-- GPU recomendadas: cualquier GPU consumer moderna sirve; no requiere A100 ni H100.
-- Cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU.
-- Opciones de despliegue: Transformers (ruta principal documentada en `integrations/transformers/usage.md`); otras opciones como vLLM, llama.cpp, Ollama o TGI no están documentadas en la información proporcionada.
-- Latencia y throughput: no disponibles; al ser un fixture de 2 capas, la latencia será mínima pero no se publican mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float16 (6,5M parámetros); cabe en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: no aplica; cualquier GPU o CPU es suficiente para cargar el fixture.
+- Cabe en consumer GPU: sí, en cualquier modelo (RTX 3060, RTX 4090, etc.) e incluso en CPU.
+- Opciones de despliegue: Transformers (vía `AutoModelForCausalLM`); no se documentan otras rutas (vLLM, llama.cpp, Ollama, TGI) para este artefacto.
+- Latencia y throughput: no disponibles; al ser un fixture de pruebas no se caracteriza rendimiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/pythia-160m-mic | 6.505.984 | no disponible | Fixture de test (pesos aleatorios) | no disponible | Hugging Face |
-| EleutherAI/pythia-160m | 162M (aprox.) | 2048 (según Pythia) | Modelo base entrenado | Apache 2.0 (según Pythia) | Hugging Face |
-| Otros fixtures de `transformers-mic` | variable | no disponible | Fixtures de test | no disponible | Hugging Face |
+| pythia-160m-mic | 6.505.984 | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| EleutherAI/pythia-160m | ~160M | no disponible | Modelo base entrenado | no disponible | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable (reducidos) | no disponible | Fixtures de pruebas | no disponible | Hugging Face |
 
-La comparación directa con `EleutherAI/pythia-160m` es la más pertinente: comparten arquitectura, tokenizer y nombres de tensores, pero el fixture tiene un config recortado a 2 capas y pesos aleatorios, mientras que el original es un modelo entrenado con capacidades reales de generación. No se dispone de información sobre otros fixtures comparables dentro de la organización `huggingface-mic` más allá de lo mencionado en la model card.
+La comparación con modelos de la misma categoría (modelos funcionales de ~160M) no es significativa: `pythia-160m-mic` no es un modelo utilizable, sino un artefacto de ingeniería. Frente al modelo base, la diferencia principal es el número de capas (2 frente a la configuración completa) y la ausencia de entrenamiento.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y la salida no tiene coherencia semántica.
-- Etiquetado como `test-artifact` precisamente para excluirlo de búsquedas de modelos candidatos; no debe desplegarse en producción.
-- Licencia no especificada en la información disponible; conviene consultar el repositorio antes de cualquier uso más allá de test.
-- El config está recortado (`num_hidden_layers = 2`), por lo que no reproduce el comportamiento del checkpoint original más allá del contrato de interfaz.
-- La longitud de contexto no está documentada en la información proporcionada.
-- Los idiomas soportados no están documentados; el tokenizer es el de Pythia-160m, pero el modelo no ha sido entrenado.
-- Riesgo de confusión: el nombre puede sugerir un modelo de 160M, pero el recuento real de parámetros es de 6.505.984.
-- No apto para evaluación de calidad, benchmarks ni comparativas de rendimiento.
+- No es un modelo funcional: los pesos son aleatorios y no producen texto coherente. No debe usarse para inferencia real.
+- Etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; usarlo fuera de contextos de prueba es un error de uso.
+- Licencia no disponible: no se puede asumir ningún permiso de uso comercial.
+- No se documentan idiomas soportados ni longitud de contexto; no aplica al no ser un modelo entrenado.
+- Riesgo de confusión: el nombre y la estructura imitan a `EleutherAI/pythia-160m`, pero el comportamiento es completamente distinto.
+- Los pesos solo son válidos para la arquitectura `GPTNeoXForCausalLM` con la configuración reducida; no son intercambiables con el checkpoint completo a nivel de comportamiento.
+- Aunque los tensores son finitos en float32, bfloat16 y float16, no se garantiza estabilidad numérica en entrenamiento real (no hay entrenamiento).
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/pythia-160m-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/pythia-160m-mic
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/pythia-160m-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/pythia-160m-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/pythia-160m-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/pythia-160m-mic/blob/main/build.json
-- Documentación del proceso de recorte: https://huggingface-mic-mic-coverage.static.hf.space/shrink/pythia-160m-mic.html
-- Script de recorte (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Script de reducción (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción de fixtures (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/pythia-160m-mic.html
+- Manifiesto de contrato (`integration.json`): https://huggingface.co/huggingface-mic/pythia-160m-mic/blob/main/integration.json
+- Uso con Transformers (`usage.md`): https://huggingface.co/huggingface-mic/pythia-160m-mic/blob/main/integrations/transformers/usage.md
+- Procedencia del fixture (`build.json`): https://huggingface.co/huggingface-mic/pythia-160m-mic/blob/main/build.json

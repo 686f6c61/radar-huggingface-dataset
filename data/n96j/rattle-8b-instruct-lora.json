@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "n96j/Rattle-8B-Instruct-LoRA",
+  "slug": "n96j-rattle-8b-instruct-lora",
+  "author": "n96j",
+  "url": "https://huggingface.co/n96j/Rattle-8B-Instruct-LoRA",
+  "created_at": "2026-11-18T09:07:14.000Z",
+  "updated_at": "2026-11-18T10:13:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "portuguese",
+    "persona",
+    "roleplay",
+    "unsloth",
+    "pt",
+    "dataset:n96j/rattle-dataset",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512",
+    "base_model:adapter:mistralai/Ministral-3-8B-Instruct-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195407046,
+  "storage_human": "195 MB",
+  "context_length": null,
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

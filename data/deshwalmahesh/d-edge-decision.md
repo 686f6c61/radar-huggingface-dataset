@@ -2,112 +2,116 @@
 
 ## Resumen
 
-D-Edge-Decision es un modelo de decisión tipada de 3.930 millones de parámetros publicado por `deshwalmahesh`, obtenido mediante un *fine-tune* completo de `domyn/Domyn-Edge-SFT` (familia Domyn Edge, desarrollada por Domyn). Su singularidad es que no genera texto: responde a una decisión (sí/no, elección múltiple o puntuación graduada) en un único paso hacia delante (*forward pass*), leyendo la distribución del siguiente token sobre códigos de opción de un solo token (`A`, `B`, `C`, …) como la respuesta. El resultado es una distribución de probabilidad sobre las opciones, ya calibrada con temperatura 1.0, sin *chain-of-thought*, sin tokens de salida y sin confianza verbalizada.
+D-Edge-Decision es un ajuste fino completo (full fine-tune) de 3.930 millones de parámetros sobre el modelo base `domyn/Domyn-Edge-SFT`, desarrollado por el usuario independiente deshwalmahesh. Su particularidad es que no genera texto: formula decisiones tipadas (sí/no, elección múltiple, puntuación graduada) leyendo directamente la distribución de probabilidad del siguiente token sobre códigos de opción de un solo token (`A`, `B`, …). El resultado es una distribución de probabilidad nativa en un único forward pass, sin tokens generados.
 
-El modelo está pensado para integrarse en sistemas que necesitan clasificar, enrutar o puntuar estados de forma masiva y barata: atención al cliente, *routing* de tickets, moderación, *benchmarking* de decisiones. Al no generar tokens, el coste por inferencia es mínimo y la latencia es del orden de decenas de milisegundos. La arquitectura subyacente es un transformer causal de la familia Domyn Edge, con tokenizador y plantilla de chat propios (requiere `trust_remote_code=True`).
+El modelo se presenta como un sistema "System One" de toma de decisiones, orientado a escenarios donde se necesita una respuesta categórica calibrada con latencia mínima: enrutamiento de tickets, clasificación de intenciones, triaje o selección entre alternativas discretas. El autor lo evalúa con JevBench (231 ítems públicos), donde obtiene una precisión global de 0,827 y un composite de 73,56, situándose en la zona media de una tabla de sistemas de 4B.
 
-Es relevante ahora porque propone un paradigma distinto al del razonamiento generativo: en lugar de invocar un modelo grande con modo *thinking* para tareas de decisión, extrae la distribución de la cabeza LM directamente. El autor lo presenta como modelo de "Sistema Uno": rápido, barato y calibrado por construcción, con la calibración como propiedad emergente del entrenamiento y no como capa de post-procesado. El entrenamiento completo se hizo en aproximadamente 7 horas en una sola H200, sin barrido de hiperparámetros ni ablaciones.
+Es relevante ahora porque propone un patrón de inferencia distinto al de los LLM generativos: en lugar de decodificar tokens, se explota el logit del token de opción para obtener una probabilidad calibrada. Esto reduce la latencia y el coste de cómputo a un solo paso, y permite integrar la incertidumbre de forma nativa en pipelines de decisión. El modelo es un experimento personal e independiente, no afiliado a ninguna organización.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (derivado de `domyn/Domyn-Edge-SFT`), con `custom_code` y tokenizador propio |
-| Parámetros totales | 3.928.787.968 (≈3,93 B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No se documentan cuantizaciones oficiales (GGUF, AWQ, GPTQ); el autor recomienda fp16. vLLM soporta `--dtype float16`; bf16 presenta un problema de precisión en rotary en la build de referencia |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `safetensors` (repo de 23,6 GB), cargable con `transformers` |
-| Modelo base | `domyn/Domyn-Edge-SFT` |
-| Librería | `transformers` (con `trust_remote_code=True`) |
+| Arquitectura | Transformer decoder-only (derivada de Domyn-Edge-SFT), con cabecera LM en fp32 y RoPE en fp32 |
+| Parametros totales | 3.928.787.968 (3,93B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 16.384 tokens (secuencias de entrenamiento de 16k; contexto máximo no confirmado) |
+| Tipos de cuantizacion | no disponible (la model card solo documenta carga en fp16) |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | Apache-2.0 (heredada del modelo base) |
+| Formato de pesos | safetensors (repo de 23,6 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal de la familia Domyn Edge, reentrenado (*full fine-tune*, no LoRA) sobre `domyn/Domyn-Edge-SFT`. El autor indica que el *data cleaning*, la preparación y el *fine-tune* completo se completaron en unas 7 horas de extremo a extremo en una única NVIDIA H200, sin barrido de hiperparámetros ni ablaciones. El *harness* de referencia usa Python 3.12, `transformers==5.22.1`, `torch==2.15.0`, `tokenizers==0.23.3` y `einops`. El modelo requiere `trust_remote_code=True`, lo que implica cargar código personalizado del repositorio.
+El modelo es un transformer decoder-only de 3,93B parámetros obtenido por ajuste fino completo (todos los parámetros) sobre `domyn/Domyn-Edge-SFT`. La innovación no está en la arquitectura sino en la interfaz de decisión: en lugar de generar una respuesta, el modelo recibe un estado, una pregunta y una lista de opciones codificadas como `A`, `B`, `C`…, y se lee la distribución softmax sobre los logits de esos códigos de un solo token en la última posición. La cabecera LM y RoPE se mantienen en fp32 durante la inferencia porque los logits de las opciones se sitúan en el rango ~30–36, donde un paso en fp16 desplaza la probabilidad en un punto porcentual.
 
-La innovación central es la lectura "nativa" de la decisión: el *prompt* se renderiza hasta la posición de decisión y la distribución del siguiente token sobre los códigos de opción (`A`, `B`, `C`, …) se interpreta directamente como probabilidad sobre las alternativas. Para evitar degradación numérica, el autor aplica un *forward hook* que fuerza la cabeza LM a fp32, ya que los *logits* de opción se sitúan en el rango ~30–36, donde un paso en fp16 desplaza una probabilidad en un punto. Se desactiva `autocast` y se carga en fp16, porque en bf16 la query normalizada queda en fp32 mientras el value sigue en fp16 y la atención rechaza la mezcla de dtypes. Los datos de entrenamiento son los *datasets* `tasksource/tasksource-jev-typed-decisions` y `caiovicentino1/eikos-decisions`, orientados a decisiones tipadas; no se detalla número de tokens ni composición exacta del corpus.
+El entrenamiento consistió en SFT de parámetros completos sobre `tasksource/tasksource-jev-typed-decisions` y `caiovicentino1/eikos-decisions`, con `crh225/plumb-decisions` reservado como test. La función de pérdida combina entropía cruzada suave con un término Brier de peso 1,0 sobre las opciones, lo que favorece la calibración de las probabilidades. Se usaron secuencias de 16k tokens, una sola época, LR coseno de 3,5e-6 y selección de checkpoint por NLL de evaluación. El autor indica explícitamente que fue una única ejecución, sin ablaciones.
 
 ## Capacidades
 
-- Decisión tipada en un solo paso hacia delante: sí/no, elección múltiple y puntuación graduada, devolviendo una distribución de probabilidad nativa y calibrada sobre las opciones.
-- Calibración integrada: ECE ≈ 0,016 en el *split* público de JevBench v1.8.7, con temperatura 1.0 y sin capa de calibración post-hoc.
-- Cero tokens generados: la respuesta se obtiene del *logit* del primer token, lo que minimiza coste y latencia.
-- Salida probabilística interpretable: el resultado es un *dict* opción→probabilidad, apto para umbrales y agregación posterior.
-- Compatibilidad con `transformers` y con servidor vLLM (`vllm serve ... --trust-remote-code --dtype float16`), leyendo los *logprobs* del primer token.
-- Plantilla de chat propia con `enable_thinking=False` (no se usa modo *thinking*; el modelo no genera razonamiento).
-- No documenta capacidades de *tool calling*, agentes multi-paso, visión, audio ni matemáticas generativas; el modelo no está orientado a generación libre.
-- Multilingüe: no. Solo inglés.
+- Toma de decisiones tipadas: sí/no, elección múltiple y puntuación graduada, devolviendo una distribución de probabilidad sobre las opciones.
+- Inferencia en un único forward pass, sin generación de tokens, lo que reduce la latencia al coste de un solo paso.
+- Calibración de incertidumbre nativa: la salida es una probabilidad softmax sobre los códigos de opción, no un texto.
+- Modo de decisión con `enable_thinking=False` en la plantilla de chat; el modelo está diseñado para responder con un código de opción.
+- Soporte de conversación mediante plantilla de chat (rol `user`).
+- Capacidad multilingüe limitada al inglés.
+- No se documentan tool calling, function calling, agentes multi-paso, visión ni audio.
 
 ## Casos de uso
 
-- **Enrutamiento de tickets de soporte**: dado un estado textual y un conjunto de equipos (billing, shipping, etc.), el modelo devuelve la probabilidad por equipo en un solo *forward pass*. Adecuado porque el coste por decisión es mínimo y la salida es una distribución, no una etiqueta rígida.
-- **Clasificación binaria con umbral calibrado**: tareas tipo "¿es spam?", "¿requiere revisión humana?" o "¿es una queja?", con probabilidad calibrada para fijar umbrales sin recalibración posterior (ECE ≈ 0,016).
-- **Moderación y scoring graduado**: asignar una puntuación de riesgo o calidad sobre una escala de opciones, aprovechando la distribución como medida de incertidumbre.
-- **Evaluación de decisiones en pipelines de benchmark**: usar el modelo como *baseline* ligero en JevBench u otros *benchmarks* de decisión, gracias a su adaptador publicado (PR #241) y su soporte de vLLM.
-- **Selección de opción en flujos de datos estructurados**: dado un estado y una pregunta con opciones discretas, decidir la mejor opción por *logprob* sin generar texto, integrándolo en procesos por lotes.
-- **Abstención por incertidumbre**: cuando la distribución sobre las opciones es plana, derivar a un humano o a un modelo mayor; la calibración hace fiable esta política de abstención.
-- **Enriquecimiento de datos con etiquetas blandas**: anotar grandes volúmenes con distribuciones suaves sobre opciones, útiles para entrenar modelos descendientes o para *active learning*.
+- Enrutamiento de tickets de soporte: dado el texto de una incidencia y una lista de equipos (facturación, envíos, técnico), el modelo devuelve la probabilidad de cada equipo en un solo paso; la distribución permite umbralizar y escalar a revisión humana cuando la confianza es baja.
+- Clasificación de intenciones en asistentes conversacionales: con el estado de la conversación y las intenciones candidatas, se obtiene la probabilidad de cada una sin generar texto, lo que reduce coste y latencia frente a un LLM generativo.
+- Triaje de moderación de contenido: decisión binaria sí/no sobre si un texto infringe una política, con probabilidad calibrada para fijar umbrales operativos.
+- Puntuación graduada en evaluación automática: asignar una nota discreta (por ejemplo, 1–5) a una respuesta generada, leyendo la distribución sobre los códigos de nota.
+- Decisión en pipelines de CI/CD: seleccionar entre acciones discretas (aprobar, rechazar, reintentar) a partir de un estado estructurado, con la ventaja de un único forward pass por decisión.
+- Sistemas de recomendación de siguiente acción: elegir entre varias acciones candidatas en un flujo de atención al cliente, usando la probabilidad como señal de ranking.
+- Investigación en calibración: servir como banco de pruebas para estudiar la relación entre logits de opción y probabilidad calibrada en modelos de ~4B.
 
 ## Benchmarks y rendimiento
 
-Datos disponibles según el autor: JevBench v1.8.7 (split público, 283 sistemas clasificados, excluyendo Speed/Cost del compuesto).
+Resultados en JevBench (231 ítems públicos), auto-medidos por el autor con el adaptador PR #241:
 
-| # | Sistema | Base | Composite | Capability | Intelligence | Calibration | Speed\* | Cost\* |
-|---|---|---|---|---|---|---|---|---|
-| 1 | D-Edge-Decision (este) | Domyn-Edge-SFT 3.9B | **85.50** | **85.50** | **85.00** | 86.00 | 100 | 82 |
-| 2 | Super Decider | DiffusionGemma 26B-A4B | 84.45 | 84.87 | 78.89 | **90.85** | 83 | 58 |
-| 3 | Torchcast Decision | Qwen3.5-4B | 76.12 | 77.50 | 67.15 | 87.85 | 100 | 82 |
-| 4 | H2O-Lightning v1.1 | Qwen3.5-4B | 72.01 | 75.00 | 60.04 | 89.95 | 100 | 82 |
-| 5 | Myles-G | gemma-4-12B | 68.11 | 70.65 | 57.25 | 84.05 | 90 | 68 |
-| – | Jev 1.13 (referencia) | – | 74.74 | 77.10 | 63.60 | 90.60 | – | – |
+| # | Sistema | Composite | Intelligence | Speed | Cost |
+|---|---|---|---|---|---|
+| 1 | Plumb-4B | 76,57 | 84,77 | 92,61 | 60,30 |
+| 2 | H2O-Lightning-4B † | 76,40 | 84,14 | 92,61 | 60,30 |
+| 3 | Imajev-4B | 75,13 | 79,70 | 92,61 | 60,30 |
+| 4 | JevK5 v0.2.0 | 74,75 | 78,43 | 92,61 | 60,30 |
+| 5 | decider-4b v2 | 73,97 | 75,89 | 92,61 | 60,30 |
+| 6 | **D-Edge-Decision (ours)** | **73,56** | **74,62** | 92,61 | 60,30 |
+| 7 | SemIf (Qwen3.5-4B) | 72,72 | 72,09 | 92,61 | 60,30 |
+| 8 | local-jev Qwen3.5-4B | 72,50 | 71,45 | 92,61 | 60,30 |
+| 9 | Jev 1.13.0 (API) | 72,03 | 80,33 | 91,50 | 54,73 |
+| 10 | reflex 4B | 71,84 | 69,55 | 92,61 | 60,30 |
 
-\* Speed/Cost se asignan por recuento total de parámetros (4B → 100/82; 12B → 90/68; 26B → 83/58) y se excluyen del Composite. Composite = media armónica de Intelligence y Calibration.
+Desglose por dificultad:
 
-Resultados por nivel (*tier*) en el split público: easy **1.000**, original **0.972**, hard **0.667**; ECE ≈ **0.016**; latencia p50 ≈ **41 ms**. El autor indica que estos resultados son de una única ejecución, sin ablaciones, y que los niveles *hard*, calibración y coste no están optimizados. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de *benchmarks* generativos en la información disponible.
+| Tier | Correct | Accuracy |
+|---|---|---|
+| easy | 48/48 | 1,000 |
+| medium | 70/72 | 0,972 |
+| hard | 73/111 | 0,658 |
+| **all** | **191/231** | **0,827** |
+
+Métricas adicionales reportadas: Calibration 77,92 y Capability 76,27. El autor advierte que Speed y Cost son un valor único para todos los modelos de 4B (fila de H2O-Lightning-4B en el board) y que el composite es la media armónica de las tres dimensiones. No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el repo pesa 23,6 GB en `safetensors`; en fp16 los pesos ocupan ≈7,9 GB, más activaciones y caché KV (no disponible la longitud de contexto). En la práctica, se puede servir en una GPU de 24 GB con holgura y en GPUs de 16 GB con cuidado del contexto.
-- **GPU recomendadas**: NVIDIA H200 (stack de entrenamiento y referencia), A100 40/80 GB, L40S, RTX 4090 (24 GB) y RTX 4080 (16 GB) para cargas modestas.
-- **Consumer GPU**: sí; en fp16 cabe en una RTX 4090 de 24 GB y, con contexto corto, en GPUs de 16 GB.
-- **Despliegue**: `transformers` (con `trust_remote_code=True`, fp16, sin `autocast`, y *hook* fp32 en la cabeza LM) o vLLM (`vllm serve ... --trust-remote-code --dtype float16`). No se documentan Ollama, llama.cpp, GGUF ni TGI.
-- **Latencia**: p50 ≈ 41 ms por decisión según JevBench; al no generar tokens, el coste de salida es cero.
-- **Throughput**: no disponible de forma explícita; se puede inferir por el coste de un único *forward pass*, pero no hay cifras publicadas.
+- VRAM estimada para inferencia en fp16: aproximadamente 8 GB solo para pesos (3,93B × 2 bytes), más overhead de activaciones y KV cache; en la práctica, 10–12 GB para secuencias cortas.
+- No se documentan cuantizaciones (GGUF, AWQ, GPTQ) en la información disponible; el autor solo valida carga en fp16.
+- GPU recomendadas: A100, H100 o L40S para despliegue en producción; RTX 4090 (24 GB) para desarrollo e inferencia local en fp16.
+- Cabe en GPU de consumo: sí, en RTX 4090 y RTX 3090 (24 GB) en fp16; en GPUs de 12–16 GB requeriría cuantización, no documentada por el autor.
+- Opciones de despliegue: la model card solo documenta `transformers` (versión 5.22.1) con `trust_remote_code=True`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. Al ser un único forward pass sin generación, la latencia equivale a la de un prefill de una sola pasada; el autor no publica cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | JevBench Composite | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | JevBench composite | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **D-Edge-Decision** | 3,93 B | no disponible | **85,50** | Apache-2.0 | HF (`deshwalmahesh/d-edge-decision`) |
-| Super Decider | 26 B (26B-A4B, MoE) | no disponible | 84,45 | no disponible | JevBench |
-| Torchcast Decision | ~4 B (Qwen3.5-4B) | no disponible | 76,12 | no disponible | JevBench |
-| H2O-Lightning v1.1 | ~4 B (Qwen3.5-4B) | no disponible | 72,01 | no disponible | JevBench |
-| Jev 1.13 (referencia hosted) | no disponible | no disponible | 74,74 | no disponible | API |
-| Myles-G | ~12 B (gemma-4-12B) | no disponible | 68,11 | no disponible | JevBench |
+| D-Edge-Decision | 3,93B | 16k (entrenamiento) | 73,56 | Apache-2.0 | Hugging Face |
+| Plumb-4B | ~4B | no disponible | 76,57 | no disponible | no disponible |
+| H2O-Lightning-4B | ~4B | no disponible | 76,40 | no disponible | no disponible |
+| SemIf (Qwen3.5-4B) | ~4B | no disponible | 72,72 | no disponible | no disponible |
 
-La comparativa se limita al *benchmark* JevBench publicado por el autor; no hay datos de MMLU, HumanEval ni de otros *benchmarks* estándar que permitan comparar con modelos de propósito general. El interés de la tabla es que D-Edge-Decision supera en Composite a un sistema de 26 B y a varios de 4 B y 12 B, con un coste de inferencia menor al no generar tokens.
+La comparativa se limita a los sistemas incluidos en la tabla de JevBench del autor. No se dispone de datos de parámetros, contexto ni licencia de los competidores en la información proporcionada; los valores de composite son los reportados en esa misma tabla.
 
 ## Limitaciones y advertencias
 
-- **Idioma**: solo inglés; no hay soporte multilingüe declarado.
-- **Naturaleza del modelo**: no es un modelo generativo. Usarlo como *chat* o para redactar producirá resultados pobres o incoherentes; está diseñado exclusivamente para lectura de distribución sobre opciones de un solo token.
-- **Opciones codificadas**: la respuesta se lee sobre códigos de opción `A`, `B`, `C`, … de un solo token; opciones que no encajen en ese esquema o un número muy alto de alternativas pueden degradar la lectura.
-- **Fragmentación del ecosistema**: requiere `trust_remote_code=True`, versión concreta de `transformers` (5.22.1 en la referencia) y un *hook* fp32 en la cabeza LM; desviarse del *harness* evaluado puede alterar la calibración.
-- **bf16**: el autor reporta un problema de precisión en rotary con bf16; no se debe usar sin verificar.
-- **Resultados de una sola ejecución**: no hay barrido de hiperparámetros ni ablaciones; el propio autor reconoce que el *tier* hard (0,667), la calibración y el coste no están optimizados.
-- **Riesgo de alucinación**: en el sentido generativo no aplica directamente, pero sí puede producir distribuciones sobreconfiadas cuando el estado está fuera de la distribución de entrenamiento; la calibración medida (ECE 0,016) es sobre el *split* público de JevBench, no sobre dominios arbitrarios.
-- **Sesgos**: no se documenta ningún análisis de sesgos; al derivar de `domyn/Domyn-Edge-SFT`, heredaría los sesgos del modelo base y de los *datasets* `tasksource/tasksource-jev-typed-decisions` y `caiovicentino1/eikos-decisions`.
-- **Licencia**: Apache-2.0 permite uso comercial, pero conviene verificar la licencia del modelo base (`domyn/Domyn-Edge-SFT`) y de los *datasets* por si imponen condiciones adicionales.
-- **Uso en producción**: el autor no reporta validación fuera de JevBench; para producción conviene evaluar calibración en el dominio propio antes de fijar umbrales.
+- Entrenamiento de una sola ejecución, una época y sin ablaciones: no hay evidencia de robustez frente a variaciones de hiperparámetros o datos.
+- Rendimiento muy desigual por dificultad: 1,000 en easy, 0,972 en medium y 0,658 en hard; el modelo falla en un tercio de los ítems difíciles.
+- Solo inglés: no se ha validado su comportamiento en castellano ni en otros idiomas.
+- Dependencia crítica de la precisión numérica: la cabecera LM debe ejecutarse en fp32; en fp16 la probabilidad puede desviarse un punto porcentual, lo que afecta a la calibración.
+- Requiere `trust_remote_code=True` y una versión específica de `transformers` (5.22.1) y `torch` (2.15.0), lo que complica la reproducibilidad y el despliegue en entornos estándar.
+- No hay cuantizaciones publicadas: el despliegue en GPUs de menos de 16 GB no está soportado por el autor.
+- Riesgo de alucinación no aplica en el sentido generativo (no produce texto libre), pero sí existe riesgo de decisión errónea con alta confianza en ítems difíciles.
+- Sesgos: no se documenta ninguna evaluación de sesgos; al ser un fine-tune sobre datasets específicos, puede heredar los sesgos de `tasksource/tasksource-jev-typed-decisions` y `caiovicentino1/eikos-decisions`.
+- Licencia Apache-2.0 permite uso comercial, pero el autor declara que es un experimento personal sin afiliación; no hay garantías de soporte ni mantenimiento.
+- El modelo base `domyn/Domyn-Edge-SFT` condiciona las capacidades y limitaciones heredadas, no documentadas en detalle en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/deshwalmahesh/d-edge-decision
 - Modelo base: https://huggingface.co/domyn/Domyn-Edge-SFT
-- Dataset de decisiones tipadas: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions
-- Dataset Eikos: https://huggingface.co/datasets/caiovicentino1/eikos-decisions
-- Adaptador JevBench (PR #241): https://github.com/fstandhartinger/jevbench/pull/241
-- JevBench: https://github.com/fstandhartinger/jevbench
-- Leaderboard privado: https://benchmarkheaven.com
+- Dataset de entrenamiento: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions
+- Dataset de entrenamiento: https://huggingface.co/datasets/caiovicentino1/eikos-decisions
+- Dataset de test (held out): https://huggingface.co/datasets/crh225/plumb-decisions

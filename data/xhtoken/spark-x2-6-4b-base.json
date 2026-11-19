@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Chrome – Download the fast, secure browser from Google",
-      "url": "https://www.google.fr/intl/en_uk/chrome/",
-      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …Read more"
-    },
-    {
-      "title": "Google Translate",
-      "url": "https://translate.google.fr/?hl=en",
-      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
-    },
-    {
-      "title": "Trouvez et réservez des vols pas chers – Google Flights",
-      "url": "https://www.google.fr/travel/",
-      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
-    },
-    {
-      "title": "Google Trends",
-      "url": "https://trends.google.fr/trends/",
-      "snippet": "Créé avec Trends Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations …"
-    },
-    {
-      "title": "Google Traduction",
-      "url": "https://translate.google.fr/details",
-      "snippet": "Traduisez des textes instantanément avec Google Translate."
-    }
-  ]
+  "sources": []
 }

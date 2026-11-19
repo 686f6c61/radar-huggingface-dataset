@@ -2,56 +2,50 @@
 
 ## Resumen
 
-FrogNano-4B-2609 es un agente de código a nivel de repositorio desarrollado por Microsoft Corporation, derivado del checkpoint generalista Qwen/Qwen3.5-4B. Se trata de un modelo denso de 32 capas con arquitectura híbrida de Gated DeltaNet y atención con compuerta (gated attention), de 4.659.865.088 parámetros (aproximadamente 4,66 mil millones). Su especialización no proviene de destilación de modelos mayores, sino de un post-entrenamiento exclusivamente mediante aprendizaje por refuerzo sobre unas 1.500 tareas sintéticas de ingeniería de software generadas y calibradas contra la propia política con la herramienta TaskPilot.
+FrogNano-4B-2609 es un agente de codificacion compacto a nivel de repositorio desarrollado por Microsoft, derivado del modelo generalista Qwen/Qwen3.5-4B. Su especializacion se lleva a cabo exclusivamente mediante aprendizaje por refuerzo (RL) sobre aproximadamente 1.500 tareas sinteticas de ingenieria de software, generadas, validadas y calibradas contra la propia politica del modelo en evolucion mediante TaskPilot. El modelo opera a traves de un arnes ligero de cinco herramientas denominado Leaf.
 
-El modelo opera a través del arnés ligero Leaf, un conjunto de cinco herramientas, y está pensado para resolver incidencias de repositorio a partir de descripciones en lenguaje natural y código fuente existente: navegación entre ficheros, depuración, edición de código, ejecución de comandos y pruebas, y generación iterativa de parches multi-fichero. Su contexto combinado soportado en la configuración evaluada es de aproximadamente 131K tokens, con hasta 8.192 tokens generados por turno del asistente.
+La relevancia de FrogNano reside en su enfoque de entrenamiento: no utiliza trayectorias de solucion, acciones, trazas de razonamiento ni parches objetivo procedentes de modelos mas potentes, lo que lo diferencia de las aproximaciones basadas en destilacion de comportamiento. Con tan solo 4.659.865.088 parametros totales, aspira a mejorar la navegacion de repositorios de largo horizonte, la depuracion, la edicion de codigo, la ejecucion de tests y la generacion de parches en un modelo compacto.
 
-Es relevante ahora porque demuestra que un modelo compacto de 4B puede abordar tareas de agente de software de horizonte largo sin recurrir a trazas de razonamiento de modelos más potentes, lo que reduce coste de inferencia y facilita el despliegue local. La fecha de publicación indicada es el 22 de septiembre de 2026, con entrenamiento entre junio y agosto de 2026.
+Arquitectonicamente hereda el diseno denso de 32 capas hibrido Gated DeltaNet/gated-attention de Qwen3.5-4B, con una longitud de contexto evaluada de aproximadamente 131K tokens en su configuracion de agente de codificacion. La licencia es Apache 2.0 y los pesos se distribuyen en formato safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Densa, 32 capas, híbrida Gated DeltaNet / gated-attention, causal LM |
-| Parametros totales | 4.659.865.088 (~4,66 mil millones) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | ~131K tokens (configuración de agente evaluada); hasta 8.192 tokens generados por turno |
-| Tipos de cuantizacion | no disponible (el repositorio solo publica pesos safetensors) |
-| Idiomas soportados | no disponible; los datos de entrenamiento son principalmente en inglés |
-| Licencia | MIT segun la etiqueta de Hugging Face; Apache License 2.0 segun la model card (discrepancia no resuelta) |
+| Arquitectura | Transformer denso de 32 capas hibrido Gated DeltaNet / gated-attention causal |
+| Parametros totales | 4.659.865.088 (aproximadamente 4,66 mil millones) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | Aproximadamente 131K tokens en la configuracion evaluada de agente de codificacion |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible de forma explicita; los datos de entrenamiento son predominantemente en ingles |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 9,3 GB |
-| Modalidades de entrada | Solo texto en uso previsto y evaluado (los componentes de visión heredados no se post-entrenaron) |
-| Dependencia upstream | Qwen/Qwen3.5-4B |
-| Fechas de entrenamiento | Junio 2026 a agosto 2026 |
-| Fecha de publicacion | 22 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-FrogNano hereda la arquitectura de Qwen/Qwen3.5-4B: un modelo de lenguaje causal denso de 32 capas que combina Gated DeltaNet (una variante de atención lineal con estado recurrente) y capas de atención con compuerta. Esta mezcla busca mantener eficiencia en contextos largos sin renunciar a la capacidad de atención completa. El checkpoint upstream incluye componentes de visión e imagen/vídeo, pero FrogNano no los post-entrenó ni los evaluó, por lo que no se declaran como soportados.
+FrogNano emplea una arquitectura transformer densa de 32 capas que combina Gated DeltaNet con gated-attention, heredada directamente de Qwen/Qwen3.5-4B. El checkpoint upstream incluye componentes de vision para imagen y video, pero FrogNano no los ha sometido a post-entrenamiento ni los ha evaluado, por lo que no se declaran como soportados. El modelo genera hasta 8.192 tokens por turno del asistente en la configuracion validada.
 
-El post-entrenamiento adicional es exclusivamente de texto y se centró en ingeniería de software a nivel de repositorio mediante aprendizaje por refuerzo sobre aproximadamente 1.500 entornos de tareas SWE sintéticas, generadas, validadas y calibradas contra la política en evolución con TaskPilot. Las recompensas se basan en tests ejecutables sobre trayectorias de codificación multi-turno completas, con el arnés de cinco herramientas Leaf. Un punto diferencial explícito es que no se emplearon trayectorias de solución, acciones, trazas de razonamiento ni parches objetivo procedentes de modelos más fuertes (sin destilación de comportamiento). El proceso tampoco usó conjuntos dedicados de preferencias de seguridad, rechazo, contenido dañino o adversarial, por lo que no debe considerarse alineado de forma independiente para despliegue autónomo sin supervisión.
+El post-entrenamiento adicional es exclusivamente de texto y se basa en aprendizaje por refuerzo sobre unas 1.500 tareas sinteticas de ingenieria de software a nivel de repositorio, generadas y calibradas con TaskPilot contra la politica en evolucion. Las recompensas se basan en tests ejecutables sobre trayectorias completas de codificacion multi-turno, usando el arnes Leaf de cinco herramientas. No se emplearon trayectorias de solucion, acciones, trazas de razonamiento ni parches objetivo de modelos mas fuertes. El entrenamiento se realizo entre junio y agosto de 2026, con fecha de publicacion el 22 de septiembre de 2026.
 
 ## Capacidades
 
-- Resolución de incidencias de software a nivel de repositorio a partir de descripciones en lenguaje natural y del código fuente existente.
-- Navegación de base de código y comprensión entre ficheros, depuración, corrección de errores e implementación de funcionalidades acotadas.
-- Generación de llamadas estructuradas a las cinco herramientas del arnés Leaf, que se ejecutan en un entorno de repositorio aislado (inspección y búsqueda de ficheros, edición de código, ejecución de comandos de shell y ejecución de pruebas).
-- Generación y refinamiento iterativo de parches multi-fichero usando la realimentación de comandos y tests.
-- Procesamiento de contexto largo sobre texto y código, con contexto combinado de aproximadamente 131K tokens.
-- Generación de texto en lenguaje natural, texto de razonamiento, código fuente y llamadas a herramientas estructuradas, hasta 8.192 tokens por turno.
-- Capacidades multimodales (visión, imagen, vídeo): heredadas del checkpoint upstream, pero no post-entrenadas ni evaluadas en FrogNano; no se declaran como soportadas.
-- Capacidades multilingües: no disponibles; los datos de entrenamiento son principalmente en inglés y centrados en Python.
+- Resolucion de issues de software a nivel de repositorio a partir de descripciones en lenguaje natural y codigo fuente existente.
+- Navegacion de codigo, comprension entre ficheros, depuracion, correccion de bugs e implementacion de funcionalidades.
+- Generacion de llamadas estructuradas a las cinco herramientas de Leaf: inspeccion y busqueda de ficheros, edicion de codigo, ejecucion de comandos de shell y ejecucion de tests.
+- Generacion y refinamiento iterativo de parches multi-fichero usando la retroalimentacion de comandos y tests.
+- Procesamiento de contexto largo de texto y codigo fuente, con aproximadamente 131K tokens de contexto combinado.
+- Generacion de texto, razonamiento, codigo fuente y llamadas a herramientas estructuradas como salida.
+- Capacidades multilingues: no disponibles de forma declarada; el entrenamiento es predominantemente en ingles.
+- Capacidades de vision, audio o thinking mode: no declaradas como soportadas.
 
 ## Casos de uso
 
-- Corrección de errores en repositorios de producción: dado un informe de fallo en inglés y una instantánea autorizada del repositorio, el modelo inspecciona ficheros, localiza la causa, aplica una edición y ejecuta los tests existentes para producir un parche candidato que después revisa un humano.
-- Implementación de funcionalidades acotadas: a partir de un ticket descriptivo, el modelo navega entre ficheros relacionados, propone los cambios necesarios y valida su comportamiento con la batería de pruebas del propio repositorio.
-- Corrección de regresiones: con el contexto de ~131K tokens puede cargar fragmentos amplios del repositorio y los resultados de tests fallidos, correlacionar cambios recientes y generar un parche que restaure el comportamiento previo.
-- Mantenimiento guiado por pruebas (test-driven maintenance): el modelo usa la ejecución de tests como señal de realimentación en bucle, refinando el parche hasta que las pruebas pasan, lo que encaja en flujos de CI/CD con revisión humana obligatoria.
-- Investigación sobre agentes de codificación de horizonte largo: su tamaño compacto y su entrenamiento exclusivo por RL lo convierten en una plataforma controlada para estudiar navegación multi-paso, uso de herramientas y planificación sin destilación de modelos mayores.
-- Asistencia de desarrollo supervisada en escritorio: al ser un modelo de ~4B, puede ejecutarse localmente en hardware de consumo y servir como asistente de terminal para explorar y modificar repositorios, siempre con revisión de los parches.
-- Automatización de triaje de incidencias: el modelo puede leer la descripción de un issue y recorrer el repositorio para producir un diagnóstico y un parche preliminar, reduciendo el trabajo de localización previo a la revisión humana.
+- Reparacion de bugs en repositorios: dado un snapshot autorizado del repositorio y una descripcion en ingles del issue, el modelo inspecciona ficheros, localiza la causa y propone un parche candidato que el arnes Leaf ejecuta y valida contra los tests.
+- Implementacion de funcionalidades acotadas: el modelo navega entre ficheros relacionados, edita el codigo necesario y ejecuta la suite de tests para verificar que no introduce regresiones.
+- Correccion de regresiones en integracion continua: integrado con Leaf en un entorno aislado, puede reproducir el fallo, aplicar un cambio y comprobar el resultado antes de que un humano revise el parche.
+- Mantenimiento guiado por tests: el modelo genera cambios iterativos usando la retroalimentacion de la ejecucion de tests, adecuado para tareas de refactorizacion con cobertura existente.
+- Investigacion sobre agentes de codificacion de largo horizonte: su contexto de aproximadamente 131K tokens y su entrenamiento con recompensas ejecutables lo hacen util como banco de pruebas para estudiar navegacion de repositorios y planificacion multi-paso.
+- Asistencia supervisada en desarrollo: un ingeniero puede usar el modelo para diagnosticar y proponer parches sobre un repositorio autorizado, revisando manualmente el resultado antes de aplicarlo.
 
 ## Benchmarks y rendimiento
 
@@ -59,37 +53,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo denso de ~4,66B parámetros ocupa aproximadamente 9,3 GB en FP16/BF16 (coincide con el tamaño del repositorio de pesos safetensors), alrededor de 4,7 GB en cuantización de 8 bits y en torno a 2,5-3 GB en cuantizaciones de 4 bits, aunque el repositorio solo publica safetensors y no se confirman cuantizaciones oficiales.
-- GPU recomendadas: no especificadas por el autor. Para BF16 completo encajan GPUs con 16 GB o más de VRAM (por ejemplo, RTX 4090, A100 40 GB, H100). Con cuantización de 8 o 4 bits podría ejecutarse en GPUs de consumo de 8-12 GB, aunque esto no está confirmado por el autor.
-- Cabe en GPU de consumo: probable en GPUs con 16 GB o más en BF16 (por ejemplo, RTX 4090 o RTX 5080); en 8-12 GB requeriría cuantización no publicada oficialmente.
-- Opciones de despliegue: no confirmadas por el autor. Los formatos publicados son safetensors, compatibles con servidores de inferencia (vLLM, TGI) y con conversión a GGUF para llama.cpp/Ollama, pero no se documentan recetas oficiales.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 4,66 mil millones de parametros, una estimacion orientativa en FP16 rondaria los 9-10 GB de pesos, y en cuantizaciones de 8 bits o 4 bits se reduciria aproximadamente a la mitad o a un cuarto, respectivamente; estas cifras son estimaciones y no datos publicados por el autor.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada oficialmente; por tamano, un modelo de 4,66 mil millones de parametros es plausible en GPU de consumo con cuantizacion, pero no hay validacion publicada.
+- Opciones de despliegue: no disponibles. El autor documenta el uso mediante el arnes Leaf y el repositorio GitHub asociado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FrogNano-4B-2609 | 4,66B (denso) | ~131K tokens | Agente de código a nivel de repositorio (post-entrenamiento por RL) | MIT (etiqueta HF) / Apache 2.0 (model card) | Hugging Face: microsoft/FrogNano-4B-2609 |
-| Qwen/Qwen3.5-4B | ~4B (denso) | No disponible | Modelo generalista de lenguaje, razonamiento, código, agente y multimodal | No disponible | Hugging Face: Qwen/Qwen3.5-4B |
-| Otros agentes de código de ~4B | No disponible | No disponible | No disponible | No disponible | No disponible |
-
-La comparacion de rendimiento con alternativas de la misma categoria no esta disponible, ya que no se han publicado resultados de benchmarks en la informacion proporcionada.
+| FrogNano-4B-2609 | 4,66 mil millones | Aproximadamente 131K tokens | Agente de codificacion RL con arnes Leaf | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B | no disponible en la informacion | no disponible en la informacion | Modelo generalista multimodal | no disponible en la informacion | Hugging Face |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Dependencia fuerte del arnés Leaf: el rendimiento es sensible a la configuración del arnés y a la calidad de los tests; fuera de ese entorno los resultados pueden degradarse.
-- Sesgo de dominio: los datos de entrenamiento son predominantemente Python y principalmente en inglés, lo que limita su eficacia en otros lenguajes de programación o idiomas.
-- Riesgo de alucinacion en parches: el modelo puede generar parches incorrectos o inseguros aunque superen los tests disponibles, ya que las recompensas se basan en tests ejecutables y no garantizan corrección o seguridad.
-- Ausencia de alineacion de seguridad especifica: el post-entrenamiento no usó conjuntos de preferencias de seguridad, rechazo, contenido dañino ni adversarial, por lo que no debe considerarse alineado de forma independiente para despliegue autónomo sin supervisión.
-- Discrepancia de licencia: la etiqueta de Hugging Face indica MIT, mientras que la model card declara Apache License 2.0; conviene verificar los términos aplicables antes de uso comercial, ya que además se derivan obligaciones de atribución de Qwen/Qwen3.5-4B.
-- Contexto: los ~131K tokens corresponden a la configuración de agente evaluada; no está claro que se mantenga ese contexto en otros modos de uso.
-- Limitacion multimodal: los componentes de visión heredados no fueron post-entrenados ni evaluados, por lo que no deben usarse como capacidad soportada.
-- Necesidad de revision humana: los parches generados requieren revisión, pruebas de regresión y validación de seguridad antes de cualquier despliegue; el modelo no despliega cambios por sí mismo.
-- Datos de adopcion escasos: 2 descargas y 13 likes en el momento de la consulta, sin pipeline declarado ni idiomas especificados.
+- El rendimiento es sensible al arnes Leaf y a la calidad de los tests; fuera de ese entorno los resultados pueden degradarse.
+- Los datos de entrenamiento son predominantemente Python y en ingles, lo que limita su generalizacion a otros lenguajes e idiomas.
+- Los parches generados pueden ser incorrectos o inseguros aunque superen los tests disponibles; requieren revision humana, pruebas de regresion y validacion de seguridad antes de su uso o despliegue.
+- No se utilizaron datasets especificos de seguridad, preferencias de rechazo, contenido danino ni adversariales; el modelo no debe considerarse alineado de forma independiente para despliegue autonomo sin restricciones.
+- El modelo no despliega cambios por si mismo: Leaf ejecuta las llamadas autorizadas en un entorno de repositorio aislado y produce un parche candidato.
+- Los componentes de vision heredados no han sido post-entrenados ni evaluados y no se declaran como soportados.
+- Riesgo de alucinacion en la generacion de parches y en la interpretacion de codigo; no hay datos publicados sobre sesgos.
+- La licencia Apache 2.0 permite uso comercial, pero se mantienen las atribuciones y avisos de copyright del modelo upstream Qwen/Qwen3.5-4B.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/microsoft/FrogNano-4B-2609
-- Modelo upstream: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/microsoft/FrogNano-4B-2609
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Informe tecnico: https://aka.ms/frognano-tech-report
-- Repositorio y arnés Leaf: https://github.com/microsoft/FrogNano
+- Repositorio del arnes Leaf: https://github.com/microsoft/FrogNano

@@ -67,26 +67,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ESL Conversation Questions - Halloween (I-TESL-J)",
-      "url": "http://iteslj.org/questions/halloween.html",
-      "snippet": "Conversation Questions Halloween Conversation Questions for the ESL Classroom What day of the month is halloween? Why is …"
-    },
-    {
-      "title": "¿Qué dice la Biblia sobre el Halloween y sus orígenes?",
-      "url": "https://www.jw.org/es/ense%C3%B1anzas-b%C3%ADblicas/preguntas/origen-halloween/",
-      "snippet": "Tanto los orígenes como las tradiciones del Halloween están en contra de lo que enseña la Biblia. Descubra lo que hay detrás de su …"
-    },
-    {
-      "title": "What Are Halloween and the Day of the Dead? Should Christians …",
-      "url": "https://www.bibleinfo.com/en/questions/it-wrong-celebrate-halloween",
-      "snippet": "The word Halloween comes from a historical holiday called All Hallows Day, known in Spanish as Día de Todos los Santos. All …"
-    },
-    {
-      "title": "¿Qué es Halloween y como se relaciona con el Día de los Muertos ...",
-      "url": "https://www.bibleinfo.com/es/questions/%C2%BFes-incorrecto-celebrar-halloween",
-      "snippet": "Halloween es una celebración bastante similar al Día de los Muertos, que se celebra en Norteamérica la noche del 31 de octubre. …"
-    }
-  ]
+  "sources": []
 }

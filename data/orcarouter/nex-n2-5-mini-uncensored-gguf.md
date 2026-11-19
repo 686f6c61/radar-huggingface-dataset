@@ -2,105 +2,87 @@
 
 ## Resumen
 
-Nex-N2.5-mini-Uncensored-GGUF es la distribucion cuantizada en formato GGUF del modelo orcarouter/Nex-N2.5-mini-Uncensored, un modelo multimodal de arquitectura MoE (mezcla de expertos) con 34.660.610.688 parametros totales (unos 34,66 mil millones). Lo publica el usuario orcarouter y sus etiquetas lo vinculan a la familia qwen3.5 / qwen3_5_moe, con pipeline declarado image-text-to-text: acepta imagenes y texto como entrada y genera texto.
+Nex-N2.5-mini-Uncensored-GGUF es la versión cuantizada en formato GGUF del modelo Nex-N2.5-mini-Uncensored, publicado por el usuario orcarouter en Hugging Face. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 34.660.610.688 parámetros totales, derivado de la familia Qwen3.5 (tag `qwen3_5_moe`) y sometido a un proceso de "abliteration" para eliminar los mecanismos de rechazo y censura del modelo original. La ficha está orientada a inferencia local con llama.cpp y despliegues compatibles con endpoints, e incluye soporte de visión mediante proyector multimodal (mmproj).
 
-Su rasgo diferencial es que se trata de un modelo "abliterated" y "uncensored": se han eliminado las direcciones de rechazo del modelo original, de modo que no aplica el filtrado de seguridad habitual. Los propios tags lo orientan explicitamente a red teaming y ai-red-team, ademas de a casos agenticos, computer-use, function-calling y razonamiento.
+El modelo está pensado para tareas de red-teaming, investigación en seguridad de IA y aplicaciones que requieren respuestas sin filtros de contenido, además de conservar capacidades agénticas: function calling, computer-use, razonamiento multi-paso y procesamiento de imagen y texto. La cuantización emplea imatrix, lo que suele mejorar la calidad de los pesos comprimidos respecto a cuantizaciones estándar.
 
-Se distribuye unicamente en GGUF para llama.cpp (con fichero mmproj para la torre de vision), bajo licencia Apache-2.0 y con acceso restringido: requiere aceptar condiciones en Hugging Face. Acumula 1.184 descargas y 9 likes desde su publicacion el 10 de septiembre de 2026, y el repositorio ocupa 114,9 GB, lo que refleja varias cuantizaciones del mismo modelo.
+La relevancia actual del modelo radica en su combinación de licencia Apache-2.0, tamaño MoE moderado y disponibilidad en GGUF, lo que permite ejecutarlo en hardware de consumo con suficiente memoria, algo poco habitual en modelos de esta escala con capacidades multimodales y agénticas. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos), etiquetada como qwen3.5 / qwen3_5_moe; vision-language |
-| Parametros totales | 34.660.610.688 (34,66 mil millones) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), base Qwen3.5 (`qwen3_5_moe`) |
+| Parametros totales | 34.660.610.688 (34,66 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible el listado exacto; el repositorio se distribuye en GGUF cuantizado generado con imatrix para llama.cpp |
-| Idiomas soportados | en (ingles), zh (chino) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (incluye mmproj para la torre de vision); modelo base en safetensors: orcarouter/Nex-N2.5-mini-Uncensored |
-| Modalidad de entrada/salida | image-text-to-text (entrada de imagen y texto, salida de texto) |
-| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Tamano del repositorio | 114,9 GB |
-| Descargas / likes | 1.184 / 9 |
-| Fecha de publicacion | 10 de septiembre de 2026 |
+| Tipos de cuantizacion | GGUF con imatrix (variantes concretas no disponibles) |
+| Idiomas soportados | inglés (en), chino (zh) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (repo de 114,9 GB, incluye mmproj para visión) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica una arquitectura de mezcla de expertos (MoE) con 34,66 mil millones de parametros totales, derivada de la familia Qwen3.5 segun los tags del repositorio (qwen3.5, qwen3_5_moe). Al ser MoE, solo una fraccion de los parametros se activa por token, aunque el numero de parametros activos no se especifica en la informacion proporcionada. El modelo es multimodal: incorpora una torre de vision que se distribuye como fichero mmproj, compatible con llama.cpp para entrada de imagenes junto a texto.
+El modelo sigue una arquitectura de transformer con mezcla de expertos (MoE), heredada de la familia Qwen3.5, según indican los tags `qwen3_5_moe` y `moe`. El checkpoint del que deriva, orcarouter/Nex-N2.5-mini-Uncensored, ha sido sometido a abliteration, una técnica de edición de pesos que suprime la dirección de activación asociada al rechazo de peticiones, de modo que el modelo deja de negarse a responder ante contenido que el original filtraría. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en la información proporcionada.
 
-El modelo base es orcarouter/Nex-N2.5-mini-Uncensored, sobre el que se ha aplicado un proceso de tipo "abliterated": se eliminan las direcciones de rechazo del modelo alineado, dando lugar a una variante sin censura y orientada a red teaming. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias.
+La versión publicada aquí es una cuantización GGUF generada con imatrix, pensada para llama.cpp y runtimes compatibles. El repositorio incluye un proyector multimodal (mmproj) que habilita la entrada de imágenes junto con texto, lo que convierte al modelo en un sistema image-text-to-text. No se han detallado innovaciones adicionales como decodificación especulativa o atención lineal en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (pipeline conversational).
-- Razonamiento explicito (tag reasoning) y capacidades agenticas (tag agentic).
-- Soporte de function calling / tool calling.
-- Uso orientado a computer-use: interaccion con interfaces y flujos de automatizacion.
-- Vision-language: comprension de imagenes a traves del fichero mmproj en llama.cpp.
-- Capacidades multilingues limitadas a ingles (en) y chino (zh).
-- Modelo "abliterated" y "uncensored": no aplica rechazo de peticiones, lo que lo hace apto para ai-red-team y pruebas adversarias.
-- Ejecucion local en CPU/GPU mediante llama.cpp, con cuantizaciones generadas usando imatrix.
-- No se especifica en la informacion disponible si existe modo "thinking" separado, soporte de audio o decodificacion especulativa.
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Razonamiento explícito (tag `reasoning`) y resolución de problemas multi-paso.
+- Function calling y tool calling, con compatibilidad declarada con endpoints.
+- Capacidades agénticas: computer-use y flujos de agente autónomo.
+- Procesamiento de visión: entrada de imagen y texto (image-text-to-text) mediante mmproj.
+- Generación de código y matemáticas (implícito en la base Qwen3.5; sin datos concretos de benchmarks).
+- Modo sin censura: respuestas sin rechazos ante contenido sensible, orientado a red-teaming.
+- Soporte de inferencia en llama.cpp y runtimes GGUF compatibles.
 
 ## Casos de uso
 
-- Red teaming y evaluacion de seguridad: al haber sido abliterado, permite generar respuestas que un modelo alineado rechazaria, util para construir conjuntos de prompts adversarios y medir la robustez de clasificadores y filtros de contenido.
-- Investigacion en alineacion y refusal: comparar sus salidas con las del modelo base alineado permite estudiar que comportamientos dependen de la direccion de rechazo eliminada.
-- Agentes de automatizacion con tool calling: puede integrarse en pipelines que encadenen llamadas a funciones, consultas a APIs y razonamiento multi-paso, con la ventaja de ejecutarse en local.
-- Computer-use y automatizacion de escritorio: con entrada de imagen, puede interpretar capturas de pantalla y decidir la siguiente accion en flujos de automatizacion de interfaz.
-- Analisis de documentos con componentes visuales: al aceptar imagen y texto, sirve para extraer informacion de capturas, diagramas o formularios junto a instrucciones en lenguaje natural.
-- Asistencia tecnica en ingles y chino: conversaciones multi-turno para soporte interno o documentacion bilingue en entornos donde no se requiere moderacion adicional.
-- Generacion de datos sinteticos y aumentacion de datasets: producir texto diverso y no filtrado para entrenar o evaluar otros sistemas, incluyendo datos negativos.
-- Despliegue local en estaciones de trabajo: gracias al formato GGUF y a las cuantizaciones con imatrix, puede ejecutarse en equipos con GPU de consumo o en Mac con memoria unificada, sin dependencia de APIs externas.
+- Red-teaming y evaluación de seguridad: el modelo, al estar abliterated, permite generar respuestas que un modelo alineado rechazaría, lo que lo hace útil para construir conjuntos de pruebas adversarios y medir la robustez de clasificadores y filtros de contenido.
+- Investigación en alineación y mecánica interna: comparar las activaciones del modelo censurado y del abliterated ayuda a estudiar dónde y cómo se representan las negativas en el espacio de activaciones.
+- Asistentes de escritorio con computer-use: la capacidad agéntica y el soporte de function calling permiten integrarlo en entornos que controlan aplicaciones mediante herramientas, ejecutando tareas multi-paso sobre la interfaz.
+- Análisis de documentos con imágenes: gracias al proyector mmproj, puede procesar capturas, diagramas o formularios junto con instrucciones textuales, útil en pipelines de extracción de información.
+- Despliegue local en estaciones de trabajo: al ser GGUF con cuantización imatrix, se puede servir con llama.cpp en máquinas con GPU de consumo, sin depender de APIs externas, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Generación de código en pipelines internos: el modelo puede integrarse como servicio compatible con endpoints para autocompletado y revisión de código en herramientas de desarrollo, siempre que el contenido generado se revise antes de producción.
+- Prototipado de agentes conversacionales bilingües (inglés/chino): útil para demos y pruebas de concepto en mercados donde esos dos idiomas son prioritarios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos (calculada a partir de los 34,66 mil millones de parametros; cifras orientativas, no publicadas por el autor):
-  - Cuantizacion de ~4,8 bits por peso: en torno a 21 GB.
-  - Cuantizacion de ~5,7 bits por peso: en torno a 25 GB.
-  - Cuantizacion de ~6,6 bits por peso: en torno a 29 GB.
-  - Cuantizacion de 8 bits: en torno a 37 GB.
-  - Precision FP16/BF16: en torno a 69 GB.
-- Hay que sumar el fichero mmproj de la torre de vision (del orden de 1-2 GB) y la cache KV, cuyo tamano depende del contexto configurado.
-- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para cuantizaciones de 4-5 bits y contexto moderado; RTX 5090 (32 GB) o configuraciones multi-GPU para 6 bits; A100 40/80 GB o H100 80 GB para 8 bits o FP16.
-- Si cabe en GPU de consumo: si, en cuantizaciones de 4-5 bits sobre GPU de 24 GB; tambien en Apple Silicon con memoria unificada de 32 GB o superior.
-- Opciones de despliegue: llama.cpp (llama-server), Ollama, LM Studio, llama-cpp-python y otros frontends compatibles con GGUF. El soporte de GGUF en vLLM es experimental y TGI no lo soporta de forma nativa.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: con 34,66 B parámetros totales, una cuantización Q4 requiere en torno a 20-22 GB de VRAM solo para pesos, más overhead de contexto y del proyector de visión; Q8 se aproxima a 37-40 GB; FP16 supera los 69 GB.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB o RTX 6000 Ada para cuantizaciones altas y contexto largo; RTX 4090 (24 GB) puede alojar cuantizaciones Q4 con contexto moderado.
+- GPU de consumo: sí es viable en RTX 4090, RTX 3090 (24 GB) y, con cuantizaciones más agresivas o descarga parcial a RAM, en GPUs de 16 GB; en ese caso la latencia aumenta por el offloading.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, servidores compatibles con endpoints y runtimes que acepten GGUF con mmproj para visión.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán de la cuantización, del número de expertos activos y del hardware.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparables proceden de sus fichas publicas; los campos del modelo analizado que no constan se marcan como no disponibles.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Nex-N2.5-mini-Uncensored-GGUF | 34,66 B (MoE) | no disponible | Apache-2.0 | GGUF + mmproj | Abliterated, visión, agéntico, acceso gated |
+| Modelo base Qwen3.5 MoE (referencia de familia) | no disponible | no disponible | no disponible | safetensors/GGUF | Alineado y con rechazos; misma arquitectura subyacente |
+| Alternativas MoE de ~30-35 B abliterated | no disponible | no disponible | variable | GGUF | No se dispone de datos verificables en la información proporcionada |
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Vision | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Nex-N2.5-mini-Uncensored-GGUF | 34,66 B | no disponible | no disponible | Si (mmproj) | Apache-2.0 | GGUF, acceso restringido |
-| Qwen3-30B-A3B | 30,5 B | 3,3 B | 128 K (extensible con YaRN) | No | Apache-2.0 | Safetensors y GGUF, abierto |
-| Mixtral 8x7B | 46,7 B | 12,9 B | 32 K | No | Apache-2.0 | Safetensors y GGUF, abierto |
-| Gemma 3 27B | 27 B | no aplica (denso) | 128 K | Si | Licencia Gemma | Safetensors y GGUF, abierto |
-
-La diferencia principal frente a estas alternativas no es el rendimiento, del que no hay datos publicados, sino el enfoque: es un modelo multimodal abliterado, sin moderacion, distribuido en GGUF y con acceso sujeto a aceptacion de condiciones.
+No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de alineacion de seguridad: al ser "abliterated" y "uncensored", puede generar contenido ofensivo, ilegal o peligroso sin filtrado. No es apto para aplicaciones de cara al publico sin capas de moderacion externas.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad, por lo que se desconoce su tasa de invencion de hechos.
-- Sesgos conocidos: no disponible. Al derivar de un modelo entrenado principalmente en ingles y chino, es previsible un sesgo cultural y linguistico hacia esos dos idiomas.
-- Idiomas: soporte declarado unicamente de ingles (en) y chino (zh); no hay soporte declarado de castellano, lo que limita su uso en produccion en espanol.
-- Contexto: se desconoce la longitud de contexto soportada, un dato critico para planificar despliegues con documentos largos.
-- Licencia: Apache-2.0 permite uso comercial, pero el acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face, lo que hay que verificar antes de integrarlo en un producto.
-- Parametros activos desconocidos: al no publicarse, no se puede estimar con precision el coste de computo por token ni el throughput real.
-- Formato limitado a GGUF: no hay pesos en safetensors para este repositorio (el base si los tiene), lo que restringe el uso con frameworks de entrenamiento o fine-tuning de alto rendimiento.
-- Fecha de publicacion futura respecto al conocimiento habitual y volumen de descargas bajo (1.184), lo que implica poca validacion independiente por parte de la comunidad.
-- Uso responsable: cualquier despliegue orientado a red teaming debe hacerse en entornos aislados y con registro de actividad.
+- El proceso de abliteration elimina los rechazos de seguridad: el modelo puede producir contenido dañino, ilegal o explícitamente sensible; no debe exponerse sin filtros a usuarios finales.
+- Riesgo elevado de alucinación, especialmente en dominios especializados y en tareas agénticas donde el modelo puede ejecutar acciones no deseadas.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de descargas en CI/CD.
+- La licencia Apache-2.0 permite uso comercial, pero el uso de un modelo abliterated puede incumplir políticas de plataformas o normativas sectoriales; la responsabilidad recae en el desplegador.
+- No se dispone de información sobre la longitud de contexto real, los parámetros activos por token ni el rendimiento medido, lo que dificulta el dimensionamiento de producción.
+- El tamaño del repositorio (114,9 GB) implica requisitos de almacenamiento y ancho de banda considerables para la descarga.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored-GGUF
+- Hugging Face: https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored-GGUF
 - Modelo base: https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored
-- No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs o repos); los resultados devueltos correspondian a foros de soporte de Microsoft sin relacion con el modelo.
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

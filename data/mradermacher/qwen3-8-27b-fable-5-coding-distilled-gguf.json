@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Translate",
-      "url": "https://translate.google.com/",
-      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
-    },
-    {
-      "title": "Google Translate",
-      "url": "https://translate.google.com/details",
-      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
-    },
-    {
-      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
-      "url": "https://translate.google.com/about/",
-      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
-    },
-    {
-      "title": "Google Translate",
-      "url": "https://translate.google.com/m",
-      "snippet": "Google home Send feedback Privacy and terms Switch to full site"
-    },
-    {
-      "title": "Google Übersetzer – dein persönlicher Übersetzer auf deinem …",
-      "url": "https://translate.google.com/intl/de/about/",
-      "snippet": "Hier erfährst du, wie du mit Google Übersetzer Text, gesprochene Sprache, Bilder, Dokumente, Websites und vieles mehr …"
-    }
-  ]
+  "sources": []
 }

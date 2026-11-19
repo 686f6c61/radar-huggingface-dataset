@@ -2,89 +2,105 @@
 
 ## Resumen
 
-El modelo `software-mansion/react-native-executorch-supertonic` es una exportación del sintetizador de voz Supertonic 3, preparado específicamente para ejecutarse en dispositivos móviles a través de la librería React Native ExecuTorch. Desarrollado por Software Mansion, este modelo realiza conversión de texto a voz (TTS) en más de 30 idiomas, con una única voz por idioma, y está pensado para integrarse en aplicaciones móviles con requisitos de baja latencia y ejecución local.
+Supertonic es un sistema de síntesis de voz (text-to-speech) desarrollado originalmente por Supertone y reempaquetado por Software Mansion para su uso en React Native ExecuTorch. Este repositorio concreto no contiene los pesos originales en formato de entrenamiento, sino los programas `.pte` de ExecuTorch derivados del modelo base `Supertone/supertonic-3`, listos para ejecutarse en dispositivo (on-device) en aplicaciones móviles y de escritorio. El pipeline es text-to-speech y la librería declarada es `executorch`.
 
-La arquitectura se compone de cuatro sub-modelos que operan secuencialmente: un predictor de duración, un codificador de texto, un estimador de vector basado en flow-matching y un vocoder que genera la forma de onda final a 44,1 kHz. El modelo está exportado en formato `.pte` de ExecuTorch, con dos backends disponibles: XNNPACK para CPU y MLX para GPU en Apple Silicon. Su licencia es OpenRAIL, lo que permite uso comercial con ciertas restricciones.
+El modelo se distribuye como un conjunto de cuatro componentes diferenciados —`duration_predictor`, `text_encoder`, `vector_estimator` y `vocoder`— exportados para tres backends: MLX (Apple Silicon, fp32), Vulkan (fp16) y XNNPACK (fp32 e int8). Esta modularidad permite ajustar precisión y backend según el hardware objetivo, con variantes int8 que reducen el `vector_estimator` de 245 MB a 62,9 MB y el vocoder de 96,7 MB a 36,8 MB.
 
-La relevancia de este modelo radica en su capacidad de ejecutar síntesis de voz de alta calidad directamente en el dispositivo, sin necesidad de conexión a servidores externos, lo que reduce costes y mejora la privacidad. Con un factor de tiempo real (RTF) de aproximadamente 0,07 en CPU y 0,026 en GPU Apple Silicon, es significativamente más rápido que el tiempo real, lo que lo hace adecuado para aplicaciones interactivas.
+Su relevancia actual radica en que ofrece TTS multilingüe (30 idiomas) ejecutable localmente sin dependencia de servicios en la nube, con estilos de voz predefinidos (cinco femeninos y cinco masculinos) y compatibilidad declarada con ExecuTorch v1.4.1. Es una pieza pensada para integrarse en el ecosistema React Native mediante la librería `react-native-executorch`, no como modelo de propósito general en servidor.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Modelo TTS compuesto por 4 sub-modelos secuenciales: predictor de duración, codificador de texto, estimador de vector (flow-matching) y vocoder |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (no aplica, es TTS) |
-| Tipos de cuantizacion | no especificado (los archivos .pte pueden incluir cuantización interna) |
-| Idiomas soportados | en, es, fr, pl, el, id, zh, ja, ru, tr, da, et, hr, pt, vi, sl, cs, it, uk, ko, sv, lv, hu, fi, ar, nl, sk, bg, hi, de, lt (30+ idiomas) |
-| Licencia | OpenRAIL |
-| Formato de pesos | `.pte` (ExecuTorch) con backends XNNPACK (CPU) y MLX (Apple Silicon GPU) |
+| Arquitectura | No disponible (modelo base `Supertone/supertonic-3`; pipeline TTS con componentes duration_predictor, text_encoder, vector_estimator y vocoder) |
+| Parámetros totales | No disponible |
+| Parámetros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | fp32 (MLX y XNNPACK), fp16 (Vulkan), int8 (XNNPACK: 8da8w en capas Linear, con ConvNeXt pointwise convs convertidas a Linears) |
+| Idiomas soportados | 30: en, es, fr, pl, el, id, zh, ja, ru, tr, da, et, hr, pt, vi, sl, cs, it, uk, ko, sv, lv, hu, fi, ar, nl, sk, bg, hi, de, lt |
+| Licencia | openrail |
+| Formato de pesos | ExecuTorch `.pte` (más `config.json`, `unicode_indexer.json`, estilos de voz `voice_styles/*.json` y voces `voices/*.bin`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Supertonic 3, un sistema TTS de última generación. La arquitectura se divide en cuatro componentes que se ejecutan de manera secuencial:
+No se dispone de información sobre la arquitectura interna ni sobre el proceso de entrenamiento en la documentación proporcionada. El repositorio es una exportación a ExecuTorch del modelo base `Supertone/supertonic-3`, y la model card solo describe la estructura de artefactos y los detalles de exportación, no el diseño del modelo original.
 
-1. **Predictor de duración**: estima la duración temporal de cada segmento de habla a partir del texto de entrada.
-2. **Codificador de texto**: transforma el texto en una representación condicionada por el estilo de voz.
-3. **Estimador de vector**: utiliza un denoiser basado en flow-matching para generar el latente de audio.
-4. **Vocoder**: decodifica el latente en una forma de onda de 44,1 kHz.
-
-El modelo se exportó con ExecuTorch v1.3.1, y no se garantiza compatibilidad hacia adelante. El entrenamiento original fue realizado por Supertone, aunque no se proporcionan detalles sobre el dataset, el número de tokens ni el proceso de alineación. La exportación a ExecuTorch fue realizada por Software Mansion para su uso en React Native.
+Lo que sí se documenta es la descomposición en cuatro etapas: un `duration_predictor` (3,4 MB en fp32 XNNPACK), un `text_encoder` (34,5 MB en fp32 XNNPACK), un `vector_estimator` (245 MB en fp32 XNNPACK, 62,9 MB en int8) y un `vocoder` (96,7 MB en fp32 XNNPACK, 36,8 MB en int8). La existencia de un `vector_estimator` y de un parámetro de "steps" (se evalúa con 8 pasos) sugiere un esquema de generación iterativa, probablemente basado en difusión o flow matching, aunque esto no se confirma explícitamente. La mención a ConvNeXt pointwise convs en el proceso de cuantización int8 indica presencia de bloques convolucionales en al menos parte de la arquitectura. No hay datos sobre número de tokens de entrenamiento, composición del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto en más de 30 idiomas, con una única voz por idioma (predefinida).
-- Generación de audio a 44,1 kHz de frecuencia de muestreo.
-- Ejecución local en dispositivos móviles mediante ExecuTorch, sin necesidad de conexión a servidores.
-- Dos backends de inferencia: XNNPACK para CPU (optimizado) y MLX para GPU en Apple Silicon.
-- Cada archivo `.pte` expone dos métodos: `forward` para la inferencia y `get_dynamic_dims_forward` para validación de dimensiones de entrada en tiempo de ejecución.
-- Compatible con el ecosistema React Native a través de la librería `react-native-executorch`.
+- Síntesis de voz a partir de texto (text-to-speech) en 30 idiomas, incluyendo español, inglés, francés, alemán, italiano, portugués, chino, japonés, coreano, árabe, hindi y ruso, entre otros.
+- Diez estilos de voz predefinidos: cinco femeninos (F1–F5) y cinco masculinos (M1–M5), cada uno con un fichero de estilo (`voice_styles/*.json`, ~285 kB) y un fichero de voz (`voices/*.bin`, 50,5 kB).
+- Generación controlada por pasos: la evaluación documentada usa 8 steps, lo que permite ajustar el compromiso entre calidad y coste computacional.
+- Ejecución on-device en tres backends: MLX (Apple Silicon), Vulkan (GPU multiplataforma) y XNNPACK (CPU).
+- Cuantización int8 selectiva en `vector_estimator` y `vocoder` para reducir huella de memoria en dispositivos con recursos limitados.
+- Integración con React Native mediante la librería `react-native-executorch`, que expone constantes de modelo en su registro para los pipelines de tarea correspondientes.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-step, visión ni audio de entrada; es exclusivamente un modelo TTS.
 
 ## Casos de uso
 
-- **Aplicaciones de accesibilidad**: conversión de texto a voz para personas con discapacidad visual o dificultades de lectura. El modelo puede ejecutarse localmente en el dispositivo, garantizando privacidad y funcionamiento sin conexión.
-- **Asistentes de voz en aplicaciones móviles**: integración en apps de productividad o domótica para leer notificaciones, mensajes o comandos. Su baja latencia (RTF ~0,07 en CPU) permite respuestas casi inmediatas.
-- **Aprendizaje de idiomas**: generación de pronunciación correcta en 30+ idiomas para aplicaciones educativas. El modelo puede leer palabras o frases en el idioma objetivo con una voz clara.
-- **Audioguías y contenido narrado**: creación de audio narrado para guías turísticas, libros electrónicos o resúmenes de noticias dentro de una app móvil, sin depender de servicios en la nube.
-- **Sistemas de navegación y alertas**: lectura de indicaciones de navegación, alertas de seguridad o mensajes del sistema en vehículos o dispositivos portátiles, donde la baja latencia es crítica.
-- **Pruebas de accesibilidad en desarrollo**: los desarrolladores pueden usar el modelo para validar la accesibilidad de sus apps generando audio de prueba en diferentes idiomas sin necesidad de grabaciones humanas.
-- **Aplicaciones de comunicación aumentativa**: dispositivos de comunicación para personas con dificultades del habla, permitiendo escribir texto y convertirlo en voz en tiempo real.
+- Lectura por voz en aplicaciones móviles React Native: integración directa mediante `react-native-executorch`, usando los `.pte` de XNNPACK o Vulkan para sintetizar texto en el dispositivo sin llamadas a red, lo que elimina latencia de servicio y costes por petición.
+- Asistentes de accesibilidad: conversión de contenido textual (notificaciones, artículos, mensajes) a audio para usuarios con discapacidad visual, aprovechando los 30 idiomas y los diez estilos de voz para ofrecer una experiencia consistente en distintos mercados.
+- Audiolibros y podcasts generados localmente: el `vector_estimator` con 8 pasos y el vocoder permiten generar narración de forma iterativa; el tamaño contenido de los artefactos int8 (62,9 MB + 36,8 MB) facilita el despliegue en dispositivos de gama media.
+- Aprendizaje de idiomas: pronunciación sintética en los 30 idiomas soportados, con voces masculinas y femeninas, útil para aplicaciones de repetición y práctica de escucha sin depender de servicios externos.
+- Sistemas de navegación y automoción: instrucciones de voz generadas on-device con backend Vulkan en GPUs embebidas, evitando la dependencia de conectividad en vehículos.
+- Prototipado rápido de interfaces de voz: uso de los ficheros MLX fp32 en Macs con Apple Silicon para iterar sobre guiones y estilos de voz antes de desplegar la variante int8 en el dispositivo final.
+- Privacidad de datos en entornos sanitarios o financieros: al ejecutarse localmente, el texto que se convierte a voz no abandona el dispositivo, lo que encaja en flujos con requisitos de confidencialidad.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona el factor de tiempo real (RTF) medido en Apple Silicon, que indica la relación entre el tiempo de procesamiento y la duración del audio generado. Un RTF inferior a 1 significa que el modelo es más rápido que el tiempo real.
+La model card incluye una evaluación de calidad mediante WER de un round trip con Whisper base.en sobre textos de LibriSpeech test-clean, voz F1 y 8 pasos:
 
-| Backend | Descripcion | RTF (Apple Silicon) | Velocidad |
-|---|---|---|---|
-| XNNPACK | CPU optimizado mediante delegado XNNPACK | ~0,07 | 14× más rápido que el tiempo real |
-| MLX | GPU Apple Silicon mediante delegado MLX | ~0,026 | 38× más rápido que el tiempo real |
+| Variante | WER (57 cortos) | WER (8 largos) |
+|---|---|---|
+| fp32 | 3,36 | 3,32 |
+| fp32, otra semilla de ruido | 3,26 | 3,80 |
+| int8 | 3,74 | 3,01 |
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado en la información disponible resultados de benchmarks estándar de TTS (MOS, RTF, latencia) ni comparaciones con otros sistemas.
 
 ## Requisitos de hardware
 
-- **Plataformas objetivo**: dispositivos móviles con soporte para ExecuTorch (iOS y Android) a través de React Native.
-- **GPU recomendadas**: no se especifican GPUs de escritorio; el modelo está diseñado para ejecutarse en dispositivos móviles. El backend MLX requiere Apple Silicon (M1 o posterior).
-- **VRAM estimada**: no disponible. El tamaño del repositorio es de 3,0 GB, lo que sugiere que los archivos `.pte` pueden ocupar varios cientos de MB cada uno, pero el consumo de memoria en inferencia no se ha publicado.
-- **Opciones de despliegue**: el modelo se integra mediante la librería `react-native-executorch` (https://github.com/software-mansion/react-native-executorch). No se mencionan otros entornos como vLLM o llama.cpp, ya que no es un LLM.
-- **Latencia y throughput**: RTF de ~0,07 en CPU y ~0,026 en GPU Apple Silicon, lo que implica que un audio de 10 segundos se genera en aproximadamente 0,7 segundos (CPU) o 0,26 segundos (GPU).
+- Huella de memoria por backend (suma de los cuatro componentes):
+  - MLX fp32: 3,4 MB + 34,4 MB + 244 MB + 96,7 MB ≈ 378,5 MB.
+  - Vulkan fp16: 1,7 MB + 17,3 MB + 122 MB + 48,4 MB ≈ 189,4 MB.
+  - XNNPACK fp32: 3,4 MB + 34,5 MB + 245 MB + 96,7 MB ≈ 379,6 MB.
+  - XNNPACK int8 (vector_estimator y vocoder int8, resto fp32): 3,4 MB + 34,5 MB + 62,9 MB + 36,8 MB ≈ 137,6 MB.
+- GPU recomendadas: Apple Silicon para el backend MLX; GPUs compatibles con Vulkan (incluye GPUs integradas y dedicadas de escritorio y móviles) para la variante fp16.
+- CPU: cualquier CPU con soporte XNNPACK; la variante int8 está pensada para reducir el coste en dispositivos con memoria limitada.
+- Cabe en GPU de consumo: sí, con amplio margen; incluso la variante fp32 completa (~380 MB) es muy inferior a la VRAM de una RTX 4090 o similar, y la int8 (~138 MB) es apta para móviles de gama media.
+- Opciones de despliegue: runtime ExecuTorch v1.4.1 (obligatorio por compatibilidad, sin garantía de forward compatibility) y la librería `react-native-executorch` para React Native. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este formato.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos TTS en la información proporcionada. Modelos comparables en el ámbito del TTS local podrían incluir Piper, Coqui TTS o VITS, pero no se han publicado métricas de rendimiento para establecer una comparación cuantitativa. La ventaja principal de este modelo es su integración específica con ExecuTorch para React Native, lo que facilita su despliegue en aplicaciones móviles híbridas.
+No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparación cuantitativa fiable con alternativas TTS. A modo de contexto estructural, se indican diferencias de formato y despliegue:
+
+| Modelo | Formato | Despliegue | Idiomas | Licencia |
+|---|---|---|---|---|
+| react-native-executorch-supertonic | ExecuTorch `.pte` | On-device (React Native, ExecuTorch v1.4.1) | 30 | openrail |
+| Supertone/supertonic-3 (base) | No disponible | No disponible | No disponible | No disponible |
+| Alternativas TTS on-device | No disponible | No disponible | No disponible | No disponible |
+
+No se han identificado en la información proporcionada modelos comparables con datos verificables de parámetros, contexto o benchmarks.
 
 ## Limitaciones y advertencias
 
-- **Compatibilidad de versiones**: los archivos `.pte` se exportaron con ExecuTorch v1.3.1; no se garantiza compatibilidad hacia adelante. Versiones anteriores del runtime pueden no funcionar.
-- **Voz fija por idioma**: el modelo ofrece una única voz por idioma, sin posibilidad de elegir entre múltiples voces o estilos dentro del mismo idioma.
-- **Sesgos potenciales**: no se han documentado sesgos específicos, pero al ser un modelo TTS, puede tener limitaciones en la pronunciación de nombres propios, acentos regionales o jerga técnica.
-- **Riesgo de alucinación**: en TTS, el riesgo de alucinación se manifiesta como errores de pronunciación o entonación inapropiada. No se han publicado evaluaciones de robustez.
-- **Restricciones de licencia**: la licencia OpenRAIL permite uso comercial, pero puede imponer restricciones sobre usos considerados perjudiciales (p. ej., suplantación de voz). Se recomienda revisar los términos completos de OpenRAIL antes de su uso en producción.
-- **Uso fuera de React Native**: si se desea utilizar el modelo fuera del paquete `react-native-executorch`, es necesario asegurar la compatibilidad del runtime con la versión de ExecuTorch usada en la exportación, siguiendo los scripts de ejemplo proporcionados.
+- El repositorio contiene únicamente artefactos exportados; no incluye los pesos originales ni información sobre el entrenamiento, por lo que la reproducibilidad y el ajuste fino no están cubiertos.
+- Compatibilidad estricta con ExecuTorch v1.4.1: el runtime no garantiza compatibilidad hacia delante, y un runtime más antiguo puede fallar al cargar los `.pte`.
+- El backend CoreML fue exportado pero no publicado; el motivo se documenta en `coreml/NOTES.md`, lo que indica que no hay soporte CoreML en esta entrega.
+- La cuantización int8 solo se aplica a `vector_estimator` y `vocoder`; el `duration_predictor` y el `text_encoder` reutilizan fp32, de modo que el ahorro de memoria es parcial.
+- Los resultados de WER muestran variabilidad entre semillas de ruido (3,26–3,80 en fp32), lo que sugiere sensibilidad a la inicialización estocástica del proceso de generación.
+- No se documentan sesgos de voz, cobertura real por idioma ni calidad relativa entre los 30 idiomas declarados; la evaluación se limita a inglés (LibriSpeech) con la voz F1.
+- Riesgo de alucinación o artefactos de pronunciación en textos con nombres propios, siglas o dominios especializados no evaluados.
+- Licencia openrail: conviene revisar sus términos antes de uso comercial, especialmente en lo relativo a atribución y restricciones de uso.
+- No hay datos publicados de latencia, throughput ni MOS, lo que dificulta estimar el rendimiento en producción sin pruebas propias.
 
 ## Enlaces
 
-- [Hugging Face: software-mansion/react-native-executorch-supertonic](https://huggingface.co/software-mansion/react-native-executorch-supertonic)
-- [Repositorio React Native ExecuTorch](https://github.com/software-mansion/react-native-executorch)
-- [Modelo base: Supertone/supertonic-3](https://huggingface.co/Supertone/supertonic-3)
+- Repositorio en Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-supertonic
+- Modelo base: https://huggingface.co/Supertone/supertonic-3
+- Librería React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch
+- Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md
+- Notas del backend CoreML no publicado: https://huggingface.co/software-mansion/react-native-executorch-supertonic/blob/main/coreml/NOTES.md

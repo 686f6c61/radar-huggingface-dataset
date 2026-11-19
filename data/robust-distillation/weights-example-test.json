@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "robust-distillation/weights-example-test",
+  "slug": "robust-distillation-weights-example-test",
+  "author": "robust-distillation",
+  "url": "https://huggingface.co/robust-distillation/weights-example-test",
+  "created_at": "2026-11-18T22:09:17.000Z",
+  "updated_at": "2026-11-18T22:09:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "knowledge-distillation",
+    "robustness",
+    "cifar-100-c",
+    "dataset:cifar100",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45148627,
+  "storage_human": "45 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Hguimaraes/robustdistiller: [Research] Code and artifacts for ...",
+      "url": "https://github.com/Hguimaraes/robustdistiller",
+      "snippet": "RobustDistiller tl;dr: Robust distillation recipe for self-supervised speech representation learning (S3RL) models that tackle jointly model compression and robustness against environmental artifacts (noise and reverberation). In this repository, you will find useful codes to train/run the model and links to pre-trained weights."
+    }
+  ]
+}

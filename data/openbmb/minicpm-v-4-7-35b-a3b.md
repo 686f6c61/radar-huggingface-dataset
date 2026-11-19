@@ -2,93 +2,98 @@
 
 ## Resumen
 
-MiniCPM-V-4.7-35B-A3B es un modelo multimodal (vision-lenguaje) publicado por OpenBMB en Hugging Face bajo el identificador openbmb/MiniCPM-V-4.7-35B-A3B. El repositorio contiene pesos en formato safetensors con un total de 35.212.875.824 parametros (aproximadamente 35,2 mil millones) y un tamano de 70,4 GB, lo que corresponde a pesos almacenados en precision de 16 bits. El sufijo "A3B" del nombre sugiere una arquitectura de mezcla de expertos (MoE) con unos 3.000 millones de parametros activos por token, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
+MiniCPM-V 4.7 35B-A3B es un modelo multimodal (image-text-to-text) desarrollado por OpenBMB, el primero de la familia MiniCPM-V en adoptar una arquitectura de mezcla de expertos (MoE). Con 35.212.875.824 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token (de ahí la denominación A3B), el modelo combina comprensión de imagen única, múltiples imágenes y vídeo con una codificación visual eficiente y capacidades de inferencia en dispositivo.
 
-El modelo pertenece a la familia MiniCPM-V, especializada en tareas de vision y lenguaje sobre la base de los modelos MiniCPM de OpenBMB. Frente a versiones anteriores de la familia, esta variante escala el numero total de parametros hasta el rango de 35B, lo que situa al modelo en la categoria de sistemas multimodales de gran tamano desplegables en hardware de servidor con una o dos GPU profesionales. La combinacion de un total elevado de parametros con un numero reducido de parametros activos, si se confirma la arquitectura MoE, permitiria obtener calidad cercana a modelos densos de 30B+ con un coste de inferencia notablemente inferior.
+El modelo se posiciona como el primer MoE de código abierto con inferencia fluida y sin pérdida de rendimiento en dispositivos móviles. Para ello introduce la técnica Lookahead Expert Scheduling (LES) junto con cuantización fina por capas e integración de muestreo especulativo DSpark, logrando velocidades de decodificación superiores a 13 tokens/s con solo 3 GB de memoria en un iPhone 17 Pro Max. Según el autor, en modo Instruct supera la puntuación global de Qwen3.6 35B-A3B con menor tiempo de inferencia.
 
-La relevancia actual del modelo reside en la tendencia hacia arquitecturas dispersas aplicadas a modelos multimodales: reducir el coste por token manteniendo la capacidad de razonamiento sobre imagenes, documentos y texto. No obstante, la ficha del repositorio no incluye todavia licencia, idiomas, pipeline ni resultados de evaluacion publicados, por lo que la evaluacion practica exige consultar la documentacion oficial del proyecto.
+La arquitectura visual se basa en la compresión temprana intra-ViT de LLaVA-UHD v4 y admite compresión de tokens visuales mixta 4x/16x, lo que permite ajustar el equilibrio entre detalle visual y coste computacional. El modelo se distribuye bajo licencia Apache 2.0, con soporte para iOS, Android y HarmonyOS, así como para plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el identificador sugiere mezcla de expertos, sin confirmar) |
-| Parametros totales | 35.212.875.824 (aproximadamente 35,2B) |
-| Parametros activos | no disponible (la nomenclatura "A3B" apunta a unos 3B activos, sin confirmar en la informacion proporcionada) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-
-Datos adicionales del repositorio: tamano de 70,4 GB, etiqueta de pipeline `minicpmv4_7`, region `us`, 10 likes y 0 descargas en el momento de la consulta. Fecha de creacion: 2026-10-06; ultima actualizacion: 2026-10-06.
+| Arquitectura | Transformer multimodal con mezcla de expertos (MoE); visión basada en LLaVA-UHD v4 con compresión intra-ViT temprana |
+| Parámetros totales | 35.212.875.824 |
+| Parámetros activos | Aproximadamente 3.000 millones (variante A3B) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | GGUF, BNB, AWQ, GPTQ, FP8; cuantización fina por capas |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (transformers); variantes GGUF, BNB, AWQ, GPTQ |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en los datos proporcionados. El identificador "35B-A3B" sigue el convenio habitual en modelos de mezcla de expertos (MoE), en el que el primer numero indica los parametros totales y el segundo los parametros activos por token. De confirmarse, el modelo combinaria un conjunto amplio de expertos con un enrutador que activaria una fraccion reducida en cada paso, lo que explicaria un coste de inferencia muy inferior al de un modelo denso de 35B.
+MiniCPM-V 4.7 35B-A3B es un modelo multimodal de arquitectura transformer con mezcla de expertos. El componente de visión emplea la técnica de compresión temprana intra-ViT de LLaVA-UHD v4, que reduce los tokens visuales dentro del codificador visual antes de las capas posteriores, disminuyendo el coste computacional. Además, soporta compresión de tokens visuales mixta 4x/16x, lo que permite a los desarrolladores equilibrar el nivel de detalle visual y el coste de inferencia según la tarea.
 
-Tampoco se han publicado en la informacion disponible datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, las etapas de ajuste (supervisado, RLHF o DPO) ni innovaciones tecnicas concretas como decodificacion especulativa, atencion lineal o estrategias de compresion de tokens visuales. Los modelos de la familia MiniCPM-V suelen incorporar un codificador visual acoplado a un modelo de lenguaje y tecnicas de compresion de tokens de imagen, pero no es posible confirmar que esta variante las herede.
+La innovación técnica principal es Lookahead Expert Scheduling (LES), una técnica de planificación anticipada de expertos que permite mantener todos los pesos del MoE en almacenamiento secundario y cargarlos de forma anticipada, evitando las pausas por carga repetida que degradan la decodificación en tiempo real. Esta técnica se combina con cuantización fina por capas e integración de muestreo especulativo DSpark. El modelo también se beneficia de Self-Replay Fine-Tuning (SRFT), un método de ajuste fino que permite extender capacidades a bajo coste reduciendo el olvido de capacidades previas. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO.
 
 ## Capacidades
 
-- Generacion de texto y comprension de imagenes: la nomenclatura "V" del identificador y la etiqueta `minicpmv4_7` indican capacidades de vision-lenguaje, aunque no se detallan en la informacion disponible.
-- Razonamiento multimodal: no confirmado en la informacion proporcionada.
-- Generacion de codigo: no confirmado.
-- Razonamiento matematico: no confirmado.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible, no se especifican idiomas en la ficha del repositorio.
-- Capacidades especiales (modo thinking, audio, video): no disponible.
+- Comprensión de imagen única, múltiples imágenes y vídeo.
+- Generación de texto y razonamiento multimodal.
+- Inferencia en dispositivo (on-device) en iOS, Android y HarmonyOS.
+- Modo Instruct para tareas conversacionales.
+- Compresión de tokens visuales configurable (4x/16x) para ajustar detalle y coste.
+- Despliegue en plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm.
+- Integración con frameworks de inferencia: SGLang, vLLM, llama.cpp y Ollama.
+- Integración con frameworks de ajuste fino: SWIFT y LLaMA-Factory.
+- Muestreo especulativo DSpark para acelerar la decodificación.
+- No se especifica soporte explícito de tool calling, function calling ni capacidades de agente en la información disponible.
 
 ## Casos de uso
 
-Dado que la ficha del repositorio no documenta capacidades especificas, los siguientes escenarios son aplicaciones plausibles para un modelo multimodal de 35B con pesos abiertos, pero deben validarse contra la documentacion oficial antes de llevarlos a produccion:
-
-- Analisis de documentos escaneados: extraccion de campos estructurados a partir de facturas, contratos o formularios en imagen, aprovechando la componente de vision del modelo. Requiere validar previamente la resolucion de imagen soportada y la longitud de contexto.
-- Atencion al cliente con imagenes adjuntas: el usuario envia una captura o fotografia y el modelo responde en lenguaje natural, integrado en un flujo multi-turno cuyo limite dependera de la ventana de contexto efectiva, no publicada.
-- Moderacion de contenido visual: clasificacion y descripcion de imagenes subidas por usuarios para detectar contenido no permitido, con el modelo actuando como primera capa antes de una revision humana.
-- Generacion de descripciones accesibles: produccion automatica de texto alternativo para imagenes en plataformas editoriales o de comercio electronico, en lote y con supervision de calidad.
-- Asistencia tecnica sobre capturas de pantalla: interpretacion de interfaces, mensajes de error o diagramas para generar guias de resolucion de incidencias.
-- Extraccion de informacion de graficos y tablas: conversion de figuras de informes en datos tabulares reutilizables, siempre que la resolucion de entrada lo permita.
-- Procesamiento por lotes en servidor: al tratarse de un modelo de 35,2B con pesos en safetensors, encaja en pipelines de inferencia por lotes sobre GPU profesionales, con coste por token inferior al de un modelo denso equivalente si se confirma la arquitectura MoE.
+- Asistente visual en dispositivos móviles: el modelo puede ejecutarse en iPhone, Android y HarmonyOS con 3 GB de memoria y más de 13 tokens/s, lo que permite integrar comprensión de imágenes en aplicaciones nativas sin conexión a la nube.
+- Descripción y análisis de imágenes en aplicaciones de accesibilidad: dado su soporte de imagen única y múltiples imágenes, puede generar descripciones detalladas de fotografías para usuarios con discapacidad visual, ejecutándose localmente para preservar la privacidad.
+- Procesamiento de vídeo en tiempo real en el borde: la compresión de tokens visuales 4x/16x permite ajustar el coste de procesamiento de fotogramas según la capacidad del dispositivo, habilitando análisis de vídeo en equipos con recursos limitados.
+- Digitalización y extracción de información de documentos: la familia MiniCPM-V incluye la suite MiniCPM-OCR (basada en MiniCPM-V 4.6), lo que indica que el modelo es adecuado para tareas de parsing de documentos y verificación de resultados en pipelines de OCR.
+- Despliegue en hardware heterogéneo de borde: el soporte day-0 para chips de Rockchip, Houmo, Intel, AMD y Arm permite integrar el modelo en dispositivos industriales, cajas de borde y mini-PC sin depender de GPU de datacenter.
+- Personalización mediante ajuste fino de bajo coste: con Self-Replay Fine-Tuning (SRFT) y frameworks como SWIFT o LLaMA-Factory, los equipos pueden adaptar el modelo a dominios específicos (medicina, legal, industria) reduciendo el olvido de capacidades previas.
+- Servicio de inferencia en servidor con cuantización: las variantes GGUF, AWQ, GPTQ y FP8, junto con el soporte de vLLM y SGLang, permiten desplegar el modelo en servidores con GPUs de gama alta para cargas conversacionales multimodales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks detallados en la información disponible. La model card indica que, en modo Instruct, el modelo 35B-A3B obtiene una puntuación global superior a Qwen3.6 35B-A3B con menor tiempo de inferencia, y que alcanza más de 13 tokens/s con 3 GB de memoria en un iPhone 17 Pro Max, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K ni de otros conjuntos de evaluación.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones derivadas del numero de parametros (35,2B) y del tamano del repositorio (70,4 GB), no datos oficiales publicados:
-
-- Pesos en precision de 16 bits: aproximadamente 70 GB, mas memoria para cache KV y activaciones. Requiere al menos una GPU de 80 GB (A100 80 GB, H100 80 GB) o dos GPU de 48 GB con tensor parallelism.
-- Cuantizacion a 8 bits: en torno a 35-38 GB de pesos, desplegable en una GPU de 48 GB (A6000, L40S) con margen para cache.
-- Cuantizacion a 4 bits: en torno a 18-22 GB de pesos, potencialmente ejecutable en una RTX 4090 (24 GB) o RTX 5090, con contexto reducido y sin garantia de soporte oficial.
-- GPU recomendadas: A100 80 GB, H100 80 GB para precision completa; A6000 o L40S para 8 bits; RTX 4090 para 4 bits.
-- Cabe en GPU de consumo: posible en RTX 4090 o superior unicamente con cuantizacion agresiva (4 bits) y contextos cortos; no es viable en GPU de 8-16 GB.
-- Opciones de despliegue: no confirmadas para esta variante concreta. Los formatos habituales en la familia MiniCPM incluyen transformers, vLLM, SGLang, llama.cpp y Ollama, pero la disponibilidad de pesos GGUF o de soporte en cada motor no aparece en la informacion proporcionada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 35.212.875.824 parámetros totales, los pesos en FP16 ocuparían aproximadamente 70 GB; las variantes cuantizadas (GGUF, AWQ, GPTQ, FP8) reducen sustancialmente este requisito, aunque no se especifican tamaños exactos.
+- GPU recomendadas: no disponible. El modelo está diseñado para despliegue en dispositivo y en plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm, además de frameworks de servidor como vLLM y SGLang.
+- Cabe en GPU de consumo: no disponible. El requisito de 3 GB de memoria en iPhone 17 Pro Max sugiere que las variantes cuantizadas para dispositivo son muy ligeras, pero no se detalla el equivalente en GPU de consumo.
+- Opciones de despliegue: SGLang, vLLM, llama.cpp, Ollama, iOS, Android, HarmonyOS y plataformas de chips de Rockchip, Houmo, Intel, AMD y Arm.
+- Latencia y throughput: más de 13 tokens/s en iPhone 17 Pro Max con 3 GB de memoria. No se dispone de datos de latencia o throughput para GPU de servidor.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de otros modelos en la informacion proporcionada, por lo que no es posible establecer una comparativa con cifras contrastadas.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-35B-A3B | 35,2B totales (activos no disponibles) | no disponible | no disponible | no disponible | safetensors en Hugging Face |
-| Alternativas comparables de la misma categoria (VLM de 30B+ o MoE multimodal) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MiniCPM-V 4.7 35B-A3B | 35.212.875.824 | ~3.000 millones | No disponible | Apache 2.0 | Hugging Face, GitHub, demo |
+| Qwen3.6 35B-A3B | No disponible | No disponible | No disponible | No disponible | No disponible |
+| MiniCPM-V 4.6 | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+
+La model card compara el rendimiento del modelo con Qwen3.6 35B-A3B, indicando que MiniCPM-V 4.7 35B-A3B obtiene una puntuación global superior con menor tiempo de inferencia en modo Instruct, pero no se proporcionan tablas detalladas de benchmarks ni especificaciones completas de los modelos comparados.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. No se ha publicado informacion sobre la composicion del dataset ni sobre evaluaciones de sesgo.
-- Riesgo de alucinacion: inherente a los modelos generativos, pero no cuantificado para esta variante. En tareas de extraccion de datos a partir de imagenes el riesgo es especialmente relevante y exige verificacion posterior.
-- Limitaciones de contexto e idioma: se desconocen la ventana de contexto maxima y los idiomas soportados. No debe asumirse cobertura multilingue sin confirmacion oficial.
-- Licencia: no disponible. La ausencia de licencia explicita en la ficha del repositorio implica que el uso comercial no puede darse por permitido hasta que se publique el termino legal aplicable. Es un bloqueante para produccion.
-- Madurez del repositorio: 0 descargas y 10 likes en el momento de la consulta, con creacion y ultima actualizacion el mismo dia. Se trata de una publicacion reciente y sin validacion externa documentada.
-- Soporte de cuantizacion y motores de inferencia: no confirmado. La ausencia de pesos GGUF o de integraciones oficiales puede obligar a servir el modelo con transformers y requisitos de memoria elevados.
-- Ausencia de benchmarks: sin resultados publicados no es posible estimar la calidad del modelo frente a alternativas de su categoria.
-- Verificacion recomendada: antes de cualquier despliegue, consultar el repositorio oficial y la documentacion del proyecto MiniCPM-V para confirmar licencia, contexto, idiomas y soporte de cuantizacion.
+- No se dispone de información sobre sesgos conocidos del modelo.
+- Riesgo de alucinación: no se documenta en la información disponible, aunque es un riesgo inherente a los modelos generativos multimodales.
+- Limitaciones de contexto: la longitud de contexto no está especificada, lo que impide evaluar su idoneidad para tareas de contexto largo.
+- Idiomas soportados: no se detallan, por lo que se desconoce el grado de cobertura multilingüe.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda verificar los términos exactos y las licencias de los componentes de terceros.
+- El rendimiento en dispositivo depende de la técnica LES y de la cuantización; sin estas optimizaciones, el modelo puede no alcanzar las velocidades indicadas.
+- La información sobre benchmarks es limitada y procede del propio autor, por lo que conviene validarla de forma independiente.
+- No se especifica soporte explícito de tool calling o agentes, lo que puede limitar su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.
+- GitHub: https://github.com/openbmb/MiniCPM-V
+- Variante DSpark: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
+- Suite MiniCPM-OCR: https://github.com/OpenBMB/MiniCPM-OCR
+- LLaVA-UHD v4: https://github.com/THUMAI-Lab/LLaVA-UHD-v4
+- llama.cpp-omni (LES): https://github.com/OpenBMB/llama.cpp-omni
+- Blog de Self-Replay Fine-Tuning: https://openbmb.cn/en/blog/self-replay-fine-tuning
+- Documentación de despliegue: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md
+- Documentación de MiniCPM-V 4.7: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md
+- API: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/api.md
+- Demo: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.7-Demo
+- Cookbook: https://github.com/OpenSQZ/MiniCPM-V-CookBook

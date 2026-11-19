@@ -2,101 +2,97 @@
 
 ## Resumen
 
-MiniMax H3 X2 Detail VAE es un VAE de vídeo experimental publicado por el usuario de Hugging Face speach1sdef178 (Olga_Derbo) como complemento al modelo omni-modal MiniMax H3 de MiniMaxAI. No es un modelo generativo completo, sino un decodificador latente: sustituye al VAE estándar de MiniMax H3 para decodificar latentes de vídeo con un factor de escala espacial x2 y, opcionalmente, reconstruir detalle espacial adicional en imágenes de referencia antes de un flujo Reference-to-Video. El repositorio se distribuye como un paquete "2 en 1" que incluye el checkpoint `MiniMax-H3-X2-Detail-v1.safetensors`, un nodo personalizado de ComfyUI (`ComfyUI-H3-X2-Detailed.zip`), un workflow de ejemplo y un informe de investigación.
+MiniMax-H3-X2-Detail-VAE es un VAE (autoencoder variacional) para video desarrollado por el usuario independiente `speach1sdef178` como fine-tune del modelo base MiniMaxAI/MiniMax-H3. No se trata de un modelo generativo de lenguaje, sino de un componente de decodificacion y mejora de detalle pensado para integrarse en el pipeline de generacion de video de MiniMax H3 dentro de ComfyUI. El repositorio aloja un checkpoint en formato safetensors de aproximadamente 8,1 GB y una documentacion de investigacion que describe el proceso experimental que lo origino.
 
-El interés técnico del lanzamiento está en su origen: el autor lo describe explícitamente como un experimento de HQ-VAE fallido que derivó en un producto utilizable. El informe documenta el estudio de cuellos de botella latentes, capacidad del decodificador y una ruta lateral de detalle espacial (B32) extraída de `down.1.block.1`, antes del cuello de botella latente estándar de H3. La decodificación empaqueta 12 canales y aplica un PixelShuffle x2 para producir fotogramas RGB al doble de resolución.
+El modelo es relevante porque ofrece dos funciones en un mismo archivo: por un lado, actua como VAE de decodificacion con upscaling espacial ×2 sobre latentes de video de H3; por otro, permite una mejora de detalle sobre imagenes de referencia RGB antes de pasarlas al nodo Reference-to-Video. La model card lo describe explicitamente como un experimento fallido de HQ-VAE que acabo derivando en una release "2-in-1", lo que da una idea del caracter exploratorio y no consolidado del artefacto.
 
-Se trata de un artefacto de nicho orientado a usuarios de ComfyUI que ya trabajan con MiniMax H3: depende de un nodo externo obligatorio (`MiniMax H3 VAE Decode (fast)`) y no se integra en stacks de inferencia de propósito general. Con 120 descargas y 11 likes, su adopción es todavía muy reducida, y la licencia "other" sin texto publicado limita cualquier uso comercial serio.
+La informacion disponible no incluye datos sobre arquitectura interna detallada, numero de parametros, longitud de contexto ni idiomas soportados, ya que se trata de un componente de vision/video y no de un modelo de lenguaje. La licencia figura como "other", sin condiciones concretas especificadas en la model card.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | VAE de vídeo (autoencoder con cuello de botella latente) para el espacio latente de MiniMax H3; decodificación empaquetada de 12 canales con PixelShuffle x2 y ruta espacial B32 en el encoder temprano (`down.1.block.1`) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (VAE de vídeo; no procesa contexto de texto) |
-| Tipos de cuantización | no disponible (se distribuye en safetensors; el autor no documenta variantes cuantizadas) |
-| Idiomas soportados | no disponible (no se declara ninguno) |
-| Licencia | other (sin texto de licencia publicado en la model card; el modelo base es MiniMaxAI/MiniMax-H3) |
-| Formato de pesos | safetensors (`MiniMax-H3-X2-Detail-v1.safetensors`), más nodo personalizado en ZIP y workflow en JSON |
+| Arquitectura | VAE para video (variational autoencoder), fine-tune del VAE de MiniMax-H3; incluye ruta de detalle espacial B32 en el encoder temprano (`down.1.block.1`) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no es un modelo de lenguaje) |
+| Tipos de cuantizacion | no disponible (se distribuye en safetensors, sin variantes GGUF ni cuantizadas documentadas) |
+| Idiomas soportados | no disponible |
+| Licencia | other (condiciones no detalladas en la model card) |
+| Formato de pesos | safetensors (`MiniMax-H3-X2-Detail-v1.safetensors`) |
+| Tamano del repositorio | 8,1 GB |
 | Pipeline declarado | image-to-video |
-| Librería | minimax-h3 (ComfyUI) |
-| Tamaño del repositorio | 5,3 GB |
+| Libreria | minimax-h3 |
 | Modelo base | MiniMaxAI/MiniMax-H3 (finetune) |
-| Descargas / likes | 120 / 11 |
-| Fecha de creación | 30 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un VAE de vídeo, no un transformer de lenguaje. Su función es doble. En el modo 1 (2X VAE) recibe el latente de vídeo generado por MiniMax H3 y lo decodifica a través de una representación empaquetada de 12 canales seguida de un PixelShuffle x2, produciendo fotogramas RGB al doble de resolución espacial. En el modo 2 (Reference Detail Enhancement) activa una ruta adicional de detalle espacial B32 que se extrae del encoder temprano, concretamente de `down.1.block.1`, antes de que la señal alcance el cuello de botella latente estándar de H3; por ese motivo el modo 2 exige una imagen de referencia en RGB y no funciona como mejora puramente latente.
+La model card no detalla la arquitectura interna del VAE ni los datos de entrenamiento utilizados para producirlo. Lo que si se documenta es su estructura funcional: el checkpoint opera en dos rutas. La primera es una decodificacion de latentes de H3 con salida empaquetada de 12 canales seguida de un PixelShuffle ×2, que produce frames RGB al doble de resolucion. La segunda es una ruta de mejora de detalle que extrae una representacion espacial B32 desde `down.1.block.1`, antes del cuello de botella latente estandar de H3, y la utiliza para reconstruir estructura espacial adicional sobre una imagen de referencia RGB.
 
-El informe que acompaña al repositorio describe el trabajo como una cadena larga de experimentos sobre cuellos de botella latentes, detalle espacial y capacidad del decodificador, con una "ruta lateral engañosamente exitosa" como hallazgo central. El punto de partida declarado es un VAE 2X de MiniMax H3 desarrollado previamente por el mismo autor, cuyo proceso de construcción no se documenta en esta ficha ni en el informe. No se publican datos sobre el conjunto de entrenamiento, el número de tokens o muestras, la composición del dataset ni si hubo etapas de ajuste tipo RLHF o DPO; esos detalles no están disponibles.
+El autor describe el proyecto como una cadena larga de experimentos sobre "latent bottlenecks, spatial detail, decoder capacity" y un "misleadingly successful side-channel", lo que sugiere que el resultado final no fue el objetivo inicial (un HQ-VAE) sino un derivado util. No se especifican numero de tokens de entrenamiento, composicion del dataset, ni si hubo etapas de RLHF/DPO (lo cual es esperable, dado que no es un modelo de lenguaje). La innovacion tecnica destacable es precisamente la doble funcionalidad: reutilizar el mismo checkpoint como VAE de decodificacion ×2 y como nodo de mejora de referencia, con una ruta de detalle que no es solo latente sino que requiere una imagen RGB de entrada.
 
 ## Capacidades
 
-- Decodificación de latentes de vídeo de MiniMax H3 con escalado espacial x2 (modo 2X VAE), mediante empaquetado de 12 canales y PixelShuffle x2.
-- Mejora de detalle espacial de imágenes de referencia en RGB antes de un flujo Reference-to-Video de MiniMax H3 (modo Detailed Upscale), con `detail_strength = 1.0` como valor de referencia validado.
-- Procesamiento por teselas para limitar el consumo de memoria: configuración validada con `tiling = true`, `tile_size = 256`, `tile_overlap = 64`, `output_device = cpu` y `temporal_tiling = false`.
-- Integración nativa con ComfyUI mediante el nodo `Load VAE` para el modo 1 y el nodo incluido `MiniMax H3 VAE 2X (Detailed Upscale)` para el modo 2.
-- Uso simultáneo de ambos modos en un mismo grafo, tal como demuestra el workflow `H3_VAE_Detailed_and_2X_VAE_2in1.json`.
-- No es un modelo de lenguaje: no genera texto, no soporta tool calling, ni agentes, ni razonamiento multi-paso, ni capacidades multilingües. Tampoco procesa audio de forma directa, aunque el modelo base MiniMax H3 sí genera audio estéreo nativo.
+- Decodificacion de latentes de video de MiniMax H3 con upscaling espacial ×2 (PixelShuffle ×2 sobre salida de 12 canales).
+- Mejora de detalle sobre imagenes de referencia RGB antes de pasarlas al nodo Reference-to-Video de H3, activando la ruta espacial B32 del encoder temprano.
+- Integracion con ComfyUI mediante el nodo `MiniMax H3 VAE Decode (fast)` del repositorio TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler.
+- Nodo propio `MiniMax H3 VAE 2X (Detailed Upscale)` incluido como `ComfyUI-H3-X2-Detailed.zip`.
+- Soporte de tiling configurable (`tiling = true`, `tile_size = 256`, `tile_overlap = 64`, `output_device = cpu`, `temporal_tiling = false` como ajustes validados).
+- Control de intensidad de detalle en el nodo de mejora (`detail_strength = 1.0` como baseline validado).
+- Workflow de ejemplo incluido (`H3_VAE_Detailed_and_2X_VAE_2in1.json`) que demuestra ambos modos en un mismo grafo.
+- No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes ni multilingues, al no ser un modelo de lenguaje.
 
 ## Casos de uso
 
-- Decodificación de vídeo a doble resolución en ComfyUI: cargar `MiniMax-H3-X2-Detail-v1.safetensors` en `Load VAE`, conectarlo al nodo obligatorio `MiniMax H3 VAE Decode (fast)` y obtener fotogramas RGB con el doble de resolución espacial respecto al decodificador estándar.
-- Mejora de imágenes de referencia en flujos image-to-video: intercalar el nodo `MiniMax H3 VAE 2X (Detailed Upscale)` entre la imagen fuente y `MiniMax H3 Reference to Video` para reconstruir estructura espacial adicional antes de la generación.
-- Sustitución del VAE base de MiniMax H3 sin reentrenar el modelo generativo: el checkpoint actúa como reemplazo directo del VAE en el grafo, lo que permite comparar resultados A/B entre el VAE original y el X2 con los mismos ajustes de generación.
-- Experimentación en GPUs con memoria limitada: el modo por teselas con `tile_size = 256` y salida en CPU permite decodificar vídeo de mayor resolución sin requerir un pico de VRAM proporcional a la resolución completa.
-- Investigación sobre decodificadores latentes: el informe y el código del nodo documentan el efecto de la ruta B32 y del cuello de botella latente, útiles como referencia para quien estudie VAEs de vídeo o escalado en el espacio latente.
-- Reproducción de comparativas cualitativas: el repositorio incluye vídeos de comparación (`comparison_01.mp4`) con los mismos ajustes de generación entre el modo 2X VAE y el modo 2X + Detailed, lo que sirve como referencia para validar una instalación.
-- Desarrollo de nodos personalizados para ComfyUI: el ZIP `ComfyUI-H3-X2-Detailed.zip` puede inspeccionarse o adaptarse como base para otros nodos de realce de detalle sobre modelos de vídeo.
+- Post-procesado de video generado con MiniMax H3: decodificar latentes con el VAE ×2 para obtener frames al doble de resolucion antes de la exportacion final, usando el nodo `MiniMax H3 VAE Decode (fast)` con los ajustes de tiling validados.
+- Pipeline image-to-video con referencia en alta resolucion: pasar una imagen de referencia por el nodo `MiniMax H3 VAE 2X (Detailed Upscale)` antes de `MiniMax H3 Reference to Video` para inyectar estructura espacial adicional y mejorar la fidelidad del resultado generado.
+- Experimentacion en ComfyUI: el workflow incluido permite comparar en un mismo grafo el modo 2X VAE puro frente al modo 2X VAE + Detailed, con ajustes de generacion igualados, para evaluar el impacto de la ruta B32.
+- Investigacion sobre cuellos de botella latentes: el repositorio documenta el proceso experimental sobre bottlenecks y capacidad del decoder, util para equipos que estudian VAEs de video y rutas de detalle alternativas.
+- Prototipado de upscaling de video en entornos con VRAM limitada: el uso de tiling con `tile_size = 256` y `tile_overlap = 64` permite procesar frames por teselas en lugar de cargar el frame completo.
+- Integracion en herramientas de creacion de contenido: al ser un checkpoint safetensors cargable con el nodo Load VAE estandar de ComfyUI, puede incorporarse a flujos de trabajo de artistas tecnicos que ya usan MiniMax H3.
+- Evaluacion comparativa de calidad de detalle: las comparaciones de video incluidas (comparison_01.mp4 y sucesivas) sirven como referencia para validar si la mejora de detalle justifica el coste computacional adicional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no incluye métricas cuantitativas (PSNR, SSIM, LPIPS ni similares) ni comparaciones numéricas frente al VAE base de MiniMax H3; únicamente se aportan comparaciones cualitativas en vídeo entre los dos modos de funcionamiento del propio modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
+
+La model card unicamente incluye comparaciones cualitativas en video (mismo modelo en modo 2X VAE frente a modo 2X VAE + Detailed, con ajustes de generacion igualados), sin metricas numericas de PSNR, SSIM, FID u otras. No se proporcionan cifras de latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. La configuración validada (`tiling = true`, `tile_size = 256`, `tile_overlap = 64`, `output_device = cpu`, `temporal_tiling = false`) está diseñada para trocear la decodificación y descargar la salida a CPU, lo que reduce el pico de memoria, pero el autor no publica cifras de VRAM.
-- Tamaño del artefacto: el repositorio ocupa 5,3 GB, aunque el propio autor indica que el archivo `MiniMax-H3-X2-Detail-v1.safetensors` no cabe en el archivo de preparación y debe añadirse por separado; el tamaño exacto del checkpoint no está declarado.
-- GPU recomendadas: no disponible. A partir del tamaño del repositorio puede inferirse que el checkpoint es manejable en GPUs de consumo, pero se trata de una estimación orientativa no confirmada por el autor.
-- Compatibilidad con GPU de consumo: probable pero no confirmada. El uso de teselas y de salida en CPU es coherente con escenarios de VRAM limitada; no hay listado de GPUs probadas.
-- Opciones de despliegue: ComfyUI es la única vía documentada. Requiere `ComfyUI-MiniMaxH3_LatentUpscaler` (nodo `MiniMax H3 VAE Decode (fast)`) instalado en `ComfyUI/custom_nodes/`, el checkpoint en `ComfyUI/models/vae/` y el ZIP `ComfyUI-H3-X2-Detailed.zip` extraído en `custom_nodes/`. No aplica despliegue con vLLM, llama.cpp, Ollama ni TGI, al no tratarse de un modelo de lenguaje.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita. El checkpoint pesa aproximadamente 8,1 GB en safetensors, lo que da una referencia del espacio minimo de almacenamiento; la VRAM necesaria dependera del modo (decodificacion con tiling frente a mejora de referencia) y del tamano de frame.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU consumer: no confirmada. El uso de tiling (`tile_size = 256`, `tile_overlap = 64`, `output_device = cpu`) sugiere que el autor previo escenarios de memoria limitada, pero no se especifica en que GPUs se ha validado.
+- Opciones de despliegue: ComfyUI con el nodo `MiniMax H3 VAE Decode (fast)` del repositorio TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler, mas el nodo propio `MiniMax H3 VAE 2X (Detailed Upscale)` incluido en `ComfyUI-H3-X2-Detailed.zip`. No se documentan opciones para vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de componente).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Función | Entrada | Salida | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MiniMax-H3-X2-Detail-VAE (esta ficha) | VAE de vídeo con decodificación x2 y realce de detalle de referencia | Latente H3 o imagen RGB de referencia | Fotogramas RGB a 2x o referencia realzada | other (sin texto publicado) | Hugging Face, 120 descargas |
-| VAE base de MiniMaxAI/MiniMax-H3 | Decodificación latente estándar del modelo omni-modal | Latente H3 | Fotogramas RGB a resolución nativa | no disponible en la información proporcionada | Incluido con el modelo base |
-| MiniMax H3 2X VAE del mismo autor | Decodificación x2 (punto de partida de este proyecto) | Latente H3 | Fotogramas RGB a 2x | no disponible | No se documenta como release independiente en la información disponible |
-| MiniMax-H3-Semantic-Bridge (mismo autor) | Adaptador de espacio de condicionamiento para la ruta FL2VA y generación condicionada por texto | Condicionamiento de MiniMax H3 | Condicionamiento adaptado | no disponible | Hugging Face y GitHub |
+No disponible. La model card no ofrece comparaciones con otros VAEs de video ni con alternativas de upscaling. El unico punto de referencia interno es el propio VAE base de MiniMax H3 (sin el ×2 ni la ruta de detalle) y el "MiniMax H3 2X VAE" previo del mismo autor, que la model card menciona como punto de partida pero no compara con metricas.
 
-No se dispone de datos de arquitectura, número de parámetros ni métricas de rendimiento de las alternativas, por lo que la comparación cuantitativa no es posible con la información disponible.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax-H3-X2-Detail-VAE | no disponible | no aplica | sin benchmarks publicados | other | Hugging Face |
+| VAE base de MiniMax-H3 | no disponible | no aplica | sin benchmarks publicados | segun MiniMaxAI/MiniMax-H3 | Hugging Face |
+| Alternativas de upscaling de video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Carácter experimental: los propios tags del repositorio incluyen `research` y `experimental`, y el autor describe el proyecto como un experimento fallido reconvertido en release.
-- Licencia ambigua: la licencia figura como "other" sin texto publicado en la model card, lo que impide determinar condiciones de uso comercial o de redistribución. Cualquier uso en producción debería aclararse antes con el autor y con las condiciones del modelo base MiniMaxAI/MiniMax-H3.
-- Dependencia de terceros: el flujo 2X exige el nodo `MiniMax H3 VAE Decode (fast)` del repositorio `TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler`; sin él, el modo 1 no funciona.
-- El modo 2 no es una mejora puramente latente: requiere una imagen de referencia en RGB, ya que la representación B32 se extrae de `down.1.block.1` antes del cuello de botella latente estándar.
-- Sin métricas objetivas: no hay PSNR, SSIM, LPIPS ni ninguna otra medida publicada, solo comparaciones cualitativas en vídeo. No es posible cuantificar la ganancia real frente al VAE base.
-- Sin datos de entrenamiento: se desconoce el dataset, el número de muestras y el procedimiento de ajuste, lo que dificulta evaluar sesgos o comportamientos anómalos en dominios concretos.
-- Sin idiomas declarados ni capacidades lingüísticas: al ser un VAE, no procede evaluar sesgo lingüístico, pero tampoco hay información sobre sesgos visuales o de dominio.
-- Riesgo de artefactos: como cualquier decodificador generativo, puede introducir artefactos espaciales o temporales; el autor desactiva el teselado temporal (`temporal_tiling = false`), por lo que la coherencia temporal en secuencias largas no está documentada.
-- Disponibilidad incompleta del artefacto: el propio autor indica que el checkpoint no está incluido en el archivo de preparación del repositorio y debe añadirse aparte, lo que puede provocar confusión al descargar.
-- Ecosistema muy reducido: 120 descargas y 11 likes, sin comunidad ni soporte documentado más allá del informe y el workflow incluidos.
+- Caracter experimental y de investigacion: la propia model card lo etiqueta como "research" y "experimental", y lo describe como un experimento fallido de HQ-VAE que derivo en esta release. No debe tratarse como un componente estable de produccion sin validacion propia.
+- Licencia "other" sin condiciones detalladas: no se especifican terminos de uso comercial, redistribucion ni atribucion. Es imprescindible revisar la licencia del modelo base MiniMaxAI/MiniMax-H3 antes de cualquier uso comercial.
+- Dependencia de un nodo de terceros: el modo 2X requiere el nodo `MiniMax H3 VAE Decode (fast)` del repositorio TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler, lo que introduce una dependencia externa no mantenida por el autor del VAE.
+- El modo de mejora de detalle no funciona solo con latentes: requiere una imagen RGB de referencia existente, porque la representacion B32 se extrae de `down.1.block.1` antes del cuello de botella latente estandar. Confundir ambos modos lleva a resultados incorrectos.
+- Ajustes validados limitados: la model card solo valida `detail_strength = 1.0` y una configuracion concreta de tiling; otros valores no estan documentados como probados.
+- Ausencia de benchmarks numericos: no hay metricas objetivas de calidad, latencia ni throughput, solo comparaciones cualitativas en video.
+- Sin informacion sobre sesgos, alucinacion o limitaciones de idioma: al no ser un modelo de lenguaje, estas categorias no aplican directamente, pero tampoco se documentan sesgos en la generacion visual derivada del pipeline H3.
+- Tamano del checkpoint (8,1 GB) y ausencia de variantes cuantizadas: no hay versiones GGUF ni fp8 documentadas, lo que limita opciones de despliegue en hardware modesto.
+- Fecha de creacion en el futuro respecto a la informacion de referencia (2026-09-30): conviene verificar la vigencia y el estado de mantenimiento del repositorio antes de adoptarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE
-- Perfil del autor en Hugging Face: https://huggingface.co/speach1sdef178
-- Nodo requerido para el modo 2X (GitHub): https://github.com/TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Blog oficial de MiniMax H3: https://www.minimax.io/blog/minimax-h3
-- Repositorio relacionado del mismo autor (MiniMax-H3-Semantic-Bridge): https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge
-- Código del adaptador Semantic Bridge (GitHub): https://github.com/Speach1sdef178/MiniMax-H3-Semantic-Bridge
-- Vídeo de comparación 01: https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE/resolve/main/assets/comparison_01.mp4
-- Ficha del autor en aimodels.fyi: https://www.aimodels.fyi/creators/huggingface/speach1sdef178
+- Nodo requerido para decodificacion 2X: https://github.com/TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler
+- Comparacion de video 01: https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE/resolve/main/assets/comparison_01.mp4
+- Workflow de ejemplo: `workflow/H3_VAE_Detailed_and_2X_VAE_2in1.json` (incluido en el repositorio)
+- Nodo de mejora de detalle: `custom_node/ComfyUI-H3-X2-Detailed.zip` (incluido en el repositorio)

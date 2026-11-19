@@ -2,100 +2,102 @@
 
 ## Resumen
 
-El modelo `ptv3-base.s3dis-area5.pointcept` es un checkpoint de segmentación semántica de nubes de puntos 3D basado en la arquitectura Point Transformer V3 (PTv3), desarrollado por el ecosistema torch-pointcloud de Arthur Dujardin. Se trata de una conversión de los pesos originales del framework Pointcept al formato de PyTorch PointCloud, entrenado sobre el dataset S3DIS (Stanford 3D Indoor Spaces), concretamente en el split Area 5, para clasificar cada punto de una escena interior en una de 13 categorías semánticas (suelo, pared, mesa, silla, etc.).
+ptv3-base.s3dis-area5.pointcept es un checkpoint de segmentación semántica de nubes de puntos 3D basado en Point Transformer V3 (PTV3), publicado por la organización torch-pointcloud. No es un modelo de lenguaje: es un modelo de visión 3D que asigna una etiqueta semántica a cada punto de una escena, en este caso con 13 clases de interior (suelo, pared, silla, mesa, etc.) según el dataset S3DIS. El checkpoint ha sido convertido desde el repositorio oficial Pointcept y empaquetado para la librería `torch-pointcloud`.
 
-El modelo resuelve el problema de la segmentación semántica de entornos 3D capturados mediante escáneres láser o sensores RGB-D, una tarea fundamental en robótica, realidad aumentada y modelado BIM. Su relevancia actual radica en que PTv3 introduce una atención por vecindario serializada que reduce drásticamente el coste computacional frente a los transformers de puntos anteriores, manteniendo un rendimiento competitivo con arquitecturas especializadas como MinkowskiNet o PointNet++. Con 46,2 millones de parámetros y un peso de 185 MB, es un modelo ligero y desplegable en GPUs de gama media.
+La relevancia de PTV3 radica en su propuesta de "serialized neighborhood attention": en lugar de recurrir a mecanismos de atención jerárquicos y costosos propios de las versiones anteriores de Point Transformer, el modelo serializa los vecinos de cada punto mediante un orden espacial (curvas de Hilbert) y aplica atención de ventana sobre esa secuencia. Esto simplifica la arquitectura, reduce el coste computacional y mejora el rendimiento en tareas de segmentación y detección sobre nubes de puntos a gran escala.
 
-La arquitectura emplea un mecanismo de atención sobre vecindarios serializados (serialized neighborhood attention), que ordena los puntos en secuencias lineales y aplica atención multi-cabeza sobre ventanas locales, lo que permite procesar nubes de puntos densas con una complejidad casi lineal respecto al número de puntos. El checkpoint está disponible bajo licencia MIT, lo que facilita su uso comercial y académico.
+El checkpoint concreto tiene 46,2 millones de parámetros, trabaja con entradas de 6 canales (coordenadas XYZ más color RGB) y 64 dimensiones de característica interna, y reporta mIoU de 72,03 y exactitud global (OA) de 91,15 sobre el split Area 5 de S3DIS. Su licencia MIT y su integración en una librería pip lo hacen directamente utilizable en pipelines de percepción 3D.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Point Transformer V3 (atención por vecindario serializado) |
+| Arquitectura | Point Transformer V3 (serialized neighborhood attention), transformer sobre nubes de puntos |
 | Parametros totales | 46.194.585 (46,2 M) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no aplica (nubes de puntos, no secuencias de texto) |
-| Tipos de cuantizacion | no disponible (solo pesos en punto flotante) |
-| Idiomas soportados | no aplica (modelo de visión 3D) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica; opera sobre nubes de puntos de tamano variable) |
+| Tipos de cuantizacion | no disponible (entrenado y distribuido en safetensors de precision completa) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (185 MB) |
-
-Canales de entrada: 6 (posición 3D + color RGB o normales). Número de clases: 13. Dimensión de características: 64.
+| Formato de pesos | safetensors |
+| Canales de entrada | 6 (XYZ + RGB) |
+| Clases de salida | 13 (S3DIS) |
+| Dimension de caracteristicas | 64 |
+| Dataset de entrenamiento | S3DIS (evaluacion en Area 5) |
+| Libreria | torch-pointcloud |
+| Tamano del repositorio | 0,4 GB |
+| Dependencia adicional | spconv (compilacion acorde a la version de torch y CUDA) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Point Transformer V3, presentada en el paper "Point Transformer V3: Simpler, Faster, Stronger" (Wu et al., CVPR 2024). A diferencia de los transformers de puntos convencionales que operan sobre vecindarios k-NN, PTv3 emplea un esquema de atención por vecindario serializado: los puntos se ordenan mediante una curva de Hilbert y se agrupan en secuencias lineales, sobre las cuales se aplica atención multi-cabeza con ventanas locales. Este diseño reduce la complejidad computacional de O(n²) a aproximadamente O(n), permitiendo procesar nubes de puntos con cientos de miles de puntos en una sola pasada. El backbone utiliza también un módulo de atención con posiciones relativas y un mecanismo de pooling jerárquico para capturar contextos multiescala.
+PTV3 es un transformer diseñado especificamente para nubes de puntos. Su innovacion central es sustituir la atencion sobre vecindarios arbitrarios por una atencion serializada: los puntos se ordenan mediante un recorrido espacial continuo (curvas de Hilbert en 3D) y la atencion se aplica como ventana sobre esa secuencia, lo que permite usar kernels eficientes y paralelizables tipo atención de secuencias. El modelo mantiene un esquema encoder-decoder con etapas de downsampling y upsampling sobre la nube de puntos, y utiliza capas de convolucion dispersa (spconv) para la agregacion local.
 
-Los pesos originales fueron entrenados por el equipo de Pointcept sobre el dataset S3DIS (Stanford 3D Indoor Spaces), específicamente sobre el split Area 5, que contiene 271 escenas de interiores de edificios universitarios con anotaciones semánticas a nivel de punto en 13 categorías. El entrenamiento se realizó con el framework Pointcept, que incluye aumentación de datos (rotaciones, escalados, ruido) y una estrategia de muestreo de bloques espaciales. El checkpoint aquí presentado es una conversión directa de esos pesos al formato de torch-pointcloud, sin reentrenamiento adicional. No se han publicado detalles sobre el uso de RLHF o DPO, ya que no es un modelo de lenguaje.
+Este checkpoint concreto corresponde a la variante "base" con 46,2 M de parametros, 64 canales de caracteristica y 13 clases de salida, entrenado sobre S3DIS (Stanford 3D Indoor Spaces) y evaluado en el split Area 5, el protocolo habitual de validacion cruzada de ese dataset (entrenamiento sobre las areas 1, 2, 3, 4 y 6, evaluacion sobre la 5). El autor no documenta en la model card el numero exacto de tokens/puntos de entrenamiento, la composicion del dataset mas alla de S3DIS ni si se aplicaron tecnicas de aumento de datos especificas; esa informacion debe consultarse en el paper de PTV3 y en el repositorio Pointcept.
 
 ## Capacidades
 
-- Segmentación semántica de nubes de puntos 3D: clasifica cada punto en una de 13 categorías predefinidas (suelo, pared, techo, columna, ventana, puerta, mesa, silla, sofá, estantería, tabla, mueble, etc.).
-- Procesamiento de escenas interiores completas: maneja nubes de puntos densas procedentes de escáneres láser o sensores RGB-D, con miles de puntos por escena.
-- Extracción de características por punto: a través del método `forward_features`, permite obtener embeddings de 64 dimensiones por punto, útiles para tareas downstream como agrupamiento, recuperación o clasificación personalizada.
-- Clasificación flexible: el método `reset_classifier(num_classes=0)` permite eliminar la cabeza de clasificación y usar el modelo como extractor de características genérico.
-- Inferencia en GPU con kernels optimizados: requiere CUDA y spconv, aprovechando la aceleración por hardware.
-- Integración con el ecosistema torch-pointcloud: carga directa mediante `tp.create_model` y transformaciones de datos incorporadas en la librería.
+- Segmentacion semantica de nubes de puntos 3D: asigna una de 13 clases a cada punto de una escena de interior (suelo, pared, ventana, puerta, mesa, silla, sofa, estanteria, pizarra, libro, techo, papelera, otros).
+- Procesamiento de nubes de puntos de tamano variable, con coordenadas XYZ y color RGB como entrada.
+- Extraccion de caracteristicas por punto: `forward_features` devuelve un vector de 64 dimensiones por punto, reutilizable como backbone para tareas posteriores (clasificacion, deteccion, segmentacion de instancias).
+- Reconfiguracion de la cabeza de clasificacion (`reset_classifier`) para adaptar el modelo a otros conjuntos de clases o a extraccion pura de embeddings.
+- Ejecucion en GPU mediante kernels especializados (requiere CUDA; la model card indica "GPU-only kernels").
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues: no es un modelo generativo de texto.
 
 ## Casos de uso
 
-- Modelado de información de construcción (BIM): el modelo puede segmentar automáticamente nubes de puntos de edificios existentes para generar modelos 3D semánticos, separando muros, suelos, techos y mobiliario. Su precisión en S3DIS Area 5 (mIoU 32,06) lo hace adecuado como punto de partida para flujos de reconstrucción automatizada en ingeniería civil.
-
-- Robótica móvil y navegación interior: un robot que opera en entornos interiores puede usar este modelo para entender su entorno a nivel de objeto (puertas, sillas, mesas) y planificar rutas evitando obstáculos semánticos. Los 46,2 M de parámetros permiten ejecutarlo en GPUs embebidas como la Jetson Orin con suficiente VRAM.
-
-- Realidad aumentada y mixta: aplicaciones de AR que necesiten anclar objetos virtuales a superficies reales pueden emplear la segmentación para identificar suelos y paredes, mejorando la estabilidad de los anclajes. La extracción de características por punto permite además emparejar regiones entre distintas capturas.
-
-- Inspección y mantenimiento de infraestructuras: la segmentación semántica de nubes de puntos de túneles, puentes o plantas industriales facilita la identificación de zonas con deterioro o elementos específicos (tuberías, vigas) para su inspección automatizada.
-
-- Generación de datos sintéticos para entrenamiento: el modelo puede servir como generador de pseudoetiquetas para anotar automáticamente nuevas nubes de puntos sin etiquetar, reduciendo el coste de anotación manual en dominios similares (interiores de oficinas, viviendas).
-
-- Investigación en visión 3D: como backbone preentrenado, permite inicializar arquitecturas más complejas o adaptar el modelo a otras tareas (detección de objetos 3D, instancia) mediante fine-tuning, gracias a la interfaz de extracción de características y reset del clasificador.
+- Digitalizacion de interiores y gemelos digitales: el modelo segmenta escaneos de edificios en clases semanticas (suelo, pared, mobiliario), lo que permite generar modelos BIM o planos etiquetados a partir de nubes de puntos capturadas con LiDAR o fotogrametria.
+- Robotica de navegacion indoor: integrar la salida por punto en la pila de percepcion de un robot movil para distinguir superficies transitables (suelo) de obstaculos (paredes, muebles) y planificar rutas.
+- Realidad aumentada y virtual: separar semanticamente el entorno fisico escaneado para anclar objetos virtuales sobre superficies correctas o para aplicar sustituciones de mobiliario en visualizaciones.
+- Inventariado y facility management: contar y localizar elementos como sillas, mesas o estanterias en escaneos de oficinas para auditorias de activos, aprovechando la clasificacion por punto del checkpoint.
+- Preprocesado para anotacion semiautomatica: usar las predicciones como borrador inicial en herramientas de etiquetado 3D, reduciendo el coste manual de anotar nubes de puntos para entrenar otros modelos.
+- Backbone para investigacion en vision 3D: extraer caracteristicas de 64 dimensiones por punto con `forward_features` y entrenar cabezas ligeras para tareas downstream (clasificacion de escena, segmentacion de instancias, deteccion de objetos).
+- Analisis de accesibilidad y cumplimiento normativo: identificar obstaculos y anchos de paso en escaneos de espacios publicos a partir de la segmentacion semantica de suelo y paredes.
 
 ## Benchmarks y rendimiento
 
-El autor declara en la model card el siguiente resultado oficial para este checkpoint:
+Resultados declarados por el autor en la model card (no verificados de forma independiente, campo `verified: false`):
 
 | Dataset | Tarea | Metrica | Valor |
 |---|---|---|---|
-| S3DIS (Area 5) | Segmentación semántica de nubes de puntos | mIoU | 32,06 |
+| S3DIS (Area 5) | Segmentacion semantica de nubes de puntos | mIoU | 72,03 |
+| S3DIS (Area 5) | Segmentacion semantica de nubes de puntos | OA (exactitud global) | 91,15 |
 
-Nota: la model card incluye la referencia "reference 73.6", que probablemente corresponde al rendimiento del modelo original Point Transformer V3 reportado en el paper, pero el valor real de este checkpoint convertido es 32,06. No se han publicado resultados adicionales en la información disponible. No se dispone de comparativas con otros modelos en esta misma conversión.
+No se han publicado en la informacion disponible resultados comparativos con otros modelos sobre el mismo split, ni latencias o throughput medidos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo tiene 46,2 M de parámetros en FP32 (~185 MB). Para una nube de puntos de 8192 puntos con batch 1, la VRAM total necesaria (pesos + activaciones + buffers) se estima entre 1,5 y 3 GB, dependiendo de la resolución de la nube y el uso de memoria intermedia de spconv.
-- GPU recomendadas: cualquier GPU NVIDIA con al menos 4 GB de VRAM y soporte CUDA 11.6 o superior. Ejemplos: RTX 3050, RTX 3060, RTX 4060, Tesla T4, Jetson Orin. Para nubes de puntos muy grandes (>100k puntos), se recomienda una GPU con 8 GB o más (RTX 3070, RTX 4080, A100).
-- Compatibilidad con GPU de consumo: sí, cabe en GPUs de gama media de consumo, siempre que se cumpla el requisito de CUDA y spconv.
-- Opciones de despliegue: el modelo se integra exclusivamente con la librería torch-pointcloud y requiere spconv. No hay soporte oficial para vLLM, Ollama o TGI, ya que no es un modelo de lenguaje. Se puede desplegar en un servicio de inferencia Python (FastAPI, Triton) usando el código de ejemplo de la model card.
-- Latencia y throughput: no disponible en la información proporcionada. Se estima que una inferencia sobre 8192 puntos en una RTX 3060 tarda entre 20 y 50 ms (sin datos oficiales).
+- VRAM estimada: no disponible de forma oficial. Con 46,2 M de parametros en precision completa, los pesos ocupan aproximadamente 0,18 GB; el consumo real depende del numero de puntos por escena y de las estructuras de vecindad de spconv, que pueden dominar el uso de memoria en escenas grandes.
+- GPU recomendadas: no especificadas por el autor. Dado el requisito de kernels CUDA, se necesita una GPU NVIDIA compatible con la version de torch y la compilacion de spconv instalada.
+- GPU de consumo: el tamano de pesos sugiere que cabe en GPU de consumo con suficiente VRAM (por ejemplo, RTX 3060 12 GB o superiores), aunque el pico de memoria depende del numero de puntos procesados por lote; no hay cifras publicadas.
+- Opciones de despliegue: la via documentada es la libreria `torch-pointcloud` (`pip install torch-pointcloud`) con `spconv` compilado para la version de torch y CUDA del entorno. No se documentan exportaciones a ONNX, TensorRT ni integraciones con vLLM, llama.cpp u Ollama (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | mIoU (S3DIS Area 5) | Licencia | Formato |
-|---|---|---|---|---|
-| ptv3-base.s3dis-area5.pointcept (este) | 46,2 M | 32,06 | MIT | safetensors |
-| PointNet++ (original) | ~1,5 M | ~54 (según paper) | MIT | PyTorch |
-| MinkowskiNet (Res16UNet) | ~20-40 M | ~65 (según paper) | MIT | PyTorch |
-| Point Transformer V2 (original) | ~50 M | ~71 (según paper) | MIT | PyTorch |
+| Modelo | Parametros | Contexto / entrada | mIoU S3DIS Area 5 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| ptv3-base.s3dis-area5.pointcept | 46,2 M | Nube de puntos variable, 6 canales | 72,03 (declarado) | MIT | Hugging Face, `torch-pointcloud` |
+| Point Transformer V3 (original, Pointcept) | no disponible en la informacion | Nube de puntos variable | no disponible en la informacion | MIT | GitHub Pointcept |
+| Otras variantes de PTV3 | no disponible en la informacion | Nube de puntos variable | no disponible en la informacion | no disponible | no disponible |
 
-Nota: los valores de mIoU de otros modelos provienen de los papers originales y no son directamente comparables con el valor de 32,06 reportado aquí, que corresponde a una conversión específica y posiblemente a un protocolo de evaluación distinto. La comparativa es orientativa sobre arquitectura y tamaño, no sobre rendimiento absoluto.
+No se dispone en la informacion proporcionada de cifras de benchmarks de modelos alternativos (PointNet++, PointNepean, MinkUNet, etc.) que permitan una comparacion numerica fiable; se indica "no disponible" en lugar de estimar valores.
 
 ## Limitaciones y advertencias
 
-- El valor de mIoU reportado (32,06) es notablemente inferior al rendimiento típico de PTv3 en S3DIS Area 5 (referencia 73,6 en el paper). Esto sugiere que la conversión de pesos o el proceso de evaluación no reproduce exactamente los resultados originales. Es imprescindible validar el modelo en tu propio conjunto de datos antes de usarlo en producción.
-- El modelo está entrenado exclusivamente con escenas interiores del dataset S3DIS (edificios universitarios). No generaliza bien a exteriores, entornos industriales o escenas con distribución de clases muy diferente.
-- Requiere kernels GPU específicos (spconv) y no funciona en CPU. La instalación de spconv es sensible a la versión de PyTorch y CUDA.
-- La licencia MIT permite uso comercial sin restricciones, pero el modelo se distribuye tal cual, sin garantías. No se incluyen datos de entrenamiento ni el proceso de conversión completo.
-- No se han documentado sesgos específicos, pero al tratarse de un dataset limitado geográficamente (edificios de Stanford), puede presentar sesgos hacia ciertos estilos arquitectónicos y mobiliario.
-- Riesgo de alucinación: en el contexto de segmentación, puede clasificar incorrectamente puntos en clases poco representadas o en zonas de alta densidad de objetos pequeños (cables, objetos sueltos).
-- No soporta entrada de texto ni lenguaje natural; es un modelo exclusivamente de visión 3D.
+- Dominio restringido: entrenado exclusivamente sobre S3DIS (escenas de interior de oficinas y aulas). El rendimiento en exteriores, vehiculos, industria o escenas con sensores distintos puede degradarse notablemente.
+- Cierre de clases: la cabeza de salida esta fijada a 13 clases de S3DIS; para otras taxonomias hay que reentrenar o reconfigurar el clasificador.
+- Dependencia de color: la entrada usa 6 canales (XYZ + RGB); escaneos sin informacion de color requieren adaptar la entrada o reentrenar.
+- Requisito de GPU y spconv: los kernels son solo CUDA y la instalacion de spconv debe coincidir con la version de torch y CUDA, lo que complica el despliegue en entornos heterogeneos o en CPU.
+- Metricas no verificadas: los valores de mIoU y OA proceden del autor y figuran como `verified: false`; no hay validacion independiente publicada en la informacion disponible.
+- Riesgo de error en clases minoritarias: como en cualquier segmentador semantico, las clases con pocos puntos (papelera, pizarra, libro) suelen presentar menor IoU que las mayoritarias (suelo, pared), aunque no se publican desgloses por clase.
+- Licencia MIT: permite uso comercial y modificacion, pero el modelo depende de spconv y de `torch-pointcloud`, cuyas licencias deben revisarse por separado antes de distribuirlo en producto.
+- Sin garantias de produccion: no se documentan pruebas de robustez ante ruido, oclusiones o densidades de punto atipicas.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/torch-pointcloud/ptv3-base.s3dis-area5.pointcept)
-- [Paper Point Transformer V3](https://arxiv.org/abs/2312.10035)
-- [Repositorio Pointcept](https://github.com/Pointcept/Pointcept)
-- [Librería torch-pointcloud](https://github.com/arthurdjn/pytorch-pointcloud)
-- [Guía de instalación de torch-pointcloud](https://pytorch-pointcloud.org/installation/)
-- [Paper S3DIS (Armeni et al.)](https://arxiv.org/abs/1606.05268)
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/ptv3-base.s3dis-area5.pointcept
+- Paper de Point Transformer V3: https://arxiv.org/abs/2312.10035
+- Repositorio Pointcept (origen del checkpoint): https://github.com/Pointcept/Pointcept
+- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Guia de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
+- Dataset S3DIS (paper): Armeni et al., "3D Semantic Parsing of Large-Scale Indoor Spaces", CVPR 2016

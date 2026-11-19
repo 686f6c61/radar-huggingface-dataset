@@ -2,105 +2,92 @@
 
 ## Resumen
 
-Boulesis-26B-A4B-i1-GGUF es una colección de cuantizaciones en formato GGUF generadas por mradermacher sobre el modelo SubMaroon/Boulesis-26B-A4B. No se trata de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local: el autor aplica cuantización con calibración imatrix (sufijo i1) sobre los pesos originales, reduciendo el peso en disco desde los 81,9 GB del repositorio completo hasta ficheros de 10,9 GB (i1-Q2_K), 12,8 GB (i1-IQ3_M) y 16,0 GB (i1-Q4_K_S). El modelo base declara 25.971.339.550 parámetros totales (unos 26.000 millones).
+Boulesis-26B-A4B-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo SubMaroon/Boulesis-26B-A4B, un merge de arquitectura MoE (mezcla de expertos) construido sobre la familia Gemma 4. El modelo cuenta con 25.971.339.550 parámetros totales y está orientado principalmente a roleplay, generación conversacional y razonamiento con modo "thinking", según las etiquetas declaradas por el autor (roleplay, merge, gemma4, moe, heretic, uncensored, sillytavern, thinking, reasoning).
 
-El modelo subyacente es un merge orientado a roleplay y conversación sin censura, con etiquetas que apuntan a una arquitectura de tipo mezcla de expertos (MoE, nomenclatura A4B), a una base de la familia Gemma y a la presencia de un modo de razonamiento o *thinking*. La licencia declarada es la de Gemma, y el único idioma listado es el inglés. Su relevancia práctica está en que permite ejecutar un modelo de ~26.000 millones de parámetros en hardware de consumo mediante cuantizaciones agresivas, manteniendo la estructura MoE que reduce los parámetros activos por token.
+La relevancia de esta ficha reside en que se trata de una variante "uncensored" y "heretic" (es decir, con las capas de rechazo mitigadas mediante técnicas de ablación o ajuste), empaquetada en cuantizaciones de 1 a 6 bits con calibración imatrix. Esto permite ejecutar un MoE de ~26B parámetros totales en hardware de consumo, algo imposible con los pesos en precisión completa (el repositorio original ocupa 308,9 GB).
 
-La información disponible no incluye datos de entrenamiento, longitud de contexto, benchmarks ni detalles de composición del dataset. La model card del repositorio es la plantilla estándar de mradermacher para cuantizaciones, por lo que la mayor parte de las especificaciones del modelo original no están documentadas en esta ficha.
+El modelo base solo declara soporte para inglés y su licencia es Apache 2.0. No se dispone de información publicada sobre la longitud de contexto, el número de parámetros activos por token ni los detalles del dataset de entrenamiento en la documentación proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetas del repositorio: moe, gemma4; nomenclatura A4B) |
-| Parámetros totales | 25.971.339.550 (~26B), dato real de safetensors del modelo base |
-| Parámetros activos | no disponible (la nomenclatura A4B sugiere ~4.000 millones activos, sin confirmación oficial) |
+| Arquitectura | MoE (mezcla de expertos) sobre base Gemma 4, transformer |
+| Parametros totales | 25.971.339.550 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q2_K_S, IQ1_M, IQ1_S, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, small-IQ4_NL, IQ4_XS, Q5_K_S, Q5_K_M, Q6_K (variantes i1 con imatrix) |
-| Idiomas soportados | en (inglés) |
-| Licencia | gemma |
-| Formato de pesos | GGUF (este repositorio); safetensors en el modelo base SubMaroon/Boulesis-26B-A4B |
-| Tamaño del repositorio | 81,9 GB en total |
-| Ficheros destacados | imatrix 0,2 GB; i1-Q2_K 10,9 GB; i1-IQ3_M 12,8 GB; i1-Q4_K_S 16,0 GB |
-| Etiquetas del repositorio | roleplay, merge, gemma4, moe, heretic, uncensored, sillytavern, thinking, reasoning |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K, i1-Q2_K_S, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_1, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de quants estáticos en repositorio separado) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (imatrix y estáticos); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información publicada sobre la arquitectura concreta, el proceso de entrenamiento ni los datos utilizados. Las etiquetas del repositorio indican que se trata de un merge (fusión de pesos) sobre una base de la familia Gemma etiquetada como gemma4, con arquitectura de mezcla de expertos (moe). El sufijo A4B en el nombre del modelo sigue la convención habitual de los modelos MoE, donde A4B indicaría aproximadamente 4.000 millones de parámetros activos por token sobre un total de ~26.000 millones, aunque este dato no está confirmado en la documentación disponible. La etiqueta heretic sugiere que el merge ha pasado por un proceso de reducción o eliminación de alineación de seguridad, y las etiquetas thinking y reasoning apuntan a la presencia de un modo de razonamiento explícito.
+El modelo es un merge de arquitectura MoE etiquetado como "gemma4" y "moe", con 25.971.339.550 parámetros totales. Al ser un merge, no se dispone de información sobre el proceso de entrenamiento original: no hay datos publicados sobre el número de tokens, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste supervisado. Las etiquetas "heretic" y "uncensored" sugieren que se han aplicado técnicas de mitigación de rechazos (ablación direccional o fine-tuning selectivo), aunque no se detalla el método.
 
-En cuanto al proceso de cuantización, que es el objeto real de este repositorio, mradermacher aplica el esquema i1 (imatrix) con el fichero de calibración incluido (0,2 GB). Este método ajusta la cuantización por tensor usando estadísticas de activación recogidas sobre un corpus de calibración, lo que en la práctica permite conservar más calidad que una cuantización uniforme del mismo tamaño. La model card incluye además una afirmación genérica de que se trata de un modelo de visión y que los ficheros mmproj se ubicarían, si existieran, en el repositorio estático; sin embargo, el propio encabezado de la plantilla indica skip_mmproj: 1 y no se publican ficheros mmproj en este repositorio, por lo que la capacidad de visión no puede darse por confirmada.
+Las cuantizaciones de esta ficha son de tipo i1 (imatrix), generadas con un fichero de importancia de 0,2 GB y calibradas para preservar mejor la perplejidad en bits bajos. El autor advierte que IQ-quants de tamaño similar suelen superar a los K-quants equivalentes, y que los formatos por debajo de Q3 son de calidad notablemente inferior. La etiqueta "thinking" indica soporte de razonamiento explícito previo a la respuesta, aunque no se especifica el mecanismo exacto.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con foco declarado en roleplay y diálogo multi-turno.
-- Modo de razonamiento o *thinking* (etiquetas thinking y reasoning): el modelo puede producir cadenas de razonamiento antes de la respuesta final, si el prompt o la plantilla de chat lo activan.
-- Conversación sin censura: la etiqueta uncensored y heretic indican que el merge ha reducido los mecanismos de rechazo del modelo original.
-- Integración prevista con frontends de roleplay como SillyTavern.
-- Compatibilidad con el ecosistema transformers y con el endpoint de inferencia de Hugging Face (endpoints_compatible).
-- Capacidad de visión: no confirmada; la model card menciona el aviso genérico de modelo de visión, pero no se incluyen ficheros mmproj en este repositorio.
-- Soporte de *tool calling* o *function calling*: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles; el único idioma declarado es el inglés.
-- Capacidades de código o matemáticas: no documentadas.
+- Generación de texto conversacional y roleplay multi-turno, con etiquetas específicas para SillyTavern.
+- Modo de razonamiento ("thinking") previo a la respuesta final.
+- Razonamiento de propósito general, según la etiqueta "reasoning".
+- Modelo "uncensored"/"heretic": menor tasa de rechazos en contenido sensible o de ficción.
+- Capacidad de visión: la model card indica explícitamente "This is a vision model", con ficheros mmproj (si existen) en el repositorio estático.
+- Soporte de tool calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades multilingües: solo inglés declarado.
 
 ## Casos de uso
 
-- Roleplay y personajes persistentes: el modelo está etiquetado explícitamente como roleplay y sillytavern, por lo que su uso natural es como motor de chat de personajes en frontends como SillyTavern, con la cuantización i1-Q4_K_S (16,0 GB) como equilibrio entre calidad y consumo de VRAM.
-- Narrativa creativa y escritura de ficción: la combinación de etiquetas uncensored y heretic permite generar texto sin los rechazos habituales de los modelos alineados, útil para autores que trabajan con temáticas sensibles y necesitan control editorial total.
-- Despliegue local en hardware de consumo: con i1-IQ3_M (12,8 GB) o i1-Q2_K (10,9 GB) el modelo puede ejecutarse en GPUs de 12-16 GB de VRAM mediante llama.cpp u Ollama, algo inviable con los pesos en precisión completa.
-- Asistente conversacional autoalojado sin dependencia de API: al ser GGUF y compatible con endpoints, puede servirse en una máquina propia y consumirse mediante una API compatible con OpenAI, evitando el envío de datos a terceros.
-- Investigación sobre cuantización y compresión: el repositorio incluye el fichero imatrix de 0,2 GB, lo que permite generar cuantizaciones propias y reproducir el proceso con distintos corpus de calibración.
-- Estudio de alineación y seguridad: al tratarse de un merge etiquetado como heretic y uncensored, es un caso de estudio útil para evaluar cómo la fusión de pesos afecta al comportamiento de rechazo y a la tasa de respuestas potencialmente dañinas.
-- Base para merges o ajuste fino posterior: los pesos del modelo base en safetensors pueden servir como punto de partida para nuevos merges orientados a dominios específicos dentro del ámbito conversacional en inglés.
-- Evaluación comparativa de cuantizaciones: al publicarse tres cuantizaciones con tamaños conocidos (10,9 / 12,8 / 16,0 GB) y una escala completa de tipos (desde IQ1_S hasta Q6_K), el repositorio permite medir empíricamente la degradación de calidad según el nivel de compresión en tareas de generación libre.
+- Roleplay y narrativa interactiva: el modelo está etiquetado específicamente para SillyTavern y roleplay, por lo que puede mantener personajes consistentes en conversaciones largas; la variante "uncensored" evita rechazos en tramas de ficción adulta o violenta.
+- Despliegue local en hardware de consumo: con cuantizaciones de 10,8 GB (i1-IQ2_M) a 17,3 GB (i1-Q4_K_M), cabe en GPU de 12-24 GB de VRAM, permitiendo inferencia privada sin dependencia de la nube.
+- Generación de ficción y escritura creativa: el modo "thinking" permite planificar tramas antes de redactar, útil para relatos largos con coherencia argumental.
+- Asistente conversacional sin filtros para investigación: útil para estudiar comportamiento de modelos con rechazos mitigados, análisis de sesgos o evaluación de alineación.
+- Prototipado de frontends de chat: al ser compatible con endpoints y con llama.cpp/Ollama, sirve para desarrollar y probar interfaces conversacionales antes de migrar a modelos mayores.
+- Experimentación con arquitecturas MoE: permite medir el equilibrio calidad/velocidad de un MoE de ~26B en distintos niveles de cuantización, comparando la degradación de perplejidad entre IQ1 y Q6.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantizaciones ni los datos recogidos incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench o cualquier otra métrica de evaluación, ni para el modelo base ni para las cuantizaciones. Tampoco se dispone de comparaciones medidas de perplejidad entre los distintos tipos de cuantización ofrecidos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según los tamaños de fichero publicados, más overhead de contexto y caché KV): i1-Q2_K ~10,9 GB; i1-IQ3_M ~12,8 GB; i1-Q4_K_S ~16,0 GB. El resto de cuantizaciones de la lista no tienen tamaño publicado en la información disponible.
-- GPU recomendadas: para i1-Q4_K_S, una RTX 4090 (24 GB) o RTX 3090 (24 GB) permiten cargar el modelo completo en VRAM con margen para contexto. Para i1-IQ3_M, GPUs de 16 GB como RTX 4080 o A4000 son suficientes. Para i1-Q2_K, GPUs de 12 GB como RTX 3060 12 GB o RTX 4070.
-- Cabe en GPU de consumo: sí, en las cuantizaciones bajas y medias. No cabe en GPUs de 8 GB salvo con cuantizaciones IQ2/IQ1 o con descarga parcial de capas a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui y cualquier runtime compatible con GGUF. vLLM no soporta de forma nativa la mayoría de los tipos de cuantización GGUF aquí publicados. Los ficheros multi-parte requieren concatenación previa según el procedimiento habitual documentado por TheBloke.
-- Latencia y throughput estimados: no disponibles. Dependen de la arquitectura MoE, del número de parámetros activos (no confirmado), del tipo de cuantización y del hardware.
-- Espacio en disco: el repositorio completo ocupa 81,9 GB; conviene descargar únicamente la cuantización necesaria.
+- VRAM estimada según cuantización: 8,6 GB (i1-IQ1_S) hasta 23,3 GB (i1-Q6_K); el punto recomendado por el autor, i1-Q4_K_M, ocupa 17,3 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) equivalente; A100/H100 para servir a múltiples usuarios o con contexto largo.
+- GPU de consumo: sí, cabe en RTX 4090, 3090, 4080 (16 GB) con Q4_K_S o inferiores, y en GPUs de 12 GB con IQ2/IQ3. En GPUs de 8 GB solo entran las variantes IQ1, con calidad muy degradada.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF, con soporte imatrix), Ollama, LM Studio, y servidores compatibles con endpoints; vLLM y TGI no consumen GGUF de forma nativa.
+- Latencia y throughput: no disponible en la información proporcionada. Al ser un MoE, el throughput dependerá del número de parámetros activos, dato no publicado.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento que permitan una comparativa funcional con alternativas. La única comparación posible con la información disponible es entre el modelo base y sus dos repositorios de cuantizaciones:
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Boulesis-26B-A4B-i1-GGUF | 25,97B totales (activos no disponibles) | no disponible | Apache 2.0 | GGUF | Roleplay, uncensored, visión declarada |
+| SubMaroon/Boulesis-26B-A4B (base) | 25,97B totales | no disponible | Apache 2.0 | safetensors | Pesos completos, repo de 308,9 GB |
+| mradermacher/Boulesis-26B-A4B-GGUF (estáticos) | 25,97B totales | no disponible | Apache 2.0 | GGUF | Quants estáticos sin imatrix, incluye mmproj |
 
-| Recurso | Formato | Tamaño | Contenido | Licencia |
-|---|---|---|---|---|
-| SubMaroon/Boulesis-26B-A4B | safetensors | no disponible | Pesos originales del merge, ~26B parámetros | gemma |
-| mradermacher/Boulesis-26B-A4B-GGUF | GGUF | no disponible | Cuantizaciones estáticas (sin imatrix), incluidos ficheros mmproj si los hubiera | gemma |
-| mradermacher/Boulesis-26B-A4B-i1-GGUF | GGUF | 81,9 GB (repo completo) | Cuantizaciones i1 con imatrix, desde IQ1_S hasta Q6_K | gemma |
-
-No se conocen en la información proporcionada modelos comparables de la misma categoría (roleplay sin censura, ~26B, MoE) con datos verificables.
+No se dispone de información sobre modelos comparables de otros autores para esta categoría concreta (MoE de ~26B orientado a roleplay sin censura).
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura: las etiquetas uncensored y heretic implican que los mecanismos de rechazo han sido reducidos o eliminados. Puede generar contenido ofensivo, violento, sexual o potencialmente dañino sin filtros, lo que exige supervisión humana y controles adicionales en cualquier despliegue público.
-- No apto para producción en entornos regulados: no hay evaluación de sesgos, toxicidad ni seguridad publicada, y el proceso de merge no está auditado.
-- Licencia Gemma: el uso está sujeto a los términos de la licencia de Gemma, que incluyen una política de uso prohibido y obligaciones de atribución. Es imprescindible revisar dichos términos antes de cualquier uso comercial.
-- Idioma único: solo inglés. No hay evidencia de capacidades en castellano ni en otros idiomas.
-- Riesgo de alucinación: no documentado ni medido, pero al tratarse de un merge orientado a roleplay sin datos de evaluación, no hay garantías de fidelidad factual.
-- Degradación por cuantización: las cuantizaciones por debajo de IQ3 (IQ2_XXS, IQ2_XS, IQ1_S, IQ1_M, Q2_K) degradan notablemente la calidad. La propia model card advierte que IQ3_XXS es probablemente mejor que Q2_K pese a un tamaño similar.
-- Longitud de contexto desconocida: no se ha publicado la ventana de contexto soportada, lo que impide planificar usos que dependan de contexto largo.
-- Capacidad de visión no confirmada: la afirmación de la model card es genérica de plantilla y no se acompaña de ficheros mmproj en este repositorio.
-- Repositorio sin tracción: cero descargas y cero *likes* en el momento de la consulta, sin validación por parte de la comunidad.
-- Sin garantías de mantenimiento: se desconoce si el autor del modelo base o el cuantizador publicarán actualizaciones o correcciones.
+- Solo soporta inglés; no hay evidencia de capacidades multilingües.
+- Riesgo de alucinación inherente a los modelos de lenguaje; el modo "thinking" no lo elimina.
+- Al ser un modelo "uncensored"/"heretic", puede generar contenido sensible, ofensivo o inapropiado sin filtros; requiere moderación externa en producción.
+- Las cuantizaciones por debajo de Q3 (IQ2, IQ1, Q2_K_S) degradan la calidad de forma notable; el autor las describe como "for the desperate" o "very low quality".
+- No se publican datos de contexto, parámetros activos ni benchmarks, lo que dificulta estimar rendimiento real en tareas de razonamiento o código.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base es un merge de procedencia no documentada; conviene verificar la licencia de los modelos fusionados.
+- El repositorio ocupa 308,9 GB; descargar solo el quant necesario, no el repo completo.
+- La capacidad de visión depende de ficheros mmproj en el repositorio estático; no se confirma su disponibilidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Boulesis-26B-A4B
-- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Boulesis-26B-A4B-GGUF
-- Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Boulesis-26B-A4B-i1-GGUF
-- Fichero imatrix: https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF/resolve/main/Boulesis-26B-A4B.imatrix.gguf
-- Cuantización i1-Q2_K: https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF/resolve/main/Boulesis-26B-A4B.i1-Q2_K.gguf
-- Cuantización i1-IQ3_M: https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF/resolve/main/Boulesis-26B-A4B.i1-IQ3_M.gguf
-- Cuantización i1-Q4_K_S: https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF/resolve/main/Boulesis-26B-A4B.i1-Q4_K_S.gguf
-- Guía de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas sobre tipos de cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Quants estáticos: https://huggingface.co/mradermacher/Boulesis-26B-A4B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Boulesis-26B-A4B-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico de perplejidad por tipo de quant (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre quants: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

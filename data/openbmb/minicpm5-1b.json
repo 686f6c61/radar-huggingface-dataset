@@ -64,31 +64,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "openbmb/MiniCPM5-1B · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
-      "snippet": "Limitations and Responsible Use MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data. It may produce inaccurate, biased, or unsafe outputs, and generated content should be reviewed and verified before use in high-stakes settings."
-    },
-    {
-      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
-      "url": "https://github.com/OpenBMB/MiniCPM",
-      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
-    },
-    {
-      "title": "MiniCPM5-1B: The leading 1B open weights model - artificialanalysis.ai",
-      "url": "https://artificialanalysis.ai/articles/minicpm5-1b-the-leading-1b-open-weights-model",
-      "snippet": "OpenBMB has released MiniCPM5-1B (Non-reasoning), the leading 1B open-weights model, scoring 17.9 on the Artificial Analysis Intelligence Index See model page OpenBMB is a China-based lab jointly founded in 2022 by Tsinghua University&#x27;s NLP Lab and ModelBest Inc."
-    },
-    {
-      "title": "GitHub - OpenBMB/MiniCPM at producthunt",
-      "url": "https://github.com/OpenBMB/MiniCPM?ref=producthunt",
-      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
-    },
-    {
-      "title": "What Is MiniCPM5-1B? A Practical Guide to OpenBMB&#x27;s 1B On ... - kingy.ai",
-      "url": "https://kingy.ai/news/what-is-minicpm5-1b-a-practical-guide-to-openbmbs-1b-on-device-language-model/",
-      "snippet": "MiniCPM5-1B is OpenBMB&#x27;s compact open-weight on-device language model; learn its specs, use cases, and why it matters."
-    }
-  ]
+  "sources": []
 }

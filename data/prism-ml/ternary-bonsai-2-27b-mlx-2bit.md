@@ -2,115 +2,104 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B-mlx-2bit es una compresion ternaria de Qwen3.8-27B publicada por Prism ML (repositorio `prism-ml`). El modelo conserva la arquitectura del original —transformer causal de atencion hibrida, SwiGLU MLP, RoPE y RMSNorm— pero sustituye los pesos de la columna vertebral del lenguaje por valores ternarios pertenecientes al conjunto {−1, 0, +1}, con una escala FP16 compartida por cada grupo de 128 pesos. El resultado ocupa 8,60 GB en disco (7,67 GB de modelo de lenguaje y 0,92 GB de torre de vision) frente a los aproximadamente 54 GB de la version FP16, y esta empaquetado en safetensors para MLX, con kernels especificos para Apple Silicon y CUDA.
+Bonsai 2 27B es una compresión ternaria del modelo Qwen3.8-27B, publicada por Prism ML bajo el identificador `prism-ml/Ternary-Bonsai-2-27B-mlx-2bit`. El modelo mantiene la arquitectura original de 27.360 millones de parámetros (24.350 millones en el backbone de 64 bloques, 2.540 millones en embeddings y cabeza LM, y 460 millones en la torre de visión de 27 bloques) pero sustituye prácticamente todos los pesos lineales por valores ternarios en {−1, 0, +1} con un factor de escala FP16 compartido cada 128 pesos. El resultado ocupa 8,60 GB en disco (7,67 GB de modelo de lenguaje más 0,92 GB de torre de visión en FP16) frente a los aproximadamente 54 GB de la versión FP16.
 
-La propuesta es relevante porque demuestra que un modelo de 27B puede mantener razonamiento, matematicas, codigo y comportamiento agentico por debajo de los 4 bits. Segun los autores, retiene el 98,2% de la inteligencia del modelo FP16, con una media de 84,78 en 14 benchmarks en modo thinking, frente a 72,59 de una cuantizacion convencional IQ2_XXS y dentro de 0,4 puntos de UD-Q4_K_XL pese a ocupar un tercio del espacio de esta ultima. Todo el presupuesto de pesos de lenguaje es ternario, incluidos embeddings, proyecciones de atencion, proyecciones MLP y LM head, sin capas de alta precision ocultas.
+La relevancia del modelo está en que demuestra que el régimen sub-4-bit puede conservar razonamiento, matemáticas, código y comportamiento agéntico, capacidades que en cuantizaciones convencionales de 2 bits suelen degradarse de forma severa. Según la model card, retiene el 98,2 % de la inteligencia FP16 (84,78 de media en 14 benchmarks en modo thinking) frente a 72,59 de una build IQ2_XXS convencional, con menos de dos tercios del tamaño de esta. El contexto heredado del modelo base es de 262.000 tokens, viable en dispositivo gracias a que el backbone de atención híbrida es aproximadamente un 75 % atención lineal.
 
-El contexto es de 262K tokens y se mantiene practico en dispositivo gracias a que el backbone de Qwen3.8-27B usa atencion mayoritariamente lineal (~75%). El modelo se distribuye con licencia Apache 2.0, incluye la torre de vision sin cuantizar y declara un rendimiento de aproximadamente 47 tokens por segundo en un portatil con Apple M5 Max.
+El pack está pensado para ejecución local en Apple Silicon mediante MLX (Python y Swift) y para CUDA, con kernels propios que consumen los pesos empaquetados directamente sin expandirlos a FP16. Existe un compañero en formato GGUF para llama.cpp. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal de atencion hibrida (~75% atencion lineal / ~25% atencion completa), SwiGLU MLP, RoPE, RMSNorm |
-| Parametros totales | 27.359.638.768 (27,36B): 24,35B de backbone de lenguaje (64 bloques) + 2,54B de embeddings y LM head + 0,46B de torre de vision (27 bloques) |
-| Longitud de contexto | 262.144 tokens (262K), heredada del modelo base |
-| Tipos de cuantizacion | Ternaria g128: valores {−1, 0, +1} con una escala FP16 por grupo de 128 pesos. 1,72 bits/peso como representacion (1,71 bits/peso efectivos del formato ternario mas la escala); 2,25 bits/peso tal como lo almacena el contenedor MLX. Repositorio companion GGUF en PTQ1_0 (1,75 bits/peso, 5,95 GB) y PQ2_0 (7,21 GB) |
+| Arquitectura | Transformer causal de atención híbrida (~75 % lineal / ~25 % completa), SwiGLU MLP, RoPE, RMSNorm |
+| Parametros totales | 27.359.638.768 (24,35B backbone + 2,54B embeddings/cabeza LM + 0,46B torre de visión) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.000 tokens |
+| Tipos de cuantizacion | Ternaria g128: pesos en {−1, 0, +1} con escala FP16 por grupo de 128; ~1,72 bits/peso efectivos; formato GGUF alternativo en PTQ1_0 (5,95 GB), PQ2_0 (7,21 GB) y Q2_0 (7,63 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX); GGUF en el repositorio companion |
-| Modelo base | Qwen/Qwen3.8-27B (arquitectura sin cambios) |
-| Tamano desplegado | 8,60 GB en safetensors MLX (7,67 GB lenguaje + 0,92 GB torre de vision); el repositorio en Hugging Face ocupa 16,3 GB |
-| Cuantizacion de la torre de vision | No cuantizada, 0,92 GB en FP16 (torre oficial de Qwen3.8-27B) |
-| Backends soportados | Apple MLX (Python y Swift) y CUDA |
+| Formato de pesos | safetensors (MLX) y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer causal de atencion hibrida en el que cerca del 75% de las capas emplean atencion lineal y el 25% restante atencion completa, lo que permite sostener una ventana de 262K tokens con un coste de computo y memoria contenido. El backbone de lenguaje tiene 64 bloques, 24,35B parametros, y se complementa con 2,54B en embeddings y LM head y una torre de vision de 27 bloques y 0,46B parametros, incluida en el paquete sin cuantizar.
+El modelo conserva sin cambios la arquitectura del Qwen3.8-27B: 64 bloques con atención híbrida en la que cerca del 75 % de las capas usan atención lineal y el 25 % restante atención completa, MLP con SwiGLU, normalización RMSNorm y codificación posicional RoPE. La cuantización cubre embeddings, proyecciones de atención, proyecciones del MLP y la cabeza LM, sin "escapes" de alta precisión detrás de una etiqueta de bajo bit. La torre de visión, con 27 bloques y 0,46B de parámetros, se incluye sin cuantizar en FP16 (0,92 GB).
 
-La innovacion principal es la representacion de pesos ternaria g128. Cada matriz se transforma primero mediante una rotacion de Hadamard por bloques (bloque de 1024, con signos ±1 fijos) antes de asignar los valores ternarios; esa rotacion queda plegada en los pesos almacenados y el runtime aplica la transformacion equivalente sobre las activaciones. Los pesos empaquetados se consumen directamente, sin expandirlos a FP16, mediante kernels propios de atencion hibrida ternaria implementados para MLX (Python y Swift) y CUDA. El modelo empaqueta como metadatos su rotacion, de modo que un runtime o aplica la transformacion correspondiente o rechaza cargar el fichero.
-
-La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. La informacion disponible indica que se trata de un proceso de cuantizacion post-entrenamiento (PTQ) sobre el modelo base, con el objetivo declarado de conservar el modo thinking, el razonamiento y el comportamiento agentico tipicos de Qwen3.8-27B.
+La innovación técnica central es la representación ternaria en base rotada: cada matriz se transforma en bloques de 1024 mediante una rotación de Hadamard ortogonal con signos fijos ±1 antes de asignar los valores ternarios, y en tiempo de ejecución el runtime aplica la transformación equivalente sobre las activaciones. La rotación se pliega en los pesos almacenados, por lo que no añade bits ni tráfico adicional, y el fichero declara la rotación como metadato de modo que un runtime incompatible rechaza la carga. Cada grupo de 128 pesos comparte una escala FP16, lo que da un coste efectivo de ~1,71 bits/peso (1,72 contando los tensores mantenidos por encima de la representación ternaria), es decir, una reducción idealizada de ~9,3x frente a FP16. No se detallan en la información disponible el volumen de tokens de entrenamiento ni si hubo fases de RLHF o DPO posteriores a la cuantización.
 
 ## Capacidades
 
-- Generacion de texto conversacional en modo thinking y modo directo, con razonamiento multi-paso.
-- Razonamiento matematico: los autores reportan una puntuacion de 96,57, a medio punto del modelo en precision completa.
-- Generacion de codigo: puntuacion de 89,42, al mismo nivel que la linea base segun la model card.
-- Uso de herramientas y function calling en contextos agenticos: 74,92 en la prueba de tool calling indicada por los autores.
-- Capacidades de vision: el paquete incluye la torre de vision oficial de Qwen3.8-27B en FP16, por lo que se conservan las capacidades multimodales del modelo base.
-- Contexto largo de 262K tokens, viable en dispositivo gracias al backbone de atencion predominantemente lineal.
-- Despliegue on-device en Apple Silicon (MLX en Python y Swift) y en GPU mediante CUDA y llama.cpp.
-- Capacidades multilingues: no disponible (no se especifica el conjunto de idiomas soportados en la informacion proporcionada).
+- Generación de texto y razonamiento en modo thinking, con retención declarada del 98,2 % de la inteligencia FP16.
+- Razonamiento matemático: 96,57 en el benchmark de matemáticas citado, a menos de medio punto de la precisión completa.
+- Generación de código: 89,42, al nivel del baseline FP16.
+- Tool calling y comportamiento agéntico: 74,92 en la métrica de agentic tool calling de la model card.
+- Comprensión de imágenes mediante la torre de visión Qwen3.8-27B incluida en el pack (sin cuantizar).
+- Conversación multi-turno con ventana de 262.000 tokens.
+- Ejecución en dispositivo con kernels ternarios nativos en MLX (Python, Swift) y CUDA.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes de razonamiento en portatil: con 8,60 GB de pesos, el modelo cabe en la memoria unificada de un Mac con Apple Silicon y permite ejecutar razonamiento en modo thinking sin conexion, con contextos de hasta 262K tokens.
-- Analisis de documentos largos: la ventana de 262K tokens y la atencion mayoritariamente lineal hacen viable resumir, extraer datos y responder preguntas sobre expedientes, informes o bases de codigo extensas en una sola pasada.
-- Agentes con uso de herramientas: la puntuacion de 74,92 en tool calling permite construir agentes que encadenen llamadas a APIs, consultas a bases de datos y pasos de razonamiento intermedios.
-- Asistencia a la programacion en local: con 89,42 en la prueba de codigo, es util para autocompletado, generacion de tests y revision de parches dentro de un IDE, sin enviar codigo a servicios externos.
-- Procesamiento de documentos con imagenes: al incluir la torre de vision, puede extraer informacion de capturas, formularios escaneados o diagramas y continuar el razonamiento sobre el texto resultante.
-- Educacion y tutoria matematica: el rendimiento de 96,57 en matematicas permite resolver problemas paso a paso y explicar el procedimiento en un entorno sin coste de API.
-- Despliegue en el borde con requisitos de privacidad: al ejecutarse en CUDA o Metal con pesos empaquetados, es apto para entornos industriales o sanitarios donde los datos no pueden salir del dispositivo.
-- Investigacion sobre cuantizacion extrema: sirve como referencia reproducible para estudiar el comportamiento de representaciones ternarias en modelos de 27B y compararlas con esquemas de 2 y 4 bits.
+- Asistente de razonamiento local en portátil: con 8,60 GB en disco y ~47 tok/s en un Apple M5 Max, permite desplegar un modelo de 27B en modo thinking sin conexión ni GPU dedicada, útil para entornos con requisitos de privacidad.
+- Análisis de documentos largos: la ventana de 262.000 tokens y la atención predominantemente lineal permiten procesar contratos, informes o bases de código extensas manteniendo latencia manejable en dispositivo.
+- Automatización agéntica con tool calling: el 74,92 en la métrica de tool calling lo hace apto para orquestar APIs y flujos multi-paso en local, por ejemplo para asistentes de terminal o agentes de soporte interno.
+- Generación y revisión de código en el IDE: el rendimiento en coding (89,42) a nivel del baseline FP16 permite integrarlo en asistentes de autocompletado y refactorización que corren en la máquina del desarrollador.
+- Procesamiento de documentación con imágenes: la torre de visión incluida permite extraer información de capturas, diagramas o formularios escaneados combinándola con el razonamiento de texto.
+- Despliegue en flotas de estaciones de trabajo con CUDA: los kernels ternarios para CUDA y el fork de llama.cpp permiten servir el modelo en servidores con GPU sin necesidad de expandir los pesos a FP16 en memoria.
+- Aplicaciones móviles en iOS/macOS: el fork de mlx-swift habilita integrar el modelo en apps nativas con pesos ternarios consumidos directamente.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Ternary-Bonsai-2-27B | IQ2_XXS (referencia) | UD-Q4_K_XL (referencia) |
-|---|---|---|---|
-| Media en 14 benchmarks (modo thinking) | 84,78 | 72,59 | no publicado (los autores indican que Bonsai queda a menos de 0,4 puntos) |
-| Porcentaje de inteligencia FP16 retenida | 98,2% | no disponible | no disponible |
-| Matematicas | 96,57 | no disponible | no disponible |
-| Codigo | 89,42 | no disponible | no disponible |
-| Tool calling agentico | 74,92 | no disponible | no disponible |
+Datos publicados en la model card (media de 14 benchmarks en modo thinking, salvo indicación):
 
-Los nombres concretos de los 14 benchmarks no se detallan en la informacion proporcionada. No se han publicado resultados de MMLU, HumanEval o GSM8K en la informacion disponible.
+| Benchmark / metrica | Ternary-Bonsai-2-27B | IQ2_XXS convencional | UD-Q4_K_XL |
+|---|---|---|---|
+| Media (14 benchmarks thinking) | 84,78 | 72,59 | no disponible (a 0,4 puntos) |
+| Matematicas | 96,57 | no disponible | no disponible |
+| Coding | 89,42 | no disponible | no disponible |
+| Agentic tool calling | 74,92 | no disponible | no disponible |
+| Inteligencia retenida vs FP16 | 98,2 % | no disponible | no disponible |
+| Tamano en disco | 8,60 GB (MLX) / 5,95-7,63 GB (GGUF) | mas de 2/3 del tamano de Bonsai | ~3x el tamano de Bonsai |
+
+Throughput declarado: ~47 tok/s en un Apple M5 Max. No se han publicado en la información disponible resultados desglosados por benchmark (MMLU, HumanEval, GSM8K) ni cifras de latencia para CUDA.
 
 ## Requisitos de hardware
 
-- Peso en disco: 8,60 GB en safetensors MLX (7,67 GB de lenguaje + 0,92 GB de torre de vision). El empaquetado GGUF companion ocupa 5,95 GB en PTQ1_0 y 7,21 GB en PQ2_0.
-- VRAM estimada para inferencia: no publicada. Como referencia, los pesos del modelo de lenguaje suman 7,67 GB, por lo que la huella total dependera del cache KV y del contexto elegido; no se dispone de mediciones oficiales de VRAM en GPU.
-- GPU recomendadas: no se especifica una lista oficial. Los backends soportados son CUDA (incluido el fork de llama.cpp) y Metal a traves de MLX.
-- Cabe en GPU de consumo: no confirmado en la informacion disponible. El tamano de pesos (7,67 GB de lenguaje) es compatible en terminos de capacidad con GPUs de 12 GB o mas, pero no hay datos publicados de ejecucion verificada.
-- Rendimiento medido: aproximadamente 47 tokens por segundo en un portatil con Apple M5 Max, segun la model card.
-- Opciones de despliegue: MLX en Python y Swift (iOS y macOS) mediante los forks de Prism ML, CUDA a traves del fork de llama.cpp, y llama.cpp en CPU. El modelo GGUF companion esta pensado para llama.cpp en CUDA, Metal y CPU.
-- Requisito de runtime: es necesario un runtime que aplique la transformacion de Hadamard declarada en los metadatos; en caso contrario, el fichero no debe cargarse.
+- VRAM/almacenamiento para inferencia: 8,60 GB en MLX (7,67 GB LM + 0,92 GB visión); 5,95 GB (PTQ1_0), 7,21 GB (PQ2_0) o 7,63 GB (Q2_0) en GGUF.
+- GPU recomendadas: Apple Silicon (M-series, con MLX y mlx-swift); GPUs NVIDIA con CUDA mediante los kernels propios o el fork de llama.cpp.
+- Cabe en GPU de consumo: sí, el tamaño de 8,60 GB permite ejecución en GPUs consumer con 12 GB o más de VRAM; en Apple Silicon se ejecuta en memoria unificada.
+- Opciones de despliegue: MLX (Python y Swift), fork de MLX de Prism ML, fork de llama.cpp de Prism ML, llama.cpp estándar b11556 o superior (solo packing Q2_0), CUDA con kernels ternarios.
+- Latencia y throughput: ~47 tok/s en Apple M5 Max según la model card; sin datos para otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato y tamano | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / bits | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B (MLX 2-bit) | 27,36B | 262K | safetensors MLX, 8,60 GB, 2,25 bits/peso almacenados | Apache 2.0 | Hugging Face (repositorio `prism-ml`) |
-| Ternary-Bonsai-2-27B (GGUF PTQ1_0) | 27,36B | 262K | GGUF, 5,95 GB, 1,75 bits/peso | Apache 2.0 | Repositorio companion en Hugging Face |
-| Ternary-Bonsai-2-27B (GGUF PQ2_0) | 27,36B | 262K | GGUF, 7,21 GB | Apache 2.0 | Repositorio companion en Hugging Face |
-| Cuantizacion IQ2_XXS del mismo modelo base | no disponible | no disponible | ~2 bits convencionales | no disponible | no disponible (solo citada como referencia de benchmarks) |
-| UD-Q4_K_XL del mismo modelo base | no disponible | no disponible | ~4 bits, alrededor de tres veces el tamano | no disponible | no disponible (solo citada como referencia de benchmarks) |
-| Qwen3.8-27B en FP16 | 27B | 262K | FP16, ~54 GB | no disponible | Modelo base en Hugging Face |
+| Ternary-Bonsai-2-27B | 27,36B | 262K | Ternario g128 (~1,72 bits/peso), MLX y GGUF | Apache 2.0 | Hugging Face |
+| IQ2_XXS convencional (mismo base) | ~27B | 262K (heredado) | ~2 bits, GGUF | Apache 2.0 (base) | Hugging Face |
+| UD-Q4_K_XL (mismo base) | ~27B | 262K (heredado) | ~4 bits, GGUF | Apache 2.0 (base) | Hugging Face |
+| Qwen3.8-27B (FP16) | 27,36B | 262K | FP16 (~54 GB) | Apache 2.0 | Hugging Face |
 
-No se dispone de datos suficientes para comparar con alternativas de otros desarrolladores en la misma categoria.
+La comparación se limita a las variantes del mismo modelo base citadas en la model card; no se dispone de datos de benchmarks de modelos de otros autores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion: no se documenta una evaluacion especifica de factualidad; como en cualquier modelo de lenguaje, la generacion puede producir contenido incorrecto con apariencia de veracidad.
-- Perdida de precision: aunque se declara una retencion del 98,2% de la inteligencia FP16, existe una degradacion medible respecto al modelo base, y la propia model card reconoce que la representacion ternaria es un regimen sub-4-bit propenso al colapso en esquemas convencionales.
-- Idiomas soportados: no disponible; no se especifica la cobertura multilingue ni la calidad por idioma.
-- Dependencia de runtime: el modelo solo funciona con implementaciones que apliquen la rotacion de Hadamard declarada en los metadatos. Cargarlo con herramientas estandar no modificadas puede fallar o producir resultados incorrectos.
-- Sin datos de VRAM ni de latencia en GPU: el unico dato de rendimiento publicado es de aproximadamente 47 tok/s en Apple M5 Max.
-- Discrepancia entre el tamano del repositorio (16,3 GB) y el tamano desplegado declarado (8,60 GB): conviene verificar que ficheros se descargan antes de planificar el almacenamiento.
-- Adopcion temprana: el repositorio registra 0 descargas y 14 likes en la fecha de los datos, y los kernels requieren forks especificos de MLX y llama.cpp, lo que incrementa el riesgo de mantenimiento en produccion.
-- Licencia: Apache 2.0 permite uso comercial, pero se desconoce si el modelo base Qwen3.8-27B impone condiciones adicionales que deban respetarse al derivar pesos.
+- La cuantización ternaria, aunque retiene el 98,2 % de la media FP16, implica una pérdida medible de calidad frente al modelo original; los benchmarks publicados son del propio autor y deben validarse en el caso de uso concreto.
+- Riesgo de alucinación inherente a un modelo de lenguaje de 27B; el modo thinking no elimina este riesgo.
+- Idiomas soportados no documentados en la información disponible; no se puede garantizar un rendimiento multilingüe equivalente al del modelo base.
+- La representación en base rotada exige runtimes compatibles: un motor que no aplique la transformación de Hadamard sobre las activaciones rechazará la carga del fichero. La portabilidad fuera de MLX, los forks de Prism ML y llama.cpp ≥ b11556 (solo Q2_0) es limitada.
+- El pack MLX almacena escala y sesgo por grupo, lo que eleva el coste a 2,25 bits/peso frente a 1,75 en el empaquetado GGUF PTQ1_0; el tamaño en disco varía según el backend elegido.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3.8-27B y de los componentes derivados.
+- No se documentan sesgos específicos ni evaluaciones de seguridad en la información proporcionada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
-- Repositorio companion GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Web de Prism ML: https://prismml.com
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
+- Compañero GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf
 - Demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo
-- Discord: https://discord.gg/prismml
 - Fork de MLX: https://github.com/PrismML-Eng/mlx
 - Fork de mlx-swift: https://github.com/PrismML-Eng/mlx-swift
 - Fork de llama.cpp: https://github.com/PrismML-Eng/llama.cpp
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-
-Los resultados de la busqueda web (Prism Launcher, GraphPad Prism, Prism de OpenAI) no guardan relacion con este modelo y se han descartado.
+- Web de Prism ML: https://prismml.com
+- Discord: https://discord.gg/prismml

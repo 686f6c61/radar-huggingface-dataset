@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B at main",
-      "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B: Model synced from source ...",
-      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
-      "snippet": "A 1.7B-parameter causal language model distilled from Qwen3-30B-A3B on 6,122 STEM chain-of-thought samples using discrepancy-informed knowledge distillation. The training objective emphasizes proof structure, detects reasoning pivot tokens through token-level divergence dynamics, smooths high-entropy student singularities before distillation, and monitors structural drift through discrepancy ..."
-    },
-    {
-      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF: Model synced ...",
-      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF",
-      "snippet": "Stage 1 — DISC-Informed Knowledge Distillation: Qwen3-1.7B distilled from Qwen3-30B-A3B-Instruct on 6,122 STEM chain-of-thought samples using proof-weighted cross-entropy loss (2.5x → 1.5x decay on derivation tokens) and KL divergence at T=2.0."
-    },
-    {
-      "title": "Qwen3-1.7B-Distilled-30B-A3B-SFT - friendli.ai",
-      "url": "https://friendli.ai/models/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
-      "snippet": "Request reserved instances Model provider reaperdoesntknow Model tree Base Qwen/Qwen3-1.7B Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Serverless Endpoints Dedicated Endpoints Container More information Model card"
-    }
-  ]
+  "sources": []
 }

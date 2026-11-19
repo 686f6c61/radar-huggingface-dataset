@@ -2,95 +2,91 @@
 
 ## Resumen
 
-GLM-5.3-Maya-GGUF es una cuantización en formato GGUF del modelo GLM-5.3 desarrollado por Z.ai (zai-org), publicada por el usuario peasantsmith dentro del proyecto comunitario Project Maya. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 753.864.139.008 parámetros totales (unos 744B), de los cuales aproximadamente 40B se activan por token: 256 expertos enrutados por capa, 8 activos, más un experto compartido. Incorpora multi-head latent attention con un indexador de atención dispersa y soporta hasta 1M de tokens de contexto.
+GLM-5.3-Maya-GGUF es una cuantización en formato GGUF del modelo zai-org/GLM-5.3, desarrollada por el usuario peasantsmith en el marco de Project Maya. El modelo base, obra de Z.ai (zai-org), es un transformer de tipo mixture-of-experts (MoE) con 744 000 millones de parámetros totales y unos 40 000 millones activos por token, 256 expertos enrutados por capa (8 activos más un experto compartido) y una ventana de contexto de hasta 1 millón de tokens. Esta cuantización concreta, denominada Maya-XS, comprime el modelo hasta 170 GB manteniendo una divergencia KL media de 0,506 respecto al original.
 
-El problema que resuelve esta ficha concreta es el de hacer viable la inferencia de un modelo de ~744B parámetros en hardware de consumo y estaciones de trabajo. La cuantización Maya-XS comprime el modelo a 170 GB (frente a los 216,7 GB de la alternativa UD-IQ1_S de unsloth) manteniendo una divergencia KL media de 0,506 respecto al original, lo que la sitúa en la misma fidelidad que dicha alternativa con un 78% de su tamaño. Project Maya complementa la cuantización con un motor que mantiene los expertos más usados en VRAM, el resto en RAM y lee del SSD lo que no cabe, permitiendo ejecutar el modelo con menos memoria que su tamaño total.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de escala frontera (744B) en hardware de consumo mediante una estrategia de offloading híbrido entre VRAM, RAM y SSD, implementada por Project Maya. El archivo conserva todos los expertos y el bloque NextN (MTP) del modelo original para decodificación especulativa, y está pensado para un pool de memoria de 192 GB (VRAM y RAM combinadas).
 
-Es relevante ahora porque demuestra que modelos frontera de escala MoE extrema pueden desplegarse localmente con pérdidas de calidad medidas y controladas, usando únicamente los cuantizadores oficiales de llama.cpp (ggml) y conservando el bloque NextN (MTP) del modelo original para decodificación especulativa. El modelo es solo texto (GLM-5.3 no tiene torre de visión) y está orientado a agentes, código y conversación en inglés y chino.
+La cuantización se realizó directamente desde los pesos publicados por Z.ai (no desde un archivo ya cuantizado), usando cuantizadores nativos de llama.cpp (ggml) y el layout `glm-dsa`. El modelo está orientado a generación de texto en inglés y chino, con capacidades declaradas de agente, coding y tool calling, y no incluye torre de visión.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) con multi-head latent attention y indexador de atención dispersa (glm-dsa) |
-| Parámetros totales | 753.864.139.008 (~744B) |
-| Parámetros activos | ~40B por token (256 expertos enrutados por capa, 8 activos, más un experto compartido) |
-| Longitud de contexto | Hasta 1M tokens |
-| Tipos de cuantización | GGUF: expertos enrutados IQ1_S, tensores de capas sensibles y bloque NextN en IQ2_XXS, algunos IQ1_M; atención, indexador, expertos compartidos y capas densas en Q8_0 (salida de atención Q6_K); embeddings Q4_K; salida Q6_K; normas, router y proyección del indexador en F32 |
-| Idiomas soportados | Inglés (en) y chino (zh) |
-| Licencia | glm-5.3 (licencia propia de Z.ai, enlazada desde el modelo base) |
-| Formato de pesos | GGUF (4 archivos, diseño `glm-dsa` de llama.cpp) |
+| Arquitectura | Transformer MoE con multi-head latent attention y indexador de atención dispersa (glm-dsa); bloque NextN (MTP) |
+| Parámetros totales | 744 000 millones (modelo base); el dato safetensors del repo indica 6144 (probablemente parámetros por tensor o metadato agregado, no el total) |
+| Parámetros activos | ~40 000 millones por token (256 expertos enrutados, 8 activos + 1 compartido) |
+| Longitud de contexto | Hasta 1 000 000 tokens (modelo base) |
+| Tipos de cuantización | GGUF: expertos enrutados IQ1_S, tensores de capas sensibles y bloque NextN en IQ2_XXS, algunos IQ1_M; atención, indexador, expertos compartidos y capas densas en Q8_0 (salida de atención Q6_K); embeddings Q4_K / salida Q6_K; normas, router y proyección del indexador en F32 |
+| Idiomas soportados | Inglés (en), chino (zh) |
+| Licencia | glm-5.3 (other), la misma del modelo base de Z.ai |
+| Formato de pesos | GGUF (4 archivos shard, layout `glm-dsa` de llama.cpp); repo de 170,0 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer MoE con 256 expertos enrutados por capa, de los cuales 8 se activan por token, más un experto compartido. Emplea multi-head latent attention junto con un indexador de atención dispersa, lo que permite gestionar contextos de hasta 1M tokens. El modelo conserva el bloque NextN (MTP, multi-token prediction) del original, utilizado para decodificación especulativa (drafting). No hay torre de visión: es un modelo exclusivamente de texto.
+El modelo base GLM-5.3 es un transformer de mezcla de expertos con 256 expertos enrutados por capa, de los cuales 8 se activan por token más un experto compartido, lo que da unos 40 000 millones de parámetros activos sobre 744 000 millones totales. Incorpora multi-head latent attention con un indexador de atención dispersa (denominado glm-dsa en el layout de llama.cpp) y un bloque NextN (multi-token prediction) que se conserva en la cuantización para tareas de drafting. La ventana de contexto alcanza hasta 1 millón de tokens.
 
-Sobre el entrenamiento del modelo base no se dispone de detalles en la información proporcionada (número de tokens, composición del dataset, uso de RLHF/DPO): no disponible. Lo que sí está documentado es el proceso de cuantización: calibración con texto en el formato de chat propio de GLM-5.3 (plantilla de chat, modo thinking y tool calls incluidos), cubriendo tool calls y trazas de agente, código, front-end web y trabajo 3D, respuestas largas, chat y chat multilingüe, con 384 secuencias de 2.048 tokens y un conjunto held-out separado para evaluación. Se calcularon matrices de importancia por experto y capa, se asignaron los bits extra a las capas y tensores más sensibles, y se aplicó redondeo con feedback de error por experto en bloques de 256 pesos, calibrando cada capa sobre la salida de las capas ya cuantizadas. La cuantización se generó desde la release oficial de Z.ai (no desde un archivo recuantizado) con los cuantizadores ggml de llama.cpp.
+El proceso de cuantización de Maya-XS se documenta con detalle: calibración con texto en el formato de chat propio de GLM-5.3 (incluyendo thinking y tool calls), con trazas de agente, código, front-end web y 3D, respuestas largas y chat multilingüe, en 384 secuencias de 2048 tokens, reservando un conjunto held-out para evaluación. Se calcularon matrices de importancia por experto, se asignaron bits extra a las capas y tensores más sensibles, y se aplicó redondeo con feedback de error en bloques de 256 pesos, calibrando cada capa sobre la salida de las capas ya cuantizadas. No se dispone de información sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) en la documentación proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto de hasta 1M tokens.
-- Razonamiento con modo thinking y tres niveles de pensamiento configurables (según la documentación de Project Maya).
-- Generación de código, incluido trabajo de front-end web y 3D según la composición del dataset de calibración.
-- Tool calling / function calling, con soporte en la API compatible con OpenAI y Anthropic de Project Maya.
-- Capacidades orientadas a agentes y trazas de agente (etiquetas `agent` y `coding` del repositorio).
+- Generación de texto y razonamiento con modo thinking configurable en tres niveles (según la documentación de Project Maya).
+- Programación y coding, con calibración específica sobre código y trazas de agente.
+- Tool calling / function calling, soportado en el template de chat del modelo y en la API compatible con OpenAI y Anthropic.
+- Capacidades de agente y razonamiento multi-paso (tags `agent` y `coding`).
 - Decodificación especulativa mediante el bloque NextN (MTP) conservado en la cuantización.
 - Multilingüe limitado a inglés y chino.
-- Solo texto: sin visión, audio ni otras modalidades.
+- Sin capacidades de visión: el modelo no incluye torre de visión.
 
 ## Casos de uso
 
-- Asistentes de código en local: el modelo puede integrarse en un servidor compatible con la API de OpenAI en `http://127.0.0.1:8080` y usarse desde editores o pipelines de CI/CD, aprovechando sus capacidades de tool calling y su entrenamiento en código y front-end.
-- Agentes autónomos multi-paso: las trazas de agente presentes en la calibración y el soporte de tool calls lo hacen adecuado para orquestaciones con varias llamadas a herramientas, con el modo thinking para planificación.
-- Procesamiento de documentos largos: la ventana de hasta 1M tokens permite analizar repositorios completos, contratos extensos o hilos de conversación sin trocear.
-- Atención al cliente bilingüe inglés-chino: conversaciones multi-turno con contexto largo, desplegado en una estación de trabajo con suficiente VRAM y RAM.
-- Experimentación e investigación en local: reproducir el comportamiento de un MoE de ~744B con 170 GB de descarga y un pool de memoria de 192 GB, sin depender de APIs en la nube.
-- Evaluación de cuantizaciones extremas: la métrica publicada (KL media 0,506; 81,8% de coincidencia en el token top) permite estudiar el impacto de IQ1/IQ2 en un modelo de gran escala.
-- Despliegue en hardware AMD o NVIDIA de gama profesional: Project Maya soporta CUDA desde Tesla V100 y HIP en AMD, incluidos Strix y Gorgon Halo.
+- Asistencia de coding en producción: el modelo puede integrarse en pipelines de CI/CD y editores mediante la API compatible con OpenAI, aprovechando su entrenamiento específico en código y tool calling para generar parches y ejecutar llamadas a herramientas.
+- Agentes autónomos multi-paso: con 1M de tokens de contexto y soporte de tool calling, puede mantener trazas largas de agente, planificar subtareas y consultar herramientas externas en flujos de automatización.
+- Atención al cliente bilingüe (inglés/chino): conversaciones multi-turno con contexto extenso, adecuado para mercados donde ambos idiomas son relevantes.
+- Análisis de documentos largos: la ventana de 1M tokens permite procesar repositorios completos, contratos o bases de código sin truncamiento.
+- Generación de front-end y trabajo 3D: la calibración incluyó específicamente web front-end y 3D, lo que lo hace adecuado para prototipado de interfaces y escenas.
+- Despliegue local en estaciones de trabajo con mucha memoria: con Project Maya y un pool de 192 GB (VRAM+RAM), se puede ejecutar en hardware de gama alta de consumo o profesional sin depender de la nube.
+- Investigación sobre cuantización extrema: el propio archivo sirve como referencia metodológica para estudiar el impacto de IQ1/IQ2 en modelos MoE de gran escala.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de calidad publicados son métricas de fidelidad de la cuantización frente al modelo original:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí reporta métricas de fidelidad de la cuantización frente al original:
 
 | Métrica | Maya-XS | unsloth UD-IQ1_S |
 |---|---:|---:|
 | Tamaño | 170,0 GB | 216,7 GB |
 | Divergencia KL media vs original | 0,506 | 0,506 |
-| Mismo token top que el original | 81,8% | 82,3% |
+| Mismo token top que el original | 81,8 % | 82,3 % |
 
-Medido sobre texto held-out nunca usado para calibración, contra las predicciones exactas de los pesos publicados por Z.ai, con ambos archivos evaluados del mismo modo y sobre los mismos tokens.
+Las métricas se midieron sobre texto held-out nunca usado para calibración, comparando contra las predicciones exactas de los pesos publicados por Z.ai.
 
 ## Requisitos de hardware
 
-- Descarga: 170,0 GB en 4 archivos GGUF.
-- Pool de memoria recomendado: 192 GB combinados de VRAM y RAM para el modelo completo en memoria; con aproximadamente 176 GB combinados todos los expertos residen en memoria, y por debajo de esa cifra el resto se lee del SSD.
-- GPU: NVIDIA desde Tesla V100 en adelante (CUDA, Linux y Windows) y AMD vía HIP (incluidos Strix y Gorgon Halo). Sin soporte para Mac por el momento.
-- No cabe en GPUs de consumo convencionales por sí solo; requiere el esquema de offload a RAM y SSD de Project Maya.
-- Despliegue: Project Maya v1.1.58 o posterior (script `maya.sh --setup --model glm-5.3-maya-xs` o `START-MAYA.bat` en Windows), que compila el motor para las GPU del sistema y expone dashboard y API compatible con OpenAI y Anthropic en `http://127.0.0.1:8080`.
+- VRAM/RAM: el modelo completo necesita un pool de 192 GB combinados (VRAM + RAM) para tener todos los expertos en memoria; a partir de unos 176 GB combinados todos los expertos caben en memoria, y con menos el resto se lee desde el SSD.
+- GPU recomendadas: NVIDIA desde Tesla V100 en adelante (CUDA, Linux y Windows) y AMD (HIP, incluidas Strix y Gorgon Halo). No soportado en Mac.
+- GPU de consumo: no cabe en una sola GPU de consumo; requiere configuración multi-GPU o el esquema de offloading de Project Maya con RAM y SSD.
+- Despliegue: Project Maya (v1.1.58 o superior) es el entorno previsto, con dashboard en `http://127.0.0.1:8080` y API compatible con OpenAI y Anthropic (streaming, tool calls, tres niveles de thinking). Los archivos son GGUFs estándar en layout `glm-dsa` de llama.cpp.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tamaño de archivo | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Tamaño del archivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Maya-GGUF (Maya-XS) | ~744B totales, ~40B activos | Hasta 1M | 170,0 GB | glm-5.3 | Cuantización comunitaria con motor de offload propio |
-| GLM-5.3 (original, zai-org) | ~744B totales, ~40B activos | Hasta 1M | No disponible | glm-5.3 | Pesos de referencia de Z.ai |
-| unsloth UD-IQ1_S de GLM-5.3 | ~744B totales, ~40B activos | Hasta 1M | 216,7 GB | glm-5.3 | Alternativa de cuantización; misma KL (0,506) |
+| GLM-5.3-Maya-XS (esta ficha) | 744B totales / ~40B activos | 1M | 170,0 GB | glm-5.3 | GGUF en HF |
+| unsloth UD-IQ1_S de GLM-5.3 | 744B totales / ~40B activos | 1M | 216,7 GB | glm-5.3 | GGUF en HF |
+| zai-org/GLM-5.3 (original) | 744B totales / ~40B activos | 1M | no disponible | glm-5.3 | Pesos originales en HF |
 
-No se dispone de datos de rendimiento en benchmarks para comparar cualitativamente con otros modelos de la misma categoría: no disponible.
+No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo texto: no hay torre de visión ni capacidades multimodales.
-- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado ni garantizado.
-- La cuantización IQ1_S/IQ2_XXS introduce degradación medible: 81,8% de coincidencia en el token top y KL media de 0,506 respecto al original.
-- Riesgo de alucinación inherente al modelo base; no se documentan mitigaciones específicas.
-- Sesgos conocidos del modelo base: no disponibles en la información proporcionada.
-- Licencia `glm-5.3` propia de Z.ai: es necesario revisar sus términos para uso comercial antes de desplegar en producción.
-- Requiere Project Maya v1.1.58 o posterior; no funciona con llama.cpp estándar sin ese motor o sin el soporte del layout `glm-dsa`.
-- Sin soporte para macOS en la versión documentada.
-- El rendimiento depende críticamente del ancho de banda de RAM y SSD cuando el modelo excede el pool de memoria disponible.
-- Repositorio con 0 descargas y 2 likes en el momento de la consulta: ecosistema de validación muy limitado.
+- La cuantización extrema (IQ1_S/IQ2_XXS en expertos) introduce degradación: solo el 81,8 % de los tokens top coinciden con el original y la divergencia KL media es de 0,506, lo que puede afectar a tareas sensibles a la precisión.
+- Solo soporta inglés y chino; no hay soporte multilingüe adicional declarado.
+- Sin capacidades de visión.
+- El rendimiento depende críticamente del esquema de offloading: con menos de ~176 GB de memoria combinada, parte del modelo se lee desde SSD, lo que degrada la latencia.
+- No funciona en Mac según la documentación de Project Maya.
+- La licencia glm-5.3 es de tipo "other"; es necesario revisar los términos del modelo base de Z.ai antes de uso comercial.
+- Riesgo de alucinación y sesgos inherentes al modelo base: no se documentan evaluaciones específicas de sesgo en la información disponible.
+- El dato de parámetros totales del repo (6144) no coincide con el tamaño real del modelo (744B); conviene tratarlo como metadato no fiable.
 
 ## Enlaces
 

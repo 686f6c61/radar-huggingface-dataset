@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "ayousanz/tiny-voca-ja-tsukuyomi-chan",
+  "slug": "ayousanz-tiny-voca-ja-tsukuyomi-chan",
+  "author": "ayousanz",
+  "url": "https://huggingface.co/ayousanz/tiny-voca-ja-tsukuyomi-chan",
+  "created_at": "2026-11-19T01:18:23.000Z",
+  "updated_at": "2026-11-19T01:18:28.000Z",
+  "license": "tsukuyomi-chan-corpus",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "tiny-voca",
+    "tsukuyomi-chan",
+    "cpu",
+    "japanese",
+    "text-to-speech",
+    "ja",
+    "base_model:n4ze3m/tiny-voca",
+    "base_model:finetune:n4ze3m/tiny-voca",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76793689,
+  "storage_human": "77 MB",
+  "context_length": null,
+  "base_model": "n4ze3m/tiny-voca",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lewis Smith, P.Eng - Mechanical Engineer at Fluor | LinkedIn",
+      "url": "https://ca.linkedin.com/in/lewis-h-smith",
+      "snippet": "My current focus is the engineering design, procurement and construction management of mineral processing facilities. I am excited …"
+    }
+  ]
+}

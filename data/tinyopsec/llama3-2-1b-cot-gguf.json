@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Welkom - Make it Meme",
-      "url": "https://makeitmeme.com/nl/",
-      "snippet": "Make it Meme is het gratis multiplayer spel over het maken en beoordelen van memes. Speel het nu met je vrienden!"
-    },
-    {
-      "title": "Bienvenido - Make it Meme",
-      "url": "https://makeitmeme.com/es/",
-      "snippet": "Make it Meme es el juego multijugador gratuito sobre crear y calificar memes. ¡Juega ahora con tus amigos!"
-    },
-    {
-      "title": "Make it Meme - Das Online Meme Party Game",
-      "url": "https://makeitmeme.com/de/",
-      "snippet": "Make it Meme - das ultimative Party-Spiel für Meme-Liebhaber. Erschafft zusammen die witzigsten Memes und kürt den Meme-Lord …"
-    },
-    {
-      "title": "Benvenuto - Make it Meme",
-      "url": "https://makeitmeme.com/it/",
-      "snippet": "Make it Meme è il gioco multiplayer gratuito per creare e valutare meme. Gioca ora con i tuoi amici!"
-    },
-    {
-      "title": "Hoş geldin - Make it Meme",
-      "url": "https://makeitmeme.com/tr/",
-      "snippet": "Make it Meme, meme oluşturma ve değerlendirme üzerine ücretsiz çok oyunculu bir oyundur. Hemen arkadaşlarınla oyna!"
-    }
-  ]
+  "sources": []
 }

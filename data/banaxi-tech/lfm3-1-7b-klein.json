@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 193647351247,
-  "storage_human": "193.6 GB",
+  "storage_bytes": 176359035978,
+  "storage_human": "176.4 GB",
   "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [

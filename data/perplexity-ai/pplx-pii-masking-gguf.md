@@ -2,113 +2,95 @@
 
 ## Resumen
 
-pplx-pii-masking-GGUF es el empaquetado en formato GGUF del modelo perplexity-ai/pplx-pii-masking, desarrollado por Perplexity AI para la deteccion y el enmascarado de informacion personal identificable (PII) en datos conversacionales. No es un modelo generativo: se trata de un encoder Qwen3 bidireccional de aproximadamente 596 millones de parametros que funciona como clasificador de tokens (pipeline token-classification).
+PII-Tracer es un detector de informacion personal identificable (PII) disenado para datos conversacionales, desarrollado por Perplexity AI. Se presenta como el detector introducido en el paper PII-TRACE (arXiv:2609.22200), un benchmark para deteccion de PII sensible al contexto en conversaciones multi-turno con LLM. El modelo resuelve el problema de identificar y enmascarar datos personales en texto conversacional, una tarea critica para pipelines de privacidad, cumplimiento normativo y anonimizacion previa al envio de datos a servicios externos.
 
-El modelo reutiliza como backbone perplexity-ai/pplx-embed-v1-0.6b y le anade dos cabezas: una cabeza de clasificacion de tokens (1024 → 37) que produce etiquetas BIOES sobre nueve categorias de PII, decodificadas con un decodificador de Viterbi restringido, y una cabeza de sensibilidad (1024 → 1) que clasifica la conversacion completa a partir de los estados ocultos promediados (mean-pooling). La ventana de entrada esta limitada a entre 1 y 4096 tokens.
+Tecnicamente, el modelo se construye sobre un encoder Qwen3 bidireccional de aproximadamente 600 millones de parametros (596.049.920 exactos), usando el backbone de embeddings `perplexity-ai/pplx-embed-v1-0.6b`. Sobre ese backbone se anaden dos cabeceras: una de clasificacion de tokens (1024 a 37, con etiquetas BIOES sobre 9 categorias de PII) decodificada mediante Viterbi restringido, y otra de sensibilidad a nivel de conversacion (1024 a 1) que clasifica el grado de sensibilidad del texto completo.
 
-Su relevancia practica es que permite ejecutar la deteccion de PII en local con llama.cpp: el backbone se distribuye en f16 GGUF y las cabezas en fp32 dentro de `heads.safetensors`, junto con un cliente de Python de ejemplo que aplica esas cabezas sobre los estados ocultos por token que devuelve `llama-server`. Esto lo hace util para anonimizar datos antes de almacenarlos o antes de enviarlos a servicios de terceros, sin depender de una API externa.
+Esta publicacion concreta es el empaquetado GGUF del modelo base `perplexity-ai/PII-Tracer`, orientado a inferencia con llama.cpp. El backbone se distribuye en f16 GGUF mientras las cabeceras permanecen en fp32 en `heads.safetensors`, y un cliente Python de ejemplo aplica las cabeceras sobre los hidden states por token servidos por `llama-server`. Es relevante porque ofrece una via de despliegue local y ligera (repo de 1,2 GB) para una tarea de privacidad que normalmente requiere modelos mayores o servicios en la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder Qwen3 bidireccional (`qwen3.attention.causal = false`), backbone de `perplexity-ai/pplx-embed-v1-0.6b` |
-| Parametros totales | 596.049.920 (~600 M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 4096 tokens como maximo; minimo de 1 token |
-| Tipos de cuantizacion | Backbone en f16 (GGUF); cabezas en fp32 (`heads.safetensors`). El autor no publica otras cuantizaciones |
-| Idiomas soportados | `en` y `multilingual` (la lista concreta de idiomas no esta disponible) |
+| Arquitectura | Encoder Qwen3 bidireccional (attention causal desactivada) con dos cabeceras: clasificacion de tokens (1024 a 37) y sensibilidad (1024 a 1) |
+| Parametros totales | 596.049.920 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | Backbone en f16 GGUF; cabeceras en fp32 (safetensors) |
+| Idiomas soportados | en, multilingual |
 | Licencia | MIT |
-| Formato de pesos | GGUF (backbone) + safetensors (cabezas) |
-| Pipeline | token-classification (tambien etiquetado como `feature-extraction`) |
-| Cabezas | Clasificacion de tokens (1024 → 37, BIOES) y sensibilidad (1024 → 1) |
-| Categorias de PII | `private_person`, `account_number`, `private_url`, `private_date`, `private_address`, `private_email`, `private_phone`, `other_pii`, `secret` |
-| Tamano del repositorio | 1,2 GB |
+| Formato de pesos | GGUF (backbone) + safetensors (cabeceras) |
+| Pipeline | token-classification |
 | Libreria | llama.cpp |
-| Descargas / likes | 319 descargas, 1 like |
-| Fecha de creacion / actualizacion | 16 de julio de 2026 / 13 de septiembre de 2026 |
+| Categorias de PII | 9: private_person, account_number, private_url, private_date, private_address, private_email, private_phone, other_pii, secret |
+| Etiquetas BIOES | 37 |
+| Tamano del repo | 1,2 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder Qwen3 configurado con atencion bidireccional (el GGUF almacena explicitamente `qwen3.attention.causal = false`), lo que implica que cada token atiende a todo el contexto y no solo a los tokens precedentes. Sobre el backbone de `pplx-embed-v1-0.6b` se montan dos cabezas independientes: una cabeza de clasificacion de tokens que proyecta los estados ocultos de 1024 dimensiones a 37 logits (las etiquetas BIOES de 9 categorias de PII, mas la clase exterior) y una cabeza de sensibilidad que proyecta el mean-pooling de los estados ocultos a un unico logit, pasado por una sigmoide para obtener la probabilidad de sensibilidad de la conversacion.
+El modelo emplea un backbone Qwen3 configurado con atencion bidireccional (`qwen3.attention.causal = false`), lo que permite que cada token atienda tanto al contexto anterior como al posterior. Sobre los hidden states de 1024 dimensiones por token se aplican dos cabeceras independientes: una de clasificacion de tokens que proyecta a 37 logits correspondientes a etiquetas BIOES sobre 9 categorias de PII, y una de sensibilidad que aplica mean-pooling sobre los hidden states y proyecta a un unico logit, transformado con sigmoid para obtener una puntuacion de sensibilidad a nivel de conversacion.
 
-La decodificacion de spans no es un simple argmax: el cliente de Python incluido aplica un decodificador de Viterbi restringido sobre las 37 etiquetas BIOES, usando los sesgos y la lista de etiquetas definidos en `pii_head_config.json`, para garantizar transiciones validas entre etiquetas. El backbone se sirve en f16 mediante `llama-server` con `--pooling none`, de modo que el servidor devuelve un estado oculto sin normalizar por token a traves del endpoint `/embeddings`; el cliente calcula entonces `token_logits = h @ W_cls.T + b_cls` y, para la sensibilidad, `sigmoid(mean_pool(h) @ W_sen.T + b_sen)`.
-
-En la informacion disponible no se detallan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO (en cualquier caso, poco habituales en un modelo de clasificacion de tokens). Tampoco se describen innovaciones adicionales como decodificacion especulativa o atencion lineal; la peculiaridad tecnica destacable es precisamente el uso de atencion bidireccional dentro del ecosistema llama.cpp y la separacion entre backbone cuantizado y cabezas en precision completa.
+La decodificacion de spans de PII no se hace de forma greedy sino mediante un decodificador Viterbi restringido, que impone las transiciones validas del esquema BIOES y utiliza sesgos configurables leidos de `pii_head_config.json`. En la inferencia con llama.cpp, el backbone se sirve con `--pooling none` para obtener un hidden state no normalizado por token a traves del endpoint `/embeddings`; las cabeceras se aplican del lado del cliente. El modelo deriva del checkpoint `perplexity-ai/PII-Tracer` y se asocia al benchmark PII-TRACE; no se detallan en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Clasificacion de tokens para deteccion de PII: 37 etiquetas BIOES sobre 9 categorias (`private_person`, `account_number`, `private_url`, `private_date`, `private_address`, `private_email`, `private_phone`, `other_pii`, `secret`).
-- Decodificacion de spans coherente mediante Viterbi restringido, con sesgos configurables en `pii_head_config.json`.
-- Clasificacion de sensibilidad a nivel de conversacion completa (1024 → 1, activacion sigmoide sobre el mean-pooling de los estados ocultos).
-- Enmascarado de texto: el cliente de ejemplo devuelve directamente el texto con los spans de PII enmascarados, ademas de la sensibilidad detectada.
-- Extraccion de caracteristicas: el repositorio esta etiquetado como `feature-extraction` y expone estados ocultos por token (1024 dimensiones, sin normalizar) a traves de `/embeddings`.
-- Capacidades multilingues: declaradas como `en` y `multilingual`; el rendimiento por idioma no esta documentado.
-- Procesamiento de conversaciones: el modelo esta disenado explicitamente para datos conversacionales, no solo para texto plano.
-- Sin soporte de generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling ni razonamiento multi-paso: es un modelo discriminativo de una sola pasada.
+- Deteccion y enmascaramiento de PII en texto conversacional, con spans a nivel de caracter.
+- Clasificacion de tokens con esquema BIOES sobre 9 categorias: personas privadas, numeros de cuenta, URLs privadas, fechas privadas, direcciones privadas, emails privados, telefonos privados, otra PII y secretos.
+- Clasificacion de sensibilidad a nivel de conversacion (puntuacion sigmoide sobre hidden states con mean-pooling).
+- Decodificacion estructurada mediante Viterbi restringido, que garantiza transiciones BIOES validas.
+- Soporte multilingue declarado (etiquetas `en` y `multilingual`), con ingles como idioma principal.
+- Integracion con llama.cpp mediante `llama-server` y el endpoint `/embeddings`.
+- Capacidad de feature extraction (hidden states por token de 1024 dimensiones).
+- No se documentan capacidades de generacion de texto, tool calling, agentes, vision ni audio: es un modelo discriminativo de clasificacion, no generativo.
 
 ## Casos de uso
 
-- Anonimizacion de logs y transcripciones de conversaciones: antes de persistir historiales de chat en una base de datos o en un sistema de observabilidad, se pasa el texto por el cliente, se detectan los spans de las 9 categorias y se sustituyen por marcadores, reduciendo la exposicion de datos personales en reposo.
-- Pasarela de proteccion de PII delante de APIs de terceros: integrado en un proxy de LLM, el modelo enmascara correos, telefonos, direcciones y numeros de cuenta antes de reenviar el prompt a un proveedor externo, con la ventana de 4096 tokens por peticion.
-- Cumplimiento del RGPD en pipelines de datos: procesamiento por lotes de tickets, correos o formularios para localizar y eliminar PII antes de conservar los registros, dejando trazabilidad de las categorias detectadas.
-- Curacion de datasets de entrenamiento: filtrado y limpieza de corpus conversacionales para evitar que datos personales acaben en un futuro conjunto de entrenamiento, con chunking previo de documentos largos en fragmentos de hasta 4096 tokens.
-- Triaje por sensibilidad: la cabeza de sensibilidad permite enrutar automaticamente cada conversacion a revision humana, a un flujo automatizado o a un nivel de auditoria distinto, en funcion de la probabilidad calculada con la sigmoide.
-- Deteccion de secretos en codigo y logs: la categoria `secret` permite localizar claves de API, tokens y credenciales en trazas de aplicaciones o volcados de texto antes de compartirlos con equipos externos.
-- Atencion al cliente: los agentes pueden resumir o analizar tickets con datos enmascarados sin perder la estructura del texto, ya que el cliente devuelve tanto los spans como el texto enmascarado.
-- Redaccion de documentos de negocio: facturas, contratos y correos con importes, fechas y direcciones se pueden redactar por fragmentos para generar versiones compartibles con terceros.
-- Auditoria e investigacion: medicion de la tasa de PII presente en un corpus propio y de la sensibilidad media de las conversaciones, como metrica de calidad de datos antes de un proyecto de analitica.
+- Anonimizacion previa a registros y analitica: el modelo detecta emails, telefonos, direcciones y numeros de cuenta en transcripciones de conversaciones para enmascararlos antes de almacenar logs o enviarlos a sistemas de terceros, usando la puntuacion de sensibilidad para priorizar revisiones.
+- Cumplimiento de privacidad en pipelines de datos: integrado como etapa de preprocesado, permite marcar spans de PII en datasets conversacionales antes de entrenar o compartir datos, con la ventaja de correr localmente en llama.cpp sin enviar texto sensible a APIs externas.
+- Redaccion de PII en atencion al cliente: en transcripciones de chats o llamadas, el modelo identifica datos personales del usuario para generar versiones redactadas que puedan revisarse por equipos de calidad sin exponer informacion sensible.
+- Filtrado de secretos en entradas de usuario: la categoria `secret` permite detectar claves, tokens o credenciales embebidas en mensajes antes de que lleguen a un LLM de produccion, reduciendo el riesgo de fuga en logs de prompts.
+- Moderacion y triaje de contenido sensible: la cabecera de sensibilidad clasifica conversaciones completas, lo que permite enrutar hilos de alta sensibilidad a revision humana o a politicas de retencion mas estrictas.
+- Enmascaramiento en herramientas de soporte interno: como servicio local via `llama-server`, se puede invocar desde scripts de exportacion de tickets para redactar PII antes de compartir incidencias con equipos externos o proveedores.
+- Preprocesado para conjuntos de evaluacion de privacidad: util para construir benchmarks o auditar sistemas existentes midiendo cuanta PII escapa en sus salidas, dado que expone tanto spans como puntuacion de sensibilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de precision, recall, F1 ni comparaciones cuantitativas con otros modelos, y tampoco se documentan latencias o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: en f16, 596 M de parametros ocupan aproximadamente 1,19 GB (596.049.920 × 2 bytes). Las cabezas en fp32 son practicamente despreciables (1024 × 37 y 1024 × 1, mas sesgos).
-- Consumo adicional: hay que sumar el espacio de estados ocultos y el cache asociado al procesar la ventana completa de 4096 tokens en un unico micro-batch. Las cifras exactas de VRAM total y de latencia no estan disponibles.
-- GPU recomendadas: no documentadas por el autor. Dado el tamano del modelo, cabe en cualquier GPU consumer con al menos 4 GB de VRAM; tambien es viable ejecutarlo solo en CPU.
-- Inferencia en CPU: posible mediante llama.cpp, que es la libreria objetivo del repositorio.
-- Opciones de despliegue: `llama-server` de llama.cpp, que es el unico backend documentado. Es obligatorio lanzarlo con `--embeddings --pooling none -c 4096 -b 4096 -ub 4096`. No se documenta soporte para vLLM, TGI, Ollama ni otros servidores.
-- Restriccion de atencion: al ser bidireccional, el modelo necesita la entrada completa en un unico micro-batch, por lo que los parametros `-b` y `-ub` deben mantenerse en 4096 para la ventana soportada.
-- Compatibilidad de endpoints: `/v1/embeddings` no admite `--pooling none`; hay que usar el endpoint nativo `/embeddings` para obtener los estados ocultos por token.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: el backbone f16 GGUF de aproximadamente 600 millones de parametros ocupa del orden de 1,2 GB en pesos; con overhead de contexto de 4096 tokens y buffers de llama.cpp, es razonable reservar entre 2 y 4 GB de VRAM o memoria unificada (estimacion, no dato publicado).
+- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM deberia poder alojar el backbone en f16; para lotes grandes o despliegues concurrentes se recomiendan GPU de datacenter como A100 o H100.
+- Cabe en GPU consumer: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o equivalentes, asi como en equipos Apple Silicon con memoria unificada.
+- Opciones de despliegue: llama.cpp mediante `llama-server` con `--embeddings --pooling none -c 4096 -b 4096 -ub 4096`; las cabeceras se aplican con el cliente Python de ejemplo (torch + safetensors). No se documenta soporte para vLLM, TGI u Ollama en la informacion disponible.
+- Restriccion operativa: la atencion bidireccional exige procesar la entrada completa en un unico micro-batch, por lo que `-b` y `-ub` deben mantenerse en 4096 para la ventana soportada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Formatos |
-|---|---|---|---|---|---|
-| perplexity-ai/pplx-pii-masking-GGUF | 596.049.920 (~600 M) | 4096 tokens | Clasificacion de tokens (PII) + sensibilidad | MIT | GGUF (f16) + safetensors (fp32) |
-| perplexity-ai/pplx-pii-masking (modelo base) | No disponible en la informacion consultada | No disponible | Clasificacion de tokens (PII) + sensibilidad | MIT | No disponible |
-| Alternativas de deteccion de PII (por ejemplo, aproximaciones basadas en Presidio o en modelos NER genericos) | No disponible | No disponible | Deteccion de PII por reglas o NER | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|---|
+| PII-Tracer (este modelo) | ~596 M | 4096 | Deteccion de PII + sensibilidad | MIT | GGUF + safetensors | Hugging Face, llama.cpp |
+| Modelos NER genericos tipo BERT-base | ~110 M | 512 | NER generico | variable | safetensors | Hugging Face |
+| LLM generativos con prompting para PII | 7 B+ | 8 K+ | Deteccion via prompt | variable | safetensors/GGUF | Hugging Face |
 
-No se dispone de datos comparativos de rendimiento (F1, precision, recall) entre este modelo y otras alternativas de la misma categoria en la informacion proporcionada. La unica comparacion posible con los datos disponibles es con el modelo base, del que este repositorio es un empaquetado GGUF: comparten backbone y cabezas, y difieren en el formato de pesos y en el backend de inferencia.
+La comparacion con alternativas concretas no esta disponible en la informacion proporcionada; la tabla anterior solo situa el modelo por categoria y tamano, sin datos de rendimiento comparables.
 
 ## Limitaciones y advertencias
 
-- Longitud de entrada acotada: los textos deben contener entre 1 y 4096 tokens. Los documentos mas largos hay que trocearlos antes de llamar al cliente de ejemplo, que envia el texto completo al servidor mientras su tokenizador local de offsets trunca a 4096 tokens.
-- Atencion bidireccional: obliga a procesar toda la entrada en un unico micro-batch, por lo que hay que mantener `-b` y `-ub` en 4096 para la ventana soportada.
-- Endpoint obligatorio: `/v1/embeddings` no funciona con `--pooling none`; hay que usar `/embeddings`. Esto rompe la compatibilidad con clientes que esperan la API estilo OpenAI.
-- Falsos positivos y falsos negativos: el autor advierte de que la calidad de deteccion depende de la precision de conversion y del backend de inferencia, y de que es necesario evaluar los umbrales de sensibilidad sobre los datos objetivo.
-- Dependencia de un cliente propio: no es un modelo autocontenido en llama.cpp; requiere aplicar externamente las cabezas en fp32, el decodificador de Viterbi y el fichero de configuracion de etiquetas.
-- Riesgo de alucinacion: no aplica en el sentido generativo (no produce texto libre), pero si existe riesgo de spans mal delimitados o categorias incorrectas.
-- Sesgos conocidos: no se documenta ninguna evaluacion de sesgo en la informacion disponible.
-- Cobertura idiomatica: se declaran `en` y `multilingual`, pero no hay lista de idiomas ni evaluacion por idioma; el rendimiento fuera del ingles es desconocido.
-- Ambito limitado a 9 categorias: cualquier tipo de dato personal que no encaje en ellas (por ejemplo, identificadores internos especificos de una organizacion) puede quedar sin detectar o clasificarse como `other_pii`.
-- Licencia: MIT, igual que el modelo base, por lo que el uso comercial esta permitido. Debe conservarse el aviso de licencia y no se ofrece garantia alguna por parte del autor.
-- Madurez baja: 319 descargas y 1 like en el momento de la consulta, sin benchmarks publicados ni adopcion documentada en produccion.
-- Revisar siempre el resultado: para datos regulados conviene combinar el enmascarado automatico con validacion humana o con comprobaciones adicionales antes de dar por anonimizado un conjunto de datos.
+- La entrada debe contener entre 1 y 4096 tokens; documentos mas largos deben trocearse antes de llamar al cliente, ya que el tokenizer local de offsets trunca a 4096 tokens mientras el texto completo se envia al servidor.
+- La atencion bidireccional requiere que toda la entrada quepa en un unico micro-batch; hay que mantener `-b` y `-ub` en 4096 para la ventana soportada.
+- El endpoint `/v1/embeddings` no soporta `--pooling none`; debe usarse `/embeddings`.
+- La precision de conversion y el backend de inferencia pueden alterar las salidas numericas; es necesario evaluar la calidad de deteccion y los umbrales de sensibilidad sobre los datos objetivo.
+- Se pueden producir falsos positivos y PII no detectada; no debe usarse como unico mecanismo de cumplimiento de privacidad en produccion.
+- El modelo es discriminativo (clasificacion de tokens y sensibilidad), no generativo: no genera texto ni soporta tool calling o agentes.
+- Idiomas: se declara soporte `en` y `multilingual`, pero el rendimiento fuera del ingles no esta cuantificado en la informacion disponible.
+- Licencia MIT, compatible con uso comercial; conviene revisar el aviso de licencia del modelo base `perplexity-ai/PII-Tracer` por si anade condiciones adicionales.
+- No se documentan sesgos especificos ni datos de entrenamiento, lo que limita la evaluacion de sesgos por categoria demografica o idioma.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/perplexity-ai/pplx-pii-masking-GGUF
-- Modelo base: https://huggingface.co/perplexity-ai/pplx-pii-masking
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-pii-masking-GGUF
+- Modelo base: https://huggingface.co/perplexity-ai/PII-Tracer
 - Backbone de embeddings: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
-- Ficheros incluidos en el repositorio: `pplx-pii-masking-backbone-f16.gguf`, `heads.safetensors`, `pii_head_config.json`, `example_client.py`, `tokenizer.json`, `tokenizer_config.json` y `LICENSE`
-- Resultados de la busqueda web: los enlaces recuperados corresponden a paginas generales sobre Perplexity y no aportan informacion tecnica sobre este modelo. Se listan a continuacion unicamente por trazabilidad:
-  - https://www.perplexity.ai/
-  - https://www.social.perplexity.ai/
-  - https://www.lesnumeriques.com/science-espace/qu-est-ce-que-perplexity-ai-et-comment-l-utiliser-a230994.html
-  - https://www.perplexity.ai/fr/hub/getting-started
-  - https://fr.wikipedia.org/wiki/Perplexity_AI
-- No se han encontrado en la busqueda web papers, blogs tecnicos ni repositorios adicionales especificos de este modelo.
+- Paper PII-TRACE: https://arxiv.org/abs/2609.22200

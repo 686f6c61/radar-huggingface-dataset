@@ -47,7 +47,7 @@
   ],
   "likes": 1860,
   "downloads_30d": 966265,
-  "trending_score": 14,
+  "trending_score": 12,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
   "storage_bytes": 5033557096,
@@ -66,31 +66,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube Brasil",
-      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
-      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
-    },
-    {
-      "title": "MiniCPM5 - a openbmb Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/openbmb/minicpm5",
-      "snippet": "A SOTA 1B on-device LLM, small yet powerful."
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed/homepage",
-      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
-    },
-    {
-      "title": "openbmb/MiniCPM5-1B · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
-      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
-    },
-    {
-      "title": "Essential '90s R&B",
-      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
-      "snippet": "Playlist • YouTube Music"
-    }
-  ]
+  "sources": []
 }

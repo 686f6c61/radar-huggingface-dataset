@@ -2,116 +2,89 @@
 
 ## Resumen
 
-`pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF` es una compilacion en formato GGUF Q4_K_M del codificador de texto «abliterado» (sin mecanismos de rechazo) de `Qwen/Qwen-Image-2.1`. No se trata de un modelo conversacional de proposito general, sino del componente de codificacion de texto —derivado de la familia Qwen3-VL de 8B— que alimenta el pipeline de generacion y edicion de imagenes de Qwen-Image-2.1. El autor, pottokao, es un desarrollador independiente de la comunidad y no tiene vinculacion con Alibaba ni con el equipo de Qwen.
+Qwen-Image-2.1 Text Encoder Heretic GGUF es una cuantización comunitaria del codificador de texto asociado al pipeline de generación de imágenes Qwen-Image-2.1. El modelo original es un Qwen3-VL de 8B parámetros (8.190.735.360 parámetros según los safetensors del repo base) que actúa como text encoder dentro del flujo de difusión: recibe el prompt del usuario y produce las representaciones condicionantes que consume el modelo DiT de Qwen-Image-2.1. El autor, pottokao, publica tres variantes en el mismo repositorio: GGUF Q4_K_M con su proyector multimodal (`mmproj`) en F16, FP8 en safetensors y BF16 en safetensors.
 
-El modelo cuenta con 8.190.735.360 parametros totales (arquitectura densa, no MoE) y se distribuye cuantizado a 4.90 bits por peso, pasando de los 15.623 MiB del GGUF bf16 de origen a 4.789 MiB. El repositorio incluye dos archivos: el torre de lenguaje cuantizado (399 tensores, 4.68 GB) y un proyector multimodal `mmproj` en f16 con el torre de vision sin cuantizar (352 tensores, 1.08 GB), necesario solo si se trabaja con Qwen-Image-2.1 Edit (entrada condicionada por imagen).
+La variante "Heretic" indica que el modelo ha sido sometido a un proceso de abliteration, es decir, la eliminación de la dirección de rechazo en el espacio de activaciones para reducir las negativas del modelo a ciertos contenidos. En este contexto no se aplica a un chatbot, sino a un codificador de texto para generación de imágenes, donde el efecto práctico es una menor resistencia del encoder a prompts que el modelo base podría degradar o neutralizar. El repositorio acumula más de 63.000 descargas y 375 likes, lo que refleja un interés considerable en la comunidad de ComfyUI.
 
-Su relevancia es doble. Por un lado, ofrece una ruta real de ejecucion en hardware no NVIDIA —Mac Apple Silicon y el ecosistema llama.cpp—, donde las compilaciones NVFP4 y W4A8 de la misma familia dependen de kernels CUDA y degradan a dequantize-then-compute fuera de NVIDIA. Por otro, incorpora una ablacion direccional que reduce los rechazos de 100/100 a 5/100 con una divergencia KL de 0.0220, lo que lo convierte en una pieza interesante para investigacion sobre alineacion, seguridad y sesgos, ademas de para flujos de generacion de imagen sin filtros de contenido. La licencia Qwen Research restringe el uso a investigacion y evaluacion, quedando prohibido el uso comercial sin licencia adicional.
+La relevancia actual del modelo es de infraestructura: permite ejecutar el pipeline completo de Qwen-Image-2.1 en formato GGUF, incluyendo el text encoder, el DiT y el reescritor de prompts, con requisitos de VRAM muy inferiores a los de las variantes en BF16. El autor documenta además un parche para ComfyUI-GGUF que resuelve el error de carga de la torre de visión de Qwen3-VL, un problema que afectaba a los ficheros GGUF de este encoder.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal basado en Qwen3-VL (`Qwen3VLForConditionalGeneration`, registrado en `llama.cpp` via `conversion/qwen3vl.py`) |
-| Parametros totales | 8.190.735.360 (8,19 B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Q4_K_M (4.90 bpw) para el torre de lenguaje; f16 (sin cuantizar) para el torre de vision (`mmproj`) |
-| Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | `qwen-research` (Qwen Research License); solo investigacion y evaluacion, uso comercial sujeto a licencia aparte de Qwen |
-| Formato de pesos | GGUF (`llama.cpp`); en la familia tambien existen bf16 safetensors, NVFP4 y W4A8 |
-| Repo y tamano | 6.2 GB en total; `qwen3vl_8b_heretic-Q4_K_M.gguf` 4.68 GB + `mmproj-qwen3vl_8b_heretic-f16.gguf` 1.08 GB |
-| Tensores | 399 (lenguaje) + 352 (vision) = 750 del modelo fuente + 1 parametro del proyector |
-| Uso previsto | Codificador de texto para Qwen-Image-2.1 y Qwen-Image-2.1 Edit |
-| Descargas / likes | 0 descargas, 1 like (en el momento de la consulta) |
+| Arquitectura | Transformer tipo Qwen3-VL (codificador de texto con torre de visión), base del pipeline Qwen-Image-2.1 |
+| Parametros totales | 8.190.735.360 (8,19 mil millones) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q4_K_M (con mmproj F16), FP8 safetensors, BF16 safetensors |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF, safetensors (FP8 y BF16) |
 
 ## Arquitectura y entrenamiento
 
-La base es el codificador de texto de `Qwen/Qwen-Image-2.1`, un transformer denso multimodal de la familia Qwen3-VL con 8,19 B de parametros. Este repositorio no entrena ningun modelo: parte del checkpoint bf16 ya modificado (`pottokao/Qwen-Image-2.1-Text-Encoder-Heretic`) y lo convierte a GGUF con `llama.cpp`, para despues cuantizarlo con `llama-quantize` a Q4_K_M, el esquema K-quant de precision mixta que mantiene automaticamente ciertos tensores en mayor profundidad de bits. Se desconocen los datos de entrenamiento originales (numero de tokens, composicion del dataset, si hubo RLHF o DPO), ya que la informacion disponible no los detalla.
+El modelo es un codificador de texto basado en la familia Qwen3-VL, con aproximadamente 8,19 mil millones de parámetros. Incluye una torre de visión, tal como evidencia la necesidad del fichero `mmproj` (proyector multimodal) para su carga correcta en ComfyUI-GGUF: sin ese proyector, el nodo falla al procesar la entrada con el error `got input of size [1, 512, 12288]`. Dentro de Qwen-Image-2.1, este encoder transforma el prompt textual en embeddings condicionantes que alimentan al modelo DiT de difusión; no genera imágenes por sí mismo.
 
-La innovacion tecnica del linaje es la ablacion direccional aplicada con [Heretic](https://github.com/p-e-w/heretic) sobre las proyecciones `o_proj` y `down_proj` (200 ensayos, 60 de arranque, punto de rodilla de la frontera de Pareto). El resultado medido es una caida de los rechazos de 100/100 en el codificador original a 5/100, con una divergencia KL de 0.0220 respecto al modelo de referencia sobre `mlabonne/harmless_alpaca`; la verificacion sobre el fuente bf16 dio 0/20 rechazos y 4/4 respuestas correctas en preguntas benignas.
-
-El reparto de precision del archivo es explicito: 252 tensores de FFN y proyecciones de atencion en 4 bits (79,2 % de los parametros), `embed_tokens` y `lm_head` en INT8 per-channel con rotacion convolucional (14,2 %) y el torre de vision —351 tensores— intacto en bf16/f16 (6,6 %), junto con normas y sesgos. El torre de vision se publica aparte como `mmproj` precisamente porque `llama.cpp` separa los modelos multimodales en dos archivos. El autor documenta cinco trampas de conversion que producen archivos «validos en apariencia» pero silenciosamente incorrectos, entre ellas cuantizar por error el torre de vision o perder los metadatos `convrot` al serializar la configuracion por capas.
+El proceso "Heretic" corresponde a una abliteration aplicada sobre el modelo base `pottokao/Qwen-Image-2.1-Text-Encoder-Heretic`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo original; la model card no documenta esos detalles. La innovación técnica destacable del repositorio no está en el entrenamiento sino en el empaquetado: cuantización GGUF Q4_K_M del encoder junto con un `mmproj` en F16, y la publicación de un nodo adicional (`ComfyUI-GGUF-Qwen3VL-TE`) que corrige la carga de la torre de visión y el reconocimiento de la arquitectura del DiT de Qwen-Image-2.1 en ComfyUI-GGUF.
 
 ## Capacidades
 
-- Codificacion de texto para generacion de imagen: produce las representaciones que consume Qwen-Image-2.1 para sintetizar imagenes a partir de un prompt.
-- Edicion de imagen condicionada: con el archivo `mmproj` cargado, procesa entrada multimodal (imagen de referencia mas texto) para el flujo Qwen-Image-2.1 Edit.
-- Generacion de texto conversacional: hereda del backbone Qwen3-VL la capacidad de producir texto, aunque su uso previsto es el de codificador.
-- Comprension de imagenes: el torre de vision en f16 conserva las capacidades visuales del modelo original, si bien no se documentan tareas concretas evaluadas.
-- Ausencia de rechazos: la ablacion direccional reduce drasticamente las negativas a responder, lo que cambia el perfil de comportamiento respecto al modelo original.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking: no documentado.
-- Capacidades multilingues: no disponibles; la model card no lista idiomas.
-- Integracion con `llama.cpp` y ComfyUI-GGUF: se puede cargar con `llama-cli`/`llama-server` o como text encoder en ComfyUI.
+- Codificación de prompts textuales para el pipeline de generación de imágenes Qwen-Image-2.1, alimentando al DiT mediante el nodo `TextEncodeQwenImage21`.
+- Procesamiento multimodal: la presencia de la torre de visión y del proyector `mmproj` indica soporte de entradas visuales en el encoder, aunque la model card no detalla su uso dentro del flujo de generación.
+- Control fino del condicionamiento mediante prompts negativos y configuración de CFG escalonada, documentada por el autor para mejorar la legibilidad del texto renderizado en las imágenes.
+- Integración con ComfyUI a través de `CLIPLoaderGGUF` (GGUF) o `CLIPLoader` estándar (FP8 y BF16), con tipo de modelo `qwen_image`.
+- Compatibilidad con el ecosistema GGUF completo de Qwen-Image-2.1: reescritor de prompts PE-T2I, DiT en Q8_0/Q6_K/Q4_K_M y VAE oficial.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni modo thinking; el modelo es un componente de un pipeline de difusión, no un asistente conversacional.
 
 ## Casos de uso
 
-- Generacion texto-a-imagen en Mac Apple Silicon: el archivo principal de 4.68 GB se carga con `llama-cli -m qwen3vl_8b_heretic-Q4_K_M.gguf -ngl 99` aprovechando el soporte Metal nativo de `llama.cpp`, ruta que las builds NVFP4 y W4A8 no ofrecen por depender de kernels CUDA.
-- Flujos de edicion de imagen en ComfyUI: cargando el GGUF junto con `mmproj-qwen3vl_8b_heretic-f16.gguf` como text encoder dentro de `ComfyUI-GGUF`, se puede condicionar Qwen-Image-2.1 Edit con una imagen de referencia mas un prompt de texto.
-- Prototipado en GPU de gama media: con 5.76 GB combinados de pesos, el conjunto cabe en tarjetas de 8-12 GB de VRAM, lo que permite experimentar con el pipeline completo sin acceso a A100/H100.
-- Investigacion sobre ablacion direccional: replicar la metodologia de Heretic sobre `o_proj` y `down_proj` para estudiar el equilibrio entre supresion de rechazos y degradacion de capacidades, usando la KL de 0.0220 como referencia.
-- Auditoria de seguridad y sesgos: comparar sistematicamente las salidas del modelo abliterado frente al codificador original de Qwen-Image-2.1 en conjuntos como `mlabonne/harmful_behaviors` para cuantificar el efecto de la ablacion en el contenido generado.
-- Redistribucion de estilos visuales sin filtros: estudios academicos sobre generacion de imagenes que requieren prompts que el codificador original rechazaria, siempre dentro del marco de investigacion que impone la licencia.
-- Evaluacion de cuantizacion en pipelines multimodales: medir el impacto de Q4_K_M frente al fuente bf16 de 17 GB en la fidelidad del condicionamiento de imagen, ya que el autor publica ambas versiones y las alternativas NVFP4/W4A8.
-- Benchmarking en hardware no NVIDIA: usar el modelo como caso de prueba del rendimiento de GGUF sobre CPU y Metal en comparacion con las rutas CUDA, dado que el autor documenta explicitamente que fuera de NVIDIA las builds alternativas solo ahorran memoria sin acelerar.
+- Generación de imágenes en ComfyUI con GPU de gama media: la variante Q4_K_M (5,0 GB) más el `mmproj` (1,2 GB) permite cargar el text encoder en GPUs con 8 GB de VRAM, dejando espacio para el DiT cuantizado y el VAE.
+- Pipelines de generación de imágenes completamente en GGUF: combinando este encoder con el DiT Q4_K_M o Q6_K del mismo autor y el reescritor PE-T2I, se puede montar un flujo entero sin pesos en BF16, adecuado para entornos con VRAM limitada.
+- Renderizado de texto legible en imágenes (carteles, etiquetas, pósters): el autor documenta una estrategia de dos `KSamplerAdvanced` encadenados con CFG 1,0 en los primeros 12-17 pasos y CFG 3,0 en el resto, usando el encoder para redibujar el lettering con un prompt negativo específico.
+- Despliegue en macOS o hardware sin CUDA: la variante BF16 en safetensors (17,5 GB) se carga con el `CLIPLoader` estándar sin nodos adicionales, pensada para equipos Apple Silicon con memoria unificada suficiente.
+- Servidores NVIDIA con FP8: la variante FP8 (9,3 GB) evita la instalación del nodo adicional y se integra con el loader nativo de ComfyUI, útil en despliegues donde no se quiere mantener parches de terceros.
+- Investigación sobre abliteration en codificadores de texto para difusión: la variante Heretic permite estudiar cómo afecta la eliminación de la dirección de rechazo a la fidelidad del condicionamiento en prompts sensibles o estilizados.
+- Estilización fotográfica automatizada: junto con el nodo `ComfyUI-QwenImage-PhotoStyles` (17 estilos fotográficos), el encoder procesa prompts cortos reescritos por PE-T2I y los convierte en condicionamientos completos para el DiT.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos cuantitativos facilitados corresponden a la evaluacion de la ablacion:
-
-| Metrica | Qwen-Image-2.1 text encoder (original) | Esta familia (Heretic) |
-|---|---|---|
-| Rechazos (`mlabonne/harmful_behaviors`) | 100/100 | 5/100 |
-| Divergencia KL (`mlabonne/harmless_alpaca`) | 0 (por definicion) | 0.0220 |
-| Rechazos sobre fuente bf16 (verificacion independiente) | no disponible | 0/20 |
-| Preguntas benignas respondidas correctamente (bf16) | no disponible | 4/4 |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Peso en disco/VRAM de los pesos: 4.68 GB el torre de lenguaje (Q4_K_M) mas 1.08 GB el torre de vision (f16), es decir 5.76 GB si se necesita entrada condicionada por imagen.
-- VRAM estimada: en torno a 5-6 GB para uso como codificador de texto y 6-7 GB con el `mmproj` cargado, incluyendo overhead de contexto y cache KV (no se publican cifras oficiales de consumo en ejecucion).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4070 Ti, RTX 4090; tambien A100 o H100 si se integra en infraestructura mayor, aunque el modelo no necesita ese segmento.
-- Cabe en GPU de consumo: si, en tarjetas de 12 GB con holgura; en 8 GB el torre de lenguaje solo entra con margen escaso y la variante con vision es arriesgada.
-- Apple Silicon: soporte Metal real, que es la via recomendada por el autor para hardware no NVIDIA junto con CPU.
-- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-server`), `ComfyUI-GGUF` como text encoder. El soporte en vLLM o TGI para este GGUF concreto no esta documentado.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para el text encoder: 5,0 GB en GGUF Q4_K_M más 1,2 GB del `mmproj` F16 (unos 6,2 GB en total); 9,3 GB en FP8; 17,5 GB en BF16.
+- GPU recomendadas: RTX 4090 o RTX 3090 para FP8 y BF16; GPUs de 8 GB (RTX 3060 Ti, RTX 4060 Ti) para la variante Q4_K_M, siempre que el DiT y el VAE se cuantizen también.
+- Cabe en GPU de consumo: sí, la variante Q4_K_M con `mmproj` es la opción diseñada para ello; la FP8 requiere al menos 12 GB para convivir con el resto del pipeline.
+- Opciones de despliegue: ComfyUI con `CLIPLoaderGGUF` más el nodo `ComfyUI-GGUF-Qwen3VL-TE` para GGUF; `CLIPLoader` estándar para FP8 y BF16; llama.cpp para el reescritor de prompts PE-T2I del mismo ecosistema.
+- Latencia y throughput: no disponibles. El autor solo especifica que el pipeline de difusión debe usar 25 pasos y que más pasos no mejoran la nitidez del texto y queman las luces altas.
 
 ## Comparativa con modelos similares
 
-Comparativa dentro de la propia familia Heretic, que es la referencia mas directa disponible:
-
-| Repo | Formato / cuantizacion | Tamano | Hardware objetivo | Rechazos | KL |
+| Modelo | Parametros | Formato | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este repo | GGUF Q4_K_M | 4.68 GB (+1.08 GB mmproj) | Mac, llama.cpp, CPU | 5/100 | 0.0220 |
-| `Qwen-Image-2.1-Text-Encoder-Heretic` | bf16 safetensors | 17 GB | GPU con VRAM amplia | 5/100 | 0.0220 |
-| `Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4` | NVFP4 (w4) | 5.87 GB | Blackwell, tensor cores FP4 nativos | 5/100 | 0.0220 |
-| `Qwen-Image-2.1-Text-Encoder-Heretic-W4A8` | W4A8 INT8 asimetrico | 5.88 GB | CUDA (formato de Comfy-Org) | 5/100 | 0.0220 |
-| Codificador original `Qwen/Qwen-Image-2.1` | bf16 | 15.26 GB | NVIDIA, CUDA | 100/100 | 0 (referencia) |
+| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF | 8,19 B | GGUF Q4_K_M, FP8, BF16 | no disponible | Apache 2.0 | Objeto de esta ficha; incluye abliteration y `mmproj` |
+| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic | 8,19 B | safetensors | no disponible | Apache 2.0 | Modelo base sin cuantizar del que derivan estas variantes |
+| Qwen3-VL 8B (original) | ~8 B | safetensors | no disponible | no disponible | Arquitectura de referencia; sin abliteration ni adaptación a Qwen-Image |
+| Codificadores T5/CLIP usados en otros pipelines de difusión | variable | safetensors, GGUF | no disponible | variable | Alternativas genéricas de la categoría; no comparables directamente por estar entrenados para otros pipelines |
 
-Frente al codificador original, este modelo intercambia 0.0220 de divergencia KL por una reduccion de rechazos del 95 %. Frente a las otras cuantizaciones de la familia, la diferencia es de portabilidad: NVFP4 y W4A8 exigen kernels CUDA y solo ahorran memoria fuera de NVIDIA, mientras que GGUF obtiene aceleracion real en Metal. No se dispone de comparativas con otros codificadores de texto de pipelines de difusion (por ejemplo T5 o CLIP) en la informacion proporcionada, ya que no serian intercambiables directamente en Qwen-Image-2.1.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no comercial: la Qwen Research License permite unicamente investigacion y evaluacion; cualquier uso comercial requiere licencia adicional de Qwen (`model-business@notice.qwencloud.com`).
-- Modelo derivado no oficial: no esta afiliado ni respaldado por Alibaba o Qwen; el autor lo declara explicitamente.
-- Ablacion deliberada de rechazos: 5/100 rechazos implica que el modelo apenas declina peticiones daninas, con los riesgos legales y eticos que ello conlleva en un pipeline de generacion de imagenes.
-- Divergencia respecto al original: KL de 0.0220 sobre `harmless_alpaca` indica que no es identico al codificador oficial; puede degradar sutilmente la fidelidad del condicionamiento.
-- Torre de vision sin cuantizar: ignorar el archivo `mmproj` en flujos de edicion de imagen hace que el modelo no reciba la condicion visual, aunque el texto funcione.
-- Errores de conversion conocidos: el autor documenta cinco fallos que generan archivos aparentemente validos pero silenciosamente incorrectos, por lo que se recomienda usar exactamente los archivos publicados y no reconvertir a mano.
-- Rendimiento no verificado: no hay benchmarks de calidad de generacion de imagen, ni datos de latencia, throughput o consumo de VRAM en ejecucion.
-- Idiomas y contexto desconocidos: la model card no especifica cobertura linguistica ni longitud de contexto, lo que impide planificar prompts largos o despliegues multilingues con garantias.
-- Adopcion minima: 0 descargas y 1 like en el momento de la consulta, sin comunidad que haya validado el artefacto de forma independiente.
-- Riesgo de alucinacion: no evaluado en la informacion disponible, aunque es relevante si se usa el backbone como generador de texto y no solo como codificador.
+- El modelo no es un generador de texto ni un asistente: es un codificador de texto para un pipeline de difusión concreto y no debe evaluarse con benchmarks de LLM (MMLU, HumanEval, GSM8K).
+- La abliteration puede degradar la coherencia del condicionamiento en prompts complejos o poco habituales; no se han publicado evaluaciones objetivas de su impacto en la calidad de imagen.
+- Los ficheros GGUF requieren el nodo adicional `ComfyUI-GGUF-Qwen3VL-TE` y el `mmproj` junto al GGUF; sin ellos, ComfyUI falla con `got input of size [1, 512, 12288]` o `Unknown model architecture!`.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los pesos originales de Qwen-Image-2.1 pueden tener condiciones adicionales que no se detallan en la model card; conviene verificar la licencia del pipeline completo antes de un despliegue en producción.
+- No se documentan idiomas soportados ni longitud de contexto; el rendimiento multilingüe del encoder en la generación de imágenes no está verificado.
+- Riesgo de alucinación en el sentido de prompts mal interpretados: el encoder puede producir condicionamientos que el DiT renderice como texto ilegible o elementos no solicitados, especialmente con CFG bajo en la fase final del muestreo.
+- El repositorio ocupa 48,7 GB por incluir las tres variantes; descargar solo el fichero necesario para evitar consumo innecesario de disco.
+- La fecha de creación del repositorio (2026-09-20) y la actualización (2026-09-24) indican un proyecto reciente con posible rotación de versiones; fijar el commit o el hash del fichero en producción.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
-- Modelo base (bf16, fuente de la cuantizacion): https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
-- Variante NVFP4: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4
-- Variante W4A8 INT8: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Licencia Qwen Research: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
-- Heretic (herramienta de ablacion direccional): https://github.com/p-e-w/heretic
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces disponibles proceden de la model card del autor.
+- Modelo base: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
+- Nodo de parche para ComfyUI-GGUF: https://github.com/pottokao-dotcom/ComfyUI-GGUF-Qwen3VL-TE
+- Nodo de estilos fotográficos: https://github.com/pottokao-dotcom/ComfyUI-QwenImage-PhotoStyles
+- Reescritor de prompts PE-T2I en GGUF: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF
+- DiT de Qwen-Image-2.1 en GGUF: https://huggingface.co/pottokao/Qwen-Image-2.1-DiT-GGUF

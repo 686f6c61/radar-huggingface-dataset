@@ -2,44 +2,58 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-27B-Uncensored` es una versión "abliterada" (uncensored) del Qwen3.8-27B de Alibaba, desarrollada por el usuario orcarouter. La técnica de abliteration elimina los mecanismos internos de rechazo del modelo original, de modo que responde a peticiones que el modelo base normalmente bloquearía. Es un modelo multimodal de visión y lenguaje (image-text-to-text) con 27,8 mil millones de parámetros, basado en la arquitectura Qwen3.8 (etiquetada como qwen3_5 en el repositorio). Incluye capacidades de razonamiento, function calling y multi-token prediction (MTP). Su relevancia actual radica en su uso para red-teaming, investigación de alineación y entornos donde se necesita generar contenido sin restricciones, aunque con importantes advertencias éticas y legales. El acceso está restringido (gated) en Hugging Face y requiere aceptar condiciones.
+Qwen3.8-27B-Uncensored es una variante "abliterated" (con el mecanismo de rechazo eliminado) del modelo Qwen/Qwen3.8-27B, publicada por orcarouter. Se distribuye en precisión completa BF16 y está pensada como pesos fuente para fine-tuning, post-entrenamiento y cuantización posterior. El modelo base es un transformer denso de 27 781 427 952 parámetros (aproximadamente 27,8 B) con atención híbrida (Gated DeltaNet lineal combinada con atención completa), torre de visión nativa (pipeline image-text-to-text) y una cabeza MTP (multi-token prediction) para decodificación especulativa.
+
+La modificación principal respecto al modelo original es la eliminación de la dirección de rechazo mediante ortogonalización en el flujo residual, lo que suprime prácticamente la alineación de seguridad del modelo base. El autor lo orienta explícitamente a red teaming, investigación de seguridad ofensiva y generación de datos adversarios, y advierte de que cumplirá peticiones dañinas, poco éticas u ofensivas.
+
+La relevancia actual del modelo es doble: por un lado, conserva las capacidades del Qwen3.8-27B original (contexto de 262 144 tokens, visión-lenguaje, function calling, control flexible del modo de razonamiento); por otro, su condición de pesos BF16 completos con la torre de visión y la cabeza MTP intactas lo convierte en una base poco habitual para experimentación sobre alineación y para la construcción de derivados cuantizados. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (variante Qwen3.8, basada en Qwen3.5) |
-| Parametros totales | 27.781.427.952 (27,8 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | bf16 (original), FP8, GGUF (Q4_K_M), MLX |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer denso con atención híbrida: Gated DeltaNet (atención lineal) + atención completa; torre de visión nativa; cabeza MTP de decodificación especulativa |
+| Parametros totales | 27 781 427 952 (≈27,8 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 262 144 tokens (262K) |
+| Tipos de cuantizacion | BF16 (pesos publicados); derivados oficiales en block-FP8, GGUF de 2 a 16 bits y MLX de 2, 4 y 8 bits |
+| Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (original), ademas de FP8, GGUF y MLX |
+| Formato de pesos | safetensors (BF16); derivados en GGUF y MLX |
+| Pipeline | image-text-to-text |
+| Libreria | transformers |
+| Tamano del repositorio | 55,6 GB |
+| Acceso | Restringido (gated), requiere aceptar condiciones |
+| Modelo base | Qwen/Qwen3.8-27B (finetune) |
+| Descargas / likes | 8396 / 542 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `Qwen/Qwen3.8-27B`, un modelo de lenguaje multimodal de 27,8 B parámetros que procesa tanto texto como imágenes. La versión uncensored se obtiene mediante abliteration, una técnica de post-entrenamiento que identifica direcciones en el espacio de activaciones del modelo asociadas con comportamientos de rechazo y las elimina o modifica. El autor (orcarouter) aplicó este procedimiento al modelo base, resultando en un modelo que no filtra peticiones consideradas peligrosas o inapropiadas. Ademas, el repositorio de GitHub asociado menciona un "harvested uncensored SYSTEM pack" que modifica el prompt de sistema para mantener el comportamiento sin censura. No se han publicado detalles sobre el dataset de entrenamiento del modelo base ni sobre el proceso exacto de abliteration. El modelo conserva las capacidades de razonamiento, function calling y MTP del original.
+El modelo hereda la arquitectura del Qwen3.8-27B: un transformer denso que combina capas de atención lineal Gated DeltaNet con capas de atención completa, un esquema híbrido que reduce el coste computacional en contextos largos manteniendo la calidad de recuperación de la atención completa. Incorpora una torre de visión que lo convierte en un modelo visión-lenguaje nativo, y una cabeza MTP (multi-token prediction) que permite decodificación especulativa y mejora el throughput de generación. El contexto declarado es de 262 144 tokens.
+
+El post-entrenamiento aplicado por orcarouter consiste en abliteration: la extracción de la dirección de rechazo del flujo residual y su ortogonalización, de modo que el modelo deja de activar respuestas de negativa ante peticiones que el modelo original rechazaría. El autor no documenta en la información disponible el volumen de datos, la composición del dataset ni si hubo pasos adicionales de RLHF o DPO tras la abliteration. Los pesos se distribuyen en BF16 con la torre de visión y la cabeza MTP preservadas, lo que permite reutilizarlos como base para post-entrenamiento y para generar cuantizaciones (FP8, GGUF, MLX).
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-step.
-- Comprension de imagenes (entrada visual) y generacion de descripciones o respuestas basadas en ellas.
-- Soporte de function calling / tool calling para integracion con APIs y herramientas externas.
-- Razonamiento avanzado con modo thinking (heredado de la familia Qwen3).
-- Multilingue limitado a ingles y chino (segun los tags del repositorio).
-- Comportamiento sin censura: no rechaza peticiones sobre temas delicados, ilegales o eticamente cuestionables (efecto de la abliteration).
-- Multi-token prediction (MTP) para acelerar la generacion.
+- Generación de texto conversacional multi-turno con ventana de 262 144 tokens.
+- Razonamiento con control flexible del modo de pensamiento (thinking mode configurable).
+- Comprensión de imágenes y texto combinados (image-text-to-text) mediante torre de visión nativa.
+- Function calling y tool calling, con etiqueta específica en el repositorio.
+- Razonamiento multi-paso orientado a agentes.
+- Decodificación especulativa mediante cabeza MTP, que acelera la inferencia.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Cumplimiento de peticiones que el modelo base rechazaría, por efecto de la abliteration.
+- Servible a través de endpoints compatibles (etiqueta endpoints_compatible) y API OpenAI-compatible en OrcaRouter.
 
 ## Casos de uso
 
-- Red-teaming y evaluacion de seguridad: el modelo puede usarse para probar sistemas de moderacion de contenido, detectar vulnerabilidades en pipelines de IA generativa y estudiar como los modelos responden a ataques adversariales.
-- Investigacion en alineacion de modelos: permite analizar que mecanismos internos provocan los rechazos y como la abliteration los elimina, contribuyendo al desarrollo de tecnicas de control mas robustas.
-- Generacion de contenido creativo sin restricciones: escritura de ficcion, guiones, dialogos o material satirico que el modelo base rechazaria por politicas de seguridad.
-- Asistente de programacion en entornos aislados: con su soporte de function calling, puede integrarse en pipelines de desarrollo para generar codigo, documentacion o pruebas sin filtros de contenido.
-- Analisis de imagenes en contextos tecnicos: descripcion de diagramas, capturas de pantalla o fotografias donde se requiere un analisis directo sin restricciones de contenido.
-- Simulacion de conversaciones dificiles: generacion de interacciones hostiles, provocadoras o extremas para entrenar sistemas de dialogo y clasificadores de toxicidad.
-- Desarrollo de agentes autonomos: su capacidad de razonamiento multi-step y tool calling permite construir agentes que ejecutan tareas complejas sin necesidad de moderacion intermedia.
+- Red teaming de sistemas de IA: el modelo sirve para generar prompts adversarios y respuestas que permitan evaluar la robustez de filtros y clasificadores de seguridad en pipelines propios, precisamente porque no aplica rechazos.
+- Investigación sobre alineación y abliteration: al conservar los pesos BF16 completos, permite comparar activaciones y direcciones de rechazo frente al Qwen3.8-27B original y medir el efecto de la ortogonalización en el flujo residual.
+- Generación de datos de entrenamiento para clasificadores de contenido: se puede usar para producir ejemplos positivos y negativos en tareas de moderación, con revisión humana obligatoria.
+- Fine-tuning y post-entrenamiento: al ser la fuente BF16 con torre de visión y cabeza MTP intactas, es la base recomendada por el autor para adaptar el modelo a dominios concretos y después cuantizar.
+- Evaluación de visión-lenguaje en documentos: la ventana de 262K tokens y la torre de visión permiten procesar lotes de imágenes y páginas junto con texto largo en tareas de extracción y descripción.
+- Automatización de agentes con tool calling: integrable en flujos multi-paso donde el modelo debe invocar funciones externas y mantener contexto largo entre pasos.
+- Producción de cuantizaciones propias: a partir de estos pesos se pueden generar variantes GGUF o MLX para despliegue en llama.cpp u Ollama en hardware limitado.
 
 ## Benchmarks y rendimiento
 
@@ -47,29 +61,46 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en bf16 se necesitan aproximadamente 56 GB (tamano del repositorio), en FP8 alrededor de 28 GB, y en GGUF Q4_K_M unos 16,8 GB (segun el repositorio de GitHub).
-- GPU recomendadas: para bf16 o FP8, una A100 80 GB o H100; para GGUF Q4_K_M, una RTX 4090 o RTX 3090 (24 GB) es suficiente.
-- En consumer GPU: el modelo cabe en GPUs de 24 GB solo con cuantizacion GGUF Q4_K_M o similar. Con FP8 se necesita al menos 32 GB, lo que excluye la mayoria de GPUs domesticas.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (con el pack de sistema del repositorio de GitHub), TGI, y MLX para Apple Silicon (M2/M3/M4 con RAM unificada suficiente).
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada en BF16: los 27,8 B parámetros a 2 bytes por parámetro suponen aproximadamente 55,6 GB solo de pesos, más overhead de activaciones y caché KV; se recomienda un mínimo de 64-80 GB de VRAM para inferencia cómoda.
+- GPU recomendadas para BF16: A100 80 GB, H100 80 GB, H200 o configuraciones multi-GPU (por ejemplo, 2×A100 40 GB con tensor parallelism).
+- Cuantización FP8: reduce los pesos a aproximadamente 28 GB, lo que permite servir en una sola A100 40 GB o L40S 48 GB.
+- Consumer GPU: en BF16 no cabe en ninguna GPU de consumo actual. Con GGUF de 4 bits (unos 15-16 GB) puede ejecutarse en RTX 4090 (24 GB) o RTX 3090; con 2 bits cabría en GPUs de 12-16 GB a costa de degradación de calidad.
+- Apple Silicon: los derivados MLX de 4 y 8 bits permiten ejecución en equipos con memoria unificada de 32 GB o superior.
+- Opciones de despliegue: vLLM (recomendado para FP8 y BF16 con la cabeza MTP para decodificación especulativa), llama.cpp y Ollama (GGUF), MLX para Apple Silicon, TGI y endpoints compatibles con la API de OpenAI.
+- Latencia y throughput: no disponibles en la información proporcionada; la cabeza MTP está pensada para mejorar el throughput mediante decodificación especulativa.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas con otros modelos uncensored de tamano similar en la informacion proporcionada. Como referencia, el modelo base Qwen3.8-27B es comparable en tamano a otros modelos densos de 27-32 B como Mistral-Small-24B o Llama-3.1-8B (aunque estos ultimos son mas pequenos). La principal diferencia frente a alternativas abliteradas de otros modelos (por ejemplo, versiones uncensored de Llama o Mistral) es la combinacion de multimodalidad (vision) y function calling, que no es comun en modelos abliterados. La licencia Apache 2.0 permite uso comercial sin restricciones, a diferencia de otras licencias como Llama (que tiene clausulas de uso aceptable). Sin embargo, el acceso gated en Hugging Face puede limitar la disponibilidad.
+| Modelo | Parametros | Contexto | Vision | Licencia | Acceso | Notas |
+|---|---|---|---|---|---|---|
+| orcarouter/Qwen3.8-27B-Uncensored | 27,8 B denso | 262 144 | Si | Apache 2.0 | Restringido (gated) | Abliterated, BF16, cabeza MTP |
+| Qwen/Qwen3.8-27B | 27,8 B denso | 262 144 | Si | Apache 2.0 | Publico | Modelo base con alineacion de seguridad intacta |
+| orcarouter/Qwen3.8-27B-Uncensored-FP8 | 27,8 B denso | 262 144 | Si | Apache 2.0 | No disponible | Derivado block-FP8 para vLLM |
+| orcarouter/Qwen3.8-27B-Uncensored-GGUF | 27,8 B denso | 262 144 | Si | Apache 2.0 | No disponible | Derivado de 2 a 16 bits para llama.cpp |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al eliminar los rechazos, el modelo puede generar contenido ofensivo, discriminatorio, ilegal o peligroso sin ninguna barrera. No se ha realizado una evaluacion de sesgos especifica para esta version.
-- Riesgo de alucinacion: inherente a todos los LLM, pero al no haber filtros de seguridad, las alucinaciones pueden ser mas daninas (por ejemplo, instrucciones medicas o legales incorrectas).
-- Limitaciones de contexto e idioma: la longitud de contexto no se ha especificado; los idiomas soportados son solo ingles y chino, por lo que el rendimiento en otros idiomas no esta garantizado.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso al repositorio es gated y requiere aceptar condiciones adicionales en Hugging Face. El uso comercial es legal, pero la responsabilidad legal por el contenido generado recae en el usuario.
-- Caves para produccion: no se recomienda su uso en aplicaciones orientadas al publico sin un sistema de moderacion externo robusto. La abliteration no elimina todos los sesgos subyacentes del modelo base, solo los mecanismos de rechazo.
-- El modelo puede ser utilizado para fines malintencionados; se recomienda restringir su uso a entornos de investigacion controlados.
+- La alineación de seguridad ha sido sustancialmente eliminada: el modelo cumplirá peticiones dañinas, poco éticas, ofensivas o ilegales, según advierte el propio autor.
+- Riesgo elevado de generar contenido ilegal o peligroso sin filtros adicionales; requiere moderación externa obligatoria en cualquier despliegue.
+- Riesgo de alucinación inherente a los modelos de 27 B, no cuantificado en la información disponible.
+- Idiomas soportados limitados a inglés y chino; el rendimiento en castellano no está documentado.
+- Aunque la licencia es Apache 2.0, el acceso al repositorio está restringido y sujeto a las condiciones de Hugging Face; conviene revisar las obligaciones de uso aceptable antes de un despliegue comercial.
+- El uso comercial de un modelo sin alineación puede acarrear responsabilidad legal según la jurisdicción y el sector.
+- La información sobre datos de entrenamiento, composición del dataset y pasos de RLHF/DPO no está disponible, lo que dificulta evaluar sesgos.
+- No se han publicado benchmarks en la información disponible, por lo que no se puede verificar la degradación de capacidades respecto al modelo base tras la abliteration.
 
 ## Enlaces
 
-- Repositorio Hugging Face (original): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
-- Variante FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
-- Repositorio GitHub con GGUF y pack de sistema: https://github.com/Wassimyounes01/qwen38-uncensored
-- Blog de explainx.ai sobre el build MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
-- Blog de orcarouter.ai sobre el lanzamiento de Qwen3.8: https://www.orcarouter.ai/blog/qwen-3-8-27b-open-weights-leak
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Derivado FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
+- Derivado GGUF: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
+- Derivado MLX: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX
+- Tarjeta del modelo en OrcaRouter: https://www.orcarouter.ai/models/qwen/qwen3.8-27b
+- Endpoint API: https://api.orcarouter.ai/v1
+- Sitio web de OrcaRouter: https://www.orcarouter.ai
+- Catalogo de modelos: https://www.orcarouter.ai/models
+- GitHub de la organizacion: https://github.com/Continuum-AI-Corp
+- Discord: https://discord.gg/yAh6Tex6kx
+- X (Twitter): https://x.com/OrcaRouter
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

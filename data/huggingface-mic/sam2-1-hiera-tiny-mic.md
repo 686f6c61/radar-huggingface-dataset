@@ -2,92 +2,95 @@
 
 ## Resumen
 
-`sam2.1-hiera-tiny-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` en Hugging Face. No se trata de un modelo utilizable, sino de una version reducida artificialmente del modelo de segmentacion de video `facebook/sam2.1-hiera-tiny` de Meta, creada para validar contratos de integracion en el framework Transformers. El autor lo etiqueta explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
+`sam2.1-hiera-tiny-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic`, no un modelo utilizable en produccion. Se trata de una version reducida del checkpoint `facebook/sam2.1-hiera-tiny`, el modelo de segmentacion de video SAM 2.1 de Meta, creado especificamente para validar contratos de integracion y expectativas de frameworks dentro del ecosistema Transformers. El propio autor lo etiqueta como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
 
-El fixture conserva la arquitectura `Sam2Model` pero con una configuracion drasticamente reducida: 1.901.169 parametros totales frente a los cientos de millones del checkpoint original. La reduccion se aplica mediante una regla generica del script `sweep.py` del repositorio `transformers-mic`, que en este caso reduce `mask_decoder` a 2 capas ocultas. Los ficheros de procesador se copian byte a byte del modelo original.
+El modelo conserva la arquitectura `Sam2Model` del original pero con una configuracion drasticamente reducida: 1.901.169 parametros frente a los cientos de millones del checkpoint real. La unica modificacion estructural documentada es la reduccion de `num_hidden_layers` a 2 en el `mask_decoder`. Los ficheros de procesador (`preprocessor_config.json`, `processor_config.json`, `sam2.1_hiera_t.yaml`, `video_preprocessor_config.json`) se copian byte a byte del modelo base.
 
-Su relevancia es puramente de ingenieria: sirve para verificar que las expectativas de integracion (formas de entrada, nombres de tensores, dtypes) coinciden con las del checkpoint real, sin necesidad de descargar ni ejecutar el modelo completo. Incluye pesos en safetensors, manifiesto de contrato (`integration.json`), documentacion de uso con Transformers y resultados de las puertas de validacion en `build.json`.
+Su relevancia es exclusivamente para desarrolladores que trabajan en el mantenimiento de integraciones de SAM 2 en Transformers: permite ejecutar pruebas de contrato (streaming de segmentacion de video) y validar expectativas de framework sin cargar los pesos completos del modelo real. No debe confundirse con un modelo de segmentacion funcional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sam2Model (transformer de segmentacion de video, variante Hiera) |
+| Arquitectura | Sam2Model (transformer de segmentacion de video, configuracion reducida) |
 | Parametros totales | 1.901.169 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de vision, no de texto) |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; probado en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (modelo de segmentacion visual) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32; compatible con bfloat16 y float16) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo base | facebook/sam2.1-hiera-tiny |
+| Dtype de guardado | float32 |
+| Tamano del repo | 0.0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura SAM 2.1 (Segment Anything Model 2.1) en su variante `hiera-tiny`, un transformer jerarquico para segmentacion de imagen y video. El fixture mantiene la clase `Sam2Model` pero con una configuracion reducida: el `mask_decoder` se limita a 2 capas ocultas mediante la regla generica de reduccion de `sweep.py`. Los ficheros de procesador (`preprocessor_config.json`, `processor_config.json`, `sam2.1_hiera_t.yaml`, `video_preprocessor_config.json`) se copian byte a byte del checkpoint `facebook/sam2.1-hiera-tiny`, de modo que el pipeline de preprocesado es identico al del modelo real.
+El modelo replica la arquitectura `Sam2Model` del checkpoint `facebook/sam2.1-hiera-tiny`, un sistema de segmentacion de video con capacidad de streaming. La unica diferencia estructural respecto al original es la reduccion del numero de capas ocultas del `mask_decoder` a 2, aplicada mediante la regla generica de reduccion de `sweep.py` del repositorio `transformers-mic`. Los ficheros de procesador y la configuracion YAML de Hiera se copian sin modificacion desde el modelo base, por lo que la interfaz de preprocesado es identica a la del checkpoint real.
 
-No hubo entrenamiento en el sentido habitual. El fixture se sobreajusta deliberadamente al paso de entrenamiento del contrato (50 pasos) para que supere la puerta de sensibilidad a la entrada: con pesos aleatorios, la perturbacion `pixel_values:reverse` solo movia los logits 1.2e-06, por debajo del umbral de 0.001. Los tensores conservan exactamente los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture `b1ade3ded8b7` agrupa todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras la reduccion.
+No se trata de un modelo entrenado en el sentido convencional. Segun la model card, los pesos se sobreajustaron al paso de entrenamiento del contrato (50 pasos) porque los pesos aleatorios no superaban la puerta de sensibilidad a la entrada: la perturbacion `pixel_values:reverse` movia los logits solo 1.2e-06, por debajo del umbral de 0.001. Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en calculo de perdida y gradientes.
 
 ## Capacidades
 
-- Segmentacion de video en streaming: el contrato asociado se denomina "SAM2 Video streaming segmentation".
-- Segmentacion de imagen (capacidad heredada de la arquitectura SAM 2.1).
-- Compatibilidad con la API de Transformers para `Sam2Model`, con expectativas de framework documentadas.
+- Ejecucion del contrato de segmentacion de video en streaming (SAM2 Video streaming segmentation) con fines de validacion.
+- Verificacion de expectativas de framework para la integracion de SAM 2 en Transformers.
+- Pruebas de sensibilidad a la entrada sobre `pixel_values` (puerta superada tras el sobreajuste).
+- Compatibilidad de nombres de tensores con el checkpoint `facebook/sam2.1-hiera-tiny`, lo que permite validar cargas y mapeos.
 - Ejecucion en float32, bfloat16 y float16 (forward, loss y gradientes finitos).
-- Nombres de tensores identicos al checkpoint real, lo que permite validar integraciones sin cargar el modelo completo.
-- No soporta generacion de texto, tool calling, agentes ni capacidades multilingues: es un modelo puramente visual.
+- No soporta generacion de texto, razonamiento, codigo, tool calling ni capacidades multimodales mas alla del contrato de segmentacion.
+- No es un modelo funcional de segmentacion: no produce mascaras utiles sobre imagenes o videos reales.
 
 ## Casos de uso
 
-- Validacion de integraciones en Transformers: el fixture permite comprobar que el codigo de carga, preprocesado y forward de `Sam2Model` funciona contra un checkpoint ligero antes de pasar al modelo real de cientos de millones de parametros.
-- Pruebas de CI/CD en pipelines de vision: al ocupar practicamente 0 GB, se puede descargar y ejecutar en cada build para detectar regresiones en la API de segmentacion sin coste de ancho de banda ni GPU.
-- Verificacion de contratos de framework: el directorio `integrations/transformers/expectations` define las formas y dtypes esperados, y el fixture sirve para comprobar que una implementacion los cumple.
-- Desarrollo de herramientas de preprocesado de video: los ficheros de procesador copiados byte a byte permiten probar el pipeline de frames y mascaras con la misma configuracion que el modelo real.
-- Test de puertas de sensibilidad a la entrada: el fixture esta sobreajustado para superar el umbral de 0.001 en la perturbacion `pixel_values:reverse`, lo que lo hace util para validar ese tipo de pruebas.
-- Reproducibilidad de fixtures: `build.json` registra fuentes fijadas, resultados de puertas y hashes de ficheros, lo que permite reconstruir el artefacto con `python example/build_fixtures.py --fixture sam2.1-hiera-tiny-mic`.
-- Docencia y experimentacion con SAM 2.1: permite explorar la estructura de tensores y la configuracion del modelo sin necesidad de recursos de GPU.
+- Pruebas de contrato en CI: ejecutar el fixture para validar que la integracion de SAM 2 en Transformers respeta el manifiesto `integration.json` sin descargar los pesos completos del modelo real.
+- Validacion de expectativas de framework: comprobar que las expectativas documentadas en `integrations/transformers/expectations` se cumplen con un checkpoint de 1,9 M de parametros.
+- Desarrollo de pipelines de carga de safetensors: verificar que los nombres de tensores coinciden con el checkpoint real antes de integrar en produccion.
+- Pruebas de precision numerica: comprobar comportamiento finito en float32, bfloat16 y float16 en entornos de integracion continua.
+- Validacion de preprocesado: al copiarse los ficheros de procesador byte a byte, sirve para testear el pipeline de preprocesado de SAM 2 sin cargar el modelo completo.
+- Reproduccion de fixtures: regenerar el artefacto con `python example/build_fixtures.py --fixture sam2.1-hiera-tiny-mic` para auditar procedencia y hashes recogidos en `build.json`.
+- Validacion de puertas de sensibilidad: comprobar que una perturbacion de entrada produce un cambio de logits superior al umbral de 0.001.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo documenta resultados de puertas internas: con pesos aleatorios, la perturbacion `pixel_values:reverse` movia los logits 1.2e-06 (por debajo del umbral 0.001), y tras el sobreajuste de 50 pasos el fixture supera dicha puerta.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo documenta la puerta de sensibilidad a la entrada (perturbacion `pixel_values:reverse` de 1.2e-06 con pesos aleatorios, superada tras 50 pasos de sobreajuste) y la finitud numerica en float32, bfloat16 y float16.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en float32 (1,9 M de parametros), despreciable en la practica.
-- GPU recomendadas: cualquier GPU consumer, incluida una GTX 1050 o integrada; tambien ejecutable en CPU.
-- Cabe en cualquier GPU consumer sin problema.
-- Opciones de despliegue: Transformers (via `Sam2Model`), con la API estandar de carga de safetensors. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de vision de este tipo).
-- Latencia y throughput: no disponibles; al ser un fixture de prueba no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (1,9 M de parametros); practicamente despreciable en cualquier GPU moderna.
+- GPU recomendadas: cualquier GPU consumer o integrada; no requiere A100, H100 ni RTX 4090.
+- Cabe en cualquier GPU consumer y en CPU sin problema.
+- Opciones de despliegue: carga via Transformers (`Sam2Model`) y ejecucion del script `build_fixtures.py` del repositorio `transformers-mic`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo de segmentacion).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/sam2.1-hiera-tiny-mic` | 1.901.169 | no disponible | Segmentacion de video (fixture) | no disponible | Hugging Face |
-| `facebook/sam2.1-hiera-tiny` | no disponible en la informacion | no disponible | Segmentacion de video | no disponible | Hugging Face |
-| `facebook/sam2.1-hiera-small` | no disponible en la informacion | no disponible | Segmentacion de video | no disponible | Hugging Face |
-| `facebook/sam2.1-hiera-base-plus` | no disponible en la informacion | no disponible | Segmentacion de video | no disponible | Hugging Face |
+| sam2.1-hiera-tiny-mic | 1.901.169 | no disponible | Fixture de segmentacion de video | no disponible | Hugging Face |
+| facebook/sam2.1-hiera-tiny | no disponible en la informacion | no disponible | Segmentacion de video SAM 2.1 | no disponible en la informacion | Hugging Face |
+| Otros checkpoints SAM 2.1 (hiera-small, base, large) | no disponible en la informacion | no disponible | Segmentacion de video SAM 2.1 | no disponible en la informacion | Hugging Face |
 
-La comparativa se limita a variantes de la misma familia SAM 2.1, ya que el fixture solo tiene sentido frente al checkpoint del que deriva. No se dispone de datos de parametros, contexto ni licencia de las variantes de Meta en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativos en la informacion proporcionada. El unico comparable directo documentado es `facebook/sam2.1-hiera-tiny`, del que este artefacto es una version reducida con fines de prueba.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: el autor lo etiqueta explicitamente como `test-artifact` y advierte de que no debe usarse para inferencia real.
-- Los pesos estan sobreajustados a un unico paso de entrenamiento de 50 pasos; no generalizan a entradas reales.
-- La configuracion esta reducida artificialmente (`mask_decoder` con 2 capas), por lo que el comportamiento no refleja el del checkpoint original.
-- Licencia no disponible: no se puede asumir uso comercial sin consultar la licencia del modelo base `facebook/sam2.1-hiera-tiny`.
-- Sin soporte de texto, tool calling ni agentes; cualquier caso de uso de NLP queda fuera de su alcance.
-- Riesgo de confusion: al compartir nombre y arquitectura con el modelo real, podria descargarse por error en pipelines automatizados; la etiqueta `test-artifact` mitiga parcialmente este riesgo.
-- El repositorio ocupa 0.0 GB y solo incluye pesos reducidos, uso y expectativas; otros ficheros deben regenerarse con `build_fixtures.py`.
-- No se documentan sesgos ni riesgos de alucinacion porque el modelo no genera texto; el riesgo principal es de validacion incorrecta si se usa como sustituto del checkpoint real.
+- No es un modelo utilizable: es un artefacto de prueba (`test-artifact`) disenado para validar contratos de integracion, no para segmentar imagenes o videos reales.
+- Los pesos estan sobreajustados a 50 pasos del contrato; no generalizan a entradas fuera del contrato de prueba.
+- Sesgos conocidos: no disponibles (no aplica a un fixture).
+- Riesgo de alucinacion: no aplica en el sentido generativo, pero las salidas no son semanticamente validas como segmentaciones.
+- Limitaciones de contexto o idioma: no disponibles.
+- Restricciones de licencia para uso comercial: la licencia no esta disponible en la informacion proporcionada; debe consultarse el repositorio del modelo base `facebook/sam2.1-hiera-tiny` antes de cualquier uso.
+- Caveat de produccion: no debe desplegarse en ningun pipeline de segmentacion real; su inclusion en busquedas de modelos candidatos esta deliberadamente excluida mediante el tag `test-artifact`.
+- El repositorio no incluye todos los ficheros necesarios para reconstruir el fixture; hay que regenerarlos con `build_fixtures.py`.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/huggingface-mic/sam2.1-hiera-tiny-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/sam2.1-hiera-tiny-mic
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-tiny
-- Manifiesto de contrato: `integration.json` (en el repositorio)
-- Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
-- Procedencia del fixture: `build.json` (en el repositorio)
+- Contrato de integracion (manifiesto): https://huggingface.co/huggingface-mic/sam2.1-hiera-tiny-mic/blob/main/integration.json
+- Uso en Transformers: https://huggingface.co/huggingface-mic/sam2.1-hiera-tiny-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/sam2.1-hiera-tiny-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/sam2.1-hiera-tiny-mic/blob/main/build.json
 - Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/sam2.1-hiera-tiny-mic.html
-- Script de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Repositorio `transformers-mic` (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

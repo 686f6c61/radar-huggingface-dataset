@@ -2,85 +2,105 @@
 
 ## Resumen
 
-MiniCPM-o 4.5 es un modelo multimodal de extremo a extremo desarrollado por OpenBMB, la comunidad detrás de la serie MiniCPM. Este lanzamiento en formato GGUF corresponde a la versión cuantizada del modelo original, diseñado para ejecutarse eficientemente en dispositivos locales, incluyendo CPU y GPUs de consumo. El modelo integra visión, habla y texto en una única arquitectura, permitiendo interacciones full-duplex en tiempo real, es decir, puede ver, escuchar y hablar simultáneamente sin bloquearse entre flujos.
+MiniCPM-o 4.5 es un modelo multimodal "any-to-any" de código abierto desarrollado por OpenBMB (ModelBest y Universidad de Tsinghua) que integra visión, voz y texto en una arquitectura end-to-end. Con aproximadamente 9.000 millones de parámetros totales, combina los codificadores SigLip2 (visión), Whisper-medium (audio), el decodificador CosyVoice2 (síntesis de voz) y el backbone lingüístico Qwen3-8B, todos conectados mediante estados ocultos.
 
-Con aproximadamente 9 mil millones de parámetros en total, el modelo combina SigLip2 para visión, Whisper-medium para reconocimiento de voz, CosyVoice2 para síntesis de voz y Qwen3-8B como base lingüística. Según los autores, alcanza un rendimiento comparable a Gemini 2.5 Flash en tareas de visión y lenguaje, superando a modelos propietarios como GPT-4o y Gemini 2.0 Pro en benchmarks compuestos. Su relevancia actual radica en ofrecer capacidades multimodales avanzadas en un tamaño reducido, con soporte para streaming de audio y vídeo en tiempo real, algo poco común en modelos open source.
+El modelo destaca por introducir capacidades de streaming multimodal en tiempo real full-duplex: es capaz de procesar flujos continuos de vídeo y audio mientras genera simultáneamente texto y voz, sin bloqueo mutuo, lo que permite experiencias conversacionales omni-modales en tiempo real. Además incorpora un mecanismo de interacción proactiva que decide a 1 Hz si intervenir o no en función del contenido observado.
 
-Esta versión GGUF incluye 16 tamaños de cuantización, desde int4 hasta formatos de mayor precisión, lo que facilita su despliegue en entornos con recursos limitados. El modelo soporta más de 30 idiomas, procesamiento de imágenes de alta resolución (hasta 1.8 millones de píxeles) y vídeo a 10 fps, además de funciones como clonación de voz y modos de razonamiento explícito e implícito.
+Esta versión GGUF está pensada para inferencia eficiente en CPU y dispositivos locales mediante llama.cpp y Ollama, con cuantizaciones int4 e int8 en 16 tamaños distintos. Su licencia Apache 2.0 y su tamaño contenido lo posicionan como una alternativa práctica a modelos propietarios como GPT-4o o Gemini 2.0 Pro en tareas de visión-lenguaje, con un rendimiento que el autor sitúa cercano a Gemini 2.5 Flash.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | End-to-end multimodal: SigLip2 (visión) + Whisper-medium (ASR) + CosyVoice2 (TTS) + Qwen3-8B (LLM base) |
-| Parametros totales | 8.189.195.264 (safetensors) / ~9B declarados por el autor |
-| Parametros activos | No aplicable (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF en 16 tamaños, incluyendo int4 |
-| Idiomas soportados | Más de 30 (inglés y chino con habla bilingüe en tiempo real) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (también safetensors para el modelo base) |
+| Arquitectura | Transformer multimodal end-to-end (SigLip2 + Whisper-medium + CosyVoice2 + Qwen3-8B) |
+| Parametros totales | 8.189.195.264 (~8,2 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (int4, int8 y otras variantes; 16 tamaños publicados) |
+| Idiomas soportados | más de 30 idiomas; conversación de voz bilingüe inglés-chino |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo base en safetensors/PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM-o 4.5 adopta una arquitectura de extremo a extremo donde los codificadores y decodificadores multimodales están densamente conectados con el LLM a través de estados ocultos, lo que permite un flujo de información más rico y un control unificado durante el entrenamiento. El mecanismo central es el full-duplex: los codificadores de entrada (audio y vídeo) operan en línea, mientras que el decodificador de voz genera tokens de texto y habla de forma intercalada, sincronizando todos los flujos en una línea de tiempo mediante un mecanismo de multiplexación por división de tiempo (TDM). Esto permite que el modelo procese entradas continuas y genere salidas simultáneas sin bloqueo mutuo.
+MiniCPM-o 4.5 emplea una arquitectura omni-modal end-to-end en la que los codificadores y decodificadores de cada modalidad (SigLip2 para visión, Whisper-medium para audio de entrada, CosyVoice2 para síntesis de voz) se conectan densamente al LLM backbone (Qwen3-8B) mediante estados ocultos, en lugar de usar adaptadores desacoplados. Esto facilita el flujo de información multimodal y el aprovechamiento del conocimiento multimodal durante el entrenamiento.
 
-El modelo también incorpora un mecanismo de interacción proactiva: el LLM monitoriza constantemente los flujos de vídeo y audio y decide a una frecuencia de 1 Hz si debe hablar o no, lo que habilita comportamientos como iniciar recordatorios o comentarios basados en la comprensión del entorno. La configuración de voz se controla mediante un prompt de sistema de audio adicional, permitiendo clonar voces o realizar role-play en tiempo de inferencia. No se han publicado detalles específicos sobre el volumen de datos de entrenamiento ni sobre el uso de técnicas como RLHF o DPO.
+La innovación principal es el mecanismo full-duplex de streaming omni-modal: los codificadores y decodificadores offline se convierten en online y full-duplex, y el decodificador de tokens de voz modela tokens de texto y audio de forma intercalada para sincronizar la generación con la entrada en tiempo real. Todos los flujos de entrada y salida se sincronizan en milisegundos mediante un mecanismo de multiplexación por división de tiempo (TDM) que divide los flujos paralelos en grupos secuenciales dentro de pequeñas franjas periódicas. Además, el modelo incorpora un mecanismo de interacción proactiva que monitoriza continuamente vídeo y audio y decide a 1 Hz si hablar. El sistema de prompt multimodal configurable (texto + audio) permite clonación de voz y role play en tiempo de inferencia. No se dispone de datos públicos sobre el número exacto de tokens de entrenamiento ni sobre la composición del dataset o las etapas de RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Vision y lenguaje: procesamiento de imágenes de alta resolución (hasta 1,8 millones de píxeles) y vídeo de alta FPS (hasta 10 fps) en cualquier relación de aspecto.
-- OCR y parsing de documentos: rendimiento de última generación en OmniDocBench para documentos en inglés, superando a herramientas especializadas como DeepSeek-OCR 2.
-- Habla bilingüe en tiempo real: conversación por voz en inglés y chino con voces configurables, incluyendo clonación de voz mediante un clip de audio de referencia.
-- Full-duplex multimodal streaming: procesamiento simultáneo de entrada de vídeo y audio con salida de texto y habla sin bloqueo mutuo.
-- Interacción proactiva: el modelo puede iniciar conversaciones o comentarios basados en el análisis continuo de la escena.
-- Multilingüismo: soporte para más de 30 idiomas en tareas de texto y visión.
-- Modos de razonamiento: soporta modos instruct y thinking en un mismo modelo, permitiendo elegir entre eficiencia y rendimiento.
-- Confiabilidad: resultados comparables a Gemini 2.5 Flash en el benchmark MMHal-Bench sobre alucinaciones.
+- Generación de texto y razonamiento en modos instruct y thinking dentro de un mismo modelo.
+- Comprensión visual de imágenes de alta resolución (hasta 1,8 millones de píxeles) en cualquier relación de aspecto.
+- Procesamiento de vídeo de alta tasa de frames (hasta 10 fps).
+- OCR y parsing de documentos; el autor reporta estado del arte en OmniDocBench para parsing de documentos en inglés end-to-end.
+- Conversación de voz en tiempo real bilingüe (inglés y chino) con voces configurables.
+- Clonación de voz y role play a partir de un clip de audio de referencia.
+- Streaming multimodal full-duplex: visión, escucha y habla simultáneas sobre flujos continuos de vídeo y audio.
+- Interacción proactiva: el modelo puede iniciar recordatorios o comentarios según el contexto observado.
+- Capacidades multilingües en más de 30 idiomas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente multimodal: el modelo puede gestionar videollamadas de soporte, entendiendo el lenguaje hablado y las expresiones visuales del cliente, y respondiendo por voz con baja latencia gracias a su capacidad full-duplex.
-- Asistentes personales con interacción proactiva: puede monitorizar el entorno a través de la cámara y el micrófono, recordando citas o alertando sobre eventos relevantes sin necesidad de que el usuario inicie la conversación.
-- Traducción y transcripción en tiempo real: procesa audio y vídeo continuamente, generando subtítulos o traducciones habladas en inglés y chino, útil para reuniones o conferencias.
-- Análisis de documentos y OCR: extrae texto de imágenes escaneadas o documentos complejos con alta precisión, superando a herramientas especializadas, ideal para digitalización de archivos.
-- Accesibilidad para personas con discapacidad visual: describe escenas, lee texto en tiempo real y responde a preguntas sobre el entorno a través de interacción por voz.
-- Creación de contenido interactivo: permite experiencias de role-play o narración con voces clonadas, aplicable en juegos, educación o entretenimiento.
-- Vigilancia y monitorización inteligente: analiza flujos de vídeo en vivo y emite alertas habladas o escritas ante eventos predefinidos, gracias a su capacidad de procesamiento continuo.
+- Asistentes de voz en tiempo real: el modelo puede mantener conversaciones habladas bilingües con voces configurables y clonación, adecuado para atención al cliente telefónica o asistentes embebidos donde se requiere baja latencia y síntesis natural.
+- Videollamadas asistidas y accesibilidad: al procesar vídeo y audio simultáneamente en full-duplex, puede describir escenas, transcribir y responder en tiempo real, útil para personas con discapacidad visual o auditiva.
+- Digitalización y parsing de documentos: su OCR de alta resolución y su rendimiento en OmniDocBench lo hacen adecuado para extraer tablas, fórmulas y estructura de facturas, contratos o artículos científicos en pipelines de automatización documental.
+- Vigilancia proactiva de streams: el mecanismo de interacción proactiva a 1 Hz permite monitorizar cámaras o retransmisiones y emitir avisos o comentarios automáticos (por ejemplo, detección de incidentes en directo).
+- Despliegue en dispositivos de borde: las cuantizaciones GGUF int4 e int8 con soporte de llama.cpp y Ollama permiten ejecutar el modelo en CPU en portátiles o mini-PC para asistentes locales sin conexión.
+- Análisis de vídeo de alta frecuencia: con soporte de hasta 10 fps puede analizar secuencias de acciones, deportes o robótica donde el muestreo temporal es crítico.
+- Role play y entretenimiento interactivo: la clonación de voz y el prompt de audio configurable permiten crear personajes conversacionales con voz propia en aplicaciones de ocio o formación.
 
 ## Benchmarks y rendimiento
 
-Según la información publicada por el autor, MiniCPM-o 4.5 obtiene una puntuación media de 77,6 en OpenCompass, un compuesto de 8 benchmarks populares de visión y lenguaje. Con solo 9B parámetros, supera a GPT-4o y Gemini 2.0 Pro, y se aproxima a Gemini 2.5 Flash. En OmniDocBench, alcanza el estado del arte en parsing de documentos en inglés, superando a Gemini-3 Flash, GPT-5 y DeepSeek-OCR 2. En MMHal-Bench, dedicado a medir alucinaciones, iguala el rendimiento de Gemini 2.5 Flash. No se han publicado resultados detallados por benchmark individual en la información disponible.
+| Benchmark | Resultado | Referencia comparativa (según autor) |
+|---|---|---|
+| OpenCompass (media de 8 benchmarks) | 77,6 | supera a GPT-4o y Gemini 2.0 Pro; se acerca a Gemini 2.5 Flash |
+| OmniDocBench (parsing de documentos en inglés) | SOTA end-to-end (valor numérico no disponible) | supera a Gemini-3 Flash, GPT-5 y DeepSeek-OCR 2 |
+| MMHal-Bench | equiparable a Gemini 2.5 Flash (valor numérico no disponible) | Gemini 2.5 Flash |
+
+No se han publicado en la información disponible resultados numéricos detallados de MMLU, HumanEval, GSM8K ni de los benchmarks individuales de OpenCompass.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos oficiales de VRAM en la documentación proporcionada.
-- Para la versión GGUF cuantizada en int4, se estima un uso de memoria de aproximadamente 5-6 GB, lo que permite ejecución en GPUs de consumo como RTX 3060, RTX 4060 o superiores.
-- Las cuantizaciones de mayor precisión (por ejemplo, Q8) requerirán alrededor de 9-10 GB de VRAM, siendo adecuadas para RTX 3090, RTX 4090 o GPUs de datacenter como A10.
-- El modelo puede ejecutarse en CPU mediante llama.cpp u Ollama, aunque con mayor latencia.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, SGLang y FlagOS (backend unificado multi-chip).
-- Para streaming full-duplex en tiempo real, se recomienda una GPU con al menos 8 GB de VRAM y soporte CUDA para minimizar la latencia.
+- VRAM estimada para inferencia en precisión completa (BF16): en torno a 16-18 GB para los ~8,2 B parámetros, más overhead de codificadores y caché.
+- Cuantización int8: aproximadamente 8-9 GB de VRAM/RAM.
+- Cuantización int4: aproximadamente 4,5-5,5 GB, lo que permite ejecución en CPU y en GPUs consumer de gama media.
+- GPUs recomendadas: A100 o H100 para inferencia PyTorch de máxima precisión y alto throughput; RTX 4090 o RTX 3090 para ejecución local en BF16/int8; GPUs con 8 GB o menos pueden usar las variantes int4 GGUF.
+- Cabe en GPU consumer: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 y superiores, según cuantización.
+- Opciones de despliegue: PyTorch con GPU Nvidia (recomendado para precisión del 100 %), llama.cpp y Ollama (CPU), vLLM y SGLang (alto throughput), FlagOS (backend multi-chip), además de demos web oficiales para streaming full-duplex en local.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de especificaciones detalladas de modelos comparables en la información proporcionada. Los autores comparan MiniCPM-o 4.5 con modelos propietarios como GPT-4o, Gemini 2.0 Pro y Gemini 2.5 Flash, indicando que el modelo open source supera o iguala a estos en varios benchmarks, pero no se ofrecen tablas comparativas con métricas exactas. Tampoco se proporcionan datos de otros modelos open source de tamaño similar, como Qwen2.5-VL o Llama 3.2 Vision. Por tanto, la comparativa cuantitativa no está disponible.
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Notas |
+|---|---|---|---|---|---|
+| MiniCPM-o 4.5 | ~8,2 B | no disponible | texto, imagen, vídeo, audio entrada/salida | Apache 2.0 | full-duplex, interacción proactiva, GGUF |
+| Qwen3-8B (backbone) | ~8 B | no disponible | texto | Apache 2.0 | solo texto; base del LLM de MiniCPM-o |
+| Gemini 2.5 Flash | no disponible (propietario) | no disponible | texto, imagen, audio, vídeo | propietaria | referencia de rendimiento citada por el autor |
+| GPT-4o | no disponible (propietario) | no disponible | texto, imagen, audio | propietaria | superado en OpenCompass según el autor |
 
 ## Limitaciones y advertencias
 
-- La información sobre sesgos y comportamientos adversos no está publicada; se recomienda evaluar el modelo en el dominio de aplicación antes de desplegarlo en producción.
-- Aunque el modelo muestra baja tasa de alucinaciones en MMHal-Bench, sigue existiendo riesgo de generar contenido falso o inconsistente, especialmente en tareas de razonamiento complejo.
-- El soporte multilingüe cubre más de 30 idiomas, pero la calidad puede variar significativamente entre ellos; el habla en tiempo real solo está disponible para inglés y chino.
-- La versión GGUF es una cuantización del modelo original, por lo que puede presentar una ligera degradación de precisión respecto al modelo en safetensors.
-- La licencia Apache-2.0 permite uso comercial, pero es responsabilidad del usuario cumplir con las licencias de los componentes subyacentes (SigLip2, Whisper, CosyVoice2, Qwen3), aunque todos son open source.
-- Para aplicaciones de streaming full-duplex, se requiere una integración cuidadosa con los mecanismos de sincronización temporal; un mal uso puede provocar latencias o interrupciones en la conversación.
+- La conversación de voz está limitada a inglés y chino; el resto de los más de 30 idiomas se refiere a capacidades de texto/visión, no necesariamente a voz.
+- El rendimiento declarado procede principalmente de evaluaciones del propio autor; conviene validar en el caso de uso concreto antes de producción.
+- Riesgo de alucinación inherente a los LLM, especialmente en OCR de documentos degradados o en descripciones de escenas ambiguas.
+- La longitud de contexto no está especificada en la información disponible; el streaming continuo puede requerir gestión explícita de ventanas.
+- El modo full-duplex y la interacción proactiva son funcionalidades recientes y su estabilidad en producción no está documentada en la información disponible.
+- La clonación de voz plantea riesgos éticos y legales (suplantación, consentimiento); debe usarse con salvaguardas.
+- Aunque la licencia Apache 2.0 permite uso comercial, los componentes base (Qwen3-8B, Whisper-medium, CosyVoice2, SigLip2) deben verificarse individualmente por si imponen condiciones adicionales.
+- El repo GGUF ocupa 80 GB por incluir múltiples cuantizaciones; el despliegue debe seleccionar solo el archivo necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf
-- Modelo base (safetensors): https://huggingface.co/openbmb/MiniCPM-o-4_5
-- GitHub del proyecto: https://github.com/OpenBMB/MiniCPM-o
-- Demo PyTorch simple: https://github.com/OpenBMB/MiniCPM-o-Demo/
-- CookBook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Demo omni-modal en línea: https://minicpmo45.modelbest.cn/
+- Hugging Face (GGUF): https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-o-4_5
+- GitHub: https://github.com/OpenBMB/MiniCPM-o
+- CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
+- Demo omni-modal: https://minicpmo45.modelbest.cn/
 - Demo visión-lenguaje: http://211.93.21.133:18121/
+- Discord: https://discord.gg/N2RnxGdJ
+- Wiki (chino): https://openbmb.cn/docs/
+- CaseBook audio: https://openbmb.github.io/minicpm-o-4_5/
+- CaseBook omni full-duplex: https://openbmb.github.io/minicpm-o-4_5-omni/
 - Paper (arXiv): https://arxiv.org/abs/2408.01800

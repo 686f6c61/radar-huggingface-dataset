@@ -2,85 +2,99 @@
 
 ## Resumen
 
-MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit es una conversion a MLX y cuantizacion a 4 bits del modelo openbmb/MiniCPM-V-4.7-35B-A3B, publicada por el usuario pgmharikrishnan. No se trata de un modelo entrenado desde cero, sino de un "pack" de pesos optimizado para ejecutarse en hardware de Apple Silicon mediante la libreria MLX y el servidor mlx-serve. El objetivo es permitir la inferencia local del tronco de lenguaje de MiniCPM-V 4.7 en equipos Mac, aprovechando el pipeline de cuantizacion de mlx-lm.
+MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit es una cuantizacion afin de 4 bits del modelo openbmb/MiniCPM-V-4.7-35B-A3B, preparada por el usuario independiente pgmharikrishnan para el runtime mlx-serve sobre Apple Silicon. El modelo base lo desarrollo OpenBMB y combina una arquitectura Mixture-of-Experts (MoE) con aproximadamente 34.660 millones de parametros totales, de los cuales solo una fraccion se activa por token (la nomenclatura A3B sugiere unos 3.000 millones de parametros activos, aunque el dato exacto no figura en la informacion disponible).
 
-La conversion descarta explicitamente la torre de vision y el modulo merger del modelo original, de modo que este pack es exclusivamente de texto. El tronco de lenguaje conserva la arquitectura Qwen3.5 en configuracion MoE (etiquetada como qwen3_5_moe), con 34.659.887.872 parametros totales almacenados (aproximadamente 34,66 mil millones) y una nomenclatura de nombre "35B-A3B" que sugiere del orden de 3 mil millones de parametros activos por token. El repositorio ocupa 19,5 GB.
+El problema que resuelve esta publicacion es concreto: permitir ejecutar un MoE de gran tamano en Macs con memoria unificada, mediante cuantizacion de los expertos enrutados a 4 bits y manteniendo en BF16 las normas, escalas y sesgos. El paquete es exclusivamente de texto: no incluye la torre de vision ni el merger del modelo multimodal original, por lo que no procesa imagenes ni video. Es relevante ahora porque demuestra que modelos MoE de la clase 35B pueden servirse en hardware de consumo Apple con un pico de memoria de 24,7 GB y velocidades de decodificacion de 60,6 tok/s.
 
-Su relevancia actual es practica: demuestra el flujo de conversion de modelos MoE grandes a un formato cuantizado de 4 bits ejecutable en Macs, manteniendo el enrutador MoE (mlp.gate y shared_expert_gate) en 8 bits para preservar la calidad de la seleccion de expertos. La licencia es Apache-2.0, heredada del modelo original.
+La licencia es Apache-2.0, heredada del modelo base, lo que facilita el uso comercial. La conversion es no oficial y el propio autor recomienda validarla para la carga de trabajo concreta antes de llevarla a produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE tipo transformer sobre tronco de lenguaje Qwen3.5 (qwen3_5_moe) |
-| Parametros totales | 34.659.887.872 (34,66 mil millones) |
-| Parametros activos | Aproximadamente 3.000 millones, segun la nomenclatura "A3B" del nombre del modelo (no confirmado en la informacion disponible) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), tipo nativo `minicpmv4_7` |
+| Parametros totales | 34.659.887.872 (~34,66 B) |
+| Parametros activos | ~3 B (inferido de la nomenclatura A3B; dato exacto no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits afina, tamano de grupo 64; enrutador MoE (mlp.gate) y shared_expert_gate en 8 bits |
+| Tipos de cuantizacion | Afin 4 bits, group size 64; expertos enrutados a 4 bits; gates de router y de shared-expert a 8 bits; normas, escalas y sesgos en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (formato MLX, libreria mlx) |
+| Formato de pesos | safetensors (MLX); tamano del repo 19,5 GB |
+| Runtime requerido | mlx-serve v26.10.2 o superior |
+| Modalidad | Solo texto (sin torre de vision ni merger) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una mezcla de expertos (MoE) construida sobre la arquitectura Qwen3.5, identificada en el repositorio como `qwen3_5_moe`. La conversion a MLX se realizo con la herramienta `convert` de mlx-lm e incluye varios ajustes tecnicos: el desplazamiento +1 de RMSNorm queda integrado en los pesos, la convolucion conv1d se transpone y la proyeccion fusionada de expertos `gate_up_proj` se divide en `switch_mlp`. Como resultado, el pack emplea el mismo layout que los paquetes Qwen3.5 de mlx-community y carga tanto en mlx-serve como en mlx-lm.
+La arquitectura es un transformer con capas Mixture-of-Experts: cada capa contiene expertos enrutados y un gate de router que decide que expertos se activan por token, ademas de gates de shared-expert. La cuantizacion respeta esta estructura tratando de forma diferenciada los expertos enrutados (4 bits), los gates (8 bits) y los parametros sensibles como normas y sesgos (BF16). El modelo base es multimodal (MiniCPM-V), pero esta conversion elimina deliberadamente la parte visual y conserva unicamente los pesos del modelo de lenguaje.
 
-La cuantizacion es afina de 4 bits con tamano de grupo 64. La decision de mantener el enrutador MoE (`mlp.gate`) y el `shared_expert_gate` en 8 bits busca preservar la precision en la seleccion de expertos, que es sensible a la cuantizacion agresiva. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO, ya que estos datos corresponden al modelo original y no se detallan en la informacion proporcionada. Tampoco se documenta ninguna innovacion de decodificacion especulativa o atencion lineal.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo base uso RLHF, DPO u otras tecnicas de alineamiento; esos datos corresponden a la model card de openbmb y no se incluyen en la informacion proporcionada. Tampoco se documentan innovaciones tecnicas adicionales del modelo base (atencion lineal, decodificacion especulativa u otras) mas alla del propio diseno MoE.
 
 ## Capacidades
 
-- Generacion de texto y conversacion: el pack esta orientado al pipeline text-generation y al uso conversacional.
-- Razonamiento y codigo: al ser un tronco de lenguaje Qwen3.5, se le presuponen capacidades generales de generacion, razonamiento y programacion, aunque no se aportan datos especificos en la informacion disponible.
-- Ejecucion local en Apple Silicon: disenado para inferencia nativa en Mac mediante MLX y mlx-serve.
-- Sin vision: la torre de vision y el merger fueron eliminados expresamente, por lo que este modelo no procesa imagenes, a diferencia del MiniCPM-V original.
-- Tool calling, agentes y capacidades multilingues: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional y de proposito general en modo solo texto.
+- Razonamiento y conocimiento general: el autor reporta 89,75% en MMLU-Pro sobre 400 preguntas.
+- Razonamiento matematico: 100% en GSM8K sobre 50 preguntas.
+- Generacion de codigo: 6/6 tareas resueltas en el conjunto de evaluacion del autor.
+- Servido de baja latencia en Apple Silicon mediante mlx-serve, con decodificacion a 60,6 tok/s.
+- Soporte de tool calling, function calling, agentes multi-paso, thinking mode o capacidades multilingues: no disponible en la informacion proporcionada.
+- Capacidades de vision y video: no disponibles en este paquete (eliminadas respecto al modelo base).
 
 ## Casos de uso
 
-- Inferencia local en Mac para desarrollo: permite ejecutar un modelo MoE de aproximadamente 34,66 mil millones de parametros en un equipo Apple Silicon, gracias a la cuantizacion de 4 bits y al formato MLX, ideal para probar y depurar aplicaciones sin depender de la nube.
-- Asistente de texto en escritorio: se puede servir como API local mediante `mlx-serve serve --port 11234` y consumirla desde editores, IDEs o scripts para generacion y reescritura de texto.
-- Generacion de codigo asistida en entornos sin GPU dedicada: al ejecutarse en Mac, encaja en flujos de trabajo de desarrolladores que quieren autocompletado o generacion de codigo sin acceso a una GPU NVIDIA.
-- Procesamiento por lotes de documentos de texto: para resumir, clasificar o transformar documentos largos en local, siempre que el contexto disponible (no documentado) lo permita.
-- Chatbot conversacional autoalojado: uso como backend de conversacion multi-turno en aplicaciones propias, aprovechando el tag "conversational".
-- Experimentacion con arquitecturas MoE: sirve como referencia para estudiar como se comporta un MoE grande cuantizado a 4 bits con el enrutador en 8 bits dentro del ecosistema MLX.
-- Evaluacion comparativa de cuantizacion: util para medir el impacto en calidad de la cuantizacion afina de 4 bits frente a los pesos originales en tareas de texto.
+- Asistente conversacional local en Mac: el modelo puede servirse con `mlx-serve serve` y atender conversaciones multi-turno en un equipo Apple con 24,7 GB de pico de memoria, sin depender de la nube.
+- Prototipado de agentes en estacion de trabajo: la naturaleza MoE reduce el coste computacional por token, lo que permite iterar sobre flujos de razonamiento en local antes de desplegar en infraestructura mayor.
+- Generacion de codigo en entornos de desarrollo sobre macOS: el rendimiento reportado (6/6 tareas) y la decodificacion a 60,6 tok/s lo hacen util para autocompletado y generacion de fragmentos en el editor.
+- Evaluacion de modelos MoE en hardware de consumo: sirve como banco de pruebas para medir throughput y memoria de un MoE de 35B en Apple Silicon antes de invertir en GPU dedicadas.
+- Procesamiento por lotes de texto en local: tareas de resumen, clasificacion o reescritura que se benefician de ejecutarse en el propio equipo por privacidad de los datos.
+- Educacion e investigacion: reproduccion de resultados de benchmarks (MMLU-Pro, GSM8K) en un portatil o Mac Studio para estudiar el comportamiento de MoE cuantizados a 4 bits.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados publicados por el autor, medidos en Apple M4 Max con mlx-serve 26.10.2:
+
+| Benchmark | Resultado |
+|---|---|
+| MMLU-Pro (400 preguntas) | 89,75% (359/400) |
+| GSM8K (50 preguntas) | 100% |
+| Coding (6 tareas) | 6/6 |
+| Decodificacion | 60,6 tok/s |
+| Prefill | 343 tok/s |
+| Memoria pico | 24,7 GB |
+
+El propio autor advierte que MMLU-Pro es publico y no puede descartarse contaminacion por entrenamiento. No se dispone de comparaciones con otros modelos en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- Plataforma: exclusivamente Apple Silicon, ya que el modelo usa MLX y la libreria mlx-serve/mlx-lm.
-- Memoria unificada estimada: el repositorio pesa 19,5 GB, por lo que se recomienda un minimo de 24 GB de memoria unificada; 32 GB o mas deja margen para cache KV y el propio sistema.
-- Equipos recomendados: Mac con chip de la familia M (M1/M2/M3/M4) en configuracion Max o Ultra con 32 GB o mas de memoria unificada.
-- Viabilidad en hardware de consumo: si, en Macs de gama alta con memoria unificada suficiente; no esta pensado para GPUs NVIDIA ni para el ecosistema CUDA.
-- Opciones de despliegue: mlx-serve (servidor y modo `run`) y mlx-lm. No es compatible con vLLM, llama.cpp, Ollama o TGI, que no ejecutan el formato MLX.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- Memoria: pico medido de 24,7 GB durante la ejecucion de los benchmarks; se recomienda un equipo con al menos 32 GB de memoria unificada para dejar margen al sistema.
+- Hardware validado: Apple M4 Max (serie M de Apple Silicon con soporte MLX).
+- GPU dedicadas (A100, H100, RTX 4090): no aplicables; el formato MLX esta pensado para Apple Silicon y no se documenta soporte en CUDA.
+- Despliegue: mlx-serve v26.10.2 o superior, mediante `mlx-serve serve --model pgmharikrishnan/MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Rendimiento medido: 60,6 tok/s en decodificacion y 343 tok/s en prefill sobre M4 Max.
+- Tamano en disco: 19,5 GB de repositorio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Licencia | Plataforma |
+| Modelo | Parametros | Contexto | Licencia | Formato / runtime | Notas |
 |---|---|---|---|---|---|
-| Este pack (MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit) | 34,66 mil millones totales | 4 bits MLX (router en 8 bits) | no disponible | Apache-2.0 | Apple Silicon (MLX) |
-| openbmb/MiniCPM-V-4.7-35B-A3B | no disponible (modelo original completo) | sin cuantizar (formato original) | no disponible | Apache-2.0 | multiplataforma, incluye vision |
-| Paquetes Qwen3.5 de mlx-community | no disponible | 4 bits MLX | no disponible | no disponible | Apple Silicon (MLX) |
-
-La diferencia principal respecto al modelo original es la eliminacion de la vision y la cuantizacion. Frente a los paquetes Qwen3.5 de mlx-community, comparte layout de pesos, lo que facilita la interoperabilidad dentro de mlx-serve y mlx-lm.
+| MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit (este) | ~34,66 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors MLX / mlx-serve | Solo texto, cuantizado a 4 bits |
+| openbmb/MiniCPM-V-4.7-35B-A3B (base) | ~34,66 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors / transformers | Multimodal (texto, imagen, video) |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Sin capacidades de vision: la torre de vision y el merger se eliminaron, por lo que no puede procesar imagenes; no debe confundirse con el MiniCPM-V original.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; aplica el riesgo habitual de los modelos generativos de texto.
-- Sesgos: no documentados, dado que no se describe el dataset de entrenamiento.
-- Limitaciones de contexto e idioma: no disponible; no se especifican la ventana de contexto ni los idiomas soportados.
-- Restricciones de licencia: Apache-2.0, permisiva para uso comercial, heredada del modelo original, aunque se recomienda verificar los terminos del modelo base openbmb/MiniCPM-V-4.7-35B-A3B.
-- Dependencia de plataforma: solo funciona en el ecosistema MLX (Apple Silicon); no es portable a CUDA ni a otros runners sin reconversion.
-- Naturaleza de la publicacion: es una conversion de la comunidad (0 descargas y 0 likes en el momento del registro), no una version oficial, por lo que conviene validar la calidad de los pesos cuantizados antes de usarla en produccion.
-- Fecha de creacion y actualizacion registradas en 2026-10-12, poco habitual; conviene verificar la procedencia de los pesos.
+- Conversion no oficial: no la mantiene OpenBMB y el autor recomienda validarla para la carga de trabajo antes de usarla en produccion.
+- Solo texto: no procesa imagenes ni video; si se necesita vision hay que usar el modelo base.
+- Requiere mlx-serve v26.10.2 o superior; no funciona con otros runtimes sin conversion adicional.
+- Limitado a Apple Silicon (MLX); no hay soporte documentado para CUDA.
+- Riesgo de contaminacion en MMLU-Pro, reconocido por el propio autor; los resultados de GSM8K y coding se basan en muestras pequenas (50 y 6 tareas), por lo que su valor estadistico es limitado.
+- Longitud de contexto e idiomas soportados no documentados: no se puede garantizar comportamiento en contextos largos ni en castellano sin evaluacion propia.
+- Riesgo de alucinacion y sesgos: no se documentan evaluaciones de sesgo ni de robustez para esta conversion.
+- La cuantizacion a 4 bits puede degradar la calidad respecto al modelo base en tareas sensibles; no se aportan comparativas directas base vs. cuantizado.
+- Licencia Apache-2.0 permite uso comercial, pero al ser una conversion independiente conviene revisar los terminos del modelo base y citar la atribucion a OpenBMB.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/pgmharikrishnan/MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
-- Repositorio de mlx-serve: https://github.com/ddalcu/mlx-serve
+- Organizacion OpenBMB: https://huggingface.co/openbmb
+- Papers, blogs, repos y demos adicionales: no disponibles en la informacion proporcionada.

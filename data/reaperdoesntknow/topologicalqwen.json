@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/TopologicalQwen · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/TopologicalQwen",
-      "snippet": "That proves the methodology — structure beats scale. This model is the exception. TopologicalQwen was trained on Colab H100 at BF16 precision with a 30B-parameter teacher. Same TKD methodology, premium compute. This is the DistilQwen collection&#x27;s answer to \"what happens when you give this pipeline real hardware?\""
-    },
-    {
-      "title": "TopologicalQwen API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/reaperdoesntknow/TopologicalQwen",
-      "snippet": "TopologicalQwen is a 1.7B parameter model distilled from Qwen3-30B-A3B using Topological Knowledge Distillation (TKD) — a methodology that treats the teacher&#x27;s output distribution over a concatenated token stream as a bounded variation (BV) function and decomposes knowledge transfer into three channels via the Mesh Fundamental Identity:"
-    },
-    {
-      "title": "Fine-tuned Models for reaperdoesntknow/TopologicalQwen - Hugging Face",
-      "url": "https://huggingface.co/models?other=base_model:finetune:reaperdoesntknow/TopologicalQwen",
-      "snippet": "Explore machine learning models."
-    },
-    {
-      "title": "TopologicalQwen — AI Model | Antbase",
-      "url": "https://antbase.ai/models/topologicalqwen",
-      "snippet": "Overview TopologicalQwen is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
-    },
-    {
-      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF: Model synced ...",
-      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF",
-      "snippet": "About the Model This is a two-stage model: Stage 1 — DISC-Informed Knowledge Distillation: Qwen3-1.7B distilled from Qwen3-30B-A3B-Instruct on 6,122 STEM chain-of-thought samples using proof-weighted cross-entropy loss (2.5x → 1.5x decay on derivation tokens) and KL divergence at T=2.0."
-    }
-  ]
+  "sources": []
 }

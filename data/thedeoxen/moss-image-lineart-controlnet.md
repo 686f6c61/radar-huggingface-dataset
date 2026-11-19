@@ -2,92 +2,90 @@
 
 ## Resumen
 
-MOSS-Image-lineart-controlnet es un adaptador de tipo LoRA con comportamiento de ControlNet para el modelo de generación y edición de imágenes MOSS-Image-SFT, desarrollado por OpenMOSS-Team. Lo publica el usuario thedeoxen en Hugging Face bajo licencia Apache 2.0. Su función es tomar un dibujo de líneas (lineart blanco sobre fondo negro) como imagen de control y generar una imagen nueva que respeta esa estructura, dejando que el prompt de texto defina identidad, materiales, ropa, iluminación y estilo. No es un adaptador oficial de concatenación de color o profundidad del modelo base, sino una LoRA de edición entrenada al estilo ControlNet que se carga con un cargador de LoRA convencional.
+MOSS-Image-lineart-controlnet es un adaptador LoRA de tipo ControlNet para el modelo de generacion y edicion de imagenes MOSS-Image-SFT, desarrollado por el usuario thedeoxen. Resuelve un problema concreto: imponer la estructura de un dibujo de lineas (lineart) sobre la generacion, de modo que el modelo siga los contornos de una imagen de control mientras el prompt de texto define identidad, materiales, ropa, color e iluminacion. No es un ControlNet completo ni el adaptador oficial de concatenacion color/profundidad de MOSS, sino una LoRA que se comporta como un ControlNet.
 
-El adaptador tiene rango 64 en capas lineales y rango 16 en convoluciones, y se distribuye como un único archivo safetensors de aproximadamente 0,3 GB junto con un workflow de ComfyUI. Se entrenó sobre el checkpoint del paso 5000 y está pensado para usarse con el UNet `moss_image_sft_int8_convrot.safetensors`, el text encoder `qwen3.5_9b_w4a8_gptq.safetensors` y el VAE `flux2-vae_small.safetensors` del modelo base.
+El adaptador se entrena como adaptador de edicion: la imagen de control actua como referencia y el prompt describe la escena a generar. La LoRA tiene rango 64 en capas lineales y rango 16 en convoluciones, y el checkpoint publicado corresponde al paso de entrenamiento 5000. Se distribuye bajo licencia Apache 2.0, con pesos en safetensors y un workflow de ComfyUI incluido, y esta pensado para el modelo base OpenMOSS-Team/MOSS-Image-SFT.
 
-Su relevancia práctica es que añade control estructural preciso a un modelo de edición por prompt sin necesidad de reentrenar el modelo completo: permite colorear bocetos, trasladar la estructura de una foto a una escena nueva o mantener el trazo de un diseño mientras se cambia por completo la apariencia. Es un recurso nicho, orientado a flujos de trabajo en ComfyUI, no un modelo autónomo.
+Su relevancia practica esta en el flujo de trabajo: permite colorear dibujos, transformar fotos en escenas nuevas conservando la estructura de lineas y dirigir disenos por el trazo en lugar de por la iluminacion. El repositorio ocupa 0,3 GB y acumula 2287 descargas, lo que indica un uso activo dentro de la comunidad de ComfyUI.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el UNet de MOSS-Image-SFT, con comportamiento de ControlNet para una única imagen de control |
-| Parámetros totales | no disponible (pesos del adaptador en un archivo de ~0,3 GB; el modelo base no se incluye) |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | LoRA (adaptador tipo ControlNet) sobre el UNet de MOSS-Image-SFT; rango 64 en capas lineales, rango 16 en convoluciones |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | el adaptador se distribuye en safetensors; el modelo base recomendado usa UNet int8 (`moss_image_sft_int8_convrot`) y text encoder w4a8 GPTQ |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`moss_image_sft_lineart_control_lora.safetensors`) + workflow JSON de ComfyUI |
+| Tipos de cuantizacion | no disponible para la LoRA; el modelo base se usa con UNet int8 (`moss_image_sft_int8_convrot.safetensors`) y text encoder w4a8 GPTQ (`qwen3.5_9b_w4a8_gptq.safetensors`) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (`moss_image_sft_lineart_control_lora.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es una LoRA de edición con rango 64 en las capas lineales y rango 16 en las convoluciones, aplicada sobre el UNet de MOSS-Image-SFT. Se entrenó como adaptador de edición: la imagen de control actúa como referencia estructural y el prompt describe la imagen que se quiere generar. Según la model card, el entrenamiento se realizó con la caché KV activada y el formato de edición `ai-toolkit`, un detalle que hay que replicar en la inferencia para que el comportamiento coincida con el del entrenamiento. El checkpoint publicado corresponde al paso 5000.
+El adaptador es una LoRA aplicada al UNet del modelo base MOSS-Image-SFT, con rango 64 en las capas lineales y rango 16 en las convoluciones. Se entrena como adaptador de edicion: la imagen de control (un dibujo de lineas blancas sobre fondo negro) se pasa como unica imagen de referencia a traves del nodo Text Encode MOSS-Image Edit, y el prompt de texto describe la imagen objetivo. El checkpoint publicado es el paso 5000 de entrenamiento.
 
-Los mapas de control de entrenamiento son lineart realista en modo *coarse* (grueso), con líneas blancas sobre fondo negro. La card indica explícitamente que este ajuste se aproxima mejor a los mapas de entrenamiento que el modo de lineart fino, y que las líneas dispersas y ligeras funcionan mejor que un boceto denso. No se detalla en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de refuerzo o preferencias; tampoco se documentan innovaciones de decodificación o atención específicas del adaptador.
+El entrenamiento se realizo con la cache KV activada, lo que obliga a configurar el formato de edicion `ai-toolkit` tanto en la codificacion positiva como en la negativa durante la inferencia. Los mapas de control de entrenamiento se generaron con el preprocesador Realistic Lineart en modo coarse, con lineas blancas sobre negro; lineas dispersas y finas se ajustan mejor a la distribucion de entrenamiento que un boceto denso. El prompt negativo usado en las muestras de entrenamiento es `nsfw, worst quality, bad anatomy, watermark, jpeg artifact`.
 
 ## Capacidades
 
-- Generación de imágenes condicionada por lineart: reproduce la estructura de un dibujo de líneas blanco sobre negro en la imagen resultante.
-- Control de apariencia por prompt: identidad, materiales, ropa, iluminación y entorno se definen mediante texto, no mediante la imagen de control.
-- Edición imagen a imagen: transforma una foto en una escena nueva conservando la estructura de líneas extraída.
-- Coloreado de dibujos: convierte un boceto en una imagen acabada con color y materiales coherentes con el prompt.
-- Compatibilidad con ComfyUI: incluye workflow con el nodo integrado Text Encode MOSS-Image Edit.
-- Ajuste de rigidez del control: la fuerza de la LoRA puede bajarse hacia 0,7 si el control resulta demasiado rígido; el valor entrenado es 1,0.
-- Sin palabra de activación (trigger word): la imagen de control define la estructura y el prompt define el contenido.
-- Soporte multilingüe: limitado a inglés según la metadata del repositorio.
-- Tool calling, agentes, razonamiento multi-paso, visión o audio: no disponible (no es un modelo de lenguaje; es un adaptador de imagen).
+- Control estructural por lineart: sigue los contornos de un dibujo de lineas limpias, sin el ruido adicional de un mapa Canny crudo.
+- Generacion guiada por prompt: identidad, materiales, ropa, color, iluminacion y entorno se definen mediante texto, no mediante la imagen de control.
+- Edicion image-to-image: la imagen de control se pasa como referencia unica en el nodo Text Encode MOSS-Image Edit.
+- Compatibilidad con ComfyUI: incluye workflow (`moss_image_lineart_control.json`) con carga de foto, construccion del mapa de control, codificacion y muestreo.
+- Ajuste de rigidez del control: la fuerza de la LoRA puede bajarse hacia 0.7 si el control resulta demasiado estricto; 1.0 es el valor entrenado.
+- Sin trigger word: no requiere palabra de activacion.
+- Capacidades del modelo base (MOSS-Image-SFT): generacion y edicion de imagenes con text encoder Qwen3.5 9B y VAE flux2; el adaptador hereda el soporte de idioma ingles.
 
 ## Casos de uso
 
-- Coloreado de lineart para ilustración: se introduce un dibujo de líneas y un prompt que describe paleta, materiales e iluminación; el adaptador rellena la imagen respetando los contornos. Adecuado porque el control estructural evita que el modelo invente geometrías distintas a las del boceto.
-- Conversión de foto a escena nueva: se extrae el lineart de una fotografía con un preprocesador *coarse* y se genera una escena distinta con la misma composición, útil para previsualización de vestuario, decorados o localizaciones.
-- Diseño de personajes a partir de bocetos: el estudio dibuja la silueta y la pose, y el prompt fija vestuario y estilo; permite iterar variantes de color y material sin redibujar.
-- Previsualización de producto o packaging: a partir de un boceto de forma se generan renders con distintos acabados y colores, manteniendo la silueta definida por el diseñador.
-- Storyboard y cómic: se dibujan las viñetas con lineart y se generan versiones acabadas con un prompt de estilo consistente, acelerando la fase de arte final.
-- Pruebas de concepto en pipelines de ComfyUI: el workflow incluido permite encadenar carga de imagen, extracción de lineart, codificación con prompt y muestreo, lo que facilita integrarlo en flujos automatizados de generación por lotes.
-- Restauración estilizada de dibujos técnicos o arquitectónicos: se conserva el trazado de un plano o croquis y se le aplica un acabado visual concreto mediante prompt.
+- Coloreado de dibujos lineales: se introduce un lineart blanco sobre negro como imagen de control y un prompt que describa paleta, materiales e iluminacion; el modelo rellena la escena respetando los contornos del dibujo.
+- Conversion de foto a escena nueva: se extrae el lineart de una fotografia con Realistic Lineart coarse y se genera una escena distinta que conserva la estructura de lineas de la original, util para variaciones de vestuario, epoca o ambientacion.
+- Bocetos de diseno de producto o personaje: el trazo dirige la composicion mientras el prompt fija materiales y acabados, adecuado para iterar sobre disenos donde la forma debe mantenerse estable.
+- Previsualizacion de concept art: a partir de un boceto rapido se generan varias propuestas con prompts distintos, manteniendo la silueta y la composicion del dibujo original.
+- Integracion en pipelines de ComfyUI: el workflow incluido permite montar un nodo de control de lineart en produccion de imagenes por lotes, con ajustes fijos de 30 pasos, CFG 4, sampler euler y scheduler simple.
+- Ilustracion editorial y storyboard: se parte de un lineart de encuadre y se generan variantes de escena con coherencia estructural, reduciendo el trabajo de redibujado manual.
+- Prototipado de vestuario y atrezzo sobre una pose fija: el lineart define la pose y el prompt define prendas y tejidos, util para equipos de diseno que necesitan multiples variantes sobre la misma silueta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita. El adaptador en sí ocupa unos 0,3 GB, pero requiere cargar el modelo base completo (UNet int8, text encoder w4a8 GPTQ y VAE), por lo que la VRAM vendrá determinada por MOSS-Image-SFT y no por la LoRA.
-- GPU recomendadas: no disponible en la información proporcionada.
-- Compatibilidad con GPU de consumo: no disponible; depende de los requisitos del modelo base MOSS-Image-SFT, no documentados en esta ficha.
-- Opciones de despliegue: ComfyUI (flujo recomendado, con workflow incluido) y librería diffusers (etiqueta `diffusers` del repositorio). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un adaptador de difusión.
-- Parámetros de muestreo recomendados: 30 pasos, CFG 4, sampler `euler` con scheduler `simple`, fuerza de LoRA 1,0 y formato de edición `ai-toolkit` en la codificación positiva y negativa.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El modelo base se distribuye en el flujo recomendado con UNet int8 y text encoder w4a8 GPTQ, lo que reduce los requisitos frente a pesos en precision completa, pero no se especifican cifras de VRAM.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible; el uso de cuantizacion int8 en el UNet y w4a8 en el text encoder sugiere que el flujo esta pensado para reducir huella de memoria, pero no se detalla en que tarjetas cabe.
+- Opciones de despliegue: ComfyUI (flujo documentado con el workflow incluido y el nodo Text Encode MOSS-Image Edit); la libreria declarada es diffusers, por lo que la carga via diffusers es posible, aunque el flujo detallado en la model card es el de ComfyUI.
+- Latencia y throughput: no disponibles.
+- Tamano del repositorio: 0,3 GB (solo la LoRA y el workflow).
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Control | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thedeoxen/MOSS-Image-lineart-controlnet | LoRA de edición con comportamiento ControlNet | MOSS-Image-SFT | Lineart (una imagen) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
-| Adaptadores oficiales de color/profundidad de MOSS-Image | Adaptadores de concatenación oficiales | MOSS-Image-SFT | Color y profundidad | no disponible | no disponible |
-| ControlNet estándar para modelos de difusión tipo SD | ControlNet completo | Modelos de difusión de la familia SD | Canny, lineart, depth, pose, etc. | variable según versión | amplia disponibilidad en Hugging Face |
+| thedeoxen/MOSS-Image-lineart-controlnet | LoRA tipo ControlNet sobre MOSS-Image-SFT | no disponible | no disponible | apache-2.0 | Hugging Face, 2287 descargas |
+| OpenMOSS-Team/MOSS-Image-SFT | Modelo base de generacion/edicion de imagenes | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Adaptador oficial color/depth de MOSS | Adaptador de concatenacion oficial | no disponible | no disponible | no disponible en la informacion proporcionada | Mencionado en la model card, sin enlace |
+| ControlNet estandar para modelos diffusion | ControlNet completo | no disponible | no disponible | depende del modelo | Ecosistema diffusers/ComfyUI |
 
-La comparación con ControlNet de la familia Stable Diffusion es pertinente por categoría funcional (control estructural por lineart), pero no se dispone de datos de rendimiento comparables para este adaptador. No se han encontrado benchmarks ni métricas publicadas que permitan una comparación cuantitativa.
+La comparacion cuantitativa con alternativas no esta disponible: la informacion proporcionada no incluye parametros, contexto ni metricas de los modelos comparables. La diferencia funcional documentada es que este adaptador es una LoRA que se comporta como ControlNet, no un ControlNet completo ni el adaptador oficial de concatenacion de MOSS.
 
 ## Limitaciones y advertencias
 
-- Es un adaptador, no un modelo autónomo: sin MOSS-Image-SFT no funciona, y la calidad final depende del modelo base.
-- Entrenado únicamente con lineart realista en modo *coarse* y líneas blancas sobre negro; otros estilos de preprocesado o líneas densas pueden degradar el resultado.
-- El formato de edición debe fijarse en `ai-toolkit` en la codificación positiva y negativa; no hacerlo rompe la correspondencia con el entrenamiento.
-- La fuerza de LoRA entrenada es 1,0; valores muy distintos pueden producir rigidez o pérdida de control.
-- Idioma soportado limitado a inglés según la metadata; prompts en otros idiomas no están garantizados.
-- Riesgo de alucinación visual: el prompt puede introducir elementos no presentes en el lineart, y el modelo puede reinterpretar detalles finos del dibujo.
-- La model card incluye un prompt negativo de entrenamiento (`nsfw, worst quality, bad anatomy, watermark, jpeg artifact`), lo que sugiere que el filtrado de contenido depende de su uso; no se documentan salvaguardas adicionales.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base MOSS-Image-SFT debe verificarse por separado en cuanto a sus propios términos.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia comunitaria de robustez en producción.
-- No se documentan sesgos demográficos ni evaluaciones de seguridad del adaptador.
+- Solo soporta ingles como idioma declarado; los prompts en otros idiomas no estan cubiertos por la model card.
+- Depende estrictamente del modelo base OpenMOSS-Team/MOSS-Image-SFT y de su flujo de carga concreto (UNet int8, text encoder Qwen3.5 9B w4a8 GPTQ, VAE flux2); no es un adaptador generico.
+- Requiere configurar el formato de edicion `ai-toolkit` en la codificacion positiva y negativa; omitirlo degrada el resultado porque la LoRA se entreno con cache KV activada.
+- Funciona mejor con lineas blancas dispersas sobre negro generadas con Realistic Lineart en modo coarse; lineas densas o de grosor alto se alejan de la distribucion de entrenamiento.
+- Riesgo de rigidez excesiva del control: si el resultado queda demasiado apegado al trazo, hay que bajar la fuerza de la LoRA hacia 0.7.
+- Riesgo de alucinacion visual y de artefactos propios del modelo base; el prompt negativo de referencia incluye `nsfw, worst quality, bad anatomy, watermark, jpeg artifact`.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la informacion disponible.
+- Licencia Apache 2.0 en el adaptador, pero el uso comercial del conjunto depende tambien de la licencia del modelo base MOSS-Image-SFT, que no se detalla en la informacion proporcionada.
+- No hay benchmarks publicados que permitan validar el rendimiento frente a alternativas.
 
 ## Enlaces
 
-- Repositorio del adaptador: https://huggingface.co/thedeoxen/MOSS-Image-lineart-controlnet
-- Pesos: https://huggingface.co/thedeoxen/MOSS-Image-lineart-controlnet/blob/main/moss_image_sft_lineart_control_lora.safetensors
+- Modelo en Hugging Face: https://huggingface.co/thedeoxen/MOSS-Image-lineart-controlnet
+- Pesos de la LoRA: https://huggingface.co/thedeoxen/MOSS-Image-lineart-controlnet/blob/main/moss_image_sft_lineart_control_lora.safetensors
 - Workflow de ComfyUI: https://huggingface.co/thedeoxen/MOSS-Image-lineart-controlnet/blob/main/moss_image_lineart_control.json
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

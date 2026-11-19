@@ -2,125 +2,102 @@
 
 ## Resumen
 
-GLM-5.3-Flash GSQ-RCO 3.0-bit con atención Q4_K es una cuantización GGUF del modelo MoE GLM-5.3-Flash, publicada por el usuario neuralll sobre el trabajo previo de pfeifferj. No es un modelo entrenado desde cero, sino una variante de un archivo GGUF ya cuantizado a 3,0 bits mediante las técnicas GSQ y RCO del IST-DASLab, en la que se han recuantizado a Q4_K únicamente los tensores no pertenecientes a los expertos enrutados (atención, expertos compartidos, FFN densa y cabeza de salida). El objetivo es acelerar la decodificación en un solo flujo de un modelo de 313.326.811.966 parámetros totales que ocupa 113,6 GB en disco.
+GLM-5.3-Flash-GSQ-RCO-3.0bit-Q4Kattn-GGUF es una cuantizacion GGUF de 3,0 bits del modelo GLM-5.3-Flash de Z.ai (zai-org), publicada por el usuario neuralll. Se trata de un modelo de arquitectura MoE (mixture of experts) con 313.326.811.966 parametros totales y 288 expertos enrutados por capa, del cual solo se activan 8 expertos por token en cada capa. El repositorio ocupa 113,6 GB y esta pensado para decodificacion de un solo flujo en GPUs de consumo mediante una cache de expertos en VRAM.
 
-El modelo subyacente es un transformer con mezcla de expertos (MoE) organizado en 42 capas MoE con 288 expertos enrutados por capa, de los cuales cada token activa 8. La relevancia práctica de esta ficha no está en el modelo base, sino en el ecosistema que lo acompaña: requiere un fork de llama.cpp (neurall/llama.cpp) que añade soporte para GLM-5.3-Flash y una caché de expertos calientes residente en VRAM, con la que el autor reporta 26-28 t/s frente a 12,3 t/s de llama.cpp estándar en 2x RTX 3090, a cambio de un deterioro de perplejidad del 0,95 % (3,5871 frente a 3,5534 en wikitext-2).
+La aportacion principal de esta variante no es la cuantizacion base (heredada de pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF, una reproduccion comunitaria de los metodos GSQ y RCO de IST-DASLab), sino el reempaquetado de los tensores no-experto de Q8_0 a Q4_K: atencion, expertos compartidos, FFN densa y cabeza de salida, unos 8,3 GB del archivo. Los 126 tensores de expertos enrutados, el embedding de tokens y el resto de tensores F32/BF16 se copian bit a bit del original. Como esos pesos Q8_0 se transmiten a la GPU en cada token, reducirlos acelera la decodificacion a costa de un aumento de perplejidad de aproximadamente el 1%.
 
-Se trata, por tanto, de una pieza orientada a inferencia local en hardware de consumo multi-GPU, con licencia MIT y formato GGUF, publicada el 24 de septiembre de 2026. No se han documentado datos de contexto máximo, idiomas soportados ni resultados de benchmarks de conocimiento o razonamiento.
+El modelo requiere un fork especifico de llama.cpp (neurall/llama.cpp) que implementa una cache LRU de expertos residente en GPU, construida sobre el PR #27861 de csantiago78. Segun los datos del autor, en una configuracion de 2x RTX 3090 la decodificacion pasa de 13,8 a 21,5 t/s (1,56x) en una respuesta de chat de 1500 tokens, a cambio de un procesamiento de prompt un 17% mas lento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (transformer con mezcla de expertos); 42 capas MoE, 288 expertos enrutados por capa, 8 activos por token y capa |
-| Parametros totales | 313.326.811.966 (~313,3 B) |
-| Parametros activos | no disponible (la model card indica 8 de 288 expertos por capa, pero no publica el recuento de parámetros activos) |
-| Longitud de contexto | no disponible (las pruebas se hicieron con `-c 1024`) |
-| Tipos de cuantizacion | GGUF 3,0 bits con asignación GSQ-RCO; tensores no experto y de atención en Q4_K; `token_embd` y todos los tensores F32/BF16 copiados sin cambios; 126 tensores de expertos enrutados sin modificar |
+| Arquitectura | Transformer MoE (mixture of experts), 42 capas MoE, 288 expertos enrutados por capa, 8 activos por token |
+| Parametros totales | 313.326.811.966 (313,3 B) |
+| Parametros activos | no disponible (el autor indica 8 de 288 expertos por capa, sin cifra total de parametros activos) |
+| Longitud de contexto | 32k por defecto en el fork de llama.cpp; ampliable con `-c N` a costa de VRAM de cache |
+| Tipos de cuantizacion | 3,0 bits base (GSQ-RCO); tensores no-experto en Q4_K; expertos enrutados, `token_embd` y tensores F32/BF16 sin recuantizar |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | GGUF |
-| Modelo base | pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF (relación: quantized) |
-| Tamaño del repositorio | 113,6 GB |
-| Cuantización previa | GSQ-RCO 3,0 bits (reproducción comunitaria de métodos del IST-DASLab) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con mezcla de expertos. La model card describe 42 capas MoE, cada una con 288 expertos enrutados, y un enrutamiento que activa 8 expertos por token y capa (del orden del 2,8 % de los expertos disponibles). Los tensores de expertos enrutados son 126 (tres por capa: presumiblemente proyecciones de puerta, subida y bajada de cada bloque de expertos). Además de los expertos enrutados, el modelo cuenta con pesos no experto: atención, expertos compartidos, FFN densa y cabeza de salida, más el `token_embd`.
+El modelo base GLM-5.3-Flash emplea una arquitectura transformer con capas MoE de 288 expertos enrutados, de los cuales se activan 8 por token y por capa. El checkpoint cuantizado conserva 42 capas MoE. La cuantizacion original aplica los metodos GSQ (arXiv:2604.18556) y RCO (arXiv:2605.00649) de IST-DASLab, que asignan precision por tensor de forma deliberada; esta variante sobrescribe la asignacion RCO para los tensores no-experto, pasandolos de Q8_0 a Q4_K mediante `llama-quantize --allow-requantize --tensor-type-file`. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO.
 
-Esta ficha no describe el entrenamiento del modelo original, ya que el artefacto publicado es exclusivamente una cuantización. No se dispone de información sobre número de tokens de entrenamiento, composición del dataset, ni sobre fases de ajuste como RLHF o DPO. El trabajo técnico que sí está documentado es la cuantización: el archivo original aplica las técnicas GSQ (arXiv:2604.18556) y RCO (arXiv:2605.00649) del IST-DASLab, asignando precisiones por tensor de forma deliberada; esta variante sobrescribe los tensores Q8_0 no experto a Q4_K (unos 8,3 GB del archivo) para reducir el coste de streaming por token, dejando intactos los expertos.
-
-La segunda innovación relevante es externa al archivo: el fork neurall/llama.cpp implementa una caché LRU de expertos calientes residente en GPU, que llena la VRAM libre con aproximadamente los 100 expertos más usados de cada capa, en lugar de reservar capas completas de forma estática. Según el autor, esto eleva la proporción de trabajo de expertos ejecutado en GPU del 33 % al 85 %, con el 15 % restante en CPU de forma solapada, y habilita aceleración multi-GPU real (2x en 2x RTX 3090). El fork se apoya en el PR #27861 de llama.cpp (csantiago78) y el soporte de GLM-5.3-Flash llega vía los PR #27773 y #27917 (timkhronos).
+La innovacion tecnica relevante esta en el runtime, no en el modelo: el fork de llama.cpp sustituye el reparto estatico por capas entre GPUs por una cache de expertos calientes que llena toda la VRAM libre con los aproximadamente 100 expertos mas usados de cada capa. Dado que el uso de expertos esta sesgado, esa seleccion cubre alrededor del 74% del trabajo de expertos que los tokens eligen realmente en salida de chat, frente al 33% con colocacion estatica de capas completas. El resto se calcula en CPU en paralelo con la GPU. El fork activa por defecto `-ub` 2048 en GPUs de 20+ GiB, desactiva el repacking en CPU y reserva un nucleo de CPU por GPU.
 
 ## Capacidades
 
-- Generación de texto conversacional: el repositorio está etiquetado como `conversational`, y el ejemplo de uso documentado es la generación de un juego de Tetris en HTML.
-- Mezcla de expertos con activación dispersa: 8 de 288 expertos por capa y token, lo que permite mantener la mayor parte de los pesos fuera de la memoria de la GPU.
-- Decodificación optimizada para un solo flujo con caché de expertos: el diseño del fork prioriza la velocidad de decodificación en streaming individual, no el throughput por lotes.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; no se declara ninguna lista de idiomas.
-- Visión, audio u otras modalidades: no documentado.
-- Modo de razonamiento explícito (*thinking mode*): no disponible en la información proporcionada.
+- Generacion de texto conversacional multi-turno, segun el tag `conversational` del repositorio.
+- Razonamiento y codigo: el autor documenta pruebas con prompts de codigo de 12k tokens sobre fuentes de llama.cpp.
+- Soporte de endpoints compatibles con la API de OpenAI (`endpoints_compatible`), incluyendo `/v1/chat/completions`.
+- Ejecucion local con llama.cpp mediante un fork especifico con soporte para GLM-5.3-Flash.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Tool calling, function calling, agentes, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional autoalojado en estación de trabajo: el modelo puede desplegarse con `llama-server` en una máquina con 2 GPU de 24 GB y 125 GB de RAM, gestionando conversaciones multi-turno sin enviar datos a servicios externos, algo relevante para equipos con requisitos de confidencialidad.
-- Generación de código en local para tareas puntuales: la model card valida el modelo generando un juego de Tetris en HTML con temperatura 0; es un escenario realista para prototipado rápido de fragmentos de código sin conexión a APIs externas.
-- Investigación en cuantización: sirve como caso de estudio reproducible del compromiso entre precisión de tensor y velocidad, ya que el autor documenta el comando exacto de `llama-quantize` y el archivo `tensor-types-q4kattn.txt` con la asignación de tipos.
-- Evaluación de estrategias de offload CPU/GPU en MoE: permite comparar empíricamente el reparto estático por capas de llama.cpp estándar frente a la caché de expertos calientes, con métricas publicadas de perplejidad y tokens por segundo.
-- Servicio de inferencia de baja concurrencia: con `-np 1` y una caché dimensionada para un único flujo, encaja en escenarios donde la latencia de un usuario importa más que el throughput agregado.
-- Experimentación con arquitecturas MoE de gran tamaño en hardware de consumo: 113,6 GB de pesos repartidos entre 48 GB de VRAM y RAM del sistema permiten estudiar comportamiento de modelos de más de 300 000 millones de parámetros sin clúster.
-- Base para *benchmarking* de cuantizaciones alternativas: al conservar la asignación RCO en todos los tensores salvo atención y pesos no experto, sirve como referencia para medir el coste de recuantizar otras partes del modelo.
+- Inferencia local de un MoE de 313 B en hardware de consumo: con 2x RTX 3090 (48 GB) y 125 GB de DDR4 el modelo decodifica a 21,5 t/s en respuestas de chat, lo que permite usar un modelo de esta escala en una estacion de trabajo sin servidores de clase A100/H100.
+- Asistencia conversacional de un solo flujo: la cache de expertos esta optimizada para decodificacion single-stream, por lo que encaja en chats interactivos con contexto de hasta 32k tokens donde prima la latencia por token.
+- Analisis de codigo con prompts largos: el autor mide procesamiento de prompt con prompts de 12k tokens de fuentes de llama.cpp; util para revision de repositorios o explicacion de modulos completos.
+- Prototipado e investigacion sobre cuantizacion: el repositorio incluye `tensor-types-q4kattn.txt` con la asignacion tensor a tipo, lo que permite reproducir el proceso y experimentar con asignaciones alternativas de precision.
+- Evaluacion de tecnicas de offload MoE: sirve como banco de pruebas para comparar colocacion estatica por capas frente a cache de expertos calientes en terminos de throughput y perplejidad.
+- Despliegue en entornos con VRAM limitada y RAM abundante: el fork mantiene los expertos en RAM y cachea en GPU los mas usados, un patron adecuado para servidores con mucha DDR4 y GPUs de gama alta de generaciones anteriores.
+- Generacion de texto por lotes pequenos en local: no recomendado para alta concurrencia, ya que las metricas publicadas corresponden a un unico flujo.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son los del autor, medidos en 2x RTX 3090 (48 GB de VRAM), 125 GB de RAM, CPU de 8 núcleos, un solo flujo, con el prompt "generate smallest html tetris game.", contexto de 1024 y temperatura 0. La perplejidad se midió sobre wikitext-2, con 40 fragmentos de 512 tokens.
+El autor publica mediciones de velocidad y perplejidad, no de benchmarks de calidad estandar (MMLU, HumanEval, GSM8K). Configuracion: 2x RTX 3090 (48 GB VRAM, un slot x16 de CPU y uno x4 de chipset X570), Ryzen 7 3700X, 125 GB DDR4, single stream, temperatura 0.
 
-| Modelo / configuración | Decode (t/s) | Perplejidad (wikitext-2) |
+| Metrica | Original 3.0-bit | Este archivo (Q4_K attn) |
 |---|---|---|
-| Original 3,0 bits, llama.cpp estándar (autofit) | 12,3 | 3,5534 |
-| Original 3,0 bits, fork con caché de expertos | ~25 | 3,5534 |
-| Este archivo (atención Q4_K), fork con caché de expertos | 27,72 | 3,5871 (+0,95 %) |
+| Decodificacion, prompt corto (t/s) | 12,5 -> 18,5 (con cache) | 13,8 -> 21,5 (con cache) |
+| Procesamiento de prompt largo, 12k tokens (t/s) | 209 -> 178 (con cache) | 217 -> 181 (con cache) |
+| Decodificacion, prompt largo (t/s) | 11,2 -> 14,7 (con cache) | 12,3 -> 15,7 (con cache) |
+| Perplejidad (wikitext-2, 40 x 512 tokens) | 3,5534 | 3,5871 (+0,95%) |
 
-Reparto de trabajo de expertos según el autor:
-
-| Configuración | Trabajo de expertos en GPU | Trabajo de expertos en CPU | Decode (t/s) |
-|---|---|---|---|
-| llama.cpp estándar (capas completas estáticas) | ~33 % | ~67 % | 12,3 |
-| Fork con caché de expertos calientes | ~85 % | ~15 %, en paralelo | 26-28 |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benchmark de capacidades en la información disponible.
+Notas del autor: las cifras suponen el modelo ya en cache de paginas del sistema operativo; la primera ejecucion tras cambiar de modelo es mas lenta. El procesamiento de prompt con cache es aproximadamente un 17% mas lento que sin cache.
 
 ## Requisitos de hardware
 
-- Almacenamiento: 113,6 GB para el archivo GGUF, más el espacio necesario para el binario y el archivo de plantilla de tipos de tensor si se va a reproducir la cuantización.
-- Configuración probada por el autor: 2x RTX 3090 (48 GB de VRAM en total) + 125 GB de RAM + CPU de 8 núcleos. Con esta configuración se obtienen 27,72 t/s de decodificación en un solo flujo.
-- La model card no incluye estimaciones de VRAM para otras combinaciones de GPU ni para otras cuantizaciones. No disponible.
-- Cabe en GPU de consumo únicamente en configuraciones multi-GPU: una sola tarjeta de 24 GB no aloja el modelo, y una tarjeta de 48 GB tampoco cubre los 113,6 GB de pesos. El reparto entre VRAM y RAM del sistema es obligatorio.
-- El fork monitoriza una ventana de 64 tokens para decidir qué expertos mantiene en caché; el rendimiento óptimo requiere llenar toda la VRAM libre, por lo que conviene fijar `-c` explícitamente para no perder memoria en el ajuste automático de contexto.
-- Despliegue: llama.cpp, y en concreto el fork neurall/llama.cpp, porque llama.cpp estándar no carga GLM-5.3-Flash. Comando de referencia:
-  ```sh
-  llama-server -m GLM-5.3-Flash-GSQ-RCO-3.0bit-q4kattn.gguf \
-      -np 1 -c 1024 -t 6 --cpu-moe -nr --moe-expert-cache -1
-  ```
-- El archivo también carga en cualquier build con soporte de GLM-5.3-Flash (PR #27773 / #27917), pero a la velocidad de llama.cpp estándar (12,3 t/s en la configuración medida), sin caché de expertos.
-- Soporte en vLLM, Ollama, TGI u otros motores de inferencia: no disponible en la información proporcionada.
-- Latencia: no se publican medidas de *time to first token* ni de latencia por petición. Solo se documenta el throughput de decodificación en un único flujo.
+- VRAM: el archivo pesa 113,6 GB; el autor lo ejecuta con 48 GB de VRAM y 125 GB de RAM del sistema, manteniendo los expertos en RAM y cacheando en GPU los mas usados.
+- GPU recomendadas: 2x RTX 3090 es la configuracion medida. No hay datos publicados para A100, H100, RTX 4090 ni otras GPU.
+- GPU de consumo: si, en el escenario medido (2x RTX 3090). No cabe en una unica GPU de consumo.
+- Despliegue: requiere el fork neurall/llama.cpp (soporte GLM-5.3-Flash y cache de expertos). Tambien carga en cualquier build con soporte de GLM-5.3-Flash (PRs #27773 y #27917), pero sin cache y a menor velocidad. No se menciona compatibilidad con vLLM, TGI, Ollama ni llama.cpp upstream.
+- Latencia y throughput: 21,5 t/s de decodificacion en prompt corto y 15,7 t/s en prompt largo con cache en la configuracion indicada; 181 t/s de procesamiento de prompt en 12k tokens.
+- Ajuste por defecto del fork: contexto de 32k, `-ub` 2048 en GPUs de 20+ GiB, un nucleo de CPU libre por GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Contexto | Perplejidad (wikitext-2, según autor) | Decode (2x RTX 3090) | Licencia |
-|---|---|---|---|---|---|---|
-| Este archivo (3,0 bits, atención Q4_K) | 313,3 B totales | GGUF | no disponible | 3,5871 | 27,72 t/s | MIT |
-| pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF (3,0 bits) | 313,3 B totales | GGUF | no disponible | 3,5534 | 12,3 t/s (estándar) / ~25 t/s (fork) | MIT |
-| zai-org/GLM-5.3-Flash (original) | 313,3 B totales | no disponible | no disponible | no disponible | no disponible | MIT |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| Este modelo (neuralll, Q4_K attn) | 313,3 B totales | 32k por defecto | GGUF, 3,0 bits con no-experto en Q4_K | MIT | PPL 3,5871; 21,5 t/s con cache en 2x RTX 3090 |
+| pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF (original 3.0-bit) | 313,3 B totales | 32k por defecto | GGUF, 3,0 bits con asignacion RCO intacta | MIT | PPL 3,5534; 18,5 t/s con cache; misma VRAM |
+| zai-org/GLM-5.3-Flash (base) | no disponible | no disponible | safetensors (presumible) | MIT | Modelo original sin cuantizar; requiere hardware muy superior |
 
-La comparación se limita a variantes del mismo modelo base porque la información disponible no incluye referencias a modelos alternativos de tamaño o categoría equivalentes. La diferencia práctica entre las dos primeras filas es el compromiso explícito del autor: aproximadamente un 1 % más de perplejidad a cambio de en torno a un 10 % más de velocidad de decodificación, sacrificando la asignación de precisión que RCO había diseñado para los tensores de atención y los pesos no experto.
+No se dispone de datos de benchmarks de calidad ni de otras alternativas comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Requiere un fork de llama.cpp. El soporte de GLM-5.3-Flash y la caché de expertos no están en llama.cpp estándar en el momento de publicación; usarlo con un binario sin soporte simplemente falla al cargar.
-- La recuantización de atención y pesos no experto a Q4_K altera la asignación RCO original. El propio autor señala que RCO eligió la precisión de cada tensor de forma deliberada y que, si se quiere la asignación tal como se diseñó, debe usarse el archivo original.
-- Deterioro medido de perplejidad: 3,5871 frente a 3,5534 (+0,95 %) en wikitext-2, con una única semilla de evaluación y 40 fragmentos de 512 tokens.
-- La ganancia de velocidad depende de la distribución de uso de expertos. El autor asume un uso sesgado por el que los ~100 expertos más usados de cada capa cubren alrededor del 85 % de las selecciones; en dominios con enrutamiento más disperso esa cobertura puede reducirse y el rendimiento acercarse al de llama.cpp estándar.
-- Riesgo de alucinación: inherente a los modelos de lenguaje generativos. No se han publicado evaluaciones de veracidad, calibración ni tasas de alucinación para este modelo o su base.
-- Sesgos: no disponible. No se documentan evaluaciones de sesgo, toxicidad ni comportamientos diferenciales por subgrupo.
-- Idiomas: no disponible. No se declara ninguna lista de idiomas soportados ni evaluaciones multilingües, pese a que el modelo original GLM suele distribuirse con soporte multiidioma.
-- Contexto: no disponible. Las únicas pruebas usadas se hicieron con 1024 tokens; se desconoce la ventana máxima soportada y el comportamiento con contextos largos, así como el coste de memoria de la KV cache asociada.
-- Restricciones de licencia: el artefacto se publica bajo MIT, la misma licencia que el modelo base zai-org/GLM-5.3-Flash, por lo que el uso comercial está permitido. Debe conservarse el archivo `LICENSE` y tenerse en cuenta que la cuantización es una reproducción comunitaria, no un lanzamiento del IST-DASLab ni del equipo de Z.ai.
-- Producción: el modelo ocupa 113,6 GB y exige reparto entre VRAM y RAM, con lo que el rendimiento depende fuertemente de la configuración de memoria y del número de GPUs. Con `-np 1`, la caché está dimensionada para un único flujo; aumentar la concurrencia degradará el acierto de la caché y, con él, la velocidad.
-- Estado del artefacto: 16 descargas y 1 *like* en el momento de redactar esta ficha, con documentación mantenida por un autor individual. La model card contiene erratas y afirmaciones de rendimiento no verificadas de forma independiente.
+- Perdida de calidad medible: la perplejidad sube de 3,5534 a 3,5871 (+0,95%) respecto al cuantizado original, por el cambio de Q8_0 a Q4_K en atencion, expertos compartidos, FFN densa y cabeza de salida. El autor recomienda usar el archivo original si se quiere la asignacion RCO tal como fue disenada.
+- Dependencia de un fork: llama.cpp upstream no puede cargar GLM-5.3-Flash segun el autor; sin el fork neurall/llama.cpp se pierde la cache de expertos y el rendimiento cae a la velocidad sin cache.
+- Procesamiento de prompt mas lento con cache (aproximadamente un 17%), lo que penaliza cargas con prompts muy largos y poca generacion.
+- Optimizado para un solo flujo: las metricas publicadas son single-stream; no hay datos de throughput con concurrencia.
+- Riesgo de alucinacion y sesgos: no disponible en la informacion proporcionada.
+- Idiomas soportados: no disponible; no se puede garantizar calidad fuera de los idiomas del modelo base.
+- Primera ejecucion lenta: requiere leer 113,6 GB desde disco hasta la cache de paginas del sistema operativo.
+- Licencia MIT, que permite uso comercial, pero hereda las condiciones del modelo base zai-org/GLM-5.3-Flash (MIT) y de la cuantizacion original de pfeifferj; conviene verificar el archivo LICENSE del repositorio.
+- No es una release de IST-DASLab: la implementacion de GSQ y RCO es una reproduccion comunitaria.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/neuralll/GLM-5.3-Flash-GSQ-RCO-3.0bit-Q4Kattn-GGUF
-- Modelo base de la cuantización: https://huggingface.co/pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/neuralll/GLM-5.3-Flash-GSQ-RCO-3.0bit-Q4Kattn-GGUF
+- Modelo base cuantizado: https://huggingface.co/pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Fork de llama.cpp con soporte de GLM-5.3-Flash y caché de expertos: https://github.com/neurall/llama.cpp
-- PR de llama.cpp con la caché LRU de expertos en GPU (csantiago78): https://github.com/ggml-org/llama.cpp/pull/27861
-- PR de llama.cpp con soporte de GLM-5.3-Flash: https://github.com/ggml-org/llama.cpp/pull/27773
-- PR de llama.cpp con soporte de GLM-5.3-Flash: https://github.com/ggml-org/llama.cpp/pull/27917
-- Artículo GSQ: https://arxiv.org/abs/2604.18556
-- Artículo RCO: https://arxiv.org/abs/2605.00649
+- Fork de llama.cpp con cache de expertos: https://github.com/neurall/llama.cpp
+- Paper GSQ: https://arxiv.org/abs/2604.18556
+- Paper RCO: https://arxiv.org/abs/2605.00649
+- PR de llama.cpp con cache LRU de expertos (csantiago78): https://github.com/ggml-org/llama.cpp/pull/27861
+- PR de soporte GLM-5.3-Flash (timkhronos): https://github.com/ggml-org/llama.cpp/pull/27773
+- PR de soporte GLM-5.3-Flash (timkhronos): https://github.com/ggml-org/llama.cpp/pull/27917

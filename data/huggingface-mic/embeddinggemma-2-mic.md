@@ -2,17 +2,17 @@
 
 ## Resumen
 
-`embeddinggemma-2-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, derivado del modelo `google/embeddinggemma-2`. No es un modelo entrenado ni utilizable para producir embeddings reales: sus pesos son aleatorios (semilla 17) y su configuracion ha sido reducida deliberadamente para que sirva como banco de pruebas de integracion en el ecosistema Transformers. El repositorio empaqueta pesos reducidos, ejemplos de uso y un directorio de expectativas de framework para validar contratos de integracion.
+`embeddinggemma-2-mic` es un artefacto de prueba (test fixture) publicado por el usuario `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado ni utilizable en producción: es una version reducida artificialmente de `google/embeddinggemma-2`, generada para validar integraciones de frameworks (concretamente Transformers) sin necesidad de descargar los pesos completos del modelo original.
 
-El modelo conserva la arquitectura `EmbeddingGemma2Model` del checkpoint original, pero con solo 2 capas en cada torre (texto, vision y audio), lo que reduce el total a 19.313.506 parametros y un tamano de repo de 0,1 GB. Los ficheros de procesador (tokenizer, chat template, preprocessor config y demas) se copian byte a byte desde el modelo base, de modo que el pipeline de preprocesamiento es identico al real.
+El repositorio contiene pesos "slim" (19.313.506 parametros, unos 0,1 GB), el manifiesto de contrato de integracion (`integration.json`), instrucciones de uso con Transformers y un directorio de expectativas de framework. Los pesos son aleatorios (semilla 17), aunque conservan los mismos nombres de tensores que el checkpoint real y pasan una puerta de sensibilidad a la entrada que garantiza que perturbaciones de los inputs mueven los logits al menos 0,001.
 
-Su relevancia es operativa, no de rendimiento: permite a desarrolladores e investigadores ejecutar tests de integracion, comprobar la sensibilidad de entradas y validar contratos de framework sin descargar el checkpoint completo. Esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+Su relevancia es puramente de ingenieria: sirve como fixture reproducible para tests de integracion de la arquitectura `EmbeddingGemma2Model` en el ecosistema Transformers. El propio autor lo etiqueta como `test-artifact` para excluirlo de las busquedas de modelos candidatos. No debe confundirse con un modelo de embeddings funcional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | EmbeddingGemma2Model (encoder multimodal con torres de texto, vision y audio) |
+| Arquitectura | EmbeddingGemma2Model (transformer, config reducida) |
 | Parametros totales | 19.313.506 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,69 +23,65 @@ Su relevancia es operativa, no de rendimiento: permite a desarrolladores e inves
 
 ## Arquitectura y entrenamiento
 
-El modelo reproduce la arquitectura `EmbeddingGemma2Model` del checkpoint `google/embeddinggemma-2`, un encoder disenado para generar embeddings con tres torres especializadas: texto, vision y audio. La version fixture aplica la regla generica de reduccion de `sweep.py`, fijando `num_hidden_layers` a 2 en cada una de las tres torres. Los nombres de tensores son identicos a los del checkpoint real, lo que permite intercambiar pesos sin cambiar el codigo de carga.
+El fixture replica la arquitectura `EmbeddingGemma2Model` del modelo base `google/embeddinggemma-2`, pero con una configuracion reducida mediante la regla generica de `sweep.py`: 2 capas ocultas en el modulo de texto, 2 en el de vision y 2 en el de audio. Los ficheros de procesador (`chat_template.jinja`, `tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`, `preprocessor_config.json`, `processor_config.json`, `config_sentence_transformers.json`, `modules.json`, `sentence_bert_config.json`) se copian byte a byte desde el modelo original.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se aceptaron tras superar una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplaza los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, lo hace en 0,17). Los ficheros de procesador (`chat_template.jinja`, `tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`, `preprocessor_config.json`, `processor_config.json`, `modules.json`, `sentence_bert_config.json`, `config_sentence_transformers.json`) se copian byte a byte del modelo base. El artefacto es finito en float32, bfloat16 y float16 tanto en forward como en perdida y gradientes, y se guarda en bfloat16, el dtype por defecto de carga del modelo original.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron con una puerta de sensibilidad a la entrada: cada perturbacion de los inputs del contrato mueve los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, produce 0,17). Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El fixture se genero con `build_fixtures.py` y la trazabilidad queda registrada en `build.json` (fuentes fijadas, resultados de la puerta y hashes de ficheros).
 
 ## Capacidades
 
-- Ejecucion de forward pass con la misma firma y nombres de tensores que `google/embeddinggemma-2`.
-- Validacion de contratos de integracion en Transformers mediante el manifiesto `integration.json` y el directorio `integrations/transformers/expectations`.
-- Pruebas de sensibilidad de entradas (perturbacion de `input_ids` y `attention_mask`) contra los logits esperados.
-- Verificacion de compatibilidad de tokenizer y processor con los ficheros del modelo real.
-- Comprobacion de estabilidad numerica en float32, bfloat16 y float16.
-- No genera embeddings utiles: los pesos son aleatorios y no codifican informacion semantica.
-- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto.
+- No es un modelo funcional: los pesos son aleatorios y no producen embeddings semanticos utiles.
+- Sirve como fixture de integracion para validar la carga y ejecucion de `EmbeddingGemma2Model` en Transformers.
+- Permite verificar contratos de framework (formas de tensores, dtypes, sensibilidad a inputs) sin descargar el modelo completo.
+- Conserva la estructura de tensores del checkpoint real, por lo que valida rutas de codigo que dependen de nombres de parametros.
+- Incluye ficheros de procesador identicos a los del modelo base (tokenizer, chat template, configuracion de Sentence Transformers).
+- No soporta tool calling, agentes, vision ni audio de forma funcional, aunque la config reduzca incluya modulos de vision y audio.
 
 ## Casos de uso
 
-- Tests de integracion en CI: ejecutar el fixture en la suite de pruebas de Transformers para verificar que la clase `EmbeddingGemma2Model` carga, hace forward y devuelve tensores con las formas esperadas, sin descargar el checkpoint completo.
-- Validacion de contratos de framework: usar `integration.json` e `integrations/transformers/expectations` para comprobar que una nueva version del framework sigue cumpliendo las expectativas de entrada y salida del modelo.
-- Desarrollo de pipelines de preprocesamiento: al copiar los ficheros de tokenizer y processor byte a byte, sirve para depurar la logica de tokenizacion y preprocesamiento multimodal sin coste de descarga.
-- Pruebas de estabilidad numerica: verificar que el codigo de inferencia funciona en float32, bfloat16 y float16 con gradientes finitos antes de pasar al modelo real.
-- Reproduccion de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture embeddinggemma-2-mic` para auditar hashes y fuentes fijadas en `build.json`.
-- Formacion de nuevos contribuidores: entorno ligero (0,1 GB) para que desarrolladores aprendan el flujo de integracion de modelos multimodales en Transformers sin infraestructura pesada.
+- Test de integracion en CI: cargar el fixture con Transformers y comprobar que `EmbeddingGemma2Model` se instancia, ejecuta forward y devuelve formas de salida esperadas, sin coste de descarga del modelo real.
+- Validacion de contratos de framework: ejecutar el directorio `integrations/transformers/expectations` contra el fixture para detectar regresiones en la API de Transformers.
+- Desarrollo de pipelines de embeddings: probar codigo de orquestacion (preprocesado, batching, postprocesado) con un repositorio de 0,1 GB antes de pasar al checkpoint completo.
+- Reproducibilidad de tests: usar el fixture key `9f46227c73ff` para fijar un artefacto determinista en suites de pruebas que cubren todos los checkpoints con procesador byte-identico.
+- Validacion de dtypes: comprobar que el codigo de inferencia funciona en float32, bfloat16 y float16 sin NaNs ni infinitos, ya que el fixture es finito en los tres.
+- Formacion de equipos: servir como ejemplo de como reducir un modelo grande a un fixture manejable siguiendo la metodologia de `sweep.py` y `build_fixtures.py`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad de embedding careceria de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad (MMLU, MTEB, retrieval) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (19,3 M de parametros, unos 38 MB de pesos).
-- GPU recomendadas: cualquier GPU con soporte bfloat16; tambien funciona en CPU.
-- Cabe en cualquier GPU consumer, incluida una GTX 1650 o una iGPU moderna; el cuello de botella es el lanzamiento de kernels, no la memoria.
-- Opciones de despliegue: Transformers (carga estandar de `EmbeddingGemma2Model`); no se documenta soporte especifico para vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles; al ser un fixture de 2 capas por torre, la latencia sera muy inferior a la del modelo real, pero no se publican cifras.
+- VRAM estimada: inferior a 1 GB en bfloat16 (19,3 M de parametros, aproximadamente 38 MB de pesos); el repositorio completo ocupa 0,1 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU; no requiere acelerador de datacenter.
+- Cabe en cualquier GPU consumer y en la mayoria de entornos CPU.
+- Opciones de despliegue: Transformers (uso previsto segun el README); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un fixture de test, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | huggingface-mic/embeddinggemma-2-mic | 19,3 M | no disponible | Fixture de test | no disponible | Hugging Face |
-| google/embeddinggemma-2 | no disponible | no disponible | Embeddings multimodales reales | no disponible | Hugging Face |
-| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Tests de integracion | no disponible | Hugging Face (org huggingface-mic) |
+| google/embeddinggemma-2 | no disponible | no disponible | Modelo de embeddings real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable | no disponible | Fixtures de test por arquitectura | no disponible | Hugging Face |
 
-La comparacion relevante es con el modelo base: misma arquitectura y mismos ficheros de procesador, pero con 2 capas por torre frente a la profundidad completa y pesos aleatorios frente a pesos entrenados. Frente a otros fixtures de la misma organizacion, comparte el proposito de validacion de contratos, aunque la informacion disponible no detalla sus tamanos.
+La comparativa relevante es contra el modelo base `google/embeddinggemma-2`: mismo procesador y misma estructura de tensores, pero con capas reducidas y pesos aleatorios. Frente a otros fixtures del proyecto `transformers-mic`, comparte metodologia de reduccion (`sweep.py`) y puerta de sensibilidad a la entrada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y los embeddings resultantes no tienen significado semantico.
-- Etiquetado `test-artifact` de forma explicita para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
-- La licencia no esta declarada en la informacion disponible; hay que remitirse al modelo base `google/embeddinggemma-2` para conocer las condiciones de uso.
-- La configuracion reducida (2 capas por torre) no reproduce el comportamiento numerico ni el rendimiento del checkpoint real.
-- Los idiomas soportados no estan documentados; los ficheros de tokenizer se heredan del modelo base, pero no se garantiza cobertura linguistica.
-- La longitud de contexto no esta disponible en la informacion proporcionada.
-- No se documentan sesgos ni tasas de alucinacion porque el modelo no genera texto; cualquier evaluacion de calidad es inaplicable.
+- No es un modelo utilizable: los pesos son aleatorios y no generan embeddings con significado semantico.
+- Etiquetado explicitamente como `test-artifact`; no debe usarse en produccion ni en evaluaciones de calidad.
+- La licencia no esta disponible en la informacion proporcionada; verificar antes de cualquier redistribucion.
+- El modelo base `google/embeddinggemma-2` tampoco tiene licencia ni idiomas documentados en la informacion disponible.
+- La configuracion reducida (2 capas por modulo) no representa el comportamiento del modelo original; los resultados de tests de rendimiento no son extrapolables.
+- El repositorio no incluye todos los ficheros generados por `build_fixtures.py`; para reconstruirlos hay que ejecutar el script con `--fixture embeddinggemma-2-mic`.
+- Riesgo de confusion: el nombre puede llevar a pensar que es un fine-tune de EmbeddingGemma-2, cuando es un fixture de integracion.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/embeddinggemma-2-mic
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
-- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/embeddinggemma-2-mic.html
-- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Manifiesto de contrato: `integration.json` (en el repositorio)
-- Uso en Transformers: `integrations/transformers/usage.md` (en el repositorio)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
-- Procedencia del fixture: `build.json` (en el repositorio)
+- Metodologia de reduccion (shrink): https://huggingface-mic-mic-coverage.static.hf.space/shrink/embeddinggemma-2-mic.html
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

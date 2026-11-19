@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "ggml-org-dev/tiny-lev-for-testing",
+  "slug": "ggml-org-dev-tiny-lev-for-testing",
+  "author": "ggml-org-dev",
+  "url": "https://huggingface.co/ggml-org-dev/tiny-lev-for-testing",
+  "created_at": "2026-11-19T00:48:26.000Z",
+  "updated_at": "2026-11-19T00:48:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "testing",
+    "base_model:ggml-org-dev/tiny-Qwen3.5-4B-for-testing",
+    "base_model:adapter:ggml-org-dev/tiny-Qwen3.5-4B-for-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24861410,
+  "storage_human": "25 MB",
+  "context_length": null,
+  "base_model": "ggml-org-dev/tiny-Qwen3.5-4B-for-testing",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Software Testing Strategies - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/software-engineering/software-testing-strategies/",
+      "snippet": "Jul 13, 2026 · Software testing strategies define different approaches used to ensure software quality and reliability. These strategies …"
+    },
+    {
+      "title": "Software Testing Strategies: Types, Components & Methods",
+      "url": "https://testgrid.io/blog/software-testing-strategies/",
+      "snippet": "May 18, 2026 · Understand different software testing strategies, their components, emerging trends, and how to design a testing …"
+    },
+    {
+      "title": "Test Strategy - Software Testing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/software-testing/software-testing-test-strategy/",
+      "snippet": "Jul 1, 2026 · A Test Strategy is a high-level document that defines the overall approach, objectives, and methods used for software …"
+    },
+    {
+      "title": "Software Testing Strategies: 10 Approaches (2026 Guide) | Robonito",
+      "url": "https://robonito.com/blog/post/software-testing-strategies/",
+      "snippet": "6 days ago · The 10 software testing strategies teams use in 2026, from risk-based and shift-left to agentic testing, with a comparison …"
+    },
+    {
+      "title": "Software Testing Strategies: A Complete Guide - BrowserStack",
+      "url": "https://www.browserstack.com/guide/software-testing-strategies-and-approaches",
+      "snippet": "Jul 17, 2026 · Whether you are starting with your first software testing strategy or reviewing an existing one that has evolved over …"
+    }
+  ]
+}

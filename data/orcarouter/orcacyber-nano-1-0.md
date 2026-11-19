@@ -2,114 +2,106 @@
 
 ## Resumen
 
-OrcaCyber Nano 1.0 es un modelo de lenguaje y visión publicado por orcarouter (OrcaRouter / Continuum AI Corp) y empaquetado en formato GGUF para ejecución local con llama.cpp. Está especializado en trabajo defensivo de seguridad: ingeniería inversa, análisis de vulnerabilidades, revisión de código seguro, triaje de alertas y respuesta a incidentes, y conserva capacidades generales de razonamiento y programación. La model card lo presenta como un modelo orientado a escenarios en los que los binarios, logs y código auditado no deben salir de la máquina del analista.
+OrcaCyber Nano 1.0 es un modelo de lenguaje y visión de 27B parámetros desarrollado por orcarouter (OrcaRouter AI), orientado específicamente a trabajo de seguridad defensiva: ingeniería inversa, análisis de vulnerabilidades, revisión de código seguro, triaje e respuesta a incidentes. Se distribuye en formato GGUF para su ejecución local con llama.cpp u Ollama, lo que permite procesar binarios propietarios, trazas y código interno sin que los datos salgan del equipo. Está construido sobre el modelo base Qwen/Qwen3.8-27B mediante cuantización.
 
-Arquitectónicamente la model card declara `Qwen3_5ForConditionalGeneration` en una variante híbrida visión-lenguaje, con 64 capas, dimensión oculta 5120 y una mezcla de 48 capas de atención lineal más 16 de atención completa, además de una cabeza MTP integrada para decodificación especulativa. El contexto declarado es de 262.144 tokens y las modalidades son texto e imagen/vídeo de entrada con salida de texto.
+El modelo mantiene capacidades generales de razonamiento y programación, además de visión (entrada de imágenes, pipeline `image-text-to-text`), soporte de function calling y una ventana de contexto de 262K tokens según la model card. Su propuesta principal es ofrecer un asistente de seguridad que funcione en hardware propio, incluso en entornos aislados (air-gapped), con un identificador propio de modelo ("OrcaCyber Nano 1.0 AI Defense Model").
 
-Hay una discrepancia relevante que el lector debe tener en cuenta: la model card anuncia "27B" en su texto promocional, mientras que los metadatos de Hugging Face derivados de los pesos en safetensors indican 1.924.404.480 parámetros totales (aproximadamente 1,9B). No se ha publicado información que permita resolver la contradicción. El repositorio tiene acceso restringido (gated) y la licencia es la de Qwen.
+El acceso al repositorio está restringido en Hugging Face: requiere aceptar las condiciones del autor. La licencia declarada es `other` con nombre `qwen`, heredada del modelo base, y los idiomas soportados según la model card son inglés y chino.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | `Qwen3_5ForConditionalGeneration`, híbrida visión-lenguaje (VL hybrid); 64 capas, hidden 5120, 48 capas de atención lineal + 16 de atención completa |
-| Parámetros totales | 1.924.404.480 según metadatos de safetensors en Hugging Face; la model card declara "27B" (dato no verificado y en contradicción con el anterior) |
-| Parámetros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | 262.144 tokens (los ejemplos de despliegue de llama.cpp usan 32.768) |
-| Tipos de cuantización | GGUF: build "Mix-15.7G" (15,70 GB), build "Mix-13G" (12,99 GB), drafter DFlash2 en Q8_0 (2,06 GB), proyector de visión mmproj en F16 (0,93 GB). El tipo exacto de cuantización de los builds "Mix" no se especifica |
+| Arquitectura | no disponible (modelo derivado de Qwen/Qwen3.8-27B; arquitectura del base no detallada en la información proporcionada) |
+| Parámetros totales | 1.924.404.480 según safetensors; la model card indica 27B (discrepancia no resuelta en la información disponible) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262K tokens (según la model card) |
+| Tipos de cuantización | GGUF (niveles concretos no disponibles) |
 | Idiomas soportados | en, zh |
-| Licencia | `other` con `license_name: qwen` (licencia de Qwen); acceso restringido, requiere aceptar condiciones |
-| Formato de pesos | GGUF (llama.cpp); el modelo base `orcarouter/OrcaCyber-Nano-1.0-AI-Defense` se distribuye en safetensors |
+| Licencia | `other` (license_name: qwen); acceso restringido (gated) |
+| Formato de pesos | GGUF (librería: gguf) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre una arquitectura transformer híbrida de atención: de las 64 capas, 48 emplean atención lineal y 16 atención completa, lo que reduce el coste de memoria y cómputo en contextos largos manteniendo capas de atención completa para la recuperación precisa de información. La componente de visión se sirve mediante un proyector multimodal independiente (`mmproj`, F16) que se carga junto al modelo principal en llama.cpp, y la model card declara entrada de imagen y vídeo con salida de texto únicamente.
+No se detalla en la información proporcionada la arquitectura interna del modelo (tipo de transformer, uso de atención lineal, decodificación especulativa u otras innovaciones). El modelo se presenta como una cuantización del base Qwen/Qwen3.8-27B, con relación `quantized` respecto a dicho base. La model card menciona la etiqueta `mtp` (multi-token prediction), lo que sugiere soporte de predicción multi-token, pero no se amplía el detalle técnico.
 
-El repositorio incorpora dos mecanismos de decodificación especulativa: una cabeza MTP (multi-token prediction) integrada en los dos ficheros principales, que se activa con `--spec-type draft-mtp`, y un drafter separado DFlash2 cuantizado en Q8_0 que se activa con `--spec-type draft-dflash`. El modelo es una cuantización (relación `quantized`) del modelo base `orcarouter/OrcaCyber-Nano-1.0-AI-Defense`, que a su vez es el resultado del post-entrenamiento en ciberseguridad. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon RLHF, DPO u otras técnicas de alineamiento.
+Tampoco se especifican el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. La model card indica que el harness de evaluación, los ajustes y las tablas completas de resultados "se están finalizando", por lo que los datos de entrenamiento y la metodología de post-entrenamiento no están disponibles.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general: la model card afirma que el modelo conserva "full general-purpose reasoning" pese a su especialización.
-- Razonamiento matemático y código: resultados declarados en AIME 2025, MATH-500, GSM8K y MBPP+ (ver sección de benchmarks).
-- Ingeniería inversa y decompilación: análisis de desensamblado y salida de decompiladores, recuperación de la función de un símbolo eliminado (stripped), renombrado de variables y explicación del flujo de control.
-- Análisis de vulnerabilidades: razonamiento sobre explotabilidad, localización del camino inseguro y propuesta de parches.
-- Revisión de código seguro: auditoría de diffs y ficheros en busca de inyección, fallos de seguridad de memoria y errores de lógica.
-- Visión: entrada de capturas de pantalla, imágenes de Ghidra/IDA, diagramas de red y vídeo, con salida de texto.
-- Tool calling / function calling: etiquetado explícitamente en los tags del modelo.
-- Despliegue local y offline: ejecución en llama.cpp sin kernels personalizados, apta para entornos aislados (air-gapped).
-- Decodificación especulativa: cabeza MTP integrada y drafter DFlash2 opcional para acelerar la inferencia.
-- Capacidades multilingües limitadas a inglés y chino según los metadatos de idioma.
+- Generación de texto y razonamiento general, incluyendo matemáticas y resolución de problemas (se reportan resultados en MATH-500, GSM8K, AIME 2025 y GPQA Diamond).
+- Generación y análisis de código, con resultados reportados en HumanEval+, LiveCodeBench, MBPP+, BigCodeBench y SWE-bench.
+- Ingeniería inversa y descompilación: interpretación de desensamblado y salida de descompiladores, recuperación de la función de una rutina stripped, nombrado de variables y explicación de flujo de control.
+- Análisis de vulnerabilidades: razonamiento sobre explotabilidad, identificación de rutas inseguras y propuesta de parches.
+- Revisión de código seguro: auditoría de diffs y ficheros en busca de inyección, problemas de seguridad de memoria y bugs lógicos.
+- Triaje: lectura de logs, alertas y capturas de paquetes para separar señal de ruido.
+- Visión: entrada de imágenes como capturas de pantalla, capturas de Ghidra/IDA y diagramas de red (pipeline `image-text-to-text`).
+- Soporte de function calling (etiqueta `function-calling`).
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Ejecución local offline con llama.cpp/Ollama, apta para entornos air-gapped.
 
 ## Casos de uso
 
-- Triaje de alertas y logs en un SOC: el modelo lee logs, alertas y capturas de paquetes y separa señal de ruido; al ejecutarse en local, los logs del cliente no salen de la infraestructura del analista.
-- Ingeniería inversa de binarios propietarios: se pega el desensamblado o la salida de un decompilador y el modelo reconstruye la semántica de funciones sin símbolos, lo que evita subir binarios de terceros a una API en la nube.
-- Análisis de vulnerabilidades y propuesta de parche: dado un fragmento de código o un diff, el modelo razona sobre la ruta de explotación y sugiere una corrección, adecuado para revisiones previas a la divulgación responsable.
-- Revisión de código seguro en CI/CD: integrado en pipelines como paso de auditoría de diffs para detectar inyección, uso inseguro de memoria y errores lógicos antes del merge.
-- Análisis de capturas de GUI de herramientas de reversing: con el proyector de visión se pueden enviar capturas de Ghidra o IDA y pedir explicaciones del grafo de funciones o de las vistas de desensamblado.
-- Asistente local de programación y razonamiento: con 262.144 tokens de contexto declarados, admite trabajar sobre repositorios o ficheros de configuración extensos sin fragmentar en exceso.
-- Formación y laboratorios de seguridad defensiva: al ser un GGUF ejecutable en una GPU de consumo, sirve para prácticas en entornos sin conectividad ni presupuesto de API.
-- Respuesta a incidentes: análisis de artefactos y diagramas de red (con visión) para reconstruir la cadena de ataque en una máquina aislada.
+- Ingeniería inversa de binarios: pegar desensamblado o salida de un descompilador para que el modelo reconstruya el propósito de una función stripped, nombre variables y explique el flujo de control; al ejecutarse en local, el binario propietario no abandona la máquina.
+- Análisis de vulnerabilidades: introducir fragmentos de código o rutas de ejecución sospechosas para razonar sobre explotabilidad, localizar la ruta insegura y proponer un parche concreto.
+- Revisión de código seguro en CI: auditar diffs y ficheros en busca de inyección, errores de seguridad de memoria y bugs lógicos antes de fusionar cambios, aprovechando el soporte de function calling para integrarse en pipelines.
+- Triaje de incidentes: procesar logs, alertas y capturas de paquetes para priorizar eventos y separar señal de ruido, con contexto largo de 262K tokens para volcados extensos.
+- Análisis visual de artefactos de seguridad: subir capturas de Ghidra/IDA, diagramas de red o pantallas de herramientas para que el modelo las interprete junto con el texto.
+- Asistente local de programación y razonamiento: usar el modelo como copiloto de código y resolución de problemas en equipos sin conexión o con requisitos de confidencialidad, manteniendo sus capacidades generales.
+- Entornos air-gapped: despliegue en máquinas aisladas donde no se permite enviar código, logs ni binarios a servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card. La propia card indica que el harness, los ajustes y las tablas completas de resultados "se están finalizando", por lo que las cifras no son reproducibles con la información disponible.
+Resultados reportados en la model card (el autor indica que el harness y las tablas completas están pendientes de finalizar):
 
-| Benchmark | Resultado declarado |
+| Benchmark | Puntuación |
 |---|---:|
-| AIME 2025 | 96,23% |
 | MATH-500 | 98,60% |
 | GSM8K | 97,50% |
+| AIME 2025 | 96,23% |
+| HumanEval+ | 93,29% |
+| LiveCodeBench | 92,23% |
+| GPQA Diamond | 88,28% |
 | MBPP+ | 84,66% |
 | IFEval | 82,81% |
+| SWE-bench | 78,4% |
+| Terminal-Bench 2.1 | 72,5% |
+| IFBench | 56,33% |
+| BigCodeBench | 49,82% |
 
-No se han publicado en la información disponible resultados de MMLU, HumanEval ni de benchmarks específicos de ciberseguridad (por ejemplo CyberGym) para este modelo concreto. La cifra de 98,01% pass@1 en CyberGym Level 1 que aparece en la model card corresponde a otro modelo, OrcaCyber Zero 1.5, promocionado en el mismo documento.
+No se proporcionan resultados de benchmarks específicos de ciberseguridad (por ejemplo, CyberGym) para este modelo en la información disponible; la model card solo menciona un 98,01% pass@1 en CyberGym Level 1 para el modelo distinto OrcaCyber Zero 1.5.
 
 ## Requisitos de hardware
 
-- Build Mix-15.7G (15,70 GB): requiere aproximadamente 16 GB de VRAM solo para pesos; la model card la recomienda para tarjetas de 24 GB o más, ya que debe sumarse el contexto KV y, opcionalmente, el proyector de visión.
-- Build Mix-13G (12,99 GB): pensado para una tarjeta de 16 GB junto con la cabeza MTP integrada y 32k de contexto.
-- Proyector de visión `mmproj` F16: 0,93 GB adicionales, necesarios únicamente si se envían imágenes.
-- Drafter DFlash2 Q8_0: 2,06 GB adicionales si se usa decodificación especulativa con fichero separado.
-- GPU: la model card cita explícitamente tarjetas de 16 GB y de 24 GB o más; no se detallan modelos concretos (A100, H100, RTX 4090) ni se proporcionan cifras de throughput o latencia (no disponible).
-- Cabe en GPU de consumo: sí, según el autor, con el build Mix-13G en una tarjeta de 16 GB.
-- Opciones de despliegue: `llama-server` de llama.cpp (los ejemplos usan `-ngl 99`, `-c 32768`, `-np 1` en tarjetas pequeñas); también disponible a través de la pasarela OrcaRouter con API compatible con OpenAI. No se mencionan vLLM, TGI ni Ollama en la información disponible.
-- Parámetros de muestreo recomendados: temperature 1.0, top_p 0.95, top_k 20.
+- VRAM estimada: no disponible de forma explícita; para un modelo de 27B en GGUF, la VRAM depende del nivel de cuantización elegido (no se detallan los niveles en la información proporcionada).
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Ejecución en GPU de consumo: no confirmado; el autor enfatiza la ejecución "en tu portátil" mediante GGUF y llama.cpp, pero no se especifican modelos de GPU concretos.
+- Opciones de despliegue: llama.cpp y Ollama (mencionados explícitamente); también se menciona compatibilidad con endpoints (`endpoints_compatible`) y una API compatible con OpenAI a través de OrcaRouter.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se han publicado en la información disponible comparaciones con modelos de la misma categoría (modelos especializados en ciberseguridad o modelos visión-lenguaje de tamaño equivalente) que incluyan parámetros, contexto y rendimiento verificables. La única referencia comparativa dentro del propio material es el modelo promocionado por el mismo autor:
-
-| Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| OrcaCyber Nano 1.0 | 1,9B según safetensors / "27B" según la model card (no verificado) | 262.144 tokens | AIME 2025 96,23%; MATH-500 98,60%; GSM8K 97,50%; MBPP+ 84,66%; IFEval 82,81% (harness pendiente) | qwen (acceso restringido) | GGUF en Hugging Face; API vía OrcaRouter |
-| OrcaCyber Zero 1.5 | no disponible | 1.000.000 tokens | 98,01% pass@1 en CyberGym Level 1 (dato promocional del autor) | no disponible | API compatible con OpenAI en OrcaRouter |
-| Otras alternativas de la categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone en la información proporcionada de datos de modelos comparables de la misma categoría (asistentes de seguridad de ~27B en GGUF) ni de sus especificaciones para establecer una comparación rigurosa. El propio autor referencia como alternativa de su catálogo OrcaCyber Zero 1.5, pero no se aportan sus parámetros, contexto ni licencia. Comparativa: no disponible.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de tamaño sin resolver: los metadatos de Hugging Face indican 1.924.404.480 parámetros, mientras que el texto de la model card afirma "27B". Cualquier estimación de VRAM o de capacidad debe tomarse con cautela hasta que el autor lo aclare.
-- Benchmarks no reproducibles: el propio autor indica que el harness y las tablas completas están pendientes de publicación; las cifras de AIME 2025, MATH-500, GSM8K, MBPP+ e IFEval no se han validado de forma independiente.
-- Riesgo de alucinación en un dominio crítico: en análisis de vulnerabilidades, reversing o revisión de código, una explicación incorrecta puede llevar a conclusiones de seguridad erróneas; se requiere validación humana de cada hallazgo.
-- Sesgo de dominio: el post-entrenamiento en ciberseguridad puede degradar el rendimiento en tareas generales respecto al modelo base; la afirmación de que conserva "full general-purpose reasoning" no está cuantificada.
-- Idiomas: solo inglés y chino según los metadatos; no hay soporte declarado de castellano.
-- Licencia: `other` con `license_name: qwen`, lo que implica aplicar los términos de la licencia de Qwen; es necesario revisar las condiciones de uso comercial del texto completo de dicha licencia antes de desplegar en producción.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que afecta a la automatización de descargas en pipelines.
-- Contexto efectivo: aunque se declaran 262.144 tokens, los ejemplos de despliegue del propio autor usan 32.768, por lo que la ventana real en configuraciones de hardware modesto será menor.
-- Dependencia de llama.cpp: no se documentan rutas de despliegue con vLLM, TGI ni motores de alta concurrencia, lo que limita el serving a gran escala.
-- Contenido promocional mezclado: la model card incluye publicidad de otro modelo (OrcaCyber Zero 1.5) cuyas cifras no deben atribuirse a este checkpoint.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face.
+- Licencia `other` con nombre `qwen`: las condiciones exactas de uso comercial dependen de la licencia del modelo base Qwen/Qwen3.8-27B y deben revisarse antes de producción.
+- Idiomas limitados a inglés y chino según la model card; el rendimiento en castellano no está documentado.
+- Discrepancia de tamaño: la model card indica 27B, mientras que el dato de safetensors registra 1.924.404.480 parámetros; conviene verificar el artefacto concreto antes de dimensionar el hardware.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente crítico en análisis de vulnerabilidades y revisión de código, donde una conclusión errónea puede tener consecuencias de seguridad.
+- Los benchmarks reportados proceden del autor y el propio autor indica que el harness y las tablas completas están pendientes de finalización; deben tratarse como provisionales.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad del modelo en la información disponible.
+- El uso en tareas ofensivas no está descrito en la model card, que se posiciona explícitamente como defensiva; el alcance permitido depende de la licencia y de las condiciones de acceso.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0 (acceso restringido)
-- Modelo base: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0-AI-Defense
-- Sitio de OrcaRouter: https://www.orcarouter.ai/
-- Documentación de OrcaRouter: https://docs.orcarouter.ai/introduction
-- Página del modelo promocionado OrcaCyber Zero 1.5: https://www.orcarouter.ai/models/orca/orcacyber-zero-1.5
-- Catálogo de modelos: https://www.orcarouter.ai/models
-- GitHub de Continuum AI Corp: https://github.com/Continuum-AI-Corp
-- OrcaRouter Lite (edición open source de un solo workspace): https://github.com/Continuum-AI-Corp/OrcaRouter-Lite
-- X: https://x.com/OrcaRouter
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- OrcaRouter AI Gateway: https://www.orcarouter.ai
+- Página de modelos de OrcaRouter: https://www.orcarouter.ai/models
+- OrcaCyber Zero 1.5: https://www.orcarouter.ai/models/orca/orcacyber-zero-1.5
+- Orca Connect: https://www.orcarouter.ai/solutions/orca-connect
+- X (Twitter): https://x.com/OrcaRouter
 - Discord: https://discord.gg/yAh6Tex6kx
-- Paper técnico: no disponible
-- Demo pública: no disponible
+- GitHub: https://github.com/Continuum-AI-Corp

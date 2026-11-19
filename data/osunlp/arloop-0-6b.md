@@ -2,85 +2,91 @@
 
 ## Resumen
 
-ARLoop-0.6B es un modelo de lenguaje causal recurrente con residuos de atención (attention residuals), desarrollado por el equipo de investigación osunlp. Su propuesta técnica consiste en reutilizar físicamente 18 capas de transformer a lo largo de 3 pasadas recurrentes, alcanzando una profundidad efectiva de 54 subcapas con solo 583 millones de parámetros únicos. Este enfoque de reutilización de capas (weight tying recurrente) busca reducir el número de parámetros manteniendo capacidad expresiva, en la línea de arquitecturas recurrentes profundas.
+ARLoop-0.6B es un modelo de lenguaje base de tipo transformer con bucles ("looped transformer") desarrollado por el grupo OSU-NLP (Ohio State University NLP Group). Se trata de un modelo preentrenado desde cero, completamente abierto, que introduce una innovación arquitectónica denominada "attention residuals": un bloque físico de 18 capas transformer se reutiliza a lo largo de 3 pasadas recurrentes, dando lugar a una profundidad efectiva de 54 capas con solo 583 millones de parámetros totales.
 
-Se trata de un modelo base preentrenado (no chat ni SFT), entrenado sobre aproximadamente 180.000 millones de tokens con una longitud de contexto de 4096 tokens. El checkpoint publicado corresponde a la etapa final de un entrenamiento en tres fases (three-stage blend), con pesos exportados en FP32 sin conversión con pérdida de precisión.
+El modelo se ha entrenado sobre aproximadamente 180.000 millones de tokens (179.998.556.160 en el checkpoint final) y se distribuye como checkpoint base, pensado para completado de texto, mid-training y post-training. Su relevancia radica en que explora una vía alternativa al escalado tradicional en profundidad: en lugar de apilar más capas, reutiliza un bloque compartido, lo que reduce el número de parámetros físicos manteniendo una profundidad computacional mayor.
 
-Su relevancia actual radica en el interés renovado por arquitecturas eficientes alternativas al transformer puro: al compartir parámetros entre pasadas, ARLoop-0.6B ofrece una relación profundidad efectiva/parámetros atípica, útil para investigación en eficiencia de modelos y para experimentación en hardware modesto. Requiere `trust_remote_code=True` y una versión concreta de Transformers (5.22.0) para su carga.
+La ventana de contexto es de 4096 tokens, usa el tokenizador de SmolLM2 con un vocabulario de 49.152 entradas y se publica bajo licencia Apache 2.0. La información disponible no incluye resultados numéricos de benchmarks en formato explícito más allá de la figura referenciada en la model card, por lo que los datos de rendimiento cuantitativos se marcan como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal recurrente con residuos de atención (18 capas físicas compartidas en 3 pasadas recurrentes) |
-| Parametros totales | 583.138.944 (pesos únicos en el checkpoint de inferencia) |
-| Parametros activos | No aplica (no es MoE; todas las capas se ejecutan en cada pasada) |
-| Longitud de contexto | 4096 tokens (prompt + generación no debe exceder este límite) |
-| Tipos de cuantizacion | No disponible (los pesos se distribuyen en FP32; no hay versiones cuantizadas oficiales) |
-| Idiomas soportados | Inglés (entrenado con tokenizer SmolLM2) |
+| Arquitectura | Transformer con bucles (looped transformer) y attention residuals; 18 capas fisicas compartidas en 3 pasadas recurrentes |
+| Parametros totales | 583.138.944 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | No disponible (los pesos se cargan en BF16 para inferencia; el checkpoint almacenado conserva pesos FP32) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (2 shards FP32, con índice `model.safetensors.index.json`) |
+| Formato de pesos | safetensors (con custom_code, requiere trust_remote_code) |
 
 ## Arquitectura y entrenamiento
 
-ARLoop-0.6B emplea una arquitectura de transformer causal con recurrencia por reutilización de capas: un bloque físico de 18 capas se ejecuta 3 veces (3 pasadas recurrentes), lo que equivale a una profundidad efectiva de 54 subcapas. El mecanismo diferenciador son los residuos de atención (attention residuals): bloques de residuo de tamaño 18 subcapas, con 3 bloques de residuo recientes más el embedding de entrada retenidos. Las dimensiones internas son 1536 de ancho oculto y 4608 en el MLP intermedio, con 16 cabezas de atención y 4 cabezas KV (agrupación tipo GQA). Usa RoPE con base 50000 y embeddings de valor compartidos entre capas físicas alternas. La cabeza de salida está ligada a los embeddings de tokens (vocabulario de 49152, tokenizer de SmolLM2).
+ARLoop-0.6B es un transformer con bucles: un unico conjunto de 18 capas fisicas se aplica de forma recurrente en 3 pasadas, lo que da una profundidad efectiva de 54 capas. La anchura oculta es de 1536 y la intermedia del MLP de 4608, con 16 cabezas de atencion y 4 cabezas KV (GQA). El bloque de attention residuals tiene un tamano de 18 subcapas, con 3 bloques residuales recientes y la embedding de entrada retenida. Las value embeddings se comparten entre capas fisicas alternas y la cabeza de salida esta atada a las embeddings de tokens. El contexto maximo es de 4096 tokens con una base RoPE de 50000.
 
-El entrenamiento constó de tres fases (three-stage blend) sobre 179.998.556.160 tokens, con tamaño de batch global de 256 secuencias de 4096 tokens, learning rate 3e-3 y microbatch de 4 secuencias. El checkpoint final corresponde a 1.373.280 pasos de microbatch (171.660 pasos de optimizador). La model card no detalla la composición del dataset ni el uso de RLHF/DPO (coherente con su naturaleza de modelo base). La implementación de inferencia incluida usa PyTorch SDPA y enrutamiento de residuos de atención en FP32, sin necesidad de instalar FLA, Triton ni flash-attn.
+El entrenamiento se realizo sobre aproximadamente 180.000 millones de tokens usando el tokenizador de SmolLM2 (vocabulario de 49.152). La model card publica checkpoints intermedios por paso de optimizador (desde 50.000 hasta 171.660 pasos finales), lo que permite reproducir curvas de entrenamiento y reanudar mid-training. No se detalla en la informacion disponible la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO; al ser un modelo base preentrenado, lo esperable es que no incluya alineamiento por preferencias. El routing y las estadisticas de normalizacion se mantienen internamente en FP32.
 
 ## Capacidades
 
-- Generación de texto en inglés: es un modelo base de completado de texto (text completion), no alineado con instrucciones.
-- Completado de código y texto técnico dentro de sus 4096 tokens de contexto, en la medida que su preentrenamiento lo permita (sin datos de evaluación publicados).
-- Generación determinista o muestreada vía `model.generate` de Transformers, con caché KV y generación por lotes (left padding + `attention_mask`).
-- No incluye capacidades de vision, audio ni modos de razonamiento explícito (thinking mode).
-- No hay soporte documentado de tool calling, function calling ni capacidades de agentes.
-- Carga portátil: funciona con PyTorch SDPA sin dependencias externas (FLA, Triton, flash-attn), en CPU y GPU.
+- Generacion de texto y completado de texto: es su funcion principal como modelo base preentrenado.
+- Razonamiento y conocimiento general: capacidades emergentes propias de un modelo preentrenado de 0.6B, sujetas a evaluacion tras post-training.
+- Codigo y matematicas: no se documentan capacidades especificas ni resultados en la informacion disponible.
+- Tool calling / function calling: no disponible de forma nativa; requeriria post-training especifico.
+- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
+- Capacidades multilingues: limitadas al ingles segun los metadatos del modelo.
+- Capacidades especiales: no se documentan modos de pensamiento, vision ni audio.
+- Reutilizacion de checkpoints intermedios: permite cargar revisiones por paso para mid-training.
 
 ## Casos de uso
 
-- Investigación en arquitecturas recurrentes: al compartir 18 capas físicas en 3 pasadas, es un banco de pruebas ideal para estudiar weight tying recurrente y residuos de atención frente a transformers densos equivalentes.
-- Experimentación en hardware limitado: con ~583M de parámetros en FP32 (~2,3 GB de pesos), puede ejecutarse en CPU o en GPUs de consumo para prototipado rápido.
-- Completado de texto en inglés: como modelo base, sirve para autocompletado, continuación de documentos y generación de borradores mediante prompting de few-shot.
-- Reproducción de experimentos de preentrenamiento: el repositorio de entrenamiento (ykyaol7/ARLoop) y los metadatos exactos del checkpoint (pasos, batch size, tokens) permiten replicar o extender la ejecución.
-- Base para fine-tuning posterior: su tamaño contenido permite aplicar SFT o LoRA sobre el modelo base para tareas específicas en inglés.
-- Docencia y demostraciones: la combinación de tamaño pequeño, licencia Apache 2.0 y carga con Transformers estándar lo hace adecuado para cursos y talleres sobre arquitecturas alternativas al transformer clásico.
+- Investigacion en arquitecturas recurrentes: el modelo sirve como base reproducible para estudiar el efecto del bucle y de los attention residuals frente a transformers apilados de parametros comparables, gracias a sus checkpoints intermedios publicados.
+- Mid-training y post-training: al ser un checkpoint base con licencia Apache 2.0, se puede continuar el preentrenamiento o aplicar SFT/DPO sobre dominios concretos (legal, medico, codigo) partiendo de cualquiera de las revisiones step-XXXXXX.
+- Completado de texto en ingles en entornos con recursos limitados: sus 583 millones de parametros permiten desplegarlo en GPU de consumo y en CPU, adecuado para autocompletado, resumen extractivo o generacion de borradores.
+- Generacion aumentada por recuperacion (RAG) en ingles: con 4096 tokens de contexto puede incorporar varios pasajes recuperados y generar respuestas extractivas o sintetizadas tras un ajuste fino.
+- Prototipado de pipelines de NLP: util como modelo de referencia barato para validar tokenizadores, plantillas de prompt y sistemas de evaluacion antes de escalar a modelos mayores.
+- Educacion e investigacion academica: su tamano reducido y su licencia permisiva facilitan su uso en cursos, tesis y experimentos de interpretabilidad sin costes de licencia.
+- Generacion de datos sinteticos a pequena escala: puede emplearse para producir texto de dominio en ingles que alimente otros entrenamientos, siempre con revision humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que las puntuaciones de benchmark y la inferencia en GPU no han sido revalidadas para esta versión del modelo.
+No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card referencia una figura de resultados (assets/figure1.png) y el paper arXiv:2611.05234, pero los valores concretos no se incluyen en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan unos 2,3 GB en FP32; con activaciones y caché KV, es razonable estimar unos 4 GB de VRAM en GPU, aunque la model card no publica cifras oficiales.
-- GPU recomendadas: cualquier GPU moderna con ~4-6 GB de VRAM debería ser suficiente (por ejemplo, RTX 3060, RTX 4060 o superiores). No hay recomendaciones oficiales de A100/H100.
-- Consumer GPU: sí, dado el tamaño de 583M de parámetros, cabe con holgura en GPUs de consumo; también es ejecutable en CPU (validado con PyTorch 2.6.0 en CPU, Python 3.12).
-- Despliegue: mediante Transformers 5.22.0 con `trust_remote_code=True` (implementación custom incluida en el repo). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI; dado que es código custom y pesos FP32 no cuantizados, la integración con estos motores no está disponible.
-- Latencia y throughput: no disponibles. La ejecución implica 3 pasadas recurrentes por token, lo que puede penalizar el throughput frente a un transformer denso de profundidad equivalente.
+- VRAM estimada para inferencia: en BF16, los 583 millones de parametros ocupan aproximadamente 1,2 GB de pesos; con cache KV y overhead de runtime, el consumo realista se situa en torno a 2-3 GB.
+- En FP32 (formato original del checkpoint) los pesos ocupan aproximadamente 2,3 GB; en cuantizacion de 8 bits o 4 bits se reduciria por debajo de 1 GB, aunque no se documentan recetas oficiales de cuantizacion.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 3050, RTX 4060, T4, L4) es suficiente; A100 y H100 no son necesarias salvo para entrenamiento o mid-training.
+- Cabe en GPU de consumo: si, en practicamente toda la gama actual (RTX 30/40/50, e incluso iGPU con suficiente memoria compartida).
+- Opciones de despliegue: transformers >= 5.22.0 con trust_remote_code (requisito oficial); al usar custom_code, la conversion a GGUF/llama.cpp, vLLM o TGI no esta garantizada y requeriria trabajo adicional no documentado.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Profundidad efectiva | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Notas |
 |---|---|---|---|---|---|
-| ARLoop-0.6B | 583M (únicos) | 54 subcapas (18 capas × 3 pasadas) | 4096 | Apache 2.0 | Recurrente con residuos de atención; base, inglés; pesos FP32 |
-| ARLoop-1.3B | ~1.300M (no disponible exacto) | No disponible | 4096 | Apache 2.0 | Modelo hermano mayor del mismo equipo; referencia de implementación |
-| SmolLM2-360M / 1.7B | 360M / 1.700M | 24 / 24 capas densas | 8192 | Apache 2.0 | Transformer denso; comparte tokenizer con ARLoop-0.6B, pero los pesos de ARLoop se entrenaron de forma independiente |
+| ARLoop-0.6B | 583 M | 4096 | Looped transformer con attention residuals | Apache 2.0 | Modelo base, solo ingles, custom_code |
+| Qwen2.5-0.5B | ~494 M | 32.768 | Transformer decoder estandar | Apache 2.0 | Modelo base e instruct, multilingue |
+| SmolLM2-360M | ~362 M | 8192 | Transformer decoder estandar | Apache 2.0 | Modelo base e instruct, tokenizador compartido con ARLoop |
+| Llama-3.2-1B | ~1.240 M | 131.072 | Transformer decoder estandar | Llama 3.2 Community License | Mayor tamano, contexto muy superior |
 
-No se dispone de datos de rendimiento que permitan comparar calidad entre estos modelos.
+Los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada; la comparativa se limita a parametros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base de completado, no un modelo de chat: no sigue instrucciones de forma fiable y puede generar continuaciones incoherentes o no deseadas sin un prompting cuidadoso.
-- Entrenado en inglés: el rendimiento en otros idiomas, incluido el castellano, no está garantizado ni evaluado.
-- Contexto limitado a 4096 tokens: prompt y generación juntos no deben exceder ese límite.
-- Requiere `trust_remote_code=True` y una versión concreta de Transformers (5.22.0), lo que implica ejecutar código Python arbitrario del repositorio; conviene fijar el commit SHA del repo por seguridad y reproducibilidad.
-- Los pesos deben mantenerse en FP32: la implementación usa BF16 en residuos y autocast internamente; cargar en otra precisión puede alterar los resultados. La implementación portátil no es necesariamente bit-idéntica al modelo nativo fusionado en BF16.
-- La inferencia en GPU y los benchmarks no han sido revalidados para esta versión; el rendimiento real en producción es desconocido.
-- Riesgo de alucinación y sesgos: al ser un modelo base de ~180B tokens de preentrenamiento sin alineación, puede reproducir sesgos y errores fácticos del corpus; no hay evaluaciones de sesgo publicadas.
-- Licencia Apache 2.0: permite uso comercial, pero deben conservarse los avisos de atribución y las notas MIT del código adaptado (Parcae/ARLoop y FLA) incluidos en el archivo `NOTICE`.
+- Es un modelo base preentrenado: no esta alineado con instrucciones ni con preferencias humanas, por lo que puede producir contenido toxico, sesgado o fuera de formato sin post-training.
+- Riesgo de alucinacion elevado en tareas factuales, agravado por su tamano reducido (0,6B) y por su entrenamiento exclusivamente en ingles.
+- Limitacion idiomatica: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
+- Contexto limitado a 4096 tokens, inferior al de modelos contemporaneos de tamano similar.
+- Requiere trust_remote_code=True y transformers >= 5.22.0, lo que implica ejecutar codigo remoto y anclar la version de la libreria; la integracion con ecosistemas como llama.cpp, vLLM u Ollama no esta documentada.
+- El checkpoint almacenado conserva pesos en FP32 (el repositorio ocupa 39,7 GB), lo que exige conversion a BF16 para un despliegue eficiente.
+- Licencia Apache 2.0 permisiva para uso comercial, pero el usuario asume la responsabilidad sobre los sesgos y el contenido generado.
+- No se documentan evaluaciones de seguridad, red teaming ni filtros de contenido.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/osunlp/ARLoop-0.6B
-- Modelo hermano (referencia de implementación): https://huggingface.co/osunlp/ARLoop-1.3B
-- Código de entrenamiento: https://github.com/ykyaol7/ARLoop
+- Paper (arXiv): https://arxiv.org/abs/2611.05234
+- Codigo en GitHub: https://github.com/OSU-NLP-Group/ARLoop
+- Checkpoints intermedios: https://huggingface.co/osunlp/ARLoop-0.6B/tree/step-050000 (y sucesivos step-070000, step-090000, step-110000, step-130000, step-150000, step-170000)
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

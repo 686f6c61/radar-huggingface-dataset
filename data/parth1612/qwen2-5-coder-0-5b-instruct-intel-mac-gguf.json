@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "Parth1612/Qwen2.5-Coder-0.5B-Instruct-Intel-Mac-GGUF",
+  "slug": "parth1612-qwen2-5-coder-0-5b-instruct-intel-mac-gguf",
+  "author": "Parth1612",
+  "url": "https://huggingface.co/Parth1612/Qwen2.5-Coder-0.5B-Instruct-Intel-Mac-GGUF",
+  "created_at": "2026-11-18T22:42:48.000Z",
+  "updated_at": "2026-11-18T22:42:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "code",
+    "macos",
+    "prompt-lookup",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 491400064,
+  "storage_human": "491 MB",
+  "context_length": 32768,
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Coder-0.5B-Instruct-GGUF | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen25-coder-05b-instruct-gguf/",
+      "snippet": "Qwen2.5-Coder-.5B-Instruct is a lightweight code-specific LLM with 0.5B parameters, 32K context, and support for multiple quantization formats. Built for efficient code generation and reasoning."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

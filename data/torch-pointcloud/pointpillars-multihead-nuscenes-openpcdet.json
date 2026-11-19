@@ -50,40 +50,14 @@
       "task": null,
       "dataset": "nuScenes",
       "metric": "mAP",
-      "value": 44.34
+      "value": 44.12
     },
     {
       "task": null,
       "dataset": "nuScenes",
       "metric": "NDS",
-      "value": 57.08
+      "value": 57.07
     }
   ],
-  "sources": [
-    {
-      "title": "PyTorch Foundation - PyTorch",
-      "url": "https://pytorch.org/",
-      "snippet": "1 day ago · Distributed Training Scalable distributed training and performance optimization in research and production is enabled by …"
-    },
-    {
-      "title": "Télécharger Torch (gratuit) Windows - Clubic",
-      "url": "https://www.clubic.com/telecharger-fiche418134-torch.html",
-      "snippet": "1 day ago · Torch est un navigateur web fondé sur le moteur Chromium. Il propose une interface familière, proche de celle de …"
-    },
-    {
-      "title": "PyTorch — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/PyTorch",
-      "snippet": "PyTorch définit une classe appelée Tensor (torch.Tensor) pour stocker les données et opérer sur des tableaux rectangulaires …"
-    },
-    {
-      "title": "Get Started Locally - PyTorch",
-      "url": "https://pytorch.org/get-started/locally/",
-      "snippet": "Get Started Select preferences and run the command to install PyTorch locally, or get started quickly with one of the supported cloud …"
-    },
-    {
-      "title": "torch · PyPI",
-      "url": "https://pypi.org/project/torch/",
-      "snippet": "You can write new neural network layers in Python using the torch API or your favorite NumPy-based libraries such as SciPy. If you …"
-    }
-  ]
+  "sources": []
 }

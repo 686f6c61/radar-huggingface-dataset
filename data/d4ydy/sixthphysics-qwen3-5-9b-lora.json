@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "id": "d4ydy/sixthphysics-qwen3.5-9b-lora",
+  "slug": "d4ydy-sixthphysics-qwen3-5-9b-lora",
+  "author": "d4ydy",
+  "url": "https://huggingface.co/d4ydy/sixthphysics-qwen3.5-9b-lora",
+  "created_at": "2026-11-18T22:31:42.000Z",
+  "updated_at": "2026-11-18T22:32:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "physics",
+    "education",
+    "neuro-symbolic",
+    "tool-use",
+    "lora",
+    "qwen3_5",
+    "ib-physics",
+    "a-level-physics",
+    "ncuk-ify",
+    "benchmark",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:d4ydy/sixthphysics-bench-and-bank",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252811243,
+  "storage_human": "253 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Neuro-Symbolic Physics Question Generation",
+      "dataset": "SixthPhysics-Bench Locked Test (Family-Disjoint)",
+      "metric": "End-to-End Verified (0-Retry)",
+      "value": 64.51
+    },
+    {
+      "task": "Neuro-Symbolic Physics Question Generation",
+      "dataset": "SixthPhysics-Bench Locked Test (Family-Disjoint)",
+      "metric": "End-to-End Verified (1-Retry Closed-Loop)",
+      "value": 75.6
+    },
+    {
+      "task": "Neuro-Symbolic Physics Question Generation",
+      "dataset": "SixthPhysics-Bench Locked Test (Family-Disjoint)",
+      "metric": "Syllabus Alignment (1-Retry Closed-Loop)",
+      "value": 87.03
+    },
+    {
+      "task": "Neuro-Symbolic Physics Question Generation",
+      "dataset": "SixthPhysics-Bench Locked Test (Family-Disjoint)",
+      "metric": "Teacher-Forced Step 2 Verified",
+      "value": 90.61
+    },
+    {
+      "task": "Multi-Syllabus Out-of-Sample Physics Question Generation",
+      "dataset": "SixthPhysics-Bench Novel-1500 (IB / A-Level / NCUK)",
+      "metric": "End-to-End Verified (0-Retry)",
+      "value": 67.53
+    },
+    {
+      "task": "Multi-Syllabus Out-of-Sample Physics Question Generation",
+      "dataset": "SixthPhysics-Bench Novel-1500 (IB / A-Level / NCUK)",
+      "metric": "End-to-End Verified (1-Retry Closed-Loop)",
+      "value": 78.4
+    },
+    {
+      "task": "Multi-Syllabus Out-of-Sample Physics Question Generation",
+      "dataset": "SixthPhysics-Bench Novel-1500 (IB / A-Level / NCUK)",
+      "metric": "Syllabus Alignment (1-Retry Closed-Loop)",
+      "value": 91.07
+    }
+  ],
+  "sources": []
+}

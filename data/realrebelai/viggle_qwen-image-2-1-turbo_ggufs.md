@@ -2,54 +2,48 @@
 
 ## Resumen
 
-El repositorio `realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs` es una publicacion alojada en Hugging Face por el usuario `realrebelai`. Por el nombre del repositorio, el contenido parece corresponder a un conjunto de ficheros en formato GGUF (cuantizaciones) derivados de un modelo denominado "Viggle Qwen-Image 2.1 Turbo", presumiblemente un modelo de generacion de imagenes. Esta interpretacion procede unicamente del identificador del repositorio y no esta confirmada por ninguna documentacion publicada.
+Viggle Qwen-Image 2.1 Turbo GGUFs es un conjunto de cuantizaciones GGUF de precisión mixta del transformer de difusión de `Viggle/Qwen-Image-2.1-viggle-turbo`, un modelo de generación y edición de imágenes derivado de Qwen-Image 2.1 y destilado por Viggle para funcionar en 4 pasos. El repositorio lo publica el usuario RealRebelAI y su propósito es facilitar la ejecución del modelo en entornos con VRAM limitada mediante ComfyUI y el nodo ComfyUI-GGUF, sin necesidad de cargar los safetensors en BF16.
 
-La model card asociada no contiene informacion tecnica: unicamente declara `license: unknown` y carece de descripcion, instrucciones de uso, ejemplos o notas de entrenamiento. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas soportados, por lo que a fecha de la consulta no existe evidencia publica de adopcion ni de validacion por parte de la comunidad.
+El modelo base es un transformer de difusión de aproximadamente 7.115 millones de parámetros (unos 7,1 mil millones), con un encoder de texto Qwen3-VL y un VAE específicos de Qwen-Image 2.1 que no se incluyen en este repositorio. La aportación principal del autor es una escalera de cuantización (de Q8_0 a Q2_K) construida directamente desde un maestro BF16, con política de precisión mixta HQv3 que mantiene en mayor precisión las proyecciones de atención y ciertos módulos de la rama de imagen.
 
-El repositorio fue creado y actualizado el 22 de septiembre de 2026, sin cambios posteriores. Dado que no se dispone de especificaciones, resultados de evaluacion ni condiciones de licencia, esta ficha se limita a documentar el estado verificable del repositorio y a senalar explicitamente los datos ausentes; no debe utilizarse como base para decisiones de produccion sin una verificacion directa de los ficheros publicados.
+Es relevante ahora porque Qwen-Image 2.1 es una familia reciente de generación de imágenes y el soporte GGUF para su arquitectura todavía está madurando. El propio autor advierte de que la salida del runtime GGUF no reproduce exactamente la del transformer original, incluso a precisión equivalente a BF16, por lo que estos ficheros deben considerarse conversiones prácticas para la comunidad y no réplicas fieles del modelo upstream.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer de difusión (Qwen Image 2.1); arquitectura GGUF declarada como `qwen_image` |
+| Parametros totales | 7.115.124.736 (dato de safetensors) |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio se declara como conjunto de ficheros GGUF; no se especifican los niveles) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K (todos en variante HQv3 de precisión mixta) |
 | Idiomas soportados | no disponible |
-| Licencia | unknown (declarada como desconocida en la propia model card) |
-| Formato de pesos | GGUF (segun el nombre del repositorio; no confirmado por la model card) |
-| Autor | realrebelai |
-| Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-09-22 |
-| Ultima actualizacion | 2026-09-22 |
-| Descargas / likes | 0 / 0 |
+| Licencia | unknown (el autor remite a las licencias de Viggle/Qwen-Image-2.1-viggle-turbo y Qwen/Qwen-Image-2.1) |
+| Formato de pesos | GGUF (solo el transformer de difusión) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card no describe el tipo de red (transformer, difusion, hibrida u otra), el numero de parametros, la longitud de contexto ni el esquema de atencion. El identificador del repositorio sugiere una relacion con la familia Qwen-Image y un componente denominado "Viggle", pero no existe documentacion que confirme la composicion del modelo, si se trata de un ajuste fino, una fusion de pesos o una conversion de formato.
+El repositorio contiene únicamente el transformer de difusión, no el pipeline completo. El modelo base, Qwen-Image 2.1, emplea la implementación de transformer de Qwen Image 2.1; Viggle ha destilado ese transformer para obtener un estudiante de 4 pasos con configuración de scheduler FlowMatch Euler. Los ficheros publicados declaran `general.architecture = qwen_image` para mantener compatibilidad con las instalaciones actuales de ComfyUI-GGUF, aunque el modelo upstream use una implementación más reciente.
 
-Tampoco hay datos sobre el entrenamiento: no se indica el volumen de tokens o de pares imagen-texto, la composicion del dataset, la existencia de fases de ajuste (RLHF, DPO, fine-tuning supervisado) ni innovaciones tecnicas como decodificacion especulativa, atencion lineal o destilacion de pasos. Toda afirmacion al respecto seria especulativa.
+La conversión parte del fichero `transformer/diffusion_pytorch_model.safetensors` del modelo de Viggle, verificado byte a byte por SHA256 (`a011a284b2dcb4b5f73aa7041b770d6bbff601bbb0850f3b6d49740b567b24e5`). Cada nivel de cuantización se genera directamente desde el maestro BF16, sin cascada entre niveles, para evitar la acumulación de error. La política HQv3 mantiene en Q8_0 las proyecciones Q/K/V/Out de atención y los módulos `img_mlp.out` e `img_mlp.gate_up` en los niveles altos, degradándolos progresivamente en Q3 y Q2; además, los módulos `img_in`, `txt_in`, `time_text_embed`, `modulation`, `norm_out` y `proj_out` se conservan en mayor precisión. No se dispone de información sobre el dataset de entrenamiento ni sobre el proceso de destilación más allá de la mención al estudiante de 4 pasos.
 
 ## Capacidades
 
-- No se han documentado capacidades en la informacion disponible.
-- El nombre del repositorio apunta a generacion de imagenes, pero no hay confirmacion ni ejemplos de uso publicados.
-- No hay evidencia de soporte de tool calling, function calling ni uso como agente.
-- No hay informacion sobre capacidades multilingues.
-- No hay informacion sobre modos especiales (thinking mode, vision, audio, edicion de imagen, etc.).
+- Generación de imágenes a partir de texto (text-to-image) mediante el pipeline de Qwen-Image 2.1.
+- Edición de imágenes, según la etiqueta `image-editing` del repositorio.
+- Generación en 4 pasos de muestreo con CFG 1.0, sampler euler y scheduler simple, gracias a la destilación Turbo.
+- Integración con ComfyUI mediante ComfyUI-GGUF para cargar el transformer cuantizado.
+- Requiere componentes externos: encoder de texto Qwen3-VL, VAE de Qwen-Image 2.1 y nodos de condicionamiento compatibles.
+- No se documentan capacidades de tool calling, agentes, audio ni modo de razonamiento; es un modelo de imagen, no de lenguaje.
 
 ## Casos de uso
 
-No es posible enumerar casos de uso concretos y realistas sin conocer las capacidades reales del modelo. Cualquier escenario que se propusiera seria una suposicion sin base documental. Los unicos usos que pueden justificarse hoy son de caracter exploratorio:
-
-- Verificacion del repositorio: descargar los ficheros GGUF y comprobar su estructura interna (metadatos, tensor names, tamanos) para determinar que tipo de modelo contienen realmente.
-- Auditoria de licencia: al declararse `license: unknown`, cualquier uso posterior exige contactar con el autor para aclarar los terminos aplicables, ya que la licencia del modelo base podria imponer restricciones adicionales.
-- Evaluacion comparativa manual: si se confirma que es un modelo de imagen, generar un conjunto de prompts de referencia y comparar la salida con el modelo base sin cuantizar para medir la perdida de calidad introducida por la cuantizacion.
-- Pruebas de integracion en herramientas de inferencia: comprobar si los ficheros cargan en utilidades compatibles con GGUF antes de plantear cualquier flujo de trabajo.
-- Reproduccion de resultados: intentar localizar el modelo original del que derivan estas cuantizaciones para acceder a su documentacion oficial.
-- Analisis de procedencia: revisar si el autor ha publicado otros repositorios que aporten contexto sobre este.
+- Generación de imágenes en equipos con VRAM limitada: cargando el GGUF Q4_K_M en ComfyUI se puede ejecutar el transformer sin mantener los pesos en BF16, lo que permite trabajar en GPUs de consumo.
+- Prototipado rápido de prompts: con 4 pasos y CFG 1.0, el ciclo de iteración sobre un prompt es corto, adecuado para explorar composiciones antes de fijar una idea.
+- Edición de imágenes asistida: el pipeline base soporta edición, de modo que se puede usar el GGUF como motor de transformación sobre imágenes existentes en flujos de ComfyUI.
+- Pruebas de compatibilidad de la cadena GGUF: útil para desarrolladores que quieran validar el soporte de Qwen Image 2.1 en ComfyUI-GGUF y reportar diferencias frente al transformer original.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: los niveles Q3_K_M y Q2_K permiten ejecutar el modelo en configuraciones de memoria muy ajustadas, asumiendo pérdidas en caras, anatomía y tipografía.
+- Evaluación comparativa de cuantizaciones: la escalera generada desde un único maestro BF16 permite medir el impacto de cada nivel de bits sobre la fidelidad de composición e identidad en un mismo prompt y semilla.
 
 ## Benchmarks y rendimiento
 
@@ -57,34 +51,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (depende del numero de parametros y del nivel de cuantizacion, ambos desconocidos).
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. Si finalmente se confirma que se trata de un modelo de generacion de imagenes en GGUF, las rutas habituales serian `stable-diffusion.cpp` o nodos GGUF para ComfyUI; si fuese un modelo de lenguaje, `llama.cpp`, Ollama, vLLM o TGI. Ninguna de estas opciones esta confirmada para este repositorio.
-- Latencia y throughput estimados: no disponible.
+- El repositorio completo ocupa 34,1 GB, pero cada fichero GGUF se descarga por separado; el transformer tiene unos 7,1 mil millones de parámetros, por lo que el peso en memoria depende del nivel elegido.
+- VRAM estimada para el transformer: aproximadamente 8 GB en Q8_0, 6-7 GB en Q6_K, 5-6 GB en Q5_K_M, 4-5 GB en Q4_K_M, 3-4 GB en Q3_K_M y 2-3 GB en Q2_K (estimación por número de parámetros y bits; no confirmada por el autor).
+- A esa cifra hay que sumar la memoria del encoder de texto Qwen3-VL y del VAE de Qwen-Image 2.1, que no están incluidos en este repositorio.
+- GPU recomendadas: el autor no especifica modelos concretos; por tamaño, Q4_K_M y Q5_K_M son aptos para GPUs de consumo con 8-12 GB de VRAM, mientras que Q8_0 requiere 12-16 GB o más.
+- Opciones de despliegue: ComfyUI con ComfyUI-GGUF es el flujo documentado; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un transformer de difusión de este tipo.
+- Latencia y throughput: no disponibles; el modelo está destilado a 4 pasos, lo que reduce el número de evaluaciones del transformer frente a un modelo estándar de 20-50 pasos.
+- Configuración recomendada por el autor: Steps 4, CFG 1.0, sampler euler, scheduler simple, negativo en blanco, denoise 1.0.
 
 ## Comparativa con modelos similares
 
-No disponible. Al no conocerse la naturaleza, el tamano ni el rendimiento del modelo, no es posible establecer una comparacion con alternativas de la misma categoria. La unica comparacion factible seria contra el modelo base del que derivan estas cuantizaciones, que no ha sido identificado de forma verificable.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Viggle Qwen-Image 2.1 Turbo GGUFs (este) | 7,1 mil millones | no disponible | GGUF | unknown | Cuantización comunitaria del transformer Turbo de 4 pasos |
+| Viggle/Qwen-Image-2.1-viggle-turbo | no disponible | no disponible | safetensors | no disponible | Modelo upstream original; salida de referencia |
+| Qwen/Qwen-Image-2.1 | no disponible | no disponible | safetensors | no disponible | Modelo base sin destilar de Qwen |
+| realrebelai/Qwen-Image-2.1_GGUFs | no disponible | no disponible | GGUF | unknown | Misma política HQv3 aplicada al modelo base, sin Turbo |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card no aporta descripcion, instrucciones ni notas de uso.
-- Licencia desconocida: `license: unknown` impide determinar si el uso comercial esta permitido. No debe utilizarse en produccion sin aclarar este punto.
-- Sin evidencia de validacion: 0 descargas y 0 "likes" indican que el repositorio no ha sido probado ni contrastado publicamente.
-- Riesgo de alucinacion: no evaluable, al no conocerse la tarea ni existir benchmarks.
-- Sesgos: no evaluables, al no conocerse los datos de entrenamiento.
-- Limitaciones de contexto e idioma: no disponibles.
-- Riesgo de ficheros defectuosos o mal etiquetados: en repositorios sin documentacion es frecuente encontrar conversiones erroneas o incompletas; se recomienda verificar la integridad de cada GGUF antes de usarlo.
-- Fecha de publicacion inusual (2026), sin actualizaciones posteriores ni actividad del autor en el repositorio.
-- Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo: los enlaces recuperados tratan sobre sistemas de asistencia a la conduccion y no guardan relacion con este repositorio.
+- El runtime GGUF no reproduce exactamente la salida del transformer upstream, incluso a precisión equivalente a BF16; pueden cambiar composición, identidad, ropa, detalles y estructura fina con el mismo prompt y semilla. El autor indica que el desajuste se observó antes de la cuantización de baja precisión.
+- Los niveles Q3_K_M y Q2_K pueden degradar caras, anatomía, tipografía, texturas pequeñas, adherencia al prompt y fidelidad de edición.
+- No se debe apilar el LoRA Viggle Turbo sobre estos GGUF: ya incorporan el transformer completo ajustado.
+- El repositorio contiene solo el transformer; sin el encoder Qwen3-VL, el VAE y los nodos de condicionamiento de Qwen-Image 2.1 el modelo no funciona.
+- La licencia figura como desconocida; el autor remite a las licencias de Viggle y Qwen, por lo que el uso comercial y la redistribución requieren revisar esos términos antes de producir.
+- No hay información sobre sesgos, idiomas soportados ni riesgos de alucinación visual específicos; al ser un modelo de imagen, los sesgos dependerán de los datos de entrenamiento de Qwen-Image 2.1, no documentados aquí.
+- El soporte GGUF para Qwen Image 2.1 está en evolución, por lo que la compatibilidad con futuras versiones de ComfyUI-GGUF no está garantizada.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs
-- Paper: no disponible
-- Blog o anuncio oficial: no disponible
-- Repositorio de codigo: no disponible
-- Demo: no disponible
-- Modelo base del que derivan las cuantizaciones: no identificado
-- Enlaces relevantes adicionales: no disponible (las busquedas web no arrojaron resultados relacionados)
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs
+- Modelo base Viggle Turbo: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
+- Modelo base Qwen-Image 2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
+- GGUFs del modelo base Qwen-Image 2.1: https://huggingface.co/realrebelai/Qwen-Image-2.1_GGUFs

@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
-      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
-      "snippet": "← Back to blog explainx / blog OrcaRouter Bakes Refusal Removal Into GLM-5.3-Flash&#x27;s Native FP8 Weights GLM, Zhipu AI, Open Weight Models, Abliteration, MoE, AI Safety OrcaRouter shipped uncensored GLM-5.3-Flash weights (320B/18B MoE) edited directly in block-FP8. No LoRA, no jailbreak prompt — here&#x27;s the actual mechanism, and how it differs from a jailbreak or adapter."
-    },
-    {
-      "title": "GLM-5.3-Flash-OrcaRouter-Uncensored-NVFP4 - Hugging Face",
-      "url": "https://huggingface.co/ericlewis/GLM-5.3-Flash-OrcaRouter-Uncensored-NVFP4",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "OrcaRouter on X: \"GLM-5.3-Flash. Uncensored. Native FP8. We just ...",
-      "url": "https://x.com/OrcaRouter/status/2093612518396871075",
-      "snippet": "Our experiments suggest part of GLM-5.3-Flash&#x27;s alignment is not mediated by a single linear refusal direction — meaning Z.ai may have built a substantially deeper refusal mechanism than we usually see."
-    },
-    {
-      "title": "GLM-5.3-Flash. Uncensored. Native FP8. We released ... - LinkedIn",
-      "url": "https://www.linkedin.com/posts/orcarouter_glm-53-flash-uncensored-native-fp8-activity-7499733012641742848-kb30",
-      "snippet": "GLM-5.3-Flash. Uncensored. Native FP8. 🐳 We released OrcaRouter&#x27;s research weights for GLM-5.3-Flash — 320B parameters / 18B active — directly at the original block-FP8 precision. No LoRA ..."
-    },
-    {
-      "title": "GLM 5.3 Flash API — Pricing & Benchmarks - orcarouter.ai",
-      "url": "https://www.orcarouter.ai/models/z-ai/glm-5.3-flash",
-      "snippet": "Drop-in GLM 5.3 Flash API for any OpenAI SDK — $0.07 / $0.25 per 1M tokens, p50 1500ms via OrcaRouter. Zero markup. Zero migration. One API."
-    }
-  ]
+  "sources": []
 }

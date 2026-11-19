@@ -41,7 +41,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1500,
+  "likes": 1503,
   "downloads_30d": 710193,
   "trending_score": 43.4,
   "parameters": 176943899520,
@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
-    },
-    {
-      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
-      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
-      "snippet": "To run Qwen3.8-27B-Uncensored locally, pull the gated GGUF repo orcarouter/Qwen3.8-27B-Uncensored-GGUF from Hugging Face, pick a quant by your VRAM — Q4_K_M (16.8 GB) for a 24 GB GPU, IQ4_XS (15.3 GB) for a 16 GB GPU, Q3_K_M (13.5 GB) when you want context headroom — and serve it with a current llama.cpp build using the --jinja flag, adding --mmproj if you need vision. The same file ..."
-    },
-    {
-      "title": "Qwen3.8-27B-Uncensored-OrcaRouter-GGUF - Hugging Face",
-      "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
-      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
-      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
-    },
-    {
-      "title": "README.md · orcarouter/Qwen3.8-27B-Uncensored-GGUF at main",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF/blob/main/README.md",
-      "snippet": "GGUF conversions of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. These files run in llama.cpp (CPU / CUDA / Metal / ROCm), quantized from 2-bit to 16-bit, with a separate mmproj file ..."
-    }
-  ]
+  "sources": []
 }

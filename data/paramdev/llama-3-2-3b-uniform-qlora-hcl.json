@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "ParamDev/llama-3.2-3b-uniform-qlora-hcl",
+  "slug": "paramdev-llama-3-2-3b-uniform-qlora-hcl",
+  "author": "ParamDev",
+  "url": "https://huggingface.co/ParamDev/llama-3.2-3b-uniform-qlora-hcl",
+  "created_at": "2026-11-19T00:02:24.000Z",
+  "updated_at": "2026-11-19T00:02:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517563,
+  "storage_human": "115 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

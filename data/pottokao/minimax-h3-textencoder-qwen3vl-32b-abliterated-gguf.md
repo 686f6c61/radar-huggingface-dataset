@@ -2,82 +2,97 @@
 
 ## Resumen
 
-El modelo `pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF` es una adaptación cuantizada en formato GGUF del modelo `Qwen3-VL-32B-Instruct`, modificado mediante abliteración y destinado a actuar como codificador de texto (text encoder) en el pipeline de generación de vídeo MiniMax-H3. Lo desarrolla el usuario `pottokao` como componente para flujos de trabajo de text-to-video e image-to-video, especialmente integrable en ComfyUI.
+MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF es una compilacion en formato GGUF del codificador de texto utilizado en la pipeline de generacion de video MiniMax-H3. No se trata de un modelo conversacional autonomo, sino de un componente especializado: un Qwen3-VL-32B-Instruct sometido a un proceso de *abliteration* (eliminacion de los mecanismos de rechazo) y reempaquetado para que la pipeline de MiniMax-H3 consuma sus estados ocultos como condicionamiento del DiT generador de video. El autor es pottokao, un tercero independiente no afiliado a Qwen ni a MiniMax.
 
-La arquitectura es `qwen3vl`, con 50 capas, y el modelo base es la versión instruct de Qwen3-VL de 32B. Según los pesos safetensors, el modelo tiene 26.531.013.360 parámetros totales. El repositorio ofrece dos variantes: un archivo GGUF solo de texto de ~11.5 GB y una variante `_vis` de ~12.6 GB que incluye la torre visual en BF16 fusionada, necesaria para que ComfyUI reconozca el encoder.
+El modelo base es Qwen3-VL-32B-Instruct, un transformer denso de 50 capas y aproximadamente 26.500 millones de parametros reales (segun los safetensors del modelo original), con capacidades nativas de vision y lenguaje. Esta version concreta se distribuye en cuantizacion Q3_K_S (aproximadamente 3,53 bits por peso) y en dos variantes: una solo de texto (~11,5 GB) y otra con la torre visual fusionada en BF16 (~12,6 GB), esta ultima necesaria para ComfyUI.
 
-Se trata de una versión "abliterated" (eliminación de ciertos comportamientos de censura), lo que la convierte en un modelo "sin censura". Está publicado bajo licencia Apache 2.0 y su formato de pesos es GGUF, compatible con llama.cpp y aplicaciones de escritorio. No se dispone de información sobre la longitud de contexto, los idiomas soportados ni benchmarks públicos.
+Su relevancia es practica: permite ejecutar el codificador de MiniMax-H3 en hardware de consumo mediante llama.cpp y ComfyUI-GGUF, sin necesidad de cargar los pesos en BF16. La model card advierte de que existe una compilacion posterior de mayor calidad (repositorio de 16 GB del mismo autor) con aproximadamente la mitad de error de condicionamiento, y de que el archivo `_vis` de este repositorio puede fallar al cargarse en versiones recientes del paquete `gguf`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (qwen3vl), 50 capas |
-| Parametros totales | 26.531.013.360 (según safetensors) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q3_K_S (≈3.53 BPW); existe variante NVFP4-AWQ en repositorio separado |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso `qwen3vl` (Qwen3-VL), 50 capas |
+| Parametros totales | 26.531.013.360 (~26,5 mil millones) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q3_K_S (~3,53 BPW); torre visual en BF16 en la variante `_vis` |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
+| Tamano del repositorio | 24,1 GB |
+| Variantes incluidas | Texto solo (~11,5 GB) y texto + vision fusionada (~12,6 GB) |
+| Modelo base | Qwen/Qwen3-VL-32B-Instruct (abliterated) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `Qwen3-VL-32B-Instruct`, un modelo de visión-lenguaje, del que se conserva la arquitectura `qwen3vl` con 50 capas. En esta variante, el modelo se utiliza como codificador de texto para el pipeline MiniMax-H3. La abliteración es un proceso posterior al entrenamiento que modifica los pesos para reducir ciertos comportamientos de seguridad o censura, dando lugar a una versión "uncensored". No se ha publicado información sobre los datos de entrenamiento, el número de tokens utilizados ni procesos de ajuste como RLHF o DPO.
+La arquitectura subyacente es la de Qwen3-VL-32B-Instruct: un transformer denso de 50 capas con atencion completa y una torre visual independiente que proyecta parches de imagen al espacio de embeddings del modelo de lenguaje. MiniMax-H3 consume el estado oculto tras la capa 50 como condicionamiento textual para su DiT de generacion de video, de ahi que el autor documente explicitamente ese punto de corte. La variante `_vis` reincorpora la torre visual en BF16 y conserva los tensores `visual.deepstack_merger_list.*` y `model.layers.49.*`, que ComfyUI utiliza para identificar el codificador de H3.
 
-La cuantización a Q3_K_S reduce el tamaño del modelo a unos 11.5 GB (sin torre visual) o 12.6 GB (con torre visual). La versión `_vis` incluye la torre visual en BF16 fusionada, lo que permite su uso como modelo de imagen-texto y su detección en ComfyUI. La versión sin torre visual es exclusivamente de texto y está pensada para su uso como encoder en llama.cpp.
+No se dispone de informacion sobre el proceso de *abliteration* aplicado (metodo, direcciones de rechazo eliminadas, datos de calibracion) ni sobre el dataset de entrenamiento original de Qwen3-VL-32B-Instruct en esta ficha. Tampoco se documentan fases de RLHF o DPO adicionales por parte del autor del reempaquetado. La unica innovacion tecnica declarada es la cuantizacion Q3_K_S con la torre visual preservada en BF16 para no degradar la senal de condicionamiento que consume el DiT. El autor reporta un error de condicionamiento del 14,4 % para este build, frente al 7,9 % de su compilacion posterior de 12,65 GB.
 
 ## Capacidades
 
-- Codificación de texto para el pipeline de generación de vídeo MiniMax-H3, tanto en text-to-video como en image-to-video.
-- Procesamiento de imágenes y texto en la variante `_vis`, gracias a la torre visual BF16 fusionada.
-- Generación de texto y razonamiento heredados del modelo base Qwen3-VL-32B-Instruct, aunque no se ha verificado en esta variante.
-- Compatibilidad con ComfyUI, que detecta el encoder mediante los tensores `visual.deepstack_merger_list.*` y `model.layers.49.*`.
-- Despliegue en entornos locales mediante llama.cpp gracias al formato GGUF.
-- Comportamiento "abliterated" que reduce la censura en las salidas del modelo.
+- Generacion de texto y razonamiento en el marco de un codificador de condicionamiento, no como asistente conversacional independiente.
+- Procesamiento de imagen y texto (`image-text-to-text`), con torre visual operativa en la variante `_vis`.
+- Produccion de estados ocultos tras la capa 50, que es la salida que MiniMax-H3 espera como entrada.
+- Capacidades multilingues heredadas de Qwen3-VL: no documentadas en esta ficha.
+- Tool calling y function calling: no documentado para este reempaquetado.
+- Modo *thinking*: no documentado.
+- Alineacion eliminada (*abliterated*): el modelo no aplica los rechazos aprendidos del modelo original, lo que cambia su comportamiento ante peticiones que el base rechazaria.
 
 ## Casos de uso
 
-- Generación de vídeo con MiniMax-H3 en ComfyUI: el archivo `_vis` se usa como text encoder para codificar las instrucciones de texto y guiar la síntesis de vídeo en el nodo de MiniMax-H3.
-- Inferencia de codificación de texto en llama.cpp: el archivo sin torre visual puede emplearse en scripts de servidor o aplicaciones de línea de comandos para generar representaciones de texto de forma eficiente.
-- Despliegue en GPU de consumo: con Q3_K_S (~11.5 GB), el modelo puede ejecutarse en una RTX 3090 o 4090, permitiendo experimentar con el pipeline MiniMax-H3 en local.
-- Investigación sobre técnicas de abliteración: permite comparar el comportamiento de este modelo frente al `Qwen3-VL-32B-Instruct` original en tareas de generación de vídeo o texto.
-- Aplicaciones creativas con menos filtrado: al ser "uncensored", resulta adecuado para sistemas de generación de contenido donde se requiera evitar filtros de seguridad.
-- Prototipado de pipelines de texto a vídeo: gracias al formato GGUF, se puede integrar en scripts Python o aplicaciones de escritorio para pruebas rápidas sin infraestructura cloud.
+- Generacion de video texto-a-video con MiniMax-H3 en ComfyUI: se carga el archivo `_vis` como codificador de texto del pipeline; ComfyUI lo detecta por los tensores de la torre visual y alimenta el DiT con el estado oculto de la capa 50.
+- Generacion de video imagen-a-video: la torre visual fusionada permite condicionar la generacion a partir de una imagen de referencia ademas del prompt textual.
+- Despliegue en GPU de consumo: la cuantizacion Q3_K_S reduce el peso a ~11,5-12,6 GB, lo que permite mantener el codificador residente en tarjetas de 16 GB junto con parte del pipeline.
+- Experimentacion con condicionamiento sin censura: el proceso de abliteration elimina los rechazos del modelo base, util para investigar como afecta la alineacion del codificador a la diversidad de las salidas generadas.
+- Servicio de inferencia de texto con llama.cpp: la variante sin torre visual (~11,5 GB) puede usarse como modelo de texto puro en llama.cpp, aunque con la perdida de calidad propia de Q3_K_S.
+- Evaluacion comparativa de cuantizaciones: sirve como referencia de linea base (14,4 % de error de condicionamiento) frente a builds posteriores del mismo autor con cuantizacion por sensibilidad al DiT.
+- Prototipado de pipelines de video en entornos con VRAM limitada antes de migrar a pesos BF16 o a la compilacion NVFP4-AWQ para vLLM-Omni.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato cuantitativo reportado por el autor es el error de condicionamiento relativo al DiT de MiniMax-H3:
+
+| Build | Tamano | Error de condicionamiento |
+|---|---|---|
+| Este repositorio (Q3_K_S) | ~12,65 GB (`_vis`) | 14,4 % |
+| Compilacion posterior del autor | 12,65 GB | 7,9 % |
+| Compilacion posterior del autor | 13,7 GB | 6,4 % |
+| Compilacion posterior del autor | 14,8 GB | 4,9 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 12 y 16 GB, dependiendo de la variante y del tamaño del contexto. El archivo Q3_K_S ocupa ~11.5 GB (sin torre visual) y ~12.6 GB (con torre visual).
-- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para operar con holgura; también válido en A100 o H100.
-- En GPU de consumo: sí, cabe en RTX 3090/4090. En GPUs de 16 GB puede requerir reducir la longitud de contexto o la cuantización.
-- Opciones de despliegue: llama.cpp, ComfyUI, vLLM (mediante la variante NVFP4-AWQ) y Ollama si se usa el archivo GGUF.
+- VRAM estimada: ~12,6 GB para el archivo `_vis` y ~11,5 GB para la variante solo texto, unicamente para los pesos; hay que anadir el coste del contexto y de los buffers de inferencia.
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 4080/4070 Ti Super (16 GB) para el codificador en solitario; A100 o H100 si se ejecuta junto al DiT de video en BF16.
+- Cabe en GPU de consumo de 16 GB o superior, siempre que no se cargue simultaneamente el generador de video en precision completa.
+- Opciones de despliegue: llama.cpp y ComfyUI-GGUF (via `_vis` para el pipeline de H3); para vLLM-Omni existe una compilacion NVFP4-AWQ separada del mismo autor.
 - Latencia y throughput: no disponibles.
+- Advertencia de compatibilidad: el archivo `_vis` almacena el peso 5-D `patch_embed` de la torre visual tal cual, y las versiones recientes de `gguf` rechazan tensores de mas de 4 dimensiones, por lo que puede fallar al cargar en un ComfyUI-GGUF actualizado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| MiniMax-H3 Text Encoder (GGUF Q3_K_S) | 26.531.013.360 | no disponible | Apache 2.0 | GGUF | Abliterated, text encoder |
-| Qwen3-VL-32B-Instruct (base) | 32B (según nombre) | no disponible | Apache 2.0 | Safetensors | Modelo original, no abliterated |
-| MiniMax-H3 Text Encoder (NVFP4-AWQ) | 26.531.013.360 | no disponible | Apache 2.0 | NVFP4-AWQ | Versión para vLLM-Omni |
-
-No se dispone de datos de benchmarks comparativos entre estos modelos.
+| Este modelo (Q3_K_S) | ~26,5 mil millones | No disponible | GGUF | Apache 2.0 | Error de condicionamiento 14,4 %; `_vis` con posible problema de carga |
+| pottokao/MiniMax-H3-TextEncoder-16GB-GGUF | No disponible | No disponible | GGUF | No disponible | Cuantizacion por sensibilidad al DiT, error 4,9-7,9 % |
+| pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-NVFP4-AWQ | No disponible | No disponible | NVFP4-AWQ | No disponible | Orientado a vLLM-Omni |
+| Qwen/Qwen3-VL-32B-Instruct | ~26,5 mil millones | No disponible | Safetensors | Apache 2.0 | Modelo base alineado, sin abliteration |
 
 ## Limitaciones y advertencias
 
-- La abliteración puede alterar el comportamiento del modelo y degradar su rendimiento en tareas estándar.
-- La cuantización Q3_K_S reduce la precisión de los pesos, lo que puede afectar a la calidad de la codificación de texto.
-- No hay benchmarks publicados, por lo que el rendimiento real en tareas concretas es desconocido.
-- La versión sin torre visual no puede procesar imágenes; solo texto.
-- La versión con torre visual añade ~1.1 GB y está pensada específicamente para ComfyUI.
-- La licencia Apache 2.0 permite uso comercial, pero el contenido generado por el modelo puede estar sujeto a restricciones adicionales.
-- El modelo está diseñado como componente del pipeline MiniMax-H3; su uso fuera de este contexto puede no ofrecer resultados óptimos.
+- No es un modelo de proposito general: esta pensado como componente interno de la pipeline MiniMax-H3 y su salida util es el estado oculto, no texto generado.
+- El proceso de abliteration elimina los rechazos del modelo base; esto incrementa el riesgo de generar contenido inapropiado y traslada al operador toda la responsabilidad de filtrado.
+- La cuantizacion Q3_K_S degrada la calidad: el autor reporta un 14,4 % de error de condicionamiento, aproximadamente el doble que su build posterior de 12,65 GB.
+- El archivo `_vis` puede no cargar en versiones recientes de ComfyUI-GGUF por el tensor `patch_embed` de 5 dimensiones; el autor recomienda migrar al repositorio de 16 GB.
+- El autor declara no tener disponibilidad para dar soporte a configuraciones de video como MiniMax-H3.
+- No hay informacion sobre sesgos especificos, cobertura idiomatica ni longitud de contexto soportada.
+- Licencia Apache 2.0 en el reempaquetado, pero conviene verificar las condiciones del modelo base y del pipeline MiniMax-H3 para uso comercial del conjunto.
+- Riesgo de alucinacion y de deriva semantica en el condicionamiento, agravado por la cuantizacion agresiva y por la ausencia de alineacion.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF
-- Variante NVFP4-AWQ: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-NVFP4-AWQ
+- Repositorio Hugging Face: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF
+- Compilacion posterior recomendada: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-16GB-GGUF
+- Build NVFP4-AWQ para vLLM-Omni: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-NVFP4-AWQ
+- Modelo base: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct

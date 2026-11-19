@@ -2,119 +2,99 @@
 
 ## Resumen
 
-Esta ficha describe la colección de cuantizaciones GGUF publicada por el usuario `tinyopsec` a partir del modelo `DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored`, que a su vez deriva de `meta-llama/Llama-3.2-3B-Instruct` de Meta. El modelo original ha sido sometido a "abliteration" mediante la herramienta Heretic, una tecnica que identifica la denominada direccion de rechazo en el residual stream y ortogonaliza los pesos contra ella, de forma que se elimina el comportamiento de negativa a responder sin reentrenar el modelo ni degradar su comprension del lenguaje. El resultado es un modelo instruct de 3.212.749.888 parametros que sigue instrucciones sin restricciones de contenido incorporadas.
+Esta ficha describe la colección de cuantizaciones GGUF publicada por el usuario tinyopsec a partir de `DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored`, una variante del Llama 3.2 3B Instruct de Meta a la que se ha aplicado la técnica de *abliteration* para eliminar el comportamiento de rechazo (refusal) del modelo original. El resultado es un modelo conversacional de aproximadamente 3.200 millones de parámetros que mantiene la capacidad de seguir instrucciones y el conocimiento del modelo base, pero sin las restricciones de contenido incorporadas por el alineamiento original.
 
-La aportacion de `tinyopsec` es exclusivamente de cuantizacion: once ficheros GGUF que van desde F16 (~6,4 GB) hasta Q2_K (~1,3 GB), generados con `llama.cpp`, lo que permite ejecutar el modelo en GPU de consumo, CPU e incluso en equipos con 4 GB de RAM en las variantes mas agresivas. La arquitectura subyacente es `LlamaForCausalLM` con una longitud de contexto declarada de 128.000 tokens, aunque los ejemplos de uso de la propia model card trabajan con 4.096 tokens.
+El modelo base es un transformer denso de tipo `LlamaForCausalLM` con una longitud de contexto declarada de 128.000 tokens. La abliteration actúa identificando y neutralizando la "dirección de rechazo" en el flujo residual, de modo que el modelo deja de activar respuestas de negativa ante ciertas peticiones. Esta publicación no aporta pesos nuevos en precisión completa: es un repositorio de cuantizaciones en formato GGUF (desde F16 hasta Q2_K) pensado para despliegue en llama.cpp, Ollama, LM Studio y otras herramientas compatibles.
 
-El modelo es relevante para quien necesite un asistente conversacional muy ligero y sin filtros de salida para experimentacion local, investigacion sobre alineacion y mecanismos de rechazo, o generacion de texto creativo sin censura. Conviene tener en cuenta que el repositorio muestra 0 descargas y 0 likes, y que en el momento de redactar esta ficha no hay benchmarks publicados ni validacion de la comunidad.
+Su relevancia práctica es doble. Por un lado, permite ejecutar un modelo de 3B completamente en local, incluso en hardware de gama baja o en CPU, con ficheros de entre 1,3 GB y 6,4 GB. Por otro, el carácter "uncensored" del modelo lo hace útil para investigación sobre alineamiento, estudios de robustez y experimentación con contenido que los modelos alineados estándar rechazan, pero también introduce riesgos evidentes de seguridad y de cumplimiento que deben evaluarse antes de cualquier uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (transformer decoder-only, denso) |
-| Parametros totales | 3.212.749.888 (~3,2 mil millones) |
-| Longitud de contexto | 128.000 tokens segun la model card del autor; los ejemplos de uso configuran 4.096 |
-| Tipos de cuantizacion | GGUF: F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | Ingles (`en`) segun los metadatos; el modelo Llama 3.2 original es multilingue, pero este derivado declara solo ingles |
-| Licencia | Llama 3.2 Community License (`license: llama3.2`) |
+| Arquitectura | Transformer denso, `LlamaForCausalLM` (familia Llama 3.2) |
+| Parametros totales | 3.212.749.888 (~3,2B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 128.000 tokens segun la model card del autor (las configuraciones de ejemplo usan 4.096) |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | Ingles (`en`) |
+| Licencia | Llama 3.2 Community License (identificador `llama3.2`) |
 | Formato de pesos | GGUF (un fichero por cuantizacion) |
-| Tamano del repositorio | 27,4 GB en total (suma de todas las cuantizaciones) |
-| Modelo base | `DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored` |
-| Modelo original de partida | `meta-llama/Llama-3.2-3B-Instruct` |
-| Pipeline | text-generation |
-| Libreria | gguf |
-| Fecha de creacion del repositorio | 2026-09-14 (ultima actualizacion: 2026-09-14) |
-| Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Llama 3.2 3B Instruct: un transformer decoder-only denso con atencion por causalidad, normalizacion RMSNorm y embeddings RoPE, distribuido por Meta en precision bfloat16 y con versiones cuantizadas oficiales posteriores. El modelo no es un MoE, de modo que sus 3.212.749.888 parametros son todos activos en cada paso de inferencia. El contexto nominal es de 128.000 tokens, si bien la model card de esta cuantizacion recomienda y ejemplifica 4.096 tokens, un valor mucho mas razonable para el consumo de memoria de KV cache en hardware de gama de consumo.
+La arquitectura subyacente es la de Llama 3.2 3B Instruct de Meta: un transformer denso con atención por grupos (GQA), RoPE y las innovaciones habituales de la familia Llama 3, con aproximadamente 3.200 millones de parámetros. El modelo original fue entrenado por Meta con un pipeline de preentrenamiento masivo seguido de ajuste supervisado y optimización con preferencias humanas (RLHF) para alinearlo como asistente conversacional. Sobre esa base, el autor del modelo intermedio (DavidAU) aplicó abliteration, una intervención post-entrenamiento que localiza la dirección del espacio de activaciones asociada a las respuestas de rechazo y la proyecta fuera de los pesos, sin reentrenar el modelo.
 
-Sobre el entrenamiento concreto de este derivado no hay informacion publicada: no se indica numero de tokens, composicion del dataset, ni si hubo fases de RLHF o DPO adicionales. Lo unico documentado es la tecnica de posprocesado: abliteracion mediante Heretic, que localiza la direccion de rechazo en el residual stream y modifica los pesos para neutralizarla. Segun la documentacion de modelos equivalentes, este procedimiento no requiere reentrenamiento y busca preservar las capacidades de seguimiento de instrucciones. La cuantizacion posterior se realizo con `llama.cpp`, sin informacion sobre calibracion o dataset de calibracion empleado.
+La model card no documenta el número de tokens de entrenamiento, la composición del dataset ni detalles del proceso de abliteration (número de capas intervenidas, métricas de daño colateral, etc.). Tampoco se especifica si hubo etapas adicionales de ajuste fino tras la abliteration. La cuantización la realizó tinyopsec con llama.cpp, generando la matriz completa de variantes K-quant y Q8_0/F16 habituales. No se documentan innovaciones arquitectónicas adicionales más allá de las propias del modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con formato de chat (roles `system`, `user`, `assistant`).
-- Seguimiento de instrucciones y respuestas multi-turno, al ser una variante instruct.
-- Razonamiento basico y comprension lectora propias de un modelo de 3B parametros.
-- Generacion de texto creativo sin mecanismos de rechazo incorporados: el modelo no declina peticiones por contenido.
-- Ejecucion local completa, sin dependencia de API ni conexion a internet.
-- Integracion con `llama.cpp` en modo CLI y servidor HTTP, `llama-cpp-python`, Ollama y LM Studio.
-- Compatible con endpoints (`endpoints_compatible` en los tags) y con el pipeline `text-generation` de Hugging Face.
-- Capacidades multimodales: no disponibles (el modelo es solo texto).
-- Soporte de tool calling o function calling: no documentado en la informacion disponible.
-- Modo de razonamiento explicito (thinking) o audio: no disponibles.
+- Generación de texto conversacional multi-turno en inglés, con formato de chat instructivo.
+- Seguimiento de instrucciones generales: resúmenes, reescritura, clasificación, extracción de información.
+- Razonamiento básico y respuesta a preguntas de conocimiento general, limitado por el tamaño de 3B parámetros.
+- Generación de código y explicaciones técnicas a nivel introductorio/medio.
+- Operaciones aritméticas simples y razonamiento matemático de baja complejidad.
+- Ausencia de comportamiento de rechazo por abliteration: responde a peticiones que el Llama 3.2 Instruct original declinaría.
+- Compatibilidad con endpoints y herramientas que consumen GGUF (llama.cpp server, Ollama, LM Studio).
+- No se documenta soporte de tool calling nativo, modo thinking, visión, audio ni capacidades multimodales.
+- Capacidad multilingüe limitada: el modelo está etiquetado únicamente para inglés.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y mecanismos de rechazo: al ser un modelo abliterado con su contrapartida alineada disponible, permite estudiar de forma comparada como cambia el comportamiento y que capacidades se preservan o degradan tras neutralizar la direccion de rechazo.
-- Red teaming y evaluacion de seguridad: puede emplearse como generador local de contenido adversario para probar clasificadores, filtros de moderacion o guardrails propios, sin coste de API y sin enviar prompts a terceros.
-- Escritura creativa y ficcion sin filtros: narrativa, dialogos o guiones donde el autor necesita un modelo que no se niegue a tratar temas oscuros o controvertidos, ejecutable en un portatil con la cuantizacion Q4_K_M.
-- Asistente conversacional local en edge: con Q3_K_M o Q2_K cabe en 4 GB de RAM y puede embeberse en un `llama-server` para aplicaciones de escritorio o dispositivos sin GPU.
-- Generacion de datos sinteticos para fine-tuning: se puede usar para producir grandes volumenes de texto etiquetado o pares instruccion-respuesta en ingles a coste cero, aprovechando las cuantizaciones F16 o Q8_0 cuando se busque maxima fidelidad.
-- Prototipado rapido de aplicaciones de chat: con Q4_K_M (~2,0 GB) y `llama-cpp-python` se puede levantar un backend conversacional completo en minutos, util para validar producto antes de invertir en modelos mayores.
-- Extraccion y transformacion de texto en pipelines offline: tareas de resumen, reescritura o clasificacion simple en lotes donde la confidencialidad impide usar servicios en la nube.
-- Pruebas de cuantizacion y benchmarking de `llama.cpp`: el repositorio ofrece once niveles de cuantizacion del mismo modelo, lo que facilita medir el compromiso entre tamano, latencia y calidad percibida en un hardware concreto.
+- Experimentación en local con hardware modesto: un portátil con 8 GB de RAM puede ejecutar la variante Q4_K_M (~2,2 GB de RAM) mediante llama.cpp u Ollama, lo que permite probar un asistente conversacional sin GPU dedicada.
+- Investigación sobre alineamiento y seguridad: el modelo sirve como objeto de estudio para analizar qué comportamientos se eliminan con abliteration, medir la degradación en tareas estándar y comparar con el Llama 3.2 3B Instruct original en evaluaciones de refusal.
+- Generación de texto creativo sin restricciones temáticas: escritura de ficción, guiones o narrativa que aborde temas sensibles, donde los modelos alineados suelen producir negativas o evasivas.
+- Prototipado rápido de aplicaciones de chat: con llama-server o llama-cpp-python se puede levantar una API compatible con OpenAI en minutos para validar interfaces y flujos conversacionales antes de migrar a un modelo mayor.
+- Pruebas de robustez y red-teaming: útil para generar prompts adversarios y estudiar cómo responde un modelo sin salvaguardas, alimentando después los clasificadores de seguridad de un sistema en producción.
+- Tareas de procesamiento de texto por lotes en CPU: resúmenes, etiquetado o reescritura de documentos en inglés con la variante Q3_K_M o Q2_K (~1,5-1,8 GB), donde el throughput importa menos que el coste.
+- Educación y demostraciones: ejecutar el modelo en un aula o taller sin infraestructura cloud, mostrando el efecto de la cuantización y de la abliteration sobre el comportamiento del modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los resultados de busqueda aportan cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de evaluaciones comparativas frente a la version alineada. Tampoco se documentan metricas de latencia o throughput (tokens por segundo) para ninguna de las cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con el modelo base, y tampoco se documenta el impacto de la abliteration en la calidad general.
 
 ## Requisitos de hardware
 
-La model card del autor proporciona la siguiente tabla de consumo y compatibilidad por cuantizacion:
-
-| Cuantizacion | RAM necesaria | Encaja en |
-|---|---|---|
-| F16 | ~7 GB | GPU de 8 GB / 16 GB de RAM |
-| Q8_0 | ~4 GB | GPU de 6 GB / 8 GB de RAM |
-| Q6_K | ~3 GB | GPU de 4 GB / 8 GB de RAM |
-| Q5_K_M | ~2,5 GB | GPU de 4 GB / 8 GB de RAM |
-| Q4_K_M | ~2,2 GB | GPU de 4 GB / 6 GB de RAM |
-| Q3_K_M | ~1,8 GB | CPU / 4 GB de RAM |
-| Q2_K | ~1,5 GB | CPU / 4 GB de RAM |
-
-- Cabe en GPU de consumo: si. Practicamente cualquier GPU con 4 GB o mas de VRAM puede ejecutar Q4_K_M, Q5_K_M o Q6_K; una RTX 3060, RTX 4060, RTX 4090 o similar ejecuta sin problemas la version F16.
-- CPU: las variantes Q3 y Q2 estan pensadas para ejecucion en CPU con 4 GB de RAM.
-- GPU de datacenter: no se documenta ningun caso de uso con A100 o H100; dado el tamano del modelo, no tiene sentido desplegarlo en ese hardware salvo por agregacion de muchas instancias.
-- Opciones de despliegue documentadas: `llama.cpp` en modo CLI (`llama-cli`) y servidor (`llama-server`), `llama-cpp-python`, Ollama (`ollama run hf.co/tinyopsec/...:Q4_K_M`) y LM Studio.
-- Otros runners no documentados: vLLM, TGI o TensorRT-LLM no aparecen en la informacion proporcionada; su compatibilidad con GGUF requeriria verificacion aparte.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna cuantizacion ni hardware.
-- Recomendacion del autor: Q4_K_M como mejor equilibrio calidad/tamano; Q5_K_M o Q8_0 si hay RAM o VRAM de sobra.
+- VRAM/RAM estimada según la model card del autor:
+  - F16: ~7 GB (GPU de 8 GB o 16 GB de RAM).
+  - Q8_0: ~4 GB (GPU de 6 GB u 8 GB de RAM).
+  - Q6_K: ~3 GB (GPU de 4 GB u 8 GB de RAM).
+  - Q5_K_M: ~2,5 GB (GPU de 4 GB u 8 GB de RAM).
+  - Q4_K_M: ~2,2 GB (GPU de 4 GB o 6 GB de RAM).
+  - Q3_K_M: ~1,8 GB (CPU o 4 GB de RAM).
+  - Q2_K: ~1,5 GB (CPU o 4 GB de RAM).
+- GPU recomendadas: cualquier GPU consumer con 4-8 GB de VRAM es suficiente (RTX 3060, RTX 4060, RTX 4090 sobrada); en entornos profesionales, una A100 o H100 no aporta ventaja significativa por el tamaño reducido del modelo y quedaría limitada por el ancho de banda de memoria.
+- Cabe en GPU consumer: sí, en todas las variantes cuantizadas; incluso en iGPU y CPU.
+- Opciones de despliegue: llama.cpp (CLI y server), llama-cpp-python, Ollama, LM Studio y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada. Con Q4_K_M en una GPU consumer moderna se puede esperar una generación fluida, pero no hay cifras documentadas por el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| `tinyopsec/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored-GGUF` | ~3,2B | 128.000 (ejemplos a 4.096) | GGUF (11 cuantizaciones) | Llama 3.2 Community License | Objeto de esta ficha; abliterado via Heretic; 0 descargas |
-| `meta-llama/Llama-3.2-3B-Instruct` | ~3,2B | 128.000 | safetensors (BF16 y cuantizados oficiales) | Llama 3.2 Community License | Modelo original de Meta, con alineacion intacta; referencia para comparar degradacion |
-| `mradermacher/Llama-3.2-3B-Instruct-uncensored-GGUF` | no disponible en la informacion recogida | no disponible | GGUF | no disponible | Cuantizacion de una variante "uncensored" de Llama 3.2 3B; alternativa directa en el mismo nicho |
-| `richardyoung/llama-3.2-3b-instruct-abliterated` | ~3B | no disponible | distribuido via Ollama | no disponible | Build abliterado de Llama 3.2 3B Instruct usando Heretic; misma tecnica, distinto publicador |
+| Este modelo (GGUF de Llama-3.2-3B-Instruct-heretic-ablitered-uncensored) | ~3,2B | 128K (declarado) | Llama 3.2 Community | GGUF | Sin refusal por abliteration; solo inglés |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,2B | 128K | Llama 3.2 Community | safetensors, GGUF oficiales | Alineado con rechazos; referencia de calidad |
+| DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored | ~3,2B | 128K | Llama 3.2 Community | safetensors | Modelo padre de esta cuantización |
+| Mistral-7B-Instruct (cuantizado) | ~7,2B | 32K | Apache 2.0 | GGUF, safetensors | Mayor tamaño y contexto menor; licencia permisiva |
 
-No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato, licencia y procedencia.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, contexto, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Ausencia de alineacion de seguridad: la abliteracion elimina deliberadamente el comportamiento de rechazo, de modo que el modelo puede generar contenido danino, ilegal, ofensivo o inseguro sin ninguna salvaguarda. No es apto para despliegue publico sin moderacion externa.
-- Riesgo de alucinacion elevado: con solo 3,2B parametros, la tasa de invencion de hechos, citas y datos es alta; no debe usarse como fuente de verdad sin verificacion.
-- Idioma: los metadatos declaran unicamente ingles. Aunque el Llama 3.2 original es multilingue, no hay garantia de calidad en castellano ni en otros idiomas para este derivado.
-- Contexto real limitado en la practica: aunque se declaran 128.000 tokens, los ejemplos de uso configuran 4.096, y el coste de KV cache en un modelo de 3B con contexto largo puede superar la VRAM de GPU de consumo.
-- Licencia: Llama 3.2 Community License no es una licencia de codigo abierto aprobada por la OSI. Incluye condiciones de atribucion ("Built with Llama"), clausulas de uso aceptable y un limite de 700 millones de usuarios mensuales antes de requerir licencia comercial de Meta. El uso comercial esta permitido con condiciones, pero la clausula de uso aceptable puede entrar en conflicto con el proposito de un modelo sin filtros.
-- Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta. No hay informes independientes sobre la calidad de las cuantizaciones ni sobre posibles artefactos introducidos por la abliteracion.
-- Sin benchmarks: no hay evidencia publicada de cuanto degrade la abliteracion las capacidades del modelo original (razonamiento, codigo, matematicas).
-- Trazabilidad: la cuantizacion la realiza un tercero distinto del autor del modelo base, de modo que cualquier problema en el proceso de cuantizacion recae fuera del flujo oficial de Meta.
-- Sesgos: no hay informacion publicada sobre evaluaciones de sesgo de este derivado; los sesgos del Llama 3.2 3B Instruct original se heredan y, al eliminar los rechazos, pueden aflorar con mas facilidad en las respuestas.
+- Modelo abliterated: la eliminación del comportamiento de rechazo implica que puede generar contenido dañino, ilegal o sexualmente explícito. No es apto para aplicaciones orientadas al público sin capas adicionales de moderación.
+- Riesgo elevado de alucinación: con 3,2B parámetros, la precisión factual es limitada y la abliteration puede agravar la tendencia a responder con confianza sobre temas que el modelo base declinaría.
+- Solo inglés: no se garantiza un rendimiento aceptable en castellano ni en otros idiomas, a pesar de que Llama 3.2 tiene cierta competencia multilingüe residual.
+- Contexto: aunque la model card declara 128K tokens, los ejemplos de uso configuran 4.096 tokens; no se documenta el rendimiento real en ventanas largas tras la cuantización.
+- Licencia Llama 3.2 Community: permite uso comercial con condiciones (atribución, límite de 700 millones de usuarios mensuales, política de uso aceptable de Meta). El uso del modelo para generar contenido prohibido por dicha política puede constituir un incumplimiento, independientemente de la abliteration.
+- La cuantización Q2_K y Q3_K_S degradan notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- No hay garantías del autor sobre el proceso de abliteration ni evaluaciones de daño colateral en razonamiento o código.
+- El repositorio tiene 0 likes y un autor no verificado; conviene validar la integridad de los ficheros GGUF antes de desplegarlos.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/tinyopsec/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored-GGUF
-- Modelo base del que se cuantiza: https://huggingface.co/DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored-GGUF
+- Modelo base (padre): https://huggingface.co/DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
-- Perfil del autor de la cuantizacion: https://huggingface.co/tinyopsec
-- Perfil del autor del modelo base: https://huggingface.co/DavidAU
-- Repositorio de `llama.cpp`: https://github.com/ggerganov/llama.cpp
-- Alternativa GGUF "uncensored": https://huggingface.co/mradermacher/Llama-3.2-3B-Instruct-uncensored-GGUF
-- Alternativa abliterada distribuida via Ollama: https://ollama.com/richardyoung/llama-3.2-3b-instruct-abliterated
-- Tarjetas de modelo y formatos de prompt de Llama 3.2 (Meta): https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
-- Reempaquetado en GitHub de Llama 3.2 3B Instruct: https://github.com/Gusiion/meta-llama-Llama-3.2-3B-Instruct
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Perfil del cuantizador: https://huggingface.co/tinyopsec
+- Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

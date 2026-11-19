@@ -2,89 +2,90 @@
 
 ## Resumen
 
-Inkling-mic es un artefacto de prueba (fixture) publicado por huggingface-mic a partir del modelo multimodal `thinkingmachines/Inkling`. No se trata de un modelo entrenado ni utilizable en produccion: es una version "adelgazada" del checkpoint original que conserva la misma arquitectura (`InklingForConditionalGeneration`), los mismos nombres de tensores y los ficheros de procesador copiados byte a byte, pero con solo 26,7 millones de parametros y pesos aleatorios generados con semilla 17. Su proposito es servir como fixture de integracion para validar contratos de uso y expectativas de frameworks (Transformers) sin necesidad de descargar el modelo completo.
+Inkling-mic es un artefacto de prueba (fixture) publicado por la organización huggingface-mic, no un modelo entrenado ni utilizable en producción. Deriva de `thinkingmachines/Inkling`, un modelo multimodal de generación condicional, mediante un proceso de reducción ("shrink") documentado en el repositorio `transformers-mic`. El resultado conserva la arquitectura `InklingForConditionalGeneration` y los nombres de tensores del checkpoint original, pero con solo 26.736.427 parámetros y pesos aleatorios (semilla 17).
 
-El modelo base, `thinkingmachines/Inkling`, es un modelo multimodal de generacion condicional desarrollado por Thinking Machines. La fixture hereda su configuracion de procesador (chat template, tokenizer, special tokens) y su interfaz de generacion condicional, lo que la hace util para probar pipelines de integracion de extremo a extremo con un coste de almacenamiento de 0,4 GB frente a los cientos de gigabytes que ocuparia el checkpoint real.
+Su propósito es servir como fixture de integración para validar contratos de framework (Transformers) sin necesidad de descargar ni ejecutar el modelo real. Incluye los ficheros de procesador copiados byte a byte del modelo base (`chat_template.jinja`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`), así como un manifiesto de contrato (`integration.json`) y expectativas de framework.
 
-La relevancia de este repositorio es metodologica: ejemplifica el patron de "slim fixtures" promovido por huggingface-mic, en el que se reduce el numero de capas (a 3 capas de texto en este caso) y se sustituyen los pesos por valores aleatorios que superan un test de sensibilidad a la entrada (cada perturbacion de las entradas mueve los logits al menos 0,001). Esta etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+La relevancia de este repositorio es exclusivamente técnica y de infraestructura: permite a los mantenedores de `transformers-mic` verificar que las integraciones de Inkling funcionan con pesos reducidos. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. No debe emplearse para inferencia real, evaluación de calidad ni despliegue.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `InklingForConditionalGeneration` (transformer multimodal de generacion condicional) |
+| Arquitectura | InklingForConditionalGeneration (transformer multimodal de generación condicional) |
 | Parametros totales | 26.736.427 |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; verificado finito en float32, bfloat16 y float16) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32; se declara compatibilidad numérica con float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-La fixture reproduce la clase `InklingForConditionalGeneration` del checkpoint `thinkingmachines/Inkling`, con la misma nomenclatura de tensores que el modelo real. La unica modificacion estructural es la reduccion del numero de capas de texto a 3 (`text num_hidden_layers 3`), aplicada mediante la regla generica de `sweep.py` del repositorio `transformers-mic`. Los ficheros de procesador (`chat_template.jinja`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte desde el modelo base, de modo que el contrato de tokenizacion y plantilla de chat es identico al original.
+El modelo es un fixture derivado de `thinkingmachines/Inkling`, un modelo multimodal de generación condicional. La arquitectura declarada es `InklingForConditionalGeneration`, reducida mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`, que en este caso fija `text num_hidden_layers` a 3. Se conservan los nombres de tensores exactos del checkpoint real, de modo que el fixture es intercambiable a nivel de carga con el modelo original.
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se validaron con una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplaza los logits al menos 0,001 (la mas debil, `input_ids:reverse`, produce 0,0461). El modelo se guardo en float32, el dtype con el que carga por defecto `thinkingmachines/Inkling`, y se verifico que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16. La fixture cubre todos los checkpoints del modelo base cuyos ficheros de procesador son identicos byte a byte y cuya configuracion coincide tras el adelgazamiento (clave de fixture `209ad3f38c33`).
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17, y se validaron mediante una "input-sensitivity gate": cada perturbación de las entradas del contrato desplaza los logits al menos 0,001 (el caso más débil, `input_ids:reverse`, alcanza 0,0461). El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los ficheros de procesador se copiaron byte a byte desde `thinkingmachines/Inkling`. No se dispone de información sobre datos de entrenamiento, tokens, RLHF/DPO ni innovaciones técnicas del modelo base.
 
 ## Capacidades
 
-- Generacion condicional multimodal: hereda la interfaz de generacion condicional de `InklingForConditionalGeneration` (entradas multimodales procesadas por el procesador copiado del modelo base).
-- Tokenizacion y plantilla de chat identicas al modelo base, lo que permite validar prompts y formatos conversacionales reales.
-- Ejecucion de forward, calculo de loss y retropropagacion de gradientes en float32, bfloat16 y float16.
-- Compatibilidad con el contrato de integracion de Transformers descrito en `integrations/transformers/usage.md` y `integrations/transformers/expectations`.
-- No dispone de capacidades reales de razonamiento, codigo, matematicas, tool calling, agentes ni multilingues: al tener pesos aleatorios, sus salidas no son semanticamente validas.
+- No es un modelo funcional: los pesos son aleatorios y no producen salidas semánticamente válidas.
+- Sirve como fixture de integración para validar la carga y el contrato de `InklingForConditionalGeneration` en Transformers.
+- Incluye el procesador multimodal (tokenizer y processor_config) copiado del modelo base, útil para probar pipelines de preprocesado.
+- Permite verificar la sensibilidad de entradas del contrato mediante la gate documentada en `build.json`.
+- Compatible numéricamente con float32, bfloat16 y float16 en forward, loss y gradientes.
+- No dispone de tool calling, agentes, razonamiento multilingüe ni capacidades de visión reales verificables.
 
 ## Casos de uso
 
-- Validacion de contratos de integracion: permite ejecutar el pipeline completo de Transformers (carga, tokenizacion, forward, generacion) contra la interfaz de `Inkling` sin descargar el checkpoint real, verificando que el contrato definido en `integration.json` se cumple.
-- Pruebas de CI/CD en proyectos que integran modelos multimodales: al ocupar 0,4 GB y cargar en float32, se puede incluir en runners de integracion continua para detectar regresiones en el codigo de carga y preprocesado.
-- Desarrollo de adaptadores y wrappers: sirve para probar codigo que envuelve `InklingForConditionalGeneration` (por ejemplo, servidores de inferencia o capas de gestion de sesiones) sin necesidad de GPU de gran capacidad.
-- Verificacion de compatibilidad de dtype: util para comprobar que un pipeline soporta float32, bfloat16 y float16 sin producir NaN ni infinitos en forward, loss o gradientes.
-- Pruebas de tokenizer y chat template: al copiarse los ficheros de procesador byte a byte, permite validar la construccion de prompts y el formateo de conversaciones multi-turno contra el comportamiento exacto del modelo base.
-- Reproduccion de la fixture: el repositorio documenta como reconstruir los ficheros restantes con `python example/build_fixtures.py --fixture Inkling-mic`, lo que facilita auditorias de procedencia y regeneracion con los mismos hashes.
-- Benchmarking de infraestructura de despliegue: permite medir tiempos de carga, memoria y latencia de frameworks (Transformers, y potencialmente vLLM o TGI si admiten la arquitectura) con un modelo de juguete antes de escalar al checkpoint completo.
+- Pruebas de integración en CI: cargar el fixture en Transformers y comprobar que la clase `InklingForConditionalGeneration` se instancia y ejecuta un forward sin errores, con un coste de descarga de 0,4 GB.
+- Validación de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` para verificar que la API esperada (entradas, salidas, dtypes) se cumple.
+- Test de regresión de tokenizer: al copiarse los ficheros de procesador byte a byte, se puede comprobar que el pipeline de tokenización coincide con el del modelo base.
+- Verificación de estabilidad numérica: ejecutar forward, loss y backward en float32, bfloat16 y float16 para detectar NaN o infinitos en integraciones.
+- Desarrollo de herramientas de inspección de modelos: al conservar los nombres de tensores del checkpoint real, sirve para probar utilidades de análisis de arquitectura sin descargar el modelo completo.
+- Reproducción del proceso de shrink: el enlace "How the fixture was shrunk" y `build.json` permiten auditar y reconstruir el fixture con `build_fixtures.py`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (26,7 M de parametros equivalen a unos 107 MB de pesos; el resto del consumo depende de activaciones y del procesador multimodal). Cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; no requiere A100 ni H100. Una RTX 4090 o incluso una GPU integrada moderna es suficiente.
-- Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas y en muchas integradas.
-- Opciones de despliegue: Transformers es el framework de referencia segun la documentacion del repositorio. El soporte en vLLM, llama.cpp, Ollama o TGI no esta documentado y no puede confirmarse.
-- Latencia y throughput: no disponibles. Al ser un modelo de 3 capas de texto con pesos aleatorios, las mediciones no serian representativas del modelo base.
+- VRAM estimada para inferencia: aproximadamente 0,1 GB en float32 (26,7 M de parámetros × 4 bytes), alrededor de 0,05 GB en bfloat16/float16.
+- GPU recomendadas: cualquier GPU consumer moderna; cabe holgadamente en CPU.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
+- Opciones de despliegue: Transformers (carga directa del checkpoint safetensors); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un fixture de 3 capas, la latencia sería mínima pero sin valor representativo del modelo base.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-mic | 26,7 M | no disponible | Fixture de integracion (test-artifact) | no disponible | Hugging Face |
-| thinkingmachines/Inkling | no disponible | no disponible | Modelo multimodal de generacion condicional | no disponible | Hugging Face |
-| Otras fixtures de transformers-mic | variable (reducidas) | no disponible | Fixtures de integracion para otros modelos | no disponible | Hugging Face (org huggingface-mic) |
+| Inkling-mic | 26,7 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| thinkingmachines/Inkling | no disponible | no disponible | Modelo multimodal real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | no disponible | no disponible | Fixtures de test | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento ni de especificaciones completas del modelo base como para establecer una comparativa cuantitativa con alternativas de la misma categoria.
+No se dispone de datos de rendimiento ni de especificaciones del modelo base para una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y las salidas carecen de valor semantico. Esta etiquetado explicitamente como `test-artifact`.
-- No debe usarse en produccion, atencion al cliente, generacion de codigo ni ninguna tarea real.
-- La licencia no esta declarada en la informacion disponible; antes de cualquier reutilizacion debe consultarse el repositorio y la licencia del modelo base `thinkingmachines/Inkling`.
-- La configuracion reducida (3 capas de texto) no representa el comportamiento numerico del modelo base; los resultados de latencia, memoria o calidad no son extrapolables.
-- Riesgo de confusion: el nombre y la estructura pueden llevar a confundir la fixture con un modelo funcional. El tag `test-artifact` existe precisamente para evitarlo en busquedas de modelos candidatos.
-- No hay informacion sobre sesgos, idiomas soportados ni limitaciones de contexto del modelo base en la documentacion proporcionada.
-- La fixture solo cubre checkpoints con ficheros de procesador identicos byte a byte y configuracion coincidente tras el adelgazamiento; cambios en el modelo base pueden invalidar la cobertura.
+- Pesos aleatorios: las salidas no tienen significado; no usar para inferencia, evaluación ni producción.
+- Etiquetado como `test-artifact`: excluido intencionadamente de búsquedas de modelos candidatos.
+- Licencia no disponible: no se puede confirmar el uso comercial ni la redistribución.
+- Idiomas y contexto no disponibles: no hay información sobre capacidades multilingües ni ventana de contexto.
+- Arquitectura reducida (3 capas de texto): no representa el comportamiento del modelo base.
+- Riesgo de confusión: el nombre y la estructura pueden llevar a error si se trata como modelo real; verificar siempre la etiqueta `test-artifact`.
+- Los ficheros de procesador son los del modelo base, pero el resto de artefactos debe regenerarse con `build_fixtures.py`.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Inkling-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/Inkling-mic
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
-- Manifiesto del contrato: https://huggingface.co/huggingface-mic/Inkling-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/Inkling-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/Inkling-mic/tree/main/integrations/transformers/expectations
-- Procedencia de la fixture: https://huggingface.co/huggingface-mic/Inkling-mic/blob/main/build.json
-- Explicacion del adelgazamiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Inkling-mic.html
-- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla de adelgazamiento: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Cómo se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Inkling-mic.html
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Manifiesto de contrato: integration.json (en el repositorio)
+- Uso con Transformers: integrations/transformers/usage.md (en el repositorio)
+- Expectativas de Transformers: integrations/transformers/expectations (en el repositorio)
+- Procedencia del fixture: build.json (en el repositorio)

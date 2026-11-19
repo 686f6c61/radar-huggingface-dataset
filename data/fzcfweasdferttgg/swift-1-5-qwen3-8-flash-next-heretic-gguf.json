@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN · Hugging Face",
-      "url": "https://huggingface.co/johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN",
-      "snippet": "It is the upstream Swift 1.5 head: the Heretic V2 edit changes only 7 attention tensors in layers 30–37. Assets:config.json and the tokenizer files (including the chat template) come from the stock checkpoint repository peonist-ai/halogen-qwen3.8-flash-next."
-    },
-    {
-      "title": "Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF - Hugging Face",
-      "url": "https://huggingface.co/cc1244578151/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-      "snippet": "Duplicated from ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF cc1244578151 / Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF Like 1 Image-Text-to-Text GGUF llama.cpp qwen3_8 Mixture of Experts gsq rco reasoning efficient-thinking token-efficient post-training imatrix conversational arxiv:2604.18556 arxiv:2605.00649 License:swift-open-license-1.0 Model card FilesFiles and versions xet Community ..."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "crxssrazr93/omniASR-CTC-3B-v2-GGUF",
+  "slug": "crxssrazr93-omniasr-ctc-3b-v2-gguf",
+  "author": "crxssrazr93",
+  "url": "https://huggingface.co/crxssrazr93/omniASR-CTC-3B-v2-GGUF",
+  "created_at": "2026-11-19T03:02:39.000Z",
+  "updated_at": "2026-11-19T03:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "omnilingual-asr",
+    "ctc",
+    "crispasr",
+    "automatic-speech-recognition",
+    "multilingual",
+    "base_model:iljab/omniASR-CTC-3B-v2",
+    "base_model:quantized:iljab/omniASR-CTC-3B-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3081400880,
+  "parameters_human": "3.08B",
+  "storage_bytes": 2084244544,
+  "storage_human": "2.1 GB",
+  "context_length": null,
+  "base_model": "iljab/omniASR-CTC-3B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -50,34 +50,14 @@
       "task": null,
       "dataset": "ScanNet (20 classes)",
       "metric": "mIoU",
-      "value": 71.81
+      "value": 75.67
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "OA",
+      "value": 91.28
     }
   ],
-  "sources": [
-    {
-      "title": "torch-pointcloud (PyTorch PointCloud) - Hugging Face",
-      "url": "https://huggingface.co/torch-pointcloud",
-      "snippet": "PyTorch PointCloud (torch-pointcloud) is a collection of point cloud models, layers, utilities, datasets, transforms, and reference training / benchmarking scripts that aim to reproduce SOTA models and help researchers and engineers reuse common layers. Find all the torch-pointcloud models here."
-    },
-    {
-      "title": "GitHub - arthurdjn/pytorch-pointcloud: PyTorch Point Cloud models ...",
-      "url": "https://github.com/arthurdjn/pytorch-pointcloud",
-      "snippet": "A PyTorch library for deep learning on point clouds: models, pretrained weights, datasets, transforms and inferers, behind one create_model factory in the spirit of timm. The CUDA extensions (PyG kernels, spconv, flash-attention, Mamba, ocnn, torchsparse) are optional and only needed by the ..."
-    },
-    {
-      "title": "GitHub - torch-points3d/torch-points3d: Pytorch framework for doing ...",
-      "url": "https://github.com/torch-points3d/torch-points3d",
-      "snippet": "This is a framework for running common deep learning models for point cloud analysis tasks against classic benchmark. It heavily relies on Pytorch Geometric and Facebook Hydra. The framework allows lean and yet complex model to be built with minimum effort and great reproducibility. It also provide a high level API to democratize deep learning on pointclouds. See our paper at 3DV for an ..."
-    },
-    {
-      "title": "Pointcept (Pointcept) - Hugging Face",
-      "url": "https://huggingface.co/Pointcept",
-      "snippet": "Org profile for Pointcept on Hugging Face, the AI community building the future."
-    },
-    {
-      "title": "Models and Backbones | Pointcept/Pointcept | DeepWiki",
-      "url": "https://deepwiki.com/Pointcept/Pointcept/2.1-models-and-backbones",
-      "snippet": "This page details the model architecture system, backbone networks, and how models are built and registered in Pointcept. The framework provides a comprehensive collection of point cloud backbone architectures and task-specific models through a registry-based system."
-    }
-  ]
+  "sources": []
 }

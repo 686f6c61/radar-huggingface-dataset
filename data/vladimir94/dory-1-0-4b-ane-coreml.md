@@ -2,94 +2,106 @@
 
 ## Resumen
 
-Dory 1.0 4B (ANE Core ML) es una conversión a Core ML con cuantización de 4 bits (palettization) del modelo NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 de NVIDIA, publicada por el usuario vladimir94 en Hugging Face. No se trata de un fine-tuning ni de un merge: los pesos son conceptualmente los mismos del modelo original, convertidos para ejecutarse sobre el Apple Neural Engine (ANE) en ordenadores Mac con chips de la serie M.
+Dory 1.0 4B ANE CoreML es una conversión con cuantización de 8 bits (palettization) del modelo nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16, publicada por el usuario vladimir94. No se trata de un fine-tune ni de un merge: es una reimplementación del modelo original en 102 programas Core ML diseñados para ejecutarse sobre el Apple Neural Engine (ANE) de un Mac con una longitud de contexto de 24.576 tokens. El objetivo es hacer viable un transformer "looped" de 4.000 millones de parámetros con atención con compuertas (gated attention) en hardware de Apple sin GPU dedicada.
 
-El problema que resuelve es la ejecución local de un modelo de lenguaje con arquitectura poco convencional (transformer loopeado con gated attention) y contexto largo (24.576 tokens) en hardware Apple, donde el ecosistema habitual (CUDA, vLLM, GGUF en GPU) no aplica. La conversión divide el modelo en 102 programas Core ML que se cargan por fases, gestionados por un runtime propio construido sobre Anemll.
+La relevancia de esta ficha radica en que demuestra una ruta práctica para llevar modelos de la familia Nemotron al silicio de Apple con pérdida de calidad medida y acotada: frente al modelo en PyTorch, la versión de 8 bits presenta un KLD medio de 0,0145 y una coincidencia top-1 del 94,1 % en las posiciones 64-319 del conjunto de evaluación. Es, por tanto, un artefacto de despliegue orientado a inferencia local en Mac, no un modelo nuevo entrenado desde cero.
 
-Es relevante porque demuestra que modelos con gated attention y residuales tipo nGPT pueden representarse fielmente en Core ML, y ofrece un punto de partida práctico para servir el modelo localmente en un Mac con una API compatible con OpenAI y una interfaz de chat incluidas.
+La conversión preserva la atención con compuertas, el residual |α| de nGPT y el RoPE NEOX del original, y evita dos zonas donde el ANE pierde precisión (proyecciones con entradas pequeñas y las funciones silu/sigmoid), sustituyéndolas por formas matemáticamente equivalentes. El repositorio ocupa 7,1 GB e incluye los paquetes `.mlpackage`, el plan de despacho `meta.yaml`, las tablas RoPE y los ficheros de tokenizador y plantilla de chat.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer loopeado (looped transformer) con gated attention, residual |α| tipo nGPT y RoPE NEOX |
-| Parámetros totales | 4B (aproximado, según denominación del modelo base; cifra exacta no disponible) |
-| Parametros activos | No aplicable (no es MoE) |
+| Arquitectura | Transformer "looped" con gated attention, residual |α| de nGPT y RoPE NEOX; convertido a 102 programas Core ML |
+| Parametros totales | 4B (modelo base NVIDIA-Nemotron-Labs-Dory1.0-4B) |
+| Parametros activos | no disponible (no es MoE según la informacion disponible) |
 | Longitud de contexto | 24.576 tokens |
-| Tipos de cuantización | 4-bit palettization (esta conversión); variante fp16 disponible con `--lut-blocks none` (15 GB) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | NVIDIA Open Model License (pesos); código del runtime bajo MIT |
-| Formato de pesos | Core ML (`*.mlpackage`), 102 programas con `meta.yaml`, tablas RoPE en `rope_tables.npz` |
+| Tipos de cuantizacion | Palettization de 8 bits (existe build previo de 6 bits en el historial del repo) |
+| Idiomas soportados | en (inglés) |
+| Licencia | NVIDIA Open Model License (código de conversión MIT) |
+| Formato de pesos | Core ML `.mlpackage` (102 programas, variantes infer y prefill), `meta.yaml`, `rope_tables.npz` |
+| Tamano del repo | 7,1 GB (build de 8 bits: 7,6 GB según la model card) |
+| Libreria | coreml |
+| Hardware objetivo | Apple Neural Engine (Mac serie M) |
+| Modelo base | nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer loopeado de 4B parámetros con tres rasgos técnicos distintivos: gated attention (mecanismo de atención con compuertas), un esquema residual con normalización |α| heredado de la familia nGPT, y codificación posicional RoPE en variante NEOX. La conversión a Core ML representa fielmente estos tres componentes; el autor declara explícitamente que no hay destilación, poda ni reentrenamiento.
+El modelo subyacente es un transformer de 4.000 millones de parámetros con una arquitectura "looped", es decir, que reutiliza bloques en varios bucles de cómputo, combinada con atención con compuertas y un residual basado en nGPT con factor |α|. Emplea RoPE en variante NEOX para la codificación posicional. Esta conversión no entrena ni destila nada: reproduce fielmente esas operaciones en Core ML, dividiendo el grafo en 102 programas para que el ANE pueda ejecutarlos con un contexto de 24.576 tokens.
 
-Sobre el entrenamiento del modelo original no se aportan datos en la información disponible (número de tokens, composición del dataset, RLHF/DPO): no disponible. La contribución de este repositorio es la conversión: palettization a 4 bits (quantization por tablas de búsqueda) que reduce el tamaño de 15 GB (fp16) a 5,6 GB, con una ligera pérdida de fidelidad medida mediante KLD frente al modelo de referencia fp16 (0,077–0,632 en la variante 4-bit frente a 0,019–0,056 en fp16). El runtime carga un programa a la vez según el plan de `meta.yaml`, mantiene un `MLState` por programa con estado y recompone la cabeza LM dividida.
+La innovación técnica principal está en la adaptación al ANE: se evitan las proyecciones con entradas de magnitud pequeña y las activaciones silu/sigmoid, que degradan la precisión en ese hardware, y se sustituyen por formulaciones matemáticamente equivalentes. La cuantización aplicada es palettization de 8 bits, con un build anterior de 6 bits documentado en el historial del repositorio. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si el modelo original usó RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés: responde preguntas, escribe relatos y mantiene conversaciones multi-turno, según las mediciones del autor.
-- Modo de pensamiento (thinking mode): la plantilla de chat propia del modelo (`chat_template.jinja`) incluye soporte para razonamiento extendido.
-- Contexto largo: ventana de 24.576 tokens, operativa sobre el Neural Engine.
-- Servido como API compatible con OpenAI mediante `dory_serve.py`, con interfaz de chat incluida.
-- Ejecución totalmente local en Apple Silicon vía Apple Neural Engine, sin GPU dedicada ni nube.
-- Capacidades de tool calling, agentes, código, matemáticas o visión: no disponible en la información proporcionada.
+- Generación de texto conversacional en inglés, con plantilla de chat propia (`chat_template.jinja`).
+- Modo "thinking" incluido en la plantilla de chat del modelo.
+- Razonamiento multi-turno dentro de la ventana de 24.576 tokens.
+- Ejecución local sobre Apple Neural Engine, sin necesidad de GPU dedicada.
+- API compatible con OpenAI mediante `scripts/dory_serve.py`, con interfaz de chat.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles.
+- Capacidades multilingües: limitadas al inglés según los metadatos del modelo.
 
 ## Casos de uso
 
-- Chatbot local en Mac: el runtime incluye un servidor con API OpenAI y UI de chat, ideal para asistentes que procesan datos sensibles sin salir del dispositivo.
-- Prototipado de aplicaciones con LLM en Apple Silicon: la compatibilidad con la API de OpenAI permite integrar el modelo en clientes existentes (LangChain, SDKs oficiales) cambiando solo la URL base.
-- Procesamiento de documentos largos en local: la ventana de 24.576 tokens permite resumir o analizar textos extensos sin conexión.
-- Investigación sobre ejecución de modelos no convencionales en el ANE: el plan de 102 programas en `meta.yaml` y el runtime sobre Anemll son material de estudio para convertir arquitecturas exóticas (loopeadas, gated attention) a Core ML.
-- Comparación de fidelidad de cuantización: las métricas KLD y de acuerdo top-1 publicadas sirven de referencia para evaluar el coste de la palettization a 4 bits frente a fp16.
-- Demostraciones y pruebas en portátiles sin GPU dedicada: con 5,6 GB de pesos y ejecución en ANE, funciona en hardware Apple de consumo sin requerir GPUs de datacenter.
+- Asistente conversacional local en Mac: el modelo puede mantener conversaciones multi-turno con hasta 24.576 tokens de contexto, adecuado para usuarios que necesitan privacidad total sin enviar datos a la nube.
+- Procesamiento de documentos largos en local: con 24K de contexto se pueden resumir o extraer información de informes extensos directamente en el portátil, aunque el prefill token a token a ~10 tok/s impone tiempos de espera considerables.
+- Prototipado de aplicaciones de IA en ecosistema Apple: el servidor incluido expone una API compatible con OpenAI, lo que permite integrar el modelo en apps macOS o iOS sin reescribir la capa de cliente.
+- Evaluación de modelos Nemotron en hardware Apple: útil para investigadores que quieran medir el comportamiento de la arquitectura looped con gated attention sobre ANE frente a la versión PyTorch.
+- Generación de texto con requisitos de soberanía de datos: al ejecutarse íntegramente en el dispositivo, encaja en entornos con restricciones de confidencialidad (legal, sanitario, desarrollo interno).
+- Pruebas de cuantización y despliegue Core ML: el repositorio sirve como referencia técnica para convertir otros modelos al ANE, con métricas de KLD y acuerdo top-1 documentadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sí se han publicado mediciones de rendimiento y fidelidad en un portátil de la serie M:
+Medido en un portátil de la serie M frente al modelo en PyTorch, posiciones 64-319 del conjunto de evaluación, 2 bucles, modo decode:
 
-| Métrica | 4-bit (este repo) | fp16 |
+| Metrica | 8 bits (este repo) | Build previo de 6 bits |
 |---|---|---|
-| Decodificación, `loops=1` | 11,3 tok/s | 5,9 tok/s |
-| Prefill (batch) | 130 tok/s | 130 tok/s |
-| Tamaño | 5,6 GB | 15 GB |
-| KLD frente al modelo fp16 de referencia | 0,077 – 0,632 | 0,019 – 0,056 |
-| Acuerdo top-1 | 62,5 – 100 % | 87,5 – 100 % |
+| KLD media | 0,0145 | 0,0979 |
+| KLD mediana | 0,0039 | 0,0290 |
+| Coincidencia top-1 | 94,1 % | 88,3 % |
+| Decode (200 tokens, incl. prefill) | 8,7 tok/s | 9,3 tok/s |
+| Tamano | 7,6 GB | 5,6 GB |
 
-Nota del autor: la variante 4-bit es fluida y correcta en chat ordinario, pero en una ventana medida discrepó con la referencia en 3 de 8 tokens siguientes; si la fidelidad es prioritaria, conviene usar la conversión en precisión completa.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: Mac con chip de la serie M (Apple Silicon) con Apple Neural Engine. No se requieren GPU NVIDIA ni CUDA.
-- Almacenamiento: 5,6 GB para la variante 4-bit; 15 GB para la variante fp16.
-- Memoria de estado: cada caché de conversación ocupa 999 MiB en fp16 (no es posible una KV cache int8 en Core ML), por lo que un servidor solo mantiene unas pocas sesiones simultáneas, no cientos.
-- Latencia: prefill token a token a unos 10 tok/s por defecto; conmutar a los paquetes de prefill por lotes implica una espera de 100–270 s. Decodificación a 11,3 tok/s con `loops=1` en 4-bit.
-- Despliegue: runtime propio (`dory_serve.py`) construido sobre Anemll, que expone una API compatible con OpenAI y una interfaz de chat. No aplica vLLM, TGI, llama.cpp ni Ollama al ser un formato Core ML.
+- Hardware objetivo: Apple Neural Engine de un Mac con chip de la serie M; no se especifica el chip mínimo probado.
+- VRAM: no aplica (memoria unificada); el repositorio ocupa 7,1 GB y el build de 8 bits pesa 7,6 GB.
+- Estado KV: 999 MiB de estado fp16 por conversación; el caché int8 es imposible porque los estados de Core ML solo admiten fp16 y rechazan entradas enteras.
+- Cabe en Mac con memoria unificada suficiente para alojar los paquetes y el estado; no se indica el mínimo exacto.
+- Despliegue: Core ML mediante el runtime `scripts/dory_serve.py` (API OpenAI + interfaz de chat), construido sobre Anemll.
+- Throughput: ~8,7 tok/s en decode (200 tokens incluyendo prefill); prefill token a token a ~10 tok/s, salvo que se acepte un cambio de 100-270 s a los paquetes de prefill por lotes.
+- Limitación de residencia: prefill y decode no pueden coexistir en memoria (204 paquetes fallan en este hardware).
+- La búsqueda de embeddings se ejecuta en la GPU, no en el ANE, en este build.
+- Un servidor solo mantiene un par de sesiones simultáneas por el tamaño del caché de conversación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia |
-|---|---|---|---|---|
-| Dory 1.0 4B ANE Core ML (este) | 4B | 24.576 | Core ML (mlpackage), 4-bit | NVIDIA Open Model License |
-| NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 (base) | 4B | 24.576 (según este repo) | BF16 (safetensors, presumible) | NVIDIA Open Model License |
-| Alternativas comparables en ANE/Core ML | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Formato / hardware | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Dory 1.0 4B ANE CoreML (este) | 4B | 24.576 | Core ML / ANE | NVIDIA Open Model License | Hugging Face |
+| NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 | 4B | no disponible | Safetensors / GPU | NVIDIA Open Model License | Hugging Face |
+| Build de 6 bits del mismo repo | 4B | 24.576 | Core ML / ANE | NVIDIA Open Model License | Historial del repo |
 
-La comparación más directa es con su propio modelo base: esta conversión ofrece la mitad de velocidad de decodificación que... en realidad la duplica (11,3 frente a 5,9 tok/s), reduce el tamaño a un tercio (5,6 GB frente a 15 GB) a costa de una fidelidad menor (KLD 0,077–0,632 frente a 0,019–0,056). No hay datos suficientes para comparar con otros modelos de 4B de otras familias.
+No se dispone de datos de benchmarks comparativos con otras alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Riesgo de alucinación: inherente a todo LLM; además, la cuantización a 4 bits introduce divergencia medible respecto al modelo fp16 (acuerdo top-1 de entre 62,5 % y 100 % según la ventana), lo que puede degradar respuestas en tareas sensibles.
-- Limitaciones de idioma: el modelo está etiquetado solo para inglés; no hay soporte declarado para castellano u otras lenguas.
-- Limitaciones de contexto y memoria: prefill y decode no pueden estar residentes simultáneamente (204 paquetes no caben en el hardware medido); el prefill por lotes exige una conmutación de 100–270 s; la KV cache es obligatoriamente fp16 (999 MiB por sesión a 24K), lo que limita el número de sesiones concurrentes.
-- Restricciones de licencia: los pesos siguen la NVIDIA Open Model License, que debe revisarse para confirmar los términos de uso comercial; el código del runtime es MIT.
-- Caveat de producción: la velocidad de prefill token a token (~10 tok/s) puede ser un cuello de botella grave para prompts largos si no se acepta la conmutación de paquetes; el proyecto es una conversión de un autor individual con 1.616 descargas, sin respaldo oficial de NVIDIA para esta variante ANE.
+- Prefill y decode no pueden residir simultáneamente en memoria en el hardware probado, lo que obliga a alimentar el prompt token a token a ~10 tok/s o a aceptar cambios de 100-270 s.
+- El caché KV en int8 no es posible: Core ML solo admite estados fp16, con un suelo de 999 MiB para 24K de contexto.
+- Un servidor solo sostiene un par de sesiones concurrentes por el tamaño del caché de conversación.
+- La búsqueda de embeddings se ejecuta en la GPU, no en el ANE, lo que puede afectar al rendimiento global.
+- Modelo solo en inglés; no se documentan capacidades multilingües.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones específicas de sesgo o factualidad.
+- Licencia NVIDIA Open Model License: revisar sus términos antes de uso comercial; el código de conversión es MIT, pero los pesos heredan la licencia del modelo base.
+- La cuantización de 8 bits introduce una divergencia medible frente al modelo original (KLD media 0,0145, top-1 94,1 %), aceptable para chat pero no despreciable en tareas de alta precisión.
 
 ## Enlaces
 
-- Modelo (esta conversión): https://huggingface.co/vladimir94/dory-1.0-4b-ane-coreml
+- Modelo en Hugging Face: https://huggingface.co/vladimir94/dory-1.0-4b-ane-coreml
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
+- Repositorio del runtime: https://github.com/vladimir-voinea/dory-ane
+- Anemll (base del proyecto): https://github.com/Anemll/Anemll
 - Licencia NVIDIA Open Model License: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
-- Runtime y scripts: https://github.com/vladimir-voinea/dory-ane
-- Anemll (framework base del runtime): https://github.com/Anemll/Anemll

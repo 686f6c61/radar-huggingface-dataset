@@ -2,120 +2,107 @@
 
 ## Resumen
 
-Qwen3.8-27B-TQ3_4S es una cuantización GGUF del modelo Qwen3.8-27B, desarrollada por YTan2000 sobre la versión BF16 publicada por unsloth. Emplea el esquema TurboQuant TQ3_4S, que combina cuantización de 3 y 4 bits con capas de salida y embeddings en q6_K, logrando un tamaño de 13,8 GB (4,24 BPW). El modelo base presenta una arquitectura híbrida con 64 capas: 48 de Gated DeltaNet (atención lineal) y 16 de Gated Attention, más cabezas entrenadas de predicción multi-token (MTP) que permiten decodificación especulativa.
+Qwen3.8-27B-TQ3_4S es una cuantización GGUF del modelo Qwen3.8-27B de Alibaba Qwen, publicada por el usuario YTan2000. No se trata de un modelo nuevo, sino de una compilación optimizada para el runtime TurboQuant (fork de llama.cpp mantenido por turbo-tan) que emplea el tipo de tensor propietario TQ3_4S a 4,24 bits por peso, reduciendo el peso del modelo a 13,8 GB manteniendo la ventana de contexto nativa de 262.144 tokens.
 
-La relevancia de este modelo radica en su capacidad para ejecutar un LLM de 27.300 millones de parámetros en una GPU de consumo como la RTX 3090 de 24 GB, manteniendo una velocidad de decodificación de 64,78 tokens por segundo gracias a la aceptación del draft-MTP (0,849). Está pensado para desarrolladores que necesitan un modelo de razonamiento y código con contexto largo (262.144 tokens nativos) en hardware asequible, aunque requiere un runtime específico (turbo-tan/llama.cpp-tq3) que no es compatible con las builds estándar de llama.cpp.
+El modelo base emplea la arquitectura qwen3_5, una variante híbrida que combina 48 capas de Gated DeltaNet (atención lineal) con 16 capas de Gated Attention clásica, sobre un total de 64 capas y 27.320.697.856 parámetros. Incorpora además cabezas MTP (Multi-Token Prediction) entrenadas, lo que permite decodificación especulativa nativa con un bloque borrador integrado en el propio GGUF.
+
+Su relevancia actual radica en que demuestra que un modelo de 27B con contexto de 262K puede servirse en una única GPU de consumo (RTX 3090 de 24 GB) a velocidades de hasta 125 tok/s mediante decodificación especulativa MTP y un borrador DFlash2. La licencia Apache-2.0 del modelo base facilita su uso comercial, aunque la dependencia de un fork no estándar de llama.cpp limita su portabilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5: 64 capas (48 Gated DeltaNet + 16 Gated Attention) con cabezas MTP |
-| Parametros totales | 27.320.697.856 (27,3B) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | qwen3_5 híbrida: 64 capas (48 Gated DeltaNet de atención lineal + 16 Gated Attention), con cabezas MTP entrenadas |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | TQ3_4S (TurboQuant, 4,24 BPW) con capas de salida y embeddings en q6_K |
-| Idiomas soportados | inglés (declarado) |
-| Licencia | Apache 2.0 (sujeta a la licencia del modelo base Qwen3.8) |
-| Formato de pesos | GGUF (requiere runtime fork turbo-tan/llama.cpp-tq3) |
+| Tipos de cuantizacion | TQ3_4S (4,24 BPW) con capas de salida y embeddings de tokens en q6_K (receta "out6k"); caché KV configurable (q8_0, q4_0, tq3_0) |
+| Idiomas soportados | en (inglés) según la model card; el modelo base Qwen3.8-27B es multilingüe, pero esta ficha solo declara inglés |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); proyectores de visión mmproj en BF16 y F16 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base Qwen3.8-27B combina dos mecanismos de atención: 48 capas de Gated DeltaNet, una variante de atención lineal con compuertas, y 16 capas de Gated Attention tradicional. Esta hibridación busca reducir el coste computacional del contexto largo manteniendo la calidad en tareas de razonamiento. Además, el modelo incorpora cabezas de predicción multi-token (MTP) entrenadas, que permiten generar varios tokens por paso de decodificación mediante draft-MTP speculative decoding.
+El modelo base Qwen3.8-27B utiliza una arquitectura híbrida denominada qwen3_5, que intercala 48 capas de Gated DeltaNet —un mecanismo de atención lineal con estado recurrente que reduce el coste computacional en contextos largos— con 16 capas de Gated Attention tradicional. Esta combinación busca mantener la calidad de la atención completa en puntos clave de la red mientras se abarata el procesamiento de secuencias de hasta 262.144 tokens. El modelo incorpora además cabezas MTP (Multi-Token Prediction) entrenadas durante el preentrenamiento, que actúan como borrador interno para decodificación especulativa.
 
-No se dispone de información sobre el entrenamiento del modelo base (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO) en la documentación proporcionada. La cuantización TQ3_4S es un esquema propietario de TurboQuant que asigna 3 y 4 bits a distintas capas, reservando q6_K para las capas de salida y los embeddings, lo que preserva la calidad en las partes críticas del modelo.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base; la model card de esta cuantización no los detalla. La innovación técnica destacable de esta publicación concreta es doble: por un lado, el tipo de tensor TQ3_4S del runtime TurboQuant, que permite comprimir a 4,24 BPW preservando capas sensibles (salida y embeddings) en q6_K; por otro, la integración de las cabezas MTP en el GGUF para servir decodificación especulativa sin un modelo borrador externo. La versión v2 del archivo incrusta la plantilla de chat corregida froggeric v22, que soluciona un fallo con argumentos de herramientas en formato string de OpenAI y suprime el direccionamiento forzado a razonamiento extendido cuando el modo thinking está desactivado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-step, con soporte de modo thinking (activable mediante `--reasoning-format deepseek --reasoning-budget N`).
-- Generación de código ejecutable: 92,7 en HumanEval (pass@1) y 90,5 en MBPP.
-- Razonamiento matemático: 86,7 en la suite Reason-math.
-- Tool calling / function calling: 81,7 en la suite Tool-call.
-- Extracción de datos estructurados: 80,2 en la suite Data-extract.
-- Seguimiento de instrucciones: 62,2 en la suite Instruction-follow.
-- Decodificación especulativa draft-MTP con aceptación de 0,849, que acelera la generación en ~2,7 tokens por paso.
-- Contexto largo nativo de 262.144 tokens, adecuado para documentos extensos o conversaciones multi-turno.
+- Generación de texto conversacional y de larga longitud con contexto de hasta 262.144 tokens.
+- Razonamiento con modo thinking configurable mediante `--reasoning-format deepseek` y `--reasoning-budget N`; el autor recomienda presupuestos acotados (por ejemplo, 32.768 tokens) para evitar bucles de planificación.
+- Comprensión de imágenes y vídeo al cargar los proyectores `mmproj-BF16.gguf` o `mmproj-F16.gguf` con el flag `--mmproj`.
+- Tool calling y function calling en formato OpenAI, con soporte tanto de argumentos como diccionario como de cadenas JSON en la plantilla v2.
+- Decodificación especulativa nativa mediante cabezas MTP (`--spec-type draft-mtp`) y compatible con borradores externos DFlash2.
+- Soporte de agentes y razonamiento multi-paso, con recomendación de desactivar el razonamiento (`--reasoning off`) en cargas agenticas y de benchmarks.
+- Generación de código, incluida la creativa de un solo disparo, con mejor rendimiento medido en esfuerzo de razonamiento bajo.
+- Capacidades multilingües heredadas del modelo base, aunque la model card solo declara inglés de forma explícita.
 
 ## Casos de uso
 
-- Generación de código en producción: con HumanEval 92,7 y soporte de tool calling, el modelo puede integrarse en pipelines de CI/CD para autocompletar funciones, generar tests o documentar APIs, ejecutándose en GPU de consumo.
-- Razonamiento matemático y resolución de problemas: la suite Reason-math (86,7) lo hace adecuado para asistentes de cálculo simbólico, tutoría STEM o verificación de demostraciones.
-- Agentes autónomos con tool calling: su capacidad de invocar funciones (81,7) permite construir agentes que consultan APIs, bases de datos o ejecutan comandos, con contexto largo para mantener el estado de la conversación.
-- Extracción de datos de documentos: con 80,2 en Data-extract, puede procesar contratos, informes o correos para extraer entidades y estructurarlas en JSON.
-- Asistentes de atención al cliente: la ventana de 262K tokens permite gestionar historiales completos de conversación, aunque el modelo solo declara inglés.
-- Despliegue en hardware de consumo: con 13,8 GB y 64,78 tok/s en RTX 3090, es viable para prototipos y aplicaciones locales sin necesidad de clústeres.
+- Asistencia de código en estación de trabajo local: con 13,8 GB de pesos y decodificación MTP a más de 100 tok/s en una RTX 3090, el modelo puede integrarse en un IDE o CLI de agente sin depender de API externa, manteniendo el contexto de un repositorio mediano dentro de la ventana de 262K tokens.
+- Procesamiento de documentos largos: informes, expedientes o transcripciones de varias decenas de miles de tokens caben en una sola pasada gracias al contexto nativo de 262.144 tokens, sin necesidad de troceado ni recuperación externa.
+- Agentes con tool calling: la plantilla v2 acepta argumentos de herramientas en formato string estándar de OpenAI, lo que permite conectarlo a frameworks de agentes existentes (LangChain, harnesses propios) y ejecutar flujos multi-paso con llamadas a APIs.
+- Análisis de imágenes y vídeo en local: cargando el proyector mmproj, el modelo puede describir capturas, diagramas o fotogramas en pipelines de inspección o accesibilidad sin enviar datos a la nube.
+- Generación de código creativa de un solo disparo: el autor midió 5 de 6 muestras limpias con esfuerzo de razonamiento bajo, lo que lo hace adecuado para prototipado rápido y generación de módulos autocontenidos.
+- Servicio de inferencia autoalojado para equipos pequeños: con llama-server y una única GPU de 24 GB se puede ofrecer un endpoint compatible con OpenAI a varios usuarios mediante `-np` y caché KV cuantizada.
+- Experimentación en investigación sobre decodificación especulativa: al incluir cabezas MTP y ser compatible con borradores DFlash2 y con el vocabulario de borrador restringido, sirve como banco de pruebas para medir aceleraciones de decodificación.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (primera pasada, con `reasoning-off` y evalplus con budget-256):
+El model-index de la model card no contiene resultados (`results: []`), por lo que no se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos medidos por el autor son de rendimiento de inferencia y de calidad en pruebas internas:
 
-| Benchmark | Resultado |
-|---|---|
-| Hard86 (código ejecutable) | 74/86 (86,0%) |
-| HumanEval (pass@1) | 92,7 |
-| HumanEval+ (pass@1) | 88,4 |
-| MBPP (pass@1) | 90,5 |
-| MBPP+ (pass@1) | 77,2 |
-| Coding suite | 93,8 |
-| Reason-math suite | 86,7 |
-| Tool-call suite | 81,7 |
-| Data-extract suite | 80,2 |
-| Instruction-follow suite | 62,2 |
-
-Velocidad de decodificación (RTX 3090, 24 GB, contexto 32768, single stream, draft-MTP con `--spec-draft-n-max 2`):
-
-| Metrica | Valor |
-|---|---|
-| Decodificación larga (1024 in / 4096 out) | 64,78 tok/s (media de 2 ejecuciones) |
-| Aceptación draft-MTP | 0,849 |
-
-Comparación con Qwen3.6-27B-MTP-TQ3_4S (misma receta TQ3_4S):
-
-| Metrica | Qwen3.6-27B | Qwen3.8-27B |
+| Metrica | Valor | Condiciones |
 |---|---|---|
-| Tamaño | 13,39 GiB | 13,8 GB |
-| Decodificación larga | 59,0 tok/s | 64,78 tok/s |
-| Hard86 | 76/86 (88,4%) | 74/86 (86,0%) |
-| Coding suite | 100% | 93,8% |
-| Tool-call suite | 96,67% | 81,7% |
-| Data-extract suite | 90,97% | 80,2% |
-| Instruction-follow suite | 76,67% | 62,2% |
-| Reason-math suite | 73,33% | 86,7% |
-| Aceptación draft-MTP | 0,796 | 0,849 |
-
-Nota: la columna de Qwen3.6 corresponde a números publicados con su configuración de servicio ajustada; la de Qwen3.8 es una primera pasada sin re-ajuste fino de la configuración.
+| Decodificación larga (v2, DFlash2 + KV q4_0) | 125,2 tok/s | RTX 3090, prompt de 839 tokens, 4096 generados, reasoning off, contexto 262K |
+| Decodificación larga (MTP interno, cadena 3 + KV q4_0) | 107,9 tok/s | RTX 3090, mismas condiciones |
+| Suite de tool calling (v1 → v2) | 81,7 → 86,7 | Plantilla oficial frente a froggeric v22 |
+| Codegen creativo one-shot, esfuerzo bajo | 5/6 muestras limpias | 6 muestras, RTX 3090 |
+| Codegen creativo one-shot, esfuerzo medio | 3/6 muestras limpias | 6 muestras, RTX 3090 |
+| Codegen creativo one-shot, esfuerzo xhigh | intermitente | Bucles de razonamiento observados (hasta 332k caracteres sin salida) |
 
 ## Requisitos de hardware
 
-- GPU validada: NVIDIA RTX 3090 (24 GB) para todas las métricas publicadas.
-- VRAM estimada: el archivo GGUF ocupa 13,8 GB; con contexto de 32.768 tokens y caché KV cuantizada (q8_0 para K, tq3_0 para V) cabe en 24 GB.
-- Compatibilidad: requiere el runtime fork `turbo-tan/llama.cpp-tq3`; las builds estándar de llama.cpp no pueden cargar el tipo de tensor TQ3_4S.
-- Opciones de despliegue: llama-server del fork, con flags específicos para draft-MTP (`--spec-type draft-mtp`, `--spec-draft-n-max 2`).
-- Latencia/throughput: 64,78 tok/s en decodificación larga con RTX 3090, single stream.
-- No se han probado otras GPUs; se espera que funcione en GPUs con ≥24 GB de VRAM, pero no hay datos.
+- VRAM estimada para los pesos: 13,8 GB para el GGUF TQ3_4S, más 0,93 GB si se carga el proyector de visión.
+- Caché KV adicional según contexto y cuantización: el autor emplea q4_0, q8_0 o tq3_0; a 32.768 tokens la huella es moderada, pero a 262.144 tokens requiere cuantización agresiva de la caché para caber en 24 GB.
+- GPU recomendadas: RTX 3090 (24 GB) es la plataforma validada por el autor; cabría también en RTX 4090 (24 GB), y con holgura en A100 (40/80 GB), H100 (80 GB) y L40S (48 GB).
+- Cabe en GPU de consumo de 24 GB con contexto reducido o caché KV cuantizada; en GPUs de 16 GB exigiría recortar contexto o descargar capas a CPU, lo que degrada el rendimiento.
+- Despliegue: exclusivamente mediante el fork turbo-tan/llama.cpp-tq3 (compilación posterior a `45efd44ec`); las compilaciones estándar de llama.cpp no pueden cargar el tipo de tensor TQ3_4S. No es compatible con vLLM, TGI ni Ollama sin conversión previa.
+- Throughput medido: 125,2 tok/s con DFlash2 y 107,9 tok/s con MTP interno en RTX 3090, flujo único. El flag `--no-spec-draft-backend-sampling` aporta aproximadamente un 25 % de mejora de throughput al mantener la reutilización de grafos CUDA.
+- Ajuste óptimo de decodificación especulativa: `--spec-draft-n-max 2` según medición del autor; con vocabulario de borrador restringido se usa `--spec-draft-n-max 3`.
 
 ## Comparativa con modelos similares
 
-La única comparación disponible es con Qwen3.6-27B-MTP-TQ3_4S, que usa la misma receta de cuantización. No se proporcionan datos de otros modelos de 27B cuantizados (p. ej., Llama 3.3 70B o Qwen2.5 32B) en la documentación.
+| Modelo | Parametros | Contexto | Cuantizacion tipica | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-TQ3_4S (esta ficha) | 27,3B | 262.144 | TQ3_4S 4,24 BPW, 13,8 GB | Apache-2.0 | Requiere fork TurboQuant de llama.cpp; MTP integrado |
+| Qwen/Qwen3.8-27B (BF16 original) | 27,3B | 262.144 | BF16, aproximadamente 54 GB | Apache-2.0 | Referencia de calidad; no cabe en GPU de 24 GB |
+| unsloth/Qwen3.8-27B-GGUF | 27,3B | 262.144 | GGUF estándar (Q4_K_M y otros) | Apache-2.0 | Compatible con llama.cpp estándar; sin tipo TQ3_4S |
+| z-lab/Qwen3.8-27B-DFlash2-GGUF | 27,3B (base) | 262.144 | GGUF borrador | no disponible | Borrador externo de decodificación especulativa, compatible con esta cuantización |
 
-| Modelo | Parametros | Contexto | Tamano GGUF | Decodificacion | HumanEval | Reason-math |
-|---|---|---|---|---|---|---|
-| Qwen3.8-27B-TQ3_4S | 27,3B | 262K | 13,8 GB | 64,78 tok/s | 92,7 | 86,7 |
-| Qwen3.6-27B-MTP-TQ3_4S | ~27B | no disponible | 13,39 GiB | 59,0 tok/s | no disponible | 73,33 |
+No se dispone de datos de benchmarks comparativos de calidad entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Requiere un runtime específico (turbo-tan/llama.cpp-tq3); no es compatible con llama.cpp estándar, lo que limita su portabilidad.
-- Solo declara soporte de inglés; no hay garantías de rendimiento en otros idiomas.
-- Los benchmarks son una primera pasada sin re-ajuste de configuración; los números de las suites de tareas pueden mejorar con tuning, pero también podrían empeorar en otros escenarios.
-- La licencia Apache 2.0 del GGUF está sujeta a la licencia del modelo base Qwen3.8-27B; hay que verificar los términos de uso comercial de ese modelo.
-- No se han publicado datos sobre sesgos, alucinaciones o robustez en dominios específicos.
-- El modo thinking requiere activación explícita y puede aumentar la latencia; el autor recomienda desactivarlo para tareas agénticas.
-- La cuantización TQ3_4S es propietaria; no hay garantía de que otros frameworks (vLLM, TGI, Ollama) puedan cargar el formato.
+- Dependencia de un runtime no estándar: el modelo solo carga en el fork turbo-tan/llama.cpp-tq3; no funciona en llama.cpp oficial, Ollama, LM Studio, vLLM ni TGI sin reconversión.
+- La model card declara únicamente inglés como idioma soportado; el rendimiento en castellano u otras lenguas no está verificado y puede degradarse respecto al modelo base.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de factualidad para esta cuantización.
+- El razonamiento sin límite (xhigh) puede entrar en bucles de planificación y producir salidas vacías; se recomienda fijar `--reasoning-budget` y usar `--reasoning-budget-message`.
+- El esfuerzo de razonamiento medio produce subpensamiento con errores de andamiaje de módulos en generación de código; el autor recomienda esfuerzo bajo para codegen de un solo disparo.
+- La versión v1 tiene un fallo en la plantilla de chat oficial que rompe el tool calling con argumentos en formato string; debe usarse la v2 o aplicar la plantilla froggeric v22 manualmente.
+- La cuantización a 4,24 BPW introduce pérdida de calidad respecto al BF16 original; no se han publicado mediciones de esa degradación.
+- El contexto completo de 262K exige cuantizar la caché KV y dispone de VRAM limitada en GPUs de 24 GB; contextos muy largos pueden degradar la calidad de recuperación.
+- La licencia Apache-2.0 del modelo base permite uso comercial, pero conviene verificar las condiciones del fork TurboQuant y del vocabulario de borrador (HyperQwen, Apache-2.0) antes de desplegar en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S
-- Runtime requerido (fork de llama.cpp): https://github.com/turbo-tan/llama.cpp-tq3
-- Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Licencia del modelo base Qwen3.8: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- GGUF de referencia de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Runtime TurboQuant para llama.cpp: https://github.com/turbo-tan/llama.cpp-tq3
+- Recetas de despliegue en RTX 3090: https://github.com/turbo-tan/recipes/tree/main/qwen3.8-27b-tq3_4s-mtp-rtx3090
+- Plantillas de chat corregidas: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
+- Borrador DFlash2 (paper): https://arxiv.org/abs/2602.06036
+- Borrador DFlash2 (código): https://github.com/z-lab/dflash
+- Borrador DFlash2 (GGUF): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
+- Vocabulario de borrador HyperQwen: https://github.com/syv-ai/HyperQwen

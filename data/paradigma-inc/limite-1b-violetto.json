@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Location de Van Aménagé, Campervan et Minibus | WeVan",
-      "url": "https://www.we-van.com/",
-      "snippet": "Location de van aménagé et campervan en France et vers toute l'Europe. Réservez en ligne votre van avec WeVan, le spécialiste de …"
-    },
-    {
-      "title": "Campervan and Minibus Hire | WeVan",
-      "url": "https://www.we-van.com/en/",
-      "snippet": "Hire a campervan, converted van or RV in France and Europe. Reserve your van online with WeVan, the leading van hire specialist."
-    },
-    {
-      "title": "TREK - WeVan",
-      "url": "https://backvan.we-van.com/data/models/28/manufacturer_booklet.pdf",
-      "snippet": "Large réchaud 2 feux à allumage piezo • Tablette rétractable positionnée à hauteur de plan de travail pouvant être utilisée aussi bien …"
-    },
-    {
-      "title": "MB_brochures_a4-297x210 - backvan.we-van.com",
-      "url": "https://backvan.we-van.com/data/models/24/manufacturer_booklet.pdf",
-      "snippet": "Plus économique que jamais, il affiche une consommation de carburant minimale de 5,7 l aux 100 km1 et contribue ainsi à votre …"
-    },
-    {
-      "title": "Location de Van Aménagé et Campervan à Bordeaux | WeVan France",
-      "url": "https://www.we-van.com/location-van-amenage-bordeaux-france-21.php",
-      "snippet": "Vous souhaitez louer un van aménagé ou Campervan (petit camping car) à Bordeaux ? Retrouvez l'agence WeVan, le spécialiste de …"
-    }
-  ]
+  "sources": []
 }

@@ -47,32 +47,95 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "kcal_mae",
+      "value": 40.9075
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "kcal_pmae",
+      "value": 16.0128
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "mass_pmae",
+      "value": 12.6435
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "fat_pmae",
+      "value": 23.3219
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "carb_pmae",
+      "value": 21.6526
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "protein_pmae",
+      "value": 21.7153
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "side_dish_kcal_pmae",
+      "value": 15.8816
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "test_clean_kcal_pmae",
+      "value": 16.281
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "presence_map",
+      "value": 0.6885
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "ingredient_grams_mae",
+      "value": 10.1312
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "flavoria_mass_pmae",
+      "value": 25.4688
+    },
+    {
+      "task": null,
+      "dataset": "Nutrition5k (cleaned) + FlavoriaFoodWeight1700 + USDA FoodData Central",
+      "metric": "nutritext_kcal_mae_per_100g",
+      "value": 31.2459
+    }
+  ],
   "sources": [
     {
-      "title": "Succubus Name Generator: Seductive Demoness Names - The Story …",
-      "url": "https://thestoryshack.com/tools/succubus-name-generator/",
-      "snippet": "Nov 24, 2020 · This generator builds succubus names for dark fantasy novels, paranormal romance, demonic tabletop villains, and …"
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=food&p=0&sort=downloads",
+      "snippet": "Models ; shalev396/calorie-lens. Image Classification • 94.6M · 26 days ago ; Kaikaku/epicure-core. Feature Extraction · May 27 ; AKMESSI/Food-R1-GGUF. Image-Text-to ..."
     },
     {
-      "title": "300+ Succubus Names - Ultimate List of Female, Male & Fantasy",
-      "url": "https://fantasynameland.com/succubus-names-ultimate-guide-to-powerful-and-unique-names/",
-      "snippet": "Jan 29, 2026 · With this carefully curated collection of Succubus Names, creators can easily find names that feel authentic, …"
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=calorie-estimation",
+      "snippet": "Featherless AI · Z.ai · Nscale · OVHcloud AI Endpoints · fal · Cohere · Public AI ... shalev396/calorie-lens. Image Classification • 94.6M • Updated Oct 12 • 257k ..."
     },
     {
-      "title": "Succubus Name Generator — Alluring Demon Names",
-      "url": "https://namegeneratorapp.com/succubus-names",
-      "snippet": "Spin seductive, dark demon names for succubi in D&D and fantasy stories. Generate unlimited names and save your favorites in one …"
-    },
-    {
-      "title": "Succubus Name Generator | Demon Seductress Names",
-      "url": "https://www.generatenames.io/succubus-name-generator",
-      "snippet": "Free succubus name generator. Create alluring demon names for succubi and incubi characters in fantasy and dark fiction."
-    },
-    {
-      "title": "Female Demon Names: The Complete List With Meanings",
-      "url": "https://namesnicknames.com/female-demon-names/",
-      "snippet": "Aug 2, 2026 · You will find real demon names from the Bible, world mythology, and Japanese folklore. There are also fantasy and …"
+      "title": "16 Nov 2026 Pirate Face added 1000 model torrents: • timm ... - X",
+      "url": "https://x.com/thepirateface/status/2122147668600254485",
+      "snippet": "vor 3 Tagen ... ... ai/hs-rerank-1 • Comfy-Org/ACE-Step-1.5 • onnx ... en • shalev396/calorie-lens • autotrust/AutoTrust-Decider-Pro-Vision ..."
     }
   ]
 }

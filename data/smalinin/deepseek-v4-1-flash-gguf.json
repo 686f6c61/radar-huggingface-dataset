@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Confiance numérique et signature électronique en Europe",
-      "url": "https://www.signaturit.com/fr/",
-      "snippet": "Signature électronique rapide, avec différents niveaux de qualification en fonction des usages. Conservation et archivage de vos …"
-    },
-    {
-      "title": "Signature électronique pour entreprises | Signaturit Group",
-      "url": "https://www.signaturit.com/fr/produits/signatures/signaturit/",
-      "snippet": "Pour signer un document électroniquement avec Signaturit, il suffit d’importer votre fichier (PDF, Word, etc.) dans notre logiciel de …"
-    },
-    {
-      "title": "Les 6 Meilleurs Logiciels de Signature Électronique en 2026",
-      "url": "https://tool-advisor.fr/signature-electronique/comparatif/",
-      "snippet": "May 14, 2026 · Notre comparatif regroupe une sélection des meilleurs logiciels de signature électronique : Youtrust, DocuSign, …"
-    },
-    {
-      "title": "La signature électronique : un outil devenu incontournable",
-      "url": "https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/dematerialisation-des-documents/la-signature",
-      "snippet": "Namirial (ex Signaturit), éditeur européen qui propose une solution en ligne complète qui facilite la gestion de l'ensemble du …"
-    },
-    {
-      "title": "Top 10 des meilleurs logiciels de signature électronique en 2026",
-      "url": "https://digitiz.fr/logiciels-signature-electronique/",
-      "snippet": "Apr 22, 2026 · Signaturit est une solution de signature électronique basée sur le cloud (plateforme SaaS) qui permet de faire signer …"
-    }
-  ]
+  "sources": []
 }

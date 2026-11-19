@@ -2,74 +2,82 @@
 
 ## Resumen
 
-El repositorio `rzgar/r_drive` es un espacio de Hugging Face creado por el usuario rzgar bajo licencia MIT, con un tamaño de 222,8 GB. La model card está prácticamente vacía, sin descripción del modelo, arquitectura, parámetros ni idiomas soportados. Sin embargo, el contenido del repositorio, según los archivos listados en la interfaz web, incluye un wheel de Python (`sageattn3-1..-cp312-cp312-linux_x86_64.whl`), un workflow de ComfyUI (`WAN2.2_Bernini_r_workflow_ComfyUI.json`) y referencias a LoRAs para generación de vídeo (como `Bernini-R-LightX2V-4step-loras`). Esto sugiere que el repositorio alberga recursos relacionados con modelos de difusión para vídeo, probablemente adaptaciones o complementos para el ecosistema Wan 2.1/2.2, aunque no hay documentación oficial que lo confirme.
+`rzgar/r_drive` es un modelo publicado en Hugging Face por el usuario `rzgar` bajo licencia MIT. La etiqueta de libreria (`diffusion-single-file`) y el enorme tamano del repositorio (409,5 GB) indican que se trata de un modelo de difusion distribuido como un unico archivo de pesos, presumiblemente en formato de precision completa (fp32/fp16) y orientado a generacion de imagenes o video, aunque la model card no lo especifica.
 
-Dado que la información pública es mínima, esta ficha se basa únicamente en los datos disponibles y marca explícitamente los campos no especificados como "no disponible". No se puede determinar con certeza si `r_drive` es un modelo de IA en sí mismo o un conjunto de herramientas auxiliares (LoRAs, workflows, librerías) para otros modelos. La ausencia de una model card detallada y de métricas de descarga (0 descargas) indica que se trata de un recurso reciente o poco difundido.
+La model card es practicamente vacia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas ni uso previsto. Toda la informacion disponible proviene de los metadatos del repositorio (tags, tamano y licencia). Por tanto, esta ficha recoge lo verificable y marca explicitamente como "no disponible" todo aquello que el autor no documenta.
+
+A pesar de la falta de documentacion, el modelo acumula 11.034 descargas y 7 likes, lo que sugiere cierto uso por parte de la comunidad, probablemente en flujos de inferencia con herramientas compatibles con archivos de difusion de un solo peso (por ejemplo, ComfyUI o scripts basados en `diffusers`/`safetensors`). Cualquier evaluacion de idoneidad para produccion debe hacerse con cautela dada la ausencia de especificaciones publicas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | no disponible (etiqueta de libreria: `diffusion-single-file`, lo que sugiere un modelo de difusion) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se confirma si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (no aplicable de forma directa a modelos de difusion) |
+| Tipos de cuantizacion | no disponible (el repositorio se distribuye como archivo unico de pesos; no se documentan variantes GGUF, fp8 ni int8) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible (el repositorio contiene archivos .whl, .json y posiblemente pesos, pero no se especifica el formato) |
+| Formato de pesos | archivo unico de difusion (`diffusion-single-file`); extension concreta no disponible |
+| Tamano del repositorio | 409,5 GB |
+| Descargas | 11.034 |
+| Likes | 7 |
+| Fecha de creacion | 2026-01-04 |
+| Ultima actualizacion | 2026-11-08 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de alineación (RLHF, DPO, etc.). Los archivos presentes en el repositorio (un wheel de `sageattn3`, un workflow de ComfyUI y LoRAs para vídeo) apuntan a que el contenido está orientado a la generación de vídeo mediante modelos de difusión, posiblemente basados en la familia Wan. Sin embargo, al no existir una model card ni documentación técnica, cualquier afirmación sobre la arquitectura sería especulativa. Se recomienda consultar directamente el repositorio para obtener más detalles si el autor los añade en el futuro.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. La etiqueta `diffusion-single-file` apunta a un modelo de difusion empaquetado como un unico archivo de pesos, pero se desconoce si se trata de un UNet, un transformer de difusion (DiT), un modelo de difusion latente o una variante de video. Tampoco se especifica el tipo de scheduler, el espacio latente ni la resolucion nativa.
+
+En cuanto al entrenamiento, no hay datos sobre volumen de tokens o pares imagen-texto, composicion del dataset, uso de RLHF/DPO, destilacion ni tecnicas de aceleracion (decodificacion especulativa, pasos reducidos, etc.). El tamano de 409,5 GB sugiere pesos en alta precision y posiblemente un modelo de gran numero de parametros, pero esta inferencia no puede confirmarse con la informacion disponible.
 
 ## Capacidades
 
-- No se dispone de una lista oficial de capacidades. Según los archivos del repositorio, se infiere que podría estar relacionado con generación de vídeo (text-to-video o image-to-video), pero no hay confirmación.
-- No se documenta soporte para tool calling, agentes, razonamiento multi-paso, visión, audio ni otras funcionalidades.
-- No se especifican idiomas soportados.
-- El repositorio incluye un workflow de ComfyUI, lo que sugiere que los recursos están diseñados para integrarse en ese entorno de generación de imágenes/vídeo.
+- Generacion de contenido a partir de pesos de difusion: por la etiqueta de libreria, se espera que el modelo genere imagenes (o potencialmente video) a partir de prompts, aunque no se documenta el tipo exacto de salida.
+- No se documentan capacidades de texto, razonamiento, codigo ni matematicas.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues: no disponibles.
+- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Compatibilidad de despliegue: al ser un archivo unico de difusion, es probable que pueda cargarse con herramientas que aceptan pesos unicos (por ejemplo, ComfyUI o scripts personalizados), pero esto no esta confirmado por el autor.
 
 ## Casos de uso
 
-Dado que la información es insuficiente, los casos de uso son hipotéticos y basados en la naturaleza de los archivos:
-
-- Generación de vídeo con ComfyUI: el workflow `WAN2.2_Bernini_r_workflow_ComfyUI.json` podría utilizarse para configurar un pipeline de generación de vídeo en ComfyUI, aunque se desconoce su funcionamiento exacto.
-- Ajuste fino de modelos de vídeo: los LoRAs mencionados (como `Bernini-R-LightX2V-4step-loras`) podrían emplearse para mejorar la calidad de movimiento en modelos Wan 2.1/2.2, pero no hay instrucciones de uso.
-- Investigación de arquitecturas de atención: el wheel `sageattn3` sugiere una implementación de atención (posiblemente atención lineal o esparsa) que podría interesar a investigadores, aunque no se documenta su integración.
-- Desarrollo de plugins para ComfyUI: el repositorio podría servir como base para crear extensiones, pero sin documentación no es recomendable para producción.
-- Evaluación de modelos de vídeo: si el repositorio contiene pesos de un modelo completo, podría usarse para pruebas, pero no se confirma.
-- Uso educativo: los archivos podrían analizarse para entender cómo se estructuran los workflows de vídeo, aunque carecen de explicaciones.
+- Generacion de imagenes en flujos de trabajo creativos: el modelo puede cargarse como archivo unico en herramientas de inferencia de difusion y utilizarse para producir ilustraciones o material visual a partir de prompts, siempre que el usuario verifique previamente la arquitectura y el scheduler compatibles.
+- Prototipado de pipelines de difusion: al distribuirse como un solo archivo, encaja en entornos de experimentacion donde se quiere evitar la gestion de multiples componentes (VAE, text encoder, UNet) por separado, aunque la integracion exacta debe validarse.
+- Investigacion sobre modelos de difusion de gran tamano: el volumen de 409,5 GB permite estudiar el comportamiento de pesos en alta precision, siempre que se disponga del hardware adecuado.
+- Fine-tuning o adaptacion (si la arquitectura lo permite): investigadores con recursos suficientes podrian reutilizar los pesos como base para ajuste fino, aunque no hay garantias documentadas sobre la viabilidad.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia MIT facilita el uso comercial y la modificacion, a diferencia de modelos con licencias restrictivas.
+- Evaluacion comparativa de modelos de difusion: util como referencia adicional en estudios que comparen arquitecturas de difusion, aunque la falta de documentacion limita la reproducibilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas específicas de generación de vídeo (como FVD o CLIP score). Tampoco se comparan con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos de VRAM, GPU recomendadas ni opciones de despliegue.
-- El tamaño del repositorio (222,8 GB) sugiere que, si contiene pesos de un modelo, este sería de gran tamaño y requeriría GPUs de alta gama (por ejemplo, A100, H100 o RTX 4090 con suficiente VRAM), pero es una estimación no confirmada.
-- No se mencionan herramientas de inferencia como vLLM, llama.cpp, Ollama o TGI. Dado el contexto de vídeo, es probable que se use ComfyUI u otros frameworks de difusión, pero no hay confirmación.
-- No se dispone de datos de latencia ni throughput.
+- VRAM estimada para inferencia: no disponible. El tamano del repositorio (409,5 GB) sugiere que la carga completa de pesos en memoria requiere hardware de gama muy alta (multiples GPU o nodos con memoria agregada), pero no se puede confirmar sin conocer el numero de parametros y la precision.
+- GPU recomendadas: no disponibles. Por el volumen, es probable que se necesiten GPU de centro de datos (A100, H100, H200) o configuraciones multi-GPU, pero esto es una inferencia no verificada.
+- Compatibilidad con GPU de consumo: no confirmada. Un archivo de 409,5 GB no cabe en una sola GPU de consumo (24 GB en RTX 4090, 16 GB en RTX 4080), por lo que seria necesario cuantizar o usar offloading, tecnicas no documentadas por el autor.
+- Opciones de despliegue: no disponibles de forma oficial. La etiqueta `diffusion-single-file` sugiere compatibilidad con cargadores de pesos unicos, pero no se especifica vLLM, llama.cpp, Ollama, TGI ni diffusers.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede comparar con otros modelos porque no se conoce la naturaleza exacta de `r_drive` (si es un modelo completo, un conjunto de LoRAs o un paquete de herramientas). No hay modelos comparables identificables en la información proporcionada.
+No disponible. La informacion proporcionada no permite identificar modelos comparables de la misma categoria (difusion de un solo archivo) con parametros, contexto o rendimiento documentados.
 
 ## Limitaciones y advertencias
 
-- Falta total de documentación: la model card está vacía, lo que impide conocer el propósito, uso y limitaciones del contenido.
-- Riesgo de alucinación: al no haber información verificada, cualquier uso en producción es arriesgado.
-- Sesgos desconocidos: no se puede evaluar si el modelo (si existe) tiene sesgos de género, raza u otros.
-- Restricciones de licencia: la licencia MIT permite uso comercial y modificación, pero se aplica a los archivos del repositorio; no se sabe si los modelos subyacentes (por ejemplo, Wan) tienen licencias adicionales.
-- Compatibilidad incierta: el wheel `sageattn3` y el workflow de ComfyUI pueden depender de versiones específicas de software no documentadas.
-- Tamaño del repositorio: 222,8 GB implica un coste de almacenamiento y descarga considerable, sin garantía de que el contenido sea útil.
+- Model card practicamente vacia: no hay descripcion del modelo, uso previsto, limitaciones ni sesgos documentados, lo que dificulta evaluar su idoneidad para produccion.
+- Riesgo de alucinacion y artefactos: en modelos de difusion, es habitual que aparezcan artefactos visuales, incoherencias en prompts complejos y sesgos derivados del dataset de entrenamiento; al no documentarse el dataset, no se puede evaluar su magnitud.
+- Sesgos conocidos: no disponibles. La ausencia de informacion sobre datos de entrenamiento impide conocer sesgos de representacion, estilo o contenido.
+- Limitaciones de contexto o idioma: no disponibles. Se desconoce si el modelo comprende prompts en castellano u otros idiomas.
+- Restricciones de licencia: la licencia MIT permite uso comercial, modificacion y redistribucion con atribucion, pero el autor no ofrece garantias ni asume responsabilidad; conviene revisar el texto completo de la licencia.
+- Caveat para produccion: el tamano de 409,5 GB y la falta de especificaciones tecnicas hacen recomendable validar el modelo en un entorno controlado antes de integrarlo en pipelines productivos, y verificar la compatibilidad con las herramientas de inferencia elegidas.
+- Fecha de actualizacion reciente (2026-11-08): el repositorio puede haber cambiado; conviene comprobar la version exacta de los pesos antes de desplegar.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/rzgar/r_drive
-- Árbol de archivos: https://huggingface.co/rzgar/r_drive/tree/main
-- Workflow de ComfyUI (ejemplo): https://huggingface.co/rzgar/r_drive/blob/main/WAN2.2_Bernini_r_workflow_ComfyUI.json
-- Página de rzgar en AI Market Cap: https://aimarketcap.tech/providers/rzgar
-- Referencia a LoRAs de vídeo: https://www.aimodels.fyi/models/huggingFace/bernini-r-lightx2v-4step-loras-rzgar
-- Plugin espejo en GitHub: https://github.com/AIMixer/ComfyUI-WanBerniniS2V
+- Hugging Face: https://huggingface.co/rzgar/r_drive
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

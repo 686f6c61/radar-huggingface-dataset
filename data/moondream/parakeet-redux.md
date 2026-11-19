@@ -2,73 +2,70 @@
 
 ## Resumen
 
-parakeet-redux es una version ternaria del modelo de reconocimiento automatico del habla (ASR) nvidia/parakeet-tdt-0.6b-v3, publicada por moondream. Conserva la misma arquitectura y el mismo tokenizer que el modelo base, pero sustituye todos los pesos del encoder por valores ternarios (-1, 0 o +1), lo que reduce los pesos de 1,2 GB a 178 MB. Los metadatos de safetensors declaran 148.923.399 parametros, mientras que el modelo del que deriva se denomina "0.6b" (unos 600 millones); la informacion disponible no explica esa diferencia de recuento. El repositorio ocupa 0,6 GB.
+Parakeet Redux es un modelo de reconocimiento automático del habla (ASR) publicado por Moondream, una versión de 1,58 bits (ternaria: pesos -1, 0 y +1) del modelo `nvidia/parakeet-tdt-0.6b-v3`. Mantiene la misma arquitectura y el mismo tokenizador que el original, pero reduce los pesos de 1,2 GB a 178 MB. El modelo está pensado para inferencia en CPU x86 y Apple Silicon, sin necesidad de GPU.
 
-El objetivo es ejecutar ASR de calidad cercana al original sin GPU dedicada: alcanza 113x tiempo real en ocho nucleos x86 con AVX-512 (AMD EPYC 9575F, Zen 5) y 38x en CPU / 43x en GPU en un Apple M2. Frente al modelo original, cede 0,29 puntos de WER de media en los siete conjuntos ingleses del Open ASR Leaderboard (6,55 frente a 6,26), pero mejora en FLEURS de 25 idiomas (10,56 frente a 11,62) y en audio de formato largo TED-LIUM (2,51 frente a 2,71).
+La propuesta es comprimir agresivamente un modelo TDT (Token-and-Duration Transducer) de 148,9 millones de parámetros sin sacrificar calidad de forma significativa. Según la model card, se mantiene dentro de 0,3 puntos de WER del original en inglés, mejora sobre él en el conjunto FLEURS de 25 idiomas y en audio de formato largo, y empeora en condiciones de ruido de fondo. Alcanza 113× tiempo real en ocho núcleos x86 con AVX-512 y 38×/43× (CPU/GPU) en un Apple M2.
 
-Es relevante porque demuestra que una cuantizacion de 1,58 bits sobre un sistema ASR de produccion mantiene el rendimiento con perdidas acotadas en ingles y ganancias claras en tamano y velocidad, y porque cubre 25 idiomas europeos bajo licencia CC-BY-4.0. El principal punto debil medido es el ruido de fondo: en las nueve condiciones MUSAN el WER sube de 6,72 a 9,04.
+Es relevante porque demuestra que la cuantización ternaria extrema es viable en producción para ASR: permite transcripción local, privada y de bajo coste en hardware modesto, con soporte para 25 idiomas europeos y marcas de tiempo a nivel de segmento y de palabra. El motor de referencia es Photon, la runtime propia de Moondream, distribuida en el paquete `moondream` de Python.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | TDT (transducer de tokens y duracion) heredada de parakeet-tdt-0.6b-v3; pesos del encoder ternarios (-1, 0, +1) |
-| Parametros totales | 148.923.399 segun metadatos de safetensors; el modelo base se denomina 0.6b (unos 600 millones) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible; el modelo procesa audio de formato largo (evaluado en TED-LIUM) |
-| Tipos de cuantizacion | Ternaria de 1,58 bits en el encoder, pesos empaquetados de 178 MB; el repositorio incluye la etiqueta "8-bit" |
+| Arquitectura | Parakeet TDT (Token-and-Duration Transducer), encoder con pesos ternarios |
+| Parámetros totales | 148.923.399 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo ASR por utterance; soporta audio de formato largo) |
+| Tipos de cuantización | ternaria de 1,58 bits (pesos del encoder en -1, 0, +1); el modelo base admite bf16, fp32, f16, int8 y q8_0 en otras runtimes |
 | Idiomas soportados | 25: en, de, fr, es, it, pt, ru, uk, hr, sl, lv, lt, et, fi, sv, da, nl, pl, cs, sk, hu, ro, bg, el, mt |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | safetensors, empaquetados; Photon los lee directamente |
-| Tarea | automatic-speech-recognition |
-| Autor | moondream |
+| Formato de pesos | safetensors (empaquetado propietario para Photon) |
+| Tamaño de pesos | 178 MB (frente a 1,2 GB del original) |
+| Tamaño del repo | 0,6 GB |
 | Modelo base | nvidia/parakeet-tdt-0.6b-v3 |
-| Tamano del repositorio | 0,6 GB |
-| Publicacion | Creado el 18 de septiembre de 2026; actualizado el 21 de septiembre de 2026 |
+| Pipeline | automatic-speech-recognition |
+| Runtime de referencia | Photon (AVX-512 VNNI en x86, NEON en ARM, Metal en Apple GPUs) |
 
 ## Arquitectura y entrenamiento
 
-La model card indica que parakeet-redux comparte arquitectura y tokenizer con nvidia/parakeet-tdt-0.6b-v3, un sistema ASR de tipo TDT (token-and-duration transducer, segun la etiqueta parakeet_tdt del repositorio). La unica diferencia declarada esta en los pesos: todos los pesos del encoder son -1, 0 o +1, es decir, una representacion ternaria de 1,58 bits. No se especifica si esa ternarizacion se obtuvo mediante entrenamiento consciente de cuantizacion (QAT), cuantizacion posterior al entrenamiento (PTQ) o destilacion; tampoco se detallan el dataset, el numero de horas de audio ni el uso de tecnicas de alineacion o refinamiento.
+El modelo conserva la arquitectura TDT del original: un encoder que procesa el audio y un decoder transducer que predice conjuntamente tokens y duraciones, lo que permite emitir varios tokens por paso y mejorar el throughput frente a un CTC o un transducer clásico. La innovación de Redux no está en la topología sino en la representación numérica: todos los pesos del encoder se restringen a valores ternarios (-1, 0, +1) con una escala de 1,58 bits por peso, lo que reduce el tamaño a 178 MB y habilita kernels enteros rápidos en CPU.
 
-La ejecucion no se realiza con frameworks estandar: los pesos empaquetados se leen directamente con Photon (moondream), que implementa kernels especificos para AVX-512 VNNI en x86, NEON en ARM y Metal en las GPU de Apple. Esa integracion entre formato de pesos y runtime es la que explica el salto de velocidad frente a otras alternativas: 113x tiempo real frente a 45x de parakeet.cpp (ggml, q8_0), 42x de sherpa-onnx (int8) y 28x de onnx-asr (int8), todas medidas con los mismos 8 nucleos fisicos y las mismas 2.620 locuciones de LibriSpeech test-clean. No hay informacion disponible sobre datos de entrenamiento, numero de tokens ni proceso de optimizacion con RLHF/DPO.
+La model card no detalla el proceso de entrenamiento ni de cuantización (número de tokens, composición del dataset, si hubo destilación o fine-tuning tras la ternarización, ni técnicas de RLHF/DPO, que en ASR no son habituales). Sí indica que el modelo se evaluó con el pipeline del Open ASR Leaderboard de septiembre de 2026 y que el hermano `parakeet-ultra` es la variante de precisión completa de la misma arquitectura, entrenada adicionalmente y orientada a GPU. La inferencia se realiza con Photon, que lee directamente los pesos empaquetados y explota instrucciones vectoriales (AVX-512 VNNI, NEON) y Metal.
 
 ## Capacidades
 
-- Transcripcion de voz a texto en 25 idiomas, entre ellos espanol, ingles, aleman, frances, italiano, portugues, ruso, ucraniano y el resto de idiomas listados en las especificaciones.
-- Marcas de tiempo a nivel de segmento (una entrada por frase, con inicio y fin en segundos).
-- Marcas de tiempo a nivel de palabra dentro de cada segmento.
-- Procesamiento de audio de formato largo: se evalua en TED-LIUM, donde obtiene 2,51 de WER.
-- Robustez en dominios concretos de ingles: mejora al original en AMI (10,80 frente a 10,86) y Earnings-22 (9,95 frente a 10,75).
-- Ejecucion en CPU x86 con AVX-512, en CPU ARM con NEON y en GPU de Apple con Metal; tambien admite CUDA como dispositivo en la API de Photon.
-- No dispone de tool calling, function calling, razonamiento multi-paso ni generacion de texto libre: es exclusivamente un modelo de reconocimiento de voz.
-- No se documenta modo streaming, diarizacion de hablantes, deteccion de idioma ni traduccion.
+- Transcripción de voz a texto en 25 idiomas europeos (germánicas, eslavas, románicas, bálticas, ugrofinesas y griego, además de maltés).
+- Marcas de tiempo a nivel de segmento (`timestamps="segment"`), con inicio y fin de cada frase en segundos.
+- Marcas de tiempo a nivel de palabra (`timestamps="word"`), con inicio y fin de cada palabra.
+- Procesamiento de audio de formato largo (evaluado en TED-LIUM, donde mejora al original).
+- Inferencia en CPU x86 con AVX-512, en ARM con NEON y en GPUs Apple con Metal; también admite `cuda` y `mps` como dispositivo.
+- Ejecución de una sola utterance en streaming por lotes; no se documenta tool calling, agentes ni capacidades multimodales.
+- No se documentan capacidades de diarización, detección de idioma automática ni traducción.
 
 ## Casos de uso
 
-- Transcripcion en portatiles y equipos sin GPU dedicada: los pesos de 178 MB caben en memoria sin presion y el modelo alcanza 38x tiempo real en la CPU de un Apple M2, lo que permite dictado y transcripcion offline con un consumo de disco minimo.
-- Procesamiento por lotes en servidores CPU: a 113x tiempo real en 8 nucleos x86, una hora de audio se transcribe en aproximadamente 32 segundos de reloj, sin necesidad de ocupar GPU que puedan estar destinadas a otras cargas.
-- Subtitulado automatico de video y podcast: las marcas de tiempo a nivel de palabra permiten generar subtitulos con sincronizacion fina sin recurrir a un alineador forzado externo.
-- Actas de reuniones y transcripcion de salas: es el escenario AMI, donde el modelo iguala practicamente al original (10,80 frente a 10,86 de WER), con la ventaja de poder ejecutarse en la propia maquina del usuario.
-- Analisis de llamadas de resultados financieros o de atencion telefonica: en Earnings-22 obtiene 9,95 de WER, mejor que los 10,75 del modelo base, por lo que es adecuado para pipelines de transcripcion de audio corporativo en ingles.
-- Digitalizacion de audiolibros y contenido narrativo: en LibriSpeech test-clean registra 1,94 de WER y en test-other 4,34, con un coste de almacenamiento de 178 MB por instancia desplegada.
-- Transcripcion de conferencias de formato largo: en TED-LIUM baja a 2,51 de WER, por debajo del 2,71 del original, lo que lo hace util para charlas, cursos y seminarios de mas de 20 minutos.
-- Aplicaciones multilingues europeas: en FLEURS mejora al original en croata (9,26), estonio (9,15), letón (12,80), lituano (17,27), maltes (13,65) y griego (32,48), lo que resulta adecuado para servicios que operan en varios idiomas minoritarios dentro de la Union Europea.
-- Despliegue embebido en ARM: Photon usa kernels NEON y Metal en Apple Silicon; no hay datos publicados de rendimiento en otras plataformas ARM.
+- Transcripción local y privada en portátiles: con 178 MB y 38× tiempo real en un M2, se puede transcribir audio sin enviar datos a la nube, útil en entornos sanitarios, legales o de investigación con datos sensibles.
+- Subtitulado automático con marcas de tiempo: la salida por segmento y por palabra permite generar subtítulos SRT/VTT sincronizados sin post-procesado adicional.
+- Actas de reuniones y llamadas: el modelo mantiene un WER de 10,80 en AMI y 9,95 en Earnings-22, por lo que es adecuado para transcribir reuniones y llamadas financieras en inglés.
+- Servicio de transcripción de bajo coste en servidores sin GPU: a 113× tiempo real en ocho núcleos EPYC, un solo nodo puede procesar horas de audio por minuto, lo que abarata el coste por hora transcrita.
+- Indexación y búsqueda de archivos de audio: la transcripción con timestamps alimenta pipelines de búsqueda sobre podcasts, clases o archivos de radio en los 25 idiomas soportados.
+- Aplicaciones de accesibilidad en tiempo real: la latencia baja en CPU permite dictado y subtitulado en vivo en dispositivos de gama media y en sistemas embebidos con ARM.
+- Preprocesado para modelos de lenguaje: la transcripción sirve de entrada a pipelines RAG o de resumen sobre contenido hablado, con marcas temporales para citar fuentes.
 
 ## Benchmarks y rendimiento
 
-Comparativa global declarada por el autor (WER en porcentaje, menor es mejor):
+WER en porcentaje, menor es mejor. Ambos modelos evaluados sobre los mismos ficheros con el pipeline del Open ASR Leaderboard de septiembre de 2026; Redux en Photon sobre GPU NVIDIA y el original en NeMo en bf16.
 
 | Conjunto | parakeet-tdt-0.6b-v3 | parakeet-redux |
 |---|---|---|
-| Open ASR Leaderboard, 7 conjuntos en ingles | 6,26 | 6,55 |
+| Open ASR Leaderboard, media de 7 sets en inglés | 6,26 | 6,55 |
 | FLEURS, 25 idiomas | 11,62 | 10,56 |
-| Habla de negocio, estilo AA-WER | 6,15 | 6,96 |
+| Habla de negocios (estilo AA-WER) | 6,15 | 6,96 |
 | Ruido de fondo, 9 condiciones MUSAN | 6,72 | 9,04 |
 | TED-LIUM, formato largo | 2,71 | 2,51 |
-| Pesos | 1,2 GB | 178 MB |
+| Peso de los pesos | 1,2 GB | 178 MB |
 
-Open ASR Leaderboard (los siete conjuntos de test en ingles):
+Desglose del Open ASR Leaderboard (WER %):
 
 | Conjunto | parakeet-tdt-0.6b-v3 | parakeet-redux |
 |---|---|---|
@@ -81,94 +78,68 @@ Open ASR Leaderboard (los siete conjuntos de test en ingles):
 | VoxPopuli | 5,88 | 6,07 |
 | Media | 6,26 | 6,55 |
 
-FLEURS (split de test, frases de Wikipedia; el fragmento disponible de la tabla esta truncado a partir del portugues):
+Desglose parcial de FLEURS (WER %):
 
 | Idioma | parakeet-tdt-0.6b-v3 | parakeet-redux |
 |---|---|---|
-| Bulgaro | 11,90 | 11,23 |
+| Búlgaro | 11,90 | 11,23 |
 | Croata | 10,93 | 9,26 |
 | Checo | 10,85 | 10,25 |
-| Danes | 16,78 | 15,94 |
-| Neerlandes | 6,18 | 7,45 |
-| Ingles | 4,25 | 4,90 |
+| Danés | 16,78 | 15,94 |
+| Neerlandés | 6,18 | 7,45 |
+| Inglés | 4,25 | 4,90 |
 | Estonio | 13,23 | 9,15 |
-| Finés | 11,05 | 10,38 |
-| Frances | 4,81 | 7,71 |
-| Aleman | 4,13 | 5,42 |
-| Griego | 35,71 | 32,48 |
-| Hungaro | 13,65 | 14,15 |
-| Italiano | 2,61 | 3,24 |
-| Leton | 21,38 | 12,80 |
-| Lituano | 21,09 | 17,27 |
-| Maltes | 19,13 | 13,65 |
-| Polaco | 6,70 | 8,59 |
-| Portugues | 4,65 | 4,99 |
-| Media de 25 idiomas | 11,62 | 10,56 |
 
-El dato de WER en espanol no aparece en el fragmento de informacion disponible. La evaluacion se realizo con el pipeline del Open ASR Leaderboard en su version de septiembre de 2026 (sus normalizadores y su alineacion con fusion de compuestos), con parakeet-redux en Photon sobre GPU NVIDIA y el original en NeMo en bf16.
+El resto de idiomas de FLEURS no está disponible en la información proporcionada.
 
-Velocidad en CPU x86 (AMD EPYC 9575F, 8 nucleos fisicos, DDR5-6000, LibriSpeech test-clean con 2.620 locuciones):
+Rendimiento (factor de tiempo real, mayor es mejor, una utterance a la vez):
 
-| Runtime | Pesos | Tiempo real | WER |
-|---|---|---|---|
-| Photon, este modelo | ternario, 178 MB | 113x | 1,94 |
-| parakeet.cpp (ggml) | q8_0, 0,94 GB | 45x | 1,51 |
-| sherpa-onnx (ONNX Runtime) | int8, 0,67 GB | 42x | 1,97 |
-| onnx-asr (ONNX Runtime) | int8, 0,67 GB | 28x | 1,93 |
+| Runtime | Pesos | x86 CPU (EPYC 9575F, 8 núcleos) | Apple M2 CPU | Apple M2 GPU |
+|---|---|---|---|---|
+| Photon, este modelo | ternario, 178 MB | 113× | 38× | 43× |
+| parakeet.cpp (ggml) | q8_0, 0,94 GB | 45× | 12× | 38× (Metal) |
+| sherpa-onnx (ONNX Runtime) | int8, 0,67 GB | 42× | 28× | — |
+| onnx-asr (ONNX Runtime) | int8, 0,67 GB | 28× | 33× | — |
+| parakeet-mlx | fp32, 2,51 GB | — | — | 37× |
+| parakeet.cpp (ggml) | f16, 1,44 GB | — | 9× | 39× (Metal) |
 
-Velocidad en Apple Silicon (MacBook Air con M2, 4 nucleos de rendimiento y 4 de eficiencia, GPU de 10 nucleos, 16 GB de memoria unificada, macOS 15):
-
-| Runtime | Pesos | CPU | GPU |
-|---|---|---|---|
-| Photon, este modelo | ternario, 178 MB | 38x | 43x |
-| parakeet.cpp (ggml) | q8_0, 0,94 GB | 12x | 38x (Metal) |
-| parakeet.cpp (ggml) | f16, 1,44 GB | 9x | 39x (Metal) |
-| parakeet-mlx | fp32, 2,51 GB | No disponible | 37x |
-| onnx-asr (ONNX Runtime) | int8, 0,67 GB | 33x | No disponible |
-| sherpa-onnx (ONNX Runtime) | int8, 0,67 GB | 28x | No disponible |
+En x86, el WER de Redux en LibriSpeech test-clean con Photon es 1,94 (frente a 1,51 de parakeet.cpp q8_0, 1,97 de sherpa-onnx y 1,93 de onnx-asr).
 
 ## Requisitos de hardware
 
-- Pesos: 178 MB en formato ternario empaquetado. El repositorio completo ocupa 0,6 GB. No se especifica el consumo adicional de memoria del runtime, por lo que la VRAM total necesaria no esta disponible.
-- CPU x86: medido en un AMD EPYC 9575F (Zen 5, hasta 5,0 GHz, AVX-512) usando 8 nucleos fisicos de un solo chiplet con DDR5-6000; 113x tiempo real. Requiere AVX-512 VNNI para el camino rapido de Photon.
-- CPU ARM y Apple Silicon: medido en un Apple M2 con 16 GB de memoria unificada; 38x en CPU (NEON) y 43x en GPU (Metal).
-- GPU: las pruebas comparativas se ejecutaron en una GPU NVIDIA no identificada en la informacion (parakeet-redux en Photon) y en la GPU integrada del M2. No hay mediciones publicadas para A100, H100, RTX 4090 ni otras GPU concretas. Por el tamano de los pesos (178 MB) es previsible que quepa en cualquier GPU de consumo actual, pero se trata de una inferencia, no de un dato medido.
-- Despliegue: la via documentada es Photon, incluido en el paquete `moondream` (version 2.4.0 o posterior), con seleccion de dispositivo "cpu", "mps" o "cuda" (si se omite, prioriza CUDA, luego Apple Silicon y por ultimo CPU). No hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni whisper.cpp con estos pesos; las alternativas comparadas en la tabla de velocidad ejecutan el modelo original, no la version ternaria.
-- Latencia y throughput: expresados como factor de tiempo real, una locucion a la vez. 113x equivale a 1 hora de audio en unos 32 segundos de reloj en 8 nucleos x86; 43x en la GPU del M2 equivale a unos 84 segundos por hora de audio. No se publican cifras de procesamiento por lotes ni de latencia por segmento.
+- Inferencia en CPU: 178 MB de pesos; el modelo completo cabe holgadamente en la memoria de cualquier equipo actual.
+- GPU: no es necesaria; Photon admite `cuda`, `mps` y `cpu`, con selección automática (CUDA, luego Apple Silicon, luego CPU).
+- Cabe en cualquier GPU de consumo: con 178 MB, incluso una RTX 4090 o una GPU integrada lo ejecutan sin problemas de memoria.
+- Aceleración: AVX-512 VNNI en x86, NEON en ARM y Metal en GPUs Apple.
+- Despliegue: runtime Photon incluida en el paquete `moondream` de Python (versión 2.4.0 o posterior). No se documentan integraciones con vLLM, llama.cpp, TGI u Ollama; las alternativas medidas (parakeet.cpp, sherpa-onnx, onnx-asr, parakeet-mlx) ejecutan el modelo original, no esta variante ternaria.
+- Throughput medido: 113× tiempo real en 8 núcleos EPYC 9575F, 38× en CPU de M2 y 43× en GPU de M2 (una utterance a la vez).
 
 ## Comparativa con modelos similares
 
-La comparacion disponible es con el modelo original y con las formas de ejecucion alternativas del propio Parakeet, todas medidas en LibriSpeech test-clean (2.620 locuciones) salvo donde se indique:
-
-| Modelo o runtime | Parametros | Pesos | WER | Tiempo real (x86) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Pesos | Idiomas | WER medio Open ASR (inglés) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| parakeet-redux (ternario, Photon) | 148,9 M declarados en safetensors; base de 0,6b | 178 MB | 1,94 | 113x | CC-BY-4.0 | Photon (paquete moondream >= 2.4.0) |
-| parakeet-tdt-0.6b-v3 (bf16, NeMo) | 0,6b | 1,2 GB | 1,52 | No disponible | No disponible | Hugging Face, nvidia/parakeet-tdt-0.6b-v3 |
-| parakeet.cpp (ggml q8_0) | 0,6b | 0,94 GB | 1,51 | 45x | No disponible | Runtime de terceros sobre el modelo original |
-| sherpa-onnx (int8) | 0,6b | 0,67 GB | 1,97 | 42x | No disponible | ONNX Runtime sobre el modelo original |
-| onnx-asr (int8) | 0,6b | 0,67 GB | 1,93 | 28x | No disponible | ONNX Runtime sobre el modelo original |
-| parakeet-mlx (fp32, Apple) | 0,6b | 2,51 GB | No disponible | No aplica (solo GPU Apple) | No disponible | Exclusivo de Apple Silicon |
+| parakeet-redux | 148,9 M | 178 MB (ternario) | 25 | 6,55 | CC-BY-4.0 | Hugging Face, runtime Photon |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B (según nombre) | 1,2 GB | 25 | 6,26 | no disponible en la información | Hugging Face, NeMo |
+| moondream/parakeet-ultra | misma arquitectura, precisión completa | no disponible | no disponible | mejor que el original en todos los benchmarks según la model card | no disponible en la información | Hugging Face, orientado a GPU |
 
-Frente a las alternativas cuantizadas a 8 bits (0,67-0,94 GB), parakeet-redux ocupa entre 3,8 y 5,3 veces menos espacio y es entre 2,5 y 4 veces mas rapido, con un WER en LibriSpeech test-clean (1,94) practicamente identico al de sherpa-onnx (1,97) y onnx-asr (1,93) y ligeramente peor que parakeet.cpp en q8_0 (1,51). No se dispone de datos para comparar con modelos ASR de otras familias (por ejemplo Whisper) en esta informacion.
+No se dispone de datos de otros modelos ASR comparables (Whisper, Canary, etc.) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Degradacion clara con ruido de fondo: en las nueve condiciones MUSAN el WER sube de 6,72 (modelo original) a 9,04, un empeoramiento de 2,32 puntos. Es la debilidad mas acusada del modelo.
-- Peor rendimiento en habla de negocio: 6,96 frente a 6,15 del original en la evaluacion estilo AA-WER.
-- Perdida en ingles limpio: 1,52 a 1,96 en LibriSpeech test-clean y 3,13 a 4,34 en test-other. En la media de los siete conjuntos ingleses cede 0,29 puntos.
-- Regresion notable en algunos idiomas de FLEURS: frances de 4,81 a 7,71, aleman de 4,13 a 5,42, neerlandes de 6,18 a 7,45, polaco de 6,70 a 8,59 y hungaro de 13,65 a 14,15. El dato de espanol no esta disponible en el fragmento consultado, por lo que no puede confirmarse su comportamiento.
-- Idiomas con WER absoluto alto incluso mejorando: griego 32,48, lituano 17,27, danes 15,94 y hungaro 14,15. No son adecuados para transcripcion de produccion sin revision humana.
-- Ejecucion ligada a Photon: no hay soporte documentado en llama.cpp, Ollama, vLLM, TGI ni otros runtimes, lo que limita la portabilidad y crea dependencia de una implementacion concreta. Ademas, las aceleraciones descritas requieren AVX-512 VNNI en x86, NEON en ARM o Metal en Apple; en CPUs x86 sin AVX-512 el rendimiento no esta documentado.
-- No se detallan los datos de entrenamiento, el metodo de cuantizacion ni los sesgos por idioma, acento, edad o genero. Al ser una adaptacion de un modelo de NVIDIA, conviene revisar tambien las condiciones del modelo base.
-- Licencia CC-BY-4.0: permite uso comercial con atribucion, pero no se especifica en la informacion disponible si existen condiciones adicionales heredadas del modelo base o de los datasets de entrenamiento.
-- Naturaleza del modelo: no genera texto libre, no sigue instrucciones, no hace tool calling y no razona en varios pasos. Cualquier uso conversacional requiere un componente adicional.
-- El recuento de parametros de safetensors (148.923.399) no coincide con la denominacion "0.6b" del modelo base. La informacion disponible no aclara el motivo, por lo que conviene verificarlo antes de dimensionar despliegues.
-- Riesgo de alucinacion en el sentido clasico de ASR: no hay datos publicados sobre tasas de insercion en silencios o musica, ni sobre comportamiento con audio fuera de dominio.
-- Cifras de referencia de la model card medidas por el propio autor; no se han verificado de forma independiente en la informacion disponible.
+- Degradación en ruido: el WER sube de 6,72 a 9,04 en las nueve condiciones MUSAN, un empeoramiento sustancial frente al original.
+- Peor rendimiento en inglés limpio: LibriSpeech test-clean pasa de 1,52 a 1,96 y test-other de 3,13 a 4,34; en habla de negocios empeora de 6,15 a 6,96.
+- Riesgo de alucinación y errores en audio con solapamiento de hablantes, acentos no representados o dominios muy específicos; no se documentan métricas por dominio más allá de las mostradas.
+- Cobertura limitada a 25 idiomas europeos; no se documenta soporte de otros idiomas ni detección automática de lengua.
+- Dependencia de la runtime Photon: los pesos empaquetados se leen directamente con Photon, y no se documenta compatibilidad con otras runtimes para esta variante ternaria.
+- Licencia CC-BY-4.0: permite uso comercial con atribución; conviene revisar las condiciones de atribución en productos derivados y la licencia del modelo base.
+- No se documentan sesgos demográficos ni evaluaciones por acento, género o edad; la model card no incluye sección de uso responsable.
+- El rendimiento medido corresponde a una utterance a la vez; el throughput en batching concurrente no está documentado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/moondream/parakeet-redux
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Hermano en precisión completa: https://huggingface.co/moondream/parakeet-ultra
+- Entrada de blog de lanzamiento: https://moondream.ai/blog/introducing-parakeet-redux-and-ultra
 - Runtime Photon: https://moondream.ai/photon
-- Papers, repositorios y demos adicionales: no disponible; la busqueda web realizada no devolvio resultados relevantes sobre este modelo.
+- Sitio de Moondream: https://moondream.ai/

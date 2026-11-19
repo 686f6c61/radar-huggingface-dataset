@@ -2,116 +2,90 @@
 
 ## Resumen
 
-AliceAI-T5-35B-A0.6B-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo `yandex/AliceAI-T5-35B-A0.6B`, publicadas por el usuario ngquocvinh. Se trata de un modelo de lenguaje encoder-decoder con capas de mezcla de expertos dispersa (MoE), desarrollado originalmente por Yandex, y esta pensado para ejecutarse en el runtime de llama.cpp mediante un grafo que incluye encoder, atencion cruzada y decodificador.
+AliceAI-T5-35B-A0.6B es un modelo de lenguaje encoder-decoder desarrollado por Yandex, con capas de mezcla de expertos (MoE) dispersas. Esta ficha documenta la cuantización GGUF comunitaria publicada por ngquocvinh, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp. El modelo base cuenta con aproximadamente 34,35 mil millones de parámetros únicos, 512 expertos por capa MoE con enrutamiento top-8, estado oculto de 1.536 dimensiones, 16 capas de encoder, 12 capas de decoder, embeddings compartidos entre encoder y decoder, y RoPE con YaRN. La model card upstream declara una ventana de contexto de 128.000 tokens, aunque esta release GGUF no ha sido validada a esa longitud máxima.
 
-El modelo base declara aproximadamente 34,35B de parametros unicos y 34.561.885.184 parametros reales segun los pesos safetensors, con 512 expertos por capa MoE y enrutamiento top-8, estado oculto de 1.536 dimensiones, 16 capas de encoder y 12 de decodificador, embeddings compartidos entre encoder y decodificador, y RoPE con YaRN. La model card del upstream anuncia una ventana de contexto de 128K tokens, si bien esta publicacion GGUF no ha sido validada en esa longitud maxima.
+La relevancia de esta publicación radica en que ofrece cuantizaciones funcionales de una arquitectura poco habitual (encoder-decoder con MoE) en formato GGUF, algo que las herramientas estándar de llama.cpp no soportan de forma nativa. El autor ha validado cada archivo con un test de carga y generación determinista, y documenta explícitamente qué cuantizaciones fallan y por qué. Es un modelo base, no un modelo de instrucciones ni de chat, por lo que requiere prompts con formato específico y un runtime modificado.
 
-Su relevancia practica es doble: por un lado, permite ejecutar un modelo MoE de ~35B en hardware de consumo mediante cuantizaciones de 12,7 GB a 36,8 GB; por otro, es un caso poco habitual de arquitectura encoder-decoder MoE convertida a GGUF, ya que la mayoria de los GGUF publicados corresponden a modelos decoder-only. No se realizo ningun entrenamiento ni ajuste adicional: todos los artefactos derivan directamente del snapshot BF16 del upstream, con licencia Apache 2.0.
+El repositorio ocupa 508,6 GB e incluye desde BF16 de referencia (69,18 GB) hasta Q2_K (12,68 GB), pasando por IQ4_XS (18,51 GB), que el autor señala como candidato compacto validado. Las descargas superan las 11.700 y los likes son 21, lo que indica interés de la comunidad pese a la complejidad de despliegue.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder-decoder transformer con capas de mezcla de expertos dispersa (MoE), atencion cruzada, embeddings compartidos y RoPE con YaRN |
-| Parametros totales | 34.561.885.184 (34,56B) segun pesos safetensors; la model card upstream cita aproximadamente 34,35B de parametros unicos |
-| Parametros activos | No disponible de forma explicita; la nomenclatura del modelo (A0.6B) apunta a unos 0,6B de parametros activos, pero la model card no desglosa el calculo |
-| Longitud de contexto | 128K tokens anunciados en la model card upstream; no validado en esta release GGUF |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, IQ4_XS y Q2_K (esta ultima experimental) |
+| Arquitectura | Transformer encoder-decoder con capas MoE dispersas (512 expertos, top-8) |
+| Parametros totales | 34.561.885.184 (≈34,56B); la model card upstream indica ≈34,35B únicos |
+| Parametros activos | No disponible (top-8 de 512 expertos por capa MoE, sin cifra agregada publicada) |
+| Longitud de contexto | 128.000 tokens declarados upstream; no validado en esta release GGUF |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K, IQ4_XS |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo original upstream se distribuye en safetensors |
-
-Detalle de expertos y dimensiones internas: 512 expertos por capa MoE con top-8 routing, hidden state de 1.536, 16 capas de encoder y 12 de decodificador.
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors/BF16 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder-decoder con MoE dispersa en lugar de un decoder-only. El encoder procesa la entrada completa (con cross-attention hacia el decodificador), y el decodificador genera de forma autorregresiva. Esta estructura implica que cualquier runtime debe ejecutar tres fases: codificacion, atencion cruzada y generacion. La model card de esta publicacion advierte explicitamente de que una invocacion generica de `llama-cli` en modo decoder-only no es suficiente para esta arquitectura.
+El modelo es un transformer encoder-decoder con mezcla de expertos dispersa. Según la model card upstream citada, emplea 512 expertos por capa MoE con enrutamiento top-8, un estado oculto de 1.536 dimensiones, 16 capas de encoder y 12 de decoder, embeddings compartidos entre ambas torres y RoPE con YaRN para extensión de contexto. La arquitectura no es decoder-only, lo que implica que el runtime debe ejecutar el encoder, la atención cruzada y el bucle de generación del decoder.
 
-No hubo entrenamiento ni fine-tuning en esta publicacion: cada archivo se convirtio directamente desde el snapshot BF16 bloqueado del upstream, con la revision `a0d71f58c40d6affe461797b30b35ff47f52a5f2` como entrada fijada. No se uso ningun archivo cuantizado como fuente de otro archivo cuantizado. Para las cuantizaciones se construyo una imatrix combinada a partir de un conjunto de calibracion especifico de AliceAI mas texto de entrenamiento de Wikitext. No se detalla en la informacion disponible la composicion del dataset de entrenamiento original, el numero de tokens vistos ni si hubo fases de RLHF o DPO en el modelo de Yandex.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La release GGUF no realizó entrenamiento ni fine-tuning: cada artefacto se convirtió directamente desde el snapshot BF16 bloqueado del modelo upstream, sin usar una cuantización como fuente de otra. El autor documenta un parche de runtime (`aliceai-runtime.patch`) aplicable a una revisión concreta del fork XHToken/llama.cpp, necesario porque los binarios estándar de llama.cpp no soportan esta arquitectura.
 
 ## Capacidades
 
-- Generacion de texto condicionada por un encoder, con atencion cruzada: el modelo recibe una secuencia de entrada codificada y genera la salida con el decodificador.
-- Razonamiento y respuesta a preguntas factuales sencillas en el protocolo probado por el autor: la prueba de humo con `Q4_K_M` devuelve `Paris` para la pregunta sobre la capital de Francia.
-- Extraccion de caracteristicas: la ficha de Hugging Face incluye la etiqueta `feature-extraction`, coherente con el componente encoder.
-- Soporte multilingue: no disponible (la publicacion no declara lista de idiomas).
-- Tool calling / function calling: no disponible; no se menciona en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; no se menciona en la informacion proporcionada.
-- Modo thinking, vision o audio: no disponible; no se menciona ninguna capacidad multimodal ni de razonamiento extendido.
-- Compatibilidad con endpoints: la publicacion incluye la etiqueta `endpoints_compatible`.
+- Generación de texto condicionada por un encoder, con protocolo específico: token `[_S_]` al inicio, `<SPAN#0>` al final de la entrada del encoder y arranque del decoder con `[decoder_bos, <SPAN#0>]`.
+- Extracción de características (tag `feature-extraction` en Hugging Face), aprovechando la torre encoder.
+- Razonamiento y respuesta a preguntas en formato base, sin alineamiento de instrucciones.
+- Soporte multilingüe: no disponible en la información proporcionada.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible; al ser modelo base, no hay evidencia de capacidades agénticas.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Preguntas y respuestas factuales en CPU: el autor valida la generacion determinista con `llama-simple`, `-ngl 0` y un unico token de salida, de modo que el modelo puede usarse para QA corta sin GPU, aceptando latencias altas.
-- Procesamiento de documentos largos: la ventana anunciada de 128K tokens en el upstream permitiria resumir o extraer informacion de contratos, informes o articulos extensos, aunque la longitud maxima no esta validada en esta release GGUF y habria que medirla antes de llevarla a produccion.
-- Extraccion de representaciones y clasificacion: al tratarse de un modelo encoder-decoder, su encoder puede emplearse para obtener embeddings de texto destinados a busqueda semantica o clustering, aprovechando la etiqueta `feature-extraction`.
-- Traduccion y reformulacion de texto: la estructura seq2seq con cross-attention es adecuada para tareas de transformacion entrada-salida, como traduccion o reescritura de parrafos.
-- Experimentacion en investigacion sobre MoE dispersa: con 512 expertos por capa y top-8, el modelo permite estudiar comportamiento de enrutamiento, coste de activacion y degradacion por cuantizacion en un modelo de ~35B con pocos parametros activos.
-- Despliegue en hardware limitado: las cuantizaciones de 12,7 GB (Q2_K) a 18,5 GB (IQ4_XS) permiten probar el modelo en equipos con 16-24 GB de memoria, aunque Q2_K no debe usarse cuando la correccion factual importa.
-- Generacion de codigo: no disponible; no hay evidencia en la informacion proporcionada de un rendimiento especifico en tareas de codigo.
-- Atencion al cliente multi-turno: no disponible; no se documenta el comportamiento conversacional ni la gestion de historial largo en esta release.
+- Investigación sobre arquitecturas encoder-decoder con MoE: el modelo permite estudiar el comportamiento de 512 expertos con top-8 en tareas seq2seq, usando la cuantización Q8_0 (36,80 GB) para máxima fidelidad o IQ4_XS (18,51 GB) para experimentación en una sola GPU.
+- Respuesta a preguntas extractiva y generativa: con el protocolo `[_S_]Question: ... Answer:<SPAN#0>` documentado, se puede desplegar un endpoint compatible con OpenAI sobre el runtime parcheado para tareas de QA sobre documentos, aprovechando el encoder para codificar contexto largo.
+- Extracción de embeddings para búsqueda semántica: la torre encoder puede usarse como extractor de características en pipelines de recuperación, aunque requiere validar la calidad de los embeddings con el runtime modificado.
+- Evaluación comparativa de cuantizaciones: el repositorio publica ocho niveles con tamaños exactos en bytes y resultados de smoke test, lo que permite medir la degradación de calidad entre Q8_0 y Q3_K_M en tareas concretas antes de elegir un tier para producción.
+- Reproducción de experimentos: el parche de runtime y el commit fijado de XHToken/llama.cpp permiten reconstruir el entorno exacto usado por el autor, útil para verificar resultados de investigación de forma reproducible.
+- Prototipado en hardware de consumo: IQ4_XS (18,51 GB) o Q3_K_M (16,58 GB) permiten cargar el modelo en GPUs de 24 GB con offload parcial, sirviendo para pruebas de concepto de generación encoder-decoder sin acceso a clústeres.
+- Fine-tuning posterior sobre el modelo base: al ser un modelo base Apache 2.0, puede servir como punto de partida para adaptaciones supervisadas en tareas seq2seq específicas, aunque el ecosistema de herramientas para esta arquitectura es limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor de las cuantizaciones indica explicitamente que no se incluye todavia una tabla de fidelidad BF16 en hold-out, y que las metricas de KLD medio, acuerdo Top-1, delta de perplejidad y delta RMS de probabilidad se anadiran solo cuando un evaluador fijo de encoder-decoder mida cada archivo publicado contra la misma referencia BF16.
-
-Lo unico registrado son pruebas de humo funcionales, que no son benchmarks de tarea:
-
-| Prueba | Resultado declarado |
-|---|---|
-| Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, IQ4_XS | Superan la carga encoder-decoder y la generacion determinista de humo |
-| Q2_K | Carga y genera, pero el resultado factual de la prueba no fue semanticamente correcto |
-| IQ2_XS | No publicado: no produjo ningun token decodificado |
-| IQ3_M | No publicado: solo genero salida en blanco o tokens de control |
-| IQ1_M | No publicado: entro en bucle repetitivo con `<SPAN#511>Post` |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del GGUF solo reporta smoke tests funcionales (carga y generación determinista), no puntuaciones en MMLU, HumanEval, GSM8K ni otras tareas. El autor indica que Q8_0 hasta Q3_K_M e IQ4_XS pasaron el test de carga y generación; Q2_K carga y genera pero su resultado factual no fue semánticamente correcto. IQ2_XS, IQ3_M e IQ1_M fueron descartados por fallos funcionales (sin token decodificado, salida en blanco o bucle repetitivo).
 
 ## Requisitos de hardware
 
-Los valores de VRAM siguientes son estimaciones derivadas del tamano de cada archivo mas el margen de cache KV y overhead del runtime, no datos publicados por el autor:
-
-| Cuantizacion | Tamano del archivo | VRAM estimada para inferencia |
-|---|---:|---|
-| BF16 | 69,18 GB | ~72 GB o mas; requiere varias GPU (por ejemplo 2x A100 40 GB) o una H100 80 GB |
-| Q8_0 | 36,80 GB | ~40-44 GB |
-| Q6_K | 28,43 GB | ~32-36 GB |
-| Q5_K_M | 24,62 GB | ~28-32 GB |
-| Q4_K_M | 21,04 GB | ~24-28 GB |
-| IQ4_XS | 18,51 GB | ~22-24 GB |
-| Q3_K_M | 16,58 GB | ~20-22 GB |
-| Q2_K | 12,68 GB | ~16 GB (experimental, calidad factual comprometida) |
-
-- GPU profesionales: A100 40 GB y 80 GB, H100 80 GB, L40S 48 GB y similares cubren desde IQ4_XS hasta Q6_K con contexto moderado.
-- GPU de consumo: una RTX 4090 de 24 GB puede alojar IQ4_XS o Q3_K_M con holgura, y Q4_K_M de forma muy ajustada y sin apenas margen para cache KV extensa. Una RTX 3090 de 24 GB queda en la misma situacion.
-- Ejecucion en CPU: confirmada por el autor para Q4_K_M con `-ngl 0`, que obtiene la respuesta correcta en la prueba de humo de un token. El rendimiento de tokens por segundo en CPU no se publica.
-- Opciones de despliegue: llama.cpp, y en concreto una compilacion con soporte AliceAI que incluya el arnes de prueba encoder-decoder `llama-simple`. No hay confirmacion en la informacion disponible de soporte en vLLM, Ollama, TGI o SGLang.
-- Protocolo de invocacion obligatorio: anteponer el token de modo `[_S_]` del upstream, anadir `<SPAN#0>` a la entrada del encoder y sembrar el decodificador con `[decoder_bos, <SPAN#0>]`. Ejemplo probado: `./build/bin/llama-simple -m ./AliceAI-T5-35B-A0.6B-Q4_K_M.gguf -ngl 0 -n 1 '[_S_]Question: What is the capital of France? Answer:<SPAN#0>'`.
-- Latencia y throughput: no disponible; no se publican mediciones de velocidad.
+- VRAM estimada según cuantización: BF16 69,18 GB; Q8_0 36,80 GB; Q6_K 28,43 GB; Q5_K_M 24,62 GB; Q4_K_M 21,04 GB; IQ4_XS 18,51 GB; Q3_K_M 16,58 GB; Q2_K 12,68 GB. La memoria en runtime depende además del contexto, el tamaño de batch, el backend y las opciones de offload.
+- GPU recomendadas: A100 80 GB o H100 para BF16 y Q8_0; A100 40 GB o dos RTX 4090 para Q5_K_M y superiores con offload; RTX 4090 (24 GB) para Q4_K_M e IQ4_XS con offload parcial de capas.
+- Cabe en GPU de consumo: IQ4_XS y Q3_K_M en GPUs de 24 GB con offload parcial; Q2_K en GPUs de 16 GB, aunque el autor lo desaconseja por calidad.
+- Opciones de despliegue: exclusivamente llama.cpp con el parche de runtime AliceAI (`aliceai-runtime.patch`) sobre el fork XHToken/llama.cpp en el commit `4a3635c32fc9f044c2bde9ebeabf50c7e1ec5991`. El autor advierte que llama-cli estándar, Ollama, vLLM y LM Studio no han sido validados para esta arquitectura. Se puede compilar con `-DGGML_CUDA=ON` para GPU o `-DGGML_CUDA=OFF` para CPU.
+- Latencia y throughput: no disponibles. El smoke test documentado se ejecutó en CPU con `-ngl 0 -n 1`, sin métricas de rendimiento publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye resultados de benchmarks ni datos de modelos alternativos que permitan una comparacion verificable. Como referencia estructural, cabe senalar que la mayoria de los modelos MoE abiertos populares son decoder-only, mientras que este es encoder-decoder con atencion cruzada, lo que reduce el conjunto de alternativas directamente comparables en formato GGUF y obliga a usar runtimes especificos.
+| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| AliceAI-T5-35B-A0.6B (esta ficha, GGUF) | ≈34,56B totales | 128K declarados, no validados en GGUF | Encoder-decoder MoE, 512 expertos top-8 | Apache 2.0 | GGUF comunitario con runtime parcheado |
+| T5-11B (Google) | 11B | 512 tokens | Encoder-decoder denso | Apache 2.0 | Safetensors, ecosistema amplio |
+| FLAN-T5-XXL | 11B | 512 tokens | Encoder-decoder denso | Apache 2.0 | Safetensors, instrucciones |
+| Mixtral 8x7B | 46,7B totales, 12,9B activos | 32K | Decoder-only MoE, 8 expertos top-2 | Apache 2.0 | GGUF, vLLM, amplio soporte |
+
+La comparación con T5 y FLAN-T5 es la más directa por arquitectura encoder-decoder, aunque AliceAI-T5 es mucho mayor y usa MoE. Frente a Mixtral, la diferencia clave es que AliceAI-T5 no es decoder-only y carece de soporte en herramientas estándar. No se dispone de datos de rendimiento comparativo para establecer diferencias de calidad.
 
 ## Limitaciones y advertencias
 
-- No es un modelo decoder-only: requiere un runtime que ejecute encoder, cross-attention y decodificador. Usar `llama-cli` generico produce resultados incorrectos.
-- La ventana de 128K tokens es una afirmacion del upstream que esta release GGUF no ha validado; hay que medir el comportamiento real en contextos largos antes de usarla en produccion.
-- Q2_K carga y genera, pero su resultado factual de humo no fue semanticamente correcto: debe tratarse como experimento de bajo consumo de memoria, nunca como recomendacion de calidad.
-- IQ2_XS, IQ3_M e IQ1_M no se publicaron porque no superaron la puerta funcional (sin tokens, salida en blanco o bucle repetitivo).
-- No existe tabla de fidelidad frente a BF16 (KLD, acuerdo Top-1, delta de perplejidad): se desconoce la degradacion real de cada nivel de cuantizacion.
-- Las pruebas de humo declaradas no son benchmarks de tarea y no permiten inferir rendimiento en razonamiento, codigo o matematicas.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero es esperable en un modelo de ~35B usado con cuantizaciones agresivas y sin evaluacion publicada.
-- Sesgos conocidos: no disponible; no se documenta ninguna evaluacion de sesgo ni de seguridad.
-- Idiomas soportados: no disponible; la publicacion no declara cobertura multilingue, pese a que el autor original sea Yandex.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero exige conservar avisos de licencia y atribucion. Estas cuantizaciones son una publicacion de la comunidad y no constituyen una release oficial de Yandex ni cuentan con su aval.
-- El repositorio ocupa 508,6 GB en total por acumular todos los niveles de cuantizacion; conviene descargar unicamente el archivo necesario.
-- La verificacion de integridad debe hacerse con `SHA256SUMS.txt`; los registros crudos de conversion, imatrix, cuantizacion y pruebas de humo no forman parte del paquete publico.
+- Es un modelo base, no un modelo de instrucciones ni de chat: no sigue instrucciones de forma fiable sin formato específico y sin fine-tuning.
+- Requiere un runtime parcheado no estándar; llama-cli, Ollama, vLLM y LM Studio no están validados. Esto limita el despliegue en producción y el soporte de la comunidad.
+- La ventana de 128K tokens no ha sido validada en esta release GGUF; el comportamiento a contextos largos es desconocido.
+- Idiomas soportados no documentados; el rendimiento fuera del ruso o inglés (idiomas habituales de modelos Yandex) es incierto.
+- Riesgo de alucinación inherente a modelos base sin alineamiento; no hay evaluaciones de factualidad publicadas.
+- La cuantización Q2_K genera salidas factualmente incorrectas según el propio autor; IQ2_XS, IQ3_M e IQ1_M fallaron el smoke test y no se publicaron.
+- El repositorio ocupa 508,6 GB, lo que exige espacio de almacenamiento considerable incluso si solo se descargan algunos tiers.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de benchmarks y de validación en producción traslada todo el riesgo de calidad al integrador.
+- Sesgos conocidos: no disponibles en la información proporcionada.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/ngquocvinh/AliceAI-T5-35B-A0.6B-GGUF
 - Modelo base upstream: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
-- Manifiesto de reproducibilidad: `reproducibility/manifest.md` dentro del repositorio
-- Sumas de verificacion: `SHA256SUMS.txt` dentro del repositorio
-- Licencia: `LICENSE` dentro del repositorio
-- Pagina de donaciones del autor de las cuantizaciones: https://ko-fi.com/ngquocvinh
-- Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo: el contenido devuelto corresponde a paginas de Google Play y no guarda relacion con esta ficha. No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.
+- Fork de llama.cpp usado: https://github.com/XHToken/llama.cpp
+- Parche de runtime: https://huggingface.co/ngquocvinh/AliceAI-T5-35B-A0.6B-GGUF/blob/main/reproducibility/aliceai-runtime.patch
+- Apoyo al autor: https://ko-fi.com/ngquocvinh

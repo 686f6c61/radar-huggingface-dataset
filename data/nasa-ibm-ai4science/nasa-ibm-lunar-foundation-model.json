@@ -55,17 +55,12 @@
     {
       "title": "NASA",
       "url": "https://www.nasa.gov/",
-      "snippet": "2 days ago · NASA.gov brings you the latest news, images and videos from America's space agency, pioneering the future in space …"
+      "snippet": "NASA.gov brings you the latest news, images and videos from America's space agency, pioneering the future in space exploration, …"
     },
     {
-      "title": "NASA Live - NASA",
-      "url": "https://www.nasa.gov/live/",
-      "snippet": "1 day ago · NASA live: Follow live television broadcasts on NASA+, the agency's streaming service, and NASA's social media …"
-    },
-    {
-      "title": "National Aeronautics and Space Administration — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/National_Aeronautics_and_Space_Administration",
-      "snippet": "La première date est celle du lancement du lancement (du premier lancement s'il y a plusieurs exemplaires). Lorsqu'elle existe la …"
+      "title": "NASA",
+      "url": "https://www.nasa.gov/?m=0",
+      "snippet": "Nov 4, 2026 · NASA Scientists Show How Gravitational Waves Can Reveal New Worlds article3 days ago 6 min read NASA’s …"
     },
     {
       "title": "NASA - Wikipedia",
@@ -75,7 +70,12 @@
     {
       "title": "NASA Science",
       "url": "https://science.nasa.gov/",
-      "snippet": "2 days ago · Claim your pixel on one of the first images from NASA’s Nancy Grace Roman Space Telescope! When Roman captures …"
+      "snippet": "3 days ago · Use Eyes on the Solar System, NASA’s 3D interactive visualization tool, to see where Voyager 1 is at this moment. Or, …"
+    },
+    {
+      "title": "Eyes on the Earth - NASA/JPL",
+      "url": "https://eyes.nasa.gov/apps/earth/",
+      "snippet": "4 days ago · Welcome to NASA's Eyes, a way for you to learn about your home planet, our solar system, the universe beyond and …"
     }
   ]
 }

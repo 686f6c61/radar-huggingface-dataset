@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ValA3.2-GGUF",
+  "slug": "mradermacher-vala3-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ValA3.2-GGUF",
+  "created_at": "2025-03-09T22:03:05.000Z",
+  "updated_at": "2026-11-18T21:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Egrigor/ValA3.2",
+    "base_model:quantized:Egrigor/ValA3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729507072,
+  "storage_human": "3.7 GB",
+  "context_length": 8192,
+  "base_model": "Egrigor/ValA3.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

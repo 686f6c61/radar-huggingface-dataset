@@ -2,94 +2,96 @@
 
 ## Resumen
 
-Arete-27B-Uncensored-NVFP4-FP8 es una variante cuantizada y "abliterated" (sin mecanismos de rechazo) del modelo NousResearch/Arete-27B, que a su vez es un ajuste fino supervisado (SFT) de parámetros completos de Qwen3.8-27B orientado a alineamiento de valores. El autor, SargeDev, aplica una ablación de la dirección de rechazo sobre 15 capas del transformer y publica el resultado en formato NVFP4 W4A4 con down_proj en FP8 dinámico, empaquetado con compressed-tensors.
+Arete-27B-Uncensored-NVFP4-FP8 es una cuantización en formato NVFP4 W4A4 con down_proj en FP8_DYNAMIC del modelo Arete-27B-Uncensored, una variante "abliterated" (sin mecanismos de rechazo) del modelo NousResearch/Arete-27B. El autor, SargeDev, aplicó la herramienta OBLITERATUS con método agresivo sobre el SFT de valores de Nous Research, que a su vez parte de la arquitectura Qwen3.8-27B. El resultado es un modelo de 21.171.101.568 parámetros reales (etiquetado comercialmente como 27B) empaquetado en compressed-tensors y servible directamente en vLLM.
 
-El modelo resuelve un nicho concreto: permitir inferencia de un modelo de 27B (21.171.101.568 parámetros reales según safetensors) en GPUs con memoria limitada mediante cuantización de 4 bits en pesos y activaciones, manteniendo la cabeza de decodificación especulativa (MTP/nextn) del Qwen3.8 original. La relevancia actual radica en que combina tres tendencias: cuantización NVFP4 para hardware Blackwell, eliminación de rechazos vía OBLITERATUS y preservación de decodificación especulativa tras la edición de pesos.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de cuantización de precisión mixta (NVFP4 + FP8) que, según las mediciones del autor, mantiene la capacidad general del modelo en bf16 dentro del ruido estadístico: 79,8 % frente a 79,0 % en un subconjunto generativo de MMLU de 400 preguntas. Por otro, ilustra el ecosistema de variantes "uncensored" derivadas de modelos alineados, con las implicaciones técnicas y legales que ello conlleva.
 
-La ficha se basa exclusivamente en la model card y los metadatos de Hugging Face; no se dispone de información sobre composición del dataset de entrenamiento, benchmarks estandarizados ni evaluación independiente. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria publicada.
+El modelo conserva los tensores del drafter MTP/nextn de la arquitectura original, por lo que la decodificación especulativa sigue operativa. El repositorio ocupa 29,3 GB y se distribuye bajo licencia Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3.8), con cabeza MTP/nextn para decodificación especulativa |
-| Parámetros totales | 21.171.101.568 (según safetensors) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer denso (familia Qwen3.8-27B), con cabecera MTP/nextn para decodificación especulativa |
+| Parametros totales | 21.171.101.568 (según safetensors) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | NVFP4 W4A4 + FP8_DYNAMIC en down_proj (compressed-tensors); 8-bit |
+| Tipos de cuantizacion | NVFP4 W4A4 con down_proj en FP8_DYNAMIC (compressed-tensors); el autor referencia también GGUF Q8_0 y EXL3 4.0bpw en la comparativa de formatos |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compressed-tensors) |
+| Formato de pesos | safetensors (compressed-tensors, 8-bit) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de la familia Qwen3.8, en su variante de 27B, sobre el que NousResearch realizó un SFT de parámetros completos (full-parameter SFT) orientado a alineamiento de valores, dando lugar a Arete-27B. SargeDev aplica después una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS con el método `aggressive`, en precisión bf16, usando un conjunto de contraste de 842 prompts de daño/inocuidad. La edición afecta a 15 capas consideradas "fuertes" (las 59-63 son las más intensas según la model card).
+La base es NousResearch/Arete-27B, descrito por el autor como un SFT de ajuste completo (full-parameter) orientado a valores sobre Qwen3.8-27B. Sobre ese modelo, SargeDev aplicó OBLITERATUS con `--method aggressive` en bf16, usando un conjunto de contraste de 842 prompts de daño/inocuidad para calcular y ablacionar la dirección de rechazo en 15 capas consideradas fuertes (las capas 59-63 son las de mayor peso en la edición). Se trata, por tanto, de una abliteración por resta de dirección, no de un reentrenamiento.
 
-Tras la ablación se midieron compuertas de calidad: coherencia 1.0, divergencia KL de 0.90 frente al modelo base, y perplejidad que sube de 3.22 a 3.93 (incremento calificado de modesto por el autor). La suite de capacidades se reporta intacta. Los tensores del drafter MTP/nextn se preservan con la cabeza estándar de Qwen3.8, de modo que la decodificación especulativa sigue funcionando. La cuantización final es NVFP4 W4A4 con down_proj en FP8 dinámico, empaquetada con compressed-tensors. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset original de Arete ni si hubo etapas de RLHF o DPO.
+Las puertas de calidad declaradas tras la edición son: coherencia 1.0, divergencia KL de 0,90 frente al base, y perplejidad que sube de 3,22 a 3,93 (incremento moderado). La suite de capacidades se mantiene intacta según el autor. Los tensores del drafter MTP/nextn se preservan con la cabecera estándar de Qwen3.8, de modo que la decodificación especulativa funciona. La cuantización posterior combina NVFP4 (4 bits en pesos y activaciones) con FP8 dinámico en la proyección descendente, empaquetada con compressed-tensors para su servicio en vLLM. No se detalla la composición del dataset de entrenamiento original ni el volumen de tokens.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredadas del backbone Qwen3.8-27B.
-- Cumplimiento de peticiones sin rechazo: la model card reporta 15/15 en una batería de 15 prompts duros (desarrollo de exploits, red-team, malware, DoS) en bf16.
-- Decodificación especulativa funcional gracias a la preservación de los tensores MTP/nextn.
-- Capacidades multilingües: no documentadas en la información disponible.
-- Tool calling / function calling: no documentado explícitamente.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente.
-- Capacidades de visión o audio: no disponibles en esta variante (existe una variante VL separada del mismo autor, JEV-27B-VL-Uncensored-NVFP4, que no es este modelo).
+- Generación de texto y razonamiento general, con capacidad medida en MMLU (subconjunto generativo de 8 materias, 400 preguntas, 5-shot, greedy).
+- Respuesta sin rechazos ante prompts de seguridad: la batería de cumplimiento de 15 prompts duros (desarrollo de exploits, red-team, malware, DoS) arroja 15/15 entregados en bf16.
+- Decodificación especulativa mediante los tensores MTP/nextn conservados.
+- Servicio compatible con vLLM en formato compressed-tensors.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling, function calling y agentes multi-paso: no disponible en la información proporcionada.
+- Visión, audio o modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Red teaming y auditoría de seguridad: el modelo entrega respuestas completas ante prompts de explotación, malware o DoS, lo que permite a equipos de seguridad generar casos de prueba adversarios y evaluar defensas sin bloqueos del propio modelo.
-- Investigación sobre alineamiento y rechazo: al ser una ablación documentada con métricas de KL y perplejidad frente al base, sirve para estudiar el efecto de eliminar la dirección de rechazo sobre coherencia y capacidades.
-- Generación de contenido sin filtros en entornos controlados: escritura creativa o escenarios de ficción que el modelo base rechazaría, con la advertencia de que la licencia Apache 2.0 no exime de responsabilidad legal sobre el uso.
-- Inferencia en GPUs de gama alta con memoria limitada: la cuantización NVFP4 W4A4 reduce el peso a 29,3 GB de repositorio, permitiendo desplegar un 27B en hardware Blackwell de 24-48 GB según configuración.
-- Evaluación comparativa de cuantizaciones: el autor referencia variantes GGUF/EXL3/NVFP4 de la comunidad que puntúan 14-15/15 en la batería de cumplimiento, lo que permite estudiar la degradación inducida por cuantización en modelos abliterated.
-- Experimentación con decodificación especulativa: al conservar la cabeza MTP/nextn, es útil para medir el impacto de la cuantización NVFP4 en el acceptance rate del drafter.
+- Investigación en seguridad de IA y red-teaming: el modelo permite estudiar el comportamiento de un sistema sin mecanismos de rechazo sobre prompts de malware, DoS o explotación, lo que facilita construir evaluaciones de robustez y calibración de clasificadores de seguridad frente a un generador deliberadamente permisivo.
+- Análisis de sesgos y de direcciones de rechazo: al ser una abliteración documentada con métricas de KL y perplejidad, sirve como caso de estudio reproducible para medir cuánto cuesta en calidad la eliminación de la dirección de rechazo (~2 puntos de MMLU según el autor).
+- Despliegue de alto rendimiento en vLLM: el formato NVFP4-FP8 ocupa 28 GB y se sirve directamente en vLLM con decodificación especulativa activa, adecuado para entornos donde se quiere maximizar throughput por GPU manteniendo la fidelidad del bf16 (79,8 % frente a 79,0 % en MMLU).
+- Generación de contenido creativo sin filtros editoriales: escritura de ficción, guiones o material narrativo que aborde temas sensibles sin las interrupciones típicas de los modelos alineados, con la salvedad de revisión humana posterior.
+- Evaluación comparativa de formatos de cuantización: el repositorio publica una tabla cruzada bf16 / NVFP4-FP8 / GGUF Q8_0 / EXL3 4.0bpw sobre el mismo subconjunto de MMLU, lo que lo convierte en un banco de pruebas útil para pipelines de cuantización.
+- Base para ajuste fino posterior: al estar bajo Apache 2.0 y en safetensors, puede emplearse como punto de partida para SFT o DPO en dominios donde se requiera un modelo sin rechazos y con licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo aporta métricas internas de la edición:
+Datos publicados por el autor en la model card. MMLU sobre subconjunto generativo de 8 materias, 400 preguntas, 5-shot, greedy, evaluado con lm-eval vía chat-completions salvo donde se indica.
 
-| Métrica | Valor reportado |
-|---|---|
-| Coherencia (gate interno) | 1.0 |
-| Divergencia KL vs. base | 0.90 |
-| Perplejidad antes / después | 3.22 → 3.93 |
-| Batería de cumplimiento (bf16) | 15/15 |
-| Batería de cumplimiento (quants comunidad GGUF/EXL3/NVFP4) | 14-15/15 |
+| Formato | MMLU | Arnés |
+|---|---|---|
+| bf16 | 79,0 % | lm-eval chat-completions |
+| NVFP4-FP8 (este repo) | 79,8 % | lm-eval chat-completions |
+| GGUF Q8_0 | 79,0 % | lm-eval chat-completions vía llama-server |
+| EXL3 4.0bpw | 72,5 % | motor exllamav3 (arnés propio) |
+| Arete-27B original (referencia) | 81,25 % | lm-eval chat-completions |
+
+El autor señala que la diferencia entre NVFP4-FP8 y bf16 es estadísticamente indistinguible (n=400, error estándar ~2 %), que la abliteración cuesta unos 2 puntos frente al base sin editar, y que la caída de EXL3 (6,5 puntos) está parcialmente contaminada por el cambio de arnés, por lo que debe tomarse como cota superior del coste de esa cuantización. No se han publicado resultados de otros benchmarks (HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 29,3 GB; con overhead de activaciones y caché KV, se recomienda al menos 32-40 GB para contexto moderado.
-- GPU recomendadas: hardware con soporte nativo de NVFP4 (familia Blackwell, p. ej. B200, RTX 5090) para aprovechar la cuantización; en GPUs Hopper o Ada la ruta NVFP4 puede requerir emulación o no estar soportada por el runtime.
-- Cabe en GPU de consumo: previsiblemente en RTX 5090 (32 GB) si el runtime soporta NVFP4; en RTX 4090 (24 GB) el margen es insuficiente para el peso completo más caché KV.
-- Opciones de despliegue: compressed-tensors es compatible con vLLM y TGI en versiones recientes; llama.cpp/Ollama no soportan NVFP4 de forma nativa, por lo que requerirían una variante GGUF (no incluida en este repo).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: 28 GB en el formato NVFP4-FP8 según el autor, servible en vLLM.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, el formato NVFP4-FP8 encaja en GPUs profesionales de 40-80 GB (A100 40/80 GB, H100) y en configuraciones multi-GPU consumer.
+- GPU consumer: el formato de 28 GB no cabe en GPUs de 24 GB (RTX 4090, 3090) sin offloading o sin recurrir a otras cuantizaciones del mismo modelo (el autor referencia GGUF Q8_0 y EXL3 4.0bpw en su comparativa, con requisitos menores en el caso de EXL3).
+- Opciones de despliegue: vLLM con compressed-tensors para el formato NVFP4-FP8; llama.cpp/llama-server para las variantes GGUF; exllamav3 para EXL3.
+- Latencia y throughput: no disponibles. El autor solo menciona que la decodificación especulativa funciona gracias a los tensores MTP/nextn preservados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Notas |
+| Modelo | Parámetros | Contexto | MMLU (subconjunto del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SargeDev/Arete-27B-Uncensored-NVFP4-FP8 | 21,17B | No disponible | NVFP4 W4A4 + FP8 | Apache 2.0 | Objeto de esta ficha |
-| NousResearch/Arete-27B | No disponible | No disponible | bf16 | No disponible | Base alineada sin ablación |
-| SargeDev/JEV-27B-Uncensored-NVFP4 | No disponible | No disponible | NVFP4 + FP8 | No disponible | Abliterado sobre Qwen3.8-27B con bloque de decisión AutoTrust |
-| SargeDev/JEV-27B-VL-Uncensored-NVFP4 | No disponible | No disponible | NVFP4 (texto) + bf16 (visión) | No disponible | Variante multimodal del anterior |
+| Arete-27B-Uncensored-NVFP4-FP8 | 21,17 B | No disponible | 79,8 % | Apache 2.0 | Hugging Face, formato compressed-tensors |
+| NousResearch/Arete-27B (base sin abliterar) | ~21 B (no confirmado) | No disponible | 81,25 % | No disponible en la información | Hugging Face |
+| Arete-27B-Uncensored-V2 | No disponible | No disponible | No disponible | No disponible | Hugging Face (referenciado por el autor) |
+| Arete-27B-Uncensored (bf16) | ~21 B | No disponible | 79,0 % | Apache 2.0 | Hugging Face (referenciado por el autor) |
+
+La comparativa se limita a la propia familia porque la información proporcionada no incluye datos de modelos de terceros con los que contrastar.
 
 ## Limitaciones y advertencias
 
-- La ablación de rechazo elimina salvaguardas: el modelo entregará contenido dañino (exploits, malware, DoS) según la propia model card. No es apto para despliegue orientado al público sin capas de filtrado externas.
-- La perplejidad sube de 3.22 a 3.93 tras la edición, lo que indica una degradación medible en la modelización del lenguaje, aunque el autor la califica de modesta.
-- No hay evaluación independiente ni benchmarks públicos; las métricas de calidad y cumplimiento son autoinformadas por el autor.
-- Sesgos conocidos: no documentados. Al derivar de Qwen3.8 sin etapas de mitigación adicionales tras la ablación, es previsible que herede los sesgos del backbone, pero no hay medición publicada.
-- Riesgo de alucinación: no cuantificado en la información disponible.
-- Idiomas soportados: no documentados; la cobertura multilingüe del backbone Qwen3.8 no se traslada necesariamente con la misma calidad tras la ablación.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativas locales; la licencia no transfiere responsabilidad legal al autor.
-- Compatibilidad de hardware: NVFP4 requiere soporte de runtime y GPU; en hardware anterior a Blackwell el despliegue puede no ser viable sin reconvertir a otro formato.
-- Repositorio sin tracción: 0 descargas y 0 likes, sin validación comunitaria de los resultados reportados.
+- Ausencia deliberada de mecanismos de rechazo: el modelo entrega contenido dañino (malware, exploits, DoS) según la propia batería del autor. No es apto para despliegues orientados al público sin capas de moderación externas.
+- Pérdida de calidad medible: la abliteración cuesta aproximadamente 2 puntos de MMLU frente al base sin editar (81,25 % → 79,0 % en bf16), con subida de perplejidad de 3,22 a 3,93.
+- Riesgo de alucinación: no cuantificado en la información disponible; la edición de direcciones internas puede afectar a la calibración, por lo que se recomienda validación específica antes de uso en producción.
+- Idiomas y contexto: no documentados. No se puede asumir el soporte multilingüe ni la ventana de contexto de la arquitectura original sin verificación.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el cumplimiento normativo del contenido generado; la responsabilidad recae en el desplegador (regulación europea de IA, términos de servicio de plataformas, etc.).
+- Formato específico: el NVFP4-FP8 requiere vLLM con soporte de compressed-tensors; no es portable a otros motores sin reconversión.
+- Trazabilidad de benchmarks: las cifras de MMLU provienen de un subconjunto propio de 400 preguntas y no de la evaluación completa, y la comparación con EXL3 usa un arnés distinto, lo que limita la comparabilidad estricta.
+- Existencia de una V2: el autor recomienda su variante V2 con entrenamiento de decisión Solar integrado, lo que sugiere que esta versión puede quedar obsoleta en cuanto a calidad factual.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SargeDev/Arete-27B-Uncensored-NVFP4-FP8
 - Modelo base: https://huggingface.co/NousResearch/Arete-27B
-- Variante relacionada JEV-27B-Uncensored-NVFP4: https://huggingface.co/SargeDev/JEV-27B-Uncensored-NVFP4
-- Variante relacionada JEV-27B-VL-Uncensored-NVFP4: https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored-NVFP4
+- Variante V2 del autor: https://huggingface.co/SargeDev/Arete-27B-Uncensored-V2

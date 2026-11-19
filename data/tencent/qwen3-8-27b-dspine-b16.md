@@ -2,94 +2,113 @@
 
 ## Resumen
 
-Qwen3.8-27B-DSpine-b16 es un modelo borrador (draft model) publicado por Tencent para acelerar la decodificacion especulativa del modelo objetivo Qwen3.8-27B mediante la tecnica DSpine. No es un modelo de lenguaje autonomo: sus pesos estan pensados para emparejarse con el modelo base Qwen3.8-27B, que aporta el tokenizador, los embeddings de tokens y la cabeza LM, tal como se indica en la model card. El checkpoint contiene 2.025.912.064 parametros en formato safetensors BF16, lo que supone un tamano de repositorio de 4,1 GB, coherente con un borrador ligero destinado a generar propuestas de tokens que el modelo grande verifica despues.
+DSpine for Qwen3.8-27B es un modelo borrador (draft model) de cinco capas desarrollado por Tencent para acelerar la decodificación especulativa de Qwen3.8-27B. No es un modelo generativo autónomo: su función es proponer bloques de tokens candidatos que el modelo objetivo verifica después, reduciendo el coste por token generado en despliegues de inferencia de alto rendimiento. El checkpoint ocupa 4,1 GB en safetensors y contiene 2.025.912.064 parámetros, muy por debajo de los 27.000 millones del modelo base que acompaña.
 
-DSpine es una variante de decodificacion especulativa que, segun la informacion disponible, emplea inyeccion causal adyacente para condicionar la generacion de borradores en paralelo a traves de la profundidad. En este checkpoint, el borrador consta de 5 capas, un block size de 16 tokens y una ventana deslizante de 8.192 tokens, con entrenamiento iniciado el 27 de octubre de 2026 y congelado en el data step 18.210 (optimizer step 18.000). El interes practico esta en reducir la latencia de inferencia del modelo objetivo sin alterar su calidad, manteniendo la compatibilidad con el stack de SGLang que se cita en las etiquetas.
+La innovación principal es el mecanismo DSpine, que genera tokens borrador en paralelo: cada capa propaga características del predecesor predicho a posiciones adyacentes, de modo que las dependencias causales se transportan a través de la profundidad de la red en lugar de depender de una generación estrictamente secuencial. El checkpoint usa un tamaño de bloque de 16 y una ventana deslizante de 8.192 tokens, y está pensado para ejecutarse sobre SGLang 0.5.22 con BF16 y FlashAttention 3.
 
-La relevancia actual es doble: por un lado, Tencent libera el borrador bajo licencia Apache 2.0, lo que permite integrarlo en despliegues comerciales; por otro, la existencia de un checkpoint hermano para Qwen3-8B sugiere una linea de trabajo sistematica para abaratar la decodificacion de la familia Qwen3. El modelo no esta pensado para uso directo en `pipeline("text-generation")` pese a que la etiqueta asi lo declara, sino como componente auxiliar en un servidor de inferencia especulativa.
+Su relevancia es práctica: en las evaluaciones publicadas por el autor, DSpine supera al borrador oficial DFlash2 en longitud media de aceptación en todos los benchmarks reportados, tanto en modo greedy como con muestreo a temperatura 1,0, lo que se traduce en mayor throughput efectivo para el modelo base sin alterar su calidad de salida. La licencia Apache 2.0 facilita su integración en infraestructura de producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer borrador (draft model) para decodificacion especulativa DSpine, con inyeccion causal adyacente; 5 capas, block size 16, ventana deslizante 8.192 tokens |
+| Arquitectura | Draft model DSpine de 5 capas con propagación de características predecesoras entre posiciones adyacentes (decodificación especulativa) |
 | Parametros totales | 2.025.912.064 |
-| Parametros activos | no disponible (no es un MoE) |
-| Longitud de contexto | ventana deslizante de 8.192 tokens en el borrador; el contexto efectivo lo define el modelo objetivo Qwen3.8-27B |
-| Tipos de cuantizacion | no disponible (checkpoint publicado en BF16) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | ventana deslizante de 8.192 tokens |
+| Tipos de cuantizacion | no disponible (evaluado en BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El borrador DSpine es un transformer de 5 capas que opera con un block size de 16, es decir, propone hasta 16 tokens por paso de decodificacion especulativa. La innovacion descrita en el paper asociado, "Draft in Parallel, Condition Through Depth: Adjacent Causal Injection for Speculative Decoding", consiste en generar borradores en paralelo e inyectar condicionamiento causal entre posiciones adyacentes a lo largo de la profundidad, de modo que el borrador aproveche informacion del contexto previo sin serializar la generacion. La ventana deslizante de 8.192 tokens limita el coste de atencion del borrador y lo mantiene barato frente al modelo objetivo.
+El modelo es un borrador de cinco capas diseñado para decodificación especulativa con generación paralela de tokens. En lugar de producir tokens candidatos de forma autoregresiva, DSpine hace que cada capa pase las características predichas del predecesor a las posiciones adyacentes, transportando así las dependencias causales a través de la profundidad de la red. El checkpoint emplea un tamaño de bloque de 16 (frente a los 8 de DFlash2) y una ventana deslizante de 8.192 tokens.
 
-Los detalles de composicion del dataset de entrenamiento no estan disponibles en la informacion proporcionada. Se sabe que el entrenamiento comenzo el 27 de octubre de 2026 y que el checkpoint corresponde al data step 18.210 y al optimizer step 18.000. El tokenizador, los embeddings de tokens y la cabeza LM no forman parte de este repositorio: los aporta Qwen3.8-27B en tiempo de inferencia, lo que explica que el borrador tenga solo unos 2.000 millones de parametros pese a acompanar a un modelo de 27B. Las etiquetas del repositorio citan SGLang como stack de despliegue, y la model card remite a las instrucciones de inferencia de DSpine con `--model-path` apuntando a Qwen3.8-27B y `--speculative-draft-model-path` apuntando a este repositorio.
+La inferencia se realiza con verificación dinámica que referencia DSpark, con ReplaySSM habilitado, sobre SGLang 0.5.22 en BF16 con FlashAttention 3 y concurrencia 8. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esos datos no están disponibles. El modelo base es Qwen/Qwen3.8-27B y el checkpoint está marcado con `inference: false` en la model card, lo que subraya que no debe usarse como generador independiente.
 
 ## Capacidades
 
-- Generacion de tokens borrador para decodificacion especulativa: propone hasta 16 tokens por paso que el modelo objetivo verifica en paralelo.
-- Aceleracion de inferencia del modelo Qwen3.8-27B sin modificar sus pesos ni su calidad de salida, ya que toda propuesta aceptada se valida contra el modelo grande.
-- Integracion con SGLang y con el codigo de inferencia de DSpine publicado por Tencent.
-- Condicionamiento causal adyacente entre posiciones dentro del bloque de borrador, orientado a mejorar la tasa de aceptacion.
-- No dispone de capacidades autonomas de razonamiento, codigo, matematicas, vision, tool calling ni agentes: hereda las del modelo objetivo cuando se usa en conjuncion con el.
-- Capacidades multilingues: no disponibles de forma independiente; dependen del tokenizador y del modelo Qwen3.8-27B.
+- Generación de tokens borrador para decodificación especulativa sobre Qwen3.8-27B: propone bloques de hasta 16 tokens que el modelo objetivo verifica.
+- Aceleración de inferencia en escenarios de razonamiento general: GSM8K, MATH-500, HumanEval, MBPP y MT-Bench.
+- Aceleración de cargas agénticas con tool calling: evaluado en WorkBuddy Code, Web y Office, SWE-bench Pro y τ²-bench, con repetición ordenada de todos los prefijos de llamadas a herramientas.
+- Soporte de razonamiento en modos `low` y `xhigh` del modelo base, con muestreo a temperatura y decodificación greedy.
+- Compatibilidad con prefix caching y ventanas de hasta 32.768 tokens nuevos por petición en los escenarios agénticos evaluados.
+- No soporta de forma autónoma generación de texto, visión, audio ni tool calling: hereda esas capacidades del modelo objetivo, no del borrador.
 
 ## Casos de uso
 
-- Servicio de chat de baja latencia sobre Qwen3.8-27B: desplegar el par objetivo-borrador en SGLang para reducir el tiempo por token en conversaciones multi-turno, aprovechando que el borrador solo consume 4,1 GB adicionales de memoria.
-- Generacion de codigo interactiva: en asistentes de programacion donde la latencia percibida es critica, el borrador acelera la salida del modelo de 27B sin sacrificar exactitud en el codigo generado.
-- Inferencia por lotes con restricciones de SLA: en pipelines de generacion masiva, la decodificacion especulativa aumenta el throughput del modelo objetivo manteniendo la misma distribucion de salida.
-- Despliegue en GPUs con memoria ajustada: al ser un borrador de 2B en BF16, puede acompanar al modelo de 27B en configuraciones donde no cabe un segundo modelo grande, siempre que se respete el presupuesto de VRAM del objetivo.
-- Evaluacion comparativa de tecnicas de decodificacion especulativa: util como referencia reproducible para medir tasas de aceptacion y speedup frente a DFlash y otros borradores, dado que Tencent publica tambien el checkpoint hermano Qwen3-8B-DSpine-b16.
-- Investigacion sobre borradores ligeros: permite estudiar el efecto del block size, de la ventana deslizante y de la inyeccion causal adyacente en la aceptacion de tokens sobre un modelo base conocido.
-- Prototipado de servidores de inferencia: sirve para validar la integracion de DSpine en stacks SGLang antes de comprometer recursos de produccion con el modelo completo.
+- Servicio de inferencia de Qwen3.8-27B con SGLang: integrar el borrador en el pipeline de decodificación especulativa para elevar la longitud media de aceptación de 5,69 a 7,20 en GSM8K en modo greedy, reduciendo el número de pasos de verificación por token emitido.
+- Despliegue de agentes de código en producción: usar DSpine sobre trayectorias de CodeBuddy con repetición de prefijos de tool calls, donde la longitud de aceptación sube de 4,19 a 5,08 en WorkBuddy Code en modo `low`.
+- Automatización de tareas de oficina con agentes: en WorkBuddy Office la aceptación pasa de 4,24 a 5,63 en modo `low`, lo que se traduce en menor latencia por conversación en flujos multi-turno con llamadas a herramientas.
+- Evaluación de agentes web: en WorkBuddy Web la aceptación sube de 3,95 a 4,91 en `low` y de 3,95 a 5,01 en `xhigh`, útil para entornos de navegación automatizada con muchas llamadas encadenadas.
+- Razonamiento matemático en producción: con MATH-500 la aceptación pasa de 5,49 a 6,49 en greedy, adecuado para servicios de resolución de problemas donde el coste por token es crítico.
+- Generación de código asistida: en HumanEval y MBPP la aceptación mejora de 4,87 a 5,71 y de 5,04 a 6,14 respectivamente en greedy, lo que reduce la latencia en asistentes de programación que sirven Qwen3.8-27B.
+- Investigación en decodificación especulativa: el checkpoint sirve como referencia reproducible para comparar estrategias de borrador paralelo frente a DFlash2 bajo las mismas condiciones de SGLang, BF16 y FlashAttention 3.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica referencia de rendimiento encontrada en la busqueda web es cualitativa y corresponde al checkpoint hermano Qwen3-8B-DSpine-b16, descrito como un 23 % mas rapido que DFlash en decodificacion especulativa; no se traslada automaticamente a este checkpoint de 27B y no se presenta como dato de benchmark de este modelo.
+Longitud media de aceptación (tokens aceptados por paso de verificación). DFlash2 usa bloque 8; DSpine, bloque 16.
+
+| Tarea | DFlash2 (T=0) | DSpine (T=0) | DFlash2 (T=1) | DSpine (T=1) |
+|---|---:|---:|---:|---:|
+| GSM8K | 5,69 | **7,20** | 5,45 | **6,31** |
+| MATH-500 | 5,49 | **6,49** | 5,27 | **5,66** |
+| HumanEval | 4,87 | **5,71** | 4,34 | **4,71** |
+| MBPP | 5,04 | **6,14** | 4,79 | **5,41** |
+| MT-Bench | 4,11 | **4,48** | 3,89 | **4,03** |
+
+Longitud media de aceptación en benchmarks agénticos (WorkBuddy Bench y otros).
+
+| Benchmark | DFlash2 (low) | DSpine (low) | DFlash2 (xhigh) | DSpine (xhigh) |
+|---|---:|---:|---:|---:|
+| WorkBuddy Code | 4,19 | **5,08** | 4,06 | **4,92** |
+| WorkBuddy Web | 3,95 | **4,91** | 3,95 | **5,01** |
+| WorkBuddy Office | 4,24 | **5,63** | 4,20 | **5,49** |
+| SWE-bench Pro | 4,19 | **4,99** | 4,00 | **4,77** |
+| τ²-bench | 4,70 | **5,53** | 4,29 | **4,95** |
+
+Los datos de throughput extremo a extremo (tokens/s y speedup frente a decodificación autoregresiva) aparecen truncados en la información disponible, por lo que no se reproducen cifras concretas de esa tabla.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el borrador: aproximadamente 4,1 GB en BF16, correspondientes a los 2.025.912.064 parametros del repositorio.
-- VRAM total del sistema: debe sumarse a la del modelo objetivo Qwen3.8-27B; el borrador no puede ejecutarse solo porque carece de tokenizador, embeddings y cabeza LM.
-- GPUs recomendadas: no disponibles de forma especifica en la informacion proporcionada; el despliegue se realiza junto al modelo de 27B, por lo que la GPU debe poder alojar ambos pesos. GPUs de clase数据中心 como A100 o H100 son el escenario natural para el modelo objetivo; en consumer, una RTX 4090 con 24 GB puede alojar el borrador pero dificilmente el objetivo de 27B en BF16.
-- Cabe en GPU consumer: el borrador por si solo si (4,1 GB), pero el par completo depende del modelo objetivo y de la cuantizacion aplicada a este.
-- Opciones de despliegue: SGLang (citado en las etiquetas del repositorio) y el codigo de inferencia de DSpine publicado por Tencent. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles como cifras concretas para este checkpoint.
+- VRAM estimada para el borrador: aproximadamente 4,1 GB en BF16 (tamaño del repo en safetensors); se suma a la VRAM del modelo objetivo Qwen3.8-27B.
+- GPU recomendadas: el autor solo documenta el entorno de evaluación con SGLang 0.5.22, BF16 y FlashAttention 3, sin especificar modelo de GPU. No hay lista oficial de GPU validadas.
+- Encaje en GPU de consumo: el borrador por sí solo cabe en GPUs consumer con 8 GB o más, pero el requisito real lo marca el modelo base de 27.000 millones de parámetros, que en BF16 no cabe en una GPU de consumo.
+- Opciones de despliegue: SGLang 0.5.22 es el runtime documentado, con verificación dinámica vía DSpark y ReplaySSM. No se mencionan llama.cpp, Ollama, vLLM ni TGI.
+- Latencia y throughput: no se publican cifras completas de throughput en la información disponible; la mejora se expresa como longitud de aceptación, que en todos los benchmarks reportados favorece a DSpine frente a DFlash2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / ventana | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Bloque | Licencia | Rendimiento (aceptación GSM8K T=0) |
 |---|---|---|---|---|---|
-| tencent/Qwen3.8-27B-DSpine-b16 | 2.025.912.064 (borrador) | ventana deslizante 8.192; block size 16 | Apache 2.0 | Hugging Face | Borrador DSpine para Qwen3.8-27B |
-| tencent/Qwen3-8B-DSpine-b16 | no disponible | no disponible | Apache 2.0 | Hugging Face | Borrador hermano para Qwen3-8B; referenciado como un 23 % mas rapido que DFlash |
-| Qwen/Qwen3.8-27B | 27B (nominal) | no disponible | no disponible en la informacion | Hugging Face | Modelo objetivo; aporta tokenizador, embeddings y cabeza LM |
-| DFlash (borradores comparables) | no disponible | no disponible | no disponible | no disponible | Tecnica de decodificacion especulativa usada como referencia comparativa en la busqueda |
+| DSpine for Qwen3.8-27B (tencent) | 2.025.912.064 | ventana deslizante 8.192 | 16 | Apache 2.0 | 7,20 |
+| DFlash2 for Qwen3.8-27B (z-lab) | no disponible | no disponible | 8 | no disponible | 5,69 |
+| Modelo objetivo Qwen3.8-27B | 27.000 millones (aprox.) | no disponible | no aplica (autoregresivo) | no disponible | no aplica |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+No se dispone de datos de otros borradores comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: no incluye tokenizador, embeddings ni cabeza LM, por lo que no puede usarse en `pipeline("text-generation")` de forma directa pese a la etiqueta del repositorio.
-- La calidad final de la salida la determina Qwen3.8-27B; el borrador solo afecta a la latencia y a la tasa de aceptacion.
-- La ventana deslizante de 8.192 tokens del borrador limita el contexto que puede aprovechar al proponer tokens; en entradas muy largas la tasa de aceptacion puede degradarse.
-- Sesgos conocidos: no disponibles de forma independiente; los sesgos del sistema completo proceden del modelo objetivo.
-- Riesgo de alucinacion: no aplicable de forma directa al borrador, ya que las propuestas se verifican contra el modelo grande; el riesgo recae sobre Qwen3.8-27B.
-- Idiomas soportados: no disponibles; dependen del tokenizador del modelo objetivo.
-- Licencia Apache 2.0 permisiva para uso comercial, pero conviene revisar las condiciones del modelo objetivo Qwen3.8-27B, cuya licencia no se detalla en la informacion proporcionada.
-- El repositorio registra 0 descargas y 2 likes en el momento de la consulta, lo que indica adopcion practicamente nula y ausencia de validacion comunitaria.
-- El campo `inference: false` de la model card confirma que no esta pensado para inferencia independiente.
-- No se dispone de informacion sobre cuantizaciones publicadas ni sobre compatibilidad con stacks distintos de SGLang y DSpine.
+- No es un modelo generativo autónomo: la model card lo marca con `inference: false`; usarlo sin el modelo objetivo Qwen3.8-27B no produce salidas válidas.
+- La calidad final del texto depende íntegramente del modelo objetivo; el borrador solo propone candidatos y no corrige sesgos ni alucinaciones del base.
+- Los benchmarks reportados miden longitud de aceptación, no calidad de salida; no deben interpretarse como mejora de precisión en las tareas.
+- El entorno de evaluación está limitado a SGLang 0.5.22, BF16 y FlashAttention 3; el comportamiento en otros runtimes o cuantizaciones no está documentado.
+- No se especifican idiomas soportados ni composición del dataset de entrenamiento, por lo que no puede evaluarse la cobertura multilingüe del borrador.
+- La ventana deslizante de 8.192 tokens limita el contexto que el borrador puede considerar al proponer tokens; en peticiones agénticas largas la aceptación puede degradarse.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B, que se rige por su propia licencia.
+- No hay datos publicados sobre sesgos, tasas de alucinación ni robustez en dominios especializados.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio DSpine de Tencent: https://github.com/Tencent/DSpine
-- Instrucciones de inferencia DSpine para Qwen3.8-27B: https://github.com/Tencent/DSpine#qwen38-27b
-- Checkpoint hermano Qwen3-8B-DSpine-b16: https://huggingface.co/tencent/Qwen3-8B-DSpine-b16
-- Analisis de DSpine frente a DFlash: https://www.explainx.ai/blog/tencent-dspine-speculative-decoding-drafter-qwen3-8b-27-percent-longer-acceptance-vs-dflash-2026
-- Paper citado en la busqueda, "Draft in Parallel, Condition Through Depth: Adjacent Causal Injection for Speculative Decoding" (arXiv, referencia no verificada en la informacion disponible)
-- Sitio corporativo de Tencent: https://www.tencent.com/
+- Hugging Face: https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Borrador oficial DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Paper DSpine (arXiv 2609.36173): https://arxiv.org/abs/2609.36173
+- Paper adicional (arXiv 2607.05147): https://arxiv.org/abs/2607.05147
+- Página del proyecto: https://dspine-project.github.io
+- Repositorio GitHub: https://github.com/Tencent/DSpine
+- DSpark (DeepSeek DeepSpec): https://github.com/deepseek-ai/DeepSpec
+- ReplaySSM: https://github.com/Johnny-Liou/ReplaySSM
+- WorkBuddy Bench: https://github.com/Tencent/workbuddy-bench
+- Tencent: https://www.tencent.com/

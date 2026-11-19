@@ -68,31 +68,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "saidutta69/MiniCPM-V-4.7-1B-heretic · Hugging Face",
-      "url": "https://huggingface.co/saidutta69/MiniCPM-V-4.7-1B-heretic",
-      "snippet": "The GGUF here is fully multimodal — text and vision. Most converted VL checkpoints in this collection ship a text-only GGUF, because the converter silently drops the vision tower. llama.cpp registers MiniCPM-V 4.7 properly, so the vision tower is shipped as a separate projector file, MiniCPM-V-4.7-1B-heretic-mmproj-F16.gguf (1.11 GB), and the two files together are the model. For image input ..."
-    },
-    {
-      "title": "saidutta69/MiniCPM-V-4.7-1B-heretic · Discussions - Hugging Face",
-      "url": "https://huggingface.co/saidutta69/MiniCPM-V-4.7-1B-heretic/discussions",
-      "snippet": "Like 5 Image-Text-to-Text Transformers Safetensors GGUF English Chinese minicpmv4_7 minicpm-v minicpm multimodal vision-language vlm video ocr on-device lightweight heretic uncensored decensored abliterated reproducible roleplay local-llm consumer-gpu conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy ..."
-    },
-    {
-      "title": "MiniCPM-V-4.7-1B-heretic — Abliterated Model Card",
-      "url": "https://www.abliteratedmodels.org/minicpm-v-4.7-1b-heretic/",
-      "snippet": "MiniCPM-V-4.7-1B-heretic will attempt offensive-security prompts that a hosted commercial model declines, which is what makes it usable for red-team corpus generation and for measuring what an unaligned model of this class produces."
-    },
-    {
-      "title": "MiniCPM V 4.7 1B Heretic by saidutta69 - LLM Explorer",
-      "url": "https://llm-explorer.com/model/saidutta69%2FMiniCPM-V-4.7-1B-heretic,6iwtrEjtJHY8OpdhiIKxql",
-      "snippet": "MiniCPM V 4.7 1B Heretic is an open-source 1b LLM by saidutta69. VRAM 0.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    },
-    {
-      "title": "MiniCPM-V/docs/minicpm_v4dot7_en.md at main - GitHub",
-      "url": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v4dot7_en.md",
-      "snippet": "MiniCPM-V 4.7 is the latest model in the MiniCPM-V series, available in 35BA3B and 1B variants, with 35BA3B being the first MoE model in the MiniCPM-V series. It builds on the family&#x27;s single-image, multi-image, and video understanding capabilities, combining stronger foundation capabilities with efficient visual encoding and on-device inference."
-    }
-  ]
+  "sources": []
 }

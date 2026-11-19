@@ -66,31 +66,5 @@
   "renamed_to": "pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder-GGUF",
   "renamed_at": "2026-11-11T07:09:43.492Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Nawiązywanie połączeń przez Bluetooth na telefonie Pixel",
-      "url": "https://support.google.com/pixelphone/answer/2819579?hl=pl",
-      "snippet": "Włączanie i wyłączanie Bluetootha w aplikacji Ustawienia Otwórz na urządzeniu aplikację Ustawienia. Kliknij Połączone urządzenia …"
-    },
-    {
-      "title": "Łączenie Chromebooka z urządzeniami Bluetooth",
-      "url": "https://support.google.com/chromebook/answer/2587653?hl=pl",
-      "snippet": "Kliknij Bluetooth Włącz . Kliknij + Sparuj nowe urządzenie. Urządzenie, które chcesz połączyć z Chromebookiem, musi być w trybie …"
-    },
-    {
-      "title": "Microsoft Community",
-      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
-      "snippet": ""
-    },
-    {
-      "title": "Microsoft Community",
-      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡/55dd8522-1caa-4ae4-80b4-3d0fe4944f22",
-      "snippet": ""
-    },
-    {
-      "title": "Rozwiązywanie problemów z nawigacją głosową",
-      "url": "https://support.google.com/maps/answer/11523237?hl=pl&co=GENIE.Platform%3DiOS",
-      "snippet": "Włącz opcję Odtwarzaj głos przez Bluetooth. Rozpocznij nawigację. Przez kabel USB Ustaw USB jako źródło w systemie audio w …"
-    }
-  ]
+  "sources": []
 }

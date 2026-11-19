@@ -2,109 +2,106 @@
 
 ## Resumen
 
-dale-0.8b es un ajuste completo (full fine-tune) del modelo base Qwen/Qwen3.5-0.8B, desarrollado por Manuel García (manuelgscom), que traduce una petición en lenguaje natural —en castellano o en inglés— a un único comando bash para Linux, devuelto como un objeto JSON pequeño con el comando y una explicación breve. No es un modelo de chat general: está entrenado exclusivamente para ese contrato de entrada/salida, con dos turnos (un system prompt fijo y el mensaje del usuario) y el modo de razonamiento del template de Qwen3.5 desactivado.
+`dale-0.8b-GGUF` es la versión cuantizada en formato GGUF del modelo `dale-0.8b`, un ajuste completo (full fine-tune) de Qwen3.5-0.8B desarrollado por Manuel García. Su propósito es muy concreto: convertir una petición en lenguaje natural, en castellano o en inglés, en un único comando bash para Linux, devuelto como un objeto JSON pequeño con una explicación breve. No es un modelo de propósito general, sino una herramienta especializada de traducción de lenguaje natural a shell (nl2bash) pensada para ejecutarse en local.
 
-El modelo es el motor de `dale`, una herramienta de línea de comandos offline que lo ejecuta en CPU mediante llama.cpp dentro de un único binario nativo. La separación de responsabilidades es deliberada: el modelo propone el comando y un verificador determinista escrito en C++ clasifica el riesgo (safe, caution, danger) mirando solo el texto del comando, de modo que la salida del modelo nunca fija el nivel de peligrosidad.
+El modelo es la pieza central de `dale`, una herramienta de línea de comandos offline que lo ejecuta en CPU mediante llama.cpp dentro de un único binario nativo. Con 752.393.024 parámetros totales (aproximadamente 0,8B), la versión GGUF Q4_K_M ocupa 529,3 MB, lo que lo convierte en un modelo extremadamente ligero y apto para equipos sin GPU. La relevancia actual reside en su enfoque: un modelo pequeño, especializado y con licencia Apache-2.0 que supera en su tarea específica a modelos mucho mayores sin ajustar.
 
-Su relevancia práctica está en la relación entre tamaño y rendimiento: con 752 millones de parámetros y un GGUF de 529 MB en Q4_K_M (con imatrix) alcanza un 79,4 % de acierto (374/471) en el test v2 del propio autor, frente al 62,8 % que declara para Qwen3.5-9B y Gemma 4 E4B-it sin ajustar, con una latencia mediana de 1,72 s por petición en la CPU de un portátil de gama media de 2020 (4 núcleos / 8 hilos), sin GPU.
+Según los datos del autor, en el conjunto de test público `dale-bash-test-v2` (471 casos) alcanza un 79,4 % de precisión (374/471), frente al 62,8 % de Qwen3.5-9B y Gemma 4 E4B-it sin ajuste. La latencia declarada es de 1,72 s de mediana por petición en un portátil de gama media de 2020 (4 núcleos / 8 hilos) sin GPU.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (heredada de Qwen/Qwen3.5-0.8B; detalles de capas y atención no disponibles en la informacion proporcionada) |
-| Parametros totales | 752.393.024 (dato real de safetensors) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer (fine-tune completo de Qwen3.5-0.8B) |
+| Parametros totales | 752.393.024 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M con imatrix (unico archivo publicado) |
+| Tipos de cuantizacion | GGUF Q4_K_M (con imatrix); pesos BF16 safetensors en el repo base |
 | Idiomas soportados | es, en |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`dale-0.8b-1.0.0-Q4_K_M.gguf`, 529.297.952 bytes) |
+| Formato de pesos | GGUF (Q4_K_M); safetensors BF16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B y se ha sometido a un ajuste completo (no LoRA ni adaptadores) para una tarea única: dado un contexto de sistema operativo, distribución, gestor de paquetes y herramientas instaladas, más la petición del usuario, emitir exactamente un JSON con los campos `type` (`command`, `refuse` o `unsure`), `command` y `explanation`. El prompt es el chat template de Qwen3.5 con `enable_thinking=False`, `add_generation_prompt=True`, sin ejemplos few-shot y con el mensaje de usuario limitado a 1000 bytes y espacios colapsados. El modelo no fue entrenado como chat general y, según el autor, solo responde correctamente a ese contrato (versión 2).
+El modelo es un ajuste completo de Qwen3.5-0.8B, por lo que hereda la arquitectura transformer del modelo base de Qwen. No se dispone de información detallada sobre el número de tokens de entrenamiento ni sobre la composición exacta del dataset en la información proporcionada. El autor indica que el modelo fue entrenado para una tarea única y con contrato fijo: recibir una petición en lenguaje natural junto con un contexto de sistema (sistema operativo, distribución, gestor de paquetes y herramientas instaladas) y devolver un único comando bash con una explicación breve, en formato JSON.
 
-No se han publicado en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La innovación destacable no está en la arquitectura, sino en el diseño del sistema: el modelo se limita a proponer el comando y devuelve `refuse` cuando la petición no es una tarea de shell y `unsure` cuando es ambigua, en lugar de inventar una instrucción; la evaluación de riesgo se delega en reglas deterministas en C++ independientes del modelo. El autor indica además que los tensores del GGUF publicado son idénticos al archivo evaluado y que solo se añadieron metadatos `general.*` (nombre, autor, URL, versión, licencia, modelo base).
+La cuantización GGUF se generó con imatrix, un método que usa una matriz de importancia para preservar mejor los pesos relevantes durante la cuantización. El resultado es un archivo Q4_K_M de 529,3 MB. Una innovación destacable del sistema, aunque no del modelo en sí, es la separación de responsabilidades: el modelo solo propone el comando, mientras que un verificador determinista escrito en C++ evalúa el riesgo y exige confirmación explícita para comandos peligrosos. No se especifica si hubo RLHF o DPO en el proceso de entrenamiento.
 
 ## Capacidades
 
-- Generación de un único comando bash para Linux a partir de una petición en castellano o inglés.
-- Salida estructurada en JSON con el comando y una explicación de una frase en el idioma de la petición.
-- Abstención explícita: `refuse` ante peticiones que no son tareas de shell y `unsure` ante ambigüedad.
-- Adaptación al entorno descrito en el contexto (sistema operativo, distribución, gestor de paquetes, herramientas instaladas).
-- Inferencia local en CPU sin red, sin cuentas, sin claves de API y sin telemetría tras la primera descarga del modelo.
-- No soporta tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento extenso; el thinking del modelo base se desactiva en el prompt.
+- Generación de comandos bash para Linux a partir de lenguaje natural, en castellano e inglés.
+- Salida estructurada en formato JSON con el comando propuesto y una explicación breve.
+- Traducción de lenguaje natural a shell (nl2bash) como tarea principal y única.
+- Uso de contexto de sistema para adaptar la respuesta (sistema operativo, distribución, gestor de paquetes, herramientas instaladas).
+- Capacidad conversacional básica según los tags del repositorio.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documentan capacidades de tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistente de terminal para desarrolladores: el usuario describe en lenguaje natural lo que quiere hacer («buscar los diez archivos más grandes del directorio actual») y `dale` muestra el comando propuesto, su explicación y el nivel de riesgo antes de ejecutarlo.
-- Formación y onboarding en Linux: en modo `suggest` el modelo nunca ejecuta nada, por lo que sirve para que perfiles junior aprendan la sintaxis de bash viendo la propuesta y su explicación al lado.
-- Automatización con supervisión en pipelines: en modo `confirm` o `auto` (solo comandos clasificados como safe) puede integrarse en scripts internos de operaciones para traducir peticiones de lenguaje natural a comandos auditables.
-- Entornos aislados o sin conectividad: al ejecutarse sobre llama.cpp en CPU y no realizar peticiones de red tras la descarga, encaja en máquinas air-gapped, servidores de laboratorio o portátiles modestos donde no hay GPU ni acceso a APIs externas.
-- Generación de documentación y runbooks: el par comando + explicación de una frase se puede registrar como traza de auditoría de qué se propuso y por qué en cada operación.
-- Prototipado de interfaces nl2bash: al ser un GGUF de 529 MB con un contrato de prompt documentado, sirve como base para experimentar con wrappers propios que necesiten salida JSON estricta y abstención ante ambigüedad.
-- Herramienta de escritorio ligera: cualquier aplicación que quiera ofrecer «escribe lo que quieres hacer» sin depender de un servicio en la nube puede embeberlo con llama.cpp y un consumo de disco inferior a 1 GB.
+- Asistente de terminal offline: integrado en la CLI `dale`, el modelo convierte una petición como "lista los archivos más grandes del directorio actual" en un comando bash concreto, sin conexión a internet y en CPU, lo que lo hace adecuado para entornos air-gapped.
+- Aprendizaje de shell para principiantes: el modelo devuelve el comando junto con una explicación breve, de modo que el usuario puede entender qué hace antes de ejecutarlo, apoyándose en el verificador de riesgo de la CLI.
+- Automatización de tareas administrativas repetitivas: un operador puede describir en lenguaje natural la operación que necesita (por ejemplo, buscar y comprimir logs antiguos) y obtener el comando listo para revisar y ejecutar.
+- Integración en scripts y pipelines propios: al ser un GGUF de 529 MB con salida JSON, puede servirse con `llama-server` en CPU o GPU y consumirse desde una aplicación que necesite generar comandos de forma programática.
+- Entornos con hardware limitado: portátiles antiguos, contenedores sin GPU o servidores modestos pueden ejecutar el modelo con latencia de ~1,7 s por petición, según los datos del autor.
+- Fallback en sistemas con GPU: la CLI `dale` lo usa como modelo por defecto en CPU y como respaldo cuando no hay GPU suficiente para los hermanos mayores (`dale-4b`, `dale-9b`).
+- Generación de comandos en español: a diferencia de muchos modelos orientados a shell, soporta peticiones en castellano de forma nativa, útil para equipos hispanohablantes.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor del modelo (`model-index` de la model card; la métrica figura como no verificada).
+Datos declarados por el autor del modelo (no verificados de forma independiente):
 
-| Benchmark | Metrica | Resultado |
-|---|---|---|
-| dale bash test v2 (split test, 471 casos) | Accuracy | 79,4 % (374/471) |
+| Modelo | Base | GGUF Q4_K_M | Test v2 (471 casos) |
+|---|---|---|---|
+| `dale-0.8b` | Qwen3.5-0.8B | 529,3 MB | 79,4 % |
+| `dale-2b` | Qwen3.5-2B | 1.274,4 MB | 81,7 % |
+| `dale-4b` | Qwen3.5-4B | 2.708,8 MB | 87,0 % |
+| `dale-9b` | Qwen3.5-9B | 5.629,1 MB | 89,2 % |
+| Qwen3.5-9B (sin ajuste) | — | — | 62,8 % |
+| Gemma 4 E4B-it (sin ajuste) | — | — | 62,8 % |
 
-Comparaciones incluidas en la model card, sin ajuste fino (zero-shot) sobre el mismo test:
-
-| Modelo | Accuracy declarada |
-|---|---|
-| dale-0.8b (este modelo) | 79,4 % |
-| Qwen3.5-9B | 62,8 % |
-| Gemma 4 E4B-it | 62,8 % |
-
-Rendimiento medido por el autor: 1,72 s de mediana por petición en la CPU de un portátil de gama media de 2020 (4 núcleos / 8 hilos), sin GPU; aproximadamente 1 s por petición en la CPU de un sobremesa. No se han publicado datos de throughput (tokens/s) ni resultados en benchmarks estándar tipo MMLU, HumanEval o GSM8K.
+El benchmark propio es `manuelgscom/dale-bash-test-v2`, split test, con métrica de accuracy. El autor reporta además una latencia de 1,72 s de mediana por petición en un portátil de 2020 (4 núcleos / 8 hilos) sin GPU, y de aproximadamente 1 s en un escritorio con CPU. No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: es el escenario objetivo. Funciona en un procesador de 4 núcleos / 8 hilos de 2020 con 1,72 s de mediana por petición; el binario de `dale` está pensado para ejecutarse sin GPU.
-- RAM estimada: alrededor de 1 GB libre para cargar el GGUF de 529 MB junto con el contexto de llama.cpp (estimación a partir del tamaño del archivo; no publicada por el autor).
-- VRAM estimada: inferior a 1 GB si se descargan todas las capas en GPU; cualquier GPU de consumo con 2 GB o más puede alojarlo completo (por ejemplo GTX 1650, RTX 3050, RTX 4060, RTX 4090). No se han publicado mediciones de latencia en GPU.
-- GPU de datacenter (A100, H100): sobredimensionadas para este modelo; no aportan ventaja frente a CPU para una carga de una sola petición corta.
-- Despliegue: llama.cpp (runtime de referencia del proyecto), el propio CLI `dale` con el modelo empaquetado en un binario nativo, y cualquier otro runtime compatible con GGUF. El soporte de vLLM u OVMS para este archivo concreto no está documentado en la información disponible.
-- Almacenamiento: 0,5 GB de repositorio; un único archivo de pesos de 529 MB.
-- Latencia: 1,72 s de mediana por petición en CPU de portátil de 2020, ~1 s en CPU de sobremesa. Throughput no disponible.
+- VRAM estimada: no requiere GPU; el GGUF Q4_K_M ocupa 529,3 MB y puede ejecutarse íntegramente en CPU.
+- GPU recomendadas: no necesarias para este tamaño; el autor indica que en máquinas con GPU se usan los hermanos mayores `dale-4b` (≥ 4 GiB de VRAM libre) y `dale-9b` (≥ 8 GiB de VRAM libre).
+- Cabe en cualquier GPU consumer, e incluso en sistemas sin GPU dedicada (GPU integrada o CPU pura).
+- Opciones de despliegue: llama.cpp (`llama-server`), la CLI `dale` (binario nativo con llama.cpp embebido) y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
+- Latencia y throughput: 1,72 s de mediana por petición en CPU de portátil de 2020 (4 núcleos / 8 hilos); ~1 s en CPU de escritorio. No se dispone de cifras de throughput en tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en dale bash test v2 | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Test v2 (nl2bash) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dale-0.8b | 752 M | no disponible | 79,4 % (con ajuste fino) | Apache-2.0 | GGUF Q4_K_M en Hugging Face |
-| Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
-| Qwen3.5-9B | ~9 B | no disponible | 62,8 % (sin ajuste fino) | no disponible en la informacion proporcionada | Hugging Face |
-| Gemma 4 E4B-it | no disponible | no disponible | 62,8 % (sin ajuste fino) | no disponible en la informacion proporcionada | Hugging Face |
+| `dale-0.8b` | 752 M | no disponible | 79,4 % | Apache-2.0 | GGUF + safetensors |
+| `dale-2b` | no disponible | no disponible | 81,7 % | no disponible | GGUF |
+| `dale-4b` | no disponible | no disponible | 87,0 % | no disponible | GGUF |
+| `dale-9b` | no disponible | no disponible | 89,2 % | no disponible | GGUF |
+| Qwen3.5-9B (sin ajuste) | 9B (aprox.) | no disponible | 62,8 % | no disponible | no disponible |
+| Gemma 4 E4B-it (sin ajuste) | no disponible | no disponible | 62,8 % | no disponible | no disponible |
 
-La comparación relevante es de eficiencia: un modelo de 752 M ajustado para una tarea estrecha supera en ese test a modelos de mayor tamaño usados en zero-shot, a costa de perder cualquier capacidad de propósito general.
+La comparativa más directa es con los propios hermanos de la familia `dale`, que comparten tarea, datos, contrato y prompt, y con los modelos base sin ajustar. Los datos de parámetros y contexto de los modelos comparables no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Tasa de error aproximada del 20,6 % (97 de 471 casos fallidos) en el test v2 del propio autor: el comando propuesto debe revisarse siempre antes de ejecutarlo.
-- El benchmark lo declara el autor y figura como no verificado (`verified: false`); no hay evaluación independiente publicada.
-- No es un modelo de chat general: fuera del contrato de prompt (JSON con `type`, `command`, `explanation`) su comportamiento no está garantizado.
-- Emite un solo comando por petición; no resuelve tareas que requieran pipelines multi-paso razonados por el modelo.
-- Solo cubre bash para Linux; no hay soporte declarado de PowerShell, zsh, macOS ni otros shells.
-- Solo castellano e inglés; no se declaran otros idiomas.
-- El modelo no evalúa el riesgo. Cualquier confianza en la clasificación safe/caution/danger depende del verificador determinista de `dale`, no del modelo, y lo que ese verificador no puede analizar se clasifica como mínimo como caution.
-- Entrada limitada a 1000 bytes en el mensaje de usuario, con espacios colapsados; peticiones largas o con formato sensible se degradan.
-- Riesgo de alucinación de opciones o flags inexistentes, propio de un modelo de 752 M; el diseño del sistema lo mitiga con abstención (`refuse`/`unsure`), no lo elimina.
-- Licencia Apache-2.0: permite uso comercial y modificación, con obligación de conservar el aviso de licencia y el archivo `LICENSE`; conviene verificar las condiciones del modelo base Qwen3.5-0.8B, no detalladas en la información disponible.
-- En producción, los comandos peligrosos exigen escribir una palabra de confirmación (`ejecutar`/`run`) en todos los modos; cualquier integración que evite ese paso elimina la principal barrera de seguridad del sistema.
+- Tasa de error aproximada de 1 de cada 5 casos en el test v2: el comando propuesto puede ser incorrecto, por lo que debe revisarse siempre antes de ejecutarlo.
+- El modelo no evalúa el riesgo de los comandos: esa responsabilidad recae en un verificador determinista externo de la CLI `dale`; fuera de esa herramienta, el usuario asume todo el riesgo.
+- Especialización estrecha: está diseñado exclusivamente para nl2bash en Linux; no es adecuado para otras tareas de generación de texto, razonamiento general o código en otros lenguajes.
+- Idiomas limitados a español e inglés.
+- Longitud de contexto no documentada en la información disponible.
+- Riesgo de alucinación inherente a un modelo de 0,8B: puede inventar flags, rutas o utilidades inexistentes.
+- Sesgos: no se documentan sesgos específicos, pero al derivar de Qwen3.5-0.8B puede heredar los del modelo base.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-0.8B.
+- Los resultados de benchmarks son declarados por el autor y no han sido verificados de forma independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/manuelgscom/dale-0.8b-GGUF
-- Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Codigo fuente del CLI `dale`: https://github.com/manuelgscom/dale
-- Web del autor: https://manuelgs.com
-- Dataset de evaluacion `manuelgscom/dale-bash-test-v2`: https://huggingface.co/datasets/manuelgscom/dale-bash-test-v2
-- Demo en video: https://huggingface.co/manuelgscom/dale-0.8b-GGUF/resolve/main/media/demo.mp4
-- Demo de seguridad en video: https://huggingface.co/manuelgscom/dale-0.8b-GGUF/resolve/main/media/safety.mp4
+- Modelo en Hugging Face (GGUF): https://huggingface.co/manuelgscom/dale-0.8b-GGUF
+- Modelo base en Hugging Face (BF16 safetensors): https://huggingface.co/manuelgscom/dale-0.8b
+- Dataset de evaluación: https://huggingface.co/datasets/manuelgscom/dale-bash-test-v2
+- Código fuente de la CLI `dale`: https://github.com/manuelgscom/dale
+- Sitio web del autor: https://manuelgs.com/en/dale/
+- Colección de la familia `dale`: https://huggingface.co/collections/manuelgscom/dale-6addf69f0c5ce62251553885
+- Modelo base original: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Hermanos de la familia: https://huggingface.co/manuelgscom/dale-4b-GGUF y https://huggingface.co/manuelgscom/dale-9b-GGUF

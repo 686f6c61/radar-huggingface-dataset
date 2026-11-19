@@ -2,102 +2,97 @@
 
 ## Resumen
 
-MiniCPM-OCR 1.0 DSpark — GGUF es la versión cuantizada en formato GGUF del modelo borrador (draft model) DSpark, desarrollado por OpenBMB para acelerar la inferencia de MiniCPM-OCR 1.0 mediante decodificación especulativa. No es un modelo OCR autónomo: se trata de una cabeza de borrador ligera (296,9 millones de parámetros) que debe ejecutarse junto con el checkpoint principal de MiniCPM-OCR 1.0 en formato GGUF, aportando predicciones de tokens que el modelo principal verifica.
+MiniCPM-OCR-1.0-DSpark-gguf es la version en formato GGUF del cabezal draft DSpark para MiniCPM-OCR 1.0, un modelo especializado en reconocimiento optico de caracteres y conversion de documentos a Markdown/JSON. Lo desarrolla OpenBMB (ModelBest) y se publica bajo licencia Apache 2.0. No es un modelo OCR autonomo: es un modelo borrador (draft model) de 296.952.577 parametros que se acopla al checkpoint principal MiniCPM-OCR-1.0 para acelerar la inferencia mediante decodificacion especulativa en llama.cpp.
 
-Su relevancia radica en la optimización de latencia para tareas de OCR y parseo de documentos en entornos locales: al habilitar el draft model en llama.cpp (mediante `--spec-type draft-dspark`), se reduce el tiempo de generación de texto reconocido sin pérdida de calidad, ya que el modelo principal sigue siendo el que decide los tokens finales. Es especialmente útil en despliegues on-device o en servidores con GPU de consumo donde el OCR de documentos largos se ve limitado por la velocidad de decodificación. El pipeline es de tipo image-text-to-text, con soporte de inglés y chino, y licencia Apache 2.0.
+El modelo resuelve un problema concreto de eficiencia: en pipelines OCR de documentos completos, la etapa de reconocimiento por region es intensiva en generacion de tokens, y la decodificacion especulativa permite reducir la latencia sin alterar la salida del modelo objetivo. DSpark actua como cabezal borrador que propone tokens candidatos, verificados posteriormente por el modelo principal.
+
+Es relevante ahora porque el ecosistema llama.cpp permite desplegar el pipeline OCR completo en hardware modesto, incluyendo GPU de consumo, y porque el SDK `minicpm-ocr` orquesta la deteccion de layout (PP-DocLayoutV3) y el reconocimiento por region en dos etapas separadas. El repositorio GGUF ocupa 3,0 GB e incluye 11 cuantizaciones del draft, desde F16 (0,606 GB) hasta Q4_0 (0,209 GB). Idiomas soportados: ingles y chino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Draft head (modelo borrador) para decodificación especulativa sobre MiniCPM-OCR 1.0 (multimodal, image-text-to-text) |
+| Arquitectura | Transformer multimodal (image-text-to-text); este repo contiene solo el cabezal draft DSpark para decodificacion especulativa |
 | Parametros totales | 296.952.577 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (definida por el modelo principal) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_1, Q5_0, Q4_K_M, Q4_K_S, Q4_1, Q4_0 |
-| Idiomas soportados | Inglés, chino |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (también disponible el draft en BF16/safetensors en el repo DSpark original) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio contiene únicamente el draft model DSpark: una cabeza de predicción ligera entrenada como finetune del propio MiniCPM-OCR 1.0 para anticipar los tokens que el modelo principal generará. En llama.cpp se activa con `--spec-type draft-dspark`, usando `-md` para indicar el draft y `-ngld` para offload de sus capas a GPU. Una particularidad técnica destacable es que cada nivel de cuantización del GGUF almacena en su tensor `d2t` los token IDs objetivo en codificación absoluta, mientras que la exportación en safetensors los guarda delta-encoded; esto es relevante para quien quiera manipular los pesos directamente.
+El repositorio contiene exclusivamente el cabezal draft DSpark, afinado a partir de openbmb/MiniCPM-OCR-1.0 (relacion `finetune`). El modelo principal MiniCPM-OCR 1.0 es un modelo multimodal image-text-to-text que procesa regiones de documento recortadas y las transcribe a Markdown o JSON segun el tipo de region (texto, tabla, formula, grafico, sello). El draft DSpark se usa en llama.cpp con `--spec-type draft-dspark` para decodificacion especulativa: propone tokens que el modelo objetivo valida, acelerando la generacion.
 
-Al tratarse de un modelo borrador, no genera texto de forma autónoma ni realiza OCR por sí mismo: su salida es verificada por el modelo principal, por lo que la calidad del resultado depende íntegramente de MiniCPM-OCR 1.0. Los detalles sobre datos de entrenamiento, número de tokens o técnicas de alineación del draft no están disponibles en la información proporcionada. Para el funcionamiento multimodal es imprescindible usar el projector del modelo principal (`mmproj-model-f16-4x.gguf` del repositorio MiniCPM-OCR-1.0-gguf).
+Un detalle tecnico relevante: cada nivel de cuantizacion del GGUF lleva los IDs de token objetivo absolutos en su tensor `d2t`, mientras que la exportacion en safetensors los almacena con codificacion delta. El draft debe emparejarse con el checkpoint principal correspondiente y con el proyector `mmproj-model-f16-4x.gguf` del repositorio MiniCPM-OCR-1.0-gguf. No se dispone de informacion sobre volumen de tokens de entrenamiento, composicion del dataset ni uso de RLHF/DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Predicción rápida de tokens candidatos para decodificación especulativa junto a MiniCPM-OCR 1.0 (no genera texto de forma independiente).
-- Compatible con entrada multimodal (imágenes de documentos) siempre que se use junto al modelo principal y su projector en `llama-cli` o `llama-server`.
-- Soporte nativo en llama.cpp mediante el flag `--spec-type draft-dspark`.
-- Disponible en 11 niveles de cuantización, desde F16 hasta Q4_0, para ajustar el consumo de memoria.
-- No soporta tool calling ni capacidades de agente: es un componente de aceleración, no un modelo conversacional completo.
+- Reconocimiento OCR de regiones de documento: texto, tablas, formulas, graficos y sellos, con salida en Markdown o JSON en orden de lectura.
+- Aceleracion por decodificacion especulativa: actua como draft model para MiniCPM-OCR-1.0 en llama.cpp.
+- Procesamiento multimodal image-text-to-text (heredado del modelo base).
+- Soporte de prompts especificos por tipo de region (por ejemplo, "Text Recognition:").
+- Compatibilidad con endpoints (`endpoints_compatible`) y uso conversacional.
+- Idiomas: ingles y chino.
+- No dispone de tool calling, capacidades de agente ni modo thinking documentados en la informacion disponible.
 
 ## Casos de uso
 
-- Aceleración de OCR local en llama.cpp: se usa como draft junto al GGUF principal de MiniCPM-OCR 1.0 para reducir la latencia al transcribir páginas escaneadas con el prompt "Text Recognition:".
-- Parseo de documentos a gran escala: en pipelines batch que procesan miles de páginas (facturas, contratos, informes), la decodificación especulativa reduce el coste temporal total sin modificar los resultados.
-- Despliegue en GPU de consumo: al pesar el draft solo 0,2–0,6 GB, cabe junto al modelo principal en GPUs como la RTX 4090, acelerando OCR on-premise.
-- Servicios de API de documentos autoalojados: integrado en `llama-server` permite montar un endpoint de parseo de documentos con menor latencia por petición.
-- Sistemas RAG sobre documentos digitalizados: acelera la fase de ingesta, donde el OCR es habitualmente el cuello de botella.
-- Automatización de archivo histórico: transcripción de archivos escaneados en inglés y chino con verificación del modelo principal, garantizando calidad idéntica al modelo base.
+- Digitalizacion masiva de archivos: el pipeline de dos etapas (deteccion de layout con PP-DocLayoutV3 y reconocimiento por region con MiniCPM-OCR 1.0 + DSpark) convierte lotes de PDFs escaneados a Markdown estructurado, preservando tablas y orden de lectura.
+- Extraccion de tablas financieras: las regiones de tabla se recortan y se envian con un prompt de tabla; el modelo devuelve estructura Markdown que puede parsearse a CSV o bases de datos.
+- Conversion de papers cientificos: las regiones de formula se reconocen por separado, lo que permite reconstruir LaTeX junto con el texto y las figuras en un unico documento.
+- Despliegue en hardware de consumo: con cuantizaciones Q4 (0,209-0,211 GB para el draft) y el modelo principal en GGUF, el pipeline completo cabe en GPU consumer, util para prototipos y entornos sin cluster.
+- Servicio OCR autoalojado con llama.cpp o Ollama: el SDK envia cada region por HTTP a un servicio de inferencia local, manteniendo los datos en la infraestructura propia.
+- Aplicaciones moviles offline: la demo iOS de MiniCPM-V-Apps permite parsing de documentos en dispositivo sin conexion (parsing de documentos solo en iOS por ahora).
+- Aceleracion de pipelines OCR existentes: integrar DSpark como draft en un servicio llama.cpp ya desplegado reduce la latencia de la etapa de reconocimiento sin cambiar la logica de negocio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card tampoco aporta cifras de speedup de la decodificación especulativa respecto a la inferencia estándar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para el draft: entre 0,209 GB (Q4_0/Q4_K_S) y 0,606 GB (F16); la VRAM total dependerá del modelo principal MiniCPM-OCR 1.0 y su projector (`mmproj-model-f16-4x.gguf`).
-- Se recomienda offload completo a GPU del draft con `-ngl 99 -ngld 99` y activar flash attention (`-fa on`).
-- Al ser tan ligero, cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) junto al modelo principal; el requisito real lo marca el checkpoint principal de MiniCPM-OCR 1.0.
-- Despliegue mediante llama.cpp (`llama-cli` o `llama-server`); `llama-mtmd-cli` no acepta draft models con entrada multimodal.
-- No es aplicable a vLLM, TGI u Ollama según la información proporcionada.
-- Latencia y throughput: no disponible (no se publican cifras de speedup).
-
-Ejemplo de invocación:
-
-```bash
-llama-cli \
-  -m MiniCPM-OCR-1_0-Q8_0.gguf \
-  --mmproj mmproj-model-f16-4x.gguf \
-  -md dspark-MiniCPM-OCR-1_0-Q8_0.gguf \
-  --spec-type draft-dspark \
-  --image page.png -p "Text Recognition:" \
-  --jinja -ngl 99 -ngld 99 -fa on
-```
+- VRAM del draft: aproximadamente 0,21 GB en Q4_0/Q4_K_S, 0,23-0,26 GB en Q5, 0,33 GB en Q8_0 y 0,61 GB en F16. A esto se suma el modelo principal MiniCPM-OCR-1.0 y el proyector multimodal.
+- GPU recomendadas: no disponibles de forma especifica en la informacion proporcionada; el uso de `-ngl 99 -ngld 99` sugiere offload completo de capas del modelo y del draft a GPU.
+- GPU de consumo: el tamano reducido del draft (menos de 1 GB en todas las cuantizaciones) permite alojarlo junto al modelo principal en GPU consumer, aunque el requisito agregado depende del checkpoint principal.
+- Despliegue: llama.cpp (`llama-cli` o `llama-server`), vLLM, SGLang, Ollama, e imagen Docker oficial. Nota: `llama-mtmd-cli` no acepta draft model; para multimodal con DSpark hay que usar `llama-cli` o `llama-server`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Rol | Parametros | Formato | Licencia |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
-| MiniCPM-OCR 1.0 DSpark GGUF (este repo) | Draft model para decodificación especulativa | 296,9 M | GGUF (F16 a Q4_0) | Apache 2.0 |
-| MiniCPM-OCR 1.0 DSpark | Draft model (versión original) | no disponible | BF16 (safetensors) | Apache 2.0 |
-| MiniCPM-OCR 1.0 | Modelo OCR principal (multimodal) | no disponible | BF16, GGUF, AWQ W4A16, GPTQ W4A16 | Apache 2.0 |
+| MiniCPM-OCR-1.0-DSpark-gguf | 296.952.577 (draft) | no disponible | Apache 2.0 | Draft model para decodificacion especulativa en pipeline OCR |
+| MiniCPM-OCR-1.0 | no disponible | no disponible | Apache 2.0 | Modelo OCR principal multimodal, requiere este draft para aceleracion |
+| PP-DocLayoutV3 | no disponible | no disponible | no disponible | Deteccion de layout (etapa 1 del pipeline), ejecutado en el SDK |
 
-No se conocen draft models comparables de otros modelos OCR en la información proporcionada.
+No se dispone de datos de benchmarks ni de modelos OCR comparables adicionales en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo OCR autónomo: sin el checkpoint principal de MiniCPM-OCR 1.0 y su projector, no produce ningún resultado útil.
-- `llama-mtmd-cli` no acepta draft models; hay que usar `llama-cli` o `llama-server` para combinar entrada multimodal y decodificación especulativa.
-- Solo soporta inglés y chino; otros idiomas dependen del modelo principal y pueden degradar el rendimiento del draft.
-- La decodificación especulativa solo acelera la generación: no mejora la calidad del OCR ni corrige alucinaciones del modelo principal.
-- Detalles de entrenamiento, datos de benchmarks y cifras de speedup no están disponibles, por lo que conviene validar la ganancia de latencia en el propio hardware antes de producir.
-- La licencia Apache 2.0 permite uso comercial sin restricciones relevantes.
+- No es un modelo autonomo: sin el checkpoint principal MiniCPM-OCR-1.0 y el proyector `mmproj-model-f16-4x.gguf` no produce salida util.
+- Solo soporta ingles y chino; otros idiomas no estan cubiertos.
+- Riesgo de alucinacion inherente a modelos generativos, especialmente en regiones de baja calidad o tablas complejas; conviene validar la salida en produccion.
+- La etapa 1 del pipeline requiere PaddlePaddle/PaddleX en el entorno del SDK, lo que anade dependencias pesadas.
+- `llama-mtmd-cli` no admite draft model; hay que usar `llama-cli` o `llama-server`, lo que limita algunas configuraciones.
+- El parsing de documentos en la app movil es solo para iOS por el momento.
+- Licencia Apache 2.0 permite uso comercial, pero no se documentan garantias ni sesgos especificos en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio del draft GGUF: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
-- Modelo principal MiniCPM-OCR 1.0: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
+- Hugging Face (este repo): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
+- Modelo draft en safetensors: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - GGUF del modelo principal: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf
-- Draft DSpark en BF16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
-- Versión AWQ: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-AWQ
-- Versión GPTQ: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-GPTQ
-- GitHub: https://github.com/OpenBMB/MiniCPM-OCR
-- FAQ: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/faq_en.md
-- Demo oficial (CN): https://platform.modelbest.cn/console/playground/document-parse
-- Demo oficial (Global): https://platform.modelbest.ai/console/playground/document-parse
-- Demo básica: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
-- API gratuita: https://platform.modelbest.ai/console/docs/api/document-parse
-- ModelScope (este repo): https://modelscope.cn/models/OpenBMB/MiniCPM-OCR-1.0-DSpark-gguf
+- GitHub MiniCPM-OCR: https://github.com/OpenBMB/MiniCPM-OCR
+- Guia del modelo: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_1dot0_en.md
+- Guia de despliegue: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_tutorial_en.md
+- SDK en PyPI: https://pypi.org/project/minicpm-ocr/
+- Playground (global): https://platform.modelbest.ai/console/playground/document-parse
+- Playground (CN): https://platform.modelbest.cn/console/playground/document-parse
+- Documentacion API (global): https://platform.modelbest.ai/console/docs/api/document-parse
+- Documentacion API (CN): https://platform.modelbest.cn/console/docs/api/document-parse
+- SKILL.md para agentes: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/SKILL_en.md
+- Demo iOS: https://github.com/OpenBMB/MiniCPM-V-Apps/blob/main/README.md#11-ios-demo
+- Discord: https://discord.gg/JE8KQqtdn

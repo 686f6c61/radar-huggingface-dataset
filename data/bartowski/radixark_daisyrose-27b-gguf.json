@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "bartowski/RadixArk_DaisyRose-27B-GGUF",
+  "slug": "bartowski-radixark_daisyrose-27b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/RadixArk_DaisyRose-27B-GGUF",
+  "created_at": "2026-11-18T22:06:11.000Z",
+  "updated_at": "2026-11-18T22:44:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "daisyrose",
+    "qwen3.8",
+    "reinforcement-learning",
+    "image-text-to-text",
+    "base_model:RadixArk/DaisyRose-27B",
+    "base_model:quantized:RadixArk/DaisyRose-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 444500530944,
+  "storage_human": "444.5 GB",
+  "context_length": 262144,
+  "base_model": "RadixArk/DaisyRose-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "snippet": "RadixArk trained DaisyRose-27B with Miles, our open-source reinforcement learning framework for large-scale model post-training, in fully asynchronous mode: the agent keeps working while the model learns, and neither waits for the other. While 128 H200s run the inference on agent tasks, 16 more run the trainer and learn from the trajectories."
+    },
+    {
+      "title": "RadixArk Releases DaisyRose-27B, Built on Qwen3.8-27B",
+      "url": "https://news.lavx.hu/article/radixark-releases-daisyrose-27b-built-on-qwen3-8-27b",
+      "snippet": "RadixArk released DaisyRose-27B, a reinforcement-learned model built on Qwen3.8-27B, after 18 days of training on 144 H200 GPUs. The model raises Terminal Bench 4.1 pass@1 from 5.6% to 12.0% and posts gains on six other benchmarks."
+    }
+  ]
+}

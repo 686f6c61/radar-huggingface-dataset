@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "openbmb/MiniCPM-V-4.7-35B-A3B : r/LocalLLaMA - Reddit",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x47taj/openbmbminicpmv4735ba3b/?tl=de",
-      "snippet": "vor 3 Tagen ... 247 votes, 78 comments. gguf's: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf \"MiniCPM-V 4.7 ist das neueste Modell der ..."
-    },
-    {
-      "title": "OpenBMB/MiniCPM-V: See, hear, and interact on your local devices.",
-      "url": "https://github.com/openbmb/MiniCPM-V",
-      "snippet": "MiniCPM-V 4.7 — A new chapter in on-device multimodal AI. 35B. MiniCPM-V & MiniCPM-o · See, hear, and interact on your local devices. MiniCPM-V ..."
-    },
-    {
-      "title": "MiniCPM V 4.7 35B A3B | AI Model - There's An AI For That",
-      "url": "https://theresanaiforthat.com/model/minicpm-v-4-7-35b-a3b/",
-      "snippet": "vor 2 Tagen ... MiniCPM-V 4.7 35B-A3B is OpenBMB's open-source Mixture-of-Experts multimodal model for single-image, multi-image, and video understanding, ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=minicpm-v",
-      "snippet": "Models · openbmb/MiniCPM-V-4.7-35B-A3B · openbmb/MiniCPM-V-4.7-1B · openbmb/MiniCPM-V-4.7-35B-A3B-gguf · openbmb/MiniCPM-V-4.7-1B-gguf · AtomicChat/MiniCPM-V-4.7-35B ..."
-    },
-    {
-      "title": "Laurence Moroney 󠁧󠁢󠁷󠁬󠁳󠁿 on X: \"Can a 35B mixture ...",
-      "url": "https://x.com/lmoroney/status/2110102148394430465",
-      "snippet": "vor 2 Tagen ... OpenBMB says yes, and the way they got there is a nice lesson in on-device engineering. MiniCPM-V 4.7 35B-A3B is the first MoE in the MiniCPM-V ..."
-    }
-  ]
+  "sources": []
 }

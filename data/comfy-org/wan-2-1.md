@@ -2,105 +2,86 @@
 
 ## Resumen
 
-Comfy-Org/Wan-2.1 no es un modelo único, sino un repositorio de reempaquetado de la familia Wan 2.1 (desarrollada originalmente por Wan-AI, el equipo de vídeo de Alibaba) en archivos `safetensors` de tipo *single-file* listos para cargarse directamente en ComfyUI. El repositorio, mantenido por Comfy-Org, agrupa las variantes text-to-video (T2V), image-to-video (I2V), first-last-frame-to-video (FLF2V), VACE (control de vídeo, inpainting, outpainting y reference-to-video), Fun V1.1 (control y control de cámara), MAGREF, Wan-Alpha (canal alfa) e InfiniteTalk (doblaje guiado por audio), además del text encoder umT5-XXL, el VAE de Wan 2.1 y las LoRAs y parches asociados.
+Wan 2.1 es una familia de modelos de difusión para generación de vídeo desarrollada originalmente por Wan-AI (Alibaba) y redistribuida por Comfy-Org como un repositorio de archivos únicos ("single-file") optimizados para su uso directo en ComfyUI. El repositorio no contiene un modelo único, sino un empaquetado de más de una docena de variantes de la familia Wan 2.1: text-to-video (T2V), image-to-video (I2V), first-last-frame-to-video (FLF2V), VACE (control de vídeo), así como los derivados Fun-Control, Fun-Camera e InP de alibaba-pai, además de adaptaciones como MAGREF, Wan-Alpha e InfiniteTalk.
 
-El problema que resuelve es puramente operativo: los pesos originales están dispersos en catorce repositorios con estructuras de carpetas y convenciones de nombres distintas, lo que obliga a descargar, renombrar y colocar manualmente cada componente. Este repositorio consolida 24 archivos de modelos de difusión en una jerarquía de carpetas documentada y con nombres normalizados (`diffusion_models/`, `text_encoders/`, `vae/`, `loras/`, `model_patches/`, `clip_vision/`), con variantes en fp16, bf16, fp8_e4m3fn y fp8_scaled.
+La familia Wan 2.1 cubre dos escalas de parámetros: variantes de 1.3B (orientadas a inferencia en hardware de consumo) y variantes de 14B (mayor calidad, resoluciones de 480p y 720p). El repositorio incluye los pesos en múltiples precisiones (fp16, bf16, fp8_e4m3fn, fp8_scaled) junto con el text encoder UMT5-XXL, el VAE de Wan 2.1 y el encoder de visión CLIP, todo empaquetado para colocarse directamente en las carpetas de ComfyUI.
 
-Su relevancia actual es alta dentro del ecosistema de generación de vídeo: acumula 4.384.259 descargas y 1031 likes, con un tamaño de repositorio de 543,8 GB, y cubre dos escalas de parámetros (1,3B y 14B) bajo licencia Apache 2.0. Conviene tener claro que la model card de este repositorio no documenta arquitectura interna, datos de entrenamiento ni resultados de benchmarks: es un contenedor de pesos, no una ficha técnica del modelo original.
+Su relevancia actual radica en que es el punto de entrada práctico para usar Wan 2.1 en un entorno ComfyUI sin tener que gestionar manualmente las conversiones y dependencias de los repositorios originales. La licencia Apache 2.0 facilita el uso comercial, y el tamaño del repositorio (549,4 GB) refleja la acumulación de todas las variantes y precisiones disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Difusión (archivos *single-file* para ComfyUI). Pipeline compuesto por modelo de difusión + text encoder umT5-XXL + VAE Wan 2.1. Detalle interno de la red no documentado en la información disponible |
-| Parámetros totales | 1,3B (variantes `1.3B`) y 14B (variantes `14B`), según el nombre de los archivos |
-| Parámetros activos | No aplica: no se documenta arquitectura MoE; las variantes listadas son densas de 1,3B o 14B |
-| Longitud de contexto | No disponible. No aplica en el sentido de LLM: la "ventana" viene determinada por resolución (480p, 720p) y número de fotogramas, no especificado |
-| Tipos de cuantización | fp16, bf16, fp8_e4m3fn, fp8_scaled (según nombres de archivo) |
-| Idiomas soportados | No disponible. El repositorio incluye un text encoder umT5-XXL, pero no se documenta la cobertura de idiomas de los prompts |
-| Licencia | Apache 2.0 |
-| Formato de pesos | `safetensors` *single-file* (librería `diffusion-single-file`) |
-
-Otros datos verificables: ID `Comfy-Org/Wan-2.1`, autor Comfy-Org, región US, creado el 2025-02-25, actualizado el 2026-09-23, pipeline no disponible, tamaño del repositorio 543,8 GB.
+| Arquitectura | Modelo de difusión para vídeo (familia Wan 2.1); detalles de arquitectura interna no disponibles en la información proporcionada |
+| Parametros totales | Variantes de 1.3B y 14B (según el archivo; p. ej. `wan2.1_t2v_1.3B`, `wan2.1_t2v_14B`) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible (modelo de difusión de vídeo; no aplica ventana de contexto de texto) |
+| Tipos de cuantizacion | fp16, bf16, fp8_e4m3fn, fp8_scaled, int8_convrot (text encoder); no se listan GGUF |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
 
-Los archivos indican una topología de difusión en tres piezas: un modelo generativo (en 1,3B o 14B), un codificador de texto umT5-XXL disponible en fp16 y en fp8_e4m3fn escalado, y un VAE propio (`wan_2.1_vae.safetensors`) más un CLIP vision (`clip_vision_h.safetensors`) para las variantes que consumen imagen de entrada. Las resoluciones nominales que aparecen en los nombres de archivo son 480p y 720p; las variantes 14B concentran las tareas de mayor fidelidad (I2V 480p/720p, FLF2V 720p, VACE 14B), mientras que las 1.3B cubren T2V, VACE y los modelos Fun de control e inpainting. Esta información es la que se deduce del inventario de archivos: la model card no describe capas, atención, tipo de transformer ni mecanismo de difusión.
+La información disponible no detalla la arquitectura interna de Wan 2.1 (tipo de backbone, mecanismo de atención, número de tokens de entrenamiento ni composición del dataset). Lo que sí se deduce del repositorio es la estructura del pipeline: un text encoder UMT5-XXL (`umt5_xxl_fp16`, `umt5_xxl_fp8_e4m3fn_scaled`, `umt5_xxl_int8_convrot`), un VAE específico de Wan 2.1 (`wan_2.1_vae.safetensors`) y un encoder de visión CLIP (`clip_vision_h.safetensors`) para las variantes image-to-video. Las variantes Wan-Alpha añaden VAE con canal alfa (`wan_alpha_2.1_vae_alpha_channel` y `wan_alpha_2.1_vae_rgb_channel`) y una LoRA RGBA.
 
-No hay datos de entrenamiento en la información proporcionada: ni número de tokens, ni composición del dataset, ni uso de RLHF/DPO, ni proceso de destilación. Tampoco se documentan innovaciones internas de arquitectura. Lo que sí es verificable a nivel de producto son las capacidades diferenciales empaquetadas: generación entre primer y último fotograma (FLF2V), el conjunto VACE para control de vídeo, inpainting, outpainting y reference-to-video, control explícito de cámara en los modelos Fun V1.1, salida con canal alfa mediante la LoRA `wan_alpha_2.1_rgba_lora` y sus dos VAE específicos (alfa y RGB), y los parches de InfiniteTalk (`single` y `multi`) para doblaje de cuerpo completo sincronizado con audio.
+El repositorio es un repackaging: Comfy-Org redistribuye los pesos originales de Wan-AI y de terceros (alibaba-pai, MAGREF-Video, htdong, MeiGen-AI) en archivos únicos listos para ComfyUI, con conversiones a fp16/bf16/fp8. No se aportan datos sobre el proceso de entrenamiento (RLHF, DPO, número de tokens) en la información proporcionada.
 
 ## Capacidades
 
-- Generación de vídeo texto-a-vídeo (T2V) en variantes de 1,3B y 14B.
-- Generación de vídeo imagen-a-vídeo (I2V) en 480p y 720p con el modelo de 14B.
-- Interpolación y transición entre primer y último fotograma (FLF2V 720p, 14B).
-- Control de vídeo (VACE): vídeo-a-vídeo, reference-to-video, inpainting y outpainting sobre secuencias existentes, en 1,3B y 14B.
-- Control estructural y de cámara mediante la familia Fun V1.1 (Control y Control-Camera, 1,3B y 14B).
-- Inpainting de imagen en las variantes Fun InP.
-- Doblaje de vídeo guiado por audio (InfiniteTalk), con parches para modo *single* y *multi*.
-- Salida con canal alfa (RGBA) mediante Wan-Alpha y su LoRA, útil para composición sobre fondos.
-- Soporte de LoRAs externas y de parches de modelo dentro del ecosistema ComfyUI.
-- No dispone de tool calling, function calling, razonamiento multi-paso ni modo *thinking*: no es un modelo de lenguaje.
+- Generación de vídeo a partir de texto (T2V) en variantes de 1.3B y 14B.
+- Generación de vídeo a partir de imagen (I2V) en 480p y 720p (14B).
+- Generación de vídeo entre primer y último fotograma (FLF2V) en 720p (14B).
+- Control de vídeo mediante VACE: text-to-video, video-to-video, reference-to-video, inpainting, outpainting y first-last-frame.
+- Control de cámara y control estructural mediante las variantes Fun-Control y Fun-Camera (1.3B y 14B).
+- Inpainting de vídeo con la variante Fun-InP (1.3B).
+- Doblaje de vídeo completo con audio mediante el adaptador InfiniteTalk (multi y single).
+- Generación con canal alfa (transparencia) mediante Wan-Alpha (LoRA RGBA y VAE con canal alfa).
+- Integración nativa con ComfyUI mediante workflows predefinidos.
 
 ## Casos de uso
 
-- **Previsualización de spots publicitarios**: generar animáticas en 480p con el modelo T2V de 1,3B para validar guion y ritmo antes de producir, y promocionar a 720p con el de 14B solo en los planos aprobados.
-- **Animación de fotografía de producto**: usar I2V 14B 720p para convertir fotos fijas de catálogo en clips cortos con movimiento de cámara controlado mediante Fun Camera, evitando rodajes por producto.
-- **Transiciones entre planos en postproducción**: FLF2V permite fijar el último fotograma de un plano y el primero del siguiente para generar la transición intermedia de forma coherente.
-- **Rotoscopia y limpieza de metraje**: VACE Inpainting y Outpainting permiten eliminar objetos o extender el encuadre en secuencias ya rodadas, integrándose en un flujo de postproducción existente.
-- **Transferencia de estilo y *restyling* de vídeo**: VACE vídeo-a-vídeo o reference-to-video para reestilizar material grabado manteniendo la estructura temporal del original.
-- **Doblaje y localización de contenido**: InfiniteTalk sincroniza el movimiento corporal y labial con una pista de audio nueva, lo que sirve para localizar vídeos formativos o corporativos a otros idiomas sin regrabar.
-- **Composición con transparencias para VFX**: Wan-Alpha con los VAE de canal alfa y RGB genera clips con canal alfa que se pueden superponer directamente en un compositor.
-- **Generación por lotes dentro de ComfyUI**: los archivos están normalizados para los nodos nativos de carga de `diffusion_models`, `text_encoders` y `vae`, lo que permite versionar los flujos de trabajo como JSON y ejecutarlos en lote o en Comfy Cloud.
+- Generación de clips publicitarios a partir de texto: usar `wan2.1_t2v_14B` en 720p para producir vídeo de calidad comercial sin rodaje, con la variante 1.3B para prototipado rápido.
+- Animación de imágenes fijas para redes sociales: `wan2.1_i2v_14B_720P` convierte una fotografía en un clip animado, útil para contenido de marketing y catálogos.
+- Transiciones entre fotogramas concretos: `wan2.1_flf2v_720p_14B` permite fijar el primer y último fotograma y generar la interpolación, adecuado para secuencias narrativas controladas.
+- Edición y retoque de vídeo existente: las variantes VACE permiten inpainting, outpainting y sustitución de referencias sobre metraje real, útil en postproducción.
+- Doblaje y sincronización labial: el adaptador InfiniteTalk (`wan2.1_infiniteTalk_multi_fp16`) permite redoblaje de cuerpo completo con audio, aplicable a localización de contenido audiovisual.
+- Control de cámara virtual: las variantes Fun-Camera (1.3B y 14B) generan movimientos de cámara definidos, útiles para previsualización y storyboards.
+- Generación con transparencia: Wan-Alpha (LoRA RGBA + VAE alfa) produce vídeo con canal alfa, útil para overlays y composición en pipelines de VFX.
+- Prototipado en hardware de consumo: la variante T2V de 1.3B en fp16 permite iterar en GPU de gama alta de consumo antes de escalar a 14B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de este repositorio es un instructivo de instalación y colocación de archivos, sin métricas de calidad (FVD, CLIPScore, VBench ni similares) ni comparaciones cuantitativas con otros modelos de vídeo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones aritméticas a partir del número de parámetros y del tipo de dato de cada archivo; el autor no publica requisitos oficiales.
-
-- **VRAM solo para pesos del modelo de difusión**: 14B en fp16/bf16 ≈ 28 GB; 14B en fp8 ≈ 14 GB; 1,3B en fp16/bf16 ≈ 2,6 GB.
-- **Overhead adicional**: hay que sumar el text encoder umT5-XXL (disponible en fp16 y en fp8 escalado, lo que sugiere que su huella es significativa) y el VAE. La cifra exacta no está disponible.
-- **GPU de datacenter**: A100 40 GB u 80 GB y H100 para las variantes 14B en fp16/bf16 sin compromisos; RTX 6000 Ada (48 GB) como alternativa de una sola tarjeta.
-- **GPU de consumo**: RTX 4090 (24 GB) puede ejecutar las variantes 14B en fp8 con descarga de bloques a RAM; las variantes 1,3B en fp16 caben en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070).
-- **Despliegue**: ComfyUI (nativo, con flujos oficiales para cada variante), ComfyUI Desktop y Comfy Cloud. vLLM, llama.cpp, Ollama y TGI no aplican: son servidores de LLM, no de difusión.
-- **Latencia y throughput**: no disponibles. Dependen de resolución, número de fotogramas, pasos de muestreo y precisión, y no se publican cifras.
+- VRAM estimada: no disponible de forma explícita en la información proporcionada. Como referencia orientativa por tamaño de pesos: las variantes de 1.3B en fp16 ocupan del orden de 2,6 GB solo en pesos del modelo de difusión, mientras que las de 14B en fp16 rondan los 28 GB; a ello hay que sumar el text encoder UMT5-XXL y el VAE.
+- Las variantes de 14B en fp8 (`fp8_e4m3fn`, `fp8_scaled`) reducen el peso del modelo de difusión aproximadamente a la mitad respecto a fp16, lo que facilita su despliegue en GPU con menos VRAM.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, las variantes de 14B en fp16 requieren GPU de clase profesional (A100/H100) o configuraciones multi-GPU; las de 1.3B son las candidatas para GPU de consumo.
+- Cabe en GPU de consumo: las variantes de 1.3B en fp16/bf16 son las únicas plausibles en GPU de consumo según el tamaño de pesos; las de 14B en fp8 podrían requerir GPU de gama alta con 24 GB o más, aunque no se confirma en la información.
+- Opciones de despliegue: ComfyUI es el entorno objetivo (librería `diffusion-single-file`). No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo de difusión de vídeo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Modalidades | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Wan 2.1 (este repositorio), 1.3B | 1,3B | T2V, VACE, control, inpainting | Apache 2.0 | Empaquetado single-file para ComfyUI; 4,38 M de descargas |
-| Wan 2.1 (este repositorio), 14B | 14B | T2V, I2V 480p/720p, FLF2V, VACE, control de cámara, alfa, doblaje | Apache 2.0 | Igual que la fila anterior |
-| HunyuanVideo | 13B (dato de referencia general) | T2V, I2V | Licencia comunitaria propia de Tencent | Pesos abiertos; integración en ComfyUI vía nodos de terceros |
-| CogVideoX-5B | 5B (dato de referencia general) | T2V, I2V, vídeo-a-vídeo | Apache 2.0 | Pesos abiertos en Hugging Face; integración en ComfyUI |
-| LTX-Video | No disponible con fiabilidad | T2V, I2V | Licencia propia del proyecto | Pesos abiertos; integración en ComfyUI |
-
-Solo las dos primeras filas están verificadas contra la información proporcionada; las tres alternativas se incluyen como referencia de categoría (generación de vídeo con pesos abiertos) y sus cifras deben contrastarse en sus repositorios antes de tomar una decisión. En licencia, Wan 2.1 es la opción más simple de las comparadas al ser Apache 2.0 en todas sus variantes empaquetadas aquí.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de generación de vídeo que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo original**: es un reempaquetado. Cualquier problema de calidad, sesgo o comportamiento proviene de los pesos de Wan-AI, Alibaba PAI y los derivados comunitarios, no de Comfy-Org.
-- **Licencias de los derivados**: aunque el repositorio declara Apache 2.0, varios modelos base son *finetunes* de terceros (MAGREF, Wan-Alpha, InfiniteTalk, Fun V1.1). Conviene verificar la licencia de cada derivado antes de un uso comercial.
-- **Riesgo de artefactos**: como todo modelo de difusión de vídeo, puede producir incoherencias temporales, deformaciones anatómicas, texto ilegible en pantalla y deriva de identidad entre fotogramas. No hay métricas publicadas que acoten este riesgo.
-- **Resolución limitada**: las variantes empaquetadas apuntan a 480p y 720p; no se documentan modos de mayor resolución.
-- **Idioma de los prompts**: no se documenta la cobertura del text encoder umT5-XXL ni su calidad por idioma; el comportamiento en castellano no está verificado.
-- **Sin garantías de contenido**: no se documentan filtros de seguridad, moderación ni limitaciones de uso aceptable en esta model card.
-- **Coste de almacenamiento y ancho de banda**: 543,8 GB de repositorio; descargar el conjunto completo no es necesario, pero exige seleccionar archivos por variante.
-- **Compatibilidad**: los archivos están pensados para ComfyUI; fuera de ese ecosistema requieren adaptar la carga de *single-file* a la topología esperada por el pipeline original.
+- El repositorio es un repackaging de terceros: la calidad y el comportamiento dependen de los modelos originales de Wan-AI, alibaba-pai, MAGREF-Video, htdong y MeiGen-AI, no de Comfy-Org.
+- El tamaño del repositorio (549,4 GB) implica una descarga muy costosa; conviene descargar solo los archivos necesarios para el workflow concreto.
+- No se documentan sesgos, tasas de alucinación ni limitaciones idiomáticas en la información disponible.
+- La licencia es Apache 2.0, lo que permite uso comercial, pero deben verificarse las licencias de los modelos base y derivados referenciados (algunos podrían tener condiciones adicionales no reflejadas aquí).
+- No se especifican requisitos mínimos de hardware ni límites de resolución o duración de vídeo en la información proporcionada.
+- Al ser modelos de difusión de vídeo, el coste computacional por generación es elevado y no apto para inferencia en tiempo real en hardware de consumo para las variantes de 14B.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Wan-2.1
-- Ejemplos oficiales de Wan en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan
-- Plantillas de flujos de trabajo: https://github.com/Comfy-Org/workflow_templates
-- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
-- Documentación de ComfyUI: https://docs.comfy.org/
-- Comfy (sitio principal): https://comfy.org/
-- Comfy Desktop: https://comfy.org/download
-- Comfy Cloud: https://cloud.comfy.org/
+- Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Ejemplos de Wan en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan
+- Plantillas de workflows: https://github.com/Comfy-Org/workflow_templates
 - Modelos base originales:
   - https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
   - https://huggingface.co/Wan-AI/Wan2.1-T2V-14B

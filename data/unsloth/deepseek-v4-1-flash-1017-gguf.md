@@ -2,65 +2,56 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI. Según la model card, la revisión mejora el rendimiento en razonamiento, programación, tareas agénticas y benchmarks visuales, y al mismo tiempo reduce el tiempo de ejecución de tareas y la longitud de las salidas, lo que se traduce en un menor coste por tarea y en una mejora del frente de Pareto rendimiento-coste en distintos entornos de agentes. El modelo es multimodal (pipeline `image-text-to-text`) y se publica bajo licencia MIT.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash desarrollada por DeepSeek AI, publicada en octubre de 2026. Se trata de un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, tareas agénticas y comprensión visual. La versión 1017 introduce mejoras sustanciales en benchmarks de razonamiento, coding y agentes, además de reducir el tiempo de ejecución de tareas y la longitud de las salidas, lo que mejora la relación rendimiento-coste en distintos arneses de agentes.
 
-La ficha que nos ocupa corresponde a la réplica cuantizada en GGUF publicada por unsloth (identificador `unsloth/DeepSeek-V4.1-Flash-1017-GGUF`), con 748.494.643.824 parámetros totales según los datos de safetensors y un repositorio de 517,5 GB. La model card del repositorio indica explícitamente que se trata de un trabajo en curso ("WIP - quants and implementation will be posted soon"), por lo que las cuantizaciones concretas todavía no están publicadas en el momento de redactar esta ficha. El modelo original declara una ventana de contexto de 1M de tokens y `max_tokens` recomendado de al menos 256K.
+El repositorio analizado es la cuantización GGUF publicada por Unsloth, que emplea su formato Dynamic 3.0 GGUF e incluye un engrama (matriz de embeddings) que puede intercambiarse entre MXFP8 y otros formatos como Q6_K, Q5_K o IQ4_NL. El modelo base cuenta con 748.494.643.824 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos densos de gran escala (no se dispone de información que confirme una arquitectura MoE ni el número de parámetros activos).
 
-La relevancia actual del modelo está en su posicionamiento: compite con modelos propietarios de primera línea en benchmarks de agentes y visión (Terminal-Bench 4.0, Agents' Last Exam, BabyVision), mantiene licencia MIT y publica una implementación de referencia del formato de prompt en Python y una librería en Rust (`deepseek-recipe`) para integración en producción, al no incluir plantilla Jinja de chat.
+La relevancia actual del modelo radica en su licencia MIT, que permite uso comercial sin restricciones adicionales, y en su disponibilidad en formato GGUF para ejecución local. El repositorio acumula más de 1,5 millones de descargas y 421 likes, lo que indica una adopción considerable por parte de la comunidad.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No detallada en la informacion disponible; se distribuye para la libreria `transformers` y el informe tecnico se titula "Pushing the Limits of KV Cache Compression" |
-| Parametros totales | 748.494.643.824 (748,5 B) |
-| Parametros activos | No disponible (la informacion proporcionada no indica si es un modelo MoE) |
-| Longitud de contexto | 1M tokens (`context_window` en los parametros de muestreo recomendados) |
-| Tipos de cuantizacion | No disponibles: el repositorio es GGUF, pero la model card indica "WIP - quants and implementation will be posted soon" |
-| Idiomas soportados | No disponible (no se declara listado de idiomas) |
+| Arquitectura | Transformer multimodal image-text-to-text (detalles internos no disponibles) |
+| Parámetros totales | 748.494.643.824 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | GGUF Dynamic 3.0 de Unsloth; variantes de 1-bit, 3-bit y precisión completa; engrama intercambiable entre MXFP8, Q6_K, Q5_K e IQ4_NL |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (repo de cuantizaciones); el modelo original se publica en safetensors |
-| Tamano del repositorio | 517,5 GB |
-| Parametros de muestreo recomendados | `temperature` 1.0, `top_p` 1.0, `max_tokens` >= 256K |
-| Plantilla de chat | No incluye plantilla Jinja; se sustituye por `encoding/encoding.py` y `deepseek-recipe` |
-| Fecha de creacion / actualizacion | 2026-10-17 / 2026-10-18 |
-| Descargas / likes | 0 / 27 |
+| Formato de pesos | GGUF (repositorio de cuantización); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna del modelo: no se especifica si se trata de un transformer denso, un MoE o una variante hibrida, ni se detalla el numero de tokens de entrenamiento, la composicion del dataset o las etapas de alineacion (RLHF, DPO u otras). El unico indicio tecnico disponible es el titulo del informe tecnico citado, "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression", que situa la compresion de la cache KV como una de las lineas de trabajo centrales del modelo; esto es coherente con una ventana de contexto de 1M de tokens y con el objetivo declarado de reducir el coste de ejecucion.
+La información disponible no detalla la arquitectura interna del modelo más allá de su naturaleza multimodal image-text-to-text. Se desconoce si emplea atención lineal, decodificación especulativa u otras innovaciones. El modelo base es deepseek-ai/DeepSeek-V4.1-Flash-1017, y esta versión se describe como una actualización menor de DeepSeek-V4.1-Flash con mejoras en razonamiento, coding, tareas agénticas y benchmarks visuales, además de una reducción del tiempo de ejecución y de la longitud de las salidas.
 
-Lo que si documenta la model card es la capa de interaccion: esta version no incluye plantilla de chat en formato Jinja, sino una implementacion de referencia autocontenida en Python (`encoding/encoding.py`) con casos de prueba para conversaciones multiturno, tool calling, modo de razonamiento (thinking), esfuerzo de razonamiento numerico, mensajes de sistema en mitad de la conversacion y contenido de imagen intercalado. Para produccion se publica ademas `deepseek-recipe`, un conjunto de librerias en Rust con bindings de Python que convierte peticiones de Messages, Chat Completions y Responses API al formato Conversation, las codifica en prompts o token IDs de DeepSeek V4 y V4.1, y parsea la salida del modelo en respuestas completas o en streaming, cubriendo thinking, tool calls, imagenes y parametros de generacion. La inferencia, la ejecucion de herramientas y el transporte HTTP quedan fuera de esa libreria.
+Un aspecto técnico destacable es la ausencia de plantilla de chat en formato Jinja. En su lugar, el modelo incluye una carpeta `encoding` con una implementación de referencia en Python (`encoding.py`) que cubre conversaciones multi-turno, tool calling, modo thinking, esfuerzo de razonamiento numérico, mensajes de sistema en mitad de la conversación y contenido de imagen intercalado. El repositorio GGUF de Unsloth incorpora además un engrama que puede intercambiarse entre distintos formatos de cuantización. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el benchmark HLE sin herramientas reporta 42,6 (44,0 en el subconjunto solo texto), frente a 36,8 de la version anterior.
-- Programacion y tareas de terminal: evaluado en Terminal-Bench 4.0 (42,3), DeepSWE v1.1 (77,0), ProgramBench (29,1) y NL2Repo-Bench (68,2).
-- Capacidades agénticas: evaluado en Agents' Last Exam (35,4), Automation-Bench v1.0.6 (60,5) y Apex Bench v1.1 (72,1); la model card menciona explicitamente el uso con distintos "agent harnesses".
-- Vision y documentos: pipeline `image-text-to-text`, con resultados en Chartography con herramientas (83,0), BabyVision con herramientas (92,5) y ZeroBench-main con herramientas (51,0).
-- Tool calling / function calling: soportado y cubierto por los casos de prueba de `encoding.py` y por `deepseek-recipe`.
-- Modo de razonamiento (thinking): contemplado en el formato de prompt, junto con un parametro de esfuerzo de razonamiento numerico.
-- Ventana de contexto larga: 1M de tokens declarados, con `max_tokens` recomendado de 256K o superior.
-- Mensajes de sistema en mitad de la conversacion: soportados por el codificador de referencia.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Generación de texto y razonamiento avanzado, con modo thinking y esfuerzo de razonamiento numérico configurable.
+- Generación y comprensión de código, con resultados destacados en benchmarks como DeepSWE v1.1, ProgramBench y NL2Repo-Bench.
+- Capacidades agénticas: ejecución de tareas multi-paso, uso de herramientas y operación en arneses como Claude Code y Mini-SWE-V2.
+- Tool calling y function calling, con soporte documentado en la implementación de referencia de codificación.
+- Comprensión visual: procesamiento de imágenes intercaladas con texto, con resultados en benchmarks como Chartography, BabyVision y ZeroBench.
+- Soporte de mensajes de sistema en mitad de la conversación.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Agentes de codificacion autonoma: el modelo puede operar en un bucle de tipo SWE sobre repositorios reales (DeepSWE v1.1: 77,0; NL2Repo-Bench: 68,2), generando parches y ejecutando comandos en terminal; la ventana de 1M de tokens permite mantener el arbol de ficheros y el historial de intentos en contexto sin truncados agresivos.
-- Automatizacion de tareas de terminal y CI/CD: con 42,3 en Terminal-Bench 4.0 y soporte de tool calling, encaja como agente que interpreta fallos de build, lanza comandos y propone correcciones dentro de un pipeline, usando `deepseek-recipe` para parsear tool calls en streaming.
-- Analisis de documentacion tecnica y graficos: la puntuacion de 83,0 en Chartography con herramientas y el pipeline `image-text-to-text` permiten extraer datos de diagramas, capturas de dashboards y figuras de papers, combinando vision con llamadas a herramientas de calculo.
-- Asistencia a investigacion y razonamiento cientifico: 42,6 en HLE sin herramientas (44,0 en el subconjunto de texto) lo hace util para tareas de resolucion de problemas de varios pasos donde se necesita cadena de razonamiento larga y verificable.
-- Extraccion y sintesis sobre corpus extensos: con 1M de tokens de contexto se pueden procesar actas, contratos o documentacion completa en una sola llamada, reduciendo la necesidad de pipelines RAG con chunking agresivo.
-- Agentes de automatizacion de back-office: 60,5 en Automation-Bench v1.0.6 sugiere uso en flujos multi-paso sobre aplicaciones (rellenar formularios, conciliar registros), donde el modelo alterna razonamiento, tool calls y verificacion del resultado.
-- Evaluacion comparativa interna de modelos: util como referencia open source (MIT) contra modelos propietarios en pruebas de agentes, al poder desplegarse on-premise y auditarse.
+- Automatización de tareas de ingeniería de software: el modelo puede integrarse en arneses agénticos como Claude Code o Mini-SWE-V2 para resolver tareas de terminal y repositorios, con resultados de 42,3 en Terminal-Bench 4.0 y 77,0 en DeepSWE v1.1.
+- Generación de código en producción: su rendimiento en ProgramBench (29,1) y NL2Repo-Bench (68,2) lo hace adecuado para pipelines de generación y revisión de código, con soporte de tool calling para integración en CI/CD.
+- Análisis de documentos con gráficos: la capacidad visual y los resultados en Chartography con herramientas (83,0) permiten extraer información de gráficos e informes financieros o científicos.
+- Agentes autónomos de larga duración: los resultados en Agents' Last Exam (35,4) y Automation-Bench v1.0.6 (60,5) respaldan su uso en flujos de automatización multi-paso.
+- Asistentes conversacionales con contexto visual: la implementación de referencia soporta imágenes intercaladas y conversaciones multi-turno, útil en soporte técnico con capturas de pantalla.
+- Razonamiento científico y matemático: HLE sin herramientas de 42,6 (44,0 en el subconjunto solo texto) lo sitúa como opción para tareas de razonamiento complejo.
+- Despliegue local en hardware de gama alta: la disponibilidad de GGUF de 1-bit y 3-bit permite ejecutarlo en dispositivos con 128 GB o 256 GB de RAM, respectivamente.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card del modelo original (la columna DS-V4.1-Flash-1017 corresponde a esta revision):
-
 | Benchmark | DS-V4.1-Flash-1017 | DS-V4.1-Flash | K3 | GLM-5.3 | GPT-5.6 Sol | Opus 5 |
 |---|---|---|---|---|---|---|
-| HLE w/o tools | 42,6 (44,0†) | 36,8 (39,1†) | 43,5 | 42,0† | 44,5 | 56,3 |
+| HLE sin herramientas | 42,6 (44,0†) | 36,8 (39,1†) | 43,5 | 42,0† | 44,5 | 56,3 |
 | Terminal-Bench 4.0 | 42,3 | 31,2 | 12,6 | 37,9 | 39,9 | 51,8 |
 | DeepSWE v1.1 | 77,0 | 74,2 | 67,5 | 66,9 | 73,0 | 74,0 |
 | ProgramBench | 29,1 | 20,3 | 17,5 | 19,0 | 23,0 | 37,0 |
@@ -68,57 +59,54 @@ Resultados publicados en la model card del modelo original (la columna DS-V4.1-F
 | Automation-Bench v1.0.6 | 60,5 | 54,8 | 46,7 | 48,8 | 45,8 | 50,3 |
 | Agents' Last Exam | 35,4 | 31,8 | 27,6 | 28,5 | 26,7 | 28,6 |
 | Apex Bench v1.1 | 72,1 | 64,6 | 47,8 | 56,6 | 54,3 | 65,8 |
-| Chartography (w/tools) | 83,0 | 78,9 | 68,1 | — | 79,9 | 84,0 |
-| BabyVision (w/tools) | 92,5 | 89,6 | 85,7 | — | 88,9 | 94,1 |
-| ZeroBench-main (w/tools) | 51,0 | 49,0 | 41,0 | — | 53,0 | 52,0 |
+| Chartography (con herramientas) | 83,0 | 78,9 | 68,1 | — | 79,9 | 84,0 |
+| BabyVision (con herramientas) | 92,5 | 89,6 | 85,7 | — | 88,9 | 94,1 |
+| ZeroBench-main (con herramientas) | 51,0 | 49,0 | 41,0 | — | 53,0 | 52,0 |
 
-Notas de la model card: la marca † indica el subconjunto solo texto de HLE; Terminal-Bench 4.0 se evalua con el harness de Claude Code y DeepSWE v1.1 con el harness Mini-SWE-V2. No se han publicado en la informacion disponible resultados de MMLU, HumanEval ni GSM8K.
+† denota el subconjunto solo texto de HLE. Terminal-Bench 4.0 se evalúa con el arnés Claude Code y DeepSWE v1.1 con Mini-SWE-V2.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculo propio a partir de los 748,5 B de parametros, no publicado por el autor): ~1,5 TB en FP16/BF16; ~795 GB en cuantizacion de 8 bits; ~420-450 GB en cuantizaciones de 4-5 bits.
-- Estos tamanos excluyen la cache KV: con 1M de tokens de contexto y el enfasis del informe tecnico en compresion de KV cache, el consumo adicional es significativo y no hay cifras publicadas.
-- GPU recomendadas: no hay recomendaciones oficiales en la informacion disponible; por volumen de pesos, el despliegue en FP16 requiere agregados multi-GPU de clase H100/H200/B200 o A100 de 80 GB en numero elevado, y en 4 bits sigue requiriendo multiples nodos.
-- No cabe en GPU de consumo: ni una RTX 4090 (24 GB) ni una RTX 5090 permiten alojar el modelo completo; solo tendria sentido con tecnicas de offload masivo a RAM/SSD, con latencias muy altas.
-- Opciones de despliegue: llama.cpp y derivados para los ficheros GGUF (cuando se publiquen las cuantizaciones), vLLM o TGI para los pesos completos, y el tag `endpoints_compatible` sugiere compatibilidad con endpoints al estilo de la API de Hugging Face. Ollama no es viable a este tamano en hardware de consumo.
-- Integracion de prompt: usar `encoding/encoding.py` o `deepseek-recipe` (Rust con bindings de Python) para construir prompts y parsear thinking, tool calls e imagenes.
-- Latencia y throughput: no disponibles; la model card solo afirma una reduccion del tiempo de ejecucion de tareas y de la longitud de salida respecto a DeepSeek-V4.1-Flash.
+- VRAM/RAM estimada: el modelo requiere al menos 128 GB de RAM para la cuantización de 1-bit, 256 GB para la de 3-bit y 320 GB para precisión completa, según la guía de Unsloth.
+- GPU recomendadas: no disponible en la información proporcionada. Por el tamaño del modelo, el despliegue en GPU requiere múltiples aceleradores de gama profesional (A100, H100) o configuraciones multi-GPU.
+- GPU de consumo: no cabe en GPU de consumo individual; el despliegue práctico pasa por CPU con RAM abundante o configuraciones multi-GPU profesionales.
+- Opciones de despliegue: llama.cpp mediante el PR de Unsloth, la aplicación Unsloth Desktop, y endpoints compatibles (tag `endpoints_compatible`). El modelo base usa la librería transformers.
+- Latencia y throughput: Unsloth declara hasta 3 veces más velocidad de inferencia frente a otros repositorios basados en ngram/CPU/VRAM. No se proporcionan cifras absolutas de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento (referencia) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 748,5 B | 1M tokens | HLE 42,6; Terminal-Bench 4.0 42,3; DeepSWE 77,0 | MIT | Pesos abiertos (original en safetensors; GGUF en preparacion) |
-| DeepSeek-V4.1-Flash | No disponible | 1M tokens (heredado del mismo formato) | HLE 36,8; Terminal-Bench 4.0 31,2; DeepSWE 74,2 | MIT | Pesos abiertos |
-| K3 | No disponible | No disponible | HLE 43,5; Terminal-Bench 4.0 12,6; DeepSWE 67,5 | No disponible | No disponible |
-| GLM-5.3 | No disponible | No disponible | HLE 42,0†; Terminal-Bench 4.0 37,9; DeepSWE 66,9 | No disponible | No disponible |
-| GPT-5.6 Sol | No disponible | No disponible | HLE 44,5; Terminal-Bench 4.0 39,9; DeepSWE 73,0 | Propietaria | API |
-| Opus 5 | No disponible | No disponible | HLE 56,3; Terminal-Bench 4.0 51,8; DeepSWE 74,0 | Propietaria | API |
-
-La comparacion se limita a los benchmarks publicados en la model card; no se dispone de datos de parametros, contexto ni licencia de los modelos de referencia.
+| Modelo | Parámetros | Contexto | HLE (sin herramientas) | Terminal-Bench 4.0 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017 | 748,5 B | no disponible | 42,6 (44,0†) | 42,3 | MIT | Hugging Face (GGUF y base) |
+| K3 | no disponible | no disponible | 43,5 | 12,6 | no disponible | no disponible |
+| GLM-5.3 | no disponible | no disponible | 42,0† | 37,9 | no disponible | no disponible |
+| GPT-5.6 Sol | no disponible | no disponible | 44,5 | 39,9 | propietaria | API |
+| Opus 5 | no disponible | no disponible | 56,3 | 51,8 | propietaria | API |
 
 ## Limitaciones y advertencias
 
-- Repositorio en estado WIP: la model card indica que las cuantizaciones y la implementacion se publicaran proximamente; en el momento de la consulta el repo no ofrece ficheros GGUF utilizables ni descargas registradas (0 descargas).
-- Ausencia de plantilla Jinja de chat: no se puede usar `tokenizer.apply_chat_template` de forma directa; hay que integrar `encoding.py` o `deepseek-recipe`, lo que anade trabajo de ingenieria y riesgo de errores de formato en produccion.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; como en cualquier modelo generativo, especialmente en tareas agénticas con tool calling, requiere verificacion de resultados.
-- Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad o robustez en la informacion proporcionada.
-- Idiomas: no se declara listado de idiomas soportados; el rendimiento fuera de ingles y chino no esta documentado.
-- Coste de infraestructura: con 748,5 B de parametros, el despliegue on-premise exige hardware multi-nodo; el coste puede superar el de usar APIs propietarias para cargas bajas.
-- Datos de rendimiento autodeclarados por el autor del modelo, sin verificacion independiente en la informacion disponible.
-- Licencia MIT: permite uso comercial y modificacion, pero conviene revisar los terminos del modelo original `deepseek-ai/DeepSeek-V4.1-Flash` y las condiciones de los datasets de entrenamiento, no detalladas.
-- Los resultados de busqueda web realizados no devolvieron enlaces relevantes al modelo (solo contenido no relacionado sobre Instagram), por lo que no hay fuentes externas verificables adicionales.
+- No se dispone de información sobre sesgos conocidos del modelo.
+- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se han publicado evaluaciones específicas de factualidad en la información disponible.
+- La longitud de contexto no está documentada, lo que dificulta planificar despliegues con ventanas largas.
+- No se especifican los idiomas soportados; el rendimiento en castellano no está verificado.
+- El modelo no incluye plantilla de chat Jinja; es necesario usar la implementación de referencia en Python o adaptar el pipeline, lo que añade complejidad de integración en producción.
+- El tamaño del repositorio GGUF es de 4373,9 GB, lo que exige almacenamiento considerable y descargas largas.
+- Aunque la licencia es MIT, conviene verificar las licencias de las dependencias de despliegue (llama.cpp, Unsloth Desktop) y de los componentes opcionales de Unsloth.
+- El despliegue en local requiere al menos 128 GB de RAM, lo que excluye la mayoría de estaciones de trabajo convencionales.
 
 ## Enlaces
 
-- Repositorio GGUF (unsloth): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
-- Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- Informe tecnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Implementacion de referencia del prompt: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF/blob/main/encoding/README.md
-- Instrucciones de inferencia: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF/blob/main/inference/README.md
-- Libreria deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
-- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
-- Web oficial: https://www.deepseek.com/
-- Chat: https://chat.deepseek.com/
-- Twitter/X: https://twitter.com/deepseek_ai
-- Contacto: service@deepseek.com
+- Repositorio Hugging Face: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Modelo previo: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Guía de ejecución de Unsloth: https://unsloth.ai/docs/models/deepseek-v4.1-flash
+- Guía de cuantización dinámica Unsloth: https://unsloth.ai/docs/basics/unsloth-dynamic-v3.0-gguf
+- Aplicación Unsloth Desktop: https://unsloth.ai/docs/desktop
+- Repositorio GitHub de Unsloth: https://github.com/unslothai/unsloth
+- Documentación de Unsloth: https://unsloth.ai/docs
+- Discord de Unsloth: https://discord.gg/unsloth
+- Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
+- Página oficial de DeepSeek: https://www.deepseek.com/
+- Chat de DeepSeek: https://chat.deepseek.com/
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
+- Twitter de DeepSeek: https://twitter.com/deepseek_ai

@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Pai1.0-VL-3B-Instruct-GGUF",
+  "slug": "mradermacher-pai1-0-vl-3b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Pai1.0-VL-3B-Instruct-GGUF",
+  "created_at": "2025-06-12T16:34:26.000Z",
+  "updated_at": "2026-11-19T04:20:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30124055232,
+  "storage_human": "30.1 GB",
+  "context_length": 128000,
+  "base_model": "duandeyun/Pai1.0-VL-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

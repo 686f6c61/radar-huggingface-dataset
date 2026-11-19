@@ -2,106 +2,98 @@
 
 ## Resumen
 
-Gemma 4 12B es un modelo de lenguaje de tamano medio desarrollado por Google, distribuido originalmente en `google/gemma-4-12B-it` y empaquetado aqui por la comunidad `litert-community` en formato LiteRT-LM. Esta version no introduce pesos nuevos: es una cuantizacion del modelo instructivo base, optimizada para ejecucion local en dispositivos de escritorio mediante el runtime LiteRT de Google. El archivo principal, `gemma-4-12B-it.litertlm`, ocupa aproximadamente 6,9 GB en disco e incorpora soporte para texto, vision y audio, ademas de Multi-Token Prediction (MTP) para decodificacion especulativa.
+Gemma 4 12B es un modelo de lenguaje de tamano medio desarrollado por Google, derivado de la misma investigacion y tecnologia empleadas en la familia Gemini. Esta ficha concreta, publicada por la comunidad `litert-community`, distribuye el modelo base `google/gemma-4-12B-it` en formato LiteRT-LM (`.litertlm`), un contenedor optimizado para inferencia en dispositivo (on-device) sobre macOS, Linux, Windows y, de forma mas limitada, en navegador.
 
-La relevancia de este empaquetado radica en que traslada un modelo de 12 mil millones de parametros al entorno de escritorio (macOS, Linux y Windows) con aceleracion por GPU, sin depender de la nube. Segun la model card, el modelo soporta hasta 128k tokens de contexto en dispositivos con memoria suficiente, aunque los benchmarks publicados se ejecutaron con 4096 tokens de contexto. El repositorio acumula mas de 15.000 descargas y 69 likes desde su creacion en junio de 2026.
+El modelo resuelve el problema de desplegar un LLM multimodal de 12.000 millones de parametros en hardware de escritorio sin depender de la nube, preservando la privacidad y permitiendo uso sin conexion. Incorpora soporte para texto, vision y audio, ademas de Multi-Token Prediction (MTP) para decodificacion especulativa y reduccion de latencia. La ventana de contexto alcanza hasta 128.000 tokens en equipos con memoria suficiente.
 
-La licencia declarada es Apache 2.0, lo que facilita su integracion en productos comerciales, si bien conviene verificar las condiciones del modelo base de Google. El paquete requiere LiteRT-LM v0.17 o superior para funcionar.
+La relevancia actual radica en que LiteRT-LM es la misma pila tecnologica que impulsa Google AI Edge Gallery: una capa de orquestacion sobre LiteRT (con XNNPack para CPU y ML Drift para GPU) que anade gestion de KV-cache, plantillas de prompt y function calling. El repositorio ocupa 59,6 GB y acumula mas de 14.000 descargas, lo que refleja interes en despliegues locales de modelos multimodales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma 4; detalles especificos no disponibles) |
-| Parametros totales | 12B (segun denominacion del modelo) |
-| Parametros activos | no disponible |
-| Longitud de contexto | hasta 128k tokens (limitado por memoria del dispositivo); benchmarks con 4096 tokens |
-| Tipos de cuantizacion | cuantizacion integrada en formato LiteRT-LM (esquema exacto no disponible) |
+| Arquitectura | Transformer (familia Gemma 4, derivada de Gemini); detalles internos no disponibles |
+| Parametros totales | 12.000 millones (segun denominacion del modelo) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | hasta 128.000 tokens en dispositivos con memoria suficiente; benchmarks ejecutados con 4.096 tokens |
+| Tipos de cuantizacion | no disponible (el artefacto distribuido es un unico archivo `.litertlm` de 6.883 MB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM) |
-| Modalidades | texto, vision y audio |
-| Tamano en disco | ~6883 MB |
-| Version minima del runtime | LiteRT-LM v0.17 o superior |
-| Modelo base | google/gemma-4-12B-it |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en `google/gemma-4-12B-it` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia Gemma 4 de Google, construida con la misma investigacion y tecnologia empleada en los modelos Gemini, segun indica la model card. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detalla si la arquitectura incorpora variantes como atencion lineal o mezcla de expertos.
+La informacion disponible no detalla la arquitectura interna del transformer ni la composicion del dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO. La model card remite al repositorio del modelo base `google/gemma-4-12B-it` para esos detalles, que no se incluyen en la informacion proporcionada.
 
-La innovacion destacable de este empaquetado es la integracion de Multi-Token Prediction (MTP), que habilita decodificacion especulativa y reduce la latencia de inferencia. El runtime LiteRT-LM actua como capa de orquestacion sobre LiteRT, con aceleracion mediante XNNPack para CPU y ML Drift para GPU, y anade gestion de KV-cache, plantillas de prompt y soporte de function calling. Es la misma pila tecnologica que utiliza la aplicacion Google AI Edge Gallery.
+La innovacion tecnica destacable en esta distribucion es el soporte de Multi-Token Prediction (MTP), que habilita decodificacion especulativa y reduce la latencia de inferencia. El runtime LiteRT-LM anade sobre LiteRT una capa de orquestacion GenAI con gestion de KV-cache, plantillas de prompt y function calling, con aceleracion por XNNPack en CPU y ML Drift en GPU. El modelo es multimodal nativo (texto, vision y audio) en un unico archivo.
 
 ## Capacidades
 
-- Generacion de texto e instrucciones conversacionales (variante `-it`).
-- Procesamiento de imagenes (vision) directamente en el dispositivo.
-- Procesamiento de audio, segun la model card.
-- Multi-Token Prediction para decodificacion especulativa y menor latencia.
-- Soporte de function calling a traves de las APIs de LiteRT-LM.
-- Ejecucion totalmente local, sin conexion a internet, con privacidad de los datos.
-- Contexto extenso de hasta 128k tokens en hardware con memoria suficiente.
-- Capacidades multilingues: no se detallan los idiomas concretos en la informacion disponible.
-- Razonamiento multi-paso y uso como agente local: mencionado en articulos de terceros sobre la pila LiteRT, sin detalle tecnico en la model card.
+- Generacion de texto y razonamiento conversacional en modo instruct (`-it`).
+- Procesamiento de imagenes (vision) dentro del mismo artefacto `.litertlm`.
+- Procesamiento de audio dentro del mismo artefacto.
+- Multi-Token Prediction (MTP) para decodificacion especulativa y menor latencia.
+- Function calling / tool calling a traves de las APIs de LiteRT-LM.
+- Contexto largo de hasta 128.000 tokens en hardware con memoria suficiente.
+- Inferencia local sin conexion, con privacidad de datos por diseno.
+- Capacidades multilingues: no se especifica la lista de idiomas soportados.
 
 ## Casos de uso
 
-- Asistentes de escritorio privados: el modelo se ejecuta integramente en local mediante LiteRT-LM, de modo que conversaciones y documentos no salen del dispositivo; adecuado para entornos con requisitos estrictos de confidencialidad.
-- Analisis de documentos e imagenes en el puesto de trabajo: la combinacion de vision y contexto largo permite procesar capturas, diagramas o paginas escaneadas junto con instrucciones textuales en una sola sesion.
-- Transcripcion y analisis de audio local: la modalidad de audio habilita resumenes de reuniones o notas de voz sin enviar el audio a servicios externos.
-- Desarrollo de agentes locales: el soporte de function calling en LiteRT-LM permite construir agentes que invocan herramientas del sistema (ficheros, APIs locales) desde una aplicacion de escritorio.
-- Prototipado rapido en portatiles: con ~7,9 GB de memoria GPU en un MacBook Air M4 de 16 GB, el modelo es viable en equipos consumer para pruebas de concepto y demos.
-- Aplicaciones web limitadas: la model card menciona despliegue web "en una capacidad mas limitada", util para demos interactivas en el navegador mediante el Space de Hugging Face.
-- Procesamiento por lotes en estaciones Linux con GPU: con 3548 tokens/s de prefill en una RTX 4090, resulta apto para tareas de extraccion y clasificacion a pequena escala en local.
+- Asistentes de escritorio privados: ejecucion local en macOS, Linux o Windows sin enviar datos a la nube, aprovechando el formato `.litertlm` y el runtime LiteRT-LM para gestionar el KV-cache y las plantillas de prompt.
+- Analisis de documentos e imagenes en local: la modalidad de vision permite extraer informacion de capturas, formularios o graficos sin salir del dispositivo, util en entornos con requisitos de confidencialidad.
+- Transcripcion y comprension de audio on-device: la modalidad de audio habilita resumenes de reuniones o notas de voz procesadas localmente.
+- Automatizacion de agentes con function calling: integracion de llamadas a herramientas mediante las APIs de LiteRT-LM para flujos multi-paso en aplicaciones de escritorio.
+- Prototipado rapido en portatiles consumer: con 6.883 MB en disco y ~7.900 MB de memoria GPU, cabe en un MacBook Air M4 de 16 GB o en una RTX 5080 de 16 GB, facilitando pruebas sin infraestructura dedicada.
+- Demos web interactivas: despliegue limitado en navegador mediante el Space de Hugging Face, adecuado para validacion de concepto y demostraciones.
+- Procesamiento de contexto largo en local: con hasta 128.000 tokens, permite resumir o consultar corpus extensos en equipos con memoria suficiente, ajustando `max_num_tokens` para evitar problemas de memoria.
 
 ## Benchmarks y rendimiento
 
-La model card publica metricas de rendimiento del runtime (no de calidad del modelo) con 1024 tokens de prefill, 256 de decode y contexto de 4096 tokens, con caches inicializadas:
+Los datos publicados corresponden a rendimiento de inferencia con LiteRT-LM (1.024 tokens de prefill y 256 de decode, contexto de 4.096 tokens, caches inicializadas, sin incluir tiempo de carga). No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
-| Dispositivo | Backend | Prefill (tok/s) | Decode (tok/s) | TTFT (s) | Memoria GPU (MB) |
-|---|---|---|---|---|---|
-| NVIDIA RTX 4090 24 GB (Linux) | GPU | 3548 | 69 | 0.3 | ~7790 |
-| MacBook M4 Pro 48 GB | GPU | 297 | 29 | 3.48 | ~7870 |
-| MacBook Air M4 16 GB | GPU | 114 | 15 | 9.13 | ~7900 |
-| NVIDIA RTX 5080 16 GB (Windows) | GPU | 391 | 50 | 2.5 | ~7300 |
-
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+| Dispositivo | Backend | Prefill (tok/s) | Decode (tok/s) | TTFT (s) | Tamano (MB) | Memoria GPU (MB) |
+|---|---|---|---|---|---|---|
+| NVIDIA RTX 4090 24 GB | GPU | 3.548 | 69 | 0,3 | 6.883 | ~7.790 |
+| MacBook M4 Pro 48 GB | GPU | 297 | 29 | 3,48 | 6.883 | ~7.870 |
+| MacBook Air M4 16 GB | GPU | 114 | 15 | 9,13 | 6.883 | ~7.900 |
+| NVIDIA RTX 5080 16 GB | GPU | 391 | 50 | 2,5 | 6.883 | ~7.300 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 7,3-7,9 GB de memoria GPU para el archivo de ~6,9 GB, segun las mediciones de la model card.
-- GPU recomendadas: RTX 4090 (mejor rendimiento medido, 69 tok/s de decode), RTX 5080, y GPUs integradas de Apple (M4 Pro, M4).
-- Cabe en GPU consumer: si; se ha verificado en RTX 4090, RTX 5080 y MacBook Air M4 de 16 GB.
-- Contexto largo: hasta 128k tokens requiere memoria adicional; la model card recomienda reducir `max_num_tokens` si aparecen problemas de memoria.
-- Opciones de despliegue: LiteRT-LM v0.17+ (CLI de escritorio), aplicacion web via Hugging Face Space, y las APIs de LiteRT-LM para integracion en productos. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia: TTFT de 0,3 s en RTX 4090 y de 9,13 s en MacBook Air M4; el primer arranque puede ser mas lento por la inicializacion de caches.
+- VRAM estimada: aproximadamente 7.300-7.900 MB de memoria GPU segun el dispositivo medido, con un archivo de 6.883 MB en disco.
+- GPU recomendadas: NVIDIA RTX 4090 (24 GB) alcanza 3.548 tok/s de prefill y 69 tok/s de decode; RTX 5080 (16 GB) logra 391 tok/s de prefill y 50 tok/s de decode.
+- Cabe en GPU consumer: si, en RTX 5080 de 16 GB y en MacBook Air M4 de 16 GB (114 tok/s prefill, 15 tok/s decode, TTFT de 9,13 s).
+- Apple Silicon: MacBook M4 Pro de 48 GB ofrece 297 tok/s de prefill, 29 tok/s de decode y TTFT de 3,48 s.
+- Opciones de despliegue: LiteRT-LM v0.17 o superior (requisito obligatorio); CLI de escritorio, apps de ejemplo en `google-ai-edge/litert-samples` y Space web.
+- Contexto largo: soporta hasta 128.000 tokens en dispositivos con memoria suficiente; se recomienda reducir `max_num_tokens` si aparecen problemas de memoria.
+- Nota: la latencia y el uso de memoria pueden diferir en la primera ejecucion; los benchmarks se tomaron con caches habilitadas e inicializadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| gemma-4-12B-it-litert-lm | 12B | hasta 128k | `.litertlm` | Apache 2.0 | Optimizado para escritorio con LiteRT-LM; texto, vision y audio |
-| google/gemma-4-12B-it | 12B | no disponible | safetensors (presumible) | no disponible | Modelo base sin cuantizar; requiere otro runtime |
-| Alternativas de ~12B (p. ej. Mistral, Qwen) | ~12B | no disponible | GGUF, safetensors | variable | No se dispone de datos comparativos en la informacion proporcionada |
+No se dispone de datos de benchmarks de calidad ni de especificaciones de modelos alternativos en la informacion proporcionada para establecer una comparativa rigurosa. Como referencia estructural, esta distribucion se diferencia de otras del mismo modelo base por su formato `.litertlm` y su runtime LiteRT-LM, orientados a inferencia on-device con soporte multimodal y MTP.
 
-No se dispone de datos de benchmarks de calidad que permitan una comparacion cuantitativa con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| gemma-4-12B-it-litert-lm | 12.000 M | hasta 128k | `.litertlm` | Apache 2.0 | On-device multimodal |
+| google/gemma-4-12B-it | 12.000 M | no disponible | no disponible | Apache 2.0 | Modelo base |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documentan en la informacion disponible; el modelo base de Google puede heredar sesgos de sus datos de entrenamiento.
-- Alucinacion: riesgo inherente a los modelos generativos; no se han publicado evaluaciones especificas de fidelidad para esta version.
-- Idiomas: la lista de idiomas soportados no esta disponible en la model card del empaquetado.
-- Contexto: aunque se declaran 128k tokens, los benchmarks se ejecutaron con 4096; el contexto largo depende de la memoria del dispositivo y puede degradar el rendimiento.
-- Licencia: se declara Apache 2.0 en el empaquetado, pero conviene revisar los terminos del modelo base `google/gemma-4-12B-it` antes de uso comercial.
-- Dependencia de runtime: requiere LiteRT-LM v0.17 o superior; no es compatible con ecosistemas como llama.cpp, Ollama o vLLM segun la informacion disponible.
-- Rendimiento en web: la model card advierte que el despliegue web es "mas limitado" en capacidades.
-- Primer arranque: la latencia y el uso de memoria pueden diferir hasta que las caches esten inicializadas.
+- Requiere LiteRT-LM v0.17 o superior; versiones anteriores no pueden ejecutar el archivo `.litertlm`.
+- El soporte en navegador es "mas limitado" segun la model card, sin detallar restricciones concretas.
+- La ventana de 128.000 tokens depende de la memoria del dispositivo; en equipos modestos hay que reducir `max_num_tokens` para evitar fallos por memoria.
+- La primera ejecucion puede presentar mayor latencia y consumo de memoria que las mediciones con caches inicializadas.
+- No se detallan sesgos conocidos, tasas de alucinacion ni limitaciones por idioma en la informacion proporcionada.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base `google/gemma-4-12B-it` y de la marca Gemma.
+- El rendimiento de calidad (razonamiento, codigo, matematicas) no esta cuantificado con benchmarks publicos en esta ficha.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/gemma-4-12B-it-litert-lm
+- Repositorio Hugging Face: https://huggingface.co/litert-community/gemma-4-12B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
-- Documentacion de LiteRT-LM: https://ai.google.dev/edge/litert-lm/overview
+- Documentacion LiteRT-LM: https://ai.google.dev/edge/litert-lm/overview
 - CLI de LiteRT-LM: https://ai.google.dev/edge/litert-lm/cli
-- Ejemplos de aplicaciones: https://github.com/google-ai-edge/litert-samples
-- Demo web en Hugging Face Spaces: https://huggingface.co/spaces/tylermullen/Gemma4
-- Articulo de terceros sobre agentes locales con Gemma 4 y LiteRT: https://www.c-sharpcorner.com/article/building-a-local-ai-agent-with-gemma-4-and-litert
+- Apps de ejemplo: https://github.com/google-ai-edge/litert-samples
+- Demo web (Space): https://huggingface.co/spaces/tylermullen/Gemma4

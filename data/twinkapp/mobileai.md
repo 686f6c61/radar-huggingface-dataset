@@ -2,110 +2,80 @@
 
 ## Resumen
 
-twinkapp/mobileai es un modelo de lenguaje publicado en Hugging Face por el usuario twinkapp. Segun los metadatos del repositorio, cuenta con 2.614.341.888 parametros totales (aproximadamente 2,6 mil millones), lo que lo situa en el segmento de modelos compactos, y el repositorio ocupa 6,4 GB. La licencia declarada es Apache 2.0 y las etiquetas asociadas son gguf, imatrix, conversational y endpoints_compatible, lo que indica pesos preparados para el ecosistema llama.cpp y un uso previsto de conversacion.
+twinkapp/mobileai es un modelo de lenguaje publicado en Hugging Face por el usuario twinkapp bajo licencia Apache 2.0. El repositorio contiene pesos en formato GGUF (con variantes cuantizadas generadas mediante imatrix) y esta etiquetado como compatible con endpoints y de uso conversacional. Segun los metadatos de safetensors, el modelo cuenta con 999.885.952 parametros totales, es decir, aproximadamente 1.000 millones de parametros (1B), lo que lo situa en la categoria de modelos pequenos orientados a despliegue en entornos con recursos limitados.
 
-La model card del autor no contiene informacion tecnica: unicamente la linea de licencia. No se especifican arquitectura, datos de entrenamiento, longitud de contexto, idiomas ni resultados de evaluacion. El modelo se creo el 9 de octubre de 2026 y se actualizo el mismo dia, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
+La informacion publica disponible es muy escasa: la model card no incluye descripcion tecnica, arquitectura, datos de entrenamiento ni benchmarks, y los campos de pipeline e idiomas figuran como no disponibles. El repositorio tiene un tamano de 517,6 GB, lo que sugiere que aloja multiples ficheros GGUF con distintos niveles de cuantizacion (incluyendo probablemente variantes de alta precision de gran tamano), aunque no se detalla el inventario exacto de ficheros.
 
-Por tamano y formato, el modelo encaja en el nicho de la inferencia local en equipos de consumo y en aplicaciones moviles o embebidas, donde una ventana de parametros de 2 a 3 mil millones permite ejecutar en CPU o en GPUs modestas. Sin embargo, la ausencia total de documentacion y de benchmarks hace imposible verificar su calidad real, por lo que cualquier evaluacion seria debe pasar por una prueba propia antes de considerarlo para produccion.
+El modelo resulta relevante por su enfoque declarado hacia el despliegue movil y por la presencia de cuantizaciones imatrix, una tecnica que mejora la calidad de los modelos cuantizados a bajos bits. No obstante, la ausencia de documentacion tecnica obliga a tratar cualquier afirmacion sobre su rendimiento o capacidades con cautela hasta que el autor publique informacion verificable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 2.614.341.888 (aproximadamente 2,6 B), dato procedente de safetensors |
-| Parametros activos | no disponible (no se confirma que sea un modelo MoE) |
+| Parametros totales | 999.885.952 (~1B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | niveles concretos no disponibles; el repositorio incluye pesos GGUF y se ha empleado imatrix (importance matrix) en el proceso de cuantizacion |
+| Tipos de cuantizacion | GGUF (con imatrix); niveles concretos no disponibles |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (etiqueta del repositorio); los parametros reportados proceden de safetensors, por lo que podria haber tambien pesos en ese formato |
-| Autor | twinkapp |
-| Fecha de publicacion | 2026-10-09 |
-| Ultima actualizacion | 2026-10-09 |
-| Tamano del repositorio | 6,4 GB |
-| Descargas / likes | 0 / 0 |
-| Pipeline declarado | no disponible |
+| Formato de pesos | GGUF (repo con safetensors como referencia de parametros) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del modelo. La model card no menciona si se trata de un transformer decoder-only, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido. La etiqueta `conversational` sugiere un ajuste orientado a dialogo y la etiqueta `imatrix` indica que se ha utilizado una matriz de importancia para guiar la cuantizacion con llama.cpp, practica habitual para preservar la calidad en niveles de cuantizacion bajos, pero ninguno de estos indicios confirma la arquitectura subyacente.
+No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, hibrido u otra), el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica senal tecnica es la presencia de cuantizaciones GGUF generadas con imatrix, lo que indica que el autor ha preparado el modelo para inferencia eficiente en CPU y GPU de gama baja mediante llama.cpp y herramientas compatibles.
 
-Tampoco se dispone de datos sobre volumen de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card se limita a la declaracion de licencia. La unica inferencia razonable a partir del tamano del repositorio (6,4 GB) es que resulta coherente con un unico juego de pesos en precision de 16 bits (unos 5,2 GB teoricos para 2,6 B de parametros) mas algun fichero adicional, y dificilmente con un catalogo amplio de cuantizaciones simultaneas.
+El recuento de parametros de safetensors (999.885.952) confirma un modelo de aproximadamente 1B de parametros, coherente con el objetivo de despliegue en dispositivos moviles y edge. No hay datos sobre vocabulario, atencion (MHA, GQA, MLA) ni innovaciones tecnicas adicionales.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` apunta a un ajuste para mantener dialogos multi-turno, aunque no se documenta su calidad ni su comportamiento.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
-- Inferencia mediante llama.cpp: el formato GGUF permite su ejecucion en CPU y en GPU con las herramientas habituales del ecosistema (llama.cpp, Ollama, LM Studio, koboldcpp).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara ningun idioma).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional: la etiqueta "conversational" sugiere un ajuste orientado a dialogos multi-turno, aunque no se detalla el formato de prompt ni las plantillas de chat.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el modelo puede servirse a traves de la infraestructura de inferencia de Hugging Face.
+- Cuantizacion GGUF con imatrix: permite ejecucion en CPU y en GPUs con poca VRAM, con variantes de distinta precision.
+- Capacidades de razonamiento, codigo, matematicas, vision, tool calling, agentes o multilingues: no disponibles en la informacion publicada.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional embebido en aplicaciones moviles: con 2,6 B de parametros y pesos GGUF, una cuantizacion de 4 bits ocuparia del orden de 1,5 a 1,6 GB, lo que permite incrustar el modelo en un telefono de gama alta o en una aplicacion de escritorio sin depender de la nube. Requiere validar previamente la calidad de las respuestas, hoy no documentada.
-- Prototipado local de chatbots: el formato GGUF facilita cargar el modelo en Ollama o llama.cpp en pocos minutos, lo que lo hace util como banco de pruebas para interfaces conversacionales antes de migrar a un modelo mayor.
-- Procesamiento de texto con requisitos de privacidad: al poder ejecutarse integramente en local, permite resumir, reescribir o clasificar documentos sensibles sin enviar datos a un proveedor externo, siempre que la calidad del modelo se valide en la tarea concreta.
-- Extraccion y estructuracion de informacion: generacion de resumenes breves, etiquetado de textos o conversion de texto libre a campos estructurados en pipelines por lotes ejecutados en CPU.
-- Experimentacion academica y fine-tuning: la licencia Apache 2.0 permite modificar y redistribuir el modelo, lo que lo convierte en un candidato para trabajos de ajuste fino, destilacion o investigacion sobre cuantizacion, sin las restricciones de licencias tipo Llama o Gemma.
-- Evaluacion interna de pipelines GGUF e imatrix: sirve como banco de pruebas para medir la perdida de calidad entre niveles de cuantizacion y para comparar el rendimiento de distintos backends de inferencia en hardware limitado.
-- Generacion de codigo o asistencia tecnica: no recomendable sin evaluacion previa, ya que no hay ningun dato publicado sobre su rendimiento en tareas de programacion.
+- Asistente conversacional en dispositivos moviles: con ~1B de parametros y pesos GGUF, el modelo puede ejecutarse en telefonos de gama alta o en mini-PCs mediante llama.cpp u Ollama, ofreciendo respuestas de chat sin conexion a la nube.
+- Prototipado rapido de aplicaciones de chat: la licencia Apache 2.0 y la disponibilidad de GGUF permiten integrar el modelo en demos y MVPs sin coste de licencia ni infraestructura GPU dedicada.
+- Procesamiento de texto en el borde (edge computing): en escenarios con requisitos de privacidad, el modelo puede desplegarse localmente para tareas de resumen o clasificacion conversacional sin enviar datos a servidores externos.
+- Servicio de inferencia via endpoints de Hugging Face: la etiqueta endpoints_compatible facilita desplegar el modelo como API gestionada para pruebas de integracion.
+- Educacion y experimentacion: al ser un modelo pequeno con licencia permisiva, sirve para estudiar tecnicas de cuantizacion imatrix y comparar calidad entre niveles de bits.
+- Filtrado y moderacion de conversaciones: un modelo de 1B puede emplearse como clasificador rapido de turnos de dialogo en pipelines de bajo coste, siempre que se valide su calidad en la tarea concreta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye ninguna evaluacion (MMLU, HumanEval, GSM8K, MT-Bench u otras) y la busqueda web no ha devuelto ninguna referencia tecnica al modelo. Tampoco se dispone de datos de latencia o throughput medidos por el autor.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Estimaciones de VRAM calculadas a partir del numero de parametros (2,6 B) y del coste teorico de cada nivel de cuantizacion; no estan confirmadas por el autor:
-
-| Precision | VRAM aproximada de pesos | VRAM total recomendada |
-|---|---|---|
-| FP16 / BF16 | 5,2 GB | 6-7 GB |
-| Q8_0 | 2,8 GB | 3,5-4 GB |
-| Q6_K | 2,1 GB | 3 GB |
-| Q5_K_M | 1,8 GB | 2,5-3 GB |
-| Q4_K_M | 1,6 GB | 2-2,5 GB |
-| Q3_K_M | 1,3 GB | 2 GB |
-| Q2_K | 1,0 GB | 1,5-2 GB |
-
-- Cabe en GPU de consumo: si. Una RTX 3060 de 12 GB, una RTX 4060 de 8 GB, una RTX 4070 o una RTX 4090 ejecutan el modelo en cualquiera de los niveles de cuantizacion con espacio de sobra para contexto largo.
-- Memoria unificada en Apple Silicon: cualquier equipo con 8 GB o mas (M1, M2, M3, M4) puede ejecutarlo en Metal mediante llama.cpp u Ollama.
-- GPU de centro de datos: A100, H100 o L40S estan sobredimensionadas para este tamano; solo tendrian sentido para servir muchas instancias concurrentes o para ajuste fino.
-- CPU: es viable en modo solo CPU con llama.cpp, especialmente en cuantizaciones de 4 bits; un equipo de escritorio moderno obtendria velocidades de decodificacion del orden de unidades a decenas de tokens por segundo, aunque no hay mediciones publicadas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llamafile, text-generation-webui y Jan soportan GGUF de forma nativa; Hugging Face Inference Endpoints es compatible segun la etiqueta del repositorio; vLLM tiene soporte GGUF limitado y TGI no lo soporta de forma nativa.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~1B de parametros, las cuantizaciones de 4 bits suelen ocupar en torno a 0,6-0,8 GB y las de 8 bits en torno a 1,0-1,2 GB, pero estos valores no han sido confirmados por el autor.
+- GPU recomendadas: no disponibles. Por tamano, el modelo deberia caber en GPUs consumer con 4-8 GB de VRAM (por ejemplo, RTX 3050, RTX 4060, RTX 3060), si bien no hay confirmacion oficial.
+- Cabe en GPU consumer: probablemente si, dado el tamano de ~1B de parametros, aunque no se especifican requisitos.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; tambien endpoints de Hugging Face.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparativa se limita a parametros, contexto y licencia; los datos de los modelos alternativos proceden de sus model cards publicas, mientras que para mobileai solo se conoce el numero de parametros.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| twinkapp/mobileai | ~1B | no disponible | Apache 2.0 | GGUF | Documentacion tecnica no disponible |
+| Alternativas de ~1B (p. ej. familias Llama, Qwen, Gemma en su variante pequena) | ~1B | variable segun modelo | variable | safetensors, GGUF | Datos no verificados en esta ficha; consultar cada model card |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| twinkapp/mobileai | 2,6 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
-| Llama 3.2 3B Instruct | 3,2 B | 128 000 tokens | Llama 3.2 Community License | Ampliamente desplegado, ecosistema maduro |
-| Qwen2.5 3B Instruct | 3,1 B | 32 768 tokens nativos (128 000 con YaRN) | Qwen Research License | Muy utilizado, soporte en vLLM y llama.cpp |
-| Gemma 2 2B Instruct | 2,6 B | 8 192 tokens | Gemma Terms of Use | Ampliamente desplegado, disponible en GGUF |
-
-La ventaja de mobileai es su licencia Apache 2.0, mas permisiva que las de Llama 3.2, Gemma 2 y Qwen2.5 3B, que imponen condiciones adicionales o restringen el uso comercial en funcion del caso. La desventaja es la ausencia total de evaluaciones y de documentacion, frente a los tres modelos citados, que publican resultados de benchmarks y cuentan con soporte activo en las principales herramientas de inferencia.
+No se dispone de informacion suficiente para establecer una comparativa rigurosa con alternativas concretas; los modelos comparables de ~1B de parametros deben evaluarse directamente en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card solo contiene la linea de licencia, por lo que no hay informacion sobre arquitectura, entrenamiento, contexto, idiomas ni uso previsto.
-- Sin evaluacion publica: no hay benchmarks ni pruebas de calidad, lo que impide estimar el rendimiento en ninguna tarea antes de probarlo.
-- Sesgos: no se han documentado los datos de entrenamiento, por lo que se desconocen los sesgos de genero, raza, idioma o ideologia que el modelo pueda reproducir.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de este tamano y no cuantificado en este caso; en un modelo de 2,6 B sin evaluar, el riesgo es especialmente alto en tareas de conocimiento factual, matematicas y codigo.
-- Idiomas: no se declara ningun idioma soportado. No hay garantia de que el castellano este entre ellos ni de que la calidad sea aceptable.
-- Longitud de contexto desconocida: no se puede planificar un caso de uso con documentos largos sin determinar antes la ventana real del modelo.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero el autor no ofrece garantias sobre el origen de los datos de entrenamiento ni sobre posibles reclamaciones de terceros derivadas de ellos.
-- Adopcion nula: 0 descargas y 0 likes, sin issues ni discusiones publicas, lo que implica que no hay soporte comunitario ni errores conocidos documentados.
-- Coherencia de metadatos: el repositorio ocupa 6,4 GB y declara pesos en GGUF, pero los parametros reportados proceden de safetensors; conviene inspeccionar el listado de ficheros antes de descargarlo.
-- Degradacion por cuantizacion: al haberse empleado imatrix, se espera una perdida de calidad menor en niveles bajos, pero no hay mediciones que lo confirmen.
-- Busqueda web sin resultados utiles: las consultas no han devuelto ninguna referencia tecnica al modelo, al autor ni a su entrenamiento. Los resultados obtenidos corresponden a sitios sin relacion alguna con el proyecto y no se incluyen en esta ficha.
+- Ausencia de model card tecnica: no hay informacion sobre arquitectura, datos de entrenamiento, sesgos o evaluaciones, lo que impide valorar su calidad de forma objetiva.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; sin benchmarks no puede cuantificarse.
+- Idiomas soportados desconocidos: no se puede garantizar un rendimiento adecuado en castellano ni en otros idiomas.
+- Contexto desconocido: se desconoce la ventana de contexto, lo que limita el diseno de aplicaciones con documentos largos.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; conviene revisar los terminos exactos del repositorio.
+- Repositorio de gran tamano (517,6 GB): la descarga completa es costosa; se recomienda descargar solo el fichero GGUF del nivel de cuantizacion deseado.
+- Popularidad baja (1 like): no hay evidencia de uso comunitario ni de validacion independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/twinkapp/mobileai
-- Paper, blog, repositorio o demo: no disponible. La busqueda web no ha devuelto ningun enlace relevante sobre este modelo.
+- Hugging Face: https://huggingface.co/twinkapp/mobileai
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

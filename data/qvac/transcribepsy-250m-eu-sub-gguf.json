@@ -65,16 +65,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "qvac/TranscribePsy-250M-EU-sub · Hugging Face",
-      "url": "https://huggingface.co/qvac/TranscribePsy-250M-EU-sub",
-      "snippet": "TranscribePsy-250M-EU-sub is a compact (254M-parameter) speech recognition model covering the eight European languages selected by Multilingual LibriSpeech (MLS), distilled from Parakeet-TDT-0.6B-v3 and built for on-device and edge deployment."
-    },
-    {
-      "title": "GitHub - tether-ai-research/qvac-transcribepsy: State-of-the-art ...",
-      "url": "https://github.com/tether-ai-research/qvac-transcribepsy",
-      "snippet": "📦 Models The model weights are released on the Hugging Face Hub: ... The on-device builds are TranscribePsy-250M-EU-sub. One set of weights covers all eight of its languages, so there is no language to set. Accuracy, architecture and training are described in the model cards."
-    }
-  ]
+  "sources": []
 }

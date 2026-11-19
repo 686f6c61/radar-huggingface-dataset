@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Frankfurter Rundschau",
-      "url": "https://www.fr.de/",
-      "snippet": "Aktuelle Nachrichten aus Frankfurt und der Welt – von Politik über Wirtschaft zu Verbraucher-Tipps und Eintracht Frankfurt."
-    },
-    {
-      "title": "Frankfurt News - aktuelle Nachrichten aus Frankfurt am Main | FR.de",
-      "url": "https://www.fr.de/frankfurt/",
-      "snippet": "Die neuesten Berichte und Themen aus Frankfurt auf einen Blick zusammengefasst. Jetzt direkt bei FR.de informieren!"
-    },
-    {
-      "title": "Frankfurter Rundschau – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/Frankfurter_Rundschau",
-      "snippet": "Die Redaktion der Frankfurter Rundschau hatte ihren Sitz mehr als 51 Jahre lang im Rundschau-Haus am Eschenheimer Tor, mitten …"
-    },
-    {
-      "title": "Deutschland vom Samstag, 12.09.2026 | FR ePaper",
-      "url": "http://epaper.fr-online.de/",
-      "snippet": "1 day ago · weekli: Alle Prospekte auf einen Blick. Aktuelle Prospekte online blättern. Jede Woche neue Angebote entdecken und …"
-    },
-    {
-      "title": "Frankfurter Rundschau: Aktuelle Nachrichten über die FR",
-      "url": "https://www.faz.net/aktuell/feuilleton/thema/frankfurter-rundschau",
-      "snippet": "Aktuelle News, Videos und Bildergalerien zur Frankfurter Rundschau im Überblick. Lesen Sie hier alle Informationen der FAZ rund …"
-    }
-  ]
+  "sources": []
 }

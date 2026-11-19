@@ -5,7 +5,7 @@
   "author": "JPMSA1212",
   "url": "https://huggingface.co/JPMSA1212/distilbert-ner-masquener",
   "created_at": "2026-11-12T23:18:23.000Z",
-  "updated_at": "2026-11-12T23:19:01.000Z",
+  "updated_at": "2026-11-18T03:51:42.000Z",
   "license": "afl-3.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -25,7 +25,6 @@
   "tags": [
     "transformers.js",
     "onnx",
-    "safetensors",
     "distilbert",
     "token-classification",
     "ner",
@@ -34,6 +33,7 @@
     "anonymization",
     "pii",
     "cote-d-ivoire",
+    "france",
     "fr",
     "en",
     "es",
@@ -50,17 +50,16 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 38,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 134741001,
   "parameters_human": "134.7M",
-  "storage_bytes": 674381593,
-  "storage_human": "674 MB",
+  "storage_bytes": 809786830,
+  "storage_human": "810 MB",
   "context_length": null,
   "base_model": "Davlan/distilbert-base-multilingual-cased-ner-hrl",
   "formats": [
-    "onnx",
-    "safetensors"
+    "onnx"
   ],
   "is_conversational": false,
   "gated": false,

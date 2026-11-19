@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "openbmb/MiniCPM-V-4.6-Thinking-BNB · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-BNB",
-      "snippet": "This repository hosts the bitsandbytes (NF4, 4-bit) quantized version of MiniCPM-V 4.6 Thinking. For the original BF16 weights and the full model card, please refer to openbmb/MiniCPM-V-4.6-Thinking."
-    },
-    {
-      "title": "openbmb/MiniCPM-V-4.6 · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
-      "snippet": "Deploy MiniCPM-V 4.6 on iOS, Android, and HarmonyOS Platforms We have adapted MiniCPM-V 4.6 for deployment on iOS, Android, and HarmonyOS platforms, with all edge adaptation code fully open-sourced. Developers can reproduce the on-device experience in just a few steps. Visit our edge deployment repository for platform-specific build guides, or go to the download page to try pre-built apps ..."
-    },
-    {
-      "title": "openbmb/MiniCPM-V-4.6 | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/openbmb/MiniCPM-V-4.6",
-      "snippet": "MiniCPM-V 4.6 ships as two independent checkpoints — this recipe covers the Instruct model (openbmb/MiniCPM-V-4.6). For chain-of-thought output, use the separate openbmb/MiniCPM-V-4.6-Thinking checkpoint instead (unlike v4.5, the mode is no longer toggled at runtime)."
-    },
-    {
-      "title": "OpenBMB / MiniCPM-V-4.6-Thinking-BNB - aichina.news",
-      "url": "https://aichina.news/models/OpenBMB/MiniCPM-V-4.6-Thinking-BNB/",
-      "snippet": "MiniCPM-V-4.6-Thinking-BNB is a quantised version of the MiniCPM-V-4.6-Thinking multimodal model, compressed using BitsAndBytes (BNB) 4-bit quantisation. It is part of OpenBMB&#x27;s MiniCPM-V series of vision-language models that excel at both image understanding and complex reasoning tasks."
-    },
-    {
-      "title": "MiniCPM-V 4.6 - SGLang Documentation",
-      "url": "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_6",
-      "snippet": "MiniCPM-V 4.6 is the next-generation multimodal model from OpenBMB, the team behind the MiniCPM-V series. The model combines a Qwen3.5-style hybrid LLM backbone (Gated Delta Net + full attention) with a NaViT-packed vision encoder that handles arbitrary aspect ratios and high-resolution slicing natively, plus end-to-end video support."
-    }
-  ]
+  "sources": []
 }

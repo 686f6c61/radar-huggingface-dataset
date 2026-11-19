@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed/ru",
-      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/",
-      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://studio.youtube.com/",
-      "snippet": "Share your videos with friends, family, and the world."
-    },
-    {
-      "title": "YouTube",
-      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
-      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром."
-    }
-  ]
+  "sources": []
 }

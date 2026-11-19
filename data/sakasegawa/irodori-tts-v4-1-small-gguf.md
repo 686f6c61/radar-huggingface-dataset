@@ -2,114 +2,98 @@
 
 ## Resumen
 
-Irodori-TTS-v4.1-Small-GGUF es una conversión a formato GGUF del modelo de síntesis de voz Aratako/Irodori-TTS-v4.1-Small, junto con su códec neuronal Semantic-DACVAE-Japanese-32dim. Lo publica el usuario sakasegawa y está pensado exclusivamente para ejecutarse en speech.cpp, una implementación en C++ sobre ggml con soporte de Metal, Vulkan y CPU. El modelo resuelve la generación de voz en japonés a partir de una grabación de referencia, sin voces predefinidas propias.
+Irodori-TTS-v4.1-Small es un modelo de síntesis de voz (text-to-speech) en japonés desarrollado por Aratako, con 858,7 millones de parámetros. Esta ficha concreta es una conversión a formato GGUF realizada por el usuario sakasegawa, empaquetada específicamente para el runtime speech.cpp (versión 0.8.0 o superior), que incluye tanto el modelo TTS como su códec de audio Semantic-DACVAE-Japanese-32dim en un único archivo.
 
-Arquitectónicamente es un sistema de text-to-speech por difusión: incluye un codificador de texto, un codificador de hablante, un predictor de duración y un Diffusion Transformer (DiT) que muestrea con pasos de Euler y guiado (texto 3,0 y hablante 5,0 mientras t ≥ 0,5). El códec que convierte los latentes en audio trabaja a 48 kHz. El recuento total de parámetros es de 748.615.713 (aproximadamente 748,6 millones).
+El modelo resuelve la generación de voz japonesa a partir de texto, con soporte para clonación de voz mediante grabaciones de referencia (hasta 120 segundos), descripción de la voz en lenguaje natural y selección automática de voz por parte del modelo. La inferencia utiliza muestreo con pasos de Euler y guidance del runtime oficial, con 40 pasos por defecto y la posibilidad de reducir a 16 pasos para obtener el primer audio en menos de la mitad de tiempo.
 
-Su relevancia actual radica en que permite ejecutar un TTS de calidad con clonación de voz en hardware de consumo (una RTX 2080 o un Apple M5) con un consumo de memoria de 2,2 GB, y expone una API compatible con el endpoint de audio de OpenAI. La licencia es MIT, pero el autor original impone restricciones éticas de uso.
+Su relevancia radica en que permite ejecutar un sistema TTS japonés de calidad en hardware de consumo gracias a las cuantizaciones GGUF (desde 0,86 GB en Q4_K hasta 1,91 GB en F16), aunque con la restricción importante de que los archivos solo funcionan en speech.cpp y no en llama.cpp, LM Studio, Ollama u otros programas compatibles con GGUF.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | TTS por difusión: text encoder + speaker encoder + duration predictor + DiT (Diffusion Transformer); códec Semantic-DACVAE de 48 kHz |
-| Parámetros totales | 748.615.713 (aprox. 748,6 M) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (no es un modelo de contexto; procesa frases de texto) |
-| Tipos de cuantización | matrices del modelo en F16, normas y sesgos en F32; códec en F32 |
-| Idiomas soportados | japonés (ja) |
-| Licencia | MIT (con restricciones éticas adicionales del autor) |
-| Formato de pesos | GGUF específico de speech.cpp (no compatible con llama.cpp, LM Studio ni Ollama) |
+| Arquitectura | no disponible (modelo TTS con DiT y encoder de hablante; detalles completos no especificados) |
+| Parametros totales | 858.716.034 (859M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (procesa una frase a la vez) |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K, Q4_K |
+| Idiomas soportados | japones (ja) |
+| Licencia | MIT (modelo y codec); el modelo base del codec usa Apache 2.0 |
+| Formato de pesos | GGUF (formato propio de speech.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema de síntesis de voz por difusión. El pipeline se compone de un codificador de texto, un codificador de hablante (que extrae la identidad vocal de una grabación de referencia), un predictor de duración y un DiT que genera los latentes acústicos mediante muestreo con pasos de Euler. Por defecto emplea 40 pasos con guiado (texto 3,0 y hablante 5,0 mientras t ≥ 0,5), aunque admite valores distintos con `--steps`; con 16 pasos la primera muestra de audio llega más del doble de rápido. El códec Semantic-DACVAE-Japanese-32dim, de 32 dimensiones latentes y 48 kHz, se encarga de decodificar los latentes a audio.
+La información disponible no detalla la arquitectura interna completa del modelo. Se sabe que combina un modelo TTS (Irodori-TTS v4.1-Small de Aratako) con un códec de audio neuronal denominado Semantic-DACVAE-Japanese-32dim, que decodifica el audio a 48 kHz. El pipeline incluye un encoder de hablante (speaker encoder) para la clonación de voz y un componente DiT (Diffusion Transformer) cuyas matrices se cuantizan de forma mixta en los archivos Q6_K, Q5_K y Q4_K.
 
-La conversión a GGUF se realizó con los scripts `reference/irodori-tts/convert.py` y `convert_codec.py` de speech.cpp, partiendo de los pesos oficiales en los commits `2b28324dc263ed5e6638b3cf3dd94c82ead07b4b` (Irodori-TTS-v4.1-Small) y `47376ee24834d7a05a48ebabfe3cde29b3c5e214` (Semantic-DACVAE-Japanese-32dim). Las matrices del modelo se mantienen en F16, mientras que las normas y los sesgos permanecen en F32; el códec se conserva íntegramente en F32. No se dispone de información sobre el conjunto de datos de entrenamiento, el número de tokens, la composición del dataset ni el uso de RLHF o DPO.
+La síntesis emplea muestreo con pasos de Euler y guidance del runtime oficial, con 40 pasos por defecto. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La precisión de la implementación en speech.cpp se validó comparando cada etapa contra los tensores de la implementación oficial en float32 sobre CPU (Apple M5), obteniendo 119 dB SNR en el audio decodificado en CPU/F32 y 68 dB en Metal/F32.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) en japonés a partir de texto plano.
-- Clonación de voz zero-shot: reproduce la voz de una grabación de referencia de 48 kHz, ya sea como WAVE o como fichero de voz generado con `speech-tts make-voice` (latente del códec, 35 KB para 10 s).
-- Síntesis en streaming: emite cada frase a medida que el códec la decodifica.
-- Control de la longitud y velocidad del habla mediante `--speed`, `--seconds` y `--duration-scale`.
-- Servidor HTTP con la API de audio de OpenAI (`POST /v1/audio/speech`).
-- Modo worker con protocolo JSON Lines para procesamiento por lotes.
-- API en C accesible desde speech.cpp.
-- No implementa captions ni VoiceDesign (diseño de voz por descripción textual).
-- No soporta tool calling, function calling ni razonamiento multi-paso (no es un modelo de lenguaje).
+- Generación de voz japonesa a partir de texto, frase a frase.
+- Clonación de voz mediante grabación de referencia WAV de hasta 120 segundos.
+- Uso de archivos de voz precalculados con `speech voice`, reutilizables entre tipos de cuantización y compatibles con v4.1-Small-MF.
+- Voz descrita en lenguaje natural mediante el parámetro `instructions` (por ejemplo, tono, género y velocidad).
+- Selección automática de voz por parte del modelo cuando se indica `--voice none` sin instrucciones.
+- Voz derivada de un embedding de inversión de hablante (archivo `.speaker.safetensors`), exclusiva de este modelo.
+- Control de pasos de muestreo (40 por defecto, 16 para menor latencia), guidance, schedule y escalado de hablante.
+- Servidor HTTP compatible con la API de voz de OpenAI mediante `speech serve`.
+- No soporta tool calling, agentes ni razonamiento multi-step (no es un modelo de lenguaje).
 
 ## Casos de uso
 
-- Audiolibros y narración en japonés: el modelo convierte textos largos en voz con una identidad vocal concreta de referencia, manteniendo la coherencia del timbre gracias al codificador de hablante y al latente de voz reutilizable.
-- Doblaje y localización al japonés: permite generar pistas de voz con una voz de referencia concreta y ajustar la duración con `--duration-scale` para encajar en el metraje original.
-- Asistentes de voz e IVR: el servidor integrado expone `POST /v1/audio/speech`, de modo que se puede conectar a un orquestador existente compatible con la API de audio de OpenAI sin adaptar el backend.
-- Accesibilidad y lectores de pantalla: la síntesis en streaming reduce el tiempo hasta la primera muestra de audio, lo que mejora la percepción de respuesta en aplicaciones interactivas.
-- Generación masiva por lotes: el worker JSON Lines de `speech-worker` permite procesar cientos de frases de forma secuencial con un consumo de memoria de 2,2 GB, apto para un único nodo.
-- Prototipado de pipelines TTS en investigación: al ser GGUF sobre ggml y funcionar en CPU, Metal y Vulkan, facilita la evaluación de la clonación de voz en distintos aceleradores sin depender de un stack de Python.
-- Pruebas de calidad de códecs neuronales: la separación entre el modelo de difusión y el códec permite analizar por separado la fidelidad de los latentes y la decodificación de audio.
+- Audiolibros y narración automatizada: el modelo lee frases en japonés con una voz consistente generada a partir de una única grabación de referencia, adecuado para contenido largo por la reutilización del archivo de voz.
+- Doblaje y localización de contenido al japonés: permite generar voces con tono y estilo descritos en lenguaje natural, útil para adaptar guiones a distintos registros sin disponer de locutores.
+- Asistentes de voz embebidos: con cuantización Q4_K (0,86 GB) puede ejecutarse en hardware modesto, integrándose en aplicaciones de escritorio o dispositivos con recursos limitados.
+- Prototipado rápido de interfaces conversacionales: el servidor compatible con la API de OpenAI permite sustituir servicios TTS comerciales en entornos de desarrollo sin cambiar el código cliente.
+- Accesibilidad: conversión de texto a voz para lectores de pantalla en japonés, con la posibilidad de personalizar la voz mediante instrucciones textuales.
+- Generación de voces para videojuegos y contenido interactivo: la selección automática de voz y la clonación por referencia permiten crear múltiples personajes con pocos recursos de grabación.
+- Investigación en TTS: la disponibilidad de cuantizaciones y de comparaciones de precisión frente a la implementación oficial facilita experimentos reproducibles en CPU y GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí documenta verificaciones de precisión frente a la implementación oficial en float32 con el mismo ruido, medidas en SNR:
+No se han publicado resultados de benchmarks estándar (MOS, WER, MMLU u otros) en la información disponible. La model card incluye únicamente métricas de fidelidad numérica frente a la implementación oficial:
 
-| Comprobación | CPU, pesos F32 | Apple M5, Metal, pesos F32 |
+| Comprobacion | CPU, F32 | Metal, F32 |
 |---|---|---|
-| Pasos del DiT | 95 dB SNR o más | 46 dB o más |
+| Audio decodificado | 119 dB SNR | 68 dB |
 | Latente muestreado, 40 pasos | 109 a 111 dB | 59 a 67 dB |
-| Audio decodificado (códec) | 119 dB | 68 dB |
+| Sintesis completa desde el ruido oficial | 75 a 110 dB, longitud oficial | 22 a 61 dB, misma longitud |
 
-Mediciones de velocidad con 20 frases en japonés mediante `speech-worker`, una a una y con el códec en F32:
-
-| Pasos | Dispositivo | Mediana de primera muestra de audio | Factor de tiempo real (RTF) | Memoria |
-|---|---|---|---|---|
-| 16 | Apple M5, Metal | 1,12 s | 0,34 | 2,2 GB |
-| 40 | Apple M5, Metal | 2,64 s | 0,64 | 2,2 GB |
-| 16 | RTX 2080, Vulkan | 0,49 s | 0,14 | 2,2 GB |
-
-Un RTF inferior a 1 indica síntesis más rápida que el tiempo real.
+Además, se menciona una evaluación con speech-bench sobre 20 frases en japonés con semillas 1, 2 y 3, transcritas por Qwen3-ASR 1.7B en Q8, pero los resultados numéricos no se detallan en la información proporcionada.
 
 ## Requisitos de hardware
 
-- Memoria estimada: 2,2 GB durante la inferencia (modelo DiT en F16, 1,50 GB, más el códec en F32, 371 MB).
-- GPU compatibles: NVIDIA RTX 2080 (probada vía Vulkan), Apple M5 (Metal). Cualquier GPU con soporte Vulkan o Metal debería ser compatible con speech.cpp, aunque no se documentan otras.
-- Ejecución en CPU: soportada y verificada; es la ruta que ofrece mayor fidelidad (119 dB en el audio decodificado), pero con mayor latencia.
-- Cabe en GPU de consumo: sí, con 2,2 GB de memoria es viable en tarjetas con 4 GB o más.
-- Opciones de despliegue: exclusivamente speech.cpp. Binarios precompilados para macOS arm64 (Metal), Windows x64 (Vulkan) y Linux x64 (Vulkan o CPU) disponibles en las releases del proyecto. Herramientas: `speech-tts`, `speech-worker` y `speech-server` (estas dos últimas a partir de v0.5.0).
-- Latencia y throughput: con 16 pasos en RTX 2080 se alcanza una mediana de 1,49 s menos de espera a la primera muestra que el resultado más lento documentado; el RTF de 0,14 implica capacidad de generar aproximadamente 7 veces el tiempo real de audio por unidad de tiempo. No se documenta throughput por lotes agregado.
+- VRAM estimada: aproximadamente 0,86 GB (Q4_K), 0,94 GB (Q5_K), 1,03 GB (Q6_K), 1,20 GB (Q8_0) y 1,91 GB (F16), sin contar el códec F32 de 48 kHz incluido en cada archivo.
+- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 2 GB de memoria libre; las cuantizaciones Q4_K y Q5_K son las más adecuadas para equipos con recursos limitados.
+- GPU recomendadas: no se especifican modelos concretos; la validación se realizó en Apple M5 con Metal. Cualquier GPU compatible con Metal o con los kernels de speech.cpp debería funcionar.
+- Despliegue: exclusivamente mediante speech.cpp 0.8.0 o superior (CLI `speech tts`, servidor `speech serve`). No es compatible con llama.cpp, LM Studio, Ollama, vLLM ni TGI.
+- Latencia: 16 pasos de Euler producen el primer audio en menos de la mitad del tiempo que 40 pasos; no se proporcionan cifras absolutas de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks homogéneos con otras alternativas. La comparación más directa es con la propia variante del mismo autor:
-
-| Modelo | Enfoque de muestreo | Tiempo hasta el primer audio | Formato | Licencia |
-|---|---|---|---|---|
-| Irodori-TTS-v4.1-Small-GGUF (esta ficha) | 16 pasos Euler | referencia | GGUF (speech.cpp) | MIT |
-| Irodori-TTS-v4.1-Small-MF-GGUF | 4 pasos MeanFlow | aprox. 4 veces más rápido que esta a 16 pasos | GGUF (speech.cpp) | MIT |
-| Aratako/Irodori-TTS-v4.1-Small (original) | Euler / MeanFlow según versión | no disponible | safetensors / runtime oficial | MIT |
-| Aratako/Semantic-DACVAE-Japanese-32dim | no aplica (códec) | no aplica | safetensors / GGUF | MIT (base Apache 2.0) |
-
-No se han proporcionado datos de otros modelos TTS comparables (por ejemplo, XTTS, StyleTTS 2, Fish Speech) en la información disponible.
+No disponible. La información proporcionada no incluye datos de otros modelos TTS comparables en parámetros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
-- Sólo soporta japonés (ja); no se documenta ningún otro idioma.
-- Los ficheros GGUF son específicos de speech.cpp: no funcionan en llama.cpp, LM Studio, Ollama ni otros programas que lean GGUF.
-- El modelo no tiene voces propias; requiere siempre una grabación de referencia en japonés a 48 kHz. Sin ella no puede sintetizar.
-- No implementa captions ni VoiceDesign, por lo que no se puede describir la voz con texto.
-- La clonación de voz plantea riesgos de suplantación y de generación de deepfakes. El autor original impone tres restricciones éticas: no clonar ni suplantar la voz de personas sin consentimiento explícito, no generar información falsa o engañosa, y proporcionar un aviso claro al usar voz generada.
-- La licencia es MIT, lo que permite uso comercial, pero está supeditada a las restricciones éticas anteriores.
-- La fidelidad frente a la implementación oficial es notablemente inferior en Metal (46-68 dB) que en CPU (95-119 dB); conviene tenerlo en cuenta si se exige máxima precisión numérica.
-- El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y se creó el 2026-10-05, por lo que no hay evidencia de uso en producción ni de validación por parte de la comunidad.
-- El modelo exige speech.cpp v0.3.0 o superior; `speech-tts` y `speech-server`, así como las builds para Linux, requieren v0.5.0 o superior.
-- No se dispone de información sobre sesgos del dataset de entrenamiento, composición de datos ni evaluación de robustez ante entradas adversas.
+- Solo funciona en speech.cpp 0.8.0 o superior; los archivos GGUF tienen un layout propio y no son compatibles con llama.cpp, LM Studio, Ollama ni otras herramientas que leen GGUF.
+- Soporta únicamente japonés; no hay capacidades multilingües.
+- Procesa el texto una frase a la vez, sin ventana de contexto larga documentada.
+- Las grabaciones de referencia están limitadas a 120 segundos.
+- En GPU, el audio resultante es el mismo discurso pero no la misma forma de onda que en la implementación oficial, debido al redondeo distinto de los kernels matriciales.
+- Los archivos de voz derivados de embeddings de inversión de hablante son exclusivos de este modelo; los archivos de voz normales son compatibles con v4.1-Small-MF.
+- Riesgo de alucinación o artefactos en la síntesis no documentado en la información disponible.
+- Sesgos de voz no documentados.
+- Licencia MIT para el modelo y el códec, lo que permite uso comercial; el modelo base del códec está bajo Apache 2.0, cuyos términos deben respetarse.
+- El repositorio ocupa 9,7 GB, aunque los archivos individuales son mucho menores.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/sakasegawa/Irodori-TTS-v4.1-Small-GGUF
-- Modelo base (Irodori-TTS-v4.1-Small): https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
-- Códec base (Semantic-DACVAE-Japanese-32dim): https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim
-- Repositorio del modelo original: https://github.com/Aratako/Irodori-TTS
-- speech.cpp: https://github.com/nyosegawa/speech.cpp
-- Binarios precompilados de speech.cpp: https://github.com/nyosegawa/speech.cpp/releases
-- Variante MeanFlow: https://huggingface.co/sakasegawa/Irodori-TTS-v4.1-Small-MF-GGUF
+- [Hugging Face: sakasegawa/Irodori-TTS-v4.1-Small-GGUF](https://huggingface.co/sakasegawa/Irodori-TTS-v4.1-Small-GGUF)
+- [Repositorio speech.cpp](https://github.com/nyosegawa/speech.cpp)
+- [Instalación de speech.cpp](https://github.com/nyosegawa/speech.cpp#install)
+- [Documentación de Irodori-TTS en speech.cpp](https://github.com/nyosegawa/speech.cpp/blob/main/docs/models/irodori-tts.md)
+- [Documentación de la CLI de speech.cpp](https://github.com/nyosegawa/speech.cpp/blob/main/docs/cli.md)
+- [Documentación del servidor de speech.cpp](https://github.com/nyosegawa/speech.cpp/blob/main/docs/server.md)
+- [Repositorio original de Irodori-TTS (Aratako)](https://github.com/Aratako/Irodori-TTS)
+- [Modelo base: Aratako/Irodori-TTS-v4.1-Small](https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small)
+- [Códec: Aratako/Semantic-DACVAE-Japanese-32dim](https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim)

@@ -2,61 +2,61 @@
 
 ## Resumen
 
-KarLexAI/Qwen3.8-27B-GGUF es una colección de cuantizaciones GGUF del modelo denso Qwen3.8-27B de Qwen (Alibaba), publicada por KarLex AI. El repositorio no es un modelo nuevo: es una conversión post-entrenamiento a formato llama.cpp del checkpoint original en BF16, sin fine-tuning, manteniendo arquitectura, tokenizer y plantilla de chat intactos. Su propuesta de valor es la preservación de la capacidad de razonamiento en cuantizaciones extremas: según la model card, el archivo IQ1_S de 6,19 GB resuelve un 53,8 % de AIME 2025+2026 frente al 1,3 % de la cuantización equivalente de Unsloth, gracias a una mezcla de tipos de tensor estándar más cuidadosa.
+Qwen3.8-27B-GGUF es una colección de cuantizaciones GGUF del modelo Qwen3.8-27B, publicada por KarLex AI bajo el identificador KLX. El modelo base es un transformer denso de 26.895.998.464 parámetros (aproximadamente 27B) desarrollado por Qwen, con capacidad de razonamiento en modo thinking y soporte multimodal de imagen mediante un proyector de visión separado. La aportación de KarLex AI no es el modelo en sí, sino una estrategia de cuantización que preserva el comportamiento de razonamiento incluso en los tamaños más pequeños.
 
-El modelo base es un transformer híbrido de 26.895.998.464 parámetros (unos 26,9 mil millones) con 48 capas de atención lineal Gated-DeltaNet y 16 capas de atención completa, capacidad nativa visión-lenguaje y una ventana de contexto de 262.144 tokens. Incorpora modo de razonamiento (thinking) activado por defecto y una cabeza de predicción multi-token (MTP) que, según el autor de esta conversión, no se incluye en los archivos GGUF.
+El problema que resuelve esta ficha es concreto: las cuantizaciones extremas de modelos de razonamiento grandes suelen degradar el modo thinking hasta hacerlo inútil, con bucles, agotamiento de tokens y fallos en problemas elementales. Según los datos de la model card, el archivo IQ1_S de 6,19 GB alcanza un 53,8% en AIME 2025+2026 y un 87,8% en MATH-500, frente al 1,3% y 32,6% de la cuantización equivalente de Unsloth del mismo tamaño. A partir de 10,93 GB (IQ3_XXS) las puntuaciones se acercan al BF16 completo (94,2% AIME, 99,0% MATH-500).
 
-La relevancia práctica es inmediata para quien quiera ejecutar un razonador de ~27B en hardware de consumo: el rango de archivos va de 6,19 GB a 14,25 GB, lo que permite desplegarlo en GPUs de 8-16 GB de VRAM con llama.cpp estándar y sin parches ni forks. La licencia Apache-2.0 del modelo base se hereda, lo que facilita el uso comercial.
+La relevancia actual es doble: por un lado, permite ejecutar un modelo de razonamiento de 27B en hardware de consumo con 8-16 GB de VRAM; por otro, emplea únicamente tipos de tensor estándar de llama.cpp, sin forks ni parches, lo que simplifica el despliegue en producción. La licencia es Apache-2.0, igual que el modelo base.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 48 capas de atención lineal Gated-DeltaNet + 16 capas de atención completa; multimodal (visión-lenguaje) |
-| Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens (262K) |
-| Tipos de cuantizacion | IQ1_S, IQ2_XXS, IQ2_XS, IQ3_XXS, IQ4_XS (mezcla de tipos de tensor estándar de llama.cpp) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (modelo base Qwen3.8-27B); codificador de visión en mmproj separado |
+| Parámetros totales | 26.895.998.464 (aproximadamente 27B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada; el ejemplo de arranque usa `-c 32768` |
+| Tipos de cuantización | IQ1_S, IQ2_XXS, IQ2_XS, IQ3_XXS, IQ4_XS (mezcla de tipos de tensor estándar dentro de cada archivo) |
+| Idiomas soportados | No disponible en la información proporcionada |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base original en safetensors/BF16 (~54 GB) |
-| Tamano del repo | 46,6 GB |
-| Tamano por archivo | 6,19 GB (IQ1_S), 7,21 GB (IQ2_XXS), 8,00 GB (IQ2_XS), 10,93 GB (IQ3_XXS), 14,25 GB (IQ4_XS) |
-| Runtime | llama.cpp estándar (sin fork ni parches) |
+| Formato de pesos | GGUF (llama.cpp); proyector de visión en mmproj F16 y BF16 |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint base Qwen3.8-27B es un transformer denso con una arquitectura híbrida poco habitual: 48 capas usan atención lineal Gated-DeltaNet (coste lineal en longitud de secuencia) y 16 capas mantienen atención completa, lo que permite sostener un contexto de 262K tokens con un coste de memoria y cómputo contenido. Es nativamente visión-lenguaje, con torre visual integrada, e incluye una cabeza de predicción multi-token (MTP) para decodificación especulativa en el checkpoint original; esta cabeza no está incluida en los GGUF de KarLexAI.
+El modelo subyacente es un transformer denso de aproximadamente 27B parámetros con cabeza de predicción multi-token (MTP), aunque la model card indica explícitamente que la cabeza MTP no está incluida en los archivos GGUF. El modelo incorpora un modo de razonamiento (thinking) activado por defecto y un codificador de visión que se distribuye por separado en los archivos `mmproj-F16.gguf` y `mmproj-BF16.gguf`, sin cuantizar y convertidos con llama.cpp upstream. La arquitectura, el tokenizador y la plantilla de chat son idénticos al modelo base Qwen/Qwen3.8-27B.
 
-Sobre el entrenamiento del modelo base no se aporta información en la documentación disponible (número de tokens, composición del dataset, uso de RLHF/DPO): no disponible. Lo que sí está documentado es el proceso de esta conversión: cuantización post-entrenamiento sin fine-tuning, con mezclas de tipos de tensor estándar de llama.cpp elegidas para maximizar la retención de calidad en cada clase de tamaño. El autor reporta que el archivo IQ1_S conserva razonamiento funcional (53,8 % en AIME) donde otras cuantizaciones de 1 bit colapsan en bucles y agotamiento de tokens. Los ajustes de muestreo recomendados por Qwen (temperatura 1,0, top-k 20, top-p 0,95) están embebidos en los metadatos del archivo.
+El trabajo de KarLex AI es una cuantización post-entrenamiento, sin fine-tuning. Cada archivo mezcla varios tipos de tensor estándar de llama.cpp para asignar más precisión a las capas críticas para el razonamiento y menos a las menos sensibles. No se han publicado detalles sobre el dataset de entrenamiento del modelo base (número de tokens, composición, uso de RLHF o DPO) en la información disponible. La model card sí documenta que todas las métricas se obtuvieron en un único harness sobre llama.cpp estándar, en modo thinking y con los parámetros de muestreo de Qwen (temperatura 1.0, top-k 20, top-p 0.95), que están almacenados en el propio archivo.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto de hasta 262K tokens.
-- Razonamiento explícito en modo thinking, activado por defecto; el modelo produce cadenas de razonamiento antes de la respuesta final.
-- Razonamiento matemático y resolución de problemas de competición (resultados reportados en AIME 2025+2026 y MATH-500).
-- Seguimiento de instrucciones verificable (IFEval reportado en la model card).
-- Capacidades de visión-lenguaje nativas en el modelo base; la model card de esta conversión no detalla el estado de la torre visual tras la cuantización (no disponible).
-- Capacidad de predicción multi-token (MTP) presente en el modelo base, pero no incluida en los archivos GGUF de este repositorio.
-- Soporte de tool calling / function calling: no documentado explícitamente en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: implícito en el modo thinking, sin evaluación específica publicada en esta ficha.
-- Multilingüismo: no disponible (no se listan idiomas en el repositorio).
+- Generación de texto conversacional multi-turno.
+- Razonamiento explícito en modo thinking, activado por defecto.
+- Razonamiento matemático de competición: 53,8% en AIME 2025+2026 con el archivo de 6,19 GB y 94,2% con el de 10,93 GB.
+- Instrucciones complejas: 94,3% en IFEval con IQ3_XXS e IQ4_XS.
+- Matemáticas escolares y de nivel avanzado: 99,0% en MATH-500 con IQ3_XXS.
+- Comprensión de imágenes mediante el proyector de visión opcional (`--mmproj`).
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
+- Ejecución en llama.cpp estándar sin parches ni forks.
+- Parámetros de muestreo recomendados embebidos en el archivo.
+- Soporte de tool calling y function calling: no confirmado en la información proporcionada.
+- Capacidades de agente multi-paso: no confirmadas explícitamente en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Razonamiento matemático en local con hardware modesto: el archivo IQ1_S de 6,19 GB permite resolver problemas tipo AIME en una GPU de 8 GB; útil para prototipos de tutores matemáticos o validación de pipelines de evaluación sin depender de APIs.
-- Asistente de análisis con documentos largos: con 262K tokens de contexto, se puede cargar un repositorio de código, un expediente o varios papers y hacer preguntas cruzadas manteniendo el hilo completo en una sola ventana.
-- Despliegue en estaciones de trabajo sin GPU dedicada de gama alta: los archivos IQ2_XXS (7,21 GB) e IQ2_XS (8,00 GB) caben en GPUs consumer de 8-12 GB y ofrecen un salto grande de calidad respecto al de 1 bit, adecuados para entornos de desarrollo y demos internas.
-- Servicio de chat autoalojado con llama-server: el par de comandos documentado (`llama-server -ngl 99 -c 32768 --jinja`) levanta una API compatible con OpenAI en localhost, útil para integrar el modelo en aplicaciones existentes sin reescribir clientes.
-- Evaluación comparativa de cuantizaciones: investigadores que estudien la degradación de razonamiento bajo compresión pueden usar la tabla de la model card y BENCHMARKS.md como referencia reproducible con hashes de archivo.
-- Generación de código asistida en local: el modelo base es un LLM generalista con modo thinking; para tareas de programación en producción conviene validar previamente la calidad del archivo elegido, ya que la model card no publica resultados específicos de código.
-- Procesamiento multimodal en local (si la torre visual funciona tras la cuantización): descripción de imágenes, extracción de información de capturas o diagramas; requiere verificación empírica porque el repositorio no documenta el estado de la visión.
+- Razonamiento matemático en local con hardware limitado: el archivo IQ1_S de 6,19 GB permite resolver problemas de nivel AIME en una GPU de consumo; útil para prototipado y para entornos sin acceso a la nube.
+- Asistente de razonamiento en portátiles con 8 GB de VRAM: el archivo IQ2_XXS de 7,21 GB ofrece 82,7% en AIME y 98,4% en MATH-500, un salto cualitativo respecto al escalón inferior con solo 1 GB más de descarga.
+- Despliegue en servidores de gama media: el archivo IQ3_XXS de 10,93 GB alcanza 94,2% en AIME, 94,3% en IFEval y 99,0% en MATH-500, prácticamente equivalente al BF16 de 54 GB, lo que reduce el coste de VRAM en un factor de cinco.
+- Evaluación de instrucciones y generación controlada: con 94,3% en IFEval, el modelo es adecuado para tareas de seguimiento estricto de instrucciones en pipelines de generación.
+- Análisis de documentos con imágenes: usando el proyector `mmproj-F16.gguf` (0,9 GB) junto con cualquiera de los archivos cuantizados, se pueden procesar capturas, diagramas o páginas escaneadas en local.
+- Investigación sobre cuantización: la comparativa publicada frente a Unsloth e ISTA, con diferencias pareadas y errores estándar, sirve como referencia para estudiar cómo afecta la cuantización al razonamiento en modelos de 27B.
+- Chat conversacional autoalojado: con `llama-server` y la plantilla de chat incluida, se puede levantar un endpoint compatible con la API de OpenAI en una sola máquina.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card, obtenidos con un único harness sobre llama.cpp estándar, en modo thinking y con el sampler de Qwen:
+Resultados publicados en la model card, en modo thinking y con el sampler de Qwen sobre llama.cpp estándar:
 
-| Archivo | Tamano | AIME 2025+2026 | IFEval | MATH-500 |
+| Archivo | Tamaño | AIME 2025+2026 | IFEval | MATH-500 |
 |---|---|---|---|---|
 | IQ1_S | 6,19 GB | 53,8 | 50,5 | 87,8 |
 | IQ2_XXS | 7,21 GB | 82,7 | 88,5 | 98,4 |
@@ -65,56 +65,64 @@ Resultados publicados en la model card, obtenidos con un único harness sobre ll
 | IQ4_XS | 14,25 GB | 95,2 | 94,3 | 98,8 |
 | BF16 (referencia) | ~54 GB | 96,0 | 93,4 | 99,2 |
 
-Comparativa directa publicada (diferencias pareadas en puntos, ± 1 error estándar):
+Comparativa directa frente a otras cuantizaciones del mismo modelo (diferencias en puntos, ± error estándar):
 
-| Tamano | KLX | Rival | AIME 2025+2026 | IFEval | MATH-500 |
+| Tamaño | Archivo KLX | Rival | AIME | IFEval | MATH-500 |
 |---|---|---|---|---|---|
 | 6,2 GB | IQ1_S | Unsloth UD-IQ1_S (6,19 GB) | +52,5 ± 4,9 | +28,8 ± 2,6 | +55,2 ± 2,5 |
-| 7,2 GB | IQ2_XXS | Unsloth UD-IQ2_XXS (7,27 GB) | +8,75 ± 2,6 | +8,3 ± 1,9 | +1,8 ± 0,9 |
+| 7,2 GB | IQ2_XXS | Unsloth UD-IQ2_XXS, 19 ago (7,27 GB) | +8,75 ± 2,6 | +8,3 ± 1,9 | +1,8 ± 0,9 |
 | 8 GB | IQ2_XS | ISTA GSQ-RCO IQ2_XS (8,42 GB) | +0,2 ± 1,5 | -1,1 ± 1,1 | +0,2 ± 0,8 |
-| 8 GB | IQ2_XS | Unsloth UD-IQ2_S (8,37 GB) | +1,0 ± 1,4 | +2,8 ± 1,3 | -0,8 ± 0,8 |
+| 8 GB | IQ2_XS | Unsloth UD-IQ2_S, 19 ago (8,37 GB) | +1,0 ± 1,4 | +2,8 ± 1,3 | -0,8 ± 0,8 |
 | 10,9 GB | IQ3_XXS | Unsloth UD-IQ3_XXS (10,93 GB) | +1,0 ± 1,2 | -0,4 ± 0,8 | +0,2 ± 0,4 |
-| 14,3 GB | IQ4_XS | Unsloth UD-IQ4_XS (14,25 GB) | -0,6 ± 0,9 | -1,1 ± 0,8 | +0,2 ± 0,5 |
+| 14,3 GB | IQ4_XS | Unsloth UD-IQ4_XS, 19 ago (14,25 GB) | -0,6 ± 0,9 | -1,1 ± 0,8 | +0,2 ± 0,5 |
 
-A partir de 10,9 GB las diferencias entre fabricantes quedan dentro del error de medida. No se publican resultados de MMLU, HumanEval, GSM8K ni de benchmarks multimodales en la información disponible.
+Nota del autor: el 10 y 11 de noviembre de 2026 Unsloth sustituyó UD-IQ2_XXS, UD-IQ2_S y UD-IQ4_XS por archivos "Dynamic v3.1"; las comparaciones con esos tres archivos se midieron contra las versiones del 19 de agosto de 2026 y no se han repetido. Los archivos UD-IQ1_S y UD-IQ3_XXS no han cambiado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamaño del archivo más el contexto y los buffers de cómputo. IQ1_S (6,19 GB) corre en 8 GB; IQ2_XXS (7,21 GB) e IQ2_XS (8,00 GB) en 8-12 GB; IQ3_XXS (10,93 GB) en 12-16 GB; IQ4_XS (14,25 GB) en 16-24 GB. Con contexto largo (32K-262K) la caché KV crece y conviene reservar margen adicional.
-- GPUs recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090 (24 GB) para IQ4_XS con contexto amplio; A100/H100 solo necesarias para servir muchas peticiones concurrentes o el BF16 completo.
-- Cabe en GPU consumer: sí, desde una RTX 3060 de 12 GB o incluso GPUs de 8 GB con los archivos de 1-2 bits; también en Apple Silicon con Metal.
-- Opciones de despliegue: llama.cpp (llama-server, llama-cli) es el runtime de referencia documentado; Ollama es viable importando el GGUF; vLLM y TGI no están documentados para este repositorio (vLLM requiere formatos distintos de GGUF o soporte parcial de cuantizaciones GGUF).
-- Latencia y throughput: no disponibles. El modelo base incluye MTP para decodificación especulativa, pero esta cabeza no está en los GGUF, por lo que no se puede aprovechar esa aceleración.
+- VRAM estimada para inferencia: desde aproximadamente 6,2 GB (IQ1_S) hasta 14,3 GB (IQ4_XS), más overhead de contexto KV. El ejemplo oficial usa `-c 32768`, que incrementa el consumo de KV cache.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080, RTX 4090, A100, H100. Para IQ1_S e IQ2_XXS basta una GPU de 8 GB; para IQ3_XXS y IQ4_XS se recomienda 12-16 GB.
+- Cabe en GPU de consumo: sí, todas las cuantizaciones caben en GPUs consumer de gama media-alta; IQ1_S e IQ2_XXS caben en 8 GB, IQ3_XXS e IQ4_XS requieren 12-16 GB.
+- Opciones de despliegue: llama.cpp (`llama-server`), y por extensión cualquier frontend compatible con GGUF (Ollama, LM Studio, KoboldCpp, entre otros). No se menciona soporte explícito de vLLM o TGI en la información proporcionada.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Proyector de visión: añadir aproximadamente 0,9 GB para `mmproj-F16.gguf` o `mmproj-BF16.gguf`.
+- Comando de referencia: `llama-server -m Qwen3.8-27B-KLX-IQ1_S.gguf -ngl 99 -c 32768 --jinja`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
-|---|---|---|---|---|---|
-| KarLexAI Qwen3.8-27B-GGUF | ~26,9 B | 262K | GGUF 6,19-14,25 GB | Apache-2.0 | Foco en retener razonamiento a 1-2 bits |
-| Frosty40 Qwen3.8-27B-GGUF | ~26,9 B | 262K | GGUF Q6_K + Q8_0 | Apache-2.0 (heredada) | Incluye visión; validado en Intel Arc Pro B70 vía SYCL |
-| Unsloth UD-Qwen3.8-27B | ~26,9 B | 262K | GGUF dinámico (UD-IQ1_S a IQ4_XS) | Apache-2.0 | Referencia de comparación del autor; peor rendimiento a 1-2 bits según sus datos |
-| ISTA GSQ-RCO Qwen3.8-27B IQ2_XS | ~26,9 B | 262K | GGUF 8,42 GB | Apache-2.0 | Rendimiento prácticamente idéntico a KLX IQ2_XS |
+| Aspecto | KLX IQ1_S | KLX IQ3_XXS | Unsloth UD-IQ1_S | ISTA GSQ-RCO IQ2_XS |
+|---|---|---|---|---|
+| Modelo base | Qwen3.8-27B | Qwen3.8-27B | Qwen3.8-27B | Qwen3.8-27B |
+| Tamaño | 6,19 GB | 10,93 GB | 6,19 GB | 8,42 GB |
+| AIME 2025+2026 | 53,8 | 94,2 | 1,3 | 89,2 (implícito) |
+| IFEval | 50,5 | 94,3 | 21,7 | 94,6 (implícito) |
+| MATH-500 | 87,8 | 99,0 | 32,6 | 97,6 (implícito) |
+| Licencia | Apache-2.0 | Apache-2.0 | Apache-2.0 | Apache-2.0 |
+| Runtime | llama.cpp estándar | llama.cpp estándar | llama.cpp estándar | llama.cpp estándar |
 
-La comparativa se limita a otras cuantizaciones del mismo modelo base, que es el universo relevante para este repositorio. Frente a modelos de tamaño similar de otros fabricantes no hay datos en la información disponible.
+Los valores "implícitos" de ISTA se derivan de las diferencias pareadas publicadas (+0,2 en AIME, -1,1 en IFEval, +0,2 en MATH-500 respecto a KLX IQ2_XS). La comparación con Unsloth en 10,9 GB y 14,3 GB no muestra diferencias significativas según el propio autor.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización, no un modelo nuevo: hereda todos los sesgos y limitaciones del Qwen3.8-27B base, sobre los que no se aporta documentación en este repositorio.
-- Riesgo de alucinación: el modo thinking por defecto aumenta la longitud de las respuestas y el consumo de tokens; en cuantizaciones de 1-2 bits el riesgo de bucles y de razonamiento truncado es real, aunque el autor reporta mitigarlo parcialmente.
-- La cuantización a 1 bit (IQ1_S) degrada el seguimiento de instrucciones (IFEval 50,5 frente a 93,4 del BF16) mucho más que las matemáticas; no es adecuada para tareas de formato estricto o salidas estructuradas.
-- La torre visual del modelo base no está documentada en esta conversión; asumir visión funcional sin verificarla es arriesgado.
-- La cabeza MTP no está incluida, por lo que se pierde la decodificación especulativa del modelo original y el throughput será menor que en el checkpoint completo.
-- Idiomas soportados no declarados: no se puede garantizar calidad en castellano sin evaluación propia.
-- Licencia Apache-2.0 permite uso comercial, pero conviene revisar el archivo NOTICE del repositorio y las condiciones del modelo base de Qwen.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validación comunitaria independiente de los resultados publicados; los benchmarks provienen del propio autor.
-- Los resultados de benchmarks se obtuvieron con un único harness y sampler concretos; no son directamente comparables con evaluaciones de terceros que usen otra configuración.
+- La cuantización IQ1_S, pese a mantener el razonamiento, sigue muy por debajo del BF16 en IFEval (50,5 frente a 93,4); no es adecuada para tareas de seguimiento estricto de instrucciones.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; es un riesgo inherente a los modelos de razonamiento y puede amplificarse en cuantizaciones extremas.
+- La cabeza de predicción multi-token (MTP) no está incluida, por lo que no se puede aprovechar la decodificación especulativa nativa del modelo base.
+- Idiomas soportados no documentados en la información disponible; el rendimiento multilingüe no está verificado.
+- Sesgos conocidos del modelo base no documentados en la información disponible.
+- Las comparativas con Unsloth UD-IQ2_XXS, UD-IQ2_S y UD-IQ4_XS se midieron contra archivos del 19 de agosto de 2026 y no se han repetido con los nuevos archivos "Dynamic v3.1" del 10-11 de noviembre de 2026.
+- El contexto máximo real del modelo base no se especifica en la información proporcionada; el ejemplo usa 32.768 tokens, pero no se confirma que sea el límite.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar el archivo NOTICE del repositorio por si incluye atribuciones adicionales.
+- El proyecto no está afiliado a Qwen, Unsloth ni ISTA; el soporte y las actualizaciones dependen de KarLex AI.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Benchmarks detallados y hashes: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/BENCHMARKS.md
-- Aviso legal del repositorio: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/NOTICE
-- Autor: https://karlex.ai
-- Cuantización alternativa con visión (Frosty40): https://huggingface.co/Frosty40/Qwen3.8-27B-GGUF/blob/main/README.md
-- Guía de despliegue en hardware consumer: https://aiindigo.com/tutorials/getting-started-with-qwen3-8-27b-gguf-run-a-27b-model-locally
+- Archivo de benchmarks: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/BENCHMARKS.md
+- Aviso legal (NOTICE): https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/NOTICE
+- Página del autor: https://karlex.ai
+- Archivo IQ1_S: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-KLX-IQ1_S.gguf
+- Archivo IQ2_XXS: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-KLX-IQ2_XXS.gguf
+- Archivo IQ2_XS: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-KLX-IQ2_XS.gguf
+- Archivo IQ3_XXS: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-KLX-IQ3_XXS.gguf
+- Archivo IQ4_XS: https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-KLX-IQ4_XS.gguf

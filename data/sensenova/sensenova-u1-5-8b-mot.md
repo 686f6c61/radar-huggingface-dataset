@@ -2,79 +2,101 @@
 
 ## Resumen
 
-SenseNova-U1.5-8B-MoT es un modelo multimodal nativo unificado desarrollado por SenseNova (SenseTime) que integra comprensión, razonamiento y generación de imágenes en una única arquitectura monolítica, sin depender de adaptadores entre modalidades. Forma parte de la serie SenseNova-U1, construida sobre la arquitectura NEO-unify, y está diseñado para tareas de creación visual: generación de imágenes de alta calidad, edición con preservación de identidad, generación nativa en 4K, renderizado de texto legible en inglés y chino, y control visual preciso mediante bounding boxes o referencias múltiples.
+SenseNova-U1.5-8B-MoT es un checkpoint multimodal nativo desarrollado por SenseNova (OpenSenseNova) orientado a generación y edición de imágenes de alta fidelidad, con capacidad any-to-any. Se construye sobre la arquitectura NEO-unify y se distribuye con licencia Apache 2.0, lo que lo hace atractivo para integración en producto y experimentación académica sin fricciones legales. El modelo se publica en Hugging Face con 3.755 descargas y 282 likes en el momento de la consulta.
 
-El checkpoint oficial (no preview) se publicó en agosto de 2026 bajo licencia Apache 2.0, con pesos en formato safetensors que suman 17.532.854.464 parámetros (el nombre comercial "8B" se refiere al backbone de lenguaje, pero los pesos totales incluyen los módulos de visión). Soporta entrada y salida any-to-any, lo que permite combinar texto, imágenes y ediciones en un mismo flujo. Su relevancia actual radica en que representa un cambio de paradigma frente a los sistemas que acoplan modelos de lenguaje y difusión por separado, ofreciendo un control más fino y consistente en tareas mixtas de comprensión y generación visual.
+El nombre comercial indica "8B", pero el recuento real de parámetros en los safetensors es de 17.532.854.464 (aproximadamente 17,5 mil millones), un dato relevante a la hora de planificar VRAM y despliegue. El repositorio ocupa 85,3 GB, lo que sugiere pesos en alta precisión y posiblemente componentes adicionales (tokenizadores visuales, decodificadores, etc.).
+
+La propuesta de valor se centra en seis mejoras visibles respecto a la versión anterior: calidad de generación, renderizado de texto en chino e inglés, generación nativa 4K, edición de imagen más fiable, seguimiento de instrucciones complejas y control visual preciso mediante bounding boxes y referencias múltiples. Existe una variante derivada, SenseNova-U1.5-8B-MoT-TailSteer, que mejora la estabilidad en edición multi-turno.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | NEO-unify (modelo nativo unificado multimodal, denso) |
-| Parametros totales | 17.532.854.464 (pesos en safetensors) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (solo safetensors de momento) |
-| Idiomas soportados | Ingles, chino |
-| Licencia | Apache 2.0 |
+| Arquitectura | NEO-unify (multimodal nativa unificada) |
+| Parametros totales | 17.532.854.464 (aprox. 17,5 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
+| Libreria | transformers |
+| Pipeline | any-to-any |
+| Tamano del repositorio | 85,3 GB |
+| Requiere codigo personalizado | si (custom_code) |
 
 ## Arquitectura y entrenamiento
 
-SenseNova-U1.5-8B-MoT se basa en NEO-unify, una arquitectura que unifica la comprensión y generación multimodal en un solo modelo, eliminando la necesidad de adaptadores o módulos externos de difusión. El modelo "piensa y actúa" directamente sobre tokens de imagen y texto, lo que permite un control más coherente entre modalidades. Según la documentación oficial, la versión 1.5 refuerza las capas de patchify (codificación y decodificación de parches de imagen), mejora la calidad y distribución de los datos de entrenamiento, reformula las tareas para mayor precisión, incorpora un módulo de mejora de prompts y optimiza el pipeline de post-entrenamiento.
+El modelo se basa en NEO-unify, una arquitectura multimodal nativa unificada que integra procesamiento de texto e imagen en un mismo espacio de representación. La model card menciona explícitamente la mejora de las capas de patchify, lo que indica que la tokenización visual se realiza mediante parches y que estas capas han sido reforzadas en esta versión. No se detalla en la información disponible si se trata de un transformer denso, un MoE o una arquitectura híbrida; el sufijo "MoT" del nombre podría sugerir Mixture-of-Transformers, pero no se confirma en la documentación proporcionada.
 
-No se han publicado datos concretos sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se utilizaron técnicas como RLHF o DPO. La información disponible indica que el entrenamiento se centró en mejorar la fidelidad visual, la coherencia global en alta resolución y el seguimiento de instrucciones complejas con múltiples restricciones.
+En cuanto al entrenamiento, la model card cita mejoras en calidad y distribución de datos, formulación de tareas, mejora de prompts y pipeline de post-entrenamiento, sin especificar el número de tokens, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Tampoco se detallan innovaciones como decodificación especulativa o atención lineal. Toda esta información debe considerarse no disponible a partir de los datos suministrados.
 
 ## Capacidades
 
-- Generacion de imagenes de alta calidad: composicion mejorada, armonia de color, renderizado de materiales realista, iluminacion natural y detalles locales finos.
-- Edicion de imagenes nativa: soporta edicion local, por texto, multi-referencia, insercion y reemplazo, preservando la identidad del sujeto y el contenido no editado.
-- Generacion nativa en 4K: produce salidas de alta resolucion con estructura global coherente y eficiencia mejorada.
-- Renderizado de texto: genera texto legible en ingles y chino dentro de las imagenes, adecuado para posters, infografias y material de marca.
-- Seguimiento de instrucciones complejas: ejecuta de forma consistente conteo de objetos, relaciones espaciales, layouts, estilos y multiples restricciones en una sola peticion.
-- Control visual preciso: permite control a nivel de region y objeto mediante bounding boxes, marcadores visuales y referencias de imagen unica o multiple.
-- Multimodal any-to-any: acepta y produce combinaciones de texto e imagen en un mismo flujo, sin adaptadores externos.
+- Generación de imágenes a partir de texto (text-to-image) con soporte de resoluciones nativas hasta 4K (el ejemplo de la model card usa 2048x2048).
+- Edición de imágenes: edición local, edición de texto, edición multi-referencia, inserción y reemplazo de objetos.
+- Preservación de identidad del sujeto y del contenido no editado en tareas de edición.
+- Renderizado de texto en chino e inglés dentro de imágenes, orientado a pósters, infografías y materiales de marca.
+- Seguimiento de instrucciones complejas con múltiples restricciones simultáneas (recuento de objetos, relaciones espaciales, layouts, estilos).
+- Control visual preciso mediante bounding boxes, marcadores visuales y referencias de una o varias imágenes.
+- Capacidad any-to-any declarada en el pipeline, lo que implica entrada y salida en múltiples modalidades.
+- Extracción de características (tag feature-extraction).
+- Soporte de conversación multimodal (tag neo_chat).
+- Idiomas: inglés y chino.
 
 ## Casos de uso
 
-- Generacion de imagenes para campanas de marketing: el modelo puede crear imagenes fotorrealistas a partir de prompts descriptivos, con control de composicion y estilo, ideal para producir material visual variado sin sesiones de fotos.
-- Edicion de producto en e-commerce: permite cambiar colores, fondos o atributos de un producto manteniendo la identidad del objeto, lo que agiliza la creacion de variantes para catalogos.
-- Creacion de infografias y posters: gracias al renderizado de texto legible en ingles y chino, puede generar piezas con jerarquia de informacion clara, util para disenadores y equipos de comunicacion.
-- Generacion de imagenes en 4K para impresion: la salida nativa de alta resolucion es adecuada para carteleria, vinilos o material impreso que requiere detalle fino.
-- Control de diseno mediante bounding boxes: permite especificar regiones exactas donde colocar objetos o texto, util en diseno de UI/UX, storyboards o maquetas visuales.
-- Asistente creativo multimodal: combinando entrada de imagen y texto, puede editar bocetos, generar variaciones o completar disenos parciales, sirviendo como herramienta de apoyo para ilustradores y disenadores graficos.
+- Generación de material de marketing: creación de pósters, banners e infografías con texto legible en chino e inglés, aprovechando la mejora específica en renderizado tipográfico y jerarquía visual.
+- Edición de producto en e-commerce: sustitución de fondos, cambio de color de prendas o inserción de objetos preservando la identidad del modelo y la iluminación original, gracias a la capacidad de edición local con preservación de contenido no editado.
+- Composición multi-referencia: combinación de objetos de varias imágenes de referencia sin reconstruir la escena completa, útil en catálogos y diseño de interiores.
+- Generación nativa en 4K: producción de assets de alta resolución para impresión o pantallas de gran formato con estructura global coherente y eficiencia mejorada.
+- Control creativo por regiones: uso de bounding boxes y marcadores visuales para dirigir la composición en flujos de diseño asistido, donde el diseñador define zonas y el modelo rellena el contenido.
+- Edición iterativa conversacional: flujos de refinamiento sucesivo sobre una misma imagen; para escenarios de muchas iteraciones se recomienda evaluar la variante TailSteer, diseñada para estabilidad multi-turno.
+- Automatización de pipelines creativos: integración vía `transformers` con código personalizado en entornos Python 3.11, PyTorch 2.8 y CUDA 12.8 para generación por lotes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card incluye graficos radiales y comparativos (imagenes) que no son accesibles como datos textuales, por lo que no es posible presentar una tabla con cifras concretas. Se recomienda consultar el repositorio de GitHub o el paper de arXiv para obtener los valores detallados cuando esten disponibles.
+La model card incluye gráficas de benchmarks (radial y combinada) alojadas como imágenes en el repositorio de GitHub, pero no se proporcionan los valores numéricos en el texto disponible. Por tanto, no se han publicado resultados de benchmarks en formato tabular en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos en safetensors ocupan aproximadamente 35 GB en FP16 (17.5B parametros × 2 bytes). Con cuantizacion a 8 bits se reduciria a ~17.5 GB, y a 4 bits a ~9 GB, aunque no se han publicado cuantizaciones oficiales.
-- GPU recomendadas: para inferencia en FP16 se necesitan GPUs con al menos 40 GB de VRAM (A100 40GB, A6000, o multiples RTX 4090 con tensor parallelism). Con cuantizacion podria ejecutarse en una RTX 4090 (24 GB) o similar, pero no esta confirmado oficialmente.
-- Entorno de desarrollo: el repositorio oficial recomienda Python 3.11, PyTorch 2.8 y CUDA 12.8, con soporte opcional para FlashAttention.
-- Opciones de despliegue: el codigo de inferencia de referencia esta disponible en el repositorio de GitHub. No se menciona soporte explicito para vLLM, llama.cpp u Ollama; es probable que requiera integracion manual con el codigo oficial.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un checkpoint de ~17,5 B parámetros en FP16 requiere del orden de 35 GB solo para pesos, más overhead de activaciones y del pipeline multimodal; en BF16/FP16 no cabe en GPUs de consumo de 24 GB.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, un despliegue en FP16 requiere GPUs de 40-80 GB (A100 40/80 GB, H100). El ejemplo oficial usa `--device_map auto`, lo que permite reparto entre varias GPUs.
+- Cabe en consumer GPU: no en FP16 con el conjunto completo de pesos; requeriría cuantización, cuya disponibilidad no se documenta.
+- Opciones de despliegue: la referencia oficial es el repositorio GitHub de SenseNova-U1 con `uv`, Python 3.11, PyTorch 2.8 y CUDA 12.8, más FlashAttention opcional. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos publicados que comparen directamente SenseNova-U1.5-8B-MoT con otras alternativas de la misma categoria (modelos unificados multimodales como Chameleon, Emu3 o Show-o). La informacion disponible no incluye tablas comparativas con cifras de rendimiento, por lo que no es posible ofrecer una comparacion cuantitativa fiable.
+| Modelo | Parametros | Contexto | Licencia | Modalidad | Disponibilidad |
+|---|---|---|---|---|---|
+| SenseNova-U1.5-8B-MoT | ~17,5 B (segun safetensors) | no disponible | Apache 2.0 | any-to-any (texto/imagen) | Hugging Face, ModelScope, GitHub |
+| SenseNova-U1.5-8B-MoT-TailSteer | no disponible | no disponible | no disponible | edicion multi-turno mejorada | Hugging Face |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre modelos comparables de otros autores en los datos proporcionados; la comparativa se limita a la variante TailSteer del mismo autor.
 
 ## Limitaciones y advertencias
 
-- El modelo card advierte de posibles detalles o colores sobredimensionados en algunas salidas, lo que puede requerir ajuste de prompts o post-procesado.
-- Solo soporta ingles y chino; no se garantiza un rendimiento adecuado en otros idiomas para el renderizado de texto.
-- No se han publicado datos sobre sesgos especificos, pero al ser un modelo de generacion de imagenes, puede reflejar sesgos presentes en los datos de entrenamiento.
-- Riesgo de alucinacion visual: en tareas de edicion compleja, el modelo puede alterar elementos no especificados si no se indica explicitamente que deben permanecer intactos.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del repositorio de GitHub para confirmar restricciones adicionales.
-- El modelo es relativamente reciente (agosto de 2026) y la documentacion sobre cuantizacion, despliegue en produccion y benchmarks numericos es aun limitada.
+- Idiomas: solo se declaran inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Sesgos: no se documentan sesgos conocidos, pero al ser un modelo generativo de imágenes entrenado con datos no especificados, puede reproducir sesgos de representación y estereotipos.
+- Alucinación visual: como modelo generativo, puede producir contenido incoherente, texto mal renderizado o artefactos, especialmente en resoluciones altas o instrucciones muy complejas.
+- Contexto: la longitud de contexto no está publicada, lo que dificulta planificar conversaciones largas o edición multi-turno; para ello se sugiere la variante TailSteer.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las dependencias del repositorio (código personalizado, FlashAttention) y las licencias de los datasets de entrenamiento, no detalladas.
+- Producción: requiere código personalizado (`custom_code`) y una pila concreta (Python 3.11, PyTorch 2.8, CUDA 12.8); no hay soporte documentado en motores de inferencia estándar como vLLM u Ollama.
+- Tamaño real: el nombre comercial "8B" no coincide con los ~17,5 B parámetros reales, lo que puede llevar a subestimar los requisitos de hardware.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
-- GitHub (codigo de inferencia): https://github.com/OpenSenseNova/SenseNova-U1
-- ModelScope: https://modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT
-- Demo en SenseNova-Studio: https://unify.light-ai.top/
+- Variante TailSteer: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer
+- Repositorio GitHub: https://github.com/OpenSenseNova/SenseNova-U1
+- Rama U1.5 del repositorio: https://github.com/OpenSenseNova/SenseNova-U1/tree/refs/heads/feat/u1.5
 - Blog de arquitectura NEO-unify: https://huggingface.co/blog/sensenova/neo-unify
-- Paper arXiv: https://arxiv.org/abs/2605.12500
-- Version Preview en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-Preview
+- Coleccion U1.5 en Hugging Face: https://huggingface.co/collections/sensenova/sensenova-u15
+- ModelScope: https://modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT
+- Demo: https://unify.light-ai.top/
+- Guia de instalacion: https://github.com/OpenSenseNova/SenseNova-U1/blob/refs/heads/feat/u1.5/docs/installation.md
+- Ejemplos de inferencia: https://github.com/OpenSenseNova/SenseNova-U1/blob/refs/heads/feat/u1.5/examples/README.md
+- Paper 1 (arXiv 2605.12500): https://arxiv.org/abs/2605.12500
+- Paper 2 (arXiv 2609.11929): https://arxiv.org/abs/2609.11929

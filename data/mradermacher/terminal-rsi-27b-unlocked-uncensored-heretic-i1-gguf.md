@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF es una cuantizacion en formato GGUF realizada por mradermacher sobre el modelo base SolsticeAI/Terminal-RSI-27B-Unlocked-Uncensored-Heretic. Se trata de un modelo derivado de la familia Qwen3.5 (etiqueta `qwen3_5` en los metadatos de repositorios relacionados), orientado a tareas de agente de terminal, generacion de codigo y contexto largo, segun las etiquetas publicadas en los repositorios hermanos del mismo autor. El repositorio contiene unicamente pesos cuantizados en multiples variantes (desde IQ1_S hasta Q6_K), generados con imatrix.
+Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF es la versión cuantizada en formato GGUF del modelo SolsticeAI/Terminal-RSI-27B-Unlocked-Uncensored-Heretic, un modelo de lenguaje de aproximadamente 26.900 millones de parámetros orientado a tareas de agente de terminal, generación de código y razonamiento multi-paso. La cuantización corre a cargo de mradermacher, que aplica cuantización ponderada con fichero imatrix para producir un amplio abanico de variantes IQ y K-quant.
 
-La relevancia de esta ficha es limitada por la escasez de informacion verificable: la model card del repositorio no incluye descripcion funcional, licencia, idiomas ni resultados de evaluacion, y el propio autor remite al modelo original de SolsticeAI. El dato de parametros totales registrado en la plataforma (6.789.424) es incompatible con el nombre del modelo (27B) y con el tamano del repositorio (0,0 GB), por lo que debe considerarse no fiable.
+El modelo base se presenta como un ajuste orientado a "recursive self-improvement" (RSI) y entrenamiento por refuerzo, con etiquetas que lo vinculan a la familia Qwen 3.5 y a un artículo arXiv (2610.22192). Incorpora además las etiquetas "heretic", "uncensored", "decensored" y "abliterated", que indican que se ha aplicado una técnica de eliminación de rechazos (abliteration) para reducir el comportamiento de negativa del modelo.
 
-Se recomienda tratar esta ficha como un inventario de lo publicado y no como una evaluacion tecnica del modelo. Cualquier decision de despliegue deberia basarse en la model card del modelo original, no en este repositorio de cuantizaciones.
+La relevancia práctica de esta ficha radica en que ofrece el modelo en formato GGUF, lo que permite ejecutarlo en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles, con opciones de cuantización desde ~7,2 GB (IQ1_S) hasta ~16,6 GB (Q4_K_M) y superiores. La licencia es Apache 2.0 y el repositorio ocupa 300,3 GB en total, incluyendo todas las variantes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta de familia `qwen3_5` en repositorios relacionados; transformer presumiblemente) |
-| Parametros totales | no disponible (el nombre indica 27B; el campo de la plataforma indica 6.789.424, dato inconsistente) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (etiqueta `long-context` en repositorios relacionados) |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible (etiquetas `English` y `Chinese` en repositorios relacionados) |
-| Licencia | no disponible en este repositorio (los repositorios relacionados declaran apache-2.0) |
-| Formato de pesos | GGUF (cuantizaciones con imatrix, `quantize_version: 2`, `output_tensor_quantised: 1`) |
+| Arquitectura | Transformer (derivada de Qwen 3.5, segun etiquetas del autor); detalles no disponibles |
+| Parametros totales | 26.895.998.464 (~26,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (etiqueta "long-context" sin cifra) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M (y variantes superiores listadas en la model card) |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion en la documentacion proporcionada sobre la arquitectura del modelo base. Las etiquetas de los repositorios relacionados (`qwen3_5`, `Reinforcement Learning`, `recursive-self-improvement`, `terminal-agent`, `code`, `long-context`) sugieren una arquitectura transformer de la familia Qwen3.5 afinada mediante aprendizaje por refuerzo para tareas de agente de terminal y auto-mejora recursiva, pero no se dispone de detalles sobre numero de tokens de entrenamiento, composicion del dataset ni uso de RLHF o DPO.
+La información disponible no detalla la arquitectura interna más allá de las etiquetas del autor, que la vinculan a la familia Qwen 3.5 y a un transformer con soporte de contexto largo. El pipeline declarado es "reinforcement-learning" y las etiquetas incluyen "recursive-self-improvement" y "terminal-agent", lo que sugiere un ajuste orientado a tareas de agente en terminal y mejora iterativa. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
-Respecto al proceso de cuantizacion, la model card indica que se trata de cuantizaciones ponderadas con imatrix (`weighted/imatrix quants`) generadas por mradermacher a partir del modelo original de SolsticeAI, con `convert_type: hf` y `quantize_version: 2`. No se documentan tecnicas de decodificacion especulativa, atencion lineal ni otras innovaciones de inferencia.
+El modelo base incorpora modificaciones de tipo "abliterated/decensored/heretic", que habitualmente consisten en intervenciones sobre las direcciones de activación para suprimir el comportamiento de rechazo. Esta cuantización i1 aplica un fichero imatrix (0,1 GB) para guiar la cuantización ponderada. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto y codigo: las etiquetas `code` y `terminal-agent` en repositorios relacionados apuntan a un uso orientado a programacion y operacion de terminal.
-- Razonamiento multi-paso y agentes: la etiqueta `terminal-agent` sugiere soporte para tareas de agente; no confirmado en la documentacion de este repositorio.
-- Contexto largo: etiqueta `long-context` en repositorios relacionados, sin cifra concreta disponible.
-- Multilingue: etiquetas `English` y `Chinese` en repositorios relacionados; no hay datos sobre castellano.
-- Tool calling / function calling: no disponible.
-- Vision, audio o modo thinking: no disponible.
-- Ajuste "uncensored" y "heretic": el nombre indica una variante sin censura, sin que se documente el metodo de ablacion aplicado.
+- Generación de texto y razonamiento multi-paso, con etiqueta explícita de "long-context".
+- Generación y edición de código, con etiquetas "code" y "terminal-agent".
+- Comportamiento de agente de terminal y flujos de auto-mejora recursiva (RSI) según las etiquetas del autor.
+- Capacidad de visión: la model card indica "This is a vision model", con ficheros mmproj (si existen) en el repositorio estático.
+- Soporte multilingüe limitado a inglés (en) y chino (zh).
+- Comportamiento "uncensored/decensored": menor tendencia a rechazar peticiones.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de terminal para operaciones en linea de comandos: el modelo esta etiquetado como `terminal-agent`, por lo que su uso previsto es interpretar instrucciones en lenguaje natural y traducirlas a comandos de shell en entornos controlados.
-- Generacion de codigo en pipelines de desarrollo: la etiqueta `code` sugiere utilidad para autocompletado y generacion de funciones, aunque sin benchmarks publicados no puede validarse su calidad frente a alternativas.
-- Procesamiento de documentacion tecnica extensa: la etiqueta `long-context` indica que el modelo base esta disenado para ventanas amplias, adecuado para resumir repositorios o manuales, siempre que se confirme la longitud real de contexto.
-- Experimentacion en investigacion sobre auto-mejora: la etiqueta `recursive-self-improvement` apunta a un caso de uso academico para estudiar bucles de mejora autonoma en agentes.
-- Despliegue en hardware de consumo: las cuantizaciones de baja precision (IQ1_S, IQ2_XXS, Q3_K_S) permiten ejecutar un modelo nominal de 27B en GPU consumer mediante llama.cpp u Ollama, a costa de perdida de calidad.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio ofrece 24 variantes del mismo modelo, util para medir el impacto de cada nivel de cuantizacion en tareas de codigo.
-- Escenarios sin filtros de contenido: la variante "uncensored" puede emplearse en investigacion sobre seguridad de modelos, siempre con las advertencias de la seccion de limitaciones.
+- Automatización de tareas en terminal: el modelo puede interpretar comandos, encadenar pasos y operar sobre entornos de línea de comandos, aprovechando su orientación a "terminal-agent".
+- Asistencia a la programación en local: con la cuantización Q4_K_M (~16,6 GB) puede ejecutarse en una GPU de consumo de 24 GB para autocompletado y generación de código sin depender de la nube.
+- Pipelines de CI/CD con modelos autoalojados: al distribuirse en GGUF y licencia Apache 2.0, puede integrarse en infraestructura propia mediante llama.cpp u Ollama.
+- Investigación sobre alineación y abliteration: al ser una variante "decensored", sirve para estudiar el efecto de la supresión de rechazos en modelos de 27B.
+- Procesamiento de documentos largos en inglés o chino: la etiqueta "long-context" sugiere uso en resumen y extracción sobre contextos extensos, aunque la longitud exacta no está documentada.
+- Despliegue en hardware modesto: las variantes IQ2 e IQ3 (8,5-14,4 GB) permiten ejecutar el modelo en GPUs de 12-16 GB o en CPU con RAM suficiente.
+- Experimentación con visión (si se dispone del mmproj del repositorio estático): tareas de descripción de imágenes o extracción de información visual.
 
 ## Benchmarks y rendimiento
 
@@ -53,39 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma fiable por la inconsistencia en el numero de parametros. Para un modelo nominal de 27B, las cuantizaciones Q4_K_M requeririan del orden de 16-17 GB y las Q6_K alrededor de 22-23 GB, estimacion orientativa no confirmada por el autor.
-- GPU recomendadas: no disponible. Para un 27B en Q4, una RTX 4090 (24 GB) o una A100 40 GB serian suficientes segun la estimacion anterior; no verificado.
-- GPU consumer: las variantes IQ1_S, IQ2_XXS e IQ3_XXS podrian caber en GPU de 8-12 GB si el modelo es efectivamente de 27B; no confirmado.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI requeririan conversion a safetensors y no estan documentados para este repositorio.
-- Latencia y throughput: no disponible.
+- VRAM estimada según cuantización: IQ1_S ~7,2 GB; IQ2_M ~10,1 GB; IQ3_M ~12,7 GB; IQ4_XS ~15,2 GB; Q4_K_M ~16,6 GB. Los tamaños superiores (Q5, Q6, Q8) no se detallan en el fragmento disponible.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y superiores con holgura; RTX 3090/4080 (16-24 GB) para IQ4_XS y Q4_K_S; GPUs de 12 GB para IQ2/IQ3.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB con cuantizaciones IQ2/IQ3; en RTX 4090 con Q4_K_M o superiores.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier motor compatible con GGUF; los pesos originales usan transformers.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF | no disponible (nombre: 27B) | no disponible | no disponible | GGUF | Hugging Face |
-| mradermacher/Terminal-RSI-27B-GGUF | no disponible | no disponible | apache-2.0 | GGUF | Hugging Face |
-| mradermacher/Terminal-RSI-27B-i1-GGUF | no disponible | no disponible | apache-2.0 | GGUF | Hugging Face |
-| SolsticeAI/Terminal-RSI-27B-Unlocked-Uncensored-Heretic | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Terminal-RSI-27B (esta ficha) | ~26,9 B | no disponible | Apache 2.0 | GGUF (i1) | Orientado a terminal-agent, abliterated, en/zh |
+| Qwen2.5-Coder-32B | ~32 B | 128K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Referencia en código; no abliterated |
+| Gemma-2-27B | ~27 B | 8K (segun documentacion publica de Google) | Gemma license | safetensors, GGUF | Mismo orden de magnitud; licencia mas restrictiva |
+| Mistral-Small-24B | ~24 B | 32K (segun documentacion publica de Mistral) | Apache 2.0 | safetensors, GGUF | Alternativa europea con licencia permisiva |
 
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con modelos de la misma categoria.
+Los datos de contexto de los modelos comparados provienen de su documentación pública; los de este modelo no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Inconsistencia de datos: el campo de parametros de la plataforma (6.789.424) no concuerda con el nombre del modelo (27B) ni con el tamano del repositorio (0,0 GB); no debe usarse para planificar hardware.
-- Ausencia de model card funcional: no hay descripcion de capacidades, limites ni metodo de entrenamiento en este repositorio.
-- Licencia no declarada en este repositorio: los repositorios relacionados indican apache-2.0, pero la licencia del modelo original de SolsticeAI no aparece en la documentacion proporcionada; verificar antes de uso comercial.
-- Variante "uncensored" y "heretic": el modelo ha sido modificado para reducir rechazos de contenido, lo que incrementa el riesgo de generar material danino, sesgado o inexacto sin advertencia.
-- Riesgo de alucinacion: sin benchmarks ni evaluaciones publicadas, no puede acotarse la fiabilidad en tareas de codigo o terminal, donde los errores tienen impacto directo.
-- Idiomas: solo se documentan ingles y chino en repositorios relacionados; el rendimiento en castellano es desconocido.
-- Cuantizaciones de muy baja precision (IQ1_S, IQ2_XXS): degradacion significativa esperada en tareas de razonamiento y codigo.
-- Fecha de creacion futura (2026-11-09): el registro presenta una marca temporal posterior a la fecha actual, lo que sugiere datos de plataforma no verificados.
+- Al estar "abliterated/decensored", el modelo puede generar contenido que otros modelos rechazarían; requiere moderación adicional en producción.
+- Riesgo de alucinación no cuantificado; no hay benchmarks publicados que permitan estimarlo.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado.
+- La longitud de contexto exacta no está disponible, pese a la etiqueta "long-context".
+- Las cuantizaciones IQ1 e IQ2 (especialmente IQ1_S, IQ1_M, Q2_K_S) degradan notablemente la calidad según advierte el propio autor ("for the desperate", "very low quality").
+- El repositorio ocupa 300,3 GB; conviene descargar solo la variante necesaria.
+- Aunque la licencia es Apache 2.0, el modelo base podría arrastrar términos adicionales no reflejados en la información disponible.
+- Sin datos de benchmarks ni de tool calling, la idoneidad para agentes en producción debe validarse empíricamente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF
-- Modelo original: https://huggingface.co/SolsticeAI/Terminal-RSI-27B-Unlocked-Uncensored-Heretic
-- Repositorio relacionado (GGUF): https://huggingface.co/mradermacher/Terminal-RSI-27B-GGUF
-- Repositorio relacionado (i1-GGUF): https://huggingface.co/mradermacher/Terminal-RSI-27B-i1-GGUF
-- Listado de ficheros del repositorio i1-GGUF: https://huggingface.co/mradermacher/Terminal-RSI-27B-i1-GGUF/tree/main
-- Paper referenciado en etiquetas: arxiv:2610.22192 (no verificado)
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF
+- Modelo base: https://huggingface.co/SolsticeAI/Terminal-RSI-27B-Unlocked-Uncensored-Heretic
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Terminal-RSI-27B-Unlocked-Uncensored-Heretic-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF
+- Artículo referenciado (etiqueta arXiv): arxiv:2610.22192 (no verificable en la información proporcionada)
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

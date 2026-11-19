@@ -2,50 +2,51 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Qwen3.8-4B-Distill-ARA-Abliterated-GGUF` contiene una coleccion de cuantizaciones estaticas en formato GGUF derivadas del modelo `Austriani/Qwen3.8-4B-Distill-ARA-Abliterated`, publicado en Hugging Face. El autor de las cuantizaciones es mradermacher, un perfil conocido en la comunidad por generar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base se presenta como una destilacion de la familia Qwen3 con 4B de parametros, aunque la informacion disponible no permite confirmar la arquitectura exacta ni el proceso de entrenamiento.
+Qwen3.8-4B-Distill-ARA-Abliterated-GGUF es la distribucion en formato GGUF del modelo Austriani/Qwen3.8-4B-Distill-ARA-Abliterated, preparada por el cuantizador mradermacher. Se trata de un modelo derivado de la familia Qwen3.8 de 4B parametros, afinado mediante destilacion (distill) y posteriormente sometido a una tecnica de "abliteracion" (arbitrary-rank ablation, ARA) que elimina los mecanismos de rechazo de respuestas, dando lugar a una variante "uncensored" orientada a roleplay, escritura creativa y chat sin restricciones de contenido.
 
-La relevancia de esta publicacion es fundamentalmente practica: ofrece el modelo base en multiples niveles de cuantizacion (desde Q2_K hasta Q8_0, ademas de F16 e IQ4_XS) para facilitar su despliegue en hardware con recursos limitados. Sin embargo, la model card es extremadamente escueta: se limita a listar los tipos de cuantizacion generados y a enlazar al modelo original, sin proporcionar detalles sobre arquitectura, datos de entrenamiento, licencia o idiomas soportados.
+El modelo base conserva la arquitectura transformer de Qwen3.8 con 4.205 millones de parametros, y esta etiquetado como multimodal (el repositorio incluye ficheros mmproj, es decir, proyecciones multimodales). La version que nos ocupa es una cuantizacion estatica generada con llama.cpp, disponible en 13 niveles de cuantizacion distintos, desde Q2_K hasta f16.
 
-Conviene senalar una discrepancia importante: el nombre del repositorio indica "4B" parametros, pero el dato real de safetensors reportado en la informacion de Hugging Face es de 333.514.240 parametros (aproximadamente 333 millones). Esta inconsistencia no puede resolverse con la informacion disponible y debe tenerse en cuenta al evaluar el modelo.
+Su relevancia practica radica en que permite ejecutar un modelo de 4B con capacidades conversacionales y creativas en hardware de consumo, con licencia Apache 2.0, y sin las capas de rechazo que limitan el uso en generacion creativa libre. Es, por tanto, una opcion para desarrolladores que necesitan un modelo pequeno, desplegable localmente y sin filtros de contenido, a costa de asumir los riesgos asociados a la eliminacion de alineamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere base Qwen3, sin confirmar) |
-| Parametros totales | 333.514.240 (dato real de safetensors); el nombre indica "4B", discrepancia sin resolver |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (familia Qwen3.8), con proyeccion multimodal (mmproj) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | ingles (segun la model card); otros no disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre del repositorio sugiere que deriva de la familia Qwen3 (transformer denso, presumiblemente), y el sufijo "Distill" indica un proceso de destilacion, mientras que "ARA-Abliterated" apunta a una variante modificada mediante tecnicas de abliteration (eliminacion de direcciones de rechazo en el espacio de activaciones). Ninguno de estos extremos esta confirmado por la model card.
+El modelo base es un transformer de la familia Qwen3.8 con 4.205 millones de parametros. Segun las etiquetas del repositorio, ha sido sometido a un proceso de destilacion (distill) y posteriormente a una "arbitrary-rank ablation" (ARA) aplicada con la herramienta heretic, que elimina las direcciones de activacion responsables del rechazo de peticiones. El resultado es una variante "abliterated" o "refusal-removed", pensada para roleplay y escritura creativa sin restricciones.
 
-Tampoco se detallan los datos de entrenamiento: no hay informacion sobre numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento. La model card unicamente documenta los metadatos de la cuantizacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face mediante el flujo estandar de conversion a GGUF.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. La presencia de ficheros mmproj indica que el modelo base incorpora capacidades multimodales (vision), aunque no se detalla su alcance. Esta version concreta es una cuantizacion estatica (quantize_version 2) generada con llama.cpp, sin imatrix; el autor ofrece cuantizaciones ponderadas por imatrix en un repositorio separado.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje, aunque no se documenta explicitamente.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Soporte de tool calling / function calling: no disponible.
+- Generacion de texto y conversacion multi-turno (chat).
+- Escritura creativa y roleplay sin mecanismos de rechazo.
+- Capacidad multimodal (vision) segun la presencia de ficheros mmproj; alcance no detallado.
+- Razonamiento y codigo: heredados del modelo base Qwen3.8, sin datos especificos publicados.
+- Soporte de tool calling / function calling: no disponible en la informacion.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
-- Modificacion "abliterated": el nombre sugiere la eliminacion de mecanismos de rechazo, lo que previsiblemente reduce las negativas del modelo a ciertas peticiones, aunque no se documenta el alcance ni el metodo.
+- Capacidades multilingues: solo se declara ingles.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-- Despliegue en hardware de gama baja: las cuantizaciones Q2_K y Q3_K_S permiten ejecutar el modelo en equipos con poca memoria, aunque a costa de perdida de calidad. Es el caso de uso principal de este repositorio.
-- Prototipado rapido con llama.cpp: la disponibilidad de multiples niveles de cuantizacion facilita probar el modelo en local con distintas relaciones calidad/memoria antes de comprometerse con un despliegue.
-- Experimentacion con modelos "abliterated": investigadores interesados en estudiar el efecto de la abliteration sobre el comportamiento del modelo pueden usar estas cuantizaciones para comparar respuestas frente al modelo original.
-- Inferencia en CPU: el formato GGUF y los tamanos reducidos (repo de 1.0 GB) permiten ejecucion en CPU con llama.cpp u Ollama, adecuado para entornos sin GPU.
-- Evaluacion comparativa de cuantizaciones: util para medir la degradacion de calidad entre Q2_K, Q4_K_M y Q8_0 en un mismo modelo base.
-- Fines educativos y de investigacion sobre destilacion: el modelo puede servir para estudiar como se comporta una destilacion de la familia Qwen3 en tareas acotadas, siempre que se validen sus capacidades reales.
+- Roleplay y narrativa interactiva: el modelo ha sido ablacionado para eliminar rechazos, por lo que puede mantener personajes y tramas sin interrupciones moralizantes; su tamano de 4B permite ejecutarlo en local con latencia baja.
+- Escritura creativa sin filtros: util para generar ficcion con tematicas adultas o controvertidas donde un modelo alineado rechazaria la peticion; la cuantizacion Q4_K_M (2,8 GB) cabe en cualquier GPU de consumo.
+- Chat local en dispositivos con poca VRAM: las cuantizaciones Q2_K (2,0 GB) y Q3_K_S (2,2 GB) permiten inferencia en GPUs de 4-6 GB o incluso en CPU.
+- Prototipado rapido de asistentes conversacionales: al ser un GGUF compatible con llama.cpp, Ollama y servidores OpenAI-compatibles, se integra en pipelines de desarrollo sin infraestructura dedicada.
+- Generacion de dialogos para videojuegos o simulaciones: el modelo puede producir respuestas de personajes no jugadores (NPC) en tiempo real gracias a su tamano reducido y a la ausencia de filtros.
+- Experimentacion en investigacion sobre alineamiento: la variante abliterated sirve como contraste frente al modelo base para estudiar el efecto de la eliminacion de rechazos en calidad y seguridad.
+- Analisis de imagenes con el mmproj: si se carga el proyector multimodal, puede describir o interpretar imagenes en un entorno local.
 
 ## Benchmarks y rendimiento
 
@@ -53,35 +54,56 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa, un modelo de ~333 M de parametros en F16 ocuparia aproximadamente 0,7 GB, y en Q4_K_M alrededor de 0,2-0,3 GB, aunque estas cifras son estimaciones y no datos publicados.
-- GPU recomendadas: no disponible. Por tamano, cualquier GPU consumer moderna (RTX 3060 o superior) seria mas que suficiente si se confirma el tamano real de 333 M.
-- Cabe en GPU consumer: previsiblemente si, en practicamente cualquier GPU con 4 GB o mas de VRAM, e incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~2,0 GB
+  - Q3_K_S: ~2,2 GB
+  - Q3_K_M: ~2,4 GB
+  - Q3_K_L: ~2,5 GB
+  - IQ4_XS: ~2,6 GB
+  - Q4_K_S: ~2,7 GB
+  - Q4_K_M: ~2,8 GB
+  - Q5_K_S: ~3,1 GB
+  - Q5_K_M: ~3,2 GB
+  - Q6_K: ~3,6 GB
+  - Q8_0: ~4,6 GB
+  - f16: ~8,5 GB
+  - mmproj-Q8_0: ~0,5 GB adicionales
+  - mmproj-f16: ~0,8 GB adicionales
+- GPU recomendadas: cualquier GPU consumer con 6 GB o mas (RTX 3060, RTX 4060, RTX 4070, RTX 4090) para cuantizaciones Q4-Q8; A100/H100 no son necesarias pero funcionarian.
+- Cabe en consumer GPU: si, en todas las cuantizaciones hasta Q8_0 con 6-8 GB de VRAM; f16 requiere ~10 GB con contexto.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de OpenAI (endpoints_compatible), y cualquier runtime que soporte GGUF.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-4B-Distill-ARA-Abliterated (GGUF) | 333 M (segun safetensors) | no disponible | no disponible | GGUF | Cuantizaciones estaticas de mradermacher |
-| Modelo base Austriani/Qwen3.8-4B-Distill-ARA-Abliterated | no disponible | no disponible | no disponible | safetensors | Fuente de las cuantizaciones |
-| Alternativas de la familia Qwen3 | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
+| Qwen3.8-4B-Distill-ARA-Abliterated (este) | 4,2B | no disponible | Apache 2.0 | GGUF | Abliterated, multimodal, ingles |
+| Modelo base Austriani/Qwen3.8-4B-Distill-ARA-Abliterated | 4,2B | no disponible | Apache 2.0 | safetensors | Version sin cuantizar |
+| Cuantizaciones imatrix del mismo modelo (mradermacher i1-GGUF) | 4,2B | no disponible | Apache 2.0 | GGUF | Calidad superior por pesos ponderados |
+| Otros GGUF de la familia Qwen3.8 de 4B | ~4B | no disponible | Apache 2.0 | GGUF | Sin ablacion, con rechazos |
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoria.
+No se dispone de datos de benchmarks para comparar rendimiento con alternativas.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de tamano: el nombre indica 4B parametros, pero el dato real de safetensors es de 333 M. Verificar antes de asumir capacidades.
-- Model card incompleta: no se documentan arquitectura, datos de entrenamiento, licencia ni idiomas, lo que impide evaluar su idoneidad para produccion.
-- Licencia desconocida: al no indicarse licencia, no puede confirmarse el uso comercial. Contactar con el autor del modelo base antes de cualquier despliegue productivo.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin benchmarks ni evaluaciones publicadas no puede cuantificarse.
-- Sesgos: no documentados; la modificacion "abliterated" puede alterar el comportamiento del modelo en temas sensibles y reducir sus mecanismos de seguridad.
-- Idiomas: no confirmados; el rendimiento en castellano es desconocido.
-- Cuantizaciones agresivas: Q2_K y Q3_K_S pueden degradar notablemente la calidad; para uso serio, preferir Q4_K_M o superiores.
-- Procedencia: el modelo base es una modificacion de terceros ("Austriani") sobre una presumible base Qwen3, sin trazabilidad documentada del proceso de destilacion o abliteration.
+- La ablacion elimina los mecanismos de rechazo, lo que implica que el modelo puede generar contenido ofensivo, ilegal o danino sin filtros; no es apto para aplicaciones orientadas al publico sin moderacion externa.
+- Riesgo elevado de alucinacion, comun en modelos de 4B y agravado por la destilacion.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta verificado.
+- Longitud de contexto no documentada; no se debe asumir una ventana larga.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo abliterated.
+- La cuantizacion Q3_K_M esta marcada por el autor como de menor calidad; para produccion se recomienda Q4_K_M o superior.
+- El modelo base no incluye informacion sobre sesgos; se debe evaluar empiricamente antes de desplegar.
+- La fecha de creacion del repositorio (2026) y la denominacion "Qwen3.8" no coinciden con versiones publicas conocidas de Qwen; verificar la procedencia antes de usar en produccion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-ARA-Abliterated-GGUF
 - Modelo base: https://huggingface.co/Austriani/Qwen3.8-4B-Distill-ARA-Abliterated
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-ARA-Abliterated-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-4B-Distill-ARA-Abliterated-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

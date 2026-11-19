@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "vLLM",
-      "url": "https://vllm.ai/",
-      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models …"
-    },
-    {
-      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
-      "url": "https://github.com/vllm-project/vllm",
-      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …"
-    },
-    {
-      "title": "vLLM",
-      "url": "https://docs.vllm.ai/en/latest/",
-      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …"
-    },
-    {
-      "title": "vLLM - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/VLLM",
-      "snippet": "The paper introduced PagedAttention, an algorithm inspired by virtual memory and paging techniques in operating systems, and …"
-    },
-    {
-      "title": "Installation - vLLM",
-      "url": "https://docs.vllm.ai/en/latest/getting_started/installation/",
-      "snippet": "A list of all supported hardware can be found on the vLLM website, see Universal Compatibility - Hardware. If you want to add new …"
-    }
-  ]
+  "sources": []
 }

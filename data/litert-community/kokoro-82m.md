@@ -2,112 +2,100 @@
 
 ## Resumen
 
-Kokoro-82M para LiteRT-LM es la conversión a formato `.litertlm` del modelo de síntesis de voz hexgrad/Kokoro-82M, empaquetada por la comunidad litert-community para el runtime de inferencia en dispositivo LiteRT-LM de Google. El modelo original es una arquitectura StyleTTS 2 con vocoder ISTFTNet de 82 millones de parámetros, capaz de generar voz a 24 kHz. Esta versión no cambia el modelo acústico: lo cuantiza a INT8 y lo empaqueta junto con los front-ends de texto en un único fichero autocontenido de 351 MB, sin dependencia de Python, red ni `espeak-ng`.
+Kokoro-82M es un modelo de síntesis de voz (text-to-speech) de 82 millones de parámetros desarrollado originalmente por hexgrad, basado en la arquitectura StyleTTS 2 combinada con un vocoder ISTFTNet. Esta ficha concreta corresponde al empaquetado que el equipo litert-community ha realizado para LiteRT-LM y la tarea MediaPipe Text-to-Speech, distribuyendo el modelo como un único fichero `.litertlm` que integra pesos acústicos y de vocoder en INT8, las 54 voces de la versión 1.0 y los front-ends de normalización de texto y grafema-a-fonema para nueve idiomas y dialectos.
 
-La relevancia de este artefacto es de despliegue, no de investigación: permite ejecutar TTS multilingüe de calidad cercana a servidor íntegramente en un teléfono Android o en un portátil, con un pico de memoria de aproximadamente 0,5 GB y una velocidad de síntesis entre 4 y 5 veces más rápida que el tiempo real en la GPU de un Galaxy S26. Incluye las 54 voces de Kokoro v1.0 y front-ends de normalización de texto y grafema-a-fonema para 9 idiomas o variantes: inglés americano y británico, español, francés, italiano, portugués brasileño, hindi, chino mandarín y japonés.
+La relevancia de este empaquetado radica en que elimina las dependencias de Python, red y librerías fonéticas GPL del modelo original, permitiendo inferencia totalmente on-device en Android, iOS, macOS, Web (WASM) y C++ con una pila completa bajo licencia Apache-2.0. El resultado es un sistema de TTS multilingüe que sintetiza a 24 kHz y que, según el autor, es entre 6 y 10 veces más rápido que tiempo real en GPU de un Galaxy S26 con precisión FP16 y un pico de memoria de aproximadamente 0,35 GB.
 
-Se distribuye en dos ficheros con licencia Apache-2.0 (modelo y stack completo): una variante con el vocoder preparado para GPU y otra con operadores de desquantización explícitos para que XNNPACK en CPU genere audio limpio. La variante FP32 `.tflite` previa, solo en inglés y solo CPU, está movida a `legacy/` y marcada como obsoleta.
+El modelo resuelve el caso de uso de voz sintética embebida en aplicaciones móviles, asistentes locales y pipelines de LLM on-device donde no es viable enviar texto a un servicio en la nube. Su tamaño reducido (295 MB por fichero) y su soporte de streaming de tokens desde un LLM permiten integrarlo en flujos conversacionales de baja latencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | StyleTTS 2 (modelo acústico) + vocoder ISTFTNet; empaquetado para LiteRT-LM |
-| Parametros totales | 82 millones (modelo base hexgrad/Kokoro-82M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de text-to-speech, no de lenguaje) |
-| Tipos de cuantizacion | INT8 (modelo acústico y vocoder); variante previa FP32 en `legacy/`, obsoleta |
-| Idiomas soportados | ingles americano y britanico, espanol, frances, italiano, portugues brasileño, hindi, chino mandarin, japones (9 idiomas/variantes) |
+| Arquitectura | StyleTTS 2 (modelo acústico) + ISTFTNet (vocoder) |
+| Parametros totales | 82 millones |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo TTS, no aplica ventana de contexto de texto) |
+| Tipos de cuantizacion | INT8 en modelo acústico y vocoder; FP16 y FP32 en ejecución GPU |
+| Idiomas soportados | Inglés americano y británico, español, francés, italiano, portugués brasileño, hindi, chino mandarín, japonés (9 idiomas/dialectos) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (bundle LiteRT-LM); `.tflite` FP32 en `legacy/` (deprecado) |
-| Tamano de fichero | 351 MB por variante (`kokoro_int8_gpu.litertlm` y `kokoro_int8.litertlm`); repositorio completo 1,4 GB |
-| Voces incluidas | 54 (Kokoro v1.0) |
-| Frecuencia de muestreo de salida | 24 kHz, mono (WAV) |
-| Runtime objetivo | LiteRT-LM (Google AI Edge) |
-| Plataformas | Android (arm64), Linux, macOS |
-| Backends | CPU (XNNPACK) y GPU (delegate LiteRT: OpenCL, WebGPU, Metal) |
+| Formato de pesos | `.litertlm` (bundle LiteRT-LM); `.tflite` en la carpeta `legacy/` (obsoleto) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Kokoro-82M de hexgrad, un sistema TTS construido sobre StyleTTS 2 (paper arXiv:2306.07691) con un vocoder ISTFTNet (arXiv:2203.02395, referenciado en las etiquetas del repositorio). StyleTTS 2 combina difusión de estilo y entrenamiento adversario con modelos de lenguaje de voz grandes para generar prosodia y timbre; ISTFTNet sintetiza la forma de onda en el dominio de la transformada inversa de Fourier de corto plazo, lo que reduce coste computacional frente a vocoders puramente neuronales en el dominio temporal. El resultado es un modelo de 82 M de parámetros que produce audio a 24 kHz.
+El modelo original hexgrad/Kokoro-82M emplea StyleTTS 2, un sistema de TTS de dos etapas en el que un modelo acústico genera representaciones intermedias condicionadas por estilo y un vocoder ISTFTNet las convierte en forma de onda. Esta versión empaquetada mantiene los pesos acústicos y de vocoder en INT8 y exporta el grafo del vocoder para que los valores intermedios permanezcan dentro del rango FP16, lo que habilita ejecución nativa FP16 en GPU y reduce aproximadamente a la mitad la latencia del vocoder frente a FP32.
 
-Esta publicación concreta no entrena ni ajusta el modelo: es una conversión de pesos y de grafo para LiteRT-LM. La cuantización a INT8 se aplica tanto al modelo acústico como al vocoder, con dos variantes de grafo: en la versión GPU las convoluciones del vocoder usan pesos INT8 con activaciones en coma flotante, ejecutables de forma nativa por el delegate de GPU en OpenCL, WebGPU y Metal; en la versión CPU/GPU se insertan operaciones de desquantización explícitas para que XNNPACK produzca audio limpio en CPU, a cambio de un mayor consumo de memoria. El bundle incorpora además los front-ends de normalización de texto (TN) y de conversión grafema-a-fonema (G2P) para los 9 idiomas soportados, de forma que no se requiere `espeak-ng` ni ningún proceso externo. No se documentan en la información disponible detalles sobre dataset de entrenamiento, número de tokens de audio, ni fases de RLHF o DPO del modelo original.
+El bundle incorpora los front-ends completos de normalización de texto y conversión grafema-a-fonema para los nueve idiomas soportados, eliminando la necesidad de librerías fonéticas externas (habitualmente GPL) y de dependencias de Python. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Sintesis de voz multilingue a 24 kHz en un unico idioma por inferencia, seleccionable con los parametros `--language` y `--voice`.
-- Cobertura de 9 idiomas o variantes: ingles americano (`en-US`), ingles britanico, espanol, frances, italiano, portugues brasileño, hindi, chino mandarin y japones.
-- Acceso a las 54 voces de Kokoro v1.0, con identificadores como `af_heart` (ingles americano femenino) o `jf_alpha` (japones femenino).
-- Normalizacion de texto y G2P integradas para cada idioma, sin dependencias externas ni acceso a red.
-- Inferencia totalmente en dispositivo, sin llamadas a servidor ni envio de texto a terceros.
-- API de streaming en C++ mediante `OmniEngine` / `OmniSession` y `PushInputSource`, ademas de la herramienta de linea de comandos `omni_runner`.
-- Ejecucion con aceleracion por GPU via el delegate de LiteRT (OpenCL, WebGPU, Metal) o en CPU con XNNPACK.
-- No dispone de tool calling, function calling, razonamiento multi-paso, vision ni audio de entrada: es exclusivamente un modelo de texto a voz.
+- Síntesis de voz multilingüe a 24 kHz mono en formato PCM float32 en el rango [-1.0, 1.0].
+- 54 voces empaquetadas de Kokoro v1.0, con cambio de voz e idioma por enunciado sin recargar pesos.
+- Inferencia totalmente on-device sin red ni Python, en Android, iOS, macOS, Web y C++.
+- Streaming de síntesis de baja latencia (`synthesizeStream` / `synthesize_stream`) con segmentación automática por frases y cláusulas.
+- Streaming de tokens desde un LLM on-device (`openStream` / `pushText` / `finishInput`) para TTS en tiempo real.
+- Alineación temporal a nivel de palabra (`wordTimestamps` / `word_timestamps`) con offsets de carácter y tiempos de inicio y fin, útil para resaltado de lectura.
+- Control de velocidad de habla (`speakingRate`, rango (0.0, 4.0], por defecto 1.0).
+- Cancelación de barge-in sin bloqueos.
+- Inferencia de idioma automática a partir del `voiceId` cuando no se especifica `locale`.
 
 ## Casos de uso
 
-- Lectura por voz en aplicaciones Android: el bundle de 351 MB se puede empaquetar en la app y ejecutar con el delegate de GPU, ofreciendo sintesis 4-5 veces mas rapida que el tiempo real con un pico de unos 0,5 GB, sin pedir permisos de red ni depender de un servicio en la nube.
-- Accesibilidad para personas con discapacidad visual: conversion de texto de pantalla, articulos o notificaciones a voz en 9 idiomas, con normalizacion de numeros, fechas y abreviaturas ya resuelta en el propio front-end de texto.
-- Asistentes de voz sin conexion: al no requerir red ni `espeak-ng`, encaja en asistentes embebidos, navegadores de coche o dispositivos IoT donde la latencia de ida y vuelta a un servidor TTS es inaceptable.
-- Audiolibros y contenido largo por lotes: la API de streaming de `OmniSession` permite ir entregando fragmentos de audio conforme se genera, util para pipelines de narracion que procesan documentos capitulo a capitulo.
-- Aprendizaje de idiomas: al cubrir ingles britanico y americano, frances, italiano, portugues brasileño, hindi, mandarin y japones con multiples voces por idioma, sirve para generar ejercicios de escucha con distintos timbres y acentos sin contratar voces humanas.
-- Videojuegos y experiencias interactivas: la generacion en dispositivo permite voces de PNJ dinamicas sin coste por caracter, con la opcion de elegir entre 54 voces para dar identidad sonora a cada personaje.
-- Integracion en CI y entornos sin GPU: la variante `kokoro_int8.litertlm` funciona en CPU con XNNPACK, adecuada para servidores, runners de integracion continua o hardware antiguo donde no hay delegate de GPU disponible, asumiendo un pico de memoria de aproximadamente 1 GB o mas.
-- Prototipado de doblaje y previsualizacion: generacion rapida de pistas de voz temporales en varios idiomas para maquetas de producto antes de recurrir a grabacion profesional.
+- Lectura por voz en aplicaciones móviles: integración mediante la tarea MediaPipe TextToSpeech para narrar artículos o libros con resaltado palabra a palabra gracias a los timestamps incluidos en cada `AudioChunk`.
+- Asistentes conversacionales on-device: el streaming de tokens desde un LLM local (`openStream` + `pushText`) permite que la síntesis empiece en cuanto llega la primera frontera de frase, reduciendo la latencia percibida en un asistente sin conexión.
+- Accesibilidad: conversión de texto a voz para usuarios con discapacidad visual en Android e iOS, con cambio de voz e idioma por enunciado y control de velocidad entre 0.0 y 4.0.
+- Aplicaciones de aprendizaje de idiomas: uso de las 54 voces en nueve idiomas y dialectos para practicar pronunciación, con resaltado sincronizado del texto leído mediante `wordTimestamps`.
+- Lectura de notificaciones y contenido dinámico en wearables y dispositivos de bajos recursos: el fichero de 295 MB y el pico de memoria de ~0,35–0,5 GB en GPU permiten ejecutarlo en hardware móvil sin backend.
+- Integración en pipelines web (WASM) para demos o herramientas de accesibilidad en navegador, usando la variante CPU/GPU cuando no hay aceleración GPU disponible.
+- Generación de audio para prototipos y pruebas de UX: la licencia Apache-2.0 y la ausencia de dependencias GPL facilitan su incorporación en productos comerciales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card unicamente aporta dos afirmaciones cualitativas:
+El autor reporta las siguientes métricas en la model card:
 
-| Metrica | Resultado declarado |
+| Metrica | Valor |
 |---|---|
-| Velocidad de sintesis | 4-5x mas rapido que tiempo real en la GPU de un Galaxy S26 |
-| Memoria pico (variante GPU) | ~0,5 GB |
-| Memoria pico (variante CPU) | ~1 GB o mas |
-| Prueba de inteligibilidad | En un benchmark de 800 frases y 8 idiomas iguala o supera al Kokoro original ejecutado en servidor |
-| Comparativa numerica (MOS, WER, RTF) | no disponible |
+| Velocidad de sintesis | 6–10× mas rapido que tiempo real en GPU de Galaxy S26 con FP16 |
+| Pico de memoria (version GPU) | ~0,35–0,5 GB |
+| Pico de memoria (version CPU/GPU) | ~0,7–0,95 GB |
+| Benchmark de inteligibilidad | 800 frases, 8 idiomas; iguala o supera a Kokoro original en servidor |
+| Tamano del fichero | 295 MB por variante |
+
+No se han publicado en la información disponible resultados numéricos de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) por tratarse de un modelo TTS.
 
 ## Requisitos de hardware
 
-- VRAM o memoria de trabajo estimada: aproximadamente 0,5 GB de pico con `kokoro_int8_gpu.litertlm` en GPU; aproximadamente 1 GB o mas con `kokoro_int8.litertlm` en CPU.
-- GPU compatibles: cualquier dispositivo cuyo GPU delegate de LiteRT funcione sobre OpenCL, WebGPU o Metal; el fabricante cita explicitamente telefonos, tablets y portatiles, con un Galaxy S26 como referencia de rendimiento. No se listan modelos concretos de GPU de escritorio (A100, H100, RTX 4090, etc.) en la informacion disponible.
-- CPU: la variante CPU/GPU funciona con XNNPACK en Linux, macOS y Android arm64.
-- Cabe en GPU de consumo: si, en el sentido de que el modelo esta pensado para GPU integradas y moviles; no se dispone de datos de consumo en tarjetas de escritorio dedicadas.
-- Almacenamiento: 351 MB por variante de modelo, 1,4 GB si se descarga el repositorio completo.
-- Opciones de despliegue: runtime LiteRT-LM con la herramienta `omni_runner` (compilada con Bazel, con `--config=android_arm64` y `ANDROID_NDK_HOME` para Android) o la API C++ `OmniEngine` / `OmniSession`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo TTS de este tipo.
-- Latencia y throughput: en el primer arranque con GPU se compilan los kernels del delegate, lo que hace la ejecucion inicial mas lenta; los kernels quedan cacheados en `--cache_dir` y las ejecuciones posteriores arrancan rapido. Fuera de esa advertencia, solo se declara el rango de 4-5x tiempo real en Galaxy S26.
+- VRAM/RAM estimada: ~0,35–0,5 GB de pico con la variante GPU (`kokoro_int8_gpu_fp16.litertlm`); ~0,7–0,95 GB de pico con la variante CPU/GPU (`kokoro_int8_fp16.litertlm`).
+- GPU recomendadas: cualquier GPU soportada por el delegado GPU de LiteRT (OpenCL, WebGPU o Metal); el autor cita un Galaxy S26 como referencia de rendimiento.
+- Compatibilidad con GPU de consumo: sí, siempre que el delegado GPU de LiteRT soporte el dispositivo; en equipos sin GPU utilizable debe usarse la variante CPU/GPU.
+- Opciones de despliegue: LiteRT-LM (`--backend=gpu` o `--backend=cpu`), tarea MediaPipe TextToSpeech, con librerías aceleradoras en `prebuilt/android_arm64/*.so` en Android; soporte para Android, iOS, macOS, Web (WASM) y C++.
+- Latencia y throughput: 6–10× más rápido que tiempo real en GPU de Galaxy S26 con FP16; el vocoder en FP16 reduce aproximadamente a la mitad la latencia frente a FP32.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Licencia | Formatos | Ejecucion | Notas |
+| Modelo | Parametros | Idiomas | Licencia | Formato / despliegue | Notas |
 |---|---|---|---|---|---|
-| litert-community/Kokoro-82M (esta ficha) | 82 M | Apache-2.0 | `.litertlm` INT8 | LiteRT-LM en dispositivo (CPU/GPU) | 9 idiomas, 54 voces, front-ends integrados, sin dependencias externas |
-| hexgrad/Kokoro-82M (modelo base) | 82 M | Apache-2.0 | pesos PyTorch/safetensors | Servidor o escritorio con Python y `espeak-ng` | Mismo modelo acustico; requiere stack Python y G2P externo; es la referencia contra la que se mide la calidad |
-| Coqui XTTS-v2 | 467 M (dato publico, no verificado en la informacion disponible) | Coqui Public Model License (uso no comercial) | pesos PyTorch | Servidor o escritorio con GPU | Clonacion de voz zero-shot; licencia restrictiva para uso comercial |
-| Piper (rhasspy/piper) | no disponible | MIT para el motor; licencia variable por voz | ONNX | CPU en dispositivo | Popular en domotica y asistentes embebidos; el numero de idiomas y la calidad dependen de cada voz publicada |
-| Comparativa de benchmarks (MOS, WER, RTF) entre alternativas | no disponible | no disponible | no disponible | no disponible | No hay cifras publicadas en la informacion proporcionada |
+| Kokoro-82M (litert-community, esta ficha) | 82 M | 9 idiomas/dialectos | Apache-2.0 | `.litertlm`, on-device (Android, iOS, Web, C++) | Incluye front-ends G2P y 54 voces; sin dependencias GPL |
+| hexgrad/Kokoro-82M (original) | 82 M | 9 idiomas/dialectos | Apache-2.0 | Pesos PyTorch, requiere Python y librerías fonéticas | Modelo base; no optimizado para on-device |
+| Modelos TTS en la nube (p. ej. servicios comerciales) | no disponible | variable | propietaria | API remota | Requieren red y no son on-device |
+
+No se dispone en la información proporcionada de comparativas numéricas con otros modelos TTS on-device de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documenta ningun analisis de sesgos en la informacion disponible. Como todo sistema TTS entrenado con voces humanas, puede reproducir sesgos de acento, genero o registro presentes en los datos originales.
-- Alucinacion: en un modelo TTS el riesgo equivalente es la pronunciacion incorrecta, la omision de fragmentos o la generacion de artefactos acusticos, especialmente en texto fuera de dominio, siglas, nombres propios o idiomas con fonologia poco representada. La model card no publica tasas de error.
-- Cobertura de idiomas: aunque se declaran 9 idiomas, no se detalla la distribucion de voces ni la calidad relativa por idioma; el benchmark de inteligibilidad citado cubre 8 idiomas, no 9.
-- Idioma por inferencia: hay que fijar el idioma y la voz manualmente; no se documenta deteccion automatica de idioma ni cambio de voz dentro de una misma sintesis.
-- Ficheros separados: la variante GPU solo ejecuta el vocoder en GPU y no cae a CPU silenciosamente, por lo que en un dispositivo sin GPU compatible hay que usar obligatoriamente el fichero CPU/GPU.
-- Rendimiento inicial: la primera ejecucion en GPU compila kernels y es notablemente mas lenta; sin cache persistente el arranque se penaliza en cada sesion nueva.
-- Formato propietario del runtime: el bundle `.litertlm` esta atado a LiteRT-LM; no es portable directamente a otros motores de inferencia sin reconversion.
-- Version previa obsoleta: el antiguo `.tflite` FP32 solo en ingles y solo CPU esta deprecado y no deberia usarse en integraciones nuevas.
-- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, pero conviene verificar la licencia del modelo base y de las voces en cualquier producto derivado. El repositorio no incluye clausulas adicionales segun la informacion disponible.
-- Volumen de adopcion bajo: 366 descargas y 3 likes en el momento de recopilar los datos, lo que implica poca validacion independiente en produccion.
+- La variante GPU, ejecutada con `Delegate.CPU` o sin acelerador GPU disponible, produce audio potencialmente más ruidoso; en ese caso debe usarse `kokoro_int8_fp16.litertlm`.
+- El fichero `.tflite` FP32 en `legacy/` está obsoleto y limitado a inglés y CPU; no debe usarse en integraciones nuevas.
+- No se dispone de información sobre sesgos de voces o dialectos, ni sobre tasas de alucinación o errores de pronunciación por idioma.
+- La calidad del habla depende de la corrección de los front-ends G2P incluidos; no se documentan limitaciones específicas por idioma en la información disponible.
+- Aunque la licencia es Apache-2.0, conviene verificar las condiciones de las voces y datos de entrenamiento del modelo base antes de uso comercial a gran escala.
+- El modelo es TTS, no un LLM: no soporta tool calling, razonamiento multi-paso ni generación de texto.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/Kokoro-82M
+- Hugging Face: https://huggingface.co/litert-community/Kokoro-82M
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
-- Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Guia de compilacion y ejecucion de LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM/blob/main/docs/getting-started/build-and-run.md
-- Documentacion del modulo omni (TTS) de LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM/tree/main/omni
-- Ficheros FP32 antiguos (deprecados): https://huggingface.co/litert-community/Kokoro-82M/tree/main/legacy
-- Paper de StyleTTS 2 (arXiv:2306.07691): https://arxiv.org/abs/2306.07691
-- Paper de ISTFTNet (arXiv:2203.02395): https://arxiv.org/abs/2203.02395
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos por el buscador no guardan relacion con Kokoro-82M ni con LiteRT-LM.
+- LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
+- MediaPipe Text-to-Speech Task: https://ai.google.dev/edge/mediapipe/solutions/audio/text_to_speech
+- Ejemplos: https://github.com/google-ai-edge/litert-samples
+- Carpeta legacy: https://huggingface.co/litert-community/Kokoro-82M/tree/main/legacy
+- Papers referenciados en los tags: arxiv:2306.07691, arxiv:2203.02395

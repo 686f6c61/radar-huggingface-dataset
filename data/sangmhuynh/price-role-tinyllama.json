@@ -5,7 +5,7 @@
   "author": "SangMHuynh",
   "url": "https://huggingface.co/SangMHuynh/price-role-tinyllama",
   "created_at": "2026-11-18T00:55:53.000Z",
-  "updated_at": "2026-11-18T01:26:21.000Z",
+  "updated_at": "2026-11-19T03:50:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

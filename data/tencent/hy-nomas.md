@@ -2,107 +2,85 @@
 
 ## Resumen
 
-Hy-Nomas es un modelo de generación de mundos en vídeo desarrollado por Tencent que permite crear vídeo de forma interactiva y multi-turno: el usuario introduce instrucciones de texto (objetos, acciones, estilo, entorno) y trayectorias de cámara mientras la generación continúa, y el modelo produce el mundo un segmento de vídeo tras otro. No se trata de un generador de texto a vídeo de un solo tiro, sino de un modelo autorregresivo a nivel de segmento que reutiliza el contexto previo mediante una caché KV persistente, de modo que la coherencia entre segmentos se mantiene sin regenerar el pasado.
+Hy-Nomas es un modelo de generación de vídeo desarrollado por Tencent que se presenta como un "modelo del mundo" interactivo: en lugar de producir un clip aislado a partir de un único prompt, genera un mundo de forma continua y por segmentos, permitiendo al usuario introducir objetos, cambiar estilos y escenas, describir acciones o controlar la cámara a medida que la generación avanza. Combina un diffusion transformer (DiT) autorregresivo por segmentos con un codificador de texto Qwen, módulos de condicionamiento de cámara y un decodificador de vídeo PixelUMM, manteniendo la coherencia entre segmentos mediante una caché KV persistente.
 
-Técnicamente combina un diffusion transformer (DiT) segmento-autorregresivo con 54 bloques MMDiT de doble flujo y atención conjunta causal por segmento, un encoder de texto derivado de Qwen2.5-VL-7B-Instruct, módulos de condicionamiento de cámara (extrinsics_attn) y un decoder de vídeo PixelUMM ajustado. La configuración destilada genera cada segmento con solo 8 pasos de denoising a 720 × 1280 y 24 FPS, y existe una configuración específica para ejecutar el modelo en una única RTX 4090 usando pesos DiT en INT8, caché KV en INT8, decoder en FP8 y offload a CPU.
+El modelo está pensado para interacción multi-turno libre: cada segmento nuevo parte de ruido gaussiano en el espacio latente comprimido y se condiciona con el texto del segmento, la trayectoria de cámara y el historial cacheado. La configuración destilada de inferencia usa 8 pasos de eliminación de ruido y produce vídeo a 720 × 1280 y 24 FPS. Existe además una configuración específica para ejecutar el modelo en una única NVIDIA GeForce RTX 4090, con pesos DiT en INT8, caché KV en INT8, decodificador en FP8 y offload a CPU.
 
-Su relevancia ahora es que abre la puerta a los "world models" interactivos de código abierto con control explícito de cámara, un área hasta hace poco dominada por demos cerradas. Tencent acompaña el lanzamiento con Hy-Nomas-Bench, un conjunto de cuatro benchmarks con 280 casos de prueba centrados en controlabilidad interactiva y consistencia espacial. El repositorio ocupa 196,4 GB y no se han publicado el número de parámetros ni resultados numéricos de benchmarks.
+Su relevancia actual radica en que traslada la lógica de los modelos de lenguaje autorregresivos al vídeo generativo: contexto persistente, control incremental y evaluación específica de la consistencia a lo largo del tiempo. Tencent acompaña el modelo con Hy-Nomas-Bench, un conjunto de cuatro benchmarks con 280 casos de prueba centrados en controlabilidad interactiva y consistencia espacial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion transformer (DiT) segmento-autorregresiva; 54 bloques MMDiT de doble flujo con atención conjunta causal por segmento, modulación por timestep, cross-attention de cámara y caché KV persistente |
+| Arquitectura | Diffusion transformer (DiT) autorregresivo por segmentos, con 54 bloques dual-stream MMDiT, atención conjunta causal por segmentos, modulación por timestep, cross-attention de cámara y caché KV persistente |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (la caché KV transporta el histórico entre segmentos; no se publica límite máximo de segmentos o frames) |
-| Tipos de cuantizacion | INT8 en pesos del DiT y en caché KV, FP8 en el decoder (configuración de una sola GPU); otros formatos no disponibles |
-| Idiomas soportados | no disponible (el encoder de texto es el componente LM de Qwen2.5-VL-7B-Instruct, pero el modelo no declara idiomas soportados) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible en tokens; el contexto se gestiona mediante caché KV de los segmentos generados previamente |
+| Tipos de cuantizacion | INT8 para pesos DiT, INT8 para caché KV, FP8 para el decodificador (configuración de una sola GPU); no se detallan otros formatos |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería diffusers); repositorio de 196,4 GB |
-| Espacio latente | latentes de vídeo comprimidos DCAE-V |
-| Encoder de texto | Qwen2.5-VL-7B-Instruct (componente LM), 3.584 dimensiones, refiner de dos capas y proyección a 2.048 dimensiones del DiT |
-| Decoder de vídeo | PixelUMM ajustado (fine-tuned) |
-| Resolución y cadencia | 720 × 1280 a 24 FPS |
-| Pasos de denoising | 8 (configuración destilada) |
-| Control de cámara | extrinsics_attn; matrices extrínsecas 4 × 4 normalizadas, agrupadas en bloques de 4 frames y aplanadas a entradas de 64 dimensiones |
-| Pipeline declarado | text-to-video |
+| Formato de pesos | safetensors (repositorio de 196,4 GB); librería diffusion-single-file / diffusers |
 
 ## Arquitectura y entrenamiento
 
-Hy-Nomas realiza la difusión en un espacio latente de vídeo comprimido (DCAE-V) y la autorregresión a lo largo de segmentos de vídeo. Cada segmento nuevo parte de ruido gaussiano en ese espacio latente y se condiciona con tres señales: el prompt de texto del segmento, la trayectoria de cámara y el histórico ya generado, que se inyecta a través de una caché KV persistente en lugar de recalcularse. El bloque central es un MMDiT de doble flujo (texto y vídeo) con atención conjunta causal por segmento, modulación por timestep y una ruta específica de cross-attention para la cámara, lo que permite cambiar de contenido entre segmentos sin perder continuidad espacial.
+Hy-Nomas realiza difusión en un espacio latente de vídeo comprimido (latentes DCAE-V) y autorregresión a través de segmentos de vídeo. Cada segmento nuevo se genera a partir de ruido gaussiano condicionado por tres vías: texto, movimiento de cámara y el historial cacheado. El bloque central es un MMDiT dual-stream con atención conjunta causal por segmentos, modulación por timestep y cross-attention específica para la cámara; la configuración de inferencia emplea 54 bloques (N = 54). El condicionamiento de texto proviene del componente de modelo de lenguaje de Qwen/Qwen2.5-VL-7B-Instruct: sus estados ocultos de 3.584 dimensiones pasan por un refinador de tokens de dos capas y se proyectan al espacio oculto de 2.048 dimensiones del DiT. Los prompts específicos por segmento permiten cambiar el contenido solicitado sobre la marcha.
 
-El condicionamiento de texto no usa CLIP sino el componente de lenguaje de Qwen2.5-VL-7B-Instruct: sus estados ocultos de 3.584 dimensiones pasan por un refiner de tokens de dos capas y se proyectan al espacio de 2.048 dimensiones del DiT. En la demo web, un servicio separado llamado Nomas-PE convierte las instrucciones libres del usuario en prompts estructurados de generación, y es obligatorio para ese flujo; la inferencia offline puede leer ficheros de prompt ya preparados. La decodificación de latentes a píxeles la realiza un PixelUMM ajustado, y la configuración destilada reduce la inferencia a 8 pasos de denoising por segmento.
-
-No se han facilitado en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. El informe técnico figura como "coming soon" en el repositorio, por lo que los detalles de entrenamiento y destilación no están publicados.
+La inferencia está destilada a 8 pasos de eliminación de ruido por segmento, y los latentes se decodifican con un decodificador PixelUMM afinado. En la demo web, un componente separado llamado Nomas-PE convierte las instrucciones del usuario en prompts de generación estructurados antes de llegar al modelo. La información proporcionada no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO; tampoco se especifican innovaciones adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto con resolución 720 × 1280 y 24 FPS por segmento.
-- Interacción libre multi-turno: se pueden introducir objetos, cambiar el estilo, cambiar la escena o describir acciones mientras la generación avanza.
-- Control explícito de cámara mediante trayectorias (matrices extrínsecas) combinadas con instrucciones de texto.
-- Generación continua de un mismo mundo reutilizando el contexto anterior mediante caché KV.
-- Control mixto e intercalado de texto y cámara dentro de una misma secuencia de interacción.
-- Memoria espacial: el benchmark asociado evalúa la capacidad de mantener la coherencia del entorno a lo largo del tiempo.
-- Inferencia destilada de 8 pasos, pensada para reducir latencia por segmento.
-- Despliegue flexible: configuración con paralelismo de secuencia en varios aceleradores o configuración de una sola GPU.
-- Demo web interactiva disponible en el sitio oficial.
-- No se declaran capacidades de tool calling, function calling, razonamiento multi-paso basado en agentes, audio ni otros idiomas distintos de los que soporte el encoder de texto.
+- Generación de vídeo texto-a-vídeo con interacción multi-turno libre: el usuario puede introducir objetos, cambiar estilos y escenas, y describir acciones mientras la generación continúa.
+- Control de cámara: acepta trayectorias de cámara junto al texto para controlar el punto de vista y el movimiento.
+- Generación continua con memoria espacial: reutiliza el contexto de segmentos anteriores mediante caché KV para extender el mismo mundo.
+- Control mixto de texto y cámara de forma intercalada, según los escenarios cubiertos por Hy-Nomas-Bench.
+- Inferencia destilada: 8 pasos de difusión por segmento con salida a 720 × 1280 y 24 FPS.
+- Mejora de prompts en línea mediante Nomas-PE en la demo web.
+- Despliegue flexible: configuración estándar con paralelismo de secuencia o configuración de una sola GPU.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Previsualización de entornos para videojuegos: el equipo de diseño recorre un mundo generado segmento a segmento, moviendo la cámara con trayectorias concretas para validar escala, composición y legibilidad de espacios antes de modelar en el motor real.
-- Previsualización virtual (previs) para cine y publicidad: se generan planos con movimiento de cámara definido por extrínsecas, de modo que el director puede iterar sobre el encuadre y la acción sin rodaje ni render 3D.
-- Generación de datos sintéticos para robótica y agentes encarnados: la generación continua con memoria espacial permite producir secuencias largas y coherentes de navegación por un entorno, útiles para entrenar modelos de percepción y planificación.
-- Prototipado rápido de escenas de arquitectura e interiorismo: se introducen cambios de estilo y de mobiliario en sucesivos turnos sobre el mismo mundo, manteniendo la geometría y la iluminación previas.
-- Contenido narrativo interactivo: un guionista dirige una historia describiendo acciones y movimientos de cámara turno a turno, aprovechando la caché KV para conservar personajes y decorados entre segmentos.
-- Evaluación de modelos generativos de vídeo: Hy-Nomas-Bench, con 280 casos en cuatro suites, permite medir controlabilidad y consistencia en generación de mundo continua, por ejemplo para comparar variantes de sampling o de cuantización.
-- Exploración de técnicas de compresión de modelos de difusión: la configuración de una sola RTX 4090 con INT8 en DiT y caché KV, FP8 en decoder y offload a CPU sirve como referencia práctica de despliegue de un DiT de vídeo en hardware de consumo.
+- Previsualización de entornos para videojuegos: un equipo de diseño puede generar un mundo de forma incremental, introduciendo edificios, vegetación o cambios de iluminación por segmentos y navegando con control de cámara para validar la dirección artística antes de producir assets definitivos.
+- Prototipado de secuencias cinematográficas: con trayectorias de cámara definidas y prompts por segmento, el modelo permite construir planos continuos con movimientos de cámara concretos, útil para storyboards animados y previsualización de rodajes.
+- Simulación de entornos para robótica y conducción: la generación de vídeo continuo con memoria espacial y control de cámara sirve para crear escenarios sintéticos navegables donde probar políticas de percepción y planificación.
+- Creación de contenido interactivo para demos web: la demo oficial y la configuración de una sola RTX 4090 permiten desplegar experiencias donde el usuario guía el mundo en tiempo real mediante texto y teclado, por ejemplo instalaciones artísticas o prototipos de experiencias inmersivas.
+- Evaluación de modelos de mundo: Hy-Nomas-Bench, con 280 casos y cuatro suites, permite medir controlabilidad interactiva y consistencia de otros sistemas de generación de vídeo interactiva, usando sus prompts estructurados, secuencias de interacción, líneas de tiempo de teclado y trayectorias de referencia.
+- Investigación en generación autorregresiva de vídeo: la combinación de DiT por segmentos, caché KV persistente y destilación a 8 pasos ofrece una base reproducible para estudiar memoria a largo plazo y consistencia temporal en modelos generativos.
+- Generación de material audiovisual para publicidad: cambios de estilo y escena por segmento permiten producir variaciones de un mismo entorno sin regenerar el mundo desde cero, manteniendo coherencia entre tomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor publica Hy-Nomas-Bench, una suite de cuatro benchmarks con 280 casos de prueba (interacción libre multi-turno por texto, navegación con cámara, control intercalado de texto y cámara, y memoria espacial), pero la model card no incluye puntuaciones numéricas ni comparaciones con otros modelos. Tampoco se han facilitado métricas de latencia o throughput más allá del dato de configuración: 8 pasos de denoising por segmento a 720 × 1280 y 24 FPS.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente anuncia la existencia de Hy-Nomas-Bench (cuatro suites, 280 casos de prueba sobre interacción multi-turno, navegación de cámara, control intercalado de texto y cámara, y memoria espacial), pero no incluye cifras de rendimiento del modelo en dichas pruebas ni comparaciones numéricas con otros sistemas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita. El repositorio de pesos ocupa 196,4 GB, lo que incluye varias variantes de precisión; el tamaño del checkpoint no equivale a la VRAM necesaria en ejecución.
-- Configuración de referencia multi-GPU: el autor menciona una configuración estándar con paralelismo de secuencia, sin especificar el número ni el modelo de aceleradores.
-- Configuración de una sola GPU: soportada oficialmente en una NVIDIA GeForce RTX 4090 (24 GB) mediante pesos DiT en INT8, caché KV en INT8, decoder en FP8 y offload a CPU. Es, por tanto, viable en GPU de consumo de gama alta con esa combinación.
-- GPU profesionales: no se indican requisitos ni rendimiento para A100, H100 u otras; no disponible.
-- Opciones de despliegue: integración vía diffusers (pipeline text-to-video), script de inferencia del repositorio de GitHub y demo web oficial. No se documentan en la información disponible soportes de vLLM, TGI, llama.cpp ni Ollama.
-- Latencia y throughput: no disponibles. Solo se conoce la reducción a 8 pasos de denoising por segmento y la cadencia de salida de 24 FPS, que no implican generación en tiempo real.
+- Configuración estándar: pensada para despliegue con paralelismo de secuencia; el repositorio ocupa 196,4 GB, por lo que se requiere almacenamiento amplio y, presumiblemente, múltiples GPU de datacenter. El número exacto de GPU y la VRAM por GPU no están disponibles en la información proporcionada.
+- Configuración de una sola GPU: soportada oficialmente en una NVIDIA GeForce RTX 4090, usando pesos DiT en INT8, caché KV en INT8, decodificador en FP8 y offload a CPU. La VRAM resultante no se especifica, pero el offload implica que parte de los pesos reside en memoria del sistema.
+- GPU recomendadas: RTX 4090 para la configuración de una sola GPU; para la configuración estándar no se detallan modelos concretos (A100, H100 u otros) en la información disponible.
+- Opciones de despliegue: la librería declarada es diffusion-single-file (compatible con diffusers); se menciona la demo web oficial como vía de interacción. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles. Solo se conoce la configuración de inferencia (8 pasos de difusión por segmento, 720 × 1280 a 24 FPS), sin cifras de tiempo por segmento ni de rendimiento agregado.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas no provienen de la información proporcionada y deben verificarse en sus respectivas fichas; se incluyen solo como orientación de categoría.
-
-| Modelo | Categoría | Parametros | Contexto / duracion | Control interactivo | Licencia |
-|---|---|---|---|---|---|
-| Hy-Nomas (Tencent) | World model de vídeo, DiT segmento-autorregresivo | no disponible | caché KV persistente entre segmentos; límite no publicado | Texto multi-turno + trayectorias de cámara | Apache 2.0 |
-| HunyuanVideo (Tencent) | Text-to-video DiT | no disponible en esta ficha | generación de un clip corto por inferencia | Solo texto (sin control de cámara interactivo declarado) | licencia comunitaria propia de Tencent |
-| Serie Wan (Alibaba) | Text-to-video / image-to-video DiT abierto | no disponible en esta ficha | clip corto por inferencia | Principalmente texto e imagen inicial | Apache 2.0 en varias variantes |
-| World models interactivos tipo Genie / Matrix-Game | Modelos de mundo jugables | no disponible | sesiones interactivas en tiempo real | Acciones de teclado o control de agente | mayoritariamente cerrados o de disponibilidad limitada |
-
-La diferencia principal de Hy-Nomas frente a los generadores text-to-video convencionales no es la resolución ni el número de parámetros, sino el modo de uso: generación por segmentos con estado persistente y condicionamiento explícito de cámara, lo que lo sitúa más cerca de un motor de mundo interactivo que de un modelo de un solo plano.
+No disponible. La información proporcionada no incluye datos de otros modelos de generación de vídeo interactiva ni cifras de rendimiento que permitan una comparación rigurosa de parámetros, contexto o licencia.
 
 ## Limitaciones y advertencias
 
-- No hay resultados de benchmarks publicados: la única evaluación disponible es la suite Hy-Nomas-Bench del propio autor, sin puntuaciones en la model card, lo que impide comparar objetivamente con alternativas.
-- El informe técnico está anunciado como "coming soon": no se conocen dataset de entrenamiento, número de tokens, etapas de alineación ni detalles del proceso de destilación.
-- El número de parámetros no se declara, lo que dificulta planificar despliegues y estimar costes de inferencia.
-- Deriva de escena y alucinación visual: en generación autorregresiva larga, la reutilización de caché KV puede acumular errores y producir inconsistencias de geometría, identidad de objetos o iluminación; la propia suite de benchmarks incluye memoria espacial precisamente por este riesgo.
-- No se declara qué idiomas soporta el pipeline; aunque el encoder de texto sea multilingüe, el comportamiento en castellano no está documentado ni evaluado.
-- No se publica el límite de contexto en número de segmentos o frames; el coste de la caché KV crece con el histórico, lo que afecta a la VRAM en sesiones largas.
-- La demo web requiere Nomas-PE, un servicio separado de mejora de prompts: no es un componente opcional en ese flujo y añade una dependencia de despliegue.
-- Licencia Apache 2.0 para el modelo, pero conviene revisar las licencias de los componentes de terceros empaquetados o referenciados, en particular el encoder Qwen2.5-VL-7B-Instruct y el decoder PixelUMM, antes de un uso comercial en producción.
-- Sesgos: no se documenta la composición del dataset de entrenamiento, por lo que no es posible evaluar sesgos demográficos, culturales o geográficos en los mundos generados.
-- El tamaño del repositorio (196,4 GB) implica requisitos de almacenamiento y tiempos de descarga considerables, además de complicar la reproducibilidad en entornos con cuotas.
-- Resolución y cadencia parecen fijas en la configuración publicada (720 × 1280, 24 FPS, 8 pasos); no se documentan variantes de menor coste o mayor resolución.
+- No se documentan sesgos conocidos del modelo en la información disponible; al ser un generador de vídeo entrenado con datos no especificados, es previsible que reproduzca sesgos presentes en esos datos, pero no hay evidencia publicada al respecto.
+- Riesgo de alucinación visual: como modelo generativo, puede producir contenido incoherente con las instrucciones o inconsistencias entre segmentos, especialmente en interacciones largas; la propia existencia de Hy-Nomas-Bench sugiere que la consistencia continua es un reto abierto.
+- Idiomas soportados no disponibles: aunque el codificador de texto es Qwen2.5-VL-7B-Instruct, no se especifica qué idiomas funcionan correctamente en los prompts.
+- Longitud de contexto no cuantificada: la memoria depende de la caché KV de segmentos previos, pero no se indica cuántos segmentos puede mantener antes de degradarse la coherencia.
+- Requisitos de hardware elevados: el repositorio de 196,4 GB y la configuración estándar con paralelismo de secuencia implican infraestructura de datacenter; solo la configuración INT8/FP8 con offload cabe en una RTX 4090, con la penalización de rendimiento que supone el offload a CPU.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero conviene revisar el archivo LICENSE del repositorio y las licencias de los componentes de terceros (Qwen2.5-VL-7B-Instruct, PixelUMM), que pueden tener condiciones propias.
+- El contenido citado de la model card se interrumpe en la descripción de Nomas-PE, por lo que pueden existir detalles adicionales de arquitectura y entrenamiento no recogidos aquí.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tencent/Hy-Nomas
-- Repositorio en GitHub: https://github.com/Tencent-Hunyuan/Hy-Nomas
-- Informe técnico (anunciado, aún no publicado): https://github.com/Tencent-Hunyuan/Hy-Nomas/blob/main/Hy_Nomas_Tech_Report.pdf
+- Repositorio GitHub: https://github.com/Tencent-Hunyuan/Hy-Nomas
+- Informe técnico (arXiv): https://arxiv.org/abs/2610.36729
 - Dataset de benchmark Hy-Nomas-Bench: https://huggingface.co/datasets/tencent/Hy-Nomas-Bench
-- Demo oficial: https://hy-nomas.hy.tencent.com/
+- Sitio web del proyecto y demo: https://hy-nomas.hy.tencent.com/
+- Publicación en X de Tencent Hunyuan: https://x.com/TencentHunyuan/status/2113676827114053892
+- Model card en chino: https://huggingface.co/tencent/Hy-Nomas/blob/main/README_CN.md
+- Licencia: https://huggingface.co/tencent/Hy-Nomas/blob/main/LICENSE

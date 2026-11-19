@@ -2,78 +2,94 @@
 
 ## Resumen
 
-MiniCPM5-2B-Midtrain es un modelo de lenguaje de texto denso de 2.516.756.480 parametros (aproximadamente 2.500 millones), desarrollado por OpenBMB, el grupo de IA open source detras de la serie MiniCPM. Es el segundo modelo de la serie MiniCPM5, despues de MiniCPM5-1B, y se presenta como una version optimizada para despliegue en dispositivos (on-device), entornos locales y escenarios con recursos limitados. El modelo sigue una arquitectura Transformer densa basada en Llama y esta disenado para sobresalir en tareas de razonamiento de codigo, matematicas, comprension de contexto largo, uso de herramientas y tareas agenticas. Segun el fabricante, alcanza el estado del arte en su clase de 2B y se mantiene competitivo con modelos de 4B. Se distribuye bajo licencia Apache 2.0 y soporta ingles y chino.
+MiniCPM5-2B-Midtrain es un modelo de lenguaje denso de 2.516.756.480 parámetros (2,5B) desarrollado por OpenBMB, segundo miembro de la familia MiniCPM5 tras MiniCPM5-1B. Está construido sobre arquitectura Transformer con atención de tipo Llama, empaquetado para `transformers` en formato `safetensors`, y se distribuye bajo licencia Apache 2.0. Su orientación es el despliegue en dispositivo (on-device), local y en entornos con recursos limitados, con soporte declarado de contexto largo, tool calling y tareas agénticas.
 
-El modelo es un checkpoint "Midtrain" (entrenamiento intermedio) dentro de la serie MiniCPM5, lo que indica que puede no ser la version final del modelo. En la informacion disponible no se especifican la longitud de contexto exacta, los tipos de cuantizacion ni los resultados de benchmarks, por lo que estos datos se indican como no disponibles. El modelo esta pensado para aplicaciones de generacion de texto, agentes con tool calling y razonamiento en entornos de computacion de borde.
+El modelo se presenta como estado del arte open source en la clase 2B y, según la model card, compite con modelos de la clase 4B en tareas de código, matemáticas, comprensión de contexto largo, uso de herramientas y razonamiento agéntico. Los idiomas declarados son inglés y chino. La variante "Midtrain" corresponde a un checkpoint de la fase de preentrenamiento continuado (midtrain), no necesariamente al modelo final alineado para chat, lo que conviene tener en cuenta al evaluarlo.
+
+La relevancia actual del modelo reside en la combinación de tamaño reducido, licencia permisiva y capacidades habitualmente reservadas a modelos mayores (contexto largo, function calling, agentes), lo que lo hace candidato para inferencia en hardware de consumo, integración en aplicaciones de escritorio o móviles y pipelines de bajo coste.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Llama) |
-| Parametros totales | 2.516.756.480 |
-| Longitud de contexto | No disponible (el modelo se presenta con soporte de contexto largo) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles, chino |
+| Arquitectura | Transformer denso (familia Llama, `model_type: llama`) |
+| Parametros totales | 2.516.756.480 (2,5B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (la model card lo etiqueta como `long-context` sin cifra explícita) |
+| Tipos de cuantizacion | no disponible en la información proporcionada (pesos publicados en safetensors; cuantizaciones GGUF/AWQ no confirmadas) |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM5-2B-Midtrain es un Transformer denso, sin mezcla de expertos (MoE), que sigue la arquitectura Llama. El entrenamiento se ha realizado sobre un conjunto de datasets propios de OpenBMB, incluyendo Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609. Esta composicion sugiere una fase de preentrenamiento seguida de ajuste supervisado (SFT) y aprendizaje por refuerzo (RL), aunque no se han publicado detalles sobre el numero de tokens ni las tecnicas especificas de alineacion. El modelo se presenta como una version "midtrain" (entrenamiento intermedio) dentro de la serie MiniCPM5, lo que implica que podria ser un checkpoint anterior a la version final.
+MiniCPM5-2B es un Transformer denso de 2,5B parámetros que escala la misma receta de entrenamiento empleada en MiniCPM5-1B. La model card lo describe como un modelo de la familia Llama (`model_type: llama`), lo que implica atención multi-cabeza estándar con RoPE, sin mecanismos de mezcla de expertos ni arquitecturas híbridas SSM. No se detalla en la información disponible el número exacto de capas, dimensiones ocultas, cabezas de atención ni la longitud de contexto nativa.
 
-No se han documentado innovaciones tecnicas destacables como atencion lineal o decodificacion especulativa en la informacion disponible. El enfasis del modelo esta en la eficiencia para despliegue en dispositivos y escenarios con recursos limitados, manteniendo un rendimiento competitivo en tareas de razonamiento, codigo y uso de herramientas.
+El entrenamiento se apoya en un conjunto de datasets propios de OpenBMB: Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609. La presencia de datasets de SFT y RL sugiere fases de ajuste supervisado y aprendizaje por refuerzo, aunque la model card no especifica el volumen de tokens, la composición exacta del corpus ni los detalles del pipeline de alineación. El sufijo "Midtrain" indica que este checkpoint corresponde a una etapa intermedia de entrenamiento continuado, no al modelo final de la serie.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general, incluyendo conversaciones multi-turno.
-- Razonamiento de codigo y matematicas, con ventajas sobre modelos de tamano similar en estas areas.
-- Comprension de contexto largo, orientada a documentos extensos y tareas que requieren ventanas de atencion amplias.
-- Uso de herramientas (tool calling) y tareas agenticas, con soporte para integracion en flujos de trabajo automatizados.
-- Seguimiento de instrucciones y conocimiento general, segun el radar de capacidades del fabricante.
-- Soporte multilingue en ingles y chino, con entrada y salida de texto (no multimodal).
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento de código: la model card destaca ventajas frente a modelos del mismo tamaño en tareas de programación.
+- Razonamiento matemático, apoyado en el dataset UltraData-Math.
+- Comprensión de contexto largo (etiqueta `long-context`), aunque sin cifra de ventana publicada.
+- Tool calling / function calling (etiqueta `tool-calling`).
+- Tareas agénticas y razonamiento multi-paso, respaldado por UltraData-SFT-Agent-2609.
+- Despliegue en dispositivo y entornos con recursos limitados (etiquetas `on-device`, `edge-ai`).
+- Compatibilidad con Text Generation Inference y endpoints compatibles (etiquetas `text-generation-inference`, `endpoints_compatible`).
+- Capacidades de visión, audio o modo "thinking" explícito: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales en dispositivos moviles o de borde: el modelo puede ejecutarse localmente en smartphones o mini-PCs gracias a su tamano compacto, gestionando conversaciones multi-turno sin depender de servidores externos.
-- Generacion de codigo en entornos de desarrollo integrados (IDE): su capacidad de razonamiento de codigo permite sugerencias, autocompletado y refactorizacion en editores como VS Code, con despliegue local para evitar fugas de datos.
-- Agentes automatizados con tool calling: el modelo puede integrarse en pipelines que llaman a APIs, consultan bases de datos o ejecutan scripts, realizando tareas de forma autonoma en entornos de CI/CD o automatizacion de procesos.
-- Razonamiento matematico en aplicaciones educativas: su rendimiento en matematicas lo hace adecuado para tutores inteligentes, resolucion de problemas paso a paso y generacion de ejercicios personalizados.
-- Resumen y extraccion de informacion de documentos largos: gracias al soporte de contexto largo, puede procesar contratos, informes o articulos extensos para generar resumenes o extraer entidades clave.
-- Chatbots bilingues ingles-chino: el modelo puede atender consultas en ambos idiomas, siendo util para aplicaciones de atencion al cliente en empresas con operaciones en China y paises anglofonos.
+- Asistentes locales en escritorio o móvil: con 2,5B parámetros y licencia Apache 2.0, el modelo puede cuantizarse y ejecutarse en portátiles sin GPU dedicada, ofreciendo conversación multi-turno sin enviar datos a la nube.
+- Automatización de soporte técnico en inglés y chino: su soporte de tool calling permite conectar el modelo a APIs internas (consulta de pedidos, estado de tickets) y resolver consultas de primer nivel con latencia baja.
+- Generación y revisión de código en IDE: el énfasis de la model card en tareas de código lo hace adecuado para autocompletado, explicación de fragmentos y generación de tests dentro de extensiones de editor que requieren inferencia local.
+- Agentes de automatización de tareas: la combinación de tool calling y datos de entrenamiento agénticos permite construir flujos multi-paso (lectura de ficheros, llamadas a herramientas, resumen final) en entornos de escritorio.
+- Procesamiento de documentos largos: la etiqueta de contexto largo lo habilita para resumir contratos, informes o hilos de conversación extensos, siempre que se valide empíricamente la ventana efectiva.
+- Clasificación y extracción de información estructurada: con salidas JSON guiadas por prompt, puede usarse para enriquecer pipelines de datos, etiquetado y moderación de contenido en inglés y chino.
+- Prototipado rápido y experimentación académica: su tamaño reducido y licencia permisiva facilitan fine-tuning en una sola GPU y la reproducción de experimentos sin costes elevados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El fabricante afirma que MiniCPM5-2B alcanza el estado del arte en su clase (2B) y que es competitivo con modelos de 4B, pero no se proporcionan cifras concretas de evaluaciones como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks numéricos en la información disponible. La model card incluye únicamente un gráfico radar cualitativo que compara el modelo con modelos de la clase 4B en ocho dimensiones (razonamiento de código, matemáticas, seguimiento de instrucciones, conocimiento general, contexto largo, uso de herramientas y otras), sin valores numéricos asociados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en FP16, aproximadamente 5 GB de VRAM para los pesos (2.516.756.480 parametros x 2 bytes). Con cuantizacion a 4 bits, alrededor de 1,3 GB. No se dispone de datos oficiales de cuantizacion.
-- GPU recomendadas: una RTX 3060 de 12 GB o superior es suficiente para FP16; una RTX 4090 ofrece margen para contextos largos o mayor throughput. En CPU puede ejecutarse con llama.cpp, aunque con menor velocidad.
-- Cabe en GPU de consumo: si, con cuantizacion a 4 bits o 8 bits en tarjetas como RTX 3050 o superiores.
-- Opciones de despliegue: transformers, vLLM, llama.cpp, Ollama y TGI, segun los tags del repositorio y la compatibilidad con endpoints.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 5 GB solo para pesos, más overhead de KV cache y activaciones; en la práctica, 8-10 GB para contextos moderados.
+- Cuantización a 8 bits: en torno a 2,5-3 GB de pesos; cuantización a 4 bits: aproximadamente 1,3-1,5 GB de pesos.
+- GPU recomendadas para FP16: A100, H100, L40S o RTX 4090 para máximo throughput; RTX 3090/4080 suficientes para uso individual.
+- GPU de consumo: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores en FP16; en cuantización 4 bits puede ejecutarse en GPUs de 4-6 GB e incluso en CPU con llama.cpp.
+- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles; vLLM, llama.cpp y Ollama son opciones plausibles pero no están confirmadas explícitamente en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa cuantitativa con modelos similares. El fabricante afirma que MiniCPM5-2B es el estado del arte en la clase 2B y que compite con modelos de 4B, pero no se aportan datos de referencia de otros modelos. Dentro de la misma serie, existe MiniCPM5-1B, pero no se han publicado especificaciones completas en la informacion disponible.
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|
+| MiniCPM5-2B-Midtrain | 2,5B | no disponible | Apache 2.0 | en, zh | Checkpoint de midtrain; SOTA declarado en clase 2B |
+| MiniCPM5-1B | no disponible | no disponible | no disponible | en, zh | Modelo previo de la misma familia, menor tamaño |
+| Modelos open source de clase 2B (p. ej. Qwen2.5-1.5B/3B, Gemma 2 2B) | 1,5-3B | 8K-128K según modelo | Apache 2.0 / Gemma license | multilingüe | Referencias habituales de la categoría; datos concretos no disponibles en esta ficha |
+
+La model card afirma que MiniCPM5-2B es competitivo con modelos de la clase 4B y superior a modelos de tamaño comparable en código, matemáticas, contexto largo, tool use y tareas agénticas, pero no se aportan cifras que permitan verificar esa comparación.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se han documentado sesgos especificos en la informacion disponible, aunque el modelo puede heredar sesgos de los datos de entrenamiento.
-- Riesgo de alucinacion: presente en todos los modelos de lenguaje; no se han publicado evaluaciones de fiabilidad para este checkpoint.
-- Limitaciones de contexto: la longitud de contexto exacta no se especifica, aunque el modelo se promociona como de contexto largo.
-- Idiomas: solo se ha evaluado el rendimiento en ingles y chino; no se garantiza un buen comportamiento en otros idiomas.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones, pero se recomienda revisar los terminos completos.
-- Caveat: el modelo es una version "Midtrain" (checkpoint intermedio), lo que puede implicar diferencias de rendimiento respecto a la version final de MiniCPM5-2B.
+- Al ser un checkpoint de "Midtrain", puede no estar completamente alineado para uso conversacional; es probable que requiera SFT/DPO adicional o que exista una versión final separada.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Riesgo de alucinación inherente a modelos de 2,5B parámetros, especialmente en conocimiento factual y matemáticas complejas.
+- La longitud de contexto no está cuantificada en la información disponible; debe validarse empíricamente antes de confiar en ventanas largas.
+- Sesgos conocidos: no documentados en la información proporcionada; los datasets de preentrenamiento web (Ultra-FineWeb) pueden introducir sesgos de dominio y culturales.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los datasets subyacentes si se redistribuye el modelo o derivados.
+- El rendimiento declarado como SOTA se basa en la propia model card del autor; no hay verificación independiente en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain
-- Informe tecnico MiniCPM: https://arxiv.org/pdf/2506.07900
-- Paper adicional (arXiv 2602.09003): https://arxiv.org/abs/2602.09003
-- Repositorio GitHub: https://github.com/OpenBMB/MiniCPM
-- Wiki de MiniCPM (chino): https://modelbest.feishu.cn/wiki/UtWxwcERfiRIpIkBOjuc3h9tn1D
-- Plataforma UltraData: https://ultradata.openbmb.cn/
+- Modelo previo de la familia: https://huggingface.co/openbmb/MiniCPM5-1B
 - Demo online: https://huggingface.co/spaces/openbmb/MiniCPM5-2B-Demo
-- Articulo de Artificial Analysis: https://artificialanalysis.ai/articles/openbmb-releases-minicpm5-2b
+- Repositorio GitHub: https://github.com/OpenBMB/MiniCPM
+- Informe técnico MiniCPM (arXiv 2506.07900): https://arxiv.org/pdf/2506.07900
+- Referencia arXiv 2602.09003: https://arxiv.org/abs/2602.09003
+- Documentación MiniCPM Wiki (chino): https://openbmb.cn/docs/
+- UltraData: https://ultradata.openbmb.cn/
+- README en chino: https://huggingface.co/openbmb/MiniCPM5-2B/blob/main/README-cn.md

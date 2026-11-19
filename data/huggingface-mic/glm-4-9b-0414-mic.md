@@ -2,94 +2,86 @@
 
 ## Resumen
 
-`huggingface-mic/GLM-4-9B-0414-mic` no es un modelo utilizable: es un artefacto de prueba (fixture) de 19,5 millones de parámetros construido por el equipo de Hugging Face MIC para validar la integración de frameworks con la arquitectura GLM-4. Deriva de `zai-org/GLM-4-9B-0414` mediante una reducción genérica de configuración (2 capas ocultas en lugar de las del modelo original) y conserva los nombres de tensores, el tokenizer y los ficheros de procesador byte a byte del checkpoint real.
+`huggingface-mic/GLM-4-9B-0414-mic` no es un modelo utilizable, sino un artefacto de prueba (fixture) derivado de `zai-org/GLM-4-9B-0414`. Lo publica la organizacion `huggingface-mic` para validar contratos de integracion con frameworks (principalmente Transformers), y esta etiquetado explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos. Su relevancia es, por tanto, puramente de ingenieria: sirve como banco de pruebas reproducible para verificar que una implementacion de `Glm4ForCausalLM` carga, ejecuta y propaga gradientes correctamente.
 
-Su propósito es servir como fixture de test: pesos aleatorios (semilla 17) que pasaron una puerta de sensibilidad de entrada, guardados en bfloat16 y finitos en float32, bfloat16 y float16 para forward, pérdida y gradientes. Está etiquetado `test-artifact` para excluirlo de la búsqueda de modelos candidatos. Cualquier evaluación de capacidades, benchmarks o uso en producción queda fuera de su alcance por diseño.
+El repositorio contiene solo 19.473.216 parametros reales (unos 19,5 millones, segun los safetensors) frente a los aproximadamente 9.000 millones del modelo base GLM-4-9B-0414. La reduccion se ha hecho con una regla generica de `sweep.py` que rebaja `num_hidden_layers` a 2, manteniendo la misma arquitectura `Glm4ForCausalLM` y los mismos nombres de tensores que el checkpoint original. Los pesos son aleatorios (semilla 17), no entrenados, y se guardan en `bfloat16`.
 
-La relevancia de esta ficha es, por tanto, documental: describe qué contiene el repositorio, cómo se generó y para qué sirve, y advierte explícitamente de que no debe confundirse con el GLM-4-9B-0414 original de Zhipu AI (zai-org), que sí es un modelo desplegable.
+El valor practico para un desarrollador es acotado: no debe usarse para inferencia real, generacion de texto ni evaluacion de calidad. Si resulta util para CI de librerias, pruebas de tokenizadores y validacion de plantillas de chat, ya que los ficheros de procesador (`tokenizer.json`, `chat_template.jinja`, `tokenizer_config.json`, `special_tokens_map.json`, `generation_config.json`, `LICENSE`) se copian byte a byte del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Glm4ForCausalLM (transformer causal decoder-only, versión reducida) |
-| Parametros totales | 19.473.216 (19,5 M) |
+| Arquitectura | Transformer decoder-only (`Glm4ForCausalLM`), 2 capas ocultas por reduccion del config original |
+| Parametros totales | 19.473.216 (aproximadamente 19,5 M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de la config del modelo base, no verificada en la información) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; finito también en float32 y float16) |
-| Idiomas soportados | no disponibles (tokenizer copiado del modelo base) |
-| Licencia | no disponible (el fichero LICENSE se copia del modelo base, pero su contenido no se detalla) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; se declara finito en float32, bfloat16 y float16) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible en la ficha de Hugging Face; el repo incluye un fichero `LICENSE` copiado del modelo base |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture reproduce la arquitectura `Glm4ForCausalLM` con una configuración reducida: `num_hidden_layers` igual a 2, aplicando la regla genérica de reducción de `sweep.py` del repositorio `huggingface/transformers-mic`. Los ficheros de procesador (`LICENSE`, `chat_template.jinja`, `generation_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`) se copian byte a byte desde `zai-org/GLM-4-9B-0414`, de modo que la interfaz de tokenización y plantilla de chat es idéntica a la del modelo real.
+La arquitectura es la de GLM-4 causal LM (`Glm4ForCausalLM`), pero con el config reducido a 2 capas ocultas mediante la regla generica de `sweep.py` del proyecto `transformers-mic`. No hay entrenamiento: los pesos son aleatorios con semilla 17 y se aceptaron porque superaron la puerta de sensibilidad a entradas (toda perturbacion de las entradas del contrato desplaza los logits al menos 0,001; el caso mas debil, `input_ids:roll_batch`, alcanza 0,393). Los nombres de tensores coinciden con los del checkpoint real, lo que permite ejercitar rutas de carga y ejecucion sin descargar los pesos completos.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron con una puerta de sensibilidad de entrada: cada perturbación de las entradas del contrato movió los logits al menos 0,001 (el caso más débil, `input_ids:roll_batch`, registró 0,393). Los nombres de tensores coinciden con los del checkpoint real, lo que permite probar carga, forward y gradientes con la misma estructura de parámetros. El artefacto se generó con `build_fixtures.py` y `build.json` registra fuentes fijadas, resultados de la puerta y hashes de ficheros.
+Los ficheros de procesador se copian literalmente de `zai-org/GLM-4-9B-0414`: `LICENSE`, `chat_template.jinja`, `generation_config.json`, `special_tokens_map.json`, `tokenizer.json` y `tokenizer_config.json`. El artefacto se guarda en `bfloat16`, el dtype por defecto del modelo base, y se verifica que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16. La clave de fixture es `40271c95510c` y el build queda registrado en `build.json` con fuentes fijadas, resultados de las puertas y hashes de ficheros.
 
 ## Capacidades
 
-- No genera texto coherente: los pesos son aleatorios y no han sido entrenados.
-- No razona, no programa, no resuelve matemáticas ni procesa visión.
-- No soporta tool calling ni function calling de forma funcional.
-- No soporta agentes ni razonamiento multi-paso.
-- No tiene capacidades multilingües verificadas más allá de la tokenización heredada.
-- No dispone de thinking mode ni modalidades adicionales.
-- Sí permite validar la carga del checkpoint, la forma de los tensores, el forward pass, la pérdida y los gradientes en float32, bfloat16 y float16.
-- Sí permite comprobar la compatibilidad de frameworks con `Glm4ForCausalLM` y con el tokenizer/chat template del modelo base.
+- Carga y ejecucion de la arquitectura `Glm4ForCausalLM` en Transformers con un coste minimo de descarga (repositorio de 0,1 GB).
+- Verificacion de contratos de integracion: manifest en `integration.json`, guia de uso en `integrations/transformers/usage.md` y expectativas en `integrations/transformers/expectations`.
+- Pruebas de forward, calculo de loss y retropropagacion de gradientes en float32, bfloat16 y float16.
+- Validacion de tokenizador y plantilla de chat heredados del modelo base (mismos ficheros byte a byte).
+- Comprobacion de sensibilidad a entradas mediante perturbaciones controladas sobre `input_ids`.
+- No soporta generacion de texto de calidad, razonamiento, codigo, matematicas, vision, tool calling ni comportamiento agentico: los pesos son aleatorios.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: cargar el fixture con `Glm4ForCausalLM` para verificar que la clase, los nombres de tensores y la configuración reducida se resuelven sin errores antes de apuntar al checkpoint real de 9B.
-- Validación de pipelines de CI: usar el fixture como objetivo ligero (0,1 GB) en tests automáticos que comprueben carga, forward y backward sin consumir GPU de gran capacidad.
-- Verificación de chat template y tokenizer: al copiarse byte a byte desde `zai-org/GLM-4-9B-0414`, permite testear el renderizado de plantillas y el manejo de special tokens con la misma interfaz que el modelo desplegable.
-- Comprobación de dtypes: ejecutar forward, pérdida y gradientes en float32, bfloat16 y float16 para detectar problemas de estabilidad numérica en frameworks antes de escalar al modelo real.
-- Test de sensibilidad de entradas: reproducir la puerta del contrato (perturbaciones de `input_ids` y otras entradas) para validar que una implementación propaga correctamente los cambios hasta los logits.
-- Desarrollo de herramientas de inspección de modelos: usar los hashes y `build.json` para verificar procedencia, reproducibilidad y correspondencia de ficheros en pipelines de auditoría.
-- Pruebas de empaquetado y serialización: validar lectura de safetensors bfloat16 y compatibilidad de metadatos en herramientas de conversión, sin necesidad de descargar el checkpoint completo.
+- CI de librerias de inferencia: ejecutar tests de carga y forward de `Glm4ForCausalLM` en cada pull request sin descargar los 9 B de parametros del modelo real, usando este fixture de 19,5 M como sustituto.
+- Validacion de tokenizadores y plantillas de chat: al copiarse `tokenizer.json` y `chat_template.jinja` byte a byte del modelo base, sirve para comprobar que una integracion renderiza correctamente las conversaciones antes de pasar al checkpoint completo.
+- Pruebas de compatibilidad de dtype: verificar que un pipeline acepta bfloat16, float16 y float32 comprobando que forward, loss y gradientes permanecen finitos.
+- Desarrollo de utilidades de conversion y serializacion: los nombres de tensores coinciden con el checkpoint real, de modo que scripts de mapeo, sharding o conversion de formato pueden probarse a escala reducida.
+- Benchmarking de infraestructura de test: medir tiempos de arranque, cacheado de pesos y overhead de carga en runners de CI con un artefacto de 0,1 GB.
+- Reproducibilidad de artefactos: reconstruir el fixture con `python example/build_fixtures.py --fixture GLM-4-9B-0414-mic` y contrastar hashes contra `build.json` para auditar la procedencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería inválida por construcción.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 para los 19,5 M parámetros; el repositorio ocupa 0,1 GB.
-- GPU recomendadas: cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4090) e incluso CPU para los tests de forward.
-- Cabe en cualquier GPU consumer y en CPU; no requiere A100 ni H100.
-- Opciones de despliegue: carga directa con Transformers (`Glm4ForCausalLM`); el resto de runners (vLLM, llama.cpp, Ollama, TGI) no están documentados para este fixture en la información disponible.
-- Latencia y throughput: no disponibles; al ser un modelo de 2 capas con pesos aleatorios, las mediciones no serían representativas de GLM-4-9B-0414.
+- VRAM para inferencia: inferior a 1 GB en bfloat16 (19,5 M de parametros, aproximadamente 39 MB de pesos) mas overhead de activaciones y runtime.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tambien ejecutable en CPU.
+- Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3050, RTX 4060, RTX 4090 y superiores.
+- Despliegue: Transformers es la via documentada en el repositorio; vLLM, llama.cpp, Ollama o TGI no estan verificados en la informacion disponible.
+- Latencia y throughput: no disponibles; al ser un modelo de 2 capas con pesos aleatorios, las cifras no serian representativas de ningun caso real.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4-9B-0414-mic (este) | 19,5 M | no disponible | Fixture de test | no disponible | Hugging Face, 1172 descargas |
-| zai-org/GLM-4-9B-0414 | ~9B (no verificado en la información) | no disponible | Modelo causal desplegable | no disponible | Hugging Face |
-| Otros fixtures del ecosistema transformers-mic | variable (config reducida) | no disponible | Test de integración | no disponible | Hugging Face |
+| `huggingface-mic/GLM-4-9B-0414-mic` | 19,5 M | no disponible | Fixture de test para contratos de integracion | no disponible | Hugging Face (2.476 descargas) |
+| `zai-org/GLM-4-9B-0414` | aproximadamente 9 B | no disponible en esta ficha | Modelo causal de proposito general | no disponible en esta ficha | Hugging Face (modelo base) |
+| Fixtures equivalentes de `transformers-mic` | variable, del orden de millones | no disponible | Pruebas de integracion de otras arquitecturas | no disponible | Hugging Face |
 
-La comparación relevante es con `zai-org/GLM-4-9B-0414`: mismo tokenizer, misma plantilla de chat y mismos nombres de tensores, pero con 2 capas, pesos aleatorios y sin capacidad generativa. Cualquier comparación de rendimiento o calidad con modelos de 9B desplegables no es aplicable.
+La comparacion relevante es con el modelo base: mismo tokenizador, misma plantilla de chat y mismos nombres de tensores, pero 460 veces menos parametros y pesos no entrenados. Frente a otros fixtures del mismo proyecto, comparte metodologia (`sweep.py`, `build_fixtures.py`) y formato de contrato.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y la salida no tiene significado.
-- Etiquetado `test-artifact` de forma explícita para excluirlo de búsquedas de modelos candidatos; no debe promocionarse como modelo de producción.
-- La configuración está reducida (2 capas), por lo que no reproduce el comportamiento, latencia ni consumo de memoria del GLM-4-9B-0414 real.
-- La licencia no está detallada en la información disponible; el fichero LICENSE se copia del modelo base, pero su contenido debe consultarse en el repositorio original antes de cualquier uso.
-- Los idiomas soportados no están verificados; solo se hereda la tokenización del modelo base.
-- No hay datos de sesgos, alucinación ni robustez porque no ha habido entrenamiento.
-- El repositorio incluye solo pesos reducidos, uso ejecutable y expectativas de framework; otros ficheros deben regenerarse con `python example/build_fixtures.py --fixture GLM-4-9B-0414-mic`.
-- No debe usarse para evaluar calidad, seguridad o capacidades de GLM-4; para ello, acudir al checkpoint `zai-org/GLM-4-9B-0414`.
+- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y la salida no tiene significado. No debe desplegarse en produccion ni usarse para evaluar calidad.
+- El config esta reducido a 2 capas ocultas, por lo que el comportamiento numerico no reproduce el del checkpoint de 9 B.
+- La licencia no figura en la ficha de Hugging Face; el repositorio incluye un `LICENSE` copiado del modelo base, que conviene revisar antes de cualquier uso.
+- No hay informacion sobre sesgos, idiomas o riesgos de alucinacion porque no se ha entrenado con datos.
+- La longitud de contexto no esta declarada en la informacion disponible.
+- Esta etiquetado como `test-artifact` para quedar fuera de las busquedas de modelos candidatos; usarlo como modelo de referencia en documentacion o demos seria un error.
+- El repositorio solo incluye pesos reducidos, uso y expectativas; otros ficheros deben regenerarse con `build_fixtures.py`.
 
 ## Enlaces
 
-- Repositorio del fixture: https://huggingface.co/huggingface-mic/GLM-4-9B-0414-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/GLM-4-9B-0414-mic
 - Modelo base: https://huggingface.co/zai-org/GLM-4-9B-0414
-- Manifiesto del contrato: https://huggingface.co/huggingface-mic/GLM-4-9B-0414-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/GLM-4-9B-0414-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/GLM-4-9B-0414-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/GLM-4-9B-0414-mic/blob/main/build.json
-- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/GLM-4-9B-0414-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Regla de reducción (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/GLM-4-9B-0414-mic.html
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

@@ -2,119 +2,108 @@
 
 ## Resumen
 
-Qwen3.5-4B-heretic es una variante "decensored" (abliterated) del modelo multimodal Qwen/Qwen3.5-4B de Alibaba Qwen, publicada por el usuario saidutta69 en Hugging Face. Se trata de un modelo híbrido visión-lenguaje de 4.539.265.536 parámetros (4,54B): 4.205.751.296 corresponden a la torre de lenguaje y 333.514.240 al codificador de visión. La arquitectura combina 32 capas organizadas en 8 bloques de (3 capas gated DeltaNet + 1 capa de atención con compuerta), con un contexto nativo de 262.144 tokens y un vocabulario de 248.320 entradas con embeddings atados.
+Qwen3.5-4B-heretic es una variante "decensored" (sin rechazos) del modelo multimodal Qwen/Qwen3.5-4B de Alibaba Qwen, publicada por el usuario saidutta69 en Hugging Face. Se ha generado con la herramienta Heretic 2.0.0.dev0 aplicando Arbitrary-Rank Ablation (ARA) sobre la torre de lenguaje, dejando intacto el codificador de visión. El objetivo es eliminar las respuestas de rechazo del modelo base manteniendo sus capacidades de razonamiento, instrucciones y tool calling, algo relevante para desarrolladores que necesitan agentes locales sin filtros de negativa en dominios legítimos (investigación, red teaming, contenido para adultos consentido).
 
-El modelo no introduce capacidades nuevas: su propósito es eliminar el comportamiento de rechazo del modelo base manteniendo el resto de competencias. Para ello se aplicó Heretic 2.0.0.dev0 con Arbitrary-Rank Ablation (ARA) sobre las capas 15 a 27 de la torre de lenguaje, dejando intacto el codificador de visión. El resultado declarado es una caída de rechazos de 99/100 a 13/100 con una divergencia KL de 0,0081 respecto al original, y variaciones en benchmarks de texto dentro del margen de error estadístico.
+El modelo base es un transformer híbrido de 32 capas que combina 8 bloques de 3 capas gated DeltaNet con 1 capa de atención con compuertas, con 4.539.265.536 parámetros totales (4.205.751.296 en la torre de lenguaje y 333.514.240 en el codificador visual). Soporta 201 idiomas según la model card del autor y un contexto nativo de 262.144 tokens. La edición ARA se aplicó en las capas 15 a 27 con un peso de preservación de comportamiento del 0,99, logrando reducir los rechazos de 99/100 a 13/100 con una divergencia KL de 0,0081.
 
-Su relevancia práctica es doble: por un lado, ofrece un checkpoint de 4,5B con contexto muy largo y capacidades agénticas que cabe en GPUs de consumo; por otro, documenta de forma reproducible el proceso de abliteración (receta, semilla y journal de Optuna incluidos en el repositorio), lo que lo convierte en material útil para investigación sobre alineación y edición de comportamiento.
+La relevancia práctica está en que ofrece un modelo de 4B con visión, contexto largo y tool calling que cabe en GPUs de consumo, con licencia Apache 2.0 y pesos en safetensors BF16 y GGUF (estos últimos solo texto). No obstante, la eliminación de rechazos implica riesgos de seguridad y de cumplimiento que deben evaluarse antes de cualquier despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida visión-lenguaje: 32 capas en 8 bloques de (3 gated DeltaNet + 1 gated-attention), más torre de visión; cabeza MTP adicional en la conversión GGUF |
-| Parametros totales | 4.539.265.536 (4,54B): 4.205.751.296 torre de lenguaje + 333.514.240 codificador de visión |
-| Parametros activos | No aplica: la model card no describe el modelo como MoE ni publica desglose de parámetros activos |
-| Longitud de contexto | 262.144 tokens (nativo, confirmado en los metadatos del GGUF) |
-| Tipos de cuantizacion | BF16 (safetensors); GGUF F16, Q4_K_M, Q5_K_M, Q6_K y Q8_0 |
-| Idiomas soportados | 16 declarados: en, zh, ar, de, es, fr, it, ja, ko, pt, ru, hi, id, th, tr, vi; la card del modelo base cita 201 idiomas |
+| Arquitectura | Transformer híbrido: 32 capas en 8 bloques de (3 gated DeltaNet + 1 gated-attention) |
+| Parametros totales | 4.539.265.536 (4,54B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 262.144 tokens (nativo) |
+| Tipos de cuantizacion | BF16 (safetensors), GGUF F16, Q4_K_M, Q5_K_M, Q6_K, Q8_0 (solo texto) |
+| Idiomas soportados | 201 idiomas segun la model card del autor; lista explicita: en, zh, ar, de, es, fr, it, ja, ko, pt, ru, hi, id, th, tr, vi |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16, 2 shards de 4,54 GB) y GGUF (solo texto) |
-| Vocabulario | 248.320 tokens, embeddings atados |
-| Tamano del repo | 31,3 GB |
+| Formato de pesos | safetensors (BF16, multimodal) y GGUF (solo texto) |
+| Parametros torre de lenguaje | 4.205.751.296 |
+| Parametros codificador visual | 333.514.240 |
+| Vocabulario | 248.320 tokens |
+| Capas editadas (ARA) | 15 a 27 |
+| Tamano del repo | 53,4 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base es un transformer híbrido en el que la mayoría de capas usan atención lineal de tipo gated DeltaNet y solo una de cada cuatro emplea atención completa con compuerta (8 capas de atención sobre 32 totales). Esa proporción 3:1 es la que permite sostener 262.144 tokens de contexto sin un coste cuadrático en todas las capas. El modelo es unificado visión-lenguaje: el codificador visual de 333.514.240 parámetros se procesa junto al texto mediante `AutoProcessor` y `AutoModelForImageTextToText`. La conversión a GGUF sin la bandera `--mmproj` descarta la torre de visión, de ahí que todos los ficheros GGUF publicados sean exclusivamente de texto.
+El modelo base Qwen3.5-4B emplea una arquitectura híbrida poco convencional: 32 capas organizadas en 8 bloques, cada uno con 3 capas de DeltaNet con compuertas seguidas de 1 capa de atención con compuertas. Esta combinación busca eficiencia en contexto largo (las capas DeltaNet reducen el coste cuadrático de la atención) manteniendo la capacidad expresiva de la atención completa. Incluye un codificador visual de 333,5M de parámetros que lo convierte en un modelo unificado de visión-lenguaje, y embeddings atados (tied embeddings) con un vocabulario de 248.320 tokens. La configuración declara `mtp_num_hidden_layers: 1`, aunque el checkpoint no incluye tensores MTP (multi-token prediction).
 
-Sobre el entrenamiento original (número de tokens, composición del dataset, fases de RLHF/DPO) no se aporta información en la documentación disponible: la model card remite al modelo base y solo advierte de que la tabla de benchmarks oficial de Qwen está publicada como imagen. La innovación documentada de esta variante es el método de edición: Heretic 2.0.0.dev0 con Arbitrary-Rank Ablation, que en lugar de orthogonalizar las salidas contra una única dirección de rechazo, aprende un subespacio de bajo rango sobre un rango de capas y combina un objetivo de "preservar buen comportamiento" con otro de "dirigir mal comportamiento". Los hiperparámetros del trial 162 (semilla 982272333) son: capas 15-27, `preserve_good_behavior_weight` 0,9900, `steer_bad_behavior_weight` 0,0001, `overcorrect_relative_weight` 0,8230 y `neighbor_count` 15. El repositorio incluye un directorio `reproduce/` con `config.toml`, `requirements.txt`, el journal del estudio de Optuna y sumas SHA-256.
+El proceso de "decensoring" se realizó con Heretic 2.0.0.dev0, en el trial 162 de una ejecución de 200 trials con semilla 982272333. En lugar de la ablación direccional clásica (que identifica una única dirección de rechazo y ortogonaliza contra ella), ARA aprende un subespacio de bajo rango sobre un rango de capas y combina dos objetivos: preservar el buen comportamiento (peso 0,9900) y dirigir el mal comportamiento (peso 0,0001), con un peso relativo de sobrecorrección de 0,8230 y un `neighbor_count` de 15. Solo se editó la torre de lenguaje; el codificador visual quedó intacto. Los datos de entrenamiento del modelo base (número de tokens, composición del dataset, si hubo RLHF/DPO) no están disponibles en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento general, con contexto nativo de 262.144 tokens.
-- Entrada de imagen y vídeo (solo con los safetensors BF16 y `AutoProcessor`; no disponible en los GGUF).
-- Tool calling y function calling, orientado a flujos agénticos según los propios tags del repositorio (`agentic`, `tool-calling`, `endpoints_compatible`).
-- Razonamiento multi-paso y uso como agente local, con soporte declarado para despliegue en endpoints compatibles.
-- Capacidad multilingüe: 16 idiomas declarados en la card y 201 atribuidos al modelo base.
-- Comportamiento sin rechazos en la práctica totalidad de los prompts evaluados (13/100 frentes a 99/100 del original).
-- Inferencia en CPU y GPU de consumo gracias a las cuantizaciones GGUF Q4_K_M (2,71 GB) y Q5_K_M (3,07 GB).
-- Cabeza MTP (multi-token prediction) presente en la conversión GGUF (33 bloques: 32 capas + 1 cabeza MTP); su uso efectivo para decodificación especulativa no se documenta en la información disponible.
-- Modo "thinking" explícito: no disponible en la documentación.
+- Generación de texto y razonamiento general en 201 idiomas, con especial solidez en instrucciones y conversación multi-turno.
+- Comprensión de imágenes y vídeo mediante la torre de visión (solo disponible en safetensors BF16; los GGUF son solo texto).
+- Tool calling y function calling, heredados del modelo base y orientados a flujos agénticos.
+- Razonamiento multi-paso y uso en pipelines de agentes (la model card lo etiqueta como "agentic").
+- Contexto largo de 262.144 tokens, adecuado para RAG sobre documentos extensos y conversaciones prolongadas.
+- Modo "heretic": supresión de rechazos (13/100 frente a 99/100 del original), manteniendo MMLU, PIQA y WinoGrande dentro del ruido estadístico.
+- Capacidades multilingües explícitas en 16 idiomas listados, con cobertura declarada de 201.
+- No se documenta modo "thinking" explícito, soporte de audio ni decodificación especulativa en la información disponible.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: con 262.144 tokens de contexto se pueden mantener conversaciones multi-turno muy largas o inyectar historiales completos de tickets sin truncar, algo inviable en modelos de 4B con ventanas de 8K-32K.
-- RAG documental multilingüe: el modelo cubre 16 idiomas declarados y permite indexar y consultar corpus en varios idiomas dentro de la misma ventana; las cuantizaciones Q4_K_M/Q5_K_M permiten desplegarlo en una sola GPU de consumo junto al índice vectorial.
-- Agentes locales con tool calling: integrable en pipelines de automatización (consulta de APIs, ejecución de comandos, extracción de datos) usando llama.cpp u Ollama en estaciones de trabajo sin conexión a la nube.
-- Procesamiento de documentos escaneados y capturas: con los safetensors BF16 se puede enviar una imagen junto al prompt para extraer tablas, describir diagramas o transcribir formularios, siempre que se disponga de ~12 GB o más de VRAM.
-- Asistente de desarrollo ligero: generación y explicación de scripts, revisión de diffs y redacción de tests en local, aprovechando el contexto largo para cargar varios ficheros de un repositorio pequeño en una sola pasada.
-- Traducción y localización: traducción entre los idiomas declarados (es, en, zh, ar, de, fr, it, ja, ko, pt, ru, hi, id, th, tr, vi) con un único checkpoint, útil para pipelines de localización de bajo coste.
-- Investigación sobre alineación y edición de modelos: la receta reproducible (semilla, journal de Optuna, sumas SHA-256) permite replicar el experimento ARA y medir el compromiso entre eliminación de rechazos y deriva del modelo (KL 0,0081).
-- Evaluación comparativa de robustez: al mantener MMLU y PIQA prácticamente idénticos al original, sirve como control para estudiar qué capacidades se ven afectadas por la abliteración y cuáles no.
+- Agentes locales de automatización: el modelo puede gestionar cadenas de tool calling y razonamiento multi-paso en una GPU de consumo, con 262K de contexto para mantener el estado de la tarea sin truncar.
+- RAG sobre documentación extensa: la ventana de 262.144 tokens permite ingerir manuales completos o expedientes largos sin fragmentación agresiva, y el modelo responde en el idioma del usuario.
+- Asistencia multilingüe en atención al cliente: con cobertura declarada de 201 idiomas y 16 idiomas explícitos, puede atender conversaciones multi-turno en entornos donde el filtrado de rechazos del modelo base resulta contraproducente (por ejemplo, consultas médicas o legales que el modelo original rechaza por precaución).
+- Investigación en seguridad y red teaming: la reducción de rechazos de 99/100 a 13/100 con KL de 0,0081 lo convierte en una herramienta controlada para estudiar comportamientos del modelo base sin la capa de negativa, comparando respuestas con y sin edición.
+- Procesamiento de documentos con imágenes en local: usando los safetensors BF16 y `AutoProcessor`, se pueden extraer datos de capturas, formularios o vídeos sin enviar información a la nube.
+- Generación de contenido creativo sin filtros: escritura de ficción, guiones o material para adultos consentido donde el modelo base rechazaría peticiones legítimas.
+- Prototipado rápido en portátil: la cuantización Q4_K_M (2,71 GB) permite ejecutar el modelo en llama.cpp, LM Studio u Ollama en equipos sin GPU dedicada, aunque sin visión.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor, medidos con `lm-eval` en el mismo entorno para este checkpoint y para el modelo original:
+Resultados medidos por el autor con `lm-eval` en el mismo entorno para este checkpoint y el modelo original:
 
 | Benchmark | Este modelo | Modelo original | stderr (este / original) |
 |---|---|---|---|
-| MMLU | 74,35 % | 74,29 % | 0,35 / 0,35 pp |
-| PIQA | 77,48 % | 77,37 % | 0,97 / 0,98 pp |
-| PIQA (norm) | 77,97 % | 78,29 % | 0,97 / 0,96 pp |
-| WinoGrande | 69,22 % | 69,77 % | 1,30 / 1,29 pp |
+| MMLU | 74,35% | 74,29% | 0,35 / 0,35 pp |
+| PIQA | 77,48% | 77,37% | 0,97 / 0,98 pp |
+| PIQA (norm) | 77,97% | 78,29% | 0,97 / 0,96 pp |
+| WinoGrande | 69,22% | 69,77% | 1,30 / 1,29 pp |
+| Rechazos | 13/100 | 99/100 | no disponible |
+| Divergencia KL | 0,0081 | 0 (por definición) | no disponible |
 
-| Métrica de comportamiento | Este modelo | Modelo original |
-|---|---|---|
-| Rechazos | 13/100 | 99/100 |
-| Divergencia KL | 0,0081 | 0 (por definición) |
-
-Todas las diferencias en benchmarks de texto caen dentro de aproximadamente un error estándar; la mayor es WinoGrande con -0,55 pp. El autor advierte de que estas pruebas son solo de texto y no ejercitan la torre de visión, y que la tabla oficial del modelo base está publicada como imagen, por lo que solo se citan los valores re-ejecutados aquí. No se han publicado resultados de benchmarks de visión, de tool calling ni de contexto largo en la información disponible.
+Todas las diferencias en benchmarks de texto están dentro de aproximadamente un error estándar; la mayor es WinoGrande con -0,55 pp. Estos benchmarks no evalúan la torre de visión. No se han publicado resultados de benchmarks de visión, tool calling ni contexto largo en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para BF16 (safetensors para imagen/vídeo): los pesos suman 9,08 GB repartidos en dos shards; con activaciones y caché KV se necesitan aproximadamente 12-14 GB, por lo que encaja en RTX 4090 (24 GB), A100 40/80 GB o L40S.
-- VRAM estimada para GGUF Q8_0 (4,48 GB): en torno a 6 GB; viable en RTX 3060 12 GB, RTX 4060 Ti 16 GB.
-- VRAM estimada para GGUF Q6_K (3,46 GB): aproximadamente 5 GB.
-- VRAM estimada para GGUF Q5_K_M (3,07 GB): aproximadamente 4,5 GB.
-- VRAM estimada para GGUF Q4_K_M (2,71 GB): aproximadamente 4 GB; cabe en RTX 3060 12 GB, RTX 4060 8 GB y en muchas iGPU con memoria unificada.
-- Ejecución solo en CPU: viable con Q4_K_M/Q5_K_M mediante llama.cpp; no se publican cifras de tokens por segundo.
-- Caché KV a contexto completo: no disponible. Con 262.144 tokens de ventana, el coste de caché puede superar la VRAM de una GPU de consumo, por lo que conviene limitar `num_ctx` en la práctica.
-- Opciones de despliegue documentadas: llama.cpp (`llama serve -hf saidutta69/Qwen3.5-4B-heretic`), LM Studio, Ollama (arquitectura `qwen35`, requiere una versión actual de llama.cpp) y transformers con `AutoModelForCausalLM` (texto) o `AutoModelForImageTextToText` (imagen y vídeo). Soporte en vLLM o TGI: no documentado.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia en BF16 (multimodal): aproximadamente 9,1 GB solo para pesos, más overhead de activaciones y caché KV; se recomienda 16 GB o más para contexto largo.
+- VRAM estimada en GGUF Q4_K_M (solo texto): aproximadamente 2,7 GB de pesos; cabe en GPUs de 6-8 GB con contexto moderado.
+- VRAM estimada en GGUF Q8_0 (solo texto): aproximadamente 4,5 GB de pesos.
+- GPU recomendadas: RTX 4090 (24 GB) o A100/H100 para BF16 con contexto largo y visión; RTX 3060/4060 (8-12 GB) para GGUF cuantizado en texto.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB o superior con Q4_K_M/Q5_K_M; en BF16 requiere al menos 16 GB para contexto corto.
+- Opciones de despliegue: llama.cpp (`llama serve -hf saidutta69/Qwen3.5-4B-heretic`), LM Studio, Ollama (según la model card), transformers con `AutoModelForCausalLM` (texto) o `AutoModelForImageTextToText` (visión). No se documenta soporte explícito de vLLM o TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.5-4B-heretic (este) | 4,54B (4,21B LM + 0,33B visión) | 262.144 | Texto + imagen + vídeo (BF16); solo texto en GGUF | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-4B (base) | 4,54B | 262.144 | Texto + imagen + vídeo | Apache 2.0 | Hugging Face (oficial) |
-| MiniCPM-V-4.7-1B-heretic (mismo autor) | ~1B (según denominación) | No disponible | Multimodal (por denominación del modelo) | No disponible | Hugging Face |
-| Qwen3-4B-Thinking-heretic-GGUF (mradermacher) | ~4B (según denominación) | No disponible | Solo texto (GGUF) | No disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Vision | Rechazos | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.5-4B-heretic | 4,54B | 262.144 | Si (solo safetensors) | 13/100 | Apache 2.0 | HF (safetensors + GGUF) |
+| Qwen/Qwen3.5-4B (base) | 4,54B | 262.144 | Si | 99/100 | Apache 2.0 | HF oficial |
+| Alternativas "abliterated" de la familia Qwen | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Frente al modelo base, la diferencia medible es la tasa de rechazos (13/100 frente a 99/100) con un coste de calidad dentro del ruido estadístico y una KL de 0,0081. Frente a las alternativas abliteradas de 4B, la ventaja es la modalidad visual y el contexto de 262K, aunque no hay datos públicos que permitan comparar rendimiento entre ellas.
+No se dispone de datos de benchmarks de modelos comparables de otros autores en la información proporcionada; la comparación directa más fiable es contra el modelo base, que comparte arquitectura y solo difiere en la edición ARA.
 
 ## Limitaciones y advertencias
 
-- Modelo deliberadamente "decensored": se han eliminado los rechazos, por lo que no aplica ninguna barrera de seguridad del modelo base. No es adecuado para aplicaciones de cara al público sin un filtro de contenido externo.
-- Riesgo de alucinación propio de un modelo de 4B, agravado por la edición: la divergencia KL de 0,0081 implica cambios acotados pero reales en formulación y formato.
-- Los GGUF son solo de texto: la conversión descarta la torre de visión porque se ejecutó sin `--mmproj`. Para imagen o vídeo hay que usar los safetensors BF16, con el consiguiente coste de VRAM.
-- No hay benchmarks publicados de visión, tool calling, contexto largo ni multilingüismo; las únicas métricas re-ejecutadas son MMLU, PIQA y WinoGrande en inglés.
-- No se documenta el proceso de entrenamiento del modelo base (tokens, composición del dataset, RLHF/DPO), por lo que no es posible auditar qué datos hay detrás.
-- La evaluación de rechazos se hizo sobre 100 prompts sin que se detalle la metodología ni el conjunto; la cifra 13/100 debe tomarse como indicativa.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: es un checkpoint de comunidad sin validación externa, con fecha de creación y actualización del 28 de octubre de 2026.
-- El identificador de arquitectura GGUF es `qwen35`, lo que exige versiones recientes de llama.cpp, LM Studio u Ollama; versiones antiguas fallarán al cargar.
-- Licencia Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad legal del contenido generado por un modelo sin rechazos.
-- Idioma: aunque se declaran 16 idiomas, no hay métricas de calidad por idioma; el castellano no está evaluado en los benchmarks publicados.
+- La eliminación de rechazos implica que el modelo puede generar contenido dañino, ilegal o inseguro sin negarse; no es apto para despliegues públicos sin capas de moderación externas.
+- Riesgo de alucinación inherente a un modelo de 4B; el contexto largo de 262K no garantiza fidelidad a los documentos fuente.
+- Los GGUF son solo texto: pierden la torre de visión, por lo que no sirven para casos de uso multimodal.
+- La edición ARA puede introducir deriva limitada en fraseo y formato (KL 0,0081), aunque los benchmarks de texto se mantienen dentro del ruido.
+- Sesgos conocidos del modelo base no documentados en la información disponible; la cobertura de 201 idiomas es una declaración del autor y no está verificada de forma independiente.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el cumplimiento normativo del contenido generado sin filtros.
+- El checkpoint requiere `trust_remote_code=True` en transformers, lo que implica ejecutar código personalizado del repositorio.
+- No se documentan evaluaciones de seguridad, sesgo ni robustez adversarial para esta variante.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/Qwen3.5-4B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
-- Repositorio de Heretic (método ARA): https://github.com/p-e-w/heretic
+- Heretic (herramienta de decensoring): https://github.com/p-e-w/heretic
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- MiniCPM-V-4.7-1B-heretic, del mismo autor: https://huggingface.co/saidutta69/MiniCPM-V-4.7-1B-heretic
-- Qwen3-4B-Thinking-heretic-GGUF (mradermacher): https://huggingface.co/mradermacher/Qwen3-4B-Thinking-heretic-GGUF
-- Listado de modelos etiquetados `local-llm` (contexto de la colección): https://huggingface.co/models?other=local-llm&p=18&sort=trending
-- Catálogo de modelos multimodales en Featherless: https://featherless.ai/models?capabilities=multimodal
-- Catálogo de modelos abiertos y sin censura en DemonRoute: https://demonroute.com/models
+- Imagen de portada de la model card: https://photu.kashyalabanavli.site/racer-is-op.png
